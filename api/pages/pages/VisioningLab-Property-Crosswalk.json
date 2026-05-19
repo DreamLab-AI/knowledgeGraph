@@ -1,7 +1,0 @@
-{
-  "id": "VisioningLab-Property-Crosswalk",
-  "title": "VisioningLab-Property-Crosswalk",
-  "content": "## OWL Formal Semantics\n\n```clojure\n;; OWL Functional Syntax\n\n(Declaration (Class :VisioninglabPropertyCrosswalk))\n\n;; Annotations\n(AnnotationAssertion rdfs:label :VisioninglabPropertyCrosswalk \"VisioningLab Property Crosswalk\"@en)\n(AnnotationAssertion rdfs:comment :VisioninglabPropertyCrosswalk \"→ skos:definition\"@en)\n\n;; Data Properties\n(AnnotationAssertion dcterms:identifier :VisioninglabPropertyCrosswalk \"→\"^^xsd:string)\n```",
-  "backlinks": [],
-  "wiki_links": []
-}

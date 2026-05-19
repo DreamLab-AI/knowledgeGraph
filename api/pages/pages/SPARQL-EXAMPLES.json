@@ -1,7 +1,0 @@
-{
-  "id": "SPARQL-EXAMPLES",
-  "title": "SPARQL-EXAMPLES",
-  "content": "## OWL Formal Semantics\n\n```clojure\n;; OWL Functional Syntax\n\n(Declaration (Class :SparqlExamples))\n\n;; Annotations\n(AnnotationAssertion rdfs:label :SparqlExamples \"SPARQL EXAMPLES\"@en)\n(AnnotationAssertion rdfs:comment :SparqlExamples \"A component of the metaverse ecosystem.\"@en)\n\n;; Data Properties\n(AnnotationAssertion dcterms:identifier :SparqlExamples \"mv-1761742247966\"^^xsd:string)\n```",
-  "backlinks": [],
-  "wiki_links": []
-}

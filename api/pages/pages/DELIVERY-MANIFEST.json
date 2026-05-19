@@ -1,7 +1,0 @@
-{
-  "id": "DELIVERY-MANIFEST",
-  "title": "DELIVERY-MANIFEST",
-  "content": "## OWL Formal Semantics\n\n```clojure\n;; OWL Functional Syntax\n\n(Declaration (Class :DeliveryManifest))\n\n;; Annotations\n(AnnotationAssertion rdfs:label :DeliveryManifest \"DELIVERY MANIFEST\"@en)\n(AnnotationAssertion rdfs:comment :DeliveryManifest \"A component of the metaverse ecosystem.\"@en)\n\n;; Data Properties\n(AnnotationAssertion dcterms:identifier :DeliveryManifest \"mv-1761742247910\"^^xsd:string)\n```",
-  "backlinks": [],
-  "wiki_links": []
-}

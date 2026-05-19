@@ -1,7 +1,0 @@
-{
-  "id": "Queries",
-  "title": "Queries",
-  "content": "- #+BEGIN_QUERY\n  {\n    :title \"Private Pages\"\n    :query [:find (pull ?b [*])\n            :where\n            [?b :block/content ?content]\n            (not [(clojure.string/includes? ?content \"#Public\")])]\n  }\n  #+END_QUERY\n-\n-\n-",
-  "backlinks": [],
-  "wiki_links": []
-}

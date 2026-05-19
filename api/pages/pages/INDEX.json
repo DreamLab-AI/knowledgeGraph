@@ -1,7 +1,0 @@
-{
-  "id": "INDEX",
-  "title": "INDEX",
-  "content": "## OWL Formal Semantics\n\n```clojure\n;; OWL Functional Syntax\n\n(Declaration (Class :Index))\n\n;; Annotations\n(AnnotationAssertion rdfs:label :Index \"INDEX\"@en)\n(AnnotationAssertion rdfs:comment :Index \"A component of the metaverse ecosystem.\"@en)\n\n;; Data Properties\n(AnnotationAssertion dcterms:identifier :Index \"mv-1761742247936\"^^xsd:string)\n```",
-  "backlinks": [],
-  "wiki_links": []
-}

@@ -1,7 +1,0 @@
-{
-  "id": "metaverse-core-concepts",
-  "title": "metaverse-core-concepts",
-  "content": "## OWL Formal Semantics\n\n```clojure\n;; OWL Functional Syntax\n\n(Declaration (Class :MetaverseCoreConcepts))\n\n;; Annotations\n(AnnotationAssertion rdfs:label :MetaverseCoreConcepts \"metaverse core concepts\"@en)\n(AnnotationAssertion rdfs:comment :MetaverseCoreConcepts \"A component of the metaverse ecosystem.\"@en)\n\n;; Data Properties\n(AnnotationAssertion dcterms:identifier :MetaverseCoreConcepts \"mv-1761742247981\"^^xsd:string)\n```",
-  "backlinks": [],
-  "wiki_links": []
-}

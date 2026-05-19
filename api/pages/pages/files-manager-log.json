@@ -1,9 +1,0 @@
-{
-  "id": "files-manager-log",
-  "title": "files-manager-log",
-  "content": "#+BEGIN_QUERY\n  {:title \"All files operate log\"\n   :query [:find (pull ?b [*])\n           :in $ ?current-page\n           :where\n           [?p :block/name ?current-page]\n           [?b :block/page ?p]\n           [?b :block/content ?content]\n           [(!= ?content \"\")]\n          ]\n   :inputs [\"files-manager\"]}\n  #+END_QUERY",
-  "backlinks": [],
-  "wiki_links": [
-    "files-manager"
-  ]
-}

@@ -1,7 +1,0 @@
-{
-  "id": "security-audit-guide",
-  "title": "security-audit-guide",
-  "content": "## OWL Formal Semantics\n\n```clojure\n;; OWL Functional Syntax\n\n(Declaration (Class :SecurityAuditGuide))\n\n;; Annotations\n(AnnotationAssertion rdfs:label :SecurityAuditGuide \"security audit guide\"@en)\n(AnnotationAssertion rdfs:comment :SecurityAuditGuide \"A component of the metaverse ecosystem.\"@en)\n\n;; Data Properties\n(AnnotationAssertion dcterms:identifier :SecurityAuditGuide \"mv-1761742247991\"^^xsd:string)\n```",
-  "backlinks": [],
-  "wiki_links": []
-}
