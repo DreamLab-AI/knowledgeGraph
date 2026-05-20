@@ -3,16 +3,11 @@
   "title": "nist",
   "slug": "nist",
   "public": true,
-  "classIri": "urn:ngm:class:nist",
+  "classIri": "urn:ngm:individual:nist",
   "domain": "infrastructure",
   "definition": "The National Institute of Standards and Technology (NIST) is a US federal agency that develops measurement science, standards, and guidelines covering cybersecurity, AI, and physical sciences.",
-  "subClassOf": [
-    {
-      "id": "urn:ngm:class:infra-legal-and-regulatory",
-      "label": "Infra Legal and Regulatory"
-    }
-  ],
-  "entityType": "Class",
+  "subClassOf": [],
+  "entityType": "Individual",
   "qualityScore": 0.0,
   "maturity": "stub",
   "relationships": {

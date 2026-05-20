@@ -24,12 +24,12 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:mi-ca-regulation",
-  "@type": "Class",
+  "@id": "urn:ngm:individual:mi-ca-regulation",
+  "@type": "Individual",
   "label": "MiCA Regulation",
   "definition": "MiCA (Markets in Crypto-Assets Regulation) is the EU regulatory framework that establishes uniform rules for the issuance, trading, and supervision of crypto-assets and their service providers.",
   "domain": "blockchain",
-  "subClassOf": [
+  "instanceOf": [
     {
       "@id": "urn:ngm:class:bc-governance-and-regulation",
       "label": "Blockchain Governance and Regulation"

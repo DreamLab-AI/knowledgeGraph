@@ -7,7 +7,7 @@
   - belongs-to-domain:: [[metaverse]]
 
 - ### Relationships
-  - is-subclass-of:: [[Ethical Design Standard]]
+  - instance-of:: [[Ethical Design Standard]]
   - enables:: [[Ethical Technology Development]]
 
 - ### Content

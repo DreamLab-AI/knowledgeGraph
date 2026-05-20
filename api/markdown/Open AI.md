@@ -43,13 +43,13 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:open-ai",
-  "@type": "Class",
+  "@id": "urn:ngm:individual:open-ai",
+  "@type": "Individual",
   "label": "Open AI",
   "definition": "OpenAI is an American artificial intelligence company founded in December 2015, known for developing the GPT family of large language models, DALL-E image generation, and the Sora video model.",
   "domain": "artificial-intelligence",
   "maturity": "established",
-  "subClassOf": [
+  "instanceOf": [
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
@@ -108,7 +108,7 @@ public:: true
   - belongs-to-domain:: [[Artificial Intelligence]]
 
 - ### Relationships
-  - is-subclass-of:: [[AICompanies]]
+  - instance-of:: [[AICompanies]]
 
 - ### Content
   <<<<<<< HEAD

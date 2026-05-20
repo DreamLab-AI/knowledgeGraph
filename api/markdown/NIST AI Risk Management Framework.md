@@ -24,12 +24,12 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:nist-ai-risk-management-framework",
-  "@type": "Class",
+  "@id": "urn:ngm:individual:nist-ai-risk-management-framework",
+  "@type": "Individual",
   "label": "NIST AI Risk Management Framework",
   "definition": "The NIST AI Risk Management Framework is a comprehensive voluntary standard developed by the National Institute of Standards and Technology to help organisations govern, map, measure, and manage AI-related risks.",
   "domain": "artificial-intelligence",
-  "subClassOf": [
+  "instanceOf": [
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"

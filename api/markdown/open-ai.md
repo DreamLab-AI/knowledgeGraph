@@ -7,7 +7,7 @@
   - belongs-to-domain:: [[Artificial Intelligence]]
 
 - ### Relationships
-  - is-subclass-of:: [[AICompanies]]
+  - instance-of:: [[AICompanies]]
 
 - ### Content
   <<<<<<< HEAD

@@ -7,7 +7,7 @@
   - belongs-to-domain:: [[metaverse]]
 
 - ### Relationships
-  - is-subclass-of:: [[Data Protection Regulation]]
+  - instance-of:: [[Data Protection Regulation]]
 
 - ### Content
 

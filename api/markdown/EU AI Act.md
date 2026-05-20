@@ -467,13 +467,13 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:eu-ai-act",
-  "@type": "Class",
+  "@id": "urn:ngm:individual:eu-ai-act",
+  "@type": "Individual",
   "label": "EU AI Act",
   "definition": "The EU AI Act (Regulation (EU) 2024/1689 of the European Parliament and of the Council of 13 June 2024 laying down harmonised rules on artificial intelligence) is the first horizontal, cross-sectoral statutory framework for artificial intelligence anywhere in the world, adopted by the European Un...",
   "domain": "artificial-intelligence",
   "maturity": "established",
-  "subClassOf": [
+  "instanceOf": [
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
@@ -1310,7 +1310,7 @@ public:: true
   - implemented-in-layer:: [[PolicyLayer]], [[LegalLayer]], [[GovernanceLayer]]
 
 - ### Relationships
-  - is-subclass-of:: [[AI Regulation]], [[Digital Regulation]], [[Product Safety Regulation]], [[EU Regulation]], [[Risk-Based Regulation]]
+  - instance-of:: [[AI Regulation]], [[Digital Regulation]], [[Product Safety Regulation]], [[EU Regulation]], [[Risk-Based Regulation]]
   - has-part:: [[Article 5 Prohibitions]], [[Annex III High-Risk List]], [[GPAI Code of Practice]], [[AI Office]], [[European AI Board]], [[AI Pact]], [[Scientific Panel]], [[Advisory Forum]], [[EU Database for High-Risk AI]]
   - requires:: [[Conformity Assessment]], [[Risk Management System]], [[Technical Documentation]], [[Human Oversight]], [[Post-Market Monitoring]], [[Fundamental Rights Impact Assessment]], [[CE Marking]], [[Notified Body]]
   - enables:: [[Trustworthy AI]], [[Internal Market Harmonisation]], [[Algorithmic Accountability]], [[Cross-Border AI Trade]], [[AI Auditing Profession]], [[Standardised AI Compliance]]

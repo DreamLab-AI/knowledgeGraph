@@ -24,12 +24,12 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:nist",
-  "@type": "Class",
+  "@id": "urn:ngm:individual:nist",
+  "@type": "Individual",
   "label": "NIST",
   "definition": "The National Institute of Standards and Technology (NIST) is a US federal agency that develops measurement science, standards, and guidelines covering cybersecurity, AI, and physical sciences.",
   "domain": "infrastructure",
-  "subClassOf": [
+  "instanceOf": [
     {
       "@id": "urn:ngm:class:infra-legal-and-regulatory",
       "label": "Infra Legal and Regulatory"

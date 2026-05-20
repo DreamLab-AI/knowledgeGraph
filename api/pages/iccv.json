@@ -3,16 +3,11 @@
   "title": "iccv",
   "slug": "iccv",
   "public": true,
-  "classIri": "urn:ngm:class:iccv",
+  "classIri": "urn:ngm:individual:iccv",
   "domain": "artificial-intelligence",
   "definition": "The International Conference on Computer Vision (ICCV) is a premier biennial academic venue for publishing and presenting foundational and applied computer vision research.",
-  "subClassOf": [
-    {
-      "id": "urn:ngm:class:ai-research-area",
-      "label": "AI Research Area"
-    }
-  ],
-  "entityType": "Class",
+  "subClassOf": [],
+  "entityType": "Individual",
   "qualityScore": 0.0,
   "maturity": "stub",
   "relationships": {

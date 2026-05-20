@@ -3,16 +3,11 @@
   "title": "neurips",
   "slug": "neur-ips",
   "public": true,
-  "classIri": "urn:ngm:class:neur-ips",
+  "classIri": "urn:ngm:individual:neur-ips",
   "domain": "artificial-intelligence",
   "definition": "NeurIPS (Conference on Neural Information Processing Systems) is one of the premier annual academic conferences for machine learning, deep learning, and computational neuroscience research.",
-  "subClassOf": [
-    {
-      "id": "urn:ngm:class:ai-research-area",
-      "label": "AI Research Area"
-    }
-  ],
-  "entityType": "Class",
+  "subClassOf": [],
+  "entityType": "Individual",
   "qualityScore": 0.0,
   "maturity": "stub",
   "relationships": {

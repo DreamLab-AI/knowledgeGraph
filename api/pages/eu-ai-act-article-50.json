@@ -3,16 +3,11 @@
   "title": "eu ai act article 50",
   "slug": "eu-ai-act-article-50",
   "public": true,
-  "classIri": "urn:ngm:class:eu-ai-act-article-50",
+  "classIri": "urn:ngm:individual:eu-ai-act-article-50",
   "domain": "artificial-intelligence",
   "definition": "A provision of the EU AI Act mandating transparency obligations for AI systems that interact with humans or generate synthetic content, including chatbot disclosure and deepfake labelling requirements.",
-  "subClassOf": [
-    {
-      "id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance and Ethics"
-    }
-  ],
-  "entityType": "Class",
+  "subClassOf": [],
+  "entityType": "Individual",
   "qualityScore": 0.0,
   "maturity": "stub",
   "relationships": {

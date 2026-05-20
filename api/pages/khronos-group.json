@@ -3,16 +3,11 @@
   "title": "khronos group",
   "slug": "khronos-group",
   "public": true,
-  "classIri": "urn:ngm:class:khronos-group",
+  "classIri": "urn:ngm:individual:khronos-group",
   "domain": "spatial-computing",
   "definition": "The Khronos Group is an industry consortium that creates open, royalty-free standards for 3D graphics, augmented reality, parallel compute, and machine learning APIs across diverse platforms.",
-  "subClassOf": [
-    {
-      "id": "urn:ngm:class:sc-standards-and-interop",
-      "label": "SC Standards and Interop"
-    }
-  ],
-  "entityType": "Class",
+  "subClassOf": [],
+  "entityType": "Individual",
   "qualityScore": 0.0,
   "maturity": "stub",
   "relationships": {

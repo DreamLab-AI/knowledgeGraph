@@ -3,16 +3,11 @@
   "title": "cvpr",
   "slug": "cvpr",
   "public": true,
-  "classIri": "urn:ngm:class:cvpr",
+  "classIri": "urn:ngm:individual:cvpr",
   "domain": "artificial-intelligence",
   "definition": "CVPR (Conference on Computer Vision and Pattern Recognition) is the leading annual academic conference for research in computer vision and image understanding.",
-  "subClassOf": [
-    {
-      "id": "urn:ngm:class:ai-research-area",
-      "label": "AI Research Area"
-    }
-  ],
-  "entityType": "Class",
+  "subClassOf": [],
+  "entityType": "Individual",
   "qualityScore": 0.0,
   "maturity": "stub",
   "relationships": {

@@ -24,12 +24,12 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:fasb-asu-2023-08",
-  "@type": "Class",
+  "@id": "urn:ngm:individual:fasb-asu-2023-08",
+  "@type": "Individual",
   "label": "FASB ASU 2023-08",
   "definition": "FASB ASU 2023-08 is a US accounting standard update that requires entities to measure cryptocurrency assets at fair value with changes recognised in net income each reporting period.",
   "domain": "blockchain",
-  "subClassOf": [
+  "instanceOf": [
     {
       "@id": "urn:ngm:class:bc-governance-and-regulation",
       "label": "Blockchain Governance and Regulation"

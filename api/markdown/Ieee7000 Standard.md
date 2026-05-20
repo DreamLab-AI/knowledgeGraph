@@ -47,13 +47,13 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:ieee7000-standard",
-  "@type": "Class",
+  "@id": "urn:ngm:individual:ieee7000-standard",
+  "@type": "Individual",
   "label": "Ieee7000 Standard",
   "definition": "IEEE Standard Model Process for Addressing ical Concerns during System Design (IEEE 7000-2021), establishing systematic processes for incorporating ical values such as transparency, sustainability, privacy, fairness, and accountability into technology development from concept exploration through ...",
   "domain": "spatial-computing",
   "maturity": "draft",
-  "subClassOf": [
+  "instanceOf": [
     {
       "@id": "urn:ngm:class:sc-standards-and-interop",
       "label": "Standards and Interoperability"
@@ -125,7 +125,7 @@ public:: true
   - belongs-to-domain:: [[metaverse]]
 
 - ### Relationships
-  - is-subclass-of:: [[Ethical Design Standard]]
+  - instance-of:: [[Ethical Design Standard]]
   - enables:: [[Ethical Technology Development]]
 
 - ### Content

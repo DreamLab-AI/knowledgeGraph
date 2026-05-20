@@ -24,12 +24,12 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:apache-kafka",
-  "@type": "Class",
+  "@id": "urn:ngm:individual:apache-kafka",
+  "@type": "Individual",
   "label": "Apache Kafka",
   "definition": "A distributed event-streaming platform designed for high-throughput, fault-tolerant, real-time data pipelines and stream processing.",
   "domain": "infrastructure",
-  "subClassOf": [
+  "instanceOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Infra Computing and Cloud"

@@ -24,12 +24,12 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:ietf",
-  "@type": "Class",
+  "@id": "urn:ngm:individual:ietf",
+  "@type": "Individual",
   "label": "IETF",
   "definition": "The Internet Engineering Task Force (IETF) is an open standards organisation that develops and promotes voluntary internet standards, particularly the protocols that constitute the TCP/IP suite.",
   "domain": "infrastructure",
-  "subClassOf": [
+  "instanceOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Infra Software Engineering"

@@ -3,20 +3,11 @@
   "title": "Open AI",
   "slug": "open-ai",
   "public": true,
-  "classIri": "urn:ngm:class:open-ai",
+  "classIri": "urn:ngm:individual:open-ai",
   "domain": "artificial-intelligence",
   "definition": "OpenAI is an American artificial intelligence company founded in December 2015, known for developing the GPT family of large language models, DALL-E image generation, and the Sora video model.",
-  "subClassOf": [
-    {
-      "id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance and Ethics"
-    },
-    {
-      "id": "urn:ngm:class:aicompanies",
-      "label": "AICompanies"
-    }
-  ],
-  "entityType": "Class",
+  "subClassOf": [],
+  "entityType": "Individual",
   "qualityScore": 0.5,
   "maturity": "established",
   "relationships": {

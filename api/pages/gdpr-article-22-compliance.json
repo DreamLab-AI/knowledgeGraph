@@ -3,16 +3,11 @@
   "title": "GDPR Article 22 Compliance",
   "slug": "gdpr-article-22-compliance",
   "public": true,
-  "classIri": "urn:ngm:class:gdpr-article-22-compliance",
+  "classIri": "urn:ngm:individual:gdpr-article-22-compliance",
   "domain": "artificial-intelligence",
   "definition": "GDPR Article 22 Compliance addresses automated decision-making and profiling by establishing that data subjects have the right not to be subject to decisions based solely on automated processing (including profiling) which produce legal effects or similarly significantly affect them, requiring hu...",
-  "subClassOf": [
-    {
-      "id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance and Ethics"
-    }
-  ],
-  "entityType": "Class",
+  "subClassOf": [],
+  "entityType": "Individual",
   "qualityScore": 0.35,
   "maturity": "established",
   "relationships": {

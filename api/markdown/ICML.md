@@ -24,12 +24,12 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:icml",
-  "@type": "Class",
+  "@id": "urn:ngm:individual:icml",
+  "@type": "Individual",
   "label": "ICML",
   "definition": "ICML (International Conference on Machine Learning) is one of the leading annual academic venues for machine learning research, covering theory, algorithms, and applications.",
   "domain": "artificial-intelligence",
-  "subClassOf": [
+  "instanceOf": [
     {
       "@id": "urn:ngm:class:ai-research-area",
       "label": "AI Research Area"

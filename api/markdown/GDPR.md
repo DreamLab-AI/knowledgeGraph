@@ -24,12 +24,12 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:gdpr",
-  "@type": "Class",
+  "@id": "urn:ngm:individual:gdpr",
+  "@type": "Individual",
   "label": "GDPR",
   "definition": "The General Data Protection Regulation (GDPR) is a European Union legal framework that establishes rules for the collection, processing, and storage of personal data of EU residents.",
   "domain": "artificial-intelligence",
-  "subClassOf": [
+  "instanceOf": [
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"

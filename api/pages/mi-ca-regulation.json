@@ -3,16 +3,11 @@
   "title": "mica regulation",
   "slug": "mi-ca-regulation",
   "public": true,
-  "classIri": "urn:ngm:class:mi-ca-regulation",
+  "classIri": "urn:ngm:individual:mi-ca-regulation",
   "domain": "blockchain",
   "definition": "MiCA (Markets in Crypto-Assets Regulation) is the EU regulatory framework that establishes uniform rules for the issuance, trading, and supervision of crypto-assets and their service providers.",
-  "subClassOf": [
-    {
-      "id": "urn:ngm:class:bc-governance-and-regulation",
-      "label": "Blockchain Governance and Regulation"
-    }
-  ],
-  "entityType": "Class",
+  "subClassOf": [],
+  "entityType": "Individual",
   "qualityScore": 0.0,
   "maturity": "stub",
   "relationships": {

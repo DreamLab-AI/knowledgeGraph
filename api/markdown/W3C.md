@@ -24,12 +24,12 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:w3-c",
-  "@type": "Class",
+  "@id": "urn:ngm:individual:w3-c",
+  "@type": "Individual",
   "label": "W3C",
   "definition": "The World Wide Web Consortium (W3C) is the international standards organisation that develops and maintains web standards including HTML, CSS, and linked-data specifications.",
   "domain": "infrastructure",
-  "subClassOf": [
+  "instanceOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Infra Software Engineering"

@@ -24,12 +24,12 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:nist-ai-rmf",
-  "@type": "Class",
+  "@id": "urn:ngm:individual:nist-ai-rmf",
+  "@type": "Individual",
   "label": "NIST AI RMF",
   "definition": "The NIST AI Risk Management Framework (AI RMF) is a voluntary guidance document providing a structured approach for organisations to identify, assess, and manage risks associated with AI systems.",
   "domain": "artificial-intelligence",
-  "subClassOf": [
+  "instanceOf": [
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"

@@ -3,20 +3,11 @@
   "title": "Ieee P2733 Standards",
   "slug": "ieee-p2733-standards",
   "public": true,
-  "classIri": "urn:ngm:class:ieee-p2733-standards",
+  "classIri": "urn:ngm:individual:ieee-p2733-standards",
   "domain": "spatial-computing",
   "definition": "IEEE standards development efforts addressing virtual reality, extended reality, and metaverse technologies, including specifications for VR sickness reduction (IEEE 3079-2020), comfort requirements, and ical design practices that ensure safe and accessible immersive experiences.",
-  "subClassOf": [
-    {
-      "id": "urn:ngm:class:sc-standards-and-interop",
-      "label": "Standards and Interoperability"
-    },
-    {
-      "id": "urn:ngm:class:xr-technical-standard",
-      "label": "XR Technical Standard"
-    }
-  ],
-  "entityType": "Class",
+  "subClassOf": [],
+  "entityType": "Individual",
   "qualityScore": 0.5,
   "maturity": "draft",
   "relationships": {

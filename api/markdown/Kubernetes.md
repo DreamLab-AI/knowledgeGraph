@@ -24,12 +24,12 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:kubernetes",
-  "@type": "Class",
+  "@id": "urn:ngm:individual:kubernetes",
+  "@type": "Individual",
   "label": "Kubernetes",
   "definition": "Kubernetes is an open-source container orchestration platform that automates the deployment, scaling, and management of containerised applications across clusters of hosts.",
   "domain": "infrastructure",
-  "subClassOf": [
+  "instanceOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"

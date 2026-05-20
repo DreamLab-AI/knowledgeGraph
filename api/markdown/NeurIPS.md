@@ -24,12 +24,12 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:neur-ips",
-  "@type": "Class",
+  "@id": "urn:ngm:individual:neur-ips",
+  "@type": "Individual",
   "label": "NeurIPS",
   "definition": "NeurIPS (Conference on Neural Information Processing Systems) is one of the premier annual academic conferences for machine learning, deep learning, and computational neuroscience research.",
   "domain": "artificial-intelligence",
-  "subClassOf": [
+  "instanceOf": [
     {
       "@id": "urn:ngm:class:ai-research-area",
       "label": "AI Research Area"

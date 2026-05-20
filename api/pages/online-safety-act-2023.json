@@ -3,16 +3,11 @@
   "title": "online safety act 2023",
   "slug": "online-safety-act-2023",
   "public": true,
-  "classIri": "urn:ngm:class:online-safety-act-2023",
+  "classIri": "urn:ngm:individual:online-safety-act-2023",
   "domain": "artificial-intelligence",
   "definition": "UK legislation that imposes duties of care on online platforms to protect users from illegal and harmful content, with enforcement powers granted to the communications regulator Ofcom.",
-  "subClassOf": [
-    {
-      "id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance and Ethics"
-    }
-  ],
-  "entityType": "Class",
+  "subClassOf": [],
+  "entityType": "Individual",
   "qualityScore": 0.0,
   "maturity": "stub",
   "relationships": {

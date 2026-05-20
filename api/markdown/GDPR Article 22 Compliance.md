@@ -59,13 +59,13 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:gdpr-article-22-compliance",
-  "@type": "Class",
+  "@id": "urn:ngm:individual:gdpr-article-22-compliance",
+  "@type": "Individual",
   "label": "GDPR Article 22 Compliance",
   "definition": "GDPR Article 22 Compliance addresses automated decision-making and profiling by establishing that data subjects have the right not to be subject to decisions based solely on automated processing (including profiling) which produce legal effects or similarly significantly affect them, requiring hu...",
   "domain": "artificial-intelligence",
   "maturity": "established",
-  "subClassOf": [
+  "instanceOf": [
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"

@@ -24,12 +24,12 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:cvpr",
-  "@type": "Class",
+  "@id": "urn:ngm:individual:cvpr",
+  "@type": "Individual",
   "label": "CVPR",
   "definition": "CVPR (Conference on Computer Vision and Pattern Recognition) is the leading annual academic conference for research in computer vision and image understanding.",
   "domain": "artificial-intelligence",
-  "subClassOf": [
+  "instanceOf": [
     {
       "@id": "urn:ngm:class:ai-research-area",
       "label": "AI Research Area"

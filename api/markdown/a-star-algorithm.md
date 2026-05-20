@@ -9,7 +9,7 @@
   - implemented-in-layer:: [[AlgorithmicLayer]], [[ApplicationLayer]]
 
 - ### Relationships
-  - is-subclass-of:: [[Search Algorithms]], [[Heuristic Methods]], [[Informed Search]], [[Graph Algorithms]], [[Optimization Algorithms]]
+  - instance-of:: [[Search Algorithms]], [[Heuristic Methods]], [[Informed Search]], [[Graph Algorithms]], [[Optimization Algorithms]]
   - has-part:: [[Evaluation Function]], [[Priority Queue]], [[Open Set]], [[Closed Set]], [[Heuristic Function]], [[Cost Function]], [[Path Reconstruction]]
   - requires:: [[Graph Representation]], [[Admissible Heuristic]], [[Priority Queue Data Structure]], [[Distance Metric]], [[Node Expansion]]
   - enables:: [[Pathfinding]], [[Route Planning]], [[Motion Planning]], [[Navigation]], [[Optimal Path Discovery]], [[Goal-Directed Search]]

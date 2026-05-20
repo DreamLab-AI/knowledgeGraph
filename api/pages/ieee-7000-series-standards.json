@@ -3,16 +3,11 @@
   "title": "IEEE 7000 Series Standards",
   "slug": "ieee-7000-series-standards",
   "public": true,
-  "classIri": "urn:ngm:class:ieee-7000-series-standards",
+  "classIri": "urn:ngm:individual:ieee-7000-series-standards",
   "domain": "artificial-intelligence",
   "definition": "IEEE 7000 Series Standards are a comprehensive suite of technical and ics standards providing process-based guidance for addressing ical concerns in system design, development, and deployment, with specific focus on autonomous and intelligent systems including AI.",
-  "subClassOf": [
-    {
-      "id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance and Ethics"
-    }
-  ],
-  "entityType": "Class",
+  "subClassOf": [],
+  "entityType": "Individual",
   "qualityScore": 0.35,
   "maturity": "established",
   "relationships": {

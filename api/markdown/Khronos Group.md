@@ -24,12 +24,12 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:khronos-group",
-  "@type": "Class",
+  "@id": "urn:ngm:individual:khronos-group",
+  "@type": "Individual",
   "label": "Khronos Group",
   "definition": "The Khronos Group is an industry consortium that creates open, royalty-free standards for 3D graphics, augmented reality, parallel compute, and machine learning APIs across diverse platforms.",
   "domain": "spatial-computing",
-  "subClassOf": [
+  "instanceOf": [
     {
       "@id": "urn:ngm:class:sc-standards-and-interop",
       "label": "SC Standards and Interop"

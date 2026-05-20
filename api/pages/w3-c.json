@@ -3,16 +3,11 @@
   "title": "w3c",
   "slug": "w3-c",
   "public": true,
-  "classIri": "urn:ngm:class:w3-c",
+  "classIri": "urn:ngm:individual:w3-c",
   "domain": "infrastructure",
   "definition": "The World Wide Web Consortium (W3C) is the international standards organisation that develops and maintains web standards including HTML, CSS, and linked-data specifications.",
-  "subClassOf": [
-    {
-      "id": "urn:ngm:class:infra-software-engineering",
-      "label": "Infra Software Engineering"
-    }
-  ],
-  "entityType": "Class",
+  "subClassOf": [],
+  "entityType": "Individual",
   "qualityScore": 0.0,
   "maturity": "stub",
   "relationships": {

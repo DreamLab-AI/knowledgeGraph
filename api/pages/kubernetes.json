@@ -3,16 +3,11 @@
   "title": "kubernetes",
   "slug": "kubernetes",
   "public": true,
-  "classIri": "urn:ngm:class:kubernetes",
+  "classIri": "urn:ngm:individual:kubernetes",
   "domain": "infrastructure",
   "definition": "Kubernetes is an open-source container orchestration platform that automates the deployment, scaling, and management of containerised applications across clusters of hosts.",
-  "subClassOf": [
-    {
-      "id": "urn:ngm:class:infra-computing-and-cloud",
-      "label": "Computing and Cloud"
-    }
-  ],
-  "entityType": "Class",
+  "subClassOf": [],
+  "entityType": "Individual",
   "qualityScore": 0.0,
   "maturity": "stub",
   "relationships": {

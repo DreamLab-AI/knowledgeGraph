@@ -2,11 +2,11 @@
   "total_pages": 3101,
   "pages_with_ontology": 3066,
   "public_pages": 3086,
-  "total_issues": 1547,
+  "total_issues": 1540,
   "errors": 0,
-  "warnings": 1547,
+  "warnings": 1540,
   "by_code": {
-    "MULTI_PARENT": 1547
+    "MULTI_PARENT": 1540
   },
   "issues": [
     {
@@ -92,12 +92,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): Interaction Technology, Interaction Design, User Interface"
-    },
-    {
-      "path": "A-Star Algorithm.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): AI Technique, Search Algorithms"
     },
     {
       "path": "ADAS.md",
@@ -3082,18 +3076,6 @@
       "message": "Multiple parents (2): Content and Assets, Digital Performance Capture"
     },
     {
-      "path": "EU AI Act.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): AI Governance and Ethics, Product Safety Regulation, Risk-Based Regulation"
-    },
-    {
-      "path": "EU MiCA Regulation.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Governance and Regulation, Crypto-Asset Regulation, Digital Finance Package"
-    },
-    {
       "path": "Eclipse Attack.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -3664,12 +3646,6 @@
       "message": "Multiple parents (3): Actuation and Control, Physics Simulator, Robotics Development Tool"
     },
     {
-      "path": "Gdpr Article45.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Governance and Safety, Data Protection Regulation"
-    },
-    {
       "path": "Generative AI.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -4064,18 +4040,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): Security and Identity, Authentication Method, Identity Proofing"
-    },
-    {
-      "path": "Ieee P2733 Standards.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Standards and Interoperability, XR Technical Standard"
-    },
-    {
-      "path": "Ieee7000 Standard.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Standards and Interoperability, Ethical Design Standard"
     },
     {
       "path": "Image Processing Software.md",
@@ -5648,12 +5612,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): Protocol and Consensus, Blockchain Entity, DistributedDataStructure"
-    },
-    {
-      "path": "Open AI.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): AI Governance and Ethics, AICompanies"
     },
     {
       "path": "Open Generative AI tools.md",

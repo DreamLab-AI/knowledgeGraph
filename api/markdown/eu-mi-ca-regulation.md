@@ -9,7 +9,7 @@
   - implemented-in-layer:: [[LegalRegulatoryLayer]], [[SupervisoryLayer]], [[MarketConductLayer]]
 
 - ### Relationships
-  - is-subclass-of:: [[Crypto-Asset Regulation]], [[EU Regulation]], [[Financial Services Regulation]], [[Digital Finance Package]], [[Harmonised Single Market Rulebook]]
+  - instance-of:: [[Crypto-Asset Regulation]], [[EU Regulation]], [[Financial Services Regulation]], [[Digital Finance Package]], [[Harmonised Single Market Rulebook]]
   - has-part:: [[Asset-Referenced Token]], [[Electronic Money Token]], [[Crypto-Asset White Paper]], [[Crypto-Asset Service Provider]], [[MiCA Title II Other Crypto-Assets]], [[MiCA Title III EMT]], [[MiCA Title IV ART]], [[MiCA Title V CASP]], [[MiCA Title VI Market Abuse]], [[MiCA Transitional Regime Article 143]]
   - requires:: [[National Competent Authority]], [[CASP Authorisation]], [[White Paper Notification]], [[Reserve Asset Segregation]], [[Capital Requirements]], [[Fit and Proper Management]], [[ICT Risk Management DORA]]
   - enables:: [[EU Crypto Passport]], [[Cross-Border CASP Services]], [[Legal Certainty for Crypto Issuers]], [[Consumer Protection in Crypto]], [[Institutional Crypto Adoption]], [[Stablecoin Regulatory Clarity]]

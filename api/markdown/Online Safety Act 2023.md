@@ -24,12 +24,12 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:online-safety-act-2023",
-  "@type": "Class",
+  "@id": "urn:ngm:individual:online-safety-act-2023",
+  "@type": "Individual",
   "label": "Online Safety Act 2023",
   "definition": "UK legislation that imposes duties of care on online platforms to protect users from illegal and harmful content, with enforcement powers granted to the communications regulator Ofcom.",
   "domain": "artificial-intelligence",
-  "subClassOf": [
+  "instanceOf": [
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"

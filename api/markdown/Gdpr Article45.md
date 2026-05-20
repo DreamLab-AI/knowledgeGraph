@@ -43,13 +43,13 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:gdpr-article45",
-  "@type": "Class",
+  "@id": "urn:ngm:individual:gdpr-article45",
+  "@type": "Individual",
   "label": "Gdpr Article45",
   "definition": "The General Data Protection Regulation provision empowering the European Commission to determine wher third countries provide adequate data protection levels, enabling personal data transfers from the EU to approved jurisdictions without additional safeguards, critical for metaverse platforms ope...",
   "domain": "spatial-computing",
   "maturity": "draft",
-  "subClassOf": [
+  "instanceOf": [
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
       "label": "Governance and Safety"
@@ -108,7 +108,7 @@ public:: true
   - belongs-to-domain:: [[metaverse]]
 
 - ### Relationships
-  - is-subclass-of:: [[Data Protection Regulation]]
+  - instance-of:: [[Data Protection Regulation]]
 
 - ### Content
 

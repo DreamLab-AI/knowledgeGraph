@@ -3,20 +3,11 @@
   "title": "A-Star Algorithm",
   "slug": "a-star-algorithm",
   "public": true,
-  "classIri": "urn:ngm:class:a-star-algorithm",
+  "classIri": "urn:ngm:individual:a-star-algorithm",
   "domain": "artificial-intelligence",
   "definition": "A best-first informed search algorithm developed by Peter Hart, Nils Nilsson, and Bertram Raphael that finds the optimal path between nodes in a weighted graph by combining actual accumulated cost from the start node (g-score representing precise path cost traversed thus far) with admissible heur...",
-  "subClassOf": [
-    {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
-    },
-    {
-      "id": "urn:ngm:class:search-algorithms",
-      "label": "Search Algorithms"
-    }
-  ],
-  "entityType": "Class",
+  "subClassOf": [],
+  "entityType": "Individual",
   "qualityScore": 0.5,
   "maturity": "established",
   "relationships": {

@@ -3,16 +3,11 @@
   "title": "gdpr",
   "slug": "gdpr",
   "public": true,
-  "classIri": "urn:ngm:class:gdpr",
+  "classIri": "urn:ngm:individual:gdpr",
   "domain": "artificial-intelligence",
   "definition": "The General Data Protection Regulation (GDPR) is a European Union legal framework that establishes rules for the collection, processing, and storage of personal data of EU residents.",
-  "subClassOf": [
-    {
-      "id": "urn:ngm:class:ai-governance-and-ethics",
-      "label": "AI Governance and Ethics"
-    }
-  ],
-  "entityType": "Class",
+  "subClassOf": [],
+  "entityType": "Individual",
   "qualityScore": 0.0,
   "maturity": "stub",
   "relationships": {

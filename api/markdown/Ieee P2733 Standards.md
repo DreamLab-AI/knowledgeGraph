@@ -47,13 +47,13 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:ieee-p2733-standards",
-  "@type": "Class",
+  "@id": "urn:ngm:individual:ieee-p2733-standards",
+  "@type": "Individual",
   "label": "Ieee P2733 Standards",
   "definition": "IEEE standards development efforts addressing virtual reality, extended reality, and metaverse technologies, including specifications for VR sickness reduction (IEEE 3079-2020), comfort requirements, and ical design practices that ensure safe and accessible immersive experiences.",
   "domain": "spatial-computing",
   "maturity": "draft",
-  "subClassOf": [
+  "instanceOf": [
     {
       "@id": "urn:ngm:class:sc-standards-and-interop",
       "label": "Standards and Interoperability"
@@ -125,7 +125,7 @@ public:: true
   - belongs-to-domain:: [[metaverse]]
 
 - ### Relationships
-  - is-subclass-of:: [[XR Technical Standard]]
+  - instance-of:: [[XR Technical Standard]]
   - enables:: [[Safe Immersive Experiences]]
 
 - ### Content

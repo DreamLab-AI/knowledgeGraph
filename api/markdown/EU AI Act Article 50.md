@@ -24,12 +24,12 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:eu-ai-act-article-50",
-  "@type": "Class",
+  "@id": "urn:ngm:individual:eu-ai-act-article-50",
+  "@type": "Individual",
   "label": "EU AI Act Article 50",
   "definition": "A provision of the EU AI Act mandating transparency obligations for AI systems that interact with humans or generate synthetic content, including chatbot disclosure and deepfake labelling requirements.",
   "domain": "artificial-intelligence",
-  "subClassOf": [
+  "instanceOf": [
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"

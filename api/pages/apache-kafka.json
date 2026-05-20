@@ -3,16 +3,11 @@
   "title": "apache kafka",
   "slug": "apache-kafka",
   "public": true,
-  "classIri": "urn:ngm:class:apache-kafka",
+  "classIri": "urn:ngm:individual:apache-kafka",
   "domain": "infrastructure",
   "definition": "A distributed event-streaming platform designed for high-throughput, fault-tolerant, real-time data pipelines and stream processing.",
-  "subClassOf": [
-    {
-      "id": "urn:ngm:class:infra-computing-and-cloud",
-      "label": "Infra Computing and Cloud"
-    }
-  ],
-  "entityType": "Class",
+  "subClassOf": [],
+  "entityType": "Individual",
   "qualityScore": 0.0,
   "maturity": "stub",
   "relationships": {

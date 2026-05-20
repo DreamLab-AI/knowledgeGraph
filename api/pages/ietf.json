@@ -3,16 +3,11 @@
   "title": "ietf",
   "slug": "ietf",
   "public": true,
-  "classIri": "urn:ngm:class:ietf",
+  "classIri": "urn:ngm:individual:ietf",
   "domain": "infrastructure",
   "definition": "The Internet Engineering Task Force (IETF) is an open standards organisation that develops and promotes voluntary internet standards, particularly the protocols that constitute the TCP/IP suite.",
-  "subClassOf": [
-    {
-      "id": "urn:ngm:class:infra-software-engineering",
-      "label": "Infra Software Engineering"
-    }
-  ],
-  "entityType": "Class",
+  "subClassOf": [],
+  "entityType": "Individual",
   "qualityScore": 0.0,
   "maturity": "stub",
   "relationships": {

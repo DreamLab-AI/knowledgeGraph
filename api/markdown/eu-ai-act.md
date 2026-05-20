@@ -9,7 +9,7 @@
   - implemented-in-layer:: [[PolicyLayer]], [[LegalLayer]], [[GovernanceLayer]]
 
 - ### Relationships
-  - is-subclass-of:: [[AI Regulation]], [[Digital Regulation]], [[Product Safety Regulation]], [[EU Regulation]], [[Risk-Based Regulation]]
+  - instance-of:: [[AI Regulation]], [[Digital Regulation]], [[Product Safety Regulation]], [[EU Regulation]], [[Risk-Based Regulation]]
   - has-part:: [[Article 5 Prohibitions]], [[Annex III High-Risk List]], [[GPAI Code of Practice]], [[AI Office]], [[European AI Board]], [[AI Pact]], [[Scientific Panel]], [[Advisory Forum]], [[EU Database for High-Risk AI]]
   - requires:: [[Conformity Assessment]], [[Risk Management System]], [[Technical Documentation]], [[Human Oversight]], [[Post-Market Monitoring]], [[Fundamental Rights Impact Assessment]], [[CE Marking]], [[Notified Body]]
   - enables:: [[Trustworthy AI]], [[Internal Market Harmonisation]], [[Algorithmic Accountability]], [[Cross-Border AI Trade]], [[AI Auditing Profession]], [[Standardised AI Compliance]]

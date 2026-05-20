@@ -219,13 +219,13 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:a-star-algorithm",
-  "@type": "Class",
+  "@id": "urn:ngm:individual:a-star-algorithm",
+  "@type": "Individual",
   "label": "A-Star Algorithm",
   "definition": "A best-first informed search algorithm developed by Peter Hart, Nils Nilsson, and Bertram Raphael that finds the optimal path between nodes in a weighted graph by combining actual accumulated cost from the start node (g-score representing precise path cost traversed thus far) with admissible heur...",
   "domain": "artificial-intelligence",
   "maturity": "established",
-  "subClassOf": [
+  "instanceOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
@@ -604,7 +604,7 @@ public:: true
   - implemented-in-layer:: [[AlgorithmicLayer]], [[ApplicationLayer]]
 
 - ### Relationships
-  - is-subclass-of:: [[Search Algorithms]], [[Heuristic Methods]], [[Informed Search]], [[Graph Algorithms]], [[Optimization Algorithms]]
+  - instance-of:: [[Search Algorithms]], [[Heuristic Methods]], [[Informed Search]], [[Graph Algorithms]], [[Optimization Algorithms]]
   - has-part:: [[Evaluation Function]], [[Priority Queue]], [[Open Set]], [[Closed Set]], [[Heuristic Function]], [[Cost Function]], [[Path Reconstruction]]
   - requires:: [[Graph Representation]], [[Admissible Heuristic]], [[Priority Queue Data Structure]], [[Distance Metric]], [[Node Expansion]]
   - enables:: [[Pathfinding]], [[Route Planning]], [[Motion Planning]], [[Navigation]], [[Optimal Path Discovery]], [[Goal-Directed Search]]

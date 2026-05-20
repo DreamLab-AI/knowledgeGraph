@@ -3,16 +3,11 @@
   "title": "icml",
   "slug": "icml",
   "public": true,
-  "classIri": "urn:ngm:class:icml",
+  "classIri": "urn:ngm:individual:icml",
   "domain": "artificial-intelligence",
   "definition": "ICML (International Conference on Machine Learning) is one of the leading annual academic venues for machine learning research, covering theory, algorithms, and applications.",
-  "subClassOf": [
-    {
-      "id": "urn:ngm:class:ai-research-area",
-      "label": "AI Research Area"
-    }
-  ],
-  "entityType": "Class",
+  "subClassOf": [],
+  "entityType": "Individual",
   "qualityScore": 0.0,
   "maturity": "stub",
   "relationships": {

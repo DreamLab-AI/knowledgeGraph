@@ -59,8 +59,8 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:ieee-7000-series-standards",
-  "@type": "Class",
+  "@id": "urn:ngm:individual:ieee-7000-series-standards",
+  "@type": "Individual",
   "label": "IEEE 7000 Series Standards",
   "definition": "IEEE 7000 Series Standards are a comprehensive suite of technical and ics standards providing process-based guidance for addressing ical concerns in system design, development, and deployment, with specific focus on autonomous and intelligent systems including AI.",
   "domain": "artificial-intelligence",
@@ -79,7 +79,7 @@ public:: true
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
   },
-  "subClassOf": [
+  "instanceOf": [
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"

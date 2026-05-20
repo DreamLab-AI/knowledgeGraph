@@ -3,16 +3,11 @@
   "title": "pytorch",
   "slug": "py-torch",
   "public": true,
-  "classIri": "urn:ngm:class:py-torch",
+  "classIri": "urn:ngm:individual:py-torch",
   "domain": "artificial-intelligence",
   "definition": "PyTorch is an open-source deep learning framework developed by Meta AI that provides dynamic computational graphs and GPU-accelerated tensor operations widely used for research and production ML.",
-  "subClassOf": [
-    {
-      "id": "urn:ngm:class:cat-ai-infrastructure",
-      "label": "AI Infrastructure"
-    }
-  ],
-  "entityType": "Class",
+  "subClassOf": [],
+  "entityType": "Individual",
   "qualityScore": 0.0,
   "maturity": "stub",
   "relationships": {

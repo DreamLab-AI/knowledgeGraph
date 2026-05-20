@@ -24,12 +24,12 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:iccv",
-  "@type": "Class",
+  "@id": "urn:ngm:individual:iccv",
+  "@type": "Individual",
   "label": "ICCV",
   "definition": "The International Conference on Computer Vision (ICCV) is a premier biennial academic venue for publishing and presenting foundational and applied computer vision research.",
   "domain": "artificial-intelligence",
-  "subClassOf": [
+  "instanceOf": [
     {
       "@id": "urn:ngm:class:ai-research-area",
       "label": "AI Research Area"

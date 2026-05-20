@@ -24,12 +24,12 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:iclr",
-  "@type": "Class",
+  "@id": "urn:ngm:individual:iclr",
+  "@type": "Individual",
   "label": "ICLR",
   "definition": "ICLR (International Conference on Learning Representations) is a premier annual academic conference focused on deep learning and representation learning research.",
   "domain": "artificial-intelligence",
-  "subClassOf": [
+  "instanceOf": [
     {
       "@id": "urn:ngm:class:ai-research-area",
       "label": "AI Research Area"

@@ -3,24 +3,11 @@
   "title": "EU MiCA Regulation",
   "slug": "eu-mi-ca-regulation",
   "public": true,
-  "classIri": "urn:ngm:class:eu-mi-ca-regulation",
+  "classIri": "urn:ngm:individual:eu-mi-ca-regulation",
   "domain": "blockchain",
   "definition": "The EU Markets in Crypto-Assets Regulation (MiCA, formally Regulation (EU) 2023/1114 of the European Parliament and of the Council of 31 May 2023), also abbreviated MiCAR, is the world's first comprehensive, directly applicable, horizontally harmonised regulatory framework for crypto-assets and t...",
-  "subClassOf": [
-    {
-      "id": "urn:ngm:class:bc-governance-and-regulation",
-      "label": "Governance and Regulation"
-    },
-    {
-      "id": "urn:ngm:class:crypto-asset-regulation",
-      "label": "Crypto-Asset Regulation"
-    },
-    {
-      "id": "urn:ngm:class:digital-finance-package",
-      "label": "Digital Finance Package"
-    }
-  ],
-  "entityType": "Class",
+  "subClassOf": [],
+  "entityType": "Individual",
   "qualityScore": 0.52,
   "maturity": "established",
   "relationships": {

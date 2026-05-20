@@ -3,16 +3,11 @@
   "title": "solidity",
   "slug": "solidity",
   "public": true,
-  "classIri": "urn:ngm:class:solidity",
+  "classIri": "urn:ngm:individual:solidity",
   "domain": "blockchain",
   "definition": "Solidity is a statically typed, contract-oriented programming language designed for writing smart contracts that execute on the Ethereum Virtual Machine.",
-  "subClassOf": [
-    {
-      "id": "urn:ngm:class:bc-protocol-and-consensus",
-      "label": "Blockchain Protocol and Consensus"
-    }
-  ],
-  "entityType": "Class",
+  "subClassOf": [],
+  "entityType": "Individual",
   "qualityScore": 0.0,
   "maturity": "stub",
   "relationships": {

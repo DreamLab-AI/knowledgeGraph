@@ -7,7 +7,7 @@
   - belongs-to-domain:: [[metaverse]]
 
 - ### Relationships
-  - is-subclass-of:: [[XR Technical Standard]]
+  - instance-of:: [[XR Technical Standard]]
   - enables:: [[Safe Immersive Experiences]]
 
 - ### Content

@@ -24,12 +24,12 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:py-torch",
-  "@type": "Class",
+  "@id": "urn:ngm:individual:py-torch",
+  "@type": "Individual",
   "label": "PyTorch",
   "definition": "PyTorch is an open-source deep learning framework developed by Meta AI that provides dynamic computational graphs and GPU-accelerated tensor operations widely used for research and production ML.",
   "domain": "artificial-intelligence",
-  "subClassOf": [
+  "instanceOf": [
     {
       "@id": "urn:ngm:class:cat-ai-infrastructure",
       "label": "AI Infrastructure"

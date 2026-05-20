@@ -24,12 +24,12 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:solidity",
-  "@type": "Class",
+  "@id": "urn:ngm:individual:solidity",
+  "@type": "Individual",
   "label": "Solidity",
   "definition": "Solidity is a statically typed, contract-oriented programming language designed for writing smart contracts that execute on the Ethereum Virtual Machine.",
   "domain": "blockchain",
-  "subClassOf": [
+  "instanceOf": [
     {
       "@id": "urn:ngm:class:bc-protocol-and-consensus",
       "label": "Blockchain Protocol and Consensus"
