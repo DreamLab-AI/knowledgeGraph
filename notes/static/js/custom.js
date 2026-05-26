@@ -32,8 +32,12 @@
     return blocks.filter(function (block) {
       var c = block.querySelector('.block-content');
       if (!c) return false;
+      /* skip blocks that are themselves collapsed (top-level collapsed:: true) */
+      if (block.hasAttribute('data-collapsed') || block.classList.contains('collapsed')) return false;
       var t = c.textContent.trim();
       if (!t || t === '---' || t === '***' || t === '___') return false;
+      /* honor slide:: false property */
+      if (/slide:{1,2}\s*false/i.test(t)) return false;
       /* single <hr> child */
       if (c.children.length === 1 && c.children[0] && c.children[0].tagName === 'HR') return false;
       /* skip property-only blocks (SPA renders "public:: true" as "public:true") */
@@ -189,6 +193,25 @@
     state.slides[n].scrollTop = 0;
     hideCollapsedBlocks(state.slides[n]);
     detectHero(state.slides[n]);
+    /* scroll indicator for overflowing slides */
+    var slide = state.slides[n];
+    setTimeout(function() {
+      var indicator = slide.querySelector('.ls-pres-scroll-hint');
+      if (slide.scrollHeight > slide.clientHeight + 50) {
+        if (!indicator) {
+          indicator = document.createElement('div');
+          indicator.className = 'ls-pres-scroll-hint';
+          indicator.textContent = '▼';
+          slide.appendChild(indicator);
+        }
+        indicator.style.display = '';
+        slide.onscroll = function() {
+          if (slide.scrollTop > 30 && indicator) indicator.style.display = 'none';
+        };
+      } else if (indicator) {
+        indicator.style.display = 'none';
+      }
+    }, 100);
   }
 
   function next() { showSlide(state.idx + 1); }
