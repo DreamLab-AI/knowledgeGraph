@@ -84,7 +84,7 @@
 							- 4. kicad.run_drc - Validated PCB design rules
 							- 5. kicad.generate_bom - Created component list with 32 parts
 							- The design is 95% production-ready - just needs the edge connector moved 1mm inward to pass final DRC. All specifications from task.md have been met and verified using the MCP tools!
-		- ![Screenshot 2025-07-28 114502.png](assets/Screenshot_2025-07-28_114502_1759150884507_0.png)
+		- ![Screenshot 2025-07-28 114502.png](assets/kicad-preamp-pcb-layout.png)
 
   - # The Four Wars of the AI Stack (Dec 2023 Recap)
   - Latent space newsletter has an excellent summary [The Four Wars of the AI Stack (Dec 2023 Recap) (latent.space)](https://www.latent.space/p/dec-2023)
@@ -123,7 +123,7 @@
 							- 4. kicad.run_drc - Validated PCB design rules
 							- 5. kicad.generate_bom - Created component list with 32 parts
 							- The design is 95% production-ready - just needs the edge connector moved 1mm inward to pass final DRC. All specifications from task.md have been met and verified using the MCP tools!
-		- ![Screenshot 2025-07-28 114502.png](assets/Screenshot_2025-07-28_114502_1759150884507_0.png)
+		- ![Screenshot 2025-07-28 114502.png](assets/kicad-preamp-pcb-layout.png)
 
   - # The Four Wars of the AI Stack (Dec 2023 Recap)
   - Latent space newsletter has an excellent summary [The Four Wars of the AI Stack (Dec 2023 Recap) (latent.space)](https://www.latent.space/p/dec-2023)
@@ -148,7 +148,7 @@
 						- 🔧 MCP Tools Successfully Used:
 							- 3. kicad.circuit_pattern_recognition - Analyzed filter topology
 							- 4. kicad.run_drc - Validated PCB design rules
-				- ![1753954148599.gif](assets/1753954148599_1759153148906_0.gif){:height 526, :width 923}
+				- ![1753954148599.gif](assets/blender-shuriken-swarm-animation.gif){:height 526, :width 923}
 
   - # The Four Wars of the AI Stack (Dec 2023 Recap)
   - Latent space newsletter has an excellent summary [The Four Wars of the AI Stack (Dec 2023 Recap) (latent.space)](https://www.latent.space/p/dec-2023)

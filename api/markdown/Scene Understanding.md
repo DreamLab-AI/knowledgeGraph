@@ -157,7 +157,7 @@ public:: true
   -   Customisation of colours and metrics is possible, enabling the tool to adapt to different codebases and analysis goals.
 
 		- ### First attempt, test scene in a headless container - just returned the PNG
-			- ![Screenshot 2025-07-15 075620.png](assets/Screenshot_2025-07-15_075620_1759151522545_0.png)
+			- ![Screenshot 2025-07-15 075620.png](assets/blender-mcp-first-test-scene.png)
 
 		- ### Fetching Keysets from Cashew Mint
 			- Use JavaScript to asynchronously fetch the list of available keysets from the Cashew mint's API.
@@ -312,7 +312,7 @@ public:: true
   -   Customisation of colours and metrics is possible, enabling the tool to adapt to different codebases and analysis goals.
 
 		- ### First attempt, test scene in a headless container - just returned the PNG
-			- ![Screenshot 2025-07-15 075620.png](assets/Screenshot_2025-07-15_075620_1759151522545_0.png)
+			- ![Screenshot 2025-07-15 075620.png](assets/blender-mcp-first-test-scene.png)
 
 		- ### Fetching Keysets from Cashew Mint
 			- Use JavaScript to asynchronously fetch the list of available keysets from the Cashew mint's API.

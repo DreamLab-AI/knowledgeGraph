@@ -212,7 +212,7 @@ bridges-to:: [[Telecollaboration]]
 			       ☐ Generate parametric golden lattice canopy structure
 			       ☐ Create kinetic Three Graces fountain with multi-tiered water system
 			       ☐ Arrange all assets in proper spatial relationships and optimize scene
-			- ![Screenshot 2025-07-15 090309.png](assets/Screenshot_2025-07-15_090309_1759151664398_0.png)
+			- ![Screenshot 2025-07-15 090309.png](assets/blender-poliphili-wireframe-scene.png)
 
 		- ### Defining Agents
 			- An agent is an open-ended AI system that can:

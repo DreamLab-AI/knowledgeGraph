@@ -477,7 +477,7 @@ public:: true
   - Amazon is making a significant push in AI with its new "Nova" models, a revamped "Alexa Plus," and next-generation AI chips.
 
 		- ### Physically Based Textures from BIM (Revit)
-			- ![Screenshot 2025-07-24 173949.png](assets/Screenshot_2025-07-24_173949_1759151595641_0.png)
+			- ![Screenshot 2025-07-24 173949.png](assets/blender-bim-pbr-texture-cube.png)
 
 		- ### Evolution from Chat to Complex Systems
 			- Context engineering emerged as AI systems evolved beyond simple chat interfaces to incorporate:
@@ -1039,7 +1039,7 @@ public:: true
   - Amazon is making a significant push in AI with its new "Nova" models, a revamped "Alexa Plus," and next-generation AI chips.
 
 		- ### Physically Based Textures from BIM (Revit)
-			- ![Screenshot 2025-07-24 173949.png](assets/Screenshot_2025-07-24_173949_1759151595641_0.png)
+			- ![Screenshot 2025-07-24 173949.png](assets/blender-bim-pbr-texture-cube.png)
 
 		- ### Evolution from Chat to Complex Systems
 			- Context engineering emerged as AI systems evolved beyond simple chat interfaces to incorporate:
@@ -1564,7 +1564,7 @@ public:: true
   - GET3D aims to democratise 3D content creation by simplifying the process and reducing reliance on expert 3D modellers.
 
 		- ### Physically Based Textures from BIM (Revit)
-			- ![Screenshot 2025-07-24 173949.png](assets/Screenshot_2025-07-24_173949_1759151595641_0.png)
+			- ![Screenshot 2025-07-24 173949.png](assets/blender-bim-pbr-texture-cube.png)
 
 		- ### Evolution from Chat to Complex Systems
 			- Context engineering emerged as AI systems evolved beyond simple chat interfaces to incorporate:

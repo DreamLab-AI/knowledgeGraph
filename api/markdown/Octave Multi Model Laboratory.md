@@ -121,7 +121,7 @@ public:: true
 		- Primary expertise in novel display topologies and high performance [[Hardware and Edge]].
 		- ![IMG_20110218_152226.jpg](../assets/IMG_20110218_152226_1749200152488_0.jpg)
 		- This is big data running in human scale VR with Prof Rob Aspin in 2019.
-		- ![P1080785.JPG](../assets/P1080785_1728030359430_0.JPG){:height 499, :width 872}
+		- ![P1080785.JPG](../assets/photo-cave-vr-knowledge-graph.jpg){:height 499, :width 872}
 		- ![IMG_20160425_145237.jpg](../assets/IMG_20160425_145237_1728029981248_0.jpg)
 		- {{video https://www.youtube.com/watch?v=vlV1vRD4jrY&t=15s}}
   - Human scale mixed reality experience

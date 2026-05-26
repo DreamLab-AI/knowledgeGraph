@@ -14,7 +14,7 @@
 
   - ## AI in Architecture Report for ARXIV
 		- ![0b20c32c-df85-498a-9f93-bd8f365e2a89.jpg](assets/0b20c32c-df85-498a-9f93-bd8f365e2a89_1759152439221_0.jpg)
-		- ![image.png](assets/image_1759158174647_0.png)
+		- ![image.png](assets/industry-report-document-pages.png)
 		- ![4eb58299-ce01-43db-8160-327452d85402.jpg](assets/4eb58299-ce01-43db-8160-327452d85402_1759152268830_0.jpg)
 		- ![AIinARCHITECTURE.pdf](assets/AIinARCHITECTURE_1759152504700_0.pdf)
 
@@ -63,7 +63,7 @@
 
   - ## AI in Architecture Report for ARXIV
 		- ![0b20c32c-df85-498a-9f93-bd8f365e2a89.jpg](assets/0b20c32c-df85-498a-9f93-bd8f365e2a89_1759152439221_0.jpg)
-		- ![image.png](assets/image_1759158174647_0.png)
+		- ![image.png](assets/industry-report-document-pages.png)
 		- ![4eb58299-ce01-43db-8160-327452d85402.jpg](assets/4eb58299-ce01-43db-8160-327452d85402_1759152268830_0.jpg)
 		- ![AIinARCHITECTURE.pdf](assets/AIinARCHITECTURE_1759152504700_0.pdf)
 
@@ -112,7 +112,7 @@
 
   - ## AI in Architecture Report for ARXIV
 		- ![0b20c32c-df85-498a-9f93-bd8f365e2a89.jpg](assets/0b20c32c-df85-498a-9f93-bd8f365e2a89_1759152439221_0.jpg)
-		- ![image.png](assets/image_1759158174647_0.png)
+		- ![image.png](assets/industry-report-document-pages.png)
 		- ![4eb58299-ce01-43db-8160-327452d85402.jpg](assets/4eb58299-ce01-43db-8160-327452d85402_1759152268830_0.jpg)
 		- ![AIinARCHITECTURE.pdf](assets/AIinARCHITECTURE_1759152504700_0.pdf)
 
@@ -210,7 +210,7 @@
 
   - ## AI in Architecture Report for ARXIV
 		- ![0b20c32c-df85-498a-9f93-bd8f365e2a89.jpg](assets/0b20c32c-df85-498a-9f93-bd8f365e2a89_1759152439221_0.jpg)
-		- ![image.png](assets/image_1759158174647_0.png)
+		- ![image.png](assets/industry-report-document-pages.png)
 		- ![4eb58299-ce01-43db-8160-327452d85402.jpg](assets/4eb58299-ce01-43db-8160-327452d85402_1759152268830_0.jpg)
 		- ![AIinARCHITECTURE.pdf](assets/AIinARCHITECTURE_1759152504700_0.pdf)
 

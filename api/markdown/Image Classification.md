@@ -218,7 +218,7 @@ public:: true
 		- ![OctaveBigData.mp4](assets/OctaveBigData_1759325311429_0.mp4)
 		- ![groupOctave.jpg](https://github.com/DreamLab-AI/VisionFlow/blob/main/groupOctave.jpg?raw=true){:height 659, :width 1158}
 		- ![ChloeOctave.jpg](https://github.com/DreamLab-AI/VisionFlow/blob/main/ChloeOctave.jpg?raw=true)
-		- ![image.png](assets/image_1759318149292_0.png){:height 1804, :width 1167}
+		- ![image.png](assets/visionflow-architecture-diagram.png){:height 1804, :width 1167}
 
 				- ### Uses Microsoft GraphRAG for deep document understanding
 					- ![image.png](assets/image_1759159517520_0.png){:height 798, :width 708}
@@ -227,11 +227,11 @@ public:: true
 		- Three tier quote in 4 hours.
 		- 300 pages
 		- Selected the team and branding guidelines from the DreamLab website
-			- ![image.png](assets/image_1759157997878_0.png)
-			- ![image.png](assets/image_1759158310556_0.png)
+			- ![image.png](assets/cave-quote-document-pages.png)
+			- ![image.png](assets/cave-quote-audio-spec-page.png)
 		- Includes things like HVAC, detailed specifications
 		- Created a website to pitch it, which was kinda slop and made wild claims.
-		- ![CaveSystemQuote.pdf](assets/CaveSystemQuote_1759150983216_0.pdf)
+		- ![CaveSystemQuote.pdf](assets/cave-system-quote-document.pdf)
 
 		- ### 300 pages of report
 			- ![image.png](assets/image_1759157795020_0.png)
@@ -296,7 +296,7 @@ public:: true
 		- ![OctaveBigData.mp4](assets/OctaveBigData_1759325311429_0.mp4)
 		- ![groupOctave.jpg](https://github.com/DreamLab-AI/VisionFlow/blob/main/groupOctave.jpg?raw=true){:height 659, :width 1158}
 		- ![ChloeOctave.jpg](https://github.com/DreamLab-AI/VisionFlow/blob/main/ChloeOctave.jpg?raw=true)
-		- ![image.png](assets/image_1759318149292_0.png){:height 1804, :width 1167}
+		- ![image.png](assets/visionflow-architecture-diagram.png){:height 1804, :width 1167}
 
 				- ### Uses Microsoft GraphRAG for deep document understanding
 					- ![image.png](assets/image_1759159517520_0.png){:height 798, :width 708}
@@ -305,11 +305,11 @@ public:: true
 		- Three tier quote in 4 hours.
 		- 300 pages
 		- Selected the team and branding guidelines from the DreamLab website
-			- ![image.png](assets/image_1759157997878_0.png)
-			- ![image.png](assets/image_1759158310556_0.png)
+			- ![image.png](assets/cave-quote-document-pages.png)
+			- ![image.png](assets/cave-quote-audio-spec-page.png)
 		- Includes things like HVAC, detailed specifications
 		- Created a website to pitch it, which was kinda slop and made wild claims.
-		- ![CaveSystemQuote.pdf](assets/CaveSystemQuote_1759150983216_0.pdf)
+		- ![CaveSystemQuote.pdf](assets/cave-system-quote-document.pdf)
 
 		- ### 300 pages of report
 			- ![image.png](assets/image_1759157795020_0.png)
@@ -372,7 +372,7 @@ public:: true
 
 		- ### Inspired by 2016 work from Prof Rob Aspin
 		- ![ChloeOctave.jpg](https://github.com/DreamLab-AI/VisionFlow/blob/main/ChloeOctave.jpg?raw=true)
-		- ![image.png](assets/image_1759318149292_0.png){:height 1804, :width 1167}
+		- ![image.png](assets/visionflow-architecture-diagram.png){:height 1804, :width 1167}
 
   - # AnimateDiff
   - AnimateDiff is a framework that can generate animated videos from a single static image and a text prompt. It is a powerful tool for creating AI-generated animations and has become very popular in the AI art community.
@@ -421,7 +421,7 @@ public:: true
 
   - ## VisionFlow Built Itself (100k ish lines of code)
 		- ![ChloeOctave.jpg](https://github.com/DreamLab-AI/VisionFlow/blob/main/ChloeOctave.jpg?raw=true)
-		- ![image.png](assets/image_1759158174647_0.png)
+		- ![image.png](assets/industry-report-document-pages.png)
 		- ![4eb58299-ce01-43db-8160-327452d85402.jpg](assets/4eb58299-ce01-43db-8160-327452d85402_1759152268830_0.jpg)
 		- ![AIinARCHITECTURE.pdf](assets/AIinARCHITECTURE_1759152504700_0.pdf)
 

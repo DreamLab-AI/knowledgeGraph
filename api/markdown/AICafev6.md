@@ -112,7 +112,7 @@ public:: true
 		- ![OctaveBigData.mp4](../assets/OctaveBigData_1759325311429_0.mp4)
 		- ![groupOctave.jpg](https://github.com/DreamLab-AI/VisionFlow/blob/main/groupOctave.jpg?raw=true){:height 659, :width 1158}
 		- ![ChloeOctave.jpg](https://github.com/DreamLab-AI/VisionFlow/blob/main/ChloeOctave.jpg?raw=true)
-		- ![image.png](../assets/image_1759318149292_0.png){:height 1804, :width 1167}
+		- ![image.png](../assets/visionflow-architecture-diagram.png){:height 1804, :width 1167}
 			- <iframe src="https://jjohare.github.io/visionflowwebsite/" style="width: 100%; height: 600px"></iframe>
 					- ![image.png](../assets/image_1759159517520_0.png){:height 798, :width 708}
 		- ```
@@ -120,8 +120,8 @@ public:: true
 		  not too expensive, nothing too flashy, 
 		  character
 			  ```
-				- ![1753954148599.gif](../assets/1753954148599_1759153148906_0.gif){:height 526, :width 923}
-			- ![Screenshot 2025-07-24 173949.png](../assets/Screenshot_2025-07-24_173949_1759151595641_0.png)
+				- ![1753954148599.gif](../assets/blender-shuriken-swarm-animation.gif){:height 526, :width 923}
+			- ![Screenshot 2025-07-24 173949.png](../assets/blender-bim-pbr-texture-cube.png)
 			- <iframe src="https://www.gla.ac.uk/myglasgow/library/files/special/exhibns/month/feb2004.html" style="width: 100%; height: 600px"></iframe>
 			- Task(Initialize Hive Mind)
 			       ☐ Initialize Blender project with proper scene settings and units (feet)
@@ -139,9 +139,9 @@ public:: true
 			       ☐ Generate parametric golden lattice canopy structure
 			       ☐ Create kinetic Three Graces fountain with multi-tiered water system
 			       ☐ Arrange all assets in proper spatial relationships and optimize scene
-			- ![Screenshot 2025-07-15 090309.png](../assets/Screenshot_2025-07-15_090309_1759151664398_0.png)
+			- ![Screenshot 2025-07-15 090309.png](../assets/blender-poliphili-wireframe-scene.png)
 		- ![0b20c32c-df85-498a-9f93-bd8f365e2a89.jpg](../assets/0b20c32c-df85-498a-9f93-bd8f365e2a89_1759152439221_0.jpg)
-		- ![image.png](../assets/image_1759158174647_0.png)
+		- ![image.png](../assets/industry-report-document-pages.png)
 		- ![4eb58299-ce01-43db-8160-327452d85402.jpg](../assets/4eb58299-ce01-43db-8160-327452d85402_1759152268830_0.jpg)
 		- ![AIinARCHITECTURE.pdf](../assets/AIinARCHITECTURE_1759152504700_0.pdf)
 
@@ -195,16 +195,16 @@ public:: true
 							- 4. kicad.run_drc - Validated PCB design rules
 							- 5. kicad.generate_bom - Created component list with 32 parts
 							- The design is 95% production-ready - just needs the edge connector moved 1mm inward to pass final DRC. All specifications from task.md have been met and verified using the MCP tools!
-		- ![Screenshot 2025-07-28 114502.png](../assets/Screenshot_2025-07-28_114502_1759150884507_0.png)
+		- ![Screenshot 2025-07-28 114502.png](../assets/kicad-preamp-pcb-layout.png)
   - ## World Class Immersive System Quote
 		- Three tier quote in 4 hours.
 		- 300 pages
 		- Selected the team and branding guidelines from the DreamLab website
-			- ![image.png](../assets/image_1759157997878_0.png)
-			- ![image.png](../assets/image_1759158310556_0.png)
+			- ![image.png](../assets/cave-quote-document-pages.png)
+			- ![image.png](../assets/cave-quote-audio-spec-page.png)
 		- Includes things like HVAC, detailed specifications
 		- Created a website to pitch it, which was kinda slop and made wild claims.
-		- ![CaveSystemQuote.pdf](../assets/CaveSystemQuote_1759150983216_0.pdf)
+		- ![CaveSystemQuote.pdf](../assets/cave-system-quote-document.pdf)
   - ## Business Case for DreamLab Cumbria
 		- ### Market Analysis
 			- ![Screenshot 2025-07-11 224637.png](../assets/Screenshot_2025-07-11_224637_1759158829593_0.png)
@@ -219,7 +219,7 @@ public:: true
 			- ![image.png](../assets/image_1759158570382_0.png)
   - ## Blender
 		- ### First attempt, test scene in a headless container - just returned the PNG
-			- ![Screenshot 2025-07-15 075620.png](../assets/Screenshot_2025-07-15_075620_1759151522545_0.png)
+			- ![Screenshot 2025-07-15 075620.png](../assets/blender-mcp-first-test-scene.png)
 		- ### Gimme a swarm of Shuriken
 			- ```
 			  connect to the blender mcp and create me a swarm of shurikan which exhibit flocking behaviour. 
