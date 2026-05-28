@@ -185,16 +185,8 @@
       "label": "ETSI_Domain_Interoperability"
     },
     {
-      "slug": "grok",
-      "label": "Grok"
-    },
-    {
       "slug": "meeting-ai-assistant",
       "label": "Meeting AI Assistant"
-    },
-    {
-      "slug": "pika",
-      "label": "Pika"
     },
     {
       "slug": "real-time-translation",

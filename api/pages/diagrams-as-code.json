@@ -873,14 +873,6 @@
       "label": "Agentic Mycelia"
     },
     {
-      "slug": "claude",
-      "label": "Claude"
-    },
-    {
-      "slug": "gemini",
-      "label": "Gemini"
-    },
-    {
       "slug": "graph-neural-network",
       "label": "Graph Neural Network"
     },

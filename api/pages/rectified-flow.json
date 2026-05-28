@@ -40,16 +40,8 @@
       "label": "Diffusion Models"
     },
     {
-      "slug": "flux-1",
-      "label": "Flux.1"
-    },
-    {
       "slug": "proprietary-image-generation",
       "label": "Proprietary Image Generation"
-    },
-    {
-      "slug": "stable-diffusion",
-      "label": "Stable Diffusion"
     }
   ]
 }

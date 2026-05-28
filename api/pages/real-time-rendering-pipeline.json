@@ -223,10 +223,6 @@
     {
       "slug": "rendering-pipeline",
       "label": "Rendering Pipeline"
-    },
-    {
-      "slug": "unreal-engine",
-      "label": "Unreal Engine"
     }
   ]
 }

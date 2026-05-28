@@ -85,14 +85,6 @@
       "label": "Call Centres"
     },
     {
-      "slug": "chat-gpt",
-      "label": "ChatGPT"
-    },
-    {
-      "slug": "chatbot",
-      "label": "Chatbot"
-    },
-    {
       "slug": "chatbots",
       "label": "Chatbots"
     },
@@ -213,10 +205,6 @@
       "label": "Neural Network"
     },
     {
-      "slug": "open-ai-whisper",
-      "label": "Open AI Whisper"
-    },
-    {
       "slug": "patent",
       "label": "Patent"
     },
@@ -275,10 +263,6 @@
     {
       "slug": "sentiment-analysis",
       "label": "Sentiment Analysis"
-    },
-    {
-      "slug": "silo-ai",
-      "label": "Silo AI"
     },
     {
       "slug": "social-robotics",

@@ -633,20 +633,8 @@
       "label": "CLI Multi-Agent Systems"
     },
     {
-      "slug": "chat-gpt",
-      "label": "ChatGPT"
-    },
-    {
-      "slug": "claude",
-      "label": "Claude"
-    },
-    {
       "slug": "context-engineering",
       "label": "Context Engineering"
-    },
-    {
-      "slug": "dall-e",
-      "label": "DALL\u00b7E"
     },
     {
       "slug": "function-calling",
@@ -659,10 +647,6 @@
     {
       "slug": "gpts-and-custom-assistants",
       "label": "GPTs and Custom Assistants"
-    },
-    {
-      "slug": "gemini",
-      "label": "Gemini"
     },
     {
       "slug": "image-generation",
@@ -687,14 +671,6 @@
     {
       "slug": "machine-translation",
       "label": "Machine Translation"
-    },
-    {
-      "slug": "microsoft-copilot",
-      "label": "Microsoft Copilot"
-    },
-    {
-      "slug": "midjourney",
-      "label": "Midjourney"
     },
     {
       "slug": "open-webui-and-pipelines",

@@ -537,10 +537,6 @@
       "label": "Blockchain As A Service"
     },
     {
-      "slug": "cardano",
-      "label": "Cardano"
-    },
-    {
       "slug": "consensus-mechanism",
       "label": "Consensus Mechanism"
     }

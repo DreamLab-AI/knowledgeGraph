@@ -817,10 +817,6 @@
   ],
   "backlinks": [
     {
-      "slug": "meta-ar-engine",
-      "label": "Meta AR engine"
-    },
-    {
       "slug": "open-webui-and-pipelines",
       "label": "Open Webui and Pipelines"
     }

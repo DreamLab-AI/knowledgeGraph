@@ -36,20 +36,8 @@
       "label": "comfy-ui-for-fashion-and-brands"
     },
     {
-      "slug": "flux-1",
-      "label": "Flux.1"
-    },
-    {
-      "slug": "hunyuan-video",
-      "label": "Hunyuan Video"
-    },
-    {
       "slug": "open-generative-ai-tools",
       "label": "Open Generative AI tools"
-    },
-    {
-      "slug": "pika",
-      "label": "Pika"
     }
   ]
 }

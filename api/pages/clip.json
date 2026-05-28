@@ -48,52 +48,20 @@
       "label": "comfy-ui-for-fashion-and-brands"
     },
     {
-      "slug": "comfy-ui",
-      "label": "ComfyUI"
-    },
-    {
       "slug": "control-net-and-similar-spatial-conditioning-systems",
       "label": "ControlNet and Similar Spatial Conditioning Systems"
-    },
-    {
-      "slug": "dall-e",
-      "label": "DALL\u00b7E"
     },
     {
       "slug": "fashion",
       "label": "Fashion"
     },
     {
-      "slug": "flux-1",
-      "label": "Flux.1"
-    },
-    {
-      "slug": "ip-adapter",
-      "label": "IP-Adapter"
-    },
-    {
-      "slug": "midjourney",
-      "label": "Midjourney"
-    },
-    {
       "slug": "perception-system",
       "label": "Perception System"
     },
     {
-      "slug": "pika",
-      "label": "Pika"
-    },
-    {
       "slug": "segmentation-and-identification",
       "label": "Segmentation and Identification"
-    },
-    {
-      "slug": "stable-diffusion-training",
-      "label": "Stable Diffusion Training"
-    },
-    {
-      "slug": "stable-diffusion",
-      "label": "Stable Diffusion"
     }
   ]
 }

@@ -689,24 +689,12 @@
   ],
   "backlinks": [
     {
-      "slug": "apple",
-      "label": "Apple"
-    },
-    {
       "slug": "bio-terror",
       "label": "Bio Terror"
     },
     {
       "slug": "cortex-agent",
       "label": "Cortex Agent"
-    },
-    {
-      "slug": "meta-ar-engine",
-      "label": "Meta AR engine"
-    },
-    {
-      "slug": "norbert-wiener",
-      "label": "Norbert Wiener"
     },
     {
       "slug": "singularity",

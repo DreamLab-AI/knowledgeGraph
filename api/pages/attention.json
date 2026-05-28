@@ -661,10 +661,6 @@
   ],
   "backlinks": [
     {
-      "slug": "apple",
-      "label": "Apple"
-    },
-    {
       "slug": "automated-podcasting",
       "label": "Automated Podcasting"
     },
@@ -681,24 +677,12 @@
       "label": "GPT Engineer"
     },
     {
-      "slug": "google",
-      "label": "Google"
-    },
-    {
       "slug": "knowledge-graphing",
       "label": "Knowledge Graphing"
     },
     {
       "slug": "ms-phi-models",
       "label": "MS Phi models"
-    },
-    {
-      "slug": "meta-ar-engine",
-      "label": "Meta AR engine"
-    },
-    {
-      "slug": "microsoft-copilot",
-      "label": "Microsoft Copilot"
     },
     {
       "slug": "model-control-protocols-like-mcp",
@@ -739,14 +723,6 @@
     {
       "slug": "sampling",
       "label": "Sampling"
-    },
-    {
-      "slug": "silo-ai",
-      "label": "Silo AI"
-    },
-    {
-      "slug": "stable-diffusion",
-      "label": "Stable Diffusion"
     },
     {
       "slug": "training-and-fine-tuning",

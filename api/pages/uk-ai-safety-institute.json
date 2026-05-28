@@ -40,28 +40,12 @@
       "label": "AI Risks"
     },
     {
-      "slug": "anthropic-claude",
-      "label": "Anthropic Claude"
-    },
-    {
-      "slug": "chat-gpt",
-      "label": "ChatGPT"
-    },
-    {
       "slug": "empathetic-ai",
       "label": "Empathetic AI"
     },
     {
       "slug": "evaluation-benchmarks-and-leaderboards",
       "label": "Evaluation benchmarks and leaderboards"
-    },
-    {
-      "slug": "foundation-models",
-      "label": "Foundation Models"
-    },
-    {
-      "slug": "grok",
-      "label": "Grok"
     },
     {
       "slug": "proprietary-large-language-models",

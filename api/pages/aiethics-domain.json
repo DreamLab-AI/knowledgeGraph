@@ -161,10 +161,6 @@
       "label": "Federated Edge Learning"
     },
     {
-      "slug": "gdpr-article-22-compliance",
-      "label": "GDPR Article 22 Compliance"
-    },
-    {
       "slug": "group-vs-individual-fairness",
       "label": "Group vs Individual Fairness"
     },
@@ -175,10 +171,6 @@
     {
       "slug": "human-agency-and-oversight",
       "label": "Human Agency and Oversight"
-    },
-    {
-      "slug": "ieee-7000-series-standards",
-      "label": "IEEE 7000 Series Standards"
     },
     {
       "slug": "intersectional-fairness",
@@ -207,10 +199,6 @@
     {
       "slug": "neural-network-quantisation",
       "label": "Neural Network Quantisation"
-    },
-    {
-      "slug": "norbert-wiener",
-      "label": "Norbert Wiener"
     },
     {
       "slug": "on-device-learning",

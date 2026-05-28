@@ -60,10 +60,6 @@
     {
       "slug": "augmented-reality-ar",
       "label": "Augmented Reality (AR)"
-    },
-    {
-      "slug": "meta-ar-engine",
-      "label": "Meta AR engine"
     }
   ]
 }

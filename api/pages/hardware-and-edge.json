@@ -529,10 +529,6 @@
       "label": "AI User"
     },
     {
-      "slug": "apple",
-      "label": "Apple"
-    },
-    {
       "slug": "artificial-intelligence",
       "label": "Artificial Intelligence"
     },
@@ -551,10 +547,6 @@
     {
       "slug": "leopold-aschenbrenner",
       "label": "leopold-aschenbrenner"
-    },
-    {
-      "slug": "meta-ar-engine",
-      "label": "Meta AR engine"
     },
     {
       "slug": "model-performance",

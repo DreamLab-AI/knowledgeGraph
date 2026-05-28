@@ -36,10 +36,6 @@
       "label": "California AI bill"
     },
     {
-      "slug": "comfy-ui",
-      "label": "ComfyUI"
-    },
-    {
       "slug": "competition-in-ai",
       "label": "Competition in AI"
     },
@@ -50,10 +46,6 @@
     {
       "slug": "gpt-engineer",
       "label": "GPT Engineer"
-    },
-    {
-      "slug": "mistral-and-mixtral",
-      "label": "Mistral and Mixtral"
     },
     {
       "slug": "prime-intellect",

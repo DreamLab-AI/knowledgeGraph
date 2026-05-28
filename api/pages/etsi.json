@@ -92,10 +92,6 @@
       "label": "ETSI_Domain_Virtual_Society"
     },
     {
-      "slug": "eu-ai-act",
-      "label": "EU AI Act"
-    },
-    {
       "slug": "identity-verification",
       "label": "Identity Verification"
     },

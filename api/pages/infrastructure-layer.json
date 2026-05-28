@@ -221,10 +221,6 @@
       "label": "Edge Computing"
     },
     {
-      "slug": "foundation-models",
-      "label": "Foundation Models"
-    },
-    {
       "slug": "gaussian-splatting",
       "label": "Gaussian Splatting"
     },
@@ -233,16 +229,8 @@
       "label": "Gazebo Simulator"
     },
     {
-      "slug": "google",
-      "label": "Google"
-    },
-    {
       "slug": "green-blockchain-initiatives",
       "label": "Green Blockchain Initiatives"
-    },
-    {
-      "slug": "groq",
-      "label": "Groq"
     },
     {
       "slug": "hardware-abstraction-layer-hal",

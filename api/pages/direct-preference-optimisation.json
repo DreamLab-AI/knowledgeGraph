@@ -49,14 +49,6 @@
       "label": "AI companions"
     },
     {
-      "slug": "llama-3",
-      "label": "Llama 3"
-    },
-    {
-      "slug": "mistral-and-mixtral",
-      "label": "Mistral and Mixtral"
-    },
-    {
       "slug": "safety-and-alignment",
       "label": "Safety and alignment"
     },

@@ -649,16 +649,8 @@
       "label": "Direct Preference Optimisation"
     },
     {
-      "slug": "foundation-models",
-      "label": "Foundation Models"
-    },
-    {
       "slug": "ms-phi-models",
       "label": "MS Phi models"
-    },
-    {
-      "slug": "meta-platforms",
-      "label": "Meta Platforms"
     },
     {
       "slug": "model-training",

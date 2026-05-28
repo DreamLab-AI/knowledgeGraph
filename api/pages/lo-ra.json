@@ -45,10 +45,6 @@
       "label": "AI Upscaling and Super-Resolution"
     },
     {
-      "slug": "animate-diff",
-      "label": "AnimateDiff"
-    },
-    {
       "slug": "checkpoints",
       "label": "Checkpoints"
     },
@@ -77,18 +73,6 @@
       "label": "Fine Tuning"
     },
     {
-      "slug": "flux-1",
-      "label": "Flux.1"
-    },
-    {
-      "slug": "foundation-models",
-      "label": "Foundation Models"
-    },
-    {
-      "slug": "ip-adapter",
-      "label": "IP-Adapter"
-    },
-    {
       "slug": "kohya-dreambooth-and-similar",
       "label": "KOHYA Dreambooth and similar"
     },
@@ -103,10 +87,6 @@
     {
       "slug": "physical-layer",
       "label": "Physical Layer"
-    },
-    {
-      "slug": "stable-diffusion-training",
-      "label": "Stable Diffusion Training"
     },
     {
       "slug": "text-summarisation",

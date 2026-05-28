@@ -48,10 +48,6 @@
       "label": "Fault Tolerance"
     },
     {
-      "slug": "google-deep-mind",
-      "label": "Google DeepMind"
-    },
-    {
       "slug": "large-language-models",
       "label": "Large Language Models"
     },

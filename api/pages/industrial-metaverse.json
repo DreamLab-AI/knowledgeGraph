@@ -215,10 +215,6 @@
     {
       "slug": "etsi-domain-virtual-economy",
       "label": "ETSI_Domain_Virtual_Economy"
-    },
-    {
-      "slug": "nvidia-omniverse",
-      "label": "NVIDIA Omniverse"
     }
   ]
 }

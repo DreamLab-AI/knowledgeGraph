@@ -705,10 +705,6 @@
       "label": "Adoption of Convergent Technologies"
     },
     {
-      "slug": "apple",
-      "label": "Apple"
-    },
-    {
       "slug": "fashion",
       "label": "Fashion"
     },
@@ -721,24 +717,12 @@
       "label": "Meeting AI Assistant"
     },
     {
-      "slug": "meta-ar-engine",
-      "label": "Meta AR engine"
-    },
-    {
       "slug": "optical-sensor-array",
       "label": "Optical Sensor Array"
     },
     {
       "slug": "procedural-and-hybrid-4-d",
       "label": "Procedural and Hybrid 4D"
-    },
-    {
-      "slug": "stable-diffusion",
-      "label": "Stable Diffusion"
-    },
-    {
-      "slug": "vision-pro",
-      "label": "Vision Pro"
     }
   ]
 }

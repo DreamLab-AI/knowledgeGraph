@@ -56,10 +56,6 @@
     {
       "slug": "compute-infrastructure",
       "label": "Compute Infrastructure"
-    },
-    {
-      "slug": "mistral-and-mixtral",
-      "label": "Mistral and Mixtral"
     }
   ]
 }

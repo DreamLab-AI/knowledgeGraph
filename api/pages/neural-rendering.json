@@ -45,10 +45,6 @@
       "label": "Gaussian Splatting"
     },
     {
-      "slug": "meta-ar-engine",
-      "label": "Meta AR engine"
-    },
-    {
       "slug": "optical-sensor-array",
       "label": "Optical Sensor Array"
     },

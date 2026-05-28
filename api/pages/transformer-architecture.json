@@ -65,18 +65,6 @@
       "label": "Agents"
     },
     {
-      "slug": "animate-diff",
-      "label": "AnimateDiff"
-    },
-    {
-      "slug": "anthropic-claude",
-      "label": "Anthropic Claude"
-    },
-    {
-      "slug": "apple",
-      "label": "Apple"
-    },
-    {
       "slug": "artificial-general-intelligence",
       "label": "Artificial General Intelligence"
     },
@@ -101,20 +89,12 @@
       "label": "Call Centres"
     },
     {
-      "slug": "chat-gpt",
-      "label": "ChatGPT"
-    },
-    {
       "slug": "chatbots",
       "label": "Chatbots"
     },
     {
       "slug": "comfy-ui-for-fashion-and-brands",
       "label": "comfy-ui-for-fashion-and-brands"
-    },
-    {
-      "slug": "comfy-ui",
-      "label": "ComfyUI"
     },
     {
       "slug": "computer-use-and-browser-agents",
@@ -129,10 +109,6 @@
       "label": "ControlNet and Similar Spatial Conditioning Systems"
     },
     {
-      "slug": "dall-e",
-      "label": "DALL\u00b7E"
-    },
-    {
       "slug": "direct-preference-optimization",
       "label": "Direct Preference Optimization"
     },
@@ -141,24 +117,8 @@
       "label": "Empathetic AI"
     },
     {
-      "slug": "foundation-models",
-      "label": "Foundation Models"
-    },
-    {
       "slug": "gpt-engineer",
       "label": "GPT Engineer"
-    },
-    {
-      "slug": "google-deep-mind",
-      "label": "Google DeepMind"
-    },
-    {
-      "slug": "grok",
-      "label": "Grok"
-    },
-    {
-      "slug": "groq",
-      "label": "Groq"
     },
     {
       "slug": "hand-tracking",
@@ -171,10 +131,6 @@
     {
       "slug": "humanoid-robot",
       "label": "Humanoid Robot"
-    },
-    {
-      "slug": "hunyuan-video",
-      "label": "Hunyuan Video"
     },
     {
       "slug": "image-and-video-restoration",
@@ -197,40 +153,16 @@
       "label": "KOHYA Dreambooth and similar"
     },
     {
-      "slug": "llama-3",
-      "label": "Llama 3"
-    },
-    {
       "slug": "lo-ra-do-ra-etc",
       "label": "LoRA DoRA etc"
-    },
-    {
-      "slug": "meta-platforms",
-      "label": "Meta Platforms"
-    },
-    {
-      "slug": "midjourney",
-      "label": "Midjourney"
-    },
-    {
-      "slug": "mistral-and-mixtral",
-      "label": "Mistral and Mixtral"
     },
     {
       "slug": "model-optimisation-and-performance",
       "label": "Model Optimisation and Performance"
     },
     {
-      "slug": "open-ai-whisper",
-      "label": "Open AI Whisper"
-    },
-    {
       "slug": "open-generative-ai-tools",
       "label": "Open Generative AI tools"
-    },
-    {
-      "slug": "pika",
-      "label": "Pika"
     },
     {
       "slug": "pose-estimation",

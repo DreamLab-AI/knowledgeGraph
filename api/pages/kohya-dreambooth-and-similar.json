@@ -693,10 +693,6 @@
       "label": "Pre Training"
     },
     {
-      "slug": "stable-diffusion",
-      "label": "Stable Diffusion"
-    },
-    {
       "slug": "text-summarisation",
       "label": "Text Summarisation"
     }

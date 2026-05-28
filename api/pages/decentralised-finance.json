@@ -48,10 +48,6 @@
       "label": "Bitcoin Technical Overview"
     },
     {
-      "slug": "bitcoin",
-      "label": "Bitcoin"
-    },
-    {
       "slug": "blockchain-as-a-service",
       "label": "Blockchain As A Service"
     },
@@ -86,10 +82,6 @@
     {
       "slug": "distributed-ledger",
       "label": "Distributed Ledger"
-    },
-    {
-      "slug": "ethereum",
-      "label": "Ethereum"
     },
     {
       "slug": "fatfrecommendations",

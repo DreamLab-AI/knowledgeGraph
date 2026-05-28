@@ -809,10 +809,6 @@
       "label": "Adoption of Convergent Technologies"
     },
     {
-      "slug": "apple",
-      "label": "Apple"
-    },
-    {
       "slug": "bio-terror",
       "label": "Bio Terror"
     },
@@ -837,10 +833,6 @@
       "label": "Fashion"
     },
     {
-      "slug": "google",
-      "label": "Google"
-    },
-    {
       "slug": "hand-tracking",
       "label": "Hand Tracking"
     },
@@ -851,10 +843,6 @@
     {
       "slug": "knowledge-graphing",
       "label": "Knowledge Graphing"
-    },
-    {
-      "slug": "meta-ar-engine",
-      "label": "Meta AR engine"
     },
     {
       "slug": "mixed-reality",
@@ -875,10 +863,6 @@
     {
       "slug": "telecollaboration-and-telepresence",
       "label": "Telecollaboration and Telepresence"
-    },
-    {
-      "slug": "vision-pro",
-      "label": "Vision Pro"
     }
   ]
 }

@@ -773,10 +773,6 @@
       "label": "Identity Verification"
     },
     {
-      "slug": "meta-ar-engine",
-      "label": "Meta AR engine"
-    },
-    {
       "slug": "non-repudiation",
       "label": "Non-Repudiation"
     },

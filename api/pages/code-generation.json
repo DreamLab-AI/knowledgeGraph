@@ -53,14 +53,6 @@
       "label": "Attention"
     },
     {
-      "slug": "chat-gpt",
-      "label": "ChatGPT"
-    },
-    {
-      "slug": "foundation-models",
-      "label": "Foundation Models"
-    },
-    {
       "slug": "gpt-engineer",
       "label": "GPT Engineer"
     },
@@ -73,32 +65,12 @@
       "label": "Generative AI"
     },
     {
-      "slug": "google-deep-mind",
-      "label": "Google DeepMind"
-    },
-    {
-      "slug": "grok",
-      "label": "Grok"
-    },
-    {
       "slug": "large-language-models",
       "label": "Large Language Models"
     },
     {
-      "slug": "llama-3",
-      "label": "Llama 3"
-    },
-    {
       "slug": "ms-phi-models",
       "label": "MS Phi models"
-    },
-    {
-      "slug": "microsoft-copilot",
-      "label": "Microsoft Copilot"
-    },
-    {
-      "slug": "mistral-and-mixtral",
-      "label": "Mistral and Mixtral"
     },
     {
       "slug": "model-optimisation-and-performance",

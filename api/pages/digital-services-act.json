@@ -111,10 +111,6 @@
       "label": "ETSI Domain: Ethics & Law"
     },
     {
-      "slug": "eu-ai-act",
-      "label": "EU AI Act"
-    },
-    {
       "slug": "policy-enforcement",
       "label": "Policy Enforcement"
     }

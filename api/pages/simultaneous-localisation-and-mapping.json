@@ -40,10 +40,6 @@
       "label": "Ground Robot"
     },
     {
-      "slug": "meta-ar-engine",
-      "label": "Meta AR engine"
-    },
-    {
       "slug": "mobile-robot-platform",
       "label": "Mobile Robot Platform"
     },

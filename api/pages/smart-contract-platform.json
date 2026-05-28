@@ -40,10 +40,6 @@
       "label": "Blockchain Interoperability"
     },
     {
-      "slug": "cardano",
-      "label": "Cardano"
-    },
-    {
       "slug": "consortium-blockchain",
       "label": "Consortium Blockchain"
     },
@@ -54,10 +50,6 @@
     {
       "slug": "enterprise-token-standards",
       "label": "Enterprise Token Standards"
-    },
-    {
-      "slug": "ethereum",
-      "label": "Ethereum"
     },
     {
       "slug": "governance-token",
@@ -78,10 +70,6 @@
     {
       "slug": "social-token-economy",
       "label": "Social Token Economy"
-    },
-    {
-      "slug": "solana",
-      "label": "Solana"
     },
     {
       "slug": "transaction-standard",

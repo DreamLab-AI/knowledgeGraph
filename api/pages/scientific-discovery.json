@@ -36,18 +36,6 @@
       "label": "Agent Frameworks"
     },
     {
-      "slug": "chat-gpt",
-      "label": "ChatGPT"
-    },
-    {
-      "slug": "foundation-models",
-      "label": "Foundation Models"
-    },
-    {
-      "slug": "google-deep-mind",
-      "label": "Google DeepMind"
-    },
-    {
       "slug": "reasoning",
       "label": "Reasoning"
     }

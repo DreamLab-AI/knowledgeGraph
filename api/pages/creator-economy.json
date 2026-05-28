@@ -220,10 +220,6 @@
       "label": "ETSI_Domain_Virtual_Economy"
     },
     {
-      "slug": "meta-platforms",
-      "label": "Meta Platforms"
-    },
-    {
       "slug": "metaverse-content-pipeline",
       "label": "Metaverse Content Pipeline"
     },
@@ -242,10 +238,6 @@
     {
       "slug": "nft-minting",
       "label": "NFT Minting"
-    },
-    {
-      "slug": "pika",
-      "label": "Pika"
     },
     {
       "slug": "revenue-sharing",

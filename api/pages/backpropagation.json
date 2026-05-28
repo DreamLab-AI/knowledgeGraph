@@ -53,20 +53,12 @@
       "label": "AI Video"
     },
     {
-      "slug": "animate-diff",
-      "label": "AnimateDiff"
-    },
-    {
       "slug": "attention",
       "label": "Attention"
     },
     {
       "slug": "control-net-and-similar-spatial-conditioning-systems",
       "label": "ControlNet and Similar Spatial Conditioning Systems"
-    },
-    {
-      "slug": "dall-e",
-      "label": "DALL\u00b7E"
     },
     {
       "slug": "deep-learning",
@@ -77,16 +69,8 @@
       "label": "Feed Forward Network"
     },
     {
-      "slug": "foundation-models",
-      "label": "Foundation Models"
-    },
-    {
       "slug": "generative-adversarial-networks",
       "label": "Generative Adversarial Networks"
-    },
-    {
-      "slug": "grok",
-      "label": "Grok"
     },
     {
       "slug": "history-and-path-to-agi",

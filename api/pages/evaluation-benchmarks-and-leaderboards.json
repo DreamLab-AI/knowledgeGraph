@@ -725,10 +725,6 @@
       "label": "MS Phi models"
     },
     {
-      "slug": "microsoft-copilot",
-      "label": "Microsoft Copilot"
-    },
-    {
       "slug": "model-training",
       "label": "Model Training"
     },

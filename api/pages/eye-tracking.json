@@ -229,10 +229,6 @@
       "label": "Hand Tracking"
     },
     {
-      "slug": "meta-platforms",
-      "label": "Meta Platforms"
-    },
-    {
       "slug": "mixed-reality",
       "label": "Mixed Reality"
     },
@@ -251,10 +247,6 @@
     {
       "slug": "telecollaboration-and-telepresence",
       "label": "Telecollaboration and Telepresence"
-    },
-    {
-      "slug": "vision-pro",
-      "label": "Vision Pro"
     }
   ]
 }

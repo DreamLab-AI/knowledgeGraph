@@ -54,10 +54,6 @@
       "label": "AI in Games"
     },
     {
-      "slug": "google-deep-mind",
-      "label": "Google DeepMind"
-    },
-    {
       "slug": "particle-filter",
       "label": "Particle Filter"
     },

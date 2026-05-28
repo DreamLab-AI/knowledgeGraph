@@ -223,10 +223,6 @@
       "label": "Distributed Ledger Technology (DLT)"
     },
     {
-      "slug": "ethereum",
-      "label": "Ethereum"
-    },
-    {
       "slug": "fault-tolerance",
       "label": "Fault Tolerance"
     },

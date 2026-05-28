@@ -45,10 +45,6 @@
       "label": "Scene Capture and Reconstruction"
     },
     {
-      "slug": "unreal-engine",
-      "label": "Unreal Engine"
-    },
-    {
       "slug": "virtual-model",
       "label": "Virtual Model"
     }

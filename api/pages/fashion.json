@@ -575,10 +575,6 @@
     {
       "slug": "pre-training",
       "label": "Pre Training"
-    },
-    {
-      "slug": "stable-diffusion",
-      "label": "Stable Diffusion"
     }
   ]
 }

@@ -369,10 +369,6 @@
       "label": "Automated Podcasting"
     },
     {
-      "slug": "bert",
-      "label": "BERT"
-    },
-    {
       "slug": "bias",
       "label": "Bias"
     },
@@ -389,10 +385,6 @@
       "label": "Call Centres"
     },
     {
-      "slug": "chat-gpt",
-      "label": "ChatGPT"
-    },
-    {
       "slug": "chatbots",
       "label": "Chatbots"
     },
@@ -403,10 +395,6 @@
     {
       "slug": "checkpoints",
       "label": "Checkpoints"
-    },
-    {
-      "slug": "claude",
-      "label": "Claude"
     },
     {
       "slug": "co-training",
@@ -449,10 +437,6 @@
       "label": "Fine Tuning"
     },
     {
-      "slug": "foundation-models",
-      "label": "Foundation Models"
-    },
-    {
       "slug": "gpt-engineer",
       "label": "GPT Engineer"
     },
@@ -461,20 +445,8 @@
       "label": "GPTs and Custom Assistants"
     },
     {
-      "slug": "gemini",
-      "label": "Gemini"
-    },
-    {
       "slug": "generative-ai",
       "label": "Generative AI"
-    },
-    {
-      "slug": "google-cloud-skills-boost",
-      "label": "Google cloud skills boost"
-    },
-    {
-      "slug": "google",
-      "label": "Google"
     },
     {
       "slug": "graph-neural-network",
@@ -533,10 +505,6 @@
       "label": "Lies Damn Lies and Statistics"
     },
     {
-      "slug": "llama-3",
-      "label": "Llama 3"
-    },
-    {
       "slug": "lo-ra-do-ra-etc",
       "label": "LoRA DoRA etc"
     },
@@ -557,14 +525,6 @@
       "label": "Metaverse Ontology"
     },
     {
-      "slug": "microsoft-copilot",
-      "label": "Microsoft Copilot"
-    },
-    {
-      "slug": "mistral-and-mixtral",
-      "label": "Mistral and Mixtral"
-    },
-    {
       "slug": "model-control-protocols-like-mcp",
       "label": "Model Control Protocols like MCP"
     },
@@ -575,10 +535,6 @@
     {
       "slug": "model-training",
       "label": "Model Training"
-    },
-    {
-      "slug": "nvidia",
-      "label": "NVIDIA"
     },
     {
       "slug": "natural-language-processing",
@@ -643,10 +599,6 @@
     {
       "slug": "semantic-search",
       "label": "Semantic Search"
-    },
-    {
-      "slug": "silo-ai",
-      "label": "Silo AI"
     },
     {
       "slug": "social-impact",

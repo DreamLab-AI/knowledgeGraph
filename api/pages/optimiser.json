@@ -51,10 +51,6 @@
     {
       "slug": "model-training",
       "label": "Model Training"
-    },
-    {
-      "slug": "stable-diffusion-training",
-      "label": "Stable Diffusion Training"
     }
   ]
 }

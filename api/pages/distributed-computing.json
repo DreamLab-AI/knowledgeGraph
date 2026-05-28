@@ -709,10 +709,6 @@
       "label": "Bitcoin Mining"
     },
     {
-      "slug": "cloud-computing",
-      "label": "Cloud Computing"
-    },
-    {
       "slug": "collective-intelligence-system",
       "label": "Collective Intelligence System"
     },
@@ -743,10 +739,6 @@
     {
       "slug": "meeting-recording",
       "label": "Meeting Recording"
-    },
-    {
-      "slug": "meta-ar-engine",
-      "label": "Meta AR engine"
     },
     {
       "slug": "metaverse",

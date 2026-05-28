@@ -477,10 +477,6 @@
       "label": "Hyper personalisation"
     },
     {
-      "slug": "microsoft-copilot",
-      "label": "Microsoft Copilot"
-    },
-    {
       "slug": "model-control-protocols-like-mcp",
       "label": "Model Control Protocols like MCP"
     },
@@ -503,10 +499,6 @@
     {
       "slug": "retrieval-augmented-generation-rag",
       "label": "Retrieval Augmented Generation - RAG"
-    },
-    {
-      "slug": "silo-ai",
-      "label": "Silo AI"
     },
     {
       "slug": "stable-coins",

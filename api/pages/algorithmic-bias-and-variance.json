@@ -649,10 +649,6 @@
       "label": "Global Inequality"
     },
     {
-      "slug": "google",
-      "label": "Google"
-    },
-    {
       "slug": "hyper-personalisation",
       "label": "Hyper personalisation"
     },
@@ -667,10 +663,6 @@
     {
       "slug": "model-training",
       "label": "Model Training"
-    },
-    {
-      "slug": "norbert-wiener",
-      "label": "Norbert Wiener"
     },
     {
       "slug": "prompt-engineering",
@@ -691,10 +683,6 @@
     {
       "slug": "self-sovereign-identity",
       "label": "Self Sovereign Identity"
-    },
-    {
-      "slug": "silo-ai",
-      "label": "Silo AI"
     }
   ]
 }

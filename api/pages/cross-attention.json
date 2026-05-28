@@ -69,20 +69,12 @@
       "label": "AI Video"
     },
     {
-      "slug": "animate-diff",
-      "label": "AnimateDiff"
-    },
-    {
       "slug": "diffusion-models",
       "label": "Diffusion Models"
     },
     {
       "slug": "inpainting",
       "label": "Inpainting"
-    },
-    {
-      "slug": "stable-diffusion",
-      "label": "Stable Diffusion"
     }
   ]
 }

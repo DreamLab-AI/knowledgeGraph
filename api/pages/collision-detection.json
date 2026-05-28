@@ -977,10 +977,6 @@
       "label": "Kinematics Model"
     },
     {
-      "slug": "meta-ar-engine",
-      "label": "Meta AR engine"
-    },
-    {
       "slug": "navigation",
       "label": "Navigation"
     },

@@ -533,24 +533,12 @@
   ],
   "backlinks": [
     {
-      "slug": "apple",
-      "label": "Apple"
-    },
-    {
-      "slug": "blender",
-      "label": "Blender"
-    },
-    {
       "slug": "early-stopping",
       "label": "Early Stopping"
     },
     {
       "slug": "light-field",
       "label": "Light field"
-    },
-    {
-      "slug": "meta-ar-engine",
-      "label": "Meta AR engine"
     },
     {
       "slug": "mixed-reality",

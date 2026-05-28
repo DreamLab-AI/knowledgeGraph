@@ -36,32 +36,12 @@
       "label": "AI Companies"
     },
     {
-      "slug": "animate-diff",
-      "label": "AnimateDiff"
-    },
-    {
       "slug": "checkpoints",
       "label": "Checkpoints"
     },
     {
       "slug": "comfy-ui-for-fashion-and-brands",
       "label": "comfy-ui-for-fashion-and-brands"
-    },
-    {
-      "slug": "comfy-ui",
-      "label": "ComfyUI"
-    },
-    {
-      "slug": "flux-1",
-      "label": "Flux.1"
-    },
-    {
-      "slug": "groq",
-      "label": "Groq"
-    },
-    {
-      "slug": "llama-3",
-      "label": "Llama 3"
     },
     {
       "slug": "lo-ra-do-ra-etc",

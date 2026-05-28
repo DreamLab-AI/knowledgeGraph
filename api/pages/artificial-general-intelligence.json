@@ -701,10 +701,6 @@
       "label": "Bio Terror"
     },
     {
-      "slug": "chat-gpt",
-      "label": "ChatGPT"
-    },
-    {
       "slug": "cognitive-ai",
       "label": "Cognitive AI"
     },
@@ -725,10 +721,6 @@
       "label": "Empathetic AI"
     },
     {
-      "slug": "google",
-      "label": "Google"
-    },
-    {
       "slug": "history-and-path-to-agi",
       "label": "History and Path to AGI"
     },
@@ -745,16 +737,8 @@
       "label": "Knowledge Graphing"
     },
     {
-      "slug": "llama-3",
-      "label": "Llama 3"
-    },
-    {
       "slug": "model-training",
       "label": "Model Training"
-    },
-    {
-      "slug": "norbert-wiener",
-      "label": "Norbert Wiener"
     },
     {
       "slug": "open-generative-ai-tools",
@@ -785,20 +769,12 @@
       "label": "Safety and alignment"
     },
     {
-      "slug": "silo-ai",
-      "label": "Silo AI"
-    },
-    {
       "slug": "singularity",
       "label": "Singularity"
     },
     {
       "slug": "stable-coins",
       "label": "Stable Coins"
-    },
-    {
-      "slug": "vision-pro",
-      "label": "Vision Pro"
     }
   ]
 }

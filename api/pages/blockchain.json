@@ -388,14 +388,6 @@
       "label": "Bitcoin related links"
     },
     {
-      "slug": "bitcoin",
-      "label": "Bitcoin"
-    },
-    {
-      "slug": "bitcoin",
-      "label": "Bitcoin"
-    },
-    {
       "slug": "blockchain-application",
       "label": "Blockchain Application"
     },
@@ -490,10 +482,6 @@
     {
       "slug": "carbon-registry",
       "label": "Carbon Registry"
-    },
-    {
-      "slug": "cardano",
-      "label": "Cardano"
     },
     {
       "slug": "central-bank-digital-currency-cbdc",
@@ -1642,10 +1630,6 @@
     {
       "slug": "smart-contracts",
       "label": "Smart Contracts"
-    },
-    {
-      "slug": "solana",
-      "label": "Solana"
     },
     {
       "slug": "stablecoin-token",

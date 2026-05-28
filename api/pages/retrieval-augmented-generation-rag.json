@@ -629,10 +629,6 @@
   ],
   "backlinks": [
     {
-      "slug": "gemini",
-      "label": "Gemini"
-    },
-    {
       "slug": "ms-phi-models",
       "label": "MS Phi models"
     },

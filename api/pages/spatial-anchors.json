@@ -66,10 +66,6 @@
       "label": "ETSI_Domain_Virtual_Society"
     },
     {
-      "slug": "meta-ar-engine",
-      "label": "Meta AR engine"
-    },
-    {
       "slug": "spatial-computing-layer",
       "label": "Spatial Computing Layer"
     },

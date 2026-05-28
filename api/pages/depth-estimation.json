@@ -749,10 +749,6 @@
   ],
   "backlinks": [
     {
-      "slug": "blender",
-      "label": "Blender"
-    },
-    {
       "slug": "control-net-and-similar-spatial-conditioning-systems",
       "label": "ControlNet and Similar Spatial Conditioning Systems"
     },
@@ -771,10 +767,6 @@
     {
       "slug": "light-field",
       "label": "Light field"
-    },
-    {
-      "slug": "meta-ar-engine",
-      "label": "Meta AR engine"
     },
     {
       "slug": "mixed-reality",

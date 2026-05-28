@@ -54,10 +54,6 @@
   ],
   "backlinks": [
     {
-      "slug": "blender",
-      "label": "Blender"
-    },
-    {
       "slug": "physics-engine",
       "label": "Physics Engine"
     }

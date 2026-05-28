@@ -41,10 +41,6 @@
   ],
   "backlinks": [
     {
-      "slug": "open-ai-whisper",
-      "label": "Open AI Whisper"
-    },
-    {
       "slug": "translation",
       "label": "Translation"
     },

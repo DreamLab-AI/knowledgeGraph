@@ -897,10 +897,6 @@
       "label": "Energy and Power"
     },
     {
-      "slug": "google",
-      "label": "Google"
-    },
-    {
       "slug": "history-and-path-to-agi",
       "label": "History and Path to AGI"
     },
@@ -917,20 +913,8 @@
       "label": "Jailbreaking"
     },
     {
-      "slug": "llama-3",
-      "label": "Llama 3"
-    },
-    {
-      "slug": "microsoft-copilot",
-      "label": "Microsoft Copilot"
-    },
-    {
       "slug": "model-control-protocols-like-mcp",
       "label": "Model Control Protocols like MCP"
-    },
-    {
-      "slug": "norbert-wiener",
-      "label": "Norbert Wiener"
     },
     {
       "slug": "open-generative-ai-tools",
@@ -963,10 +947,6 @@
     {
       "slug": "self-sovereign-identity",
       "label": "Self Sovereign Identity"
-    },
-    {
-      "slug": "silo-ai",
-      "label": "Silo AI"
     },
     {
       "slug": "singularity",

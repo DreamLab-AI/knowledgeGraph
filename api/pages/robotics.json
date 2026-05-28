@@ -364,10 +364,6 @@
       "label": "Forward Kinematics"
     },
     {
-      "slug": "foundation-models",
-      "label": "Foundation Models"
-    },
-    {
       "slug": "functional-safety",
       "label": "Functional Safety"
     },
@@ -510,10 +506,6 @@
     {
       "slug": "multirotor-uav",
       "label": "Multirotor UAV"
-    },
-    {
-      "slug": "nvidia-omniverse",
-      "label": "NVIDIA Omniverse"
     },
     {
       "slug": "navigation",

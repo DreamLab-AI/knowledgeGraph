@@ -52,10 +52,6 @@
       "label": "Diffusion Models"
     },
     {
-      "slug": "foundation-models",
-      "label": "Foundation Models"
-    },
-    {
       "slug": "generative-adversarial-networks",
       "label": "Generative Adversarial Networks"
     },

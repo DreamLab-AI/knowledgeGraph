@@ -77,10 +77,6 @@
       "label": "California AI bill"
     },
     {
-      "slug": "chat-gpt",
-      "label": "ChatGPT"
-    },
-    {
       "slug": "competition-in-ai",
       "label": "Competition in AI"
     },
@@ -89,16 +85,8 @@
       "label": "Computer Use and Browser Agents"
     },
     {
-      "slug": "eu-ai-act",
-      "label": "EU AI Act"
-    },
-    {
       "slug": "evaluation-benchmarks-and-leaderboards",
       "label": "Evaluation benchmarks and leaderboards"
-    },
-    {
-      "slug": "google",
-      "label": "Google"
     },
     {
       "slug": "ground-robot",

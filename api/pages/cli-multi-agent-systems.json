@@ -533,20 +533,8 @@
       "label": "Lightning Network"
     },
     {
-      "slug": "llama-3",
-      "label": "Llama 3"
-    },
-    {
       "slug": "micropayments",
       "label": "Micropayments"
-    },
-    {
-      "slug": "microsoft-copilot",
-      "label": "Microsoft Copilot"
-    },
-    {
-      "slug": "midjourney",
-      "label": "Midjourney"
     },
     {
       "slug": "model-control-protocols-like-mcp",
@@ -579,10 +567,6 @@
     {
       "slug": "screen-sharing",
       "label": "Screen Sharing"
-    },
-    {
-      "slug": "stable-diffusion",
-      "label": "Stable Diffusion"
     },
     {
       "slug": "state-machine",

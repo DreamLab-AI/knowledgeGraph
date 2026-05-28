@@ -1509,16 +1509,8 @@
       "label": "Adoption of Convergent Technologies"
     },
     {
-      "slug": "apple",
-      "label": "Apple"
-    },
-    {
       "slug": "bitcoin-value-proposition",
       "label": "Bitcoin Value Proposition"
-    },
-    {
-      "slug": "bitcoin",
-      "label": "Bitcoin"
     },
     {
       "slug": "computer-use-and-browser-agents",
@@ -1553,10 +1545,6 @@
       "label": "GPT Engineer"
     },
     {
-      "slug": "google",
-      "label": "Google"
-    },
-    {
       "slug": "history-and-path-to-agi",
       "label": "History and Path to AGI"
     },
@@ -1573,10 +1561,6 @@
       "label": "Lightning Network"
     },
     {
-      "slug": "llama-3",
-      "label": "Llama 3"
-    },
-    {
       "slug": "meeting-ai-assistant",
       "label": "Meeting AI Assistant"
     },
@@ -1585,16 +1569,8 @@
       "label": "Meeting Recording"
     },
     {
-      "slug": "meta-ar-engine",
-      "label": "Meta AR engine"
-    },
-    {
       "slug": "micropayments",
       "label": "Micropayments"
-    },
-    {
-      "slug": "microsoft-copilot",
-      "label": "Microsoft Copilot"
     },
     {
       "slug": "model-control-protocols-like-mcp",
@@ -1631,10 +1607,6 @@
     {
       "slug": "screen-sharing",
       "label": "Screen Sharing"
-    },
-    {
-      "slug": "silo-ai",
-      "label": "Silo AI"
     },
     {
       "slug": "stable-coins",

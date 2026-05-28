@@ -44,18 +44,6 @@
       "label": "Competition in AI"
     },
     {
-      "slug": "foundation-models",
-      "label": "Foundation Models"
-    },
-    {
-      "slug": "llama-3",
-      "label": "Llama 3"
-    },
-    {
-      "slug": "meta-ar-engine",
-      "label": "Meta AR engine"
-    },
-    {
       "slug": "virtual-production",
       "label": "Virtual Production"
     }

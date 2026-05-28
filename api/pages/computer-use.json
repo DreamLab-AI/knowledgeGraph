@@ -44,10 +44,6 @@
       "label": "Agents"
     },
     {
-      "slug": "anthropic-claude",
-      "label": "Anthropic Claude"
-    },
-    {
       "slug": "computer-use-and-browser-agents",
       "label": "Computer Use and Browser Agents"
     }

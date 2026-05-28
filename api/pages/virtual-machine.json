@@ -73,10 +73,6 @@
       "label": "Blockchain Protocol"
     },
     {
-      "slug": "docker",
-      "label": "Docker"
-    },
-    {
       "slug": "smart-contract",
       "label": "Smart Contract"
     }

@@ -601,10 +601,6 @@
       "label": "Artificial Intelligence"
     },
     {
-      "slug": "host-january-17th-presentation",
-      "label": "HOST January 17th Presentation"
-    },
-    {
       "slug": "hardware-and-edge",
       "label": "Hardware and Edge"
     },
@@ -627,10 +623,6 @@
     {
       "slug": "music-and-audio",
       "label": "Music and Audio"
-    },
-    {
-      "slug": "norbert-wiener",
-      "label": "Norbert Wiener"
     },
     {
       "slug": "overview-of-machine-learning-techniques",

@@ -853,10 +853,6 @@
   ],
   "backlinks": [
     {
-      "slug": "claude",
-      "label": "Claude"
-    },
-    {
       "slug": "data-poisoning",
       "label": "Data Poisoning"
     },

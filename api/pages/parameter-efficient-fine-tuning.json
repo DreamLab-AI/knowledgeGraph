@@ -57,20 +57,12 @@
   ],
   "backlinks": [
     {
-      "slug": "ip-adapter",
-      "label": "IP-Adapter"
-    },
-    {
       "slug": "kohya-dreambooth-and-similar",
       "label": "KOHYA Dreambooth and similar"
     },
     {
       "slug": "ms-phi-models",
       "label": "MS Phi models"
-    },
-    {
-      "slug": "stable-diffusion-training",
-      "label": "Stable Diffusion Training"
     },
     {
       "slug": "training-and-fine-tuning",

@@ -40,10 +40,6 @@
       "label": "Bitcoin Technical Overview"
     },
     {
-      "slug": "bitcoin",
-      "label": "Bitcoin"
-    },
-    {
       "slug": "cbdc-frameworks",
       "label": "CBDC Frameworks"
     },
@@ -74,10 +70,6 @@
     {
       "slug": "distributed-ledger",
       "label": "Distributed Ledger"
-    },
-    {
-      "slug": "ethereum",
-      "label": "Ethereum"
     },
     {
       "slug": "money",

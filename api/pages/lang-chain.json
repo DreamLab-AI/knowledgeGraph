@@ -326,10 +326,6 @@
       "label": "Knowledge Graphing"
     },
     {
-      "slug": "llama-3",
-      "label": "Llama 3"
-    },
-    {
       "slug": "prompt-engineering",
       "label": "Prompt Engineering"
     },

@@ -61,10 +61,6 @@
   ],
   "backlinks": [
     {
-      "slug": "bitcoin",
-      "label": "Bitcoin"
-    },
-    {
       "slug": "etsi-domain-interoperability",
       "label": "ETSI_Domain_Interoperability"
     }

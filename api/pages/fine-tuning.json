@@ -125,10 +125,6 @@
       "label": "Large Language Models"
     },
     {
-      "slug": "llama-3",
-      "label": "Llama 3"
-    },
-    {
       "slug": "lo-ra-do-ra-etc",
       "label": "LoRA DoRA etc"
     },
@@ -143,10 +139,6 @@
     {
       "slug": "retrieval-augmented-generation-rag",
       "label": "Retrieval Augmented Generation - RAG"
-    },
-    {
-      "slug": "stable-diffusion-training",
-      "label": "Stable Diffusion Training"
     },
     {
       "slug": "training-data",

@@ -805,10 +805,6 @@
   ],
   "backlinks": [
     {
-      "slug": "apple",
-      "label": "Apple"
-    },
-    {
       "slug": "automated-podcasting",
       "label": "Automated Podcasting"
     },
@@ -821,16 +817,8 @@
       "label": "Fashion"
     },
     {
-      "slug": "google",
-      "label": "Google"
-    },
-    {
       "slug": "jailbreaking",
       "label": "Jailbreaking"
-    },
-    {
-      "slug": "midjourney",
-      "label": "Midjourney"
     },
     {
       "slug": "model-control-protocols-like-mcp",
@@ -847,10 +835,6 @@
     {
       "slug": "proprietary-large-language-models",
       "label": "Proprietary Large Language Models"
-    },
-    {
-      "slug": "silo-ai",
-      "label": "Silo AI"
     }
   ]
 }

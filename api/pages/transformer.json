@@ -183,10 +183,6 @@
       "label": "Neural Network"
     },
     {
-      "slug": "open-ai-whisper",
-      "label": "Open AI Whisper"
-    },
-    {
       "slug": "perception-system",
       "label": "Perception System"
     },

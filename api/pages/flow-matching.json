@@ -40,20 +40,8 @@
       "label": "Embodied Minds"
     },
     {
-      "slug": "flux-1",
-      "label": "Flux.1"
-    },
-    {
-      "slug": "hunyuan-video",
-      "label": "Hunyuan Video"
-    },
-    {
       "slug": "music-and-audio",
       "label": "Music and Audio"
-    },
-    {
-      "slug": "stable-diffusion",
-      "label": "Stable Diffusion"
     }
   ]
 }

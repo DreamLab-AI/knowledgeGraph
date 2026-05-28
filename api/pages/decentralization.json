@@ -77,10 +77,6 @@
       "label": "BTC Layer 3"
     },
     {
-      "slug": "bitcoin",
-      "label": "Bitcoin"
-    },
-    {
       "slug": "blockchain-oracle",
       "label": "Blockchain Oracle"
     },

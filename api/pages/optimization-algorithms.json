@@ -47,10 +47,5 @@
       "label": "Gradient Descent"
     }
   ],
-  "backlinks": [
-    {
-      "slug": "a-star-algorithm",
-      "label": "A-Star Algorithm"
-    }
-  ]
+  "backlinks": []
 }

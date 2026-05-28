@@ -353,20 +353,12 @@
       "label": "Adoption of Convergent Technologies"
     },
     {
-      "slug": "animate-diff",
-      "label": "AnimateDiff"
-    },
-    {
       "slug": "artificial-intelligence",
       "label": "Artificial Intelligence"
     },
     {
       "slug": "automated-podcasting",
       "label": "Automated Podcasting"
-    },
-    {
-      "slug": "chat-gpt",
-      "label": "ChatGPT"
     },
     {
       "slug": "co-training",
@@ -391,10 +383,6 @@
     {
       "slug": "compute-infrastructure",
       "label": "Compute Infrastructure"
-    },
-    {
-      "slug": "dall-e",
-      "label": "DALL\u00b7E"
     },
     {
       "slug": "death-of-the-internet",
@@ -437,24 +425,8 @@
       "label": "Feed Forward Network"
     },
     {
-      "slug": "flux-1",
-      "label": "Flux.1"
-    },
-    {
-      "slug": "foundation-models",
-      "label": "Foundation Models"
-    },
-    {
       "slug": "generative-adversarial-networks",
       "label": "Generative Adversarial Networks"
-    },
-    {
-      "slug": "grok",
-      "label": "Grok"
-    },
-    {
-      "slug": "hunyuan-video",
-      "label": "Hunyuan Video"
     },
     {
       "slug": "image-and-video-restoration",
@@ -473,28 +445,8 @@
       "label": "MS Phi models"
     },
     {
-      "slug": "microsoft-copilot",
-      "label": "Microsoft Copilot"
-    },
-    {
-      "slug": "midjourney",
-      "label": "Midjourney"
-    },
-    {
-      "slug": "mistral-and-mixtral",
-      "label": "Mistral and Mixtral"
-    },
-    {
       "slug": "music-and-audio",
       "label": "Music and Audio"
-    },
-    {
-      "slug": "nvidia-omniverse",
-      "label": "NVIDIA Omniverse"
-    },
-    {
-      "slug": "nvidia",
-      "label": "NVIDIA"
     },
     {
       "slug": "neural-3-d-generation",
@@ -503,10 +455,6 @@
     {
       "slug": "open-generative-ai-tools",
       "label": "Open Generative AI tools"
-    },
-    {
-      "slug": "pika",
-      "label": "Pika"
     },
     {
       "slug": "procedural-and-hybrid-4-d",
@@ -531,14 +479,6 @@
     {
       "slug": "social-impact",
       "label": "Social Impact"
-    },
-    {
-      "slug": "stable-diffusion-training",
-      "label": "Stable Diffusion Training"
-    },
-    {
-      "slug": "stable-diffusion",
-      "label": "Stable Diffusion"
     },
     {
       "slug": "stochastic-process",

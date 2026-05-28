@@ -681,10 +681,6 @@
       "label": "Consumer Protection"
     },
     {
-      "slug": "google",
-      "label": "Google"
-    },
-    {
       "slug": "model-depth",
       "label": "Model Depth"
     },
@@ -695,10 +691,6 @@
     {
       "slug": "proprietary-large-language-models",
       "label": "Proprietary Large Language Models"
-    },
-    {
-      "slug": "silo-ai",
-      "label": "Silo AI"
     },
     {
       "slug": "trust-and-safety",

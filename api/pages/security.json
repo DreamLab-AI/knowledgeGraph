@@ -89,14 +89,6 @@
       "label": "Attack Vector"
     },
     {
-      "slug": "bitcoin",
-      "label": "Bitcoin"
-    },
-    {
-      "slug": "bitcoin",
-      "label": "Bitcoin"
-    },
-    {
       "slug": "cryptographic-protocol",
       "label": "Cryptographic Protocol"
     },

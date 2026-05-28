@@ -705,10 +705,6 @@
       "label": "Digital Society Surveillance"
     },
     {
-      "slug": "eu-ai-act",
-      "label": "EU AI Act"
-    },
-    {
       "slug": "economics",
       "label": "Economics"
     },
@@ -717,20 +713,12 @@
       "label": "Empathetic AI"
     },
     {
-      "slug": "google",
-      "label": "Google"
-    },
-    {
       "slug": "humanoid-robot",
       "label": "Humanoid Robot"
     },
     {
       "slug": "jailbreaking",
       "label": "Jailbreaking"
-    },
-    {
-      "slug": "microsoft-copilot",
-      "label": "Microsoft Copilot"
     },
     {
       "slug": "music-and-audio",
@@ -751,10 +739,6 @@
     {
       "slug": "safety-and-alignment",
       "label": "Safety and alignment"
-    },
-    {
-      "slug": "silo-ai",
-      "label": "Silo AI"
     },
     {
       "slug": "training-data",

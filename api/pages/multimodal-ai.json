@@ -41,10 +41,6 @@
       "label": "AI Video"
     },
     {
-      "slug": "chat-gpt",
-      "label": "ChatGPT"
-    },
-    {
       "slug": "computer-use-and-browser-agents",
       "label": "Computer Use and Browser Agents"
     },
@@ -53,20 +49,8 @@
       "label": "Empathetic AI"
     },
     {
-      "slug": "foundation-models",
-      "label": "Foundation Models"
-    },
-    {
-      "slug": "llama-3",
-      "label": "Llama 3"
-    },
-    {
       "slug": "ms-phi-models",
       "label": "MS Phi models"
-    },
-    {
-      "slug": "mistral-and-mixtral",
-      "label": "Mistral and Mixtral"
     },
     {
       "slug": "music-and-audio",

@@ -43,10 +43,6 @@
     {
       "slug": "rendering-engine",
       "label": "Rendering Engine"
-    },
-    {
-      "slug": "unreal-engine",
-      "label": "Unreal Engine"
     }
   ]
 }

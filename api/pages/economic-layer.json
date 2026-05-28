@@ -36,10 +36,6 @@
       "label": "Base Fee"
     },
     {
-      "slug": "bitcoin",
-      "label": "Bitcoin"
-    },
-    {
       "slug": "burning-mechanism",
       "label": "Burning Mechanism"
     },

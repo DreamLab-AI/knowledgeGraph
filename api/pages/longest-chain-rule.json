@@ -73,10 +73,6 @@
       "label": "Bitcoin Mining"
     },
     {
-      "slug": "bitcoin",
-      "label": "Bitcoin"
-    },
-    {
       "slug": "probabilistic-finality",
       "label": "Probabilistic Finality"
     }

@@ -40,10 +40,6 @@
       "label": "Adaptive Virtual World"
     },
     {
-      "slug": "blender",
-      "label": "Blender"
-    },
-    {
       "slug": "metaverse-content-pipeline",
       "label": "Metaverse Content Pipeline"
     },
@@ -58,10 +54,6 @@
     {
       "slug": "scene-capture-and-reconstruction",
       "label": "Scene Capture and Reconstruction"
-    },
-    {
-      "slug": "unreal-engine",
-      "label": "Unreal Engine"
     },
     {
       "slug": "virtual-asset",

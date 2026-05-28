@@ -32,10 +32,6 @@
   "wikilinks": [],
   "backlinks": [
     {
-      "slug": "apple",
-      "label": "Apple"
-    },
-    {
       "slug": "cryptography-security-and-privacy",
       "label": "Cryptography Security and Privacy"
     },
@@ -50,10 +46,6 @@
     {
       "slug": "telecollaboration-and-telepresence",
       "label": "Telecollaboration and Telepresence"
-    },
-    {
-      "slug": "vision-pro",
-      "label": "Vision Pro"
     }
   ]
 }

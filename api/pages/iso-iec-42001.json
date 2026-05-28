@@ -64,14 +64,6 @@
       "label": "California AI bill"
     },
     {
-      "slug": "eu-ai-act",
-      "label": "EU AI Act"
-    },
-    {
-      "slug": "google-deep-mind",
-      "label": "Google DeepMind"
-    },
-    {
       "slug": "proprietary-large-language-models",
       "label": "Proprietary Large Language Models"
     },

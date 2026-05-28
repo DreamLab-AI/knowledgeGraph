@@ -36,10 +36,6 @@
       "label": "Agentic Internet"
     },
     {
-      "slug": "blender",
-      "label": "Blender"
-    },
-    {
       "slug": "blockchain-oracle",
       "label": "Blockchain Oracle"
     },
@@ -60,20 +56,12 @@
       "label": "Home Assistant"
     },
     {
-      "slug": "nvidia-omniverse",
-      "label": "NVIDIA Omniverse"
-    },
-    {
       "slug": "procedural-and-hybrid-4-d",
       "label": "Procedural and Hybrid 4D"
     },
     {
       "slug": "robotics-platform",
       "label": "Robotics Platform"
-    },
-    {
-      "slug": "rust",
-      "label": "Rust"
     },
     {
       "slug": "fast-ai",

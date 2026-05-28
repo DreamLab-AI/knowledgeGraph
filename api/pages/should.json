@@ -32,10 +32,6 @@
   "wikilinks": [],
   "backlinks": [
     {
-      "slug": "gemini",
-      "label": "Gemini"
-    },
-    {
       "slug": "graph-neural-network",
       "label": "Graph Neural Network"
     },

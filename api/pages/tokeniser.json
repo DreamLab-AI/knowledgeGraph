@@ -40,18 +40,6 @@
       "label": "Bias in Large Language Models"
     },
     {
-      "slug": "dall-e",
-      "label": "DALL\u00b7E"
-    },
-    {
-      "slug": "foundation-models",
-      "label": "Foundation Models"
-    },
-    {
-      "slug": "grok",
-      "label": "Grok"
-    },
-    {
       "slug": "model-training",
       "label": "Model Training"
     },

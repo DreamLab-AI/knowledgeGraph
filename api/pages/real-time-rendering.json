@@ -98,10 +98,6 @@
       "label": "Augmented Reality (AR)"
     },
     {
-      "slug": "blender",
-      "label": "Blender"
-    },
-    {
       "slug": "compute-layer",
       "label": "Compute Layer"
     },
@@ -138,10 +134,6 @@
       "label": "Universal Scene Description"
     },
     {
-      "slug": "unreal-engine",
-      "label": "Unreal Engine"
-    },
-    {
       "slug": "virtual-production-vp",
       "label": "Virtual Production (VP)"
     },
@@ -152,10 +144,6 @@
     {
       "slug": "virtual-reality-vr",
       "label": "Virtual Reality (VR)"
-    },
-    {
-      "slug": "vision-pro",
-      "label": "Vision Pro"
     }
   ]
 }

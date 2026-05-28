@@ -39,10 +39,5 @@
       "label": "Telecollaboration"
     }
   ],
-  "backlinks": [
-    {
-      "slug": "ip-adapter",
-      "label": "IP-Adapter"
-    }
-  ]
+  "backlinks": []
 }

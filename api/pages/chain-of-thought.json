@@ -44,20 +44,12 @@
       "label": "Agents"
     },
     {
-      "slug": "claude",
-      "label": "Claude"
-    },
-    {
       "slug": "computer-use-and-browser-agents",
       "label": "Computer Use and Browser Agents"
     },
     {
       "slug": "gpt-engineer",
       "label": "GPT Engineer"
-    },
-    {
-      "slug": "gemini",
-      "label": "Gemini"
     },
     {
       "slug": "machine-translation",

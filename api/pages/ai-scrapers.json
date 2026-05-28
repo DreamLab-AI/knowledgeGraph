@@ -525,20 +525,12 @@
       "label": "Death of the Internet"
     },
     {
-      "slug": "google",
-      "label": "Google"
-    },
-    {
       "slug": "open-generative-ai-tools",
       "label": "Open Generative AI tools"
     },
     {
       "slug": "prompt-engineering",
       "label": "Prompt Engineering"
-    },
-    {
-      "slug": "silo-ai",
-      "label": "Silo AI"
     },
     {
       "slug": "trust-and-safety",

@@ -32,24 +32,12 @@
   "wikilinks": [],
   "backlinks": [
     {
-      "slug": "animate-diff",
-      "label": "AnimateDiff"
-    },
-    {
       "slug": "control-net-and-similar-spatial-conditioning-systems",
       "label": "ControlNet and Similar Spatial Conditioning Systems"
     },
     {
-      "slug": "flux-1",
-      "label": "Flux.1"
-    },
-    {
       "slug": "fooocus",
       "label": "Fooocus"
-    },
-    {
-      "slug": "ip-adapter",
-      "label": "IP-Adapter"
     },
     {
       "slug": "kohya-dreambooth-and-similar",
@@ -58,10 +46,6 @@
     {
       "slug": "sampling",
       "label": "Sampling"
-    },
-    {
-      "slug": "stable-diffusion",
-      "label": "Stable Diffusion"
     }
   ]
 }

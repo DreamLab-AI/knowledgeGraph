@@ -45,10 +45,6 @@
   ],
   "backlinks": [
     {
-      "slug": "a-star-algorithm",
-      "label": "A-Star Algorithm"
-    },
-    {
       "slug": "procedural-content-generation",
       "label": "Procedural Content Generation"
     }

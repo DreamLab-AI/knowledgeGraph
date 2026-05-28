@@ -68,10 +68,6 @@
       "label": "Automated Podcasting"
     },
     {
-      "slug": "chat-gpt",
-      "label": "ChatGPT"
-    },
-    {
       "slug": "chatbots",
       "label": "Chatbots"
     },
@@ -86,10 +82,6 @@
     {
       "slug": "data-layer",
       "label": "Data Layer"
-    },
-    {
-      "slug": "foundation-models",
-      "label": "Foundation Models"
     },
     {
       "slug": "function-calling",
@@ -108,20 +100,8 @@
       "label": "LangChain"
     },
     {
-      "slug": "llama-3",
-      "label": "Llama 3"
-    },
-    {
       "slug": "lo-ra-do-ra-etc",
       "label": "LoRA DoRA etc"
-    },
-    {
-      "slug": "microsoft-copilot",
-      "label": "Microsoft Copilot"
-    },
-    {
-      "slug": "mistral-and-mixtral",
-      "label": "Mistral and Mixtral"
     },
     {
       "slug": "prompt-engineering",

@@ -801,28 +801,12 @@
       "label": "Ethical AI"
     },
     {
-      "slug": "foundation-models",
-      "label": "Foundation Models"
-    },
-    {
       "slug": "meeting-recording",
       "label": "Meeting Recording"
     },
     {
-      "slug": "meta-ar-engine",
-      "label": "Meta AR engine"
-    },
-    {
-      "slug": "microsoft-copilot",
-      "label": "Microsoft Copilot"
-    },
-    {
       "slug": "music-and-audio",
       "label": "Music and Audio"
-    },
-    {
-      "slug": "norbert-wiener",
-      "label": "Norbert Wiener"
     },
     {
       "slug": "open-webui-and-pipelines",

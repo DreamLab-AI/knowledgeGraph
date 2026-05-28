@@ -85,20 +85,12 @@
       "label": "Bitcoin Technical Overview"
     },
     {
-      "slug": "bitcoin",
-      "label": "Bitcoin"
-    },
-    {
       "slug": "blockchain-network",
       "label": "Blockchain Network"
     },
     {
       "slug": "cryptocurrency",
       "label": "Cryptocurrency"
-    },
-    {
-      "slug": "ethereum",
-      "label": "Ethereum"
     },
     {
       "slug": "lightning-and-similar-l2",

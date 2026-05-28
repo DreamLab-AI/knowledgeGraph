@@ -589,10 +589,6 @@
       "label": "Feedback Control"
     },
     {
-      "slug": "norbert-wiener",
-      "label": "Norbert Wiener"
-    },
-    {
       "slug": "position-control",
       "label": "PositionControl"
     },

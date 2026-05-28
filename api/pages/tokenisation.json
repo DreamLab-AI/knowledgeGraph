@@ -73,10 +73,6 @@
       "label": "Cryptocurrency"
     },
     {
-      "slug": "dall-e",
-      "label": "DALL\u00b7E"
-    },
-    {
       "slug": "distributed-ledger",
       "label": "Distributed Ledger"
     },
@@ -85,24 +81,12 @@
       "label": "Enterprise Smart Contracts"
     },
     {
-      "slug": "ethereum",
-      "label": "Ethereum"
-    },
-    {
-      "slug": "foundation-models",
-      "label": "Foundation Models"
-    },
-    {
       "slug": "gpt-engineer",
       "label": "GPT Engineer"
     },
     {
       "slug": "green-blockchain-initiatives",
       "label": "Green Blockchain Initiatives"
-    },
-    {
-      "slug": "grok",
-      "label": "Grok"
     },
     {
       "slug": "music-and-audio",

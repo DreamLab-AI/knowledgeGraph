@@ -649,10 +649,6 @@
   ],
   "backlinks": [
     {
-      "slug": "apple",
-      "label": "Apple"
-    },
-    {
       "slug": "bio-terror",
       "label": "Bio Terror"
     },
@@ -681,10 +677,6 @@
       "label": "GPT Engineer"
     },
     {
-      "slug": "google",
-      "label": "Google"
-    },
-    {
       "slug": "knowledge-graphing",
       "label": "Knowledge Graphing"
     },
@@ -697,16 +689,8 @@
       "label": "LoRA DoRA etc"
     },
     {
-      "slug": "meta-ar-engine",
-      "label": "Meta AR engine"
-    },
-    {
       "slug": "model-training",
       "label": "Model Training"
-    },
-    {
-      "slug": "norbert-wiener",
-      "label": "Norbert Wiener"
     },
     {
       "slug": "particle-filter",
@@ -729,16 +713,8 @@
       "label": "Reasoning"
     },
     {
-      "slug": "silo-ai",
-      "label": "Silo AI"
-    },
-    {
       "slug": "singularity",
       "label": "Singularity"
-    },
-    {
-      "slug": "vision-pro",
-      "label": "Vision Pro"
     }
   ]
 }

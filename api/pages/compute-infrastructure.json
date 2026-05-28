@@ -1077,10 +1077,6 @@
       "label": "AI Scrapers"
     },
     {
-      "slug": "apple",
-      "label": "Apple"
-    },
-    {
       "slug": "authoring-tool",
       "label": "Authoring Tool"
     },
@@ -1115,14 +1111,6 @@
     {
       "slug": "ms-phi-models",
       "label": "MS Phi models"
-    },
-    {
-      "slug": "meta-platforms",
-      "label": "Meta Platforms"
-    },
-    {
-      "slug": "microsoft-copilot",
-      "label": "Microsoft Copilot"
     },
     {
       "slug": "middleware",

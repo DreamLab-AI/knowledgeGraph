@@ -84,10 +84,6 @@
       "label": "Bias Mitigation Techniques"
     },
     {
-      "slug": "bitcoin",
-      "label": "Bitcoin"
-    },
-    {
       "slug": "block-header",
       "label": "Block Header"
     },
@@ -240,10 +236,6 @@
       "label": "Federated Edge Learning"
     },
     {
-      "slug": "gdpr-article-22-compliance",
-      "label": "GDPR Article 22 Compliance"
-    },
-    {
       "slug": "genesis-block",
       "label": "Genesis Block"
     },
@@ -262,10 +254,6 @@
     {
       "slug": "human-agency-and-oversight",
       "label": "Human Agency and Oversight"
-    },
-    {
-      "slug": "ieee-7000-series-standards",
-      "label": "IEEE 7000 Series Standards"
     },
     {
       "slug": "input",
@@ -310,10 +298,6 @@
     {
       "slug": "opcodes",
       "label": "Opcodes"
-    },
-    {
-      "slug": "orphan-block",
-      "label": "Orphan Block"
     },
     {
       "slug": "output",

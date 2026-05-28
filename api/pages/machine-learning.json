@@ -145,10 +145,6 @@
       "label": "Bias"
     },
     {
-      "slug": "bitcoin",
-      "label": "Bitcoin"
-    },
-    {
       "slug": "blockchain-oracle",
       "label": "Blockchain Oracle"
     },
@@ -265,10 +261,6 @@
       "label": "Feed Forward Network"
     },
     {
-      "slug": "foundation-models",
-      "label": "Foundation Models"
-    },
-    {
       "slug": "generative-ai",
       "label": "Generative AI"
     },
@@ -371,10 +363,6 @@
     {
       "slug": "manipulator-arm",
       "label": "Manipulator Arm"
-    },
-    {
-      "slug": "meta-ar-engine",
-      "label": "Meta AR engine"
     },
     {
       "slug": "metadata-management",
@@ -547,10 +535,6 @@
     {
       "slug": "variational-autoencoders",
       "label": "Variational Autoencoders"
-    },
-    {
-      "slug": "vision-pro",
-      "label": "Vision Pro"
     },
     {
       "slug": "ai-core-concepts",

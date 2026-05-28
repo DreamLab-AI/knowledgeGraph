@@ -65,10 +65,6 @@
       "label": "Imitation Learning"
     },
     {
-      "slug": "llama-3",
-      "label": "Llama 3"
-    },
-    {
       "slug": "ai-core-concepts",
       "label": "ai core concepts"
     }

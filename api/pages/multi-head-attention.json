@@ -57,10 +57,6 @@
       "label": "MS Phi models"
     },
     {
-      "slug": "open-ai-whisper",
-      "label": "Open AI Whisper"
-    },
-    {
       "slug": "transformers",
       "label": "Transformers"
     }

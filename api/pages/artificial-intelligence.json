@@ -412,10 +412,6 @@
       "label": "BDI Model"
     },
     {
-      "slug": "bert",
-      "label": "BERT"
-    },
-    {
       "slug": "behavior-analysis",
       "label": "Behavior Analysis"
     },
@@ -426,10 +422,6 @@
     {
       "slug": "behavioral-modeling",
       "label": "Behavioral Modeling"
-    },
-    {
-      "slug": "bitcoin",
-      "label": "Bitcoin"
     },
     {
       "slug": "calculating-empires",
@@ -680,10 +672,6 @@
       "label": "Metaverse Technology"
     },
     {
-      "slug": "mistral",
-      "label": "Mistral"
-    },
-    {
       "slug": "model-parameters",
       "label": "Model Parameters"
     },
@@ -742,10 +730,6 @@
     {
       "slug": "objective",
       "label": "Objective"
-    },
-    {
-      "slug": "open-ai",
-      "label": "Open AI"
     },
     {
       "slug": "optimization-algorithm",

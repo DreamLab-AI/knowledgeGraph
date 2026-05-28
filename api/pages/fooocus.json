@@ -705,16 +705,8 @@
       "label": "ComfyUI Workflows"
     },
     {
-      "slug": "comfy-ui",
-      "label": "ComfyUI"
-    },
-    {
       "slug": "data-poisoning",
       "label": "Data Poisoning"
-    },
-    {
-      "slug": "ip-adapter",
-      "label": "IP-Adapter"
     }
   ]
 }

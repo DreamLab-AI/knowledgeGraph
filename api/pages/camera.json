@@ -151,10 +151,6 @@
       "label": "Monocular Camera"
     },
     {
-      "slug": "nvidia-omniverse",
-      "label": "NVIDIA Omniverse"
-    },
-    {
       "slug": "obstacle-avoidance",
       "label": "Obstacle Avoidance"
     },

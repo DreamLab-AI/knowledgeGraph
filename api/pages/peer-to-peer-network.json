@@ -113,10 +113,6 @@
       "label": "Distributed Ledger"
     },
     {
-      "slug": "ethereum",
-      "label": "Ethereum"
-    },
-    {
       "slug": "ontology-technical-details",
       "label": "ONTOLOGY_TECHNICAL_DETAILS"
     },

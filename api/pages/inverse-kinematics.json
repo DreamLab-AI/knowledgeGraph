@@ -152,10 +152,6 @@
       "label": "Animation Retargeting"
     },
     {
-      "slug": "blender",
-      "label": "Blender"
-    },
-    {
       "slug": "collision-detection",
       "label": "Collision Detection"
     },
@@ -182,10 +178,6 @@
     {
       "slug": "manipulator-arm",
       "label": "Manipulator Arm"
-    },
-    {
-      "slug": "meta-ar-engine",
-      "label": "Meta AR engine"
     },
     {
       "slug": "motion-capture",

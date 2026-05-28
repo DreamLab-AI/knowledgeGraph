@@ -101,10 +101,6 @@
     {
       "slug": "spatial-anchor",
       "label": "Spatial Anchor"
-    },
-    {
-      "slug": "unreal-engine",
-      "label": "Unreal Engine"
     }
   ]
 }

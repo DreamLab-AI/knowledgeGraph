@@ -48,20 +48,12 @@
       "label": "comfy-ui-for-fashion-and-brands"
     },
     {
-      "slug": "comfy-ui",
-      "label": "ComfyUI"
-    },
-    {
       "slug": "generative-ai",
       "label": "Generative AI"
     },
     {
       "slug": "neural-3-d-generation",
       "label": "Neural 3D Generation"
-    },
-    {
-      "slug": "stable-diffusion",
-      "label": "Stable Diffusion"
     }
   ]
 }

@@ -85,10 +85,6 @@
       "label": "Decentralized Finance (DeFi)"
     },
     {
-      "slug": "ethereum",
-      "label": "Ethereum"
-    },
-    {
       "slug": "hyperledger-fabric",
       "label": "Hyperledger Fabric"
     },

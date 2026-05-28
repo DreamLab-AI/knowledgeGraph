@@ -53,14 +53,6 @@
   ],
   "backlinks": [
     {
-      "slug": "animate-diff",
-      "label": "AnimateDiff"
-    },
-    {
-      "slug": "chat-gpt",
-      "label": "ChatGPT"
-    },
-    {
       "slug": "comfy-ui-for-fashion-and-brands",
       "label": "comfy-ui-for-fashion-and-brands"
     },
@@ -69,32 +61,16 @@
       "label": "Context Engineering"
     },
     {
-      "slug": "dall-e",
-      "label": "DALL\u00b7E"
-    },
-    {
       "slug": "feed-forward-network",
       "label": "Feed Forward Network"
-    },
-    {
-      "slug": "foundation-models",
-      "label": "Foundation Models"
     },
     {
       "slug": "history-and-path-to-agi",
       "label": "History and Path to AGI"
     },
     {
-      "slug": "hunyuan-video",
-      "label": "Hunyuan Video"
-    },
-    {
       "slug": "hyper-personalisation",
       "label": "Hyper personalisation"
-    },
-    {
-      "slug": "ip-adapter",
-      "label": "IP-Adapter"
     },
     {
       "slug": "image-segmentation",
@@ -125,10 +101,6 @@
       "label": "Multi-Head Attention"
     },
     {
-      "slug": "open-ai-whisper",
-      "label": "Open AI Whisper"
-    },
-    {
       "slug": "real-time-translation",
       "label": "Real-time Translation"
     },
@@ -143,10 +115,6 @@
     {
       "slug": "speech-and-voice",
       "label": "Speech and Voice"
-    },
-    {
-      "slug": "stable-diffusion-training",
-      "label": "Stable Diffusion Training"
     },
     {
       "slug": "time-series-forecasting",

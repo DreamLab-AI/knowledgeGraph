@@ -685,10 +685,6 @@
       "label": "Micropayments"
     },
     {
-      "slug": "microsoft-copilot",
-      "label": "Microsoft Copilot"
-    },
-    {
       "slug": "open-generative-ai-tools",
       "label": "Open Generative AI tools"
     },
@@ -699,10 +695,6 @@
     {
       "slug": "segmentation-and-identification",
       "label": "Segmentation and Identification"
-    },
-    {
-      "slug": "stable-diffusion",
-      "label": "Stable Diffusion"
     }
   ]
 }

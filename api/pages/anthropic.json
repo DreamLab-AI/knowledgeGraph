@@ -60,20 +60,8 @@
       "label": "DAO Tooling"
     },
     {
-      "slug": "foundation-models",
-      "label": "Foundation Models"
-    },
-    {
       "slug": "generative-ai",
       "label": "Generative AI"
-    },
-    {
-      "slug": "google-deep-mind",
-      "label": "Google DeepMind"
-    },
-    {
-      "slug": "grok",
-      "label": "Grok"
     },
     {
       "slug": "large-language-models",
@@ -82,10 +70,6 @@
     {
       "slug": "lightning-and-similar-l2",
       "label": "Lightning and Similar L2"
-    },
-    {
-      "slug": "meta-platforms",
-      "label": "Meta Platforms"
     },
     {
       "slug": "model-control-protocols-like-mcp",

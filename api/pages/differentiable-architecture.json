@@ -40,10 +40,6 @@
       "label": "Diffusion Models"
     },
     {
-      "slug": "flux-1",
-      "label": "Flux.1"
-    },
-    {
       "slug": "generative-adversarial-networks",
       "label": "Generative Adversarial Networks"
     },

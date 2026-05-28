@@ -41,16 +41,8 @@
       "label": "Bias in Large Language Models"
     },
     {
-      "slug": "chat-gpt",
-      "label": "ChatGPT"
-    },
-    {
       "slug": "direct-preference-optimization",
       "label": "Direct Preference Optimization"
-    },
-    {
-      "slug": "llama-3",
-      "label": "Llama 3"
     },
     {
       "slug": "ms-phi-models",

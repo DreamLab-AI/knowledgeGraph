@@ -322,16 +322,8 @@
       "label": "Agents"
     },
     {
-      "slug": "anthropic-claude",
-      "label": "Anthropic Claude"
-    },
-    {
       "slug": "auto-ml",
       "label": "AutoML"
-    },
-    {
-      "slug": "blender",
-      "label": "Blender"
     },
     {
       "slug": "cli-multi-agent-systems",
@@ -364,10 +356,6 @@
     {
       "slug": "lang-chain",
       "label": "LangChain"
-    },
-    {
-      "slug": "microsoft-copilot",
-      "label": "Microsoft Copilot"
     },
     {
       "slug": "ngm-domain",

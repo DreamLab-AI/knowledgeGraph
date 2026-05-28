@@ -617,10 +617,6 @@
       "label": "Death of the Internet"
     },
     {
-      "slug": "google",
-      "label": "Google"
-    },
-    {
       "slug": "knowledge-graphing",
       "label": "Knowledge Graphing"
     },
@@ -639,10 +635,6 @@
     {
       "slug": "retrieval-augmented-generation-rag",
       "label": "Retrieval Augmented Generation - RAG"
-    },
-    {
-      "slug": "silo-ai",
-      "label": "Silo AI"
     }
   ]
 }

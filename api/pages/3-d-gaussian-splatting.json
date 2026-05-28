@@ -87,10 +87,6 @@
       "label": "Lens and Camera Calibration"
     },
     {
-      "slug": "nvidia-omniverse",
-      "label": "NVIDIA Omniverse"
-    },
-    {
       "slug": "neural-3-d-generation",
       "label": "Neural 3D Generation"
     },
@@ -105,10 +101,6 @@
     {
       "slug": "telecollaboration-and-telepresence",
       "label": "Telecollaboration and Telepresence"
-    },
-    {
-      "slug": "unreal-engine",
-      "label": "Unreal Engine"
     },
     {
       "slug": "virtual-production",

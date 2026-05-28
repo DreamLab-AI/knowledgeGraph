@@ -45,20 +45,12 @@
   ],
   "backlinks": [
     {
-      "slug": "foundation-models",
-      "label": "Foundation Models"
-    },
-    {
       "slug": "hyper-personalisation",
       "label": "Hyper personalisation"
     },
     {
       "slug": "image-and-video-restoration",
       "label": "Image and Video Restoration"
-    },
-    {
-      "slug": "midjourney",
-      "label": "Midjourney"
     },
     {
       "slug": "segmentation-and-identification",

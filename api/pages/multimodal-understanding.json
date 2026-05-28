@@ -37,10 +37,6 @@
   ],
   "backlinks": [
     {
-      "slug": "foundation-models",
-      "label": "Foundation Models"
-    },
-    {
       "slug": "ms-phi-models",
       "label": "MS Phi models"
     }

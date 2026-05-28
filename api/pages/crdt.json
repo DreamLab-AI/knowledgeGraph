@@ -665,10 +665,6 @@
       "label": "Distributed Computing"
     },
     {
-      "slug": "logseq",
-      "label": "Logseq"
-    },
-    {
       "slug": "remote-pair-programming",
       "label": "Remote Pair Programming"
     },

@@ -34,22 +34,6 @@
     {
       "slug": "ai-companies",
       "label": "AI Companies"
-    },
-    {
-      "slug": "anthropic-claude",
-      "label": "Anthropic Claude"
-    },
-    {
-      "slug": "foundation-models",
-      "label": "Foundation Models"
-    },
-    {
-      "slug": "google-deep-mind",
-      "label": "Google DeepMind"
-    },
-    {
-      "slug": "grok",
-      "label": "Grok"
     }
   ]
 }

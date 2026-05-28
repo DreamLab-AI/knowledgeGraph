@@ -41,14 +41,6 @@
   ],
   "backlinks": [
     {
-      "slug": "chat-gpt",
-      "label": "ChatGPT"
-    },
-    {
-      "slug": "llama-3",
-      "label": "Llama 3"
-    },
-    {
       "slug": "safety-and-alignment",
       "label": "Safety and alignment"
     },

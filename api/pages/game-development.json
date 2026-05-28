@@ -40,24 +40,12 @@
       "label": "AI in Games"
     },
     {
-      "slug": "dall-e",
-      "label": "DALL\u00b7E"
-    },
-    {
-      "slug": "midjourney",
-      "label": "Midjourney"
-    },
-    {
       "slug": "procedural-and-hybrid-4-d",
       "label": "Procedural and Hybrid 4D"
     },
     {
       "slug": "rendering-engine",
       "label": "Rendering Engine"
-    },
-    {
-      "slug": "rust",
-      "label": "Rust"
     },
     {
       "slug": "universal-scene-description",

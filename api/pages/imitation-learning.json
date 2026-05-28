@@ -689,16 +689,8 @@
       "label": "Humanoid Robot"
     },
     {
-      "slug": "meta-ar-engine",
-      "label": "Meta AR engine"
-    },
-    {
       "slug": "model-training",
       "label": "Model Training"
-    },
-    {
-      "slug": "nvidia-omniverse",
-      "label": "NVIDIA Omniverse"
     },
     {
       "slug": "robot-learning",

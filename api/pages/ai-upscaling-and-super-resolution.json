@@ -283,10 +283,6 @@
     {
       "slug": "comfy-ui-workflows",
       "label": "ComfyUI Workflows"
-    },
-    {
-      "slug": "comfy-ui",
-      "label": "ComfyUI"
     }
   ]
 }

@@ -37,14 +37,6 @@
   ],
   "backlinks": [
     {
-      "slug": "chat-gpt",
-      "label": "ChatGPT"
-    },
-    {
-      "slug": "foundation-models",
-      "label": "Foundation Models"
-    },
-    {
       "slug": "function-calling",
       "label": "Function Calling"
     },

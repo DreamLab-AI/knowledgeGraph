@@ -48,10 +48,6 @@
       "label": "Meeting Recording"
     },
     {
-      "slug": "open-ai-whisper",
-      "label": "Open AI Whisper"
-    },
-    {
       "slug": "real-time-translation",
       "label": "Real-time Translation"
     }

@@ -32,10 +32,6 @@
   "wikilinks": [],
   "backlinks": [
     {
-      "slug": "anthropic-claude",
-      "label": "Anthropic Claude"
-    },
-    {
       "slug": "artificial-general-intelligence",
       "label": "Artificial General Intelligence"
     },
@@ -48,16 +44,8 @@
       "label": "Emergence"
     },
     {
-      "slug": "foundation-models",
-      "label": "Foundation Models"
-    },
-    {
       "slug": "history-and-path-to-agi",
       "label": "History and Path to AGI"
-    },
-    {
-      "slug": "llama-3",
-      "label": "Llama 3"
     },
     {
       "slug": "model-training",

@@ -737,10 +737,6 @@
       "label": "Distributed Identity"
     },
     {
-      "slug": "ethereum",
-      "label": "Ethereum"
-    },
-    {
       "slug": "instant-value-settlement",
       "label": "Instant value settlement"
     },

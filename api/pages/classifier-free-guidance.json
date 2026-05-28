@@ -36,44 +36,16 @@
       "label": "AI Video"
     },
     {
-      "slug": "comfy-ui",
-      "label": "ComfyUI"
-    },
-    {
-      "slug": "dall-e",
-      "label": "DALL\u00b7E"
-    },
-    {
       "slug": "diffusion-models",
       "label": "Diffusion Models"
-    },
-    {
-      "slug": "flux-1",
-      "label": "Flux.1"
-    },
-    {
-      "slug": "hunyuan-video",
-      "label": "Hunyuan Video"
-    },
-    {
-      "slug": "ip-adapter",
-      "label": "IP-Adapter"
     },
     {
       "slug": "inpainting",
       "label": "Inpainting"
     },
     {
-      "slug": "midjourney",
-      "label": "Midjourney"
-    },
-    {
       "slug": "music-and-audio",
       "label": "Music and Audio"
-    },
-    {
-      "slug": "pika",
-      "label": "Pika"
     },
     {
       "slug": "proprietary-ai-video",
@@ -82,10 +54,6 @@
     {
       "slug": "proprietary-image-generation",
       "label": "Proprietary Image Generation"
-    },
-    {
-      "slug": "stable-diffusion",
-      "label": "Stable Diffusion"
     },
     {
       "slug": "variational-autoencoders",

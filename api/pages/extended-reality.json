@@ -60,10 +60,6 @@
       "label": "Hand Tracking"
     },
     {
-      "slug": "meta-ar-engine",
-      "label": "Meta AR engine"
-    },
-    {
       "slug": "metaverse-domain",
       "label": "Metaverse Domain"
     },
@@ -98,10 +94,6 @@
     {
       "slug": "variational-autoencoders",
       "label": "Variational Autoencoders"
-    },
-    {
-      "slug": "vision-pro",
-      "label": "Vision Pro"
     }
   ]
 }

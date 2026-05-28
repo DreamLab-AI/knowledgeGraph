@@ -32,10 +32,6 @@
   "wikilinks": [],
   "backlinks": [
     {
-      "slug": "animate-diff",
-      "label": "AnimateDiff"
-    },
-    {
       "slug": "diffusion-models",
       "label": "Diffusion Models"
     },
@@ -46,10 +42,6 @@
     {
       "slug": "fooocus",
       "label": "Fooocus"
-    },
-    {
-      "slug": "foundation-models",
-      "label": "Foundation Models"
     },
     {
       "slug": "generative-adversarial-networks",

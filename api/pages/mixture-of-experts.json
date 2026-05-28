@@ -53,10 +53,6 @@
       "label": "AI Companies"
     },
     {
-      "slug": "anthropic-claude",
-      "label": "Anthropic Claude"
-    },
-    {
       "slug": "artificial-general-intelligence",
       "label": "Artificial General Intelligence"
     },
@@ -73,32 +69,8 @@
       "label": "Feed Forward Network"
     },
     {
-      "slug": "foundation-models",
-      "label": "Foundation Models"
-    },
-    {
-      "slug": "google-deep-mind",
-      "label": "Google DeepMind"
-    },
-    {
-      "slug": "grok",
-      "label": "Grok"
-    },
-    {
-      "slug": "llama-3",
-      "label": "Llama 3"
-    },
-    {
       "slug": "ms-phi-models",
       "label": "MS Phi models"
-    },
-    {
-      "slug": "meta-platforms",
-      "label": "Meta Platforms"
-    },
-    {
-      "slug": "mistral-and-mixtral",
-      "label": "Mistral and Mixtral"
     },
     {
       "slug": "model-optimisation-and-performance",

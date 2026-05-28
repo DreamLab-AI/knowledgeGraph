@@ -41,10 +41,6 @@
   ],
   "backlinks": [
     {
-      "slug": "docker",
-      "label": "Docker"
-    },
-    {
       "slug": "policy-enforcement",
       "label": "Policy Enforcement"
     }

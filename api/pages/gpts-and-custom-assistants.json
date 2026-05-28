@@ -635,10 +635,6 @@
     {
       "slug": "graph-neural-network",
       "label": "Graph Neural Network"
-    },
-    {
-      "slug": "microsoft-copilot",
-      "label": "Microsoft Copilot"
     }
   ]
 }

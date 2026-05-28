@@ -32,18 +32,6 @@
   "wikilinks": [],
   "backlinks": [
     {
-      "slug": "foundation-models",
-      "label": "Foundation Models"
-    },
-    {
-      "slug": "grok",
-      "label": "Grok"
-    },
-    {
-      "slug": "llama-3",
-      "label": "Llama 3"
-    },
-    {
       "slug": "transformers",
       "label": "Transformers"
     }

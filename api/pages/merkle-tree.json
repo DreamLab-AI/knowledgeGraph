@@ -129,10 +129,6 @@
       "label": "Distributed Ledger Technology (DLT)"
     },
     {
-      "slug": "ethereum",
-      "label": "Ethereum"
-    },
-    {
       "slug": "governance-token",
       "label": "Governance Token"
     },

@@ -261,10 +261,6 @@
   ],
   "backlinks": [
     {
-      "slug": "animate-diff",
-      "label": "AnimateDiff"
-    },
-    {
       "slug": "comfy-ui-client",
       "label": "ComfyUI Client"
     },
@@ -277,20 +273,12 @@
       "label": "comfy-ui-for-fashion-and-brands"
     },
     {
-      "slug": "comfy-ui",
-      "label": "ComfyUI"
-    },
-    {
       "slug": "control-net-and-similar-spatial-conditioning-systems",
       "label": "ControlNet and Similar Spatial Conditioning Systems"
     },
     {
       "slug": "generative-ai",
       "label": "Generative AI"
-    },
-    {
-      "slug": "grok",
-      "label": "Grok"
     },
     {
       "slug": "image-segmentation",
@@ -315,10 +303,6 @@
     {
       "slug": "pre-training",
       "label": "Pre Training"
-    },
-    {
-      "slug": "stable-diffusion-training",
-      "label": "Stable Diffusion Training"
     },
     {
       "slug": "style-transfer",

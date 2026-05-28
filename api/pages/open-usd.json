@@ -40,16 +40,8 @@
       "label": "Asset Format Standards"
     },
     {
-      "slug": "blender",
-      "label": "Blender"
-    },
-    {
       "slug": "language-modeling",
       "label": "Language Modeling"
-    },
-    {
-      "slug": "nvidia-omniverse",
-      "label": "NVIDIA Omniverse"
     },
     {
       "slug": "procedural-and-hybrid-4-d",

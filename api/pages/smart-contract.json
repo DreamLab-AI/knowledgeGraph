@@ -845,14 +845,6 @@
       "label": "BTC Layer 3"
     },
     {
-      "slug": "bitcoin",
-      "label": "Bitcoin"
-    },
-    {
-      "slug": "bitcoin",
-      "label": "Bitcoin"
-    },
-    {
       "slug": "blockchain-entity",
       "label": "Blockchain Entity"
     },
@@ -1019,10 +1011,6 @@
     {
       "slug": "enterprise-token-standards",
       "label": "Enterprise Token Standards"
-    },
-    {
-      "slug": "ethereum",
-      "label": "Ethereum"
     },
     {
       "slug": "federated-learning",

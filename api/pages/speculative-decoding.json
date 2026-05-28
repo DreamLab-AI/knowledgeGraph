@@ -32,14 +32,6 @@
   "wikilinks": [],
   "backlinks": [
     {
-      "slug": "apple",
-      "label": "Apple"
-    },
-    {
-      "slug": "groq",
-      "label": "Groq"
-    },
-    {
       "slug": "model-optimisation-and-performance",
       "label": "Model Optimisation and Performance"
     },

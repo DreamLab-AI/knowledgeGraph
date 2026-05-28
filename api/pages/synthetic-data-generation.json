@@ -45,24 +45,12 @@
       "label": "AI Video"
     },
     {
-      "slug": "dall-e",
-      "label": "DALL\u00b7E"
-    },
-    {
       "slug": "diffusion-models",
       "label": "Diffusion Models"
     },
     {
-      "slug": "foundation-models",
-      "label": "Foundation Models"
-    },
-    {
       "slug": "generative-adversarial-networks",
       "label": "Generative Adversarial Networks"
-    },
-    {
-      "slug": "nvidia-omniverse",
-      "label": "NVIDIA Omniverse"
     },
     {
       "slug": "procedural-and-hybrid-4-d",

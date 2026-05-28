@@ -32,18 +32,6 @@
   "wikilinks": [],
   "backlinks": [
     {
-      "slug": "foundation-models",
-      "label": "Foundation Models"
-    },
-    {
-      "slug": "google-deep-mind",
-      "label": "Google DeepMind"
-    },
-    {
-      "slug": "grok",
-      "label": "Grok"
-    },
-    {
       "slug": "reasoning",
       "label": "Reasoning"
     }

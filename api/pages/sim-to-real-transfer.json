@@ -48,10 +48,6 @@
       "label": "Model Based Control"
     },
     {
-      "slug": "nvidia-omniverse",
-      "label": "NVIDIA Omniverse"
-    },
-    {
       "slug": "robotics-platform",
       "label": "Robotics Platform"
     }

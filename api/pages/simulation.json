@@ -36,10 +36,6 @@
       "label": "Control Algorithm"
     },
     {
-      "slug": "nvidia-omniverse",
-      "label": "NVIDIA Omniverse"
-    },
-    {
       "slug": "particle-filter",
       "label": "Particle Filter"
     },

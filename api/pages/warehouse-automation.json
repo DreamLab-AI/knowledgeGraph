@@ -44,10 +44,6 @@
       "label": "Humanoid Robot"
     },
     {
-      "slug": "nvidia-omniverse",
-      "label": "NVIDIA Omniverse"
-    },
-    {
       "slug": "navigation",
       "label": "Navigation"
     },

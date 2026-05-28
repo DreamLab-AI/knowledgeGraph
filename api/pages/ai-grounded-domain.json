@@ -58,10 +58,6 @@
   ],
   "backlinks": [
     {
-      "slug": "a-star-algorithm",
-      "label": "A-Star Algorithm"
-    },
-    {
       "slug": "ai-agent-system",
       "label": "AI Agent System"
     },
@@ -130,10 +126,6 @@
       "label": "Algorithmic Bias and Variance"
     },
     {
-      "slug": "animate-diff",
-      "label": "AnimateDiff"
-    },
-    {
       "slug": "artificial-general-intelligence",
       "label": "Artificial General Intelligence"
     },
@@ -162,10 +154,6 @@
       "label": "Call Centres"
     },
     {
-      "slug": "chat-gpt",
-      "label": "ChatGPT"
-    },
-    {
       "slug": "chatbots",
       "label": "Chatbots"
     },
@@ -188,10 +176,6 @@
     {
       "slug": "comfy-ui-for-fashion-and-brands",
       "label": "comfy-ui-for-fashion-and-brands"
-    },
-    {
-      "slug": "comfy-ui",
-      "label": "ComfyUI"
     },
     {
       "slug": "competition-in-ai",
@@ -226,10 +210,6 @@
       "label": "Cortex Agent"
     },
     {
-      "slug": "dall-e",
-      "label": "DALL\u00b7E"
-    },
-    {
       "slug": "deep-learning",
       "label": "Deep Learning"
     },
@@ -248,10 +228,6 @@
     {
       "slug": "direct-preference-optimization",
       "label": "Direct Preference Optimization"
-    },
-    {
-      "slug": "eu-ai-act",
-      "label": "EU AI Act"
     },
     {
       "slug": "economics",
@@ -278,16 +254,8 @@
       "label": "Feed Forward Network"
     },
     {
-      "slug": "flux-1",
-      "label": "Flux.1"
-    },
-    {
       "slug": "fooocus",
       "label": "Fooocus"
-    },
-    {
-      "slug": "foundation-models",
-      "label": "Foundation Models"
     },
     {
       "slug": "function-calling",
@@ -310,18 +278,6 @@
       "label": "Generative Adversarial Networks"
     },
     {
-      "slug": "google-deep-mind",
-      "label": "Google DeepMind"
-    },
-    {
-      "slug": "grok",
-      "label": "Grok"
-    },
-    {
-      "slug": "groq",
-      "label": "Groq"
-    },
-    {
       "slug": "hand-tracking",
       "label": "Hand Tracking"
     },
@@ -330,16 +286,8 @@
       "label": "History and Path to AGI"
     },
     {
-      "slug": "hunyuan-video",
-      "label": "Hunyuan Video"
-    },
-    {
       "slug": "hyper-personalisation",
       "label": "Hyper personalisation"
-    },
-    {
-      "slug": "ip-adapter",
-      "label": "IP-Adapter"
     },
     {
       "slug": "image-and-video-restoration",
@@ -370,10 +318,6 @@
       "label": "Learning Algorithm"
     },
     {
-      "slug": "llama-3",
-      "label": "Llama 3"
-    },
-    {
       "slug": "lo-ra-do-ra-etc",
       "label": "LoRA DoRA etc"
     },
@@ -384,22 +328,6 @@
     {
       "slug": "ms-phi-models",
       "label": "MS Phi models"
-    },
-    {
-      "slug": "meta-platforms",
-      "label": "Meta Platforms"
-    },
-    {
-      "slug": "microsoft-copilot",
-      "label": "Microsoft Copilot"
-    },
-    {
-      "slug": "midjourney",
-      "label": "Midjourney"
-    },
-    {
-      "slug": "mistral-and-mixtral",
-      "label": "Mistral and Mixtral"
     },
     {
       "slug": "model-control-protocols-like-mcp",
@@ -418,10 +346,6 @@
       "label": "Neural 3D Generation"
     },
     {
-      "slug": "open-ai-whisper",
-      "label": "Open AI Whisper"
-    },
-    {
       "slug": "open-generative-ai-tools",
       "label": "Open Generative AI tools"
     },
@@ -432,10 +356,6 @@
     {
       "slug": "particle-filter",
       "label": "Particle Filter"
-    },
-    {
-      "slug": "pika",
-      "label": "Pika"
     },
     {
       "slug": "prime-intellect",
@@ -486,24 +406,12 @@
       "label": "Semantic Search"
     },
     {
-      "slug": "silo-ai",
-      "label": "Silo AI"
-    },
-    {
       "slug": "singularity",
       "label": "Singularity"
     },
     {
       "slug": "speech-and-voice",
       "label": "Speech and Voice"
-    },
-    {
-      "slug": "stable-diffusion-training",
-      "label": "Stable Diffusion Training"
-    },
-    {
-      "slug": "stable-diffusion",
-      "label": "Stable Diffusion"
     },
     {
       "slug": "stochastic-process",

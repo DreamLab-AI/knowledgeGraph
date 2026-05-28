@@ -40,10 +40,6 @@
       "label": "AI companions"
     },
     {
-      "slug": "dall-e",
-      "label": "DALL\u00b7E"
-    },
-    {
       "slug": "deepfakes-and-fraudulent-content",
       "label": "Deepfakes and fraudulent content"
     },
@@ -64,24 +60,12 @@
       "label": "Face Swap"
     },
     {
-      "slug": "flux-1",
-      "label": "Flux.1"
-    },
-    {
       "slug": "generative-ai",
       "label": "Generative AI"
     },
     {
       "slug": "generative-adversarial-networks",
       "label": "Generative Adversarial Networks"
-    },
-    {
-      "slug": "hunyuan-video",
-      "label": "Hunyuan Video"
-    },
-    {
-      "slug": "pika",
-      "label": "Pika"
     },
     {
       "slug": "proprietary-image-generation",

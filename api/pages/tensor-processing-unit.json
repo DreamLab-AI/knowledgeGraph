@@ -48,10 +48,5 @@
       "label": "Large Language Models"
     }
   ],
-  "backlinks": [
-    {
-      "slug": "groq",
-      "label": "Groq"
-    }
-  ]
+  "backlinks": []
 }

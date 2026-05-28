@@ -296,10 +296,6 @@
       "label": "Ai Machine Learning"
     },
     {
-      "slug": "animate-diff",
-      "label": "AnimateDiff"
-    },
-    {
       "slug": "animation-retargeting",
       "label": "Animation Retargeting"
     },
@@ -402,14 +398,6 @@
     {
       "slug": "chatbots",
       "label": "Chatbots"
-    },
-    {
-      "slug": "claude",
-      "label": "Claude"
-    },
-    {
-      "slug": "cloud-rendering-service",
-      "label": "Cloud Rendering Service"
     },
     {
       "slug": "collision-avoidance",
@@ -844,10 +832,6 @@
       "label": "Medical Imaging AI"
     },
     {
-      "slug": "meta-ar-engine",
-      "label": "Meta AR engine"
-    },
-    {
       "slug": "mixed-reality-mr",
       "label": "Mixed Reality (MR)"
     },
@@ -866,10 +850,6 @@
     {
       "slug": "motion-capture",
       "label": "Motion Capture"
-    },
-    {
-      "slug": "nvidia-omniverse",
-      "label": "NVIDIA Omniverse"
     },
     {
       "slug": "navigation",
@@ -1018,10 +998,6 @@
     {
       "slug": "virtual-set-design",
       "label": "Virtual Set Design"
-    },
-    {
-      "slug": "vision-pro",
-      "label": "Vision Pro"
     },
     {
       "slug": "ai-core-concepts",

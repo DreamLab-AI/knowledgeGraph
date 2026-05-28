@@ -61,10 +61,6 @@
       "label": "Fine Tuning"
     },
     {
-      "slug": "gemini",
-      "label": "Gemini"
-    },
-    {
       "slug": "image-generation",
       "label": "Image Generation"
     },

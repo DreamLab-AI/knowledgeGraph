@@ -57,10 +57,6 @@
       "label": "CLI Multi-Agent Systems"
     },
     {
-      "slug": "chat-gpt",
-      "label": "ChatGPT"
-    },
-    {
       "slug": "chatbots",
       "label": "Chatbots"
     },
@@ -73,20 +69,12 @@
       "label": "Computer Use and Browser Agents"
     },
     {
-      "slug": "dall-e",
-      "label": "DALL\u00b7E"
-    },
-    {
       "slug": "direct-preference-optimization",
       "label": "Direct Preference Optimization"
     },
     {
       "slug": "empathetic-ai",
       "label": "Empathetic AI"
-    },
-    {
-      "slug": "google-deep-mind",
-      "label": "Google DeepMind"
     },
     {
       "slug": "history-and-path-to-agi",
@@ -103,10 +91,6 @@
     {
       "slug": "jailbreaking",
       "label": "Jailbreaking"
-    },
-    {
-      "slug": "llama-3",
-      "label": "Llama 3"
     },
     {
       "slug": "prime-intellect",

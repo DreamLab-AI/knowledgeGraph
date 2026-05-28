@@ -140,10 +140,6 @@
       "label": "Graphics API"
     },
     {
-      "slug": "groq",
-      "label": "Groq"
-    },
-    {
       "slug": "hand-tracking",
       "label": "Hand Tracking"
     },
@@ -154,10 +150,6 @@
     {
       "slug": "light-field",
       "label": "Light field"
-    },
-    {
-      "slug": "meta-ar-engine",
-      "label": "Meta AR engine"
     },
     {
       "slug": "metaverse-domain",
@@ -186,10 +178,6 @@
     {
       "slug": "motion-capture",
       "label": "Motion Capture"
-    },
-    {
-      "slug": "nvidia-omniverse",
-      "label": "NVIDIA Omniverse"
     },
     {
       "slug": "open-xr",
@@ -262,10 +250,6 @@
     {
       "slug": "virtual-reality-vr",
       "label": "Virtual Reality (VR)"
-    },
-    {
-      "slug": "vision-pro",
-      "label": "Vision Pro"
     },
     {
       "slug": "metaverse-core-concepts",

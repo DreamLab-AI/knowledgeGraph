@@ -57,10 +57,6 @@
   ],
   "backlinks": [
     {
-      "slug": "chat-gpt",
-      "label": "ChatGPT"
-    },
-    {
       "slug": "model-training",
       "label": "Model Training"
     },

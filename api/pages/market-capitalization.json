@@ -67,10 +67,5 @@
       "label": "TokenEconomicsDomain"
     }
   ],
-  "backlinks": [
-    {
-      "slug": "bitcoin",
-      "label": "Bitcoin"
-    }
-  ]
+  "backlinks": []
 }

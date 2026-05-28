@@ -621,16 +621,8 @@
       "label": "AI Video"
     },
     {
-      "slug": "animate-diff",
-      "label": "AnimateDiff"
-    },
-    {
       "slug": "control-net-and-similar-spatial-conditioning-systems",
       "label": "ControlNet and Similar Spatial Conditioning Systems"
-    },
-    {
-      "slug": "dall-e",
-      "label": "DALL\u00b7E"
     },
     {
       "slug": "deepfakes-and-fraudulent-content",
@@ -649,10 +641,6 @@
       "label": "Fashion"
     },
     {
-      "slug": "flux-1",
-      "label": "Flux.1"
-    },
-    {
       "slug": "generative-ai",
       "label": "Generative AI"
     },
@@ -669,10 +657,6 @@
       "label": "Imitation Learning"
     },
     {
-      "slug": "midjourney",
-      "label": "Midjourney"
-    },
-    {
       "slug": "overview-of-machine-learning-techniques",
       "label": "Overview of Machine Learning Techniques"
     },
@@ -687,14 +671,6 @@
     {
       "slug": "proprietary-image-generation",
       "label": "Proprietary Image Generation"
-    },
-    {
-      "slug": "stable-diffusion-training",
-      "label": "Stable Diffusion Training"
-    },
-    {
-      "slug": "stable-diffusion",
-      "label": "Stable Diffusion"
     },
     {
       "slug": "variational-autoencoders",

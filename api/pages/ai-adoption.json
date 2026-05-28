@@ -689,10 +689,6 @@
       "label": "Adoption of Convergent Technologies"
     },
     {
-      "slug": "apple",
-      "label": "Apple"
-    },
-    {
       "slug": "automated-podcasting",
       "label": "Automated Podcasting"
     },
@@ -729,10 +725,6 @@
       "label": "GPT Engineer"
     },
     {
-      "slug": "google",
-      "label": "Google"
-    },
-    {
       "slug": "hardware-and-edge",
       "label": "Hardware and Edge"
     },
@@ -749,20 +741,12 @@
       "label": "Hyper personalisation"
     },
     {
-      "slug": "llama-3",
-      "label": "Llama 3"
-    },
-    {
       "slug": "lo-ra-do-ra-etc",
       "label": "LoRA DoRA etc"
     },
     {
       "slug": "micropayments",
       "label": "Micropayments"
-    },
-    {
-      "slug": "microsoft-copilot",
-      "label": "Microsoft Copilot"
     },
     {
       "slug": "model-control-protocols-like-mcp",
@@ -791,14 +775,6 @@
     {
       "slug": "proprietary-large-language-models",
       "label": "Proprietary Large Language Models"
-    },
-    {
-      "slug": "silo-ai",
-      "label": "Silo AI"
-    },
-    {
-      "slug": "stable-diffusion",
-      "label": "Stable Diffusion"
     },
     {
       "slug": "trust-and-safety",

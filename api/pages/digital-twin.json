@@ -232,10 +232,6 @@
       "label": "Banodoco"
     },
     {
-      "slug": "blender",
-      "label": "Blender"
-    },
-    {
       "slug": "blockchain-entity",
       "label": "Blockchain Entity"
     },
@@ -520,18 +516,6 @@
       "label": "Motion Control"
     },
     {
-      "slug": "nvidia-omniverse",
-      "label": "NVIDIA Omniverse"
-    },
-    {
-      "slug": "nvidia-omniverse",
-      "label": "NVIDIA Omniverse"
-    },
-    {
-      "slug": "nvidia",
-      "label": "NVIDIA"
-    },
-    {
       "slug": "navigation",
       "label": "Navigation"
     },
@@ -594,10 +578,6 @@
     {
       "slug": "uk-tech-ecosystem",
       "label": "UK Tech Ecosystem"
-    },
-    {
-      "slug": "unreal-engine",
-      "label": "Unreal Engine"
     },
     {
       "slug": "variational-autoencoders",

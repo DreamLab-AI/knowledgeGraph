@@ -771,10 +771,6 @@
     {
       "slug": "sampling",
       "label": "Sampling"
-    },
-    {
-      "slug": "stable-diffusion",
-      "label": "Stable Diffusion"
     }
   ]
 }

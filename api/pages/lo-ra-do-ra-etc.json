@@ -529,10 +529,6 @@
       "label": "Advice for developing GenAI"
     },
     {
-      "slug": "comfy-ui",
-      "label": "ComfyUI"
-    },
-    {
       "slug": "fine-tuning",
       "label": "Fine Tuning"
     },
@@ -547,10 +543,6 @@
     {
       "slug": "proprietary-ai-video",
       "label": "Proprietary AI Video"
-    },
-    {
-      "slug": "stable-diffusion",
-      "label": "Stable Diffusion"
     },
     {
       "slug": "text-generation",

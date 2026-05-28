@@ -249,10 +249,6 @@
       "label": "BART"
     },
     {
-      "slug": "bert",
-      "label": "BERT"
-    },
-    {
       "slug": "backdoor-attack",
       "label": "Backdoor Attack"
     },
@@ -275,14 +271,6 @@
     {
       "slug": "causal-attention",
       "label": "Causal Attention"
-    },
-    {
-      "slug": "chatbot",
-      "label": "Chatbot"
-    },
-    {
-      "slug": "claude",
-      "label": "Claude"
     },
     {
       "slug": "clinical-decision-support",
@@ -557,10 +545,6 @@
       "label": "Gazebo Simulator"
     },
     {
-      "slug": "gemini",
-      "label": "Gemini"
-    },
-    {
       "slug": "general-purpose-ai-model",
       "label": "General Purpose AI Model"
     },
@@ -705,10 +689,6 @@
       "label": "Knowledge Distillation"
     },
     {
-      "slug": "lla-ma",
-      "label": "LLaMA"
-    },
-    {
       "slug": "label-smoothing",
       "label": "Label Smoothing"
     },
@@ -789,16 +769,8 @@
       "label": "Minimal Risk AI"
     },
     {
-      "slug": "mistral",
-      "label": "Mistral"
-    },
-    {
       "slug": "mixed-precision-training",
       "label": "Mixed Precision Training"
-    },
-    {
-      "slug": "mixtral",
-      "label": "Mixtral"
     },
     {
       "slug": "mixture-of-experts",
@@ -1187,10 +1159,6 @@
     {
       "slug": "systemic-risk",
       "label": "Systemic Risk"
-    },
-    {
-      "slug": "t5",
-      "label": "T5"
     },
     {
       "slug": "term-index",

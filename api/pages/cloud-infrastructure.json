@@ -86,10 +86,6 @@
       "label": "Call Centres"
     },
     {
-      "slug": "cloud-rendering-service",
-      "label": "Cloud Rendering Service"
-    },
-    {
       "slug": "cold-chain-monitoring",
       "label": "Cold Chain Monitoring"
     },
@@ -120,10 +116,6 @@
     {
       "slug": "meeting-ai-assistant",
       "label": "Meeting AI Assistant"
-    },
-    {
-      "slug": "nvidia-omniverse",
-      "label": "NVIDIA Omniverse"
     },
     {
       "slug": "physical-layer",

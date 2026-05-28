@@ -165,10 +165,6 @@
       "label": "Opcodes"
     },
     {
-      "slug": "orphan-block",
-      "label": "Orphan Block"
-    },
-    {
       "slug": "output",
       "label": "Output"
     },

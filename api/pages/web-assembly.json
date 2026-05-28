@@ -342,10 +342,6 @@
       "label": "Robot Operating System"
     },
     {
-      "slug": "rust",
-      "label": "Rust"
-    },
-    {
       "slug": "smart-contract",
       "label": "Smart Contract"
     },

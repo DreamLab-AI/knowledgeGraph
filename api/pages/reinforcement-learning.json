@@ -93,14 +93,6 @@
       "label": "Agents"
     },
     {
-      "slug": "anthropic-claude",
-      "label": "Anthropic Claude"
-    },
-    {
-      "slug": "apple",
-      "label": "Apple"
-    },
-    {
       "slug": "artificial-general-intelligence",
       "label": "Artificial General Intelligence"
     },
@@ -115,10 +107,6 @@
     {
       "slug": "cli-multi-agent-systems",
       "label": "CLI Multi-Agent Systems"
-    },
-    {
-      "slug": "chat-gpt",
-      "label": "ChatGPT"
     },
     {
       "slug": "checkpoints",
@@ -159,10 +147,6 @@
     {
       "slug": "gaze-control",
       "label": "Gaze Control"
-    },
-    {
-      "slug": "google-deep-mind",
-      "label": "Google DeepMind"
     },
     {
       "slug": "hardware-and-edge",
@@ -207,10 +191,6 @@
     {
       "slug": "motion-control",
       "label": "Motion Control"
-    },
-    {
-      "slug": "nvidia-omniverse",
-      "label": "NVIDIA Omniverse"
     },
     {
       "slug": "navigation",

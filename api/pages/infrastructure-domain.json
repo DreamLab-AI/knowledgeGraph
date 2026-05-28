@@ -137,10 +137,6 @@
       "label": "Cloud Infrastructure"
     },
     {
-      "slug": "cloud-rendering-service",
-      "label": "Cloud Rendering Service"
-    },
-    {
       "slug": "cold-chain-monitoring",
       "label": "Cold Chain Monitoring"
     },
@@ -247,10 +243,6 @@
     {
       "slug": "distributed-ledger-technology-dlt",
       "label": "Distributed Ledger Technology (DLT)"
-    },
-    {
-      "slug": "docker",
-      "label": "Docker"
     },
     {
       "slug": "domain-ontology",
@@ -431,10 +423,6 @@
     {
       "slug": "multiverse",
       "label": "Multiverse"
-    },
-    {
-      "slug": "nvidia",
-      "label": "NVIDIA"
     },
     {
       "slug": "network-protocol",

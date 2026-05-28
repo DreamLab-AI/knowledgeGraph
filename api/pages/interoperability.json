@@ -665,16 +665,8 @@
       "label": "AI Agent System"
     },
     {
-      "slug": "bitcoin",
-      "label": "Bitcoin"
-    },
-    {
       "slug": "cbdc-frameworks",
       "label": "CBDC Frameworks"
-    },
-    {
-      "slug": "cardano",
-      "label": "Cardano"
     },
     {
       "slug": "compatibility-standards",

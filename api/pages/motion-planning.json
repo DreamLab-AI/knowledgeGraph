@@ -77,10 +77,6 @@
   ],
   "backlinks": [
     {
-      "slug": "a-star-algorithm",
-      "label": "A-Star Algorithm"
-    },
-    {
       "slug": "autonomous-robot",
       "label": "Autonomous Robot"
     },

@@ -70,10 +70,6 @@
       "label": "Authoring Tool"
     },
     {
-      "slug": "cloud-rendering-service",
-      "label": "Cloud Rendering Service"
-    },
-    {
       "slug": "collective-memory-archive",
       "label": "Collective Memory Archive"
     },
@@ -172,10 +168,6 @@
     {
       "slug": "physics-based-animation",
       "label": "Physics-Based Animation"
-    },
-    {
-      "slug": "pika",
-      "label": "Pika"
     },
     {
       "slug": "procedural-audio-generator",

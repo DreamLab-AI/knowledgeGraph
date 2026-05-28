@@ -517,10 +517,6 @@
       "label": "Distributed Ledger"
     },
     {
-      "slug": "ethereum",
-      "label": "Ethereum"
-    },
-    {
       "slug": "identity-verification",
       "label": "Identity Verification"
     },

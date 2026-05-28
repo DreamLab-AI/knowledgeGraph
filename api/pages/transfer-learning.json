@@ -48,10 +48,6 @@
       "label": "Feed Forward Network"
     },
     {
-      "slug": "foundation-models",
-      "label": "Foundation Models"
-    },
-    {
       "slug": "image-classification",
       "label": "Image Classification"
     },
@@ -94,10 +90,6 @@
     {
       "slug": "robot-learning",
       "label": "Robot Learning"
-    },
-    {
-      "slug": "stable-diffusion-training",
-      "label": "Stable Diffusion Training"
     },
     {
       "slug": "training-data",

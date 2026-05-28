@@ -40,10 +40,5 @@
       "label": "owl:Thing"
     }
   ],
-  "backlinks": [
-    {
-      "slug": "ieee-p2733-standards",
-      "label": "Ieee P2733 Standards"
-    }
-  ]
+  "backlinks": []
 }

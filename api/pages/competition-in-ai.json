@@ -485,10 +485,6 @@
   ],
   "backlinks": [
     {
-      "slug": "apple",
-      "label": "Apple"
-    },
-    {
       "slug": "bio-terror",
       "label": "Bio Terror"
     },
@@ -513,16 +509,8 @@
       "label": "GPT Engineer"
     },
     {
-      "slug": "google",
-      "label": "Google"
-    },
-    {
       "slug": "history-and-path-to-agi",
       "label": "History and Path to AGI"
-    },
-    {
-      "slug": "llama-3",
-      "label": "Llama 3"
     },
     {
       "slug": "ms-phi-models",
@@ -531,10 +519,6 @@
     {
       "slug": "micropayments",
       "label": "Micropayments"
-    },
-    {
-      "slug": "microsoft-copilot",
-      "label": "Microsoft Copilot"
     },
     {
       "slug": "model-training",
@@ -569,16 +553,8 @@
       "label": "Safety and alignment"
     },
     {
-      "slug": "silo-ai",
-      "label": "Silo AI"
-    },
-    {
       "slug": "singularity",
       "label": "Singularity"
-    },
-    {
-      "slug": "stable-diffusion",
-      "label": "Stable Diffusion"
     },
     {
       "slug": "training-data",

@@ -48,16 +48,8 @@
       "label": "Cross Border Compliance"
     },
     {
-      "slug": "eu-ai-act",
-      "label": "EU AI Act"
-    },
-    {
       "slug": "jailbreaking",
       "label": "Jailbreaking"
-    },
-    {
-      "slug": "mistral-and-mixtral",
-      "label": "Mistral and Mixtral"
     }
   ]
 }

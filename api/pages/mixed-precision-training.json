@@ -41,40 +41,12 @@
       "label": "Direct Preference Optimization"
     },
     {
-      "slug": "flux-1",
-      "label": "Flux.1"
-    },
-    {
-      "slug": "foundation-models",
-      "label": "Foundation Models"
-    },
-    {
-      "slug": "grok",
-      "label": "Grok"
-    },
-    {
-      "slug": "hunyuan-video",
-      "label": "Hunyuan Video"
-    },
-    {
       "slug": "lo-ra-do-ra-etc",
       "label": "LoRA DoRA etc"
     },
     {
       "slug": "model-training",
       "label": "Model Training"
-    },
-    {
-      "slug": "pika",
-      "label": "Pika"
-    },
-    {
-      "slug": "stable-diffusion-training",
-      "label": "Stable Diffusion Training"
-    },
-    {
-      "slug": "stable-diffusion",
-      "label": "Stable Diffusion"
     },
     {
       "slug": "training-and-fine-tuning",

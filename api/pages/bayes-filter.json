@@ -641,10 +641,6 @@
       "label": "Monte Carlo Localization"
     },
     {
-      "slug": "norbert-wiener",
-      "label": "Norbert Wiener"
-    },
-    {
       "slug": "particle-filter",
       "label": "Particle Filter"
     },

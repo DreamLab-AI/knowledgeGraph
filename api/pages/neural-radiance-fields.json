@@ -69,10 +69,6 @@
       "label": "Light field"
     },
     {
-      "slug": "meta-ar-engine",
-      "label": "Meta AR engine"
-    },
-    {
       "slug": "ray-tracing",
       "label": "Ray Tracing"
     },

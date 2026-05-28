@@ -54,10 +54,6 @@
   ],
   "backlinks": [
     {
-      "slug": "bitcoin",
-      "label": "Bitcoin"
-    },
-    {
       "slug": "cbdc-frameworks",
       "label": "CBDC Frameworks"
     },

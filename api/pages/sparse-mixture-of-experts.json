@@ -41,14 +41,6 @@
   ],
   "backlinks": [
     {
-      "slug": "grok",
-      "label": "Grok"
-    },
-    {
-      "slug": "mistral-and-mixtral",
-      "label": "Mistral and Mixtral"
-    },
-    {
       "slug": "transformers",
       "label": "Transformers"
     }

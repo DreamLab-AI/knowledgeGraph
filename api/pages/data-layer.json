@@ -881,10 +881,6 @@
       "label": "Linked Data Encoder"
     },
     {
-      "slug": "logseq",
-      "label": "Logseq"
-    },
-    {
       "slug": "metadata-standard",
       "label": "Metadata Standard"
     },

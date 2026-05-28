@@ -32,32 +32,8 @@
   "wikilinks": [],
   "backlinks": [
     {
-      "slug": "comfy-ui",
-      "label": "ComfyUI"
-    },
-    {
-      "slug": "foundation-models",
-      "label": "Foundation Models"
-    },
-    {
-      "slug": "grok",
-      "label": "Grok"
-    },
-    {
-      "slug": "hunyuan-video",
-      "label": "Hunyuan Video"
-    },
-    {
       "slug": "kohya-dreambooth-and-similar",
       "label": "KOHYA Dreambooth and similar"
-    },
-    {
-      "slug": "llama-3",
-      "label": "Llama 3"
-    },
-    {
-      "slug": "mistral-and-mixtral",
-      "label": "Mistral and Mixtral"
     },
     {
       "slug": "model-optimisation-and-performance",
@@ -70,14 +46,6 @@
     {
       "slug": "open-generative-ai-tools",
       "label": "Open Generative AI tools"
-    },
-    {
-      "slug": "pika",
-      "label": "Pika"
-    },
-    {
-      "slug": "stable-diffusion",
-      "label": "Stable Diffusion"
     },
     {
       "slug": "transformers",

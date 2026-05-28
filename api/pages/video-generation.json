@@ -32,10 +32,6 @@
   "wikilinks": [],
   "backlinks": [
     {
-      "slug": "animate-diff",
-      "label": "AnimateDiff"
-    },
-    {
       "slug": "comfy-ui-client",
       "label": "ComfyUI Client"
     },
@@ -44,20 +40,8 @@
       "label": "ComfyUI Workflows"
     },
     {
-      "slug": "comfy-ui",
-      "label": "ComfyUI"
-    },
-    {
       "slug": "generative-ai",
       "label": "Generative AI"
-    },
-    {
-      "slug": "google-deep-mind",
-      "label": "Google DeepMind"
-    },
-    {
-      "slug": "midjourney",
-      "label": "Midjourney"
     }
   ]
 }

@@ -693,10 +693,6 @@
       "label": "Adoption of Convergent Technologies"
     },
     {
-      "slug": "apple",
-      "label": "Apple"
-    },
-    {
       "slug": "crdt",
       "label": "CRDT"
     },
@@ -737,10 +733,6 @@
       "label": "GPTs and Custom Assistants"
     },
     {
-      "slug": "google",
-      "label": "Google"
-    },
-    {
       "slug": "hardware-and-edge",
       "label": "Hardware and Edge"
     },
@@ -765,10 +757,6 @@
       "label": "Lightning Network"
     },
     {
-      "slug": "llama-3",
-      "label": "Llama 3"
-    },
-    {
       "slug": "lo-ra-do-ra-etc",
       "label": "LoRA DoRA etc"
     },
@@ -779,18 +767,6 @@
     {
       "slug": "meeting-recording",
       "label": "Meeting Recording"
-    },
-    {
-      "slug": "meta-ar-engine",
-      "label": "Meta AR engine"
-    },
-    {
-      "slug": "microsoft-copilot",
-      "label": "Microsoft Copilot"
-    },
-    {
-      "slug": "midjourney",
-      "label": "Midjourney"
     },
     {
       "slug": "model-control-protocols-like-mcp",
@@ -833,10 +809,6 @@
       "label": "Self Sovereign Identity"
     },
     {
-      "slug": "silo-ai",
-      "label": "Silo AI"
-    },
-    {
       "slug": "smart-contract",
       "label": "Smart Contract"
     },
@@ -851,10 +823,6 @@
     {
       "slug": "stable-coins",
       "label": "Stable Coins"
-    },
-    {
-      "slug": "stable-diffusion",
-      "label": "Stable Diffusion"
     },
     {
       "slug": "state-machine",

@@ -64,22 +64,6 @@
       "label": "LoRA DoRA etc"
     },
     {
-      "slug": "meta-platforms",
-      "label": "Meta Platforms"
-    },
-    {
-      "slug": "mistral-and-mixtral",
-      "label": "Mistral and Mixtral"
-    },
-    {
-      "slug": "nvidia-omniverse",
-      "label": "NVIDIA Omniverse"
-    },
-    {
-      "slug": "nvidia",
-      "label": "NVIDIA"
-    },
-    {
       "slug": "open-generative-ai-tools",
       "label": "Open Generative AI tools"
     },

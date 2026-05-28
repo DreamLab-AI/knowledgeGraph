@@ -36,32 +36,8 @@
       "label": "AI Video"
     },
     {
-      "slug": "comfy-ui",
-      "label": "ComfyUI"
-    },
-    {
-      "slug": "dall-e",
-      "label": "DALL\u00b7E"
-    },
-    {
       "slug": "diffusion-models",
       "label": "Diffusion Models"
-    },
-    {
-      "slug": "flux-1",
-      "label": "Flux.1"
-    },
-    {
-      "slug": "midjourney",
-      "label": "Midjourney"
-    },
-    {
-      "slug": "pika",
-      "label": "Pika"
-    },
-    {
-      "slug": "stable-diffusion",
-      "label": "Stable Diffusion"
     }
   ]
 }

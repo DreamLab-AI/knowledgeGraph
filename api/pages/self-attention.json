@@ -73,18 +73,6 @@
       "label": "AI Video"
     },
     {
-      "slug": "animate-diff",
-      "label": "AnimateDiff"
-    },
-    {
-      "slug": "foundation-models",
-      "label": "Foundation Models"
-    },
-    {
-      "slug": "grok",
-      "label": "Grok"
-    },
-    {
       "slug": "language-modeling",
       "label": "Language Modeling"
     },

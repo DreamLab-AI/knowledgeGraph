@@ -153,10 +153,6 @@
       "label": "Bitcoin related links"
     },
     {
-      "slug": "bitcoin",
-      "label": "Bitcoin"
-    },
-    {
       "slug": "blockchain-compliance",
       "label": "Blockchain Compliance"
     },
@@ -167,10 +163,6 @@
     {
       "slug": "carbon-accounting",
       "label": "Carbon Accounting"
-    },
-    {
-      "slug": "cardano",
-      "label": "Cardano"
     },
     {
       "slug": "compliance-control",

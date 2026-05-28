@@ -44,10 +44,6 @@
       "label": "Exteroceptive Sensor"
     },
     {
-      "slug": "foundation-models",
-      "label": "Foundation Models"
-    },
-    {
       "slug": "image-segmentation",
       "label": "Image Segmentation"
     },

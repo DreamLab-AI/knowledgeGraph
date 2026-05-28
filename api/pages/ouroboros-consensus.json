@@ -43,10 +43,5 @@
       "label": "Proof of Stake"
     }
   ],
-  "backlinks": [
-    {
-      "slug": "cardano",
-      "label": "Cardano"
-    }
-  ]
+  "backlinks": []
 }

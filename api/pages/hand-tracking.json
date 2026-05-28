@@ -537,14 +537,6 @@
       "label": "3D User Interface"
     },
     {
-      "slug": "meta-ar-engine",
-      "label": "Meta AR engine"
-    },
-    {
-      "slug": "meta-platforms",
-      "label": "Meta Platforms"
-    },
-    {
       "slug": "mixed-reality-mr",
       "label": "Mixed Reality (MR)"
     },
@@ -567,10 +559,6 @@
     {
       "slug": "telecollaboration-and-telepresence",
       "label": "Telecollaboration and Telepresence"
-    },
-    {
-      "slug": "vision-pro",
-      "label": "Vision Pro"
     }
   ]
 }

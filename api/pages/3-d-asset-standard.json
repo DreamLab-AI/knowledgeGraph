@@ -44,10 +44,6 @@
     {
       "slug": "gltf-standard",
       "label": "Gltf Standard"
-    },
-    {
-      "slug": "unreal-engine",
-      "label": "Unreal Engine"
     }
   ]
 }

@@ -75,10 +75,6 @@
     {
       "slug": "cryptographic-domain",
       "label": "Cryptographic Domain"
-    },
-    {
-      "slug": "ethereum",
-      "label": "Ethereum"
     }
   ]
 }

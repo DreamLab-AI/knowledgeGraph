@@ -97,10 +97,6 @@
       "label": "comfy-ui-for-fashion-and-brands"
     },
     {
-      "slug": "comfy-ui",
-      "label": "ComfyUI"
-    },
-    {
       "slug": "control-net-and-similar-spatial-conditioning-systems",
       "label": "ControlNet and Similar Spatial Conditioning Systems"
     },
@@ -113,10 +109,6 @@
       "label": "Fine Tuning"
     },
     {
-      "slug": "flux-1",
-      "label": "Flux.1"
-    },
-    {
       "slug": "fooocus",
       "label": "Fooocus"
     },
@@ -125,28 +117,12 @@
       "label": "Generative Adversarial Networks"
     },
     {
-      "slug": "ip-adapter",
-      "label": "IP-Adapter"
-    },
-    {
       "slug": "image-to-image-translation",
       "label": "Image to Image Translation"
     },
     {
       "slug": "kohya-dreambooth-and-similar",
       "label": "KOHYA Dreambooth and similar"
-    },
-    {
-      "slug": "midjourney",
-      "label": "Midjourney"
-    },
-    {
-      "slug": "stable-diffusion-training",
-      "label": "Stable Diffusion Training"
-    },
-    {
-      "slug": "stable-diffusion",
-      "label": "Stable Diffusion"
     },
     {
       "slug": "text-summarisation",

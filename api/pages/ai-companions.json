@@ -725,10 +725,6 @@
       "label": "Empathetic AI"
     },
     {
-      "slug": "meta-ar-engine",
-      "label": "Meta AR engine"
-    },
-    {
       "slug": "mixed-reality",
       "label": "Mixed Reality"
     },
@@ -747,10 +743,6 @@
     {
       "slug": "proprietary-large-language-models",
       "label": "Proprietary Large Language Models"
-    },
-    {
-      "slug": "vision-pro",
-      "label": "Vision Pro"
     }
   ]
 }

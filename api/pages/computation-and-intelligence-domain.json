@@ -57,10 +57,6 @@
   ],
   "backlinks": [
     {
-      "slug": "a-star-algorithm",
-      "label": "A-Star Algorithm"
-    },
-    {
       "slug": "ai-agent-system",
       "label": "AI Agent System"
     },
@@ -145,10 +141,6 @@
       "label": "Cryptography Security and Privacy"
     },
     {
-      "slug": "dall-e",
-      "label": "DALL\u00b7E"
-    },
-    {
       "slug": "data-fabric-architecture",
       "label": "Data Fabric Architecture"
     },
@@ -229,10 +221,6 @@
       "label": "Feedback Loop"
     },
     {
-      "slug": "foundation-models",
-      "label": "Foundation Models"
-    },
-    {
       "slug": "function-calling",
       "label": "Function Calling"
     },
@@ -255,10 +243,6 @@
     {
       "slug": "history-and-path-to-agi",
       "label": "History and Path to AGI"
-    },
-    {
-      "slug": "hunyuan-video",
-      "label": "Hunyuan Video"
     },
     {
       "slug": "imitation-learning",
@@ -301,16 +285,8 @@
       "label": "Model Training"
     },
     {
-      "slug": "open-ai-whisper",
-      "label": "Open AI Whisper"
-    },
-    {
       "slug": "performance-optimization",
       "label": "Performance Optimization"
-    },
-    {
-      "slug": "pika",
-      "label": "Pika"
     },
     {
       "slug": "probabilistic-model",

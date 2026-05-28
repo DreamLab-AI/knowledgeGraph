@@ -69,10 +69,6 @@
       "label": "Call Centres"
     },
     {
-      "slug": "chat-gpt",
-      "label": "ChatGPT"
-    },
-    {
       "slug": "chatbots",
       "label": "Chatbots"
     },
@@ -83,10 +79,6 @@
     {
       "slug": "empathetic-ai",
       "label": "Empathetic AI"
-    },
-    {
-      "slug": "foundation-models",
-      "label": "Foundation Models"
     },
     {
       "slug": "human-computer-interaction",

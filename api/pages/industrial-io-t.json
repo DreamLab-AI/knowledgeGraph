@@ -40,10 +40,6 @@
       "label": "IoT Sensor Network"
     },
     {
-      "slug": "nvidia-omniverse",
-      "label": "NVIDIA Omniverse"
-    },
-    {
       "slug": "physical-layer",
       "label": "Physical Layer"
     },

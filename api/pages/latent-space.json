@@ -60,10 +60,6 @@
       "label": "Death of the Internet"
     },
     {
-      "slug": "flux-1",
-      "label": "Flux.1"
-    },
-    {
       "slug": "generative-adversarial-networks",
       "label": "Generative Adversarial Networks"
     },
@@ -78,10 +74,6 @@
     {
       "slug": "proprietary-ai-video",
       "label": "Proprietary AI Video"
-    },
-    {
-      "slug": "stable-diffusion-training",
-      "label": "Stable Diffusion Training"
     },
     {
       "slug": "text-generation",

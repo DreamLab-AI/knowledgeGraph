@@ -40,10 +40,5 @@
       "label": "owl:Thing"
     }
   ],
-  "backlinks": [
-    {
-      "slug": "ieee7000-standard",
-      "label": "Ieee7000 Standard"
-    }
-  ]
+  "backlinks": []
 }

@@ -53,20 +53,12 @@
       "label": "Agents"
     },
     {
-      "slug": "anthropic-claude",
-      "label": "Anthropic Claude"
-    },
-    {
       "slug": "artificial-general-intelligence",
       "label": "Artificial General Intelligence"
     },
     {
       "slug": "bias-in-large-language-models",
       "label": "Bias in Large Language Models"
-    },
-    {
-      "slug": "chat-gpt",
-      "label": "ChatGPT"
     },
     {
       "slug": "chatbots",
@@ -79,10 +71,6 @@
     {
       "slug": "direct-preference-optimization",
       "label": "Direct Preference Optimization"
-    },
-    {
-      "slug": "foundation-models",
-      "label": "Foundation Models"
     },
     {
       "slug": "history-and-path-to-agi",

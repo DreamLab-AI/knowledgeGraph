@@ -181,10 +181,6 @@
       "label": "Accessibility"
     },
     {
-      "slug": "apple",
-      "label": "Apple"
-    },
-    {
       "slug": "automated-podcasting",
       "label": "Automated Podcasting"
     },
@@ -209,28 +205,12 @@
       "label": "ETSI_Domain_Interoperability"
     },
     {
-      "slug": "foundation-models",
-      "label": "Foundation Models"
-    },
-    {
       "slug": "game-engine",
       "label": "Game Engine"
     },
     {
-      "slug": "grok",
-      "label": "Grok"
-    },
-    {
       "slug": "metadata-management",
       "label": "Metadata Management"
-    },
-    {
-      "slug": "microsoft-copilot",
-      "label": "Microsoft Copilot"
-    },
-    {
-      "slug": "midjourney",
-      "label": "Midjourney"
     },
     {
       "slug": "mixed-reality",
@@ -239,14 +219,6 @@
     {
       "slug": "music-and-audio",
       "label": "Music and Audio"
-    },
-    {
-      "slug": "nvidia-omniverse",
-      "label": "NVIDIA Omniverse"
-    },
-    {
-      "slug": "nvidia",
-      "label": "NVIDIA"
     },
     {
       "slug": "policy-enforcement",

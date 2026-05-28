@@ -32,20 +32,8 @@
   "wikilinks": [],
   "backlinks": [
     {
-      "slug": "blender",
-      "label": "Blender"
-    },
-    {
       "slug": "control-net-and-similar-spatial-conditioning-systems",
       "label": "ControlNet and Similar Spatial Conditioning Systems"
-    },
-    {
-      "slug": "dall-e",
-      "label": "DALL\u00b7E"
-    },
-    {
-      "slug": "midjourney",
-      "label": "Midjourney"
     },
     {
       "slug": "mixed-reality",
@@ -58,10 +46,6 @@
     {
       "slug": "rendering-pipeline",
       "label": "Rendering Pipeline"
-    },
-    {
-      "slug": "vision-pro",
-      "label": "Vision Pro"
     }
   ]
 }

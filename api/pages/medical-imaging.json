@@ -72,10 +72,6 @@
       "label": "Rendering Pipeline"
     },
     {
-      "slug": "vision-pro",
-      "label": "Vision Pro"
-    },
-    {
       "slug": "fast-ai",
       "label": "fast.ai"
     }

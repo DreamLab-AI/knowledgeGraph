@@ -781,10 +781,6 @@
       "label": "Bitcoin Distribution"
     },
     {
-      "slug": "bitcoin",
-      "label": "Bitcoin"
-    },
-    {
       "slug": "crdt",
       "label": "CRDT"
     },
@@ -871,10 +867,6 @@
     {
       "slug": "federated-learning",
       "label": "Federated Learning"
-    },
-    {
-      "slug": "google",
-      "label": "Google"
     },
     {
       "slug": "governance-token",

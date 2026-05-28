@@ -45,10 +45,6 @@
       "label": "Bitcoin Technical Overview"
     },
     {
-      "slug": "bitcoin",
-      "label": "Bitcoin"
-    },
-    {
       "slug": "byzantine-fault-tolerance",
       "label": "Byzantine Fault Tolerance"
     },

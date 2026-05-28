@@ -833,10 +833,6 @@
       "label": "Micropayments"
     },
     {
-      "slug": "microsoft-copilot",
-      "label": "Microsoft Copilot"
-    },
-    {
       "slug": "model-control-protocols-like-mcp",
       "label": "Model Control Protocols like MCP"
     },
@@ -885,10 +881,6 @@
       "label": "Self Sovereign Identity"
     },
     {
-      "slug": "silo-ai",
-      "label": "Silo AI"
-    },
-    {
       "slug": "singularity",
       "label": "Singularity"
     },
@@ -901,16 +893,8 @@
       "label": "Soon-Next-Later (AI futurology)"
     },
     {
-      "slug": "stable-diffusion",
-      "label": "Stable Diffusion"
-    },
-    {
       "slug": "state-machine",
       "label": "State Machine"
-    },
-    {
-      "slug": "todo",
-      "label": "TODO"
     },
     {
       "slug": "technical-history-extended-cv",

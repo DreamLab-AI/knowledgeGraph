@@ -85,14 +85,6 @@
       "label": "Activation Function"
     },
     {
-      "slug": "anthropic-claude",
-      "label": "Anthropic Claude"
-    },
-    {
-      "slug": "apple",
-      "label": "Apple"
-    },
-    {
       "slug": "artificial-intelligence",
       "label": "Artificial Intelligence"
     },
@@ -185,28 +177,8 @@
       "label": "Fine Tuning"
     },
     {
-      "slug": "gpt-2",
-      "label": "GPT 2"
-    },
-    {
-      "slug": "gpt-3",
-      "label": "GPT 3"
-    },
-    {
-      "slug": "gpt-4",
-      "label": "GPT 4"
-    },
-    {
       "slug": "gpt",
       "label": "GPT"
-    },
-    {
-      "slug": "google-deep-mind",
-      "label": "Google DeepMind"
-    },
-    {
-      "slug": "google",
-      "label": "Google"
     },
     {
       "slug": "gradient-clipping",

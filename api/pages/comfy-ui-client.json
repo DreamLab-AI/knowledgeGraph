@@ -787,10 +787,6 @@
     {
       "slug": "model-control-protocols-like-mcp",
       "label": "Model Control Protocols like MCP"
-    },
-    {
-      "slug": "stable-diffusion",
-      "label": "Stable Diffusion"
     }
   ]
 }

@@ -917,10 +917,6 @@
       "label": "Gas Fee Market"
     },
     {
-      "slug": "gdpr-article45",
-      "label": "Gdpr Article45"
-    },
-    {
       "slug": "geospatial-engine",
       "label": "Geospatial Engine"
     },
@@ -971,14 +967,6 @@
     {
       "slug": "human-centred-values",
       "label": "Human Centred Values"
-    },
-    {
-      "slug": "ieee-p2733-standards",
-      "label": "Ieee P2733 Standards"
-    },
-    {
-      "slug": "ieee7000-standard",
-      "label": "Ieee7000 Standard"
     },
     {
       "slug": "image-processing-software",
@@ -1169,10 +1157,6 @@
       "label": "Mesh Routing Software"
     },
     {
-      "slug": "meta-platforms",
-      "label": "Meta Platforms"
-    },
-    {
       "slug": "metadata-registry",
       "label": "Metadata Registry"
     },
@@ -1271,10 +1255,6 @@
     {
       "slug": "npc-interaction",
       "label": "NPC Interaction"
-    },
-    {
-      "slug": "nvidia-omniverse",
-      "label": "NVIDIA Omniverse"
     },
     {
       "slug": "namespace-declarations",

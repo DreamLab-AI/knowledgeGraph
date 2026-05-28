@@ -109,10 +109,6 @@
       "label": "Bitcoin Value Proposition"
     },
     {
-      "slug": "bitcoin",
-      "label": "Bitcoin"
-    },
-    {
       "slug": "block-header",
       "label": "Block Header"
     },
@@ -349,10 +345,6 @@
       "label": "ESG Reporting"
     },
     {
-      "slug": "eu-mi-ca-regulation",
-      "label": "EU MiCA Regulation"
-    },
-    {
       "slug": "economic-mechanism",
       "label": "Economic Mechanism"
     },
@@ -367,10 +359,6 @@
     {
       "slug": "enterprise-token-standards",
       "label": "Enterprise Token Standards"
-    },
-    {
-      "slug": "ethereum",
-      "label": "Ethereum"
     },
     {
       "slug": "ethical-sourcing",
@@ -477,10 +465,6 @@
       "label": "Mempool"
     },
     {
-      "slug": "micro-strategy",
-      "label": "MicroStrategy"
-    },
-    {
       "slug": "model-context-protocol",
       "label": "Model Context Protocol"
     },
@@ -523,10 +507,6 @@
     {
       "slug": "opcodes",
       "label": "Opcodes"
-    },
-    {
-      "slug": "orphan-block",
-      "label": "Orphan Block"
     },
     {
       "slug": "output",

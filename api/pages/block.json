@@ -85,20 +85,12 @@
       "label": "Bitcoin Mining"
     },
     {
-      "slug": "bitcoin",
-      "label": "Bitcoin"
-    },
-    {
       "slug": "blockchain-entity",
       "label": "Blockchain Entity"
     },
     {
       "slug": "blockchain",
       "label": "Blockchain"
-    },
-    {
-      "slug": "logseq",
-      "label": "Logseq"
     },
     {
       "slug": "non-genesis-block",

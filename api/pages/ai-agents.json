@@ -44,10 +44,6 @@
       "label": "Call Centres"
     },
     {
-      "slug": "chat-gpt",
-      "label": "ChatGPT"
-    },
-    {
       "slug": "lightning-and-similar-l2",
       "label": "Lightning and Similar L2"
     },
@@ -58,10 +54,6 @@
     {
       "slug": "lightning-and-similar-l2",
       "label": "Lightning and Similar L2"
-    },
-    {
-      "slug": "llama-3",
-      "label": "Llama 3"
     },
     {
       "slug": "taproot-assets",

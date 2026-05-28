@@ -681,10 +681,6 @@
       "label": "CLI Multi-Agent Systems"
     },
     {
-      "slug": "chat-gpt",
-      "label": "ChatGPT"
-    },
-    {
       "slug": "computer-use-and-browser-agents",
       "label": "Computer Use and Browser Agents"
     },
@@ -701,24 +697,12 @@
       "label": "GPTs and Custom Assistants"
     },
     {
-      "slug": "grok",
-      "label": "Grok"
-    },
-    {
       "slug": "image-generation",
       "label": "Image Generation"
     },
     {
       "slug": "ms-phi-models",
       "label": "MS Phi models"
-    },
-    {
-      "slug": "microsoft-copilot",
-      "label": "Microsoft Copilot"
-    },
-    {
-      "slug": "mistral-and-mixtral",
-      "label": "Mistral and Mixtral"
     },
     {
       "slug": "model-control-protocols-like-mcp",

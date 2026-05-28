@@ -589,10 +589,6 @@
   ],
   "backlinks": [
     {
-      "slug": "midjourney",
-      "label": "Midjourney"
-    },
-    {
       "slug": "model-training",
       "label": "Model Training"
     },
@@ -603,14 +599,6 @@
     {
       "slug": "sampling",
       "label": "Sampling"
-    },
-    {
-      "slug": "silo-ai",
-      "label": "Silo AI"
-    },
-    {
-      "slug": "stable-diffusion",
-      "label": "Stable Diffusion"
     },
     {
       "slug": "text-generation",

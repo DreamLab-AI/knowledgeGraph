@@ -68,10 +68,6 @@
       "label": "Sensor Fusion"
     },
     {
-      "slug": "stable-diffusion",
-      "label": "Stable Diffusion"
-    },
-    {
       "slug": "training-data",
       "label": "Training Data"
     }

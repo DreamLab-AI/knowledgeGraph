@@ -32,28 +32,12 @@
   "wikilinks": [],
   "backlinks": [
     {
-      "slug": "comfy-ui",
-      "label": "ComfyUI"
-    },
-    {
-      "slug": "dall-e",
-      "label": "DALL\u00b7E"
-    },
-    {
-      "slug": "flux-1",
-      "label": "Flux.1"
-    },
-    {
       "slug": "fooocus",
       "label": "Fooocus"
     },
     {
       "slug": "inpainting",
       "label": "Inpainting"
-    },
-    {
-      "slug": "stable-diffusion",
-      "label": "Stable Diffusion"
     }
   ]
 }

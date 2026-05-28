@@ -709,20 +709,12 @@
       "label": "Advice for developing GenAI"
     },
     {
-      "slug": "animate-diff",
-      "label": "AnimateDiff"
-    },
-    {
       "slug": "artificial-intelligence",
       "label": "Artificial Intelligence"
     },
     {
       "slug": "automated-podcasting",
       "label": "Automated Podcasting"
-    },
-    {
-      "slug": "blender",
-      "label": "Blender"
     },
     {
       "slug": "comfy-ui-for-fashion-and-brands",
@@ -737,20 +729,12 @@
       "label": "Face Swap"
     },
     {
-      "slug": "google",
-      "label": "Google"
-    },
-    {
       "slug": "image-generation",
       "label": "Image Generation"
     },
     {
       "slug": "micropayments",
       "label": "Micropayments"
-    },
-    {
-      "slug": "midjourney",
-      "label": "Midjourney"
     },
     {
       "slug": "music-and-audio",
@@ -795,10 +779,6 @@
     {
       "slug": "sensor-fusion",
       "label": "Sensor Fusion"
-    },
-    {
-      "slug": "stable-diffusion",
-      "label": "Stable Diffusion"
     },
     {
       "slug": "text-summarisation",

@@ -1381,20 +1381,8 @@
   ],
   "backlinks": [
     {
-      "slug": "google",
-      "label": "Google"
-    },
-    {
-      "slug": "microsoft-copilot",
-      "label": "Microsoft Copilot"
-    },
-    {
       "slug": "proprietary-large-language-models",
       "label": "Proprietary Large Language Models"
-    },
-    {
-      "slug": "silo-ai",
-      "label": "Silo AI"
     },
     {
       "slug": "trust-and-safety",

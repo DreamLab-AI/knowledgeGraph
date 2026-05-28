@@ -44,20 +44,8 @@
       "label": "comfy-ui-for-fashion-and-brands"
     },
     {
-      "slug": "hunyuan-video",
-      "label": "Hunyuan Video"
-    },
-    {
-      "slug": "mistral-and-mixtral",
-      "label": "Mistral and Mixtral"
-    },
-    {
       "slug": "open-generative-ai-tools",
       "label": "Open Generative AI tools"
-    },
-    {
-      "slug": "stable-diffusion-training",
-      "label": "Stable Diffusion Training"
     }
   ]
 }

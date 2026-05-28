@@ -43,10 +43,5 @@
       "label": "Model"
     }
   ],
-  "backlinks": [
-    {
-      "slug": "foundation-models",
-      "label": "Foundation Models"
-    }
-  ]
+  "backlinks": []
 }

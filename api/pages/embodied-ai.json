@@ -66,10 +66,6 @@
     {
       "slug": "mobile-robot-platform",
       "label": "Mobile Robot Platform"
-    },
-    {
-      "slug": "nvidia-omniverse",
-      "label": "NVIDIA Omniverse"
     }
   ]
 }

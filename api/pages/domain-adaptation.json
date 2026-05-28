@@ -48,10 +48,6 @@
       "label": "Real-time Translation"
     },
     {
-      "slug": "stable-diffusion-training",
-      "label": "Stable Diffusion Training"
-    },
-    {
       "slug": "telecollaboration-and-telepresence",
       "label": "Telecollaboration and Telepresence"
     }

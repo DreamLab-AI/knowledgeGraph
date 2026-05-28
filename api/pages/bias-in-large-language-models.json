@@ -733,20 +733,12 @@
       "label": "Jailbreaking"
     },
     {
-      "slug": "llama-3",
-      "label": "Llama 3"
-    },
-    {
       "slug": "ms-phi-models",
       "label": "MS Phi models"
     },
     {
       "slug": "model-training",
       "label": "Model Training"
-    },
-    {
-      "slug": "norbert-wiener",
-      "label": "Norbert Wiener"
     },
     {
       "slug": "open-generative-ai-tools",
@@ -771,10 +763,6 @@
     {
       "slug": "safety-and-alignment",
       "label": "Safety and alignment"
-    },
-    {
-      "slug": "silo-ai",
-      "label": "Silo AI"
     },
     {
       "slug": "training-data",

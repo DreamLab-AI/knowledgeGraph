@@ -40,10 +40,6 @@
       "label": "Scene Capture and Reconstruction"
     },
     {
-      "slug": "unreal-engine",
-      "label": "Unreal Engine"
-    },
-    {
       "slug": "gl-tf-3-d-file-format",
       "label": "glTF (3D File Format)"
     }

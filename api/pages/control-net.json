@@ -40,10 +40,6 @@
       "label": "AI Video"
     },
     {
-      "slug": "animate-diff",
-      "label": "AnimateDiff"
-    },
-    {
       "slug": "comfy-ui-client",
       "label": "ComfyUI Client"
     },
@@ -56,10 +52,6 @@
       "label": "comfy-ui-for-fashion-and-brands"
     },
     {
-      "slug": "comfy-ui",
-      "label": "ComfyUI"
-    },
-    {
       "slug": "diffusion-models",
       "label": "Diffusion Models"
     },
@@ -68,16 +60,8 @@
       "label": "Face Swap"
     },
     {
-      "slug": "flux-1",
-      "label": "Flux.1"
-    },
-    {
       "slug": "fooocus",
       "label": "Fooocus"
-    },
-    {
-      "slug": "ip-adapter",
-      "label": "IP-Adapter"
     },
     {
       "slug": "inpainting",

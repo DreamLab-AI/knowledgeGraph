@@ -165,10 +165,6 @@
   ],
   "backlinks": [
     {
-      "slug": "a-star-algorithm",
-      "label": "A-Star Algorithm"
-    },
-    {
       "slug": "ai-companies",
       "label": "AI Companies"
     },
@@ -249,14 +245,6 @@
       "label": "Agents"
     },
     {
-      "slug": "animate-diff",
-      "label": "AnimateDiff"
-    },
-    {
-      "slug": "apple",
-      "label": "Apple"
-    },
-    {
       "slug": "artificial-general-intelligence",
       "label": "Artificial General Intelligence"
     },
@@ -301,10 +289,6 @@
       "label": "Bitcoin Technical Overview"
     },
     {
-      "slug": "blender",
-      "label": "Blender"
-    },
-    {
       "slug": "blockchain-as-a-service",
       "label": "Blockchain As A Service"
     },
@@ -345,10 +329,6 @@
       "label": "Cashu"
     },
     {
-      "slug": "chat-gpt",
-      "label": "ChatGPT"
-    },
-    {
       "slug": "chatbots",
       "label": "Chatbots"
     },
@@ -383,10 +363,6 @@
     {
       "slug": "comfy-ui-for-fashion-and-brands",
       "label": "comfy-ui-for-fashion-and-brands"
-    },
-    {
-      "slug": "comfy-ui",
-      "label": "ComfyUI"
     },
     {
       "slug": "compliance-monitoring",
@@ -459,10 +435,6 @@
     {
       "slug": "cyber-security-and-cryptography",
       "label": "Cyber Security and Cryptography"
-    },
-    {
-      "slug": "dall-e",
-      "label": "DALL\u00b7E"
     },
     {
       "slug": "dao-analytics",
@@ -709,16 +681,8 @@
       "label": "Fault Tolerance"
     },
     {
-      "slug": "flux-1",
-      "label": "Flux.1"
-    },
-    {
       "slug": "fooocus",
       "label": "Fooocus"
-    },
-    {
-      "slug": "foundation-models",
-      "label": "Foundation Models"
     },
     {
       "slug": "function-calling",
@@ -745,14 +709,6 @@
       "label": "Glossary Index"
     },
     {
-      "slug": "google-deep-mind",
-      "label": "Google DeepMind"
-    },
-    {
-      "slug": "google",
-      "label": "Google"
-    },
-    {
       "slug": "governance-structure",
       "label": "Governance Structure"
     },
@@ -771,14 +727,6 @@
     {
       "slug": "green-blockchain-initiatives",
       "label": "Green Blockchain Initiatives"
-    },
-    {
-      "slug": "grok",
-      "label": "Grok"
-    },
-    {
-      "slug": "groq",
-      "label": "Groq"
     },
     {
       "slug": "ground-robot",
@@ -805,20 +753,12 @@
       "label": "Home Assistant"
     },
     {
-      "slug": "hunyuan-video",
-      "label": "Hunyuan Video"
-    },
-    {
       "slug": "hyper-personalisation",
       "label": "Hyper personalisation"
     },
     {
       "slug": "hyperledger-iroha",
       "label": "Hyperledger Iroha"
-    },
-    {
-      "slug": "ip-adapter",
-      "label": "IP-Adapter"
     },
     {
       "slug": "identity-management-system",
@@ -897,20 +837,12 @@
       "label": "Liquidity Provision"
     },
     {
-      "slug": "llama-3",
-      "label": "Llama 3"
-    },
-    {
       "slug": "lo-ra-do-ra-etc",
       "label": "LoRA DoRA etc"
     },
     {
       "slug": "logistics-optimization",
       "label": "Logistics Optimization"
-    },
-    {
-      "slug": "logseq",
-      "label": "Logseq"
     },
     {
       "slug": "ms-phi-models",
@@ -927,14 +859,6 @@
     {
       "slug": "meeting-recording",
       "label": "Meeting Recording"
-    },
-    {
-      "slug": "meta-ar-engine",
-      "label": "Meta AR engine"
-    },
-    {
-      "slug": "meta-platforms",
-      "label": "Meta Platforms"
     },
     {
       "slug": "metadata-management",
@@ -959,18 +883,6 @@
     {
       "slug": "metaverse",
       "label": "Metaverse"
-    },
-    {
-      "slug": "microsoft-copilot",
-      "label": "Microsoft Copilot"
-    },
-    {
-      "slug": "midjourney",
-      "label": "Midjourney"
-    },
-    {
-      "slug": "mistral-and-mixtral",
-      "label": "Mistral and Mixtral"
     },
     {
       "slug": "mixed-reality",
@@ -1001,10 +913,6 @@
       "label": "Music and Audio"
     },
     {
-      "slug": "nvidia-omniverse",
-      "label": "NVIDIA Omniverse"
-    },
-    {
       "slug": "narrative-design-ontology",
       "label": "Narrative Design Ontology"
     },
@@ -1019,10 +927,6 @@
     {
       "slug": "on-chain-voting",
       "label": "On Chain Voting"
-    },
-    {
-      "slug": "open-ai-whisper",
-      "label": "Open AI Whisper"
     },
     {
       "slug": "open-generative-ai-tools",
@@ -1047,10 +951,6 @@
     {
       "slug": "physical-layer",
       "label": "Physical Layer"
-    },
-    {
-      "slug": "pika",
-      "label": "Pika"
     },
     {
       "slug": "play-to-earn-p2-e",
@@ -1185,10 +1085,6 @@
       "label": "Semantic Search"
     },
     {
-      "slug": "silo-ai",
-      "label": "Silo AI"
-    },
-    {
       "slug": "smart-contract",
       "label": "Smart Contract"
     },
@@ -1207,14 +1103,6 @@
     {
       "slug": "stable-coins",
       "label": "Stable Coins"
-    },
-    {
-      "slug": "stable-diffusion-training",
-      "label": "Stable Diffusion Training"
-    },
-    {
-      "slug": "stable-diffusion",
-      "label": "Stable Diffusion"
     },
     {
       "slug": "state-machine",
@@ -1261,10 +1149,6 @@
       "label": "Travel Rule"
     },
     {
-      "slug": "unreal-engine",
-      "label": "Unreal Engine"
-    },
-    {
       "slug": "verifiable-credentials",
       "label": "Verifiable Credentials"
     },
@@ -1299,10 +1183,6 @@
     {
       "slug": "virtual-world",
       "label": "Virtual World"
-    },
-    {
-      "slug": "vision-pro",
-      "label": "Vision Pro"
     },
     {
       "slug": "web3",

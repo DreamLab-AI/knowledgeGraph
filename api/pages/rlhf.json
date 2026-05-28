@@ -36,16 +36,8 @@
       "label": "AI companions"
     },
     {
-      "slug": "anthropic-claude",
-      "label": "Anthropic Claude"
-    },
-    {
       "slug": "artificial-general-intelligence",
       "label": "Artificial General Intelligence"
-    },
-    {
-      "slug": "chat-gpt",
-      "label": "ChatGPT"
     },
     {
       "slug": "direct-preference-optimization",
@@ -56,16 +48,8 @@
       "label": "Feedback Loop"
     },
     {
-      "slug": "foundation-models",
-      "label": "Foundation Models"
-    },
-    {
       "slug": "function-calling",
       "label": "Function Calling"
-    },
-    {
-      "slug": "grok",
-      "label": "Grok"
     },
     {
       "slug": "history-and-path-to-agi",
@@ -78,14 +62,6 @@
     {
       "slug": "jailbreaking",
       "label": "Jailbreaking"
-    },
-    {
-      "slug": "meta-platforms",
-      "label": "Meta Platforms"
-    },
-    {
-      "slug": "mistral-and-mixtral",
-      "label": "Mistral and Mixtral"
     },
     {
       "slug": "model-training",

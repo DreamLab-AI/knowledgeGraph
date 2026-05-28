@@ -40,10 +40,6 @@
       "label": "AI Video"
     },
     {
-      "slug": "animate-diff",
-      "label": "AnimateDiff"
-    },
-    {
       "slug": "attention",
       "label": "Attention"
     },
@@ -54,10 +50,6 @@
     {
       "slug": "control-net-and-similar-spatial-conditioning-systems",
       "label": "ControlNet and Similar Spatial Conditioning Systems"
-    },
-    {
-      "slug": "dall-e",
-      "label": "DALL\u00b7E"
     },
     {
       "slug": "deep-learning",
@@ -80,14 +72,6 @@
       "label": "Face Swap"
     },
     {
-      "slug": "flux-1",
-      "label": "Flux.1"
-    },
-    {
-      "slug": "foundation-models",
-      "label": "Foundation Models"
-    },
-    {
       "slug": "gaussian-splatting",
       "label": "Gaussian Splatting"
     },
@@ -104,20 +88,8 @@
       "label": "Graphics API"
     },
     {
-      "slug": "grok",
-      "label": "Grok"
-    },
-    {
       "slug": "history-and-path-to-agi",
       "label": "History and Path to AGI"
-    },
-    {
-      "slug": "hunyuan-video",
-      "label": "Hunyuan Video"
-    },
-    {
-      "slug": "ip-adapter",
-      "label": "IP-Adapter"
     },
     {
       "slug": "image-segmentation",
@@ -144,10 +116,6 @@
       "label": "Light field"
     },
     {
-      "slug": "meta-ar-engine",
-      "label": "Meta AR engine"
-    },
-    {
       "slug": "model-optimisation-and-performance",
       "label": "Model Optimisation and Performance"
     },
@@ -158,14 +126,6 @@
     {
       "slug": "neural-3-d-generation",
       "label": "Neural 3D Generation"
-    },
-    {
-      "slug": "open-ai-whisper",
-      "label": "Open AI Whisper"
-    },
-    {
-      "slug": "pika",
-      "label": "Pika"
     },
     {
       "slug": "procedural-and-hybrid-4-d",
@@ -190,14 +150,6 @@
     {
       "slug": "scene-capture-and-reconstruction",
       "label": "Scene Capture and Reconstruction"
-    },
-    {
-      "slug": "stable-diffusion-training",
-      "label": "Stable Diffusion Training"
-    },
-    {
-      "slug": "stable-diffusion",
-      "label": "Stable Diffusion"
     },
     {
       "slug": "transformers",

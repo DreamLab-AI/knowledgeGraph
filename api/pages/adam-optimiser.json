@@ -40,10 +40,6 @@
       "label": "Direct Preference Optimization"
     },
     {
-      "slug": "foundation-models",
-      "label": "Foundation Models"
-    },
-    {
       "slug": "gaussian-splatting",
       "label": "Gaussian Splatting"
     },
@@ -52,16 +48,8 @@
       "label": "Generative Adversarial Networks"
     },
     {
-      "slug": "grok",
-      "label": "Grok"
-    },
-    {
       "slug": "learning-algorithm",
       "label": "Learning Algorithm"
-    },
-    {
-      "slug": "pika",
-      "label": "Pika"
     },
     {
       "slug": "fast-ai",

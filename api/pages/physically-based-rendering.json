@@ -32,10 +32,6 @@
   "wikilinks": [],
   "backlinks": [
     {
-      "slug": "blender",
-      "label": "Blender"
-    },
-    {
       "slug": "gaussian-splatting",
       "label": "Gaussian Splatting"
     },

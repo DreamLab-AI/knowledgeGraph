@@ -56,20 +56,12 @@
       "label": "CLI Multi-Agent Systems"
     },
     {
-      "slug": "chat-gpt",
-      "label": "ChatGPT"
-    },
-    {
       "slug": "context-engineering",
       "label": "Context Engineering"
     },
     {
       "slug": "embodied-minds",
       "label": "Embodied Minds"
-    },
-    {
-      "slug": "foundation-models",
-      "label": "Foundation Models"
     },
     {
       "slug": "function-calling",
