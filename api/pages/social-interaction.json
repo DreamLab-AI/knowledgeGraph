@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:social-interaction",
+  "title": "Social Interaction",
+  "slug": "social-interaction",
+  "public": true,
+  "classIri": "urn:ngm:class:social-interaction",
+  "domain": "ai",
+  "definition": "Social Interaction refers to the dynamic process by which two or more agents \u2014 human or artificial \u2014 mutually influence one another's behaviour, cognition, and emotional states through communicative acts, physical co-presence, or mediated channels. It is the fundamental unit of social life, encompassing verbal conversation, nonverbal signals, turn-taking, joint attention, empathic responsiveness, and negotiation of shared meaning. In the context of digital and AI systems, social interaction extends to human-computer interfaces, social robotics, virtual environments, and AI-mediated communication platforms, where the design of interaction modalities profoundly shapes social outcomes and wellbeing.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:interaction-domain",
+      "label": "Interaction Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "id": "urn:ngm:class:emotion-aware-interaction",
+        "label": "Emotion Aware Interaction"
+      },
+      {
+        "id": "urn:ngm:class:social-network-graph",
+        "label": "Social Network Graph"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:proxemics",
+        "label": "Proxemics"
+      },
+      {
+        "id": "urn:ngm:class:natural-interaction",
+        "label": "Natural Interaction"
+      },
+      {
+        "id": "urn:ngm:class:emotional-intelligence",
+        "label": "Emotional Intelligence"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:social-presence",
+        "label": "Social Presence"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "avatar-system",
+      "label": "Avatar System"
+    },
+    {
+      "slug": "awareness",
+      "label": "Awareness"
+    },
+    {
+      "slug": "digital-citizenship",
+      "label": "Digital Citizenship"
+    },
+    {
+      "slug": "virtual-world",
+      "label": "Virtual World"
+    }
+  ]
+}

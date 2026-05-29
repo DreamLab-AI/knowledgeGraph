@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:hash-time-locked-contract",
+  "title": "Hash Time-Locked Contract",
+  "slug": "hash-time-locked-contract",
+  "public": true,
+  "classIri": "urn:ngm:class:hash-time-locked-contract",
+  "domain": "blockchain",
+  "definition": "A Hash Time-Locked Contract (HTLC) is a type of smart contract that conditionally transfers funds to a recipient only if they can present a cryptographic preimage satisfying a specified hash condition within a defined time window; if the condition is unmet before the timeout, the funds revert to the sender. HTLCs are foundational to trustless cross-chain atomic swaps and payment channel networks such as the Lightning Network, enabling conditional payment routing without requiring both parties to trust each other or a custodial intermediary. The hashlock ensures atomicity\u2014either both legs of a swap complete or neither does\u2014whilst the timelock enforces a bounded settlement window. HTLCs are a primitive from which more complex decentralised finance protocols are constructed.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:smart-contract",
+      "label": "Smart Contract"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:atomic-swap",
+        "label": "Atomic Swap"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-interoperability",
+        "label": "Cross-Chain Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:micropayments",
+        "label": "Micropayments"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      },
+      {
+        "id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      },
+      {
+        "id": "urn:ngm:class:de-fi",
+        "label": "DeFi"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "atomic-swap",
+      "label": "Atomic Swap"
+    },
+    {
+      "slug": "blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    },
+    {
+      "slug": "cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    },
+    {
+      "slug": "lightning-and-similar-l2",
+      "label": "Lightning and Similar L2"
+    }
+  ]
+}

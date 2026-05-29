@@ -1,0 +1,91 @@
+{
+  "id": "urn:visionflow:page:uk-online-safety-act",
+  "title": "UK Online Safety Act",
+  "slug": "uk-online-safety-act",
+  "public": true,
+  "classIri": "urn:ngm:class:uk-online-safety-act",
+  "domain": "governance",
+  "definition": "The UK Online Safety Act 2023 is landmark legislation that places statutory duties of care on platforms hosting user-generated content and search services, requiring them to identify, assess, and mitigate risks of illegal content and content harmful to children. It establishes Ofcom as the UK's internet regulator with powers to issue codes of practice, conduct audits, and levy fines of up to ten per cent of global annual turnover for non-compliance. The Act introduces mandatory age verification obligations, transparency reporting requirements, and provisions \u2014 controversially \u2014 concerning encrypted communications and client-side scanning.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-regulation",
+      "label": "Digital Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:age-verification",
+        "label": "Age Verification"
+      },
+      {
+        "id": "urn:ngm:class:trust-and-safety",
+        "label": "Trust and Safety"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:content-moderation-standards",
+        "label": "Content Moderation Standards"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-reporting",
+        "label": "Regulatory Reporting"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:user-safety",
+        "label": "User Safety"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:online-safety-act-2023",
+        "label": "Online Safety Act 2023"
+      },
+      {
+        "id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      },
+      {
+        "id": "urn:ngm:class:digital-services-act",
+        "label": "Digital Services Act"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-companions",
+      "label": "AI companions"
+    },
+    {
+      "slug": "death-of-the-internet",
+      "label": "Death of the Internet"
+    },
+    {
+      "slug": "deepfakes-and-fraudulent-content",
+      "label": "Deepfakes and fraudulent content"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    },
+    {
+      "slug": "inpainting",
+      "label": "Inpainting"
+    }
+  ]
+}

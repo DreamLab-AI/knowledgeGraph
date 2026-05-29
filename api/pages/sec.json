@@ -1,0 +1,120 @@
+{
+  "id": "urn:visionflow:page:sec",
+  "title": "SEC",
+  "slug": "sec",
+  "public": true,
+  "classIri": "urn:ngm:class:sec",
+  "domain": "governance",
+  "definition": "The Securities and Exchange Commission (SEC) is the principal US federal regulatory agency responsible for enforcing federal securities laws, overseeing securities markets, and protecting investors. Established by the Securities Exchange Act of 1934 in the wake of the 1929 stock market crash, the SEC requires public companies to disclose material financial information and polices against fraud, insider trading, and market manipulation. In the digital asset domain, the SEC has asserted jurisdiction over many cryptocurrencies and token offerings on the grounds that they constitute investment contracts under the Howey Test, leading to high-profile enforcement actions against exchanges, issuers, and DeFi protocols. The SEC's regulatory posture towards crypto assets is a defining factor in the shape of the US digital asset industry.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:financial-regulation",
+      "label": "Financial Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:regulatory-reporting",
+        "label": "Regulatory Reporting"
+      },
+      {
+        "id": "urn:ngm:class:compliance-audit-trail",
+        "label": "Compliance Audit Trail"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:us-regulatory-framework",
+        "label": "US Regulatory Framework"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:enforcement-mechanism",
+        "label": "Enforcement Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-technology",
+        "label": "Regulatory Technology"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:regulatory-standards",
+        "label": "Regulatory Standards"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-risks",
+        "label": "Digital Asset Risks"
+      },
+      {
+        "id": "urn:ngm:class:mi-ca-regulation",
+        "label": "MiCA Regulation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "compliance-control",
+      "label": "Compliance Control"
+    },
+    {
+      "slug": "digital-asset-risks",
+      "label": "Digital Asset Risks"
+    },
+    {
+      "slug": "esg-reporting",
+      "label": "ESG Reporting"
+    },
+    {
+      "slug": "regulatory-reporting",
+      "label": "Regulatory Reporting"
+    },
+    {
+      "slug": "securities-regulation",
+      "label": "Securities Regulation"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    },
+    {
+      "slug": "us-regulatory-framework",
+      "label": "US Regulatory Framework"
+    },
+    {
+      "slug": "us-regulatory-framework",
+      "label": "US Regulatory Framework"
+    },
+    {
+      "slug": "virtual-securities-offering-vso",
+      "label": "Virtual Securities Offering (VSO)"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

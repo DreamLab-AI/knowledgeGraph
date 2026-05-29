@@ -446,7 +446,7 @@ public:: true
         "label": "Animation Controller"
       },
       {
-        "@id": "urn:ngm:class:behaviour-trees",
+        "@id": "urn:ngm:class:behaviour-tree",
         "label": "Behaviour Trees"
       },
       {

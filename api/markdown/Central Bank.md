@@ -1,0 +1,62 @@
+public:: true
+
+# Central Bank
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:central-bank",
+  "@type": "Page",
+  "vc:slug": "central-bank",
+  "title": "Central Bank",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 2
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:central-bank",
+  "@type": "Class",
+  "label": "Central Bank",
+  "definition": "A central bank is a public financial institution responsible for managing a nation's or currency union's money supply, setting benchmark interest rates, and acting as a lender of last resort to commercial banks. Central banks implement monetary policy to pursue macroeconomic objectives such as price stability, full employment, and financial stability. They typically hold foreign exchange reserves, supervise the broader banking system, and increasingly oversee or issue digital payment infrastructures including Central Bank Digital Currencies.",
+  "domain": "finance",
+  "maturity": "established",
+  "subClassOf": [
+    {"@id": "urn:ngm:class:monetary-system", "label": "Monetary System"}
+  ],
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:monetary-policy-implementation", "label": "Monetary Policy Implementation"},
+      {"@id": "urn:ngm:class:financial-stability", "label": "Financial Stability"},
+      {"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:central-bank-digital-currency", "label": "Central Bank Digital Currency"},
+      {"@id": "urn:ngm:class:payment-system", "label": "Payment System"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:monetary-sovereignty", "label": "Monetary Sovereignty"},
+      {"@id": "urn:ngm:class:inflation-control", "label": "Inflation Control"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:digital-currency", "label": "Digital Currency"}
+    ]
+  },
+  "quality": 0.8
+}
+```
+
+- ### Definition
+  - A [[Central Bank]] is a public financial institution that manages a nation's monetary base, sets benchmark interest rates, acts as a lender of last resort, and increasingly develops [[Central Bank Digital Currency]] infrastructure to modernise the national [[Payment System]].
+- ### Relationships
+  - Central banks sit within the broader [[Monetary System]] and are the primary instruments through which governments exercise [[Monetary Sovereignty]]. Through [[Monetary Policy Implementation]] they regulate [[Inflation Control]] and pursue [[Financial Stability]], working alongside [[Financial Regulation]] frameworks. Their growing interest in [[Central Bank Digital Currency]] and [[Digital Currency]] connects them to discussions of [[Digital Payment System]] design and [[Stablecoin Regulation]].
+- ### Content
+  - Central banks occupy a unique constitutional position in modern economies: they are simultaneously public institutions mandated to serve the general welfare and operationally independent bodies insulated from short-term political pressure. The Bank of England, the European Central Bank, and the US Federal Reserve are archetypal examples, each wielding tools such as open-market operations, reserve requirements, and discount-window lending to steer macroeconomic outcomes.
+
+  - The principal instrument of central banking is [[Monetary Policy Implementation]]: the process by which a bank adjusts the base rate of interest to influence borrowing, spending, and investment across the economy. Tightening policy by raising rates curbs [[Inflation]] at the cost of slower growth; loosening policy stimulates activity but risks overheating. Maintaining this balance is the central operational challenge for every monetary authority.
+
+  - Beyond price stability, central banks serve as systemic risk managers for the financial sector. Their supervisory and regulatory powers — coordinated internationally through bodies such as the Bank for International Settlements — maintain [[Financial Stability]] by setting capital adequacy standards, conducting stress tests, and providing emergency liquidity to solvent but illiquid institutions. This lender-of-last-resort function prevents bank runs from cascading into broader economic crises.
+
+  - The emergence of cryptocurrencies, [[Stablecoin]] instruments, and private digital payment networks has pushed central banks to explore [[Central Bank Digital Currency]] as a means of preserving monetary control and ensuring that [[Payment System]] infrastructure remains accountable to public mandates. CBDC research programmes at major central banks reflect a strategic effort to combine the programmability of [[Digital Currency]] with the trust and stability that only state-backed institutions can provide.

@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:financial-privacy",
+  "title": "Financial Privacy",
+  "slug": "financial-privacy",
+  "public": true,
+  "classIri": "urn:ngm:class:financial-privacy",
+  "domain": "finance",
+  "definition": "Financial Privacy refers to the rights, mechanisms, and technical controls that protect individuals and organisations from unwanted disclosure of their financial transactions, holdings, and economic behaviour. It encompasses both legal frameworks\u2014such as bank secrecy laws and GDPR financial data provisions\u2014and cryptographic techniques such as zero-knowledge proofs, stealth addresses, and confidential transactions. The tension between financial privacy and regulatory transparency requirements (AML, KYC) is a defining challenge of the digital payments era, particularly as public blockchain ledgers make transaction histories permanently visible. Financial privacy is increasingly recognised as a precondition for personal autonomy, political freedom, and protection against targeted financial censorship.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:blockchain-analytics",
+        "label": "Blockchain Analytics"
+      },
+      {
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:zero-knowledge",
+        "label": "Zero Knowledge"
+      },
+      {
+        "id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      },
+      {
+        "id": "urn:ngm:class:confidential-computing",
+        "label": "Confidential Computing"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    },
+    {
+      "slug": "cashu",
+      "label": "Cashu"
+    },
+    {
+      "slug": "privacy-preserving-blockchain",
+      "label": "Privacy Preserving Blockchain"
+    },
+    {
+      "slug": "ecash",
+      "label": "ecash"
+    }
+  ]
+}

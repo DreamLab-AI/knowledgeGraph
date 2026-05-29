@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:bitcoin-core",
+  "title": "Bitcoin Core",
+  "slug": "bitcoin-core",
+  "public": true,
+  "classIri": "urn:ngm:class:bitcoin-core",
+  "domain": "blockchain",
+  "definition": "Bitcoin Core is the reference implementation of the Bitcoin protocol, providing the canonical software stack that full nodes run to validate transactions, enforce consensus rules, and maintain a complete copy of the blockchain. First released by Satoshi Nakamoto in 2009 and since maintained by an open-source community, it defines the authoritative behaviour of the Bitcoin network through its codebase. Bitcoin Core includes a wallet, a peer-to-peer networking layer, a scripting engine, and the mining interface used to produce new blocks. Consensus-critical changes are introduced through Bitcoin Improvement Proposals, ensuring backward compatibility and broad community review before deployment.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:nakamoto-consensus",
+        "label": "Nakamoto Consensus"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:bc-protocol-and-consensus",
+        "label": "Protocol and Consensus"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bitcoin-network",
+        "label": "Bitcoin Network"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-mining",
+        "label": "Bitcoin Mining"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-improvement-proposals",
+        "label": "Bitcoin Improvement Proposals"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-centralisation-risks",
+      "label": "Bitcoin Centralisation Risks"
+    },
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "bitcoin-technical-overview",
+      "label": "Bitcoin Technical Overview"
+    },
+    {
+      "slug": "testnet",
+      "label": "Testnet"
+    },
+    {
+      "slug": "wallet",
+      "label": "Wallet"
+    }
+  ]
+}

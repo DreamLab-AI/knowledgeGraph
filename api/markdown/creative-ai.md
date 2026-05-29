@@ -1,0 +1,12 @@
+- ### Definition
+  - [[Creative AI]] is a branch of [[Generative AI]] encompassing systems that autonomously produce or co-create aesthetic artefacts—images, audio, text, and video—using [[Diffusion Model]] architectures, [[Generative Adversarial Network]] frameworks, and [[Large Language Models]].
+- ### Relationships
+  - [[Creative AI]] sits within the [[Generative AI]] class and employs tools such as [[Diffusion Model]], [[Generative Adversarial Network]], and [[Large Language Models]] as its technical substrate. It enables [[Image Generation]], [[Content Creation]], and [[Digital Content Creation]] workflows. The domain intersects with the wider [[Creative Media Domain]] and is analysed through [[Ai Art Categorization]] frameworks, while [[Creative Software]] products integrate these capabilities into professional toolchains.
+- ### Content
+  - Creative AI emerged from decades of generative modelling research—from early neural style transfer and variational autoencoders through the GAN revolution of the mid-2010s to the diffusion-model breakthroughs of the early 2020s. Models such as Stable Diffusion, DALL-E, and Midjourney brought photorealistic image synthesis to non-technical users, triggering a public debate about the nature of creativity and the livelihoods of illustrators and photographers.
+
+  - In professional workflows, Creative AI accelerates concept-art iteration, texture generation, music bed creation, and copywriting. Studios use AI tools to produce volumetric background elements, generate costume variations, or synthesise voiceover for rough cuts. Rather than replacing human creators entirely, many deployments operate in an augmentation mode where AI generates candidate outputs that human artists curate and refine.
+
+  - The intellectual-property landscape around Creative AI remains contested. Training datasets that include copyrighted works without licence have prompted litigation in multiple jurisdictions. Several regulatory frameworks—including the EU AI Act—require disclosure when AI-generated content is distributed to consumers, and some require provenance watermarking. These governance pressures are reshaping how model developers curate training data.
+
+  - Future directions include multimodal generative systems that simultaneously produce coherent image, audio, and narrative; real-time interactive creative AI embedded in game engines and virtual-reality authoring tools; and collaborative human–AI creative environments where the AI learns individual creative style and preferences over extended sessions.

@@ -1,0 +1,91 @@
+{
+  "id": "urn:visionflow:page:iso-9283",
+  "title": "ISO 9283",
+  "slug": "iso-9283",
+  "public": true,
+  "classIri": "urn:ngm:class:iso-9283",
+  "domain": "robotics",
+  "definition": "ISO 9283 is an international standard that defines performance criteria and test methods for manipulating industrial robots, specifying how to measure and report pose accuracy, pose repeatability, path accuracy, and path velocity characteristics under controlled conditions. The standard provides a common vocabulary and methodology enabling manufacturers, integrators, and end users to make meaningful, reproducible comparisons of robot performance across different systems and vendors. It covers both Cartesian-space and joint-space metrics and prescribes the environmental and loading conditions under which measurements are to be taken. ISO 9283 is maintained by ISO/TC 299 and is complemented by related standards covering safety, collaborative operation, and application-specific performance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robot-standard",
+      "label": "Robot Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:manipulator",
+        "label": "Manipulator"
+      },
+      {
+        "id": "urn:ngm:class:benchmarks",
+        "label": "Benchmarks"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:rb-0034-repeatability",
+        "label": "rb 0034 repeatability"
+      },
+      {
+        "id": "urn:ngm:class:rb-0035-accuracy",
+        "label": "rb 0035 accuracy"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:industrial-robot",
+        "label": "Industrial Robot"
+      },
+      {
+        "id": "urn:ngm:class:iso-10218",
+        "label": "ISO 10218"
+      },
+      {
+        "id": "urn:ngm:class:iso-ts-15066",
+        "label": "ISO TS 15066"
+      },
+      {
+        "id": "urn:ngm:class:performance-benchmarks",
+        "label": "Performance Benchmarks"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "industrial-robot",
+      "label": "Industrial Robot"
+    },
+    {
+      "slug": "mechanical-component",
+      "label": "Mechanical Component"
+    },
+    {
+      "slug": "robot-standard",
+      "label": "Robot Standard"
+    },
+    {
+      "slug": "robotics-platform",
+      "label": "Robotics Platform"
+    }
+  ]
+}

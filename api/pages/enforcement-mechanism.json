@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:enforcement-mechanism",
+  "title": "Enforcement Mechanism",
+  "slug": "enforcement-mechanism",
+  "public": true,
+  "classIri": "urn:ngm:class:enforcement-mechanism",
+  "domain": "governance",
+  "definition": "An enforcement mechanism is any technical, legal, or procedural instrument through which rules, policies, or contractual obligations are made to take effect and violations are detected and sanctioned. In digital systems, enforcement mechanisms range from smart contracts that execute conditions automatically to access control systems that block unauthorised actions. In regulatory contexts they include fines, licence revocations, and injunctions applied by supervisory authorities. Effective enforcement mechanisms are characterised by their ability to detect non-compliance, impose credible consequences, and do so at a cost proportionate to the harm prevented.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:compliance-control",
+      "label": "Compliance Control"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:sanctions-enforcement",
+        "label": "Sanctions Enforcement"
+      },
+      {
+        "id": "urn:ngm:class:legal-compliance",
+        "label": "Legal Compliance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:policy-enforcement-point",
+        "label": "Policy Enforcement Point"
+      },
+      {
+        "id": "urn:ngm:class:policy-engine",
+        "label": "Policy Engine"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:policy-enforcement",
+        "label": "Policy Enforcement"
+      },
+      {
+        "id": "urn:ngm:class:legal-framework",
+        "label": "Legal Framework"
+      },
+      {
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "digital-constitution",
+      "label": "Digital Constitution"
+    },
+    {
+      "slug": "digital-jurisdiction",
+      "label": "Digital Jurisdiction"
+    },
+    {
+      "slug": "governance-structure",
+      "label": "Governance Structure"
+    },
+    {
+      "slug": "securities-regulation",
+      "label": "Securities Regulation"
+    }
+  ]
+}

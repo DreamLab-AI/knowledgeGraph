@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:feature-matching",
+  "title": "Feature Matching",
+  "slug": "feature-matching",
+  "public": true,
+  "classIri": "urn:ngm:class:feature-matching",
+  "domain": "ai",
+  "definition": "Feature Matching is a computer vision technique that identifies and associates corresponding salient regions\u2014keypoints and their descriptors\u2014across two or more images or point clouds, enabling geometric relationships such as homographies, fundamental matrices, or rigid-body transformations to be estimated. Classical detectors such as SIFT, SURF, and ORB extract rotation- and scale-invariant descriptors; modern deep learning approaches learn matched embeddings end-to-end from training data. Feature matching is a foundational step in Structure-from-Motion, visual odometry, SLAM, and image-based localisation pipelines. The accuracy and efficiency of matching directly determine downstream reconstruction quality and real-time performance in robotics and augmented reality applications.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:structure-from-motion",
+        "label": "Structure-from-Motion"
+      },
+      {
+        "id": "urn:ngm:class:visual-odometry",
+        "label": "Visual Odometry"
+      },
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:depth-estimation",
+        "label": "Depth Estimation"
+      },
+      {
+        "id": "urn:ngm:class:stereo-camera",
+        "label": "Stereo Camera"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision-system",
+        "label": "Computer Vision System"
+      },
+      {
+        "id": "urn:ngm:class:depth-sensing",
+        "label": "Depth Sensing"
+      },
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "3-d-reconstruction",
+      "label": "3D Reconstruction"
+    },
+    {
+      "slug": "ar-registration",
+      "label": "AR Registration"
+    },
+    {
+      "slug": "depth-estimation",
+      "label": "Depth Estimation"
+    },
+    {
+      "slug": "scene-capture-and-reconstruction",
+      "label": "Scene Capture and Reconstruction"
+    }
+  ]
+}

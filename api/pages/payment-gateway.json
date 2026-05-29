@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:payment-gateway",
+  "title": "Payment Gateway",
+  "slug": "payment-gateway",
+  "public": true,
+  "classIri": "urn:ngm:class:payment-gateway",
+  "domain": "finance",
+  "definition": "A Payment Gateway is a technology service that authorises, processes, and routes financial transactions between buyers and merchants, acting as the intermediary between a merchant's point-of-sale or e-commerce system and the acquiring bank or payment network. It encrypts sensitive payment credentials, communicates with card networks and issuing banks to obtain authorisation, and returns the result to the merchant in real time. Modern payment gateways provide APIs, SDKs, fraud detection, currency conversion, and compliance tooling, and increasingly support cryptocurrency payments and programmable settlement rails alongside traditional card and bank transfer methods. Payment gateways are foundational infrastructure for e-commerce and digital commerce ecosystems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:payment-system",
+      "label": "Payment System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:micropayment",
+        "label": "Micropayment"
+      },
+      {
+        "id": "urn:ngm:class:payment-token",
+        "label": "Payment Token"
+      },
+      {
+        "id": "urn:ngm:class:x402-and-l402-payment-protocols",
+        "label": "x402 and l402 payment protocols"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-payment-system",
+        "label": "Digital Payment System"
+      },
+      {
+        "id": "urn:ngm:class:e-commerce",
+        "label": "E-Commerce"
+      },
+      {
+        "id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "creator-royalty-token",
+      "label": "Creator Royalty Token"
+    },
+    {
+      "slug": "digital-payment-system",
+      "label": "Digital Payment System"
+    },
+    {
+      "slug": "digital-rights-management-extended",
+      "label": "Digital Rights Management (Extended)"
+    },
+    {
+      "slug": "marketplace",
+      "label": "Marketplace"
+    },
+    {
+      "slug": "smart-royalties-ledger",
+      "label": "Smart Royalties Ledger"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

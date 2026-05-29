@@ -1,0 +1,96 @@
+{
+  "id": "urn:visionflow:page:behaviour-tree",
+  "title": "Behaviour Tree",
+  "slug": "behaviour-tree",
+  "public": true,
+  "classIri": "urn:ngm:class:behaviour-tree",
+  "domain": "ai",
+  "definition": "A Behaviour Tree (BT) is a hierarchical, directed acyclic graph structure used to model the decision-making logic of autonomous agents, non-player characters (NPCs), and robots. Internal nodes represent control-flow composites \u2014 Sequence, Selector, Parallel, and Decorator \u2014 while leaf nodes represent atomic Actions or Conditions; execution propagates through the tree and each node returns Success, Failure, or Running to its parent. Behaviour Trees superseded Finite State Machines (FSMs) in many game and robotics contexts because they offer superior modularity, reusability, and comprehensibility: sub-trees encapsulate coherent behaviours that can be composed without explicit inter-state transition wiring. First popularised in the game-development community circa 2005 and later formalised in robotics frameworks such as BehaviorTree.CPP, BTs are now a standard control architecture in both real-time interactive media and autonomous robotic systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:automated-planning",
+      "label": "Automated Planning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "id": "urn:ngm:class:npc-interaction",
+        "label": "NPC Interaction"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:state-machine-replication",
+        "label": "State Machine Replication"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:pathfinding-algorithm",
+        "label": "Pathfinding Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:ai-agents",
+        "label": "AI Agents"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "id": "urn:ngm:class:game-development",
+        "label": "Game Development"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:state-machine",
+        "label": "State Machine"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-npc",
+        "label": "Intelligent NPC"
+      },
+      {
+        "id": "urn:ngm:class:ai-game-agent",
+        "label": "AI Game Agent"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-in-games",
+      "label": "AI in Games"
+    },
+    {
+      "slug": "mobile-robot-platform",
+      "label": "Mobile Robot Platform"
+    },
+    {
+      "slug": "robotics-platform",
+      "label": "Robotics Platform"
+    },
+    {
+      "slug": "state-machine",
+      "label": "State Machine"
+    }
+  ]
+}

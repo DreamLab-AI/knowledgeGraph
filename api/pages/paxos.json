@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:paxos",
+  "title": "Paxos",
+  "slug": "paxos",
+  "public": true,
+  "classIri": "urn:ngm:class:paxos",
+  "domain": "infrastructure",
+  "definition": "Paxos is a family of fault-tolerant distributed consensus algorithms first formally described by Leslie Lamport in 1989 and published in 1998, designed to allow a cluster of processes to agree on a single value or sequence of values despite the failure of a minority of participants. The algorithm proceeds through prepare and accept phases orchestrated by a proposer, with acceptors voting to commit proposed values and learners observing the final agreement. Multi-Paxos extends the basic protocol to achieve consensus on a log of commands efficiently, forming the algorithmic foundation of replicated state machines. Paxos and its derivatives, including Raft and HotStuff, underpin virtually every strongly consistent distributed database and coordination service in production use today.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:consensus-algorithm",
+      "label": "Consensus Algorithm"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:consensus-protocol",
+        "label": "Consensus Protocol"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:state-machine-replication",
+        "label": "State Machine Replication"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:hot-stuff-consensus",
+        "label": "HotStuff Consensus"
+      },
+      {
+        "id": "urn:ngm:class:nakamoto-consensus",
+        "label": "Nakamoto Consensus"
+      },
+      {
+        "id": "urn:ngm:class:quorum",
+        "label": "Quorum"
+      },
+      {
+        "id": "urn:ngm:class:distributed-protocol",
+        "label": "Distributed Protocol"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agreement-protocol",
+      "label": "Agreement Protocol"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "distributed-computing",
+      "label": "Distributed Computing"
+    },
+    {
+      "slug": "fault-tolerance",
+      "label": "Fault Tolerance"
+    },
+    {
+      "slug": "licensing-requirements",
+      "label": "Licensing Requirements"
+    },
+    {
+      "slug": "state-machine",
+      "label": "State Machine"
+    }
+  ]
+}

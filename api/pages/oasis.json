@@ -1,0 +1,91 @@
+{
+  "id": "urn:visionflow:page:oasis",
+  "title": "OASIS",
+  "slug": "oasis",
+  "public": true,
+  "classIri": "urn:ngm:class:oasis",
+  "domain": "governance",
+  "definition": "OASIS (Organisation for the Advancement of Structured Information Standards) is an international, not-for-profit standards development body that produces open standards for information technology, with particular strengths in web services, security, content formats, electronic business, and emergency management. Founded in 1993, OASIS operates through technical committees that develop specifications via an open, consensus-based process, producing both OASIS Standards and publicly available specifications that are frequently adopted as ISO/IEC standards. Prominent OASIS standards include MQTT for IoT messaging, SAML for federated identity, XACML for access control, OData for REST-based data access, and the OpenDocument Format. OASIS also co-publishes standards with other bodies including the W3C and ISO.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:standards-body",
+      "label": "Standards Body"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      },
+      {
+        "id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:mqtt",
+        "label": "MQTT"
+      },
+      {
+        "id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:virtual-environment-specification",
+        "label": "Virtual Environment Specification"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      },
+      {
+        "id": "urn:ngm:class:w3-c",
+        "label": "W3C"
+      },
+      {
+        "id": "urn:ngm:class:iso-standards",
+        "label": "Iso Standards"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity-standard",
+        "label": "Cybersecurity Standard"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cyber-security-and-cryptography",
+      "label": "Cyber Security and Cryptography"
+    },
+    {
+      "slug": "distributed-identity",
+      "label": "Distributed Identity"
+    },
+    {
+      "slug": "identity-management-system",
+      "label": "Identity Management System"
+    },
+    {
+      "slug": "identity-provider",
+      "label": "Identity Provider"
+    }
+  ]
+}

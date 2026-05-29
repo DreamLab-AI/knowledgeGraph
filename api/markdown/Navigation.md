@@ -454,7 +454,7 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:behaviour-trees",
+        "@id": "urn:ngm:class:behaviour-tree",
         "label": "Behaviour Trees"
       },
       {
@@ -556,7 +556,7 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:behaviour-trees",
+        "@id": "urn:ngm:class:behaviour-tree",
         "label": "Behaviour Trees"
       },
       {

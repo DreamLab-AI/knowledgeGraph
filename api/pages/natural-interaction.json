@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:natural-interaction",
+  "title": "Natural Interaction",
+  "slug": "natural-interaction",
+  "public": true,
+  "classIri": "urn:ngm:class:natural-interaction",
+  "domain": "metaverse",
+  "definition": "Natural Interaction describes human-computer interaction modalities that leverage innate human capabilities\u2014speech, gesture, gaze, touch, and whole-body movement\u2014rather than requiring users to learn abstract symbolic interfaces such as keyboards or command-line syntax. The goal is to reduce cognitive translation costs and make technology accessible to a broader range of users by aligning the interaction channel with the way humans naturally communicate and manipulate objects in the physical world. Natural interaction is foundational to spatial computing, mixed reality, and embodied AI systems where traditional 2D pointing devices are ergonomically or practically unsuitable.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:embodied-ai",
+        "label": "Embodied AI"
+      },
+      {
+        "id": "urn:ngm:class:voice-interaction",
+        "label": "Voice Interaction"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:hand-tracking",
+        "label": "Hand Tracking"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai",
+        "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gesture-recognition",
+        "label": "Gesture Recognition"
+      },
+      {
+        "id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      },
+      {
+        "id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "experience-layer",
+      "label": "Experience Layer"
+    },
+    {
+      "slug": "feedback-mechanism",
+      "label": "Feedback Mechanism"
+    },
+    {
+      "slug": "gaze-control",
+      "label": "Gaze Control"
+    },
+    {
+      "slug": "human-interface-layer-hil",
+      "label": "Human Interface Layer (HIL)"
+    }
+  ]
+}

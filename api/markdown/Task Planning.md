@@ -334,7 +334,7 @@ public:: true
         "label": "Action Schema"
       },
       {
-        "@id": "urn:ngm:class:behaviour-trees",
+        "@id": "urn:ngm:class:behaviour-tree",
         "label": "Behaviour Trees"
       },
       {

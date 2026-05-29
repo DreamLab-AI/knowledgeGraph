@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:state-management",
+  "title": "State Management",
+  "slug": "state-management",
+  "public": true,
+  "classIri": "urn:ngm:class:state-management",
+  "domain": "infrastructure",
+  "definition": "State Management is the set of patterns, architectures, and tools used to represent, update, synchronise, and persist the mutable state of an application or distributed system in a predictable and auditable way. In single-page web applications, state management libraries such as Redux implement unidirectional data flow and immutable state trees. In distributed systems, state management encompasses consensus protocols, state machine replication, and event sourcing patterns that ensure all nodes maintain consistent views of shared state despite failures and network partitions. Blockchain ledgers represent a specialised form of state management with Byzantine fault-tolerant distributed consensus.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:software-architecture",
+      "label": "Software Architecture"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:state-machine",
+        "label": "State Machine"
+      },
+      {
+        "id": "urn:ngm:class:state-machine-replication",
+        "label": "State Machine Replication"
+      },
+      {
+        "id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:message-queue",
+        "label": "Message Queue"
+      },
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "behavioural-feedback-loop",
+      "label": "Behavioural Feedback Loop"
+    },
+    {
+      "slug": "cli-multi-agent-systems",
+      "label": "CLI Multi-Agent Systems"
+    },
+    {
+      "slug": "feedback-mechanism",
+      "label": "Feedback Mechanism"
+    },
+    {
+      "slug": "open-world",
+      "label": "Open World"
+    },
+    {
+      "slug": "testnet",
+      "label": "Testnet"
+    }
+  ]
+}

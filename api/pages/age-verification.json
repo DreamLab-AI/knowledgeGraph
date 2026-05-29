@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:age-verification",
+  "title": "Age Verification",
+  "slug": "age-verification",
+  "public": true,
+  "classIri": "urn:ngm:class:age-verification",
+  "domain": "governance",
+  "definition": "Age verification is a set of technical and procedural mechanisms used to confirm that a user meets a minimum age threshold before accessing restricted digital content or services. It encompasses document-based checks, biometric estimation, and privacy-preserving cryptographic proofs. Regulatory frameworks such as the UK Online Safety Act mandate age verification for platforms hosting harmful content. The field balances effective enforcement against privacy risks and the potential exclusion of legitimate users.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:compliance-verification",
+      "label": "Compliance Verification"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      },
+      {
+        "id": "urn:ngm:class:parental-controls",
+        "label": "Parental Controls"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:uk-online-safety-act",
+        "label": "UK Online Safety Act"
+      },
+      {
+        "id": "urn:ngm:class:online-safety-act-2023",
+        "label": "Online Safety Act 2023"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "death-of-the-internet",
+      "label": "Death of the Internet"
+    },
+    {
+      "slug": "digital-identity-wallet",
+      "label": "Digital Identity Wallet"
+    },
+    {
+      "slug": "distributed-identity",
+      "label": "Distributed Identity"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:content-discovery",
+  "title": "Content Discovery",
+  "slug": "content-discovery",
+  "public": true,
+  "classIri": "urn:ngm:class:content-discovery",
+  "domain": "ai",
+  "definition": "Content Discovery encompasses the mechanisms, algorithms, and systems by which users or automated agents locate, surface, and retrieve relevant digital content from large-scale repositories or networks. It spans search-engine indexing, recommendation algorithms, semantic retrieval, and social curation, and is increasingly driven by machine learning models that personalise results to individual preference signals. Effective content discovery is foundational to user experience across the web, streaming platforms, knowledge graphs, and decentralised content networks. It sits at the intersection of information retrieval theory, personalisation engineering, and data governance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:information-retrieval",
+      "label": "Information Retrieval"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-curation-platform",
+        "label": "Digital Curation Platform"
+      },
+      {
+        "id": "urn:ngm:class:discovery-layer",
+        "label": "Discovery Layer"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:recommendation-systems",
+        "label": "Recommendation Systems"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:search-engine",
+        "label": "Search Engine"
+      },
+      {
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-bias",
+        "label": "Algorithmic Bias"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "controlled-vocabulary",
+      "label": "Controlled Vocabulary"
+    },
+    {
+      "slug": "digital-curation-platform",
+      "label": "Digital Curation Platform"
+    },
+    {
+      "slug": "discovery-layer",
+      "label": "Discovery Layer"
+    },
+    {
+      "slug": "search-engine",
+      "label": "Search Engine"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "id": "urn:visionflow:page:platform-economy",
+  "title": "Platform Economy",
+  "slug": "platform-economy",
+  "public": true,
+  "classIri": "urn:ngm:class:platform-economy",
+  "domain": "finance",
+  "definition": "The Platform Economy describes an economic model in which digital intermediaries \u2014 platforms \u2014 create value by facilitating interactions, transactions, and information exchanges between two or more distinct user groups, typically producers and consumers. Platforms achieve scale through network effects: the value of the platform increases with the number of participants on one or both sides, creating winner-take-most market dynamics. Major platform types include transaction platforms (e-commerce, gig labour), innovation platforms (app stores, developer ecosystems), and content platforms (social media, streaming). Platform operators capture value through transaction fees, data monetisation, advertising, and software licences while externalising costs and risks to platform participants.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-platform",
+      "label": "Digital Platform"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-marketplace",
+        "label": "Digital Marketplace"
+      },
+      {
+        "id": "urn:ngm:class:nft-marketplace",
+        "label": "NFT Marketplace"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-platform",
+        "label": "Metaverse Platform"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:platform-layer",
+        "label": "Platform Layer"
+      },
+      {
+        "id": "urn:ngm:class:platform-service",
+        "label": "Platform Service"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:creator-monetization",
+        "label": "Creator Monetization"
+      },
+      {
+        "id": "urn:ngm:class:marketplace-integration",
+        "label": "Marketplace Integration"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:marketplace",
+        "label": "Marketplace"
+      },
+      {
+        "id": "urn:ngm:class:creator-economy",
+        "label": "Creator Economy"
+      },
+      {
+        "id": "urn:ngm:class:platform-governance",
+        "label": "Platform Governance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "adoption-of-convergent-technologies",
+      "label": "Adoption of Convergent Technologies"
+    },
+    {
+      "slug": "convergence",
+      "label": "Convergence"
+    },
+    {
+      "slug": "convergence",
+      "label": "Convergence"
+    }
+  ]
+}

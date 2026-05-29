@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:content-creation",
+  "title": "Content Creation",
+  "slug": "content-creation",
+  "public": true,
+  "classIri": "urn:ngm:class:content-creation",
+  "domain": "ai",
+  "definition": "Content Creation is the process of conceiving, producing, and publishing digital or physical artefacts\u2014including text, imagery, audio, video, and interactive experiences\u2014intended to inform, entertain, or persuade target audiences. In the digital age it encompasses the full workflow from ideation and scripting through asset production, editing, and distribution across multiple channels. Generative AI tools have significantly lowered the barrier to production, enabling individuals and organisations to generate high-quality media at scale. Effective content creation combines creative vision with an understanding of platform algorithms, audience psychology, and brand voice to maximise reach and impact.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-content",
+      "label": "Digital Content"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:creator-economy",
+        "label": "Creator Economy"
+      },
+      {
+        "id": "urn:ngm:class:social-media",
+        "label": "social media"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-media",
+        "label": "Synthetic Media"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:creative-ai",
+        "label": "Creative AI"
+      },
+      {
+        "id": "urn:ngm:class:creative-tools",
+        "label": "Creative Tools"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-content-creation",
+        "label": "Digital Content Creation"
+      },
+      {
+        "id": "urn:ngm:class:generative-content",
+        "label": "Generative Content"
+      },
+      {
+        "id": "urn:ngm:class:etsi-domain-creative-media",
+        "label": "ETSI Domain: Creative Media"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "authoring-tool",
+      "label": "Authoring Tool"
+    },
+    {
+      "slug": "deepfakes",
+      "label": "Deepfakes"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "music-and-audio",
+      "label": "Music and Audio"
+    }
+  ]
+}

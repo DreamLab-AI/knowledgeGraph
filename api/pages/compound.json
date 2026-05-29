@@ -1,0 +1,135 @@
+{
+  "id": "urn:visionflow:page:compound",
+  "title": "Compound",
+  "slug": "compound",
+  "public": true,
+  "classIri": "urn:ngm:class:compound",
+  "domain": "blockchain",
+  "definition": "Compound is an algorithmic, autonomous interest-rate protocol built on Ethereum that enables users to supply crypto assets to liquidity pools and earn continuously accruing interest, or borrow assets against collateral at algorithmically determined rates. Interest rates adjust dynamically based on the utilisation ratio of each asset pool, removing the need for bilateral loan negotiation. Supplied assets are represented as cTokens \u2014 ERC-20 tokens that accrue interest in real time and can themselves be used as collateral or traded. Governance of protocol parameters is conducted on-chain through the COMP token and the Compound Governor Bravo smart contract system, making it one of the earliest fully decentralised autonomous lending protocols in the DeFi ecosystem.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:de-fi-protocol",
+      "label": "De Fi Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-asset-lending",
+        "label": "Digital Asset Lending"
+      },
+      {
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:maker-dao",
+        "label": "MakerDAO"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:compound-governor-bravo",
+        "label": "Compound Governor Bravo"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "id": "urn:ngm:class:yield-farming",
+        "label": "Yield Farming"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-application",
+      "label": "Blockchain Application"
+    },
+    {
+      "slug": "blockchain-oracle",
+      "label": "Blockchain Oracle"
+    },
+    {
+      "slug": "dao-analytics",
+      "label": "DAO Analytics"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "decentralized-exchange",
+      "label": "Decentralized Exchange"
+    },
+    {
+      "slug": "delegate-democracy",
+      "label": "Delegate Democracy"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "grant-programs",
+      "label": "Grant Programs"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "liquidity-provision",
+      "label": "Liquidity Provision"
+    },
+    {
+      "slug": "on-chain-voting",
+      "label": "On Chain Voting"
+    },
+    {
+      "slug": "proposal-system",
+      "label": "Proposal System"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    },
+    {
+      "slug": "tokenomics-governance",
+      "label": "Tokenomics Governance"
+    },
+    {
+      "slug": "treasury-management",
+      "label": "Treasury Management"
+    }
+  ]
+}

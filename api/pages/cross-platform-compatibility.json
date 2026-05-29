@@ -1,0 +1,87 @@
+{
+  "id": "urn:visionflow:page:cross-platform-compatibility",
+  "title": "Cross-Platform Compatibility",
+  "slug": "cross-platform-compatibility",
+  "public": true,
+  "classIri": "urn:ngm:class:cross-platform-compatibility",
+  "domain": "infrastructure",
+  "definition": "Cross-platform compatibility is the property of a software system, application, or digital asset that allows it to function correctly and consistently across multiple operating systems, hardware architectures, runtime environments, or device categories without requiring separate implementations. Achieving this property typically involves adherence to open standards, abstraction layers, and rigorous testing regimes that surface divergent behaviour across target environments. In immersive and extended-reality contexts it extends to ensuring that 3D content, avatars, and application logic behave equivalently across headsets, smartphones, and desktop viewers.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:interoperability",
+      "label": "Interoperability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:portability",
+        "label": "Portability"
+      },
+      {
+        "id": "urn:ngm:class:cross-platform-identity",
+        "label": "Cross-Platform Identity"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      },
+      {
+        "id": "urn:ngm:class:compatibility-process",
+        "label": "Compatibility Process"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cross-platform-interoperability",
+        "label": "Cross-Platform Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:compatibility-standards",
+        "label": "Compatibility Standards"
+      },
+      {
+        "id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "3-d-graphics-standard",
+      "label": "3D Graphics Standard"
+    },
+    {
+      "slug": "3-d-scene-exchange-protocol-sxp",
+      "label": "3D Scene Exchange Protocol (SXP)"
+    },
+    {
+      "slug": "interoperability-standard",
+      "label": "Interoperability Standard"
+    },
+    {
+      "slug": "gl-tf-3-d-file-format",
+      "label": "glTF (3D File Format)"
+    }
+  ]
+}

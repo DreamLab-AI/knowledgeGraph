@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:recommendation-systems",
+  "title": "Recommendation Systems",
+  "slug": "recommendation-systems",
+  "public": true,
+  "classIri": "urn:ngm:class:recommendation-systems",
+  "domain": "ai",
+  "definition": "Recommendation Systems are information filtering systems that predict a user's preference for items\u2014products, content, services\u2014and surface the most relevant items from a large catalogue. They are categorised into collaborative filtering (leveraging the behaviour of similar users), content-based filtering (matching item attributes to user profiles), and hybrid approaches that combine both. Modern large-scale recommendation systems employ deep learning architectures, embedding models, and two-tower neural networks trained on implicit feedback signals such as clicks, watch-time, and purchases. Recommendation systems are among the highest-impact machine learning applications in commercial technology, driving substantial fractions of revenue at platforms such as Netflix, Amazon, YouTube, and Spotify, while also raising significant concerns about filter bubbles, engagement maximisation harms, and algorithmic amplification of misinformation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:hyper-personalisation",
+        "label": "Hyper personalisation"
+      },
+      {
+        "id": "urn:ngm:class:predictive-personalization",
+        "label": "Predictive Personalization"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-pipeline",
+        "label": "Machine Learning Pipeline"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:recommendation-engine",
+        "label": "Recommendation Engine"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:embedding-model",
+        "label": "Embedding Model"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-model",
+        "label": "Machine Learning Model"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "death-of-the-internet",
+      "label": "Death of the Internet"
+    },
+    {
+      "slug": "fashion",
+      "label": "Fashion"
+    },
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    }
+  ]
+}

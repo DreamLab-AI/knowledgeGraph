@@ -1,0 +1,75 @@
+{
+  "id": "urn:visionflow:page:workforce-management",
+  "title": "Workforce Management",
+  "slug": "workforce-management",
+  "public": true,
+  "classIri": "urn:ngm:class:workforce-management",
+  "domain": "ai",
+  "definition": "Workforce Management (WFM) encompasses the integrated set of processes, technologies, and practices that organisations use to optimise employee productivity, schedule labour resources, track attendance and time, manage compliance with labour regulations, and forecast staffing requirements. Modern WFM systems combine real-time data on demand, skill availability, and operational constraints to generate optimised schedules, and increasingly incorporate AI-driven forecasting and adaptive scheduling algorithms. The field is undergoing significant transformation as AI automation shifts skill requirements, gig economy models create more fluid workforce composition, and remote and hybrid working patterns demand new coordination approaches.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:workforce-development",
+      "label": "Workforce Development"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      },
+      {
+        "id": "urn:ngm:class:customer-service-automation",
+        "label": "Customer Service Automation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:automated-compliance",
+        "label": "Automated Compliance"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:layoff-tracker-and-threatened-roles",
+        "label": "Layoff tracker and threatened roles"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:workforce-augmentation",
+        "label": "Workforce Augmentation"
+      },
+      {
+        "id": "urn:ngm:class:augmented-connected-workforce",
+        "label": "Augmented Connected Workforce"
+      },
+      {
+        "id": "urn:ngm:class:planning-and-scheduling",
+        "label": "Planning and Scheduling"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "call-centres",
+      "label": "Call Centres"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "id": "urn:visionflow:page:depth-sensor",
+  "title": "Depth Sensor",
+  "slug": "depth-sensor",
+  "public": true,
+  "classIri": "urn:ngm:class:depth-sensor",
+  "domain": "robotics",
+  "definition": "A Depth Sensor is a hardware device or sensor modality that measures the distance between the sensor and objects in a scene, producing per-pixel or per-point depth information as its primary output. Operating principles include structured light projection, time-of-flight measurement, stereo vision correlation, and LiDAR pulse ranging. Depth sensors are fundamental components in robotics, augmented and mixed reality, autonomous vehicles, and industrial inspection, providing the three-dimensional scene understanding that colour cameras alone cannot supply. The output is typically represented as a depth map, disparity map, or three-dimensional [[Point Cloud]], forming the input to downstream perception and scene reconstruction pipelines.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:exteroceptive-sensor",
+      "label": "Exteroceptive Sensor"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:perception-system",
+        "label": "Perception System"
+      },
+      {
+        "id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "id": "urn:ngm:class:camera",
+        "label": "Camera"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:depth-sensing",
+        "label": "Depth Sensing"
+      },
+      {
+        "id": "urn:ngm:class:depth-estimation",
+        "label": "Depth Estimation"
+      },
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "hand-tracking",
+      "label": "Hand Tracking"
+    },
+    {
+      "slug": "mixed-reality",
+      "label": "Mixed Reality"
+    },
+    {
+      "slug": "reality-capture-system",
+      "label": "Reality Capture System"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:sanctions-screening",
+  "title": "Sanctions Screening",
+  "slug": "sanctions-screening",
+  "public": true,
+  "classIri": "urn:ngm:class:sanctions-screening",
+  "domain": "finance",
+  "definition": "Sanctions Screening is the regulatory compliance process by which financial institutions, fintech operators, and other regulated entities check customers, counterparties, and transactions against government-issued sanctions lists\u2014such as those maintained by OFAC, the UN Security Council, HM Treasury, and the EU\u2014to prevent prohibited dealings with designated individuals, entities, and jurisdictions. The process involves name-matching algorithms, fuzzy logic to handle transliterations and aliases, and risk-based escalation procedures for potential matches. In blockchain and digital asset contexts, screening extends to wallet addresses and on-chain transaction flows. Failure to screen adequately exposes institutions to severe civil and criminal penalties.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:sanctions-enforcement",
+        "label": "Sanctions Enforcement"
+      },
+      {
+        "id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-compliance",
+        "label": "Blockchain Compliance"
+      },
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "id": "urn:ngm:class:fatf",
+        "label": "FATF"
+      },
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    },
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "cross-border-compliance",
+      "label": "Cross Border Compliance"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    },
+    {
+      "slug": "travel-rule",
+      "label": "Travel Rule"
+    }
+  ]
+}

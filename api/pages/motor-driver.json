@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:motor-driver",
+  "title": "Motor Driver",
+  "slug": "motor-driver",
+  "public": true,
+  "classIri": "urn:ngm:class:motor-driver",
+  "domain": "robotics",
+  "definition": "A Motor Driver is an electronic circuit or integrated circuit module that translates low-power control signals from a microcontroller or digital signal processor into the high-current, high-voltage waveforms required to operate electric motors, including DC brushed motors, brushless DC motors, and stepper motors. Motor drivers implement switching topologies such as H-bridge configurations and PWM (pulse-width modulation) generation to control motor direction, speed, and torque. Protection circuitry for over-current, over-temperature, and back-EMF clamping is typically integrated. Motor drivers are fundamental building blocks of robotic systems, electric vehicles, CNC machinery, and consumer appliances.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:embedded-systems",
+      "label": "Embedded Systems"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:servo-control",
+        "label": "Servo Control"
+      },
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "id": "urn:ngm:class:robot-control",
+        "label": "Robot Control"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:real-time-control",
+        "label": "Real-Time Control"
+      },
+      {
+        "id": "urn:ngm:class:dc-servo-motor",
+        "label": "DC Servo Motor"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:robotic-system",
+        "label": "Robotic System"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:electric-motor",
+        "label": "Electric Motor"
+      },
+      {
+        "id": "urn:ngm:class:servo-motor",
+        "label": "Servo Motor"
+      },
+      {
+        "id": "urn:ngm:class:stepper-motor",
+        "label": "Stepper Motor"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "electric-actuator",
+      "label": "Electric Actuator"
+    },
+    {
+      "slug": "mobile-robot-platform",
+      "label": "Mobile Robot Platform"
+    },
+    {
+      "slug": "position-control",
+      "label": "PositionControl"
+    },
+    {
+      "slug": "proprioceptive-sensor",
+      "label": "Proprioceptive Sensor"
+    },
+    {
+      "slug": "robot-hardware",
+      "label": "Robot Hardware"
+    },
+    {
+      "slug": "velocity-control",
+      "label": "VelocityControl"
+    }
+  ]
+}

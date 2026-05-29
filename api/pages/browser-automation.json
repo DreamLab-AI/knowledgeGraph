@@ -1,0 +1,87 @@
+{
+  "id": "urn:visionflow:page:browser-automation",
+  "title": "Browser Automation",
+  "slug": "browser-automation",
+  "public": true,
+  "classIri": "urn:ngm:class:browser-automation",
+  "domain": "ai",
+  "definition": "Browser Automation is the programmatic control of web browsers to execute tasks\u2014navigation, form submission, data extraction, and UI interaction\u2014without direct human input. It spans a spectrum from low-level Chrome DevTools Protocol (CDP) scripting and WebDriver-based frameworks to high-level tools such as Playwright and Puppeteer, as well as AI-driven computer-use agents that perceive and act upon rendered page content. Browser automation underpins modern software testing pipelines, robotic process automation, and agentic AI workflows that must interact with web-based services. The field has evolved rapidly with the emergence of large language model agents capable of interpreting visual page state and generating action sequences autonomously.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:workflow-automation",
+      "label": "Workflow Automation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:customer-service-automation",
+        "label": "Customer Service Automation"
+      },
+      {
+        "id": "urn:ngm:class:testing-infrastructure",
+        "label": "Testing Infrastructure"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:testing-process",
+        "label": "Testing Process"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:adversarial-testing",
+        "label": "Adversarial Testing"
+      },
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "IndustrialAutomation"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:computer-use-and-browser-agents",
+        "label": "Computer Use and Browser Agents"
+      },
+      {
+        "id": "urn:ngm:class:web-scraping",
+        "label": "Web Scraping"
+      },
+      {
+        "id": "urn:ngm:class:software-testing",
+        "label": "Software Testing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "computer-use-and-browser-agents",
+      "label": "Computer Use and Browser Agents"
+    }
+  ]
+}

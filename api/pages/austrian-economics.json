@@ -1,0 +1,83 @@
+{
+  "id": "urn:visionflow:page:austrian-economics",
+  "title": "Austrian Economics",
+  "slug": "austrian-economics",
+  "public": true,
+  "classIri": "urn:ngm:class:austrian-economics",
+  "domain": "finance",
+  "definition": "Austrian Economics is a heterodox school of economic thought originating in late 19th-century Vienna, most associated with Carl Menger, Ludwig von Mises, and Friedrich Hayek. It emphasises methodological individualism, the subjective theory of value, and the role of entrepreneurship in coordinating dispersed knowledge through price signals. The school critiques central planning and Keynesian intervention on the grounds that spontaneous market order cannot be replicated by any central authority, and that artificial credit expansion inevitably produces malinvestment and business cycles. Austrian insights have strongly influenced Bitcoin monetary theory, particularly the argument that hard-capped supply reproduces the properties of sound, commodity-backed money.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:economics",
+      "label": "Economics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:bitcoin-value-proposition",
+        "label": "Bitcoin Value Proposition"
+      },
+      {
+        "id": "urn:ngm:class:hyperbitcoinization",
+        "label": "Hyperbitcoinization"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:monetary-sovereignty",
+        "label": "Monetary Sovereignty"
+      },
+      {
+        "id": "urn:ngm:class:inflation-control",
+        "label": "Inflation Control"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:bitcoin-standard",
+        "label": "Bitcoin Standard"
+      },
+      {
+        "id": "urn:ngm:class:decentralisation",
+        "label": "Decentralisation"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:sound-money",
+        "label": "Sound Money"
+      },
+      {
+        "id": "urn:ngm:class:inflation",
+        "label": "Inflation"
+      },
+      {
+        "id": "urn:ngm:class:monetary-policy-implementation",
+        "label": "Monetary Policy Implementation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-as-money",
+      "label": "Bitcoin As Money"
+    },
+    {
+      "slug": "bitcoin-value-proposition",
+      "label": "Bitcoin Value Proposition"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:climate-modelling",
+  "title": "Climate Modelling",
+  "slug": "climate-modelling",
+  "public": true,
+  "classIri": "urn:ngm:class:climate-modelling",
+  "domain": "infrastructure",
+  "definition": "Climate Modelling is the scientific discipline of constructing mathematical and computational representations of Earth's climate system to simulate past, present, and future climate states. Models range from simple energy-balance equations to high-resolution coupled atmosphere-ocean-land-ice systems running on supercomputing infrastructure. They underpin global projections published by the Intergovernmental Panel on Climate Change and inform policy decisions on emissions reduction and adaptation. Machine learning is increasingly integrated to accelerate parameterisation and downscaling. Outputs feed directly into carbon accounting, sustainability planning, and digital twin applications.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-twin",
+      "label": "Digital Twin"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:carbon-footprint-measurement",
+        "label": "Carbon Footprint Measurement"
+      },
+      {
+        "id": "urn:ngm:class:sustainability-reporting",
+        "label": "SustainabilityReporting"
+      },
+      {
+        "id": "urn:ngm:class:carbon-neutrality-planning",
+        "label": "Carbon Neutrality Planning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
+      },
+      {
+        "id": "urn:ngm:class:time-series-forecasting",
+        "label": "Time Series Forecasting"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:environmental-sustainability",
+        "label": "Environmental Sustainability"
+      },
+      {
+        "id": "urn:ngm:class:iso-14064",
+        "label": "ISO 14064"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin-of-society-dto-s",
+        "label": "Digital Twin of Society (DToS)"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "probabilistic-model",
+      "label": "Probabilistic Model"
+    },
+    {
+      "slug": "stochastic-process",
+      "label": "Stochastic Process"
+    },
+    {
+      "slug": "time-series-forecasting",
+      "label": "Time Series Forecasting"
+    }
+  ]
+}

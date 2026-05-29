@@ -1,0 +1,95 @@
+{
+  "id": "urn:visionflow:page:display-technology",
+  "title": "Display Technology",
+  "slug": "display-technology",
+  "public": true,
+  "classIri": "urn:ngm:class:display-technology",
+  "domain": "metaverse",
+  "definition": "Display Technology encompasses the hardware, optical systems, and electronic components used to visually present information to human observers across a range of form factors, from flat panels and projection systems to head-mounted and retinal displays. Modern display systems span LCD, OLED, microLED, and laser projection substrates, each with distinct characteristics in brightness, contrast, colour gamut, refresh rate, and power consumption. For immersive computing applications including augmented and virtual reality, display technology must additionally address field of view, vergence-accommodation conflict, and waveguide efficiency. Advances in microdisplay resolution and optical engineering are critical enablers of lightweight, socially acceptable XR headsets.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:display-hardware",
+      "label": "Display Hardware"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      },
+      {
+        "id": "urn:ngm:class:ar-display-device",
+        "label": "Ar Display Device"
+      },
+      {
+        "id": "urn:ngm:class:foveated-rendering",
+        "label": "Foveated Rendering"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:optical-calibration-target",
+        "label": "Optical Calibration Target"
+      },
+      {
+        "id": "urn:ngm:class:photorealistic-rendering",
+        "label": "Photorealistic Rendering"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:xr-device",
+        "label": "XR Device"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:display-metrology",
+        "label": "Display Metrology"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ar-technology",
+      "label": "AR Technology"
+    },
+    {
+      "slug": "ar-display-device",
+      "label": "Ar Display Device"
+    },
+    {
+      "slug": "display-hardware",
+      "label": "Display Hardware"
+    },
+    {
+      "slug": "experience-layer",
+      "label": "Experience Layer"
+    },
+    {
+      "slug": "immersion",
+      "label": "Immersion"
+    }
+  ]
+}

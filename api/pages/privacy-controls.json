@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:privacy-controls",
+  "title": "Privacy Controls",
+  "slug": "privacy-controls",
+  "public": true,
+  "classIri": "urn:ngm:class:privacy-controls",
+  "domain": "security",
+  "definition": "Privacy Controls are the technical, organisational, and procedural mechanisms that organisations deploy to protect individuals' personal data from unauthorised access, misuse, or disclosure, and to provide data subjects with meaningful agency over how their information is collected and used. They encompass access restrictions, anonymisation and pseudonymisation techniques, consent management interfaces, data minimisation policies, encryption, and privacy impact assessment processes. Effective privacy controls implement privacy by design principles, embedding data protection into systems from inception rather than applying it retrospectively. Regulatory frameworks such as GDPR mandate specific control categories and assign accountability for their implementation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:privacy",
+      "label": "Privacy"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:privacy-impact-assessment",
+        "label": "Privacy Impact Assessment"
+      },
+      {
+        "id": "urn:ngm:class:privacy-architecture",
+        "label": "Privacy Architecture"
+      },
+      {
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      },
+      {
+        "id": "urn:ngm:class:data-minimisation",
+        "label": "Data Minimisation"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy By Design"
+      },
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:consent-management",
+        "label": "Consent Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "digital-identity-framework",
+      "label": "Digital Identity Framework"
+    },
+    {
+      "slug": "digital-identity",
+      "label": "Digital Identity"
+    },
+    {
+      "slug": "etsi-domain-data-management-ethics",
+      "label": "ETSI Domain: Data Management + Ethics"
+    },
+    {
+      "slug": "presence-indicator",
+      "label": "Presence Indicator"
+    }
+  ]
+}

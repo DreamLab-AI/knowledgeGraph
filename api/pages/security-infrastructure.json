@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:security-infrastructure",
+  "title": "Security Infrastructure",
+  "slug": "security-infrastructure",
+  "public": true,
+  "classIri": "urn:ngm:class:security-infrastructure",
+  "domain": "security",
+  "definition": "Security infrastructure encompasses the integrated set of hardware, software, processes, and policies that protect an organisation's information systems, networks, and data assets from unauthorised access, disruption, and exploitation. It includes perimeter defences, identity and access management systems, cryptographic key management, endpoint protection, monitoring and detection platforms, and incident response capabilities. Effective security infrastructure is layered\u2014applying defence-in-depth principles so that compromise of any single control does not expose the entire system. Modern security infrastructure increasingly adopts zero-trust architectural principles, eliminating implicit trust based on network location and requiring continuous verification of every access request. Security infrastructure must align with regulatory requirements and evolve continuously in response to the changing threat landscape.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:security-framework",
+      "label": "Security Framework"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      },
+      {
+        "id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:nist",
+        "label": "NIST"
+      },
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      },
+      {
+        "id": "urn:ngm:class:vulnerability",
+        "label": "Vulnerability"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "audit-trail",
+      "label": "Audit Trail"
+    },
+    {
+      "slug": "digital-currency",
+      "label": "Digital Currency"
+    },
+    {
+      "slug": "digital-money",
+      "label": "Digital Money"
+    },
+    {
+      "slug": "identity-provider",
+      "label": "Identity Provider"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "Infrastructure Domain"
+    }
+  ]
+}

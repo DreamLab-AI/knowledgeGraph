@@ -1,0 +1,122 @@
+{
+  "id": "urn:visionflow:page:nostr",
+  "title": "Nostr",
+  "slug": "nostr",
+  "public": true,
+  "classIri": "urn:ngm:class:nostr",
+  "domain": "infrastructure",
+  "definition": "Nostr (Notes and Other Stuff Transmitted by Relays) is an open, censorship-resistant social-messaging protocol built around a minimal event model in which users identify themselves by a secp256k1 cryptographic key pair and publish signed JSON events to one or more relay servers over WebSocket connections. The protocol has no central server: identity is purely the public key, and relays are interchangeable infrastructure that store and forward events without requiring accounts or trust; clients subscribe to relays using filter objects and receive matching events. Nostr Improvement Proposals (NIPs) extend the core event kind system to cover short-form notes, long-form articles, direct messages (encrypted with NIP-04/NIP-44), zap payments (Lightning Network), community moderation, and identity verification. Its radical simplicity and cryptographic self-sovereignty have made Nostr the primary decentralised social-layer for the Bitcoin and Lightning ecosystem.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:nostr-protocol",
+      "label": "Nostr Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralised-web",
+        "label": "Decentralised Web"
+      },
+      {
+        "id": "urn:ngm:class:social-network-graph",
+        "label": "Social Network Graph"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:web-socket",
+        "label": "WebSocket"
+      },
+      {
+        "id": "urn:ngm:class:public-key",
+        "label": "Public Key"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:censorship-resistance",
+        "label": "Censorship Resistance"
+      },
+      {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      },
+      {
+        "id": "urn:ngm:class:did-nostr-identity",
+        "label": "DID Nostr Identity"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-user",
+      "label": "AI User"
+    },
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "cashu",
+      "label": "Cashu"
+    },
+    {
+      "slug": "client-side-dco",
+      "label": "Client side DCO"
+    },
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "slug": "distributed-identity",
+      "label": "Distributed Identity"
+    },
+    {
+      "slug": "knowledge-distillation",
+      "label": "Knowledge Distillation"
+    },
+    {
+      "slug": "lightning-and-similar-l2",
+      "label": "Lightning and Similar L2"
+    },
+    {
+      "slug": "privacy",
+      "label": "Privacy"
+    },
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    },
+    {
+      "slug": "social-impact",
+      "label": "Social Impact"
+    }
+  ]
+}

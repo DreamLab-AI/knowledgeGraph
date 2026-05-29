@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:space-robotics",
+  "title": "Space Robotics",
+  "slug": "space-robotics",
+  "public": true,
+  "classIri": "urn:ngm:class:space-robotics",
+  "domain": "robotics",
+  "definition": "Space robotics is the engineering discipline concerned with the design, development, and operation of robotic systems that function in the space environment, including planetary rovers, orbital manipulators, free-flying servicer spacecraft, and landers. These systems must contend with extreme thermal cycling, vacuum, radiation, communications latency, and the absence of gravity, requiring high degrees of autonomy, fault tolerance, and dexterous manipulation capability. Space robotics intersects closely with teleoperation research, autonomous navigation, computer vision, and the emerging field of on-orbit servicing and assembly.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:autonomous-robot",
+      "label": "Autonomous Robot"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:manipulation",
+        "label": "Manipulation"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "kinematics-model",
+      "label": "Kinematics Model"
+    },
+    {
+      "slug": "mechanical-component",
+      "label": "Mechanical Component"
+    },
+    {
+      "slug": "robotics-platform",
+      "label": "Robotics Platform"
+    },
+    {
+      "slug": "task-planning",
+      "label": "Task Planning"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:authorisation",
+  "title": "Authorisation",
+  "slug": "authorisation",
+  "public": true,
+  "classIri": "urn:ngm:class:authorisation",
+  "domain": "security",
+  "definition": "Authorisation is the process of determining and enforcing whether an authenticated principal\u2014user, service, or device\u2014has the right to perform a requested action on a protected resource. It operates downstream of authentication, translating verified identity claims into permitted operations according to configured policies. Modern authorisation frameworks encompass role-based, attribute-based, and policy-based access control models. Robust authorisation design underpins compliance, auditability, and the principle of least privilege across digital systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:security",
+      "label": "Security"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:privacy-controls",
+        "label": "Privacy Controls"
+      },
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:access-control-system",
+        "label": "Access Control System"
+      },
+      {
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "access-control",
+      "label": "Access Control"
+    },
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "authentication-service",
+      "label": "Authentication Service"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    },
+    {
+      "slug": "trust-infrastructure",
+      "label": "Trust Infrastructure"
+    }
+  ]
+}

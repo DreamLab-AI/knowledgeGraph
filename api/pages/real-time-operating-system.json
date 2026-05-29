@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:real-time-operating-system",
+  "title": "Real-Time Operating System",
+  "slug": "real-time-operating-system",
+  "public": true,
+  "classIri": "urn:ngm:class:real-time-operating-system",
+  "domain": "infrastructure",
+  "definition": "A Real-Time Operating System (RTOS) is an operating system designed to service computational tasks within guaranteed, bounded time constraints, making it suitable for safety-critical and time-sensitive embedded applications where latency determinism is a hard requirement rather than a performance goal. RTOSes implement priority-based preemptive scheduling, interrupt latency minimisation, and resource management primitives (semaphores, mutexes, message queues) that provide predictable task switching behaviour. They are deployed in medical devices, industrial controllers, automotive electronics, avionics, and robotics control systems where a missed deadline can cause physical harm or system failure.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:operating-system",
+      "label": "Operating System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:sub-millisecond-latency",
+        "label": "Sub-Millisecond Latency"
+      },
+      {
+        "id": "urn:ngm:class:real-time",
+        "label": "Real Time"
+      },
+      {
+        "id": "urn:ngm:class:real-time-processing",
+        "label": "Real-time Processing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "id": "urn:ngm:class:embedded-ai-frameworks",
+        "label": "Embedded AI Frameworks"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:robotic-system",
+        "label": "Robotic System"
+      },
+      {
+        "id": "urn:ngm:class:motor-driver",
+        "label": "Motor Driver"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
+      },
+      {
+        "id": "urn:ngm:class:real-time-control",
+        "label": "Real-Time Control"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "industrial-robot",
+      "label": "Industrial Robot"
+    },
+    {
+      "slug": "motion-control",
+      "label": "Motion Control"
+    },
+    {
+      "slug": "proprioceptive-sensor",
+      "label": "Proprioceptive Sensor"
+    },
+    {
+      "slug": "robot-hardware",
+      "label": "Robot Hardware"
+    },
+    {
+      "slug": "robotics-platform",
+      "label": "Robotics Platform"
+    }
+  ]
+}

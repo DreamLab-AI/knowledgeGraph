@@ -1,0 +1,87 @@
+{
+  "id": "urn:visionflow:page:smart-grid",
+  "title": "Smart Grid",
+  "slug": "smart-grid",
+  "public": true,
+  "classIri": "urn:ngm:class:smart-grid",
+  "domain": "infrastructure",
+  "definition": "A smart grid is a modernised electricity distribution network that integrates digital communication, real-time sensing, and automated control to improve efficiency, reliability, and sustainability relative to the traditional centralised grid. It enables bidirectional power and information flows, accommodating distributed generation from renewable sources, battery storage, and vehicle-to-grid interactions. Smart grids use advanced metering infrastructure, demand-response programmes, and grid-edge intelligence to balance supply and demand dynamically. They are a foundational component of low-carbon energy infrastructure and increasingly incorporate AI-driven forecasting and optimisation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cyber-physical-systems",
+      "label": "Cyber Physical Systems"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:renewable-energy-certificates",
+        "label": "Renewable Energy Certificates"
+      },
+      {
+        "id": "urn:ngm:class:energy-and-power",
+        "label": "Energy and Power"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:io-t-sensor-network",
+        "label": "IoT Sensor Network"
+      },
+      {
+        "id": "urn:ngm:class:real-time-monitoring",
+        "label": "Real-Time Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:demand-response",
+        "label": "Demand Response"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-energy-scarcity",
+        "label": "AI Energy Scarcity"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:industrial-io-t",
+        "label": "Industrial IoT"
+      },
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "id": "urn:ngm:class:power-management",
+        "label": "Power Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "energy-and-power",
+      "label": "Energy and Power"
+    },
+    {
+      "slug": "home-assistant",
+      "label": "Home Assistant"
+    },
+    {
+      "slug": "io-t-sensor-network",
+      "label": "IoT Sensor Network"
+    }
+  ]
+}

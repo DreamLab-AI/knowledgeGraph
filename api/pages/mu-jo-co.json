@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:mu-jo-co",
+  "title": "MuJoCo",
+  "slug": "mu-jo-co",
+  "public": true,
+  "classIri": "urn:ngm:class:mu-jo-co",
+  "domain": "robotics",
+  "definition": "MuJoCo (Multi-Joint dynamics with Contact) is a high-speed, high-fidelity physics simulation engine designed for modelling articulated rigid-body systems with complex contact dynamics, widely used in robotics research and reinforcement learning. Developed by Emo Todorov at the University of Washington and commercialised by Roboti LLC, it was acquired by Google DeepMind in 2021 and made freely available as open-source software in 2022. MuJoCo excels at simulating musculoskeletal models, legged locomotion, dexterous manipulation, and other contact-rich robotic tasks that require accurate Lagrangian dynamics and constraint solvers. Its adoption as the standard benchmark environment for reinforcement learning algorithms\u2014via OpenAI Gym and later Gymnasium wrappers\u2014has made it the de facto substrate for sim-to-real transfer research in robotics.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:physics-simulation",
+      "label": "Physics Simulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:humanoid-robotics",
+        "label": "Humanoid Robotics"
+      },
+      {
+        "id": "urn:ngm:class:legged-locomotion",
+        "label": "Legged Locomotion"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning-algorithm",
+        "label": "Reinforcement Learning Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:proximal-policy-optimisation",
+        "label": "Proximal Policy Optimisation"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:embodied-ai-simulation",
+        "label": "Embodied AI Simulation"
+      },
+      {
+        "id": "urn:ngm:class:physics-engine",
+        "label": "Physics Engine"
+      },
+      {
+        "id": "urn:ngm:class:robot-learning",
+        "label": "Robot Learning"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "collision-detection",
+      "label": "Collision Detection"
+    },
+    {
+      "slug": "embodied-minds",
+      "label": "Embodied Minds"
+    },
+    {
+      "slug": "kinematics-model",
+      "label": "Kinematics Model"
+    },
+    {
+      "slug": "model-based-control",
+      "label": "Model Based Control"
+    },
+    {
+      "slug": "pneumatic-actuator",
+      "label": "Pneumatic Actuator"
+    }
+  ]
+}

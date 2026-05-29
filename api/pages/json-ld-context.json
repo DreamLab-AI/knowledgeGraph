@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:json-ld-context",
+  "title": "JSON-LD Context",
+  "slug": "json-ld-context",
+  "public": true,
+  "classIri": "urn:ngm:class:json-ld-context",
+  "domain": "ai",
+  "definition": "A JSON-LD Context is the machine-readable document or inline object that maps the shorthand terms and prefixes used in a JSON-LD document to their fully qualified IRIs in a target vocabulary or ontology. It serves as the bridge between the compact, human-readable JSON representation and the globally unambiguous RDF data model, enabling semantic interoperability across disparate systems. Contexts may be embedded inline within a document, referenced by URL, or composed from multiple context documents. The JSON-LD 1.1 specification extends context capabilities with scoped contexts, type-scoped and property-scoped contexts, and protected terms that resist accidental overriding. Correct context design is foundational to knowledge graph compilation and Linked Data publication.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:json-ld",
+      "label": "JSON-LD"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:semantic-interoperability",
+        "label": "Semantic Interoperability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:json-ld-1-1",
+        "label": "JSON-LD 1.1"
+      },
+      {
+        "id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:schema-registry",
+        "label": "Schema Registry"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "federation-surface",
+      "label": "Federation Surface"
+    },
+    {
+      "slug": "federation-surface",
+      "label": "Federation Surface"
+    },
+    {
+      "slug": "linked-data-encoder",
+      "label": "Linked Data Encoder"
+    },
+    {
+      "slug": "linked-data-encoder",
+      "label": "Linked Data Encoder"
+    },
+    {
+      "slug": "ngm-domain",
+      "label": "NGM Domain"
+    },
+    {
+      "slug": "vision-claw-agentic-container",
+      "label": "VisionClaw Agentic Container"
+    }
+  ]
+}

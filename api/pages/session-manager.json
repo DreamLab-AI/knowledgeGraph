@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:session-manager",
+  "title": "Session Manager",
+  "slug": "session-manager",
+  "public": true,
+  "classIri": "urn:ngm:class:session-manager",
+  "domain": "infrastructure",
+  "definition": "A Session Manager is a software component responsible for creating, maintaining, tracking, and terminating user or application sessions within a computing system, ensuring that stateful context is preserved across multiple interactions or network requests. It issues session tokens or identifiers, enforces timeout and expiry policies, replicates session state for high-availability scenarios, and integrates with authentication services to verify that sessions remain bound to authenticated principals. Session managers are critical security components: misconfigurations can lead to session fixation, hijacking, or replay attacks. In distributed architectures they must handle session affinity, cross-node replication, and graceful failover without exposing stale state.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:middleware",
+      "label": "Middleware"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      },
+      {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:authentication-service",
+        "label": "Authentication Service"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:state-management",
+        "label": "State Management"
+      },
+      {
+        "id": "urn:ngm:class:web-socket-protocol",
+        "label": "WebSocket Protocol"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:state-machine",
+        "label": "State Machine"
+      },
+      {
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:data-persistence",
+        "label": "Data Persistence"
+      },
+      {
+        "id": "urn:ngm:class:middleware-layer",
+        "label": "Middleware Layer"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "access-control-system",
+      "label": "Access Control System"
+    },
+    {
+      "slug": "identity-management-system",
+      "label": "Identity Management System"
+    },
+    {
+      "slug": "identity-provider-id-p",
+      "label": "Identity Provider (IdP)"
+    },
+    {
+      "slug": "identity-provider",
+      "label": "Identity Provider"
+    }
+  ]
+}

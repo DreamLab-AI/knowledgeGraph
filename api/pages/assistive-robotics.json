@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:assistive-robotics",
+  "title": "Assistive Robotics",
+  "slug": "assistive-robotics",
+  "public": true,
+  "classIri": "urn:ngm:class:assistive-robotics",
+  "domain": "robotics",
+  "definition": "Assistive Robotics is a branch of robotics focused on designing and deploying robotic systems that support or augment human physical and cognitive capabilities for individuals with disabilities, age-related decline, or rehabilitation needs. These systems range from powered exoskeletons and mobility aids to companion robots that provide social and emotional support. They operate in close physical proximity to humans and must meet stringent safety, usability, and ethical standards. Integration with sensors, AI, and adaptive interfaces enables them to respond intelligently to user intent and changing physiological states.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robotic-system",
+      "label": "Robotic System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "id": "urn:ngm:class:social-interaction",
+        "label": "Social Interaction"
+      },
+      {
+        "id": "urn:ngm:class:ai-companions",
+        "label": "AI companions"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "id": "urn:ngm:class:lower-limb-exoskeleton",
+        "label": "Lower Limb Exoskeleton"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "id": "urn:ngm:class:exoskeleton-robot",
+        "label": "Exoskeleton Robot"
+      },
+      {
+        "id": "urn:ngm:class:social-robotics",
+        "label": "Social Robotics"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "embodied-minds",
+      "label": "Embodied Minds"
+    },
+    {
+      "slug": "robotics-platform",
+      "label": "Robotics Platform"
+    },
+    {
+      "slug": "social-robotics",
+      "label": "Social Robotics"
+    },
+    {
+      "slug": "topological-map",
+      "label": "Topological Map"
+    }
+  ]
+}

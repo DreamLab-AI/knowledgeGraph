@@ -1,0 +1,91 @@
+{
+  "id": "urn:visionflow:page:multi-factor-authentication",
+  "title": "Multi-Factor Authentication",
+  "slug": "multi-factor-authentication",
+  "public": true,
+  "classIri": "urn:ngm:class:multi-factor-authentication",
+  "domain": "security",
+  "definition": "Multi-factor authentication (MFA) is a security mechanism that requires a claimant to present two or more independent verification factors from distinct categories \u2014 typically something known (a password or PIN), something possessed (a hardware token or mobile device), and something inherent (a biometric characteristic) \u2014 before access is granted. By requiring multiple independent proofs, MFA ensures that compromise of a single credential is insufficient for an attacker to gain access. It is widely mandated by regulatory frameworks and security standards as a baseline control for protecting sensitive systems and data.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:authentication-mechanism",
+      "label": "Authentication Mechanism"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity-management",
+        "label": "Digital Identity Management"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:biometric-binding-mechanism",
+        "label": "Biometric Binding Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-keys",
+        "label": "Cryptographic Keys"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:data-security",
+        "label": "Data Security"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:authentication-standards",
+        "label": "Authentication Standards"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity-standard",
+        "label": "Cybersecurity Standard"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "access-control-system",
+      "label": "Access Control System"
+    },
+    {
+      "slug": "biometric-binding-mechanism",
+      "label": "Biometric Binding Mechanism"
+    },
+    {
+      "slug": "identity-provider-id-p",
+      "label": "Identity Provider (IdP)"
+    },
+    {
+      "slug": "identity-provider",
+      "label": "Identity Provider"
+    },
+    {
+      "slug": "identity-provider",
+      "label": "Identity Provider"
+    }
+  ]
+}

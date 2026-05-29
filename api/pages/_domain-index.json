@@ -51,6 +51,11 @@
       "qualityScore": 0.0
     },
     {
+      "slug": "assistive-robotics",
+      "title": "Assistive Robotics",
+      "qualityScore": 0.8
+    },
+    {
       "slug": "autonomous-robot",
       "title": "Autonomous Robot",
       "qualityScore": 0.4
@@ -179,6 +184,11 @@
       "slug": "delta-robot",
       "title": "Delta Robot",
       "qualityScore": 0.5
+    },
+    {
+      "slug": "depth-sensor",
+      "title": "Depth Sensor",
+      "qualityScore": 0.8
     },
     {
       "slug": "derivative-control",
@@ -321,6 +331,11 @@
       "qualityScore": 0.52
     },
     {
+      "slug": "humanoid-robotics",
+      "title": "Humanoid Robotics",
+      "qualityScore": 0.8
+    },
+    {
       "slug": "hybrid-robot",
       "title": "Hybrid Robot",
       "qualityScore": 0.0
@@ -346,9 +361,29 @@
       "qualityScore": 0.0
     },
     {
+      "slug": "ieee-control-systems-society",
+      "title": "IEEE Control Systems Society",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "ifac",
+      "title": "IFAC",
+      "qualityScore": 0.8
+    },
+    {
       "slug": "iso-10218",
       "title": "ISO 10218",
       "qualityScore": 0.0
+    },
+    {
+      "slug": "iso-13482",
+      "title": "ISO 13482",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "iso-9283",
+      "title": "ISO 9283",
+      "qualityScore": 0.8
     },
     {
       "slug": "iso-ts-15066",
@@ -561,6 +596,11 @@
       "qualityScore": 0.52
     },
     {
+      "slug": "motion-model",
+      "title": "Motion Model",
+      "qualityScore": 0.8
+    },
+    {
       "slug": "motion-planning",
       "title": "Motion Planning",
       "qualityScore": 0.5
@@ -569,6 +609,16 @@
       "slug": "motion-tracking",
       "title": "Motion Tracking",
       "qualityScore": 0.5
+    },
+    {
+      "slug": "motor-driver",
+      "title": "Motor Driver",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "mu-jo-co",
+      "title": "MuJoCo",
+      "qualityScore": 0.8
     },
     {
       "slug": "multirotor-uav",
@@ -749,6 +799,11 @@
       "slug": "reactive-control",
       "title": "Reactive Control",
       "qualityScore": 0.0
+    },
+    {
+      "slug": "real-time-control",
+      "title": "Real-Time Control",
+      "qualityScore": 0.8
     },
     {
       "slug": "remotely-operated-vehicle-rov",
@@ -961,6 +1016,11 @@
       "qualityScore": 0.4
     },
     {
+      "slug": "space-robotics",
+      "title": "Space Robotics",
+      "qualityScore": 0.8
+    },
+    {
       "slug": "state-estimation",
       "title": "State Estimation",
       "qualityScore": 0.35
@@ -1079,6 +1139,11 @@
       "slug": "trajectory-planning",
       "title": "Trajectory Planning",
       "qualityScore": 0.0
+    },
+    {
+      "slug": "trajectory-tracking",
+      "title": "Trajectory Tracking",
+      "qualityScore": 0.8
     },
     {
       "slug": "trust-in-automation",
@@ -5990,6 +6055,11 @@
       "qualityScore": 0.52
     },
     {
+      "slug": "api-integration",
+      "title": "API Integration",
+      "qualityScore": 0.8
+    },
+    {
       "slug": "api-standard",
       "title": "API Standard",
       "qualityScore": 0.35
@@ -6065,6 +6135,11 @@
       "qualityScore": 0.0
     },
     {
+      "slug": "bloom-filter",
+      "title": "Bloom Filter",
+      "qualityScore": 0.8
+    },
+    {
       "slug": "brain-computer-interfaces",
       "title": "Brain Computer Interfaces",
       "qualityScore": 0.52
@@ -6113,6 +6188,11 @@
       "slug": "client-side-dco",
       "title": "Client side DCO",
       "qualityScore": 0.5
+    },
+    {
+      "slug": "climate-modelling",
+      "title": "Climate Modelling",
+      "qualityScore": 0.8
     },
     {
       "slug": "cloud-computing",
@@ -6280,6 +6360,11 @@
       "qualityScore": 0.35
     },
     {
+      "slug": "cross-platform-compatibility",
+      "title": "Cross-Platform Compatibility",
+      "qualityScore": 0.8
+    },
+    {
       "slug": "cross-platform-identity",
       "title": "Cross-Platform Identity",
       "qualityScore": 0.5
@@ -6390,6 +6475,11 @@
       "qualityScore": 0.35
     },
     {
+      "slug": "data-mesh",
+      "title": "Data Mesh",
+      "qualityScore": 0.8
+    },
+    {
       "slug": "data-persistence",
       "title": "Data Persistence",
       "qualityScore": 0.0
@@ -6483,6 +6573,11 @@
       "slug": "delivery-planning",
       "title": "Delivery Planning",
       "qualityScore": 0.0
+    },
+    {
+      "slug": "demand-response",
+      "title": "Demand Response",
+      "qualityScore": 0.8
     },
     {
       "slug": "democratic-governance",
@@ -6850,6 +6945,11 @@
       "qualityScore": 0.35
     },
     {
+      "slug": "hardware-abstraction-layer",
+      "title": "Hardware Abstraction Layer",
+      "qualityScore": 0.8
+    },
+    {
       "slug": "hardware-security-module",
       "title": "Hardware Security Module",
       "qualityScore": 0.0
@@ -6878,6 +6978,11 @@
       "slug": "homomorphic-encryption",
       "title": "Homomorphic Encryption",
       "qualityScore": 0.0
+    },
+    {
+      "slug": "iec-61131-3",
+      "title": "IEC 61131-3",
+      "qualityScore": 0.8
     },
     {
       "slug": "iosco",
@@ -7120,6 +7225,11 @@
       "qualityScore": 0.0
     },
     {
+      "slug": "message-queue",
+      "title": "Message Queue",
+      "qualityScore": 0.8
+    },
+    {
       "slug": "metadata-management",
       "title": "Metadata Management",
       "qualityScore": 0.52
@@ -7218,6 +7328,11 @@
       "slug": "north-england-innovation-corridor",
       "title": "North England Innovation Corridor",
       "qualityScore": 0.0
+    },
+    {
+      "slug": "nostr",
+      "title": "Nostr",
+      "qualityScore": 0.8
     },
     {
       "slug": "notification-system",
@@ -7353,6 +7468,11 @@
       "slug": "patent",
       "title": "Patent",
       "qualityScore": 0.0
+    },
+    {
+      "slug": "paxos",
+      "title": "Paxos",
+      "qualityScore": 0.8
     },
     {
       "slug": "performance-metrics",
@@ -7600,9 +7720,24 @@
       "qualityScore": 0.0
     },
     {
+      "slug": "raft",
+      "title": "Raft",
+      "qualityScore": 0.8
+    },
+    {
       "slug": "real-time",
       "title": "Real Time",
       "qualityScore": 0.52
+    },
+    {
+      "slug": "real-time-monitoring",
+      "title": "Real-Time Monitoring",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "real-time-operating-system",
+      "title": "Real-Time Operating System",
+      "qualityScore": 0.8
     },
     {
       "slug": "real-time-rendering",
@@ -7745,6 +7880,21 @@
       "qualityScore": 0.0
     },
     {
+      "slug": "scalability",
+      "title": "Scalability",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "schema-definition",
+      "title": "Schema Definition",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "scientific-computing",
+      "title": "Scientific Computing",
+      "qualityScore": 0.8
+    },
+    {
       "slug": "scripting-language",
       "title": "Scripting Language",
       "qualityScore": 0.0
@@ -7795,6 +7945,11 @@
       "qualityScore": 0.0
     },
     {
+      "slug": "session-manager",
+      "title": "Session Manager",
+      "qualityScore": 0.8
+    },
+    {
       "slug": "sheffield-advanced-manufacturing",
       "title": "Sheffield Advanced Manufacturing",
       "qualityScore": 0.0
@@ -7813,6 +7968,11 @@
       "slug": "single-sign-on",
       "title": "Single Sign-On",
       "qualityScore": 0.0
+    },
+    {
+      "slug": "smart-grid",
+      "title": "Smart Grid",
+      "qualityScore": 0.8
     },
     {
       "slug": "smart-royalties-ledger",
@@ -7878,6 +8038,11 @@
       "slug": "state-machine",
       "title": "State Machine",
       "qualityScore": 0.52
+    },
+    {
+      "slug": "state-management",
+      "title": "State Management",
+      "qualityScore": 0.8
     },
     {
       "slug": "state-space-and-other-approaches",
@@ -8170,6 +8335,16 @@
       "qualityScore": 0.7
     },
     {
+      "slug": "web-id-profile",
+      "title": "WebID Profile",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "web-socket-protocol",
+      "title": "WebSocket Protocol",
+      "qualityScore": 0.8
+    },
+    {
       "slug": "xr-testing-infrastructure",
       "title": "XR Testing Infrastructure",
       "qualityScore": 0.5
@@ -8243,6 +8418,11 @@
       "slug": "experiment",
       "title": "experiment",
       "qualityScore": 0.7
+    },
+    {
+      "slug": "g-rpc",
+      "title": "gRPC",
+      "qualityScore": 0.8
     },
     {
       "slug": "handwritten-demo",
@@ -12646,6 +12826,11 @@
       "qualityScore": 0.0
     },
     {
+      "slug": "arweave",
+      "title": "Arweave",
+      "qualityScore": 0.8
+    },
+    {
       "slug": "asset-registry",
       "title": "Asset Registry",
       "qualityScore": 0.52
@@ -12681,6 +12866,21 @@
       "qualityScore": 0.5
     },
     {
+      "slug": "bip-340-schnorr-keypair",
+      "title": "BIP-340 Schnorr Keypair",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "bip-340",
+      "title": "BIP-340",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "bip-341",
+      "title": "BIP-341",
+      "qualityScore": 0.8
+    },
+    {
       "slug": "blake2",
       "title": "BLAKE2",
       "qualityScore": 0.0
@@ -12706,6 +12906,11 @@
       "qualityScore": 0.52
     },
     {
+      "slug": "bitcoin-core",
+      "title": "Bitcoin Core",
+      "qualityScore": 0.8
+    },
+    {
       "slug": "bitcoin-distribution",
       "title": "Bitcoin Distribution",
       "qualityScore": 0.52
@@ -12721,9 +12926,19 @@
       "qualityScore": 0.54
     },
     {
+      "slug": "bitcoin-improvement-proposals",
+      "title": "Bitcoin Improvement Proposals",
+      "qualityScore": 0.8
+    },
+    {
       "slug": "bitcoin-mining",
       "title": "Bitcoin Mining",
       "qualityScore": 0.52
+    },
+    {
+      "slug": "bitcoin-network",
+      "title": "Bitcoin Network",
+      "qualityScore": 0.8
     },
     {
       "slug": "bitcoin-standard",
@@ -12981,6 +13196,16 @@
       "qualityScore": 0.8
     },
     {
+      "slug": "compound-governor-bravo",
+      "title": "Compound Governor Bravo",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "compound",
+      "title": "Compound",
+      "qualityScore": 0.8
+    },
+    {
       "slug": "conflict-mineral-tracking",
       "title": "Conflict Mineral Tracking",
       "qualityScore": 0.0
@@ -13054,6 +13279,11 @@
       "slug": "cross-chain-governance",
       "title": "Cross-Chain Governance",
       "qualityScore": 0.0
+    },
+    {
+      "slug": "cross-chain-interoperability",
+      "title": "Cross-Chain Interoperability",
+      "qualityScore": 0.8
     },
     {
       "slug": "cross-chain-messaging",
@@ -13179,6 +13409,11 @@
       "slug": "de-fi",
       "title": "DeFi",
       "qualityScore": 0.0
+    },
+    {
+      "slug": "decentralisation",
+      "title": "Decentralisation",
+      "qualityScore": 0.8
     },
     {
       "slug": "decentralised-autonomous-organisation",
@@ -13341,6 +13576,11 @@
       "qualityScore": 0.0
     },
     {
+      "slug": "eip-712",
+      "title": "EIP-712",
+      "qualityScore": 0.8
+    },
+    {
       "slug": "ens",
       "title": "ENS",
       "qualityScore": 0.0
@@ -13349,6 +13589,11 @@
       "slug": "erc-1155",
       "title": "ERC-1155",
       "qualityScore": 0.0
+    },
+    {
+      "slug": "erc-20-token-standard",
+      "title": "ERC-20 Token Standard",
+      "qualityScore": 0.8
     },
     {
       "slug": "erc-20",
@@ -13469,6 +13714,11 @@
       "slug": "enterprise-blockchain",
       "title": "Enterprise Blockchain",
       "qualityScore": 0.5
+    },
+    {
+      "slug": "enterprise-ethereum-alliance",
+      "title": "Enterprise Ethereum Alliance",
+      "qualityScore": 0.8
     },
     {
       "slug": "enterprise-smart-contracts",
@@ -13616,6 +13866,16 @@
       "qualityScore": 0.0
     },
     {
+      "slug": "gitcoin-passport",
+      "title": "Gitcoin Passport",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "gitcoin",
+      "title": "Gitcoin",
+      "qualityScore": 0.8
+    },
+    {
       "slug": "gold",
       "title": "Gold",
       "qualityScore": 0.52
@@ -13661,6 +13921,11 @@
       "qualityScore": 0.52
     },
     {
+      "slug": "hash-time-locked-contract",
+      "title": "Hash Time-Locked Contract",
+      "qualityScore": 0.8
+    },
+    {
       "slug": "healthcare-records",
       "title": "Healthcare Records",
       "qualityScore": 0.0
@@ -13679,6 +13944,11 @@
       "slug": "hybrid-consensus",
       "title": "Hybrid Consensus",
       "qualityScore": 0.0
+    },
+    {
+      "slug": "hyperbitcoinization",
+      "title": "Hyperbitcoinization",
+      "qualityScore": 0.8
     },
     {
       "slug": "hyperledger-besu",
@@ -13719,6 +13989,11 @@
       "slug": "iso-tc-307",
       "title": "ISO TC 307",
       "qualityScore": 0.0
+    },
+    {
+      "slug": "ivms-101",
+      "title": "IVMS 101",
+      "qualityScore": 0.8
     },
     {
       "slug": "immutability",
@@ -14111,6 +14386,11 @@
       "qualityScore": 0.0
     },
     {
+      "slug": "pbft",
+      "title": "PBFT",
+      "qualityScore": 0.8
+    },
+    {
       "slug": "partition-attack",
       "title": "Partition Attack",
       "qualityScore": 0.0
@@ -14164,6 +14444,11 @@
       "slug": "polkadot-parachains",
       "title": "Polkadot Parachains",
       "qualityScore": 0.75
+    },
+    {
+      "slug": "polkadot",
+      "title": "Polkadot",
+      "qualityScore": 0.8
     },
     {
       "slug": "pool-share",
@@ -14324,6 +14609,11 @@
       "slug": "quorum-blockchain",
       "title": "Quorum Blockchain",
       "qualityScore": 0.52
+    },
+    {
+      "slug": "quorum",
+      "title": "Quorum",
+      "qualityScore": 0.8
     },
     {
       "slug": "r3-corda",
@@ -14499,6 +14789,11 @@
       "slug": "snapshot-voting",
       "title": "Snapshot Voting",
       "qualityScore": 0.52
+    },
+    {
+      "slug": "solana",
+      "title": "Solana",
+      "qualityScore": 0.8
     },
     {
       "slug": "solidity",
@@ -14791,6 +15086,11 @@
       "qualityScore": 0.52
     },
     {
+      "slug": "verifiable-random-function",
+      "title": "Verifiable Random Function",
+      "qualityScore": 0.8
+    },
+    {
       "slug": "virtual-economy",
       "title": "Virtual Economy",
       "qualityScore": 0.35
@@ -14906,10 +15206,117 @@
       "qualityScore": 0.5
     }
   ],
+  "security": [
+    {
+      "slug": "acl",
+      "title": "ACL",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "anon-creds",
+      "title": "AnonCreds",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "authentication-mechanism",
+      "title": "Authentication Mechanism",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "authorisation",
+      "title": "Authorisation",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "didcomm",
+      "title": "DIDComm",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "ed-dsa",
+      "title": "EdDSA",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "incident-response",
+      "title": "Incident Response",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "multi-factor-authentication",
+      "title": "Multi-Factor Authentication",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "passwordless-authentication",
+      "title": "Passwordless Authentication",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "policy-enforcement-point",
+      "title": "Policy Enforcement Point",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "privacy-controls",
+      "title": "Privacy Controls",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "privacy-engineering",
+      "title": "Privacy Engineering",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "privacy-enhancing-technologies",
+      "title": "Privacy Enhancing Technologies",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "privileged-access-management",
+      "title": "Privileged Access Management",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "security-infrastructure",
+      "title": "Security Infrastructure",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "threshold-cryptography",
+      "title": "Threshold Cryptography",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "timestamp-authority",
+      "title": "Timestamp Authority",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "trust-establishment",
+      "title": "Trust Establishment",
+      "qualityScore": 0.8
+    }
+  ],
   "ai": [
+    {
+      "slug": "action-executor",
+      "title": "Action Executor",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "agent2-agent-protocol",
+      "title": "Agent2Agent Protocol",
+      "qualityScore": 0.8
+    },
     {
       "slug": "agentic-workflow",
       "title": "Agentic Workflow",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "algorithmic-auditing",
+      "title": "Algorithmic Auditing",
       "qualityScore": 0.8
     },
     {
@@ -14923,6 +15330,21 @@
       "qualityScore": 0.8
     },
     {
+      "slug": "behaviour-tree",
+      "title": "Behaviour Tree",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "benchmarks",
+      "title": "Benchmarks",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "browser-automation",
+      "title": "Browser Automation",
+      "qualityScore": 0.8
+    },
+    {
       "slug": "cvpr",
       "title": "CVPR",
       "qualityScore": 0.8
@@ -14933,13 +15355,53 @@
       "qualityScore": 0.8
     },
     {
+      "slug": "claude",
+      "title": "Claude",
+      "qualityScore": 0.8
+    },
+    {
       "slug": "comfy-ui",
       "title": "ComfyUI",
       "qualityScore": 0.8
     },
     {
+      "slug": "content-creation",
+      "title": "Content Creation",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "content-discovery",
+      "title": "Content Discovery",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "creative-ai",
+      "title": "Creative AI",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "data-schema",
+      "title": "Data Schema",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "decision-support",
+      "title": "Decision Support",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "eccv",
+      "title": "ECCV",
+      "qualityScore": 0.8
+    },
+    {
       "slug": "evaluation-metric",
       "title": "Evaluation Metric",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "feature-matching",
+      "title": "Feature Matching",
       "qualityScore": 0.8
     },
     {
@@ -14953,6 +15415,16 @@
       "qualityScore": 0.8
     },
     {
+      "slug": "frontier-ai",
+      "title": "Frontier AI",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "gpu-computing",
+      "title": "GPU Computing",
+      "qualityScore": 0.8
+    },
+    {
       "slug": "gemini",
       "title": "Gemini",
       "qualityScore": 0.8
@@ -14960,6 +15432,16 @@
     {
       "slug": "gesture-recognition",
       "title": "Gesture Recognition",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "google-deep-mind",
+      "title": "Google DeepMind",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "hyperparameter-tuning",
+      "title": "Hyperparameter Tuning",
       "qualityScore": 0.8
     },
     {
@@ -14983,8 +15465,33 @@
       "qualityScore": 0.8
     },
     {
+      "slug": "importance-sampling",
+      "title": "Importance Sampling",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "informed-decision-making",
+      "title": "Informed decision-making",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "json-ld-context",
+      "title": "JSON-LD Context",
+      "qualityScore": 0.8
+    },
+    {
       "slug": "mlops",
       "title": "MLOps",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "meta-learning",
+      "title": "Meta-Learning",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "network-analysis",
+      "title": "Network Analysis",
       "qualityScore": 0.8
     },
     {
@@ -14993,8 +15500,23 @@
       "qualityScore": 0.8
     },
     {
+      "slug": "open-ai-whisper",
+      "title": "Open AI Whisper",
+      "qualityScore": 0.8
+    },
+    {
       "slug": "open-ai",
       "title": "OpenAI",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "open-cv",
+      "title": "OpenCV",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "prompt-template",
+      "title": "Prompt Template",
       "qualityScore": 0.8
     },
     {
@@ -15003,20 +15525,125 @@
       "qualityScore": 0.8
     },
     {
+      "slug": "rapid-prototyping",
+      "title": "Rapid Prototyping",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "recommendation-systems",
+      "title": "Recommendation Systems",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "schema-org",
+      "title": "Schema.org",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "self-supervised-learning",
+      "title": "Self-Supervised Learning",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "social-interaction",
+      "title": "Social Interaction",
+      "qualityScore": 0.8
+    },
+    {
       "slug": "stable-diffusion",
       "title": "Stable Diffusion",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "target-tracking",
+      "title": "Target Tracking",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "tool-definition",
+      "title": "Tool Definition",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "training-dataset",
+      "title": "Training Dataset",
       "qualityScore": 0.8
     },
     {
       "slug": "uncertainty-quantification",
       "title": "Uncertainty Quantification",
       "qualityScore": 0.8
+    },
+    {
+      "slug": "web-scraping",
+      "title": "Web Scraping",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "workforce-management",
+      "title": "Workforce Management",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "world-model",
+      "title": "World Model",
+      "qualityScore": 0.8
     }
   ],
   "governance": [
     {
+      "slug": "age-verification",
+      "title": "Age Verification",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "automated-compliance",
+      "title": "Automated Compliance",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "change-management",
+      "title": "Change Management",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "conflict-resolution",
+      "title": "Conflict Resolution",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "data-governance-framework",
+      "title": "Data Governance Framework",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "design-thinking",
+      "title": "Design Thinking",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "eba",
+      "title": "EBA",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "eu-ai-act-article-50",
+      "title": "EU AI Act Article 50",
+      "qualityScore": 0.8
+    },
+    {
       "slug": "eu-ai-act",
       "title": "EU AI Act",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "emission-factors",
+      "title": "Emission Factors",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "enforcement-mechanism",
+      "title": "Enforcement Mechanism",
       "qualityScore": 0.8
     },
     {
@@ -15032,6 +15659,21 @@
     {
       "slug": "ietf",
       "title": "IETF",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "iso-iec",
+      "title": "ISO/IEC",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "iso",
+      "title": "ISO",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "incident-reporting",
+      "title": "Incident Reporting",
       "qualityScore": 0.8
     },
     {
@@ -15055,8 +15697,202 @@
       "qualityScore": 0.8
     },
     {
+      "slug": "oasis",
+      "title": "OASIS",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "oecd-ai-principles",
+      "title": "OECD AI Principles",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "online-safety-act-2023",
+      "title": "Online Safety Act 2023",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "privacy-protection",
+      "title": "Privacy Protection",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "sec",
+      "title": "SEC",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "sanctions-enforcement",
+      "title": "Sanctions Enforcement",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "stakeholder-engagement",
+      "title": "Stakeholder Engagement",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "surveillance-capitalism",
+      "title": "Surveillance Capitalism",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "sustainable-development-goals",
+      "title": "Sustainable Development Goals",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "trust",
+      "title": "Trust",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "uk-online-safety-act",
+      "title": "UK Online Safety Act",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "user-protection",
+      "title": "User Protection",
+      "qualityScore": 0.8
+    },
+    {
       "slug": "w3-c",
       "title": "W3C",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "e-idas-2-0",
+      "title": "eIDAS 2.0",
+      "qualityScore": 0.8
+    }
+  ],
+  "metaverse": [
+    {
+      "slug": "asset-pipeline",
+      "title": "Asset Pipeline",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "colmap",
+      "title": "COLMAP",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "cloth-simulation",
+      "title": "Cloth Simulation",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "collaborative-design",
+      "title": "Collaborative Design",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "cultural-heritage-preservation",
+      "title": "Cultural Heritage Preservation",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "digital-art",
+      "title": "Digital Art",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "display-technology",
+      "title": "Display Technology",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "nvidia-omniverse",
+      "title": "NVIDIA Omniverse",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "natural-interaction",
+      "title": "Natural Interaction",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "siggraph",
+      "title": "SIGGRAPH",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "user-engagement",
+      "title": "User Engagement",
+      "qualityScore": 0.8
+    }
+  ],
+  "finance": [
+    {
+      "slug": "austrian-economics",
+      "title": "Austrian Economics",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "bis",
+      "title": "BIS",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "central-bank",
+      "title": "Central Bank",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "creator-monetization",
+      "title": "Creator Monetization",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "financial-privacy",
+      "title": "Financial Privacy",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "fractional-ownership",
+      "title": "Fractional Ownership",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "iso-20022",
+      "title": "ISO 20022",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "machine-to-machine-payments",
+      "title": "Machine to Machine Payments",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "payment-gateway",
+      "title": "Payment Gateway",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "platform-economy",
+      "title": "Platform Economy",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "sanctions-screening",
+      "title": "Sanctions Screening",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "sound-money",
+      "title": "Sound Money",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "trade-finance-automation",
+      "title": "Trade Finance Automation",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "wholesale-cbdc",
+      "title": "Wholesale CBDC",
       "qualityScore": 0.8
     }
   ],

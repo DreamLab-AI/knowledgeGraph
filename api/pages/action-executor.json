@@ -1,0 +1,87 @@
+{
+  "id": "urn:visionflow:page:action-executor",
+  "title": "Action Executor",
+  "slug": "action-executor",
+  "public": true,
+  "classIri": "urn:ngm:class:action-executor",
+  "domain": "ai",
+  "definition": "An Action Executor is a software component within an agentic AI system responsible for translating high-level instructions or plans into concrete, observable operations in an environment. It serves as the effector layer that bridges planning and execution by dispatching tool calls, API requests, file operations, or process invocations. Action Executors typically implement sandboxing, retry logic, and side-effect isolation to ensure safe and predictable operation. They are central to autonomous agent architectures where multiple sequential or parallel actions must be managed reliably.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:agentic-ai",
+      "label": "Agentic AI"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      },
+      {
+        "id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      },
+      {
+        "id": "urn:ngm:class:automated-planning",
+        "label": "Automated Planning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:runtime-environment",
+        "label": "Runtime Environment"
+      },
+      {
+        "id": "urn:ngm:class:orchestration",
+        "label": "Orchestration"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:agent",
+        "label": "Agent"
+      },
+      {
+        "id": "urn:ngm:class:task-planning",
+        "label": "Task Planning"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "autonomous-agent",
+      "label": "Autonomous Agent"
+    },
+    {
+      "slug": "computer-use-and-browser-agents",
+      "label": "Computer Use and Browser Agents"
+    }
+  ]
+}

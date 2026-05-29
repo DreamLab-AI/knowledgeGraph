@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:iso-20022",
+  "title": "ISO 20022",
+  "slug": "iso-20022",
+  "public": true,
+  "classIri": "urn:ngm:class:iso-20022",
+  "domain": "finance",
+  "definition": "ISO 20022 is the international standard for financial messaging that provides a common platform for the development of messages in the financial services industry, using a methodology that decouples business concepts from syntax through a central repository of business components, message definitions, and XML/ASN.1/JSON encoding rules. Published by the International Organisation for Standardisation, the standard covers payments (credit transfers, direct debits), securities (settlement, clearing), trade finance, and foreign exchange, replacing legacy formats such as SWIFT MT and CHIPS. Its rich data model carries structured remittance information, legal entity identifiers, and purpose codes that older formats cannot accommodate, enabling straight-through processing, improved fraud detection, and regulatory reporting automation. Major financial market infrastructures worldwide \u2014 TARGET2, CHAPS, the US Fedwire and CHIPS \u2014 are migrating to ISO 20022 between 2023 and 2025.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:interoperability-standard",
+      "label": "Interoperability Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cross-border-payments",
+        "label": "Cross-Border Payments"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-reporting",
+        "label": "Regulatory Reporting"
+      },
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:digital-payment-system",
+        "label": "Digital Payment System"
+      },
+      {
+        "id": "urn:ngm:class:financial-infrastructure",
+        "label": "Financial Infrastructure"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      },
+      {
+        "id": "urn:ngm:class:financial-system",
+        "label": "Financial System"
+      },
+      {
+        "id": "urn:ngm:class:data-standards",
+        "label": "Data Standards"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    },
+    {
+      "slug": "cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    },
+    {
+      "slug": "hyperledger-iroha",
+      "label": "Hyperledger Iroha"
+    },
+    {
+      "slug": "regulatory-reporting",
+      "label": "Regulatory Reporting"
+    },
+    {
+      "slug": "transaction-standard",
+      "label": "Transaction Standard"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "id": "urn:visionflow:page:importance-sampling",
+  "title": "Importance Sampling",
+  "slug": "importance-sampling",
+  "public": true,
+  "classIri": "urn:ngm:class:importance-sampling",
+  "domain": "ai",
+  "definition": "Importance sampling is a variance-reduction technique in Monte Carlo estimation that draws samples from a proposal distribution that concentrates probability mass in regions contributing most to the quantity being estimated, then corrects for the distributional mismatch using importance weights. It is foundational to Bayesian inference, reinforcement learning, path-tracing renderers, and off-policy evaluation. Importance sampling allows tractable estimation of expectations under distributions that are difficult or impossible to sample from directly. Poor choice of proposal distribution can however lead to high-variance or even infinite-variance estimators, necessitating careful design.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:monte-carlo-methods",
+      "label": "Monte Carlo Methods"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:sampling",
+        "label": "Sampling"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      },
+      {
+        "id": "urn:ngm:class:variational-inference",
+        "label": "Variational Inference"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:monte-carlo-tree-search",
+        "label": "Monte Carlo Tree Search"
+      },
+      {
+        "id": "urn:ngm:class:optimization-algorithm",
+        "label": "Optimization Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:state-estimation",
+        "label": "State Estimation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bayes-filter",
+      "label": "Bayes Filter"
+    },
+    {
+      "slug": "monte-carlo-localization",
+      "label": "Monte Carlo Localization"
+    },
+    {
+      "slug": "particle-filter",
+      "label": "Particle Filter"
+    },
+    {
+      "slug": "ray-tracing",
+      "label": "Ray Tracing"
+    },
+    {
+      "slug": "sampling",
+      "label": "Sampling"
+    }
+  ]
+}

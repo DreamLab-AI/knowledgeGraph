@@ -1,0 +1,83 @@
+{
+  "id": "urn:visionflow:page:iec-61131-3",
+  "title": "IEC 61131-3",
+  "slug": "iec-61131-3",
+  "public": true,
+  "classIri": "urn:ngm:class:iec-61131-3",
+  "domain": "infrastructure",
+  "definition": "IEC 61131-3 is the third part of the IEC 61131 international standard for programmable logic controllers, defining the syntax and semantics of five programming languages used in industrial automation: Ladder Diagram (LD), Function Block Diagram (FBD), Structured Text (ST), Instruction List (IL), and Sequential Function Chart (SFC). The standard provides a common programming model across PLC vendors, enabling portability of control logic and reducing the effort required to maintain industrial systems. It is the primary reference for software engineering practice in the industrial automation domain and forms the basis of IEC 61131-3-compliant toolchains and runtime environments used in manufacturing, process control, and infrastructure systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:iso-iec",
+      "label": "ISO/IEC"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:automated-compliance",
+        "label": "Automated Compliance"
+      },
+      {
+        "id": "urn:ngm:class:planning-and-scheduling",
+        "label": "Planning and Scheduling"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:sheffield-advanced-manufacturing",
+        "label": "Sheffield Advanced Manufacturing"
+      },
+      {
+        "id": "urn:ngm:class:industrial-robot",
+        "label": "Industrial Robot"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-iec-27001",
+        "label": "ISO/IEC 27001"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "IndustrialAutomation"
+      },
+      {
+        "id": "urn:ngm:class:iec-61508",
+        "label": "IEC 61508"
+      },
+      {
+        "id": "urn:ngm:class:safety-plc",
+        "label": "Safety PLC"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "slug": "feedback-loop",
+      "label": "Feedback Loop"
+    },
+    {
+      "slug": "motion-control",
+      "label": "Motion Control"
+    }
+  ]
+}

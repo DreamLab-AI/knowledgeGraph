@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:creative-ai",
+  "title": "Creative AI",
+  "slug": "creative-ai",
+  "public": true,
+  "classIri": "urn:ngm:class:creative-ai",
+  "domain": "ai",
+  "definition": "Creative AI refers to artificial intelligence systems designed to generate, augment, or evaluate creative artefacts including images, music, text, video, and interactive experiences. Drawing on generative models such as diffusion models, large language models, and generative adversarial networks, these systems can produce novel content that mimics or extends human creative practice. They are increasingly deployed in professional creative pipelines, raising concurrent questions about authorship, copyright, and the economic displacement of human creators. Creative AI represents a convergence of machine learning research and aesthetic domains traditionally reserved for human agency.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:generative-ai",
+      "label": "Generative AI"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "id": "urn:ngm:class:content-creation",
+        "label": "Content Creation"
+      },
+      {
+        "id": "urn:ngm:class:digital-content-creation",
+        "label": "Digital Content Creation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:creative-software",
+        "label": "Creative Software"
+      },
+      {
+        "id": "urn:ngm:class:ai-art-categorization",
+        "label": "Ai Art Categorization"
+      },
+      {
+        "id": "urn:ngm:class:creative-media-domain",
+        "label": "Creative Media Domain"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "comfy-ui-for-fashion-and-brands",
+      "label": "comfy-ui-for-fashion-and-brands"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "kohya-dreambooth-and-similar",
+      "label": "KOHYA Dreambooth and similar"
+    },
+    {
+      "slug": "music-and-audio",
+      "label": "Music and Audio"
+    },
+    {
+      "slug": "proprietary-image-generation",
+      "label": "Proprietary Image Generation"
+    }
+  ]
+}

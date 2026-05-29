@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:central-bank",
+  "title": "Central Bank",
+  "slug": "central-bank",
+  "public": true,
+  "classIri": "urn:ngm:class:central-bank",
+  "domain": "finance",
+  "definition": "A central bank is a public financial institution responsible for managing a nation's or currency union's money supply, setting benchmark interest rates, and acting as a lender of last resort to commercial banks. Central banks implement monetary policy to pursue macroeconomic objectives such as price stability, full employment, and financial stability. They typically hold foreign exchange reserves, supervise the broader banking system, and increasingly oversee or issue digital payment infrastructures including Central Bank Digital Currencies.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:monetary-system",
+      "label": "Monetary System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:monetary-sovereignty",
+        "label": "Monetary Sovereignty"
+      },
+      {
+        "id": "urn:ngm:class:inflation-control",
+        "label": "Inflation Control"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-currency",
+        "label": "Digital Currency"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cbdc-frameworks",
+      "label": "CBDC Frameworks"
+    },
+    {
+      "slug": "cbdcs",
+      "label": "CBDCs"
+    },
+    {
+      "slug": "central-bank-digital-currency-cbdc",
+      "label": "Central Bank Digital Currency (CBDC)"
+    },
+    {
+      "slug": "decentralized-finance-de-fi",
+      "label": "Decentralized Finance (DeFi)"
+    }
+  ]
+}

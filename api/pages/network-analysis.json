@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:network-analysis",
+  "title": "Network Analysis",
+  "slug": "network-analysis",
+  "public": true,
+  "classIri": "urn:ngm:class:network-analysis",
+  "domain": "ai",
+  "definition": "Network Analysis is the study of complex systems represented as graphs of nodes and edges, using mathematical and computational techniques to characterise structure, detect communities, identify influential nodes, and model dynamic processes such as information diffusion. Rooted in graph theory, sociology, and statistical physics, it encompasses metrics including degree distribution, betweenness centrality, clustering coefficients, and path lengths. Applications span social network mapping, cybersecurity threat detection, supply chain vulnerability assessment, and knowledge graph quality evaluation. Machine learning on graphs, through graph neural networks, has substantially extended analytical capabilities.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:knowledge-graph",
+      "label": "Knowledge Graph"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:knowledge-graph-construction",
+        "label": "Knowledge Graph Construction"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graphing",
+        "label": "Knowledge Graphing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:social-network-graph",
+        "label": "Social Network Graph"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      },
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    },
+    {
+      "slug": "economics",
+      "label": "Economics"
+    },
+    {
+      "slug": "emergence",
+      "label": "Emergence"
+    },
+    {
+      "slug": "graph-database",
+      "label": "Graph Database"
+    }
+  ]
+}

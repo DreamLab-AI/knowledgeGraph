@@ -1,0 +1,87 @@
+{
+  "id": "urn:visionflow:page:demand-response",
+  "title": "Demand Response",
+  "slug": "demand-response",
+  "public": true,
+  "classIri": "urn:ngm:class:demand-response",
+  "domain": "infrastructure",
+  "definition": "Demand response is the deliberate modification of electricity consumption patterns by end users in response to signals from grid operators, energy markets, or automated control systems, with the aim of balancing supply and demand in real time. It enables consumers\u2014from large industrial facilities to domestic smart appliances\u2014to reduce or shift load during peak periods or grid stress events in exchange for financial incentives or reduced tariffs. Demand response programmes are a cornerstone of smart grid operation, deferring or avoiding costly investment in peak generation capacity. Increasingly, AI-driven automation and IoT sensor networks enable fine-grained, real-time demand response at residential scale without requiring manual intervention from end users.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:smart-grid",
+      "label": "Smart Grid"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:power-efficient-ai",
+        "label": "Power-Efficient AI"
+      },
+      {
+        "id": "urn:ngm:class:renewable-energy-certificates",
+        "label": "Renewable Energy Certificates"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:io-t-sensor-network",
+        "label": "IoT Sensor Network"
+      },
+      {
+        "id": "urn:ngm:class:io-t-ai-integration",
+        "label": "IoT AI Integration"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:machine-to-machine-payments",
+        "label": "Machine to Machine Payments"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:energy-and-power",
+        "label": "Energy and Power"
+      },
+      {
+        "id": "urn:ngm:class:power-management",
+        "label": "Power Management"
+      },
+      {
+        "id": "urn:ngm:class:industrial-io-t",
+        "label": "Industrial IoT"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-environmental-issues",
+      "label": "Bitcoin Environmental Issues"
+    },
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "energy-and-power",
+      "label": "Energy and Power"
+    }
+  ]
+}

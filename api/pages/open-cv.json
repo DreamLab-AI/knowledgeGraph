@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:open-cv",
+  "title": "OpenCV",
+  "slug": "open-cv",
+  "public": true,
+  "classIri": "urn:ngm:class:open-cv",
+  "domain": "ai",
+  "definition": "OpenCV (Open Source Computer Vision Library) is a BSD-licensed open-source library providing over 2,500 optimised algorithms for real-time computer vision, image processing, and machine learning, originally developed by Intel and now maintained by the OpenCV Foundation. It supports C++, Python, Java, and JavaScript bindings and runs on Linux, Windows, macOS, iOS, and Android. The library encompasses classical algorithms for feature detection, camera calibration, stereo vision, optical flow, and object tracking, as well as deep learning inference through the DNN module, which supports models from TensorFlow, PyTorch, and ONNX. OpenCV is the de facto standard toolkit for robotics perception pipelines, augmented reality applications, and embedded vision systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:computer-vision-system",
+      "label": "Computer Vision System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:depth-estimation",
+        "label": "Depth Estimation"
+      },
+      {
+        "id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
+      },
+      {
+        "id": "urn:ngm:class:object-detection-and-tracking",
+        "label": "Object Detection and Tracking"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      },
+      {
+        "id": "urn:ngm:class:image-segmentation",
+        "label": "Image Segmentation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:perception-system",
+        "label": "Perception System"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:image-processing-software",
+        "label": "Image Processing Software"
+      },
+      {
+        "id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-upscaling-and-super-resolution",
+      "label": "AI Upscaling and Super-Resolution"
+    },
+    {
+      "slug": "computer-use-and-browser-agents",
+      "label": "Computer Use and Browser Agents"
+    },
+    {
+      "slug": "ground-robot",
+      "label": "Ground Robot"
+    },
+    {
+      "slug": "lens-and-camera-calibration",
+      "label": "Lens and Camera Calibration"
+    },
+    {
+      "slug": "perception-system",
+      "label": "Perception System"
+    },
+    {
+      "slug": "robotics-platform",
+      "label": "Robotics Platform"
+    }
+  ]
+}

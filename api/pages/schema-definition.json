@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:schema-definition",
+  "title": "Schema Definition",
+  "slug": "schema-definition",
+  "public": true,
+  "classIri": "urn:ngm:class:schema-definition",
+  "domain": "infrastructure",
+  "definition": "A Schema Definition is a formal, machine-readable specification of the structure, data types, constraints, and relationships that govern a dataset, message format, document, or knowledge representation, serving as a contract between data producers and consumers. Schema languages include W3C XML Schema Definition (XSD), JSON Schema (for JSON documents), OWL/RDFS (for ontologies over RDF graphs), SHACL and ShEx (for RDF graph shape constraints), Protocol Buffers and Apache Avro (for binary-serialised messages), OpenAPI (for REST API request/response bodies), and GraphQL SDL (for graph API types). A schema definition enables automated validation, code generation, documentation, and inter-system interoperability; in knowledge-graph contexts, the schema defines classes, properties, cardinality constraints, and axioms that allow OWL-based reasoning over the graph.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-format-standard",
+      "label": "Data Format Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      },
+      {
+        "id": "urn:ngm:class:json-ld",
+        "label": "JSON-LD"
+      },
+      {
+        "id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:data-schema",
+        "label": "Data Schema"
+      },
+      {
+        "id": "urn:ngm:class:owl-class-hierarchy",
+        "label": "OWL Class Hierarchy"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "id": "urn:ngm:class:json-schema",
+        "label": "JSON Schema"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "binary-encoding",
+      "label": "Binary Encoding"
+    },
+    {
+      "slug": "data-layer",
+      "label": "Data Layer"
+    },
+    {
+      "slug": "knowledge-graph",
+      "label": "Knowledge Graph"
+    },
+    {
+      "slug": "metadata-standard",
+      "label": "Metadata Standard"
+    }
+  ]
+}

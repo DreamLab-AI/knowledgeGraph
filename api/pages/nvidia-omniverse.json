@@ -1,0 +1,137 @@
+{
+  "id": "urn:visionflow:page:nvidia-omniverse",
+  "title": "NVIDIA Omniverse",
+  "slug": "nvidia-omniverse",
+  "public": true,
+  "classIri": "urn:ngm:individual:nvidia-omniverse",
+  "domain": "metaverse",
+  "definition": "NVIDIA Omniverse is a real-time 3D simulation and collaboration platform developed by NVIDIA, built on the OpenUSD (Universal Scene Description) standard and designed for creating physically accurate digital twins, collaborative design workflows, and large-scale simulation environments for AI training. It provides a unified compute and rendering fabric that allows multiple applications and users to work simultaneously on shared 3D scenes with physically based rendering, physics simulation, and ray-traced visualisation. Omniverse is deployed across automotive design, industrial digital twins, film and game production pipelines, and as a synthetic data generation platform for training computer vision and robotics AI systems.",
+  "subClassOf": [],
+  "entityType": "Individual",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:embodied-ai-simulation",
+        "label": "Embodied AI Simulation"
+      },
+      {
+        "id": "urn:ngm:class:photorealistic-rendering",
+        "label": "Photorealistic Rendering"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:open-usd",
+        "label": "OpenUSD"
+      },
+      {
+        "id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      },
+      {
+        "id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-twin-framework",
+        "label": "Digital Twin Framework"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:cross-platform-digital-twins",
+        "label": "Cross Platform Digital Twins"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-development",
+      "label": "AI Development"
+    },
+    {
+      "slug": "ai-user",
+      "label": "AI User"
+    },
+    {
+      "slug": "client-side-dco",
+      "label": "Client side DCO"
+    },
+    {
+      "slug": "cross-attention",
+      "label": "Cross Attention"
+    },
+    {
+      "slug": "industrial-metaverse",
+      "label": "Industrial Metaverse"
+    },
+    {
+      "slug": "knowhere",
+      "label": "Knowhere"
+    },
+    {
+      "slug": "language-modeling",
+      "label": "Language Modeling"
+    },
+    {
+      "slug": "model-width",
+      "label": "Model Width"
+    },
+    {
+      "slug": "parametric",
+      "label": "Parametric"
+    },
+    {
+      "slug": "predictive-maintenance",
+      "label": "Predictive Maintenance"
+    },
+    {
+      "slug": "robot-hardware",
+      "label": "Robot Hardware"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "text-generation",
+      "label": "Text Generation"
+    },
+    {
+      "slug": "universal-scene-description",
+      "label": "Universal Scene Description"
+    },
+    {
+      "slug": "vircadia",
+      "label": "Vircadia"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    },
+    {
+      "slug": "rb-0087-safety-standard",
+      "label": "rb 0087 safety standard"
+    }
+  ]
+}

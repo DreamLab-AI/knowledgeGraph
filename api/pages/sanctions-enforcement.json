@@ -1,0 +1,87 @@
+{
+  "id": "urn:visionflow:page:sanctions-enforcement",
+  "title": "Sanctions Enforcement",
+  "slug": "sanctions-enforcement",
+  "public": true,
+  "classIri": "urn:ngm:class:sanctions-enforcement",
+  "domain": "governance",
+  "definition": "Sanctions enforcement is the regulatory and operational process by which financial institutions, governments, and technology platforms identify, screen, and block transactions, assets, and relationships involving sanctioned individuals, entities, or jurisdictions as designated by authorities such as OFAC, the UN Security Council, the European Union, or HM Treasury. It encompasses real-time screening of payment flows against consolidated sanctions lists, asset-freezing procedures, reporting obligations, and the maintenance of audit trails demonstrating compliance. In digital asset and blockchain contexts, sanctions enforcement extends to on-chain transaction monitoring and the blocking of wallet addresses associated with designated parties.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:compliance-framework",
+      "label": "Compliance Framework"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "id": "urn:ngm:class:compliance-audit-trail",
+        "label": "Compliance Audit Trail"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:blockchain-analytics",
+        "label": "Blockchain Analytics"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-reporting",
+        "label": "Regulatory Reporting"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:sanctions-screening",
+        "label": "Sanctions Screening"
+      },
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "id": "urn:ngm:class:fatf",
+        "label": "FATF"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    },
+    {
+      "slug": "cbdcs",
+      "label": "CBDCs"
+    },
+    {
+      "slug": "cyber-security-and-military",
+      "label": "Cyber Security and Military"
+    },
+    {
+      "slug": "travel-rule",
+      "label": "Travel Rule"
+    }
+  ]
+}

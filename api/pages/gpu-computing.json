@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:gpu-computing",
+  "title": "GPU Computing",
+  "slug": "gpu-computing",
+  "public": true,
+  "classIri": "urn:ngm:class:gpu-computing",
+  "domain": "ai",
+  "definition": "GPU Computing is the use of graphics processing units as massively parallel co-processors to accelerate general-purpose computational workloads beyond rendering. Modern GPUs contain thousands of shader cores organised into streaming multiprocessors capable of executing thousands of threads simultaneously, making them ideal for data-parallel algorithms in deep learning training, scientific simulation, and signal processing. Frameworks such as CUDA and OpenCL expose this parallelism to application developers. GPU computing has become the primary driver of progress in large-scale machine learning, enabling the training of models with hundreds of billions of parameters.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:hardware-acceleration",
+      "label": "Hardware Acceleration"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      },
+      {
+        "id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      },
+      {
+        "id": "urn:ngm:class:parallel-processing",
+        "label": "Parallel Processing"
+      },
+      {
+        "id": "urn:ngm:class:compute-shader",
+        "label": "Compute Shader"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:tensor-processing-unit",
+        "label": "Tensor Processing Unit"
+      },
+      {
+        "id": "urn:ngm:class:inference-hardware",
+        "label": "Inference Hardware"
+      },
+      {
+        "id": "urn:ngm:class:render-pipeline",
+        "label": "Render Pipeline"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "collision-detection",
+      "label": "Collision Detection"
+    },
+    {
+      "slug": "comfy-ui-client",
+      "label": "ComfyUI Client"
+    },
+    {
+      "slug": "comfy-ui-for-fashion-and-brands",
+      "label": "comfy-ui-for-fashion-and-brands"
+    },
+    {
+      "slug": "computer-hardware",
+      "label": "Computer Hardware"
+    }
+  ]
+}

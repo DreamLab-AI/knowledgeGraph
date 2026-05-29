@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:ieee-control-systems-society",
+  "title": "IEEE Control Systems Society",
+  "slug": "ieee-control-systems-society",
+  "public": true,
+  "classIri": "urn:ngm:class:ieee-control-systems-society",
+  "domain": "robotics",
+  "definition": "The IEEE Control Systems Society (CSS) is a professional technical organisation within the Institute of Electrical and Electronics Engineers dedicated to advancing the theory, design, and application of control systems across engineering disciplines. It publishes flagship journals including IEEE Transactions on Automatic Control and the IEEE Control Systems Magazine, and organises premier conferences such as the Conference on Decision and Control (CDC). The Society bridges classical control theory with modern machine learning and autonomous systems research, promoting standards, educational resources, and an international community of practitioners. Its technical committees address domains ranging from robotics and aerospace to networked systems and intelligent transportation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:control-system",
+      "label": "Control System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:model-based-control",
+        "label": "Model Based Control"
+      },
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:infra-software-engineering",
+        "label": "Software Engineering"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "control-algorithm",
+      "label": "Control Algorithm"
+    },
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "slug": "feedback-loop",
+      "label": "Feedback Loop"
+    },
+    {
+      "slug": "model-based-control",
+      "label": "Model Based Control"
+    },
+    {
+      "slug": "position-control",
+      "label": "PositionControl"
+    }
+  ]
+}

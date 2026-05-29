@@ -1,0 +1,95 @@
+{
+  "id": "urn:visionflow:page:privacy-protection",
+  "title": "Privacy Protection",
+  "slug": "privacy-protection",
+  "public": true,
+  "classIri": "urn:ngm:class:privacy-protection",
+  "domain": "governance",
+  "definition": "Privacy Protection encompasses the legal frameworks, technical mechanisms, and organisational practices deployed to safeguard individuals' rights to control the collection, use, storage, and disclosure of their personal data. It spans regulatory instruments such as the GDPR, sector-specific legislation, and constitutional provisions, alongside technical controls including data minimisation, pseudonymisation, encryption, access control, and privacy-enhancing computation. Effective privacy protection requires privacy-by-design principles to be embedded in system architecture from inception rather than retrofitted. It is a foundational requirement for trust in digital services, particularly where sensitive personal, biometric, or health data are processed.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-protection",
+      "label": "Data Protection"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:consent-management",
+        "label": "Consent Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      },
+      {
+        "id": "urn:ngm:class:privacy-preserving-data-sharing",
+        "label": "Privacy Preserving Data Sharing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:privacy-enhancing-technologies",
+        "label": "Privacy Enhancing Technologies"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:data-minimisation",
+        "label": "Data Minimisation"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      },
+      {
+        "id": "urn:ngm:class:data-protection-regulation",
+        "label": "Data Protection Regulation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-risks",
+      "label": "AI Risks"
+    },
+    {
+      "slug": "digital-citizenship",
+      "label": "Digital Citizenship"
+    },
+    {
+      "slug": "digital-identity-framework",
+      "label": "Digital Identity Framework"
+    },
+    {
+      "slug": "digital-rights",
+      "label": "Digital Rights"
+    },
+    {
+      "slug": "emotional-analytics-engine",
+      "label": "Emotional Analytics Engine"
+    }
+  ]
+}

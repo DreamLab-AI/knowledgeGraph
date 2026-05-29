@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:benchmarks",
+  "title": "Benchmarks",
+  "slug": "benchmarks",
+  "public": true,
+  "classIri": "urn:ngm:class:benchmarks",
+  "domain": "ai",
+  "definition": "Benchmarks are standardised tasks, datasets, or workloads used to measure and compare the capabilities or performance of systems, models, or components under controlled conditions. In AI they encompass curated evaluation suites that probe language understanding, reasoning, coding, and multimodal perception to produce comparable scores across model generations. In computing and robotics, benchmarks measure throughput, latency, accuracy, and energy efficiency. Benchmark results are published in leaderboards and model cards to support reproducible science and informed procurement decisions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards",
+      "label": "Evaluation benchmarks and leaderboards"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-evaluation-results",
+        "label": "Model Evaluation Results"
+      },
+      {
+        "id": "urn:ngm:class:model-performance",
+        "label": "Model Performance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:evaluation-metric",
+        "label": "Evaluation Metric"
+      },
+      {
+        "id": "urn:ngm:class:performance-metrics",
+        "label": "Performance Metrics"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:benchmark-standard",
+        "label": "Benchmark Standard"
+      },
+      {
+        "id": "urn:ngm:class:software-testing",
+        "label": "Software Testing"
+      },
+      {
+        "id": "urn:ngm:class:adversarial-testing",
+        "label": "Adversarial Testing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-risks",
+      "label": "AI Risks"
+    },
+    {
+      "slug": "artificial-general-intelligence",
+      "label": "Artificial General Intelligence"
+    },
+    {
+      "slug": "reasoning",
+      "label": "Reasoning"
+    }
+  ]
+}

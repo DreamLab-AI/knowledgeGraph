@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:web-scraping",
+  "title": "Web Scraping",
+  "slug": "web-scraping",
+  "public": true,
+  "classIri": "urn:ngm:class:web-scraping",
+  "domain": "ai",
+  "definition": "Web scraping is the automated extraction of structured data from websites by programmatically fetching HTML documents and parsing their content to capture specific fields, tables, or text. It encompasses tools ranging from simple HTTP request libraries to headless browser automation frameworks capable of executing JavaScript and interacting with dynamic single-page applications. Web scraping is widely used to construct training datasets for machine learning models, to aggregate pricing and market intelligence, and to archive public information. Its practice intersects with legal questions around terms of service compliance, copyright, and personal data protection under GDPR and equivalent regulations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-pipeline",
+      "label": "Data Pipeline"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:training-dataset",
+        "label": "Training Dataset"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-pipeline",
+        "label": "Machine Learning Pipeline"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:computer-use-and-browser-agents",
+        "label": "Computer Use and Browser Agents"
+      },
+      {
+        "id": "urn:ngm:class:etl-pipeline",
+        "label": "ETL Pipeline"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-scrapers",
+        "label": "AI Scrapers"
+      },
+      {
+        "id": "urn:ngm:class:browser-automation",
+        "label": "Browser Automation"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:data-processing",
+        "label": "Data Processing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-scrapers",
+      "label": "AI Scrapers"
+    },
+    {
+      "slug": "computer-use-and-browser-agents",
+      "label": "Computer Use and Browser Agents"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    }
+  ]
+}

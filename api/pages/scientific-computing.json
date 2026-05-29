@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:scientific-computing",
+  "title": "Scientific Computing",
+  "slug": "scientific-computing",
+  "public": true,
+  "classIri": "urn:ngm:class:scientific-computing",
+  "domain": "infrastructure",
+  "definition": "Scientific computing is the discipline concerned with the development and application of computational methods and software to solve mathematical and scientific problems that are analytically intractable or whose scale demands automation. It encompasses numerical analysis, algorithm design, software engineering for high-performance systems, and the management of large-scale simulation workflows. Key application domains include climate modelling, computational fluid dynamics, molecular dynamics, finite element analysis, and astronomical simulation. Scientific computing increasingly overlaps with machine learning as data-driven models augment or replace first-principles simulations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:high-performance-computing",
+      "label": "High-Performance Computing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      },
+      {
+        "id": "urn:ngm:class:fluid-simulation",
+        "label": "Fluid Simulation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      },
+      {
+        "id": "urn:ngm:class:simulation-engine",
+        "label": "Simulation Engine"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      },
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "id": "urn:ngm:class:computational-resources",
+        "label": "Computational Resources"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "graphics-api",
+      "label": "Graphics API"
+    },
+    {
+      "slug": "learning-algorithm",
+      "label": "Learning Algorithm"
+    },
+    {
+      "slug": "storage-infrastructure",
+      "label": "Storage Infrastructure"
+    }
+  ]
+}

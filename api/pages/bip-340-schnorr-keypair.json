@@ -1,0 +1,115 @@
+{
+  "id": "urn:visionflow:page:bip-340-schnorr-keypair",
+  "title": "BIP-340 Schnorr Keypair",
+  "slug": "bip-340-schnorr-keypair",
+  "public": true,
+  "classIri": "urn:ngm:class:bip-340-schnorr-keypair",
+  "domain": "blockchain",
+  "definition": "A BIP-340 Schnorr Keypair is the 32-byte public key and associated private key pairing defined by Bitcoin Improvement Proposal 340, which introduced Schnorr signature support to Bitcoin via the Taproot upgrade activated in November 2021. Unlike the earlier ECDSA scheme used in Bitcoin, BIP-340 uses x-only public keys \u2014 just the x-coordinate of the secp256k1 curve point \u2014 reducing on-chain byte footprint and simplifying key aggregation. The scheme is provably secure under the discrete logarithm assumption and supports native key and signature aggregation via protocols such as MuSig2, enabling multi-party signing that is indistinguishable from single-party signing on-chain. BIP-340 keypairs are the cryptographic foundation for Taproot outputs, Tapscript, and the Nostr identity protocol.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptographic-keys",
+      "label": "Cryptographic Keys"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:taproot-assets",
+        "label": "Taproot Assets"
+      },
+      {
+        "id": "urn:ngm:class:multi-sig-governance",
+        "label": "Multi Sig Governance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:bitcoin-improvement-proposals",
+        "label": "Bitcoin Improvement Proposals"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:schnorr-signature",
+        "label": "Schnorr Signature"
+      },
+      {
+        "id": "urn:ngm:class:secp256k1",
+        "label": "secp256k1"
+      },
+      {
+        "id": "urn:ngm:class:bip-340",
+        "label": "BIP-340"
+      },
+      {
+        "id": "urn:ngm:class:bip-341",
+        "label": "BIP-341"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "did-nostr-identity",
+      "label": "DID Nostr Identity"
+    },
+    {
+      "slug": "did-nostr-identity",
+      "label": "DID Nostr Identity"
+    },
+    {
+      "slug": "nostr-protocol",
+      "label": "Nostr Protocol"
+    },
+    {
+      "slug": "sovereign-keyset",
+      "label": "Sovereign Keyset"
+    },
+    {
+      "slug": "sovereign-keyset",
+      "label": "Sovereign Keyset"
+    },
+    {
+      "slug": "sovereign-keyset",
+      "label": "Sovereign Keyset"
+    },
+    {
+      "slug": "sovereign-mesh",
+      "label": "Sovereign Mesh"
+    },
+    {
+      "slug": "uri-canonicaliser",
+      "label": "URI Canonicaliser"
+    },
+    {
+      "slug": "vision-claw-agentic-container",
+      "label": "VisionClaw Agentic Container"
+    },
+    {
+      "slug": "vision-claw-agentic-container",
+      "label": "VisionClaw Agentic Container"
+    },
+    {
+      "slug": "vision-claw-agentic-container",
+      "label": "VisionClaw Agentic Container"
+    }
+  ]
+}

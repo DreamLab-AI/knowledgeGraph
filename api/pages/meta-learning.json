@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:meta-learning",
+  "title": "Meta-Learning",
+  "slug": "meta-learning",
+  "public": true,
+  "classIri": "urn:ngm:class:meta-learning",
+  "domain": "ai",
+  "definition": "Meta-Learning, colloquially described as 'learning to learn', is the study and design of machine learning systems that improve their own learning algorithms or initialisation through experience across multiple tasks, enabling rapid adaptation to new tasks with minimal data. Rather than learning a task directly, a meta-learning algorithm learns a prior or inductive bias that facilitates fast generalisation. Key paradigms include model-agnostic meta-learning (MAML), which optimises for a parameter initialisation that is close to good solutions for many tasks, and metric-based approaches such as prototypical networks that learn a task-agnostic embedding space. Meta-learning is central to few-shot learning, continual learning, and automated machine learning research.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:machine-learning-technique",
+      "label": "Machine Learning Technique"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:parameter-efficient-fine-tuning",
+        "label": "Parameter-Efficient Fine-Tuning"
+      },
+      {
+        "id": "urn:ngm:class:training-dataset",
+        "label": "Training Dataset"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:domain-adaptation",
+        "label": "Domain Adaptation"
+      },
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:self-supervised-learning",
+        "label": "Self-Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:curriculum-learning",
+        "label": "Curriculum Learning"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "auto-ml",
+      "label": "AutoML"
+    },
+    {
+      "slug": "imitation-learning",
+      "label": "Imitation Learning"
+    },
+    {
+      "slug": "learning-algorithm",
+      "label": "Learning Algorithm"
+    }
+  ]
+}

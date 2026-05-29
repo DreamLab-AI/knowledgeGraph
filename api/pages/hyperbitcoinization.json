@@ -1,0 +1,87 @@
+{
+  "id": "urn:visionflow:page:hyperbitcoinization",
+  "title": "Hyperbitcoinization",
+  "slug": "hyperbitcoinization",
+  "public": true,
+  "classIri": "urn:ngm:class:hyperbitcoinization",
+  "domain": "blockchain",
+  "definition": "Hyperbitcoinization is a theoretical macroeconomic scenario, first articulated by Daniel Krawisz in 2014, in which Bitcoin undergoes a self-reinforcing demonetisation of fiat currencies and becomes the dominant global monetary unit. The process is modelled as a currency substitution accelerated by the Cantillon effect: as fiat monetary expansion erodes purchasing power, rational economic actors progressively shift savings and transactional balances into Bitcoin, increasing its adoption and liquidity, which in turn makes it more attractive as a medium of exchange. Unlike hyperinflation, which is an involuntary collapse of a fiat currency, hyperbitcoinization is theorised as a voluntary migration driven by Bitcoin's superior monetary properties \u2014 fixed supply, self-custody, and censorship resistance \u2014 ultimately displacing state-issued money.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bitcoin-value-proposition",
+      "label": "Bitcoin Value Proposition"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:bitcoin-distribution",
+        "label": "Bitcoin Distribution"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:monetary-sovereignty",
+        "label": "Monetary Sovereignty"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:bitcoin-network",
+        "label": "Bitcoin Network"
+      },
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bitcoin-as-money",
+        "label": "Bitcoin As Money"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-standard",
+        "label": "Bitcoin Standard"
+      },
+      {
+        "id": "urn:ngm:class:sound-money",
+        "label": "Sound Money"
+      },
+      {
+        "id": "urn:ngm:class:inflation",
+        "label": "Inflation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-as-money",
+      "label": "Bitcoin As Money"
+    },
+    {
+      "slug": "bitcoin-value-proposition",
+      "label": "Bitcoin Value Proposition"
+    },
+    {
+      "slug": "digital-asset-risks",
+      "label": "Digital Asset Risks"
+    }
+  ]
+}

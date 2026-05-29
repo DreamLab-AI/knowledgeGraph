@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:bip-341",
+  "title": "BIP-341",
+  "slug": "bip-341",
+  "public": true,
+  "classIri": "urn:ngm:class:bip-341",
+  "domain": "blockchain",
+  "definition": "BIP-341 is the Bitcoin Improvement Proposal that defines the Taproot upgrade, introducing Pay-to-Taproot (P2TR) as a new output type that merges script and key-path spending under a unified commitment scheme. It combines Schnorr signatures with Merklised Abstract Syntax Trees (MAST) to allow complex spending conditions to be committed on-chain while only revealing the executed branch at spend time. The proposal activated on the Bitcoin mainnet in November 2021 at block height 709,632. BIP-341 is accompanied by BIP-340 (Schnorr signatures) and BIP-342 (Tapscript), forming the complete Taproot bundle. The upgrade significantly improves privacy, fungibility, and script expressiveness for Bitcoin.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bitcoin-improvement-proposals",
+      "label": "Bitcoin Improvement Proposals"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:bitcoin-network",
+        "label": "Bitcoin Network"
+      },
+      {
+        "id": "urn:ngm:class:script",
+        "label": "Script"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:schnorr-signature",
+        "label": "Schnorr Signature"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-commitment",
+        "label": "Cryptographic Commitment"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bip-340",
+        "label": "BIP-340"
+      },
+      {
+        "id": "urn:ngm:class:taproot-assets",
+        "label": "Taproot Assets"
+      },
+      {
+        "id": "urn:ngm:class:utxo-model",
+        "label": "UTXO Model"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-technical-overview",
+      "label": "Bitcoin Technical Overview"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "slug": "multi-sig-governance",
+      "label": "Multi Sig Governance"
+    },
+    {
+      "slug": "taproot-assets",
+      "label": "Taproot Assets"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    }
+  ]
+}

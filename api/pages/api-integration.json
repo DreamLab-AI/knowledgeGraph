@@ -1,0 +1,106 @@
+{
+  "id": "urn:visionflow:page:api-integration",
+  "title": "API Integration",
+  "slug": "api-integration",
+  "public": true,
+  "classIri": "urn:ngm:class:api-integration",
+  "domain": "infrastructure",
+  "definition": "API Integration is the practice of connecting disparate software systems, services, and data sources through Application Programming Interfaces to enable seamless interoperability and automated data exchange. It encompasses the design, implementation, and maintenance of integration layers that allow applications to communicate via standardised contracts, abstracting the complexity of underlying system differences. Effective API integration reduces manual data transfer, accelerates workflows, and forms the backbone of modern microservices and cloud-native architectures. Integration patterns include synchronous REST and GraphQL calls, asynchronous event-driven messaging, and webhook-based push notifications.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Software Engineering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "id": "urn:ngm:class:api-standard",
+        "label": "API Standard"
+      },
+      {
+        "id": "urn:ngm:class:middleware",
+        "label": "Middleware"
+      },
+      {
+        "id": "urn:ngm:class:authentication-service",
+        "label": "Authentication Service"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      },
+      {
+        "id": "urn:ngm:class:web-socket-protocol",
+        "label": "WebSocket Protocol"
+      },
+      {
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "chatbots",
+      "label": "Chatbots"
+    },
+    {
+      "slug": "comfy-ui-client",
+      "label": "ComfyUI Client"
+    },
+    {
+      "slug": "cross-platform-digital-twins",
+      "label": "Cross Platform Digital Twins"
+    },
+    {
+      "slug": "service-layer",
+      "label": "Service Layer"
+    }
+  ]
+}

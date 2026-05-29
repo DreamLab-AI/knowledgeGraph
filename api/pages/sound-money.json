@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:sound-money",
+  "title": "Sound Money",
+  "slug": "sound-money",
+  "public": true,
+  "classIri": "urn:ngm:class:sound-money",
+  "domain": "finance",
+  "definition": "Sound Money refers to a monetary medium characterised by a stable, predictable supply that cannot be arbitrarily expanded by a government or central authority, thereby preserving purchasing power over time and functioning as a reliable store of value. The concept is historically associated with commodity-backed currencies\u2014particularly the classical gold standard\u2014and in the contemporary context with Bitcoin's algorithmically fixed supply schedule. Sound money theorists, drawing heavily on the Austrian School, argue that monetary expansion through credit creation distorts price signals, misallocates capital, and produces inflationary cycles that systematically transfer wealth from savers to debtors and from the public to the financial sector. The notion stands in direct opposition to the discretionary monetary policy frameworks of modern central banking.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:monetary-system",
+      "label": "Monetary System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:bitcoin-value-proposition",
+        "label": "Bitcoin Value Proposition"
+      },
+      {
+        "id": "urn:ngm:class:hyperbitcoinization",
+        "label": "Hyperbitcoinization"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:monetary-policy-implementation",
+        "label": "Monetary Policy Implementation"
+      },
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:austrian-economics",
+        "label": "Austrian Economics"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-standard",
+        "label": "Bitcoin Standard"
+      },
+      {
+        "id": "urn:ngm:class:inflation",
+        "label": "Inflation"
+      },
+      {
+        "id": "urn:ngm:class:gold",
+        "label": "Gold"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-as-money",
+      "label": "Bitcoin As Money"
+    },
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "bitcoin-value-proposition",
+      "label": "Bitcoin Value Proposition"
+    }
+  ]
+}

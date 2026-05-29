@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:user-engagement",
+  "title": "User Engagement",
+  "slug": "user-engagement",
+  "public": true,
+  "classIri": "urn:ngm:class:user-engagement",
+  "domain": "metaverse",
+  "definition": "User Engagement is the set of qualitative and quantitative dimensions that characterise the depth, frequency, and quality of a person's interaction with a digital product, service, or community. High engagement reflects meaningful value exchange: users return voluntarily, invest attention and effort, and develop lasting behaviours around the product. Engagement metrics\u2014session duration, interaction depth, return rate, and social sharing\u2014serve as proxies for value delivered and are key inputs to product development prioritisation and business model viability. Ethical engagement design balances compelling interaction patterns against the risk of exploiting psychological vulnerabilities through addictive mechanics or manipulative nudging.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:user-experience",
+      "label": "User Experience"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:loyalty-programs",
+        "label": "Loyalty Programs"
+      },
+      {
+        "id": "urn:ngm:class:recommendation-systems",
+        "label": "Recommendation Systems"
+      },
+      {
+        "id": "urn:ngm:class:hyper-personalisation",
+        "label": "Hyper personalisation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:digital-content",
+        "label": "Digital Content"
+      },
+      {
+        "id": "urn:ngm:class:natural-interaction",
+        "label": "Natural Interaction"
+      },
+      {
+        "id": "urn:ngm:class:reward-function",
+        "label": "Reward Function"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:user-interface",
+        "label": "User Interface"
+      },
+      {
+        "id": "urn:ngm:class:social-platform",
+        "label": "Social Platform"
+      },
+      {
+        "id": "urn:ngm:class:creator-economy",
+        "label": "Creator Economy"
+      },
+      {
+        "id": "urn:ngm:class:content-creation",
+        "label": "Content Creation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "emotional-immersion",
+      "label": "Emotional Immersion"
+    },
+    {
+      "slug": "experience-layer",
+      "label": "Experience Layer"
+    },
+    {
+      "slug": "immersion",
+      "label": "Immersion"
+    },
+    {
+      "slug": "personalized-virtual-experiences",
+      "label": "Personalized Virtual Experiences"
+    }
+  ]
+}

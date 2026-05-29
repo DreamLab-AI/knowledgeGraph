@@ -1,0 +1,87 @@
+{
+  "id": "urn:visionflow:page:anon-creds",
+  "title": "AnonCreds",
+  "slug": "anon-creds",
+  "public": true,
+  "classIri": "urn:ngm:class:anon-creds",
+  "domain": "security",
+  "definition": "AnonCreds (Anonymous Credentials) is a verifiable credential format and specification originally developed by the Hyperledger Indy project that enables privacy-preserving identity verification. The scheme allows holders to prove possession of credentials without revealing the credential itself or the issuer's signature, using zero-knowledge proofs. AnonCreds supports selective disclosure, letting a holder share only specific attributes, and predicates that prove a claim (e.g. age over 18) without revealing the underlying value. The specification has been standardised via the AnonCreds Working Group under the Decentralized Identity Foundation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:credential-format-standard",
+      "label": "Credential Format Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:privacy-preserving-technology",
+        "label": "Privacy Preserving Technology"
+      },
+      {
+        "id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:selective-disclosure",
+        "label": "Selective Disclosure"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity-wallet",
+        "label": "Digital Identity Wallet"
+      },
+      {
+        "id": "urn:ngm:class:credential-schema",
+        "label": "Credential Schema"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "decentralized-identifiers",
+      "label": "Decentralized Identifiers"
+    },
+    {
+      "slug": "distributed-identity",
+      "label": "Distributed Identity"
+    },
+    {
+      "slug": "hyperledger-indy",
+      "label": "Hyperledger Indy"
+    },
+    {
+      "slug": "self-sovereign-identity",
+      "label": "Self Sovereign Identity"
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "id": "urn:visionflow:page:hardware-abstraction-layer",
+  "title": "Hardware Abstraction Layer",
+  "slug": "hardware-abstraction-layer",
+  "public": true,
+  "classIri": "urn:ngm:class:hardware-abstraction-layer",
+  "domain": "infrastructure",
+  "definition": "A Hardware Abstraction Layer (HAL) is a software layer that presents a uniform, hardware-independent interface to upper software layers \u2014 operating systems, middleware, or application code \u2014 while encapsulating the vendor-specific, register-level details of physical devices in the implementation beneath it. By isolating hardware dependencies behind a stable API, the HAL enables the same kernel or application binary to run on different processor architectures, microcontroller families, or peripheral configurations without source-code changes. HALs appear throughout the software stack: in embedded microcontroller SDKs (STM32 HAL, Arduino abstraction), in operating-system kernels (Windows HAL.dll), in robotic middleware (ROS Hardware Interface), and in graphics stacks (Vulkan's hardware abstraction over GPU vendors). The HAL pattern is a foundational principle of portable, maintainable system software.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:hardware-abstraction",
+      "label": "Hardware Abstraction"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cross-platform-interoperability",
+        "label": "Cross-Platform Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:system-software",
+        "label": "System Software"
+      },
+      {
+        "id": "urn:ngm:class:middleware-layer",
+        "label": "Middleware Layer"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
+      },
+      {
+        "id": "urn:ngm:class:real-time-operating-system",
+        "label": "Real-Time Operating System"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:middleware",
+        "label": "Middleware"
+      },
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "id": "urn:ngm:class:driver-software",
+        "label": "Driver Software"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "graphics-api",
+      "label": "Graphics API"
+    },
+    {
+      "slug": "hardware-and-edge",
+      "label": "Hardware and Edge"
+    },
+    {
+      "slug": "kinematics-model",
+      "label": "Kinematics Model"
+    },
+    {
+      "slug": "lens-and-camera-calibration",
+      "label": "Lens and Camera Calibration"
+    },
+    {
+      "slug": "open-xr",
+      "label": "OpenXR"
+    },
+    {
+      "slug": "real-time",
+      "label": "Real Time"
+    },
+    {
+      "slug": "robotics-platform",
+      "label": "Robotics Platform"
+    }
+  ]
+}

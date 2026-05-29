@@ -1,0 +1,87 @@
+{
+  "id": "urn:visionflow:page:conflict-resolution",
+  "title": "Conflict Resolution",
+  "slug": "conflict-resolution",
+  "public": true,
+  "classIri": "urn:ngm:class:conflict-resolution",
+  "domain": "governance",
+  "definition": "Conflict Resolution encompasses the structured methods, protocols, and mechanisms used to identify, address, and settle disputes between parties, whether human individuals, organisations, autonomous agents, or distributed systems. In technical contexts, it includes algorithmic approaches for resolving inconsistencies in distributed data systems, consensus protocols that reconcile divergent states, and governance frameworks for mediating disagreements in decentralised organisations. In social and legal contexts it spans negotiation, mediation, arbitration, and adjudication, with increasing automation and AI-assisted facilitation. Across both domains, effective conflict resolution preserves relationships, maintains system integrity, and enables continued collaboration.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dispute-resolution-mechanism",
+      "label": "Dispute Resolution Mechanism"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:community-governance-model",
+        "label": "Community Governance Model"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-governance",
+        "label": "Decentralized Governance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:smart-contract-coordination",
+        "label": "Smart Contract Coordination"
+      },
+      {
+        "id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:arbitration-process",
+        "label": "Arbitration Process"
+      },
+      {
+        "id": "urn:ngm:class:arbitration-decision-engine",
+        "label": "Arbitration Decision Engine"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cognitive-ai",
+      "label": "Cognitive AI"
+    },
+    {
+      "slug": "collaborative-whiteboard",
+      "label": "Collaborative Whiteboard"
+    },
+    {
+      "slug": "dispute-resolution-mechanism",
+      "label": "Dispute Resolution Mechanism"
+    },
+    {
+      "slug": "distributed-decision-making",
+      "label": "Distributed Decision Making"
+    }
+  ]
+}

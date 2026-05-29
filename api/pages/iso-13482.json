@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:iso-13482",
+  "title": "ISO 13482",
+  "slug": "iso-13482",
+  "public": true,
+  "classIri": "urn:ngm:class:iso-13482",
+  "domain": "robotics",
+  "definition": "ISO 13482 is the international standard specifying safety requirements for personal care robots\u2014autonomous or semi-autonomous robots designed to perform tasks that directly assist humans in daily life, including mobility assistance, physical assistance, and person-carrier applications. Published in 2014, the standard defines risk assessment methodologies, protective measure requirements, and verification procedures tailored to the unique hazards of robots operating in close physical proximity to vulnerable populations such as the elderly and disabled. It complements the industrial robot safety standard ISO 10218 and is increasingly referenced in regulatory frameworks for assistive and service robotics.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:functional-safety",
+      "label": "Functional Safety"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:rb-0088-iso-13482-compliance",
+        "label": "rb 0088 iso 13482 compliance"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:robot-safety",
+        "label": "Robot Safety"
+      },
+      {
+        "id": "urn:ngm:class:iso-10218",
+        "label": "ISO 10218"
+      },
+      {
+        "id": "urn:ngm:class:cobot-safety-levels",
+        "label": "Cobot Safety Levels"
+      },
+      {
+        "id": "urn:ngm:class:assistive-robotics",
+        "label": "Assistive Robotics"
+      },
+      {
+        "id": "urn:ngm:class:service-robot",
+        "label": "Service Robot"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ground-robot",
+      "label": "Ground Robot"
+    },
+    {
+      "slug": "mobile-robot-platform",
+      "label": "Mobile Robot Platform"
+    },
+    {
+      "slug": "navigation",
+      "label": "Navigation"
+    },
+    {
+      "slug": "robot-standard",
+      "label": "Robot Standard"
+    }
+  ]
+}

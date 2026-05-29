@@ -1,0 +1,95 @@
+{
+  "id": "urn:visionflow:page:hyperparameter-tuning",
+  "title": "Hyperparameter Tuning",
+  "slug": "hyperparameter-tuning",
+  "public": true,
+  "classIri": "urn:ngm:class:hyperparameter-tuning",
+  "domain": "ai",
+  "definition": "Hyperparameter tuning is the process of searching for the optimal configuration of parameters that govern the training process of a machine learning model, as distinct from the model parameters learned during training itself. Hyperparameters include learning rate, batch size, network depth, regularisation coefficients, optimiser choice, and architectural choices such as kernel size or number of attention heads. The tuning process employs search strategies\u2014grid search, random search, Bayesian optimisation, or evolutionary algorithms\u2014to identify configurations that maximise model performance on a held-out validation set. Efficient hyperparameter tuning is critical to practical machine learning deployment, as model performance is often highly sensitive to these configuration choices.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:machine-learning-model",
+        "label": "Machine Learning Model"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-pipeline",
+        "label": "Machine Learning Pipeline"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:model-evaluation-results",
+        "label": "Model Evaluation Results"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:auto-ml",
+        "label": "AutoML"
+      },
+      {
+        "id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "algorithmic-bias-and-variance",
+      "label": "Algorithmic Bias and Variance"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "feed-forward-network",
+      "label": "Feed Forward Network"
+    },
+    {
+      "slug": "learning-algorithm",
+      "label": "Learning Algorithm"
+    },
+    {
+      "slug": "optimization-algorithms",
+      "label": "Optimization Algorithms"
+    }
+  ]
+}

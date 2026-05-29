@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:bis",
+  "title": "BIS",
+  "slug": "bis",
+  "public": true,
+  "classIri": "urn:ngm:class:bis",
+  "domain": "finance",
+  "definition": "The Bank for International Settlements (BIS) is an international financial institution owned by member central banks, founded in 1930 and headquartered in Basel, Switzerland. It serves as a bank for central banks, providing financial services, research, and a forum for monetary and financial cooperation at the global level. The BIS hosts the Basel Committee on Banking Supervision, which produces globally influential prudential standards such as the Basel Accords, and runs the BIS Innovation Hub, which actively researches central bank digital currencies and financial technology. Through its publications and policy recommendations, the BIS exerts significant influence over global financial regulation and stability frameworks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:central-bank",
+      "label": "Central Bank"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:monetary-policy-implementation",
+        "label": "Monetary Policy Implementation"
+      },
+      {
+        "id": "urn:ngm:class:cross-border-payments",
+        "label": "Cross-Border Payments"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:financial-infrastructure",
+        "label": "Financial Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:financial-system",
+        "label": "Financial System"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cbdcs",
+        "label": "CBDCs"
+      },
+      {
+        "id": "urn:ngm:class:financial-technology",
+        "label": "Financial Technology"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cbdc-frameworks",
+      "label": "CBDC Frameworks"
+    },
+    {
+      "slug": "digital-asset-risks",
+      "label": "Digital Asset Risks"
+    },
+    {
+      "slug": "economics",
+      "label": "Economics"
+    },
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    },
+    {
+      "slug": "money",
+      "label": "Money"
+    },
+    {
+      "slug": "regulatory-reporting",
+      "label": "Regulatory Reporting"
+    },
+    {
+      "slug": "securities-regulation",
+      "label": "Securities Regulation"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:automated-compliance",
+  "title": "Automated Compliance",
+  "slug": "automated-compliance",
+  "public": true,
+  "classIri": "urn:ngm:class:automated-compliance",
+  "domain": "governance",
+  "definition": "Automated Compliance refers to the use of software systems and rule engines to continuously monitor, evaluate, and enforce regulatory requirements without manual intervention. It encompasses real-time policy checking, evidence collection, and exception reporting across business processes and IT systems. By embedding compliance logic directly into workflows, organisations can dramatically reduce audit burden and human error. The discipline draws on regulatory technology, policy engines, and audit trails to provide defensible evidence of conformance. It is particularly vital in heavily regulated sectors such as financial services, healthcare, and data protection.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:compliance-framework",
+      "label": "Compliance Framework"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:compliance-verification",
+        "label": "Compliance Verification"
+      },
+      {
+        "id": "urn:ngm:class:compliance-audit-trail",
+        "label": "Compliance Audit Trail"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:policy-engine",
+        "label": "Policy Engine"
+      },
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-technology",
+        "label": "Regulatory Technology"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "asset-registry",
+      "label": "Asset Registry"
+    },
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "etsi-domain-governance-and-compliance",
+      "label": "ETSI Domain: Governance & Compliance"
+    },
+    {
+      "slug": "virtual-securities-offering-vso",
+      "label": "Virtual Securities Offering (VSO)"
+    }
+  ]
+}

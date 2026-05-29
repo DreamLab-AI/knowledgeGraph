@@ -1,0 +1,111 @@
+{
+  "id": "urn:visionflow:page:gitcoin",
+  "title": "Gitcoin",
+  "slug": "gitcoin",
+  "public": true,
+  "classIri": "urn:ngm:class:gitcoin",
+  "domain": "blockchain",
+  "definition": "Gitcoin is a blockchain-based platform founded in 2017 that funds open-source software development and public goods through decentralised grant programmes, bounties, and quadratic funding rounds. It popularised the application of quadratic funding mechanisms to allocate matching pools democratically, amplifying contributions from a broad base of small donors relative to large single donors. Gitcoin has distributed tens of millions of dollars to Ethereum ecosystem developers and has expanded into identity and Sybil resistance through the Gitcoin Passport credential system.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:public-goods-funding",
+      "label": "Public Goods Funding"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:grant-programs",
+        "label": "Grant Programs"
+      },
+      {
+        "id": "urn:ngm:class:retroactive-public-goods-funding",
+        "label": "Retroactive Public Goods Funding"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gitcoin-passport",
+        "label": "Gitcoin Passport"
+      },
+      {
+        "id": "urn:ngm:class:sybil-resistance",
+        "label": "Sybil Resistance"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:quadratic-funding",
+        "label": "Quadratic Funding"
+      },
+      {
+        "id": "urn:ngm:class:dao",
+        "label": "DAO"
+      },
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "climate-action-dao",
+      "label": "Climate Action DAO"
+    },
+    {
+      "slug": "conviction-voting",
+      "label": "Conviction Voting"
+    },
+    {
+      "slug": "dao-analytics",
+      "label": "DAO Analytics"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "delegate-democracy",
+      "label": "Delegate Democracy"
+    },
+    {
+      "slug": "grant-programs",
+      "label": "Grant Programs"
+    },
+    {
+      "slug": "quadratic-voting",
+      "label": "Quadratic Voting"
+    },
+    {
+      "slug": "reputation-system",
+      "label": "Reputation System"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "treasury-management",
+      "label": "Treasury Management"
+    }
+  ]
+}

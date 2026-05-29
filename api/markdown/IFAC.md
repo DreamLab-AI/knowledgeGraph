@@ -1,0 +1,59 @@
+public:: true
+
+# IFAC
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:ifac",
+  "@type": "Page",
+  "vc:slug": "ifac",
+  "title": "IFAC",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 2
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ifac",
+  "@type": "Class",
+  "label": "IFAC",
+  "definition": "The International Federation of Automatic Control (IFAC) is the world's primary international organisation for the science and engineering of automatic control, founded in 1957 and comprising national member organisations from over fifty countries. IFAC coordinates research, education, and standards activity across all aspects of control theory and its applications, including process control, robotics, mechatronics, aerospace, and intelligent transportation. It convenes the triennial IFAC World Congress and sponsors over forty technical committees covering specialised control domains. IFAC's publications and conference proceedings constitute a core reference body for the global control engineering community.",
+  "domain": "robotics",
+  "maturity": "established",
+  "subClassOf": [{"@id": "urn:ngm:class:control-system", "label": "Control System"}],
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:ieee-control-systems-society", "label": "IEEE Control Systems Society"},
+      {"@id": "urn:ngm:class:industrial-automation", "label": "IndustrialAutomation"},
+      {"@id": "urn:ngm:class:control-theory", "label": "Control Theory"},
+      {"@id": "urn:ngm:class:safety-plc", "label": "Safety PLC"},
+      {"@id": "urn:ngm:class:pid-controller", "label": "Pid Controller"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:iec-61131-3", "label": "IEC 61131-3"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:real-time-control", "label": "Real-Time Control"},
+      {"@id": "urn:ngm:class:adaptive-control", "label": "Adaptive Control"},
+      {"@id": "urn:ngm:class:feedback-control", "label": "Feedback Control"}
+    ]
+  },
+  "quality": 0.8
+}
+```
+
+- ### Definition
+  - IFAC (International Federation of Automatic Control) is the pre-eminent global body coordinating research and standards in [[Control Theory]] and its applications across [[Industrial Automation]], robotics, and intelligent systems, convening triennial world congresses that set the research agenda.
+- ### Relationships
+  - IFAC works in parallel with the [[IEEE Control Systems Society]], the other major professional body in automatic control, though IFAC's scope is explicitly international and multi-disciplinary. Its technical committees cover [[Real-Time Control]], [[Adaptive Control]], and [[Feedback Control]] design methodologies, while its industrial liaison activities intersect with standards such as [[IEC 61131-3]] for programmable logic controllers. Practical control artefacts such as the [[Pid Controller]] and [[Safety PLC]] represent the engineering application layer that IFAC's theoretical outputs inform.
+- ### Content
+  - IFAC was founded in Paris in 1957 during the early Cold War period, when feedback control and cybernetics were emerging as foundational disciplines for both aerospace and industrial automation. Its creation reflected the recognition that automatic control was a strategic technology requiring coordinated international research effort, transcending national scientific traditions. The founding congress in Moscow in 1960 established the triennial World Congress pattern that continues to this day, rotating across member nations.
+
+  - The organisation's technical structure comprises over forty technical committees grouped into coordinating committees covering systems and signals, design methods, computers and control, mechanical and electro-mechanical systems, process and power systems, transportation and vehicle systems, and applications. Each committee organises symposia, workshops, and summer schools that collectively produce thousands of peer-reviewed papers per triennium. This output is disseminated through IFAC's publishing partnership with Elsevier, which produces the IFAC-PapersOnLine open-access proceedings.
+
+  - IFAC's influence on control engineering practice is most visible through its role in disseminating algorithmic advances—adaptive control, model predictive control, robust control, and nonlinear control theory—from academic research into industrial implementation. Many control design methodologies now embedded in commercial engineering software (MATLAB/Simulink, Siemens TIA Portal) trace their theoretical lineage through IFAC publications. The federation has also engaged increasingly with emerging intersections of control with machine learning, AI safety, and autonomous systems.
+
+  - In the current era, IFAC grapples with the transformation of control engineering by deep learning and data-driven methods. Traditional model-based [[Feedback Control]] design requires plant models derived from physical principles or system identification experiments; data-driven alternatives learn control policies directly from observations. IFAC technical committees on learning systems and intelligent control address this transition, while raising questions about safety, interpretability, and formal verification that apply equally to [[Real-Time Control]] in safety-critical industrial and robotic domains.

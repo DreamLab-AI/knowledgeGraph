@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:design-thinking",
+  "title": "Design Thinking",
+  "slug": "design-thinking",
+  "public": true,
+  "classIri": "urn:ngm:class:design-thinking",
+  "domain": "governance",
+  "definition": "Design Thinking is a human-centred, iterative problem-solving methodology that prioritises deep empathy with end users, rapid ideation, and prototype-driven experimentation to arrive at innovative solutions. Originating in industrial design and formalised at Stanford's d.school, it proceeds through five non-linear phases: empathise, define, ideate, prototype, and test. The approach deliberately suspends assumptions and defers judgement during divergent thinking stages, producing a rich solution space before converging on testable prototypes. Design Thinking is now applied widely in product development, service design, organisational strategy, and technology innovation contexts.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:knowledge-representation",
+      "label": "Knowledge Representation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:product-design",
+        "label": "Product Design"
+      },
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      },
+      {
+        "id": "urn:ngm:class:generative-design-tool",
+        "label": "Generative Design Tool"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:user-research",
+        "label": "User Research"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-design",
+        "label": "Collaborative Design"
+      },
+      {
+        "id": "urn:ngm:class:design-software",
+        "label": "Design Software"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:information-architecture",
+        "label": "Information Architecture"
+      },
+      {
+        "id": "urn:ngm:class:accessible-design",
+        "label": "Accessible Design"
+      },
+      {
+        "id": "urn:ngm:class:etsi-domain-human-interface-ux",
+        "label": "ETSI_Domain_Human_Interface___UX"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "3-d-and-4-d",
+      "label": "3D and 4D"
+    },
+    {
+      "slug": "ai-user",
+      "label": "AI User"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "collaborative-whiteboard",
+      "label": "Collaborative Whiteboard"
+    },
+    {
+      "slug": "product-design",
+      "label": "Product Design"
+    }
+  ]
+}

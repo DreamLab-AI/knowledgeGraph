@@ -1,0 +1,118 @@
+{
+  "id": "urn:visionflow:page:oecd-ai-principles",
+  "title": "OECD AI Principles",
+  "slug": "oecd-ai-principles",
+  "public": true,
+  "classIri": "urn:ngm:class:oecd-ai-principles",
+  "domain": "governance",
+  "definition": "The OECD AI Principles are a set of five intergovernmental policy guidelines adopted by the Organisation for Economic Co-operation and Development in May 2019 and subsequently endorsed by G20 leaders. The principles address inclusive growth and sustainable development, human-centred values and fairness, transparency and explainability, robustness security and safety, and accountability. They represent the first intergovernmental standard on AI and have influenced national AI strategies and regulatory frameworks worldwide. The principles are operationalised through the OECD AI Policy Observatory, which tracks AI policies across member and partner countries.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:responsible-ai-principles",
+      "label": "Responsible AI Principles"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      },
+      {
+        "id": "urn:ngm:class:human-rights",
+        "label": "Human Rights"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-adoption",
+      "label": "AI Adoption"
+    },
+    {
+      "slug": "ai-ethics-checklist",
+      "label": "AI Ethics Checklist"
+    },
+    {
+      "slug": "ai-governance-framework",
+      "label": "AI Governance Framework"
+    },
+    {
+      "slug": "ai-risks",
+      "label": "AI Risks"
+    },
+    {
+      "slug": "accountable-party",
+      "label": "Accountable Party"
+    },
+    {
+      "slug": "asia-pacific-regulation",
+      "label": "Asia Pacific Regulation"
+    },
+    {
+      "slug": "convolutional-neural-network",
+      "label": "Convolutional Neural Network"
+    },
+    {
+      "slug": "cross-border-compliance",
+      "label": "Cross Border Compliance"
+    },
+    {
+      "slug": "redress-procedure",
+      "label": "Redress Procedure"
+    },
+    {
+      "slug": "responsible-ai-principles",
+      "label": "Responsible AI Principles"
+    },
+    {
+      "slug": "stakeholder-engagement-in-ai",
+      "label": "Stakeholder Engagement in AI"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:target-tracking",
+  "title": "Target Tracking",
+  "slug": "target-tracking",
+  "public": true,
+  "classIri": "urn:ngm:class:target-tracking",
+  "domain": "ai",
+  "definition": "Target tracking is a computational and signal-processing discipline concerned with estimating the state \u2014 typically position, velocity, and orientation \u2014 of one or more moving objects over time from sequences of noisy sensor observations. It encompasses algorithms such as Kalman filters, particle filters, and multi-hypothesis trackers, applied across radar, sonar, computer vision, and LiDAR modalities. Applications span aerospace surveillance, autonomous vehicle perception, robotic manipulation, sports analytics, and augmented reality. Modern deep-learning-based trackers jointly perform detection and tracking, achieving robust performance in complex, cluttered environments.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:object-detection-and-tracking",
+      "label": "Object Detection and Tracking"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:human-tracking-and-slam-capture",
+        "label": "Human tracking and SLAM capture"
+      },
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:trajectory-tracking",
+        "label": "Trajectory Tracking"
+      },
+      {
+        "id": "urn:ngm:class:spatial-tracking-system",
+        "label": "Spatial Tracking System"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:motion-tracking",
+        "label": "Motion Tracking"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bayes-filter",
+      "label": "Bayes Filter"
+    },
+    {
+      "slug": "carbon-footprint-indicator",
+      "label": "Carbon Footprint Indicator"
+    },
+    {
+      "slug": "gaze-control",
+      "label": "Gaze Control"
+    },
+    {
+      "slug": "particle-filter",
+      "label": "Particle Filter"
+    }
+  ]
+}

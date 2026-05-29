@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:policy-enforcement-point",
+  "title": "Policy Enforcement Point",
+  "slug": "policy-enforcement-point",
+  "public": true,
+  "classIri": "urn:ngm:class:policy-enforcement-point",
+  "domain": "security",
+  "definition": "A Policy Enforcement Point (PEP) is an architectural component in access control systems that intercepts resource access requests, forwards them to a Policy Decision Point (PDP) for authorisation evaluation, and then enforces the resulting permit or deny decision. The PEP\u2013PDP separation\u2014defined in the XACML standard and central to attribute-based access control (ABAC) architectures\u2014decouples policy logic from enforcement infrastructure, enabling centralised policy management and consistent enforcement across heterogeneous systems. In zero-trust architectures, every network transaction passes through a PEP, which may be implemented as a reverse proxy, API gateway, service mesh sidecar, or network firewall. The model extends naturally to identity-aware proxies, software-defined perimeters, and AI governance enforcement layers.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:access-control",
+      "label": "Access Control"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:zero-trust-architecture-zta",
+        "label": "Zero-Trust Architecture (ZTA)"
+      },
+      {
+        "id": "urn:ngm:class:privileged-access-management",
+        "label": "Privileged Access Management"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:oauth-2-0",
+        "label": "OAuth 2.0"
+      },
+      {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:policy-enforcement",
+        "label": "Policy Enforcement"
+      },
+      {
+        "id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      },
+      {
+        "id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      },
+      {
+        "id": "urn:ngm:class:access-control-system",
+        "label": "Access Control System"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "api-gateway",
+      "label": "API Gateway"
+    },
+    {
+      "slug": "access-control-system",
+      "label": "Access Control System"
+    },
+    {
+      "slug": "trust-framework",
+      "label": "Trust Framework"
+    },
+    {
+      "slug": "zero-trust-architecture-zta",
+      "label": "Zero-Trust Architecture (ZTA)"
+    }
+  ]
+}

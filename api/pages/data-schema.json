@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:data-schema",
+  "title": "Data Schema",
+  "slug": "data-schema",
+  "public": true,
+  "classIri": "urn:ngm:class:data-schema",
+  "domain": "ai",
+  "definition": "A Data Schema is a formal specification that defines the structure, types, constraints, and semantics of data within a system or exchange protocol. It enumerates fields, their data types, cardinality rules, allowed values, and relationships between entities, enabling machines to validate conformance and enabling humans to understand data contracts. Data schemas are expressed in formalisms such as JSON Schema, XML Schema Definition, RDF SHACL, or OWL, and are versioned to manage evolution over time. They underpin interoperability between systems, database design, API contracts, and linked-data publishing.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:schema-definition",
+      "label": "Schema Definition"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "id": "urn:ngm:class:schema-registry",
+        "label": "Schema Registry"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:json-schema",
+        "label": "JSON Schema"
+      },
+      {
+        "id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      },
+      {
+        "id": "urn:ngm:class:json-ld",
+        "label": "JSON-LD"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:metadata-schema",
+        "label": "Metadata Schema"
+      },
+      {
+        "id": "urn:ngm:class:credential-schema",
+        "label": "Credential Schema"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "conversion-pipeline",
+      "label": "Conversion Pipeline"
+    },
+    {
+      "slug": "data-fabric-architecture",
+      "label": "Data Fabric Architecture"
+    },
+    {
+      "slug": "data-integration-interface",
+      "label": "Data Integration Interface"
+    },
+    {
+      "slug": "user-consent-token",
+      "label": "User Consent Token"
+    }
+  ]
+}

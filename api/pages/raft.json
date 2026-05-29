@@ -1,0 +1,91 @@
+{
+  "id": "urn:visionflow:page:raft",
+  "title": "Raft",
+  "slug": "raft",
+  "public": true,
+  "classIri": "urn:ngm:class:raft",
+  "domain": "infrastructure",
+  "definition": "Raft is a distributed consensus algorithm designed explicitly for understandability, introduced by Diego Ongaro and John Ousterhout at USENIX ATC 2014 as a more comprehensible alternative to the Paxos family of protocols. Raft decomposes the consensus problem into three relatively independent sub-problems: leader election, log replication, and safety. A Raft cluster maintains a replicated log of commands through a strong leader that serialises all writes; followers replicate the leader's log entries and redirect client requests. Leader election uses randomised timeouts to avoid split votes. Raft has become the dominant consensus algorithm in modern distributed systems infrastructure, underpinning etcd, CockroachDB, TiKV, Consul, and many other widely deployed systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:consensus-algorithm",
+      "label": "Consensus Algorithm"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:distributed-system-architecture",
+        "label": "Distributed System Architecture"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerant-system",
+        "label": "Byzantine Fault Tolerant System"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:data-replication",
+        "label": "Data Replication"
+      },
+      {
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:raft-consensus",
+        "label": "RAFT Consensus"
+      },
+      {
+        "id": "urn:ngm:class:consensus-protocol",
+        "label": "Consensus Protocol"
+      },
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "distributed-computing",
+      "label": "Distributed Computing"
+    },
+    {
+      "slug": "fault-tolerance",
+      "label": "Fault Tolerance"
+    },
+    {
+      "slug": "private-blockchain",
+      "label": "Private Blockchain"
+    },
+    {
+      "slug": "state-machine",
+      "label": "State Machine"
+    }
+  ]
+}

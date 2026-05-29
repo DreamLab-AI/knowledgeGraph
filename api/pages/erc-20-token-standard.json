@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:erc-20-token-standard",
+  "title": "ERC-20 Token Standard",
+  "slug": "erc-20-token-standard",
+  "public": true,
+  "classIri": "urn:ngm:class:erc-20-token-standard",
+  "domain": "blockchain",
+  "definition": "The ERC-20 Token Standard is the foundational Ethereum Request for Comments specification that defines a common interface for fungible tokens on the Ethereum blockchain, enabling seamless interoperability between token contracts, wallets, decentralised exchanges, and other smart contract systems. Proposed by Fabian Vogelsteller in 2015 and formalised as an Ethereum Improvement Proposal, it specifies six mandatory functions\u2014totalSupply, balanceOf, transfer, transferFrom, approve, and allowance\u2014and two events. ERC-20 standardisation catalysed the 2017 ICO boom and remains the dominant token interface in decentralised finance, with thousands of tokens deployed to this specification. Its simplicity has made it the basis for numerous extended standards including ERC-777, ERC-1400, and ERC-3643.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:asset-tokenisation",
+        "label": "Asset Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-exchange-dex",
+        "label": "Decentralized Exchange (DEX)"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:enterprise-smart-contracts",
+        "label": "Enterprise Smart Contracts"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      },
+      {
+        "id": "urn:ngm:class:fungible-token",
+        "label": "Fungible Token"
+      },
+      {
+        "id": "urn:ngm:class:erc-721",
+        "label": "ERC-721"
+      },
+      {
+        "id": "urn:ngm:class:erc1400-standard",
+        "label": "ERC1400 Standard"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:utility-token",
+        "label": "Utility Token"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "decentralized-finance-de-fi",
+      "label": "Decentralized Finance (DeFi)"
+    },
+    {
+      "slug": "delegate-democracy",
+      "label": "Delegate Democracy"
+    },
+    {
+      "slug": "gold",
+      "label": "Gold"
+    },
+    {
+      "slug": "liquidity-provision",
+      "label": "Liquidity Provision"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    }
+  ]
+}

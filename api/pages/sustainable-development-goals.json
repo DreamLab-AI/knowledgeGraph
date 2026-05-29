@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:sustainable-development-goals",
+  "title": "Sustainable Development Goals",
+  "slug": "sustainable-development-goals",
+  "public": true,
+  "classIri": "urn:ngm:class:sustainable-development-goals",
+  "domain": "governance",
+  "definition": "The Sustainable Development Goals (SDGs) are a set of 17 interlinked global goals adopted by all United Nations member states in 2015 as part of the 2030 Agenda for Sustainable Development, spanning the elimination of poverty, zero hunger, quality education, gender equality, clean energy, decent work, reduced inequalities, climate action, and partnerships for implementation. Each goal is operationalised through targets and indicators that define measurable progress benchmarks, providing a shared framework for national governments, international organisations, civil society, and the private sector to align strategies and report progress. The SDGs extend and deepen the Millennium Development Goals, recognising that sustainable development requires integrated action across social, economic, and environmental dimensions simultaneously.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sustainable-development",
+      "label": "Sustainable Development"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:sustainability-reporting",
+        "label": "SustainabilityReporting"
+      },
+      {
+        "id": "urn:ngm:class:environmental-sustainability",
+        "label": "Environmental Sustainability"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      },
+      {
+        "id": "urn:ngm:class:carbon-accounting",
+        "label": "Carbon Accounting"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:esg-investing",
+        "label": "ESG Investing"
+      },
+      {
+        "id": "urn:ngm:class:global-inequality",
+        "label": "Global Inequality"
+      },
+      {
+        "id": "urn:ngm:class:environmental-standards",
+        "label": "Environmental Standards"
+      },
+      {
+        "id": "urn:ngm:class:societal-and-environmental-wellbeing",
+        "label": "Societal and Environmental Wellbeing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "adoption-of-convergent-technologies",
+      "label": "Adoption of Convergent Technologies"
+    },
+    {
+      "slug": "ethical-sourcing",
+      "label": "Ethical Sourcing"
+    },
+    {
+      "slug": "global-inequality",
+      "label": "Global Inequality"
+    },
+    {
+      "slug": "green-blockchain-initiatives",
+      "label": "Green Blockchain Initiatives"
+    }
+  ]
+}

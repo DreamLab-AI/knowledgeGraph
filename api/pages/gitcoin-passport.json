@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:gitcoin-passport",
+  "title": "Gitcoin Passport",
+  "slug": "gitcoin-passport",
+  "public": true,
+  "classIri": "urn:ngm:class:gitcoin-passport",
+  "domain": "blockchain",
+  "definition": "Gitcoin Passport is a decentralised identity and sybil-resistance protocol that aggregates verifiable credentials from diverse identity providers\u2014including Web2 platforms, biometric services, and on-chain activity records\u2014into a composable score that attests to the humanness and trustworthiness of a wallet address. It is used primarily to protect quadratic funding rounds and other public goods allocation mechanisms from manipulation by coordinated sybil attacks. The passport stores credentials using the Ceramic Network and Decentralised Identifier standards, enabling portability across Web3 applications without centralising personal data. Its stamp-based architecture allows flexible weighting of identity evidence according to the risk tolerance of each application.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:decentralized-identity-did",
+      "label": "Decentralized Identity (DID)"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:quadratic-funding",
+        "label": "Quadratic Funding"
+      },
+      {
+        "id": "urn:ngm:class:public-goods-funding",
+        "label": "Public Goods Funding"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gitcoin",
+        "label": "Gitcoin"
+      },
+      {
+        "id": "urn:ngm:class:did-document",
+        "label": "DID Document"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:sybil-resistance",
+        "label": "Sybil Resistance"
+      },
+      {
+        "id": "urn:ngm:class:sybil-attack",
+        "label": "Sybil Attack"
+      },
+      {
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credential-vc",
+        "label": "Verifiable Credential (VC)"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "dao-analytics",
+      "label": "DAO Analytics"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "grant-programs",
+      "label": "Grant Programs"
+    },
+    {
+      "slug": "quadratic-voting",
+      "label": "Quadratic Voting"
+    },
+    {
+      "slug": "reputation-system",
+      "label": "Reputation System"
+    },
+    {
+      "slug": "snapshot-voting",
+      "label": "Snapshot Voting"
+    }
+  ]
+}

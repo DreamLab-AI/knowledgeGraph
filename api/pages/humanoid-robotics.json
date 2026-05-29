@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:humanoid-robotics",
+  "title": "Humanoid Robotics",
+  "slug": "humanoid-robotics",
+  "public": true,
+  "classIri": "urn:ngm:class:humanoid-robotics",
+  "domain": "robotics",
+  "definition": "Humanoid robotics is the subfield of robotics concerned with the design, construction, and control of robots that exhibit a human-like morphology, typically including a bipedal lower body and articulated upper limbs. Such robots are engineered to operate in environments built for humans, using the same tools, furniture, and physical interfaces. Key technical challenges include stable bipedal locomotion across uneven terrain, dexterous manipulation of varied objects, real-time perception and planning under uncertainty, and safe physical interaction with humans. Advances in machine learning and actuator technology have accelerated commercial deployments in manufacturing, logistics, and care.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:humanoid-robot",
+      "label": "Humanoid Robot"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:assistive-robotics",
+        "label": "Assistive Robotics"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-robot",
+        "label": "Collaborative Robot"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:legged-locomotion",
+        "label": "Legged Locomotion"
+      },
+      {
+        "id": "urn:ngm:class:manipulation",
+        "label": "Manipulation"
+      },
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "id": "urn:ngm:class:embodied-ai",
+        "label": "Embodied AI"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "control-algorithm",
+      "label": "Control Algorithm"
+    },
+    {
+      "slug": "embodied-minds",
+      "label": "Embodied Minds"
+    },
+    {
+      "slug": "exteroceptive-sensor",
+      "label": "Exteroceptive Sensor"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    }
+  ]
+}

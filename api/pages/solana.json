@@ -1,0 +1,178 @@
+{
+  "id": "urn:visionflow:page:solana",
+  "title": "Solana",
+  "slug": "solana",
+  "public": true,
+  "classIri": "urn:ngm:individual:solana",
+  "domain": "blockchain",
+  "definition": "Solana is a high-performance layer-1 blockchain designed by Anatoly Yakovenko and launched in 2020, distinguished by its Proof of History consensus innovation that creates a cryptographic clock enabling validators to agree on transaction order without communicating timestamps. Combined with a parallel transaction processing architecture called Sealevel and a pipeline optimisation called the Gulf Stream, Solana achieves sustained throughput of tens of thousands of transactions per second with sub-second finality. It is a major platform for DeFi protocols, NFT marketplaces, and consumer applications requiring low transaction costs.",
+  "subClassOf": [],
+  "entityType": "Individual",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:nft-marketplace",
+        "label": "NFT Marketplace"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:blockchain-gaming",
+        "label": "Blockchain Gaming"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:validator-node",
+        "label": "Validator Node"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:proof-of-history",
+        "label": "Proof of History"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract-platform",
+        "label": "Smart Contract Platform"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    },
+    {
+      "slug": "bitcoin-etf",
+      "label": "Bitcoin ETF"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "blockchain-oracle",
+      "label": "Blockchain Oracle"
+    },
+    {
+      "slug": "carbon-neutral-blockchain",
+      "label": "Carbon Neutral Blockchain"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "consortium-blockchain",
+      "label": "Consortium Blockchain"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "cryptographic-domain",
+      "label": "Cryptographic Domain"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "decentralized-exchange",
+      "label": "Decentralized Exchange"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "slug": "enterprise-smart-contracts",
+      "label": "Enterprise Smart Contracts"
+    },
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    },
+    {
+      "slug": "green-blockchain-initiatives",
+      "label": "Green Blockchain Initiatives"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "private-blockchain",
+      "label": "Private Blockchain"
+    },
+    {
+      "slug": "proof-of-stake-sustainability",
+      "label": "Proof Of Stake Sustainability"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof Of Work"
+    },
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    },
+    {
+      "slug": "stable-coins",
+      "label": "Stable Coins"
+    },
+    {
+      "slug": "sustainable-consensus",
+      "label": "Sustainable Consensus"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "token-economics-domain",
+      "label": "Token Economics Domain"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    },
+    {
+      "slug": "wallet",
+      "label": "Wallet"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

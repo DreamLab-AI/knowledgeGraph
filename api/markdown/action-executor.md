@@ -1,0 +1,14 @@
+- ### Definition
+  - An Action Executor is the effector subsystem of an [[Agentic AI]] system that converts abstract plans into concrete [[Tool Use]] invocations, environment mutations, and observable side effects managed through an [[Orchestration]] layer.
+
+- ### Relationships
+  - The Action Executor depends on [[Function Calling]] and [[Tool Use]] interfaces to dispatch operations, and operates within a [[Runtime Environment]] that provides sandboxing and resource limits. It enables the broader [[Agentic Workflow]] by closing the perception-action loop, and is coordinated by [[Orchestration]] infrastructure that sequences parallel or dependent steps. It relates closely to [[Agent]] architectures and [[Task Planning]] subsystems that supply the action sequences it executes. [[Automated Planning]] modules produce the plans the executor carries out.
+
+- ### Content
+  - An Action Executor sits at the boundary between deliberation and effect in agent systems. When a reasoning module decides that a file should be written, an API queried, or a sub-agent spawned, it is the Action Executor that serialises that intent into a concrete call, manages authentication tokens, catches transient errors, and reports results upstream. This separation of concerns allows planners to remain stateless and compositional while execution concerns—retries, timeouts, rate limiting—are concentrated in one place.
+
+  - Modern Action Executors implement a tool-registry pattern: they maintain a catalogue of available tools described by [[Function Calling]] schemas, validate arguments before dispatch, and coerce outputs into typed structures the planner can consume. Security boundaries are enforced by restricting which tools are available in a given context, ensuring that an agent operating on behalf of an unprivileged user cannot invoke privileged operations.
+
+  - In multi-agent systems the Action Executor may itself delegate to specialised sub-executors, forming a hierarchical dispatch graph. This allows high-throughput parallelism where independent actions are dispatched concurrently across different [[Runtime Environment]] instances. Observability hooks emit structured events that feed into monitoring dashboards, enabling operators to audit every action taken by an autonomous system and roll back side effects when necessary.
+
+  - As agentic systems grow more capable, the design of the Action Executor becomes a key safety surface. Confirming that requested actions are within scope, logging all invocations immutably, and enforcing a principle of least privilege are the canonical safety properties. Standards for tool schemas and execution contracts are emerging from the [[Agentic Workflow]] ecosystem to make Action Executors interoperable across different AI frameworks.

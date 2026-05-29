@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:cross-chain-interoperability",
+  "title": "Cross-Chain Interoperability",
+  "slug": "cross-chain-interoperability",
+  "public": true,
+  "classIri": "urn:ngm:class:cross-chain-interoperability",
+  "domain": "blockchain",
+  "definition": "Cross-Chain Interoperability refers to the technical capacity for distinct blockchain networks to communicate, transfer assets, and share state without relying on a centralised intermediary. It encompasses atomic swaps, cross-chain messaging protocols, relay chains, bridge smart contracts, and inter-blockchain communication standards such as Cosmos IBC and Polkadot's XCMP. Achieving trustless interoperability requires solving the heterogeneous consensus problem\u2014two chains with different finality guarantees must reach agreement on the validity of a cross-chain event\u2014which is a non-trivial distributed systems challenge. The field is critical to the vision of a composable multi-chain ecosystem in which assets and logic can flow freely across sovereign networks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cross-chain-governance",
+        "label": "Cross-Chain Governance"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cross-chain-messaging",
+        "label": "Cross-Chain Messaging"
+      },
+      {
+        "id": "urn:ngm:class:interoperability-protocol",
+        "label": "Interoperability Protocol"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      },
+      {
+        "id": "urn:ngm:class:cosmos-ibc",
+        "label": "Cosmos IBC"
+      },
+      {
+        "id": "urn:ngm:class:polkadot",
+        "label": "Polkadot"
+      },
+      {
+        "id": "urn:ngm:class:atomic-swap",
+        "label": "Atomic Swap"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "atomic-swap",
+      "label": "Atomic Swap"
+    },
+    {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    },
+    {
+      "slug": "blockchain-protocol",
+      "label": "Blockchain Protocol"
+    },
+    {
+      "slug": "enterprise-smart-contracts",
+      "label": "Enterprise Smart Contracts"
+    }
+  ]
+}

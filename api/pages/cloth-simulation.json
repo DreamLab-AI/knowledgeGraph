@@ -1,0 +1,87 @@
+{
+  "id": "urn:visionflow:page:cloth-simulation",
+  "title": "Cloth Simulation",
+  "slug": "cloth-simulation",
+  "public": true,
+  "classIri": "urn:ngm:class:cloth-simulation",
+  "domain": "metaverse",
+  "definition": "Cloth Simulation is the computational modelling of textile deformation and dynamics, representing fabric as a mesh of particles connected by spring constraints (stretch, shear, and bend) or by a continuum-mechanics model, and integrating the equations of motion to produce plausible cloth behaviour under gravity, wind, collision, and user interaction. The particle-spring model, popularised by Provot (1995), remains prevalent in real-time applications; more accurate results for offline rendering use finite-element or position-based dynamics (PBD) methods. Collision detection and response against rigid bodies and self-collision are the principal computational bottlenecks, requiring spatial acceleration structures such as bounding volume hierarchies. Cloth simulation is a sub-discipline of physically based animation used in character clothing, flag animation, curtains, and virtual fashion design within game engines, VFX pipelines, and metaverse avatar systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:physics-simulation",
+      "label": "Physics Simulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:dynamic-character-animation",
+        "label": "Dynamic Character Animation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:physics-engine",
+        "label": "Physics Engine"
+      },
+      {
+        "id": "urn:ngm:class:animation-technique",
+        "label": "Animation Technique"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:game-development",
+        "label": "Game Development"
+      },
+      {
+        "id": "urn:ngm:class:simulation-software",
+        "label": "Simulation Software"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:soft-body-dynamics",
+        "label": "Soft Body Dynamics"
+      },
+      {
+        "id": "urn:ngm:class:rigid-body",
+        "label": "Rigid Body"
+      },
+      {
+        "id": "urn:ngm:class:particle-system",
+        "label": "Particle System"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "collision-detection",
+      "label": "Collision Detection"
+    },
+    {
+      "slug": "motion-capture",
+      "label": "Motion Capture"
+    },
+    {
+      "slug": "physics-based-animation",
+      "label": "Physics-Based Animation"
+    }
+  ]
+}

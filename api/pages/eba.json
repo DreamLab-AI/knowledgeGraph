@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:eba",
+  "title": "EBA",
+  "slug": "eba",
+  "public": true,
+  "classIri": "urn:ngm:class:eba",
+  "domain": "governance",
+  "definition": "The European Banking Authority (EBA) is an independent EU regulatory agency established in 2011 to ensure consistent prudential regulation and supervision across the European banking sector. It develops binding technical standards and guidelines that national supervisors must implement, conducts EU-wide stress tests to assess banking system resilience, and plays a central role in developing anti-money laundering supervisory frameworks. The EBA's remit has expanded into digital finance, including technical standards for crypto-asset service providers under the MiCA Regulation and guidelines on ICT risk management.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:financial-regulation",
+      "label": "Financial Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      },
+      {
+        "id": "urn:ngm:class:systemic-risk",
+        "label": "Systemic Risk"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:mi-ca-regulation",
+        "label": "MiCA Regulation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "regulatory-reporting",
+      "label": "Regulatory Reporting"
+    },
+    {
+      "slug": "stablecoin-regulation",
+      "label": "Stablecoin Regulation"
+    },
+    {
+      "slug": "travel-rule",
+      "label": "Travel Rule"
+    }
+  ]
+}

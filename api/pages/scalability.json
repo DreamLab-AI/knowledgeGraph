@@ -1,0 +1,118 @@
+{
+  "id": "urn:visionflow:page:scalability",
+  "title": "Scalability",
+  "slug": "scalability",
+  "public": true,
+  "classIri": "urn:ngm:class:scalability",
+  "domain": "infrastructure",
+  "definition": "Scalability is the property of a system that describes its capacity to handle increasing workloads by adding resources, without proportionate degradation in performance, cost efficiency, or reliability. Horizontal scalability adds more nodes to a distributed cluster; vertical scalability increases the resources of existing nodes. In distributed systems, achieving linear or near-linear scalability requires careful attention to coordination overhead, data partitioning strategies, and consistency trade-offs as captured by the CAP theorem. Scalability is a first-order design concern in cloud-native architectures, blockchain networks, and AI inference platforms serving large user populations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:scalable-architecture",
+      "label": "Scalable Architecture"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:scalability-pattern",
+        "label": "Scalability Pattern"
+      },
+      {
+        "id": "urn:ngm:class:performance-optimization",
+        "label": "Performance Optimization"
+      },
+      {
+        "id": "urn:ngm:class:distributed-architecture",
+        "label": "Distributed Architecture"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      },
+      {
+        "id": "urn:ngm:class:resilience",
+        "label": "Resilience"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "3-d-and-4-d",
+      "label": "3D and 4D"
+    },
+    {
+      "slug": "cloud-infrastructure",
+      "label": "Cloud Infrastructure"
+    },
+    {
+      "slug": "decentralized-swarm-control",
+      "label": "Decentralized Swarm Control"
+    },
+    {
+      "slug": "disruptive-technology",
+      "label": "Disruptive Technology"
+    },
+    {
+      "slug": "distributed-architecture",
+      "label": "Distributed Architecture"
+    },
+    {
+      "slug": "infrastructure-layer",
+      "label": "Infrastructure Layer"
+    },
+    {
+      "slug": "private-blockchain",
+      "label": "Private Blockchain"
+    },
+    {
+      "slug": "question-answering",
+      "label": "Question Answering"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    },
+    {
+      "slug": "blockchain-core-concepts",
+      "label": "blockchain core concepts"
+    }
+  ]
+}

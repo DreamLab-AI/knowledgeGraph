@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:trust-establishment",
+  "title": "Trust Establishment",
+  "slug": "trust-establishment",
+  "public": true,
+  "classIri": "urn:ngm:class:trust-establishment",
+  "domain": "security",
+  "definition": "Trust Establishment is the process by which parties in a digital or physical system form justified confidence in each other's identities, capabilities, intentions, and assertions prior to exchanging sensitive information or delegating authority. It encompasses cryptographic mechanisms such as certificate chain validation, attestation, and verifiable credential presentation, as well as organisational mechanisms including trust frameworks, legal agreements, and reputation systems. In decentralised and multi-stakeholder environments, trust establishment must operate without relying on a single trusted authority, requiring distributed protocols such as web-of-trust models, blockchain-anchored attestations, and federated identity systems. Trust establishment is a foundational prerequisite for secure communication, authorisation, and coordination across organisational and jurisdictional boundaries.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:trust-architecture",
+      "label": "Trust Architecture"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:trust-and-safety",
+        "label": "Trust and Safety"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:digital-signature-verification",
+        "label": "Digital Signature Verification"
+      },
+      {
+        "id": "urn:ngm:class:humanity-attestation",
+        "label": "Humanity Attestation"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:trust-framework",
+        "label": "Trust Framework"
+      },
+      {
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-verification",
+        "label": "Cryptographic Verification"
+      },
+      {
+        "id": "urn:ngm:class:reputation-system",
+        "label": "Reputation System"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "digital-certificate",
+      "label": "Digital Certificate"
+    },
+    {
+      "slug": "humanity-attestation",
+      "label": "Humanity Attestation"
+    },
+    {
+      "slug": "identity-federation",
+      "label": "Identity Federation"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    },
+    {
+      "slug": "provenance-verification",
+      "label": "Provenance Verification"
+    }
+  ]
+}

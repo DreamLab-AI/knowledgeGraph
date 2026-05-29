@@ -1,0 +1,95 @@
+{
+  "id": "urn:visionflow:page:verifiable-random-function",
+  "title": "Verifiable Random Function",
+  "slug": "verifiable-random-function",
+  "public": true,
+  "classIri": "urn:ngm:class:verifiable-random-function",
+  "domain": "blockchain",
+  "definition": "A Verifiable Random Function (VRF) is a cryptographic primitive, introduced by Micali, Rabin, and Vadhan (1999), that maps an input to a pseudorandom output and produces a non-interactive proof allowing any third party to verify that the output was computed correctly from a given public key and input without learning the private key. The VRF owner possesses a private key SK and public key PK; given input alpha, they compute output beta and proof pi such that any verifier with PK can confirm that beta = VRF(SK, alpha) without requiring SK. VRFs provide both uniqueness (exactly one valid output per key-input pair) and pseudorandomness (output is indistinguishable from random to anyone without SK). They are deployed in blockchain systems for unpredictable, manipulation-resistant leader election (Algorand, Cardano, Hedera), NFT trait generation, on-chain lotteries, and as the cryptographic core of Chainlink VRF and similar oracle randomness services.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptographic-proof",
+      "label": "Cryptographic Proof"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-gaming",
+        "label": "Blockchain Gaming"
+      },
+      {
+        "id": "urn:ngm:class:oracle-network",
+        "label": "Oracle Network"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-commitment",
+        "label": "Cryptographic Commitment"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:blockchain-oracle",
+        "label": "Blockchain Oracle"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:random-number-generation",
+        "label": "Random Number Generation"
+      },
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:threshold-cryptography",
+        "label": "Threshold Cryptography"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-oracle",
+      "label": "Blockchain Oracle"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "slug": "random-number-generation",
+      "label": "Random Number Generation"
+    },
+    {
+      "slug": "sustainable-consensus",
+      "label": "Sustainable Consensus"
+    }
+  ]
+}

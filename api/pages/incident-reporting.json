@@ -1,0 +1,95 @@
+{
+  "id": "urn:visionflow:page:incident-reporting",
+  "title": "Incident Reporting",
+  "slug": "incident-reporting",
+  "public": true,
+  "classIri": "urn:ngm:class:incident-reporting",
+  "domain": "governance",
+  "definition": "Incident Reporting is a systematic process by which organisations detect, document, classify, and communicate adverse events, near-misses, or anomalous system behaviours to relevant stakeholders, regulatory bodies, and affected parties. In AI and digital systems contexts, it covers cybersecurity breaches, AI system failures, algorithmic harms, and data protection violations. Effective incident reporting is foundational to organisational learning, regulatory compliance, and public accountability, enabling causal analysis that drives systemic improvement. Mandatory disclosure obligations are increasingly codified in sector-specific legislation including NIS2, the EU AI Act, and financial services regulations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:compliance-framework",
+      "label": "Compliance Framework"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-transparency-reports",
+        "label": "Algorithmic Transparency Reports"
+      },
+      {
+        "id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:compliance-audit-trail",
+        "label": "Compliance Audit Trail"
+      },
+      {
+        "id": "urn:ngm:class:ai-monitoring",
+        "label": "AI Monitoring"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:vulnerability",
+        "label": "Vulnerability"
+      },
+      {
+        "id": "urn:ngm:class:data-breach",
+        "label": "Data Breach"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      },
+      {
+        "id": "urn:ngm:class:ai-incident",
+        "label": "AI Incident"
+      },
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-risks",
+      "label": "AI Risks"
+    },
+    {
+      "slug": "california-ai-bill",
+      "label": "California AI bill"
+    },
+    {
+      "slug": "digital-society-harms",
+      "label": "Digital Society Harms"
+    },
+    {
+      "slug": "regulatory-reporting",
+      "label": "Regulatory Reporting"
+    }
+  ]
+}

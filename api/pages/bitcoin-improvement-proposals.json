@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:bitcoin-improvement-proposals",
+  "title": "Bitcoin Improvement Proposals",
+  "slug": "bitcoin-improvement-proposals",
+  "public": true,
+  "classIri": "urn:ngm:class:bitcoin-improvement-proposals",
+  "domain": "blockchain",
+  "definition": "Bitcoin Improvement Proposals (BIPs) are the formal design documents through which changes, enhancements, and new features are proposed and ratified for the Bitcoin protocol and its ecosystem. First introduced by Amir Taaki in 2011, modelled on Python's PEP process, BIPs serve as the primary coordination mechanism for a decentralised developer community lacking any central authority. Each BIP progresses through a lifecycle of draft, proposed, final, and superseded states, and must achieve rough consensus among node operators and miners to be activated. BIPs cover protocol rules, informational standards, and process definitions for the broader Bitcoin network.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain-governance",
+      "label": "Blockchain Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:bitcoin-technical-overview",
+        "label": "Bitcoin Technical Overview"
+      },
+      {
+        "id": "urn:ngm:class:bip-340",
+        "label": "BIP-340"
+      },
+      {
+        "id": "urn:ngm:class:bip-341",
+        "label": "BIP-341"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bitcoin-core",
+        "label": "Bitcoin Core"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-network",
+        "label": "Bitcoin Network"
+      },
+      {
+        "id": "urn:ngm:class:consensus-rule",
+        "label": "Consensus Rule"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    },
+    {
+      "slug": "bitcoin-value-proposition",
+      "label": "Bitcoin Value Proposition"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "cashu",
+      "label": "Cashu"
+    },
+    {
+      "slug": "distributed-decision-making",
+      "label": "Distributed Decision Making"
+    }
+  ]
+}

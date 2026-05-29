@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:g-rpc",
+  "title": "gRPC",
+  "slug": "g-rpc",
+  "public": true,
+  "classIri": "urn:ngm:class:g-rpc",
+  "domain": "infrastructure",
+  "definition": "gRPC (gRPC Remote Procedure Call) is an open-source, high-performance remote procedure call framework developed by Google and released in 2015, built on HTTP/2 transport and Protocol Buffers as the interface definition language and serialisation format. It supports four communication patterns\u2014unary, server-streaming, client-streaming, and bidirectional streaming\u2014enabling efficient, strongly typed, low-latency communication between services in polyglot distributed systems. gRPC generates client and server stubs in over a dozen programming languages from a single .proto service definition, making it the dominant choice for internal microservices communication in cloud-native architectures. Its binary encoding and multiplexed HTTP/2 connections deliver significantly lower overhead than REST/JSON at high throughput.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:communication-protocol",
+      "label": "Communication Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
+        "id": "urn:ngm:class:realtime-communication",
+        "label": "Realtime Communication"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cloud-native-applications",
+        "label": "Cloud-Native Applications"
+      },
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:protocol-buffer",
+        "label": "Protocol Buffer"
+      },
+      {
+        "id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "id": "urn:ngm:class:api-standard",
+        "label": "API Standard"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "api-gateway",
+      "label": "API Gateway"
+    },
+    {
+      "slug": "blockchain-as-a-service",
+      "label": "Blockchain As A Service"
+    },
+    {
+      "slug": "distributed-computing",
+      "label": "Distributed Computing"
+    },
+    {
+      "slug": "hyperledger-iroha",
+      "label": "Hyperledger Iroha"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

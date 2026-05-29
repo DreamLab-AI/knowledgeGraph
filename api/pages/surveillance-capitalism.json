@@ -1,0 +1,95 @@
+{
+  "id": "urn:visionflow:page:surveillance-capitalism",
+  "title": "Surveillance Capitalism",
+  "slug": "surveillance-capitalism",
+  "public": true,
+  "classIri": "urn:ngm:class:surveillance-capitalism",
+  "domain": "governance",
+  "definition": "Surveillance Capitalism is an economic logic, theorised by Shoshana Zuboff (2019), in which human experience is unilaterally claimed as a free raw material to be translated into behavioural data, processed by machine intelligence into prediction products, and sold in behavioural futures markets to business customers who seek to influence human behaviour. The model originated in digital advertising \u2014 Google's repurposing of surplus behavioural data from search to predict and influence click-through \u2014 and has since colonised social media, IoT devices, retail analytics, health apps, and smart-city infrastructure. Unlike industrial capitalism's exploitation of natural resources, surveillance capitalism exploits human behaviour and psyche as its primary resource, generating epistemic asymmetries between platform owners and the surveilled population and challenging the foundational conditions for autonomous selfhood, democratic deliberation, and market competition.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:platform-economy",
+      "label": "Platform Economy"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      },
+      {
+        "id": "urn:ngm:class:social-media",
+        "label": "social media"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
+      },
+      {
+        "id": "urn:ngm:class:digital-rights",
+        "label": "Digital Rights"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:consent-management",
+        "label": "Consent Management"
+      },
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-society",
+        "label": "Digital Society"
+      },
+      {
+        "id": "urn:ngm:class:digital-society-surveillance",
+        "label": "Digital Society Surveillance"
+      },
+      {
+        "id": "urn:ngm:class:behavioral-analytics",
+        "label": "Behavioral Analytics"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-risks",
+      "label": "AI Risks"
+    },
+    {
+      "slug": "death-of-the-internet",
+      "label": "Death of the Internet"
+    },
+    {
+      "slug": "digital-society-harms",
+      "label": "Digital Society Harms"
+    },
+    {
+      "slug": "digital-society-surveillance",
+      "label": "Digital Society Surveillance"
+    },
+    {
+      "slug": "presence-indicator",
+      "label": "Presence Indicator"
+    }
+  ]
+}

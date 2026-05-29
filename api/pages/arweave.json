@@ -1,0 +1,106 @@
+{
+  "id": "urn:visionflow:page:arweave",
+  "title": "Arweave",
+  "slug": "arweave",
+  "public": true,
+  "classIri": "urn:ngm:class:arweave",
+  "domain": "blockchain",
+  "definition": "Arweave is a decentralised, blockchain-like storage network that enables permanent, censorship-resistant archival of data through a novel proof-of-access consensus mechanism. It introduces the concept of the 'permaweb', a permanent layer of the web where data is stored indefinitely via a one-time payment model. The network is sustained by an endowment-based token economics model that ensures miners are incentivised to serve content far into the future. Arweave underpins a range of Web3 storage use cases, from NFT metadata permanence to decentralised application state.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:decentralized-storage",
+      "label": "Decentralized Storage"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-persistence",
+        "label": "Data Persistence"
+      },
+      {
+        "id": "urn:ngm:class:digital-archive",
+        "label": "Digital Archive"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      },
+      {
+        "id": "urn:ngm:class:content-addressing",
+        "label": "Content Addressing"
+      },
+      {
+        "id": "urn:ngm:class:distributed-storage",
+        "label": "Distributed Storage"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-upscaling-and-super-resolution",
+      "label": "AI Upscaling and Super-Resolution"
+    },
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    },
+    {
+      "slug": "decentralised-file-storage",
+      "label": "Decentralised file storage"
+    },
+    {
+      "slug": "decentralized-storage",
+      "label": "Decentralized Storage"
+    },
+    {
+      "slug": "digital-objects",
+      "label": "Digital Objects"
+    },
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    },
+    {
+      "slug": "nft-minting",
+      "label": "NFT Minting"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    }
+  ]
+}

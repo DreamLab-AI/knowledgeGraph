@@ -934,7 +934,7 @@ public:: true
         "label": "AluVM"
       },
       {
-        "@id": "urn:ngm:class:hash-time-locked-contracts",
+        "@id": "urn:ngm:class:hash-time-locked-contract",
         "label": "Hash Time-Locked Contracts"
       },
       {

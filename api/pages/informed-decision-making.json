@@ -1,0 +1,87 @@
+{
+  "id": "urn:visionflow:page:informed-decision-making",
+  "title": "Informed decision-making",
+  "slug": "informed-decision-making",
+  "public": true,
+  "classIri": "urn:ngm:class:informed-decision-making",
+  "domain": "ai",
+  "definition": "Informed decision-making is a cognitive and organisational process in which choices are grounded in accurate, relevant, and timely evidence rather than intuition, habit, or incomplete information. It encompasses the collection, analysis, and interpretation of data, the surfacing of relevant context through knowledge management systems, and the mitigation of cognitive biases that distort judgement. In digital and AI-augmented environments, informed decision-making is increasingly supported by decision support tools, predictive analytics, and transparent reasoning systems that make the basis of recommendations auditable.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:decision-support",
+      "label": "Decision Support"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:distributed-decision-making",
+        "label": "Distributed Decision Making"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      },
+      {
+        "id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      },
+      {
+        "id": "urn:ngm:class:transparent-decision-making",
+        "label": "Transparent Decision Making"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-impact-assessment",
+      "label": "AI Impact Assessment"
+    },
+    {
+      "slug": "ai-model-card",
+      "label": "AI Model Card"
+    },
+    {
+      "slug": "arbitrator-expertise",
+      "label": "Arbitrator Expertise"
+    },
+    {
+      "slug": "transparency-oecd",
+      "label": "Transparency (OECD)"
+    }
+  ]
+}

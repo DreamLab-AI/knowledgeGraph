@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:schema-org",
+  "title": "Schema.org",
+  "slug": "schema-org",
+  "public": true,
+  "classIri": "urn:ngm:class:schema-org",
+  "domain": "ai",
+  "definition": "Schema.org is a collaborative, community-maintained vocabulary project founded in 2011 by Google, Microsoft, Yahoo, and Yandex to define a shared set of structured data markup schemas for web pages, enabling search engines and other consumers to understand the semantic content of web resources. The vocabulary defines types and properties for entities such as persons, organisations, events, products, reviews, and creative works, expressed using JSON-LD, Microdata, or RDFa. Schema.org markup embedded in web pages allows search engines to generate rich snippets, knowledge panels, and structured results. The vocabulary is extensible and hosted at schema.org, with governance managed by a W3C community group.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:linked-data",
+      "label": "Linked Data"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:json-ld",
+        "label": "JSON-LD"
+      },
+      {
+        "id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      },
+      {
+        "id": "urn:ngm:class:controlled-vocabulary",
+        "label": "Controlled Vocabulary"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:search-engine",
+        "label": "Search Engine"
+      },
+      {
+        "id": "urn:ngm:class:data-annotation",
+        "label": "Data Annotation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "domain-ontology",
+      "label": "Domain Ontology"
+    },
+    {
+      "slug": "knowledge-graph",
+      "label": "Knowledge Graph"
+    },
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "metadata-schema",
+      "label": "Metadata Schema"
+    }
+  ]
+}

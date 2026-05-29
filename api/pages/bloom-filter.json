@@ -1,0 +1,91 @@
+{
+  "id": "urn:visionflow:page:bloom-filter",
+  "title": "Bloom Filter",
+  "slug": "bloom-filter",
+  "public": true,
+  "classIri": "urn:ngm:class:bloom-filter",
+  "domain": "infrastructure",
+  "definition": "A Bloom Filter is a space-efficient probabilistic data structure that tests whether an element is a member of a set, accepting a controllable false-positive rate while guaranteeing zero false negatives. Invented by Burton Howard Bloom in 1970, the structure uses multiple hash functions to map elements to bit positions within a fixed-size bit array. Membership queries are answered in constant time regardless of set size, making Bloom Filters indispensable in high-throughput systems where exact lookup is prohibitively expensive. They are widely deployed in databases, networking, distributed caches, and blockchain nodes.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-structure",
+      "label": "Data Structure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "id": "urn:ngm:class:membership-inference",
+        "label": "Membership Inference"
+      },
+      {
+        "id": "urn:ngm:class:privacy-filter",
+        "label": "Privacy Filter"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:spatial-data-structure",
+        "label": "Spatial Data Structure"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:hash-collision",
+        "label": "Hash Collision"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      },
+      {
+        "id": "urn:ngm:class:distributed-data-structure",
+        "label": "Distributed Data Structure"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-scrapers",
+      "label": "AI Scrapers"
+    },
+    {
+      "slug": "data-layer",
+      "label": "Data Layer"
+    },
+    {
+      "slug": "graph-database",
+      "label": "Graph Database"
+    },
+    {
+      "slug": "hash-function",
+      "label": "Hash Function"
+    }
+  ]
+}

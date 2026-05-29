@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:world-model",
+  "title": "World Model",
+  "slug": "world-model",
+  "public": true,
+  "classIri": "urn:ngm:class:world-model",
+  "domain": "ai",
+  "definition": "A World Model is an internal representation maintained by an intelligent agent\u2014biological or artificial\u2014that encodes beliefs about the structure, dynamics, and state of its environment, enabling prediction, planning, and counterfactual reasoning without requiring direct sensory input for every decision. In model-based reinforcement learning, a learned world model allows an agent to simulate future trajectories in latent space, dramatically improving sample efficiency compared to model-free approaches. World models compress high-dimensional sensory observations into compact representations that capture causally relevant structure, supporting long-horizon planning and generalisation to novel situations. They are central to current research on embodied AI, autonomous driving, and general-purpose robot manipulation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:knowledge-representation",
+      "label": "Knowledge Representation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:planning-and-scheduling",
+        "label": "Planning and Scheduling"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:model-based-control",
+        "label": "Model Based Control"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:scene-understanding",
+        "label": "Scene Understanding"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:embodied-ai-simulation",
+        "label": "Embodied AI Simulation"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-video",
+      "label": "AI Video"
+    },
+    {
+      "slug": "artificial-general-intelligence",
+      "label": "Artificial General Intelligence"
+    },
+    {
+      "slug": "embodied-minds",
+      "label": "Embodied Minds"
+    },
+    {
+      "slug": "task-planning",
+      "label": "Task Planning"
+    }
+  ]
+}

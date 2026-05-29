@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:stakeholder-engagement",
+  "title": "Stakeholder Engagement",
+  "slug": "stakeholder-engagement",
+  "public": true,
+  "classIri": "urn:ngm:class:stakeholder-engagement",
+  "domain": "governance",
+  "definition": "Stakeholder Engagement is the structured process through which organisations identify, communicate with, and incorporate the perspectives of individuals and groups who have interests in or are affected by a project, system, or policy. Effective engagement moves along a spectrum from one-way information provision through consultation to active co-design and ongoing collaborative governance. In the context of emerging technologies such as AI, robust stakeholder engagement is recognised as essential for identifying ethical risks, ensuring societal legitimacy, and building the trust necessary for adoption. Regulatory frameworks and voluntary standards increasingly mandate evidence of meaningful stakeholder engagement as a condition of approval or certification.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:stakeholder",
+      "label": "Stakeholder"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:collaborative-design",
+        "label": "Collaborative Design"
+      },
+      {
+        "id": "urn:ngm:class:change-management",
+        "label": "Change Management"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:ai-impact-assessment",
+        "label": "AI Impact Assessment"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:stakeholder-engagement-in-ai",
+        "label": "Stakeholder Engagement in AI"
+      },
+      {
+        "id": "urn:ngm:class:civic-participation",
+        "label": "Civic Participation"
+      },
+      {
+        "id": "urn:ngm:class:democratic-participation",
+        "label": "Democratic Participation"
+      },
+      {
+        "id": "urn:ngm:class:community-governance",
+        "label": "Community Governance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "esg-reporting",
+      "label": "ESG Reporting"
+    },
+    {
+      "slug": "etsi-domain-governance-and-ethics",
+      "label": "ETSI Domain: Governance & Ethics"
+    },
+    {
+      "slug": "ethical-ai",
+      "label": "Ethical AI"
+    },
+    {
+      "slug": "ethical-sourcing",
+      "label": "Ethical Sourcing"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+- ### Definition
+  - API Integration is the practice of connecting [[Microservices Architecture]] components and third-party platforms through standardised [[API Gateway]] contracts, enabling automated data exchange without manual intervention.
+- ### Relationships
+  - API Integration depends on [[Authentication Service]] for secure access control and employs [[Middleware]] to transform and route messages between systems. It underpins [[Event Driven Architecture]] by enabling services to publish and subscribe to events, and feeds data into [[Data Pipeline]] workflows. The approach is central to [[Distributed System]] design and scales within [[Cloud Computing]] environments, often governed by published [[API Standard]] documents.
+- ### Content
+  - API Integration connects software components by exposing well-defined endpoints that accept requests and return structured responses. REST APIs using HTTP verbs and JSON payloads remain the most common integration style, whilst GraphQL allows clients to specify exact data shapes, reducing over-fetching. Both styles benefit from API gateways that centralise authentication, rate limiting, and observability.
+
+  - Asynchronous integration patterns decouple producers from consumers, improving resilience. Message queues and event streams allow a service to emit an event without waiting for downstream processing, enabling high-throughput pipelines and eventual consistency across distributed systems. [[Event Driven Architecture]] builds heavily on this principle.
+
+  - Integration security requires careful management of credentials, OAuth tokens, and mutual TLS certificates. [[Authentication Service]] components typically centralise token issuance and revocation, ensuring that only authorised clients access protected resources. Versioning policies prevent breaking changes from disrupting downstream consumers without warning.
+
+  - Observability is critical: distributed tracing, structured logging, and API health dashboards help teams diagnose latency spikes and failure cascades across integration boundaries. Modern [[Cloud Computing]] platforms provide managed integration services that bundle many of these concerns, lowering the operational burden of maintaining bespoke middleware.

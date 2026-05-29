@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:ifac",
+  "title": "IFAC",
+  "slug": "ifac",
+  "public": true,
+  "classIri": "urn:ngm:class:ifac",
+  "domain": "robotics",
+  "definition": "The International Federation of Automatic Control (IFAC) is the world's primary international organisation for the science and engineering of automatic control, founded in 1957 and comprising national member organisations from over fifty countries. IFAC coordinates research, education, and standards activity across all aspects of control theory and its applications, including process control, robotics, mechatronics, aerospace, and intelligent transportation. It convenes the triennial IFAC World Congress and sponsors over forty technical committees covering specialised control domains. IFAC's publications and conference proceedings constitute a core reference body for the global control engineering community.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:control-system",
+      "label": "Control System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:real-time-control",
+        "label": "Real-Time Control"
+      },
+      {
+        "id": "urn:ngm:class:adaptive-control",
+        "label": "Adaptive Control"
+      },
+      {
+        "id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iec-61131-3",
+        "label": "IEC 61131-3"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ieee-control-systems-society",
+        "label": "IEEE Control Systems Society"
+      },
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "IndustrialAutomation"
+      },
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      },
+      {
+        "id": "urn:ngm:class:safety-plc",
+        "label": "Safety PLC"
+      },
+      {
+        "id": "urn:ngm:class:pid-controller",
+        "label": "Pid Controller"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "control-algorithm",
+      "label": "Control Algorithm"
+    },
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "slug": "feedback-loop",
+      "label": "Feedback Loop"
+    },
+    {
+      "slug": "model-based-control",
+      "label": "Model Based Control"
+    }
+  ]
+}

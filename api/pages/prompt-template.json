@@ -1,0 +1,91 @@
+{
+  "id": "urn:visionflow:page:prompt-template",
+  "title": "Prompt Template",
+  "slug": "prompt-template",
+  "public": true,
+  "classIri": "urn:ngm:class:prompt-template",
+  "domain": "ai",
+  "definition": "A Prompt Template is a reusable, parameterised text structure that combines static instructional scaffolding with dynamic variable slots to produce consistent, well-formed inputs for large language models. Templates encode best-practice prompt engineering patterns \u2014 role declarations, task specifications, output format constraints, and chain-of-thought scaffolding \u2014 in a form that can be instantiated with runtime values such as user queries, document snippets, or API responses. They are the primary unit of composition in LLM orchestration frameworks such as LangChain, LlamaIndex, and DSPy, and they serve as version-controlled artefacts that enable systematic A/B testing of prompt variations. Effective prompt templates balance specificity (providing enough context to constrain model behaviour) with generality (accommodating the full range of valid inputs).",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:prompt-engineering",
+      "label": "Prompt Engineering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:soft-prompt-embedding",
+        "label": "Soft Prompt Embedding"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:context-window",
+        "label": "Context Window"
+      },
+      {
+        "id": "urn:ngm:class:instruction-following",
+        "label": "Instruction Following"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:system-prompt",
+        "label": "System Prompt"
+      },
+      {
+        "id": "urn:ngm:class:chain-of-thought",
+        "label": "Chain of Thought"
+      },
+      {
+        "id": "urn:ngm:class:instruction-tuning",
+        "label": "Instruction Tuning"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-diagram-tools",
+      "label": "AI Diagram Tools"
+    },
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "evaluation-benchmarks-and-leaderboards",
+      "label": "Evaluation benchmarks and leaderboards"
+    },
+    {
+      "slug": "retrieval-augmented-generation-rag",
+      "label": "Retrieval Augmented Generation - RAG"
+    }
+  ]
+}

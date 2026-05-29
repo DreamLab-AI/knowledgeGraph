@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:real-time-monitoring",
+  "title": "Real-Time Monitoring",
+  "slug": "real-time-monitoring",
+  "public": true,
+  "classIri": "urn:ngm:class:real-time-monitoring",
+  "domain": "infrastructure",
+  "definition": "Real-time monitoring is the continuous collection, processing, and presentation of operational data with sufficiently low latency that the resulting insights can drive immediate decision-making or automated responses. It encompasses telemetry ingestion from sensors and software agents, stream processing to detect anomalies or threshold violations, and dashboard visualisation for human operators. Real-time monitoring is fundamental to industrial control systems, network operations centres, AI model serving, and smart infrastructure management. The discipline balances completeness of observation against the computational and bandwidth cost of high-frequency data collection.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:real-time-processing",
+      "label": "Real-time Processing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:operational-resilience",
+        "label": "Operational Resilience"
+      },
+      {
+        "id": "urn:ngm:class:ai-monitoring",
+        "label": "AI Monitoring"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:io-t-sensor-network",
+        "label": "IoT Sensor Network"
+      },
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "id": "urn:ngm:class:monitoring-dashboard",
+        "label": "Monitoring Dashboard"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:real-time",
+        "label": "Real Time"
+      },
+      {
+        "id": "urn:ngm:class:performance-metrics",
+        "label": "Performance Metrics"
+      },
+      {
+        "id": "urn:ngm:class:cyber-physical-systems",
+        "label": "Cyber Physical Systems"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agent-event-stream",
+      "label": "Agent Event Stream"
+    },
+    {
+      "slug": "compliance-dashboard",
+      "label": "Compliance Dashboard"
+    },
+    {
+      "slug": "digital-twin-creation-pipeline",
+      "label": "Digital Twin Creation Pipeline"
+    },
+    {
+      "slug": "digital-twin-creation",
+      "label": "Digital Twin Creation"
+    }
+  ]
+}

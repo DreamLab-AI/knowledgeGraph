@@ -1,0 +1,60 @@
+public:: true
+
+# Demand Response
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:demand-response",
+  "@type": "Page",
+  "vc:slug": "demand-response",
+  "title": "Demand Response",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 2
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:demand-response",
+  "@type": "Class",
+  "label": "Demand Response",
+  "definition": "Demand response is the deliberate modification of electricity consumption patterns by end users in response to signals from grid operators, energy markets, or automated control systems, with the aim of balancing supply and demand in real time. It enables consumers—from large industrial facilities to domestic smart appliances—to reduce or shift load during peak periods or grid stress events in exchange for financial incentives or reduced tariffs. Demand response programmes are a cornerstone of smart grid operation, deferring or avoiding costly investment in peak generation capacity. Increasingly, AI-driven automation and IoT sensor networks enable fine-grained, real-time demand response at residential scale without requiring manual intervention from end users.",
+  "domain": "infrastructure",
+  "maturity": "established",
+  "subClassOf": [{"@id": "urn:ngm:class:smart-grid", "label": "Smart Grid"}],
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:energy-and-power", "label": "Energy and Power"},
+      {"@id": "urn:ngm:class:power-management", "label": "Power Management"},
+      {"@id": "urn:ngm:class:industrial-io-t", "label": "Industrial IoT"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:power-efficient-ai", "label": "Power-Efficient AI"},
+      {"@id": "urn:ngm:class:renewable-energy-certificates", "label": "Renewable Energy Certificates"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:io-t-sensor-network", "label": "IoT Sensor Network"},
+      {"@id": "urn:ngm:class:io-t-ai-integration", "label": "IoT AI Integration"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:machine-to-machine-payments", "label": "Machine to Machine Payments"}
+    ]
+  },
+  "quality": 0.8
+}
+```
+
+- ### Definition
+  - [[Demand Response]] is the coordinated adjustment of electricity consumption by end users in response to [[Smart Grid]] signals, balancing supply and demand to avoid outages and reduce reliance on peaking generation, increasingly automated through [[IoT AI Integration]] and [[IoT Sensor Network]] deployments.
+- ### Relationships
+  - Demand response sits at the intersection of [[Smart Grid]] management and [[Energy and Power]] markets, utilising [[IoT Sensor Network]] infrastructure to receive price or curtailment signals. [[Industrial IoT]] deployments in manufacturing and data centres enable large-load shedding, while residential programmes rely on [[IoT AI Integration]] for automated appliance scheduling. The financial settlements enabled by demand response programmes increasingly leverage [[Machine to Machine Payments]] for automated compensation, and the practice directly supports [[Renewable Energy Certificates]] markets by smoothing integration of variable renewables. [[Power Management]] algorithms optimise dispatch decisions across a portfolio of flexible loads.
+- ### Content
+  - Demand response operates through two primary mechanisms: price-based programmes, in which consumers respond to time-varying electricity tariffs such as time-of-use or real-time pricing; and incentive-based programmes, where consumers contract with utilities or aggregators to provide load reduction on request. In both cases, the core principle is that flexible consumption is a dispatchable resource equivalent in grid value to generation capacity.
+
+  - AI and machine learning are transforming demand response from a manual, notification-driven process into a fully automated, predictive one. Reinforcement learning agents manage building energy systems—HVAC, lighting, EV charging—to pre-cool or pre-heat spaces before curtailment events, maintaining occupant comfort while reducing peak demand. [[IoT AI Integration]] platforms aggregate millions of small loads into virtual power plants that can be dispatched in seconds, rivalling the response speed of gas peakers.
+
+  - The integration of electric vehicles and battery storage is expanding demand response capability substantially. Vehicle-to-grid (V2G) technology allows EV batteries to export power during peak events, while home battery systems can island critical loads. [[Industrial IoT]] deployments in water treatment, cold storage, and manufacturing provide large, flexible loads that grid operators can dispatch through automated demand response signals under pre-negotiated contracts.
+
+  - Market structures for demand response vary by jurisdiction. In the United States, FERC Order 745 established compensation parity between demand response and generation resources in wholesale markets. In Great Britain, the Balancing Mechanism and Capacity Market include demand-side participation. Globally, aggregators play a critical intermediary role, bundling small consumer loads into market-eligible blocks and managing the commercial and technical complexity of programme participation on behalf of end users.

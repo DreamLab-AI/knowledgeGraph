@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:threshold-cryptography",
+  "title": "Threshold Cryptography",
+  "slug": "threshold-cryptography",
+  "public": true,
+  "classIri": "urn:ngm:class:threshold-cryptography",
+  "domain": "security",
+  "definition": "Threshold cryptography is a branch of cryptography in which a secret \u2014 such as a private key, decryption key, or signing capability \u2014 is distributed among a set of n parties such that any subset of at least t parties can jointly perform the cryptographic operation, but no subset of fewer than t parties can do so alone. The threshold t-of-n structure realises a cryptographic form of redundancy and access control: no single party holds sufficient key material to act unilaterally, protecting against both internal compromise and external theft. Threshold signatures, threshold decryption, and threshold key generation are the three primary primitives, with applications spanning cryptocurrency custody, distributed certificate authorities, multi-party computation, and confidential smart contract execution.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptographic-primitive",
+      "label": "Cryptographic Primitive"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cryptocurrency-storage",
+        "label": "Cryptocurrency Storage"
+      },
+      {
+        "id": "urn:ngm:class:privacy-preserving-technology",
+        "label": "Privacy Preserving Technology"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:secure-multi-party-computation",
+        "label": "Secure Multi-Party Computation"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:multi-sig-governance",
+        "label": "Multi Sig Governance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "consortium-blockchain",
+      "label": "Consortium Blockchain"
+    },
+    {
+      "slug": "cryptographic-domain",
+      "label": "Cryptographic Domain"
+    },
+    {
+      "slug": "cryptographic-system",
+      "label": "Cryptographic System"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "multi-sig-governance",
+      "label": "Multi Sig Governance"
+    },
+    {
+      "slug": "sustainable-consensus",
+      "label": "Sustainable Consensus"
+    }
+  ]
+}

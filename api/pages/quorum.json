@@ -1,0 +1,111 @@
+{
+  "id": "urn:visionflow:page:quorum",
+  "title": "Quorum",
+  "slug": "quorum",
+  "public": true,
+  "classIri": "urn:ngm:class:quorum",
+  "domain": "blockchain",
+  "definition": "Quorum refers to the minimum number or proportion of participants\u2014nodes, voters, or validators\u2014that must agree or be present for a decision, transaction, or consensus round to be considered valid in a distributed system or governance process. In blockchain contexts, quorum thresholds determine the minimum fraction of stake, tokens, or nodes required to reach consensus or pass a governance proposal. In distributed database and consensus algorithm contexts, quorum overlap guarantees are what ensure linearisability in systems like Paxos and Raft. In DAO governance, quorum requirements prevent low-participation attacks where a small minority can pass proposals without broader community engagement. Setting appropriate quorum thresholds balances liveness (ability to make decisions) against safety (resistance to minority capture).",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:consensus-mechanism",
+      "label": "Consensus Mechanism"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:on-chain-governance",
+        "label": "On-chain Governance"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:voting-mechanism",
+        "label": "Voting Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:consensus-protocol",
+        "label": "Consensus Protocol"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-as-a-service",
+      "label": "Blockchain As A Service"
+    },
+    {
+      "slug": "byzantine-fault-tolerance",
+      "label": "Byzantine Fault Tolerance"
+    },
+    {
+      "slug": "consortium-blockchain",
+      "label": "Consortium Blockchain"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "fault-tolerance",
+      "label": "Fault Tolerance"
+    },
+    {
+      "slug": "luxury-goods-authentication",
+      "label": "Luxury Goods Authentication"
+    },
+    {
+      "slug": "privacy-preserving-blockchain",
+      "label": "Privacy Preserving Blockchain"
+    },
+    {
+      "slug": "private-blockchain",
+      "label": "Private Blockchain"
+    },
+    {
+      "slug": "provenance-tracking",
+      "label": "Provenance Tracking"
+    }
+  ]
+}

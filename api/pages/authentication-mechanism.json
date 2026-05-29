@@ -1,0 +1,87 @@
+{
+  "id": "urn:visionflow:page:authentication-mechanism",
+  "title": "Authentication Mechanism",
+  "slug": "authentication-mechanism",
+  "public": true,
+  "classIri": "urn:ngm:class:authentication-mechanism",
+  "domain": "security",
+  "definition": "An authentication mechanism is a technical procedure or protocol that verifies the claimed identity of a user, device, or system before granting access to protected resources. Such mechanisms range from simple password checks to sophisticated cryptographic challenges and biometric verification. They form the foundational layer of access control systems, ensuring that only authorised principals can interact with sensitive data or services. The strength and appropriateness of a chosen mechanism directly influences the overall security posture of a system.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:authentication",
+      "label": "Authentication"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:authorisation",
+        "label": "Authorisation"
+      },
+      {
+        "id": "urn:ngm:class:multi-factor-authentication",
+        "label": "Multi-Factor Authentication"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-keys",
+        "label": "Cryptographic Keys"
+      },
+      {
+        "id": "urn:ngm:class:authentication-standards",
+        "label": "Authentication Standards"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cybersecurity-standard",
+      "label": "Cybersecurity Standard"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "slug": "transaction-standard",
+      "label": "Transaction Standard"
+    },
+    {
+      "slug": "virtual-property-right",
+      "label": "Virtual Property Right"
+    }
+  ]
+}

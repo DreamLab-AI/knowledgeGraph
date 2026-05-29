@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:privacy-engineering",
+  "title": "Privacy Engineering",
+  "slug": "privacy-engineering",
+  "public": true,
+  "classIri": "urn:ngm:class:privacy-engineering",
+  "domain": "security",
+  "definition": "Privacy Engineering is the systematic application of engineering methods to translate privacy principles and regulatory requirements into concrete technical controls embedded within systems and processes. It operationalises concepts such as data minimisation, purpose limitation, and consent management through design patterns, threat models, and measurable privacy metrics. Techniques include differential privacy for statistical disclosures, homomorphic encryption for computation on sensitive data, and k-anonymity for dataset release. The discipline bridges legal obligations\u2014particularly GDPR and similar frameworks\u2014with software architecture and data pipeline design, treating privacy as a quality attribute alongside performance and security.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:privacy-by-design",
+      "label": "Privacy By Design"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      },
+      {
+        "id": "urn:ngm:class:privacy-and-data-governance",
+        "label": "Privacy and Data Governance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      },
+      {
+        "id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      },
+      {
+        "id": "urn:ngm:class:consent-management",
+        "label": "Consent Management"
+      },
+      {
+        "id": "urn:ngm:class:data-minimisation",
+        "label": "Data Minimisation"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:secure-multi-party-computation",
+        "label": "Secure Multi-Party Computation"
+      },
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "id": "urn:ngm:class:personal-data-store",
+        "label": "Personal Data Store"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "cyber-security-and-cryptography",
+      "label": "Cyber Security and Cryptography"
+    },
+    {
+      "slug": "data-anonymization-pipeline",
+      "label": "Data Anonymization Pipeline"
+    },
+    {
+      "slug": "data-protection",
+      "label": "Data Protection"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+- ### Definition
+  - [[Assistive Robotics]] encompasses robotic systems engineered to augment or replace lost human physical and cognitive functions, spanning [[Exoskeleton Robot]] devices, [[Social Robotics]] companions, and mobility platforms that bridge disability with independence.
+- ### Relationships
+  - Assistive Robotics sits at the intersection of [[Human Robot Interaction]] and [[Accessibility]], relying on [[Actuator]] technologies and [[Embedded Systems]] to deliver precise, safe motion assistance. [[Lower Limb Exoskeleton]] designs exemplify its orthopaedic applications, while [[AI companions]] extend its scope into cognitive and emotional support domains. [[Social Robotics]] contributes behavioural interaction models that assist individuals with autism or dementia.
+- ### Content
+  - Assistive Robotics addresses the growing global demand for technologies that extend the independent living capabilities of people with physical disabilities, neurological conditions, or age-related functional decline. Systems range from upper-limb prosthetic devices with sensory feedback, through powered wheelchairs with autonomous navigation, to full lower-body exoskeletons that restore ambulatory function to paralysed users.
+
+  - Key technical challenges include compliant actuation to ensure human safety during physical contact, real-time intent detection via electromyography or brain-computer interfaces, and long-duration battery management for wearable platforms. Control architectures must balance autonomous assistance with user agency, adapting dynamically to terrain, fatigue, and changing therapeutic goals.
+
+  - Regulatory frameworks across the UK, EU, and US classify many assistive robotic devices as medical equipment, imposing clinical validation requirements and post-market surveillance obligations. Ethical dimensions include data privacy for health telemetry, equitable access given device cost, and informed consent for systems that influence bodily autonomy.
+
+  - The field increasingly intersects with [[Social Robotics]] to address non-physical impairments. Companion robots such as Paro and STEVIE provide therapeutic interaction for elderly users with dementia, demonstrating measurable reductions in anxiety and social withdrawal. These systems require nuanced models of human emotional states and culturally appropriate interaction patterns.

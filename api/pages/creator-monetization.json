@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:creator-monetization",
+  "title": "Creator Monetization",
+  "slug": "creator-monetization",
+  "public": true,
+  "classIri": "urn:ngm:class:creator-monetization",
+  "domain": "finance",
+  "definition": "Creator Monetization refers to the suite of mechanisms, platforms, and economic models through which independent content creators convert their creative output and audience relationships into sustainable revenue streams. These mechanisms span advertising revenue sharing, subscription and membership tiers, merchandise and physical goods, live events, licensing, and on-chain token-based models including NFTs and creator coins. The field has been shaped by the shift from broadcast media to participatory digital platforms, enabling individuals rather than corporations to capture value from cultural production. Web3 infrastructure is expanding the design space by enabling programmable royalties and direct fan-ownership of creative works.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:creator-economy",
+      "label": "Creator Economy"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:multi-party-royalties",
+        "label": "Multi Party Royalties"
+      },
+      {
+        "id": "urn:ngm:class:digital-marketplace",
+        "label": "Digital Marketplace"
+      },
+      {
+        "id": "urn:ngm:class:non-fungible-token-nft",
+        "label": "Non-Fungible Token (NFT)"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:creator-royalty-token",
+        "label": "Creator Royalty Token"
+      },
+      {
+        "id": "urn:ngm:class:smart-royalty-contract",
+        "label": "Smart Royalty Contract"
+      },
+      {
+        "id": "urn:ngm:class:royalty-distribution",
+        "label": "Royalty Distribution"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:platform-economy",
+        "label": "Platform Economy"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:nft-marketplace",
+        "label": "NFT Marketplace"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "creator-economy",
+      "label": "Creator Economy"
+    },
+    {
+      "slug": "digital-goods",
+      "label": "Digital Goods"
+    },
+    {
+      "slug": "revenue-sharing",
+      "label": "Revenue Sharing"
+    },
+    {
+      "slug": "social-token-economy",
+      "label": "Social Token Economy"
+    }
+  ]
+}

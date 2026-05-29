@@ -1,0 +1,89 @@
+{
+  "id": "urn:visionflow:page:siggraph",
+  "title": "SIGGRAPH",
+  "slug": "siggraph",
+  "public": true,
+  "classIri": "urn:ngm:class:siggraph",
+  "domain": "metaverse",
+  "definition": "SIGGRAPH (Special Interest Group on Computer Graphics and Interactive Techniques) is the ACM's premier annual conference on computer graphics and interactive technology, considered the world's most prestigious venue for publishing advances in rendering, animation, simulation, geometry processing, and human-computer interaction. First held in 1974, SIGGRAPH has been the introduction point for transformative techniques including ray tracing, physically based rendering, GPU shading languages, neural rendering, and real-time global illumination. Its technical papers programme is among the most selective in computer science, with acceptance rates typically below 25 per cent.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:computer-graphics",
+      "label": "Computer Graphics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      },
+      {
+        "id": "urn:ngm:class:differentiable-rendering",
+        "label": "Differentiable Rendering"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:visual-effects",
+        "label": "Visual Effects"
+      },
+      {
+        "id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      },
+      {
+        "id": "urn:ngm:class:global-illumination",
+        "label": "Global Illumination"
+      },
+      {
+        "id": "urn:ngm:class:3-d-modeling",
+        "label": "3D Modeling"
+      },
+      {
+        "id": "urn:ngm:class:neural-rendering",
+        "label": "Neural Rendering"
+      },
+      {
+        "id": "urn:ngm:class:3-d-gaussian-splatting",
+        "label": "3D Gaussian Splatting"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "inpainting",
+      "label": "Inpainting"
+    },
+    {
+      "slug": "light-field",
+      "label": "Light field"
+    },
+    {
+      "slug": "procedural-and-hybrid-4-d",
+      "label": "Procedural and Hybrid 4D"
+    },
+    {
+      "slug": "scene-capture-and-reconstruction",
+      "label": "Scene Capture and Reconstruction"
+    }
+  ]
+}

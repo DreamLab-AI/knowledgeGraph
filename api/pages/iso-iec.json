@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:iso-iec",
+  "title": "ISO/IEC",
+  "slug": "iso-iec",
+  "public": true,
+  "classIri": "urn:ngm:class:iso-iec",
+  "domain": "governance",
+  "definition": "ISO/IEC refers to the joint technical committee structure formed by the International Organisation for Standardisation (ISO) and the International Electrotechnical Commission (IEC) to develop international standards in information technology and related fields. The primary body is ISO/IEC JTC 1, which oversees standards in areas including software engineering, cybersecurity, artificial intelligence, and biometrics. ISO/IEC standards are developed through consensus among national standardisation bodies and carry significant weight in regulatory compliance, procurement, and international trade agreements. Landmark outputs include ISO/IEC 27001 for information security management and ISO/IEC 42001 for AI management systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:information-security",
+        "label": "Information Security"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:technical-standards",
+        "label": "Technical Standards"
+      },
+      {
+        "id": "urn:ngm:class:data-standards",
+        "label": "Data Standards"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:iso-iec-27001",
+        "label": "ISO/IEC 27001"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-42001",
+        "label": "ISO IEC 42001"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity-standard",
+        "label": "Cybersecurity Standard"
+      },
+      {
+        "id": "urn:ngm:class:compliance-standards",
+        "label": "Compliance Standards"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "camera",
+      "label": "Camera"
+    },
+    {
+      "slug": "compliance-control",
+      "label": "Compliance Control"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "slug": "distributed-identity",
+      "label": "Distributed Identity"
+    },
+    {
+      "slug": "etsi-domain-virtual-society",
+      "label": "ETSI_Domain_Virtual_Society"
+    },
+    {
+      "slug": "proprietary-video",
+      "label": "Proprietary Video"
+    }
+  ]
+}

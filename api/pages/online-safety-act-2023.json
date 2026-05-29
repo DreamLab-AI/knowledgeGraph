@@ -1,0 +1,95 @@
+{
+  "id": "urn:visionflow:page:online-safety-act-2023",
+  "title": "Online Safety Act 2023",
+  "slug": "online-safety-act-2023",
+  "public": true,
+  "classIri": "urn:ngm:class:online-safety-act-2023",
+  "domain": "governance",
+  "definition": "The Online Safety Act 2023 is a landmark piece of UK legislation that received Royal Assent in October 2023, establishing a comprehensive duty-of-care framework for online platforms and search services operating in the United Kingdom. The Act creates tiered obligations proportionate to service size and risk: all in-scope services must conduct risk assessments and remove illegal content; larger platforms with significant reach face additional requirements including transparency reporting, user empowerment tools, and protections for children. Ofcom is designated as the regulator with powers to audit compliance, issue fines of up to 10% of global annual turnover, and in extreme cases block services from UK users. The Act also introduces criminal liability for senior managers of companies that fail to protect children from serious online harms.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-regulation",
+      "label": "Digital Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:trust-and-safety",
+        "label": "Trust and Safety"
+      },
+      {
+        "id": "urn:ngm:class:content-moderation-standards",
+        "label": "Content Moderation Standards"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:digital-society-harms",
+        "label": "Digital Society Harms"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      },
+      {
+        "id": "urn:ngm:class:digital-safety",
+        "label": "Digital Safety"
+      },
+      {
+        "id": "urn:ngm:class:digital-services-act",
+        "label": "Digital Services Act"
+      },
+      {
+        "id": "urn:ngm:class:age-verification",
+        "label": "Age Verification"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-video",
+      "label": "AI Video"
+    },
+    {
+      "slug": "death-of-the-internet",
+      "label": "Death of the Internet"
+    },
+    {
+      "slug": "decentralized-identifiers",
+      "label": "Decentralized Identifiers"
+    },
+    {
+      "slug": "digital-identity-wallet",
+      "label": "Digital Identity Wallet"
+    },
+    {
+      "slug": "digital-society-harms",
+      "label": "Digital Society Harms"
+    }
+  ]
+}

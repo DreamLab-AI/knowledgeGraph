@@ -1,0 +1,58 @@
+public:: true
+
+# Cross-Chain Interoperability
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:cross-chain-interoperability",
+  "@type": "Page",
+  "vc:slug": "cross-chain-interoperability",
+  "title": "Cross-Chain Interoperability",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 2
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:cross-chain-interoperability",
+  "@type": "Class",
+  "label": "Cross-Chain Interoperability",
+  "definition": "Cross-Chain Interoperability refers to the technical capacity for distinct blockchain networks to communicate, transfer assets, and share state without relying on a centralised intermediary. It encompasses atomic swaps, cross-chain messaging protocols, relay chains, bridge smart contracts, and inter-blockchain communication standards such as Cosmos IBC and Polkadot's XCMP. Achieving trustless interoperability requires solving the heterogeneous consensus problem—two chains with different finality guarantees must reach agreement on the validity of a cross-chain event—which is a non-trivial distributed systems challenge. The field is critical to the vision of a composable multi-chain ecosystem in which assets and logic can flow freely across sovereign networks.",
+  "domain": "blockchain",
+  "maturity": "established",
+  "subClassOf": [{"@id": "urn:ngm:class:blockchain-interoperability", "label": "Blockchain Interoperability"}],
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:cross-chain-bridge", "label": "Cross-Chain Bridge"},
+      {"@id": "urn:ngm:class:cosmos-ibc", "label": "Cosmos IBC"},
+      {"@id": "urn:ngm:class:polkadot", "label": "Polkadot"},
+      {"@id": "urn:ngm:class:atomic-swap", "label": "Atomic Swap"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:cross-chain-governance", "label": "Cross-Chain Governance"},
+      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:cross-chain-messaging", "label": "Cross-Chain Messaging"},
+      {"@id": "urn:ngm:class:interoperability-protocol", "label": "Interoperability Protocol"}
+    ]
+  },
+  "quality": 0.8
+}
+```
+
+- ### Definition
+  - [[Cross-Chain Interoperability]] is the technical capacity for distinct [[Blockchain]] networks to transfer assets and share state without centralised intermediaries, implemented through mechanisms such as [[Atomic Swap]], [[Cosmos IBC]], and [[Polkadot]] relay chains.
+- ### Relationships
+  - [[Cross-Chain Interoperability]] directly depends on [[Cross-Chain Bridge]] contracts and [[Cross-Chain Messaging]] protocols to relay proofs between chains. Standards such as [[Cosmos IBC]] and [[Polkadot]]'s XCMP formalise these interactions into composable [[Interoperability Protocol]] specifications. The capability enables [[Cross-Chain Governance]] models where token holders on multiple networks participate in joint decisions, and unlocks the full potential of [[Decentralised Finance]] by allowing liquidity and collateral to move freely across sovereign networks without wrapping or custody risk.
+- ### Content
+  - Cross-chain interoperability addresses one of the most persistent structural limitations of blockchain ecosystems: the fact that independent networks—each with its own consensus mechanism, token economics, and smart contract runtime—cannot natively exchange value or verify each other's state. Early solutions relied on centralised custodians who held assets on one chain and issued IOUs on another. This introduced counterparty risk and contradicted the trustless ethos of decentralised systems.
+
+  - The first generation of trustless solutions used [[Atomic Swap]] protocols, in which hash time-locked contracts (HTLCs) on two chains enforce an all-or-nothing asset exchange. If both parties reveal the pre-image of a hash within a time window, both legs of the swap complete; if either party defaults, both legs revert. HTLCs work well for direct peer-to-peer exchanges but scale poorly for complex multi-hop routing and do not support arbitrary data messages.
+
+  - Second-generation frameworks such as [[Cosmos IBC]] (Inter-Blockchain Communication) and [[Polkadot]] XCMP introduced standardised message-passing layers. IBC defines a light-client-based handshake protocol: each chain maintains a continuously updated light client of its counterparts, allowing it to verify cross-chain packet commitments against Merkle proofs without trusting any intermediary. Polkadot uses a shared relay chain that provides pooled security, enabling [[Polkadot Parachains]] to exchange messages with cryptographic finality guarantees inherited from the relay chain validators.
+
+  - [[Cross-Chain Bridge]] contracts have emerged as the most widely deployed—and most frequently exploited—form of cross-chain interoperability. Bridges typically lock assets on a source chain and mint synthetic representations on a destination chain. High-profile exploits, including those of Wormhole and Ronin, have collectively drained hundreds of millions of dollars, exposing the challenge of securing heterogeneous trust assumptions at the boundary between chains. This has accelerated research into zero-knowledge proof-based bridges that can verify source-chain state transitions with minimal trust, connecting cross-chain interoperability to advances in [[Blockchain Scalability]] and cryptographic proof systems.

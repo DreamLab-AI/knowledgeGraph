@@ -1,0 +1,83 @@
+{
+  "id": "urn:visionflow:page:agent2-agent-protocol",
+  "title": "Agent2Agent Protocol",
+  "slug": "agent2-agent-protocol",
+  "public": true,
+  "classIri": "urn:ngm:class:agent2-agent-protocol",
+  "domain": "ai",
+  "definition": "Agent2Agent Protocol (A2A) is an open specification developed by Google and partner organisations that enables heterogeneous AI agents to discover, communicate, and collaborate across organisational and platform boundaries. It defines a standardised messaging envelope, capability advertisement mechanism, and task-delegation schema so that agents built on different frameworks \u2014 such as LangChain, CrewAI, or custom enterprise systems \u2014 can interoperate without bespoke integration code. The protocol operates over HTTPS with JSON-RPC 2.0 and supports both synchronous request-response and asynchronous streaming via Server-Sent Events. Agent capability cards, analogous to service discovery manifests, allow an agent to advertise its skills so that orchestrating agents can route work appropriately.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:communication-protocol",
+      "label": "Communication Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      },
+      {
+        "id": "urn:ngm:class:orchestration",
+        "label": "Orchestration"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:interoperability-protocol",
+        "label": "Interoperability Protocol"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      },
+      {
+        "id": "urn:ngm:class:agent-event-stream",
+        "label": "Agent Event Stream"
+      },
+      {
+        "id": "urn:ngm:class:server-sent-events",
+        "label": "Server-Sent Events"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "cli-multi-agent-systems",
+      "label": "CLI Multi-Agent Systems"
+    },
+    {
+      "slug": "computer-use-and-browser-agents",
+      "label": "Computer Use and Browser Agents"
+    }
+  ]
+}

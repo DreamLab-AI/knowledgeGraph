@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:decentralisation",
+  "title": "Decentralisation",
+  "slug": "decentralisation",
+  "public": true,
+  "classIri": "urn:ngm:class:decentralisation",
+  "domain": "blockchain",
+  "definition": "Decentralisation is the architectural and governance principle of distributing authority, control, computation, or data storage across multiple independent nodes or actors rather than concentrating it in a single entity. In technical systems it manifests as distributed ledgers, peer-to-peer networks, and federated protocols that eliminate single points of failure and censorship. In governance it refers to transferring decision-making power from central authorities to local or community actors. The degree of decentralisation exists on a spectrum and involves trade-offs between efficiency, security, scalability, and resilience.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:governance-framework",
+      "label": "Governance Framework"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-governance",
+        "label": "Decentralized Governance"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:censorship-resistance",
+        "label": "Censorship Resistance"
+      },
+      {
+        "id": "urn:ngm:class:dao",
+        "label": "DAO"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-centralisation-risks",
+      "label": "Bitcoin Centralisation Risks"
+    },
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "bitcoin-technical-overview",
+      "label": "Bitcoin Technical Overview"
+    },
+    {
+      "slug": "bitcoin-value-proposition",
+      "label": "Bitcoin Value Proposition"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    }
+  ]
+}

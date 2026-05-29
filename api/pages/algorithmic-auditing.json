@@ -1,0 +1,91 @@
+{
+  "id": "urn:visionflow:page:algorithmic-auditing",
+  "title": "Algorithmic Auditing",
+  "slug": "algorithmic-auditing",
+  "public": true,
+  "classIri": "urn:ngm:class:algorithmic-auditing",
+  "domain": "ai",
+  "definition": "Algorithmic auditing is the systematic evaluation of automated decision-making systems to assess their fairness, accuracy, transparency, and compliance with ethical and legal standards. It involves independent or internal review of training data, model architectures, outputs, and operational impacts. The discipline has emerged as a response to concerns about bias, discrimination, and opacity in AI-driven systems. Audits may be prospective, examining systems before deployment, or retrospective, investigating outcomes in production. Results are used to inform regulation, remediation, and public accountability.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-governance",
+      "label": "AI Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "id": "urn:ngm:class:bias-detection-methods",
+        "label": "Bias Detection Methods"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-bias",
+        "label": "Algorithmic Bias"
+      },
+      {
+        "id": "urn:ngm:class:ai-fairness",
+        "label": "AI Fairness"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-liability",
+      "label": "AI Liability"
+    },
+    {
+      "slug": "ai-risks",
+      "label": "AI Risks"
+    },
+    {
+      "slug": "algorithmic-transparency-index",
+      "label": "Algorithmic Transparency Index"
+    },
+    {
+      "slug": "consumer-protection",
+      "label": "Consumer Protection"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "id": "urn:visionflow:page:claude",
+  "title": "Claude",
+  "slug": "claude",
+  "public": true,
+  "classIri": "urn:ngm:individual:claude",
+  "domain": "ai",
+  "definition": "Claude is a family of large language model AI assistants developed by Anthropic, designed with safety and harmlessness as first-order design objectives alongside capability. Claude models are trained using Constitutional AI and reinforcement learning from human feedback to be helpful, harmless, and honest, embodying Anthropic's research programme on aligning advanced AI systems with human values. The Claude model family spans Haiku, Sonnet, and Opus tiers offering cost-performance trade-offs, and supports extended context windows, tool use, agentic workflows, and multimodal inputs. Claude has been widely adopted in enterprise API integrations, developer tooling, and consumer applications.",
+  "subClassOf": [],
+  "entityType": "Individual",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      },
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:constitutional-ai",
+        "label": "Constitutional AI"
+      },
+      {
+        "id": "urn:ngm:class:rlhf",
+        "label": "RLHF"
+      },
+      {
+        "id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:anthropic",
+        "label": "Anthropic"
+      },
+      {
+        "id": "urn:ngm:individual:anthropic-claude",
+        "label": "Anthropic Claude"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "chatbots",
+      "label": "Chatbots"
+    },
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "education-and-ai",
+      "label": "Education and AI"
+    },
+    {
+      "slug": "gpts-and-custom-assistants",
+      "label": "GPTs and Custom Assistants"
+    },
+    {
+      "slug": "transformers",
+      "label": "Transformers"
+    },
+    {
+      "slug": "treasury-management",
+      "label": "Treasury Management"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    }
+  ]
+}

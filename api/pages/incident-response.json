@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:incident-response",
+  "title": "Incident Response",
+  "slug": "incident-response",
+  "public": true,
+  "classIri": "urn:ngm:class:incident-response",
+  "domain": "security",
+  "definition": "Incident Response is the structured organisational process for detecting, containing, eradicating, and recovering from cybersecurity incidents, and subsequently analysing them to prevent recurrence. It follows lifecycle models such as NIST SP 800-61 or SANS PICERL (Preparation, Identification, Containment, Eradication, Recovery, Lessons Learned), and is operationalised through playbooks, security operations centre (SOC) workflows, and automation tooling including SIEM and SOAR platforms. Effective incident response minimises dwell time\u2014the interval between initial compromise and detection\u2014and limits lateral movement, data exfiltration, and operational disruption. With the increasing scale and sophistication of threats, AI-assisted triage, automated containment, and threat-intelligence enrichment have become standard components of mature incident response programmes.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cybersecurity",
+      "label": "Cybersecurity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:digital-forensics-framework",
+        "label": "Digital Forensics Framework"
+      },
+      {
+        "id": "urn:ngm:class:ai-trust-risk-and-security-management",
+        "label": "AI Trust Risk and Security Management"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:cybersecurity-standard",
+        "label": "Cybersecurity Standard"
+      },
+      {
+        "id": "urn:ngm:class:data-security",
+        "label": "Data Security"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:information-security",
+        "label": "Information Security"
+      },
+      {
+        "id": "urn:ngm:class:incident-reporting",
+        "label": "Incident Reporting"
+      },
+      {
+        "id": "urn:ngm:class:data-breach",
+        "label": "Data Breach"
+      },
+      {
+        "id": "urn:ngm:class:vulnerability",
+        "label": "Vulnerability"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "access-control-system",
+      "label": "Access Control System"
+    },
+    {
+      "slug": "resilience-metric",
+      "label": "Resilience Metric"
+    },
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    },
+    {
+      "slug": "threat-surface-map",
+      "label": "Threat Surface Map"
+    },
+    {
+      "slug": "trust-and-safety",
+      "label": "Trust and Safety"
+    },
+    {
+      "slug": "virtual-stand-up",
+      "label": "virtual-stand-up"
+    }
+  ]
+}

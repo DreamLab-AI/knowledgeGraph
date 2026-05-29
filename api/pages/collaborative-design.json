@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:collaborative-design",
+  "title": "Collaborative Design",
+  "slug": "collaborative-design",
+  "public": true,
+  "classIri": "urn:ngm:class:collaborative-design",
+  "domain": "metaverse",
+  "definition": "Collaborative Design is a design methodology in which multiple stakeholders\u2014including designers, engineers, end users, and domain experts\u2014jointly participate in defining, iterating, and validating artefacts or systems. It draws on participatory design traditions to ensure that lived experience and diverse expertise shape outcomes rather than being consulted retrospectively. Digital collaborative design platforms support real-time co-authoring, version management, and synchronous review across distributed teams. The approach is applied in product development, spatial design, software architecture, and policy co-creation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:design-thinking",
+      "label": "Design Thinking"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:product-design",
+        "label": "Product Design"
+      },
+      {
+        "id": "urn:ngm:class:generative-design-tool",
+        "label": "Generative Design Tool"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:collaborative-whiteboard",
+        "label": "Collaborative Whiteboard"
+      },
+      {
+        "id": "urn:ngm:class:design-software",
+        "label": "Design Software"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:user-research",
+        "label": "User Research"
+      },
+      {
+        "id": "urn:ngm:class:participatory-policy-making",
+        "label": "Participatory Policy Making"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-learning",
+        "label": "Collaborative Learning"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "augmented-reality-collaboration",
+      "label": "Augmented Reality Collaboration"
+    },
+    {
+      "slug": "collaborative-whiteboard",
+      "label": "Collaborative Whiteboard"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "industrial-metaverse",
+      "label": "Industrial Metaverse"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:trade-finance-automation",
+  "title": "Trade Finance Automation",
+  "slug": "trade-finance-automation",
+  "public": true,
+  "classIri": "urn:ngm:class:trade-finance-automation",
+  "domain": "finance",
+  "definition": "Trade Finance Automation is the application of digital technologies\u2014including blockchain-based smart contracts, AI-driven document processing, and electronic data interchange\u2014to streamline and accelerate the complex financial instruments and workflows that facilitate international commerce. Traditional trade finance relies on paper-intensive instruments such as letters of credit, bills of lading, and documentary collections, which are slow, error-prone, and costly to process. Automation replaces manual document verification with machine-readable structured data, triggers payment obligations automatically upon verified delivery conditions, and reduces counterparty risk through distributed ledger transparency. The result is faster settlement, lower operational costs, and improved access to working capital for exporters and importers globally.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:trade-finance",
+      "label": "Trade Finance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cross-border-payments",
+        "label": "Cross-Border Payments"
+      },
+      {
+        "id": "urn:ngm:class:logistics-optimization",
+        "label": "Logistics Optimization"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-smart-contracts",
+        "label": "Enterprise Smart Contracts"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-traceability",
+        "label": "Supply Chain Traceability"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:customs-trade-facilitation",
+        "label": "Customs Trade Facilitation"
+      },
+      {
+        "id": "urn:ngm:class:financial-instruments",
+        "label": "Financial Instruments"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-compliance",
+        "label": "Blockchain Compliance"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-blockchain",
+        "label": "Supply Chain Blockchain"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-as-a-service",
+      "label": "Blockchain As A Service"
+    },
+    {
+      "slug": "customs-trade-facilitation",
+      "label": "Customs Trade Facilitation"
+    },
+    {
+      "slug": "enterprise-smart-contracts",
+      "label": "Enterprise Smart Contracts"
+    },
+    {
+      "slug": "quorum-blockchain",
+      "label": "Quorum Blockchain"
+    }
+  ]
+}

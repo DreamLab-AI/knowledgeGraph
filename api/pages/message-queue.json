@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:message-queue",
+  "title": "Message Queue",
+  "slug": "message-queue",
+  "public": true,
+  "classIri": "urn:ngm:class:message-queue",
+  "domain": "infrastructure",
+  "definition": "A Message Queue is a form of asynchronous inter-process communication that allows software components to exchange messages by placing them in a durable, ordered buffer, decoupling producers from consumers in time and space. Messages are persisted in the queue until a consumer retrieves and acknowledges them, providing at-least-once delivery guarantees and enabling load levelling across heterogeneous processing rates. Message queues are foundational to event-driven architectures, microservices integration, and distributed data pipelines, where they absorb traffic spikes and improve system resilience. Implementations range from lightweight in-process queues to enterprise-grade distributed brokers such as Apache Kafka and RabbitMQ.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:distributed-system",
+      "label": "Distributed System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      },
+      {
+        "id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:apache-kafka",
+        "label": "Apache Kafka"
+      },
+      {
+        "id": "urn:ngm:class:asynchronous-communication",
+        "label": "Asynchronous Communication"
+      },
+      {
+        "id": "urn:ngm:class:asynchronous-execution",
+        "label": "Asynchronous Execution"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:agent-event-stream",
+        "label": "Agent Event Stream"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      },
+      {
+        "id": "urn:ngm:class:event-management",
+        "label": "Event Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cross-chain-messaging",
+      "label": "Cross-Chain Messaging"
+    },
+    {
+      "slug": "digital-twin-synchronisation-bus",
+      "label": "Digital Twin Synchronisation Bus"
+    },
+    {
+      "slug": "distributed-computing",
+      "label": "Distributed Computing"
+    },
+    {
+      "slug": "middleware",
+      "label": "Middleware"
+    },
+    {
+      "slug": "service-layer",
+      "label": "Service Layer"
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "id": "urn:visionflow:page:polkadot",
+  "title": "Polkadot",
+  "slug": "polkadot",
+  "public": true,
+  "classIri": "urn:ngm:class:polkadot",
+  "domain": "blockchain",
+  "definition": "Polkadot is a heterogeneous multi-chain blockchain protocol designed by Gavin Wood and developed by Parity Technologies that enables independent blockchains \u2014 called parachains \u2014 to connect to a central relay chain, share its pooled security, and exchange messages and assets through the Cross-Consensus Message format. Its nominated proof-of-stake consensus mechanism uses DOT token validators to secure the relay chain whilst parachains benefit from shared security without needing to bootstrap their own validator sets. Polkadot is built on the Substrate framework, which allows developers to construct purpose-built application chains that plug into the ecosystem.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain-protocol",
+      "label": "Blockchain Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cross-chain-messaging",
+        "label": "Cross-Chain Messaging"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:cosmos-ibc",
+        "label": "Cosmos IBC"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:web-assembly",
+        "label": "WebAssembly"
+      },
+      {
+        "id": "urn:ngm:class:validator-set",
+        "label": "Validator Set"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:polkadot-parachains",
+        "label": "Polkadot Parachains"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-interoperability",
+        "label": "Cross-Chain Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:nominated-proof-of-stake",
+        "label": "Nominated Proof of Stake"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "51-attack",
+      "label": "51% Attack"
+    },
+    {
+      "slug": "atomic-swap",
+      "label": "Atomic Swap"
+    },
+    {
+      "slug": "blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "carbon-neutral-blockchain",
+      "label": "Carbon Neutral Blockchain"
+    },
+    {
+      "slug": "food-safety-blockchain",
+      "label": "Food Safety Blockchain"
+    },
+    {
+      "slug": "hyperledger-iroha",
+      "label": "Hyperledger Iroha"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "layer-0",
+      "label": "Layer 0"
+    },
+    {
+      "slug": "polkadot-parachains",
+      "label": "Polkadot Parachains"
+    },
+    {
+      "slug": "private-blockchain",
+      "label": "Private Blockchain"
+    },
+    {
+      "slug": "proof-of-stake-sustainability",
+      "label": "Proof Of Stake Sustainability"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof Of Work"
+    },
+    {
+      "slug": "provenance-tracking",
+      "label": "Provenance Tracking"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    }
+  ]
+}

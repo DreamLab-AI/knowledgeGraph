@@ -1,0 +1,95 @@
+{
+  "id": "urn:visionflow:page:wholesale-cbdc",
+  "title": "Wholesale CBDC",
+  "slug": "wholesale-cbdc",
+  "public": true,
+  "classIri": "urn:ngm:class:wholesale-cbdc",
+  "domain": "finance",
+  "definition": "A Wholesale Central Bank Digital Currency (wCBDC) is a form of central bank money issued in digital form and restricted to use by financial institutions\u2014commercial banks, clearing houses, and other regulated entities\u2014for large-value interbank settlement and financial market infrastructure operations, as distinct from retail CBDC which is available to the general public. Wholesale CBDCs are designed to modernise payment system infrastructure by enabling atomic delivery-versus-payment settlement, programmable payment conditions through smart contracts, and 24/7 settlement finality, addressing inefficiencies in legacy correspondent banking and real-time gross settlement systems. Multiple central banks are actively piloting wholesale CBDC, including Project Jura (BIS, Banque de France, SNB), Project Dunbar (BIS, MAS, SARB, RBA, BNM), and the Bank of England's New Payments Architecture.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:central-bank-digital-currency",
+      "label": "Central Bank Digital Currency"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:instant-value-settlement",
+        "label": "Instant value settlement"
+      },
+      {
+        "id": "urn:ngm:class:cross-border-payments",
+        "label": "Cross-Border Payments"
+      },
+      {
+        "id": "urn:ngm:class:monetary-policy-implementation",
+        "label": "Monetary Policy Implementation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:digital-payment-system",
+        "label": "Digital Payment System"
+      },
+      {
+        "id": "urn:ngm:class:interoperability-protocol",
+        "label": "Interoperability Protocol"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:monetary-sovereignty",
+        "label": "Monetary Sovereignty"
+      },
+      {
+        "id": "urn:ngm:class:monetary-system",
+        "label": "Monetary System"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      },
+      {
+        "id": "urn:ngm:class:cbdcs",
+        "label": "CBDCs"
+      },
+      {
+        "id": "urn:ngm:class:financial-infrastructure",
+        "label": "Financial Infrastructure"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cbdcs",
+      "label": "CBDCs"
+    },
+    {
+      "slug": "consortium-blockchain",
+      "label": "Consortium Blockchain"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "quorum-blockchain",
+      "label": "Quorum Blockchain"
+    }
+  ]
+}

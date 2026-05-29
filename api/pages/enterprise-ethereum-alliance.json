@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:enterprise-ethereum-alliance",
+  "title": "Enterprise Ethereum Alliance",
+  "slug": "enterprise-ethereum-alliance",
+  "public": true,
+  "classIri": "urn:ngm:class:enterprise-ethereum-alliance",
+  "domain": "blockchain",
+  "definition": "The Enterprise Ethereum Alliance (EEA) is an industry consortium founded in February 2017 that develops open, blockchain-based specifications for enterprise deployments of Ethereum technology. It standardises the interfaces between private, consortium, and public Ethereum networks, enabling organisations to build interoperable enterprise applications that can bridge permissioned and permissionless environments. The EEA's Client Specification defines conformance requirements for enterprise Ethereum clients, covering private transaction management, permissioning, token standards, and off-chain compute. Membership spans over two hundred organisations including JP Morgan, Microsoft, Accenture, Intel, and ConsenSys, making it one of the largest blockchain standards bodies in the world.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:consortium-blockchain",
+      "label": "Consortium Blockchain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-blockchain-architecture",
+        "label": "Enterprise Blockchain Architecture"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract-platform",
+        "label": "Smart Contract Platform"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:api-standard",
+        "label": "API Standard"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:enterprise-blockchain",
+        "label": "Enterprise Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-smart-contracts",
+        "label": "Enterprise Smart Contracts"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-token-standards",
+        "label": "Enterprise Token Standards"
+      },
+      {
+        "id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-as-a-service",
+      "label": "Blockchain As A Service"
+    },
+    {
+      "slug": "blockchain-protocol",
+      "label": "Blockchain Protocol"
+    },
+    {
+      "slug": "consortium-blockchain",
+      "label": "Consortium Blockchain"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "enterprise-smart-contracts",
+      "label": "Enterprise Smart Contracts"
+    },
+    {
+      "slug": "quorum-blockchain",
+      "label": "Quorum Blockchain"
+    }
+  ]
+}

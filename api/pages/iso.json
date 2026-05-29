@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:iso",
+  "title": "ISO",
+  "slug": "iso",
+  "public": true,
+  "classIri": "urn:ngm:class:iso",
+  "domain": "governance",
+  "definition": "The International Organisation for Standardisation (ISO) is an independent, non-governmental international body comprising the national standards institutes of 167 countries, responsible for developing and publishing voluntary international standards across virtually every sector of industry, technology, and commerce. ISO standards are produced by technical committees composed of experts nominated by member bodies and are adopted through a consensus-based process requiring defined levels of national body approval. ISO standards span quality management, environmental management, information security, robotics, artificial intelligence, financial services, and hundreds of other domains. Published standards carry normative authority in many regulatory and procurement frameworks worldwide.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:standards-body",
+      "label": "Standards Body"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:conformity-assessment",
+        "label": "Conformity Assessment"
+      },
+      {
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:iso-iec-27001",
+        "label": "ISO/IEC 27001"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-42001",
+        "label": "ISO IEC 42001"
+      },
+      {
+        "id": "urn:ngm:class:technical-standards",
+        "label": "Technical Standards"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:iso-standards",
+        "label": "Iso Standards"
+      },
+      {
+        "id": "urn:ngm:class:technical-standard",
+        "label": "Technical Standard"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "asynchronous-collaboration",
+      "label": "Asynchronous Collaboration"
+    },
+    {
+      "slug": "attack-vector",
+      "label": "Attack Vector"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    },
+    {
+      "slug": "self-sovereign-identity",
+      "label": "Self Sovereign Identity"
+    },
+    {
+      "slug": "trust-framework",
+      "label": "Trust Framework"
+    },
+    {
+      "slug": "verifiable-credentials",
+      "label": "Verifiable Credentials"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

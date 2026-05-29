@@ -1,0 +1,95 @@
+{
+  "id": "urn:visionflow:page:digital-art",
+  "title": "Digital Art",
+  "slug": "digital-art",
+  "public": true,
+  "classIri": "urn:ngm:class:digital-art",
+  "domain": "metaverse",
+  "definition": "Digital art encompasses visual, interactive, and generative artworks created, stored, and distributed using digital technologies as primary medium or tool. It spans a wide range of practices\u2014from pixel painting and vector illustration to algorithmically generated pieces, interactive installations, and AI-synthesised imagery. The form has been transformed by NFT infrastructure, which introduced scarcity and provenance guarantees to inherently copyable digital objects. Digital art sits at the intersection of technological capability and aesthetic intent, continuously expanding as new computational tools emerge.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:creative-media-domain",
+      "label": "Creative Media Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:content-creation",
+        "label": "Content Creation"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:creative-ai",
+        "label": "Creative AI"
+      },
+      {
+        "id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "id": "urn:ngm:class:creative-software",
+        "label": "Creative Software"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:agentic-metaverse-for-global-creatives",
+        "label": "Agentic Metaverse for Global Creatives"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "id": "urn:ngm:class:digital-art-application",
+        "label": "Digital Art Application"
+      },
+      {
+        "id": "urn:ngm:class:digital-ownership",
+        "label": "Digital Ownership"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "3-d-modeling",
+      "label": "3D Modeling"
+    },
+    {
+      "slug": "decentralized-storage",
+      "label": "Decentralized Storage"
+    },
+    {
+      "slug": "digital-objects",
+      "label": "Digital Objects"
+    },
+    {
+      "slug": "nft-minting",
+      "label": "NFT Minting"
+    },
+    {
+      "slug": "proprietary-image-generation",
+      "label": "Proprietary Image Generation"
+    }
+  ]
+}

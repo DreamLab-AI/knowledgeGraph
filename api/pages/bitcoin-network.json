@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:bitcoin-network",
+  "title": "Bitcoin Network",
+  "slug": "bitcoin-network",
+  "public": true,
+  "classIri": "urn:ngm:class:bitcoin-network",
+  "domain": "blockchain",
+  "definition": "The Bitcoin Network is the global, permissionless peer-to-peer infrastructure underpinning the Bitcoin cryptocurrency, comprising nodes, miners, and the communication protocol that propagates transactions and blocks. It operates without a central authority, using the Nakamoto consensus mechanism\u2014proof-of-work\u2014to achieve agreement on a shared transaction ledger. The network enforces monetary policy through its protocol rules, capping total supply and adjusting mining difficulty automatically. It has operated continuously since January 2009, making it the longest-running blockchain network.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:peer-to-peer-network",
+      "label": "Peer-to-Peer Network"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:bitcoin-mining",
+        "label": "Bitcoin Mining"
+      },
+      {
+        "id": "urn:ngm:class:mempool",
+        "label": "Mempool"
+      },
+      {
+        "id": "urn:ngm:class:utxo-model",
+        "label": "UTXO Model"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "id": "urn:ngm:class:nakamoto-consensus",
+        "label": "Nakamoto Consensus"
+      },
+      {
+        "id": "urn:ngm:class:bc-cryptographic-primitive",
+        "label": "Cryptographic Primitive"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bitcoin-technical-overview",
+        "label": "Bitcoin Technical Overview"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-as-money",
+      "label": "Bitcoin As Money"
+    },
+    {
+      "slug": "bitcoin-centralisation-risks",
+      "label": "Bitcoin Centralisation Risks"
+    },
+    {
+      "slug": "bitcoin-etf",
+      "label": "Bitcoin ETF"
+    },
+    {
+      "slug": "bitcoin-value-proposition",
+      "label": "Bitcoin Value Proposition"
+    },
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    },
+    {
+      "slug": "taproot-assets",
+      "label": "Taproot Assets"
+    }
+  ]
+}

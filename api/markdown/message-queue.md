@@ -1,0 +1,12 @@
+- ### Definition
+  - A Message Queue is an [[Asynchronous Communication]] infrastructure component that buffers messages between producers and consumers, enabling [[Event Driven Architecture]] without tight temporal coupling between system components.
+- ### Relationships
+  - Message Queues are the backbone of [[Microservices Architecture]], allowing each service to operate independently and at its own pace. [[Apache Kafka]] is the dominant distributed log implementation, providing high-throughput, ordered message delivery with long-term retention suitable for [[Data Pipeline]] replay. [[Asynchronous Execution]] of background jobs, such as email dispatch or image processing, commonly relies on simpler task queues. [[Agent Event Stream]] patterns extend message queue semantics to AI agent coordination. The technology underpins [[Event Management]] systems in observability platforms and scales efficiently on [[Cloud Computing]] infrastructure through managed broker services.
+- ### Content
+  - A message queue operates on a producer–consumer model: producers write messages without waiting for consumers to be ready, and consumers read at their own pace with optional acknowledgement back to the broker. This decoupling enables systems to tolerate downstream slowness or temporary unavailability without cascading failures, a property sometimes called backpressure management.
+
+  - Delivery semantics vary by implementation. At-most-once delivery drops messages if the consumer fails, prioritising throughput. At-least-once delivery retains messages until acknowledged, risking duplicates. Exactly-once semantics, achievable in some brokers through transactional commits, are the most demanding but prevent double-processing in financial and inventory systems.
+
+  - [[Apache Kafka]] reimagines the queue as an immutable append-only log with configurable retention, enabling both real-time streaming and historical replay. Topics are partitioned across brokers for horizontal scalability, and consumer groups allow parallel processing whilst preserving per-partition ordering. This architecture makes Kafka suitable for both [[Data Pipeline]] ingestion and [[Event Driven Architecture]] at internet scale.
+
+  - Dead-letter queues capture messages that repeatedly fail processing, allowing operators to inspect and requeue them without losing data. Combined with circuit-breaker patterns, message queues contribute to robust distributed system design by containing failure blast radius and enabling graceful degradation when downstream services are impaired.

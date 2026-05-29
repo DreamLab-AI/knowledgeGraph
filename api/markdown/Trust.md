@@ -1,0 +1,59 @@
+public:: true
+
+# Trust
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:trust",
+  "@type": "Page",
+  "vc:slug": "trust",
+  "title": "Trust",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 2
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:trust",
+  "@type": "Class",
+  "label": "Trust",
+  "definition": "Trust is a cognitive and relational disposition in which an agent accepts vulnerability to the actions of another party, based on a positive expectation that the trusted party will act competently, honestly, and benevolently towards the trusting party's interests. In sociotechnical and AI contexts, trust extends beyond interpersonal relationships to encompass institutional trust in organisations, systems trust in technological artefacts, and algorithmic trust in AI decision-making processes. Trust is simultaneously a psychological state, a social institution, and a design property of systems, and its calibration — whether systems are trusted appropriately, too much, or too little — has profound implications for human welfare, democratic function, and the effective deployment of AI.",
+  "domain": "governance",
+  "maturity": "established",
+  "subClassOf": [{"@id": "urn:ngm:class:trust-framework", "label": "Trust Framework"}],
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:trust-and-safety", "label": "Trust and Safety"},
+      {"@id": "urn:ngm:class:trust-architecture", "label": "Trust Architecture"},
+      {"@id": "urn:ngm:class:ai-trustworthiness", "label": "AI Trustworthiness"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:trust-establishment", "label": "Trust Establishment"},
+      {"@id": "urn:ngm:class:trust-infrastructure", "label": "Trust Infrastructure"},
+      {"@id": "urn:ngm:class:trust-score-metric", "label": "Trust Score Metric"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:trust-in-automation", "label": "Trust in Automation"},
+      {"@id": "urn:ngm:class:ai-trust-risk-and-security-management", "label": "AI Trust Risk and Security Management"},
+      {"@id": "urn:ngm:class:trust-over-ip-foundation", "label": "Trust Over IP Foundation"}
+    ]
+  },
+  "quality": 0.8
+}
+```
+
+- ### Definition
+  - [[Trust]] is the disposition to accept vulnerability to another agent's actions based on positive expectations of competence and benevolence, extending in sociotechnical contexts to [[AI Trustworthiness]] assessments and [[Trust Architecture]] designs that govern when and how humans appropriately delegate authority to automated systems.
+- ### Relationships
+  - Trust is the foundational concept underpinning [[Trust and Safety]] policy frameworks, which operationalise trust as a design and governance problem for platforms and AI systems. [[Trust Architecture]] designs encode trust assumptions in technical protocols (cryptographic credentials, attestation mechanisms) that allow systems to verify claims about identities and capabilities. [[Trust Establishment]] processes — such as Know-Your-Customer procedures and certificate authority hierarchies — translate social trust into technical assertions. [[Trust in Automation]] research examines the calibration problem: ensuring human operators trust robotic and AI systems at levels appropriate to their actual reliability. [[AI Trust Risk and Security Management]] frameworks systematise the identification and mitigation of trust failures in AI deployments.
+- ### Content
+  - The philosophical and social scientific study of trust has produced several competing frameworks. Cognitive trust theories (Mayer, Davis, and Schoorman, 1995) identify ability, benevolence, and integrity as the three dimensions of trustworthiness on which trust judgements are based. Relational trust theories emphasise the role of ongoing interaction history and vulnerability in constituting trust as a social relation. Institutional trust theories examine how organisations, regulations, and audit regimes create the structural conditions for trust to be extended to strangers and complex systems.
+
+  - In AI systems, the calibration of trust is a critical design and governance challenge. Overtrust — extending more confidence in an AI system than its actual reliability warrants — leads to automation complacency, in which human overseers fail to detect and correct AI errors because they assume the system is functioning correctly. This pattern has been documented in aviation accident investigations and medical diagnostic AI deployments. Undertrust leads to underutilisation of beneficial AI capabilities and user rejection of systems that could improve outcomes. Achieving appropriate trust calibration requires transparency about system capabilities and limitations, reliable performance metrics communicated in user-accessible formats, and interaction designs that keep humans actively engaged in decision processes.
+
+  - Decentralised trust infrastructures represent a distinct approach to trust in digital systems, replacing reliance on central trusted authorities (certificate authorities, banks, government identity registrars) with cryptographic protocols that allow participants to verify claims without trusting any single intermediary. Blockchain systems embody this approach for transaction ledgers; the [[Trust Over IP Foundation]] is developing layered standards for decentralised identity and verifiable credentials that extend this approach to identity assertions. These systems shift the trust problem from trusting an authority to trusting a cryptographic protocol and the game-theoretic incentives of a distributed validator network.
+
+  - Public trust in AI systems at a societal level is a distinct concern from individual human-AI trust calibration. Polling data consistently shows that public trust in AI developers, AI-using corporations, and government AI deployments is substantially lower than trust in traditional professional services. This public trust deficit shapes the political economy of AI regulation and may ultimately constrain AI deployment more significantly than technical limitations. Responsible disclosure, independent auditing, contestability mechanisms, and meaningful human oversight are the primary institutional mechanisms proposed to rebuild or maintain societal trust in AI systems.

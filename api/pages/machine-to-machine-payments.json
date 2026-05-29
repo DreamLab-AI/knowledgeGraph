@@ -1,0 +1,87 @@
+{
+  "id": "urn:visionflow:page:machine-to-machine-payments",
+  "title": "Machine to Machine Payments",
+  "slug": "machine-to-machine-payments",
+  "public": true,
+  "classIri": "urn:ngm:class:machine-to-machine-payments",
+  "domain": "finance",
+  "definition": "Machine to Machine Payments (M2M Payments) refers to automated financial transactions initiated and settled between autonomous devices, software agents, or AI systems without direct human involvement in each individual transaction. These payments enable IoT devices, autonomous vehicles, robots, and AI agents to pay for resources, services, or data on a per-use or streaming basis, forming the economic layer of the machine economy. M2M payments typically require programmable money, low transaction fees, high throughput, and reliable settlement guarantees, properties that have driven interest in blockchain-based payment channels, stablecoins, and central bank digital currencies as settlement rails.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-payment-system",
+      "label": "Digital Payment System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "id": "urn:ngm:class:micropayments",
+        "label": "Micropayments"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:digital-payments",
+        "label": "Digital Payments"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:agentic-finance",
+        "label": "Agentic Finance"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "id": "urn:ngm:class:agentic-internet",
+        "label": "Agentic Internet"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-value-proposition",
+      "label": "Bitcoin Value Proposition"
+    },
+    {
+      "slug": "cbdc-frameworks",
+      "label": "CBDC Frameworks"
+    },
+    {
+      "slug": "taproot-assets",
+      "label": "Taproot Assets"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

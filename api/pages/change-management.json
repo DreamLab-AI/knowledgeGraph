@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:change-management",
+  "title": "Change Management",
+  "slug": "change-management",
+  "public": true,
+  "classIri": "urn:ngm:class:change-management",
+  "domain": "governance",
+  "definition": "Change Management is the structured discipline of guiding organisations, teams, and individuals through transitions in technology, process, or culture to achieve desired outcomes whilst minimising disruption and resistance. It encompasses planning, communication, training, stakeholder alignment, and feedback loops that collectively ensure adoption of new working methods. In technology contexts it also covers the formal control of modifications to systems and infrastructure to reduce risk. Effective change management is widely recognised as a critical determinant of whether digital transformation initiatives deliver their intended value.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-governance-framework",
+      "label": "AI Governance Framework"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      },
+      {
+        "id": "urn:ngm:class:workforce-development",
+        "label": "Workforce Development"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-transformation",
+        "label": "Digital Transformation"
+      },
+      {
+        "id": "urn:ngm:class:stakeholder-engagement",
+        "label": "Stakeholder Engagement"
+      },
+      {
+        "id": "urn:ngm:class:human-factors",
+        "label": "Human Factors"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-adoption",
+      "label": "AI Adoption"
+    },
+    {
+      "slug": "adoption-of-convergent-technologies",
+      "label": "Adoption of Convergent Technologies"
+    },
+    {
+      "slug": "digital-transformation",
+      "label": "Digital Transformation"
+    },
+    {
+      "slug": "technology-adoption",
+      "label": "Technology Adoption"
+    },
+    {
+      "slug": "traceability-mechanism",
+      "label": "Traceability Mechanism"
+    }
+  ]
+}

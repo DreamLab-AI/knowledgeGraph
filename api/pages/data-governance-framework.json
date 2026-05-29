@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:data-governance-framework",
+  "title": "Data Governance Framework",
+  "slug": "data-governance-framework",
+  "public": true,
+  "classIri": "urn:ngm:class:data-governance-framework",
+  "domain": "governance",
+  "definition": "A Data Governance Framework is a structured set of policies, processes, roles, and standards that define how an organisation acquires, manages, protects, and disposes of data assets throughout their lifecycle. It establishes accountability structures, data quality standards, metadata management practices, and compliance mechanisms aligned to regulatory obligations such as GDPR. Effective frameworks balance centralised oversight with federated data ownership through data mesh and stewardship models. They underpin trustworthy AI deployments by ensuring training data provenance and ongoing monitoring of data quality and lineage.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-governance",
+      "label": "Data Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:privacy-and-data-governance",
+        "label": "Privacy and Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      },
+      {
+        "id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      },
+      {
+        "id": "urn:ngm:class:data-mesh",
+        "label": "Data Mesh"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      },
+      {
+        "id": "urn:ngm:class:metadata-registry",
+        "label": "Metadata Registry"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "adoption-of-convergent-technologies",
+      "label": "Adoption of Convergent Technologies"
+    },
+    {
+      "slug": "consent-management",
+      "label": "Consent Management"
+    },
+    {
+      "slug": "customs-trade-facilitation",
+      "label": "Customs Trade Facilitation"
+    },
+    {
+      "slug": "privacy-preserving-analytics",
+      "label": "Privacy Preserving Analytics"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:trust",
+  "title": "Trust",
+  "slug": "trust",
+  "public": true,
+  "classIri": "urn:ngm:class:trust",
+  "domain": "governance",
+  "definition": "Trust is a cognitive and relational disposition in which an agent accepts vulnerability to the actions of another party, based on a positive expectation that the trusted party will act competently, honestly, and benevolently towards the trusting party's interests. In sociotechnical and AI contexts, trust extends beyond interpersonal relationships to encompass institutional trust in organisations, systems trust in technological artefacts, and algorithmic trust in AI decision-making processes. Trust is simultaneously a psychological state, a social institution, and a design property of systems, and its calibration \u2014 whether systems are trusted appropriately, too much, or too little \u2014 has profound implications for human welfare, democratic function, and the effective deployment of AI.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:trust-framework",
+      "label": "Trust Framework"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:trust-establishment",
+        "label": "Trust Establishment"
+      },
+      {
+        "id": "urn:ngm:class:trust-infrastructure",
+        "label": "Trust Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:trust-score-metric",
+        "label": "Trust Score Metric"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:trust-in-automation",
+        "label": "Trust in Automation"
+      },
+      {
+        "id": "urn:ngm:class:ai-trust-risk-and-security-management",
+        "label": "AI Trust Risk and Security Management"
+      },
+      {
+        "id": "urn:ngm:class:trust-over-ip-foundation",
+        "label": "Trust Over IP Foundation"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:trust-and-safety",
+        "label": "Trust and Safety"
+      },
+      {
+        "id": "urn:ngm:class:trust-architecture",
+        "label": "Trust Architecture"
+      },
+      {
+        "id": "urn:ngm:class:ai-trustworthiness",
+        "label": "AI Trustworthiness"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    },
+    {
+      "slug": "accountability",
+      "label": "Accountability"
+    },
+    {
+      "slug": "autonomy-level",
+      "label": "Autonomy Level"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "interpretability",
+      "label": "Interpretability"
+    },
+    {
+      "slug": "money",
+      "label": "Money"
+    },
+    {
+      "slug": "transparency-oecd",
+      "label": "Transparency (OECD)"
+    }
+  ]
+}

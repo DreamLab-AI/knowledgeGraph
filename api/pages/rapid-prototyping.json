@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:rapid-prototyping",
+  "title": "Rapid Prototyping",
+  "slug": "rapid-prototyping",
+  "public": true,
+  "classIri": "urn:ngm:class:rapid-prototyping",
+  "domain": "ai",
+  "definition": "Rapid Prototyping is an iterative product development approach that emphasises the construction of quick, low-fidelity or medium-fidelity artefacts\u2014physical mock-ups, interactive wireframes, or functional code spikes\u2014to test hypotheses with users and stakeholders before committing to full implementation. The methodology aims to compress the feedback loop between ideation and validated learning, reducing the risk of building features that do not meet user needs. It draws on lean startup principles, agile sprint structures, and design thinking frameworks, integrating user testing results directly into successive prototype iterations. Modern generative AI tools further accelerate rapid prototyping by auto-generating code scaffolds, UI components, and content variants.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:design-thinking",
+      "label": "Design Thinking"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:product-design",
+        "label": "Product Design"
+      },
+      {
+        "id": "urn:ngm:class:digital-content-creation",
+        "label": "Digital Content Creation"
+      },
+      {
+        "id": "urn:ngm:class:development-platform",
+        "label": "Development Platform"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-design",
+        "label": "Collaborative Design"
+      },
+      {
+        "id": "urn:ngm:class:ai-development-tools",
+        "label": "AI Development Tools"
+      },
+      {
+        "id": "urn:ngm:class:generative-design-tool",
+        "label": "Generative Design Tool"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "digital-twin-generation",
+      "label": "Digital Twin Generation"
+    },
+    {
+      "slug": "gpt-engineer",
+      "label": "GPT Engineer"
+    },
+    {
+      "slug": "neural-3-d-generation",
+      "label": "Neural 3D Generation"
+    },
+    {
+      "slug": "fast-ai",
+      "label": "fast.ai"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "id": "urn:visionflow:page:ivms-101",
+  "title": "IVMS 101",
+  "slug": "ivms-101",
+  "public": true,
+  "classIri": "urn:ngm:class:ivms-101",
+  "domain": "blockchain",
+  "definition": "IVMS 101 (interVASP Messaging Standard 101) is an open data model and schema specification developed by the Joint Working Group on interVASP Messaging Standards (JWG) to enable Virtual Asset Service Providers (VASPs) to exchange originator and beneficiary identity information in compliance with the FATF Travel Rule. Published in 2020 and subsequently adopted by the FATF as the preferred global standard for Travel Rule data transmission, IVMS 101 defines canonical field names, value types, and encoding rules for natural persons, legal persons, and address objects in a technology-neutral JSON schema. It is designed to be embedded within any Travel Rule messaging protocol \u2014 including TRP, TRUST, VerifyVASP, and Sygna Bridge \u2014 ensuring semantic interoperability across different technical implementations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:compliance-framework",
+      "label": "Compliance Framework"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cross-border-compliance",
+        "label": "Cross Border Compliance"
+      },
+      {
+        "id": "urn:ngm:class:compliance-verification",
+        "label": "Compliance Verification"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:digital-identity-standards",
+        "label": "Digital Identity Standards"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:fatf-travel-rule",
+        "label": "FATF Travel Rule"
+      },
+      {
+        "id": "urn:ngm:class:fatf",
+        "label": "FATF"
+      },
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "id": "urn:ngm:class:virtual-asset",
+        "label": "Virtual Asset"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cross-border-compliance",
+      "label": "Cross Border Compliance"
+    },
+    {
+      "slug": "travel-rule",
+      "label": "Travel Rule"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "id": "urn:visionflow:page:web-socket-protocol",
+  "title": "WebSocket Protocol",
+  "slug": "web-socket-protocol",
+  "public": true,
+  "classIri": "urn:ngm:class:web-socket-protocol",
+  "domain": "infrastructure",
+  "definition": "The WebSocket Protocol is a standardised full-duplex communication protocol defined in RFC 6455 (2011) that provides a persistent, low-latency bidirectional channel between a client and a server over a single TCP connection. It was designed to overcome the limitations of HTTP polling and long-polling by upgrading an initial HTTP handshake to a persistent framed message channel, enabling servers to push data to clients without client-initiated requests. WebSocket frames have minimal overhead \u2014 a 2-byte header for small messages \u2014 making it suitable for high-frequency data streams such as financial tickers, collaborative editing, gaming, and real-time AI agent communications. It is supported natively in all major browsers and server-side runtimes, and forms the transport layer for many real-time application protocols including STOMP, MQTT-over-WebSocket, and the OpenAI Realtime API.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:network-protocol",
+      "label": "Network Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:realtime-collaboration",
+        "label": "Realtime Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:agent-event-stream",
+        "label": "Agent Event Stream"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:g-rpc",
+        "label": "gRPC"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:networking-infrastructure",
+        "label": "Networking Infrastructure"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:asynchronous-communication",
+        "label": "Asynchronous Communication"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:web-socket",
+        "label": "WebSocket"
+      },
+      {
+        "id": "urn:ngm:class:realtime-communication",
+        "label": "Realtime Communication"
+      },
+      {
+        "id": "urn:ngm:class:server-sent-events",
+        "label": "Server-Sent Events"
+      },
+      {
+        "id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agent-event-stream",
+      "label": "Agent Event Stream"
+    },
+    {
+      "slug": "comfy-ui-client",
+      "label": "ComfyUI Client"
+    },
+    {
+      "slug": "comfy-ui-workflows",
+      "label": "ComfyUI Workflows"
+    },
+    {
+      "slug": "model-context-protocol",
+      "label": "Model Context Protocol"
+    },
+    {
+      "slug": "nostr-protocol",
+      "label": "Nostr Protocol"
+    }
+  ]
+}

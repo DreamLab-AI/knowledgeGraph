@@ -1,0 +1,95 @@
+{
+  "id": "urn:visionflow:page:timestamp-authority",
+  "title": "Timestamp Authority",
+  "slug": "timestamp-authority",
+  "public": true,
+  "classIri": "urn:ngm:class:timestamp-authority",
+  "domain": "security",
+  "definition": "A Timestamp Authority (TSA) is a trusted third party that issues cryptographically signed timestamps attesting that a particular piece of data existed at or before a specified point in time, in accordance with the RFC 3161 Internet X.509 Public Key Infrastructure Time-Stamp Protocol. The TSA receives a hash of the document or data, signs it together with the current time using its private key, and returns a TimeStampToken that can be independently verified by any party holding the TSA's public key certificate. Timestamp tokens are widely used in digital signature workflows to prove long-term validity\u2014establishing that signatures were made before certificate revocation or expiry. Under eIDAS regulation in Europe, qualified TSAs form part of trust service infrastructure with legal standing equivalent to notarisation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:certificate-authority",
+      "label": "Certificate Authority"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "id": "urn:ngm:class:compliance-audit-trail",
+        "label": "Compliance Audit Trail"
+      },
+      {
+        "id": "urn:ngm:class:virtual-notary-service",
+        "label": "Virtual Notary Service"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:digital-signature-verification",
+        "label": "Digital Signature Verification"
+      },
+      {
+        "id": "urn:ngm:class:archival-standards",
+        "label": "Archival Standards"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:timestamp",
+        "label": "Timestamp"
+      },
+      {
+        "id": "urn:ngm:class:digital-certificate",
+        "label": "Digital Certificate"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "data-provenance",
+      "label": "Data Provenance"
+    },
+    {
+      "slug": "digital-evidence-chain-of-custody",
+      "label": "Digital Evidence Chain of Custody"
+    },
+    {
+      "slug": "provenance-verification",
+      "label": "Provenance Verification"
+    },
+    {
+      "slug": "virtual-notary-service",
+      "label": "Virtual Notary Service"
+    }
+  ]
+}

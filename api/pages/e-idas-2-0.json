@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:e-idas-2-0",
+  "title": "eIDAS 2.0",
+  "slug": "e-idas-2-0",
+  "public": true,
+  "classIri": "urn:ngm:class:e-idas-2-0",
+  "domain": "governance",
+  "definition": "eIDAS 2.0 is the revised EU regulation on electronic identification, authentication, and trust services, adopted in 2024 as an amendment to the original eIDAS regulation of 2014. Its central innovation is the European Digital Identity Wallet (EUDIW), a mandatory infrastructure obligation requiring EU member states to provide citizens and businesses with a personal digital wallet capable of storing verifiable credentials, qualified electronic signatures, and attribute attestations. The regulation mandates that large online platforms accept the wallet for authentication, directly challenging private identity providers and establishing a public-interest counterweight to platform data concentration. eIDAS 2.0 aligns with W3C Verifiable Credentials and Decentralised Identifiers standards, embedding open interoperability requirements into binding EU law.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-identity-framework",
+      "label": "Digital Identity Framework"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-identity-management",
+        "label": "Digital Identity Management"
+      },
+      {
+        "id": "urn:ngm:class:authentication-standards",
+        "label": "Authentication Standards"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:data-protection-regulation",
+        "label": "Data Protection Regulation"
+      },
+      {
+        "id": "urn:ngm:class:digital-regulation",
+        "label": "Digital Regulation"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-identity-wallet",
+        "label": "Digital Identity Wallet"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity-standards",
+        "label": "Digital Identity Standards"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    },
+    {
+      "slug": "decentralized-identifiers",
+      "label": "Decentralized Identifiers"
+    },
+    {
+      "slug": "digital-identity-framework",
+      "label": "Digital Identity Framework"
+    },
+    {
+      "slug": "digital-identity-management",
+      "label": "Digital Identity Management"
+    },
+    {
+      "slug": "digital-identity-standards",
+      "label": "Digital Identity Standards"
+    },
+    {
+      "slug": "digital-identity-wallet",
+      "label": "Digital Identity Wallet"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    }
+  ]
+}

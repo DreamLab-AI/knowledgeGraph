@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:cultural-heritage-preservation",
+  "title": "Cultural Heritage Preservation",
+  "slug": "cultural-heritage-preservation",
+  "public": true,
+  "classIri": "urn:ngm:class:cultural-heritage-preservation",
+  "domain": "metaverse",
+  "definition": "Cultural Heritage Preservation encompasses the methodologies, technologies, and institutional practices used to document, conserve, and transmit tangible and intangible cultural assets to future generations. Digital preservation extends these goals through high-fidelity capture technologies\u2014photogrammetry, LiDAR scanning, and multispectral imaging\u2014combined with long-lived archival formats and distributed storage. Immersive technologies increasingly enable experiential access to heritage sites and artefacts that physical access cannot support. The discipline spans archaeology, architecture, performing arts, indigenous knowledge, and language revitalisation, requiring interdisciplinary collaboration between cultural practitioners and technologists.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-heritage",
+      "label": "Digital Heritage"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cultural-heritage-xr-experience",
+        "label": "Cultural Heritage XR Experience"
+      },
+      {
+        "id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "id": "urn:ngm:class:collective-memory-archive",
+        "label": "Collective Memory Archive"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      },
+      {
+        "id": "urn:ngm:class:lidar-scanning",
+        "label": "Lidar Scanning"
+      },
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-archive",
+        "label": "Digital Archive"
+      },
+      {
+        "id": "urn:ngm:class:cultural-provenance-record",
+        "label": "Cultural Provenance Record"
+      },
+      {
+        "id": "urn:ngm:class:digital-preservation",
+        "label": "Digital Preservation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "digital-curation-platform",
+      "label": "Digital Curation Platform"
+    },
+    {
+      "slug": "image-and-video-restoration",
+      "label": "Image and Video Restoration"
+    },
+    {
+      "slug": "scene-capture-and-reconstruction",
+      "label": "Scene Capture and Reconstruction"
+    },
+    {
+      "slug": "tourism-metaverse",
+      "label": "Tourism Metaverse"
+    }
+  ]
+}

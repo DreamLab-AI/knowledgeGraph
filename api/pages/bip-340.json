@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:bip-340",
+  "title": "BIP-340",
+  "slug": "bip-340",
+  "public": true,
+  "classIri": "urn:ngm:class:bip-340",
+  "domain": "blockchain",
+  "definition": "BIP-340 is the Bitcoin Improvement Proposal that standardises Schnorr signatures for use on the Bitcoin network, using the secp256k1 elliptic curve. It defines a 64-byte signature scheme that is provably secure in the random oracle model and enables key and signature aggregation through protocols such as MuSig2. BIP-340 is a prerequisite for Taproot (BIP-341) and introduces substantial efficiency and privacy improvements over the legacy ECDSA scheme. The specification includes a deterministic signing algorithm and rigorous test vectors to facilitate cross-implementation compatibility.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptographic-protocol",
+      "label": "Cryptographic Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:bip-341",
+        "label": "BIP-341"
+      },
+      {
+        "id": "urn:ngm:class:taproot-assets",
+        "label": "Taproot Assets"
+      },
+      {
+        "id": "urn:ngm:class:bip-340-schnorr-keypair",
+        "label": "BIP-340 Schnorr Keypair"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:bitcoin-improvement-proposals",
+        "label": "Bitcoin Improvement Proposals"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:schnorr-signature",
+        "label": "Schnorr Signature"
+      },
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-technical-overview",
+      "label": "Bitcoin Technical Overview"
+    },
+    {
+      "slug": "did-nostr-identity",
+      "label": "DID Nostr Identity"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "slug": "multi-sig-governance",
+      "label": "Multi Sig Governance"
+    },
+    {
+      "slug": "sovereign-keyset",
+      "label": "Sovereign Keyset"
+    },
+    {
+      "slug": "uri-canonicaliser",
+      "label": "URI Canonicaliser"
+    },
+    {
+      "slug": "verifiable-credential-surface",
+      "label": "Verifiable Credential Surface"
+    }
+  ]
+}

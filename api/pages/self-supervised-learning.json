@@ -1,0 +1,91 @@
+{
+  "id": "urn:visionflow:page:self-supervised-learning",
+  "title": "Self-Supervised Learning",
+  "slug": "self-supervised-learning",
+  "public": true,
+  "classIri": "urn:ngm:class:self-supervised-learning",
+  "domain": "ai",
+  "definition": "Self-Supervised Learning (SSL) is a machine learning paradigm in which a model learns rich representations of data by solving pretext tasks whose supervisory signal is derived automatically from the input data itself, requiring no human-provided labels. The model learns to predict masked or hidden portions of an input, to match different views of the same data, or to distinguish positive from negative data pairs, developing features that transfer effectively to downstream supervised tasks with limited labelled data. Self-supervised learning has become the dominant pre-training strategy for large language models, visual foundation models, and multimodal systems, enabling training at scales that would be infeasible with manually annotated datasets.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:machine-learning-technique",
+      "label": "Machine Learning Technique"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:individual:foundation-models",
+        "label": "Foundation Models"
+      },
+      {
+        "id": "urn:ngm:class:parameter-efficient-fine-tuning",
+        "label": "Parameter-Efficient Fine-Tuning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:pretrained-model",
+        "label": "Pretrained Model"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:contrastive-learning",
+        "label": "Contrastive Learning"
+      },
+      {
+        "id": "urn:ngm:class:unsupervised-learning",
+        "label": "Unsupervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:semi-supervised-learning",
+        "label": "Semi-Supervised Learning"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "imitation-learning",
+      "label": "Imitation Learning"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "learning-algorithm",
+      "label": "Learning Algorithm"
+    },
+    {
+      "slug": "robot-learning",
+      "label": "Robot Learning"
+    }
+  ]
+}

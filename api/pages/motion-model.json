@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:motion-model",
+  "title": "Motion Model",
+  "slug": "motion-model",
+  "public": true,
+  "classIri": "urn:ngm:class:motion-model",
+  "domain": "robotics",
+  "definition": "A motion model is a mathematical or learned representation that describes how the state of a moving entity\u2014a robot, vehicle, or articulated body\u2014evolves over time given control inputs and noise. In probabilistic robotics it forms the prediction step of filters such as Kalman and particle filters, characterising uncertainty in state transitions. Motion models range from simple kinematic approximations (constant velocity, unicycle) to full rigid-body dynamic equations and learned neural representations derived from data. Accuracy of the motion model directly determines the quality of localisation, planning, and control outcomes.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:kinematics-model",
+      "label": "Kinematics Model"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:state-estimation",
+        "label": "State Estimation"
+      },
+      {
+        "id": "urn:ngm:class:trajectory-tracking",
+        "label": "Trajectory Tracking"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:rigid-body-dynamics",
+        "label": "Rigid Body Dynamics"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:motion-control",
+        "label": "Motion Control"
+      },
+      {
+        "id": "urn:ngm:class:robot-dynamics",
+        "label": "Robot Dynamics"
+      },
+      {
+        "id": "urn:ngm:class:newton-euler-dynamics",
+        "label": "Newton-Euler Dynamics"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bayes-filter",
+      "label": "Bayes Filter"
+    },
+    {
+      "slug": "kinematics-model",
+      "label": "Kinematics Model"
+    },
+    {
+      "slug": "monte-carlo-localization",
+      "label": "Monte Carlo Localization"
+    },
+    {
+      "slug": "particle-filter",
+      "label": "Particle Filter"
+    }
+  ]
+}
