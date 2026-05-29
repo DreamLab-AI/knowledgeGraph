@@ -1,0 +1,106 @@
+{
+  "id": "urn:visionflow:page:series-elastic-actuator",
+  "title": "Series Elastic Actuator",
+  "slug": "series-elastic-actuator",
+  "public": true,
+  "classIri": "urn:ngm:class:series-elastic-actuator",
+  "domain": "robotics",
+  "definition": "A Series Elastic Actuator (SEA) is a robotic joint mechanism that interposes a compliant spring element in series between the gearbox output and the load, deliberately introducing controlled elasticity into the drivetrain. By measuring the spring deflection with a position sensor, the SEA provides accurate, low-noise torque measurement without a dedicated force-torque sensor, while simultaneously providing passive mechanical compliance that absorbs impact energy and reduces stiffness at the point of contact. This architecture enables safe, backdrivable interactions between robots and humans or unstructured environments.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robot-actuator",
+      "label": "Robot Actuator"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "id": "urn:ngm:class:soft-robotics",
+        "label": "Soft Robotics"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:position-sensor",
+        "label": "Position Sensor"
+      },
+      {
+        "id": "urn:ngm:class:torque-control",
+        "label": "Torque Control"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:series-elastic-actuation",
+        "label": "Series Elastic Actuation"
+      },
+      {
+        "id": "urn:ngm:class:impedance-control",
+        "label": "Impedance Control"
+      },
+      {
+        "id": "urn:ngm:class:force-control",
+        "label": "Force Control"
+      },
+      {
+        "id": "urn:ngm:class:variable-impedance-control",
+        "label": "Variable Impedance Control"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "force-control",
+      "label": "Force Control"
+    },
+    {
+      "slug": "humanoid-robot",
+      "label": "Humanoid Robot"
+    },
+    {
+      "slug": "hydraulic-actuator",
+      "label": "Hydraulic Actuator"
+    },
+    {
+      "slug": "mechanical-component",
+      "label": "Mechanical Component"
+    },
+    {
+      "slug": "mechanical-component",
+      "label": "Mechanical Component"
+    },
+    {
+      "slug": "mechanical-component",
+      "label": "Mechanical Component"
+    },
+    {
+      "slug": "mechanical-component",
+      "label": "Mechanical Component"
+    },
+    {
+      "slug": "mechanical-component",
+      "label": "Mechanical Component"
+    },
+    {
+      "slug": "pneumatic-actuator",
+      "label": "Pneumatic Actuator"
+    }
+  ]
+}

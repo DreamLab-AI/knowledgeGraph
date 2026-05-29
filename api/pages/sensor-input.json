@@ -1,0 +1,203 @@
+{
+  "id": "urn:visionflow:page:sensor-input",
+  "title": "Sensor Input",
+  "slug": "sensor-input",
+  "public": true,
+  "classIri": "urn:ngm:class:sensor-input",
+  "domain": "robotics",
+  "definition": "Sensor input refers to the raw or pre-processed signals acquired from physical or virtual transducers that convert observable environmental quantities\u2014position, force, temperature, light intensity, pressure, chemical concentration\u2014into electrical or digital representations suitable for computation. It constitutes the primary interface between an autonomous system and its environment, providing the perceptual foundation for state estimation, feedback control, and situational awareness. Sensor inputs vary by modality, sampling rate, resolution, and noise characteristics, and effective use requires calibration, filtering, and often fusion with complementary modalities to produce reliable world-state estimates.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sensor",
+      "label": "Sensor"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:perception-system",
+        "label": "Perception System"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:digital-signal-processing",
+        "label": "Digital Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:real-time-computation",
+        "label": "Real-Time Computation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:sensor-data",
+        "label": "Sensor Data"
+      },
+      {
+        "id": "urn:ngm:class:sensor-system",
+        "label": "Sensor System"
+      },
+      {
+        "id": "urn:ngm:class:sensor-technology",
+        "label": "Sensor Technology"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "3-d-user-interface",
+      "label": "3D User Interface"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "ar-registration",
+      "label": "AR Registration"
+    },
+    {
+      "slug": "ar-technology",
+      "label": "AR Technology"
+    },
+    {
+      "slug": "analog-to-digital-converter",
+      "label": "Analog To Digital Converter"
+    },
+    {
+      "slug": "ar-display-device",
+      "label": "Ar Display Device"
+    },
+    {
+      "slug": "ar-experiences",
+      "label": "Ar Experiences"
+    },
+    {
+      "slug": "attention-aware-interaction",
+      "label": "Attention Aware Interaction"
+    },
+    {
+      "slug": "audio-spatialization",
+      "label": "Audio Spatialization"
+    },
+    {
+      "slug": "augmented-reality-ar",
+      "label": "Augmented Reality (AR)"
+    },
+    {
+      "slug": "cloud-native-applications",
+      "label": "Cloud-Native Applications"
+    },
+    {
+      "slug": "cognitive-feedback-interface",
+      "label": "Cognitive Feedback Interface"
+    },
+    {
+      "slug": "compatibility-process",
+      "label": "Compatibility Process"
+    },
+    {
+      "slug": "compatibility-standards",
+      "label": "Compatibility Standards"
+    },
+    {
+      "slug": "computing-hardware",
+      "label": "Computing Hardware"
+    },
+    {
+      "slug": "context-awareness-system",
+      "label": "Context Awareness System"
+    },
+    {
+      "slug": "context-awareness",
+      "label": "Context Awareness"
+    },
+    {
+      "slug": "control-system",
+      "label": "Control System"
+    },
+    {
+      "slug": "data-processing-hardware",
+      "label": "Data Processing Hardware"
+    },
+    {
+      "slug": "depth-sensing",
+      "label": "Depth Sensing"
+    },
+    {
+      "slug": "digital-citizens-assembly",
+      "label": "Digital Citizens' Assembly"
+    },
+    {
+      "slug": "digital-content-overlay",
+      "label": "Digital Content Overlay"
+    },
+    {
+      "slug": "digital-experience",
+      "label": "Digital Experience"
+    },
+    {
+      "slug": "digital-signal-processing",
+      "label": "Digital Signal Processing"
+    },
+    {
+      "slug": "digital-twin-infrastructure",
+      "label": "Digital Twin Infrastructure"
+    },
+    {
+      "slug": "display-hardware",
+      "label": "Display Hardware"
+    },
+    {
+      "slug": "display-metrology",
+      "label": "Display Metrology"
+    },
+    {
+      "slug": "driver-software",
+      "label": "Driver Software"
+    },
+    {
+      "slug": "intelligent-virtual-entity",
+      "label": "Intelligent Virtual Entity"
+    },
+    {
+      "slug": "motion-capture-rig",
+      "label": "Motion Capture Rig"
+    },
+    {
+      "slug": "user-interface-standard",
+      "label": "User Interface Standard"
+    }
+  ]
+}

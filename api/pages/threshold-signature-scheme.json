@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:threshold-signature-scheme",
+  "title": "Threshold Signature Scheme",
+  "slug": "threshold-signature-scheme",
+  "public": true,
+  "classIri": "urn:ngm:class:threshold-signature-scheme",
+  "domain": "security",
+  "definition": "A Threshold Signature Scheme (TSS) is a cryptographic protocol in which a private key is distributed among n parties such that any subset of at least t parties can jointly compute a valid digital signature without any single party ever possessing the complete private key, while fewer than t parties gain zero information about the key. TSS extends threshold secret sharing (Shamir's Secret Sharing) to the signing operation itself, producing a signature that is indistinguishable on-chain from a standard single-key signature, thereby enhancing privacy and reducing transaction fees compared to traditional on-chain multisig. TSS underpins distributed key management for exchanges, MPC wallets, and cross-chain bridge custody architectures.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:signature-scheme",
+      "label": "Signature Scheme"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      },
+      {
+        "id": "urn:ngm:class:threshold-cryptography",
+        "label": "Threshold Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-governance",
+        "label": "Decentralized Governance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-keys",
+        "label": "Cryptographic Keys"
+      },
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:multi-signature",
+        "label": "Multi-Signature"
+      },
+      {
+        "id": "urn:ngm:class:multi-party-computation",
+        "label": "Multi-Party Computation"
+      },
+      {
+        "id": "urn:ngm:class:secure-multi-party-computation",
+        "label": "Secure Multi-Party Computation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    },
+    {
+      "slug": "cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    },
+    {
+      "slug": "decentralized-exchange",
+      "label": "Decentralized Exchange"
+    }
+  ]
+}

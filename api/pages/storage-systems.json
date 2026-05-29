@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:storage-systems",
+  "title": "Storage Systems",
+  "slug": "storage-systems",
+  "public": true,
+  "classIri": "urn:ngm:class:storage-systems",
+  "domain": "infrastructure",
+  "definition": "Storage Systems are the hardware and software architectures responsible for persisting, organising, retrieving, and protecting digital data across the full hierarchy from on-chip registers and DRAM through local SSDs and HDDs to distributed cloud object stores and decentralised peer-to-peer networks. The discipline encompasses storage media technology, file systems, block and object storage interfaces, data durability through redundancy (RAID, erasure coding), consistency and replication protocols for distributed deployments, and the performance-cost-durability tradeoffs that govern system design. Storage Systems are foundational infrastructure for every computing application, with particular complexity arising in distributed and decentralised configurations where network partitions, node failures, and latency variability must be handled.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:storage-infrastructure",
+      "label": "Storage Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:distributed-storage",
+        "label": "Distributed Storage"
+      },
+      {
+        "id": "urn:ngm:class:cloud-storage",
+        "label": "Cloud Storage"
+      },
+      {
+        "id": "urn:ngm:class:persistent-storage",
+        "label": "Persistent Storage"
+      },
+      {
+        "id": "urn:ngm:class:content-addressed-storage",
+        "label": "Content-Addressed Storage"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-replication",
+        "label": "Data Replication"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-storage-layer",
+        "label": "Data Storage Layer"
+      },
+      {
+        "id": "urn:ngm:class:storage-hardware",
+        "label": "Storage Hardware"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "data-replication",
+      "label": "Data Replication"
+    },
+    {
+      "slug": "digital-art-application",
+      "label": "Digital Art Application"
+    }
+  ]
+}

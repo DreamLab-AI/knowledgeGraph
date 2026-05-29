@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:token-swapping",
+  "title": "Token Swapping",
+  "slug": "token-swapping",
+  "public": true,
+  "classIri": "urn:ngm:class:token-swapping",
+  "domain": "blockchain",
+  "definition": "Token swapping is the on-chain exchange of one cryptocurrency or digital token for another without an intermediary custodian, executed atomically within a single transaction through smart contracts. The mechanism is implemented via automated market makers (AMMs), which price assets algorithmically using constant-function market-making formulas against liquidity pools, or via atomic swap protocols using hash time-locked contracts (HTLCs) that enable trustless cross-chain exchanges. Token swapping is the primary interaction primitive of decentralised exchanges and a building block for complex DeFi strategies.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:decentralized-finance-de-fi",
+      "label": "Decentralized Finance (DeFi)"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:yield-farming",
+        "label": "Yield Farming"
+      },
+      {
+        "id": "urn:ngm:class:de-fi",
+        "label": "DeFi"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:atomic-swap",
+        "label": "Atomic Swap"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:decentralized-exchange-dex",
+        "label": "Decentralized Exchange (DEX)"
+      },
+      {
+        "id": "urn:ngm:class:permissionless-trading",
+        "label": "Permissionless Trading"
+      },
+      {
+        "id": "urn:ngm:class:uniswap",
+        "label": "Uniswap"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "decentralized-exchange-dex",
+      "label": "Decentralized Exchange (DEX)"
+    },
+    {
+      "slug": "decentralized-exchange",
+      "label": "Decentralized Exchange"
+    },
+    {
+      "slug": "liquidity-pool",
+      "label": "Liquidity Pool"
+    }
+  ]
+}

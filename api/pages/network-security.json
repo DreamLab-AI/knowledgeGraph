@@ -1,0 +1,106 @@
+{
+  "id": "urn:visionflow:page:network-security",
+  "title": "Network Security",
+  "slug": "network-security",
+  "public": true,
+  "classIri": "urn:ngm:class:network-security",
+  "domain": "security",
+  "definition": "Network security is the practice of protecting computer networks and the data transmitted across them from unauthorised access, misuse, modification, or denial of service through a combination of hardware controls, software policies, and operational procedures. It encompasses perimeter defence, intrusion detection, traffic analysis, encryption of data in transit, and access control applied at network boundaries and within internal segments. As networks have evolved from isolated LANs to globally distributed cloud and edge architectures, network security has broadened to encompass zero-trust models, software-defined perimeters, and AI-driven anomaly detection. It forms a foundational layer of broader cybersecurity strategy.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cybersecurity",
+      "label": "Cybersecurity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-security",
+        "label": "Digital Security"
+      },
+      {
+        "id": "urn:ngm:class:data-security",
+        "label": "Data Security"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      },
+      {
+        "id": "urn:ngm:class:authentication-mechanism",
+        "label": "Authentication Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:information-security",
+        "label": "Information Security"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-centralisation-risks",
+      "label": "Bitcoin Centralisation Risks"
+    },
+    {
+      "slug": "consensus-algorithm",
+      "label": "Consensus Algorithm"
+    },
+    {
+      "slug": "consensus-algorithm",
+      "label": "Consensus Algorithm"
+    },
+    {
+      "slug": "cyber-security-and-cryptography",
+      "label": "Cyber Security and Cryptography"
+    },
+    {
+      "slug": "cybersecurity-standard",
+      "label": "Cybersecurity Standard"
+    },
+    {
+      "slug": "etsi-domain-infrastructure",
+      "label": "ETSI_Domain_Infrastructure"
+    },
+    {
+      "slug": "identity-provider",
+      "label": "Identity Provider"
+    },
+    {
+      "slug": "proof-of-stake-sustainability",
+      "label": "Proof Of Stake Sustainability"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof Of Work"
+    }
+  ]
+}

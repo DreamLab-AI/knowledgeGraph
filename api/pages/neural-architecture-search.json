@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:neural-architecture-search",
+  "title": "Neural Architecture Search",
+  "slug": "neural-architecture-search",
+  "public": true,
+  "classIri": "urn:ngm:class:neural-architecture-search",
+  "domain": "ai",
+  "definition": "Neural Architecture Search (NAS) is an automated machine learning technique that searches a defined space of neural network designs to discover architectures that maximise predictive performance or satisfy multi-objective constraints such as latency, parameter count, and energy consumption. NAS algorithms explore the architecture search space using strategies that include reinforcement learning, evolutionary algorithms, differentiable relaxations (DARTS), and predictor-based approaches, each making different trade-offs between search cost and solution quality. The field emerged from the observation that hand-designed architectures require substantial expert knowledge and iterative experimentation, and that automated search can discover non-obvious configurations that outperform human-designed baselines on targeted hardware or task distributions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:auto-ml",
+      "label": "AutoML"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:knowledge-distillation-for-edge",
+        "label": "Knowledge Distillation for Edge"
+      },
+      {
+        "id": "urn:ngm:class:model-compression-for-edge",
+        "label": "Model Compression for Edge"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:differentiable-architecture",
+        "label": "Differentiable Architecture"
+      },
+      {
+        "id": "urn:ngm:class:hyperparameter-tuning",
+        "label": "Hyperparameter Tuning"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-framework",
+        "label": "Machine Learning Framework"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-architecture",
+        "label": "Neural Network Architecture"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-pipeline",
+        "label": "Machine Learning Pipeline"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "auto-ml",
+      "label": "AutoML"
+    },
+    {
+      "slug": "hardware-and-edge",
+      "label": "Hardware and Edge"
+    },
+    {
+      "slug": "model-optimisation-and-performance",
+      "label": "Model Optimisation and Performance"
+    },
+    {
+      "slug": "network-architecture",
+      "label": "Network Architecture"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:remote-work",
+  "title": "Remote Work",
+  "slug": "remote-work",
+  "public": true,
+  "classIri": "urn:ngm:class:remote-work",
+  "domain": "infrastructure",
+  "definition": "Remote work is a work arrangement in which employees perform their job duties from a location outside the traditional office \u2014 typically from home, co-working spaces, or while travelling \u2014 using digital communication and collaboration tools to maintain productivity and team cohesion. It encompasses fully remote models, hybrid arrangements combining in-office and remote days, and asynchronous-first cultures that decouple work from synchronous presence. The practice has been normalised at scale since the COVID-19 pandemic, reshaping organisational design, real estate strategies, and talent acquisition globally.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:distributed-work",
+      "label": "Distributed Work"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:asynchronous-collaboration",
+        "label": "Asynchronous Collaboration"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:collaboration-platform",
+        "label": "Collaboration Platform"
+      },
+      {
+        "id": "urn:ngm:class:asynchronous-communication",
+        "label": "Asynchronous Communication"
+      },
+      {
+        "id": "urn:ngm:class:digital-workplace-platform",
+        "label": "Digital Workplace Platform"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:distributed-team-collaboration",
+        "label": "Distributed Team Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:remote-collaboration",
+        "label": "Remote Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:workforce-management",
+        "label": "Workforce Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "asynchronous-video",
+      "label": "Asynchronous Video"
+    },
+    {
+      "slug": "digital-workplace-platform",
+      "label": "Digital Workplace Platform"
+    },
+    {
+      "slug": "meeting-ai-assistant",
+      "label": "Meeting AI Assistant"
+    },
+    {
+      "slug": "real-time-translation",
+      "label": "Real-time Translation"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

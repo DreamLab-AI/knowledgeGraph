@@ -1,0 +1,95 @@
+{
+  "id": "urn:visionflow:page:nist-cybersecurity-framework",
+  "title": "NIST Cybersecurity Framework",
+  "slug": "nist-cybersecurity-framework",
+  "public": true,
+  "classIri": "urn:ngm:class:nist-cybersecurity-framework",
+  "domain": "security",
+  "definition": "The NIST Cybersecurity Framework (CSF) is a voluntary risk-based framework published by the US National Institute of Standards and Technology that provides organisations with a common taxonomy and structured approach for managing cybersecurity risk. It organises security activities around six core functions\u2014Govern, Identify, Protect, Detect, Respond, and Recover\u2014each decomposed into categories and subcategories aligned to industry standards. Version 2.0, published in 2024, added the Govern function and broadened applicability beyond critical infrastructure to all sectors and organisation sizes globally. The framework is widely adopted as a baseline for cybersecurity programme assessment and communication with leadership.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:security-framework",
+      "label": "Security Framework"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      },
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:nist",
+        "label": "NIST"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:nist",
+        "label": "NIST"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      },
+      {
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "51-attack",
+      "label": "51% Attack"
+    },
+    {
+      "slug": "compliance-control",
+      "label": "Compliance Control"
+    },
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "cyber-security-and-military",
+      "label": "Cyber Security and Military"
+    },
+    {
+      "slug": "etsi-domain-governance-compliance",
+      "label": "ETSI_Domain_Governance_Compliance"
+    },
+    {
+      "slug": "threat-surface-map",
+      "label": "Threat Surface Map"
+    }
+  ]
+}

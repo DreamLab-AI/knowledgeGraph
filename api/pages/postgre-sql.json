@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:postgre-sql",
+  "title": "PostgreSQL",
+  "slug": "postgre-sql",
+  "public": true,
+  "classIri": "urn:ngm:class:postgre-sql",
+  "domain": "infrastructure",
+  "definition": "PostgreSQL is an open-source, ACID-compliant object-relational database management system (ORDBMS) that extends the SQL standard with features such as table inheritance, function overloading, and a rich type system including arrays, JSON, and user-defined types. It supports both relational and document storage paradigms, advanced indexing strategies including GIN, GiST, BRIN, and B-tree, and full-text search, making it a versatile choice for analytical and transactional workloads. Developed from the POSTGRES project at UC Berkeley (1986), it has been maintained as free software since 1996 and is widely regarded as the most standards-compliant open-source relational database.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:database-system",
+      "label": "Database System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:machine-learning-infrastructure",
+        "label": "Machine Learning Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:database-query",
+        "label": "Database Query"
+      },
+      {
+        "id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      },
+      {
+        "id": "urn:ngm:class:spatial-database",
+        "label": "Spatial Database"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
+      },
+      {
+        "id": "urn:ngm:class:graph-database",
+        "label": "Graph Database"
+      },
+      {
+        "id": "urn:ngm:class:query-processor",
+        "label": "Query Processor"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "blockchain-as-a-service",
+      "label": "Blockchain As A Service"
+    },
+    {
+      "slug": "home-assistant",
+      "label": "Home Assistant"
+    },
+    {
+      "slug": "hyperledger-iroha",
+      "label": "Hyperledger Iroha"
+    },
+    {
+      "slug": "r3-corda",
+      "label": "R3 Corda"
+    }
+  ]
+}

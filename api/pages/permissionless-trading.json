@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:permissionless-trading",
+  "title": "Permissionless Trading",
+  "slug": "permissionless-trading",
+  "public": true,
+  "classIri": "urn:ngm:class:permissionless-trading",
+  "domain": "blockchain",
+  "definition": "Permissionless trading refers to the ability to execute financial trades \u2014 buying, selling, or swapping digital assets \u2014 without requiring authorisation from a centralised intermediary, gatekeeper, or identity provider. Enabled by on-chain smart contracts and automated market makers (AMMs), permissionless trading removes the account approval, KYC, and whitelist requirements of traditional financial markets, allowing any wallet address to interact directly with liquidity pools. It is a foundational property of decentralised finance (DeFi) protocols.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:decentralized-finance-de-fi",
+      "label": "Decentralized Finance (DeFi)"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:asset-trading",
+        "label": "Asset Trading"
+      },
+      {
+        "id": "urn:ngm:class:yield-farming",
+        "label": "Yield Farming"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:decentralized-exchange",
+        "label": "Decentralized Exchange"
+      },
+      {
+        "id": "urn:ngm:class:token-swapping",
+        "label": "Token Swapping"
+      },
+      {
+        "id": "urn:ngm:class:permissionless-network",
+        "label": "Permissionless Network"
+      },
+      {
+        "id": "urn:ngm:class:uniswap",
+        "label": "Uniswap"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "automated-market-maker",
+      "label": "Automated Market Maker"
+    },
+    {
+      "slug": "decentralized-exchange",
+      "label": "Decentralized Exchange"
+    },
+    {
+      "slug": "liquidity-provision",
+      "label": "Liquidity Provision"
+    }
+  ]
+}

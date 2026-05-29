@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:slack",
+  "title": "Slack",
+  "slug": "slack",
+  "public": true,
+  "classIri": "urn:ngm:class:slack",
+  "domain": "infrastructure",
+  "definition": "Slack is a cloud-based team messaging and collaboration platform that organises workplace communication into persistent, searchable channels grouped by topic, project, or team, supplemented by direct messages and threaded conversations. Originally developed as an internal tool for the gaming company Tiny Speck in 2013 before pivoting to a standalone product, Slack is distinguished by its extensible integration ecosystem (over 2,500 app integrations), Workflow Builder for no-code automation, and its role as the de facto communication layer for software development teams. Acquired by Salesforce in 2021 for $27.7 billion, it competes primarily with Microsoft Teams.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:collaboration-platform",
+      "label": "Collaboration Platform"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:remote-collaboration",
+        "label": "Remote Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:threaded-messaging",
+        "label": "Threaded Messaging"
+      },
+      {
+        "id": "urn:ngm:class:api-integration",
+        "label": "API Integration"
+      },
+      {
+        "id": "urn:ngm:class:asynchronous-communication",
+        "label": "Asynchronous Communication"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:remote-work",
+        "label": "Remote Work"
+      },
+      {
+        "id": "urn:ngm:class:digital-workplace-platform",
+        "label": "Digital Workplace Platform"
+      },
+      {
+        "id": "urn:ngm:class:distributed-team-collaboration",
+        "label": "Distributed Team Collaboration"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "asynchronous-video",
+      "label": "Asynchronous Video"
+    },
+    {
+      "slug": "collaborative-whiteboard",
+      "label": "Collaborative Whiteboard"
+    },
+    {
+      "slug": "digital-workplace-platform",
+      "label": "Digital Workplace Platform"
+    },
+    {
+      "slug": "threaded-messaging",
+      "label": "Threaded Messaging"
+    }
+  ]
+}

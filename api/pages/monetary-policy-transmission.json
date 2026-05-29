@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:monetary-policy-transmission",
+  "title": "Monetary Policy Transmission",
+  "slug": "monetary-policy-transmission",
+  "public": true,
+  "classIri": "urn:ngm:class:monetary-policy-transmission",
+  "domain": "finance",
+  "definition": "Monetary policy transmission is the process by which changes in a central bank's policy instruments\u2014primarily short-term interest rates or reserve quantities\u2014propagate through financial markets and the broader economy to affect output, employment, and the price level. The transmission operates through multiple channels including the interest rate channel (altering borrowing costs), the credit channel (influencing bank lending and balance-sheet constraints), the exchange rate channel (shifting the relative price of tradeable goods), the asset price channel (changing wealth and Tobin's q), and expectations channels (anchoring or re-anchoring inflation expectations). The strength, speed, and reliability of each channel depends on the institutional structure of the financial system, the degree of market completeness, and the prevailing monetary regime.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:monetary-policy",
+      "label": "Monetary Policy"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:inflation-control",
+        "label": "Inflation Control"
+      },
+      {
+        "id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:monetary-system",
+        "label": "Monetary System"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      },
+      {
+        "id": "urn:ngm:class:inflation",
+        "label": "Inflation"
+      },
+      {
+        "id": "urn:ngm:class:financial-system",
+        "label": "Financial System"
+      },
+      {
+        "id": "urn:ngm:class:monetary-policy-implementation",
+        "label": "Monetary Policy Implementation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cbdc-frameworks",
+      "label": "CBDC Frameworks"
+    },
+    {
+      "slug": "cbdcs",
+      "label": "CBDCs"
+    },
+    {
+      "slug": "central-bank-digital-currency",
+      "label": "Central Bank Digital Currency"
+    }
+  ]
+}

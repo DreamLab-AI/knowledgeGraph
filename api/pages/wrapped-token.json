@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:wrapped-token",
+  "title": "Wrapped Token",
+  "slug": "wrapped-token",
+  "public": true,
+  "classIri": "urn:ngm:class:wrapped-token",
+  "domain": "blockchain",
+  "definition": "A Wrapped Token is a digital asset on one blockchain that represents, at a 1:1 peg, an asset from a different blockchain or currency system, created by locking the original asset in a custody mechanism (custodian, bridge smart contract, or MPC wallet) and minting an equivalent representation on the target chain. Wrapped tokens enable cross-chain liquidity by making assets from non-smart-contract blockchains (such as Bitcoin) or from other chains available within DeFi ecosystems. WBTC (Wrapped Bitcoin on Ethereum, ERC-20) is the canonical example, allowing Bitcoin to participate in Ethereum-based lending, trading, and yield protocols. Wrapped tokens introduce custodial or bridge risk as the peg relies on the integrity of the locking and minting mechanism.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptocurrency-token",
+      "label": "Cryptocurrency Token"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-exchange",
+        "label": "Decentralized Exchange"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-interoperability",
+        "label": "Cross-Chain Interoperability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-asset-transfer",
+        "label": "Cross Chain Asset Transfer"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    },
+    {
+      "slug": "cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    },
+    {
+      "slug": "lock-and-mint-mechanism",
+      "label": "Lock and Mint Mechanism"
+    }
+  ]
+}

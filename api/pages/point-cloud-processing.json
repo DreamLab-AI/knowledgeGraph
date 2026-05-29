@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:point-cloud-processing",
+  "title": "Point Cloud Processing",
+  "slug": "point-cloud-processing",
+  "public": true,
+  "classIri": "urn:ngm:class:point-cloud-processing",
+  "domain": "graphics",
+  "definition": "Point cloud processing is the set of computational algorithms and pipelines that transform raw collections of georeferenced 3D coordinate samples \u2014 produced by LiDAR scanners, depth cameras, structured-light systems, or photogrammetric reconstruction \u2014 into structured, semantically meaningful representations suitable for downstream applications such as autonomous navigation, digital twin construction, heritage documentation, and environmental monitoring. Core operations include filtering, registration (alignment of multiple scans), segmentation, feature extraction, surface reconstruction, and compression, often executed on GPU-accelerated or specialised embedded hardware to meet real-time constraints.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:point-cloud",
+      "label": "Point Cloud"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:3-d-gaussian-splatting",
+        "label": "3D Gaussian Splatting"
+      },
+      {
+        "id": "urn:ngm:class:ne-rf",
+        "label": "NeRF"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "id": "urn:ngm:class:depth-sensing",
+        "label": "Depth Sensing"
+      },
+      {
+        "id": "urn:ngm:class:spatial-data-structure",
+        "label": "Spatial Data Structure"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      },
+      {
+        "id": "urn:ngm:class:lidar-scanning",
+        "label": "Lidar Scanning"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "digital-twin-creation-pipeline",
+      "label": "Digital Twin Creation Pipeline"
+    },
+    {
+      "slug": "exteroceptive-sensor",
+      "label": "Exteroceptive Sensor"
+    },
+    {
+      "slug": "ground-robot",
+      "label": "Ground Robot"
+    },
+    {
+      "slug": "lens-and-camera-calibration",
+      "label": "Lens and Camera Calibration"
+    },
+    {
+      "slug": "navigation",
+      "label": "Navigation"
+    },
+    {
+      "slug": "reality-capture-system",
+      "label": "Reality Capture System"
+    }
+  ]
+}

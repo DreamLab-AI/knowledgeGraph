@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:transaction-history",
+  "title": "Transaction History",
+  "slug": "transaction-history",
+  "public": true,
+  "classIri": "urn:ngm:class:transaction-history",
+  "domain": "blockchain",
+  "definition": "Transaction history is the ordered, append-only record of all value transfers, state changes, or operations executed within a financial or data system, providing a tamper-evident chronological account of who transacted what, with whom, and when. In blockchain systems, transaction history is the fundamental data structure underpinning the distributed ledger \u2014 every confirmed block links to its predecessor through cryptographic hashing, making retroactive alteration of any transaction computationally prohibitive. Transaction history serves audit, compliance, forensic, tax, and portfolio analytics functions across both traditional and decentralised financial systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain-transaction",
+      "label": "Blockchain Transaction"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:blockchain-analytics",
+        "label": "Blockchain Analytics"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-compliance",
+        "label": "Blockchain Compliance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:financial-transactions",
+        "label": "Financial Transactions"
+      },
+      {
+        "id": "urn:ngm:class:audit-log",
+        "label": "Audit Log"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-governance",
+        "label": "On-chain Governance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof Of Work"
+    },
+    {
+      "slug": "reputation-data",
+      "label": "Reputation Data"
+    },
+    {
+      "slug": "reputation-system",
+      "label": "Reputation System"
+    }
+  ]
+}

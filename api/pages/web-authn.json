@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:web-authn",
+  "title": "WebAuthn",
+  "slug": "web-authn",
+  "public": true,
+  "classIri": "urn:ngm:class:web-authn",
+  "domain": "security",
+  "definition": "WebAuthn (Web Authentication) is a W3C and FIDO Alliance standard that enables web applications to authenticate users using public-key cryptography rather than passwords, through hardware or software authenticators such as security keys, platform biometrics, and passkeys. The browser exposes the navigator.credentials API, which delegates cryptographic operations to a CTAP-compliant authenticator; the authenticator generates a key pair, stores the private key in a secure enclave, and signs authentication challenges that the relying party verifies using the registered public key. WebAuthn eliminates shared secrets from the authentication path, making phishing, credential stuffing, and replay attacks fundamentally impossible by design. It is the technical foundation of the passkey ecosystem deployed by Apple, Google, and Microsoft.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:authentication-mechanism",
+      "label": "Authentication Mechanism"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:passwordless-authentication",
+        "label": "Passwordless Authentication"
+      },
+      {
+        "id": "urn:ngm:class:privacy-preserving-authentication",
+        "label": "Privacy-Preserving Authentication"
+      },
+      {
+        "id": "urn:ngm:class:multi-factor-authentication",
+        "label": "Multi-Factor Authentication"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:fido2",
+        "label": "FIDO2"
+      },
+      {
+        "id": "urn:ngm:class:asymmetric-encryption",
+        "label": "Asymmetric Encryption"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:w3-c",
+        "label": "W3C"
+      },
+      {
+        "id": "urn:ngm:class:web-standard",
+        "label": "Web Standard"
+      },
+      {
+        "id": "urn:ngm:class:credential-verification",
+        "label": "Credential Verification"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "access-control-system",
+      "label": "Access Control System"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "slug": "identity-management-system",
+      "label": "Identity Management System"
+    },
+    {
+      "slug": "identity-provider",
+      "label": "Identity Provider"
+    }
+  ]
+}

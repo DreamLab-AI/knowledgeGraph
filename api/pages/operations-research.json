@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:operations-research",
+  "title": "Operations Research",
+  "slug": "operations-research",
+  "public": true,
+  "classIri": "urn:ngm:class:operations-research",
+  "domain": "ai",
+  "definition": "Operations research (OR) is an analytical discipline that applies advanced mathematical and computational methods \u2014 including linear programming, integer optimisation, stochastic modelling, and simulation \u2014 to support decision-making in complex systems. It originated during World War II to optimise military logistics and has since expanded to industrial, financial, and humanitarian domains. OR provides rigorous frameworks for formulating trade-off problems as constrained optimisation models, then solving them to global or near-global optimality using exact solvers or heuristic methods. Modern OR integrates machine learning for parameter estimation and reinforcement learning for sequential decision problems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:optimisation",
+      "label": "Optimisation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:logistics-optimization",
+        "label": "Logistics Optimization"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      },
+      {
+        "id": "urn:ngm:class:planning-and-scheduling",
+        "label": "Planning and Scheduling"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:optimization-algorithm",
+        "label": "Optimization Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:constraint-solver",
+        "label": "Constraint Solver"
+      },
+      {
+        "id": "urn:ngm:class:heuristic-methods",
+        "label": "Heuristic Methods"
+      },
+      {
+        "id": "urn:ngm:class:monte-carlo-methods",
+        "label": "Monte Carlo Methods"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "slug": "logistics-optimization",
+      "label": "Logistics Optimization"
+    },
+    {
+      "slug": "time-series-forecasting",
+      "label": "Time Series Forecasting"
+    }
+  ]
+}

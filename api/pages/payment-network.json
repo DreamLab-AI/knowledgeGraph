@@ -1,0 +1,95 @@
+{
+  "id": "urn:visionflow:page:payment-network",
+  "title": "Payment Network",
+  "slug": "payment-network",
+  "public": true,
+  "classIri": "urn:ngm:class:payment-network",
+  "domain": "finance",
+  "definition": "A payment network is an infrastructure system composed of interconnected nodes, protocols, and settlement mechanisms that enables the transfer of value between participants \u2014 individuals, merchants, institutions, or autonomous agents \u2014 with guarantees on finality, atomicity, and fraud prevention. Payment networks range from traditional card networks (Visa, Mastercard) and interbank clearing systems (SWIFT, ACH, SEPA) to cryptographic peer-to-peer blockchain networks and second-layer channel networks such as the Lightning Network. They underpin commerce, financial inclusion, and increasingly machine-to-machine value exchange in automated economies.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:financial-infrastructure",
+      "label": "Financial Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      },
+      {
+        "id": "urn:ngm:class:payment-gateway",
+        "label": "Payment Gateway"
+      },
+      {
+        "id": "urn:ngm:class:state-channel",
+        "label": "State Channel"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:micropayments",
+        "label": "Micropayments"
+      },
+      {
+        "id": "urn:ngm:class:cross-border-payments",
+        "label": "Cross-Border Payments"
+      },
+      {
+        "id": "urn:ngm:class:machine-to-machine-payments",
+        "label": "Machine to Machine Payments"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-payment-system",
+        "label": "Digital Payment System"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "central-bank-digital-currency",
+      "label": "Central Bank Digital Currency"
+    },
+    {
+      "slug": "digital-money",
+      "label": "Digital Money"
+    },
+    {
+      "slug": "micropayment",
+      "label": "Micropayment"
+    }
+  ]
+}

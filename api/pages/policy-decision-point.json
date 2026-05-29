@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:policy-decision-point",
+  "title": "Policy Decision Point",
+  "slug": "policy-decision-point",
+  "public": true,
+  "classIri": "urn:ngm:class:policy-decision-point",
+  "domain": "security",
+  "definition": "A Policy Decision Point (PDP) is the logical component in an attribute-based or policy-based access control architecture that evaluates access requests against a set of authorisation policies and returns a permit, deny, or indeterminate decision. The PDP receives a request context\u2014including subject attributes, resource attributes, action, and environment conditions\u2014from a Policy Enforcement Point (PEP), retrieves applicable policies from a Policy Information Point (PIP) or Policy Administration Point (PAP), and applies the XACML combining algorithms or equivalent logic to reach a binding decision. PDPs are the computational core of fine-grained, dynamic authorisation systems used in zero-trust security architectures, identity federation, API gateways, and cloud IAM platforms.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:access-control-system",
+      "label": "Access Control System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      },
+      {
+        "id": "urn:ngm:class:policy-framework",
+        "label": "Policy Framework"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-verification",
+        "label": "Cryptographic Verification"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:policy-enforcement-point",
+        "label": "Policy Enforcement Point"
+      },
+      {
+        "id": "urn:ngm:class:policy-enforcement",
+        "label": "Policy Enforcement"
+      },
+      {
+        "id": "urn:ngm:class:policy-engine",
+        "label": "Policy Engine"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "api-gateway",
+      "label": "API Gateway"
+    },
+    {
+      "slug": "access-control-system",
+      "label": "Access Control System"
+    },
+    {
+      "slug": "identity-management-system",
+      "label": "Identity Management System"
+    },
+    {
+      "slug": "zero-trust-architecture-zta",
+      "label": "Zero-Trust Architecture (ZTA)"
+    }
+  ]
+}

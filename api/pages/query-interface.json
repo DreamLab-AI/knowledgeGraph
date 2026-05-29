@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:query-interface",
+  "title": "Query Interface",
+  "slug": "query-interface",
+  "public": true,
+  "classIri": "urn:ngm:class:query-interface",
+  "domain": "ai",
+  "definition": "A query interface is a defined boundary \u2014 programmatic, visual, or linguistic \u2014 through which users or systems express requests for data retrieval, graph traversal, or knowledge discovery against a data store or knowledge base, receiving structured results in return. Query interfaces range from formal declarative languages such as SQL and SPARQL to REST endpoints, vector similarity APIs, and natural-language question-answering systems built on large language models. They abstract the internal organisation of a data source behind a stable contract, enabling diverse clients to access data without knowledge of storage implementation details. Well-designed query interfaces balance expressiveness, performance, and ease of use.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-access-interface",
+      "label": "Data Access Interface"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-search",
+        "label": "Enterprise Search"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:database-query",
+        "label": "Database Query"
+      },
+      {
+        "id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      },
+      {
+        "id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      },
+      {
+        "id": "urn:ngm:class:nearest-neighbor-search",
+        "label": "Nearest Neighbor Search"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "digital-ontology-repository",
+      "label": "Digital Ontology Repository"
+    },
+    {
+      "slug": "digital-twin-interop-protocol",
+      "label": "Digital Twin Interop Protocol"
+    },
+    {
+      "slug": "discovery-layer",
+      "label": "Discovery Layer"
+    }
+  ]
+}

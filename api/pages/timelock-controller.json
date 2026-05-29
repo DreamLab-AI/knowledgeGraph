@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:timelock-controller",
+  "title": "Timelock Controller",
+  "slug": "timelock-controller",
+  "public": true,
+  "classIri": "urn:ngm:class:timelock-controller",
+  "domain": "blockchain",
+  "definition": "A timelock controller is a smart contract governance primitive that enforces a mandatory waiting period \u2014 the timelock delay \u2014 between the scheduling of an on-chain operation (such as a protocol upgrade, parameter change, or treasury disbursement) and its execution, giving token holders, security researchers, and affected parties an opportunity to review, object to, or exit before the change takes effect. Operations must be queued with their full parameters, remain in the queue for the configured delay, and then be explicitly executed; they may also be cancelled by authorised roles during the waiting period. Timelock controllers are a fundamental safety mechanism in DeFi and DAO governance, protecting against malicious or erroneous governance proposals.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:on-chain-governance",
+      "label": "On-chain Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:proposal-system",
+        "label": "Proposal System"
+      },
+      {
+        "id": "urn:ngm:class:voting-mechanism",
+        "label": "Voting Mechanism"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:open-zeppelin-governor",
+        "label": "OpenZeppelin Governor"
+      },
+      {
+        "id": "urn:ngm:class:hash-time-locked-contract",
+        "label": "Hash Time-Locked Contract"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "tokenomics-governance",
+      "label": "Tokenomics Governance"
+    }
+  ]
+}

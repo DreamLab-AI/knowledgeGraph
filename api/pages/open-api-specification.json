@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:open-api-specification",
+  "title": "OpenAPI Specification",
+  "slug": "open-api-specification",
+  "public": true,
+  "classIri": "urn:ngm:class:open-api-specification",
+  "domain": "web",
+  "definition": "The OpenAPI Specification (OAS) is a language-agnostic, machine-readable standard for describing RESTful HTTP APIs using a structured JSON or YAML document that defines endpoints, request/response schemas, authentication methods, and parameter types. Governed by the OpenAPI Initiative (a Linux Foundation project), it enables automated generation of client SDKs, server stubs, interactive documentation, and contract-based testing from a single source of truth. Originally derived from the Swagger specification, OAS version 3.x is now the dominant industry standard for API description. It promotes interoperability by allowing API consumers to understand a service's capabilities without access to its source code.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:api-standard",
+      "label": "API Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:api-integration",
+        "label": "API Integration"
+      },
+      {
+        "id": "urn:ngm:class:documentation-generation",
+        "label": "Documentation Generation"
+      },
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "id": "urn:ngm:class:json",
+        "label": "json"
+      },
+      {
+        "id": "urn:ngm:class:data-schema",
+        "label": "Data Schema"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:api-management",
+        "label": "API Management"
+      },
+      {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "api-gateway",
+      "label": "API Gateway"
+    },
+    {
+      "slug": "api-gateway",
+      "label": "API Gateway"
+    },
+    {
+      "slug": "diagrams-as-code",
+      "label": "Diagrams as Code"
+    },
+    {
+      "slug": "function-calling",
+      "label": "Function Calling"
+    },
+    {
+      "slug": "gpts-and-custom-assistants",
+      "label": "GPTs and Custom Assistants"
+    }
+  ]
+}

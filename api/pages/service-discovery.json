@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:service-discovery",
+  "title": "Service Discovery",
+  "slug": "service-discovery",
+  "public": true,
+  "classIri": "urn:ngm:class:service-discovery",
+  "domain": "infrastructure",
+  "definition": "Service discovery is the mechanism by which distributed applications automatically locate the network endpoints of services they depend on, without relying on hardcoded addresses or manual configuration. It operates through a service registry that maintains a dynamic catalogue of available service instances with their health status, enabling clients to resolve service names to live endpoints at runtime. Service discovery patterns divide into client-side discovery, where the consumer queries the registry directly, and server-side discovery, where a load balancer or gateway mediates resolution. It is a foundational pattern in microservices architectures, enabling dynamic scaling, rolling updates, and fault-tolerant inter-service communication.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:distributed-system-architecture",
+      "label": "Distributed System Architecture"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:operational-resilience",
+        "label": "Operational Resilience"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:orchestration",
+        "label": "Orchestration"
+      },
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "api-gateway",
+      "label": "API Gateway"
+    },
+    {
+      "slug": "data-integration-interface",
+      "label": "Data Integration Interface"
+    },
+    {
+      "slug": "edge-mesh-network",
+      "label": "Edge Mesh Network"
+    },
+    {
+      "slug": "middleware",
+      "label": "Middleware"
+    },
+    {
+      "slug": "service-layer",
+      "label": "Service Layer"
+    }
+  ]
+}

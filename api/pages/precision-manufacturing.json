@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:precision-manufacturing",
+  "title": "Precision Manufacturing",
+  "slug": "precision-manufacturing",
+  "public": true,
+  "classIri": "urn:ngm:class:precision-manufacturing",
+  "domain": "hardware",
+  "definition": "Precision manufacturing is a set of industrial processes and quality systems that produce mechanical components and assemblies within extremely tight dimensional tolerances \u2014 typically sub-micrometre to nanometre scale \u2014 using advanced machining, metrology, and process control techniques. It encompasses CNC machining, ultra-precision grinding, electrical discharge machining (EDM), and micro-fabrication, combined with in-process measurement and statistical process control to ensure conformance to specification. Precision manufacturing is fundamental to the production of optical systems, semiconductor equipment, aerospace components, medical implants, and scientific instruments where dimensional accuracy directly determines system performance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:manufacturing-automation",
+      "label": "Manufacturing Automation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:industrial-robot",
+        "label": "Industrial Robot"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:industrial-inspection",
+        "label": "Industrial Inspection"
+      },
+      {
+        "id": "urn:ngm:class:smart-manufacturing",
+        "label": "Smart Manufacturing"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "IndustrialAutomation"
+      },
+      {
+        "id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      },
+      {
+        "id": "urn:ngm:class:display-metrology",
+        "label": "Display Metrology"
+      },
+      {
+        "id": "urn:ngm:class:digital-fabrication",
+        "label": "Digital Fabrication"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "calibration-target",
+      "label": "Calibration Target"
+    },
+    {
+      "slug": "end-effector",
+      "label": "End Effector"
+    },
+    {
+      "slug": "motion-control",
+      "label": "Motion Control"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:multi-party-computation",
+  "title": "Multi-Party Computation",
+  "slug": "multi-party-computation",
+  "public": true,
+  "classIri": "urn:ngm:class:multi-party-computation",
+  "domain": "security",
+  "definition": "Multi-Party Computation (MPC) is a subfield of cryptography that enables a set of mutually distrusting parties to jointly compute a function over their private inputs without revealing those inputs to any other participant. Correctness is guaranteed even when a bounded subset of participants behave maliciously, making MPC a cornerstone of privacy-preserving collaborative computation. The technique generalises two-party secure computation to arbitrary numbers of participants using secret-sharing or garbled-circuit protocols.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptography",
+      "label": "Cryptography"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:privacy-preserving-data-sharing",
+        "label": "Privacy Preserving Data Sharing"
+      },
+      {
+        "id": "urn:ngm:class:privacy-preserving-analytics",
+        "label": "Privacy Preserving Analytics"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:secure-multi-party-computation",
+        "label": "Secure Multi-Party Computation"
+      },
+      {
+        "id": "urn:ngm:class:threshold-cryptography",
+        "label": "Threshold Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    },
+    {
+      "slug": "blockchain-oracle",
+      "label": "Blockchain Oracle"
+    },
+    {
+      "slug": "cbdc-frameworks",
+      "label": "CBDC Frameworks"
+    },
+    {
+      "slug": "cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    }
+  ]
+}

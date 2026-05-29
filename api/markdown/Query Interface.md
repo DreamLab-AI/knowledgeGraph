@@ -1,0 +1,61 @@
+public:: true
+
+# Query Interface
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:query-interface",
+  "@type": "Page",
+  "vc:slug": "query-interface",
+  "title": "Query Interface",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 2
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:query-interface",
+  "@type": "Class",
+  "label": "Query Interface",
+  "definition": "A query interface is a defined boundary — programmatic, visual, or linguistic — through which users or systems express requests for data retrieval, graph traversal, or knowledge discovery against a data store or knowledge base, receiving structured results in return. Query interfaces range from formal declarative languages such as SQL and SPARQL to REST endpoints, vector similarity APIs, and natural-language question-answering systems built on large language models. They abstract the internal organisation of a data source behind a stable contract, enabling diverse clients to access data without knowledge of storage implementation details. Well-designed query interfaces balance expressiveness, performance, and ease of use.",
+  "domain": "ai",
+  "maturity": "established",
+  "subClassOf": [{"@id": "urn:ngm:class:data-access-interface", "label": "Data Access Interface"}],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:database-query", "label": "Database Query"},
+      {"@id": "urn:ngm:class:sparql", "label": "SPARQL"},
+      {"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
+      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
+      {"@id": "urn:ngm:class:enterprise-search", "label": "Enterprise Search"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:vector-database", "label": "Vector Database"},
+      {"@id": "urn:ngm:class:nearest-neighbor-search", "label": "Nearest Neighbor Search"}
+    ]
+  },
+  "quality": 0.8
+}
+```
+
+- ### Definition
+  - A [[Query Interface]] is a contractual boundary through which clients express structured or natural-language requests against a data source, receiving results via mechanisms ranging from [[Database Query]] languages to [[SPARQL]] endpoints and [[Information Retrieval]] APIs.
+
+- ### Relationships
+  - Query interfaces are the access layer that makes [[Knowledge Graph]]s, [[Vector Database]]s, and document corpora actionable. [[SPARQL]] provides the canonical query interface for RDF-based knowledge graphs, while [[Database Query]] languages such as SQL and Cypher serve relational and graph databases. [[Nearest Neighbor Search]] APIs expose the query interface of vector stores, and [[Retrieval-Augmented Generation]] pipelines stitch together multiple query interfaces to supply language models with grounded context. [[Enterprise Search]] products unify heterogeneous query interfaces behind a single search box.
+
+- ### Content
+  - Query interfaces have existed since the earliest database systems of the 1960s, when IBM's IMS provided navigational query access to hierarchical data. The relational model introduced by Codd in 1970 and its implementation via SQL in the 1970s represented a paradigm shift: a declarative, set-oriented query language that described what data was needed rather than how to retrieve it. SPARQL, standardised by the W3C in 2008, brought analogous declarative power to RDF knowledge graphs, enabling federated queries across distributed linked data endpoints.
+
+  - A query interface has several architectural layers. The expression layer provides the syntax through which queries are formulated — SQL, SPARQL, GraphQL, filter predicates, or natural language. The parsing and planning layer translates expressions into an execution plan, applying optimisations such as predicate pushdown, index selection, and join reordering. The execution layer retrieves and assembles result sets from underlying storage structures. The serialisation layer formats results for the client — as JSON, CSV, RDF, or streaming records. Well-designed query interfaces expose sufficient metadata about their schemas and capabilities to enable query construction without prior knowledge of the underlying data model.
+
+  - Query interfaces are significant because they determine the accessibility and utility of data assets. A powerful data store with a poorly designed query interface is effectively inaccessible to most users. The democratisation of data through user-friendly query interfaces — from drag-and-drop analytics tools to natural-language database queries — has been a recurring theme in enterprise software. GraphQL, introduced by Facebook in 2015, illustrates how a novel query interface can reshape client-server interaction patterns by allowing clients to specify exactly the fields they need, eliminating over-fetching and under-fetching.
+
+  - By 2024–2025, natural-language query interfaces backed by large language models are transforming how non-technical users access structured data. Text-to-SQL systems can translate plain English questions into syntactically correct and semantically accurate SQL queries against enterprise databases. Vector similarity query interfaces — the core API of embedding databases — have become essential infrastructure for retrieval-augmented generation pipelines in which LLMs retrieve relevant context before generating responses. Hybrid query interfaces that combine keyword, vector, and structured filter predicates in a single API are emerging as the practical standard for production search and retrieval systems.
+

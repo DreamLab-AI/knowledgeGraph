@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:material-definition",
+  "title": "Material Definition",
+  "slug": "material-definition",
+  "public": true,
+  "classIri": "urn:ngm:class:material-definition",
+  "domain": "graphics",
+  "definition": "A material definition is a structured data specification that describes how a surface or volume should appear under lighting, encoding properties such as base colour, roughness, metalness, emissivity, and transparency in a renderer-agnostic format. It underpins physically based rendering (PBR) pipelines by separating the description of physical surface behaviour from the rendering algorithm that evaluates it. Material definitions may be authored in formats such as MaterialX, glTF materials, or OpenUSD surface shading networks, enabling interchange across tools and engines. They are fundamental to achieving photorealistic and stylised visuals in real-time and offline 3D workflows.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:rendering-technique",
+      "label": "Rendering Technique"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:compute-shader",
+        "label": "Compute Shader"
+      },
+      {
+        "id": "urn:ngm:class:vertex-shader",
+        "label": "Vertex Shader"
+      },
+      {
+        "id": "urn:ngm:class:pixel-shader",
+        "label": "Pixel Shader"
+      }
+    ],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      },
+      {
+        "id": "urn:ngm:class:shader",
+        "label": "Shader"
+      },
+      {
+        "id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:render-pipeline",
+        "label": "Render Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:open-usd",
+        "label": "OpenUSD"
+      },
+      {
+        "id": "urn:ngm:class:gltf-standard",
+        "label": "Gltf Standard"
+      },
+      {
+        "id": "urn:ngm:class:3-d-rendering",
+        "label": "3D Rendering"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "3-d-file-format",
+      "label": "3D File Format"
+    },
+    {
+      "slug": "3-d-model",
+      "label": "3D Model"
+    },
+    {
+      "slug": "3-d-modeling",
+      "label": "3D Modeling"
+    },
+    {
+      "slug": "gl-tf-3-d-file-format",
+      "label": "glTF (3D File Format)"
+    }
+  ]
+}

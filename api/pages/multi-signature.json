@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:multi-signature",
+  "title": "Multi-Signature",
+  "slug": "multi-signature",
+  "public": true,
+  "classIri": "urn:ngm:class:multi-signature",
+  "domain": "blockchain",
+  "definition": "Multi-Signature (multisig) is a cryptographic access-control scheme requiring that a transaction or operation be authorised by a threshold number of independent private keys from a defined set before it is considered valid. Commonly expressed as m-of-n (e.g. 2-of-3), multisig eliminates single points of failure in key custody and enforces shared governance over digital assets or smart contracts. It is foundational to institutional cryptocurrency custody, DAO treasury management, and hardware-secure wallet architectures. Multisig schemes may be implemented at the protocol layer, at the script level (as in Bitcoin P2SH), or at the application layer via smart contracts.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:signature-scheme",
+      "label": "Signature Scheme"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:multi-sig-governance",
+        "label": "Multi Sig Governance"
+      },
+      {
+        "id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "id": "urn:ngm:class:multi-signature-wallet",
+        "label": "Multi-Signature Wallet"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-keys",
+        "label": "Cryptographic Keys"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:threshold-signature-scheme",
+        "label": "Threshold Signature Scheme"
+      },
+      {
+        "id": "urn:ngm:class:schnorr-signature",
+        "label": "Schnorr Signature"
+      },
+      {
+        "id": "urn:ngm:class:ecdsa",
+        "label": "ECDSA"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    },
+    {
+      "slug": "cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "lightning-and-similar-l2",
+      "label": "Lightning and Similar L2"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

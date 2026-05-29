@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:recommendation-system",
+  "title": "Recommendation System",
+  "slug": "recommendation-system",
+  "public": true,
+  "classIri": "urn:ngm:class:recommendation-system",
+  "domain": "ai",
+  "definition": "A recommendation system is an information filtering infrastructure that predicts and surfaces items, content, or actions likely to be of interest to a specific user, based on behavioural history, explicit preferences, item features, or combinations thereof. It encompasses collaborative filtering approaches that exploit user-item interaction patterns, content-based methods that match item attributes to user profiles, and hybrid models that combine multiple signals. Modern recommendation systems employ deep learning, graph neural networks, and large language models to capture complex preference patterns at scale. They are commercially critical infrastructure in e-commerce, streaming media, social networks, and digital advertising.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:machine-learning-technique",
+      "label": "Machine Learning Technique"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:personalized-virtual-experiences",
+        "label": "Personalized Virtual Experiences"
+      },
+      {
+        "id": "urn:ngm:class:predictive-personalization",
+        "label": "Predictive Personalization"
+      },
+      {
+        "id": "urn:ngm:class:e-commerce",
+        "label": "E-Commerce"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:collaborative-filtering",
+        "label": "Collaborative Filtering"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:embeddings",
+        "label": "Embeddings"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:video-streaming",
+        "label": "Video Streaming"
+      },
+      {
+        "id": "urn:ngm:class:social-media",
+        "label": "social media"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "algorithmic-transparency-index",
+      "label": "Algorithmic Transparency Index"
+    },
+    {
+      "slug": "discovery-layer",
+      "label": "Discovery Layer"
+    },
+    {
+      "slug": "graph-database",
+      "label": "Graph Database"
+    },
+    {
+      "slug": "knowledge-graph",
+      "label": "Knowledge Graph"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    }
+  ]
+}

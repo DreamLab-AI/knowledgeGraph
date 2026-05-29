@@ -1,0 +1,14 @@
+- ### Definition
+  - [[Service Discovery]] is the runtime mechanism by which distributed applications dynamically resolve service names to live network endpoints via a service registry, enabling [[Microservices Architecture]] deployments to scale elastically and recover from failures without operator intervention.
+
+- ### Relationships
+  - Service discovery underpins [[Microservices]] by decoupling consumers from hardcoded addresses, integrates with [[Kubernetes]] native DNS-based and endpoint-slice mechanisms, sits behind [[API Gateway]] routing layers that perform server-side resolution, and collectively enables [[Fault Tolerance]] and [[Operational Resilience]] by removing stale endpoints from the registry when health checks fail; [[Orchestration]] systems coordinate the lifecycle of service instances whose addresses are published through service discovery.
+
+- ### Content
+  - Service discovery emerged as a discipline when service-oriented architectures in the early 2000s replaced monolithic applications with networks of independently deployable services. Early implementations relied on DNS and static load balancers. As deployments moved to elastic cloud infrastructure where instance IP addresses change continuously, tools such as Consul, Eureka (Netflix OSS), and ZooKeeper became standard centralised registries.
+
+  - A service discovery system has three components: a registry storing service metadata and health status; a registration mechanism by which services announce themselves on start-up and deregister on shutdown or failure; and a query interface through which clients or load balancers resolve names to healthy endpoint lists. Health checks — TCP, HTTP, or custom script probes — run on configurable intervals to evict unhealthy instances from the registry within seconds of failure.
+
+  - Kubernetes internalised service discovery through CoreDNS, which resolves Kubernetes Service names to virtual IP addresses, and the Endpoints API, which maps those VIPs to healthy pod addresses. Service meshes such as Istio and Linkerd extend this with mTLS, circuit breaking, and fine-grained observability, pushing discovery logic into a per-pod sidecar proxy that intercepts all inter-service traffic.
+
+  - In 2024-2025, service discovery is evolving to handle multi-cluster and multi-cloud topologies, where services span environments with distinct networking domains. Projects such as Skupper and Istio's multi-cluster federation solve cross-boundary discovery. In AI and agent-based systems, service discovery is being applied to dynamic registries of AI capabilities and tool APIs, enabling agents to discover and compose services at runtime without pre-coded integrations.

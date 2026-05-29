@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:regulatory-authority",
+  "title": "Regulatory Authority",
+  "slug": "regulatory-authority",
+  "public": true,
+  "classIri": "urn:ngm:class:regulatory-authority",
+  "domain": "governance",
+  "definition": "A regulatory authority is a government body, statutory agency, or delegated entity empowered by legislation to create, enforce, and adjudicate rules governing a specific industry, market, or domain of public concern. Such bodies possess the legal power to issue binding standards, licenses, and penalties; conduct inspections and investigations; and compel disclosures, all with the aim of protecting consumers, ensuring market integrity, managing systemic risk, or advancing public policy objectives. Regulatory authorities operate at national, supranational, and sub-national levels and are increasingly engaged with digital markets, artificial intelligence, financial technology, and emerging technology sectors.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:regulatory-standards",
+        "label": "Regulatory Standards"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-reporting",
+        "label": "Regulatory Reporting"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:regulatory-technology",
+        "label": "Regulatory Technology"
+      },
+      {
+        "id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "consumer-protection",
+      "label": "Consumer Protection"
+    },
+    {
+      "slug": "digital-jurisdiction",
+      "label": "Digital Jurisdiction"
+    },
+    {
+      "slug": "securities-regulation",
+      "label": "Securities Regulation"
+    }
+  ]
+}

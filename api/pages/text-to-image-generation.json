@@ -1,0 +1,91 @@
+{
+  "id": "urn:visionflow:page:text-to-image-generation",
+  "title": "Text-to-Image Generation",
+  "slug": "text-to-image-generation",
+  "public": true,
+  "classIri": "urn:ngm:class:text-to-image-generation",
+  "domain": "ai",
+  "definition": "Text-to-image generation is a class of generative AI techniques that synthesise photorealistic or stylised images from natural-language textual descriptions, typically using diffusion models, autoregressive transformers, or hybrid architectures trained on large paired datasets of images and captions. The process involves encoding the text prompt into a latent representation that conditions image synthesis, iteratively denoising random noise into structured visual output guided by the conditioning signal. Systems such as DALL-E 3, Stable Diffusion, Midjourney, and Imagen exemplify the paradigm. Text-to-image generation has transformed creative workflows while raising contested questions about copyright, consent, and synthetic media authenticity.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:image-generation",
+      "label": "Image Generation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai",
+        "label": "Multimodal AI"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:proprietary-image-generation",
+        "label": "Proprietary Image Generation"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:diffusion-models",
+        "label": "Diffusion Models"
+      },
+      {
+        "id": "urn:ngm:class:latent-diffusion",
+        "label": "Latent Diffusion"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:text-to-image",
+        "label": "Text-to-Image"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "comfy-ui-workflows",
+      "label": "ComfyUI Workflows"
+    },
+    {
+      "slug": "fooocus",
+      "label": "Fooocus"
+    },
+    {
+      "slug": "inpainting",
+      "label": "Inpainting"
+    },
+    {
+      "slug": "proprietary-image-generation",
+      "label": "Proprietary Image Generation"
+    }
+  ]
+}

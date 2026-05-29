@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:renewable-energy",
+  "title": "Renewable Energy",
+  "slug": "renewable-energy",
+  "public": true,
+  "classIri": "urn:ngm:class:renewable-energy",
+  "domain": "infrastructure",
+  "definition": "Renewable Energy encompasses energy derived from naturally replenishing sources \u2014 principally solar photovoltaic, wind, hydropower, geothermal, and biomass \u2014 that are not depleted by use and produce little or no direct greenhouse gas emissions. It forms the primary technical basis for decarbonising electricity systems, with global installed capacity growing at record rates driven by falling costs, policy support, and corporate sustainability commitments requiring clean power procurement.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:energy-and-power",
+      "label": "Energy and Power"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:sustainable-development",
+        "label": "Sustainable Development"
+      },
+      {
+        "id": "urn:ngm:class:carbon-neutrality-planning",
+        "label": "Carbon Neutrality Planning"
+      },
+      {
+        "id": "urn:ngm:class:smart-grid",
+        "label": "Smart Grid"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:energy-management",
+        "label": "Energy Management"
+      },
+      {
+        "id": "urn:ngm:class:sustainable-technology",
+        "label": "Sustainable Technology"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:renewable-energy-certificates",
+        "label": "Renewable Energy Certificates"
+      },
+      {
+        "id": "urn:ngm:class:scope-2-emissions",
+        "label": "Scope 2 Emissions"
+      },
+      {
+        "id": "urn:ngm:class:environmental-sustainability",
+        "label": "Environmental Sustainability"
+      },
+      {
+        "id": "urn:ngm:class:sustainability-reporting",
+        "label": "Sustainability Reporting"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-environmental-issues",
+      "label": "Bitcoin Environmental Issues"
+    },
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "bitcoin-related-links",
+      "label": "Bitcoin related links"
+    },
+    {
+      "slug": "carbon-neutral-blockchain",
+      "label": "Carbon Neutral Blockchain"
+    },
+    {
+      "slug": "energy-and-power",
+      "label": "Energy and Power"
+    },
+    {
+      "slug": "green-blockchain-initiatives",
+      "label": "Green Blockchain Initiatives"
+    }
+  ]
+}

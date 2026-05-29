@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:securities-settlement",
+  "title": "Securities Settlement",
+  "slug": "securities-settlement",
+  "public": true,
+  "classIri": "urn:ngm:class:securities-settlement",
+  "domain": "finance",
+  "definition": "Securities settlement is the process by which the buyer of a security receives the asset and the seller receives payment, completing a trade through the final transfer of legal ownership and funds between counterparties, typically via a central securities depository (CSD) or clearing house. Traditional settlement occurs on a T+1 or T+2 basis after trade execution, involves complex chains of custodians, CSDs, and central counterparty clearing houses (CCPs), and carries counterparty risk during the settlement window. Distributed ledger technology and tokenised securities are driving a shift toward atomic and real-time settlement.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:financial-system",
+      "label": "Financial System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-asset-trading",
+        "label": "Digital Asset Trading"
+      },
+      {
+        "id": "urn:ngm:class:trustless-settlement",
+        "label": "Trustless Settlement"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:digital-asset-infrastructure",
+        "label": "Digital Asset Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:financial-infrastructure",
+        "label": "Financial Infrastructure"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:atomic-settlement",
+        "label": "Atomic Settlement"
+      },
+      {
+        "id": "urn:ngm:class:instant-value-settlement",
+        "label": "Instant value settlement"
+      },
+      {
+        "id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "asset-registry",
+      "label": "Asset Registry"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "r3-corda",
+      "label": "R3 Corda"
+    }
+  ]
+}

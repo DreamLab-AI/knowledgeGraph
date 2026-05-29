@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:software-development",
+  "title": "Software Development",
+  "slug": "software-development",
+  "public": true,
+  "classIri": "urn:ngm:class:software-development",
+  "domain": "infrastructure",
+  "definition": "Software development is the disciplined process of conceiving, specifying, designing, implementing, testing, deploying, and maintaining software systems through the coordinated application of engineering principles, programming languages, tooling, and collaborative methodologies. It encompasses the full lifecycle from requirements elicitation and architecture design through code writing, automated testing, continuous integration, and production operations, guided by process frameworks such as Agile, Scrum, DevOps, and lean software development that aim to deliver working software reliably, incrementally, and with measurable quality.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-augmented-software-engineering",
+        "label": "AI-Augmented Software Engineering"
+      },
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:programming-language",
+        "label": "Programming Language"
+      },
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "id": "urn:ngm:class:software-development-process",
+        "label": "Software Development Process"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:open-source-development",
+        "label": "Open Source Development"
+      },
+      {
+        "id": "urn:ngm:class:programming-paradigm",
+        "label": "Programming Paradigm"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "3-d-development",
+      "label": "3D Development"
+    },
+    {
+      "slug": "ai-search",
+      "label": "AI Search"
+    },
+    {
+      "slug": "gpt-engineer",
+      "label": "GPT Engineer"
+    }
+  ]
+}

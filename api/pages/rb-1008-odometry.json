@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:rb-1008-odometry",
+  "title": "RB-1008-odometry",
+  "slug": "rb-1008-odometry",
+  "public": true,
+  "classIri": "urn:ngm:class:rb-1008-odometry",
+  "domain": "robotics",
+  "definition": "RB-1008-odometry refers to the odometric positioning subsystem of the RB-1008 wheeled mobile robot platform, encompassing the encoder-based wheel odometry algorithms, sensor fusion pipelines, and ROS navigation stack integration used to estimate the robot's pose (position and orientation) relative to a starting frame. The system computes incremental displacement from differential or omnidirectional wheel encoders, corrects for wheel slip and encoder quantisation errors, and fuses encoder data with inertial measurement unit (IMU) readings to produce a continuous odometric estimate used as the prior for simultaneous localisation and mapping (SLAM) and autonomous navigation. Accurate odometry is essential for maintaining coherent map frames and for the navigation stack's local cost-map updates between LIDAR scan matches.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:odometry",
+      "label": "Odometry"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:ros-navigation-stack",
+        "label": "ROS Navigation Stack"
+      },
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:wheeled-mobile-robot",
+        "label": "Wheeled Mobile Robot"
+      },
+      {
+        "id": "urn:ngm:class:mobile-robot-platform",
+        "label": "Mobile Robot Platform"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:localization",
+        "label": "Localization"
+      },
+      {
+        "id": "urn:ngm:class:visual-odometry",
+        "label": "Visual Odometry"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "kalman-filter",
+      "label": "Kalman Filter"
+    },
+    {
+      "slug": "localization",
+      "label": "Localization"
+    },
+    {
+      "slug": "monte-carlo-localization",
+      "label": "Monte Carlo Localization"
+    }
+  ]
+}

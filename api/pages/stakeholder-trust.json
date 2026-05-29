@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:stakeholder-trust",
+  "title": "Stakeholder Trust",
+  "slug": "stakeholder-trust",
+  "public": true,
+  "classIri": "urn:ngm:class:stakeholder-trust",
+  "domain": "governance",
+  "definition": "Stakeholder trust is the confident reliance that individuals, groups, or organisations \u2014 including users, operators, regulators, and affected communities \u2014 place in a system, institution, or technology to behave reliably, safely, and in accordance with stated values. In the context of AI and automated systems, stakeholder trust encompasses both calculative assessments of technical competence and affective judgements about integrity and ethical alignment, and is recognised as a prerequisite for adoption, legitimate deployment, and effective governance. It must be earned through demonstrated performance, transparency, and accountability rather than assumed.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:trust",
+      "label": "Trust"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:trust-and-safety",
+        "label": "Trust and Safety"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:stakeholder-engagement",
+        "label": "Stakeholder Engagement"
+      },
+      {
+        "id": "urn:ngm:class:stakeholder",
+        "label": "Stakeholder"
+      },
+      {
+        "id": "urn:ngm:class:ai-trustworthiness",
+        "label": "AI Trustworthiness"
+      },
+      {
+        "id": "urn:ngm:class:trust-framework",
+        "label": "Trust Framework"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-ethics-checklist",
+      "label": "AI Ethics Checklist"
+    },
+    {
+      "slug": "algorithmic-transparency-index",
+      "label": "Algorithmic Transparency Index"
+    },
+    {
+      "slug": "carbon-neutrality-verification",
+      "label": "Carbon Neutrality Verification"
+    }
+  ]
+}

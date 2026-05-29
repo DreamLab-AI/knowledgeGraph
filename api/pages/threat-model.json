@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:threat-model",
+  "title": "Threat Model",
+  "slug": "threat-model",
+  "public": true,
+  "classIri": "urn:ngm:class:threat-model",
+  "domain": "security",
+  "definition": "A threat model is a structured representation of the security properties, assumptions, and adversarial conditions relevant to a system, used to identify potential attack vectors, prioritise mitigations, and reason systematically about security guarantees. It defines who the adversary is (capabilities, motivations, access), what assets are worth protecting, and what attacks \u2014 such as those catalogued in STRIDE or MITRE ATT&CK \u2014 could compromise confidentiality, integrity, or availability. Threat modelling is applied during system design to surface architectural weaknesses before implementation, and updated continuously as the threat landscape evolves. It is a prerequisite for sound security architecture, cryptographic protocol design, and regulatory compliance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:security-framework",
+      "label": "Security Framework"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:security-architecture",
+        "label": "Security Architecture"
+      },
+      {
+        "id": "urn:ngm:class:risk-mitigation",
+        "label": "Risk Mitigation"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:attack-vector",
+        "label": "Attack Vector"
+      },
+      {
+        "id": "urn:ngm:class:vulnerability",
+        "label": "Vulnerability"
+      },
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:nist-cybersecurity-framework",
+        "label": "NIST Cybersecurity Framework"
+      },
+      {
+        "id": "urn:ngm:class:threat-surface-map",
+        "label": "Threat Surface Map"
+      },
+      {
+        "id": "urn:ngm:class:adversarial-robustness",
+        "label": "Adversarial Robustness"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cyber-security-and-cryptography",
+      "label": "Cyber Security and Cryptography"
+    },
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    },
+    {
+      "slug": "threat-surface-map",
+      "label": "Threat Surface Map"
+    }
+  ]
+}

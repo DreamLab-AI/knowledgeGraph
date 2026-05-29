@@ -1,0 +1,14 @@
+- ### Definition
+  - [[PostgreSQL]] is a battle-tested open-source object-relational [[Database System]] offering ACID transactions, rich SQL standard compliance, extensible type system, and multi-paradigm indexing — including native vector search via pgvector — making it a foundation for transactional, analytical, and AI workloads alike.
+
+- ### Relationships
+  - PostgreSQL serves as an execution engine for complex [[Database Query]] workloads, can be extended to function as a [[Vector Database]] through the pgvector extension enabling nearest-neighbour search, supports [[Spatial Database]] operations via PostGIS, and underpins [[Machine Learning Infrastructure]] pipelines that require reliable, queryable feature stores with strong [[Data Governance]] guarantees.
+
+- ### Content
+  - PostgreSQL traces its lineage to Michael Stonebraker's POSTGRES project at UC Berkeley, begun in 1986 as a successor to the INGRES system. POSTGRES introduced an object-relational model with support for user-defined types and rules. In 1996 the project was renamed PostgreSQL to reflect its SQL compliance and released as fully open-source software, bootstrapping a global volunteer community.
+
+  - The database engine uses a process-per-connection architecture with multi-version concurrency control (MVCC) that allows readers and writers to proceed without blocking each other. Its query planner is cost-based, supported by extensive statistics, and capable of parallelising scans, joins, and aggregations across multiple CPU cores. Extensions — installable shared libraries — add capabilities ranging from geospatial analysis (PostGIS) and time-series data (TimescaleDB) to vector similarity search (pgvector) and columnar storage (Citus).
+
+  - PostgreSQL's extensibility makes it the preferred persistence layer for AI and data engineering stacks. The pgvector extension, introduced in 2021, allows high-dimensional embeddings to be stored alongside relational metadata and queried with approximate nearest-neighbour indices (IVFFlat, HNSW), collapsing the need for separate vector databases in many applications. This makes PostgreSQL a natural fit for retrieval-augmented generation (RAG) architectures where semantic and structured queries must be composed.
+
+  - In 2024-2025, PostgreSQL 16 and 17 delivered improvements to logical replication, parallelism, and JSON path query performance. The pgvector HNSW index, achieving sub-millisecond query latency at billion-scale, has driven explosive adoption in AI application backends. Cloud-managed variants — Amazon Aurora, Google AlloyDB, Neon, and Supabase — are making serverless PostgreSQL accessible at scale, reducing operational burden for teams building AI-native applications.

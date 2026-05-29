@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:robot-manipulation",
+  "title": "Robot Manipulation",
+  "slug": "robot-manipulation",
+  "public": true,
+  "classIri": "urn:ngm:class:robot-manipulation",
+  "domain": "robotics",
+  "definition": "Robot manipulation is the sub-field of robotics concerned with the planning and execution of purposeful physical interactions between robotic systems and objects in the world, encompassing grasping, assembly, in-hand manipulation, and tool use. It integrates kinematics, dynamics, perception, and planning to move objects from one configuration to another, adapting to uncertainty in object shape, pose, surface properties, and environmental dynamics. Robust manipulation remains one of the hardest open problems in robotics due to the combinatorial complexity of contact mechanics.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:manipulation",
+      "label": "Manipulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "id": "urn:ngm:class:robot-learning",
+        "label": "Robot Learning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:force-control",
+        "label": "Force Control"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:object-manipulation",
+        "label": "Object Manipulation"
+      },
+      {
+        "id": "urn:ngm:class:industrial-manipulation",
+        "label": "Industrial Manipulation"
+      },
+      {
+        "id": "urn:ngm:class:teleoperation",
+        "label": "Teleoperation"
+      },
+      {
+        "id": "urn:ngm:class:end-effector",
+        "label": "End Effector"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "imitation-learning",
+      "label": "Imitation Learning"
+    },
+    {
+      "slug": "motion-control",
+      "label": "Motion Control"
+    },
+    {
+      "slug": "robotics-platform",
+      "label": "Robotics Platform"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:telemedicine",
+  "title": "Telemedicine",
+  "slug": "telemedicine",
+  "public": true,
+  "classIri": "urn:ngm:class:telemedicine",
+  "domain": "ai",
+  "definition": "Telemedicine is the delivery of clinical healthcare services \u2014 including diagnosis, consultation, monitoring, and treatment guidance \u2014 at a distance using telecommunications technology such as video conferencing, secure messaging, and remote sensing devices. It encompasses synchronous consultations (live video visits), asynchronous store-and-forward exchanges (images, test results), and remote patient monitoring (RPM) using wearable sensors and IoT devices. Telemedicine dramatically expands access to specialist care for patients in rural, underserved, or mobility-constrained situations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:healthcare-technology",
+      "label": "Healthcare Technology"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:remote-work",
+        "label": "Remote Work"
+      },
+      {
+        "id": "urn:ngm:class:precision-medicine",
+        "label": "Precision Medicine"
+      },
+      {
+        "id": "urn:ngm:class:clinical-decision-support",
+        "label": "Clinical Decision Support"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:video-conferencing",
+        "label": "Video Conferencing"
+      },
+      {
+        "id": "urn:ngm:class:io-t-sensor-network",
+        "label": "IoT Sensor Network"
+      },
+      {
+        "id": "urn:ngm:class:healthcare-ai",
+        "label": "Healthcare AI"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:medical-ai",
+        "label": "Medical AI"
+      },
+      {
+        "id": "urn:ngm:class:wearable-device-integration",
+        "label": "Wearable Device Integration"
+      },
+      {
+        "id": "urn:ngm:class:healthcare-records",
+        "label": "Healthcare Records"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bandwidth-adaptation",
+      "label": "Bandwidth Adaptation"
+    },
+    {
+      "slug": "health-metaverse-application",
+      "label": "Health Metaverse Application"
+    },
+    {
+      "slug": "real-time-translation",
+      "label": "Real-time Translation"
+    }
+  ]
+}

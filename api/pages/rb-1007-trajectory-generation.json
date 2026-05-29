@@ -1,0 +1,87 @@
+{
+  "id": "urn:visionflow:page:rb-1007-trajectory-generation",
+  "title": "RB-1007-trajectory-generation",
+  "slug": "rb-1007-trajectory-generation",
+  "public": true,
+  "classIri": "urn:ngm:class:rb-1007-trajectory-generation",
+  "domain": "robotics",
+  "definition": "RB-1007 Trajectory Generation is a robotics knowledge-base entry cataloguing the algorithms, mathematical representations, and computational methods used to synthesise smooth, dynamically feasible motion trajectories for robotic systems, specifying how a robot must move through configuration space or task space from an initial to a goal state while satisfying kinematic, dynamic, and environmental constraints. It covers polynomial spline interpolation, time-optimal trajectory planning, jerk-limited profiles, and learned trajectory generation approaches, forming the bridge between high-level task planning and low-level joint control execution.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:trajectory-generation",
+      "label": "Trajectory Generation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:motion-control",
+        "label": "Motion Control"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:trajectory-planning",
+        "label": "Trajectory Planning"
+      },
+      {
+        "id": "urn:ngm:class:trajectory-control",
+        "label": "Trajectory Control"
+      },
+      {
+        "id": "urn:ngm:class:rb-0051-trajectory-planning",
+        "label": "rb 0051 trajectory planning"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "closed-loop-control",
+      "label": "Closed-Loop Control"
+    },
+    {
+      "slug": "obstacle-avoidance",
+      "label": "Obstacle Avoidance"
+    },
+    {
+      "slug": "optimal-control",
+      "label": "Optimal Control"
+    },
+    {
+      "slug": "path-planning",
+      "label": "Path Planning"
+    }
+  ]
+}

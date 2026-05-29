@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:tracking-system",
+  "title": "Tracking System",
+  "slug": "tracking-system",
+  "public": true,
+  "classIri": "urn:ngm:class:tracking-system",
+  "domain": "infrastructure",
+  "definition": "A Tracking System is a hardware and software assembly that continuously determines the position, orientation, and motion of one or more objects or agents within a defined reference frame, using sensing technologies such as optical cameras, inertial measurement units, electromagnetic emitters, ultrasound, GPS, or LiDAR. Tracking systems are foundational components of augmented and virtual reality, robotics, surgical navigation, sports analytics, logistics, and autonomous vehicles, where precise real-time knowledge of spatial state is essential for interaction, control, or safety.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:spatial-tracking-system",
+      "label": "Spatial Tracking System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:surgical-navigation",
+        "label": "Surgical Navigation"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:imu",
+        "label": "IMU"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      },
+      {
+        "id": "urn:ngm:class:spatial-mapping",
+        "label": "Spatial Mapping"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "human-interface-layer-hil",
+      "label": "Human Interface Layer (HIL)"
+    },
+    {
+      "slug": "reality-capture-system",
+      "label": "Reality Capture System"
+    },
+    {
+      "slug": "spatial-anchor",
+      "label": "Spatial Anchor"
+    }
+  ]
+}

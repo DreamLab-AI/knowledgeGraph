@@ -1,0 +1,60 @@
+public:: true
+
+# Persistent Memory
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:persistent-memory",
+  "@type": "Page",
+  "vc:slug": "persistent-memory",
+  "title": "Persistent Memory",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 2
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:persistent-memory",
+  "@type": "Class",
+  "label": "Persistent Memory",
+  "definition": "Persistent Memory (PMEM) is a class of byte-addressable, non-volatile storage technology that occupies the memory bus and exposes its capacity directly to processor load/store instructions, combining the persistence of storage media with latency approaching that of DRAM. It sits in a new tier of the memory hierarchy between volatile DRAM and block-accessed SSDs, enabling applications to retain state across power cycles without the overhead of traditional I/O system calls.",
+  "domain": "hardware",
+  "maturity": "emerging",
+  "subClassOf": [{"@id": "urn:ngm:class:hardware", "label": "Hardware"}],
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:data-persistence", "label": "Data Persistence"},
+      {"@id": "urn:ngm:class:data-storage", "label": "Data Storage"},
+      {"@id": "urn:ngm:class:compute-infrastructure", "label": "Compute Infrastructure"},
+      {"@id": "urn:ngm:class:hardware-acceleration", "label": "Hardware Acceleration"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:real-time-processing", "label": "Real-time Processing"},
+      {"@id": "urn:ngm:class:machine-learning-infrastructure", "label": "Machine Learning Infrastructure"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:vector-database", "label": "Vector Database"},
+      {"@id": "urn:ngm:class:inference-engine", "label": "Inference Engine"}
+    ]
+  },
+  "quality": 0.8
+}
+```
+
+- ### Definition
+  - Persistent Memory is a byte-addressable, non-volatile [[Hardware]] tier that bridges the gap between volatile DRAM and block-storage SSDs, enabling applications to perform [[Data Persistence]] operations through direct CPU load/store instructions with near-DRAM latency rather than costly I/O system calls.
+
+- ### Relationships
+  - Persistent Memory reshapes [[Compute Infrastructure]] by introducing a new tier in the memory hierarchy that offers both the speed of [[Data Storage]] in DRAM and the durability of flash-based media. Its byte-addressability allows [[Machine Learning Infrastructure]] to memory-map large model weights and [[Vector Database]] indices, dramatically reducing cold-start latency. [[Inference Engine]] deployments benefit from persistent memory's ability to keep loaded model state across restarts without re-reading from SSD. [[Real-time Processing]] workloads gain deterministic restart behaviour because in-memory data structures survive power interruptions. [[Hardware Acceleration]] pipelines can combine persistent memory with GPU-attached fast DRAM to stage large datasets in a cost-effective, low-latency tier.
+
+- ### Content
+  - Persistent memory as a concept dates to 1960s core rope memory, but the modern byte-addressable PMEM category emerged commercially with Intel Optane DC Persistent Memory Modules (DCPMM), which began shipping in 2019. These devices used 3D XPoint (co-developed with Micron) as the storage medium, connected to the DDR4 memory bus via the NVDIMM-P interface, delivering read latency of around 300 ns — roughly three times slower than DRAM but ten times faster than NVMe SSD.
+
+  - Persistent memory operates in two main modes: Memory Mode, where the DRAM acts as a transparent cache and persistent memory provides capacity, giving applications a large volatile address space; and App Direct Mode, where both DRAM and persistent memory are separately addressable, allowing applications to explicitly map persistent data structures using the PMDK (Persistent Memory Development Kit) library. In App Direct Mode, applications use CLFLUSHOPT and CLWB instructions with memory fences to guarantee that writes reach the persistent domain, maintaining failure atomicity at the cache-line level.
+
+  - The significance of persistent memory for large-scale data and AI workloads is substantial. In-memory databases like SAP HANA and Redis can persist their full working sets without checkpoint overhead. Genomic analysis pipelines map terabyte reference databases as memory-mapped files. For AI, persistent memory allows vector embedding indices to survive restarts, reducing time-to-first-query in retrieval-augmented generation systems from minutes to seconds.
+
+  - Intel's discontinuation of Optane products in 2022 temporarily set back the market, but the underlying architecture continues to evolve. Samsung's CXL-attached memory products and the emerging CXL 3.x standard enable memory expansion over PCIe fabric, effectively extending persistent and high-capacity memory pools to multiple hosts in a rack. By 2024-2025, CXL memory pooling is positioned as the successor architecture, and research into storage-class memory using emerging materials (phase-change, resistive RAM, ferroelectric RAM) continues to advance the next generation of persistent memory technologies.

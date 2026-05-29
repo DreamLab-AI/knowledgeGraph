@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:ros-navigation-stack",
+  "title": "ROS Navigation Stack",
+  "slug": "ros-navigation-stack",
+  "public": true,
+  "classIri": "urn:ngm:class:ros-navigation-stack",
+  "domain": "robotics",
+  "definition": "The ROS Navigation Stack is a collection of software packages within the Robot Operating System (ROS) framework that provides a robot with the capability to move autonomously through an environment by combining map building, localisation, global path planning, local obstacle avoidance, and motor control into an integrated pipeline. It abstracts sensor inputs (laser scan, odometry, IMU), maintains a 2D occupancy grid map and cost layers, runs AMCL (Adaptive Monte Carlo Localisation) for pose estimation, and uses A* or Dijkstra for global plans combined with DWA (Dynamic Window Approach) or TEB (Timed Elastic Band) for local reactive navigation. The Navigation Stack is the de facto standard for mobile ground-robot navigation in research and production robotics.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robot-operating-system",
+      "label": "Robot Operating System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "id": "urn:ngm:class:obstacle-avoidance",
+        "label": "Obstacle Avoidance"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "id": "urn:ngm:class:localisation",
+        "label": "Localisation"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ros-2",
+        "label": "ROS 2"
+      },
+      {
+        "id": "urn:ngm:class:gazebo-simulator",
+        "label": "Gazebo Simulator"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bayes-filter",
+      "label": "Bayes Filter"
+    },
+    {
+      "slug": "particle-filter",
+      "label": "Particle Filter"
+    },
+    {
+      "slug": "topological-map",
+      "label": "Topological Map"
+    }
+  ]
+}

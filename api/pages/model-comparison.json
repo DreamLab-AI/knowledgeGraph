@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:model-comparison",
+  "title": "Model Comparison",
+  "slug": "model-comparison",
+  "public": true,
+  "classIri": "urn:ngm:class:model-comparison",
+  "domain": "ai",
+  "definition": "Model comparison is the systematic process of evaluating and contrasting multiple machine learning or AI models against a common set of tasks, datasets, and metrics to determine their relative strengths, weaknesses, and suitability for deployment. It encompasses both quantitative benchmarking and qualitative assessment of factors such as computational cost, latency, robustness, and alignment properties. Rigorous model comparison underpins reproducible research and responsible AI deployment decisions. The discipline has grown substantially as the proliferation of foundation models makes vendor-neutral evaluation increasingly critical.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:evaluation-metric",
+      "label": "Evaluation Metric"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-optimisation-and-performance",
+        "label": "Model Optimisation and Performance"
+      },
+      {
+        "id": "urn:ngm:class:ai-model-card",
+        "label": "AI Model Card"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:benchmarks",
+        "label": "Benchmarks"
+      },
+      {
+        "id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards",
+        "label": "Evaluation Benchmarks and Leaderboards"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-model",
+        "label": "Machine Learning Model"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:model-performance",
+        "label": "Model Performance"
+      },
+      {
+        "id": "urn:ngm:class:model-evaluation-results",
+        "label": "Model Evaluation Results"
+      },
+      {
+        "id": "urn:ngm:class:fairness-accuracy-tradeoffs",
+        "label": "Fairness Accuracy Tradeoffs"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "auc",
+      "label": "AUC"
+    },
+    {
+      "slug": "evaluation-benchmarks-and-leaderboards",
+      "label": "Evaluation benchmarks and leaderboards"
+    },
+    {
+      "slug": "model-property",
+      "label": "Model Property"
+    },
+    {
+      "slug": "roc-curve",
+      "label": "ROC Curve"
+    },
+    {
+      "slug": "roc-curve",
+      "label": "ROC Curve"
+    }
+  ]
+}

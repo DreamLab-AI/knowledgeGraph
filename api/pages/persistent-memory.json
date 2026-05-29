@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:persistent-memory",
+  "title": "Persistent Memory",
+  "slug": "persistent-memory",
+  "public": true,
+  "classIri": "urn:ngm:class:persistent-memory",
+  "domain": "hardware",
+  "definition": "Persistent Memory (PMEM) is a class of byte-addressable, non-volatile storage technology that occupies the memory bus and exposes its capacity directly to processor load/store instructions, combining the persistence of storage media with latency approaching that of DRAM. It sits in a new tier of the memory hierarchy between volatile DRAM and block-accessed SSDs, enabling applications to retain state across power cycles without the overhead of traditional I/O system calls.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:hardware",
+      "label": "Hardware"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:real-time-processing",
+        "label": "Real-time Processing"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-infrastructure",
+        "label": "Machine Learning Infrastructure"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      },
+      {
+        "id": "urn:ngm:class:inference-engine",
+        "label": "Inference Engine"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-persistence",
+        "label": "Data Persistence"
+      },
+      {
+        "id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
+      },
+      {
+        "id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "context-engineering",
+      "label": "Context Engineering"
+    },
+    {
+      "slug": "storage-infrastructure",
+      "label": "Storage Infrastructure"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

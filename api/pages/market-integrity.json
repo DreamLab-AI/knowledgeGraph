@@ -1,0 +1,83 @@
+{
+  "id": "urn:visionflow:page:market-integrity",
+  "title": "Market Integrity",
+  "slug": "market-integrity",
+  "public": true,
+  "classIri": "urn:ngm:class:market-integrity",
+  "domain": "finance",
+  "definition": "Market integrity refers to the set of conditions, rules, and enforcement mechanisms that ensure financial and digital asset markets operate fairly, transparently, and free from manipulation, fraud, or systemic abuse. It encompasses prevention of practices such as insider trading, wash trading, and front-running that distort price discovery. Regulatory authorities and market operators jointly maintain market integrity through surveillance, disclosure requirements, and sanction regimes. In decentralised contexts, algorithmic and on-chain mechanisms increasingly supplement traditional oversight.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:financial-regulation",
+      "label": "Financial Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:financial-trading",
+        "label": "Financial Trading"
+      },
+      {
+        "id": "urn:ngm:class:consumer-protection",
+        "label": "Consumer Protection"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:surveillance-capitalism",
+        "label": "Surveillance Capitalism"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:market-surveillance-authority",
+        "label": "Market Surveillance Authority"
+      },
+      {
+        "id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-market",
+        "label": "Digital Asset Market"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "regulatory-framework",
+      "label": "Regulatory Framework"
+    },
+    {
+      "slug": "regulatory-reporting",
+      "label": "Regulatory Reporting"
+    },
+    {
+      "slug": "securities-regulation",
+      "label": "Securities Regulation"
+    }
+  ]
+}

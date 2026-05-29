@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:structured-light",
+  "title": "Structured Light",
+  "slug": "structured-light",
+  "public": true,
+  "classIri": "urn:ngm:class:structured-light",
+  "domain": "hardware",
+  "definition": "Structured light is a 3D surface measurement technique that projects one or more known patterns \u2014 typically binary stripe sequences, sinusoidal fringes, or dot grids \u2014 onto a scene using a projector or laser, then captures the deformed pattern with one or more calibrated cameras. Because the geometry of the projection and capture system is precisely known, the per-pixel deformation of the projected pattern encodes depth, allowing a complete 3D point cloud or depth map of the object surface to be recovered through triangulation. Structured light systems achieve sub-millimetre to micrometre-scale depth accuracy and are widely deployed in industrial metrology, 3D scanning, face recognition, robotic guidance, and augmented reality depth sensing.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:depth-sensing",
+      "label": "Depth Sensing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:point-cloud-processing",
+        "label": "Point Cloud Processing"
+      },
+      {
+        "id": "urn:ngm:class:industrial-inspection",
+        "label": "Industrial Inspection"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:depth-estimation",
+        "label": "Depth Estimation"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:stereo-camera",
+        "label": "Stereo Camera"
+      },
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "id": "urn:ngm:class:depth-sensor",
+        "label": "Depth Sensor"
+      },
+      {
+        "id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "depth-estimation",
+      "label": "Depth Estimation"
+    },
+    {
+      "slug": "hand-tracking",
+      "label": "Hand Tracking"
+    },
+    {
+      "slug": "light-field",
+      "label": "Light field"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:training-data-distribution",
+  "title": "Training Data Distribution",
+  "slug": "training-data-distribution",
+  "public": true,
+  "classIri": "urn:ngm:class:training-data-distribution",
+  "domain": "ai",
+  "definition": "Training data distribution refers to the statistical properties and compositional characteristics of the dataset used to train a machine learning model, including the relative frequencies of classes, the coverage of input feature space, the presence of rare or tail events, and the demographic or domain balance of examples. The training data distribution determines what patterns a model can learn, what it will generalise from, and where it will fail: a model trained on a distribution that differs from the deployment distribution will exhibit degraded performance due to covariate shift or prior probability shift. Deliberate control of training data distribution \u2014 through curation, resampling, augmentation, and synthetic data generation \u2014 is a primary lever for improving model robustness, fairness, and safety.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:training-data",
+      "label": "Training Data"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:training-dataset",
+        "label": "Training Dataset"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:synthetic-data",
+        "label": "Synthetic Data"
+      },
+      {
+        "id": "urn:ngm:class:data-augmentation-strategies",
+        "label": "Data Augmentation Strategies"
+      },
+      {
+        "id": "urn:ngm:class:data-collection",
+        "label": "Data Collection"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:domain-adaptation",
+        "label": "Domain Adaptation"
+      },
+      {
+        "id": "urn:ngm:class:bias",
+        "label": "Bias"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-bias",
+        "label": "Algorithmic Bias"
+      },
+      {
+        "id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "diffusion-models",
+      "label": "Diffusion Models"
+    },
+    {
+      "slug": "generative-adversarial-networks",
+      "label": "Generative Adversarial Networks"
+    },
+    {
+      "slug": "inpainting",
+      "label": "Inpainting"
+    }
+  ]
+}

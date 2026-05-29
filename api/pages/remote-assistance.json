@@ -1,0 +1,83 @@
+{
+  "id": "urn:visionflow:page:remote-assistance",
+  "title": "Remote Assistance",
+  "slug": "remote-assistance",
+  "public": true,
+  "classIri": "urn:ngm:class:remote-assistance",
+  "domain": "infrastructure",
+  "definition": "Remote assistance is a service modality in which an expert or system provides real-time guidance, intervention, or control to a person or machine at a physically separate location, mediated by communication and rendering technology. It spans technical IT support via screen-sharing, clinical guidance through telestration overlays on AR headsets, and safety-critical interventions in teleoperated robotics. Effective remote assistance requires low-latency bidirectional communication, shared situational awareness, and appropriate interaction modalities for the task domain.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:remote-collaboration",
+      "label": "Remote Collaboration"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:augmented-connected-workforce",
+        "label": "Augmented Connected Workforce"
+      },
+      {
+        "id": "urn:ngm:class:remote-work",
+        "label": "Remote Work"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:immersive-communication",
+        "label": "Immersive Communication"
+      },
+      {
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:remote-communication",
+        "label": "Remote Communication"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:telepresence",
+        "label": "Telepresence"
+      },
+      {
+        "id": "urn:ngm:class:teleoperation",
+        "label": "Teleoperation"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ar-technology",
+      "label": "AR Technology"
+    },
+    {
+      "slug": "augmented-reality",
+      "label": "Augmented Reality"
+    },
+    {
+      "slug": "mixed-reality",
+      "label": "Mixed Reality"
+    }
+  ]
+}

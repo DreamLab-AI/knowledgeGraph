@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:process-automation",
+  "title": "Process Automation",
+  "slug": "process-automation",
+  "public": true,
+  "classIri": "urn:ngm:class:process-automation",
+  "domain": "infrastructure",
+  "definition": "Process automation is the use of technology to perform repetitive business, operational, or industrial tasks with minimal human intervention, replacing manual steps in workflows with software execution, robotic systems, or rule-based logic engines. It spans a spectrum from simple macro-based automation of individual tasks through robotic process automation (RPA) that mimics user interface interactions, to intelligent automation that integrates machine learning models for decision-making in unstructured data contexts. The goal is to increase throughput, reduce errors, lower labour costs, and free human workers for higher-value activities.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:workflow-automation",
+      "label": "Workflow Automation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "IndustrialAutomation"
+      },
+      {
+        "id": "urn:ngm:class:digital-transformation",
+        "label": "Digital Transformation"
+      },
+      {
+        "id": "urn:ngm:class:customer-service-automation",
+        "label": "Customer Service Automation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:software-development-process",
+        "label": "Software Development Process"
+      },
+      {
+        "id": "urn:ngm:class:api-integration",
+        "label": "API Integration"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      },
+      {
+        "id": "urn:ngm:class:manufacturing-automation",
+        "label": "Manufacturing Automation"
+      },
+      {
+        "id": "urn:ngm:class:trade-finance-automation",
+        "label": "Trade Finance Automation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-adoption",
+      "label": "AI Adoption"
+    },
+    {
+      "slug": "autonomous-agent",
+      "label": "Autonomous Agent"
+    },
+    {
+      "slug": "control-algorithm",
+      "label": "Control Algorithm"
+    }
+  ]
+}

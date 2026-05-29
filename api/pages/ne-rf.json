@@ -1,0 +1,106 @@
+{
+  "id": "urn:visionflow:page:ne-rf",
+  "title": "NeRF",
+  "slug": "ne-rf",
+  "public": true,
+  "classIri": "urn:ngm:class:ne-rf",
+  "domain": "graphics",
+  "definition": "Neural Radiance Field (NeRF) is a neural scene representation technique that encodes a continuous volumetric scene as a multi-layer perceptron mapping 3D coordinates and viewing directions to colour and density values, enabling photorealistic novel view synthesis from a sparse set of input images. Originally introduced by Mildenhall et al. in 2020, NeRF uses volumetric ray marching during rendering to integrate along rays through the implicit field, producing high-fidelity reconstructions without explicit geometry. It has catalysed a broad family of neural rendering methods spanning real-time variants, dynamic scenes, and large-scale outdoor capture.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:neural-radiance-field",
+      "label": "Neural Radiance Field"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:novel-view-synthesis",
+        "label": "Novel View Synthesis"
+      },
+      {
+        "id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:photorealistic-rendering",
+        "label": "Photorealistic Rendering"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:differentiable-rendering",
+        "label": "Differentiable Rendering"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:volumetric-capture",
+        "label": "Volumetric Capture"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-upscaling-and-super-resolution",
+      "label": "AI Upscaling and Super-Resolution"
+    },
+    {
+      "slug": "depth-estimation",
+      "label": "Depth Estimation"
+    },
+    {
+      "slug": "fashion",
+      "label": "Fashion"
+    },
+    {
+      "slug": "neural-3-d-generation",
+      "label": "Neural 3D Generation"
+    },
+    {
+      "slug": "perception-system",
+      "label": "Perception System"
+    },
+    {
+      "slug": "procedural-and-hybrid-4-d",
+      "label": "Procedural and Hybrid 4D"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    }
+  ]
+}

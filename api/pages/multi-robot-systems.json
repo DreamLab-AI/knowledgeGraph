@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:multi-robot-systems",
+  "title": "Multi-Robot Systems",
+  "slug": "multi-robot-systems",
+  "public": true,
+  "classIri": "urn:ngm:class:multi-robot-systems",
+  "domain": "robotics",
+  "definition": "Multi-robot systems (MRS) are coordinated ensembles of two or more robotic agents that collaborate to accomplish tasks beyond the reach of a single robot, using communication, task allocation, and shared world models. They span architectures from tightly coupled homogeneous fleets to loosely coupled heterogeneous teams where robots with different capabilities complement each other. Key research challenges include task and motion planning, collision avoidance, fault tolerance, and communication bandwidth constraints in dynamic environments. MRS find application in search and rescue, warehouse automation, precision agriculture, and planetary exploration.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:autonomous-system",
+      "label": "Autonomous System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
+        "id": "urn:ngm:class:swarm-robot",
+        "label": "Swarm Robot"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-robot",
+        "label": "Collaborative Robot"
+      }
+    ],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:robotic-control",
+        "label": "Robotic Control"
+      },
+      {
+        "id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
+      },
+      {
+        "id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:swarm-robotics",
+        "label": "Swarm Robotics"
+      },
+      {
+        "id": "urn:ngm:class:fleet-management",
+        "label": "Fleet Management"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ground-robot",
+      "label": "Ground Robot"
+    },
+    {
+      "slug": "mobile-robot-platform",
+      "label": "Mobile Robot Platform"
+    },
+    {
+      "slug": "topological-map",
+      "label": "Topological Map"
+    }
+  ]
+}

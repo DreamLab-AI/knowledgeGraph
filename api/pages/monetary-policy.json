@@ -1,0 +1,111 @@
+{
+  "id": "urn:visionflow:page:monetary-policy",
+  "title": "Monetary Policy",
+  "slug": "monetary-policy",
+  "public": true,
+  "classIri": "urn:ngm:class:monetary-policy",
+  "domain": "finance",
+  "definition": "Monetary policy is the set of decisions made by a monetary authority \u2014 traditionally a central bank \u2014 to manage the supply of money, credit conditions, and interest rates in order to achieve macroeconomic objectives such as price stability, full employment, and sustainable growth. In traditional finance it encompasses tools such as open market operations, reserve requirements, and benchmark interest-rate setting. In decentralised systems and blockchain protocols, monetary policy is often encoded algorithmically into protocol rules that govern token emission schedules, inflation rates, halving events, and burn mechanisms, removing discretionary human intervention.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:economic-governance",
+      "label": "Economic Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      },
+      {
+        "id": "urn:ngm:class:economic-mechanism",
+        "label": "Economic Mechanism"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:monetary-policy-transmission",
+        "label": "Monetary Policy Transmission"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      },
+      {
+        "id": "urn:ngm:class:inflation-control",
+        "label": "Inflation Control"
+      },
+      {
+        "id": "urn:ngm:class:economics",
+        "label": "Economics"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-as-money",
+      "label": "Bitcoin As Money"
+    },
+    {
+      "slug": "bitcoin-technical-overview",
+      "label": "Bitcoin Technical Overview"
+    },
+    {
+      "slug": "bitcoin-value-proposition",
+      "label": "Bitcoin Value Proposition"
+    },
+    {
+      "slug": "bitcoin-value-proposition",
+      "label": "Bitcoin Value Proposition"
+    },
+    {
+      "slug": "bitcoin-related-links",
+      "label": "Bitcoin related links"
+    },
+    {
+      "slug": "cbdc-frameworks",
+      "label": "CBDC Frameworks"
+    },
+    {
+      "slug": "cbdcs",
+      "label": "CBDCs"
+    },
+    {
+      "slug": "digital-asset-risks",
+      "label": "Digital Asset Risks"
+    },
+    {
+      "slug": "etsi-domain-governance-economy",
+      "label": "ETSI_Domain_Governance___Economy"
+    },
+    {
+      "slug": "money",
+      "label": "Money"
+    }
+  ]
+}

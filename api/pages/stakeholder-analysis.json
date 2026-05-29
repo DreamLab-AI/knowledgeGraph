@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:stakeholder-analysis",
+  "title": "Stakeholder Analysis",
+  "slug": "stakeholder-analysis",
+  "public": true,
+  "classIri": "urn:ngm:class:stakeholder-analysis",
+  "domain": "governance",
+  "definition": "Stakeholder analysis is a systematic methodology for identifying, mapping, and evaluating the individuals, groups, and organisations that have an interest in\u2014or are affected by\u2014a system, project, or policy, assessing their interests, power, influence, and potential impact on outcomes. It is a foundational practice in requirements engineering, impact assessment, governance design, and change management, enabling decision-makers to anticipate conflicts, prioritise engagement, and design participation mechanisms that are inclusive and legitimate. In AI and technology contexts, stakeholder analysis extends to affected communities who may not self-identify or organise, requiring proactive identification of indirect and diffuse impacts.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:stakeholder",
+      "label": "Stakeholder"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-impact-assessment",
+        "label": "AI Impact Assessment"
+      },
+      {
+        "id": "urn:ngm:class:privacy-impact-assessment",
+        "label": "Privacy Impact Assessment"
+      },
+      {
+        "id": "urn:ngm:class:stakeholder-engagement-in-ai",
+        "label": "Stakeholder Engagement in AI"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:participatory-policy-making",
+        "label": "Participatory Policy Making"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:stakeholder-engagement",
+        "label": "Stakeholder Engagement"
+      },
+      {
+        "id": "urn:ngm:class:stakeholder-trust",
+        "label": "Stakeholder Trust"
+      },
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "product-design",
+      "label": "Product Design"
+    },
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    },
+    {
+      "slug": "social-impact-assessment-sia",
+      "label": "Social Impact Assessment (SIA)"
+    }
+  ]
+}

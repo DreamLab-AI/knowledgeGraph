@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:stability-analysis",
+  "title": "Stability Analysis",
+  "slug": "stability-analysis",
+  "public": true,
+  "classIri": "urn:ngm:class:stability-analysis",
+  "domain": "science",
+  "definition": "Stability analysis is the systematic mathematical investigation of whether a dynamical system \u2014 physical, computational, financial, or ecological \u2014 will remain bounded, return to equilibrium, or diverge when subjected to perturbations from an operating point. Classical techniques include Lyapunov stability theory, eigenvalue analysis of linearised systems, Bode and Nyquist frequency-domain methods, and Floquet theory for periodic systems. In AI, stability analysis extends to training dynamics, gradient flow, and the behaviour of neural networks under input distribution shifts.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:control-theory",
+      "label": "Control Theory"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-predictive-control",
+        "label": "Model Predictive Control"
+      },
+      {
+        "id": "urn:ngm:class:robotic-control",
+        "label": "Robotic Control"
+      },
+      {
+        "id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:optimization-algorithm",
+        "label": "Optimization Algorithm"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      },
+      {
+        "id": "urn:ngm:class:training-instability",
+        "label": "Training Instability"
+      },
+      {
+        "id": "urn:ngm:class:robot-dynamics",
+        "label": "Robot Dynamics"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "control-algorithm",
+      "label": "Control Algorithm"
+    },
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "slug": "velocity-control",
+      "label": "VelocityControl"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+- ### Definition
+  - [[Message Signing]] is a [[Cryptographic Protocol]] in which a sender applies a [[Digital Signature]] over a message using a [[Private Key]], enabling recipients to verify authorship and detect tampering via the corresponding [[Public Key Infrastructure]].
+
+- ### Relationships
+  - Message signing relies on [[ECDSA]] or other [[Signature Scheme]] algorithms together with [[Public-Key Cryptography]] to produce unforgeable proofs of origin. It directly enables [[Authentication]] and [[Cryptographic Verification]] workflows. The [[secp256k1]] elliptic curve, widely used in blockchain networks, underpins message signing in [[Smart Contract]] transaction flows. A [[Cryptographic Hash Function]] is typically applied to the message before signing to produce a fixed-length digest.
+
+- ### Content
+  - Message signing emerged from the public-key cryptography work of Diffie, Hellman, Rivest, Shamir, and Adleman in the 1970s and 1980s. Early applications included PGP email signing and X.509-based certificate chains. The technique became central to internet infrastructure when TLS handshakes adopted certificate-based server authentication, and it later became the primitive upon which blockchain identity and transaction authorisation were built.
+
+  - The process involves three steps: first, a cryptographic hash of the message is computed (typically using SHA-256 or equivalent); second, the private key holder signs the digest using an asymmetric algorithm such as ECDSA or EdDSA; and third, the resulting signature is attached to or transmitted alongside the message. Verification inverts the process: the verifier recomputes the hash and checks the signature against the signer's public key using the signing algorithm's verification function, without ever seeing the private key.
+
+  - Message signing is the mechanism by which blockchain wallets authorise transactions, proving ownership of a private key without revealing it. It also underpins SSH authentication, code-signing pipelines, JWT token authenticity, and decentralised identity (DID) document ownership proofs. In multi-party computation and threshold signature schemes, signing authority can be distributed across multiple parties so no single holder holds a complete key.
+
+  - As of 2024-2025, post-quantum cryptography standards (NIST FIPS 204, ML-DSA) are redefining signing algorithm choices to resist lattice and other quantum attacks. Threshold signature schemes combining ECDSA with multi-party computation are gaining adoption in custody and governance protocols. Hardware security modules and secure enclaves increasingly handle signing operations to prevent key exfiltration, and key delegation frameworks are emerging to allow granular, time-limited signing authority in enterprise and agent-based systems.

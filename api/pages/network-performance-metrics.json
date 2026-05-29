@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:network-performance-metrics",
+  "title": "Network Performance Metrics",
+  "slug": "network-performance-metrics",
+  "public": true,
+  "classIri": "urn:ngm:class:network-performance-metrics",
+  "domain": "infrastructure",
+  "definition": "Network Performance Metrics are quantitative measures used to characterise the operational quality of a communication network, encompassing latency, throughput, packet loss rate, jitter, and availability. These metrics are collected continuously from network devices, links, and endpoints to support quality-of-service enforcement, capacity planning, fault detection, and SLA compliance verification. They underpin all layers of network management from physical links to application-level experience.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:quality-of-service",
+      "label": "Quality Of Service"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:latency-aware-edge-ai",
+        "label": "Latency-Aware Edge AI"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:real-time-monitoring",
+        "label": "Real-Time Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:latency-management-protocol",
+        "label": "Latency Management Protocol"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "id": "urn:ngm:class:bandwidth-adaptation",
+        "label": "Bandwidth Adaptation"
+      },
+      {
+        "id": "urn:ngm:class:internet-infrastructure",
+        "label": "Internet Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "edge-orchestration",
+      "label": "Edge Orchestration"
+    },
+    {
+      "slug": "latency-management-protocol",
+      "label": "Latency Management Protocol"
+    },
+    {
+      "slug": "latency",
+      "label": "Latency"
+    }
+  ]
+}

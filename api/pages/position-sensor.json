@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:position-sensor",
+  "title": "Position Sensor",
+  "slug": "position-sensor",
+  "public": true,
+  "classIri": "urn:ngm:class:position-sensor",
+  "domain": "robotics",
+  "definition": "A position sensor is a transducer that measures the displacement, angle, or spatial location of an object or joint relative to a reference frame, converting mechanical position into an electrical signal suitable for control system feedback. Position sensors are fundamental to closed-loop robotic and mechatronic systems, enabling precise joint control, end-effector placement, and localisation. They span a wide range of physical measurement principles including optical encoding, magnetic hall-effect sensing, capacitive displacement, and inductive resolver techniques.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sensor",
+      "label": "Sensor"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:localization",
+        "label": "Localization"
+      },
+      {
+        "id": "urn:ngm:class:robot-manipulation",
+        "label": "Robot Manipulation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:robot-kinematics",
+        "label": "Robot Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:robotic-control",
+        "label": "Robotic Control"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:encoder",
+        "label": "Encoder"
+      },
+      {
+        "id": "urn:ngm:class:rotary-encoder",
+        "label": "Rotary Encoder"
+      },
+      {
+        "id": "urn:ngm:class:linear-encoder",
+        "label": "Linear Encoder"
+      },
+      {
+        "id": "urn:ngm:class:proprioceptive-sensor",
+        "label": "Proprioceptive Sensor"
+      },
+      {
+        "id": "urn:ngm:class:imu",
+        "label": "IMU"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "hydraulic-actuator",
+      "label": "Hydraulic Actuator"
+    },
+    {
+      "slug": "pneumatic-actuator",
+      "label": "Pneumatic Actuator"
+    },
+    {
+      "slug": "position-control",
+      "label": "PositionControl"
+    }
+  ]
+}

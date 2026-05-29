@@ -1,0 +1,79 @@
+{
+  "id": "urn:visionflow:page:multihash",
+  "title": "Multihash",
+  "slug": "multihash",
+  "public": true,
+  "classIri": "urn:ngm:class:multihash",
+  "domain": "infrastructure",
+  "definition": "Multihash is a self-describing hash format developed by Protocol Labs in which the hash digest is prefixed with a varint-encoded function code and digest length, enabling consumers to identify the hash algorithm without out-of-band knowledge. It is a foundational component of the IPFS content-addressing stack and the Multiformat suite, providing algorithm agility so that systems can upgrade from SHA-256 to SHA3 or BLAKE3 without breaking existing identifiers. Any hash function can be registered in the Multihash table and the format is codec-neutral.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptographic-hash",
+      "label": "Cryptographic Hash"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:content-addressed-storage",
+        "label": "Content-Addressed Storage"
+      },
+      {
+        "id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:binary-encoding",
+        "label": "Binary Encoding"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:cryptographic-verification",
+        "label": "Cryptographic Verification"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:content-addressing",
+        "label": "Content Addressing"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    },
+    {
+      "slug": "decentralised-file-storage",
+      "label": "Decentralised file storage"
+    },
+    {
+      "slug": "decentralized-identifiers",
+      "label": "Decentralized Identifiers"
+    }
+  ]
+}

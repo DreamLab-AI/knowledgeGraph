@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:policy-framework",
+  "title": "Policy Framework",
+  "slug": "policy-framework",
+  "public": true,
+  "classIri": "urn:ngm:class:policy-framework",
+  "domain": "governance",
+  "definition": "A policy framework is a structured set of principles, rules, standards, and processes established by a government body, standards organisation, or institution to guide decision-making, regulate behaviour, and ensure accountability within a defined domain. It translates high-level objectives \u2014 such as safety, fairness, or interoperability \u2014 into operational requirements and compliance mechanisms. Policy frameworks provide the normative scaffolding that enables coordinated action across organisations and jurisdictions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:compliance-framework",
+      "label": "Compliance Framework"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-accountability",
+        "label": "AI Accountability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:nist",
+        "label": "NIST"
+      },
+      {
+        "id": "urn:ngm:class:iso-standards",
+        "label": "ISO Standards"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-governance-framework",
+      "label": "AI Governance Framework"
+    },
+    {
+      "slug": "compliance-control",
+      "label": "Compliance Control"
+    },
+    {
+      "slug": "governance-model",
+      "label": "Governance Model"
+    },
+    {
+      "slug": "trust-framework",
+      "label": "Trust Framework"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "id": "urn:visionflow:page:message-passing",
+  "title": "Message Passing",
+  "slug": "message-passing",
+  "public": true,
+  "classIri": "urn:ngm:class:message-passing",
+  "domain": "infrastructure",
+  "definition": "Message passing is a paradigm for inter-process and inter-component communication in which discrete, self-contained messages are sent between processes, objects, or distributed nodes rather than using shared memory. It underlies actor-model concurrency, microservice architectures, and distributed systems, providing loose coupling, location transparency, and inherent support for asynchronous execution. Messages can be delivered synchronously (blocking) or asynchronously (non-blocking), and may traverse in-process channels, message queues, or network transports.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:communication-protocol",
+      "label": "Communication Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:message-queue",
+        "label": "Message Queue"
+      },
+      {
+        "id": "urn:ngm:class:middleware",
+        "label": "Middleware"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:distributed-architecture",
+        "label": "Distributed Architecture"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:asynchronous-communication",
+        "label": "Asynchronous Communication"
+      },
+      {
+        "id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      },
+      {
+        "id": "urn:ngm:class:inter-agent-communication",
+        "label": "Inter-Agent Communication"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "distributed-computing",
+      "label": "Distributed Computing"
+    },
+    {
+      "slug": "probabilistic-model",
+      "label": "Probabilistic Model"
+    },
+    {
+      "slug": "relayer",
+      "label": "Relayer"
+    }
+  ]
+}

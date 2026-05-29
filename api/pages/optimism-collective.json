@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:optimism-collective",
+  "title": "Optimism Collective",
+  "slug": "optimism-collective",
+  "public": true,
+  "classIri": "urn:ngm:class:optimism-collective",
+  "domain": "blockchain",
+  "definition": "The Optimism Collective is a two-house governance body overseeing the Optimism ecosystem \u2014 a suite of Ethereum Layer 2 networks built on the OP Stack rollup technology \u2014 consisting of the Token House (OP token holders who vote on protocol upgrades and treasury allocations) and the Citizens' House (non-transferable badge holders who allocate Retroactive Public Goods Funding). It represents one of the most sophisticated real-world experiments in bicameral on-chain governance, designed to balance token-weighted economic interests with broader societal value creation and public goods provision.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dao-governance",
+      "label": "DAO Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:dao",
+        "label": "DAO"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-governance",
+        "label": "Decentralized Governance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "id": "urn:ngm:class:voting-mechanism",
+        "label": "Voting Mechanism"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-governance",
+        "label": "On-chain Governance"
+      },
+      {
+        "id": "urn:ngm:class:collective-decision-making",
+        "label": "Collective Decision Making"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "dao-analytics",
+      "label": "DAO Analytics"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "quadratic-voting",
+      "label": "Quadratic Voting"
+    },
+    {
+      "slug": "snapshot-voting",
+      "label": "Snapshot Voting"
+    }
+  ]
+}

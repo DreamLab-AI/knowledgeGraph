@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:mapping",
+  "title": "Mapping",
+  "slug": "mapping",
+  "public": true,
+  "classIri": "urn:ngm:class:mapping",
+  "domain": "ai",
+  "definition": "Mapping is the process of creating structured correspondences between two or more domains, spaces, or data representations \u2014 including cartographic, semantic, and data-schema contexts. In spatial computing it denotes the construction of environment models; in knowledge engineering it describes the alignment of ontologies, schemas, or concept hierarchies; in AI it encompasses learned transformations between input and output spaces. Mapping is foundational to navigation, data integration, and cross-domain reasoning.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:knowledge-graph",
+      "label": "Knowledge Graph"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph-construction",
+        "label": "Knowledge Graph Construction"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "id": "urn:ngm:class:localization",
+        "label": "Localization"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "id": "urn:ngm:class:spatial-mapping",
+        "label": "Spatial Mapping"
+      },
+      {
+        "id": "urn:ngm:class:geospatial-technology",
+        "label": "Geospatial Technology"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "exteroceptive-sensor",
+      "label": "Exteroceptive Sensor"
+    },
+    {
+      "slug": "navigation",
+      "label": "Navigation"
+    },
+    {
+      "slug": "path-planning",
+      "label": "Path Planning"
+    },
+    {
+      "slug": "slam",
+      "label": "SLAM"
+    }
+  ]
+}

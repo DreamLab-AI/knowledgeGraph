@@ -1,0 +1,83 @@
+{
+  "id": "urn:visionflow:page:open-telemetry",
+  "title": "OpenTelemetry",
+  "slug": "open-telemetry",
+  "public": true,
+  "classIri": "urn:ngm:class:open-telemetry",
+  "domain": "infrastructure",
+  "definition": "OpenTelemetry (OTel) is a vendor-neutral open-source observability framework and CNCF project that provides unified APIs, SDKs, agents, and wire protocols for collecting distributed traces, metrics, and logs from software systems. It merges the OpenTracing and OpenCensus projects into a single standardised instrumentation layer, enabling consistent telemetry data collection regardless of the backend analysis platform. OpenTelemetry's OpenTelemetry Protocol (OTLP) has become the de-facto standard for telemetry data transport in cloud-native environments.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:monitoring-system",
+      "label": "Monitoring System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "id": "urn:ngm:class:cloud-native-applications",
+        "label": "Cloud-Native Applications"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:api-standard",
+        "label": "API Standard"
+      },
+      {
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:real-time-monitoring",
+        "label": "Real-Time Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:performance-metrics",
+        "label": "Performance Metrics"
+      },
+      {
+        "id": "urn:ngm:class:monitoring-dashboard",
+        "label": "Monitoring Dashboard"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "api-gateway",
+      "label": "API Gateway"
+    },
+    {
+      "slug": "cli-multi-agent-systems",
+      "label": "CLI Multi-Agent Systems"
+    },
+    {
+      "slug": "distributed-computing",
+      "label": "Distributed Computing"
+    }
+  ]
+}

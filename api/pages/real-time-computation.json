@@ -1,0 +1,87 @@
+{
+  "id": "urn:visionflow:page:real-time-computation",
+  "title": "Real-Time Computation",
+  "slug": "real-time-computation",
+  "public": true,
+  "classIri": "urn:ngm:class:real-time-computation",
+  "domain": "infrastructure",
+  "definition": "Real-time computation refers to computational processes that must produce correct outputs within specified, externally imposed time constraints\u2014where the correctness of a result depends not only on its logical accuracy but on its delivery before a deadline. Hard real-time systems guarantee deadline satisfaction under all conditions, soft real-time systems tolerate occasional deadline misses, and firm real-time systems discard late results as worthless. Applications span industrial control, autonomous vehicles, robotics, financial trading, and interactive media. Real-time computation requires deterministic execution paths, bounded memory allocation, and often specialised hardware or operating system schedulers.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:real-time",
+      "label": "Real Time"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:parallel-processing",
+        "label": "Parallel Processing"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:digital-signal-processing",
+        "label": "Digital Signal Processing"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:real-time-ai",
+        "label": "Real-Time AI"
+      },
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "control-system",
+      "label": "Control System"
+    },
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "slug": "force-control",
+      "label": "Force Control"
+    }
+  ]
+}

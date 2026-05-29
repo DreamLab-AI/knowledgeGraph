@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:project-management",
+  "title": "Project Management",
+  "slug": "project-management",
+  "public": true,
+  "classIri": "urn:ngm:class:project-management",
+  "domain": "governance",
+  "definition": "Project Management is the disciplined application of knowledge, skills, tools, and techniques to project activities in order to meet defined requirements within constraints of scope, time, cost, and quality. It encompasses initiation, planning, execution, monitoring and control, and closure phases, employing methodologies ranging from waterfall and PRINCE2 to agile frameworks such as Scrum and Kanban, and supporting the delivery of technology, construction, research, and organisational change initiatives.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:resource-management",
+        "label": "Resource Management"
+      },
+      {
+        "id": "urn:ngm:class:stakeholder-engagement",
+        "label": "Stakeholder Engagement"
+      },
+      {
+        "id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:software-development",
+        "label": "Software Development"
+      },
+      {
+        "id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:collaboration",
+        "label": "Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:software-development-process",
+        "label": "Software Development Process"
+      },
+      {
+        "id": "urn:ngm:class:change-management",
+        "label": "Change Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "collaborative-whiteboard",
+      "label": "Collaborative Whiteboard"
+    },
+    {
+      "slug": "digital-workplace-platform",
+      "label": "Digital Workplace Platform"
+    },
+    {
+      "slug": "meeting-ai-assistant",
+      "label": "Meeting AI Assistant"
+    },
+    {
+      "slug": "prompt-tuning",
+      "label": "Prompt Tuning"
+    },
+    {
+      "slug": "virtual-stand-up",
+      "label": "virtual-stand-up"
+    }
+  ]
+}

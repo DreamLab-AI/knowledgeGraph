@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:surgical-navigation",
+  "title": "Surgical Navigation",
+  "slug": "surgical-navigation",
+  "public": true,
+  "classIri": "urn:ngm:class:surgical-navigation",
+  "domain": "robotics",
+  "definition": "Surgical Navigation is the intraoperative technology and methodology that provides surgeons with real-time spatial guidance by registering preoperative imaging data (CT, MRI) with the patient's anatomy and continuously tracking the position of surgical instruments relative to that registered model. It is analogous to GPS navigation but for the operating room, enabling submillimetre accuracy in procedures where anatomical landmarks are obscured, such as orthopaedic, neurosurgery, and spinal operations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:navigation-system",
+      "label": "Navigation System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:medical-imaging",
+        "label": "Medical Imaging"
+      },
+      {
+        "id": "urn:ngm:class:tracking-system",
+        "label": "Tracking System"
+      },
+      {
+        "id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:precision-medicine",
+        "label": "Precision Medicine"
+      },
+      {
+        "id": "urn:ngm:class:healthcare-ai",
+        "label": "Healthcare AI"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:surgical-robotics",
+        "label": "Surgical Robotics"
+      },
+      {
+        "id": "urn:ngm:class:surgical-robot",
+        "label": "Surgical Robot"
+      },
+      {
+        "id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ar-frame",
+      "label": "AR Frame"
+    },
+    {
+      "slug": "mixed-reality",
+      "label": "Mixed Reality"
+    },
+    {
+      "slug": "scene-capture-and-reconstruction",
+      "label": "Scene Capture and Reconstruction"
+    }
+  ]
+}

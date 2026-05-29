@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:supply-chain-visibility",
+  "title": "Supply Chain Visibility",
+  "slug": "supply-chain-visibility",
+  "public": true,
+  "classIri": "urn:ngm:class:supply-chain-visibility",
+  "domain": "infrastructure",
+  "definition": "Supply chain visibility is the capability to track, monitor, and share accurate, real-time information about the location, status, and condition of goods, components, and materials as they move through a supply network from raw material sourcing through production, distribution, and delivery to end customers. It requires integration of data from disparate logistics systems, IoT sensors, carrier APIs, and ERP platforms, and provides the situational awareness needed for proactive disruption management, regulatory compliance, and demand-driven inventory optimisation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supply-chain-management",
+      "label": "Supply Chain Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:supply-chain-provenance",
+        "label": "Supply Chain Provenance"
+      },
+      {
+        "id": "urn:ngm:class:cold-chain-monitoring",
+        "label": "Cold Chain Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:supply-chain-traceability",
+        "label": "Supply Chain Traceability"
+      },
+      {
+        "id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      },
+      {
+        "id": "urn:ngm:class:logistics-optimization",
+        "label": "Logistics Optimization"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-blockchain",
+        "label": "Supply Chain Blockchain"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "graph-database",
+      "label": "Graph Database"
+    },
+    {
+      "slug": "io-t-sensor-network",
+      "label": "IoT Sensor Network"
+    },
+    {
+      "slug": "logistics-optimization",
+      "label": "Logistics Optimization"
+    }
+  ]
+}

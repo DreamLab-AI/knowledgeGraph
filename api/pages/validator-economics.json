@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:validator-economics",
+  "title": "Validator Economics",
+  "slug": "validator-economics",
+  "public": true,
+  "classIri": "urn:ngm:class:validator-economics",
+  "domain": "blockchain",
+  "definition": "Validator economics describes the incentive structures, cost-reward equilibria, and rational behaviour models governing participants who operate validator nodes in proof-of-stake and delegated consensus blockchain networks. It encompasses staking rewards (block rewards, transaction fees, MEV capture), slashing penalties for Byzantine behaviour (double-signing, downtime), the competitive market for delegated stake, operational costs (hardware, bandwidth, maintenance), and the resulting equilibrium between security budget, validator profitability, and network decentralisation. Well-designed validator economics align individual rational self-interest with network security and liveness.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain-economics",
+      "label": "Blockchain Economics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:finality",
+        "label": "Finality"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-governance",
+        "label": "Decentralized Governance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:block-reward",
+        "label": "Block Reward"
+      },
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:validator-node",
+        "label": "Validator Node"
+      },
+      {
+        "id": "urn:ngm:class:validator-set",
+        "label": "Validator Set"
+      },
+      {
+        "id": "urn:ngm:class:delegated-proof-of-stake",
+        "label": "Delegated Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      },
+      {
+        "id": "urn:ngm:class:incentive-alignment",
+        "label": "Incentive Alignment"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "sustainable-consensus",
+      "label": "Sustainable Consensus"
+    },
+    {
+      "slug": "testnet",
+      "label": "Testnet"
+    }
+  ]
+}

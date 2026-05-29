@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:virtual-environment-design",
+  "title": "Virtual Environment Design",
+  "slug": "virtual-environment-design",
+  "public": true,
+  "classIri": "urn:ngm:class:virtual-environment-design",
+  "domain": "graphics",
+  "definition": "Virtual Environment Design is the multidisciplinary practice of creating the spatial, visual, auditory, and interactive properties of computer-generated environments intended for exploration or habitation through virtual reality, augmented reality, or mixed reality systems. It integrates principles from architecture, industrial design, game design, cognitive psychology, and human-computer interaction to produce environments that are usable, compelling, and safe, balancing perceptual fidelity, performance constraints, and the unique ergonomics of immersive display hardware.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:virtual-environment-creation",
+      "label": "Virtual Environment Creation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "id": "urn:ngm:class:virtual-world-building",
+        "label": "Virtual World Building"
+      },
+      {
+        "id": "urn:ngm:class:immersive-learning",
+        "label": "Immersive Learning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "id": "urn:ngm:class:scene-graph",
+        "label": "Scene Graph"
+      },
+      {
+        "id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      },
+      {
+        "id": "urn:ngm:class:asset-pipeline",
+        "label": "Asset Pipeline"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:interaction-design",
+        "label": "Interaction Design"
+      },
+      {
+        "id": "urn:ngm:class:world-building",
+        "label": "World Building"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "3-d-development",
+      "label": "3D Development"
+    },
+    {
+      "slug": "3-d-model",
+      "label": "3D Model"
+    },
+    {
+      "slug": "3-d-modeling",
+      "label": "3D Modeling"
+    }
+  ]
+}

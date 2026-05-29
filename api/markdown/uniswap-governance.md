@@ -1,0 +1,14 @@
+- ### Definition
+  - [[Uniswap Governance]] is the formal decision-making system through which [[Governance Token]] (UNI) holders control protocol parameters, treasury disbursements, and network deployments of the [[Uniswap]] [[Automated Market Maker]], executing binding changes via the [[Compound Governor Bravo]] contract with quorum requirements and timelock delays.
+
+- ### Relationships
+  - Uniswap Governance uses [[Governance Token]] delegation to enable liquid democracy, relies on [[Snapshot Voting]] for gas-free off-chain temperature checks before committing proposals on-chain, is modelled on [[Compound Governor Bravo]] smart contract infrastructure, and governs the fee switch and liquidity parameters of the [[Decentralized Exchange (DEX)]] and its [[Concentrated Liquidity]] pools — making it a reference implementation for [[DAO Governance]] across the DeFi ecosystem.
+
+- ### Content
+  - Uniswap launched its UNI governance token in September 2020 through a retroactive airdrop that distributed tokens to historical users of the protocol, establishing one of the largest governance token distributions in DeFi history. The initial governance framework adopted the Compound Governor Alpha and subsequently Governor Bravo pattern, giving UNI holders binding on-chain control over a treasury initially holding approximately 43% of the total UNI supply.
+
+  - The governance lifecycle proceeds through several phases. A proposal author first submits to the community forum for discussion, then creates a Snapshot off-chain vote for low-cost temperature checking. If community support is confirmed, a formal on-chain proposal is submitted requiring 2.5 million UNI in delegated voting power for submission threshold. A 3-day voting period follows, requiring 40 million UNI quorum for passing; successful proposals enter a 2-day timelock before execution.
+
+  - Key governance decisions have included the activation of the protocol fee mechanism (directing a share of swap fees to the treasury), deployment of Uniswap v3 to Layer-2 networks including Optimism, Arbitrum, and Polygon, grant allocations through the Uniswap Grants Program, and selection of the Uniswap Foundation as a formal stewardship body. The protocol's fee switch governance debates became a landmark case study in the challenges of balancing liquidity provider incentives against token holder interests.
+
+  - In 2024-2025, Uniswap v4's introduction of hooks — custom smart contract logic injected into pool lifecycle events — expanded the governance surface area to include hook whitelisting. The Uniswap Foundation has moved toward a more structured governance process with dedicated governance facilitators and working groups. Cross-chain governance coordination, allowing UNI holders on multiple networks to participate in decisions affecting deployments across chains, remains an active area of development in the broader DAO tooling ecosystem.

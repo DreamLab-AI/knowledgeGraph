@@ -1,0 +1,87 @@
+{
+  "id": "urn:visionflow:page:rights-protection",
+  "title": "Rights Protection",
+  "slug": "rights-protection",
+  "public": true,
+  "classIri": "urn:ngm:class:rights-protection",
+  "domain": "governance",
+  "definition": "Rights protection encompasses the institutional, legal, and technical mechanisms through which individual and collective entitlements\u2014civil liberties, digital rights, property rights, privacy rights, and human rights\u2014are identified, defended, and remedied when violated. It spans constitutional and statutory safeguards, judicial and administrative enforcement, technical privacy-by-design measures, and advocacy infrastructure. In digital and AI contexts, rights protection addresses algorithmic discrimination, surveillance overreach, automated decision-making without human review, and the erosion of informational self-determination. Effective rights protection requires both upstream prevention and downstream accountability pathways.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:human-rights",
+      "label": "Human Rights"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:consumer-protection",
+        "label": "Consumer Protection"
+      },
+      {
+        "id": "urn:ngm:class:participant-protection",
+        "label": "Participant Protection"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:enforcement-mechanism",
+        "label": "Enforcement Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy By Design"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:legal-framework",
+        "label": "Legal Framework"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-rights",
+        "label": "Digital Rights"
+      },
+      {
+        "id": "urn:ngm:class:privacy-protection",
+        "label": "Privacy Protection"
+      },
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "digital-constitution",
+      "label": "Digital Constitution"
+    },
+    {
+      "slug": "ethics-and-law-layer",
+      "label": "Ethics & Law Layer"
+    },
+    {
+      "slug": "legal-framework",
+      "label": "Legal Framework"
+    }
+  ]
+}

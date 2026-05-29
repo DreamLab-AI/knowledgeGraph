@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:mas",
+  "title": "MAS",
+  "slug": "mas",
+  "public": true,
+  "classIri": "urn:ngm:class:mas",
+  "domain": "ai",
+  "definition": "A Multi-Agent System (MAS) is a computational framework composed of multiple interacting autonomous agents that perceive their environment and act to achieve individual or collective goals. Each agent in the system possesses local knowledge, reasoning capabilities, and the ability to communicate with peers, enabling emergent collective intelligence without centralised control. MAS architectures address problems that are too complex, distributed, or dynamic for monolithic solutions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-agent-system",
+      "label": "AI Agent System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralized-swarm-control",
+        "label": "Decentralized Swarm Control"
+      },
+      {
+        "id": "urn:ngm:class:participant-coordination",
+        "label": "Participant Coordination"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "id": "urn:ngm:class:swarm-robotics",
+        "label": "Swarm Robotics"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    },
+    {
+      "slug": "cross-border-compliance",
+      "label": "Cross Border Compliance"
+    },
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    },
+    {
+      "slug": "licensing-requirements",
+      "label": "Licensing Requirements"
+    },
+    {
+      "slug": "regulatory-reporting",
+      "label": "Regulatory Reporting"
+    },
+    {
+      "slug": "stablecoin-regulation",
+      "label": "Stablecoin Regulation"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

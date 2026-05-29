@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:tls",
+  "title": "TLS",
+  "slug": "tls",
+  "public": true,
+  "classIri": "urn:ngm:class:tls",
+  "domain": "security",
+  "definition": "Transport Layer Security (TLS) is a cryptographic protocol standardised by the IETF that provides authenticated, confidential, and integrity-protected communication channels over any reliable transport, most commonly TCP. TLS 1.3 (RFC 8446, 2018) is the current version, achieving a one-round-trip handshake that establishes a shared session key using Diffie-Hellman key exchange and authenticates the server via a certificate chain rooted in a trusted Certificate Authority. TLS is the security foundation of HTTPS, gRPC, SMTP, MQTT, and virtually every application-layer protocol requiring channel security.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptographic-protocol",
+      "label": "Cryptographic Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      },
+      {
+        "id": "urn:ngm:class:tls-encryption",
+        "label": "TLS Encryption"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      },
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:cryptographic-security",
+        "label": "Cryptographic Security"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "id": "urn:ngm:class:digital-certificate",
+        "label": "Digital Certificate"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "api-gateway",
+      "label": "API Gateway"
+    },
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "blockchain-oracle",
+      "label": "Blockchain Oracle"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "slug": "hash-function",
+      "label": "Hash Function"
+    },
+    {
+      "slug": "io-t-sensor-network",
+      "label": "IoT Sensor Network"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

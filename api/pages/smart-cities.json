@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:smart-cities",
+  "title": "Smart Cities",
+  "slug": "smart-cities",
+  "public": true,
+  "classIri": "urn:ngm:class:smart-cities",
+  "domain": "infrastructure",
+  "definition": "Smart Cities are urban environments that integrate digital technologies, data analytics, Internet of Things infrastructure, and connectivity to optimise the delivery of public services, improve quality of life, increase operational efficiency, and advance sustainability goals. They instrumentalise physical infrastructure \u2014 transport networks, utilities, buildings, and public spaces \u2014 with sensors and actuators connected through communication networks, and apply data-driven decision-making to city operations, planning, and citizen engagement.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-twin-of-society-dto-s",
+      "label": "Digital Twin of Society (DToS)"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:sustainable-development",
+        "label": "Sustainable Development"
+      },
+      {
+        "id": "urn:ngm:class:smart-grid",
+        "label": "Smart Grid"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:edge-ai-for-smart-cities",
+        "label": "Edge AI for Smart Cities"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:liverpool-smart-cities",
+        "label": "Liverpool Smart Cities"
+      },
+      {
+        "id": "urn:ngm:class:real-time-monitoring",
+        "label": "Real-Time Monitoring"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "convergence",
+      "label": "Convergence"
+    },
+    {
+      "slug": "io-t-sensors",
+      "label": "Io T Sensors"
+    },
+    {
+      "slug": "io-t-sensor-network",
+      "label": "IoT Sensor Network"
+    },
+    {
+      "slug": "perception-system",
+      "label": "Perception System"
+    },
+    {
+      "slug": "physical-layer",
+      "label": "Physical Layer"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

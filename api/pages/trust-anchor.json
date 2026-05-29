@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:trust-anchor",
+  "title": "Trust Anchor",
+  "slug": "trust-anchor",
+  "public": true,
+  "classIri": "urn:ngm:class:trust-anchor",
+  "domain": "security",
+  "definition": "A trust anchor is an authoritative entity or cryptographic artifact that serves as the root of a chain of trust, providing the foundational level of trust from which all subsequent trust assertions in a system are derived. In public key infrastructure (PKI), the trust anchor is typically a root certificate authority (CA) whose self-signed certificate is pre-installed in operating systems and browsers as inherently trusted, enabling the validation of all subordinate certificate chains. In decentralised identity systems, trust anchors may be governance-designated issuers, DID-based root entities, or on-chain registries whose cryptographic material is considered authoritative for a particular trust domain. Trust anchors define the scope and boundaries of a trust framework and are the entities that must be trusted by all relying parties in the system.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:trust-framework",
+      "label": "Trust Framework"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralized-identity",
+        "label": "Decentralized Identity"
+      },
+      {
+        "id": "urn:ngm:class:identity-federation",
+        "label": "Identity Federation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-keys",
+        "label": "Cryptographic Keys"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      },
+      {
+        "id": "urn:ngm:class:digital-certificate",
+        "label": "Digital Certificate"
+      },
+      {
+        "id": "urn:ngm:class:trust-framework-policy",
+        "label": "Trust Framework Policy"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-verification",
+        "label": "Cryptographic Verification"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "reputation-system",
+      "label": "Reputation System"
+    },
+    {
+      "slug": "trust-framework-policy",
+      "label": "Trust Framework Policy"
+    },
+    {
+      "slug": "trust-framework",
+      "label": "Trust Framework"
+    }
+  ]
+}

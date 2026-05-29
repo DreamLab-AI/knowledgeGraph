@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:network-slicing",
+  "title": "Network Slicing",
+  "slug": "network-slicing",
+  "public": true,
+  "classIri": "urn:ngm:class:network-slicing",
+  "domain": "infrastructure",
+  "definition": "Network slicing is a virtualisation architecture that partitions a single physical network infrastructure into multiple isolated, logically independent virtual networks \u2014 called slices \u2014 each configured to provide the specific performance characteristics, security posture, and service topology required by a distinct application or tenant. Defined within 3GPP Release 15 and later releases for 5G networks, each slice is instantiated through software-defined networking and network function virtualisation, enabling differentiated service-level guarantees \u2014 such as ultra-low latency for industrial automation or high-throughput for video streaming \u2014 without dedicated physical hardware. Slices span radio access, transport, and core network domains and can be dynamically provisioned, scaled, and torn down.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:network-function-virtualization",
+      "label": "Network Function Virtualization"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:quality-of-service",
+        "label": "Quality Of Service"
+      },
+      {
+        "id": "urn:ngm:class:guaranteed-bandwidth",
+        "label": "Guaranteed Bandwidth"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:edge-computing-architecture",
+        "label": "Edge Computing Architecture"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:6-g-network-slice",
+        "label": "6G Network Slice"
+      },
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bandwidth-adaptation",
+      "label": "Bandwidth Adaptation"
+    },
+    {
+      "slug": "etsi-domain-infrastructure-immersive",
+      "label": "ETSI_Domain_Infrastructure___Immersive"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

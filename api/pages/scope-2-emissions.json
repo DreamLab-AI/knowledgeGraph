@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:scope-2-emissions",
+  "title": "Scope 2 Emissions",
+  "slug": "scope-2-emissions",
+  "public": true,
+  "classIri": "urn:ngm:class:scope-2-emissions",
+  "domain": "infrastructure",
+  "definition": "Scope 2 Emissions are the indirect greenhouse gas emissions attributable to an organisation arising from the generation of purchased or acquired electricity, steam, heat, or cooling consumed in its operations, as defined by the GHG Protocol Corporate Standard. Although the physical emissions occur at the power plant or thermal facility, they are accounted for by the purchasing organisation because its demand drives that generation, making Scope 2 the primary decarbonisation lever for energy-intensive organisations such as data centres and manufacturers.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:environmental-sustainability",
+      "label": "Environmental Sustainability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:carbon-neutrality-planning",
+        "label": "Carbon Neutrality Planning"
+      },
+      {
+        "id": "urn:ngm:class:carbon-neutrality-verification",
+        "label": "Carbon Neutrality Verification"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:renewable-energy-certificates",
+        "label": "Renewable Energy Certificates"
+      },
+      {
+        "id": "urn:ngm:class:renewable-energy",
+        "label": "Renewable Energy"
+      },
+      {
+        "id": "urn:ngm:class:sustainability-reporting",
+        "label": "Sustainability Reporting"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:scope-1-emissions",
+        "label": "Scope 1 Emissions"
+      },
+      {
+        "id": "urn:ngm:class:scope-3-emissions",
+        "label": "Scope 3 Emissions"
+      },
+      {
+        "id": "urn:ngm:class:ghg-protocol",
+        "label": "GHG Protocol"
+      },
+      {
+        "id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "carbon-footprint-measurement",
+      "label": "Carbon Footprint Measurement"
+    },
+    {
+      "slug": "carbon-neutral-blockchain",
+      "label": "Carbon Neutral Blockchain"
+    },
+    {
+      "slug": "esg-reporting",
+      "label": "ESG Reporting"
+    }
+  ]
+}

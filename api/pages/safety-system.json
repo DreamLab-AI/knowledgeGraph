@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:safety-system",
+  "title": "Safety System",
+  "slug": "safety-system",
+  "public": true,
+  "classIri": "urn:ngm:class:safety-system",
+  "domain": "infrastructure",
+  "definition": "A safety system is an engineered arrangement of hardware, software, and procedural controls designed to prevent, detect, and mitigate hazards in industrial, transport, robotic, or cyber-physical environments, ensuring that a process or machine reaches a safe state when faults or dangerous conditions are detected. Safety systems are defined by their Safety Integrity Level (SIL) or Performance Level (PL) ratings under standards such as IEC 61508 and ISO 26262, which quantify the required probability of failure on demand. They encompass emergency shutdown systems, safety PLCs, watchdog timers, interlocks, redundant sensors, and AI-based anomaly detection.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:control-system",
+      "label": "Control System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "id": "urn:ngm:class:iec-61508",
+        "label": "IEC 61508"
+      },
+      {
+        "id": "urn:ngm:class:iso-26262",
+        "label": "ISO 26262"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:monitoring-system",
+        "label": "Monitoring System"
+      },
+      {
+        "id": "urn:ngm:class:safety-plc",
+        "label": "Safety PLC"
+      },
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:robot-safety",
+        "label": "Robot Safety"
+      },
+      {
+        "id": "urn:ngm:class:safety-measure",
+        "label": "Safety Measure"
+      },
+      {
+        "id": "urn:ngm:class:real-time-operating-system",
+        "label": "Real-Time Operating System"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "collision-avoidance",
+      "label": "Collision Avoidance"
+    },
+    {
+      "slug": "ground-robot",
+      "label": "Ground Robot"
+    },
+    {
+      "slug": "industrial-robot",
+      "label": "Industrial Robot"
+    }
+  ]
+}

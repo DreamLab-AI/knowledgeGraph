@@ -1,0 +1,87 @@
+{
+  "id": "urn:visionflow:page:threat-detection",
+  "title": "Threat Detection",
+  "slug": "threat-detection",
+  "public": true,
+  "classIri": "urn:ngm:class:threat-detection",
+  "domain": "security",
+  "definition": "Threat detection is the cybersecurity discipline concerned with identifying malicious or anomalous activity within a system or network in time to enable an effective defensive response, distinguishing genuine threats from benign anomalies across high-volume, noisy telemetry. It encompasses signature-based detection of known attack patterns, behavioural analytics for novel threats, and machine learning models that model normal system baselines and flag statistical deviations. Effective threat detection must balance sensitivity (catching real attacks) against specificity (avoiding alert fatigue from false positives).",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cybersecurity",
+      "label": "Cybersecurity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      },
+      {
+        "id": "urn:ngm:class:threat-surface-map",
+        "label": "Threat Surface Map"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ai-security",
+        "label": "AI Security"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      },
+      {
+        "id": "urn:ngm:class:information-security",
+        "label": "Information Security"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "id": "urn:ngm:class:threat-model",
+        "label": "Threat Model"
+      },
+      {
+        "id": "urn:ngm:class:threat-actor",
+        "label": "Threat Actor"
+      },
+      {
+        "id": "urn:ngm:class:attack-vector",
+        "label": "Attack Vector"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cybersecurity-standard",
+      "label": "Cybersecurity Standard"
+    },
+    {
+      "slug": "etsi-domain-data-management-security",
+      "label": "ETSI Domain: Data Management + Security"
+    },
+    {
+      "slug": "zero-trust-architecture-zta",
+      "label": "Zero-Trust Architecture (ZTA)"
+    }
+  ]
+}

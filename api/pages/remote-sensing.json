@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:remote-sensing",
+  "title": "Remote Sensing",
+  "slug": "remote-sensing",
+  "public": true,
+  "classIri": "urn:ngm:class:remote-sensing",
+  "domain": "science",
+  "definition": "Remote sensing is the acquisition of information about physical objects or phenomena from a distance, typically using sensors mounted on satellites, aircraft, drones, or ground-based platforms, without direct physical contact with the subject. It encompasses passive sensing (measuring reflected or emitted electromagnetic radiation across optical, infrared, and microwave bands) and active sensing (radar and LiDAR, which emit and measure return signals). Remote sensing data underpins earth observation, environmental monitoring, precision agriculture, disaster response, urban planning, and military reconnaissance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sensor-fusion",
+      "label": "Sensor Fusion"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:object-recognition",
+        "label": "Object Recognition"
+      },
+      {
+        "id": "urn:ngm:class:mapping",
+        "label": "Mapping"
+      },
+      {
+        "id": "urn:ngm:class:environmental-assessment",
+        "label": "Environmental Assessment"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "id": "urn:ngm:class:image-processing",
+        "label": "Image Processing"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:geospatial-technology",
+        "label": "Geospatial Technology"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "id": "urn:ngm:class:geospatial-information",
+        "label": "Geospatial Information"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      },
+      {
+        "id": "urn:ngm:class:perception-system",
+        "label": "Perception System"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "carbon-footprint-measurement",
+      "label": "Carbon Footprint Measurement"
+    },
+    {
+      "slug": "image-segmentation",
+      "label": "Image Segmentation"
+    },
+    {
+      "slug": "image-and-video-restoration",
+      "label": "Image and Video Restoration"
+    }
+  ]
+}

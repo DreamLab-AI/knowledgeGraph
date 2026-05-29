@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:usability-testing",
+  "title": "Usability Testing",
+  "slug": "usability-testing",
+  "public": true,
+  "classIri": "urn:ngm:class:usability-testing",
+  "domain": "web",
+  "definition": "Usability testing is an empirical user research method in which representative users are observed attempting to complete realistic tasks with a product, system, or prototype, while the evaluator records errors, task completion times, help-seeking behaviour, and verbal commentary to identify usability problems and inform design improvements. Unlike expert-based heuristic evaluation, usability testing generates direct evidence of how real people interact with an interface under ecologically valid conditions. It is a core practice in human-computer interaction, product design, and user experience research, conducted through moderated in-person sessions, remote think-aloud protocols, or automated unmoderated testing platforms.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:user-research",
+      "label": "User Research"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:product-design",
+        "label": "Product Design"
+      },
+      {
+        "id": "urn:ngm:class:user-interface",
+        "label": "User Interface"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      },
+      {
+        "id": "urn:ngm:class:software-testing",
+        "label": "Software Testing"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "id": "urn:ngm:class:heuristic-methods",
+        "label": "Heuristic Methods"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cognitive-load-metric",
+      "label": "Cognitive Load Metric"
+    },
+    {
+      "slug": "etsi-domain-human-interface-ux",
+      "label": "ETSI_Domain_Human_Interface___UX"
+    },
+    {
+      "slug": "human-factors",
+      "label": "Human Factors"
+    },
+    {
+      "slug": "product-design",
+      "label": "Product Design"
+    }
+  ]
+}

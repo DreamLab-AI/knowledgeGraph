@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:microservices",
+  "title": "Microservices",
+  "slug": "microservices",
+  "public": true,
+  "classIri": "urn:ngm:class:microservices",
+  "domain": "infrastructure",
+  "definition": "Microservices is an architectural style in which a large application is decomposed into a collection of small, independently deployable services, each responsible for a specific business capability and communicating via well-defined APIs. Each service runs in its own process, can be developed and scaled independently, and may use its own data storage technology. This approach contrasts with monolithic architectures and enables continuous delivery, polyglot development, and fine-grained fault isolation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:microservices-architecture",
+      "label": "Microservices Architecture"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:open-telemetry",
+        "label": "OpenTelemetry"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "id": "urn:ngm:class:service-discovery",
+        "label": "Service Discovery"
+      },
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
+        "id": "urn:ngm:class:cloud-native-applications",
+        "label": "Cloud-Native Applications"
+      },
+      {
+        "id": "urn:ngm:class:software-architecture",
+        "label": "Software Architecture"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "api-gateway",
+      "label": "API Gateway"
+    },
+    {
+      "slug": "api-gateway",
+      "label": "API Gateway"
+    },
+    {
+      "slug": "blockchain-as-a-service",
+      "label": "Blockchain As A Service"
+    },
+    {
+      "slug": "data-layer",
+      "label": "Data Layer"
+    },
+    {
+      "slug": "distributed-computing",
+      "label": "Distributed Computing"
+    },
+    {
+      "slug": "software-architecture",
+      "label": "Software Architecture"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

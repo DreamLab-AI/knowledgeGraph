@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:novel-view-synthesis",
+  "title": "Novel View Synthesis",
+  "slug": "novel-view-synthesis",
+  "public": true,
+  "classIri": "urn:ngm:class:novel-view-synthesis",
+  "domain": "graphics",
+  "definition": "Novel view synthesis (NVS) is a computer vision and computer graphics task that involves generating photorealistic images of a scene from camera viewpoints not present in the original set of captured images, given a collection of reference photographs and their corresponding camera poses. The task requires learning an implicit or explicit representation of the scene's geometry and appearance that supports free-viewpoint rendering with high fidelity. It is a foundational capability for immersive media, telepresence, and spatial computing applications, and has been dramatically advanced by neural scene representations such as Neural Radiance Fields and 3D Gaussian Splatting.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:computer-vision-task",
+      "label": "Computer Vision Task"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:volumetric-capture",
+        "label": "Volumetric Capture"
+      },
+      {
+        "id": "urn:ngm:class:virtual-reality-telepresence",
+        "label": "Virtual Reality Telepresence"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:neural-rendering",
+        "label": "Neural Rendering"
+      },
+      {
+        "id": "urn:ngm:class:depth-estimation",
+        "label": "Depth Estimation"
+      },
+      {
+        "id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:neural-radiance-field",
+        "label": "Neural Radiance Field"
+      },
+      {
+        "id": "urn:ngm:class:3-d-gaussian-splatting",
+        "label": "3D Gaussian Splatting"
+      },
+      {
+        "id": "urn:ngm:class:differentiable-rendering",
+        "label": "Differentiable Rendering"
+      },
+      {
+        "id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "depth-estimation",
+      "label": "Depth Estimation"
+    },
+    {
+      "slug": "gaussian-splatting",
+      "label": "Gaussian Splatting"
+    },
+    {
+      "slug": "light-field",
+      "label": "Light field"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "id": "urn:visionflow:page:nvidia-jetson",
+  "title": "NVIDIA Jetson",
+  "slug": "nvidia-jetson",
+  "public": true,
+  "classIri": "urn:ngm:class:nvidia-jetson",
+  "domain": "hardware",
+  "definition": "NVIDIA Jetson is a family of system-on-module (SoM) and developer kit edge computing platforms that combine NVIDIA GPU cores with ARM-based CPU clusters, purpose-built for deploying deep learning inference, computer vision, and robotics workloads at the edge with constrained power budgets. Modules in the Jetson family \u2014 including Nano, TX2, Xavier, and Orin \u2014 span from entry-level embedded devices to high-performance autonomous machine platforms, all running NVIDIA's JetPack SDK which provides CUDA, cuDNN, TensorRT, and ROS integration.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:edge-ai-accelerator",
+      "label": "Edge AI Accelerator"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:inference-engine",
+        "label": "Inference Engine"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:inference-hardware",
+        "label": "Inference Hardware"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing-node",
+        "label": "Edge Computing Node"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "hardware-and-edge",
+      "label": "Hardware and Edge"
+    },
+    {
+      "slug": "logistics-optimization",
+      "label": "Logistics Optimization"
+    },
+    {
+      "slug": "mobile-robot-platform",
+      "label": "Mobile Robot Platform"
+    },
+    {
+      "slug": "robot-hardware",
+      "label": "Robot Hardware"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    }
+  ]
+}

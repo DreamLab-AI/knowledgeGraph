@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:state-synchronisation",
+  "title": "State Synchronisation",
+  "slug": "state-synchronisation",
+  "public": true,
+  "classIri": "urn:ngm:class:state-synchronisation",
+  "domain": "infrastructure",
+  "definition": "State synchronisation is the process of ensuring that multiple distributed nodes or replicas of a system maintain consistent views of shared mutable state despite network partitions, concurrent updates, and node failures. It encompasses techniques including leader-based replication, consensus protocols, conflict-free replicated data types (CRDTs), and operational transformation to reconcile divergent states. State synchronisation defines the trade-off between consistency, availability, and partition tolerance as described by the CAP theorem, choosing different points on that spectrum depending on application requirements. It is fundamental to distributed databases, real-time collaboration tools, multiplayer games, and blockchain networks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:distributed-system-protocol",
+      "label": "Distributed System Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:replication-system",
+        "label": "Replication System"
+      },
+      {
+        "id": "urn:ngm:class:realtime-collaboration",
+        "label": "Realtime Collaboration"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:consensus-protocol",
+        "label": "Consensus Protocol"
+      },
+      {
+        "id": "urn:ngm:class:crdt",
+        "label": "CRDT"
+      },
+      {
+        "id": "urn:ngm:class:data-replication",
+        "label": "Data Replication"
+      },
+      {
+        "id": "urn:ngm:class:state-machine-replication",
+        "label": "State Machine Replication"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:state-synchronization",
+        "label": "State Synchronization"
+      },
+      {
+        "id": "urn:ngm:class:real-time-synchronization",
+        "label": "Real-time Synchronization"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "id": "urn:ngm:class:conflict-resolution",
+        "label": "Conflict Resolution"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "cross-chain-messaging",
+      "label": "Cross-Chain Messaging"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    }
+  ]
+}

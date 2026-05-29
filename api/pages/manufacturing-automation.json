@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:manufacturing-automation",
+  "title": "Manufacturing Automation",
+  "slug": "manufacturing-automation",
+  "public": true,
+  "classIri": "urn:ngm:class:manufacturing-automation",
+  "domain": "robotics",
+  "definition": "Manufacturing automation is the application of control technologies, robotics, sensors, and software to perform production tasks with minimal human intervention, spanning discrete, process, and hybrid manufacturing environments. It encompasses programmable logic controllers (PLCs), industrial robots, computer numerical control (CNC) machines, and integrated supervisory systems that coordinate material flow, quality inspection, and assembly operations. Modern implementations leverage machine vision, AI-driven process optimisation, and digital twin synchronisation to achieve adaptive, self-correcting production lines. The discipline aims to increase throughput, improve consistency, reduce cycle times, and enhance worker safety by removing operators from hazardous or repetitive tasks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:industrial-automation",
+      "label": "IndustrialAutomation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:industrial-robot",
+        "label": "Industrial Robot"
+      },
+      {
+        "id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:cyber-physical-systems",
+        "label": "Cyber Physical Systems"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:smart-manufacturing",
+        "label": "Smart Manufacturing"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:industrial-io-t",
+        "label": "Industrial IoT"
+      },
+      {
+        "id": "urn:ngm:class:precision-manufacturing",
+        "label": "Precision Manufacturing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "humanoid-robot",
+      "label": "Humanoid Robot"
+    },
+    {
+      "slug": "industrial-robot",
+      "label": "Industrial Robot"
+    },
+    {
+      "slug": "task-planning",
+      "label": "Task Planning"
+    }
+  ]
+}

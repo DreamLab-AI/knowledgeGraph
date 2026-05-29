@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:optimisation",
+  "title": "Optimisation",
+  "slug": "optimisation",
+  "public": true,
+  "classIri": "urn:ngm:class:optimisation",
+  "domain": "science",
+  "definition": "Optimisation is the mathematical and computational discipline concerned with finding the best solution \u2014 maximum or minimum \u2014 of an objective function subject to given constraints, across a search space of possible decisions or parameter configurations. It encompasses deterministic methods (linear programming, convex optimisation, gradient-based methods), stochastic methods (simulated annealing, evolutionary algorithms, Monte Carlo), and learned methods (differentiable optimisation, meta-learning). Optimisation is the theoretical core of machine learning training, operations research, control engineering, and resource scheduling. The choice of optimisation algorithm fundamentally determines convergence speed, solution quality, and computational cost.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:mathematical-foundations",
+      "label": "Mathematical Foundations"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:optimal-control",
+        "label": "Optimal Control"
+      },
+      {
+        "id": "urn:ngm:class:logistics-optimization",
+        "label": "Logistics Optimization"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      },
+      {
+        "id": "urn:ngm:class:mathematical-reasoning",
+        "label": "Mathematical Reasoning"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:optimization-algorithm",
+        "label": "Optimization Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-optimisation",
+        "label": "Bayesian Optimisation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "control-algorithm",
+      "label": "Control Algorithm"
+    },
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "slug": "kinematics-model",
+      "label": "Kinematics Model"
+    },
+    {
+      "slug": "learning-algorithm",
+      "label": "Learning Algorithm"
+    },
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    }
+  ]
+}

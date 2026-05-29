@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:secure-communication",
+  "title": "Secure Communication",
+  "slug": "secure-communication",
+  "public": true,
+  "classIri": "urn:ngm:class:secure-communication",
+  "domain": "security",
+  "definition": "Secure communication is the practice and set of technologies that protect the confidentiality, integrity, and authenticity of information exchanged between parties over potentially adversarial networks, ensuring that eavesdroppers cannot read message content, tamperers cannot alter it undetected, and impersonators cannot forge the identity of legitimate participants. The discipline encompasses transport-layer security protocols (TLS, DTLS, QUIC with TLS), end-to-end encryption protocols (Signal Protocol, MLS, Matrix), secure messaging standards (S/MIME, PGP), VPN tunnelling (IPsec, WireGuard), and the cryptographic primitives\u2014asymmetric key exchange, symmetric cipher suites, authenticated encryption, and digital signatures\u2014that underpin them. Security properties are formally analysed through cryptographic protocol proofs and verified implementations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptographic-protocol",
+      "label": "Cryptographic Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "id": "urn:ngm:class:confidential-computing",
+        "label": "Confidential Computing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "id": "urn:ngm:class:tls",
+        "label": "TLS"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      },
+      {
+        "id": "urn:ngm:class:tls-encryption",
+        "label": "TLS Encryption"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-security",
+        "label": "Cryptographic Security"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cyber-security-and-cryptography",
+      "label": "Cyber Security and Cryptography"
+    },
+    {
+      "slug": "digital-certificate",
+      "label": "Digital Certificate"
+    },
+    {
+      "slug": "digital-citizens-assembly",
+      "label": "Digital Citizens' Assembly"
+    }
+  ]
+}

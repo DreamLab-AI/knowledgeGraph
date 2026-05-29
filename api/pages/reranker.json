@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:reranker",
+  "title": "Reranker",
+  "slug": "reranker",
+  "public": true,
+  "classIri": "urn:ngm:class:reranker",
+  "domain": "ai",
+  "definition": "A reranker is a second-stage scoring model in information retrieval and retrieval-augmented generation pipelines that reorders a set of candidate documents or passages \u2014 initially retrieved by a fast first-stage retriever such as a dense vector index \u2014 using a more computationally intensive cross-encoder or LLM-based relevance model that jointly encodes the query and each candidate together, producing a higher-precision relevance score than bi-encoder similarity alone. Rerankers trade retrieval speed for ranking quality, operating on a reduced candidate set (typically 50-200 passages) rather than the full corpus, thereby making deep transformer inference tractable at query time.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:information-retrieval",
+      "label": "Information Retrieval"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:embedding-model",
+        "label": "Embedding Model"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:language-model",
+        "label": "Language Model"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-technique",
+        "label": "Machine Learning Technique"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-search",
+      "label": "AI Search"
+    },
+    {
+      "slug": "retrieval-augmented-generation-rag",
+      "label": "Retrieval Augmented Generation - RAG"
+    },
+    {
+      "slug": "semantic-search",
+      "label": "Semantic Search"
+    }
+  ]
+}

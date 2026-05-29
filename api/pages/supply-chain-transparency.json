@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:supply-chain-transparency",
+  "title": "Supply Chain Transparency",
+  "slug": "supply-chain-transparency",
+  "public": true,
+  "classIri": "urn:ngm:class:supply-chain-transparency",
+  "domain": "blockchain",
+  "definition": "Supply chain transparency is the degree to which information about the origins, provenance, conditions, custody chain, and environmental and social impacts of goods is visible and verifiable to stakeholders throughout the supply chain \u2014 including manufacturers, distributors, retailers, regulators, and consumers. It encompasses voluntary disclosure practices, mandatory reporting frameworks (e.g., the UK Modern Slavery Act), and technical systems including blockchain-based provenance tracking and IoT sensor data chains that create immutable audit trails. Transparency is increasingly mandated by due diligence regulations and demanded by sustainability-conscious markets.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supply-chain-management",
+      "label": "Supply Chain Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:supply-chain-traceability",
+        "label": "Supply Chain Traceability"
+      },
+      {
+        "id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      },
+      {
+        "id": "urn:ngm:class:provenance-verification",
+        "label": "Provenance Verification"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:supply-chain-blockchain",
+        "label": "Supply Chain Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      },
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:supply-chain-provenance",
+        "label": "Supply Chain Provenance"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-visibility",
+        "label": "Supply Chain Visibility"
+      },
+      {
+        "id": "urn:ngm:class:pharmaceutical-traceability",
+        "label": "Pharmaceutical Traceability"
+      },
+      {
+        "id": "urn:ngm:class:logistics-optimization",
+        "label": "Logistics Optimization"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "carbon-footprint-measurement",
+      "label": "Carbon Footprint Measurement"
+    },
+    {
+      "slug": "distributed-identity",
+      "label": "Distributed Identity"
+    },
+    {
+      "slug": "ethical-sourcing",
+      "label": "Ethical Sourcing"
+    }
+  ]
+}

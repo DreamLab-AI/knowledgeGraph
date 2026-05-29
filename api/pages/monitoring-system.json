@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:monitoring-system",
+  "title": "Monitoring System",
+  "slug": "monitoring-system",
+  "public": true,
+  "classIri": "urn:ngm:class:monitoring-system",
+  "domain": "infrastructure",
+  "definition": "A monitoring system is an integrated platform that continuously collects, aggregates, and evaluates signals from target environments \u2014 including software services, physical infrastructure, AI models, or financial markets \u2014 to detect anomalies, assess health, and trigger alerts or automated responses. It encompasses data-collection agents, time-series storage, visualisation dashboards, and alerting pipelines. Monitoring systems form a foundational layer of operational reliability for modern distributed systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:monitoring-dashboard",
+        "label": "Monitoring Dashboard"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:ai-monitoring",
+        "label": "AI Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:real-time-monitoring",
+        "label": "Real-Time Monitoring"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:open-telemetry",
+        "label": "OpenTelemetry"
+      },
+      {
+        "id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      },
+      {
+        "id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agent-event-stream",
+      "label": "Agent Event Stream"
+    },
+    {
+      "slug": "edge-orchestration",
+      "label": "Edge Orchestration"
+    },
+    {
+      "slug": "fault-tolerance",
+      "label": "Fault Tolerance"
+    },
+    {
+      "slug": "latency",
+      "label": "Latency"
+    },
+    {
+      "slug": "user-agreement-compliance",
+      "label": "User Agreement Compliance"
+    }
+  ]
+}

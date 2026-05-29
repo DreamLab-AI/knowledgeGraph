@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:notion",
+  "title": "Notion",
+  "slug": "notion",
+  "public": true,
+  "classIri": "urn:ngm:class:notion",
+  "domain": "web",
+  "definition": "Notion is a cloud-based productivity and knowledge-management platform that unifies note-taking, relational databases, wikis, project management boards, and document editing into a single composable workspace. Its block-based editor treats every content element \u2014 text, tables, embeds, code, and media \u2014 as a manipulable unit that can be nested, linked, and filtered, enabling teams to construct custom workflows without traditional software development. Notion serves as an all-in-one tool replacing multiple specialised SaaS products for many knowledge workers and organisations. Since 2023 Notion has integrated generative AI capabilities directly into its editing and querying workflows.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:knowledge-management-system",
+      "label": "Knowledge Management System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:asynchronous-collaboration",
+        "label": "Asynchronous Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:shared-knowledge-base",
+        "label": "Shared Knowledge Base"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:database-system",
+        "label": "Database System"
+      },
+      {
+        "id": "urn:ngm:class:api-integration",
+        "label": "API Integration"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:knowledge-base",
+        "label": "Knowledge Base"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      },
+      {
+        "id": "urn:ngm:class:collaboration-platform",
+        "label": "Collaboration Platform"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "asynchronous-video",
+      "label": "Asynchronous Video"
+    },
+    {
+      "slug": "diagrams-as-code",
+      "label": "Diagrams as Code"
+    },
+    {
+      "slug": "digital-workplace-platform",
+      "label": "Digital Workplace Platform"
+    },
+    {
+      "slug": "graph-neural-network",
+      "label": "Graph Neural Network"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "tc-0002-collaborative-document-editing",
+      "label": "tc 0002 collaborative document editing"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:skeletal-animation",
+  "title": "Skeletal Animation",
+  "slug": "skeletal-animation",
+  "public": true,
+  "classIri": "urn:ngm:class:skeletal-animation",
+  "domain": "graphics",
+  "definition": "Skeletal animation is a character animation technique in which a hierarchical rig of bones (joints) defines the articulated structure of a character or creature, and mesh vertices are deformed by the weighted influence of surrounding bones through a process known as skinning. Artists author motion by keyframing or procedurally driving bone transforms over time; the underlying mesh deforms accordingly in real time on the GPU. Skeletal animation is the dominant method for animating characters in games, virtual reality, film visual effects, and virtual avatar systems due to its runtime efficiency, data compactness, and amenability to motion capture retargeting.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:character-animation",
+      "label": "Character Animation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:avatar-animation",
+        "label": "Avatar Animation"
+      },
+      {
+        "id": "urn:ngm:class:real-time-character-animation",
+        "label": "Real Time Character Animation"
+      },
+      {
+        "id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      },
+      {
+        "id": "urn:ngm:class:character-rigging",
+        "label": "Character Rigging"
+      },
+      {
+        "id": "urn:ngm:class:animation-retargeting",
+        "label": "Animation Retargeting"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:physics-based-animation",
+        "label": "Physics-Based Animation"
+      },
+      {
+        "id": "urn:ngm:class:procedural-animation",
+        "label": "Procedural Animation"
+      },
+      {
+        "id": "urn:ngm:class:gl-tf-3-d-file-format",
+        "label": "glTF (3D File Format)"
+      },
+      {
+        "id": "urn:ngm:class:animation-controller",
+        "label": "Animation Controller"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "3-d-scene-exchange-protocol-sxp",
+      "label": "3D Scene Exchange Protocol (SXP)"
+    },
+    {
+      "slug": "character-rigging",
+      "label": "Character Rigging"
+    },
+    {
+      "slug": "digital-performance-capture",
+      "label": "Digital Performance Capture"
+    },
+    {
+      "slug": "motion-capture",
+      "label": "Motion Capture"
+    }
+  ]
+}

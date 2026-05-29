@@ -1,0 +1,111 @@
+{
+  "id": "urn:visionflow:page:multi-agent-system",
+  "title": "Multi-Agent System",
+  "slug": "multi-agent-system",
+  "public": true,
+  "classIri": "urn:ngm:class:multi-agent-system",
+  "domain": "ai",
+  "definition": "A multi-agent system (MAS) is a computational architecture in which multiple autonomous agents\u2014each with local perception, state, and decision-making capability\u2014interact within a shared environment to accomplish individual or collective objectives. Agents may be cooperative, competitive, or mixed-motive, and coordination emerges from direct communication, environmental signalling, or market-like mechanisms. MAS formalises distributed problem-solving where no single agent possesses global knowledge or centralised control. The paradigm spans robotics, AI orchestration, financial modelling, and decentralised protocol design.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-agent-system",
+      "label": "AI Agent System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "id": "urn:ngm:class:inter-agent-communication",
+        "label": "Inter-Agent Communication"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:swarm-robotics",
+        "label": "Swarm Robotics"
+      },
+      {
+        "id": "urn:ngm:class:collective-decision-making",
+        "label": "Collective Decision Making"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      },
+      {
+        "id": "urn:ngm:class:emergence",
+        "label": "Emergence"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "agent",
+      "label": "Agent"
+    },
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "autonomous-robot",
+      "label": "Autonomous Robot"
+    },
+    {
+      "slug": "bdi-model",
+      "label": "BDI Model"
+    },
+    {
+      "slug": "collective-intelligence-system",
+      "label": "Collective Intelligence System"
+    },
+    {
+      "slug": "computer-use-and-browser-agents",
+      "label": "Computer Use and Browser Agents"
+    },
+    {
+      "slug": "consensus-algorithm",
+      "label": "Consensus Algorithm"
+    },
+    {
+      "slug": "swarm-robotics",
+      "label": "Swarm Robotics"
+    }
+  ]
+}

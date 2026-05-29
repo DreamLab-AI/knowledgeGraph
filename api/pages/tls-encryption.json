@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:tls-encryption",
+  "title": "TLS Encryption",
+  "slug": "tls-encryption",
+  "public": true,
+  "classIri": "urn:ngm:class:tls-encryption",
+  "domain": "security",
+  "definition": "TLS (Transport Layer Security) encryption is the cryptographic protocol layer that provides confidentiality, integrity, and server authentication for communications over TCP/IP networks, most visibly as the foundation of HTTPS. It operates through a handshake that negotiates cipher suites, authenticates servers (and optionally clients) via X.509 certificates, establishes ephemeral session keys using asymmetric key exchange (ECDHE), and then encrypts all subsequent data using symmetric ciphers (AES-GCM). TLS 1.3 (RFC 8446, 2018) is the current standard, eliminating obsolete constructs and reducing handshake latency to one round trip.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptographic-protocol",
+      "label": "Cryptographic Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:secure-communication",
+        "label": "Secure Communication"
+      },
+      {
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:asymmetric-encryption",
+        "label": "Asymmetric Encryption"
+      },
+      {
+        "id": "urn:ngm:class:symmetric-encryption",
+        "label": "Symmetric Encryption"
+      },
+      {
+        "id": "urn:ngm:class:digital-certificate",
+        "label": "Digital Certificate"
+      },
+      {
+        "id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:tls",
+        "label": "TLS"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      },
+      {
+        "id": "urn:ngm:class:key-derivation-function",
+        "label": "Key Derivation Function"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-as-a-service",
+      "label": "Blockchain As A Service"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "r3-corda",
+      "label": "R3 Corda"
+    }
+  ]
+}

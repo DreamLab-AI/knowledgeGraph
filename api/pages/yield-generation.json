@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:yield-generation",
+  "title": "Yield Generation",
+  "slug": "yield-generation",
+  "public": true,
+  "classIri": "urn:ngm:class:yield-generation",
+  "domain": "blockchain",
+  "definition": "Yield generation in the context of decentralised finance (DeFi) refers to the set of mechanisms by which cryptocurrency holders earn returns on their assets by deploying them into productive on-chain activities \u2014 including liquidity provision to automated market makers, lending on money market protocols, staking in proof-of-stake consensus, and participating in yield optimisation vaults \u2014 thereby converting idle digital assets into income-generating positions. Yield is typically expressed as an annualised percentage rate (APR) or annual percentage yield (APY) and derives from trading fees, interest payments from borrowers, block rewards, and protocol token emissions. Yield generation is a core economic primitive of DeFi, enabling capital efficiency but also introducing smart contract, liquidation, and impermanent loss risks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:de-fi",
+      "label": "DeFi"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:liquidity-mining",
+        "label": "Liquidity Mining"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:yield-farming",
+        "label": "Yield Farming"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-provision",
+        "label": "Liquidity Provision"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-lending",
+        "label": "Digital Asset Lending"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    },
+    {
+      "slug": "digital-asset-lending",
+      "label": "Digital Asset Lending"
+    },
+    {
+      "slug": "liquidity-provision",
+      "label": "Liquidity Provision"
+    },
+    {
+      "slug": "stable-coins",
+      "label": "Stable Coins"
+    },
+    {
+      "slug": "treasury-management",
+      "label": "Treasury Management"
+    }
+  ]
+}

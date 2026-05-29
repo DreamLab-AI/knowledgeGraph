@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:sha-256-hashing",
+  "title": "SHA-256 Hashing",
+  "slug": "sha-256-hashing",
+  "public": true,
+  "classIri": "urn:ngm:class:sha-256-hashing",
+  "domain": "security",
+  "definition": "SHA-256 Hashing refers to the application of the SHA-256 (Secure Hash Algorithm 256-bit) cryptographic hash function \u2014 a member of the SHA-2 family standardised by NIST in 2001 \u2014 to produce a fixed-length 256-bit (32-byte) message digest from an arbitrary-length input, with the properties of determinism, pre-image resistance, second pre-image resistance, and collision resistance. The algorithm operates via 64 rounds of bit manipulation, modular addition, and nonlinear functions over a 512-bit block schedule. SHA-256 is the foundational hash function of Bitcoin's proof-of-work mining, block header commitments, and Merkle tree construction, as well as a critical primitive in TLS, code signing, and certificate transparency.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptographic-hash-function",
+      "label": "Cryptographic Hash Function"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:bitcoin-mining",
+        "label": "Bitcoin Mining"
+      },
+      {
+        "id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      },
+      {
+        "id": "urn:ngm:class:merkle-proof",
+        "label": "Merkle Proof"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-security",
+        "label": "Blockchain Security"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:sha-256",
+        "label": "SHA-256"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "content-addressing",
+      "label": "Content Addressing"
+    },
+    {
+      "slug": "verifiable-credential-surface",
+      "label": "Verifiable Credential Surface"
+    }
+  ]
+}

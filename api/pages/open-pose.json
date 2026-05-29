@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:open-pose",
+  "title": "OpenPose",
+  "slug": "open-pose",
+  "public": true,
+  "classIri": "urn:ngm:class:open-pose",
+  "domain": "ai",
+  "definition": "OpenPose is an open-source, real-time multi-person pose estimation library developed at Carnegie Mellon University that simultaneously detects body, hand, face, and foot keypoints from RGB images and video using convolutional neural networks. It employs Part Affinity Fields (PAFs) \u2014 a set of 2D vector fields encoding the location and orientation of limb connections \u2014 enabling association of detected keypoints into individual skeletons without prior person detection. OpenPose established the part-affinity-field paradigm that underpins many subsequent human pose estimation systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:pose-estimation",
+      "label": "Pose Estimation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      },
+      {
+        "id": "urn:ngm:class:gesture-recognition",
+        "label": "Gesture Recognition"
+      },
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:virtual-object-pose",
+        "label": "Virtual Object Pose"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "comfy-ui-for-fashion-and-brands",
+      "label": "comfy-ui-for-fashion-and-brands"
+    },
+    {
+      "slug": "control-net-and-similar-spatial-conditioning-systems",
+      "label": "ControlNet and Similar Spatial Conditioning Systems"
+    },
+    {
+      "slug": "pose-estimation",
+      "label": "Pose Estimation"
+    }
+  ]
+}

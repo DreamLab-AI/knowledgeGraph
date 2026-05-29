@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:real-time-ai",
+  "title": "Real-Time AI",
+  "slug": "real-time-ai",
+  "public": true,
+  "classIri": "urn:ngm:class:real-time-ai",
+  "domain": "ai",
+  "definition": "Real-Time AI refers to the application of artificial intelligence inference within strict latency bounds \u2014 typically sub-second to sub-millisecond \u2014 required for time-sensitive tasks such as autonomous driving, robotics control, live speech processing, financial trading, and augmented reality. It integrates specialised hardware (NPUs, GPUs, FPGAs), optimised model representations (quantisation, pruning, TensorRT/ONNX), and edge deployment architectures to ensure deterministic response times. The distinction from batch AI lies in the hard or soft real-time constraints that govern system correctness.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:real-time-computation",
+      "label": "Real-Time Computation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:real-time-inference-at-edge",
+        "label": "Real-Time Inference at Edge"
+      },
+      {
+        "id": "urn:ngm:class:real-time-monitoring",
+        "label": "Real-Time Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:inference-engine",
+        "label": "Inference Engine"
+      },
+      {
+        "id": "urn:ngm:class:npu",
+        "label": "NPU"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "id": "urn:ngm:class:real-time-processing",
+        "label": "Real-time Processing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-in-games",
+      "label": "AI in Games"
+    },
+    {
+      "slug": "hardware-and-edge",
+      "label": "Hardware and Edge"
+    },
+    {
+      "slug": "inference-hardware",
+      "label": "Inference Hardware"
+    },
+    {
+      "slug": "model-optimisation-and-performance",
+      "label": "Model Optimisation and Performance"
+    }
+  ]
+}

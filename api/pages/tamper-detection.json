@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:tamper-detection",
+  "title": "Tamper Detection",
+  "slug": "tamper-detection",
+  "public": true,
+  "classIri": "urn:ngm:class:tamper-detection",
+  "domain": "security",
+  "definition": "Tamper detection is the set of technical mechanisms and protocols that identify whether a digital asset, data record, physical device, or communication has been unauthorisedly modified since its creation or last verified state. In the digital domain it employs cryptographic hash functions, digital signatures, Merkle proofs, and content-addressed storage to generate verifiable commitments that reveal any change to the protected content. Applied to media authenticity, hardware integrity, and data provenance, tamper detection is a foundational component of trust architectures for critical systems, supply chains, digital forensics, and content authenticity verification.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-integrity",
+      "label": "Data Integrity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:content-authentication",
+        "label": "Content Authentication"
+      },
+      {
+        "id": "urn:ngm:class:provenance-verification",
+        "label": "Provenance Verification"
+      },
+      {
+        "id": "urn:ngm:class:digital-forensics",
+        "label": "Digital Forensics"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "content-addressing",
+      "label": "Content Addressing"
+    },
+    {
+      "slug": "cryptographic-hash",
+      "label": "Cryptographic Hash"
+    },
+    {
+      "slug": "digital-evidence-chain-of-custody",
+      "label": "Digital Evidence Chain of Custody"
+    },
+    {
+      "slug": "uri-canonicaliser",
+      "label": "URI Canonicaliser"
+    }
+  ]
+}

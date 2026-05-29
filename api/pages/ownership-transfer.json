@@ -1,0 +1,87 @@
+{
+  "id": "urn:visionflow:page:ownership-transfer",
+  "title": "Ownership Transfer",
+  "slug": "ownership-transfer",
+  "public": true,
+  "classIri": "urn:ngm:class:ownership-transfer",
+  "domain": "blockchain",
+  "definition": "Ownership transfer is the process by which legal or functional control of an asset \u2014 physical, digital, or tokenised \u2014 passes from one party to another, recorded in a registry, ledger, or smart contract. In blockchain and Web3 contexts it typically refers to atomic state transitions that update on-chain ownership records for fungible tokens, NFTs, or tokenised real-world assets, with cryptographic proofs replacing traditional notarial or escrow intermediaries. The mechanism must satisfy atomicity, finality, and auditability requirements.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-asset-management",
+      "label": "Digital Asset Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:nft-marketplace",
+        "label": "NFT Marketplace"
+      },
+      {
+        "id": "urn:ngm:class:fractional-ownership",
+        "label": "Fractional Ownership"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:cross-chain-asset-transfer",
+        "label": "Cross Chain Asset Transfer"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-ownership",
+        "label": "Digital Ownership"
+      },
+      {
+        "id": "urn:ngm:class:property-rights",
+        "label": "Property Rights"
+      },
+      {
+        "id": "urn:ngm:class:asset-tokenization",
+        "label": "Asset Tokenization"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cultural-provenance-record",
+      "label": "Cultural Provenance Record"
+    },
+    {
+      "slug": "digital-goods-registry",
+      "label": "Digital Goods Registry"
+    },
+    {
+      "slug": "erc721",
+      "label": "ERC721"
+    },
+    {
+      "slug": "tokenization",
+      "label": "Tokenization"
+    }
+  ]
+}

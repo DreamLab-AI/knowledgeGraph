@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:neural-machine-translation",
+  "title": "Neural Machine Translation",
+  "slug": "neural-machine-translation",
+  "public": true,
+  "classIri": "urn:ngm:class:neural-machine-translation",
+  "domain": "ai",
+  "definition": "Neural Machine Translation (NMT) is an approach to automated language translation in which end-to-end neural networks \u2014 typically based on encoder-decoder architectures with attention mechanisms \u2014 learn to map source-language sequences directly to target-language sequences from parallel corpora. Unlike earlier statistical phrase-based methods, NMT systems capture long-range dependencies and global sentence context, producing more fluent and contextually accurate translations. The Transformer architecture has become the dominant NMT paradigm since its introduction in 2017.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:language-translation",
+      "label": "Language Translation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:real-time-language-translation",
+        "label": "Real-Time Language Translation"
+      },
+      {
+        "id": "urn:ngm:class:real-time-translation",
+        "label": "Real-time Translation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:encoder-decoder-architecture",
+        "label": "Encoder Decoder Architecture"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:language-model",
+        "label": "Language Model"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "attention",
+      "label": "Attention"
+    },
+    {
+      "slug": "checkpoints",
+      "label": "Checkpoints"
+    },
+    {
+      "slug": "real-time-language-translation",
+      "label": "Real-Time Language Translation"
+    },
+    {
+      "slug": "real-time-translation",
+      "label": "Real-time Translation"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "id": "urn:visionflow:page:two-phase-commit",
+  "title": "Two-Phase Commit",
+  "slug": "two-phase-commit",
+  "public": true,
+  "classIri": "urn:ngm:class:two-phase-commit",
+  "domain": "infrastructure",
+  "definition": "Two-Phase Commit (2PC) is a distributed transaction coordination protocol that ensures atomic commitment across multiple participant nodes: either all participants commit a transaction or all abort it, with no partial updates persisted. In the prepare phase, a coordinator polls all participants for their readiness to commit; in the commit phase, it broadcasts the final decision based on unanimous consensus from the prepare phase. 2PC is the foundational protocol for distributed ACID transactions but is blocking in the presence of coordinator failure, a limitation addressed by Three-Phase Commit and Paxos-based variants.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:distributed-system-protocol",
+      "label": "Distributed System Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:transaction-confirmation",
+        "label": "Transaction Confirmation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:raft-consensus",
+        "label": "RAFT Consensus"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:database-system",
+        "label": "Database System"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:transaction-processing",
+        "label": "Transaction Processing"
+      },
+      {
+        "id": "urn:ngm:class:transaction-finality",
+        "label": "Transaction Finality"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "id": "urn:ngm:class:consensus-protocol",
+        "label": "Consensus Protocol"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "crdt",
+      "label": "CRDT"
+    },
+    {
+      "slug": "distributed-computing",
+      "label": "Distributed Computing"
+    },
+    {
+      "slug": "fault-tolerance",
+      "label": "Fault Tolerance"
+    },
+    {
+      "slug": "r3-corda",
+      "label": "R3 Corda"
+    }
+  ]
+}

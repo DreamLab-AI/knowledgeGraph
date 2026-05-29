@@ -1,0 +1,83 @@
+{
+  "id": "urn:visionflow:page:open-source-development",
+  "title": "Open Source Development",
+  "slug": "open-source-development",
+  "public": true,
+  "classIri": "urn:ngm:class:open-source-development",
+  "domain": "ai",
+  "definition": "Open source development is a software production methodology in which source code is made publicly available under licences permitting inspection, modification, and redistribution, enabling distributed communities of contributors to collaboratively build and maintain software. The model contrasts with proprietary development by prioritising transparency, peer review, and meritocratic contribution over closed, hierarchical ownership. It encompasses practices including version-controlled public repositories, issue tracking, pull-request-based code review, and community governance structures. Open source development has become the dominant paradigm for infrastructure software, AI frameworks, and blockchain protocols.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:software-development",
+      "label": "Software Development"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:open-source-ai",
+        "label": "Open-Source AI"
+      },
+      {
+        "id": "urn:ngm:class:collaboration-platform",
+        "label": "Collaboration Platform"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:software-development-process",
+        "label": "Software Development Process"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:community-governance",
+        "label": "Community Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-augmented-software-engineering",
+        "label": "AI-Augmented Software Engineering"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      },
+      {
+        "id": "urn:ngm:class:open-source-framework",
+        "label": "Open Source Framework"
+      },
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-centralisation-risks",
+      "label": "Bitcoin Centralisation Risks"
+    },
+    {
+      "slug": "remote-pair-programming",
+      "label": "Remote Pair Programming"
+    },
+    {
+      "slug": "treasury-management",
+      "label": "Treasury Management"
+    }
+  ]
+}

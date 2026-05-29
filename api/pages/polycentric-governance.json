@@ -1,0 +1,83 @@
+{
+  "id": "urn:visionflow:page:polycentric-governance",
+  "title": "Polycentric Governance",
+  "slug": "polycentric-governance",
+  "public": true,
+  "classIri": "urn:ngm:class:polycentric-governance",
+  "domain": "governance",
+  "definition": "Polycentric governance is a theory and practice of institutional arrangement in which authority over a shared domain is distributed across multiple overlapping, semi-autonomous decision-making centres rather than concentrated in a single hierarchy. Developed by Vincent and Elinor Ostrom through empirical study of common-pool resource management, the framework holds that complex social-ecological and sociotechnical systems benefit from diverse, redundant governance layers that can adapt, experiment, and mutually check one another. Each governance unit retains meaningful autonomy while engaging with others through negotiation, conflict-resolution mechanisms, and shared rules. Polycentric governance is increasingly applied to internet regulation, AI governance, and decentralised protocol design.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "id": "urn:ngm:class:participatory-policy-making",
+        "label": "Participatory Policy Making"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:governance-architecture",
+        "label": "Governance Architecture"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:decentralized-governance",
+        "label": "Decentralized Governance"
+      },
+      {
+        "id": "urn:ngm:class:democratic-governance",
+        "label": "Democratic Governance"
+      },
+      {
+        "id": "urn:ngm:class:community-governance",
+        "label": "Community Governance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "decentralized-governance",
+      "label": "Decentralized Governance"
+    },
+    {
+      "slug": "delegate-democracy",
+      "label": "Delegate Democracy"
+    },
+    {
+      "slug": "distributed-decision-making",
+      "label": "Distributed Decision Making"
+    }
+  ]
+}

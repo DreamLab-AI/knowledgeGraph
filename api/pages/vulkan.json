@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:vulkan",
+  "title": "Vulkan",
+  "slug": "vulkan",
+  "public": true,
+  "classIri": "urn:ngm:class:vulkan",
+  "domain": "graphics",
+  "definition": "Vulkan is a low-overhead, cross-platform graphics and compute API developed by the Khronos Group and released in 2016 as the successor to OpenGL, designed to give developers explicit control over GPU resources including memory allocation, synchronisation, command buffer submission, and render pass configuration in order to minimise CPU overhead and achieve predictable, high-performance rendering across diverse hardware. Vulkan operates closer to metal than its predecessor: applications manage their own memory pools, pipeline state objects, descriptor sets, and queue families, while the driver's role is reduced to translating API calls into hardware commands with minimal hidden magic. Vulkan shaders are compiled to SPIR-V, a portable intermediate representation, enabling shader code authored in GLSL or HLSL to execute on any conforming GPU without driver-side shader compilation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:graphics-api",
+      "label": "Graphics API"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering-pipeline",
+        "label": "Real-Time Rendering Pipeline"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:shader-language",
+        "label": "Shader Language"
+      },
+      {
+        "id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:shader",
+        "label": "Shader"
+      },
+      {
+        "id": "urn:ngm:class:compute-shader",
+        "label": "Compute Shader"
+      },
+      {
+        "id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:open-xr",
+        "label": "OpenXR"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "3-d-graphics-standard",
+      "label": "3D Graphics Standard"
+    },
+    {
+      "slug": "procedural-and-hybrid-4-d",
+      "label": "Procedural and Hybrid 4D"
+    },
+    {
+      "slug": "ray-tracing",
+      "label": "Ray Tracing"
+    },
+    {
+      "slug": "rendering-pipeline",
+      "label": "Rendering Pipeline"
+    },
+    {
+      "slug": "universal-scene-description",
+      "label": "Universal Scene Description"
+    }
+  ]
+}

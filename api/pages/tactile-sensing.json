@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:tactile-sensing",
+  "title": "Tactile Sensing",
+  "slug": "tactile-sensing",
+  "public": true,
+  "classIri": "urn:ngm:class:tactile-sensing",
+  "domain": "robotics",
+  "definition": "Tactile sensing is the ability of a robotic or prosthetic system to detect and interpret physical contact information \u2014 including contact force magnitude, direction, distribution, texture, slip, and temperature \u2014 through sensors embedded in or on the surface of an end effector or robotic skin. It is the mechanical analogue of the human sense of touch and provides information that visual sensing alone cannot supply, such as the internal stress distribution of a grasped object or the onset of slippage. Tactile sensing is fundamental to dexterous manipulation, safe human-robot interaction, and feedback-controlled assembly, and has become a defining capability differentiating next-generation robotic systems from conventional industrial manipulators.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:perception-system",
+      "label": "Perception System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:manipulation",
+        "label": "Manipulation"
+      },
+      {
+        "id": "urn:ngm:class:force-control",
+        "label": "Force Control"
+      },
+      {
+        "id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:force-torque-sensor",
+        "label": "Force Torque Sensor"
+      },
+      {
+        "id": "urn:ngm:class:pressure-sensor",
+        "label": "Pressure Sensor"
+      },
+      {
+        "id": "urn:ngm:class:proprioceptive-sensor",
+        "label": "Proprioceptive Sensor"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "id": "urn:ngm:class:end-effector",
+        "label": "End Effector"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "exteroceptive-sensor",
+      "label": "Exteroceptive Sensor"
+    },
+    {
+      "slug": "force-control",
+      "label": "Force Control"
+    },
+    {
+      "slug": "humanoid-robot",
+      "label": "Humanoid Robot"
+    },
+    {
+      "slug": "robot-control",
+      "label": "Robot Control"
+    }
+  ]
+}

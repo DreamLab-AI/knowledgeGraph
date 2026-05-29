@@ -1,0 +1,122 @@
+{
+  "id": "urn:visionflow:page:rgb-protocol",
+  "title": "RGB Protocol",
+  "slug": "rgb-protocol",
+  "public": true,
+  "classIri": "urn:ngm:class:rgb-protocol",
+  "domain": "blockchain",
+  "definition": "RGB Protocol is a client-side validation protocol built on top of Bitcoin and the Lightning Network that enables the issuance and transfer of smart contracts and tokenised assets (fungible and non-fungible) without placing contract state on the blockchain. Instead, RGB stores contract state in off-chain client-side data structures and uses Bitcoin UTXOs as single-use seals, with only cryptographic commitments anchored to Bitcoin transactions. This design inherits Bitcoin's security and censorship resistance while providing scalability, privacy, and programmability not available on-chain.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain-protocol",
+      "label": "Blockchain Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:asset-tokenization",
+        "label": "Asset Tokenization"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:bitcoin-network",
+        "label": "Bitcoin Network"
+      },
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "id": "urn:ngm:class:utxo-model",
+        "label": "UTXO Model"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-commitment",
+        "label": "Cryptographic Commitment"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rgb-and-client-side-validation",
+        "label": "RGB and Client Side Validation"
+      },
+      {
+        "id": "urn:ngm:class:taproot-assets",
+        "label": "Taproot Assets"
+      },
+      {
+        "id": "urn:ngm:class:client-side-dco",
+        "label": "Client side DCO"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    },
+    {
+      "slug": "bitcoin-as-money",
+      "label": "Bitcoin As Money"
+    },
+    {
+      "slug": "bitcoin-etf",
+      "label": "Bitcoin ETF"
+    },
+    {
+      "slug": "bitcoin-technical-overview",
+      "label": "Bitcoin Technical Overview"
+    },
+    {
+      "slug": "blockchain-oracle",
+      "label": "Blockchain Oracle"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    },
+    {
+      "slug": "taproot-assets",
+      "label": "Taproot Assets"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    }
+  ]
+}

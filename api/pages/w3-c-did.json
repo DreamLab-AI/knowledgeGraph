@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:w3-c-did",
+  "title": "W3C DID",
+  "slug": "w3-c-did",
+  "public": true,
+  "classIri": "urn:ngm:class:w3-c-did",
+  "domain": "governance",
+  "definition": "W3C DID (Decentralised Identifier) is a W3C Recommendation standard (published July 2022) that defines a new type of globally unique, persistent, and cryptographically verifiable identifier that does not require a centralised registration authority. A DID resolves to a DID Document \u2014 a JSON-LD data structure containing public keys, authentication mechanisms, and service endpoints \u2014 enabling the DID subject to prove control and establish secure communication without depending on a third-party identity provider. DIDs are the foundational primitive for self-sovereign identity systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:w3-c-did-core",
+      "label": "W3C DID Core"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:did-document",
+        "label": "DID Document"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-identifiers",
+        "label": "Decentralized Identifiers"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralised-trust",
+        "label": "Decentralised Trust"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity-management",
+        "label": "Digital Identity Management"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:w3-c-verifiable-credentials",
+        "label": "W3C Verifiable Credentials"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-identity",
+        "label": "Decentralized Identity"
+      },
+      {
+        "id": "urn:ngm:class:trust-over-ip-stack",
+        "label": "Trust over IP Stack"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cross-platform-interoperability",
+      "label": "Cross-Platform Interoperability"
+    },
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    },
+    {
+      "slug": "digital-objects",
+      "label": "Digital Objects"
+    },
+    {
+      "slug": "privacy-preserving-blockchain",
+      "label": "Privacy Preserving Blockchain"
+    },
+    {
+      "slug": "quorum-blockchain",
+      "label": "Quorum Blockchain"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    },
+    {
+      "slug": "web3",
+      "label": "Web3"
+    }
+  ]
+}

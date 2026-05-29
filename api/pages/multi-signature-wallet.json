@@ -1,0 +1,83 @@
+{
+  "id": "urn:visionflow:page:multi-signature-wallet",
+  "title": "Multi-Signature Wallet",
+  "slug": "multi-signature-wallet",
+  "public": true,
+  "classIri": "urn:ngm:class:multi-signature-wallet",
+  "domain": "blockchain",
+  "definition": "A multi-signature wallet is a cryptographic account on a blockchain network that requires M-of-N authorisation \u2014 where a minimum of M private key holders out of a total of N authorised signers must collectively sign a transaction before it is considered valid and broadcast to the network. This threshold scheme eliminates single points of failure in asset custody, distributing the risk of key compromise or loss across multiple independent parties or hardware devices. Multi-signature wallets are widely deployed for treasury management, DAO governance, and exchange hot wallets, and are implemented both as native Bitcoin script constructs and as smart contracts on EVM-compatible chains.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-wallet",
+      "label": "Digital Wallet"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "id": "urn:ngm:class:multi-sig-governance",
+        "label": "Multi Sig Governance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:multi-signature",
+        "label": "Multi-Signature"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-security",
+        "label": "Blockchain Security"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "token-custody-service",
+      "label": "Token Custody Service"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "id": "urn:visionflow:page:long-term-preservation",
+  "title": "Long-Term Preservation",
+  "slug": "long-term-preservation",
+  "public": true,
+  "classIri": "urn:ngm:class:long-term-preservation",
+  "domain": "infrastructure",
+  "definition": "Long-term preservation is the set of policies, strategies, and technical practices that ensure digital assets, records, and information objects remain accessible, authentic, and usable across decades or centuries. It encompasses format migration, bit-level integrity monitoring, metadata stewardship, and provenance documentation to guard against technological obsolescence, media decay, and institutional discontinuity. The field draws on archival science, information management, and computer science to maintain the evidential and informational value of materials well beyond the lifespan of their originating systems. Standards such as OAIS (ISO 14721) provide reference models that underpin most compliant preservation programmes.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-preservation",
+      "label": "Digital Preservation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:content-addressed-storage",
+        "label": "Content-Addressed Storage"
+      },
+      {
+        "id": "urn:ngm:class:data-format-standard",
+        "label": "Data Format Standard"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:archival-node",
+        "label": "Archival Node"
+      },
+      {
+        "id": "urn:ngm:class:digital-archive",
+        "label": "Digital Archive"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:long-term-archival",
+        "label": "Long Term Archival"
+      },
+      {
+        "id": "urn:ngm:class:cultural-heritage-preservation",
+        "label": "Cultural Heritage Preservation"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:archival-standards",
+        "label": "Archival Standards"
+      },
+      {
+        "id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      },
+      {
+        "id": "urn:ngm:class:metadata-standard",
+        "label": "Metadata Standard"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "archival-standards",
+      "label": "Archival Standards"
+    },
+    {
+      "slug": "digital-objects",
+      "label": "Digital Objects"
+    },
+    {
+      "slug": "etsi-domain-data-management-cultural-heritage",
+      "label": "ETSI Domain: Data Management + Cultural Heritage"
+    }
+  ]
+}
