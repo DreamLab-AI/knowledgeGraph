@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:synthetic-data",
   "domain": "artificial-intelligence",
-  "definition": "Algorithmically generated data that statistically mimics real-world datasets, used to train or evaluate machine-learning models without exposing sensitive information.",
+  "definition": "Synthetic data is algorithmically generated content that preserves the statistical properties, distributional characteristics, and structural patterns of real-world datasets without containing actual personal or proprietary records. It is produced using techniques such as generative adversarial networks, diffusion models, and rule-based simulators, and serves to augment scarce training data, enable privacy-compliant data sharing, and stress-test machine-learning pipelines with rare or hazardous edge-case scenarios.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:data-augmentation-strategies",
+        "label": "Data Augmentation Strategies"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

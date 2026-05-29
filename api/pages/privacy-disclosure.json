@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:privacy-disclosure",
   "domain": "spatial-computing",
-  "definition": "Privacy Disclosure is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "The formal process by which platforms communicate to users what personal data is collected, how it is used, who it is shared with, and what rights users hold over it. In spatial computing and metaverse contexts, privacy disclosure must address novel data types including biometric signals, eye tracking, motion data, and behavioural analytics gathered in immersive environments.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-governance-and-safety",
@@ -13,21 +13,53 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:consent-management",
+        "label": "Consent Management"
+      },
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy By Design"
+      },
+      {
+        "id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:privacy-framework",
+        "label": "Privacy Framework"
+      },
+      {
+        "id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      }
+    ]
   },
   "wikilinks": [
     {

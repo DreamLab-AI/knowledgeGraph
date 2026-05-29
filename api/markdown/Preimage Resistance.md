@@ -66,7 +66,7 @@ public:: true
   "@id": "urn:ngm:class:preimage-resistance",
   "@type": "Class",
   "label": "Preimage Resistance",
-  "definition": "Hash function security property within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "Preimage Resistance is a security property of a cryptographic hash function requiring that, given a hash output h, it is computationally infeasible to find any input m such that H(m) = h. This one-way property is foundational for password hashing, proof-of-work puzzles, and blockchain address derivation, ensuring that knowledge of a public address does not reveal the corresponding private key.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -83,7 +83,25 @@ public:: true
       "label": "CryptographicPrimitive"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"},
+      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:collision-resistance", "label": "Collision Resistance"},
+      {"@id": "urn:ngm:class:sha-256", "label": "SHA-256"},
+      {"@id": "urn:ngm:class:keccak-256", "label": "Keccak-256"},
+      {"@id": "urn:ngm:class:blake2", "label": "BLAKE2"},
+      {"@id": "urn:ngm:class:private-key", "label": "Private Key"},
+      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:cryptographic-security", "label": "Cryptographic Security"},
+      {"@id": "urn:ngm:class:merkle-proof", "label": "Merkle Proof"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

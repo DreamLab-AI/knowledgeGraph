@@ -42,20 +42,36 @@ public:: true
   "@id": "urn:ngm:class:rb-0034-repeatability",
   "@type": "Class",
   "label": "rb 0034 repeatability",
-  "definition": "repeatability is a robotics and autonomous systems concept and a type of Robot.",
+  "definition": "Repeatability is a key performance metric of robot manipulators that quantifies the closeness of agreement between successive commanded returns to the same target position or pose, measured under identical conditions. It is formally defined in ISO 9283 as the radius of a sphere enclosing a specified percentage of attained positions from repeated attempts. Repeatability is distinct from accuracy — a robot may be highly repeatable but systematically offset from the commanded target — and is critical for applications such as assembly, welding, and precision manufacturing.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-actuation-and-control",
       "label": "Actuation and Control"
-    },
-    {
-      "@id": "urn:ngm:class:robot",
-      "label": "Robot"
     }
   ],
-  "quality": 0.5,
+  "quality": 0.7,
+  "relations": {
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:rb-0035-accuracy", "label": "rb 0035 accuracy"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:precision", "label": "Precision"},
+      {"@id": "urn:ngm:class:calibration", "label": "Calibration"},
+      {"@id": "urn:ngm:class:performance-metrics", "label": "Performance Metrics"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:rb-0021-robot-kinematics", "label": "rb 0021 robot kinematics"},
+      {"@id": "urn:ngm:class:rb-0047-feedback-control", "label": "rb 0047 feedback control"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:rb-0087-safety-standard", "label": "rb 0087 safety standard"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:rb-0036-resolution", "label": "rb 0036 resolution"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -92,6 +108,7 @@ public:: true
 
 - ### Definition
   - ### Primary Definition
+  Repeatability (RB-0034) is the ISO 9283-defined metric expressing how closely a robot returns to the same commanded position or orientation on repeated attempts under identical conditions. Measured as the radius RP of the sphere that contains 95% of attained positions, it is a direct function of mechanical compliance, backlash, controller resolution, and thermal effects. Repeatability is typically in the range 0.01–0.1 mm for precision industrial arms and is the dominant specification criterion for assembly and welding tasks.
 
 - ### Semantic Classification
   - owl-class:: robotics:Repeatability
@@ -99,7 +116,10 @@ public:: true
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Contrasts with: [[rb 0035 accuracy]]
+  - Related to: [[Precision]], [[Calibration]], [[Performance Metrics]]
+  - Depends on: [[rb 0021 robot kinematics]], [[rb 0047 feedback control]]
+  - Part of: [[rb 0036 resolution]]
 
 - ### Content
   - ### Primary Definition

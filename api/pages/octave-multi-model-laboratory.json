@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:octave-multi-model-laboratory",
   "domain": "infrastructure",
-  "definition": "Octave Multi Model Laboratory is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A world-class multi-modal immersive research facility at the University of Salford housing advanced display topologies, high-performance compute, and distributed systems for mixed reality, generative AI, and human-scale VR experimentation. The lab supported over 25 years of research including world firsts in collaborative mixed reality, brain scanning in phobia treatment, real-time human reconstruction from cameras, and telepresence, and served hundreds of SMEs through ERDF-funded programmes.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
@@ -13,17 +13,52 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:hardware-and-edge",
+        "label": "Hardware and Edge"
+      },
+      {
+        "id": "urn:ngm:class:immersive-technology",
+        "label": "Immersive Technology"
+      },
+      {
+        "id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:telepresence",
+        "label": "Telepresence"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

@@ -26,7 +26,7 @@ public:: true
   "@type": "Class",
   "@id": "urn:ngm:class:bc-governance-and-regulation",
   "label": "Governance and Regulation",
-  "definition": "Intermediate taxonomy category for governance and regulation concepts within the blockchain domain.",
+  "definition": "Taxonomy hub covering the legal, policy, and organisational frameworks that govern blockchain and distributed ledger deployments. This category spans compliance obligations, decentralised governance mechanisms, regulatory technology, and the evolving global ruleset for digital assets and smart contracts.",
   "domain": "blockchain",
   "subClassOf": [
     {
@@ -34,7 +34,24 @@ public:: true
       "label": "Blockchain"
     }
   ],
-  "relations": {},
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"},
+      {"@id": "urn:ngm:class:blockchain-compliance", "label": "Blockchain Compliance"},
+      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
+      {"@id": "urn:ngm:class:regulatory-framework", "label": "Regulatory Framework"},
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
+      {"@id": "urn:ngm:class:aml-kyc-compliance", "label": "AML KYC Compliance"},
+      {"@id": "urn:ngm:class:decentralized-autonomous-organization", "label": "Decentralized Autonomous Organization"},
+      {"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"},
+      {"@id": "urn:ngm:class:securities-regulation", "label": "Securities Regulation"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:bc-protocol-and-consensus", "label": "Protocol and Consensus"},
+      {"@id": "urn:ngm:class:bc-defi-and-economics", "label": "DeFi and Economics"},
+      {"@id": "urn:ngm:class:regulatory-technology", "label": "Regulatory Technology"}
+    ]
+  },
   "qualityScore": 0.8,
   "maturity": "established"
 }

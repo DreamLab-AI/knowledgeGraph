@@ -8,6 +8,10 @@
 
 - ### Relationships
   - is-subclass-of:: [[Digital Model]]
+  - uses:: [[Photogrammetry]], [[3D Modeling]], [[Simulation]]
+  - contrastsWith:: [[Digital Twin]]
+  - enables:: [[Virtual Museum Tour]], [[Virtual Factory]]
+  - relatedTo:: [[Digital Modeling]], [[Simulation Software]]
 
 - ### Content
 

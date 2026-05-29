@@ -5,26 +5,58 @@
   "public": true,
   "classIri": "urn:ngm:class:software-development-process",
   "domain": "artificial-intelligence",
-  "definition": "Software Development Process for AI encompasses modologies, workflows, and best practices for building, testing, deploying, and maintaining machine learning systems. This includes agile AI development, data-centric workflows, experiment tracking, model validation protocols, and MLOps practices.",
+  "definition": "The structured set of methodologies, workflows, and best practices governing how software \u2014 including AI and machine learning systems \u2014 is conceived, built, tested, deployed, and maintained. For AI systems this encompasses data-centric workflows, experiment tracking, model validation protocols, MLOps pipelines, and cross-functional collaboration between data scientists, engineers, and domain experts across the full model lifecycle.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure (Category)"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:software-testing",
+        "label": "Software Testing"
+      },
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-deployment",
+        "label": "AI Deployment"
+      },
+      {
+        "id": "urn:ngm:class:ai-augmented-software-engineering",
+        "label": "AI-Augmented Software Engineering"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:machine-learning-pipeline",
+        "label": "Machine Learning Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:ai-development-tools",
+        "label": "AI Development Tools"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:standards-conformance-testing",
+        "label": "Standards Conformance Testing"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": []

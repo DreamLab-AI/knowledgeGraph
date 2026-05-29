@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:waste-management",
   "domain": "blockchain",
-  "definition": "Waste management via blockchain leverages distributed ledgers and SmartContract|smart contracts to create transparent, immutable records of waste generation, segregation, collection, and processing throughout the CircularEconomy|circular economy lifecycle.",
+  "definition": "The collection, transport, processing, and disposal of waste materials, increasingly augmented by blockchain-based distributed ledgers and smart contracts that create immutable records of waste generation, segregation, and recovery throughout the circular economy lifecycle. Blockchain-enabled systems enable verifiable recycling rates, incentivise responsible disposal, and prevent illegal dumping.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-network-component",
@@ -14,7 +14,7 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.4,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,11 +23,38 @@
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:circular-economy",
+        "label": "Circular Economy"
+      },
+      {
+        "id": "urn:ngm:class:environmental-sustainability",
+        "label": "Environmental Sustainability"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:environmental-accounting",
+        "label": "Environmental Accounting"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-sustainability",
+        "label": "Blockchain Sustainability"
+      }
+    ]
   },
   "wikilinks": [
     {

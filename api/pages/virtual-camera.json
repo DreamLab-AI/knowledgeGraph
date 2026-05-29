@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:virtual-camera",
   "domain": "spatial-computing",
-  "definition": "A simulated camera system in virtual production environments that captures real-time virtual scenes, enabling filmmakers to visualize and shoot CG environments as if using a physical camera with real-world lens and movement characteristics.",
+  "definition": "A simulated camera system in virtual production environments that captures real-time virtual scenes, enabling filmmakers to visualise and shoot CG environments as though using a physical camera with real-world lens characteristics \u2014 including focal length, aperture, and depth-of-field \u2014 and six-DoF movement tracking. It integrates with motion capture rigs, LED volume stages, and game engines to deliver live compositing preview and Genlock-synchronised output.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-display-and-rendering",
@@ -17,20 +17,52 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:virtual-scouting",
+        "label": "Virtual Scouting"
+      },
+      {
+        "id": "urn:ngm:class:virtual-production-pipeline",
+        "label": "Virtual Production Pipeline"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "id": "urn:ngm:class:virtual-production-volume",
+        "label": "Virtual Production Volume"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:virtual-stage",
+        "label": "Virtual Stage"
+      }
+    ],
     "relatedTo": []
   },
   "wikilinks": [

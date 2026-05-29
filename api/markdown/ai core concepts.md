@@ -146,15 +146,33 @@ public:: true
   "@id": "urn:ngm:class:ai-core-concepts",
   "@type": "Class",
   "label": "ai core concepts",
-  "definition": "Core artificial intelligence concepts encompass foundational frameworks and modologies enabling intelligent systems: MachineLearning|machine learning paradigms (SupervisedLearning|supervised, UnsupervisedLearning|unsupervised, ReinforcementLearning|reinforcement), neural architect...",
+  "definition": "Foundational artificial intelligence technologies — including machine learning paradigms (supervised, unsupervised, reinforcement), neural architectures (neural networks, transformers, CNNs), generative models, and classical symbolic reasoning — that collectively enable intelligent system behaviour. In metaverse contexts these concepts drive NPC dialogue, environment perception, procedural content generation, and federated privacy-preserving learning.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-research-area",
       "label": "AI Research Area"
     }
   ],
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
+      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
+      {"@id": "urn:ngm:class:inference", "label": "Inference"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"},
+      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"}
+    ]
+  },
   "quality": 0.4,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -329,7 +347,9 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **Has-part**: [[Machine Learning]], [[Neural Network]], [[Generative AI]], [[Reinforcement Learning]]
+  - **Enables**: [[Natural Language Processing]], [[Computer Vision]], [[Inference]]
+  - **Uses**: [[Data Pipeline]] (training data flow), [[Federated Learning]] (privacy-preserving training)
 
 - ### Content
   - AI core concepts encompass machine learning paradigms, neural architectures, and symbolic reasoning enabling intelligent systems that power NPCs, environment perception, and procedural content generation with ethical considerations for bias, explainability, and transparency.

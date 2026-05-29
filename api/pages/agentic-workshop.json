@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:agentic-workshop",
   "domain": "artificial-intelligence",
-  "definition": "Agentic Workshop is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "A structured training programme introducing practitioners to agentic AI systems, covering context engineering, memory management, agent orchestration tools (such as Roo Code), and practical case studies in project management, data visualisation, and academic research through phased, multi-session instruction.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-application",
@@ -14,20 +14,52 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:advice-for-developing-gen-ai",
+        "label": "Advice for developing GenAI"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -42,9 +42,9 @@ public:: true
   "@id": "urn:ngm:class:rb-0041-inertia",
   "@type": "Class",
   "label": "rb 0041 inertia",
-  "definition": "inertia is a robotics and autonomous systems concept and a type of Newton-Euler Dynamics.",
+  "definition": "In robotics, inertia refers to the resistance of a robot's links and payload to changes in motion, quantified by the inertia tensor for rotational dynamics and mass for translational dynamics. Accurate inertia modelling is essential for dynamic control, trajectory planning, and compliance with power-and-force-limiting safety requirements, because high inertia directly increases the impact forces during unintended contact.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-actuation-and-control",
@@ -55,11 +55,27 @@ public:: true
       "label": "Newton-Euler Dynamics"
     }
   ],
-  "quality": 0.5,
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:rb-0022-robot-dynamics", "label": "rb 0022 robot dynamics"},
+      {"@id": "urn:ngm:class:robot-dynamics", "label": "Robot Dynamics"},
+      {"@id": "urn:ngm:class:rigid-body-dynamics", "label": "Rigid Body Dynamics"},
+      {"@id": "urn:ngm:class:rb-0043-torque", "label": "rb 0043 torque"},
+      {"@id": "urn:ngm:class:rb-0045-acceleration", "label": "rb 0045 acceleration"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:rb-0033-payload", "label": "rb 0033 payload"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:rb-0064-computed-torque-control", "label": "rb 0064 computed torque control"},
+      {"@id": "urn:ngm:class:rb-0094-power-and-force-limiting", "label": "rb 0094 power and force limiting"}
+    ]
   }
 }
 ```

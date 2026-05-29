@@ -5,29 +5,103 @@
   "public": true,
   "classIri": "urn:ngm:class:aiops",
   "domain": "artificial-intelligence",
-  "definition": "AIOps is a artificial intelligence concept and a type of Artificial Intelligence.",
+  "definition": "AIOps (Artificial Intelligence for IT Operations) applies machine learning, natural language processing, and big data analytics to automate and enhance IT operational tasks including event correlation, anomaly detection, root-cause analysis, incident management, and capacity planning. By continuously ingesting telemetry streams \u2014 logs, metrics, and traces \u2014 from complex distributed systems, AIOps platforms surface actionable insights that would be impossible for human operators to detect at scale, progressively shifting operations from reactive incident response towards predictive and autonomous self-healing.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure (Category)"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "id": "urn:ngm:class:ai-monitoring",
+        "label": "AI Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:ai-incident",
+        "label": "AI Incident"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:operational-resilience",
+        "label": "Operational Resilience"
+      },
+      {
+        "id": "urn:ngm:class:platform-engineering",
+        "label": "Platform Engineering"
+      },
+      {
+        "id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "id": "urn:ngm:class:monitoring-dashboard",
+        "label": "Monitoring Dashboard"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:cloud-native-applications",
+        "label": "Cloud-Native Applications"
+      }
+    ]
   },
   "wikilinks": [
     {

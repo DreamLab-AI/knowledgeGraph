@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:voice-cloning",
   "domain": "artificial-intelligence",
-  "definition": "A speech synthesis technique that uses a short reference audio sample to train or condition a text-to-speech model to reproduce the prosody, timbre, and speaking style of a target speaker.",
+  "definition": "Voice cloning is a speech synthesis technique that uses a short reference audio recording of a target speaker to condition or fine-tune a neural text-to-speech (TTS) model such that it reproduces that speaker's vocal characteristics \u2014 including timbre, prosody, accent, and speaking rhythm \u2014 when given arbitrary text. Modern voice cloning systems rely on speaker encoder networks that extract a fixed-dimensional speaker embedding from the reference audio, which is then provided as conditioning input to a sequence-to-sequence acoustic model and vocoder. Zero-shot voice cloning extends this capability to entirely unseen speakers without any fine-tuning, using large pre-trained generative models.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-application",
@@ -14,20 +14,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:text-to-speech",
+        "label": "Text-to-Speech"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:deepfakes",
+        "label": "Deepfakes"
+      },
+      {
+        "id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

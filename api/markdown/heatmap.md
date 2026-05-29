@@ -33,20 +33,37 @@ public:: true
   "@id": "urn:ngm:class:heatmap",
   "@type": "Class",
   "label": "heatmap",
-  "definition": "heatmap is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A heatmap is a data visualisation technique that encodes numerical values as colour intensities in a two-dimensional matrix, allowing rapid visual comparison of magnitudes across categorical dimensions. In the context of AI risk and impact analysis, heatmaps are used to compare urgency, impact, and composite severity scores across AI risk categories (such as security risks, algorithmic bias, job automation, and AI ethics), guiding prioritisation for governance and regulation. Heatmaps are typically rendered with colour-scheme gradients (e.g., Vega-Lite's blues scheme) and can be embedded directly in knowledge-graph pages for interactive analysis.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
-  "quality": 0.5,
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:data-visualisation", "label": "Data Visualisation"},
+      {"@id": "urn:ngm:class:data-analytics", "label": "Data Analytics"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:ai-risk", "label": "AI Risk"},
+      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"},
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
+      {"@id": "urn:ngm:class:algorithmic-bias", "label": "Algorithmic Bias"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:ai-risk-management", "label": "AI Risk Management"},
+      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"},
+      {"@id": "urn:ngm:class:visualization-layer", "label": "Visualization Layer"}
+    ]
   }
 }
 ```
@@ -72,14 +89,17 @@ public:: true
 
 
 - ### Definition
-  - heatmap is a concept within the ngm domain.
+  A **heatmap** is a two-dimensional data visualisation in which cell colour encodes a quantitative value, enabling rapid comparison of magnitudes across two categorical axes. In the AI risk domain, heatmaps plot risk categories (Security Risks, Algorithmic Bias, Job Automation, AI Ethics, etc.) against metrics (Urgency, Impact, Severity) to produce a composite risk landscape. The Vega-Lite rendering embedded in this page uses a "blues" colour scheme with a domain of 40–100 and manually ranked severity scores per category.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:Heatmap
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Built using Data Visualisation and Data Analytics infrastructure.
+  - Directly represents AI Risk categories including AI Ethics, Algorithmic Bias, AI Governance, and AI Regulation dimensions.
+  - Supports AI Risk Management decision-making by making composite severity visible at a glance.
+  - Rendered via Vega-Lite (Visualization Layer) embedded in Logseq.
 
 - ### Content
   - add in risk minimax, add composite severity column, reorder for severity, highlight GenAI for media in bold

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:drug-discovery-ai",
   "domain": "artificial-intelligence",
-  "definition": "Drug Discovery AI encompasses artificial intelligence systems that accelerate pharmaceutical research and development through automated molecular design, virtual screening, target identification, toxicity prediction, and clinical trial optimisation.",
+  "definition": "Drug Discovery AI encompasses artificial intelligence systems that accelerate pharmaceutical research and development through automated molecular design, virtual screening, target identification, toxicity prediction, and clinical trial optimisation. These systems integrate cheminformatics, molecular modelling, and machine learning \u2014 including graph neural networks and generative models \u2014 to reduce drug development timelines and costs whilst improving candidate success rates.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-application",
@@ -13,21 +13,53 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:treatment-planning-ai",
+        "label": "Treatment Planning AI"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:medical-ai",
+        "label": "Medical AI"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -7,7 +7,12 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses:: [[Diffusion Model]]
+  - uses:: [[Generative Adversarial Network]]
+  - enables:: [[Text-to-Image]]
+  - enables:: [[Video Generation]]
+  - requires:: [[Training Data]]
+  - relatedTo:: [[Computer Vision]]
 
 - ### Content
   - Image Generation is the synthesis of realistic or stylised images using generative AI models including Generative Adversarial Networks (GANs), Variational Autoencoders (VAEs), and Diffusion Models. Modern image generation systems (DALL-E, Stable Diffusion, Midjourney) produce high-fidelity images from text descriptions, sketches, or latent representations, enabling creative applications, data augmentation, and content creation.

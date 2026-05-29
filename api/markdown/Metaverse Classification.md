@@ -42,9 +42,10 @@ public:: true
   "@id": "urn:ngm:class:metaverse-classification",
   "@type": "Class",
   "label": "Metaverse Classification",
-  "definition": "Metaverse Classification is a type of Etsi Metaverse Domain Taxonomy in the spatial computing domain.",
+  "definition": "A structured taxonomy scheme for categorising metaverse platforms, applications, and components according to defined criteria such as openness, immersion level, economic model, and governance structure, enabling systematic comparison and standardised description within the ETSI metaverse domain model.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -55,11 +56,38 @@ public:: true
       "label": "Etsi Metaverse Domain Taxonomy"
     }
   ],
-  "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "uses": [
+      {
+        "@id": "urn:ngm:class:etsi-metaverse-domain-model",
+        "label": "Etsi Metaverse Domain Model"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:metaverse-domain",
+        "label": "Metaverse Domain"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-ontology",
+        "label": "Metaverse Ontology"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-architecture",
+        "label": "Metaverse Architecture"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:etsi-domain-immersive",
+        "label": "Etsi Domain Immersive"
+      }
+    ]
   }
 }
 ```
@@ -91,14 +119,18 @@ public:: true
 
 
 - ### Definition
-  - Metaverse Classification is a concept within the metaverse domain. Further enrichment pending.
+  - A structured taxonomy scheme for categorising metaverse platforms, applications, and components according to defined criteria such as openness, immersion level, economic model, and governance structure, enabling systematic comparison and standardised description within the ETSI metaverse domain model.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:MetaverseClassification
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses: [[Etsi Metaverse Domain Model]]
+  - Standardized By: [[Etsi Domain Immersive]]
+  - Related To: [[Metaverse Domain]]
+  - Related To: [[Metaverse Ontology]]
+  - Related To: [[Metaverse Architecture]]
 
 - ### Content
 

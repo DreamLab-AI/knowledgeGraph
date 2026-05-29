@@ -42,15 +42,34 @@ public:: true
   "@id": "urn:ngm:class:aiethics-domain",
   "@type": "Class",
   "label": "AIEthicsDomain",
-  "definition": "The AIicsDomain represents the comprehensive knowledge domain of ical considerations, fairness principles, governance frameworks, and accountability mechanisms in artificial intelligence systems.",
+  "definition": "The AIEthicsDomain is the comprehensive knowledge domain encompassing ethical considerations, fairness principles, governance frameworks, and accountability mechanisms for artificial intelligence systems, spanning mathematical fairness metrics, bias mitigation techniques, transparency methods, and regulatory compliance across the full AI lifecycle.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
     }
   ],
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:fairness", "label": "Fairness"},
+      {"@id": "urn:ngm:class:explainability", "label": "Explainability"},
+      {"@id": "urn:ngm:class:accountability", "label": "Accountability"},
+      {"@id": "urn:ngm:class:bias", "label": "Bias"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
+      {"@id": "urn:ngm:class:governance-framework", "label": "Governance Framework"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:eu-ai-act", "label": "EU AI Act"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:aiethics", "label": "AIEthics"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -100,6 +119,10 @@ public:: true
 
 - ### Relationships
   - bridges-to:: [[Telecollaboration]]
+  - hasPart:: [[Fairness]], [[Explainability]], [[Accountability]], [[Bias]]
+  - requires:: [[AI Safety]], [[Governance Framework]]
+  - standardizedBy:: [[EU AI Act]]
+  - relatedTo:: [[AIEthics]]
 
 - ### Content
   - **Classification**

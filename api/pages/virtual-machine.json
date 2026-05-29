@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:virtual-machine",
   "domain": "infrastructure",
-  "definition": "A virtual machine in blockchain contexts is a runtime environment executing SmartContract|smart contracts deterministically, translating high-level contract code into low-level operations whilst enforcing resource limits and preventing unauthorised state modifications.",
+  "definition": "A sandboxed runtime environment that executes smart contract bytecode deterministically across distributed nodes, translating high-level contract code into low-level operations whilst metering computational resource consumption and enforcing state-transition rules. The Ethereum Virtual Machine is the canonical reference implementation, with alternatives including WebAssembly-based runtimes for improved performance.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
@@ -18,20 +18,44 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.4,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:smart-contract-execution",
+        "label": "Smart Contract Execution"
+      }
+    ]
   },
   "wikilinks": [
     {

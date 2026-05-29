@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:spatial-mapping-technology",
   "domain": "spatial-computing",
-  "definition": "Spatial Mapping Technology is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Spatial Mapping Technology refers to hardware and software systems that capture, process, and maintain geometric representations of physical environments in real time, enabling AR and MR devices to understand and interact with their surroundings. Core techniques include depth sensing, structured light, time-of-flight, and SLAM algorithms that fuse sensor data into persistent, updatable mesh models.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -14,20 +14,51 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:spatial-mapping",
+        "label": "Spatial Mapping"
+      },
+      {
+        "id": "urn:ngm:class:spatial-anchor",
+        "label": "Spatial Anchor"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "id": "urn:ngm:class:depth-sensing",
+        "label": "Depth Sensing"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      }
+    ]
   },
   "wikilinks": [
     {

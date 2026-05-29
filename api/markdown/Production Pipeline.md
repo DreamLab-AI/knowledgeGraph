@@ -42,16 +42,32 @@ public:: true
   "@id": "urn:ngm:class:production-pipeline",
   "@type": "Class",
   "label": "Production Pipeline",
-  "definition": "Production Pipeline is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "The end-to-end sequence of tools, processes, and automated stages that transform raw creative or data assets into finished, deployable outputs. In spatial computing contexts a production pipeline typically spans asset creation, format conversion, quality assurance, rendering, and deployment to target platforms (game engines, XR runtimes, or streaming services).",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:rendering-pipeline", "label": "Rendering Pipeline"},
+      {"@id": "urn:ngm:class:digital-asset-workflow", "label": "Digital Asset Workflow"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"},
+      {"@id": "urn:ngm:class:asset-format-standards", "label": "Asset Format Standards"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:workflow-automation", "label": "Workflow Automation"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -87,14 +103,17 @@ public:: true
 
 
 - ### Definition
-  - Production Pipeline is a concept within the metaverse domain. Further enrichment pending.
+  - The end-to-end sequence of tools, processes, and automated stages that transform raw creative or data assets into finished, deployable outputs. In spatial computing contexts a production pipeline typically spans asset creation, format conversion, quality assurance, rendering, and deployment to target platforms (game engines, XR runtimes, or streaming services).
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:ProductionPipeline
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **hasPart**: Rendering Pipeline, Digital Asset Workflow — the rendering and asset-management stages are core sub-components of a full production pipeline.
+  - **uses**: Game Engine, Asset Format Standards — pipelines depend on game engines for real-time rendering and on standardised asset formats for interchange.
+  - **enables**: Immersive Experience — a correctly functioning pipeline delivers the assets required to render immersive XR experiences.
+  - **supports**: Workflow Automation — production pipelines are primary targets for automation to increase throughput and reproducibility.
 
 - ### Content
 

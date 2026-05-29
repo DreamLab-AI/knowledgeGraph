@@ -7,7 +7,12 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses [[Knowledge Graph]]
+  - uses [[Deep Learning]]
+  - enables [[Retrieval-Augmented Generation]]
+  - enables [[Anomaly Detection]]
+  - relatedTo [[Transformer]]
+  - relatedTo [[Semantic Web]]
 
 - ### Content
   - ### Primary Definition

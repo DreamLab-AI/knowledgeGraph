@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:adversarial-attack",
   "domain": "artificial-intelligence",
-  "definition": "A deliberate attempt to manipulate an AI system by crafting malicious inputs or exploiting vulnerabilities to cause misclassification, extract confidential information, degrade performance, or subvert the system's intended behavior.",
+  "definition": "An Adversarial Attack is a deliberate attempt to manipulate an AI system by crafting malicious inputs or exploiting model vulnerabilities to cause misclassification, extract confidential information, degrade performance, or subvert intended behaviour. Attack classes include evasion, poisoning, model extraction, inversion, and backdoor, across white-box, black-box, and grey-box threat models.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -13,21 +13,44 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:robustness",
+        "label": "Robustness"
+      },
+      {
+        "id": "urn:ngm:class:safety-fine-tuning",
+        "label": "Safety Fine Tuning"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
+    ]
   },
   "wikilinks": [
     {

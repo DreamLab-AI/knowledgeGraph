@@ -122,16 +122,32 @@ public:: true
   "@id": "urn:ngm:class:etsi-domain-interoperability",
   "@type": "Class",
   "label": "ETSI_Domain_Interoperability",
-  "definition": "ETSI domain interoperability standards enabling different systems and organisations to work toger effectively through technical and semantic data exchange mechanisms, shared vocabularies, and standardised protocols.",
+  "definition": "ETSI domain consolidating standards enabling different systems and organisations to work together effectively through technical and semantic data exchange mechanisms, shared vocabularies such as NGSI-LD and SAREF, and standardised protocols. It covers avatar interoperability, digital twin synchronisation, state synchronisation, and portability of digital assets across metaverse platforms.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-network-and-comms",
       "label": "Network and Communication"
     }
   ],
-  "quality": 0.4,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:avatar-interoperability", "label": "Avatar Interoperability"},
+      {"@id": "urn:ngm:class:digital-twin-interop-protocol", "label": "Digital Twin Interop Protocol"},
+      {"@id": "urn:ngm:class:state-synchronization", "label": "State Synchronization"},
+      {"@id": "urn:ngm:class:portability", "label": "Portability"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:api-standard", "label": "API Standard"},
+      {"@id": "urn:ngm:class:interoperability-framework", "label": "Interoperability Framework"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"},
+      {"@id": "urn:ngm:class:discovery-layer", "label": "Discovery Layer"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -275,7 +291,9 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **hasPart**: Avatar Interoperability, Digital Twin Interop Protocol, State Synchronization, Portability — this domain encompasses these core interoperability mechanisms
+  - **standardizedBy**: API Standard, Interoperability Framework — ETSI TS and TR specifications govern the technical implementations
+  - **enables**: Interoperability, Discovery Layer — the domain makes cross-system discovery and data exchange possible
 
 - ### Content
   - The ETSI Interoperability domain establishes standards and mechanisms enabling different organisations and systems to exchange information and collaborate effectively through semantic data models, standardised protocols, and inclusive accessibility compliance.

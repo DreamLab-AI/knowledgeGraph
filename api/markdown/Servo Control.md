@@ -42,16 +42,34 @@ public:: true
   "@id": "urn:ngm:class:servo-control",
   "@type": "Class",
   "label": "Servo Control",
-  "definition": "Servo Control is a type of Robotics in the robotics domain.",
+  "definition": "Servo Control is a closed-loop control methodology that uses feedback signals — typically from encoders or resolvers — to precisely regulate the position, velocity, or torque of an actuator. A servo controller computes the error between a desired setpoint and the measured output, then drives a servo motor or hydraulic actuator to minimise that error, making servo control foundational to high-precision robotic joint control, CNC machining, and collaborative robot safety systems.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-actuation-and-control",
       "label": "Actuation and Control"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:feedback-control", "label": "Feedback Control"},
+      {"@id": "urn:ngm:class:pid-controller", "label": "Pid Controller"},
+      {"@id": "urn:ngm:class:servo-motor", "label": "Servo Motor"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:closed-loop-control", "label": "Closed-Loop Control"},
+      {"@id": "urn:ngm:class:actuator", "label": "Actuator"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:motion-control", "label": "Motion Control"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:safety-plc", "label": "Safety PLC"}
+    ]
+  },
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -87,14 +105,17 @@ public:: true
 
 
 - ### Definition
-  - Servo Control is a concept within the robotics domain. Further enrichment pending.
+  - Servo Control is a closed-loop control methodology that uses feedback signals — typically from encoders or resolvers — to precisely regulate the position, velocity, or torque of an actuator. A servo controller computes the error between a desired setpoint and the measured output, then drives a servo motor or hydraulic actuator to minimise that error, making servo control foundational to high-precision robotic joint control, CNC machining, and collaborative robot safety systems.
 
 - ### Semantic Classification
   - owl-class:: robotics:ServoControl
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: Feedback Control — the feedback signal closes the control loop; PID Controller — the PID algorithm is the most common servo controller implementation; Servo Motor — the actuator driven by the servo control loop.
+  - **requires**: Closed-Loop Control — servo control is by definition a closed-loop scheme; Actuator — a physical actuator is necessary to execute the commanded motion.
+  - **enables**: Motion Control — precise servo control enables the coordinated multi-axis motion required in robotics and automation.
+  - **relatedTo**: Safety PLC — Safety PLCs often supervise or command servo drives, adding certified safety monitoring to the motion control chain.
 
 - ### Content
 

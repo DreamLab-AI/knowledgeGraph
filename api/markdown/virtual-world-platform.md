@@ -8,6 +8,10 @@
 
 - ### Relationships
   - is-subclass-of:: [[Digital Platform]]
+  - hasPart:: [[Virtual World Building]], [[Virtual Economy]]
+  - enables:: [[Virtual Asset Trading]], [[Social VR]], [[Virtual Event]]
+  - uses:: [[VR Rendering Engine]], [[Blockchain]]
+  - relatedTo:: [[Metaverse Platform]], [[Virtual World Infrastructure]]
 
 - ### Content
 

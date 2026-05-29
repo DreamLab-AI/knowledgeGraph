@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:voting-mechanism",
   "domain": "blockchain",
-  "definition": "A formalised procedure by which token holders or stakeholders express preferences or decisions on protocol changes, parameter updates, or resource allocation in a decentralised network.",
+  "definition": "A voting mechanism is a formalised procedure by which token holders or other stakeholders express preferences or binding decisions on protocol upgrades, parameter changes, treasury allocation, or dispute resolution in a decentralised network. The design of a voting mechanism determines the balance between participation breadth, sybil resistance, plutocracy risk, and voter apathy; common variants include token-weighted voting, quadratic voting, conviction voting, and delegated representation through liquid democracy. The mechanism's properties directly shape the security and legitimacy of on-chain governance outcomes.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-governance-and-regulation",
@@ -14,11 +14,25 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:on-chain-voting",
+        "label": "On Chain Voting"
+      },
+      {
+        "id": "urn:ngm:class:token-weighted-voting",
+        "label": "Token-Weighted Voting"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:on-chain-governance",
+        "label": "On-chain Governance"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +41,20 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

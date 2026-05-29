@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:zero-knowledge",
   "domain": "spatial-computing",
-  "definition": "Zero-knowledge proofs are cryptographic techniques enabling one party to prove knowledge of information to another without revealing the information itself, establishing mathematical certainty about claim validity through InteractiveProtocol|interactive protocols or",
+  "definition": "Cryptographic proof systems enabling a prover to convince a verifier that a statement is true without disclosing any information beyond the validity of the statement itself. zk-SNARKs and zk-STARKs are the dominant proof systems, with applications spanning blockchain scalability through ZK-rollups, privacy-preserving identity verification, confidential DeFi transactions, and verifiable AI model outputs. Foundational to privacy-preserving computation and Layer 2 scaling architectures.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-governance-and-safety",
@@ -18,17 +18,48 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.4,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:privacy-preserving-blockchain",
+        "label": "Privacy Preserving Blockchain"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-machine-learning",
+        "label": "Zero-Knowledge Machine Learning"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": []

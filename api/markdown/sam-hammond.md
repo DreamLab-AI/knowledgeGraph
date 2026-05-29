@@ -1,12 +1,14 @@
 - ### Definition
-  - Sam Hammond is a concept within the ngm domain.
+  - Sam Hammond is a senior economist and policy analyst specialising in the intersection of transformative technology and governance, known for work at the Foundation for American Innovation. His analysis explores AI-driven economic disruption, techno-feudalism, the co-evolution of state institutions with autonomous systems, and the geopolitical implications of superintelligence, offering a libertarian-leaning but empirically grounded perspective on long-horizon AI futures.
 
 - ### Semantic Classification
-  - owl-class:: infrastructure:SamHammond
+  - owl-class:: artificial-intelligence:SamHammond
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **relatedTo**: Soon-Next-Later (AI futurology) — Hammond's timeline predictions are directly referenced in that framework; Social Contract — his techno-feudalism thesis reframes social contract theory under AI; Artificial General Intelligence — his work addresses the governance challenge of approaching AGI.
+  - **enables**: AI Governance — his policy analysis informs frameworks for governing transformative AI.
+  - **contrastsWith**: AI Safety Research — Hammond prioritises political economy and institutional adaptation over technical alignment approaches.
 
 - ### Content
   - #Public page

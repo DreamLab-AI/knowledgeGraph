@@ -114,16 +114,37 @@ public:: true
   "@id": "urn:ngm:class:disruptive-technology",
   "@type": "Class",
   "label": "Disruptive Technology",
-  "definition": "Disruptive Technology refers to innovations that create new markets and value networks by initially targeting simple applications at the bottom of the market with more accessible and affordable solutions, then relentlessly moving upmarket to eventually displace established market-leading firms, p...",
+  "definition": "Disruptive Technology refers to innovations that initially address simple or underserved applications with more accessible and affordable solutions, then move upmarket to displace established incumbents and redefine entire industries. Following Christensen's framework, disruptive technologies succeed not through direct head-on competition but by creating new value networks and business models that incumbents cannot easily replicate. Contemporary examples include generative AI, blockchain, edge computing, and spatial computing.",
   "domain": "infrastructure",
   "maturity": "emerging",
+  "qualityScore": 0.75,
+  "quality": 0.75,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:disruptive-tech-domain", "label": "Disruptive Tech Domain"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:disruption", "label": "Disruption"},
+      {"@id": "urn:ngm:class:technology-adoption", "label": "Technology Adoption"},
+      {"@id": "urn:ngm:class:digital-transformation", "label": "Digital Transformation"},
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
+      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:technology-stack", "label": "Technology Stack"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -257,9 +278,10 @@ public:: true
   - belongs-to-domain:: [[InnovationDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
-
-  - bridges-to:: [[Blockchain]] (bc)
+  - partOf:: [[DisruptiveTechDomain]]
+  - relatedTo:: [[Disruption]], [[TechnologyAdoption]], [[DigitalTransformation]], [[Blockchain]]
+  - enables:: [[GenerativeAI]], [[MachineLearning]], [[EdgeComputing]], [[InternetOfThings]]
+  - contrastsWith:: [[TechnologyStack]] (sustaining technologies)
 - ### Content
 
   #### Key Characteristics

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ai-regulation",
   "domain": "artificial-intelligence",
-  "definition": "AI regulation encompasses laws, standards, and policies imposed by governments and regulatory bodies to govern the development, deployment, and use of artificial intelligence systems.",
+  "definition": "AI regulation encompasses binding laws, technical standards, and administrative rules imposed by national or supranational bodies to govern the entire lifecycle of artificial intelligence systems \u2014 from design and training through deployment and monitoring. Regulatory instruments range from risk-based frameworks such as the EU AI Act, which imposes tiered obligations proportional to application risk, to sector-specific rules in finance, healthcare, and critical infrastructure. Regulation aims to protect fundamental rights, ensure accountability, and promote systemic safety while preserving innovation capacity.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -14,20 +14,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

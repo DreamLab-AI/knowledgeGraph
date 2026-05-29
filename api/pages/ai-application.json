@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ai-application",
   "domain": "artificial-intelligence",
-  "definition": "Intermediate taxonomy category for ai application concepts within the artificial intelligence domain.",
+  "definition": "AI Application is the taxonomy hub for deployed uses of artificial intelligence across domains \u2014 encompassing conversational AI, computer vision, generative AI, healthcare AI, autonomous systems, fraud detection, and multimodal AI. It bridges AI research and real-world deployment, grouping systems by the function they perform rather than the techniques they use.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:artificial-intelligence",
@@ -13,21 +13,76 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
+  "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:healthcare-ai",
+        "label": "Healthcare AI"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai",
+        "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-driving",
+        "label": "Autonomous Driving"
+      }
+    ],
     "requires": [],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": []

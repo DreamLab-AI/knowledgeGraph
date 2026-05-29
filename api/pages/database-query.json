@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:database-query",
   "domain": "infrastructure",
-  "definition": "Database Query is a type of Data Management in the infrastructure domain.",
+  "definition": "A structured request submitted to a database management system to retrieve, insert, update, or delete data according to defined criteria. Queries are expressed in formal query languages such as SQL for relational databases or SPARQL for RDF triple stores, and underpin knowledge graph retrieval, analytics pipelines, and real-time application data access.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-data-management",
@@ -17,21 +17,53 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      },
+      {
+        "id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:rb-0057-admittance-control",
   "domain": "robotics",
-  "definition": "admittance control is a robotics and autonomous systems concept and a type of Interaction Control.",
+  "definition": "Admittance control is an interaction-control strategy in which a robot measures contact forces and torques and converts them into corresponding desired motion (position or velocity) using a virtual mass-spring-damper model. It is the dual of impedance control: the robot senses force input and renders motion output, enabling compliant, safe physical human-robot interaction in collaborative tasks.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
@@ -17,21 +17,61 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:rb-0067-force-torque-sensor",
+        "label": "rb 0067 force torque sensor"
+      },
+      {
+        "id": "urn:ngm:class:force-control",
+        "label": "Force Control"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:impedance-control",
+        "label": "Impedance Control"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "id": "urn:ngm:class:rb-0094-power-and-force-limiting",
+        "label": "rb 0094 power and force limiting"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rb-0053-force-control",
+        "label": "rb 0053 force control"
+      },
+      {
+        "id": "urn:ngm:class:rb-0056-impedance-control",
+        "label": "rb 0056 impedance control"
+      },
+      {
+        "id": "urn:ngm:class:compliance-control",
+        "label": "Compliance Control"
+      },
+      {
+        "id": "urn:ngm:class:rb-0041-inertia",
+        "label": "rb 0041 inertia"
+      }
+    ]
   },
   "wikilinks": [
     {

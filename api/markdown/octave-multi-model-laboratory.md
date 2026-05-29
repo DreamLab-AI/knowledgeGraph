@@ -1,12 +1,14 @@
 - ### Definition
-  - Octave Multi Model Laboratory is a concept within the ngm domain.
+  - A world-class multi-modal immersive research facility at the University of Salford housing advanced display topologies, high-performance compute, and distributed systems for mixed reality, generative AI, and human-scale VR experimentation. The lab supported over 25 years of research including world firsts in collaborative mixed reality, brain scanning in phobia treatment, real-time human reconstruction from cameras, and telepresence, and served hundreds of SMEs through ERDF-funded programmes.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:OctaveMultiModelLaboratory
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart: [[Hardware and Edge]], [[Immersive Technology]], [[Mixed Reality]]
+  - enables: [[Telepresence]], [[Digital Twin]], [[Generative AI]]
+  - uses: [[GPU Compute]], [[Distributed Computing]]
 
 - ### Content
   - #Public page automatically published

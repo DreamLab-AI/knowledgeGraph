@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:merkle-tree",
   "domain": "blockchain",
-  "definition": "Hierarchical hash data structure within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "A binary tree of cryptographic hashes in which each leaf node contains the hash of a data block and each non-leaf node contains the hash of its children. Merkle trees enable efficient and tamper-evident verification of large data sets; in blockchain systems they allow nodes to confirm individual transaction inclusion without downloading an entire block.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-cryptographic-primitive",
@@ -21,21 +21,61 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:merkle-root",
+        "label": "Merkle Root"
+      },
+      {
+        "id": "urn:ngm:class:merkle-proof",
+        "label": "Merkle Proof"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      },
+      {
+        "id": "urn:ngm:class:block-header",
+        "label": "Block Header"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:block",
+        "label": "Block"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-commitment",
+        "label": "Cryptographic Commitment"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      }
+    ]
   },
   "wikilinks": [
     {

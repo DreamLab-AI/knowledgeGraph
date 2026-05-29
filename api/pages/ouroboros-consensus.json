@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ouroboros-consensus",
   "domain": "blockchain",
-  "definition": "A mathematically-verified PoS consensus protocol using slot leaders to validate transactions and add blocks. Divides time into epochs and slots, with stake pools randomly selected as slot leaders.",
+  "definition": "Ouroboros is a provably secure proof-of-stake consensus protocol developed for the Cardano blockchain, the first PoS protocol to be formally verified with cryptographic security proofs equivalent to those of proof-of-work systems. It divides blockchain time into epochs and slots, using a verifiable random function to elect slot leaders from among stake pools proportionally to their delegated stake, enabling secure, energy-efficient block production without trusted setup.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-protocol-and-consensus",
@@ -17,21 +17,86 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:epoch",
+        "label": "Epoch"
+      },
+      {
+        "id": "urn:ngm:class:finality",
+        "label": "Finality"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:probabilistic-finality",
+        "label": "Probabilistic Finality"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-sustainability",
+        "label": "Blockchain Sustainability"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:delegated-proof-of-stake",
+        "label": "Delegated Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:nominated-proof-of-stake",
+        "label": "Nominated Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:liquid-proof-of-stake",
+        "label": "Liquid Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      }
+    ]
   },
   "wikilinks": [
     {

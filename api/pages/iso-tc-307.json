@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:iso-tc-307",
   "domain": "blockchain",
-  "definition": "The ISO technical committee responsible for developing international standards for blockchain and distributed ledger technologies, including terminology, reference architecture, and security.",
+  "definition": "ISO/TC 307 is the ISO technical committee established in 2016 with a mandate to develop international standards for blockchain and distributed ledger technologies, covering terminology (ISO 22739), reference architecture, security and privacy, smart contract interactions, identity, and governance frameworks. The committee coordinates with other bodies including IEEE, ITU, and national standards organisations to ensure interoperability of DLT systems and provides normative vocabulary that underpins regulatory and procurement language in blockchain-related initiatives worldwide.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-governance-and-regulation",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity-standards",
+        "label": "Digital Identity Standards"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

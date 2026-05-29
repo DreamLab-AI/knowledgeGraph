@@ -8,6 +8,12 @@
 
 - ### Relationships
   - is-subclass-of:: [[Virtual Economy]]
+  - requires:: [[Digital Currency]]
+  - requires:: [[Smart Contract]]
+  - enables:: [[Digital Marketplace]]
+  - enables:: [[NFT]]
+  - partOf:: [[Metaverse]]
+  - contrastsWith:: [[E-Commerce]]
 
 - ### Content
 

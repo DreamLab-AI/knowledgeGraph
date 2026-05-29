@@ -8,6 +8,10 @@
 
 - ### Relationships
   - is-subclass-of:: [[Spatial Computing]]
+  - **requires**: [[Sensor Fusion]], [[SLAM]] — pose estimation fuses IMU, optical, and depth sensors; SLAM provides environment-relative localisation
+  - **enables**: [[Augmented Reality]], [[Motion Capture]] — precise pose data is prerequisite for AR object anchoring and motion capture playback
+  - **uses**: [[Computer Vision]] — markerless pose estimation algorithms rely on computer vision techniques (feature matching, depth estimation)
+  - **partOf**: [[Physics Simulation]] — object pose is the primary state variable integrated by physics engines at each simulation step
 
 - ### Content
 

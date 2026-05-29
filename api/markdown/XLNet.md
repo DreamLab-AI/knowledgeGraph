@@ -42,15 +42,32 @@ public:: true
   "@id": "urn:ngm:class:xlnet",
   "@type": "Class",
   "label": "XLNet",
-  "definition": "A generalised autoregressive pre-training mod that learns bidirectional contexts by maximising expected likelihood over all permutations of the factorisation order, overcoming limitations of BERT's masked language modelling.",
+  "definition": "A generalised autoregressive pre-training model that learns bidirectional contexts by maximising the expected likelihood over all permutations of the token factorisation order, using a two-stream self-attention mechanism to avoid information leakage. XLNet integrates the Transformer-XL segment recurrence mechanism for long-range dependency modelling and outperforms BERT on 20 NLU benchmarks.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:inference", "label": "Inference"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:word-piece", "label": "WordPiece"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:vocabulary", "label": "Vocabulary"},
+      {"@id": "urn:ngm:class:training", "label": "Training"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -93,7 +110,10 @@ public:: true
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **Uses**: [[Transformer]] (Transformer-XL backbone with segment recurrence), [[Natural Language Processing]]
+  - **Enables**: [[Inference]] (bidirectional autoregressive generation)
+  - **Contrasts-with**: [[WordPiece]] (XLNet uses SentencePiece tokenisation rather than WordPiece)
+  - **Requires**: [[Vocabulary]] (SentencePiece vocabulary), [[Training]] (permutation-based pre-training)
 - ### Content
   - A generalised autoregressive pre-training method that learns bidirectional contexts by maximising expected likelihood over all permutations of the factorisation order, overcoming limitations of BERT's masked language modelling.
   ## Characteristics

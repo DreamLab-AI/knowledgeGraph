@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:circulating-supply",
   "domain": "blockchain",
-  "definition": "Publicly available tokens within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "Circulating Supply is the quantity of a blockchain token that is publicly available and actively tradeable in the market at a given point in time\u2014excluding tokens locked in smart contracts, held in treasury reserves, vested to team members, or burned. It serves as the operative supply figure for computing market capitalisation and price-to-earnings metrics, and changes continuously as new tokens are emitted via block rewards and locked tokens are released according to vesting schedules.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-defi-and-economics",
@@ -21,21 +21,73 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:emission-schedule",
+        "label": "Emission Schedule"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:burning-mechanism",
+        "label": "Burning Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-economics",
+        "label": "Blockchain Economics"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:inflationary-token",
+        "label": "Inflationary Token"
+      },
+      {
+        "id": "urn:ngm:class:deflationary-token",
+        "label": "Deflationary Token"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:total-supply",
+        "label": "Total Supply"
+      },
+      {
+        "id": "urn:ngm:class:fixed-supply-token",
+        "label": "Fixed Supply Token"
+      },
+      {
+        "id": "urn:ngm:class:halving",
+        "label": "Halving"
+      },
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      },
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      },
+      {
+        "id": "urn:ngm:class:market-capitalization",
+        "label": "Market Capitalization"
+      }
+    ]
   },
   "wikilinks": [
     {

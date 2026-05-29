@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:property-registry",
   "domain": "blockchain",
-  "definition": "Blockchain-based land title recording systems employing immutable distributed ledgers, cryptographic signatures, and timestamp verification to create tamper-proof property ownership records, reduce fraud, accelerate transaction processing from 30-90 days to 72 hours, and enable transparent title ...",
+  "definition": "Blockchain-based land title recording systems employing immutable distributed ledgers, cryptographic signatures, and timestamp verification to create tamper-proof property ownership records, reduce fraud, and accelerate transaction processing from 30\u201390 days to 72 hours. Dubai processed 188,000+ transactions worth AED 625 billion in 2024; Georgia was the first country to adopt blockchain land administration at national scale.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-token-and-asset",
@@ -18,20 +18,56 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:asset-registry",
+        "label": "Asset Registry"
+      },
+      {
+        "id": "urn:ngm:class:asset-tokenization",
+        "label": "Asset Tokenization"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-domain",
+        "label": "Blockchain Domain"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ]
   },
   "wikilinks": [
     {

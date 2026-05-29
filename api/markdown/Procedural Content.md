@@ -37,20 +37,56 @@ public:: true
   "@id": "urn:ngm:class:procedural-content",
   "@type": "Class",
   "label": "Procedural Content",
-  "definition": "Procedural Content is a spatial computing concept and a type of spatial-computing.",
+  "definition": "Digital content—terrain, architecture, textures, narrative events, or game levels—generated algorithmically from rules and random seeds rather than authored by hand. Procedural content enables scalable world-building in metaverse and gaming contexts by producing combinatorially vast, non-repetitive environments at runtime whilst reducing manual asset creation effort.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
     }
   ],
-  "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:procedural-content-generation",
+        "label": "Procedural Content Generation"
+      },
+      {
+        "@id": "urn:ngm:class:adaptive-virtual-world",
+        "label": "Adaptive Virtual World"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:procedural-generation",
+        "label": "Procedural Generation"
+      },
+      {
+        "@id": "urn:ngm:class:algorithm",
+        "label": "Algorithm"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-asset",
+        "label": "3D Asset"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-content-pipeline",
+        "label": "Metaverse Content Pipeline"
+      }
+    ]
   }
 }
 ```
@@ -76,14 +112,16 @@ public:: true
 
 
 - ### Definition
-  - ProceduralContent is a concept within the ngm domain.
+  - Digital content—terrain, architecture, textures, narrative events, or game levels—generated algorithmically from rules and random seeds rather than authored by hand. Procedural content enables scalable world-building in metaverse and gaming contexts by producing combinatorially vast, non-repetitive environments at runtime whilst reducing manual asset creation effort.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:ProceduralContent
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses [[Procedural Generation]], [[Algorithm]]
+  - Enables [[Procedural Content Generation]], [[Adaptive Virtual World]]
+  - Related to [[Game Engine]], [[3D Asset]], [[Metaverse Content Pipeline]]
 
 - ### Content
   # ProceduralContent

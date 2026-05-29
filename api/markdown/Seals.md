@@ -33,16 +33,31 @@ public:: true
   "@id": "urn:ngm:class:seals",
   "@type": "Class",
   "label": "Seals",
-  "definition": "Seals is a technology infrastructure concept and a type of infrastructure.",
-  "domain": "infrastructure",
-  "maturity": "draft",
+  "definition": "Seals, in this knowledge graph context, refers to a practical AI pipeline experiment using traditional Chinese seal art (海豹-style stamps) as a five-shot image classification and translation task. The experiment demonstrates multimodal AI capabilities: image analysis via OpenAI vision APIs, English description generation, Chinese translation, and appropriateness ranking, subsequently serialised to JSON for potential NFT metadata enrichment.",
+  "domain": "artificial-intelligence",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:multimodal-ai", "label": "Multimodal AI"},
+      {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"},
+      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:nft", "label": "NFT"},
+      {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+    ]
+  },
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -72,14 +87,16 @@ public:: true
 
 
 - ### Definition
-  - Seals is a concept within the ngm domain.
+  - Seals, in this knowledge graph context, refers to a practical AI pipeline experiment using traditional Chinese seal art (海豹-style stamps) as a five-shot image classification and translation task. The experiment demonstrates multimodal AI capabilities: image analysis via OpenAI vision APIs, English description generation, Chinese translation, and appropriateness ranking, subsequently serialised to JSON for potential NFT metadata enrichment.
 
 - ### Semantic Classification
-  - owl-class:: infrastructure:Seals
+  - owl-class:: artificial-intelligence:Seals
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: Multimodal AI — the pipeline uses vision and language models in combination; Image Generation — image analysis and description generation are the core AI tasks; Generative AI — the translation and summarisation steps leverage generative AI.
+  - **enables**: NFT — the pipeline generates structured metadata that could enrich NFT records; Digital Asset — the seal images processed are candidates for digital asset encoding.
+  - **relatedTo**: Computer Vision — image analysis of seal artwork is a computer vision classification task.
 
 - ### Content
   - This is [海豹

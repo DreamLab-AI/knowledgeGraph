@@ -5,29 +5,74 @@
   "public": true,
   "classIri": "urn:ngm:class:policy-update-magnitude",
   "domain": "artificial-intelligence",
-  "definition": "Size of policy updates in reinforcement learning.",
+  "definition": "Policy Update Magnitude is a measure of how much a reinforcement learning agent's policy changes between successive gradient update steps, typically quantified as the KL divergence between the old and new policy distributions or as the Euclidean norm of the parameter change vector. Controlling this magnitude is essential to training stability: excessively large updates can cause catastrophic performance collapse, whilst excessively small updates slow convergence. Algorithms such as Proximal Policy Optimisation (PPO) and Trust Region Policy Optimisation (TRPO) impose explicit constraints on policy update magnitude to balance exploration, exploitation, and stability.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
+      "id": "urn:ngm:class:reinforcement-learning",
+      "label": "Reinforcement Learning"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:learning-rate-schedule",
+        "label": "Learning Rate Schedule"
+      },
+      {
+        "id": "urn:ngm:class:gradient-clipping",
+        "label": "Gradient Clipping"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning-algorithm",
+        "label": "Reinforcement Learning Algorithm"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning-algorithm",
+        "label": "Reinforcement Learning Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:proximal-policy-optimisation",
+        "label": "Proximal Policy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:reward-function",
+        "label": "Reward Function"
+      },
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:rb-0026-robot-joint",
   "domain": "robotics",
-  "definition": "robot joint is a robotics and autonomous systems concept and a type of Robot.",
+  "definition": "A robot joint is a mechanical articulation connecting two adjacent robot links that permits one or more degrees of relative motion\u2014translational (prismatic) or rotational (revolute). Robot joints are the fundamental kinematic elements that determine a manipulator's workspace and degrees of freedom; their dynamic properties, including inertia, backlash, and compliance, critically influence both control precision and safe interaction with the environment.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
@@ -17,12 +17,30 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:rb-0072-encoder",
+        "label": "rb 0072 encoder"
+      },
+      {
+        "id": "urn:ngm:class:robot-actuator",
+        "label": "Robot Actuator"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:rb-0021-robot-kinematics",
+        "label": "rb 0021 robot kinematics"
+      },
+      {
+        "id": "urn:ngm:class:rb-0054-position-control",
+        "label": "rb 0054 position control"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -30,8 +48,30 @@
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:rb-0027-robot-link",
+        "label": "rb 0027 robot link"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rb-0040-backlash",
+        "label": "rb 0040 backlash"
+      },
+      {
+        "id": "urn:ngm:class:rb-0041-inertia",
+        "label": "rb 0041 inertia"
+      },
+      {
+        "id": "urn:ngm:class:rb-0038-compliance",
+        "label": "rb 0038 compliance"
+      },
+      {
+        "id": "urn:ngm:class:rb-0039-stiffness",
+        "label": "rb 0039 stiffness"
+      }
+    ]
   },
   "wikilinks": [
     {

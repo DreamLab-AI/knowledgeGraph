@@ -54,9 +54,10 @@ public:: true
   "@id": "urn:ngm:class:panoptic-segmentation",
   "@type": "Class",
   "label": "Panoptic Segmentation",
-  "definition": "Panoptic Segmentation unifies semantic segmentation and instance segmentation by assigning every pixel both a class label and an instance ID, providing a complete scene understanding with \"thing\" classes (countable objects) and \"stuff\" classes (amorphous regions).",
+  "definition": "A computer vision task that unifies semantic segmentation and instance segmentation by assigning every image pixel both a class label and an instance identifier, providing holistic scene parsing that distinguishes countable foreground objects (\"things\") from amorphous background regions (\"stuff\"). Architectures such as Panoptic FPN, Panoptic-DeepLab, and MaskFormer formalise this unified representation.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-interaction",
@@ -68,6 +69,36 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:instance-segmentation",
+        "label": "Instance Segmentation"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-segmentation",
+        "label": "Semantic Segmentation"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:scene-understanding",
+        "label": "Scene Understanding"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:computer-vision-task",
+        "label": "Computer Vision Task"
+      }
+    ]
   }
 }
 ```
@@ -122,7 +153,10 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Has Part: [[Instance Segmentation]], [[Semantic Segmentation]]
+  - Enables: [[Scene Understanding]]
+  - Requires: [[Object Detection]]
+  - Related To: [[Computer Vision Task]]
 
 - ### Content
   - Panoptic Segmentation unifies semantic segmentation and instance segmentation by assigning every pixel both a class label and an instance ID, providing a complete scene understanding with "thing" classes (countable objects) and "stuff" classes (amorphous regions). Panoptic segmentation offers holistic scene parsing for applications requiring comprehensive visual understanding such as autonomous driving and robotics.

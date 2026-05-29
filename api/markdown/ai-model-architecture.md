@@ -26,7 +26,7 @@ public:: true
   "@type": "Class",
   "@id": "urn:ngm:class:ai-model-architecture",
   "label": "AI Model Architecture",
-  "definition": "Intermediate taxonomy category for ai model architecture concepts within the artificial intelligence domain.",
+  "definition": "Taxonomy hub encompassing the structural designs, layer configurations, and computational graphs used to construct machine-learning models, including transformer architectures, convolutional networks, recurrent networks, diffusion models, and mixture-of-experts designs. Architecture choices determine model capacity, training efficiency, and deployment characteristics.",
   "domain": "artificial-intelligence",
   "subClassOf": [
     {
@@ -34,7 +34,27 @@ public:: true
       "label": "Artificial Intelligence"
     }
   ],
-  "relations": {},
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
+      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
+      {"@id": "urn:ngm:class:recurrent-neural-network", "label": "Recurrent Neural Network"},
+      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
+      {"@id": "urn:ngm:class:mixture-of-experts", "label": "Mixture of Experts"},
+      {"@id": "urn:ngm:class:encoder-decoder-architecture", "label": "Encoder Decoder Architecture"},
+      {"@id": "urn:ngm:class:autoencoder", "label": "Autoencoder"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
+      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
+      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"}
+    ]
+  },
   "qualityScore": 0.8,
   "maturity": "established"
 }

@@ -106,9 +106,10 @@ public:: true
   "@id": "urn:ngm:class:accountable-party",
   "@type": "Class",
   "label": "Accountable Party",
-  "definition": "An Accountable Party is an individual, organization, or role bearing responsibility for specific aspects of an AI system's development, deployment, operation, or outcomes, with corresponding obligations to ensure compliance with governance principles, regulatory requirements, and ical standards.",
+  "definition": "An Accountable Party is an individual, organisation, or role that bears defined responsibility for specific aspects of an AI system's development, deployment, operation, or outcomes, with corresponding obligations to ensure compliance with governance principles, regulatory requirements, and ethical standards. Accountability addresses the foundational question of who bears responsibility when AI systems cause harm or produce unfair outcomes, requiring that identifiable parties possess the authority, resources, and monitoring capacity commensurate with their obligations. Accountable parties span the AI value chain—from data providers and model developers to deploying organisations, system operators, and governance bodies—each with lifecycle-specific duties enforced through formal reporting structures and consequence mechanisms.",
   "domain": "artificial-intelligence",
   "maturity": "established",
+  "qualityScore": 0.8,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
@@ -119,7 +120,34 @@ public:: true
       "label": "AI Governance Principle"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:accountability", "label": "Accountability"},
+      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"},
+      {"@id": "urn:ngm:class:human-oversight", "label": "Human Oversight"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
+      {"@id": "urn:ngm:class:transparency", "label": "Transparency"},
+      {"@id": "urn:ngm:class:compliance-monitoring", "label": "Compliance Monitoring"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:ai-ethics-board", "label": "AI Ethics Board"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"},
+      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"},
+      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"},
+      {"@id": "urn:ngm:class:compliance-control", "label": "Compliance Control"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:ai-governance-and-ethics", "label": "AI Governance and Ethics"},
+      {"@id": "urn:ngm:class:governance-framework", "label": "Governance Framework"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:ai-governance-framework", "label": "AI Governance Framework"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -235,7 +263,7 @@ public:: true
 
 
 - ### Definition
-  - An Accountable Party is an individual, organization, or role bearing responsibility for specific aspects of an AI system's development, deployment, operation, or outcomes, with corresponding obligations to ensure compliance with governance principles, regulatory requirements, and ethical standards. Accountability in AI contexts addresses the critical question: when AI systems cause harm or produce unfair outcomes, who bears responsibility and what obligations do they have to prevent, detect, and remediate problems? Accountable parties span the AI lifecycle and value chain: data providers responsible for data quality and representativeness, model developers accountable for technical robustness and bias mitigation, deploying organizations responsible for appropriate use and human oversight, operators accountable for monitoring and maintenance, and governance bodies responsible for policy and compliance. Accountability requires more than merely identifying responsible parties—it demands establishing clear obligations, providing necessary authority and resources, implementing monitoring and reporting mechanisms, and enforcing consequences for failures. The complexity of AI systems creates accountability challenges: distributed development involving multiple organizations, automated decision-making obscuring human responsibility, emergent behaviors not explicitly programmed, and temporal gaps between development and deployment. Effective accountability frameworks must navigate these challenges while ensuring individuals and organizations cannot evade responsibility through complexity or distributed authorship.
+  An Accountable Party is an individual, organisation, or role bearing defined responsibility for specific aspects of an AI system's development, deployment, operation, or outcomes, with corresponding obligations to ensure compliance with governance principles, regulatory requirements, and ethical standards. Accountability addresses the foundational question of who bears responsibility when AI systems cause harm, requiring that identifiable parties hold authority, resources, and monitoring capacity commensurate with their obligations. Parties span the AI value chain—data providers, model developers, deploying organisations, system operators, and governance bodies—each with lifecycle-specific duties enforced through formal reporting structures. Accountable parties span the AI lifecycle and value chain: data providers responsible for data quality and representativeness, model developers accountable for technical robustness and bias mitigation, deploying organizations responsible for appropriate use and human oversight, operators accountable for monitoring and maintenance, and governance bodies responsible for policy and compliance. Accountability requires more than merely identifying responsible parties—it demands establishing clear obligations, providing necessary authority and resources, implementing monitoring and reporting mechanisms, and enforcing consequences for failures. The complexity of AI systems creates accountability challenges: distributed development involving multiple organizations, automated decision-making obscuring human responsibility, emergent behaviors not explicitly programmed, and temporal gaps between development and deployment. Effective accountability frameworks must navigate these challenges while ensuring individuals and organizations cannot evade responsibility through complexity or distributed authorship.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:AccountableParty
@@ -245,8 +273,13 @@ public:: true
   - implemented-in-layer:: [[ConceptualLayer]]
 
 - ### Relationships
-  - is-subclass-of:: [[AI Governance Principle]]
-  - bridges-to:: [[Smart Contract]] (domain: bc)
+  - requires:: [[Accountability]], [[Compliance Framework]], [[Human Oversight]]
+  - enables:: [[AI Governance]], [[Transparency]], [[Compliance Monitoring]]
+  - hasPart:: [[AI Ethics Board]]
+  - relatedTo:: [[Risk Assessment]], [[Audit Trail]], [[AI Regulation]], [[Compliance Control]]
+  - supports:: [[AI Governance and Ethics]], [[Governance Framework]]
+  - standardizedBy:: [[AI Governance Framework]]
+  - is-subclass-of:: [[AI Governance and Ethics]], [[Ai Governance Principle]]
 
 - ### Content
 

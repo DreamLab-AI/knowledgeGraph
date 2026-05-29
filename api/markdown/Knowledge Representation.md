@@ -60,7 +60,21 @@ public:: true
   "label": "Knowledge Representation",
   "definition": "Knowledge Representation in AI involves the formal encoding of information about the world in a computationally tractable format that enables reasoning, inference, and decision-making.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
+      {"@id": "urn:ngm:class:semantic-web", "label": "Semantic Web"},
+      {"@id": "urn:ngm:class:ontology", "label": "Ontology"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:bayesian-inference", "label": "Bayesian Inference"},
+      {"@id": "urn:ngm:class:question-answering", "label": "Question Answering"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:knowledge-management", "label": "Knowledge Management"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
@@ -131,6 +145,12 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[owl:Thing]]
+  - uses [[Knowledge Graph]]
+  - uses [[Semantic Web]]
+  - uses [[Ontology]]
+  - enables [[Bayesian Inference]]
+  - enables [[Question Answering]]
+  - relatedTo [[Knowledge Management]]
 
 - ### Content
 

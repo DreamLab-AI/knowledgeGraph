@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:golm",
   "domain": "infrastructure",
-  "definition": "GOLM is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "An experimental creative AI project exploring the intersection of hip-hop dance, mycelium network datasets, and machine learning to generate emergent movement vocabularies. GOLM investigates whether biological network topologies\u2014particularly fungal mycelium growth patterns\u2014can be used to train generative models that produce novel choreographic sequences and spatial interaction grammars.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
@@ -13,21 +13,44 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-performance-capture",
+        "label": "Digital Performance Capture"
+      },
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": []

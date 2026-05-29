@@ -18,19 +18,42 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:scene-understanding",
+        "label": "Scene Understanding"
+      },
+      {
+        "id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:instance-segmentation",
+        "label": "Instance Segmentation"
+      },
+      {
+        "id": "urn:ngm:class:panoptic-segmentation",
+        "label": "Panoptic Segmentation"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
     "relatedTo": []
   },
   "wikilinks": [

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:payment-system",
   "domain": "blockchain",
-  "definition": "Payment System is a blockchain and distributed systems concept and a type of blockchain.",
+  "definition": "A Payment System is an infrastructure layer enabling secure and auditable exchange of value between parties, encompassing fiat payment gateways, blockchain-native token transfers, and hybrid settlement mechanisms. Within virtual economies and metaverse platforms, payment systems must handle high-frequency microtransactions, cross-currency conversion, smart-contract-mediated escrow, and compliance with AML/KYC regulations while preserving user privacy and minimising settlement latency.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-defi-and-economics",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-security",
+        "label": "Cryptographic Security"
+      },
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      },
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

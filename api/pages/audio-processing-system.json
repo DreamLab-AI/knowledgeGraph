@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:audio-processing-system",
   "domain": "spatial-computing",
-  "definition": "Audio Processing System is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "An Audio Processing System is a hardware or software subsystem responsible for capturing, transforming, and rendering audio signals within spatial computing environments. It encompasses digital signal processing, spatial audio rendering (binaural, ambisonics, HRTF), noise cancellation, speech recognition integration, and real-time mixing for immersive presence.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-display-and-rendering",
@@ -13,21 +13,45 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:audio-spatialization",
+        "label": "Audio Spatialization"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:audio-technology",
+        "label": "Audio Technology"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:audio-system",
+        "label": "Audio System"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:rb-0017-rescue-robot",
   "domain": "robotics",
-  "definition": "rescue robot is a robotics and autonomous systems concept and a type of Mobile Robot.",
+  "definition": "A rescue robot is a mobile robotic system specifically designed or adapted for deployment in disaster, emergency, or hazardous environments where direct human access is dangerous or impossible. Rescue robots perform tasks such as victim search-and-detection, structural reconnaissance, rubble traversal, gas sensing, and teleoperated manipulation of debris. They typically integrate rugged locomotion systems (tracked, legged, or serpentine), multiple sensor modalities (thermal, depth camera, LIDAR, gas detectors), and semi-autonomous navigation with human-on-the-loop teleoperation.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-robot-type",
@@ -17,21 +17,65 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:ngm:class:obstacle-avoidance",
+        "label": "Obstacle Avoidance"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "id": "urn:ngm:class:rb-0077-depth-camera",
+        "label": "rb 0077 depth camera"
+      },
+      {
+        "id": "urn:ngm:class:rb-0069-lidar",
+        "label": "rb 0069 lidar"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:rescue-robot",
+        "label": "Rescue Robot"
+      },
+      {
+        "id": "urn:ngm:class:swarm-robotics",
+        "label": "Swarm Robotics"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rb-0008-autonomous-robot",
+        "label": "rb 0008 autonomous robot"
+      },
+      {
+        "id": "urn:ngm:class:rb-0018-inspection-robot",
+        "label": "rb 0018 inspection robot"
+      },
+      {
+        "id": "urn:ngm:class:mobile-robot-platform",
+        "label": "Mobile Robot Platform"
+      }
+    ]
   },
   "wikilinks": [
     {

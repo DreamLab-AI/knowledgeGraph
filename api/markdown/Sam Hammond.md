@@ -38,16 +38,30 @@ public:: true
   "@id": "urn:ngm:class:sam-hammond",
   "@type": "Class",
   "label": "Sam Hammond",
-  "definition": "Sam Hammond is a technology infrastructure concept and a type of infrastructure.",
-  "domain": "infrastructure",
-  "maturity": "draft",
+  "definition": "Sam Hammond is a senior economist and policy analyst specialising in the intersection of transformative technology and governance, known for work at the Foundation for American Innovation. His analysis explores AI-driven economic disruption, techno-feudalism, the co-evolution of state institutions with autonomous systems, and the geopolitical implications of superintelligence, offering a libertarian-leaning but empirically grounded perspective on long-horizon AI futures.",
+  "domain": "artificial-intelligence",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:infra-software-engineering",
-      "label": "Software Engineering"
+      "@id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:soon-next-later-ai-futurology", "label": "Soon-Next-Later (AI futurology)"},
+      {"@id": "urn:ngm:class:social-contract", "label": "Social Contract"},
+      {"@id": "urn:ngm:class:artificial-general-intelligence", "label": "Artificial General Intelligence"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:ai-safety-research", "label": "AI Safety Research"}
+    ]
+  },
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -83,14 +97,16 @@ public:: true
 
 
 - ### Definition
-  - Sam Hammond is a concept within the ngm domain.
+  - Sam Hammond is a senior economist and policy analyst specialising in the intersection of transformative technology and governance, known for work at the Foundation for American Innovation. His analysis explores AI-driven economic disruption, techno-feudalism, the co-evolution of state institutions with autonomous systems, and the geopolitical implications of superintelligence, offering a libertarian-leaning but empirically grounded perspective on long-horizon AI futures.
 
 - ### Semantic Classification
-  - owl-class:: infrastructure:SamHammond
+  - owl-class:: artificial-intelligence:SamHammond
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **relatedTo**: Soon-Next-Later (AI futurology) — Hammond's timeline predictions are directly referenced in that framework; Social Contract — his techno-feudalism thesis reframes social contract theory under AI; Artificial General Intelligence — his work addresses the governance challenge of approaching AGI.
+  - **enables**: AI Governance — his policy analysis informs frameworks for governing transformative AI.
+  - **contrastsWith**: AI Safety Research — Hammond prioritises political economy and institutional adaptation over technical alignment approaches.
 
 - ### Content
   - #Public page

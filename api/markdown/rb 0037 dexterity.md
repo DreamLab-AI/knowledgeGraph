@@ -42,16 +42,32 @@ public:: true
   "@id": "urn:ngm:class:rb-0037-dexterity",
   "@type": "Class",
   "label": "rb 0037 dexterity",
-  "definition": "dexterity is a robotics and autonomous systems concept and a type of robotics.",
+  "definition": "Dexterity, in robotics, is the ability of a manipulator to achieve a broad range of end-effector orientations and positions within its workspace, particularly in the vicinity of a given point, without encountering kinematic singularities. It is quantified by measures such as the Jacobian condition number, manipulability ellipsoid volume, or isotropy index. High dexterity enables a robot arm to approach objects from many angles, reconfigure during a task, and avoid joint limits — properties critical for assembly, surgery, and unstructured manipulation tasks.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-actuation-and-control",
       "label": "Actuation and Control"
     }
   ],
-  "quality": 0.5,
+  "quality": 0.7,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:rb-0032-manipulability", "label": "rb 0032 manipulability"},
+      {"@id": "urn:ngm:class:rb-0031-singularity", "label": "rb 0031 singularity"},
+      {"@id": "urn:ngm:class:rb-0023-degrees-of-freedom", "label": "rb 0023 degrees of freedom"},
+      {"@id": "urn:ngm:class:rb-0024-workspace", "label": "rb 0024 workspace"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:rb-0030-jacobian-matrix", "label": "rb 0030 jacobian matrix"},
+      {"@id": "urn:ngm:class:rb-0029-inverse-kinematics", "label": "rb 0029 inverse kinematics"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:manipulation", "label": "Manipulation"},
+      {"@id": "urn:ngm:class:end-effector", "label": "End Effector"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -87,7 +103,8 @@ public:: true
 
 
 - ### Definition
-  - ### Primary Definition
+  - Dexterity is a measure of a manipulator's ability to achieve a wide variety of end-effector poses — both positions and orientations — at or near a given point in space, without encountering singular configurations that lock out certain directions of motion. It is formally quantified through the Jacobian matrix: metrics such as the manipulability ellipsoid, condition number, and minimum singular value all express how isotropically the robot can move in task space. High dexterity is particularly important for fine manipulation tasks where the approach direction may be tightly constrained by the geometry of the object or the surrounding environment.
+  - Dexterity is closely coupled with the workspace volume of a robot: a large workspace does not guarantee dexterity at every interior point, since near-singular configurations reduce the effective reachable velocity in certain directions. Redundant manipulators (more than 6 degrees of freedom) can use the extra joints to reconfigure and maintain high dexterity across a wider region.
 
 - ### Semantic Classification
   - owl-class:: robotics:Dexterity
@@ -95,7 +112,7 @@ public:: true
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Related to manipulability (rb 0032), workspace (rb 0024), and degrees of freedom (rb 0023); computed via the Jacobian matrix (rb 0030) and inverse kinematics (rb 0029).
 
 - ### Content
   - ### Primary Definition

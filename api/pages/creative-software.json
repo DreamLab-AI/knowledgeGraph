@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:creative-software",
   "domain": "spatial-computing",
-  "definition": "Creative Software is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Application software designed to support artistic, design, and content production workflows, including 3D modelling, animation, compositing, generative art, and interactive experience authoring. In spatial computing contexts, creative software bridges concept and deployment by enabling artists to produce assets compatible with real-time rendering engines and metaverse platforms.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -13,21 +13,57 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:design-software",
+        "label": "Design Software"
+      },
+      {
+        "id": "urn:ngm:class:animation-software",
+        "label": "Animation Software"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:3-d-content-generation",
+        "label": "3D Content Generation"
+      },
+      {
+        "id": "urn:ngm:class:creative-tools",
+        "label": "Creative Tools"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:computer-graphics",
+        "label": "Computer Graphics"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "id": "urn:ngm:class:rendering-engine",
+        "label": "Rendering Engine"
+      }
+    ]
   },
   "wikilinks": [
     {

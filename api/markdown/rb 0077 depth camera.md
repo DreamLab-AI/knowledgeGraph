@@ -42,9 +42,9 @@ public:: true
   "@id": "urn:ngm:class:rb-0077-depth-camera",
   "@type": "Class",
   "label": "rb 0077 depth camera",
-  "definition": "depth camera is a robotics and autonomous systems concept and a type of Camera.",
+  "definition": "A depth camera is a sensor that captures per-pixel distance information alongside a conventional intensity image, producing a registered RGB-D data stream or raw point cloud. In robotics, depth cameras are used for 3D scene reconstruction, obstacle avoidance, object recognition, and SLAM. Common operating principles include structured light projection (e.g. Intel RealSense), time-of-flight measurement, and stereo triangulation; each involves different trade-offs in range, resolution, and outdoor usability.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-perception",
@@ -55,11 +55,34 @@ public:: true
       "label": "Camera"
     }
   ],
-  "quality": 0.5,
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R3SemanticRefinement"
+  },
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:slam", "label": "SLAM"},
+      {"@id": "urn:ngm:class:point-cloud", "label": "Point Cloud"},
+      {"@id": "urn:ngm:class:obstacle-avoidance", "label": "Obstacle Avoidance"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:depth-sensing", "label": "Depth Sensing"},
+      {"@id": "urn:ngm:class:depth-estimation", "label": "Depth Estimation"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:stereo-camera", "label": "Stereo Camera"},
+      {"@id": "urn:ngm:class:rb-0068-vision-system", "label": "rb 0068 vision system"},
+      {"@id": "urn:ngm:class:rb-0069-lidar", "label": "rb 0069 lidar"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:rb-0066-robot-sensor", "label": "rb 0066 robot sensor"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:visual-odometry", "label": "Visual Odometry"},
+      {"@id": "urn:ngm:class:simultaneous-localisation-and-mapping", "label": "Simultaneous Localisation and Mapping"}
+    ]
   }
 }
 ```
@@ -91,7 +114,7 @@ public:: true
 
 
 - ### Definition
-  - ### Primary Definition
+  - A depth camera captures per-pixel distance data and produces RGB-D imagery or point clouds used for 3D scene understanding in robotics. The three dominant technologies are structured light (projects a known infrared pattern and measures its deformation), time-of-flight (measures photon round-trip time), and stereo triangulation (computes disparity between two offset cameras). Depth cameras are central to indoor navigation, manipulation, and human-presence detection in collaborative robot cells.
 
 - ### Semantic Classification
   - owl-class:: robotics:rb0077depthcamera
@@ -99,7 +122,7 @@ public:: true
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Depth cameras feed point clouds to SLAM pipelines for simultaneous localisation and mapping, and serve as the primary sensing modality for real-time obstacle avoidance. They complement LiDAR (RB-0069) at close range and are closely related to stereo cameras and vision systems (RB-0068). Visual odometry algorithms typically consume the depth stream alongside the RGB image to estimate robot ego-motion without wheel encoders.
 
 - ### Content
   - ### Primary Definition

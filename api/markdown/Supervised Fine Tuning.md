@@ -44,14 +44,28 @@ public:: true
   "label": "Supervised Fine Tuning",
   "definition": "A fine-tuning approach that uses labelled training data to adapt a pre-trained model to specific tasks, optimising performance through supervised learning on input-output pairs. Supervised fine-tuning (SFT) represents the most direct path from general pre-training to task-specific capability.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:human-feedback", "label": "Human Feedback"},
+      {"@id": "urn:ngm:class:model-training", "label": "Model Training"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:reward-model", "label": "Reward Model"},
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
+      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"}
+    ]
+  },
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -95,7 +109,12 @@ public:: true
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Human Feedback]]
+  - requires [[Model Training]]
+  - enables [[Reward Model]]
+  - enables [[Reinforcement Learning]]
+  - relatedTo [[Transfer Learning]]
+  - relatedTo [[Fine Tuning]]
 
 - ### Content
   - A fine-tuning approach that uses labelled training data to adapt a pre-trained model to specific tasks, optimising performance through supervised learning on input-output pairs. Supervised fine-tuning (SFT) represents the most direct path from general pre-training to task-specific capability.

@@ -8,7 +8,7 @@
   "definition": "A real-time telemetry stream (surface S6) that emits ActivityStream|ActivityStreams-based JSON-LD events for agent lifecycle events (birth, startup, activity, completion, error, termination) via WebSocket, Nostr relay, or message queue, enabling external monitoring systems, dashboards, and or...",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure (Category)"
     }
   ],

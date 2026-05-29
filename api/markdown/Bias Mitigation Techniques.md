@@ -58,7 +58,7 @@ public:: true
   "@id": "urn:ngm:class:bias-mitigation-techniques",
   "@type": "Class",
   "label": "Bias Mitigation Techniques",
-  "definition": "Bias Mitigation Techniques are mods and interventions designed to reduce algorithmic bias and improve fairness in AI systems through modifications at different stages of the machine learning pipeline.",
+  "definition": "Methods and interventions designed to reduce algorithmic bias and improve fairness in AI systems through modifications at pre-processing (data reweighting, resampling), in-processing (fairness constraints, adversarial debiasing), and post-processing (threshold optimisation) stages of the machine learning pipeline. Each approach involves tradeoffs between fairness improvement and predictive accuracy.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -67,7 +67,27 @@ public:: true
       "label": "AI Governance and Ethics"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:algorithmic-bias", "label": "Algorithmic Bias"},
+      {"@id": "urn:ngm:class:fairness-metrics", "label": "Fairness Metrics"},
+      {"@id": "urn:ngm:class:fairness-constraints", "label": "Fairness Constraints"},
+      {"@id": "urn:ngm:class:fairness-accuracy-tradeoffs", "label": "Fairness Accuracy Tradeoffs"},
+      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
+      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:fairness-auditing-tools", "label": "Fairness Auditing Tools"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:machine-learning-pipeline", "label": "Machine Learning Pipeline"},
+      {"@id": "urn:ngm:class:feature-engineering", "label": "Feature Engineering"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

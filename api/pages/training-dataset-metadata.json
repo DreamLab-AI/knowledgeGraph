@@ -5,20 +5,59 @@
   "public": true,
   "classIri": "urn:ngm:class:training-dataset-metadata",
   "domain": "artificial-intelligence",
-  "definition": "A training dataset metadata component in the Artificial Intelligence domain that required by AiModelCard.",
+  "definition": "Training dataset metadata is structured descriptive information about the data used to train a machine learning model, including its provenance, size, collection method, class distribution, known biases, and licensing terms. This metadata is a core component of AI model cards and datasheets, enabling reproducibility, fairness auditing, and regulatory accountability. Thorough dataset metadata underpins model transparency and responsible AI governance.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:cat-ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
+      "id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.75,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:data-versioning",
+        "label": "Data Versioning"
+      },
+      {
+        "id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      },
+      {
+        "id": "urn:ngm:class:metadata-schema",
+        "label": "Metadata Schema"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-transparency",
+        "label": "Model Transparency"
+      },
+      {
+        "id": "urn:ngm:class:ai-fairness",
+        "label": "AI Fairness"
+      },
+      {
+        "id": "urn:ngm:class:model-evaluation-results",
+        "label": "Model Evaluation Results"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -26,8 +65,26 @@
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ai-model-card",
+        "label": "AI Model Card"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:provenance-standard",
+        "label": "Provenance Standard"
+      },
+      {
+        "id": "urn:ngm:class:fairness-metrics",
+        "label": "Fairness Metrics"
+      },
+      {
+        "id": "urn:ngm:class:model-performance",
+        "label": "Model Performance"
+      }
+    ]
   },
   "wikilinks": [
     {

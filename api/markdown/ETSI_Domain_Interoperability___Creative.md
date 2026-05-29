@@ -94,16 +94,40 @@ public:: true
   "@id": "urn:ngm:class:etsi-domain-interoperability-creative",
   "@type": "Class",
   "label": "ETSI_Domain_Interoperability___Creative",
-  "definition": "The ETSI functional domain classification addressing the intersection of Interoperability and Creative domains within metaverse and extended reality ecosystems, encompassing technical standards, protocols, and frameworks that enable creative digital content—including three-dimensional models, tex...",
+  "definition": "The ETSI Domain Interoperability/Creative is a functional domain classification defined by the European Telecommunications Standards Institute that addresses the intersection of technical interoperability standards and creative content workflows within metaverse and extended reality ecosystems. It encompasses the standards, protocols, and toolchains—including glTF 2.0, USD, WebXR, OpenXR, and MPEG-I Scene Description—that enable digital creative assets such as three-dimensional models, animations, and immersive environments to be authored once and deployed across heterogeneous platforms without proprietary lock-in or fidelity degradation. The domain integrates digital rights management frameworks and semantic metadata schemas to preserve creator attribution, licensing terms, and provenance across cross-platform distribution pipelines.",
   "domain": "infrastructure",
   "maturity": "established",
+  "qualityScore": 0.8,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-network-and-comms",
       "label": "Network and Communication"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:metaverse-content-pipeline", "label": "Metaverse Content Pipeline"},
+      {"@id": "urn:ngm:class:3-d-asset-standard", "label": "3D Asset Standard"},
+      {"@id": "urn:ngm:class:gltf-standard", "label": "Gltf Standard"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:interoperability-framework", "label": "Interoperability Framework"},
+      {"@id": "urn:ngm:class:interoperability-standard", "label": "Interoperability Standard"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"},
+      {"@id": "urn:ngm:class:3-d-animation", "label": "3D Animation"},
+      {"@id": "urn:ngm:class:digital-rights-management", "label": "Digital Rights Management"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:extended-reality-xr", "label": "Extended Reality (XR)"},
+      {"@id": "urn:ngm:class:3-d-asset", "label": "3D Asset"},
+      {"@id": "urn:ngm:class:open-standard", "label": "Open Standard"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:interoperability-standard", "label": "Interoperability Standard"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -212,7 +236,11 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]], [[InteroperabilityDomain]], [[CreativeDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart:: [[Metaverse Content Pipeline]], [[3D Asset Standard]], [[Gltf Standard]]
+  - requires:: [[Interoperability Framework]], [[Interoperability Standard]]
+  - enables:: [[Extended Reality]], [[3D Animation]], [[Digital Rights Management]]
+  - relatedTo:: [[Extended Reality (XR)]], [[3D Asset]], [[Open Standard]]
+  - standardizedBy:: [[Interoperability Standard]]
 
 - ### Content
   - The ETSI Domain Interoperability / Creative represents the convergence of technical standardization and creative content workflows within the metaverse and extended reality ecosystems. This functional domain classification addresses the critical challenge of enabling creative digital assets—three-dimensional models, textures, animations, immersive environments—to transcend proprietary platform boundaries and achieve true multi-platform deployment without fidelity degradation. Through standardized file formats (glTF 2.0, USD, FBX), cross-platform protocols (WebXR, OpenXR, MPEG-I Scene Description), and semantic interoperability mechanisms, this domain facilitates the Creative Metaverse vision wherein content creators invest effort once in high-fidelity source assets and distribute everywhere via automated transformation pipelines, reducing production costs by 67%, accelerating time-to-market from 18 months to 4 months, and expanding addressable audience by 340% through simultaneous availability across 47 compatible platforms.

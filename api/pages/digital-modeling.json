@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:digital-modeling",
   "domain": "spatial-computing",
-  "definition": "Digital Modeling is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Digital Modelling is the process of creating mathematical or geometric representations of physical objects, environments, or systems in a computer, encompassing polygonal mesh construction, NURBS surfaces, procedural generation, and scan-based reconstruction. Digital models serve as the foundation for real-time rendering, simulation, digital twin creation, and asset delivery in spatial computing platforms.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -14,20 +14,48 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:rendering-engine",
+        "label": "Rendering Engine"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      },
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:procedural-content-generation",
+        "label": "Procedural Content Generation"
+      }
+    ]
   },
   "wikilinks": [
     {

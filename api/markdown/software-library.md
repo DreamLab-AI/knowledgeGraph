@@ -1,12 +1,17 @@
 - ### Definition
-  - SoftwareLibrary is a concept within the ngm domain.
+  - A Software Library is a collection of pre-compiled, reusable code modules that expose stable APIs, encapsulating common functionality such as rendering, physics simulation, networking, or cryptography. Libraries accelerate development by abstracting complexity, reducing defect rates, and enabling interoperability between components within a software stack.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:SoftwareLibrary
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Enables [[Software Development Process]]
+  - Uses [[API Standard]]
+  - Supports [[Machine Learning Framework]]
+  - Supports [[Rendering Engine]]
+  - Related To [[Software Architecture]]
+  - Related To [[Version Control]]
 
 - ### Content
   # SoftwareLibrary

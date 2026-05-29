@@ -1,5 +1,5 @@
 - ### Definition
-  - Land Economics is a concept within the mv domain.
+  - Land Economics is the economic framework governing virtual land ownership, valuation, development, and transaction within metaverse environments, characterised by artificial scarcity, spatial positioning premiums, and speculative markets. It encompasses primary sales, secondary peer-to-peer trading, rental systems, platform taxation models, and zoning policies that together determine how virtual parcels accumulate and lose value.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:LandEconomics
@@ -7,6 +7,9 @@
 
 - ### Relationships
   - is-subclass-of:: [[Metaverse]]
+  - partOf:: [[Virtual Economy]], [[Metaverse]]
+  - requires:: [[Digital Ownership]], [[Smart Contract]]
+  - relatedTo:: [[Virtual Labor]], [[Digital Asset]]
 
 - ### Content
 

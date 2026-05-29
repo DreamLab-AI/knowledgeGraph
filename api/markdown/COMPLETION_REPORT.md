@@ -78,15 +78,29 @@ public:: true
   "@id": "urn:ngm:class:completion-report",
   "@type": "Class",
   "label": "COMPLETION_REPORT",
-  "definition": "A formal documentation artefact summarising the outcomes, achievements, and validation status of a completed Project or Work Package.",
+  "definition": "A Completion Report is a formal documentation artefact summarising the outcomes, achievements, and validation status of a completed project or work package. It captures deliverables, quality metrics, sign-off records, and governance evidence required for stakeholder communication and project closure in regulated or standards-aligned environments.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
     }
   ],
+  "relations": {
+    "supports": [
+      {"@id": "urn:ngm:class:governance", "label": "Governance"},
+      {"@id": "urn:ngm:class:quality-assurance", "label": "Quality Assurance"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:documentation-standards", "label": "Documentation Standards"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:governance-framework", "label": "Governance Framework"},
+      {"@id": "urn:ngm:class:metaverse-domain", "label": "Metaverse Domain"}
+    ]
+  },
   "quality": 0.4,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -174,9 +188,11 @@ public:: true
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - supports:: [[Governance]], [[Quality Assurance]]
+  - uses:: [[Documentation Standards]]
+  - related-to:: [[Governance Framework]], [[Metaverse Domain]]
 - ### Content
-  - Completion reports summarise project outcomes, achievements, and validation status, capturing deliverables, quality metrics, and governance records necessary for stakeholder communication and project closure.
+  - A Completion Report is a formal documentation artefact summarising the outcomes, achievements, and validation status of a completed project or work package. It captures deliverables, quality metrics, sign-off records, and governance evidence required for stakeholder communication and project closure in regulated or standards-aligned environments.
   - ### Original Content
 		- ```
   # Task Completion Report: Robotics Control & Perception Ontology

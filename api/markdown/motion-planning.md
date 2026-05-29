@@ -7,7 +7,11 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - partOf:: [[Autonomous Navigation]]
+  - requires:: [[Path Planning]]
+  - requires:: [[Control Theory]]
+  - enables:: [[Autonomous Vehicle]]
+  - enables:: [[Autonomous Robot]]
 
 - ### Content
   - Motion Planning extends path planning by incorporating robot dynamics, control constraints, and time-parametrisation to generate dynamically feasible trajectories that account for velocity, acceleration, jerk, and actuator limitations. Motion planning produces executable control sequences that guide robots and autonomous vehicles from initial to goal states whilst satisfying kinodynamic constraints and optimising performance metrics.

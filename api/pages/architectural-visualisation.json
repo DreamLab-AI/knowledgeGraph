@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:architectural-visualisation",
   "domain": "spatial-computing",
-  "definition": "Architectural visualisation is the process of creating two- or three-dimensional images or animations showing the attributes of a proposed architectural design using spatial computing technologies.",
+  "definition": "Architectural visualisation is the discipline of producing photorealistic or stylised two- and three-dimensional representations of proposed buildings, interiors, and urban environments to communicate design intent to clients, planners, and the public before construction. It combines techniques from 3D modelling, physically based rendering, and real-time graphics to produce still images, animations, and interactive walkthroughs. Advances in real-time rendering engines and spatial computing have extended the discipline to include immersive virtual reality experiences and augmented reality overlays on physical construction sites.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -14,20 +14,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:3-d-model",
+        "label": "3D Model"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bim-virtual-model",
+        "label": "BIM Virtual Model"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

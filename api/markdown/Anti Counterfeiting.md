@@ -82,9 +82,10 @@ public:: true
   "@id": "urn:ngm:class:anti-counterfeiting",
   "@type": "Class",
   "label": "Anti Counterfeiting",
-  "definition": "Blockchain-based systems employing cryptographic verification, immutable ledgers, and physical-digital integration technologies (NFC tags, QR codes, RFID) to authenticate products, prevent counterfeiting, and establish verifiable supply chain provenance across pharmaceuticals, luxury goods, elect...",
+  "definition": "Blockchain-based systems employing cryptographic verification, immutable ledgers, and physical-digital integration technologies (NFC tags, QR codes, RFID) to authenticate products, prevent counterfeiting, and establish verifiable supply chain provenance across pharmaceuticals, luxury goods, electronics, and consumer products.",
   "domain": "blockchain",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-network-component",
@@ -95,6 +96,23 @@ public:: true
       "label": "Supply Chain Blockchain"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:supply-chain-traceability", "label": "Supply Chain Traceability"},
+      {"@id": "urn:ngm:class:luxury-goods-authentication", "label": "Luxury Goods Authentication"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:pharmaceutical-traceability", "label": "Pharmaceutical Traceability"},
+      {"@id": "urn:ngm:class:supply-chain-management", "label": "Supply Chain Management"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:blockchain-compliance", "label": "Blockchain Compliance"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -190,6 +208,10 @@ public:: true
 
 - ### Relationships
   - bridges-to:: [[Autonomous Robot]]
+  - uses:: [[Blockchain]], [[Smart Contract]]
+  - enables:: [[Supply Chain Traceability]], [[Luxury Goods Authentication]]
+  - hasPart:: [[Pharmaceutical Traceability]], [[Supply Chain Management]]
+  - standardizedBy:: [[Blockchain Compliance]]
 
 - ### Content
   - Blockchain-based anti-counterfeiting solutions address a £1.023 trillion global counterfeit trade crisis that affects every major industry from pharmaceuticals to luxury goods, electronics to food safety. By creating immutable digital twins of physical products through cryptographic verification and secure physical-digital integration technologies, blockchain systems provide unprecedented product authentication capabilities whilst simultaneously tracking complete supply chain provenance from manufacture to end consumer.

@@ -1,12 +1,17 @@
 - ### Definition
-  - SpatialMapping is a concept within the ngm domain.
+  - The process of constructing and continuously updating three-dimensional representations of physical environments using sensor data—including depth cameras, LiDAR, and IMU—enabling AR/VR systems to understand surroundings for occlusion, collision, content placement, and navigation. Core algorithms include SLAM variants that fuse visual features with inertial measurements to produce dense mesh or voxel representations in real time.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:SpatialMapping
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses [[SLAM]]
+  - uses [[Lidar]]
+  - uses [[Computer Vision System]]
+  - enables [[Augmented Reality]]
+  - enables [[Spatial Anchor]]
+  - relatedTo [[AR Technology]]
 
 - ### Content
   # SpatialMapping

@@ -46,16 +46,32 @@ public:: true
   "@id": "urn:ngm:class:octave-multi-model-laboratory",
   "@type": "Class",
   "label": "Octave Multi Model Laboratory",
-  "definition": "Octave Multi Model Laboratory is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A world-class multi-modal immersive research facility at the University of Salford housing advanced display topologies, high-performance compute, and distributed systems for mixed reality, generative AI, and human-scale VR experimentation. The lab supported over 25 years of research including world firsts in collaborative mixed reality, brain scanning in phobia treatment, real-time human reconstruction from cameras, and telepresence, and served hundreds of SMEs through ERDF-funded programmes.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
     }
   ],
-  "quality": 0.5,
+  "qualityScore": 0.7,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:hardware-and-edge", "label": "Hardware and Edge"},
+      {"@id": "urn:ngm:class:immersive-technology", "label": "Immersive Technology"},
+      {"@id": "urn:ngm:class:mixed-reality", "label": "Mixed Reality"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:telepresence", "label": "Telepresence"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
+      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
+      {"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -101,14 +117,16 @@ public:: true
 
 
 - ### Definition
-  - Octave Multi Model Laboratory is a concept within the ngm domain.
+  - A world-class multi-modal immersive research facility at the University of Salford housing advanced display topologies, high-performance compute, and distributed systems for mixed reality, generative AI, and human-scale VR experimentation. The lab supported over 25 years of research including world firsts in collaborative mixed reality, brain scanning in phobia treatment, real-time human reconstruction from cameras, and telepresence, and served hundreds of SMEs through ERDF-funded programmes.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:OctaveMultiModelLaboratory
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart: [[Hardware and Edge]], [[Immersive Technology]], [[Mixed Reality]]
+  - enables: [[Telepresence]], [[Digital Twin]], [[Generative AI]]
+  - uses: [[GPU Compute]], [[Distributed Computing]]
 
 - ### Content
   - #Public page automatically published

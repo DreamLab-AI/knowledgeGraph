@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:unique-content-variation",
   "@type": "Class",
   "label": "Unique Content Variation",
-  "definition": "Procedurally generated or algorithmically created variations of digital content that produce distinct, individualized versions of assets, experiences, or environments, often used in NFTs and generative art to ensure scarcity and uniqueness.",
+  "definition": "Procedurally generated or algorithmically created variations of digital content that produce distinct, individualised versions of assets, experiences, or environments, often used in NFTs and generative art to ensure scarcity and uniqueness.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
@@ -59,11 +60,48 @@ public:: true
       "label": "Generative Content"
     }
   ],
-  "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "@id": "urn:ngm:class:content-authentication",
+        "label": "Content Authentication"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:procedural-generation",
+        "label": "Procedural Generation"
+      },
+      {
+        "@id": "urn:ngm:class:nft-minting",
+        "label": "NFT Minting"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:digital-art-application",
+        "label": "Digital Art Application"
+      },
+      {
+        "@id": "urn:ngm:class:nft-ownership-proof",
+        "label": "NFT Ownership Proof"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:erc-721",
+        "label": "ERC-721"
+      }
+    ]
   }
 }
 ```
@@ -109,6 +147,13 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Generative Content]]
+  - Uses [[Procedural Generation]]
+  - Uses [[NFT Minting]]
+  - Enables [[NFT]]
+  - Enables [[Content Authentication]]
+  - Standardized by [[ERC-721]]
+  - Related to [[Digital Art Application]]
+  - Related to [[NFT Ownership Proof]]
 
 - ### Content
 

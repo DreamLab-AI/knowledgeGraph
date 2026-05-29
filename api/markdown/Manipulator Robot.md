@@ -46,7 +46,7 @@ public:: true
   "@id": "urn:ngm:class:manipulator-robot",
   "@type": "Class",
   "label": "Manipulator Robot",
-  "definition": "Manipulator robot is a robot with articulated mechanical arms designed to perform manipulation tasks.",
+  "definition": "A robot consisting of a kinematic chain of rigid links connected by actuated joints, terminating in an end-effector, designed to position and orient objects or tools in a workspace. Manipulator robots include serial open-chain designs (articulated, SCARA, cylindrical, Cartesian) and parallel closed-chain designs, and are the dominant platform for industrial assembly, welding, pick-and-place, and collaborative tasks.",
   "domain": "robotics",
   "maturity": "established",
   "subClassOf": [
@@ -59,7 +59,27 @@ public:: true
       "label": "Robot"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:parallel-robot", "label": "Parallel Robot"},
+      {"@id": "urn:ngm:class:scara-robot", "label": "SCARA Robot"},
+      {"@id": "urn:ngm:class:cylindrical-robot", "label": "Cylindrical Robot"},
+      {"@id": "urn:ngm:class:manipulator-arm", "label": "Manipulator Arm"},
+      {"@id": "urn:ngm:class:end-effector", "label": "End Effector"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:collaborative-robot", "label": "Collaborative Robot"},
+      {"@id": "urn:ngm:class:industrial-robot", "label": "Industrial Robot"},
+      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"},
+      {"@id": "urn:ngm:class:robot-kinematics", "label": "Robot Kinematics"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:inverse-kinematics", "label": "Inverse Kinematics"},
+      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
+      {"@id": "urn:ngm:class:robot-joint", "label": "Robot Joint"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

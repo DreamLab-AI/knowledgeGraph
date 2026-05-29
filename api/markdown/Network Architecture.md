@@ -54,21 +54,56 @@ public:: true
   "@id": "urn:ngm:class:network-architecture",
   "@type": "Class",
   "label": "Network Architecture",
-  "definition": "Network Architecture in AI refers to the structural design of neural networks, defining the arrangement of layers, connections, and computational units.",
+  "definition": "The structural design of a neural network, specifying the arrangement of layers, connection patterns, activation functions, skip connections, normalisation methods, and attention mechanisms. Key architectures include feedforward networks, CNNs, RNNs, transformers, and graph neural networks; Neural Architecture Search automates discovery of optimal configurations.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
+    }
+  ],
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
   },
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-model-architecture",
-      "label": "AI Model Architecture"
-    }
-  ]
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:neural-network-layer",
+        "label": "Neural Network Layer"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:transformers",
+        "label": "Transformers"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:model-weights",
+        "label": "Model Weights"
+      }
+    ]
+  }
 }
 ```
 
@@ -122,6 +157,12 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: ['owl:Thing']
+  - Has Part [[Neural Network Layer]]
+  - Has Part [[Attention Mechanism]]
+  - Implements [[Transformers]]
+  - Implements [[Neural Network]]
+  - Enables [[Deep Learning]]
+  - Related To [[Model Weights]]
 
 - ### Content
 

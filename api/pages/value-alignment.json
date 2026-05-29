@@ -13,21 +13,53 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      }
+    ],
     "enables": [],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:interpretability",
+        "label": "Interpretability"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:safety-fine-tuning",
+        "label": "Safety Fine Tuning"
+      },
+      {
+        "id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      },
+      {
+        "id": "urn:ngm:class:bias",
+        "label": "Bias"
+      }
+    ]
   },
   "wikilinks": [
     {

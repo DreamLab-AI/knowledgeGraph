@@ -46,7 +46,7 @@ public:: true
   "@id": "urn:ngm:class:tactile-sensor",
   "@type": "Class",
   "label": "Tactile Sensor",
-  "definition": "Tactile sensor provides touch sensing capability similar to human fingertips.",
+  "definition": "A sensor embedded in a robot's end-effector or body surface that measures contact forces, pressure distributions, vibrations, and slip, enabling dexterous manipulation and safe physical interaction. Tactile sensing complements proprioception and vision to provide robots with fingertip-level awareness analogous to the human sense of touch.",
   "domain": "robotics",
   "maturity": "established",
   "subClassOf": [
@@ -59,7 +59,22 @@ public:: true
       "label": "Exteroceptive Sensor"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:pressure-sensor", "label": "Pressure Sensor"},
+      {"@id": "urn:ngm:class:proximity-sensor", "label": "Proximity Sensor"},
+      {"@id": "urn:ngm:class:proprioceptive-sensor", "label": "Proprioceptive Sensor"},
+      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"},
+      {"@id": "urn:ngm:class:haptics", "label": "Haptics"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:robo-actuation-and-control", "label": "Actuation and Control"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:robo-perception", "label": "Perception and Sensing"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

@@ -54,9 +54,10 @@ public:: true
   "@id": "urn:ngm:class:activation-function",
   "@type": "Class",
   "label": "Activation Function",
-  "definition": "Activation Function is a artificial intelligence concept and a type of Neural Network Component.",
+  "definition": "An Activation Function is a non-linear mathematical transformation applied to a neuron's weighted input sum, enabling neural networks to learn complex, non-linear mappings. Common variants include Sigmoid, Tanh, ReLU, Leaky ReLU, and GELU; the choice of activation function critically affects gradient flow, convergence speed, and model expressivity.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
@@ -67,11 +68,40 @@ public:: true
       "label": "Neural Network Component"
     }
   ],
-  "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network-layer",
+        "label": "Neural Network Layer"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ]
   }
 }
 ```
@@ -126,7 +156,11 @@ public:: true
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 
 - ### Relationships
-  - bridges-to:: [[Edge Computing]] (domain: ngm)
+  - Part of [[Neural Network]] as a mandatory computational primitive within each neuron
+  - Requires [[Backpropagation]] for differentiable gradient computation through each unit
+  - Enables [[Deep Learning]] by introducing the non-linearity necessary for deep stacking
+  - Related to [[Gradient Descent]] which optimises weights exploiting activation derivatives
+  - Related to [[Neural Network Layer]] as the structural unit in which activations reside
 
 - ### Content
   - ### Primary Definition

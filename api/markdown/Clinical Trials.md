@@ -86,20 +86,62 @@ public:: true
   "@id": "urn:ngm:class:clinical-trials",
   "@type": "Class",
   "label": "Clinical Trials",
-  "definition": "Blockchain-based clinical trial management systems employing immutable audit trails, smart contracts for protocol compliance, and cryptographic verification to ensure data integrity, prevent fraud, enable patient recruitment improvements, and provide FDA 21 CFR Part 11 compliant tamper-proof reco...",
+  "definition": "Blockchain-based clinical trial management systems employ immutable audit trails, smart contracts for protocol compliance, and cryptographic verification to ensure data integrity, prevent fraud, and provide FDA 21 CFR Part 11 compliant tamper-proof records whilst reducing monitoring costs. These systems address pharmaceutical development challenges including data falsification, patient recruitment inefficiency, and multi-site coordination failures.",
   "domain": "blockchain",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-network-component",
       "label": "Network Component"
     }
   ],
-  "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-compliance",
+        "label": "Blockchain Compliance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "@id": "urn:ngm:class:hyperledger-fabric",
+        "label": "Hyperledger Fabric"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:healthcare-records",
+        "label": "Healthcare Records"
+      }
+    ]
   }
 }
 ```
@@ -194,7 +236,14 @@ public:: true
   - belongs-to-domain:: [[BlockchainDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses [[Smart Contract]]
+  - Uses [[Audit Trail]]
+  - Uses [[Hyperledger Fabric]]
+  - Requires [[Data Integrity]]
+  - Requires [[Blockchain Compliance]]
+  - Supports [[Drug Discovery]]
+  - Supports [[Healthcare Records]]
+  - Depends on [[Compliance Framework]]
 
 - ### Content
   - Blockchain applications in clinical trials address a pharmaceutical development crisis where new drug development costs range from **£160 million to £2 billion** with failed clinical trials alone costing **£800 million to £1.4 billion**, whilst annual trial costs increase at **9% per year** and development timelines extend to **10 years** before medicines reach patients—with only **1 in 10 compounds** eventually succeeding. By employing immutable blockchain-registered audit trails, smart contracts automating protocol compliance, and cryptographic time-stamping of all data collection stages, blockchain systems demonstrate **98.6% cost reductions** (monitoring costs from **€722 to €10** per participant/visit), **98.9% verification success rates**, and complete elimination of data falsification opportunities that have resulted in **£11 billion** in pharmaceutical fines for criminal wrongdoing.

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:etsi-domain-human-interface-ux",
   "domain": "spatial-computing",
-  "definition": "An ETSI subdomain focusing on user experience design, usability engineering, and interaction paradigms optimising satisfaction, efficiency, and accessibility in VirtualEnvironment|immersive digital environments.",
+  "definition": "An ETSI subdomain focusing on user experience design, usability engineering, and interaction paradigms optimising satisfaction, efficiency, and accessibility in immersive digital environments. It covers design principles, usability testing, accessibility compliance, inclusive UX design, and AI-driven adaptive interfaces aligned with ISO 9241-110 dialogue principles and ETSI GR ARF 010 specifications.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-interaction",
@@ -13,12 +13,30 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:virtual-environment",
+        "label": "Virtual Environment"
+      },
+      {
+        "id": "urn:ngm:class:accessibility-standards",
+        "label": "Accessibility Standards"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -26,8 +44,18 @@
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:etsi-domain-human-interface",
+        "label": "ETSI_Domain_Human_Interface"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:inclusive-xr-design",
+        "label": "Inclusive Xr Design"
+      }
+    ]
   },
   "wikilinks": [
     {

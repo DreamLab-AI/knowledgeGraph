@@ -50,9 +50,9 @@ public:: true
   "@id": "urn:ngm:class:collaboration",
   "@type": "Class",
   "label": "Collaboration",
-  "definition": "Collaboration is a technology infrastructure concept and a type of Collaboration Platform.",
+  "definition": "Collaboration in telecollaboration contexts encompasses the coordinated activities, shared goal pursuit, and collective problem-solving enabled by digital technologies across distributed participants, integrating synchronous communication, asynchronous coordination, and awareness mechanisms that support effective teamwork regardless of geographic location.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
@@ -63,6 +63,20 @@ public:: true
       "label": "Collaboration Platform"
     }
   ],
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"},
+      {"@id": "urn:ngm:class:telecollaboration", "label": "Telecollaboration"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:collaboration-technology", "label": "Collaboration Technology"},
+      {"@id": "urn:ngm:class:virtual-collaboration", "label": "Virtual Collaboration"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:social-vr", "label": "Social VR"},
+      {"@id": "urn:ngm:class:immersive-communication", "label": "Immersive Communication"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -114,7 +128,12 @@ public:: true
   - owl-class:: infrastructure:Collaboration
   - owl-role:: Concept
 - ### Relationships
-  - <!-- No relationships defined -->
+  - enables [[Distributed Collaboration]]
+  - enables [[Telecollaboration]]
+  - uses [[Collaboration Technology]]
+  - uses [[Virtual Collaboration]]
+  - relatedTo [[Social VR]]
+  - relatedTo [[Immersive Communication]]
 - ### Content
   ## Definition
   Collaboration in telecollaboration contexts encompasses the coordinated activities, shared goal pursuit, and collective problem-solving enabled by digital technologies across distributed participants. This foundational concept integrates synchronous communication (real-time video, audio, chat), asynchronous coordination (project management, document sharing, version control), and awareness mechanisms (presence indicators, activity feeds, notification systems) that support effective teamwork regardless of geographic location. Modern collaboration systems employ activity streams, collaborative filtering, and social graphs to facilitate knowledge discovery and team formation. Theoretical frameworks include Computer-Supported Cooperative Work (CSCW), Groupware, and distributed cognition models that inform system design. Essential capabilities encompass role-based access control, conflict resolution mechanisms, attribution tracking, and collaborative editing with operational transformation or conflict-free replicated data types (CRDTs). Advanced collaboration platforms integrate AI-powered meeting assistants, contextual task recommendations, and analytics dashboards for measuring team effectiveness. The convergence of collaboration science with emerging technologies enables new paradigms including holographic telepresence, brain-computer interfaces for thought sharing, and quantum-secured collaboration networks.

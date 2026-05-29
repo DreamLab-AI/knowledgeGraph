@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:digital-society",
   "@type": "Class",
   "label": "Digital Society",
-  "definition": "Digital Society is a type of Metaverse and Telecollaboration in the spatial computing domain.",
+  "definition": "The emergent social order in which digital networks, platforms, and data systems become primary mediators of economic activity, civic participation, cultural expression, and interpersonal relationships. Digital society encompasses the institutions, norms, rights, and governance mechanisms needed to ensure equitable, secure, and rights-respecting participation in digital environments including the metaverse.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -59,11 +60,48 @@ public:: true
       "label": "Metaverse and Telecollaboration"
     }
   ],
-  "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:digital-governance",
+        "label": "Digital Governance"
+      },
+      {
+        "@id": "urn:ngm:class:digital-rights",
+        "label": "Digital Rights"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:digital-citizenship",
+        "label": "Digital Citizenship"
+      },
+      {
+        "@id": "urn:ngm:class:digital-economy",
+        "label": "Digital Economy"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:digital-transformation",
+        "label": "Digital Transformation"
+      },
+      {
+        "@id": "urn:ngm:class:online-identity",
+        "label": "Online Identity"
+      }
+    ]
   }
 }
 ```
@@ -100,7 +138,7 @@ public:: true
 
 
 - ### Definition
-  - Digital Society is a concept within the metaverse domain. Further enrichment pending.
+  - The emergent social order in which digital networks, platforms, and data systems become primary mediators of economic activity, civic participation, cultural expression, and interpersonal relationships. Digital society encompasses the institutions, norms, rights, and governance mechanisms needed to ensure equitable, secure, and rights-respecting participation in digital environments including the metaverse.
 
 bridges-to:: [[Telecollaboration]]
 
@@ -109,16 +147,19 @@ bridges-to:: [[Telecollaboration]]
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Bridges To [[Telecollaboration]]
+  - Enables [[Digital Citizenship]]
+  - Enables [[Digital Economy]]
+  - Requires [[Digital Governance]]
+  - Requires [[Digital Rights]]
+  - Related To [[Digital Transformation]]
+  - Related To [[Online Identity]]
 
 - ### Content
 
   ## Overview
 
-  Digital Society represents an abstract concept in the metaverse ontology hierarchy.
-
-  #### Related Concepts
-  - [[owl:Thing]]
+  Digital society describes the macro-level reorganisation of human activity around digital infrastructure. As metaverse platforms mature, they add a spatially immersive layer to digital society — hosting commerce, art, education, and governance. The resulting sociotechnical system requires updated frameworks for identity, property rights, data sovereignty, and democratic accountability.
 
 - ### Provenance
   - sources::

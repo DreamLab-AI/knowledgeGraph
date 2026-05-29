@@ -6,7 +6,10 @@
   - owl-role:: Concept
 
 - ### Relationships
-  - is-subclass-of:: [[Blockchain]]
+  - **requires**: [[Blockchain Interoperability]], [[Smart Contract]]
+  - **uses**: [[Virtual Currency]], [[Digital Asset]]
+  - **partOf**: [[Virtual Economy]]
+  - **relatedTo**: [[Tokenisation]], [[Blockchain]]
 
 - ### Content
 

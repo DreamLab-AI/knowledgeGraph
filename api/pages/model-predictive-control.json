@@ -5,21 +5,48 @@
   "public": true,
   "classIri": "urn:ngm:class:model-predictive-control",
   "domain": "robotics",
-  "definition": "Model Predictive Control (MPC) is an advanced control strategy that repeatedly solves a finite-horizon optimisation problem using a system model to compute optimal control actions while respecting constraints.",
+  "definition": "Model Predictive Control (MPC) is an advanced control methodology in which a mathematical model of the controlled process is used to predict future system states over a receding finite time horizon, and a constrained optimisation problem is solved at each control step to determine the optimal sequence of control inputs. Only the first input of the computed sequence is applied, and the optimisation is repeated at the next step with an updated state estimate, producing a closed-loop feedback effect. MPC handles multi-input multi-output systems, hard constraints on states and inputs, and competing control objectives in a unified framework, making it widely used in chemical process control, autonomous vehicles, and robotic manipulation.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
       "label": "Robo Actuation and Control"
+    },
+    {
+      "id": "urn:ngm:class:optimal-control",
+      "label": "Optimal Control"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:state-estimation",
+        "label": "State Estimation"
+      },
+      {
+        "id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:trajectory-control",
+        "label": "Trajectory Control"
+      },
+      {
+        "id": "urn:ngm:class:robot-control",
+        "label": "Robot Control"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],

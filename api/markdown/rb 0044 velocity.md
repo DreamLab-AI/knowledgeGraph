@@ -46,9 +46,9 @@ public:: true
   "@id": "urn:ngm:class:rb-0044-velocity",
   "@type": "Class",
   "label": "rb 0044 velocity",
-  "definition": "velocity is a robotics and autonomous systems concept and a type of Robot Kinematics.",
+  "definition": "In robotics, velocity refers to the time-derivative of position, encompassing both linear velocity (metres per second) at the end-effector or a body-frame point, and angular velocity (radians per second) describing rotational rate. Velocity is the central quantity in differential kinematics: the Jacobian matrix maps joint-space velocity vectors to Cartesian task-space velocities. Velocity limits are safety-critical parameters in collaborative robot standards (ISO/TS 15066) where end-effector speed directly determines permissible human contact force.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-actuation-and-control",
@@ -59,11 +59,29 @@ public:: true
       "label": "Robot Kinematics"
     }
   ],
-  "quality": 0.5,
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:rb-0045-acceleration", "label": "rb 0045 acceleration"},
+      {"@id": "urn:ngm:class:rb-0043-torque", "label": "rb 0043 torque"},
+      {"@id": "urn:ngm:class:rb-0030-jacobian-matrix", "label": "rb 0030 jacobian matrix"},
+      {"@id": "urn:ngm:class:differential-kinematics", "label": "Differential Kinematics"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:rb-0021-robot-kinematics", "label": "rb 0021 robot kinematics"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:rb-0055-velocity-control", "label": "rb 0055 velocity control"},
+      {"@id": "urn:ngm:class:rb-0049-motion-planning", "label": "rb 0049 motion planning"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:rb-0093-speed-limitation", "label": "rb 0093 speed limitation"}
+    ]
   }
 }
 ```
@@ -100,7 +118,7 @@ public:: true
 
 
 - ### Definition
-  - ### Primary Definition
+  - Velocity in robotics is the vector quantity describing the rate of change of position (linear velocity) and orientation (angular velocity) of a robot body, joint, or end-effector. In the context of differential kinematics, the Jacobian matrix provides the instantaneous linear map between joint-space velocities and Cartesian task-space velocities. Velocity is therefore the key quantity for trajectory planning, motion control, and safety monitoring in both industrial and collaborative robots.
 
 - ### Semantic Classification
   - owl-class:: robotics:rb0044velocity
@@ -109,6 +127,7 @@ public:: true
 
 - ### Relationships
   - bridges-to:: [[Computer Vision]]
+  - Velocity is closely coupled to acceleration (RB-0045) and torque (RB-0043) in robot dynamics, and is mapped through the Jacobian matrix (RB-0030). Velocity control (RB-0055) is a fundamental control mode alongside position and force control. In collaborative robotics, end-effector velocity is a primary safety parameter: ISO/TS 15066 enforces speed-and-separation monitoring so that robot speed is reduced as a person approaches, with speed limitation (RB-0093) encoding the permissible thresholds.
 
 - ### Content
   - ### Primary Definition

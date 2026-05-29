@@ -5,10 +5,10 @@
   "public": true,
   "classIri": "urn:ngm:class:asynchronous-execution",
   "domain": "artificial-intelligence",
-  "definition": "Asynchronous Execution is a artificial intelligence concept and a type of Execution Model.",
+  "definition": "An execution model in which operations are initiated without blocking the calling thread; completion is signalled via callbacks, promises, futures, or events, enabling high-throughput concurrent processing particularly suited to I/O-bound workloads and distributed system communication.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure (Category)"
     },
     {
@@ -18,17 +18,44 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:parallel-processing",
+        "label": "Parallel Processing"
+      },
+      {
+        "id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      },
+      {
+        "id": "urn:ngm:class:asynchronous-communication",
+        "label": "Asynchronous Communication"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": []

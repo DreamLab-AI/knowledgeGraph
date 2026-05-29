@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:medical-robot",
   "domain": "robotics",
-  "definition": "Medical Robot is a robotics and autonomous systems concept and a type of Service Robot.",
+  "definition": "A Medical Robot is a robotic system designed for use in clinical and healthcare settings, encompassing surgical assistants, rehabilitation exoskeletons, and diagnostic platforms. Medical robots operate under strict safety standards (ISO 13482) and integrate sensing, actuation, and AI to augment human clinical capability.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-robot-type",
@@ -18,16 +18,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:medical-imaging",
+        "label": "Medical Imaging"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision-system",
+        "label": "Computer Vision System"
+      },
+      {
+        "id": "urn:ngm:class:medical-ai",
+        "label": "Medical AI"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

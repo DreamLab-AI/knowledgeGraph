@@ -1,12 +1,15 @@
 - ### Definition
-  - RealtimeCommunication is a concept within the ngm domain.
+  - Infrastructure and protocols enabling low-latency, synchronous exchange of audio, video, text, and data between participants. Realtime communication encompasses voice-over-IP, video conferencing, instant messaging, and presence systems that require end-to-end latency below perceptual thresholds (typically under 150 ms) to support coherent social interaction in both physical and virtual environments.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:RealtimeCommunication
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires**: Network Protocol, Latency — synchronous communication depends on protocols that guarantee delivery ordering and on network latency remaining within acceptable bounds.
+  - **enables**: Realtime Collaboration, Immersive Communication — low-latency channels make co-presence and shared work feasible.
+  - **uses**: Network Synchronization — clock and state synchronisation mechanisms underpin reliable realtime sessions.
+  - **supports**: Metaverse and Telecollaboration — realtime communication is the essential infrastructure layer for metaverse social presence.
 
 - ### Content
   # RealtimeCommunication

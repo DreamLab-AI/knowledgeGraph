@@ -48,13 +48,27 @@ public:: true
   "label": "Encoder",
   "definition": "The component in an encoder-decoder architecture that processes the input sequence and produces contextualised representations, using self-attention and feed-forward layers.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-model-architecture",
       "label": "AI Model Architecture"
     }
   ],
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:encoder-decoder-architecture", "label": "Encoder Decoder Architecture"},
+      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:self-attention", "label": "Self Attention"},
+      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:feature-extraction", "label": "Feature Extraction"},
+      {"@id": "urn:ngm:class:language-modeling", "label": "Language Modeling"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -104,7 +118,12 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - partOf:: [[Encoder Decoder Architecture]]
+  - partOf:: [[Transformer Architecture]]
+  - uses:: [[Self Attention]]
+  - uses:: [[Attention Mechanism]]
+  - enables:: [[Feature Extraction]]
+  - enables:: [[Language Modeling]]
 
 - ### Content
   - The component in an encoder-decoder architecture that processes the input sequence and produces contextualised representations, using self-attention and feed-forward layers.

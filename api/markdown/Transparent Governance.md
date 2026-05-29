@@ -48,7 +48,7 @@ public:: true
   "label": "Transparent Governance",
   "definition": "A governance model where rules, processes, decisions, and their enforcement are openly visible, verifiable, and accessible to all stakeholders, typically implemented through blockchain technology, public smart contracts, and open data practices.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
@@ -59,6 +59,20 @@ public:: true
       "label": "Governance"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:accountability", "label": "Accountability"},
+      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:transparency", "label": "Transparency"},
+      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
+      {"@id": "urn:ngm:class:dao", "label": "DAO"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
@@ -109,6 +123,12 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Governance]]
+  - requires [[Accountability]]
+  - requires [[Audit Trail]]
+  - enables [[Transparency]]
+  - enables [[Regulatory Compliance]]
+  - uses [[Smart Contract]]
+  - uses [[DAO]]
 
 - ### Content
 

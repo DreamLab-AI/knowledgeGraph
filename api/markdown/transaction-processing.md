@@ -1,12 +1,14 @@
 - ### Definition
-  - TransactionProcessing is a concept within the ngm domain.
+  - Transaction Processing encompasses the end-to-end lifecycle of blockchain transactions — from cryptographic signing and mempool propagation through validation, deterministic state execution, and finality confirmation. It includes parallelisation strategies, layer-2 scaling (state channels, rollups), and cross-chain atomic operations, with MEV mitigation and encrypted mempools addressing ordering fairness.
 
 - ### Semantic Classification
   - owl-class:: blockchain:TransactionProcessing
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires** → [[Consensus Mechanism]], [[Smart Contract]]
+  - **enables** → [[Transaction Finality]], [[Decentralised Finance]], [[Payment System]]
+  - **uses** → [[Stablecoin]], [[Transaction Fee]], [[Transaction Pool]]
 
 - ### Content
 

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:conversational-ai",
   "domain": "artificial-intelligence",
-  "definition": "Conversational AI is a artificial intelligence concept and a type of Natural Language Processing.",
+  "definition": "Conversational AI encompasses systems that engage in natural-language dialogue with humans, including chatbots, voice assistants, and large-language-model-powered interfaces. It applies natural language processing, language modeling, dialogue management, and speech recognition to understand intent and generate contextually appropriate responses.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-research-area",
@@ -17,21 +17,64 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:chatbots",
+        "label": "Chatbots"
+      },
+      {
+        "id": "urn:ngm:class:dialogue-system",
+        "label": "Dialogue System"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-understanding",
+        "label": "Natural Language Understanding"
+      },
+      {
+        "id": "urn:ngm:class:sentiment-analysis",
+        "label": "Sentiment Analysis"
+      },
+      {
+        "id": "urn:ngm:class:voice-interaction",
+        "label": "Voice Interaction"
+      }
+    ],
     "requires": [],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:language-modeling",
+        "label": "Language Modeling"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai",
+        "label": "Multimodal AI"
+      }
+    ]
   },
   "wikilinks": [
     {

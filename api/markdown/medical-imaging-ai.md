@@ -7,7 +7,12 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses [[Convolutional Neural Network]]
+  - uses [[Computer Vision]]
+  - hasPart [[Radiology AI]]
+  - hasPart [[Pathology AI]]
+  - partOf [[Medical AI]]
+  - enables [[Healthcare AI]]
 
 - ### Content
   - Medical Imaging AI encompasses artificial intelligence systems designed to analyse, interpret, and enhance medical images including radiological scans, pathology slides, and other diagnostic imaging modalities. These systems employ deep learning architectures, particularly convolutional neural networks, to perform tasks such as lesion detection, disease classification, segmentation of anatomical structures, and quantitative image analysis whilst adhering to clinical validation standards and regulatory requirements.

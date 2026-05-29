@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:raycast-system",
   "domain": "spatial-computing",
-  "definition": "Raycast System is a spatial computing concept and a type of spatial-computing.",
+  "definition": "A Raycast System is the interaction subsystem in a spatial computing or XR engine that casts geometric rays from a controller, gaze direction, or cursor into the 3D scene to detect intersections with scene objects, enabling selection, pointing, UI interaction, and collision queries. It forms the primary input-resolution layer in VR/AR user interfaces, translating physical or tracked user intent into object picks within the scene graph.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-interaction",
@@ -13,17 +13,52 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:physics-engine",
+        "label": "Physics Engine"
+      },
+      {
+        "id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      },
+      {
+        "id": "urn:ngm:class:scene-graph",
+        "label": "Scene Graph"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:user-interface",
+        "label": "User Interface"
+      },
+      {
+        "id": "urn:ngm:class:gaze-control",
+        "label": "Gaze Control"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:vr-controllers",
+        "label": "VR Controllers"
+      },
+      {
+        "id": "urn:ngm:class:hand-tracking",
+        "label": "Hand Tracking"
+      },
+      {
+        "id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

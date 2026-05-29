@@ -6,7 +6,14 @@
   - owl-role:: concept
 
 - ### Relationships
-  - is-subclass-of:: ['owl:Thing']
+  - is-subclass-of:: AI Technique
+  - Uses [[Active Learning]]
+  - Uses [[Data Annotation]]
+  - Uses [[Reinforcement Learning from Human Feedback]]
+  - Enables [[Interactive Learning]]
+  - Supports [[Machine Learning]]
+  - Related To [[Human in the Loop]]
+  - Related To [[Federated Learning]]
 
 - ### Content
 

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:mempool",
   "domain": "blockchain",
-  "definition": "Memory pool of pending transactions within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "The memory pool maintained by each blockchain node holding broadcast but as-yet unconfirmed transactions awaiting inclusion in a block. Miners select transactions from the mempool, typically prioritising by fee rate, while node operators use mempool policies to manage capacity and mitigate spam.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-network-component",
@@ -21,12 +21,30 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:transaction-pool",
+        "label": "Transaction Pool"
+      },
+      {
+        "id": "urn:ngm:class:transaction",
+        "label": "Transaction"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:transaction-confirmation",
+        "label": "Transaction Confirmation"
+      },
+      {
+        "id": "urn:ngm:class:transaction-processing",
+        "label": "Transaction Processing"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -35,7 +53,32 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      },
+      {
+        "id": "urn:ngm:class:fee-market",
+        "label": "Fee Market"
+      },
+      {
+        "id": "urn:ngm:class:transaction-fee",
+        "label": "Transaction Fee"
+      },
+      {
+        "id": "urn:ngm:class:block-size",
+        "label": "Block Size"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "id": "urn:ngm:class:mining-pool",
+        "label": "Mining Pool"
+      }
+    ]
   },
   "wikilinks": [
     {

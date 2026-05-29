@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:green-finance",
   "domain": "blockchain",
-  "definition": "Green finance encompasses financial instruments, investments, and policies directed toward environmentally sustainable projects, including those leveraging blockchain for transparent ESG tracking and carbon credit markets.",
+  "definition": "Green finance is the set of financial instruments, investment strategies, market mechanisms, and regulatory frameworks that channel capital towards environmentally sustainable projects and activities, with the explicit goal of mitigating climate change, protecting biodiversity, and supporting the transition to a low-carbon economy. It encompasses green bonds, sustainability-linked loans, green funds, carbon markets, and blended finance structures, underpinned by taxonomies such as the EU Taxonomy for Sustainable Activities that define what qualifies as environmentally sustainable. Blockchain technology is being applied in green finance to provide transparent, immutable registries for carbon credits and ESG data, reducing double-counting and greenwashing risks.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-governance-and-regulation",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:carbon-credit-tracking",
+        "label": "Carbon Credit Tracking"
+      },
+      {
+        "id": "urn:ngm:class:environmental-sustainability",
+        "label": "Environmental Sustainability"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:carbon-credits",
+        "label": "Carbon Credits"
+      },
+      {
+        "id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:esg-investing",
+        "label": "ESG Investing"
+      },
+      {
+        "id": "urn:ngm:class:financial-instruments",
+        "label": "Financial Instruments"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

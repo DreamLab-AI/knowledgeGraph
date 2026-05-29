@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:user-context-awareness",
   "domain": "spatial-computing",
-  "definition": "The capability of digital systems to understand and adapt to a user's current situation, including their location, activity, preferences, device capabilities, and environmental factors to provide personalized and relevant experiences.",
+  "definition": "User Context Awareness is the capability of digital systems to sense, model, and respond to a user's current situation\u2014encompassing location, activity, device state, social context, and environmental factors\u2014in order to deliver personalised, timely, and relevant experiences. It underpins adaptive XR interfaces, smart environment switching, and context-driven content recommendation in spatial computing.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-interaction",
@@ -17,21 +17,49 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:context-awareness",
+        "label": "Context Awareness"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:personalized-virtual-experiences",
+        "label": "Personalized Virtual Experiences"
+      },
+      {
+        "id": "urn:ngm:class:predictive-personalization",
+        "label": "Predictive Personalization"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:preference-learning",
+        "label": "Preference Learning"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -146,16 +146,30 @@ public:: true
   "@id": "urn:ngm:class:virtual-asset",
   "@type": "Class",
   "label": "Virtual Asset",
-  "definition": "Virtual assets are digital items with economic value within MetaversePlatforms|metaverse environments, spanning NFT|non-fungible tokens representing unique digital collectibles, Avatar|avatars and avatar customisations, VirtualRealEstate|virtual real estate, and",
+  "definition": "Digital items with economic value within metaverse environments, spanning non-fungible tokens representing unique digital collectibles, avatars and avatar customisations, virtual real estate, and in-game items with market-tradeable value. Ownership and transfer of virtual assets rely on blockchain smart contracts or centralised platform ledgers, with interoperability standards enabling asset portability across platforms and markets.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
     }
   ],
-  "quality": 0.4,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:nft", "label": "NFT"},
+      {"@id": "urn:ngm:class:digital-ownership", "label": "Digital Ownership"},
+      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:virtual-economy", "label": "Virtual Economy"}
+    ]
+  },
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -329,7 +343,12 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses [[Smart Contract]]
+  - uses [[Blockchain]]
+  - relatedTo [[NFT]]
+  - relatedTo [[Digital Ownership]]
+  - relatedTo [[Interoperability]]
+  - partOf [[Virtual Economy]]
 
 - ### Content
   - Digital items with economic value within [[MetaversePlatforms|metaverse environments]], spanning [[NFT|non-fungible tokens]] representing unique collectibles, [[Avatar|avatars]] and customisations, [[VirtualRealEstate|virtual real estate]], and [[InGameItems|in-game items]] with market-tradeable value. Ownership and transfer rely on [[BlockchainTechnology|blockchain]] smart contracts or centralised platform ledgers, with [[Interoperability|interoperability standards]] enabling asset portability across platforms and markets. Economic significance spans consumer entertainment to investment speculation, with regulatory frameworks increasingly addressing [[VirtualAssetTaxation|taxation]] and securities classification.

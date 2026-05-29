@@ -54,15 +54,30 @@ public:: true
   "@id": "urn:ngm:class:dropout",
   "@type": "Class",
   "label": "Dropout",
-  "definition": "Dropout is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "Dropout is a regularisation technique for neural network training in which a randomly selected fraction of neuron activations is set to zero during each forward pass, preventing neurons from co-adapting and forcing the network to learn redundant representations. By randomly deactivating 20–50% of units per training step, dropout acts as an ensemble method — each mini-batch trains a slightly different network architecture — significantly reducing overfitting on limited training datasets. At inference time, all neurons are active but their outputs are scaled by the retention probability.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
     }
   ],
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:regularisation", "label": "Regularisation"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
+      {"@id": "urn:ngm:class:training", "label": "Training"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:overfitting", "label": "Overfitting"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -123,6 +138,11 @@ public:: true
 
 - ### Relationships
   - bridges-to:: [[Autonomous Robot]]
+  - partOf [[Regularisation]]
+  - requires [[Neural Network]]
+  - requires [[Training]]
+  - contrastsWith [[Overfitting]]
+  - enables [[Deep Learning]]
 
 - ### Content
   - ### Primary Definition

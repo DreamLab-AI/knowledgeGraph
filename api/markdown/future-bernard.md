@@ -1,12 +1,14 @@
 - ### Definition
-  - Future Bernard is a concept within the ngm domain.
+  - A proposed multi-viewpoint immersive AI research platform enabling multiple domain experts to collaborate simultaneously in a shared stereoscopic environment, each maintaining their own spatial perspective. Real-time AI observes all communication channels—verbal, gestural, spatial, and conceptual—building a living ontology from emergent expert consensus, with applications in high-stakes planning such as nuclear decommissioning.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:FutureBernard
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: Immersive Technology, Knowledge Graph — the platform is built on immersive spatial computing with a live knowledge graph as its epistemic output
+  - **enables**: Ontology, Agentic AI — collaborative expert sessions generate emergent ontologies that AI agents can learn from and propagate
+  - **relatedTo**: Extended Reality, Digital Twin — the facility shares architectural patterns with XR telepresence and digital twin environments
 
 - ### Content
   - ![image (9).png](../assets/image_(9)_1753019256369_0.png)

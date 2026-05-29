@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:trust-architecture",
   "domain": "spatial-computing",
-  "definition": "The structural framework of protocols, technologies, and governance mechanisms that establish, verify, and maintain trust relationships between users, platforms, and services in decentralized digital environments and metaverse ecosystems.",
+  "definition": "The structural framework of protocols, technologies, and governance mechanisms that establish, verify, and maintain trust relationships between users, platforms, and services in decentralized digital environments and metaverse ecosystems. It encompasses identity verification through Decentralised Identifiers (DIDs), cryptographically signed Verifiable Credentials, smart-contract-enforced rules, and consensus mechanisms, supporting both zero-trust security models and reputation-based trust scoring across cross-platform interactions.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-governance-and-safety",
@@ -17,21 +17,57 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:decentralized-identifiers",
+        "label": "Decentralized Identifiers"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cross-platform-identity",
+        "label": "Cross-Platform Identity"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-governance",
+        "label": "Decentralized Governance"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-security",
+        "label": "Cryptographic Security"
+      },
+      {
+        "id": "urn:ngm:class:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:trust-framework",
+        "label": "Trust Framework"
+      },
+      {
+        "id": "urn:ngm:class:trust-infrastructure",
+        "label": "Trust Infrastructure"
+      }
+    ]
   },
   "wikilinks": [
     {

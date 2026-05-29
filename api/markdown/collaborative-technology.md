@@ -1,12 +1,15 @@
 - ### Definition
-  - CollaborativeTechnology is a concept within the ngm domain.
+  - Collaborative Technology encompasses the hardware, software, protocols, and infrastructure components that enable distributed teams to work together effectively across time and space. This includes real-time media processing, synchronisation protocols, edge computing for latency reduction, and zero-trust security models forming the technological substrate of telecollaboration.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:CollaborativeTechnology
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - enables:: [[Telecollaboration]], [[Video Conferencing]]
+  - uses:: [[Network Protocol]], [[Communication Protocol]]
+  - supports:: [[Distributed Collaboration]]
+  - depends-on:: [[Networking Infrastructure]]
 
 - ### Content
 

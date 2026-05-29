@@ -33,16 +33,31 @@ public:: true
   "@id": "urn:ngm:class:dreamlab",
   "@type": "Class",
   "label": "Dreamlab",
-  "definition": "Dreamlab is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Dreamlab is a UK-based creative technologist collective offering multidisciplinary services spanning AI and machine learning, virtual production, immersive XR experiences, generative media, spatial computing, and strategic R&D partnerships. It operates at the intersection of advanced AI infrastructure, real-time rendering, and immersive storytelling for creative and enterprise clients.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
+      {"@id": "urn:ngm:class:immersive-technology", "label": "Immersive Technology"},
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
+      {"@id": "urn:ngm:class:knowledge-management", "label": "Knowledge Management"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:extended-reality-xr", "label": "Extended Reality (XR)"},
+      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -72,14 +87,16 @@ public:: true
 
 
 - ### Definition
-  - Dreamlab is a concept within the ngm domain.
+  - Dreamlab is a UK-based creative technologist collective offering multidisciplinary services spanning AI and machine learning, virtual production, immersive XR experiences, generative media, spatial computing, and strategic R&D partnerships. It operates at the intersection of advanced AI infrastructure, real-time rendering, and immersive storytelling for creative and enterprise clients.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:Dreamlab
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: [[Generative AI]], [[Immersive Technology]], [[Spatial Computing]]
+  - **enables**: [[Immersive Experience]], [[Knowledge Management]]
+  - **relatedTo**: [[Extended Reality (XR)]], [[AI Infrastructure]]
 
 - ### Content
   - ---

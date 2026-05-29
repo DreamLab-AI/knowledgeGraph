@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:profile-management",
   "domain": "infrastructure",
-  "definition": "Profile Management is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Profile Management encompasses the systems and services for creating, storing, updating, and securing user profiles within metaverse and digital platforms. It covers avatar customisation preferences, personal data storage, authentication credentials, and preference settings, enabling persistent personalised experiences across sessions and across interoperable environments.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-security-and-identity",
@@ -14,16 +14,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:avatar-customization",
+        "label": "Avatar Customization"
+      },
+      {
+        "id": "urn:ngm:class:avatar-system",
+        "label": "Avatar System"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:personal-data-store",
+        "label": "Personal Data Store"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

@@ -1,18 +1,20 @@
 - ### Definition
-  - Data Registry is a concept within the metaverse domain. Further enrichment pending.
+  A Data Registry is a centralised or federated catalogue that maintains authoritative records of data assets, their schemas, provenance, ownership, and access policies. In digital and metaverse infrastructure, registries track digital assets, avatar identities, and ontological terms, enabling discovery, governance, and interoperability. Blockchain-anchored registries provide tamper-evident provenance and decentralised control.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:DataRegistry
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: Blockchain, Digital Identity (tamper-evident anchoring and identity-bound ownership)
+  - **enables**: Data Governance, Data Interoperability (registries are the foundation for policy enforcement and cross-system data sharing)
+  - **supports**: Data Access Interface, Digital Asset Management (registries expose metadata consumed by these downstream systems)
 
 - ### Content
 
   ## Overview
 
-  Data Registry represents an abstract concept in the metaverse ontology hierarchy.
+  A Data Registry maintains authoritative, versioned records of data assets, schemas, and access policies. It is a prerequisite for trustworthy data governance across distributed platforms.
 
   #### Related Concepts
   - [[owl:Thing]]

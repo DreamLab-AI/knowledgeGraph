@@ -8,7 +8,7 @@
   "definition": "Visual interfaces that aggregate and display real-time metrics, logs, and traces from systems and applications, enabling observability, performance tracking, incident detection, and data-driven decision making through unified visualisation platforms.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure (Category)"
     },
     {

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:machine-learning-technique",
   "domain": "artificial-intelligence",
-  "definition": "Machine Learning Technique is a artificial intelligence concept and a type of Machine Learning.",
+  "definition": "A specific algorithmic approach or methodology within machine learning used to enable systems to learn from data. Machine learning techniques span supervised, unsupervised, and reinforcement paradigms and include methods such as gradient descent optimisation, backpropagation, fine-tuning, transfer learning, boosting, and bagging that enable models to improve performance through exposure to training data.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -17,12 +17,50 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:unsupervised-learning",
+        "label": "Unsupervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-fairness",
+        "label": "AI Fairness"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -31,7 +69,24 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:semi-supervised-learning",
+        "label": "Semi-Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:boosting",
+        "label": "Boosting"
+      },
+      {
+        "id": "urn:ngm:class:bagging",
+        "label": "Bagging"
+      }
+    ]
   },
   "wikilinks": [
     {

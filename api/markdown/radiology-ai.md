@@ -7,7 +7,11 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses [[Convolutional Neural Network]] as the primary architectural backbone for image analysis
+  - Uses [[Image Segmentation]] for organ and lesion delineation
+  - Requires [[Medical Imaging]] as the source data domain
+  - Related to [[Computer Vision]] as the foundational technical discipline
+  - Related to [[Object Detection]] for nodule and anomaly localisation
 
 - ### Content
   - Radiology AI refers to artificial intelligence systems specifically designed for the interpretation and analysis of radiological imaging modalities including X-ray, computed tomography (CT), magnetic resonance imaging (MRI), and ultrasound. These systems automate detection, classification, and quantification tasks whilst integrating with PACS workflows and providing radiologist-level diagnostic performance validated through clinical trials.

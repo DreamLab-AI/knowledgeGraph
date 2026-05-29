@@ -46,16 +46,34 @@ public:: true
   "@id": "urn:ngm:class:real-time-inference-at-edge",
   "@type": "Class",
   "label": "Real-Time Inference at Edge",
-  "definition": "Real-Time Inference at Edge delivers deterministic machine learning predictions with strict latency deadlines on edge devices, enabling safety-critical autonomous systems and time-sensitive intelligent applications.",
+  "definition": "The execution of machine learning inference on edge devices under deterministic latency constraints, typically P99 latency below 10–100 ms, to support safety-critical and time-sensitive applications. Achieves real-time performance through hardware accelerators (NPUs, FPGAs, ASICs), model compression, and priority scheduling without reliance on cloud round-trips.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:cat-ai-infrastructure",
+      "@id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure (Category)"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
+      {"@id": "urn:ngm:class:model-compression-for-edge", "label": "Model Compression for Edge"},
+      {"@id": "urn:ngm:class:embedded-systems", "label": "Embedded Systems"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:npu", "label": "NPU"},
+      {"@id": "urn:ngm:class:fpga", "label": "FPGA"},
+      {"@id": "urn:ngm:class:edge-ai-accelerator", "label": "Edge AI Accelerator"},
+      {"@id": "urn:ngm:class:latency-aware-edge-ai", "label": "Latency-Aware Edge AI"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:edge-ai-system", "label": "Edge AI System"},
+      {"@id": "urn:ngm:class:knowledge-distillation-for-edge", "label": "Knowledge Distillation for Edge"},
+      {"@id": "urn:ngm:class:model-pruning-for-edge-deployment", "label": "Model Pruning for Edge Deployment"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

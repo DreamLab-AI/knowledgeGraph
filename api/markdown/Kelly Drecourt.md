@@ -33,15 +33,25 @@ public:: true
   "@id": "urn:ngm:class:kelly-drecourt",
   "@type": "Class",
   "label": "Kelly Drecourt",
-  "definition": "Kelly Drecourt is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Kelly Drecourt is a collaborator and practitioner associated with teacher-support application development, operating at the intersection of educational technology and AI-assisted tools for classroom and curriculum support.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:educational-technology", "label": "Educational Technology"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:learning-management-system", "label": "Learning Management System"},
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -72,14 +82,15 @@ public:: true
 
 
 - ### Definition
-  - Kelly Drecourt is a concept within the ngm domain.
+  - Kelly Drecourt is a collaborator and practitioner associated with teacher-support application development, operating at the intersection of educational technology and AI-assisted tools for classroom and curriculum support.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:KellyDrecourt
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses:: [[Educational Technology]]
+  - relatedTo:: [[Learning Management System]], [[Artificial Intelligence]]
 
 - ### Content
   - Looking for help with teacher support app

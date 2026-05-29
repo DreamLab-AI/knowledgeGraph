@@ -7,8 +7,12 @@
   - belongs-to-domain:: [[BlockchainDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
-
+  - uses:: [[Smart Contract]]
+  - uses:: [[Governance Token]]
+  - requires:: [[Smart Contract Platform]]
+  - enables:: [[Decentralized Governance]]
+  - relatedTo:: [[Blockchain Infrastructure]]
+  - relatedTo:: [[DAO Governance]]
   - bridges-to:: [[AI Agent System]] (ai)
 - ### Content
   - An organisational structure operating through transparent, code-based rules and community-driven governance rather than hierarchical command structures, enabled by [[Smart Contracts]] and [[Blockchain Infrastructure]]. DAOs coordinate stakeholder decisions, manage shared resources, and execute treasury operations through [[Distributed Consensus]] mechanisms.

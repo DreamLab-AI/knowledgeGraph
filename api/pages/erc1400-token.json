@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:erc1400-token",
   "domain": "blockchain",
-  "definition": "A security token standard tailored for regulatory compliance, providing transfer restrictions, document management, and compliance hooks for securities law requirements.",
+  "definition": "An ERC1400 Token is an Ethereum-based security token standard that extends the ERC20 interface with partitioned token tranches, forced transfer capabilities, controller-initiated operations, and on-chain document management, enabling issuers to represent regulated financial securities on a public or permissioned blockchain. The standard enforces transfer restrictions through a canTransfer validation hook that integrates with off-chain compliance logic \u2014 such as AML/KYC whitelists and jurisdictional eligibility rules \u2014 returning standardised EIP-1066 status codes rather than simple booleans. ERC1400 is positioned as an umbrella framework composing interoperability sub-standards (ERC1410 for partitions, ERC1594 for transfers, ERC1643 for documents, ERC1644 for controller operations), making it suitable for tokenising equities, bonds, real estate, and fund units subject to securities law.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-token-and-asset",
@@ -17,21 +17,86 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:erc1400-standard",
+        "label": "ERC1400 Standard"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-compliance",
+        "label": "Blockchain Compliance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:asset-tokenization",
+        "label": "Asset Tokenization"
+      },
+      {
+        "id": "urn:ngm:class:security-token-offering",
+        "label": "Security Token Offering"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-trading",
+        "label": "Digital Asset Trading"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:erc20-token",
+        "label": "ERC20 Token"
+      },
+      {
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:erc3643-token",
+        "label": "ERC3643 Token"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      },
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      }
+    ]
   },
   "wikilinks": [
     {

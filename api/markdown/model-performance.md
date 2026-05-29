@@ -7,7 +7,14 @@
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart [[Accuracy]]
+  - hasPart [[F1 Score]]
+  - hasPart [[Confusion Matrix]]
+  - requires [[Benchmark Standard]]
+  - requires [[Model Training]]
+  - relatedTo [[Fairness]]
+  - relatedTo [[Robustness]]
+  - relatedTo [[AI Monitoring]]
 
 - ### Content
   - The quantitative and qualitative measure of how effectively an artificial intelligence model accomplishes its designated tasks, typically assessed through statistical metrics evaluating prediction accuracy, reliability, generalisability, computational efficiency, and robustness, considered across different data distributions, operational conditions, and stakeholder requirements, serving as a critical basis for model selection, deployment decisions, ongoing monitoring, and continuous improvement throughout the AI lifecycle.

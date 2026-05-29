@@ -8,6 +8,12 @@
 
 - ### Relationships
   - is-subclass-of:: [[Community Governance]]
+  - Requires [[Governance Model]]
+  - Requires [[Content Moderation]]
+  - Supports [[Digital Citizenship]]
+  - Supports [[Social VR]]
+  - Part Of [[Virtual World]]
+  - Contrasts With [[DAO Governance]]
 
 - ### Content
 

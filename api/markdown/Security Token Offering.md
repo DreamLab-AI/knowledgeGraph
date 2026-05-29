@@ -42,15 +42,30 @@ public:: true
   "@id": "urn:ngm:class:security-token-offering",
   "@type": "Class",
   "label": "Security Token Offering",
-  "definition": "Security Token Offering is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "A Security Token Offering (STO) is a regulated fundraising mechanism in which blockchain-based tokens representing ownership rights, revenue shares, or other financial entitlements are offered to investors under applicable securities law. Unlike utility token sales, STOs require issuer compliance with financial regulation, investor accreditation, and prospectus or exemption filings, bringing traditional capital market discipline to tokenised asset issuance.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"},
+      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
+      {"@id": "urn:ngm:class:identity-verification", "label": "Identity Verification"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:security-token", "label": "Security Token"},
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:asset-tokenization", "label": "Asset Tokenization"},
+      {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -87,23 +102,35 @@ public:: true
 
 
 - ### Definition
-  - Security Token Offering is a concept within the metaverse domain. Further enrichment pending.
+  - A Security Token Offering (STO) is a regulated fundraising mechanism in which blockchain-based tokens representing ownership rights, revenue shares, or other financial entitlements are offered to investors under applicable securities law. Unlike utility token sales, STOs require issuer compliance with financial regulation, investor accreditation, and prospectus or exemption filings, bringing traditional capital market discipline to tokenised asset issuance.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:SecurityTokenOffering
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Financial Regulation]]
+  - requires [[Regulatory Compliance]]
+  - requires [[Identity Verification]]
+  - uses [[Security Token]]
+  - uses [[Smart Contract]]
+  - relatedTo [[Asset Tokenization]]
+  - relatedTo [[Digital Asset]]
 
 - ### Content
 
   ## Overview
 
-  Security Token Offering represents an abstract concept in the metaverse ontology hierarchy.
+  A Security Token Offering represents a compliant fundraising route for tokenised securities on a blockchain. Issuers must satisfy applicable financial regulation (such as Reg D, Reg S, or EU prospectus rules), implement KYC/AML via identity verification providers, and embed transfer restrictions into the token's smart contract logic. Security tokens may represent equity in a company, debt instruments, revenue participation rights, or fractionalised real-world assets such as real estate. Smart contracts automate cap-table management, dividend distribution, and compliance checks at transfer time. Asset tokenisation via STOs unlocks liquidity for traditionally illiquid assets and enables fractional ownership, broadening investor access. Regulatory compliance frameworks vary significantly across jurisdictions, making cross-border STOs complex but increasingly addressed by regulatory sandboxes and emerging token-specific legislation.
 
   #### Related Concepts
-  - [[owl:Thing]]
+  - [[Financial Regulation]]
+  - [[Regulatory Compliance]]
+  - [[Identity Verification]]
+  - [[Security Token]]
+  - [[Smart Contract]]
+  - [[Asset Tokenization]]
+  - [[Digital Asset]]
 
 - ### Provenance
   - sources::

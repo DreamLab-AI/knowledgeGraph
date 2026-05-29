@@ -1,13 +1,18 @@
 - ### Definition
-  - The total number of trainable parameters in a neural network, serving as a primary measure of model size and capacity, typically ranging from millions to hundreds of billions in modern language models.
+  - The total number of trainable weights and biases in a neural network, serving as the primary measure of model size and capacity. Parameter count typically ranges from millions to hundreds of billions in modern language models, and governs memory requirements, inference cost, and the upper bound on information that can be encoded; scaling law research relates it to training compute and dataset size.
 
 - ### Semantic Classification
-  - owl-class:: spatial-computing:ParameterCount
+  - owl-class:: artificial-intelligence:ParameterCount
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **partOf** [[Neural Network]] — parameters are the learnable components constituting a neural network
+  - **partOf** [[Large Language Models]] — parameter count is the defining scale metric for large language models
+  - **dependsOn** [[Neural Network Architecture]] — architecture choices (depth, width, attention heads) determine total parameter count
+  - **enables** [[Fine Tuning]] — parameter count determines the cost and feasibility of fine-tuning procedures
+  - **enables** [[Transfer Learning]] — large parameter counts encode rich prior knowledge transferable to downstream tasks
+  - **relatedTo** [[Machine Learning Infrastructure]] — parameter count directly drives hardware memory and compute requirements
 
 - ### Content
   - The total number of trainable parameters in a neural network, serving as a primary measure of model size and capacity, typically ranging from millions to hundreds of billions in modern language models.

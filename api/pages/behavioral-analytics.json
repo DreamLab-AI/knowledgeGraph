@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:behavioral-analytics",
   "domain": "artificial-intelligence",
-  "definition": "Behavioral Analytics is a artificial intelligence concept and a type of Machine Learning.",
+  "definition": "The application of statistical and machine learning methods to large-scale records of user or system actions \u2014 including clickstreams, transaction logs, application events, and network telemetry \u2014 in order to model normal behaviour, detect anomalies, predict future actions, and personalise experiences. Behavioural analytics underpins cybersecurity (UEBA \u2014 user and entity behaviour analytics), e-commerce recommendation, digital health monitoring, and fraud detection.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -17,21 +17,65 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "id": "urn:ngm:class:pattern-recognition",
+        "label": "Pattern Recognition"
+      },
+      {
+        "id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ]
   },
   "wikilinks": [
     {

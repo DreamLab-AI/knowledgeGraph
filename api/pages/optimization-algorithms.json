@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:optimization-algorithms",
   "domain": "artificial-intelligence",
-  "definition": "Optimization Algorithms in AI are mathematical procedures for minimizing or maximizing objective functions, central to training machine learning models. Gradient-based mods (SGD, Adam, RMSprop, AdaGrad) iteratively update model parameters to minimize loss functions.",
+  "definition": "Mathematical procedures for minimising or maximising objective functions, central to training machine learning models. Gradient-based methods (SGD, Adam, RMSprop, AdaGrad) iteratively update model parameters to reduce loss; advanced techniques encompass momentum-based optimisation, adaptive learning rates, second-order methods (L-BFGS, natural gradient), and gradient-free approaches (evolutionary strategies, Bayesian optimisation), addressing non-convexity, saddle points, and high-dimensional parameter-space challenges.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -13,17 +13,44 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

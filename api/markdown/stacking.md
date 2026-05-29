@@ -1,5 +1,5 @@
 - ### Definition
-  - Stacking is a concept within the ai domain.
+  - Stacking (stacked generalisation) is a hierarchical ensemble method that trains multiple diverse base models then combines their predictions using a meta-model, which learns the optimal weighting of base model outputs. Unlike bagging and boosting, stacking uses cross-validated out-of-fold predictions to train the meta-model, reducing information leakage and typically achieving superior predictive performance over any single base learner.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:Stacking
@@ -7,6 +7,11 @@
 
 - ### Relationships
   - is-subclass-of:: [[Ensemble Methods]]
+  - Uses [[Machine Learning Model]]
+  - Contrasts with [[Bagging]]
+  - Contrasts with [[Boosting]]
+  - Requires [[Ensemble Methods]]
+  - Related to [[Overfitting]]
 
 - ### Content
 

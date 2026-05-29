@@ -8,6 +8,11 @@
 
 - ### Relationships
   - bridges-to:: [[AI Agent System]]
+  - partOf:: [[AI Safety]]
+  - requires:: [[Reinforcement Learning from Human Feedback]]
+  - supports:: [[Responsible AI]]
+  - supports:: [[AI Governance]]
+  - relatedTo:: [[Explainable AI]]
 
 - ### Content
   - The process of making AI systems' behaviour and goals consistent with human values, preferences, and intentions. AI alignment encompasses technical methods and research aimed at ensuring AI systems act in accordance with human interests, even as they become more capable.

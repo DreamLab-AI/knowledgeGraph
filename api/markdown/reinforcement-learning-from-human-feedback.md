@@ -7,7 +7,12 @@
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Reward Model]]
+  - requires [[Human Feedback]]
+  - requires [[Supervised Fine Tuning]]
+  - enables [[AI Alignment]]
+  - enables [[Large Language Models]]
+  - contrastsWith [[Direct Preference Optimisation]]
 
 - ### Content
   - A technique for aligning language models with human preferences by training a reward model from human rankings of outputs and using reinforcement learning (typically PPO) to optimise the policy towards maximising predicted human preference. RLHF enables models to learn complex alignment objectives difficult to specify explicitly.

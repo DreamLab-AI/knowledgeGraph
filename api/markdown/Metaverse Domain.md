@@ -102,9 +102,11 @@ public:: true
   "@id": "urn:ngm:class:metaverse-domain",
   "@type": "Class",
   "label": "Metaverse Domain",
-  "definition": "The Metaverse Domain provides an ontological framework for interconnected digital platforms leveraging augmented, extended, and virtual realities to create immersive user experiences through multidimensional interactions.",
+  "definition": "The Metaverse Domain is an ontological category encompassing interconnected persistent digital environments that merge augmented, virtual, and extended realities into immersive, spatially coherent experiences. It includes the technological, economic, social, and governance layers enabling persistent identity, asset ownership, and real-time interaction across virtual worlds. The domain spans enabling technologies such as spatial computing, blockchain-based economies, avatar systems, and haptic feedback that collectively constitute the metaverse stack.",
   "domain": "spatial-computing",
   "maturity": "emerging",
+  "qualityScore": 0.75,
+  "quality": 0.75,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -115,7 +117,24 @@ public:: true
       "label": "Extended Reality (XR)"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
+      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
+      {"@id": "urn:ngm:class:avatar-system", "label": "Avatar System"},
+      {"@id": "urn:ngm:class:virtual-economy", "label": "Virtual Economy"},
+      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
+      {"@id": "urn:ngm:class:nft", "label": "NFT"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

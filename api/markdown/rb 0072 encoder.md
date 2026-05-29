@@ -46,9 +46,9 @@ public:: true
   "@id": "urn:ngm:class:rb-0072-encoder",
   "@type": "Class",
   "label": "rb 0072 encoder",
-  "definition": "Encoder - Encoder in robotics systems",
+  "definition": "An encoder in robotics is a proprioceptive transducer that converts the angular or linear position of a joint or actuator shaft into a digital electrical signal, providing the position and velocity feedback essential for closed-loop control. Encoders are categorised as incremental (providing relative position pulses) or absolute (outputting a unique code for each position), with absolute rotary encoders being preferred in safety-critical collaborative robot applications due to their power-loss resilience. High-resolution encoders directly determine robot accuracy, repeatability, and the fidelity of safety functions such as speed limitation.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-perception",
@@ -59,7 +59,25 @@ public:: true
       "label": "Proprioceptive Sensor"
     }
   ],
-  "quality": 0.5,
+  "quality": 0.7,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:rotary-encoder", "label": "Rotary Encoder"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:rb-0047-feedback-control", "label": "rb 0047 feedback control"},
+      {"@id": "urn:ngm:class:rb-0054-position-control", "label": "rb 0054 position control"},
+      {"@id": "urn:ngm:class:rb-0093-speed-limitation", "label": "rb 0093 speed limitation"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:rb-0034-repeatability", "label": "rb 0034 repeatability"},
+      {"@id": "urn:ngm:class:rb-0035-accuracy", "label": "rb 0035 accuracy"},
+      {"@id": "urn:ngm:class:rb-0026-robot-joint", "label": "rb 0026 robot joint"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:rb-0066-robot-sensor", "label": "rb 0066 robot sensor"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -100,7 +118,7 @@ public:: true
 
 
 - ### Definition
-  - **Encoder** - Encoder in robotics systems
+  - **Encoder** (RB-0072) is a proprioceptive sensor converting joint position or shaft rotation into digital feedback signals for closed-loop robot control. Absolute encoders are preferred in safety-critical systems (e.g. cobots) because they retain position knowledge across power cycles, directly supporting speed limitation and position control safety functions.
 
 - ### Semantic Classification
   - owl-class:: robotics:RobotEncoder
@@ -108,7 +126,8 @@ public:: true
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - is-subclass-of:: [[Robotics]]
+  - supports:: rb 0047 feedback control, rb 0054 position control, rb 0093 speed limitation
+  - relatedTo:: rb 0034 repeatability, rb 0035 accuracy, rb 0026 robot joint
 
 - ### Content
   - ### Original Content

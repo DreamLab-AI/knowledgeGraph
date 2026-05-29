@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:progressive-download",
   "domain": "infrastructure",
-  "definition": "Progressive Download is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Progressive Download is a content delivery technique in which assets\u20143D models, textures, audio, or video\u2014are streamed and partially consumed before the full file is retrieved. It enables early playback or rendering from incomplete data, reduces perceived loading latency in metaverse environments, and underpins level-of-detail streaming and lazy asset loading strategies.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-network-and-comms",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:video-streaming",
+        "label": "Video Streaming"
+      },
+      {
+        "id": "urn:ngm:class:3-d-asset",
+        "label": "3D Asset"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      },
+      {
+        "id": "urn:ngm:class:level-of-detail",
+        "label": "Level of Detail"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:asset-management",
+        "label": "Asset Management"
+      },
+      {
+        "id": "urn:ngm:class:web-assembly",
+        "label": "WebAssembly"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": []

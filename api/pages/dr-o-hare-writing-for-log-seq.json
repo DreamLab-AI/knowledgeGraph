@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:dr-o-hare-writing-for-log-seq",
   "domain": "infrastructure",
-  "definition": "Dr O'Hare Writing for LogSeq is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A prescriptive style guide authored by Dr John O'Hare specifying the structural, syntactic, and tonal conventions for writing public-facing knowledge graph pages in Logseq. It mandates nested bullet-point outlines, UK English prose, Logseq wiki-link syntax, dense academic-conversational authorial voice, and heavy inline citation with external links.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-software-engineering",
@@ -13,8 +13,8 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,11 +23,38 @@
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:knowledge-graph-construction",
+        "label": "Knowledge Graph Construction"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-risks",
+        "label": "Digital Asset Risks"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:paper-writing",
+        "label": "Paper Writing"
+      }
+    ]
   },
   "wikilinks": [
     {

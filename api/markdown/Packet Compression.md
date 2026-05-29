@@ -37,16 +37,29 @@ public:: true
   "@id": "urn:ngm:class:packet-compression",
   "@type": "Class",
   "label": "Packet Compression",
-  "definition": "Packet Compression is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "The application of lossless or lossy compression algorithms to network packets to reduce transmission bandwidth and latency in real-time data pipelines. In metaverse and spatial computing contexts, packet compression is critical for streaming 3D scene state, avatar motion data, and sensor telemetry with minimal perceptual degradation at constrained network bandwidths.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-network-and-comms",
       "label": "Network and Communication"
     }
   ],
-  "quality": 0.35,
+  "qualityScore": 0.7,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:data-compression", "label": "Data Compression"},
+      {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:bandwidth-adaptation", "label": "Bandwidth Adaptation"},
+      {"@id": "urn:ngm:class:metaverse-infrastructure", "label": "Metaverse Infrastructure"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:latency", "label": "Latency"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -76,14 +89,16 @@ public:: true
 
 
 - ### Definition
-  - PacketCompression is a concept within the ngm domain.
+  - The application of lossless or lossy compression algorithms to network packets to reduce transmission bandwidth and latency in real-time data pipelines. In metaverse and spatial computing contexts, packet compression is critical for streaming 3D scene state, avatar motion data, and sensor telemetry with minimal perceptual degradation at constrained network bandwidths.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:PacketCompression
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses: [[Data Compression]], [[Network Protocol]]
+  - enables: [[Bandwidth Adaptation]], [[Metaverse Infrastructure]]
+  - supports: [[Latency]]
 
 - ### Content
   # PacketCompression

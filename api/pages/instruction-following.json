@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:instruction-following",
   "domain": "artificial-intelligence",
-  "definition": "A language model capability to accurately parse and execute explicit user directives within a prompt, including multi-step tasks, format constraints, and conditional logic.",
+  "definition": "Instruction following is a language model capability enabling accurate parsing and faithful execution of explicit user or system directives specified in natural language, including multi-step tasks, output format constraints, persona assignments, and conditional branching. It is principally acquired through supervised instruction tuning on curated (instruction, response) datasets and further refined via reinforcement learning from human feedback (RLHF) or direct preference optimisation (DPO). Strong instruction following is a prerequisite for reliable agentic behaviour, where a model must decompose and execute multi-step plans expressed as natural language specifications.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -14,11 +14,29 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:instruction-tuning",
+        "label": "Instruction Tuning"
+      },
+      {
+        "id": "urn:ngm:class:rlhf",
+        "label": "RLHF"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      },
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +45,12 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

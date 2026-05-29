@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:priority-fee",
   "domain": "blockchain",
-  "definition": "Miner tip for inclusion within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "A Priority Fee (also called a miner tip or validator tip) is an optional, user-specified additional payment on top of the base fee in EIP-1559-compatible blockchains, paid directly to the block producer to incentivise preferential inclusion and ordering of a transaction within the next block. By offering a higher tip, users signal urgency and compete for limited block space during periods of network congestion, enabling a market-based transaction prioritisation mechanism. Priority fees are burned alongside the base fee under EIP-1559's fee model only partially \u2014 the base fee is burned while the priority fee flows to the validator, aligning incentives for prompt transaction confirmation.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-defi-and-economics",
@@ -17,25 +17,88 @@
     },
     {
       "id": "urn:ngm:class:economic-mechanism",
-      "label": "EconomicMechanism"
+      "label": "Economic Mechanism"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:gas",
+        "label": "Gas"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:gas-optimization",
+        "label": "Gas Optimization"
+      },
+      {
+        "id": "urn:ngm:class:mev",
+        "label": "MEV"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:eip-1559",
+        "label": "EIP-1559"
+      },
+      {
+        "id": "urn:ngm:class:base-fee",
+        "label": "Base Fee"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:burning-mechanism",
+        "label": "Burning Mechanism"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:fee-market",
+        "label": "Fee Market"
+      },
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:transaction-fee",
+        "label": "Transaction Fee"
+      },
+      {
+        "id": "urn:ngm:class:gas-price",
+        "label": "Gas Price"
+      },
+      {
+        "id": "urn:ngm:class:gas-fee-market",
+        "label": "Gas Fee Market"
+      },
+      {
+        "id": "urn:ngm:class:validator-node",
+        "label": "Validator Node"
+      }
+    ]
   },
   "wikilinks": [
     {

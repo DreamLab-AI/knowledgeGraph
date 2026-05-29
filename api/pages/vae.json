@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:vae",
   "domain": "artificial-intelligence",
-  "definition": "Variational Autoencoder \u2014 a generative model that learns a probabilistic latent-space representation of data by jointly optimising a reconstruction loss and a KL-divergence regularisation term.",
+  "definition": "A Variational Autoencoder (VAE) is a generative model that learns a probabilistic latent-space representation of data by jointly optimising a reconstruction loss and a KL-divergence regularisation term, using variational inference to make the latent posterior tractable. The encoder network maps input data to a distribution over latent codes, whilst the decoder network reconstructs data from samples drawn from that distribution, enabling the model to generate novel, coherent samples at inference time. VAEs are foundational to latent diffusion models, image synthesis pipelines, and representation learning tasks where structured, disentangled latent spaces are desirable.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-model-architecture",
@@ -14,11 +14,29 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:variational-inference",
+        "label": "Variational Inference"
+      },
+      {
+        "id": "urn:ngm:class:autoencoder",
+        "label": "Autoencoder"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:latent-diffusion",
+        "label": "Latent Diffusion"
+      },
+      {
+        "id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +45,16 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:latent-space",
+        "label": "latent space"
+      },
+      {
+        "id": "urn:ngm:class:deep-generative-model",
+        "label": "Deep Generative Model"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

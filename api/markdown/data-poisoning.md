@@ -7,7 +7,9 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires**: Training Data, Model Training (the attack operates on training data during the training process)
+  - **contrastsWith**: Adversarial Robustness (robustness techniques are the defensive response to poisoning)
+  - **relatedTo**: Data Augmentation Strategies, Federated Learning, Machine Learning (augmentation can mask poisoning; federated learning faces distributed poisoning risks; machine learning is the broader affected domain)
 
 - ### Content
   - A training-time adversarial attack where malicious actors inject, modify, or manipulate training data to compromise model integrity, causing targeted misclassifications, backdoor triggers, or general performance degradation.

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:reactive-control",
   "domain": "robotics",
-  "definition": "Reactive Control is a type of Robotics in the robotics domain.",
+  "definition": "Reactive Control is a paradigm of robot control architecture in which sensor inputs are mapped directly to actuator outputs through fast, pre-compiled stimulus-response rules, without constructing an explicit world model. Associated with Brooks's subsumption architecture and behaviour-based robotics, it enables low-latency responses to environmental perturbations and is typically combined with deliberative or hybrid planners in practical autonomous systems.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
@@ -13,21 +13,57 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
+        "id": "urn:ngm:class:obstacle-avoidance",
+        "label": "Obstacle Avoidance"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:closed-loop-control",
+        "label": "Closed-Loop Control"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:motion-control",
+        "label": "Motion Control"
+      },
+      {
+        "id": "urn:ngm:class:force-control",
+        "label": "Force Control"
+      },
+      {
+        "id": "urn:ngm:class:manipulation",
+        "label": "Manipulation"
+      }
+    ]
   },
   "wikilinks": [
     {

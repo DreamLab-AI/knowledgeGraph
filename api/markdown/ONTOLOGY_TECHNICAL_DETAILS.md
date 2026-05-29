@@ -138,9 +138,10 @@ public:: true
   "@id": "urn:ngm:class:ontology-technical-details",
   "@type": "Class",
   "label": "ONTOLOGY_TECHNICAL_DETAILS",
-  "definition": "ONTOLOGY_TECHNICAL_DETAILS is a technology infrastructure concept and a type of Blockchain Entity.",
+  "definition": "A meta-documentation node cataloguing the technical structure, bidirectional link patterns, missing parent audits, and inheritance statistics of the NarrativeGoldmine ontology graph. It serves as a diagnostic reference for ontology engineers, documenting cross-domain isolation rules, broken reference inventories, and recommended file structures for parent concept pages.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-data-management",
@@ -155,7 +156,20 @@ public:: true
       "label": "Data Structure"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"},
+      {"@id": "urn:ngm:class:data-structure", "label": "Data Structure"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:knowledge-management", "label": "Knowledge Management"},
+      {"@id": "urn:ngm:class:data-management", "label": "Data Management"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -316,7 +330,7 @@ public:: true
 
 
 - ### Definition
-  - ONTOLOGY_TECHNICAL_DETAILS is a concept within the ngm domain.
+  - A meta-documentation node cataloguing the technical structure, bidirectional link patterns, missing parent audits, and inheritance statistics of the NarrativeGoldmine ontology graph. It serves as a diagnostic reference for ontology engineers, documenting cross-domain isolation rules, broken reference inventories, and recommended file structures for parent concept pages.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:ONTOLOGYTECHNICALDETAILS
@@ -324,6 +338,12 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Data Structure]], [[Distributed System]], [[Record-Keeping System]]
+  - **hasPart** [[Ontology]] — documents the structure and health of the NarrativeGoldmine ontology
+  - **hasPart** [[Knowledge Graph]] — the ontology graph is the primary artefact this page describes
+  - **uses** [[Distributed Ledger]] — blockchain entity inheritance patterns are a key analysis subject
+  - **uses** [[Data Structure]] — catalogues data structure parent pages and their missing implementations
+  - **relatedTo** [[Knowledge Management]] — serves knowledge management by auditing graph integrity
+  - **relatedTo** [[Data Management]] — data management concerns drive the missing-parent and broken-link audits
 
 - ### Content
   # TECHNICAL DETAILS: Specific Examples & File Locations

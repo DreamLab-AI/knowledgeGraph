@@ -9,7 +9,7 @@
   - implemented-in-layer:: [[ConceptualLayer]]
 
 - ### Relationships
-  - is-subclass-of:: [[AI Governance Principle]]
+  The Traceability Mechanism **has parts** including the Audit Trail (tamper-evident event log), Data Provenance records (origins and transformations of training data), and Metadata Management (structured documentation of system properties). It **enables** Accountability (assigning responsibility for outcomes), Explainability (supporting interpretations of decisions), and Compliance Verification (demonstrating adherence to regulations). It **requires** Data Governance frameworks and access to Model Training records. It **supports** AI Risk Management and AI Governance programmes as the evidentiary foundation. It is **related to** Transparency obligations, GDPR Compliance requirements, and AI Regulation frameworks that mandate its implementation.
 
 - ### Content
 

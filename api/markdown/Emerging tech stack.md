@@ -33,16 +33,31 @@ public:: true
   "@id": "urn:ngm:class:emerging-tech-stack",
   "@type": "Class",
   "label": "Emerging tech stack",
-  "definition": "Emerging tech stack is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A convergent set of nascent and rapidly maturing technologies—including decentralised identity, linked data, nostr key-pair agents, lightning-network micropayments, and knowledge graph tooling—that together enable a new paradigm of interoperable, agent-driven digital infrastructure. The stack combines protocol-level primitives with knowledge management and collaborative AI to support autonomous, verifiable workflows.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"},
+      {"@id": "urn:ngm:class:decentralized-identity-did", "label": "Decentralized Identity (DID)"},
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"},
+      {"@id": "urn:ngm:class:version-control", "label": "Version Control"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -72,14 +87,16 @@ public:: true
 
 
 - ### Definition
-  - Emerging tech stack is a concept within the ngm domain.
+  - A convergent set of nascent and rapidly maturing technologies—including decentralised identity, linked data, nostr key-pair agents, lightning-network micropayments, and knowledge graph tooling—that together enable a new paradigm of interoperable, agent-driven digital infrastructure. The stack combines protocol-level primitives with knowledge management and collaborative AI to support autonomous, verifiable workflows.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:EmergingTechStack
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **hasPart**: Linked Data, Decentralized Identity (DID), Knowledge Graph — these are core constituent technologies of the emerging stack
+  - **enables**: Agentic AI, Version Control — the stack enables autonomous agent workflows with versioned, auditable knowledge artefacts
+  - **relatedTo**: Blockchain, Interoperability — decentralised ledger primitives and cross-system interoperability are foundational concerns
 
 - ### Content
   - [Claude](https://claude.ai/chat/abc3702e-5cfa-40fe-8573-87d4240809fd)

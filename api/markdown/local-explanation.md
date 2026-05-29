@@ -1,13 +1,17 @@
 - ### Definition
-  - Interpretability techniques that explain individual model predictions for specific instances, providing insight into why a particular input produced a given output without necessarily characterising the model's global behaviour.
+  - Interpretability techniques that explain individual model predictions for specific instances, providing insight into why a particular input produced a given output without necessarily characterising the model's global behaviour. Methods such as LIME and SHAP generate feature-attribution scores scoped to the neighbourhood of a single query point.
 
 - ### Semantic Classification
-  - owl-class:: spatial-computing:LocalExplanation
+  - owl-class:: artificial-intelligence:LocalExplanation
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **partOf** [[Explainable AI]] — local explanation techniques are a core component of the XAI toolbox
+  - **contrastsWith** [[Global Explanation]] — local explanations scope to one instance; global explanations characterise the full model
+  - **uses** [[Feature Importance]] — local methods compute per-instance feature attributions as their primary output
+  - **enables** [[Accountability]] — instance-level explanations provide the evidentiary basis for challenging individual decisions
+  - **enables** [[Fairness]] — local explanations reveal whether individual decisions are driven by protected attributes
 
 - ### Content
   - Interpretability techniques that explain individual model predictions for specific instances, providing insight into why a particular input produced a given output without necessarily characterising the model's global behaviour.

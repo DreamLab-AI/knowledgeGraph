@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:task-adaptation",
   "domain": "artificial-intelligence",
-  "definition": "Adaptation of models to new tasks.",
+  "definition": "The process of specialising a pre-trained or general-purpose machine learning model to perform well on a specific downstream task by adjusting its parameters, architecture, or inference behaviour. Task adaptation encompasses techniques such as fine-tuning, instruction tuning, prompt engineering, and parameter-efficient methods (LoRA, adapters) that bridge the gap between a model's pre-training distribution and the requirements of a target application.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -13,21 +13,70 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:task-specific-head",
+        "label": "Task Specific Head"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-pipeline",
+        "label": "Machine Learning Pipeline"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-model",
+        "label": "Machine Learning Model"
+      },
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "id": "urn:ngm:class:instruction-tuning",
+        "label": "Instruction Tuning"
+      },
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:hyperparameter",
+        "label": "Hyperparameter"
+      }
+    ]
   },
   "wikilinks": [
     {

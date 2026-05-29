@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:smart-contract-platform",
   "domain": "blockchain",
-  "definition": "Smart Contract Platform is a blockchain and distributed systems concept and a type of blockchain.",
+  "definition": "A Smart Contract Platform is a blockchain infrastructure that provides an execution environment for programmable self-executing agreements, enabling decentralised application development through virtual machine runtimes, developer toolchains, and gas metering. Platforms such as Ethereum (EVM), Solana (Sealevel), and Cardano (Plutus) each offer distinct performance, security, and programmability trade-offs.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-network-component",
@@ -14,11 +14,30 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:dao",
+        "label": "DAO"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +46,12 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

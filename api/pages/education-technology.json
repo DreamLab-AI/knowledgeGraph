@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:education-technology",
   "domain": "artificial-intelligence",
-  "definition": "Education technology (EdTech) is the application of digital tools, platforms, and AI-driven systems to enhance teaching, learning, and educational administration.",
+  "definition": "Education Technology (EdTech) is the application of digital tools, AI-driven systems, and immersive platforms to enhance teaching, personalise learning pathways, and streamline educational administration. Modern EdTech leverages adaptive learning algorithms that adjust content difficulty and pacing to individual learner performance, natural language processing for automated essay scoring and tutoring dialogue, and XR environments that create immersive simulations for fields such as medicine, engineering, and history. It spans formal K-12 and higher education, professional development, and informal self-directed learning.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-application",
@@ -14,20 +14,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:learning-management-system",
+        "label": "Learning Management System"
+      },
+      {
+        "id": "urn:ngm:class:immersive-learning",
+        "label": "Immersive Learning"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

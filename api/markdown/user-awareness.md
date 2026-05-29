@@ -8,6 +8,9 @@
 
 - ### Relationships
   - is-subclass-of:: [[User Education]]
+  - Requires [[User Education]], [[Privacy]]
+  - Supports [[User Safety]], [[Accountability]]
+  - Related to [[Privacy By Design]], [[Cybersecurity]], [[AI Ethics]]
 
 - ### Content
 

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:architecture",
   "domain": "artificial-intelligence",
-  "definition": "Architecture is a artificial intelligence concept and a type of Artificial Intelligence.",
+  "definition": "In the AI domain, Architecture refers to the structural design of an AI model or system, specifying how computational components\u2014such as layers, modules, attention heads, and connections\u2014are organised and interact to process inputs and produce outputs. Architectural choices fundamentally determine a model's capacity, inductive biases, scalability, and suitability for particular tasks.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-model-architecture",
@@ -13,21 +13,73 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:neural-network-layer",
+        "label": "Neural Network Layer"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:encoder",
+        "label": "Encoder"
+      },
+      {
+        "id": "urn:ngm:class:decoder",
+        "label": "Decoder"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-architecture",
+        "label": "Neural Network Architecture"
+      },
+      {
+        "id": "urn:ngm:class:model-architecture",
+        "label": "Model Architecture"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ]
   },
   "wikilinks": [
     {

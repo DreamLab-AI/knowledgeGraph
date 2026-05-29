@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:valsoft",
   "domain": "infrastructure",
-  "definition": "Valsoft is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Valsoft (operating as Aspire Software) is a Canadian software conglomerate that acquires, operates, and grows vertical-market software companies, applying a decentralised management model to deliver AI-augmented solutions across multiple industry sectors.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-software-engineering",
@@ -13,8 +13,8 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,11 +23,25 @@
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ]
   },
   "wikilinks": [
     {

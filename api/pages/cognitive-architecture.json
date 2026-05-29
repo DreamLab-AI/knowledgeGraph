@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:cognitive-architecture",
   "domain": "infrastructure",
-  "definition": "Cognitive Architecture is a foundational concept in infrastructure that serves as a classification parent for 3 related concepts in the ontology.",
+  "definition": "Cognitive Architecture is the overarching computational design that specifies how a reasoning agent perceives, represents, stores, and acts upon knowledge. In AI contexts it defines the interplay between symbolic reasoning, neural learning subsystems, memory stores, and planning mechanisms that together produce intelligent behaviour. Cognitive architectures such as ACT-R, SOAR, and neural-symbolic hybrids inform the design of agentic AI systems, autonomous robots, and adaptive human-computer interfaces.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
@@ -14,11 +14,29 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.3,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:planning-and-scheduling",
+        "label": "Planning and Scheduling"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-reasoning",
+        "label": "Symbolic Reasoning"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +45,12 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

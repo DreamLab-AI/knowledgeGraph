@@ -33,16 +33,29 @@ public:: true
   "@id": "urn:ngm:class:golm",
   "@type": "Class",
   "label": "GOLM",
-  "definition": "GOLM is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "An experimental creative AI project exploring the intersection of hip-hop dance, mycelium network datasets, and machine learning to generate emergent movement vocabularies. GOLM investigates whether biological network topologies—particularly fungal mycelium growth patterns—can be used to train generative models that produce novel choreographic sequences and spatial interaction grammars.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:motion-capture", "label": "Motion Capture"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:digital-performance-capture", "label": "Digital Performance Capture"},
+      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -72,14 +85,16 @@ public:: true
 
 
 - ### Definition
-  - GOLM is a concept within the ngm domain.
+  - An experimental creative AI project exploring the intersection of hip-hop dance, mycelium network datasets, and machine learning to generate emergent movement vocabularies. GOLM investigates whether biological network topologies—particularly fungal mycelium growth patterns—can be used to train generative models that produce novel choreographic sequences and spatial interaction grammars.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:GOLM
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: Machine Learning, Motion Capture — mycelium-derived training data is combined with captured movement to generate choreographic outputs
+  - **relatedTo**: Digital Performance Capture, Agentic AI — GOLM sits at the intersection of creative performance capture and autonomous generative systems
+  - **enables**: Immersive Experience — generated movement vocabularies can animate avatars and spatial interaction in immersive environments
 
 - ### Content
   - vicki clarke audio (beyond)

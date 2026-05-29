@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:healthcare-analytics",
   "domain": "artificial-intelligence",
-  "definition": "Healthcare Analytics applies artificial intelligence and data science to healthcare data for population health management, operational efficiency optimisation, clinical outcome prediction, resource allocation, and healthcare policy decision-making.",
+  "definition": "The application of artificial intelligence and data science to healthcare data for population health management, operational efficiency optimisation, clinical outcome prediction, resource allocation, and healthcare policy decision-making. Healthcare analytics systems analyse electronic health records, claims data, public health datasets, and operational metrics to derive actionable insights for clinical and administrative improvement.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-application",
@@ -17,21 +17,52 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:medical-ai",
+        "label": "Medical AI"
+      },
+      {
+        "id": "urn:ngm:class:healthcare-technology",
+        "label": "Healthcare Technology"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:pathology-ai",
+        "label": "Pathology AI"
+      },
+      {
+        "id": "urn:ngm:class:medical-imaging-ai",
+        "label": "Medical Imaging AI"
+      },
+      {
+        "id": "urn:ngm:class:privacy-preserving-analytics",
+        "label": "Privacy Preserving Analytics"
+      }
+    ]
   },
   "wikilinks": [
     {

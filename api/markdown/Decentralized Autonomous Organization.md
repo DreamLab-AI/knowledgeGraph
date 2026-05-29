@@ -91,6 +91,20 @@ public:: true
       "label": "Governance and Regulation"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:smart-contracts", "label": "Smart Contracts"},
+      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
+      {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:virtual-economy", "label": "Virtual Economy"}
+    ]
+  },
+  "maturity": "emerging",
   "quality": 0.4,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -186,6 +200,11 @@ public:: true
 
 - ### Relationships
   - bridges-to:: [[AI Agent System]] or [[Virtual Economy]]
+  - requires [[Smart Contracts]]
+  - requires [[Governance Token]]
+  - uses [[Consensus Mechanism]]
+  - uses [[Blockchain Governance]]
+  - enables [[Virtual Economy]]
 
 - ### Content
   - Decentralised Autonomous Organisations operate through smart contracts and community governance without centralised authority, enabling transparent resource allocation, democratic decision-making, and distributed treasury management at global scale.

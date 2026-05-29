@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:torque",
   "domain": "robotics",
-  "definition": "Torque - Rotational force about an axis",
+  "definition": "Torque is the rotational analogue of force, defined as the cross product of the moment arm and the applied force vector (\u03c4 = r \u00d7 F), measured in newton-metres. In robotics it governs joint actuation, grip force, and dynamic loading across mechanical transmissions, and is the primary physical quantity managed by torque-controlled servos and force-torque sensors during manipulation tasks.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
@@ -17,12 +17,34 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "id": "urn:ngm:class:force-torque-sensor",
+        "label": "Force Torque Sensor"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:motion-control",
+        "label": "Motion Control"
+      },
+      {
+        "id": "urn:ngm:class:force-control",
+        "label": "Force Control"
+      },
+      {
+        "id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -30,7 +52,16 @@
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:robot-kinematics",
+        "label": "Robot Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:robot-joint",
+        "label": "Robot Joint"
+      }
+    ],
     "relatedTo": []
   },
   "wikilinks": [

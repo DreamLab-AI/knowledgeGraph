@@ -7,7 +7,13 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Part of [[Autonomous Vehicle]]
+  - Requires [[Perception System]]
+  - Requires [[Sensor Fusion]]
+  - Uses [[Lidar]]
+  - Uses [[Computer Vision]]
+  - Uses [[Motion Planning]]
+  - Related to [[ADAS]]
 
 - ### Content
   - A Self-Driving Car is an autonomous passenger vehicle capable of sensing its environment and operating with minimal or no human input, employing AI-driven perception, decision-making, and control systems to navigate roads, comply with traffic regulations, and transport occupants safely. Self-driving cars represent the consumer application of autonomous vehicle technology, typically targeting SAE Level 3-5 automation in urban and highway environments.

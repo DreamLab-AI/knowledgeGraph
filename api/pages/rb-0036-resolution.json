@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:rb-0036-resolution",
   "domain": "robotics",
-  "definition": "resolution is a robotics and autonomous systems concept and a type of robotics.",
+  "definition": "Resolution, as defined by ISO 8373, is the smallest increment of motion or measurement that a robot system can distinguish or command. For manipulators it typically refers to the minimum step size achievable in Cartesian or joint space; for sensors it denotes the smallest detectable change in the measured quantity. Resolution is distinct from accuracy and repeatability, and it places a fundamental lower bound on the precision of both positioning and perception tasks.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
@@ -13,21 +13,56 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:rb-0040-backlash",
+        "label": "rb 0040 backlash"
+      },
+      {
+        "id": "urn:ngm:class:rb-0026-robot-joint",
+        "label": "rb 0026 robot joint"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:rb-0054-position-control",
+        "label": "rb 0054 position control"
+      },
+      {
+        "id": "urn:ngm:class:rb-0032-manipulability",
+        "label": "rb 0032 manipulability"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rb-0035-accuracy",
+        "label": "rb 0035 accuracy"
+      },
+      {
+        "id": "urn:ngm:class:rb-0034-repeatability",
+        "label": "rb 0034 repeatability"
+      },
+      {
+        "id": "urn:ngm:class:rb-0023-degrees-of-freedom",
+        "label": "rb 0023 degrees of freedom"
+      },
+      {
+        "id": "urn:ngm:class:rb-0072-encoder",
+        "label": "rb 0072 encoder"
+      }
+    ]
   },
   "wikilinks": [
     {

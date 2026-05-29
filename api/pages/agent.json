@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:agent",
   "domain": "blockchain",
-  "definition": "Agent is a blockchain and distributed systems concept and a type of Blockchain.",
+  "definition": "An autonomous computational or physical entity that perceives its environment, reasons about its perceptions using internal beliefs and goals, and acts to achieve specified objectives\u2014exhibiting autonomy, reactivity, proactivity, and social ability across AI, blockchain, robotics, and metaverse domains.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-network-component",
@@ -14,20 +14,52 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:autonomy-level",
+        "label": "Autonomy Level"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:bdi-model",
+        "label": "BDI Model"
+      },
+      {
+        "id": "urn:ngm:class:goal",
+        "label": "Goal"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:objective",
+        "label": "Objective"
+      },
+      {
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human in the Loop"
+      },
+      {
+        "id": "urn:ngm:class:safety",
+        "label": "Safety"
+      }
+    ]
   },
   "wikilinks": [
     {

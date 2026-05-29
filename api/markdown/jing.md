@@ -33,16 +33,32 @@ public:: true
   "@id": "urn:ngm:class:jing",
   "@type": "Class",
   "label": "jing",
-  "definition": "jing is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Jing is a multi-agent AI framework designed to minimise hallucination in Chinese-English bilingual retrieval-augmented generation (RAG) pipelines, specifically applied to emotional-support chatbots for end-of-life counselling and palliative care. The system combines multiple large language models with open-source text-to-speech engines and real-time 3D avatars to deliver culturally sensitive, affectively aware conversational companions, initially targeting Japanese VR screen deployment contexts. Its multi-agent architecture distributes validation, retrieval, and generation tasks across specialised model instances to improve factual grounding and reduce hallucinated responses in high-stakes care settings.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
-  "quality": 0.35,
+  "quality": 0.7,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
+      {"@id": "urn:ngm:class:text-to-speech", "label": "Text-to-Speech"},
+      {"@id": "urn:ngm:class:multi-agent-systems", "label": "Multi-Agent Systems"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:digital-avatar", "label": "Digital Avatar"},
+      {"@id": "urn:ngm:class:emotional-intelligence", "label": "Emotional Intelligence"},
+      {"@id": "urn:ngm:class:healthcare-ai", "label": "Healthcare AI"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:virtual-reality-applications", "label": "Virtual Reality Applications"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -72,18 +88,24 @@ public:: true
 
 
 - ### Definition
-  - jing is a concept within the ngm domain.
+  - **Jing** is a multi-agent AI system for bilingual (Chinese/English) retrieval-augmented generation targeting emotionally sensitive domains — specifically end-of-life counselling. It combines multiple LLMs, open-source TTS, and real-time 3D avatars, initially deployed on Japanese VR screens. The multi-agent design reduces hallucination by distributing retrieval, validation, and generation across specialised model instances.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:Jing
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses:: Retrieval-Augmented Generation, Large Language Models, Text-to-Speech, Multi-Agent Systems
+  - relatedTo:: Digital Avatar, Emotional Intelligence, Healthcare AI
+  - supports:: Virtual Reality Applications
 
 - ### Content
-  - multi-agent framework for minimising hallucination in chinese / english RAG based emotional support chat bots using multple large language models and open source text to speech engines alongside realtime 3d avatars.
-  - end of life counsellor care chatbot - vr product japanese vr screens
+  - Multi-agent framework for minimising hallucination in Chinese/English RAG-based emotional support chatbots, using multiple large language models and open-source text-to-speech engines alongside real-time 3D avatars.
+  - End-of-life counsellor care chatbot — VR product for Japanese VR screens.
+
+  Jing addresses a fundamental challenge in high-stakes conversational AI: the tendency of single-model RAG systems to hallucinate when queries mix languages, culturally specific idiom, and emotionally charged content simultaneously. By routing sub-tasks (retrieval, grounding verification, affective tone adjustment, speech synthesis) to dedicated agents, the system achieves factual reliability appropriate for palliative care contexts where misinformation carries serious consequences.
+
+  The 3D avatar component supports non-verbal affective communication — gaze, gesture, facial expression — which research suggests is important for reducing patient isolation in remote or VR-mediated care settings.
 
 - ### Provenance
   - sources::

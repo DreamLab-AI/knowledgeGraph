@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:rb-0043-torque",
   "domain": "robotics",
-  "definition": "torque is a robotics and autonomous systems concept and a type of Robot Dynamics.",
+  "definition": "Torque is the rotational force applied about a joint axis, expressed in Newton-metres (N\u00b7m). In robot dynamics, joint torques are the primary control inputs that drive links through desired trajectories; torque limits constrain the feasible workspace and influence payload capacity, and torque sensing enables compliant and force-controlled interaction.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
@@ -17,21 +17,56 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:rb-0022-robot-dynamics",
+        "label": "rb 0022 robot dynamics"
+      },
+      {
+        "id": "urn:ngm:class:rb-0064-computed-torque-control",
+        "label": "rb 0064 computed torque control"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "id": "urn:ngm:class:servo-motor",
+        "label": "Servo Motor"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rb-0041-inertia",
+        "label": "rb 0041 inertia"
+      },
+      {
+        "id": "urn:ngm:class:rb-0044-velocity",
+        "label": "rb 0044 velocity"
+      },
+      {
+        "id": "urn:ngm:class:rb-0045-acceleration",
+        "label": "rb 0045 acceleration"
+      },
+      {
+        "id": "urn:ngm:class:rb-0067-force-torque-sensor",
+        "label": "rb 0067 force torque sensor"
+      }
+    ]
   },
   "wikilinks": [
     {

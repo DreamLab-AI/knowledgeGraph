@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:series-elastic-actuation",
   "domain": "robotics",
-  "definition": "An actuation mechanism that places a compliant spring element in series with a rigid actuator to enable force control, shock absorption, and safe physical interaction.",
+  "definition": "Series Elastic Actuation (SEA) is a robotic actuation paradigm in which a calibrated compliant element\u2014typically a torsional or linear spring\u2014is interposed between the gearbox output and the robot link. Deflection of the spring under load provides an indirect force measurement, enabling closed-loop torque control without strain-gauge complexity. The compliance also attenuates shock loads, reduces reflected inertia at the joint, and passively limits peak interaction forces, which is critical for safe operation in human-robot collaborative environments. SEA is widely employed in legged robots, prosthetic limbs, and rehabilitation exoskeletons where stable force regulation and back-driveability are essential.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
@@ -14,17 +14,40 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:force-control",
+        "label": "Force Control"
+      },
+      {
+        "id": "urn:ngm:class:impedance-control",
+        "label": "Impedance Control"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "id": "urn:ngm:class:robot-joint",
+        "label": "Robot Joint"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:robo-human-robot-interaction",
+        "label": "Human-Robot Interaction"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": []

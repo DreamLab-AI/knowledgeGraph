@@ -46,20 +46,58 @@ public:: true
   "@id": "urn:ngm:class:trajectory-planning",
   "@type": "Class",
   "label": "Trajectory Planning",
-  "definition": "Trajectory Planning - Trajectory Planning in robotics systems",
+  "definition": "The process of computing a time-parameterised path for a robot or autonomous system that satisfies kinematic constraints, avoids obstacles, and achieves a target configuration smoothly and efficiently. Trajectory planning bridges high-level path planning with low-level motion control, incorporating velocity and acceleration profiles, inverse kinematics, and real-time replanning for dynamic environments.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-navigation-and-planning",
       "label": "Navigation and Planning"
     }
   ],
-  "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:motion-control",
+        "label": "Motion Control"
+      },
+      {
+        "@id": "urn:ngm:class:collision-avoidance",
+        "label": "Collision Avoidance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:obstacle-avoidance",
+        "label": "Obstacle Avoidance"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ]
   }
 }
 ```
@@ -104,7 +142,14 @@ public:: true
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - is-subclass-of:: [[Robotics]]
+  - is-subclass-of:: Navigation and Planning
+  - Requires [[Kinematics]]
+  - Requires [[Inverse Kinematics]]
+  - Uses [[Motion Planning]]
+  - Uses [[Sensor Fusion]]
+  - Enables [[Motion Control]]
+  - Enables [[Collision Avoidance]]
+  - Depends On [[Obstacle Avoidance]]
 
 - ### Content
   - ### Original Content

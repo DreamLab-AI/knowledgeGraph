@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:film-production",
   "domain": "spatial-computing",
-  "definition": "Film Production is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "The end-to-end creative and technical process of making motion picture content, encompassing development, pre-production, principal photography, visual effects, post-production, and distribution. Modern film production increasingly integrates spatial computing technologies such as virtual production workflows, LED volume stages, real-time game engine rendering, and AI-assisted tools that compress timelines and reduce location dependency.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -13,21 +13,57 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:production-pipeline",
+        "label": "Production Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:content-production-workflow",
+        "label": "Content Production Workflow"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:world-building",
+        "label": "World Building"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:virtual-production-workflow",
+        "label": "Virtual Production Workflow"
+      },
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "id": "urn:ngm:class:design-software",
+        "label": "Design Software"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:animation-technique",
+        "label": "Animation Technique"
+      },
+      {
+        "id": "urn:ngm:class:3-d-rendering-engine",
+        "label": "3D Rendering Engine"
+      }
+    ]
   },
   "wikilinks": [
     {

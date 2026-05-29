@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:physically-based-rendering",
   "domain": "infrastructure",
-  "definition": "Physically Based Rendering is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Physically Based Rendering (PBR) is a rendering methodology that simulates the physical behaviour of light interacting with materials by adhering to real-world optical principles such as energy conservation, microfacet theory, and the reflectance equation. PBR uses parameterised material models \u2014 typically albedo, metallic, roughness, and normal maps \u2014 to produce consistent, predictable visual results across varied lighting conditions. It is the standard material workflow for real-time 3D engines used in games, metaverse platforms, and digital twin visualisation.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
@@ -14,11 +14,29 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:shader",
+        "label": "Shader"
+      },
+      {
+        "id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:3-d-asset",
+        "label": "3D Asset"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +45,16 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      },
+      {
+        "id": "urn:ngm:class:rendering-technique",
+        "label": "Rendering Technique"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

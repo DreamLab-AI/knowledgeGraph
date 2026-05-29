@@ -42,15 +42,29 @@ public:: true
   "@id": "urn:ngm:class:robot-singularity",
   "@type": "Class",
   "label": "Robot Singularity",
-  "definition": "Robot Singularity is a robotics and autonomous systems concept and a type of robotics.",
+  "definition": "A Robot Singularity is a configuration of a serial or parallel robot manipulator at which the Jacobian matrix loses rank, causing the determinant to approach zero. At a singularity, the robot loses one or more degrees of freedom in Cartesian space: it cannot produce force or motion in certain directions, and inverse kinematics solutions become ill-conditioned or non-unique. Singularity avoidance and detection are central problems in motion planning, trajectory generation, and real-time control of robotic arms.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-actuation-and-control",
       "label": "Actuation and Control"
     }
   ],
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:kinematics", "label": "Kinematics"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:inverse-kinematics", "label": "Inverse Kinematics"},
+      {"@id": "urn:ngm:class:differential-kinematics", "label": "Differential Kinematics"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:path-planning", "label": "Path Planning"},
+      {"@id": "urn:ngm:class:control-algorithm", "label": "Control Algorithm"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
@@ -87,7 +101,7 @@ public:: true
 
 
 - ### Definition
-  - Robot Singularity is a concept within the rb domain.
+  - A Robot Singularity is a configuration of a serial or parallel robot manipulator at which the Jacobian matrix loses rank, causing the determinant to approach zero. At a singularity, the robot loses one or more degrees of freedom in Cartesian space: it cannot produce force or motion in certain directions, and inverse kinematics solutions become ill-conditioned or non-unique. Singularity avoidance and detection are central problems in motion planning, trajectory generation, and real-time control of robotic arms.
 
 - ### Semantic Classification
   - owl-class:: robotics:RobotSingularity
@@ -95,9 +109,12 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[RoboticsDomain]]
+  - **hasPart**: Kinematics
+  - **requires**: Inverse Kinematics, Differential Kinematics
+  - **relatedTo**: Path Planning, Control Algorithm
 
 - ### Content
-  Robot Singularity — content pending enrichment.
+  A Robot Singularity is a critical configuration in manipulator kinematics where the Jacobian matrix becomes singular, constraining workspace mobility. Understanding and avoiding singularities is essential for safe, efficient robotic motion planning and real-time control.
 
 - ### Provenance
   - sources::

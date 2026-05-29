@@ -1,5 +1,5 @@
 - ### Definition
-  - Pixel Shader is a concept within the mv domain.
+  - A programmable GPU stage that executes once per rasterised fragment, determining each pixel's final colour and depth by sampling textures, computing lighting models, and applying material properties. Pixel shaders operate in a massively parallel fashion and are the primary site for physically-based rendering calculations in real-time graphics pipelines.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:PixelShader
@@ -7,6 +7,13 @@
 
 - ### Relationships
   - is-subclass-of:: [[Metaverse]]
+  - Requires [[Vertex Shader]]
+  - Requires [[Rendering Pipeline]]
+  - Uses [[Texture Mapping]]
+  - Uses [[GPU Compute]]
+  - Implements [[Physically Based Rendering]]
+  - Related To [[Compute Shader]]
+  - Related To [[Shader]]
 
 - ### Content
 

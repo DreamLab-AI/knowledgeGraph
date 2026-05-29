@@ -42,16 +42,33 @@ public:: true
   "@id": "urn:ngm:class:safety-plc",
   "@type": "Class",
   "label": "Safety PLC",
-  "definition": "Safety PLC is a robotics and autonomous systems concept and a type of robotics.",
+  "definition": "A Safety Programmable Logic Controller (Safety PLC) is a specialised industrial controller certified to IEC 61511 or IEC 62061 safety integrity levels, designed to execute safety instrumented functions that bring a process to a safe state upon detecting hazardous conditions. Unlike standard PLCs, Safety PLCs implement redundant processing, self-diagnostics, and rigorous failure-mode analysis to achieve the high diagnostic coverage required for safety-critical robotics and industrial automation.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-safety-and-standards",
       "label": "Safety and Standards"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "implements": [
+      {"@id": "urn:ngm:class:functional-safety", "label": "Functional Safety"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:feedback-control", "label": "Feedback Control"},
+      {"@id": "urn:ngm:class:control-system", "label": "Control System"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:cobot-safety-levels", "label": "Cobot Safety Levels"},
+      {"@id": "urn:ngm:class:collaborative-robot", "label": "Collaborative Robot"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:servo-control", "label": "Servo Control"}
+    ]
+  },
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -87,7 +104,7 @@ public:: true
 
 
 - ### Definition
-  - ### Primary Definition
+  - A Safety Programmable Logic Controller (Safety PLC) is a specialised industrial controller certified to IEC 61511 or IEC 62061 safety integrity levels, designed to execute safety instrumented functions that bring a process to a safe state upon detecting hazardous conditions. Unlike standard PLCs, Safety PLCs implement redundant processing, self-diagnostics, and rigorous failure-mode analysis to achieve the high diagnostic coverage required for safety-critical robotics and industrial automation.
 
 - ### Semantic Classification
   - owl-class:: robotics:SafetyPLC
@@ -95,7 +112,10 @@ public:: true
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **implements**: Functional Safety — the Safety PLC is the primary hardware realisation of functional safety requirements in industrial environments.
+  - **uses**: Feedback Control, Control System — Safety PLCs monitor process variables via closed-loop control and trigger protective actions.
+  - **enables**: Cobot Safety Levels, Collaborative Robot — Safety PLCs provide the certified hardware layer that makes safe human-robot collaboration possible.
+  - **relatedTo**: Servo Control — servo drives are often supervised or commanded by Safety PLCs in motion-control applications.
 
 - ### Content
   - ### Primary Definition

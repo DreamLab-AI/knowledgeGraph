@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:system-software",
   "domain": "spatial-computing",
-  "definition": "System Software is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Low-level software that directly manages hardware resources and provides foundational services upon which application software operates. In XR and spatial computing contexts, system software encompasses device drivers, operating system kernels, firmware, and hardware abstraction layers that expose display, tracking, and input peripherals to higher-level runtimes.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -13,20 +13,48 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      },
+      {
+        "id": "urn:ngm:class:hardware-abstraction",
+        "label": "Hardware Abstraction"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:xr-runtime-environment",
+        "label": "XR Runtime Environment"
+      },
+      {
+        "id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:middleware",
+        "label": "Middleware"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:technology-stack",
+        "label": "Technology Stack"
+      }
+    ],
     "relatedTo": []
   },
   "wikilinks": [

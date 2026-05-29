@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:data-sharing",
   "@type": "Class",
   "label": "Data Sharing",
-  "definition": "Data Sharing is a type of Infrastructure in the infrastructure domain.",
+  "definition": "The controlled exchange of datasets, data streams, or derived information between organisations, systems, or individuals under agreed governance, access control, and privacy constraints. Data sharing in distributed infrastructure contexts relies on interoperability standards, consent management frameworks, and data governance policies to balance openness with security and sovereignty.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-data-management",
@@ -60,6 +61,48 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:data-interoperability",
+        "label": "Data Interoperability"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:data-standards",
+        "label": "Data Standards"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
+      }
+    ]
   }
 }
 ```
@@ -96,14 +139,21 @@ public:: true
 
 
 - ### Definition
-  - Data Sharing is a concept within the metaverse domain. Further enrichment pending.
+  - The controlled exchange of datasets, data streams, or derived information between organisations, systems, or individuals under agreed governance, access control, and privacy constraints. Data sharing in distributed infrastructure contexts relies on interoperability standards, consent management frameworks, and data governance policies to balance openness with security and sovereignty.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:DataSharing
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Requires: [[Data Governance]]
+  - Requires: [[Access Control]]
+  - Uses: [[Interoperability]]
+  - Uses: [[Data Standards]]
+  - Enables: [[Federated Learning]]
+  - Enables: [[Data Interoperability]]
+  - Related To: [[Privacy]]
+  - Related To: [[Data Sovereignty]]
 
 - ### Content
 

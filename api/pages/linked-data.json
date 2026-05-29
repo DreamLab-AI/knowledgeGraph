@@ -5,25 +5,52 @@
   "public": true,
   "classIri": "urn:ngm:class:linked-data",
   "domain": "infrastructure",
-  "definition": "A set of best practices for publishing structured data on the Web using URIs, HTTP, and RDF so that data from different sources can be interconnected and queried as a single graph.",
+  "definition": "Linked Data is a collection of design principles articulated by Tim Berners-Lee for publishing machine-readable structured data on the Web, requiring that entities be identified by HTTP URIs, that those URIs resolve to useful descriptions in RDF, and that descriptions include links to other URIs so that data from different sources can be traversed and aggregated into a global information graph. It constitutes the application layer of the Semantic Web stack and provides the architectural foundation for open knowledge graphs such as Wikidata and DBpedia. Linked Data sits above the RDF data model and is typically queried using SPARQL endpoints.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-data-management",
       "label": "Data Management"
+    },
+    {
+      "id": "urn:ngm:class:semantic-web",
+      "label": "Semantic Web"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph-construction",
+        "label": "Knowledge Graph Construction"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:json-ld-1-1",
+        "label": "JSON-LD 1.1"
+      },
+      {
+        "id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

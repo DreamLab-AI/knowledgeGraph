@@ -42,20 +42,38 @@ public:: true
   "@id": "urn:ngm:class:guaranteed-bandwidth",
   "@type": "Class",
   "label": "Guaranteed Bandwidth",
-  "definition": "A guaranteed bandwidth component in the Metaverse domain that enables gNetworkSlice.",
+  "definition": "Guaranteed Bandwidth is a network quality commitment that ensures a minimum throughput level is reserved for a specific application or user session, regardless of concurrent network load. In spatial computing and XR contexts, it is a prerequisite for low-latency immersive streaming, enabling consistent frame delivery without compression artefacts or stutter that would degrade presence. It is typically enforced through Quality of Service mechanisms, traffic prioritisation, or network slicing in 5G infrastructure.",
   "domain": "spatial-computing",
   "maturity": "emerging",
   "subClassOf": [
-    {
-      "@id": "urn:ngm:class:sc-content-and-assets",
-      "label": "Content and Assets"
-    },
     {
       "@id": "urn:ngm:class:network-quality-metric",
       "label": "Network Quality Metric"
     }
   ],
-  "quality": 0.35,
+  "quality": 0.75,
+  "qualityScore": 0.75,
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:network-quality-metric", "label": "Network Quality Metric"},
+      {"@id": "urn:ngm:class:network-infrastructure", "label": "Network Infrastructure"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:quality-of-service", "label": "Quality Of Service"},
+      {"@id": "urn:ngm:class:telecommunications-infrastructure", "label": "Telecommunications Infrastructure"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:real-time-processing", "label": "Real-time Processing"},
+      {"@id": "urn:ngm:class:immersive-communication", "label": "Immersive Communication"},
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:latency", "label": "Latency"},
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
+      {"@id": "urn:ngm:class:bandwidth-adaptation", "label": "Bandwidth Adaptation"},
+      {"@id": "urn:ngm:class:latency-management-protocol", "label": "Latency Management Protocol"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -101,7 +119,9 @@ public:: true
   - is-subclass-of:: [[Network Quality Metric]]
 
 - ### Content
-  GuaranteedBandwidth — content pending enrichment.
+  Guaranteed Bandwidth is distinct from best-effort delivery: it represents a contractual or technical commitment that a specified data rate will be available to an application at all times. In XR and metaverse deployments, consistent bandwidth is critical because video codec pipelines cannot absorb sudden throughput drops without introducing visual artefacts — frame drops, block noise, or resolution degradation — that immediately break immersive presence.
+
+  In 5G networks, guaranteed bandwidth is commonly realised through network slicing, where a dedicated logical channel with reserved radio resources is allocated to latency-sensitive applications. At the application layer, it works in tandem with adaptive bitrate algorithms and edge computing offload to maintain quality under variable radio conditions. Service Level Agreements (SLAs) between operators and XR platform providers typically express guaranteed bandwidth commitments alongside maximum latency and jitter budgets.
 
 - ### Provenance
   - sources:: Generated from bridge validation

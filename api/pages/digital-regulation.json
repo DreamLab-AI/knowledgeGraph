@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:digital-regulation",
   "domain": "artificial-intelligence",
-  "definition": "Digital Regulation is a type of Artificial Intelligence in the artificial intelligence domain.",
+  "definition": "Digital Regulation encompasses the legal frameworks, policy instruments, and enforcement mechanisms that govern the development, deployment, and use of digital technologies, including AI systems, digital platforms, and data-driven services. It addresses algorithmic accountability, platform liability, data sovereignty, content moderation obligations, and cross-border regulatory harmonisation to balance innovation incentives with public interest protections.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -14,11 +14,29 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +45,16 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      }
+    ]
   },
   "wikilinks": [
     {

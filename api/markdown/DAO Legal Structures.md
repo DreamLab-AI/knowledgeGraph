@@ -695,7 +695,7 @@ public:: true
       "label": "Corporate Forms"
     },
     {
-      "@id": "urn:ngm:class:governance-structures",
+      "@id": "urn:ngm:class:governance-structure",
       "label": "Governance Structures"
     }
   ],

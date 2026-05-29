@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:network-architecture",
   "domain": "artificial-intelligence",
-  "definition": "Network Architecture in AI refers to the structural design of neural networks, defining the arrangement of layers, connections, and computational units.",
+  "definition": "The structural design of a neural network, specifying the arrangement of layers, connection patterns, activation functions, skip connections, normalisation methods, and attention mechanisms. Key architectures include feedforward networks, CNNs, RNNs, transformers, and graph neural networks; Neural Architecture Search automates discovery of optimal configurations.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-model-architecture",
@@ -14,20 +14,48 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:neural-network-layer",
+        "label": "Neural Network Layer"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:transformers",
+        "label": "Transformers"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:model-weights",
+        "label": "Model Weights"
+      }
+    ]
   },
   "wikilinks": [
     {

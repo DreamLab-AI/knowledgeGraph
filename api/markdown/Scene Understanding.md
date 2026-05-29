@@ -71,6 +71,20 @@ public:: true
       "label": "Interaction Technology"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:semantic-segmentation", "label": "Semantic Segmentation"},
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:perception-system", "label": "Perception System"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:autonomous-vehicle", "label": "Autonomous Vehicle"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+    ]
+  },
+  "maturity": "emerging",
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -140,7 +154,11 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Semantic Segmentation]]
+  - requires [[Computer Vision]]
+  - partOf [[Perception System]]
+  - enables [[Autonomous Vehicle]]
+  - enables [[Digital Twin]]
 
 - ### Content
   - Scene Understanding is the high-level semantic interpretation of visual and sensor data to comprehend the structure, context, objects, relationships, and dynamics of an environment. For autonomous systems, scene understanding involves recognising road types, lane configurations, traffic situations, pedestrian intentions, and environmental conditions to enable contextually appropriate decision-making beyond simple object detection.

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:distributor",
   "domain": "spatial-computing",
-  "definition": "A natural or legal person in the supply chain, other than the provider or the importer, that makes an AI system available on the Union market.",
+  "definition": "A Distributor is a natural or legal person in the AI supply chain, other than the provider or the importer, that makes an AI system available on the Union market without modifying it. Distributors bear verification and cooperation duties under the EU AI Act Article 24, including confirming CE marking, ensuring documentation completeness, and informing authorities of suspected non-compliance.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-governance-and-safety",
@@ -13,11 +13,20 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:conformity-assessment",
+        "label": "Conformity Assessment"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
@@ -26,8 +35,30 @@
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:provider",
+        "label": "Provider"
+      },
+      {
+        "id": "urn:ngm:class:importer",
+        "label": "Importer"
+      },
+      {
+        "id": "urn:ngm:class:deployer",
+        "label": "Deployer"
+      },
+      {
+        "id": "urn:ngm:class:market-surveillance-authority",
+        "label": "Market Surveillance Authority"
+      }
+    ]
   },
   "wikilinks": [
     {

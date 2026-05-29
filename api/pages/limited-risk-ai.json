@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:limited-risk-ai",
   "domain": "artificial-intelligence",
-  "definition": "AI systems subject only to transparency obligations, requiring users to be informed they are interacting with AI. These systems include chatbots, emotion recognition, biometric categorisation, and deepfake generation.",
+  "definition": "Under the EU AI Act (Article 50), Limited Risk AI denotes systems subject only to transparency obligations\u2014primarily chatbots and deepfake generators\u2014where providers must inform users they are interacting with AI or label synthetic content as artificially generated. These systems face no conformity assessment, but non-compliance attracts fines of up to \u20ac7.5 million or 1.5% of global annual turnover.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -14,20 +14,52 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:bias",
+        "label": "Bias"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-media",
+        "label": "Synthetic Media"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      }
+    ]
   },
   "wikilinks": [
     {

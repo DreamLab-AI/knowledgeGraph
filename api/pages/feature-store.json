@@ -5,11 +5,11 @@
   "public": true,
   "classIri": "urn:ngm:class:feature-store",
   "domain": "artificial-intelligence",
-  "definition": "Centralized repository for storing, managing, and serving machine learning features, ensuring consistency between training and inference while enabling feature reuse across models.",
+  "definition": "A centralised repository for storing, managing, versioning, and serving machine learning features at scale. It ensures point-in-time consistency between training and online inference, prevents training-serving skew, and enables cross-team feature reuse so that features computed once can be shared across multiple models and pipelines.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:cat-ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
+      "id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure"
     },
     {
       "id": "urn:ngm:class:machine-learning-pipeline",
@@ -17,12 +17,43 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.75,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      },
+      {
+        "id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:data-lake",
+        "label": "Data Lake"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-pipeline",
+        "label": "Machine Learning Pipeline"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -31,7 +62,16 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      },
+      {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      }
+    ]
   },
   "wikilinks": [
     {

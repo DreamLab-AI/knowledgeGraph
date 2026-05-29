@@ -42,7 +42,7 @@ public:: true
   "@id": "urn:ngm:class:virtual-society",
   "@type": "Class",
   "label": "Virtual Society",
-  "definition": "A virtual society component in the Metaverse domain that enables VirtualWorld.",
+  "definition": "An organised social structure emerging within virtual worlds and metaverse platforms, comprising the norms, governance mechanisms, economic systems, communities, and social interactions of persistent digital environments. Virtual societies exhibit properties analogous to physical societies — ownership, law, culture, and commerce — mediated through digital platforms, avatars, and blockchain-based economies.",
   "domain": "spatial-computing",
   "maturity": "established",
   "subClassOf": [
@@ -55,7 +55,28 @@ public:: true
       "label": "Social Structure"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:virtual-economy", "label": "Virtual Economy"},
+      {"@id": "urn:ngm:class:virtual-world", "label": "Virtual World"},
+      {"@id": "urn:ngm:class:community-governance", "label": "Community Governance"},
+      {"@id": "urn:ngm:class:avatar", "label": "Avatar"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:virtual-currency", "label": "Virtual Currency"},
+      {"@id": "urn:ngm:class:virtual-environment", "label": "Virtual Environment"},
+      {"@id": "urn:ngm:class:community-standards", "label": "Community Standards"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:virtual-world-platform", "label": "Virtual World Platform"},
+      {"@id": "urn:ngm:class:decentralized-governance", "label": "Decentralized Governance"},
+      {"@id": "urn:ngm:class:cross-metaverse-commerce", "label": "Cross Metaverse Commerce"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:digital-commerce", "label": "Digital Commerce"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

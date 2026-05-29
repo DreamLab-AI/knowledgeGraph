@@ -54,16 +54,34 @@ public:: true
   "@id": "urn:ngm:class:security-audit-guide",
   "@type": "Class",
   "label": "security audit guide",
-  "definition": "A comprehensive procedural guide establishing standards, modologies, and frameworks for conducting security audits of Blockchain|blockchain systems, SmartContract|smart contracts, and Cryptography|cryptographic infrastructure.",
+  "definition": "A structured procedural document establishing methodologies, checklists, and frameworks for systematically evaluating the security posture of blockchain systems, smart contracts, and cryptographic infrastructure. Security audit guides codify best practices across phases of automated analysis, manual code review, and formal verification, enabling auditors to identify vulnerabilities such as reentrancy, integer overflow, and access control weaknesses before deployment.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
       "label": "Governance and Safety"
     }
   ],
-  "quality": 0.5,
+  "quality": 0.7,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
+      {"@id": "urn:ngm:class:formal-verification", "label": "Formal Verification"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"},
+      {"@id": "urn:ngm:class:vulnerability", "label": "Vulnerability"},
+      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:iso-iec-27001", "label": "ISO/IEC 27001"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

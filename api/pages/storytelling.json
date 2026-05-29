@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:storytelling",
   "domain": "spatial-computing",
-  "definition": "Storytelling is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "The craft and practice of structuring narrative content to communicate meaning, emotion, and experience to an audience. In spatial computing and metaverse contexts, storytelling encompasses interactive narrative design, world-building, and immersive experience creation that leverage real-time 3D environments to place participants inside the story.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -13,12 +13,34 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:narrative-structure",
+        "label": "Narrative Structure"
+      },
+      {
+        "id": "urn:ngm:class:narrative-arc",
+        "label": "Narrative Arc"
+      },
+      {
+        "id": "urn:ngm:class:narrative-theme",
+        "label": "Narrative Theme"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "id": "urn:ngm:class:immersive-entertainment",
+        "label": "Immersive Entertainment"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +49,16 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:narrative-content",
+        "label": "Narrative Content"
+      },
+      {
+        "id": "urn:ngm:class:storytelling-structure",
+        "label": "Storytelling Structure"
+      }
+    ]
   },
   "wikilinks": [
     {

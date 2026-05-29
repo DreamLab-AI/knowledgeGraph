@@ -6,7 +6,13 @@
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **hasPart** [[Gps]] — GPS is a primary geospatial positioning technology
+  - **hasPart** [[Geospatial Information]] — geospatial technology acquires and processes geospatial information
+  - **enables** [[Digital Twin]] — georeferenced spatial data underpins urban and infrastructure digital twins
+  - **enables** [[Location Based Experience]] — precise positioning enables location-anchored XR experiences
+  - **uses** [[Lidar]] — LiDAR provides high-accuracy 3D geospatial point cloud data
+  - **uses** [[Geospatial Engine]] — geospatial engines process and render spatial data at scale
+  - **relatedTo** [[Spatial Computing]] — geospatial technology is a foundational layer of spatial computing platforms
 
 - ### Content
 

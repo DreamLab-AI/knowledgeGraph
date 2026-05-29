@@ -33,15 +33,29 @@ public:: true
   "@id": "urn:ngm:class:robot-component",
   "@type": "Class",
   "label": "Robot Component",
-  "definition": "Robot Component is a robotics and autonomous systems concept and a type of robotics.",
+  "definition": "A Robot Component is any modular element forming part of a robotic system, encompassing hardware modules (motors, sensors, links, joints), electrical components (power supplies, motor drivers, embedded computers), software components (perception modules, planners, controllers), and interface components (communication protocols, connectors, mounting systems). Standardised component interfaces—ISO 9409 tool flanges, EtherCAT, ROS 2—enable plug-and-play integration, reducing development time and supporting modular system design, component reuse, and hierarchical decomposition.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-actuation-and-control",
       "label": "Actuation and Control"
     }
   ],
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:actuator", "label": "Actuator"},
+      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
+      {"@id": "urn:ngm:class:end-effector", "label": "End Effector"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:control-system", "label": "Control System"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:manipulation", "label": "Manipulation"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -72,14 +86,16 @@ public:: true
 
 
 - ### Definition
-  - RobotComponent is a concept within the ngm domain.
+  - A Robot Component is any modular element forming part of a robotic system, encompassing hardware modules (motors, sensors, links, joints), electrical components (power supplies, motor drivers, embedded computers), software components (perception modules, planners, controllers), and interface components (communication protocols, connectors, mounting systems). Standardised interfaces—ISO 9409 tool flanges, EtherCAT, ROS 2—enable plug-and-play integration, reducing development time and supporting modular system design, component reuse, and hierarchical decomposition.
 
 - ### Semantic Classification
   - owl-class:: robotics:RobotComponent
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **hasPart**: Actuator, Sensor Fusion, End Effector
+  - **uses**: Control System
+  - **enables**: Manipulation
 
 - ### Content
   term-id: RB-9025

@@ -7,7 +7,10 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires**: Healthcare Records (patient-specific clinical data input), Medical Diagnosis AI (diagnosis output feeds treatment selection)
+  - **uses**: Reinforcement Learning (adaptive dosage and protocol optimisation), Deep Learning (radiotherapy dose distribution modelling)
+  - **dependsOn**: Drug Discovery AI (candidate therapeutics that treatment planning selects from)
+  - **relatedTo**: Medical AI (parent application domain), Data Governance (clinical data stewardship requirements)
 
 - ### Content
   - Treatment Planning AI encompasses artificial intelligence systems that optimise therapeutic interventions through automated treatment selection, dosage optimisation, radiation therapy planning, surgical planning, and personalised care pathway design. These systems integrate patient-specific data, treatment guidelines, outcome predictions, and resource constraints to generate evidence-based, individualised treatment plans.

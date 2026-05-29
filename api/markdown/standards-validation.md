@@ -8,6 +8,12 @@
 
 - ### Relationships
   - is-subclass-of:: [[Standards]]
+  - Uses [[Quality Assurance]]
+  - Uses [[Compliance Verification]]
+  - Supports [[Regulatory Compliance]]
+  - Supports [[Interoperability]]
+  - Standardized by [[Standards Body]]
+  - Related to [[Standards Conformance Testing]]
 
 - ### Content
 

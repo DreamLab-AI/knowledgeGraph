@@ -82,9 +82,10 @@ public:: true
   "@id": "urn:ngm:class:mean-absolute-error",
   "@type": "Class",
   "label": "Mean Absolute Error",
-  "definition": "A regression performance metric representing the average magnitude of errors between predicted and actual values, calculated as the arithmetic mean of absolute differences between predictions and ground truth across all instances, providing an intuitive measure of prediction accuracy in the same ...",
+  "definition": "A regression performance metric representing the average magnitude of errors between predicted and actual values, calculated as the arithmetic mean of absolute differences between predictions and ground truth across all instances, providing an intuitive measure of prediction accuracy in the same units as the target variable. MAE treats all errors equally regardless of direction and is less sensitive to outliers than squared error metrics such as RMSE.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
@@ -100,6 +101,32 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:root-mean-square-error",
+        "label": "Root Mean Square Error"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:machine-learning-model",
+        "label": "Machine Learning Model"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:model-performance",
+        "label": "Model Performance"
+      }
+    ]
   }
 }
 ```
@@ -190,6 +217,10 @@ public:: true
 
 - ### Relationships
   - bridges-to:: [[Computer Vision]] (domain: ai) for model performance evaluation in visual tasks
+  - Part Of [[Model Performance]]
+  - Contrasts With [[Root Mean Square Error]]
+  - Uses [[Machine Learning Model]]
+  - Supports [[Fairness]]
 
 - ### Content
   - A regression performance metric representing the average magnitude of errors between predicted and actual values, calculated as the arithmetic mean of absolute differences between predictions and ground truth across all instances, providing an intuitive measure of prediction accuracy in the same units as the target variable, treating all errors equally regardless of direction, and being less sensitive to outliers than squared error metrics.

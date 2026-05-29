@@ -37,20 +37,52 @@ public:: true
   "@id": "urn:ngm:class:personal-data-store",
   "@type": "Class",
   "label": "Personal Data Store",
-  "definition": "Personal Data Store is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A user-controlled repository that aggregates, manages, and selectively shares an individual's personal data, enabling the data owner to grant and revoke third-party access under consent-based mechanisms, thereby supporting data sovereignty and privacy-by-design principles in digital and metaverse contexts.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-data-management",
       "label": "Data Management"
     }
   ],
-  "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "uses": [
+      {
+        "@id": "urn:ngm:class:decentralized-identifiers",
+        "label": "Decentralized Identifiers"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy By Design"
+      }
+    ]
   }
 }
 ```
@@ -76,14 +108,19 @@ public:: true
 
 
 - ### Definition
-  - PersonalDataStore is a concept within the ngm domain.
+  - A user-controlled repository that aggregates, manages, and selectively shares an individual's personal data, enabling the data owner to grant and revoke third-party access under consent-based mechanisms, thereby supporting data sovereignty and privacy-by-design principles in digital and metaverse contexts.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:PersonalDataStore
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Supports: [[Data Sovereignty]]
+  - Supports: [[Privacy By Design]]
+  - Uses: [[Decentralized Identifiers]]
+  - Uses: [[Access Control]]
+  - Related To: [[Digital Identity]]
+  - Related To: [[Data Governance]]
 
 - ### Content
   # PersonalDataStore

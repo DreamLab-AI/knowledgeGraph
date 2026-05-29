@@ -7,7 +7,10 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires**: Interoperability Framework, Linked Data — the framework depends on shared ontological standards and linked data principles
+  - **enables**: Interoperability, Digital Twin Interop Protocol — cross-domain integration becomes possible through these mechanisms
+  - **standardizedBy**: API Standard — ETSI specifies the APIs governing cross-domain exchange
+  - **relatedTo**: ETSI_Domain_Interoperability, Data Governance — closely coupled with the broader ETSI interoperability domain and EU data governance mandates
 
 - ### Content
   - The ETSI Infrastructure Interoperability domain enables different systems and platforms to exchange data and operate cohesively through standardised protocols, linked data frameworks, and semantic alignment facilitating seamless cross-domain integration.

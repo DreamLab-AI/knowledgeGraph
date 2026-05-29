@@ -7,6 +7,13 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
+  - **requires** [[Large Language Models]] — CPT is applied to foundation models to adapt their representations
+  - **requires** [[Deep Learning]] — self-supervised pre-training objectives run on deep neural networks
+  - **enables** [[Fine Tuning]] — CPT prepares domain-adapted representations for supervised fine-tuning
+  - **enables** [[Domain Adaptation]] — CPT is the primary mechanism for adapting models to new domains
+  - **contrastsWith** [[Full Fine Tuning]] — CPT uses unsupervised objectives; full fine-tuning uses labelled data
+  - **relatedTo** [[Transfer Learning]] — CPT is a specific transfer learning strategy within the pre-train/fine-tune paradigm
+  - **relatedTo** [[Overfitting]] — catastrophic forgetting is the CPT analogue of overfitting to new domain data
   - bridges-to:: [[Computer Vision]]
 
 - ### Content

@@ -60,7 +60,7 @@ public:: true
   "label": "Autonomous Navigation",
   "definition": "Autonomous Navigation encompasses the complete system capability for a robot or autonomous agent to move from one location to another without human guidance, integrating perception, localisation, mapping, path planning, obstacle avoidance, and control.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -71,6 +71,20 @@ public:: true
       "label": "Autonomous Agent"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:slam", "label": "SLAM"},
+      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:path-planning", "label": "Path Planning"},
+      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"},
+      {"@id": "urn:ngm:class:autonomous-vehicle", "label": "Autonomous Vehicle"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -136,6 +150,12 @@ public:: true
 
 - ### Relationships
   - bridges-to:: [[Autonomous Robot]] (rb)
+  - requires:: [[SLAM]]
+  - requires:: [[Sensor Fusion]]
+  - uses:: [[Path Planning]]
+  - uses:: [[Motion Planning]]
+  - enables:: [[Autonomous Robot]]
+  - enables:: [[Autonomous Vehicle]]
 
 - ### Content
   - Autonomous Navigation encompasses the complete system capability for a robot or autonomous agent to move from one location to another without human guidance, integrating perception, localisation, mapping, path planning, obstacle avoidance, and control. Autonomous navigation systems employ SLAM, sensor fusion, and AI-based decision-making to operate in unknown or dynamic environments.

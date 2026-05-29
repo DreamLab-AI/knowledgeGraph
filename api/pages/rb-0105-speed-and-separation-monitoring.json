@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:rb-0105-speed-and-separation-monitoring",
   "domain": "robotics",
-  "definition": "speed and separation monitoring is a robotics and autonomous systems concept and a type of Light Curtain.",
+  "definition": "Speed and Separation Monitoring (SSM) is a collaborative robot safety function in which the speed of the robot is continuously regulated based on the measured distance between the robot and any human operator in the shared workspace. When the separation distance decreases below defined thresholds the robot slows or stops, and it resumes normal speed once sufficient separation is restored. SSM is standardised under ISO/TS 15066 as one of the four permitted collaborative operation modes.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-safety-and-standards",
@@ -17,21 +17,62 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:rb-0066-robot-sensor",
+        "label": "rb 0066 robot sensor"
+      },
+      {
+        "id": "urn:ngm:class:rb-0095-safety-zone",
+        "label": "rb 0095 safety zone"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:rb-0103-collaborative-operation",
+        "label": "rb 0103 collaborative operation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:rb-0093-speed-limitation",
+        "label": "rb 0093 speed limitation"
+      },
+      {
+        "id": "urn:ngm:class:rb-0069-lidar",
+        "label": "rb 0069 lidar"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:rb-0087-safety-standard",
+        "label": "rb 0087 safety standard"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rb-0092-protective-stop",
+        "label": "rb 0092 protective stop"
+      },
+      {
+        "id": "urn:ngm:class:rb-0094-power-and-force-limiting",
+        "label": "rb 0094 power and force limiting"
+      },
+      {
+        "id": "urn:ngm:class:rb-0089-risk-assessment",
+        "label": "rb 0089 risk assessment"
+      }
+    ]
   },
   "wikilinks": [
     {

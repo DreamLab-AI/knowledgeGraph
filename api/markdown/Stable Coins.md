@@ -407,7 +407,7 @@ public:: true
       "label": "Token and Asset"
     },
     {
-      "@id": "urn:ngm:class:financial-instrument",
+      "@id": "urn:ngm:class:financial-instruments",
       "label": "Financial Instrument"
     },
     {

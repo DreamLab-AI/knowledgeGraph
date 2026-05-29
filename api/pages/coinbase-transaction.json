@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:coinbase-transaction",
   "domain": "blockchain",
-  "definition": "Block reward transaction within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "The first transaction in every blockchain block, created by the miner or block producer, that contains no inputs and issues the block reward plus accumulated transaction fees to the miner's address. Unlike regular transactions, the coinbase transaction has no sender; it creates new coins from protocol-defined issuance rules and serves as the primary mechanism by which new cryptocurrency enters circulation.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-protocol-and-consensus",
@@ -21,12 +21,39 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:block-reward",
+        "label": "Block Reward"
+      },
+      {
+        "id": "urn:ngm:class:transaction-fee",
+        "label": "Transaction Fee"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:mining",
+        "label": "Mining"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:mining-reward",
+        "label": "Mining Reward"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -34,8 +61,26 @@
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
+      }
+    ]
   },
   "wikilinks": [
     {

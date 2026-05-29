@@ -44,14 +44,28 @@ public:: true
   "label": "Risk Mitigation",
   "definition": "Actions taken to reduce the likelihood or impact of identified AI risks through technical, organizational, or procedural controls, implemented throughout the AI lifecycle to achieve acceptable risk levels.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"},
+      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"},
+      {"@id": "urn:ngm:class:robustness", "label": "Robustness"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:bias-mitigation-techniques", "label": "Bias Mitigation Techniques"},
+      {"@id": "urn:ngm:class:ai-governance-principle", "label": "Ai Governance Principle"}
+    ]
+  },
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -95,7 +109,12 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Risk Management]]
+  - requires [[AI Safety]]
+  - enables [[Compliance Framework]]
+  - enables [[Robustness]]
+  - relatedTo [[Bias Mitigation Techniques]]
+  - relatedTo [[Ai Governance Principle]]
 
 - ### Content
   - Actions taken to reduce the likelihood or impact of identified AI risks through technical, organizational, or procedural controls, implemented throughout the AI lifecycle to achieve acceptable risk levels.

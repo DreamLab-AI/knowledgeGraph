@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:data-compression",
   "domain": "artificial-intelligence",
-  "definition": "Data Compression in AI involves reducing the size of datasets, models, and computational representations while preserving essential information.",
+  "definition": "Data Compression in AI encompasses techniques for reducing the size of datasets, models, and computational representations while preserving essential information and predictive performance. Key methods include model quantisation (reducing numerical precision of weights), pruning (removing redundant parameters), knowledge distillation (training compact student models from large teachers), and neural compression via autoencoders. These techniques are critical for deploying AI on resource-constrained edge devices and for reducing storage, bandwidth, and energy costs.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -13,21 +13,49 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-compression-for-edge",
+        "label": "Model Compression for Edge"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
+      },
+      {
+        "id": "urn:ngm:class:quantisation",
+        "label": "Quantisation"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:model-pruning-for-edge-deployment",
+        "label": "Model Pruning for Edge Deployment"
+      }
+    ]
   },
   "wikilinks": [
     {

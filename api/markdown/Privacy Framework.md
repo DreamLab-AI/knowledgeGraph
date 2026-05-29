@@ -37,15 +37,28 @@ public:: true
   "@id": "urn:ngm:class:privacy-framework",
   "@type": "Class",
   "label": "Privacy Framework",
-  "definition": "Privacy Framework is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A Privacy Framework is a structured set of policies, technical controls, and operational procedures that govern how personal and behavioural data is collected, stored, processed, and shared within a system. In immersive and metaverse environments, privacy frameworks address novel data types including biometric signals, spatial telemetry, and social-graph interactions, applying principles such as data minimisation, purpose limitation, and privacy-by-design to protect users while enabling legitimate platform functionality.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-legal-and-regulatory",
       "label": "Legal and Regulatory"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:encryption", "label": "Encryption"},
+      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:cryptographic-security", "label": "Cryptographic Security"},
+      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -76,14 +89,18 @@ public:: true
 
 
 - ### Definition
-  - PrivacyFramework is a concept within the ngm domain.
+  - A Privacy Framework is a structured set of policies, technical controls, and operational procedures that govern how personal and behavioural data is collected, stored, processed, and shared within a system. In immersive and metaverse environments, privacy frameworks address novel data types including biometric signals, spatial telemetry, and social-graph interactions, applying principles such as data minimisation, purpose limitation, and privacy-by-design to protect users while enabling legitimate platform functionality.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:PrivacyFramework
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Encryption]]
+  - requires [[Zero-Knowledge Proof]]
+  - supports [[Cryptographic Security]]
+  - supports [[Federated Learning]]
+  - relatedTo [[Digital Identity]]
 
 - ### Content
   # PrivacyFramework

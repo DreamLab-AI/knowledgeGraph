@@ -1,12 +1,17 @@
 - ### Definition
-  - PlatformService is a concept within the ngm domain.
+  - A managed cloud or middleware service exposed via APIs that provides reusable capabilities—such as authentication, storage, rendering, or notification—to applications built on top of a platform. Platform services abstract infrastructure complexity, enabling developers to compose higher-order virtual world and spatial computing features without managing underlying infrastructure.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:PlatformService
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **hasPart** [[Notification System]] — notification delivery is a canonical platform service capability
+  - **hasPart** [[Authentication Service]] — identity and access management services are foundational platform services
+  - **hasPart** [[API Gateway]] — API gateways expose and govern access to platform service endpoints
+  - **enables** [[Metaverse Platform]] — platform services are the building blocks of metaverse platform stacks
+  - **enables** [[Cloud-Native Applications]] — cloud-native apps compose platform services rather than managing raw infrastructure
+  - **uses** [[Microservices Architecture]] — platform services are typically implemented as independently deployable microservices
 
 - ### Content
   # PlatformService

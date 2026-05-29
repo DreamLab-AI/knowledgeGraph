@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:iso-iec-42001",
   "domain": "artificial-intelligence",
-  "definition": "ISO/IEC 42001 is an international management system standard that specifies requirements for establishing, implementing, and continually improving an AI management system within organisations.",
+  "definition": "ISO/IEC 42001:2023 is an international management system standard published by the ISO/IEC Joint Technical Committee 1, Subcommittee 42, specifying requirements for an AI Management System (AIMS) that organisations use to responsibly develop, provide, or use AI-based products and services. It follows the Annex SL high-level structure shared with ISO 9001 and ISO 27001, enabling integration with existing management frameworks, and covers risk management, AI system impact assessment, and continuous improvement of AI governance processes. Annex A provides a normative reference control set that organisations select from according to their AI risk profile.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -14,7 +14,7 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -24,10 +24,33 @@
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

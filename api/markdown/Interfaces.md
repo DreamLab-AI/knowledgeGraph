@@ -66,9 +66,10 @@ public:: true
   "@id": "urn:ngm:class:interfaces",
   "@type": "Class",
   "label": "Interfaces",
-  "definition": "Interfaces is a technology infrastructure concept and a type of User Interface.",
+  "definition": "The set of software boundaries, interaction surfaces, and protocol contracts through which humans, AI agents, and system components communicate. In the context of LLMs and spatial computing, interfaces include node-based visual editors, chat frontends, API gateways, and multimodal input layers that mediate access to underlying AI or infrastructure capabilities.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
@@ -79,11 +80,19 @@ public:: true
       "label": "User Interface"
     }
   ],
-  "quality": 0.5,
-  "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:node-based-visual-interfaces", "label": "Node based visual interfaces"},
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:agents", "label": "Agents"},
+      {"@id": "urn:ngm:class:hardware-and-edge", "label": "Hardware and Edge"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:user-interface", "label": "User Interface"},
+      {"@id": "urn:ngm:class:api-gateway", "label": "API Gateway"}
+    ]
   },
   "sameAs": [
     {
@@ -161,7 +170,9 @@ public:: true
   - owl-class:: infrastructure:Interfaces
   - owl-role:: Concept
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: [[Node based visual interfaces]], [[Large Language Models]]
+  - **enables**: [[Agents]], [[Hardware and Edge]]
+  - **relatedTo**: [[User Interface]], [[API Gateway]]
 - ### Content
   - # Node based
   - [Rivet (ironcladapp.com)](https://rivet.ironcladapp.com/) is a [[Interfaces]] for [[Infrastructure]] [[Hardware and Edge]] based [[Agents]] using [[Large Language Models]]

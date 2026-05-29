@@ -58,7 +58,7 @@ public:: true
   "@id": "urn:ngm:class:privacy-impact-assessment",
   "@type": "Class",
   "label": "Privacy Impact Assessment",
-  "definition": "Privacy Impact Assessment is a structured eprocess identifying, analyzing, and mitigating privacy risks associated with data processing activities, particularly AI systems handling personal information, ensuring compliance with data protection regulations and protecting individual privacy rights.",
+  "definition": "A structured evaluation process identifying, analysing, and mitigating privacy risks associated with data processing activities, particularly AI systems handling personal information. Mandated by GDPR Article 35 for high-risk processing, it covers necessity assessment, risk identification, severity evaluation, and documentation of technical and organisational controls.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -67,7 +67,25 @@ public:: true
       "label": "AI Governance and Ethics"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:gdpr-compliance", "label": "GDPR Compliance"},
+      {"@id": "urn:ngm:class:data-protection-regulation", "label": "Data Protection Regulation"},
+      {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"},
+      {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy By Design"},
+      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"},
+      {"@id": "urn:ngm:class:privacy-framework", "label": "Privacy Framework"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
+      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

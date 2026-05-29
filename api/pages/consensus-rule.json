@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:consensus-rule",
   "domain": "blockchain",
-  "definition": "Protocol validation requirement within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "A Consensus Rule is a protocol-level validation requirement that every fully-validating node in a blockchain network must enforce uniformly to reach and maintain agreement on the canonical chain state. Consensus rules define which blocks and transactions are valid, covering aspects such as block structure, cryptographic proofs, transaction format, gas limits, and state-transition logic. Deviation from consensus rules \u2014 whether accidental or deliberate \u2014 results in a fork, splitting the network into incompatible chains.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-protocol-and-consensus",
@@ -17,25 +17,86 @@
     },
     {
       "id": "urn:ngm:class:consensus-protocol",
-      "label": "ConsensusProtocol"
+      "label": "Consensus Protocol"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:fork-choice-rule",
+        "label": "Fork Choice Rule"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:finality",
+        "label": "Finality"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:governance-model",
+        "label": "Governance Model"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:validator-set",
+        "label": "Validator Set"
+      },
+      {
+        "id": "urn:ngm:class:51-attack",
+        "label": "51% Attack"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -130,9 +130,10 @@ public:: true
   "@id": "urn:ngm:class:definitions-and-frameworks-for-metaverse",
   "@type": "Class",
   "label": "Definitions and frameworks for Metaverse",
-  "definition": "Definitions and frameworks for Metaverse is a spatial computing concept and a type of Metaverse Ontology.",
+  "definition": "This page surveys competing definitions and analytical frameworks used to characterise the metaverse, drawing from industry reports, academic literature, and standards bodies. It compares platform-centric, social-first, and open-interoperability framings; examines primitives such as persistence, embodiment, real-time 3D graphics, and economic actors; and contextualises failed early attempts (Decentraland, Sandbox) against more enduring platforms (Roblox). The analysis informs design principles for trust, value transfer, and AI-mediated governance in spatial social systems.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -143,7 +144,24 @@ public:: true
       "label": "Metaverse Ontology"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"},
+      {"@id": "urn:ngm:class:telecollaboration", "label": "Telecollaboration"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:definitions-and-frameworks-for-metaverse", "label": "Definitions and frameworks for Metaverse"},
+      {"@id": "urn:ngm:class:digital-commerce", "label": "Digital Commerce"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -296,6 +314,10 @@ public:: true
   - owl-role:: Concept
 
 - ### Relationships
+  - **hasPart**: Metaverse, Telecollaboration (core concepts the framework covers and structures)
+  - **uses**: Blockchain, Augmented Reality (technologies surveyed as enabling infrastructure)
+  - **relatedTo**: Digital Twin, AI Governance (adjacent domains informing metaverse design decisions)
+
   - bridges-to:: [[Computer Vision]] or [[Blockchain]] or [[Telecollaboration]]
 
 - ### Content

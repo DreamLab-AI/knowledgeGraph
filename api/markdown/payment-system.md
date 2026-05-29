@@ -1,12 +1,17 @@
 - ### Definition
-  - PaymentSystem is a concept within the ngm domain.
+  - A Payment System is an infrastructure layer enabling secure and auditable exchange of value between parties, encompassing fiat payment gateways, blockchain-native token transfers, and hybrid settlement mechanisms. Within virtual economies and metaverse platforms, payment systems must handle high-frequency microtransactions, cross-currency conversion, smart-contract-mediated escrow, and compliance with AML/KYC regulations while preserving user privacy and minimising settlement latency.
 
 - ### Semantic Classification
   - owl-class:: blockchain/PaymentSystem
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Blockchain Transaction]]
+  - requires [[Smart Contract]]
+  - uses [[Cryptographic Security]]
+  - uses [[Lightning Network]]
+  - relatedTo [[Tokenomics]]
+  - relatedTo [[NFT]]
 
 - ### Content
   # PaymentSystem

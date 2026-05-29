@@ -42,16 +42,32 @@ public:: true
   "@id": "urn:ngm:class:placing-on-the-market",
   "@type": "Class",
   "label": "Placing on the Market",
-  "definition": "The first making available of an AI system on the Union market.",
+  "definition": "The first making available of an AI system or general-purpose AI model on the EU Union market, as defined in EU AI Act Article 3(12). This act triggers the full set of provider obligations under the Act, including risk management, technical documentation, conformity assessment, CE marking, and post-market monitoring, and applies regardless of whether the system is offered for payment or free of charge.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
       "label": "Governance and Safety"
     }
   ],
-  "quality": 0.5,
+  "qualityScore": 0.7,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:conformity-assessment", "label": "Conformity Assessment"},
+      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"},
+      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:market-surveillance-authority", "label": "Market Surveillance Authority"},
+      {"@id": "urn:ngm:class:deployer", "label": "Deployer"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:provider", "label": "Provider"},
+      {"@id": "urn:ngm:class:importer", "label": "Importer"},
+      {"@id": "urn:ngm:class:high-risk-ai-system", "label": "High Risk AI System"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -87,7 +103,7 @@ public:: true
 
 
 - ### Definition
-  - The first making available of an AI system on the Union market.
+  - The first making available of an AI system or general-purpose AI model on the EU Union market, as defined in EU AI Act Article 3(12). This act triggers the full set of provider obligations under the Act, including risk management, technical documentation, conformity assessment, CE marking, and post-market monitoring, and applies regardless of whether the system is offered for payment or free of charge.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:PlacingontheMarket
@@ -95,7 +111,9 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires: [[Conformity Assessment]], [[Risk Management]], [[Compliance Framework]]
+  - enables: [[Market Surveillance Authority]], [[Deployer]]
+  - relatedTo: [[Provider]], [[Importer]], [[High Risk AI System]]
 
 - ### Content
   - The first making available of an AI system on the Union market.

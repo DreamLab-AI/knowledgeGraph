@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:neuromorphic-computing",
   "domain": "spatial-computing",
-  "definition": "Neuromorphic Computing is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "A computational paradigm that designs hardware and software systems to mirror the structure and function of biological neural networks, integrating memory and processing units to enable parallel, event-driven information processing inspired by how neurons communicate through electrical spikes. Unlike conventional von Neumann architectures, neuromorphic systems perform computation asynchronously at the location of data, enabling orders-of-magnitude improvements in energy efficiency for AI inference at the edge.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -13,21 +13,86 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.75,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:neuromorphic-chip",
+        "label": "Neuromorphic Chip"
+      },
+      {
+        "id": "urn:ngm:class:neuromorphic-chips",
+        "label": "Neuromorphic Chips"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ai-hardware",
+        "label": "AI Hardware"
+      },
+      {
+        "id": "urn:ngm:class:inference-hardware",
+        "label": "Inference Hardware"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:edge-ai-system",
+        "label": "Edge AI System"
+      },
+      {
+        "id": "urn:ngm:class:edge-ai-accelerator",
+        "label": "Edge AI Accelerator"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:artificial-general-intelligence",
+        "label": "Artificial General Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-architecture",
+        "label": "Cognitive Architecture"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:parallel-processing",
+        "label": "Parallel Processing"
+      },
+      {
+        "id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      },
+      {
+        "id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -44,13 +44,27 @@ public:: true
   "label": "Instruction Tuning",
   "definition": "A fine-tuning technique that trains language models to follow natural language instructions by training on diverse instruction-response pairs. Instruction tuning enables models to generalise to new tasks described through instructions without task-specific training data.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:supervised-learning", "label": "Supervised Learning"},
+      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:rlhf", "label": "RLHF"},
+      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"},
+      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -95,7 +109,12 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Supervised Learning]]
+  - requires [[Fine Tuning]]
+  - enables [[Generative AI]]
+  - relatedTo [[RLHF]]
+  - relatedTo [[Prompt Engineering]]
+  - relatedTo [[Transfer Learning]]
 
 - ### Content
   - A fine-tuning technique that trains language models to follow natural language instructions by training on diverse instruction-response pairs. Instruction tuning enables models to generalise to new tasks described through instructions without task-specific training data.

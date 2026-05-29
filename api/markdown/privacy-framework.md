@@ -1,12 +1,16 @@
 - ### Definition
-  - PrivacyFramework is a concept within the ngm domain.
+  - A Privacy Framework is a structured set of policies, technical controls, and operational procedures that govern how personal and behavioural data is collected, stored, processed, and shared within a system. In immersive and metaverse environments, privacy frameworks address novel data types including biometric signals, spatial telemetry, and social-graph interactions, applying principles such as data minimisation, purpose limitation, and privacy-by-design to protect users while enabling legitimate platform functionality.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:PrivacyFramework
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Encryption]]
+  - requires [[Zero-Knowledge Proof]]
+  - supports [[Cryptographic Security]]
+  - supports [[Federated Learning]]
+  - relatedTo [[Digital Identity]]
 
 - ### Content
   # PrivacyFramework

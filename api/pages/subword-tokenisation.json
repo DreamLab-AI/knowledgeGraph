@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:subword-tokenisation",
   "domain": "spatial-computing",
-  "definition": "A tokenisation approach that breaks words into smaller meaningful units, balancing vocabulary size with the ability to represent rare words and novel compositions.",
+  "definition": "A tokenisation strategy that segments text into sub-word units (via algorithms such as Byte-Pair Encoding, WordPiece, or SentencePiece), balancing vocabulary size against the ability to represent rare, morphologically complex, and out-of-vocabulary words. Subword tokenisation is the de facto standard preprocessing step for large language models.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -14,11 +14,25 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:language-modeling",
+        "label": "Language Modeling"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -26,8 +40,18 @@
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:natural-language-understanding",
+        "label": "Natural Language Understanding"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -33,15 +33,29 @@ public:: true
   "@id": "urn:ngm:class:bestprompts",
   "@type": "Class",
   "label": "bestprompts",
-  "definition": "bestprompts is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A curated collection of high-quality prompts, system instructions, and prompt engineering patterns for directing large language model behaviour across tasks including image generation, code synthesis, transcript processing, and writing style control. Serves as a practitioner reference library for reproducible AI-assisted workflows.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"},
+      {"@id": "urn:ngm:class:code-generation", "label": "Code Generation"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"},
+      {"@id": "urn:ngm:class:inference", "label": "Inference"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:knowledge-base", "label": "Knowledge Base"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -72,14 +86,16 @@ public:: true
 
 
 - ### Definition
-  - bestprompts is a concept within the ngm domain.
+  - A curated collection of high-quality prompts, system instructions, and prompt engineering patterns for directing large language model behaviour across tasks including image generation, code synthesis, transcript processing, and writing style control. Serves as a practitioner reference library for reproducible AI-assisted workflows.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:Bestprompts
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **Uses**: [[Prompt Engineering]] patterns, [[Code Generation]] instructions
+  - **Enables**: [[Image Generation]] (diffusion prompts), [[Inference]] (task-specific model steering)
+  - **Part-of**: [[Knowledge Base]] (prompt reference library)
 
 - ### Content
   - Slides

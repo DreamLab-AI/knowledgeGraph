@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:bitcoin-standard",
   "domain": "blockchain",
-  "definition": "An economic and monetary framework proposing that Bitcoin's fixed-supply, decentralised properties make it a superior reserve asset and potential basis for a new international monetary system.",
+  "definition": "The Bitcoin Standard is an economic and monetary thesis proposing that Bitcoin's fixed supply cap of 21 million units, its decentralised consensus via Proof of Work, and its censorship-resistant issuance schedule make it a superior store of value and a viable basis for a new international monetary order, analogous to the historical gold standard. Proponents argue that Bitcoin's predictable, algorithmically enforced monetary policy immunises it against political inflation, contrasting with fiat currencies subject to central bank intervention. The thesis draws on Austrian economics, particularly the concept of sound money.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-token-and-asset",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:inflation",
+        "label": "Inflation"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bitcoin-as-money",
+        "label": "Bitcoin As Money"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-value-proposition",
+        "label": "Bitcoin Value Proposition"
+      },
+      {
+        "id": "urn:ngm:class:monetary-system",
+        "label": "Monetary System"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

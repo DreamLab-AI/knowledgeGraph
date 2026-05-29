@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:fixed-supply-token",
   "domain": "blockchain",
-  "definition": "A token with a predetermined maximum supply that cannot be exceeded, often with emission schedule governing distribution over time.",
+  "definition": "A Fixed Supply Token is a fungible blockchain token whose total issuance is capped at a hard-coded maximum that the protocol cannot exceed, regardless of future governance decisions. Distribution of the supply over time is governed by a predetermined emission schedule, and no additional tokens can be minted once the cap is reached, conferring deflationary scarcity properties analogous to precious metals.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-token-and-asset",
@@ -17,21 +17,70 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:emission-schedule",
+        "label": "Emission Schedule"
+      },
+      {
+        "id": "urn:ngm:class:total-supply",
+        "label": "Total Supply"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:burning-mechanism",
+        "label": "Burning Mechanism"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:inflationary-token",
+        "label": "Inflationary Token"
+      },
+      {
+        "id": "urn:ngm:class:deflationary-token",
+        "label": "Deflationary Token"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:circulating-supply",
+        "label": "Circulating Supply"
+      },
+      {
+        "id": "urn:ngm:class:halving",
+        "label": "Halving"
+      },
+      {
+        "id": "urn:ngm:class:market-capitalization",
+        "label": "Market Capitalization"
+      },
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      },
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
+    ]
   },
   "wikilinks": [
     {

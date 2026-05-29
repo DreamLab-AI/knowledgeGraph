@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:convergence-concept",
   "domain": "infrastructure",
-  "definition": "Convergence Concept is a technology infrastructure concept and a type of Collaboration.",
+  "definition": "Convergence Concept describes the synthesis of previously distinct technologies, domains, and paradigms into unified systems. In telecollaboration and spatial computing, convergence encompasses XR integration, AI-human collaboration, physical-digital fusion via digital twins, and platform unification over shared protocols such as WebXR and OpenXR. The convergence of edge and cloud computing creates hybrid architectures that optimise latency and scalability for real-time collaborative experiences.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
@@ -17,13 +17,36 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:open-xr",
+        "label": "OpenXR"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
@@ -31,7 +54,12 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cross-domain-bridge",
+        "label": "Cross Domain Bridge"
+      }
+    ]
   },
   "wikilinks": [
     {

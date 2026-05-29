@@ -48,7 +48,7 @@ public:: true
   "label": "Virtual World Creation",
   "definition": "The comprehensive process of designing, developing, and deploying immersive 3D virtual environments using game engines, procedural generation algorithms, and specialized terrain tools, encompassing everything from initial concept to fully realized interactive digital worlds for games, metaverse p...",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -59,11 +59,53 @@ public:: true
       "label": "Digital Content Creation"
     }
   ],
-  "quality": 0.5,
+  "qualityScore": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      },
+      {
+        "@id": "urn:ngm:class:physics-engine",
+        "label": "Physics Engine"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:digital-content-creation",
+        "label": "Digital Content Creation"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "@id": "urn:ngm:class:procedural-generation",
+        "label": "Procedural Generation"
+      },
+      {
+        "@id": "urn:ngm:class:rendering-engine",
+        "label": "Rendering Engine"
+      }
+    ]
   }
 }
 ```
@@ -109,6 +151,14 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Digital Content Creation]]
+  - Uses [[Game Engine]]
+  - Uses [[Procedural Generation]]
+  - Uses [[Rendering Engine]]
+  - Enables [[Metaverse]]
+  - Enables [[Virtual Reality]]
+  - Has Part [[Avatar]]
+  - Has Part [[Physics Engine]]
+  - Requires [[Digital Content Creation]]
 
 - ### Content
 

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:mobile-manipulator",
   "domain": "robotics",
-  "definition": "Mobile manipulator integrates locomotion with manipulation capabilities.",
+  "definition": "A Mobile Manipulator is a robotic system that integrates a mobile base \u2014 wheeled, legged, or tracked \u2014 with one or more articulated manipulator arms, enabling it to navigate through unstructured environments and perform dexterous manipulation tasks at arbitrary locations. This combination resolves the fundamental trade-off between workspace reach and precision, making mobile manipulators suitable for logistics, inspection, surgery assistance, and domestic service applications. Effective operation requires tight coordination between navigation, motion planning, perception, and manipulation subsystems.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-robot-type",
@@ -17,21 +17,82 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:mobile-robot",
+        "label": "Mobile Robot"
+      },
+      {
+        "id": "urn:ngm:class:manipulator-arm",
+        "label": "Manipulator Arm"
+      },
+      {
+        "id": "urn:ngm:class:end-effector",
+        "label": "End Effector"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "id": "urn:ngm:class:perception-system",
+        "label": "Perception System"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:manipulation",
+        "label": "Manipulation"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "id": "urn:ngm:class:robot-control",
+        "label": "Robot Control"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:humanoid-robot",
+        "label": "Humanoid Robot"
+      },
+      {
+        "id": "urn:ngm:class:wheeled-mobile-robot",
+        "label": "Wheeled Mobile Robot"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -46,16 +46,32 @@ public:: true
   "@id": "urn:ngm:class:data-access-interface",
   "@type": "Class",
   "label": "Data Access Interface",
-  "definition": "Data Access Interface is a type of Infrastructure in the infrastructure domain.",
+  "definition": "A Data Access Interface is a formalised contract—such as a REST API, GraphQL endpoint, or SPARQL query service—that mediates structured access to data stores, registries, or knowledge graphs. It enforces authentication, authorisation, and schema validation, decoupling data consumers from underlying storage implementations. In metaverse and spatial computing contexts, data access interfaces expose asset repositories, user identity records, and scene graphs to applications and AI agents.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-data-management",
       "label": "Data Management"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:data-interoperability", "label": "Data Interoperability"},
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:data-registry", "label": "Data Registry"},
+      {"@id": "urn:ngm:class:ai-agent-system", "label": "AI Agent System"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:digital-infrastructure", "label": "Digital Infrastructure"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -96,20 +112,23 @@ public:: true
 
 
 - ### Definition
-  - Data Access Interface is a concept within the metaverse domain. Further enrichment pending.
+  A Data Access Interface is a formalised contract—such as a REST API, GraphQL endpoint, or SPARQL query service—that mediates structured access to data stores, registries, or knowledge graphs. It enforces authentication, authorisation, and schema validation, decoupling consumers from underlying storage. In metaverse and spatial computing contexts, data access interfaces expose asset repositories, user identity records, and scene graphs to applications and AI agents.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:DataAccessInterface
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **enables**: Data Interoperability, Data Governance (structured interfaces make cross-system data exchange tractable)
+  - **uses**: Digital Identity (authentication and authorisation rely on identity primitives)
+  - **supports**: Data Registry, AI Agent System (provides the query layer for registries and agent data needs)
+  - **partOf**: Digital Infrastructure (a component of the broader infrastructure stack)
 
 - ### Content
 
   ## Overview
 
-  Data Access Interface represents an abstract concept in the metaverse ontology hierarchy.
+  A Data Access Interface provides a stable, schema-validated boundary between data consumers and storage backends. It centralises access control, version management, and observability, enabling heterogeneous clients to query and mutate data without knowledge of backend technology.
 
   #### Related Concepts
   - [[owl:Thing]]

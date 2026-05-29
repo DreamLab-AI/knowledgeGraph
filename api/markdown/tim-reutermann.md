@@ -1,12 +1,13 @@
 - ### Definition
-  - Tim Reutermann is a concept within the ngm domain.
+  Tim Reutermann is a writer and technologist whose work synthesises cypherpunk philosophy, decentralised governance models, and AI-driven economic paradigm shifts. He advocates liquid democracy, universal basic income, and open-source systems as mechanisms for aligning economic incentives with social goods in the face of automation-driven disruption.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:TimReutermann
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **relatedTo**: cypherpunk, DAO Governance, Blockchain Governance
+  - **supports**: Decentralised Identity, AI Governance
 
 - ### Content
   - #Public page automatically published

@@ -5,29 +5,52 @@
   "public": true,
   "classIri": "urn:ngm:class:server-sent-events",
   "domain": "artificial-intelligence",
-  "definition": "Server-Sent Events (SSE) is a W3C standard for a unidirectional server-to-client streaming protocol over HTTP, enabling real-time push notifications without WebSocket overhead.",
+  "definition": "Server-Sent Events (SSE) is a W3C-standardised unidirectional server-to-client streaming protocol layered on HTTP/1.1 and HTTP/2, enabling servers to push a continuous stream of text-based events to browser or API clients without the bidirectional overhead of WebSockets. Each event is delimited by the text/event-stream MIME type and carries optional id, event, data, and retry fields, supporting automatic reconnection. SSE is widely adopted in AI inference APIs\u2014including the Anthropic and OpenAI streaming endpoints\u2014and in the Model Context Protocol (MCP) transport layer for streaming tool responses.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:real-time-processing",
+        "label": "Real-time Processing"
+      },
+      {
+        "id": "urn:ngm:class:model-control-protocols-like-mcp",
+        "label": "Model Control Protocols like MCP"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      },
+      {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

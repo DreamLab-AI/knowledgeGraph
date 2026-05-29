@@ -56,7 +56,8 @@ public:: true
   "label": "Medical Diagnosis AI",
   "definition": "Medical Diagnosis AI refers to artificial intelligence systems that automate or assist in the diagnostic process by analysing patient symptoms, medical history, laboratory results, imaging findings, and other clinical data to generate differential diagnoses, diagnostic hypotheses, and diagnostic ...",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-application",
@@ -72,6 +73,38 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:clinical-decision-support",
+        "label": "Clinical Decision Support"
+      },
+      {
+        "@id": "urn:ngm:class:treatment-planning-ai",
+        "label": "Treatment Planning AI"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "@id": "urn:ngm:class:healthcare-ai",
+        "label": "Healthcare AI"
+      }
+    ]
   }
 }
 ```
@@ -126,7 +159,12 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses [[Deep Learning]]
+  - Uses [[Knowledge Graph]]
+  - Enables [[Clinical Decision Support]]
+  - Enables [[Treatment Planning AI]]
+  - Related To [[Explainable AI]]
+  - Related To [[Healthcare AI]]
 
 - ### Content
   - Medical Diagnosis AI refers to artificial intelligence systems that automate or assist in the diagnostic process by analysing patient symptoms, medical history, laboratory results, imaging findings, and other clinical data to generate differential diagnoses, diagnostic hypotheses, and diagnostic recommendations. These systems employ machine learning, knowledge representation, and clinical reasoning algorithms validated against expert physician performance.

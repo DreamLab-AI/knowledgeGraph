@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:etsi-domain-interoperability",
   "domain": "infrastructure",
-  "definition": "ETSI domain interoperability standards enabling different systems and organisations to work toger effectively through technical and semantic data exchange mechanisms, shared vocabularies, and standardised protocols.",
+  "definition": "ETSI domain consolidating standards enabling different systems and organisations to work together effectively through technical and semantic data exchange mechanisms, shared vocabularies such as NGSI-LD and SAREF, and standardised protocols. It covers avatar interoperability, digital twin synchronisation, state synchronisation, and portability of digital assets across metaverse platforms.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-network-and-comms",
@@ -13,19 +13,54 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.4,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:avatar-interoperability",
+        "label": "Avatar Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin-interop-protocol",
+        "label": "Digital Twin Interop Protocol"
+      },
+      {
+        "id": "urn:ngm:class:state-synchronization",
+        "label": "State Synchronization"
+      },
+      {
+        "id": "urn:ngm:class:portability",
+        "label": "Portability"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:discovery-layer",
+        "label": "Discovery Layer"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:api-standard",
+        "label": "API Standard"
+      },
+      {
+        "id": "urn:ngm:class:interoperability-framework",
+        "label": "Interoperability Framework"
+      }
+    ],
     "partOf": [],
     "relatedTo": []
   },

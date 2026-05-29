@@ -46,15 +46,29 @@ public:: true
   "@id": "urn:ngm:class:digital-preservation",
   "@type": "Class",
   "label": "Digital Preservation",
-  "definition": "Digital Preservation is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Digital Preservation encompasses the strategies, standards, and technical processes that ensure long-term accessibility and integrity of digital content, including 3D assets, metadata, and cultural heritage materials. It involves format migration, checksumming, redundant storage, and provenance tracking, increasingly leveraging blockchain for immutable audit trails and decentralised storage for resilience.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:metadata-standard", "label": "Metadata Standard"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:digital-asset-management", "label": "Digital Asset Management"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:archival-standards", "label": "Archival Standards"},
+      {"@id": "urn:ngm:class:storage-infrastructure", "label": "Storage Infrastructure"},
+      {"@id": "urn:ngm:class:3-d-file-format", "label": "3D File Format"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -96,7 +110,7 @@ public:: true
 
 
 - ### Definition
-  - Digital Preservation is a concept within the metaverse domain. Further enrichment pending.
+  - Digital Preservation encompasses strategies, standards, and technical processes that ensure long-term accessibility and integrity of digital content, including format migration, checksumming, redundant storage, and provenance tracking. It increasingly leverages blockchain for immutable audit trails and decentralised storage for resilience.
 
 bridges-to:: [[Blockchain]]
 
@@ -105,7 +119,12 @@ bridges-to:: [[Blockchain]]
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses [[Blockchain]]
+  - uses [[Metadata Standard]]
+  - enables [[Digital Asset Management]]
+  - relatedTo [[Archival Standards]]
+  - relatedTo [[Storage Infrastructure]]
+  - relatedTo [[3D File Format]]
 
 - ### Content
 

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:mining-pool",
   "domain": "blockchain",
-  "definition": "Collaborative mining group within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "A cooperative arrangement in which multiple miners aggregate their computational resources to increase the probability of successfully mining a block, sharing the resulting block reward proportionally to contributed hash rate. Mining pools reduce variance in miner income but introduce centralisation risks.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-protocol-and-consensus",
@@ -17,25 +17,65 @@
     },
     {
       "id": "urn:ngm:class:consensus-protocol",
-      "label": "ConsensusProtocol"
+      "label": "Consensus Protocol"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:block-reward",
+        "label": "Block Reward"
+      },
+      {
+        "id": "urn:ngm:class:transaction-fee",
+        "label": "Transaction Fee"
+      },
+      {
+        "id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:mempool",
+        "label": "Mempool"
+      }
+    ]
   },
   "wikilinks": [
     {

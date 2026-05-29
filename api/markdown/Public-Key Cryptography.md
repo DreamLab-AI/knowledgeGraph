@@ -66,7 +66,7 @@ public:: true
   "@id": "urn:ngm:class:public-key-cryptography",
   "@type": "Class",
   "label": "Public-Key Cryptography",
-  "definition": "Asymmetric encryption system within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "An asymmetric cryptographic system using mathematically related key pairs — a public key for encryption or signature verification and a private key for decryption or signing — enabling secure communication, digital signatures, and authentication without requiring shared secrets. In blockchain systems it underpins wallet addresses, transaction signing, and identity verification.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -83,7 +83,28 @@ public:: true
       "label": "CryptographicPrimitive"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:public-key", "label": "Public Key"},
+      {"@id": "urn:ngm:class:private-key", "label": "Private Key"},
+      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
+      {"@id": "urn:ngm:class:ecdsa", "label": "ECDSA"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:elliptic-curve-cryptography", "label": "Elliptic Curve Cryptography"},
+      {"@id": "urn:ngm:class:asymmetric-encryption", "label": "Asymmetric Encryption"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:authentication", "label": "Authentication"},
+      {"@id": "urn:ngm:class:digital-signature-verification", "label": "Digital Signature Verification"},
+      {"@id": "urn:ngm:class:cryptographic-key-management", "label": "Cryptographic Key Management"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
+      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

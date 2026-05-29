@@ -1,5 +1,11 @@
 - ### Definition
-  - Regulatory authorisation mandates for virtual asset service providers ranging from state-level [[MoneyTransmitterLicense|money transmitter licences]] ($100K-$1M capital) to jurisdictional crypto licences (Dubai VARA, UK FCA, EU MiCA) requiring operational standards, custody controls, KYC procedures, and ongoing compliance reporting. Licensing fragmentation creates cost barriers—a global [[ExchangePlatform|exchange]] requires permits across 50+ jurisdictions with diverse requirements—incentivising geographic focus and limiting competitive entry. Harmonisation efforts (EU MiCA, Singapore MAS frameworks) reduce complexity whilst regulatory clarity in developed markets (UK, Switzerland, El Salvador) attracts institutional capital.
+  - Licensing Requirements are the regulatory authorisation mandates imposed on virtual asset service providers by national or supranational regulators, ranging from state-level money transmitter licences in the United States to jurisdiction-specific crypto licences under EU MiCA, UK FCA, Singapore MAS, and Dubai VARA regimes. Compliance demands operational standards, minimum capital, custody controls, KYC procedures, AML programmes, and ongoing regulatory reporting, with global coverage costing major platforms tens to hundreds of millions of pounds. Licensing fragmentation creates cost barriers—a global [[ExchangePlatform|exchange]] requires permits across 50+ jurisdictions—incentivising geographic focus and limiting competitive entry. Harmonisation efforts (EU MiCA, Singapore MAS frameworks) reduce complexity whilst regulatory clarity attracts institutional capital.
+
+- ### Relationships
+  - requires:: [[Anti-Money Laundering]], [[Regulatory Framework]]
+  - partOf:: [[Governance and Regulation]], [[Blockchain Domain]]
+  - dependsOn:: [[Blockchain]], [[Digital Asset]]
+  - relatedTo:: [[Decentralised Finance]], [[Smart Contract]]
 
 - ### Semantic Classification
   - owl-class:: blockchain:LicensingRequirements

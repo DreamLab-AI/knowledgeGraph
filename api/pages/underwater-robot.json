@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:underwater-robot",
   "domain": "robotics",
-  "definition": "Underwater Robot is a robotics and autonomous systems concept and a type of robotics.",
+  "definition": "An Underwater Robot is a robotic platform designed to operate in aquatic environments, encompassing Remotely Operated Vehicles (ROVs) tethered for real-time control and Autonomous Underwater Vehicles (AUVs) executing pre-programmed or AI-guided missions. Applications include deep-sea scientific survey, offshore infrastructure inspection, marine conservation, and defence, with platforms rated from hundreds to thousands of metres depth.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-robot-type",
@@ -13,21 +13,48 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:robo-perception",
+        "label": "Perception and Sensing"
+      },
+      {
+        "id": "urn:ngm:class:robotics-control",
+        "label": "Robotics Control"
+      }
+    ],
     "requires": [],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:robotic-system",
+        "label": "Robotic System"
+      },
+      {
+        "id": "urn:ngm:class:robotics-platform",
+        "label": "Robotics Platform"
+      }
+    ]
   },
   "wikilinks": [
     {

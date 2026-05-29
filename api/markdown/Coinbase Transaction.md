@@ -66,9 +66,10 @@ public:: true
   "@id": "urn:ngm:class:coinbase-transaction",
   "@type": "Class",
   "label": "Coinbase Transaction",
-  "definition": "Block reward transaction within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "The first transaction in every blockchain block, created by the miner or block producer, that contains no inputs and issues the block reward plus accumulated transaction fees to the miner's address. Unlike regular transactions, the coinbase transaction has no sender; it creates new coins from protocol-defined issuance rules and serves as the primary mechanism by which new cryptocurrency enters circulation.",
   "domain": "blockchain",
   "maturity": "established",
+  "qualityScore": 0.8,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-protocol-and-consensus",
@@ -83,7 +84,28 @@ public:: true
       "label": "ConsensusProtocol"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:block-reward", "label": "Block Reward"},
+      {"@id": "urn:ngm:class:transaction-fee", "label": "Transaction Fee"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"},
+      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:mining", "label": "Mining"},
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:mining-reward", "label": "Mining Reward"},
+      {"@id": "urn:ngm:class:cryptocurrency", "label": "Cryptocurrency"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
+      {"@id": "urn:ngm:class:blockchain-protocol", "label": "Blockchain Protocol"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -149,17 +171,10 @@ public:: true
 
 
 - ### Definition
-  - Block reward transaction within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
-
-- ### Semantic Classification
-  - owl-class:: blockchain:CoinbaseTransaction
-  - owl-role:: Object
-  - owl-inferred:: blockchain:VirtualObject
-  - belongs-to-domain:: [[ConsensusDomain]]
-  - implemented-in-layer:: [[ProtocolLayer]]
+  The first transaction in every blockchain block, created by the miner or block producer with no inputs, that issues the block reward plus accumulated transaction fees to the miner's address. The coinbase transaction is the sole mechanism by which new cryptocurrency enters circulation according to protocol-defined issuance rules.
 
 - ### Relationships
-  - is-subclass-of:: [[Blockchain Entity]], [[ConsensusProtocol]]
+  The coinbase transaction **has part** Block Reward and Transaction Fee — these are the two components aggregated into the output value. It is **part of** Blockchain Transaction (as a special subtype) and the Blockchain Network ledger. It **requires** Mining (or equivalent block production) and a Consensus Mechanism to determine which miner earns it. It **enables** Mining Reward distribution and the ongoing supply of Cryptocurrency. It is **related to** Proof Of Work (where coinbase is mined) and Blockchain Protocol (which defines issuance schedules).
 
 - ### Content
 

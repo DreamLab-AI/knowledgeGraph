@@ -1,12 +1,14 @@
 - ### Definition
-  - Overview of Machine Learning Techniques is a concept within the ngm domain.
+  - A structured survey of the principal paradigms and architectures in machine learning, spanning supervised methods (SVMs, decision trees, logistic regression), unsupervised clustering (k-means, KNN), and deep learning approaches (neural networks, transformers, diffusion models, GANs). The survey contextualises training paradigms including reinforcement learning from human feedback and direct preference optimisation, and positions large proprietary language models within the broader ML taxonomy.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:OverviewOfMachineLearningTechniques
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart: [[Transformers]], [[Diffusion Models]], [[Generative Adversarial Networks]], [[Reinforcement Learning]], [[Direct Preference Optimization]]
+  - enables: [[Large Language Models]], [[Generative AI]]
+  - uses: [[Optimization Algorithms]], [[Neural Network]]
 
 - ### Content
   - #Public page

@@ -5,29 +5,92 @@
   "public": true,
   "classIri": "urn:ngm:class:soft-prompt-embedding",
   "domain": "artificial-intelligence",
-  "definition": "Continuous prompt representations learned during tuning.",
+  "definition": "Soft Prompt Embedding is a parameter-efficient fine-tuning technique in which a small set of continuous, learnable token vectors (soft prompts) are prepended to the model's input embedding sequence and optimised via gradient descent, conditioning a frozen large language model's behaviour without modifying its weights. Unlike discrete (hard) prompts composed of natural-language tokens, soft prompt embeddings exist solely in the continuous embedding space and have no direct human-interpretable form. This approach enables task-specific adaptation of large models at a fraction of the computational and storage cost of full fine-tuning.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
+      "id": "urn:ngm:class:parameter-efficient-fine-tuning",
+      "label": "Parameter-Efficient Fine-Tuning"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:token-embedding",
+        "label": "Token Embedding"
+      },
+      {
+        "id": "urn:ngm:class:parameter",
+        "label": "Parameter"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:embedding-model",
+        "label": "Embedding Model"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:instruction-tuning",
+        "label": "Instruction Tuning"
+      },
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:model-parameters",
+        "label": "Model Parameters"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:instruction-following",
+        "label": "Instruction Following"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:prompt-tuning",
+        "label": "Prompt Tuning"
+      },
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
+    ]
   },
   "wikilinks": [
     {

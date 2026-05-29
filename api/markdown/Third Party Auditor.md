@@ -48,7 +48,7 @@ public:: true
   "label": "Third Party Auditor",
   "definition": "An independent security firm or organization that conducts comprehensive reviews of smart contracts, blockchain protocols, and digital systems to identify vulnerabilities, ensure code quality, and verify compliance before deployment.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
@@ -59,6 +59,20 @@ public:: true
       "label": "Security Services"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
+      {"@id": "urn:ngm:class:vulnerability", "label": "Vulnerability"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:compliance-verification", "label": "Compliance Verification"},
+      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
@@ -109,6 +123,12 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Security Services]]
+  - requires [[Smart Contract]]
+  - requires [[Vulnerability]]
+  - enables [[Compliance Verification]]
+  - enables [[Audit Trail]]
+  - supports [[Blockchain]]
+  - supports [[Risk Assessment]]
 
 - ### Content
 

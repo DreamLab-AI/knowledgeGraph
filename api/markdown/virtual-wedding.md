@@ -8,6 +8,10 @@
 
 - ### Relationships
   - is-subclass-of:: [[Virtual Event]]
+  - Uses [[Avatar]], [[Metaverse Venue]], [[NFT]]
+  - Requires [[Virtual Reality Platform]], [[Avatar System]]
+  - Part of [[Metaverse Application]]
+  - Related to [[Social Platform]], [[Legal Framework]]
 
 - ### Content
 

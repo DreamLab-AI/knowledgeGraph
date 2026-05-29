@@ -46,7 +46,7 @@ public:: true
   "@id": "urn:ngm:class:autonomous-ai-agents",
   "@type": "Class",
   "label": "Autonomous AI Agents",
-  "definition": "Autonomous AI Agents is a type of AI Agent System in the artificial intelligence domain.",
+  "definition": "Autonomous AI Agents are intelligent software systems capable of independently perceiving their environment, reasoning over goals, planning multi-step action sequences, and executing tasks without continuous human intervention, typically powered by large language models or reinforcement learning. They differ from simpler AI tools by their ability to set sub-goals, call external tools, manage memory, and adapt dynamically to novel situations. Autonomous agents are increasingly deployed in enterprise workflows, research automation, customer service, and multi-agent collaborative systems.",
   "domain": "artificial-intelligence",
   "maturity": "emerging",
   "subClassOf": [
@@ -59,11 +59,32 @@ public:: true
       "label": "AI Agent System"
     }
   ],
-  "quality": 0.5,
+  "quality": 0.75,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:planning-and-scheduling", "label": "Planning and Scheduling"},
+      {"@id": "urn:ngm:class:reasoning", "label": "Reasoning"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"},
+      {"@id": "urn:ngm:class:multi-agent-systems", "label": "Multi-Agent Systems"},
+      {"@id": "urn:ngm:class:autonomous-agent", "label": "Autonomous Agent"},
+      {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
+      {"@id": "urn:ngm:class:workflow-automation", "label": "Workflow Automation"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
+      {"@id": "urn:ngm:class:explainability", "label": "Explainability"}
+    ]
   }
 }
 ```

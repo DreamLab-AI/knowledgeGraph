@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:serverless-architecture",
   "domain": "infrastructure",
-  "definition": "Serverless Architecture is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Serverless Architecture is a cloud execution model in which application logic is deployed as discrete, stateless functions that are provisioned and scaled automatically by the cloud provider in response to events, with billing proportional to actual execution time. By abstracting away server provisioning and capacity management, serverless architectures reduce operational overhead and enable fine-grained, event-driven compute patterns suited to metaverse backends, AI inference endpoints, and IoT data pipelines.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
@@ -13,20 +13,48 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "id": "urn:ngm:class:cloud-native-applications",
+        "label": "Cloud-Native Applications"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:computing-infrastructure",
+        "label": "Computing Infrastructure"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      },
+      {
+        "id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:software-infrastructure",
+        "label": "Software Infrastructure"
+      }
+    ],
     "relatedTo": []
   },
   "wikilinks": [],

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:data-access-interface",
   "domain": "infrastructure",
-  "definition": "Data Access Interface is a type of Infrastructure in the infrastructure domain.",
+  "definition": "A Data Access Interface is a formalised contract\u2014such as a REST API, GraphQL endpoint, or SPARQL query service\u2014that mediates structured access to data stores, registries, or knowledge graphs. It enforces authentication, authorisation, and schema validation, decoupling data consumers from underlying storage implementations. In metaverse and spatial computing contexts, data access interfaces expose asset repositories, user identity records, and scene graphs to applications and AI agents.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-data-management",
@@ -13,20 +13,48 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-interoperability",
+        "label": "Data Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:data-registry",
+        "label": "Data Registry"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
+      }
+    ],
     "relatedTo": []
   },
   "wikilinks": [

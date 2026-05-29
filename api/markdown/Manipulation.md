@@ -44,7 +44,7 @@ public:: true
   "label": "Manipulation",
   "definition": "Manipulation in robotics refers to the ability of robotic systems to physically interact with and control objects in their environment.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-actuation-and-control",
@@ -55,6 +55,19 @@ public:: true
       "label": "Robotics Systems"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
+      {"@id": "urn:ngm:class:inverse-kinematics", "label": "Inverse Kinematics"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:force-control", "label": "Force Control"},
+      {"@id": "urn:ngm:class:end-effector", "label": "End Effector"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:haptics", "label": "Haptics"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
@@ -100,6 +113,11 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Robotics Systems]]
+  - requires [[Motion Planning]]
+  - requires [[Inverse Kinematics]]
+  - uses [[Force Control]]
+  - uses [[End Effector]]
+  - relatedTo [[Haptics]]
 
 - ### Content
   Manipulation — content pending enrichment.

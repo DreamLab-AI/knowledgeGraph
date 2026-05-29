@@ -33,16 +33,30 @@ public:: true
   "@id": "urn:ngm:class:the-cognitive-revolution",
   "@type": "Class",
   "label": "The Cognitive Revolution",
-  "definition": "The Cognitive Revolution is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "The Cognitive Revolution describes the transformative societal shift driven by AI systems automating cognitive and knowledge work at scale, drawing analogy to the Industrial Revolution's mechanisation of physical labour. It encompasses the displacement of routine mental tasks—coding, content creation, data analysis—freeing human effort for higher-order creativity and judgement, whilst raising urgent questions about workforce adaptation and economic equity.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-research-area",
       "label": "AI Research Area"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:workforce-augmentation", "label": "Workforce Augmentation"},
+      {"@id": "urn:ngm:class:workflow-automation", "label": "Workflow Automation"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
+      {"@id": "urn:ngm:class:ai-adoption", "label": "AI Adoption"},
+      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:ai-impact-assessment", "label": "AI Impact Assessment"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -72,14 +86,16 @@ public:: true
 
 
 - ### Definition
-  - The Cognitive Revolution is a concept within the ngm domain.
+  The Cognitive Revolution describes the transformative societal shift driven by AI systems automating cognitive and knowledge work at scale, drawing analogy to the Industrial Revolution's mechanisation of physical labour. It encompasses the displacement of routine mental tasks—coding, content creation, data analysis—freeing human effort for higher-order creativity and judgement, whilst raising urgent questions about workforce adaptation and economic equity.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:TheCognitiveRevolution
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **enables**: Workforce Augmentation, Workflow Automation
+  - **relatedTo**: Generative AI, AI Adoption, AI Ethics
+  - **contrastsWith**: AI Impact Assessment
 
 - ### Content
   - Compare Ai to the industrial revolution (this need a rewrite to not be so AI supported)

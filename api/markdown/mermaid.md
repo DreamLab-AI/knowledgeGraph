@@ -33,15 +33,29 @@ public:: true
   "@id": "urn:ngm:class:mermaid",
   "@type": "Class",
   "label": "mermaid",
-  "definition": "mermaid is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A JavaScript-based diagramming-as-code tool that renders flowcharts, sequence diagrams, Gantt charts, entity-relationship diagrams, and other diagram types from plain-text markup embedded in Markdown documents. Mermaid is widely adopted in developer documentation workflows, enabling version-controllable, maintainable diagrams without external tooling. It integrates natively with platforms such as GitHub, GitLab, Notion, and Logseq.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:software-engineering", "label": "Software Engineering"},
+      {"@id": "urn:ngm:class:diagrams-as-code", "label": "Diagrams as Code"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
+      {"@id": "urn:ngm:class:ontology", "label": "Ontology"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -72,14 +86,16 @@ public:: true
 
 
 - ### Definition
-  - mermaid is a concept within the ngm domain.
+  - A JavaScript-based diagramming-as-code tool that renders flowcharts, sequence diagrams, Gantt charts, entity-relationship diagrams, and other diagram types from plain-text markup embedded in Markdown. Mermaid enables version-controllable diagrams without external tooling, integrating natively with GitHub, GitLab, Notion, and Logseq.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:Mermaid
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses:: [[Software Engineering]], [[Diagrams as Code]]
+  - enables:: [[Knowledge Graph]], [[Ontology]]
+  - relatedTo:: [[Knowledge Representation]]
 
 - ### Content
   - as and example

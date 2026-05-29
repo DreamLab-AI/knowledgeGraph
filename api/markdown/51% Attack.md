@@ -250,15 +250,32 @@ public:: true
   "@id": "urn:ngm:class:51-attack",
   "@type": "Class",
   "label": "51% Attack",
-  "definition": "Attack is a blockchain and distributed systems concept and a type of blockchain.",
+  "definition": "A 51% Attack is a consensus-layer attack on a Proof-of-Work blockchain in which a single entity or coalition controls more than half of the network's hash rate, enabling double-spending, transaction censorship, and chain reorganisation. The attack exploits the longest-chain rule: the attacker mines a private fork containing fraudulent transactions and, once it exceeds the honest chain in cumulative work, broadcasts it to override confirmed history.",
   "domain": "blockchain",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-protocol-and-consensus",
       "label": "Protocol and Consensus"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
+      {"@id": "urn:ngm:class:mining-pool", "label": "Mining Pool"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:double-spending", "label": "Double Spending"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"},
+      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:selfish-mining", "label": "Selfish Mining"},
+      {"@id": "urn:ngm:class:finality", "label": "Finality"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
@@ -555,7 +572,7 @@ public:: true
 
 
 - ### Definition
-  - 51% Attack is a concept within the bc domain.
+  - A 51% Attack is a consensus-layer attack on a Proof-of-Work blockchain where a single entity controlling more than half the network hash rate can double-spend, censor transactions, and reorganise the chain by replacing confirmed blocks with a longer private fork.
 
 - ### Semantic Classification
   - owl-class:: blockchain:FiftyOnePercentAttack
@@ -564,6 +581,13 @@ public:: true
 - ### Relationships
   - is-subclass-of:: [[Blockchain]]
   - bridges-to:: [[AI Energy Optimisation]]
+  - requires [[Proof-of-Work]]
+  - requires [[Mining Pool]]
+  - enables [[Double Spending]]
+  - contrastsWith [[Proof-of-Stake]]
+  - contrastsWith [[Byzantine Fault Tolerance]]
+  - relatedTo [[Selfish Mining]]
+  - relatedTo [[Finality]]
 
 - ### Content
   51% Attack refers to [[Majority attack]] on [[Proof-of-Work]] [[blockchain]] networks where a single entity or coalition controls more than 50% of the network's [[hash rate]], enabling [[double-spending]], [[transaction censorship]], and [[blockchain reorganization]].

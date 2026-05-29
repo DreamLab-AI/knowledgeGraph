@@ -42,16 +42,30 @@ public:: true
   "@id": "urn:ngm:class:underwater-robot",
   "@type": "Class",
   "label": "Underwater Robot",
-  "definition": "Underwater Robot is a robotics and autonomous systems concept and a type of robotics.",
+  "definition": "An Underwater Robot is a robotic platform designed to operate in aquatic environments, encompassing Remotely Operated Vehicles (ROVs) tethered for real-time control and Autonomous Underwater Vehicles (AUVs) executing pre-programmed or AI-guided missions. Applications include deep-sea scientific survey, offshore infrastructure inspection, marine conservation, and defence, with platforms rated from hundreds to thousands of metres depth.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-robot-type",
       "label": "Robot Type"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
+      {"@id": "urn:ngm:class:autonomous-system", "label": "Autonomous System"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:robo-perception", "label": "Perception and Sensing"},
+      {"@id": "urn:ngm:class:robotics-control", "label": "Robotics Control"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:robotic-system", "label": "Robotic System"},
+      {"@id": "urn:ngm:class:robotics-platform", "label": "Robotics Platform"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -87,6 +101,8 @@ public:: true
 
 
 - ### Definition
+  An Underwater Robot is a robotic platform designed to operate in aquatic environments, encompassing Remotely Operated Vehicles (ROVs) tethered for real-time control and Autonomous Underwater Vehicles (AUVs) executing pre-programmed or AI-guided missions. Applications include deep-sea scientific survey, offshore infrastructure inspection, marine conservation, and defence, with platforms rated from hundreds to thousands of metres depth.
+
   - ### Primary Definition
 
 - ### Semantic Classification
@@ -95,7 +111,9 @@ public:: true
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: Sensor Fusion, Autonomous System
+  - **hasPart**: Perception and Sensing, Robotics Control
+  - **relatedTo**: Robotic System, Robotics Platform
 
 - ### Content
   - ### Primary Definition

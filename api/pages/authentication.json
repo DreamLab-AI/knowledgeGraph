@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:authentication",
   "domain": "infrastructure",
-  "definition": "Authentication is the process of verifying the claimed identity of a user, device, or system, typically through credentials, cryptographic proofs, or biometric factors.",
+  "definition": "Authentication is the security process of verifying that a claimed identity \u2014 of a user, device, application, or service \u2014 is genuine before granting access to protected resources. It is distinct from authorisation, which determines what an authenticated principal is permitted to do. Authentication evidence takes the form of knowledge factors (passwords, PINs), possession factors (hardware tokens, mobile devices), inherence factors (biometrics), or cryptographic proofs (digital signatures, TLS client certificates). Modern secure systems require multiple independent factors (multi-factor authentication) to resist credential theft attacks.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-security-and-identity",
@@ -14,11 +14,29 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:single-sign-on",
+        "label": "Single Sign-On"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +45,12 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

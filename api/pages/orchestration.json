@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:orchestration",
   "domain": "infrastructure",
-  "definition": "Orchestration is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "The automated coordination, scheduling, and lifecycle management of containerised workloads, microservices, and distributed agents across heterogeneous infrastructure. In the context of metaverse and telecollaboration systems, orchestration\u2014exemplified by Kubernetes\u2014ensures that compute-intensive rendering, AI inference, and real-time communication services scale elastically and recover automatically from failures.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
@@ -13,18 +13,41 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": []

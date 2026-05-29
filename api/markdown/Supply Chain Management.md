@@ -48,7 +48,7 @@ public:: true
   "label": "Supply Chain Management",
   "definition": "Supply Chain Management in blockchain contexts refers to the application of distributed ledger technology for tracking, verifying, and managing the flow of goods, services, and information across supply networks.",
   "domain": "blockchain",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-network-component",
@@ -59,6 +59,20 @@ public:: true
       "label": "Blockchain Entity"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:provenance-tracking", "label": "Provenance Tracking"},
+      {"@id": "urn:ngm:class:provenance-verification", "label": "Provenance Verification"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:logistics-optimization", "label": "Logistics Optimization"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
@@ -109,9 +123,15 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Blockchain Entity]]
+  - uses:: [[Blockchain]]
+  - uses:: [[Smart Contract]]
+  - enables:: [[Provenance Tracking]]
+  - enables:: [[Provenance Verification]]
+  - relatedTo:: [[Logistics Optimization]]
+  - relatedTo:: [[Digital Twin]]
 
 - ### Content
-  Supply Chain Management — content pending enrichment.
+  Supply Chain Management in blockchain contexts applies distributed ledger technology to track the provenance, movement, and authenticity of goods across complex networks. Smart contracts automate contractual obligations — payment releases, quality-gate triggers, and compliance certifications — without intermediaries. Immutable ledger records provide end-to-end traceability, reducing fraud and enabling rapid recall responses. Digital twin integrations allow real-time monitoring of physical assets alongside their blockchain representations.
 
 - ### Provenance
   - sources::

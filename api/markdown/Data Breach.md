@@ -46,7 +46,7 @@ public:: true
   "@id": "urn:ngm:class:data-breach",
   "@type": "Class",
   "label": "Data Breach",
-  "definition": "Data Breach is a artificial intelligence concept and a type of Risk.",
+  "definition": "A Data Breach is a security incident in which sensitive, protected, or confidential data is accessed, disclosed, copied, transmitted, or destroyed by an unauthorised actor, whether through external attack, insider threat, or accidental exposure. In AI contexts, data breaches can compromise training datasets, model weights, inference outputs, or user interaction logs, triggering GDPR notification obligations (within 72 hours to supervisory authorities), regulatory penalties, and reputational damage. AI systems increase both the attack surface (by aggregating and processing large personal-data collections) and the potential for novel breach vectors such as model-inversion attacks and membership-inference attacks that reconstruct or identify individuals from model outputs without direct database access.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -59,7 +59,32 @@ public:: true
       "label": "Risk"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:security", "label": "Security"},
+      {"@id": "urn:ngm:class:vulnerability", "label": "Vulnerability"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:privacy", "label": "Privacy"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:membership-inference", "label": "Membership Inference"},
+      {"@id": "urn:ngm:class:model-inversion", "label": "Model Inversion"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"},
+      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"},
+      {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"},
+      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"},
+      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
+      {"@id": "urn:ngm:class:privacy-preserving-data-mining", "label": "Privacy Preserving Data Mining"},
+      {"@id": "urn:ngm:class:access-control", "label": "Access Control"}
+    ]
+  },
+  "qualityScore": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

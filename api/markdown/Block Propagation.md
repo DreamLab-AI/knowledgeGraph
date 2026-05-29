@@ -70,7 +70,7 @@ public:: true
   "@id": "urn:ngm:class:block-propagation",
   "@type": "Class",
   "label": "Block Propagation",
-  "definition": "Network block distribution within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "Block Propagation is the process by which a newly mined or validated block is broadcast across a blockchain peer-to-peer network so that all full nodes can update their local copy of the chain. Propagation latency directly influences the orphan/stale block rate, security against selfish mining, and the degree of centralisation pressure towards large, well-connected mining pools. Techniques such as Compact Block Relay (Bitcoin BIP 152) and Graphene reduce bandwidth requirements by sending block sketches rather than full transaction lists, exploiting the fact that recipient nodes already hold most transactions in their mempools.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -87,7 +87,32 @@ public:: true
       "label": "ConsensusProtocol"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"},
+      {"@id": "urn:ngm:class:full-node", "label": "Full Node"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
+      {"@id": "urn:ngm:class:blockchain-scalability", "label": "Blockchain Scalability"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:block-propagation-time", "label": "Block Propagation Time"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:block-time", "label": "Block Time"},
+      {"@id": "urn:ngm:class:block-size", "label": "Block Size"},
+      {"@id": "urn:ngm:class:mempool", "label": "Mempool"},
+      {"@id": "urn:ngm:class:miner", "label": "Miner"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:blockchain-protocol", "label": "Blockchain Protocol"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:light-node", "label": "Light Node"}
+    ]
+  },
+  "qualityScore": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -158,7 +183,7 @@ public:: true
 
 
 - ### Definition
-  - Network block distribution within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
+  Block Propagation is the process by which a newly mined or validated block is broadcast across a blockchain peer-to-peer network so that all full nodes can update their local copy of the chain. Propagation latency directly influences the orphan/stale block rate, security against selfish mining, and the degree of centralisation pressure towards large, well-connected mining pools. Compact Block Relay (Bitcoin BIP 152) and Graphene reduce bandwidth by sending block sketches rather than full transaction lists.
 
 - ### Semantic Classification
   - owl-class:: blockchain:BlockPropagation
@@ -168,8 +193,7 @@ public:: true
   - implemented-in-layer:: [[ProtocolLayer]]
 
 - ### Relationships
-  - is-subclass-of:: [[Blockchain Entity]], [[ConsensusProtocol]]
-  - bridges-to:: [[AI Energy Optimisation]]
+  Block Propagation **requires** a Blockchain Network of Full Nodes to relay data. It **enables** Consensus Mechanism convergence and underpins Blockchain Scalability efforts. It **has part** the measurable Block Propagation Time metric. It is **related to** Block Time (propagation delay must be far shorter than the inter-block interval), Block Size (larger blocks propagate more slowly), the Mempool (receiver nodes reconstruct blocks from cached transactions), and Miners who initiate propagation upon finding a valid block. It **depends on** the Blockchain Protocol gossip layer. It **contrasts with** Light Node operation, which receives block headers without verifying full propagation.
 
 - ### Content
 
@@ -208,30 +232,13 @@ public:: true
   )
       ```
 
-  - ## About Block Propagation
+  When a miner or validator produces a valid block, it must flood that block through the peer-to-peer gossip network as rapidly as possible. Every millisecond of delay increases the probability that another node discovers a competing block at the same height, creating a fork that the network must resolve by discarding one branch. The discarded branch's transactions return to the mempool and its miner's revenue is wasted, creating a strong economic incentive for fast propagation.
 
-  - Network block distribution within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
-  - ### Key Characteristics
-    - 1. **Definitional Property**: Core defining characteristic
-    - 2. **Functional Property**: Operational behavior
-    - 3. **Structural Property**: Compositional elements
-    - 4. **Security Property**: Security guarantees provided
-    - 5. **Performance Property**: Efficiency considerations
-  - ### Technical Components
-    - **Implementation**: How concept is realized technically
-    - **Verification**: Methods for validating correctness
-    - **Interaction**: Relationships with other components
-    - **Constraints**: Technical limitations and requirements
-  - ### Use Cases
-    - **1. Core Blockchain Operation**
-    - **Application**: Fundamental blockchain functionality
-    - **Example**: Practical implementation in major blockchains
-    - **Requirements**: Technical prerequisites
-    - **Benefits**: Value provided to blockchain systems
-  - ### Standards & References
-    - [[ISO/IEC 23257:2021]] - Blockchain and distributed ledger technologies
-    - [[IEEE 2418.1]] - Blockchain and distributed ledger technologies
-    - [[NIST NISTIR]] - Blockchain and distributed ledger technologies
+  Bitcoin's original block announcement protocol required sending the full block payload, wasting bandwidth on transactions the receiving peer already held. BIP 152 Compact Blocks (2016) addressed this by sending only short transaction identifiers; the receiver reconstructs the full block from its own mempool and requests only the small fraction of missing transactions. Graphene (a research proposal) further compresses the sketch using invertible Bloom lookup tables and Bloom filters, achieving compression ratios an order of magnitude better than Compact Blocks for typical mempool overlap.
+
+  The relationship between block size and propagation time has significant security consequences. In the selfish mining attack, a pool that propagates its blocks faster than competitors can withhold discovered blocks briefly to gain a head start on the next block, earning more than its fair share of rewards. Geographic concentration of miners around high-bandwidth data centres reduces average propagation times for those miners, creating centralisation pressure that undermines the decentralisation goals of proof-of-work chains.
+
+  Block propagation is a key variable in blockchain scalability research. Systems that tolerate high block frequencies (such as PHANTOM/GHOSTDAG DAG-based protocols) must propagate blocks before the next block arrives, requiring propagation to complete within seconds rather than the ten-minute Bitcoin interval. This imposes network topology constraints that large-scale deployments must carefully architect.
 
 - ### Provenance
   - sources:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]

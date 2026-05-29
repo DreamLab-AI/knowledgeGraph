@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:elliptic-curve-cryptography",
   "domain": "blockchain",
-  "definition": "ECC-based public-key system within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "A public-key cryptographic system based on the algebraic structure of elliptic curves over finite fields, providing strong security guarantees with shorter key lengths than RSA. ECC underpins digital signatures (ECDSA), key agreement (ECDH), and identity operations throughout blockchain infrastructure.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-cryptographic-primitive",
@@ -21,21 +21,61 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:private-key",
+        "label": "Private Key"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-security",
+        "label": "Cryptographic Security"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      },
+      {
+        "id": "urn:ngm:class:decentralization",
+        "label": "Decentralization"
+      }
+    ]
   },
   "wikilinks": [
     {

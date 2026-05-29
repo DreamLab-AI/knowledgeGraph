@@ -5,7 +5,10 @@
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires**: Conformity Assessment, Risk Management — providers must complete a conformity assessment and maintain a risk management system before placing high-risk AI systems on the market.
+  - **relatedTo**: Deployer, Market Surveillance Authority, Notified Body — providers interact with deployers downstream and are subject to oversight by market surveillance authorities and accredited notified bodies.
+  - **supports**: High Risk AI System — the provider bears the primary compliance obligations for high-risk AI systems throughout their lifecycle.
+  - **dependsOn**: AI Regulation — the provider role and its obligations are defined by and contingent on the applicable AI regulatory framework.
 - ### Content
   - A natural or legal person, public authority, agency or other body that develops an AI system or a general-purpose AI model, or that has an AI system or a general-purpose AI model developed, and places it on the market or puts the AI system into service under its own name or trademark, whether for payment or free of charge.
   ## Source

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:network-infrastructure",
   "domain": "infrastructure",
-  "definition": "Network Infrastructure is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Network Infrastructure comprises the physical and logical communication systems \u2014 fibre, wireless, routing, and switching equipment, alongside software-defined networking layers \u2014 that enable data transmission for real-time collaboration and distributed computing. Modern network infrastructure integrates 5G/6G wireless, SD-WAN, content delivery networks, and multi-access edge computing to support low-latency, high-bandwidth applications such as immersive XR experiences and autonomous systems.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-network-and-comms",
@@ -14,9 +14,18 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:network-component",
+        "label": "Network Component"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
     "requires": [],
     "enables": [],
     "dependsOn": [],
@@ -24,10 +33,28 @@
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:telecommunications-infrastructure",
+        "label": "Telecommunications Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

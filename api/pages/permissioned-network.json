@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:permissioned-network",
   "domain": "blockchain",
-  "definition": "Restricted access blockchain within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "A Permissioned Network is a distributed ledger architecture in which participation\u2014whether as a validator, transaction submitter, or read-only observer\u2014is restricted to entities that have been explicitly authorised by a governing body or membership protocol. Unlike public blockchains, nodes must satisfy identity verification, legal agreement, or technical credentialing requirements before joining, enabling stronger privacy guarantees, higher throughput, and deterministic finality than open networks while sacrificing censorship resistance. Permissioned networks are the dominant choice for enterprise and consortium deployments such as trade finance, healthcare data exchange, and central-bank digital currency infrastructure.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-network-component",
@@ -21,21 +21,71 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:validator-node",
+        "label": "Validator Node"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-compliance",
+        "label": "Blockchain Compliance"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:public-blockchain",
+        "label": "Public Blockchain"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:private-blockchain",
+        "label": "Private Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      }
+    ]
   },
   "wikilinks": [
     {

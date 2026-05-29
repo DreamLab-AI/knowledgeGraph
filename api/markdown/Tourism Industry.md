@@ -42,16 +42,30 @@ public:: true
   "@id": "urn:ngm:class:tourism-industry",
   "@type": "Class",
   "label": "Tourism Industry",
-  "definition": "Tourism Industry is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "The Tourism Industry encompasses the businesses, infrastructure, and services facilitating recreational and business travel, including accommodation, transport, attraction management, and destination marketing. In spatial computing contexts, it is a primary adopter of XR, virtual tourism, and location-based immersive experiences to enhance visitor engagement and extend reach beyond physical access.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:virtual-tourism", "label": "Virtual Tourism"},
+      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
+      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:cultural-heritage-xr-experience", "label": "Cultural Heritage XR Experience"},
+      {"@id": "urn:ngm:class:etsi-domain-application-tourism", "label": "ETSI Domain Application + Tourism"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:location-based-experience", "label": "Location Based Experience"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -87,14 +101,16 @@ public:: true
 
 
 - ### Definition
-  - Tourism Industry is a concept within the metaverse domain. Further enrichment pending.
+  The Tourism Industry encompasses the businesses, infrastructure, and services facilitating recreational and business travel, including accommodation, transport, attraction management, and destination marketing. In spatial computing contexts, it is a primary adopter of XR, virtual tourism, and location-based immersive experiences to enhance visitor engagement and extend reach beyond physical access.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:TourismIndustry
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: Virtual Tourism, Augmented Reality, Immersive Experience
+  - **relatedTo**: Cultural Heritage XR Experience, ETSI Domain Application + Tourism
+  - **enables**: Location Based Experience
 
 - ### Content
 

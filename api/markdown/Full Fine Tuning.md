@@ -42,9 +42,10 @@ public:: true
   "@id": "urn:ngm:class:full-fine-tuning",
   "@type": "Class",
   "label": "Full Fine Tuning",
-  "definition": "A fine-tuning approach that updates all parameters of a pre-trained model during adaptation to a downstream task. Full fine-tuning provides maximum flexibility and performance potential but requires substantial computational resources and memory.",
+  "definition": "A fine-tuning approach that updates all parameters of a pre-trained model during adaptation to a downstream task, requiring approximately four times the model's memory footprint to store weights, gradients, and optimiser states. Full fine-tuning provides maximum task-specific flexibility and sets the performance ceiling against which parameter-efficient alternatives such as LoRA are benchmarked, but creates a separate full-sized model copy per task.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
@@ -52,10 +53,26 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:fine-tuning",
-      "label": "Fine-Tuning"
+      "label": "Fine Tuning"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
+      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:continued-pre-training", "label": "Continued Pre Training"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"},
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:overfitting", "label": "Overfitting"},
+      {"@id": "urn:ngm:class:early-stopping", "label": "Early Stopping"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -99,7 +116,13 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires** [[Large Language Models]] — full fine-tuning is most commonly applied to large pre-trained language models
+  - **requires** [[Transfer Learning]] — full fine-tuning is a transfer learning strategy adapting all model weights
+  - **contrastsWith** [[Continued Pre Training]] — CPT uses unsupervised objectives; FFT adapts with labelled task data
+  - **uses** [[Gradient Descent]] — all parameters are updated via gradient descent during fine-tuning
+  - **uses** [[Deep Learning]] — full fine-tuning operates on deep neural network architectures
+  - **relatedTo** [[Overfitting]] — small task datasets risk catastrophic forgetting and task-specific overfitting
+  - **relatedTo** [[Early Stopping]] — early stopping is a key regularisation strategy during full fine-tuning
 
 - ### Content
   - A fine-tuning approach that updates all parameters of a pre-trained model during adaptation to a downstream task. Full fine-tuning provides maximum flexibility and performance potential but requires substantial computational resources and memory.

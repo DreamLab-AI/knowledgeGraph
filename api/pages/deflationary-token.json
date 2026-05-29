@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:deflationary-token",
   "domain": "blockchain",
-  "definition": "Decreasing supply token within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "A Deflationary Token is a cryptocurrency or blockchain token whose total circulating supply decreases over time through one or more programmatic burning mechanisms\u2014such as transaction fee burns, scheduled buyback-and-burn events, or protocol-level token destruction\u2014creating supply-side scarcity intended to exert upward price pressure and incentivise long-term holding.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-token-and-asset",
@@ -21,7 +21,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
@@ -29,13 +29,57 @@
     "enables": [],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:inflationary-token",
+        "label": "Inflationary Token"
+      },
+      {
+        "id": "urn:ngm:class:native-token",
+        "label": "Native Token"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:burning-mechanism",
+        "label": "Burning Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:supply-cap",
+        "label": "Supply Cap"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:token-economics-domain",
+        "label": "Token Economics Domain"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      },
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-economics",
+        "label": "Blockchain Economics"
+      },
+      {
+        "id": "urn:ngm:class:transaction-fee",
+        "label": "Transaction Fee"
+      }
+    ]
   },
   "wikilinks": [
     {

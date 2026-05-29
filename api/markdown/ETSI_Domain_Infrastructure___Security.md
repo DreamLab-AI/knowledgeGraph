@@ -46,16 +46,33 @@ public:: true
   "@id": "urn:ngm:class:etsi-domain-infrastructure-security",
   "@type": "Class",
   "label": "ETSI_Domain_Infrastructure___Security",
-  "definition": "ETSI infrastructure security framework safeguarding immersive digital environments through distributed network functions, identity management enhancements, and privacy-preserving mechanisms tailored for metaverse and edge computing applications.",
+  "definition": "ETSI infrastructure security domain safeguarding metaverse and edge computing environments through NFV architectural frameworks, cross-domain authentication standards, and decentralised identity systems. It addresses multi-party trust models, privacy-preserving mechanisms, and security lifecycle management coordinated with 3GPP and ITU-T for ultra-edge and terminal-edge deployments.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-security-and-identity",
       "label": "Security and Identity"
     }
   ],
-  "quality": 0.4,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:identity-management", "label": "Identity Management"},
+      {"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:decentralized-identity-did", "label": "Decentralized Identity (DID)"},
+      {"@id": "urn:ngm:class:quantum-network-node", "label": "Quantum Network Node"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:security-framework", "label": "Security Framework"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:privacy-preserving-technology", "label": "Privacy Preserving Technology"},
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -104,7 +121,10 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires**: Identity Management, Cryptographic Protocol — security depends on robust identity verification and cryptographic primitives
+  - **enables**: Decentralized Identity (DID), Quantum Network Node — the framework enables decentralised trust and quantum-secure communications
+  - **uses**: Security Framework — implements ETSI NFV and cross-domain authentication standards
+  - **relatedTo**: Privacy Preserving Technology, Data Governance — aligned with privacy-by-design principles and EU regulatory compliance
 
 - ### Content
   - The ETSI Infrastructure Security domain protects metaverse systems through distributed security frameworks, cryptographic mechanisms, identity management, and privacy controls ensuring resilient, trustworthy operation across decentralised networks.

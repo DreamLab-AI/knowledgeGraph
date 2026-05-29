@@ -66,7 +66,7 @@ public:: true
   "@id": "urn:ngm:class:collision-resistance",
   "@type": "Class",
   "label": "Collision Resistance",
-  "definition": "Hash function security property within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "A security property of a cryptographic hash function asserting that it is computationally infeasible to find two distinct inputs that produce the same output digest. Collision resistance underpins the integrity guarantees of Merkle trees, digital signatures, and proof-of-work puzzles, and its absence would allow adversaries to forge blocks or certificates.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -77,13 +77,26 @@ public:: true
     {
       "@id": "urn:ngm:class:blockchain-entity",
       "label": "Blockchain Entity"
-    },
-    {
-      "@id": "urn:ngm:class:cryptographic-primitive",
-      "label": "CryptographicPrimitive"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"},
+      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
+      {"@id": "urn:ngm:class:preimage-resistance", "label": "Preimage Resistance"},
+      {"@id": "urn:ngm:class:keccak-256", "label": "Keccak-256"},
+      {"@id": "urn:ngm:class:sha-256", "label": "SHA-256"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"},
+      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
+      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:bc-cryptographic-primitive", "label": "Cryptographic Primitive"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

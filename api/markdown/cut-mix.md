@@ -7,7 +7,10 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **partOf**: Data Augmentation Strategies (CutMix is one specialised technique within the broader augmentation family)
+  - **requires**: Training Data (patch-cutting operates on existing labelled image datasets)
+  - **enables**: Adversarial Robustness, Computer Vision (improved generalisation and localisation accuracy)
+  - **uses**: Deep Learning (applied within neural network training loops)
 
 - ### Content
   - A data augmentation technique that creates training examples by cutting and pasting patches between images, with labels mixed proportionally to the patch areas. CutMix improves model robustness and localisation ability by forcing attention to less discriminative regions.

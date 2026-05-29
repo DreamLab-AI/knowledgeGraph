@@ -7,6 +7,9 @@
 
 - ### Relationships
   - bridges-to:: [[Blockchain]]
+  - has-part:: [[Consensus Domain]], [[Cryptographic Domain]], [[Blockchain Process]]
+  - requires:: [[Cryptographic Primitive]], [[Consensus Mechanism]]
+  - enables:: [[Blockchain Application]], [[Blockchain Governance]]
 
 - ### Content
   - **Classification**

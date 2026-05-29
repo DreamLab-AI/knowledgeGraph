@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:social-network-graph",
   "domain": "spatial-computing",
-  "definition": "Social Network Graph is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "A graph-theoretic representation of social relationships in which nodes denote individuals or entities and edges encode interactions, follows, or trust links. Social network graphs underpin recommendation systems, community detection, influence analysis, and decentralised identity federation protocols such as Nostr and ActivityPub.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -13,21 +13,48 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:identity-federation",
+        "label": "Identity Federation"
+      },
+      {
+        "id": "urn:ngm:class:virtual-community-platform",
+        "label": "Virtual Community Platform"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:nostr-protocol",
+        "label": "Nostr Protocol"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:federation-surface",
+        "label": "Federation Surface"
+      }
+    ]
   },
   "wikilinks": [
     {

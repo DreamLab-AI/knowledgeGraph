@@ -5,21 +5,35 @@
   "public": true,
   "classIri": "urn:ngm:class:time-synchronisation",
   "domain": "infrastructure",
-  "definition": "The process of coordinating clocks across distributed systems to maintain a consistent notion of time, typically via protocols such as NTP or PTP.",
+  "definition": "Time synchronisation is the process of aligning the clocks of networked devices to a common reference so that distributed computations, transactions, and logs share a consistent temporal frame. It is achieved through hierarchical protocols such as the Network Time Protocol (NTP), which provides millisecond-level accuracy over the internet, and the Precision Time Protocol (PTP / IEEE 1588), which achieves sub-microsecond accuracy within local networks using hardware timestamping. Accurate time synchronisation is foundational to consensus algorithms, cryptographic certificate validation, distributed transaction ordering, and real-time control systems.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-network-and-comms",
-      "label": "Infra Network and Comms"
+      "label": "Network and Communication"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:consensus-protocol",
+        "label": "Consensus Protocol"
+      },
+      {
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
@@ -27,7 +41,16 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:network-synchronization",
+        "label": "Network Synchronization"
+      },
+      {
+        "id": "urn:ngm:class:timestamp",
+        "label": "Timestamp"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

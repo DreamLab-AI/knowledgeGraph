@@ -234,9 +234,10 @@ public:: true
   "@id": "urn:ngm:class:fatfrecommendations",
   "@type": "Class",
   "label": "FATFRecommendations",
-  "definition": "The comprehensive international standards established by the Financial Action Task Force (FATF)—an intergovernmental policy-making body founded at the July 1989 G7 Summit in Paris comprising 40 member jurisdictions and 2 regional organizations coordinating with 9 FATF-Style Regional Bodies (FSRBs...",
+  "definition": "The FATF Recommendations are the comprehensive international standards established by the Financial Action Task Force—an intergovernmental body founded in 1989 comprising 40 member jurisdictions—for combating money laundering, terrorist financing, and proliferation financing, covering customer due diligence, suspicious transaction reporting, record-keeping, and the regulation of virtual asset service providers through Recommendation 15 and the Travel Rule. They constitute the primary global anti-financial-crime framework that national regulators translate into domestic law, creating compliance obligations for financial institutions and cryptocurrency exchanges.",
   "domain": "blockchain",
   "maturity": "established",
+  "qualityScore": 0.8,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-governance-and-regulation",
@@ -247,7 +248,33 @@ public:: true
       "label": "AML KYC Compliance"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:anti-money-laundering", "label": "Anti-Money Laundering"},
+      {"@id": "urn:ngm:class:travel-rule", "label": "Travel Rule"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"},
+      {"@id": "urn:ngm:class:compliance-monitoring", "label": "Compliance Monitoring"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"},
+      {"@id": "urn:ngm:class:blockchain-compliance", "label": "Blockchain Compliance"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:virtual-asset", "label": "Virtual Asset"},
+      {"@id": "urn:ngm:class:cryptocurrency", "label": "Cryptocurrency"},
+      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
+      {"@id": "urn:ngm:class:blockchain-compliance", "label": "Blockchain Compliance"},
+      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -531,7 +558,12 @@ public:: true
   - belongs-to-domain:: [[BlockchainDomain]], [[RegulatoryDomain]], [[ComplianceDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires:: [[Anti-Money Laundering]], [[Travel Rule]]
+  - hasPart:: [[Compliance Framework]], [[Compliance Monitoring]]
+  - uses:: [[Risk Assessment]], [[Blockchain Compliance]]
+  - relatedTo:: [[Virtual Asset]], [[Cryptocurrency]], [[Decentralised Finance]], [[Blockchain Compliance]], [[Regulatory Compliance]]
+  - standardizedBy:: [[Financial Regulation]]
+  - enables:: [[Blockchain Governance]]
 
 - ### Content
   - The Financial Action Task Force (FATF) Recommendations represent the most comprehensive and influential global standards for combating money laundering, terrorist financing, and the financing of proliferation of weapons of mass destruction. Originally established in 1989 by the G7 Summit in Paris, the FATF has evolved from a temporary initiative into the premier international standard-setting body for [[Anti-Money Laundering]] (AML) and [[Counter-Terrorist Financing]] (CTF) compliance. The Recommendations, initially numbering 40 with an additional 9 Special Recommendations on terrorist financing added after September 11, 2001, were consolidated and revised in 2012 into a unified set of 40 Recommendations that apply to both money laundering and terrorist financing. These standards have been adopted by over 200 jurisdictions worldwide and form the foundation for national AML/CTF legislation across the globe. For the [[Blockchain]] and [[Cryptocurrency]] industry, the FATF Recommendations gained particular significance following the October 2018 amendments that explicitly addressed [[Virtual Assets]] and Virtual Asset Service Providers (VASPs), bringing digital assets firmly within the scope of traditional financial crime compliance frameworks. The June 2019 Interpretive Note to Recommendation 15 introduced the controversial "travel rule" requiring VASPs to share originator and beneficiary information for [[Virtual Asset]] transfers, fundamentally challenging the pseudonymous nature of blockchain transactions. The FATF standards are not legally binding international law but exert tremendous practical force through peer pressure, mutual evaluations, and the threat of being listed as a non-cooperative jurisdiction, which can result in financial isolation. The cryptocurrency industry's struggle to implement these standards whilst preserving innovation and privacy has become one of the defining regulatory challenges of the blockchain era, with ongoing tensions between compliance obligations and the technological capabilities of decentralised systems.

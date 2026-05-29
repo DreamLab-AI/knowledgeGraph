@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:quaternion-math",
   "domain": "spatial-computing",
-  "definition": "Quaternion Math is a spatial computing concept and a type of spatial-computing.",
+  "definition": "Quaternion Math is the application of Hamilton's four-dimensional number system (q = w + xi + yj + zk) to represent and interpolate 3D rotations and orientations in spatial computing. Quaternions avoid gimbal lock inherent to Euler angles, enable smooth spherical linear interpolation (SLERP), and are computationally efficient for composing rotations in real-time rendering engines, robotics kinematics, and XR head-tracking pipelines.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -13,21 +13,52 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:animation-technique",
+        "label": "Animation Technique"
+      },
+      {
+        "id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:rendering-technique",
+        "label": "Rendering Technique"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:physics-engine",
+        "label": "Physics Engine"
+      },
+      {
+        "id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      },
+      {
+        "id": "urn:ngm:class:vr-rendering-engine",
+        "label": "VR Rendering Engine"
+      },
+      {
+        "id": "urn:ngm:class:xr-hardware",
+        "label": "XR Hardware"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": []

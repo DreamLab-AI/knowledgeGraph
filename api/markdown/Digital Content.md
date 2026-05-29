@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:digital-content",
   "@type": "Class",
   "label": "Digital Content",
-  "definition": "Digital Content is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Digital Content encompasses any information or media encoded in digital form, including text, images, audio, video, 3D models, and interactive experiences. Within spatial computing platforms, digital content is the primary artefact that users create, exchange, and monetise, often represented as NFTs or other digital assets with embedded provenance.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
@@ -60,6 +61,36 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:digital-content-creation",
+        "label": "Digital Content Creation"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:digital-asset-management",
+        "label": "Digital Asset Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      },
+      {
+        "@id": "urn:ngm:class:nft",
+        "label": "NFT"
+      }
+    ]
   }
 }
 ```
@@ -96,7 +127,7 @@ public:: true
 
 
 - ### Definition
-  - Digital Content is a concept within the metaverse domain. Further enrichment pending.
+  - Digital Content encompasses any information or media encoded in digital form, including text, images, audio, video, 3D models, and interactive experiences. Within spatial computing platforms, digital content is the primary artefact that users create, exchange, and monetise, often represented as NFTs or other digital assets with embedded provenance.
 
 bridges-to:: [[Computer Vision]]
 
@@ -105,7 +136,11 @@ bridges-to:: [[Computer Vision]]
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Has Part [[Digital Asset]]
+  - Enables [[Digital Content Creation]]
+  - Uses [[Digital Asset Management]]
+  - Related To [[Content Moderation]]
+  - Related To [[NFT]]
 
 - ### Content
 

@@ -62,12 +62,14 @@ public:: true
   "@id": "urn:ngm:class:edge-ai-accelerator",
   "@type": "Class",
   "label": "Edge AI Accelerator",
-  "definition": "Specialized hardware designed to run AI inference workloads locally on edge devices, optimized for low power consumption and real-time performance without cloud connectivity.",
+  "definition": "Specialised silicon or programmable hardware designed to execute AI inference workloads directly on edge or IoT devices, without routing data to the cloud. Designs prioritise energy efficiency, low latency, and a small physical footprint while sustaining the throughput demanded by real-time computer vision, natural language processing, and sensor fusion tasks. Representative architectures include neural processing units (NPUs), purpose-built ASICs, FPGAs configured for neural-network dataflows, and neuromorphic chips that mimic sparse spiking computation.",
   "domain": "artificial-intelligence",
   "maturity": "emerging",
+  "qualityScore": 0.75,
+  "quality": 0.75,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:cat-ai-infrastructure",
+      "@id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure (Category)"
     },
     {
@@ -75,18 +77,42 @@ public:: true
       "label": "AI Hardware"
     }
   ],
-  "quality": 0.35,
-  "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
-  },
   "sameAs": [
     {
       "@id": "urn:ngm:class:edge-ai-accelerators",
       "label": "Edge AI Accelerators"
     }
-  ]
+  ],
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:ai-hardware", "label": "AI Hardware"},
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:inference", "label": "Inference"},
+      {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
+      {"@id": "urn:ngm:class:object-detection", "label": "Object Detection"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:fpga", "label": "FPGA"},
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"},
+      {"@id": "urn:ngm:class:embedded-systems", "label": "Embedded Systems"},
+      {"@id": "urn:ngm:class:neuromorphic-computing", "label": "Neuromorphic Computing"},
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}
+    ]
+  },
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 
@@ -154,7 +180,24 @@ public:: true
   - bridges-to:: [[Autonomous Robot]], [[Digital Twin]]
 
 - ### Content
-  Edge AI Accelerator — content pending enrichment.
+
+  ## Overview
+
+  Edge AI accelerators are purpose-built compute units that run neural-network inference workloads on or near the data source — in cameras, smartphones, industrial sensors, autonomous vehicles, and IoT gateways — without the latency, bandwidth cost, or privacy exposure of round-tripping data to the cloud. They typically implement fixed-function matrix-multiply engines, sparse-activation units, or spiking neural network substrates, and are paired with on-chip SRAM to minimise off-chip memory bandwidth.
+
+  ## Key Architecture Families
+
+  - **NPUs (Neural Processing Units)**: Dedicated tensor engines integrated into SoCs (Apple Neural Engine, Qualcomm Hexagon, Google Edge TPU). Offer 1–10 TOPS at sub-1W budgets.
+  - **FPGAs**: Reconfigurable fabric enabling custom dataflows for evolving model architectures. Common in industrial and medical edge deployments.
+  - **Neuromorphic chips**: Event-driven, spiking designs (Intel Loihi, BrainScaleS) for ultra-low-power always-on sensing and anomaly detection.
+  - **Microcontroller-class MCUs with ML extensions**: ARM Cortex-M with CMSIS-NN; targets TinyML workloads like keyword spotting under 1 mW.
+
+  ## Applications
+
+  - Real-time object detection and scene understanding for autonomous robots and drones.
+  - On-device natural language processing for voice interfaces without cloud dependency.
+  - Predictive maintenance in industrial IoT through continuous sensor fusion.
+  - Digital twin synchronisation at the network edge, reducing core-network load.
 
 - ### Provenance
   - sources:: [[Edge Computing]], [[AI Hardware]]

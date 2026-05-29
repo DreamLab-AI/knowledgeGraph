@@ -8,6 +8,10 @@
 
 - ### Relationships
   - is-subclass-of:: [[XR Hardware]]
+  - **enables**: Immersive Experience, Virtual Reality, Augmented Reality — XR devices are the physical hardware that renders and delivers immersive content to users.
+  - **uses**: Haptic Feedback, Motion Tracking — these peripheral capabilities are integral to XR device interaction loops.
+  - **supports**: Human Computer Interaction — XR devices constitute a novel modality of HCI.
+  - **partOf**: Metaverse — XR devices are the primary access point through which users inhabit metaverse environments.
 
 - ### Content
 

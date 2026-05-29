@@ -1,12 +1,17 @@
 - ### Definition
-  - Pre Production is a concept within the metaverse domain. Further enrichment pending.
+  - Pre-production is the planning and preparation phase of a creative or software project that occurs before active content creation or development commences. It encompasses conceptual design, narrative structuring, technical specification, asset planning, and prototyping activities that reduce risk and align stakeholder expectations in film, game, and metaverse content pipelines.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:PreProduction
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Enables [[Digital Content Creation]]
+  - Enables [[Virtual Environment Creation]]
+  - Uses [[Creative Tools]]
+  - Uses [[Content Production Workflow]]
+  - Related to [[Game Development]]
+  - Related to [[Film Production]]
 
 - ### Content
 

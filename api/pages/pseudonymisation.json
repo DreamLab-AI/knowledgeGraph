@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:pseudonymisation",
   "domain": "artificial-intelligence",
-  "definition": "Pseudonymisation is a data protection technique defined in GDPR Article 4(5) as processing personal data such that it can no longer be attributed to a specific data subject without additional information, which is kept separately under technical and organizational measures preventing re-identific...",
+  "definition": "Pseudonymisation is a data de-identification technique, defined in GDPR Article 4(5), that processes personal data such that it can no longer be attributed to a specific data subject without additional information held separately under technical and organisational safeguards. It replaces direct identifiers\u2014names, national identification numbers, email addresses\u2014with pseudonyms such as tokens, encrypted identifiers, or keyed hashes, preserving data utility for analytics and machine learning while reducing but not eliminating re-identification risk. Unlike full anonymisation, pseudonymisation is reversible by an authorised party holding the supplementary mapping or key material.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -13,21 +13,69 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-minimisation",
+        "label": "Data Minimisation"
+      },
+      {
+        "id": "urn:ngm:class:privacy-preserving-data-mining",
+        "label": "Privacy Preserving Data Mining"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
+      },
+      {
+        "id": "urn:ngm:class:ai-fairness",
+        "label": "AI Fairness"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      },
+      {
+        "id": "urn:ngm:class:k-anonymity-in-datasets",
+        "label": "k-Anonymity in Datasets"
+      },
+      {
+        "id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      },
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy By Design"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -8,6 +8,12 @@
 
 - ### Relationships
   - is-subclass-of:: [[Technical Standards]]
+  - Standardized By: [[Iso Standards]]
+  - Requires: [[Environmental Assessment]]
+  - Supports: [[Environmental Sustainability]]
+  - Supports: [[Circular Economy]]
+  - Related To: [[Carbon Accounting]]
+  - Related To: [[Blockchain Sustainability]]
 
 - ### Content
 

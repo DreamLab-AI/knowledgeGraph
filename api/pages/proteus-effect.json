@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:proteus-effect",
   "domain": "spatial-computing",
-  "definition": "Proteus Effect is a spatial computing concept and a type of Metaverse.",
+  "definition": "The Proteus Effect is the phenomenon whereby the visual characteristics of a user's digital avatar unconsciously shape that user's own behaviour, attitudes, and self-perception within virtual environments. Named after the shape-shifting Greek deity, it was empirically demonstrated by Yee and Bailenson (2007): users assigned taller or more attractive avatars exhibited corresponding shifts in confidence and social openness, while users embodying outgroup avatars showed reduced implicit bias. The effect arises through the intersection of self-perception theory, stereotype activation, and embodied cognition, and has direct implications for therapeutic applications, metaverse platform design, and ethical avatar-assignment practices.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -17,12 +17,30 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      },
+      {
+        "id": "urn:ngm:class:virtual-environment",
+        "label": "Virtual Environment"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:behavioral-modeling",
+        "label": "Behavioral Modeling"
+      },
+      {
+        "id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -31,7 +49,24 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:social-presence",
+        "label": "Social Presence"
+      },
+      {
+        "id": "urn:ngm:class:vr-psychology",
+        "label": "VR Psychology"
+      },
+      {
+        "id": "urn:ngm:class:embodied-ai",
+        "label": "Embodied AI"
+      },
+      {
+        "id": "urn:ngm:class:avatar-customization",
+        "label": "Avatar Customization"
+      }
+    ]
   },
   "wikilinks": [
     {

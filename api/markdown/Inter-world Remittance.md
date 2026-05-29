@@ -54,16 +54,33 @@ public:: true
   "@id": "urn:ngm:class:inter-world-remittance",
   "@type": "Class",
   "label": "Inter-world Remittance",
-  "definition": "Inter-world Remittance is a blockchain and distributed systems concept and a type of Blockchain.",
+  "definition": "The transfer of economic value, digital currency, or tokenised assets across distinct virtual worlds, metaverse platforms, or between virtual and physical economies via blockchain bridges, smart-contract escrow, or centralised exchange mechanisms. Inter-world remittance enables labour mobility, cross-platform portfolio management, and arbitrage within interconnected digital economies.",
   "domain": "blockchain",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-defi-and-economics",
       "label": "DeFi and Economics"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:blockchain-interoperability", "label": "Blockchain Interoperability"},
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:virtual-currency", "label": "Virtual Currency"},
+      {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:virtual-economy", "label": "Virtual Economy"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:tokenisation", "label": "Tokenisation"},
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -126,7 +143,10 @@ public:: true
   - owl-role:: Concept
 
 - ### Relationships
-  - is-subclass-of:: [[Blockchain]]
+  - **requires**: [[Blockchain Interoperability]], [[Smart Contract]]
+  - **uses**: [[Virtual Currency]], [[Digital Asset]]
+  - **partOf**: [[Virtual Economy]]
+  - **relatedTo**: [[Tokenisation]], [[Blockchain]]
 
 - ### Content
 

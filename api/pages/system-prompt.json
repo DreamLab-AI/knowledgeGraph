@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:system-prompt",
   "domain": "artificial-intelligence",
-  "definition": "A structured instruction block provided to a language model at inference time to establish context, persona, constraints, and behavioural guidelines before any user input is processed.",
+  "definition": "A system prompt is a structured instruction block injected into the context window of a large language model at the start of an inference session to establish operational context, persona, tool descriptions, safety constraints, and behavioural guidelines before any user turn is processed. Unlike user messages, system prompts are typically authored by operators rather than end users and govern the model's allowed behaviours, response style, and tool-use policy throughout the session. In multi-agent and agentic AI systems, system prompts serve as the primary mechanism for role specialisation, safety guardrail enforcement, and task decomposition.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -14,11 +14,25 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +41,20 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:prompt-injection",
+        "label": "Prompt Injection"
+      },
+      {
+        "id": "urn:ngm:class:chain-of-thought",
+        "label": "Chain of Thought"
+      },
+      {
+        "id": "urn:ngm:class:self-consistency",
+        "label": "Self-Consistency"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

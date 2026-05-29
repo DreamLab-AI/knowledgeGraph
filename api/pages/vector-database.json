@@ -5,20 +5,34 @@
   "public": true,
   "classIri": "urn:ngm:class:vector-database",
   "domain": "artificial-intelligence",
-  "definition": "A vector database is a specialised data store optimised for indexing and querying high-dimensional embedding vectors using approximate nearest-neighbour algorithms for similarity search.",
+  "definition": "A vector database is a specialised data storage and retrieval system optimised for indexing and querying high-dimensional dense vectors (embeddings) using approximate nearest-neighbour (ANN) search algorithms such as HNSW, IVF-PQ, and ScaNN. These systems support efficient similarity search over millions to billions of embedding vectors representing text, images, or multimodal content, enabling retrieval-augmented generation, semantic search, and recommendation at scale. Vector databases typically provide filtering on structured metadata in conjunction with vector similarity, persistence, and versioning capabilities beyond what generic ANN libraries offer.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:embedding-model",
+        "label": "Embedding Model"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +41,20 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:nearest-neighbor-search",
+        "label": "Nearest Neighbor Search"
+      },
+      {
+        "id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:search-index",
+        "label": "Search Index"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

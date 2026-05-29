@@ -1,5 +1,5 @@
 - ### Definition
-  - ### Primary Definition
+  - **Torque** is the rotational equivalent of linear force — a moment acting about a joint axis that accelerates or decelerates a robot link according to Newton's second law for rotation (τ = Iα). In manipulator control, joint torque commands are computed from the robot's dynamic model (rb 0022) using inertia, Coriolis, and gravity terms, then realised by servo motors and actuators.
 
 - ### Semantic Classification
   - owl-class:: robotics:rb0043torque
@@ -7,7 +7,9 @@
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Closely coupled to inertia (rb 0041): higher inertia requires greater torque for the same acceleration (rb 0045).
+  - Measured by force-torque sensors (rb 0067) for compliant control and collision detection.
+  - Computed and commanded by computed-torque control (rb 0064) and optimal control frameworks (rb 0060).
 
 - ### Content
   - ### Primary Definition

@@ -42,7 +42,7 @@ public:: true
   "@id": "urn:ngm:class:user-privacy-control",
   "@type": "Class",
   "label": "User Privacy Control",
-  "definition": "A user privacy control component in the Artificial Intelligence domain that enables RightToBeForgotten.",
+  "definition": "User privacy controls are interface and systemic mechanisms that allow individuals to view, modify, restrict, or delete their personal data held by an AI or data-driven system. They operationalise data subject rights such as the right to be forgotten, consent withdrawal, and data portability mandated by regulations like GDPR. Effective privacy controls combine technical enforcement — such as deletion pipelines and audit trails — with accessible user interfaces.",
   "domain": "artificial-intelligence",
   "maturity": "emerging",
   "subClassOf": [
@@ -55,11 +55,36 @@ public:: true
       "label": "Privacy Mechanism"
     }
   ],
-  "quality": 0.35,
+  "quality": 0.75,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:right-to-be-forgotten", "label": "Right to Be Forgotten"},
+      {"@id": "urn:ngm:class:data-minimisation", "label": "Data Minimisation"},
+      {"@id": "urn:ngm:class:transparency", "label": "Transparency"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:consent-management", "label": "Consent Management"},
+      {"@id": "urn:ngm:class:gdpr-compliance", "label": "GDPR Compliance"},
+      {"@id": "urn:ngm:class:access-control", "label": "Access Control"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy By Design"},
+      {"@id": "urn:ngm:class:privacy-framework", "label": "Privacy Framework"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"},
+      {"@id": "urn:ngm:class:algorithmic-accountability", "label": "Algorithmic Accountability"},
+      {"@id": "urn:ngm:class:privacy-impact-assessment", "label": "Privacy Impact Assessment"},
+      {"@id": "urn:ngm:class:user-interface", "label": "User Interface"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:personal-data-store", "label": "Personal Data Store"}
+    ]
   }
 }
 ```
@@ -101,7 +126,9 @@ public:: true
   - is-subclass-of:: [[Privacy Mechanism]]
 
 - ### Content
-  UserPrivacyControl — content pending enrichment.
+  User privacy controls manifest as preference centres, consent dashboards, data-download portals, and account-deletion flows. They must be technically backed by deletion pipelines capable of propagating removal requests across all replicated and derived stores, including model fine-tuning checkpoints.
+
+  Regulatory frameworks such as GDPR (Articles 17, 20) and the UK Data Protection Act impose enforceable timelines for honouring subject access and erasure requests. AI systems that incorporate personal data in training must additionally consider whether model unlearning techniques are required to fully honour such requests.
 
 - ### Provenance
   - sources:: Generated from bridge validation

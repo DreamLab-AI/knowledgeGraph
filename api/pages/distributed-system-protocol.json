@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:distributed-system-protocol",
   "domain": "infrastructure",
-  "definition": "Distributed System Protocol is a technology infrastructure concept and a type of Protocol Layer.",
+  "definition": "A Distributed System Protocol defines the communication and coordination mechanisms enabling distributed nodes to achieve collective functionality through standardised message formats, state synchronisation procedures, and failure recovery mechanisms. Such protocols underpin blockchain networks, peer-to-peer systems, and consensus-based infrastructure through gossip dissemination, leader election, distributed hash tables, and inter-node authentication channels.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-network-and-comms",
@@ -17,21 +17,53 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      }
+    ],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:consensus-protocol",
+        "label": "Consensus Protocol"
+      },
+      {
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      }
+    ],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      },
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      }
+    ]
   },
   "wikilinks": [
     {

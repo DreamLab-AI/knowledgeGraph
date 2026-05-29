@@ -1,12 +1,18 @@
 - ### Definition
-  - RecommendationEngine is a concept within the ngm domain.
+  - A recommendation engine is a system that filters, ranks, and surfaces content or items most relevant to an individual user by analysing preferences, behaviour history, and contextual signals. It employs collaborative filtering, content-based filtering, or hybrid deep-learning approaches to personalise discovery at scale across e-commerce, media, and metaverse platforms.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:RecommendationEngine
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses [[Machine Learning]]
+  - Uses [[Embedding Model]]
+  - Enables [[Predictive Personalization]]
+  - Enables [[Information Retrieval]]
+  - Depends on [[Deep Learning]]
+  - Depends on [[Data Pipeline]]
+  - Related to [[Search Technology]]
 
 - ### Content
   # RecommendationEngine

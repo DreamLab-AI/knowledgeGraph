@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:portal-system",
   "domain": "spatial-computing",
-  "definition": "Portal System is a spatial computing concept and a type of spatial-computing.",
+  "definition": "A spatial computing mechanism that enables instantaneous traversal between distinct virtual locations, worlds, or platform environments, rendering a visual aperture through which users can see and enter the destination, thereby facilitating cross-world navigation and interoperability in metaverse platforms.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -13,21 +13,48 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:virtual-world-traversal",
+        "label": "Virtual World Traversal"
+      },
+      {
+        "id": "urn:ngm:class:cross-platform-interoperability",
+        "label": "Cross-Platform Interoperability"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:virtual-location",
+        "label": "Virtual Location"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:metaverse-navigation-systems",
+        "label": "Metaverse Navigation Systems"
+      },
+      {
+        "id": "urn:ngm:class:virtual-environment",
+        "label": "Virtual Environment"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

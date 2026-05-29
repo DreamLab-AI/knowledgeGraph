@@ -8,7 +8,7 @@
   "definition": "The systematic and ongoing observation, measurement, and analysis of an artificial intelligence system's behaviour, performance, inputs, outputs, and impacts during operational use, employing automated tools and human oversight to detect degradation, anomalies, bias, safety issues, or unintended ...",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure (Category)"
     },
     {

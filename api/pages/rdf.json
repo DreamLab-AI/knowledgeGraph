@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:rdf",
   "domain": "infrastructure",
-  "definition": "The Resource Description Framework (RDF) is a W3C standard data model for representing and exchanging information on the Web as subject-predicate-object triples forming a directed graph.",
+  "definition": "The Resource Description Framework (RDF) is a W3C-standardised graph data model in which all statements are expressed as subject\u2013predicate\u2013object triples, where each component is identified by an IRI or, for literal values, a typed or language-tagged string. RDF triples compose into directed, labelled graphs that can be serialised in multiple syntaxes including Turtle, N-Triples, JSON-LD, and RDF/XML, and queried via the SPARQL query language. As the foundational layer of the Semantic Web and Linked Data ecosystems, RDF enables machine-readable knowledge representation that supports federated querying, ontological reasoning with OWL, and interoperability across heterogeneous data sources through shared vocabularies and namespace URIs.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-data-management",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      },
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:web-standard",
+        "label": "Web Standard"
+      }
+    ],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      },
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

@@ -7,6 +7,9 @@
 
 - ### Relationships
   - is-subclass-of:: [[owl:Thing]]
+  - uses: [[Logic Programming]], [[Machine Learning]]
+  - enables: [[Deep Learning]], [[AI-Augmented Software Engineering]]
+  - relatedTo: [[Symbolic AI]], [[Software Engineering]]
 
 - ### Content
 

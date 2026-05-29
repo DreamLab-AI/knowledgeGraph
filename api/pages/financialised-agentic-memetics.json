@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:financialised-agentic-memetics",
   "domain": "artificial-intelligence",
-  "definition": "Financialised Agentic Memetics is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "The phenomenon in which AI agents and autonomous social actors propagate memetic content\u2014ideas, tokens, political positions\u2014tied to speculative financial instruments (memecoins, programmatically-aligned tokens) that derive value from attention and community adoption rather than underlying utility. This creates feedback loops between AI terminal outputs, social media virality, and tokenised capital allocation with tangible real-world effects.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-application",
@@ -13,21 +13,53 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:carbon-credit-token",
+        "label": "Carbon Credit Token"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:crypto-token",
+        "label": "Crypto Token"
+      },
+      {
+        "id": "urn:ngm:class:social-token-economy",
+        "label": "Social Token Economy"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "id": "urn:ngm:class:dao",
+        "label": "DAO"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      }
+    ]
   },
   "wikilinks": [
     {

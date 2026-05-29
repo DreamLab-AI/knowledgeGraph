@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:information-retrieval",
   "domain": "spatial-computing",
-  "definition": "Information Retrieval is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Information Retrieval (IR) is the discipline and set of techniques for finding relevant documents, passages, or facts from a corpus in response to a query. Modern IR systems employ inverted indices, vector embeddings, and semantic search to match queries against large-scale knowledge bases and document collections. In spatial computing, IR underpins context-aware search, knowledge graph querying, and retrieval-augmented generation pipelines that ground AI responses in factual content.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-standards-and-interop",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:search-engine",
+        "label": "Search Engine"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ]
   },
   "wikilinks": [
     {

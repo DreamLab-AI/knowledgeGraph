@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:banodoco",
   "domain": "spatial-computing",
-  "definition": "Banodoco is a spatial computing concept and a type of spatial-computing.",
+  "definition": "Banodoco is a community platform focused on open-source AI video generation, bringing together model architects, fine-tuners, engineers, and artists to advance controllable creative AI. It serves as a coordination space for collaborative development of video diffusion models and related tooling under a shared artistic mission.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -14,20 +14,44 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:open-source-ai",
+        "label": "Open-Source AI"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:video-generation",
+        "label": "Video Generation"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -70,9 +70,10 @@ public:: true
   "@id": "urn:ngm:class:double-spending",
   "@type": "Class",
   "label": "Double Spending",
-  "definition": "Fraudulent duplicate payment within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "Double spending is the fraudulent attempt to spend the same digital asset more than once by broadcasting conflicting transactions to different parts of a blockchain network before they are confirmed. It represents the fundamental security problem that consensus mechanisms are designed to prevent in distributed ledger systems.",
   "domain": "blockchain",
   "maturity": "established",
+  "qualityScore": 0.8,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-protocol-and-consensus",
@@ -87,7 +88,29 @@ public:: true
       "label": "NetworkComponent"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
+      {"@id": "urn:ngm:class:transaction-finality", "label": "Transaction Finality"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:attack-vector", "label": "Attack Vector"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:finality", "label": "Finality"},
+      {"@id": "urn:ngm:class:transaction-confirmation", "label": "Transaction Confirmation"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:sybil-attack", "label": "Sybil Attack"},
+      {"@id": "urn:ngm:class:selfish-mining", "label": "Selfish Mining"},
+      {"@id": "urn:ngm:class:eclipse-attack", "label": "Eclipse Attack"},
+      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"},
+      {"@id": "urn:ngm:class:cryptographic-signature", "label": "Cryptographic Signature"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -158,7 +181,7 @@ public:: true
 
 
 - ### Definition
-  - Fraudulent duplicate payment within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
+  Double spending is the fraudulent attempt to spend the same digital asset more than once by broadcasting conflicting transactions to different parts of a blockchain network before they are confirmed. It represents the fundamental security problem that consensus mechanisms are designed to prevent in distributed ledger systems.
 
 - ### Semantic Classification
   - owl-class:: blockchain:DoubleSpending
@@ -168,9 +191,8 @@ public:: true
   - implemented-in-layer:: [[SecurityLayer]]
 
 - ### Relationships
-  - is-subclass-of:: [[Blockchain Entity]], [[NetworkComponent]]
+  Double Spending requires a functioning [[Consensus Mechanism]] and [[Transaction Finality]] to be prevented. It enables [[Attack Vector]] scenarios and is closely related to [[Selfish Mining]], [[Sybil Attack]], and [[Eclipse Attack]] as complementary adversarial strategies. Successful double-spend attacks undermine [[Transaction Confirmation]] guarantees. [[Cryptographic Signature]] schemes make undetected double-spending of individual outputs cryptographically infeasible; the attack instead relies on network-level race conditions.
 
-  - bridges-to:: [[AI Agent System]] (ai)
 - ### Content
 
   ## Class Declaration
@@ -208,30 +230,17 @@ public:: true
   )
       ```
 
-  - ## About Double Spending
+  #### Attack Mechanics
+  In a double-spend attempt, an attacker sends a transaction to a merchant and simultaneously—or shortly after—broadcasts a conflicting transaction returning the same funds to an address they control. If the attacker can ensure their conflicting transaction is included in the canonical chain (e.g., by commanding sufficient hash power in a 51% attack, or by exploiting propagation delays), the first transaction is orphaned and the merchant's payment reversed.
 
-  - Fraudulent duplicate payment within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
-  - ### Key Characteristics
-    - 1. **Definitional Property**: Core defining characteristic
-    - 2. **Functional Property**: Operational behavior
-    - 3. **Structural Property**: Compositional elements
-    - 4. **Security Property**: Security guarantees provided
-    - 5. **Performance Property**: Efficiency considerations
-  - ### Technical Components
-    - **Implementation**: How concept is realized technically
-    - **Verification**: Methods for validating correctness
-    - **Interaction**: Relationships with other components
-    - **Constraints**: Technical limitations and requirements
-  - ### Use Cases
-    - **1. Core Blockchain Operation**
-    - **Application**: Fundamental blockchain functionality
-    - **Example**: Practical implementation in major blockchains
-    - **Requirements**: Technical prerequisites
-    - **Benefits**: Value provided to blockchain systems
-  - ### Standards & References
-    - [[ISO/IEC 23257:2021]] - Blockchain and distributed ledger technologies
-    - [[IEEE 2418.1]] - Blockchain and distributed ledger technologies
-    - [[NIST NISTIR]] - Blockchain and distributed ledger technologies
+  #### Prevention Mechanisms
+  The primary defence is waiting for sufficient block confirmations before considering a transaction final—six blocks is the conventional standard for Bitcoin. Byzantine Fault Tolerant consensus systems eliminate probabilistic finality entirely by requiring a supermajority vote before a block is committed, making double-spending cryptographically impossible once a block is finalised. Payment channels and Layer 2 networks introduce additional on-chain anchors that make double-spending off-chain transactions detectable and punishable.
+
+  #### Relationship to Network Attacks
+  Double spending is closely intertwined with Eclipse Attack (isolating nodes to control their view of the chain) and Partition Attack (splitting the network into disconnected subgraphs). Both network-level attacks can be used to facilitate double spending by preventing honest nodes from seeing the conflicting transaction until after the malicious branch is established. Selfish Mining can also increase the probability of a successful double spend by enabling an attacker to build a private chain advantage.
+
+  #### Economic Considerations
+  The cost of a successful double-spend attack is bounded by the expense of achieving network dominance (hash power or stake) multiplied by the probability of success, weighed against the value of assets spent. High-value transactions therefore warrant longer confirmation windows. Networks with lower total hash rate or stake are more vulnerable, motivating the design of Hybrid Consensus schemes that add BFT finality to proof-based chains.
 
 - ### Provenance
   - sources:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]

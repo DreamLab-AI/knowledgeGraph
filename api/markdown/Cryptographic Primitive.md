@@ -70,9 +70,11 @@ public:: true
   "@id": "urn:ngm:class:cryptographic-primitive",
   "@type": "Class",
   "label": "Cryptographic Primitive",
-  "definition": "The fundamental building blocks of cryptography upon which more complex cryptographic algorithms, protocols, and systems are constructed.",
+  "definition": "The fundamental atomic building blocks of all cryptographic systems — including hash functions, symmetric and asymmetric ciphers, digital signatures, and key exchange protocols — each providing specific, well-defined security guarantees. Primitives are insufficient alone and must be combined in higher-level cryptographic protocols to satisfy multiple security requirements such as confidentiality, integrity, authentication, and non-repudiation. Correct selection and composition of primitives is the foundational concern of applied cryptography.",
   "domain": "blockchain",
   "maturity": "emerging",
+  "qualityScore": 0.75,
+  "quality": 0.75,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-cryptographic-primitive",
@@ -83,7 +85,33 @@ public:: true
       "label": "Cryptography"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"},
+      {"@id": "urn:ngm:class:symmetric-encryption", "label": "Symmetric Encryption"},
+      {"@id": "urn:ngm:class:asymmetric-encryption", "label": "Asymmetric Encryption"},
+      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
+      {"@id": "urn:ngm:class:key-derivation-function", "label": "Key Derivation Function"},
+      {"@id": "urn:ngm:class:random-number-generation", "label": "Random Number Generation"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"},
+      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
+      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"},
+      {"@id": "urn:ngm:class:secure-multi-party-computation", "label": "Secure Multi-Party Computation"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:elliptic-curve-cryptography", "label": "Elliptic Curve Cryptography"},
+      {"@id": "urn:ngm:class:post-quantum-cryptography", "label": "Post-Quantum Cryptography"},
+      {"@id": "urn:ngm:class:key-management", "label": "Key Management"},
+      {"@id": "urn:ngm:class:homomorphic-encryption", "label": "Homomorphic Encryption"},
+      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"},
+      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:link-preview",
   "domain": "infrastructure",
-  "definition": "Link Preview is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Link Preview is a web infrastructure technique that fetches and parses Open Graph metadata, title, description, and thumbnail from a target URL to generate a rich card preview for display in social feeds, chat applications, or note-taking tools. APIs and Python libraries such as linkpreview and URLMeta automate this extraction, enabling knowledge graphs and collaborative platforms to surface contextual summaries alongside raw hyperlinks.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
@@ -14,7 +14,7 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,11 +23,29 @@
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:user-interface",
+        "label": "User Interface"
+      },
+      {
+        "id": "urn:ngm:class:social-media",
+        "label": "social media"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": []

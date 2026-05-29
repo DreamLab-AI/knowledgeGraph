@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:virtual-scouting",
   "@type": "Class",
   "label": "Virtual Scouting",
-  "definition": "The process of exploring and evaluating potential filming locations or virtual production environments using digital tools, VR headsets, 360-degree cameras, and game engines, enabling filmmakers to navigate through locations remotely, compose shots, set up scene blocking, and make creative decisi...",
+  "definition": "The process of exploring and evaluating potential filming locations or virtual production environments using digital tools — VR headsets, 360-degree cameras, LiDAR, and game engines — enabling directors and cinematographers to navigate locations remotely, compose shots, analyse lighting, and make blocking decisions without physical travel. Tools within Unreal Engine provide measurement, interaction, and real-time world-building capabilities compatible with major VR headsets, substantially reducing pre-production travel costs and carbon footprint.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
@@ -59,7 +60,24 @@ public:: true
       "label": "Pre-Production"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
+      {"@id": "urn:ngm:class:photogrammetry", "label": "Photogrammetry"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"},
+      {"@id": "urn:ngm:class:virtual-camera", "label": "Virtual Camera"},
+      {"@id": "urn:ngm:class:motion-capture", "label": "Motion Capture"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:virtual-production-workflow", "label": "Virtual Production Workflow"},
+      {"@id": "urn:ngm:class:virtual-production", "label": "Virtual Production"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:pre-production", "label": "Pre Production"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -109,6 +127,10 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Pre-Production]]
+  - requires:: [[Virtual Reality]], [[Photogrammetry]]
+  - uses:: [[Game Engine]], [[Virtual Camera]], [[Motion Capture]]
+  - enables:: [[Virtual Production Workflow]], [[Virtual Production]]
+  - partOf:: [[Pre Production]]
 
 - ### Content
 

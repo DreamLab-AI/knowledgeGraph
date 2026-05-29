@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:rb-0028-forward-kinematics",
   "domain": "robotics",
-  "definition": "forward kinematics is a robotics and autonomous systems concept and a type of Kinematics.",
+  "definition": "Forward kinematics (FK) is the mathematical process of computing the position and orientation of a robot's end effector in Cartesian space given a known set of joint angles or displacements. Using a chain of homogeneous transformation matrices (typically expressed using Denavit-Hartenberg parameters), FK provides a unique, computationally deterministic mapping from joint space to task space. It is used in motion planning, visualisation, and safety monitoring to determine where the robot tool tip is at any instant, and underpins workspace analysis, collision checking, and trajectory verification.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
@@ -17,21 +17,61 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:rb-0026-robot-joint",
+        "label": "rb 0026 robot joint"
+      },
+      {
+        "id": "urn:ngm:class:rb-0072-encoder",
+        "label": "rb 0072 encoder"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:rb-0049-motion-planning",
+        "label": "rb 0049 motion planning"
+      },
+      {
+        "id": "urn:ngm:class:rb-0052-collision-avoidance",
+        "label": "rb 0052 collision avoidance"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:rb-0029-inverse-kinematics",
+        "label": "rb 0029 inverse kinematics"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rb-0021-robot-kinematics",
+        "label": "rb 0021 robot kinematics"
+      },
+      {
+        "id": "urn:ngm:class:rb-0030-jacobian-matrix",
+        "label": "rb 0030 jacobian matrix"
+      },
+      {
+        "id": "urn:ngm:class:rb-0031-singularity",
+        "label": "rb 0031 singularity"
+      },
+      {
+        "id": "urn:ngm:class:rb-0024-workspace",
+        "label": "rb 0024 workspace"
+      }
+    ]
   },
   "wikilinks": [
     {

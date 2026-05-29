@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:procedural-content",
   "domain": "spatial-computing",
-  "definition": "Procedural Content is a spatial computing concept and a type of spatial-computing.",
+  "definition": "Digital content\u2014terrain, architecture, textures, narrative events, or game levels\u2014generated algorithmically from rules and random seeds rather than authored by hand. Procedural content enables scalable world-building in metaverse and gaming contexts by producing combinatorially vast, non-repetitive environments at runtime whilst reducing manual asset creation effort.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -13,21 +13,52 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:procedural-content-generation",
+        "label": "Procedural Content Generation"
+      },
+      {
+        "id": "urn:ngm:class:adaptive-virtual-world",
+        "label": "Adaptive Virtual World"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:procedural-generation",
+        "label": "Procedural Generation"
+      },
+      {
+        "id": "urn:ngm:class:algorithm",
+        "label": "Algorithm"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "id": "urn:ngm:class:3-d-asset",
+        "label": "3D Asset"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-content-pipeline",
+        "label": "Metaverse Content Pipeline"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

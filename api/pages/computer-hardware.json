@@ -5,29 +5,61 @@
   "public": true,
   "classIri": "urn:ngm:class:computer-hardware",
   "domain": "artificial-intelligence",
-  "definition": "Computer Hardware for AI refers to the physical computing components optimized for artificial intelligence workloads, particularly neural network training and inference.",
+  "definition": "Physical computing components optimised for artificial intelligence and spatial computing workloads, encompassing GPUs, TPUs, FPGAs, ASICs, and neuromorphic chips. Modern AI hardware emphasises parallel matrix processing, high-bandwidth memory, mixed-precision arithmetic, and energy-efficient inference at scale, enabling both large-model training and real-time rendering in immersive applications.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure (Category)"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "id": "urn:ngm:class:training",
+        "label": "Training"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -1,5 +1,6 @@
 - ### Definition
   - ### Primary Definition
+  **Tactile Sensing** refers to the robotic ability to detect, measure, and interpret contact forces, surface textures, pressure distribution, and slip events through distributed sensor arrays embedded in robot surfaces or end-effectors. Tactile data supplements vision and proprioception, enabling safe physical interaction with humans and unstructured environments.
 
 - ### Semantic Classification
   - owl-class:: robotics:TactileSensing
@@ -7,7 +8,10 @@
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses pressure sensors, force-torque sensors, and capacitive/piezoelectric skins.
+  - Enables protective stops (contact-triggered halts) and haptic feedback in teleoperation.
+  - Feeds into sensor fusion pipelines that combine tactile, visual, and proprioceptive streams.
+  - Critical for safe power-and-force-limiting collaborative operation per ISO/TS 15066.
 
 - ### Content
   - ### Primary Definition

@@ -7,7 +7,11 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses [[Loss Function]]
+  - Uses [[Training]]
+  - Enables [[Regularisation]]
+  - Contrasts With [[Overfitting]]
+  - Related To [[Deep Learning]]
 
 - ### Content
   - A regularisation technique that replaces hard one-hot labels with soft targets by allocating small probability mass to incorrect classes. Label smoothing prevents overconfident predictions and improves model calibration and generalisation.

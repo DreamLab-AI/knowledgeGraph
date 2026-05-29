@@ -42,16 +42,33 @@ public:: true
   "@id": "urn:ngm:class:momentum-contrast",
   "@type": "Class",
   "label": "Momentum Contrast",
-  "definition": "A contrastive learning framework that maintains a large and consistent dictionary of encoded samples using a momentum-updated encoder, enabling effective contrastive learning with many negatives. MoCo provides stable comparison targets through the momentum encoder.",
-  "domain": "spatial-computing",
-  "maturity": "draft",
+  "definition": "A self-supervised contrastive learning framework (MoCo) that maintains a dynamically updated queue of encoded negative samples and a momentum encoder — updated as an exponential moving average of the query encoder — to provide large, consistent dictionaries for contrastive loss computation without requiring large batch sizes.",
+  "domain": "artificial-intelligence",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:contrastive-learning", "label": "Contrastive Learning"},
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
+      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
+      {"@id": "urn:ngm:class:training-data", "label": "Training Data"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:supervised-learning", "label": "Supervised Learning"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -95,7 +112,13 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses** [[Contrastive Learning]] — MoCo is a specific instantiation of contrastive self-supervised learning
+  - **uses** [[Deep Learning]] — relies on deep convolutional or transformer encoders
+  - **enables** [[Computer Vision]] — pretrained MoCo representations transfer effectively to downstream vision tasks
+  - **enables** [[Transfer Learning]] — MoCo-trained encoders are fine-tuned on labelled downstream datasets
+  - **dependsOn** [[Neural Network]] — both the query and momentum encoders are neural networks
+  - **dependsOn** [[Training Data]] — requires large unlabelled image or text corpora for pretraining
+  - **contrastsWith** [[Supervised Learning]] — MoCo learns without manual labels, using the data itself as supervision signal
 
 - ### Content
   - A contrastive learning framework that maintains a large and consistent dictionary of encoded samples using a momentum-updated encoder, enabling effective contrastive learning with many negatives. MoCo provides stable comparison targets through the momentum encoder.

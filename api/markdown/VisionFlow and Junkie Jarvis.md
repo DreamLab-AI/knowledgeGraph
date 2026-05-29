@@ -38,15 +38,32 @@ public:: true
   "@id": "urn:ngm:class:vision-flow-and-junkie-jarvis",
   "@type": "Class",
   "label": "VisionFlow and Junkie Jarvis",
-  "definition": "VisionFlow and Junkie Jarvis is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "VisionFlow is a GPU-accelerated, Rust-backed collaborative platform for real-time 3D knowledge graph visualisation and human-AI agent orchestration on private datasets, integrating Claude Flow MCP for spawning specialised agents. Junkie Jarvis refers to the integrated AI orchestration layer enabling multi-agent task delegation within the VisionFlow environment.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
+      {"@id": "urn:ngm:class:model-context-protocol", "label": "Model Context Protocol"},
+      {"@id": "urn:ngm:class:scene-graph", "label": "Scene Graph"},
+      {"@id": "urn:ngm:class:physics-simulation", "label": "Physics Simulation"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:agent", "label": "Agent"},
+      {"@id": "urn:ngm:class:knowledge-management", "label": "Knowledge Management"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:authentication", "label": "Authentication"},
+      {"@id": "urn:ngm:class:encryption", "label": "Encryption"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -83,14 +100,16 @@ public:: true
 
 
 - ### Definition
-  - VisionFlow and Junkie Jarvis is a concept within the ngm domain.
+  - VisionFlow is a GPU-accelerated, Rust-backed collaborative platform for real-time 3D knowledge graph visualisation and human-AI agent orchestration on private datasets, integrating Claude Flow MCP for spawning specialised agents. Junkie Jarvis refers to the integrated AI orchestration layer enabling multi-agent task delegation within the VisionFlow environment.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:VisionFlowAndJunkieJarvis
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **Uses**: [[Knowledge Graph]], [[Model Context Protocol]], [[Scene Graph]], [[Physics Simulation]]
+  - **Enables**: [[Agent]] orchestration, [[Knowledge Management]] workflows
+  - **Requires**: [[Authentication]] (Nostr-based decentralised identity), [[Encryption]] (AES-256/TLS 1.3)
 
 - ### Content
   - [[VisionFlow Client]]

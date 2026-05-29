@@ -1,12 +1,16 @@
 - ### Definition
-  - CollaborationPlatform is a concept within the ngm domain.
+  - A Collaboration Platform is an integrated software infrastructure that unifies communication channels, content management, workflow automation, and coordination tools to support distributed teamwork. Contemporary platforms combine real-time messaging, video conferencing, shared workspaces, and third-party integration ecosystems within API-first architectures.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:CollaborationPlatform
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Enables [[Augmented Reality Collaboration]] by providing the communication substrate
+  - Enables [[Digital Twin Collaboration]] for shared virtual model review
+  - Uses [[Edge Computing]] for low-latency media processing
+  - Bridges to [[Metaverse and Telecollaboration]] as spatial extensions of collaboration
+  - Related to [[XR Meeting Space]] as an immersive collaboration modality
 
 - ### Content
 

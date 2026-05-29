@@ -42,7 +42,7 @@ public:: true
   "@id": "urn:ngm:class:nft-ownership-proof",
   "@type": "Class",
   "label": "NFT Ownership Proof",
-  "definition": "Cryptographic proof of NFT ownership.",
+  "definition": "Cryptographic mechanism by which blockchain state verifiably establishes that a specific wallet address holds title to a non-fungible token, enabling trustless transfer of digital asset ownership without intermediaries, underpinning digital rights management, access control, and provenance verification in NFT ecosystems.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -51,7 +51,26 @@ public:: true
       "label": "Token and Asset"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:public-key", "label": "Public Key"},
+      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
+      {"@id": "urn:ngm:class:cryptographic-verification", "label": "Cryptographic Verification"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:nft", "label": "NFT"},
+      {"@id": "urn:ngm:class:non-fungible-token-nft", "label": "Non-Fungible Token (NFT)"},
+      {"@id": "urn:ngm:class:erc-721", "label": "ERC-721"},
+      {"@id": "urn:ngm:class:nft-marketplace", "label": "NFT Marketplace"},
+      {"@id": "urn:ngm:class:royalty-distribution", "label": "Royalty Distribution"},
+      {"@id": "urn:ngm:class:digital-rights-management", "label": "Digital Rights Management"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:vr-psychology",
   "domain": "spatial-computing",
-  "definition": "VR Psychology is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "VR Psychology is the scientific study of how virtual reality environments affect human cognition, perception, emotion, behaviour, and wellbeing. It encompasses research into presence, embodiment, cybersickness, avatar effects, and therapeutic applications of immersive virtual environments, informing the design of XR systems that are psychologically safe and effective.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -14,7 +14,7 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,11 +23,37 @@
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:immersion",
+        "label": "Immersion"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:presence",
+        "label": "Presence"
+      },
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      },
+      {
+        "id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      }
+    ]
   },
   "wikilinks": [
     {

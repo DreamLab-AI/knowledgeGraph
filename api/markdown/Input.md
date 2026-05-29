@@ -66,9 +66,10 @@ public:: true
   "@id": "urn:ngm:class:input",
   "@type": "Class",
   "label": "Input",
-  "definition": "Transaction funding source within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "In the UTXO blockchain model, an Input is a reference to a previous unspent transaction output that is being consumed to fund a new transaction. Each input includes a pointer to the referenced output, a cryptographic signature proving ownership, and an unlocking script that satisfies the output's locking conditions.",
   "domain": "blockchain",
   "maturity": "established",
+  "qualityScore": 0.8,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-protocol-and-consensus",
@@ -83,7 +84,29 @@ public:: true
       "label": "DistributedDataStructure"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
+      {"@id": "urn:ngm:class:cryptographic-keys", "label": "Cryptographic Keys"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:transaction", "label": "Transaction"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:utxo-model", "label": "UTXO Model"},
+      {"@id": "urn:ngm:class:output", "label": "Output"},
+      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"},
+      {"@id": "urn:ngm:class:transaction-fee", "label": "Transaction Fee"},
+      {"@id": "urn:ngm:class:double-spending", "label": "Double Spending"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:account-model", "label": "Account Model"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:cryptographic-signature", "label": "Cryptographic Signature"},
+      {"@id": "urn:ngm:class:merkle-proof", "label": "Merkle Proof"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

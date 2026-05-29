@@ -33,15 +33,32 @@ public:: true
   "@id": "urn:ngm:class:conceptual-layer",
   "@type": "Class",
   "label": "Conceptual Layer",
-  "definition": "The ConceptualLayer represents the abstraction level of pure concepts, theoretical models, principles, and design patterns that are independent of specific technical implementations or realizations.",
+  "definition": "The Conceptual Layer represents the highest abstraction level in an ontological classification system, encompassing pure concepts, theoretical models, design principles, and logical frameworks that are independent of specific technical implementations. Concepts at this layer can be realised through multiple concrete approaches while retaining their essential semantic properties.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
+  "relations": {
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:protocol-layer", "label": "Protocol Layer"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
+      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:software-architecture", "label": "Software Architecture"},
+      {"@id": "urn:ngm:class:system-architecture", "label": "System Architecture"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:ontology-structure", "label": "Ontology Structure"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -79,7 +96,10 @@ public:: true
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - contrasts-with:: [[Protocol Layer]] (implementation-specific vs. implementation-agnostic)
+  - supports:: [[Ontology]], [[Knowledge Representation]]
+  - related-to:: [[Software Architecture]], [[System Architecture]]
+  - has-part:: [[Ontology Structure]]
 
 - ### Content
   - **Classification**

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:rigid-body-dynamics",
   "domain": "infrastructure",
-  "definition": "Rigid Body Dynamics is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Rigid Body Dynamics is a branch of classical mechanics that models objects as non-deformable solids, computing motion, collision response, and momentum conservation through numerical integration. It underpins real-time physics simulation in game engines, robotics, and spatial computing environments.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
@@ -14,20 +14,48 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      },
+      {
+        "id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:physics-engine",
+        "label": "Physics Engine"
+      },
+      {
+        "id": "urn:ngm:class:physics-based-animation",
+        "label": "Physics-Based Animation"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:real-time-processing",
+        "label": "Real-time Processing"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:fluid-simulation",
+        "label": "Fluid Simulation"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

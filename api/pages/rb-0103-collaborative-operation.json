@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:rb-0103-collaborative-operation",
   "domain": "robotics",
-  "definition": "collaborative operation is a robotics and autonomous systems concept and a type of Collaborative Operation.",
+  "definition": "Collaborative operation is a mode of robotic system use in which a robot and one or more human operators work together within a shared workspace, as defined in ISO/TS 15066 and ISO 10218. It encompasses the specific operating conditions, safety functions, and interaction patterns that govern the coexistence of humans and robots without a fixed separating safeguard. The concept underpins cobot deployment strategies including hand guiding, speed and separation monitoring, power and force limiting, and safety-rated monitored stop.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-human-robot-interaction",
@@ -17,11 +17,33 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:rb-0104-hand-guiding",
+        "label": "rb 0104 hand guiding"
+      },
+      {
+        "id": "urn:ngm:class:rb-0105-speed-and-separation-monitoring",
+        "label": "rb 0105 speed and separation monitoring"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:rb-0089-risk-assessment",
+        "label": "rb 0089 risk assessment"
+      },
+      {
+        "id": "urn:ngm:class:rb-0094-power-and-force-limiting",
+        "label": "rb 0094 power and force limiting"
+      },
+      {
+        "id": "urn:ngm:class:rb-0091-safety-rated-monitored-stop",
+        "label": "rb 0091 safety rated monitored stop"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
@@ -29,9 +51,27 @@
     "bridgesTo": [],
     "uses": [],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-ts-15066",
+        "label": "ISO TS 15066"
+      },
+      {
+        "id": "urn:ngm:class:iso-10218",
+        "label": "ISO 10218"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rb-0007-collaborative-robot",
+        "label": "rb 0007 collaborative robot"
+      },
+      {
+        "id": "urn:ngm:class:cobot-safety-levels",
+        "label": "Cobot Safety Levels"
+      }
+    ]
   },
   "wikilinks": [
     {

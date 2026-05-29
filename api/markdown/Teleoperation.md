@@ -152,13 +152,27 @@ public:: true
   "label": "Teleoperation",
   "definition": "Teleoperation is remote control of AutonomousRobot|robots and physical systems by human operators in real-time, enabling task execution in hazardous, distant, or inaccessible environments whilst maintaining human supervision and decision-making authority.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-human-robot-interaction",
       "label": "Human-Robot Interaction"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"},
+      {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:telepresence", "label": "Telepresence"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
+      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
+      {"@id": "urn:ngm:class:spatial-audio", "label": "Spatial Audio"}
+    ]
+  },
   "quality": 0.4,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -338,7 +352,12 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Haptic Feedback]]
+  - requires [[Autonomous Robot]]
+  - enables [[Telepresence]]
+  - uses [[Virtual Reality]]
+  - uses [[Augmented Reality]]
+  - uses [[Spatial Audio]]
 
 - ### Content
   - Remote control of [[AutonomousRobot|robots and physical systems]] by human operators in real-time, enabling task execution in hazardous, distant, or inaccessible environments whilst maintaining human supervision and decision-making authority. Force feedback and [[SpatialAudio|spatial audio]] systems provide sensory information enhancing operator situation awareness and enabling precise manipulation, critical for [[SurgicalRobotics|surgical operations]], [[DeepSeaExploration|underwater exploration]], and [[RescueOperations|rescue missions]]. Integration with [[AugmentedReality|augmented reality]] interfaces and [[5G|5G networks]] enables low-latency telepresence within [[VirtualEnvironments|metaverse platforms]], allowing distributed collaboration and training.

@@ -1,5 +1,5 @@
 - ### Definition
-  - Digital Human Technology is a concept within the metaverse domain. Further enrichment pending.
+  - A class of technologies for creating photorealistic or stylised computer-generated human representations, encompassing 3D body and face modelling, motion capture-driven animation, procedural skin and cloth simulation, and real-time rendering pipelines. Digital human technology enables believable avatars, virtual actors, and AI-driven conversational agents in spatial computing, entertainment, and training applications.
 
 bridges-to:: [[DID Nostr Identity]]
 
@@ -8,7 +8,9 @@ bridges-to:: [[DID Nostr Identity]]
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Has part [[Digital Humans]], [[Motion Capture]], [[Animation Software]]
+  - Uses [[Avatar Creation]], [[Character Model]]
+  - Requires [[Rendering Engine]], [[Computer Graphics]]
 
 - ### Content
 

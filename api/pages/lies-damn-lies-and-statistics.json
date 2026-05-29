@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:lies-damn-lies-and-statistics",
   "domain": "infrastructure",
-  "definition": "Lies Damn Lies and Statistics is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A critical epistemological lens applied to AI benchmark claims, model capability assessments, and statistical presentations that may mislead through selective metrics, dataset contamination, cherry-picked results, or hallucination. The page collects resources and reasoning for evaluating AI performance claims with rigour, highlighting how large language models can generate plausible but false outputs that resemble statistical truth.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-software-engineering",
@@ -14,20 +14,38 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:bias",
+        "label": "Bias"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      }
+    ]
   },
   "wikilinks": [
     {

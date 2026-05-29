@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:chain-reorganization",
   "domain": "blockchain",
-  "definition": "Replacement of blockchain segment within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "A Chain Reorganization (reorg) is the replacement of one or more blocks in the canonical blockchain by an alternative chain of equal or greater cumulative proof-of-work, occurring when competing miners produce valid chains of differing lengths and the network converges on the longest-chain rule to select the canonical history. Reorgs invalidate transactions confirmed only in the abandoned chain segment, enabling double-spend attacks when deliberately induced and posing settlement finality risks for exchanges and payment processors.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-protocol-and-consensus",
@@ -17,25 +17,78 @@
     },
     {
       "id": "urn:ngm:class:distributed-data-structure",
-      "label": "DistributedDataStructure"
+      "label": "Distributed Data Structure"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "id": "urn:ngm:class:nakamoto-consensus",
+        "label": "Nakamoto Consensus"
+      },
+      {
+        "id": "urn:ngm:class:longest-chain-rule",
+        "label": "Longest Chain Rule"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:double-spending",
+        "label": "Double Spending"
+      },
+      {
+        "id": "urn:ngm:class:51-attack",
+        "label": "51% Attack"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:finality",
+        "label": "Finality"
+      },
+      {
+        "id": "urn:ngm:class:transaction-finality",
+        "label": "Transaction Finality"
+      },
+      {
+        "id": "urn:ngm:class:selfish-mining",
+        "label": "Selfish Mining"
+      },
+      {
+        "id": "urn:ngm:class:fork-choice-rule",
+        "label": "Fork Choice Rule"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      }
+    ]
   },
   "wikilinks": [
     {

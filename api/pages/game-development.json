@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:game-development",
   "domain": "artificial-intelligence",
-  "definition": "The multidisciplinary practice of designing, programming, and producing interactive software applications, increasingly leveraging AI for procedural content generation and NPC behaviour.",
+  "definition": "Game development is the multidisciplinary practice of designing, programming, and shipping interactive software across entertainment and serious-games domains, encompassing game design, art production, audio, narrative scripting, engine programming, and quality assurance. The field is increasingly AI-augmented: procedural content generation automates the creation of levels, terrain, and assets; reinforcement learning trains non-player characters (NPCs) with adaptive behaviour; and generative AI accelerates 2D/3D asset production. Game engines such as Unity and Unreal Engine provide integrated rendering, physics, audio, and scripting runtimes that underpin the production pipeline.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-application",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "id": "urn:ngm:class:npc-interaction",
+        "label": "NPC Interaction"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:procedural-content-generation",
+        "label": "Procedural Content Generation"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

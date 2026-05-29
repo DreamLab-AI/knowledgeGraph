@@ -48,7 +48,8 @@ public:: true
   "label": "Transparent Decision Making",
   "definition": "Governance processes where decisions, their rationale, and the factors influencing outcomes are openly visible and accessible to stakeholders, often implemented through on-chain voting, public proposals, and documented deliberations in DAOs and digital platforms.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
@@ -59,11 +60,44 @@ public:: true
       "label": "Governance"
     }
   ],
-  "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-decision-making",
+        "label": "Distributed Decision Making"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "@id": "urn:ngm:class:community-governance",
+        "label": "Community Governance"
+      }
+    ]
   }
 }
 ```
@@ -109,6 +143,12 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Governance]]
+  - Enables [[Accountability]]
+  - Enables [[Distributed Decision Making]]
+  - Supports [[DAO Governance]]
+  - Supports [[Community Governance]]
+  - Depends on [[Blockchain Governance]]
+  - Related to [[Governance Framework]]
 
 - ### Content
 

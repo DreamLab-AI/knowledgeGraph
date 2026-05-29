@@ -7,7 +7,11 @@
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Robot Kinematics]]
+  - requires [[Sensor Fusion]]
+  - uses [[Haptic Feedback]]
+  - uses [[Motion Planning]]
+  - partOf [[Robotics]]
 
 - ### Content
   - ### Primary Definition

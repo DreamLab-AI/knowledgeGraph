@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:emission-schedule",
   "domain": "blockchain",
-  "definition": "Token issuance timeline within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "An Emission Schedule is the predetermined, protocol-encoded timeline that specifies the rate at which new tokens are minted and distributed to participants over the lifetime of a blockchain network. It governs how the total supply of a token expands from genesis toward any eventual supply cap or steady-state inflation rate, directly shaping the economic incentives for validators, miners, and stakers. Well-designed emission schedules balance early bootstrapping of network security with long-term sustainability once adoption is established.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-defi-and-economics",
@@ -17,16 +17,43 @@
     },
     {
       "id": "urn:ngm:class:economic-mechanism",
-      "label": "EconomicMechanism"
+      "label": "Economic Mechanism"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:block-reward",
+        "label": "Block Reward"
+      },
+      {
+        "id": "urn:ngm:class:halving",
+        "label": "Halving"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:total-supply",
+        "label": "Total Supply"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:incentive-alignment",
+        "label": "Incentive Alignment"
+      },
+      {
+        "id": "urn:ngm:class:validator-node",
+        "label": "Validator Node"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -35,7 +62,28 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:inflation",
+        "label": "Inflation"
+      },
+      {
+        "id": "urn:ngm:class:deflationary-token",
+        "label": "Deflationary Token"
+      },
+      {
+        "id": "urn:ngm:class:monetary-policy-implementation",
+        "label": "Monetary Policy Implementation"
+      },
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      },
+      {
+        "id": "urn:ngm:class:circulating-supply",
+        "label": "Circulating Supply"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -33,16 +33,30 @@ public:: true
   "@id": "urn:ngm:class:python-sample1",
   "@type": "Class",
   "label": "Python Sample1",
-  "definition": "Python Sample1 is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Python Sample1 is a Logseq Python code block that demonstrates the Logseq Plugin API via Pyodide: it defines helper utilities for inspecting JavaScript objects, appending timestamped entries to a named Logseq page, and searching all pages for a given term using the Logseq search API. The sample illustrates the pattern of bridging Python scripting with the Logseq knowledge-graph API for automated page discovery and log management.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
+      {"@id": "urn:ngm:class:knowledge-management", "label": "Knowledge Management"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:code-generation", "label": "Code Generation"},
+      {"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"},
+      {"@id": "urn:ngm:class:semantic-search", "label": "Semantic Search"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:software-engineering", "label": "Software Engineering"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -72,14 +86,16 @@ public:: true
 
 
 - ### Definition
-  - PythonSample1 is a concept within the ngm domain.
+  - Python Sample1 is a Logseq Python code block demonstrating the Logseq Plugin API via Pyodide: it defines helper utilities for inspecting JavaScript objects, appending timestamped entries to a named Logseq page, and searching all pages for a given term. The sample illustrates bridging Python scripting with the Logseq knowledge-graph API for automated page discovery and log management.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:PythonSample1
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses:: [[Knowledge Graph]], [[Knowledge Management]]
+  - relatedTo:: [[Code Generation]], [[Information Retrieval]], [[Semantic Search]]
+  - partOf:: [[Software Engineering]]
 
 - ### Content
   - ```javascript

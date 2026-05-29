@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:miner",
   "domain": "blockchain",
-  "definition": "Proof-of-work network participant within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "A Miner is a network participant in a proof-of-work blockchain who dedicates computational resources to solving cryptographic hash puzzles, competing to produce valid blocks that extend the canonical chain in exchange for a block reward (newly issued coins plus transaction fees). Miners collectively provide the computational security of the network: the cost of mounting a 51% attack is proportional to the total hash rate, which represents real-world energy and hardware expenditure. Mining can be performed individually or cooperatively within mining pools that aggregate hash power and share rewards proportionally.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-protocol-and-consensus",
@@ -21,21 +21,71 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:mining-pool",
+        "label": "Mining Pool"
+      }
+    ],
     "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:block-propagation",
+        "label": "Block Propagation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:validator-node",
+        "label": "Validator Node"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:block-reward",
+        "label": "Block Reward"
+      },
+      {
+        "id": "urn:ngm:class:mining-reward",
+        "label": "Mining Reward"
+      },
+      {
+        "id": "urn:ngm:class:fee-market",
+        "label": "Fee Market"
+      },
+      {
+        "id": "urn:ngm:class:mempool",
+        "label": "Mempool"
+      }
+    ]
   },
   "wikilinks": [
     {

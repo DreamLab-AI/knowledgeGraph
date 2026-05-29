@@ -58,10 +58,10 @@ public:: true
   "@id": "urn:ngm:class:programming-paradigm",
   "@type": "Class",
   "label": "Programming Paradigm",
-  "definition": "Programming Paradigms in AI represent fundamental styles and approaches to structuring code for artificial intelligence systems. Key paradigms include imperative (procedural, object-oriented), declarative (functional, logic-based), and differentiable programming.",
+  "definition": "Programming Paradigms in AI represent fundamental styles and approaches to structuring code for artificial intelligence systems. Key paradigms include imperative (procedural, object-oriented), declarative (functional, logic-based), and differentiable programming, each shaping how models are specified, composed, and optimised across symbolic and neural approaches.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
-  "quality": 0.35,
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -72,7 +72,21 @@ public:: true
       "@id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
     }
-  ]
+  ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:logic-programming", "label": "Logic Programming"},
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
+      {"@id": "urn:ngm:class:ai-augmented-software-engineering", "label": "AI-Augmented Software Engineering"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:symbolic-ai", "label": "Symbolic AI"},
+      {"@id": "urn:ngm:class:software-engineering", "label": "Software Engineering"}
+    ]
+  }
 }
 ```
 
@@ -131,6 +145,9 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[owl:Thing]]
+  - uses: [[Logic Programming]], [[Machine Learning]]
+  - enables: [[Deep Learning]], [[AI-Augmented Software Engineering]]
+  - relatedTo: [[Symbolic AI]], [[Software Engineering]]
 
 - ### Content
 

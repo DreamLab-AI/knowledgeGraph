@@ -6,7 +6,9 @@
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **enables**: Interoperability, Avatar Interoperability (bridges unlock cross-platform participation)
+  - **uses**: OpenXR, Blockchain (open standards and trustless ledgers underpin bridge protocols)
+  - **supports**: Cross-Platform Interoperability, Data Interoperability (downstream properties a bridge realises)
 
   - bridges-to:: [[Blockchain]] (bc)
 - ### Content

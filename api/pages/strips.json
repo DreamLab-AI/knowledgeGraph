@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:strips",
   "domain": "artificial-intelligence",
-  "definition": "STRIPS is a artificial intelligence concept and a type of Knowledge Representation.",
+  "definition": "STRIPS (Stanford Research Institute Problem Solver) is a classical automated planning formalism that represents world states as conjunctions of propositions and defines actions via precondition, add-list, and delete-list operators. It introduced the core abstraction underlying modern planning languages such as PDDL and remains foundational to symbolic AI planning.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -17,21 +17,41 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:automated-planning",
+        "label": "Automated Planning"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ]
   },
   "wikilinks": [
     {

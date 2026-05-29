@@ -7,7 +7,11 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses [[Neural Network Architecture]] with shared encoders and task-specific heads
+  - Related to [[Transfer Learning]] (knowledge sharing via pre-trained representations)
+  - Related to [[Supervised Learning]] (most MTL setups are supervised across all task heads)
+  - Enables [[Multimodal AI]] by jointly training on heterogeneous task types
+  - Contrasts with [[Overfitting]] (task diversity acts as an implicit regulariser)
 
 - ### Content
   - A machine learning paradigm where a model is trained simultaneously on multiple related tasks, sharing representations across tasks to improve generalization and efficiency. Multi-task learning leverages task relatedness to learn better features than training on each task independently.

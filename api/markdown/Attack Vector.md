@@ -70,16 +70,30 @@ public:: true
   "@id": "urn:ngm:class:attack-vector",
   "@type": "Class",
   "label": "Attack Vector",
-  "definition": "Attack Vector is a artificial intelligence concept and a type of Artificial Intelligence.",
+  "definition": "A specific path, method, or mechanism that a threat actor uses to gain unauthorised access, exploit vulnerabilities, or cause damage to a system, network, or organisation. Attack vectors span network-based exploitation, social engineering, supply-chain compromise, and AI-specific techniques such as prompt injection or model poisoning, and are categorised by access method, target layer, and sophistication.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:vulnerability", "label": "Vulnerability"},
+      {"@id": "urn:ngm:class:threat-actor", "label": "Threat Actor"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:resilience", "label": "Resilience"},
+      {"@id": "urn:ngm:class:security", "label": "Security"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:risk", "label": "Risk"},
+      {"@id": "urn:ngm:class:adversarial-robustness", "label": "Adversarial Robustness"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -162,6 +176,12 @@ public:: true
   - owl-role:: Concept
 
 - ### Relationships
+  - **requires** [[Vulnerability]] — an attack vector exploits one or more vulnerabilities
+  - **requires** [[Threat Actor]] — attack vectors are exercised by threat actors
+  - **contrastsWith** [[Resilience]] — resilience is the defensive counterpart to attack vectors
+  - **contrastsWith** [[Security]] — security controls aim to block or detect attack vectors
+  - **relatedTo** [[Risk]] — successful exploitation of an attack vector realises risk
+  - **relatedTo** [[Adversarial Robustness]] — AI-specific attack vectors are countered by robustness
   - is-subclass-of:: [[Artificial Intelligence]]
   - bridges-to:: [[Blockchain]] (domain: bc)
 

@@ -48,7 +48,8 @@ public:: true
   "label": "Temporary Asset Access",
   "definition": "A mechanism enabling time-limited usage rights to digital assets in the metaverse without transferring ownership, implemented through smart contracts that separate user roles from owner roles with automatic expiration.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
@@ -59,11 +60,44 @@ public:: true
       "label": "Digital Asset Management"
     }
   ],
-  "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:nft-standard",
+        "label": "NFT Standard"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:nft-renting",
+        "label": "NFT Renting"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset-lending",
+        "label": "Digital Asset Lending"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:nft",
+        "label": "NFT"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:nft-marketplace",
+        "label": "NFT Marketplace"
+      }
+    ]
   }
 }
 ```
@@ -109,6 +143,12 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Digital Asset Management]]
+  - Implements [[NFT Renting]]
+  - Implements [[Digital Asset Lending]]
+  - Requires [[Smart Contract]]
+  - Requires [[NFT Standard]]
+  - Uses [[NFT]]
+  - Related to [[NFT Marketplace]]
 
 - ### Content
 

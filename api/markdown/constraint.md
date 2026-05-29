@@ -1,18 +1,21 @@
-- ### Definition
-  - Constraint is a concept within the ai domain.
+### Definition
 
-- ### Semantic Classification
-  - owl-class:: artificial-intelligence:Constraint
-  - owl-role:: Concept
-  - belongs-to-domain:: [[Artificial Intelligence]]
+A Constraint is a condition, restriction, or rule that limits the set of permissible states, actions, or solutions within a computational, logical, or physical system. Constraints formalise requirements such as resource bounds, logical invariants, safety properties, and optimality criteria, and are manipulated by constraint-satisfaction and optimisation algorithms to find feasible or optimal solutions. They appear across AI planning, machine learning regularisation, smart-contract execution, and formal verification.
 
-- ### Relationships
-  - <!-- No relationships defined -->
-  - bridges-to:: [[Digital Twin]], [[Blockchain]]
+### Relationships
 
-- ### Content
-  Constraint — content pending enrichment.
+Constraint **requires** an [[Objective]] (to define what is being optimised or satisfied) and a [[Model]] (the representation within which constraints are expressed). It **enables** [[Formal Verification]] (by providing checkable invariants), [[Reasoning]] (constraints guide inference over possible worlds), and [[Safety]] (safety properties are encoded as constraints that must never be violated). Constraints **use** [[Algorithm|Algorithms]] and [[Search Algorithm|Search Algorithms]] to enumerate or prune the solution space, and draw on [[Inference]] to propagate constraint consequences. They **support** [[Machine Learning]] (regularisation terms and output constraints), [[Fairness]] (demographic parity and equal opportunity conditions), and [[Ontology]] (ontological axioms are a form of logical constraint). Constraints are **relatedTo** [[Parameter]], [[Property]], and [[System]]. They **bridgesTo** [[Digital Twin]] (physical constraints are mirrored in simulation), [[Blockchain]] (smart-contract invariants and gas limits are constraints), and [[Smart Contract]] (contract pre- and post-conditions express constraints on permitted state transitions).
 
-- ### Provenance
-  - sources:: Chimera Prime Research
-  - migration-date:: 2026-04-26T00:00:00Z
+### Content
+
+Constraints are a unifying concept across computer science, mathematics, and engineering. In constraint satisfaction problems (CSPs), a set of variables must be assigned values from their domains such that all stated constraints are satisfied simultaneously. Backtracking search, arc consistency, and propagation algorithms are the standard tools for solving CSPs efficiently. Constraint programming extends this with arithmetic, logical, and global constraints that compactly represent complex combinatorial requirements.
+
+In machine learning, constraints appear as regularisation penalties (L1/L2 norms bounding model parameters), fairness constraints (demographic parity, equalised odds), and safety constraints in reinforcement learning (reward shaping and shield mechanisms). [[Neural Network]] architectures may incorporate architectural constraints such as weight sharing in convolutional layers or monotonicity constraints for interpretable models. [[Reinforcement Learning]] policies trained under constrained Markov decision processes must satisfy worst-case state-space constraints throughout training.
+
+Formal methods exploit constraints heavily. [[Formal Verification]] encodes system correctness as a set of temporal or logical constraints and uses model checking or theorem proving to verify that no reachable system state violates them. [[Digital Twin]] simulations mirror physical constraints (mass, energy, thermodynamic limits) so that predictions respect real-world bounds. Constraint-driven simulation enables predictive maintenance, anomaly detection, and what-if analysis under physically consistent conditions.
+
+In [[Blockchain]] and [[Smart Contract]] systems, constraints govern execution: gas limits bound computation, require/revert statements enforce pre-conditions, and invariant-check patterns guard state transitions. Constraint violations cause transaction reverts, providing an on-chain enforcement mechanism. [[Ontology|Ontologies]] in knowledge engineering express constraints as description-logic axioms (subclass relationships, cardinality restrictions, property domains and ranges) that enable automated [[Reasoning]] and [[Inference]] over structured knowledge.
+
+### Provenance
+- sources:: Chimera Prime Research
+- migration-date:: 2026-04-26T00:00:00Z

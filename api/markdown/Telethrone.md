@@ -42,16 +42,31 @@ public:: true
   "@id": "urn:ngm:class:telethrone",
   "@type": "Class",
   "label": "Telethrone",
-  "definition": "Telrone is a spatial computing concept and a type of spatial-computing.",
+  "definition": "Telethrone is a research concept for a hyper-personal display and telepresence installation that resolves the challenge of rendering a spatially aware, photorealistic metahuman avatar for a single collocated viewer. It combines personalised 3D reconstruction from 2D imagery, gaze-contingent rendering, and situated display technology to achieve high-fidelity presence without requiring the viewer to wear head-mounted displays.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:hyper-personalisation", "label": "Hyper personalisation"},
+      {"@id": "urn:ngm:class:neural-rendering", "label": "Neural Rendering"},
+      {"@id": "urn:ngm:class:display-hardware", "label": "Display Hardware"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:tele020virtualrealitytelepresence", "label": "TELE020virtualrealitytelepresence"},
+      {"@id": "urn:ngm:class:tele-050-neuralrenderingtelepresence", "label": "TELE 050 neuralrenderingtelepresence"},
+      {"@id": "urn:ngm:class:avatar", "label": "Avatar"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -87,14 +102,16 @@ public:: true
 
 
 - ### Definition
-  - Telethrone is a concept within the ngm domain.
+  - Telethrone is a research concept for a hyper-personal display and telepresence installation that resolves the challenge of rendering a spatially aware, photorealistic metahuman avatar for a single collocated viewer. It combines personalised 3D reconstruction from 2D imagery, gaze-contingent rendering, and situated display technology to achieve high-fidelity presence without requiring the viewer to wear head-mounted displays.
 - ### Semantic Classification
   - owl-class:: spatial-computing:Telethrone
   - owl-role:: Concept
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses:: Hyper personalisation, Neural Rendering, Display Hardware
+  - relatedTo:: TELE020virtualrealitytelepresence, TELE 050 neuralrenderingtelepresence, Avatar
+  - enables:: Immersive Experience
 - ### Content
-  - Telehtrone metahuman avatar
+  - Telethrone metahuman avatar
   - Hyperpersonal display is solved
   - Create the 3d from 2d
   - [[MUST]]

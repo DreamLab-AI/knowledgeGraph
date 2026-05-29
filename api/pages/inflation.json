@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:inflation",
   "domain": "blockchain",
-  "definition": "Increasing token supply within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "The scheduled or dynamic increase in token supply within a blockchain network, used to fund validator rewards, incentivise participation, and manage monetary policy. Inflation rate parameters are typically encoded in the protocol and may be adjusted via governance, directly affecting token holder purchasing power and long-term economic security.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-defi-and-economics",
@@ -21,7 +21,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
@@ -29,13 +29,52 @@
     "enables": [],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:fixed-supply-token",
+        "label": "Fixed Supply Token"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:minting",
+        "label": "Minting"
+      },
+      {
+        "id": "urn:ngm:class:circulating-supply",
+        "label": "Circulating Supply"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:inflation-control",
+        "label": "Inflation Control"
+      },
+      {
+        "id": "urn:ngm:class:emission-schedule",
+        "label": "Emission Schedule"
+      },
+      {
+        "id": "urn:ngm:class:supply-cap",
+        "label": "Supply Cap"
+      },
+      {
+        "id": "urn:ngm:class:block-reward",
+        "label": "Block Reward"
+      },
+      {
+        "id": "urn:ngm:class:deflationary-token",
+        "label": "Deflationary Token"
+      },
+      {
+        "id": "urn:ngm:class:burning-mechanism",
+        "label": "Burning Mechanism"
+      }
+    ]
   },
   "wikilinks": [
     {

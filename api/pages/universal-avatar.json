@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:universal-avatar",
   "domain": "spatial-computing",
-  "definition": "A cross-platform digital representation of a user that maintains consistent identity, appearance, and customizations across multiple metaverse applications, games, and virtual environments through interoperability standards and shared formats.",
+  "definition": "A cross-platform digital representation of a user that maintains consistent identity, appearance, and asset customisations across multiple metaverse applications, games, and virtual environments. Universal avatars rely on interoperability standards such as glTF and VRM to enable a single avatar to function across thousands of compatible platforms without requiring recreation.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -17,17 +17,49 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:avatar-customization",
+        "label": "Avatar Customization"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:avatar-interoperability",
+        "label": "Avatar Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:avatar-standard",
+        "label": "Avatar Standard"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:avatar-portability",
+        "label": "Avatar Portability"
+      },
+      {
+        "id": "urn:ngm:class:cross-platform-identity",
+        "label": "Cross-Platform Identity"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gltf-standard",
+        "label": "Gltf Standard"
+      },
+      {
+        "id": "urn:ngm:class:vrm-format",
+        "label": "VRM Format"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

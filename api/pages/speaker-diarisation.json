@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:speaker-diarisation",
   "domain": "distributed-collaboration",
-  "definition": "Speaker diarisation is the process of automatically segmenting an audio stream and labelling each segment with the identity of the speaker who produced it.",
+  "definition": "Speaker diarisation is the automated process of segmenting a continuous audio stream into speaker-homogeneous regions and assigning a speaker label to each region, answering the question 'who spoke when?' without necessarily identifying the speakers by name. The pipeline typically comprises voice activity detection, acoustic feature extraction, speaker embedding (using models such as x-vectors or ECAPA-TDNN), agglomerative clustering or spectral clustering to group embeddings, and optional overlap detection. Speaker diarisation is a prerequisite component in meeting transcription, clinical consultation recording, and multiparty conversation analysis systems.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:dc-communication",
@@ -14,11 +14,25 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:audio-processing-system",
+        "label": "Audio Processing System"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:meeting-transcription",
+        "label": "Meeting Transcription"
+      },
+      {
+        "id": "urn:ngm:class:real-time-transcription",
+        "label": "Real-time Transcription"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +41,16 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:automatic-speech-recognition",
+        "label": "Automatic Speech Recognition"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

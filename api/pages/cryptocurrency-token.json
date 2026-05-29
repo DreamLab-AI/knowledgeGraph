@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:cryptocurrency-token",
   "domain": "blockchain",
-  "definition": "Cryptocurrency Token is a blockchain and distributed systems concept and a type of blockchain.",
+  "definition": "A programmable digital asset implemented via smart contracts on a blockchain platform, categorised into utility tokens (access rights), security tokens (equity or debt instruments), governance tokens (protocol voting rights), and non-fungible tokens (NFTs, unique digital ownership). Token behaviour and interoperability are defined by standards such as ERC-20, ERC-721, and ERC-1155.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-token-and-asset",
@@ -13,11 +13,33 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:fungible-token",
+        "label": "Fungible Token"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:utility-token",
+        "label": "Utility Token"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
@@ -25,9 +47,27 @@
     "bridgesTo": [],
     "uses": [],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      },
+      {
+        "id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      },
+      {
+        "id": "urn:ngm:class:erc-721",
+        "label": "ERC-721"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
+    ]
   },
   "wikilinks": [
     {

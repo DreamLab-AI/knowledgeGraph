@@ -282,7 +282,7 @@ public:: true
   "@id": "urn:ngm:class:ai-upscaling-and-super-resolution",
   "@type": "Class",
   "label": "AI Upscaling and Super-Resolution",
-  "definition": "AI-powered techniques for enhancing image and video resolution using deep learning models to generate high-resolution outputs from low-resolution inputs, including super-resolution, interpolation, and detail enhancement",
+  "definition": "AI Upscaling and Super-Resolution is a family of deep learning techniques that synthesise plausible high-frequency detail when enlarging images or video frames beyond their native resolution. Methods range from convolutional neural network regressors (SRCNN, ESRGAN) and generative adversarial approaches to diffusion-based reconstruction, enabling applications from consumer photography enhancement to real-time game upscaling (DLSS, FSR) and medical imaging.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -295,7 +295,28 @@ public:: true
       "label": "Generative AI"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
+      {"@id": "urn:ngm:class:generative-adversarial-network", "label": "Generative Adversarial Network"},
+      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:super-resolution", "label": "Super Resolution"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
+      {"@id": "urn:ngm:class:image-processing-software", "label": "Image Processing Software"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
+      {"@id": "urn:ngm:class:sc-display-and-rendering", "label": "Display and Rendering"},
+      {"@id": "urn:ngm:class:neural-rendering", "label": "Neural Rendering"},
+      {"@id": "urn:ngm:class:latent-diffusion", "label": "Latent Diffusion"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

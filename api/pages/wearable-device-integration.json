@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:wearable-device-integration",
   "domain": "spatial-computing",
-  "definition": "The technical processes and protocols for connecting wearable computing devices with metaverse platforms, enterprise systems, and cloud services, enabling seamless data exchange, cross-device synchronization, and coordinated multi-device experiences.",
+  "definition": "The technical processes and protocols for connecting wearable computing devices with metaverse platforms, enterprise systems, and cloud services, enabling seamless data exchange, cross-device synchronisation, and coordinated multi-device experiences.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-interaction",
@@ -18,19 +18,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:wearable-computing-platform",
+        "label": "Wearable Computing Platform"
+      }
+    ],
     "relatedTo": []
   },
   "wikilinks": [

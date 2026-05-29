@@ -37,16 +37,33 @@ public:: true
   "@id": "urn:ngm:class:networking-technology",
   "@type": "Class",
   "label": "Networking Technology",
-  "definition": "Networking Technology is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "The protocols, hardware, and software frameworks that enable real-time data transmission, synchronisation, and communication between distributed participants. In spatial computing contexts this encompasses WebRTC, QUIC, UDP/TCP stacks, adaptive bitrate streaming, and delta-compression techniques that support low-latency avatar synchronisation and shared world-state updates.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-network-and-comms",
       "label": "Network and Communication"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:multi-user-systems", "label": "Multi User Systems"},
+      {"@id": "urn:ngm:class:real-time", "label": "Real Time"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:network-quality-metric", "label": "Network Quality Metric"},
+      {"@id": "urn:ngm:class:open-standard", "label": "Open Standard"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:distributed-system", "label": "Distributed System"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -76,14 +93,20 @@ public:: true
 
 
 - ### Definition
-  - NetworkingTechnology is a concept within the ngm domain.
+  - The protocols, hardware, and software frameworks that enable real-time data transmission, synchronisation, and communication between distributed participants. In spatial computing contexts this encompasses WebRTC, QUIC, UDP/TCP stacks, adaptive bitrate streaming, and delta-compression techniques supporting low-latency avatar synchronisation and shared world-state updates.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:NetworkingTechnology
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **enables** [[Multi User Systems]] — networking technology is the prerequisite for any synchronised multi-user platform
+  - **enables** [[Real Time]] — low-latency network protocols enable real-time data exchange
+  - **hasPart** [[Network Quality Metric]] — quality metrics are produced by and used to tune the networking stack
+  - **hasPart** [[Open Standard]] — open standards (WebRTC, QUIC, WebSocket) define the interoperable networking layer
+  - **uses** [[Distributed System]] — networking technology is the communication substrate of distributed systems
+  - **supports** [[Edge Computing]] — edge nodes reduce latency for time-sensitive networked applications
+  - **supports** [[Spatial Computing]] — spatial computing platforms depend on networking technology for multi-user presence
 
 - ### Content
   # NetworkingTechnology

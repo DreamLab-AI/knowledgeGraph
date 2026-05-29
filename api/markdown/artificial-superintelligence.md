@@ -1,12 +1,18 @@
 - ### Definition
-  - artificial superintelligence is a concept within the ngm domain.
+  - A hypothetical form of artificial intelligence that surpasses human cognitive performance across all domains, capable of recursive self-improvement leading to an intelligence explosion. Distinguished from artificial general intelligence by the degree of capability surplus; considered an existential risk scenario requiring robust safety and alignment research before any attempt at development.
 
 - ### Semantic Classification
-  - owl-class:: infrastructure:ArtificialSuperintelligence
+  - owl-class:: artificial-intelligence:ArtificialSuperintelligence
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Requires [[Artificial General Intelligence]]
+  - Requires [[Machine Learning]]
+  - Contrasts With [[Artificial Intelligence]]
+  - Related To [[Singularity]]
+  - Related To [[AI Risks]]
+  - Related To [[AI Safety]]
+  - Supports [[AIEthics]]
 
 - ### Content
   - # Artificial Superintelligence

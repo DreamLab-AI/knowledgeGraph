@@ -5,7 +5,9 @@
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires: [[Cryptography]], [[Smart Contract]], [[Decentralized Identifiers]]
+  - enables: [[Self Sovereign Identity]], [[Data Sovereignty]], [[Decentralized Governance]]
+  - supports: [[Governance Framework]], [[NFT Ownership Proof]]
 - ### Content
   - A socio-technical paradigm establishing user sovereignty through decentralized control mechanisms, cryptographic ownership proofs, and distributed governance models. Distributed ownership and freedom principles ensure individuals retain control over digital assets, personal data, and participation rights without reliance on centralized authorities or intermediaries.
   ---

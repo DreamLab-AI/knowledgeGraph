@@ -18,11 +18,29 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:learning-management-system",
+        "label": "Learning Management System"
+      },
+      {
+        "id": "urn:ngm:class:collaboration-platform",
+        "label": "Collaboration Platform"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:collaborative-learning",
+        "label": "Collaborative Learning"
+      },
+      {
+        "id": "urn:ngm:class:immersive-learning",
+        "label": "Immersive Learning"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -31,7 +49,16 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:education-metaverse",
+        "label": "Education Metaverse"
+      },
+      {
+        "id": "urn:ngm:class:education-technology",
+        "label": "Education Technology"
+      }
+    ]
   },
   "wikilinks": [
     {

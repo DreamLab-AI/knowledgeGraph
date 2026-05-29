@@ -56,7 +56,7 @@ public:: true
   "label": "Machine Learning Pipeline",
   "definition": "Machine Learning Pipeline represents the end-to-end workflow for developing, training, validating, deploying, and monitoring ML models. This encompasses data ingestion, preprocessing, feature engineering, model selection, hyperparameter tuning, training, edeployment, and continuous monitoring.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
@@ -65,10 +65,24 @@ public:: true
   },
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:cat-ai-infrastructure",
+      "@id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure (Category)"
     }
-  ]
+  ],
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:feature-engineering", "label": "Feature Engineering"},
+      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
+      {"@id": "urn:ngm:class:inference", "label": "Inference"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
+      {"@id": "urn:ngm:class:performance-metrics", "label": "Performance Metrics"}
+    ]
+  }
 }
 ```
 
@@ -121,7 +135,12 @@ public:: true
   - owl-role:: concept
 
 - ### Relationships
-  - is-subclass-of:: ['owl:Thing']
+  - hasPart:: [[Feature Engineering]]
+  - hasPart:: [[Data Pipeline]]
+  - enables:: [[Model Training]]
+  - enables:: [[Inference]]
+  - uses:: [[Training Data]]
+  - uses:: [[Performance Metrics]]
 
 - ### Content
 

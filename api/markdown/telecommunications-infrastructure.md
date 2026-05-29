@@ -1,12 +1,14 @@
 - ### Definition
-  - TelecommunicationsInfrastructure is a concept within the ngm domain.
+  - Telecommunications Infrastructure comprises the physical and logical systems — including fibre-optic networks, cellular base stations, satellite links, exchange points, and backbone routers — that carry digital communications at scale. It underpins latency-sensitive applications such as real-time rendering, telecollaboration, and edge AI by providing the transport layer on which higher-level protocols operate.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:TelecommunicationsInfrastructure
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **enables** → [[Remote Communication]], [[Telecollaboration]], [[Video Conferencing]]
+  - **supports** → [[Latency Management Protocol]], [[Content Delivery Network]]
+  - **hasPart** → [[Network Protocol]], [[Bandwidth Adaptation]]
 
 - ### Content
   # TelecommunicationsInfrastructure

@@ -7,6 +7,12 @@
 
 - ### Relationships
   - is-subclass-of:: ['owl:Thing']
+  - uses [[RDF]]
+  - uses [[SPARQL]]
+  - enables [[Knowledge Graph]]
+  - enables [[Knowledge Representation]]
+  - relatedTo [[Linked Data]]
+  - relatedTo [[Semantic Web Standards]]
 
 - ### Content
 

@@ -42,9 +42,10 @@ public:: true
   "@id": "urn:ngm:class:distributed-system-protocol",
   "@type": "Class",
   "label": "Distributed System Protocol",
-  "definition": "Distributed System Protocol is a technology infrastructure concept and a type of Protocol Layer.",
+  "definition": "A Distributed System Protocol defines the communication and coordination mechanisms enabling distributed nodes to achieve collective functionality through standardised message formats, state synchronisation procedures, and failure recovery mechanisms. Such protocols underpin blockchain networks, peer-to-peer systems, and consensus-based infrastructure through gossip dissemination, leader election, distributed hash tables, and inter-node authentication channels.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-network-and-comms",
@@ -55,7 +56,23 @@ public:: true
       "label": "Protocol Layer"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "implements": [
+      {"@id": "urn:ngm:class:consensus-protocol", "label": "Consensus Protocol"},
+      {"@id": "urn:ngm:class:communication-protocol", "label": "Communication Protocol"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:distributed-system", "label": "Distributed System"},
+      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"},
+      {"@id": "urn:ngm:class:network-infrastructure", "label": "Network Infrastructure"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -91,14 +108,17 @@ public:: true
 
 
 - ### Definition
-  - DistributedSystemProtocol is a concept within the ngm domain.
+  - A Distributed System Protocol defines the communication and coordination mechanisms enabling distributed nodes to achieve collective functionality through standardised message formats, state synchronisation procedures, and failure recovery mechanisms. Such protocols underpin blockchain networks, peer-to-peer systems, and consensus-based infrastructure through gossip dissemination, leader election, distributed hash tables, and inter-node authentication channels.
 
 - ### Semantic Classification
   - owl-class:: blockchain:DistributedSystemProtocol
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **implements**: [[Consensus Protocol]], [[Communication Protocol]]
+  - **enables**: [[Distributed System]], [[Blockchain Network]]
+  - **uses**: [[Cryptographic Protocol]], [[Network Infrastructure]]
+  - **relatedTo**: [[Distributed Ledger Technology]]
 
   - bridges-to:: [[Blockchain]] (bc)
 - ### Content

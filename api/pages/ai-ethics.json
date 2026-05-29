@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ai-ethics",
   "domain": "artificial-intelligence",
-  "definition": "AI ics addresses the moral principles, values, and guidelines governing the design, development, deployment, and use of artificial intelligence systems.",
+  "definition": "AI Ethics addresses the moral principles, values, and guidelines governing the design, development, deployment, and use of artificial intelligence systems. This interdisciplinary field examines fairness, accountability, transparency, privacy, and bias mitigation, drawing on philosophy, law, and computer science to ensure AI systems respect human rights and societal values.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -18,20 +18,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bias-mitigation-techniques",
+        "label": "Bias Mitigation Techniques"
+      },
+      {
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      }
+    ]
   },
   "wikilinks": [
     {

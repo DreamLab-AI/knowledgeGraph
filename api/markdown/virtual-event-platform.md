@@ -8,6 +8,13 @@
 
 - ### Relationships
   - is-subclass-of:: [[Metaverse]]
+  - Has Part: [[Virtual Event]]
+  - Has Part: [[Event Management]]
+  - Requires: [[Avatar]]
+  - Requires: [[Collaboration Platform]]
+  - Uses: [[Social VR]]
+  - Uses: [[Metaverse Platform]]
+  - Enables: [[Immersive Experience]]
 
 - ### Content
 

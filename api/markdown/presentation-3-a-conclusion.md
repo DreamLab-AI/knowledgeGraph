@@ -1,12 +1,13 @@
 - ### Definition
-  - Presentation%3A Conclusion is a concept within the ngm domain.
+  - The concluding slide deck section of a presentation on generative AI and its societal significance. It synthesises key points about AI's role in society, addresses audience takeaways, and acknowledges contributors, serving as the closing narrative arc for a structured public or academic AI presentation.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:Presentation3AConclusion
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - relatedTo: [[Generative AI]], [[AI Governance]], [[AI Ethics]]
+  - partOf: [[Projects]]
 
 - ### Content
   - Recap of Key Points

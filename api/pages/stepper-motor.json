@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:stepper-motor",
   "domain": "robotics",
-  "definition": "Stepper motor divides full rotation into discrete steps for open-loop position control.",
+  "definition": "A stepper motor is an electromechanical actuator that divides a full rotation into a fixed number of discrete angular steps, enabling precise open-loop position control without requiring feedback sensors. By energising coils in sequence, the rotor advances one step per pulse, making stepper motors essential for applications demanding repeatable positioning such as CNC machining, 3D printing, and robotic joints.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
@@ -17,21 +17,79 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:encoder",
+        "label": "Encoder"
+      },
+      {
+        "id": "urn:ngm:class:rotary-encoder",
+        "label": "Rotary Encoder"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "id": "urn:ngm:class:motion-control",
+        "label": "Motion Control"
+      },
+      {
+        "id": "urn:ngm:class:open-loop-control",
+        "label": "Open-Loop Control"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:robotics-control",
+        "label": "Robotics Control"
+      },
+      {
+        "id": "urn:ngm:class:robotics-process",
+        "label": "Robotics Process"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:servo-motor",
+        "label": "Servo Motor"
+      },
+      {
+        "id": "urn:ngm:class:dc-servo-motor",
+        "label": "DC Servo Motor"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "id": "urn:ngm:class:electric-actuator",
+        "label": "Electric Actuator"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:robot-actuator",
+        "label": "Robot Actuator"
+      }
+    ]
   },
   "wikilinks": [
     {

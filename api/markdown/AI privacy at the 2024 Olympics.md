@@ -42,15 +42,32 @@ public:: true
   "@id": "urn:ngm:class:ai-privacy-at-the-2024-olympics",
   "@type": "Class",
   "label": "AI privacy at the 2024 Olympics",
-  "definition": "AI privacy at the 2024 Olympics is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "A case study examining the deployment of AI-based surveillance systems at the Paris 2024 Olympic Games, involving real-time video analytics, geolocation tracking, behavioural pattern analysis, and predictive event detection contracted to vendors including Viet, Orange Business, Chaps Vision, and Windex. The deployment required French legislative modifications expanding surveillance powers and raised significant GDPR compliance questions regarding continuous monitoring, data retention, algorithmic bias, and the post-event normalisation of pervasive AI surveillance infrastructure.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
+      {"@id": "urn:ngm:class:object-detection-and-tracking", "label": "Object Detection and Tracking"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:bias", "label": "Bias"},
+      {"@id": "urn:ngm:class:fairness", "label": "Fairness"},
+      {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy By Design"},
+      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
+      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -92,14 +109,16 @@ public:: true
 
 
 - ### Definition
-  - AI privacy at the 2024 Olympics is a concept within the ngm domain.
+  - A case study examining AI-based surveillance at the Paris 2024 Olympic Games: real-time video analytics, geolocation tracking, behavioural pattern analysis, and predictive event detection deployed by Viet, Orange Business, Chaps Vision, and Windex. French legislative modifications expanded surveillance powers, raising significant GDPR compliance questions regarding continuous monitoring, data retention, algorithmic bias, and the post-event normalisation of pervasive AI surveillance infrastructure.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:AIPrivacyAtThe2024Olympics
   - owl-role:: Concept
 
 - ### Relationships
-  - bridges-to:: [[Cryptography]]
+  - uses:: [[Computer Vision]], [[Object Detection and Tracking]]
+  - relatedTo:: [[Bias]], [[Fairness]], [[Privacy By Design]], [[Cryptography]]
+  - contrastsWith:: [[Responsible AI]], [[AI Ethics]]
 
 - ### Content
   - # Implementation at the Olympics

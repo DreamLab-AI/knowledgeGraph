@@ -42,15 +42,31 @@ public:: true
   "@id": "urn:ngm:class:warmup",
   "@type": "Class",
   "label": "Warmup",
-  "definition": "A training technique where the learning rate starts small and gradually increases at the beginning of training to stabilise optimisation. Warmup is standard practice for training large transformer models, preventing instability from large gradients early in training.",
+  "definition": "A training technique where the learning rate starts small and gradually increases over a fixed number of initial steps to stabilise optimisation. Warmup prevents large early gradients from destabilising weight updates and is standard practice for large transformer models, typically preceding a cosine or linear decay schedule.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
     }
   ],
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:training", "label": "Training"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:learning-rate-schedule", "label": "Learning Rate Schedule"},
+      {"@id": "urn:ngm:class:optimiser", "label": "Optimiser"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -93,7 +109,10 @@ public:: true
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **Part-of**: [[Training]] pipeline (initial phase)
+  - **Enables**: [[Deep Learning]] model stability at scale
+  - **Requires**: [[Learning Rate Schedule]] (warmup precedes main schedule), [[Optimiser]] (Adam, AdamW, SGD)
+  - **Uses**: [[Gradient Descent]] (warm-up modulates step magnitude)
 - ### Content
   - A training technique where the learning rate starts small and gradually increases at the beginning of training to stabilise optimisation. Warmup is standard practice for training large transformer models, preventing instability from large gradients early in training.
   #### Key Characteristics

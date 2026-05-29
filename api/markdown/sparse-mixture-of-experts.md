@@ -7,7 +7,12 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Has Part [[Attention Mechanism]]
+  - Has Part [[Transformer Architecture]]
+  - Requires [[Inference]]
+  - Requires [[Training Data]]
+  - Enables [[Real-Time Inference at Edge]]
+  - Contrasts With [[Neural Network Architecture]]
 
 - ### Content
   - An MoE variant with a trainable gating network that selects only a sparse combination of experts for each example, dramatically increasing model capacity whilst maintaining computational efficiency. Sparsely-gated MoE enables models with up to 137 billion parameters with manageable inference costs.

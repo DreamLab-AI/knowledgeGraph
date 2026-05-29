@@ -8,6 +8,10 @@
 
 - ### Relationships
   - is-subclass-of:: [[Virtual Collaboration]]
+  - **requires**: Virtual Reality Platform (XR device and runtime), Avatar (user embodiment in shared space), Spatial Audio (directional presence cues)
+  - **uses**: Extended Reality (mixed/VR/AR display modalities), Haptics (physical interaction feedback)
+  - **enables**: Distributed Work (location-independent team operation), Distributed Collaboration (cross-geography coordinated work)
+  - **relatedTo**: Metaverse (broader virtual environment ecosystem), Metaverse Application (application category this instantiates)
 
 - ### Content
 

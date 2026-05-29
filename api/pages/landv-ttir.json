@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:landv-ttir",
   "domain": "infrastructure",
-  "definition": "Landv\u00e6ttir is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Landv\u00e6ttir is a practice-based art research project and portfolio documenting the bootstrapping era of Generative AI and AGI through digital landscapes, virtual worlds, and AI-generated imagery. Drawing on Scenism, Romanticism, and environmental psychology, it explores how AI systems trained on cultural visual heritage may dream or hallucinate the virtual landscapes that seeded their intelligence.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-software-engineering",
@@ -14,7 +14,7 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,11 +23,29 @@
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:virtual-world",
+        "label": "Virtual World"
+      },
+      {
+        "id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "id": "urn:ngm:class:landscape",
+        "label": "Landscape"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:rb-0045-acceleration",
   "domain": "robotics",
-  "definition": "acceleration is a robotics and autonomous systems concept and a type of Newton-Euler Dynamics.",
+  "definition": "In robotics, acceleration is the rate of change of velocity with respect to time, expressed for each joint (joint-space acceleration) or for the robot's end-effector (task-space acceleration), measured in rad/s\u00b2 or m/s\u00b2 respectively. Acceleration profiles govern the dynamic forces and torques that a manipulator must generate, coupling directly into Newton-Euler equations of motion. Limiting acceleration is central to safety (reducing impact forces) and to trajectory smoothness in collaborative applications.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
@@ -17,21 +17,56 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:rb-0021-robot-kinematics",
+        "label": "rb 0021 robot kinematics"
+      },
+      {
+        "id": "urn:ngm:class:rb-0030-jacobian-matrix",
+        "label": "rb 0030 jacobian matrix"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:rb-0051-trajectory-planning",
+        "label": "rb 0051 trajectory planning"
+      },
+      {
+        "id": "urn:ngm:class:rb-0094-power-and-force-limiting",
+        "label": "rb 0094 power and force limiting"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rb-0044-velocity",
+        "label": "rb 0044 velocity"
+      },
+      {
+        "id": "urn:ngm:class:rb-0043-torque",
+        "label": "rb 0043 torque"
+      },
+      {
+        "id": "urn:ngm:class:rb-0041-inertia",
+        "label": "rb 0041 inertia"
+      },
+      {
+        "id": "urn:ngm:class:rb-0022-robot-dynamics",
+        "label": "rb 0022 robot dynamics"
+      }
+    ]
   },
   "wikilinks": [
     {

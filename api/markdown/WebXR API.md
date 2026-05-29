@@ -46,15 +46,33 @@ public:: true
   "@id": "urn:ngm:class:web-xr-api",
   "@type": "Class",
   "label": "WebXR API",
-  "definition": "web interface enabling rendering and input for AR/VR experiences in browsers.",
+  "definition": "A W3C web standard providing browser-native interfaces for rendering stereoscopic 3D content and handling spatial input from XR headsets and controllers, enabling AR/VR experiences without native application installation. WebXR supersedes the earlier WebVR specification and is implemented across Chromium-based browsers and Firefox.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-standards-and-interop",
       "label": "Standards and Interoperability"
     }
   ],
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
+      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:xr-headset", "label": "XR Headset"},
+      {"@id": "urn:ngm:class:xr-hardware", "label": "XR Hardware"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:web-technology", "label": "Web Technology"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -96,7 +114,7 @@ public:: true
 
 
 - ### Definition
-  - web interface enabling rendering and input for AR/VR experiences in browsers.
+  - A W3C web standard providing browser-native interfaces for rendering stereoscopic 3D content and handling spatial input from XR headsets and controllers, enabling AR/VR experiences without native application installation. WebXR supersedes the earlier WebVR specification and is implemented across Chromium-based browsers and Firefox.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:WebXRAPI
@@ -104,7 +122,10 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **Enables**: [[Augmented Reality]], [[Virtual Reality]], [[Spatial Computing]]
+  - **Requires**: [[XR Headset]], [[XR Hardware]] (device session negotiation)
+  - **Uses**: [[Web Technology]] (browser rendering pipeline)
+  - **Part-of**: [[Interoperability]] standards ecosystem
 
 - ### Content
   - web interface enabling rendering and input for AR/VR experiences in browsers.

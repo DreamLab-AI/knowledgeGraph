@@ -46,20 +46,58 @@ public:: true
   "@id": "urn:ngm:class:computing-platform",
   "@type": "Class",
   "label": "Computing Platform",
-  "definition": "Computing Platform is a type of Infrastructure in the infrastructure domain.",
+  "definition": "A computing platform is a hardware and software environment that provides the foundational execution context for applications, services, and AI workloads. It encompasses the combination of processor architecture, operating system, runtime libraries, and supporting infrastructure—such as cloud, edge, or on-premises nodes—that determines what software can run and how it performs.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
     }
   ],
-  "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:middleware",
+        "label": "Middleware"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:hardware",
+        "label": "Hardware"
+      },
+      {
+        "@id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ]
   }
 }
 ```
@@ -96,7 +134,7 @@ public:: true
 
 
 - ### Definition
-  - Computing Platform is a concept within the metaverse domain. Further enrichment pending.
+  - A computing platform is a hardware and software environment that provides the foundational execution context for applications, services, and AI workloads. It encompasses the combination of processor architecture, operating system, runtime libraries, and supporting infrastructure—such as cloud, edge, or on-premises nodes—that determines what software can run and how it performs.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:ComputingPlatform
@@ -104,6 +142,13 @@ public:: true
 
 - ### Relationships
   - bridges-to:: [[Computer Vision]]
+  - Requires [[Hardware]]
+  - Requires [[Operating System]]
+  - Enables [[AI Infrastructure]]
+  - Enables [[Distributed Computing]]
+  - Has part [[GPU Compute]]
+  - Has part [[Middleware]]
+  - Related to [[Edge Computing]]
 
 - ### Content
 

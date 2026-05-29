@@ -42,16 +42,31 @@ public:: true
   "@id": "urn:ngm:class:environmental-k-p-i",
   "@type": "Class",
   "label": "Environmental K P I",
-  "definition": "Environmental K P I is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Quantitative metrics used to measure, monitor, and report the environmental impact of digital platforms, metaverse infrastructure, and spatial computing systems. Environmental KPIs encompass energy consumption per user session, carbon emissions per compute hour, water usage effectiveness, and percentage of renewable energy sourced, providing governance bodies with evidence for sustainability compliance.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
       "label": "Governance and Safety"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:environmental-certificate", "label": "Environmental Certificate"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:carbon-credit-token", "label": "Carbon Credit Token"},
+      {"@id": "urn:ngm:class:blockchain-sustainability", "label": "Blockchain Sustainability"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:interoperability-framework", "label": "Interoperability Framework"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -87,14 +102,17 @@ public:: true
 
 
 - ### Definition
-  - Environmental K P I is a concept within the metaverse domain. Further enrichment pending.
+  - Quantitative metrics used to measure, monitor, and report the environmental impact of digital platforms, metaverse infrastructure, and spatial computing systems. Environmental KPIs encompass energy consumption per user session, carbon emissions per compute hour, water usage effectiveness, and percentage of renewable energy sourced, providing governance bodies with evidence for sustainability compliance.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:EnvironmentalKPI
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **enables**: Environmental Certificate — measured KPIs provide the evidential basis for issuing environmental certificates
+  - **relatedTo**: Carbon Credit Token, Blockchain Sustainability — KPI data feeds tokenised carbon accounting and broader sustainability reporting
+  - **requires**: Data Governance — accurate KPI measurement depends on governed, auditable data collection pipelines
+  - **standardizedBy**: Interoperability Framework — cross-platform KPI comparability requires common measurement schemas
 
 - ### Content
 

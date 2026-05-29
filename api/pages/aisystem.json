@@ -5,26 +5,58 @@
   "public": true,
   "classIri": "urn:ngm:class:aisystem",
   "domain": "artificial-intelligence",
-  "definition": "A comprehensive system architecture comprising machine learning models, data pipelines, inference engines, and deployment infrastructure that enables intelligent decision-making and automation.",
+  "definition": "A comprehensive system architecture comprising machine learning models, data pipelines, inference engines, and deployment infrastructure that enables intelligent decision-making and automation across diverse application domains.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure (Category)"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.4,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:machine-learning-model",
+        "label": "Machine Learning Model"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:aiethics",
+        "label": "AIEthics"
+      },
+      {
+        "id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": []

@@ -42,9 +42,9 @@ public:: true
   "@id": "urn:ngm:class:rb-0095-safety-zone",
   "@type": "Class",
   "label": "rb 0095 safety zone",
-  "definition": "safety zone is a robotics and autonomous systems concept and a type of Robot Safety.",
+  "definition": "A safety zone is a defined spatial region around a robot or autonomous system within which human presence or other objects trigger protective actions such as speed reduction, monitored stops, or full emergency stops. Safety zones are configured and monitored via safeguarding devices and are a central mechanism for achieving collaborative and safe robot operation in accordance with ISO 10218 and ISO/TS 15066.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-safety-and-standards",
@@ -55,7 +55,24 @@ public:: true
       "label": "Robot Safety"
     }
   ],
-  "quality": 0.5,
+  "qualityScore": 0.7,
+  "quality": 0.7,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:rb-0096-safeguarding", "label": "rb 0096 safeguarding"},
+      {"@id": "urn:ngm:class:rb-0091-safety-rated-monitored-stop", "label": "rb 0091 safety rated monitored stop"},
+      {"@id": "urn:ngm:class:rb-0092-protective-stop", "label": "rb 0092 protective stop"},
+      {"@id": "urn:ngm:class:rb-0093-speed-limitation", "label": "rb 0093 speed limitation"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:rb-0089-risk-assessment", "label": "rb 0089 risk assessment"},
+      {"@id": "urn:ngm:class:rb-0087-safety-standard", "label": "rb 0087 safety standard"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:rb-0075-range-finder", "label": "rb 0075 range finder"},
+      {"@id": "urn:ngm:class:functional-safety", "label": "Functional Safety"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -91,7 +108,7 @@ public:: true
 
 
 - ### Definition
-  - ### Primary Definition
+  - A **safety zone** is a spatially delimited region around a robot or autonomous system where the presence of humans or objects triggers protective behaviour. Zones are typically tiered: an outer warning zone reduces robot speed (see rb 0093 speed limitation), while an inner protective zone triggers a monitored or protective stop (rb 0091, rb 0092). Detection relies on safeguarding devices such as laser scanners and range finders (rb 0075).
 
 - ### Semantic Classification
   - owl-class:: robotics:SafetyZone
@@ -99,7 +116,9 @@ public:: true
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Requires risk assessment (rb 0089) to define zone extents and response thresholds.
+  - Depends on range finders and LiDAR sensors for real-time occupancy monitoring.
+  - Enabled by safeguarding infrastructure (rb 0096) and validated under safety standards (rb 0087, ISO 10218-2, ISO/TS 15066).
 
 - ### Content
   - ### Primary Definition

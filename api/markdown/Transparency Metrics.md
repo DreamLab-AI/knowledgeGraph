@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:transparency-metrics",
   "@type": "Class",
   "label": "Transparency Metrics",
-  "definition": "Quantitative and qualitative measures used to assess and communicate the openness, accountability, and visibility of governance, operations, and decision-making processes in digital platforms, DAOs, and metaverse environments.",
+  "definition": "Quantitative and qualitative measures used to assess and communicate the openness, accountability, and visibility of governance, operations, and decision-making processes in digital platforms, DAOs, and metaverse environments. Frameworks such as GRI, SASB, and the T-Index provide standardised scoring across data disclosure, financial reporting, and decision visibility dimensions. In blockchain contexts, on-chain voting records and treasury analytics serve as primary evidence sources.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
@@ -59,7 +60,23 @@ public:: true
       "label": "Governance"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:compliance-monitoring", "label": "Compliance Monitoring"},
+      {"@id": "urn:ngm:class:decision-transparency", "label": "Decision Transparency"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:dao-governance", "label": "DAO Governance"},
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:ai-governance-framework", "label": "AI Governance Framework"},
+      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -109,6 +126,10 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Governance]]
+  - requires:: [[Audit Trail]]
+  - enables:: [[Compliance Monitoring]], [[Decision Transparency]]
+  - uses:: [[DAO Governance]], [[Blockchain]]
+  - relatedTo:: [[AI Governance Framework]], [[Compliance Framework]]
 
 - ### Content
 

@@ -37,9 +37,10 @@ public:: true
   "@id": "urn:ngm:class:shader",
   "@type": "Class",
   "label": "Shader",
-  "definition": "Shader is a spatial computing concept and a type of spatial-computing.",
+  "definition": "A programmable GPU program that replaces fixed-function rendering stages, defining how vertices are transformed and how fragments are coloured by executing artist-authored algorithms in parallel across thousands of GPU threads. Shaders encompass vertex, fragment, geometry, and compute variants, collectively controlling every aspect of a rendered image's visual appearance.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-display-and-rendering",
@@ -51,6 +52,44 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:vertex-shader",
+        "label": "Vertex Shader"
+      },
+      {
+        "@id": "urn:ngm:class:pixel-shader",
+        "label": "Pixel Shader"
+      },
+      {
+        "@id": "urn:ngm:class:compute-shader",
+        "label": "Compute Shader"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:rasterization",
+        "label": "Rasterization"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:shader-language",
+        "label": "Shader Language"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:rendering-technique",
+        "label": "Rendering Technique"
+      },
+      {
+        "@id": "urn:ngm:class:visual-effects",
+        "label": "Visual Effects"
+      }
+    ]
   }
 }
 ```
@@ -76,12 +115,15 @@ public:: true
 
 
 - ### Definition
-  - Shader is a concept within the ngm domain.
+  - A programmable GPU program that replaces fixed-function rendering stages, defining how vertices are transformed and how fragments are coloured by executing artist-authored algorithms in parallel across thousands of GPU threads. Shaders encompass vertex, fragment, geometry, and compute variants, collectively controlling every aspect of a rendered image's visual appearance.
 - ### Semantic Classification
   - owl-class:: spatial-computing:Shader
   - owl-role:: Concept
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Has Part: [[Vertex Shader]], [[Pixel Shader]], [[Compute Shader]]
+  - Uses: [[Rasterization]]
+  - Supports: [[Rendering Technique]], [[Visual Effects]]
+  - Related To: [[Shader Language]]
 - ### Content
   # Shader
   Shader represents programmable processing units executing on GPUs defining how vertices transform, fragments shade, and compute tasks process in parallel across thousands of threads. Shaders replace fixed-function rendering pipelines with flexible artist-authored algorithms controlling every aspect of visual appearance. Vertex shaders process individual vertices transforming positions from object space through world and view spaces to clip space, potentially applying skeletal animation skinning, morphing, or procedural displacement. Fragment (pixel) shaders compute final color and depth for each screen sample, sampling textures, evaluating lighting equations, applying normal mapping for surface detail, and implementing effects like rim lighting or subsurface scattering. Geometry shaders optionally generate additional primitives from input geometry, enabling particle expansion or dynamic tessellation. Compute shaders provide general-purpose GPU computing for tasks like physics simulation, particle systems, or post-processing. Modern shading leverages programmable blending, conservative rasterization, and variable rate shading adjusting fragment shader invocation frequency based on scene importance. Shader authoring balances visual fidelity against performance budget, with profiling tools identifying bottlenecks and optimization opportunities.

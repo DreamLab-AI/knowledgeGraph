@@ -17,19 +17,40 @@
   "@id": "urn:ngm:class:cognitive-science",
   "@type": "Class",
   "label": "Cognitive Science",
-  "definition": "Cognitive Science is a foundational concept in infrastructure that serves as a classification parent for 3 related concepts in the ontology.",
+  "definition": "Cognitive Science is an interdisciplinary field studying the nature of mind, intelligence, and cognition, encompassing perception, memory, language, reasoning, and decision-making through contributions from psychology, neuroscience, linguistics, philosophy, and artificial intelligence. Its models of human cognition directly inform the design of AI systems, user interfaces, and human-computer interaction paradigms.",
   "domain": "infrastructure",
-  "maturity": "draft",
-  "quality": 0.3,
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
-  ]
+  ],
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"},
+      {"@id": "urn:ngm:class:cognitive-ai", "label": "Cognitive AI"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:cognitive-architecture", "label": "Cognitive Architecture"},
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+    ]
+  }
 }
 ```
 
 ## Cognitive Science
 
-Cognitive Science is a foundational concept that serves as a taxonomy parent for related classes in the infrastructure domain.
+Cognitive Science is an interdisciplinary field studying the nature of mind, intelligence, and cognition through contributions from psychology, neuroscience, linguistics, philosophy, and artificial intelligence. Its computational models of perception, memory, and reasoning directly inform the design of AI systems, user interfaces, and human-computer interaction paradigms.
+
+### Relationships
+
+- **enables** [[Human Computer Interaction]] — cognitive models underpin HCI design principles
+- **enables** [[Cognitive AI]] — cognitive science provides the theoretical basis for cognitive architectures in AI
+- **relatedTo** [[Cognitive Architecture]] — formalised cognitive science theories instantiated as computational architectures
+- **relatedTo** [[Artificial Intelligence]] — AI draws on and contributes back to cognitive science
+- **supports** [[Machine Learning]] — cognitive learning theories inform ML algorithm design

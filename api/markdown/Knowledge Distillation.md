@@ -60,13 +60,29 @@ public:: true
   "label": "Knowledge Distillation",
   "definition": "A model compression technique where a smaller \"student\" model is trained to mimic the behaviour of a larger \"teacher\" model, transferring knowledge through soft targets.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
+      {"@id": "urn:ngm:class:training-data", "label": "Training Data"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
+      {"@id": "urn:ngm:class:model-compression-for-edge", "label": "Model Compression for Edge"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:parameter-efficient-fine-tuning", "label": "Parameter-Efficient Fine-Tuning"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -131,7 +147,12 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Large Language Models]]
+  - requires [[Training Data]]
+  - enables [[Edge Computing]]
+  - enables [[Model Compression for Edge]]
+  - contrastsWith [[Parameter-Efficient Fine-Tuning]]
+  - relatedTo [[Transfer Learning]]
 
 - ### Content
   - A model compression technique where a smaller "student" model is trained to mimic the behaviour of a larger "teacher" model, transferring knowledge through soft targets. Knowledge distillation enables simple student networks with few parameters to achieve comparable performance to deep teacher networks.

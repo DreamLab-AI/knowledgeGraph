@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:distributed-system",
   "domain": "infrastructure",
-  "definition": "Distributed System is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A Distributed System is a collection of autonomous computing nodes that communicate over a network and coordinate their actions to appear as a single coherent system to end users. Key properties include decentralisation (no single point of failure), fault tolerance via consensus protocols, and eventual consistency governed by CAP theorem trade-offs. Blockchain networks, microservices architectures, and distributed databases are canonical instantiations.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
@@ -14,11 +14,38 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      },
+      {
+        "id": "urn:ngm:class:data-replication",
+        "label": "Data Replication"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],

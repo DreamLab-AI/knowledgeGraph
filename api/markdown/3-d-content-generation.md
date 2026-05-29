@@ -8,6 +8,9 @@
 - ### Relationships
   - is-subclass-of:: ['owl:Thing']
   - bridges-to:: [[Digital Asset]] (domain: mv), [[Autonomous Robot]] (domain: rb)
+  - Uses: [[Neural Rendering]], [[Procedural Generation]], [[Deep Learning]]
+  - Enables: [[Digital Asset]], [[Digital Twin]]
+  - Related To: [[3D Asset]], [[3D Animation]]
 
 - ### Content
 

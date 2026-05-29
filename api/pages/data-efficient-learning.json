@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:data-efficient-learning",
   "domain": "artificial-intelligence",
-  "definition": "Data Efficient Learning is a type of Artificial Intelligence in the artificial intelligence domain.",
+  "definition": "Data Efficient Learning encompasses machine learning techniques that achieve strong generalisation from limited labelled training examples, including transfer learning, few-shot learning, semi-supervised learning, data augmentation, and self-supervised pretraining. These methods address real-world constraints where large annotated datasets are impractical to obtain, making AI deployable in specialised or resource-constrained domains.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-data",
+        "label": "Synthetic Data"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:curriculum-learning",
+        "label": "Curriculum Learning"
+      },
+      {
+        "id": "urn:ngm:class:contrastive-learning",
+        "label": "Contrastive Learning"
+      }
+    ]
   },
   "wikilinks": [
     {

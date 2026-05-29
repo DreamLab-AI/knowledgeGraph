@@ -5,29 +5,56 @@
   "public": true,
   "classIri": "urn:ngm:class:hugging-face-diffusers",
   "domain": "artificial-intelligence",
-  "definition": "Hugging Face Diffusers is an open-source library providing modular, pre-trained diffusion model pipelines for image, audio, and video generation tasks.",
+  "definition": "Hugging Face Diffusers is an open-source Python library that provides a modular, composable toolkit for training, fine-tuning, and running inference with state-of-the-art diffusion models for image, audio, and video generation. The library abstracts the scheduling, noise prediction, and decoder stages of diffusion pipelines behind a consistent API, enabling rapid experimentation with architectures such as Stable Diffusion, DALL-E-style flows, and audio diffusion models. It integrates natively with the Hugging Face Hub for model discovery and versioning, and with PyTorch and JAX as compute backends.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "id": "urn:ngm:class:text-to-image",
+        "label": "Text-to-Image"
+      },
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:hugging-face-hub",
+        "label": "HuggingFace Hub"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

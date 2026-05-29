@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:world-building",
   "domain": "spatial-computing",
-  "definition": "World Building is a spatial computing concept and a type of spatial-computing.",
+  "definition": "The creative and technical process of designing, constructing, and populating coherent virtual environments \u2014 including geography, architecture, atmosphere, lore, and rules \u2014 for use in games, virtual reality, film, and metaverse platforms. World building integrates procedural generation, 3D modelling, level design, environmental storytelling, and real-time rendering to produce navigable, persistent virtual worlds.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -13,21 +13,57 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:3-d-modeling",
+        "label": "3D Modeling"
+      },
+      {
+        "id": "urn:ngm:class:design-software",
+        "label": "Design Software"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "id": "urn:ngm:class:virtual-production-workflow",
+        "label": "Virtual Production Workflow"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "id": "urn:ngm:class:3-d-content-generation",
+        "label": "3D Content Generation"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:metaverse-architecture",
+        "label": "Metaverse Architecture"
+      },
+      {
+        "id": "urn:ngm:class:3-d-rendering-engine",
+        "label": "3D Rendering Engine"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": []

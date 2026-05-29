@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:postquantum-cryptography",
   "domain": "infrastructure",
-  "definition": "Postquantum Cryptography is a type of Infrastructure in the infrastructure domain.",
+  "definition": "Postquantum Cryptography (PQC) is the class of cryptographic algorithms designed to remain secure against adversaries equipped with large-scale quantum computers, replacing public-key schemes such as RSA and elliptic-curve cryptography that are broken by Shor's algorithm. PQC families include lattice-based, hash-based, code-based, and isogeny-based constructions, several of which NIST standardised in 2024 (e.g. CRYSTALS-Kyber, CRYSTALS-Dilithium).",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-security-and-identity",
@@ -13,21 +13,91 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "emerging",
+  "qualityScore": 0.8,
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public-Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:censorship-resistance",
+        "label": "Censorship Resistance"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:asymmetric-encryption",
+        "label": "Asymmetric Encryption"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:cyber-security-and-cryptography",
+        "label": "Cyber Security and Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity-standard",
+        "label": "Cybersecurity Standard"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:quantum-computing",
+        "label": "Quantum Computing"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-application",
+        "label": "Blockchain Application"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature-verification",
+        "label": "Digital Signature Verification"
+      }
+    ]
   },
   "wikilinks": [
     {

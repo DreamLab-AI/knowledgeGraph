@@ -8,6 +8,12 @@
 
 - ### Relationships
   - is-subclass-of:: [[Digital Asset Management]]
+  - Implements [[NFT Renting]]
+  - Implements [[Digital Asset Lending]]
+  - Requires [[Smart Contract]]
+  - Requires [[NFT Standard]]
+  - Uses [[NFT]]
+  - Related to [[NFT Marketplace]]
 
 - ### Content
 

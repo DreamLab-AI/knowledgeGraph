@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:embedding-model",
   "domain": "artificial-intelligence",
-  "definition": "An embedding model is a neural network trained to map discrete or high-dimensional inputs\u2014such as text, images, or graphs\u2014into dense, continuous vector representations that preserve semantic relationships.",
+  "definition": "An embedding model is a neural network trained to project discrete or high-dimensional inputs\u2014such as tokens, sentences, images, or knowledge-graph nodes\u2014into dense, fixed-dimensional vector representations in a continuous latent space that preserves semantic and structural relationships. The geometry of the resulting embedding space encodes similarity: semantically related inputs map to vectors with high cosine similarity, enabling downstream tasks such as semantic search, clustering, classification, and retrieval-augmented generation. Embedding models are trained using objectives such as contrastive learning, masked language modelling, or cross-modal alignment.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-model-architecture",
@@ -14,20 +14,44 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

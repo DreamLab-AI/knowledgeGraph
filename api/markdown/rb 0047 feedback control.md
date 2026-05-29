@@ -42,9 +42,10 @@ public:: true
   "@id": "urn:ngm:class:rb-0047-feedback-control",
   "@type": "Class",
   "label": "rb 0047 feedback control",
-  "definition": "feedback control is a robotics and autonomous systems concept and a type of Closed-Loop Control.",
+  "definition": "A closed-loop control strategy in which sensor measurements of a system's output are continuously compared to a reference setpoint, and the resulting error signal drives corrective actuator commands. Feedback control is the foundational mechanism for stable, accurate robotic motion, enabling autonomous robots and telerobotic systems to compensate for disturbances, model uncertainty, and environmental variation.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-actuation-and-control",
@@ -55,11 +56,48 @@ public:: true
       "label": "Closed-Loop Control"
     }
   ],
-  "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:adaptive-control",
+        "label": "Adaptive Control"
+      },
+      {
+        "@id": "urn:ngm:class:robot-control",
+        "label": "Robot Control"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:pid-control",
+        "label": "PID Control"
+      },
+      {
+        "@id": "urn:ngm:class:robot-sensor",
+        "label": "Robot Sensor"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:robotics-control",
+        "label": "Robotics Control"
+      },
+      {
+        "@id": "urn:ngm:class:teleoperation",
+        "label": "Teleoperation"
+      }
+    ]
   }
 }
 ```
@@ -91,7 +129,7 @@ public:: true
 
 
 - ### Definition
-  - ### Primary Definition
+  - A closed-loop control strategy in which sensor measurements of a system's output are continuously compared to a reference setpoint, and the resulting error signal drives corrective actuator commands. Feedback control is the foundational mechanism for stable, accurate robotic motion, enabling autonomous robots and telerobotic systems to compensate for disturbances, model uncertainty, and environmental variation.
 
 - ### Semantic Classification
   - owl-class:: robotics:rb0047feedbackcontrol
@@ -99,7 +137,10 @@ public:: true
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses [[PID Control]], [[Robot Sensor]]
+  - Enables [[Adaptive Control]], [[Robot Control]]
+  - Requires [[Sensor Fusion]]
+  - Related to [[Robotics Control]], [[Teleoperation]]
 
 - ### Content
   - ### Primary Definition

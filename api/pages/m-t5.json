@@ -5,33 +5,74 @@
   "public": true,
   "classIri": "urn:ngm:class:m-t5",
   "domain": "artificial-intelligence",
-  "definition": "Multilingual T5: a massively multilingual variant of T5 pre-trained on the mC4 corpus covering 101 languages, using the same text-to-text framework as T5.",
+  "definition": "mT5 (Multilingual T5) is a massively multilingual pre-trained text-to-text transformer model developed by Google Research, covering 101 languages through pre-training on the mC4 multilingual Common Crawl corpus. It extends the T5 architecture's unified text-to-text framework to multilingual settings, treating all NLP tasks as sequence-to-sequence problems. mT5 enables strong cross-lingual transfer and zero-shot performance on low-resource languages, making it a foundational model for multilingual NLP applications including translation, question answering, and information retrieval.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-model-architecture",
       "label": "AI Model Architecture"
-    },
-    {
-      "id": "urn:ngm:individual:foundation-models",
-      "label": "Foundation Models"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:pretrained-model",
+        "label": "Pretrained Model"
+      },
+      {
+        "id": "urn:ngm:class:embedding-model",
+        "label": "Embedding Model"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:tokenization",
+        "label": "Tokenization"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:encoder-decoder-architecture",
+        "label": "Encoder Decoder Architecture"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -7,7 +7,14 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - is-subclass-of:: Medical AI
+  - Uses [[Data Analytics]]
+  - Uses [[Machine Learning]]
+  - Enables [[Medical AI]]
+  - Enables [[Healthcare Technology]]
+  - Related To [[Pathology AI]]
+  - Related To [[Medical Imaging AI]]
+  - Related To [[Privacy Preserving Analytics]]
 
 - ### Content
   - Healthcare Analytics applies artificial intelligence and data science to healthcare data for population health management, operational efficiency optimisation, clinical outcome prediction, resource allocation, and healthcare policy decision-making. These systems analyse electronic health records, claims data, public health data, and operational metrics to derive actionable insights for healthcare improvement.

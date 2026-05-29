@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:safety-fine-tuning",
   "domain": "artificial-intelligence",
-  "definition": "Fine-tuning specifically aimed at improving AI system safety, reducing harmful outputs, and enhancing alignment with safety principles. Safety fine-tuning typically follows general capability training and uses safety-focused datasets and objectives.",
+  "definition": "Safety Fine Tuning is a specialised training stage applied after general capability training to reduce harmful outputs and align model behaviour with safety principles. It employs safety-curated datasets, RLHF, and constitutional AI objectives to harden models against adversarial misuse and emergent misalignment.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -17,21 +17,49 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:adversarial-attack",
+        "label": "Adversarial Attack"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:value-alignment",
+        "label": "Value Alignment"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:robustness",
+        "label": "Robustness"
+      }
+    ]
   },
   "wikilinks": [
     {

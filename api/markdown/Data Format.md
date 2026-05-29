@@ -46,9 +46,9 @@ public:: true
   "@id": "urn:ngm:class:data-format",
   "@type": "Class",
   "label": "Data Format",
-  "definition": "Data Format is a type of Data Standards in the infrastructure domain.",
+  "definition": "Data Format defines the structural and encoding specification by which data is stored, transmitted, and interpreted between systems. Formats span binary serialisation (Protocol Buffers, Avro), text-based interchange (JSON, JSON-LD, XML), domain-specific schemas (DICOM, glTF), and columnar storage formats (Parquet). Format choice determines interoperability scope, parsing overhead, and compatibility with downstream processing pipelines.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-data-management",
@@ -59,6 +59,19 @@ public:: true
       "label": "Data Standards"
     }
   ],
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:data-standards", "label": "Data Standards"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:data-interoperability", "label": "Data Interoperability"},
+      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:json-ld", "label": "JSON-LD"},
+      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -100,14 +113,18 @@ public:: true
 
 
 - ### Definition
-  - Data Format is a concept within the metaverse domain. Further enrichment pending.
+  - Data Format defines the structural and encoding specification by which data is stored, transmitted, and interpreted between systems. Formats span binary serialisation (Protocol Buffers, Avro), text-based interchange (JSON, JSON-LD, XML), domain-specific schemas (DICOM, glTF), and columnar storage formats (Parquet). Format choice determines interoperability scope, parsing overhead, and compatibility with downstream processing pipelines.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:DataFormat
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - partOf [[Data Standards]]
+  - enables [[Data Interoperability]]
+  - enables [[Data Pipeline]]
+  - relatedTo [[JSON-LD]]
+  - relatedTo [[Linked Data]]
 
 - ### Content
 

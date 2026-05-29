@@ -50,7 +50,7 @@ public:: true
   "@id": "urn:ngm:class:constraint-based-design",
   "@type": "Class",
   "label": "Constraint Based Design",
-  "definition": "A constraint based design component in the Artificial Intelligence domain that enables GenerativeDesignTool.",
+  "definition": "Constraint based design is an engineering and AI approach in which the solution space is defined by a set of explicit constraints — physical, functional, regulatory, or performance bounds — that any valid design must satisfy. Solvers or optimisation algorithms explore the constrained space to find feasible and optimal configurations. The method is foundational to generative design tools, parametric modelling, robotics motion planning, and cyber-physical system validation.",
   "domain": "artificial-intelligence",
   "maturity": "emerging",
   "subClassOf": [
@@ -63,11 +63,33 @@ public:: true
       "label": "AI System Component"
     }
   ],
-  "quality": 0.35,
+  "quality": 0.75,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:generative-design-tool", "label": "Generative Design Tool"},
+      {"@id": "urn:ngm:class:formal-verification", "label": "Formal Verification"},
+      {"@id": "urn:ngm:class:product-design", "label": "Product Design"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:optimization-algorithm", "label": "Optimization Algorithm"},
+      {"@id": "urn:ngm:class:constraint", "label": "Constraint"},
+      {"@id": "urn:ngm:class:parametric-modeling", "label": "Parametric Modeling"},
+      {"@id": "urn:ngm:class:simulation", "label": "Simulation"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
+      {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"},
+      {"@id": "urn:ngm:class:cyber-physical-systems", "label": "Cyber Physical Systems"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
+      {"@id": "urn:ngm:class:simulation-engine", "label": "Simulation Engine"}
+    ]
   }
 }
 ```
@@ -120,7 +142,9 @@ public:: true
   - bridges-to:: [[Digital Twin]], [[Autonomous Robot]]
 
 - ### Content
-  ConstraintBasedDesign — content pending enrichment.
+  Constraint based design encodes domain knowledge as a formal constraint system rather than explicit design recipes. Optimisation solvers — including evolutionary algorithms, SAT solvers, and gradient-based methods — traverse the feasible region to propose solutions meeting all constraints simultaneously.
+
+  In AI-assisted engineering workflows the approach couples with generative design tools to automatically explore topology and material configurations. In robotics and autonomous systems it underpins motion planning, where kinematic and collision-avoidance constraints define the valid trajectory space through configuration-space search.
 
 - ### Provenance
   - sources:: Generated from bridge validation

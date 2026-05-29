@@ -1,84 +1,20 @@
-- ### Definition
-  - Stakeholder interest convergence within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
+### Definition
 
-- ### Semantic Classification
-  - owl-class:: blockchain:IncentiveAlignment
-  - owl-role:: Object
-  - owl-inferred:: blockchain:VirtualObject
-  - belongs-to-domain:: [[TokenEconomicsDomain]]
-  - implemented-in-layer:: [[EconomicLayer]]
+Incentive Alignment is the design principle by which blockchain protocols structure economic rewards and penalties such that individual rational behaviour converges with the collective goals of the network. When correctly engineered, participants who act in their own self-interest—validators confirming blocks, miners extending chains, token holders participating in governance—simultaneously reinforce system security, liveness, and integrity. Misaligned incentives produce attack vectors such as selfish mining, validator collusion, or governance capture.
 
-- ### Relationships
-  - is-subclass-of:: [[Blockchain Entity]], [[EconomicMechanism]]
+### Relationships
 
-- ### Content
+Incentive Alignment **requires** [[Mechanism Design]] and a well-specified [[Consensus Mechanism]] to function correctly, as the game-theoretic structure of rewards must be embedded in the protocol rules themselves. It **enables** rational participation by [[Validator Node]]s and supplies the foundation upon which viable [[Tokenomics]] can be built. The concept **hasPart** [[Block Reward]] and [[Reward Distribution]] as concrete instantiations—these are the on-chain instruments through which alignment is achieved. It **contrastsWith** [[Selfish Mining]] and [[51% Attack]], which represent failure modes that emerge when incentives are misaligned or exploitable. It is **relatedTo** [[Proof of Stake]] (which extends incentive alignment to capital-at-risk slashing), [[DAO Governance]], [[Governance Token]], and [[Emission Schedule]] (which determines how rewards diminish over time).
 
-  ## Class Declaration
-  Declaration(Class(:IncentiveAlignment))
+### Content
 
-  ## Subclass Relationships
-  SubClassOf(:IncentiveAlignment :EconomicMechanism)
-  SubClassOf(:IncentiveAlignment :BlockchainEntity)
+Incentive alignment sits at the intersection of mechanism design, game theory, and distributed systems engineering. The foundational insight—popularised by Bitcoin's whitepaper—is that honest participation must be more profitable than any feasible attack, ensuring that the Nash equilibrium of the protocol game coincides with correct operation.
 
-  ## Essential Properties
-  SubClassOf(:IncentiveAlignment
-    (ObjectSomeValuesFrom :partOf :Blockchain))
+In proof-of-work systems, alignment is achieved through block rewards and transaction fees: a miner who extends the longest honest chain earns more in expectation than one who forks or withholds blocks. In proof-of-stake systems, validators stake collateral that is slashed for misbehaviour (double signing, equivocation) while receiving staking rewards for correct attestations, creating a direct financial stake in protocol integrity.
 
-  SubClassOf(:IncentiveAlignment
-    (ObjectSomeValuesFrom :hasProperty :Property))
+Incentive alignment becomes more complex in multi-layer ecosystems. Layer-2 operators, bridge validators, oracle providers, and governance participants each face distinct incentive structures that must be co-designed to prevent cross-layer exploits. Emission schedules that gradually reduce block rewards force protocols to transition toward fee-based sustainability, requiring careful alignment between transaction demand and validator economics.
 
-  ## Data Properties
-  DataPropertyAssertion(:hasIdentifier :IncentiveAlignment "BC-0120"^^xsd:string)
-  DataPropertyAssertion(:hasAuthorityScore :IncentiveAlignment "1.0"^^xsd:decimal)
-  DataPropertyAssertion(:isFoundational :IncentiveAlignment "true"^^xsd:boolean)
-
-  ## Object Properties
-  ObjectPropertyAssertion(:enablesFeature :IncentiveAlignment :BlockchainFeature)
-  ObjectPropertyAssertion(:relatesTo :IncentiveAlignment :RelatedConcept)
-
-  ## Annotations
-  AnnotationAssertion(rdfs:label :IncentiveAlignment "Incentive Alignment"@en)
-  AnnotationAssertion(rdfs:comment :IncentiveAlignment
-    "Stakeholder interest convergence"@en)
-  AnnotationAssertion(dct:description :IncentiveAlignment
-    "Foundational blockchain concept with formal ontological definition"@en)
-  AnnotationAssertion(:termID :IncentiveAlignment "BC-0120")
-  AnnotationAssertion(:priority :IncentiveAlignment "1"^^xsd:integer)
-  AnnotationAssertion(:category :IncentiveAlignment "economic-incentive"@en)
-  )
-      ```
-
-  - ## About Incentive Alignment
-
-  - Stakeholder interest convergence within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
-  - ### Key Characteristics
-    - 1. **Definitional Property**: Core defining characteristic
-    - 2. **Functional Property**: Operational behavior
-    - 3. **Structural Property**: Compositional elements
-    - 4. **Security Property**: Security guarantees provided
-    - 5. **Performance Property**: Efficiency considerations
-  - ### Technical Components
-    - **Implementation**: How concept is realized technically
-    - **Verification**: Methods for validating correctness
-    - **Interaction**: Relationships with other components
-    - **Constraints**: Technical limitations and requirements
-  - ### Use Cases
-    - **1. Core Blockchain Operation**
-    - **Application**: Fundamental blockchain functionality
-    - **Example**: Practical implementation in major blockchains
-    - **Requirements**: Technical prerequisites
-    - **Benefits**: Value provided to blockchain systems
-  - ### Standards & References
-    - [[ISO/IEC 23257:2021]] - Blockchain and distributed ledger technologies
-    - [[IEEE 2418.1]] - Blockchain and distributed ledger technologies
-    - [[NIST NISTIR]] - Blockchain and distributed ledger technologies
-
-
-
-  <!-- Merged from BC 0120 incentive alignment.md: MetaverseDomain -->
-
-
-  <!-- Merged from Incentive Alignment.md: Blockchain, Tokenomics -->
+Governance tokens extend incentive alignment to protocol upgrades: holders benefit from improvements that increase token value, aligning improvement proposals with broader network health. However, large token concentrations can create misalignment where a minority captures disproportionate governance power—motivating research into quadratic voting, time-locked governance, and delegation mechanisms.
 
 - ### Provenance
   - sources:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]

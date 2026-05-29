@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:rb-1013-localization",
   "domain": "robotics",
-  "definition": "RB 1013 localization is a type of Robotics in the robotics domain.",
+  "definition": "RB 1013 localization is a robotics navigation concept addressing the problem of a mobile robot determining its pose within a known or partially known environment. It encompasses probabilistic state estimation techniques such as particle filters, extended Kalman filters, and scan-matching algorithms applied to sensor data from LiDAR, wheel odometry, and IMUs to produce continuous pose estimates suitable for autonomous navigation.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-navigation-and-planning",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:particle-filter",
+        "label": "Particle Filter"
+      },
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "id": "urn:ngm:class:localization",
+        "label": "Localization"
+      },
+      {
+        "id": "urn:ngm:class:visual-odometry",
+        "label": "Visual Odometry"
+      }
+    ]
   },
   "wikilinks": [
     {

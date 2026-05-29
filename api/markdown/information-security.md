@@ -1,12 +1,20 @@
 - ### Definition
-  - Information Security in AI addresses the protection of data, models, and AI systems from unauthorized access, adversarial attacks, privacy breaches, and malicious exploitation. This includes defending against adversarial examples, model inversion attacks, data poisoning, membership inference, and model extraction. Security measures encompass differential privacy for data protection, federated learning for distributed privacy-preserving training, robust training methods, secure multi-party computation, and encryption of model parameters. As AI systems become critical infrastructure, information security ensures confidentiality, integrity, availability, and trustworthiness.
+  - Information Security in AI addresses the protection of data, models, and AI systems from unauthorised access, adversarial attacks, privacy breaches, and malicious exploitation. Security measures encompass differential privacy, federated learning, robust training methods, secure multi-party computation, and encryption to ensure confidentiality, integrity, and availability of AI systems as critical infrastructure.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:InformationSecurity
   - owl-role:: concept
 
 - ### Relationships
-  - is-subclass-of:: ['owl:Thing']
+  - is-subclass-of:: [[AI Governance and Ethics]]
+  - Uses: [[Differential Privacy]]
+  - Uses: [[Federated Learning]]
+  - Uses: [[Encryption]]
+  - Requires: [[Access Control]]
+  - Requires: [[Authentication]]
+  - Supports: [[Privacy]]
+  - Supports: [[Data Security]]
+  - Related To: [[Cybersecurity]]
 
 - ### Content
 

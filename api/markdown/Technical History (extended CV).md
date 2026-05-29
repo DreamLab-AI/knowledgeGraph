@@ -94,16 +94,35 @@ public:: true
   "@id": "urn:ngm:class:technical-history-extended-cv",
   "@type": "Class",
   "label": "Technical History (extended CV)",
-  "definition": "Technical History (extended CV) is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Technical History (extended CV) is the knowledge-graph representation of the author's professional research trajectory, spanning 15+ years leading immersive technology laboratories, securing multi-million-pound grant funding, and developing open-source metaverse and AI systems. It contextualises published research, institutional roles, and ongoing projects — including Knowhere, Flossverse, and FutureFleet — within the graph's broader topics of spatial computing, AI, and decentralised systems.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:national-industrial-centre-for-virtual-environments", "label": "National Industrial Centre for Virtual Environments"},
+      {"@id": "urn:ngm:class:mixed-reality", "label": "Mixed Reality"},
+      {"@id": "urn:ngm:class:metaverse-and-telecollaboration", "label": "Metaverse and Telecollaboration"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:knowhere", "label": "Knowhere"},
+      {"@id": "urn:ngm:class:dreamlab", "label": "Dreamlab"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:proprietary-large-language-models", "label": "Proprietary Large Language Models"},
+      {"@id": "urn:ngm:class:hyper-personalisation", "label": "Hyper personalisation"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:trust-and-safety", "label": "Trust and Safety"},
+      {"@id": "urn:ngm:class:location-based-experience", "label": "Location Based Experience"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -209,14 +228,17 @@ public:: true
 
 
 - ### Definition
-  - Technical History (extended CV) is a concept within the ngm domain.
+  - Technical History (extended CV) is the knowledge-graph representation of the author's professional research trajectory, spanning 15+ years leading immersive technology laboratories, securing multi-million-pound grant funding, and developing open-source metaverse and AI systems. It contextualises published research, institutional roles, and ongoing projects — including Knowhere, Flossverse, and FutureFleet — within the graph's broader topics of spatial computing, AI, and decentralised systems.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:TechnicalHistoryExtendedCV
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - relatedTo:: National Industrial Centre for Virtual Environments, Mixed Reality, Metaverse and Telecollaboration
+  - hasPart:: Knowhere, Dreamlab
+  - uses:: Proprietary Large Language Models, Hyper personalisation
+  - bridgesTo:: Trust and Safety, Location Based Experience
 
 - ### Content
   - {{embed ((65e1a2f6-f063-44f9-8181-cc6e8d5e2339))}}

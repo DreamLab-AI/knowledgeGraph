@@ -6,7 +6,13 @@
   - owl-role:: concept
 
 - ### Relationships
-  - is-subclass-of:: ['owl:Thing']
+  - is-subclass-of:: AI Application
+  - Uses [[Computer Vision]]
+  - Uses [[Convolutional Neural Network]]
+  - Uses [[Transformer]]
+  - Has Part [[Object Detection]]
+  - Has Part [[Semantic Segmentation]]
+  - Enables [[Instance Segmentation]]
 
 - ### Content
 

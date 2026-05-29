@@ -1,5 +1,5 @@
 - ### Definition
-  - Digital Model is a concept within the metaverse domain. Further enrichment pending.
+  - A Digital Model is a structured computational representation of a real-world or conceptual entity, capturing geometry, behaviour, and semantic attributes for use in simulation, visualisation, or analysis. Digital models underpin virtual environments, digital twins, and spatial computing applications by providing machine-readable, interoperable representations of physical or abstract objects.
 
 bridges-to:: [[Computer Vision]]
 
@@ -8,7 +8,9 @@ bridges-to:: [[Computer Vision]]
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: [[Spatial Computing]], [[Digital Modeling]]
+  - **enables**: [[Virtual Environment]], [[Digital Twin Infrastructure]]
+  - **relatedTo**: [[Digital Asset]], [[Immersive Experience]]
 
 - ### Content
 

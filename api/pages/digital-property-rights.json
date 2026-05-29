@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:digital-property-rights",
   "domain": "spatial-computing",
-  "definition": "Digital Property Rights is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Digital Property Rights are the legally and technically enforceable claims governing ownership, transfer, and use of digital assets and virtual content. They encompass intellectual property protections, on-chain ownership assertions via non-fungible tokens, licensing frameworks, and governance rules that determine who can access, modify, or commercialise digital objects within virtual and mixed-reality environments.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-governance-and-safety",
@@ -13,21 +13,53 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:digital-governance",
+        "label": "Digital Governance"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-ownership",
+        "label": "Digital Ownership"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-management",
+        "label": "Digital Asset Management"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ]
   },
   "wikilinks": [
     {

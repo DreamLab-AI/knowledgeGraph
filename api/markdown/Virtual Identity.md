@@ -48,7 +48,8 @@ public:: true
   "label": "Virtual Identity",
   "definition": "A digital representation encompassing behaviours, preferences, movements, actions, and decisions made in digital spaces, extending beyond 3D avatars to include representation, data, and identification across AR, VR, MR, and web platforms using decentralized identity technologies.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-security-and-identity",
@@ -59,11 +60,46 @@ public:: true
       "label": "Digital Identity"
     }
   ],
-  "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:personal-data-store",
+        "label": "Personal Data Store"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:decentralized-identifiers",
+        "label": "Decentralized Identifiers"
+      },
+      {
+        "@id": "urn:ngm:class:avatar-system",
+        "label": "Avatar System"
+      },
+      {
+        "@id": "urn:ngm:class:avatar-portability",
+        "label": "Avatar Portability"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:digital-identity-management",
+        "label": "Digital Identity Management"
+      },
+      {
+        "@id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
+    ]
   }
 }
 ```
@@ -109,6 +145,13 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Digital Identity]]
+  - Uses: [[Decentralized Identifiers]]
+  - Uses: [[Avatar System]]
+  - Uses: [[Avatar Portability]]
+  - Requires: [[Authentication]]
+  - Requires: [[Personal Data Store]]
+  - Related To: [[Digital Identity Management]]
+  - Related To: [[Privacy]]
 
 - ### Content
 

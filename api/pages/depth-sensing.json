@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:depth-sensing",
   "domain": "spatial-computing",
-  "definition": "Depth Sensing is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Depth Sensing is the measurement and capture of per-pixel distance information from a sensor to surfaces in the environment, producing depth maps or point clouds. Technologies include structured light, time-of-flight (ToF), active stereoscopy, and LiDAR. Depth sensing is foundational to augmented reality occlusion, robotic navigation, 3D scene reconstruction, and gesture recognition in spatial computing systems.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-interaction",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "id": "urn:ngm:class:stereo-camera",
+        "label": "Stereo Camera"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:depth-estimation",
+        "label": "Depth Estimation"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -1,12 +1,14 @@
 - ### Definition
-  - ProfileManagement is a concept within the ngm domain.
+  - Profile Management encompasses the systems and services for creating, storing, updating, and securing user profiles within metaverse and digital platforms. It covers avatar customisation preferences, personal data storage, authentication credentials, and preference settings, enabling persistent personalised experiences across sessions and across interoperable environments.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:ProfileManagement
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - enables: [[Avatar Customization]], [[Avatar System]]
+  - uses: [[Identity Management]], [[Authentication]]
+  - dependsOn: [[Personal Data Store]], [[Digital Identity]]
 
 - ### Content
   # ProfileManagement

@@ -42,16 +42,33 @@ public:: true
   "@id": "urn:ngm:class:distributed-work",
   "@type": "Class",
   "label": "Distributed Work",
-  "definition": "Distributed Work is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Organisational models, practices, and enabling technologies that allow geographically dispersed teams to collaborate effectively whilst maintaining productivity, cohesion, and wellbeing. Distributed work encompasses remote, hybrid, and globally distributed team configurations, supported by asynchronous communication norms, shared documentation practices, and virtual presence technologies ranging from video conferencing to XR meeting spaces.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:collaboration-platform", "label": "Collaboration Platform"},
+      {"@id": "urn:ngm:class:asynchronous-collaboration", "label": "Asynchronous Collaboration"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:xr-meeting-space", "label": "XR Meeting Space"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:virtual-collaboration", "label": "Virtual Collaboration"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -87,14 +104,17 @@ public:: true
 
 
 - ### Definition
-  - DistributedWork is a concept within the ngm domain.
+  - Organisational models, practices, and enabling technologies that allow geographically dispersed teams to collaborate effectively whilst maintaining productivity, cohesion, and wellbeing. Distributed work encompasses remote, hybrid, and globally distributed team configurations, supported by asynchronous communication norms, shared documentation practices, and virtual presence technologies ranging from video conferencing to XR meeting spaces.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:DistributedWork
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires**: Collaboration Platform (shared digital workspace), Asynchronous Collaboration (time-zone-agnostic communication norms)
+  - **enables**: Distributed Collaboration (cross-geography team coordination)
+  - **uses**: XR Meeting Space (presence-rich virtual meetings), Digital Twin (virtual office coordination layer)
+  - **relatedTo**: Blockchain (decentralised coordination substrate), Virtual Collaboration (synchronous shared-space modality)
 
   - bridges-to:: [[Blockchain]] (bc)
 - ### Content

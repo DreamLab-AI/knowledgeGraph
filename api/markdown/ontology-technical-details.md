@@ -1,5 +1,5 @@
 - ### Definition
-  - ONTOLOGY_TECHNICAL_DETAILS is a concept within the ngm domain.
+  - A meta-documentation node cataloguing the technical structure, bidirectional link patterns, missing parent audits, and inheritance statistics of the NarrativeGoldmine ontology graph. It serves as a diagnostic reference for ontology engineers, documenting cross-domain isolation rules, broken reference inventories, and recommended file structures for parent concept pages.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:ONTOLOGYTECHNICALDETAILS
@@ -7,6 +7,12 @@
 
 - ### Relationships
   - is-subclass-of:: [[Data Structure]], [[Distributed System]], [[Record-Keeping System]]
+  - **hasPart** [[Ontology]] — documents the structure and health of the NarrativeGoldmine ontology
+  - **hasPart** [[Knowledge Graph]] — the ontology graph is the primary artefact this page describes
+  - **uses** [[Distributed Ledger]] — blockchain entity inheritance patterns are a key analysis subject
+  - **uses** [[Data Structure]] — catalogues data structure parent pages and their missing implementations
+  - **relatedTo** [[Knowledge Management]] — serves knowledge management by auditing graph integrity
+  - **relatedTo** [[Data Management]] — data management concerns drive the missing-parent and broken-link audits
 
 - ### Content
   # TECHNICAL DETAILS: Specific Examples & File Locations

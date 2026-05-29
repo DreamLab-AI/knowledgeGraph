@@ -7,7 +7,11 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Human Feedback]]
+  - requires [[Supervised Fine Tuning]]
+  - enables [[Reinforcement Learning from Human Feedback]]
+  - enables [[AI Alignment]]
+  - relatedTo [[Model Performance]]
 
 - ### Content
   - A neural network trained to predict scalar rewards for model outputs based on human feedback, used to provide learning signals in reinforcement learning from human feedback (RLHF). The reward model serves as a proxy for human preferences, enabling efficient optimization without constant human evaluation.

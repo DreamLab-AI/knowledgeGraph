@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:experiment",
   "domain": "infrastructure",
-  "definition": "experiment is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "An experiment is a structured empirical procedure designed to test a hypothesis or evaluate a system under controlled conditions, producing observable and repeatable results. In the context of AI and software engineering it encompasses both scientific investigations (measuring model behaviour, benchmarking performance) and engineering trials (A/B tests, canary deployments, feature flags) aimed at generating evidence to guide design decisions.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-software-engineering",
@@ -13,8 +13,8 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,11 +23,42 @@
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:software-testing",
+        "label": "Software Testing"
+      },
+      {
+        "id": "urn:ngm:class:validation-process",
+        "label": "Validation Process"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:benchmark-standard",
+        "label": "Benchmark Standard"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:research-methods",
+        "label": "Research Methods"
+      },
+      {
+        "id": "urn:ngm:class:scientific-discovery",
+        "label": "Scientific Discovery"
+      },
+      {
+        "id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards",
+        "label": "Evaluation benchmarks and leaderboards"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ]
   },
   "wikilinks": [
     {

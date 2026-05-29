@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:storytelling-structure",
   "domain": "spatial-computing",
-  "definition": "Storytelling Structure is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "A Storytelling Structure is a formal organisation of narrative elements \u2014 acts, arcs, beats, and character relationships \u2014 that governs the temporal and causal progression of events in interactive and immersive experiences. In spatial computing contexts it shapes how virtual environments present branching narrative paths, cinematic sequences, and player-driven story arcs.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -13,20 +13,47 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:game-narratives",
+        "label": "Game Narratives"
+      },
+      {
+        "id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "id": "urn:ngm:class:immersive-entertainment",
+        "label": "Immersive Entertainment"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:character-model",
+        "label": "Character Model"
+      },
+      {
+        "id": "urn:ngm:class:game-mechanics",
+        "label": "Game Mechanics"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:game-development",
+        "label": "Game Development"
+      }
+    ],
     "relatedTo": []
   },
   "wikilinks": [

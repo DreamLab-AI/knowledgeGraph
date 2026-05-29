@@ -66,16 +66,41 @@ public:: true
   "@id": "urn:ngm:class:ethical-review-process",
   "@type": "Class",
   "label": "Ethical Review Process",
-  "definition": "ical Review Process is a structured modology for evaluating AI systems against ical frameworks, organizational values, and societal norms, involving expert deliberation, stakeholder consultation, and documented decision-making to ensure ically responsible AI development and deployment.",
+  "definition": "An Ethical Review Process is a structured methodology for evaluating AI systems against ethical frameworks, organisational values, and societal norms, involving expert deliberation, stakeholder consultation, and documented decision-making to ensure responsible AI development and deployment. It applies consequentialist, deontological, and virtue-ethics frameworks to assess fairness, privacy, autonomy, safety, and accountability dimensions, producing approval, conditional approval, deferral, or rejection outcomes with documented rationale.",
   "domain": "artificial-intelligence",
   "maturity": "established",
+  "qualityScore": 0.8,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:ai-ethics-board", "label": "AI Ethics Board"},
+      {"@id": "urn:ngm:class:accountability", "label": "Accountability"},
+      {"@id": "urn:ngm:class:human-oversight", "label": "Human Oversight"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
+      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:ai-ethics-checklist", "label": "AI Ethics Checklist"},
+      {"@id": "urn:ngm:class:fairness-metrics", "label": "Fairness Metrics"},
+      {"@id": "urn:ngm:class:bias-detection-methods", "label": "Bias Detection Methods"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
+      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:ai-risk-management", "label": "AI Risk Management"},
+      {"@id": "urn:ngm:class:explainability", "label": "Explainability"},
+      {"@id": "urn:ngm:class:algorithmic-accountability", "label": "Algorithmic Accountability"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -141,21 +166,23 @@ public:: true
 
 
 - ### Definition
-  - Ethical Review Process is a structured methodology for evaluating AI systems against ethical frameworks, organizational values, and societal norms, involving expert deliberation, stakeholder consultation, and documented decision-making to ensure ethically responsible AI development and deployment. This process applies established ethical frameworks (consequentialist, deontological, virtue ethics, care ethics, justice frameworks) to assess AI systems, identifying potential harms, benefits, rights violations, and value conflicts. The review process typically follows defined stages: proposal submission with system description and ethical self-assessment, initial screening to determine review level (exempt, expedited, full review) based on risk classification, expert deliberation by AI ethics board or review committee analyzing ethical implications across fairness, privacy, autonomy, safety, and accountability dimensions, stakeholder consultation soliciting affected community perspectives, ethical decision-making producing approval, conditional approval, deferral, or rejection with documented rationale, and ongoing monitoring of deployed systems with periodic re-review. Review criteria assess alignment with responsible AI principles, adequacy of fairness and bias mitigation measures, transparency and explainability provisions, human oversight mechanisms, privacy protection safeguards, safety and security controls, stakeholder engagement quality, and availability of redress mechanisms. The process draws methodological inspiration from research ethics review (Institutional Review Boards, Research Ethics Committees) and technology assessment approaches, adapted for AI-specific challenges. Implementation appears in organizational AI governance frameworks and is referenced in standards including IEEE P7000 series on ethically aligned design, ISO/IEC 42001 AI management systems, and EU AI Act governance requirements for high-risk systems.
-
-- ### Semantic Classification
-  - owl-class:: artificial-intelligence:EthicalReviewProcess
-  - owl-role:: Process
-  - owl-inferred:: ai:VirtualProcess
-  - belongs-to-domain:: [[AIEthicsDomain]]
-  - implemented-in-layer:: [[ConceptualLayer]]
+  An Ethical Review Process is a structured methodology for evaluating AI systems against ethical frameworks, organisational values, and societal norms, involving expert deliberation, stakeholder consultation, and documented decision-making to ensure responsible AI development and deployment. It applies consequentialist, deontological, and virtue-ethics frameworks to assess fairness, privacy, autonomy, safety, and accountability dimensions, producing approval, conditional approval, deferral, or rejection outcomes with documented rationale.
 
 - ### Relationships
-  - <!-- No relationships defined -->
-  - bridges-to:: [[Blockchain]], [[Autonomous Robot]]
+  - requires:: [[AI Ethics Board]], [[Accountability]], [[Human Oversight]]
+  - enables:: [[Responsible AI]], [[AI Safety]]
+  - uses:: [[AI Ethics Checklist]], [[Fairness Metrics]], [[Bias Detection Methods]]
+  - supports:: [[AI Governance]], [[Compliance Framework]]
+  - relatedTo:: [[AI Risk Management]], [[Explainability]], [[Algorithmic Accountability]]
 
 - ### Content
-  Ethical Review Process — content pending enrichment.
+  The Ethical Review Process operates as a structured governance gate inserted into the AI development lifecycle. Organisations typically define review tiers based on risk classification: low-risk systems may undergo expedited review or self-certification against a checklist, while high-risk systems—as classified under the EU AI Act for applications in employment, credit, law enforcement, or critical infrastructure—require full deliberative review by a multidisciplinary ethics board. The review scope covers technical properties (fairness metrics, bias audit results, explainability provisions), operational properties (human oversight mechanisms, incident response plans), and societal properties (affected community impacts, redress availability).
+
+  Methodologically, the process borrows from Research Ethics Committees and Institutional Review Boards in biomedical research, adapted for AI-specific challenges such as emergent behaviour, distributional shift, and the difficulty of prospectively specifying all failure modes. Tools employed include AI ethics checklists (structured question frameworks covering harms, benefits, and rights), bias detection analyses across protected attribute groups, explainability assessments evaluating whether system outputs can be interpreted by affected persons, and stakeholder consultations soliciting perspectives from communities likely to be impacted by deployment.
+
+  Standards alignment is a key function: reviewers verify that AI systems satisfy applicable regulatory requirements (EU AI Act conformity assessments, ISO/IEC 42001 AI management system requirements, IEEE P7000 ethically aligned design principles) and that documentation supports audit. The process produces a decision record with explicit rationale, creating accountability traces that regulators or affected parties can examine in case of challenged outcomes.
+
+  Ongoing monitoring obligations extend the review process beyond initial deployment. High-risk systems require periodic re-review when material changes occur—model updates, new use cases, changes in deployment population—and when monitoring reveals performance degradation against fairness or safety criteria. This continuous loop between operational monitoring data and the ethics review process creates an adaptive governance mechanism appropriate to the dynamic nature of deployed AI systems.
 
 - ### Provenance
   - sources:: [[IEEE P7000]], [[ISO/IEC 42001:2023]], [[EU AI Act]]

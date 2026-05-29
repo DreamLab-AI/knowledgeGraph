@@ -1,12 +1,15 @@
 - ### Definition
-  - SustainabilityTool is a concept within the ngm domain.
+  - A Sustainability Tool is a software or analytical instrument used to measure, monitor, and optimise the environmental impact of digital systems, virtual environments, and technology infrastructure. In the metaverse context such tools address energy monitoring of rendering workloads, carbon footprint tracking for data-centre operations, and lifecycle assessment of hardware, enabling organisations to meet regulatory and voluntary environmental commitments.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:SustainabilityTool
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - supports:: Environmental Sustainability, Regulatory Compliance
+  - uses:: Carbon Accounting, Carbon Footprint Measurement
+  - relatedTo:: Technology Ecosystem, Technology Infrastructure
+  - standardizedBy:: Legal Framework
 
 - ### Content
   # SustainabilityTool

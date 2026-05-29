@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:content-authentication",
   "@type": "Class",
   "label": "Content Authentication",
-  "definition": "Content Authentication is a type of Infrastructure in the infrastructure domain.",
+  "definition": "Content Authentication is the process of verifying the origin, integrity, and provenance of digital content through cryptographic techniques such as digital signatures, watermarking, and blockchain-anchored certificates. It enables consumers and platforms to distinguish authentic content from synthetically generated or tampered media, particularly critical as generative AI proliferates.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-security-and-identity",
@@ -60,6 +61,38 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:cryptographic-verification",
+        "label": "Cryptographic Verification"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:watermarks",
+        "label": "Watermarks"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:digital-rights-management",
+        "label": "Digital Rights Management"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      }
+    ]
   }
 }
 ```
@@ -96,7 +129,7 @@ public:: true
 
 
 - ### Definition
-  - Content Authentication is a concept within the metaverse domain. Further enrichment pending.
+  - Content Authentication is the process of verifying the origin, integrity, and provenance of digital content through cryptographic techniques such as digital signatures, watermarking, and blockchain-anchored certificates. It enables consumers and platforms to distinguish authentic content from synthetically generated or tampered media, particularly critical as generative AI proliferates.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:ContentAuthentication
@@ -104,6 +137,12 @@ public:: true
 
 - ### Relationships
   - bridges-to:: [[Blockchain]]
+  - Requires [[Cryptographic Verification]]
+  - Requires [[Digital Signature]]
+  - Uses [[Watermarks]]
+  - Uses [[Blockchain]]
+  - Related To [[Digital Rights Management]]
+  - Related To [[Cryptographic Hash Function]]
 
 - ### Content
 

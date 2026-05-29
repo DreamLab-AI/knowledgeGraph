@@ -62,9 +62,9 @@ public:: true
   "@id": "urn:ngm:class:global-illumination",
   "@type": "Class",
   "label": "Global Illumination",
-  "definition": "Global Illumination is a spatial computing concept and a type of Metaverse.",
+  "definition": "Global Illumination (GI) is a rendering approach that simulates all light interactions within a scene, including both direct illumination from light sources and indirect illumination from light bouncing between surfaces. Techniques range from offline radiosity and photon mapping to real-time approximations such as voxel cone tracing, screen-space ambient occlusion, and hardware-accelerated ray tracing, producing physically plausible colour bleeding, soft shadows, and caustics.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-display-and-rendering",
@@ -75,6 +75,19 @@ public:: true
       "label": "Metaverse"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:ray-tracing", "label": "Ray Tracing"},
+      {"@id": "urn:ngm:class:rendering-pipeline", "label": "Rendering Pipeline"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:compute-shader", "label": "Compute Shader"},
+      {"@id": "urn:ngm:class:physically-based-rendering", "label": "Physically Based Rendering"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:rasterization", "label": "Rasterization"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
@@ -136,7 +149,7 @@ public:: true
 
 
 - ### Definition
-  - Global Illumination is a concept within the mv domain.
+  - Global Illumination (GI) simulates all light interactions in a scene — direct and indirect — producing physically plausible colour bleeding, soft shadows, and caustics. Techniques range from offline radiosity and photon mapping to real-time approximations such as voxel cone tracing and hardware-accelerated ray tracing.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:GlobalIllumination
@@ -144,6 +157,11 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Metaverse]]
+  - requires [[Ray Tracing]]
+  - requires [[Rendering Pipeline]]
+  - uses [[Compute Shader]]
+  - uses [[Physically Based Rendering]]
+  - contrastsWith [[Rasterization]]
 
 - ### Content
 

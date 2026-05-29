@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:computer-use",
   "domain": "artificial-intelligence",
-  "definition": "An AI capability enabling language or multimodal models to autonomously perceive and interact with graphical user interfaces, operating systems, and desktop applications to complete tasks.",
+  "definition": "Computer Use is an AI capability that enables multimodal models to perceive, navigate, and interact with graphical user interfaces, desktop applications, and operating system environments to autonomously complete multi-step tasks. The model receives screenshot observations of the screen and emits mouse-click, keyboard, and scroll actions, effectively operating software as a human operator would. It extends conventional tool-use paradigms by treating the entire GUI surface as an action space rather than a structured API.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-application",
@@ -14,11 +14,29 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:multimodal",
+        "label": "multimodal"
+      },
+      {
+        "id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +45,12 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:interface",
+        "label": "Interface"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

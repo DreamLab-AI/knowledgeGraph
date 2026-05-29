@@ -42,7 +42,7 @@ public:: true
   "@id": "urn:ngm:class:risk",
   "@type": "Class",
   "label": "Risk",
-  "definition": "Risk is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "The potential for an AI system or associated process to cause harm, produce unintended outcomes, or fail to achieve intended goals. Risk in AI encompasses technical failure modes, bias, adversarial vulnerabilities, misuse, and broader societal harms; risk management frameworks characterise likelihood and severity to prioritise mitigations.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -51,7 +51,27 @@ public:: true
       "label": "AI Governance and Ethics"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:adversarial-attack", "label": "Adversarial Attack"},
+      {"@id": "urn:ngm:class:bias", "label": "Bias"},
+      {"@id": "urn:ngm:class:algorithmic-bias", "label": "Algorithmic Bias"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:ai-risk-management", "label": "AI Risk Management"},
+      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
+      {"@id": "urn:ngm:class:ai-trust-risk-and-security-management", "label": "AI Trust Risk and Security Management"},
+      {"@id": "urn:ngm:class:adversarial-robustness", "label": "Adversarial Robustness"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:ai-impact-assessment", "label": "AI Impact Assessment"},
+      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:bias-mitigation-techniques", "label": "Bias Mitigation Techniques"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

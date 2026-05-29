@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:data-persistence",
   "domain": "infrastructure",
-  "definition": "The property of data surviving beyond the lifetime of the process that created it, achieved through durable storage mechanisms such as databases, distributed filesystems, or append-only logs.",
+  "definition": "Data Persistence is the property of data surviving beyond the lifetime of the process or session that created it, and the collection of mechanisms and design patterns \u2014 relational databases, distributed file systems, append-only event logs, object stores \u2014 that guarantee this durability. In transactional systems, persistence is formalised through the ACID properties (Atomicity, Consistency, Isolation, Durability), where durability specifically ensures committed transactions are not lost even in the event of system failure. Beyond single-node databases, distributed systems trade aspects of consistency for availability and partition tolerance as described in the CAP theorem, leading to a spectrum of persistence strategies from strongly consistent RDBMS to eventually consistent distributed key-value stores.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-data-management",
@@ -14,11 +14,25 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:database-system",
+        "label": "Database System"
+      },
+      {
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +41,16 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "id": "urn:ngm:class:replication-system",
+        "label": "Replication System"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

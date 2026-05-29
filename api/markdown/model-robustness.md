@@ -7,7 +7,11 @@
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires**: Data Augmentation Strategies — robustness training relies on exposing models to diverse, augmented inputs during training.
+  - **enables**: AI Safety, Fairness — a robust model is a prerequisite for safe deployment and for equitable performance across demographic groups.
+  - **contrastsWith**: Adversarial Robustness — adversarial robustness specifically targets intentional perturbations, whereas model robustness addresses the broader range of natural distributional variations.
+  - **supports**: Explainability, AI Governance — robust models are easier to audit and satisfy regulatory governance requirements.
+  - **relatedTo**: Adversarial Attacks — adversarial attacks are a primary stress-test mechanism used to probe robustness failures.
 
 - ### Content
   - The capacity of a machine learning model to maintain consistent and reliable performance when exposed to variations in input data, including noise, distributional shifts, and edge cases, without catastrophic degradation in accuracy or functionality.

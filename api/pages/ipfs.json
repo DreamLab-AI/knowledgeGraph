@@ -5,29 +5,56 @@
   "public": true,
   "classIri": "urn:ngm:class:ipfs",
   "domain": "blockchain",
-  "definition": "The InterPlanetary File System (IPFS) is a peer-to-peer hypermedia protocol that addresses and distributes content using cryptographic hashes rather than location-based URLs.",
+  "definition": "The InterPlanetary File System (IPFS) is a peer-to-peer, content-addressed hypermedia protocol and distributed file system in which each piece of content is identified by a Content Identifier (CID) \u2014 a self-describing cryptographic hash \u2014 rather than by its network location. Nodes participating in the IPFS network store and serve blocks of data identified by their CIDs, enabling resilient, censorship-resistant content distribution without a single point of failure. IPFS underpins decentralised application storage for NFT metadata, Web3 front-ends, and distributed knowledge repositories.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-network-component",
       "label": "BC Network Component"
+    },
+    {
+      "id": "urn:ngm:class:decentralised-file-storage",
+      "label": "Decentralised file storage"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralised-web",
+        "label": "Decentralised Web"
+      },
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:content-addressing",
+        "label": "Content Addressing"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

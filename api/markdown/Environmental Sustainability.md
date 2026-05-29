@@ -44,14 +44,27 @@ public:: true
   "label": "Environmental Sustainability",
   "definition": "The responsible stewardship of natural resources and environmental systems in AI development and deployment, minimising ecological harm whilst potentially leveraging AI to address environmental challenges including climate change, biodiversity loss and resource depletion.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
       "label": "Governance and Safety"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:carbon-credits", "label": "Carbon Credits"},
+      {"@id": "urn:ngm:class:sustainability", "label": "Sustainability"},
+      {"@id": "urn:ngm:class:blockchain-energy-consumption", "label": "Blockchain Energy Consumption"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:ai-governance-and-ethics", "label": "AI Governance and Ethics"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:bitcoin-environmental-issues", "label": "Bitcoin Environmental Issues"}
+    ]
+  },
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -95,7 +108,11 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - relatedTo [[Carbon Credits]]
+  - relatedTo [[Sustainability]]
+  - relatedTo [[Blockchain Energy Consumption]]
+  - supports [[AI Governance and Ethics]]
+  - contrastsWith [[Bitcoin Environmental Issues]]
 
 - ### Content
   - The responsible stewardship of natural resources and environmental systems in AI development and deployment, minimising ecological harm whilst potentially leveraging AI to address environmental challenges including climate change, biodiversity loss and resource depletion.

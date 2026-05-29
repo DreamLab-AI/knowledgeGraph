@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:north-england-innovation-corridor",
   "domain": "infrastructure",
-  "definition": "The collaborative innovation corridor spanning Manchester, Leeds, Liverpool, Sheffield, and Newcastle, forming the Northern Powerhouse technology ecosystem.",
+  "definition": "The collaborative technology and innovation ecosystem spanning Manchester, Leeds, Liverpool, Sheffield, and Newcastle that constitutes the Northern Powerhouse. The corridor links world-class research universities, NHS trusts, advanced manufacturing facilities, and digital startups through coordinated investment, shared infrastructure, and regional development frameworks aimed at closing the productivity gap between North and South England.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
@@ -13,10 +13,31 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:manchester-tech-cluster",
+        "label": "Manchester Tech Cluster"
+      },
+      {
+        "id": "urn:ngm:class:leeds-digital-hub",
+        "label": "Leeds Digital Hub"
+      },
+      {
+        "id": "urn:ngm:class:sheffield-advanced-manufacturing",
+        "label": "Sheffield Advanced Manufacturing"
+      },
+      {
+        "id": "urn:ngm:class:liverpool-smart-cities",
+        "label": "Liverpool Smart Cities"
+      },
+      {
+        "id": "urn:ngm:class:newcastle-ai-and-health-innovation",
+        "label": "Newcastle AI & Health Innovation"
+      }
+    ],
     "requires": [],
     "enables": [],
     "dependsOn": [],
@@ -26,8 +47,22 @@
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:uk-tech-ecosystem",
+        "label": "UK Tech Ecosystem"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-economy",
+        "label": "Digital Economy"
+      },
+      {
+        "id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
+      }
+    ]
   },
   "wikilinks": [
     {

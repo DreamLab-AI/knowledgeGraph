@@ -7,7 +7,10 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires**: Market Surveillance Authority — upon detecting a serious incident, providers must notify the relevant market surveillance authority without undue delay.
+  - **relatedTo**: High Risk AI System — serious incident reporting obligations are primarily triggered by high-risk AI system deployments; AI Incident — Serious Incident is a legally defined severe subclass of AI Incident; Safety (OECD) — the OECD safety principle aims to prevent conditions that would cause serious incidents.
+  - **enables**: AI Governance — incident reporting feeds the regulatory feedback loop that refines AI governance frameworks.
+  - **dependsOn**: AI Risk Management — robust risk management is the primary mechanism for reducing the probability of serious incidents.
 
 - ### Content
   - An incident or malfunctioning of an AI system that directly or indirectly leads to death, serious health damage, serious disruption of critical infrastructure, or serious fundamental rights infringements.

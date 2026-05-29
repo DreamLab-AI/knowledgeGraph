@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:virtual-destination",
   "@type": "Class",
   "label": "Virtual Destination",
-  "definition": "A digital location or space within virtual environments that serves as a point of interest or travel objective, including virtual recreations of real-world landmarks, fantasy worlds, themed experiences, and interactive attractions accessible through metaverse platforms.",
+  "definition": "A digital location or space within a virtual environment that serves as a point of interest or travel objective, encompassing photogrammetry-reconstructed heritage sites, procedurally generated fantasy worlds, brand experience spaces, and interactive event venues accessible through metaverse platforms. Virtual destinations underpin virtual tourism, educational field trips, and social gathering use-cases, and are created using real-time rendering engines together with photogrammetry and 3D modelling pipelines.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -59,7 +60,23 @@ public:: true
       "label": "Virtual Environment"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:virtual-world-platform", "label": "Virtual World Platform"},
+      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:photogrammetry", "label": "Photogrammetry"},
+      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:virtual-tourism", "label": "Virtual Tourism"},
+      {"@id": "urn:ngm:class:virtual-field-trip", "label": "Virtual Field Trip"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:virtual-tour", "label": "Virtual Tour"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -109,6 +126,10 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Virtual Environment]]
+  - requires:: [[Virtual World Platform]], [[Real-Time Rendering]]
+  - uses:: [[Photogrammetry]], [[Immersive Experience]]
+  - enables:: [[Virtual Tourism]], [[Virtual Field Trip]]
+  - relatedTo:: [[Virtual Tour]]
 
 - ### Content
 

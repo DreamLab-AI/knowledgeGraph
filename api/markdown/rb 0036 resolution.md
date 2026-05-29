@@ -42,16 +42,32 @@ public:: true
   "@id": "urn:ngm:class:rb-0036-resolution",
   "@type": "Class",
   "label": "rb 0036 resolution",
-  "definition": "resolution is a robotics and autonomous systems concept and a type of robotics.",
+  "definition": "Resolution, as defined by ISO 8373, is the smallest increment of motion or measurement that a robot system can distinguish or command. For manipulators it typically refers to the minimum step size achievable in Cartesian or joint space; for sensors it denotes the smallest detectable change in the measured quantity. Resolution is distinct from accuracy and repeatability, and it places a fundamental lower bound on the precision of both positioning and perception tasks.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-actuation-and-control",
       "label": "Actuation and Control"
     }
   ],
-  "quality": 0.5,
+  "quality": 0.7,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:rb-0035-accuracy", "label": "rb 0035 accuracy"},
+      {"@id": "urn:ngm:class:rb-0034-repeatability", "label": "rb 0034 repeatability"},
+      {"@id": "urn:ngm:class:rb-0023-degrees-of-freedom", "label": "rb 0023 degrees of freedom"},
+      {"@id": "urn:ngm:class:rb-0072-encoder", "label": "rb 0072 encoder"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:rb-0040-backlash", "label": "rb 0040 backlash"},
+      {"@id": "urn:ngm:class:rb-0026-robot-joint", "label": "rb 0026 robot joint"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:rb-0054-position-control", "label": "rb 0054 position control"},
+      {"@id": "urn:ngm:class:rb-0032-manipulability", "label": "rb 0032 manipulability"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -88,6 +104,9 @@ public:: true
 
 - ### Definition
   - ### Primary Definition
+  Resolution (ISO 8373) is the smallest increment of motion or measurement that a robot system can distinguish or command. For manipulators, resolution is typically expressed in millimetres or microradians and is determined by the encoder bit-depth, gear ratio, and drive electronics; for sensors it is the minimum detectable change in the measured quantity. Resolution places an absolute lower bound on positioning and perception precision that neither calibration nor software compensation can overcome.
+
+  Resolution, accuracy, and repeatability are distinct but interrelated performance metrics. A system may have high resolution but poor accuracy (systematic error) or good accuracy but low repeatability (stochastic error). Understanding all three is essential when specifying robot cells for tasks with tight dimensional tolerances.
 
 - ### Semantic Classification
   - owl-class:: robotics:Resolution
@@ -95,7 +114,9 @@ public:: true
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Related to: rb 0035 accuracy, rb 0034 repeatability, rb 0023 degrees of freedom, rb 0072 encoder
+  - Depends on: rb 0040 backlash, rb 0026 robot joint
+  - Supports: rb 0054 position control, rb 0032 manipulability
 
 - ### Content
   - ### Primary Definition

@@ -8,6 +8,10 @@
 
 - ### Relationships
   - is-subclass-of:: [[Hardware Abstraction]]
+  - standardizedBy:: [[Open Standard]], [[Interoperability Standard]]
+  - enables:: [[Cross-Platform Interoperability]], [[Immersive Experience]]
+  - uses:: [[XR Device]], [[Haptic Feedback]], [[Eye Tracking]]
+  - relatedTo:: [[XR Runtime Environment]]
 
 - ### Content
 

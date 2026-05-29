@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:scientific-discovery",
   "domain": "artificial-intelligence",
-  "definition": "Scientific discovery in AI refers to the use of machine learning and reasoning systems to autonomously generate hypotheses, analyse experimental data, and identify novel findings across scientific domains.",
+  "definition": "Scientific discovery in AI refers to the application of machine learning, knowledge-graph reasoning, and autonomous experimentation systems to accelerate the identification of novel scientific findings, generate and test hypotheses, and interpret complex experimental data at scales beyond human cognitive capacity. It encompasses AI-driven approaches across domains including drug discovery, materials science, genomics, and climate modelling, where the goal is to augment or automate stages of the scientific method from hypothesis generation through experimental design to result interpretation.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-research-area",
@@ -14,20 +14,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:drug-discovery-ai",
+        "label": "Drug Discovery AI"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

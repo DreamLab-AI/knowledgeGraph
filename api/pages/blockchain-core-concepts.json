@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:blockchain-core-concepts",
   "domain": "infrastructure",
-  "definition": "Core blockchain concepts encompass distributed ledger technology fundamentals including Consensus|consensus mechanisms (ProofOfWork|PoW, ProofOfStake|PoS), CryptographyFundamentals|cryptographic primitives (PublicKeyEncryption|PKC, DigitalSignature|signatures), and",
+  "definition": "The foundational technical concepts of blockchain and distributed ledger technology, encompassing consensus mechanisms (PoW, PoS), cryptographic primitives (public-key encryption, digital signatures, hash functions, Merkle trees), smart contracts, tokens, and governance frameworks. These concepts collectively enable trustless transaction validation, DeFi, NFTs, and metaverse digital economies.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
@@ -14,16 +14,55 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.4,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:dao",
+        "label": "DAO"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge",
+        "label": "Zero Knowledge"
+      },
+      {
+        "id": "urn:ngm:class:layer2-scaling",
+        "label": "Layer2Scaling"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

@@ -46,17 +46,14 @@ public:: true
   "@id": "urn:ngm:class:adapter-modules",
   "@type": "Class",
   "label": "Adapter Modules",
-  "definition": "Small neural network modules inserted between transformer layers that are trained whilst keeping the original model frozen. Adapter modules provide a parameter-efficient way to adapt pre-trained models to new tasks by learning task-specific transformations without modifying the base model.",
-  "domain": "spatial-computing",
-  "maturity": "draft",
+  "definition": "Adapter Modules are compact bottleneck neural network sub-networks inserted between frozen transformer layers, trained exclusively on task-specific data whilst leaving the base model unchanged. They typically comprise a down-projection, a non-linearity, and an up-projection with a residual connection, constituting under 1% of model parameters and enabling efficient multi-task deployment from a single frozen base model.",
+  "domain": "artificial-intelligence",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:sc-content-and-assets",
-      "label": "Content and Assets"
-    },
-    {
-      "@id": "urn:ngm:class:learning-module",
-      "label": "Learning Module"
+      "@id": "urn:ngm:class:parameter-efficient-fine-tuning",
+      "label": "Parameter-Efficient Fine-Tuning"
     }
   ],
   "quality": 0.5,
@@ -64,6 +61,40 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:prefix-tuning",
+        "label": "Prefix Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-tuning",
+        "label": "Prompt Tuning"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network-layer",
+        "label": "Neural Network Layer"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:parameter-efficient-fine-tuning",
+        "label": "Parameter-Efficient Fine-Tuning"
+      }
+    ]
   }
 }
 ```
@@ -109,6 +140,12 @@ public:: true
 
 - ### Relationships
   - bridges-to:: [[Computer Vision]] (ai)
+  - Part Of [[Parameter-Efficient Fine-Tuning]]
+  - Uses [[Transfer Learning]]
+  - Uses [[Neural Network Layer]]
+  - Requires [[Fine Tuning]]
+  - Contrasts With [[Prefix Tuning]]
+  - Contrasts With [[Prompt Tuning]]
 
 - ### Content
   - Small neural network modules inserted between transformer layers that are trained whilst keeping the original model frozen. Adapter modules provide a parameter-efficient way to adapt pre-trained models to new tasks by learning task-specific transformations without modifying the base model.

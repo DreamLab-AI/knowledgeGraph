@@ -35,13 +35,28 @@ public:: true
   "label": "Middleware Layer",
   "definition": "The MiddlewareLayer represents the abstraction level of integration components, orchestration systems, abstraction layers, API implementations, and coordination services that bridge between different system layers, domains, or components in blockchain and distributed systems.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
     }
   ],
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:api-gateway", "label": "API Gateway"},
+      {"@id": "urn:ngm:class:json-rpc", "label": "JSON-RPC"},
+      {"@id": "urn:ngm:class:price-oracle", "label": "Price Oracle"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:cross-chain-bridge", "label": "Cross-Chain Bridge"},
+      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
+      {"@id": "urn:ngm:class:distributed-system", "label": "Distributed System"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -79,7 +94,13 @@ public:: true
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart [[API Gateway]]
+  - hasPart [[JSON-RPC]]
+  - hasPart [[Price Oracle]]
+  - enables [[Cross-Chain Bridge]]
+  - enables [[Interoperability]]
+  - bridgesTo [[Smart Contract]]
+  - bridgesTo [[Distributed System]]
 
 - ### Content
   - **Classification**

@@ -44,7 +44,8 @@ public:: true
   "label": "Scaled Dot Product Attention",
   "definition": "An attention mechanism that computes attention weights using the dot product of queries and keys, scaled by the square root of the key dimension, followed by a softmax normalisation.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-model-architecture",
@@ -55,11 +56,48 @@ public:: true
       "label": "Attention Mechanism"
     }
   ],
-  "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:multi-head-attention",
+        "label": "Multi-Head Attention"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:query-key-value",
+        "label": "Query Key Value"
+      },
+      {
+        "@id": "urn:ngm:class:positional-encoding",
+        "label": "Positional Encoding"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:self-attention",
+        "label": "Self Attention"
+      },
+      {
+        "@id": "urn:ngm:class:feed-forward-network",
+        "label": "Feed Forward Network"
+      },
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ]
   }
 }
 ```
@@ -99,7 +137,13 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Part Of: [[Transformer Architecture]]
+  - Uses: [[Query Key Value]]
+  - Uses: [[Positional Encoding]]
+  - Enables: [[Multi-Head Attention]]
+  - Related To: [[Self Attention]]
+  - Related To: [[Feed Forward Network]]
+  - Related To: [[Backpropagation]]
 
 - ### Content
   - An attention mechanism that computes attention weights using the dot product of queries and keys, scaled by the square root of the key dimension, followed by a softmax normalisation.

@@ -37,15 +37,30 @@ public:: true
   "@id": "urn:ngm:class:player-tracking",
   "@type": "Class",
   "label": "Player Tracking",
-  "definition": "Player Tracking is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Player Tracking is the real-time monitoring of user position, movement, and behavioural analytics within virtual and metaverse environments. It encompasses spatial positioning systems, motion-capture input, gaze and gesture tracking, and analytics pipelines that feed avatar behaviour, personalisation, and platform telemetry.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:motion-capture", "label": "Motion Capture"},
+      {"@id": "urn:ngm:class:avatar-system", "label": "Avatar System"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:avatar-behavior", "label": "Avatar Behavior"},
+      {"@id": "urn:ngm:class:player-two", "label": "Player Two"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -76,14 +91,16 @@ public:: true
 
 
 - ### Definition
-  - PlayerTracking is a concept within the ngm domain.
+  - Player Tracking is the real-time monitoring of user position, movement, and behavioural analytics within virtual and metaverse environments. It encompasses spatial positioning systems, motion-capture input, gaze and gesture tracking, and analytics pipelines that feed avatar behaviour, personalisation, and platform telemetry.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:PlayerTracking
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses: [[Motion Capture]], [[Avatar System]]
+  - enables: [[Avatar Behavior]], [[Player Two]]
+  - dependsOn: [[Spatial Computing]], [[Computer Vision]]
 
 - ### Content
   # PlayerTracking

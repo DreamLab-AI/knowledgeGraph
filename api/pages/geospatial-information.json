@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:geospatial-information",
   "domain": "spatial-computing",
-  "definition": "Geospatial Information is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Geospatial Information is data that describes objects, events, or phenomena with reference to a location on or near the Earth's surface. It integrates coordinate systems, geographic data layers, and spatial analytics to support location-aware applications including digital twins, augmented reality overlays, and urban simulation.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-standards-and-interop",
@@ -14,20 +14,51 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:geospatial-engine",
+        "label": "Geospatial Engine"
+      },
+      {
+        "id": "urn:ngm:class:location-based-experience",
+        "label": "Location Based Experience"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:coordinate-system",
+        "label": "Coordinate System"
+      },
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:spatial-data-structure",
+        "label": "Spatial Data Structure"
+      },
+      {
+        "id": "urn:ngm:class:geospatial-technology",
+        "label": "Geospatial Technology"
+      }
+    ]
   },
   "wikilinks": [
     {

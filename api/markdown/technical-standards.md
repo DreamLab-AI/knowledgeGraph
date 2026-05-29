@@ -8,6 +8,12 @@
 
 - ### Relationships
   - is-subclass-of:: [[Standards]]
+  - enables [[Interoperability]]
+  - enables [[Cross-Platform Interoperability]]
+  - standardizedBy [[Interoperability Standard]]
+  - standardizedBy [[3D Asset Standard]]
+  - relatedTo [[Universal Scene Description]]
+  - relatedTo [[3D File Format]]
 
 - ### Content
 

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:coordinate-system",
   "domain": "spatial-computing",
-  "definition": "Coordinate System is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "A Coordinate System is a mathematical framework that assigns unique numerical tuples to every point in a space, enabling the precise specification of position, orientation, and scale. In spatial computing and extended reality, coordinate systems define local object frames, world frames, and camera frames that must be carefully transformed and composed to align virtual content with the physical environment.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-standards-and-interop",
@@ -14,11 +14,29 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:spatial-mapping",
+        "label": "Spatial Mapping"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      },
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "id": "urn:ngm:class:spatial-anchor",
+        "label": "Spatial Anchor"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +45,16 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:scene-graph",
+        "label": "Scene Graph"
+      }
+    ]
   },
   "wikilinks": [
     {

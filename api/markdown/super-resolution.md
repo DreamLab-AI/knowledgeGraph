@@ -5,7 +5,11 @@
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Convolutional Neural Network]]
+  - requires [[Deep Learning]]
+  - enables [[Real-Time Rendering]]
+  - enables [[Computer Vision]]
+  - contrastsWith [[Rasterization]]
 - ### Content
   - Super-Resolution is the process of enhancing the resolution and quality of low-resolution images by predicting and synthesising high-frequency details using deep learning models. Single image super-resolution (SISR) networks (SRCNN, ESRGAN, Real-ESRGAN) reconstruct plausible high-resolution images from degraded inputs, enabling applications in medical imaging enhancement, satellite imagery analysis, and consumer photo enhancement.
 			- #### Computer & Video Games

@@ -37,15 +37,29 @@ public:: true
   "@id": "urn:ngm:class:tracking-technology",
   "@type": "Class",
   "label": "Tracking Technology",
-  "definition": "Tracking Technology is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Tracking Technology refers to the hardware and software systems that determine the real-time position, orientation, and motion of a user or device in physical space for extended reality applications. Approaches include inside-out tracking using onboard cameras and SLAM, outside-in tracking using fixed base stations, eye tracking for gaze-based interaction, and hand/finger tracking for controller-free input.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
+      {"@id": "urn:ngm:class:slam", "label": "SLAM"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:motion-tracking", "label": "Motion Tracking"},
+      {"@id": "urn:ngm:class:hand-tracking", "label": "Hand Tracking"},
+      {"@id": "urn:ngm:class:eye-tracking", "label": "Eye Tracking"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:xr-hardware", "label": "XR Hardware"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -76,14 +90,19 @@ public:: true
 
 
 - ### Definition
-  - TrackingTechnology is a concept within the ngm domain.
+  - Tracking Technology refers to the hardware and software systems that determine the real-time position, orientation, and motion of a user or device in physical space for extended reality applications. Approaches include inside-out tracking using onboard cameras and SLAM, outside-in tracking using fixed base stations, eye tracking for gaze-based interaction, and hand/finger tracking for controller-free input.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:TrackingTechnology
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Sensor Fusion]]
+  - requires [[SLAM]]
+  - enables [[Motion Tracking]]
+  - enables [[Hand Tracking]]
+  - enables [[Eye Tracking]]
+  - partOf [[XR Hardware]]
 
 - ### Content
   # TrackingTechnology

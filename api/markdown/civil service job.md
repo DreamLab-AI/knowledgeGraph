@@ -33,16 +33,32 @@ public:: true
   "@id": "urn:ngm:class:civil-service-job",
   "@type": "Class",
   "label": "civil service job",
-  "definition": "civil service job is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A civil service job is a public-sector employment position within a government department or agency, typically accessed through competitive application. This page specifically records a Principal Technologist vacancy at the UK Government Digital Service (OCTO), covering AI and platform technology leadership at Grade 6 level — relevant context for career decisions and the AI policy landscape.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
-  "quality": 0.5,
+  "qualityScore": 0.7,
+  "quality": 0.7,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:digital-transformation", "label": "Digital Transformation"},
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
+      {"@id": "urn:ngm:class:platform-engineering", "label": "Platform Engineering"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:software-architecture", "label": "Software Architecture"},
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:open-source-software", "label": "Open Source Software"},
+      {"@id": "urn:ngm:class:cloud-infrastructure", "label": "Cloud Infrastructure"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -72,7 +88,7 @@ public:: true
 
 
 - ### Definition
-  - civil service job is a concept within the ngm domain.
+  - A **civil service job** (here specifically a Principal Technologist role at GDS OCTO) represents public-sector technology leadership responsible for shaping government AI and platform strategy. Such roles bridge software engineering expertise with policy influence, advising on open-source adoption, cloud infrastructure, machine learning capabilities, and digital service delivery across government.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:CivilServiceJob

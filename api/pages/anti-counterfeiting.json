@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:anti-counterfeiting",
   "domain": "blockchain",
-  "definition": "Blockchain-based systems employing cryptographic verification, immutable ledgers, and physical-digital integration technologies (NFC tags, QR codes, RFID) to authenticate products, prevent counterfeiting, and establish verifiable supply chain provenance across pharmaceuticals, luxury goods, elect...",
+  "definition": "Blockchain-based systems employing cryptographic verification, immutable ledgers, and physical-digital integration technologies (NFC tags, QR codes, RFID) to authenticate products, prevent counterfeiting, and establish verifiable supply chain provenance across pharmaceuticals, luxury goods, electronics, and consumer products.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-network-component",
@@ -18,18 +18,50 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:pharmaceutical-traceability",
+        "label": "Pharmaceutical Traceability"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:supply-chain-traceability",
+        "label": "Supply Chain Traceability"
+      },
+      {
+        "id": "urn:ngm:class:luxury-goods-authentication",
+        "label": "Luxury Goods Authentication"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:blockchain-compliance",
+        "label": "Blockchain Compliance"
+      }
+    ],
     "partOf": [],
     "relatedTo": []
   },

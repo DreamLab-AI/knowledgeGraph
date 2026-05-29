@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:signature-scheme",
   "domain": "blockchain",
-  "definition": "Digital signature algorithm within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "A Signature Scheme is a cryptographic primitive that provides a triple of algorithms\u2014key generation, signing, and verification\u2014enabling a party holding a private key to produce an unforgeable authentication tag over arbitrary messages that any holder of the corresponding public key can verify. In blockchain systems, signature schemes authenticate transactions, authorise state transitions, and underpin identity and ownership semantics across the distributed ledger.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-cryptographic-primitive",
@@ -21,21 +21,70 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature-verification",
+        "label": "Digital Signature Verification"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ]
   },
   "wikilinks": [
     {

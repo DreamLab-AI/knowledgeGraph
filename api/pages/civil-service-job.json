@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:civil-service-job",
   "domain": "infrastructure",
-  "definition": "civil service job is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A civil service job is a public-sector employment position within a government department or agency, typically accessed through competitive application. This page specifically records a Principal Technologist vacancy at the UK Government Digital Service (OCTO), covering AI and platform technology leadership at Grade 6 level \u2014 relevant context for career decisions and the AI policy landscape.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-software-engineering",
@@ -13,21 +13,52 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      },
+      {
+        "id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:software-architecture",
+        "label": "Software Architecture"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-transformation",
+        "label": "Digital Transformation"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:platform-engineering",
+        "label": "Platform Engineering"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": []

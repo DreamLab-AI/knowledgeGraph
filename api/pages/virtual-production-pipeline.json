@@ -18,16 +18,48 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:virtual-production-workflow",
+        "label": "Virtual Production Workflow"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      },
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:film-production",
+        "label": "Film Production"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:virtual-production-volume",
+        "label": "Virtual Production Volume"
+      },
+      {
+        "id": "urn:ngm:class:visual-effects",
+        "label": "Visual Effects"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

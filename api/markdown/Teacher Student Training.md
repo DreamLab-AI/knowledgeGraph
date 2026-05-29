@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:teacher-student-training",
   "@type": "Class",
   "label": "Teacher Student Training",
-  "definition": "A training paradigm where a larger, more capable \"teacher\" model guides the training of a smaller \"student\" model. Teacher-student training transfers knowledge from the teacher's learned representations or predictions to improve student model performance.",
+  "definition": "Teacher-Student Training is a machine learning paradigm in which a larger, higher-capacity teacher model supervises the training of a smaller student model, transferring knowledge through soft probability distributions (dark knowledge), intermediate feature representations, or attention maps rather than hard labels alone. The approach underpins knowledge distillation for model compression and is widely used to deploy efficient models on edge hardware without sacrificing task performance.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
@@ -59,7 +60,23 @@ public:: true
       "label": "Training Method"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "implements": [
+      {"@id": "urn:ngm:class:knowledge-distillation", "label": "Knowledge Distillation"},
+      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:model-compression-for-edge", "label": "Model Compression for Edge"},
+      {"@id": "urn:ngm:class:knowledge-distillation-for-edge", "label": "Knowledge Distillation for Edge"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -100,7 +117,7 @@ public:: true
 
 
 - ### Definition
-  - A training paradigm where a larger, more capable "teacher" model guides the training of a smaller "student" model. Teacher-student training transfers knowledge from the teacher's learned representations or predictions to improve student model performance.
+  - Teacher-Student Training is a machine learning paradigm in which a larger, higher-capacity teacher model supervises the training of a smaller student model, transferring knowledge through soft probability distributions (dark knowledge), intermediate feature representations, or attention maps rather than hard labels alone. The approach underpins knowledge distillation for model compression and is widely used to deploy efficient models on edge hardware without sacrificing task performance.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:TeacherStudentTraining
@@ -108,7 +125,10 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - bridges-to:: [[Computer Vision]]
+  - implements:: Knowledge Distillation, Transfer Learning
+  - enables:: Model Compression for Edge, Knowledge Distillation for Edge
+  - uses:: Deep Learning, Machine Learning
+  - relatedTo:: [[Computer Vision]]
 
 - ### Content
   - A training paradigm where a larger, more capable "teacher" model guides the training of a smaller "student" model. Teacher-student training transfers knowledge from the teacher's learned representations or predictions to improve student model performance.

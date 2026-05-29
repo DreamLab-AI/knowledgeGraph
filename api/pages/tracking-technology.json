@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:tracking-technology",
   "domain": "infrastructure",
-  "definition": "Tracking Technology is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Tracking Technology refers to the hardware and software systems that determine the real-time position, orientation, and motion of a user or device in physical space for extended reality applications. Approaches include inside-out tracking using onboard cameras and SLAM, outside-in tracking using fixed base stations, eye tracking for gaze-based interaction, and hand/finger tracking for controller-free input.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
@@ -14,11 +14,33 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:motion-tracking",
+        "label": "Motion Tracking"
+      },
+      {
+        "id": "urn:ngm:class:hand-tracking",
+        "label": "Hand Tracking"
+      },
+      {
+        "id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -26,7 +48,12 @@
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:xr-hardware",
+        "label": "XR Hardware"
+      }
+    ],
     "relatedTo": []
   },
   "wikilinks": [],

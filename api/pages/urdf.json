@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:urdf",
   "domain": "robotics",
-  "definition": "Unified Robot Description Format \u2014 an XML schema used in ROS to describe a robot's kinematic chain, link geometries, joint types, and physical properties for simulation and planning.",
+  "definition": "Unified Robot Description Format (URDF) is an XML-based schema used within the Robot Operating System (ROS) ecosystem to fully specify a robot's physical structure, including its kinematic chain of links and joints, collision geometries, inertial properties, and sensor placements. URDF files serve as the authoritative model consumed by simulation environments such as Gazebo, motion planners, and visualisation tools like RViz, enabling consistent robot representation across software components. Each joint element declares its type (fixed, revolute, prismatic, continuous) along with axis, limits, and damping parameters, while link elements reference mesh geometry and material definitions.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-navigation-and-planning",
@@ -14,16 +14,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:robot-joint",
+        "label": "Robot Joint"
+      },
+      {
+        "id": "urn:ngm:class:robot-link",
+        "label": "RobotLink"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:gazebo-simulator",
+        "label": "Gazebo Simulator"
+      },
+      {
+        "id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
+      },
+      {
+        "id": "urn:ngm:class:robot-kinematics",
+        "label": "Robot Kinematics"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

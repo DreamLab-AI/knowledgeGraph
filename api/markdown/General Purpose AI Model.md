@@ -42,20 +42,58 @@ public:: true
   "@id": "urn:ngm:class:general-purpose-ai-model",
   "@type": "Class",
   "label": "General Purpose AI Model",
-  "definition": "An AI model that displays significant generality and is capable of competently performing a wide range of distinct tasks regardless of the way the model is placed on the market.",
+  "definition": "An AI model that displays significant generality and is capable of competently performing a wide range of distinct tasks regardless of the way the model is placed on the market, as defined by EU AI Act Article 3(63). GPAI models face specific transparency and documentation obligations, with enhanced requirements for those meeting systemic risk thresholds based on training compute or high-impact capability benchmarks.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-model-architecture",
       "label": "AI Model Architecture"
     }
   ],
-  "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:pre-training",
+        "label": "Pre Training"
+      },
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      }
+    ]
   }
 }
 ```
@@ -95,7 +133,13 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses [[Transformer Architecture]]
+  - Uses [[Pre Training]]
+  - Uses [[Fine Tuning]]
+  - Enables [[Large Language Models]]
+  - Depends on [[AI Regulation]]
+  - Depends on [[AI Governance]]
+  - Related to [[AI Governance Framework]]
 
 - ### Content
   - An AI model that displays significant generality and is capable of competently performing a wide range of distinct tasks regardless of the way the model is placed on the market.

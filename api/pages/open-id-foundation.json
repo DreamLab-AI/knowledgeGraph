@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:open-id-foundation",
   "domain": "blockchain",
-  "definition": "The OpenID Foundation is an international non-profit organisation that promotes and protects OpenID identity technologies by developing open standards for decentralised digital identity.",
+  "definition": "The OpenID Foundation (OIDF) is an international, member-driven, non-profit standards organisation that stewards the OpenID family of identity specifications, including OpenID Connect, FAPI (Financial-grade API), and MODRNA. It coordinates working groups composed of industry participants\u2014identity providers, relying parties, and government bodies\u2014to develop, test interoperability of, and maintain open specifications for federated authentication and authorisation. The Foundation also operates certification programmes to verify conformance of implementations to published profiles, thereby reducing interoperability barriers across global digital identity ecosystems.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-governance-and-regulation",
@@ -14,7 +14,7 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -24,10 +24,33 @@
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:open-id-connect",
+        "label": "OpenID Connect"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity-standards",
+        "label": "Digital Identity Standards"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:standards-body",
+        "label": "Standards Body"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:identity-federation",
+        "label": "Identity Federation"
+      },
+      {
+        "id": "urn:ngm:class:authentication-standards",
+        "label": "Authentication Standards"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

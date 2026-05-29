@@ -5,29 +5,83 @@
   "public": true,
   "classIri": "urn:ngm:class:rapid-ai-deployment",
   "domain": "artificial-intelligence",
-  "definition": "Rapid AI Deployment is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "Rapid AI Deployment refers to accelerated processes for taking AI models from development into production, prioritising speed-to-market through streamlined MLOps pipelines, automated testing, and pre-built infrastructure. It encompasses practices such as continuous delivery of model updates, containerised inference serving, and automated monitoring to minimise the time between model training and live operation while managing associated risks.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:cat-ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
+      "id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:machine-learning-pipeline",
+        "label": "Machine Learning Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
+      },
+      {
+        "id": "urn:ngm:class:ai-deployment",
+        "label": "AI Deployment"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:machine-learning-model",
+        "label": "Machine Learning Model"
+      },
+      {
+        "id": "urn:ngm:class:inference-hardware",
+        "label": "Inference Hardware"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:machine-learning-infrastructure",
+        "label": "Machine Learning Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:ai-lifecycle",
+        "label": "AI Lifecycle"
+      }
+    ]
   },
   "wikilinks": [
     {

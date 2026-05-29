@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:layer-normalisation",
   "domain": "artificial-intelligence",
-  "definition": "A normalisation technique that normalises activations across the feature dimension for each example independently, stabilising deep network training.",
+  "definition": "A normalisation technique that computes mean and variance across the feature dimension for each training example independently, then rescales activations using learnable scale and shift parameters. Unlike batch normalisation, layer normalisation is invariant to batch size, making it the standard choice for transformer and recurrent architectures where sequence lengths vary.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -14,20 +14,48 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:batch-normalisation",
+        "label": "Batch Normalisation"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:residual-connection",
+        "label": "Residual Connection"
+      },
+      {
+        "id": "urn:ngm:class:feed-forward-network",
+        "label": "Feed Forward Network"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:point-cloud",
   "domain": "spatial-computing",
-  "definition": "Point Cloud is a spatial computing concept and a type of spatial-computing.",
+  "definition": "A Point Cloud is a set of data points in three-dimensional space, each defined by X, Y, Z coordinates and optionally colour or intensity values, produced by LiDAR scanners, depth cameras, or photogrammetry pipelines. Point clouds serve as the raw geometric representation of real-world objects and environments before downstream processing into meshes, 3D models, or spatial maps. They are fundamental to SLAM, 3D reconstruction, and digital twin workflows in spatial computing.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -14,11 +14,25 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:depth-sensing",
+        "label": "Depth Sensing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:spatial-mapping",
+        "label": "Spatial Mapping"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +41,20 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      },
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

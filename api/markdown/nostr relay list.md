@@ -33,16 +33,31 @@ public:: true
   "@id": "urn:ngm:class:nostr-relay-list",
   "@type": "Class",
   "label": "nostr relay list",
-  "definition": "nostr relay list is a blockchain and distributed systems concept and a type of blockchain.",
+  "definition": "A Nostr relay list is a curated or automatically discovered list of WebSocket relay server endpoints that a Nostr client uses to publish and subscribe to signed events. Because Nostr has no centralised routing, a client's relay list determines its social graph reach: events are broadcast to all listed relays, and the client pulls its feed from the same set. Relay lists are stored as NIP-65 kind:10002 events on the network itself, enabling portable relay preferences that travel with the user's public key across clients.",
   "domain": "blockchain",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-network-component",
       "label": "Network Component"
     }
   ],
-  "quality": 0.5,
+  "quality": 0.7,
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:nostr-protocol", "label": "Nostr Protocol"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:web-socket", "label": "WebSocket"},
+      {"@id": "urn:ngm:class:gossip-protocol", "label": "Gossip Protocol"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:did-nostr-identity", "label": "DID Nostr Identity"},
+      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"},
+      {"@id": "urn:ngm:class:decentralized-storage", "label": "Decentralized Storage"},
+      {"@id": "urn:ngm:class:relayer", "label": "Relayer"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -72,14 +87,15 @@ public:: true
 
 
 - ### Definition
-  - nostr relay list is a concept within the ngm domain.
+  - A Nostr relay list is a curated set of WebSocket relay server endpoints that a Nostr client uses to publish and retrieve signed events. In the Nostr protocol, there is no central server: instead, clients broadcast events (notes, reactions, metadata) to a chosen set of relays and subscribe to feeds by connecting to the same relays where their contacts post. Because relay connectivity is the sole routing mechanism, the relay list directly governs a user's social-graph reach and censorship-resistance posture.
+  - Relay lists are themselves portable: under NIP-65, clients store their preferred relay configuration as a signed kind:10002 event on the network, allowing any compatible client to discover and adopt a user's relay preferences from their public key alone. The list above represents a latency-sorted selection of public relays, providing a snapshot useful for bootstrapping a new Nostr identity or evaluating network coverage.
 
 - ### Semantic Classification
   - owl-class:: blockchain:NostrRelayList
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Part of the Nostr Protocol; relies on WebSocket transport and gossip-style propagation for event delivery across the decentralised relay network.
 
 - ### Content
   - 1. wss://[nostr.oxtr.dev/](https://nostr.oxtr.dev/) - 40ms

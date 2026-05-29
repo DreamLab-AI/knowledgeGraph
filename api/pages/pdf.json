@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:pdf",
   "domain": "infrastructure",
-  "definition": "PDF is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Portable Document Format: an ISO-standardised file format (ISO 32000) that encodes documents with fixed layout, fonts, graphics, and metadata in a device-independent, platform-agnostic representation. In AI and knowledge-graph contexts, PDFs serve as primary carriers of academic papers, technical specifications, and legal documents that are ingested via extraction pipelines for training, retrieval-augmented generation, and knowledge-base construction.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-software-engineering",
@@ -13,21 +13,48 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:knowledge-base",
+        "label": "Knowledge Base"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      },
+      {
+        "id": "urn:ngm:class:documentation-standards",
+        "label": "Documentation Standards"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": []

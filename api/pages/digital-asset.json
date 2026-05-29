@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:digital-asset",
   "domain": "blockchain",
-  "definition": "Digital Asset is a blockchain and distributed systems concept and a type of blockchain.",
+  "definition": "A Digital Asset is any blockchain-recorded value representation with cryptographic ownership guarantees, including cryptocurrencies, tokenised securities, non-fungible tokens, stablecoins, and programmable financial instruments. Asset tokenisation transforms real-world assets into blockchain-native representations through smart contracts that encode legal ownership rights, fractional interests, and automated compliance rules, enabling new forms of value transfer, settlement, and programmable finance.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-token-and-asset",
@@ -14,11 +14,29 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +45,12 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-asset-management",
+        "label": "Digital Asset Management"
+      }
+    ]
   },
   "wikilinks": [
     {

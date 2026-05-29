@@ -254,20 +254,37 @@ public:: true
   "@id": "urn:ngm:class:robot-control",
   "@type": "Class",
   "label": "Robot Control",
-  "definition": "Robot Control - The systems, algorithms, and modologies that enable robots to execute tasks autonomously or semi-autonomously through sensing, decision-making, and actuation",
+  "definition": "Robot Control encompasses the systems, algorithms, and methodologies that enable robots to execute tasks autonomously or semi-autonomously through sensing, decision-making, and actuation. It integrates perception, planning, and actuation into closed-loop systems operating in dynamic environments.",
   "domain": "robotics",
   "maturity": "established",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-actuation-and-control",
       "label": "Actuation and Control"
-    },
-    {
-      "@id": "urn:ngm:class:robotics-application",
-      "label": "Robotics Application"
     }
   ],
-  "quality": 0.92,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
+      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
+      {"@id": "urn:ngm:class:pid-control", "label": "PID Control"},
+      {"@id": "urn:ngm:class:feedback-control", "label": "Feedback Control"},
+      {"@id": "urn:ngm:class:trajectory-control", "label": "Trajectory Control"},
+      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
+      {"@id": "urn:ngm:class:kinematics", "label": "Kinematics"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:control-theory", "label": "Control Theory"},
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:robo-human-robot-interaction", "label": "Human-Robot Interaction"},
+      {"@id": "urn:ngm:class:robo-navigation-and-planning", "label": "Navigation and Planning"},
+      {"@id": "urn:ngm:class:robo-perception", "label": "Perception and Sensing"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

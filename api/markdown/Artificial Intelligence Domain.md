@@ -62,9 +62,10 @@ public:: true
   "@id": "urn:ngm:class:artificial-intelligence-domain",
   "@type": "Class",
   "label": "Artificial Intelligence Domain",
-  "definition": "The top-level ontological domain classification encompassing all concepts related to artificial intelligence, including research modologies, system architectures, learning paradigms, application domains, and governance frameworks for intelligent computational systems.",
+  "definition": "The Artificial Intelligence Domain is the top-level ontological domain classification encompassing all concepts related to artificial intelligence, including research methodologies, system architectures, learning paradigms, application areas, and governance frameworks for intelligent computational systems. It serves as the taxonomic root organising subdomains such as Machine Learning, Computer Vision, Natural Language Processing, Autonomous Agents, and AI Governance, and maintains formal cross-domain bridges to Robotics, Blockchain, Metaverse, and Telecollaboration fields.",
   "domain": "artificial-intelligence",
   "maturity": "established",
+  "qualityScore": 0.8,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-research-area",
@@ -75,7 +76,30 @@ public:: true
       "label": "Technology Domain"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:autonomous-agent", "label": "Autonomous Agent"},
+      {"@id": "urn:ngm:class:ai-agent-system", "label": "AI Agent System"},
+      {"@id": "urn:ngm:class:ai-applications", "label": "AI Applications"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:robotics-systems", "label": "Robotics Systems"},
+      {"@id": "urn:ngm:class:metaverse-technology", "label": "Metaverse Technology"},
+      {"@id": "urn:ngm:class:telecollaboration", "label": "Telecollaboration"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
+      {"@id": "urn:ngm:class:ai-governance-framework", "label": "AI Governance Framework"},
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -136,7 +160,7 @@ public:: true
 
 
 - ### Definition
-  - The top-level ontological domain classification encompassing all concepts related to artificial intelligence, including research methodologies, system architectures, learning paradigms, application domains, and governance frameworks for intelligent computational systems.
+  The Artificial Intelligence Domain is the top-level ontological classification encompassing all AI-related concepts, including research methodologies, system architectures, learning paradigms, application areas, and governance frameworks for intelligent computational systems. It serves as the taxonomic root organising subdomains such as Machine Learning, Computer Vision, Natural Language Processing, and AI Governance, with formal cross-domain bridges to Robotics, Metaverse, and Telecollaboration.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:ArtificialIntelligenceDomain
@@ -144,8 +168,11 @@ public:: true
   - belongs-to-domain:: [[Artificial Intelligence]]
 
 - ### Relationships
-  - is-subclass-of:: [[Technology Domain]]
-  - bridges-to:: [[Blockchain Technology]] (via AI-blockchain integration)
+  - is-subclass-of:: [[Technology Domain]], [[AI Research Area]]
+  - hasPart:: [[Machine Learning]], [[Computer Vision]], [[Natural Language Processing]], [[Deep Learning]], [[AI Governance]]
+  - enables:: [[Autonomous Agent]], [[AI Agent System]], [[AI Applications]]
+  - bridgesTo:: [[Robotics Systems]], [[Metaverse Technology]], [[Telecollaboration]]
+  - relatedTo:: [[Reinforcement Learning]], [[AI Governance Framework]], [[Neural Network]]
 
 - ### Content
 
@@ -155,49 +182,23 @@ public:: true
 		    - ComputationAndIntelligenceDomain is-subdomain-of ArtificialIntelligenceDomain
 		    - Machine Learning Domain is-subdomain-of ArtificialIntelligenceDomain
 		    - AI Governance Domain is-subdomain-of ArtificialIntelligenceDomain
-		- bridges-to:: [[Blockchain Technology]] (via AI-blockchain integration)
+		- bridges-to:: [[Robotics Systems]] (via autonomous systems)
 		- bridges-to:: [[Metaverse Technology]] (via AI avatars and agents)
 		- bridges-to:: [[Telecollaboration]] (via AI assistants)
-		- bridges-to:: [[Robotics Systems]] (via autonomous systems)
 
-  ## Definition
+  ### Definition
 
-  The **ArtificialIntelligenceDomain** serves as the comprehensive top-level domain classification for all AI-related concepts within the ontology. It provides the taxonomic root under which all AI subdomains, methods, systems, and applications are organised.
+  The Artificial Intelligence Domain provides the comprehensive taxonomic root for all AI-related ontology concepts. Its principal hasPart subdomains include Machine Learning (encompassing supervised, unsupervised, and Reinforcement Learning paradigms), Computer Vision, Natural Language Processing, Deep Learning, and AI Governance. Autonomous Agent and AI Agent System classes are enabled by this domain, representing the applied frontier where AI reasoning meets real-world action.
 
-  ## Domain Architecture
+  ### Relationships
 
-  ### Core Subdomains
-  1. **AI-GroundedDomain**: Empirically validated AI concepts
-  2. **AIApplications**: Practical deployment and use cases
-  3. **ComputationAndIntelligenceDomain**: Theoretical foundations
-  4. **Machine Learning Domain**: Learning algorithm paradigms
-  5. **AI Governance Domain**: Ethics, policy, and regulation
+  Formal bridgesTo relations connect this domain to adjacent technology clusters: Robotics Systems (autonomous navigation, robot learning, manipulation), Metaverse Technology (AI avatars, procedural NPC behaviour, spatial understanding), and Telecollaboration (AI meeting assistants, real-time translation, conversation summarisation). These bridges are not merely conceptual—they reflect active engineering practices where AI components from this domain are integrated as subsystems within robotic, metaverse, and collaboration platforms.
 
-  ### Methodological Subdivisions
-  - Supervised Learning
-  - Unsupervised Learning
-  - Reinforcement Learning
-  - Deep Learning
-  - Symbolic AI
-  - Hybrid AI Systems
+  ### Content
 
-  ### System Classifications
-  - Foundation Models
-  - Domain-Specific Models
-  - Multimodal Systems
-  - Autonomous Agents
-  - AI Assistants
+  The Artificial Intelligence Domain encompasses both foundational research methodologies and applied system architectures. On the methodological side, it includes classical symbolic reasoning, statistical machine learning, Deep Learning with neural architectures, and hybrid approaches that combine learned and rule-based components. Neural Network architectures—convolutional, recurrent, transformer-based—are the dominant implementation substrate for modern AI applications ranging from image classification to large language model inference.
 
-  ## Namespace Declaration
-
-
-  ## Cross-Domain Integration
-
-  The ArtificialIntelligenceDomain maintains formal bridges to:
-  - **Blockchain Technology**: Decentralised AI, federated learning incentives
-  - **Metaverse Technology**: AI avatars, procedural generation, NPC behaviour
-  - **Telecollaboration**: AI meeting assistants, translation, summarisation
-  - **Robotics Systems**: Robot learning, autonomous navigation, manipulation
+  AI Governance is an increasingly prominent subdomain, reflecting the maturation of the field from research prototype to regulated infrastructure. Frameworks such as the EU AI Act, NIST AI RMF, and corporate AI Governance Frameworks impose requirements for transparency, accountability, and risk management across AI system lifecycles. The AI Governance Framework class captures the normative structures through which organisations operationalise these requirements, connecting back to Technical Robustness and Safety and Responsible AI principles also classified under this domain's broader hierarchy.
 
 - ### Provenance
   - sources::

@@ -5,7 +5,11 @@
   - owl-role:: Concept
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - dependsOn:: [[Transfer Learning]]
+  - dependsOn:: [[Training Data]]
+  - uses:: [[Gradient Descent]]
+  - enables:: [[Large Language Models]]
+  - enables:: [[Image Generation]]
 - ### Content
   - The process of adapting a pre-trained model to a specific downstream task by continuing training on task-specific data, typically with a lower learning rate. Fine-tuning leverages knowledge acquired during pre-training whilst specialising the model for particular applications.
   - ### [Crawl4AI](https://github.com/unclecode/crawl4ai)

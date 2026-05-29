@@ -33,15 +33,27 @@ public:: true
   "@id": "urn:ngm:class:json",
   "@type": "Class",
   "label": "json",
-  "definition": "json is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "JSON (JavaScript Object Notation) is a lightweight, human-readable data-interchange format derived from JavaScript object syntax. It provides a universal text-based representation for structured data using key-value pairs and ordered lists, serving as the predominant wire format for REST APIs, configuration files, and data-exchange layers in modern distributed systems and AI pipelines.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-data-management",
       "label": "Data Management"
     }
   ],
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:json-ld", "label": "JSON-LD"},
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:api-standard", "label": "API Standard"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:ontology", "label": "Ontology"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -72,16 +84,20 @@ public:: true
 
 
 - ### Definition
-  - json is a concept within the ngm domain.
+  - JSON (JavaScript Object Notation) is a lightweight, human-readable data-interchange format derived from JavaScript object syntax. It provides a universal text-based representation for structured data using key-value pairs and ordered lists, serving as the predominant wire format for REST APIs, configuration files, and data-exchange layers in modern distributed systems and AI pipelines.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:Json
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - enables [[JSON-LD]]
+  - enables [[Knowledge Graph]]
+  - uses [[API Standard]]
+  - relatedTo [[Ontology]]
 
 - ### Content
+  - JSON is the de facto standard serialisation format for web APIs and data pipelines. Its simplicity and language-agnostic nature have made it the foundation for richer formats such as JSON-LD, which extends it with linked-data semantics and RDF compatibility.
   - [json optimised local model](https://huggingface.co/NousResearch/Hermes-2-Pro-Mistral-7B-GGUF)
 
 - ### Provenance

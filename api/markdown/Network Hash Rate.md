@@ -66,7 +66,7 @@ public:: true
   "@id": "urn:ngm:class:network-hash-rate",
   "@type": "Class",
   "label": "Network Hash Rate",
-  "definition": "Total computational power within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "The aggregate computational power (measured in hashes per second) expended by all miners participating in a proof-of-work blockchain at a given time. A higher network hash rate increases attack cost for a 51% attack and triggers upward difficulty adjustments to maintain target block times; conversely, drops in hash rate trigger downward adjustments.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -83,7 +83,24 @@ public:: true
       "label": "ConsensusProtocol"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
+      {"@id": "urn:ngm:class:difficulty-adjustment", "label": "Difficulty Adjustment"},
+      {"@id": "urn:ngm:class:mining-pool", "label": "Mining Pool"},
+      {"@id": "urn:ngm:class:51-attack", "label": "51% Attack"},
+      {"@id": "urn:ngm:class:selfish-mining", "label": "Selfish Mining"},
+      {"@id": "urn:ngm:class:block-reward", "label": "Block Reward"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
+      {"@id": "urn:ngm:class:mining", "label": "Mining"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:nakamoto-consensus", "label": "Nakamoto Consensus"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

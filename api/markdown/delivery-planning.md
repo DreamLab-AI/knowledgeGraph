@@ -6,6 +6,11 @@
   - owl-role:: Concept
 
 - ### Relationships
+  - **uses**: Digital Platform, AI Agent System (platforms and agents are resources coordinated by the plan)
+  - **supports**: Digital Twin, Digital Infrastructure (the output infrastructure the programme will build)
+  - **enables**: Development Platform (delivery planning is the governance layer that makes platform development tractable)
+  - **dependsOn**: Collaboration (cross-team coordination is a prerequisite for effective delivery)
+
   - bridges-to:: [[Blockchain]] or [[AI Agent System]]
 
 - ### Content

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:operational-resilience",
   "domain": "infrastructure",
-  "definition": "The capacity of a system or organisation to anticipate, withstand, recover from, and adapt to adverse operational conditions and disruptions.",
+  "definition": "Operational Resilience is the organisational and technical capacity to anticipate, prepare for, withstand, recover from, and adapt to disruptions\u2014whether caused by cyber-attacks, infrastructure failures, natural disasters, or human error\u2014in a manner that maintains continuity of critical business services. It extends traditional business continuity and disaster recovery concepts by placing emphasis on setting impact tolerances for important business services and testing end-to-end resilience under realistic disruption scenarios. Operational resilience is increasingly mandated by financial regulators and embedded in frameworks such as the Bank of England's SS1/21 and the EU's Digital Operational Resilience Act (DORA).",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
@@ -14,11 +14,25 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:resilience",
+        "label": "Resilience"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +41,20 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:monitoring-dashboard",
+        "label": "Monitoring Dashboard"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

@@ -1,12 +1,14 @@
 - ### Definition
-  - PythonSample1 is a concept within the ngm domain.
+  - Python Sample1 is a Logseq Python code block demonstrating the Logseq Plugin API via Pyodide: it defines helper utilities for inspecting JavaScript objects, appending timestamped entries to a named Logseq page, and searching all pages for a given term. The sample illustrates bridging Python scripting with the Logseq knowledge-graph API for automated page discovery and log management.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:PythonSample1
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses:: [[Knowledge Graph]], [[Knowledge Management]]
+  - relatedTo:: [[Code Generation]], [[Information Retrieval]], [[Semantic Search]]
+  - partOf:: [[Software Engineering]]
 
 - ### Content
   - ```javascript

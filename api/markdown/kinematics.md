@@ -1,12 +1,17 @@
 - ### Definition
-  - Kinematics is a concept within the robotics domain. Further enrichment pending.
+  - Kinematics in robotics describes the geometry of motion of a robot's links and joints without reference to the forces producing that motion. Forward kinematics maps joint parameters to end-effector pose; inverse kinematics solves the reverse problem. Kinematic analysis is foundational for motion planning, trajectory generation, workspace analysis, and robot programming.
 
 - ### Semantic Classification
   - owl-class:: robotics:Kinematics
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart [[Forward Kinematics]]
+  - hasPart [[Inverse Kinematics]]
+  - enables [[Robot Dynamics]]
+  - enables [[Motion Planning]]
+  - relatedTo [[Robot Joint]]
+  - relatedTo [[Manipulator]]
 
 - ### Content
 

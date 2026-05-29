@@ -42,20 +42,54 @@ public:: true
   "@id": "urn:ngm:class:system-software",
   "@type": "Class",
   "label": "System Software",
-  "definition": "System Software is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Low-level software that directly manages hardware resources and provides foundational services upon which application software operates. In XR and spatial computing contexts, system software encompasses device drivers, operating system kernels, firmware, and hardware abstraction layers that expose display, tracking, and input peripherals to higher-level runtimes.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
     }
   ],
-  "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-abstraction",
+        "label": "Hardware Abstraction"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:xr-runtime-environment",
+        "label": "XR Runtime Environment"
+      },
+      {
+        "@id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:middleware",
+        "label": "Middleware"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:technology-stack",
+        "label": "Technology Stack"
+      }
+    ]
   }
 }
 ```
@@ -87,23 +121,25 @@ public:: true
 
 
 - ### Definition
-  - System Software is a concept within the metaverse domain. Further enrichment pending.
+  - Low-level software that directly manages hardware resources and provides foundational services upon which application software operates. In XR and spatial computing contexts, system software encompasses device drivers, operating system kernels, firmware, and hardware abstraction layers that expose display, tracking, and input peripherals to higher-level runtimes.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:SystemSoftware
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Has Part [[Operating System]]
+  - Has Part [[Hardware Abstraction]]
+  - Part Of [[Technology Stack]]
+  - Enables [[XR Runtime Environment]]
+  - Enables [[Rendering Pipeline]]
+  - Supports [[Middleware]]
 
 - ### Content
 
   ## Overview
 
-  System Software represents an abstract concept in the metaverse ontology hierarchy.
-
-  #### Related Concepts
-  - [[owl:Thing]]
+  System software forms the lowest addressable layer of the XR technology stack. Drivers translate raw hardware signals from IMUs, cameras, and displays into normalised data streams consumed by XR runtimes. The operating system kernel schedules processes, manages memory, and enforces security boundaries, whilst firmware provides immutable device configuration at the silicon level.
 
 - ### Provenance
   - sources::

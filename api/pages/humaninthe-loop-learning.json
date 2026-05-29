@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:humaninthe-loop-learning",
   "domain": "artificial-intelligence",
-  "definition": "A concept in artificial intelligence related to Humaninthe Loop Learning.",
+  "definition": "A machine learning paradigm in which human annotators or domain experts are incorporated into the training loop to provide labels, corrections, or preference signals at points where automated methods are insufficient. Human-in-the-loop learning improves model quality on ambiguous or high-stakes tasks and is foundational to techniques such as active learning and RLHF.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -13,21 +13,53 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human in the Loop"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:value-alignment",
+        "label": "Value Alignment"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -33,16 +33,30 @@ public:: true
   "@id": "urn:ngm:class:the-secret-cyborg-problem",
   "@type": "Class",
   "label": "The Secret Cyborg Problem",
-  "definition": "The Secret Cyborg Problem is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "The Secret Cyborg Problem describes the widespread but concealed practice of workers integrating AI tools into professional workflows without disclosure to employers or colleagues, creating risks around data governance, accountability, and skills assessment. Research indicates approximately 78% of AI-using knowledge workers employ tools covertly, undermining organisational AI adoption strategies and responsible-use frameworks.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:ai-adoption", "label": "AI Adoption"},
+      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"},
+      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
+      {"@id": "urn:ngm:class:trust-in-automation", "label": "Trust in Automation"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:workforce-augmentation", "label": "Workforce Augmentation"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -72,14 +86,16 @@ public:: true
 
 
 - ### Definition
-  - The Secret Cyborg Problem is a concept within the ngm domain.
+  The Secret Cyborg Problem describes the widespread but concealed practice of workers integrating AI tools into professional workflows without disclosure to employers or colleagues, creating risks around data governance, accountability, and skills assessment. Research indicates approximately 78% of AI-using knowledge workers employ tools covertly, undermining organisational AI adoption strategies and responsible-use frameworks.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:TheSecretCyborgProblem
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **relatedTo**: AI Adoption, AI Ethics, Generative AI
+  - **contrastsWith**: AI Governance, Trust in Automation
+  - **enables**: Workforce Augmentation
 
 - ### Content
   # Trust Attitudes in the Use of Artificial Intelligence

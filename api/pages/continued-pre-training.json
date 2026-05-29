@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:continued-pre-training",
   "domain": "artificial-intelligence",
-  "definition": "An intermediate training phase where a pre-trained model undergoes additional pre-training on domain-specific or task-relevant data before fine-tuning.",
+  "definition": "An intermediate training phase in which a pre-trained foundation model undergoes additional unsupervised pre-training on domain-specific or task-relevant corpora before supervised fine-tuning. Continued pre-training bridges general-purpose representations and domain expertise, using the same self-supervised objectives as initial pre-training whilst employing reduced learning rates and selective data to mitigate catastrophic forgetting of general capabilities.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -13,21 +13,53 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "id": "urn:ngm:class:domain-adaptation",
+        "label": "Domain Adaptation"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:full-fine-tuning",
+        "label": "Full Fine Tuning"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      }
+    ]
   },
   "wikilinks": [
     {

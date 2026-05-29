@@ -158,16 +158,38 @@ public:: true
   "@id": "urn:ngm:class:food-safety-blockchain",
   "@type": "Class",
   "label": "Food Safety Blockchain",
-  "definition": "Blockchain applications addressing critical food safety challenges through immutable farm-to-fork audit trails, enabling rapid contamination source identification (2.2 seconds vs 6+ days traditional trace-back) and surgical recalls that reduce food waste whilst protecting consumers.",
+  "definition": "Food Safety Blockchain is the application of distributed ledger technology to establish immutable, multi-party farm-to-fork audit trails that enable near-instantaneous contamination source identification and surgical product recalls. By recording each Critical Tracking Event—harvest, cooling, packing, shipment, receipt—as a cryptographically linked on-chain entry, the approach reduces trace-back from days to seconds, minimises the volume of food unnecessarily recalled, and provides regulators and consumers with verifiable provenance data.",
   "domain": "blockchain",
   "maturity": "established",
+  "qualityScore": 0.8,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:bc-network-component",
-      "label": "Network Component"
+      "@id": "urn:ngm:class:blockchain-application",
+      "label": "Blockchain Application"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:smart-contracts", "label": "Smart Contracts"},
+      {"@id": "urn:ngm:class:hyperledger-fabric", "label": "Hyperledger Fabric"},
+      {"@id": "urn:ngm:class:permissioned-blockchain", "label": "Permissioned Blockchain"},
+      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:supply-chain-traceability", "label": "Supply Chain Traceability"},
+      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"},
+      {"@id": "urn:ngm:class:provenance-tracking", "label": "Provenance Tracking"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:supply-chain-blockchain", "label": "Supply Chain Blockchain"},
+      {"@id": "urn:ngm:class:pharmaceutical-traceability", "label": "Pharmaceutical Traceability"},
+      {"@id": "urn:ngm:class:data-provenance", "label": "Data Provenance"},
+      {"@id": "urn:ngm:class:blockchain-compliance", "label": "Blockchain Compliance"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:consortium-blockchain", "label": "Consortium Blockchain"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

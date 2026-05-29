@@ -6,7 +6,11 @@
   - owl-role:: Concept
 
 - ### Relationships
-  - is-subclass-of:: [[owl:Thing]]
+  - is-subclass-of:: [[Reinforcement Learning]]
+  - **partOf**: Reinforcement Learning — RL algorithms are the concrete computational methods within the broader RL paradigm.
+  - **requires**: Reward Function — every RL algorithm depends on a reward signal to define the optimisation objective.
+  - **enables**: Autonomous Navigation, Reinforcement Learning from Human Feedback — RL algorithms power autonomous control systems and RLHF fine-tuning of language models.
+  - **uses**: Proximal Policy Optimisation, Deep Learning — PPO is a widely used policy-gradient algorithm; deep neural networks serve as function approximators within modern RL systems.
 
 - ### Content
 

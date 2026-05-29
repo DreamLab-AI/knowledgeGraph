@@ -38,7 +38,7 @@ public:: true
   "@id": "urn:ngm:class:infrastructure",
   "@type": "Class",
   "label": "Infrastructure",
-  "definition": "Top-level domain category for infrastructure concepts in the NarrativeGoldmine ontology.",
+  "definition": "Top-level domain category encompassing the foundational computing, networking, storage, and platform systems that underpin all technology domains within the NarrativeGoldmine ontology. Infrastructure provides the substrate on which AI, blockchain, metaverse, and robotics applications operate.",
   "domain": "infrastructure",
   "subClassOf": [
     {
@@ -46,8 +46,26 @@ public:: true
       "label": "Thing"
     }
   ],
-  "relations": {},
-  "qualityScore": 0.9,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:cloud-infrastructure", "label": "Cloud Infrastructure"},
+      {"@id": "urn:ngm:class:compute-infrastructure", "label": "Compute Infrastructure"},
+      {"@id": "urn:ngm:class:digital-infrastructure", "label": "Digital Infrastructure"},
+      {"@id": "urn:ngm:class:blockchain-infrastructure", "label": "Blockchain Infrastructure"},
+      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"},
+      {"@id": "urn:ngm:class:computing-infrastructure", "label": "Computing Infrastructure"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:technology-domain", "label": "Technology Domain"},
+      {"@id": "urn:ngm:class:digital-twin-infrastructure", "label": "Digital Twin Infrastructure"},
+      {"@id": "urn:ngm:class:data-storage", "label": "Data Storage"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"},
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}
+    ]
+  },
+  "qualityScore": 0.8,
   "maturity": "established"
 }
 ```

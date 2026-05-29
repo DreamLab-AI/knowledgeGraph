@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:chain-of-thought-reasoning",
   "domain": "artificial-intelligence",
-  "definition": "Chain-of-Thought Reasoning is a prompting strategy that elicits intermediate reasoning steps from large language models, improving accuracy on complex multi-step problems.",
+  "definition": "Chain-of-Thought (CoT) Reasoning refers to the capacity of large language models to generate and utilise coherent sequences of intermediate logical or mathematical steps as part of producing a final answer, treating reasoning as an emergent computational process instantiated in the token generation sequence rather than purely as an elicitation artefact. This framing emphasises the model's internal mechanism \u2014 how intermediate tokens shape attention and residual stream computations in subsequent layers \u2014 rather than the prompting technique that triggers the behaviour. CoT Reasoning underpins a family of advanced inference-time compute strategies including self-consistency, step-level verifiers, and process reward models.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -14,11 +14,25 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +41,16 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:chain-of-thought",
+        "label": "Chain of Thought"
+      },
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

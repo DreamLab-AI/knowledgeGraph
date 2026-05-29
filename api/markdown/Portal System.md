@@ -37,20 +37,52 @@ public:: true
   "@id": "urn:ngm:class:portal-system",
   "@type": "Class",
   "label": "Portal System",
-  "definition": "Portal System is a spatial computing concept and a type of spatial-computing.",
+  "definition": "A spatial computing mechanism that enables instantaneous traversal between distinct virtual locations, worlds, or platform environments, rendering a visual aperture through which users can see and enter the destination, thereby facilitating cross-world navigation and interoperability in metaverse platforms.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
     }
   ],
-  "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:virtual-world-traversal",
+        "label": "Virtual World Traversal"
+      },
+      {
+        "@id": "urn:ngm:class:cross-platform-interoperability",
+        "label": "Cross-Platform Interoperability"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-location",
+        "label": "Virtual Location"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:metaverse-navigation-systems",
+        "label": "Metaverse Navigation Systems"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-environment",
+        "label": "Virtual Environment"
+      }
+    ]
   }
 }
 ```
@@ -76,14 +108,19 @@ public:: true
 
 
 - ### Definition
-  - PortalSystem is a concept within the ngm domain.
+  - A spatial computing mechanism that enables instantaneous traversal between distinct virtual locations, worlds, or platform environments, rendering a visual aperture through which users can see and enter the destination, thereby facilitating cross-world navigation and interoperability in metaverse platforms.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:PortalSystem
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Enables: [[Virtual World Traversal]]
+  - Enables: [[Cross-Platform Interoperability]]
+  - Uses: [[Real-Time Rendering]]
+  - Uses: [[Virtual Location]]
+  - Related To: [[Metaverse Navigation Systems]]
+  - Related To: [[Virtual Environment]]
 
 - ### Content
   # PortalSystem

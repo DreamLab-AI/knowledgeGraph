@@ -1,5 +1,5 @@
 - ### Definition
-  - Proteus Effect is a concept within the mv domain.
+  - The Proteus Effect is the phenomenon whereby the visual characteristics of a user's digital avatar unconsciously shape that user's own behaviour, attitudes, and self-perception within virtual environments. Users assigned taller or more attractive avatars exhibit corresponding shifts in confidence and social openness, while users embodying outgroup avatars show reduced implicit bias. The effect arises through self-perception theory, stereotype activation, and embodied cognition, with direct implications for therapeutic applications, metaverse platform design, and ethical avatar-assignment practices.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:ProteusEffect
@@ -7,6 +7,9 @@
 
 - ### Relationships
   - is-subclass-of:: [[Metaverse]]
+  - requires:: [[Avatar]], [[Virtual Environment]]
+  - enables:: [[Behavioral Modeling]], [[Immersive Experience]]
+  - relatedTo:: [[Social Presence]], [[VR Psychology]], [[Embodied AI]], [[Avatar Customization]]
 
 - ### Content
 

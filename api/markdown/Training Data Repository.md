@@ -48,10 +48,11 @@ public:: true
   "label": "Training Data Repository",
   "definition": "A centralized or distributed storage system for collecting, organizing, versioning, and managing datasets used to train AI and machine learning models, including data provenance tracking, quality assurance, and access control.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:cat-ai-infrastructure",
+      "@id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure (Category)"
     },
     {
@@ -59,7 +60,22 @@ public:: true
       "label": "Data Management"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
+      {"@id": "urn:ngm:class:machine-learning-pipeline", "label": "Machine Learning Pipeline"},
+      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:data-provenance", "label": "Data Provenance"},
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
+      {"@id": "urn:ngm:class:synthetic-data", "label": "Synthetic Data"},
+      {"@id": "urn:ngm:class:data-versioning", "label": "Data Versioning"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -109,6 +125,9 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Data Management]]
+  - **enables** → [[Model Training]], [[Machine Learning Pipeline]], [[Federated Learning]]
+  - **requires** → [[Data Provenance]], [[Data Governance]]
+  - **hasPart** → [[Training Data]], [[Synthetic Data]], [[Data Versioning]]
 
 - ### Content
 

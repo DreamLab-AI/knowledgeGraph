@@ -66,16 +66,33 @@ public:: true
   "@id": "urn:ngm:class:portability",
   "@type": "Class",
   "label": "Portability",
-  "definition": "The capability for seamless migration of digital assets, identities, and experiences across heterogeneous virtual platforms through standardised formats metadata schemas, and blockchain bridges—enabling users to transfer avatars, digital goods, and social connections without vendor lock-in, exemp...",
+  "definition": "The capability for seamless migration of digital assets, identities, and experiences across heterogeneous virtual platforms through standardised formats (glTF, USD), metadata schemas, and blockchain bridges—enabling users to transfer avatars, digital goods, and social connections without vendor lock-in.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-standards-and-interop",
       "label": "Standards and Interoperability"
     }
   ],
-  "quality": 0.4,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:asset-format-standards", "label": "Asset Format Standards"},
+      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:avatar-portability", "label": "Avatar Portability"},
+      {"@id": "urn:ngm:class:cross-platform-interoperability", "label": "Cross-Platform Interoperability"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"},
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -147,7 +164,10 @@ public:: true
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires**: Asset Format Standards, Interoperability — portability depends on agreed open formats and platform interoperability contracts.
+  - **enables**: Avatar Portability, Cross-Platform Interoperability — portability mechanisms directly deliver avatar and asset migration across platforms.
+  - **uses**: Digital Identity, Blockchain — decentralised identity and on-chain provenance are the mechanisms that preserve ownership across platform boundaries.
+  - **supports**: Metaverse — an open, interoperable metaverse requires portability as a foundational property.
 - ### Content
   - Capability for seamless migration of digital assets, identities, and experiences across heterogeneous virtual platforms through standardised formats ([[glTF]], [[USD]]), metadata schemas, and blockchain bridges. Portability eliminates vendor lock-in by enabling users to transfer avatars, digital goods, and social connections across platforms, exemplified by [[ReadyPlayerMe]] cross-platform avatars and [[Decentraland]] [[NFT]] portability. Standards-based interoperability reduces switching costs and encourages multi-platform presence, supporting user agency and ecosystem composability.
   - ### Original Content

@@ -1,12 +1,17 @@
 - ### Definition
-  - Exchange Mechanism is a concept within the metaverse domain. Further enrichment pending.
+  - An Exchange Mechanism is a protocol or technical construct that governs the transfer of digital assets, tokens, or value between parties within a virtual economy or cross-platform environment. Exchange mechanisms specify the rules for matching buyers and sellers, executing atomic swaps, handling liquidity, and settling transactions, forming the economic infrastructure of metaverse marketplaces.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:ExchangeMechanism
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses [[Smart Contract]]
+  - Uses [[Blockchain]]
+  - Enables [[Marketplace]]
+  - Enables [[Digital Asset Trading]]
+  - Related To [[Liquidity Pool]]
+  - Related To [[Token Economics]]
 
 - ### Content
 

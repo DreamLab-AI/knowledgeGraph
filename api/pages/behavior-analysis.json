@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:behavior-analysis",
   "domain": "artificial-intelligence",
-  "definition": "Behavior Analysis is a artificial intelligence concept and a type of Machine Learning.",
+  "definition": "Behavior Analysis is an AI and machine learning technique concerned with the systematic observation, modelling, and interpretation of patterns in entity actions \u2014 whether human users, software agents, or autonomous systems \u2014 in order to detect anomalies, predict future actions, or classify intent. It combines statistical modelling, sequence analysis, and supervised or unsupervised learning to extract actionable intelligence from behavioural streams. Typical applications include cybersecurity threat detection, user experience optimisation, game AI design, and fraud prevention.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -17,21 +17,103 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "id": "urn:ngm:class:pattern-recognition",
+        "label": "Pattern Recognition"
+      },
+      {
+        "id": "urn:ngm:class:behavioral-analytics",
+        "label": "Behavioral Analytics"
+      },
+      {
+        "id": "urn:ngm:class:behavioral-modeling",
+        "label": "Behavioral Modeling"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      },
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      },
+      {
+        "id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      },
+      {
+        "id": "urn:ngm:class:predictive-personalization",
+        "label": "Predictive Personalization"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:avatar-behavior",
+        "label": "Avatar Behavior"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:behavioral-learning",
+        "label": "Behavioral Learning"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      },
+      {
+        "id": "urn:ngm:class:interpretability",
+        "label": "Interpretability"
+      }
+    ]
   },
   "wikilinks": [
     {

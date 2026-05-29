@@ -42,9 +42,10 @@ public:: true
   "@id": "urn:ngm:class:testing-infrastructure",
   "@type": "Class",
   "label": "Testing Infrastructure",
-  "definition": "Testing Infrastructure is a type of Quality Assurance in the infrastructure domain.",
+  "definition": "The ensemble of tools, environments, frameworks, and automated pipelines used to validate software correctness, performance, and reliability across development and deployment stages. Testing infrastructure encompasses unit, integration, and end-to-end test runners, continuous integration services, containerised test environments, and monitoring dashboards that together ensure software meets quality standards before release.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
@@ -60,6 +61,36 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:software-testing",
+        "label": "Software Testing"
+      },
+      {
+        "@id": "urn:ngm:class:monitoring-dashboard",
+        "label": "Monitoring Dashboard"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:testing-process",
+        "label": "Testing Process"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:data-security",
+        "label": "Data Security"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      }
+    ]
   }
 }
 ```
@@ -91,14 +122,18 @@ public:: true
 
 
 - ### Definition
-  - Testing Infrastructure is a concept within the metaverse domain. Further enrichment pending.
+  - The ensemble of tools, environments, frameworks, and automated pipelines used to validate software correctness, performance, and reliability across development and deployment stages. Testing infrastructure encompasses unit, integration, and end-to-end test runners, continuous integration services, containerised test environments, and monitoring dashboards that together ensure software meets quality standards before release.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:TestingInfrastructure
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Has Part: [[Software Testing]]
+  - Has Part: [[Monitoring Dashboard]]
+  - Supports: [[Quality Assurance]]
+  - Enables: [[Testing Process]]
+  - Related To: [[Data Security]]
 
 - ### Content
 

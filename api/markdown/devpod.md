@@ -33,16 +33,31 @@ public:: true
   "@id": "urn:ngm:class:devpod",
   "@type": "Class",
   "label": "devpod",
-  "definition": "devpod is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "DevPod is an open-source, provider-agnostic tool for creating reproducible cloud development environments defined by devcontainer specifications. It abstracts over compute providers — including local Docker, Kubernetes clusters, cloud VMs, and managed container services — allowing developers to spin up identical, pre-configured workspaces on any infrastructure without vendor lock-in. DevPod acts as a portable alternative to managed cloud IDE products such as GitHub Codespaces or GitPod, enabling teams to self-host development environments on their own Kubernetes or cloud infrastructure.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
     }
   ],
-  "quality": 0.35,
+  "quality": 0.7,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:cloud-native-applications", "label": "Cloud-Native Applications"},
+      {"@id": "urn:ngm:class:virtual-machine", "label": "Virtual Machine"},
+      {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"},
+      {"@id": "urn:ngm:class:software-development-process", "label": "Software Development Process"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:version-control", "label": "Version Control"},
+      {"@id": "urn:ngm:class:cloud-infrastructure", "label": "Cloud Infrastructure"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:compute-infrastructure", "label": "Compute Infrastructure"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -72,14 +87,14 @@ public:: true
 
 
 - ### Definition
-  - devpod is a concept within the ngm domain.
+  - DevPod is an open-source, provider-agnostic tool for creating reproducible cloud development environments defined by devcontainer specifications (the same standard used by VS Code Dev Containers). It supports multiple compute providers — Docker, Kubernetes, AWS, GCP, Azure, Coder, SSH remotes — through a plugin architecture, allowing teams to define workspace configuration once and provision it anywhere. Developers interact with DevPod through a CLI or desktop GUI, and workspaces are launched with pre-installed toolchains, dependencies, and editor extensions, eliminating "works on my machine" problems.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:Devpod
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - DevPod is positioned as a self-hosted, vendor-neutral alternative to GitHub Codespaces and GitPod, offering full control over the underlying compute and networking. Its Kubernetes provider integration (demonstrated in the content notes) enables running persistent development environments on private cloud clusters, making it suitable for organisations with data-residency requirements or air-gapped environments. The devcontainer standard it relies on is increasingly adopted across IDEs, CI/CD pipelines, and cloud platforms, making DevPod workspaces portable across the software development lifecycle.
 
 - ### Content
   - I use this: https://devpod.sh/

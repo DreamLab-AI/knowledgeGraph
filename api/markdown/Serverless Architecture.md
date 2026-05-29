@@ -37,16 +37,33 @@ public:: true
   "@id": "urn:ngm:class:serverless-architecture",
   "@type": "Class",
   "label": "Serverless Architecture",
-  "definition": "Serverless Architecture is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Serverless Architecture is a cloud execution model in which application logic is deployed as discrete, stateless functions that are provisioned and scaled automatically by the cloud provider in response to events, with billing proportional to actual execution time. By abstracting away server provisioning and capacity management, serverless architectures reduce operational overhead and enable fine-grained, event-driven compute patterns suited to metaverse backends, AI inference endpoints, and IoT data pipelines.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event Driven Architecture"},
+      {"@id": "urn:ngm:class:cloud-infrastructure", "label": "Cloud Infrastructure"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"},
+      {"@id": "urn:ngm:class:cloud-native-applications", "label": "Cloud-Native Applications"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:software-infrastructure", "label": "Software Infrastructure"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:computing-infrastructure", "label": "Computing Infrastructure"}
+    ]
+  },
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -76,18 +93,21 @@ public:: true
 
 
 - ### Definition
-  - ServerlessArchitecture is a concept within the ngm domain.
+  - Serverless Architecture is a cloud execution model in which application logic is deployed as discrete, stateless functions that are provisioned and scaled automatically by the cloud provider in response to events, with billing proportional to actual execution time. By abstracting away server provisioning and capacity management, serverless architectures reduce operational overhead and enable fine-grained, event-driven compute patterns suited to metaverse backends, AI inference endpoints, and IoT data pipelines.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:ServerlessArchitecture
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: Event Driven Architecture — serverless functions are triggered by events (HTTP requests, message queue items, timers); Cloud Infrastructure — the underlying managed cloud platform provides the execution environment.
+  - **enables**: Microservices Architecture — serverless functions are a natural implementation substrate for fine-grained microservices; Cloud-Native Applications — serverless is a defining pattern in cloud-native design.
+  - **partOf**: Software Infrastructure — serverless is a deployment and execution layer within the broader software infrastructure stack.
+  - **contrastsWith**: Computing Infrastructure — serverless abstracts away the explicit server and VM management that traditional computing infrastructure requires.
 
 - ### Content
   # ServerlessArchitecture
-  ServerlessArchitecture represents a key component in Metaverse infrastructure and technology. Research: ServerlessArchitecture - FaaS, cloud functions, event-driven computing
+  Serverless Architecture represents a key component in metaverse infrastructure and technology, covering FaaS, cloud functions, and event-driven computing.
   - https://www.khronos.org/ - Industry standards
   - https://www.w3.org/TR/ - Web standards
   - https://developer.mozilla.org/ - Technical documentation

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:signal-processing",
   "domain": "spatial-computing",
-  "definition": "Signal Processing is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Signal Processing is the mathematical discipline concerned with the analysis, synthesis, filtering, transformation, and compression of analogue and digital signals including audio, video, sensor telemetry, and communications data. In spatial computing and immersive systems, signal processing underpins spatial audio rendering, motion capture noise reduction, depth-sensor filtering, and the real-time fusion of multi-modal sensor streams required for robust AR/VR tracking and interaction.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-display-and-rendering",
@@ -14,11 +14,24 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      },
+      {
+        "id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "id": "urn:ngm:class:depth-sensing",
+        "label": "Depth Sensing"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +40,16 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:render-pipeline",
+        "label": "Render Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      }
+    ]
   },
   "wikilinks": [
     {

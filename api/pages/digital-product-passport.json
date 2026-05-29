@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:digital-product-passport",
   "domain": "infrastructure",
-  "definition": "A Digital Product Passport is a standardised digital record that captures a product's composition, provenance, sustainability attributes, and lifecycle events to enable circular economy tracking.",
+  "definition": "A Digital Product Passport (DPP) is a standardised digital record that captures and communicates information about a product's material composition, origin, manufacturing process, environmental footprint, repair history, and end-of-life options throughout its lifecycle. Mandated by EU ecodesign and product sustainability legislation, DPPs are designed to be machine-readable and accessible to consumers, regulators, recyclers, and supply chain actors via data carriers such as QR codes or RFID. They are a foundational instrument of circular economy policy and are frequently implemented using blockchain or distributed ledger technology to ensure provenance integrity and tamper-evident audit trails.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-data-management",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:circular-economy",
+        "label": "Circular Economy"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-traceability",
+        "label": "Supply Chain Traceability"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

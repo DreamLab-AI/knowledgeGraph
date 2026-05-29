@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:velocity",
   "domain": "robotics",
-  "definition": "Velocity - Rate of change of position",
+  "definition": "Velocity is the vector quantity expressing rate of change of position with respect to time, formally defined as v = dx/dt. In robotics and autonomous systems, it is a fundamental parameter governing motion planning, collision avoidance, and control, with algorithms such as Velocity Obstacle (VO) and Reciprocal Velocity Obstacle (RVO) built directly upon it.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
@@ -13,21 +13,49 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:collision-avoidance",
+        "label": "Collision Avoidance"
+      },
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:robotics-control",
+        "label": "Robotics Control"
+      }
+    ]
   },
   "wikilinks": [
     {

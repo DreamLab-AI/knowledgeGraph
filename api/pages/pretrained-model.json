@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:pretrained-model",
   "domain": "artificial-intelligence",
-  "definition": "Pretrained Model is a artificial intelligence concept and a type of Model.",
+  "definition": "A neural network or machine learning model that has been trained on a large dataset (often a broad corpus) before being adapted to a specific downstream task through fine-tuning or prompting. Pretrained models encode general representations\u2014linguistic, visual, or multimodal\u2014that can be efficiently transferred, dramatically reducing the data and compute required for specialised applications.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -17,21 +17,65 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:pretrained-weights",
+        "label": "Pretrained Weights"
+      },
+      {
+        "id": "urn:ngm:class:checkpoints",
+        "label": "Checkpoints"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:parameter-efficient-fine-tuning",
+        "label": "Parameter-Efficient Fine-Tuning"
+      },
+      {
+        "id": "urn:ngm:class:lo-ra-fine-tuning",
+        "label": "LoRA Fine-Tuning"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-quantisation",
+        "label": "Neural Network Quantisation"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:pre-training",
+        "label": "Pre Training"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:domain-adaptation",
+        "label": "Domain Adaptation"
+      }
+    ]
   },
   "wikilinks": [
     {

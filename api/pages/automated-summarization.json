@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:automated-summarization",
   "domain": "artificial-intelligence",
-  "definition": "Automated Summarization is a artificial intelligence concept and a type of Natural Language Processing.",
+  "definition": "Automated Summarization is an NLP task in which a system produces a condensed representation of one or more source documents that preserves salient information and is significantly shorter than the original. Extractive approaches select and concatenate verbatim sentences or passages from the source; abstractive approaches generate novel text that may paraphrase, fuse, or infer content not explicitly stated in the source. Modern large language model-based summarizers are predominantly abstractive, achieving strong performance on long-form documents, meeting transcripts, scientific papers, and news articles, but remain susceptible to hallucination, factual inconsistency, and salience mismatch relative to the reader's intent.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-application",
@@ -17,21 +17,87 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:text-generation",
+        "label": "Text Generation"
+      },
+      {
+        "id": "urn:ngm:class:language-modeling",
+        "label": "Language Modeling"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-understanding",
+        "label": "Natural Language Understanding"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:knowledge-base",
+        "label": "Knowledge Base"
+      },
+      {
+        "id": "urn:ngm:class:documentation-generation",
+        "label": "Documentation Generation"
+      },
+      {
+        "id": "urn:ngm:class:meeting-ai-assistant",
+        "label": "Meeting AI Assistant"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:meeting-recording",
+        "label": "Meeting Recording"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph-construction",
+        "label": "Knowledge Graph Construction"
+      },
+      {
+        "id": "urn:ngm:class:meeting-transcription",
+        "label": "Meeting Transcription"
+      },
+      {
+        "id": "urn:ngm:class:sentiment-analysis",
+        "label": "Sentiment Analysis"
+      }
+    ]
   },
   "wikilinks": [
     {

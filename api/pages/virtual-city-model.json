@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:virtual-city-model",
   "domain": "spatial-computing",
-  "definition": "A digital representation of an urban environment including buildings, infrastructure, terrain, and dynamic elements, used for urban planning, simulation, gaming, and metaverse world-building based on real or imagined cities.",
+  "definition": "A digital representation of an urban environment including buildings, infrastructure, terrain, and dynamic elements, used for urban planning, simulation, gaming, and metaverse world-building based on real or imagined cities. Data standards such as CityGML (OGC), 3D Tiles, and BIM/IFC underpin interoperable city model exchange, while capture techniques including LiDAR scanning and photogrammetry feed real-world geometry into the model.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -17,19 +17,47 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-twin-technology",
+        "label": "Digital Twin Technology"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-platform",
+        "label": "Metaverse Platform"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      }
+    ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      }
+    ],
     "partOf": [],
     "relatedTo": []
   },

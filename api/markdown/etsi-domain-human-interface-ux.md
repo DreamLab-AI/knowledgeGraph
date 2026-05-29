@@ -7,7 +7,10 @@
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **partOf**: [[ETSI_Domain_Human_Interface]]
+  - **requires**: [[Virtual Environment]], [[Accessibility Standards]]
+  - **enables**: [[Immersive Experience]], [[Telecollaboration]]
+  - **relatedTo**: [[Inclusive Xr Design]]
 - ### Content
   - The ETSI Human Interface UX domain focuses on user experience design and accessibility optimising satisfaction and inclusion in virtual environments.
   - ### Original Content

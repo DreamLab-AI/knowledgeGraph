@@ -46,7 +46,7 @@ public:: true
   "@id": "urn:ngm:class:multi-head-attention",
   "@type": "Class",
   "label": "Multi-Head Attention",
-  "definition": "An extension of the attention mechanism that allows the model to jointly attend to information from different representation subspaces at different positions, using multiple attention heads in parallel.",
+  "definition": "An extension of scaled dot-product attention that runs multiple attention operations in parallel over distinct learned projection subspaces, then concatenates and linearly projects the results. Multi-head attention enables Transformer models to capture diverse dependency patterns across positions and representation subspaces simultaneously, and is foundational to modern large language models.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -59,7 +59,24 @@ public:: true
       "label": "Attention Mechanism"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:attention-head", "label": "Attention Head"},
+      {"@id": "urn:ngm:class:scaled-dot-product-attention", "label": "Scaled Dot Product Attention"},
+      {"@id": "urn:ngm:class:attention-weight", "label": "Attention Weight"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:self-attention", "label": "Self Attention"},
+      {"@id": "urn:ngm:class:cross-attention", "label": "Cross Attention"},
+      {"@id": "urn:ngm:class:grouped-query-attention", "label": "Grouped Query Attention"},
+      {"@id": "urn:ngm:class:flash-attention", "label": "Flash Attention"},
+      {"@id": "urn:ngm:class:positional-encoding", "label": "Positional Encoding"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

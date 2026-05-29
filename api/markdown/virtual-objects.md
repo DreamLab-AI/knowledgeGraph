@@ -8,6 +8,10 @@
 
 - ### Relationships
   - is-subclass-of:: [[Digital Asset]]
+  - **uses**: [[NFT]], [[Blockchain]] — NFT smart contracts provide verifiable, transferable ownership of unique virtual objects on-chain
+  - **hasPart**: [[Avatar Wearable]], [[Avatar Customization]] — virtual objects include wearable items and customisation accessories for avatars
+  - **requires**: [[Real-Time Rendering]] — virtual objects must be rendered at interactive frame rates within their host environments
+  - **enables**: [[Virtual Economy]] — tradeable virtual objects are the primary commodities that constitute virtual economies
 
 - ### Content
 

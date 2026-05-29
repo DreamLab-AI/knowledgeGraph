@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:production-design",
   "domain": "spatial-computing",
-  "definition": "Production Design is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Production Design is the creative and technical discipline responsible for defining the visual aesthetic, spatial environment, and material world of a production \u2014 whether film, game, or virtual world. It spans concept art, environment modelling, asset creation pipelines, and art direction, ensuring visual coherence across all content elements.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -14,16 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:digital-content-creation",
+        "label": "Digital Content Creation"
+      },
+      {
+        "id": "urn:ngm:class:3-d-design",
+        "label": "3D Design"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:world-building",
+        "label": "World Building"
+      },
+      {
+        "id": "urn:ngm:class:content-production-workflow",
+        "label": "Content Production Workflow"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:creative-tools",
+        "label": "Creative Tools"
+      },
+      {
+        "id": "urn:ngm:class:design-software",
+        "label": "Design Software"
+      },
+      {
+        "id": "urn:ngm:class:animation-software",
+        "label": "Animation Software"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

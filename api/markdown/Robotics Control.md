@@ -54,10 +54,10 @@ public:: true
   "@id": "urn:ngm:class:robotics-control",
   "@type": "Class",
   "label": "Robotics Control",
-  "definition": "Robotics Control integrates artificial intelligence with robotic systems to enable autonomous navigation, manipulation, perception, and task execution.",
+  "definition": "The application of artificial intelligence and control theory to robotic systems to enable autonomous navigation, manipulation, perception, and task execution. AI-driven robotics control integrates reinforcement learning for policy optimisation, computer vision for scene perception, motion planning for collision-free trajectory generation, and sensor fusion for robust state estimation — operating in real time under uncertainty and safety constraints.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
-  "quality": 0.35,
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -68,7 +68,25 @@ public:: true
       "@id": "urn:ngm:class:ai-application",
       "label": "AI Application"
     }
-  ]
+  ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
+      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
+      {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:actuator", "label": "Actuator"}
+    ]
+  }
 }
 ```
 
@@ -122,6 +140,10 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: ['owl:Thing']
+  - **requires**: Sensor Fusion (multi-sensor state estimation), Motion Planning (collision-free trajectory computation)
+  - **uses**: Reinforcement Learning (policy learning from environment reward), Computer Vision (scene perception and object recognition), Deep Learning (visuomotor policy networks)
+  - **enables**: Autonomous Navigation (self-directed locomotion in environments), Autonomous Robot (fully capable robotic agent)
+  - **relatedTo**: Actuator (physical output mechanism executing control commands)
 
 - ### Content
 

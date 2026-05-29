@@ -7,7 +7,11 @@
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - dependsOn:: [[Model Training]]
+  - dependsOn:: [[Neural Network]]
+  - uses:: [[Hardware Acceleration]]
+  - uses:: [[Inference Hardware]]
+  - contrastsWith:: [[Training]]
 
 - ### Content
   - ### Primary Definition

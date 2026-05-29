@@ -7,7 +7,10 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses** → [[Loss Function]], [[Gradient Descent]]
+  - **supports** → [[Model Performance]], [[Model Evaluation Results]]
+  - **contrastsWith** → [[Mean Absolute Error]]
+  - **relatedTo** → [[Overfitting]], [[Training]]
 
 - ### Content
   - A regression performance metric representing the square root of the average squared differences between predicted and actual values, calculated by taking the mean of squared prediction errors and then applying the square root, providing a measure of prediction accuracy in the same units as the target variable whilst giving disproportionate weight to larger errors, making it particularly sensitive to outliers and appropriate when large prediction errors are significantly more problematic than small errors.

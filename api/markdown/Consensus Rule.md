@@ -70,9 +70,10 @@ public:: true
   "@id": "urn:ngm:class:consensus-rule",
   "@type": "Class",
   "label": "Consensus Rule",
-  "definition": "Protocol validation requirement within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "A Consensus Rule is a protocol-level validation requirement that every fully-validating node in a blockchain network must enforce uniformly to reach and maintain agreement on the canonical chain state. Consensus rules define which blocks and transactions are valid, covering aspects such as block structure, cryptographic proofs, transaction format, gas limits, and state-transition logic. Deviation from consensus rules — whether accidental or deliberate — results in a fork, splitting the network into incompatible chains.",
   "domain": "blockchain",
   "maturity": "established",
+  "qualityScore": 0.8,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-protocol-and-consensus",
@@ -84,10 +85,35 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:consensus-protocol",
-      "label": "ConsensusProtocol"
+      "label": "Consensus Protocol"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
+      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"},
+      {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:finality", "label": "Finality"},
+      {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"},
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:fork-choice-rule", "label": "Fork Choice Rule"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
+      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"},
+      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"},
+      {"@id": "urn:ngm:class:validator-set", "label": "Validator Set"},
+      {"@id": "urn:ngm:class:51-attack", "label": "51% Attack"},
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:governance-model", "label": "Governance Model"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -157,8 +183,23 @@ public:: true
 ```
 
 
-- ### Definition
-  - Protocol validation requirement within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
+### Definition
+
+A Consensus Rule is a protocol-level validation requirement that every fully-validating node in a blockchain network must enforce uniformly to reach and maintain agreement on the canonical chain state. Consensus rules define which blocks and transactions are valid, covering aspects such as block structure, cryptographic proofs, transaction format, gas limits, and state-transition logic. Deviation from consensus rules — whether accidental or deliberate — results in a fork, splitting the network into incompatible chains.
+
+### Relationships
+
+Consensus Rule **requires** a Consensus Mechanism (the overarching protocol framework), a Blockchain Network (the peer set that must converge), and a Distributed Ledger (the replicated state it protects). It **enables** Finality (the irreversibility guarantee once rules are satisfied), Blockchain Governance (the process through which rules are proposed and changed), and Smart Contract execution (which depends on deterministic rule-enforced state transitions). The Fork Choice Rule is a **part of** consensus rules — it is the sub-rule that tells nodes which chain branch to follow when competing chains exist. Consensus Rule is **related to** Proof of Work and Proof of Stake (the sybil-resistance layers whose own validity checks are expressed as consensus rules), Byzantine Fault Tolerance (the theoretical bound on how many violating nodes can be tolerated), Validator Set (the nodes required to follow and enforce rules), 51% Attack (the scenario where a majority subverts rules), and Blockchain (the data structure whose validity is defined by these rules). It **contrasts with** Governance Model — governance determines how rules change off-chain or on-chain, whereas consensus rules are the enforced technical invariants that exist at any given moment.
+
+### Content
+
+Consensus rules are the bedrock of any permissionless blockchain. Every node independently validates every block and transaction against the same rule set, and nodes that receive an invalid item reject it and disconnect from peers that propagate it. This decentralised enforcement model means no single authority can override the rules without the consent of the majority of the economic weight of the network — a property that distinguishes Blockchain from traditional replicated databases.
+
+Bitcoin's consensus rules include structural requirements (block header fields, coinbase transaction format, Merkle tree construction), economic rules (subsidy schedule halving every 210,000 blocks, 21 million coin cap), script validation rules (stack-based Script interpreter semantics), and the Proof of Work difficulty adjustment algorithm. Any software client that implements these rules identically produces the same view of the valid chain, regardless of geography or operator intent.
+
+Ethereum's consensus rules are more complex due to the EVM, covering gas accounting, opcode semantics, state trie structure, uncle block validity, and (post-Merge) the proof-of-stake Beacon Chain rules governing validator attestations, slashing conditions, and Fork Choice Rule (LMD-GHOST combined with Casper FFG finality). A hard fork — a backward-incompatible change to consensus rules — requires coordinated upgrade of the Validator Set and full nodes. Uncoordinated hard forks produce permanent chain splits such as the Ethereum/Ethereum Classic split of 2016.
+
+Byzantine Fault Tolerance theory informs the security guarantees of consensus rules: in an asynchronous network, agreement is achievable only if fewer than one-third of validators violate the rules (in BFT-style protocols) or fewer than half the hash rate produces dishonest blocks (in proof-of-work). A 51% Attack is the scenario where this tolerance threshold is breached — an attacker controlling sufficient resources can reorganise the chain and effectively rewrite recent consensus history. Well-designed consensus rules minimise the attack surface by making such violations expensive relative to the honest-mining or honest-staking economic incentive.
 
 - ### Semantic Classification
   - owl-class:: blockchain:ConsensusRule
@@ -166,72 +207,6 @@ public:: true
   - owl-inferred:: blockchain:VirtualObject
   - belongs-to-domain:: [[ConsensusDomain]]
   - implemented-in-layer:: [[ProtocolLayer]]
-
-- ### Relationships
-  - is-subclass-of:: [[Blockchain Entity]], [[ConsensusProtocol]]
-
-  - bridges-to:: [[AI Agent System]] (ai)
-- ### Content
-
-  ## Class Declaration
-  Declaration(Class(:ConsensusRule))
-
-  ## Subclass Relationships
-  SubClassOf(:ConsensusRule :ConsensusProtocol)
-  SubClassOf(:ConsensusRule :BlockchainEntity)
-
-  ## Essential Properties
-  SubClassOf(:ConsensusRule
-    (ObjectSomeValuesFrom :partOf :Blockchain))
-
-  SubClassOf(:ConsensusRule
-    (ObjectSomeValuesFrom :hasProperty :Property))
-
-  ## Data Properties
-  DataPropertyAssertion(:hasIdentifier :ConsensusRule "BC-0058"^^xsd:string)
-  DataPropertyAssertion(:hasAuthorityScore :ConsensusRule "1.0"^^xsd:decimal)
-  DataPropertyAssertion(:isFoundational :ConsensusRule "true"^^xsd:boolean)
-
-  ## Object Properties
-  ObjectPropertyAssertion(:enablesFeature :ConsensusRule :BlockchainFeature)
-  ObjectPropertyAssertion(:relatesTo :ConsensusRule :RelatedConcept)
-
-  ## Annotations
-  AnnotationAssertion(rdfs:label :ConsensusRule "Consensus Rule"@en)
-  AnnotationAssertion(rdfs:comment :ConsensusRule
-    "Protocol validation requirement"@en)
-  AnnotationAssertion(dct:description :ConsensusRule
-    "Foundational blockchain concept with formal ontological definition"@en)
-  AnnotationAssertion(:termID :ConsensusRule "BC-0058")
-  AnnotationAssertion(:priority :ConsensusRule "1"^^xsd:integer)
-  AnnotationAssertion(:category :ConsensusRule "consensus-fundamentals"@en)
-  )
-      ```
-
-  - ## About Consensus Rule
-
-  - Protocol validation requirement within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
-  - ### Key Characteristics
-    - 1. **Definitional Property**: Core defining characteristic
-    - 2. **Functional Property**: Operational behavior
-    - 3. **Structural Property**: Compositional elements
-    - 4. **Security Property**: Security guarantees provided
-    - 5. **Performance Property**: Efficiency considerations
-  - ### Technical Components
-    - **Implementation**: How concept is realized technically
-    - **Verification**: Methods for validating correctness
-    - **Interaction**: Relationships with other components
-    - **Constraints**: Technical limitations and requirements
-  - ### Use Cases
-    - **1. Core Blockchain Operation**
-    - **Application**: Fundamental blockchain functionality
-    - **Example**: Practical implementation in major blockchains
-    - **Requirements**: Technical prerequisites
-    - **Benefits**: Value provided to blockchain systems
-  - ### Standards & References
-    - [[ISO/IEC 23257:2021]] - Blockchain and distributed ledger technologies
-    - [[IEEE 2418.1]] - Blockchain and distributed ledger technologies
-    - [[NIST NISTIR]] - Blockchain and distributed ledger technologies
 
 - ### Provenance
   - sources:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]

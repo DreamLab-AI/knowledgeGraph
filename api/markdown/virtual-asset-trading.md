@@ -8,6 +8,10 @@
 
 - ### Relationships
   - is-subclass-of:: [[Virtual Economy]]
+  - requires:: [[Blockchain]], [[Smart Contract]]
+  - uses:: [[NFT]], [[NFT Marketplace]], [[Decentralized Exchange]]
+  - dependsOn:: [[AML KYC Compliance]], [[Digital Asset]]
+  - relatedTo:: [[Virtual Economy Infrastructure]]
 
 - ### Content
 

@@ -10,7 +10,9 @@
   - is-subclass-of:: [[Robotics]]
 
 - ### Content
-  Shape Memory Alloy Actuator — content pending enrichment.
+  Shape memory alloy actuators operate by exploiting a reversible solid-state phase transition between martensite (cool, deformable) and austenite (hot, rigid) crystal structures. Nitinol wire heated above its transformation temperature (~70-100 °C) shortens by 4-8% and can exert contractile forces exceeding 150 MPa, far exceeding equivalent-mass electric motors for linear actuation.
+
+  In soft-robotic applications, SMA wires or coils are embedded in elastomeric matrices to produce bending and twisting motions that replicate biological muscle groups. Medical devices — including endoscopes, catheter steerers, and minimally invasive grippers — exploit SMA compliance to navigate tortuous anatomy without rigid linkages. Active cooling strategies (forced convection, Peltier junctions) are used to reduce the thermal lag that limits repetition frequency.
 
 - ### Provenance
   - sources:: [[Soft Robotics]], [[Materials Science]]

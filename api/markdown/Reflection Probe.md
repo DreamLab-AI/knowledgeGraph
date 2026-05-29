@@ -37,9 +37,10 @@ public:: true
   "@id": "urn:ngm:class:reflection-probe",
   "@type": "Class",
   "label": "Reflection Probe",
-  "definition": "Reflection Probe is a spatial computing concept and a type of Render Pipeline.",
+  "definition": "A Reflection Probe is a spatial data structure placed in a 3D scene that captures a 360-degree image of its surroundings into a cubemap texture, which is then sampled by shaders to produce environment reflections on nearby surfaces. Probes are fundamental to physically based rendering pipelines, providing local ambient lighting and specular reflections without the cost of real-time ray tracing. They are placed by artists or computed automatically at bake time and can be blended across zones to produce continuous, plausible illumination.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-display-and-rendering",
@@ -50,6 +51,22 @@ public:: true
       "label": "Render Pipeline"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:shader", "label": "Shader"},
+      {"@id": "urn:ngm:class:physically-based-rendering", "label": "Physically Based Rendering"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:scene-management", "label": "Scene Management"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
+      {"@id": "urn:ngm:class:photorealistic-rendering", "label": "Photorealistic Rendering"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:rendering-pipeline", "label": "Rendering Pipeline"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -80,14 +97,17 @@ public:: true
 
 
 - ### Definition
-  - ReflectionProbe is a concept within the ngm domain.
+  - A Reflection Probe is a spatial data structure placed in a 3D scene that captures a 360-degree image of its surroundings into a cubemap texture, which is then sampled by shaders to produce environment reflections on nearby surfaces. Probes are fundamental to physically based rendering pipelines, providing local ambient lighting and specular reflections without the cost of real-time ray tracing. They are placed by artists or computed automatically at bake time and can be blended across zones to produce continuous, plausible illumination.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:ReflectionProbe
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: Shader, Physically Based Rendering
+  - **hasPart**: Scene Management
+  - **enables**: Real-Time Rendering, Photorealistic Rendering
+  - **partOf**: Rendering Pipeline
 
 - ### Content
   # ReflectionProbe

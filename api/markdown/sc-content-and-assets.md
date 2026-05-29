@@ -26,7 +26,7 @@ public:: true
   "@type": "Class",
   "@id": "urn:ngm:class:sc-content-and-assets",
   "label": "Content and Assets",
-  "definition": "Intermediate taxonomy category for content and assets concepts within the spatial computing domain.",
+  "definition": "Taxonomy hub for all content types and digital assets within the spatial computing domain, encompassing 3D models, avatars, NFTs, textures, rendering pipelines, and the digital asset lifecycle from creation through distribution. This category unifies the asset-creation and asset-management concerns that underpin immersive experiences.",
   "domain": "spatial-computing",
   "subClassOf": [
     {
@@ -34,7 +34,26 @@ public:: true
       "label": "Spatial Computing"
     }
   ],
-  "relations": {},
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:3-d-asset", "label": "3D Asset"},
+      {"@id": "urn:ngm:class:avatar", "label": "Avatar"},
+      {"@id": "urn:ngm:class:nft", "label": "NFT"},
+      {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"},
+      {"@id": "urn:ngm:class:digital-content-creation", "label": "Digital Content Creation"},
+      {"@id": "urn:ngm:class:rendering-pipeline", "label": "Rendering Pipeline"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
+      {"@id": "urn:ngm:class:digital-asset-management", "label": "Digital Asset Management"},
+      {"@id": "urn:ngm:class:avatar-system", "label": "Avatar System"},
+      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:immersive-entertainment", "label": "Immersive Entertainment"}
+    ]
+  },
   "qualityScore": 0.8,
   "maturity": "established"
 }

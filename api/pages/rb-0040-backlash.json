@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:rb-0040-backlash",
   "domain": "robotics",
-  "definition": "backlash is a robotics and autonomous systems concept and a type of Backlash.",
+  "definition": "Backlash in robotics is the lost motion in a mechanical transmission \u2014 the angular or linear displacement of the output element when the input reverses direction without producing corresponding output movement, caused by clearance gaps between mating gear teeth or other drive components. Backlash degrades positional accuracy and repeatability, introduces nonlinearity into the control loop, and can cause oscillation or chattering in feedback control systems. Minimising backlash is critical for precision robot joints, and it is typically reduced through the use of preloaded gear pairs, harmonic drives, or cycloidal transmissions.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
@@ -17,21 +17,56 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:rb-0034-repeatability",
+        "label": "rb 0034 repeatability"
+      },
+      {
+        "id": "urn:ngm:class:rb-0035-accuracy",
+        "label": "rb 0035 accuracy"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rb-0039-stiffness",
+        "label": "rb 0039 stiffness"
+      },
+      {
+        "id": "urn:ngm:class:rb-0038-compliance",
+        "label": "rb 0038 compliance"
+      },
+      {
+        "id": "urn:ngm:class:rb-0026-robot-joint",
+        "label": "rb 0026 robot joint"
+      },
+      {
+        "id": "urn:ngm:class:rb-0043-torque",
+        "label": "rb 0043 torque"
+      },
+      {
+        "id": "urn:ngm:class:rb-0047-feedback-control",
+        "label": "rb 0047 feedback control"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:sentence-piece",
   "domain": "artificial-intelligence",
-  "definition": "A language-independent tokenisation library that treats input as a raw stream and learns subword units directly from raw text without pre-tokenisation, enabling purely end-to-end systems.",
+  "definition": "SentencePiece is a language-independent subword tokenisation library that processes raw Unicode text without language-specific pre-tokenisation, learning vocabulary units via Byte-Pair Encoding or the Unigram Language Model directly from corpora. It produces fully reversible, fixed-vocabulary tokenisations widely used in multilingual large language models such as T5, mT5, and ALBERT, and is particularly valuable for languages lacking explicit word boundaries.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -17,20 +17,48 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:word-piece",
+        "label": "WordPiece"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:byte-pair-encoding",
+        "label": "Byte Pair Encoding"
+      },
+      {
+        "id": "urn:ngm:class:subword-tokenisation",
+        "label": "Subword Tokenisation"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      }
+    ],
     "relatedTo": []
   },
   "wikilinks": [

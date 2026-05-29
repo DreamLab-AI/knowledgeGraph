@@ -66,24 +66,35 @@ public:: true
   "@id": "urn:ngm:class:algorithmic-accountability",
   "@type": "Class",
   "label": "Algorithmic Accountability",
-  "definition": "Algorithmic Accountability is a responsibility framework that ensures AI systems and their developers are answerable for the decisions, outcomes, and impacts produced by algorithmic processes, including mechanisms for redress, transparency, and oversight.",
+  "definition": "Algorithmic Accountability is a responsibility framework ensuring that AI systems and their developers are answerable for decisions, outcomes, and societal impacts produced by algorithmic processes. It encompasses mechanisms for redress, transparency, auditing, and oversight to prevent undue harm from automated decision-making.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
-    },
-    {
-      "@id": "urn:ngm:class:aigovernance-principle",
-      "label": "AIGovernancePrinciple"
-    },
-    {
-      "@id": "urn:ngm:class:ethical-framework",
-      "label": "EthicalFramework"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:transparency", "label": "Transparency"},
+      {"@id": "urn:ngm:class:explainability", "label": "Explainability"},
+      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:fairness", "label": "Fairness"},
+      {"@id": "urn:ngm:class:accountability", "label": "Accountability"},
+      {"@id": "urn:ngm:class:ai-impact-assessment", "label": "AI Impact Assessment"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:algorithmic-bias", "label": "Algorithmic Bias"},
+      {"@id": "urn:ngm:class:ai-fairness", "label": "AI Fairness"},
+      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
+      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

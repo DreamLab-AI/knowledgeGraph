@@ -8,6 +8,12 @@
 
 - ### Relationships
   - bridges-to:: [[Autonomous Robot]] (rb)
+  - requires:: [[SLAM]]
+  - requires:: [[Sensor Fusion]]
+  - uses:: [[Path Planning]]
+  - uses:: [[Motion Planning]]
+  - enables:: [[Autonomous Robot]]
+  - enables:: [[Autonomous Vehicle]]
 
 - ### Content
   - Autonomous Navigation encompasses the complete system capability for a robot or autonomous agent to move from one location to another without human guidance, integrating perception, localisation, mapping, path planning, obstacle avoidance, and control. Autonomous navigation systems employ SLAM, sensor fusion, and AI-based decision-making to operate in unknown or dynamic environments.

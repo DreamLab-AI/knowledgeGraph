@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:kinematic-element",
   "domain": "robotics",
-  "definition": "Kinematic Element is a type of Robotics in the robotics domain.",
+  "definition": "A Kinematic Element is a rigid body or joint primitive within a robot's mechanical structure that participates in the forward and inverse kinematic chain, defining the positional and orientational degrees of freedom of a limb segment. Chains of kinematic elements model the geometry of robotic arms, legs, and manipulators for motion planning and control.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
@@ -14,11 +14,30 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:legged-robot",
+        "label": "Legged Robot"
+      },
+      {
+        "id": "urn:ngm:class:mobile-robot",
+        "label": "Mobile Robot"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -26,7 +45,12 @@
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:robot",
+        "label": "Robot"
+      }
+    ],
     "relatedTo": []
   },
   "wikilinks": [

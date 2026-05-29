@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:therapeutic-vr",
   "domain": "spatial-computing",
-  "definition": "The application of virtual reality technology for clinical therapeutic purposes, including treatment of mental health conditions, pain management, rehabilitation, and behavioral health interventions through immersive, interactive digital environments.",
+  "definition": "The clinical application of virtual reality technology for treatment and rehabilitation purposes, including exposure therapy for phobias and PTSD, distraction-based pain management, cognitive behavioural therapy delivered in immersive digital environments, and motor rehabilitation. FDA regulatory authorisation and CMS billing codes established from 2021 onwards have formalised therapeutic VR as a reimbursable clinical modality.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -17,21 +17,49 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:virtual-reality-platform",
+        "label": "Virtual Reality Platform"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:user-safety",
+        "label": "User Safety"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:metaverse-and-spatial-risks",
+        "label": "Metaverse and Spatial Risks"
+      },
+      {
+        "id": "urn:ngm:class:avatar-system",
+        "label": "Avatar System"
+      }
+    ]
   },
   "wikilinks": [
     {

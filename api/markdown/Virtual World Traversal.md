@@ -42,7 +42,7 @@ public:: true
   "@id": "urn:ngm:class:virtual-world-traversal",
   "@type": "Class",
   "label": "Virtual World Traversal",
-  "definition": "Virtual World Traversal is a spatial computing concept and a type of spatial-computing.",
+  "definition": "Virtual World Traversal is the set of techniques, interfaces, and protocols that enable users and agents to navigate between and within persistent virtual environments in the metaverse — including scene transitions, cross-world identity portability, spatial audio transitions, and continuous presence mechanics.",
   "domain": "spatial-computing",
   "maturity": "established",
   "subClassOf": [
@@ -51,7 +51,26 @@ public:: true
       "label": "Platform and Environment"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:metaverse-technology", "label": "Metaverse Technology"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:virtual-environment", "label": "Virtual Environment"},
+      {"@id": "urn:ngm:class:navigation", "label": "Navigation"},
+      {"@id": "urn:ngm:class:virtual-presence", "label": "Virtual Presence"},
+      {"@id": "urn:ngm:class:avatar-system", "label": "Avatar System"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"},
+      {"@id": "urn:ngm:class:virtual-world", "label": "Virtual World"},
+      {"@id": "urn:ngm:class:open-world", "label": "Open World"},
+      {"@id": "urn:ngm:class:world-building", "label": "World Building"},
+      {"@id": "urn:ngm:class:scene-management", "label": "Scene Management"},
+      {"@id": "urn:ngm:class:spatial-audio", "label": "Spatial Audio"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

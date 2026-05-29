@@ -48,7 +48,7 @@ public:: true
   "label": "Verification Standard",
   "definition": "Specifications and protocols that define how digital identities, credentials, and claims are validated and authenticated in metaverse environments, ensuring trust and security through cryptographic proofs and standardized verification processes.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-standards-and-interop",
@@ -59,11 +59,53 @@ public:: true
       "label": "Standards"
     }
   ],
-  "quality": 0.5,
+  "qualityScore": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:standards",
+        "label": "Standards"
+      },
+      {
+        "@id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      }
+    ]
   }
 }
 ```
@@ -109,6 +151,14 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Standards]]
+  - Standardized By [[Standards]]
+  - Standardized By [[Open Standard]]
+  - Requires [[Cryptography]]
+  - Requires [[Digital Identity]]
+  - Supports [[Identity Verification]]
+  - Supports [[Authentication]]
+  - Supports [[Access Control]]
+  - Related To [[Data Governance]]
 
 - ### Content
 

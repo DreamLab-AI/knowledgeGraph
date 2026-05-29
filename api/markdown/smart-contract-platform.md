@@ -1,12 +1,16 @@
 - ### Definition
-  - SmartContractPlatform is a concept within the ngm domain.
+  - A Smart Contract Platform is a blockchain infrastructure that provides an execution environment for programmable self-executing agreements, enabling decentralised application development through virtual machine runtimes, developer toolchains, and gas metering.
 
 - ### Semantic Classification
   - owl-class:: blockchain/SmartContractPlatform
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart:: [[Smart Contract]]
+  - enables:: [[DAO]]
+  - enables:: [[Decentralized Finance (DeFi)]]
+  - requires:: [[Blockchain]]
+  - relatedTo:: [[Blockchain Interoperability]]
 
 - ### Content
 

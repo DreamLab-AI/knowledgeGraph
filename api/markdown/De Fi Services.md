@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:de-fi-services",
   "@type": "Class",
   "label": "De Fi Services",
-  "definition": "De Fi Services is a type of Digital Asset Ecosystem in the spatial computing domain.",
+  "definition": "Decentralised Finance (DeFi) Services are financial products and protocols—including lending, borrowing, automated market-making, and derivatives—implemented as smart contracts on programmable blockchains without centralised intermediaries. DeFi Services enable permissionless, non-custodial access to financial primitives and are a key component of virtual economies within metaverse and spatial computing platforms.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -59,7 +60,20 @@ public:: true
       "label": "Digital Asset Ecosystem"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:cryptocurrency", "label": "Cryptocurrency"},
+      {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:financial-transactions", "label": "Financial Transactions"},
+      {"@id": "urn:ngm:class:de-fi", "label": "DeFi"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -107,7 +121,12 @@ public:: true
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires** [[Blockchain]] — DeFi protocols execute as smart contracts on programmable blockchains
+  - **requires** [[Smart Contract]] — automated, trustless financial logic is encoded as smart contracts
+  - **uses** [[Cryptocurrency]] — cryptocurrencies are the native settlement assets for DeFi protocols
+  - **uses** [[Digital Asset]] — DeFi operates over tokenised digital assets including stablecoins and NFTs
+  - **relatedTo** [[Financial Transactions]] — DeFi services settle financial transactions on-chain
+  - **relatedTo** [[DeFi]] — De Fi Services are the application-layer realisation of the DeFi paradigm
 
 - ### Content
 

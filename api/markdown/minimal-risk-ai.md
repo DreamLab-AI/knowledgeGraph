@@ -7,7 +7,13 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **contrastsWith** [[High Risk AI System]] — sits at the opposite end of the EU AI Act risk pyramid
+  - **partOf** [[Regulatory Framework]] — exists within the four-tier AI Act classification structure
+  - **relatedTo** [[AI Governance]] — governed by general AI governance principles rather than sector-specific rules
+  - **relatedTo** [[Responsible AI]] — voluntary codes of conduct encourage responsible AI practices
+  - **relatedTo** [[Transparency]] — transparency remains best practice even absent a legal mandate
+  - **dependsOn** [[Risk Management]] — initial risk classification determines minimal-risk status
+  - **dependsOn** [[Accountability]] — providers retain accountability under general product liability law
 
 - ### Content
   - AI systems not classified as prohibited, high-risk, or limited-risk. These systems face no specific AI Act obligations beyond the general legal framework applicable to all products and services.

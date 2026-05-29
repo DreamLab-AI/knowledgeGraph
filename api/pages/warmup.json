@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:warmup",
   "domain": "spatial-computing",
-  "definition": "A training technique where the learning rate starts small and gradually increases at the beginning of training to stabilise optimisation. Warmup is standard practice for training large transformer models, preventing instability from large gradients early in training.",
+  "definition": "A training technique where the learning rate starts small and gradually increases over a fixed number of initial steps to stabilise optimisation. Warmup prevents large early gradients from destabilising weight updates and is standard practice for large transformer models, typically preceding a cosine or linear decay schedule.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -14,19 +14,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:learning-rate-schedule",
+        "label": "Learning Rate Schedule"
+      },
+      {
+        "id": "urn:ngm:class:optimiser",
+        "label": "Optimiser"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:training",
+        "label": "Training"
+      }
+    ],
     "relatedTo": []
   },
   "wikilinks": [

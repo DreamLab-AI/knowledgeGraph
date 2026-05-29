@@ -42,7 +42,7 @@ public:: true
   "@id": "urn:ngm:class:self-improvement",
   "@type": "Class",
   "label": "Self Improvement",
-  "definition": "Capability for autonomous self-improvement.",
+  "definition": "The capacity of an AI system to autonomously modify its own architecture, weights, or learning algorithms to improve performance, generality, or efficiency without direct human intervention. Central to recursive self-improvement scenarios and AI safety research, raising fundamental questions about capability control, value alignment, and the conditions under which iterative self-modification remains aligned with intended objectives.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -51,7 +51,24 @@ public:: true
       "label": "AI Technique"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:recursive-self-improvement", "label": "Recursive Self-Improvement"},
+      {"@id": "urn:ngm:class:artificial-general-intelligence", "label": "Artificial General Intelligence"},
+      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"},
+      {"@id": "urn:ngm:class:value-alignment", "label": "Value Alignment"},
+      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
+      {"@id": "urn:ngm:class:ai-safety-research", "label": "AI Safety Research"},
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:curriculum-learning", "label": "Curriculum Learning"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

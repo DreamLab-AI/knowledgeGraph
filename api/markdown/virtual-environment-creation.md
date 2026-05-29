@@ -8,6 +8,13 @@
 
 - ### Relationships
   - is-subclass-of:: [[3D Development]]
+  - Requires [[Game Engine]]
+  - Requires [[3D Modeling]]
+  - Uses [[Physics Simulation]]
+  - Uses [[Real-Time Rendering]]
+  - Uses [[3D Content Generation]]
+  - Enables [[Metaverse Platform]]
+  - Enables [[Immersive Experience]]
 
 - ### Content
 

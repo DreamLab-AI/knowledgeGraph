@@ -42,9 +42,9 @@ public:: true
   "@id": "urn:ngm:class:speech-recognition",
   "@type": "Class",
   "label": "Speech Recognition",
-  "definition": "Speech Recognition is a type of Natural Language Processing in the artificial intelligence domain.",
+  "definition": "Speech Recognition is the AI task of transcribing spoken audio into text, enabling voice-driven interfaces, accessibility tools, and multimodal systems. Modern systems rely on deep neural architectures, including transformers with attention mechanisms, trained on large corpora of labelled audio data to achieve near-human accuracy across diverse speakers and acoustic conditions.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-application",
@@ -55,6 +55,19 @@ public:: true
       "label": "Natural Language Processing"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:language-translation", "label": "Language Translation"},
+      {"@id": "urn:ngm:class:question-answering", "label": "Question Answering"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:sentiment-analysis", "label": "Sentiment Analysis"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -98,16 +111,22 @@ public:: true
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses:: [[Transformer]]
+  - uses:: [[Neural Network]]
+  - enables:: [[Language Translation]]
+  - enables:: [[Question Answering]]
+  - relatedTo:: [[Sentiment Analysis]]
 
 - ### Content
 
   ## Overview
 
-  Speech Recognition represents an abstract concept in the ai ontology hierarchy.
+  Speech Recognition is the AI task of transcribing spoken audio into text, enabling voice-driven interfaces, accessibility tools, call-centre analytics, and multimodal systems. Modern systems rely on deep neural architectures — particularly transformer-based encoder-decoder models such as Wav2Vec 2.0 and Whisper — trained on large corpora of labelled audio to achieve near-human accuracy across diverse speakers, languages, and acoustic conditions. Core technical challenges include handling overlapping speech, background noise, accented or dialectal variation, and out-of-vocabulary terms. Commercially, ASR engines power virtual assistants (Siri, Alexa, Google Assistant), real-time captioning services, and clinical documentation tools. In edge and IoT contexts, compressed on-device models trade some accuracy for low-latency offline inference, driving demand for model compression and neural network quantisation techniques.
 
   #### Related Concepts
-  - [[owl:Thing]]
+  - [[Natural Language Processing]]
+  - [[Transformer]]
+  - [[Language Translation]]
 
 - ### Provenance
   - sources::

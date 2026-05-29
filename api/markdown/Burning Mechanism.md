@@ -70,9 +70,10 @@ public:: true
   "@id": "urn:ngm:class:burning-mechanism",
   "@type": "Class",
   "label": "Burning Mechanism",
-  "definition": "Token destruction process within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "A Burning Mechanism is an economic design pattern in tokenised blockchain systems whereby tokens are permanently removed from circulating supply by sending them to an unspendable address (a null or black-hole address) or by protocol-enforced destruction, permanently contracting the total token supply. Token burning is deployed as a deflationary monetary policy tool to counteract inflationary issuance, to create token scarcity as a value-accrual mechanism, to implement fee markets (as in Ethereum's EIP-1559 base fee burn), and to regulate supply in algorithmic stablecoins and tokenomics models. The economic effect depends critically on the rate and predictability of burning relative to issuance.",
   "domain": "blockchain",
   "maturity": "established",
+  "qualityScore": 0.8,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-defi-and-economics",
@@ -84,10 +85,40 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:economic-mechanism",
-      "label": "EconomicMechanism"
+      "label": "Economic Mechanism"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"},
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:deflationary-token", "label": "Deflationary Token"},
+      {"@id": "urn:ngm:class:inflation-control", "label": "Inflation Control"},
+      {"@id": "urn:ngm:class:tokenomics", "label": "Tokenomics"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:eip-1559", "label": "EIP-1559"},
+      {"@id": "urn:ngm:class:token-economics", "label": "Token Economics"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:base-fee", "label": "Base Fee"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:fee-market", "label": "Fee Market"},
+      {"@id": "urn:ngm:class:market-capitalization", "label": "Market Capitalization"},
+      {"@id": "urn:ngm:class:blockchain-economics", "label": "Blockchain Economics"},
+      {"@id": "urn:ngm:class:virtual-economy", "label": "Virtual Economy"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:block-reward", "label": "Block Reward"},
+      {"@id": "urn:ngm:class:inflationary-token", "label": "Inflationary Token"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:tokenomics-governance", "label": "Tokenomics Governance"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -158,7 +189,7 @@ public:: true
 
 
 - ### Definition
-  - Token destruction process within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
+  A Burning Mechanism is an economic design pattern in tokenised blockchain systems whereby tokens are permanently removed from circulating supply by sending them to an unspendable address (a null or black-hole address) or by protocol-enforced destruction, permanently contracting the total token supply. Token burning is deployed as a deflationary monetary policy tool to counteract inflationary issuance, to create token scarcity as a value-accrual mechanism, to implement fee markets (as in Ethereum's EIP-1559 base fee burn), and to regulate supply in algorithmic stablecoins and tokenomics models. The economic effect depends critically on the rate and predictability of burning relative to issuance.
 
 - ### Semantic Classification
   - owl-class:: blockchain:BurningMechanism
@@ -168,72 +199,23 @@ public:: true
   - implemented-in-layer:: [[EconomicLayer]]
 
 - ### Relationships
-  - is-subclass-of:: [[Blockchain Entity]], [[EconomicMechanism]]
-  - bridges-to:: [[Virtual Economy]]
+  - is-subclass-of:: [[Blockchain Entity]], [[Economic Mechanism]]
+  - requires:: [[Blockchain Transaction]], [[Smart Contract]]
+  - enables:: [[Deflationary Token]], [[Inflation Control]], [[Tokenomics]]
+  - dependsOn:: [[EIP-1559]], [[Token Economics]]
+  - hasPart:: [[Base Fee]]
+  - relatedTo:: [[Fee Market]], [[Market Capitalization]], [[Blockchain Economics]], [[Virtual Economy]]
+  - contrastsWith:: [[Block Reward]], [[Inflationary Token]]
+  - partOf:: [[Tokenomics Governance]]
 
 - ### Content
+  Token burning was popularised in blockchain ecosystems as a mechanism for creating programmatic scarcity and demonstrating committed value destruction. The earliest prominent implementations appeared in the Bitcoin ecosystem (Counterparty's XCP token used proof-of-burn for issuance) and in exchange token models (Binance's BNB quarterly burns). The mechanism gained its most prominent institutional form through Ethereum's EIP-1559 (London hard fork, August 2021), which made base fee burning a core protocol feature rather than an optional tokenomics strategy.
 
-  ## Class Declaration
-  Declaration(Class(:BurningMechanism))
+  In the EIP-1559 model, every transaction burns an algorithmically determined base fee proportional to network congestion. During periods of high demand — such as NFT minting events or DeFi protocol launches — burn rates can exceed new ETH issuance from staking rewards, making ETH net-deflationary on a daily basis. This "ultrasound money" narrative positioned Ethereum's monetary policy as more conservative than Bitcoin's fixed supply schedule in demand-driven scenarios, despite Ethereum having no hard supply cap.
 
-  ## Subclass Relationships
-  SubClassOf(:BurningMechanism :EconomicMechanism)
-  SubClassOf(:BurningMechanism :BlockchainEntity)
+  Beyond fee burning, protocols implement burns for diverse purposes: buy-and-burn programs use protocol revenue to purchase tokens on open markets and destroy them, directly linking protocol usage to token value accrual; algorithmic stablecoin mechanisms burn the reserve token when minting the stable asset (and vice versa) to maintain peg; NFT platforms burn tokens to unlock features or create provable scarcity in digital collectible series; and governance token programmes burn tokens proportional to voting activity as a sybil-resistance mechanism.
 
-  ## Essential Properties
-  SubClassOf(:BurningMechanism
-    (ObjectSomeValuesFrom :partOf :Blockchain))
-
-  SubClassOf(:BurningMechanism
-    (ObjectSomeValuesFrom :hasProperty :Property))
-
-  ## Data Properties
-  DataPropertyAssertion(:hasIdentifier :BurningMechanism "BC-0114"^^xsd:string)
-  DataPropertyAssertion(:hasAuthorityScore :BurningMechanism "1.0"^^xsd:decimal)
-  DataPropertyAssertion(:isFoundational :BurningMechanism "true"^^xsd:boolean)
-
-  ## Object Properties
-  ObjectPropertyAssertion(:enablesFeature :BurningMechanism :BlockchainFeature)
-  ObjectPropertyAssertion(:relatesTo :BurningMechanism :RelatedConcept)
-
-  ## Annotations
-  AnnotationAssertion(rdfs:label :BurningMechanism "Burning Mechanism"@en)
-  AnnotationAssertion(rdfs:comment :BurningMechanism
-    "Token destruction process"@en)
-  AnnotationAssertion(dct:description :BurningMechanism
-    "Foundational blockchain concept with formal ontological definition"@en)
-  AnnotationAssertion(:termID :BurningMechanism "BC-0114")
-  AnnotationAssertion(:priority :BurningMechanism "1"^^xsd:integer)
-  AnnotationAssertion(:category :BurningMechanism "economic-incentive"@en)
-  )
-      ```
-
-  - ## About Burning Mechanism
-
-  - Token destruction process within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
-  - ### Key Characteristics
-    - 1. **Definitional Property**: Core defining characteristic
-    - 2. **Functional Property**: Operational behavior
-    - 3. **Structural Property**: Compositional elements
-    - 4. **Security Property**: Security guarantees provided
-    - 5. **Performance Property**: Efficiency considerations
-  - ### Technical Components
-    - **Implementation**: How concept is realized technically
-    - **Verification**: Methods for validating correctness
-    - **Interaction**: Relationships with other components
-    - **Constraints**: Technical limitations and requirements
-  - ### Use Cases
-    - **1. Core Blockchain Operation**
-    - **Application**: Fundamental blockchain functionality
-    - **Example**: Practical implementation in major blockchains
-    - **Requirements**: Technical prerequisites
-    - **Benefits**: Value provided to blockchain systems
-  - ### Standards & References
-    - [[ISO/IEC 23257:2021]] - Blockchain and distributed ledger technologies
-    - [[IEEE 2418.1]] - Blockchain and distributed ledger technologies
-    - [[NIST NISTIR]] - Blockchain and distributed ledger technologies
-
-
+  The economic critique of burning mechanisms centres on the assumption that destroying supply directly creates value. Burn mechanisms only accrue value to token holders if the burned tokens represent a genuine claim on future cash flows or utility — otherwise the scarcity narrative is reflexive rather than fundamental. In virtual economies and metaverse contexts, burning mechanisms serve as sinks to prevent unchecked inflation of in-game currencies, where failure to balance burn rates against earning rates leads to hyperinflationary collapse of the virtual economy.
 
   <!-- Merged from Burning Mechanism.md: Blockchain, Tokenomics -->
 

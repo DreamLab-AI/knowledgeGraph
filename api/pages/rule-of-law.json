@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:rule-of-law",
   "domain": "infrastructure",
-  "definition": "The principle that all persons, institutions and entities, including AI systems and their operators, are accountable to laws that are publicly promulgated, equally enforced, independently adjudicated and consistent with international human rights norms.",
+  "definition": "The constitutional and institutional principle that all persons, institutions, and entities\u2014including AI systems and their operators\u2014are accountable to laws that are publicly promulgated, equally enforced, independently adjudicated, and consistent with international human rights norms. Applied to AI governance, the rule of law requires legal certainty, non-arbitrary decision-making, procedural fairness, and effective remedies for AI-related harms.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-legal-and-regulatory",
@@ -17,21 +17,52 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:legal-framework",
+        "label": "Legal Framework"
+      },
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:human-rights",
+        "label": "Human Rights"
+      },
+      {
+        "id": "urn:ngm:class:democratic-values",
+        "label": "Democratic Values"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ]
   },
   "wikilinks": [
     {

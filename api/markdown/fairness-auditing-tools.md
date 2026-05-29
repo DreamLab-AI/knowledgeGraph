@@ -9,11 +9,14 @@
   - implemented-in-layer:: [[ConceptualLayer]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
-  - bridges-to:: [[Autonomous Robot]], [[Blockchain]]
+  - hasPart:: [[Fairness Metrics]], [[Bias Detection Methods]], [[Bias Mitigation Techniques]]
+  - requires:: [[Algorithmic Bias]], [[Machine Learning Model]], [[Training Data]]
+  - enables:: [[Responsible AI]], [[Explainability]], [[AI Governance]]
+  - supports:: [[AI Risk Management]], [[AI Ethics]]
+  - relatedTo:: [[Fairness Constraints]], [[Data Governance]], [[AI Governance Framework]]
 
 - ### Content
-  Fairness Auditing Tools — content pending enrichment.
+  Fairness auditing tools address a structural gap between the statistical optimisation objectives used during model training and the equity outcomes required by law, ethics, and organisational policy. A model that minimises average prediction error may systematically underperform for minority demographic groups if those groups are underrepresented in training data or if historical outcomes the model is trained to predict already embed past discrimination. Fairness auditing tools make these disparities visible and quantifiable, enabling practitioners to act before deployment and to monitor continuously in production.
 
 - ### Provenance
   - sources:: [[Fairlearn]], [[AIF360]], [[IEEE P7003-2021]], [[ISO/IEC TR 24027]]

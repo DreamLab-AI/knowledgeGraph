@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:etsidomain-classification",
   "domain": "artificial-intelligence",
-  "definition": "A taxonomy and classification scheme from the European Telecommunications Standards Institute categorising technology domains, standards, and governance areas to enable systematic organisation and cross-domain coordination.",
+  "definition": "ETSIDomainClassification is a formal taxonomy from the European Telecommunications Standards Institute categorising technology domains, standards, and governance areas to enable systematic organisation and cross-domain coordination. It partitions the metaverse and digital ecosystem into Infrastructure, Interaction, Trust and Governance, and Computation and Intelligence domains, enabling standards alignment, regulatory mapping, and interoperability discovery across heterogeneous technical contexts.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-research-area",
@@ -13,12 +13,34 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.4,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:etsi-domain-infrastructure",
+        "label": "ETSI_Domain_Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:etsi-domain-identity-and-trust",
+        "label": "ETSI Domain Identity and Trust"
+      },
+      {
+        "id": "urn:ngm:class:etsi-domain-security-and-privacy",
+        "label": "ETSI Domain Security and Privacy"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:etsi-metaverse-domain-taxonomy",
+        "label": "Etsi Metaverse Domain Taxonomy"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-ontology",
+        "label": "Metaverse Ontology"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +49,16 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:etsi-metaverse-domain-model",
+        "label": "Etsi Metaverse Domain Model"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-domain",
+        "label": "Metaverse Domain"
+      }
+    ]
   },
   "wikilinks": [
     {

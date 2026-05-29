@@ -44,22 +44,58 @@ public:: true
   "label": "Etsi Domain Immersive",
   "definition": "The ETSI technical domain addressing standardisation of immersive technologies including virtual reality, augmented reality, and mixed reality systems, encompassing network requirements, quality of experience metrics, and interoperability specifications for XR applications.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-standards-and-interop",
       "label": "Standards and Interoperability"
     },
     {
-      "@id": "urn:ngm:class:etsi-standards",
-      "label": "ETSI Standards"
+      "@id": "urn:ngm:class:etsi",
+      "label": "ETSI"
     }
   ],
-  "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-classification",
+        "label": "Metaverse Classification"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:etsi-domain-immersive-experiences",
+        "label": "ETSI_Domain_Immersive_Experiences"
+      }
+    ]
   }
 }
 ```
@@ -98,7 +134,14 @@ public:: true
   - owl-role:: Concept
 
 - ### Relationships
-  - is-subclass-of:: [[ETSI Standards]]
+  - is-subclass-of:: [[ETSI]]
+  - Standardized By: [[ETSI_Domain_Immersive_Experiences]]
+  - Enables: [[Interoperability Standard]]
+  - Enables: [[Metaverse Classification]]
+  - Related To: [[Extended Reality]]
+  - Related To: [[Virtual Reality]]
+  - Related To: [[Augmented Reality]]
+  - Related To: [[Mixed Reality]]
 
 - ### Content
 

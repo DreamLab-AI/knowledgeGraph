@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:native-token",
   "domain": "blockchain",
-  "definition": "Blockchain-native cryptocurrency within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "A Native Token is the primary cryptocurrency issued and managed directly by a blockchain protocol, used to pay transaction fees, reward validators or miners, and serve as the base unit of value within the network's economic system. Unlike tokens created via smart contracts, native tokens are settled at the protocol layer and are intrinsic to chain operation.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-token-and-asset",
@@ -21,21 +21,65 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:transaction-fee",
+        "label": "Transaction Fee"
+      },
+      {
+        "id": "urn:ngm:class:mining-reward",
+        "label": "Mining Reward"
+      },
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:erc20-token",
+        "label": "ERC20 Token"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:deflationary-token",
+        "label": "Deflationary Token"
+      },
+      {
+        "id": "urn:ngm:class:inflationary-token",
+        "label": "Inflationary Token"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:supply-cap",
+        "label": "Supply Cap"
+      },
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
+    ]
   },
   "wikilinks": [
     {

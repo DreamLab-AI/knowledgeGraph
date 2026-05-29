@@ -1,12 +1,14 @@
 - ### Definition
-  - Perceptual Experience is a concept within the telecollaboration domain. Further enrichment pending.
+  - The multimodal sensory and cognitive engagement a user undergoes within a telepresence or immersive environment, encompassing visual fidelity, spatial audio, haptic feedback, and sense of presence. Perceptual experience quality determines the degree to which a distributed or virtual interaction is felt as equivalent to physical co-presence, directly impacting collaboration effectiveness and user well-being.
 
 - ### Semantic Classification
   - owl-class:: distributed-collaboration:PerceptualExperience
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires: [[Telepresence]], [[Immersive Technology]]
+  - enables: [[Social Presence]], [[User Experience]]
+  - relatedTo: [[Virtual Reality]], [[Augmented Reality]]
 
 - ### Content
 

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:liquid-proof-of-stake",
   "domain": "blockchain",
-  "definition": "A PoS variant allowing token holders to delegate their staking rights to validators (bakers) while retaining token ownership and liquidity.",
+  "definition": "A Proof of Stake consensus variant that decouples staking participation from token illiquidity by allowing holders to delegate validation rights to elected validators (bakers) while retaining full ownership and transferability of their tokens. Pioneered by Tezos, it combines on-chain governance with delegated staking, enabling small token holders to participate in consensus rewards without running validator infrastructure.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-protocol-and-consensus",
@@ -17,21 +17,71 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:validator-node",
+        "label": "Validator Node"
+      },
+      {
+        "id": "urn:ngm:class:epoch",
+        "label": "Epoch"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:tokenomics-governance",
+        "label": "Tokenomics Governance"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-autonomous-organization",
+        "label": "Decentralized Autonomous Organization"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      },
+      {
+        "id": "urn:ngm:class:validator-set",
+        "label": "Validator Set"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:proof-of-stake-sustainability",
+        "label": "Proof Of Stake Sustainability"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      }
+    ]
   },
   "wikilinks": [
     {

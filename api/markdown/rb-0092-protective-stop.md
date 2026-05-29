@@ -1,5 +1,6 @@
 - ### Definition
   - ### Primary Definition
+  A **Protective Stop** is a safety-initiated cessation of robot motion triggered when a monitored safety condition is violated — for example, when a person enters a restricted zone or a force threshold is exceeded. Unlike an emergency stop (which de-energises drives), a protective stop suspends motion while maintaining drive readiness, allowing automatic or supervised restart once the hazard is cleared. It is the core enforcement mechanism for collaborative robotic cells operating under ISO 10218-1/2 and ISO/TS 15066.
 
 - ### Semantic Classification
   - owl-class:: robotics:ProtectiveStop
@@ -7,7 +8,10 @@
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Standardised by ISO 10218 and ISO/TS 15066.
+  - Requires a functional safety architecture and prior risk assessment.
+  - Enables safe collaborative operation and human-robot interaction by providing a deterministic halt pathway.
+  - Distinct from an emergency stop: protective stops allow programmatic restart without full system reset.
 
 - ### Content
   - ### Primary Definition

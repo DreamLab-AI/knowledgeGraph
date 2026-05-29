@@ -76,14 +76,32 @@ public:: true
   "label": "Intrinsic Interpretability",
   "definition": "The inherent transparency and understandability of a machine learning model's architecture and decision-making process, achieved through model design rather than external explanation techniques, enabling direct human comprehension without additional interpretability mods.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:post-hoc-explanation", "label": "Post Hoc Explanation"},
+      {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:model-interpretability", "label": "Model Interpretability"},
+      {"@id": "urn:ngm:class:interpretable-ai", "label": "Interpretable AI"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:model-transparency", "label": "Model Transparency"},
+      {"@id": "urn:ngm:class:accountability", "label": "Accountability"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:trustworthy-ai", "label": "Trustworthy AI"},
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -167,7 +185,10 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **contrastsWith**: [[Post Hoc Explanation]], [[Explainable AI]]
+  - **partOf**: [[Model Interpretability]], [[Interpretable AI]]
+  - **enables**: [[Model Transparency]], [[Accountability]]
+  - **supports**: [[Trustworthy AI]], [[AI Governance]]
 
 - ### Content
   - The inherent transparency and understandability of a machine learning model's architecture and decision-making process, achieved through model design rather than external explanation techniques, enabling direct human comprehension without additional interpretability methods.

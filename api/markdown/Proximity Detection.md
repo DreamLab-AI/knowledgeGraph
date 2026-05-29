@@ -37,16 +37,33 @@ public:: true
   "@id": "urn:ngm:class:proximity-detection",
   "@type": "Class",
   "label": "Proximity Detection",
-  "definition": "Proximity Detection is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Proximity Detection is the computational process of determining the spatial distance and relative position between entities—users, objects, or agents—within a virtual or physical environment in real time. In metaverse and robotics contexts it underpins social-distance awareness, collision avoidance, interaction triggering, and context-sensitive content delivery. Implementations range from bounding-volume overlap tests and signed-distance fields in 3D engines to sensor-fusion pipelines combining lidar, ultrasound, and camera inputs in robotic systems.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
+      {"@id": "urn:ngm:class:collision-detection", "label": "Collision Detection"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:collision-avoidance", "label": "Collision Avoidance"},
+      {"@id": "urn:ngm:class:presence-detection", "label": "Presence Detection"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:lidar", "label": "Lidar"},
+      {"@id": "urn:ngm:class:point-cloud", "label": "Point Cloud"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:social-presence", "label": "Social Presence"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -76,14 +93,17 @@ public:: true
 
 
 - ### Definition
-  - ProximityDetection is a concept within the ngm domain.
+  - Proximity Detection is the computational process of determining the spatial distance and relative position between entities—users, objects, or agents—within a virtual or physical environment in real time. It underpins collision avoidance, interaction triggering, and context-sensitive content delivery. Implementations range from bounding-volume overlap tests and signed-distance fields in 3D engines to sensor-fusion pipelines combining lidar, ultrasound, and camera inputs.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:ProximityDetection
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires:: [[Sensor Fusion]], [[Collision Detection]]
+  - enables:: [[Collision Avoidance]], [[Presence Detection]]
+  - uses:: [[Lidar]], [[Point Cloud]]
+  - relatedTo:: [[Social Presence]]
 
 - ### Content
   # ProximityDetection

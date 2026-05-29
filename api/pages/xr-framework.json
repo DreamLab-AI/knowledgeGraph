@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:xr-framework",
   "domain": "spatial-computing",
-  "definition": "XR Framework is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "An XR Framework is a software architecture or SDK that provides unified runtime support, device abstraction, and application programming interfaces for extended reality experiences spanning augmented, virtual, and mixed reality. Frameworks such as OpenXR standardise access to headsets and input devices, whilst game engine integrations enable developers to target multiple XR platforms from a single codebase.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -14,19 +14,50 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      },
+      {
+        "id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
     "relatedTo": []
   },
   "wikilinks": [

@@ -8,6 +8,12 @@
 
 - ### Relationships
   - is-subclass-of:: [[Technical Standards]]
+  - Requires [[Interoperability]]
+  - Standardized By [[Standards]]
+  - Enables [[Asset Portability]]
+  - Enables [[Metaverse]]
+  - Related To [[Rendering Engine]]
+  - Related To [[Gltf Standard]]
 
 - ### Content
 

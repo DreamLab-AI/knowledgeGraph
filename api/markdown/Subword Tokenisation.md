@@ -42,9 +42,10 @@ public:: true
   "@id": "urn:ngm:class:subword-tokenisation",
   "@type": "Class",
   "label": "Subword Tokenisation",
-  "definition": "A tokenisation approach that breaks words into smaller meaningful units, balancing vocabulary size with the ability to represent rare words and novel compositions.",
+  "definition": "A tokenisation strategy that segments text into sub-word units (via algorithms such as Byte-Pair Encoding, WordPiece, or SentencePiece), balancing vocabulary size against the ability to represent rare, morphologically complex, and out-of-vocabulary words. Subword tokenisation is the de facto standard preprocessing step for large language models.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
@@ -56,6 +57,36 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:language-modeling",
+        "label": "Language Modeling"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:natural-language-understanding",
+        "label": "Natural Language Understanding"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      }
+    ]
   }
 }
 ```
@@ -95,7 +126,11 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Part Of [[Tokenisation]]
+  - Enables [[Natural Language Processing]]
+  - Enables [[Large Language Models]]
+  - Requires [[Language Modeling]]
+  - Related To [[Natural Language Understanding]]
 
 - ### Content
   - A tokenisation approach that breaks words into smaller meaningful units, balancing vocabulary size with the ability to represent rare words and novel compositions.

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:organisational-theory",
   "domain": "distributed-collaboration",
-  "definition": "Organisational Theory is a type of Distributed Collaboration in the distributed collaboration domain.",
+  "definition": "The study of structural, behavioural, and governance patterns within organisations as they adopt distributed collaboration and immersive technologies. Organisational theory examines how hierarchies, communication channels, decision-making processes, and incentive structures must adapt to support decentralised, asynchronous, and spatially distributed teams operating within metaverse and mixed-reality workspaces.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:dc-protocol-and-infra",
@@ -13,21 +13,48 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:community-governance",
+        "label": "Community Governance"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-governance",
+        "label": "Decentralized Governance"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:collaboration",
+        "label": "Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:governance-model",
+        "label": "Governance Model"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:collaboration-platform",
+        "label": "Collaboration Platform"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      }
+    ]
   },
   "wikilinks": [
     {

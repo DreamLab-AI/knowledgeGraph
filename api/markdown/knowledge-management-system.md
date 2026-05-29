@@ -1,12 +1,17 @@
 - ### Definition
-  - Knowledge Management System is a concept within the metaverse domain. Further enrichment pending.
+  - A Knowledge Management System (KMS) captures, organises, retrieves, and shares structured and unstructured knowledge across an organisation, integrating knowledge graphs, ontologies, semantic search, and metadata management to make information discoverable and actionable across spatial computing workflows.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:KnowledgeManagementSystem
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses [[Knowledge Graph]]
+  - uses [[Ontology]]
+  - enables [[Information Retrieval]]
+  - enables [[Knowledge Representation]]
+  - relatedTo [[Metadata Management]]
+  - relatedTo [[Knowledge Base]]
 
 - ### Content
 

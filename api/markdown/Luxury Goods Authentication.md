@@ -122,7 +122,7 @@ public:: true
   "@id": "urn:ngm:class:luxury-goods-authentication",
   "@type": "Class",
   "label": "Luxury Goods Authentication",
-  "definition": "Blockchain technology addressing the £400-450 global counterfeit luxury market (of all luxury goods) through immutable digital certificates of authenticity, NFC-enabled provenance records, and cryptographic verification that cannot be physically replicated.",
+  "definition": "Luxury Goods Authentication is the application of blockchain technology to combat counterfeit luxury goods through immutable digital certificates of authenticity, NFC-enabled provenance records, and cryptographic verification that cannot be physically replicated. Implementations such as the LVMH Aura Blockchain Consortium register millions of luxury products with unique digital identities linked to manufacturing details, ownership history, and authentication credentials, enabling both primary-market consumer confidence and secondary-market resale verification.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -135,7 +135,26 @@ public:: true
       "label": "Provenance Tracking"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
+      {"@id": "urn:ngm:class:non-fungible-token-nft", "label": "Non-Fungible Token (NFT)"},
+      {"@id": "urn:ngm:class:cryptographic-verification", "label": "Cryptographic Verification"},
+      {"@id": "urn:ngm:class:digital-certificate", "label": "Digital Certificate"},
+      {"@id": "urn:ngm:class:permissioned-blockchain", "label": "Permissioned Blockchain"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:supply-chain-traceability", "label": "Supply Chain Traceability"},
+      {"@id": "urn:ngm:class:nft-ownership-proof", "label": "NFT Ownership Proof"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:consortium-blockchain", "label": "Consortium Blockchain"},
+      {"@id": "urn:ngm:class:data-provenance", "label": "Data Provenance"},
+      {"@id": "urn:ngm:class:blockchain-application", "label": "Blockchain Application"},
+      {"@id": "urn:ngm:class:supply-chain-blockchain", "label": "Supply Chain Blockchain"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

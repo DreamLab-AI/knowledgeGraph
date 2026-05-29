@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:human-preference",
   "domain": "artificial-intelligence",
-  "definition": "Capability for autonomous self-improvement.",
+  "definition": "Human Preference refers to the explicit or implicit judgements made by human evaluators that express which of two or more AI outputs is more aligned with human values, intentions, or quality criteria; these preference signals are collected through comparative annotation tasks and used as training signal to guide reinforcement learning from human feedback (RLHF) and preference optimisation methods. The aggregate of human preferences encodes desired model behaviour on dimensions such as helpfulness, harmlessness, and honesty, providing an empirical proxy for human values that is more tractable to collect than hand-crafted reward functions. Preference data quality, evaluator diversity, and annotator agreement rates critically determine the fidelity with which the resulting reward model captures genuine human intent.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -17,21 +17,74 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:human-feedback",
+        "label": "Human Feedback"
+      },
+      {
+        "id": "urn:ngm:class:preference-learning",
+        "label": "Preference Learning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "id": "urn:ngm:class:reward-model",
+        "label": "Reward Model"
+      },
+      {
+        "id": "urn:ngm:class:value-alignment",
+        "label": "Value Alignment"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rlhf",
+        "label": "RLHF"
+      },
+      {
+        "id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      }
+    ]
   },
   "wikilinks": [
     {

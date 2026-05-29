@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:outpainting",
   "domain": "artificial-intelligence",
-  "definition": "Outpainting is a generative AI technique that extends an existing image beyond its original borders by synthesising contextually coherent new content in the surrounding canvas area.",
+  "definition": "Outpainting is a generative AI technique that extends an existing image beyond its original canvas boundaries by synthesising new, contextually consistent pixel content in the surrounding regions. A masked version of the source image\u2014padded with blank or noise-filled regions\u2014is fed to a conditioned image generation model (typically a latent diffusion model) which fills the extended area while respecting the style, lighting, and semantic content of the original. Outpainting is widely used in content creation pipelines for widening aspect ratios, reconstructing damaged artwork borders, and generating panoramic background extensions for virtual production and 3D scene authoring.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-application",
@@ -14,20 +14,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:generative-content",
+        "label": "Generative Content"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:latent-diffusion",
+        "label": "Latent Diffusion"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:inpainting",
+        "label": "Inpainting"
+      },
+      {
+        "id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

@@ -1,12 +1,18 @@
 - ### Definition
-  - Transferable Right is a concept within the blockchain domain. Further enrichment pending.
+  - A Transferable Right is a legally or technically encoded entitlement that can be assigned, sold, or delegated from one party to another, typically enforced via smart contracts on a blockchain. Examples include tokenised intellectual property licences, digital asset ownership tokens, and royalty claims encoded in NFT standards.
 
 - ### Semantic Classification
   - owl-class:: blockchain:TransferableRight
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Implements [[Smart Contract]]
+  - Requires [[Digital Ownership]]
+  - Requires [[Digital Rights]]
+  - Enables [[Royalty Distribution]]
+  - Enables [[Asset Tokenisation]]
+  - Related To [[NFT]]
+  - Related To [[license]]
 
 - ### Content
 

@@ -4,8 +4,8 @@
   "slug": "psychological-phenomenon",
   "public": true,
   "classIri": "urn:ngm:class:psychological-phenomenon",
-  "domain": "infrastructure",
-  "definition": "Psychological Phenomenon is a technology infrastructure concept and a type of Humans, Avatars Character.",
+  "domain": "spatial-computing",
+  "definition": "A Psychological Phenomenon, in the context of spatial computing, denotes any observable, reproducible effect on cognition, emotion, or behaviour that arises from interaction with immersive virtual environments. Established examples include the Proteus Effect (avatar-driven behavioural conformity), simulator sickness (sensorimotor conflict), flow states, social presence, and embodiment illusions. Understanding these phenomena is foundational to ethical metaverse design, therapeutic XR applications, and the study of human-computer interaction at scale.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-software-engineering",
@@ -17,12 +17,30 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:proteus-effect",
+        "label": "Proteus Effect"
+      },
+      {
+        "id": "urn:ngm:class:social-presence",
+        "label": "Social Presence"
+      },
+      {
+        "id": "urn:ngm:class:vr-psychology",
+        "label": "VR Psychology"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:behavioral-modeling",
+        "label": "Behavioral Modeling"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -31,7 +49,24 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      },
+      {
+        "id": "urn:ngm:class:emotional-immersion",
+        "label": "Emotional Immersion"
+      },
+      {
+        "id": "urn:ngm:class:embodied-ai",
+        "label": "Embodied AI"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": []

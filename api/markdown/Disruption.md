@@ -42,16 +42,30 @@ public:: true
   "@id": "urn:ngm:class:disruption",
   "@type": "Class",
   "label": "Disruption",
-  "definition": "Disruption is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Disruption describes the process by which emerging technologies, platforms, or economic models radically displace incumbent systems by offering superior capability, lower cost, or fundamentally new value propositions. In the context of AI, blockchain, and spatial computing, disruption manifests as wholesale replacement of legacy industries—finance, knowledge work, supply chain, governance—rather than incremental improvement.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:disruptive-technology", "label": "Disruptive Technology"},
+      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
+      {"@id": "urn:ngm:class:emerging-tech-stack", "label": "Emerging tech stack"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:supply-chain-management", "label": "Supply Chain Management"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -92,14 +106,16 @@ public:: true
 
 
 - ### Definition
-  - Disruption is a concept within the ngm domain.
+  - Disruption describes the process by which emerging technologies, platforms, or economic models radically displace incumbent systems by offering superior capability, lower cost, or fundamentally new value propositions. In the context of AI, blockchain, and spatial computing, disruption manifests as wholesale replacement of legacy industries—finance, knowledge work, supply chain, governance—rather than incremental improvement.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:Disruption
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **enables**: [[Disruptive Technology]], [[Decentralised Finance]]
+  - **relatedTo**: [[Blockchain]], [[Generative AI]], [[Emerging tech stack]]
+  - **contrastsWith**: [[Supply Chain Management]]
 
   - bridges-to:: [[Blockchain]] (bc)
 - ### Content

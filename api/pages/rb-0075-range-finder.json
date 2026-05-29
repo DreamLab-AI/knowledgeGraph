@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:rb-0075-range-finder",
   "domain": "robotics",
-  "definition": "range finder is a robotics and autonomous systems concept and a type of Exteroceptive Sensor.",
+  "definition": "A range finder is an exteroceptive sensor that measures the distance between a robot and surrounding objects or surfaces by emitting a signal (laser, ultrasonic, or infrared) and timing its return. Range finders are fundamental to obstacle detection, safety zone monitoring, and environment mapping in mobile and collaborative robots.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-perception",
@@ -17,21 +17,56 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:rb-0095-safety-zone",
+        "label": "rb 0095 safety zone"
+      },
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rb-0069-lidar",
+        "label": "rb 0069 lidar"
+      },
+      {
+        "id": "urn:ngm:class:rb-0078-infrared-sensor",
+        "label": "rb 0078 infrared sensor"
+      },
+      {
+        "id": "urn:ngm:class:rb-0080-radar",
+        "label": "rb 0080 radar"
+      },
+      {
+        "id": "urn:ngm:class:proximity-sensor",
+        "label": "Proximity Sensor"
+      }
+    ]
   },
   "wikilinks": [
     {

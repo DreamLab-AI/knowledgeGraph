@@ -558,7 +558,7 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:carbon-credit",
+        "@id": "urn:ngm:class:carbon-credits",
         "label": "Carbon Credit"
       },
       {
@@ -756,7 +756,7 @@ public:: true
         "label": "Algorand"
       },
       {
-        "@id": "urn:ngm:class:carbon-credit",
+        "@id": "urn:ngm:class:carbon-credits",
         "label": "Carbon Credit"
       },
       {

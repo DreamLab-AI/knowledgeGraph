@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:robustness-oecd",
   "domain": "spatial-computing",
-  "definition": "AI systems should function reliably and securely throughout their lifecycle, demonstrating resilience against errors, faults, inconsistencies and attempts to alter system use or performance, with continuous assessment and management of potential risks.",
+  "definition": "The OECD Robustness principle (Principle 1.4, revised 2024) mandates that AI systems function reliably and securely throughout their lifecycle, demonstrating resilience against errors, faults, distributional inconsistencies, and adversarial attempts to alter system use or performance. It requires continuous risk assessment covering statistical robustness, fault tolerance, and adversarial resistance, and connects to the EU AI Act Article 15 technical requirements. Providers are responsible for design and testing; deployers are responsible for ongoing monitoring.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -14,11 +14,25 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:adversarial-testing",
+        "label": "Adversarial Testing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:responsible-ai-principles",
+        "label": "Responsible AI Principles"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -26,8 +40,22 @@
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:trustworthy-ai-framework",
+        "label": "Trustworthy AI Framework"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:safety-oecd",
+        "label": "Safety (OECD)"
+      },
+      {
+        "id": "urn:ngm:class:adversarial-robustness",
+        "label": "Adversarial Robustness"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -26,7 +26,7 @@ public:: true
   "@type": "Class",
   "@id": "urn:ngm:class:bc-defi-and-economics",
   "label": "DeFi and Economics",
-  "definition": "Intermediate taxonomy category for defi and economics concepts within the blockchain domain.",
+  "definition": "Taxonomy category grouping decentralised finance protocols and blockchain-native economic mechanisms, including automated market makers, liquidity pools, yield farming, stablecoins, tokenisation, DAOs, and the incentive structures that govern on-chain economies.",
   "domain": "blockchain",
   "subClassOf": [
     {
@@ -34,7 +34,30 @@ public:: true
       "label": "Blockchain"
     }
   ],
-  "relations": {},
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:decentralized-finance-de-fi", "label": "Decentralized Finance (DeFi)"},
+      {"@id": "urn:ngm:class:automated-market-maker", "label": "Automated Market Maker"},
+      {"@id": "urn:ngm:class:liquidity-pool", "label": "Liquidity Pool"},
+      {"@id": "urn:ngm:class:yield-farming", "label": "Yield Farming"},
+      {"@id": "urn:ngm:class:stablecoin", "label": "Stablecoin"},
+      {"@id": "urn:ngm:class:dao", "label": "DAO"},
+      {"@id": "urn:ngm:class:tokenization", "label": "Tokenization"},
+      {"@id": "urn:ngm:class:digital-asset-lending", "label": "Digital Asset Lending"},
+      {"@id": "urn:ngm:class:decentralized-exchange", "label": "Decentralized Exchange"},
+      {"@id": "urn:ngm:class:blockchain-economics", "label": "Blockchain Economics"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:bc-protocol-and-consensus", "label": "Protocol and Consensus"},
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
+      {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:cryptographic-commitment", "label": "Cryptographic Commitment"},
+      {"@id": "urn:ngm:class:incentive-alignment", "label": "Incentive Alignment"}
+    ]
+  },
+  "quality": 0.8,
   "qualityScore": 0.8,
   "maturity": "established"
 }

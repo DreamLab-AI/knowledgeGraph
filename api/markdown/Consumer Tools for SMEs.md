@@ -42,15 +42,29 @@ public:: true
   "@id": "urn:ngm:class:consumer-tools-for-smes",
   "@type": "Class",
   "label": "Consumer Tools for SMEs",
-  "definition": "Consumer Tools for SMEs is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Consumer Tools for SMEs encompasses the accessible AI-powered productivity applications, creative tools, and automation platforms used by small and medium enterprises. These tools lower the barrier to adopting generative AI and workflow automation without requiring technical expertise or enterprise-scale infrastructure investment.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:workflow-automation", "label": "Workflow Automation"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:coding-support", "label": "Coding support"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -92,16 +106,16 @@ public:: true
 
 
 - ### Definition
-  - Consumer Tools for SMEs is a concept within the ngm domain.
+  - Consumer Tools for SMEs encompasses the accessible AI-powered productivity applications, creative tools, and automation platforms used by small and medium enterprises. These tools lower the barrier to adopting generative AI and workflow automation without requiring technical expertise or enterprise-scale infrastructure investment.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:ConsumerToolsForSMEs
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
-
-  - bridges-to:: [[Blockchain]] (bc)
+  - uses:: [[Generative AI]], [[Large Language Models]]
+  - enables:: [[Workflow Automation]]
+  - related-to:: [[Blockchain]], [[Coding support]]
 - ### Content
   - # Business Functions
 	  **AI Technology & Concepts**

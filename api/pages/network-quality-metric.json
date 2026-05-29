@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:network-quality-metric",
   "domain": "spatial-computing",
-  "definition": "Network Quality Metric is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "A quantitative measure used to characterise the performance and reliability of a network connection for real-time interactive applications, encompassing parameters such as latency (round-trip time), jitter, packet loss rate, available bandwidth, and connection stability. These metrics directly determine the feasibility of synchronised multi-user experiences in spatial computing environments.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -13,21 +13,49 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:networking-technology",
+        "label": "Networking Technology"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:multi-user-systems",
+        "label": "Multi User Systems"
+      },
+      {
+        "id": "urn:ngm:class:real-time",
+        "label": "Real Time"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ]
   },
   "wikilinks": [
     {

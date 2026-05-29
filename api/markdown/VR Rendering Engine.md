@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:vr-rendering-engine",
   "@type": "Class",
   "label": "VR Rendering Engine",
-  "definition": "Specialized real-time graphics software that generates stereoscopic imagery for virtual reality headsets, optimizing frame rates, latency, and visual fidelity while managing the unique requirements of immersive display including foveated rendering, reprojection, and lens distortion correction.",
+  "definition": "Specialised real-time graphics software that generates stereoscopic imagery for virtual reality headsets, optimising frame rates (minimum 90 fps), motion-to-photon latency (sub-20 ms), and visual fidelity while managing VR-specific pipeline requirements including foveated rendering, asynchronous reprojection, and lens distortion correction. Leading implementations include Unreal Engine 5 (Lumen, Nanite) and Unity (URP/HDRP), both supporting major XR hardware via OpenXR and platform-specific SDKs.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-display-and-rendering",
@@ -59,7 +60,23 @@ public:: true
       "label": "Game Engine"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
+      {"@id": "urn:ngm:class:xr-device", "label": "XR Device"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:foveated-rendering", "label": "Foveated Rendering"},
+      {"@id": "urn:ngm:class:real-time-rendering-pipeline", "label": "Real-Time Rendering Pipeline"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:virtual-production", "label": "Virtual Production"},
+      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -109,6 +126,10 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Game Engine]]
+  - requires:: [[Real-Time Rendering]], [[XR Device]]
+  - hasPart:: [[Foveated Rendering]], [[Real-Time Rendering Pipeline]]
+  - enables:: [[Virtual Production]], [[Immersive Experience]]
+  - uses:: [[Spatial Computing]]
 
 - ### Content
 

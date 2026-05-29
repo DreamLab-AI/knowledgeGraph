@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ai-incident",
   "domain": "artificial-intelligence",
-  "definition": "An event involving an AI system that causes or has the potential to cause harm to individuals, property, environment, or fundamental rights, including malfunctions, security breaches, bias-driven discrimination, privacy violations, or unintended consequences requiring investigation and remediation.",
+  "definition": "An event in which an AI system causes or has the potential to cause harm to individuals, property, the environment, or fundamental rights, encompassing technical failures, security breaches, bias-driven discrimination, privacy violations, and unintended consequences. Under the EU AI Act Article 72, serious incidents must be reported to national competent authorities within 15 days; structured incident taxonomies and response protocols (detection, containment, investigation, remediation) are codified in ISO/IEC 23894:2023.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -18,11 +18,29 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -31,7 +49,20 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:bias",
+        "label": "Bias"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      }
+    ]
   },
   "wikilinks": [
     {

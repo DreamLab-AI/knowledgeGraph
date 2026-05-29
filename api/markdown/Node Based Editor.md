@@ -37,16 +37,33 @@ public:: true
   "@id": "urn:ngm:class:node-based-editor",
   "@type": "Class",
   "label": "Node Based Editor",
-  "definition": "Node Based Editor is a spatial computing concept and a type of spatial-computing.",
+  "definition": "A visual authoring tool that represents computational logic, material properties, or content workflows as directed graphs of interconnected nodes and edges, enabling non-linear dataflow programming. Node-based editors are widely used in game engines, VFX pipelines, and spatial computing tools for shader authoring, procedural geometry generation, and real-time behaviour scripting.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:shader", "label": "Shader"},
+      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:procedural-generation", "label": "Procedural Generation"},
+      {"@id": "urn:ngm:class:world-building", "label": "World Building"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:user-interface", "label": "User Interface"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:3-d-asset", "label": "3D Asset"},
+      {"@id": "urn:ngm:class:rendering-engine", "label": "Rendering Engine"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -76,14 +93,20 @@ public:: true
 
 
 - ### Definition
-  - NodeBasedEditor is a concept within the ngm domain.
+  - A visual authoring tool that represents computational logic, material properties, or content workflows as directed graphs of interconnected nodes and edges, enabling non-linear dataflow programming. Node-based editors are widely used in game engines, VFX pipelines, and spatial computing tools for shader authoring, procedural geometry generation, and real-time behaviour scripting.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:NodeBasedEditor
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses** [[Shader]] — shader graphs are the most common domain for node-based editing in real-time graphics
+  - **uses** [[Game Engine]] — major game engines (Unreal, Unity, Godot) include node-based editors as core tools
+  - **enables** [[Procedural Generation]] — node graphs are the primary authoring method for procedural content
+  - **enables** [[World Building]] — node-based tools accelerate environment and asset authoring workflows
+  - **hasPart** [[User Interface]] — the graph canvas and node palette comprise the UI of the editor
+  - **supports** [[3D Asset]] — node-based editors produce or modify 3D assets and their materials
+  - **supports** [[Rendering Engine]] — the rendering engine executes the shader and material graphs authored in node editors
 
 - ### Content
   # NodeBasedEditor

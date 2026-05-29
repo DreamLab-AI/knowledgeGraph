@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:training-for-design-practitioners",
   "domain": "infrastructure",
-  "definition": "Training for Design Practitioners is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Training for Design Practitioners covers structured programmes and self-directed learning pathways that equip designers\u2014particularly in landscape, product, and spatial disciplines\u2014with practical AI literacy, covering generative image tools, RAG-based knowledge management, client communication automation, and AI-assisted rendering workflows for immediate professional application.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-software-engineering",
@@ -13,18 +13,45 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:consumer-tools-for-smes",
+        "label": "Consumer Tools for SMEs"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graphing",
+        "label": "Knowledge Graphing"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation-rag",
+        "label": "Retrieval Augmented Generation - RAG"
+      },
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:generative-design-tool",
+        "label": "Generative Design Tool"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": []

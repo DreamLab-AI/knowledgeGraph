@@ -4,8 +4,8 @@
   "slug": "hidden-state",
   "public": true,
   "classIri": "urn:ngm:class:hidden-state",
-  "domain": "spatial-computing",
-  "definition": "The vector representation of a token or sequence at any layer in a neural network, encoding contextualised information learned by the model.",
+  "domain": "artificial-intelligence",
+  "definition": "The vector representation of a token or sequence at any layer in a neural network, encoding contextualised information learned by the model. Hidden states are progressively refined through self-attention and feed-forward transformations, with deeper layers capturing increasingly abstract semantic features used in downstream tasks.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -13,12 +13,26 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:token-embedding",
+        "label": "Token Embedding"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:language-modeling",
+        "label": "Language Modeling"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -26,8 +40,22 @@
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
+    ]
   },
   "wikilinks": [
     {

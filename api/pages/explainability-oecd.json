@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:explainability-oecd",
   "domain": "artificial-intelligence",
-  "definition": "People affected by AI-based outcomes should be able to understand how and why particular decisions or recommendations were reached, with explanations provided in ways appropriate to the context and enabling meaningful contestation of AI-influenced decisions.",
+  "definition": "The OECD AI Principle (1.3) requiring that people affected by AI-based outcomes are able to understand how and why particular decisions or recommendations were reached. Explanations must be contextually appropriate, enable meaningful contestation, and illuminate causal factors\u2014operationalised through LIME, SHAP, attention visualisation, and inherently interpretable model architectures.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -13,21 +13,53 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human in the Loop"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:fairness-oecd",
+        "label": "Fairness (OECD)"
+      },
+      {
+        "id": "urn:ngm:class:accountability-oecd",
+        "label": "Accountability (OECD)"
+      },
+      {
+        "id": "urn:ngm:class:human-centred-values",
+        "label": "Human Centred Values"
+      }
+    ]
   },
   "wikilinks": [
     {

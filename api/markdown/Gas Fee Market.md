@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:gas-fee-market",
   "@type": "Class",
   "label": "Gas Fee Market",
-  "definition": "The economic mechanism governing blockchain transaction costs, where users bid with gas fees to prioritise transaction processing, creating a market-based system essential for metaverse operations including NFT trades, smart contract execution, and virtual asset transfers.",
-  "domain": "spatial-computing",
-  "maturity": "draft",
+  "definition": "The Gas Fee Market is the economic mechanism governing blockchain transaction costs, where users bid gas fees to prioritise transaction processing. Governed by EIP-1559 on Ethereum, it separates a burned base fee from an optional priority tip, creating a market-based congestion control system essential for NFT trades, smart contract execution, and virtual asset transfers in spatial computing platforms.",
+  "domain": "blockchain",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -64,6 +65,38 @@ public:: true
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract-execution",
+        "label": "Smart Contract Execution"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:eip-1559",
+        "label": "EIP-1559"
+      },
+      {
+        "@id": "urn:ngm:class:layer2",
+        "label": "Layer2"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:blockchain-economics",
+        "label": "Blockchain Economics"
+      }
+    ]
   }
 }
 ```
@@ -109,6 +142,12 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Blockchain Economics]]
+  - Part Of [[Blockchain Economics]]
+  - Requires [[Consensus Mechanism]]
+  - Requires [[Smart Contract Execution]]
+  - Related To [[EIP-1559]]
+  - Related To [[Layer2]]
+  - Related To [[Blockchain Scalability]]
 
 - ### Content
 

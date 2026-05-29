@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:rb-0022-robot-dynamics",
   "domain": "robotics",
-  "definition": "robot dynamics is a robotics and autonomous systems concept and a type of Robot Dynamics.",
+  "definition": "Robot dynamics is the study of the relationship between the forces and torques applied to a robot's joints and links and the resulting motion of the robot. It encompasses forward dynamics (computing accelerations from applied torques), inverse dynamics (computing required torques to achieve a desired motion), and the derivation of equations of motion via Newton-Euler or Lagrangian formulations. Dynamic models are essential for model-based controllers such as computed-torque control, optimal control, and trajectory optimisation.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
@@ -17,12 +17,34 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:rb-0021-robot-kinematics",
+        "label": "rb 0021 robot kinematics"
+      },
+      {
+        "id": "urn:ngm:class:rb-0041-inertia",
+        "label": "rb 0041 inertia"
+      },
+      {
+        "id": "urn:ngm:class:rb-0043-torque",
+        "label": "rb 0043 torque"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:rb-0064-computed-torque-control",
+        "label": "rb 0064 computed torque control"
+      },
+      {
+        "id": "urn:ngm:class:rb-0051-trajectory-planning",
+        "label": "rb 0051 trajectory planning"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -31,7 +53,20 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rigid-body-dynamics",
+        "label": "Rigid Body Dynamics"
+      },
+      {
+        "id": "urn:ngm:class:newton-euler-dynamics",
+        "label": "Newton-Euler Dynamics"
+      },
+      {
+        "id": "urn:ngm:class:rb-0030-jacobian-matrix",
+        "label": "rb 0030 jacobian matrix"
+      }
+    ]
   },
   "wikilinks": [
     {

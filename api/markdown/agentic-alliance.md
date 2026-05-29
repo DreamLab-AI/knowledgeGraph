@@ -1,5 +1,5 @@
 - ### Definition
-  - Agentic Alliance is a concept within the ngm domain.
+  - An open collaborative initiative advancing decentralised agent frameworks that integrate Nostr relays, Bitcoin Lightning micropayments, distributed identity, and open data connectors to enable trustless, economically-incentivised multi-agent coordination.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:AgenticAlliance
@@ -7,6 +7,10 @@
 
 - ### Relationships
   - bridges-to:: [[Blockchain]]
+  - uses:: [[Nostr Protocol]], [[Distributed Identity]], [[Distributed Computing]]
+  - hasPart:: [[Agents]], [[Smart Contract]]
+  - requires:: [[Blockchain]]
+  - relatedTo:: [[Agentic AI]], [[Distributed Ledger]]
 
 - ### Content
   - [[Projects]] with [[Melvin Carvalho]] for [[Agents]] [[Distributed Identity]] [[Distributed Computing]] [[Nostr protocol]] [[Bitcoin]]

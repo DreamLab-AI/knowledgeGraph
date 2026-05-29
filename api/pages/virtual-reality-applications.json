@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:virtual-reality-applications",
   "domain": "spatial-computing",
-  "definition": "Virtual Reality Applications is a type of Virtual Reality in the spatial computing domain.",
+  "definition": "Software programmes and use-case deployments that leverage virtual reality technology to deliver immersive, interactive experiences for domains including healthcare, education, enterprise training, entertainment, and social interaction, running on dedicated VR hardware or spatial computing platforms.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -17,12 +17,30 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:virtual-reality-platform",
+        "label": "Virtual Reality Platform"
+      },
+      {
+        "id": "urn:ngm:class:virtual-world-infrastructure",
+        "label": "Virtual World Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:virtual-experience",
+        "label": "Virtual Experience"
+      },
+      {
+        "id": "urn:ngm:class:virtual-clinic",
+        "label": "Virtual Clinic"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -31,7 +49,20 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "id": "urn:ngm:class:education-metaverse",
+        "label": "Education Metaverse"
+      }
+    ]
   },
   "wikilinks": [
     {

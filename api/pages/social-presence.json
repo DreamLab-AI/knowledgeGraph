@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:social-presence",
   "domain": "distributed-collaboration",
-  "definition": "Subjective experience of feeling connected to and aware of other people in a mediated communication environment, fostering social interactions and relationships.",
+  "definition": "Subjective experience of feeling connected to and aware of other people in a mediated communication environment, fostering social interactions and relationships. Social presence is heightened by richer media, avatar fidelity, spatial audio, and shared immersive spaces, and is a key quality metric for telecollaboration and virtual world platforms.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:dc-telepresence",
@@ -17,21 +17,65 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:virtual-collaboration",
+        "label": "Virtual Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:video-conferencing",
+        "label": "Video Conferencing"
+      },
+      {
+        "id": "urn:ngm:class:web-rtc",
+        "label": "WebRTC"
+      },
+      {
+        "id": "urn:ngm:class:presence-detection",
+        "label": "Presence Detection"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:dc-communication",
+        "label": "Communication Technology"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:immersive-communication",
+        "label": "Immersive Communication"
+      },
+      {
+        "id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      },
+      {
+        "id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      }
+    ]
   },
   "wikilinks": [
     {

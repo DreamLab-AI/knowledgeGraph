@@ -54,16 +54,40 @@ public:: true
   "@id": "urn:ngm:class:embedded-ai-frameworks",
   "@type": "Class",
   "label": "Embedded AI Frameworks",
-  "definition": "Embedded AI Frameworks provide software infrastructure and tooling optimized for deploying and running machine learning models on resource-constrained embedded systems and edge devices.",
+  "definition": "Software infrastructure and tooling optimised for deploying and running machine learning models on resource-constrained embedded systems and edge devices, with footprints of 100 KB to 10 MB, supporting INT8/FP16 quantisation, NPU/FPGA/DSP hardware acceleration abstraction, and streamlined memory allocation to avoid heap fragmentation on microcontrollers.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:cat-ai-infrastructure",
+      "@id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure (Category)"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:tiny-ml", "label": "TinyML"},
+      {"@id": "urn:ngm:class:edge-ai-accelerator", "label": "Edge AI Accelerator"},
+      {"@id": "urn:ngm:class:model-compression-for-edge", "label": "Model Compression for Edge"},
+      {"@id": "urn:ngm:class:model-pruning-for-edge-deployment", "label": "Model Pruning for Edge Deployment"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:hardware-acceleration", "label": "Hardware Acceleration"},
+      {"@id": "urn:ngm:class:inference", "label": "Inference"},
+      {"@id": "urn:ngm:class:fpga", "label": "FPGA"},
+      {"@id": "urn:ngm:class:embedded-systems", "label": "Embedded Systems"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:edge-ai-system", "label": "Edge AI System"},
+      {"@id": "urn:ngm:class:real-time-inference-at-edge", "label": "Real-Time Inference at Edge"},
+      {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"},
+      {"@id": "urn:ngm:class:latency-aware-edge-ai", "label": "Latency-Aware Edge AI"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:io-t-ai-integration", "label": "IoT AI Integration"},
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

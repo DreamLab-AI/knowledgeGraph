@@ -1,12 +1,14 @@
 - ### Definition
-  - AI as a step function is a concept within the ngm domain.
+  - A conceptual framework positing that AI capability exhibits discontinuous threshold transitions—analogous to the mathematical step function—where accumulated incremental improvements trigger rapid, self-reinforcing shifts in capability order, akin to historical inflection points such as the Cambrian explosion or the printing press. The framework draws on self-organisation theory and feedback-loop dynamics to argue that AI represents the next major complexity transition in evolutionary and technological history.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:AIAsAStepFunction
   - owl-role:: Concept
 
 - ### Relationships
-  - bridges-to:: [[AI Agent System]]
+  - relatedTo:: [[Artificial Intelligence]], [[AI Alignment]], [[Generative AI]]
+  - enables:: [[AI Safety]], [[Responsible AI]]
+  - supports:: [[AI Concept]]
 
 - ### Content
   - This is metaphysics, so take it or leave it.

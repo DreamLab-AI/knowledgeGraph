@@ -46,7 +46,7 @@ public:: true
   "@id": "urn:ngm:class:proof-based-consensus",
   "@type": "Class",
   "label": "Proof-Based Consensus",
-  "definition": "Consensus mechanisms requiring participants to provide cryptographic or computational proof to validate transactions and create blocks.",
+  "definition": "Proof-Based Consensus is the family of blockchain consensus mechanisms in which participants must provide a verifiable cryptographic or computational proof to earn the right to propose or validate blocks. This family includes proof-of-work (computational puzzle), proof-of-stake (economic stake), delegated proof-of-stake, proof-of-authority, proof-of-history, and related variants.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -59,7 +59,25 @@ public:: true
       "label": "Consensus Mechanism"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
+      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"},
+      {"@id": "urn:ngm:class:delegated-proof-of-stake", "label": "Delegated Proof of Stake"},
+      {"@id": "urn:ngm:class:proof-of-authority", "label": "Proof of Authority"},
+      {"@id": "urn:ngm:class:proof-of-history", "label": "Proof of History"},
+      {"@id": "urn:ngm:class:liquid-proof-of-stake", "label": "Liquid Proof of Stake"},
+      {"@id": "urn:ngm:class:nominated-proof-of-stake", "label": "Nominated Proof of Stake"},
+      {"@id": "urn:ngm:class:pure-proof-of-stake", "label": "Pure Proof of Stake"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:finality", "label": "Finality"},
+      {"@id": "urn:ngm:class:deterministic-finality", "label": "Deterministic Finality"},
+      {"@id": "urn:ngm:class:nakamoto-consensus", "label": "Nakamoto Consensus"},
+      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -67,6 +85,8 @@ public:: true
   }
 }
 ```
+
+Proof-based consensus mechanisms differ from voting-based alternatives (BFT variants) in that participation rights are earned through demonstrable expenditure — either of computation (PoW), staked capital (PoS), or delegated authority. This design makes Sybil attacks economically costly. The trade-off between energy usage, capital requirements, decentralisation, and finality characteristics differs significantly across the family members.
 
 ```json-ld
 {

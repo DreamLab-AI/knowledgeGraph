@@ -26,7 +26,7 @@ public:: true
   "@type": "Class",
   "@id": "urn:ngm:class:robo-actuation-and-control",
   "label": "Actuation and Control",
-  "definition": "Intermediate taxonomy category for actuation and control concepts within the robotics domain.",
+  "definition": "Taxonomy hub covering the mechanisms, algorithms, and feedback systems that translate commands into physical motion in robotic systems. Encompasses actuator hardware, control algorithms such as PID and adaptive control, motion planning, and trajectory execution that collectively govern a robot's dynamic behaviour.",
   "domain": "robotics",
   "subClassOf": [
     {
@@ -34,7 +34,28 @@ public:: true
       "label": "Robotics"
     }
   ],
-  "relations": {},
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:actuator", "label": "Actuator"},
+      {"@id": "urn:ngm:class:pid-control", "label": "PID Control"},
+      {"@id": "urn:ngm:class:feedback-control", "label": "Feedback Control"},
+      {"@id": "urn:ngm:class:adaptive-control", "label": "Adaptive Control"},
+      {"@id": "urn:ngm:class:motion-control", "label": "Motion Control"},
+      {"@id": "urn:ngm:class:torque-control", "label": "Torque Control"},
+      {"@id": "urn:ngm:class:trajectory-planning", "label": "Trajectory Planning"},
+      {"@id": "urn:ngm:class:servo-control", "label": "Servo Control"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:kinematics", "label": "Kinematics"},
+      {"@id": "urn:ngm:class:control-theory", "label": "Control Theory"},
+      {"@id": "urn:ngm:class:impedance-control", "label": "Impedance Control"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:encoder", "label": "Encoder"},
+      {"@id": "urn:ngm:class:servo-motor", "label": "Servo Motor"}
+    ]
+  },
+  "quality": 0.8,
   "qualityScore": 0.8,
   "maturity": "established"
 }

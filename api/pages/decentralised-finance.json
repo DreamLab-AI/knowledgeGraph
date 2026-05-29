@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:decentralised-finance",
   "domain": "blockchain",
-  "definition": "Decentralised Finance (DeFi) encompasses financial services and instruments implemented as permissionless smart contracts on public blockchains, eliminating traditional intermediaries.",
+  "definition": "Decentralised Finance (DeFi) encompasses financial services and instruments\u2014including lending, borrowing, trading, and yield generation\u2014implemented as permissionless, non-custodial smart contracts on public blockchains, eliminating the need for traditional financial intermediaries such as banks, brokers, and clearinghouses. Protocol logic is encoded directly in on-chain code that executes deterministically and transparently, allowing any party to verify the rules governing their funds. DeFi protocols compose with one another through shared liquidity pools and token standards, enabling complex financial strategies from interoperable building blocks.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-defi-and-economics",
@@ -14,20 +14,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:tokenization",
+        "label": "Tokenization"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cross-border-payments",
+        "label": "Cross-Border Payments"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

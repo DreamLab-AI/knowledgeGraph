@@ -33,15 +33,28 @@ public:: true
   "@id": "urn:ngm:class:libertarian-thesis",
   "@type": "Class",
   "label": "Libertarian thesis",
-  "definition": "Libertarian thesis is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "The Libertarian Thesis, as represented here by Hans-Hermann Hoppe's 'Democracy: The God That Failed', argues that democratic governance systematically expands state power and erodes individual liberties relative to private property-based natural order, and that radical decentralisation, covenant communities, and privatisation of public goods offer a more consistent path to a free society.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-legal-and-regulatory",
       "label": "Legal and Regulatory"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:property-rights", "label": "Property Rights"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:governance", "label": "Governance"},
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:economics", "label": "Economics"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -72,14 +85,16 @@ public:: true
 
 
 - ### Definition
-  - Libertarian thesis is a concept within the ngm domain.
+  - The Libertarian Thesis, as represented here by Hans-Hermann Hoppe's 'Democracy: The God That Failed', argues that democratic governance systematically expands state power and erodes individual liberties relative to private property-based natural order, and that radical decentralisation, covenant communities, and privatisation of public goods offer a more consistent path to a free society.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:LibertarianThesis
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires:: [[Property Rights]]
+  - contrastsWith:: [[Governance]], [[AI Governance]]
+  - relatedTo:: [[Economics]]
 
 - ### Content
   - ---

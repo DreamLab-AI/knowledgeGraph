@@ -1,12 +1,14 @@
 - ### Definition
-  - Some legacy Linked-JSON is a concept within the ngm domain.
+  - Some legacy Linked-JSON is a collection of early-stage JSON-LD-based ontology data structures capturing metaverse entity models — including agents, scenes, digital assets, and virtual economies — created before the current NarrativeGoldmine v2 schema. These artefacts document the iterative evolution of the knowledge graph's data model and serve as a reference for schema migration and ontology provenance tracing.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:SomeLegacyLinkedJSON
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **relatedTo**: JSON-LD — the content uses JSON-LD syntax for linked data representation; Ontology — the artefacts encode an early ontological model of the metaverse domain; Knowledge Graph — this data was a precursor to the current knowledge graph.
+  - **enables**: Knowledge Graph Construction — the legacy models inform how the current graph is structured and what entities are required.
+  - **uses**: RDF — the underlying data model follows RDF triples; Semantic Web — the design reflects Semantic Web principles for interlinked machine-readable data.
 
 - ### Content
   - ```mermaid

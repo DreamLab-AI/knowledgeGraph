@@ -5,7 +5,9 @@
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: [[Cryptography]], [[Digital Signature]] — cryptographic hash functions and digital signatures are the technical basis for most verification schemes
+  - **enables**: [[Identity Verification]], [[Compliance Framework]] — verification processes underpin identity authentication and provide evidence for compliance audits
+  - **relatedTo**: [[Authentication]], [[Standards Validation]] — verification overlaps with authentication (identity claims) and standards validation (schema/rule conformance)
 - ### Content
   - Verification in knowledge systems confirms that information, claims, and digital artefacts meet accuracy, completeness, and compliance standards through cryptographic proofs, rule-based validation, and consensus mechanisms establishing trust in decentralised systems.
   - ### Original Content

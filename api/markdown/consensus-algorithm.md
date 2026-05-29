@@ -7,7 +7,12 @@
   - belongs-to-domain:: [[BlockchainDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Blockchain Network]]
+  - requires [[Byzantine Fault Tolerance]]
+  - enables [[Blockchain Transaction]]
+  - enables [[Distributed Ledger]]
+  - hasPart [[Proof Of Work]]
+  - hasPart [[Proof of Stake]]
 
 - ### Content
   - A distributed computational protocol enabling participants in a [[Blockchain Network]] to agree on transaction history and canonical state without centralised coordination. [[Consensus Algorithms]] such as [[Proof of Work]], [[Proof of Stake]], and [[Byzantine Fault Tolerance]] ensure [[Network Security]], [[Data Integrity]], and [[Trustless Coordination]].

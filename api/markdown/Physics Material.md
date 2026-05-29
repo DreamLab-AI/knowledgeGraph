@@ -62,9 +62,9 @@ public:: true
   "@id": "urn:ngm:class:physics-material",
   "@type": "Class",
   "label": "Physics Material",
-  "definition": "Physics Material is a spatial computing concept and a type of Metaverse.",
+  "definition": "A data structure encoding surface interaction properties — friction coefficients, coefficient of restitution, density, and drag — that govern object behaviour within a physics simulation engine. Physics materials are distinct from visual rendering materials and are consumed by simulation solvers to produce physically plausible contact responses for metaverse avatars, props, and environments.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-display-and-rendering",
@@ -75,7 +75,20 @@ public:: true
       "label": "Metaverse"
     }
   ],
-  "quality": 0.5,
+  "qualityScore": 0.7,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:physics-simulation", "label": "Physics Simulation"},
+      {"@id": "urn:ngm:class:rigid-body-dynamics", "label": "Rigid Body Dynamics"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:collision-detection", "label": "Collision Detection"},
+      {"@id": "urn:ngm:class:physically-based-rendering", "label": "Physically Based Rendering"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -136,14 +149,16 @@ public:: true
 
 
 - ### Definition
-  - Physics Material is a concept within the mv domain.
+  - A data structure encoding surface interaction properties — friction coefficients, coefficient of restitution, density, and drag — that govern object behaviour within a physics simulation engine. Physics materials are distinct from visual rendering materials and are consumed by simulation solvers to produce physically plausible contact responses for metaverse avatars, props, and environments.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:PhysicsMaterial
   - owl-role:: Concept
 
 - ### Relationships
-  - is-subclass-of:: [[Metaverse]]
+  - uses: [[Physics Simulation]], [[Rigid Body Dynamics]]
+  - supports: [[Collision Detection]], [[Physically Based Rendering]]
+  - partOf: [[Metaverse]]
 
 - ### Content
 

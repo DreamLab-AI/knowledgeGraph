@@ -38,15 +38,31 @@ public:: true
   "@id": "urn:ngm:class:ai-defence-doc",
   "@type": "Class",
   "label": "AI Defence Doc",
-  "definition": "AI Defence Doc is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "A curated reference document compiling empirical evidence countering common objections to AI capability and originality claims, aggregating benchmarks, research findings, and expert commentary demonstrating that large language models exhibit reasoning, world-model construction, and generalisation beyond stochastic pattern matching. Serves as an evidence base for constructive discourse on AI capabilities and their societal implications.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
     }
   ],
+  "relations": {
+    "supports": [
+      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
+      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
+      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"},
+      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"},
+      {"@id": "urn:ngm:class:explainability", "label": "Explainability"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -83,14 +99,16 @@ public:: true
 
 
 - ### Definition
-  - AI Defence Doc is a concept within the ngm domain.
+  - A curated reference document aggregating empirical evidence countering common objections to AI capability and originality claims, compiling benchmarks, research findings, and expert commentary demonstrating that large language models exhibit reasoning, world-model construction, and generalisation beyond stochastic pattern matching. Serves as an evidence base for constructive discourse on AI capabilities and societal implications.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:AIDefenceDoc
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - supports:: [[Responsible AI]], [[AI Safety]]
+  - relatedTo:: [[Large Language Models]], [[AI Alignment]], [[Generative AI]]
+  - enables:: [[AI Ethics]], [[Explainability]]
 
 - ### Content
   - [AI Defense Doc (google.com)](https://docs.google.com/document/u/0/d/15myK_6eTxEPuKnDi5krjBM_0jrv3GELs8TGmqOYBvug/mobilebasic#h.gboye8hkf0r8)  << from here

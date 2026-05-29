@@ -42,9 +42,10 @@ public:: true
   "@id": "urn:ngm:class:stacking",
   "@type": "Class",
   "label": "Stacking",
-  "definition": "Stacking is a artificial intelligence concept and a type of Ensemble Mods.",
+  "definition": "Stacking (stacked generalisation) is a hierarchical ensemble method that trains multiple diverse base models then combines their predictions using a meta-model, which learns the optimal weighting of base model outputs. Unlike bagging and boosting, stacking uses cross-validated out-of-fold predictions to train the meta-model, reducing information leakage and typically achieving superior predictive performance over any single base learner.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
@@ -55,11 +56,40 @@ public:: true
       "label": "Ensemble Methods"
     }
   ],
-  "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:ensemble-methods",
+        "label": "Ensemble Methods"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:bagging",
+        "label": "Bagging"
+      },
+      {
+        "@id": "urn:ngm:class:boosting",
+        "label": "Boosting"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:machine-learning-model",
+        "label": "Machine Learning Model"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      }
+    ]
   }
 }
 ```
@@ -91,7 +121,7 @@ public:: true
 
 
 - ### Definition
-  - Stacking is a concept within the ai domain.
+  - Stacking (stacked generalisation) is a hierarchical ensemble method that trains multiple diverse base models then combines their predictions using a meta-model, which learns the optimal weighting of base model outputs. Unlike bagging and boosting, stacking uses cross-validated out-of-fold predictions to train the meta-model, reducing information leakage and typically achieving superior predictive performance over any single base learner.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:Stacking
@@ -99,6 +129,11 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Ensemble Methods]]
+  - Uses [[Machine Learning Model]]
+  - Contrasts with [[Bagging]]
+  - Contrasts with [[Boosting]]
+  - Requires [[Ensemble Methods]]
+  - Related to [[Overfitting]]
 
 - ### Content
 

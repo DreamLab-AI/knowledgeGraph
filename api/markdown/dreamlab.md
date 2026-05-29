@@ -1,12 +1,14 @@
 - ### Definition
-  - Dreamlab is a concept within the ngm domain.
+  - Dreamlab is a UK-based creative technologist collective offering multidisciplinary services spanning AI and machine learning, virtual production, immersive XR experiences, generative media, spatial computing, and strategic R&D partnerships. It operates at the intersection of advanced AI infrastructure, real-time rendering, and immersive storytelling for creative and enterprise clients.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:Dreamlab
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: [[Generative AI]], [[Immersive Technology]], [[Spatial Computing]]
+  - **enables**: [[Immersive Experience]], [[Knowledge Management]]
+  - **relatedTo**: [[Extended Reality (XR)]], [[AI Infrastructure]]
 
 - ### Content
   - ---

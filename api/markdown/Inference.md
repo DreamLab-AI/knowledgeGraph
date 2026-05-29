@@ -42,15 +42,28 @@ public:: true
   "@id": "urn:ngm:class:inference",
   "@type": "Class",
   "label": "Inference",
-  "definition": "Inference is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "Inference is the process of applying a trained AI model to new, unseen data to produce predictions, classifications, or generated outputs. It is distinct from training in that model parameters are fixed; the computational objective is throughput, latency, and memory efficiency. Inference is the primary execution path in production deployments and is governed by ISO/IEC 22989:2022 clause 3.3.4.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
     }
   ],
+  "relations": {
+    "dependsOn": [
+      {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:hardware-acceleration", "label": "Hardware Acceleration"},
+      {"@id": "urn:ngm:class:inference-hardware", "label": "Inference Hardware"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:training", "label": "Training"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -95,7 +108,11 @@ public:: true
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - dependsOn:: [[Model Training]]
+  - dependsOn:: [[Neural Network]]
+  - uses:: [[Hardware Acceleration]]
+  - uses:: [[Inference Hardware]]
+  - contrastsWith:: [[Training]]
 
 - ### Content
   - ### Primary Definition

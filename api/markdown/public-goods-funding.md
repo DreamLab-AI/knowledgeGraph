@@ -1,16 +1,24 @@
 - ### Definition
-  - A mechanism for financing non-excludable, non-rival resources by pooling contributions from stakeholders to sustain shared infrastructure and open-source projects.
+  - Public goods funding refers to mechanisms that finance resources which are non-excludable and non-rival — meaning consumption by one party does not diminish availability to others and exclusion is impractical. In decentralised ecosystems, on-chain coordination primitives such as quadratic funding, retroactive grants, and DAO-managed treasuries are used to allocate capital towards open-source software, protocol research, and shared infrastructure. These mechanisms attempt to correct the market failure of under-provision that arises when contributors cannot capture sufficient private value from their public-benefit work.
 
 - ### Semantic Classification
   - owl-class:: public-goods-funding:Public Goods Funding
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- Stub page — relationships inherited from referencing pages -->
+  - hasPart [[Quadratic Funding]]
+  - hasPart [[Retroactive Public Goods Funding]]
+  - uses [[DAO]]
+  - uses [[Treasury Management]]
+  - relatedTo [[Smart Contract]]
+  - relatedTo [[Quadratic Voting]]
 
 - ### Content
-  - #Public page
-  - automatically published
+  Public goods funding draws on classical welfare economics to address a structural problem in open ecosystems: free-rider dynamics discourage investment in shared infrastructure because individuals benefit regardless of whether they contribute. Blockchain-native coordination tools have revived interest in novel funding mechanisms that operate transparently on-chain.
+
+  Quadratic funding, pioneered by Gitcoin Grants, allocates matching funds proportional to the square root of aggregate individual contributions, amplifying community signal rather than raw capital. Retroactive public goods funding, as implemented by Optimism's RetroPGF programme, inverts the timing by rewarding proven past impact, reducing speculative allocation risk. DAO treasuries governed by on-chain voting or conviction voting can sustain long-running grants programmes that operate without central intermediaries.
+
+  Smart contracts enforce disbursement rules automatically, enabling milestone-based streaming payments and transparent audit trails. Sybil resistance mechanisms — including quadratic voting safeguards — are critical to preventing gaming of matching pools by coordinated fake identities. The broader challenge is designing mechanisms that are both capital-efficient and resistant to plutocratic capture, motivating ongoing research into mechanisms combining token-weighted and identity-based governance.
 
 - ### Provenance
   - sources::

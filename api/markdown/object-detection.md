@@ -7,7 +7,12 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Computer Vision]]
+  - requires [[Deep Learning]]
+  - enables [[Semantic Segmentation]]
+  - enables [[Pose Estimation]]
+  - contrastsWith [[Image Classification]]
+  - contrastsWith [[Instance Segmentation]]
 
 - ### Content
   - Object Detection is the computer vision task of identifying and localising multiple objects within an image by predicting bounding boxes and class labels for each detected instance. Object detectors (YOLO, Faster R-CNN, DETR) combine classification and localisation, outputting spatial coordinates and class probabilities for all objects of interest in real-time or near-real-time performance.

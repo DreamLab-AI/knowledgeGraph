@@ -26,7 +26,7 @@ public:: true
   "@type": "Class",
   "@id": "urn:ngm:class:infra-computing-and-cloud",
   "label": "Computing and Cloud",
-  "definition": "Intermediate taxonomy category for computing and cloud concepts within the infrastructure domain.",
+  "definition": "Taxonomy hub covering computing paradigms and cloud service models within the infrastructure domain, including distributed systems, edge computing, serverless architectures, and specialised hardware accelerators. It organises concepts ranging from physical compute infrastructure to platform and software services delivered over networks.",
   "domain": "infrastructure",
   "subClassOf": [
     {
@@ -34,7 +34,26 @@ public:: true
       "label": "Infrastructure"
     }
   ],
-  "relations": {},
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:cloud-infrastructure", "label": "Cloud Infrastructure"},
+      {"@id": "urn:ngm:class:cloud-native-applications", "label": "Cloud-Native Applications"},
+      {"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"},
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
+      {"@id": "urn:ngm:class:serverless-architecture", "label": "Serverless Architecture"},
+      {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"},
+      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
+      {"@id": "urn:ngm:class:quantum-computing", "label": "Quantum Computing"},
+      {"@id": "urn:ngm:class:tpu", "label": "TPU"},
+      {"@id": "urn:ngm:class:fpga", "label": "FPGA"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:infra-data-management", "label": "Data Management"},
+      {"@id": "urn:ngm:class:infra-network-and-comms", "label": "Network and Communication"},
+      {"@id": "urn:ngm:class:compute-infrastructure", "label": "Compute Infrastructure"}
+    ]
+  },
+  "quality": 0.8,
   "qualityScore": 0.8,
   "maturity": "established"
 }

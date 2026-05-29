@@ -42,9 +42,9 @@ public:: true
   "@id": "urn:ngm:class:rb-0017-rescue-robot",
   "@type": "Class",
   "label": "rb 0017 rescue robot",
-  "definition": "rescue robot is a robotics and autonomous systems concept and a type of Mobile Robot.",
+  "definition": "A rescue robot is a mobile robotic system specifically designed or adapted for deployment in disaster, emergency, or hazardous environments where direct human access is dangerous or impossible. Rescue robots perform tasks such as victim search-and-detection, structural reconnaissance, rubble traversal, gas sensing, and teleoperated manipulation of debris. They typically integrate rugged locomotion systems (tracked, legged, or serpentine), multiple sensor modalities (thermal, depth camera, LIDAR, gas detectors), and semi-autonomous navigation with human-on-the-loop teleoperation.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-robot-type",
@@ -55,11 +55,31 @@ public:: true
       "label": "Mobile Robot"
     }
   ],
-  "quality": 0.5,
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:slam", "label": "SLAM"},
+      {"@id": "urn:ngm:class:rb-0077-depth-camera", "label": "rb 0077 depth camera"},
+      {"@id": "urn:ngm:class:rb-0069-lidar", "label": "rb 0069 lidar"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
+      {"@id": "urn:ngm:class:obstacle-avoidance", "label": "Obstacle Avoidance"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:rb-0008-autonomous-robot", "label": "rb 0008 autonomous robot"},
+      {"@id": "urn:ngm:class:rb-0018-inspection-robot", "label": "rb 0018 inspection robot"},
+      {"@id": "urn:ngm:class:mobile-robot-platform", "label": "Mobile Robot Platform"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:rescue-robot", "label": "Rescue Robot"},
+      {"@id": "urn:ngm:class:swarm-robotics", "label": "Swarm Robotics"}
+    ]
   }
 }
 ```
@@ -91,7 +111,7 @@ public:: true
 
 
 - ### Definition
-  - ### Primary Definition
+  - A rescue robot is a specialised mobile robot deployed in emergency scenarios—collapsed structures, fires, chemical spills, and nuclear incidents—where sending human responders entails unacceptable risk. These systems must combine robust locomotion on unstructured terrain, reliable communications over intermittent links, multi-modal sensing for victim detection (thermal imaging, audio, CO2), and sufficient autonomy to navigate when teleoperation bandwidth is constrained.
 
 - ### Semantic Classification
   - owl-class:: robotics:rb0017rescuerobot
@@ -99,7 +119,7 @@ public:: true
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Rescue robots are a subclass of mobile robots and share significant technology with inspection robots (RB-0018). Their perception stack typically includes SLAM for mapping unknown environments, depth cameras (RB-0077), and LiDAR (RB-0069) for 3D situational awareness. Obstacle avoidance is safety-critical in debris-filled environments. Swarm approaches are increasingly applied: multiple smaller rescue robots cooperate to cover larger search areas more quickly than a single large platform.
 
 - ### Content
   - ### Primary Definition

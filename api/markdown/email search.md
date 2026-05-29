@@ -33,16 +33,34 @@ public:: true
   "@id": "urn:ngm:class:email-search",
   "@type": "Class",
   "label": "email search",
-  "definition": "email search is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Email search refers to the set of techniques, architectures, and tooling used to index, query, and retrieve relevant messages from large email corpora. Modern self-hosted email search stacks combine traditional full-text indexing (BM25-based engines such as Tantivy or Xapian) with dense vector embeddings and hybrid retrieval strategies to support semantic and keyword queries at scale. LLM-based reranking and optional graph-database layers for entity-relationship queries extend precision and recall beyond keyword matching, enabling systems to handle corpora of hundreds of thousands of messages with sub-second latency.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:infra-network-and-comms",
-      "label": "Network and Communication"
+      "@id": "urn:ngm:class:search-engine", "label": "Search Engine"
     }
   ],
-  "quality": 0.5,
+  "quality": 0.7,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:semantic-search", "label": "Semantic Search"},
+      {"@id": "urn:ngm:class:vector-database", "label": "Vector Database"},
+      {"@id": "urn:ngm:class:embedding-model", "label": "Embedding Model"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:search-index", "label": "Search Index"},
+      {"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:retrieval-augmented-generation-rag", "label": "Retrieval Augmented Generation - RAG"},
+      {"@id": "urn:ngm:class:knowledge-base", "label": "Knowledge Base"},
+      {"@id": "urn:ngm:class:graph-database", "label": "Graph Database"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

@@ -6,7 +6,9 @@
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses: [[Spatial Audio]], [[Encryption]]
+  - Bridges To: [[Virtual Collaboration]], [[Telecollaboration]]
+  - Related To: [[Immersive Communication]], [[Virtual Workspace]]
 
 - ### Content
 

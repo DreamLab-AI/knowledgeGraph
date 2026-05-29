@@ -1,11 +1,13 @@
 - ### Definition
-  - A term index is a comprehensive reference catalogue mapping domain terminology, identifiers, and conceptual relationships within ontologies, enabling discovery and navigation of complex knowledge spaces across metaverse, blockchain, and robotics ecosystems. Well-structured indices like the [[RoboticsOntology|robotics ontology term index]] organisation provide hierarchical classification, cross-references, and semantic linking that facilitate knowledge retrieval, API design, and [[KnowledgeGraphIntegration|knowledge graph integration]]. These catalogues serve as both user-facing navigation aids and machine-readable specifications supporting automated reasoning, [[OWLOntology|OWL ontology]] validation, and [[SPARQLQuery|SPARQL query]] optimisation.
+  - A Term Index is a comprehensive reference catalogue mapping domain terminology, identifiers, and conceptual relationships within ontologies, enabling discovery and navigation of complex knowledge spaces across metaverse, blockchain, and robotics ecosystems. Well-structured indices like the [[RoboticsOntology|robotics ontology term index]] organisation provide hierarchical classification, cross-references, and semantic linking that facilitate knowledge retrieval, API design, and [[KnowledgeGraphIntegration|knowledge graph integration]]. These catalogues serve as both user-facing navigation aids and machine-readable specifications supporting automated reasoning, [[OWLOntology|OWL ontology]] validation, and [[SPARQLQuery|SPARQL query]] optimisation.
 - ### Semantic Classification
   - owl-class:: spatial-computing:TERMINDEX
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart:: Ontology, Domain Ontology
+  - enables:: Knowledge Graph, SPARQL
+  - relatedTo:: Semantic Web, Linked Data, Metaverse Domain
 - ### Content
   - Term indices provide hierarchical, cross-referenced organisation of domain terminology within ontologies, enabling discovery, navigation, and machine-readable specifications supporting automated reasoning and knowledge graph integration.
   - ### Original Content

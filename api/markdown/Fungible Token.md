@@ -46,7 +46,7 @@ public:: true
   "@id": "urn:ngm:class:fungible-token",
   "@type": "Class",
   "label": "Fungible Token",
-  "definition": "A token where each unit is identical and interchangeable with any other unit of the same token, like traditional currencies. Each token holds equal value to another token of the same type.",
+  "definition": "A blockchain token where each unit is identical and fully interchangeable with any other unit of the same type, analogous to traditional fiat currency. Fungibility is enforced at the protocol level via standards such as ERC-20, ensuring uniform value and seamless divisibility across all holders.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -59,7 +59,23 @@ public:: true
       "label": "Token"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:erc-20", "label": "ERC-20"},
+      {"@id": "urn:ngm:class:cryptocurrency", "label": "Cryptocurrency"},
+      {"@id": "urn:ngm:class:stablecoin", "label": "Stablecoin"},
+      {"@id": "urn:ngm:class:digital-currency", "label": "Digital Currency"},
+      {"@id": "urn:ngm:class:deflationary-token", "label": "Deflationary Token"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:nft", "label": "NFT"},
+      {"@id": "urn:ngm:class:semi-fungible-token", "label": "Semi-Fungible Token"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

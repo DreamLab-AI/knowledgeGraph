@@ -54,7 +54,7 @@ public:: true
   "@id": "urn:ngm:class:cryptocurrency-remuneration",
   "@type": "Class",
   "label": "Cryptocurrency Remuneration",
-  "definition": "\"The payment of remote workers, freelancers, or distributed team members in cryptocurrency (Bitcoin, ereum, stablecoins) rather than traditional fiat currency, enabling borderless, instant, low-fee transactions that bypass traditional banking systems whilst providing financial inclusion for unban...",
+  "definition": "Cryptocurrency remuneration is the practice of paying remote workers, freelancers, or distributed team members in digital assets — including Bitcoin, Ethereum, or fiat-pegged stablecoins — rather than traditional currency. It enables borderless, near-instant settlement at low transaction cost, bypassing correspondent banking infrastructure and extending financial access to unbanked populations. Compliance with local payroll tax, AML/KYC, and employment law obligations remains essential.",
   "domain": "distributed-collaboration",
   "maturity": "emerging",
   "subClassOf": [
@@ -67,11 +67,36 @@ public:: true
       "label": "Cryptocurrency"
     }
   ],
-  "quality": 0.5,
+  "quality": 0.75,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:stablecoin", "label": "Stablecoin"},
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
+      {"@id": "urn:ngm:class:lightning-network", "label": "Lightning Network"},
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:financial-inclusion", "label": "Financial Inclusion"},
+      {"@id": "urn:ngm:class:distributed-work", "label": "Distributed Work"},
+      {"@id": "urn:ngm:class:micropayments", "label": "Micropayments"},
+      {"@id": "urn:ngm:class:cross-border-payments", "label": "Cross-Border Payments"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:aml-kyc-compliance", "label": "AML KYC Compliance"},
+      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
+      {"@id": "urn:ngm:class:tax-treatment-crypto", "label": "Tax Treatment Crypto"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:telecollaboration", "label": "Telecollaboration"},
+      {"@id": "urn:ngm:class:blockchain-collaboration", "label": "Blockchain Collaboration"},
+      {"@id": "urn:ngm:class:smart-contract-coordination", "label": "Smart Contract Coordination"},
+      {"@id": "urn:ngm:class:decentralized-autonomous-organization", "label": "Decentralized Autonomous Organization"}
+    ]
   }
 }
 ```

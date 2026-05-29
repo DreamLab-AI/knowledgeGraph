@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:identity-and-access-management",
   "domain": "infrastructure",
-  "definition": "A security discipline comprising the policies, technologies, and processes that govern who can access which resources, encompassing authentication, authorisation, and lifecycle management.",
+  "definition": "Identity and Access Management (IAM) is a security discipline comprising the frameworks, policies, technologies, and processes that govern how digital identities are created, authenticated, authorised, and governed throughout their lifecycle within an organisation. IAM systems enforce the principle of least privilege by ensuring that subjects\u2014users, applications, and service accounts\u2014can access only the resources required for their legitimate purpose. Modern IAM encompasses directory services, multi-factor authentication, role-based and attribute-based access control, privileged access management, and federated identity across organisational boundaries.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-security-and-identity",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:oauth-2-0",
+        "label": "OAuth 2.0"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "id": "urn:ngm:class:single-sign-on",
+        "label": "Single Sign-On"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

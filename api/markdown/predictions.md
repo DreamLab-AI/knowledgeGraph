@@ -1,12 +1,14 @@
 - ### Definition
-  - Predictions is a concept within the ngm domain.
+  - A curated set of near-term forecasts for the generative AI video and creative-tool landscape, covering model aggregators, story-level tooling, template ecosystems, real-time trend integration, open-source convergence, inference cost reduction, specialised models, and the social/legal challenges of AI-generated content. These predictions frame strategic planning for platforms operating in the AI creative economy.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:Predictions
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - relatedTo: [[Generative AI]], [[AI Video]], [[Video Generation]]
+  - enables: [[AI-Generated Content Disclosure]]
+  - contrastsWith: [[Proprietary AI Video]]
 
 - ### Content
   - Applications

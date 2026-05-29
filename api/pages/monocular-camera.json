@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:monocular-camera",
   "domain": "robotics",
-  "definition": "Monocular camera uses single lens to capture 2D images.",
+  "definition": "A Monocular Camera is a single-lens imaging sensor that captures 2D intensity or colour frames from a single viewpoint, serving as a primary perceptual modality in robotics, autonomous vehicles, and computer vision systems. Unlike stereo or depth cameras, it lacks intrinsic depth measurement capability, requiring computational techniques such as structure-from-motion, visual odometry, or learned depth estimation to recover 3D scene geometry.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-perception",
@@ -17,21 +17,82 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
+      },
+      {
+        "id": "urn:ngm:class:camera-parameters",
+        "label": "Camera Parameters"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:visual-odometry",
+        "label": "Visual Odometry"
+      },
+      {
+        "id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      },
+      {
+        "id": "urn:ngm:class:scene-understanding",
+        "label": "Scene Understanding"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:stereo-camera",
+        "label": "Stereo Camera"
+      },
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      },
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:depth-estimation",
+        "label": "Depth Estimation"
+      },
+      {
+        "id": "urn:ngm:class:structure-from-motion",
+        "label": "Structure-from-Motion"
+      },
+      {
+        "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      }
+    ]
   },
   "wikilinks": [
     {

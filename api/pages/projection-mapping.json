@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:projection-mapping",
   "domain": "spatial-computing",
-  "definition": "Projection Mapping is a spatial computing concept and a type of spatial-computing.",
+  "definition": "Projection Mapping is a spatial AR display technique that aligns projected imagery precisely onto three-dimensional physical surfaces, transforming arbitrary geometry into dynamic visual canvases. It requires real-time rendering of geometry-corrected frames, spatial calibration, and surface modelling, enabling immersive installations, virtual production environments, and location-based XR experiences.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-display-and-rendering",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "id": "urn:ngm:class:immersive-entertainment",
+        "label": "Immersive Entertainment"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:ar-technology",
+        "label": "AR Technology"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

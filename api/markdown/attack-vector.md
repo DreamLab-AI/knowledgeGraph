@@ -6,6 +6,12 @@
   - owl-role:: Concept
 
 - ### Relationships
+  - **requires** [[Vulnerability]] — an attack vector exploits one or more vulnerabilities
+  - **requires** [[Threat Actor]] — attack vectors are exercised by threat actors
+  - **contrastsWith** [[Resilience]] — resilience is the defensive counterpart to attack vectors
+  - **contrastsWith** [[Security]] — security controls aim to block or detect attack vectors
+  - **relatedTo** [[Risk]] — successful exploitation of an attack vector realises risk
+  - **relatedTo** [[Adversarial Robustness]] — AI-specific attack vectors are countered by robustness
   - is-subclass-of:: [[Artificial Intelligence]]
   - bridges-to:: [[Blockchain]] (domain: bc)
 

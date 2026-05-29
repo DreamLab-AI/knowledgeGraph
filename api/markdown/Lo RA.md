@@ -44,7 +44,7 @@ public:: true
   "label": "Lo RA",
   "definition": "A parameter-efficient fine-tuning mod that freezes pre-trained weights and injects trainable low-rank decomposition matrices into each layer of the transformer, dramatically reducing trainable parameters whilst maintaining performance.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
@@ -55,6 +55,22 @@ public:: true
       "label": "Parameter Efficient Fine-Tuning"
     }
   ],
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:parameter-efficient-fine-tuning", "label": "Parameter-Efficient Fine-Tuning"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
+      {"@id": "urn:ngm:class:instruction-tuning", "label": "Instruction Tuning"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:knowledge-distillation", "label": "Knowledge Distillation"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -99,7 +115,12 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - partOf [[Parameter-Efficient Fine-Tuning]]
+  - requires [[Transformer Architecture]]
+  - requires [[Large Language Models]]
+  - enables [[Fine Tuning]]
+  - enables [[Instruction Tuning]]
+  - contrastsWith [[Knowledge Distillation]]
 
 - ### Content
   - A parameter-efficient fine-tuning method that freezes pre-trained weights and injects trainable low-rank decomposition matrices into each layer of the transformer, dramatically reducing trainable parameters whilst maintaining performance. LoRA represents weight updates as the product of two low-rank matrices.

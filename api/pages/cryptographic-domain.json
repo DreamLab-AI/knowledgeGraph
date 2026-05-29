@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:cryptographic-domain",
   "domain": "blockchain",
-  "definition": "The CryptographicDomain represents a specialized sub-domain within blockchain technology that encompasses all cryptographic primitives, protocols, and mechanisms essential to distributed ledger systems.",
+  "definition": "The Cryptographic Domain represents a specialised sub-domain within blockchain technology encompassing all cryptographic primitives, protocols, and mechanisms essential to distributed ledger systems. It includes hash functions, digital signature schemes, zero-knowledge proof systems, threshold cryptography, and post-quantum approaches. Cryptography is not merely an implementation detail but the foundational layer enabling immutability, verifiable ownership, and privacy-preserving computation across decentralised networks.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-cryptographic-primitive",
@@ -17,18 +17,58 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:zk-snarks",
+        "label": "ZK-SNARKs"
+      },
+      {
+        "id": "urn:ngm:class:zk-starks",
+        "label": "ZK-STARKs"
+      },
+      {
+        "id": "urn:ngm:class:ecdsa",
+        "label": "ECDSA"
+      },
+      {
+        "id": "urn:ngm:class:sha-256",
+        "label": "SHA-256"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      },
+      {
+        "id": "urn:ngm:class:privacy-preserving-blockchain",
+        "label": "Privacy Preserving Blockchain"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": []

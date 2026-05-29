@@ -1,5 +1,5 @@
 - ### Definition
-  - A small neural network layer or module added on top of a pre-trained model to adapt it for specific downstream tasks. Task-specific heads process the pre-trained model's representations to produce task-appropriate outputs (classifications, spans, sequences, etc.).
+  - A Task-Specific Head is a shallow neural network module appended to a frozen or fine-tuned pre-trained model to adapt its representations for a particular downstream task. Architecturally it may be a single linear projection for classification, start/end span predictors for question answering, or a lightweight decoder for generation; it is randomly initialised and optimised during fine-tuning whilst the shared base model provides task-agnostic representations.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:TaskSpecificHead
@@ -7,7 +7,10 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires:: Fine Tuning, Transfer Learning
+  - uses:: Neural Network Layer, Machine Learning Model
+  - relatedTo:: Parameter-Efficient Fine-Tuning, Knowledge Distillation
+  - enables:: AI Technique
 
 - ### Content
   - A small neural network layer or module added on top of a pre-trained model to adapt it for specific downstream tasks. Task-specific heads process the pre-trained model's representations to produce task-appropriate outputs (classifications, spans, sequences, etc.).

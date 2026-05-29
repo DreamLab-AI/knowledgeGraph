@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:rb-0065-visual-servoing",
   "domain": "robotics",
-  "definition": "visual servoing is a robotics and autonomous systems concept and a type of Feedback Control.",
+  "definition": "Visual servoing is a robot control technique that uses real-time visual feedback from a camera to regulate the motion of a robot toward a goal configuration. Image-based visual servoing (IBVS) minimises an image-feature error directly, while position-based visual servoing (PBVS) reconstructs 3-D pose from vision before computing Cartesian control signals. The approach is widely used in manipulation, assembly, and tracking tasks where precise end-effector placement relative to a visually perceived target is required.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-perception",
@@ -17,21 +17,56 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:rb-0047-feedback-control",
+        "label": "rb 0047 feedback control"
+      },
+      {
+        "id": "urn:ngm:class:rb-0030-jacobian-matrix",
+        "label": "rb 0030 jacobian matrix"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:rb-0068-vision-system",
+        "label": "rb 0068 vision system"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rb-0064-computed-torque-control",
+        "label": "rb 0064 computed torque control"
+      },
+      {
+        "id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      },
+      {
+        "id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      }
+    ]
   },
   "wikilinks": [
     {

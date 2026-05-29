@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:anti-money-laundering",
   "domain": "infrastructure",
-  "definition": "Anti-Money Laundering (AML) encompasses the laws, regulations, and procedures designed to prevent criminals from disguising illegally obtained funds as legitimate income.",
+  "definition": "Anti-Money Laundering (AML) encompasses the legislative frameworks, regulatory obligations, and operational procedures that financial institutions and other regulated entities must implement to detect, prevent, and report the layering and integration of proceeds from criminal activity. AML programmes typically include customer due diligence (CDD), enhanced due diligence (EDD) for high-risk customers, transaction monitoring, suspicious activity reporting (SAR), and sanctions screening. International standards are set by the Financial Action Task Force (FATF) and transposed into national law by member jurisdictions.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-legal-and-regulatory",
@@ -14,20 +14,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockchain-compliance",
+        "label": "Blockchain Compliance"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

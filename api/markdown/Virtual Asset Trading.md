@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:virtual-asset-trading",
   "@type": "Class",
   "label": "Virtual Asset Trading",
-  "definition": "The exchange, purchase, and sale of digital assets including cryptocurrencies, NFTs, virtual land, in-game items, and other tokenized value through marketplaces, exchanges, and peer-to-peer transactions.",
+  "definition": "The exchange, purchase, and sale of digital assets — including cryptocurrencies, NFTs, virtual land parcels, in-game items, and other tokenised value — through centralised exchanges, decentralised exchanges (DEXs), NFT marketplaces, and peer-to-peer transactions. Trading is governed by AML/KYC requirements, FATF Travel Rule obligations, and emerging securities classification frameworks that vary by jurisdiction.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -59,7 +60,24 @@ public:: true
       "label": "Virtual Economy"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:nft", "label": "NFT"},
+      {"@id": "urn:ngm:class:nft-marketplace", "label": "NFT Marketplace"},
+      {"@id": "urn:ngm:class:decentralized-exchange", "label": "Decentralized Exchange"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:aml-kyc-compliance", "label": "AML KYC Compliance"},
+      {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:virtual-economy-infrastructure", "label": "Virtual Economy Infrastructure"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -109,6 +127,10 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Virtual Economy]]
+  - requires:: [[Blockchain]], [[Smart Contract]]
+  - uses:: [[NFT]], [[NFT Marketplace]], [[Decentralized Exchange]]
+  - dependsOn:: [[AML KYC Compliance]], [[Digital Asset]]
+  - relatedTo:: [[Virtual Economy Infrastructure]]
 
 - ### Content
 

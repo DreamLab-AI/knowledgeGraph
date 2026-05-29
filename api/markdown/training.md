@@ -7,7 +7,12 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Training Data]]
+  - requires [[Gradient Descent]]
+  - enables [[Inference]]
+  - enables [[Machine Learning Model]]
+  - uses [[Backpropagation]]
+  - uses [[Regularisation]]
 
 - ### Content
   - ### Primary Definition

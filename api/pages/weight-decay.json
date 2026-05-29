@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:weight-decay",
   "domain": "artificial-intelligence",
-  "definition": "A regularisation technique that adds a penalty proportional to the magnitude of weights to the loss function, encouraging smaller weight values. Weight decay (L2 regularisation) prevents overfitting by limiting model complexity and promoting simpler solutions.",
+  "definition": "A regularisation technique that adds a penalty proportional to the L2 norm of model weights to the loss function, discouraging large weight magnitudes and thereby limiting model complexity. Weight decay prevents overfitting, promotes simpler generalisable solutions, and in optimisers such as AdamW is implemented directly in the weight update step rather than via loss augmentation.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -18,19 +18,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:regularisation",
+        "label": "Regularisation"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:dropout",
+        "label": "Dropout"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:optimiser",
+        "label": "Optimiser"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:training",
+        "label": "Training"
+      }
+    ],
     "relatedTo": []
   },
   "wikilinks": [

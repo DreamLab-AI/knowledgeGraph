@@ -46,16 +46,34 @@ public:: true
   "@id": "urn:ngm:class:rb-0038-compliance",
   "@type": "Class",
   "label": "rb 0038 compliance",
-  "definition": "compliance is a robotics and autonomous systems concept and a type of robotics.",
+  "definition": "In robotics, compliance is the mechanical property of a robot joint or end-effector describing its tendency to yield under applied forces or torques, quantified as the inverse of stiffness. Compliant behaviour is essential for safe human-robot interaction, allowing robots to absorb contact forces without rigid collision, and is actively exploited in impedance and admittance control strategies to achieve gentle, force-sensitive manipulation.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-actuation-and-control",
       "label": "Actuation and Control"
     }
   ],
-  "quality": 0.5,
+  "quality": 0.7,
+  "relations": {
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:rb-0039-stiffness", "label": "rb 0039 stiffness"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:rb-0056-impedance-control", "label": "rb 0056 impedance control"},
+      {"@id": "urn:ngm:class:rb-0057-admittance-control", "label": "rb 0057 admittance control"},
+      {"@id": "urn:ngm:class:rb-0041-inertia", "label": "rb 0041 inertia"},
+      {"@id": "urn:ngm:class:rb-0026-robot-joint", "label": "rb 0026 robot joint"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"},
+      {"@id": "urn:ngm:class:rb-0053-force-control", "label": "rb 0053 force control"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:robot-safety", "label": "Robot Safety"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

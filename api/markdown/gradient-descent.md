@@ -7,7 +7,11 @@
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires:: [[Backpropagation]]
+  - requires:: [[Loss Function]]
+  - enables:: [[Model Training]]
+  - enables:: [[Fine Tuning]]
+  - uses:: [[Hyperparameter]]
 
 - ### Content
   - ### Primary Definition

@@ -66,7 +66,7 @@ public:: true
   "@id": "urn:ngm:class:zero-knowledge-proof",
   "@type": "Class",
   "label": "Zero-Knowledge Proof",
-  "definition": "Privacy-preserving verification within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "A cryptographic protocol allowing one party (prover) to convince another party (verifier) that a statement is true without revealing any information beyond the validity of the statement itself. Zero-knowledge proofs provide privacy-preserving verification in blockchain systems, enabling private transactions, identity attestation, and scalable computation via ZK-rollups.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -83,7 +83,27 @@ public:: true
       "label": "CryptographicPrimitive"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:zk-snarks", "label": "ZK-SNARKs"},
+      {"@id": "urn:ngm:class:zk-starks", "label": "ZK-STARKs"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:cryptographic-commitment", "label": "Cryptographic Commitment"},
+      {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"},
+      {"@id": "urn:ngm:class:elliptic-curve-cryptography", "label": "Elliptic Curve Cryptography"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:differential-privacy", "label": "Differential Privacy"},
+      {"@id": "urn:ngm:class:zero-knowledge-machine-learning", "label": "Zero-Knowledge Machine Learning"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:homomorphic-encryption", "label": "Homomorphic Encryption"},
+      {"@id": "urn:ngm:class:cryptographic-verification", "label": "Cryptographic Verification"},
+      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public-Key Cryptography"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

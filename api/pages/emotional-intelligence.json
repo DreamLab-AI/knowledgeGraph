@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:emotional-intelligence",
   "domain": "artificial-intelligence",
-  "definition": "Emotional Intelligence is a artificial intelligence concept and a type of Artificial Intelligence.",
+  "definition": "Emotional Intelligence in AI refers to the capacity of artificial systems to recognise, interpret, and respond appropriately to human emotional states, expressed through text, voice, facial expression, or physiological signals. It extends classical AI with affective computing capabilities, enabling machines to calibrate their outputs based on a user's emotional context. Applications span conversational agents, digital humans, therapeutic tools, and immersive experience design where user engagement depends on emotionally-resonant interaction.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-research-area",
@@ -13,21 +13,103 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:sentiment-analysis",
+        "label": "Sentiment Analysis"
+      },
+      {
+        "id": "urn:ngm:class:emotion-aware-interaction",
+        "label": "Emotion Aware Interaction"
+      },
+      {
+        "id": "urn:ngm:class:emotional-analytics-engine",
+        "label": "Emotional Analytics Engine"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:empathetic-ai",
+        "label": "Empathetic AI"
+      },
+      {
+        "id": "urn:ngm:class:emotional-immersion",
+        "label": "Emotional Immersion"
+      },
+      {
+        "id": "urn:ngm:class:hyper-personalisation",
+        "label": "Hyper personalisation"
+      },
+      {
+        "id": "urn:ngm:class:personalized-virtual-experiences",
+        "label": "Personalized Virtual Experiences"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-human-technology",
+        "label": "Digital Human Technology"
+      },
+      {
+        "id": "urn:ngm:class:behavioral-modeling",
+        "label": "Behavioral Modeling"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-architecture",
+        "label": "Cognitive Architecture"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "id": "urn:ngm:class:digital-humans",
+        "label": "Digital Humans"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:attention-aware-interaction",
+        "label": "Attention Aware Interaction"
+      },
+      {
+        "id": "urn:ngm:class:social-presence",
+        "label": "Social Presence"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -1,5 +1,5 @@
 - ### Definition
-  - Global Illumination is a concept within the mv domain.
+  - Global Illumination (GI) simulates all light interactions in a scene — direct and indirect — producing physically plausible colour bleeding, soft shadows, and caustics. Techniques range from offline radiosity and photon mapping to real-time approximations such as voxel cone tracing and hardware-accelerated ray tracing.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:GlobalIllumination
@@ -7,6 +7,11 @@
 
 - ### Relationships
   - is-subclass-of:: [[Metaverse]]
+  - requires [[Ray Tracing]]
+  - requires [[Rendering Pipeline]]
+  - uses [[Compute Shader]]
+  - uses [[Physically Based Rendering]]
+  - contrastsWith [[Rasterization]]
 
 - ### Content
 

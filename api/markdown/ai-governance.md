@@ -8,6 +8,12 @@
 - ### Relationships
   - is-subclass-of:: ['owl:Thing']
   - bridges-to:: [[Smart Contract]] (domain: bc)
+  - requires:: [[AI Ethics]]
+  - requires:: [[Regulatory Compliance]]
+  - supports:: [[Responsible AI]]
+  - supports:: [[AI Safety]]
+  - relatedTo:: [[Risk Management]]
+  - relatedTo:: [[AI Alignment]]
 
 - ### Content
 

@@ -98,7 +98,7 @@ public:: true
   "@id": "urn:ngm:class:cryptographic-system",
   "@type": "Class",
   "label": "Cryptographic System",
-  "definition": "A Cryptographic System is an integrated framework of mathematical algorithms, protocols, and mechanisms designed to provide information security properties including confidentiality, integrity, authentication, and non-repudiation in adversarial environments.",
+  "definition": "An integrated framework of mathematical algorithms, protocols, and mechanisms designed to provide information security properties including confidentiality, integrity, authentication, and non-repudiation in adversarial environments. Blockchain cryptographic systems enable trustless operation through mathematical guarantees rather than trusted intermediaries.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -111,7 +111,27 @@ public:: true
       "label": "Blockchain Entity"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
+      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
+      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public-Key Cryptography"},
+      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
+      {"@id": "urn:ngm:class:encryption", "label": "Encryption"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"},
+      {"@id": "urn:ngm:class:cryptographic-key-management", "label": "Cryptographic Key Management"},
+      {"@id": "urn:ngm:class:post-quantum-cryptography", "label": "Post-Quantum Cryptography"},
+      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"},
+      {"@id": "urn:ngm:class:cryptographic-security", "label": "Cryptographic Security"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"},
+      {"@id": "urn:ngm:class:cryptographic-verification", "label": "Cryptographic Verification"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

@@ -37,15 +37,30 @@ public:: true
   "@id": "urn:ngm:class:profile-management",
   "@type": "Class",
   "label": "Profile Management",
-  "definition": "Profile Management is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Profile Management encompasses the systems and services for creating, storing, updating, and securing user profiles within metaverse and digital platforms. It covers avatar customisation preferences, personal data storage, authentication credentials, and preference settings, enabling persistent personalised experiences across sessions and across interoperable environments.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-security-and-identity",
       "label": "Security and Identity"
     }
   ],
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:avatar-customization", "label": "Avatar Customization"},
+      {"@id": "urn:ngm:class:avatar-system", "label": "Avatar System"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:identity-management", "label": "Identity Management"},
+      {"@id": "urn:ngm:class:authentication", "label": "Authentication"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:personal-data-store", "label": "Personal Data Store"},
+      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -76,14 +91,16 @@ public:: true
 
 
 - ### Definition
-  - ProfileManagement is a concept within the ngm domain.
+  - Profile Management encompasses the systems and services for creating, storing, updating, and securing user profiles within metaverse and digital platforms. It covers avatar customisation preferences, personal data storage, authentication credentials, and preference settings, enabling persistent personalised experiences across sessions and across interoperable environments.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:ProfileManagement
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - enables: [[Avatar Customization]], [[Avatar System]]
+  - uses: [[Identity Management]], [[Authentication]]
+  - dependsOn: [[Personal Data Store]], [[Digital Identity]]
 
 - ### Content
   # ProfileManagement

@@ -33,15 +33,29 @@ public:: true
   "@id": "urn:ngm:class:revision-list",
   "@type": "Class",
   "label": "Revision List",
-  "definition": "Revision List is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A Revision List is a curated, task-tracked syllabus of technologies, frameworks, and concepts that a practitioner aims to learn or revisit, typically structured as a prioritised backlog with completion states. In a data science and AI context, such a list spans programming languages, ML frameworks, cloud platforms, DevOps tooling, and conceptual foundations such as deep learning, NLP, and reinforcement learning. It functions as a personal knowledge-gap audit and learning roadmap.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:machine-learning-pipeline", "label": "Machine Learning Pipeline"},
+      {"@id": "urn:ngm:class:python-and-py-torch", "label": "Python and PyTorch"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:knowledge-management", "label": "Knowledge Management"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -72,14 +86,16 @@ public:: true
 
 
 - ### Definition
-  - Revision List is a concept within the ngm domain.
+  - A Revision List is a curated, task-tracked syllabus of technologies, frameworks, and concepts that a practitioner aims to learn or revisit, typically structured as a prioritised backlog with completion states. In a data science and AI context, such a list spans programming languages, ML frameworks, cloud platforms, DevOps tooling, and conceptual foundations such as deep learning, NLP, and reinforcement learning. It functions as a personal knowledge-gap audit and learning roadmap.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:RevisionList
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **hasPart**: Machine Learning, Deep Learning
+  - **relatedTo**: Machine Learning Pipeline, Python and PyTorch
+  - **enables**: Knowledge Management
 
 - ### Content
   - from here [xandie985/data-scientist-roadmap2024 (github.com)](https://github.com/xandie985/data-scientist-roadmap2024?tab=readme-ov-file)

@@ -33,16 +33,35 @@ public:: true
   "@id": "urn:ngm:class:p-doom",
   "@type": "Class",
   "label": "p(doom)",
-  "definition": "p(doom) is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "p(doom) is an informal probabilistic estimate, expressed as a value between 0 and 1, of the likelihood that advanced AI development leads to an existential catastrophe for humanity—typically through loss of control over a misaligned superintelligent system. The metric is widely discussed in AI safety research communities as a shorthand for aggregating personal credences about existential risk, and is distinct from rigorous formal risk models, serving primarily as a rhetorical and community-calibration tool.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
-  "quality": 0.35,
+  "quality": 0.7,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
+      {"@id": "urn:ngm:class:ai-risk", "label": "AI Risk"},
+      {"@id": "urn:ngm:class:artificial-superintelligence", "label": "artificial superintelligence"},
+      {"@id": "urn:ngm:class:safety-and-alignment", "label": "Safety and alignment"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:bayesian-inference", "label": "Bayesian Inference"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:value-alignment", "label": "Value Alignment"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"},
+      {"@id": "urn:ngm:class:history-and-path-to-agi", "label": "History and Path to AGI"},
+      {"@id": "urn:ngm:class:uk-ai-safety-institute", "label": "UK AI Safety Institute"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

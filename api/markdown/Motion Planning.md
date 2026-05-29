@@ -84,13 +84,26 @@ public:: true
   "label": "Motion Planning",
   "definition": "Motion Planning extends path planning by incorporating robot dynamics, control constraints, and time-parametrisation to generate dynamically feasible trajectories that account for velocity, acceleration, jerk, and actuator limitations.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-navigation-and-planning",
       "label": "Navigation and Planning"
     }
   ],
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:path-planning", "label": "Path Planning"},
+      {"@id": "urn:ngm:class:control-theory", "label": "Control Theory"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:autonomous-vehicle", "label": "Autonomous Vehicle"},
+      {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -185,7 +198,11 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - partOf:: [[Autonomous Navigation]]
+  - requires:: [[Path Planning]]
+  - requires:: [[Control Theory]]
+  - enables:: [[Autonomous Vehicle]]
+  - enables:: [[Autonomous Robot]]
 
 - ### Content
   - Motion Planning extends path planning by incorporating robot dynamics, control constraints, and time-parametrisation to generate dynamically feasible trajectories that account for velocity, acceleration, jerk, and actuator limitations. Motion planning produces executable control sequences that guide robots and autonomous vehicles from initial to goal states whilst satisfying kinodynamic constraints and optimising performance metrics.

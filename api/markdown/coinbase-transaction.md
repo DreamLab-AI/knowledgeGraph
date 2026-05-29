@@ -1,15 +1,8 @@
 - ### Definition
-  - Block reward transaction within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
-
-- ### Semantic Classification
-  - owl-class:: blockchain:CoinbaseTransaction
-  - owl-role:: Object
-  - owl-inferred:: blockchain:VirtualObject
-  - belongs-to-domain:: [[ConsensusDomain]]
-  - implemented-in-layer:: [[ProtocolLayer]]
+  The first transaction in every blockchain block, created by the miner or block producer with no inputs, that issues the block reward plus accumulated transaction fees to the miner's address. The coinbase transaction is the sole mechanism by which new cryptocurrency enters circulation according to protocol-defined issuance rules.
 
 - ### Relationships
-  - is-subclass-of:: [[Blockchain Entity]], [[ConsensusProtocol]]
+  The coinbase transaction **has part** Block Reward and Transaction Fee — these are the two components aggregated into the output value. It is **part of** Blockchain Transaction (as a special subtype) and the Blockchain Network ledger. It **requires** Mining (or equivalent block production) and a Consensus Mechanism to determine which miner earns it. It **enables** Mining Reward distribution and the ongoing supply of Cryptocurrency. It is **related to** Proof Of Work (where coinbase is mined) and Blockchain Protocol (which defines issuance schedules).
 
 - ### Content
 

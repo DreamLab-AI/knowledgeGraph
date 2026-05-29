@@ -7,7 +7,10 @@
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires**: [[Backpropagation]], [[Neural Network]]
+  - **enables**: [[Recurrent Neural Network]], [[Deep Learning]]
+  - **uses**: [[Gradient Descent]], [[Loss Function]]
+  - **relatedTo**: [[Optimiser]], [[Large Language Models]]
 
 - ### Content
   - A technique that limits the magnitude of gradients during backpropagation to prevent exploding gradients and training instability. Gradient clipping rescales gradients when their norm exceeds a threshold, enabling stable training of deep networks, especially recurrent architectures.

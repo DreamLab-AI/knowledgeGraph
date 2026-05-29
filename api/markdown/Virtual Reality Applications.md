@@ -42,9 +42,10 @@ public:: true
   "@id": "urn:ngm:class:virtual-reality-applications",
   "@type": "Class",
   "label": "Virtual Reality Applications",
-  "definition": "Virtual Reality Applications is a type of Virtual Reality in the spatial computing domain.",
+  "definition": "Software programmes and use-case deployments that leverage virtual reality technology to deliver immersive, interactive experiences for domains including healthcare, education, enterprise training, entertainment, and social interaction, running on dedicated VR hardware or spatial computing platforms.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -55,11 +56,46 @@ public:: true
       "label": "Virtual Reality"
     }
   ],
-  "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:virtual-reality-platform",
+        "label": "Virtual Reality Platform"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-world-infrastructure",
+        "label": "Virtual World Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:virtual-experience",
+        "label": "Virtual Experience"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-clinic",
+        "label": "Virtual Clinic"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "@id": "urn:ngm:class:education-metaverse",
+        "label": "Education Metaverse"
+      }
+    ]
   }
 }
 ```
@@ -91,14 +127,20 @@ public:: true
 
 
 - ### Definition
-  - Virtual Reality Applications is a concept within the metaverse domain. Further enrichment pending.
+  - Software programmes and use-case deployments that leverage virtual reality technology to deliver immersive, interactive experiences for domains including healthcare, education, enterprise training, entertainment, and social interaction, running on dedicated VR hardware or spatial computing platforms.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:VirtualRealityApplications
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Requires: [[Virtual Reality Platform]]
+  - Requires: [[Virtual World Infrastructure]]
+  - Enables: [[Virtual Experience]]
+  - Enables: [[Virtual Clinic]]
+  - Related To: [[Extended Reality]]
+  - Related To: [[Immersive Experience]]
+  - Related To: [[Education Metaverse]]
 
 - ### Content
 

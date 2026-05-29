@@ -37,9 +37,10 @@ public:: true
   "@id": "urn:ngm:class:video-streaming",
   "@type": "Class",
   "label": "Video Streaming",
-  "definition": "Video Streaming is a technology infrastructure concept and a type of Network Infrastructure.",
+  "definition": "Video Streaming is the continuous, real-time transmission of encoded video data over a network to a client that decodes and renders the content progressively, without requiring the full file to be downloaded first. In metaverse and virtual production contexts it encompasses live streaming, adaptive bitrate (ABR) delivery, 360-degree video, and volumetric video streaming, each with distinct latency, bandwidth, and codec requirements.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-network-and-comms",
@@ -50,7 +51,22 @@ public:: true
       "label": "Network Infrastructure"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:network-infrastructure", "label": "Network Infrastructure"},
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:virtual-production", "label": "Virtual Production"},
+      {"@id": "urn:ngm:class:metaverse-platform", "label": "Metaverse Platform"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:bandwidth-adaptation", "label": "Bandwidth Adaptation"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -80,14 +96,17 @@ public:: true
 
 
 - ### Definition
-  - VideoStreaming is a concept within the ngm domain.
+  - **Video Streaming** is the continuous, real-time transmission of encoded video data over a network to a client that decodes and renders content progressively, without requiring a full download. In metaverse and virtual production contexts it encompasses live streaming, adaptive bitrate (ABR) delivery, 360-degree video, and volumetric video streaming, each with distinct latency, bandwidth, and codec requirements.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:VideoStreaming
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires**: [[Network Infrastructure]], [[Edge Computing]] — low-latency streaming depends on high-bandwidth networks and edge nodes close to viewers
+  - **enables**: [[Virtual Production]], [[Metaverse Platform]] — streaming is the delivery mechanism for virtual production output and metaverse live events
+  - **uses**: [[Real-Time Rendering]] — cloud-rendered or in-engine frames are encoded and streamed to clients
+  - **relatedTo**: [[Bandwidth Adaptation]] — adaptive bitrate algorithms dynamically adjust quality to available bandwidth
 
 - ### Content
   # VideoStreaming

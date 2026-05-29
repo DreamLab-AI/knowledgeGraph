@@ -8,6 +8,10 @@
 
 - ### Relationships
   - is-subclass-of:: [[Context-Aware Computing]]
+  - **requires**: Context Awareness, Sensor Fusion
+  - **enables**: Personalized Virtual Experiences, Predictive Personalization
+  - **uses**: Preference Learning
+  - **relatedTo**: User Experience
 
 - ### Content
 

@@ -58,15 +58,29 @@ public:: true
   "@id": "urn:ngm:class:generative-adversarial-network",
   "@type": "Class",
   "label": "Generative Adversarial Network",
-  "definition": "Generative Adversarial Network is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "A Generative Adversarial Network (GAN) is a deep learning architecture in which a generator network and a discriminator network are trained simultaneously in an adversarial min-max game: the generator learns to produce synthetic samples indistinguishable from real data, while the discriminator learns to detect fakes. GANs underpin high-fidelity image synthesis, video generation, data augmentation, and synthetic data creation across domains including healthcare, finance, and computer vision.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-model-architecture",
       "label": "AI Model Architecture"
     }
   ],
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"},
+      {"@id": "urn:ngm:class:synthetic-data", "label": "Synthetic Data"},
+      {"@id": "urn:ngm:class:synthetic-media", "label": "Synthetic Media"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
+      {"@id": "urn:ngm:class:autoencoder", "label": "Autoencoder"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -137,7 +151,12 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - partOf [[Generative AI]]
+  - enables [[Image Generation]]
+  - enables [[Synthetic Data]]
+  - enables [[Synthetic Media]]
+  - contrastsWith [[Diffusion Model]]
+  - contrastsWith [[Autoencoder]]
 
 - ### Content
   - ### Primary Definition

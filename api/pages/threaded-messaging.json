@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:threaded-messaging",
   "domain": "distributed-collaboration",
-  "definition": "Asynchronous communication pattern where messages are organized into conversation threads, enabling contextual discussions and reducing notification overload.",
+  "definition": "Threaded Messaging is a structured asynchronous communication pattern in which replies are grouped beneath a parent message, forming discrete conversation threads that preserve context and reduce noise in shared channels. By isolating discussions, it enables parallel workstreams within a single collaboration platform while keeping notification volume manageable for participants. Platforms such as Slack and Discord popularised the pattern, which is now foundational to modern digital workplace communication.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:dc-communication",
@@ -17,21 +17,59 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:asynchronous-collaboration",
+        "label": "Asynchronous Collaboration"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:remote-collaboration",
+        "label": "Remote Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:asynchronous-collaboration",
+        "label": "Asynchronous Collaboration"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:collaboration-platform",
+        "label": "Collaboration Platform"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:knowledge-management-system",
+        "label": "Knowledge Management System"
+      },
+      {
+        "id": "urn:ngm:class:chatbots",
+        "label": "Chatbots"
+      }
+    ]
   },
   "wikilinks": [
     {

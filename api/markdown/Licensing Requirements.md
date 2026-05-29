@@ -282,15 +282,34 @@ public:: true
   "@id": "urn:ngm:class:licensing-requirements",
   "@type": "Class",
   "label": "Licensing Requirements",
-  "definition": "Regulatory authorisation mandates for virtual asset service providers ranging from state-level MoneyTransmitterLicense|money transmitter licences (-capital) to jurisdictional crypto licences (Dubai VARA, UK FCA, EU MiCA) requiring operational standards, custody controls, KYC procedures, and o...",
+  "definition": "Licensing Requirements are the regulatory authorisation mandates imposed on virtual asset service providers by national or supranational regulators, ranging from state-level money transmitter licences in the United States to jurisdiction-specific crypto licences under EU MiCA, UK FCA, Singapore MAS, and Dubai VARA regimes. Compliance demands operational standards, minimum capital, custody controls, KYC procedures, AML programmes, and ongoing regulatory reporting, with global coverage costing major platforms tens to hundreds of millions of pounds.",
   "domain": "blockchain",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-governance-and-regulation",
       "label": "Governance and Regulation"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:anti-money-laundering", "label": "Anti-Money Laundering"},
+      {"@id": "urn:ngm:class:regulatory-framework", "label": "Regulatory Framework"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:bc-governance-and-regulation", "label": "Governance and Regulation"},
+      {"@id": "urn:ngm:class:blockchain-domain", "label": "Blockchain Domain"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+    ]
+  },
   "quality": 0.4,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -627,7 +646,13 @@ public:: true
 
 
 - ### Definition
-  - Regulatory authorisation mandates for virtual asset service providers ranging from state-level [[MoneyTransmitterLicense|money transmitter licences]] ($100K-$1M capital) to jurisdictional crypto licences (Dubai VARA, UK FCA, EU MiCA) requiring operational standards, custody controls, KYC procedures, and ongoing compliance reporting. Licensing fragmentation creates cost barriers—a global [[ExchangePlatform|exchange]] requires permits across 50+ jurisdictions with diverse requirements—incentivising geographic focus and limiting competitive entry. Harmonisation efforts (EU MiCA, Singapore MAS frameworks) reduce complexity whilst regulatory clarity in developed markets (UK, Switzerland, El Salvador) attracts institutional capital.
+  - Licensing Requirements are the regulatory authorisation mandates imposed on virtual asset service providers by national or supranational regulators, ranging from state-level money transmitter licences in the United States to jurisdiction-specific crypto licences under EU MiCA, UK FCA, Singapore MAS, and Dubai VARA regimes. Compliance demands operational standards, minimum capital, custody controls, KYC procedures, AML programmes, and ongoing regulatory reporting, with global coverage costing major platforms tens to hundreds of millions of pounds. Licensing fragmentation creates cost barriers—a global [[ExchangePlatform|exchange]] requires permits across 50+ jurisdictions—incentivising geographic focus and limiting competitive entry. Harmonisation efforts (EU MiCA, Singapore MAS frameworks) reduce complexity whilst regulatory clarity attracts institutional capital.
+
+- ### Relationships
+  - requires:: [[Anti-Money Laundering]], [[Regulatory Framework]]
+  - partOf:: [[Governance and Regulation]], [[Blockchain Domain]]
+  - dependsOn:: [[Blockchain]], [[Digital Asset]]
+  - relatedTo:: [[Decentralised Finance]], [[Smart Contract]]
 
 - ### Semantic Classification
   - owl-class:: blockchain:LicensingRequirements

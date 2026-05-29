@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:virtual-asset",
   "domain": "spatial-computing",
-  "definition": "Virtual assets are digital items with economic value within MetaversePlatforms|metaverse environments, spanning NFT|non-fungible tokens representing unique digital collectibles, Avatar|avatars and avatar customisations, VirtualRealEstate|virtual real estate, and",
+  "definition": "Digital items with economic value within metaverse environments, spanning non-fungible tokens representing unique digital collectibles, avatars and avatar customisations, virtual real estate, and in-game items with market-tradeable value. Ownership and transfer of virtual assets rely on blockchain smart contracts or centralised platform ledgers, with interoperability standards enabling asset portability across platforms and markets.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -13,8 +13,8 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.4,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,11 +23,38 @@
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "id": "urn:ngm:class:digital-ownership",
+        "label": "Digital Ownership"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ]
   },
   "wikilinks": [
     {

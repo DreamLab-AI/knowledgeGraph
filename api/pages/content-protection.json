@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:content-protection",
   "domain": "spatial-computing",
-  "definition": "Content Protection is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Content Protection comprises technical and legal mechanisms that prevent unauthorised reproduction, distribution, or alteration of digital creative works. It includes digital rights management (DRM), encryption, access control, and blockchain-based provenance systems applied to media, software, and metaverse assets.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-governance-and-safety",
@@ -14,20 +14,48 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:digital-rights",
+        "label": "Digital Rights"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-ownership",
+        "label": "Digital Ownership"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:digital-rights-management",
+        "label": "Digital Rights Management"
+      },
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:copyright",
+        "label": "copyright"
+      }
+    ]
   },
   "wikilinks": [
     {

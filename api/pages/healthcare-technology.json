@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:healthcare-technology",
   "domain": "spatial-computing",
-  "definition": "Healthcare Technology is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Healthcare Technology encompasses the digital tools, software systems, and AI-driven applications deployed in clinical and health management contexts, including medical imaging, electronic health records, clinical decision support, and telemedicine platforms. It bridges spatial computing, data analytics, and AI to improve diagnostic accuracy, treatment outcomes, and health system efficiency.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -14,20 +14,48 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:medical-imaging",
+        "label": "Medical Imaging"
+      },
+      {
+        "id": "urn:ngm:class:clinical-decision-support",
+        "label": "Clinical Decision Support"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:healthcare-analytics",
+        "label": "Healthcare Analytics"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:healthcare-ai",
+        "label": "Healthcare AI"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:healthcare-records",
+        "label": "Healthcare Records"
+      },
+      {
+        "id": "urn:ngm:class:financial-technology",
+        "label": "Financial Technology"
+      }
+    ]
   },
   "wikilinks": [
     {

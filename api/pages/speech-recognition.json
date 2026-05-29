@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:speech-recognition",
   "domain": "artificial-intelligence",
-  "definition": "Speech Recognition is a type of Natural Language Processing in the artificial intelligence domain.",
+  "definition": "Speech Recognition is the AI task of transcribing spoken audio into text, enabling voice-driven interfaces, accessibility tools, and multimodal systems. Modern systems rely on deep neural architectures, including transformers with attention mechanisms, trained on large corpora of labelled audio data to achieve near-human accuracy across diverse speakers and acoustic conditions.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-application",
@@ -18,20 +18,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:language-translation",
+        "label": "Language Translation"
+      },
+      {
+        "id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:sentiment-analysis",
+        "label": "Sentiment Analysis"
+      }
+    ]
   },
   "wikilinks": [
     {

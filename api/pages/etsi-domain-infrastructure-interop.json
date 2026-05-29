@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:etsi-domain-infrastructure-interop",
   "domain": "infrastructure",
-  "definition": "ETSI infrastructure interoperability framework enabling disparate systems and domains to exchange data and operate cohesively through cross-domain models, standardised data exchange protocols, and linked data principles (RDF, RDFS, OWL).",
+  "definition": "ETSI infrastructure interoperability domain providing standardised frameworks enabling disparate systems, services, and domains to exchange data and operate cohesively across organisational boundaries. It underpins cross-domain data integration through NGSI-LD interfaces, intent-based network management, spectrum sharing frameworks, and EU Data Act Article 35 mandates for centralised interoperability standards repositories.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-network-and-comms",
@@ -13,21 +13,53 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.4,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:interoperability-framework",
+        "label": "Interoperability Framework"
+      },
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin-interop-protocol",
+        "label": "Digital Twin Interop Protocol"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:api-standard",
+        "label": "API Standard"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:etsi-domain-interoperability",
+        "label": "ETSI_Domain_Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ]
   },
   "wikilinks": [
     {

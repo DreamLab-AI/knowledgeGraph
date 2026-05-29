@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:aiethics",
   "domain": "artificial-intelligence",
-  "definition": "A framework of ical principles and governance structures ensuring responsible development, deployment, and oversight of Artificial Intelligence systems in compliance with societal values.",
+  "definition": "A framework of ethical principles and governance structures ensuring responsible development, deployment, and oversight of artificial intelligence systems in compliance with societal values. Addresses fairness, accountability, transparency, bias mitigation, privacy preservation, and alignment with human rights norms across the AI lifecycle from design through decommissioning.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -13,21 +13,57 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.4,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:artificial-superintelligence",
+        "label": "artificial superintelligence"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:transparency-notice",
+        "label": "Transparency Notice"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-risk",
+        "label": "AI Risk"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ]
   },
   "wikilinks": [
     {

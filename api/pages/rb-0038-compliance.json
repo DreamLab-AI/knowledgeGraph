@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:rb-0038-compliance",
   "domain": "robotics",
-  "definition": "compliance is a robotics and autonomous systems concept and a type of robotics.",
+  "definition": "In robotics, compliance is the mechanical property of a robot joint or end-effector describing its tendency to yield under applied forces or torques, quantified as the inverse of stiffness. Compliant behaviour is essential for safe human-robot interaction, allowing robots to absorb contact forces without rigid collision, and is actively exploited in impedance and admittance control strategies to achieve gentle, force-sensitive manipulation.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
@@ -13,21 +13,57 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "id": "urn:ngm:class:rb-0053-force-control",
+        "label": "rb 0053 force control"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:rb-0039-stiffness",
+        "label": "rb 0039 stiffness"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:robot-safety",
+        "label": "Robot Safety"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rb-0056-impedance-control",
+        "label": "rb 0056 impedance control"
+      },
+      {
+        "id": "urn:ngm:class:rb-0057-admittance-control",
+        "label": "rb 0057 admittance control"
+      },
+      {
+        "id": "urn:ngm:class:rb-0041-inertia",
+        "label": "rb 0041 inertia"
+      },
+      {
+        "id": "urn:ngm:class:rb-0026-robot-joint",
+        "label": "rb 0026 robot joint"
+      }
+    ]
   },
   "wikilinks": [
     {

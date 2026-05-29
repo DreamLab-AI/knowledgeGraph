@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:legal-compliance",
   "domain": "artificial-intelligence",
-  "definition": "The organisational process of adhering to applicable laws, regulations, standards, and contractual obligations relevant to AI system development, deployment, and operation.",
+  "definition": "Legal compliance in the context of AI systems encompasses the organisational processes, controls, and evidence required to demonstrate adherence to applicable legislation, regulatory requirements, technical standards, and contractual obligations across the full lifecycle of AI development, deployment, and operation. Key legal instruments include the EU AI Act (risk-based product safety regulation), the GDPR (lawful processing and data subject rights for personal data used in training and inference), sector-specific financial regulations, and product liability laws. Compliance obligations are operationalised through risk assessments, technical documentation, conformity procedures, and ongoing monitoring.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

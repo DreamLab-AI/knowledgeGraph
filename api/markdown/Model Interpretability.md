@@ -84,7 +84,8 @@ public:: true
   "label": "Model Interpretability",
   "definition": "The degree to which a human can understand the cause-effect relationships within a machine learning model's decision-making process, encompassing both the model's internal mechanisms and the reasoning behind specific predictions.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
@@ -100,6 +101,44 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:feature-importance",
+        "label": "Feature Importance"
+      },
+      {
+        "@id": "urn:ngm:class:local-explanation",
+        "label": "Local Explanation"
+      },
+      {
+        "@id": "urn:ngm:class:global-explanation",
+        "label": "Global Explanation"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:interpretable-ai",
+        "label": "Interpretable AI"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      }
+    ]
   }
 }
 ```
@@ -189,7 +228,13 @@ public:: true
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Has Part: [[Feature Importance]]
+  - Has Part: [[Local Explanation]]
+  - Has Part: [[Global Explanation]]
+  - Requires: [[Machine Learning]]
+  - Supports: [[AI Governance]]
+  - Supports: [[Fairness]]
+  - Related To: [[Interpretable AI]]
 
 - ### Content
   - The degree to which a human can understand the cause-effect relationships within a machine learning model's decision-making process, encompassing both the model's internal mechanisms and the reasoning behind specific predictions.

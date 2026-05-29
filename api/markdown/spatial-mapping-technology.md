@@ -1,12 +1,18 @@
 - ### Definition
-  - Spatial Mapping Technology is a concept within the metaverse domain. Further enrichment pending.
+  - Spatial Mapping Technology refers to hardware and software systems that capture, process, and maintain geometric representations of physical environments in real time, enabling AR and MR devices to understand and interact with their surroundings. Core techniques include depth sensing, structured light, time-of-flight, and SLAM algorithms that fuse sensor data into persistent, updatable mesh models.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:SpatialMappingTechnology
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses [[SLAM]]
+  - Uses [[Depth Sensing]]
+  - Uses [[Sensor Fusion]]
+  - Enables [[Spatial Mapping]]
+  - Enables [[Spatial Anchor]]
+  - Related To [[Point Cloud]]
+  - Related To [[Lidar]]
 
 - ### Content
 

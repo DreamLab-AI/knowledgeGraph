@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:scaling-laws",
   "domain": "artificial-intelligence",
-  "definition": "Empirical power-law relationships that describe how model performance on held-out loss varies predictably with compute budget, parameter count, and dataset size.",
+  "definition": "Scaling Laws are empirical power-law relationships that describe how the held-out cross-entropy loss of large neural language models varies predictably as a function of three primary axes: the number of model parameters, the volume of training tokens, and the total compute budget measured in floating-point operations. Foundational work established that optimal allocation of a fixed compute budget requires roughly equal scaling of model size and training data, a result later refined by Chinchilla-style analyses. These laws guide architectural decisions, determine when to train versus when to scale, and enable cost projections for future model generations, making them central to modern AI infrastructure planning.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-research-area",
@@ -14,12 +14,30 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:pre-training",
+        "label": "Pre Training"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
@@ -27,7 +45,12 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:parameter-count",
+        "label": "Parameter Count"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

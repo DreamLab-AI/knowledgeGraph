@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:block-height",
   "domain": "blockchain",
-  "definition": "Number of blocks from genesis within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "Block Height is a monotonically increasing integer representing the position of a specific block in a blockchain, defined as the count of confirmed blocks preceding it in the canonical chain (the genesis block has height 0). Block height serves as the primary temporal reference for blockchain state: smart contracts use it for time-locked operations, miners use it to calculate block rewards and halving events, and consensus rules use it to enforce protocol upgrade activation thresholds. In the presence of forks, two competing chains may share block height values; the canonical chain is determined by the fork choice rule applied at the point of divergence.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-protocol-and-consensus",
@@ -21,21 +21,79 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:block",
+        "label": "Block"
+      },
+      {
+        "id": "urn:ngm:class:genesis-block",
+        "label": "Genesis Block"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "id": "urn:ngm:class:fork-choice-rule",
+        "label": "Fork Choice Rule"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:block-time",
+        "label": "Block Time"
+      },
+      {
+        "id": "urn:ngm:class:block-reward",
+        "label": "Block Reward"
+      },
+      {
+        "id": "urn:ngm:class:mining-reward",
+        "label": "Mining Reward"
+      },
+      {
+        "id": "urn:ngm:class:chain-reorganization",
+        "label": "Chain Reorganization"
+      }
+    ]
   },
   "wikilinks": [
     {

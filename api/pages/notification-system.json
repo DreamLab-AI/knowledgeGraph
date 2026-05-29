@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:notification-system",
   "domain": "infrastructure",
-  "definition": "Notification System is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A software component that delivers event-driven alerts, presence indicators, and system messages to users or services in real time. In virtual world and metaverse contexts, notification systems manage social events, user-to-user signals, and platform state changes across distributed infrastructure, typically using push protocols or pub-sub messaging patterns.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-network-and-comms",
@@ -13,20 +13,47 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:social-presence",
+        "label": "Social Presence"
+      },
+      {
+        "id": "urn:ngm:class:event-management",
+        "label": "Event Management"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      },
+      {
+        "id": "urn:ngm:class:realtime-communication",
+        "label": "Realtime Communication"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:platform-service",
+        "label": "Platform Service"
+      },
+      {
+        "id": "urn:ngm:class:networking-infrastructure",
+        "label": "Networking Infrastructure"
+      }
+    ],
     "relatedTo": []
   },
   "wikilinks": [],

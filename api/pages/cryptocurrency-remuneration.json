@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:cryptocurrency-remuneration",
   "domain": "distributed-collaboration",
-  "definition": "\"The payment of remote workers, freelancers, or distributed team members in cryptocurrency (Bitcoin, ereum, stablecoins) rather than traditional fiat currency, enabling borderless, instant, low-fee transactions that bypass traditional banking systems whilst providing financial inclusion for unban...",
+  "definition": "Cryptocurrency remuneration is the practice of paying remote workers, freelancers, or distributed team members in digital assets \u2014 including Bitcoin, Ethereum, or fiat-pegged stablecoins \u2014 rather than traditional currency. It enables borderless, near-instant settlement at low transaction cost, bypassing correspondent banking infrastructure and extending financial access to unbanked populations. Compliance with local payroll tax, AML/KYC, and employment law obligations remains essential.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:dc-protocol-and-infra",
@@ -17,21 +17,85 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.75,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:tax-treatment-crypto",
+        "label": "Tax Treatment Crypto"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      },
+      {
+        "id": "urn:ngm:class:distributed-work",
+        "label": "Distributed Work"
+      },
+      {
+        "id": "urn:ngm:class:micropayments",
+        "label": "Micropayments"
+      },
+      {
+        "id": "urn:ngm:class:cross-border-payments",
+        "label": "Cross-Border Payments"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-collaboration",
+        "label": "Blockchain Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract-coordination",
+        "label": "Smart Contract Coordination"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-autonomous-organization",
+        "label": "Decentralized Autonomous Organization"
+      }
+    ]
   },
   "wikilinks": [
     {

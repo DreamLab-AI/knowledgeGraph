@@ -46,16 +46,33 @@ public:: true
   "@id": "urn:ngm:class:digital-security",
   "@type": "Class",
   "label": "Digital Security",
-  "definition": "Digital Security is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Digital Security encompasses the technical controls, protocols, and governance frameworks protecting digital systems, data, and identities from unauthorised access, tampering, and exploitation. It integrates cryptographic mechanisms, access management policies, threat detection, and incident response to ensure confidentiality, integrity, and availability of digital assets and infrastructure across networked environments.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
       "label": "Governance and Safety"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:cryptographic-security", "label": "Cryptographic Security"},
+      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:zero-trust-architecture", "label": "Zero Trust Architecture"},
+      {"@id": "urn:ngm:class:post-quantum-cryptography", "label": "Post-Quantum Cryptography"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"},
+      {"@id": "urn:ngm:class:data-security", "label": "Data Security"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:ai-security", "label": "AI Security"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -96,7 +113,7 @@ public:: true
 
 
 - ### Definition
-  - Digital Security is a concept within the metaverse domain. Further enrichment pending.
+  - Digital Security encompasses the technical controls, protocols, and governance frameworks protecting digital systems, data, and identities from unauthorised access, tampering, and exploitation. It integrates cryptographic mechanisms, access management policies, threat detection, and incident response to ensure confidentiality, integrity, and availability of digital assets and infrastructure across networked environments.
 
 bridges-to:: [[Blockchain]]
 
@@ -105,7 +122,10 @@ bridges-to:: [[Blockchain]]
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires**: [[Cryptographic Security]], [[Cybersecurity]]
+  - **uses**: [[Zero Trust Architecture]], [[Post-Quantum Cryptography]]
+  - **supports**: [[Digital Identity]], [[Data Security]]
+  - **relatedTo**: [[AI Security]]
 
 - ### Content
 

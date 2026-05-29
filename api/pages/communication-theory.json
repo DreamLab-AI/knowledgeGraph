@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:communication-theory",
   "domain": "distributed-collaboration",
-  "definition": "Communication Theory provides the theoretical foundations for understanding how information, meaning, and social presence are transmitted and perceived in mediated communication contexts.",
+  "definition": "Communication Theory provides the theoretical foundations for understanding how information, meaning, and social presence are transmitted and perceived in mediated communication contexts. Key frameworks include media richness theory, social presence theory, and theories of computer-mediated communication that directly inform the design of telecollaboration systems and collaborative technology.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:dc-communication",
@@ -18,9 +18,18 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:media-richness-theory",
+        "label": "Media Richness Theory"
+      },
+      {
+        "id": "urn:ngm:class:social-presence-theory",
+        "label": "Social Presence Theory"
+      }
+    ],
     "requires": [],
     "enables": [],
     "dependsOn": [],
@@ -28,10 +37,28 @@
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-technology",
+        "label": "Collaborative Technology"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:social-presence",
+        "label": "Social Presence"
+      },
+      {
+        "id": "urn:ngm:class:video-conferencing",
+        "label": "Video Conferencing"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -8,6 +8,10 @@
 
 - ### Relationships
   - is-subclass-of:: [[Digital Twin]]
+  - requires:: [[Digital Twin Technology]], [[Simulation Engine]]
+  - uses:: [[Simulation]], [[Digital Twin Infrastructure]]
+  - enables:: [[Virtual Training]], [[Digital Twin Collaboration]]
+  - relatedTo:: [[Virtual Replica]], [[Cross Platform Digital Twins]]
 
 - ### Content
 

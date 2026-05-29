@@ -1,5 +1,5 @@
 - ### Definition
-  - Native blockchain asset within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
+  A Coin is a native cryptographic asset issued by a blockchain protocol itself, distinct from smart-contract tokens deployed on top of an existing chain. Coins serve as the primary medium of exchange for transaction fees, validator rewards, and network participation incentives, and may also function as stores of value, monetary reserves, or DeFi collateral.
 
 - ### Semantic Classification
   - owl-class:: blockchain:Coin
@@ -9,7 +9,12 @@
   - implemented-in-layer:: [[EconomicLayer]]
 
 - ### Relationships
-  - is-subclass-of:: [[Blockchain Entity]], [[EconomicMechanism]]
+  - is-subclass-of:: [[Blockchain Entity]], [[EconomicMechanism]], [[Token and Asset]]
+  - hasPart:: [[Monetary System]], [[Payment System]]
+  - requires:: [[Blockchain]], [[Consensus Mechanism]]
+  - enables:: [[Mining Reward]], [[Stablecoin Token]], [[Digital Asset Market]]
+  - contrastsWith:: [[Cryptocurrency Token]]
+  - relatedTo:: [[Cryptocurrency]], [[Digital Currency]], [[Central Bank Digital Currency]], [[Monetary Sovereignty]], [[Economic Layer]]
 
 - ### Content
 

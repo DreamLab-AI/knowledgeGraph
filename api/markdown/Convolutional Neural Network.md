@@ -70,15 +70,31 @@ public:: true
   "@id": "urn:ngm:class:convolutional-neural-network",
   "@type": "Class",
   "label": "Convolutional Neural Network",
-  "definition": "Convolutional Neural Network is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "A Convolutional Neural Network (CNN) is a feed-forward deep learning architecture that applies learned convolutional filters across spatial dimensions of input data, enabling hierarchical feature extraction from images and other grid-structured inputs. Weight sharing and local receptive fields make CNNs highly parameter-efficient for visual recognition tasks including image classification, object detection, and semantic segmentation.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-model-architecture",
       "label": "AI Model Architecture"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"},
+      {"@id": "urn:ngm:class:training-data", "label": "Training Data"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:image-classification", "label": "Image Classification"},
+      {"@id": "urn:ngm:class:object-detection", "label": "Object Detection"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:recurrent-neural-network", "label": "Recurrent Neural Network"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -158,7 +174,12 @@ public:: true
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses:: [[Backpropagation]]
+  - uses:: [[Training Data]]
+  - enables:: [[Image Classification]]
+  - enables:: [[Object Detection]]
+  - supports:: [[Computer Vision]]
+  - contrastsWith:: [[Recurrent Neural Network]]
 
 - ### Content
   - ### Primary Definition

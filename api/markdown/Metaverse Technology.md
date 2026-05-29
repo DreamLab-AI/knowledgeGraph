@@ -98,20 +98,35 @@ public:: true
   "@id": "urn:ngm:class:metaverse-technology",
   "@type": "Class",
   "label": "Metaverse Technology",
-  "definition": "The foundational technology domain encompassing persistent, synchronous 3D virtual worlds, augmented reality environments, spatial computing platforms, and immersive internet infrastructure that enable shared experiences with interoperable digital assets, persistent identity systems, and real-tim...",
+  "definition": "The foundational technology domain encompassing persistent, synchronous 3D virtual worlds, augmented reality environments, spatial computing platforms, and immersive internet infrastructure that enable shared experiences with interoperable digital assets, persistent identity systems, and real-time social interaction across physical and virtual boundaries.",
   "domain": "spatial-computing",
   "maturity": "established",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
-    },
-    {
-      "@id": "urn:ngm:class:technology-domain",
-      "label": "Technology Domain"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:virtual-world", "label": "Virtual World"},
+      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:avatar-system", "label": "Avatar System"},
+      {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"},
+      {"@id": "urn:ngm:class:virtual-economy", "label": "Virtual Economy"},
+      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
+      {"@id": "urn:ngm:class:metaverse-infrastructure", "label": "Metaverse Infrastructure"},
+      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"},
+      {"@id": "urn:ngm:class:metaverse-platform", "label": "Metaverse Platform"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
+      {"@id": "urn:ngm:class:virtual-world-traversal", "label": "Virtual World Traversal"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

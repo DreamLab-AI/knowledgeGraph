@@ -1,5 +1,5 @@
 - ### Definition
-  - Digital Modelling is a concept within the metaverse domain. Further enrichment pending.
+  - Digital Modelling is the process of creating mathematical or geometric representations of physical objects, environments, or systems in a computer, encompassing polygonal mesh construction, NURBS surfaces, procedural generation, and scan-based reconstruction. Digital models serve as the foundation for real-time rendering, simulation, digital twin creation, and asset delivery in spatial computing platforms.
 
 bridges-to:: [[Computer Vision]]
 
@@ -8,7 +8,12 @@ bridges-to:: [[Computer Vision]]
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Enables [[Digital Twin]]
+  - Enables [[Rendering Engine]]
+  - Uses [[Photogrammetry]]
+  - Uses [[Point Cloud]]
+  - Bridges To [[Computer Vision]]
+  - Related To [[Procedural Content Generation]]
 
 - ### Content
 

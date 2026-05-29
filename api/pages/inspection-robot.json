@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:inspection-robot",
   "domain": "robotics",
-  "definition": "Inspection Robot - Inspection Robot in robotics systems",
+  "definition": "A specialised robotic system designed to autonomously examine physical structures, components, or manufactured products for defects, faults, or deviations from specification. Inspection robots combine computer vision, sensor fusion, and AI-driven anomaly detection to replace or augment manual quality-assurance processes in hazardous or high-throughput environments.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-robot-type",
@@ -13,21 +13,53 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
+        "id": "urn:ngm:class:mobile-robot",
+        "label": "Mobile Robot"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-robot",
+        "label": "Collaborative Robot"
+      }
+    ]
   },
   "wikilinks": [
     {

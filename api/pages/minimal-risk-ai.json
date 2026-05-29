@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:minimal-risk-ai",
   "domain": "artificial-intelligence",
-  "definition": "AI systems not classified as prohibited, high-risk, or limited-risk. These systems face no specific AI Act obligations beyond the general legal framework applicable to all products and services.",
+  "definition": "The residual tier in the EU AI Act's four-level risk pyramid, covering AI systems not classified as prohibited, high-risk, or limited-risk. Such systems carry no AI Act-specific compliance obligations and remain subject only to applicable horizontal legislation such as GDPR and product liability rules.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -13,21 +13,53 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:high-risk-ai-system",
+        "label": "High Risk AI System"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
+    ]
   },
   "wikilinks": [
     {

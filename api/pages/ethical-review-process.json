@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ethical-review-process",
   "domain": "artificial-intelligence",
-  "definition": "ical Review Process is a structured modology for evaluating AI systems against ical frameworks, organizational values, and societal norms, involving expert deliberation, stakeholder consultation, and documented decision-making to ensure ically responsible AI development and deployment.",
+  "definition": "An Ethical Review Process is a structured methodology for evaluating AI systems against ethical frameworks, organisational values, and societal norms, involving expert deliberation, stakeholder consultation, and documented decision-making to ensure responsible AI development and deployment. It applies consequentialist, deontological, and virtue-ethics frameworks to assess fairness, privacy, autonomy, safety, and accountability dimensions, producing approval, conditional approval, deferral, or rejection outcomes with documented rationale.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -13,21 +13,78 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ai-ethics-board",
+        "label": "AI Ethics Board"
+      },
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ai-ethics-checklist",
+        "label": "AI Ethics Checklist"
+      },
+      {
+        "id": "urn:ngm:class:fairness-metrics",
+        "label": "Fairness Metrics"
+      },
+      {
+        "id": "urn:ngm:class:bias-detection-methods",
+        "label": "Bias Detection Methods"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      }
+    ]
   },
   "wikilinks": [
     {

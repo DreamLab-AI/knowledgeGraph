@@ -37,20 +37,58 @@ public:: true
   "@id": "urn:ngm:class:query-processor",
   "@type": "Class",
   "label": "Query Processor",
-  "definition": "Query Processor is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A system component responsible for parsing, optimising, and executing queries against a data store or knowledge base, including spatial queries in 3D environments. Query processors translate declarative query expressions into efficient execution plans, leveraging indexing structures such as octrees, k-d trees, R-trees, and scene graph hierarchies to minimise retrieval latency.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-data-management",
       "label": "Data Management"
     }
   ],
-  "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:database-query",
+        "label": "Database Query"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "@id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:database-system",
+        "label": "Database System"
+      },
+      {
+        "@id": "urn:ngm:class:scene-graph",
+        "label": "Scene Graph"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      }
+    ]
   }
 }
 ```
@@ -76,14 +114,20 @@ public:: true
 
 
 - ### Definition
-  - QueryProcessor is a concept within the ngm domain.
+  - A system component responsible for parsing, optimising, and executing queries against a data store or knowledge base, including spatial queries in 3D environments. Query processors translate declarative query expressions into efficient execution plans, leveraging indexing structures such as octrees, k-d trees, R-trees, and scene graph hierarchies to minimise retrieval latency.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:QueryProcessor
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses [[Database System]]
+  - Uses [[Scene Graph]]
+  - Enables [[Semantic Search]]
+  - Enables [[Information Retrieval]]
+  - Has Part [[Database Query]]
+  - Related To [[Knowledge Graph]]
+  - Related To [[Vector Database]]
 
 - ### Content
   # QueryProcessor

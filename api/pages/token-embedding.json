@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:token-embedding",
   "domain": "artificial-intelligence",
-  "definition": "A learnable lookup table that maps each token in the vocabulary to a dense vector representation, providing the initial semantic encoding for transformer models.",
+  "definition": "A learnable lookup table that maps each discrete token in a vocabulary to a dense continuous vector, providing the initial semantic encoding fed into transformer model layers. Embeddings are trained end-to-end and combined with positional encodings; they may be tied with the output un-embedding matrix to reduce parameter count and improve training stability.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -14,20 +14,48 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:encoder-decoder-architecture",
+        "label": "Encoder Decoder Architecture"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:self-attention",
+        "label": "Self Attention"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-layer",
+        "label": "Neural Network Layer"
+      }
+    ]
   },
   "wikilinks": [
     {

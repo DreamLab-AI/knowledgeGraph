@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:motion-capture-technology",
   "domain": "spatial-computing",
-  "definition": "Motion Capture Technology is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Motion Capture Technology refers to systems that record the position and orientation of physical bodies\u2014human performers, objects, or camera rigs\u2014in three-dimensional space, producing skeletal or marker-based data streams used to animate digital avatars, create realistic character performances, and drive real-time spatial computing applications.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      },
+      {
+        "id": "urn:ngm:class:animation-technique",
+        "label": "Animation Technique"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:animation-retargeting",
+        "label": "Animation Retargeting"
+      },
+      {
+        "id": "urn:ngm:class:motion-capture-rig",
+        "label": "Motion Capture Rig"
+      }
+    ]
   },
   "wikilinks": [
     {

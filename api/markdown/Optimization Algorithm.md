@@ -46,7 +46,7 @@ public:: true
   "@id": "urn:ngm:class:optimization-algorithm",
   "@type": "Class",
   "label": "Optimization Algorithm",
-  "definition": "Optimization Algorithm is a artificial intelligence concept and a type of Algorithm.",
+  "definition": "A procedure that iteratively adjusts model parameters to minimise or maximise an objective function. In machine learning, optimisation algorithms govern the training dynamics of neural networks by computing gradient-based parameter updates; prominent instances include stochastic gradient descent, Adam, and their adaptive variants, each balancing convergence speed, memory cost, and generalisation.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -59,7 +59,27 @@ public:: true
       "label": "Algorithm"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"},
+      {"@id": "urn:ngm:class:stochastic-gradient-descent", "label": "Stochastic Gradient Descent"},
+      {"@id": "urn:ngm:class:adam-optimiser", "label": "Adam Optimiser"},
+      {"@id": "urn:ngm:class:learning-rate-schedule", "label": "Learning Rate Schedule"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:loss-function", "label": "Loss Function"},
+      {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:machine-learning-model", "label": "Machine Learning Model"},
+      {"@id": "urn:ngm:class:neural-network-architecture", "label": "Neural Network Architecture"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:convergence", "label": "Convergence"},
+      {"@id": "urn:ngm:class:hyperparameter", "label": "Hyperparameter"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

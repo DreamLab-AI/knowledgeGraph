@@ -62,21 +62,55 @@ public:: true
   "@id": "urn:ngm:class:ai-framework",
   "@type": "Class",
   "label": "AI Framework",
-  "definition": "AI Framework denotes a comprehensive software architecture that provides reusable code, design patterns, and infrastructure for developing artificial intelligence applications.",
+  "definition": "A comprehensive software architecture that provides reusable code, design patterns, and infrastructure for developing artificial intelligence applications. AI frameworks abstract low-level computational details, offering high-level interfaces for model construction, training, and inference. Examples include TensorFlow, PyTorch, JAX, and scikit-learn, each optimised for distinct use cases from research prototyping to production deployment.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
-  "quality": 0.35,
+  "maturity": "emerging",
+  "qualityScore": 0.7,
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure"
+    }
+  ],
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
   },
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:cat-ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
-    }
-  ]
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:inference",
+        "label": "Inference"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-pipeline",
+        "label": "Machine Learning Pipeline"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:machine-learning-infrastructure",
+        "label": "Machine Learning Infrastructure"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:auto-ml",
+        "label": "AutoML"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ]
+  }
 }
 ```
 
@@ -139,8 +173,13 @@ public:: true
   - owl-role:: Concept
 
 - ### Relationships
-  - is-subclass-of:: [[owl:Thing]]
-  - bridges-to:: [[Blockchain]] (domain: bc)
+  - is-subclass-of:: AI Infrastructure
+  - Enables [[Deep Learning]]
+  - Enables [[Machine Learning Pipeline]]
+  - Supports [[AutoML]]
+  - Supports [[Neural Network]]
+  - Uses [[Machine Learning Infrastructure]]
+  - Has Part [[Inference]]
 
 - ### Content
 

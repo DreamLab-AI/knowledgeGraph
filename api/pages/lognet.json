@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:lognet",
   "domain": "infrastructure",
-  "definition": "lognet is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "LogNet is a networked knowledge-management infrastructure layer that interconnects Logseq graph nodes, enabling cross-graph querying, link resolution, and distributed publishing of structured ontology pages. It provides the network substrate over which linked-data references between pages are resolved and semantic annotations are aggregated, acting as the connective tissue between individual Logseq knowledge graphs and wider ontology repositories.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-network-and-comms",
@@ -13,8 +13,8 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,11 +23,46 @@
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph-construction",
+        "label": "Knowledge Graph Construction"
+      },
+      {
+        "id": "urn:ngm:class:dr-o-hare-writing-for-log-seq",
+        "label": "Dr O'Hare Writing for LogSeq"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:network-topology",
+        "label": "Network Topology"
+      },
+      {
+        "id": "urn:ngm:class:graph-database",
+        "label": "Graph Database"
+      },
+      {
+        "id": "urn:ngm:class:digital-ontology-repository",
+        "label": "Digital Ontology Repository"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": []

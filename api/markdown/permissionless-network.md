@@ -1,77 +1,18 @@
-- ### Definition
-  - Open access blockchain within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
+### Definition
 
-- ### Semantic Classification
-  - owl-class:: blockchain:PermissionlessNetwork
-  - owl-role:: Object
-  - owl-inferred:: blockchain:VirtualObject
-  - belongs-to-domain:: [[CryptographicDomain]]
-  - implemented-in-layer:: [[SecurityLayer]]
+A Permissionless Network is a blockchain or distributed ledger system in which any entity may join as a node, submit transactions, and participate in consensus without prior authorisation or identity verification from a central authority. Permissionlessness is a foundational design property of public blockchains such as Bitcoin and Ethereum, enabling censorship resistance and global open access at the cost of requiring Sybil-resistant consensus mechanisms—typically proof-of-work or proof-of-stake—to prevent anonymous actors from subverting the network.
 
-- ### Relationships
-  - is-subclass-of:: [[Blockchain Entity]], [[NetworkComponent]]
+### Relationships
 
-- ### Content
+A Permissionless Network **requires** a robust [[Consensus Mechanism]] to achieve agreement among mutually distrusting anonymous participants, and relies on a [[Peer-to-Peer Network]] architecture so no single entity controls connectivity. It **enables** [[Public Blockchain]] deployments where no KYC or whitelist gatekeeping exists, and it operationalises [[Incentive Alignment]] by ensuring that participation is economically worthwhile for honest actors. It **contrastsWith** [[Distributed Ledger Technology]] permissioned variants where participant identity is verified and access is controlled by a consortium or central authority. The concept is **relatedTo** [[51% Attack]] (the primary threat model permissioned networks avoid but permissionless networks must resist economically), [[Double Spending]] (the canonical attack vector motivating permissionless consensus), [[Gossip Protocol]] (the P2P communication pattern used to propagate blocks and transactions), [[Nakamoto Consensus]] (the longest-chain rule that resolves forks in open networks), [[Network Topology]] (typically pseudo-random in permissionless systems), and [[Proof of Stake]] (an energy-efficient alternative to proof-of-work for Sybil resistance).
 
-  ## Class Declaration
-  Declaration(Class(:PermissionlessNetwork))
+### Content
 
-  ## Subclass Relationships
-  SubClassOf(:PermissionlessNetwork :NetworkComponent)
-  SubClassOf(:PermissionlessNetwork :BlockchainEntity)
+Permissionlessness emerged as a core design objective in Bitcoin's 2008 whitepaper, motivated by the goal of creating a financial system that cannot be censored by governments, financial institutions, or any other entity with the power to gate access. By removing authorisation requirements, permissionless networks become globally accessible—anyone with internet connectivity and a wallet can participate—but they also become open to adversarial participation.
 
-  ## Essential Properties
-  SubClassOf(:PermissionlessNetwork
-    (ObjectSomeValuesFrom :partOf :Blockchain))
+The security model of permissionless networks is economic rather than reputational. Since participants are anonymous, trust must be replaced by cost: engaging in attacks must be prohibitively expensive relative to the rewards from honest participation. Proof-of-work achieves this through energy expenditure; proof-of-stake through locked collateral subject to slashing. The Nakamoto coefficient measures the degree of decentralisation by quantifying the minimum number of entities that would need to collude to control the network.
 
-  SubClassOf(:PermissionlessNetwork
-    (ObjectSomeValuesFrom :hasProperty :Property))
-
-  ## Data Properties
-  DataPropertyAssertion(:hasIdentifier :PermissionlessNetwork "BC-0090"^^xsd:string)
-  DataPropertyAssertion(:hasAuthorityScore :PermissionlessNetwork "1.0"^^xsd:decimal)
-  DataPropertyAssertion(:isFoundational :PermissionlessNetwork "true"^^xsd:boolean)
-
-  ## Object Properties
-  ObjectPropertyAssertion(:enablesFeature :PermissionlessNetwork :BlockchainFeature)
-  ObjectPropertyAssertion(:relatesTo :PermissionlessNetwork :RelatedConcept)
-
-  ## Annotations
-  AnnotationAssertion(rdfs:label :PermissionlessNetwork "Permissionless Network"@en)
-  AnnotationAssertion(rdfs:comment :PermissionlessNetwork
-    "Open access blockchain"@en)
-  AnnotationAssertion(dct:description :PermissionlessNetwork
-    "Foundational blockchain concept with formal ontological definition"@en)
-  AnnotationAssertion(:termID :PermissionlessNetwork "BC-0090")
-  AnnotationAssertion(:priority :PermissionlessNetwork "1"^^xsd:integer)
-  AnnotationAssertion(:category :PermissionlessNetwork "network-security"@en)
-  )
-      ```
-
-  - ## About Permissionless Network
-
-  - Open access blockchain within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
-  - ### Key Characteristics
-    - 1. **Definitional Property**: Core defining characteristic
-    - 2. **Functional Property**: Operational behavior
-    - 3. **Structural Property**: Compositional elements
-    - 4. **Security Property**: Security guarantees provided
-    - 5. **Performance Property**: Efficiency considerations
-  - ### Technical Components
-    - **Implementation**: How concept is realized technically
-    - **Verification**: Methods for validating correctness
-    - **Interaction**: Relationships with other components
-    - **Constraints**: Technical limitations and requirements
-  - ### Use Cases
-    - **1. Core Blockchain Operation**
-    - **Application**: Fundamental blockchain functionality
-    - **Example**: Practical implementation in major blockchains
-    - **Requirements**: Technical prerequisites
-    - **Benefits**: Value provided to blockchain systems
-  - ### Standards & References
-    - [[ISO/IEC 23257:2021]] - Blockchain and distributed ledger technologies
-    - [[IEEE 2418.1]] - Blockchain and distributed ledger technologies
-    - [[NIST NISTIR]] - Blockchain and distributed ledger technologies
+Permissionless networks face inherent trade-offs. Transaction throughput is limited because all nodes must process all transactions to maintain verifiability without trusting any subset. Privacy is compromised because all transaction data is public by default. Regulation is challenging because there is no operator to serve legal demands. These trade-offs motivate a spectrum of designs: fully permissionless public blockchains at one end, fully permissioned private ledgers at the other, and hybrid models (such as consortium blockchains with open transaction submission but permissioned validation) in between. Layer-2 scaling solutions such as rollups attempt to extend the capacity of permissionless networks while preserving their censorship-resistance guarantees at the settlement layer.
 
 - ### Provenance
   - sources:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:development-platform",
   "domain": "spatial-computing",
-  "definition": "Development Platform is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "A Development Platform is an integrated suite of tools, APIs, runtimes, and infrastructure services that enables engineers and creators to build, test, and deploy applications. In spatial computing contexts, development platforms provide SDKs for XR hardware, scene-graph editors, physics engines, and asset pipelines supporting OpenXR and Universal Scene Description (USD). They abstract hardware heterogeneity and supply governance tooling for collaborative multi-stakeholder development.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -13,18 +13,50 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:open-xr",
+        "label": "OpenXR"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:digital-fabrication",
+        "label": "Digital Fabrication"
+      },
+      {
+        "id": "urn:ngm:class:collaboration",
+        "label": "Collaboration"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": []

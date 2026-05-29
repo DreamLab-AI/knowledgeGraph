@@ -723,7 +723,27 @@ public:: true
       "label": "Network Component"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
+      {"@id": "urn:ngm:class:decentralized-finance-de-fi", "label": "Decentralized Finance (DeFi)"},
+      {"@id": "urn:ngm:class:smart-contract-execution", "label": "Smart Contract Execution"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:oracle-network", "label": "Oracle Network"},
+      {"@id": "urn:ngm:class:price-oracle", "label": "Price Oracle"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"},
+      {"@id": "urn:ngm:class:smart-contracts", "label": "Smart Contracts"},
+      {"@id": "urn:ngm:class:smart-contract-platform", "label": "Smart Contract Platform"},
+      {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:cryptographic-verification", "label": "Cryptographic Verification"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

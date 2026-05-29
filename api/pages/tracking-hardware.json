@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:tracking-hardware",
   "domain": "spatial-computing",
-  "definition": "Tracking Hardware is a type of Tracking Technology in the spatial computing domain.",
+  "definition": "Tracking Hardware comprises the physical sensors and devices used to determine the position and orientation of users, controllers, and objects within spatial computing environments. This includes inertial measurement units, optical trackers, hand-tracking cameras, eye-tracking modules, and SLAM-based inside-out tracking systems that together provide the 6-DoF pose data essential for immersive VR/AR experiences.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-interaction",
@@ -18,16 +18,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:inertial-measurement-unit",
+        "label": "Inertial Measurement Unit"
+      },
+      {
+        "id": "urn:ngm:class:optical-tracking",
+        "label": "Optical Tracking"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:hand-tracking",
+        "label": "Hand Tracking"
+      },
+      {
+        "id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

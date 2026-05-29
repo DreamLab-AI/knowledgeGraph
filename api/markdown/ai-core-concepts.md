@@ -7,7 +7,9 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **Has-part**: [[Machine Learning]], [[Neural Network]], [[Generative AI]], [[Reinforcement Learning]]
+  - **Enables**: [[Natural Language Processing]], [[Computer Vision]], [[Inference]]
+  - **Uses**: [[Data Pipeline]] (training data flow), [[Federated Learning]] (privacy-preserving training)
 
 - ### Content
   - AI core concepts encompass machine learning paradigms, neural architectures, and symbolic reasoning enabling intelligent systems that power NPCs, environment perception, and procedural content generation with ethical considerations for bias, explainability, and transparency.

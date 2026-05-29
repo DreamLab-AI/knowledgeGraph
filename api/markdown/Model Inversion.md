@@ -62,9 +62,10 @@ public:: true
   "@id": "urn:ngm:class:model-inversion",
   "@type": "Class",
   "label": "Model Inversion",
-  "definition": "An inference-time privacy attack that reconstructs sensitive training data or attributes from a trained model by exploiting model outputs, predictions, or internal representations, potentially revealing confidential information about individuals in the training dataset.",
+  "definition": "An inference-time privacy attack that reconstructs sensitive training data or personal attributes from a trained model by iteratively querying model outputs, confidence scores, or internal representations. Model inversion attacks expose a fundamental tension between model utility and data privacy, motivating defences such as differential privacy, federated learning, and membership-inference auditing.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
@@ -76,6 +77,40 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:model-weights",
+        "label": "Model Weights"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:membership-inference",
+        "label": "Membership Inference"
+      },
+      {
+        "@id": "urn:ngm:class:adversarial-attacks",
+        "label": "Adversarial Attacks"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
+    ]
   }
 }
 ```
@@ -140,7 +175,12 @@ public:: true
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Contrasts With [[Differential Privacy]]
+  - Contrasts With [[Federated Learning]]
+  - Related To [[Membership Inference]]
+  - Related To [[Adversarial Attacks]]
+  - Requires [[Model Weights]]
+  - Supports [[AI Safety]]
 
 - ### Content
   - An inference-time privacy attack that reconstructs sensitive training data or attributes from a trained model by exploiting model outputs, predictions, or internal representations, potentially revealing confidential information about individuals in the training dataset.

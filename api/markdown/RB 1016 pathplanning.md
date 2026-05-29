@@ -42,16 +42,37 @@ public:: true
   "@id": "urn:ngm:class:rb-1016-pathplanning",
   "@type": "Class",
   "label": "RB 1016 pathplanning",
-  "definition": "RB 1016 pathplanning is a type of Robotics in the robotics domain.",
+  "definition": "RB 1016 Path Planning is an ontology term in the NarrativeGoldmine robotics hierarchy representing the superclass of algorithms that compute collision-free trajectories from a start configuration to a goal configuration in a robot's configuration space. It encompasses graph-search methods (A*, Dijkstra), sampling-based planners (RRT, PRM), and reactive local-planning strategies (DWA, potential fields), all of which underpin autonomous navigation in structured and unstructured environments.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-navigation-and-planning",
       "label": "Navigation and Planning"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
+      {"@id": "urn:ngm:class:trajectory-planning", "label": "Trajectory Planning"},
+      {"@id": "urn:ngm:class:rrt-algorithm", "label": "RRT Algorithm"},
+      {"@id": "urn:ngm:class:graph-search", "label": "Graph Search"},
+      {"@id": "urn:ngm:class:dijkstra-algorithm", "label": "Dijkstra Algorithm"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:localization", "label": "Localization"},
+      {"@id": "urn:ngm:class:slam", "label": "SLAM"},
+      {"@id": "urn:ngm:class:obstacle-avoidance", "label": "Obstacle Avoidance"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
+      {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:robot-operating-system", "label": "Robot Operating System"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -87,14 +108,17 @@ public:: true
 
 
 - ### Definition
-  - R B 1016 pathplanning is a concept within the robotics domain. Further enrichment pending.
+  - RB 1016 Path Planning is the superclass of algorithms that compute collision-free trajectories from a start configuration to a goal configuration in a robot's configuration space. It encompasses graph-search methods (A*, Dijkstra), sampling-based planners (RRT, PRM), and reactive local-planning strategies (DWA, potential fields), underpinning autonomous navigation in structured and unstructured environments.
 
 - ### Semantic Classification
   - owl-class:: robotics:RB1016pathplanning
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart:: [[Motion Planning]], [[Trajectory Planning]], [[RRT Algorithm]], [[Graph Search]], [[Dijkstra Algorithm]]
+  - requires:: [[Localization]], [[SLAM]], [[Obstacle Avoidance]]
+  - enables:: [[Autonomous Navigation]], [[Autonomous Robot]]
+  - uses:: [[Robot Operating System]]
 
 - ### Content
 

@@ -33,9 +33,9 @@ public:: true
   "@id": "urn:ngm:class:latent-space",
   "@type": "Class",
   "label": "latent space",
-  "definition": "latent space is a artificial intelligence concept and a type of Generative Model.",
+  "definition": "A latent space is a compressed, high-dimensional mathematical representation learned by a neural network that encodes the underlying structure of training data. Generative models such as variational autoencoders and diffusion models use latent spaces to interpolate between data points and sample novel outputs. The geometry of the latent space reflects semantic relationships: nearby points correspond to perceptually or semantically similar entities, enabling controlled generation through vector arithmetic.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
@@ -46,6 +46,19 @@ public:: true
       "label": "Generative Model"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:encoder-decoder-architecture", "label": "Encoder Decoder Architecture"},
+      {"@id": "urn:ngm:class:embedding-model", "label": "Embedding Model"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
+      {"@id": "urn:ngm:class:variational-autoencoders", "label": "Variational Autoencoders"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -76,14 +89,18 @@ public:: true
 
 
 - ### Definition
-  - latent space is a concept within the ngm domain.
+  - A latent space is a compressed, high-dimensional mathematical representation learned by a neural network that encodes the underlying structure of training data. Generative models such as variational autoencoders and diffusion models use latent spaces to interpolate between data points and sample novel outputs. The geometry of the latent space reflects semantic relationships: nearby points correspond to perceptually or semantically similar entities, enabling controlled generation through vector arithmetic.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:LatentSpace
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses [[Encoder Decoder Architecture]]
+  - uses [[Embedding Model]]
+  - enables [[Generative AI]]
+  - enables [[Variational Autoencoders]]
+  - relatedTo [[Diffusion Model]]
 
 - ### Content
   - #Public page

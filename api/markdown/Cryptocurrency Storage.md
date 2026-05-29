@@ -58,9 +58,10 @@ public:: true
   "@id": "urn:ngm:class:cryptocurrency-storage",
   "@type": "Class",
   "label": "Cryptocurrency Storage",
-  "definition": "Cryptocurrency Storage is a blockchain and distributed systems concept and a type of Digital Wallet.",
+  "definition": "Cryptocurrency Storage encompasses the cryptographic key management systems and secure storage solutions for maintaining control over digital assets on blockchain networks. Architectures range from hot wallets with internet connectivity through cold storage hardware devices to multi-signature and threshold-signature schemes. Hierarchical Deterministic (HD) wallets following BIP32/BIP39 standards generate key trees from a single seed phrase, while institutional custody solutions leverage multi-party computation (MPC) and smart-contract-based social recovery for asset governance.",
   "domain": "blockchain",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-network-component",
@@ -71,7 +72,22 @@ public:: true
       "label": "Digital Wallet"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:cryptographic-key-management", "label": "Cryptographic Key Management"},
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:ecdsa", "label": "ECDSA"},
+      {"@id": "urn:ngm:class:cryptographic-signature", "label": "Cryptographic Signature"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:digital-asset-management", "label": "Digital Asset Management"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -134,7 +150,10 @@ public:: true
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires**: Cryptographic Key Management, Blockchain (storage is only meaningful with a live chain and keys to sign)
+  - **uses**: ECDSA, Cryptographic Signature (core signing mechanisms for authorising transactions)
+  - **supports**: Digital Asset Management (storage is the custody layer enabling asset governance)
+  - **dependsOn**: Public Key Infrastructure (HD wallet hierarchies and certificate chains underpin key derivation)
 
   - bridges-to:: [[Blockchain]] (bc)
 - ### Content

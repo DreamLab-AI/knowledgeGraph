@@ -1334,7 +1334,7 @@ public:: true
   "@id": "urn:ngm:class:layer2",
   "@type": "Class",
   "label": "Layer2",
-  "definition": "Secondary protocols built on top of Layer 1 blockchains that process transactions off-chain or in parallel batches, then periodically commit state changes to the main chain, achieving higher throughput (10-10000x), lower fees (90-reduction), and improved user experience while inheriting base laye...",
+  "definition": "Secondary protocols built atop Layer 1 blockchains that process transactions off-chain or in parallel batches, then periodically commit aggregated state changes to the main chain. Layer 2 solutions achieve dramatically higher throughput, lower fees, and improved user experience while inheriting the security guarantees of the underlying base layer. Principal approaches include rollups (optimistic and ZK), state channels, and sidechains.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -1347,7 +1347,29 @@ public:: true
       "label": "Smart Contract Platform"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:state-channel", "label": "State Channel"},
+      {"@id": "urn:ngm:class:sidechain", "label": "Sidechain"},
+      {"@id": "urn:ngm:class:lightning-network", "label": "Lightning Network"},
+      {"@id": "urn:ngm:class:lightning-and-similar-l2", "label": "Lightning and Similar L2"},
+      {"@id": "urn:ngm:class:layer2-scaling", "label": "Layer2Scaling"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
+      {"@id": "urn:ngm:class:cross-chain-bridge", "label": "Cross-Chain Bridge"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:blockchain-scalability", "label": "Blockchain Scalability"},
+      {"@id": "urn:ngm:class:blockchain-interoperability", "label": "Blockchain Interoperability"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:cross-chain-messaging", "label": "Cross-Chain Messaging"},
+      {"@id": "urn:ngm:class:transaction-confirmation", "label": "Transaction Confirmation"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

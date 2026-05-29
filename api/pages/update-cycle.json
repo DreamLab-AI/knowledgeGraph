@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:update-cycle",
   "domain": "infrastructure",
-  "definition": "Update Cycle is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "An Update Cycle is the recurring interval at which knowledge artefacts, links, or system components are reviewed and refreshed to maintain accuracy and relevance. In knowledge graph and documentation contexts, update cycles are defined per content type based on the rate of underlying change, balancing maintenance effort against information staleness.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-software-engineering",
@@ -13,8 +13,8 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -24,10 +24,28 @@
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:knowledge-management-system",
+        "label": "Knowledge Management System"
+      },
+      {
+        "id": "urn:ngm:class:documentation-standards",
+        "label": "Documentation Standards"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      },
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

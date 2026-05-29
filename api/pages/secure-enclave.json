@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:secure-enclave",
   "domain": "infrastructure",
-  "definition": "A hardware-isolated execution environment within a processor that protects cryptographic keys and sensitive computations from the host operating system and other software.",
+  "definition": "A secure enclave is a hardware-isolated execution environment embedded within a processor that maintains confidentiality and integrity guarantees for code and data even when the host operating system, hypervisor, or other privileged software is compromised. Implemented through technologies such as Intel SGX, ARM TrustZone, and AMD SEV, secure enclaves generate remote attestation proofs allowing verifiers to confirm that specific code is executing within a genuine enclave without trusting the surrounding software stack. They are foundational to confidential computing, trusted execution environments, and privacy-preserving distributed computation.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-security-and-identity",
@@ -14,11 +14,20 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      },
+      {
+        "id": "urn:ngm:class:privacy-preserving-technology",
+        "label": "Privacy Preserving Technology"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +36,20 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      },
+      {
+        "id": "urn:ngm:class:confidential-computing",
+        "label": "Confidential Computing"
+      },
+      {
+        "id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

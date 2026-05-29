@@ -7,6 +7,12 @@
 
 - ### Relationships
   - is-subclass-of:: ['owl:Thing']
+  - uses:: [[Transformer Architecture]]
+  - uses:: [[Attention Mechanism]]
+  - enables:: [[Large Language Models]]
+  - enables:: [[Question Answering]]
+  - enables:: [[Text Generation]]
+  - relatedTo:: [[Machine Translation]]
 
 - ### Content
 

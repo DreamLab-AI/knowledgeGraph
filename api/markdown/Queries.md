@@ -33,16 +33,31 @@ public:: true
   "@id": "urn:ngm:class:queries",
   "@type": "Class",
   "label": "Queries",
-  "definition": "Queries is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Queries, in the Logseq context, are structured Datalog or advanced query expressions embedded in pages using the `#+BEGIN_QUERY` / `#+END_QUERY` syntax. They dynamically retrieve and display blocks or pages matching specified conditions—such as filtering private pages by the absence of a `#Public` tag—without modifying underlying data. In the broader NarrativeGoldmine ontology, Queries represent the retrieval-layer mechanism that surfaces knowledge from the graph at read time.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-data-management",
       "label": "Data Management"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
+      {"@id": "urn:ngm:class:data-management", "label": "Data Management"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"},
+      {"@id": "urn:ngm:class:semantic-search", "label": "Semantic Search"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:database-query", "label": "Database Query"},
+      {"@id": "urn:ngm:class:semantic-web", "label": "Semantic Web"},
+      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -72,12 +87,14 @@ public:: true
 
 
 - ### Definition
-  - Queries is a concept within the ngm domain.
+  - Queries are structured Datalog or advanced query expressions embedded in Logseq pages using `#+BEGIN_QUERY` / `#+END_QUERY` syntax. They dynamically retrieve and display blocks or pages matching specified conditions without modifying underlying data. In the NarrativeGoldmine ontology, Queries represent the retrieval-layer mechanism that surfaces knowledge from the graph at read time.
 - ### Semantic Classification
   - owl-class:: infrastructure:Queries
   - owl-role:: Concept
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses:: [[Knowledge Graph]], [[Data Management]]
+  - enables:: [[Information Retrieval]], [[Semantic Search]]
+  - relatedTo:: [[Database Query]], [[Semantic Web]], [[Linked Data]]
 - ### Content
   - #+BEGIN_QUERY
   {

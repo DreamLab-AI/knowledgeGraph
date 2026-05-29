@@ -5,33 +5,73 @@
   "public": true,
   "classIri": "urn:ngm:class:rb-0068-vision-system",
   "domain": "robotics",
-  "definition": "vision system is a robotics and autonomous systems concept and a type of Robotics Systems.",
+  "definition": "A robotic vision system is an integrated sensor subsystem that captures and processes visual data\u2014using cameras, depth sensors, or LiDAR\u2014to provide a robot with spatial awareness, object recognition, and scene understanding capabilities. Vision systems underpin tasks including visual servoing, part inspection, SLAM-based localisation, and human-robot interaction, and conform to ISO 8373:2021 perception-system definitions.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-perception",
       "label": "Perception and Sensing"
-    },
-    {
-      "id": "urn:ngm:class:robotics-systems",
-      "label": "Robotics Systems"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:rb-0077-depth-camera",
+        "label": "rb 0077 depth camera"
+      },
+      {
+        "id": "urn:ngm:class:rb-0066-robot-sensor",
+        "label": "rb 0066 robot sensor"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:rb-0065-visual-servoing",
+        "label": "rb 0065 visual servoing"
+      },
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      },
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rb-0069-lidar",
+        "label": "rb 0069 lidar"
+      },
+      {
+        "id": "urn:ngm:class:perception-system",
+        "label": "Perception System"
+      }
+    ]
   },
   "wikilinks": [
     {

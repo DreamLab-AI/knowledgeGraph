@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:virtual-currency",
   "@type": "Class",
   "label": "Virtual Currency",
-  "definition": "A digital representation of value that is typically unregulated, issued and controlled by its developers, used and accepted electronically among members of a specific virtual community, including in-game currencies, platform tokens, and convertible digital currencies.",
+  "definition": "A digital representation of value issued and controlled by platform developers, used and accepted electronically within a specific virtual community. Virtual currencies include closed in-game currencies (e.g., World of Warcraft gold), hybrid purchasable tokens (e.g., Robux), and convertible currencies exchangeable for fiat money, each with distinct regulatory and economic implications.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -59,11 +60,44 @@ public:: true
       "label": "Digital Asset"
     }
   ],
-  "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:cross-metaverse-commerce",
+        "label": "Cross Metaverse Commerce"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "@id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      },
+      {
+        "@id": "urn:ngm:class:financial-system",
+        "label": "Financial System"
+      }
+    ]
   }
 }
 ```
@@ -109,6 +143,12 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Digital Asset]]
+  - Enables [[Cross Metaverse Commerce]]
+  - Uses [[Payment System]]
+  - Contrasts With [[Cryptocurrency]]
+  - Contrasts With [[Stablecoin]]
+  - Related To [[Token Economics]]
+  - Related To [[Financial System]]
 
 - ### Content
 

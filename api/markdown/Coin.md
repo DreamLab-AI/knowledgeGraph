@@ -66,9 +66,10 @@ public:: true
   "@id": "urn:ngm:class:coin",
   "@type": "Class",
   "label": "Coin",
-  "definition": "Native blockchain asset within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "A Coin is a native cryptographic asset issued and governed by a blockchain protocol itself, distinct from tokens created by smart contracts on top of an existing chain. Coins function as the primary medium of exchange for transaction fees, validator rewards, and network participation incentives within their respective distributed ledger ecosystems, and may also serve as stores of value, monetary reserves, or collateral in decentralised finance applications.",
   "domain": "blockchain",
   "maturity": "established",
+  "qualityScore": 0.8,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-token-and-asset",
@@ -83,7 +84,31 @@ public:: true
       "label": "EconomicMechanism"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:monetary-system", "label": "Monetary System"},
+      {"@id": "urn:ngm:class:payment-system", "label": "Payment System"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:mining-reward", "label": "Mining Reward"},
+      {"@id": "urn:ngm:class:stablecoin-token", "label": "Stablecoin Token"},
+      {"@id": "urn:ngm:class:digital-asset-market", "label": "Digital Asset Market"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:cryptocurrency-token", "label": "Cryptocurrency Token"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:cryptocurrency", "label": "Cryptocurrency"},
+      {"@id": "urn:ngm:class:digital-currency", "label": "Digital Currency"},
+      {"@id": "urn:ngm:class:central-bank-digital-currency", "label": "Central Bank Digital Currency"},
+      {"@id": "urn:ngm:class:monetary-sovereignty", "label": "Monetary Sovereignty"},
+      {"@id": "urn:ngm:class:economic-layer", "label": "Economic Layer"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -149,7 +174,7 @@ public:: true
 
 
 - ### Definition
-  - Native blockchain asset within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
+  A Coin is a native cryptographic asset issued by a blockchain protocol itself, distinct from smart-contract tokens deployed on top of an existing chain. Coins serve as the primary medium of exchange for transaction fees, validator rewards, and network participation incentives, and may also function as stores of value, monetary reserves, or DeFi collateral.
 
 - ### Semantic Classification
   - owl-class:: blockchain:Coin
@@ -159,7 +184,12 @@ public:: true
   - implemented-in-layer:: [[EconomicLayer]]
 
 - ### Relationships
-  - is-subclass-of:: [[Blockchain Entity]], [[EconomicMechanism]]
+  - is-subclass-of:: [[Blockchain Entity]], [[EconomicMechanism]], [[Token and Asset]]
+  - hasPart:: [[Monetary System]], [[Payment System]]
+  - requires:: [[Blockchain]], [[Consensus Mechanism]]
+  - enables:: [[Mining Reward]], [[Stablecoin Token]], [[Digital Asset Market]]
+  - contrastsWith:: [[Cryptocurrency Token]]
+  - relatedTo:: [[Cryptocurrency]], [[Digital Currency]], [[Central Bank Digital Currency]], [[Monetary Sovereignty]], [[Economic Layer]]
 
 - ### Content
 

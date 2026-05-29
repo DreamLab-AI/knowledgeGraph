@@ -37,16 +37,32 @@ public:: true
   "@id": "urn:ngm:class:realtime-communication",
   "@type": "Class",
   "label": "Realtime Communication",
-  "definition": "Realtime Communication is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Infrastructure and protocols enabling low-latency, synchronous exchange of audio, video, text, and data between participants. Realtime communication encompasses voice-over-IP, video conferencing, instant messaging, and presence systems that require end-to-end latency below perceptual thresholds (typically under 150 ms) to support coherent social interaction in both physical and virtual environments.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-network-and-comms",
       "label": "Network and Communication"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"},
+      {"@id": "urn:ngm:class:latency", "label": "Latency"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:realtime-collaboration", "label": "Realtime Collaboration"},
+      {"@id": "urn:ngm:class:immersive-communication", "label": "Immersive Communication"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:network-synchronization", "label": "Network Synchronization"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:metaverse-and-telecollaboration", "label": "Metaverse and Telecollaboration"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -76,14 +92,17 @@ public:: true
 
 
 - ### Definition
-  - RealtimeCommunication is a concept within the ngm domain.
+  - Infrastructure and protocols enabling low-latency, synchronous exchange of audio, video, text, and data between participants. Realtime communication encompasses voice-over-IP, video conferencing, instant messaging, and presence systems that require end-to-end latency below perceptual thresholds (typically under 150 ms) to support coherent social interaction in both physical and virtual environments.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:RealtimeCommunication
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires**: Network Protocol, Latency — synchronous communication depends on protocols that guarantee delivery ordering and on network latency remaining within acceptable bounds.
+  - **enables**: Realtime Collaboration, Immersive Communication — low-latency channels make co-presence and shared work feasible.
+  - **uses**: Network Synchronization — clock and state synchronisation mechanisms underpin reliable realtime sessions.
+  - **supports**: Metaverse and Telecollaboration — realtime communication is the essential infrastructure layer for metaverse social presence.
 
 - ### Content
   # RealtimeCommunication

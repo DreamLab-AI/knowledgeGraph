@@ -37,20 +37,58 @@ public:: true
   "@id": "urn:ngm:class:open-source-framework",
   "@type": "Class",
   "label": "Open Source Framework",
-  "definition": "Open Source Framework is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A publicly licensed software framework whose source code is freely available for inspection, modification, and redistribution under an approved open-source licence. Open source frameworks provide reusable architectural scaffolding—APIs, libraries, conventions, and tooling—that accelerate development whilst enabling community-driven quality assurance, security auditing, and interoperability across vendor boundaries.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
-  "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      },
+      {
+        "@id": "urn:ngm:class:api-standard",
+        "label": "API Standard"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-framework",
+        "label": "Machine Learning Framework"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
+      },
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:open-source-ai",
+        "label": "Open-Source AI"
+      }
+    ]
   }
 }
 ```
@@ -76,14 +114,17 @@ public:: true
 
 
 - ### Definition
-  - OpenSourceFramework is a concept within the ngm domain.
+  - A publicly licensed software framework whose source code is freely available for inspection, modification, and redistribution under an approved open-source licence. Open source frameworks provide reusable architectural scaffolding—APIs, libraries, conventions, and tooling—that accelerate development whilst enabling community-driven quality assurance, security auditing, and interoperability across vendor boundaries.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:OpenSourceFramework
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Has part [[Open Source Software]], [[API Standard]]
+  - Enables [[Interoperability]], [[Machine Learning Framework]]
+  - Supports [[Open-Source AI]]
+  - Related to [[Robot Operating System]], [[Game Engine]]
 
 - ### Content
   # OpenSourceFramework

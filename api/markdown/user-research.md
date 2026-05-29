@@ -7,6 +7,12 @@
 
 - ### Relationships
   - is-subclass-of:: [[Research Methods]]
+  - uses:: [[Eye Tracking]]
+  - uses:: [[Avatar]]
+  - supports:: [[Human Computer Interaction]]
+  - supports:: [[Accessibility]]
+  - relatedTo:: [[Immersive Experience]]
+  - relatedTo:: [[Virtual Reality]]
 
 - ### Content
 

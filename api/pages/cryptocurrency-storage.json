@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:cryptocurrency-storage",
   "domain": "blockchain",
-  "definition": "Cryptocurrency Storage is a blockchain and distributed systems concept and a type of Digital Wallet.",
+  "definition": "Cryptocurrency Storage encompasses the cryptographic key management systems and secure storage solutions for maintaining control over digital assets on blockchain networks. Architectures range from hot wallets with internet connectivity through cold storage hardware devices to multi-signature and threshold-signature schemes. Hierarchical Deterministic (HD) wallets following BIP32/BIP39 standards generate key trees from a single seed phrase, while institutional custody solutions leverage multi-party computation (MPC) and smart-contract-based social recovery for asset governance.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-network-component",
@@ -17,18 +17,46 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
     "enables": [],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ecdsa",
+        "label": "ECDSA"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:digital-asset-management",
+        "label": "Digital Asset Management"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": []

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:cybersecurity",
   "domain": "artificial-intelligence",
-  "definition": "Cybersecurity is a type of Artificial Intelligence in the artificial intelligence domain.",
+  "definition": "Cybersecurity is the discipline concerned with protecting computer systems, networks, and data from unauthorised access, damage, and attack. In the AI governance context it addresses adversarial threats to machine learning models, data poisoning, model extraction, and the use of AI techniques for automated threat detection, vulnerability analysis, and intrusion detection. It overlaps strongly with privacy, encryption, access control, and authentication.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -14,20 +14,55 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-security",
+        "label": "AI Security"
+      },
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:vulnerability",
+        "label": "Vulnerability"
+      }
+    ]
   },
   "wikilinks": [
     {

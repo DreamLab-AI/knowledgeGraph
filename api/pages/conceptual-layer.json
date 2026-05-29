@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:conceptual-layer",
   "domain": "infrastructure",
-  "definition": "The ConceptualLayer represents the abstraction level of pure concepts, theoretical models, principles, and design patterns that are independent of specific technical implementations or realizations.",
+  "definition": "The Conceptual Layer represents the highest abstraction level in an ontological classification system, encompassing pure concepts, theoretical models, design principles, and logical frameworks that are independent of specific technical implementations. Concepts at this layer can be realised through multiple concrete approaches while retaining their essential semantic properties.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-software-engineering",
@@ -14,20 +14,48 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:ontology-structure",
+        "label": "Ontology Structure"
+      }
+    ],
     "requires": [],
     "enables": [],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:protocol-layer",
+        "label": "Protocol Layer"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:software-architecture",
+        "label": "Software Architecture"
+      },
+      {
+        "id": "urn:ngm:class:system-architecture",
+        "label": "System Architecture"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

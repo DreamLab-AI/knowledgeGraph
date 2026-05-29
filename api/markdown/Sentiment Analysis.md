@@ -60,7 +60,7 @@ public:: true
   "label": "Sentiment Analysis",
   "definition": "Sentiment Analysis is the NLP task of determining the emotional tone, attitude, or opinion expressed in text, classifying content as positive, negative, or neutral, and extracting fine-grained emotional attributes.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-application",
@@ -71,6 +71,19 @@ public:: true
       "label": "Natural Language Processing"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:named-entity-recognition", "label": "Named Entity Recognition"},
+      {"@id": "urn:ngm:class:speech-recognition", "label": "Speech Recognition"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -135,7 +148,11 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses:: [[Transformer]]
+  - uses:: [[Large Language Models]]
+  - enables:: [[Information Retrieval]]
+  - relatedTo:: [[Named Entity Recognition]]
+  - relatedTo:: [[Speech Recognition]]
 
 - ### Content
   - Sentiment Analysis is the NLP task of determining the emotional tone, attitude, or opinion expressed in text, classifying content as positive, negative, or neutral, and extracting fine-grained emotional attributes. Sentiment analysis employs transformer-based classifiers to enable applications in social media monitoring, customer feedback analysis, market research, and brand reputation management.

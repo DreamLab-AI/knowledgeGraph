@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:drug-discovery",
   "domain": "artificial-intelligence",
-  "definition": "Drug Discovery is the AI-assisted process of identifying and optimising candidate therapeutic compounds, leveraging machine learning to predict molecular properties, protein structures, and biological activity.",
+  "definition": "AI-assisted drug discovery is the application of machine learning, deep learning, and generative modelling to accelerate and improve the identification, screening, and optimisation of candidate therapeutic compounds. Machine learning models predict molecular properties such as binding affinity, ADMET profiles (absorption, distribution, metabolism, excretion, toxicity), and off-target interactions from molecular structure representations. Generative models and graph neural networks are used to propose novel molecular scaffolds with desired properties. The field intersects cheminformatics, structural biology, and clinical informatics, and has seen significant acceleration from protein structure prediction tools such as AlphaFold.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-application",
@@ -14,7 +14,7 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,11 +23,33 @@
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "id": "urn:ngm:class:clinical-trials",
+        "label": "Clinical Trials"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

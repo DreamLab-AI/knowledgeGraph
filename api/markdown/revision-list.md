@@ -1,12 +1,14 @@
 - ### Definition
-  - Revision List is a concept within the ngm domain.
+  - A Revision List is a curated, task-tracked syllabus of technologies, frameworks, and concepts that a practitioner aims to learn or revisit, typically structured as a prioritised backlog with completion states. In a data science and AI context, such a list spans programming languages, ML frameworks, cloud platforms, DevOps tooling, and conceptual foundations such as deep learning, NLP, and reinforcement learning. It functions as a personal knowledge-gap audit and learning roadmap.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:RevisionList
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **hasPart**: Machine Learning, Deep Learning
+  - **relatedTo**: Machine Learning Pipeline, Python and PyTorch
+  - **enables**: Knowledge Management
 
 - ### Content
   - from here [xandie985/data-scientist-roadmap2024 (github.com)](https://github.com/xandie985/data-scientist-roadmap2024?tab=readme-ov-file)

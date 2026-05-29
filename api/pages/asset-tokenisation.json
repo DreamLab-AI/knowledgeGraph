@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:asset-tokenisation",
   "domain": "blockchain",
-  "definition": "Asset tokenisation is the process of representing ownership rights in a real-world or digital asset as on-chain tokens, enabling fractional ownership and programmable transfer.",
+  "definition": "Asset tokenisation is the process of creating a blockchain-based digital token that represents a legally binding claim to ownership, revenue rights, or access rights in an underlying real-world or digital asset \u2014 such as real estate, private equity, bonds, commodities, or intellectual property. By encoding ownership on a programmable ledger, tokenisation enables fractional ownership at low minimum investment thresholds, continuous secondary trading, automated compliance through smart contract logic, and global settlement without traditional intermediaries. It sits at the convergence of financial regulation, smart contract engineering, and digital asset infrastructure.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-token-and-asset",
@@ -14,20 +14,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:real-world-asset-tokenisation",
+        "label": "Real-World Asset Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

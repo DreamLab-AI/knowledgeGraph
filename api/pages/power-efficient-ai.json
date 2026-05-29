@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:power-efficient-ai",
   "domain": "artificial-intelligence",
-  "definition": "Power-Efficient AI optimizes machine learning systems to minimize energy consumption during inference and training, critical for battery-powered edge devices, IoT sensors, and mobile platforms requiring extended deployment lifetimes.",
+  "definition": "Power-Efficient AI is a design and optimisation discipline that minimises energy consumption during machine learning inference and training, enabling deployment on battery-powered edge devices, IoT sensors, and mobile platforms with constrained power budgets. It combines hardware-level techniques (dynamic voltage and frequency scaling, power gating, specialised neural processing units) with model-level optimisations (quantisation to INT8/FP16, pruning, knowledge distillation) to achieve high inference throughput per watt. Efficiency is typically measured in TOPS/Watt, and sub-10mW average power envelopes are required for month-to-year deployment lifetimes in wearable and environmental sensing applications.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -13,21 +13,81 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:edge-ai-system",
+        "label": "Edge AI System"
+      },
+      {
+        "id": "urn:ngm:class:embedded-ai-frameworks",
+        "label": "Embedded AI Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:federated-edge-learning",
+        "label": "Federated Edge Learning"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:npu",
+        "label": "NPU"
+      },
+      {
+        "id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
+      },
+      {
+        "id": "urn:ngm:class:model-compression-for-edge",
+        "label": "Model Compression for Edge"
+      },
+      {
+        "id": "urn:ngm:class:model-pruning-for-edge-deployment",
+        "label": "Model Pruning for Edge Deployment"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-energy-scarcity",
+        "label": "AI Energy Scarcity"
+      },
+      {
+        "id": "urn:ngm:class:sustainable-technology",
+        "label": "Sustainable Technology"
+      },
+      {
+        "id": "urn:ngm:class:io-t-sensors",
+        "label": "Io T Sensors"
+      },
+      {
+        "id": "urn:ngm:class:edge-ai-accelerator",
+        "label": "Edge AI Accelerator"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -6,7 +6,13 @@
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart [[API Gateway]]
+  - hasPart [[JSON-RPC]]
+  - hasPart [[Price Oracle]]
+  - enables [[Cross-Chain Bridge]]
+  - enables [[Interoperability]]
+  - bridgesTo [[Smart Contract]]
+  - bridgesTo [[Distributed System]]
 
 - ### Content
   - **Classification**

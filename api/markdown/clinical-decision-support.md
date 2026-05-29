@@ -8,6 +8,13 @@
 
 - ### Relationships
   - bridges-to:: [[Telecollaboration]]
+  - uses [[Medical AI]]
+  - uses [[Knowledge Representation]]
+  - uses [[Natural Language Processing]]
+  - enables [[Treatment Planning AI]]
+  - enables [[Medical Diagnosis AI]]
+  - requires [[Interoperability]]
+  - requires [[Data Integration]]
 
 - ### Content
   - Clinical Decision Support (CDS) refers to AI systems that provide healthcare professionals with patient-specific assessments, recommendations, and information to support clinical decision-making at the point of care. CDS systems integrate patient data, medical knowledge bases, clinical guidelines, and evidence-based protocols to assist in diagnosis, treatment selection, medication management, and care coordination whilst maintaining clinician autonomy and clinical judgement.

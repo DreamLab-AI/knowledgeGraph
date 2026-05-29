@@ -5,28 +5,29 @@
   "public": true,
   "classIri": "urn:ngm:class:difficulty-adjustment",
   "domain": "blockchain",
-  "definition": "Mining difficulty recalibration within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "Difficulty Adjustment is a Proof-of-Work consensus mechanism that periodically recalibrates the cryptographic puzzle difficulty so that blocks are produced at a statistically stable rate (e.g., approximately every 10 minutes in Bitcoin). It ensures network stability and security as total hash rate fluctuates.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-protocol-and-consensus",
       "label": "Protocol and Consensus"
-    },
-    {
-      "id": "urn:ngm:class:blockchain-entity",
-      "label": "Blockchain Entity"
-    },
-    {
-      "id": "urn:ngm:class:consensus-protocol",
-      "label": "ConsensusProtocol"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:validator-node",
+        "label": "Validator Node"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -34,8 +35,38 @@
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:mining",
+        "label": "Mining"
+      },
+      {
+        "id": "urn:ngm:class:block-reward",
+        "label": "Block Reward"
+      },
+      {
+        "id": "urn:ngm:class:miner",
+        "label": "Miner"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:transaction-fee",
+        "label": "Transaction Fee"
+      }
+    ]
   },
   "wikilinks": [
     {

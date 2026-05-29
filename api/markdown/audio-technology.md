@@ -1,5 +1,5 @@
 - ### Definition
-  - Audio Technology is a concept within the metaverse domain. Further enrichment pending.
+  - The hardware, software, and signal-processing techniques used to capture, synthesise, spatialise, and reproduce sound within spatial computing and metaverse environments. Audio technology in immersive contexts encompasses spatial audio rendering, binaural processing, voice interaction, and real-time acoustic simulation to enhance presence and communication fidelity.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:AudioTechnology
@@ -7,6 +7,11 @@
 
 - ### Relationships
   - bridges-to:: [[Telepresence]] (tc)
+  - Has Part: [[Spatial Audio]]
+  - Has Part: [[Immersive Audio Technology]]
+  - Enables: [[Virtual Presence]]
+  - Enables: [[Voice Interaction]]
+  - Uses: [[Audio Processing System]]
 
 - ### Content
 

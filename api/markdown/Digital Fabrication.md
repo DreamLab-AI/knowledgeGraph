@@ -62,10 +62,10 @@ public:: true
   "@id": "urn:ngm:class:digital-fabrication",
   "@type": "Class",
   "label": "Digital Fabrication",
-  "definition": "Digital Fabrication in the AI context refers to the integration of artificial intelligence with additive manufacturing, CNC machining, and automated production technologies.",
+  "definition": "Digital Fabrication, in the AI context, integrates artificial intelligence with additive manufacturing, CNC machining, and robotic production technologies to optimise fabrication processes. AI enables generative design for novel geometries, predictive maintenance via sensor analytics, real-time quality control through computer vision, and adaptive toolpath planning using reinforcement learning. Machine learning models predict material behaviour, detect defects, and enable mass customisation through digital twin simulation before physical production.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
-  "quality": 0.35,
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -76,7 +76,23 @@ public:: true
       "@id": "urn:ngm:class:ai-application",
       "label": "AI Application"
     }
-  ]
+  ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
+      {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:digital-asset-management", "label": "Digital Asset Management"}
+    ]
+  }
 }
 ```
 
@@ -139,7 +155,11 @@ public:: true
   - owl-role:: concept
 
 - ### Relationships
-  - is-subclass-of:: ['owl:Thing']
+  - **uses**: Computer Vision, Reinforcement Learning (vision-based quality control and RL-optimised toolpaths)
+  - **requires**: Digital Twin (simulation-first design validation before physical production)
+  - **enables**: Robotics, Autonomous Robot (AI-driven fabrication systems are a subclass of robotic automation)
+  - **supports**: Digital Asset Management (fabricated physical assets are linked to their digital representations)
+
   - bridges-to:: [[Autonomous Robot]], [[Digital Twin]]
 
 - ### Content

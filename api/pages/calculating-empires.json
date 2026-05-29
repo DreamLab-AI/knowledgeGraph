@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:calculating-empires",
   "domain": "infrastructure",
-  "definition": "Calculating Empires is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Calculating Empires is a large-scale research visualisation project by Kate Crawford and Vladan Joler that maps the co-evolution of technology and power structures from 1500 to the present. The work contextualises contemporary AI within five centuries of imperial infrastructure, surveillance, and control systems, foregrounding continuities between historical colonialism and digital power.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-software-engineering",
@@ -14,20 +14,48 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:cyber-security-and-military",
+        "label": "Cyber Security and Military"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-society-surveillance",
+        "label": "Digital Society Surveillance"
+      },
+      {
+        "id": "urn:ngm:class:education-and-ai",
+        "label": "Education and AI"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:digital-rights",
+        "label": "Digital Rights"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:politics-law-privacy",
+        "label": "Politics, Law, Privacy"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -62,7 +62,7 @@ public:: true
   "@id": "urn:ngm:class:parameter-efficient-fine-tuning",
   "@type": "Class",
   "label": "Parameter-Efficient Fine-Tuning",
-  "definition": "Training techniques that update only a small subset of model parameters during fine-tuning, reducing computational and memory requirements whilst maintaining comparable performance to full fine-tuning. PEFT mods enable adaptation of large models with limited resources.",
+  "definition": "Training techniques that update only a small subset of model parameters during fine-tuning, reducing computational and memory requirements whilst maintaining comparable performance to full fine-tuning. PEFT methods enable adaptation of large models with limited resources by freezing most pre-trained weights and adding or modifying a minimal set of trainable parameters.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -71,7 +71,26 @@ public:: true
       "label": "AI Technique"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:lo-ra-fine-tuning", "label": "LoRA Fine-Tuning"},
+      {"@id": "urn:ngm:class:adapter-modules", "label": "Adapter Modules"},
+      {"@id": "urn:ngm:class:prompt-tuning", "label": "Prompt Tuning"},
+      {"@id": "urn:ngm:class:prefix-tuning", "label": "Prefix Tuning"},
+      {"@id": "urn:ngm:class:qlo-ra", "label": "QLoRA"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:full-fine-tuning", "label": "Full Fine Tuning"},
+      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
+      {"@id": "urn:ngm:class:knowledge-distillation", "label": "Knowledge Distillation"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
+      {"@id": "urn:ngm:class:model-training", "label": "Model Training"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

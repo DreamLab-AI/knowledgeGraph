@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:neural-networking",
   "domain": "artificial-intelligence",
-  "definition": "Neural Networking is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "The application of artificial neural network architectures \u2014 including convolutional, recurrent, and transformer-based models \u2014 to optimise network routing, traffic prediction, and resource allocation in communication infrastructure. Neural networking extends classical networking by replacing heuristic control planes with learned, data-driven decision policies.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-model-architecture",
@@ -13,18 +13,50 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:networking-technology",
+        "label": "Networking Technology"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:ai-technique",
+        "label": "AI Technique"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:real-time",
+        "label": "Real Time"
+      },
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": []

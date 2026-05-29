@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:fatf",
   "domain": "infrastructure",
-  "definition": "The Financial Action Task Force (FATF) is an intergovernmental body that sets international standards and promotes policies to combat money laundering, terrorist financing, and related threats to the financial system.",
+  "definition": "The Financial Action Task Force (FATF) is an intergovernmental policy-making body founded in 1989 that sets global standards for combating money laundering, terrorist financing, and proliferation financing. Its 40 Recommendations constitute the international framework that member jurisdictions are expected to implement through national legislation and regulatory action. FATF conducts mutual evaluations of member countries' compliance, publishes grey and black lists of high-risk jurisdictions, and issues guidance on emerging risks including those arising from virtual assets and virtual asset service providers.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-legal-and-regulatory",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:standards-organization",
+        "label": "Standards Organization"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:fatf-travel-rule",
+        "label": "FATF Travel Rule"
+      },
+      {
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "id": "urn:ngm:class:virtual-asset",
+        "label": "Virtual Asset"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

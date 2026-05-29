@@ -50,9 +50,10 @@ public:: true
   "@id": "urn:ngm:class:standards-documentation",
   "@type": "Class",
   "label": "Standards Documentation",
-  "definition": "Established guidelines, rules, and best practices that govern the creation of technical documentation, including structure, formatting conventions, terminology usage, delivery mods, and presentation to ensure consistency, clarity, and accuracy across all content.",
+  "definition": "Established guidelines, rules, and best practices that govern the creation of technical documentation, including structure, formatting conventions, terminology usage, delivery methods, and presentation to ensure consistency, clarity, and accuracy across all content. Standards documentation underpins interoperability, regulatory compliance, and knowledge transfer in technical domains.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-standards-and-interop",
@@ -68,6 +69,40 @@ public:: true
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:technical-standard",
+        "label": "Technical Standard"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:standards-conformance",
+        "label": "Standards Conformance"
+      },
+      {
+        "@id": "urn:ngm:class:standards-validation",
+        "label": "Standards Validation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:standards-body",
+        "label": "Standards Body"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:standards-compliance",
+        "label": "Standards Compliance"
+      }
+    ]
   }
 }
 ```
@@ -119,6 +154,12 @@ public:: true
 - ### Relationships
   - is-subclass-of:: [[Standards]]
   - bridges-to:: [[Blockchain]] (domain: bc) for transparent standards management and versioning
+  - Requires [[Technical Standard]]
+  - Supports [[Interoperability]]
+  - Supports [[Standards Compliance]]
+  - Enables [[Standards Conformance]]
+  - Enables [[Standards Validation]]
+  - Related To [[Standards Body]]
 
 - ### Content
 

@@ -54,21 +54,55 @@ public:: true
   "@id": "urn:ngm:class:heuristic-methods",
   "@type": "Class",
   "label": "Heuristic Methods",
-  "definition": "Heuristic Mods in AI are problem-solving approaches that employ practical, experience-based techniques to find satisfactory solutions when optimal solutions are computationally infeasible.",
+  "definition": "Heuristic methods in AI are problem-solving approaches that employ practical, experience-based techniques to find satisfactory solutions when optimal solutions are computationally infeasible. They include search heuristics such as A* and hill climbing, rule-of-thumb strategies, and metaheuristics such as genetic algorithms and simulated annealing, trading completeness for efficiency in combinatorial optimisation and planning tasks.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
-  "quality": 0.35,
-  "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
-  },
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
     }
-  ]
+  ],
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:automated-planning",
+        "label": "Automated Planning"
+      },
+      {
+        "@id": "urn:ngm:class:pathfinding-algorithm",
+        "label": "Pathfinding Algorithm"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:search-algorithm",
+        "label": "Search Algorithm"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:search-algorithms",
+        "label": "Search Algorithms"
+      },
+      {
+        "@id": "urn:ngm:class:optimization-algorithm",
+        "label": "Optimization Algorithm"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:planning-and-scheduling",
+        "label": "Planning and Scheduling"
+      }
+    ]
+  }
 }
 ```
 
@@ -121,7 +155,13 @@ public:: true
   - owl-role:: concept
 
 - ### Relationships
-  - is-subclass-of:: ['owl:Thing']
+  - is-subclass-of:: [[AI Technique]]
+  - Uses [[Search Algorithms]]
+  - Uses [[Optimization Algorithm]]
+  - Enables [[Automated Planning]]
+  - Enables [[Pathfinding Algorithm]]
+  - Depends on [[Search Algorithm]]
+  - Related to [[Planning and Scheduling]]
 
 - ### Content
 

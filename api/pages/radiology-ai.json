@@ -5,33 +5,56 @@
   "public": true,
   "classIri": "urn:ngm:class:radiology-ai",
   "domain": "artificial-intelligence",
-  "definition": "Radiology AI refers to artificial intelligence systems specifically designed for the interpretation and analysis of radiological imaging modalities including X-ray, computed tomography (CT), magnetic resonance imaging (MRI), and ultrasound.",
+  "definition": "Radiology AI comprises artificial intelligence systems designed for automated interpretation and quantitative analysis of radiological imaging modalities \u2014 X-ray, CT, MRI, and ultrasound. These systems perform lesion detection, organ segmentation, and structured reporting at radiologist-level accuracy, integrating with PACS workflows and validated through prospective clinical trials.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-application",
       "label": "AI Application"
     },
     {
-      "id": "urn:ngm:class:vision-processing",
-      "label": "Vision Processing"
+      "id": "urn:ngm:class:medical-imaging-ai",
+      "label": "Medical Imaging AI"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:medical-imaging",
+        "label": "Medical Imaging"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:image-segmentation",
+        "label": "Image Segmentation"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      }
+    ]
   },
   "wikilinks": [
     {

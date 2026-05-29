@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:full-node",
   "domain": "blockchain",
-  "definition": "Complete blockchain copy maintainer within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "A blockchain node that independently downloads, validates, and stores the complete transaction history of the chain from the genesis block, enforcing all consensus rules without trusting external parties. Full nodes are the gold standard for trustless participation and are the backbone of decentralisation.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-network-component",
@@ -21,12 +21,26 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-verification",
+        "label": "Cryptographic Verification"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -34,8 +48,34 @@
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:node",
+        "label": "Node"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:archival-node",
+        "label": "Archival Node"
+      },
+      {
+        "id": "urn:ngm:class:decentralization",
+        "label": "Decentralization"
+      },
+      {
+        "id": "urn:ngm:class:consensus-rule",
+        "label": "Consensus Rule"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-infrastructure",
+        "label": "Blockchain Infrastructure"
+      }
+    ]
   },
   "wikilinks": [
     {

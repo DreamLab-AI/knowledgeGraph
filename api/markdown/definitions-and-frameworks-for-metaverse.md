@@ -6,6 +6,10 @@
   - owl-role:: Concept
 
 - ### Relationships
+  - **hasPart**: Metaverse, Telecollaboration (core concepts the framework covers and structures)
+  - **uses**: Blockchain, Augmented Reality (technologies surveyed as enabling infrastructure)
+  - **relatedTo**: Digital Twin, AI Governance (adjacent domains informing metaverse design decisions)
+
   - bridges-to:: [[Computer Vision]] or [[Blockchain]] or [[Telecollaboration]]
 
 - ### Content

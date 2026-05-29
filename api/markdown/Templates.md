@@ -33,16 +33,29 @@ public:: true
   "@id": "urn:ngm:class:templates",
   "@type": "Class",
   "label": "Templates",
-  "definition": "Templates is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Templates are reusable structural scaffolds in software engineering and knowledge management that define a fixed format or pattern into which variable content is inserted. They reduce repetition, enforce consistency, and accelerate authoring across code generation, documentation, and prompt engineering workflows.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:code-generation", "label": "Code Generation"},
+      {"@id": "urn:ngm:class:documentation-generation", "label": "Documentation Generation"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:knowledge-management", "label": "Knowledge Management"},
+      {"@id": "urn:ngm:class:knowledge-management-system", "label": "Knowledge Management System"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -72,14 +85,16 @@ public:: true
 
 
 - ### Definition
-  - Templates is a concept within the ngm domain.
+  Templates are reusable structural scaffolds in software engineering and knowledge management that define a fixed format or pattern into which variable content is inserted. They reduce repetition, enforce consistency, and accelerate authoring across code generation, documentation, and prompt engineering workflows.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:Templates
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **enables**: Code Generation, Documentation Generation
+  - **uses**: Prompt Engineering
+  - **relatedTo**: Knowledge Management, Knowledge Management System
 
 - ### Content
   ```

@@ -7,7 +7,9 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - bridges-to:: [[AI Agent System]]
+  - standardizedBy:: [[EU AI Act]]
+  - requires:: [[AI Risk Management]], [[Human Oversight]]
+  - relatedTo:: [[AI Provider]], [[AI Lifecycle]], [[General Purpose AI Model]]
 
 - ### Content
   - A machine-based system that can operate autonomously and adapt after deployment, generating outputs like predictions or decisions.

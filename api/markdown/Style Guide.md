@@ -42,16 +42,32 @@ public:: true
   "@id": "urn:ngm:class:style-guide",
   "@type": "Class",
   "label": "Style Guide",
-  "definition": "Style Guide is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A Style Guide is a normative document specifying authoring conventions — voice, tone, markup syntax, citation format, and structural patterns — for consistent content creation within a knowledge graph or publication system. In the NarrativeGoldmine context it captures Logseq markdown conventions, UK English preferences, and the analytical-conversational register used throughout the graph.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "supports": [
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
+      {"@id": "urn:ngm:class:ontology", "label": "Ontology"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:software-engineering", "label": "Software Engineering"},
+      {"@id": "urn:ngm:class:semantic-web-standards", "label": "Semantic Web Standards"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:open-standard", "label": "Open Standard"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:knowledge-graph-construction", "label": "Knowledge Graph Construction"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -92,14 +108,17 @@ public:: true
 
 
 - ### Definition
-  - Style Guide is a concept within the ngm domain.
+  - A Style Guide is a normative document specifying authoring conventions — voice, tone, markup syntax, citation format, and structural patterns — for consistent content creation within a knowledge graph or publication system. In the NarrativeGoldmine context it captures Logseq markdown conventions, UK English preferences, and the analytical-conversational register used throughout the graph.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:StyleGuide
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - supports:: Knowledge Graph, Ontology
+  - relatedTo:: Software Engineering, Semantic Web Standards
+  - standardizedBy:: Open Standard
+  - enables:: Knowledge Graph Construction
 
 - ### Content
   - This guide aims to capture the stylistic nuances of the provided text for accurate imitation by an LLM. It focuses on replicating the author's voice, tone, and the specific Logseq markdown and markup conventions.

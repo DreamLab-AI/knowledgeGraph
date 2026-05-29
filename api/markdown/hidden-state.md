@@ -1,13 +1,18 @@
 - ### Definition
-  - The vector representation of a token or sequence at any layer in a neural network, encoding contextualised information learned by the model.
+  - The vector representation of a token or sequence at any layer in a neural network, encoding contextualised information learned by the model. Hidden states are progressively refined through self-attention and feed-forward transformations, with deeper layers capturing increasingly abstract semantic features used in downstream tasks.
 
 - ### Semantic Classification
-  - owl-class:: spatial-computing:HiddenState
+  - owl-class:: artificial-intelligence:HiddenState
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **partOf** [[Neural Network]] — hidden states are the intermediate activations within a neural network's forward pass
+  - **partOf** [[Transformer]] — transformer layers produce and consume hidden states at each processing step
+  - **requires** [[Token Embedding]] — token embeddings are the initial hidden states fed into the first layer
+  - **enables** [[Language Modeling]] — hidden states encode contextualised information used for next-token prediction
+  - **enables** [[Transfer Learning]] — pre-trained hidden state representations are transferred to downstream tasks
+  - **relatedTo** [[Attention Mechanism]] — self-attention combines hidden states across sequence positions
 
 - ### Content
   - The vector representation of a token or sequence at any layer in a neural network, encoding contextualised information learned by the model.

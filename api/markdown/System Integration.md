@@ -37,15 +37,28 @@ public:: true
   "@id": "urn:ngm:class:system-integration",
   "@type": "Class",
   "label": "System Integration",
-  "definition": "System Integration is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "System Integration is the engineering practice of combining disparate software components, services, and data sources into a coherent, functioning whole. It encompasses API design and management, middleware orchestration, event-driven messaging, ETL pipelines, and identity federation to ensure that independently developed subsystems exchange information reliably and consistently across organisational and technical boundaries.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:middleware", "label": "Middleware"},
+      {"@id": "urn:ngm:class:api-gateway", "label": "API Gateway"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"},
+      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event Driven Architecture"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -76,14 +89,18 @@ public:: true
 
 
 - ### Definition
-  - SystemIntegration is a concept within the ngm domain.
+  - System Integration is the engineering practice of combining disparate software components, services, and data sources into a coherent, functioning whole. It encompasses API design and management, middleware orchestration, event-driven messaging, ETL pipelines, and identity federation to ensure that independently developed subsystems exchange information reliably and consistently across organisational and technical boundaries.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:SystemIntegration
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Middleware]]
+  - requires [[API Gateway]]
+  - enables [[Interoperability]]
+  - enables [[Data Pipeline]]
+  - relatedTo [[Event Driven Architecture]]
 
 - ### Content
   # SystemIntegration

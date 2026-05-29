@@ -5,7 +5,10 @@
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **Part-of**: [[Training]] pipeline (initial phase)
+  - **Enables**: [[Deep Learning]] model stability at scale
+  - **Requires**: [[Learning Rate Schedule]] (warmup precedes main schedule), [[Optimiser]] (Adam, AdamW, SGD)
+  - **Uses**: [[Gradient Descent]] (warm-up modulates step magnitude)
 - ### Content
   - A training technique where the learning rate starts small and gradually increases at the beginning of training to stabilise optimisation. Warmup is standard practice for training large transformer models, preventing instability from large gradients early in training.
   #### Key Characteristics

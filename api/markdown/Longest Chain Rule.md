@@ -66,7 +66,7 @@ public:: true
   "@id": "urn:ngm:class:longest-chain-rule",
   "@type": "Class",
   "label": "Longest Chain Rule",
-  "definition": "Chain selection mechanism within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "The fork-choice rule used in proof-of-work blockchains that designates the chain with the most cumulative work (or greatest total difficulty) as the canonical chain. It resolves temporary forks by directing nodes to extend the heaviest chain, thereby converging the distributed network on a single transaction history.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -83,7 +83,27 @@ public:: true
       "label": "ConsensusProtocol"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
+      {"@id": "urn:ngm:class:consensus-algorithm", "label": "Consensus Algorithm"},
+      {"@id": "urn:ngm:class:difficulty-adjustment", "label": "Difficulty Adjustment"},
+      {"@id": "urn:ngm:class:chain-reorganization", "label": "Chain Reorganization"},
+      {"@id": "urn:ngm:class:selfish-mining", "label": "Selfish Mining"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:block", "label": "Block"},
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:decentralization", "label": "Decentralization"},
+      {"@id": "urn:ngm:class:blockchain-protocol", "label": "Blockchain Protocol"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:51-attack", "label": "51% Attack"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

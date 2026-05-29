@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:quadruped-robot",
   "domain": "robotics",
-  "definition": "Quadruped robot walks on four legs with gaits inspired by mammals like dogs or cats.",
+  "definition": "A robotic platform that locomotes on four legs using gaits inspired by mammals such as dogs and cats. Quadruped robots employ reinforcement learning, model-predictive control, and whole-body dynamics to achieve robust locomotion over rough terrain, enabling deployment in inspection, search-and-rescue, and logistics applications.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-robot-type",
@@ -17,21 +17,64 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:ngm:class:whole-body-control",
+        "label": "Whole Body Control"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:robot-control",
+        "label": "Robot Control"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:robot-kinematics",
+        "label": "Robot Kinematics"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:humanoid-robot",
+        "label": "Humanoid Robot"
+      },
+      {
+        "id": "urn:ngm:class:mobile-robot",
+        "label": "Mobile Robot"
+      },
+      {
+        "id": "urn:ngm:class:robotic-system",
+        "label": "Robotic System"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      }
+    ]
   },
   "wikilinks": [
     {

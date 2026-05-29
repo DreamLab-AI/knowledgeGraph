@@ -33,15 +33,29 @@ public:: true
   "@id": "urn:ngm:class:responsible-ai-unconference",
   "@type": "Class",
   "label": "Responsible AI Unconference",
-  "definition": "Responsible AI Unconference is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "A Responsible AI Unconference is a participant-driven gathering that applies open-space technology to surface and negotiate ethical, social, and governance concerns around artificial intelligence. Unlike traditional conferences, the agenda is set on the day by attendees, enabling communities—artists, technologists, marginalised groups, and policymakers—to co-author discussions on topics such as bias, child-centric AI, feminist design, and the boundaries of acceptable automation. The format foregrounds perspectives historically excluded from mainstream AI discourse.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
     }
   ],
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
+      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
+      {"@id": "urn:ngm:class:diversity-non-discrimination-and-fairness", "label": "Diversity, Non-Discrimination, and Fairness"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:algorithmic-bias", "label": "Algorithmic Bias"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -72,14 +86,16 @@ public:: true
 
 
 - ### Definition
-  - Responsible AI Unconference is a concept within the ngm domain.
+  - A Responsible AI Unconference is a participant-driven gathering that applies open-space technology to surface and negotiate ethical, social, and governance concerns around artificial intelligence. Unlike traditional conferences, the agenda is set on the day by attendees, enabling communities—artists, technologists, marginalised groups, and policymakers—to co-author discussions on topics such as bias, child-centric AI, feminist design, and the boundaries of acceptable automation. The format foregrounds perspectives historically excluded from mainstream AI discourse.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:ResponsibleAIUnconference
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **relatedTo**: Responsible AI, AI Ethics
+  - **enables**: AI Governance, Diversity Non-Discrimination and Fairness
+  - **contrastsWith**: Algorithmic Bias
 
 - ### Content
   - Report will be made from the unconference

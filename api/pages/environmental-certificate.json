@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:environmental-certificate",
   "domain": "spatial-computing",
-  "definition": "Environmental Certificate is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "A verifiable credential or token attesting that a digital platform, virtual environment, or computational process meets defined environmental sustainability thresholds. Environmental certificates underpin accountability frameworks for metaverse and spatial computing infrastructure by providing tamper-evident proof of carbon offset, renewable energy use, or compliance with environmental KPIs.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-governance-and-safety",
@@ -13,21 +13,45 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:interoperability-framework",
+        "label": "Interoperability Framework"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:environmental-k-p-i",
+        "label": "Environmental K P I"
+      },
+      {
+        "id": "urn:ngm:class:carbon-credit-token",
+        "label": "Carbon Credit Token"
+      }
+    ]
   },
   "wikilinks": [
     {

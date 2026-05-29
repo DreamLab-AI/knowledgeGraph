@@ -1,12 +1,17 @@
 - ### Definition
-  - Calibration Equipment is a concept within the metaverse domain. Further enrichment pending.
+  - Physical instruments and reference artefacts used to measure, adjust, and verify the accuracy of sensors, displays, and tracking systems in spatial computing deployments. Calibration equipment includes colour reference targets, IMU calibration boards, structured-light patterns, and photometric probes, all of which underpin the geometric and radiometric correctness of XR pipelines.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:CalibrationEquipment
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses [[Calibration]]
+  - Uses [[Calibration Target]]
+  - Supports [[Computer Vision]]
+  - Supports [[Sensor Fusion]]
+  - Related To [[Display Metrology]]
+  - Related To [[Photogrammetry]]
 
 - ### Content
 

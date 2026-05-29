@@ -6,7 +6,10 @@
   - owl-role:: concept
 
 - ### Relationships
-  - is-subclass-of:: ['owl:Thing']
+  - **uses**: [[Active Learning]], [[Reinforcement Learning from Human Feedback]]
+  - **requires**: [[Human in the Loop]], [[Machine Learning]]
+  - **supports**: [[AI Alignment]], [[Value Alignment]]
+  - **relatedTo**: [[Training Data]]
 
 - ### Content
 

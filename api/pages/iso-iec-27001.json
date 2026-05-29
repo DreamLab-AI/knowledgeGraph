@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:iso-iec-27001",
   "domain": "infrastructure",
-  "definition": "An international standard specifying requirements for establishing, implementing, maintaining, and continually improving an information security management system within an organisation.",
+  "definition": "ISO/IEC 27001 is an internationally recognised standard that specifies the requirements for establishing, implementing, maintaining, and continually improving an Information Security Management System (ISMS) within the context of an organisation's overall business risks. It adopts a risk-based approach, requiring organisations to systematically identify information security risks and apply appropriate controls drawn from Annex A. Certification against ISO/IEC 27001 provides third-party assurance of an organisation's commitment to protecting the confidentiality, integrity, and availability of information assets.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-legal-and-regulatory",
@@ -14,11 +14,29 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:information-security",
+        "label": "Information Security"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +45,16 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

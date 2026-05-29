@@ -62,16 +62,31 @@ public:: true
   "@id": "urn:ngm:class:ontology-definition",
   "@type": "Class",
   "label": "Ontology Definition",
-  "definition": "A formal, explicit specification of metaverse concepts, relationships, and axioms using knowledge representation frameworks (OWL, RDF, JSON-LD), defining entities through orthogonal dimensions (physicality, role) enabling semantic interoperability and automated classification across platforms—fou...",
+  "definition": "A formal, explicit specification of metaverse concepts, relationships, and axioms using knowledge representation frameworks (OWL, RDF, JSON-LD), defining entities through orthogonal dimensions (physicality, role) to enable semantic interoperability and automated classification across platforms. Ontologies provide foundational standards for governance, identity, and asset management, supporting machine-readable reasoning, validation, and discovery across federated and distributed systems.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
-  "quality": 0.4,
+  "qualityScore": 0.7,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"},
+      {"@id": "urn:ngm:class:semantic-web", "label": "Semantic Web"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"},
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:metaverse-ontology", "label": "Metaverse Ontology"},
+      {"@id": "urn:ngm:class:identity-management", "label": "Identity Management"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -140,7 +155,9 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses: [[Knowledge Representation]], [[Semantic Web]]
+  - enables: [[Interoperability]], [[Knowledge Graph]], [[Data Governance]]
+  - supports: [[Metaverse Ontology]], [[Identity Management]]
 
 - ### Content
   - Formal, explicit specification of metaverse concepts, relationships, and axioms using knowledge representation frameworks—[[OWL]], [[RDF]], [[JSON-LD]]—defining entities through orthogonal dimensions (physicality, role) enabling semantic interoperability and automated classification across platforms. Ontologies provide foundational standards for governance, identity, and asset management standardisation, enabling consistent data representation across [[Metaverse|metaverse]] platforms, federated systems, and [[InteroperabilityProtocol|interoperability]] layers. Machine-readable ontologies enable automated reasoning, validation, and discovery of semantic relationships supporting intelligent applications and standards alignment.

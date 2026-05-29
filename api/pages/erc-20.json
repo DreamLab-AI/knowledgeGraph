@@ -5,25 +5,52 @@
   "public": true,
   "classIri": "urn:ngm:class:erc-20",
   "domain": "blockchain",
-  "definition": "ERC-20 is the Ethereum token standard that defines a common interface for fungible tokens, enabling interoperability between wallets, exchanges, and smart contracts.",
+  "definition": "ERC-20 is the Ethereum Request for Comment standard that defines a mandatory six-function interface \u2014 totalSupply, balanceOf, transfer, transferFrom, approve, and allowance \u2014 enabling any conformant fungible token to interoperate seamlessly with wallets, decentralised exchanges, and smart contract protocols without bespoke integration. Proposed by Fabian Vogelsteller and Vitalik Buterin in 2015 and formalised as an Ethereum Improvement Proposal, ERC-20 became the foundational primitive of the DeFi ecosystem and the predominant format for utility tokens, governance tokens, and stablecoins.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-token-and-asset",
       "label": "Token and Asset"
+    },
+    {
+      "id": "urn:ngm:class:token-standard",
+      "label": "Token Standard"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:fungible-token",
+        "label": "Fungible Token"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:erc-721",
+        "label": "ERC-721"
+      },
+      {
+        "id": "urn:ngm:class:erc-1155",
+        "label": "ERC-1155"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

@@ -1,5 +1,5 @@
 - ### Definition
-  - Complete history storage node within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
+  An Archival Node is a blockchain network participant that stores the complete historical state of the ledger—every block, transaction, and state root from genesis to the current tip—without pruning older data. Unlike pruned nodes or light nodes, an archival node can respond to queries about any historical state at any block height, making it essential for block explorers, analytics services, and smart contract developers who need point-in-time state access.
 
 - ### Semantic Classification
   - owl-class:: blockchain:ArchivalNode
@@ -9,70 +9,20 @@
   - implemented-in-layer:: [[SecurityLayer]]
 
 - ### Relationships
-  - is-subclass-of:: [[Blockchain Entity]], [[NetworkComponent]]
-  - bridges-to:: [[AI Energy Optimisation]]
+  - contrastsWith:: [[Light Node]], [[Pruned Node]]
+  - relatedTo:: [[Full Node]], [[Chain State]], [[Blockchain Network]], [[Blockchain Infrastructure]]
+  - requires:: [[Blockchain Protocol]], [[Peer-to-Peer Network]]
+  - enables:: [[Blockchain Transaction]], [[Blockchain Compliance]], [[Long Term Archival]]
+  - supports:: [[State Machine Replication]]
 
 - ### Content
+  An Archival Node retains the full history of a blockchain from the genesis block to the present, including every intermediate state trie snapshot. On account-based chains such as Ethereum, this means the node can reconstruct the complete world state—all account balances, contract storage slots, and code hashes—at any historical block number. This capability is essential for decentralised applications that invoke eth_call or debug_traceTransaction at historical heights, and for analytics platforms that compute metrics retroactively.
 
-  ## Class Declaration
-  Declaration(Class(:ArchivalNode))
+  The operational cost of running an archival node is significantly higher than a full (pruned) node. Storage requirements scale with the full history of the chain: Ethereum's archival state exceeded several terabytes by 2024, requiring high-capacity NVMe storage arrays. Synchronisation from genesis using the default fast-sync or snap-sync modes does not produce an archival node; operators must use full archive sync modes or restore from purpose-built archival snapshots. Bandwidth and I/O throughput are also bottlenecks during initial sync and during state query peaks.
 
-  ## Subclass Relationships
-  SubClassOf(:ArchivalNode :NetworkComponent)
-  SubClassOf(:ArchivalNode :BlockchainEntity)
+  Archival nodes are a critical piece of blockchain infrastructure despite their operational cost. Block explorers (Etherscan, Subscan), DeFi analytics platforms, MEV searchers that replay historical blocks, and smart contract security auditors that need to reproduce past execution traces all depend on archival nodes as their data source. In enterprise blockchain deployments, archival nodes serve compliance and audit functions by providing immutable, queryable records of all historical transactions and state transitions.
 
-  ## Essential Properties
-  SubClassOf(:ArchivalNode
-    (ObjectSomeValuesFrom :partOf :Blockchain))
-
-  SubClassOf(:ArchivalNode
-    (ObjectSomeValuesFrom :hasProperty :Property))
-
-  ## Data Properties
-  DataPropertyAssertion(:hasIdentifier :ArchivalNode "BC-0093"^^xsd:string)
-  DataPropertyAssertion(:hasAuthorityScore :ArchivalNode "1.0"^^xsd:decimal)
-  DataPropertyAssertion(:isFoundational :ArchivalNode "true"^^xsd:boolean)
-
-  ## Object Properties
-  ObjectPropertyAssertion(:enablesFeature :ArchivalNode :BlockchainFeature)
-  ObjectPropertyAssertion(:relatesTo :ArchivalNode :RelatedConcept)
-
-  ## Annotations
-  AnnotationAssertion(rdfs:label :ArchivalNode "Archival Node"@en)
-  AnnotationAssertion(rdfs:comment :ArchivalNode
-    "Complete history storage node"@en)
-  AnnotationAssertion(dct:description :ArchivalNode
-    "Foundational blockchain concept with formal ontological definition"@en)
-  AnnotationAssertion(:termID :ArchivalNode "BC-0093")
-  AnnotationAssertion(:priority :ArchivalNode "1"^^xsd:integer)
-  AnnotationAssertion(:category :ArchivalNode "network-security"@en)
-  )
-      ```
-
-  - ## About Archival Node
-
-  - Complete history storage node within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
-  - ### Key Characteristics
-    - 1. **Definitional Property**: Core defining characteristic
-    - 2. **Functional Property**: Operational behavior
-    - 3. **Structural Property**: Compositional elements
-    - 4. **Security Property**: Security guarantees provided
-    - 5. **Performance Property**: Efficiency considerations
-  - ### Technical Components
-    - **Implementation**: How concept is realized technically
-    - **Verification**: Methods for validating correctness
-    - **Interaction**: Relationships with other components
-    - **Constraints**: Technical limitations and requirements
-  - ### Use Cases
-    - **1. Core Blockchain Operation**
-    - **Application**: Fundamental blockchain functionality
-    - **Example**: Practical implementation in major blockchains
-    - **Requirements**: Technical prerequisites
-    - **Benefits**: Value provided to blockchain systems
-  - ### Standards & References
-    - [[ISO/IEC 23257:2021]] - Blockchain and distributed ledger technologies
-    - [[IEEE 2418.1]] - Blockchain and distributed ledger technologies
-    - [[NIST NISTIR]] - Blockchain and distributed ledger technologies
+  The distinction between archival nodes and full nodes is architectural: a full (pruned) node validates new blocks and maintains the current state trie but discards historical state data beyond a configurable lookback window. This pruning reduces storage requirements by orders of magnitude but prevents historical state queries. Hybrid approaches such as partial archive nodes retain archival state only for a trailing window (e.g., the last 128 blocks on Ethereum), balancing storage costs against the most common historical query patterns.
 
 - ### Provenance
   - sources:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]

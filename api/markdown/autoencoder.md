@@ -1,4 +1,6 @@
 - ### Definition
+  - An Autoencoder is a neural network trained to reconstruct its input by learning a compressed latent representation. The encoder maps input to a lower-dimensional latent space; the decoder reconstructs the original from this representation. Variants including VAEs, denoising autoencoders, and convolutional autoencoders extend this to generative modelling, anomaly detection, and feature extraction.
+
   - ### Primary Definition
 
 - ### Semantic Classification
@@ -8,6 +10,13 @@
 
 - ### Relationships
   - bridges-to:: [[Computer Vision]] (ai)
+  - enables [[Anomaly Detection]]
+  - enables [[Dimensionality Reduction]]
+  - uses [[latent space]]
+  - uses [[Unsupervised Learning]]
+  - relatedTo [[Variational Autoencoders]]
+  - relatedTo [[Generative Adversarial Network]]
+  - relatedTo [[Feature Extraction]]
 
 - ### Content
   - ### Primary Definition

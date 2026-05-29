@@ -7,7 +7,11 @@
   - belongs-to-domain:: [[MetaverseDomain]], [[InteroperabilityDomain]], [[CreativeDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart:: [[Metaverse Content Pipeline]], [[3D Asset Standard]], [[Gltf Standard]]
+  - requires:: [[Interoperability Framework]], [[Interoperability Standard]]
+  - enables:: [[Extended Reality]], [[3D Animation]], [[Digital Rights Management]]
+  - relatedTo:: [[Extended Reality (XR)]], [[3D Asset]], [[Open Standard]]
+  - standardizedBy:: [[Interoperability Standard]]
 
 - ### Content
   - The ETSI Domain Interoperability / Creative represents the convergence of technical standardization and creative content workflows within the metaverse and extended reality ecosystems. This functional domain classification addresses the critical challenge of enabling creative digital assets—three-dimensional models, textures, animations, immersive environments—to transcend proprietary platform boundaries and achieve true multi-platform deployment without fidelity degradation. Through standardized file formats (glTF 2.0, USD, FBX), cross-platform protocols (WebXR, OpenXR, MPEG-I Scene Description), and semantic interoperability mechanisms, this domain facilitates the Creative Metaverse vision wherein content creators invest effort once in high-fidelity source assets and distribute everywhere via automated transformation pipelines, reducing production costs by 67%, accelerating time-to-market from 18 months to 4 months, and expanding addressable audience by 340% through simultaneous availability across 47 compatible platforms.

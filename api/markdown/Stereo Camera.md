@@ -46,7 +46,7 @@ public:: true
   "@id": "urn:ngm:class:stereo-camera",
   "@type": "Class",
   "label": "Stereo Camera",
-  "definition": "Stereo camera uses two lenses to capture images for 3D depth estimation.",
+  "definition": "A dual-lens imaging system that captures two horizontally offset images of a scene to compute disparity maps and recover metric 3D depth information. Stereo cameras are widely used in robotic navigation, obstacle avoidance, and spatial mapping because they provide passive depth sensing without emitting light.",
   "domain": "robotics",
   "maturity": "established",
   "subClassOf": [
@@ -59,7 +59,24 @@ public:: true
       "label": "Camera"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:monocular-camera", "label": "Monocular Camera"},
+      {"@id": "urn:ngm:class:point-cloud", "label": "Point Cloud"},
+      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
+      {"@id": "urn:ngm:class:visual-odometry", "label": "Visual Odometry"},
+      {"@id": "urn:ngm:class:camera-calibration", "label": "Camera Calibration"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:slam", "label": "SLAM"},
+      {"@id": "urn:ngm:class:object-detection", "label": "Object Detection"},
+      {"@id": "urn:ngm:class:spatial-mapping", "label": "Spatial Mapping"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:camera-parameters", "label": "Camera Parameters"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

@@ -42,16 +42,31 @@ public:: true
   "@id": "urn:ngm:class:environmental-certificate",
   "@type": "Class",
   "label": "Environmental Certificate",
-  "definition": "Environmental Certificate is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "A verifiable credential or token attesting that a digital platform, virtual environment, or computational process meets defined environmental sustainability thresholds. Environmental certificates underpin accountability frameworks for metaverse and spatial computing infrastructure by providing tamper-evident proof of carbon offset, renewable energy use, or compliance with environmental KPIs.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
       "label": "Governance and Safety"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:environmental-k-p-i", "label": "Environmental K P I"},
+      {"@id": "urn:ngm:class:carbon-credit-token", "label": "Carbon Credit Token"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:interoperability-framework", "label": "Interoperability Framework"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -87,14 +102,17 @@ public:: true
 
 
 - ### Definition
-  - Environmental Certificate is a concept within the metaverse domain. Further enrichment pending.
+  - A verifiable credential or token attesting that a digital platform, virtual environment, or computational process meets defined environmental sustainability thresholds. Environmental certificates underpin accountability frameworks for metaverse and spatial computing infrastructure by providing tamper-evident proof of carbon offset, renewable energy use, or compliance with environmental KPIs.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:EnvironmentalCertificate
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **relatedTo**: Environmental K P I, Carbon Credit Token — certificates are issued against measured KPIs and may take the form of tokenised carbon credits
+  - **requires**: Data Governance — trustworthy certification depends on governed, auditable data pipelines
+  - **enables**: Blockchain — on-chain issuance makes certificates tamper-evident and interoperable
+  - **standardizedBy**: Interoperability Framework — cross-platform recognition requires standardised certificate schemas
 
 - ### Content
 

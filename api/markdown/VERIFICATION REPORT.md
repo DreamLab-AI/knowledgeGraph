@@ -82,16 +82,29 @@ public:: true
   "@id": "urn:ngm:class:verification-report",
   "@type": "Class",
   "label": "VERIFICATION REPORT",
-  "definition": "A verification report documents systematic assessment results confirming that OntologyAssets|ontologies, KnowledgeGraph|knowledge graphs, and metaverse infrastructure meet specified quality standards and functional requirements through automated and manual validation procedures.",
+  "definition": "A verification report is a structured document recording the outcomes of systematic assessment activities that confirm ontologies, knowledge graphs, and metaverse infrastructure meet specified quality standards and functional requirements. It captures defect categorisation, schema compliance checks, semantic consistency validation, RDF triple counts, OWL axiom correctness, and remediation progress to provide transparent evidence of production readiness.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
     }
   ],
-  "quality": 0.4,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:standards-validation", "label": "Standards Validation"},
+      {"@id": "urn:ngm:class:standards-compliance", "label": "Standards Compliance"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -183,7 +196,9 @@ public:: true
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: [[Ontology]], [[Knowledge Graph]] — verification reports assess the quality of ontology structures and knowledge graph data
+  - **enables**: [[Compliance Framework]] — the report provides the evidence base for compliance sign-off and regulatory audits
+  - **relatedTo**: [[Standards Validation]], [[Standards Compliance]] — verification reports measure conformance against declared ontology and data standards
 - ### Content
   - Verification reports document systematic assessment results confirming ontologies and knowledge graphs meet quality standards through automated and manual validation, providing transparent documentation of compliance, defect categorisation, and remediation progress.
   - ### Original Content

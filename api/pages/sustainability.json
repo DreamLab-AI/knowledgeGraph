@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:sustainability",
   "domain": "infrastructure",
-  "definition": "Sustainability is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Sustainability in digital and metaverse contexts addresses the long-term viability of technology systems across environmental, social, and economic dimensions. Environmental sustainability encompasses energy-efficient rendering, carbon footprint reduction via green hosting, and electronic waste minimisation. Social sustainability includes digital accessibility, equity of access, and psychological wellbeing. Economic sustainability requires viable creator economies and protection against exploitative practices.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-legal-and-regulatory",
@@ -14,20 +14,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:circular-economy",
+        "label": "Circular Economy"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:carbon-footprint-measurement",
+        "label": "Carbon Footprint Measurement"
+      },
+      {
+        "id": "urn:ngm:class:renewable-energy-certificates",
+        "label": "Renewable Energy Certificates"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockchain-energy-consumption",
+        "label": "Blockchain Energy Consumption"
+      },
+      {
+        "id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

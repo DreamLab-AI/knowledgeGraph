@@ -42,20 +42,58 @@ public:: true
   "@id": "urn:ngm:class:interaction-control",
   "@type": "Class",
   "label": "Interaction Control",
-  "definition": "Interaction Control is a type of Robotics in the robotics domain.",
+  "definition": "A robotics control paradigm that explicitly manages contact forces and compliant behaviour when a robot interacts with its environment or human collaborators. Interaction control encompasses impedance control, admittance control, and force control strategies that allow robots to operate safely during physical contact, adapting stiffness, damping, and inertia in response to sensed forces.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-human-robot-interaction",
       "label": "Human-Robot Interaction"
     }
   ],
-  "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:impedance-control",
+        "label": "Impedance Control"
+      },
+      {
+        "@id": "urn:ngm:class:force-control",
+        "label": "Force Control"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      },
+      {
+        "@id": "urn:ngm:class:robot-sensor",
+        "label": "Robot Sensor"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:motion-control",
+        "label": "Motion Control"
+      },
+      {
+        "@id": "urn:ngm:class:robot-safety",
+        "label": "Robot Safety"
+      }
+    ]
   }
 }
 ```
@@ -87,23 +125,33 @@ public:: true
 
 
 - ### Definition
-  - Interaction Control is a concept within the robotics domain. Further enrichment pending.
+  - A robotics control paradigm that explicitly manages contact forces and compliant behaviour when a robot interacts with its environment or human collaborators. Interaction control encompasses impedance control, admittance control, and force control strategies that allow robots to operate safely during physical contact, adapting stiffness, damping, and inertia in response to sensed forces.
 
 - ### Semantic Classification
   - owl-class:: robotics:InteractionControl
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - is-subclass-of:: Human-Robot Interaction
+  - Has Part [[Impedance Control]]
+  - Has Part [[Force Control]]
+  - Requires [[Control System]]
+  - Requires [[Robot Sensor]]
+  - Enables [[Human Robot Interaction]]
+  - Related To [[Motion Control]]
+  - Related To [[Robot Safety]]
 
 - ### Content
 
   ## Overview
 
-  Interaction Control represents an abstract concept in the robotics ontology hierarchy.
+  Interaction control governs how a robot manages physical contact with objects and people. Unlike pure position control, interaction control strategies such as impedance and force control allow the robot to adapt its mechanical behaviour in response to sensed contact forces. This is essential for safe human-robot collaboration, assembly tasks, and teleoperation in unstructured environments.
 
   #### Related Concepts
-  - [[owl:Thing]]
+  - [[Impedance Control]]
+  - [[Force Control]]
+  - [[Human Robot Interaction]]
+  - [[Motion Control]]
 
 - ### Provenance
   - sources::

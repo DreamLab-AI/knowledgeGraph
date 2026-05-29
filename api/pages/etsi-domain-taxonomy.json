@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:etsi-domain-taxonomy",
   "domain": "artificial-intelligence",
-  "definition": "The ETSI Domain Taxonomy is a classification framework developed by the European Telecommunications Standards Institute for organising AI standards and technical specifications across application domains.",
+  "definition": "The ETSI Domain Taxonomy is a hierarchical classification framework produced by the European Telecommunications Standards Institute for systematically organising AI-related technical specifications, standards, and work items across application domains such as transportation, healthcare, telecommunications, and public safety. It provides a controlled vocabulary and structural ontology that enables consistent referencing of AI standards across ETSI technical committees and supports cross-domain applicability analysis. The taxonomy underpins ETSI's AI standardisation roadmap and facilitates alignment with CEN-CENELEC and ISO/IEC standardisation activities.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -14,7 +14,7 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,10 +23,33 @@
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:controlled-vocabulary",
+        "label": "Controlled Vocabulary"
+      },
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:etsi",
+        "label": "ETSI"
+      }
+    ],
     "relatedTo": []
   },
   "wikilinks": [],

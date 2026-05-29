@@ -1,11 +1,14 @@
 - ### Definition
-  - A language-independent tokenisation library that treats input as a raw stream and learns subword units directly from raw text without pre-tokenisation, enabling purely end-to-end systems.
+  - SentencePiece is a language-independent subword tokenisation library that processes raw Unicode text without language-specific pre-tokenisation, learning vocabulary units via Byte-Pair Encoding or the Unigram Language Model directly from corpora. It produces fully reversible, fixed-vocabulary tokenisations widely used in multilingual large language models such as T5, mT5, and ALBERT, and is particularly valuable for languages lacking explicit word boundaries.
 - ### Semantic Classification
-  - owl-class:: spatial-computing:SentencePiece
+  - owl-class:: artificial-intelligence:SentencePiece
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: Byte Pair Encoding — BPE is one of SentencePiece's two primary segmentation algorithms; Subword Tokenisation — SentencePiece is the principal framework for unsupervised subword tokenisation.
+  - **enables**: Large Language Models — SentencePiece tokenisation is a standard preprocessing layer for many LLMs; Natural Language Processing — end-to-end language pipelines depend on SentencePiece for vocabulary construction.
+  - **contrastsWith**: WordPiece — WordPiece requires whitespace pre-tokenisation and maximum-likelihood selection, whereas SentencePiece treats text as a raw byte stream.
+  - **partOf**: Tokenisation — SentencePiece is a specific implementation within the broader tokenisation class.
 - ### Content
   - A language-independent tokenisation library that treats input as a raw stream and learns subword units directly from raw text without pre-tokenisation, enabling purely end-to-end systems.
 		- ## Definition

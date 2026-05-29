@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:digital-asset-risks",
   "domain": "blockchain",
-  "definition": "Comprehensive analysis of risks associated with digital assets, particularly Bitcoin, encompassing technical vulnerabilities, regulatory challenges, geopolitical concerns, financial stability threats, and systemic implications for global monetary systems",
+  "definition": "Comprehensive analysis of risks associated with digital assets, particularly Bitcoin, encompassing technical vulnerabilities, regulatory challenges, geopolitical concerns, financial stability threats, and systemic implications for global monetary systems. Covers attack vectors such as 51% attacks, selfish mining, network partitioning, exchange failures, and regulatory suppression, alongside macro-level risks including volatility, liquidity crises, and stablecoin depegging.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-token-and-asset",
@@ -13,21 +13,57 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      }
+    ]
   },
   "wikilinks": [
     {

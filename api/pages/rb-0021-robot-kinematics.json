@@ -5,24 +5,42 @@
   "public": true,
   "classIri": "urn:ngm:class:rb-0021-robot-kinematics",
   "domain": "robotics",
-  "definition": "robot kinematics is a robotics and autonomous systems concept and a type of Kinematics.",
+  "definition": "Robot kinematics is the study of the geometry and motion of robot mechanisms \u2014 particularly manipulator arms \u2014 without regard to the forces or torques that cause motion. It encompasses forward kinematics (computing end-effector pose from joint configurations), inverse kinematics (computing joint configurations for a desired end-effector pose), Jacobian analysis relating joint velocities to Cartesian velocities, and singularity analysis. Kinematic models are foundational inputs to motion planning, trajectory generation, and control law design.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
       "label": "Actuation and Control"
-    },
-    {
-      "id": "urn:ngm:class:kinematics",
-      "label": "Kinematics"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:forward-kinematics",
+        "label": "Forward Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:rb-0030-jacobian-matrix",
+        "label": "rb 0030 jacobian matrix"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:rb-0049-motion-planning",
+        "label": "rb 0049 motion planning"
+      },
+      {
+        "id": "urn:ngm:class:rb-0064-computed-torque-control",
+        "label": "rb 0064 computed torque control"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -31,7 +49,20 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rb-0022-robot-dynamics",
+        "label": "rb 0022 robot dynamics"
+      },
+      {
+        "id": "urn:ngm:class:rb-0023-degrees-of-freedom",
+        "label": "rb 0023 degrees of freedom"
+      },
+      {
+        "id": "urn:ngm:class:rb-0031-singularity",
+        "label": "rb 0031 singularity"
+      }
+    ]
   },
   "wikilinks": [
     {

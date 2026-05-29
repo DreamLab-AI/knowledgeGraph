@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:camera-calibration",
   "domain": "spatial-computing",
-  "definition": "Camera Calibration is the process of estimating intrinsic and extrinsic camera parameters to correct lens distortion and establish the geometric relationship between 3D world coordinates and 2D image pixels.",
+  "definition": "Camera Calibration is the process of estimating a camera's intrinsic parameters (focal length, principal point, skew, radial and tangential distortion coefficients) and, when multiple cameras or sensors are involved, extrinsic parameters (rotation and translation between coordinate frames). Accurate calibration is prerequisite to metrically correct 3D reconstruction, stereo depth estimation, augmented reality overlay registration, and robot visual servoing. The Zhang calibration method, using a planar chessboard target, is the dominant practical technique and is standardised in OpenCV and MATLAB's Computer Vision Toolbox.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-display-and-rendering",
@@ -14,11 +14,29 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:camera",
+        "label": "Camera"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:depth-estimation",
+        "label": "Depth Estimation"
+      },
+      {
+        "id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +45,16 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

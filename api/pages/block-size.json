@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:block-size",
   "domain": "blockchain",
-  "definition": "Data capacity limit of a block within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "Block Size is the maximum data capacity\u2014measured in bytes or weight units\u2014that a single block in a blockchain may contain, governing how many transactions can be confirmed per block and therefore setting a fundamental upper bound on network throughput. Larger blocks increase per-block transaction capacity but raise propagation latency, orphan-block rates, and hardware requirements for full nodes, while smaller blocks favour decentralisation and faster propagation at the cost of throughput and higher fee markets when demand exceeds capacity. The Bitcoin block-size debate (resulting in the SegWit upgrade and eventual Bitcoin Cash fork) made block size one of the most consequential and politically contentious protocol parameters in blockchain history.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-protocol-and-consensus",
@@ -21,21 +21,77 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:block",
+        "label": "Block"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:transaction",
+        "label": "Transaction"
+      },
+      {
+        "id": "urn:ngm:class:finality",
+        "label": "Finality"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:node",
+        "label": "Node"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:block-time",
+        "label": "Block Time"
+      },
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "id": "urn:ngm:class:gas",
+        "label": "Gas"
+      },
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:sidechain",
+        "label": "Sidechain"
+      }
+    ]
   },
   "wikilinks": [
     {

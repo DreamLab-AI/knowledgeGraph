@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:digital-commerce",
   "@type": "Class",
   "label": "Digital Commerce",
-  "definition": "Digital Commerce is a type of Digital Asset Ecosystem in the spatial computing domain.",
+  "definition": "Digital Commerce encompasses the exchange of goods, services, and digital assets through internet-connected and virtual platforms, including metaverse storefronts, NFT marketplaces, and cryptocurrency-denominated payment rails. It extends conventional e-commerce by incorporating programmable smart contracts for trustless settlement, tokenised ownership of virtual goods, and AI-mediated personalisation. In metaverse contexts, digital commerce enables low-friction cross-border value transfer without leaving the virtual environment.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -59,7 +60,22 @@ public:: true
       "label": "Digital Asset Ecosystem"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:digital-asset-management", "label": "Digital Asset Management"},
+      {"@id": "urn:ngm:class:cross-metaverse-commerce", "label": "Cross Metaverse Commerce"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -100,22 +116,23 @@ public:: true
 
 
 - ### Definition
-  - Digital Commerce is a concept within the metaverse domain. Further enrichment pending.
-
-bridges-to:: [[Blockchain]]
+  Digital Commerce encompasses the exchange of goods, services, and digital assets through internet-connected and virtual platforms, including metaverse storefronts, NFT marketplaces, and cryptocurrency payment rails. Programmable smart contracts enable trustless settlement; tokenised ownership governs virtual goods; and AI-mediated personalisation drives discovery. Low-friction cross-border value transfer within virtual environments is a defining characteristic.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:DigitalCommerce
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: Blockchain, Smart Contract (settlement infrastructure and programmable transaction logic)
+  - **enables**: Digital Asset Management, Cross Metaverse Commerce (downstream commercial capabilities)
+  - **requires**: Digital Identity (buyer/seller identity is prerequisite for trusted transactions)
+  - **supports**: Metaverse (commerce is a core economic layer within metaverse environments)
 
 - ### Content
 
   ## Overview
 
-  Digital Commerce represents an abstract concept in the metaverse ontology hierarchy.
+  Digital Commerce extends conventional e-commerce into virtual and blockchain-anchored contexts, enabling tokenised ownership, smart-contract settlement, and cross-environment value transfer.
 
   #### Related Concepts
   - [[owl:Thing]]

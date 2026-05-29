@@ -58,9 +58,10 @@ public:: true
   "@id": "urn:ngm:class:planning-kanban-currently-broken",
   "@type": "Class",
   "label": "Planning Kanban - currently broken",
-  "definition": "Planning Kanban - currently broken is a technology infrastructure concept and a type of Projects.",
+  "definition": "A Kanban-style project planning board within a Logseq knowledge graph that aggregates query-driven progress views across active projects. It uses embedded block queries to surface tasks tagged with progress properties, enabling at-a-glance visibility of TODO, DOING, and DONE states across linked project pages such as PlayerTwo and ParentsGuideToAI.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
@@ -71,6 +72,19 @@ public:: true
       "label": "Projects"
     }
   ],
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:projects", "label": "Projects"},
+      {"@id": "urn:ngm:class:player-two", "label": "Player Two"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:automated-planning", "label": "Automated Planning"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:multi-agent-systems", "label": "Multi-Agent Systems"},
+      {"@id": "urn:ngm:class:agentic-alliance", "label": "Agentic Alliance"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -132,14 +146,16 @@ public:: true
 
 
 - ### Definition
-  - Planning Kanban - currently broken is a concept within the ngm domain.
+  - A Kanban-style project planning board within a Logseq knowledge graph that aggregates query-driven progress views across active projects. It uses embedded block queries to surface tasks tagged with progress properties, enabling at-a-glance visibility of TODO, DOING, and DONE states across linked project nodes such as PlayerTwo and ParentsGuideToAI.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:PlanningKanbanCurrentlyBroken
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart: [[Projects]], [[Player Two]]
+  - uses: [[Automated Planning]]
+  - relatedTo: [[Multi-Agent Systems]], [[Agentic Alliance]]
 
 - ### Content
   - {{renderer :kboard-query, High level Projects View, progress, TODO, DOING, DONE, cover, 260px}}

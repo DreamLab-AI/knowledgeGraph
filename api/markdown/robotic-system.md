@@ -1,12 +1,18 @@
 - ### Definition
-  - Robotic System is a concept within the telecollaboration domain. Further enrichment pending.
+  - An integrated assembly of mechanical, electronic, and computational subsystems — including actuators, sensors, a control architecture, and software — that perceives its environment and executes physical tasks autonomously or under remote human direction, spanning industrial, collaborative, and telepresence applications.
 
 - ### Semantic Classification
   - owl-class:: distributed-collaboration:RoboticSystem
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Has Part: [[Actuator]]
+  - Has Part: [[Sensor Fusion]]
+  - Has Part: [[Motion Control]]
+  - Uses: [[Robot Operating System]]
+  - Uses: [[Computer Vision]]
+  - Related To: [[Robotic Telepresence]]
+  - Related To: [[Human Robot Interaction]]
 
 - ### Content
 

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:computational-resources",
   "domain": "spatial-computing",
-  "definition": "The collective hardware and software infrastructure\u2014including processors, memory, and accelerators\u2014required to execute spatial-computing workloads and render immersive environments.",
+  "definition": "Computational Resources in the context of spatial computing refer to the aggregate hardware and software infrastructure\u2014including CPUs, GPUs, NPUs, memory subsystems, and network accelerators\u2014required to render immersive environments, simulate physics, and run AI inference at interactive frame rates. Resource allocation and scheduling directly determine achievable visual fidelity, latency budgets, and the number of concurrent virtual entities a system can sustain. Efficient management of these resources is foundational to delivering comfortable, high-presence XR experiences.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -14,20 +14,48 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:hardware",
+        "label": "Hardware"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:rendering-engine",
+        "label": "Rendering Engine"
+      },
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

@@ -1,12 +1,16 @@
 - ### Definition
-  - latent space is a concept within the ngm domain.
+  - A latent space is a compressed, high-dimensional mathematical representation learned by a neural network that encodes the underlying structure of training data. Generative models such as variational autoencoders and diffusion models use latent spaces to interpolate between data points and sample novel outputs. The geometry of the latent space reflects semantic relationships: nearby points correspond to perceptually or semantically similar entities, enabling controlled generation through vector arithmetic.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:LatentSpace
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses [[Encoder Decoder Architecture]]
+  - uses [[Embedding Model]]
+  - enables [[Generative AI]]
+  - enables [[Variational Autoencoders]]
+  - relatedTo [[Diffusion Model]]
 
 - ### Content
   - #Public page

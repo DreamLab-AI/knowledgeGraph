@@ -46,16 +46,33 @@ public:: true
   "@id": "urn:ngm:class:continued-pre-training",
   "@type": "Class",
   "label": "Continued Pre Training",
-  "definition": "An intermediate training phase where a pre-trained model undergoes additional pre-training on domain-specific or task-relevant data before fine-tuning.",
+  "definition": "An intermediate training phase in which a pre-trained foundation model undergoes additional unsupervised pre-training on domain-specific or task-relevant corpora before supervised fine-tuning. Continued pre-training bridges general-purpose representations and domain expertise, using the same self-supervised objectives as initial pre-training whilst employing reduced learning rates and selective data to mitigate catastrophic forgetting of general capabilities.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
+      {"@id": "urn:ngm:class:domain-adaptation", "label": "Domain Adaptation"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:full-fine-tuning", "label": "Full Fine Tuning"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
+      {"@id": "urn:ngm:class:overfitting", "label": "Overfitting"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -104,6 +121,13 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
+  - **requires** [[Large Language Models]] — CPT is applied to foundation models to adapt their representations
+  - **requires** [[Deep Learning]] — self-supervised pre-training objectives run on deep neural networks
+  - **enables** [[Fine Tuning]] — CPT prepares domain-adapted representations for supervised fine-tuning
+  - **enables** [[Domain Adaptation]] — CPT is the primary mechanism for adapting models to new domains
+  - **contrastsWith** [[Full Fine Tuning]] — CPT uses unsupervised objectives; full fine-tuning uses labelled data
+  - **relatedTo** [[Transfer Learning]] — CPT is a specific transfer learning strategy within the pre-train/fine-tune paradigm
+  - **relatedTo** [[Overfitting]] — catastrophic forgetting is the CPT analogue of overfitting to new domain data
   - bridges-to:: [[Computer Vision]]
 
 - ### Content

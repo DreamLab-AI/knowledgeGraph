@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:predictive-analytics",
   "domain": "artificial-intelligence",
-  "definition": "Predictive Analytics is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "Predictive Analytics is the practice of extracting information from existing data sets and applying statistical algorithms and machine learning techniques to forecast future outcomes. It combines feature engineering, model training, and evaluation pipelines to generate actionable predictions in domains such as user behaviour, demand forecasting, anomaly detection, and risk assessment. Predictive models are trained on historical data and deployed as AI applications embedded in business intelligence systems and decision-support workflows.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-application",
@@ -14,16 +14,39 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:environmental-registry",
   "domain": "spatial-computing",
-  "definition": "Environmental Registry is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "A catalogued, authoritative store of descriptors for physical or virtual environments, recording their spatial bounds, safety parameters, hazard zones, and compliance status. XR systems query the environmental registry during session initialisation to validate that the current space meets operational and safety requirements before permitting immersive interactions.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-governance-and-safety",
@@ -13,21 +13,53 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:spatial-anchor",
+        "label": "Spatial Anchor"
+      },
+      {
+        "id": "urn:ngm:class:room-scale",
+        "label": "Room Scale"
+      }
+    ],
     "requires": [],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:database-query",
+        "label": "Database Query"
+      },
+      {
+        "id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:environmental-verification",
+        "label": "Environmental Verification"
+      },
+      {
+        "id": "urn:ngm:class:xr-runtime-environment",
+        "label": "XR Runtime Environment"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:calibration-tools",
+        "label": "Calibration Tools"
+      }
+    ]
   },
   "wikilinks": [
     {

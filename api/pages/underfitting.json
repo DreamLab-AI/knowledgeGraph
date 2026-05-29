@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:underfitting",
   "domain": "artificial-intelligence",
-  "definition": "Underfitting is a artificial intelligence concept and a type of Machine Learning.",
+  "definition": "Underfitting occurs when a machine learning model is insufficiently complex or inadequately trained to capture the underlying structure of its training data, resulting in high bias, low variance, and poor predictive performance on both training and unseen datasets. It is the converse of overfitting and arises from under-parameterisation, insufficient training duration, or excessive regularisation.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -18,20 +18,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:model-capacity",
+        "label": "Model Capacity"
+      },
+      {
+        "id": "urn:ngm:class:training",
+        "label": "Training"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:regularisation",
+        "label": "Regularisation"
+      },
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      }
+    ]
   },
   "wikilinks": [
     {

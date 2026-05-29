@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:adversarial-testing",
   "domain": "artificial-intelligence",
-  "definition": "Testing modology that deliberately attempts to cause AI system failures through adversarial inputs, edge cases, and challenging scenarios. Adversarial testing helps identify robustness issues, safety vulnerabilities, and alignment failures before deployment.",
+  "definition": "A testing methodology that deliberately attempts to cause AI system failures through adversarial inputs, edge cases, and challenging scenarios in order to identify robustness issues, safety vulnerabilities, and alignment failures before deployment. It encompasses both explicitly adversarial prompts and implicitly problematic queries, drawing on red-teaming practices and formalised by NIST AI 100-2.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -18,20 +18,48 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:machine-learning-model",
+        "label": "Machine Learning Model"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:robustness",
+        "label": "Robustness"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ]
   },
   "wikilinks": [
     {

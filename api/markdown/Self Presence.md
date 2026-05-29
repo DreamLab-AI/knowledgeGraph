@@ -54,9 +54,10 @@ public:: true
   "@id": "urn:ngm:class:self-presence",
   "@type": "Class",
   "label": "Self Presence",
-  "definition": "Subjective experience of embodiment and self-location in a mediated environment, feeling that one's virtual representation is an extension of oneself.",
+  "definition": "The subjective sense that one's virtual or avatar representation in a mediated environment is a genuine extension of the physical self — encompassing body ownership, proprioceptive coherence, and self-location within virtual space. Self presence is a component of overall presence and a prerequisite for authentic immersive collaboration, as it governs how naturally users interact with and move through shared virtual environments.",
   "domain": "distributed-collaboration",
   "maturity": "emerging",
+  "quality": 0.75,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:dc-telepresence",
@@ -67,7 +68,32 @@ public:: true
       "label": "Presence"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:presence", "label": "Presence"},
+      {"@id": "urn:ngm:class:immersion", "label": "Immersion"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:social-presence", "label": "Social Presence"},
+      {"@id": "urn:ngm:class:spatial-presence", "label": "Spatial Presence"},
+      {"@id": "urn:ngm:class:virtual-presence", "label": "Virtual Presence"},
+      {"@id": "urn:ngm:class:emotional-immersion", "label": "Emotional Immersion"},
+      {"@id": "urn:ngm:class:user-experience", "label": "User Experience"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:avatar", "label": "Avatar"},
+      {"@id": "urn:ngm:class:digital-avatar", "label": "Digital Avatar"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:telepresence", "label": "Telepresence"},
+      {"@id": "urn:ngm:class:embodied-ai", "label": "Embodied AI"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:motion-capture", "label": "Motion Capture"},
+      {"@id": "urn:ngm:class:hand-tracking", "label": "Hand Tracking"},
+      {"@id": "urn:ngm:class:eye-tracking", "label": "Eye Tracking"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -129,7 +155,9 @@ public:: true
   - is-subclass-of:: [[Presence]]
 
 - ### Content
-  Self Presence — content pending enrichment.
+  Self presence describes the degree to which a user perceives their avatar or virtual body as genuinely their own — the sense that virtual limbs respond as if they were physical, that head movements naturally map to virtual viewpoint changes, and that proprioceptive feedback aligns with visual representation. High self presence reduces the cognitive overhead of operating in virtual environments and correlates strongly with reduced cybersickness and increased task performance in immersive collaboration settings.
+
+  The phenomenon draws on the "rubber hand illusion" and related body ownership research, extended to full-body virtual embodiment. Key enabling factors include low-latency motion capture, high-fidelity avatar representation, and congruent multisensory feedback. In telecollaboration contexts, self presence is a foundation for richer social presence: if participants do not feel embodied themselves, they are unlikely to perceive remote collaborators as genuinely co-located.
 
 - ### Provenance
   - sources:: [[Presence Research]], [[Avatar Psychology]]

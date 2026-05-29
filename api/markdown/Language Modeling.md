@@ -124,13 +124,27 @@ public:: true
   "label": "Language Modeling",
   "definition": "Language Modeling is the fundamental NLP task of learning probability distributions over sequences of words or tokens to predict the likelihood of text sequences and generate plausible continuations.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
+      {"@id": "urn:ngm:class:text-generation", "label": "Text Generation"},
+      {"@id": "urn:ngm:class:question-answering", "label": "Question Answering"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -275,7 +289,12 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Transformer]]
+  - requires [[Deep Learning]]
+  - enables [[Large Language Models]]
+  - enables [[Text Generation]]
+  - enables [[Question Answering]]
+  - relatedTo [[Natural Language Processing]]
 
 - ### Content
   - Language Modeling is the fundamental NLP task of learning probability distributions over sequences of words or tokens to predict the likelihood of text sequences and generate plausible continuations. Language models underpin virtually all modern NLP applications through pre-training on massive text corpora, capturing syntactic structure, semantic relationships, and world knowledge that transfer to downstream tasks including text generation, translation, question answering, and code synthesis.

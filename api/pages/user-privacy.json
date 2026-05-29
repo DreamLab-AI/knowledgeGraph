@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:user-privacy",
   "domain": "infrastructure",
-  "definition": "User Privacy is a technology infrastructure concept and a type of Privacy Framework.",
+  "definition": "User Privacy encompasses the rights, technical mechanisms, and regulatory obligations protecting individuals from unwanted disclosure of their identity, transactions, and behavioural patterns within digital and blockchain systems. Protections span cryptographic techniques (zero-knowledge proofs, ring signatures, confidential transactions), network-layer obfuscation (Dandelion++, Tor), and compliance frameworks (GDPR, data minimisation principles).",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-legal-and-regulatory",
@@ -17,21 +17,52 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      },
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy By Design"
+      },
+      {
+        "id": "urn:ngm:class:cryptography-security-and-privacy",
+        "label": "Cryptography Security and Privacy"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": []

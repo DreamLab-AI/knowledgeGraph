@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:swarm-robot",
   "domain": "robotics",
-  "definition": "Swarm Robot is a robotics and autonomous systems concept and a type of Autonomous Robot.",
+  "definition": "A Swarm Robot is a member of a multi-agent robotic system in which large numbers of simple, decentralised agents coordinate through local interactions to achieve complex collective behaviours without centralised control. Drawing from biological models such as ant colonies and flocking birds, swarm robotics enables robustness through redundancy, scalability, and emergent task execution across domains including environmental monitoring, logistics, and disaster response.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-robot-type",
@@ -17,21 +17,53 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:swarm-robotics",
+        "label": "Swarm Robotics"
+      },
+      {
+        "id": "urn:ngm:class:collective-intelligence-system",
+        "label": "Collective Intelligence System"
+      }
+    ],
     "requires": [],
     "enables": [],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:centralized-swarm-control",
+        "label": "Centralized Swarm Control"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:decentralized-swarm-control",
+        "label": "Decentralized Swarm Control"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:robo-navigation-and-planning",
+        "label": "Navigation and Planning"
+      },
+      {
+        "id": "urn:ngm:class:robo-safety-and-standards",
+        "label": "Safety and Standards"
+      }
+    ]
   },
   "wikilinks": [
     {

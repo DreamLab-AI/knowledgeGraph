@@ -70,9 +70,10 @@ public:: true
   "@id": "urn:ngm:class:block-time",
   "@type": "Class",
   "label": "Block Time",
-  "definition": "Average time between blocks within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "Block Time is the average elapsed time between the creation of consecutive blocks on a blockchain, governed by the network's consensus mechanism and difficulty adjustment algorithm. Shorter block times increase transaction throughput and reduce confirmation latency but raise the risk of forks due to block propagation delays, creating a fundamental tradeoff between speed and chain security.",
   "domain": "blockchain",
   "maturity": "established",
+  "qualityScore": 0.8,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-protocol-and-consensus",
@@ -87,7 +88,29 @@ public:: true
       "label": "DistributedDataStructure"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
+      {"@id": "urn:ngm:class:block-propagation", "label": "Block Propagation"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:transaction-confirmation", "label": "Transaction Confirmation"},
+      {"@id": "urn:ngm:class:transaction-finality", "label": "Transaction Finality"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:block-size", "label": "Block Size"},
+      {"@id": "urn:ngm:class:block-height", "label": "Block Height"},
+      {"@id": "urn:ngm:class:blockchain-scalability", "label": "Blockchain Scalability"},
+      {"@id": "urn:ngm:class:mining", "label": "Mining"},
+      {"@id": "urn:ngm:class:finality", "label": "Finality"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:blockchain-scalability", "label": "Blockchain Scalability"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:blockchain-protocol", "label": "Blockchain Protocol"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

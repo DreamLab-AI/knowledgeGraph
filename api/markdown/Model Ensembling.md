@@ -46,16 +46,34 @@ public:: true
   "@id": "urn:ngm:class:model-ensembling",
   "@type": "Class",
   "label": "Model Ensembling",
-  "definition": "A technique that combines predictions from multiple independently trained models to improve overall performance and robustness. Ensembling leverages diversity among models to reduce variance, improve generalisation, and provide more reliable predictions.",
+  "definition": "A machine learning technique that aggregates predictions from multiple independently trained base models — via voting, averaging, stacking, or boosting — to reduce variance, improve generalisation, and produce more reliable outputs than any single constituent model. Diversity among base learners is the key driver of ensemble benefit.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:robustness", "label": "Robustness"},
+      {"@id": "urn:ngm:class:accuracy", "label": "Accuracy"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:knowledge-distillation", "label": "Knowledge Distillation"},
+      {"@id": "urn:ngm:class:mixture-of-experts", "label": "Mixture of Experts"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:overfitting", "label": "Overfitting"},
+      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -104,7 +122,14 @@ public:: true
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **enables** [[Robustness]] — aggregating diverse models reduces sensitivity to individual model errors
+  - **enables** [[Accuracy]] — ensemble predictions consistently outperform single-model baselines
+  - **uses** [[Machine Learning]] — ensembling is a general ML meta-strategy applicable to any learner type
+  - **uses** [[Deep Learning]] — commonly applied to neural network ensembles in production systems
+  - **contrastsWith** [[Knowledge Distillation]] — distillation compresses an ensemble into one model; ensembling expands capacity
+  - **contrastsWith** [[Mixture of Experts]] — MoE is a learned ensemble-like architecture; model ensembling uses independent training runs
+  - **relatedTo** [[Overfitting]] — diversity among models counteracts overfitting present in individual members
+  - **relatedTo** [[Transfer Learning]] — pre-trained base models are frequently the building blocks of ensembles
 
 - ### Content
   - A technique that combines predictions from multiple independently trained models to improve overall performance and robustness. Ensembling leverages diversity among models to reduce variance, improve generalisation, and provide more reliable predictions.

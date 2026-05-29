@@ -8,6 +8,10 @@
 
 - ### Relationships
   - is-subclass-of:: [[Standards]]
+  - **requires**: Standards (normative reference document), Software Testing (test execution infrastructure)
+  - **enables**: Interoperability (cross-vendor system compatibility), Standards Compliance (certified conformance status)
+  - **supports**: Interoperability Standard (verifies inter-system contracts), Accountability (audit evidence chain)
+  - **relatedTo**: Standards Validation (pre-publication verification), Software Development Process (embedded quality gate)
 
 - ### Content
 

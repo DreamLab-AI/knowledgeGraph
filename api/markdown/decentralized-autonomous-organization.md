@@ -8,6 +8,11 @@
 
 - ### Relationships
   - bridges-to:: [[AI Agent System]] or [[Virtual Economy]]
+  - requires [[Smart Contracts]]
+  - requires [[Governance Token]]
+  - uses [[Consensus Mechanism]]
+  - uses [[Blockchain Governance]]
+  - enables [[Virtual Economy]]
 
 - ### Content
   - Decentralised Autonomous Organisations operate through smart contracts and community governance without centralised authority, enabling transparent resource allocation, democratic decision-making, and distributed treasury management at global scale.

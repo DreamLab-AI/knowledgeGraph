@@ -14,14 +14,41 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:reward-model",
+        "label": "Reward Model"
+      },
+      {
+        "id": "urn:ngm:class:human-feedback",
+        "label": "Human Feedback"
+      },
+      {
+        "id": "urn:ngm:class:supervised-fine-tuning",
+        "label": "Supervised Fine Tuning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:direct-preference-optimisation",
+        "label": "Direct Preference Optimisation"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],

@@ -407,7 +407,7 @@ public:: true
       "label": "Actuation and Control"
     },
     {
-      "@id": "urn:ngm:class:embedded-system",
+      "@id": "urn:ngm:class:embedded-systems",
       "label": "Embedded System"
     },
     {

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:software-testing",
   "domain": "spatial-computing",
-  "definition": "Software Testing is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Software Testing is the systematic process of executing a software system or component under specified conditions, observing its behaviour, and evaluating whether it meets defined requirements. It encompasses unit, integration, system, and acceptance testing, as well as performance, security, and regression testing, forming a quality gate in the development lifecycle.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -13,21 +13,44 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:robustness",
+        "label": "Robustness"
+      },
+      {
+        "id": "urn:ngm:class:safety",
+        "label": "Safety"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "id": "urn:ngm:class:xr-testing-infrastructure",
+        "label": "XR Testing Infrastructure"
+      }
+    ]
   },
   "wikilinks": [
     {

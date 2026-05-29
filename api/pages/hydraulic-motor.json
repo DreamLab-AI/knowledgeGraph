@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:hydraulic-motor",
   "domain": "robotics",
-  "definition": "Hydraulic motor converts hydraulic pressure to rotational torque.",
+  "definition": "A Hydraulic Motor is an actuation device that converts pressurised hydraulic fluid flow into continuous rotational mechanical torque, functioning as the rotary counterpart to the hydraulic cylinder (which produces linear force). It is distinguished by extremely high power-to-weight ratio and the ability to sustain high torques at low rotational speeds without gearbox inefficiencies, making it the preferred actuator for heavy robotic joints, industrial manipulators, and mobile machinery operating in harsh environments. Common design types include gear motors, vane motors, and axial-piston motors, each offering different torque-speed-efficiency trade-offs.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
@@ -17,21 +17,74 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:hydraulic-cylinder",
+        "label": "Hydraulic Cylinder"
+      },
+      {
+        "id": "urn:ngm:class:servo-control",
+        "label": "Servo Control"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:electric-motor",
+        "label": "Electric Motor"
+      },
+      {
+        "id": "urn:ngm:class:pneumatic-motor",
+        "label": "Pneumatic Motor"
+      },
+      {
+        "id": "urn:ngm:class:servo-motor",
+        "label": "Servo Motor"
+      },
+      {
+        "id": "urn:ngm:class:electric-actuator",
+        "label": "Electric Actuator"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:torque-control",
+        "label": "Torque Control"
+      },
+      {
+        "id": "urn:ngm:class:robot-actuator",
+        "label": "Robot Actuator"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:mechanical-component",
+        "label": "Mechanical Component"
+      },
+      {
+        "id": "urn:ngm:class:force-torque-sensor",
+        "label": "Force Torque Sensor"
+      },
+      {
+        "id": "urn:ngm:class:robotics-systems",
+        "label": "Robotics Systems"
+      }
+    ]
   },
   "wikilinks": [
     {

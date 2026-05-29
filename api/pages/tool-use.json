@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:tool-use",
   "domain": "artificial-intelligence",
-  "definition": "Tool Use in the context of AI agents refers to the capability of large language models to invoke external APIs, functions, or services to retrieve information or perform actions beyond text generation.",
+  "definition": "Tool Use is the capability of large language models and AI agent systems to invoke external functions, APIs, databases, or services at inference time, extending the model's effective knowledge and action repertoire beyond pure text generation. The model receives a structured description of available tools (a tool schema), reasons about which tool to call and with what arguments, and incorporates the returned result into its response. This capability is foundational to agentic AI systems that must take real-world actions such as code execution, web search, database queries, or actuator control.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -14,11 +14,29 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:tool-schema",
+        "label": "Tool Schema"
+      },
+      {
+        "id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +45,16 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

@@ -46,16 +46,34 @@ public:: true
   "@id": "urn:ngm:class:ai-augmented-software-engineering",
   "@type": "Class",
   "label": "AI-Augmented Software Engineering",
-  "definition": "AI-Augmented Software Engineering is a type of Artificial Intelligence in the artificial intelligence domain.",
+  "definition": "AI-Augmented Software Engineering is the practice of integrating artificial intelligence tools and techniques — including large language models, code generation systems, and agentic AI — into the software development lifecycle to accelerate coding, testing, review, and deployment. It encompasses AI-assisted code completion, automated test generation, intelligent refactoring, and documentation synthesis, transforming how software teams design, build, and maintain systems at scale.",
   "domain": "artificial-intelligence",
   "maturity": "emerging",
+  "quality": 0.75,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-application",
       "label": "AI Application"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
+      {"@id": "urn:ngm:class:code-generation", "label": "Code Generation"},
+      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:software-development-process", "label": "Software Development Process"},
+      {"@id": "urn:ngm:class:rapid-ai-deployment", "label": "Rapid AI Deployment"},
+      {"@id": "urn:ngm:class:workflow-automation", "label": "Workflow Automation"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:software-engineering", "label": "Software Engineering"},
+      {"@id": "urn:ngm:class:software-testing", "label": "Software Testing"},
+      {"@id": "urn:ngm:class:software-architecture", "label": "Software Architecture"},
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -96,7 +114,7 @@ public:: true
 
 
 - ### Definition
-  - [Generated from Gartner emerging tech analysis]
+  - AI-Augmented Software Engineering applies large language models, code generation tools, and agentic AI systems to every phase of the software development lifecycle — from requirements and design through implementation, testing, and deployment. By embedding intelligence into the developer toolchain, teams can dramatically reduce time-to-ship, surface latent bugs earlier, and generate documentation and test coverage automatically. This field sits at the intersection of applied ML, software architecture, and human-computer interaction, demanding new practices around AI-generated code review, prompt engineering for developer contexts, and governance of autonomous coding agents.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:AI-AugmentedSoftwareEngineering

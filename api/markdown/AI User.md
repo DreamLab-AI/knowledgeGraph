@@ -242,15 +242,32 @@ public:: true
   "@id": "urn:ngm:class:ai-user",
   "@type": "Class",
   "label": "AI User",
-  "definition": "An individual or entity who interacts with, relies upon, or is affected by the outputs, decisions, or recommendations of an artificial intelligence system in order to accomplish tasks, make decisions, obtain services, or achieve objectives, either through direct system interaction or indirect exp...",
+  "definition": "An individual or entity who interacts with, relies upon, or is affected by the outputs, decisions, or recommendations of an AI system in order to accomplish tasks, obtain services, or achieve objectives—either through direct interaction or indirect exposure to AI-mediated decisions. AI users are the primary experiencers of AI benefits and harms, encompassing diverse populations with varying technical literacy, accessibility needs, and degrees of voluntary engagement, making their rights and interests central to responsible AI governance.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
     }
   ],
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:ai-provider", "label": "AI Provider"},
+      {"@id": "urn:ngm:class:ai-operator", "label": "AI Operator"},
+      {"@id": "urn:ngm:class:accountability", "label": "Accountability"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:human-oversight", "label": "Human Oversight"},
+      {"@id": "urn:ngm:class:fairness", "label": "Fairness"},
+      {"@id": "urn:ngm:class:explainability", "label": "Explainability"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:eu-ai-act", "label": "EU AI Act"},
+      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -545,7 +562,9 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - bridges-to:: [[AI Agent System]]
+  - relatedTo:: [[AI Provider]], [[AI Operator]], [[Accountability]]
+  - requires:: [[Human Oversight]], [[Fairness]], [[Explainability]]
+  - dependsOn:: [[EU AI Act]], [[Responsible AI]]
 
 - ### Content
   - An individual or entity who interacts with, relies upon, or is affected by the outputs, decisions, or recommendations of an artificial intelligence system in order to accomplish tasks, make decisions, obtain services, or achieve objectives, either through direct system interaction or indirect exposure to AI-mediated outcomes, encompassing both active users who consciously engage with AI systems and passive subjects whose data is processed or whose circumstances are influenced by AI operations.

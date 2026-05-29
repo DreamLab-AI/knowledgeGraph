@@ -74,15 +74,30 @@ public:: true
   "@id": "urn:ngm:class:implementation-examples",
   "@type": "Class",
   "label": "implementation examples",
-  "definition": "Implementation examples in metaverse and blockchain contexts are concrete, production-ready code samples demonstrating how theoretical concepts translate into functioning systems, including SmartContractExamples|smart contract implementations, NFTContracts|NFT contract patterns, and",
+  "definition": "Concrete, production-oriented code samples and reference designs demonstrating how theoretical concepts translate into functioning systems. In metaverse and blockchain contexts these span smart contract patterns (DeFi AMMs, NFT contracts, DAO governance), gas optimisation techniques, security patterns such as checks-effects-interactions, and upgradeability proxies. They serve as educational resources and accelerators for developers, reducing deployment risk through audited, annotated reference implementations.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
+      {"@id": "urn:ngm:class:decentralised-autonomous-organisation", "label": "Decentralised Autonomous Organisation"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"},
+      {"@id": "urn:ngm:class:smart-contracts", "label": "Smart Contracts"}
+    ]
+  },
   "quality": 0.4,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -165,7 +180,9 @@ public:: true
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses:: [[Smart Contract]], [[Blockchain]]
+  - enables:: [[Decentralised Finance]], [[Decentralised Autonomous Organisation]]
+  - supports:: [[Digital Asset]], [[Smart Contracts]]
 - ### Content
   - Implementation examples demonstrate theoretical concepts in production systems through smart contracts, NFT patterns, metaverse platform APIs, DeFi mechanics, and privacy-preserving techniques, serving as reference designs and educational resources with security guidance.
   - ### Original Content

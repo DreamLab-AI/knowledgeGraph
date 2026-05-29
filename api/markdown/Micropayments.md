@@ -343,7 +343,7 @@ public:: true
       "label": "Digital Finance"
     },
     {
-      "@id": "urn:ngm:class:payment-systems",
+      "@id": "urn:ngm:class:payment-system",
       "label": "Payment Systems"
     }
   ],

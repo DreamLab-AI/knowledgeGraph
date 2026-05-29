@@ -42,15 +42,32 @@ public:: true
   "@id": "urn:ngm:class:word-piece",
   "@type": "Class",
   "label": "WordPiece",
-  "definition": "A subword tokenisation mod that merges character sequences based on likelihood maximisation rather than frequency, used in BERT and related models.",
+  "definition": "A subword tokenisation algorithm that iteratively merges character sequences by maximising the likelihood of the training corpus under a unigram language model, rather than merging the most frequent pairs. WordPiece is the default tokeniser for BERT, DistilBERT, and ELECTRA, producing vocabularies of approximately 30,000 tokens that handle rare and compound words via subword splitting.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
     }
   ],
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:subword-tokenisation", "label": "Subword Tokenisation"},
+      {"@id": "urn:ngm:class:tokenisation", "label": "Tokenisation"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:byte-pair-encoding", "label": "Byte Pair Encoding"},
+      {"@id": "urn:ngm:class:sentence-piece", "label": "SentencePiece"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:vocabulary", "label": "Vocabulary"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -93,7 +110,10 @@ public:: true
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **Part-of**: [[Subword Tokenisation]] family, [[Tokenisation]] pipeline
+  - **Enables**: [[Natural Language Processing]] (handles OOV words via subword decomposition)
+  - **Contrasts-with**: [[Byte Pair Encoding]] (frequency-based merges), [[SentencePiece]] (language-agnostic)
+  - **Uses**: [[Vocabulary]] (fixed token set of ~30k entries for BERT)
 - ### Content
   - A subword tokenisation method that merges character sequences based on likelihood maximisation rather than frequency, used in BERT and related models.
 		- #### Extensions:

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:gas-limit",
   "domain": "blockchain",
-  "definition": "Maximum gas per transaction within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "A Gas Limit is the maximum amount of gas \u2014 the unit measuring computational effort \u2014 that a sender authorises for a blockchain transaction or that a block may contain in aggregate. It serves as a hard cap preventing unbounded resource consumption, protecting network nodes from denial-of-service attacks and ensuring predictable block processing times. On Ethereum, each transaction carries a user-set gas limit and each block carries a protocol-enforced block gas limit that validators adjust over time.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-protocol-and-consensus",
@@ -17,25 +17,90 @@
     },
     {
       "id": "urn:ngm:class:economic-mechanism",
-      "label": "EconomicMechanism"
+      "label": "Economic Mechanism"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:smart-contract-execution",
+        "label": "Smart Contract Execution"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:base-fee",
+        "label": "Base Fee"
+      },
+      {
+        "id": "urn:ngm:class:fee-market",
+        "label": "Fee Market"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gas-price",
+        "label": "Gas Price"
+      },
+      {
+        "id": "urn:ngm:class:transaction-fee",
+        "label": "Transaction Fee"
+      },
+      {
+        "id": "urn:ngm:class:mev",
+        "label": "MEV"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-economics",
+        "label": "Blockchain Economics"
+      },
+      {
+        "id": "urn:ngm:class:validator-node",
+        "label": "Validator Node"
+      },
+      {
+        "id": "urn:ngm:class:mempool",
+        "label": "Mempool"
+      },
+      {
+        "id": "urn:ngm:class:block-size",
+        "label": "Block Size"
+      }
+    ]
   },
   "wikilinks": [
     {

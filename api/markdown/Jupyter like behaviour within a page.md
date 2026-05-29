@@ -33,15 +33,28 @@ public:: true
   "@id": "urn:ngm:class:jupyter-like-behaviour-within-a-page",
   "@type": "Class",
   "label": "Jupyter like behaviour within a page",
-  "definition": "Jupyter like behaviour within a page is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A knowledge-management pattern that embeds executable code cells with shared global state within a page or document, mimicking the interactive notebook paradigm of Jupyter. Code blocks execute in sequence against a common variable scope, enabling data loading, transformation, and display without leaving the note-taking environment.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:python", "label": "Python"},
+      {"@id": "urn:ngm:class:script", "label": "Script"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:knowledge-management", "label": "Knowledge Management"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -72,14 +85,16 @@ public:: true
 
 
 - ### Definition
-  - Jupyter like behaviour within a page is a concept within the ngm domain.
+  - A knowledge-management pattern that embeds executable code cells with shared global state within a page or document, mimicking the interactive notebook paradigm of Jupyter. Code blocks execute in sequence against a common variable scope, enabling data loading, transformation, and display without leaving the note-taking environment.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:JupyterLikeBehaviourWithinAPage
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses:: [[Python]], [[Script]]
+  - partOf:: [[Knowledge Management]]
+  - relatedTo:: [[Knowledge Graph]]
 
 - ### Content
   - Note use of global variables to pass values between functions

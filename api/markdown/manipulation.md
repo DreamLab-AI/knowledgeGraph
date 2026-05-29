@@ -8,6 +8,11 @@
 
 - ### Relationships
   - is-subclass-of:: [[Robotics Systems]]
+  - requires [[Motion Planning]]
+  - requires [[Inverse Kinematics]]
+  - uses [[Force Control]]
+  - uses [[End Effector]]
+  - relatedTo [[Haptics]]
 
 - ### Content
   Manipulation — content pending enrichment.

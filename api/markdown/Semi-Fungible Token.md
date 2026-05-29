@@ -46,7 +46,7 @@ public:: true
   "@id": "urn:ngm:class:semi-fungible-token",
   "@type": "Class",
   "label": "Semi-Fungible Token",
-  "definition": "A token that can represent both fungible and non-fungible properties, typically starting as fungible but becoming non-fungible under certain conditions, or representing classes of interchangeable assets.",
+  "definition": "A blockchain token standard that combines fungible and non-fungible properties, typically implemented under ERC-1155. Semi-fungible tokens represent classes of interchangeable assets (e.g. event tickets of the same tier) that may transition to uniquely non-fungible assets upon redemption or use, enabling a single contract to manage both fungible currencies and unique collectibles with reduced gas costs.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -59,7 +59,25 @@ public:: true
       "label": "Token"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:erc-1155", "label": "ERC-1155"},
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
+      {"@id": "urn:ngm:class:erc1155-standard", "label": "ERC1155 Standard"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:fungible-token", "label": "Fungible Token"},
+      {"@id": "urn:ngm:class:non-fungible-token-nft", "label": "Non-Fungible Token (NFT)"},
+      {"@id": "urn:ngm:class:security-token", "label": "Security Token"},
+      {"@id": "urn:ngm:class:nft-marketplace", "label": "NFT Marketplace"},
+      {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:digital-asset-trading", "label": "Digital Asset Trading"},
+      {"@id": "urn:ngm:class:asset-tokenisation", "label": "Asset Tokenisation"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

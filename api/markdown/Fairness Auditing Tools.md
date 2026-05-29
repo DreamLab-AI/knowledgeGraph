@@ -70,16 +70,42 @@ public:: true
   "@id": "urn:ngm:class:fairness-auditing-tools",
   "@type": "Class",
   "label": "Fairness Auditing Tools",
-  "definition": "Fairness Auditing Tools are software libraries, platforms, and frameworks designed to detect, measure, and mitigate algorithmic bias in AI systems through automated analysis, visualization, and intervention capabilities.",
+  "definition": "Fairness Auditing Tools are software libraries, platforms, and frameworks designed to detect, measure, and mitigate algorithmic bias in AI systems through automated analysis, visualisation, and intervention capabilities. They operationalise fairness metrics—such as demographic parity, equalised odds, and predictive parity—across protected attribute groups, supporting both pre-deployment model assessments and continuous production monitoring.",
   "domain": "artificial-intelligence",
   "maturity": "established",
+  "qualityScore": 0.8,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:fairness-metrics", "label": "Fairness Metrics"},
+      {"@id": "urn:ngm:class:bias-detection-methods", "label": "Bias Detection Methods"},
+      {"@id": "urn:ngm:class:bias-mitigation-techniques", "label": "Bias Mitigation Techniques"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:algorithmic-bias", "label": "Algorithmic Bias"},
+      {"@id": "urn:ngm:class:machine-learning-model", "label": "Machine Learning Model"},
+      {"@id": "urn:ngm:class:training-data", "label": "Training Data"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
+      {"@id": "urn:ngm:class:explainability", "label": "Explainability"},
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:ai-risk-management", "label": "AI Risk Management"},
+      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:fairness-constraints", "label": "Fairness Constraints"},
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
+      {"@id": "urn:ngm:class:ai-governance-framework", "label": "AI Governance Framework"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -160,11 +186,14 @@ public:: true
   - implemented-in-layer:: [[ConceptualLayer]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
-  - bridges-to:: [[Autonomous Robot]], [[Blockchain]]
+  - hasPart:: [[Fairness Metrics]], [[Bias Detection Methods]], [[Bias Mitigation Techniques]]
+  - requires:: [[Algorithmic Bias]], [[Machine Learning Model]], [[Training Data]]
+  - enables:: [[Responsible AI]], [[Explainability]], [[AI Governance]]
+  - supports:: [[AI Risk Management]], [[AI Ethics]]
+  - relatedTo:: [[Fairness Constraints]], [[Data Governance]], [[AI Governance Framework]]
 
 - ### Content
-  Fairness Auditing Tools — content pending enrichment.
+  Fairness auditing tools address a structural gap between the statistical optimisation objectives used during model training and the equity outcomes required by law, ethics, and organisational policy. A model that minimises average prediction error may systematically underperform for minority demographic groups if those groups are underrepresented in training data or if historical outcomes the model is trained to predict already embed past discrimination. Fairness auditing tools make these disparities visible and quantifiable, enabling practitioners to act before deployment and to monitor continuously in production.
 
 - ### Provenance
   - sources:: [[Fairlearn]], [[AIF360]], [[IEEE P7003-2021]], [[ISO/IEC TR 24027]]

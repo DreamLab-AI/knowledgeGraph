@@ -7,7 +7,9 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - bridges-to:: [[AI Agent System]]
+  - requires:: [[AI Lifecycle]], [[AI Impact Assessment]]
+  - implements:: [[EU AI Act]], [[AI Governance Framework]]
+  - relatedTo:: [[AI Operator]], [[AI User]], [[Accountability]], [[Risk Management]]
 
 - ### Content
   - An individual, organisation, or legal entity that develops, produces, or supplies an artificial intelligence system, including responsibility for design decisions, training processes, system capabilities, documentation, and compliance with applicable requirements, and who either places the AI system on the market under their own name or trademark, substantially modifies an existing system, or makes the system available for use, thereby assuming primary accountability for the system's characteristics, performance, and conformity with regulatory obligations.

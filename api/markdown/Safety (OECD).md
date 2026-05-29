@@ -42,16 +42,34 @@ public:: true
   "@id": "urn:ngm:class:safety-oecd",
   "@type": "Class",
   "label": "Safety (OECD)",
-  "definition": "AI systems should operate safely without causing unacceptable risk of physical or psychological harm to people, property or the environment, with appropriate safeguards to prevent, detect and respond to hazardous failures throughout the AI lifecycle.",
+  "definition": "Under the OECD AI Principles (Principle 1.4, updated 2024), AI systems must operate without posing unacceptable risks of physical, psychological, or environmental harm. This requires lifecycle-spanning hazard analysis, fail-safe design, continuous monitoring, and incident response mechanisms, with responsibilities shared between providers who design safety in and deployers who maintain operational safety.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
       "label": "Governance and Safety"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"},
+      {"@id": "urn:ngm:class:functional-safety", "label": "Functional Safety"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:robustness-oecd", "label": "Robustness (OECD)"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:high-risk-ai-system", "label": "High Risk AI System"},
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:serious-incident", "label": "Serious Incident"},
+      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}
+    ]
+  },
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -95,7 +113,11 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Under the OECD AI Principles, Safety (OECD) has the following typed relations:
+  - **requires**: Risk Management, Functional Safety — lifecycle hazard analysis and risk mitigation are prerequisites for realising safety.
+  - **contrastsWith**: Robustness (OECD) — safety addresses harm avoidance; robustness addresses performance under adversarial or distributional shifts.
+  - **enables**: High Risk AI System classification triggers, AI Governance frameworks — safety compliance unlocks authorisation pathways.
+  - **relatedTo**: Serious Incident (mandatory reporting obligation when safety fails), AI Safety (broader research discipline).
 
 - ### Content
   - AI systems should operate safely without causing unacceptable risk of physical or psychological harm to people, property or the environment, with appropriate safeguards to prevent, detect and respond to hazardous failures throughout the AI lifecycle.

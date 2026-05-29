@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:wheeled-robot",
   "domain": "robotics",
-  "definition": "Wheeled Robot is a type of Robotics in the robotics domain.",
+  "definition": "A Wheeled Robot is a mobile robot platform that uses wheels as its primary locomotion mechanism. Wheeled robots offer high energy efficiency and speed on flat terrain, making them dominant in warehouse automation, last-mile delivery, and research platforms. Differential drive, omnidirectional, and car-like Ackermann steering configurations each present distinct kinematic constraints that influence navigation algorithm design.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-robot-type",
@@ -14,19 +14,42 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:odometry",
+        "label": "Odometry"
+      },
+      {
+        "id": "urn:ngm:class:navigation",
+        "label": "Navigation"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
+      },
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:mobile-robot",
+        "label": "Mobile Robot"
+      }
+    ],
     "relatedTo": []
   },
   "wikilinks": [

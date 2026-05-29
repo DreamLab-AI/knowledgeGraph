@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:virtual-interaction-logging",
   "@type": "Class",
   "label": "Virtual Interaction Logging",
-  "definition": "The systematic recording and analysis of user interactions, behaviors, and activities within virtual environments, capturing data on movements, communications, transactions, and engagement patterns for analytics, compliance, and experience optimization.",
+  "definition": "The systematic recording and analysis of user interactions, behaviours, and activities within virtual environments, capturing data on avatar movements, communications, transactions, and engagement patterns for analytics, compliance, and experience optimisation. Logging pipelines must balance comprehensive telemetry collection with data minimisation, user consent, and retention policies required under privacy regulations such as GDPR.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
@@ -59,7 +60,22 @@ public:: true
       "label": "Data Analytics"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:consent-management", "label": "Consent Management"},
+      {"@id": "urn:ngm:class:privacy", "label": "Privacy"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:data-analytics", "label": "Data Analytics"},
+      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:encryption", "label": "Encryption"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:governance-framework", "label": "Governance Framework"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -109,6 +125,10 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Data Analytics]]
+  - **requires**: [[Consent Management]], [[Privacy]] — interaction logs contain personal data and require explicit user consent and privacy-by-design data handling
+  - **enables**: [[Data Analytics]], [[Compliance Framework]] — logged events feed analytics pipelines and provide the audit trail required for regulatory compliance
+  - **uses**: [[Encryption]] — all interaction log data must be encrypted in transit and at rest
+  - **relatedTo**: [[Governance Framework]] — logging policies are governed by platform governance frameworks and data protection regulation
 
 - ### Content
 

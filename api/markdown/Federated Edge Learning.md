@@ -54,16 +54,38 @@ public:: true
   "@id": "urn:ngm:class:federated-edge-learning",
   "@type": "Class",
   "label": "Federated Edge Learning",
-  "definition": "Federated Edge Learning combines distributed machine learning with edge computing, enabling collaborative model training across decentralized edge devices while keeping training data locally on-device.",
+  "definition": "Federated Edge Learning combines distributed machine learning with edge computing, enabling collaborative model training across decentralised edge devices while keeping training data locally on-device. Participants train local models on their private datasets and securely aggregate only model updates—rather than raw data—into a shared global model, preserving data sovereignty whilst enabling collective intelligence.",
   "domain": "artificial-intelligence",
   "maturity": "established",
+  "qualityScore": 0.8,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
+      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
+      {"@id": "urn:ngm:class:model-training", "label": "Model Training"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:differential-privacy", "label": "Differential Privacy"},
+      {"@id": "urn:ngm:class:privacy-preserving-analytics", "label": "Privacy Preserving Analytics"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:edge-computing-node", "label": "Edge Computing Node"},
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
+      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"},
+      {"@id": "urn:ngm:class:privacy-utility-tradeoffs", "label": "Privacy Utility Tradeoffs"},
+      {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

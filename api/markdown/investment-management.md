@@ -6,7 +6,9 @@
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: [[Digital Asset]], [[Smart Contract]]
+  - **requires**: [[Risk Management]], [[Financial Regulation]]
+  - **relatedTo**: [[Asset Management]], [[Digital Asset Trading]], [[Governance Token]]
 
 - ### Content
 

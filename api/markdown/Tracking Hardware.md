@@ -42,9 +42,9 @@ public:: true
   "@id": "urn:ngm:class:tracking-hardware",
   "@type": "Class",
   "label": "Tracking Hardware",
-  "definition": "Tracking Hardware is a type of Tracking Technology in the spatial computing domain.",
+  "definition": "Tracking Hardware comprises the physical sensors and devices used to determine the position and orientation of users, controllers, and objects within spatial computing environments. This includes inertial measurement units, optical trackers, hand-tracking cameras, eye-tracking modules, and SLAM-based inside-out tracking systems that together provide the 6-DoF pose data essential for immersive VR/AR experiences.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-interaction",
@@ -55,6 +55,20 @@ public:: true
       "label": "Tracking Technology"
     }
   ],
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:inertial-measurement-unit", "label": "Inertial Measurement Unit"},
+      {"@id": "urn:ngm:class:optical-tracking", "label": "Optical Tracking"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:hand-tracking", "label": "Hand Tracking"},
+      {"@id": "urn:ngm:class:eye-tracking", "label": "Eye Tracking"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
+      {"@id": "urn:ngm:class:slam", "label": "SLAM"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -91,14 +105,19 @@ public:: true
 
 
 - ### Definition
-  - Tracking Hardware is a concept within the metaverse domain. Further enrichment pending.
+  - Tracking Hardware comprises physical sensors and devices — including inertial measurement units, optical trackers, hand and eye cameras, and SLAM-based inside-out trackers — that determine the 6-DoF position and orientation of users and objects within spatial computing environments.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:TrackingHardware
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart [[Inertial Measurement Unit]]
+  - hasPart [[Optical Tracking]]
+  - enables [[Hand Tracking]]
+  - enables [[Eye Tracking]]
+  - uses [[Sensor Fusion]]
+  - uses [[SLAM]]
 
 - ### Content
 

@@ -1,12 +1,19 @@
 - ### Definition
-  - OpticalTracking is a concept within the ngm domain.
+  - A sensing technology that uses camera-based systems and computer vision algorithms to determine the position and orientation of objects or users within physical space. Implementations range from marker-based infrared systems achieving sub-millimetre accuracy to markerless inside-out tracking using SLAM, enabling motion capture, hand tracking, and environmental mapping for XR applications.
 
 - ### Semantic Classification
-  - owl-class:: infrastructure:OpticalTracking
+  - owl-class:: spatial-computing:OpticalTracking
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses [[Computer Vision]]
+  - Uses [[SLAM]]
+  - Uses [[Pose Estimation]]
+  - Enables [[Motion Capture]]
+  - Enables [[Hand Tracking]]
+  - Enables [[XR Runtime Environment]]
+  - Depends On [[Photogrammetry]]
+  - Depends On [[Structure-from-Motion]]
 
 - ### Content
   # OpticalTracking

@@ -7,7 +7,10 @@
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: [[Transformer]], [[Transformer Architecture]], [[Language Modeling]]
+  - **contrastsWith**: [[ALBERT]], [[RoBERTa]]
+  - **enables**: [[Natural Language Processing]], [[Machine Learning Model]]
+  - **relatedTo**: [[Large Language Models]]
 - ### Content
   - Efficiently Learning an Encoder that Classifies Token Replacements Accurately: a pre-training approach that trains a discriminator to detect replaced tokens rather than reconstructing masked inputs, improving sample efficiency.
   ## Characteristics

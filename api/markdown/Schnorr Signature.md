@@ -66,7 +66,7 @@ public:: true
   "@id": "urn:ngm:class:schnorr-signature",
   "@type": "Class",
   "label": "Schnorr Signature",
-  "definition": "Efficient signature scheme within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "A provably secure digital signature scheme based on the discrete logarithm problem over elliptic curves, offering linearity properties that enable key and signature aggregation. Within blockchain systems Schnorr signatures underpin features such as Taproot, MuSig multi-signature protocols, and threshold signing, providing smaller signature sizes and stronger privacy compared to ECDSA.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -83,7 +83,24 @@ public:: true
       "label": "CryptographicPrimitive"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:ecdsa", "label": "ECDSA"},
+      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
+      {"@id": "urn:ngm:class:elliptic-curve-cryptography", "label": "Elliptic Curve Cryptography"},
+      {"@id": "urn:ngm:class:taproot-assets", "label": "Taproot Assets"},
+      {"@id": "urn:ngm:class:signature-scheme", "label": "Signature Scheme"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:secp256k1", "label": "secp256k1"},
+      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:digital-signature-verification", "label": "Digital Signature Verification"},
+      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

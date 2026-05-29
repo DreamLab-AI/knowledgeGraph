@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:audio-technology",
   "@type": "Class",
   "label": "Audio Technology",
-  "definition": "Audio Technology is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "The hardware, software, and signal-processing techniques used to capture, synthesise, spatialise, and reproduce sound within spatial computing and metaverse environments. Audio technology in immersive contexts encompasses spatial audio rendering, binaural processing, voice interaction, and real-time acoustic simulation to enhance presence and communication fidelity.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-display-and-rendering",
@@ -60,6 +61,40 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-audio-technology",
+        "label": "Immersive Audio Technology"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:virtual-presence",
+        "label": "Virtual Presence"
+      },
+      {
+        "@id": "urn:ngm:class:voice-interaction",
+        "label": "Voice Interaction"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:telepresence",
+        "label": "Telepresence"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:audio-processing-system",
+        "label": "Audio Processing System"
+      }
+    ]
   }
 }
 ```
@@ -96,7 +131,7 @@ public:: true
 
 
 - ### Definition
-  - Audio Technology is a concept within the metaverse domain. Further enrichment pending.
+  - The hardware, software, and signal-processing techniques used to capture, synthesise, spatialise, and reproduce sound within spatial computing and metaverse environments. Audio technology in immersive contexts encompasses spatial audio rendering, binaural processing, voice interaction, and real-time acoustic simulation to enhance presence and communication fidelity.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:AudioTechnology
@@ -104,6 +139,11 @@ public:: true
 
 - ### Relationships
   - bridges-to:: [[Telepresence]] (tc)
+  - Has Part: [[Spatial Audio]]
+  - Has Part: [[Immersive Audio Technology]]
+  - Enables: [[Virtual Presence]]
+  - Enables: [[Voice Interaction]]
+  - Uses: [[Audio Processing System]]
 
 - ### Content
 

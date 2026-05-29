@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:performance-metrics",
   "domain": "infrastructure",
-  "definition": "Performance Metrics is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Performance Metrics are quantitative measurements used to evaluate the efficiency, quality, and behaviour of AI models, software systems, or hardware platforms. In AI and metaverse contexts these include inference latency, frames per second, model accuracy, throughput, memory utilisation, and error rates. Metrics provide the empirical basis for benchmarking, monitoring dashboards, and continuous improvement pipelines.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-software-engineering",
@@ -14,7 +14,7 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,11 +23,34 @@
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:performance-benchmarks",
+        "label": "Performance Benchmarks"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:machine-learning-pipeline",
+        "label": "Machine Learning Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:monitoring-dashboard",
+        "label": "Monitoring Dashboard"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "id": "urn:ngm:class:model-evaluation-results",
+        "label": "Model Evaluation Results"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

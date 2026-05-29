@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:algorithmic-framework",
   "domain": "artificial-intelligence",
-  "definition": "A algorithmic framework component in the Artificial Intelligence domain that required by ProceduralContentGeneration.",
+  "definition": "An Algorithmic Framework is a structured collection of algorithms, data structures, and design principles that together provide a reusable computational scaffold for solving a class of related problems. It abstracts common patterns of search, optimisation, inference, and decision-making into composable building blocks that can be instantiated and extended for specific applications. Algorithmic frameworks underpin fields such as machine learning, procedural content generation, automated planning, and symbolic reasoning by providing principled, reproducible computational architectures.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -17,21 +17,73 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.75,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:algorithm",
+        "label": "Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:optimization-algorithm",
+        "label": "Optimization Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:graph-algorithms",
+        "label": "Graph Algorithms"
+      },
+      {
+        "id": "urn:ngm:class:learning-algorithm",
+        "label": "Learning Algorithm"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:procedural-content-generation",
+        "label": "Procedural Content Generation"
+      },
+      {
+        "id": "urn:ngm:class:automated-planning",
+        "label": "Automated Planning"
+      },
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:machine-learning-framework",
+        "label": "Machine Learning Framework"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin-framework",
+        "label": "Digital Twin Framework"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:optimization-technique",
+        "label": "Optimization Technique"
+      }
+    ]
   },
   "wikilinks": [
     {

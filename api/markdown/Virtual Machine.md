@@ -70,9 +70,10 @@ public:: true
   "@id": "urn:ngm:class:virtual-machine",
   "@type": "Class",
   "label": "Virtual Machine",
-  "definition": "A virtual machine in blockchain contexts is a runtime environment executing SmartContract|smart contracts deterministically, translating high-level contract code into low-level operations whilst enforcing resource limits and preventing unauthorised state modifications.",
+  "definition": "A sandboxed runtime environment that executes smart contract bytecode deterministically across distributed nodes, translating high-level contract code into low-level operations whilst metering computational resource consumption and enforcing state-transition rules. The Ethereum Virtual Machine is the canonical reference implementation, with alternatives including WebAssembly-based runtimes for improved performance.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
@@ -88,6 +89,36 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:smart-contract-execution",
+        "label": "Smart Contract Execution"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      }
+    ]
   }
 }
 ```
@@ -162,7 +193,10 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Enables: [[Smart Contract]]
+  - Uses: [[Blockchain]], [[Cryptography]]
+  - Supports: [[Distributed System]]
+  - Related To: [[Smart Contract Execution]]
 
 - ### Content
   - Runtime environment executing [[SmartContract|smart contracts]] deterministically, translating high-level contract code into low-level operations whilst enforcing resource limits and preventing unauthorised state modifications. The [[EVM|Ethereum Virtual Machine]] dominates as the reference implementation executing [[Solidity|Solidity]] bytecode across thousands of nodes globally, with alternatives including [[WASM|WebAssembly]]-based [[SolanaSVM|Solana's Sealevel VM]], [[MoveVM|Move VM]], and [[CairoVM|Cairo VM]] providing specialised optimisations. Deterministic execution is paramount—identical contract invocations across decentralised networks must produce identical results, enabling consensus formation without relying on centralised authorities.

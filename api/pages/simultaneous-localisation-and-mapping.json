@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:simultaneous-localisation-and-mapping",
   "domain": "robotics",
-  "definition": "Simultaneous Localisation and Mapping (SLAM) is a computational technique by which a robot or autonomous agent incrementally builds a map of an unknown environment while concurrently estimating its own position within that map.",
+  "definition": "Simultaneous Localisation and Mapping (SLAM) is a computational technique by which a mobile robot or autonomous agent concurrently estimates its own pose and builds a consistent map of a previously unknown environment from sequential sensor observations, solving the circular dependency between localisation (which requires a map) and mapping (which requires a known pose). SLAM algorithms process observations from sensors including LiDAR, stereo cameras, IMUs, and depth cameras using probabilistic frameworks such as particle filters, extended Kalman filters, or pose-graph optimisation to maintain joint estimates of the robot state and environment map.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-navigation-and-planning",
@@ -14,20 +14,51 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:ngm:class:visual-odometry",
+        "label": "Visual Odometry"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "id": "urn:ngm:class:particle-filter",
+        "label": "Particle Filter"
+      },
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:localisation",
+        "label": "Localisation"
+      },
+      {
+        "id": "urn:ngm:class:odometry",
+        "label": "Odometry"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

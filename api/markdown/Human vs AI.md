@@ -33,16 +33,30 @@ public:: true
   "@id": "urn:ngm:class:human-vs-ai",
   "@type": "Class",
   "label": "Human vs AI",
-  "definition": "Human vs AI is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "The contested domain examining comparative capabilities, limitations, and complementarities between human cognition and artificial intelligence systems, encompassing debates about autonomy, agency, creativity, and the appropriate division of decision-making authority between people and machines.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"},
+      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
+      {"@id": "urn:ngm:class:fairness", "label": "Fairness"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:autonomous-ai-agents", "label": "Autonomous AI Agents"},
+      {"@id": "urn:ngm:class:artificial-general-intelligence", "label": "Artificial General Intelligence"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:accountability", "label": "Accountability"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -72,14 +86,19 @@ public:: true
 
 
 - ### Definition
-  - Human vs AI is a concept within the ngm domain.
+  - The contested domain examining comparative capabilities, limitations, and complementarities between human cognition and artificial intelligence systems, encompassing debates about autonomy, agency, creativity, and the appropriate division of decision-making authority between people and machines.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:HumanVsAI
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **relatedTo** [[AI Ethics]] — the human-AI boundary is a central concern for ethical AI deployment
+  - **relatedTo** [[AI Safety]] — appropriate task allocation between humans and AI is a safety question
+  - **relatedTo** [[Fairness]] — human-AI comparisons inform fairness criteria and accountability standards
+  - **contrastsWith** [[Autonomous AI Agents]] — autonomous agents represent the AI-maximalist end of the spectrum
+  - **contrastsWith** [[Artificial General Intelligence]] — AGI aspirations frame the most expansive human-AI comparisons
+  - **requires** [[Accountability]] — meaningful human-AI division requires clear accountability structures
 
 - ### Content
   - ![](https://m.media-amazon.com/images/I/81+D9XXdrOL._SL1500_.jpg){:height 400, :width 300}

@@ -92,7 +92,7 @@ public:: true
   "label": "Style Transfer",
   "definition": "Style Transfer is the technique of applying the artistic style of one image (style image) to the content of another image (content image), creating a new image that combines content from one source with the aesthetic style of another.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
@@ -103,6 +103,20 @@ public:: true
       "label": "Image to Image Translation"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"},
+      {"@id": "urn:ngm:class:3-d-content-generation", "label": "3D Content Generation"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:generative-adversarial-network", "label": "Generative Adversarial Network"},
+      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -207,7 +221,12 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses [[Convolutional Neural Network]]
+  - uses [[Deep Learning]]
+  - enables [[Image Generation]]
+  - enables [[3D Content Generation]]
+  - relatedTo [[Generative Adversarial Network]]
+  - relatedTo [[Diffusion Model]]
 
 - ### Content
   - Style Transfer is the technique of applying the artistic style of one image (style image) to the content of another image (content image), creating a new image that combines content from one source with the aesthetic style of another. Neural style transfer employs convolutional neural networks to separate and recombine content and style representations, enabling artistic rendering, photo enhancement, and creative visual effects.

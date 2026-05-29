@@ -62,16 +62,30 @@ public:: true
   "@id": "urn:ngm:class:digital-infrastructure",
   "@type": "Class",
   "label": "Digital Infrastructure",
-  "definition": "Digital Infrastructure is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "The foundational computing, networking, and storage systems that underpin large-scale digital services and telecollaboration platforms, including hyperscale data centres with GPU clusters, content delivery networks, software-defined networking, and edge computing nodes. Digital infrastructure is increasingly defined by cloud-native patterns—containerisation, orchestration, and infrastructure-as-code—enabling programmatic resource allocation and resilient, globally distributed deployments.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:content-delivery-network", "label": "Content Delivery Network"},
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
+      {"@id": "urn:ngm:class:network-infrastructure", "label": "Network Infrastructure"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
+      {"@id": "urn:ngm:class:orchestration", "label": "Orchestration"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+    ]
+  },
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -132,16 +146,19 @@ public:: true
 
 
 - ### Definition
-  - DigitalInfrastructure is a concept within the ngm domain.
+  - The foundational computing, networking, and storage systems that underpin large-scale digital services and telecollaboration platforms, including hyperscale data centres with GPU clusters, content delivery networks, software-defined networking, and edge computing nodes. Digital infrastructure is increasingly defined by cloud-native patterns—containerisation, orchestration, and infrastructure-as-code—enabling programmatic resource allocation and resilient, globally distributed deployments.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:DigitalInfrastructure
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
-
-  - bridges-to:: [[Blockchain]] (bc)
+  - hasPart [[Content Delivery Network]]
+  - hasPart [[Edge Computing]]
+  - hasPart [[Network Infrastructure]]
+  - enables [[Distributed Systems]]
+  - enables [[Orchestration]]
+  - relatedTo [[Blockchain]]
 - ### Content
 
   ## Definition

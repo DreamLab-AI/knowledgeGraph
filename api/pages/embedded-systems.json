@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:embedded-systems",
   "domain": "robotics",
-  "definition": "Embedded Systems is a foundational concept in robotics that serves as a classification parent for 4 related concepts in the ontology.",
+  "definition": "Embedded Systems are dedicated computing systems integrated into larger mechanical or electronic devices, designed to perform specific control or sensing functions with constrained resources, real-time requirements, and tight hardware-software coupling. They encompass microcontrollers, FPGAs, sensors, actuators, and the firmware that manages them, forming the computational substrate for robotics, industrial automation, IoT devices, and edge AI deployments.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
@@ -14,20 +14,51 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.3,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      },
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "id": "urn:ngm:class:fpga",
+        "label": "FPGA"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

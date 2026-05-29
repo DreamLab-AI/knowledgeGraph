@@ -58,7 +58,7 @@ public:: true
   "@id": "urn:ngm:class:secure-multi-party-computation",
   "@type": "Class",
   "label": "Secure Multi-Party Computation",
-  "definition": "Secure Multi-Party Computation is a cryptographic protocol enabling multiple parties to jointly compute functions over their combined private inputs without revealing individual inputs to other participants or trusted third parties, ensuring that only the final output is disclosed while intermedi...",
+  "definition": "Secure Multi-Party Computation (MPC) is a cryptographic protocol enabling multiple parties to jointly compute functions over their combined private inputs without revealing individual inputs to other participants or third parties. Only the final output is disclosed; intermediate computations remain confidential. Key implementation techniques include secret sharing (Shamir), garbled circuits (Yao), and oblivious transfer primitives.",
   "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": [
@@ -71,7 +71,24 @@ public:: true
       "label": "Cryptography"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"},
+      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
+      {"@id": "urn:ngm:class:homomorphic-encryption", "label": "Homomorphic Encryption"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
+      {"@id": "urn:ngm:class:privacy-preserving-data-sharing", "label": "Privacy Preserving Data Sharing"},
+      {"@id": "urn:ngm:class:differential-privacy", "label": "Differential Privacy"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:privacy-preserving-technology", "label": "Privacy Preserving Technology"},
+      {"@id": "urn:ngm:class:cryptographic-primitive", "label": "Cryptographic Primitive"},
+      {"@id": "urn:ngm:class:privacy-enhancing-computation-pec", "label": "Privacy-Enhancing Computation (PEC)"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

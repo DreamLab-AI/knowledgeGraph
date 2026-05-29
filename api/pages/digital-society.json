@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:digital-society",
   "domain": "spatial-computing",
-  "definition": "Digital Society is a type of Metaverse and Telecollaboration in the spatial computing domain.",
+  "definition": "The emergent social order in which digital networks, platforms, and data systems become primary mediators of economic activity, civic participation, cultural expression, and interpersonal relationships. Digital society encompasses the institutions, norms, rights, and governance mechanisms needed to ensure equitable, secure, and rights-respecting participation in digital environments including the metaverse.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -17,21 +17,53 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:digital-governance",
+        "label": "Digital Governance"
+      },
+      {
+        "id": "urn:ngm:class:digital-rights",
+        "label": "Digital Rights"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-citizenship",
+        "label": "Digital Citizenship"
+      },
+      {
+        "id": "urn:ngm:class:digital-economy",
+        "label": "Digital Economy"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-transformation",
+        "label": "Digital Transformation"
+      },
+      {
+        "id": "urn:ngm:class:online-identity",
+        "label": "Online Identity"
+      }
+    ]
   },
   "wikilinks": [
     {

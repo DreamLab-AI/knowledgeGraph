@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:rb-0063-sliding-mode-control",
   "domain": "robotics",
-  "definition": "sliding mode control is a robotics and autonomous systems concept and a type of Control Theory.",
+  "definition": "Sliding Mode Control (SMC) is a nonlinear robust control technique that drives system states onto a predefined sliding surface in state space and then maintains them on that surface using discontinuous (switching) control actions. Once on the sliding manifold, the system dynamics become insensitive to matched disturbances and parameter uncertainties, making SMC highly robust for robot manipulators with uncertain dynamics, friction, and external loads. A key challenge is chattering \u2014 high-frequency oscillation caused by the switching law \u2014 which is addressed through boundary layer methods and higher-order SMC variants.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
@@ -17,21 +17,57 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:rb-0053-force-control",
+        "label": "rb 0053 force control"
+      },
+      {
+        "id": "urn:ngm:class:rb-0054-position-control",
+        "label": "rb 0054 position control"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:rb-0022-robot-dynamics",
+        "label": "rb 0022 robot dynamics"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:rb-0062-model-predictive-control",
+        "label": "rb 0062 model predictive control"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rb-0061-nonlinear-control",
+        "label": "rb 0061 nonlinear control"
+      },
+      {
+        "id": "urn:ngm:class:rb-0048-pid-controller",
+        "label": "rb 0048 pid controller"
+      },
+      {
+        "id": "urn:ngm:class:robust-control",
+        "label": "Robust Control"
+      },
+      {
+        "id": "urn:ngm:class:adaptive-control",
+        "label": "Adaptive Control"
+      }
+    ]
   },
   "wikilinks": [
     {

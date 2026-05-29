@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:computing-platform",
   "domain": "infrastructure",
-  "definition": "Computing Platform is a type of Infrastructure in the infrastructure domain.",
+  "definition": "A computing platform is a hardware and software environment that provides the foundational execution context for applications, services, and AI workloads. It encompasses the combination of processor architecture, operating system, runtime libraries, and supporting infrastructure\u2014such as cloud, edge, or on-premises nodes\u2014that determines what software can run and how it performs.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
@@ -13,12 +13,39 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:middleware",
+        "label": "Middleware"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:hardware",
+        "label": "Hardware"
+      },
+      {
+        "id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +54,12 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -1,5 +1,5 @@
 - ### Definition
-  - "The domain of knowledge encompassing technology-mediated collaboration, distributed teamwork, remote presence systems, and virtual cooperation platforms enabling humans to work together effectively across geographical and temporal boundaries."
+  The Telecollaboration Domain is the top-level knowledge domain encompassing technology-mediated collaboration, distributed teamwork, remote presence systems, and virtual cooperation platforms. It integrates synchronous and asynchronous collaboration modalities, telepresence technologies, and cross-domain bridges to AI, blockchain, metaverse, and robotics to enable effective human cooperation across geographical and temporal boundaries.
 
 - ### Semantic Classification
   - owl-class:: distributed-collaboration:TelecollaborationDomain
@@ -7,7 +7,10 @@
 
 - ### Relationships
   - is-subclass-of:: [[Technology Domain]]
-  - bridges-to:: [[AI Domain]] (via AI-enhanced collaboration)
+  - hasPart:: [[Asynchronous Collaboration]], [[Collaboration Platform]], [[Distributed Collaboration]], [[DAO Governance for Telecollaboration]], [[Blockchain Collaboration]], [[Augmented Reality Collaboration]]
+  - requires:: [[Collaboration Technology]], [[Distributed System]]
+  - enables:: [[Digital Twin Collaboration]], [[Smart Contract Coordination]]
+  - relatedTo:: [[DAO Governance]], [[Distributed Computing]]
 
 - ### Content
   Telecollaboration Domain Root

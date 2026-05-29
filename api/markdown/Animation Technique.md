@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:animation-technique",
   "@type": "Class",
   "label": "Animation Technique",
-  "definition": "Animation Technique is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "An Animation Technique is a method or algorithm for generating the illusion of motion in digital content, encompassing keyframe interpolation, skeletal rigging, physics-based simulation, and procedural approaches. Animation techniques are fundamental to character representation, environmental dynamics, and interactive responsiveness in spatial computing environments.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
@@ -60,6 +61,38 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "uses": [
+      {
+        "@id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:rendering-technique",
+        "label": "Rendering Technique"
+      },
+      {
+        "@id": "urn:ngm:class:animation-retargeting",
+        "label": "Animation Retargeting"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-animation",
+        "label": "3D Animation"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      }
+    ]
   }
 }
 ```
@@ -96,7 +129,7 @@ public:: true
 
 
 - ### Definition
-  - Animation Technique is a concept within the metaverse domain. Further enrichment pending.
+  - An Animation Technique is a method or algorithm for generating the illusion of motion in digital content, encompassing keyframe interpolation, skeletal rigging, physics-based simulation, and procedural approaches. Animation techniques are fundamental to character representation, environmental dynamics, and interactive responsiveness in spatial computing environments.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:AnimationTechnique
@@ -104,6 +137,12 @@ public:: true
 
 - ### Relationships
   - bridges-to:: [[Computer Vision]] (ai)
+  - Uses [[Physics Simulation]]
+  - Uses [[Motion Capture]]
+  - Supports [[Game Engine]]
+  - Related To [[Rendering Technique]]
+  - Related To [[Animation Retargeting]]
+  - Related To [[3D Animation]]
 
 - ### Content
 

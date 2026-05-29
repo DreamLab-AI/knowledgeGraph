@@ -33,15 +33,25 @@ public:: true
   "@id": "urn:ngm:class:role-reorg",
   "@type": "Class",
   "label": "Role reorg",
-  "definition": "Role reorg is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Role reorg denotes an organisational restructuring process in which employment or contractual arrangements are renegotiated, typically comparing permanent employment contracts with temporary or agency-based assignments across dimensions such as salary, holiday entitlement, pension eligibility, notice periods, and additional benefits. Such analysis underpins workforce planning decisions in academic and research institutions, balancing income stability against contractual flexibility and total compensation.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:augmented-connected-workforce", "label": "Augmented Connected Workforce"},
+      {"@id": "urn:ngm:class:economics", "label": "Economics"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:civil-service-job", "label": "civil service job"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -72,14 +82,15 @@ public:: true
 
 
 - ### Definition
-  - Role reorg is a concept within the ngm domain.
+  - Role reorg denotes an organisational restructuring process in which employment or contractual arrangements are renegotiated, typically comparing permanent employment contracts with temporary or agency-based assignments across dimensions such as salary, holiday entitlement, pension eligibility, notice periods, and additional benefits. Such analysis underpins workforce planning decisions in academic and research institutions, balancing income stability against contractual flexibility and total compensation.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:RoleReorg
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **relatedTo**: Augmented Connected Workforce, Economics
+  - **contrastsWith**: civil service job
 
 - ### Content
   # Role reorg

@@ -42,7 +42,7 @@ public:: true
   "@id": "urn:ngm:class:nft-marketplace",
   "@type": "Class",
   "label": "NFT Marketplace",
-  "definition": "NFT Marketplace is a type of Blockchain in the blockchain domain.",
+  "definition": "A digital platform enabling the creation, listing, buying, selling, and auctioning of non-fungible tokens (NFTs). NFT marketplaces provide discovery, escrow, royalty enforcement, and settlement infrastructure for unique digital assets, typically integrating smart contracts for trustless ownership transfer and on-chain provenance tracking.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -51,7 +51,30 @@ public:: true
       "label": "Token and Asset"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:nft", "label": "NFT"},
+      {"@id": "urn:ngm:class:nft-minting", "label": "NFT Minting"},
+      {"@id": "urn:ngm:class:nft-standard", "label": "NFT Standard"},
+      {"@id": "urn:ngm:class:creator-royalty-token", "label": "Creator Royalty Token"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
+      {"@id": "urn:ngm:class:erc-721", "label": "ERC-721"},
+      {"@id": "urn:ngm:class:erc-1155", "label": "ERC-1155"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:digital-asset-trading", "label": "Digital Asset Trading"},
+      {"@id": "urn:ngm:class:decentralized-exchange", "label": "Decentralized Exchange"},
+      {"@id": "urn:ngm:class:digital-marketplace", "label": "Digital Marketplace"},
+      {"@id": "urn:ngm:class:non-fungible-token-nft", "label": "Non-Fungible Token (NFT)"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:fractionalized-nft", "label": "Fractionalized NFT"},
+      {"@id": "urn:ngm:class:nft-renting", "label": "NFT Renting"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

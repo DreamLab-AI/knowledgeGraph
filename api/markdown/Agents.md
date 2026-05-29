@@ -503,7 +503,7 @@ public:: true
       "label": "AI Research Area"
     },
     {
-      "@id": "urn:ngm:class:intelligent-system",
+      "@id": "urn:ngm:class:intelligent-systems",
       "label": "Intelligent System"
     },
     {

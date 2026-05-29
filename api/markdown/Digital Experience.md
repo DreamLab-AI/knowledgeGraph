@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:digital-experience",
   "@type": "Class",
   "label": "Digital Experience",
-  "definition": "Digital Experience is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Digital Experience encompasses the totality of interactions a user has with digital products, services, and environments — spanning web, mobile, and immersive (XR) surfaces. It integrates user interface design, content delivery, personalisation, and spatial computing to shape how users perceive and engage with digital platforms.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
@@ -60,6 +61,40 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      },
+      {
+        "@id": "urn:ngm:class:user-interface",
+        "label": "User Interface"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-world",
+        "label": "Virtual World"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:digital-content",
+        "label": "Digital Content"
+      }
+    ]
   }
 }
 ```
@@ -96,16 +131,21 @@ public:: true
 
 
 - ### Definition
-  - Digital Experience is a concept within the metaverse domain. Further enrichment pending.
+  - Digital Experience encompasses the totality of interactions a user has with digital products, services, and environments — spanning web, mobile, and immersive (XR) surfaces. It integrates user interface design, content delivery, personalisation, and spatial computing to shape how users perceive and engage with digital platforms.
 
-bridges-to:: [[Sensor Input]]
+- bridges-to:: [[Sensor Input]]
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:DigitalExperience
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Requires [[User Experience]]
+  - Requires [[User Interface]]
+  - Enables [[Immersive Experience]]
+  - Enables [[Virtual World]]
+  - Uses [[Content Delivery Network]]
+  - Related To [[Digital Content]]
 
 - ### Content
 

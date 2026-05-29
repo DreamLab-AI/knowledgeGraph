@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:rb-0055-velocity-control",
   "domain": "robotics",
-  "definition": "velocity control is a robotics and autonomous systems concept and a type of Motion Control.",
+  "definition": "Velocity control is a robot control strategy in which joint or Cartesian velocities are the primary commanded quantities, with a feedback controller (typically PID-based) continuously correcting deviations between desired and measured velocities. It is used for smooth trajectory following, compliant interaction with soft contacts, and speed-and-separation monitoring safety functions that require real-time speed capping. Velocity control is distinct from position control \u2014 it does not inherently resist positional drift \u2014 and from torque control, which acts at the force level.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
@@ -17,12 +17,34 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:encoder",
+        "label": "Encoder"
+      },
+      {
+        "id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      },
+      {
+        "id": "urn:ngm:class:pid-controller",
+        "label": "Pid Controller"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:rb-0092-protective-stop",
+        "label": "rb 0092 protective stop"
+      },
+      {
+        "id": "urn:ngm:class:trajectory-planning",
+        "label": "Trajectory Planning"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -31,7 +53,24 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:position-control",
+        "label": "PositionControl"
+      },
+      {
+        "id": "urn:ngm:class:torque-control",
+        "label": "Torque Control"
+      },
+      {
+        "id": "urn:ngm:class:velocity",
+        "label": "Velocity"
+      },
+      {
+        "id": "urn:ngm:class:velocity-control",
+        "label": "VelocityControl"
+      }
+    ]
   },
   "wikilinks": [
     {

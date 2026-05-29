@@ -1,12 +1,17 @@
 - ### Definition
-  - Environmental Accounting is a concept within the metaverse domain. Further enrichment pending.
+  - A systematic framework for measuring, tracking, and reporting the environmental costs and impacts associated with economic activities, extending traditional financial accounting to incorporate natural capital, carbon emissions, resource consumption, and waste generation. Environmental accounting supports sustainability reporting, regulatory compliance, and circular economy transitions.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:EnvironmentalAccounting
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Enables [[Environmental Sustainability]]
+  - Enables [[SustainabilityReporting]]
+  - Uses [[Environmental Impact Metric]]
+  - Supports [[Circular Economy]]
+  - Related To [[Environmental Assessment]]
+  - Related To [[Waste Management]]
 
 - ### Content
 

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:query-vector",
   "domain": "artificial-intelligence",
-  "definition": "Query Vector is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "A Query Vector is a dense numerical representation of a search query produced by an embedding model, enabling similarity-based retrieval in a high-dimensional vector space. It is matched against stored document or passage embeddings using distance metrics such as cosine similarity or inner product, forming the core retrieval mechanism in semantic search and retrieval-augmented generation systems. Query vectors encode the semantic intent of a query independent of exact keyword overlap, allowing conceptually related results to be surfaced even when surface-level vocabulary differs.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -13,21 +13,75 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:embedding-model",
+        "label": "Embedding Model"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:embedding-model",
+        "label": "Embedding Model"
+      },
+      {
+        "id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "id": "urn:ngm:class:nearest-neighbor-search",
+        "label": "Nearest Neighbor Search"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:query-key-value",
+        "label": "Query Key Value"
+      },
+      {
+        "id": "urn:ngm:class:query-processor",
+        "label": "Query Processor"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation-rag",
+        "label": "Retrieval Augmented Generation - RAG"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:byzantine-fault-tolerant-system",
   "domain": "infrastructure",
-  "definition": "Byzantine Fault Tolerant System is a foundational concept in infrastructure that serves as a classification parent for 3 related concepts in the ontology.",
+  "definition": "A Byzantine Fault Tolerant System is a distributed computing system designed to continue operating correctly even when a subset of its nodes exhibit arbitrary failures, including malicious or contradictory behaviour. It implements protocols guaranteeing safety and liveness as long as fewer than one-third of participants are faulty, underpinning consensus in blockchain and distributed ledger networks.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
@@ -13,18 +13,42 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.3,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:consensus-protocol",
+        "label": "Consensus Protocol"
+      }
+    ],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      }
+    ],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": []

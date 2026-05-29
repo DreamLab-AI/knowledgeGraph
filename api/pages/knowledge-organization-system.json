@@ -5,20 +5,38 @@
   "public": true,
   "classIri": "urn:ngm:class:knowledge-organization-system",
   "domain": "artificial-intelligence",
-  "definition": "Knowledge Organization System is a type of Artificial Intelligence in the artificial intelligence domain.",
+  "definition": "A Knowledge Organization System (KOS) is any formal scheme used to organise, classify, and relate concepts within a domain \u2014 including thesauri, classification schemes, ontologies, taxonomies, and controlled vocabularies. KOS structures enable semantic interoperability by providing shared conceptual frameworks that allow heterogeneous systems to exchange and interpret information consistently. In AI infrastructure they underpin knowledge graphs, semantic search, and entity disambiguation in large language model pipelines.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure (Category)"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:controlled-vocabulary",
+        "label": "Controlled Vocabulary"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +45,16 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-organization",
+        "label": "Knowledge Organization"
+      }
+    ]
   },
   "wikilinks": [
     {

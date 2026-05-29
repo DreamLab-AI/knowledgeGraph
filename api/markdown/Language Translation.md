@@ -42,20 +42,54 @@ public:: true
   "@id": "urn:ngm:class:language-translation",
   "@type": "Class",
   "label": "Language Translation",
-  "definition": "Language Translation is a type of Distributed Collaboration in the distributed collaboration domain.",
+  "definition": "Language translation is the automated or human-assisted conversion of text or speech from a source language into a target language whilst preserving semantic meaning, tone, and cultural context. Modern neural machine translation systems, built on transformer architectures and large language models, enable real-time multilingual communication across distributed collaboration platforms and metaverse environments.",
   "domain": "distributed-collaboration",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:dc-communication",
       "label": "Communication Technology"
     }
   ],
-  "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:localization",
+        "label": "Localization"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:machine-translation",
+        "label": "Machine Translation"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
+    ]
   }
 }
 ```
@@ -87,14 +121,19 @@ public:: true
 
 
 - ### Definition
-  - Language Translation is a concept within the telecollaboration domain. Further enrichment pending.
+  - Language translation is the automated or human-assisted conversion of text or speech from a source language into a target language whilst preserving semantic meaning, tone, and cultural context. Modern neural machine translation systems, built on transformer architectures and large language models, enable real-time multilingual communication across distributed collaboration platforms and metaverse environments.
 
 - ### Semantic Classification
   - owl-class:: distributed-collaboration:LanguageTranslation
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Implements [[Machine Translation]]
+  - Uses [[Natural Language Processing]]
+  - Uses [[Large Language Models]]
+  - Uses [[Transformer]]
+  - Enables [[Localization]]
+  - Related to [[Distributed Collaboration]]
 
 - ### Content
 

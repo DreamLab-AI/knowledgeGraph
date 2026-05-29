@@ -90,15 +90,29 @@ public:: true
   "@id": "urn:ngm:class:metaverse-ontology",
   "@type": "Class",
   "label": "Metaverse Ontology",
-  "definition": "Metaverse Ontology is a spatial computing concept and a type of spatial-computing.",
+  "definition": "The Metaverse Ontology is a formal knowledge representation that classifies the entities, relationships, and properties constituting a metaverse ecosystem—including agents, scenes, digital assets, economies, governance structures, and communication protocols. It provides a shared semantic vocabulary enabling interoperability between platforms, AI systems, and toolchains operating within or around persistent immersive environments.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-standards-and-interop",
       "label": "Standards and Interoperability"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
+      {"@id": "urn:ngm:class:json-ld", "label": "JSON-LD"},
+      {"@id": "urn:ngm:class:ontology", "label": "Ontology"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"},
+      {"@id": "urn:ngm:class:knowledge-graphing", "label": "Knowledge Graphing"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:metaverse-ontology-schema", "label": "Metaverse Ontology Schema"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -195,14 +209,19 @@ public:: true
 
 
 - ### Definition
-  - Metaverse Ontology is a concept within the ngm domain.
+  - The Metaverse Ontology is a formal knowledge representation that classifies the entities, relationships, and properties constituting a metaverse ecosystem—including agents, scenes, digital assets, economies, governance structures, and communication protocols. It provides a shared semantic vocabulary enabling interoperability between platforms, AI systems, and toolchains operating within or around persistent immersive environments.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:MetaverseOntology
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses [[Knowledge Graph]]
+  - uses [[JSON-LD]]
+  - uses [[Ontology]]
+  - enables [[Metaverse]]
+  - enables [[Knowledge Graphing]]
+  - relatedTo [[Metaverse Ontology Schema]]
 
 - ### Content
   - #Public page automatically published

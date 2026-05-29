@@ -5,7 +5,11 @@
   - owl-role:: Concept
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - partOf:: [[Natural Language Processing]]
+  - enables:: [[Large Language Models]]
+  - enables:: [[Transformer Architecture]]
+  - uses:: [[Neural Network]]
+  - relatedTo:: [[Text Generation]]
 - ### Content
   - The process of breaking text into discrete units (tokens) that can be processed by neural networks, ranging from characters to subwords to whole words.
   - ## Mass Movements and Tokenisation

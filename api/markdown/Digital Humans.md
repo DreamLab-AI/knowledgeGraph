@@ -46,16 +46,39 @@ public:: true
   "@id": "urn:ngm:class:digital-humans",
   "@type": "Class",
   "label": "Digital Humans",
-  "definition": "Digital Humans is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Digital humans are photorealistic, AI-driven virtual beings that replicate human appearance, movement, voice, and conversational behaviour, rendered in 3D and designed for real-time interaction within immersive and spatial computing environments. They integrate natural language processing, motion capture, generative AI, and real-time rendering to simulate lifelike presence, serving roles in customer service, education, healthcare, and entertainment. As an emerging category they represent the convergence of embodied AI with avatar systems and synthetic media.",
   "domain": "spatial-computing",
   "maturity": "emerging",
+  "qualityScore": 0.75,
+  "quality": 0.75,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
+      {"@id": "urn:ngm:class:motion-capture", "label": "Motion Capture"},
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
+      {"@id": "urn:ngm:class:text-to-speech", "label": "Text-to-Speech"},
+      {"@id": "urn:ngm:class:conversational-ai", "label": "Conversational AI"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:avatar-system", "label": "Avatar System"},
+      {"@id": "urn:ngm:class:3-d-animation", "label": "3D Animation"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:synthetic-media", "label": "Synthetic Media"},
+      {"@id": "urn:ngm:class:embodied-ai", "label": "Embodied AI"},
+      {"@id": "urn:ngm:class:digital-avatar", "label": "Digital Avatar"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:immersive-technology", "label": "Immersive Technology"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:neural-network-layer",
   "domain": "artificial-intelligence",
-  "definition": "Neural Network Layer is a type of Neural Network Component in the artificial intelligence domain.",
+  "definition": "A Neural Network Layer is a discrete computational stage in a neural network that applies a parameterised transformation to its input tensor, including operations such as linear projection, convolution, normalisation, or attention. Layers are composed sequentially or in parallel to form a complete neural network architecture.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -18,19 +18,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:activation-function",
+        "label": "Activation Function"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:batch-normalisation",
+        "label": "Batch Normalisation"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-architecture",
+        "label": "Neural Network Architecture"
+      }
+    ],
     "relatedTo": []
   },
   "wikilinks": [

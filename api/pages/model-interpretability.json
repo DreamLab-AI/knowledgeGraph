@@ -18,20 +18,52 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:feature-importance",
+        "label": "Feature Importance"
+      },
+      {
+        "id": "urn:ngm:class:local-explanation",
+        "label": "Local Explanation"
+      },
+      {
+        "id": "urn:ngm:class:global-explanation",
+        "label": "Global Explanation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:interpretable-ai",
+        "label": "Interpretable AI"
+      }
+    ]
   },
   "wikilinks": [
     {

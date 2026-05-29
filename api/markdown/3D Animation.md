@@ -42,9 +42,10 @@ public:: true
   "@id": "urn:ngm:class:3-d-animation",
   "@type": "Class",
   "label": "3D Animation",
-  "definition": "3D Animation is a spatial computing concept and a type of Animation Technique.",
+  "definition": "3D Animation is the discipline of creating motion in three-dimensional digital environments using techniques such as keyframe animation, motion capture, and procedural simulation. It underpins character movement, environmental dynamics, and cinematic sequences in spatial computing platforms, game engines, and metaverse applications.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
@@ -55,11 +56,48 @@ public:: true
       "label": "Animation Technique"
     }
   ],
-  "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-asset",
+        "label": "3D Asset"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      },
+      {
+        "@id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      }
+    ]
   }
 }
 ```
@@ -91,14 +129,20 @@ public:: true
 
 
 - ### Definition
-  - 3D Animation is a concept within the ngm domain.
+  - 3D Animation is the discipline of creating motion in three-dimensional digital environments using techniques such as keyframe animation, motion capture, and procedural simulation. It underpins character movement, environmental dynamics, and cinematic sequences in spatial computing platforms, game engines, and metaverse applications.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:3D Animation
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses [[Inverse Kinematics]] for skeletal character rigging
+  - Uses [[Motion Capture]] to record and retarget real-world movement
+  - Uses [[Physics Simulation]] for cloth, fluid, and rigid-body dynamics
+  - Requires [[Game Engine]] for real-time playback and blending
+  - Requires [[3D Asset]] as the geometric substrate being animated
+  - Enables [[Digital Twin]] by providing animated behavioural representations
+  - Related to [[Rendering Pipeline]] which composites animated frames into images
 
 - ### Content
 

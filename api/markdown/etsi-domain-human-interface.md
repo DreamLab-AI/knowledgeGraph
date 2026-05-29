@@ -7,7 +7,10 @@
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **hasPart**: [[ETSI_Domain_Human_Interface___UX]], [[Accessibility Standards]]
+  - **requires**: [[Virtual Environment]], [[Telecollaboration]]
+  - **enables**: [[Immersive Interface]], [[Accessibility]]
+  - **relatedTo**: [[ETSIDomainClassification]]
 - ### Content
   - The ETSI Domain for Human Interface encompasses the design, implementation, and governance of user-facing systems within metaverse platforms and immersive digital environments, prioritising accessibility, usability, and inclusive interaction design.
   - ### Original Content

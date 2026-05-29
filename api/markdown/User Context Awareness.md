@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:user-context-awareness",
   "@type": "Class",
   "label": "User Context Awareness",
-  "definition": "The capability of digital systems to understand and adapt to a user's current situation, including their location, activity, preferences, device capabilities, and environmental factors to provide personalized and relevant experiences.",
+  "definition": "User Context Awareness is the capability of digital systems to sense, model, and respond to a user's current situation—encompassing location, activity, device state, social context, and environmental factors—in order to deliver personalised, timely, and relevant experiences. It underpins adaptive XR interfaces, smart environment switching, and context-driven content recommendation in spatial computing.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-interaction",
@@ -59,7 +60,22 @@ public:: true
       "label": "Context-Aware Computing"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:context-awareness", "label": "Context Awareness"},
+      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:personalized-virtual-experiences", "label": "Personalized Virtual Experiences"},
+      {"@id": "urn:ngm:class:predictive-personalization", "label": "Predictive Personalization"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:preference-learning", "label": "Preference Learning"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:user-experience", "label": "User Experience"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -109,6 +125,10 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Context-Aware Computing]]
+  - **requires**: Context Awareness, Sensor Fusion
+  - **enables**: Personalized Virtual Experiences, Predictive Personalization
+  - **uses**: Preference Learning
+  - **relatedTo**: User Experience
 
 - ### Content
 

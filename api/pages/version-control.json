@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:version-control",
   "domain": "spatial-computing",
-  "definition": "Version control is a system for tracking and managing changes to files and code over time, enabling collaboration, rollback, and parallel development through tools such as Git.",
+  "definition": "Version control is a system for tracking, managing, and auditing changes to files\u2014principally source code\u2014over time, enabling multiple contributors to work in parallel branches and merge changes systematically. Distributed version control systems such as Git maintain a full change history locally on each node, enabling offline operation, branching, rebasing, and cryptographically signed commits. Version control is a prerequisite for reproducible AI training pipelines, dataset lineage tracking, collaborative 3D asset workflows, and Infrastructure-as-Code practices.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -14,20 +14,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:collaboration",
+        "label": "Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-augmented-software-engineering",
+        "label": "AI-Augmented Software Engineering"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-provenance",
+        "label": "Data Provenance"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

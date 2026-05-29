@@ -42,7 +42,7 @@ public:: true
   "@id": "urn:ngm:class:royalty-distribution",
   "@type": "Class",
   "label": "Royalty Distribution",
-  "definition": "Automated royalty payments via smart contracts.",
+  "definition": "Automated, trustless distribution of royalty payments to creators and rights-holders via blockchain smart contracts, triggered on every secondary-market sale or licensing event, enforcing on-chain revenue sharing without intermediaries and enabling programmable intellectual property economics.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -51,7 +51,25 @@ public:: true
       "label": "DeFi and Economics"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
+      {"@id": "urn:ngm:class:smart-contract-execution", "label": "Smart Contract Execution"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:nft-ownership-proof", "label": "NFT Ownership Proof"},
+      {"@id": "urn:ngm:class:nft", "label": "NFT"},
+      {"@id": "urn:ngm:class:erc-721", "label": "ERC-721"},
+      {"@id": "urn:ngm:class:digital-rights-management", "label": "Digital Rights Management"},
+      {"@id": "urn:ngm:class:royalty-mechanism", "label": "Royalty Mechanism"},
+      {"@id": "urn:ngm:class:blockchain-economics", "label": "Blockchain Economics"},
+      {"@id": "urn:ngm:class:decentralized-finance-de-fi", "label": "Decentralized Finance (DeFi)"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

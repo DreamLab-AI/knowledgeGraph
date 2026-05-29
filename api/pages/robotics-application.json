@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:robotics-application",
   "domain": "robotics",
-  "definition": "Robotics Application is a robotics and autonomous systems concept and a type of robotics.",
+  "definition": "A deployed use-case or task domain in which robotic systems perform physical or cyber-physical work, spanning industrial automation, telepresence, telemedicine, logistics, hazardous environment inspection, and collaborative human-robot interaction. Robotics applications integrate perception, planning, actuation, and communication subsystems to accomplish domain-specific objectives with varying degrees of autonomy.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
@@ -13,21 +13,57 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:robot-control",
+        "label": "Robot Control"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:teleoperation",
+        "label": "Teleoperation"
+      },
+      {
+        "id": "urn:ngm:class:robotic-telepresence",
+        "label": "Robotic Telepresence"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:robotic-system",
+        "label": "Robotic System"
+      },
+      {
+        "id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": []

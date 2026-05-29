@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:educational-methodology",
   "domain": "spatial-computing",
-  "definition": "Educational Methodology is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Educational Methodology is a structured approach to the design, delivery, and evaluation of learning experiences, encompassing pedagogical theories, instructional design models, and assessment frameworks. In spatial computing contexts it includes immersive, experiential, and simulation-based learning paradigms enabled by XR technologies.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -13,21 +13,44 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:generative-content",
+        "label": "Generative Content"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ]
   },
   "wikilinks": [
     {

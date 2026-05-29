@@ -38,15 +38,33 @@ public:: true
   "@id": "urn:ngm:class:agentic-workshop",
   "@type": "Class",
   "label": "Agentic Workshop",
-  "definition": "Agentic Workshop is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "A structured training programme introducing practitioners to agentic AI systems, covering context engineering, memory management, agent orchestration tools (such as Roo Code), and practical case studies in project management, data visualisation, and academic research through phased, multi-session instruction.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-application",
       "label": "AI Application"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:ai-agent-system", "label": "AI Agent System"},
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"},
+      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:ai-governance-and-ethics", "label": "AI Governance and Ethics"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:agent-frameworks", "label": "Agent Frameworks"},
+      {"@id": "urn:ngm:class:advice-for-developing-gen-ai", "label": "Advice for developing GenAI"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -83,7 +101,7 @@ public:: true
 
 
 - ### Definition
-  - Agentic Workshop is a concept within the ngm domain.
+  - A structured training programme introducing practitioners to agentic AI systems: context engineering, memory management, agent orchestration tools, and practical case studies across project management, data visualisation, and academic research via phased multi-session instruction.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:AgenticWorkshop
@@ -91,6 +109,10 @@ public:: true
 
 - ### Relationships
   - bridges-to:: [[AI Agent System]]
+  - uses:: [[AI Agent System]], [[Large Language Models]]
+  - enables:: [[Agentic AI]], [[Generative AI]]
+  - supports:: [[AI Governance and Ethics]]
+  - relatedTo:: [[Agent Frameworks]], [[Advice for developing GenAI]]
 
 - ### Content
   - {{embed ((68d3ab67-38ca-43b6-b924-439d02c7f3bd))}}

@@ -42,15 +42,31 @@ public:: true
   "@id": "urn:ngm:class:cybersecurity",
   "@type": "Class",
   "label": "Cybersecurity",
-  "definition": "Cybersecurity is a type of Artificial Intelligence in the artificial intelligence domain.",
+  "definition": "Cybersecurity is the discipline concerned with protecting computer systems, networks, and data from unauthorised access, damage, and attack. In the AI governance context it addresses adversarial threats to machine learning models, data poisoning, model extraction, and the use of AI techniques for automated threat detection, vulnerability analysis, and intrusion detection. It overlaps strongly with privacy, encryption, access control, and authentication.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:encryption", "label": "Encryption"},
+      {"@id": "urn:ngm:class:authentication", "label": "Authentication"},
+      {"@id": "urn:ngm:class:anomaly-detection", "label": "Anomaly Detection"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:ai-security", "label": "AI Security"},
+      {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:privacy", "label": "Privacy"},
+      {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
+      {"@id": "urn:ngm:class:vulnerability", "label": "Vulnerability"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -87,23 +103,27 @@ public:: true
 
 
 - ### Definition
-  - Cybersecurity is a concept within the ai domain. Further enrichment pending.
+  - Cybersecurity is the discipline concerned with protecting computer systems, networks, and data from unauthorised access, damage, and attack. In the AI governance context it addresses adversarial threats to machine learning models, data poisoning, model extraction, and the use of AI techniques for automated threat detection, vulnerability analysis, and intrusion detection. It overlaps strongly with privacy, encryption, access control, and authentication.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:Cybersecurity
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses [[Encryption]]
+  - uses [[Authentication]]
+  - uses [[Anomaly Detection]]
+  - enables [[AI Security]]
+  - enables [[Data Protection]]
+  - relatedTo [[Privacy]]
+  - relatedTo [[Access Control]]
+  - relatedTo [[Vulnerability]]
 
 - ### Content
 
   ## Overview
 
-  Cybersecurity represents an abstract concept in the ai ontology hierarchy.
-
-  #### Related Concepts
-  - [[owl:Thing]]
+  Cybersecurity protects digital assets — systems, networks, data, and AI models — from adversarial actors. The field encompasses preventive controls (encryption, access control, authentication), detective controls (anomaly detection, intrusion detection systems), and responsive measures (incident response, vulnerability patching). AI introduces both new attack surfaces (adversarial attacks on models, data poisoning, model inversion) and new defences (AI-driven threat intelligence, automated vulnerability scanning). Privacy and data protection are tightly coupled concerns, governed by frameworks such as ISO 27001 and sector-specific regulations. In spatial and metaverse contexts, cybersecurity extends to securing XR hardware, protecting user biometric data, and ensuring integrity of shared virtual environments.
 
 - ### Provenance
   - sources::

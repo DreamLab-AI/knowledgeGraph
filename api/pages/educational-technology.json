@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:educational-technology",
   "domain": "spatial-computing",
-  "definition": "Educational Technology in the metaverse context encompasses the tools, platforms, and modologies for delivering learning experiences in immersive virtual environments.",
+  "definition": "Educational Technology in the metaverse context encompasses the tools, platforms, and methodologies for delivering learning experiences in immersive virtual environments.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -18,20 +18,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:immersive-learning",
+        "label": "Immersive Learning"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-learning",
+        "label": "Collaborative Learning"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:virtual-classroom",
+        "label": "Virtual Classroom"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -42,9 +42,10 @@ public:: true
   "@id": "urn:ngm:class:technical-architecture",
   "@type": "Class",
   "label": "Technical Architecture",
-  "definition": "Technical Architecture is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Technical Architecture is the structured design of a system's components, their relationships, and the principles governing their evolution. It defines how hardware, software, data, and communication elements are organised to satisfy functional and non-functional requirements within a spatial computing or platform context.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -56,6 +57,44 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:infrastructure-architecture",
+        "label": "Infrastructure Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:network-architecture",
+        "label": "Network Architecture"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:system-architecture",
+        "label": "System Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:computing-infrastructure",
+        "label": "Computing Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:distributed-system-architecture",
+        "label": "Distributed System Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:software-architecture",
+        "label": "Software Architecture"
+      }
+    ]
   }
 }
 ```
@@ -87,14 +126,20 @@ public:: true
 
 
 - ### Definition
-  - Technical Architecture is a concept within the metaverse domain. Further enrichment pending.
+  - Technical Architecture is the structured design of a system's components, their relationships, and the principles governing their evolution. It defines how hardware, software, data, and communication elements are organised to satisfy functional and non-functional requirements within a spatial computing or platform context.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:TechnicalArchitecture
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Has Part [[Infrastructure Architecture]]
+  - Has Part [[Network Architecture]]
+  - Requires [[System Architecture]]
+  - Requires [[Computing Infrastructure]]
+  - Enables [[Distributed System Architecture]]
+  - Enables [[Microservices Architecture]]
+  - Related To [[Software Architecture]]
 
 - ### Content
 

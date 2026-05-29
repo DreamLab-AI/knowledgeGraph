@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:speculative-decoding",
   "domain": "artificial-intelligence",
-  "definition": "An inference acceleration technique in which a smaller draft model generates candidate token sequences that a larger target model then verifies in parallel, reducing wall-clock latency.",
+  "definition": "Speculative decoding is an LLM inference acceleration technique that exploits the observation that a smaller, faster draft model can propose plausible multi-token continuations which a larger, higher-quality target model verifies in a single parallel forward pass. Accepted tokens are committed; rejected tokens are discarded, and generation resumes from the rejection point. Because the target model evaluates multiple candidate tokens simultaneously rather than autoregressively one at a time, the effective throughput in tokens per second increases substantially\u2014often two to four times\u2014while the output distribution remains statistically identical to that of the target model running alone. Speculative decoding is particularly effective when the draft and target models share a vocabulary and the task distribution is predictable.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -14,20 +14,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:inference-hardware",
+        "label": "Inference Hardware"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:model-compression-for-edge",
+        "label": "Model Compression for Edge"
+      },
+      {
+        "id": "urn:ngm:class:context-window",
+        "label": "Context Window"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

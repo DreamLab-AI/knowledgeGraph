@@ -26,7 +26,7 @@ public:: true
   "@type": "Class",
   "@id": "urn:ngm:class:bc-token-and-asset",
   "label": "Token and Asset",
-  "definition": "Intermediate taxonomy category for token and asset concepts within the blockchain domain.",
+  "definition": "Taxonomy hub for blockchain-based digital tokens and on-chain asset representations. Covers fungible tokens, non-fungible tokens, stablecoins, security tokens, governance tokens, and the standards and mechanisms by which digital value is issued, transferred, and managed on distributed ledgers.",
   "domain": "blockchain",
   "subClassOf": [
     {
@@ -34,7 +34,27 @@ public:: true
       "label": "Blockchain"
     }
   ],
-  "relations": {},
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:fungible-token", "label": "Fungible Token"},
+      {"@id": "urn:ngm:class:nft", "label": "NFT"},
+      {"@id": "urn:ngm:class:stablecoin", "label": "Stablecoin"},
+      {"@id": "urn:ngm:class:utility-token", "label": "Utility Token"},
+      {"@id": "urn:ngm:class:security-token", "label": "Security Token"},
+      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"},
+      {"@id": "urn:ngm:class:cryptocurrency", "label": "Cryptocurrency"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:erc-20", "label": "ERC-20"},
+      {"@id": "urn:ngm:class:erc-721", "label": "ERC-721"},
+      {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"},
+      {"@id": "urn:ngm:class:asset-tokenisation", "label": "Asset Tokenisation"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"}
+    ]
+  },
+  "quality": 0.8,
   "qualityScore": 0.8,
   "maturity": "established"
 }

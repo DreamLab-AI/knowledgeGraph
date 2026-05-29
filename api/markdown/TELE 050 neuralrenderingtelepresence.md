@@ -42,9 +42,10 @@ public:: true
   "@id": "urn:ngm:class:tele-050-neuralrenderingtelepresence",
   "@type": "Class",
   "label": "TELE 050 neuralrenderingtelepresence",
-  "definition": "TELE 050 neuralrenderingtelepresence is a type of TELE 001 telepresence in the distributed collaboration domain.",
+  "definition": "Neural Rendering Telepresence (TELE 050) is a class of telepresence systems that replace conventional rasterisation pipelines with neural rendering techniques — including neural radiance fields, Gaussian splatting, and differentiable rendering — to reconstruct and transmit photorealistic volumetric representations of remote participants in real time. These approaches substantially reduce capture hardware requirements while improving perceptual fidelity and supporting free-viewpoint synthesis.",
   "domain": "distributed-collaboration",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:dc-telepresence",
@@ -55,7 +56,21 @@ public:: true
       "label": "TELE 001 telepresence"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:neural-rendering", "label": "Neural Rendering"},
+      {"@id": "urn:ngm:class:neural-radiance-field", "label": "Neural Radiance Field"},
+      {"@id": "urn:ngm:class:gaussian-splatting", "label": "Gaussian Splatting"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:volumetric-capture", "label": "Volumetric Capture"},
+      {"@id": "urn:ngm:class:metaverse-and-telecollaboration", "label": "Metaverse and Telecollaboration"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:tele020virtualrealitytelepresence", "label": "TELE020virtualrealitytelepresence"},
+      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -91,14 +106,16 @@ public:: true
 
 
 - ### Definition
-  - T E L E 050 neuralrenderingtelepresence is a concept within the telecollaboration domain. Further enrichment pending.
+  - Neural Rendering Telepresence (TELE 050) is a class of telepresence systems that replace conventional rasterisation pipelines with neural rendering techniques — including neural radiance fields, Gaussian splatting, and differentiable rendering — to reconstruct and transmit photorealistic volumetric representations of remote participants in real time. These approaches substantially reduce capture hardware requirements while improving perceptual fidelity and supporting free-viewpoint synthesis.
 
 - ### Semantic Classification
   - owl-class:: distributed-collaboration:TELE050neuralrenderingtelepresence
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses:: Neural Rendering, Neural Radiance Field, Gaussian Splatting
+  - enables:: Volumetric Capture, Metaverse and Telecollaboration
+  - relatedTo:: TELE020virtualrealitytelepresence, Real-Time Rendering
 
 - ### Content
 

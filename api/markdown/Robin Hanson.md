@@ -38,15 +38,28 @@ public:: true
   "@id": "urn:ngm:class:robin-hanson",
   "@type": "Class",
   "label": "Robin Hanson",
-  "definition": "Robin Hanson is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Robin Hanson is an economist, futurist, and author (George Mason University) known for contrarian analysis of AI progress timelines, the economics of prediction markets, and his book Age of Em which models a future dominated by brain emulations. He maintains a measured scepticism about near-term AGI, arguing that inertia, demographic decline, and adoption barriers make transformative AI further off than mainstream discourse suggests. His blog Overcoming Bias applies economic and evolutionary reasoning to cognition, signalling, and technology adoption.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:artificial-general-intelligence", "label": "Artificial General Intelligence"},
+      {"@id": "urn:ngm:class:economics", "label": "Economics"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:history-and-path-to-agi", "label": "History and Path to AGI"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:trustworthy-ai", "label": "Trustworthy AI"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -83,14 +96,16 @@ public:: true
 
 
 - ### Definition
-  - Robin Hanson is a concept within the ngm domain.
+  - Robin Hanson is an economist, futurist, and author (George Mason University) known for contrarian analysis of AI progress timelines, the economics of prediction markets, and his book Age of Em which models a future dominated by brain emulations. He maintains a measured scepticism about near-term AGI, arguing that inertia, demographic decline, and adoption barriers make transformative AI further off than mainstream discourse suggests. His blog Overcoming Bias applies economic and evolutionary reasoning to cognition, signalling, and technology adoption.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:RobinHanson
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **relatedTo**: Artificial General Intelligence, Economics
+  - **contrastsWith**: History and Path to AGI
+  - **enables**: Trustworthy AI
 
 - ### Content
   - #Public page

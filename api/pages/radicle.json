@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:radicle",
   "domain": "blockchain",
-  "definition": "Radicle is a blockchain and distributed systems concept and a type of blockchain.",
+  "definition": "Radicle is a decentralised, peer-to-peer code collaboration platform built on Git that eliminates dependence on centralised forges such as GitHub or GitLab. It uses a content-addressed, cryptographically signed data model where repositories are identified by public keys rather than server-hosted URLs, enabling sovereign code hosting, offline collaboration, and censorship-resistant software development. Radicle integrates with Ethereum-based smart contracts for governance and funding, positioning it at the intersection of blockchain infrastructure and open-source software tooling.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-network-component",
@@ -13,21 +13,56 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-governance",
+        "label": "Decentralized Governance"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -8,6 +8,14 @@
 
 - ### Relationships
   - is-subclass-of:: [[Privacy Disclosure]]
+  - Part Of [[Privacy Disclosure]]
+  - Requires [[GDPR Compliance]]
+  - Requires [[Data Protection]]
+  - Supports [[Data Governance]]
+  - Supports [[Digital Rights]]
+  - Supports [[Regulatory Compliance]]
+  - Related To [[Accountability]]
+  - Related To [[AIEthics]]
 
 - ### Content
 

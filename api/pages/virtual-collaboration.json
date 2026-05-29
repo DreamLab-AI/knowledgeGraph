@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:virtual-collaboration",
   "domain": "spatial-computing",
-  "definition": "A 3D virtual immersive environment where employees interact using avatar identities, perform work tasks, and engage in real-time teamwork through metaverse-enabled workspaces featuring interactive whiteboards, document sharing, and spatial presence capabilities.",
+  "definition": "A 3D immersive environment enabling geographically distributed teams to interact via avatar identities, perform work tasks in real time, and access shared artefacts through metaverse-enabled workspaces. Capabilities include interactive whiteboards, document co-editing, spatial audio, and persistent virtual rooms accessible via desktop, mobile, and VR/AR devices.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -18,20 +18,48 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      },
+      {
+        "id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:remote-collaboration",
+        "label": "Remote Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:immersive-communication",
+        "label": "Immersive Communication"
+      }
+    ]
   },
   "wikilinks": [
     {

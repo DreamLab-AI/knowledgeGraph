@@ -1,12 +1,14 @@
 - ### Definition
-  - Plotting a graph using matplotlib python library is a concept within the ngm domain.
+  - A Logseq-embedded Python code example demonstrating inline data visualisation using matplotlib within a Pyodide runtime. The snippet generates a sinusoidal plot, encodes it as a base64 PNG, and returns it for display inside the knowledge graph note, illustrating programmatic data visualisation within a personal knowledge management environment.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:PlottingAGraphUsingMatplotlibPythonLibrary
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses: [[Data Visualisation]], [[Python and PyTorch]], [[Software Library]]
+  - enables: [[Visualization Layer]]
+  - relatedTo: [[Open Source Software]]
 
 - ### Content
   - Thanks to **mentaloid** on the logseq forum for this code example

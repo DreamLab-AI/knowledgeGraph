@@ -6,6 +6,13 @@
   - owl-role:: Concept
 
 - ### Relationships
+  - **requires** [[Agent Frameworks]] — the architecture depends on multi-agent orchestration
+  - **requires** [[Nostr Protocol]] — decentralised identity and event communication layer
+  - **uses** [[Lightning Network]] — micropayment settlement between agents and users
+  - **uses** [[Digital Asset]] — 3D assets and tokens are the primary value objects
+  - **uses** [[Large Language Models]] — LLMs power autonomous task reasoning and content generation
+  - **enables** [[Digital Twin]] — the framework instantiates digital twins of creative spaces
+  - **enables** [[Metaverse]] — the architecture provides a blueprint for agentic metaverse infrastructure
   - bridges-to:: [[Digital Twin]]
 
 - ### Content

@@ -42,16 +42,36 @@ public:: true
   "@id": "urn:ngm:class:sustainable-technology",
   "@type": "Class",
   "label": "Sustainable Technology",
-  "definition": "Sustainable Technology is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Technology designed, deployed, and operated to minimise long-term environmental impact through energy efficiency, use of renewable energy sources, responsible lifecycle management, and reduction of waste and carbon emissions. In IT and spatial computing contexts this encompasses energy-efficient data centres, green cloud computing, virtualisation, sustainable software engineering practices, circular economy principles applied to hardware, and AI-driven optimisation of resource consumption. Sustainable technology sits at the intersection of governance, infrastructure design, and environmental accountability, and is increasingly mandated by corporate ESG commitments and governmental net-zero regulations.",
   "domain": "spatial-computing",
   "maturity": "emerging",
+  "qualityScore": 0.75,
+  "quality": 0.75,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
       "label": "Governance and Safety"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:sustainability", "label": "Sustainability"},
+      {"@id": "urn:ngm:class:circular-economy", "label": "Circular Economy"},
+      {"@id": "urn:ngm:class:renewable-energy-certificates", "label": "Renewable Energy Certificates"},
+      {"@id": "urn:ngm:class:carbon-neutral-blockchain", "label": "Carbon Neutral Blockchain"},
+      {"@id": "urn:ngm:class:carbon-footprint-measurement", "label": "Carbon Footprint Measurement"},
+      {"@id": "urn:ngm:class:governance", "label": "Governance"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:digital-transformation", "label": "Digital Transformation"},
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
+      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:carbon-accounting", "label": "Carbon Accounting"},
+      {"@id": "urn:ngm:class:environmental-accounting", "label": "Environmental Accounting"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

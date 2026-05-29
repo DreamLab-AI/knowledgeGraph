@@ -5,33 +5,79 @@
   "public": true,
   "classIri": "urn:ngm:class:tracked-robot",
   "domain": "robotics",
-  "definition": "Tracked robot uses continuous tracks providing superior traction on rough terrain.",
+  "definition": "A Tracked Robot is a ground mobile robot that uses continuous loop tracks\u2014analogous to those on military tanks\u2014rather than wheels to achieve locomotion. The large contact surface area of the track distributes the robot's weight, providing superior traction and stability on uneven, soft, or obstacle-dense terrain such as rubble, mud, stairs, and gravel. Tracked robots are widely deployed in search-and-rescue, military reconnaissance, inspection, and agricultural automation where wheeled platforms would lose grip or become immobilised.",
   "subClassOf": [
-    {
-      "id": "urn:ngm:class:robo-robot-type",
-      "label": "Robot Type"
-    },
     {
       "id": "urn:ngm:class:ground-robot",
       "label": "Ground Robot"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:wheeled-robot",
+        "label": "Wheeled Robot"
+      },
+      {
+        "id": "urn:ngm:class:legged-robot",
+        "label": "Legged Robot"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:perception-system",
+        "label": "Perception System"
+      },
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rescue-robot",
+        "label": "Rescue Robot"
+      },
+      {
+        "id": "urn:ngm:class:inspection-robot",
+        "label": "Inspection Robot"
+      },
+      {
+        "id": "urn:ngm:class:mobile-robot",
+        "label": "Mobile Robot"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -6,8 +6,13 @@
   - owl-role:: Concept
 
 - ### Relationships
-  - is-subclass-of:: [[owl:Thing]]
-  - bridges-to:: [[Blockchain]] (domain: bc)
+  - is-subclass-of:: AI Infrastructure
+  - Enables [[Deep Learning]]
+  - Enables [[Machine Learning Pipeline]]
+  - Supports [[AutoML]]
+  - Supports [[Neural Network]]
+  - Uses [[Machine Learning Infrastructure]]
+  - Has Part [[Inference]]
 
 - ### Content
 

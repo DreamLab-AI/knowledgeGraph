@@ -33,16 +33,32 @@ public:: true
   "@id": "urn:ngm:class:git-hub-actions",
   "@type": "Class",
   "label": "Git Hub Actions",
-  "definition": "Git Hub Actions is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A CI/CD automation platform integrated into GitHub that executes workflow pipelines triggered by repository events, schedules, or manual dispatch. GitHub Actions enables ML model training, data versioning with DVC, experiment tracking with MLflow, fairness testing, Docker container builds, and scheduled retraining, making it the standard orchestration layer for MLOps pipelines on GitHub-hosted or self-hosted runners.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:machine-learning-pipeline", "label": "Machine Learning Pipeline"},
+      {"@id": "urn:ngm:class:version-control", "label": "Version Control"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:machine-learning-infrastructure", "label": "Machine Learning Infrastructure"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"},
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:fairness-oecd", "label": "Fairness (OECD)"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -72,14 +88,17 @@ public:: true
 
 
 - ### Definition
-  - GitHub Actions is a concept within the ngm domain.
+  - A CI/CD automation platform integrated into GitHub that executes workflow pipelines triggered by repository events, schedules, or manual dispatch. GitHub Actions enables ML model training, data versioning with DVC, experiment tracking with MLflow, fairness testing, Docker container builds, and scheduled retraining, making it the standard orchestration layer for MLOps pipelines on GitHub-hosted or self-hosted runners.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:GitHubActions
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **enables**: Machine Learning Pipeline, Version Control — GitHub Actions orchestrates end-to-end ML pipelines with full version tracking
+  - **uses**: Machine Learning Infrastructure — runners, secrets, and artifact storage constitute the underlying compute infrastructure
+  - **relatedTo**: Agentic AI, Knowledge Graph — agentic workflows and ontology compilation can be automated as Actions pipelines
+  - **supports**: Fairness (OECD) — Fairlearn-based fairness checks are a first-class step in the documented MLOps pipeline
 
 - ### Content
   - Great. I’ll create a practical and scaffolded tutorial for setting up CI/CD for ML using GitHub Actions, tailored for someone familiar with GitHub Actions and ML systems but new to tools like DVC and MLflow. I’ll explain each component in context, use minimal Markdown with clearly delimited code blocks, and provide just enough theory to orient you without overwhelming. I’ll also touch on Docker use, secrets management, and optional enhancements like drift detection and rollbacks.

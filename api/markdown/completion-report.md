@@ -5,9 +5,11 @@
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - supports:: [[Governance]], [[Quality Assurance]]
+  - uses:: [[Documentation Standards]]
+  - related-to:: [[Governance Framework]], [[Metaverse Domain]]
 - ### Content
-  - Completion reports summarise project outcomes, achievements, and validation status, capturing deliverables, quality metrics, and governance records necessary for stakeholder communication and project closure.
+  - A Completion Report is a formal documentation artefact summarising the outcomes, achievements, and validation status of a completed project or work package. It captures deliverables, quality metrics, sign-off records, and governance evidence required for stakeholder communication and project closure in regulated or standards-aligned environments.
   - ### Original Content
 		- ```
   # Task Completion Report: Robotics Control & Perception Ontology

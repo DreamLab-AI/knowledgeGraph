@@ -42,20 +42,58 @@ public:: true
   "@id": "urn:ngm:class:environmental-registry",
   "@type": "Class",
   "label": "Environmental Registry",
-  "definition": "Environmental Registry is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "A catalogued, authoritative store of descriptors for physical or virtual environments, recording their spatial bounds, safety parameters, hazard zones, and compliance status. XR systems query the environmental registry during session initialisation to validate that the current space meets operational and safety requirements before permitting immersive interactions.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
       "label": "Governance and Safety"
     }
   ],
-  "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:spatial-anchor",
+        "label": "Spatial Anchor"
+      },
+      {
+        "@id": "urn:ngm:class:room-scale",
+        "label": "Room Scale"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:database-query",
+        "label": "Database Query"
+      },
+      {
+        "@id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:calibration-tools",
+        "label": "Calibration Tools"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:environmental-verification",
+        "label": "Environmental Verification"
+      },
+      {
+        "@id": "urn:ngm:class:xr-runtime-environment",
+        "label": "XR Runtime Environment"
+      }
+    ]
   }
 }
 ```
@@ -87,23 +125,26 @@ public:: true
 
 
 - ### Definition
-  - Environmental Registry is a concept within the metaverse domain. Further enrichment pending.
+  - A catalogued, authoritative store of descriptors for physical or virtual environments, recording their spatial bounds, safety parameters, hazard zones, and compliance status. XR systems query the environmental registry during session initialisation to validate that the current space meets operational and safety requirements before permitting immersive interactions.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:EnvironmentalRegistry
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Has Part [[Spatial Anchor]]
+  - Has Part [[Room Scale]]
+  - Supports [[Environmental Verification]]
+  - Supports [[XR Runtime Environment]]
+  - Uses [[Database Query]]
+  - Uses [[Data Management]]
+  - Related To [[Calibration Tools]]
 
 - ### Content
 
   ## Overview
 
-  Environmental Registry represents an abstract concept in the metaverse ontology hierarchy.
-
-  #### Related Concepts
-  - [[owl:Thing]]
+  Environmental registries act as the spatial counterpart to identity registries — each registered environment carries a canonical descriptor including boundary geometry, permissible interaction modes, and safety classification. When an XR session starts, the runtime queries the registry to match the detected space and enforce appropriate guardian boundaries and content restrictions.
 
 - ### Provenance
   - sources::

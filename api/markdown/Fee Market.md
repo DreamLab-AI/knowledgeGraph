@@ -66,7 +66,7 @@ public:: true
   "@id": "urn:ngm:class:fee-market",
   "@type": "Class",
   "label": "Fee Market",
-  "definition": "Dynamic fee determination within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "A Fee Market is the mechanism by which blockchain participants competitively bid transaction fees to have their transactions included in blocks, with miners or validators selecting transactions that maximise their revenue given limited block capacity. Fee markets emerge from the interplay between fixed block-space supply and variable transaction demand, producing dynamic price discovery that signals network congestion. Ethereum's EIP-1559 introduced a protocol-level base fee that adjusts algorithmically each block, partially burning fees to reduce token supply and adding a tip mechanism for priority inclusion.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -83,7 +83,30 @@ public:: true
       "label": "EconomicMechanism"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:base-fee", "label": "Base Fee"},
+      {"@id": "urn:ngm:class:transaction-fee", "label": "Transaction Fee"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:mempool", "label": "Mempool"},
+      {"@id": "urn:ngm:class:block-size", "label": "Block Size"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:miner", "label": "Miner"},
+      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:gas-fee-market", "label": "Gas Fee Market"},
+      {"@id": "urn:ngm:class:gas-price", "label": "Gas Price"},
+      {"@id": "urn:ngm:class:tokenomics", "label": "Tokenomics"},
+      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+    ]
+  },
+  "qualityScore": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -149,7 +172,7 @@ public:: true
 
 
 - ### Definition
-  - Dynamic fee determination within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
+  A Fee Market is the mechanism by which blockchain participants competitively bid transaction fees to have their transactions included in blocks, with miners or validators selecting transactions that maximise their revenue given limited block capacity. Fee markets emerge from the interplay between fixed block-space supply and variable transaction demand, producing dynamic price discovery that signals network congestion. Ethereum's EIP-1559 introduced a protocol-level base fee that adjusts algorithmically each block, partially burning fees to reduce token supply and adding a tip mechanism for priority inclusion.
 
 - ### Semantic Classification
   - owl-class:: blockchain:FeeMarket
@@ -159,7 +182,7 @@ public:: true
   - implemented-in-layer:: [[EconomicLayer]]
 
 - ### Relationships
-  - is-subclass-of:: [[Blockchain Entity]], [[EconomicMechanism]]
+  The Fee Market **has parts** including the Base Fee (the protocol-mandated minimum per-unit cost) and Transaction Fees paid by users. It **requires** a Mempool (the pool of pending transactions competing for inclusion) and Block Size constraints that create the scarcity driving bidding. It **enables** Miners to earn revenue and makes Blockchain Transactions economically viable. It is **related to** the Gas Fee Market (Ethereum's specific implementation), Gas Price as the unit denomination, Tokenomics as the broader economic context, and Proof Of Work as the original incentive framework. It **depends on** the Blockchain itself as the underlying settlement layer.
 
 - ### Content
 
@@ -198,34 +221,13 @@ public:: true
   )
       ```
 
-  - ## About Fee Market
+  Fee markets are a foundational mechanism in public blockchain systems, arising wherever block space is scarce relative to demand. In the original Bitcoin design, miners sort pending transactions by fee-per-byte and fill blocks greedily from the highest-paying entries downwards. During periods of high congestion, users who wish rapid confirmation must outbid one another, driving fees to levels that can make small transactions economically unviable.
 
-  - Dynamic fee determination within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
-  - ### Key Characteristics
-    - 1. **Definitional Property**: Core defining characteristic
-    - 2. **Functional Property**: Operational behavior
-    - 3. **Structural Property**: Compositional elements
-    - 4. **Security Property**: Security guarantees provided
-    - 5. **Performance Property**: Efficiency considerations
-  - ### Technical Components
-    - **Implementation**: How concept is realized technically
-    - **Verification**: Methods for validating correctness
-    - **Interaction**: Relationships with other components
-    - **Constraints**: Technical limitations and requirements
-  - ### Use Cases
-    - **1. Core Blockchain Operation**
-    - **Application**: Fundamental blockchain functionality
-    - **Example**: Practical implementation in major blockchains
-    - **Requirements**: Technical prerequisites
-    - **Benefits**: Value provided to blockchain systems
-  - ### Standards & References
-    - [[ISO/IEC 23257:2021]] - Blockchain and distributed ledger technologies
-    - [[IEEE 2418.1]] - Blockchain and distributed ledger technologies
-    - [[NIST NISTIR]] - Blockchain and distributed ledger technologies
+  Ethereum's EIP-1559 (implemented August 2021) restructured the fee market by introducing an algorithmic base fee that the protocol adjusts every block by up to 12.5% depending on whether the previous block was above or below its 50% utilisation target. Users pay the base fee (which is burned, permanently removing ETH from circulation) plus a priority tip paid to the validator. This reform improved fee predictability and created a deflationary pressure on ETH supply during high-activity periods, though it did not eliminate fee spikes under sustained overload.
 
+  Fee markets interact with block propagation dynamics and miner extractable value (MEV). Sophisticated actors submit bundles of transactions with carefully crafted fees to capture arbitrage, liquidation, and front-running opportunities, creating a secondary market for block-space positioning. Layer-2 solutions such as rollups reduce demand for Layer-1 block space, lowering base fees for underlying settlement transactions while shifting fee market dynamics up the stack.
 
-
-  <!-- Merged from Fee Market.md: Blockchain, Tokenomics -->
+  The design of a fee market has security implications: if block rewards fall and fees do not compensate, miners or validators may find it rational to attack the chain rather than extend it honestly (the "fee cliff" problem relevant to Bitcoin's long-term security model as the block subsidy approaches zero).
 
 - ### Provenance
   - sources:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]

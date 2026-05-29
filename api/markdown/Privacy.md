@@ -196,7 +196,7 @@ public:: true
   "label": "Privacy",
   "definition": "The protection of personal information and individual autonomy in AI systems, encompassing data minimization, purpose limitation, transparency, and individual control over how personal data is collected, processed, stored, and shared throughout the AI lifecycle.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-legal-and-regulatory",
@@ -207,6 +207,21 @@ public:: true
       "label": "Privacy Framework"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:encryption", "label": "Encryption"},
+      {"@id": "urn:ngm:class:consent-management", "label": "Consent Management"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"},
+      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"},
+      {"@id": "urn:ngm:class:access-control", "label": "Access Control"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:differential-privacy", "label": "Differential Privacy"},
+      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -439,7 +454,13 @@ public:: true
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Encryption]]
+  - requires [[Consent Management]]
+  - relatedTo [[Data Protection]]
+  - relatedTo [[Cybersecurity]]
+  - relatedTo [[Access Control]]
+  - enables [[Differential Privacy]]
+  - enables [[Zero-Knowledge Proof]]
 - ### Content
   - The protection of personal information and individual autonomy in AI systems, encompassing data minimization, purpose limitation, transparency, and individual control over how personal data is collected, processed, stored, and shared throughout the AI lifecycle.
   - # What to use and when

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ai-ethics-board",
   "domain": "artificial-intelligence",
-  "definition": "AI ics Board is a multidisciplinary oversight committee comprising technical experts, icists, legal professionals, domain specialists, and stakeholder representatives, responsible for conducting ical reviews of AI systems, providing guidance on ical dilemmas, and exercising veto authority over AI...",
+  "definition": "An AI Ethics Board is a formally constituted, multidisciplinary oversight committee responsible for reviewing AI systems and deployments against ethical principles, organisational values, and applicable regulatory requirements. Comprising technical experts, ethicists, legal and compliance professionals, domain specialists, and stakeholder representatives, the board conducts structured ethical impact assessments, provides binding or advisory guidance on AI deployment decisions, and monitors deployed systems for ongoing compliance. It serves as a key institutional mechanism for operationalising responsible AI principles and maintaining human oversight of consequential automated decision-making.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -17,21 +17,99 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics-checklist",
+        "label": "AI Ethics Checklist"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      },
+      {
+        "id": "urn:ngm:class:governance-structure",
+        "label": "Governance Structure"
+      },
+      {
+        "id": "urn:ngm:class:stakeholder",
+        "label": "Stakeholder"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      }
+    ],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:ethical-ai",
+        "label": "Ethical AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      }
+    ],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "id": "urn:ngm:class:fairness-constraints",
+        "label": "Fairness Constraints"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance-principle",
+        "label": "Ai Governance Principle"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai-principles",
+        "label": "Responsible AI Principles"
+      },
+      {
+        "id": "urn:ngm:class:governance-board",
+        "label": "Governance Board"
+      },
+      {
+        "id": "urn:ngm:class:stakeholder-engagement-in-ai",
+        "label": "Stakeholder Engagement in AI"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:user-privacy-control",
   "domain": "artificial-intelligence",
-  "definition": "A user privacy control component in the Artificial Intelligence domain that enables RightToBeForgotten.",
+  "definition": "User privacy controls are interface and systemic mechanisms that allow individuals to view, modify, restrict, or delete their personal data held by an AI or data-driven system. They operationalise data subject rights such as the right to be forgotten, consent withdrawal, and data portability mandated by regulations like GDPR. Effective privacy controls combine technical enforcement \u2014 such as deletion pipelines and audit trails \u2014 with accessible user interfaces.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -17,21 +17,78 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.75,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:consent-management",
+        "label": "Consent Management"
+      },
+      {
+        "id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:right-to-be-forgotten",
+        "label": "Right to Be Forgotten"
+      },
+      {
+        "id": "urn:ngm:class:data-minimisation",
+        "label": "Data Minimisation"
+      },
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:personal-data-store",
+        "label": "Personal Data Store"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy By Design"
+      },
+      {
+        "id": "urn:ngm:class:privacy-framework",
+        "label": "Privacy Framework"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      },
+      {
+        "id": "urn:ngm:class:privacy-impact-assessment",
+        "label": "Privacy Impact Assessment"
+      },
+      {
+        "id": "urn:ngm:class:user-interface",
+        "label": "User Interface"
+      }
+    ]
   },
   "wikilinks": [
     {

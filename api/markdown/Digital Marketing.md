@@ -46,15 +46,29 @@ public:: true
   "@id": "urn:ngm:class:digital-marketing",
   "@type": "Class",
   "label": "Digital Marketing",
-  "definition": "Digital Marketing is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Digital Marketing encompasses the strategies and technologies used to promote products and services through digital channels, including search engines, social media, email, and immersive platforms. In spatial computing and metaverse contexts, digital marketing extends to in-world advertising, NFT-based brand activations, virtual experiential campaigns, and personalised AR overlays that contextualise commercial messages within physical environments.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:recommendation-engine", "label": "Recommendation Engine"},
+      {"@id": "urn:ngm:class:digital-content", "label": "Digital Content"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:e-commerce", "label": "E-Commerce"},
+      {"@id": "urn:ngm:class:loyalty-programs", "label": "Loyalty Programs"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -96,23 +110,33 @@ public:: true
 
 
 - ### Definition
-  - Digital Marketing is a concept within the metaverse domain. Further enrichment pending.
+  - Digital Marketing encompasses the strategies and technologies used to promote products and services through digital channels, including search engines, social media, email, and immersive platforms. In spatial computing and metaverse contexts, digital marketing extends to in-world advertising, NFT-based brand activations, virtual experiential campaigns, and personalised AR overlays that contextualise commercial messages within physical environments.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:DigitalMarketing
   - owl-role:: concept
 
 - ### Relationships
-  - bridges-to:: [[Blockchain]] (domain: bc) for digital asset ownership and marketplace integration
+  - uses [[Recommendation Engine]]
+  - uses [[Digital Content]]
+  - enables [[E-Commerce]]
+  - enables [[Loyalty Programs]]
+  - bridgesTo [[Blockchain]]
+  - bridgesTo [[Augmented Reality]]
 
 - ### Content
 
   ## Overview
 
-  Digital Marketing represents an abstract concept in the metaverse ontology hierarchy.
+  Digital Marketing in spatial and metaverse contexts combines traditional digital channels with immersive and decentralised mechanisms. Personalisation relies on recommendation engines and user-behaviour data to deliver contextually relevant content. Blockchain integration enables verifiable ownership of branded digital assets such as NFTs, unlocking new loyalty and reward models. Augmented reality overlays allow brands to deliver geospatially anchored advertising experiences visible through mobile or head-mounted devices. E-commerce is directly enabled as immersive environments allow customers to visualise products in situ before purchase. Loyalty programmes are increasingly tokenised, with on-chain point systems that allow cross-brand redemption and secondary-market trading.
 
   #### Related Concepts
-  - [[owl:Thing]]
+  - [[Recommendation Engine]]
+  - [[Digital Content]]
+  - [[E-Commerce]]
+  - [[Loyalty Programs]]
+  - [[Blockchain]]
+  - [[Augmented Reality]]
 
 - ### Provenance
   - sources::

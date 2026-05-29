@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:esg-investing",
   "domain": "blockchain",
-  "definition": "ESG Investing integrates Environmental, Social, and Governance criteria into investment analysis and portfolio construction to assess sustainability and ethical impact alongside financial returns.",
+  "definition": "ESG Investing is an investment methodology that systematically integrates Environmental, Social, and Governance criteria into the analysis, selection, and management of investment portfolios, with the aim of assessing sustainability risks and ethical impact alongside conventional financial returns. Environmental factors include carbon emissions, resource usage, and climate exposure; social factors cover labour practices, supply-chain conditions, and community impact; governance factors assess board composition, executive remuneration, and shareholder rights. Blockchain-based tokenisation is increasingly used to provide transparent, immutable ESG data trails and enable fractional ownership of impact-linked assets.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-governance-and-regulation",
@@ -14,7 +14,7 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,11 +23,34 @@
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:token",
+        "label": "Token"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:sustainability",
+        "label": "Sustainability"
+      },
+      {
+        "id": "urn:ngm:class:green-finance",
+        "label": "Green Finance"
+      },
+      {
+        "id": "urn:ngm:class:tokenization",
+        "label": "Tokenization"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

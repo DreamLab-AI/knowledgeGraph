@@ -86,15 +86,36 @@ public:: true
   "@id": "urn:ngm:class:autonomy-level",
   "@type": "Class",
   "label": "Autonomy Level",
-  "definition": "Autonomy Level is a blockchain and distributed systems concept and a type of Blockchain.",
+  "definition": "A graded classification (typically 0–5) quantifying the degree to which an agent perceives, decides, and acts without human intervention, ranging from fully manual operation through partial and conditional autonomy to full self-governance, with domain-specific scales for AI, robotics, blockchain DAOs, and multi-agent systems.",
   "domain": "blockchain",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-network-component",
       "label": "Network Component"
     }
   ],
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:agent", "label": "Agent"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:human-in-the-loop", "label": "Human in the Loop"},
+      {"@id": "urn:ngm:class:safety", "label": "Safety"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:ai-agent-system", "label": "AI Agent System"},
+      {"@id": "urn:ngm:class:bdi-model", "label": "BDI Model"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:eu-ai-act", "label": "EU AI Act"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:goal", "label": "Goal"},
+      {"@id": "urn:ngm:class:objective", "label": "Objective"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
@@ -191,7 +212,7 @@ public:: true
 
 
 - ### Definition
-  - Autonomy Level is a concept within the bc domain.
+  - A graded classification (typically 0–5) quantifying the degree to which an agent perceives, decides, and acts without human intervention, ranging from fully manual operation through conditional autonomy to full self-governance, with domain-specific scales for AI agents, robotics, blockchain DAOs, and multi-agent systems.
 
 - ### Semantic Classification
   - owl-class:: blockchain:AutonomyLevel
@@ -199,6 +220,11 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Blockchain]]
+  - hasPart:: [[Agent]]
+  - requires:: [[Human in the Loop]], [[Safety]]
+  - enables:: [[AI Agent System]], [[BDI Model]]
+  - standardizedBy:: [[EU AI Act]]
+  - relatedTo:: [[Goal]], [[Objective]]
 
 - ### Content
 

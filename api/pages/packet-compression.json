@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:packet-compression",
   "domain": "infrastructure",
-  "definition": "Packet Compression is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "The application of lossless or lossy compression algorithms to network packets to reduce transmission bandwidth and latency in real-time data pipelines. In metaverse and spatial computing contexts, packet compression is critical for streaming 3D scene state, avatar motion data, and sensor telemetry with minimal perceptual degradation at constrained network bandwidths.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-network-and-comms",
@@ -13,18 +13,41 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:bandwidth-adaptation",
+        "label": "Bandwidth Adaptation"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-infrastructure",
+        "label": "Metaverse Infrastructure"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:data-compression",
+        "label": "Data Compression"
+      },
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": []

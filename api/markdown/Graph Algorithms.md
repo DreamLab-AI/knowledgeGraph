@@ -42,16 +42,30 @@ public:: true
   "@id": "urn:ngm:class:graph-algorithms",
   "@type": "Class",
   "label": "Graph Algorithms",
-  "definition": "Graph Algorithms is a type of Artificial Intelligence in the artificial intelligence domain.",
+  "definition": "A family of computational methods that operate on graph structures—nodes and edges—to solve problems such as shortest-path finding, community detection, ranking, and traversal. Graph algorithms are foundational to knowledge graph querying, social network analysis, and AI reasoning over relational data.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
+      {"@id": "urn:ngm:class:sparql", "label": "SPARQL"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:knowledge-graph-construction", "label": "Knowledge Graph Construction"},
+      {"@id": "urn:ngm:class:feature-importance", "label": "Feature Importance"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -87,14 +101,19 @@ public:: true
 
 
 - ### Definition
-  - Graph Algorithms is a concept within the ai domain. Further enrichment pending.
+  - A family of computational methods that operate on graph structures—nodes and edges—to solve problems such as shortest-path finding, community detection, ranking, and traversal. Graph algorithms are foundational to knowledge graph querying, social network analysis, and AI reasoning over relational data.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:GraphAlgorithms
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses** [[Knowledge Graph]] — graph algorithms execute over and populate knowledge graph structures
+  - **uses** [[SPARQL]] — SPARQL query patterns encode graph traversal and pattern-matching operations
+  - **enables** [[Knowledge Graph Construction]] — graph traversal and clustering support construction pipelines
+  - **enables** [[Feature Importance]] — graph-centrality measures are used as ML features
+  - **relatedTo** [[Machine Learning]] — graph neural networks merge graph and ML paradigms
+  - **relatedTo** [[Neural Network]] — graph neural networks apply message-passing on graph topology
 
 - ### Content
 

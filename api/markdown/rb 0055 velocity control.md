@@ -42,9 +42,9 @@ public:: true
   "@id": "urn:ngm:class:rb-0055-velocity-control",
   "@type": "Class",
   "label": "rb 0055 velocity control",
-  "definition": "velocity control is a robotics and autonomous systems concept and a type of Motion Control.",
+  "definition": "Velocity control is a robot control strategy in which joint or Cartesian velocities are the primary commanded quantities, with a feedback controller (typically PID-based) continuously correcting deviations between desired and measured velocities. It is used for smooth trajectory following, compliant interaction with soft contacts, and speed-and-separation monitoring safety functions that require real-time speed capping. Velocity control is distinct from position control — it does not inherently resist positional drift — and from torque control, which acts at the force level.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-actuation-and-control",
@@ -55,11 +55,28 @@ public:: true
       "label": "Motion Control"
     }
   ],
-  "quality": 0.5,
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:encoder", "label": "Encoder"},
+      {"@id": "urn:ngm:class:feedback-control", "label": "Feedback Control"},
+      {"@id": "urn:ngm:class:pid-controller", "label": "Pid Controller"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:position-control", "label": "PositionControl"},
+      {"@id": "urn:ngm:class:torque-control", "label": "Torque Control"},
+      {"@id": "urn:ngm:class:velocity", "label": "Velocity"},
+      {"@id": "urn:ngm:class:velocity-control", "label": "VelocityControl"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:rb-0092-protective-stop", "label": "rb 0092 protective stop"},
+      {"@id": "urn:ngm:class:trajectory-planning", "label": "Trajectory Planning"}
+    ]
   }
 }
 ```
@@ -92,6 +109,7 @@ public:: true
 
 - ### Definition
   - ### Primary Definition
+  **Velocity Control** is a closed-loop control mode in which a robot controller commands and regulates joint or end-effector velocities rather than positions or forces. A PID-based feedback loop reads velocity from encoders and adjusts actuator drive signals to track a commanded speed profile. Velocity control underpins smooth trajectory following and is essential for speed-and-separation monitoring safety functions that require real-time speed capping proportional to human proximity.
 
 - ### Semantic Classification
   - owl-class:: robotics:rb0055velocitycontrol
@@ -99,7 +117,10 @@ public:: true
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Requires encoder feedback and a feedback control architecture (typically PID).
+  - Related to position control (which corrects positional error) and torque control (which acts at the force level).
+  - Enables protective stops by providing the speed reference that safety monitors compare against safe-speed thresholds.
+  - Feeds into trajectory planning and motion planning pipelines.
 
 - ### Content
   - ### Primary Definition

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:making-available",
   "domain": "spatial-computing",
-  "definition": "The supply of an AI system for distribution or use on the Union market in the course of a commercial activity, wher in return for payment or free of charge.",
+  "definition": "Under EU AI Act Article 3(14), Making Available is the supply of an AI system for distribution or use on the Union market in the course of a commercial activity, whether in return for payment or free of charge. It is broader than Placing on the Market, covering all subsequent distributions after initial market entry, and triggers compliance obligations for distributors, providers, and authorised representatives throughout the AI value chain.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-governance-and-safety",
@@ -14,10 +14,19 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:conformity-assessment",
+        "label": "Conformity Assessment"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
@@ -26,8 +35,26 @@
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:placing-on-the-market",
+        "label": "Placing on the Market"
+      },
+      {
+        "id": "urn:ngm:class:distributor",
+        "label": "Distributor"
+      },
+      {
+        "id": "urn:ngm:class:provider",
+        "label": "Provider"
+      }
+    ]
   },
   "wikilinks": [
     {

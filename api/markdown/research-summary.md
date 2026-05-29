@@ -5,7 +5,9 @@
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart:: [[Robotics]], [[Artificial Intelligence]], [[Blockchain]], [[Metaverse]]
+  - uses:: [[Ontology]], [[Knowledge Graph]]
+  - relatedTo:: [[Metaverse Domain]], [[Robotics Domain]], [[Metaverse Ontology]]
 - ### Content
   - Research summaries aggregate findings, literature reviews, and academic insights across multiple domains, distilling evidence and future directions for stakeholders.
   - ### Original Content

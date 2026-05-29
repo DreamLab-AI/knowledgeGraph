@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:property",
   "domain": "artificial-intelligence",
-  "definition": "Property is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "In the context of AI systems and ontological engineering, a Property is a named attribute or characteristic that describes a measurable or observable quality of an entity, concept, or system component. Properties may be data properties (mapping an individual to a literal value such as a number or string) or object properties (relating an individual to another individual within the knowledge graph). In AI safety and governance contexts, properties such as fairness, robustness, and interpretability are the formal targets of evaluation and certification requirements.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
@@ -23,11 +23,55 @@
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "id": "urn:ngm:class:ai-trustworthiness-dimensions",
+        "label": "AI Trustworthiness Dimensions"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ontology-structure",
+        "label": "Ontology Structure"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ontology-property-definitions",
+        "label": "Ontology Property Definitions"
+      },
+      {
+        "id": "urn:ngm:class:parameter",
+        "label": "Parameter"
+      },
+      {
+        "id": "urn:ngm:class:fairness-metrics",
+        "label": "Fairness Metrics"
+      },
+      {
+        "id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
+    ]
   },
   "wikilinks": [
     {

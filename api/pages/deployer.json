@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:deployer",
   "domain": "infrastructure",
-  "definition": "Deployer is a type of Digital Infrastructure in the infrastructure domain.",
+  "definition": "A Deployer, as defined in EU AI Act Article 3(4), is a natural or legal person, public authority, agency, or other body that uses an AI system under its authority in a professional context. Deployers bear obligations for human oversight, input data monitoring, logging, and fundamental rights impact assessments for high-risk AI systems. They are distinct from providers (who develop or place AI systems on the market) and incur provider-level obligations if they substantially modify an AI system.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-software-engineering",
@@ -17,21 +17,49 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
+      }
+    ]
   },
   "wikilinks": [
     {

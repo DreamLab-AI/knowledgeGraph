@@ -38,16 +38,23 @@ public:: true
   "@id": "urn:ngm:class:various-links",
   "@type": "Class",
   "label": "Various Links",
-  "definition": "Various Links is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A curated collection of external hyperlinks spanning blockchain, cryptocurrency, augmented and virtual reality, AI generative tools, and media production resources, assembled as a research reference page for cross-domain topics relevant to the NarrativeGoldmine knowledge graph.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
+      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -83,14 +90,14 @@ public:: true
 
 
 - ### Definition
-  - Various Links is a concept within the ngm domain.
+  - **Various Links** is a curated collection of external hyperlinks spanning blockchain, cryptocurrency, augmented and virtual reality, AI generative tools, and media production resources, assembled as a research reference page for cross-domain topics relevant to the NarrativeGoldmine knowledge graph.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:VariousLinks
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **relatedTo**: [[Blockchain]], [[Generative AI]], [[Augmented Reality]] — the link collection covers research and industry resources across these primary domains
 
 - ### Content
   - [Link](https://arxiv.org/abs/2103.15627)

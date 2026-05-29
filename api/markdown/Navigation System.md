@@ -37,16 +37,35 @@ public:: true
   "@id": "urn:ngm:class:navigation-system",
   "@type": "Class",
   "label": "Navigation System",
-  "definition": "Navigation System is a robotics and autonomous systems concept and a type of robotics.",
+  "definition": "An integrated set of hardware and software components that enables a robot or autonomous agent to determine its position, plan collision-free paths, and execute motion towards a goal. Navigation systems typically combine localisation, mapping, path planning, and obstacle avoidance modules, often relying on sensor fusion from LiDAR, cameras, and IMUs.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-navigation-and-planning",
       "label": "Navigation and Planning"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:slam", "label": "SLAM"},
+      {"@id": "urn:ngm:class:sensor", "label": "Sensor"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:path-planning", "label": "Path Planning"},
+      {"@id": "urn:ngm:class:localization", "label": "Localization"},
+      {"@id": "urn:ngm:class:obstacle-avoidance", "label": "Obstacle Avoidance"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:lidar", "label": "Lidar"},
+      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:autonomous-vehicle", "label": "Autonomous Vehicle"},
+      {"@id": "urn:ngm:class:mobile-robot", "label": "Mobile Robot"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -76,14 +95,22 @@ public:: true
 
 
 - ### Definition
-  - NavigationSystem is a concept within the ngm domain.
+  - An integrated set of hardware and software components that enables a robot or autonomous agent to determine its position, plan collision-free paths, and execute motion towards a goal. Navigation systems typically combine localisation, mapping, path planning, and obstacle avoidance modules, often relying on sensor fusion from LiDAR, cameras, and IMUs.
 
 - ### Semantic Classification
   - owl-class:: robotics:NavigationSystem
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires** [[SLAM]] — simultaneous localisation and mapping provides the real-time map and pose needed for navigation
+  - **requires** [[Sensor]] — sensors (LiDAR, cameras, IMUs) supply the perceptual data the navigation system depends on
+  - **hasPart** [[Path Planning]] — path planning is a core sub-module computing collision-free trajectories
+  - **hasPart** [[Localization]] — localisation determines the robot's current position within the map
+  - **hasPart** [[Obstacle Avoidance]] — reactive obstacle avoidance handles dynamic impediments not in the static map
+  - **uses** [[Lidar]] — LiDAR is the most common sensor modality for outdoor and large-scale navigation
+  - **uses** [[Motion Planning]] — motion planning converts high-level paths into executable joint or velocity commands
+  - **enables** [[Autonomous Vehicle]] — navigation systems are the operational core of autonomous vehicles
+  - **enables** [[Mobile Robot]] — mobile robots rely entirely on the navigation system for autonomous traversal
 
 - ### Content
   # NavigationSystem

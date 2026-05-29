@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:etsi-domain-virtual-society",
   "domain": "spatial-computing",
-  "definition": "A standardization domain within the ETSI focused on virtual society technologies, encompassing metaverse ecosystems, XR (Extended Reality), digital identity, and interoperable virtual worlds.",
+  "definition": "ETSI_Domain_Virtual_Society is a standardisation domain within the European Telecommunications Standards Institute (ETSI) that addresses the technical foundations and interoperability requirements of virtual society infrastructures, including metaverse ecosystems, Extended Reality (XR) environments, decentralised digital identity, virtual economies, and interoperable virtual worlds. It produces technical reports and specifications that coordinate standardisation work across ETSI technical bodies, liaising with ISO/IEC, ITU-T, 3GPP, W3C, and the Metaverse Standards Forum to ensure coherent standards coverage. The domain spans immersive media, avatar portability, blockchain-based identity and ownership, privacy-preserving authentication, and the governance frameworks required for responsible virtual society deployment.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -13,21 +13,96 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:virtual-world",
+        "label": "Virtual World"
+      },
+      {
+        "id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:extended-reality-xr",
+        "label": "Extended Reality (XR)"
+      },
+      {
+        "id": "urn:ngm:class:avatar-interoperability",
+        "label": "Avatar Interoperability"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:virtual-society",
+        "label": "Virtual Society"
+      },
+      {
+        "id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "id": "urn:ngm:class:social-vr",
+        "label": "Social VR"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-governance",
+        "label": "Decentralized Governance"
+      }
+    ],
     "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:etsi-domain-identity-and-trust",
+        "label": "ETSI Domain Identity and Trust"
+      },
+      {
+        "id": "urn:ngm:class:etsi-domain-security-and-privacy",
+        "label": "ETSI Domain Security and Privacy"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:etsi-domain-taxonomy",
+        "label": "ETSI Domain Taxonomy"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:metaverse-platform",
+        "label": "Metaverse Platform"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-identity-did",
+        "label": "Decentralized Identity (DID)"
+      },
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "id": "urn:ngm:class:digital-citizenship",
+        "label": "Digital Citizenship"
+      }
+    ]
   },
   "wikilinks": [
     {

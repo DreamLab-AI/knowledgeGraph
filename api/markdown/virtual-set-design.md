@@ -9,6 +9,10 @@
 - ### Relationships
   - is-subclass-of:: [[Production Design]]
   - bridges-to:: [[Computer Vision]]
+  - **requires**: [[Real-Time Rendering]], [[Game Engine]], [[Motion Capture]] — virtual sets require game-engine real-time rendering and camera/actor tracking to achieve perspective-correct parallax
+  - **uses**: [[Computer Vision]], [[Virtual Production Volume]] — camera tracking relies on computer vision; the LED volume wall is the physical output surface
+  - **enables**: [[Virtual Production]] — virtual set design is the content-creation discipline within the broader virtual production pipeline
+  - **partOf**: [[Production Design]] — virtual set design is a specialised branch of production design practice
 
 - ### Content
 

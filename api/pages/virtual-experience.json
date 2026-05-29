@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:virtual-experience",
   "domain": "spatial-computing",
-  "definition": "Virtual Experience is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "A user-facing encounter or activity delivered within a virtual environment, encompassing immersive simulations, interactive narratives, social engagements, and entertainment events that are accessed through XR devices, gaming platforms, or web-based spatial interfaces.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -13,21 +13,53 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:virtual-world-infrastructure",
+        "label": "Virtual World Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:avatar-system",
+        "label": "Avatar System"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:virtual-environment",
+        "label": "Virtual Environment"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      },
+      {
+        "id": "urn:ngm:class:personalized-virtual-experiences",
+        "label": "Personalized Virtual Experiences"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -6,16 +6,26 @@
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - enables:: [[Augmented Reality]]
+  - enables:: [[Virtual Reality]]
+  - enables:: [[Mixed Reality]]
+  - uses:: [[Spatial Computing]]
+  - uses:: [[Eye Tracking]]
+  - relatedTo:: [[Haptic Feedback]]
 
 - ### Content
 
   ## Overview
 
-  X R Hardware represents an abstract concept in the metaverse ontology hierarchy.
+  XR Hardware encompasses head-mounted displays, spatial computing headsets, hand-tracking controllers, and wearable sensors that deliver augmented, mixed, and virtual reality experiences. These devices combine high-resolution display optics, inside-out tracking cameras, inertial measurement units, and low-latency wireless connectivity. Eye tracking enables foveated rendering to reduce GPU load, while haptic feedback peripherals enhance physical presence in virtual environments.
 
   #### Related Concepts
-  - [[owl:Thing]]
+  - [[Augmented Reality]]
+  - [[Virtual Reality]]
+  - [[Mixed Reality]]
+  - [[Spatial Computing]]
+  - [[Eye Tracking]]
+  - [[Haptic Feedback]]
 
 - ### Provenance
   - sources::

@@ -54,20 +54,36 @@ public:: true
   "@id": "urn:ngm:class:fluid-simulation",
   "@type": "Class",
   "label": "Fluid Simulation",
-  "definition": "Physics simulation of liquid and gas dynamics using computational fluid dynamics (CFD) techniques to model realistic water, smoke, and atmospheric effects in virtual environments.",
+  "definition": "Fluid Simulation is the computational modelling of liquid and gas dynamics using numerical methods — notably computational fluid dynamics (CFD) and Navier-Stokes solvers — to produce physically plausible representations of water, smoke, fire, and atmospheric phenomena in real-time or offline rendering pipelines. In spatial computing and metaverse environments it contributes to environmental immersion and interactive physics, running on GPU compute shaders for performance-critical applications.",
   "domain": "spatial-computing",
   "maturity": "emerging",
+  "quality": 0.75,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-display-and-rendering",
       "label": "Display and Rendering"
-    },
-    {
-      "@id": "urn:ngm:class:metaverse",
-      "label": "Metaverse"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:physics-simulation", "label": "Physics Simulation"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
+      {"@id": "urn:ngm:class:compute-shader", "label": "Compute Shader"},
+      {"@id": "urn:ngm:class:math-library", "label": "Math Library"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:physics-engine", "label": "Physics Engine"},
+      {"@id": "urn:ngm:class:particle-system", "label": "Particle System"},
+      {"@id": "urn:ngm:class:computer-graphics", "label": "Computer Graphics"},
+      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"},
+      {"@id": "urn:ngm:class:3-d-rendering-engine", "label": "3D Rendering Engine"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:embodied-ai-simulation", "label": "Embodied AI Simulation"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -129,7 +145,7 @@ public:: true
   - is-subclass-of:: [[Metaverse]]
 
 - ### Content
-  Fluid Simulation — content pending enrichment.
+  Fluid simulation encompasses a family of numerical techniques for modelling the motion of liquids and gases. The most physically rigorous approaches solve the incompressible Navier-Stokes equations using methods such as smoothed-particle hydrodynamics (SPH), lattice Boltzmann, or grid-based finite-difference schemes. In real-time applications — games, virtual reality, and interactive metaverse environments — trade-offs favour GPU-accelerated compute shaders with simplified fluid models that still achieve convincing visual results. Particle systems are frequently combined with fluid solvers for hybrid effects such as splashing water or billowing smoke.
 
 - ### Provenance
   - sources:: [[Physics Engine]], [[CFD]]

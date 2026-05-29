@@ -17,21 +17,57 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:avatar-system",
+        "label": "Avatar System"
+      },
+      {
+        "id": "urn:ngm:class:virtual-world-infrastructure",
+        "label": "Virtual World Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:virtual-concerts",
+        "label": "Virtual Concerts"
+      },
+      {
+        "id": "urn:ngm:class:social-vr",
+        "label": "Social VR"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      },
+      {
+        "id": "urn:ngm:class:virtual-identity",
+        "label": "Virtual Identity"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:metaverse-platform",
+        "label": "Metaverse Platform"
+      },
+      {
+        "id": "urn:ngm:class:virtual-community-practice",
+        "label": "Virtual Community Practice"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -8,6 +8,12 @@
 
 - ### Relationships
   - is-subclass-of:: [[Data Registry]]
+  - uses [[Distributed Ledger]]
+  - uses [[Cryptography]]
+  - uses [[Public Key Infrastructure]]
+  - enables [[Self Sovereign Identity]]
+  - enables [[Digital Identity]]
+  - supports [[Trust Framework]]
 
 - ### Content
 

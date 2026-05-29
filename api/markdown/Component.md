@@ -42,16 +42,34 @@ public:: true
   "@id": "urn:ngm:class:component",
   "@type": "Class",
   "label": "Component",
-  "definition": "Component is a artificial intelligence concept and a type of Artificial Intelligence.",
+  "definition": "A discrete, modular unit within an AI system or infrastructure that provides a specific capability, can be developed and tested independently, and interacts with other components through defined interfaces. Components include hardware accelerators, software modules, model artefacts, data pipelines, and monitoring subsystems.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:cat-ai-infrastructure",
+      "@id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure (Category)"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:hardware-component", "label": "Hardware Component"},
+      {"@id": "urn:ngm:class:ai-system-component", "label": "AI System Component"},
+      {"@id": "urn:ngm:class:neural-network-component", "label": "Neural Network Component"},
+      {"@id": "urn:ngm:class:neural-network-layer", "label": "Neural Network Layer"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:ai-framework", "label": "AI Framework"},
+      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"},
+      {"@id": "urn:ngm:class:machine-learning-pipeline", "label": "Machine Learning Pipeline"},
+      {"@id": "urn:ngm:class:machine-learning-framework", "label": "Machine Learning Framework"},
+      {"@id": "urn:ngm:class:embedded-systems", "label": "Embedded Systems"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:ai-system-eu-definition", "label": "AI System (EU Definition)"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

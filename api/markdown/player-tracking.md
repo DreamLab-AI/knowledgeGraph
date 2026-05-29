@@ -1,12 +1,14 @@
 - ### Definition
-  - PlayerTracking is a concept within the ngm domain.
+  - Player Tracking is the real-time monitoring of user position, movement, and behavioural analytics within virtual and metaverse environments. It encompasses spatial positioning systems, motion-capture input, gaze and gesture tracking, and analytics pipelines that feed avatar behaviour, personalisation, and platform telemetry.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:PlayerTracking
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses: [[Motion Capture]], [[Avatar System]]
+  - enables: [[Avatar Behavior]], [[Player Two]]
+  - dependsOn: [[Spatial Computing]], [[Computer Vision]]
 
 - ### Content
   # PlayerTracking

@@ -4,8 +4,8 @@
   "slug": "seals",
   "public": true,
   "classIri": "urn:ngm:class:seals",
-  "domain": "infrastructure",
-  "definition": "Seals is a technology infrastructure concept and a type of infrastructure.",
+  "domain": "artificial-intelligence",
+  "definition": "Seals, in this knowledge graph context, refers to a practical AI pipeline experiment using traditional Chinese seal art (\u6d77\u8c79-style stamps) as a five-shot image classification and translation task. The experiment demonstrates multimodal AI capabilities: image analysis via OpenAI vision APIs, English description generation, Chinese translation, and appropriateness ranking, subsequently serialised to JSON for potential NFT metadata enrichment.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-software-engineering",
@@ -13,21 +13,48 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:multimodal-ai",
+        "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": []

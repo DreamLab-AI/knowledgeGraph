@@ -8,6 +8,10 @@
 
 - ### Relationships
   - is-subclass-of:: [[Production Pipeline]]
+  - **requires**: Game Engine (real-time background rendering on LED volume), 3D Asset (environment and character geometry), 3D Rendering Engine (final frame compositing)
+  - **uses**: Design Software (virtual art department authoring), Content Production Workflow (asset tracking and versioning)
+  - **enables**: Film Production (end-to-end feature/TV content creation), World Building (interactive environment design)
+  - **relatedTo**: Metaverse (shared technology stack and creative overlap)
 
 - ### Content
 

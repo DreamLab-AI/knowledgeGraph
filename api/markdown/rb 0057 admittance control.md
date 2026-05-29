@@ -42,9 +42,9 @@ public:: true
   "@id": "urn:ngm:class:rb-0057-admittance-control",
   "@type": "Class",
   "label": "rb 0057 admittance control",
-  "definition": "admittance control is a robotics and autonomous systems concept and a type of Interaction Control.",
+  "definition": "Admittance control is an interaction-control strategy in which a robot measures contact forces and torques and converts them into corresponding desired motion (position or velocity) using a virtual mass-spring-damper model. It is the dual of impedance control: the robot senses force input and renders motion output, enabling compliant, safe physical human-robot interaction in collaborative tasks.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-actuation-and-control",
@@ -55,11 +55,30 @@ public:: true
       "label": "Interaction Control"
     }
   ],
-  "quality": 0.5,
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:impedance-control", "label": "Impedance Control"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:rb-0067-force-torque-sensor", "label": "rb 0067 force torque sensor"},
+      {"@id": "urn:ngm:class:force-control", "label": "Force Control"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:rb-0053-force-control", "label": "rb 0053 force control"},
+      {"@id": "urn:ngm:class:rb-0056-impedance-control", "label": "rb 0056 impedance control"},
+      {"@id": "urn:ngm:class:compliance-control", "label": "Compliance Control"},
+      {"@id": "urn:ngm:class:rb-0041-inertia", "label": "rb 0041 inertia"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"},
+      {"@id": "urn:ngm:class:rb-0094-power-and-force-limiting", "label": "rb 0094 power and force limiting"}
+    ]
   }
 }
 ```

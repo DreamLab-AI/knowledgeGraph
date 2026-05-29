@@ -184,7 +184,7 @@ public:: true
   "label": "Text Generation",
   "definition": "Text Generation is the NLP task of producing coherent, contextually appropriate natural language text using neural language models, including applications such as story generation, article writing, code generation, and creative content production.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
@@ -195,6 +195,20 @@ public:: true
       "label": "Language Modeling"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
+      {"@id": "urn:ngm:class:transformer", "label": "Transformer"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
+      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:sampling", "label": "Sampling"},
+      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -414,7 +428,12 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Large Language Models]]
+  - requires [[Transformer]]
+  - enables [[Natural Language Processing]]
+  - enables [[Generative AI]]
+  - uses [[Sampling]]
+  - uses [[Prompt Engineering]]
 
 - ### Content
   - Text Generation is the NLP task of producing coherent, contextually appropriate natural language text using neural language models, including applications such as story generation, article writing, code generation, and creative content production. Modern text generation employs transformer-based language models (GPT, T5, BLOOM) with autoregressive or sequence-to-sequence architectures, controllable generation techniques, and prompt engineering to produce human-quality text across diverse domains and styles.

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:iosco",
   "domain": "infrastructure",
-  "definition": "International Organisation of Securities Commissions \u2014 the global standard-setter for securities regulation, issuing principles and recommendations that national regulators adopt for market oversight.",
+  "definition": "The International Organisation of Securities Commissions (IOSCO) is the global standard-setting body for securities regulation, whose members include national securities regulators from over 130 jurisdictions. It develops and publishes Principles, Recommendations, and regulatory standards that member jurisdictions adopt to promote fair, efficient, and transparent capital markets, combat systemic risk, and protect investors. IOSCO has extended its remit to encompass digital asset markets and crypto-asset intermediaries, issuing policy recommendations that inform national regulatory frameworks including the EU MiCA regulation.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-legal-and-regulatory",
@@ -14,7 +14,7 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -24,10 +24,33 @@
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      },
+      {
+        "id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-asset-market",
+        "label": "Digital Asset Market"
+      },
+      {
+        "id": "urn:ngm:class:systemic-risk",
+        "label": "Systemic Risk"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

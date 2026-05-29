@@ -64,7 +64,7 @@ public:: true
   "label": "Medical Imaging AI",
   "definition": "Medical Imaging AI encompasses artificial intelligence systems designed to analyse, interpret, and enhance medical images including radiological scans, pathology slides, and other diagnostic imaging modalities.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-application",
@@ -75,6 +75,22 @@ public:: true
       "label": "Vision Processing"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:radiology-ai", "label": "Radiology AI"},
+      {"@id": "urn:ngm:class:pathology-ai", "label": "Pathology AI"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:medical-ai", "label": "Medical AI"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:healthcare-ai", "label": "Healthcare AI"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -144,7 +160,12 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses [[Convolutional Neural Network]]
+  - uses [[Computer Vision]]
+  - hasPart [[Radiology AI]]
+  - hasPart [[Pathology AI]]
+  - partOf [[Medical AI]]
+  - enables [[Healthcare AI]]
 
 - ### Content
   - Medical Imaging AI encompasses artificial intelligence systems designed to analyse, interpret, and enhance medical images including radiological scans, pathology slides, and other diagnostic imaging modalities. These systems employ deep learning architectures, particularly convolutional neural networks, to perform tasks such as lesion detection, disease classification, segmentation of anatomical structures, and quantitative image analysis whilst adhering to clinical validation standards and regulatory requirements.

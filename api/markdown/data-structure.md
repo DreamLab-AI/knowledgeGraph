@@ -7,6 +7,11 @@
 
 - ### Relationships
   - is-subclass-of:: ['owl:Thing']
+  - enables [[Neural Network]]
+  - enables [[Graph Neural Network]]
+  - uses [[GPU Compute]]
+  - uses [[Algorithm]]
+  - relatedTo [[Machine Learning]]
 
 - ### Content
 

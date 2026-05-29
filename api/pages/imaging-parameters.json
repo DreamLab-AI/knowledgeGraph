@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:imaging-parameters",
   "domain": "spatial-computing",
-  "definition": "Imaging Parameters is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Imaging Parameters are the configurable settings\u2014such as exposure time, aperture, ISO, focal length, white balance, and sensor gain\u2014that govern how a camera or depth sensor captures light and produces a digital image. In spatial computing pipelines, correct imaging parameter calibration is essential for photogrammetric reconstruction, volumetric capture, and computer-vision model accuracy across varying lighting conditions.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -14,11 +14,20 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:image-classification",
+        "label": "Image Classification"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -26,8 +35,22 @@
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:camera",
+        "label": "Camera"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:camera-parameters",
+        "label": "Camera Parameters"
+      },
+      {
+        "id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      }
+    ]
   },
   "wikilinks": [
     {

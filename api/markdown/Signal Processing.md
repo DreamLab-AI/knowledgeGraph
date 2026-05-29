@@ -42,15 +42,26 @@ public:: true
   "@id": "urn:ngm:class:signal-processing",
   "@type": "Class",
   "label": "Signal Processing",
-  "definition": "Signal Processing is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Signal Processing is the mathematical discipline concerned with the analysis, synthesis, filtering, transformation, and compression of analogue and digital signals including audio, video, sensor telemetry, and communications data. In spatial computing and immersive systems, signal processing underpins spatial audio rendering, motion capture noise reduction, depth-sensor filtering, and the real-time fusion of multi-modal sensor streams required for robust AR/VR tracking and interaction.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-display-and-rendering",
       "label": "Display and Rendering"
     }
   ],
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:spatial-audio", "label": "Spatial Audio"},
+      {"@id": "urn:ngm:class:speech-recognition", "label": "Speech Recognition"},
+      {"@id": "urn:ngm:class:depth-sensing", "label": "Depth Sensing"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:render-pipeline", "label": "Render Pipeline"},
+      {"@id": "urn:ngm:class:motion-capture", "label": "Motion Capture"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -87,14 +98,18 @@ public:: true
 
 
 - ### Definition
-  - Signal Processing is a concept within the metaverse domain. Further enrichment pending.
+  - Signal Processing is the mathematical discipline concerned with the analysis, synthesis, filtering, transformation, and compression of analogue and digital signals including audio, video, sensor telemetry, and communications data. In spatial computing and immersive systems, signal processing underpins spatial audio rendering, motion capture noise reduction, depth-sensor filtering, and the real-time fusion of multi-modal sensor streams required for robust AR/VR tracking and interaction.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:SignalProcessing
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - enables [[Spatial Audio]]
+  - enables [[Speech Recognition]]
+  - enables [[Depth Sensing]]
+  - relatedTo [[Render Pipeline]]
+  - relatedTo [[Motion Capture]]
 
 - ### Content
 

@@ -150,15 +150,33 @@ public:: true
   "@id": "urn:ngm:class:3-d-and-4-d",
   "@type": "Class",
   "label": "3D and 4D",
-  "definition": "3D and 4D is a spatial computing concept and a type of spatial-computing.",
+  "definition": "The domain of three-dimensional and four-dimensional content creation, covering tools, techniques, and AI-powered pipelines for generating, editing, and rendering 3D assets and temporally dynamic (4D) representations. Encompasses text-to-3D systems (NVIDIA Edify, Luma Genie, Point-E), neural radiance fields, Gaussian splatting, and diffusion-based mesh generation, as well as 6D pose estimation, scene-scale generation, and integration with AR/VR workflows.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
+      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
+      {"@id": "urn:ngm:class:neural-radiance-field", "label": "Neural Radiance Field"},
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
+      {"@id": "urn:ngm:class:3-d-asset", "label": "3D Asset"},
+      {"@id": "urn:ngm:class:pose-estimation", "label": "Pose Estimation"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -330,14 +348,16 @@ public:: true
 
 
 - ### Definition
-  - 3D and 4D is a concept within the ngm domain.
+  - The domain of three-dimensional and four-dimensional content creation, covering AI-powered pipelines for generating, editing, and rendering 3D assets and temporally dynamic (4D) representations. Encompasses text-to-3D systems, neural radiance fields, Gaussian splatting, diffusion-based mesh generation, 6D pose estimation, and scene-scale generation integrated with AR/VR workflows.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:3DAnd4D
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses:: [[Generative AI]], [[Diffusion Model]], [[Neural Radiance Field]], [[Deep Learning]]
+  - enables:: [[Augmented Reality]], [[3D Asset]], [[Pose Estimation]]
+  - relatedTo:: [[Computer Vision]], [[Machine Learning]]
 
 - ### Content
   - # 3D and 4D Content Creation

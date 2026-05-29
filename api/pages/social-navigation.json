@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:social-navigation",
   "domain": "robotics",
-  "definition": "Robot navigation strategies that account for social norms, human comfort, and contextual appropriateness when moving through human-populated environments.",
+  "definition": "Social Navigation is the discipline within robotics concerned with planning and executing robot motion through human-occupied spaces while respecting social norms, personal space conventions (proxemics), cultural context, and human comfort. It extends classical motion planning by incorporating models of human behaviour, pedestrian flow prediction, and non-verbal communication cues such as gaze and gesture, with the goal of producing movement that is perceived as natural and non-threatening.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-human-robot-interaction",
@@ -13,21 +13,73 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.75,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:proxemics",
+        "label": "Proxemics"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:obstacle-avoidance",
+        "label": "Obstacle Avoidance"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:ngm:class:social-robotics",
+        "label": "Social Robotics"
+      },
+      {
+        "id": "urn:ngm:class:collision-avoidance",
+        "label": "Collision Avoidance"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -46,16 +46,33 @@ public:: true
   "@id": "urn:ngm:class:digital-gaming",
   "@type": "Class",
   "label": "Digital Gaming",
-  "definition": "Digital Gaming is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Digital Gaming encompasses interactive software experiences delivered across platforms including PCs, consoles, and mobile devices, encompassing game design, virtual economies, player interaction systems, and increasingly blockchain-based asset ownership. It represents a convergence of entertainment, spatial computing, and digital economy mechanisms within persistent or session-based virtual environments.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:blockchain-gaming", "label": "Blockchain Gaming"},
+      {"@id": "urn:ngm:class:immersive-gaming", "label": "Immersive Gaming"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"},
+      {"@id": "urn:ngm:class:nft", "label": "NFT"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:digital-ownership", "label": "Digital Ownership"},
+      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -96,7 +113,7 @@ public:: true
 
 
 - ### Definition
-  - Digital Gaming is a concept within the metaverse domain. Further enrichment pending.
+  - Digital Gaming encompasses interactive software experiences delivered across platforms including PCs, consoles, and mobile devices, encompassing game design, virtual economies, player interaction systems, and increasingly blockchain-based asset ownership. It represents a convergence of entertainment, spatial computing, and digital economy mechanisms within persistent or session-based virtual environments.
 
 bridges-to:: [[Blockchain]]
 
@@ -105,7 +122,10 @@ bridges-to:: [[Blockchain]]
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **relatedTo**: [[Blockchain Gaming]], [[Immersive Gaming]]
+  - **uses**: [[Game Engine]], [[NFT]]
+  - **enables**: [[Digital Ownership]], [[Immersive Experience]]
+  - **bridgesTo**: [[Blockchain]]
 
 - ### Content
 

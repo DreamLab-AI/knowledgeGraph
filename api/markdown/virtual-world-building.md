@@ -8,6 +8,10 @@
 
 - ### Relationships
   - is-subclass-of:: [[3D Design]]
+  - requires:: [[Game Engine]], [[Real-Time Rendering]]
+  - enables:: [[Virtual World Platform]], [[Virtual Environment Creation]], [[Virtual Destination]]
+  - uses:: [[3D Modeling]], [[Immersive Experience]]
+  - relatedTo:: [[Virtual World Creation]]
 
 - ### Content
 

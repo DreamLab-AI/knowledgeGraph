@@ -37,9 +37,10 @@ public:: true
   "@id": "urn:ngm:class:transaction-processing",
   "@type": "Class",
   "label": "Transaction Processing",
-  "definition": "Transaction Processing is a technology infrastructure concept and a type of Blockchain Transaction.",
+  "definition": "Transaction Processing encompasses the end-to-end lifecycle of blockchain transactions — from cryptographic signing and mempool propagation through validation, deterministic state execution, and finality confirmation. It includes parallelisation strategies, layer-2 scaling (state channels, rollups), and cross-chain atomic operations, with MEV mitigation and encrypted mempools addressing ordering fairness.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
@@ -50,7 +51,22 @@ public:: true
       "label": "Blockchain Transaction"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:transaction-finality", "label": "Transaction Finality"},
+      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
+      {"@id": "urn:ngm:class:payment-system", "label": "Payment System"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:stablecoin", "label": "Stablecoin"},
+      {"@id": "urn:ngm:class:transaction-fee", "label": "Transaction Fee"},
+      {"@id": "urn:ngm:class:transaction-pool", "label": "Transaction Pool"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -80,14 +96,16 @@ public:: true
 
 
 - ### Definition
-  - TransactionProcessing is a concept within the ngm domain.
+  - Transaction Processing encompasses the end-to-end lifecycle of blockchain transactions — from cryptographic signing and mempool propagation through validation, deterministic state execution, and finality confirmation. It includes parallelisation strategies, layer-2 scaling (state channels, rollups), and cross-chain atomic operations, with MEV mitigation and encrypted mempools addressing ordering fairness.
 
 - ### Semantic Classification
   - owl-class:: blockchain:TransactionProcessing
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires** → [[Consensus Mechanism]], [[Smart Contract]]
+  - **enables** → [[Transaction Finality]], [[Decentralised Finance]], [[Payment System]]
+  - **uses** → [[Stablecoin]], [[Transaction Fee]], [[Transaction Pool]]
 
 - ### Content
 

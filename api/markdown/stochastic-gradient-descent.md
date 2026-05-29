@@ -7,7 +7,11 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - enables [[Deep Learning]]
+  - enables [[Neural Network]]
+  - uses [[Machine Learning]]
+  - relatedTo [[Reinforcement Learning]]
+  - relatedTo [[Transfer Learning]]
 
 - ### Content
   - ### Primary Definition

@@ -1,12 +1,13 @@
 - ### Definition
-  - Link Preview is a concept within the ngm domain.
+  - Link Preview is a web infrastructure technique that fetches and parses Open Graph metadata, title, description, and thumbnail from a target URL to generate a rich card preview for display in social feeds, chat applications, or note-taking tools. APIs and Python libraries such as linkpreview and URLMeta automate this extraction, enabling knowledge graphs and collaborative platforms to surface contextual summaries alongside raw hyperlinks.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:LinkPreview
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - relatedTo:: [[Knowledge Graph]], [[User Interface]], [[social media]]
+  - uses:: [[Semantic Web]]
 
 - ### Content
   - [LinkPreview API

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:structure-from-motion",
   "domain": "artificial-intelligence",
-  "definition": "Structure-from-Motion (SfM) is a photogrammetric technique that reconstructs three-dimensional scene geometry and camera poses from a set of overlapping two-dimensional images.",
+  "definition": "Structure-from-Motion (SfM) is a photogrammetric pipeline that simultaneously estimates three-dimensional scene structure and camera motion parameters from an unordered set of overlapping two-dimensional images. Feature detection and matching across images (typically using descriptors such as SIFT or ORB) establishes correspondences, which are fed into bundle adjustment to jointly optimise point-cloud coordinates and camera extrinsics and intrinsics. SfM is foundational in photogrammetry, autonomous navigation, and AR/VR asset creation, producing dense or sparse 3D reconstructions from passive imagery alone.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "id": "urn:ngm:class:depth-estimation",
+        "label": "Depth Estimation"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      },
+      {
+        "id": "urn:ngm:class:visual-odometry",
+        "label": "Visual Odometry"
+      },
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

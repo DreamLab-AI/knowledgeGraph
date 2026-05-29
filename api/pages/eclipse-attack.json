@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:eclipse-attack",
   "domain": "blockchain",
-  "definition": "Node isolation attack within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "An Eclipse Attack is a peer-to-peer network attack in which an adversary monopolises all of a target node's inbound and outbound connections, isolating it from the honest network. The eclipsed node is fed a fabricated view of the blockchain, enabling the attacker to double-spend against that node, delay its transaction confirmations, or waste its mining resources on a private fork. Countermeasures include connection diversity, random peer selection, and detecting network-level routing anomalies.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-protocol-and-consensus",
@@ -21,21 +21,61 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:sybil-attack",
+        "label": "Sybil Attack"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:double-spending",
+        "label": "Double Spending"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:network-synchronization",
+        "label": "Network Synchronization"
+      },
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:network-topology",
+        "label": "Network Topology"
+      },
+      {
+        "id": "urn:ngm:class:selfish-mining",
+        "label": "Selfish Mining"
+      },
+      {
+        "id": "urn:ngm:class:51-attack",
+        "label": "51% Attack"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
+      }
+    ]
   },
   "wikilinks": [
     {

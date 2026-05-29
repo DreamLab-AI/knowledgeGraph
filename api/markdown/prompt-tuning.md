@@ -7,7 +7,12 @@
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Part Of [[Parameter-Efficient Fine-Tuning]]
+  - Uses [[Language Modeling]]
+  - Contrasts With [[Prefix Tuning]]
+  - Contrasts With [[Adapter Modules]]
+  - Related To [[Prompt Engineering]]
+  - Related To [[Fine Tuning]]
 
 - ### Content
   - A parameter-efficient fine-tuning method that learns continuous prompt embeddings prepended to the input whilst keeping the pre-trained model frozen. Prompt tuning optimises task-specific soft prompts in the embedding space rather than modifying model weights.

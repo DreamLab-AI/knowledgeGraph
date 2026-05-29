@@ -156,7 +156,7 @@ public:: true
   "label": "SLAM",
   "definition": "Simultaneous Localization and Mapping (SLAM) is a robotics and computer vision technique enabling devices to build maps of unknown environments whilst simultaneously tracking their own position within those environments, combining LocalizationTechnique|localisation and",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-interaction",
@@ -167,6 +167,22 @@ public:: true
       "label": "Spatial Mapping"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
+      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
+      {"@id": "urn:ngm:class:pose-estimation", "label": "Pose Estimation"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+    ]
+  },
   "quality": 0.4,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -349,7 +365,12 @@ public:: true
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires:: [[Sensor Fusion]]
+  - enables:: [[Autonomous Navigation]]
+  - enables:: [[Augmented Reality]]
+  - uses:: [[Deep Learning]]
+  - uses:: [[Pose Estimation]]
+  - partOf:: [[Spatial Computing]]
 - ### Content
   - SLAM technology enables autonomous systems to simultaneously build spatial maps and determine their position within unknown environments, processing sensor data to estimate pose and construct real-time representations essential for navigation and AR/VR applications.
   - ### Original Content

@@ -58,7 +58,7 @@ public:: true
   "@id": "urn:ngm:class:bias-detection-methods",
   "@type": "Class",
   "label": "Bias Detection Methods",
-  "definition": "Bias Detection Mods are systematic approaches and analytical techniques for identifying algorithmic bias in AI systems through statistical testing, fairness audits, counterfactual analysis, and causal inference.",
+  "definition": "Bias Detection Methods are systematic analytical techniques for identifying algorithmic bias in AI systems through statistical hypothesis testing, fairness audits, counterfactual analysis, intersectional evaluation, and causal inference. These methods examine model predictions across protected demographic groups to detect disparate impacts, unequal error rates, and discriminatory patterns, producing bias audit reports that document severity, affected populations, and regulatory compliance status.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -67,7 +67,26 @@ public:: true
       "label": "AI Governance and Ethics"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:fairness-metrics", "label": "Fairness Metrics"},
+      {"@id": "urn:ngm:class:disparate-impact", "label": "Disparate Impact"},
+      {"@id": "urn:ngm:class:fairness-auditing-tools", "label": "Fairness Auditing Tools"},
+      {"@id": "urn:ngm:class:algorithmic-bias", "label": "Algorithmic Bias"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:ai-fairness", "label": "AI Fairness"},
+      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
+      {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"},
+      {"@id": "urn:ngm:class:ai-audit", "label": "AI Audit"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:algorithmic-accountability", "label": "Algorithmic Accountability"},
+      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"},
+      {"@id": "urn:ngm:class:bias-in-large-language-models", "label": "Bias in Large Language Models"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

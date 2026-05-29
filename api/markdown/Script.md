@@ -66,7 +66,7 @@ public:: true
   "@id": "urn:ngm:class:script",
   "@type": "Class",
   "label": "Script",
-  "definition": "Transaction validation programming within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "Bitcoin's stack-based, non-Turing-complete scripting language used to encode spending conditions on transaction outputs and to provide the corresponding unlocking data in transaction inputs. Script programs define locking and unlocking conditions—such as pay-to-public-key-hash—that a validator executes to authorise fund transfer, making transaction validation a programmable process without full smart-contract complexity.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -77,13 +77,26 @@ public:: true
     {
       "@id": "urn:ngm:class:blockchain-entity",
       "label": "Blockchain Entity"
-    },
-    {
-      "@id": "urn:ngm:class:distributed-data-structure",
-      "label": "DistributedDataStructure"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:opcodes", "label": "Opcodes"},
+      {"@id": "urn:ngm:class:transaction", "label": "Transaction"},
+      {"@id": "urn:ngm:class:utxo-model", "label": "UTXO Model"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:transaction-processing", "label": "Transaction Processing"},
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"},
+      {"@id": "urn:ngm:class:transaction-fee", "label": "Transaction Fee"},
+      {"@id": "urn:ngm:class:transaction-pool", "label": "Transaction Pool"},
+      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

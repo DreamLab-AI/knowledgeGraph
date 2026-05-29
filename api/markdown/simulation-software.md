@@ -1,12 +1,16 @@
 - ### Definition
-  - Simulation Software is a concept within the metaverse domain. Further enrichment pending.
+  - Application software that constructs and executes computational models of physical, biological, or social systems, allowing experimental manipulation of parameters to study behaviour over time. Simulation software spans physics engines, agent-based frameworks, and digital twin environments, and is used across engineering, scientific research, training, and metaverse development.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:SimulationSoftware
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Has Part [[Simulation Engine]]
+  - Uses [[GPU Compute]]
+  - Uses [[Rendering Engine]]
+  - Enables [[Digital Twin]]
+  - Related To [[Spatial Computing]]
 
 - ### Content
 

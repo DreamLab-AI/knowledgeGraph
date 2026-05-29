@@ -33,9 +33,10 @@ public:: true
   "@id": "urn:ngm:class:node-based-visual-interfaces",
   "@type": "Class",
   "label": "Node based visual interfaces",
-  "definition": "Node based visual interfaces is a technology infrastructure concept and a type of User Interface.",
+  "definition": "A paradigm of graphical programming in which computational logic is authored by connecting discrete functional nodes via edges rather than writing textual code. Node-based interfaces lower the barrier to complex workflow construction, making them prevalent in AI pipeline tools (e.g., ComfyUI, Flowise), creative software (shader editors, compositing), and knowledge-graph visualisation environments.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
@@ -46,7 +47,21 @@ public:: true
       "label": "User Interface"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:workflow-automation", "label": "Workflow Automation"},
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:data-visualisation", "label": "Data Visualisation"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:user-interface-architecture", "label": "User Interface Architecture"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:knowledge-graph-construction", "label": "Knowledge Graph Construction"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -76,14 +91,17 @@ public:: true
 
 
 - ### Definition
-  - Node based visual interfaces is a concept within the ngm domain.
+  - A paradigm of graphical programming in which computational logic is authored by connecting discrete functional nodes via edges rather than writing textual code. Node-based interfaces lower the barrier to complex workflow construction, making them prevalent in AI pipeline tools (e.g., ComfyUI, Flowise), creative software (shader editors, compositing), and knowledge-graph visualisation environments.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:NodeBasedVisualInterfaces
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **enables**: Workflow Automation, Knowledge Graph — node graphs are the primary authoring environment for automated pipelines and for building connected knowledge structures visually.
+  - **uses**: Data Visualisation — node canvases render data relationships as visual graph structures.
+  - **supports**: User Interface Architecture — node-based interfaces constitute a distinct UI architecture pattern.
+  - **relatedTo**: Knowledge Graph Construction — node editors are frequently used to author and inspect knowledge graph schemas.
 
 - ### Content
   - [Building Smarter Bots: An Expert Guide to Flowise AI

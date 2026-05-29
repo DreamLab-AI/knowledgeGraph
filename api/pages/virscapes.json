@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:virscapes",
   "domain": "infrastructure",
-  "definition": "Virscapes is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Virscapes are AI-generated virtual landscape images produced by training generative adversarial networks (StyleGAN) on a curated dataset of digital game landscapes collected over seven years, exploring latent space to create emotionally resonant synthetic environments. The practice investigates questions of landscape identity, simulacra, and the distinction between human aesthetic curation and algorithmic generation in digital art.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
@@ -13,21 +13,44 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:nft-marketplace",
+        "label": "NFT Marketplace"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:procedural-generation",
+        "label": "Procedural Generation"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": []

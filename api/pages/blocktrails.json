@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:blocktrails",
   "domain": "infrastructure",
-  "definition": "blocktrails is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A concept node representing resource trails related to blockchain exploration tools and Nostr-based document sharing infrastructure. In the NarrativeGoldmine context, blocktrails links to split-screen markdown editing and decentralised document storage via NosDAV and the Nostr protocol.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
@@ -14,7 +14,7 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,11 +23,29 @@
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:knowledge-base",
+        "label": "Knowledge Base"
+      },
+      {
+        "id": "urn:ngm:class:web-technology",
+        "label": "Web Technology"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockchain-core-concepts",
+        "label": "blockchain core concepts"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": []

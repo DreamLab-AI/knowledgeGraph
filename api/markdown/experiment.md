@@ -38,16 +38,31 @@ public:: true
   "@id": "urn:ngm:class:experiment",
   "@type": "Class",
   "label": "experiment",
-  "definition": "experiment is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "An experiment is a structured empirical procedure designed to test a hypothesis or evaluate a system under controlled conditions, producing observable and repeatable results. In the context of AI and software engineering it encompasses both scientific investigations (measuring model behaviour, benchmarking performance) and engineering trials (A/B tests, canary deployments, feature flags) aimed at generating evidence to guide design decisions.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
-  "quality": 0.35,
+  "quality": 0.7,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:research-methods", "label": "Research Methods"},
+      {"@id": "urn:ngm:class:scientific-discovery", "label": "Scientific Discovery"},
+      {"@id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards", "label": "Evaluation benchmarks and leaderboards"},
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:software-testing", "label": "Software Testing"},
+      {"@id": "urn:ngm:class:validation-process", "label": "Validation Process"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:benchmark-standard", "label": "Benchmark Standard"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -83,14 +98,16 @@ public:: true
 
 
 - ### Definition
-  - experiment is a concept within the ngm domain.
+  - An experiment is a structured empirical procedure for testing hypotheses or evaluating systems under controlled conditions. In AI and software contexts this spans both scientific investigations (model evaluations, ablation studies, benchmark comparisons) and engineering trials (A/B tests, canary releases, feature-flag rollouts) that generate evidence to guide design decisions.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:Experiment
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Related to: Research Methods, Scientific Discovery, Evaluation benchmarks and leaderboards, Machine Learning
+  - Uses: Software Testing, Validation Process
+  - Supports: Benchmark Standard
 
 - ### Content
   - [[back_hashcash-denial_2002]]

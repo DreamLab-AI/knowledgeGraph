@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:transparent-data-processing",
   "domain": "infrastructure",
-  "definition": "Data handling practices that are openly disclosed to users, providing clear information about what data is collected, how it is processed, who has access, and for what purposes, enabling informed consent and accountability.",
+  "definition": "Data handling practices that are openly disclosed to users, specifying what data is collected, how it is processed, who has access, and for what purposes, so as to enable informed consent and meaningful accountability. GDPR codifies this as the principle of lawfulness, fairness, and transparency; in metaverse and XR contexts it extends to immersive data streams including gaze tracking, movement patterns, and biometric signals. Implementation relies on audit trails, data flow mapping, privacy notices, and increasingly on zero-knowledge proofs for privacy-preserving verification.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-data-management",
@@ -17,21 +17,53 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:consent-management",
+        "label": "Consent Management"
+      },
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      },
+      {
+        "id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy By Design"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:privacy-framework",
+        "label": "Privacy Framework"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ]
   },
   "wikilinks": [
     {

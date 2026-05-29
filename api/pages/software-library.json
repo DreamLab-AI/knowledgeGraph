@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:software-library",
   "domain": "infrastructure",
-  "definition": "Software Library is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A Software Library is a collection of pre-compiled, reusable code modules that expose stable APIs, encapsulating common functionality such as rendering, physics simulation, networking, or cryptography. Libraries accelerate development by abstracting complexity, reducing defect rates, and enabling interoperability between components within a software stack.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-software-engineering",
@@ -14,20 +14,48 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:software-development-process",
+        "label": "Software Development Process"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:api-standard",
+        "label": "API Standard"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:machine-learning-framework",
+        "label": "Machine Learning Framework"
+      },
+      {
+        "id": "urn:ngm:class:rendering-engine",
+        "label": "Rendering Engine"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:software-architecture",
+        "label": "Software Architecture"
+      },
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

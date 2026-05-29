@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:bitcoin-related-links",
   "domain": "blockchain",
-  "definition": "Bitcoin related links is a blockchain and distributed systems concept and a type of blockchain.",
+  "definition": "Bitcoin Related Links is a curated reference collection aggregating news, technical resources, regulatory developments, and community analysis pertaining to the Bitcoin blockchain ecosystem. It encompasses coverage of Bitcoin as money, mining economics, environmental debates, ETF instruments, and the broader cryptocurrency landscape.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-token-and-asset",
@@ -14,20 +14,51 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:bitcoin-mining",
+        "label": "Bitcoin Mining"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-as-money",
+        "label": "Bitcoin As Money"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-etf",
+        "label": "Bitcoin ETF"
+      }
+    ],
     "requires": [],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-environmental-issues",
+        "label": "Bitcoin Environmental Issues"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      }
+    ]
   },
   "wikilinks": [
     {

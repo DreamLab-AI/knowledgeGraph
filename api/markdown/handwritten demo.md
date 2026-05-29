@@ -33,16 +33,35 @@ public:: true
   "@id": "urn:ngm:class:handwritten-demo",
   "@type": "Class",
   "label": "handwritten demo",
-  "definition": "handwritten demo is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A handwritten demo is an informal, analogue artefact—such as a hand-annotated sketch, cost sheet, or prototype diagram—used to communicate design intent, feasibility, or scope before digital tooling is applied. In the context of knowledge graph construction and AI-assisted workflows, handwritten demos often serve as raw input for multimodal AI systems capable of recognising, digitising, and annotating unstructured human-authored content.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
-  "quality": 0.35,
+  "quality": 0.7,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:user-research", "label": "User Research"},
+      {"@id": "urn:ngm:class:user-experience", "label": "User Experience"},
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:multimodal-ai", "label": "Multimodal AI"},
+      {"@id": "urn:ngm:class:data-annotation", "label": "Data Annotation"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:knowledge-graph-construction", "label": "Knowledge Graph Construction"},
+      {"@id": "urn:ngm:class:domain-ontology", "label": "Domain Ontology"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
+      {"@id": "urn:ngm:class:multimodal-understanding", "label": "Multimodal Understanding"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

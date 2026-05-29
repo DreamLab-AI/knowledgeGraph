@@ -1,12 +1,14 @@
 - ### Definition
-  - Templates is a concept within the ngm domain.
+  Templates are reusable structural scaffolds in software engineering and knowledge management that define a fixed format or pattern into which variable content is inserted. They reduce repetition, enforce consistency, and accelerate authoring across code generation, documentation, and prompt engineering workflows.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:Templates
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **enables**: Code Generation, Documentation Generation
+  - **uses**: Prompt Engineering
+  - **relatedTo**: Knowledge Management, Knowledge Management System
 
 - ### Content
   ```

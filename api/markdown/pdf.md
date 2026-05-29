@@ -1,12 +1,14 @@
 - ### Definition
-  - PDF is a concept within the ngm domain.
+  - Portable Document Format: an ISO-standardised file format (ISO 32000) that encodes documents with fixed layout, fonts, graphics, and metadata in a device-independent, platform-agnostic representation. In AI and knowledge-graph contexts, PDFs serve as primary carriers of academic papers, technical specifications, and legal documents that are ingested via extraction pipelines for training, retrieval-augmented generation, and knowledge-base construction.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:PDF
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses: [[Knowledge Management]], [[Documentation Standards]]
+  - enables: [[Knowledge Base]], [[Large Language Models]]
+  - relatedTo: [[Natural Language Processing]], [[Knowledge Graph]]
 
 - ### Content
   - [ChatDOC

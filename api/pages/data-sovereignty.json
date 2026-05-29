@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:data-sovereignty",
   "domain": "infrastructure",
-  "definition": "Data sovereignty is the principle that digital data is subject to the laws and governance of the nation or jurisdiction in which it is collected or processed.",
+  "definition": "Data sovereignty is the legal and political principle that digital data is subject to the laws, governance structures, and enforcement jurisdiction of the nation or region in which it originates or is processed. It encompasses requirements such as data localisation (mandating that data remain physically within specified borders), restrictions on cross-border data flows, and the right of governments to compel access for regulatory or security purposes. Data sovereignty directly shapes cloud architecture decisions, AI training dataset curation, and multinational data-sharing agreements.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-legal-and-regulatory",
@@ -14,20 +14,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:localisation",
+        "label": "Localisation"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

@@ -42,9 +42,10 @@ public:: true
   "@id": "urn:ngm:class:narrative-structure",
   "@type": "Class",
   "label": "Narrative Structure",
-  "definition": "Narrative Structure is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "The organisational framework governing how a story's events, character arcs, and thematic elements are arranged across time to produce meaning and audience engagement. In spatial and interactive contexts, narrative structure governs branching paths, player agency, and the sequencing of immersive experiences within virtual worlds and game environments.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
@@ -56,6 +57,40 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:game-narratives",
+        "label": "Game Narratives"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:immersive-entertainment",
+        "label": "Immersive Entertainment"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-world",
+        "label": "Virtual World"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:character-model",
+        "label": "Character Model"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:interactive-storytelling",
+        "label": "Interactive Storytelling"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      }
+    ]
   }
 }
 ```
@@ -87,14 +122,19 @@ public:: true
 
 
 - ### Definition
-  - Narrative Structure is a concept within the metaverse domain. Further enrichment pending.
+  - The organisational framework governing how a story's events, character arcs, and thematic elements are arranged across time to produce meaning and audience engagement. In spatial and interactive contexts, narrative structure governs branching paths, player agency, and the sequencing of immersive experiences within virtual worlds and game environments.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:NarrativeStructure
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Has Part: [[Game Narratives]]
+  - Related To: [[Interactive Storytelling]]
+  - Related To: [[Immersive Experience]]
+  - Uses: [[Character Model]]
+  - Enables: [[Immersive Entertainment]]
+  - Enables: [[Virtual World]]
 
 - ### Content
 

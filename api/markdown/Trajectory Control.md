@@ -46,7 +46,7 @@ public:: true
   "@id": "urn:ngm:class:trajectory-control",
   "@type": "Class",
   "label": "Trajectory Control",
-  "definition": "Trajectory control tracks desired time-varying position, velocity, and acceleration profiles.",
+  "definition": "Trajectory Control is a robotics control methodology that tracks desired time-varying position, velocity, and acceleration profiles along planned paths. It coordinates joint-space and task-space motion to ensure smooth, precise end-effector movement while respecting dynamic and kinematic constraints.",
   "domain": "robotics",
   "maturity": "established",
   "subClassOf": [
@@ -59,7 +59,26 @@ public:: true
       "label": "Motion Control"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:kinematics", "label": "Kinematics"},
+      {"@id": "urn:ngm:class:inverse-kinematics", "label": "Inverse Kinematics"},
+      {"@id": "urn:ngm:class:feedback-control", "label": "Feedback Control"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:trajectory-generation", "label": "Trajectory Generation"},
+      {"@id": "urn:ngm:class:trajectory-planning", "label": "Trajectory Planning"},
+      {"@id": "urn:ngm:class:velocity-control", "label": "VelocityControl"},
+      {"@id": "urn:ngm:class:position-control", "label": "PositionControl"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:path-planning", "label": "Path Planning"},
+      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
+      {"@id": "urn:ngm:class:robot-control", "label": "Robot Control"},
+      {"@id": "urn:ngm:class:collision-avoidance", "label": "Collision Avoidance"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

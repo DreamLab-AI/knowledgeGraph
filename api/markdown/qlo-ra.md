@@ -5,7 +5,13 @@
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Requires [[Quantisation]]
+  - Requires [[Neural Network Quantisation]]
+  - Uses [[Fine Tuning]]
+  - Uses [[Large Language Models]]
+  - Enables [[Federated Learning]]
+  - Enables [[Domain Adaptation]]
+  - Related To [[Knowledge Distillation]]
 - ### Content
   - An extension of LoRA that combines 4-bit quantisation with low-rank adaptation, enabling fine-tuning of very large models (65B+ parameters) on consumer-grade GPUs. QLoRA uses NormalFloat4 quantisation, double quantisation, and paged optimisers to achieve extreme memory efficiency whilst maintaining performance.
   #### Key Characteristics

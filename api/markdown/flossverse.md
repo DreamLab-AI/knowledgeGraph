@@ -38,16 +38,33 @@ public:: true
   "@id": "urn:ngm:class:flossverse",
   "@type": "Class",
   "label": "flossverse",
-  "definition": "flossverse is a blockchain and distributed systems concept and a type of blockchain.",
+  "definition": "The Flossverse is a conceptual and practical framework for building an open-source, trust-minimised social immersive space that combines free/libre open-source software (FLOSS), decentralised value transfer (Bitcoin/Lightning), generative AI tooling, and open XR standards to enable inclusive economic participation in virtual and mixed-reality environments. The project targets B2B, B2C, and creator-to-consumer workflows with a minimum viable product centred on trustless value exchange within a social VR context, with particular emphasis on expanding access for emerging markets and creators currently excluded from media production pipelines.",
   "domain": "blockchain",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-network-component",
       "label": "Network Component"
     }
   ],
-  "quality": 0.35,
+  "quality": 0.7,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:open-source-software", "label": "Open Source Software"},
+      {"@id": "urn:ngm:class:open-source-ai", "label": "Open-Source AI"},
+      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:virtual-economy", "label": "Virtual Economy"},
+      {"@id": "urn:ngm:class:social-vr", "label": "Social VR"},
+      {"@id": "urn:ngm:class:creator-economy", "label": "Creator Economy"},
+      {"@id": "urn:ngm:class:extended-reality-xr", "label": "Extended Reality (XR)"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:agentic-metaverse-for-global-creatives", "label": "Agentic Metaverse for Global Creatives"},
+      {"@id": "urn:ngm:class:open-standard", "label": "Open Standard"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -83,14 +100,15 @@ public:: true
 
 
 - ### Definition
-  - flossverse is a concept within the ngm domain.
+  - The Flossverse is a research and product framework for an open-source social immersive space that combines free/libre open-source software (FLOSS), trust-minimised value transfer via Bitcoin and the Lightning Network, generative AI, and open XR standards to enable economic participation in virtual and mixed-reality environments. The project was developed to explore how the convergence of decentralised identity, programmable money, AI-driven content creation, and collaborative mixed reality could create inclusive platforms accessible to creators in emerging markets who are currently excluded by proprietary gatekeepers.
+  - The framework targets B2B, B2C, and creator-to-consumer (C2C/social commerce) models, aiming for a minimum viable product capable of trustless value exchange within a social VR context. It draws on the observation that traditional village-scale trust relationships cannot scale to a global internet and that decentralised cryptographic primitives, combined with AI actors that seem subjectively real, require new governance and economic models.
 
 - ### Semantic Classification
   - owl-class:: blockchain:Flossverse
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses open-source software and generative AI tooling; bridges to virtual economy and social VR platforms; supports the creator economy through open standards and decentralised identity.
 
 - ### Content
   - #Public page

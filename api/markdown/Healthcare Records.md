@@ -70,16 +70,34 @@ public:: true
   "@id": "urn:ngm:class:healthcare-records",
   "@type": "Class",
   "label": "Healthcare Records",
-  "definition": "Blockchain-based electronic health record systems employing immutable distributed ledgers, smart contracts for consent management, and cryptographic security measures to enable secure patient data sharing, interoperability across healthcare providers, and patient-controlled access whilst maintain...",
+  "definition": "Blockchain-based electronic health record systems that employ immutable distributed ledgers, smart contracts for consent management, and cryptographic security to enable secure patient data sharing across healthcare providers. These systems give patients controlled access to their own records whilst maintaining HIPAA and GDPR compliance through hybrid on-chain/off-chain architectures integrating HL7 FHIR standards.",
   "domain": "blockchain",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-network-component",
       "label": "Network Component"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
+      {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"},
+      {"@id": "urn:ngm:class:access-control", "label": "Access Control"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"},
+      {"@id": "urn:ngm:class:encryption", "label": "Encryption"},
+      {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy By Design"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -158,7 +176,10 @@ public:: true
   - belongs-to-domain:: [[BlockchainDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires**: Smart Contract (consent automation), Distributed Ledger (immutable audit trail), Access Control (patient-controlled permissions)
+  - **uses**: Verifiable Credentials (identity attestation), Encryption (data protection), Privacy By Design (GDPR/HIPAA compliance architecture)
+  - **enables**: Interoperability (cross-provider data exchange)
+  - **relatedTo**: Self Sovereign Identity (patient-owned identity)
 
 - ### Content
   - Blockchain-based electronic health record (EHR) systems address critical healthcare data fragmentation challenges where nearly **20% of organisational patient records are duplicates** and provider directory inaccuracies affect **52.2% of locations**, creating inefficiencies costing the U.S. healthcare system **over £30 billion annually**. By employing distributed ledger technology with patient-controlled consent management through smart contracts, blockchain implementations enable secure data sharing across healthcare providers whilst maintaining regulatory compliance and reducing the staggering costs of data breaches that reached **275-277 million records** compromised in 2024 alone.

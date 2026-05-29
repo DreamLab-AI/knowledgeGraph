@@ -46,15 +46,29 @@ public:: true
   "@id": "urn:ngm:class:digital-regulation",
   "@type": "Class",
   "label": "Digital Regulation",
-  "definition": "Digital Regulation is a type of Artificial Intelligence in the artificial intelligence domain.",
+  "definition": "Digital Regulation encompasses the legal frameworks, policy instruments, and enforcement mechanisms that govern the development, deployment, and use of digital technologies, including AI systems, digital platforms, and data-driven services. It addresses algorithmic accountability, platform liability, data sovereignty, content moderation obligations, and cross-border regulatory harmonisation to balance innovation incentives with public interest protections.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:regulatory-framework", "label": "Regulatory Framework"},
+      {"@id": "urn:ngm:class:governance", "label": "Governance"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
+      {"@id": "urn:ngm:class:algorithmic-accountability", "label": "Algorithmic Accountability"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"},
+      {"@id": "urn:ngm:class:content-moderation", "label": "Content Moderation"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -96,7 +110,7 @@ public:: true
 
 
 - ### Definition
-  - Digital Regulation is a concept within the metaverse domain. Further enrichment pending.
+  - Digital Regulation encompasses the legal frameworks, policy instruments, and enforcement mechanisms that govern the development, deployment, and use of digital technologies, including AI systems, digital platforms, and data-driven services. It addresses algorithmic accountability, platform liability, data sovereignty, content moderation obligations, and cross-border regulatory harmonisation to balance innovation incentives with public interest protections.
 
 bridges-to:: [[Blockchain]]
 
@@ -105,7 +119,12 @@ bridges-to:: [[Blockchain]]
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Regulatory Framework]]
+  - requires [[Governance]]
+  - enables [[AI Safety]]
+  - enables [[Algorithmic Accountability]]
+  - relatedTo [[AI Ethics]]
+  - relatedTo [[Content Moderation]]
 
 - ### Content
 

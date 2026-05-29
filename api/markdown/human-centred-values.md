@@ -7,7 +7,10 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires**: [[Human Oversight]], [[Accountability]]
+  - **supports**: [[Trustworthy AI]], [[AI Governance]]
+  - **relatedTo**: [[Fairness]], [[Value Alignment]]
+  - **contrastsWith**: [[AI Risk]]
 
 - ### Content
   - AI systems should be designed and operated in ways that respect the rule of law, human rights, democratic values and diversity, with appropriate safeguards to ensure human determination and control over consequential decisions (human agency), whilst incorporating mechanisms to protect fairness and human dignity.

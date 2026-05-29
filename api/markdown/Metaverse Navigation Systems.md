@@ -46,9 +46,11 @@ public:: true
   "@id": "urn:ngm:class:metaverse-navigation-systems",
   "@type": "Class",
   "label": "Metaverse Navigation Systems",
-  "definition": "Metaverse Navigation Systems is a type of Metaverse and Telecollaboration in the spatial computing domain.",
+  "definition": "Metaverse navigation systems are spatially-embedded interaction mechanisms that enable users to traverse, orient, and coordinate within persistent three-dimensional virtual environments through modalities such as gaze-based controls, hand-tracking, locomotion techniques (joystick, teleportation, redirected walking), and spatial overlays including mini-maps and AR wayfinding cues. These systems integrate environmental awareness, social presence, and user experience design to maintain spatial cognition across interconnected virtual worlds. They form a critical infrastructure layer for usable, inclusive metaverse participation.",
   "domain": "spatial-computing",
   "maturity": "emerging",
+  "qualityScore": 0.75,
+  "quality": 0.75,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -59,7 +61,27 @@ public:: true
       "label": "Metaverse and Telecollaboration"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"},
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
+      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:spatial-audio", "label": "Spatial Audio"},
+      {"@id": "urn:ngm:class:presence", "label": "Presence"},
+      {"@id": "urn:ngm:class:avatar-system", "label": "Avatar System"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:telecollaboration", "label": "Telecollaboration"},
+      {"@id": "urn:ngm:class:social-vr", "label": "Social VR"},
+      {"@id": "urn:ngm:class:virtual-environment", "label": "Virtual Environment"},
+      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

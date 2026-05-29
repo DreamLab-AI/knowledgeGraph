@@ -42,15 +42,29 @@ public:: true
   "@id": "urn:ngm:class:rb-1013-localization",
   "@type": "Class",
   "label": "RB 1013 localization",
-  "definition": "RB 1013 localization is a type of Robotics in the robotics domain.",
+  "definition": "RB 1013 localization is a robotics navigation concept addressing the problem of a mobile robot determining its pose within a known or partially known environment. It encompasses probabilistic state estimation techniques such as particle filters, extended Kalman filters, and scan-matching algorithms applied to sensor data from LiDAR, wheel odometry, and IMUs to produce continuous pose estimates suitable for autonomous navigation.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-navigation-and-planning",
       "label": "Navigation and Planning"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:particle-filter", "label": "Particle Filter"},
+      {"@id": "urn:ngm:class:lidar", "label": "Lidar"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:slam", "label": "SLAM"},
+      {"@id": "urn:ngm:class:localization", "label": "Localization"},
+      {"@id": "urn:ngm:class:visual-odometry", "label": "Visual Odometry"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -87,14 +101,19 @@ public:: true
 
 
 - ### Definition
-  - R B 1013 localization is a concept within the robotics domain. Further enrichment pending.
+  - RB 1013 localization is a robotics navigation concept addressing the problem of a mobile robot determining its pose within a known or partially known environment. It encompasses probabilistic state estimation techniques such as particle filters, extended Kalman filters, and scan-matching algorithms applied to sensor data from LiDAR, wheel odometry, and IMUs to produce continuous pose estimates suitable for autonomous navigation.
 
 - ### Semantic Classification
   - owl-class:: robotics:RB1013localization
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses [[Particle Filter]]
+  - uses [[Lidar]]
+  - relatedTo [[SLAM]]
+  - relatedTo [[Localization]]
+  - relatedTo [[Visual Odometry]]
+  - enables [[Autonomous Navigation]]
 
 - ### Content
 

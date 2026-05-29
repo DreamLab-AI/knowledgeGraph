@@ -670,9 +670,9 @@ public:: true
   "@id": "urn:ngm:class:lightning-and-similar-l2",
   "@type": "Class",
   "label": "Lightning and Similar L2",
-  "definition": "Lightning and Similar L2 is a blockchain and distributed systems concept and a type of Layer2.",
+  "definition": "Off-chain payment channel networks and related Layer-2 scaling protocols built atop base-layer blockchains, enabling high-throughput, low-latency micropayments without recording every transaction on-chain. The Lightning Network, state channels, and analogous protocols (Ark, Liquid) route value through cryptographically secured payment channels, dramatically improving transaction throughput and cost-efficiency for Bitcoin and similar networks.",
   "domain": "blockchain",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-network-component",
@@ -683,7 +683,22 @@ public:: true
       "label": "Layer2"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:blockchain-protocol", "label": "Blockchain Protocol"},
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:micropayments", "label": "Micropayments"},
+      {"@id": "urn:ngm:class:blockchain-scalability", "label": "Blockchain Scalability"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:lightning-network", "label": "Lightning Network"},
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
+      {"@id": "urn:ngm:class:state-channel", "label": "State Channel"}
+    ]
+  },
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -1509,7 +1524,7 @@ public:: true
 
 
 - ### Definition
-  - Lightning and Similar L2 is a concept within the ngm domain.
+  - Off-chain payment channel networks and related Layer-2 scaling protocols built atop base-layer blockchains, enabling high-throughput, low-latency micropayments without recording every transaction on-chain. The Lightning Network, state channels, and analogous protocols route value through cryptographically secured payment channels, dramatically improving transaction throughput and cost-efficiency for Bitcoin and similar networks.
 
 - ### Semantic Classification
   - owl-class:: blockchain:LightningAndSimilarL2
@@ -1517,7 +1532,13 @@ public:: true
   - belongs-to-domain:: [[Bitcoin Domain]], [[Layer 2]], [[Payment Protocols]], [[Scaling Solutions]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Blockchain Protocol]]
+  - requires [[Consensus Mechanism]]
+  - enables [[Micropayments]]
+  - enables [[Blockchain Scalability]]
+  - relatedTo [[Lightning Network]]
+  - relatedTo [[Smart Contract]]
+  - relatedTo [[State Channel]]
 
 - ### Content
   - #Public page automatically published

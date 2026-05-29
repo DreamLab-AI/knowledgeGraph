@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:digital-humans",
   "domain": "spatial-computing",
-  "definition": "Digital Humans is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Digital humans are photorealistic, AI-driven virtual beings that replicate human appearance, movement, voice, and conversational behaviour, rendered in 3D and designed for real-time interaction within immersive and spatial computing environments. They integrate natural language processing, motion capture, generative AI, and real-time rendering to simulate lifelike presence, serving roles in customer service, education, healthcare, and entertainment. As an emerging category they represent the convergence of embodied AI with avatar systems and synthetic media.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -13,21 +13,73 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.75,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:avatar-system",
+        "label": "Avatar System"
+      },
+      {
+        "id": "urn:ngm:class:3-d-animation",
+        "label": "3D Animation"
+      }
+    ],
     "requires": [],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:text-to-speech",
+        "label": "Text-to-Speech"
+      },
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:immersive-technology",
+        "label": "Immersive Technology"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:synthetic-media",
+        "label": "Synthetic Media"
+      },
+      {
+        "id": "urn:ngm:class:embodied-ai",
+        "label": "Embodied AI"
+      },
+      {
+        "id": "urn:ngm:class:digital-avatar",
+        "label": "Digital Avatar"
+      }
+    ]
   },
   "wikilinks": [
     {

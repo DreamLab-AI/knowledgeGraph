@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:cryptographic-security",
   "domain": "infrastructure",
-  "definition": "Cryptographic Security is a type of Security Framework in the infrastructure domain.",
+  "definition": "Cryptographic Security is the application of cryptographic primitives and protocols\u2014including symmetric and asymmetric encryption, digital signatures, hash functions, and zero-knowledge proofs\u2014to protect data confidentiality, integrity, and authenticity. In blockchain and metaverse contexts it underpins transaction authorisation, identity verification, secure key management, and privacy-preserving computation, forming the bedrock upon which trustless systems and decentralised applications are built.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-security-and-identity",
@@ -18,17 +18,44 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:privacy-framework",
+        "label": "Privacy Framework"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": []

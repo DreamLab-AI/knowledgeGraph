@@ -82,16 +82,30 @@ public:: true
   "@id": "urn:ngm:class:verification",
   "@type": "Class",
   "label": "VERIFICATION",
-  "definition": "Verification in knowledge systems is the process of confirming that information, claims, and digital artefacts meet specified standards for accuracy, completeness, and compliance with constraints through CryptographicProofs|cryptographic verification,",
+  "definition": "Verification is the process of confirming that information, claims, and digital artefacts meet specified standards for accuracy, completeness, and compliance with constraints through cryptographic proofs, rule-based validation, consensus mechanisms, and user acceptance testing. Within metaverse and blockchain contexts it encompasses transaction authenticity, smart contract correctness, ontology schema conformance, and digital asset provenance, establishing trust between stakeholders in decentralised systems.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
     }
   ],
-  "quality": 0.4,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"},
+      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:identity-verification", "label": "Identity Verification"},
+      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:authentication", "label": "Authentication"},
+      {"@id": "urn:ngm:class:standards-validation", "label": "Standards Validation"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -183,7 +197,9 @@ public:: true
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: [[Cryptography]], [[Digital Signature]] — cryptographic hash functions and digital signatures are the technical basis for most verification schemes
+  - **enables**: [[Identity Verification]], [[Compliance Framework]] — verification processes underpin identity authentication and provide evidence for compliance audits
+  - **relatedTo**: [[Authentication]], [[Standards Validation]] — verification overlaps with authentication (identity claims) and standards validation (schema/rule conformance)
 - ### Content
   - Verification in knowledge systems confirms that information, claims, and digital artefacts meet accuracy, completeness, and compliance standards through cryptographic proofs, rule-based validation, and consensus mechanisms establishing trust in decentralised systems.
   - ### Original Content

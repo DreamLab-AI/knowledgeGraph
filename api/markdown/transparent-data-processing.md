@@ -8,6 +8,10 @@
 
 - ### Relationships
   - is-subclass-of:: [[Data Processing]]
+  - requires:: [[Consent Management]], [[Audit Trail]]
+  - enables:: [[GDPR Compliance]], [[Privacy By Design]]
+  - uses:: [[Zero-Knowledge Proof]], [[Privacy Framework]]
+  - relatedTo:: [[Data Governance]]
 
 - ### Content
 

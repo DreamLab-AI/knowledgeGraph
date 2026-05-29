@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:sensor-data",
   "domain": "spatial-computing",
-  "definition": "Raw or pre-processed measurements produced by physical transducers such as cameras, LiDAR, IMUs, or microphones that encode environmental state for perception and decision systems.",
+  "definition": "Sensor data comprises the raw or pre-processed digital measurements produced by physical transducers\u2014including cameras, LiDAR scanners, inertial measurement units (IMUs), ultrasonic rangers, and microphones\u2014that encode observable properties of the environment such as geometry, colour, acceleration, and sound. In robotic and autonomous systems, sensor data forms the primary input to perception pipelines responsible for state estimation, object detection, and scene understanding. Data quality characteristics including frame rate, resolution, noise floor, and synchronisation latency directly constrain the capabilities of downstream algorithms such as SLAM, sensor fusion, and learned perception models.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -14,16 +14,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "id": "urn:ngm:class:imu",
+        "label": "IMU"
+      },
+      {
+        "id": "urn:ngm:class:camera",
+        "label": "Camera"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:perception-system",
+        "label": "Perception System"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

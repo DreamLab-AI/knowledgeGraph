@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:backdoor-attack",
   "domain": "artificial-intelligence",
-  "definition": "A training-time attack that embeds a hidden trigger pattern into an AI model, causing the model to behave normally on standard inputs but produce attacker-chosen outputs when the trigger is present, creating a covert vulnerability exploitable post-deployment.",
+  "definition": "A training-time adversarial attack that embeds a hidden trigger pattern into an AI model via data poisoning, causing the model to behave normally on standard inputs but produce attacker-chosen outputs when the trigger is present, creating a covert vulnerability that survives fine-tuning and is exploitable post-deployment.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -14,20 +14,52 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:adversarial-attack",
+        "label": "Adversarial Attack"
+      },
+      {
+        "id": "urn:ngm:class:adversarial-robustness",
+        "label": "Adversarial Robustness"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:data-poisoning",
+        "label": "Data Poisoning"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-model",
+        "label": "Machine Learning Model"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:model-robustness",
+        "label": "Model Robustness"
+      },
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
+    ]
   },
   "wikilinks": [
     {

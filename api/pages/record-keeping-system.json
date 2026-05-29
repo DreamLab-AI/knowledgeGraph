@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:record-keeping-system",
   "domain": "blockchain",
-  "definition": "Record Keeping System is a type of Blockchain in the blockchain domain.",
+  "definition": "A Record Keeping System, in the blockchain domain, is an immutable, append-only ledger in which transactions or state changes are cryptographically hashed, linked via Merkle trees, and validated by a consensus mechanism to provide a tamper-evident audit trail. It replaces or augments traditional centralised databases in applications requiring transparent provenance, non-repudiation, and multi-party data integrity\u2014including asset registries, supply-chain tracking, and compliance logging.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-network-component",
@@ -13,21 +13,60 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      },
+      {
+        "id": "urn:ngm:class:data-provenance",
+        "label": "Data Provenance"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ]
   },
   "wikilinks": [
     {

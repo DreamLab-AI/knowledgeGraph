@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:etsi-domain-reality-capture-creative",
   "domain": "spatial-computing",
-  "definition": "ETSI framework for real-time digital performance capture and creative content generation enabling actors, performers, and creators to capture expressive movements, facial animations, and embodied interactions for metaverse avatars and immersive experiences.",
+  "definition": "ETSI domain addressing real-time digital performance capture and creative content generation for immersive experiences. It integrates motion capture, facial expression tracking, gesture recognition, and AI-enhanced animation synthesis to transform physical performances into high-fidelity digital representations for metaverse avatars, virtual events, and interactive entertainment applications.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -17,21 +17,52 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.4,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "id": "urn:ngm:class:avatar-interoperability",
+        "label": "Avatar Interoperability"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      },
+      {
+        "id": "urn:ngm:class:3-d-asset",
+        "label": "3D Asset"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ]
   },
   "wikilinks": [
     {

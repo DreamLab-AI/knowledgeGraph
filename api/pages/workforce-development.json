@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:workforce-development",
   "domain": "spatial-computing",
-  "definition": "Workforce Development is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Workforce development encompasses structured programmes, training environments, and skills-acquisition systems that equip individuals and organisations with the competencies required by evolving labour markets. In spatial computing contexts, it leverages immersive learning, simulation, and augmented connected workforce platforms to deliver scalable, experiential upskilling.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -13,17 +13,44 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:augmented-connected-workforce",
+        "label": "Augmented Connected Workforce"
+      },
+      {
+        "id": "urn:ngm:class:education-metaverse",
+        "label": "Education Metaverse"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:education-technology",
+        "label": "Education Technology"
+      },
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:immersive-learning",
+        "label": "Immersive Learning"
+      },
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

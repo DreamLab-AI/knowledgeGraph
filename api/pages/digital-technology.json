@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:digital-technology",
   "domain": "spatial-computing",
-  "definition": "Digital Technology is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Digital Technology refers to electronic tools, systems, and platforms that generate, store, or process information in binary or digital form. It encompasses computing hardware, software, networks, and embedded systems that collectively enable the creation, transformation, and distribution of digital content and services, forming the foundational layer of the modern digital economy.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -13,21 +13,48 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:immersive-technology",
+        "label": "Immersive Technology"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:computing-hardware",
+        "label": "Computing Hardware"
+      },
+      {
+        "id": "urn:ngm:class:computing-infrastructure",
+        "label": "Computing Infrastructure"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:disruptive-technology",
+        "label": "Disruptive Technology"
+      },
+      {
+        "id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:trusted-execution-environment",
   "domain": "infrastructure",
-  "definition": "A hardware-isolated, tamper-resistant secure enclave that executes code and processes sensitive data independently from the main operating system.",
+  "definition": "A Trusted Execution Environment (TEE) is a hardware-enforced, isolated processing domain within a processor that guarantees confidentiality and integrity of code and data even if the host operating system or hypervisor is compromised. TEEs are instantiated via technologies such as Intel SGX, AMD SEV, and Arm TrustZone, each providing mechanisms for remote attestation so that a relying party can cryptographically verify the identity and integrity of the enclave before exchanging sensitive material. TEEs underpin confidential computing workloads including private AI inference, secure key management, and privacy-preserving data collaboration.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-security-and-identity",
@@ -14,20 +14,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      },
+      {
+        "id": "urn:ngm:class:privacy-enhancing-computation-pec",
+        "label": "Privacy-Enhancing Computation (PEC)"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:confidential-computing",
+        "label": "Confidential Computing"
+      },
+      {
+        "id": "urn:ngm:class:secure-enclave",
+        "label": "Secure Enclave"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

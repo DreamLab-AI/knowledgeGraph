@@ -46,16 +46,33 @@ public:: true
   "@id": "urn:ngm:class:inspection-robot",
   "@type": "Class",
   "label": "Inspection Robot",
-  "definition": "Inspection Robot - Inspection Robot in robotics systems",
+  "definition": "A specialised robotic system designed to autonomously examine physical structures, components, or manufactured products for defects, faults, or deviations from specification. Inspection robots combine computer vision, sensor fusion, and AI-driven anomaly detection to replace or augment manual quality-assurance processes in hazardous or high-throughput environments.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-robot-type",
       "label": "Robot Type"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
+      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:quality-assurance", "label": "Quality Assurance"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"},
+      {"@id": "urn:ngm:class:mobile-robot", "label": "Mobile Robot"},
+      {"@id": "urn:ngm:class:collaborative-robot", "label": "Collaborative Robot"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -104,7 +121,10 @@ public:: true
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - is-subclass-of:: [[Robotics]]
+  - **uses**: [[Computer Vision]], [[Sensor Fusion]]
+  - **enables**: [[Quality Assurance]]
+  - **partOf**: [[Robotics]]
+  - **relatedTo**: [[Autonomous Robot]], [[Mobile Robot]], [[Collaborative Robot]]
 
 - ### Content
   - ### Original Content

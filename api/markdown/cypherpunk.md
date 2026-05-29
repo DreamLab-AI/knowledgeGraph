@@ -33,20 +33,39 @@ public:: true
   "@id": "urn:ngm:class:cypherpunk",
   "@type": "Class",
   "label": "cypherpunk",
-  "definition": "cypherpunk is a blockchain and distributed systems concept and a type of blockchain.",
+  "definition": "A cypherpunk is an activist who advocates for the widespread use of strong cryptography and privacy-enhancing technologies as tools for social and political change. Emerging from mailing list culture in the early 1990s, cypherpunks believe that individual privacy can only be guaranteed through cryptographic means rather than through legal or institutional protections. Their ethos—'cypherpunks write code'—produced foundational technologies including public-key cryptography applications, anonymous remailers, digital cash, and the conceptual groundwork for Bitcoin and decentralised systems.",
   "domain": "blockchain",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-governance-and-regulation",
       "label": "Governance and Regulation"
     }
   ],
-  "quality": 0.35,
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"},
+      {"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"},
+      {"@id": "urn:ngm:class:decentralization", "label": "Decentralization"},
+      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"},
+      {"@id": "urn:ngm:class:digital-rights", "label": "Digital Rights"},
+      {"@id": "urn:ngm:class:open-source-software", "label": "Open Source Software"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:digital-society-surveillance", "label": "Digital Society Surveillance"}
+    ]
   }
 }
 ```
@@ -72,14 +91,14 @@ public:: true
 
 
 - ### Definition
-  - cypherpunk is a concept within the ngm domain.
+  - A cypherpunk is an activist who uses and promotes strong cryptography and privacy-enhancing tools as instruments of individual freedom and resistance to surveillance. The movement, originating in the early 1990s around the Cypherpunks mailing list, produced technologies foundational to the modern internet: anonymous remailers, digital cash schemes, and much of the conceptual architecture underpinning Bitcoin, Tor, and decentralised identity systems.
 
 - ### Semantic Classification
   - owl-class:: blockchain:Cypherpunk
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - The cypherpunk movement bridges cryptographic practice (cryptographic protocols, digital signatures, asymmetric encryption) with political philosophy (digital rights, data protection, decentralisation). Its most tangible legacy is in peer-to-peer networks and open-source privacy software, and it forms the ideological backbone of Bitcoin and much of decentralised finance. The movement explicitly contends with mass digital surveillance, asserting that technical countermeasures are more reliable than legal ones.
 
 - ### Content
   - The [Cypherpunk - Wikipedia](https://en.wikipedia.org/wiki/Cypherpunk) page is a great start.

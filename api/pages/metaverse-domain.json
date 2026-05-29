@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:metaverse-domain",
   "domain": "spatial-computing",
-  "definition": "The Metaverse Domain provides an ontological framework for interconnected digital platforms leveraging augmented, extended, and virtual realities to create immersive user experiences through multidimensional interactions.",
+  "definition": "The Metaverse Domain is an ontological category encompassing interconnected persistent digital environments that merge augmented, virtual, and extended realities into immersive, spatially coherent experiences. It includes the technological, economic, social, and governance layers enabling persistent identity, asset ownership, and real-time interaction across virtual worlds. The domain spans enabling technologies such as spatial computing, blockchain-based economies, avatar systems, and haptic feedback that collectively constitute the metaverse stack.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -17,11 +17,45 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.75,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:avatar-system",
+        "label": "Avatar System"
+      },
+      {
+        "id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
+      },
+      {
+        "id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
@@ -31,7 +65,16 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      }
+    ]
   },
   "wikilinks": [
     {

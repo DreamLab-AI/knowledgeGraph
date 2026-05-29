@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:grouped-query-attention",
   "domain": "artificial-intelligence",
-  "definition": "Grouped Query Attention (GQA) is a transformer attention variant that partitions query heads into groups sharing a single key-value head, reducing memory bandwidth and inference latency.",
+  "definition": "Grouped Query Attention (GQA) is a transformer attention variant that partitions the set of query heads into G groups, each group sharing a single pair of key and value heads, thereby interpolating between Multi-Head Attention (MHA, where each query head has its own KV head) and Multi-Query Attention (MQA, where all query heads share one KV head). GQA reduces the key-value cache memory footprint during autoregressive inference\u2014proportionally to the number of groups\u2014while preserving model quality closer to MHA than MQA. It has been adopted in production LLMs including Llama 2, Mistral, and Gemma.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-model-architecture",
@@ -14,16 +14,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
+      },
+      {
+        "id": "urn:ngm:class:speculative-decoding",
+        "label": "Speculative Decoding"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:multi-head-attention",
+        "label": "Multi-Head Attention"
+      },
+      {
+        "id": "urn:ngm:class:flash-attention",
+        "label": "Flash Attention"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

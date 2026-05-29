@@ -1,5 +1,5 @@
 - ### Definition
-  - Feature Engineering is a concept within the ai domain.
+  - The process of using domain knowledge and statistical transformations to construct, select, and encode input variables from raw data so that they better represent the underlying predictive signal for machine learning models. Techniques include polynomial expansion, normalisation, temporal feature extraction, embedding of categorical variables, and dimensionality reduction via PCA or autoencoders.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:FeatureEngineering
@@ -8,6 +8,10 @@
 - ### Relationships
   - is-subclass-of:: [[Data Preprocessing]]
   - bridges-to:: [[Autonomous Robot]], [[Digital Twin]]
+  - Enables: [[Machine Learning]], [[Model Training]]
+  - Uses: [[Data Pipeline]]
+  - Related To: [[Transfer Learning]], [[Feature Store]]
+  - Bridges To: [[Digital Twin]]
 
 - ### Content
 

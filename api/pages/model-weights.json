@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:model-weights",
   "domain": "artificial-intelligence",
-  "definition": "Model Weights is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "The learnable numerical parameters in a neural network that encode the connection strengths adjusted during training via backpropagation to minimise loss. Model weights constitute the primary artefact of training and are the target of fine-tuning, quantisation, pruning, and transfer learning; their distribution and magnitude critically determine model capability and safety.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -14,11 +14,29 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:training",
+        "label": "Training"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -26,8 +44,22 @@
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:network-architecture",
+        "label": "Network Architecture"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
+    ]
   },
   "wikilinks": [
     {

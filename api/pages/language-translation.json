@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:language-translation",
   "domain": "distributed-collaboration",
-  "definition": "Language Translation is a type of Distributed Collaboration in the distributed collaboration domain.",
+  "definition": "Language translation is the automated or human-assisted conversion of text or speech from a source language into a target language whilst preserving semantic meaning, tone, and cultural context. Modern neural machine translation systems, built on transformer architectures and large language models, enable real-time multilingual communication across distributed collaboration platforms and metaverse environments.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:dc-communication",
@@ -13,21 +13,49 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:localization",
+        "label": "Localization"
+      }
+    ],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:machine-translation",
+        "label": "Machine Translation"
+      }
+    ],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
+    ]
   },
   "wikilinks": [
     {

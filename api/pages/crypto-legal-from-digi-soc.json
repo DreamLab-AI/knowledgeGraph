@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:crypto-legal-from-digi-soc",
   "domain": "blockchain",
-  "definition": "Crypto Legal from DigiSoc is a blockchain and distributed systems concept and a type of blockchain.",
+  "definition": "Crypto Legal from DigiSoc examines the legal, regulatory, and governance landscape surrounding cryptocurrency and digital assets within digital society contexts. It covers UK and EU regulatory positions on crypto-assets as property, stablecoin frameworks, AML/KYC obligations, and the intersection of Web3 economics with metaverse commerce. The field addresses how legacy legal systems must adapt to support low-friction, globally scalable value exchange in virtual social spaces.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-governance-and-regulation",
@@ -13,21 +13,49 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:digital-commerce",
+        "label": "Digital Commerce"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ]
   },
   "wikilinks": [
     {

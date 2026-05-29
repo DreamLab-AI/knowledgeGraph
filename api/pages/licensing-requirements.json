@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:licensing-requirements",
   "domain": "blockchain",
-  "definition": "Regulatory authorisation mandates for virtual asset service providers ranging from state-level MoneyTransmitterLicense|money transmitter licences (-capital) to jurisdictional crypto licences (Dubai VARA, UK FCA, EU MiCA) requiring operational standards, custody controls, KYC procedures, and o...",
+  "definition": "Licensing Requirements are the regulatory authorisation mandates imposed on virtual asset service providers by national or supranational regulators, ranging from state-level money transmitter licences in the United States to jurisdiction-specific crypto licences under EU MiCA, UK FCA, Singapore MAS, and Dubai VARA regimes. Compliance demands operational standards, minimum capital, custody controls, KYC procedures, AML programmes, and ongoing regulatory reporting, with global coverage costing major platforms tens to hundreds of millions of pounds.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-governance-and-regulation",
@@ -14,20 +14,56 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.4,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      }
+    ],
     "enables": [],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:bc-governance-and-regulation",
+        "label": "Governance and Regulation"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-domain",
+        "label": "Blockchain Domain"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ]
   },
   "wikilinks": [
     {

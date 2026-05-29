@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:batch-normalisation",
   "domain": "artificial-intelligence",
-  "definition": "Batch Normalisation is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "A technique that normalises layer inputs within a mini-batch to zero mean and unit variance, stabilising training dynamics, enabling higher learning rates, and acting as a form of regularisation in deep neural networks. Introduced by Ioffe and Szegedy (2015), it reduces internal covariate shift and has become a standard component in convolutional and other deep learning architectures.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -13,21 +13,53 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-layer",
+        "label": "Neural Network Layer"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:regularisation",
+        "label": "Regularisation"
+      },
+      {
+        "id": "urn:ngm:class:dropout",
+        "label": "Dropout"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
+    ]
   },
   "wikilinks": [
     {

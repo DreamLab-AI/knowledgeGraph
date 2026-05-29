@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:frontier-model-forum",
   "domain": "artificial-intelligence",
-  "definition": "The Frontier Model Forum is an industry body established by leading AI companies to advance AI safety research and promote responsible development of frontier AI models.",
+  "definition": "The Frontier Model Forum is an industry body founded in 2023 by leading AI development organisations to advance AI safety research, share knowledge on safety best practices, and promote responsible development and deployment of frontier AI models. It provides a venue for cross-company collaboration on technical safety, evaluation methodologies, and engagement with governments and civil society. The Forum focuses specifically on the most capable general-purpose AI models and the risks that may arise from their development and deployment.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -14,7 +14,7 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -24,10 +24,32 @@
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

@@ -158,9 +158,10 @@ public:: true
   "@id": "urn:ngm:class:zero-knowledge",
   "@type": "Class",
   "label": "Zero Knowledge",
-  "definition": "Zero-knowledge proofs are cryptographic techniques enabling one party to prove knowledge of information to another without revealing the information itself, establishing mathematical certainty about claim validity through InteractiveProtocol|interactive protocols or",
+  "definition": "Cryptographic proof systems enabling a prover to convince a verifier that a statement is true without disclosing any information beyond the validity of the statement itself. zk-SNARKs and zk-STARKs are the dominant proof systems, with applications spanning blockchain scalability through ZK-rollups, privacy-preserving identity verification, confidential DeFi transactions, and verifiable AI model outputs. Foundational to privacy-preserving computation and Layer 2 scaling architectures.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
@@ -171,6 +172,21 @@ public:: true
       "label": "Privacy-Enhancing Computation (PEC)"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"},
+      {"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:blockchain-scalability", "label": "Blockchain Scalability"},
+      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"},
+      {"@id": "urn:ngm:class:privacy-preserving-blockchain", "label": "Privacy Preserving Blockchain"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
+      {"@id": "urn:ngm:class:zero-knowledge-machine-learning", "label": "Zero-Knowledge Machine Learning"}
+    ]
+  },
   "quality": 0.4,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -360,7 +376,9 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses:: [[Cryptography]], [[Cryptographic Protocol]]
+  - enables:: [[Blockchain Scalability]], [[Digital Identity]], [[Privacy Preserving Blockchain]]
+  - supports:: [[Decentralised Finance]], [[Zero-Knowledge Machine Learning]]
 
 - ### Content
   - Cryptographic techniques enabling one party to prove knowledge of information without revealing the information itself, establishing mathematical certainty about claim validity through [[InteractiveProtocol|interactive protocols]] or [[NIZKProof|non-interactive proofs]]. [[ZKProofSystems|ZK proof systems]] like [[zkSNARK|zk-SNARKs]] and [[zkSTARK|zk-STARKs]] enable privacy-preserving authentication, [[PrivacyCoin|confidential transactions]], and [[ZKRollup|zkRollups]] compressing on-chain computation whilst maintaining verifiable correctness. Applications span [[BlockchainScalability|blockchain scalability]], [[VerifiableComputation|verifiable computation]], and [[SelectiveDisclosure|selective disclosure]] systems enabling users to prove attributes without revealing underlying personal data.

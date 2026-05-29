@@ -6,7 +6,12 @@
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires** [[Blockchain]] — DeFi protocols execute as smart contracts on programmable blockchains
+  - **requires** [[Smart Contract]] — automated, trustless financial logic is encoded as smart contracts
+  - **uses** [[Cryptocurrency]] — cryptocurrencies are the native settlement assets for DeFi protocols
+  - **uses** [[Digital Asset]] — DeFi operates over tokenised digital assets including stablecoins and NFTs
+  - **relatedTo** [[Financial Transactions]] — DeFi services settle financial transactions on-chain
+  - **relatedTo** [[DeFi]] — De Fi Services are the application-layer realisation of the DeFi paradigm
 
 - ### Content
 

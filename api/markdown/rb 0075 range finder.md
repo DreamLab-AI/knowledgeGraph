@@ -42,9 +42,9 @@ public:: true
   "@id": "urn:ngm:class:rb-0075-range-finder",
   "@type": "Class",
   "label": "rb 0075 range finder",
-  "definition": "range finder is a robotics and autonomous systems concept and a type of Exteroceptive Sensor.",
+  "definition": "A range finder is an exteroceptive sensor that measures the distance between a robot and surrounding objects or surfaces by emitting a signal (laser, ultrasonic, or infrared) and timing its return. Range finders are fundamental to obstacle detection, safety zone monitoring, and environment mapping in mobile and collaborative robots.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-perception",
@@ -55,7 +55,24 @@ public:: true
       "label": "Exteroceptive Sensor"
     }
   ],
-  "quality": 0.5,
+  "qualityScore": 0.7,
+  "quality": 0.7,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:rb-0069-lidar", "label": "rb 0069 lidar"},
+      {"@id": "urn:ngm:class:rb-0078-infrared-sensor", "label": "rb 0078 infrared sensor"},
+      {"@id": "urn:ngm:class:rb-0080-radar", "label": "rb 0080 radar"},
+      {"@id": "urn:ngm:class:proximity-sensor", "label": "Proximity Sensor"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:rb-0095-safety-zone", "label": "rb 0095 safety zone"},
+      {"@id": "urn:ngm:class:slam", "label": "SLAM"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:point-cloud", "label": "Point Cloud"},
+      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -91,7 +108,7 @@ public:: true
 
 
 - ### Definition
-  - ### Primary Definition
+  - A **range finder** measures the distance from a robot to objects in its environment using time-of-flight or phase-shift techniques with laser, infrared, or ultrasonic signals. Range finders span from single-beam infrared distance sensors to multi-layer laser scanners (LiDAR), providing the raw distance data that feeds obstacle detection, safety zone enforcement, and SLAM algorithms.
 
 - ### Semantic Classification
   - owl-class:: robotics:rb0075rangefinder
@@ -99,7 +116,9 @@ public:: true
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Enables safety zone detection (rb 0095) and is a core component of LiDAR systems (rb 0069).
+  - Outputs are typically processed as point clouds and fused with IMU and camera data (sensor fusion) for robust environment models.
+  - Complements infrared sensors (rb 0078) and radar (rb 0080) in multi-modal sensing configurations.
 
 - ### Content
   - ### Primary Definition

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:quality-standard",
   "domain": "robotics",
-  "definition": "Quality standard defines requirements for quality management in robot manufacturing and deployment.",
+  "definition": "A Quality Standard is a formally published specification that defines measurable requirements for quality management, process control, testing methodology, and conformance verification in robot manufacturing and deployment contexts. Quality standards provide the normative benchmarks against which robotic systems are assessed for reliability, safety, and fitness for purpose across their operational lifecycle.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-safety-and-standards",
@@ -17,21 +17,75 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:compliance-standards",
+        "label": "Compliance Standards"
+      },
+      {
+        "id": "urn:ngm:class:compliance-control",
+        "label": "Compliance Control"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:testing-process",
+        "label": "Testing Process"
+      },
+      {
+        "id": "urn:ngm:class:compliance-verification",
+        "label": "Compliance Verification"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:iso-standards",
+        "label": "Iso Standards"
+      },
+      {
+        "id": "urn:ngm:class:testing-infrastructure",
+        "label": "Testing Infrastructure"
+      }
+    ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:robotics-systems",
+        "label": "Robotics Systems"
+      },
+      {
+        "id": "urn:ngm:class:compliance-audit-trail",
+        "label": "Compliance Audit Trail"
+      },
+      {
+        "id": "urn:ngm:class:compliance-dashboard",
+        "label": "Compliance Dashboard"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -42,15 +42,33 @@ public:: true
   "@id": "urn:ngm:class:prohibited-ai-practice",
   "@type": "Class",
   "label": "Prohibited AI Practice",
-  "definition": "AI systems deploying subliminal/manipulative techniques, exploiting vulnerabilities, social scoring, or real-time biometric identification in publicly accessible spaces (with limited law enforcement exceptions).",
+  "definition": "Prohibited AI Practices are categories of AI deployment banned under EU AI Act Article 5 (effective 2 February 2025), covering subliminal manipulation, exploitation of vulnerability groups, social scoring by public or private bodies, and real-time remote biometric identification in publicly accessible spaces. Violations carry fines up to €35 million or 7% of global annual turnover.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"},
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:manipulation", "label": "Manipulation"},
+      {"@id": "urn:ngm:class:content-moderation", "label": "Content Moderation"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"},
+      {"@id": "urn:ngm:class:gdpr-compliance", "label": "GDPR Compliance"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:ai-governance-and-ethics", "label": "AI Governance and Ethics"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -95,7 +113,10 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires: [[AI Regulation]], [[AI Governance]]
+  - contrastsWith: [[Manipulation]], [[Content Moderation]]
+  - relatedTo: [[Data Protection]], [[GDPR Compliance]]
+  - partOf: [[AI Governance and Ethics]]
 
 - ### Content
   - AI systems deploying subliminal/manipulative techniques, exploiting vulnerabilities, social scoring, or real-time biometric identification in publicly accessible spaces (with limited law enforcement exceptions).

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:model",
   "domain": "artificial-intelligence",
-  "definition": "Model is a artificial intelligence concept and a type of Artificial Intelligence.",
+  "definition": "In artificial intelligence, a Model is a mathematical or computational structure learned from data that encodes a mapping from inputs to outputs (or latent representations). Models range from classical machine learning models (linear, tree-based) to deep neural networks, generative models, and large language models, and constitute the core artefact produced by training and consumed during inference.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -13,21 +13,74 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:model-architecture",
+        "label": "Model Architecture"
+      },
+      {
+        "id": "urn:ngm:class:model-capacity",
+        "label": "Model Capacity"
+      },
+      {
+        "id": "urn:ngm:class:model-depth",
+        "label": "Model Depth"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
+      },
+      {
+        "id": "urn:ngm:class:model-performance",
+        "label": "Model Performance"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:machine-learning-model",
+        "label": "Machine Learning Model"
+      },
+      {
+        "id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:pretrained-model",
+        "label": "Pretrained Model"
+      },
+      {
+        "id": "urn:ngm:class:model-interpretability",
+        "label": "Model Interpretability"
+      }
+    ]
   },
   "wikilinks": [
     {

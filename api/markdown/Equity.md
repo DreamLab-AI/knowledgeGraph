@@ -38,16 +38,31 @@ public:: true
   "@id": "urn:ngm:class:equity",
   "@type": "Class",
   "label": "Equity",
-  "definition": "Equity is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "The principle of fair and impartial access to AI, media technologies, and digital infrastructure across geographic, socioeconomic, and demographic groups. Equity in this context addresses disparities in technological access, educational opportunity, and participation in AI-driven economies, and informs legal frameworks and international cooperation mechanisms designed to close digital divide gaps.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-legal-and-regulatory",
       "label": "Legal and Regulatory"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:education-and-ai", "label": "Education and AI"},
+      {"@id": "urn:ngm:class:fairness-oecd", "label": "Fairness (OECD)"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:education-technology", "label": "Education Technology"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -83,14 +98,17 @@ public:: true
 
 
 - ### Definition
-  - Equity is a concept within the ngm domain.
+  - The principle of fair and impartial access to AI, media technologies, and digital infrastructure across geographic, socioeconomic, and demographic groups. Equity in this context addresses disparities in technological access, educational opportunity, and participation in AI-driven economies, and informs legal frameworks and international cooperation mechanisms designed to close digital divide gaps.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:Equity
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **relatedTo**: Education and AI, Fairness (OECD) — equity in technology access directly conditions educational outcomes and is formalised in OECD fairness principles
+  - **requires**: AI Regulation — effective equity requires regulatory frameworks mandating non-discriminatory access
+  - **enables**: Education Technology — equitable access enables broader uptake of educational technology
+  - **contrastsWith**: AI Ethics — equity is a concrete distributional concern within the broader AI ethics discourse
 
 - ### Content
   # Global Equity in Access to AI and Media Technologies

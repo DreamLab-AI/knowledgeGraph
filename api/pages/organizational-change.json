@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:organizational-change",
   "domain": "infrastructure",
-  "definition": "Organizational Change is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Organizational Change is the deliberate process of transforming an organisation's structures, workflows, cultural norms, and operational paradigms. In technology contexts this encompasses adoption of immersive collaboration tools, distributed team models, and AI-augmented workflows, requiring sustained stakeholder engagement and iterative change management strategies.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-software-engineering",
@@ -14,20 +14,44 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:distributed-work",
+        "label": "Distributed Work"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:enterprise-architecture",
+        "label": "Enterprise Architecture"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:collaboration-platform",
+        "label": "Collaboration Platform"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

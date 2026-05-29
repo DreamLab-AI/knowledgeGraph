@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:leeds-digital-hub",
   "domain": "infrastructure",
-  "definition": "Leeds' digital technology sector focusing on health technology innovation, financial services technology, and digital creative industries.",
+  "definition": "Leeds Digital Hub is a regional technology cluster centred in Leeds city centre, UK, that concentrates collaborative workspace, mentoring, and innovation infrastructure to support digital startups and established technology companies in healthtech, fintech, and digital creative sectors. It operates as a node within the broader UK Tech Ecosystem and North England Innovation Corridor, leveraging anchor institutions such as the University of Leeds and Leeds Teaching Hospitals NHS Trust to translate research into commercial ventures.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
@@ -13,12 +13,22 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:digital-economy",
+        "label": "Digital Economy"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-economy",
+        "label": "Digital Economy"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -26,8 +36,30 @@
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:uk-tech-ecosystem",
+        "label": "UK Tech Ecosystem"
+      },
+      {
+        "id": "urn:ngm:class:north-england-innovation-corridor",
+        "label": "North England Innovation Corridor"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:uk-tech-ecosystem",
+        "label": "UK Tech Ecosystem"
+      },
+      {
+        "id": "urn:ngm:class:north-england-innovation-corridor",
+        "label": "North England Innovation Corridor"
+      },
+      {
+        "id": "urn:ngm:class:digital-economy",
+        "label": "Digital Economy"
+      }
+    ]
   },
   "wikilinks": [
     {

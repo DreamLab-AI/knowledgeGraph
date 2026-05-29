@@ -1,12 +1,15 @@
 - ### Definition
-  - State of the art in AI is a concept within the ngm domain.
+  - State of the Art in AI is a curated survey of the current frontier of artificial intelligence capability, covering large language models, generative AI, multimodal systems, hardware advances, and sociotechnical implications. It synthesises emerging research directions, benchmark performance milestones, and near-term deployment trajectories across proprietary and open-source AI ecosystems.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:StateOfTheArtInAI
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart:: Proprietary Large Language Models, Open Generative AI tools, Hardware and Edge
+  - relatedTo:: Soon-Next-Later (AI futurology), Trust and Safety
+  - enables:: Adoption of Convergent Technologies
+  - bridgesTo:: Politics Law Privacy, Update Cycle
 
 - ### Content
   - #Public page automatically published

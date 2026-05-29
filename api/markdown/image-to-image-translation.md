@@ -7,7 +7,12 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses [[Generative Adversarial Network]]
+  - uses [[Diffusion Model]]
+  - enables [[Style Transfer]]
+  - enables [[Image Generation]]
+  - dependsOn [[Convolutional Neural Network]]
+  - dependsOn [[Computer Vision]]
 
 - ### Content
   - Image-to-Image Translation transforms images from one visual domain to another whilst preserving content structure, converting between image modalities such as sketch-to-photo, day-to-night, satellite-to-map, or style transfer between artistic styles. Image translation models (Pix2Pix, CycleGAN, StyleGAN) employ conditional generation and adversarial learning to learn mappings between paired or unpaired image domains.

@@ -6,7 +6,10 @@ bridges-to:: [[Autonomous Robot]]
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: AI Agent System, Autonomous Robot (the AI systems a deployer puts into service)
+  - **dependsOn**: AI Governance, Digital Infrastructure (oversight frameworks and technical infrastructure the deployer relies on)
+  - **supports**: AI Regulation (deployer compliance operationalises regulatory requirements)
+  - **relatedTo**: AI Governance and Ethics (ethical obligations that shape deployer conduct)
 - ### Content
   - A natural or legal person, public authority, agency or other body using an AI system under its authority except where the AI system is used in the course of a personal non-professional activity.
   ## Source

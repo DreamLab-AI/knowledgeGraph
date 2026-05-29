@@ -42,9 +42,9 @@ public:: true
   "@id": "urn:ngm:class:rb-0104-hand-guiding",
   "@type": "Class",
   "label": "rb 0104 hand guiding",
-  "definition": "hand guiding is a robotics and autonomous systems concept and a type of Human Robot Interaction.",
+  "definition": "Hand guiding is a collaborative robot operation mode in which an operator physically moves the robot arm by direct physical contact, typically through a dedicated hand-guiding device, while the robot's safety systems monitor force, speed, and separation. It is one of four collaborative operation modes defined in ISO/TS 15066 and ISO 10218, enabling intuitive programming-by-demonstration and safe human-robot co-manipulation tasks.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-human-robot-interaction",
@@ -55,7 +55,25 @@ public:: true
       "label": "Human Robot Interaction"
     }
   ],
-  "quality": 0.5,
+  "qualityScore": 0.7,
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:rb-0103-collaborative-operation", "label": "rb 0103 collaborative operation"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:rb-0067-force-torque-sensor", "label": "rb 0067 force torque sensor"},
+      {"@id": "urn:ngm:class:rb-0056-impedance-control", "label": "rb 0056 impedance control"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:rb-0007-collaborative-robot", "label": "rb 0007 collaborative robot"},
+      {"@id": "urn:ngm:class:rb-0094-power-and-force-limiting", "label": "rb 0094 power and force limiting"},
+      {"@id": "urn:ngm:class:rb-0105-speed-and-separation-monitoring", "label": "rb 0105 speed and separation monitoring"},
+      {"@id": "urn:ngm:class:end-effector", "label": "End Effector"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:iso-ts-15066", "label": "ISO TS 15066"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -91,7 +109,7 @@ public:: true
 
 
 - ### Definition
-  - ### Primary Definition
+  - **Hand Guiding** is a collaborative robot operation mode in which the operator physically grasps and moves the robot arm directly, guided by force-torque sensing and impedance control, while safety systems enforce speed and force limits per ISO/TS 15066. The technique enables intuitive kinesthetic teaching and direct human co-manipulation during assembly or finishing tasks.
 
 - ### Semantic Classification
   - owl-class:: robotics:HandGuiding
@@ -99,7 +117,9 @@ public:: true
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - partOf:: rb 0103 collaborative operation
+  - requires:: rb 0067 force torque sensor, rb 0056 impedance control
+  - relatedTo:: rb 0007 collaborative robot, rb 0094 power and force limiting, rb 0105 speed and separation monitoring
 
 - ### Content
   - ### Primary Definition

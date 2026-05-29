@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:virtual-factory",
   "@type": "Class",
   "label": "Virtual Factory",
-  "definition": "A physically accurate digital twin representation of a manufacturing facility that enables modeling, simulation, analysis, and optimization of production processes, resources, and operations without requiring physical prototypes or pilot plants.",
+  "definition": "A physically accurate digital twin representation of a manufacturing facility that enables modelling, simulation, analysis, and optimisation of production processes, resources, and operations without physical prototypes or pilot plants. It integrates IoT sensor data, AI-driven analytics, and real-time bidirectional synchronisation; platforms such as NVIDIA Omniverse (OpenUSD) and Siemens Tecnomatix are primary implementation environments. Virtual factories are a core Industry 4.0 concept supporting predictive maintenance, layout optimisation, and safe robotics training.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -59,7 +60,24 @@ public:: true
       "label": "Digital Twin"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:digital-twin-technology", "label": "Digital Twin Technology"},
+      {"@id": "urn:ngm:class:simulation-engine", "label": "Simulation Engine"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:simulation", "label": "Simulation"},
+      {"@id": "urn:ngm:class:digital-twin-infrastructure", "label": "Digital Twin Infrastructure"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:virtual-training", "label": "Virtual Training"},
+      {"@id": "urn:ngm:class:digital-twin-collaboration", "label": "Digital Twin Collaboration"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:virtual-replica", "label": "Virtual Replica"},
+      {"@id": "urn:ngm:class:cross-platform-digital-twins", "label": "Cross Platform Digital Twins"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -109,6 +127,10 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Digital Twin]]
+  - requires:: [[Digital Twin Technology]], [[Simulation Engine]]
+  - uses:: [[Simulation]], [[Digital Twin Infrastructure]]
+  - enables:: [[Virtual Training]], [[Digital Twin Collaboration]]
+  - relatedTo:: [[Virtual Replica]], [[Cross Platform Digital Twins]]
 
 - ### Content
 

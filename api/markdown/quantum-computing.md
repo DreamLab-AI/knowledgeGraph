@@ -1,12 +1,16 @@
 - ### Definition
-  - QuantumComputing is a concept within the ngm domain.
+  - A paradigm of computation that exploits quantum-mechanical phenomena—superposition, entanglement, and interference—to perform certain calculations exponentially faster than classical computers. Quantum computing holds particular relevance for cryptography, optimisation, simulation of molecular systems, and potentially accelerating machine learning workloads, though near-term devices remain limited by qubit decoherence and error rates.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:QuantumComputing
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - contrastsWith [[Cryptography]]
+  - enables [[Encryption]]
+  - relatedTo [[Distributed Systems]]
+  - relatedTo [[Machine Learning]]
+  - relatedTo [[Deep Learning]]
 
 - ### Content
   # QuantumComputing

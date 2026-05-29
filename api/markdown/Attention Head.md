@@ -50,9 +50,10 @@ public:: true
   "@id": "urn:ngm:class:attention-head",
   "@type": "Class",
   "label": "Attention Head",
-  "definition": "One of multiple parallel attention mechanisms in multi-head attention, each potentially learning different types of relationships and patterns in the input sequence.",
+  "definition": "One of multiple parallel scaled dot-product attention mechanisms in a multi-head attention layer, each operating over a distinct linear projection of the input. Individual heads specialise in different linguistic or structural patterns; most learn simple positional relationships and many can be pruned without significant loss, though a subset carry disproportionate representational load.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-model-architecture",
@@ -64,6 +65,40 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:transformers",
+        "label": "Transformers"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:attention-weight",
+        "label": "Attention Weight"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:attention",
+        "label": "Attention"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:network-architecture",
+        "label": "Network Architecture"
+      }
+    ]
   }
 }
 ```
@@ -114,6 +149,12 @@ public:: true
 
 - ### Relationships
   - bridges-to:: [[Computer Vision]] (domain: rb)
+  - Part Of [[Attention Mechanism]]
+  - Part Of [[Network Architecture]]
+  - Enables [[Transformers]]
+  - Uses [[Attention Weight]]
+  - Related To [[Attention]]
+  - Related To [[Transformer Architecture]]
 
 - ### Content
   - One of multiple parallel attention mechanisms in multi-head attention, each potentially learning different types of relationships and patterns in the input sequence.

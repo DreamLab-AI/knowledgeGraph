@@ -1,5 +1,5 @@
 - ### Definition
-  - Boosting is a concept within the ai domain.
+  - A sequential ensemble learning technique that combines multiple weak learners into a strong predictor by iteratively training each new model to correct the errors of its predecessors. Instance weights are adjusted after each round so that misclassified examples receive more attention; the final prediction is a weighted vote across all weak learners. Key algorithms include AdaBoost, Gradient Boosting, XGBoost, LightGBM, and CatBoost.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:Boosting
@@ -7,6 +7,10 @@
 
 - ### Relationships
   - is-subclass-of:: [[Ensemble Methods]]
+  - **requires**: Machine Learning (theoretical foundation), Training Data (iterative reweighting input)
+  - **enables**: Overfitting (risk without regularisation; managed by early stopping)
+  - **uses**: Gradient Descent (loss minimisation in gradient boosting), Regularisation (L1/L2 penalties in XGBoost/LightGBM)
+  - **contrastsWith**: Deep Learning (competing high-accuracy paradigm for tabular data)
 
 - ### Content
 

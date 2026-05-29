@@ -7,7 +7,10 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: BART, Large Language Models
+  - **requires**: Natural Language Processing, Language Modeling
+  - **enables**: Information Retrieval
+  - **relatedTo**: Text Generation, Prompt Engineering
 
 - ### Content
   - Text Summarisation is the NLP task of producing concise, coherent summaries that capture the essential information from longer documents or document collections. Summarisation systems employ extractive methods (selecting key sentences) or abstractive methods (generating new summary text) using transformer models to enable applications in news aggregation, document analysis, and information retrieval.

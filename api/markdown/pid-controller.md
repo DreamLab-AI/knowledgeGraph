@@ -1,5 +1,5 @@
 - ### Definition
-  - - maturity:: draft
+  - A PID Controller is a closed-loop feedback control algorithm that calculates corrections based on proportional, integral, and derivative terms of the error between a desired setpoint and a measured value, foundational to robotics motion control, autonomous systems, and industrial automation.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:PidController
@@ -7,6 +7,12 @@
 
 - ### Relationships
   - is-subclass-of:: [[rb 0047 feedback control]]
+  - partOf [[Control System]]
+  - partOf [[Feedback Control]]
+  - enables [[Robot Control]]
+  - enables [[Motion Planning]]
+  - relatedTo [[Autonomous System]]
+  - relatedTo [[Actuator]]
 
 - ### Content
 

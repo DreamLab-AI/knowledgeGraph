@@ -1,12 +1,18 @@
 - ### Definition
-  - National Industrial Centre for Virtual Environments is a concept within the ngm domain.
+  - A UK academic research centre active in the late 1990s and 2000s, based at the University of Salford, that advanced industrial applications of virtual reality including CAVE systems, immersive workbenches, and telepresence. NICVE succeeded the National Advanced Robotics Research Centre and produced foundational work in multi-user virtual environments and real-time rendering on SGI hardware.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:NationalIndustrialCentreForVirtualEnvironments
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **hasPart** [[Virtual Reality]] — NICVE's primary research and output domain was immersive virtual reality systems
+  - **hasPart** [[Simulation]] — industrial simulation was a core application area for NICVE research
+  - **enables** [[Immersive Technology]] — NICVE's CAVE and workbench systems were early immersive technology implementations
+  - **enables** [[Multi User Systems]] — NICVE developed some of the first multi-user shared virtual environment platforms
+  - **uses** [[Rendering Engine]] — SGI Onyx2 hardware with proprietary rendering pipelines powered NICVE systems
+  - **uses** [[Haptic Feedback]] — electromagnetic tracking and early haptic devices were explored at NICVE
+  - **bridgesTo** [[Extended Reality]] — NICVE's historical work prefigures modern XR technology trajectories
 
 - ### Content
   - #Public page automatically published

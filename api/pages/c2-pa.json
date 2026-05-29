@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:c2-pa",
   "domain": "artificial-intelligence",
-  "definition": "C2PA (Coalition for Content Provenance and Authenticity) is an open technical standard that cryptographically binds provenance metadata to media assets to establish trustworthy content origin.",
+  "definition": "C2PA (Coalition for Content Provenance and Authenticity) is a cross-industry technical standards initiative and specification that defines how to cryptographically bind signed provenance metadata \u2014 including capture origin, AI generation disclosure, and editing history \u2014 to digital media assets such as images, video, audio, and documents. Founded by Adobe, Arm, BBC, Intel, Microsoft, and Truepic, C2PA publishes the C2PA technical specification under the Joint Development Foundation, which defines the manifest container format (JUMBF), assertion vocabularies, signing mechanism (COSE), and trust model. C2PA Content Credentials are the concrete artefact instantiating the specification.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -14,16 +14,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:c2-pa-content-credentials",
+        "label": "C2PA Content Credentials"
+      },
+      {
+        "id": "urn:ngm:class:provenance-verification",
+        "label": "Provenance Verification"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:deepfakes",
+        "label": "Deepfakes"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-media",
+        "label": "Synthetic Media"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:digital-marketing",
   "domain": "spatial-computing",
-  "definition": "Digital Marketing is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Digital Marketing encompasses the strategies and technologies used to promote products and services through digital channels, including search engines, social media, email, and immersive platforms. In spatial computing and metaverse contexts, digital marketing extends to in-world advertising, NFT-based brand activations, virtual experiential campaigns, and personalised AR overlays that contextualise commercial messages within physical environments.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -14,16 +14,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:e-commerce",
+        "label": "E-Commerce"
+      },
+      {
+        "id": "urn:ngm:class:loyalty-programs",
+        "label": "Loyalty Programs"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:recommendation-engine",
+        "label": "Recommendation Engine"
+      },
+      {
+        "id": "urn:ngm:class:digital-content",
+        "label": "Digital Content"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

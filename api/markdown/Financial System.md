@@ -42,20 +42,56 @@ public:: true
   "@id": "urn:ngm:class:financial-system",
   "@type": "Class",
   "label": "Financial System",
-  "definition": "Financial System is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "The network of institutions, markets, instruments, and infrastructure that facilitate the creation, transfer, and management of financial value. In the context of the metaverse and blockchain ecosystems, financial systems include both traditional payment rails and decentralised protocols enabling programmable value exchange, digital asset custody, and cross-border settlement.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
     }
   ],
-  "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      },
+      {
+        "@id": "urn:ngm:class:financial-infrastructure",
+        "label": "Financial Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:financial-transactions",
+        "label": "Financial Transactions"
+      },
+      {
+        "@id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:blockchain-economics",
+        "label": "Blockchain Economics"
+      },
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ]
   }
 }
 ```
@@ -87,23 +123,31 @@ public:: true
 
 
 - ### Definition
-  - Financial System is a concept within the metaverse domain. Further enrichment pending.
+  - The network of institutions, markets, instruments, and infrastructure that facilitate the creation, transfer, and management of financial value. In the context of the metaverse and blockchain ecosystems, financial systems include both traditional payment rails and decentralised protocols enabling programmable value exchange, digital asset custody, and cross-border settlement.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:FinancialSystem
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Has Part [[Payment System]]
+  - Has Part [[Financial Infrastructure]]
+  - Enables [[Financial Transactions]]
+  - Enables [[Financial Inclusion]]
+  - Related To [[Blockchain Economics]]
+  - Related To [[Financial Regulation]]
+  - Related To [[Decentralised Finance]]
 
 - ### Content
 
   ## Overview
 
-  Financial System represents an abstract concept in the metaverse ontology hierarchy.
+  A financial system encompasses the institutions, markets, instruments, and infrastructure that enable value creation, transfer, and management. In metaverse and blockchain contexts this extends to programmable protocols for digital asset exchange, decentralised custody, and permissionless settlement. Key components include payment systems, financial infrastructure, regulatory frameworks, and decentralised finance primitives.
 
   #### Related Concepts
-  - [[owl:Thing]]
+  - [[Payment System]]
+  - [[Decentralised Finance]]
+  - [[Financial Regulation]]
 
 - ### Provenance
   - sources::

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:virtual-production-workflow",
   "domain": "spatial-computing",
-  "definition": "The end-to-end process for creating film and television content using virtual production techniques, integrating pre-visualization, virtual art department asset creation, real-time game engine rendering, LED volume shooting, and post-production refinement in a non-linear pipeline where VFX work b...",
+  "definition": "The end-to-end process for creating film and television content using virtual production techniques, integrating pre-visualisation, virtual art department asset creation, real-time game engine rendering, LED volume shooting, and post-production refinement in a non-linear pipeline where VFX work begins in pre-production rather than post-production. This approach captures composited digital environments in-camera, enabling creative decisions about lighting and framing to be made on set.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-display-and-rendering",
@@ -17,21 +17,57 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "id": "urn:ngm:class:3-d-asset",
+        "label": "3D Asset"
+      },
+      {
+        "id": "urn:ngm:class:3-d-rendering-engine",
+        "label": "3D Rendering Engine"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:film-production",
+        "label": "Film Production"
+      },
+      {
+        "id": "urn:ngm:class:world-building",
+        "label": "World Building"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:design-software",
+        "label": "Design Software"
+      },
+      {
+        "id": "urn:ngm:class:content-production-workflow",
+        "label": "Content Production Workflow"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
+    ]
   },
   "wikilinks": [
     {

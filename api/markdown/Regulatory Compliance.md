@@ -102,7 +102,7 @@ public:: true
   "@id": "urn:ngm:class:regulatory-compliance",
   "@type": "Class",
   "label": "Regulatory Compliance",
-  "definition": "Regulatory Compliance in AI contexts refers to the adherence to legal requirements, statutory obligations, and regulatory standards governing the development, deployment, and operation of artificial intelligence systems within specific jurisdictions or sectors.",
+  "definition": "Regulatory Compliance in AI contexts refers to the adherence to legal requirements, statutory obligations, and regulatory standards governing the development, deployment, and operation of artificial intelligence systems within specific jurisdictions or sectors. Compliance requires implementing governance structures, conducting impact assessments, maintaining documentation and audit trails, providing transparency, and demonstrating ongoing monitoring for regulatory adherence.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -115,7 +115,27 @@ public:: true
       "label": "AI Governance Principle"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:gdpr-compliance", "label": "GDPR Compliance"},
+      {"@id": "urn:ngm:class:conformity-assessment", "label": "Conformity Assessment"},
+      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"},
+      {"@id": "urn:ngm:class:compliance-monitoring", "label": "Compliance Monitoring"},
+      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"},
+      {"@id": "urn:ngm:class:compliance-audit-trail", "label": "Compliance Audit Trail"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:ai-impact-assessment", "label": "AI Impact Assessment"},
+      {"@id": "urn:ngm:class:human-oversight", "label": "Human Oversight"},
+      {"@id": "urn:ngm:class:ai-audit", "label": "AI Audit"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:ai-governance-framework", "label": "AI Governance Framework"},
+      {"@id": "urn:ngm:class:ai-risk-management", "label": "AI Risk Management"},
+      {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

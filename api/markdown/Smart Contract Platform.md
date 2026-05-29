@@ -37,15 +37,30 @@ public:: true
   "@id": "urn:ngm:class:smart-contract-platform",
   "@type": "Class",
   "label": "Smart Contract Platform",
-  "definition": "Smart Contract Platform is a blockchain and distributed systems concept and a type of blockchain.",
+  "definition": "A Smart Contract Platform is a blockchain infrastructure that provides an execution environment for programmable self-executing agreements, enabling decentralised application development through virtual machine runtimes, developer toolchains, and gas metering. Platforms such as Ethereum (EVM), Solana (Sealevel), and Cardano (Plutus) each offer distinct performance, security, and programmability trade-offs.",
   "domain": "blockchain",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-network-component",
       "label": "Network Component"
     }
   ],
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:dao", "label": "DAO"},
+      {"@id": "urn:ngm:class:decentralized-finance-de-fi", "label": "Decentralized Finance (DeFi)"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:blockchain-interoperability", "label": "Blockchain Interoperability"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -76,14 +91,18 @@ public:: true
 
 
 - ### Definition
-  - SmartContractPlatform is a concept within the ngm domain.
+  - A Smart Contract Platform is a blockchain infrastructure that provides an execution environment for programmable self-executing agreements, enabling decentralised application development through virtual machine runtimes, developer toolchains, and gas metering.
 
 - ### Semantic Classification
   - owl-class:: blockchain/SmartContractPlatform
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart:: [[Smart Contract]]
+  - enables:: [[DAO]]
+  - enables:: [[Decentralized Finance (DeFi)]]
+  - requires:: [[Blockchain]]
+  - relatedTo:: [[Blockchain Interoperability]]
 
 - ### Content
 

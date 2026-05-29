@@ -5,7 +5,12 @@
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires:: [[Sensor Fusion]]
+  - enables:: [[Autonomous Navigation]]
+  - enables:: [[Augmented Reality]]
+  - uses:: [[Deep Learning]]
+  - uses:: [[Pose Estimation]]
+  - partOf:: [[Spatial Computing]]
 - ### Content
   - SLAM technology enables autonomous systems to simultaneously build spatial maps and determine their position within unknown environments, processing sensor data to estimate pose and construct real-time representations essential for navigation and AR/VR applications.
   - ### Original Content

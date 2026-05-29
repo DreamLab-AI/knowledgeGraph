@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:computer-vision-task",
   "domain": "artificial-intelligence",
-  "definition": "Computer vision tasks are specific computational problems that machines solve using visual data, including image classification (assigning labels to images), object detection (locating and identifying objects with bounding boxes), semantic segmentation (pixel-wise classification), and instance se...",
+  "definition": "A Computer Vision Task is a specific computational problem solved using visual input data, encompassing image classification, object detection, semantic segmentation, instance segmentation, and pose estimation. These tasks form the building blocks of downstream vision applications such as scene understanding, autonomous navigation, and visual question answering, typically implemented via convolutional or transformer-based neural architectures.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-research-area",
@@ -13,21 +13,74 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.75,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:image-classification",
+        "label": "Image Classification"
+      },
+      {
+        "id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      },
+      {
+        "id": "urn:ngm:class:semantic-segmentation",
+        "label": "Semantic Segmentation"
+      },
+      {
+        "id": "urn:ngm:class:instance-segmentation",
+        "label": "Instance Segmentation"
+      },
+      {
+        "id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:scene-understanding",
+        "label": "Scene Understanding"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:multimodal-ai",
+        "label": "Multimodal AI"
+      }
+    ]
   },
   "wikilinks": [
     {

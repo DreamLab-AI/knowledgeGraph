@@ -1,12 +1,14 @@
 - ### Definition
-  - Research Tools is a concept within the ngm domain.
+  - Research Tools are software applications and platforms that augment the academic and professional research process, encompassing AI-powered literature assistants (e.g. Elicit, Undermind), systematic review automation, citation management, and natural language interfaces to scientific corpora. They accelerate information retrieval, evidence synthesis, and knowledge organisation, and increasingly leverage large language models and retrieval-augmented generation to surface relevant findings across heterogeneous sources.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:ResearchTools
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: Large Language Models, Retrieval-Augmented Generation
+  - **enables**: Knowledge Management, Information Retrieval
+  - **relatedTo**: Knowledge Graph
 
 - ### Content
   - #Public page

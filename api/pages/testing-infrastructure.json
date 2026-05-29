@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:testing-infrastructure",
   "domain": "infrastructure",
-  "definition": "Testing Infrastructure is a type of Quality Assurance in the infrastructure domain.",
+  "definition": "The ensemble of tools, environments, frameworks, and automated pipelines used to validate software correctness, performance, and reliability across development and deployment stages. Testing infrastructure encompasses unit, integration, and end-to-end test runners, continuous integration services, containerised test environments, and monitoring dashboards that together ensure software meets quality standards before release.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-software-engineering",
@@ -18,20 +18,44 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:software-testing",
+        "label": "Software Testing"
+      },
+      {
+        "id": "urn:ngm:class:monitoring-dashboard",
+        "label": "Monitoring Dashboard"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:testing-process",
+        "label": "Testing Process"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-security",
+        "label": "Data Security"
+      }
+    ]
   },
   "wikilinks": [
     {

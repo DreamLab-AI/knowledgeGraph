@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:pneumatic-motor",
   "domain": "robotics",
-  "definition": "Pneumatic motor converts compressed air to rotational motion.",
+  "definition": "A Pneumatic Motor is an actuator that converts the energy stored in compressed air into continuous rotational mechanical motion, producing torque and speed proportional to the supply pressure and airflow rate. Pneumatic motors are characterised by high power-to-weight ratios, inherent overload protection through stall behaviour, and suitability for hazardous environments where electrical motors would pose ignition risks. They are widely used in industrial tooling, material handling equipment, and mobile robotics applications requiring lightweight, spark-free drive systems.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
@@ -17,21 +17,72 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:torque",
+        "label": "Torque"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:pneumatic-actuator",
+        "label": "Pneumatic Actuator"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:hydraulic-motor",
+        "label": "Hydraulic Motor"
+      },
+      {
+        "id": "urn:ngm:class:servo-motor",
+        "label": "Servo Motor"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:torque-control",
+        "label": "Torque Control"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:robo-actuation-and-control",
+        "label": "Actuation and Control"
+      },
+      {
+        "id": "urn:ngm:class:robotic-system",
+        "label": "Robotic System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:pneumatic-cylinder",
+        "label": "Pneumatic Cylinder"
+      },
+      {
+        "id": "urn:ngm:class:industrial-robot",
+        "label": "Industrial Robot"
+      },
+      {
+        "id": "urn:ngm:class:robotics-control",
+        "label": "Robotics Control"
+      }
+    ]
   },
   "wikilinks": [
     {

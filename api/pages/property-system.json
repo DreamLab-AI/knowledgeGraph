@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:property-system",
   "domain": "infrastructure",
-  "definition": "Property System is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A Property System is a software architecture pattern for attaching typed key-value attributes to entities within a metaverse or game engine context, enabling data binding, runtime configuration, and dynamic object behaviour without hard-coded class inheritance. It underpins avatar customisation, world-object state management, and reactive UI data flows in spatial computing platforms.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-software-engineering",
@@ -14,20 +14,48 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:avatar-customization",
+        "label": "Avatar Customization"
+      },
+      {
+        "id": "urn:ngm:class:avatar-system",
+        "label": "Avatar System"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:asset-management",
+        "label": "Asset Management"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": []

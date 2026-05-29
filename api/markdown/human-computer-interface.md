@@ -1,12 +1,15 @@
 - ### Definition
-  - Human Computer Interface is a concept within the metaverse domain. Further enrichment pending.
+  - The set of hardware and software components through which a human user perceives, commands, and receives feedback from a computing system. In spatial computing, human computer interfaces extend beyond screens and keyboards to include gesture input, voice commands, gaze control, haptic feedback, and brain-computer interfaces, fundamentally shaping how users navigate and manipulate virtual environments.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:HumanComputerInterface
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Has part [[Hand Tracking]], [[Eye Tracking]], [[Haptic Feedback]]
+  - Uses [[Spatial Tracking Technology]]
+  - Enables [[Mixed Reality]], [[Augmented Reality]]
+  - Related to [[Brain Computer Interfaces]], [[3D User Interface]]
 
 - ### Content
 

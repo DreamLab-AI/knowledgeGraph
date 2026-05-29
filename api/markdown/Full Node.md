@@ -66,7 +66,7 @@ public:: true
   "@id": "urn:ngm:class:full-node",
   "@type": "Class",
   "label": "Full Node",
-  "definition": "Complete blockchain copy maintainer within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "A blockchain node that independently downloads, validates, and stores the complete transaction history of the chain from the genesis block, enforcing all consensus rules without trusting external parties. Full nodes are the gold standard for trustless participation and are the backbone of decentralisation.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -83,7 +83,26 @@ public:: true
       "label": "NetworkComponent"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:node", "label": "Node"},
+      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:archival-node", "label": "Archival Node"},
+      {"@id": "urn:ngm:class:decentralization", "label": "Decentralization"},
+      {"@id": "urn:ngm:class:consensus-rule", "label": "Consensus Rule"},
+      {"@id": "urn:ngm:class:blockchain-infrastructure", "label": "Blockchain Infrastructure"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"},
+      {"@id": "urn:ngm:class:cryptographic-verification", "label": "Cryptographic Verification"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:vp-robotics-project",
   "domain": "robotics",
-  "definition": "VP robotics project is a robotics and autonomous systems concept and a type of robotics.",
+  "definition": "The VP Robotics Project (VisionFlow) is a feasibility study investigating the integration of robotic camera control with machine learning and virtual production workflows. It inverts conventional pre-visualisation pipelines by deriving scene-driven camera motion from AI-generated content, combining open-source robotics software with parallax-plates-as-a-service delivery for the film and television industry.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
@@ -13,21 +13,48 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:virtual-production",
+        "label": "Virtual Production"
+      },
+      {
+        "id": "urn:ngm:class:virtual-set-design",
+        "label": "Virtual Set Design"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      },
+      {
+        "id": "urn:ngm:class:robotics-control",
+        "label": "Robotics Control"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": []

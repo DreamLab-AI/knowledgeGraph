@@ -5,24 +5,33 @@
   "public": true,
   "classIri": "urn:ngm:class:stigmergy",
   "domain": "robotics",
-  "definition": "Indirect coordination mechanism in swarm robotics where agents communicate through environmental modifications, enabling emergent collective behavior without direct communication.",
+  "definition": "An indirect coordination mechanism in which agents interact through modifications to a shared environment rather than through direct peer-to-peer communication. Originating in the study of social insects, stigmergy underlies emergent collective behaviour in swarm robotics and multi-agent systems: individual agents leave environmental signals (analogous to pheromone trails) that guide subsequent agents, producing globally coordinated outcomes from purely local rules.",
   "subClassOf": [
-    {
-      "id": "urn:ngm:class:robo-robot-type",
-      "label": "Robot Type"
-    },
     {
       "id": "urn:ngm:class:swarm-robotics",
       "label": "Swarm Robotics"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.75,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:collective-intelligence-system",
+        "label": "Collective Intelligence System"
+      },
+      {
+        "id": "urn:ngm:class:swarm-robot",
+        "label": "Swarm Robot"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -30,8 +39,30 @@
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:swarm-robotics",
+        "label": "Swarm Robotics"
+      },
+      {
+        "id": "urn:ngm:class:robotics-domain",
+        "label": "Robotics Domain"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:decentralization",
+        "label": "Decentralization"
+      }
+    ]
   },
   "wikilinks": [
     {

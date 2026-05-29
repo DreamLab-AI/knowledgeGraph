@@ -46,7 +46,7 @@ public:: true
   "@id": "urn:ngm:class:omnidirectional-robot",
   "@type": "Class",
   "label": "Omnidirectional Robot",
-  "definition": "Omnidirectional robot uses mecanum wheels or omniwheels for holonomic motion.",
+  "definition": "A wheeled mobile robot that achieves holonomic motion—the ability to translate in any direction and rotate independently—by employing mecanum wheels or omniwheels whose passive rollers allow lateral force components. This enables precise, agile manoeuvring in constrained environments such as warehouses and hospital corridors without requiring turning arcs.",
   "domain": "robotics",
   "maturity": "established",
   "subClassOf": [
@@ -59,7 +59,23 @@ public:: true
       "label": "Wheeled Robot"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:mecanum-wheel-robot", "label": "Mecanum Wheel Robot"},
+      {"@id": "urn:ngm:class:differential-drive-robot", "label": "Differential Drive Robot"},
+      {"@id": "urn:ngm:class:mobile-robot", "label": "Mobile Robot"},
+      {"@id": "urn:ngm:class:wheeled-mobile-robot", "label": "Wheeled Mobile Robot"},
+      {"@id": "urn:ngm:class:mobile-robot-platform", "label": "Mobile Robot Platform"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:robo-actuation-and-control", "label": "Actuation and Control"},
+      {"@id": "urn:ngm:class:robo-navigation-and-planning", "label": "Navigation and Planning"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:robo-robot-type", "label": "Robot Type"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

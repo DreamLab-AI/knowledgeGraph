@@ -7,6 +7,12 @@
 
 - ### Relationships
   - is-subclass-of:: ['owl:Thing']
+  - hasPart:: [[Data Pipeline]]
+  - requires:: [[Distributed Systems]]
+  - requires:: [[Edge Computing]]
+  - enables:: [[Machine Learning Infrastructure]]
+  - relatedTo:: [[Microservices Architecture]]
+  - relatedTo:: [[Model Architecture]]
 
 - ### Content
 

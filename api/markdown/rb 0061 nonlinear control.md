@@ -42,24 +42,39 @@ public:: true
   "@id": "urn:ngm:class:rb-0061-nonlinear-control",
   "@type": "Class",
   "label": "rb 0061 nonlinear control",
-  "definition": "nonlinear control is a robotics and autonomous systems concept and a type of Control Theory.",
+  "definition": "Nonlinear control encompasses control strategies designed for systems whose dynamics cannot be adequately described by linear differential equations. In robotics, virtually all manipulators and mobile platforms exhibit nonlinear behaviour due to inertia coupling, Coriolis terms, gravity loading, and joint friction. Nonlinear control techniques—including computed-torque control, sliding-mode control, feedback linearisation, Lyapunov-based methods, and model predictive control—explicitly account for these nonlinearities to achieve stable, high-performance trajectory tracking across the full operating envelope.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-actuation-and-control",
       "label": "Actuation and Control"
-    },
-    {
-      "@id": "urn:ngm:class:control-theory",
-      "label": "Control Theory"
     }
   ],
-  "quality": 0.5,
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R3SemanticCategoryInference"
+  },
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:rb-0063-sliding-mode-control", "label": "rb 0063 sliding mode control"},
+      {"@id": "urn:ngm:class:rb-0064-computed-torque-control", "label": "rb 0064 computed torque control"},
+      {"@id": "urn:ngm:class:rb-0062-model-predictive-control", "label": "rb 0062 model predictive control"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:rb-0060-optimal-control", "label": "rb 0060 optimal control"},
+      {"@id": "urn:ngm:class:adaptive-control", "label": "Adaptive Control"},
+      {"@id": "urn:ngm:class:rb-0047-feedback-control", "label": "rb 0047 feedback control"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:rb-0022-robot-dynamics", "label": "rb 0022 robot dynamics"},
+      {"@id": "urn:ngm:class:rb-0021-robot-kinematics", "label": "rb 0021 robot kinematics"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:rb-0048-pid-controller", "label": "rb 0048 pid controller"}
+    ]
   }
 }
 ```
@@ -91,7 +106,7 @@ public:: true
 
 
 - ### Definition
-  - ### Primary Definition
+  - Nonlinear control is the branch of control theory that deals with systems whose governing equations are inherently nonlinear. Robotic manipulators and mobile platforms are quintessentially nonlinear: their dynamics feature inertia matrices that depend on configuration, velocity-dependent Coriolis and centripetal terms, and gravity loading. PID controllers, which assume linear plant behaviour, typically provide adequate performance only near a single operating point; nonlinear methods extend stable control across the entire workspace.
 
 - ### Semantic Classification
   - owl-class:: robotics:rb0061nonlinearcontrol
@@ -99,7 +114,7 @@ public:: true
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Key nonlinear control strategies applied in robotics include: computed-torque control (RB-0064), which cancels robot nonlinearities to yield a decoupled linear system; sliding-mode control (RB-0063), which enforces trajectories on a sliding surface robust to disturbances; and model predictive control (RB-0062), which optimises over a receding horizon. All require accurate dynamic models (RB-0022). Adaptive variants (Adaptive Control) update model parameters online, while feedback linearisation connects nonlinear control to classical feedback theory (RB-0047).
 
 - ### Content
   - ### Primary Definition

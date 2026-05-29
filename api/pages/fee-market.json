@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:fee-market",
   "domain": "blockchain",
-  "definition": "Dynamic fee determination within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "A Fee Market is the mechanism by which blockchain participants competitively bid transaction fees to have their transactions included in blocks, with miners or validators selecting transactions that maximise their revenue given limited block capacity. Fee markets emerge from the interplay between fixed block-space supply and variable transaction demand, producing dynamic price discovery that signals network congestion. Ethereum's EIP-1559 introduced a protocol-level base fee that adjusts algorithmically each block, partially burning fees to reduce token supply and adding a tip mechanism for priority inclusion.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-defi-and-economics",
@@ -21,13 +21,45 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:base-fee",
+        "label": "Base Fee"
+      },
+      {
+        "id": "urn:ngm:class:transaction-fee",
+        "label": "Transaction Fee"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:mempool",
+        "label": "Mempool"
+      },
+      {
+        "id": "urn:ngm:class:block-size",
+        "label": "Block Size"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:miner",
+        "label": "Miner"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
@@ -35,7 +67,24 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gas-fee-market",
+        "label": "Gas Fee Market"
+      },
+      {
+        "id": "urn:ngm:class:gas-price",
+        "label": "Gas Price"
+      },
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      }
+    ]
   },
   "wikilinks": [
     {

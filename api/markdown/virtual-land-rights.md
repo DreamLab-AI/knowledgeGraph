@@ -8,6 +8,13 @@
 
 - ### Relationships
   - is-subclass-of:: [[Digital Property Rights]]
+  - Uses: [[NFT]]
+  - Uses: [[Smart Contract]]
+  - Uses: [[Blockchain]]
+  - Requires: [[Blockchain Infrastructure]]
+  - Related To: [[Virtual Location]]
+  - Related To: [[Real Estate Tokenization]]
+  - Related To: [[NFT Ownership Proof]]
 
 - ### Content
 

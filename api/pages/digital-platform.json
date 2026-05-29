@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:digital-platform",
   "domain": "spatial-computing",
-  "definition": "Digital Platform is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "A Digital Platform is a software-mediated environment that enables interaction, transaction, and value exchange between multiple user groups, often exploiting network effects to grow. In spatial computing and Web3 contexts, digital platforms host virtual experiences, marketplaces, and decentralised applications, frequently integrating blockchain infrastructure for ownership and governance.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -14,20 +14,48 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:digital-asset-ecosystem",
+        "label": "Digital Asset Ecosystem"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:marketplace",
+        "label": "Marketplace"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-content",
+        "label": "Digital Content"
+      },
+      {
+        "id": "urn:ngm:class:computing-platform",
+        "label": "Computing Platform"
+      }
+    ]
   },
   "wikilinks": [
     {

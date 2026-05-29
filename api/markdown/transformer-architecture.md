@@ -7,7 +7,11 @@
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart:: [[Attention Mechanism]]
+  - enables:: [[Large Language Models]]
+  - enables:: [[Natural Language Processing]]
+  - uses:: [[Neural Network]]
+  - supports:: [[Computer Vision]]
 
 - ### Content
   - A neural network architecture based solely on attention mechanisms, dispensing with recurrence and convolutions entirely, designed for sequence-to-sequence tasks.

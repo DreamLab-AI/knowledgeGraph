@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:financial-infrastructure",
   "domain": "infrastructure",
-  "definition": "Financial Infrastructure is a type of Economic Layer in the infrastructure domain.",
+  "definition": "Financial Infrastructure comprises the foundational systems, networks, and institutions that enable the creation, exchange, and settlement of financial value. It includes payment clearing networks, custody systems, blockchain settlement layers, lightning-speed payment channels, and the regulatory reporting frameworks that underpin both traditional and decentralised financial ecosystems.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
@@ -18,20 +18,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:blockchain-infrastructure",
+        "label": "Blockchain Infrastructure"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:financial-services",
+        "label": "Financial Services"
+      },
+      {
+        "id": "urn:ngm:class:financial-instruments",
+        "label": "Financial Instruments"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "id": "urn:ngm:class:economic-layer",
+        "label": "Economic Layer"
+      }
+    ]
   },
   "wikilinks": [
     {

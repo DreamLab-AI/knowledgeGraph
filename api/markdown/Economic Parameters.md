@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:economic-parameters",
   "@type": "Class",
   "label": "Economic Parameters",
-  "definition": "The configurable variables and constraints that govern virtual economy behaviour in metaverse environments, including token supply mechanisms, transaction fees, inflation rates, and reward structures that shape economic interactions between users and digital assets.",
+  "definition": "The configurable variables and constraints that govern virtual economy behaviour in metaverse environments, including token supply mechanisms, transaction fees, inflation rates, reward structures, staking parameters, and liquidity controls that shape economic interactions between users and digital assets.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -59,7 +60,22 @@ public:: true
       "label": "Virtual Economy"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:virtual-economy", "label": "Virtual Economy"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:tokenization", "label": "Tokenization"},
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:marketplace", "label": "Marketplace"},
+      {"@id": "urn:ngm:class:creator-economy", "label": "Creator Economy"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -109,6 +125,10 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Virtual Economy]]
+  - **partOf**: Virtual Economy — economic parameters are the tunable controls within virtual economy systems
+  - **dependsOn**: Tokenization, Smart Contract — token supply and reward logic is implemented via smart contracts and tokenisation protocols
+  - **enables**: Marketplace, Creator Economy — well-calibrated parameters enable functional markets and creator incentive structures
+  - **relatedTo**: Digital Asset — parameters directly govern how digital assets are valued and exchanged
 
 - ### Content
 

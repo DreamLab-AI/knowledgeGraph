@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:graphics-library",
   "domain": "spatial-computing",
-  "definition": "Graphics Library is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "A software library that provides a standardised API for issuing draw calls, managing GPU resources, and configuring the graphics pipeline, abstracting hardware differences from application code. Canonical graphics libraries\u2014OpenGL, Vulkan, Metal, DirectX, WebGL\u2014enable portable, high-performance 2D and 3D rendering across diverse hardware platforms and are foundational to real-time spatial computing applications.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-display-and-rendering",
@@ -13,19 +13,51 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:computer-graphics",
+        "label": "Computer Graphics"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:shader",
+        "label": "Shader"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "id": "urn:ngm:class:rendering-engine",
+        "label": "Rendering Engine"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:3-d-graphics-standard",
+        "label": "3D Graphics Standard"
+      }
+    ],
     "partOf": [],
     "relatedTo": []
   },

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:virtual-reality-platform",
   "domain": "spatial-computing",
-  "definition": "Virtual Reality Platform is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "An integrated hardware and software ecosystem that provides the compute, display, tracking, and runtime services required to deliver immersive virtual reality experiences. A VR platform encompasses the headset, motion controllers, inside-out or external tracking system, operating system, SDK, content store, and developer toolchain. Platforms differ in their openness to third-party applications, support for room-scale interaction, and adherence to interoperability standards such as OpenXR.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -13,21 +13,61 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:room-scale",
+        "label": "Room Scale"
+      },
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:xr-meeting-space",
+        "label": "XR Meeting Space"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:haptics",
+        "label": "Haptics"
+      },
+      {
+        "id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:replication-system",
   "domain": "infrastructure",
-  "definition": "Replication System is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A replication system maintains synchronised copies of data or state across multiple nodes in a distributed environment, ensuring consistency, availability, and fault tolerance. It coordinates state propagation through protocols such as leader-based or leaderless replication, supporting both synchronous and asynchronous update strategies in blockchain, database, and metaverse infrastructure contexts.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-data-management",
@@ -13,21 +13,49 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:data-replication",
+        "label": "Data Replication"
+      }
+    ],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:database-system",
+        "label": "Database System"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

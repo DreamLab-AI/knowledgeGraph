@@ -8,6 +8,10 @@
 
 - ### Relationships
   - is-subclass-of:: [[Digital Governance]]
+  - requires:: [[Platform Governance]], [[Content Moderation]]
+  - enables:: [[Digital Rights]], [[Cross Border Compliance]]
+  - uses:: [[Compliance Framework]], [[GDPR Compliance]]
+  - relatedTo:: [[Metaverse governance and safeguarding]], [[Virtual Society]]
 
 - ### Content
 

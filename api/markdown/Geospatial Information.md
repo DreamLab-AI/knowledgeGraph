@@ -42,9 +42,10 @@ public:: true
   "@id": "urn:ngm:class:geospatial-information",
   "@type": "Class",
   "label": "Geospatial Information",
-  "definition": "Geospatial Information is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Geospatial Information is data that describes objects, events, or phenomena with reference to a location on or near the Earth's surface. It integrates coordinate systems, geographic data layers, and spatial analytics to support location-aware applications including digital twins, augmented reality overlays, and urban simulation.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-standards-and-interop",
@@ -56,6 +57,42 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:geospatial-engine",
+        "label": "Geospatial Engine"
+      },
+      {
+        "@id": "urn:ngm:class:location-based-experience",
+        "label": "Location Based Experience"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:coordinate-system",
+        "label": "Coordinate System"
+      },
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "@id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:spatial-data-structure",
+        "label": "Spatial Data Structure"
+      },
+      {
+        "@id": "urn:ngm:class:geospatial-technology",
+        "label": "Geospatial Technology"
+      }
+    ]
   }
 }
 ```
@@ -87,14 +124,20 @@ public:: true
 
 
 - ### Definition
-  - Geospatial Information is a concept within the metaverse domain. Further enrichment pending.
+  - Geospatial Information is data that describes objects, events, or phenomena with reference to a location on or near the Earth's surface. It integrates coordinate systems, geographic data layers, and spatial analytics to support location-aware applications including digital twins, augmented reality overlays, and urban simulation.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:GeospatialInformation
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses [[Coordinate System]]
+  - Uses [[Lidar]]
+  - Uses [[Point Cloud]]
+  - Enables [[Geospatial Engine]]
+  - Enables [[Location Based Experience]]
+  - Related To [[Spatial Data Structure]]
+  - Related To [[Geospatial Technology]]
 
 - ### Content
 

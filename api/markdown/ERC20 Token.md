@@ -46,7 +46,7 @@ public:: true
   "@id": "urn:ngm:class:erc20-token",
   "@type": "Class",
   "label": "ERC20 Token",
-  "definition": "A fungible token implementing the ERC-20 standard on ereum blockchain. The most widely used ereum token standard providing uniform API for token operations within smart contracts.",
+  "definition": "An ERC20 Token is a fungible token implementing the ERC-20 interface standard on the Ethereum blockchain, which defines a uniform set of six mandatory functions (totalSupply, balanceOf, transfer, transferFrom, approve, allowance) enabling interoperability between token contracts, decentralised exchanges, wallets, and DeFi protocols without bespoke integration. ERC-20 became the dominant token standard following its formalisation in 2015 and is used for utility tokens, governance tokens, stablecoins, and wrapped assets. The standard's fungibility means all token units are identical and mutually interchangeable, contrasting with ERC-721 non-fungible tokens that represent distinct assets.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -59,7 +59,34 @@ public:: true
       "label": "Fungible Token"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
+      {"@id": "urn:ngm:class:token-standard", "label": "Token Standard"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:transaction", "label": "Transaction"},
+      {"@id": "urn:ngm:class:wallet", "label": "Wallet"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:gas", "label": "Gas"},
+      {"@id": "urn:ngm:class:token-economics", "label": "Token Economics"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:erc-721", "label": "ERC-721"},
+      {"@id": "urn:ngm:class:nft", "label": "NFT"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:stablecoin-token", "label": "Stablecoin Token"},
+      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"},
+      {"@id": "urn:ngm:class:utility-token", "label": "Utility Token"},
+      {"@id": "urn:ngm:class:security-token", "label": "Security Token"},
+      {"@id": "urn:ngm:class:payment-token", "label": "Payment Token"},
+      {"@id": "urn:ngm:class:liquidity-pool", "label": "Liquidity Pool"}
+    ]
+  },
+  "qualityScore": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

@@ -5,25 +5,56 @@
   "public": true,
   "classIri": "urn:ngm:class:erc-1155",
   "domain": "blockchain",
-  "definition": "An Ethereum token standard that enables a single smart contract to manage multiple token types, both fungible and non-fungible, within one efficient, batch-transferable interface.",
+  "definition": "ERC-1155 is an Ethereum multi-token standard that allows a single smart contract to manage an arbitrary number of distinct token types \u2014 fungible, non-fungible, and semi-fungible \u2014 each identified by a uint256 token ID, with quantities tracked per address per ID. Pioneered by Enjin and formalised as EIP-1155, the standard introduces safeBatchTransferFrom for atomic multi-token transfers in a single transaction, substantially reducing gas costs compared to managing multiple separate ERC-20 or ERC-721 contracts. It is widely adopted in blockchain gaming, NFT collections, and on-chain economies that blend consumable items with unique assets.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-token-and-asset",
       "label": "Token and Asset"
+    },
+    {
+      "id": "urn:ngm:class:token-standard",
+      "label": "Token Standard"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:blockchain-gaming",
+        "label": "Blockchain Gaming"
+      },
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      },
+      {
+        "id": "urn:ngm:class:erc-721",
+        "label": "ERC-721"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:batch-processing",
+        "label": "Batch Processing"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

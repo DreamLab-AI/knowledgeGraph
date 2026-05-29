@@ -7,7 +7,12 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses [[Convolutional Neural Network]]
+  - uses [[Deep Learning]]
+  - enables [[Image Generation]]
+  - enables [[3D Content Generation]]
+  - relatedTo [[Generative Adversarial Network]]
+  - relatedTo [[Diffusion Model]]
 
 - ### Content
   - Style Transfer is the technique of applying the artistic style of one image (style image) to the content of another image (content image), creating a new image that combines content from one source with the aesthetic style of another. Neural style transfer employs convolutional neural networks to separate and recombine content and style representations, enabling artistic rendering, photo enhancement, and creative visual effects.

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ontology-structure",
   "domain": "spatial-computing",
-  "definition": "Ontology Structure is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "The formal organisation of an ontology into classes, properties, axioms, and inter-concept relationships expressed in a logic-based language such as OWL or RDFS. Ontology Structure defines the hierarchy and constraint patterns that make machine-readable knowledge graphs queryable, inferable, and interoperable across domains.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-standards-and-interop",
@@ -13,17 +13,44 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:ontology-definition",
+        "label": "Ontology Definition"
+      },
+      {
+        "id": "urn:ngm:class:owl-class-hierarchy",
+        "label": "OWL Class Hierarchy"
+      },
+      {
+        "id": "urn:ngm:class:ontology-property-definitions",
+        "label": "Ontology Property Definitions"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:controlled-vocabulary",
+        "label": "Controlled Vocabulary"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

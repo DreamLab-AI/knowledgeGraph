@@ -1,12 +1,16 @@
 - ### Definition
-  - Financial Infrastructure is a concept within the metaverse domain. Further enrichment pending.
+  - Financial Infrastructure comprises the foundational systems, networks, and institutions that enable the creation, exchange, and settlement of financial value. It includes payment clearing networks, custody systems, blockchain settlement layers, lightning-speed payment channels, and the regulatory reporting frameworks that underpin both traditional and decentralised financial ecosystems.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:FinancialInfrastructure
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - supports [[Financial Services]]
+  - supports [[Financial Instruments]]
+  - requires [[Blockchain Infrastructure]]
+  - relatedTo [[Lightning Network]]
+  - relatedTo [[Economic Layer]]
 
 - ### Content
 

@@ -58,7 +58,7 @@ public:: true
   "@id": "urn:ngm:class:model-compression-for-edge",
   "@type": "Class",
   "label": "Model Compression for Edge",
-  "definition": "Model Compression for Edge is the systematic application of techniques reducing neural network computational requirements, memory footprint, and inference latency to enable deployment on resource-constrained edge devices while maintaining acceptable accuracy levels through quantization, pruning, ...",
+  "definition": "Model Compression for Edge is the systematic application of techniques reducing neural network computational requirements, memory footprint, and inference latency to enable deployment on resource-constrained edge devices while maintaining acceptable accuracy levels through quantization, pruning, knowledge distillation, and architectural optimization.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -67,7 +67,29 @@ public:: true
       "label": "AI Technique"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:knowledge-distillation", "label": "Knowledge Distillation"},
+      {"@id": "urn:ngm:class:knowledge-distillation-for-edge", "label": "Knowledge Distillation for Edge"},
+      {"@id": "urn:ngm:class:model-pruning-for-edge-deployment", "label": "Model Pruning for Edge Deployment"},
+      {"@id": "urn:ngm:class:tiny-ml", "label": "TinyML"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:edge-ai-system", "label": "Edge AI System"},
+      {"@id": "urn:ngm:class:embedded-ai-frameworks", "label": "Embedded AI Frameworks"},
+      {"@id": "urn:ngm:class:federated-edge-learning", "label": "Federated Edge Learning"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:hardware-acceleration", "label": "Hardware Acceleration"},
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:edge-ai-accelerator", "label": "Edge AI Accelerator"},
+      {"@id": "urn:ngm:class:embedded-systems", "label": "Embedded Systems"},
+      {"@id": "urn:ngm:class:inference-hardware", "label": "Inference Hardware"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

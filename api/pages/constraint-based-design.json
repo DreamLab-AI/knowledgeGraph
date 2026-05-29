@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:constraint-based-design",
   "domain": "artificial-intelligence",
-  "definition": "A constraint based design component in the Artificial Intelligence domain that enables GenerativeDesignTool.",
+  "definition": "Constraint based design is an engineering and AI approach in which the solution space is defined by a set of explicit constraints \u2014 physical, functional, regulatory, or performance bounds \u2014 that any valid design must satisfy. Solvers or optimisation algorithms explore the constrained space to find feasible and optimal configurations. The method is foundational to generative design tools, parametric modelling, robotics motion planning, and cyber-physical system validation.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -17,21 +17,73 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.75,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:generative-design-tool",
+        "label": "Generative Design Tool"
+      },
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "id": "urn:ngm:class:product-design",
+        "label": "Product Design"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:simulation-engine",
+        "label": "Simulation Engine"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:optimization-algorithm",
+        "label": "Optimization Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:constraint",
+        "label": "Constraint"
+      },
+      {
+        "id": "urn:ngm:class:parametric-modeling",
+        "label": "Parametric Modeling"
+      },
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
+        "id": "urn:ngm:class:cyber-physical-systems",
+        "label": "Cyber Physical Systems"
+      }
+    ]
   },
   "wikilinks": [
     {

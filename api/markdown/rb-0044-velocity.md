@@ -1,5 +1,5 @@
 - ### Definition
-  - ### Primary Definition
+  - Velocity in robotics is the vector quantity describing the rate of change of position (linear velocity) and orientation (angular velocity) of a robot body, joint, or end-effector. In the context of differential kinematics, the Jacobian matrix provides the instantaneous linear map between joint-space velocities and Cartesian task-space velocities. Velocity is therefore the key quantity for trajectory planning, motion control, and safety monitoring in both industrial and collaborative robots.
 
 - ### Semantic Classification
   - owl-class:: robotics:rb0044velocity
@@ -8,6 +8,7 @@
 
 - ### Relationships
   - bridges-to:: [[Computer Vision]]
+  - Velocity is closely coupled to acceleration (RB-0045) and torque (RB-0043) in robot dynamics, and is mapped through the Jacobian matrix (RB-0030). Velocity control (RB-0055) is a fundamental control mode alongside position and force control. In collaborative robotics, end-effector velocity is a primary safety parameter: ISO/TS 15066 enforces speed-and-separation monitoring so that robot speed is reduced as a person approaches, with speed limitation (RB-0093) encoding the permissible thresholds.
 
 - ### Content
   - ### Primary Definition

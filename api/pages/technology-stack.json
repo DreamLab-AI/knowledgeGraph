@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:technology-stack",
   "domain": "spatial-computing",
-  "definition": "Technology Stack is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "The integrated set of software components, frameworks, libraries, runtime environments, and infrastructure services that together support the development and operation of a digital application or platform. In spatial computing contexts, a technology stack spans from hardware drivers and operating systems through XR runtimes, game engines, and application frameworks up to user-facing interfaces and cloud services.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -13,17 +13,48 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:system-software",
+        "label": "System Software"
+      },
+      {
+        "id": "urn:ngm:class:middleware",
+        "label": "Middleware"
+      },
+      {
+        "id": "urn:ngm:class:runtime-environment",
+        "label": "Runtime Environment"
+      }
+    ],
     "requires": [],
     "enables": [],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      },
+      {
+        "id": "urn:ngm:class:xr-runtime-environment",
+        "label": "XR Runtime Environment"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "id": "urn:ngm:class:rendering-engine",
+        "label": "Rendering Engine"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

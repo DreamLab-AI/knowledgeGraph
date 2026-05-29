@@ -62,9 +62,10 @@ public:: true
   "@id": "urn:ngm:class:level-of-detail",
   "@type": "Class",
   "label": "Level of Detail",
-  "definition": "Level of Detail is a spatial computing concept and a type of Metaverse.",
+  "definition": "Level of Detail (LOD) is a rendering optimisation technique that dynamically adjusts the geometric complexity, texture resolution, and shader fidelity of 3D objects based on viewing distance or screen-space coverage, trading visual precision for computational efficiency. LOD is essential for maintaining real-time frame rates in large-scale metaverse and spatial computing scenes.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-display-and-rendering",
@@ -75,11 +76,44 @@ public:: true
       "label": "Metaverse"
     }
   ],
-  "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:3-d-asset",
+        "label": "3D Asset"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:rasterization",
+        "label": "Rasterization"
+      },
+      {
+        "@id": "urn:ngm:class:shader",
+        "label": "Shader"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:occlusion-culling",
+        "label": "Occlusion Culling"
+      },
+      {
+        "@id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:performance-optimization",
+        "label": "Performance Optimization"
+      }
+    ]
   }
 }
 ```
@@ -136,14 +170,19 @@ public:: true
 
 
 - ### Definition
-  - Level of Detail is a concept within the mv domain.
+  - Level of Detail (LOD) is a rendering optimisation technique that dynamically adjusts the geometric complexity, texture resolution, and shader fidelity of 3D objects based on viewing distance or screen-space coverage, trading visual precision for computational efficiency. LOD is essential for maintaining real-time frame rates in large-scale metaverse and spatial computing scenes.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:LevelOfDetail
   - owl-role:: Concept
 
 - ### Relationships
-  - is-subclass-of:: [[Metaverse]]
+  - Supports [[Performance Optimization]] as a primary real-time rendering mechanism
+  - Uses [[Rasterization]] as the underlying rendering primitive
+  - Uses [[Shader]] with simplified programs at lower LOD levels
+  - Related to [[Occlusion Culling]] (complementary draw-call reduction technique)
+  - Related to [[Rendering Pipeline]] within which LOD switching occurs
+  - Requires [[3D Asset]] provided at multiple polygon resolutions
 
 - ### Content
 

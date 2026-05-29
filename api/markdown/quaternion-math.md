@@ -1,12 +1,14 @@
 - ### Definition
-  - QuaternionMath is a concept within the ngm domain.
+  - Quaternion Math is the application of Hamilton's four-dimensional number system (q = w + xi + yj + zk) to represent and interpolate 3D rotations in spatial computing. Quaternions avoid gimbal lock inherent to Euler angles, enable smooth SLERP interpolation, and are computationally efficient for composing rotations in real-time rendering engines, robotics kinematics, and XR head-tracking pipelines.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:QuaternionMath
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - enables:: [[Animation Technique]], [[Physics Simulation]]
+  - uses:: [[Rendering Technique]]
+  - relatedTo:: [[Physics Engine]], [[Ray Tracing]], [[VR Rendering Engine]], [[XR Hardware]]
 
 - ### Content
   # QuaternionMath

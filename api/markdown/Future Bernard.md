@@ -33,16 +33,30 @@ public:: true
   "@id": "urn:ngm:class:future-bernard",
   "@type": "Class",
   "label": "Future Bernard",
-  "definition": "Future Bernard is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A proposed multi-viewpoint immersive AI research platform enabling multiple domain experts to collaborate simultaneously in a shared stereoscopic environment, each maintaining their own spatial perspective. Real-time AI observes all communication channels—verbal, gestural, spatial, and conceptual—building a living ontology from emergent expert consensus, with applications in high-stakes planning such as nuclear decommissioning.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:immersive-technology", "label": "Immersive Technology"},
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
+      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -72,14 +86,16 @@ public:: true
 
 
 - ### Definition
-  - Future Bernard is a concept within the ngm domain.
+  - A proposed multi-viewpoint immersive AI research platform enabling multiple domain experts to collaborate simultaneously in a shared stereoscopic environment, each maintaining their own spatial perspective. Real-time AI observes all communication channels—verbal, gestural, spatial, and conceptual—building a living ontology from emergent expert consensus, with applications in high-stakes planning such as nuclear decommissioning.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:FutureBernard
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: Immersive Technology, Knowledge Graph — the platform is built on immersive spatial computing with a live knowledge graph as its epistemic output
+  - **enables**: Ontology, Agentic AI — collaborative expert sessions generate emergent ontologies that AI agents can learn from and propagate
+  - **relatedTo**: Extended Reality, Digital Twin — the facility shares architectural patterns with XR telepresence and digital twin environments
 
 - ### Content
   - ![image (9).png](../assets/image_(9)_1753019256369_0.png)

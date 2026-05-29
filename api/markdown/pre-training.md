@@ -7,7 +7,12 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - enables:: [[Fine Tuning]]
+  - enables:: [[Transfer Learning]]
+  - enables:: [[Large Language Models]]
+  - requires:: [[Training Data]]
+  - requires:: [[Model Training]]
+  - contrastsWith:: [[Contrastive Learning]]
 
 - ### Content
   - The initial training phase where a model learns general representations from large amounts of unlabelled or weakly labelled data before being adapted to specific tasks. Pre-training establishes foundational knowledge that can be transferred across multiple downstream applications.

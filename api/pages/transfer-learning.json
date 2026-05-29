@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:transfer-learning",
   "domain": "artificial-intelligence",
-  "definition": "Transfer Learning is a foundational concept in artificial intelligence that serves as a classification parent for 6 related concepts in the ontology.",
+  "definition": "Transfer Learning is a machine learning methodology whereby a model pre-trained on a large source task or dataset is adapted to a different but related target task, leveraging previously acquired representations to improve sample efficiency and performance. It is the dominant paradigm for deploying large language models and vision models, enabling fine-tuning with modest task-specific data.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -14,20 +14,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.3,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

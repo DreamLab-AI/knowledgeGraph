@@ -1,12 +1,17 @@
 - ### Definition
-  - Security Services is a concept within the metaverse domain. Further enrichment pending.
+  - Security Services are the technical and organisational mechanisms that protect spatial computing platforms from unauthorised access, data breaches, and malicious activity, encompassing authentication, encryption, access control, and identity management.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:SecurityServices
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Authentication]]
+  - requires [[Encryption]]
+  - enables [[Access Control]]
+  - enables [[Digital Identity]]
+  - supports [[Cybersecurity]]
+  - supports [[Data Governance]]
 
 - ### Content
 

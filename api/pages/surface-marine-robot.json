@@ -5,33 +5,78 @@
   "public": true,
   "classIri": "urn:ngm:class:surface-marine-robot",
   "domain": "robotics",
-  "definition": "Surface marine robot operates on water surface like unmanned surface vessels.",
+  "definition": "A Surface Marine Robot, also known as an Unmanned Surface Vehicle (USV), is an autonomous or remotely operated robotic platform that operates on the surface of bodies of water\u2014oceans, lakes, rivers, and coastal zones. It performs tasks including hydrographic survey, environmental monitoring, maritime patrol, search-and-rescue support, and data relay without requiring an onboard crew, thereby reducing operational cost and human risk in hazardous or remote marine environments.",
   "subClassOf": [
-    {
-      "id": "urn:ngm:class:robo-robot-type",
-      "label": "Robot Type"
-    },
     {
       "id": "urn:ngm:class:marine-robot",
       "label": "Marine Robot"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:navigation-system",
+        "label": "Navigation System"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:underwater-robot",
+        "label": "Underwater Robot"
+      },
+      {
+        "id": "urn:ngm:class:aerial-robot",
+        "label": "Aerial Robot"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:ngm:class:perception-system",
+        "label": "Perception System"
+      },
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:inspection-robot",
+        "label": "Inspection Robot"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
+        "id": "urn:ngm:class:remotely-operated-vehicle-rov",
+        "label": "Remotely Operated Vehicle (ROV)"
+      }
+    ]
   },
   "wikilinks": [
     {

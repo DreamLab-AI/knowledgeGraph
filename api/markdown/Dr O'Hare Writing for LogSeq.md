@@ -62,16 +62,30 @@ public:: true
   "@id": "urn:ngm:class:dr-o-hare-writing-for-log-seq",
   "@type": "Class",
   "label": "Dr O'Hare Writing for LogSeq",
-  "definition": "Dr O'Hare Writing for LogSeq is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A prescriptive style guide authored by Dr John O'Hare specifying the structural, syntactic, and tonal conventions for writing public-facing knowledge graph pages in Logseq. It mandates nested bullet-point outlines, UK English prose, Logseq wiki-link syntax, dense academic-conversational authorial voice, and heavy inline citation with external links.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "supports": [
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
+      {"@id": "urn:ngm:class:knowledge-management", "label": "Knowledge Management"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:knowledge-graph-construction", "label": "Knowledge Graph Construction"},
+      {"@id": "urn:ngm:class:digital-asset-risks", "label": "Digital Asset Risks"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
+      {"@id": "urn:ngm:class:paper-writing", "label": "Paper Writing"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -137,14 +151,16 @@ public:: true
 
 
 - ### Definition
-  - Dr O'Hare Writing for LogSeq is a concept within the ngm domain.
+  - A prescriptive style guide authored by Dr John O'Hare specifying the structural, syntactic, and tonal conventions for writing public-facing knowledge graph pages in Logseq. It mandates nested bullet-point outlines, UK English prose, Logseq wiki-link syntax, dense academic-conversational authorial voice, and heavy inline citation with external links.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:DrOHareWritingForLogSeq
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **supports**: [[Knowledge Graph]], [[Knowledge Management]]
+  - **uses**: [[Knowledge Graph Construction]], [[Digital Asset Risks]]
+  - **relatedTo**: [[Ontology]], [[Paper Writing]]
 
 - ### Content
   - "Your goal is to emulate a writer creating a public-facing 'digital garden' page in Logseq. The output must be raw Markdown. Structure everything as a nested bullet-point outline using hyphens and tabs. Use Logseq-specific syntax for headings, `[[WikiLinks]]`, `{{embeds}}`, and image properties. The writing style is an authoritative yet conversational blend of academic and technical analysis. Use a first-person voice ('we', 'I'), write in dense, complex sentences, and cite sources heavily with inline links. Spelling must be UK English."

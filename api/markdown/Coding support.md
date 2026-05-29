@@ -66,9 +66,10 @@ public:: true
   "@id": "urn:ngm:class:coding-support",
   "@type": "Class",
   "label": "Coding support",
-  "definition": "Coding support is a technology infrastructure concept and a type of Software Engineering.",
+  "definition": "Coding Support encompasses AI-assisted tools, IDE integrations, and agent frameworks that augment software developers with capabilities including inline completion, code generation, automated refactoring, debugging assistance, and test generation. Tools range from general-purpose LLM-backed assistants to domain-specific coding agents operating on full codebases.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
@@ -79,6 +80,23 @@ public:: true
       "label": "Software Engineering"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
+      {"@id": "urn:ngm:class:agent-frameworks", "label": "Agent Frameworks"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:code-generation", "label": "Code Generation"},
+      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:software-engineering", "label": "Software Engineering"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:tips-and-tricks", "label": "Tips and Tricks"},
+      {"@id": "urn:ngm:class:gpt-engineer", "label": "GPT Engineer"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -150,14 +168,17 @@ public:: true
 
 
 - ### Definition
-  - Coding support is a concept within the ngm domain.
+  - Coding Support encompasses AI-assisted tools, IDE integrations, and agent frameworks that augment software developers with capabilities including inline completion, code generation, automated refactoring, debugging assistance, and test generation. Tools range from general-purpose LLM-backed assistants to domain-specific coding agents operating on full codebases.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:CodingSupport
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses:: [[Large Language Models]], [[Agent Frameworks]]
+  - enables:: [[Code Generation]], [[Generative AI]]
+  - supports:: [[Software Engineering]]
+  - related-to:: [[Tips and Tricks]], [[GPT Engineer]]
 
 - ### Content
   - {{video https://www.youtube.com/watch?v=yj73GIEKmLI}}

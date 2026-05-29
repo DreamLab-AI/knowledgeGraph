@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:virtual-economy-domain",
   "@type": "Class",
   "label": "Virtual Economy Domain",
-  "definition": "The conceptual and technical framework encompassing all economic activities within metaverse environments, including NFT marketplaces, virtual real estate trading, digital goods commerce, cryptocurrency transactions, and tokenized asset exchanges that operate through blockchain-verified ownership...",
+  "definition": "The conceptual and technical framework encompassing all economic activities within metaverse environments, including NFT marketplaces, virtual real estate trading, digital goods commerce, cryptocurrency transactions, and tokenised asset exchanges that operate through blockchain-verified ownership and smart contract automation.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -64,6 +65,52 @@ public:: true
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:nft-marketplace",
+        "label": "NFT Marketplace"
+      },
+      {
+        "@id": "urn:ngm:class:creator-economy",
+        "label": "Creator Economy"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-currency",
+        "label": "Virtual Currency"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:play-to-earn-p2-e",
+        "label": "Play-to-Earn (P2E)"
+      },
+      {
+        "@id": "urn:ngm:class:digital-marketplace",
+        "label": "Digital Marketplace"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:tokenization",
+        "label": "Tokenization"
+      },
+      {
+        "@id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      }
+    ]
   }
 }
 ```
@@ -107,6 +154,15 @@ public:: true
   - belongs-to-domain:: [[metaverse]]
 - ### Relationships
   - is-subclass-of:: [[Digital Economy]]
+  - Has Part: [[NFT Marketplace]]
+  - Has Part: [[Creator Economy]]
+  - Has Part: [[Virtual Currency]]
+  - Requires: [[Smart Contract]]
+  - Requires: [[Blockchain]]
+  - Uses: [[Tokenization]]
+  - Uses: [[Cryptocurrency]]
+  - Enables: [[Play-to-Earn (P2E)]]
+  - Enables: [[Digital Marketplace]]
 - ### Content
   - ## Overview
   - The virtual economy domain encompasses digital commerce within metaverse environments. The Global Metaverse NFT Market is expected to reach $3.08 billion by 2033, from $335.9 million in 2023, growing at 24.8% CAGR. Currently 600 million unique users engage across platforms including Roblox, Fortnite, and Minecraft. The overall metaverse market could reach $2.35 trillion by 2032. NFT marketplaces enable trading of virtual real estate, avatars, fashion, and artwork.

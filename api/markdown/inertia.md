@@ -7,7 +7,9 @@
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - is-subclass-of:: [[Robotics]]
+  - **partOf**: [[Kinematics]], [[Control System]]
+  - **requires**: [[Actuator]], [[Robotics Control]]
+  - **relatedTo**: [[Autonomous Navigation]], [[Robotics]]
 
 - ### Content
   - ### Original Content

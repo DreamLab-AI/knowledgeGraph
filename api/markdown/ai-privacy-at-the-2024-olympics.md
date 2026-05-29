@@ -1,12 +1,14 @@
 - ### Definition
-  - AI privacy at the 2024 Olympics is a concept within the ngm domain.
+  - A case study examining AI-based surveillance at the Paris 2024 Olympic Games: real-time video analytics, geolocation tracking, behavioural pattern analysis, and predictive event detection deployed by Viet, Orange Business, Chaps Vision, and Windex. French legislative modifications expanded surveillance powers, raising significant GDPR compliance questions regarding continuous monitoring, data retention, algorithmic bias, and the post-event normalisation of pervasive AI surveillance infrastructure.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:AIPrivacyAtThe2024Olympics
   - owl-role:: Concept
 
 - ### Relationships
-  - bridges-to:: [[Cryptography]]
+  - uses:: [[Computer Vision]], [[Object Detection and Tracking]]
+  - relatedTo:: [[Bias]], [[Fairness]], [[Privacy By Design]], [[Cryptography]]
+  - contrastsWith:: [[Responsible AI]], [[AI Ethics]]
 
 - ### Content
   - # Implementation at the Olympics

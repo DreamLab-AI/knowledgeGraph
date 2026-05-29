@@ -37,9 +37,10 @@ public:: true
   "@id": "urn:ngm:class:ray-marching",
   "@type": "Class",
   "label": "Ray Marching",
-  "definition": "Ray Marching is a spatial computing concept and a type of Rendering Technique.",
+  "definition": "Ray Marching is a rendering technique in which a ray is incrementally stepped through a scene, evaluating a signed distance field (SDF) at each step to determine proximity to geometry. The step size adapts to the SDF value (sphere tracing), enabling efficient rendering of implicit surfaces, volumetric effects, soft shadows, and ambient occlusion that are impractical with triangle-based rasterisation. It is widely implemented in GPU shader programs and is foundational to procedural 3D scene generation in real-time and offline contexts.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-display-and-rendering",
@@ -50,7 +51,21 @@ public:: true
       "label": "Rendering Technique"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:shader", "label": "Shader"},
+      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:global-illumination", "label": "Global Illumination"},
+      {"@id": "urn:ngm:class:procedural-generation", "label": "Procedural Generation"},
+      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:rasterization", "label": "Rasterization"},
+      {"@id": "urn:ngm:class:ray-tracing", "label": "Ray Tracing"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -80,14 +95,16 @@ public:: true
 
 
 - ### Definition
-  - RayMarching is a concept within the ngm domain.
+  - Ray Marching is a rendering technique in which a ray is incrementally stepped through a scene, evaluating a signed distance field (SDF) at each step to determine proximity to geometry. The step size adapts to the SDF value (sphere tracing), enabling efficient rendering of implicit surfaces, volumetric effects, soft shadows, and ambient occlusion that are impractical with triangle-based rasterisation. It is widely implemented in GPU shader programs.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:RayMarching
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires:: [[Shader]], [[GPU Compute]]
+  - enables:: [[Global Illumination]], [[Procedural Generation]], [[Real-Time Rendering]]
+  - contrastsWith:: [[Rasterization]], [[Ray Tracing]]
 
 - ### Content
   # RayMarching

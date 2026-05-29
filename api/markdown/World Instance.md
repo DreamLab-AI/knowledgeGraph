@@ -42,15 +42,33 @@ public:: true
   "@id": "urn:ngm:class:world-instance",
   "@type": "Class",
   "label": "World Instance",
-  "definition": "World Instance is a spatial computing concept and a type of spatial-computing.",
+  "definition": "A runtime instantiation of a virtual world template that maintains isolated state, physics simulation, and user interactions for a bounded set of concurrent participants. World instances enable scalable multi-user virtual environments through dynamic spawning, load balancing, and state checkpointing, as seen in MMO dungeons, battle royale matches, and social VR rooms.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
     }
   ],
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:virtual-world", "label": "Virtual World"},
+      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:physics-simulation", "label": "Physics Simulation"},
+      {"@id": "urn:ngm:class:scene-graph", "label": "Scene Graph"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -95,7 +113,10 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **Part-of**: [[Virtual World]] (runtime copy of a template), [[Metaverse]] platform layer
+  - **Requires**: [[Physics Simulation]] (isolated per-instance), [[Scene Graph]] (entity state management)
+  - **Enables**: [[Virtual Reality]] experiences, [[Spatial Computing]] multi-user scenarios
+  - **Uses**: [[Digital Twin]] patterns for state persistence and crash recovery
 
 - ### Content
   - ### Primary Definition

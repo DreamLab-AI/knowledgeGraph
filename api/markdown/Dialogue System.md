@@ -64,7 +64,7 @@ public:: true
   "label": "Dialogue System",
   "definition": "A Dialogue System (conversational AI system) is an AI application that engages in natural language conversations with users through text or speech, managing multi-turn interactions, maintaining conversational context, and executing task-oriented or open-domain dialogues.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-application",
@@ -75,6 +75,20 @@ public:: true
       "label": "Natural Language Processing"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:natural-language-understanding", "label": "Natural Language Understanding"},
+      {"@id": "urn:ngm:class:transformer", "label": "Transformer"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:question-answering", "label": "Question Answering"},
+      {"@id": "urn:ngm:class:conversational-ai", "label": "Conversational AI"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:chatbots", "label": "Chatbots"},
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -146,7 +160,12 @@ bridges-to:: [[Telecollaboration]]
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Natural Language Understanding]]
+  - requires [[Transformer]]
+  - enables [[Question Answering]]
+  - enables [[Conversational AI]]
+  - relatedTo [[Chatbots]]
+  - relatedTo [[Reinforcement Learning]]
 
 - ### Content
   - A Dialogue System (conversational AI system) is an AI application that engages in natural language conversations with users through text or speech, managing multi-turn interactions, maintaining conversational context, and executing task-oriented or open-domain dialogues. Modern dialogue systems employ transformer-based language models, dialogue state tracking, and reinforcement learning to power virtual assistants, customer service chatbots, and conversational interfaces.

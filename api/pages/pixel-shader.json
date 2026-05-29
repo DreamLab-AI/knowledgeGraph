@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:pixel-shader",
   "domain": "spatial-computing",
-  "definition": "Pixel Shader is a spatial computing concept and a type of Metaverse.",
+  "definition": "A programmable GPU stage that executes once per rasterised fragment, determining each pixel's final colour and depth by sampling textures, computing lighting models, and applying material properties. Pixel shaders operate in a massively parallel fashion and are the primary site for physically-based rendering calculations in real-time graphics pipelines.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-display-and-rendering",
@@ -18,20 +18,52 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:vertex-shader",
+        "label": "Vertex Shader"
+      },
+      {
+        "id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      }
+    ],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:compute-shader",
+        "label": "Compute Shader"
+      },
+      {
+        "id": "urn:ngm:class:shader",
+        "label": "Shader"
+      }
+    ]
   },
   "wikilinks": [
     {

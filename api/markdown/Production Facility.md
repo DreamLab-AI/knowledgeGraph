@@ -37,15 +37,31 @@ public:: true
   "@id": "urn:ngm:class:production-facility",
   "@type": "Class",
   "label": "Production Facility",
-  "definition": "Production Facility is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A Production Facility is a specialised physical and digital infrastructure for professional metaverse and immersive content creation, encompassing motion-capture stages, volumetric capture rigs, LED volume virtual production sets, GPU render farms, and cloud-based asset management pipelines. It integrates real-time rendering engines with collaborative tools enabling distributed global teams to produce high-fidelity 3D and spatial content.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
     }
   ],
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:motion-capture", "label": "Motion Capture"},
+      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
+      {"@id": "urn:ngm:class:asset-management", "label": "Asset Management"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:3-d-content-pipeline", "label": "3D Content Pipeline"},
+      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:content-production-workflow", "label": "Content Production Workflow"},
+      {"@id": "urn:ngm:class:3-d-asset", "label": "3D Asset"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -76,14 +92,16 @@ public:: true
 
 
 - ### Definition
-  - ProductionFacility is a concept within the ngm domain.
+  - A Production Facility is a specialised physical and digital infrastructure for professional metaverse and immersive content creation, encompassing motion-capture stages, volumetric capture rigs, LED volume virtual production sets, GPU render farms, and cloud-based asset management pipelines. It integrates real-time rendering engines with collaborative tools enabling distributed global teams to produce high-fidelity 3D and spatial content.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:ProductionFacility
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart: [[Motion Capture]], [[Real-Time Rendering]], [[Asset Management]]
+  - uses: [[3D Content Pipeline]], [[Game Engine]]
+  - enables: [[Content Production Workflow]], [[3D Asset]]
 
 - ### Content
   # ProductionFacility

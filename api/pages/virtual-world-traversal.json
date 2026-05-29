@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:virtual-world-traversal",
   "domain": "spatial-computing",
-  "definition": "Virtual World Traversal is a spatial computing concept and a type of spatial-computing.",
+  "definition": "Virtual World Traversal is the set of techniques, interfaces, and protocols that enable users and agents to navigate between and within persistent virtual environments in the metaverse \u2014 including scene transitions, cross-world identity portability, spatial audio transitions, and continuous presence mechanics.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -13,11 +13,28 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:virtual-environment",
+        "label": "Virtual Environment"
+      },
+      {
+        "id": "urn:ngm:class:navigation",
+        "label": "Navigation"
+      },
+      {
+        "id": "urn:ngm:class:virtual-presence",
+        "label": "Virtual Presence"
+      },
+      {
+        "id": "urn:ngm:class:avatar-system",
+        "label": "Avatar System"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
@@ -26,8 +43,38 @@
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:metaverse-technology",
+        "label": "Metaverse Technology"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "id": "urn:ngm:class:virtual-world",
+        "label": "Virtual World"
+      },
+      {
+        "id": "urn:ngm:class:open-world",
+        "label": "Open World"
+      },
+      {
+        "id": "urn:ngm:class:world-building",
+        "label": "World Building"
+      },
+      {
+        "id": "urn:ngm:class:scene-management",
+        "label": "Scene Management"
+      },
+      {
+        "id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      }
+    ]
   },
   "wikilinks": [
     {

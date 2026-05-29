@@ -33,15 +33,26 @@ public:: true
   "@id": "urn:ngm:class:blocktrails",
   "@type": "Class",
   "label": "blocktrails",
-  "definition": "blocktrails is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A concept node representing resource trails related to blockchain exploration tools and Nostr-based document sharing infrastructure. In the NarrativeGoldmine context, blocktrails links to split-screen markdown editing and decentralised document storage via NosDAV and the Nostr protocol.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
     }
   ],
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:blockchain-core-concepts", "label": "blockchain core concepts"},
+      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:knowledge-base", "label": "Knowledge Base"},
+      {"@id": "urn:ngm:class:web-technology", "label": "Web Technology"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -72,14 +83,15 @@ public:: true
 
 
 - ### Definition
-  - blocktrails is a concept within the ngm domain.
+  - A concept node representing resource trails related to blockchain exploration tools and Nostr-based document sharing infrastructure. In the NarrativeGoldmine context, blocktrails links to split-screen markdown editing and decentralised document storage via NosDAV and the Nostr protocol.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:Blocktrails
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **Related-to**: [[blockchain core concepts]], [[Decentralised Identity]] (Nostr keypair-based)
+  - **Uses**: [[Knowledge Base]] (document storage), [[Web Technology]] (NosDAV protocol)
 
 - ### Content
   - [Split Screen Markdown Editor](https://nostr.app/doc.html?uri=https%3A%2F%2Fnosdav.net%2Fdeea5fc0740b6bf2ffcacde8bcd73f5b085057bfcea5e533a96a9700a736a382%2Fpublic%2Fmindmaps%2Fsethue.md)

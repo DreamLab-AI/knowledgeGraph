@@ -8,6 +8,10 @@
 
 - ### Relationships
   - is-subclass-of:: [[Educational Technology]]
+  - requires:: [[Immersive Technology]], [[Virtual Environment]]
+  - uses:: [[Immersive Learning]], [[Virtual Destination]]
+  - enables:: [[Immersive Experience]]
+  - relatedTo:: [[Virtual Museum Tour]], [[Cultural Heritage XR Experience]]
 
 - ### Content
 

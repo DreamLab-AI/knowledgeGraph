@@ -66,20 +66,54 @@ public:: true
   "@id": "urn:ngm:class:model-parameters",
   "@type": "Class",
   "label": "Model Parameters",
-  "definition": "Model Parameters is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "The learnable internal variables — weights and biases — of a neural network that are adjusted during training to minimise a loss function. Parameter count determines model capacity; foundation models commonly operate with billions to trillions of parameters, making parameter-efficient fine-tuning and management a central concern in contemporary AI development.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
     }
   ],
-  "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:training",
+        "label": "Training"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:ai-technique",
+        "label": "AI Technique"
+      }
+    ]
   }
 }
 ```
@@ -149,7 +183,12 @@ public:: true
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Requires [[Neural Network]]
+  - Requires [[Training]]
+  - Uses [[Machine Learning]]
+  - Related To [[Natural Language Processing]]
+  - Related To [[Artificial Intelligence]]
+  - Supports [[AI Technique]]
 
 - ### Content
   - ### Primary Definition

@@ -46,7 +46,7 @@ public:: true
   "@id": "urn:ngm:class:generative-model",
   "@type": "Class",
   "label": "Generative Model",
-  "definition": "Machine learning models that can generate new data samples by learning the underlying distribution of training data, including architectures like GANs, VAEs, diffusion models, and transformers.",
+  "definition": "A class of machine learning models that learn the underlying probability distribution of training data and can sample novel instances from that distribution. Architectures include generative adversarial networks, variational autoencoders, diffusion models, normalising flows, and autoregressive transformers, covering domains such as text, image, audio, and code generation.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -59,7 +59,25 @@ public:: true
       "label": "Machine Learning"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:generative-adversarial-network", "label": "Generative Adversarial Network"},
+      {"@id": "urn:ngm:class:autoencoder", "label": "Autoencoder"},
+      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
+      {"@id": "urn:ngm:class:latent-diffusion", "label": "Latent Diffusion"},
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
+      {"@id": "urn:ngm:class:deep-generative-model", "label": "Deep Generative Model"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:text-generation", "label": "Text Generation"},
+      {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
+      {"@id": "urn:ngm:class:transformer", "label": "Transformer"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

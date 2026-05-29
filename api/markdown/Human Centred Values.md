@@ -48,7 +48,8 @@ public:: true
   "label": "Human Centred Values",
   "definition": "AI systems should be designed and operated in ways that respect the rule of law, human rights, democratic values and diversity, with appropriate safeguards to ensure human determination and control over consequential decisions (human agency), whilst incorporating mechanisms to protect fairness an...",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
@@ -59,7 +60,23 @@ public:: true
       "label": "Metaverse governance and safeguarding"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:human-oversight", "label": "Human Oversight"},
+      {"@id": "urn:ngm:class:accountability", "label": "Accountability"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:trustworthy-ai", "label": "Trustworthy AI"},
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:fairness", "label": "Fairness"},
+      {"@id": "urn:ngm:class:value-alignment", "label": "Value Alignment"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:ai-risk", "label": "AI Risk"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -108,7 +125,10 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires**: [[Human Oversight]], [[Accountability]]
+  - **supports**: [[Trustworthy AI]], [[AI Governance]]
+  - **relatedTo**: [[Fairness]], [[Value Alignment]]
+  - **contrastsWith**: [[AI Risk]]
 
 - ### Content
   - AI systems should be designed and operated in ways that respect the rule of law, human rights, democratic values and diversity, with appropriate safeguards to ensure human determination and control over consequential decisions (human agency), whilst incorporating mechanisms to protect fairness and human dignity.

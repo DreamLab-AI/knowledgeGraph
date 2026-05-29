@@ -1,12 +1,13 @@
 - ### Definition
-  - Patent is a concept within the ngm domain.
+  - A time-limited exclusive right granted by a sovereign authority to an inventor for a novel, inventive, and industrially applicable invention, in exchange for public disclosure. In the AI and spatial computing landscape, patents protect novel model architectures, training methods, compression algorithms, and hardware accelerators, with global filings exceeding 3.7 million applications annually as of 2024.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:Patent
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - relatedTo: [[copyright]], [[AI Regulation]], [[AI Ethics]]
+  - supports: [[Compliance Framework]], [[Conformity Assessment]]
 
 - ### Content
   - # Patent Landscape 2025: Global IP Trends & Innovation Analysis

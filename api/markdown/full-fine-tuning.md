@@ -7,7 +7,13 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires** [[Large Language Models]] — full fine-tuning is most commonly applied to large pre-trained language models
+  - **requires** [[Transfer Learning]] — full fine-tuning is a transfer learning strategy adapting all model weights
+  - **contrastsWith** [[Continued Pre Training]] — CPT uses unsupervised objectives; FFT adapts with labelled task data
+  - **uses** [[Gradient Descent]] — all parameters are updated via gradient descent during fine-tuning
+  - **uses** [[Deep Learning]] — full fine-tuning operates on deep neural network architectures
+  - **relatedTo** [[Overfitting]] — small task datasets risk catastrophic forgetting and task-specific overfitting
+  - **relatedTo** [[Early Stopping]] — early stopping is a key regularisation strategy during full fine-tuning
 
 - ### Content
   - A fine-tuning approach that updates all parameters of a pre-trained model during adaptation to a downstream task. Full fine-tuning provides maximum flexibility and performance potential but requires substantial computational resources and memory.

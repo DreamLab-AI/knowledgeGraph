@@ -1,12 +1,14 @@
 - ### Definition
-  - WebTechnology is a concept within the ngm domain.
+  - The distributed infrastructure, protocols, and frameworks underpinning the World Wide Web and decentralised Web3 applications, including content-addressed storage (IPFS), blockchain naming systems (ENS), decentralised identity (DIDs), and smart-contract-governed application hosting that shifts data ownership from centralised providers to users.
 
 - ### Semantic Classification
   - owl-class:: blockchain:WebTechnology
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **Has-part**: [[IPFS]], [[ENS]], [[Web3]]
+  - **Enables**: [[Decentralised Identity]], [[Content Addressing]]
+  - **Uses**: [[Smart Contract]] (application logic), [[Decentralized Storage]]
 
 - ### Content
 

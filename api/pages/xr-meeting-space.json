@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:xr-meeting-space",
   "domain": "spatial-computing",
-  "definition": "Virtual collaboration environments accessed through extended reality devices that enable remote participants to interact as avatars or volumetric representations in shared 3D spaces, supporting meetings, presentations, design reviews, and team collaboration with spatial audio and gesture-based co...",
+  "definition": "Virtual collaboration environments accessed through extended reality devices that enable remote participants to interact as avatars or volumetric representations in shared 3D spaces, supporting meetings, presentations, design reviews, and team collaboration with spatial audio and gesture-based communication. XR meeting spaces extend traditional video conferencing by providing persistent, spatially aware environments where presence, proximity, and embodied interaction improve engagement and coordination.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -17,21 +17,61 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:virtual-reality-platform",
+        "label": "Virtual Reality Platform"
+      },
+      {
+        "id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      },
+      {
+        "id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:distributed-work",
+        "label": "Distributed Work"
+      },
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:haptics",
+        "label": "Haptics"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-application",
+        "label": "Metaverse Application"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -50,16 +50,33 @@ public:: true
   "@id": "urn:ngm:class:domain",
   "@type": "Class",
   "label": "Domain",
-  "definition": "Domain is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A Domain is a coherent and bounded sphere of knowledge or subject area within formal ontology engineering, establishing the scope of conceptualisation—the set of entities, relationships, and axioms characterising a particular area of discourse. Domains serve as fundamental organising principles enabling modular knowledge organisation and interoperability between specialised knowledge systems, realised through namespace declarations, import mechanisms, and modular ontology structures.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:domain-ontology", "label": "Domain Ontology"},
+      {"@id": "urn:ngm:class:ontology", "label": "Ontology"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
+      {"@id": "urn:ngm:class:semantic-web", "label": "Semantic Web"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:semantic-web-standards", "label": "Semantic Web Standards"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:metaverse-domain", "label": "Metaverse Domain"},
+      {"@id": "urn:ngm:class:blockchain-domain", "label": "Blockchain Domain"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -105,12 +122,15 @@ public:: true
 
 
 - ### Definition
-  - Domain is a concept within the ngm domain.
+  - A Domain is a coherent and bounded sphere of knowledge or subject area within formal ontology engineering, establishing the scope of conceptualisation—the set of entities, relationships, and axioms characterising a particular area of discourse. Domains serve as fundamental organising principles enabling modular knowledge organisation and interoperability between specialised knowledge systems, realised through namespace declarations, import mechanisms, and modular ontology structures.
 - ### Semantic Classification
   - owl-class:: infrastructure:Domain
   - owl-role:: Concept
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **relatedTo**: [[Domain Ontology]], [[Ontology]]
+  - **enables**: [[Knowledge Graph]], [[Semantic Web]]
+  - **uses**: [[Semantic Web Standards]]
+  - **hasPart**: [[Metaverse Domain]], [[Blockchain Domain]]
   - bridges-to:: [[Blockchain]] (bc)
 - ### Content
   ## Definition

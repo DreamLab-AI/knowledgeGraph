@@ -42,15 +42,30 @@ public:: true
   "@id": "urn:ngm:class:making-available",
   "@type": "Class",
   "label": "Making Available",
-  "definition": "The supply of an AI system for distribution or use on the Union market in the course of a commercial activity, wher in return for payment or free of charge.",
+  "definition": "Under EU AI Act Article 3(14), Making Available is the supply of an AI system for distribution or use on the Union market in the course of a commercial activity, whether in return for payment or free of charge. It is broader than Placing on the Market, covering all subsequent distributions after initial market entry, and triggers compliance obligations for distributors, providers, and authorised representatives throughout the AI value chain.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
       "label": "Governance and Safety"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:conformity-assessment", "label": "Conformity Assessment"},
+      {"@id": "urn:ngm:class:supply-chain", "label": "Supply Chain"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:placing-on-the-market", "label": "Placing on the Market"},
+      {"@id": "urn:ngm:class:distributor", "label": "Distributor"},
+      {"@id": "urn:ngm:class:provider", "label": "Provider"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -95,7 +110,9 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires:: [[Conformity Assessment]], [[Supply Chain]]
+  - relatedTo:: [[Placing on the Market]], [[Distributor]], [[Provider]]
+  - partOf:: [[AI Governance]]
 
 - ### Content
   - The supply of an AI system for distribution or use on the Union market in the course of a commercial activity, whether in return for payment or free of charge.

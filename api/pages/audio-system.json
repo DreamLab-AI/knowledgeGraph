@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:audio-system",
   "domain": "spatial-computing",
-  "definition": "Audio System is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "An Audio System in spatial computing manages the capture, processing, and playback of sound within immersive environments, encompassing spatial audio rendering, voice communication, and environmental sound simulation. It coordinates audio hardware and software to deliver positional audio that reinforces presence and enables natural verbal interaction in virtual and mixed-reality contexts.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-display-and-rendering",
@@ -14,11 +14,29 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      },
+      {
+        "id": "urn:ngm:class:audio-spatialization",
+        "label": "Audio Spatialization"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +45,12 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:audio-processing-system",
+        "label": "Audio Processing System"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:named-entity",
   "domain": "artificial-intelligence",
-  "definition": "Person, organization, location, or other named entity.",
+  "definition": "A Named Entity is a real-world object or concept denoted by a proper noun\u2014typically a person, organisation, location, geopolitical entity, date, time expression, monetary value, or product\u2014that can be identified and classified within text by a named-entity recognition system. Named entities form the primary subjects, objects, and contextual anchors of factual statements, making their accurate identification a prerequisite for downstream information-extraction, relation-extraction, question-answering, and knowledge-graph construction tasks. The boundary and category of a named entity are determined by an annotation schema and domain ontology, so the same text span may be categorised differently across biomedical, legal, and news domains.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -13,21 +13,77 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:named-entity-recognition",
+        "label": "Named Entity Recognition"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-base",
+        "label": "Knowledge Base"
+      },
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:tokenization",
+        "label": "Tokenization"
+      },
+      {
+        "id": "urn:ngm:class:conditional-random-field",
+        "label": "Conditional Random Field"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:vocabulary",
+        "label": "Vocabulary"
+      },
+      {
+        "id": "urn:ngm:class:token",
+        "label": "Token"
+      },
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      },
+      {
+        "id": "urn:ngm:class:pattern-recognition",
+        "label": "Pattern Recognition"
+      }
+    ]
   },
   "wikilinks": [
     {

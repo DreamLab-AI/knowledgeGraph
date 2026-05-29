@@ -8,6 +8,12 @@
 
 - ### Relationships
   - bridges-to:: [[Consensus Protocol]] (domain: blockchain→ai, type: coordination)
+  - uses:: [[Differential Privacy]]
+  - uses:: [[Edge Computing]]
+  - requires:: [[Model Training]]
+  - supports:: [[Privacy Preserving Data Sharing]]
+  - supports:: [[AI Ethics]]
+  - relatedTo:: [[Distributed Systems]]
 
 - ### Content
   - Federated learning enables collaborative model training across decentralised data sources whilst preserving privacy through on-device computation, secure aggregation, and blockchain coordination, enabling organisations to collaborate without centralising sensitive information.

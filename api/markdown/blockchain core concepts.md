@@ -166,15 +166,33 @@ public:: true
   "@id": "urn:ngm:class:blockchain-core-concepts",
   "@type": "Class",
   "label": "blockchain core concepts",
-  "definition": "Core blockchain concepts encompass distributed ledger technology fundamentals including Consensus|consensus mechanisms (ProofOfWork|PoW, ProofOfStake|PoS), CryptographyFundamentals|cryptographic primitives (PublicKeyEncryption|PKC, DigitalSignature|signatures), and",
+  "definition": "The foundational technical concepts of blockchain and distributed ledger technology, encompassing consensus mechanisms (PoW, PoS), cryptographic primitives (public-key encryption, digital signatures, hash functions, Merkle trees), smart contracts, tokens, and governance frameworks. These concepts collectively enable trustless transaction validation, DeFi, NFTs, and metaverse digital economies.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
     }
   ],
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:consensus-algorithm", "label": "Consensus Algorithm"},
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
+      {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"},
+      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:dao", "label": "DAO"},
+      {"@id": "urn:ngm:class:zero-knowledge", "label": "Zero Knowledge"},
+      {"@id": "urn:ngm:class:layer2-scaling", "label": "Layer2Scaling"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"},
+      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"}
+    ]
+  },
   "quality": 0.4,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -374,7 +392,9 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **Has-part**: [[Consensus Algorithm]], [[Smart Contract]], [[Hash Function]], [[Merkle Tree]]
+  - **Enables**: [[DAO]] (decentralised governance), [[Zero Knowledge]] proofs, [[Layer2Scaling]]
+  - **Uses**: [[Distributed Ledger]] (immutable append-only record), [[Digital Signature]] (transaction authorisation)
 
 - ### Content
   - Blockchain core concepts encompass distributed ledger fundamentals including consensus mechanisms, cryptographic primitives, data structures, transactions, smart contracts, and governance frameworks enabling DeFi, NFTs, and metaverse economies with scalability and regulatory considerations.

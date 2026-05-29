@@ -1,16 +1,24 @@
 - ### Definition
-  - Reinforcement Learning from Human Feedback (RLHF) is a training methodology that fine-tunes language models using reward signals derived from human preference judgements.
+  - Reinforcement Learning from Human Feedback (RLHF) is a training methodology that aligns large language models with human preferences by first training a reward model on human comparison judgements, then optimising the language model policy against that reward model using reinforcement learning — typically Proximal Policy Optimisation. RLHF enables models to be steered towards outputs that human annotators prefer for helpfulness, harmlessness, and honesty, going beyond what is achievable with supervised fine-tuning on static demonstration data alone. Variants including Direct Preference Optimisation (DPO) and Constitutional AI extend or simplify the original three-stage pipeline.
 
 - ### Semantic Classification
   - owl-class:: rlhf:RLHF
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- Stub page — relationships inherited from referencing pages -->
+  - requires [[Reward Model]]
+  - requires [[Human Feedback]]
+  - requires [[Reinforcement Learning]]
+  - enables [[AI Alignment]]
+  - relatedTo [[Direct Preference Optimisation]]
+  - relatedTo [[Constitutional AI]]
 
 - ### Content
-  - #Public page
-  - automatically published
+  RLHF addresses a fundamental limitation of supervised fine-tuning: language models trained on human-written demonstrations inherit the statistical patterns of the training corpus but lack an explicit signal for preferred behaviour in novel or ambiguous situations. The RLHF pipeline consists of three stages: supervised fine-tuning on demonstration data; reward model training on human preference pairs (which of two model outputs is preferred); and RL optimisation of the language model to maximise reward model scores while constraining deviation from the supervised baseline via a KL-divergence penalty.
+
+  Proximal Policy Optimisation (PPO) is the standard RL algorithm used in this stage, balancing sample efficiency with policy stability. The reward model is itself a language model with a linear head that outputs a scalar preference score. A critical challenge is reward hacking — the policy discovering inputs that maximise the reward model score without corresponding to genuinely preferred outputs, exploiting the reward model's distributional limitations.
+
+  Direct Preference Optimisation (DPO) bypasses the explicit reward model by deriving an optimal policy directly from preference pairs using a reparameterisation, substantially simplifying training and showing competitive results on alignment benchmarks. Constitutional AI, developed by Anthropic, introduces a self-critique loop where the model revises its outputs against a set of principles before human feedback is collected, reducing reliance on costly human annotation for safety-relevant refusals.
 
 - ### Provenance
   - sources::

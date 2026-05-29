@@ -5,29 +5,73 @@
   "public": true,
   "classIri": "urn:ngm:class:neuromorphic-chip",
   "domain": "artificial-intelligence",
-  "definition": "Computer chips designed to mimic the structure and function of biological neural networks, using analog circuits to emulate neuronal behavior for energy-efficient AI processing.",
+  "definition": "A neuromorphic chip is a specialised integrated circuit designed to emulate the structure and dynamics of biological neural networks, employing analogue or mixed-signal circuits to implement spiking neuron models that process information through sparse, event-driven spikes rather than continuous clock-driven computation. This brain-inspired architecture achieves orders-of-magnitude improvements in energy efficiency for pattern recognition, sensory processing, and on-device inference compared with conventional von Neumann processors. Representative implementations include IBM TrueNorth and Intel Loihi.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure (Category)"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.75,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:edge-ai-accelerator",
+        "label": "Edge AI Accelerator"
+      },
+      {
+        "id": "urn:ngm:class:on-device-learning",
+        "label": "On-Device Learning"
+      },
+      {
+        "id": "urn:ngm:class:tiny-ml",
+        "label": "TinyML"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:inference-hardware",
+        "label": "Inference Hardware"
+      },
+      {
+        "id": "urn:ngm:class:parallel-processing",
+        "label": "Parallel Processing"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ai-hardware",
+        "label": "AI Hardware"
+      },
+      {
+        "id": "urn:ngm:class:neuromorphic-computing",
+        "label": "Neuromorphic Computing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cognitive-architecture",
+        "label": "Cognitive Architecture"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:tensor-processing-unit",
+        "label": "Tensor Processing Unit"
+      }
+    ]
   },
   "wikilinks": [
     {

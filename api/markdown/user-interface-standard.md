@@ -9,6 +9,12 @@
 - ### Relationships
   - is-subclass-of:: [[Standards]]
   - bridges-to:: [[Sensor Input]] (domain: rb) for sensor-based interaction technologies
+  - Standardized By [[Standards Body]]
+  - Requires [[Accessibility]]
+  - Requires [[Accessibility Standard]]
+  - Enables [[Interoperability]]
+  - Enables [[Human Computer Interaction]]
+  - Supports [[User Interface]]
 
 - ### Content
 

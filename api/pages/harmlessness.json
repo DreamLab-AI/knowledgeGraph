@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:harmlessness",
   "domain": "spatial-computing",
-  "definition": "An alignment objective ensuring AI systems avoid generating outputs that could cause harm, including toxic, dangerous, misleading, or unical content. Harmlessness represents a key dimension of AI safety alongside helpfulness and honesty.",
+  "definition": "An alignment objective ensuring AI systems avoid generating outputs that could cause harm, including toxic, dangerous, misleading, or unethical content. Harmlessness is one of the three core alignment dimensions alongside helpfulness and honesty, implemented through techniques such as Constitutional AI and RLHF to constrain model behaviour without sacrificing utility.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-governance-and-safety",
@@ -13,21 +13,57 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ai-risk",
+        "label": "AI Risk"
+      },
+      {
+        "id": "urn:ngm:class:harmful-bias",
+        "label": "Harmful Bias"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      },
+      {
+        "id": "urn:ngm:class:value-alignment",
+        "label": "Value Alignment"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:constitutional-ai",
+        "label": "Constitutional AI"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      }
+    ]
   },
   "wikilinks": [
     {

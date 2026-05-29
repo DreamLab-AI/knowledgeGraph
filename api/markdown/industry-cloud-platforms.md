@@ -1,5 +1,7 @@
 - ### Definition
-  - [Generated from Gartner emerging tech analysis]
+  - Industry Cloud Platforms (ICPs) are vertically specialised cloud solutions that bundle industry-specific applications, AI-enriched data services, compliance tooling, and horizontal business functions (finance, HR, supply chain) onto a unified cloud-native stack. Unlike generic IaaS or PaaS offerings, ICPs embed deep domain knowledge — regulatory schemas, data models, and workflow patterns — so that organisations in healthcare, financial services, manufacturing, or retail can rapidly deploy industry-relevant workloads without building bespoke integrations from scratch.
+
+  - ICPs represent the next evolutionary stage following Infrastructure-as-a-Service and Platform-as-a-Service, and were identified by Gartner as a top strategic technology trend for 2024. Major cloud providers (AWS, Microsoft, Google) and consulting firms (PwC, Kyndryl) have launched vertical offerings; composability capabilities allow IT leaders to modularly assemble and customise these platforms to match accelerating industry disruptions.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:IndustryCloudPlatforms

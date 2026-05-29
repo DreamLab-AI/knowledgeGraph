@@ -7,7 +7,11 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - bridges-to:: [[Governance]] (bc)
+  - bridges-to:: [[Governance]]
+  - requires:: [[EU AI Act]], [[Compliance Framework]]
+  - supports:: [[Governance]], [[AI Governance and Ethics]]
+  - relatedTo:: [[Risk Management]], [[Privacy]]
+  - standardizedBy:: [[Governance Framework]]
 
 - ### Content
   - A natural or legal person located or established in the Union who has received and accepted a written mandate from a provider of an AI system or a general-purpose AI model to, respectively, perform and carry out on its behalf the tasks and procedures established by this Regulation.

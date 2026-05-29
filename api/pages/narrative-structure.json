@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:narrative-structure",
   "domain": "spatial-computing",
-  "definition": "Narrative Structure is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "The organisational framework governing how a story's events, character arcs, and thematic elements are arranged across time to produce meaning and audience engagement. In spatial and interactive contexts, narrative structure governs branching paths, player agency, and the sequencing of immersive experiences within virtual worlds and game environments.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -14,20 +14,48 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:game-narratives",
+        "label": "Game Narratives"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:immersive-entertainment",
+        "label": "Immersive Entertainment"
+      },
+      {
+        "id": "urn:ngm:class:virtual-world",
+        "label": "Virtual World"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:character-model",
+        "label": "Character Model"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:interactive-storytelling",
+        "label": "Interactive Storytelling"
+      },
+      {
+        "id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      }
+    ]
   },
   "wikilinks": [
     {

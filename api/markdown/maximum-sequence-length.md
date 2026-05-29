@@ -7,7 +7,12 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires** [[Positional Encoding]] — the encoding scheme defines the maximum positions representable
+  - **requires** [[Transformer]] — the transformer architecture sets the hard limit during training
+  - **enables** [[Context Window]] — maximum sequence length directly bounds the usable context window
+  - **dependsOn** [[Attention Mechanism]] — quadratic attention scaling is the primary computational constraint
+  - **dependsOn** [[Training Data]] — sequence length is fixed at training time and constrained by available data
+  - **contrastsWith** [[Token]] — tokens are the unit of measurement; sequence length is their upper count
 
 - ### Content
   - The longest sequence of tokens that a model can process in a single forward pass, constrained by positional encoding scheme and computational resources.

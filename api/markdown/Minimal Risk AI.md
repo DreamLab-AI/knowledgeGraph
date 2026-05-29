@@ -42,16 +42,33 @@ public:: true
   "@id": "urn:ngm:class:minimal-risk-ai",
   "@type": "Class",
   "label": "Minimal Risk AI",
-  "definition": "AI systems not classified as prohibited, high-risk, or limited-risk. These systems face no specific AI Act obligations beyond the general legal framework applicable to all products and services.",
+  "definition": "The residual tier in the EU AI Act's four-level risk pyramid, covering AI systems not classified as prohibited, high-risk, or limited-risk. Such systems carry no AI Act-specific compliance obligations and remain subject only to applicable horizontal legislation such as GDPR and product liability rules.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:high-risk-ai-system", "label": "High Risk AI System"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:regulatory-framework", "label": "Regulatory Framework"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
+      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
+      {"@id": "urn:ngm:class:transparency", "label": "Transparency"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"},
+      {"@id": "urn:ngm:class:accountability", "label": "Accountability"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -95,7 +112,13 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **contrastsWith** [[High Risk AI System]] — sits at the opposite end of the EU AI Act risk pyramid
+  - **partOf** [[Regulatory Framework]] — exists within the four-tier AI Act classification structure
+  - **relatedTo** [[AI Governance]] — governed by general AI governance principles rather than sector-specific rules
+  - **relatedTo** [[Responsible AI]] — voluntary codes of conduct encourage responsible AI practices
+  - **relatedTo** [[Transparency]] — transparency remains best practice even absent a legal mandate
+  - **dependsOn** [[Risk Management]] — initial risk classification determines minimal-risk status
+  - **dependsOn** [[Accountability]] — providers retain accountability under general product liability law
 
 - ### Content
   - AI systems not classified as prohibited, high-risk, or limited-risk. These systems face no specific AI Act obligations beyond the general legal framework applicable to all products and services.

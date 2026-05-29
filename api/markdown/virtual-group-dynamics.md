@@ -1,5 +1,5 @@
 - ### Definition
-  - Virtual Group Dynamics is a concept within the mv domain.
+  - **Virtual Group Dynamics** describes the psychological and behavioural patterns of interaction, role formation, norm development, decision-making, conflict, and cohesion within groups operating in virtual environments, shaped by unique affordances of digital mediation such as anonymity, persistence, and spatial distribution. Key phenomena include the online disinhibition effect, avatar-mediated identity, emergent leadership hierarchies, and scalable broadcast communication structures.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:VirtualGroupDynamics
@@ -7,6 +7,10 @@
 
 - ### Relationships
   - is-subclass-of:: [[Metaverse]]
+  - **relatedTo**: [[Social Presence]], [[Proteus Effect]] — group behaviour is modulated by perceived social presence and avatar-identity congruence
+  - **requires**: [[Avatar]], [[Spatial Audio]] — embodied group interaction depends on avatar representation and spatially accurate audio cues
+  - **partOf**: [[Metaverse]] — virtual group dynamics are a core sociological dimension of metaverse environments
+  - **enables**: [[Governance Framework]] — understanding group dynamics informs the design of community governance and moderation systems
 
 - ### Content
 

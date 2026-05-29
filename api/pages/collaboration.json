@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:collaboration",
   "domain": "infrastructure",
-  "definition": "Collaboration is a technology infrastructure concept and a type of Collaboration Platform.",
+  "definition": "Collaboration in telecollaboration contexts encompasses the coordinated activities, shared goal pursuit, and collective problem-solving enabled by digital technologies across distributed participants, integrating synchronous communication, asynchronous coordination, and awareness mechanisms that support effective teamwork regardless of geographic location.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
@@ -18,20 +18,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:collaboration-technology",
+        "label": "Collaboration Technology"
+      },
+      {
+        "id": "urn:ngm:class:virtual-collaboration",
+        "label": "Virtual Collaboration"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:social-vr",
+        "label": "Social VR"
+      },
+      {
+        "id": "urn:ngm:class:immersive-communication",
+        "label": "Immersive Communication"
+      }
+    ]
   },
   "wikilinks": [
     {

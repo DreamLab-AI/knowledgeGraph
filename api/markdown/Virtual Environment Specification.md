@@ -48,7 +48,8 @@ public:: true
   "label": "Virtual Environment Specification",
   "definition": "Technical standards and requirements documents that define the parameters, capabilities, and constraints of virtual environments, including rendering requirements, interaction models, physics simulation rules, and interoperability protocols.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -64,6 +65,40 @@ public:: true
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:asset-portability",
+        "label": "Asset Portability"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:rendering-engine",
+        "label": "Rendering Engine"
+      },
+      {
+        "@id": "urn:ngm:class:gltf-standard",
+        "label": "Gltf Standard"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ]
   }
 }
 ```
@@ -109,6 +144,12 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Technical Standards]]
+  - Requires [[Interoperability]]
+  - Standardized By [[Standards]]
+  - Enables [[Asset Portability]]
+  - Enables [[Metaverse]]
+  - Related To [[Rendering Engine]]
+  - Related To [[Gltf Standard]]
 
 - ### Content
 

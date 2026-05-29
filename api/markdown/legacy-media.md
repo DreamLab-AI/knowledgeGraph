@@ -1,12 +1,16 @@
 - ### Definition
-  - legacy media is a concept within the ngm domain.
+  - Legacy media refers to established, traditional forms of mass communication — including print, broadcast television, and radio — that preceded the digital internet era. These institutions hold significant cultural authority and are undergoing structural disruption as AI-driven platforms alter content distribution and audience economics.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:LegacyMedia
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Contrasts With [[social media]]
+  - Related To [[Media Theory]]
+  - Related To [[Media Richness Theory]]
+  - Related To [[Digital Content Creation]]
+  - Bridges To [[Digital Transformation]]
 
 - ### Content
   - # stub page

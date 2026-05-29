@@ -52,7 +52,8 @@ public:: true
   "label": "User Interface Standard",
   "definition": "Specifications and guidelines that define consistent patterns, components, and interactions for user interfaces in metaverse and XR environments, ensuring usability, accessibility, and cross-platform consistency.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-standards-and-interop",
@@ -68,6 +69,40 @@ public:: true
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "@id": "urn:ngm:class:accessibility-standard",
+        "label": "Accessibility Standard"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:user-interface",
+        "label": "User Interface"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:standards-body",
+        "label": "Standards Body"
+      }
+    ]
   }
 }
 ```
@@ -119,6 +154,12 @@ public:: true
 - ### Relationships
   - is-subclass-of:: [[Standards]]
   - bridges-to:: [[Sensor Input]] (domain: rb) for sensor-based interaction technologies
+  - Standardized By [[Standards Body]]
+  - Requires [[Accessibility]]
+  - Requires [[Accessibility Standard]]
+  - Enables [[Interoperability]]
+  - Enables [[Human Computer Interaction]]
+  - Supports [[User Interface]]
 
 - ### Content
 

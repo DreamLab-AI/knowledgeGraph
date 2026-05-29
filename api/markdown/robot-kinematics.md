@@ -8,6 +8,11 @@
 
 - ### Relationships
   - is-subclass-of:: [[Robotics]]
+  - partOf [[Robotics]]
+  - enables [[Motion Planning]]
+  - enables [[Sensor Fusion]]
+  - relatedTo [[Surgical Robot]]
+  - relatedTo [[Service Robot]]
 
 - ### Content
   - ### Original Content

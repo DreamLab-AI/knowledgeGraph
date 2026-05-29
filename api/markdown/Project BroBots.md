@@ -50,15 +50,33 @@ public:: true
   "@id": "urn:ngm:class:project-bro-bots",
   "@type": "Class",
   "label": "Project BroBots",
-  "definition": "Project BroBots is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Project BroBots is a multi-agent research initiative to identify, classify, and counter toxic online content using NLP-based harm detection and counter-narrative generation. It employs fine-tuned large language models on social media corpora, the Agentic Alliance tech stack, and is motivated by the harms of automated bot-driven misinformation and harassment across internet platforms.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:agents", "label": "Agents"},
+      {"@id": "urn:ngm:class:agentic-alliance", "label": "Agentic Alliance"},
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:content-moderation", "label": "Content Moderation"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:digital-society-harms", "label": "Digital Society Harms"},
+      {"@id": "urn:ngm:class:death-of-the-internet", "label": "Death of the Internet"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:projects", "label": "Projects"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -110,14 +128,17 @@ public:: true
 
 
 - ### Definition
-  - Project BroBots is a concept within the ngm domain.
+  - Project BroBots is a multi-agent research initiative to identify, classify, and counter toxic online content using NLP-based harm detection and counter-narrative generation. It employs fine-tuned large language models on social media corpora, the Agentic Alliance tech stack, and is motivated by the harms of automated bot-driven misinformation and harassment across internet platforms.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:ProjectBroBots
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses: [[Agents]], [[Agentic Alliance]], [[Natural Language Processing]]
+  - enables: [[Content Moderation]]
+  - contrastsWith: [[Digital Society Harms]], [[Death of the Internet]]
+  - partOf: [[Projects]]
 
 - ### Content
   - # Project: BroBots

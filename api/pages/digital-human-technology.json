@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:digital-human-technology",
   "domain": "spatial-computing",
-  "definition": "Digital Human Technology is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "A class of technologies for creating photorealistic or stylised computer-generated human representations, encompassing 3D body and face modelling, motion capture-driven animation, procedural skin and cloth simulation, and real-time rendering pipelines. Digital human technology enables believable avatars, virtual actors, and AI-driven conversational agents in spatial computing, entertainment, and training applications.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -13,17 +13,48 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:digital-humans",
+        "label": "Digital Humans"
+      },
+      {
+        "id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      },
+      {
+        "id": "urn:ngm:class:animation-software",
+        "label": "Animation Software"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:rendering-engine",
+        "label": "Rendering Engine"
+      },
+      {
+        "id": "urn:ngm:class:computer-graphics",
+        "label": "Computer Graphics"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:avatar-creation",
+        "label": "Avatar Creation"
+      },
+      {
+        "id": "urn:ngm:class:character-model",
+        "label": "Character Model"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

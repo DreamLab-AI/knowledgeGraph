@@ -46,9 +46,11 @@ public:: true
   "@id": "urn:ngm:class:algorithmic-framework",
   "@type": "Class",
   "label": "Algorithmic Framework",
-  "definition": "A algorithmic framework component in the Artificial Intelligence domain that required by ProceduralContentGeneration.",
+  "definition": "An Algorithmic Framework is a structured collection of algorithms, data structures, and design principles that together provide a reusable computational scaffold for solving a class of related problems. It abstracts common patterns of search, optimisation, inference, and decision-making into composable building blocks that can be instantiated and extended for specific applications. Algorithmic frameworks underpin fields such as machine learning, procedural content generation, automated planning, and symbolic reasoning by providing principled, reproducible computational architectures.",
   "domain": "artificial-intelligence",
   "maturity": "emerging",
+  "qualityScore": 0.75,
+  "quality": 0.75,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
@@ -59,7 +61,28 @@ public:: true
       "label": "AI Framework"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:algorithm", "label": "Algorithm"},
+      {"@id": "urn:ngm:class:optimization-algorithm", "label": "Optimization Algorithm"},
+      {"@id": "urn:ngm:class:graph-algorithms", "label": "Graph Algorithms"},
+      {"@id": "urn:ngm:class:learning-algorithm", "label": "Learning Algorithm"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:procedural-content-generation", "label": "Procedural Content Generation"},
+      {"@id": "urn:ngm:class:automated-planning", "label": "Automated Planning"},
+      {"@id": "urn:ngm:class:inference", "label": "Inference"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:machine-learning-framework", "label": "Machine Learning Framework"},
+      {"@id": "urn:ngm:class:digital-twin-framework", "label": "Digital Twin Framework"},
+      {"@id": "urn:ngm:class:bayesian-inference", "label": "Bayesian Inference"},
+      {"@id": "urn:ngm:class:optimization-technique", "label": "Optimization Technique"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -111,7 +134,9 @@ public:: true
   - bridges-to:: [[Digital Twin]]
 
 - ### Content
-  AlgorithmicFramework — content pending enrichment.
+  An Algorithmic Framework provides a reusable computational scaffold that abstracts common patterns of search, optimisation, inference, and decision-making. In artificial intelligence, exemplary frameworks include dynamic programming (breaking complex optimisation into overlapping sub-problems), Monte Carlo methods (stochastic sampling for probabilistic inference), and evolutionary algorithms (population-based heuristic search). These frameworks are applied across domains from game-playing agents and robotic planning to procedural content generation for virtual worlds.
+
+  Choosing an appropriate algorithmic framework requires analysing problem structure: the topology of the state space, the availability of gradient information, the computational budget, and the degree of uncertainty present. Well-designed frameworks expose composable primitives — cost functions, transition models, policy representations — so that domain-specific instantiation remains minimal while theoretical guarantees (convergence, approximation bounds) are preserved from the abstract framework.
 
 - ### Provenance
   - sources:: Generated from bridge validation

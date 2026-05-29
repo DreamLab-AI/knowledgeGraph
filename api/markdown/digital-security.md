@@ -1,5 +1,5 @@
 - ### Definition
-  - Digital Security is a concept within the metaverse domain. Further enrichment pending.
+  - Digital Security encompasses the technical controls, protocols, and governance frameworks protecting digital systems, data, and identities from unauthorised access, tampering, and exploitation. It integrates cryptographic mechanisms, access management policies, threat detection, and incident response to ensure confidentiality, integrity, and availability of digital assets and infrastructure across networked environments.
 
 bridges-to:: [[Blockchain]]
 
@@ -8,7 +8,10 @@ bridges-to:: [[Blockchain]]
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires**: [[Cryptographic Security]], [[Cybersecurity]]
+  - **uses**: [[Zero Trust Architecture]], [[Post-Quantum Cryptography]]
+  - **supports**: [[Digital Identity]], [[Data Security]]
+  - **relatedTo**: [[AI Security]]
 
 - ### Content
 

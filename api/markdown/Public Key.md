@@ -66,7 +66,7 @@ public:: true
   "@id": "urn:ngm:class:public-key",
   "@type": "Class",
   "label": "Public Key",
-  "definition": "Publicly-shared cryptographic key within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "The publicly shareable component of an asymmetric key pair, derived from the private key via elliptic curve or RSA mathematics, used in blockchain systems to derive wallet addresses, verify digital signatures, and enable encrypted communication without transmitting secret material.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -83,7 +83,25 @@ public:: true
       "label": "CryptographicPrimitive"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:elliptic-curve-cryptography", "label": "Elliptic Curve Cryptography"},
+      {"@id": "urn:ngm:class:asymmetric-encryption", "label": "Asymmetric Encryption"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:private-key", "label": "Private Key"},
+      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
+      {"@id": "urn:ngm:class:cryptographic-keys", "label": "Cryptographic Keys"},
+      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"},
+      {"@id": "urn:ngm:class:sha-256", "label": "SHA-256"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:digital-signature-verification", "label": "Digital Signature Verification"},
+      {"@id": "urn:ngm:class:nft-ownership-proof", "label": "NFT Ownership Proof"},
+      {"@id": "urn:ngm:class:cryptographic-verification", "label": "Cryptographic Verification"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

@@ -7,7 +7,12 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Large Language Models]]
+  - requires [[Transformer]]
+  - enables [[Natural Language Processing]]
+  - enables [[Generative AI]]
+  - uses [[Sampling]]
+  - uses [[Prompt Engineering]]
 
 - ### Content
   - Text Generation is the NLP task of producing coherent, contextually appropriate natural language text using neural language models, including applications such as story generation, article writing, code generation, and creative content production. Modern text generation employs transformer-based language models (GPT, T5, BLOOM) with autoregressive or sequence-to-sequence architectures, controllable generation techniques, and prompt engineering to produce human-quality text across diverse domains and styles.

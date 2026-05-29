@@ -58,7 +58,7 @@ public:: true
   "@id": "urn:ngm:class:privacy-preserving-data-mining",
   "@type": "Class",
   "label": "Privacy Preserving Data Mining",
-  "definition": "Privacy-Preserving Data Mining is a research field and set of techniques enabling extraction of useful knowledge patterns from datasets while protecting sensitive information and preventing disclosure of individual records, balancing utility of discovered patterns with privacy protection of under...",
+  "definition": "Privacy-Preserving Data Mining (PPDM) is a research field and collection of techniques that enable extraction of useful knowledge patterns—including association rules, classifiers, clusters, and outliers—from datasets while preventing disclosure of sensitive individual records. PPDM methods span data perturbation (noise addition, randomisation, synthetic data generation before mining), cryptographic protocols (secure multi-party computation for distributed pattern discovery, homomorphic encryption for encrypted operations), anonymisation transformations (k-anonymity, l-diversity, t-closeness applied before dataset release), and differential-privacy query mechanisms that inject calibrated noise into published pattern outputs. The field navigates an inherent privacy–utility trade-off: stronger privacy guarantees typically reduce pattern accuracy, and compositions of multiple analyses risk cumulative information leakage through inference and re-identification attacks.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -67,7 +67,32 @@ public:: true
       "label": "AI Governance and Ethics"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:differential-privacy", "label": "Differential Privacy"},
+      {"@id": "urn:ngm:class:secure-multi-party-computation", "label": "Secure Multi-Party Computation"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:privacy", "label": "Privacy"},
+      {"@id": "urn:ngm:class:data-sharing", "label": "Data Sharing"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:synthetic-data", "label": "Synthetic Data"},
+      {"@id": "urn:ngm:class:anomaly-detection", "label": "Anomaly Detection"},
+      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"},
+      {"@id": "urn:ngm:class:homomorphic-encryption-for-machine-learning", "label": "Homomorphic Encryption for Machine Learning"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:membership-inference", "label": "Membership Inference"},
+      {"@id": "urn:ngm:class:model-inversion", "label": "Model Inversion"},
+      {"@id": "urn:ngm:class:pattern-recognition", "label": "Pattern Recognition"},
+      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"}
+    ]
+  },
+  "qualityScore": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

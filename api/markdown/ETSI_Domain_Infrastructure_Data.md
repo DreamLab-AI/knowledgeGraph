@@ -50,16 +50,34 @@ public:: true
   "@id": "urn:ngm:class:etsi-domain-infrastructure-data",
   "@type": "Class",
   "label": "ETSI_Domain_Infrastructure_Data",
-  "definition": "The foundational ETSI technical and architectural framework enabling trustworthy, sovereign data exchange within metaverse and digital ecosystems through decentralised data spaces, spatial intelligence integration, and policy-driven governance standards.",
+  "definition": "The ETSI Infrastructure Data domain is the foundational technical and architectural framework enabling trustworthy, sovereign data exchange within metaverse and digital ecosystems through decentralised data spaces, spatial intelligence integration, and policy-driven governance standards. It operationalises Trustworthy Data Spaces via NGSI-LD APIs, Federated Catalogs, Policy Enforcement Points, and F5G backbone connectivity to address data sovereignty, security, and real-to-virtual integration across distributed networks.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-data-management",
       "label": "Data Management"
     }
   ],
-  "quality": 0.4,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:storage-layer", "label": "Storage Layer"},
+      {"@id": "urn:ngm:class:data-management", "label": "Data Management"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
+      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:distributed-ledger-technology-dlt", "label": "Distributed Ledger Technology (DLT)"},
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:etsi-domain-infrastructure", "label": "ETSI_Domain_Infrastructure"},
+      {"@id": "urn:ngm:class:etsi-domain-data-management", "label": "ETSI Domain: Data Management"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -113,7 +131,10 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **hasPart**: [[Storage Layer]], [[Data Management]]
+  - **requires**: [[Data Governance]], [[Verifiable Credentials]]
+  - **enables**: [[Distributed Ledger Technology (DLT)]], [[Edge Computing]]
+  - **relatedTo**: [[ETSI_Domain_Infrastructure]], [[ETSI Domain: Data Management]]
 
 - ### Content
   - The ETSI Infrastructure and Data domain governs foundational data exchange, storage, and governance for metaverse systems through trustworthy data spaces, sovereign data control, and policy-driven interoperability enabling secure cross-platform data coordination.

@@ -42,9 +42,10 @@ public:: true
   "@id": "urn:ngm:class:vfx-tools",
   "@type": "Class",
   "label": "VFX Tools",
-  "definition": "VFX Tools is a type of Visual Effects in the spatial computing domain.",
+  "definition": "VFX Tools are software applications and pipelines used to create, composite, and render visual effects for film, television, real-time engines, and immersive media. They encompass particle simulation, fluid and cloth dynamics, compositing, colour grading, and procedural generation capabilities, and increasingly interface with real-time rendering engines for deployment in spatial computing contexts.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-display-and-rendering",
@@ -60,6 +61,34 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:rendering-technique",
+        "label": "Rendering Technique"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:particle-system",
+        "label": "Particle System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:animation-software",
+        "label": "Animation Software"
+      },
+      {
+        "@id": "urn:ngm:class:rendering-engine",
+        "label": "Rendering Engine"
+      }
+    ]
   }
 }
 ```
@@ -91,14 +120,18 @@ public:: true
 
 
 - ### Definition
-  - V F X Tools is a concept within the metaverse domain. Further enrichment pending.
+  - VFX Tools are software applications and pipelines used to create, composite, and render visual effects for film, television, real-time engines, and immersive media. They encompass particle simulation, fluid and cloth dynamics, compositing, colour grading, and procedural generation capabilities, and increasingly interface with real-time rendering engines for deployment in spatial computing contexts.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:VFXTools
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses [[Rendering Pipeline]]
+  - Uses [[Particle System]]
+  - Enables [[Rendering Technique]]
+  - Related To [[Animation Software]]
+  - Related To [[Rendering Engine]]
 
 - ### Content
 

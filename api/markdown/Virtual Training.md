@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:virtual-training",
   "@type": "Class",
   "label": "Virtual Training",
-  "definition": "The use of VR, AR, and simulation technologies to create immersive learning experiences for workforce development, enabling employees to practice skills, experience scenarios, and learn procedures in safe, repeatable virtual environments with measurable outcomes and faster knowledge retention.",
+  "definition": "The use of VR, AR, and simulation technologies to create immersive learning experiences for workforce development, enabling employees to practise skills, rehearse high-stakes scenarios, and learn procedures in safe, repeatable virtual environments with measurable outcomes. Empirical evidence — including Walmart's programme covering over one million employees — demonstrates 75% material retention and up to 4x focus improvement over e-learning. The global market was valued at USD 380 billion in 2024 and is projected to reach USD 1.42 trillion by 2034.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-application",
@@ -59,7 +60,24 @@ public:: true
       "label": "Workforce Development"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:simulation", "label": "Simulation"},
+      {"@id": "urn:ngm:class:immersive-technology", "label": "Immersive Technology"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:virtual-environment", "label": "Virtual Environment"},
+      {"@id": "urn:ngm:class:immersive-learning", "label": "Immersive Learning"},
+      {"@id": "urn:ngm:class:simulation-engine", "label": "Simulation Engine"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:augmented-connected-workforce", "label": "Augmented Connected Workforce"},
+      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:virtual-factory", "label": "Virtual Factory"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -109,6 +127,10 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Workforce Development]]
+  - requires:: [[Simulation]], [[Immersive Technology]]
+  - uses:: [[Virtual Environment]], [[Immersive Learning]], [[Simulation Engine]]
+  - enables:: [[Augmented Connected Workforce]], [[Immersive Experience]]
+  - relatedTo:: [[Virtual Factory]]
 
 - ### Content
 

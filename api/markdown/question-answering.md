@@ -7,7 +7,12 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Natural Language Processing]]
+  - requires [[Information Retrieval]]
+  - enables [[Dialogue System]]
+  - enables [[Retrieval-Augmented Generation]]
+  - uses [[Transformer]]
+  - uses [[Knowledge Graph]]
 
 - ### Content
   - Question Answering (QA) is the NLP task of automatically generating accurate answers to natural language questions posed by users, either by extracting answers from text passages (extractive QA) or generating free-form responses (generative QA). QA systems employ reading comprehension models, retrieval-augmented generation, and knowledge reasoning to power applications including search engines, virtual assistants, and customer support.

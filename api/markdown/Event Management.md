@@ -42,20 +42,56 @@ public:: true
   "@id": "urn:ngm:class:event-management",
   "@type": "Class",
   "label": "Event Management",
-  "definition": "Event Management is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "The planning, coordination, technical orchestration, and delivery of virtual or hybrid events within spatial computing and metaverse platforms, encompassing scheduling, access control, audience management, live streaming, and post-event analytics for concerts, conferences, and social gatherings.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
     }
   ],
-  "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:virtual-concerts",
+        "label": "Virtual Concerts"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-event",
+        "label": "Virtual Event"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:virtual-community-platform",
+        "label": "Virtual Community Platform"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-event-platform",
+        "label": "Virtual Event Platform"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:metaverse-venue",
+        "label": "Metaverse Venue"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-location",
+        "label": "Virtual Location"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ]
   }
 }
 ```
@@ -87,14 +123,20 @@ public:: true
 
 
 - ### Definition
-  - Event Management is a concept within the metaverse domain. Further enrichment pending.
+  - The planning, coordination, technical orchestration, and delivery of virtual or hybrid events within spatial computing and metaverse platforms, encompassing scheduling, access control, audience management, live streaming, and post-event analytics for concerts, conferences, and social gatherings.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:EventManagement
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Enables: [[Virtual Concerts]]
+  - Enables: [[Virtual Event]]
+  - Uses: [[Virtual Community Platform]]
+  - Uses: [[Virtual Event Platform]]
+  - Related To: [[Metaverse Venue]]
+  - Related To: [[Virtual Location]]
+  - Related To: [[Access Control]]
 
 - ### Content
 

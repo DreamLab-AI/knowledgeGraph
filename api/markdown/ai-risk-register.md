@@ -1,19 +1,22 @@
-- ### Definition
-  - AI Risk Register is a structured repository that systematically documents, tracks, and manages identified risks associated with AI systems throughout their lifecycle, recording risk descriptions, severity assessments, likelihood evaluations, assigned ownership, mitigation strategies, and current status to support risk governance and decision-making. This register captures diverse risk categories including technical risks (model performance failures, robustness issues, adversarial vulnerabilities), ethical risks (fairness violations, discrimination, bias amplification), legal and compliance risks (regulatory violations, liability exposure, contractual breaches), operational risks (system availability, integration failures, resource constraints), security and privacy risks (data breaches, privacy violations, adversarial attacks), reputational risks (public backlash, stakeholder concerns, brand damage), and societal risks (unintended consequences, systemic impacts, dual-use concerns). Each risk entry typically documents risk identifier and title, detailed description of the risk scenario, affected systems and stakeholders, likelihood rating (rare, unlikely, possible, likely, almost certain), consequence or severity rating (insignificant, minor, moderate, major, catastrophic), overall risk level (likelihood × consequence), assigned risk owner responsible for mitigation, current mitigation measures and controls, residual risk after mitigation, risk status (open, in-progress, mitigated, accepted), review dates and audit trail. The register supports risk governance by enabling risk-based decision-making, prioritization of mitigation efforts, compliance demonstration, trend analysis, and continuous monitoring. Implementation aligns with enterprise risk management frameworks (ISO 31000), AI-specific risk standards (ISO/IEC 23894:2023 AI risk management), and regulatory requirements including EU AI Act Article 9 risk management systems and financial services operational risk frameworks.
+### Definition
 
-- ### Semantic Classification
-  - owl-class:: artificial-intelligence:AIRiskRegister
-  - owl-role:: Process
-  - owl-inferred:: ai:VirtualProcess
-  - belongs-to-domain:: [[AIEthicsDomain]]
-  - implemented-in-layer:: [[ConceptualLayer]]
+An AI Risk Register is a structured artefact that systematically documents, tracks, and manages identified risks associated with AI systems throughout their lifecycle. Each entry records a risk identifier, description, affected systems and stakeholders, likelihood and consequence ratings, overall risk level, assigned owner, current mitigation controls, residual risk, and review history. The register supports risk-based governance by enabling prioritisation of mitigation efforts, regulatory compliance demonstration, and continuous monitoring across technical, ethical, legal, operational, security, and societal risk categories.
 
-- ### Relationships
-  - bridges-to:: [[Smart Contract]] (domain: bc)
+### Relationships
 
-- ### Content
-  AI Risk Register — content pending enrichment.
+The AI Risk Register is a subclass of both AI Governance and Ethics and AI Risk Management. It contains as parts an Audit Trail (providing an immutable history of risk status changes and decisions) and Risk Assessment (the process that feeds entries into the register). It requires AI Governance structures to authorise risk appetite thresholds, a Compliance Framework to map risks to regulatory obligations, and Accountability mechanisms to assign and enforce risk ownership. The register enables Compliance Monitoring by providing the authoritative risk inventory against which control effectiveness is measured, supports AI Safety by surfacing failure modes before deployment, and promotes Transparency with stakeholders. It supports the broader AI Governance Framework and Regulatory Compliance reporting. Related concepts include Fairness (whose violation constitutes a distinct ethical risk category), Bias (a primary technical and ethical risk driver), Explainability (both a mitigation tool and an independent risk dimension), and Risk Management as the enterprise-wide discipline it extends.
 
-- ### Provenance
-  - sources:: [[ISO 31000]], [[ISO/IEC 23894:2023]], [[EU AI Act]]
-  - migration-date:: 2026-04-26T00:00:00Z
+### Content
+
+The AI Risk Register adapts established enterprise risk management practices — codified in ISO 31000 — to the distinctive characteristics of AI systems: model drift, distributional shift, opaque decision-making, and emergent behaviour that may not manifest until deployment at scale. Unlike conventional IT risk registers, AI risk registers must capture the dynamic nature of model behaviour over time, including performance degradation as input distributions evolve away from the training distribution and the risk of feedback loops where model outputs influence future training data.
+
+Standard risk register schemas for AI follow a 5×5 likelihood-consequence matrix. Likelihood descriptors (rare, unlikely, possible, likely, almost certain) are calibrated to deployment context — a rare event in a high-volume autonomous system may still trigger thousands of adverse outcomes annually. Consequence descriptors (insignificant to catastrophic) span financial loss, physical harm, discriminatory outcome, reputational damage, and regulatory sanction. Risk level (the product cell) determines prioritisation: risks rated high or critical require formal treatment plans with defined owners, milestones, and budget; medium risks require monitoring; low risks may be accepted with periodic review.
+
+ISO/IEC 23894:2023 provides AI-specific guidance for integrating risk management into the AI system lifecycle, mapping to ISO 31000 while addressing AI-distinctive concerns: explainability gaps that prevent risk owners from understanding why a failure occurred, data governance risks upstream of the model, and the challenge of defining acceptance criteria for probabilistic outputs. Regulatory frameworks impose additional mandatory register elements: the EU AI Act Article 9 requires a documented risk management system for high-risk AI applications that includes an identification and analysis of known and foreseeable risks, an estimation and evaluation of those risks, and an evaluation of residual risks after mitigation.
+
+Operationally, the register is a living document embedded in a broader AI governance workflow. Risk identification workshops, red-team exercises, fairness audits, and bias detection analyses generate candidate entries. Risk owners — typically senior engineers, product managers, or compliance officers — are assigned at intake and are accountable for treatment progress. Integration with compliance monitoring dashboards enables real-time tracking of control effectiveness, and linkage to the audit trail ensures that every status change is logged with actor, timestamp, and rationale to satisfy regulatory audit requirements.
+
+### Provenance
+
+- sources:: ISO 31000, ISO/IEC 23894:2023
+- migration-date:: 2026-04-26T00:00:00Z

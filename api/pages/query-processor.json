@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:query-processor",
   "domain": "infrastructure",
-  "definition": "Query Processor is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A system component responsible for parsing, optimising, and executing queries against a data store or knowledge base, including spatial queries in 3D environments. Query processors translate declarative query expressions into efficient execution plans, leveraging indexing structures such as octrees, k-d trees, R-trees, and scene graph hierarchies to minimise retrieval latency.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-data-management",
@@ -13,21 +13,53 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:database-query",
+        "label": "Database Query"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:database-system",
+        "label": "Database System"
+      },
+      {
+        "id": "urn:ngm:class:scene-graph",
+        "label": "Scene Graph"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

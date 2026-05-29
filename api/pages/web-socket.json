@@ -5,29 +5,52 @@
   "public": true,
   "classIri": "urn:ngm:class:web-socket",
   "domain": "artificial-intelligence",
-  "definition": "WebSocket is a communication protocol providing full-duplex channels over a single TCP connection, enabling low-latency bidirectional data exchange between clients and servers.",
+  "definition": "WebSocket is an application-layer protocol (RFC 6455) that establishes a persistent, full-duplex communication channel over a single TCP connection, initiated via an HTTP/1.1 upgrade handshake. Unlike HTTP's request-response model, WebSocket allows both client and server to send data frames independently and at any time after the connection is established, making it the standard mechanism for low-latency bidirectional communication in web applications such as real-time dashboards, collaborative editing, chat systems, and live AI inference streaming. The protocol defines a framing mechanism with opcodes for text, binary, ping/pong keepalives, and connection close.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:real-time-processing",
+        "label": "Real-time Processing"
+      },
+      {
+        "id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

@@ -42,9 +42,10 @@ public:: true
   "@id": "urn:ngm:class:economic-systems",
   "@type": "Class",
   "label": "Economic Systems",
-  "definition": "Economic Systems is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Economic Systems are the structured sets of rules, institutions, and mechanisms that govern the production, distribution, and consumption of goods, value, and digital assets within a platform or environment. In spatial computing and Web3 contexts, economic systems encompass tokenomics, smart-contract-enforced incentive structures, and decentralised exchange mechanisms.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -56,6 +57,34 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      },
+      {
+        "@id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:blockchain-economics",
+        "label": "Blockchain Economics"
+      },
+      {
+        "@id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      }
+    ]
   }
 }
 ```
@@ -87,14 +116,18 @@ public:: true
 
 
 - ### Definition
-  - Economic Systems is a concept within the metaverse domain. Further enrichment pending.
+  - Economic Systems are the structured sets of rules, institutions, and mechanisms that govern the production, distribution, and consumption of goods, value, and digital assets within a platform or environment. In spatial computing and Web3 contexts, economic systems encompass tokenomics, smart-contract-enforced incentive structures, and decentralised exchange mechanisms.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:EconomicSystems
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Has Part [[Tokenomics]]
+  - Has Part [[Token Economics]]
+  - Requires [[Smart Contract]]
+  - Related To [[Blockchain Economics]]
+  - Related To [[DAO Governance]]
 
 - ### Content
 

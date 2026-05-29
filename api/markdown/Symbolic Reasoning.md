@@ -42,7 +42,7 @@ public:: true
   "@id": "urn:ngm:class:symbolic-reasoning",
   "@type": "Class",
   "label": "Symbolic Reasoning",
-  "definition": "Symbolic Reasoning is a artificial intelligence concept and a type of Reasoning.",
+  "definition": "A family of AI techniques that represent knowledge as explicit symbols, rules, and logical relations and derive new conclusions through formal inference mechanisms such as resolution, forward/backward chaining, or constraint propagation. Symbolic reasoning underpins expert systems, knowledge graphs, and logic programming, and contrasts with sub-symbolic connectionist approaches while being combined with them in neuro-symbolic architectures.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -55,7 +55,27 @@ public:: true
       "label": "Reasoning"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:expert-systems", "label": "Expert Systems"},
+      {"@id": "urn:ngm:class:logic-programming", "label": "Logic Programming"},
+      {"@id": "urn:ngm:class:fuzzy-logic", "label": "Fuzzy Logic"},
+      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
+      {"@id": "urn:ngm:class:chain-of-thought-reasoning", "label": "Chain-of-Thought Reasoning"},
+      {"@id": "urn:ngm:class:mathematical-reasoning", "label": "Mathematical Reasoning"},
+      {"@id": "urn:ngm:class:automated-planning", "label": "Automated Planning"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:inference", "label": "Inference"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

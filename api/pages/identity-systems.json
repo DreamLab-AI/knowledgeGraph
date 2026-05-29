@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:identity-systems",
   "domain": "infrastructure",
-  "definition": "Identity Systems is a type of Infrastructure in the infrastructure domain.",
+  "definition": "Identity Systems are the technical and organisational frameworks that establish, manage, verify, and revoke digital identities for users, devices, and services. They encompass authentication mechanisms, credential issuance, public-key infrastructure, and decentralised identity models (self-sovereign identity, DIDs) that enable secure, interoperable identification across platforms and jurisdictions.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-security-and-identity",
@@ -14,16 +14,39 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

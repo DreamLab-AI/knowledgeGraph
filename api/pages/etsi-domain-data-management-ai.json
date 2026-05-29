@@ -8,7 +8,7 @@
   "definition": "Crossover domain for ETSI metaverse categorisation addressing data infrastructure supporting AI/ML workflows, training data management, model versioning, and inference serving.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure (Category)"
     },
     {

@@ -1,12 +1,14 @@
 - ### Definition
-  - Tourism Industry is a concept within the metaverse domain. Further enrichment pending.
+  The Tourism Industry encompasses the businesses, infrastructure, and services facilitating recreational and business travel, including accommodation, transport, attraction management, and destination marketing. In spatial computing contexts, it is a primary adopter of XR, virtual tourism, and location-based immersive experiences to enhance visitor engagement and extend reach beyond physical access.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:TourismIndustry
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: Virtual Tourism, Augmented Reality, Immersive Experience
+  - **relatedTo**: Cultural Heritage XR Experience, ETSI Domain Application + Tourism
+  - **enables**: Location Based Experience
 
 - ### Content
 

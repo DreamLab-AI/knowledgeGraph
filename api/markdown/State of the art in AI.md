@@ -78,16 +78,34 @@ public:: true
   "@id": "urn:ngm:class:state-of-the-art-in-ai",
   "@type": "Class",
   "label": "State of the art in AI",
-  "definition": "State of the art in AI is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "State of the Art in AI is a curated survey of the current frontier of artificial intelligence capability, covering large language models, generative AI, multimodal systems, hardware advances, and sociotechnical implications. It synthesises emerging research directions, benchmark performance milestones, and near-term deployment trajectories across proprietary and open-source AI ecosystems.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-research-area",
       "label": "AI Research Area"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:proprietary-large-language-models", "label": "Proprietary Large Language Models"},
+      {"@id": "urn:ngm:class:open-generative-ai-tools", "label": "Open Generative AI tools"},
+      {"@id": "urn:ngm:class:hardware-and-edge", "label": "Hardware and Edge"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:soon-next-later-ai-futurology", "label": "Soon-Next-Later (AI futurology)"},
+      {"@id": "urn:ngm:class:trust-and-safety", "label": "Trust and Safety"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:adoption-of-convergent-technologies", "label": "Adoption of Convergent Technologies"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:politics-law-privacy", "label": "Politics, Law, Privacy"},
+      {"@id": "urn:ngm:class:update-cycle", "label": "Update Cycle"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -173,14 +191,17 @@ public:: true
 
 
 - ### Definition
-  - State of the art in AI is a concept within the ngm domain.
+  - State of the Art in AI is a curated survey of the current frontier of artificial intelligence capability, covering large language models, generative AI, multimodal systems, hardware advances, and sociotechnical implications. It synthesises emerging research directions, benchmark performance milestones, and near-term deployment trajectories across proprietary and open-source AI ecosystems.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:StateOfTheArtInAI
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart:: Proprietary Large Language Models, Open Generative AI tools, Hardware and Edge
+  - relatedTo:: Soon-Next-Later (AI futurology), Trust and Safety
+  - enables:: Adoption of Convergent Technologies
+  - bridgesTo:: Politics Law Privacy, Update Cycle
 
 - ### Content
   - #Public page automatically published

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:presentation-3-a-conclusion",
   "domain": "infrastructure",
-  "definition": "Presentation%3A Conclusion is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "The concluding slide deck section of a presentation on generative AI and its societal significance. It synthesises key points about AI's role in society, addresses audience takeaways, and acknowledges contributors, serving as the closing narrative arc for a structured public or academic AI presentation.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-software-engineering",
@@ -14,7 +14,7 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -26,8 +26,26 @@
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:projects",
+        "label": "Projects"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": []

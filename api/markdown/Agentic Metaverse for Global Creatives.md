@@ -38,16 +38,31 @@ public:: true
   "@id": "urn:ngm:class:agentic-metaverse-for-global-creatives",
   "@type": "Class",
   "label": "Agentic Metaverse for Global Creatives",
-  "definition": "Agentic Metaverse for Global Creatives is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "A conceptual and technical framework for a decentralised, AI-agent-driven metaverse ecosystem enabling global creative collaboration, autonomous task execution, and value exchange. The architecture integrates Nostr for identity and communication, Bitcoin and Lightning Network for payments, and USD/Omniverse for 3D asset manipulation, with agentic actors managing task negotiation, content delivery, and digital-object provenance across interconnected virtual spaces.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-application",
       "label": "AI Application"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:agent-frameworks", "label": "Agent Frameworks"},
+      {"@id": "urn:ngm:class:nostr-protocol", "label": "Nostr Protocol"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:lightning-network", "label": "Lightning Network"},
+      {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"},
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
+      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -90,6 +105,13 @@ public:: true
   - owl-role:: Concept
 
 - ### Relationships
+  - **requires** [[Agent Frameworks]] — the architecture depends on multi-agent orchestration
+  - **requires** [[Nostr Protocol]] — decentralised identity and event communication layer
+  - **uses** [[Lightning Network]] — micropayment settlement between agents and users
+  - **uses** [[Digital Asset]] — 3D assets and tokens are the primary value objects
+  - **uses** [[Large Language Models]] — LLMs power autonomous task reasoning and content generation
+  - **enables** [[Digital Twin]] — the framework instantiates digital twins of creative spaces
+  - **enables** [[Metaverse]] — the architecture provides a blueprint for agentic metaverse infrastructure
   - bridges-to:: [[Digital Twin]]
 
 - ### Content

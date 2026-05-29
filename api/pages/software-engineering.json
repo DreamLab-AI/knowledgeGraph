@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:software-engineering",
   "domain": "infrastructure",
-  "definition": "Software Engineering is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Software Engineering is the disciplined application of systematic, quantifiable approaches to the development, operation, and maintenance of software. It encompasses requirements engineering, architectural design, implementation, testing, and DevOps practices for producing reliable, maintainable, and scalable systems. In metaverse and distributed real-time contexts, software engineering addresses concurrent state synchronisation, cross-platform compatibility, and asset pipeline management.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-software-engineering",
@@ -14,11 +14,25 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:software-architecture",
+        "label": "Software Architecture"
+      },
+      {
+        "id": "urn:ngm:class:software-testing",
+        "label": "Software Testing"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:system-integration",
+        "label": "System Integration"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +41,16 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "id": "urn:ngm:class:software-architecture",
+        "label": "Software Architecture"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

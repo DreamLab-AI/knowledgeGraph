@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:bestprompts",
   "domain": "infrastructure",
-  "definition": "bestprompts is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A curated collection of high-quality prompts, system instructions, and prompt engineering patterns for directing large language model behaviour across tasks including image generation, code synthesis, transcript processing, and writing style control. Serves as a practitioner reference library for reproducible AI-assisted workflows.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-software-engineering",
@@ -14,19 +14,42 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:knowledge-base",
+        "label": "Knowledge Base"
+      }
+    ],
     "relatedTo": []
   },
   "wikilinks": [],

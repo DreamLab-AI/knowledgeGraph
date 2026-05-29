@@ -37,16 +37,33 @@ public:: true
   "@id": "urn:ngm:class:non-player-character",
   "@type": "Class",
   "label": "Non Player Character",
-  "definition": "Non Player Character is a spatial computing concept and a type of spatial-computing.",
+  "definition": "An autonomous, computer-controlled character in a virtual environment that follows scripted behaviour trees, finite state machines, or AI-driven policies to interact with human users and the scene. Modern NPCs increasingly leverage conversational AI and large language models to produce contextually responsive dialogue and adaptive behavioural patterns.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:state-machine", "label": "State Machine"},
+      {"@id": "urn:ngm:class:conversational-ai", "label": "Conversational AI"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:avatar", "label": "Avatar"},
+      {"@id": "urn:ngm:class:agent", "label": "Agent"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:animation", "label": "Animation"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:simulation", "label": "Simulation"},
+      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -76,14 +93,20 @@ public:: true
 
 
 - ### Definition
-  - NonPlayerCharacter is a concept within the ngm domain.
+  - An autonomous, computer-controlled character in a virtual environment that follows scripted behaviour trees, finite state machines, or AI-driven policies to interact with human users and the scene. Modern NPCs increasingly leverage conversational AI and large language models to produce contextually responsive dialogue and adaptive behavioural patterns.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:NonPlayerCharacter
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses** [[State Machine]] — finite state machines govern standard NPC behavioural transitions
+  - **uses** [[Conversational AI]] — LLM-driven conversational AI enables contextually rich NPC dialogue
+  - **hasPart** [[Avatar]] — NPCs are represented by avatar meshes and animations in the virtual environment
+  - **hasPart** [[Agent]] — each NPC is an autonomous agent with perception, decision-making, and action capabilities
+  - **dependsOn** [[Animation]] — animation rigs and blend trees drive NPC locomotion and expressiveness
+  - **enables** [[Simulation]] — large populations of NPCs enable complex social and ecological simulations
+  - **enables** [[Generative AI]] — generative AI models power NPC procedural dialogue and adaptive behaviour
 
 - ### Content
   # NonPlayerCharacter

@@ -54,16 +54,32 @@ public:: true
   "@id": "urn:ngm:class:relighting",
   "@type": "Class",
   "label": "relighting",
-  "definition": "relighting is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Relighting is a computer graphics and generative AI technique that computationally alters the illumination of an existing image or video, repositioning or replacing light sources to produce a different lighting environment without re-capturing the scene. Modern approaches use neural rendering models trained on diverse lighting conditions, enabling portrait relighting, object relighting, and scene relighting from a single input image. Open-source workflows in tools such as ComfyUI implement IC-Light and similar diffusion-based pipelines that rival or exceed proprietary solutions.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
     }
   ],
-  "quality": 0.35,
+  "quality": 0.7,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:neural-rendering", "label": "Neural Rendering"},
+      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
+      {"@id": "urn:ngm:class:physically-based-rendering", "label": "Physically Based Rendering"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:ai-video", "label": "AI Video"},
+      {"@id": "urn:ngm:class:inpainting", "label": "Inpainting"},
+      {"@id": "urn:ngm:class:control-net", "label": "ControlNet"},
+      {"@id": "urn:ngm:class:differentiable-rendering", "label": "Differentiable Rendering"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:comfy-ui-workflows", "label": "ComfyUI Workflows"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -119,14 +135,14 @@ public:: true
 
 
 - ### Definition
-  - relighting is a concept within the ngm domain.
+  - Relighting is a computer graphics and generative AI technique that computationally repositions or replaces light sources in an existing image or video without re-capturing the scene. Neural methods, including diffusion-based pipelines like IC-Light, learn to decompose a scene into intrinsic components (albedo, normals, shading) and then synthesise a relit version conditioned on a new lighting environment. Open-source implementations in ComfyUI now match or exceed commercial tools such as Magnific Relight, enabling portrait, object, and full-scene relighting for film, XR, and generative media workflows.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:Relighting
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Relies on neural rendering and diffusion models to estimate scene geometry and synthesise new illumination conditions.
 
 - ### Content
   - [[Global lighting | Image Based Lighting]] [[ComfyUI]] [lllyasviel/IC-Light: More relighting! (github.com)](https://github.com/lllyasviel/IC-Light)

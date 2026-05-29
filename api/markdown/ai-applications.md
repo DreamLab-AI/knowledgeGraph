@@ -8,7 +8,9 @@
 
 - ### Relationships
   - is-subclass-of:: [[Artificial Intelligence]]
-  - bridges-to:: [[Autonomous Robot]] (domain: rb), [[Digital Asset]] (domain: mv), [[Smart Contract]] (domain: bc)
+  - uses:: [[Machine Learning]], [[Natural Language Processing]], [[Computer Vision]]
+  - enables:: [[Autonomous Robot]], [[Autonomous System]]
+  - requires:: [[AI Governance]], [[AI Risk Management]]
 
 - ### Content
   AI Applications — content pending enrichment.

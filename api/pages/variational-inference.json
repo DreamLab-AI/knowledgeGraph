@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:variational-inference",
   "domain": "artificial-intelligence",
-  "definition": "Variational inference is a Bayesian machine learning method that approximates complex posterior distributions using a simpler parameterised family by optimising the evidence lower bound (ELBO).",
+  "definition": "Variational inference is a Bayesian machine learning method that approximates complex, intractable posterior distributions using a simpler parameterised family by optimising the evidence lower bound (ELBO) via gradient-based methods. Rather than sampling from the posterior as in Markov chain Monte Carlo approaches, variational inference reframes posterior estimation as an optimisation problem, making it tractable for large-scale models. It is the foundational inference mechanism underlying Variational Autoencoders and is widely applied in probabilistic topic modelling, latent variable models, and Bayesian deep learning.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -14,11 +14,25 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:vae",
+        "label": "VAE"
+      },
+      {
+        "id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +41,16 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:latent-space",
+        "label": "latent space"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

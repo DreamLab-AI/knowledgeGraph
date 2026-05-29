@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:web-xr-api",
   "domain": "spatial-computing",
-  "definition": "web interface enabling rendering and input for AR/VR experiences in browsers.",
+  "definition": "A W3C web standard providing browser-native interfaces for rendering stereoscopic 3D content and handling spatial input from XR headsets and controllers, enabling AR/VR experiences without native application installation. WebXR supersedes the earlier WebVR specification and is implemented across Chromium-based browsers and Firefox.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-standards-and-interop",
@@ -14,19 +14,51 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:xr-headset",
+        "label": "XR Headset"
+      },
+      {
+        "id": "urn:ngm:class:xr-hardware",
+        "label": "XR Hardware"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:web-technology",
+        "label": "Web Technology"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
     "relatedTo": []
   },
   "wikilinks": [

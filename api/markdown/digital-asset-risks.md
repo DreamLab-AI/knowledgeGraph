@@ -6,8 +6,14 @@
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
-
+  - Related To [[Risk Management]]
+  - Related To [[Blockchain]]
+  - Related To [[Cryptocurrency]]
+  - Requires [[Regulatory Compliance]]
+  - Requires [[Fraud Detection]]
+  - Contrasts With [[Digital Asset]]
+  - Uses [[Cybersecurity]]
+  - Uses [[Consensus Mechanism]]
   - bridges-to:: [[Blockchain]] (bc)
 - ### Content
   - #Public page automatically published

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:mixup",
   "domain": "artificial-intelligence",
-  "definition": "A data augmentation technique that creates virtual training examples by linearly interpolating pairs of examples and their labels. Mixup improves generalisation, calibration, and robustness by training on convex combinations of training samples.",
+  "definition": "A data augmentation technique that creates virtual training samples by computing convex linear combinations of input pairs and their corresponding labels, parameterised by a mixing coefficient drawn from a Beta distribution. Mixup reduces overfitting, improves calibration, and promotes smoother decision boundaries across supervised and semi-supervised learning tasks.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -17,21 +17,53 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:robustness",
+        "label": "Robustness"
+      },
+      {
+        "id": "urn:ngm:class:calibration",
+        "label": "Calibration"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:label-smoothing",
+        "label": "Label Smoothing"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ]
   },
   "wikilinks": [
     {

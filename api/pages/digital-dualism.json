@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:digital-dualism",
   "domain": "spatial-computing",
-  "definition": "Digital Dualism is a type of Metaverse in the spatial computing domain.",
+  "definition": "Digital Dualism is the conceptual framework positing a fundamental, hierarchical separation between digital/virtual and physical/offline experience domains, treating them as mutually exclusive rather than mutually constitutive. Critiqued by Nathan Jurgenson (2011), who proposed an augmented reality perspective recognising that digital and physical are increasingly entangled: digital interactions produce physical consequences, and physical activities generate digital traces. The critique is particularly relevant to metaverse and telecollaboration design, where dualist assumptions lead to poorly integrated hybrid experiences.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -17,21 +17,44 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ]
   },
   "wikilinks": [
     {

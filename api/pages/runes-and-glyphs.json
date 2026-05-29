@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:runes-and-glyphs",
   "domain": "infrastructure",
-  "definition": "Runes and Glyphs is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Runes and Glyphs refers to two complementary Bitcoin token protocols: Runes, which encodes fungible token balances directly in Bitcoin transaction outputs using OP_RETURN data, and Glyphs, a related protocol developed by Melvin Carvalho that encodes token metadata as on-chain inscriptions compatible with the Ordinals framework. Together they extend Bitcoin's base layer with native fungible asset issuance without requiring a separate blockchain, enabling DAOs, project tokens, and programmable digital objects on Bitcoin testnet and mainnet.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-software-engineering",
@@ -14,20 +14,48 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:asset-tokenization",
+        "label": "Asset Tokenization"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:digital-objects",
+        "label": "Digital Objects"
+      },
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      }
+    ]
   },
   "wikilinks": [
     {

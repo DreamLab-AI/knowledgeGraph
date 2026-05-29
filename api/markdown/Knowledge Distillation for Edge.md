@@ -46,7 +46,7 @@ public:: true
   "@id": "urn:ngm:class:knowledge-distillation-for-edge",
   "@type": "Class",
   "label": "Knowledge Distillation for Edge",
-  "definition": "Knowledge Distillation for Edge transfers learned representations from large, accurate teacher neural networks to compact student models optimized for edge deployment, achieving 20-30x compression while retaining + of accuracy.",
+  "definition": "Model compression technique that transfers learned representations from large, accurate teacher neural networks to compact student models optimised for edge deployment, achieving 20-30x size reduction while retaining 97%+ of accuracy through soft-target training, temperature scaling, and layer-wise representation matching.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -55,7 +55,26 @@ public:: true
       "label": "AI Technique"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
+      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:tiny-ml", "label": "TinyML"},
+      {"@id": "urn:ngm:class:on-device-learning", "label": "On-Device Learning"},
+      {"@id": "urn:ngm:class:edge-ai-system", "label": "Edge AI System"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:model-compression-for-edge", "label": "Model Compression for Edge"},
+      {"@id": "urn:ngm:class:model-pruning-for-edge-deployment", "label": "Model Pruning for Edge Deployment"},
+      {"@id": "urn:ngm:class:neural-network-quantisation", "label": "Neural Network Quantisation"},
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

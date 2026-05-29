@@ -42,16 +42,32 @@ public:: true
   "@id": "urn:ngm:class:delivery-planning",
   "@type": "Class",
   "label": "Delivery Planning",
-  "definition": "Delivery Planning is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Delivery Planning is the structured process of decomposing a technology programme into milestones, tasks, resource assignments, and timelines to ensure coherent execution. In the context of spatial computing and AI platform development, delivery planning coordinates parallel workstreams—GenAI model development, platform infrastructure, digital asset creation, human tracking integration, and USD file format implementation—typically represented as Gantt charts or sprint boards.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:digital-platform", "label": "Digital Platform"},
+      {"@id": "urn:ngm:class:ai-agent-system", "label": "AI Agent System"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
+      {"@id": "urn:ngm:class:digital-infrastructure", "label": "Digital Infrastructure"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:development-platform", "label": "Development Platform"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:collaboration", "label": "Collaboration"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -99,6 +115,11 @@ public:: true
   - owl-role:: Concept
 
 - ### Relationships
+  - **uses**: Digital Platform, AI Agent System (platforms and agents are resources coordinated by the plan)
+  - **supports**: Digital Twin, Digital Infrastructure (the output infrastructure the programme will build)
+  - **enables**: Development Platform (delivery planning is the governance layer that makes platform development tractable)
+  - **dependsOn**: Collaboration (cross-team coordination is a prerequisite for effective delivery)
+
   - bridges-to:: [[Blockchain]] or [[AI Agent System]]
 
 - ### Content

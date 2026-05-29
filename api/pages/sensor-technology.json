@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:sensor-technology",
   "domain": "robotics",
-  "definition": "Sensor Technology is a robotics and autonomous systems concept and a type of robotics.",
+  "definition": "Sensor Technology encompasses the diverse hardware devices and fusion algorithms that capture physical-world data for use in robotics, spatial computing, and XR systems. This includes inertial measurement units, LiDAR scanners, depth cameras, eye-tracking, haptic sensors, and biometric devices, combined with fusion techniques such as visual-inertial odometry and Kalman filtering to produce accurate, robust state estimates for autonomous systems and immersive experiences.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-perception",
@@ -13,17 +13,56 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:imu",
+        "label": "IMU"
+      },
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "id": "urn:ngm:class:camera",
+        "label": "Camera"
+      },
+      {
+        "id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      },
+      {
+        "id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:perception-system",
+        "label": "Perception System"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:depth-sensing",
+        "label": "Depth Sensing"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

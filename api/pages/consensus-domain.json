@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:consensus-domain",
   "domain": "blockchain",
-  "definition": "The Consensomain represents a specialized sub-domain within blockchain technology that encompasses all consensus mechanisms, distributed agreement protocols, and coordination systems that enable decentralized networks to achieve consistent state without trusted central authorities.",
+  "definition": "The Consensus Domain is a specialised sub-domain of blockchain technology encompassing all consensus mechanisms, distributed agreement protocols, and coordination systems that enable decentralised networks to achieve consistent state without trusted central authorities. It covers Proof-of-Work, Proof-of-Stake, Byzantine Fault Tolerance variants, finality concepts, and consensus security analysis.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-protocol-and-consensus",
@@ -14,11 +14,38 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:consensus-protocol",
+        "label": "Consensus Protocol"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerant-system",
+        "label": "Byzantine Fault Tolerant System"
+      },
+      {
+        "id": "urn:ngm:class:bc-cryptographic-primitive",
+        "label": "Cryptographic Primitive"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -26,7 +53,12 @@
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:blockchain-domain",
+        "label": "Blockchain Domain"
+      }
+    ],
     "relatedTo": []
   },
   "wikilinks": [

@@ -54,9 +54,10 @@ public:: true
   "@id": "urn:ngm:class:convergence-concept",
   "@type": "Class",
   "label": "Convergence Concept",
-  "definition": "Convergence Concept is a technology infrastructure concept and a type of Collaboration.",
+  "definition": "Convergence Concept describes the synthesis of previously distinct technologies, domains, and paradigms into unified systems. In telecollaboration and spatial computing, convergence encompasses XR integration, AI-human collaboration, physical-digital fusion via digital twins, and platform unification over shared protocols such as WebXR and OpenXR. The convergence of edge and cloud computing creates hybrid architectures that optimise latency and scalability for real-time collaborative experiences.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
@@ -67,7 +68,22 @@ public:: true
       "label": "Collaboration"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"},
+      {"@id": "urn:ngm:class:open-xr", "label": "OpenXR"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:telecollaboration", "label": "Telecollaboration"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:cross-domain-bridge", "label": "Cross Domain Bridge"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -125,7 +141,10 @@ public:: true
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires**: Interoperability, OpenXR (shared protocols underpin convergence)
+  - **enables**: Telecollaboration, Digital Twin (unified platforms unlock these downstream concepts)
+  - **dependsOn**: Spatial Computing (the primary substrate for convergent XR/physical-digital experiences)
+  - **relatedTo**: Cross Domain Bridge (bridges between heterogeneous systems are a prerequisite for convergence)
 
   - bridges-to:: [[Blockchain]] (bc)
 - ### Content

@@ -4,8 +4,8 @@
   "slug": "momentum-contrast",
   "public": true,
   "classIri": "urn:ngm:class:momentum-contrast",
-  "domain": "spatial-computing",
-  "definition": "A contrastive learning framework that maintains a large and consistent dictionary of encoded samples using a momentum-updated encoder, enabling effective contrastive learning with many negatives. MoCo provides stable comparison targets through the momentum encoder.",
+  "domain": "artificial-intelligence",
+  "definition": "A self-supervised contrastive learning framework (MoCo) that maintains a dynamically updated queue of encoded negative samples and a momentum encoder \u2014 updated as an exponential moving average of the query encoder \u2014 to provide large, consistent dictionaries for contrastive loss computation without requiring large batch sizes.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -13,17 +13,49 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:contrastive-learning",
+        "label": "Contrastive Learning"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

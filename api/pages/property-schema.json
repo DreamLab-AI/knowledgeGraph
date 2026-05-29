@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:property-schema",
   "domain": "infrastructure",
-  "definition": "Property Schema is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A formal specification of the object properties, data properties, and annotation properties that relate classes within an ontology, including domain and range constraints, cardinality axioms, and logical characteristics such as transitivity and symmetry. Property schemas are the mechanism by which OWL2 ontologies encode typed, machine-readable relations between entities.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-software-engineering",
@@ -13,20 +13,52 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      }
+    ],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      }
+    ],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:owl-class-hierarchy",
+        "label": "OWL Class Hierarchy"
+      }
+    ],
     "relatedTo": []
   },
   "wikilinks": [],

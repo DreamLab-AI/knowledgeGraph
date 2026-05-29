@@ -17,8 +17,8 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -27,11 +27,34 @@
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:portal-system",
+        "label": "Portal System"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-navigation-systems",
+        "label": "Metaverse Navigation Systems"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:virtual-world",
+        "label": "Virtual World"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:virtual-land-rights",
+        "label": "Virtual Land Rights"
+      },
+      {
+        "id": "urn:ngm:class:virtual-identity",
+        "label": "Virtual Identity"
+      }
+    ]
   },
   "wikilinks": [
     {

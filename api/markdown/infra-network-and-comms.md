@@ -26,7 +26,7 @@ public:: true
   "@type": "Class",
   "@id": "urn:ngm:class:infra-network-and-comms",
   "label": "Network and Communication",
-  "definition": "Intermediate taxonomy category for network and communication concepts within the infrastructure domain.",
+  "definition": "Taxonomy hub covering the protocols, architectures, and physical/virtual infrastructure that enable data exchange between systems and devices. This category spans networking layers, communication protocols, edge computing, distributed systems, and the transport fabric underpinning cloud and IoT deployments.",
   "domain": "infrastructure",
   "subClassOf": [
     {
@@ -34,7 +34,25 @@ public:: true
       "label": "Infrastructure"
     }
   ],
-  "relations": {},
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"},
+      {"@id": "urn:ngm:class:communication-protocol", "label": "Communication Protocol"},
+      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"},
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
+      {"@id": "urn:ngm:class:distributed-system", "label": "Distributed System"},
+      {"@id": "urn:ngm:class:network-infrastructure", "label": "Network Infrastructure"},
+      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"},
+      {"@id": "urn:ngm:class:content-delivery-network", "label": "Content Delivery Network"},
+      {"@id": "urn:ngm:class:latency", "label": "Latency"},
+      {"@id": "urn:ngm:class:network-topology", "label": "Network Topology"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:infra-security-and-identity", "label": "Security and Identity"},
+      {"@id": "urn:ngm:class:infra-data-management", "label": "Data Management"},
+      {"@id": "urn:ngm:class:cloud-infrastructure", "label": "Cloud Infrastructure"}
+    ]
+  },
   "qualityScore": 0.8,
   "maturity": "established"
 }

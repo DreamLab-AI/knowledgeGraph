@@ -7,7 +7,13 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Requires [[Machine Learning Model]]
+  - Requires [[Training Data]]
+  - Contrasts With [[Differential Privacy]]
+  - Related To [[Adversarial Attack]]
+  - Related To [[Model Inversion]]
+  - Related To [[Privacy]]
+  - Related To [[Data Protection]]
 
 - ### Content
   - A privacy attack that determines whether a specific data point was included in a model's training dataset by analyzing the model's behavior on that input, potentially revealing sensitive information about individuals' participation in datasets.

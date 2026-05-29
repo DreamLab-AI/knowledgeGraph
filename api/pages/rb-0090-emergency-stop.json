@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:rb-0090-emergency-stop",
   "domain": "robotics",
-  "definition": "emergency stop is a robotics and autonomous systems concept and a type of Robot Safety.",
+  "definition": "An Emergency Stop (E-stop) is a safety function that immediately removes power or halts the motion of a robot system upon activation, bringing the robot to a controlled or uncontrolled halt to prevent injury or damage. Defined under ISO 10218 and IEC 60204-1, it is a hardwired, independently monitored stop category (typically Stop Category 0 or 1) that takes priority over all other controls. E-stops must be clearly marked, accessible, and self-latching so that the robot cannot restart until the stop is deliberately reset.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-safety-and-standards",
@@ -17,21 +17,57 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:rb-0089-risk-assessment",
+        "label": "rb 0089 risk assessment"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:rb-0093-speed-limitation",
+        "label": "rb 0093 speed limitation"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-10218",
+        "label": "ISO 10218"
+      },
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rb-0091-safety-rated-monitored-stop",
+        "label": "rb 0091 safety rated monitored stop"
+      },
+      {
+        "id": "urn:ngm:class:rb-0092-protective-stop",
+        "label": "rb 0092 protective stop"
+      },
+      {
+        "id": "urn:ngm:class:rb-0095-safety-zone",
+        "label": "rb 0095 safety zone"
+      },
+      {
+        "id": "urn:ngm:class:rb-0096-safeguarding",
+        "label": "rb 0096 safeguarding"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:telecollaboration-and-telepresence",
   "domain": "spatial-computing",
-  "definition": "Telecollaboration and Telepresence is a spatial computing concept and a type of Telepresence.",
+  "definition": "Telecollaboration and Telepresence are complementary technologies enabling geographically distributed participants to share a common virtual or augmented workspace with a sense of physical co-presence. They combine real-time audiovisual communication, spatial audio, avatar embodiment, and low-latency networking to support synchronous collaborative tasks across professional, educational, and social domains.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -17,17 +17,52 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "id": "urn:ngm:class:video-conferencing",
+        "label": "Video Conferencing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:distributed-work",
+        "label": "Distributed Work"
+      },
+      {
+        "id": "urn:ngm:class:immersive-communication",
+        "label": "Immersive Communication"
+      },
+      {
+        "id": "urn:ngm:class:robotic-telepresence",
+        "label": "Robotic Telepresence"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

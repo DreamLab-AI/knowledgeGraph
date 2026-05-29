@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:virtual-community-practice",
   "domain": "spatial-computing",
-  "definition": "The modologies, norms, and behaviors that govern how members interact, collaborate, and build relationships within virtual community platforms, including governance structures, social conventions, and collective practices that shape online community culture.",
+  "definition": "The methodologies, norms, and behaviours that govern how members interact, collaborate, and build relationships within virtual community platforms. This encompasses governance structures, social conventions, moderation policies, and collective practices that shape online community culture in metaverse and social VR environments.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-governance-and-safety",
@@ -17,20 +17,48 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:governance-model",
+        "label": "Governance Model"
+      },
+      {
+        "id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:digital-citizenship",
+        "label": "Digital Citizenship"
+      },
+      {
+        "id": "urn:ngm:class:social-vr",
+        "label": "Social VR"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:virtual-world",
+        "label": "Virtual World"
+      }
+    ],
     "relatedTo": []
   },
   "wikilinks": [

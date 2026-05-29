@@ -46,7 +46,7 @@ public:: true
   "@id": "urn:ngm:class:utility-token",
   "@type": "Class",
   "label": "Utility Token",
-  "definition": "Tokens providing access to services.",
+  "definition": "A blockchain token that confers its holder a right to access, use, or consume a specific product, service, or platform resource rather than representing equity or a claim on profits. Utility tokens derive value from the utility of the underlying service and are a primary means of bootstrapping decentralised protocol economies.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -59,7 +59,27 @@ public:: true
       "label": "Cryptocurrency Token"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"},
+      {"@id": "urn:ngm:class:crypto-token", "label": "Crypto Token"},
+      {"@id": "urn:ngm:class:asset-tokenization", "label": "Asset Tokenization"},
+      {"@id": "urn:ngm:class:blockchain-economics", "label": "Blockchain Economics"},
+      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:decentralised-autonomous-organisation", "label": "Decentralised Autonomous Organisation"},
+      {"@id": "urn:ngm:class:blockchain-application", "label": "Blockchain Application"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:nft", "label": "NFT"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

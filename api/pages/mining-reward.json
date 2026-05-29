@@ -5,28 +5,42 @@
   "public": true,
   "classIri": "urn:ngm:class:mining-reward",
   "domain": "blockchain",
-  "definition": "Block creation compensation within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "A Mining Reward is the economic incentive awarded to the miner who successfully produces a valid block and appends it to the canonical blockchain, comprising a block subsidy of newly minted cryptocurrency plus the aggregate transaction fees of all transactions included in that block. The subsidy follows a pre-programmed halving schedule\u2014in Bitcoin, halving every 210,000 blocks\u2014gradually reducing issuance until the subsidy approaches zero and transaction fees become the sole miner compensation, aligning long-term network security incentives with user demand for block space.",
   "subClassOf": [
-    {
-      "id": "urn:ngm:class:bc-protocol-and-consensus",
-      "label": "Protocol and Consensus"
-    },
     {
       "id": "urn:ngm:class:blockchain-entity",
       "label": "Blockchain Entity"
-    },
-    {
-      "id": "urn:ngm:class:consensus-protocol",
-      "label": "ConsensusProtocol"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "id": "urn:ngm:class:mining",
+        "label": "Mining"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-mining",
+        "label": "Bitcoin Mining"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -34,8 +48,38 @@
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:blockchain-entity",
+        "label": "Blockchain Entity"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:block-reward",
+        "label": "Block Reward"
+      },
+      {
+        "id": "urn:ngm:class:transaction-fee",
+        "label": "Transaction Fee"
+      },
+      {
+        "id": "urn:ngm:class:miner",
+        "label": "Miner"
+      },
+      {
+        "id": "urn:ngm:class:mining-pool",
+        "label": "Mining Pool"
+      },
+      {
+        "id": "urn:ngm:class:high-energy-consumption",
+        "label": "High Energy Consumption"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-economics",
+        "label": "Blockchain Economics"
+      }
+    ]
   },
   "wikilinks": [
     {

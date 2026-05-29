@@ -33,15 +33,29 @@ public:: true
   "@id": "urn:ngm:class:remarkable",
   "@type": "Class",
   "label": "Remarkable",
-  "definition": "Remarkable is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "The reMarkable is an e-ink tablet designed for distraction-free writing, note-taking, and document annotation, running a Linux-based operating system that exposes SSH access and supports a rich ecosystem of open-source tools. Its platform enables handwriting recognition, LaTeX generation, AI-assisted prompt workflows, and integration with knowledge management systems such as Obsidian. The device occupies a distinct niche as a digital-analogue bridge for researchers and knowledge workers seeking pen-on-paper fidelity with machine-readable output.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:knowledge-management", "label": "Knowledge Management"},
+      {"@id": "urn:ngm:class:data-annotation", "label": "Data Annotation"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:knowledge-management-system", "label": "Knowledge Management System"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -72,14 +86,16 @@ public:: true
 
 
 - ### Definition
-  - Remarkable is a concept within the ngm domain.
+  - The reMarkable is an e-ink tablet designed for distraction-free writing, note-taking, and document annotation, running a Linux-based OS that supports SSH access and a rich open-source ecosystem. Its platform enables handwriting recognition, LaTeX generation, AI-assisted prompt workflows, and integration with knowledge management systems such as Obsidian. The device serves as a digital-analogue bridge for researchers and knowledge workers seeking pen-on-paper fidelity with machine-readable output.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:Remarkable
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **enables**: Knowledge Management, Data Annotation
+  - **uses**: Machine Learning, Large Language Models
+  - **relatedTo**: Knowledge Management System
 
 - ### Content
   - https://github.com/kevinconway/remouseable?tab=readme-ov-file#remarkable-2-tablets Remarkable tablet mouse events for ssh

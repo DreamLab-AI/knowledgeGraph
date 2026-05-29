@@ -66,9 +66,9 @@ public:: true
   "@id": "urn:ngm:class:overview-of-machine-learning-techniques",
   "@type": "Class",
   "label": "Overview of Machine Learning Techniques",
-  "definition": "Overview of Machine Learning Techniques is a artificial intelligence concept and a type of Deep Learning.",
+  "definition": "A structured survey of the principal paradigms and architectures in machine learning, spanning supervised methods (SVMs, decision trees, logistic regression), unsupervised clustering (k-means, KNN), and deep learning approaches (neural networks, transformers, diffusion models, GANs). The survey contextualises training paradigms including reinforcement learning from human feedback and direct preference optimisation, and positions large proprietary language models within the broader ML taxonomy.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
@@ -79,7 +79,24 @@ public:: true
       "label": "Deep Learning"
     }
   ],
-  "quality": 0.5,
+  "qualityScore": 0.7,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:transformers", "label": "Transformers"},
+      {"@id": "urn:ngm:class:diffusion-models", "label": "Diffusion Models"},
+      {"@id": "urn:ngm:class:generative-adversarial-networks", "label": "Generative Adversarial Networks"},
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
+      {"@id": "urn:ngm:class:direct-preference-optimization", "label": "Direct Preference Optimization"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
+      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:optimization-algorithms", "label": "Optimization Algorithms"},
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -150,14 +167,16 @@ public:: true
 
 
 - ### Definition
-  - Overview of Machine Learning Techniques is a concept within the ngm domain.
+  - A structured survey of the principal paradigms and architectures in machine learning, spanning supervised methods (SVMs, decision trees, logistic regression), unsupervised clustering (k-means, KNN), and deep learning approaches (neural networks, transformers, diffusion models, GANs). The survey contextualises training paradigms including reinforcement learning from human feedback and direct preference optimisation, and positions large proprietary language models within the broader ML taxonomy.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:OverviewOfMachineLearningTechniques
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart: [[Transformers]], [[Diffusion Models]], [[Generative Adversarial Networks]], [[Reinforcement Learning]], [[Direct Preference Optimization]]
+  - enables: [[Large Language Models]], [[Generative AI]]
+  - uses: [[Optimization Algorithms]], [[Neural Network]]
 
 - ### Content
   - #Public page

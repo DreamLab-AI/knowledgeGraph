@@ -110,7 +110,7 @@ public:: true
   "@id": "urn:ngm:class:ethical-framework",
   "@type": "Class",
   "label": "Ethical Framework",
-  "definition": "An ical Framework is a structured set of moral principles, values, and reasoning mods that guide the development, deployment, and use of AI systems to ensure they respect human dignity, promote well-being, and avoid harm.",
+  "definition": "A structured set of moral principles, values, and reasoning methods that guide the development, deployment, and use of AI systems to ensure they respect human dignity, promote well-being, and avoid harm. Ethical frameworks draw from consequentialism, deontology, virtue ethics, and care ethics to address AI-specific dilemmas around fairness, transparency, accountability, and privacy.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -123,7 +123,28 @@ public:: true
       "label": "AI Governance Principle"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:accountability", "label": "Accountability"},
+      {"@id": "urn:ngm:class:ai-fairness", "label": "AI Fairness"},
+      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"},
+      {"@id": "urn:ngm:class:ai-ethics-checklist", "label": "AI Ethics Checklist"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:ai-governance-framework", "label": "AI Governance Framework"},
+      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
+      {"@id": "urn:ngm:class:ai-transparency-framework", "label": "Ai Transparency Framework"},
+      {"@id": "urn:ngm:class:algorithmic-accountability", "label": "Algorithmic Accountability"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:ai-impact-assessment", "label": "AI Impact Assessment"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:bias-mitigation-techniques", "label": "Bias Mitigation Techniques"},
+      {"@id": "urn:ngm:class:human-agency-and-oversight", "label": "Human Agency and Oversight"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

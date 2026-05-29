@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:mqtt",
   "domain": "infrastructure",
-  "definition": "A lightweight, publish-subscribe messaging protocol designed for constrained IoT devices and low-bandwidth, high-latency networks, standardised as ISO/IEC 20922.",
+  "definition": "MQTT (Message Queuing Telemetry Transport) is a lightweight publish-subscribe messaging protocol standardised as ISO/IEC 20922 and OASIS MQTT 5.0, designed for constrained devices and unreliable networks with minimal protocol overhead. Clients connect to a central broker that routes messages by topic; publishers post payloads to topic strings and subscribers receive all messages matching their subscribed topic filters. MQTT defines three quality-of-service levels\u2014at most once, at least once, and exactly once\u2014allowing integrators to balance message delivery guarantees against network and compute cost.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-network-and-comms",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:sensor-data",
+        "label": "Sensor Data"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "id": "urn:ngm:class:telemetry-and-analytics",
+        "label": "Telemetry & Analytics"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

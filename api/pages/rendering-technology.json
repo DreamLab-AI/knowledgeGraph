@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:rendering-technology",
   "domain": "spatial-computing",
-  "definition": "Rendering Technology is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Rendering Technology comprises the algorithms, pipelines, and hardware interfaces that convert geometric scene descriptions into pixel images. It encompasses rasterisation, ray tracing, and hybrid approaches, executed on GPUs through APIs such as Vulkan, Metal, and WebGPU, and is foundational to real-time interactive graphics, spatial computing experiences, and digital twin visualisation.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-display-and-rendering",
@@ -13,17 +13,48 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:shader",
+        "label": "Shader"
+      },
+      {
+        "id": "urn:ngm:class:rendering-engine",
+        "label": "Rendering Engine"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:scene-graph",
+        "label": "Scene Graph"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

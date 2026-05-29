@@ -8,6 +8,10 @@
 
 - ### Relationships
   - is-subclass-of:: [[3D File Format]]
+  - requires:: [[Gltf Standard]], [[3D File Format]]
+  - enables:: [[Avatar Interoperability]], [[Avatar Portability]]
+  - uses:: [[Avatar Standard]], [[3D Model]]
+  - standardizedBy:: [[Open Standard]], [[Interoperability Standard]]
 
 - ### Content
 

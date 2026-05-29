@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:tokeniser",
   "domain": "artificial-intelligence",
-  "definition": "A tokeniser is a preprocessing component that segments raw text into discrete tokens (sub-words, words, or characters) for input to language model architectures.",
+  "definition": "A tokeniser is a preprocessing component that segments raw text into a sequence of discrete tokens \u2014 sub-words, words, or characters \u2014 and maps each token to an integer index in a fixed vocabulary, forming the input representation consumed by language model architectures. Modern tokenisers such as Byte Pair Encoding (BPE), WordPiece, and SentencePiece operate at the sub-word level to balance vocabulary coverage with sequence length, enabling models to handle arbitrary text including rare words and multiple languages without out-of-vocabulary failures.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -14,11 +14,25 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:byte-pair-encoding",
+        "label": "Byte Pair Encoding"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:language-modeling",
+        "label": "Language Modeling"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +41,20 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:subword-tokenisation",
+        "label": "Subword Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:token-embedding",
+        "label": "Token Embedding"
+      },
+      {
+        "id": "urn:ngm:class:embedding-model",
+        "label": "Embedding Model"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

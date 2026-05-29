@@ -58,7 +58,7 @@ public:: true
   "@id": "urn:ngm:class:data-minimisation",
   "@type": "Class",
   "label": "Data Minimisation",
-  "definition": "Data Minimisation is a privacy principle and GDPR requirement (Article 5(1)(c)) mandating that personal data collection and processing be limited to what is adequate, relevant, and necessary for specified purposes, reducing privacy risks by avoiding accumulation of excessive data that could be mi...",
+  "definition": "Data Minimisation is a privacy principle and GDPR requirement (Article 5(1)(c)) mandating that personal data collection and processing be limited to what is adequate, relevant, and necessary for specified purposes, reducing privacy risks by avoiding accumulation of excessive data that could be misused, breached, or enable function creep.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -71,7 +71,27 @@ public:: true
       "label": "Privacy and Data Governance"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:differential-privacy", "label": "Differential Privacy"},
+      {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy By Design"},
+      {"@id": "urn:ngm:class:consent-management", "label": "Consent Management"},
+      {"@id": "urn:ngm:class:data-anonymization-pipeline", "label": "Data Anonymization Pipeline"},
+      {"@id": "urn:ngm:class:privacy-impact-assessment", "label": "Privacy Impact Assessment"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:gdpr-compliance", "label": "GDPR Compliance"},
+      {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"},
+      {"@id": "urn:ngm:class:privacy-framework", "label": "Privacy Framework"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:personal-data-store", "label": "Personal Data Store"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:vertex-shader",
   "domain": "spatial-computing",
-  "definition": "Vertex Shader is a spatial computing concept and a type of Metaverse.",
+  "definition": "A mandatory, programmable GPU stage that processes individual vertices within the graphics pipeline, transforming 3D coordinates through model, view, and projection matrices into clip space whilst computing per-vertex attributes such as normals, texture coordinates, and lighting terms that are subsequently interpolated across primitives for the fragment shader.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-display-and-rendering",
@@ -18,20 +18,44 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:pixel-shader",
+        "label": "Pixel Shader"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:rasterization",
+        "label": "Rasterization"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:shader",
+        "label": "Shader"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:compute-shader",
+        "label": "Compute Shader"
+      },
+      {
+        "id": "urn:ngm:class:visual-effects",
+        "label": "Visual Effects"
+      }
+    ]
   },
   "wikilinks": [
     {

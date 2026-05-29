@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:mechanism-design",
   "domain": "blockchain",
-  "definition": "A branch of game theory and economics concerned with designing rules for multi-agent systems to achieve desired social outcomes when agents act in their own self-interest.",
+  "definition": "Mechanism design, sometimes called reverse game theory, is a branch of economics and game theory concerned with constructing the rules and incentive structures of strategic interactions so that self-interested participants produce collectively desirable outcomes. Rather than analysing a given game, mechanism design starts from a desired social choice function and works backwards to identify what game structure (mechanisms) would implement it as an equilibrium strategy for rational agents. In blockchain and decentralised finance contexts, mechanism design governs tokenomics, automated market maker formulas, auction protocols, validator incentive structures, and governance voting systems.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-defi-and-economics",
@@ -14,11 +14,20 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      },
+      {
+        "id": "urn:ngm:class:incentive-alignment",
+        "label": "Incentive Alignment"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +36,20 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      },
+      {
+        "id": "urn:ngm:class:voting-mechanism",
+        "label": "Voting Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-governance",
+        "label": "On-chain Governance"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

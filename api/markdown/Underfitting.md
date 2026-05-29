@@ -42,9 +42,10 @@ public:: true
   "@id": "urn:ngm:class:underfitting",
   "@type": "Class",
   "label": "Underfitting",
-  "definition": "Underfitting is a artificial intelligence concept and a type of Machine Learning.",
+  "definition": "Underfitting occurs when a machine learning model is insufficiently complex or inadequately trained to capture the underlying structure of its training data, resulting in high bias, low variance, and poor predictive performance on both training and unseen datasets. It is the converse of overfitting and arises from under-parameterisation, insufficient training duration, or excessive regularisation.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
@@ -60,6 +61,34 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:model-capacity",
+        "label": "Model Capacity"
+      },
+      {
+        "@id": "urn:ngm:class:training",
+        "label": "Training"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:regularisation",
+        "label": "Regularisation"
+      },
+      {
+        "@id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      }
+    ]
   }
 }
 ```
@@ -97,7 +126,11 @@ public:: true
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Contrasts With [[Overfitting]]
+  - Requires [[Model Capacity]]
+  - Requires [[Training]]
+  - Related To [[Regularisation]]
+  - Related To [[Loss Function]]
 - ### Content
   - ### Primary Definition
   **Underfitting** occurs when a model is too simple to capture the underlying patterns in the training data, resulting in poor performance on both training and test data. Underfitted models have insufficient capacity or training.

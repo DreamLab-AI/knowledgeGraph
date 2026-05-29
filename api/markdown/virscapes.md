@@ -1,12 +1,14 @@
 - ### Definition
-  - Virscapes is a concept within the ngm domain.
+  - **Virscapes** are AI-generated virtual landscape images produced by training generative adversarial networks (StyleGAN) on a curated dataset of digital game landscapes collected over seven years, exploring latent space to create emotionally resonant synthetic environments. The practice investigates questions of landscape identity, simulacra, and the distinction between human aesthetic curation and algorithmic generation in digital art.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:Virscapes
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: [[Generative AI]], [[Machine Learning]] — StyleGAN and related GAN architectures are the core generation technology
+  - **enables**: [[NFT Marketplace]] — virscapes were created in the context of NFT-based digital art markets
+  - **relatedTo**: [[Virtual Reality]], [[Procedural Generation]] — synthetic landscapes share techniques with virtual world and procedural content creation
 
 - ### Content
   # Virscapes paper

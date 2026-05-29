@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:rb-0053-force-control",
   "domain": "robotics",
-  "definition": "force control is a robotics and autonomous systems concept and a type of Control System.",
+  "definition": "Force control is a robot control paradigm in which the controller regulates the interaction force between the end-effector and its environment, rather than purely tracking a desired position trajectory. By closing the loop on measured contact forces from a force-torque sensor, the robot can perform compliant tasks such as surface grinding, peg-in-hole insertion, and human-robot handover without requiring precise environmental models. The main architectures are impedance control, admittance control, and hybrid position/force control, each suited to different environment stiffness regimes.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
@@ -17,21 +17,52 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:rb-0067-force-torque-sensor",
+        "label": "rb 0067 force torque sensor"
+      },
+      {
+        "id": "urn:ngm:class:rb-0047-feedback-control",
+        "label": "rb 0047 feedback control"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:rb-0054-position-control",
+        "label": "rb 0054 position control"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rb-0056-impedance-control",
+        "label": "rb 0056 impedance control"
+      },
+      {
+        "id": "urn:ngm:class:rb-0057-admittance-control",
+        "label": "rb 0057 admittance control"
+      },
+      {
+        "id": "urn:ngm:class:rb-0038-compliance",
+        "label": "rb 0038 compliance"
+      },
+      {
+        "id": "urn:ngm:class:rb-0094-power-and-force-limiting",
+        "label": "rb 0094 power and force limiting"
+      }
+    ]
   },
   "wikilinks": [
     {

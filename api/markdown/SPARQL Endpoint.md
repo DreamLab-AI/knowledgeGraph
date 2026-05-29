@@ -42,7 +42,7 @@ public:: true
   "@id": "urn:ngm:class:sparql-endpoint",
   "@type": "Class",
   "label": "SPARQL Endpoint",
-  "definition": "A sparql endpoint component in the Metaverse domain that required by ProvenanceOntologyProvO.",
+  "definition": "A SPARQL Endpoint is a network-accessible service that accepts SPARQL Protocol and RDF Query Language queries and returns structured results over HTTP, enabling federated access to RDF knowledge graphs and linked data stores. It acts as the primary interface between client applications and triple stores, supporting SELECT, CONSTRUCT, ASK, and UPDATE operations. SPARQL Endpoints are foundational to the Semantic Web stack and to provenance-aware knowledge graph systems.",
   "domain": "spatial-computing",
   "maturity": "emerging",
   "subClassOf": [
@@ -55,11 +55,34 @@ public:: true
       "label": "Data Access Interface"
     }
   ],
-  "quality": 0.35,
+  "quality": 0.75,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:sparql-query-engine", "label": "Sparql Query Engine"},
+      {"@id": "urn:ngm:class:query-processor", "label": "Query Processor"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:sparql", "label": "SPARQL"},
+      {"@id": "urn:ngm:class:rdf", "label": "RDF"},
+      {"@id": "urn:ngm:class:json-ld", "label": "JSON-LD"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
+      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"},
+      {"@id": "urn:ngm:class:provenance-ontology-prov-o", "label": "Provenance Ontology (PROV-O)"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:graph-database", "label": "Graph Database"},
+      {"@id": "urn:ngm:class:semantic-web", "label": "Semantic Web"},
+      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"},
+      {"@id": "urn:ngm:class:database-query", "label": "Database Query"},
+      {"@id": "urn:ngm:class:sparql-examples", "label": "SPARQL EXAMPLES"}
+    ]
   }
 }
 ```
@@ -101,7 +124,9 @@ public:: true
   - is-subclass-of:: [[Data Access Interface]]
 
 - ### Content
-  SparqlEndpoint — content pending enrichment.
+  A SPARQL Endpoint exposes an RDF triple store via the W3C SPARQL 1.1 Protocol over HTTP/HTTPS, providing a standardised query interface for Semantic Web applications. Clients submit graph pattern queries and receive results as JSON, XML, CSV, or RDF serialisations. Endpoints may support federated queries that span multiple remote stores, making them a cornerstone of distributed knowledge graph architectures.
+
+  In knowledge graph and provenance systems, SPARQL Endpoints allow automated agents to interrogate ontology assertions, trace provenance chains via PROV-O, and integrate heterogeneous linked datasets without bespoke data pipelines. Deployment typically involves a triple store backend (Apache Jena Fuseki, Blazegraph, Oxigraph, or Virtuoso) exposed through a compliant HTTP service layer with appropriate access controls.
 
 - ### Provenance
   - sources:: Generated from bridge validation

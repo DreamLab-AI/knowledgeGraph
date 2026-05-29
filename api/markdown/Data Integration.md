@@ -46,15 +46,29 @@ public:: true
   "@id": "urn:ngm:class:data-integration",
   "@type": "Class",
   "label": "Data Integration",
-  "definition": "Data Integration is a type of Infrastructure in the infrastructure domain.",
+  "definition": "Data Integration is the process of combining data from heterogeneous sources into a unified, consistent view suitable for analysis, model training, or operational use. It involves ETL/ELT pipelines, schema harmonisation, semantic mapping, and API-based federation. In metaverse and AI contexts, data integration connects sensor streams, user telemetry, digital-twin feeds, and blockchain records into coherent data products.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-data-management",
       "label": "Data Management"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:etl-pipeline", "label": "ETL Pipeline"},
+      {"@id": "urn:ngm:class:api-gateway", "label": "API Gateway"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:data-interoperability", "label": "Data Interoperability"},
+      {"@id": "urn:ngm:class:semantic-interoperability", "label": "Semantic Interoperability"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"},
+      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -103,16 +117,25 @@ public:: true
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses:: [[ETL Pipeline]]
+  - uses:: [[API Gateway]]
+  - enables:: [[Data Interoperability]]
+  - enables:: [[Semantic Interoperability]]
+  - relatedTo:: [[Interoperability]]
+  - relatedTo:: [[Data Pipeline]]
 
 - ### Content
 
   ## Overview
 
-  Data Integration represents an abstract concept in the metaverse ontology hierarchy.
+  Data Integration combines data from heterogeneous sources — sensor streams, digital twin feeds, user telemetry, and blockchain records — into a unified, consistent view. ETL/ELT pipelines handle extraction, schema transformation, and loading, while API gateways federate live data sources. In AI and metaverse contexts, robust data integration is a prerequisite for training data quality and real-time spatial experiences.
 
   #### Related Concepts
-  - [[owl:Thing]]
+  - [[ETL Pipeline]]
+  - [[Data Pipeline]]
+  - [[Data Interoperability]]
+  - [[Semantic Interoperability]]
+  - [[API Gateway]]
 
 - ### Provenance
   - bridges-to:: [[Blockchain]] (bc)

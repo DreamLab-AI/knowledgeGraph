@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:virtual-model",
   "@type": "Class",
   "label": "Virtual Model",
-  "definition": "A digital 3D representation of objects, characters, environments, or systems created using computer graphics software for use in metaverse platforms, simulations, games, and virtual production, including static assets, animated models, and procedurally generated content.",
+  "definition": "A digital 3D representation of objects, characters, environments, or systems created using computer graphics software for use in metaverse platforms, simulations, games, and virtual production, including static assets, animated models, and procedurally generated content. Models are authored in formats such as glTF/GLB, FBX, and USD, and are consumed by game engines, real-time renderers, and XR runtimes.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
@@ -59,7 +60,23 @@ public:: true
       "label": "3D Asset"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:photogrammetry", "label": "Photogrammetry"},
+      {"@id": "urn:ngm:class:procedural-generation", "label": "Procedural Generation"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
+      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:virtual-production", "label": "Virtual Production"},
+      {"@id": "urn:ngm:class:metaverse-platform", "label": "Metaverse Platform"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:3-d-asset-standard", "label": "3D Asset Standard"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -109,6 +126,10 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[3D Asset]]
+  - **uses**: [[Photogrammetry]], [[Procedural Generation]] — real-world objects are captured via photogrammetry; large-scale environments use procedural generation
+  - **requires**: [[Real-Time Rendering]], [[Game Engine]] — virtual models are consumed and rendered by game engines and XR runtimes
+  - **enables**: [[Virtual Production]], [[Metaverse Platform]] — models are the primary content assets that populate virtual production sets and metaverse worlds
+  - **standardizedBy**: [[3D Asset Standard]] — glTF/GLB, USD, and FBX are the dominant interchange standards for virtual models
 
 - ### Content
 

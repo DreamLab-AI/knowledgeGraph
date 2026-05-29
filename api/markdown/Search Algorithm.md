@@ -56,7 +56,22 @@ public:: true
   "label": "Search Algorithm",
   "definition": "Search Algorithms in AI systematically explore solution spaces to find optimal or satisfactory solutions to problems. Classical algorithms include uninformed search (breadth-first, depth-first, uniform-cost) and informed search (A*, greedy best-first, beam search).",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:heuristic-methods", "label": "Heuristic Methods"},
+      {"@id": "urn:ngm:class:graph-search", "label": "Graph Search"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:monte-carlo-tree-search", "label": "Monte Carlo Tree Search"},
+      {"@id": "urn:ngm:class:navigation", "label": "Navigation"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
+      {"@id": "urn:ngm:class:constraint", "label": "Constraint"},
+      {"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
@@ -128,6 +143,13 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: ['owl:Thing']
+  - uses [[Heuristic Methods]]
+  - uses [[Graph Search]]
+  - enables [[Monte Carlo Tree Search]]
+  - enables [[Navigation]]
+  - relatedTo [[Reinforcement Learning]]
+  - relatedTo [[Constraint]]
+  - relatedTo [[Information Retrieval]]
 
 - ### Content
 

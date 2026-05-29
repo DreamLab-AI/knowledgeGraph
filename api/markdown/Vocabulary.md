@@ -42,15 +42,33 @@ public:: true
   "@id": "urn:ngm:class:vocabulary",
   "@type": "Class",
   "label": "Vocabulary",
-  "definition": "The number of unique tokens in a model's tokenisation scheme, balancing expressiveness with computational efficiency, typically ranging from to tokens in modern language models.",
+  "definition": "The complete set of unique tokens in a language model's tokenisation scheme, typically ranging from 32,000 to 128,000 entries in modern architectures. Vocabulary size directly governs embedding matrix dimensions, output layer size, and token-level granularity, with larger vocabularies improving expressiveness and training efficiency at the cost of increased memory during inference.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-standards-and-interop",
       "label": "Standards and Interoperability"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:tokenisation", "label": "Tokenisation"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
+      {"@id": "urn:ngm:class:inference", "label": "Inference"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:subword-tokenisation", "label": "Subword Tokenisation"},
+      {"@id": "urn:ngm:class:byte-pair-encoding", "label": "Byte Pair Encoding"},
+      {"@id": "urn:ngm:class:word-piece", "label": "WordPiece"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:transformer", "label": "Transformer"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -93,7 +111,10 @@ public:: true
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **Requires**: [[Tokenisation]] (algorithm determines vocabulary membership)
+  - **Enables**: [[Natural Language Processing]], [[Inference]] (model token prediction)
+  - **Uses**: [[Subword Tokenisation]], [[Byte Pair Encoding]], [[WordPiece]]
+  - **Part-of**: [[Transformer]] architecture (embedding and output projection layers)
 - ### Content
   - The number of unique tokens in a model's tokenisation scheme, balancing expressiveness with computational efficiency, typically ranging from 30,000 to 250,000 tokens in modern language models.
   ## Characteristics

@@ -1,12 +1,18 @@
 - ### Definition
-  - Virtual Experience is a concept within the metaverse domain. Further enrichment pending.
+  - A user-facing encounter or activity delivered within a virtual environment, encompassing immersive simulations, interactive narratives, social engagements, and entertainment events that are accessed through XR devices, gaming platforms, or web-based spatial interfaces.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:VirtualExperience
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Requires: [[Virtual World Infrastructure]]
+  - Requires: [[Avatar System]]
+  - Part Of: [[Virtual Environment]]
+  - Uses: [[Immersive Experience]]
+  - Uses: [[Extended Reality]]
+  - Related To: [[User Experience]]
+  - Related To: [[Personalized Virtual Experiences]]
 
 - ### Content
 

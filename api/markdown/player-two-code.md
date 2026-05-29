@@ -1,12 +1,15 @@
 - ### Definition
-  - Player Two code is a concept within the ngm domain.
+  - Player Two code is the technical implementation layer of the Player Two platform, comprising a Vue.js front-end, BIP85-derived key management for trustless authentication, a Nostr-relay-based messaging architecture, and middleware whitelist logic. It enables encrypted group collaboration without server-held keys, using derivation path m/44'/1237 for per-user identity.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:PlayerTwoCode
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - implements: [[Player Two]], [[Decentralised Identity]]
+  - uses: [[Cryptography]], [[Authentication]]
+  - dependsOn: [[Collaboration Platform]]
+  - enables: [[Identity Management]]
 
 - ### Content
   - {{renderer code_diagram,mermaid}}

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:system-identification",
   "domain": "robotics",
-  "definition": "The process of constructing or refining a mathematical model of a robotic or physical system from observed input-output data, used to improve control design and simulation fidelity.",
+  "definition": "System identification is the discipline of constructing or refining a parametric or non-parametric mathematical model of a physical or robotic system from observed input-output experimental data, enabling accurate simulation and model-based control design. Methods range from classical least-squares regression for linear systems to Gaussian process regression and neural network surrogate models for nonlinear, high-dimensional systems. In robotics, system identification is used to calibrate rigid-body dynamics parameters\u2014such as link inertia tensors and joint friction coefficients\u2014that are required by whole body controllers and model predictive controllers to generate physically realistic torque commands.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
@@ -14,11 +14,20 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:whole-body-control",
+        "label": "Whole Body Control"
+      },
+      {
+        "id": "urn:ngm:class:model-predictive-control",
+        "label": "Model Predictive Control"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +36,20 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      },
+      {
+        "id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

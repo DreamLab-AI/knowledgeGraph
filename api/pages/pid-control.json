@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:pid-control",
   "domain": "robotics",
-  "definition": "PID control is a feedback control algorithm that computes a corrective output by combining proportional, integral, and derivative terms of the error signal to regulate a system variable toward a desired setpoint.",
+  "definition": "PID (Proportional\u2013Integral\u2013Derivative) control is a classical closed-loop feedback algorithm that continuously computes a corrective control output by summing three terms derived from the error signal: the proportional term which scales the current error, the integral term which accumulates past error to eliminate steady-state offset, and the derivative term which anticipates future error trends by reacting to the rate of change. Due to its simplicity, interpretability, and tuning maturity, PID remains the most widely deployed controller in industrial automation and robotics for joint position and velocity regulation, motor speed control, and thermal management. Modern variants include anti-windup mechanisms, filtered derivative terms, and gain-scheduling to handle nonlinear plant dynamics.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
@@ -14,16 +14,39 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:force-control",
+        "label": "Force Control"
+      },
+      {
+        "id": "urn:ngm:class:robot-control",
+        "label": "Robot Control"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:impedance-control",
+        "label": "Impedance Control"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

@@ -62,27 +62,44 @@ public:: true
   "@id": "urn:ngm:class:erc20",
   "@type": "Class",
   "label": "ERC20",
-  "definition": "The ereum fungible token standard defining a common interface for token transfers and balances.",
+  "definition": "ERC20 is the Ethereum fungible token standard (Ethereum Improvement Proposal 20) defining a mandatory common interface for token transfers, approvals, and balance queries. It specifies six required functions and two events enabling interoperable smart contract interaction, forming the technical foundation of decentralised finance, governance tokens, and digital asset ecosystems on EVM-compatible chains.",
   "domain": "blockchain",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-token-and-asset",
       "label": "Token and Asset"
     }
   ],
-  "quality": 0.4,
-  "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+  "relations": {
+    "implements": [
+      {"@id": "urn:ngm:class:token-standard", "label": "Token Standard"},
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:ethereum", "label": "Ethereum"},
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
+      {"@id": "urn:ngm:class:fungible-token", "label": "Fungible Token"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:erc721", "label": "ERC721"}
+    ]
   },
   "sameAs": [
     {
       "@id": "urn:ngm:class:erc20-standard",
       "label": "ERC20 Standard"
     }
-  ]
+  ],
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 
@@ -138,7 +155,7 @@ public:: true
 
 
 - ### Definition
-  - The Ethereum fungible token standard defining a common interface for token transfers and balances.
+  - ERC20 is the Ethereum fungible token standard (Ethereum Improvement Proposal 20) defining a mandatory common interface for token transfers, approvals, and balance queries. It specifies six required functions and two events enabling interoperable smart contract interaction, forming the technical foundation of decentralised finance, governance tokens, and digital asset ecosystems on EVM-compatible chains.
 
 - ### Semantic Classification
   - owl-class:: blockchain:ERC20
@@ -146,7 +163,10 @@ public:: true
   - belongs-to-domain:: [[BlockchainDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **implements**: [[Token Standard]], [[Smart Contract]]
+  - **uses**: [[Ethereum]], [[Blockchain]]
+  - **enables**: [[Decentralised Finance]], [[Fungible Token]]
+  - **contrastsWith**: [[ERC721]]
 
 - ### Content
   - An [[Ethereum]] [[Smart Contract]] interface standard specifying required functions, events, and behaviours for implementing fungible tokens on [[EVM]]-compatible blockchains. ERC-20 enables interoperable [[Token Transfer]], [[Balance Tracking]], and [[Smart Contract]] interaction, forming the foundation of decentralised finance and governance token ecosystems.

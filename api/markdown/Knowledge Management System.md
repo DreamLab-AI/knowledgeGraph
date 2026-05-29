@@ -42,15 +42,29 @@ public:: true
   "@id": "urn:ngm:class:knowledge-management-system",
   "@type": "Class",
   "label": "Knowledge Management System",
-  "definition": "Knowledge Management System is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "A Knowledge Management System (KMS) is a platform that captures, organises, retrieves, and shares structured and unstructured knowledge across an organisation or community. In spatial computing contexts, a KMS may underpin documentation of 3D assets, ontologies, and procedural content, integrating knowledge graphs, semantic search, and metadata management to make information discoverable and actionable.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
+      {"@id": "urn:ngm:class:ontology", "label": "Ontology"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"},
+      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:metadata-management", "label": "Metadata Management"},
+      {"@id": "urn:ngm:class:knowledge-base", "label": "Knowledge Base"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -87,14 +101,19 @@ public:: true
 
 
 - ### Definition
-  - Knowledge Management System is a concept within the metaverse domain. Further enrichment pending.
+  - A Knowledge Management System (KMS) captures, organises, retrieves, and shares structured and unstructured knowledge across an organisation, integrating knowledge graphs, ontologies, semantic search, and metadata management to make information discoverable and actionable across spatial computing workflows.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:KnowledgeManagementSystem
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses [[Knowledge Graph]]
+  - uses [[Ontology]]
+  - enables [[Information Retrieval]]
+  - enables [[Knowledge Representation]]
+  - relatedTo [[Metadata Management]]
+  - relatedTo [[Knowledge Base]]
 
 - ### Content
 

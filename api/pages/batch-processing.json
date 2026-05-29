@@ -5,11 +5,11 @@
   "public": true,
   "classIri": "urn:ngm:class:batch-processing",
   "domain": "artificial-intelligence",
-  "definition": "Batch Processing is a artificial intelligence concept and a type of Processing Model.",
+  "definition": "A computational paradigm in which jobs are accumulated and executed as a group rather than individually in real-time. Batch processing optimises throughput by amortising fixed overhead across many records, enabling efficient ETL pipelines, model training over large datasets, report generation, and vulnerability scanning. Scheduling may be time-based, event-triggered, or dependency-driven.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:cat-ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
+      "id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure"
     },
     {
       "id": "urn:ngm:class:processing-model",
@@ -17,17 +17,41 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:batch-normalisation",
+        "label": "Batch Normalisation"
+      },
+      {
+        "id": "urn:ngm:class:batch-size",
+        "label": "Batch Size"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:machine-learning-pipeline",
+        "label": "Machine Learning Pipeline"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

@@ -8,7 +8,7 @@
   "definition": "AI Diagram Tools are a class of generative AI applications that translate natural-language descriptions, source code, screenshots, or structured specifications into machine-renderable diagram artefacts (flowcharts, sequence diagrams, entity-relationship models, class diagrams, mind maps, architec...",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure (Category)"
     },
     {

@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:vocabulary-services",
   "@type": "Class",
   "label": "Vocabulary Services",
-  "definition": "Technical infrastructure and APIs that provide access to controlled vocabularies, taxonomies, and ontologies, enabling applications to retrieve, search, and validate terminology for consistent semantic interpretation across metaverse platforms and knowledge systems.",
+  "definition": "Technical infrastructure and APIs that provide programmatic access to controlled vocabularies, taxonomies, and ontologies, enabling applications to retrieve concept definitions, navigate broader/narrower hierarchies, validate terminology, and perform cross-vocabulary mapping for consistent semantic interpretation across platforms. Common interfaces include SPARQL endpoints, SKOS APIs, and REST services backed by platforms such as PoolParty or Metaphactory.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-standards-and-interop",
@@ -59,6 +60,20 @@ public:: true
       "label": "Knowledge Management"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
+      {"@id": "urn:ngm:class:controlled-vocabulary", "label": "Controlled Vocabulary"},
+      {"@id": "urn:ngm:class:skos-vocabulary", "label": "Skos Vocabulary"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
+      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:knowledge-management-system", "label": "Knowledge Management System"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
@@ -109,6 +124,9 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Knowledge Management]]
+  - uses:: [[Ontology]], [[Controlled Vocabulary]], [[Skos Vocabulary]]
+  - enables:: [[Knowledge Graph]], [[Knowledge Representation]]
+  - supports:: [[Knowledge Management System]]
 
 - ### Content
 

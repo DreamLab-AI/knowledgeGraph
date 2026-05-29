@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:rb-0092-protective-stop",
   "domain": "robotics",
-  "definition": "protective stop is a robotics and autonomous systems concept and a type of Robot Safety.",
+  "definition": "A protective stop is a safety-initiated cessation of robot motion that halts all hazardous movement when a safety function is triggered, without necessarily cutting power to the drive system. Unlike an emergency stop, a protective stop permits automatic restart once the triggering condition is resolved, making it a standard mechanism in collaborative robot cells operating under ISO 10218 and ISO/TS 15066. It is fundamental to speed-and-separation monitoring and power-and-force-limiting safety strategies.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-safety-and-standards",
@@ -17,21 +17,57 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:collaborative-operation",
+        "label": "Collaborative Operation"
+      },
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-10218",
+        "label": "ISO 10218"
+      },
+      {
+        "id": "urn:ngm:class:iso-ts-15066",
+        "label": "ISO TS 15066"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:collaborative-robot",
+        "label": "Collaborative Robot"
+      },
+      {
+        "id": "urn:ngm:class:robot-safety",
+        "label": "Robot Safety"
+      }
+    ]
   },
   "wikilinks": [
     {

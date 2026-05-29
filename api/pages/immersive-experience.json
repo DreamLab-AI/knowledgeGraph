@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:immersive-experience",
   "domain": "spatial-computing",
-  "definition": "Immersive Experience is a spatial computing concept and a type of spatial-computing.",
+  "definition": "An Immersive Experience is a deeply engaging interaction or environment that induces a compelling sense of presence by combining high-fidelity multi-sensory stimulation, responsive interaction, and narrative coherence across visual, auditory, and haptic channels. Underpinned by virtual reality, augmented reality, and spatial audio technologies, immersive experiences span VR training simulations, therapeutic applications, collaborative virtual workspaces, and entertainment, with quality measured through presence questionnaires, physiological indicators, and behavioural engagement metrics.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -14,11 +14,33 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      },
+      {
+        "id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "id": "urn:ngm:class:telepresence",
+        "label": "Telepresence"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +49,12 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ]
   },
   "wikilinks": [
     {

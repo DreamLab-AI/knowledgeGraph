@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:robot-sensor",
   "domain": "robotics",
-  "definition": "Robot Sensor - Robot Sensor in robotics systems",
+  "definition": "A Robot Sensor is a transducer or measurement device integrated into a robotic system to acquire data about the robot's internal state (proprioception: joint angles, torques, currents) or external environment (exteroception: proximity, force, vision, lidar). Sensor data drives closed-loop control, obstacle avoidance, and higher-level perception pipelines.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-perception",
@@ -13,21 +13,49 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      }
+    ]
   },
   "wikilinks": [
     {

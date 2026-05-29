@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:calibration",
   "domain": "robotics",
-  "definition": "Calibration in robotics and sensing is the process of determining or correcting the intrinsic and extrinsic parameters of sensors, cameras, or actuators to ensure accurate measurement and alignment.",
+  "definition": "Calibration in robotics and sensing is the systematic process of determining, verifying, and correcting the quantitative relationship between a sensor's or actuator's raw output and the physical quantity it represents, encompassing intrinsic parameters (gain, offset, nonlinearity), extrinsic parameters (pose relative to a reference frame), and inter-sensor spatial relationships. Calibration is prerequisite for metrically accurate perception, closed-loop control, and multi-modal Sensor Fusion in robotic systems. It applies to diverse transducers including cameras, Lidar scanners, IMUs, force-torque sensors, joint encoders, and end-effector tools.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-perception",
@@ -14,17 +14,44 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:robot-sensor",
+        "label": "Robot Sensor"
+      },
+      {
+        "id": "urn:ngm:class:imu",
+        "label": "IMU"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "id": "urn:ngm:class:robot-control",
+        "label": "Robot Control"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": []

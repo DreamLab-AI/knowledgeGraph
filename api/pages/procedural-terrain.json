@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:procedural-terrain",
   "domain": "spatial-computing",
-  "definition": "Procedural Terrain is a spatial computing concept and a type of spatial-computing.",
+  "definition": "Procedural Terrain refers to algorithmically generated landscape geometry, typically based on noise functions such as Perlin or simplex noise, fractals, hydraulic erosion simulation, and rule-based placement of features. It enables scalable, varied, and believable virtual worlds without manual authoring of every surface element, supporting open-world game environments and simulation scenarios.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:metaverse-application",
+        "label": "Metaverse Application"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:procedural-content-generation",
+        "label": "Procedural Content Generation"
+      },
+      {
+        "id": "urn:ngm:class:procedural-generation",
+        "label": "Procedural Generation"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:procedural-and-hybrid-4-d",
+        "label": "Procedural and Hybrid 4D"
+      },
+      {
+        "id": "urn:ngm:class:procedural-texture",
+        "label": "Procedural Texture"
+      },
+      {
+        "id": "urn:ngm:class:rendering-engine",
+        "label": "Rendering Engine"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": []

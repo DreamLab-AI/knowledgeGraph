@@ -1,12 +1,14 @@
 - ### Definition
-  - Physics Material is a concept within the mv domain.
+  - A data structure encoding surface interaction properties — friction coefficients, coefficient of restitution, density, and drag — that govern object behaviour within a physics simulation engine. Physics materials are distinct from visual rendering materials and are consumed by simulation solvers to produce physically plausible contact responses for metaverse avatars, props, and environments.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:PhysicsMaterial
   - owl-role:: Concept
 
 - ### Relationships
-  - is-subclass-of:: [[Metaverse]]
+  - uses: [[Physics Simulation]], [[Rigid Body Dynamics]]
+  - supports: [[Collision Detection]], [[Physically Based Rendering]]
+  - partOf: [[Metaverse]]
 
 - ### Content
 

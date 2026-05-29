@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:attention-weight",
   "domain": "artificial-intelligence",
-  "definition": "Weights computed by attention mechanisms.",
+  "definition": "A scalar coefficient produced by an attention mechanism that quantifies the relevance of one position (key/value) to another (query) in a sequence or across modalities. Attention weights are computed via a softmax over scaled dot-products of query and key vectors, and govern how much each value contributes to the output representation. They are the core computational primitive of Transformer-based models.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-model-architecture",
@@ -13,21 +13,61 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:self-attention",
+        "label": "Self Attention"
+      },
+      {
+        "id": "urn:ngm:class:multi-head-attention",
+        "label": "Multi-Head Attention"
+      },
+      {
+        "id": "urn:ngm:class:cross-attention",
+        "label": "Cross Attention"
+      },
+      {
+        "id": "urn:ngm:class:query-key-value",
+        "label": "Query Key Value"
+      },
+      {
+        "id": "urn:ngm:class:positional-encoding",
+        "label": "Positional Encoding"
+      }
+    ]
   },
   "wikilinks": [
     {

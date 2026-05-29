@@ -46,7 +46,7 @@ public:: true
   "@id": "urn:ngm:class:rotary-encoder",
   "@type": "Class",
   "label": "Rotary Encoder",
-  "definition": "Rotary encoder measures shaft angle and direction.",
+  "definition": "A rotary encoder is an electromechanical transducer that converts shaft angular position or velocity into digital pulses or absolute position codes. Incremental encoders output A/B quadrature pulses enabling direction and relative position measurement; absolute encoders output a unique binary code at every shaft position. Used ubiquitously in robot joints, servo motors, and motion-control systems for precise closed-loop feedback.",
   "domain": "robotics",
   "maturity": "established",
   "subClassOf": [
@@ -59,7 +59,24 @@ public:: true
       "label": "Encoder"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:feedback-control", "label": "Feedback Control"},
+      {"@id": "urn:ngm:class:pid-controller", "label": "Pid Controller"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:servo-motor", "label": "Servo Motor"},
+      {"@id": "urn:ngm:class:dc-servo-motor", "label": "DC Servo Motor"},
+      {"@id": "urn:ngm:class:stepper-motor", "label": "Stepper Motor"},
+      {"@id": "urn:ngm:class:imu", "label": "IMU"},
+      {"@id": "urn:ngm:class:odometry", "label": "Odometry"},
+      {"@id": "urn:ngm:class:force-torque-sensor", "label": "Force Torque Sensor"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:simultaneous-localisation-and-mapping", "label": "Simultaneous Localisation and Mapping"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -67,6 +84,8 @@ public:: true
   }
 }
 ```
+
+Rotary encoders are the most common position feedback sensor in robotics. Optical encoders use a slotted disk and photodetector; magnetic encoders use Hall-effect sensing against a magnetised ring. Absolute encoders retain position across power cycles, while incremental encoders require homing on startup. Resolution is measured in counts per revolution (CPR), with modern encoders reaching 10,000–1,000,000 CPR for high-precision servo applications.
 
 ```json-ld
 {

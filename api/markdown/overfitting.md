@@ -5,7 +5,12 @@
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Contrasts With [[Underfitting]]
+  - Requires [[Training Data]]
+  - Requires [[Model Training]]
+  - Related To [[Dropout]]
+  - Related To [[Model Capacity]]
+  - Related To [[Deep Learning]]
 - ### Content
   - ### Primary Definition
   **Overfitting** is a phenomenon where a model learns training data too well, including noise and artefacts, resulting in poor generalisation to new data. Overfitted models perform well on training data but poorly on test data.

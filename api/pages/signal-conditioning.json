@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:signal-conditioning",
   "domain": "robotics",
-  "definition": "The processing of raw sensor outputs\u2014through amplification, filtering, conversion, and isolation\u2014to produce clean, calibrated signals suitable for downstream control and estimation algorithms.",
+  "definition": "Signal conditioning is the processing of raw electrical outputs from sensors \u2014 through amplification, filtering, analogue-to-digital conversion, isolation, and calibration \u2014 to produce clean, scaled, and calibrated digital representations suitable for downstream control, estimation, and machine-learning algorithms. It sits at the boundary between the physical world and digital processing pipelines, and its quality directly determines the accuracy of perception systems built on top of it. In robotic systems, signal conditioning circuits and firmware handle inputs from IMUs, force-torque sensors, encoders, pressure sensors, and cameras before data is consumed by SLAM, Kalman filters, or neural networks.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-perception",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:imu",
+        "label": "IMU"
+      },
+      {
+        "id": "urn:ngm:class:digital-signal-processing",
+        "label": "Digital Signal Processing"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:accelerometer",
+        "label": "Accelerometer"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

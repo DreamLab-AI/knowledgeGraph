@@ -7,7 +7,14 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Part Of [[Encoder Decoder Architecture]]
+  - Part Of [[Transformer]]
+  - Uses [[Self Attention]]
+  - Uses [[Cross Attention]]
+  - Uses [[Attention Mechanism]]
+  - Related To [[Encoder]]
+  - Related To [[Large Language Models]]
+  - Related To [[GPT]]
 
 - ### Content
   - The component in an encoder-decoder architecture that generates the output sequence autoregressively, using masked self-attention, cross-attention to encoder outputs, and feed-forward layers.

@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:verifiable-credential-standard",
   "@type": "Class",
   "label": "Verifiable Credential Standard",
-  "definition": "The W3C specification that defines a standard data model and format for expressing cryptographically verifiable claims about subjects, enabling portable, privacy-preserving digital credentials for identity and attribute verification.",
+  "definition": "The W3C Verifiable Credentials Data Model specification defines a structured, cryptographically verifiable format for expressing claims about subjects. Credentials are issued by a trusted issuer, held by a subject, and verified by relying parties using digital signatures and Decentralized Identifiers (DIDs), enabling portable, privacy-preserving identity across metaverse and web platforms without centralised databases.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-standards-and-interop",
@@ -59,7 +60,23 @@ public:: true
       "label": "Standards"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:decentralized-identifiers", "label": "Decentralized Identifiers"},
+      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:identity-verification", "label": "Identity Verification"},
+      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:standards", "label": "Standards"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
+      {"@id": "urn:ngm:class:interoperability-standard", "label": "Interoperability Standard"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -109,6 +126,10 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Standards]]
+  - **requires**: [[Decentralized Identifiers]], [[Cryptography]] — DIDs provide the subject identifier and cryptographic proofs authenticate the credential
+  - **enables**: [[Identity Verification]], [[Digital Identity]] — VCs are the primary mechanism for portable, privacy-preserving identity claims
+  - **standardizedBy**: [[Standards]] — the W3C VC Data Model 1.1 is the normative specification
+  - **relatedTo**: [[Digital Signature]], [[Interoperability Standard]] — credentials rely on signature schemes and enable cross-platform identity interoperability
 
 - ### Content
 

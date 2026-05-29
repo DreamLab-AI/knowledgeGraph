@@ -1,12 +1,14 @@
 - ### Definition
-  - VP robotics project is a concept within the ngm domain.
+  - The **VP Robotics Project** (VisionFlow) is a feasibility study investigating the integration of robotic camera control with machine learning and virtual production workflows. It inverts conventional pre-visualisation pipelines by deriving scene-driven camera motion from AI-generated content, combining open-source robotics software with parallax-plates-as-a-service delivery for the film and television industry.
 
 - ### Semantic Classification
   - owl-class:: robotics:VPRoboticsProject
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: [[Robotics]], [[Machine Learning]] — robotic camera systems are directed by ML-derived motion paths from scene analysis
+  - **enables**: [[Virtual Production]], [[Virtual Set Design]] — the project develops workflows directly applicable to virtual production and virtual set creation
+  - **relatedTo**: [[Motion Capture]], [[Robotics Control]] — robotic camera control shares techniques with motion capture rigs and robotics control systems
 
 - ### Content
   - #Public page

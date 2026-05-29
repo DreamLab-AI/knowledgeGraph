@@ -102,9 +102,10 @@ public:: true
   "@id": "urn:ngm:class:telecollaboration-domain",
   "@type": "Class",
   "label": "Telecollaboration Domain",
-  "definition": "\"The domain of knowledge encompassing technology-mediated collaboration, distributed teamwork, remote presence systems, and virtual cooperation platforms enabling humans to work toger effectively across geographical and temporal boundaries.\"",
+  "definition": "The Telecollaboration Domain is the top-level knowledge domain encompassing technology-mediated collaboration, distributed teamwork, remote presence systems, and virtual cooperation platforms. It integrates synchronous and asynchronous collaboration modalities, telepresence technologies, and cross-domain bridges to AI, blockchain, metaverse, and robotics to enable effective human cooperation across geographical and temporal boundaries.",
   "domain": "distributed-collaboration",
   "maturity": "established",
+  "qualityScore": 0.8,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:dc-protocol-and-infra",
@@ -115,7 +116,28 @@ public:: true
       "label": "Technology Domain"
     }
   ],
-  "quality": 0.6,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:asynchronous-collaboration", "label": "Asynchronous Collaboration"},
+      {"@id": "urn:ngm:class:collaboration-platform", "label": "Collaboration Platform"},
+      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"},
+      {"@id": "urn:ngm:class:dao-governance-for-telecollaboration", "label": "DAO Governance for Telecollaboration"},
+      {"@id": "urn:ngm:class:blockchain-collaboration", "label": "Blockchain Collaboration"},
+      {"@id": "urn:ngm:class:augmented-reality-collaboration", "label": "Augmented Reality Collaboration"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:collaboration-technology", "label": "Collaboration Technology"},
+      {"@id": "urn:ngm:class:distributed-system", "label": "Distributed System"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:digital-twin-collaboration", "label": "Digital Twin Collaboration"},
+      {"@id": "urn:ngm:class:smart-contract-coordination", "label": "Smart Contract Coordination"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:dao-governance", "label": "DAO Governance"},
+      {"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -226,7 +248,7 @@ public:: true
 
 
 - ### Definition
-  - "The domain of knowledge encompassing technology-mediated collaboration, distributed teamwork, remote presence systems, and virtual cooperation platforms enabling humans to work together effectively across geographical and temporal boundaries."
+  The Telecollaboration Domain is the top-level knowledge domain encompassing technology-mediated collaboration, distributed teamwork, remote presence systems, and virtual cooperation platforms. It integrates synchronous and asynchronous collaboration modalities, telepresence technologies, and cross-domain bridges to AI, blockchain, metaverse, and robotics to enable effective human cooperation across geographical and temporal boundaries.
 
 - ### Semantic Classification
   - owl-class:: distributed-collaboration:TelecollaborationDomain
@@ -234,7 +256,10 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Technology Domain]]
-  - bridges-to:: [[AI Domain]] (via AI-enhanced collaboration)
+  - hasPart:: [[Asynchronous Collaboration]], [[Collaboration Platform]], [[Distributed Collaboration]], [[DAO Governance for Telecollaboration]], [[Blockchain Collaboration]], [[Augmented Reality Collaboration]]
+  - requires:: [[Collaboration Technology]], [[Distributed System]]
+  - enables:: [[Digital Twin Collaboration]], [[Smart Contract Coordination]]
+  - relatedTo:: [[DAO Governance]], [[Distributed Computing]]
 
 - ### Content
   Telecollaboration Domain Root

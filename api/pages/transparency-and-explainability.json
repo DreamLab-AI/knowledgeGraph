@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:transparency-and-explainability",
   "domain": "artificial-intelligence",
-  "definition": "Transparency and Explainability is a trustworthiness dimension ensuring AI systems provide sufficient information about their operation, decision logic, capabilities, and limitations to enable appropriate understanding, interpretation, use, and oversight by relevant stakeholders.",
+  "definition": "Transparency and Explainability is a core AI trustworthiness dimension requiring that AI systems disclose sufficient information about their operation, decision logic, data provenance, and limitations to enable appropriate understanding and oversight by developers, deployers, and affected users. It encompasses traceability (audit trails, dataset documentation), explainability (global and local model explanations, counterfactuals), and communication transparency (disclosing AI involvement and system boundaries). Regulatory frameworks such as the EU AI Act Article 13 mandate transparency obligations for high-risk AI systems, driving demand for methods such as SHAP, LIME, and AI model cards.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -13,21 +13,86 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      },
+      {
+        "id": "urn:ngm:class:interpretability",
+        "label": "Interpretability"
+      },
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "id": "urn:ngm:class:ai-model-card",
+        "label": "AI Model Card"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-audit",
+        "label": "AI Audit"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      },
+      {
+        "id": "urn:ngm:class:ai-trustworthiness",
+        "label": "AI Trustworthiness"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:intrinsic-interpretability",
+        "label": "Intrinsic Interpretability"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      },
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "id": "urn:ngm:class:decision-transparency",
+        "label": "Decision Transparency"
+      },
+      {
+        "id": "urn:ngm:class:post-hoc-explanation",
+        "label": "Post Hoc Explanation"
+      },
+      {
+        "id": "urn:ngm:class:feature-importance",
+        "label": "Feature Importance"
+      }
+    ]
   },
   "wikilinks": [
     {

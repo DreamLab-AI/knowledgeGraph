@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:interpretable-ai",
   "domain": "artificial-intelligence",
-  "definition": "Machine learning models and systems whose internal decision-making processes are inherently transparent and understandable to humans without requiring additional post-hoc explanation techniques.",
+  "definition": "Machine learning models and systems whose internal decision-making processes are inherently transparent and understandable to humans without requiring additional post-hoc explanation techniques. Interpretable AI prioritises transparency by design\u2014via linear models, decision trees, or rule-based systems\u2014distinguishing it from explainable AI approaches that retrofit explanations onto opaque models.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -13,21 +13,53 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:model-transparency",
+        "label": "Model Transparency"
+      },
+      {
+        "id": "urn:ngm:class:model-interpretability",
+        "label": "Model Interpretability"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      },
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      }
+    ]
   },
   "wikilinks": [
     {

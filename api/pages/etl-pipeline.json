@@ -5,20 +5,42 @@
   "public": true,
   "classIri": "urn:ngm:class:etl-pipeline",
   "domain": "artificial-intelligence",
-  "definition": "Extract, Transform, Load pipeline that automates the process of moving data from source systems, transforming it for analysis, and loading it into target data stores.",
+  "definition": "An Extract-Transform-Load pipeline that automates the movement of data from heterogeneous source systems, applies normalisation and enrichment transformations, and loads the results into target data stores such as data warehouses or feature stores. ETL pipelines are foundational to data engineering and AI/ML workflows.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:cat-ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
+      "id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      },
+      {
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +49,28 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-lake",
+        "label": "Data Lake"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-pipeline",
+        "label": "Machine Learning Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:feature-store",
+        "label": "Feature Store"
+      },
+      {
+        "id": "urn:ngm:class:data-versioning",
+        "label": "Data Versioning"
+      },
+      {
+        "id": "urn:ngm:class:database-system",
+        "label": "Database System"
+      }
+    ]
   },
   "wikilinks": [
     {

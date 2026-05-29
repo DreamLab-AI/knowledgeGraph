@@ -42,15 +42,29 @@ public:: true
   "@id": "urn:ngm:class:tele-001-telepresence",
   "@type": "Class",
   "label": "TELE 001 telepresence",
-  "definition": "TELE 001 telepresence is a type of Distributed Collaboration in the distributed collaboration domain.",
+  "definition": "TELE 001 Telepresence is a foundational concept within the telecollaboration domain that defines the sense of physical presence transmitted across a distance through audio-visual, haptic, and immersive communication technologies. It serves as the baseline specification for how distributed participants experience co-presence in collaborative environments, underpinning higher-order telecollaboration and virtual meeting systems.",
   "domain": "distributed-collaboration",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:dc-telepresence",
       "label": "Telepresence"
     }
   ],
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:telecollaboration", "label": "Telecollaboration"},
+      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:virtual-collaboration", "label": "Virtual Collaboration"},
+      {"@id": "urn:ngm:class:immersive-communication", "label": "Immersive Communication"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:audio-system", "label": "Audio System"},
+      {"@id": "urn:ngm:class:avatar", "label": "Avatar"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -87,14 +101,19 @@ public:: true
 
 
 - ### Definition
-  - T E L E 001 telepresence is a concept within the telecollaboration domain. Further enrichment pending.
+  - TELE 001 Telepresence is a foundational concept within the telecollaboration domain defining the sense of physical presence transmitted across distance through audio-visual, haptic, and immersive communication technologies, underpinning higher-order telecollaboration and virtual meeting systems.
 
 - ### Semantic Classification
   - owl-class:: distributed-collaboration:TELE001telepresence
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - partOf [[Telecollaboration]]
+  - partOf [[Distributed Collaboration]]
+  - enables [[Virtual Collaboration]]
+  - enables [[Immersive Communication]]
+  - uses [[Audio System]]
+  - uses [[Avatar]]
 
 - ### Content
 

@@ -37,15 +37,30 @@ public:: true
   "@id": "urn:ngm:class:progressive-download",
   "@type": "Class",
   "label": "Progressive Download",
-  "definition": "Progressive Download is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Progressive Download is a content delivery technique in which assets—3D models, textures, audio, or video—are streamed and partially consumed before the full file is retrieved. It enables early playback or rendering from incomplete data, reduces perceived loading latency in metaverse environments, and underpins level-of-detail streaming and lazy asset loading strategies.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-network-and-comms",
       "label": "Network and Communication"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:content-delivery-network", "label": "Content Delivery Network"},
+      {"@id": "urn:ngm:class:level-of-detail", "label": "Level of Detail"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:video-streaming", "label": "Video Streaming"},
+      {"@id": "urn:ngm:class:3-d-asset", "label": "3D Asset"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:asset-management", "label": "Asset Management"},
+      {"@id": "urn:ngm:class:web-assembly", "label": "WebAssembly"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -76,14 +91,16 @@ public:: true
 
 
 - ### Definition
-  - ProgressiveDownload is a concept within the ngm domain.
+  - Progressive Download is a content delivery technique in which assets—3D models, textures, audio, or video—are streamed and partially consumed before the full file is retrieved. It enables early playback or rendering from incomplete data, reduces perceived loading latency in metaverse environments, and underpins level-of-detail streaming and lazy asset loading strategies.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:ProgressiveDownload
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses: [[Content Delivery Network]], [[Level of Detail]]
+  - enables: [[Video Streaming]], [[3D Asset]]
+  - relatedTo: [[Asset Management]], [[WebAssembly]]
 
 - ### Content
   # ProgressiveDownload

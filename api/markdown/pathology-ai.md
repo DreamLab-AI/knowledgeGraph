@@ -7,7 +7,13 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - is-subclass-of:: Medical Imaging AI
+  - Uses [[Computer Vision]]
+  - Uses [[Deep Learning]]
+  - Related To [[Radiology AI]]
+  - Related To [[Healthcare Analytics]]
+  - Enables [[Medical AI]]
+  - Depends On [[Image Segmentation]]
 
 - ### Content
   - Pathology AI comprises artificial intelligence systems for automated analysis of histopathology slides, cytology specimens, and other pathological images. These systems perform tasks including cancer detection, grading, biomarker quantification, and morphological analysis using whole slide imaging and deep learning architectures tailored for gigapixel pathology images.

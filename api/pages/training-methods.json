@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:training-methods",
   "domain": "artificial-intelligence",
-  "definition": "Training Mods encompass the techniques and algorithms used to teach machine learning models to perform specific tasks by adjusting model parameters based on training data.",
+  "definition": "Training Methods encompass the algorithms and procedures used to optimise machine learning model parameters against training data, including supervised, unsupervised, semi-supervised, reinforcement, transfer, curriculum, and contrastive learning paradigms. The choice of method fundamentally determines model capability, data efficiency, and generalisation behaviour.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -13,12 +13,43 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:contrastive-learning",
+        "label": "Contrastive Learning"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-model",
+        "label": "Machine Learning Model"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],

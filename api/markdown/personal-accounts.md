@@ -1,12 +1,14 @@
 - ### Definition
-  - personal accounts is a concept within the ngm domain.
+  Personal accounts are individually attributed user accounts providing access to digital services, financial platforms, or governmental systems, uniquely bound to a natural person's verified identity. They are the primary locus of credential management, authentication, and access-control enforcement. In the digital asset space, personal accounts span exchange trading accounts, self-custody wallets, and HMRC Self Assessment portals used to declare capital gains from cryptocurrency disposals.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:PersonalAccounts
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Requires authentication mechanisms and identity management infrastructure.
+  - Relates to digital identity frameworks, privacy obligations (GDPR), and access control policies.
+  - In the context of UK cryptocurrency taxation, personal accounts are the basis for HMRC Self Assessment reporting of capital gains from digital asset disposals (see Tax Treatment Crypto).
 
 - ### Content
   If you sold Bitcoin in the UK in **May 2025**, here is what you need to know about tax reporting:

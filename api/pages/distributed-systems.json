@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:distributed-systems",
   "domain": "spatial-computing",
-  "definition": "Distributed Systems is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Collections of independent computing nodes that coordinate through message passing to present a unified service, providing fault tolerance, horizontal scalability, and geographic distribution. Distributed systems are foundational to metaverse platforms, blockchain networks, and large-scale AI inference pipelines, where no single node holds all state and consistency guarantees (CAP theorem trade-offs) govern design choices.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -13,21 +13,48 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:orchestration",
+        "label": "Orchestration"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ]
   },
   "wikilinks": [
     {

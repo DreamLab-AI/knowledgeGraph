@@ -5,6 +5,12 @@
   - owl-role:: Concept
 - ### Relationships
   - is-subclass-of:: [[Blockchain]]
+  - Enables [[Semantic Interoperability]]
+  - Enables [[Smart Contract Execution]]
+  - Uses [[API Standard]]
+  - Has Part [[User Interface]]
+  - Related To [[Blockchain Protocol]]
+  - Related To [[Smart Contract]]
 - ### Content
   ---
   id: DT-1015

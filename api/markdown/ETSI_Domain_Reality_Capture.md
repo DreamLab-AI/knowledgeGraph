@@ -70,16 +70,32 @@ public:: true
   "@id": "urn:ngm:class:etsi-domain-reality-capture",
   "@type": "Class",
   "label": "ETSI_Domain_Reality_Capture",
-  "definition": "ETSI technical framework enabling digital reconstruction of physical environments and objects through 3D scanning, photogrammetry, sensor fusion, and motion capture to create semantic DigitalTwin|digital twins for metaverse and immersive environments.",
+  "definition": "An ETSI standardisation domain enabling digital reconstruction of physical environments and objects through 3D scanning, photogrammetry, sensor fusion, depth sensing, and motion capture to create semantically labelled digital twins for metaverse and immersive applications. Governed by ETSI GS ARF 004-6 and GR ARF 010, this domain defines interoperability requirements for real-time mesh generation, volumetric video coding (ISO V3C/V-PCC), and integration with scene management and digital twin platforms.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
     }
   ],
-  "quality": 0.4,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:photogrammetry", "label": "Photogrammetry"},
+      {"@id": "urn:ngm:class:motion-capture-rig", "label": "Motion Capture Rig"},
+      {"@id": "urn:ngm:class:reality-capture-system", "label": "Reality Capture System"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
+      {"@id": "urn:ngm:class:3-d-reconstruction", "label": "3D Reconstruction"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:depth-sensing", "label": "Depth Sensing"},
+      {"@id": "urn:ngm:class:lidar", "label": "Lidar"},
+      {"@id": "urn:ngm:class:point-cloud", "label": "Point Cloud"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -156,7 +172,14 @@ public:: true
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **hasPart** [[Photogrammetry]] — photogrammetry is a core reality capture technique
+  - **hasPart** [[Motion Capture Rig]] — motion capture rigs capture dynamic human movement
+  - **hasPart** [[Reality Capture System]] — reality capture systems are the primary instrumentation
+  - **enables** [[Digital Twin]] — captured spatial data feeds digital twin construction pipelines
+  - **enables** [[3D Reconstruction]] — reality capture produces 3D reconstructions from sensor data
+  - **uses** [[Depth Sensing]] — depth sensors acquire geometric data for mesh reconstruction
+  - **uses** [[Lidar]] — LiDAR provides high-precision point cloud data for scene reconstruction
+  - **uses** [[Point Cloud]] — point clouds are the canonical intermediate representation in reality capture
 - ### Content
   - The ETSI Reality Capture domain encompasses technologies and standards for digitising physical environments and objects into semantic digital representations, enabling accurate creation of digital twins and immersive content for metaverse applications.
   - ### Original Content

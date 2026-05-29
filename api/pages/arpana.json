@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:arpana",
   "domain": "infrastructure",
-  "definition": "arpana is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A UK-focused jurisdictional practice framework for integrating crime scene reconstruction with court proceedings, combining forensic evidence management, chain-of-custody protocols, and digital evidence presentation standards to support admissible expert testimony.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-software-engineering",
@@ -14,20 +14,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-base",
+        "label": "Knowledge Base"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ]
   },
   "wikilinks": [
     {

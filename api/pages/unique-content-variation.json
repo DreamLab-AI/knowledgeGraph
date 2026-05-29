@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:unique-content-variation",
   "domain": "spatial-computing",
-  "definition": "Procedurally generated or algorithmically created variations of digital content that produce distinct, individualized versions of assets, experiences, or environments, often used in NFTs and generative art to ensure scarcity and uniqueness.",
+  "definition": "Procedurally generated or algorithmically created variations of digital content that produce distinct, individualised versions of assets, experiences, or environments, often used in NFTs and generative art to ensure scarcity and uniqueness.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -17,21 +17,53 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "id": "urn:ngm:class:content-authentication",
+        "label": "Content Authentication"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:procedural-generation",
+        "label": "Procedural Generation"
+      },
+      {
+        "id": "urn:ngm:class:nft-minting",
+        "label": "NFT Minting"
+      }
+    ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:erc-721",
+        "label": "ERC-721"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-art-application",
+        "label": "Digital Art Application"
+      },
+      {
+        "id": "urn:ngm:class:nft-ownership-proof",
+        "label": "NFT Ownership Proof"
+      }
+    ]
   },
   "wikilinks": [
     {

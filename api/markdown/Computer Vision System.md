@@ -46,9 +46,9 @@ public:: true
   "@id": "urn:ngm:class:computer-vision-system",
   "@type": "Class",
   "label": "Computer Vision System",
-  "definition": "Computer Vision System is a type of Computer Vision in the spatial computing domain.",
+  "definition": "An integrated assembly of hardware and software components—cameras, depth sensors, inference pipelines, and output interfaces—that acquires, processes, and interprets visual information from the physical world. Computer vision systems underpin spatial computing applications such as AR tracking, spatial mapping, and object detection, translating raw image data into actionable semantic understanding for downstream tasks.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-interaction",
@@ -59,7 +59,20 @@ public:: true
       "label": "Computer Vision"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
+      {"@id": "urn:ngm:class:feature-extraction", "label": "Feature Extraction"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:spatial-mapping", "label": "Spatial Mapping"},
+      {"@id": "urn:ngm:class:object-detection", "label": "Object Detection"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:pattern-recognition", "label": "Pattern Recognition"}
+    ]
+  },
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -100,7 +113,7 @@ public:: true
 
 
 - ### Definition
-  - Computer Vision System is a concept within the metaverse domain. Further enrichment pending.
+  - An integrated assembly of hardware and software components—cameras, depth sensors, inference pipelines, and output interfaces—that acquires, processes, and interprets visual information from the physical world. Computer vision systems underpin spatial computing applications such as AR tracking, spatial mapping, and object detection, translating raw image data into actionable semantic understanding for downstream tasks.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:ComputerVisionSystem
@@ -108,6 +121,11 @@ public:: true
 
 - ### Relationships
   - bridges-to:: [[Computer Vision]]
+  - uses [[Deep Learning]]
+  - uses [[Feature Extraction]]
+  - enables [[Spatial Mapping]]
+  - enables [[Object Detection]]
+  - relatedTo [[Pattern Recognition]]
 
 - ### Content
 

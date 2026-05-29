@@ -8,6 +8,10 @@
 
 - ### Relationships
   - bridges-to:: [[Digital Twin]]
+  - Uses: [[Red Teaming]]
+  - Supports: [[AI Safety]], [[Robustness]]
+  - Requires: [[Machine Learning Model]]
+  - Related To: [[AI Governance]], [[Digital Twin]]
 
 - ### Content
   - Testing methodology that deliberately attempts to cause AI system failures through adversarial inputs, edge cases, and challenging scenarios. Adversarial testing helps identify robustness issues, safety vulnerabilities, and alignment failures before deployment.

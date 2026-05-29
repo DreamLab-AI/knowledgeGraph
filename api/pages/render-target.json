@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:render-target",
   "domain": "spatial-computing",
-  "definition": "Render Target is a spatial computing concept and a type of Render Pipeline.",
+  "definition": "A memory buffer or texture surface to which a GPU writes the output of a rendering pass, including the default framebuffer displayed on screen and off-screen targets used for post-processing effects, shadow maps, reflections, and multi-pass rendering in real-time graphics pipelines.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-display-and-rendering",
@@ -17,8 +17,8 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -27,11 +27,38 @@
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:compute-shader",
+        "label": "Compute Shader"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:real-time-rendering-pipeline",
+        "label": "Real-Time Rendering Pipeline"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:pixel-shader",
+        "label": "Pixel Shader"
+      },
+      {
+        "id": "urn:ngm:class:vertex-shader",
+        "label": "Vertex Shader"
+      },
+      {
+        "id": "urn:ngm:class:shader",
+        "label": "Shader"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

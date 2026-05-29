@@ -5,11 +5,11 @@
   "public": true,
   "classIri": "urn:ngm:class:data-versioning",
   "domain": "artificial-intelligence",
-  "definition": "Version control system for datasets and ML models, tracking changes to data over time to ensure reproducibility and lineage in machine learning workflows (e.g., DVC).",
+  "definition": "Data Versioning is the systematic practice of tracking, storing, and managing changes to datasets and machine learning models over time, ensuring reproducibility of experiments and auditability of data lineage. Tools such as DVC (Data Version Control) apply version control semantics to large binary assets, linking dataset snapshots to the code and configurations that produced them, enabling rollback, comparison, and collaborative data science workflows.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:cat-ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
+      "id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure"
     },
     {
       "id": "urn:ngm:class:machine-learning-pipeline",
@@ -17,21 +17,66 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.75,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:artifact-metadata",
+        "label": "Artifact Metadata"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "id": "urn:ngm:class:experiment",
+        "label": "experiment"
+      },
+      {
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:machine-learning-pipeline",
+        "label": "Machine Learning Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:machine-learning-infrastructure",
+        "label": "Machine Learning Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -1,77 +1,18 @@
 - ### Definition
-  - Block creation compensation within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
-
-- ### Semantic Classification
-  - owl-class:: blockchain:MiningReward
-  - owl-role:: Object
-  - owl-inferred:: blockchain:VirtualObject
-  - belongs-to-domain:: [[ConsensusDomain]]
-  - implemented-in-layer:: [[ProtocolLayer]]
+  A Mining Reward is the economic incentive awarded to the miner who produces a valid block, comprising a block subsidy of newly minted cryptocurrency plus the aggregate transaction fees of all transactions included in that block. The subsidy follows a pre-programmed halving schedule until fees become the sole compensation.
 
 - ### Relationships
-  - is-subclass-of:: [[Blockchain Entity]], [[ConsensusProtocol]]
+  The Mining Reward requires Proof Of Work as the qualifying condition and is integral to the broader Mining process and Consensus Mechanism. It enables the Blockchain Network by making honest mining economically rational and is closely tied to Bitcoin Mining. The Block Reward is the subsidy component of the mining reward, while Transaction Fee represents the fee-revenue component. Miners and Mining Pools are the direct recipients. High Energy Consumption is a consequence of the competition for mining rewards in PoW networks. The economic logic of mining rewards is studied within Blockchain Economics.
 
 - ### Content
 
-  ## Class Declaration
-  Declaration(Class(:MiningReward))
+  The mining reward serves a dual function in proof-of-work blockchains: it funds the initial distribution of the native currency—replacing the role that central banks play in fiat systems—and it provides the ongoing incentive for miners to expend energy securing the network against attacks. Without the reward, rational miners would have no economic reason to perform proof-of-work computation, and the security guarantees of the chain would collapse.
 
-  ## Subclass Relationships
-  SubClassOf(:MiningReward :ConsensusProtocol)
-  SubClassOf(:MiningReward :BlockchainEntity)
+  In Bitcoin, the block subsidy started at 50 BTC per block at genesis in 2009. The halving mechanism, triggered every 210,000 blocks (approximately four years), reduced it to 25 BTC in 2012, 12.5 BTC in 2016, 6.25 BTC in 2020, and 3.125 BTC in 2024. The scheduled reduction continues until approximately 2140, when the total supply reaches 21 million BTC and the subsidy becomes negligible. This deflationary schedule contrasts with proof-of-stake networks, which typically set ongoing issuance rates rather than strict supply caps.
 
-  ## Essential Properties
-  SubClassOf(:MiningReward
-    (ObjectSomeValuesFrom :partOf :Blockchain))
+  The transition from subsidy-dominated to fee-dominated rewards is a major open research question in blockchain economics. Game-theoretic models suggest that in a fee-only regime, rational miners might selectively mine blocks with high-fee transactions, creating unpredictable block intervals and mempool dynamics. Proposed solutions include smooth fee market mechanisms (EIP-1559 in Ethereum, which burns a base fee and rewards miners only tips) and covenants that create predictable transaction demand.
 
-  SubClassOf(:MiningReward
-    (ObjectSomeValuesFrom :hasProperty :Property))
-
-  ## Data Properties
-  DataPropertyAssertion(:hasIdentifier :MiningReward "BC-0069"^^xsd:string)
-  DataPropertyAssertion(:hasAuthorityScore :MiningReward "1.0"^^xsd:decimal)
-  DataPropertyAssertion(:isFoundational :MiningReward "true"^^xsd:boolean)
-
-  ## Object Properties
-  ObjectPropertyAssertion(:enablesFeature :MiningReward :BlockchainFeature)
-  ObjectPropertyAssertion(:relatesTo :MiningReward :RelatedConcept)
-
-  ## Annotations
-  AnnotationAssertion(rdfs:label :MiningReward "Mining Reward"@en)
-  AnnotationAssertion(rdfs:comment :MiningReward
-    "Block creation compensation"@en)
-  AnnotationAssertion(dct:description :MiningReward
-    "Foundational blockchain concept with formal ontological definition"@en)
-  AnnotationAssertion(:termID :MiningReward "BC-0069")
-  AnnotationAssertion(:priority :MiningReward "1"^^xsd:integer)
-  AnnotationAssertion(:category :MiningReward "consensus-fundamentals"@en)
-  )
-      ```
-
-  - ## About Mining Reward
-
-  - Block creation compensation within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
-  - ### Key Characteristics
-    - 1. **Definitional Property**: Core defining characteristic
-    - 2. **Functional Property**: Operational behavior
-    - 3. **Structural Property**: Compositional elements
-    - 4. **Security Property**: Security guarantees provided
-    - 5. **Performance Property**: Efficiency considerations
-  - ### Technical Components
-    - **Implementation**: How concept is realized technically
-    - **Verification**: Methods for validating correctness
-    - **Interaction**: Relationships with other components
-    - **Constraints**: Technical limitations and requirements
-  - ### Use Cases
-    - **1. Core Blockchain Operation**
-    - **Application**: Fundamental blockchain functionality
-    - **Example**: Practical implementation in major blockchains
-    - **Requirements**: Technical prerequisites
-    - **Benefits**: Value provided to blockchain systems
-  - ### Standards & References
-    - [[ISO/IEC 23257:2021]] - Blockchain and distributed ledger technologies
-    - [[IEEE 2418.1]] - Blockchain and distributed ledger technologies
-    - [[NIST NISTIR]] - Blockchain and distributed ledger technologies
+  Mining pool coordination amplifies individual miners' rewards by aggregating hash power and distributing block rewards proportionally, smoothing what would otherwise be a highly variable Poisson-distributed income stream. The economics of mining reward sharing within pools—including variance, fee structures, and strategic withholding attacks—is a substantial sub-field of Blockchain Economics research.
 
 - ### Provenance
   - sources:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]

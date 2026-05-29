@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:script",
   "domain": "blockchain",
-  "definition": "Transaction validation programming within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "Bitcoin's stack-based, non-Turing-complete scripting language used to encode spending conditions on transaction outputs and to provide the corresponding unlocking data in transaction inputs. Script programs define locking and unlocking conditions\u2014such as pay-to-public-key-hash\u2014that a validator executes to authorise fund transfer, making transaction validation a programmable process without full smart-contract complexity.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-protocol-and-consensus",
@@ -14,28 +14,63 @@
     {
       "id": "urn:ngm:class:blockchain-entity",
       "label": "Blockchain Entity"
-    },
-    {
-      "id": "urn:ngm:class:distributed-data-structure",
-      "label": "DistributedDataStructure"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:transaction-processing",
+        "label": "Transaction Processing"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:opcodes",
+        "label": "Opcodes"
+      },
+      {
+        "id": "urn:ngm:class:transaction",
+        "label": "Transaction"
+      },
+      {
+        "id": "urn:ngm:class:utxo-model",
+        "label": "UTXO Model"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      },
+      {
+        "id": "urn:ngm:class:transaction-fee",
+        "label": "Transaction Fee"
+      },
+      {
+        "id": "urn:ngm:class:transaction-pool",
+        "label": "Transaction Pool"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ]
   },
   "wikilinks": [
     {

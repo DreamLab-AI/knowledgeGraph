@@ -1,12 +1,14 @@
 - ### Definition
-  - Paper Writing is a concept within the ngm domain.
+  - The structured process of composing and submitting scholarly manuscripts, including literature review, argument construction, citation management, and formatting to venue-specific standards. In AI-adjacent contexts, paper writing increasingly involves AI-assisted drafting, ontology-grounded claims, and tool-augmented workflows (LaTeX, reference managers, large language models) that must be balanced against academic integrity requirements.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:PaperWriting
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: Natural Language Processing, Ontology, Version Control — NLP tools assist drafting and proofreading; ontologies provide controlled vocabularies for claims; version control tracks manuscript revisions collaboratively.
+  - **enables**: Knowledge Graph — systematic paper writing can feed structured claims into knowledge graphs as citable edges.
+  - **relatedTo**: Large Language Models — LLMs are increasingly used as co-writing and paraphrasing tools in academic contexts.
 
 - ### Content
   # Conference presentation

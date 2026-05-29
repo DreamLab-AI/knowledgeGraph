@@ -1,12 +1,14 @@
 - ### Definition
-  - Telecollaboration and Telepresence is a concept within the ngm domain.
+  - Telecollaboration and Telepresence are complementary technologies enabling geographically distributed participants to share a common virtual or augmented workspace with a sense of physical co-presence. They combine real-time audiovisual communication, spatial audio, avatar embodiment, and low-latency networking to support synchronous collaborative tasks across professional, educational, and social domains.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:TelecollaborationAndTelepresence
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires** → [[Latency]], [[Network Protocol]], [[Video Conferencing]]
+  - **enables** → [[Distributed Work]], [[Immersive Communication]], [[Robotic Telepresence]]
+  - **uses** → [[Avatar]], [[Extended Reality]]
 
 - ### Content
   # Telecollaboration and Telepresence

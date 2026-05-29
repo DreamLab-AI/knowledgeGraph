@@ -5,29 +5,82 @@
   "public": true,
   "classIri": "urn:ngm:class:sheffield-advanced-manufacturing",
   "domain": "infrastructure",
-  "definition": "Sheffield's advanced manufacturing hub specialising in materials science, robotics, and Industry 4.0 technologies.",
+  "definition": "Sheffield Advanced Manufacturing denotes the cluster of research institutions, industrial facilities, and technology parks centred on the Advanced Manufacturing Park (AMP) in South Yorkshire, UK, specialising in materials science, aerospace engineering, robotics, and Industry 4.0 technologies. Anchored by the University of Sheffield's Advanced Manufacturing Research Centre (AMRC) and hosting global firms including Boeing and Rolls-Royce, the cluster forms the core of the Advanced Manufacturing Innovation District (AMID) \u2014 the UK's largest research-led advanced manufacturing ecosystem. It bridges traditional industrial heritage with digital manufacturing, additive processes, and intelligent automation.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-computing-and-cloud",
-      "label": "Computing and Cloud"
+      "id": "urn:ngm:class:uk-tech-ecosystem",
+      "label": "UK Tech Ecosystem"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:north-england-innovation-corridor",
+        "label": "North England Innovation Corridor"
+      },
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "IndustrialAutomation"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:industrial-io-t",
+        "label": "Industrial IoT"
+      },
+      {
+        "id": "urn:ngm:class:robotics-application",
+        "label": "Robotics Application"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:industrial-robot",
+        "label": "Industrial Robot"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:uk-tech-ecosystem",
+        "label": "UK Tech Ecosystem"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:newcastle-ai-and-health-innovation",
+        "label": "Newcastle AI & Health Innovation"
+      },
+      {
+        "id": "urn:ngm:class:national-industrial-centre-for-virtual-environments",
+        "label": "National Industrial Centre for Virtual Environments"
+      },
+      {
+        "id": "urn:ngm:class:sustainable-technology",
+        "label": "Sustainable Technology"
+      }
+    ]
   },
   "wikilinks": [
     {

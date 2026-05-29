@@ -5,7 +5,9 @@
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **hasPart**: [[Post-Quantum Cryptography]], [[Privacy Impact Assessment]], [[Threat Surface Map]], [[Security Layer]]
+  - **requires**: [[Zero-Trust Architecture (ZTA)]], [[Privacy-Enhancing Computation (PEC)]]
+  - **relatedTo**: [[ETSI Domain Identity and Trust]], [[Digital Evidence Chain of Custody]]
 - ### Content
   - The ETSI Security and Privacy domain protects metaverse ecosystems through comprehensive security controls, cryptographic mechanisms, access governance, and privacy safeguards ensuring secure, trustworthy user experiences across distributed virtual environments.
   - ### Original Content

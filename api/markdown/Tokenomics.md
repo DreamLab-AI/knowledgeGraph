@@ -42,15 +42,28 @@ public:: true
   "@id": "urn:ngm:class:tokenomics",
   "@type": "Class",
   "label": "Tokenomics",
-  "definition": "Tokenomics is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Tokenomics describes the economic design and incentive structures of blockchain-based token systems, covering token supply mechanics, distribution schedules, utility functions, and governance rights. Within virtual economies and metaverse platforms, tokenomics governs how digital assets are minted, traded, staked, and burned to sustain ecosystem participation and align stakeholder incentives. Sound tokenomic design balances inflationary rewards for contributors against deflationary sinks, using mechanisms such as bonding curves, liquidity pools, and vesting schedules.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:payment-system", "label": "Payment System"},
+      {"@id": "urn:ngm:class:dao", "label": "DAO"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:nft", "label": "NFT"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -87,12 +100,16 @@ public:: true
 
 
 - ### Definition
-  - Tokenomics is a concept within the metaverse domain. Further enrichment pending.
+  - Tokenomics describes the economic design and incentive structures of blockchain-based token systems, covering token supply mechanics, distribution schedules, utility functions, and governance rights. Within virtual economies and metaverse platforms, tokenomics governs how digital assets are minted, traded, staked, and burned to sustain ecosystem participation and align stakeholder incentives. Sound tokenomic design balances inflationary rewards for contributors against deflationary sinks, using mechanisms such as bonding curves, liquidity pools, and vesting schedules.
 - ### Semantic Classification
   - owl-class:: spatial-computing:Tokenomics
   - owl-role:: concept
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Blockchain]]
+  - requires [[Smart Contract]]
+  - enables [[Payment System]]
+  - enables [[DAO]]
+  - relatedTo [[NFT]]
 - ### Content
   ## Overview
   Tokenomics represents an abstract concept in the metaverse ontology hierarchy.

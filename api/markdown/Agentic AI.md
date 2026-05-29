@@ -27,7 +27,7 @@ public:: true
   "@id": "urn:ngm:class:agentic-ai",
   "@type": "Class",
   "label": "Agentic AI",
-  "definition": "Agentic AI refers to AI systems that autonomously plan, reason, and execute multi-step tasks by calling tools and taking actions in an environment to achieve specified goals.",
+  "definition": "Agentic AI refers to AI systems characterised by autonomy, goal-directedness, and the capacity to take sustained sequences of actions — including calling tools, spawning sub-agents, and modifying their own environment — in pursuit of high-level objectives specified by a user or orchestrator. Agentic systems differ from conversational AI in that they operate over extended time horizons, maintain state across steps, and may take consequential irreversible actions. The term is used both to describe individual agents and multi-agent architectures in which agentic components collaborate.",
   "domain": "artificial-intelligence",
   "subClassOf": [
     {
@@ -35,26 +35,43 @@ public:: true
       "label": "AI Application"
     }
   ],
-  "relations": {},
-  "qualityScore": 0.6,
-  "maturity": "stub"
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
+      {"@id": "urn:ngm:class:tool-use", "label": "Tool Use"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:autonomous-agent", "label": "Autonomous Agent"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:ai-agents", "label": "AI Agents"},
+      {"@id": "urn:ngm:class:orchestration", "label": "Orchestration"}
+    ]
+  },
+  "qualityScore": 0.75,
+  "maturity": "emerging"
 }
 ```
 
 
 - ### Definition
-  - Agentic AI refers to AI systems that autonomously plan, reason, and execute multi-step tasks by calling tools and taking actions in an environment to achieve specified goals.
+  - Agentic AI refers to AI systems characterised by autonomy, goal-directedness, and the capacity to take sustained sequences of actions — including calling tools, spawning sub-agents, and modifying their own environment — in pursuit of high-level objectives specified by a user or orchestrator. Agentic systems differ from conversational AI in that they operate over extended time horizons, maintain state across steps, and may take consequential irreversible actions. The term is used both to describe individual agents and multi-agent architectures in which agentic components collaborate.
 
 - ### Semantic Classification
   - owl-class:: agentic-ai:Agentic AI
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- Stub page — relationships inherited from referencing pages -->
+  - requires [[Large Language Models]]
+  - requires [[Tool Use]]
+  - enables [[Autonomous Agent]]
+  - relatedTo [[AI Agents]]
+  - relatedTo [[Orchestration]]
 
 - ### Content
-  - #Public page
-  - automatically published
+  - Agentic AI systems are distinguished from reactive chatbots by three properties: persistence (maintaining context and state across arbitrarily long task horizons), agency (the ability to initiate actions without step-by-step human instructions), and composability (ability to delegate sub-tasks to specialised agents or tools). Modern agentic architectures are built on large language models that serve as the cognitive core, with an agent loop that alternates between generation (producing a thought or action) and observation (receiving the result of that action from the environment).
+  - Key architectural patterns include single-agent loops (one model, many tools), hierarchical orchestration (a planning model decomposing tasks and routing to specialist models), and peer-to-peer multi-agent collaboration (multiple models negotiating and collaborating without a fixed hierarchy). Memory management is critical: agents maintain short-term in-context memory, external episodic memory in vector stores, and structured state in databases, with retrieval mechanisms determining what context is surfaced per step.
+  - Safety and reliability are central concerns in agentic AI. Agents with broad permissions can cause irreversible harm — deleting files, sending emails, executing financial transactions. Minimal-footprint principles, scope-bounded permissions, human-in-the-loop checkpoints, and explicit reversibility preferences are emerging engineering norms. Evaluation of agentic systems requires task-completion benchmarks with environmental side-effect measurement rather than the simpler turn-based evaluation applicable to conversational models.
 
 - ### Provenance
   - sources::

@@ -54,21 +54,53 @@ public:: true
   "@id": "urn:ngm:class:video-processing",
   "@type": "Class",
   "label": "Video Processing",
-  "definition": "Video Processing in AI involves computational analysis, understanding, and manipulation of video data using machine learning and computer vision techniques.",
+  "definition": "The computational analysis, understanding, and manipulation of video data using machine learning and computer vision techniques. Core tasks include object detection and tracking, semantic segmentation, action recognition, temporal modelling, and scene understanding. Modern approaches employ 3D convolutional networks, vision transformers, and self-supervised learning on large-scale video datasets.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
-  "quality": 0.35,
-  "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
-  },
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-application",
       "label": "AI Application"
     }
-  ]
+  ],
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-segmentation",
+        "label": "Semantic Segmentation"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:instance-segmentation",
+        "label": "Instance Segmentation"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
+    ]
+  }
 }
 ```
 
@@ -121,7 +153,13 @@ public:: true
   - owl-role:: concept
 
 - ### Relationships
-  - is-subclass-of:: ['owl:Thing']
+  - is-subclass-of:: AI Application
+  - Uses [[Computer Vision]]
+  - Uses [[Convolutional Neural Network]]
+  - Uses [[Transformer]]
+  - Has Part [[Object Detection]]
+  - Has Part [[Semantic Segmentation]]
+  - Enables [[Instance Segmentation]]
 
 - ### Content
 

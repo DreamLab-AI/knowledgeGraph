@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:personal-data-store",
   "domain": "infrastructure",
-  "definition": "Personal Data Store is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A user-controlled repository that aggregates, manages, and selectively shares an individual's personal data, enabling the data owner to grant and revoke third-party access under consent-based mechanisms, thereby supporting data sovereignty and privacy-by-design principles in digital and metaverse contexts.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-data-management",
@@ -13,8 +13,8 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,11 +23,38 @@
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:decentralized-identifiers",
+        "label": "Decentralized Identifiers"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
+      },
+      {
+        "id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy By Design"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

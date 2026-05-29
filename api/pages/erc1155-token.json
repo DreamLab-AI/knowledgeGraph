@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:erc1155-token",
   "domain": "blockchain",
-  "definition": "A multi-token standard offering semi-fungibility where tokens represent classes of interchangeable assets. Bundles multiple assets (fungible and non-fungible) in one smart contract for efficient gas usage and reduced network congestion.",
+  "definition": "ERC1155 is an Ethereum multi-token standard that enables a single smart contract to manage an arbitrary number of fungible, non-fungible, and semi-fungible token classes simultaneously. By batching multiple token operations into a single transaction, ERC1155 dramatically reduces gas consumption compared to deploying separate ERC-20 or ERC-721 contracts for each asset class, making it the dominant standard for blockchain gaming, NFT collections with tiered rarity, and on-chain item inventories.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-token-and-asset",
@@ -17,21 +17,82 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:erc1155-standard",
+        "label": "ERC1155 Standard"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:gas-optimization",
+        "label": "Gas Optimization"
+      },
+      {
+        "id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:blockchain-gaming",
+        "label": "Blockchain Gaming"
+      },
+      {
+        "id": "urn:ngm:class:nft-marketplace",
+        "label": "NFT Marketplace"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-market",
+        "label": "Digital Asset Market"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:erc721",
+        "label": "ERC721"
+      },
+      {
+        "id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "id": "urn:ngm:class:fungible-token",
+        "label": "Fungible Token"
+      },
+      {
+        "id": "urn:ngm:class:web3",
+        "label": "Web3"
+      },
+      {
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      }
+    ]
   },
   "wikilinks": [
     {

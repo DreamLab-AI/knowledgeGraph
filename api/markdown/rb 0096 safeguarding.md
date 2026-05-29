@@ -42,9 +42,9 @@ public:: true
   "@id": "urn:ngm:class:rb-0096-safeguarding",
   "@type": "Class",
   "label": "rb 0096 safeguarding",
-  "definition": "safeguarding is a robotics and autonomous systems concept and a type of Robot Safety.",
+  "definition": "Safeguarding, in the context of collaborative and industrial robotics, refers to the ensemble of physical barriers, electronic devices, and procedural controls deployed to prevent hazardous contact between robots and humans. Safeguarding measures include hard guards, light curtains, safety zones, and monitored-stop functions, and are mandated by standards such as ISO 10218 and ISO/TS 15066. Effective safeguarding is complementary to inherent safe design: it mitigates residual risks that cannot be eliminated through power-and-force limiting or speed reduction alone.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-safety-and-standards",
@@ -55,11 +55,31 @@ public:: true
       "label": "Robot Safety"
     }
   ],
-  "quality": 0.5,
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5"
+  },
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:rb-0089-risk-assessment", "label": "rb 0089 risk assessment"},
+      {"@id": "urn:ngm:class:rb-0087-safety-standard", "label": "rb 0087 safety standard"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:rb-0095-safety-zone", "label": "rb 0095 safety zone"},
+      {"@id": "urn:ngm:class:light-curtain", "label": "Light Curtain"},
+      {"@id": "urn:ngm:class:rb-0090-emergency-stop", "label": "rb 0090 emergency stop"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:rb-0091-safety-rated-monitored-stop", "label": "rb 0091 safety rated monitored stop"},
+      {"@id": "urn:ngm:class:rb-0094-power-and-force-limiting", "label": "rb 0094 power and force limiting"},
+      {"@id": "urn:ngm:class:rb-0093-speed-limitation", "label": "rb 0093 speed limitation"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:iso-10218", "label": "ISO 10218"},
+      {"@id": "urn:ngm:class:iso-ts-15066", "label": "ISO TS 15066"}
+    ]
   }
 }
 ```
@@ -91,7 +111,7 @@ public:: true
 
 
 - ### Definition
-  - ### Primary Definition
+  - Safeguarding refers to the suite of physical and electronic protective measures deployed around robotic systems to prevent hazardous contact with operators, co-workers, and bystanders. Unlike inherent safety measures built into the robot itself (such as power-and-force limiting), safeguarding acts at the workspace boundary through guards, presence-sensing devices such as light curtains, and safety-rated stop functions.
 
 - ### Semantic Classification
   - owl-class:: robotics:rb0096safeguarding
@@ -99,7 +119,7 @@ public:: true
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Safeguarding is a mandatory outcome of risk assessment (RB-0089) and is governed by ISO 10218 for industrial robots and ISO/TS 15066 for collaborative applications. It encompasses safety zones (RB-0095), emergency stop devices (RB-0090), protective stops (RB-0092), and speed limitation (RB-0093) as complementary layers. In human–robot collaboration scenarios, safeguarding is often implemented without physical barriers, relying instead on speed-and-separation monitoring and power-and-force limiting (RB-0094).
 
 - ### Content
   - ### Primary Definition

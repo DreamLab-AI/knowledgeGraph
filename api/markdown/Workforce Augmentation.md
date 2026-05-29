@@ -42,7 +42,7 @@ public:: true
   "@id": "urn:ngm:class:workforce-augmentation",
   "@type": "Class",
   "label": "Workforce Augmentation",
-  "definition": "Workforce Augmentation is a artificial intelligence concept and a type of Artificial Intelligence.",
+  "definition": "Workforce Augmentation refers to the use of AI tools, agentic systems, and intelligent automation to extend the cognitive and physical capabilities of human workers rather than replacing them. By offloading repetitive tasks to AI assistants and copilots, organisations can redeploy human attention to higher-value judgement and creative work, improving both productivity and job quality.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -51,7 +51,26 @@ public:: true
       "label": "AI Application"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"},
+      {"@id": "urn:ngm:class:workflow-automation", "label": "Workflow Automation"},
+      {"@id": "urn:ngm:class:human-in-the-loop", "label": "Human in the Loop"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:collaborative-robot", "label": "Collaborative Robot"},
+      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"},
+      {"@id": "urn:ngm:class:ai-agents", "label": "AI Agents"},
+      {"@id": "urn:ngm:class:meeting-ai-assistant", "label": "Meeting AI Assistant"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:ai-augmented-software-engineering", "label": "AI-Augmented Software Engineering"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:ai-application", "label": "AI Application"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

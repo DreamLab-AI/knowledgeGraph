@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:generative-adversarial-network",
   "domain": "artificial-intelligence",
-  "definition": "Generative Adversarial Network is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "A Generative Adversarial Network (GAN) is a deep learning architecture in which a generator network and a discriminator network are trained simultaneously in an adversarial min-max game: the generator learns to produce synthetic samples indistinguishable from real data, while the discriminator learns to detect fakes. GANs underpin high-fidelity image synthesis, video generation, data augmentation, and synthetic data creation across domains including healthcare, finance, and computer vision.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-model-architecture",
@@ -14,19 +14,46 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-data",
+        "label": "Synthetic Data"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-media",
+        "label": "Synthetic Media"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:autoencoder",
+        "label": "Autoencoder"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ],
     "relatedTo": []
   },
   "wikilinks": [

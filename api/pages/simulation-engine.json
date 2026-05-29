@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:simulation-engine",
   "domain": "infrastructure",
-  "definition": "Simulation Engine is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "The computational core that manages state updates, inter-object interactions, deterministic execution, and data instrumentation within a simulation. Specialised engines include physics engines (PhysX, Bullet), behaviour-simulation engines, and AI training frameworks that expose parametric control, checkpointing, and massive parallelisation for large-scale experimental runs.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
@@ -14,20 +14,48 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:real-time-processing",
+        "label": "Real-time Processing"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:simulation-software",
+        "label": "Simulation Software"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rendering-engine",
+        "label": "Rendering Engine"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

@@ -11,6 +11,12 @@
 
 - ### Relationships
   - is-subclass-of:: [[Technical Standards]]
+  - Standardized By: [[Open Standard]]
+  - Enables: [[Interoperability]]
+  - Enables: [[Metadata Standard]]
+  - Supports: [[Documentation Generation]]
+  - Related To: [[Interoperability Standard]]
+  - Related To: [[API Standard]]
 
 - ### Content
 

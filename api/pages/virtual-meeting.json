@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:virtual-meeting",
   "domain": "distributed-collaboration",
-  "definition": "Virtual Meeting refers to synchronous gatherings of participants using video conferencing, spatial computing, or immersive technologies to collaborate remotely.",
+  "definition": "A synchronous gathering of geographically distributed participants conducted through video conferencing, spatial computing, or immersive VR/AR technologies to enable remote collaboration. Virtual meetings span traditional video-call platforms with screen sharing and virtual whiteboards through to persistent 3D avatar-based spaces such as Meta Horizon Workrooms and Microsoft Mesh, which replicate physical presence cues including spatial audio and non-verbal body language.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:dc-communication",
@@ -17,21 +17,52 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:immersive-workspaces",
+        "label": "Immersive Workspaces"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration-and-telepresence",
+        "label": "Telecollaboration and Telepresence"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:immersive-technology",
+        "label": "Immersive Technology"
+      },
+      {
+        "id": "urn:ngm:class:collaboration-platform",
+        "label": "Collaboration Platform"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:social-vr",
+        "label": "Social VR"
+      },
+      {
+        "id": "urn:ngm:class:virtual-event-platform",
+        "label": "Virtual Event Platform"
+      }
+    ]
   },
   "wikilinks": [
     {

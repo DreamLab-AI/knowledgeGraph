@@ -50,15 +50,30 @@ public:: true
   "@id": "urn:ngm:class:ai-board",
   "@type": "Class",
   "label": "AI Board",
-  "definition": "Advisory body composed of representatives from EU Member States, supported by the AI Office, with the mission of coordinating uniform AI Act implementation, issuing guidelines, and facilitating cooperation among national authorities.",
+  "definition": "EU Advisory body under Articles 65–67 of the AI Act, composed of one senior representative per Member State and supported by the AI Office as secretariat. Its mandate spans issuing harmonisation guidelines, resolving cross-border jurisdictional conflicts, coordinating joint enforcement actions, and advising the AI Office on GPAI systemic-risk classification and codes-of-practice adequacy.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
     }
   ],
+  "relations": {
+    "supports": [
+      {"@id": "urn:ngm:class:ai-office", "label": "AI Office"},
+      {"@id": "urn:ngm:class:eu-ai-act", "label": "EU AI Act"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
+      {"@id": "urn:ngm:class:ai-governance-framework", "label": "AI Governance Framework"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:ai-risk-management", "label": "AI Risk Management"},
+      {"@id": "urn:ngm:class:general-purpose-ai-model", "label": "General Purpose AI Model"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -113,7 +128,9 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - bridges-to:: [[AI Agent System]]
+  - supports:: [[AI Office]], [[EU AI Act]]
+  - enables:: [[AI Governance]], [[AI Governance Framework]]
+  - relatedTo:: [[AI Risk Management]], [[General Purpose AI Model]]
 
 - ### Content
   - Advisory body composed of representatives from EU Member States, supported by the AI Office, with the mission of coordinating uniform AI Act implementation, issuing guidelines, and facilitating cooperation among national authorities.

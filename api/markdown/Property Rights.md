@@ -42,9 +42,10 @@ public:: true
   "@id": "urn:ngm:class:property-rights",
   "@type": "Class",
   "label": "Property Rights",
-  "definition": "Property Rights is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "The legal and technical frameworks that establish, verify, and enforce ownership of digital assets, virtual land, and intellectual creations within metaverse environments. Property rights in spatial computing contexts rely on blockchain-based ownership records, NFT standards, and smart contracts to grant creators and users enforceable claims over their digital goods.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
@@ -56,6 +57,38 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:digital-ownership",
+        "label": "Digital Ownership"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:copyright",
+        "label": "copyright"
+      },
+      {
+        "@id": "urn:ngm:class:tokenization",
+        "label": "Tokenization"
+      }
+    ]
   }
 }
 ```
@@ -87,14 +120,19 @@ public:: true
 
 
 - ### Definition
-  - Property Rights is a concept within the metaverse domain. Further enrichment pending.
+  - The legal and technical frameworks that establish, verify, and enforce ownership of digital assets, virtual land, and intellectual creations within metaverse environments. Property rights in spatial computing contexts rely on blockchain-based ownership records, NFT standards, and smart contracts to grant creators and users enforceable claims over their digital goods.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:PropertyRights
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Requires: [[Smart Contract]]
+  - Requires: [[Digital Ownership]]
+  - Uses: [[NFT]]
+  - Uses: [[Blockchain]]
+  - Related To: [[copyright]]
+  - Related To: [[Tokenization]]
 
 - ### Content
 

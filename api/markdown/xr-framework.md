@@ -1,12 +1,14 @@
 - ### Definition
-  - X R Framework is a concept within the metaverse domain. Further enrichment pending.
+  - An XR Framework is a software architecture or SDK that provides unified runtime support, device abstraction, and application programming interfaces for extended reality experiences spanning augmented, virtual, and mixed reality. Frameworks such as OpenXR standardise access to headsets and input devices, whilst game engine integrations enable developers to target multiple XR platforms from a single codebase.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:XRFramework
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - enables:: [[Augmented Reality]], [[Virtual Reality]], [[Mixed Reality]], [[Immersive Experience]]
+  - uses:: [[Extended Reality]], [[Game Engine]]
+  - partOf:: [[Spatial Computing]]
 
 - ### Content
 

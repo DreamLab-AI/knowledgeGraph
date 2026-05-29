@@ -7,7 +7,11 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **Contrasts with** the quantum-vulnerable [[Elliptic Curve Cryptography]], [[Public-Key Cryptography]], and [[Asymmetric Encryption]] schemes it is designed to supersede.
+  - **Requires** [[Cryptographic Hash Function]] primitives and sound [[Cryptographic Key Management]] for hybrid and hash-based constructions.
+  - **Enables** quantum-safe [[Digital Signature]]s, forward-secure [[Public-Key Infrastructure]], and [[Censorship Resistance]] for long-lived data.
+  - **Uses** [[Encryption]] and [[Hash Function]] building blocks; **supports** [[Cyber Security and Cryptography]] practice and [[Cybersecurity Standard]] compliance.
+  - **Related to** [[Quantum Computing]], [[Zero-Knowledge Proof]] systems, [[Blockchain Application]]s, and [[Digital Signature Verification]].
 
 - ### Content
 

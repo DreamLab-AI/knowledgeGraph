@@ -8,6 +8,9 @@
 
 - ### Relationships
   - is-subclass-of:: [[Data Management]]
+  - **enables** → [[Model Training]], [[Machine Learning Pipeline]], [[Federated Learning]]
+  - **requires** → [[Data Provenance]], [[Data Governance]]
+  - **hasPart** → [[Training Data]], [[Synthetic Data]], [[Data Versioning]]
 
 - ### Content
 

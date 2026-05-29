@@ -1202,7 +1202,7 @@ public:: true
   "@id": "urn:ngm:class:wallet",
   "@type": "Class",
   "label": "Wallet",
-  "definition": "A software or hardware interface that stores cryptographic private keys and enables users to manage cryptocurrency assets, sign transactions, and interact with blockchain networks securely.",
+  "definition": "A software or hardware interface that stores cryptographic private keys and enables users to manage cryptocurrency assets, sign transactions, and interact with blockchain networks securely. Wallets range from hot custodial services to air-gapped hardware devices, and manage key derivation, address generation, UTXO selection, and transaction broadcasting.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -1211,7 +1211,29 @@ public:: true
       "label": "Network Component"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:private-key", "label": "Private Key"},
+      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public-Key Cryptography"},
+      {"@id": "urn:ngm:class:cryptographic-key-management", "label": "Cryptographic Key Management"},
+      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:utxo-model", "label": "UTXO Model"},
+      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"},
+      {"@id": "urn:ngm:class:digital-wallet", "label": "Digital Wallet"},
+      {"@id": "urn:ngm:class:digital-identity-wallet", "label": "Digital Identity Wallet"},
+      {"@id": "urn:ngm:class:self-custody", "label": "Self-Custody"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:de-fi", "label": "DeFi"},
+      {"@id": "urn:ngm:class:blockchain-application", "label": "Blockchain Application"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:bc-defi-and-economics", "label": "DeFi and Economics"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

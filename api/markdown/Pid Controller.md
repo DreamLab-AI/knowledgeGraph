@@ -42,9 +42,9 @@ public:: true
   "@id": "urn:ngm:class:pid-controller",
   "@type": "Class",
   "label": "Pid Controller",
-  "definition": "Pid Controller is a type of Feedback Control in the spatial computing domain.",
+  "definition": "A PID Controller (Proportional-Integral-Derivative Controller) is a closed-loop feedback control algorithm that continuously calculates an error value as the difference between a desired setpoint and a measured process variable, then applies corrections based on proportional, integral, and derivative terms. PID controllers are foundational in robotics, autonomous systems, and industrial automation for precisely regulating position, velocity, and force.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-interaction",
@@ -55,6 +55,20 @@ public:: true
       "label": "rb 0047 feedback control"
     }
   ],
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:control-system", "label": "Control System"},
+      {"@id": "urn:ngm:class:feedback-control", "label": "Feedback Control"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:robot-control", "label": "Robot Control"},
+      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:autonomous-system", "label": "Autonomous System"},
+      {"@id": "urn:ngm:class:actuator", "label": "Actuator"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
@@ -91,7 +105,7 @@ public:: true
 
 
 - ### Definition
-  - - maturity:: draft
+  - A PID Controller is a closed-loop feedback control algorithm that calculates corrections based on proportional, integral, and derivative terms of the error between a desired setpoint and a measured value, foundational to robotics motion control, autonomous systems, and industrial automation.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:PidController
@@ -99,6 +113,12 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[rb 0047 feedback control]]
+  - partOf [[Control System]]
+  - partOf [[Feedback Control]]
+  - enables [[Robot Control]]
+  - enables [[Motion Planning]]
+  - relatedTo [[Autonomous System]]
+  - relatedTo [[Actuator]]
 
 - ### Content
 

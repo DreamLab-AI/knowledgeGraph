@@ -46,7 +46,7 @@ public:: true
   "@id": "urn:ngm:class:security-token",
   "@type": "Class",
   "label": "Security Token",
-  "definition": "A token designed to represent complete or fractional ownership interests in assets and/or entities.",
+  "definition": "A blockchain-based token representing complete or fractional ownership interests in real-world assets or entities, subject to securities regulations that may restrict transfer based on investor identity, jurisdiction, or asset category. Security tokens provide holders with entitlements such as dividends, profit-sharing, or voting rights, and are typically issued through security token offerings (STOs) under regulatory compliance frameworks.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -59,7 +59,27 @@ public:: true
       "label": "Fungible Token"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:security-token-offering", "label": "Security Token Offering"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:erc1400-standard", "label": "ERC1400 Standard"},
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
+      {"@id": "urn:ngm:class:asset-tokenisation", "label": "Asset Tokenisation"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"},
+      {"@id": "urn:ngm:class:nft-marketplace", "label": "NFT Marketplace"},
+      {"@id": "urn:ngm:class:digital-asset-trading", "label": "Digital Asset Trading"},
+      {"@id": "urn:ngm:class:token-economics", "label": "Token Economics"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:non-fungible-token-nft", "label": "Non-Fungible Token (NFT)"},
+      {"@id": "urn:ngm:class:semi-fungible-token", "label": "Semi-Fungible Token"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

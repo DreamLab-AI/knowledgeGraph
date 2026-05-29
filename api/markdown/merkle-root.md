@@ -1,73 +1,24 @@
 - ### Definition
-  - Top hash of Merkle tree within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
-
-- ### Semantic Classification
-  - owl-class:: blockchain:MerkleRoot
-  - owl-role:: Object
-  - owl-inferred:: blockchain:VirtualObject
-  - belongs-to-domain:: [[CryptographicDomain]]
-  - implemented-in-layer:: [[SecurityLayer]]
+  A Merkle Root is the single cryptographic hash at the apex of a Merkle tree, computed by recursively hashing pairs of child hashes until a single digest remains. In blockchain systems, each block header contains the Merkle root of all transactions in that block, enabling lightweight clients to verify transaction inclusion via a logarithmic-length Merkle proof without downloading the full block.
 
 - ### Relationships
+  - hasPart:: [[Merkle Tree]], [[Cryptographic Hash]]
+  - partOf:: [[Block]], [[Block Header]]
+  - requires:: [[Hash Function]], [[Cryptographic Hash Function]]
+  - enables:: [[Blockchain Transaction]], [[Blockchain Scalability]]
+  - relatedTo:: [[Nonce]], [[Proof Of Work]], [[Digital Signature]], [[Blockchain Entity]]
+  - supports:: [[Blockchain Infrastructure]]
   - is-subclass-of:: [[Blockchain Entity]], [[CryptographicPrimitive]]
 
 - ### Content
+  The Merkle root is constructed bottom-up from a set of data items—most commonly transaction identifiers (TXIDs) in Bitcoin or transaction hashes in Ethereum. Each leaf node of the Merkle tree is the hash of a transaction, and internal nodes are the hash of the concatenation of their two children. Where an odd number of leaves exist, the last leaf is duplicated to form a pair. The process continues until a single root hash remains, which serves as a compact commitment to the entire transaction set.
 
-  ## Class Declaration
-  Declaration(Class(:MerkleRoot))
+  The key property exploited in blockchain protocols is efficient membership proofs: to prove that a specific transaction is included in a block, only the sibling hashes along the path from the leaf to the root are required—O(log n) hashes for n transactions. Simplified Payment Verification (SPV) clients in Bitcoin rely entirely on this property, downloading only block headers (containing Merkle roots) and requesting inclusion proofs from full nodes when they need to verify specific transactions.
 
-  ## Subclass Relationships
-  SubClassOf(:MerkleRoot :CryptographicPrimitive)
-  SubClassOf(:MerkleRoot :BlockchainEntity)
+  Bitcoin's block header structure encodes the Merkle root as a 32-byte field alongside the previous block hash, timestamp, difficulty target, and nonce. Any modification to any transaction in the block produces a different Merkle root and thus a different block hash, invalidating the proof-of-work. This chaining of commitments through the Merkle root provides tamper evidence for the entire transaction history without requiring full block downloads for verification.
 
-  ## Essential Properties
-  SubClassOf(:MerkleRoot
-    (ObjectSomeValuesFrom :partOf :Blockchain))
+  Extensions of the basic Merkle tree design—Merkle Patricia Tries in Ethereum, Verkle trees in Ethereum's road-map, and STARK-friendly hash functions in zero-knowledge proof systems—build on the same fundamental principle while optimising for different performance and cryptographic requirements. The Merkle root thus occupies a foundational position in blockchain cryptography, enabling scalability through succinct data commitments.
 
-  SubClassOf(:MerkleRoot
-    (ObjectSomeValuesFrom :hasProperty :Property))
-
-  ## Data Properties
-  DataPropertyAssertion(:hasIdentifier :MerkleRoot "BC-0044"^^xsd:string)
-  DataPropertyAssertion(:hasAuthorityScore :MerkleRoot "1.0"^^xsd:decimal)
-  DataPropertyAssertion(:isFoundational :MerkleRoot "true"^^xsd:boolean)
-
-  ## Object Properties
-  ObjectPropertyAssertion(:enablesFeature :MerkleRoot :BlockchainFeature)
-  ObjectPropertyAssertion(:relatesTo :MerkleRoot :RelatedConcept)
-
-  ## Annotations
-  AnnotationAssertion(rdfs:label :MerkleRoot "Merkle Root"@en)
-  AnnotationAssertion(rdfs:comment :MerkleRoot
-    "Top hash of Merkle tree"@en)
-  AnnotationAssertion(dct:description :MerkleRoot
-    "Foundational blockchain concept with formal ontological definition"@en)
-  AnnotationAssertion(:termID :MerkleRoot "BC-0044")
-  AnnotationAssertion(:priority :MerkleRoot "1"^^xsd:integer)
-  AnnotationAssertion(:category :MerkleRoot "cryptographic-foundations"@en)
-  )
-      ```
-
-  - ## About Merkle Root
-
-  - Top hash of Merkle tree within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
-  - ### Key Characteristics
-    - 1. **Definitional Property**: Core defining characteristic
-    - 2. **Functional Property**: Operational behavior
-    - 3. **Structural Property**: Compositional elements
-    - 4. **Security Property**: Security guarantees provided
-    - 5. **Performance Property**: Efficiency considerations
-  - ### Technical Components
-    - **Implementation**: How concept is realized technically
-    - **Verification**: Methods for validating correctness
-    - **Interaction**: Relationships with other components
-    - **Constraints**: Technical limitations and requirements
-  - ### Use Cases
-    - **1. Core Blockchain Operation**
-    - **Application**: Fundamental blockchain functionality
-    - **Example**: Practical implementation in major blockchains
-    - **Requirements**: Technical prerequisites
-    - **Benefits**: Value provided to blockchain systems
   - ### Standards & References
     - [[ISO/IEC 23257:2021]] - Blockchain and distributed ledger technologies
     - [[IEEE 2418.1]] - Blockchain and distributed ledger technologies

@@ -6,7 +6,12 @@
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[3D Asset Standard]]
+  - requires [[Physically Based Rendering]]
+  - enables [[Metaverse]]
+  - enables [[Digital Twin]]
+  - uses [[Level of Detail]]
+  - uses [[Gltf Standard]]
 
 - ### Content
 

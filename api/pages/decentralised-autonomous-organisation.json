@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:decentralised-autonomous-organisation",
   "domain": "blockchain",
-  "definition": "A blockchain-native organisational structure in which rules encoded as smart contracts govern collective decision-making and resource allocation without centralised management.",
+  "definition": "A Decentralised Autonomous Organisation (DAO) is a blockchain-native organisational structure in which governance rules and treasury management are encoded as smart contracts executing on a public distributed ledger, enabling token-holder communities to propose, deliberate, and vote on decisions without recourse to centralised management. DAOs operate transparently with on-chain execution, typically combining governance tokens that confer voting rights with treasury contracts that hold and disburse funds. They are employed across DeFi protocols, investment clubs, grant programmes, and decentralised media organisations.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-governance-and-regulation",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:on-chain-governance",
+        "label": "On-chain Governance"
+      },
+      {
+        "id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:dao",
+        "label": "DAO"
+      },
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

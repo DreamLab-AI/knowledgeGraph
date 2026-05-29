@@ -59,6 +59,20 @@ public:: true
       "label": "Content and Assets"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:preference-learning", "label": "Preference Learning"},
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:reinforcement-learning-from-human-feedback", "label": "Reinforcement Learning from Human Feedback"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"},
+      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"}
+    ]
+  },
+  "maturity": "emerging",
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -116,7 +130,11 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Preference Learning]]
+  - requires [[Large Language Models]]
+  - contrastsWith [[Reinforcement Learning from Human Feedback]]
+  - enables [[AI Alignment]]
+  - enables [[Fine Tuning]]
 
 - ### Content
   - An alignment method that directly uses preference data to fine-tune language models without training a separate reward model or using reinforcement learning, offering a simpler alternative to RLHF. DPO optimizes the policy directly on preference comparisons through a reparameterisation of the reward model objective.

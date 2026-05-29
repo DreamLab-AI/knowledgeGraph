@@ -37,20 +37,58 @@ public:: true
   "@id": "urn:ngm:class:session-management",
   "@type": "Class",
   "label": "Session Management",
-  "definition": "Session Management is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "The infrastructure mechanisms for creating, maintaining, and terminating authenticated user sessions within a networked application or virtual environment. Session management encompasses token issuance, state synchronisation, session timeout and recovery, and revocation, forming a critical layer between user authentication and persistent application state.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-security-and-identity",
       "label": "Security and Identity"
     }
   ],
-  "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:persistent-state",
+        "label": "Persistent State"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      }
+    ]
   }
 }
 ```
@@ -76,14 +114,17 @@ public:: true
 
 
 - ### Definition
-  - SessionManagement is a concept within the ngm domain.
+  - The infrastructure mechanisms for creating, maintaining, and terminating authenticated user sessions within a networked application or virtual environment. Session management encompasses token issuance, state synchronisation, session timeout and recovery, and revocation, forming a critical layer between user authentication and persistent application state.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:SessionManagement
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Requires [[Authentication]], [[Identity Management]]
+  - Enables [[Persistent State]]
+  - Uses [[Encryption]]
+  - Related to [[Access Control]], [[Cybersecurity]], [[Cloud Infrastructure]]
 
 - ### Content
   # SessionManagement

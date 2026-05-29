@@ -42,7 +42,7 @@ public:: true
   "@id": "urn:ngm:class:multimodal-understanding",
   "@type": "Class",
   "label": "Multimodal Understanding",
-  "definition": "Multimodal Understanding is a artificial intelligence concept and a type of Artificial Intelligence.",
+  "definition": "Multimodal Understanding is an AI research area concerned with systems that jointly process and reason over multiple sensory modalities — including text, images, audio, video, and structured data — producing unified semantic representations. It underpins vision-language models, audio-visual reasoning, and multi-sensor scene interpretation.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -51,7 +51,26 @@ public:: true
       "label": "AI Research Area"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:scene-understanding", "label": "Scene Understanding"},
+      {"@id": "urn:ngm:class:natural-language-understanding", "label": "Natural Language Understanding"},
+      {"@id": "urn:ngm:class:speech-and-voice", "label": "Speech and Voice"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
+      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
+      {"@id": "urn:ngm:class:multimodal-ai", "label": "Multimodal AI"},
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
+      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
+      {"@id": "urn:ngm:class:ai-technique", "label": "AI Technique"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

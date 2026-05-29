@@ -54,7 +54,7 @@ public:: true
   "@id": "urn:ngm:class:symbolic-ai",
   "@type": "Class",
   "label": "Symbolic AI",
-  "definition": "Artificial intelligence based on symbolic representations of problems, logic, and search algorithms, also known as Good Old-Fashioned AI (GOFAI).",
+  "definition": "Symbolic AI (Good Old-Fashioned AI, GOFAI) is an approach to artificial intelligence based on explicit symbolic representations of knowledge, logical inference rules, and search algorithms. It underpins expert systems, automated planning, knowledge graphs, and formal reasoning systems, and is currently experiencing a renaissance as a complement to neural approaches in neurosymbolic AI.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -63,7 +63,25 @@ public:: true
       "label": "AI Technique"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:reasoning", "label": "Reasoning"},
+      {"@id": "urn:ngm:class:symbolic-reasoning", "label": "Symbolic Reasoning"},
+      {"@id": "urn:ngm:class:automated-planning", "label": "Automated Planning"},
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"},
+      {"@id": "urn:ngm:class:bayesian-inference", "label": "Bayesian Inference"},
+      {"@id": "urn:ngm:class:ai-technique", "label": "AI Technique"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

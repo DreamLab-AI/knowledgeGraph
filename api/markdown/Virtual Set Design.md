@@ -50,9 +50,10 @@ public:: true
   "@id": "urn:ngm:class:virtual-set-design",
   "@type": "Class",
   "label": "Virtual Set Design",
-  "definition": "The creation of digital environments and backgrounds for film, television, and broadcast production using 3D modeling, game engines, and LED wall technology, enabling dynamic digital sets that can be modified in real-time during filming to replace or augment physical set construction.",
+  "definition": "The creation of digital environments and backgrounds for film, television, and broadcast production using 3D modelling, game engines, and LED volume wall technology, enabling dynamic digital sets modifiable in real time during filming. Virtual sets replace or augment physical construction, with camera tracking systems providing perspective-correct parallax so actors interact believably with the rendered environment.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
@@ -63,7 +64,23 @@ public:: true
       "label": "Production Design"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
+      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"},
+      {"@id": "urn:ngm:class:motion-capture", "label": "Motion Capture"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
+      {"@id": "urn:ngm:class:virtual-production-volume", "label": "Virtual Production Volume"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:virtual-production", "label": "Virtual Production"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:production-design", "label": "Production Design"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -119,6 +136,10 @@ public:: true
 - ### Relationships
   - is-subclass-of:: [[Production Design]]
   - bridges-to:: [[Computer Vision]]
+  - **requires**: [[Real-Time Rendering]], [[Game Engine]], [[Motion Capture]] — virtual sets require game-engine real-time rendering and camera/actor tracking to achieve perspective-correct parallax
+  - **uses**: [[Computer Vision]], [[Virtual Production Volume]] — camera tracking relies on computer vision; the LED volume wall is the physical output surface
+  - **enables**: [[Virtual Production]] — virtual set design is the content-creation discipline within the broader virtual production pipeline
+  - **partOf**: [[Production Design]] — virtual set design is a specialised branch of production design practice
 
 - ### Content
 

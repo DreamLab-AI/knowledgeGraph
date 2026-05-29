@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:collaboration-platform",
   "domain": "infrastructure",
-  "definition": "Collaboration Platform is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A Collaboration Platform is an integrated software infrastructure that unifies communication channels, content management, workflow automation, and coordination tools to support distributed teamwork. Contemporary platforms combine real-time messaging, video conferencing, shared workspaces, and third-party integration ecosystems within API-first architectures.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
@@ -13,21 +13,45 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:augmented-reality-collaboration",
+        "label": "Augmented Reality Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin-collaboration",
+        "label": "Digital Twin Collaboration"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:metaverse-and-telecollaboration",
+        "label": "Metaverse and Telecollaboration"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:xr-meeting-space",
+        "label": "XR Meeting Space"
+      }
+    ]
   },
   "wikilinks": [
     {

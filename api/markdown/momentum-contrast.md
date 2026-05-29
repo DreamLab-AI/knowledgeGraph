@@ -7,7 +7,13 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses** [[Contrastive Learning]] — MoCo is a specific instantiation of contrastive self-supervised learning
+  - **uses** [[Deep Learning]] — relies on deep convolutional or transformer encoders
+  - **enables** [[Computer Vision]] — pretrained MoCo representations transfer effectively to downstream vision tasks
+  - **enables** [[Transfer Learning]] — MoCo-trained encoders are fine-tuned on labelled downstream datasets
+  - **dependsOn** [[Neural Network]] — both the query and momentum encoders are neural networks
+  - **dependsOn** [[Training Data]] — requires large unlabelled image or text corpora for pretraining
+  - **contrastsWith** [[Supervised Learning]] — MoCo learns without manual labels, using the data itself as supervision signal
 
 - ### Content
   - A contrastive learning framework that maintains a large and consistent dictionary of encoded samples using a momentum-updated encoder, enabling effective contrastive learning with many negatives. MoCo provides stable comparison targets through the momentum encoder.

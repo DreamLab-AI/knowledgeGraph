@@ -1,5 +1,5 @@
 - ### Definition
-  - The process of selecting and implementing measures to modify AI risk, including risk avoidance, risk reduction (mitigation), risk sharing (transfer), and risk retention, based on risk assessment outcomes and organizational risk appetite.
+  - The process of selecting and implementing measures to modify AI risk, including risk avoidance, risk reduction (mitigation), risk sharing (transfer), and risk retention, based on risk assessment outcomes and organisational risk appetite. Grounded in ISO/IEC 23894:2023 and the NIST AI RMF MANAGE function, risk treatment produces a treatment plan, residual risk documentation, and an ongoing monitoring regime. Options are evaluated for feasibility, cost, effectiveness, and stakeholder acceptability before selection.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:RiskTreatment
@@ -7,7 +7,10 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **partOf**: AI Risk Management
+  - **requires**: AI Risk
+  - **enables**: Compliance Framework, AI Governance
+  - **relatedTo**: AI Governance Framework, Responsible AI Principles
 
 - ### Content
   - The process of selecting and implementing measures to modify AI risk, including risk avoidance, risk reduction (mitigation), risk sharing (transfer), and risk retention, based on risk assessment outcomes and organizational risk appetite.

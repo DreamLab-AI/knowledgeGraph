@@ -62,16 +62,30 @@ public:: true
   "@id": "urn:ngm:class:training-for-design-practitioners",
   "@type": "Class",
   "label": "Training for Design Practitioners",
-  "definition": "Training for Design Practitioners is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Training for Design Practitioners covers structured programmes and self-directed learning pathways that equip designers—particularly in landscape, product, and spatial disciplines—with practical AI literacy, covering generative image tools, RAG-based knowledge management, client communication automation, and AI-assisted rendering workflows for immediate professional application.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"},
+      {"@id": "urn:ngm:class:retrieval-augmented-generation-rag", "label": "Retrieval Augmented Generation - RAG"},
+      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:consumer-tools-for-smes", "label": "Consumer Tools for SMEs"},
+      {"@id": "urn:ngm:class:knowledge-graphing", "label": "Knowledge Graphing"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:generative-design-tool", "label": "Generative Design Tool"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -137,14 +151,16 @@ public:: true
 
 
 - ### Definition
-  - Training for Design Practitioners is a concept within the ngm domain.
+  Training for Design Practitioners covers structured programmes and self-directed learning pathways that equip designers—particularly in landscape, product, and spatial disciplines—with practical AI literacy, covering generative image tools, RAG-based knowledge management, client communication automation, and AI-assisted rendering workflows for immediate professional application.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:TrainingForDesignPractitioners
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: Image Generation, Retrieval Augmented Generation - RAG, Prompt Engineering
+  - **enables**: Consumer Tools for SMEs, Knowledge Graphing
+  - **supports**: Generative Design Tool
 
 - ### Content
   - # Insights about AI for small businesses

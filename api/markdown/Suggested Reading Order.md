@@ -178,16 +178,32 @@ public:: true
   "@id": "urn:ngm:class:suggested-reading-order",
   "@type": "Class",
   "label": "Suggested Reading Order",
-  "definition": "Suggested Reading Order is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Suggested Reading Order is a curated navigation guide that sequences the principal pages of the NarrativeGoldmine knowledge graph into a coherent pedagogical path. It maps the intended conceptual dependencies — from foundational web technologies through decentralisation, digital assets, spatial computing, and AI — enabling readers to build understanding progressively across the graph's interconnected topic areas.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:semantic-web", "label": "Semantic Web"},
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:state-of-the-art-in-ai", "label": "State of the art in AI"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:adoption-of-convergent-technologies", "label": "Adoption of Convergent Technologies"},
+      {"@id": "urn:ngm:class:convergence", "label": "Convergence"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:update-cycle", "label": "Update Cycle"},
+      {"@id": "urn:ngm:class:distributed-identity", "label": "Distributed Identity"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -398,14 +414,16 @@ public:: true
 
 
 - ### Definition
-  - Suggested Reading Order is a concept within the ngm domain.
+  - Suggested Reading Order is a curated navigation guide that sequences the principal pages of the NarrativeGoldmine knowledge graph into a coherent pedagogical path. It maps the intended conceptual dependencies — from foundational web technologies through decentralisation, digital assets, spatial computing, and AI — enabling readers to build understanding progressively across the graph's interconnected topic areas.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:SuggestedReadingOrder
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart:: Semantic Web, Blockchain, Spatial Computing, State of the art in AI
+  - enables:: Adoption of Convergent Technologies, Convergence
+  - relatedTo:: Update Cycle, Distributed Identity
 
 - ### Content
   - I have been working on learning, and learning how to store that knowledge for myself and others since 2019 when I stopped being Technical Director of the [[Octave Multi Model Laboratory]] which followed on from the [[National Industrial Centre for Virtual Environments]].

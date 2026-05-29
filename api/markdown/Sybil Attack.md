@@ -66,7 +66,7 @@ public:: true
   "@id": "urn:ngm:class:sybil-attack",
   "@type": "Class",
   "label": "Sybil Attack",
-  "definition": "Multiple identity attack within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "A Sybil Attack is a network security threat in which a single adversary creates a large number of pseudonymous identities to gain disproportionate influence over a peer-to-peer system. In blockchain and distributed ledger contexts it can subvert reputation systems, distort consensus voting, facilitate eclipse attacks, and undermine proof-of-stake weighting. Countermeasures include proof-of-work, stake-weighted voting, identity verification, and peer diversity requirements.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -83,7 +83,24 @@ public:: true
       "label": "NetworkComponent"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:eclipse-attack", "label": "Eclipse Attack"},
+      {"@id": "urn:ngm:class:double-spending", "label": "Double Spending"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
+      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"},
+      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"},
+      {"@id": "urn:ngm:class:network-topology", "label": "Network Topology"},
+      {"@id": "urn:ngm:class:selfish-mining", "label": "Selfish Mining"},
+      {"@id": "urn:ngm:class:51-attack", "label": "51% Attack"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

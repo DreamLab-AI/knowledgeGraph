@@ -42,9 +42,10 @@ public:: true
   "@id": "urn:ngm:class:calibration-equipment",
   "@type": "Class",
   "label": "Calibration Equipment",
-  "definition": "Calibration Equipment is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Physical instruments and reference artefacts used to measure, adjust, and verify the accuracy of sensors, displays, and tracking systems in spatial computing deployments. Calibration equipment includes colour reference targets, IMU calibration boards, structured-light patterns, and photometric probes, all of which underpin the geometric and radiometric correctness of XR pipelines.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-display-and-rendering",
@@ -56,6 +57,38 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "uses": [
+      {
+        "@id": "urn:ngm:class:calibration",
+        "label": "Calibration"
+      },
+      {
+        "@id": "urn:ngm:class:calibration-target",
+        "label": "Calibration Target"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:display-metrology",
+        "label": "Display Metrology"
+      },
+      {
+        "@id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ]
   }
 }
 ```
@@ -87,14 +120,19 @@ public:: true
 
 
 - ### Definition
-  - Calibration Equipment is a concept within the metaverse domain. Further enrichment pending.
+  - Physical instruments and reference artefacts used to measure, adjust, and verify the accuracy of sensors, displays, and tracking systems in spatial computing deployments. Calibration equipment includes colour reference targets, IMU calibration boards, structured-light patterns, and photometric probes, all of which underpin the geometric and radiometric correctness of XR pipelines.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:CalibrationEquipment
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses [[Calibration]]
+  - Uses [[Calibration Target]]
+  - Supports [[Computer Vision]]
+  - Supports [[Sensor Fusion]]
+  - Related To [[Display Metrology]]
+  - Related To [[Photogrammetry]]
 
 - ### Content
 

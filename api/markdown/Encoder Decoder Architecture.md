@@ -42,9 +42,10 @@ public:: true
   "@id": "urn:ngm:class:encoder-decoder-architecture",
   "@type": "Class",
   "label": "Encoder Decoder Architecture",
-  "definition": "A neural network structure consisting of an encoder that processes the input sequence and a decoder that generates the output sequence, commonly used in sequence-to-sequence tasks.",
+  "definition": "A neural network design pattern comprising an encoder that compresses an input sequence into a latent representation and a decoder that generates an output sequence from that representation, enabling sequence-to-sequence mappings for tasks such as machine translation, summarisation, and image captioning. The architecture underpins the original Transformer (Vaswani et al., 2017) and models such as T5 and BART.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-model-architecture",
@@ -56,6 +57,40 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:self-attention",
+        "label": "Self Attention"
+      },
+      {
+        "@id": "urn:ngm:class:cross-attention",
+        "label": "Cross Attention"
+      },
+      {
+        "@id": "urn:ngm:class:token-embedding",
+        "label": "Token Embedding"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:model-architecture",
+        "label": "Model Architecture"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
+    ]
   }
 }
 ```
@@ -95,7 +130,10 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Has Part: [[Self Attention]], [[Cross Attention]], [[Token Embedding]]
+  - Uses: [[Transformer]]
+  - Enables: [[Natural Language Processing]]
+  - Contrasts With: [[Model Architecture]]
 
 - ### Content
   - A neural network structure consisting of an encoder that processes the input sequence and a decoder that generates the output sequence, commonly used in sequence-to-sequence tasks.

@@ -5,7 +5,9 @@
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **hasPart**: Virtual Economy, Creator Economy, Non-Fungible Token (NFT), Smart Contract — core components governed by this ETSI domain
+  - **uses**: Tokenization, Blockchain — the domain's mechanisms depend on tokenisation and distributed ledger infrastructure
+  - **enables**: Marketplace, Play-to-Earn (P2E) — virtual economy standards enable digital marketplaces and participatory economic models
 - ### Content
   - The ETSI Virtual Economy domain encompasses economic systems, digital asset frameworks, and value exchange mechanisms for metaverse and virtual environments, coordinating tokenisation, creator incentives, and sustainable economic value creation.
   - ### Original Content

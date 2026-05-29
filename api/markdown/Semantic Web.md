@@ -56,7 +56,7 @@ public:: true
   "label": "Semantic Web",
   "definition": "Semantic Web extends the World Wide Web with machine-readable metadata, ontologies, and linked data to enable intelligent information discovery, integration, and reasoning.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
@@ -68,7 +68,21 @@ public:: true
       "@id": "urn:ngm:class:ai-research-area",
       "label": "AI Research Area"
     }
-  ]
+  ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:rdf", "label": "RDF"},
+      {"@id": "urn:ngm:class:sparql", "label": "SPARQL"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
+      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"},
+      {"@id": "urn:ngm:class:semantic-web-standards", "label": "Semantic Web Standards"}
+    ]
+  }
 }
 ```
 
@@ -122,6 +136,12 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: ['owl:Thing']
+  - uses [[RDF]]
+  - uses [[SPARQL]]
+  - enables [[Knowledge Graph]]
+  - enables [[Knowledge Representation]]
+  - relatedTo [[Linked Data]]
+  - relatedTo [[Semantic Web Standards]]
 
 - ### Content
 

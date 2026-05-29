@@ -1,5 +1,5 @@
 - ### Definition
-  - **Robot Safety** - Robot Safety in robotics systems
+  - Robot Safety encompasses the engineering principles, risk assessment methods, and regulatory standards that ensure robotic systems operate without causing harm to humans, other machines, or the environment. It includes functional safety standards (ISO 10218, ISO 13849), collaborative robot (cobot) application requirements, dynamic risk assessment, and the emerging challenges of AI-integrated and autonomous robot deployment in shared workspaces.
 
 - ### Semantic Classification
   - owl-class:: robotics:RobotSafety
@@ -8,6 +8,12 @@
 
 - ### Relationships
   - is-subclass-of:: [[Robotics]]
+  - requires [[Sensor Fusion]]
+  - requires [[Collision Avoidance]]
+  - enables [[Human Robot Interaction]]
+  - enables [[Robotics]]
+  - relatedTo [[Robot Dynamics]]
+  - relatedTo [[State Estimation]]
 
 - ### Content
   - ### Original Content

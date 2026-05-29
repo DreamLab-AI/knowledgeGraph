@@ -54,21 +54,59 @@ public:: true
   "@id": "urn:ngm:class:human-in-the-loop-learning",
   "@type": "Class",
   "label": "Human-in-the- Loop Learning",
-  "definition": "Human-in-the-Loop Learning integrates human expertise into the machine learning process through iterative feedback, active learning, and collaborative intelligence.",
+  "definition": "A machine learning paradigm that integrates human expertise into the training process through iterative feedback, active learning queries, and collaborative validation. HITL learning combines automated model updates with human judgement for data labelling, error correction, and safety-critical decision review, and is essential in domains where ground truth is subjective or expert-dependent.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
-  "quality": 0.35,
-  "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
-  },
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
     }
-  ]
+  ],
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:interactive-learning",
+        "label": "Interactive Learning"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "@id": "urn:ngm:class:data-annotation",
+        "label": "Data Annotation"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human in the Loop"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ]
+  }
 }
 ```
 
@@ -121,7 +159,14 @@ public:: true
   - owl-role:: concept
 
 - ### Relationships
-  - is-subclass-of:: ['owl:Thing']
+  - is-subclass-of:: AI Technique
+  - Uses [[Active Learning]]
+  - Uses [[Data Annotation]]
+  - Uses [[Reinforcement Learning from Human Feedback]]
+  - Enables [[Interactive Learning]]
+  - Supports [[Machine Learning]]
+  - Related To [[Human in the Loop]]
+  - Related To [[Federated Learning]]
 
 - ### Content
 

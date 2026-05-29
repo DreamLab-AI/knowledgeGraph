@@ -1,12 +1,14 @@
 - ### Definition
-  - Projects is a concept within the ngm domain.
+  - Projects is the top-level organisational concept grouping active development initiatives within this knowledge graph. It serves as a Kanban and progress-tracking container for ongoing technical, research, and creative workstreams, linking to child project nodes such as PlayerTwo, BroBots, and Automated Podcast.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:Projects
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart: [[Player Two]], [[Project BroBots]], [[Project Automated Podcast]]
+  - uses: [[Automated Planning]]
+  - relatedTo: [[Agentic Alliance]]
 
 - ### Content
   - Fashion 3D objects

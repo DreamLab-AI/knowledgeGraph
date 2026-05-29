@@ -33,16 +33,32 @@ public:: true
   "@id": "urn:ngm:class:lognet",
   "@type": "Class",
   "label": "lognet",
-  "definition": "lognet is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "LogNet is a networked knowledge-management infrastructure layer that interconnects Logseq graph nodes, enabling cross-graph querying, link resolution, and distributed publishing of structured ontology pages. It provides the network substrate over which linked-data references between pages are resolved and semantic annotations are aggregated, acting as the connective tissue between individual Logseq knowledge graphs and wider ontology repositories.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-network-and-comms",
       "label": "Network and Communication"
     }
   ],
-  "quality": 0.35,
+  "quality": 0.7,
+  "relations": {
+    "supports": [
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
+      {"@id": "urn:ngm:class:knowledge-graph-construction", "label": "Knowledge Graph Construction"},
+      {"@id": "urn:ngm:class:dr-o-hare-writing-for-log-seq", "label": "Dr O'Hare Writing for LogSeq"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"},
+      {"@id": "urn:ngm:class:network-infrastructure", "label": "Network Infrastructure"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:network-topology", "label": "Network Topology"},
+      {"@id": "urn:ngm:class:graph-database", "label": "Graph Database"},
+      {"@id": "urn:ngm:class:digital-ontology-repository", "label": "Digital Ontology Repository"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -72,14 +88,17 @@ public:: true
 
 
 - ### Definition
-  - lognet is a concept within the ngm domain.
+  - LogNet is the network-layer infrastructure that binds Logseq knowledge graph pages into a coherent, queryable semantic web. It resolves wikilink references between pages, exposes structured ontology blocks (v2 json-ld) to downstream pipelines, and provides a distributed publishing mechanism so that annotated pages can be surfaced in graph visualisers, ontology browsers, and API consumers.
+
+  In the NarrativeGoldmine context, LogNet acts as the deployment substrate for the ontology pipeline: enriched pages are parsed and their `relations` blocks are ingested as graph edges, enabling semantic search, knowledge-graph navigation, and audit trails of ontological provenance.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:Lognet
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Supports knowledge graph construction and Logseq-based knowledge management; uses linked-data and network infrastructure as foundations.
+  - Related to graph databases and digital ontology repositories that consume its structured output.
 
 - ### Content
   - <iframe src="http://192.168.0.51:3000" style="width: 100%; height: 550px"></iframe>

@@ -46,16 +46,30 @@ public:: true
   "@id": "urn:ngm:class:inertia",
   "@type": "Class",
   "label": "Inertia",
-  "definition": "Inertia - Resistance to changes in motion state",
+  "definition": "The physical property of a body that resists changes in its state of motion, whether translational or rotational. In robotics and actuation systems, inertia determines how much force or torque is required to accelerate or decelerate a component, and must be modelled accurately for stable, precise control.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-actuation-and-control",
       "label": "Actuation and Control"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:kinematics", "label": "Kinematics"},
+      {"@id": "urn:ngm:class:control-system", "label": "Control System"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:actuator", "label": "Actuator"},
+      {"@id": "urn:ngm:class:robotics-control", "label": "Robotics Control"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
+      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -104,7 +118,9 @@ public:: true
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - is-subclass-of:: [[Robotics]]
+  - **partOf**: [[Kinematics]], [[Control System]]
+  - **requires**: [[Actuator]], [[Robotics Control]]
+  - **relatedTo**: [[Autonomous Navigation]], [[Robotics]]
 
 - ### Content
   - ### Original Content

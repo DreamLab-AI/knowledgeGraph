@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:digital-platform",
   "@type": "Class",
   "label": "Digital Platform",
-  "definition": "Digital Platform is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "A Digital Platform is a software-mediated environment that enables interaction, transaction, and value exchange between multiple user groups, often exploiting network effects to grow. In spatial computing and Web3 contexts, digital platforms host virtual experiences, marketplaces, and decentralised applications, frequently integrating blockchain infrastructure for ownership and governance.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -60,6 +61,40 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:digital-asset-ecosystem",
+        "label": "Digital Asset Ecosystem"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:marketplace",
+        "label": "Marketplace"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:digital-content",
+        "label": "Digital Content"
+      },
+      {
+        "@id": "urn:ngm:class:computing-platform",
+        "label": "Computing Platform"
+      }
+    ]
   }
 }
 ```
@@ -96,7 +131,7 @@ public:: true
 
 
 - ### Definition
-  - Digital Platform is a concept within the metaverse domain. Further enrichment pending.
+  - A Digital Platform is a software-mediated environment that enables interaction, transaction, and value exchange between multiple user groups, often exploiting network effects to grow. In spatial computing and Web3 contexts, digital platforms host virtual experiences, marketplaces, and decentralised applications, frequently integrating blockchain infrastructure for ownership and governance.
 
 bridges-to:: [[Blockchain]]
 
@@ -105,7 +140,12 @@ bridges-to:: [[Blockchain]]
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Has Part [[Digital Asset Ecosystem]]
+  - Uses [[Blockchain]]
+  - Uses [[Smart Contract]]
+  - Enables [[Marketplace]]
+  - Related To [[Digital Content]]
+  - Related To [[Computing Platform]]
 
 - ### Content
 

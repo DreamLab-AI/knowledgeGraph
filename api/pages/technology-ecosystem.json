@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:technology-ecosystem",
   "domain": "infrastructure",
-  "definition": "Technology Ecosystem is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A Technology Ecosystem is the interconnected network of platforms, developer tools, standards bodies, runtime environments, and community participants that collectively sustain a technology domain. In the metaverse context it encompasses rendering engines, spatial-computing SDKs, open standards (OpenXR, USD, WebXR), cloud infrastructure, hardware manufacturers, and application developers whose interdependencies determine adoption trajectories and competitive dynamics.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
@@ -13,21 +13,53 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:technology-infrastructure",
+        "label": "Technology Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:convergence",
+        "label": "Convergence"
+      },
+      {
+        "id": "urn:ngm:class:adoption-of-convergent-technologies",
+        "label": "Adoption of Convergent Technologies"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-domain",
+        "label": "Metaverse Domain"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

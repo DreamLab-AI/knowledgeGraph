@@ -66,9 +66,10 @@ public:: true
   "@id": "urn:ngm:class:total-supply",
   "@type": "Class",
   "label": "Total Supply",
-  "definition": "All existing tokens within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "Total Supply is the count of all tokens that have ever been created on a blockchain network, encompassing circulating tokens, locked or vested tokens, tokens held in treasury reserves, and any tokens that have been minted but not yet distributed—but excluding permanently destroyed (burned) tokens. It differs from the maximum supply (the hard cap set by the protocol) and from circulating supply (tokens freely tradeable on secondary markets). Total supply is a fundamental parameter in tokenomics analysis used to assess inflation, dilution, and long-term value dynamics.",
   "domain": "blockchain",
   "maturity": "established",
+  "qualityScore": 0.8,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-defi-and-economics",
@@ -80,10 +81,27 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:economic-mechanism",
-      "label": "EconomicMechanism"
+      "label": "Economic Mechanism"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:circulating-supply", "label": "Circulating Supply"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:emission-schedule", "label": "Emission Schedule"},
+      {"@id": "urn:ngm:class:supply-cap", "label": "Supply Cap"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:market-capitalization", "label": "Market Capitalization"},
+      {"@id": "urn:ngm:class:deflationary-token", "label": "Deflationary Token"},
+      {"@id": "urn:ngm:class:inflationary-token", "label": "Inflationary Token"},
+      {"@id": "urn:ngm:class:tokenomics", "label": "Tokenomics"},
+      {"@id": "urn:ngm:class:inflation", "label": "Inflation"},
+      {"@id": "urn:ngm:class:halving", "label": "Halving"},
+      {"@id": "urn:ngm:class:treasury-management", "label": "Treasury Management"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -148,84 +166,23 @@ public:: true
 ```
 
 
-- ### Definition
-  - All existing tokens within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
+### Definition
 
-- ### Semantic Classification
-  - owl-class:: blockchain:TotalSupply
-  - owl-role:: Object
-  - owl-inferred:: blockchain:VirtualObject
-  - belongs-to-domain:: [[TokenEconomicsDomain]]
-  - implemented-in-layer:: [[EconomicLayer]]
+Total Supply is the count of all tokens that have ever been created on a blockchain network, encompassing circulating tokens, locked or vested tokens, tokens held in treasury reserves, and any tokens that have been minted but not yet distributed—but excluding permanently destroyed (burned) tokens. It differs from the maximum supply (the hard cap set by the protocol) and from circulating supply (tokens freely tradeable on secondary markets). Total supply is a fundamental parameter in tokenomics analysis used to assess inflation, dilution, and long-term value dynamics.
 
-- ### Relationships
-  - is-subclass-of:: [[Blockchain Entity]], [[EconomicMechanism]]
+### Relationships
 
-- ### Content
+Total Supply **hasPart** [[Circulating Supply]] as its freely tradeable subset. It **requires** a defined [[Emission Schedule]] (the issuance timeline) and a [[Supply Cap]] (the maximum possible supply, whether finite or infinite). It is **relatedTo** [[Market Capitalization]] (fully diluted market cap = total supply × price), [[Deflationary Token]] and [[Inflationary Token]] (competing supply trajectory models), [[Tokenomics]] (the broader economic design of which supply is one parameter), [[Inflation]] (the rate of supply growth), [[Halving]] (supply-reducing event in disinflationary schedules), and [[Treasury Management]] (governance over unissued or reserved tokens).
 
-  ## Class Declaration
-  Declaration(Class(:TotalSupply))
+### Content
 
-  ## Subclass Relationships
-  SubClassOf(:TotalSupply :EconomicMechanism)
-  SubClassOf(:TotalSupply :BlockchainEntity)
+Total supply occupies a central position in token economic analysis. Investors and protocol designers distinguish three related quantities: maximum supply (the hard cap encoded in protocol rules, e.g., Bitcoin's 21 million BTC), total supply (all created tokens minus all burned tokens at any point in time), and circulating supply (total supply minus tokens locked in smart contracts, vesting schedules, team allocations, or treasury reserves).
 
-  ## Essential Properties
-  SubClassOf(:TotalSupply
-    (ObjectSomeValuesFrom :partOf :Blockchain))
+The gap between total supply and circulating supply represents "supply overhang"—tokens that could enter circulation and exert downward price pressure when vesting schedules unlock or treasuries liquidate. Analysing this overhang alongside the emission schedule allows assessment of inflationary pressure on existing holders.
 
-  SubClassOf(:TotalSupply
-    (ObjectSomeValuesFrom :hasProperty :Property))
+Deflationary protocols actively reduce total supply through token burns—destroying tokens in response to transaction fees (EIP-1559 base fee burning on Ethereum), protocol revenue, or governance decisions. When the burn rate exceeds the emission rate, total supply shrinks and the token becomes net-deflationary. Inflationary protocols continuously expand total supply to fund staking rewards, liquidity mining, and ecosystem grants, relying on growth in demand to absorb the new supply without price depression.
 
-  ## Data Properties
-  DataPropertyAssertion(:hasIdentifier :TotalSupply "BC-0116"^^xsd:string)
-  DataPropertyAssertion(:hasAuthorityScore :TotalSupply "1.0"^^xsd:decimal)
-  DataPropertyAssertion(:isFoundational :TotalSupply "true"^^xsd:boolean)
-
-  ## Object Properties
-  ObjectPropertyAssertion(:enablesFeature :TotalSupply :BlockchainFeature)
-  ObjectPropertyAssertion(:relatesTo :TotalSupply :RelatedConcept)
-
-  ## Annotations
-  AnnotationAssertion(rdfs:label :TotalSupply "Total Supply"@en)
-  AnnotationAssertion(rdfs:comment :TotalSupply
-    "All existing tokens"@en)
-  AnnotationAssertion(dct:description :TotalSupply
-    "Foundational blockchain concept with formal ontological definition"@en)
-  AnnotationAssertion(:termID :TotalSupply "BC-0116")
-  AnnotationAssertion(:priority :TotalSupply "1"^^xsd:integer)
-  AnnotationAssertion(:category :TotalSupply "economic-incentive"@en)
-  )
-      ```
-
-  - ## About Total Supply
-
-  - All existing tokens within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
-  - ### Key Characteristics
-    - 1. **Definitional Property**: Core defining characteristic
-    - 2. **Functional Property**: Operational behavior
-    - 3. **Structural Property**: Compositional elements
-    - 4. **Security Property**: Security guarantees provided
-    - 5. **Performance Property**: Efficiency considerations
-  - ### Technical Components
-    - **Implementation**: How concept is realized technically
-    - **Verification**: Methods for validating correctness
-    - **Interaction**: Relationships with other components
-    - **Constraints**: Technical limitations and requirements
-  - ### Use Cases
-    - **1. Core Blockchain Operation**
-    - **Application**: Fundamental blockchain functionality
-    - **Example**: Practical implementation in major blockchains
-    - **Requirements**: Technical prerequisites
-    - **Benefits**: Value provided to blockchain systems
-  - ### Standards & References
-    - [[ISO/IEC 23257:2021]] - Blockchain and distributed ledger technologies
-    - [[IEEE 2418.1]] - Blockchain and distributed ledger technologies
-    - [[NIST NISTIR]] - Blockchain and distributed ledger technologies
-
-
-
-  <!-- Merged from Total Supply.md: Blockchain, Tokenomics -->
+Treasury management is a key governance challenge: tokens held by protocol DAOs or foundations represent a claim on future supply that requires transparent disclosure, responsible deployment strategies, and community oversight to prevent misalignment between protocol growth and token value.
 
 - ### Provenance
   - sources:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]

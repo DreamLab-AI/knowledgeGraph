@@ -38,9 +38,10 @@ public:: true
   "@id": "urn:ngm:class:resilience",
   "@type": "Class",
   "label": "Resilience",
-  "definition": "Resilience is a blockchain and distributed systems concept and a type of Blockchain.",
+  "definition": "The capacity of a system, network, or organisation to anticipate, withstand, recover from, and adapt to adverse conditions, attacks, or failures whilst maintaining essential functions. In distributed and blockchain contexts, resilience is achieved through decentralisation, redundancy, byzantine fault tolerance, and adaptive response mechanisms.",
   "domain": "blockchain",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-network-component",
@@ -52,6 +53,44 @@ public:: true
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "@id": "urn:ngm:class:data-security",
+        "label": "Data Security"
+      }
+    ]
   }
 }
 ```
@@ -83,7 +122,7 @@ public:: true
 
 
 - ### Definition
-  - Resilience is a concept within the bc domain.
+  - The capacity of a system, network, or organisation to anticipate, withstand, recover from, and adapt to adverse conditions, attacks, or failures whilst maintaining essential functions. In distributed and blockchain contexts, resilience is achieved through decentralisation, redundancy, byzantine fault tolerance, and adaptive response mechanisms.
 
 - ### Semantic Classification
   - owl-class:: blockchain:Resilience
@@ -91,6 +130,13 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Blockchain]]
+  - Requires: [[Byzantine Fault Tolerance]]
+  - Requires: [[Consensus Mechanism]]
+  - Supports: [[Cybersecurity]]
+  - Supports: [[Data Security]]
+  - Contrasts With: [[Blockchain Scalability]]
+  - Related To: [[Blockchain Governance]]
+  - Related To: [[Blockchain Network]]
 
 - ### Content
 

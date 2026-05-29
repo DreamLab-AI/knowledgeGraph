@@ -42,9 +42,10 @@ public:: true
   "@id": "urn:ngm:class:neural-network-layer",
   "@type": "Class",
   "label": "Neural Network Layer",
-  "definition": "Neural Network Layer is a type of Neural Network Component in the artificial intelligence domain.",
+  "definition": "A Neural Network Layer is a discrete computational stage in a neural network that applies a parameterised transformation to its input tensor, including operations such as linear projection, convolution, normalisation, or attention. Layers are composed sequentially or in parallel to form a complete neural network architecture.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
@@ -60,6 +61,40 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:activation-function",
+        "label": "Activation Function"
+      },
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:batch-normalisation",
+        "label": "Batch Normalisation"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network-architecture",
+        "label": "Neural Network Architecture"
+      }
+    ]
   }
 }
 ```
@@ -91,14 +126,19 @@ public:: true
 
 
 - ### Definition
-  - Neural Network Layer is a concept within the ai domain. Further enrichment pending.
+  - A Neural Network Layer is a discrete computational stage in a neural network that applies a parameterised transformation to its input tensor, including operations such as linear projection, convolution, normalisation, or attention. Layers are composed sequentially or in parallel to form a complete neural network architecture.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:NeuralNetworkLayer
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Part Of [[Neural Network]]
+  - Part Of [[Neural Network Architecture]]
+  - Requires [[Activation Function]]
+  - Requires [[Backpropagation]]
+  - Uses [[Batch Normalisation]]
+  - Enables [[Deep Learning]]
 
 - ### Content
 

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:proximity-detection",
   "domain": "infrastructure",
-  "definition": "Proximity Detection is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Proximity Detection is the computational process of determining the spatial distance and relative position between entities\u2014users, objects, or agents\u2014within a virtual or physical environment in real time. In metaverse and robotics contexts it underpins social-distance awareness, collision avoidance, interaction triggering, and context-sensitive content delivery. Implementations range from bounding-volume overlap tests and signed-distance fields in 3D engines to sensor-fusion pipelines combining lidar, ultrasound, and camera inputs in robotic systems.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
@@ -13,21 +13,53 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:collision-avoidance",
+        "label": "Collision Avoidance"
+      },
+      {
+        "id": "urn:ngm:class:presence-detection",
+        "label": "Presence Detection"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:social-presence",
+        "label": "Social Presence"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": []

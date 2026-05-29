@@ -66,7 +66,7 @@ public:: true
   "@id": "urn:ngm:class:inflation",
   "@type": "Class",
   "label": "Inflation",
-  "definition": "Increasing token supply within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "The scheduled or dynamic increase in token supply within a blockchain network, used to fund validator rewards, incentivise participation, and manage monetary policy. Inflation rate parameters are typically encoded in the protocol and may be adjusted via governance, directly affecting token holder purchasing power and long-term economic security.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -83,7 +83,24 @@ public:: true
       "label": "EconomicMechanism"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:inflation-control", "label": "Inflation Control"},
+      {"@id": "urn:ngm:class:emission-schedule", "label": "Emission Schedule"},
+      {"@id": "urn:ngm:class:supply-cap", "label": "Supply Cap"},
+      {"@id": "urn:ngm:class:block-reward", "label": "Block Reward"},
+      {"@id": "urn:ngm:class:deflationary-token", "label": "Deflationary Token"},
+      {"@id": "urn:ngm:class:burning-mechanism", "label": "Burning Mechanism"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:fixed-supply-token", "label": "Fixed Supply Token"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:minting", "label": "Minting"},
+      {"@id": "urn:ngm:class:circulating-supply", "label": "Circulating Supply"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

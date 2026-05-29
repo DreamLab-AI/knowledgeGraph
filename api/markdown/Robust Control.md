@@ -42,20 +42,37 @@ public:: true
   "@id": "urn:ngm:class:robust-control",
   "@type": "Class",
   "label": "Robust Control",
-  "definition": "Robust Control is a type of Control Algorithms in the spatial computing domain.",
+  "definition": "Robust Control is a branch of control theory that designs controllers guaranteeing stable and acceptable performance across a bounded set of model uncertainties and disturbances. It formalises worst-case design requirements through H-infinity and H2 optimisation frameworks, ensuring actuated systems remain within specification even when plant parameters deviate from nominal values.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
     },
     {
-      "@id": "urn:ngm:class:control-algorithms",
+      "@id": "urn:ngm:class:control-algorithm",
       "label": "ControlAlgorithms"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:feedback-control", "label": "Feedback Control"},
+      {"@id": "urn:ngm:class:pid-control", "label": "PID Control"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:motion-control", "label": "Motion Control"},
+      {"@id": "urn:ngm:class:robot-control", "label": "Robot Control"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:adaptive-control", "label": "Adaptive Control"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:robot-safety", "label": "Robot Safety"},
+      {"@id": "urn:ngm:class:trajectory-control", "label": "Trajectory Control"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -91,7 +108,7 @@ public:: true
 
 
 - ### Definition
-  - - maturity:: draft
+  - Robust Control is a branch of control theory that designs controllers guaranteeing stable and acceptable performance across a bounded set of model uncertainties and disturbances. It formalises worst-case design requirements through H-infinity and H2 optimisation frameworks, ensuring actuated systems remain within specification even when plant parameters deviate from nominal values.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:RobustControl
@@ -99,6 +116,10 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[ControlAlgorithms]]
+  - **uses** → [[Feedback Control]], [[PID Control]]
+  - **enables** → [[Motion Control]], [[Robot Control]]
+  - **contrastsWith** → [[Adaptive Control]]
+  - **supports** → [[Robot Safety]], [[Trajectory Control]]
 
 - ### Content
 

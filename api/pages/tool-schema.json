@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:tool-schema",
   "domain": "artificial-intelligence",
-  "definition": "A tool schema is a structured, machine-readable specification\u2014typically in JSON Schema format\u2014that describes the name, parameters, and expected inputs for a function or API callable by an AI agent.",
+  "definition": "A tool schema is a structured, machine-readable specification \u2014 typically expressed in JSON Schema format \u2014 that formally describes a function or external capability callable by an AI agent: its name, natural-language description, parameter names and types, constraints, and which parameters are required. Tool schemas are provided to large language models at inference time as part of the system or user context, enabling the model to reason about which tools are available and to emit syntactically correct structured function-call outputs that an orchestration layer can execute. They are the core interface contract between AI models and the external systems they interact with.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -14,11 +14,25 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:json-schema",
+        "label": "JSON Schema"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      },
+      {
+        "id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +41,20 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      },
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "id": "urn:ngm:class:schema-registry",
+        "label": "Schema Registry"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

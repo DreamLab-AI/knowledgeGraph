@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:generative-ai-engineering",
   "domain": "artificial-intelligence",
-  "definition": "Generative AI Engineering is a type of Artificial Intelligence in the artificial intelligence domain.",
+  "definition": "Generative AI Engineering is the applied discipline concerned with designing, developing, fine-tuning, and deploying generative AI systems\u2014such as large language models, diffusion models, and multimodal transformer architectures\u2014to create novel artefacts including text, images, audio, code, and synthetic data. It encompasses the full engineering lifecycle from model selection and prompt engineering through retrieval-augmented generation, evaluation, and production observability. The field bridges machine learning research and software engineering, requiring competence in model architecture, infrastructure, and responsible AI practices.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-application",
@@ -13,21 +13,74 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.75,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-data-generation",
+        "label": "Synthetic Data Generation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-ai-agents",
+        "label": "Autonomous AI Agents"
+      },
+      {
+        "id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ]
   },
   "wikilinks": [
     {

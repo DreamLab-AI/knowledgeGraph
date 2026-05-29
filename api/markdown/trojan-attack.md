@@ -7,7 +7,10 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **relatedTo**: Backdoor Attack, Data Poisoning, Adversarial Attack
+  - **contrastsWith**: Adversarial Robustness
+  - **requires**: Supply Chain
+  - **dependsOn**: AI Security
 
 - ### Content
   - A backdoor attack on AI models, often emphasizing supply chain compromise, where a pre-trained model or training pipeline is maliciously modified to contain hidden triggers that cause specific attacker-defined behaviors when activated, while maintaining normal performance otherwise.

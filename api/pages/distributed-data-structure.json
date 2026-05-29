@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:distributed-data-structure",
   "domain": "blockchain",
-  "definition": "A Distributed Data Structure is an abstract organizational framework for storing, managing, and accessing data across multiple networked computing nodes without centralized coordination.",
+  "definition": "A Distributed Data Structure is an abstract organisational framework for storing, managing, and accessing data across multiple networked computing nodes without centralised coordination. It partitions or replicates data across independent nodes employing consensus protocols to maintain consistency and availability, providing the foundational storage architecture for blockchain systems and other decentralised platforms.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-network-component",
@@ -17,12 +17,47 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:transaction-pool",
+        "label": "Transaction Pool"
+      },
+      {
+        "id": "urn:ngm:class:merkle-root",
+        "label": "Merkle Root"
+      },
+      {
+        "id": "urn:ngm:class:merkle-proof",
+        "label": "Merkle Proof"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -31,7 +66,16 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:network-synchronization",
+        "label": "Network Synchronization"
+      },
+      {
+        "id": "urn:ngm:class:gossip-protocol",
+        "label": "Gossip Protocol"
+      }
+    ]
   },
   "wikilinks": [
     {

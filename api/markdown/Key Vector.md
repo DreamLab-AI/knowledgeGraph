@@ -42,16 +42,40 @@ public:: true
   "@id": "urn:ngm:class:key-vector",
   "@type": "Class",
   "label": "Key Vector",
-  "definition": "Key Vector is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "In transformer-based neural networks, a Key Vector is one of three learned linear projections of an input token embedding—alongside the Query Vector and Value Vector—that together implement the scaled dot-product attention mechanism. The key vector represents what a given token has to offer: each query–key dot product measures the compatibility or relevance between a querying token and every other token in the sequence, with the resulting attention weights determining how much each value vector contributes to the output representation.",
   "domain": "artificial-intelligence",
   "maturity": "established",
+  "qualityScore": 0.8,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
+      "@id": "urn:ngm:class:neural-network-component",
+      "label": "Neural Network Component"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:query-vector", "label": "Query Vector"},
+      {"@id": "urn:ngm:class:value-vector", "label": "Value Vector"},
+      {"@id": "urn:ngm:class:query-key-value", "label": "Query Key Value"},
+      {"@id": "urn:ngm:class:self-attention", "label": "Self Attention"},
+      {"@id": "urn:ngm:class:positional-encoding", "label": "Positional Encoding"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},
+      {"@id": "urn:ngm:class:multi-head-attention", "label": "Multi-Head Attention"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:token-embedding", "label": "Token Embedding"},
+      {"@id": "urn:ngm:class:transformer", "label": "Transformer"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:embedding-model", "label": "Embedding Model"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:semantic-search", "label": "Semantic Search"},
+      {"@id": "urn:ngm:class:vector-database", "label": "Vector Database"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

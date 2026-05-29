@@ -8,6 +8,10 @@
 
 - ### Relationships
   - is-subclass-of:: [[3D Asset]]
+  - **uses**: [[Photogrammetry]], [[Procedural Generation]] — real-world objects are captured via photogrammetry; large-scale environments use procedural generation
+  - **requires**: [[Real-Time Rendering]], [[Game Engine]] — virtual models are consumed and rendered by game engines and XR runtimes
+  - **enables**: [[Virtual Production]], [[Metaverse Platform]] — models are the primary content assets that populate virtual production sets and metaverse worlds
+  - **standardizedBy**: [[3D Asset Standard]] — glTF/GLB, USD, and FBX are the dominant interchange standards for virtual models
 
 - ### Content
 

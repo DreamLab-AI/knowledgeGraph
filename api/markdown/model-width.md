@@ -7,7 +7,12 @@
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **contrastsWith** [[Model Depth]] — width (hidden dimension) and depth (layer count) are independent scaling axes
+  - **dependsOn** [[Transformer]] — transformer architectures expose width as the d_model hyperparameter
+  - **dependsOn** [[Hyperparameter]] — width is selected prior to training and fixed throughout
+  - **relatedTo** [[Attention Mechanism]] — attention head dimension is a direct function of d_model width
+  - **relatedTo** [[Parameter Count]] — wider models have quadratically more parameters in attention layers
+  - **enables** [[Mixture of Experts]] — MoE decouples apparent parameter count from active width per token
 
 - ### Content
   - The dimensionality of representations within each layer, typically referring to the hidden dimension (d_model), determining the capacity of the model to encode information at each layer.

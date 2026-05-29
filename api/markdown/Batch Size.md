@@ -50,16 +50,31 @@ public:: true
   "@id": "urn:ngm:class:batch-size",
   "@type": "Class",
   "label": "Batch Size",
-  "definition": "Batch Size is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "Batch Size is the number of training examples processed together in a single forward and backward pass before model parameters are updated. It is a critical hyperparameter governing the trade-off between training speed, memory usage, gradient noise, and convergence stability—small batches introduce regularising noise via stochastic gradient estimates, whilst large batches enable faster hardware utilisation but may generalise less well.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:epoch", "label": "Epoch"},
+      {"@id": "urn:ngm:class:hyperparameter", "label": "Hyperparameter"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:overfitting", "label": "Overfitting"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -113,7 +128,11 @@ public:: true
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **partOf** [[Gradient Descent]] — batch size defines the granularity of each gradient update
+  - **relatedTo** [[Epoch]] — an epoch contains training-set-size divided by batch-size update steps
+  - **relatedTo** [[Hyperparameter]] — batch size is a key hyperparameter governing training dynamics
+  - **contrastsWith** [[Overfitting]] — small batches introduce noise that acts as implicit regularisation
+  - **dependsOn** [[Deep Learning]] — batch-based training is the standard deep learning optimisation loop
 
 - ### Content
   - ### Primary Definition

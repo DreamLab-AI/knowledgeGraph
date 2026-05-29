@@ -66,7 +66,7 @@ public:: true
   "@id": "urn:ngm:class:mining-pool",
   "@type": "Class",
   "label": "Mining Pool",
-  "definition": "Collaborative mining group within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "A cooperative arrangement in which multiple miners aggregate their computational resources to increase the probability of successfully mining a block, sharing the resulting block reward proportionally to contributed hash rate. Mining pools reduce variance in miner income but introduce centralisation risks.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -80,10 +80,29 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:consensus-protocol",
-      "label": "ConsensusProtocol"
+      "label": "Consensus Protocol"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
+      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"},
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:block-reward", "label": "Block Reward"},
+      {"@id": "urn:ngm:class:transaction-fee", "label": "Transaction Fee"},
+      {"@id": "urn:ngm:class:consensus-algorithm", "label": "Consensus Algorithm"},
+      {"@id": "urn:ngm:class:mempool", "label": "Mempool"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

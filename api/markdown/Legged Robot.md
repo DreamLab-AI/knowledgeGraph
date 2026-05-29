@@ -42,15 +42,34 @@ public:: true
   "@id": "urn:ngm:class:legged-robot",
   "@type": "Class",
   "label": "Legged Robot",
-  "definition": "Legged Robot is a robotics and autonomous systems concept and a type of robotics.",
+  "definition": "A Legged Robot is a mobile robotic system that achieves locomotion via articulated limbs rather than wheels or tracks, drawing on bio-inspired design and gait control algorithms to navigate complex, unstructured terrain. Contemporary platforms combine reinforcement learning, sensor fusion, and compliant actuators to achieve robust autonomous operation across search-and-rescue, logistics, and infrastructure inspection scenarios.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-robot-type",
       "label": "Robot Type"
     }
   ],
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:actuator", "label": "Actuator"},
+      {"@id": "urn:ngm:class:control-system", "label": "Control System"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
+      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
+      {"@id": "urn:ngm:class:robot-operating-system", "label": "Robot Operating System"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:mobile-robot", "label": "Mobile Robot"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:simulation", "label": "Simulation"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -87,7 +106,7 @@ public:: true
 
 
 - ### Definition
-  - ### Primary Definition
+  - A Legged Robot is a mobile robotic system that achieves locomotion via articulated limbs rather than wheels or tracks, drawing on bio-inspired design and gait control algorithms to navigate complex, unstructured terrain. Contemporary platforms combine reinforcement learning, sensor fusion, and compliant actuators to achieve robust autonomous operation across search-and-rescue, logistics, and infrastructure inspection scenarios.
 
 - ### Semantic Classification
   - owl-class:: robotics:rb0013leggedrobot
@@ -95,7 +114,10 @@ public:: true
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart:: [[Actuator]], [[Control System]]
+  - uses:: [[Reinforcement Learning]], [[Sensor Fusion]], [[Robot Operating System]]
+  - partOf:: [[Mobile Robot]]
+  - relatedTo:: [[Simulation]], [[Digital Twin]]
 
 - ### Content
   - ### Primary Definition

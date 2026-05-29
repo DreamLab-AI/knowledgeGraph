@@ -66,7 +66,7 @@ public:: true
   "@id": "urn:ngm:class:inflationary-token",
   "@type": "Class",
   "label": "Inflationary Token",
-  "definition": "Increasing supply token within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "An Inflationary Token is a blockchain token whose total circulating supply increases over time through a programmatic emission schedule, typically as a mechanism to reward network participants—validators, miners, stakers, or liquidity providers—and incentivise ongoing network participation. Unlike fixed-supply or deflationary tokens, inflationary tokens accept dilution of existing holders as the cost of sustaining economic participation incentives. Inflation rates can be fixed (constant annual issuance), variable (decreasing block rewards as in Bitcoin's halving), or algorithmically adjusted in response to network conditions such as staking participation rates. Design of the emission schedule is a critical tokenomics decision balancing security, participation, and value preservation.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -83,7 +83,32 @@ public:: true
       "label": "EconomicMechanism"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:mining", "label": "Mining"},
+      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:tokenomics", "label": "Tokenomics"},
+      {"@id": "urn:ngm:class:token-economics", "label": "Token Economics"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:deflationary-token", "label": "Deflationary Token"},
+      {"@id": "urn:ngm:class:stablecoin-token", "label": "Stablecoin Token"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"},
+      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
+      {"@id": "urn:ngm:class:miner", "label": "Miner"},
+      {"@id": "urn:ngm:class:token", "label": "Token"},
+      {"@id": "urn:ngm:class:yield-farming", "label": "Yield Farming"}
+    ]
+  },
+  "qualityScore": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

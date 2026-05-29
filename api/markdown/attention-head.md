@@ -8,6 +8,12 @@
 
 - ### Relationships
   - bridges-to:: [[Computer Vision]] (domain: rb)
+  - Part Of [[Attention Mechanism]]
+  - Part Of [[Network Architecture]]
+  - Enables [[Transformers]]
+  - Uses [[Attention Weight]]
+  - Related To [[Attention]]
+  - Related To [[Transformer Architecture]]
 
 - ### Content
   - One of multiple parallel attention mechanisms in multi-head attention, each potentially learning different types of relationships and patterns in the input sequence.

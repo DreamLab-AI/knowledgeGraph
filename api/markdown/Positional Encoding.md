@@ -44,13 +44,26 @@ public:: true
   "label": "Positional Encoding",
   "definition": "A technique for injecting information about the relative or absolute position of tokens in a sequence, essential for transformers since they lack inherent sequential ordering.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
     }
   ],
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
+      {"@id": "urn:ngm:class:transformer", "label": "Transformer"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:token-embedding", "label": "Token Embedding"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:language-modeling", "label": "Language Modeling"},
+      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -95,7 +108,11 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - partOf [[Transformer Architecture]]
+  - partOf [[Transformer]]
+  - requires [[Token Embedding]]
+  - enables [[Language Modeling]]
+  - enables [[Attention Mechanism]]
 
 - ### Content
   - A technique for injecting information about the relative or absolute position of tokens in a sequence, essential for transformers since they lack inherent sequential ordering.

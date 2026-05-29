@@ -1,12 +1,17 @@
 - ### Definition
-  - NetworkingInfrastructure is a concept within the ngm domain.
+  - The physical and logical systems—including routers, CDNs, edge nodes, and communication protocols—that underpin connectivity for distributed applications. For spatial computing and metaverse contexts, networking infrastructure must deliver sub-20ms latency, support massive concurrent connections, and enable geographically distributed state synchronisation.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:NetworkingInfrastructure
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **hasPart** [[Content Delivery Network]] — CDNs are a critical sub-component distributing assets at the network edge
+  - **hasPart** [[Edge Computing]] — edge nodes colocated near users reduce round-trip latency
+  - **enables** [[Realtime Communication]] — low-latency networking enables real-time multi-user interaction
+  - **enables** [[Metaverse Infrastructure]] — networking forms the backbone layer of metaverse infrastructure stacks
+  - **dependsOn** [[Latency]] — latency is the primary performance constraint networking infrastructure must minimise
+  - **dependsOn** [[Bandwidth Adaptation]] — adaptive bitrate and bandwidth management maintain quality under variable conditions
 
 - ### Content
   # NetworkingInfrastructure

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ontology-property-definitions",
   "domain": "infrastructure",
-  "definition": "Comprehensive definitions of object properties and datatype properties used throughout the Disruptive Technology Ontology, establishing formal semantic relationships between concepts across AI, blockchain, robotics, and metaverse domains.",
+  "definition": "Comprehensive definitions of object properties and datatype properties used throughout the Disruptive Technology Ontology, establishing formal semantic relationships between concepts across AI, blockchain, robotics, and metaverse domains. Properties define typed, directional links (enables, requires, hasPart, uses, etc.) with explicit domains, ranges, inverse relationships, and logical characteristics enabling automated reasoning and knowledge graph traversal.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-software-engineering",
@@ -13,10 +13,19 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:ontology-structure",
+        "label": "Ontology Structure"
+      },
+      {
+        "id": "urn:ngm:class:ontology-definition",
+        "label": "Ontology Definition"
+      }
+    ],
     "requires": [],
     "enables": [],
     "dependsOn": [],
@@ -24,10 +33,48 @@
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:blockchain-domain",
+        "label": "Blockchain Domain"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence-domain",
+        "label": "Artificial Intelligence Domain"
+      },
+      {
+        "id": "urn:ngm:class:robotics-domain",
+        "label": "Robotics Domain"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web-standards",
+        "label": "Semantic Web Standards"
+      },
+      {
+        "id": "urn:ngm:class:domain-ontology",
+        "label": "Domain Ontology"
+      },
+      {
+        "id": "urn:ngm:class:owl-class-hierarchy",
+        "label": "OWL Class Hierarchy"
+      }
+    ]
   },
   "wikilinks": [
     {

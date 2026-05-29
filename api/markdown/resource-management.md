@@ -1,12 +1,15 @@
 - ### Definition
-  - ResourceManagement is a concept within the ngm domain.
+  - The systematic allocation, scheduling, and monitoring of computational resources — CPU, GPU, memory, storage, and network bandwidth — across applications and services within an infrastructure, ensuring efficient utilisation, quality-of-service guarantees, and graceful degradation under load. Encompasses asset lifecycle management, resource pooling, and dynamic scaling strategies.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:ResourceManagement
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Supports: [[Computing Infrastructure]], [[Distributed System]]
+  - Uses: [[Edge Computing]]
+  - Enables: [[Metaverse Infrastructure]]
+  - Related To: [[Content Delivery Network]]
 
 - ### Content
   # ResourceManagement

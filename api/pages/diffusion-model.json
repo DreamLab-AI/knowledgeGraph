@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:diffusion-model",
   "domain": "artificial-intelligence",
-  "definition": "Diffusion Model is a foundational concept in artificial intelligence that serves as a classification parent for 5 related concepts in the ontology.",
+  "definition": "A Diffusion Model is a class of generative model that learns to synthesise data by reversing a gradual noising process. During training the model observes how data is progressively corrupted by Gaussian noise; at inference time it iteratively denoises a random sample, guided by a learned score function, to produce high-fidelity outputs such as images, audio, or video. Diffusion models underpin systems like Stable Diffusion and DALL-E 3.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-model-architecture",
@@ -14,16 +14,39 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.3,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "id": "urn:ngm:class:text-to-image",
+        "label": "Text-to-Image"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

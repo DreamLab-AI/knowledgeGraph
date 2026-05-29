@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:operating-system",
   "domain": "infrastructure",
-  "definition": "Operating System is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "An Operating System (OS) is the foundational software layer that manages hardware resources \u2014 CPU scheduling, memory allocation, file systems, device drivers, and process isolation \u2014 and provides a stable interface for application software. In spatial computing and XR contexts, OS-level capabilities such as real-time scheduling, GPU access, and sensor integration are critical; specialised spatial OSes must coordinate head-tracking, display refresh, and input fusion at sub-millisecond latencies.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
@@ -14,11 +14,29 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:virtual-machine",
+        "label": "Virtual Machine"
+      },
+      {
+        "id": "urn:ngm:class:resource-management",
+        "label": "Resource Management"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +45,12 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:hardware",
+        "label": "Hardware"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

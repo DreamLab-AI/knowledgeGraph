@@ -5,37 +5,79 @@
   "public": true,
   "classIri": "urn:ngm:class:light-node",
   "domain": "blockchain",
-  "definition": "Partial blockchain data node within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "A Light Node is a blockchain network participant that downloads and verifies only block headers rather than the full transaction history, using Simplified Payment Verification (SPV) to confirm transaction inclusion via Merkle proofs. This design allows resource-constrained devices\u2014mobile wallets, IoT devices, embedded clients\u2014to interact securely with a blockchain without the storage and bandwidth demands of a Full Node, relying on connected full nodes to supply the underlying transaction data when required.",
   "subClassOf": [
-    {
-      "id": "urn:ngm:class:bc-network-component",
-      "label": "Network Component"
-    },
     {
       "id": "urn:ngm:class:blockchain-entity",
       "label": "Blockchain Entity"
-    },
-    {
-      "id": "urn:ngm:class:network-component",
-      "label": "NetworkComponent"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:full-node",
+        "label": "Full Node"
+      },
+      {
+        "id": "urn:ngm:class:archival-node",
+        "label": "Archival Node"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:blockchain-infrastructure",
+        "label": "Blockchain Infrastructure"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bootstrap-node",
+        "label": "Bootstrap Node"
+      },
+      {
+        "id": "urn:ngm:class:validator-node",
+        "label": "Validator Node"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
+      }
+    ]
   },
   "wikilinks": [
     {

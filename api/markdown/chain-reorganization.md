@@ -1,5 +1,5 @@
 - ### Definition
-  - Replacement of blockchain segment within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
+  A Chain Reorganization (reorg) is the replacement of one or more blocks in the canonical blockchain by an alternative chain of equal or greater cumulative proof-of-work, occurring when competing miners produce valid chains of differing lengths and the network converges on the longest-chain rule to select the canonical history. Reorgs invalidate transactions confirmed only in the abandoned chain segment, enabling double-spend attacks when deliberately induced and posing settlement finality risks for exchanges and payment processors.
 
 - ### Semantic Classification
   - owl-class:: blockchain:ChainReorganization
@@ -9,7 +9,12 @@
   - implemented-in-layer:: [[ConceptualLayer]]
 
 - ### Relationships
-  - is-subclass-of:: [[Blockchain Entity]], [[DistributedDataStructure]]
+  - is-subclass-of:: [[Blockchain Entity]], [[Distributed Data Structure]]
+  - requires:: [[Proof Of Work]], [[Nakamoto Consensus]], [[Longest Chain Rule]]
+  - enables:: [[Double Spending]], [[51% Attack]]
+  - relatedTo:: [[Finality]], [[Transaction Finality]], [[Selfish Mining]], [[Fork Choice Rule]], [[Blockchain Scalability]]
+  - partOf:: [[Consensus Mechanism]]
+  - contrastsWith:: [[Byzantine Fault Tolerance]]
 
 - ### Content
 
@@ -48,27 +53,17 @@
   )
       ```
 
-  - ## About Chain Reorganization
+  ### About Chain Reorganization
 
-  - Replacement of blockchain segment within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
-  - ### Key Characteristics
-    - 1. **Definitional Property**: Core defining characteristic
-    - 2. **Functional Property**: Operational behavior
-    - 3. **Structural Property**: Compositional elements
-    - 4. **Security Property**: Security guarantees provided
-    - 5. **Performance Property**: Efficiency considerations
-  - ### Technical Components
-    - **Implementation**: How concept is realized technically
-    - **Verification**: Methods for validating correctness
-    - **Interaction**: Relationships with other components
-    - **Constraints**: Technical limitations and requirements
-  - ### Use Cases
-    - **1. Core Blockchain Operation**
-    - **Application**: Fundamental blockchain functionality
-    - **Example**: Practical implementation in major blockchains
-    - **Requirements**: Technical prerequisites
-    - **Benefits**: Value provided to blockchain systems
-  - ### Standards & References
+  In proof-of-work blockchain networks, multiple miners may independently discover valid blocks at approximately the same height, producing competing chain tips. Each node initially appends the first valid block it receives to its local chain, creating a temporary fork where different subsets of the network have different views of the canonical chain. The longest-chain rule—more precisely, the heaviest-chain rule measuring cumulative proof-of-work—resolves this contention: when one chain accumulates more work than its competitors, all nodes adopting that chain orphan the competing blocks and any transactions exclusively confirmed therein, constituting a reorganisation.
+
+  Shallow reorgs of one or two blocks occur naturally and frequently in any proof-of-work blockchain without adversarial intent, arising simply from network propagation latency. These natural reorgs are a fundamental feature of probabilistic finality: a transaction confirmed in a block at depth N has been reversed by a reorg of depth N, and the probability of such a reorg decays exponentially with depth assuming honest majority hash power. Bitcoin's convention of waiting six confirmations before treating a payment as final reflects this probabilistic model and corresponds to a reorg of at least six blocks, which requires an adversary controlling close to 50% of hash power even under optimistic assumptions.
+
+  Adversarial reorgs are engineered by attackers who privately mine a competing chain and broadcast it after targets have accepted transactions in the public chain, invalidating those transactions. This double-spend attack requires controlling sufficient hash rate to outpace the honest network—approximately 51% for sustained attacks, though shorter reorgs are achievable with less hash power by exploiting network topology. Selfish mining strategies can amplify an attacker's effective share of block rewards, making attacks viable at lower hash rate thresholds than the naive 51% estimate suggests.
+
+  Exchanges, payment processors, and merchants mitigate reorg risk by requiring multiple confirmations before crediting deposits and by monitoring blockchain analytics services that detect unusual chain-tip competition patterns. Proof-of-stake and Byzantine fault-tolerant consensus mechanisms achieve deterministic finality without reorgs by requiring supermajority validator signatures on each block, eliminating the probabilistic settlement model entirely at the cost of different security assumptions.
+
+  ### Standards & References
     - [[ISO/IEC 23257:2021]] - Blockchain and distributed ledger technologies
     - [[IEEE 2418.1]] - Blockchain and distributed ledger technologies
     - [[NIST NISTIR]] - Blockchain and distributed ledger technologies

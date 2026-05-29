@@ -62,7 +62,7 @@ public:: true
   "@id": "urn:ngm:class:fairness-metrics",
   "@type": "Class",
   "label": "Fairness Metrics",
-  "definition": "Fairness Metrics are quantitative measures and mathematical frameworks used to evaluate and ensure equitable treatment across different demographic groups in AI systems.",
+  "definition": "Quantitative measures and mathematical frameworks used to evaluate whether an AI system produces equitable outcomes across demographic groups. Core metrics include demographic parity, equalized odds, equal opportunity, and predictive parity; selection among them depends on context and regulatory requirements, as metrics can conflict and no single criterion satisfies all fairness definitions simultaneously.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -71,7 +71,25 @@ public:: true
       "label": "AI Governance and Ethics"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:algorithmic-bias", "label": "Algorithmic Bias"},
+      {"@id": "urn:ngm:class:disparate-impact", "label": "Disparate Impact"},
+      {"@id": "urn:ngm:class:bias-mitigation-techniques", "label": "Bias Mitigation Techniques"},
+      {"@id": "urn:ngm:class:ai-fairness", "label": "AI Fairness"},
+      {"@id": "urn:ngm:class:bias-detection-methods", "label": "Bias Detection Methods"},
+      {"@id": "urn:ngm:class:accountability", "label": "Accountability"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:ai-audit", "label": "AI Audit"},
+      {"@id": "urn:ngm:class:algorithmic-accountability", "label": "Algorithmic Accountability"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
+      {"@id": "urn:ngm:class:diversity-non-discrimination-and-fairness", "label": "Diversity, Non-Discrimination, and Fairness"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

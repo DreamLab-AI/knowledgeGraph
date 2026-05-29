@@ -42,9 +42,9 @@ public:: true
   "@id": "urn:ngm:class:financial-infrastructure",
   "@type": "Class",
   "label": "Financial Infrastructure",
-  "definition": "Financial Infrastructure is a type of Economic Layer in the infrastructure domain.",
+  "definition": "Financial Infrastructure comprises the foundational systems, networks, and institutions that enable the creation, exchange, and settlement of financial value. It includes payment clearing networks, custody systems, blockchain settlement layers, lightning-speed payment channels, and the regulatory reporting frameworks that underpin both traditional and decentralised financial ecosystems.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
@@ -55,6 +55,19 @@ public:: true
       "label": "Economic Layer"
     }
   ],
+  "relations": {
+    "supports": [
+      {"@id": "urn:ngm:class:financial-services", "label": "Financial Services"},
+      {"@id": "urn:ngm:class:financial-instruments", "label": "Financial Instruments"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:blockchain-infrastructure", "label": "Blockchain Infrastructure"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:lightning-network", "label": "Lightning Network"},
+      {"@id": "urn:ngm:class:economic-layer", "label": "Economic Layer"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -91,14 +104,18 @@ public:: true
 
 
 - ### Definition
-  - Financial Infrastructure is a concept within the metaverse domain. Further enrichment pending.
+  - Financial Infrastructure comprises the foundational systems, networks, and institutions that enable the creation, exchange, and settlement of financial value. It includes payment clearing networks, custody systems, blockchain settlement layers, lightning-speed payment channels, and the regulatory reporting frameworks that underpin both traditional and decentralised financial ecosystems.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:FinancialInfrastructure
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - supports [[Financial Services]]
+  - supports [[Financial Instruments]]
+  - requires [[Blockchain Infrastructure]]
+  - relatedTo [[Lightning Network]]
+  - relatedTo [[Economic Layer]]
 
 - ### Content
 

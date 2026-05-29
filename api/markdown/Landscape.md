@@ -38,15 +38,28 @@ public:: true
   "@id": "urn:ngm:class:landscape",
   "@type": "Class",
   "label": "Landscape",
-  "definition": "Landscape is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A Landscape, in the context of this knowledge graph, is a structured market-analysis overview of the current state of an AI or technology sector, mapping key players, technology stacks, investment flows, and emerging patterns. Landscape analyses such as those from a16z or Cowboy Ventures provide practitioners with orientation in rapidly shifting fields and inform infrastructure strategy.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
     }
   ],
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:infra-computing-and-cloud", "label": "Computing and Cloud"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -83,14 +96,16 @@ public:: true
 
 
 - ### Definition
-  - Landscape is a concept within the ngm domain.
+  - A Landscape, in the context of this knowledge graph, is a structured market-analysis overview of the current state of an AI or technology sector, mapping key players, technology stacks, investment flows, and emerging patterns. Landscape analyses such as those from a16z or Cowboy Ventures provide practitioners with orientation in rapidly shifting fields and inform infrastructure strategy.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:Landscape
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - relatedTo:: [[Generative AI]], [[Large Language Models]]
+  - uses:: [[Machine Learning]]
+  - partOf:: [[Computing and Cloud]]
 
 - ### Content
   - #Public page

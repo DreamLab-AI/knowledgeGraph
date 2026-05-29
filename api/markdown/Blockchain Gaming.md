@@ -42,20 +42,66 @@ public:: true
   "@id": "urn:ngm:class:blockchain-gaming",
   "@type": "Class",
   "label": "Blockchain Gaming",
-  "definition": "Blockchain Gaming is a type of Infrastructure in the infrastructure domain.",
+  "definition": "A gaming paradigm in which in-game assets, economies, and ownership records are managed on distributed ledgers, enabling players to hold verifiable ownership of digital items as NFTs, participate in play-to-earn economies, and trade assets across compatible platforms without relying on centralised game servers for provenance or scarcity guarantees.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
     }
   ],
-  "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
+      },
+      {
+        "@id": "urn:ngm:class:digital-ownership",
+        "label": "Digital Ownership"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-currency",
+        "label": "Virtual Currency"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:nft-marketplace",
+        "label": "NFT Marketplace"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:tokenization",
+        "label": "Tokenization"
+      }
+    ]
   }
 }
 ```
@@ -87,23 +133,28 @@ public:: true
 
 
 - ### Definition
-  - Blockchain Gaming is a concept within the metaverse domain. Further enrichment pending.
+  - A gaming paradigm in which in-game assets, economies, and ownership records are managed on distributed ledgers, enabling players to hold verifiable ownership of digital items as NFTs, participate in play-to-earn economies, and trade assets across compatible platforms without relying on centralised game servers for provenance or scarcity guarantees.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:BlockchainGaming
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses [[Blockchain]]
+  - Uses [[NFT]]
+  - Uses [[Smart Contract]]
+  - Enables [[Virtual Economy]]
+  - Enables [[Digital Ownership]]
+  - Enables [[Virtual Currency]]
+  - Depends On [[Blockchain Protocol]]
+  - Depends On [[NFT Marketplace]]
+  - Related To [[Tokenization]]
 
 - ### Content
 
   ## Overview
 
-  Blockchain Gaming represents an abstract concept in the metaverse ontology hierarchy.
-
-  #### Related Concepts
-  - [[owl:Thing]]
+  Blockchain gaming integrates distributed ledger technology into game design to grant players sovereign ownership of in-game assets. Smart contracts automate trade, crafting, and reward distribution, whilst NFTs provide unique, transferable asset representations. The model introduces play-to-earn economics and interoperable asset layers across different gaming titles and metaverse platforms.
 
 - ### Provenance
   - sources::

@@ -38,16 +38,32 @@ public:: true
   "@id": "urn:ngm:class:crypto-legal-from-digi-soc",
   "@type": "Class",
   "label": "Crypto Legal from DigiSoc",
-  "definition": "Crypto Legal from DigiSoc is a blockchain and distributed systems concept and a type of blockchain.",
+  "definition": "Crypto Legal from DigiSoc examines the legal, regulatory, and governance landscape surrounding cryptocurrency and digital assets within digital society contexts. It covers UK and EU regulatory positions on crypto-assets as property, stablecoin frameworks, AML/KYC obligations, and the intersection of Web3 economics with metaverse commerce. The field addresses how legacy legal systems must adapt to support low-friction, globally scalable value exchange in virtual social spaces.",
   "domain": "blockchain",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-governance-and-regulation",
       "label": "Governance and Regulation"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"},
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:digital-commerce", "label": "Digital Commerce"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -90,7 +106,10 @@ public:: true
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires**: Blockchain, Digital Asset (legal frameworks are predicated on these technical objects)
+  - **relatedTo**: AI Regulation, Data Governance (regulatory family to which crypto law belongs)
+  - **contrastsWith**: Digital Commerce (crypto legal constraints shape but differ from conventional e-commerce law)
+  - **supports**: Verifiable Credentials (legal recognition of cryptographic identity instruments)
 
   - bridges-to:: [[Blockchain]] (bc)
 - ### Content

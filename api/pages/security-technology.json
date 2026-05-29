@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:security-technology",
   "domain": "blockchain",
-  "definition": "Security Technology is a type of Blockchain in the blockchain domain.",
+  "definition": "Security Technology refers to the hardware, software, and protocol mechanisms deployed to protect systems, data, and communications from unauthorised access, tampering, or disruption. In the blockchain and distributed systems context this encompasses cryptographic primitives, authentication schemes, digital signatures, zero-knowledge proofs, and secure enclaves that collectively enforce integrity, confidentiality, and non-repudiation across decentralised networks.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-cryptographic-primitive",
@@ -13,18 +13,45 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:cryptographic-primitive",
+        "label": "Cryptographic Primitive"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-security",
+        "label": "Cryptographic Security"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": []

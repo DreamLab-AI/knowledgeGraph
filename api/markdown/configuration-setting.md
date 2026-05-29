@@ -6,6 +6,11 @@
   - owl-role:: concept
 
 - ### Relationships
+  - **partOf** [[Spatial Computing]] — configuration settings govern runtime behaviour of spatial computing systems
+  - **enables** [[Simulation]] — quality and fidelity settings determine simulation parameters
+  - **enables** [[Real-Time Rendering]] — rendering quality settings control the real-time pipeline
+  - **relatedTo** [[Privacy]] — privacy preference settings protect user data within XR platforms
+  - **relatedTo** [[Computer Vision]] — vision pipeline parameters are a key configuration domain
   - bridges-to:: [[Computer Vision]]
 
 - ### Content

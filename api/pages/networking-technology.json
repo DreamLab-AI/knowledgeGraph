@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:networking-technology",
   "domain": "infrastructure",
-  "definition": "Networking Technology is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "The protocols, hardware, and software frameworks that enable real-time data transmission, synchronisation, and communication between distributed participants. In spatial computing contexts this encompasses WebRTC, QUIC, UDP/TCP stacks, adaptive bitrate streaming, and delta-compression techniques that support low-latency avatar synchronisation and shared world-state updates.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-network-and-comms",
@@ -13,18 +13,50 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:network-quality-metric",
+        "label": "Network Quality Metric"
+      },
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:multi-user-systems",
+        "label": "Multi User Systems"
+      },
+      {
+        "id": "urn:ngm:class:real-time",
+        "label": "Real Time"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": []

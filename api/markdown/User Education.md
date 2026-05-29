@@ -42,20 +42,52 @@ public:: true
   "@id": "urn:ngm:class:user-education",
   "@type": "Class",
   "label": "User Education",
-  "definition": "User Education is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Structured programmes, tutorials, and onboarding materials that build user competencies in operating spatial computing platforms, XR devices, and metaverse applications, including safety guidance, digital literacy, and skill development delivered through interactive or immersive pedagogic methods.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
     }
   ],
-  "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:education-metaverse",
+        "label": "Education Metaverse"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:education-technology",
+        "label": "Education Technology"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:courses-and-training",
+        "label": "Courses and Training"
+      },
+      {
+        "@id": "urn:ngm:class:education-and-ai",
+        "label": "Education and AI"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-experience",
+        "label": "Virtual Experience"
+      }
+    ]
   }
 }
 ```
@@ -87,14 +119,19 @@ public:: true
 
 
 - ### Definition
-  - User Education is a concept within the metaverse domain. Further enrichment pending.
+  - Structured programmes, tutorials, and onboarding materials that build user competencies in operating spatial computing platforms, XR devices, and metaverse applications, including safety guidance, digital literacy, and skill development delivered through interactive or immersive pedagogic methods.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:UserEducation
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Enables: [[Education Metaverse]]
+  - Uses: [[Education Technology]]
+  - Uses: [[Immersive Experience]]
+  - Related To: [[Courses and Training]]
+  - Related To: [[Education and AI]]
+  - Related To: [[Virtual Experience]]
 
 - ### Content
 

@@ -122,9 +122,10 @@ public:: true
   "@id": "urn:ngm:class:networkcomponent",
   "@type": "Class",
   "label": "Networkcomponent",
-  "definition": "Network Components are the physical and virtual hardware devices that comprise telecommunications and computer network infrastructure, enabling network connectivity, communication, and data routing between users, devices, applications, and the internet.",
+  "definition": "A Network Component is a physical or virtualised hardware device — including routers, switches, firewalls, load balancers, and wireless access points — that forms part of telecommunications and computer network infrastructure, enabling connectivity, traffic routing, security enforcement, and data exchange between users, devices, and services. Together these components implement the layers of the OSI model and realise network topologies ranging from local area networks to wide-area internet backbones.",
   "domain": "distributed-collaboration",
   "maturity": "emerging",
+  "quality": 0.75,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:dc-protocol-and-infra",
@@ -135,7 +136,30 @@ public:: true
       "label": "Network Infrastructure"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:network-architecture", "label": "Network Architecture"},
+      {"@id": "urn:ngm:class:telecommunications-infrastructure", "label": "Telecommunications Infrastructure"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:network-layer", "label": "Network Layer"},
+      {"@id": "urn:ngm:class:network-topology", "label": "Network Topology"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:communication-protocol", "label": "Communication Protocol"},
+      {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"},
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
+      {"@id": "urn:ngm:class:content-delivery-network", "label": "Content Delivery Network"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:network-latency", "label": "Network Latency"},
+      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"},
+      {"@id": "urn:ngm:class:digital-infrastructure", "label": "Digital Infrastructure"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

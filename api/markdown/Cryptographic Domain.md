@@ -322,9 +322,10 @@ public:: true
   "@id": "urn:ngm:class:cryptographic-domain",
   "@type": "Class",
   "label": "Cryptographic Domain",
-  "definition": "The CryptographicDomain represents a specialized sub-domain within blockchain technology that encompasses all cryptographic primitives, protocols, and mechanisms essential to distributed ledger systems.",
+  "definition": "The Cryptographic Domain represents a specialised sub-domain within blockchain technology encompassing all cryptographic primitives, protocols, and mechanisms essential to distributed ledger systems. It includes hash functions, digital signature schemes, zero-knowledge proof systems, threshold cryptography, and post-quantum approaches. Cryptography is not merely an implementation detail but the foundational layer enabling immutability, verifiable ownership, and privacy-preserving computation across decentralised networks.",
   "domain": "blockchain",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-cryptographic-primitive",
@@ -335,7 +336,25 @@ public:: true
       "label": "Public Key Infrastructure"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:zk-snarks", "label": "ZK-SNARKs"},
+      {"@id": "urn:ngm:class:zk-starks", "label": "ZK-STARKs"},
+      {"@id": "urn:ngm:class:ecdsa", "label": "ECDSA"},
+      {"@id": "urn:ngm:class:sha-256", "label": "SHA-256"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:cryptographic-key-management", "label": "Cryptographic Key Management"},
+      {"@id": "urn:ngm:class:privacy-preserving-blockchain", "label": "Privacy Preserving Blockchain"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -733,7 +752,10 @@ public:: true
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **hasPart**: ZK-SNARKs, ZK-STARKs, ECDSA, SHA-256 (constituent cryptographic primitives of this domain)
+  - **enables**: Blockchain, Verifiable Credentials (cryptographic primitives are the foundation that makes these possible)
+  - **uses**: Public Key Infrastructure (asymmetric key hierarchies underpin the domain)
+  - **supports**: Cryptographic Key Management, Privacy Preserving Blockchain (operational capabilities the domain provides)
 
   - bridges-to:: [[Blockchain]] (bc)
 - ### Content

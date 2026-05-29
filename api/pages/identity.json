@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:identity",
   "domain": "infrastructure",
-  "definition": "Identity is a type of Infrastructure in the infrastructure domain.",
+  "definition": "The set of attributes, credentials, and verifiable claims that uniquely identify a principal \u2014 person, organisation, or device \u2014 within a digital system, enabling authentication, authorisation, and accountability. In metaverse and Web3 contexts, identity may be self-sovereign, portable across platforms, and anchored to decentralised identifiers.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-security-and-identity",
@@ -14,11 +14,25 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +41,20 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      }
+    ]
   },
   "wikilinks": [
     {

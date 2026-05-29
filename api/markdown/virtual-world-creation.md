@@ -8,6 +8,14 @@
 
 - ### Relationships
   - is-subclass-of:: [[Digital Content Creation]]
+  - Uses [[Game Engine]]
+  - Uses [[Procedural Generation]]
+  - Uses [[Rendering Engine]]
+  - Enables [[Metaverse]]
+  - Enables [[Virtual Reality]]
+  - Has Part [[Avatar]]
+  - Has Part [[Physics Engine]]
+  - Requires [[Digital Content Creation]]
 
 - ### Content
 

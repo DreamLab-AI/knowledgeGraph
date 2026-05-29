@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:reinforcement-learning-algorithm",
   "domain": "artificial-intelligence",
-  "definition": "Reinforcement Learning Algorithms enable agents to learn optimal decision-making policies through interaction with environments, guided by reward signals.",
+  "definition": "Reinforcement Learning Algorithms enable agents to learn optimal decision-making policies through interaction with environments, guided by reward signals. Core families include value-based methods (Q-learning, DQN), policy gradient methods (REINFORCE, PPO, TRPO), and actor-critic approaches (A3C, SAC), all of which balance exploration against exploitation to maximise cumulative expected reward.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -13,20 +13,48 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:reward-function",
+        "label": "Reward Function"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:proximal-policy-optimisation",
+        "label": "Proximal Policy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
     "relatedTo": []
   },
   "wikilinks": [

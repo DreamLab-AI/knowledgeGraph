@@ -5,7 +5,9 @@
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses** → [[Contrastive Learning]], [[Data Augmentation Strategies]], [[Neural Network Architecture]]
+  - **enables** → [[Image Classification]], [[Transfer Learning]], [[Computer Vision]]
+  - **relatedTo** → [[Deep Learning]], [[Fine Tuning]]
 - ### Content
   - A self-supervised learning framework that learns visual representations through contrastive learning with data augmentation. A linear classifier on SimCLR representations achieves 76.5% top-1 accuracy, matching supervised ResNet-50 performance.
   #### Key Characteristics

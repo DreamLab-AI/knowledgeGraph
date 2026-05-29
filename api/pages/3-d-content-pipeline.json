@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:3-d-content-pipeline",
   "domain": "infrastructure",
-  "definition": "3D Content Pipeline is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "The comprehensive workflows, tools, and methodologies for creating, processing, optimising, and delivering three-dimensional assets for metaverse and spatial computing applications. A 3D content pipeline spans concept art, geometry modelling, UV mapping, PBR texturing, rigging, LOD generation, and platform-specific optimisation, integrating DCC tools, game engines, version control, and CI/CD systems to support distributed teams and continuous asset delivery.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-software-engineering",
@@ -13,12 +13,34 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:3-d-asset",
+        "label": "3D Asset"
+      },
+      {
+        "id": "urn:ngm:class:3-d-animation",
+        "label": "3D Animation"
+      },
+      {
+        "id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-and-telecollaboration",
+        "label": "Metaverse and Telecollaboration"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +49,12 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:3-d-content-generation",
+        "label": "3D Content Generation"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

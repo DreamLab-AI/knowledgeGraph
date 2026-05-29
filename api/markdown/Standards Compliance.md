@@ -48,7 +48,7 @@ public:: true
   "label": "Standards Compliance",
   "definition": "The process of ensuring that systems, processes, products, or services meet the requirements of established technical standards, industry specifications, regulatory frameworks, and governance policies applicable to metaverse and virtual world technologies.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
@@ -59,6 +59,20 @@ public:: true
       "label": "Standards"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:regulatory-framework", "label": "Regulatory Framework"},
+      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"},
+      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:compliance-monitoring", "label": "Compliance Monitoring"},
+      {"@id": "urn:ngm:class:compliance-verification", "label": "Compliance Verification"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
@@ -109,6 +123,12 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Standards]]
+  - requires [[Regulatory Framework]]
+  - requires [[Compliance Framework]]
+  - enables [[Interoperability]]
+  - enables [[Audit Trail]]
+  - uses [[Compliance Monitoring]]
+  - uses [[Compliance Verification]]
 
 - ### Content
 

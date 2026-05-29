@@ -42,16 +42,31 @@ public:: true
   "@id": "urn:ngm:class:performing-arts",
   "@type": "Class",
   "label": "Performing Arts",
-  "definition": "Performing Arts is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Time-based artistic disciplines—including theatre, dance, music, and live performance—that occur in shared space between performers and audience. In spatial computing contexts, performing arts intersect with virtual production, motion capture, and location-based experiences to create hybrid physical-digital performances that extend audience reach and deepen narrative immersion.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:motion-capture", "label": "Motion Capture"},
+      {"@id": "urn:ngm:class:virtual-production", "label": "Virtual Production"},
+      {"@id": "urn:ngm:class:spatial-audio", "label": "Spatial Audio"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
+      {"@id": "urn:ngm:class:location-based-experience", "label": "Location Based Experience"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:music-and-audio", "label": "Music and Audio"},
+      {"@id": "urn:ngm:class:creative-media-domain", "label": "Creative Media Domain"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -87,14 +102,20 @@ public:: true
 
 
 - ### Definition
-  - Performing Arts is a concept within the metaverse domain. Further enrichment pending.
+  - Time-based artistic disciplines—including theatre, dance, music, and live performance—that occur in shared space between performers and audience. In spatial computing contexts, performing arts intersect with virtual production, motion capture, and location-based experiences to create hybrid physical-digital performances that extend audience reach and deepen narrative immersion.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:PerformingArts
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses** [[Motion Capture]] — motion capture translates performer movement into digital animation and volumetric data
+  - **uses** [[Virtual Production]] — virtual production pipelines create real-time digital environments for live performance
+  - **uses** [[Spatial Audio]] — spatial audio systems reproduce directional sound for immersive audience experiences
+  - **enables** [[Immersive Experience]] — performing arts are a primary content type driving immersive experience design
+  - **enables** [[Location Based Experience]] — live performances anchor location-based digital-physical hybrid experiences
+  - **relatedTo** [[Music and Audio]] — music is a core performing art domain
+  - **relatedTo** [[Creative Media Domain]] — performing arts sit within the creative media domain
 
 - ### Content
 

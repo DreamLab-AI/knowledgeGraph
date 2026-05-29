@@ -70,24 +70,38 @@ public:: true
   "@id": "urn:ngm:class:bootstrap-node",
   "@type": "Class",
   "label": "Bootstrap Node",
-  "definition": "Network entry point node within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "A Bootstrap Node is a well-known, stable network entry point that newly joining peers contact to obtain their initial list of active participants in a peer-to-peer blockchain network. By providing a curated, long-lived set of peer addresses, bootstrap nodes solve the cold-start problem: without them a new client would have no means of discovering the network. They do not typically validate or store blocks themselves; their function is purely topological—seeding new participants into the gossip network so that subsequent peer discovery can proceed organically.",
   "domain": "blockchain",
   "maturity": "established",
+  "qualityScore": 0.8,
   "subClassOf": [
-    {
-      "@id": "urn:ngm:class:bc-network-component",
-      "label": "Network Component"
-    },
     {
       "@id": "urn:ngm:class:blockchain-entity",
       "label": "Blockchain Entity"
-    },
-    {
-      "@id": "urn:ngm:class:network-component",
-      "label": "NetworkComponent"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"},
+      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:light-node", "label": "Light Node"},
+      {"@id": "urn:ngm:class:full-node", "label": "Full Node"},
+      {"@id": "urn:ngm:class:validator-node", "label": "Validator Node"},
+      {"@id": "urn:ngm:class:gossip-protocol", "label": "Gossip Protocol"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:distributed-system", "label": "Distributed System"},
+      {"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:blockchain-infrastructure", "label": "Blockchain Infrastructure"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:blockchain-scalability", "label": "Blockchain Scalability"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -158,80 +172,20 @@ public:: true
 
 
 - ### Definition
-  - Network entry point node within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
-
-- ### Semantic Classification
-  - owl-class:: blockchain:BootstrapNode
-  - owl-role:: Object
-  - owl-inferred:: blockchain:VirtualObject
-  - belongs-to-domain:: [[CryptographicDomain]]
-  - implemented-in-layer:: [[SecurityLayer]]
+  A Bootstrap Node is a well-known, stable network entry point that newly joining peers contact to obtain their initial list of active participants in a peer-to-peer blockchain network. By providing a curated, long-lived set of peer addresses, bootstrap nodes solve the cold-start problem: without them a new client would have no means of discovering the network.
 
 - ### Relationships
-  - is-subclass-of:: [[Blockchain Entity]], [[NetworkComponent]]
-  - bridges-to:: [[AI Energy Optimisation]]
+  Bootstrap Nodes enable Peer-to-Peer Networks and Blockchain Networks by providing the initial topology seed that makes self-organising discovery possible. They are closely related to Full Nodes and Light Nodes, which are the downstream consumers of the peer lists they supply. Bootstrap Nodes work in conjunction with the Gossip Protocol, which disseminates peer addresses after initial bootstrapping. They require a Distributed System substrate and use Cryptographic Protocol handshakes to authenticate peers during the bootstrap exchange. They are part of the wider Blockchain Infrastructure and support Blockchain Scalability by ensuring new participants can join efficiently.
 
 - ### Content
 
-  ## Class Declaration
-  Declaration(Class(:BootstrapNode))
+  When a blockchain client launches for the first time it has no knowledge of the live network. Bootstrap nodes provide the answer through one of two mechanisms: a hardcoded DNS seed list (e.g. Bitcoin's `seed.bitcoin.sipa.be`) or a list of well-known IP addresses compiled into the client software. The client contacts one or more of these entry points, requests a sample of known active peers, and then begins building its own routing table through repeated peer-exchange messages.
 
-  ## Subclass Relationships
-  SubClassOf(:BootstrapNode :NetworkComponent)
-  SubClassOf(:BootstrapNode :BlockchainEntity)
+  Security considerations are significant. Because bootstrap nodes are publicly known and trusted at startup, they are high-value targets for eclipse attacks—attempts by an adversary to isolate a client by populating its peer list exclusively with attacker-controlled addresses. Mitigations include hardcoding multiple independent DNS seeds operated by different parties, storing previously seen peers in a local database (addr.dat in Bitcoin), and using randomised peer selection to prevent deterministic partitioning.
 
-  ## Essential Properties
-  SubClassOf(:BootstrapNode
-    (ObjectSomeValuesFrom :partOf :Blockchain))
+  Bootstrap nodes should not be confused with long-term "anchor" peers or supernodes in some networks. Their role terminates once the joining node has established a sufficient number of independent connections: typically eight outbound connections in Bitcoin. After that, peer discovery continues autonomously via addr/addrv2 gossip messages without further reliance on the original bootstrap sources.
 
-  SubClassOf(:BootstrapNode
-    (ObjectSomeValuesFrom :hasProperty :Property))
-
-  ## Data Properties
-  DataPropertyAssertion(:hasIdentifier :BootstrapNode "BC-0095"^^xsd:string)
-  DataPropertyAssertion(:hasAuthorityScore :BootstrapNode "1.0"^^xsd:decimal)
-  DataPropertyAssertion(:isFoundational :BootstrapNode "true"^^xsd:boolean)
-
-  ## Object Properties
-  ObjectPropertyAssertion(:enablesFeature :BootstrapNode :BlockchainFeature)
-  ObjectPropertyAssertion(:relatesTo :BootstrapNode :RelatedConcept)
-
-  ## Annotations
-  AnnotationAssertion(rdfs:label :BootstrapNode "Bootstrap Node"@en)
-  AnnotationAssertion(rdfs:comment :BootstrapNode
-    "Network entry point node"@en)
-  AnnotationAssertion(dct:description :BootstrapNode
-    "Foundational blockchain concept with formal ontological definition"@en)
-  AnnotationAssertion(:termID :BootstrapNode "BC-0095")
-  AnnotationAssertion(:priority :BootstrapNode "1"^^xsd:integer)
-  AnnotationAssertion(:category :BootstrapNode "network-security"@en)
-  )
-      ```
-
-  - ## About Bootstrap Node
-
-  - Network entry point node within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
-  - ### Key Characteristics
-    - 1. **Definitional Property**: Core defining characteristic
-    - 2. **Functional Property**: Operational behavior
-    - 3. **Structural Property**: Compositional elements
-    - 4. **Security Property**: Security guarantees provided
-    - 5. **Performance Property**: Efficiency considerations
-  - ### Technical Components
-    - **Implementation**: How concept is realized technically
-    - **Verification**: Methods for validating correctness
-    - **Interaction**: Relationships with other components
-    - **Constraints**: Technical limitations and requirements
-  - ### Use Cases
-    - **1. Core Blockchain Operation**
-    - **Application**: Fundamental blockchain functionality
-    - **Example**: Practical implementation in major blockchains
-    - **Requirements**: Technical prerequisites
-    - **Benefits**: Value provided to blockchain systems
-  - ### Standards & References
-    - [[ISO/IEC 23257:2021]] - Blockchain and distributed ledger technologies
-    - [[IEEE 2418.1]] - Blockchain and distributed ledger technologies
-    - [[NIST NISTIR]] - Blockchain and distributed ledger technologies
+  In permissioned blockchain frameworks such as Hyperledger Fabric, the analogous role is played by orderer discovery and gossip anchor peers, which serve the same topological function within a controlled membership environment.
 
 - ### Provenance
   - sources:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]

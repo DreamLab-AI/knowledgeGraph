@@ -1378,7 +1378,7 @@ public:: true
   "@id": "urn:ngm:class:variational-autoencoders",
   "@type": "Class",
   "label": "Variational Autoencoders",
-  "definition": "Generative neural network architecture combining autoencoders with variational inference for probabilistic latent space modeling and data generation",
+  "definition": "Generative neural network architecture combining autoencoders with variational inference, learning a probabilistic latent space via an encoder that outputs distribution parameters and a decoder that reconstructs data by sampling from that distribution. Trained by maximising the Evidence Lower BOund (ELBO), which balances reconstruction fidelity and KL-divergence regularisation.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -1391,7 +1391,30 @@ public:: true
       "label": "Generative Model"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:encoder", "label": "Encoder"},
+      {"@id": "urn:ngm:class:decoder", "label": "Decoder"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:generative-adversarial-network", "label": "Generative Adversarial Network"},
+      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
+      {"@id": "urn:ngm:class:autoencoder", "label": "Autoencoder"},
+      {"@id": "urn:ngm:class:deep-generative-model", "label": "Deep Generative Model"},
+      {"@id": "urn:ngm:class:latent-diffusion", "label": "Latent Diffusion"},
+      {"@id": "urn:ngm:class:vae", "label": "VAE"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:bayesian-inference", "label": "Bayesian Inference"},
+      {"@id": "urn:ngm:class:variational-inference", "label": "Variational Inference"},
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
+      {"@id": "urn:ngm:class:embedding-model", "label": "Embedding Model"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

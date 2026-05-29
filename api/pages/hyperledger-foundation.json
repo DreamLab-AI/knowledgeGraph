@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:hyperledger-foundation",
   "domain": "blockchain",
-  "definition": "A Linux Foundation umbrella project hosting enterprise-grade, permissioned distributed ledger frameworks and tools such as Fabric, Besu, and Aries.",
+  "definition": "The Hyperledger Foundation is an open-source collaborative initiative hosted by the Linux Foundation that develops and maintains enterprise-grade, permissioned distributed ledger frameworks and supporting toolkits. Its portfolio includes Hyperledger Fabric (a modular, pluggable DLT framework for enterprise supply-chain and financial applications), Hyperledger Besu (an Ethereum-compatible client for public and private networks), Hyperledger Aries (a toolkit for decentralised identity and verifiable credentials), and Hyperledger Cacti (an interoperability framework). The Foundation operates under an open-governance model with technical steering committees and a diverse membership spanning technology companies, financial institutions, and governments.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-governance-and-regulation",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:enterprise-blockchain",
+        "label": "Enterprise Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:permissioned-blockchain",
+        "label": "Permissioned Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:supply-chain-blockchain",
+        "label": "Supply Chain Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:hyperledger-fabric",
+        "label": "Hyperledger Fabric"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

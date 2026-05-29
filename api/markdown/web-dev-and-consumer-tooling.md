@@ -1,12 +1,14 @@
 - ### Definition
-  - WebDev and Consumer Tooling is a concept within the ngm domain.
+  - The ecosystem of frameworks, deployment platforms, low-code builders, and developer utilities used to construct and ship web applications and AI-assisted consumer products. Encompasses front-end frameworks (React Three Fiber, Streamlit, FastHTML), deployment pipelines (Vercel), and no-code/low-code AI builders enabling rapid product prototyping.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:WebDevAndConsumerTooling
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **Enables**: [[Code Generation]], [[Image Generation]] (via diffusion tooling)
+  - **Uses**: [[Web Technology]], [[Prompt Engineering]] (AI-assisted development)
+  - **Part-of**: [[Software Engineering]] discipline
 
 - ### Content
   - [SaaS WebApp with Streamlit & Python: Quick Guide | Level Up Coding (gitconnected.com)](https://levelup.gitconnected.com/build-a-data-science-saas-app-with-just-python-a-streamlit-guide-240e0a56fc86)

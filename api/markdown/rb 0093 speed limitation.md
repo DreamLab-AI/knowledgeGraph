@@ -42,9 +42,9 @@ public:: true
   "@id": "urn:ngm:class:rb-0093-speed-limitation",
   "@type": "Class",
   "label": "rb 0093 speed limitation",
-  "definition": "speed limitation is a robotics and autonomous systems concept and a type of Robot Safety.",
+  "definition": "Speed limitation is a collaborative robotics safety function that restricts the maximum velocity of robot joints or the tool centre point to a defined safe threshold, as specified by ISO/TS 15066 and ISO 10218. It is a key mechanism for enabling safe human-robot collaboration in shared workspaces by ensuring robot motion cannot exceed speeds that would cause unacceptable injury risk upon contact. Speed limitation operates continuously or is activated when a human is detected within a monitored zone.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-safety-and-standards",
@@ -55,7 +55,26 @@ public:: true
       "label": "Robot Safety"
     }
   ],
-  "quality": 0.5,
+  "quality": 0.7,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:rb-0105-speed-and-separation-monitoring", "label": "rb 0105 speed and separation monitoring"},
+      {"@id": "urn:ngm:class:rb-0094-power-and-force-limiting", "label": "rb 0094 power and force limiting"},
+      {"@id": "urn:ngm:class:rb-0092-protective-stop", "label": "rb 0092 protective stop"},
+      {"@id": "urn:ngm:class:rb-0103-collaborative-operation", "label": "rb 0103 collaborative operation"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:rb-0072-encoder", "label": "rb 0072 encoder"},
+      {"@id": "urn:ngm:class:rb-0055-velocity-control", "label": "rb 0055 velocity control"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:iso-ts-15066", "label": "ISO TS 15066"},
+      {"@id": "urn:ngm:class:rb-0087-safety-standard", "label": "rb 0087 safety standard"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:rb-0007-collaborative-robot", "label": "rb 0007 collaborative robot"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -91,7 +110,7 @@ public:: true
 
 
 - ### Definition
-  - ### Primary Definition
+  - **Speed Limitation** (RB-0093) is a safety function that caps robot velocity to a safe threshold under ISO/TS 15066, enabling human-robot collaboration without physical barriers. It works in conjunction with speed-and-separation monitoring and power-and-force limiting to provide layered protective behaviour.
 
 - ### Semantic Classification
   - owl-class:: robotics:SpeedLimitation
@@ -99,11 +118,15 @@ public:: true
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - relatedTo:: rb 0105 speed and separation monitoring, rb 0094 power and force limiting, rb 0092 protective stop
+  - requires:: rb 0072 encoder, rb 0055 velocity control
+  - standardizedBy:: ISO TS 15066
 
 - ### Content
   - ### Primary Definition
-  **Speed Limitation** - Speed Limitation in robotics systems
+  **Speed Limitation** (RB-0093) restricts the maximum operational speed of a robot's joints or tool centre point to a predefined safe value. Under ISO/TS 15066, this threshold is derived from biomechanical injury data and the minimum distance between robot and human at the moment of detection.
+
+  Speed limitation is one of the four collaborative operation modes defined in ISO/TS 15066, alongside safety-rated monitored stop, hand guiding, and speed-and-separation monitoring. It is frequently combined with power-and-force limiting to provide defence-in-depth: even if contact occurs at the limited speed, the resulting force is bounded within acceptable injury thresholds.
   - ### Original Content
 		- ```
   # RB-0093: Speed Limitation

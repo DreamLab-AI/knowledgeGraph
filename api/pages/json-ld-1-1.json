@@ -5,29 +5,61 @@
   "public": true,
   "classIri": "urn:ngm:class:json-ld-1-1",
   "domain": "artificial-intelligence",
-  "definition": "JSON-LD 1.1 is a W3C specification for encoding Linked Data in JSON format, using contexts to map document terms to IRIs and enabling interoperable, machine-readable semantic data on the web.",
+  "definition": "JSON-LD 1.1 is a W3C Recommendation that extends JSON-LD 1.0 with features including scoped contexts, type-scoped contexts, and propagation control, enabling richer mapping of JSON document terms to IRIs within RDF-based knowledge systems. It provides a framing algorithm for reshaping a flat graph into a tree, and supports compaction and expansion algorithms that allow any conformant document to be normalised to a canonical form. JSON-LD 1.1 underpins interoperable semantic data exchange on the Web and is the serialisation format used by the Verifiable Credentials and Activity Streams standards.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
+    },
+    {
+      "id": "urn:ngm:class:semantic-web-standards",
+      "label": "Semantic Web Standards"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:json-ld",
+        "label": "JSON-LD"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

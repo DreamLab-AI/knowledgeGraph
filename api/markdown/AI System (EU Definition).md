@@ -54,15 +54,30 @@ public:: true
   "@id": "urn:ngm:class:ai-system-eu-definition",
   "@type": "Class",
   "label": "AI System (EU Definition)",
-  "definition": "A machine-based system that can operate autonomously and adapt after deployment, generating outputs like predictions or decisions.",
+  "definition": "Under EU AI Act Article 3(1), a machine-based system designed to operate with varying levels of autonomy, capable of adapting after deployment, and generating outputs such as predictions, content, recommendations, or decisions that can influence physical or virtual environments. This definition establishes the regulatory scope of the AI Act and aligns with the 2024 OECD AI Principles, distinguishing AI systems from traditional software by their inferential and adaptive capabilities.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
     }
   ],
+  "relations": {
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:eu-ai-act", "label": "EU AI Act"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:ai-risk-management", "label": "AI Risk Management"},
+      {"@id": "urn:ngm:class:human-oversight", "label": "Human Oversight"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:ai-provider", "label": "AI Provider"},
+      {"@id": "urn:ngm:class:ai-lifecycle", "label": "AI Lifecycle"},
+      {"@id": "urn:ngm:class:general-purpose-ai-model", "label": "General Purpose AI Model"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -122,7 +137,9 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - bridges-to:: [[AI Agent System]]
+  - standardizedBy:: [[EU AI Act]]
+  - requires:: [[AI Risk Management]], [[Human Oversight]]
+  - relatedTo:: [[AI Provider]], [[AI Lifecycle]], [[General Purpose AI Model]]
 
 - ### Content
   - A machine-based system that can operate autonomously and adapt after deployment, generating outputs like predictions or decisions.

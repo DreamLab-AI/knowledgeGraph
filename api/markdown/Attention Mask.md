@@ -46,15 +46,32 @@ public:: true
   "@id": "urn:ngm:class:attention-mask",
   "@type": "Class",
   "label": "Attention Mask",
-  "definition": "A mechanism that controls which positions in a sequence can attend to which other positions, typically implemented by adding large negative values before softmax to effectively zero out unwanted attention weights.",
+  "definition": "A mechanism that controls which positions in a sequence can attend to which other positions, typically implemented by adding large negative values before softmax to zero out unwanted attention weights; used for causal masking in autoregressive decoders and padding masking in batched variable-length sequences.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-model-architecture",
       "label": "AI Model Architecture"
     }
   ],
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
+      {"@id": "urn:ngm:class:albert", "label": "ALBERT"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:neural-network-architecture", "label": "Neural Network Architecture"},
+      {"@id": "urn:ngm:class:bart", "label": "BART"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -104,7 +121,11 @@ public:: true
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 
 - ### Relationships
-  - bridges-to:: [[Telecollaboration]] (domain: tc)
+  - bridges-to:: [[Telecollaboration]]
+  - partOf:: [[Transformer Architecture]]
+  - uses:: [[Natural Language Processing]]
+  - enables:: [[Large Language Models]], [[ALBERT]]
+  - relatedTo:: [[Neural Network Architecture]], [[BART]]
 
 - ### Content
   - A mechanism that controls which positions in a sequence can attend to which other positions, typically implemented by adding large negative values before softmax to effectively zero out unwanted attention weights.

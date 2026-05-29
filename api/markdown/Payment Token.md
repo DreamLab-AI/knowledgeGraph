@@ -46,7 +46,7 @@ public:: true
   "@id": "urn:ngm:class:payment-token",
   "@type": "Class",
   "label": "Payment Token",
-  "definition": "Payment Token is a type of Cryptocurrency Token in the blockchain domain.",
+  "definition": "A Payment Token is a cryptocurrency token whose primary purpose is to serve as a medium of exchange and store of value for peer-to-peer and merchant payments, distinguished from utility tokens (access rights) and security tokens (equity/asset claims). Examples include Bitcoin, Litecoin, and CBDC-backed digital currencies.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -59,7 +59,25 @@ public:: true
       "label": "Cryptocurrency Token"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:utility-token", "label": "Utility Token"},
+      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"},
+      {"@id": "urn:ngm:class:stablecoin", "label": "Stablecoin"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:cryptocurrency", "label": "Cryptocurrency"},
+      {"@id": "urn:ngm:class:digital-currency", "label": "Digital Currency"},
+      {"@id": "urn:ngm:class:cbdcs", "label": "CBDCs"},
+      {"@id": "urn:ngm:class:lightning-network", "label": "Lightning Network"},
+      {"@id": "urn:ngm:class:tokenomics", "label": "Tokenomics"},
+      {"@id": "urn:ngm:class:transaction-fee", "label": "Transaction Fee"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:decentralized-finance-de-fi", "label": "Decentralized Finance (DeFi)"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

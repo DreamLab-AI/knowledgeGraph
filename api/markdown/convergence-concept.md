@@ -6,7 +6,10 @@
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires**: Interoperability, OpenXR (shared protocols underpin convergence)
+  - **enables**: Telecollaboration, Digital Twin (unified platforms unlock these downstream concepts)
+  - **dependsOn**: Spatial Computing (the primary substrate for convergent XR/physical-digital experiences)
+  - **relatedTo**: Cross Domain Bridge (bridges between heterogeneous systems are a prerequisite for convergence)
 
   - bridges-to:: [[Blockchain]] (bc)
 - ### Content

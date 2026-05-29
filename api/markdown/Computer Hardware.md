@@ -66,21 +66,59 @@ public:: true
   "@id": "urn:ngm:class:computer-hardware",
   "@type": "Class",
   "label": "Computer Hardware",
-  "definition": "Computer Hardware for AI refers to the physical computing components optimized for artificial intelligence workloads, particularly neural network training and inference.",
+  "definition": "Physical computing components optimised for artificial intelligence and spatial computing workloads, encompassing GPUs, TPUs, FPGAs, ASICs, and neuromorphic chips. Modern AI hardware emphasises parallel matrix processing, high-bandwidth memory, mixed-precision arithmetic, and energy-efficient inference at scale, enabling both large-model training and real-time rendering in immersive applications.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
-  "quality": 0.35,
+  "maturity": "emerging",
+  "qualityScore": 0.7,
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure (Category)"
+    }
+  ],
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
   },
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:cat-ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
-    }
-  ]
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "@id": "urn:ngm:class:training",
+        "label": "Training"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      }
+    ]
+  }
 }
 ```
 
@@ -148,8 +186,10 @@ public:: true
   - owl-role:: concept
 
 - ### Relationships
-  - is-subclass-of:: ['owl:Thing']
-  - bridges-to:: [[Autonomous Robot]], [[Blockchain]], [[Digital Twin]]
+  - Enables [[Deep Learning]], [[GPU Compute]]
+  - Uses [[Hardware Acceleration]]
+  - Supports [[Digital Twin]], [[Autonomous Robot]]
+  - Related to [[Distributed Computing]], [[Training]]
 
 - ### Content
 

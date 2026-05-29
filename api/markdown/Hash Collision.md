@@ -66,9 +66,10 @@ public:: true
   "@id": "urn:ngm:class:hash-collision",
   "@type": "Class",
   "label": "Hash Collision",
-  "definition": "Two inputs producing same hash within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "A hash collision occurs when two distinct inputs produce the same output from a cryptographic hash function, violating the collision-resistance property that is essential to blockchain data integrity. In blockchain systems, collision resistance ensures that no adversary can craft two different transactions or blocks yielding the same hash digest, making Merkle tree roots and block headers tamper-evident. While collisions are computationally infeasible for production-grade functions such as SHA-256, their theoretical possibility drives ongoing cryptographic research and post-quantum security planning.",
   "domain": "blockchain",
   "maturity": "established",
+  "qualityScore": 0.8,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-cryptographic-primitive",
@@ -83,7 +84,30 @@ public:: true
       "label": "CryptographicPrimitive"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
+      {"@id": "urn:ngm:class:cryptographic-hash", "label": "Cryptographic Hash"},
+      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"},
+      {"@id": "urn:ngm:class:cryptographic-security", "label": "Cryptographic Security"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:collision-resistance", "label": "Collision Resistance"},
+      {"@id": "urn:ngm:class:cryptographic-commitment", "label": "Cryptographic Commitment"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:cryptographic-primitive", "label": "CryptographicPrimitive"},
+      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:adversarial-attack", "label": "Adversarial Attack"},
+      {"@id": "urn:ngm:class:attack-vector", "label": "Attack Vector"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:cryptographic-domain", "label": "Cryptographic Domain"},
+      {"@id": "urn:ngm:class:cryptography-security-and-privacy", "label": "Cryptography Security and Privacy"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -149,7 +173,7 @@ public:: true
 
 
 - ### Definition
-  - Two inputs producing same hash within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
+  A hash collision occurs when two distinct inputs produce the same output from a cryptographic hash function, violating the collision-resistance property that is essential to blockchain data integrity. In blockchain systems, collision resistance ensures that no adversary can craft two different transactions or blocks yielding the same hash digest, making Merkle tree roots and block headers tamper-evident. While collisions are computationally infeasible for production-grade functions such as SHA-256, their theoretical possibility drives ongoing cryptographic research and post-quantum security planning.
 
 - ### Semantic Classification
   - owl-class:: blockchain:HashCollision
@@ -160,6 +184,11 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Blockchain Entity]], [[CryptographicPrimitive]]
+  - relatedTo:: [[Cryptographic Hash Function]], [[Cryptographic Hash]], [[Blockchain Transaction]], [[Cryptographic Security]]
+  - contrastsWith:: [[Collision Resistance]], [[Cryptographic Commitment]]
+  - requires:: [[CryptographicPrimitive]], [[Cryptography]]
+  - enables:: [[Adversarial Attack]], [[Attack Vector]]
+  - partOf:: [[Cryptographic Domain]], [[Cryptography Security and Privacy]]
 
 - ### Content
 
@@ -222,6 +251,18 @@ public:: true
     - [[ISO/IEC 23257:2021]] - Blockchain and distributed ledger technologies
     - [[IEEE 2418.1]] - Blockchain and distributed ledger technologies
     - [[NIST NISTIR]] - Blockchain and distributed ledger technologies
+
+  ### Hash Collision in Cryptographic Context
+
+  A hash collision is the cryptographic event in which two distinct messages M1 ≠ M2 satisfy H(M1) = H(M2) for a hash function H. The birthday paradox implies that for a hash output of n bits, a collision can be found in approximately 2^(n/2) operations on average, far fewer than the 2^n operations required for a preimage attack. For SHA-256 (256-bit output), collision attacks require ~2^128 work, well beyond current computational capacity, but not provably impossible.
+
+  ### Impact on Blockchain Security
+
+  In blockchain systems, hash collision resistance is the property that protects block headers, transaction IDs, and Merkle tree roots from forgery. If an attacker could find collisions in the block header hash function, they could create two different blocks with identical hashes, enabling double-spend attacks and chain reorganisation. The SHA-256 function used in Bitcoin and many other chains has no publicly known practical collisions, but the MD5 and SHA-1 vulnerabilities demonstrate that even widely deployed hash functions can become exploitable with advances in cryptanalysis.
+
+  ### Post-Quantum Considerations
+
+  Grover's algorithm on a sufficiently large quantum computer reduces the effective security of SHA-256 from 128-bit to 64-bit collision resistance. Blockchain ecosystems are beginning to evaluate post-quantum hash functions (e.g., SHA-3, BLAKE3) and quantum-resistant signature schemes to maintain long-term collision resistance guarantees.
 
 - ### Provenance
   - sources:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]

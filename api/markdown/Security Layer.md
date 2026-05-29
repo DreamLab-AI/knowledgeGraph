@@ -33,20 +33,56 @@ public:: true
   "@id": "urn:ngm:class:security-layer",
   "@type": "Class",
   "label": "Security Layer",
-  "definition": "The SecurityLayer represents the abstraction level of security-focused implementations, cryptographic mechanisms, threat models, security protocols, and defensive systems that protect blockchain and distributed systems from attacks, ensure data integrity and authenticity, provide confidentiality ...",
+  "definition": "The Security Layer is the implementation-focused abstraction level that encapsulates cryptographic mechanisms, security protocols, threat models, and defensive architectures protecting blockchain and distributed systems from attacks whilst ensuring data integrity, authenticity, and confidentiality. It encompasses concrete implementations such as hash functions, digital signatures, zero-knowledge proofs, access control, and formal verification, distinct from higher-level conceptual security properties.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-security-and-identity",
       "label": "Security and Identity"
     }
   ],
-  "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:data-security",
+        "label": "Data Security"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-security",
+        "label": "Cryptographic Security"
+      }
+    ]
   }
 }
 ```
@@ -79,7 +115,13 @@ public:: true
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Has part [[Cryptography]]
+  - Has part [[Hash Function]]
+  - Has part [[Digital Signature]]
+  - Uses [[Zero-Knowledge Proof]]
+  - Uses [[Formal Verification]]
+  - Supports [[Data Security]]
+  - Supports [[Cryptographic Security]]
 
 - ### Content
   - **Classification**

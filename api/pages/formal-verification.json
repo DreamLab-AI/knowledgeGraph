@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:formal-verification",
   "domain": "artificial-intelligence",
-  "definition": "Formal verification is the application of mathematical proof techniques to rigorously establish that a system or algorithm satisfies its specified correctness properties under all possible inputs.",
+  "definition": "Formal verification is the use of mathematical proof techniques \u2014 including model checking, theorem proving, and abstract interpretation \u2014 to rigorously establish that a system, algorithm, or smart contract satisfies a specified set of correctness or safety properties under all possible inputs and executions. In software and hardware, formal verification provides guarantees beyond testing by exhaustively exploring the state space or constructing machine-checkable proofs. In the context of AI governance and smart contracts, formal verification is increasingly applied to verify safety invariants, access controls, and protocol correctness in blockchain systems and, experimentally, in neural network components.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:interpretability",
+        "label": "Interpretability"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

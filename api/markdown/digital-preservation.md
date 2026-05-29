@@ -1,5 +1,5 @@
 - ### Definition
-  - Digital Preservation is a concept within the metaverse domain. Further enrichment pending.
+  - Digital Preservation encompasses strategies, standards, and technical processes that ensure long-term accessibility and integrity of digital content, including format migration, checksumming, redundant storage, and provenance tracking. It increasingly leverages blockchain for immutable audit trails and decentralised storage for resilience.
 
 bridges-to:: [[Blockchain]]
 
@@ -8,7 +8,12 @@ bridges-to:: [[Blockchain]]
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses [[Blockchain]]
+  - uses [[Metadata Standard]]
+  - enables [[Digital Asset Management]]
+  - relatedTo [[Archival Standards]]
+  - relatedTo [[Storage Infrastructure]]
+  - relatedTo [[3D File Format]]
 
 - ### Content
 

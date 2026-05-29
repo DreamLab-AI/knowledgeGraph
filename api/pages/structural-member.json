@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:structural-member",
   "domain": "robotics",
-  "definition": "Structural Member is a type of Robotics in the robotics domain.",
+  "definition": "A Structural Member is a discrete load-bearing component of a robotic system's physical frame, such as a link, beam, bracket, or chassis element, that transmits forces and torques between joints or actuators. Structural members define the kinematic chain of a robot and their geometric and material properties directly constrain workspace, payload, and dynamic performance.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
@@ -13,8 +13,8 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,11 +23,39 @@
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:systems-engineering",
+        "label": "Systems Engineering"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:robo-navigation-and-planning",
+        "label": "Navigation and Planning"
+      },
+      {
+        "id": "urn:ngm:class:robo-safety-and-standards",
+        "label": "Safety and Standards"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:robo-actuation-and-control",
+        "label": "Actuation and Control"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:taxonomic-framework",
+        "label": "Taxonomic Framework"
+      },
+      {
+        "id": "urn:ngm:class:robo-robot-type",
+        "label": "Robot Type"
+      }
+    ]
   },
   "wikilinks": [
     {

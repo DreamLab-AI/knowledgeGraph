@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:virtual-world-building",
   "@type": "Class",
   "label": "Virtual World Building",
-  "definition": "The process of creating 3D virtual environments for metaverse platforms, games, and simulations using tools ranging from no-code platforms to professional game engines, enabling the construction of immersive digital spaces with customizable assets, terrain, and interactive elements.",
+  "definition": "The process of creating 3D virtual environments for metaverse platforms, games, and simulations using tools ranging from no-code drag-and-drop builders to professional game engines, enabling the construction of immersive digital spaces with customisable assets, terrain, physics, and interactive elements. Generative AI is rapidly lowering barriers through voice and text-prompt environment generation, while Unity and Unreal Engine remain the professional standard for complex, large-scale world creation.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -59,7 +60,24 @@ public:: true
       "label": "3D Design"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"},
+      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:virtual-world-platform", "label": "Virtual World Platform"},
+      {"@id": "urn:ngm:class:virtual-environment-creation", "label": "Virtual Environment Creation"},
+      {"@id": "urn:ngm:class:virtual-destination", "label": "Virtual Destination"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:3-d-modeling", "label": "3D Modeling"},
+      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:virtual-world-creation", "label": "Virtual World Creation"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -109,6 +127,10 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[3D Design]]
+  - requires:: [[Game Engine]], [[Real-Time Rendering]]
+  - enables:: [[Virtual World Platform]], [[Virtual Environment Creation]], [[Virtual Destination]]
+  - uses:: [[3D Modeling]], [[Immersive Experience]]
+  - relatedTo:: [[Virtual World Creation]]
 
 - ### Content
 

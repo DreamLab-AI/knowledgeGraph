@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:blockchain-transaction",
   "domain": "blockchain",
-  "definition": "Blockchain Transaction is a blockchain and distributed systems concept and a type of blockchain.",
+  "definition": "A Blockchain Transaction is an atomic, cryptographically signed state-change operation recorded on a distributed ledger, representing value transfer, smart contract execution, or data mutation. Each transaction is validated by network nodes according to the active consensus algorithm, included in a block, and made immutable through chaining. Transaction structure, fee markets, and confirmation semantics vary across UTXO-based systems such as Bitcoin and account-based systems such as Ethereum.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-protocol-and-consensus",
@@ -14,11 +14,33 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -26,7 +48,12 @@
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
     "relatedTo": []
   },
   "wikilinks": [

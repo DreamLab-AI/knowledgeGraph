@@ -42,7 +42,7 @@ public:: true
   "@id": "urn:ngm:class:predictive-personalization",
   "@type": "Class",
   "label": "Predictive Personalization",
-  "definition": "Predictive Personalization is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "The use of machine learning models to anticipate individual user preferences and dynamically tailor content, recommendations, interfaces, and experiences before an explicit request is made. Systems combine behavioural analytics, user profiling, and predictive models to deliver contextually relevant personalisation at scale.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -51,7 +51,26 @@ public:: true
       "label": "AI Application"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:behavioral-analytics", "label": "Behavioral Analytics"},
+      {"@id": "urn:ngm:class:machine-learning-model", "label": "Machine Learning Model"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:recommendation-engine", "label": "Recommendation Engine"},
+      {"@id": "urn:ngm:class:predictive-analytics", "label": "Predictive Analytics"},
+      {"@id": "urn:ngm:class:user-experience", "label": "User Experience"},
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:user-experience", "label": "User Experience"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -98,7 +117,9 @@ public:: true
   - <!-- No relationships defined -->
 
 - ### Content
-  Predictive Personalization — content pending enrichment.
+  Predictive personalisation systems construct and continuously update user models from implicit signals—click patterns, dwell time, purchase history, session context—to forecast the next most relevant item, action, or interface state before a user explicitly requests it. Collaborative filtering, content-based models, and hybrid neural architectures power production systems at streaming, e-commerce, and social media platforms.
+
+  The distinction from reactive recommendation is temporality: predictive personalisation acts proactively, pre-loading or pre-ranking candidates before a request arrives. This requires low-latency inference pipelines and careful balancing of exploration (surfacing novel items) against exploitation (optimising known preferences), with privacy implications arising from the depth of behavioural modelling required.
 
 - ### Provenance
   - sources:: Chimera Prime Research

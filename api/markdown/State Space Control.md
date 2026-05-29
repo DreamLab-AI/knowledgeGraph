@@ -46,7 +46,7 @@ public:: true
   "@id": "urn:ngm:class:state-space-control",
   "@type": "Class",
   "label": "State Space Control",
-  "definition": "State space control uses modern control theory with state feedback.",
+  "definition": "State Space Control is a modern control theory framework that describes dynamic systems as a set of first-order differential equations over an internal state vector, enabling full-state feedback design via techniques such as pole placement, LQR, and model predictive control. Unlike classical frequency-domain methods, state-space representations directly support multi-input multi-output systems, observer design, and optimal control synthesis, making them foundational for robotic and aerospace applications.",
   "domain": "robotics",
   "maturity": "established",
   "subClassOf": [
@@ -59,7 +59,27 @@ public:: true
       "label": "Feedback Control"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:kalman-filter", "label": "Kalman Filter"},
+      {"@id": "urn:ngm:class:optimal-control", "label": "Optimal Control"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:pid-control", "label": "PID Control"},
+      {"@id": "urn:ngm:class:control-theory", "label": "Control Theory"},
+      {"@id": "urn:ngm:class:adaptive-control", "label": "Adaptive Control"},
+      {"@id": "urn:ngm:class:control-system", "label": "Control System"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:multirotor-uav", "label": "Multirotor UAV"},
+      {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"},
+      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:state-space-and-other-approaches", "label": "State Space and Other Approaches"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

@@ -5,22 +5,55 @@
   "public": true,
   "classIri": "urn:ngm:class:metaverse-technology",
   "domain": "spatial-computing",
-  "definition": "The foundational technology domain encompassing persistent, synchronous 3D virtual worlds, augmented reality environments, spatial computing platforms, and immersive internet infrastructure that enable shared experiences with interoperable digital assets, persistent identity systems, and real-tim...",
+  "definition": "The foundational technology domain encompassing persistent, synchronous 3D virtual worlds, augmented reality environments, spatial computing platforms, and immersive internet infrastructure that enable shared experiences with interoperable digital assets, persistent identity systems, and real-time social interaction across physical and virtual boundaries.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
-    },
-    {
-      "id": "urn:ngm:class:technology-domain",
-      "label": "Technology Domain"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:virtual-world",
+        "label": "Virtual World"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:avatar-system",
+        "label": "Avatar System"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
+      },
+      {
+        "id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-infrastructure",
+        "label": "Metaverse Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      }
+    ],
     "requires": [],
     "enables": [],
     "dependsOn": [],
@@ -31,7 +64,24 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-platform",
+        "label": "Metaverse Platform"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:virtual-world-traversal",
+        "label": "Virtual World Traversal"
+      }
+    ]
   },
   "wikilinks": [
     {

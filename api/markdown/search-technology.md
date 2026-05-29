@@ -1,12 +1,17 @@
 - ### Definition
-  - Search Technology is a concept within the ai domain. Further enrichment pending.
+  - Search technology encompasses the algorithms, indexing systems, and retrieval mechanisms that enable efficient discovery of relevant information across structured and unstructured data sources. Modern search systems combine inverted indices, vector embeddings, and machine learning ranking models to support keyword, semantic, and hybrid queries at scale.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:SearchTechnology
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses [[Embedding Model]]
+  - Uses [[Natural Language Processing]]
+  - Enables [[Information Retrieval]]
+  - Enables [[Enterprise Search]]
+  - Depends on [[Machine Learning]]
+  - Bridges to [[Knowledge Graph]]
 
 - ### Content
 

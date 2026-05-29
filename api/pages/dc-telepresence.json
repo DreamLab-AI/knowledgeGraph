@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:dc-telepresence",
   "domain": "distributed-collaboration",
-  "definition": "Intermediate taxonomy category for telepresence concepts within the distributed collaboration domain.",
+  "definition": "Telepresence is the distributed-collaboration taxonomy hub covering technologies that create a convincing sense of physical co-presence across remote locations \u2014 spanning robotic telepresence, haptic-feedback telepresence, virtual-reality telepresence, and social presence theory. It is a peer category to Workspace Tools and Communication Technology within the distributed collaboration domain.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:distributed-collaboration",
@@ -13,21 +13,77 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
+  "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:robotic-telepresence",
+        "label": "Robotic Telepresence"
+      },
+      {
+        "id": "urn:ngm:class:haptic-feedback-telepresence",
+        "label": "Haptic Feedback Telepresence"
+      },
+      {
+        "id": "urn:ngm:class:teleoperation-systems",
+        "label": "Teleoperation Systems"
+      },
+      {
+        "id": "urn:ngm:class:social-presence",
+        "label": "Social Presence"
+      },
+      {
+        "id": "urn:ngm:class:spatial-presence",
+        "label": "Spatial Presence"
+      },
+      {
+        "id": "urn:ngm:class:presence",
+        "label": "Presence"
+      },
+      {
+        "id": "urn:ngm:class:immersive-communication",
+        "label": "Immersive Communication"
+      }
+    ],
     "requires": [],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:metaverse-telepresence-bridge",
+        "label": "Metaverse-Telepresence Bridge"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:haptics",
+        "label": "Haptics"
+      },
+      {
+        "id": "urn:ngm:class:avatar-system",
+        "label": "Avatar System"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:dc-workspace-tools",
+        "label": "Workspace Tools"
+      },
+      {
+        "id": "urn:ngm:class:dc-communication",
+        "label": "Communication Technology"
+      },
+      {
+        "id": "urn:ngm:class:robotics-telepresence-bridge",
+        "label": "Robotics-Telepresence Bridge"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": []

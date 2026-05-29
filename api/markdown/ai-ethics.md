@@ -8,6 +8,12 @@
 - ### Relationships
   - is-subclass-of:: ['owl:Thing']
   - bridges-to:: [[Smart Contract]] (domain: bc)
+  - requires:: [[Explainable AI]]
+  - requires:: [[Fairness]]
+  - supports:: [[Responsible AI]]
+  - supports:: [[AI Governance]]
+  - relatedTo:: [[Bias Mitigation Techniques]]
+  - relatedTo:: [[Compliance Framework]]
 
 - ### Content
 

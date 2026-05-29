@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:causal-attention",
   "@type": "Class",
   "label": "Causal Attention",
-  "definition": "An attention mechanism where each position can only attend to earlier positions in the sequence, preventing information flow from future tokens, essential for autoregressive generation.",
+  "definition": "Causal Attention (also called masked self-attention) is an attention mechanism where each token position attends only to itself and earlier positions in the sequence, enforced via an upper-triangular mask applied before softmax. This unidirectional constraint is essential for autoregressive language model training and inference, ensuring predictions at position i depend only on positions less than i.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-model-architecture",
@@ -59,6 +60,22 @@ public:: true
       "label": "Attention Mechanism"
     }
   ],
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
+      {"@id": "urn:ngm:class:decoder", "label": "Decoder"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:self-attention", "label": "Self Attention"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:gpt", "label": "GPT"},
+      {"@id": "urn:ngm:class:language-modeling", "label": "Language Modeling"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -109,6 +126,10 @@ public:: true
 
 - ### Relationships
   - bridges-to:: [[Computer Vision]]
+  - part-of:: [[Transformer]], [[Decoder]]
+  - requires:: [[Self Attention]]
+  - enables:: [[GPT]], [[Language Modeling]]
+  - contrasts-with:: [[Transformer Architecture]] (bidirectional encoders use full attention)
 
 - ### Content
   - An attention mechanism where each position can only attend to earlier positions in the sequence, preventing information flow from future tokens, essential for autoregressive generation.

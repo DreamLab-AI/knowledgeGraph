@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:toxicity-detection",
   "domain": "artificial-intelligence",
-  "definition": "Toxicity Detection is a artificial intelligence concept and a type of Content Moderation.",
+  "definition": "Toxicity Detection is a machine learning discipline that automatically identifies harmful, abusive, or offensive language in user-generated content, typically using classifiers trained on annotated corpora of hate speech, threats, and harassment. It forms a core component of content moderation pipelines and operates at scale across social platforms, forums, and messaging systems. Toxicity detection systems must balance recall against false-positive rates to avoid over-censorship while protecting users from harm.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-application",
@@ -17,21 +17,70 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-model",
+        "label": "Machine Learning Model"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:sentiment-analysis",
+        "label": "Sentiment Analysis"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bias-detection-methods",
+        "label": "Bias Detection Methods"
+      },
+      {
+        "id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
+      },
+      {
+        "id": "urn:ngm:class:adversarial-robustness",
+        "label": "Adversarial Robustness"
+      }
+    ]
   },
   "wikilinks": [
     {

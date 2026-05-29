@@ -44,14 +44,31 @@ public:: true
   "label": "Importer",
   "definition": "A natural or legal person located or established in the Union that places on the market an AI system that bears the name or trademark of a natural or legal person established in a third country.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-standards-and-interop",
       "label": "Standards and Interoperability"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"},
+      {"@id": "urn:ngm:class:legal-compliance", "label": "Legal Compliance"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:supply-chain", "label": "Supply Chain"},
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"},
+      {"@id": "urn:ngm:class:accountability", "label": "Accountability"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:legal-framework", "label": "Legal Framework"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -93,7 +110,10 @@ public:: true
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires**: [[AI Regulation]], [[Legal Compliance]]
+  - **partOf**: [[Supply Chain]], [[AI Governance]]
+  - **relatedTo**: [[Risk Management]], [[Accountability]]
+  - **dependsOn**: [[Legal Framework]]
 - ### Content
   - A natural or legal person located or established in the Union that places on the market an AI system that bears the name or trademark of a natural or legal person established in a third country.
   ## Source

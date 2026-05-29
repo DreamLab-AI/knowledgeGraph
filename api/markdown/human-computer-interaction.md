@@ -7,6 +7,11 @@
 
 - ### Relationships
   - is-subclass-of:: ['owl:Thing']
+  - enables [[User Experience]]
+  - enables [[Accessibility]]
+  - relatedTo [[Conversational AI]]
+  - relatedTo [[Explainable AI]]
+  - uses [[Natural Language Processing]]
 
 - ### Content
 

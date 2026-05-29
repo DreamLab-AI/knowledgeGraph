@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:rb-0095-safety-zone",
   "domain": "robotics",
-  "definition": "safety zone is a robotics and autonomous systems concept and a type of Robot Safety.",
+  "definition": "A safety zone is a defined spatial region around a robot or autonomous system within which human presence or other objects trigger protective actions such as speed reduction, monitored stops, or full emergency stops. Safety zones are configured and monitored via safeguarding devices and are a central mechanism for achieving collaborative and safe robot operation in accordance with ISO 10218 and ISO/TS 15066.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-safety-and-standards",
@@ -17,13 +17,31 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:rb-0089-risk-assessment",
+        "label": "rb 0089 risk assessment"
+      },
+      {
+        "id": "urn:ngm:class:rb-0087-safety-standard",
+        "label": "rb 0087 safety standard"
+      }
+    ],
     "enables": [],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:rb-0075-range-finder",
+        "label": "rb 0075 range finder"
+      },
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
@@ -31,7 +49,24 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rb-0096-safeguarding",
+        "label": "rb 0096 safeguarding"
+      },
+      {
+        "id": "urn:ngm:class:rb-0091-safety-rated-monitored-stop",
+        "label": "rb 0091 safety rated monitored stop"
+      },
+      {
+        "id": "urn:ngm:class:rb-0092-protective-stop",
+        "label": "rb 0092 protective stop"
+      },
+      {
+        "id": "urn:ngm:class:rb-0093-speed-limitation",
+        "label": "rb 0093 speed limitation"
+      }
+    ]
   },
   "wikilinks": [
     {

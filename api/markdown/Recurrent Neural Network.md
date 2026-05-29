@@ -790,7 +790,7 @@ public:: true
   "@id": "urn:ngm:class:recurrent-neural-network",
   "@type": "Class",
   "label": "Recurrent Neural Network",
-  "definition": "Recurrent Neural Network is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "A neural network architecture that processes sequential data by maintaining a hidden state across time steps, allowing information from earlier inputs to influence later outputs. Key variants include Long Short-Term Memory networks and Gated Recurrent Units, which address vanishing gradient problems and underpin sequence modelling tasks such as speech recognition, language modelling, and time-series forecasting.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -799,7 +799,25 @@ public:: true
       "label": "AI Model Architecture"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:long-short-term-memory", "label": "Long Short Term Memory"},
+      {"@id": "urn:ngm:class:hidden-state", "label": "Hidden State"},
+      {"@id": "urn:ngm:class:encoder-decoder-architecture", "label": "Encoder Decoder Architecture"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:language-modeling", "label": "Language Modeling"},
+      {"@id": "urn:ngm:class:automatic-speech-recognition", "label": "Automatic Speech Recognition"},
+      {"@id": "urn:ngm:class:time-series-forecasting", "label": "Time Series Forecasting"},
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
+      {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

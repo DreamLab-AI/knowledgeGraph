@@ -6,7 +6,10 @@
   - owl-role:: concept
 
 - ### Relationships
-  - is-subclass-of:: ['owl:Thing']
+  - **uses**: Knowledge Distillation, Quantisation (core compression methods)
+  - **enables**: Model Compression for Edge, Federated Learning (compressed models are prerequisite for efficient edge/federated deployment)
+  - **requires**: Model Training (a trained model is necessary before compression can be applied)
+  - **relatedTo**: Model Pruning for Edge Deployment (complementary sparsification technique)
 
 - ### Content
 

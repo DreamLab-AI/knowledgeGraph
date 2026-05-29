@@ -33,9 +33,10 @@ public:: true
   "@id": "urn:ngm:class:copyright",
   "@type": "Class",
   "label": "copyright",
-  "definition": "copyright is a technology infrastructure concept and a type of Legal Framework.",
+  "definition": "A legal right granting creators exclusive control over reproduction, distribution, adaptation, and public performance of original works for a defined term. In AI and metaverse contexts, copyright raises contested questions about ownership of AI-generated content, the legality of training data ingestion, and rights management for user-created assets within virtual platforms.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-legal-and-regulatory",
@@ -51,6 +52,36 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R2SemanticLabelMatch"
+  },
+  "relations": {
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:digital-rights",
+        "label": "Digital Rights"
+      },
+      {
+        "@id": "urn:ngm:class:digital-rights-management",
+        "label": "Digital Rights Management"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:legal-compliance",
+        "label": "Legal Compliance"
+      }
+    ]
   }
 }
 ```
@@ -76,14 +107,18 @@ public:: true
 
 
 - ### Definition
-  - copyright is a concept within the ngm domain.
+  - A legal right granting creators exclusive control over reproduction, distribution, adaptation, and public performance of original works for a defined term. In AI and metaverse contexts, copyright raises contested questions about ownership of AI-generated content, the legality of training data ingestion, and rights management for user-created assets within virtual platforms.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:Copyright
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Related To [[Digital Rights]]
+  - Related To [[Digital Rights Management]]
+  - Contrasts With [[Generative AI]]
+  - Supports [[Legal Compliance]]
+  - Bridges To [[AI Governance]]
 
 - ### Content
   - Side note, [Japan Goes All In: Copyright Doesn’t Apply To AI Training | BIIA.com | Business Information Industry Association](https://www.biia.com/japan-goes-all-in-copyright-doesnt-apply-to-ai-training/)

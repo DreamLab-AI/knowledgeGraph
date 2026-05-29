@@ -44,7 +44,8 @@ public:: true
   "label": "Membership Inference",
   "definition": "A privacy attack that determines wher a specific data point was included in a model's training dataset by analyzing the model's behavior on that input, potentially revealing sensitive information about individuals' participation in datasets.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
@@ -56,6 +57,42 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:machine-learning-model",
+        "label": "Machine Learning Model"
+      },
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:adversarial-attack",
+        "label": "Adversarial Attack"
+      },
+      {
+        "@id": "urn:ngm:class:model-inversion",
+        "label": "Model Inversion"
+      },
+      {
+        "@id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      }
+    ]
   }
 }
 ```
@@ -95,7 +132,13 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Requires [[Machine Learning Model]]
+  - Requires [[Training Data]]
+  - Contrasts With [[Differential Privacy]]
+  - Related To [[Adversarial Attack]]
+  - Related To [[Model Inversion]]
+  - Related To [[Privacy]]
+  - Related To [[Data Protection]]
 
 - ### Content
   - A privacy attack that determines whether a specific data point was included in a model's training dataset by analyzing the model's behavior on that input, potentially revealing sensitive information about individuals' participation in datasets.

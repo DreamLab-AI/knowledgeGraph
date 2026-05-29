@@ -58,7 +58,7 @@ public:: true
   "@id": "urn:ngm:class:responsible-ai-principles",
   "@type": "Class",
   "label": "Responsible AI Principles",
-  "definition": "Responsible AI Principles are foundational ical commitments and normative guidelines that govern AI system design, development, deployment, and monitoring to ensure beneficial, fair, and rights-respecting outcomes.",
+  "definition": "Foundational ethical commitments and normative guidelines governing AI system design, development, deployment, and monitoring to ensure beneficial, fair, and rights-respecting outcomes. Core principles—including fairness, transparency, accountability, privacy, safety, and human oversight—are operationalised through frameworks such as the OECD AI Principles, the EU Ethics Guidelines for Trustworthy AI, and UNESCO's Recommendation on the Ethics of AI.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -71,7 +71,24 @@ public:: true
       "label": "AI Ethics"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:ai-fairness", "label": "AI Fairness"},
+      {"@id": "urn:ngm:class:transparency-and-explainability", "label": "Transparency and Explainability"},
+      {"@id": "urn:ngm:class:accountability", "label": "Accountability"},
+      {"@id": "urn:ngm:class:human-oversight", "label": "Human Oversight"},
+      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"},
+      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
+      {"@id": "urn:ngm:class:algorithmic-bias", "label": "Algorithmic Bias"},
+      {"@id": "urn:ngm:class:bias-mitigation-techniques", "label": "Bias Mitigation Techniques"},
+      {"@id": "urn:ngm:class:explainability", "label": "Explainability"},
+      {"@id": "urn:ngm:class:differential-privacy", "label": "Differential Privacy"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

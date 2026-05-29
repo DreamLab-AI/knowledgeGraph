@@ -46,16 +46,30 @@ public:: true
   "@id": "urn:ngm:class:digital-model",
   "@type": "Class",
   "label": "Digital Model",
-  "definition": "Digital Model is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "A Digital Model is a structured computational representation of a real-world or conceptual entity, capturing geometry, behaviour, and semantic attributes for use in simulation, visualisation, or analysis. Digital models underpin virtual environments, digital twins, and spatial computing applications by providing machine-readable, interoperable representations of physical or abstract objects.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:digital-modeling", "label": "Digital Modeling"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:virtual-environment", "label": "Virtual Environment"},
+      {"@id": "urn:ngm:class:digital-twin-infrastructure", "label": "Digital Twin Infrastructure"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"},
+      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -96,7 +110,7 @@ public:: true
 
 
 - ### Definition
-  - Digital Model is a concept within the metaverse domain. Further enrichment pending.
+  - A Digital Model is a structured computational representation of a real-world or conceptual entity, capturing geometry, behaviour, and semantic attributes for use in simulation, visualisation, or analysis. Digital models underpin virtual environments, digital twins, and spatial computing applications by providing machine-readable, interoperable representations of physical or abstract objects.
 
 bridges-to:: [[Computer Vision]]
 
@@ -105,7 +119,9 @@ bridges-to:: [[Computer Vision]]
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: [[Spatial Computing]], [[Digital Modeling]]
+  - **enables**: [[Virtual Environment]], [[Digital Twin Infrastructure]]
+  - **relatedTo**: [[Digital Asset]], [[Immersive Experience]]
 
 - ### Content
 

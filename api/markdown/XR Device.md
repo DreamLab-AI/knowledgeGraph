@@ -48,7 +48,8 @@ public:: true
   "label": "XR Device",
   "definition": "Hardware equipment designed to create or enhance extended reality experiences, encompassing virtual reality headsets, augmented reality glasses, mixed reality displays, haptic feedback systems, and motion tracking sensors that enable immersive interaction with digital content.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-display-and-rendering",
@@ -59,7 +60,23 @@ public:: true
       "label": "XR Hardware"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
+      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
+      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"},
+      {"@id": "urn:ngm:class:motion-tracking", "label": "Motion Tracking"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -109,6 +126,10 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[XR Hardware]]
+  - **enables**: Immersive Experience, Virtual Reality, Augmented Reality — XR devices are the physical hardware that renders and delivers immersive content to users.
+  - **uses**: Haptic Feedback, Motion Tracking — these peripheral capabilities are integral to XR device interaction loops.
+  - **supports**: Human Computer Interaction — XR devices constitute a novel modality of HCI.
+  - **partOf**: Metaverse — XR devices are the primary access point through which users inhabit metaverse environments.
 
 - ### Content
 

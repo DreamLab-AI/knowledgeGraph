@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:cross-domain-bridge",
   "domain": "infrastructure",
-  "definition": "Cross Domain Bridge is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A Cross Domain Bridge is an architectural pattern, protocol, or middleware system that enables interoperability and data exchange between heterogeneous collaboration platforms, virtual environments, and organisational systems. Implementations include protocol translators (WebRTC, SIP, H.323), identity federation layers (SAML, OAuth, OpenID Connect), and data transformation services (REST, GraphQL, gRPC). Advanced bridges leverage blockchain for trustless cross-domain transactions and open standards such as OpenXR for spatial interoperability.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-network-and-comms",
@@ -13,18 +13,45 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:avatar-interoperability",
+        "label": "Avatar Interoperability"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:open-xr",
+        "label": "OpenXR"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:cross-platform-interoperability",
+        "label": "Cross-Platform Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:data-interoperability",
+        "label": "Data Interoperability"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": []

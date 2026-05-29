@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:calibration-tools",
   "domain": "spatial-computing",
-  "definition": "Calibration Tools is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Software and hardware utilities used to align, tune, and verify the accuracy of XR sensors, displays, and tracking systems. Calibration establishes ground-truth references for IMUs, cameras, optical tracking arrays, and display geometry, ensuring that virtual content is correctly registered to the physical world and that tracking data is within acceptable error tolerances.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-display-and-rendering",
@@ -13,18 +13,54 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:imu",
+        "label": "IMU"
+      },
+      {
+        "id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:optical-tracking",
+        "label": "Optical Tracking"
+      },
+      {
+        "id": "urn:ngm:class:environmental-verification",
+        "label": "Environmental Verification"
+      },
+      {
+        "id": "urn:ngm:class:xr-runtime-environment",
+        "label": "XR Runtime Environment"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": []

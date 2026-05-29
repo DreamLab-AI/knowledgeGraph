@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:spatial-data-structure",
   "domain": "spatial-computing",
-  "definition": "Spatial Data Structure is a spatial computing concept and a type of spatial-computing.",
+  "definition": "A Spatial Data Structure is a data organisation scheme that indexes geometric or geographic information to enable efficient queries over position, proximity, and containment. Examples include octrees, k-d trees, BVH hierarchies, R-trees, and spatial hash grids, each offering different trade-offs between build cost, query performance, and dynamic update capability for real-time 3D applications.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-display-and-rendering",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      },
+      {
+        "id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:scene-graph",
+        "label": "Scene Graph"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      },
+      {
+        "id": "urn:ngm:class:spatial-mapping",
+        "label": "Spatial Mapping"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

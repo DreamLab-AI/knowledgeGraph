@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:web-technology",
   "domain": "infrastructure",
-  "definition": "Web Technology is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "The distributed infrastructure, protocols, and frameworks underpinning the World Wide Web and decentralised Web3 applications, including content-addressed storage (IPFS), blockchain naming systems (ENS), decentralised identity (DIDs), and smart-contract-governed application hosting that shifts data ownership from centralised providers to users.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
@@ -14,16 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      },
+      {
+        "id": "urn:ngm:class:ens",
+        "label": "ENS"
+      },
+      {
+        "id": "urn:ngm:class:web3",
+        "label": "Web3"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:content-addressing",
+        "label": "Content Addressing"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-storage",
+        "label": "Decentralized Storage"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

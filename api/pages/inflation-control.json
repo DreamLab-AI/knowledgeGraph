@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:inflation-control",
   "domain": "spatial-computing",
-  "definition": "Mechanisms and policies in virtual economies to regulate the creation and distribution of virtual currency, preventing value depreciation and economic instability.",
+  "definition": "Inflation Control encompasses the mechanisms, policies, and economic design patterns used within virtual and metaverse economies to regulate the creation, circulation, and destruction of virtual currency and digital assets. These controls prevent hyperinflation and value collapse by balancing supply-side minting with demand-side sinks. Effective inflation control underpins the long-term viability of play-to-earn ecosystems, NFT markets, and decentralised finance platforms built on virtual worlds.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -17,21 +17,99 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:minting",
+        "label": "Minting"
+      },
+      {
+        "id": "urn:ngm:class:burning-mechanism",
+        "label": "Burning Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:sink-mechanism",
+        "label": "Sink Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:circulating-supply",
+        "label": "Circulating Supply"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      },
+      {
+        "id": "urn:ngm:class:virtual-currency",
+        "label": "Virtual Currency"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:play-to-earn-p2-e",
+        "label": "Play-to-Earn (P2E)"
+      },
+      {
+        "id": "urn:ngm:class:digital-economy",
+        "label": "Digital Economy"
+      },
+      {
+        "id": "urn:ngm:class:creator-economy",
+        "label": "Creator Economy"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:tokenomics-governance",
+        "label": "Tokenomics Governance"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:blockchain-gaming",
+        "label": "Blockchain Gaming"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockchain-economics",
+        "label": "Blockchain Economics"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "id": "urn:ngm:class:monetary-system",
+        "label": "Monetary System"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:social-token-economy",
+        "label": "Social Token Economy"
+      },
+      {
+        "id": "urn:ngm:class:cross-metaverse-commerce",
+        "label": "Cross Metaverse Commerce"
+      }
+    ]
   },
   "wikilinks": [
     {

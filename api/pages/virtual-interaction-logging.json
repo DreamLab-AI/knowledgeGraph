@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:virtual-interaction-logging",
   "domain": "spatial-computing",
-  "definition": "The systematic recording and analysis of user interactions, behaviors, and activities within virtual environments, capturing data on movements, communications, transactions, and engagement patterns for analytics, compliance, and experience optimization.",
+  "definition": "The systematic recording and analysis of user interactions, behaviours, and activities within virtual environments, capturing data on avatar movements, communications, transactions, and engagement patterns for analytics, compliance, and experience optimisation. Logging pipelines must balance comprehensive telemetry collection with data minimisation, user consent, and retention policies required under privacy regulations such as GDPR.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-governance-and-safety",
@@ -17,21 +17,49 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:consent-management",
+        "label": "Consent Management"
+      },
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      },
+      {
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      }
+    ]
   },
   "wikilinks": [
     {

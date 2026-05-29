@@ -58,21 +58,37 @@ public:: true
   "@id": "urn:ngm:class:reinforcement-learning-algorithm",
   "@type": "Class",
   "label": "Reinforcement Learning Algorithm",
-  "definition": "Reinforcement Learning Algorithms enable agents to learn optimal decision-making policies through interaction with environments, guided by reward signals.",
+  "definition": "Reinforcement Learning Algorithms enable agents to learn optimal decision-making policies through interaction with environments, guided by reward signals. Core families include value-based methods (Q-learning, DQN), policy gradient methods (REINFORCE, PPO, TRPO), and actor-critic approaches (A3C, SAC), all of which balance exploration against exploitation to maximise cumulative expected reward.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
-  "quality": 0.35,
-  "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
-  },
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
     }
-  ]
+  ],
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:reward-function", "label": "Reward Function"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
+      {"@id": "urn:ngm:class:reinforcement-learning-from-human-feedback", "label": "Reinforcement Learning from Human Feedback"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:proximal-policy-optimisation", "label": "Proximal Policy Optimisation"},
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+    ]
+  },
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 
@@ -130,7 +146,11 @@ public:: true
   - owl-role:: Concept
 
 - ### Relationships
-  - is-subclass-of:: [[owl:Thing]]
+  - is-subclass-of:: [[Reinforcement Learning]]
+  - **partOf**: Reinforcement Learning — RL algorithms are the concrete computational methods within the broader RL paradigm.
+  - **requires**: Reward Function — every RL algorithm depends on a reward signal to define the optimisation objective.
+  - **enables**: Autonomous Navigation, Reinforcement Learning from Human Feedback — RL algorithms power autonomous control systems and RLHF fine-tuning of language models.
+  - **uses**: Proximal Policy Optimisation, Deep Learning — PPO is a widely used policy-gradient algorithm; deep neural networks serve as function approximators within modern RL systems.
 
 - ### Content
 

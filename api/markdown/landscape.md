@@ -1,12 +1,14 @@
 - ### Definition
-  - Landscape is a concept within the ngm domain.
+  - A Landscape, in the context of this knowledge graph, is a structured market-analysis overview of the current state of an AI or technology sector, mapping key players, technology stacks, investment flows, and emerging patterns. Landscape analyses such as those from a16z or Cowboy Ventures provide practitioners with orientation in rapidly shifting fields and inform infrastructure strategy.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:Landscape
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - relatedTo:: [[Generative AI]], [[Large Language Models]]
+  - uses:: [[Machine Learning]]
+  - partOf:: [[Computing and Cloud]]
 
 - ### Content
   - #Public page

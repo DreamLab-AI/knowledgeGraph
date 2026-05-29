@@ -62,9 +62,11 @@ public:: true
   "@id": "urn:ngm:class:neural-radiance-fields",
   "@type": "Class",
   "label": "Neural Radiance Fields",
-  "definition": "\"A neural rendering technique representing 3D scenes as continuous volumetric functions encoded by multilayer perceptrons, mapping 5D coordinates (3D position + 2D viewing direction) to colour and density, enabling photorealistic novel view synthesis from sparse input photographs through volumetr...",
+  "definition": "A neural rendering technique that represents 3D scenes as continuous volumetric radiance functions encoded by multilayer perceptrons, mapping 5D inputs (3D spatial position plus 2D viewing direction) to colour and volume density. Novel viewpoints are synthesised by volumetric ray marching through the learned representation, enabling photorealistic view synthesis from sparse photograph sets without explicit 3D geometry. Introduced by Mildenhall et al. (ECCV 2020), NeRF has driven a generation of implicit neural scene representations spanning telepresence, virtual production, and robotics.",
   "domain": "distributed-collaboration",
   "maturity": "emerging",
+  "qualityScore": 0.75,
+  "quality": 0.75,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:dc-telepresence",
@@ -75,7 +77,30 @@ public:: true
       "label": "Real-Time Rendering Pipeline"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
+      {"@id": "urn:ngm:class:ray-marching", "label": "Ray Marching"},
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:photorealistic-rendering", "label": "Photorealistic Rendering"},
+      {"@id": "urn:ngm:class:volumetric-capture", "label": "Volumetric Capture"},
+      {"@id": "urn:ngm:class:scene-capture-and-reconstruction", "label": "Scene Capture and Reconstruction"},
+      {"@id": "urn:ngm:class:telepresence", "label": "Telepresence"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:3-d-gaussian-splatting", "label": "3D Gaussian Splatting"},
+      {"@id": "urn:ngm:class:neural-rendering", "label": "Neural Rendering"},
+      {"@id": "urn:ngm:class:3-d-reconstruction", "label": "3D Reconstruction"},
+      {"@id": "urn:ngm:class:point-cloud", "label": "Point Cloud"},
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:real-time-rendering-pipeline", "label": "Real-Time Rendering Pipeline"},
+      {"@id": "urn:ngm:class:3-d-content-generation", "label": "3D Content Generation"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

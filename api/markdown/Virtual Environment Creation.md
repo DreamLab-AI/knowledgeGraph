@@ -46,20 +46,56 @@ public:: true
   "@id": "urn:ngm:class:virtual-environment-creation",
   "@type": "Class",
   "label": "Virtual Environment Creation",
-  "definition": "The process of designing, building, and deploying immersive 3D virtual worlds using game engines, modeling software, and AI-powered tools, encompassing static and dynamic assets, physics simulation, and interactive experiences for metaverse platforms.",
+  "definition": "The process of designing, building, and deploying immersive 3D virtual worlds using game engines, modelling software, and AI-powered tools, encompassing static and dynamic assets, physics simulation, and interactive experiences for metaverse platforms.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
     }
   ],
-  "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-modeling",
+        "label": "3D Modeling"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:metaverse-platform",
+        "label": "Metaverse Platform"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-content-generation",
+        "label": "3D Content Generation"
+      }
+    ]
   }
 }
 ```
@@ -105,6 +141,13 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[3D Development]]
+  - Requires [[Game Engine]]
+  - Requires [[3D Modeling]]
+  - Uses [[Physics Simulation]]
+  - Uses [[Real-Time Rendering]]
+  - Uses [[3D Content Generation]]
+  - Enables [[Metaverse Platform]]
+  - Enables [[Immersive Experience]]
 
 - ### Content
 

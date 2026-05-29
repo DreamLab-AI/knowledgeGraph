@@ -268,13 +268,29 @@ public:: true
   "label": "Image Generation",
   "definition": "Image Generation is the synthesis of realistic or stylised images using generative AI models including Generative Adversarial Networks (GANs), Variational Autoencoders (VAEs), and Diffusion Models.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-display-and-rendering",
       "label": "Display and Rendering"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
+      {"@id": "urn:ngm:class:generative-adversarial-network", "label": "Generative Adversarial Network"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:text-to-image", "label": "Text-to-Image"},
+      {"@id": "urn:ngm:class:video-generation", "label": "Video Generation"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:training-data", "label": "Training Data"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -599,7 +615,12 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses:: [[Diffusion Model]]
+  - uses:: [[Generative Adversarial Network]]
+  - enables:: [[Text-to-Image]]
+  - enables:: [[Video Generation]]
+  - requires:: [[Training Data]]
+  - relatedTo:: [[Computer Vision]]
 
 - ### Content
   - Image Generation is the synthesis of realistic or stylised images using generative AI models including Generative Adversarial Networks (GANs), Variational Autoencoders (VAEs), and Diffusion Models. Modern image generation systems (DALL-E, Stable Diffusion, Midjourney) produce high-fidelity images from text descriptions, sketches, or latent representations, enabling creative applications, data augmentation, and content creation.

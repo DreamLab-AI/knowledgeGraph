@@ -1,5 +1,5 @@
 - ### Definition
-  - **Velocity** - Rate of change of position
+  - **Velocity** is the vector quantity expressing rate of change of position with respect to time (v = dx/dt). In robotics and autonomous systems, it is a fundamental parameter governing motion planning, collision avoidance, and control. Algorithms such as Velocity Obstacle (VO) and Reciprocal Velocity Obstacle (RVO) are built directly upon velocity representations to enable safe multi-agent navigation.
 
 - ### Semantic Classification
   - owl-class:: robotics:Velocity
@@ -8,6 +8,10 @@
 
 - ### Relationships
   - is-subclass-of:: [[Robotics]]
+  - **requires**: [[Sensor Fusion]], [[Control System]] — velocity measurement depends on fusion of inertial and optical sensor data and is consumed by closed-loop controllers
+  - **enables**: [[Collision Avoidance]], [[Motion Planning]] — velocity fields are the basis for VO/RVO collision-avoidance and trajectory generation
+  - **uses**: [[Physics Simulation]] — velocity is a primary state variable in physics engines and dynamic simulations
+  - **relatedTo**: [[Robotics Control]] — velocity setpoints are the primary command interface for most robot actuators
 
 - ### Content
   - ### Original Content

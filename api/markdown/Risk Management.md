@@ -44,13 +44,27 @@ public:: true
   "label": "Risk Management",
   "definition": "The coordinated activities to direct and control an AI system with regard to risk, encompassing risk identification, assessment, treatment, monitoring, and communication throughout the AI lifecycle to minimize potential adverse effects while maximizing benefits.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:explainability", "label": "Explainability"},
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"},
+      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"},
+      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -95,7 +109,12 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires:: [[Explainability]]
+  - requires:: [[Data Governance]]
+  - supports:: [[Compliance Framework]]
+  - supports:: [[AI Safety]]
+  - relatedTo:: [[AI Ethics]]
+  - relatedTo:: [[Responsible AI]]
 
 - ### Content
   - The coordinated activities to direct and control an AI system with regard to risk, encompassing risk identification, assessment, treatment, monitoring, and communication throughout the AI lifecycle to minimize potential adverse effects while maximizing benefits.

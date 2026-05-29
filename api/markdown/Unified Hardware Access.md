@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:unified-hardware-access",
   "@type": "Class",
   "label": "Unified Hardware Access",
-  "definition": "A standardized abstraction layer that provides consistent interfaces for accessing diverse XR hardware devices, including VR headsets, AR glasses, haptic controllers, and tracking systems, enabling cross-platform application development.",
+  "definition": "A standardised abstraction layer that provides consistent programmatic interfaces for accessing diverse XR hardware devices — including VR headsets, AR glasses, haptic controllers, eye-tracking modules, and six-DoF tracking systems — enabling cross-platform application development without device-specific code paths. The WebXR Device API (W3C) and OpenXR (Khronos Group) are the primary open standards implementing this abstraction for web and native runtimes respectively.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-standards-and-interop",
@@ -59,7 +60,24 @@ public:: true
       "label": "Hardware Abstraction"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:open-standard", "label": "Open Standard"},
+      {"@id": "urn:ngm:class:interoperability-standard", "label": "Interoperability Standard"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:cross-platform-interoperability", "label": "Cross-Platform Interoperability"},
+      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:xr-device", "label": "XR Device"},
+      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"},
+      {"@id": "urn:ngm:class:eye-tracking", "label": "Eye Tracking"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:xr-runtime-environment", "label": "XR Runtime Environment"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -109,6 +127,10 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Hardware Abstraction]]
+  - standardizedBy:: [[Open Standard]], [[Interoperability Standard]]
+  - enables:: [[Cross-Platform Interoperability]], [[Immersive Experience]]
+  - uses:: [[XR Device]], [[Haptic Feedback]], [[Eye Tracking]]
+  - relatedTo:: [[XR Runtime Environment]]
 
 - ### Content
 

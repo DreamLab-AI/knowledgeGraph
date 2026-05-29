@@ -38,16 +38,34 @@ public:: true
   "@id": "urn:ngm:class:python-to-build-rag-data-page",
   "@type": "Class",
   "label": "Python to build RAG data page",
-  "definition": "Python to build RAG data page is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "Python to build RAG data page is a Logseq Pyodide script that enumerates all pages with the `public:: true` property, loads their block content, applies text-cleaning routines (URL removal, bracket stripping, special-character normalisation), and appends the cleaned content to a dedicated FULLRAG page. This page then serves as the consolidated corpus for local Retrieval-Augmented Generation pipelines, enabling semantic search over the entire public knowledge graph without external data transfer.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-application",
       "label": "AI Application"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
+      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"},
+      {"@id": "urn:ngm:class:tokenization", "label": "Tokenization"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
+      {"@id": "urn:ngm:class:semantic-search", "label": "Semantic Search"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:embedding-model", "label": "Embedding Model"},
+      {"@id": "urn:ngm:class:vector-database", "label": "Vector Database"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:knowledge-management", "label": "Knowledge Management"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -83,14 +101,17 @@ public:: true
 
 
 - ### Definition
-  - Python to build RAG data page is a concept within the ngm domain.
+  - Python to build RAG data page is a Logseq Pyodide script that enumerates all pages with the `public:: true` property, loads their block content, applies text-cleaning routines, and appends the cleaned content to a FULLRAG page. This serves as the consolidated corpus for local Retrieval-Augmented Generation pipelines, enabling semantic search over the public knowledge graph without external data transfer.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:PythonToBuildRAGDataPage
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses:: [[Knowledge Graph]], [[Data Pipeline]], [[Tokenization]]
+  - enables:: [[Retrieval-Augmented Generation]], [[Semantic Search]]
+  - dependsOn:: [[Embedding Model]], [[Vector Database]]
+  - relatedTo:: [[Knowledge Management]]
 
 - ### Content
   - Note Python will load the first time this block is evaluated

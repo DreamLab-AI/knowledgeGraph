@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:attention-mask",
   "domain": "artificial-intelligence",
-  "definition": "A mechanism that controls which positions in a sequence can attend to which other positions, typically implemented by adding large negative values before softmax to effectively zero out unwanted attention weights.",
+  "definition": "A mechanism that controls which positions in a sequence can attend to which other positions, typically implemented by adding large negative values before softmax to zero out unwanted attention weights; used for causal masking in autoregressive decoders and padding masking in batched variable-length sequences.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-model-architecture",
@@ -14,20 +14,48 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:albert",
+        "label": "ALBERT"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:neural-network-architecture",
+        "label": "Neural Network Architecture"
+      },
+      {
+        "id": "urn:ngm:class:bart",
+        "label": "BART"
+      }
+    ]
   },
   "wikilinks": [
     {

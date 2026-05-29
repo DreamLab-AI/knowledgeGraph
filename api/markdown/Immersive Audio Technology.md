@@ -42,20 +42,62 @@ public:: true
   "@id": "urn:ngm:class:immersive-audio-technology",
   "@type": "Class",
   "label": "Immersive Audio Technology",
-  "definition": "Immersive Audio Technology is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Technologies and techniques for rendering spatially accurate, three-dimensional soundscapes within virtual and augmented reality environments. Encompasses binaural rendering, ambisonics, head-related transfer function (HRTF) personalisation, and real-time positional audio to create convincing auditory presence that reinforces visual immersion.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-display-and-rendering",
       "label": "Display and Rendering"
     }
   ],
-  "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:xr-runtime-environment",
+        "label": "XR Runtime Environment"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-theater",
+        "label": "Virtual Theater"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      },
+      {
+        "@id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ]
   }
 }
 ```
@@ -87,23 +129,27 @@ public:: true
 
 
 - ### Definition
-  - Immersive Audio Technology is a concept within the metaverse domain. Further enrichment pending.
+  - Technologies and techniques for rendering spatially accurate, three-dimensional soundscapes within virtual and augmented reality environments. Encompasses binaural rendering, ambisonics, head-related transfer function (HRTF) personalisation, and real-time positional audio to create convincing auditory presence that reinforces visual immersion.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:ImmersiveAudioTechnology
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses [[Spatial Audio]]
+  - Uses [[Signal Processing]]
+  - Enables [[Immersive Experience]]
+  - Enables [[Virtual Theater]]
+  - Requires [[Rendering Pipeline]]
+  - Requires [[XR Runtime Environment]]
+  - Supports [[Virtual Reality]]
+  - Supports [[Augmented Reality]]
 
 - ### Content
 
   ## Overview
 
-  Immersive Audio Technology represents an abstract concept in the metaverse ontology hierarchy.
-
-  #### Related Concepts
-  - [[owl:Thing]]
+  Immersive audio technology creates spatially accurate soundscapes that reinforce visual presence in XR environments. Key techniques include binaural rendering using personalised HRTFs, ambisonics for full-sphere sound reproduction, and real-time occlusion and reverberation modelling. These technologies are foundational to virtual theatre, social VR, and training simulations.
 
 - ### Provenance
   - sources::

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ghg-protocol",
   "domain": "infrastructure",
-  "definition": "An internationally recognised accounting and reporting standard developed by WRI and WBCSD that defines methodologies for measuring and managing greenhouse gas emissions across scopes 1, 2, and 3.",
+  "definition": "The GHG Protocol is the internationally recognised greenhouse gas accounting and reporting framework developed by the World Resources Institute (WRI) and the World Business Council for Sustainable Development (WBCSD). It defines the methodologies by which organisations measure and categorise greenhouse gas emissions across three scopes: Scope 1 (direct emissions from owned or controlled sources), Scope 2 (indirect emissions from purchased energy), and Scope 3 (all other indirect emissions in the value chain). The GHG Protocol Corporate Standard and its sector-specific supplements underpin most corporate carbon reporting requirements globally, including those mandated by ESG disclosure frameworks and regulatory regimes.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-legal-and-regulatory",
@@ -14,11 +14,20 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:carbon-accounting",
+        "label": "Carbon Accounting"
+      },
+      {
+        "id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +36,20 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:environmental-standards",
+        "label": "Environmental Standards"
+      },
+      {
+        "id": "urn:ngm:class:carbon-footprint-measurement",
+        "label": "Carbon Footprint Measurement"
+      },
+      {
+        "id": "urn:ngm:class:iso-14064",
+        "label": "ISO 14064"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

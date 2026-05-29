@@ -1,5 +1,5 @@
 - ### Definition
-  - - maturity:: draft
+  - Robust Control is a branch of control theory that designs controllers guaranteeing stable and acceptable performance across a bounded set of model uncertainties and disturbances. It formalises worst-case design requirements through H-infinity and H2 optimisation frameworks, ensuring actuated systems remain within specification even when plant parameters deviate from nominal values.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:RobustControl
@@ -7,6 +7,10 @@
 
 - ### Relationships
   - is-subclass-of:: [[ControlAlgorithms]]
+  - **uses** → [[Feedback Control]], [[PID Control]]
+  - **enables** → [[Motion Control]], [[Robot Control]]
+  - **contrastsWith** → [[Adaptive Control]]
+  - **supports** → [[Robot Safety]], [[Trajectory Control]]
 
 - ### Content
 

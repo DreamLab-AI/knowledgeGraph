@@ -66,7 +66,7 @@ public:: true
   "@id": "urn:ngm:class:private-key",
   "@type": "Class",
   "label": "Private Key",
-  "definition": "Secret cryptographic key within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "A Private Key is a secret scalar value generated through cryptographically secure randomness that serves as the sole proof of ownership within asymmetric cryptographic systems. In blockchain contexts it authorises transaction signing via digital signatures, controls access to associated public addresses and funds, and underpins the non-custodial security model where loss or exposure is irreversible.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -83,7 +83,27 @@ public:: true
       "label": "CryptographicPrimitive"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:cryptographic-signature", "label": "Cryptographic Signature"},
+      {"@id": "urn:ngm:class:digital-certificate", "label": "Digital Certificate"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:elliptic-curve-cryptography", "label": "Elliptic Curve Cryptography"},
+      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:cryptographic-keys", "label": "Cryptographic Keys"},
+      {"@id": "urn:ngm:class:cryptographic-key-management", "label": "Cryptographic Key Management"},
+      {"@id": "urn:ngm:class:preimage-resistance", "label": "Preimage Resistance"},
+      {"@id": "urn:ngm:class:collision-resistance", "label": "Collision Resistance"},
+      {"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:cryptographic-system", "label": "Cryptographic System"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

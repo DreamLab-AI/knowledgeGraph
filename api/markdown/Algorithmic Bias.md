@@ -62,7 +62,7 @@ public:: true
   "@id": "urn:ngm:class:algorithmic-bias",
   "@type": "Class",
   "label": "Algorithmic Bias",
-  "definition": "Algorithmic Bias refers to systematic and repeatable errors in AI systems that create unfair outcomes favoring or discriminating against particular groups or individuals.",
+  "definition": "Systematic and repeatable errors in AI systems that create unfair outcomes favouring or discriminating against particular groups or individuals. Bias manifests through historical bias, representation gaps, measurement proxies, aggregation errors, and feedback loops, and is detected through statistical auditing, counterfactual testing, and fairness metrics.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -71,7 +71,29 @@ public:: true
       "label": "AI Governance and Ethics"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:ai-fairness", "label": "AI Fairness"},
+      {"@id": "urn:ngm:class:fairness", "label": "Fairness"},
+      {"@id": "urn:ngm:class:bias", "label": "Bias"},
+      {"@id": "urn:ngm:class:explainability", "label": "Explainability"},
+      {"@id": "urn:ngm:class:harmful-bias", "label": "Harmful Bias"},
+      {"@id": "urn:ngm:class:training-data", "label": "Training Data"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:bias-detection-methods", "label": "Bias Detection Methods"},
+      {"@id": "urn:ngm:class:fairness-metrics", "label": "Fairness Metrics"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:bias-mitigation-techniques", "label": "Bias Mitigation Techniques"},
+      {"@id": "urn:ngm:class:algorithmic-accountability", "label": "Algorithmic Accountability"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
+      {"@id": "urn:ngm:class:fairness-constraints", "label": "Fairness Constraints"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

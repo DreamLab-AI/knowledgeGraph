@@ -56,7 +56,7 @@ public:: true
   "label": "Object Detection",
   "definition": "Object Detection is the computer vision task of identifying and localising multiple objects within an image by predicting bounding boxes and class labels for each detected instance.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-interaction",
@@ -67,6 +67,20 @@ public:: true
       "label": "Computer Vision"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:semantic-segmentation", "label": "Semantic Segmentation"},
+      {"@id": "urn:ngm:class:pose-estimation", "label": "Pose Estimation"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:image-classification", "label": "Image Classification"},
+      {"@id": "urn:ngm:class:instance-segmentation", "label": "Instance Segmentation"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -126,7 +140,12 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Computer Vision]]
+  - requires [[Deep Learning]]
+  - enables [[Semantic Segmentation]]
+  - enables [[Pose Estimation]]
+  - contrastsWith [[Image Classification]]
+  - contrastsWith [[Instance Segmentation]]
 
 - ### Content
   - Object Detection is the computer vision task of identifying and localising multiple objects within an image by predicting bounding boxes and class labels for each detected instance. Object detectors (YOLO, Faster R-CNN, DETR) combine classification and localisation, outputting spatial coordinates and class probabilities for all objects of interest in real-time or near-real-time performance.

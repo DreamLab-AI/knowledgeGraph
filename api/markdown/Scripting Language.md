@@ -37,20 +37,50 @@ public:: true
   "@id": "urn:ngm:class:scripting-language",
   "@type": "Class",
   "label": "Scripting Language",
-  "definition": "Scripting Language is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A scripting language is an interpreted or dynamically compiled programming language used to automate tasks, define interactive behaviours, and extend the capabilities of host applications or game engines without modifying core engine code. In metaverse contexts, scripting languages such as JavaScript, Lua, Python, and C# enable content creators to author custom gameplay mechanics, NPC behaviour, and dynamic environment logic with rapid iteration cycles.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
-  "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:game-development",
+        "label": "Game Development"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-world-creation",
+        "label": "Virtual World Creation"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:programming-language",
+        "label": "Programming Language"
+      }
+    ]
   }
 }
 ```
@@ -76,14 +106,18 @@ public:: true
 
 
 - ### Definition
-  - ScriptingLanguage is a concept within the ngm domain.
+  - A scripting language is an interpreted or dynamically compiled programming language used to automate tasks, define interactive behaviours, and extend the capabilities of host applications or game engines without modifying core engine code. In metaverse contexts, scripting languages such as JavaScript, Lua, Python, and C# enable content creators to author custom gameplay mechanics, NPC behaviour, and dynamic environment logic with rapid iteration cycles.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:ScriptingLanguage
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Part of [[Programming Language]]
+  - Enables [[Game Development]]
+  - Enables [[Virtual World Creation]]
+  - Uses [[Game Engine]]
+  - Related to [[Software Engineering]]
 
 - ### Content
   # ScriptingLanguage

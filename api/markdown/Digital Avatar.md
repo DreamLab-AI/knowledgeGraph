@@ -142,9 +142,10 @@ public:: true
   "@id": "urn:ngm:class:digital-avatar",
   "@type": "Class",
   "label": "Digital Avatar",
-  "definition": "A digital representation of a user or entity within Virtual Environments, exhibiting Embodied Presence, Visual Customisation, and Behavioural Agency.",
+  "definition": "A Digital Avatar is a persistent digital representation of a user or entity within virtual environments, exhibiting embodied presence, visual customisation, and behavioural agency. Digital avatars serve as identity anchors across metaverse platforms and enable social presence, interactive expression, and blockchain-verified ownership of associated assets.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
@@ -160,6 +161,42 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "DigitalIdentity"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-identity",
+        "label": "VirtualIdentity"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:social-presence",
+        "label": "SocialPresence"
+      },
+      {
+        "@id": "urn:ngm:class:avatar-interoperability",
+        "label": "Avatar Interoperability"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:avatar-customization",
+        "label": "Avatar Customization"
+      },
+      {
+        "@id": "urn:ngm:class:motion-capture",
+        "label": "MotionCapture"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ]
   }
 }
 ```
@@ -326,7 +363,13 @@ bridges-to:: [[DID Nostr Identity]]
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses [[Avatar Customization]]
+  - Uses [[MotionCapture]]
+  - Uses [[Generative AI]]
+  - Requires [[DigitalIdentity]]
+  - Requires [[VirtualIdentity]]
+  - Enables [[SocialPresence]]
+  - Enables [[Avatar Interoperability]]
 
 - ### Content
   - Digital avatars represent users within virtual environments with embodied presence, visual customisation, and behavioural agency, enabling social presence, user interaction, and persistent identity anchors within metaverse platforms.

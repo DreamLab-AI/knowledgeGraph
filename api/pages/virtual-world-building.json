@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:virtual-world-building",
   "domain": "spatial-computing",
-  "definition": "The process of creating 3D virtual environments for metaverse platforms, games, and simulations using tools ranging from no-code platforms to professional game engines, enabling the construction of immersive digital spaces with customizable assets, terrain, and interactive elements.",
+  "definition": "The process of creating 3D virtual environments for metaverse platforms, games, and simulations using tools ranging from no-code drag-and-drop builders to professional game engines, enabling the construction of immersive digital spaces with customisable assets, terrain, physics, and interactive elements. Generative AI is rapidly lowering barriers through voice and text-prompt environment generation, while Unity and Unreal Engine remain the professional standard for complex, large-scale world creation.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -17,21 +17,57 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:virtual-world-platform",
+        "label": "Virtual World Platform"
+      },
+      {
+        "id": "urn:ngm:class:virtual-environment-creation",
+        "label": "Virtual Environment Creation"
+      },
+      {
+        "id": "urn:ngm:class:virtual-destination",
+        "label": "Virtual Destination"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:3-d-modeling",
+        "label": "3D Modeling"
+      },
+      {
+        "id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:virtual-world-creation",
+        "label": "Virtual World Creation"
+      }
+    ]
   },
   "wikilinks": [
     {

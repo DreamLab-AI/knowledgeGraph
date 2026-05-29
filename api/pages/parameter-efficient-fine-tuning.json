@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:parameter-efficient-fine-tuning",
   "domain": "artificial-intelligence",
-  "definition": "Training techniques that update only a small subset of model parameters during fine-tuning, reducing computational and memory requirements whilst maintaining comparable performance to full fine-tuning. PEFT mods enable adaptation of large models with limited resources.",
+  "definition": "Training techniques that update only a small subset of model parameters during fine-tuning, reducing computational and memory requirements whilst maintaining comparable performance to full fine-tuning. PEFT methods enable adaptation of large models with limited resources by freezing most pre-trained weights and adding or modifying a minimal set of trainable parameters.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -13,21 +13,68 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:lo-ra-fine-tuning",
+        "label": "LoRA Fine-Tuning"
+      },
+      {
+        "id": "urn:ngm:class:adapter-modules",
+        "label": "Adapter Modules"
+      },
+      {
+        "id": "urn:ngm:class:prompt-tuning",
+        "label": "Prompt Tuning"
+      },
+      {
+        "id": "urn:ngm:class:prefix-tuning",
+        "label": "Prefix Tuning"
+      },
+      {
+        "id": "urn:ngm:class:qlo-ra",
+        "label": "QLoRA"
+      }
+    ],
     "requires": [],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:full-fine-tuning",
+        "label": "Full Fine Tuning"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
+      }
+    ]
   },
   "wikilinks": [
     {

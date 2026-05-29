@@ -42,16 +42,34 @@ public:: true
   "@id": "urn:ngm:class:film-production",
   "@type": "Class",
   "label": "Film Production",
-  "definition": "Film Production is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "The end-to-end creative and technical process of making motion picture content, encompassing development, pre-production, principal photography, visual effects, post-production, and distribution. Modern film production increasingly integrates spatial computing technologies such as virtual production workflows, LED volume stages, real-time game engine rendering, and AI-assisted tools that compress timelines and reduce location dependency.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:virtual-production-workflow", "label": "Virtual Production Workflow"},
+      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"},
+      {"@id": "urn:ngm:class:design-software", "label": "Design Software"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:production-pipeline", "label": "Production Pipeline"},
+      {"@id": "urn:ngm:class:content-production-workflow", "label": "Content Production Workflow"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:world-building", "label": "World Building"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:animation-technique", "label": "Animation Technique"},
+      {"@id": "urn:ngm:class:3-d-rendering-engine", "label": "3D Rendering Engine"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -87,20 +105,23 @@ public:: true
 
 
 - ### Definition
-  - Film Production is a concept within the metaverse domain. Further enrichment pending.
+  - The end-to-end creative and technical process of making motion picture content, encompassing development, pre-production, principal photography, visual effects, post-production, and distribution. Modern film production increasingly integrates spatial computing technologies such as virtual production workflows, LED volume stages, real-time game engine rendering, and AI-assisted tools that compress timelines and reduce location dependency.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:FilmProduction
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: Virtual Production Workflow (in-camera VFX pipeline), Game Engine (real-time background rendering), Design Software (asset creation)
+  - **hasPart**: Production Pipeline (structured phase model), Content Production Workflow (asset and task orchestration)
+  - **enables**: World Building (narrative environment design)
+  - **relatedTo**: Animation Technique (motion and performance capture), 3D Rendering Engine (final frame output)
 
 - ### Content
 
   ## Overview
 
-  Film Production represents an abstract concept in the metaverse ontology hierarchy.
+  Film production encompasses the full lifecycle of creating motion picture content. In its contemporary form, it integrates virtual production technologies — particularly LED volume stages powered by real-time game engines such as Unreal Engine — enabling directors to see composited digital environments in-camera during principal photography. This convergence of spatial computing and traditional filmmaking compresses traditional post-production VFX schedules by moving digital environment work to pre-production.
 
   #### Related Concepts
   - [[owl:Thing]]

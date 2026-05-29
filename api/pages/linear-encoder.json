@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:linear-encoder",
   "domain": "robotics",
-  "definition": "Linear encoder measures linear displacement.",
+  "definition": "A Linear Encoder is a position sensing device that measures linear (translational) displacement along a single axis by converting physical motion into an electrical signal \u2014 typically a series of digital pulses or an analogue waveform \u2014 that a controller can interpret as position, velocity, or acceleration data. Linear encoders may be optical (using a diffraction grating or glass scale), magnetic (using a magnetised tape), or capacitive, with resolution ranging from micrometres to nanometres in precision metrology applications. They are essential feedback elements in CNC machine tools, semiconductor lithography stages, and high-precision robotic manipulators where closed-loop positional accuracy is required.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-perception",
@@ -17,21 +17,91 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      },
+      {
+        "id": "urn:ngm:class:sensor-technology",
+        "label": "Sensor Technology"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      },
+      {
+        "id": "urn:ngm:class:calibration",
+        "label": "Calibration"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:motion-control",
+        "label": "Motion Control"
+      },
+      {
+        "id": "urn:ngm:class:position-control",
+        "label": "PositionControl"
+      },
+      {
+        "id": "urn:ngm:class:servo-control",
+        "label": "Servo Control"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      },
+      {
+        "id": "urn:ngm:class:feedback-mechanism",
+        "label": "Feedback Mechanism"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:robot-hardware",
+        "label": "Robot Hardware"
+      },
+      {
+        "id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:robot-sensor",
+        "label": "Robot Sensor"
+      },
+      {
+        "id": "urn:ngm:class:robot-joint",
+        "label": "Robot Joint"
+      },
+      {
+        "id": "urn:ngm:class:servo-motor",
+        "label": "Servo Motor"
+      },
+      {
+        "id": "urn:ngm:class:industrial-robot",
+        "label": "Industrial Robot"
+      },
+      {
+        "id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      }
+    ]
   },
   "wikilinks": [
     {

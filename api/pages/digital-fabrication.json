@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:digital-fabrication",
   "domain": "artificial-intelligence",
-  "definition": "Digital Fabrication in the AI context refers to the integration of artificial intelligence with additive manufacturing, CNC machining, and automated production technologies.",
+  "definition": "Digital Fabrication, in the AI context, integrates artificial intelligence with additive manufacturing, CNC machining, and robotic production technologies to optimise fabrication processes. AI enables generative design for novel geometries, predictive maintenance via sensor analytics, real-time quality control through computer vision, and adaptive toolpath planning using reinforcement learning. Machine learning models predict material behaviour, detect defects, and enable mass customisation through digital twin simulation before physical production.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-application",
@@ -13,18 +13,46 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:digital-asset-management",
+        "label": "Digital Asset Management"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": []

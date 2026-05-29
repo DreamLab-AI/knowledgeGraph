@@ -42,9 +42,10 @@ public:: true
   "@id": "urn:ngm:class:simulation-software",
   "@type": "Class",
   "label": "Simulation Software",
-  "definition": "Simulation Software is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Application software that constructs and executes computational models of physical, biological, or social systems, allowing experimental manipulation of parameters to study behaviour over time. Simulation software spans physics engines, agent-based frameworks, and digital twin environments, and is used across engineering, scientific research, training, and metaverse development.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -56,6 +57,36 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:simulation-engine",
+        "label": "Simulation Engine"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:rendering-engine",
+        "label": "Rendering Engine"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ]
   }
 }
 ```
@@ -87,14 +118,18 @@ public:: true
 
 
 - ### Definition
-  - Simulation Software is a concept within the metaverse domain. Further enrichment pending.
+  - Application software that constructs and executes computational models of physical, biological, or social systems, allowing experimental manipulation of parameters to study behaviour over time. Simulation software spans physics engines, agent-based frameworks, and digital twin environments, and is used across engineering, scientific research, training, and metaverse development.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:SimulationSoftware
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Has Part [[Simulation Engine]]
+  - Uses [[GPU Compute]]
+  - Uses [[Rendering Engine]]
+  - Enables [[Digital Twin]]
+  - Related To [[Spatial Computing]]
 
 - ### Content
 

@@ -5,29 +5,99 @@
   "public": true,
   "classIri": "urn:ngm:class:edge-cloud-collaboration",
   "domain": "artificial-intelligence",
-  "definition": "Edge-Cloud Collaboration is a hybrid architecture dynamically partitioning AI workloads between resource-constrained edge devices and powerful cloud infrastructure, optimizing end-to-end latency, bandwidth utilization, energy consumption, and accuracy through adaptive offloading, model splitting,...",
+  "definition": "Edge-Cloud Collaboration is a hybrid architecture that dynamically partitions AI workloads between resource-constrained edge devices and powerful cloud infrastructure, optimising end-to-end latency, bandwidth utilisation, energy consumption, and inference accuracy through adaptive offloading, model splitting, early exit, and cascaded inference strategies. The architecture enables edge devices to handle time-sensitive inference locally while delegating computationally intensive or contextually uncertain tasks to the cloud, achieving the complementary strengths of both deployment tiers.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure (Category)"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:bandwidth-adaptation",
+        "label": "Bandwidth Adaptation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:edge-ai-system",
+        "label": "Edge AI System"
+      },
+      {
+        "id": "urn:ngm:class:federated-edge-learning",
+        "label": "Federated Edge Learning"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-infrastructure",
+        "label": "Machine Learning Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:latency-aware-edge-ai",
+        "label": "Latency-Aware Edge AI"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:io-t-ai-integration",
+        "label": "IoT AI Integration"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:edge-computing-node",
+        "label": "Edge Computing Node"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:edge-orchestration",
+        "label": "Edge Orchestration"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing-architecture",
+        "label": "Edge Computing Architecture"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:edge-ai-accelerators",
+        "label": "Edge AI Accelerators"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-platform",
+        "label": "Machine Learning Platform"
+      },
+      {
+        "id": "urn:ngm:class:cloud-native-applications",
+        "label": "Cloud-Native Applications"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -7,7 +7,12 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Supervised Learning]]
+  - requires [[Fine Tuning]]
+  - enables [[Generative AI]]
+  - relatedTo [[RLHF]]
+  - relatedTo [[Prompt Engineering]]
+  - relatedTo [[Transfer Learning]]
 
 - ### Content
   - A fine-tuning technique that trains language models to follow natural language instructions by training on diverse instruction-response pairs. Instruction tuning enables models to generalise to new tasks described through instructions without task-specific training data.

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:people",
   "domain": "infrastructure",
-  "definition": "PEOPLE is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A curated personal contact and collaboration index tracking domain experts, industry practitioners, and potential collaborators relevant to AI, immersive technology, and spatial computing initiatives. Entries record relationship context, project overlap, and follow-up actions to support relationship management and opportunity development.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-software-engineering",
@@ -13,8 +13,8 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -24,10 +24,32 @@
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:education-and-ai",
+        "label": "Education and AI"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:collaboration",
+        "label": "Collaboration"
+      }
+    ]
   },
   "wikilinks": [
     {

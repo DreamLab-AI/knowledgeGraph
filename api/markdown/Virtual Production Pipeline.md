@@ -48,7 +48,8 @@ public:: true
   "label": "Virtual Production Pipeline",
   "definition": "The end-to-end workflow for creating film and television content using real-time rendering, LED volumes, motion capture, and game engine technology, integrating pre-visualization, on-set virtual environments, and in-camera visual effects to replace traditional post-production VFX processes.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-display-and-rendering",
@@ -64,6 +65,44 @@ public:: true
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:virtual-production-workflow",
+        "label": "Virtual Production Workflow"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      },
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:film-production",
+        "label": "Film Production"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:virtual-production-volume",
+        "label": "Virtual Production Volume"
+      },
+      {
+        "@id": "urn:ngm:class:visual-effects",
+        "label": "Visual Effects"
+      }
+    ]
   }
 }
 ```
@@ -109,6 +148,13 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Virtual Production]]
+  - Requires: [[Real-Time Rendering]]
+  - Requires: [[Motion Capture]]
+  - Requires: [[Game Engine]]
+  - Uses: [[Virtual Production Volume]]
+  - Uses: [[Visual Effects]]
+  - Enables: [[Film Production]]
+  - Has Part: [[Virtual Production Workflow]]
 
 - ### Content
 

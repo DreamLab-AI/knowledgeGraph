@@ -5,33 +5,72 @@
   "public": true,
   "classIri": "urn:ngm:class:robotics-domain",
   "domain": "robotics",
-  "definition": "The Robotics Domain encompasses intelligent machines and automated systems, providing a formal ontological framework for knowledge representation, autonomous reasoning, and robotic behaviors.",
+  "definition": "The Robotics Domain is a top-level knowledge domain encompassing the design, construction, operation, and governance of intelligent machines. It provides a formal ontological framework \u2014 anchored in standards such as IEEE 1872 (CORA) \u2014 for representing robot architectures, sensor systems, actuators, motion planning, perception, and human-robot interaction, enabling unambiguous knowledge transfer among humans, robots, and AI systems.",
   "subClassOf": [
-    {
-      "id": "urn:ngm:class:robo-actuation-and-control",
-      "label": "Actuation and Control"
-    },
     {
       "id": "urn:ngm:class:technology-domain",
       "label": "Technology Domain"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.75,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:robo-actuation-and-control",
+        "label": "Actuation and Control"
+      },
+      {
+        "id": "urn:ngm:class:robo-human-robot-interaction",
+        "label": "Human-Robot Interaction"
+      },
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:perception-system",
+        "label": "Perception System"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      }
+    ],
     "requires": [],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ]
   },
   "wikilinks": [
     {

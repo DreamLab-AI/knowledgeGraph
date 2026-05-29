@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:responsible-scaling-policy",
   "domain": "artificial-intelligence",
-  "definition": "A Responsible Scaling Policy (RSP) is a voluntary commitment by AI developers to conduct safety evaluations at defined capability thresholds and to pause or constrain deployment if predefined risk criteria are met.",
+  "definition": "A Responsible Scaling Policy (RSP) is a voluntary safety commitment by frontier AI developers that specifies: the capability thresholds at which enhanced safety evaluations must be conducted before further scaling or deployment; the specific risk criteria (particularly around biological, chemical, nuclear, and cyberweapon uplift) that would trigger deployment restrictions; and the technical and organisational safeguards required at each capability level. RSPs translate high-level safety intentions into concrete, falsifiable commitments, creating accountability mechanisms analogous to a self-imposed regulatory framework operating ahead of formal government regulation.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
+      },
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      },
+      {
+        "id": "urn:ngm:class:frontier-model-forum",
+        "label": "Frontier Model Forum"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

@@ -7,6 +7,10 @@
 
 - ### Relationships
   - bridges-to:: [[Telecollaboration]]
+  - hasPart:: [[Fairness]], [[Explainability]], [[Accountability]], [[Bias]]
+  - requires:: [[AI Safety]], [[Governance Framework]]
+  - standardizedBy:: [[EU AI Act]]
+  - relatedTo:: [[AIEthics]]
 
 - ### Content
   - **Classification**

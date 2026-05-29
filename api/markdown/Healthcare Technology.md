@@ -42,9 +42,10 @@ public:: true
   "@id": "urn:ngm:class:healthcare-technology",
   "@type": "Class",
   "label": "Healthcare Technology",
-  "definition": "Healthcare Technology is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Healthcare Technology encompasses the digital tools, software systems, and AI-driven applications deployed in clinical and health management contexts, including medical imaging, electronic health records, clinical decision support, and telemedicine platforms. It bridges spatial computing, data analytics, and AI to improve diagnostic accuracy, treatment outcomes, and health system efficiency.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -56,6 +57,40 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:medical-imaging",
+        "label": "Medical Imaging"
+      },
+      {
+        "@id": "urn:ngm:class:clinical-decision-support",
+        "label": "Clinical Decision Support"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:healthcare-analytics",
+        "label": "Healthcare Analytics"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:healthcare-ai",
+        "label": "Healthcare AI"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:healthcare-records",
+        "label": "Healthcare Records"
+      },
+      {
+        "@id": "urn:ngm:class:financial-technology",
+        "label": "Financial Technology"
+      }
+    ]
   }
 }
 ```
@@ -87,14 +122,19 @@ public:: true
 
 
 - ### Definition
-  - Healthcare Technology is a concept within the metaverse domain. Further enrichment pending.
+  - Healthcare Technology encompasses the digital tools, software systems, and AI-driven applications deployed in clinical and health management contexts, including medical imaging, electronic health records, clinical decision support, and telemedicine platforms. It bridges spatial computing, data analytics, and AI to improve diagnostic accuracy, treatment outcomes, and health system efficiency.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:HealthcareTechnology
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Has Part [[Medical Imaging]]
+  - Has Part [[Clinical Decision Support]]
+  - Uses [[Healthcare AI]]
+  - Enables [[Healthcare Analytics]]
+  - Related To [[Healthcare Records]]
+  - Related To [[Financial Technology]]
 
 - ### Content
 

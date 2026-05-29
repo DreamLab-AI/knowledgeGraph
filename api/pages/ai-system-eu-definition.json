@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ai-system-eu-definition",
   "domain": "artificial-intelligence",
-  "definition": "A machine-based system that can operate autonomously and adapt after deployment, generating outputs like predictions or decisions.",
+  "definition": "Under EU AI Act Article 3(1), a machine-based system designed to operate with varying levels of autonomy, capable of adapting after deployment, and generating outputs such as predictions, content, recommendations, or decisions that can influence physical or virtual environments. This definition establishes the regulatory scope of the AI Act and aligns with the 2024 OECD AI Principles, distinguishing AI systems from traditional software by their inferential and adaptive capabilities.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -14,10 +14,19 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
@@ -25,9 +34,27 @@
     "bridgesTo": [],
     "uses": [],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-provider",
+        "label": "AI Provider"
+      },
+      {
+        "id": "urn:ngm:class:ai-lifecycle",
+        "label": "AI Lifecycle"
+      },
+      {
+        "id": "urn:ngm:class:general-purpose-ai-model",
+        "label": "General Purpose AI Model"
+      }
+    ]
   },
   "wikilinks": [
     {

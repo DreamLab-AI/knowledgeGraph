@@ -37,15 +37,32 @@ public:: true
   "@id": "urn:ngm:class:property-system",
   "@type": "Class",
   "label": "Property System",
-  "definition": "Property System is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A Property System is a software architecture pattern for attaching typed key-value attributes to entities within a metaverse or game engine context, enabling data binding, runtime configuration, and dynamic object behaviour without hard-coded class inheritance. It underpins avatar customisation, world-object state management, and reactive UI data flows in spatial computing platforms.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:avatar-customization", "label": "Avatar Customization"},
+      {"@id": "urn:ngm:class:avatar-system", "label": "Avatar System"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:asset-management", "label": "Asset Management"},
+      {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -76,14 +93,17 @@ public:: true
 
 
 - ### Definition
-  - PropertySystem is a concept within the ngm domain.
+  - A Property System is a software architecture pattern for attaching typed key-value attributes to entities within a metaverse or game engine context, enabling data binding, runtime configuration, and dynamic object behaviour without hard-coded class inheritance. It underpins avatar customisation, world-object state management, and reactive UI data flows in spatial computing platforms.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:PropertySystem
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - enables: [[Avatar Customization]], [[Avatar System]]
+  - uses: [[Game Engine]]
+  - relatedTo: [[Asset Management]], [[Digital Asset]]
+  - partOf: [[Spatial Computing]]
 
 - ### Content
   # PropertySystem

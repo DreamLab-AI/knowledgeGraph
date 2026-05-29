@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:internet-of-things",
   "domain": "infrastructure",
-  "definition": "The Internet of Things (IoT) is a network of physical devices embedded with sensors, software, and connectivity that collect and exchange data with other systems over the internet.",
+  "definition": "The Internet of Things (IoT) is a distributed computing paradigm comprising physical objects embedded with sensors, actuators, microcontrollers, and wireless communication modules that collect, exchange, and act upon data autonomously over IP networks. IoT systems span a hierarchy from constrained end-devices through edge gateways to cloud analytics platforms, and rely on lightweight protocols such as MQTT, CoAP, and AMQP designed for low-bandwidth, high-latency, or lossy network conditions. IoT architectures underpin smart manufacturing, precision agriculture, smart-city infrastructure, and industrial automation applications.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-network-and-comms",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:telemetry-and-analytics",
+        "label": "Telemetry & Analytics"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:mqtt",
+        "label": "MQTT"
+      },
+      {
+        "id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "id": "urn:ngm:class:sensor-data",
+        "label": "Sensor Data"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

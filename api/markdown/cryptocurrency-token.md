@@ -6,9 +6,15 @@
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
-
-  - bridges-to:: [[Blockchain]] (bc)
+  - Requires [[Smart Contract]]
+  - Requires [[Blockchain]]
+  - Standardized By [[Token Standard]]
+  - Standardized By [[ERC-20]]
+  - Standardized By [[ERC-721]]
+  - Has Part [[Fungible Token]]
+  - Has Part [[Governance Token]]
+  - Has Part [[Utility Token]]
+  - Related To [[Token Economics]]
 - ### Content
 
   ## Definition

@@ -46,15 +46,29 @@ public:: true
   "@id": "urn:ngm:class:data-interoperability",
   "@type": "Class",
   "label": "Data Interoperability",
-  "definition": "Data Interoperability is a type of Infrastructure in the infrastructure domain.",
+  "definition": "Data Interoperability is the capability of heterogeneous systems, applications, and data sources to exchange, interpret, and act upon shared data without loss of meaning. It encompasses syntactic interoperability (common formats and protocols), semantic interoperability (shared vocabularies and ontologies), and pragmatic interoperability (agreed processes and workflows). Achieving data interoperability across distributed environments requires standards-based data formats, schema alignment, and API contracts.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-data-management",
       "label": "Data Management"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:data-standards", "label": "Data Standards"},
+      {"@id": "urn:ngm:class:data-format", "label": "Data Format"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"},
+      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:semantic-interoperability", "label": "Semantic Interoperability"},
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -96,14 +110,19 @@ public:: true
 
 
 - ### Definition
-  - Data Interoperability is a concept within the metaverse domain. Further enrichment pending.
+  - Data Interoperability is the capability of heterogeneous systems, applications, and data sources to exchange, interpret, and act upon shared data without loss of meaning. It encompasses syntactic interoperability (common formats and protocols), semantic interoperability (shared vocabularies and ontologies), and pragmatic interoperability (agreed processes and workflows). Achieving data interoperability across distributed environments requires standards-based data formats, schema alignment, and API contracts.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:DataInteroperability
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Data Standards]]
+  - requires [[Data Format]]
+  - enables [[Interoperability]]
+  - enables [[Data Pipeline]]
+  - relatedTo [[Semantic Interoperability]]
+  - relatedTo [[Data Governance]]
 
 - ### Content
 

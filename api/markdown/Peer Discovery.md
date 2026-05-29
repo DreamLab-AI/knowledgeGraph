@@ -66,7 +66,7 @@ public:: true
   "@id": "urn:ngm:class:peer-discovery",
   "@type": "Class",
   "label": "Peer Discovery",
-  "definition": "Node finding mechanism within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "Protocol mechanism by which blockchain nodes locate and connect to other network participants without central coordination, using bootstrap nodes, DNS seeds, gossip-based address propagation, and distributed hash table lookups to establish and maintain a resilient peer-to-peer overlay network.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -83,7 +83,25 @@ public:: true
       "label": "NetworkComponent"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:gossip-protocol", "label": "Gossip Protocol"},
+      {"@id": "urn:ngm:class:bootstrap-node", "label": "Bootstrap Node"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"},
+      {"@id": "urn:ngm:class:censorship-resistance", "label": "Censorship Resistance"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:network-topology", "label": "Network Topology"},
+      {"@id": "urn:ngm:class:sybil-attack", "label": "Sybil Attack"},
+      {"@id": "urn:ngm:class:sybil-resistance", "label": "Sybil Resistance"},
+      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"},
+      {"@id": "urn:ngm:class:blockchain-protocol", "label": "Blockchain Protocol"},
+      {"@id": "urn:ngm:class:fork-choice-rule", "label": "Fork Choice Rule"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

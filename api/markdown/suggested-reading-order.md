@@ -1,12 +1,14 @@
 - ### Definition
-  - Suggested Reading Order is a concept within the ngm domain.
+  - Suggested Reading Order is a curated navigation guide that sequences the principal pages of the NarrativeGoldmine knowledge graph into a coherent pedagogical path. It maps the intended conceptual dependencies — from foundational web technologies through decentralisation, digital assets, spatial computing, and AI — enabling readers to build understanding progressively across the graph's interconnected topic areas.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:SuggestedReadingOrder
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart:: Semantic Web, Blockchain, Spatial Computing, State of the art in AI
+  - enables:: Adoption of Convergent Technologies, Convergence
+  - relatedTo:: Update Cycle, Distributed Identity
 
 - ### Content
   - I have been working on learning, and learning how to store that knowledge for myself and others since 2019 when I stopped being Technical Director of the [[Octave Multi Model Laboratory]] which followed on from the [[National Industrial Centre for Virtual Environments]].

@@ -42,15 +42,30 @@ public:: true
   "@id": "urn:ngm:class:optimiser",
   "@type": "Class",
   "label": "Optimiser",
-  "definition": "Optimiser is a spatial computing concept and a type of spatial-computing.",
+  "definition": "An Optimiser is an algorithm that adjusts model parameters during training to minimise a loss function, guiding convergence towards an optimal solution. Modern optimisers such as Adam, RMSProp, and AdaGrad extend stochastic gradient descent with adaptive learning rates, momentum accumulation, and second-moment estimates, enabling faster and more stable training of deep neural networks across diverse tasks.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"},
+      {"@id": "urn:ngm:class:loss-function", "label": "Loss Function"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:stochastic-gradient-descent", "label": "Stochastic Gradient Descent"},
+      {"@id": "urn:ngm:class:hyperparameter", "label": "Hyperparameter"},
+      {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -87,13 +102,21 @@ public:: true
 
 
 - ### Definition
-  - ### Primary Definition
+  - An Optimiser is an algorithm that adjusts model parameters during training to minimise a loss function. Modern optimisers such as Adam and RMSProp extend stochastic gradient descent with adaptive learning rates and momentum, enabling faster and more stable convergence of deep neural networks.
+
+- ### Primary Definition
 - ### Semantic Classification
   - owl-class:: spatial-computing:Optimiser
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Gradient Descent]]
+  - requires [[Loss Function]]
+  - enables [[Model Training]]
+  - enables [[Deep Learning]]
+  - relatedTo [[Stochastic Gradient Descent]]
+  - relatedTo [[Hyperparameter]]
+  - relatedTo [[Backpropagation]]
 - ### Content
   - ### Primary Definition
   An **Optimiser** is an algorithm that adjusts model parameters during training to minimise the loss function. Modern optimisers are advanced variants of gradient descent with adaptive learning rates, momentum, and other techniques for improved convergence.

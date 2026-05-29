@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:environmental-assessment",
   "@type": "Class",
   "label": "Environmental Assessment",
-  "definition": "Environmental Assessment is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "The systematic evaluation of the environmental impact of technological systems, infrastructure, or projects, measuring metrics such as energy consumption, carbon footprint, and e-waste generation. In spatial computing and metaverse contexts, environmental assessment applies to data centre operations, XR hardware lifecycles, and the cumulative sustainability profile of immersive platform deployments.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
@@ -60,6 +61,44 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:carbon-footprint-assessment",
+        "label": "Carbon Footprint Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:environmental-accounting",
+        "label": "Environmental Accounting"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:environmental-standards",
+        "label": "Environmental Standards"
+      },
+      {
+        "@id": "urn:ngm:class:environmental-sustainability",
+        "label": "Environmental Sustainability"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-footprint-measurement",
+        "label": "Carbon Footprint Measurement"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:circular-economy",
+        "label": "Circular Economy"
+      }
+    ]
   }
 }
 ```
@@ -96,7 +135,7 @@ public:: true
 
 
 - ### Definition
-  - Environmental Assessment is a concept within the metaverse domain. Further enrichment pending.
+  - The systematic evaluation of the environmental impact of technological systems, infrastructure, or projects, measuring metrics such as energy consumption, carbon footprint, and e-waste generation. In spatial computing and metaverse contexts, environmental assessment applies to data centre operations, XR hardware lifecycles, and the cumulative sustainability profile of immersive platform deployments.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:EnvironmentalAssessment
@@ -104,6 +143,13 @@ public:: true
 
 - ### Relationships
   - bridges-to:: [[Computer Vision]]
+  - Uses: [[Computer Vision]]
+  - Uses: [[Carbon Footprint Measurement]]
+  - Enables: [[Environmental Standards]]
+  - Enables: [[Environmental Sustainability]]
+  - Has Part: [[Carbon Footprint Assessment]]
+  - Has Part: [[Environmental Accounting]]
+  - Related To: [[Circular Economy]]
 
 - ### Content
 

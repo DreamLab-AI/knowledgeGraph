@@ -46,15 +46,31 @@ public:: true
   "@id": "urn:ngm:class:wheeled-mobile-robot",
   "@type": "Class",
   "label": "Wheeled Mobile Robot",
-  "definition": "Wheeled Mobile Robot - Wheeled Mobile Robot in robotics systems",
+  "definition": "A mobile robot that uses wheels as its primary locomotion mechanism, enabling efficient navigation on flat or structured surfaces. Wheeled mobile robots span applications from industrial logistics and warehouse automation to outdoor infrastructure maintenance, typically combining SLAM-based navigation, sensor fusion, and modular payloads.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-robot-type",
       "label": "Robot Type"
     }
   ],
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
+      {"@id": "urn:ngm:class:mobile-robot", "label": "Mobile Robot"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:slam", "label": "SLAM"},
+      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
+      {"@id": "urn:ngm:class:robot-operating-system", "label": "Robot Operating System"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
@@ -104,7 +120,9 @@ public:: true
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - is-subclass-of:: [[Robotics]]
+  - is-subclass-of:: [[Robotics]], [[Mobile Robot]]
+  - **Uses**: [[SLAM]] (localisation and mapping), [[Sensor Fusion]] (lidar, camera, IMU), [[Robot Operating System]]
+  - **Enables**: [[Autonomous Navigation]], [[Digital Twin]] (real-world robot state in virtual model)
 
 - ### Content
   - ### Original Content

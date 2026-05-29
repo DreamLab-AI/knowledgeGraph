@@ -78,20 +78,62 @@ public:: true
   "@id": "urn:ngm:class:public-blockchain",
   "@type": "Class",
   "label": "Public Blockchain",
-  "definition": "Permissionless, decentralised blockchain networks enabling unrestricted transaction participation and transparent validation without centralised authority, including Bitcoin, ereum, and Cardano, providing Censorship Resistance, Immutability, and User Sovereignty whilst sac...",
+  "definition": "A permissionless, decentralised distributed ledger network in which any party may participate, validate transactions, and inspect the chain state without requiring authorisation. Public blockchains such as Bitcoin and Ethereum achieve censorship resistance and immutability through global state replication and open consensus mechanisms, at the cost of reduced transaction throughput and higher energy consumption relative to permissioned alternatives.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
     }
   ],
-  "quality": 0.4,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:censorship-resistance",
+        "label": "Censorship Resistance"
+      },
+      {
+        "@id": "urn:ngm:class:immutability",
+        "label": "Immutability"
+      },
+      {
+        "@id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:permissioned-blockchain",
+        "label": "Permissioned Blockchain"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      }
+    ]
   }
 }
 ```
@@ -176,7 +218,10 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Has part [[Consensus Mechanism]], [[Smart Contract]]
+  - Enables [[Censorship Resistance]], [[Immutability]], [[Cryptocurrency]]
+  - Contrasts with [[Permissioned Blockchain]]
+  - Related to [[Distributed Ledger Technology]], [[Blockchain Governance]]
 
 - ### Content
   - Permissionless, decentralised blockchain networks enabling unrestricted transaction participation and transparent validation without centralised authority or permission requirements. Public blockchains—[[Bitcoin]], [[Ethereum]], [[Cardano]]—provide [[CensorshipResistance]], [[Immutability]], and [[UserSovereignty]] through global state replication and permissionless consensus whilst sacrificing scalability, privacy, and energy efficiency compared to [[PermissionedBlockchain|permissioned alternatives]]. Tradeoffs enable censorship-resistant financial systems but inhibit enterprise adoption requiring confidentiality and regulatory compliance.

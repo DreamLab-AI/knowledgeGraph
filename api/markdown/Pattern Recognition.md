@@ -56,8 +56,8 @@ public:: true
   "label": "Pattern Recognition",
   "definition": "Pattern Recognition is the automated identification of regularities, structures, and categories in data using machine learning algorithms.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
-  "quality": 0.35,
+  "maturity": "emerging",
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -68,7 +68,20 @@ public:: true
       "@id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
     }
-  ]
+  ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
+      {"@id": "urn:ngm:class:feature-extraction", "label": "Feature Extraction"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:object-detection", "label": "Object Detection"},
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+    ]
+  }
 }
 ```
 
@@ -122,6 +135,11 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: ['owl:Thing']
+  - uses [[Deep Learning]]
+  - uses [[Feature Extraction]]
+  - enables [[Object Detection]]
+  - enables [[Computer Vision]]
+  - relatedTo [[Machine Learning]]
 
 - ### Content
 

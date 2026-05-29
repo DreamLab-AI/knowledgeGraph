@@ -8,6 +8,10 @@
 
 - ### Relationships
   - is-subclass-of:: [[Pre-Production]]
+  - requires:: [[Virtual Reality]], [[Photogrammetry]]
+  - uses:: [[Game Engine]], [[Virtual Camera]], [[Motion Capture]]
+  - enables:: [[Virtual Production Workflow]], [[Virtual Production]]
+  - partOf:: [[Pre Production]]
 
 - ### Content
 

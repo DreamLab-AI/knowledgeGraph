@@ -8,6 +8,13 @@
 
 - ### Relationships
   - is-subclass-of:: [[Testing Infrastructure]]
+  - requires [[Tracking Technology]]
+  - requires [[Latency]]
+  - enables [[Quality Assurance]]
+  - enables [[Accessibility]]
+  - supports [[Extended Reality]]
+  - supports [[Immersive Experience]]
+  - supports [[User Research]]
 
 - ### Content
 

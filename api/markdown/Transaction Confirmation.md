@@ -66,7 +66,7 @@ public:: true
   "@id": "urn:ngm:class:transaction-confirmation",
   "@type": "Class",
   "label": "Transaction Confirmation",
-  "definition": "Inclusion in blockchain within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "The process by which a blockchain transaction achieves inclusion in a mined or validated block and subsequently accumulates additional blocks on top of it, reducing the probability of reversal. The number of confirmations required for sufficient security depends on consensus mechanism and transaction value; Bitcoin typically requires 6 confirmations while Proof-of-Stake systems with deterministic finality may confirm in a single block.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -83,7 +83,28 @@ public:: true
       "label": "DistributedDataStructure"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
+      {"@id": "urn:ngm:class:validator-node", "label": "Validator Node"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:block", "label": "Block"},
+      {"@id": "urn:ngm:class:block-time", "label": "Block Time"},
+      {"@id": "urn:ngm:class:timestamp", "label": "Timestamp"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:finality", "label": "Finality"},
+      {"@id": "urn:ngm:class:transaction-finality", "label": "Transaction Finality"},
+      {"@id": "urn:ngm:class:deterministic-finality", "label": "Deterministic Finality"},
+      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:blockchain-compliance", "label": "Blockchain Compliance"},
+      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

@@ -54,9 +54,10 @@ public:: true
   "@id": "urn:ngm:class:pathology-ai",
   "@type": "Class",
   "label": "Pathology AI",
-  "definition": "Pathology AI comprises artificial intelligence systems for automated analysis of histopathology slides, cytology specimens, and other pathological images.",
+  "definition": "Artificial intelligence systems for automated analysis of histopathology slides, cytology specimens, and other pathological images. Pathology AI performs tasks including cancer detection and grading, biomarker quantification, and morphological analysis using whole-slide imaging pipelines and deep learning architectures tailored for gigapixel images at multi-scale resolution.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-application",
@@ -67,11 +68,44 @@ public:: true
       "label": "Medical Imaging AI"
     }
   ],
-  "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:medical-ai",
+        "label": "Medical AI"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:image-segmentation",
+        "label": "Image Segmentation"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:radiology-ai",
+        "label": "Radiology AI"
+      },
+      {
+        "@id": "urn:ngm:class:healthcare-analytics",
+        "label": "Healthcare Analytics"
+      }
+    ]
   }
 }
 ```
@@ -126,7 +160,13 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - is-subclass-of:: Medical Imaging AI
+  - Uses [[Computer Vision]]
+  - Uses [[Deep Learning]]
+  - Related To [[Radiology AI]]
+  - Related To [[Healthcare Analytics]]
+  - Enables [[Medical AI]]
+  - Depends On [[Image Segmentation]]
 
 - ### Content
   - Pathology AI comprises artificial intelligence systems for automated analysis of histopathology slides, cytology specimens, and other pathological images. These systems perform tasks including cancer detection, grading, biomarker quantification, and morphological analysis using whole slide imaging and deep learning architectures tailored for gigapixel pathology images.

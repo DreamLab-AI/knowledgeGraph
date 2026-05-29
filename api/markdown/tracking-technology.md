@@ -1,12 +1,17 @@
 - ### Definition
-  - TrackingTechnology is a concept within the ngm domain.
+  - Tracking Technology refers to the hardware and software systems that determine the real-time position, orientation, and motion of a user or device in physical space for extended reality applications. Approaches include inside-out tracking using onboard cameras and SLAM, outside-in tracking using fixed base stations, eye tracking for gaze-based interaction, and hand/finger tracking for controller-free input.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:TrackingTechnology
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Sensor Fusion]]
+  - requires [[SLAM]]
+  - enables [[Motion Tracking]]
+  - enables [[Hand Tracking]]
+  - enables [[Eye Tracking]]
+  - partOf [[XR Hardware]]
 
 - ### Content
   # TrackingTechnology

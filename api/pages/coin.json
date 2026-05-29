@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:coin",
   "domain": "blockchain",
-  "definition": "Native blockchain asset within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "A Coin is a native cryptographic asset issued and governed by a blockchain protocol itself, distinct from tokens created by smart contracts on top of an existing chain. Coins function as the primary medium of exchange for transaction fees, validator rewards, and network participation incentives within their respective distributed ledger ecosystems, and may also serve as stores of value, monetary reserves, or collateral in decentralised finance applications.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-token-and-asset",
@@ -21,21 +21,78 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:monetary-system",
+        "label": "Monetary System"
+      },
+      {
+        "id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:mining-reward",
+        "label": "Mining Reward"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin-token",
+        "label": "Stablecoin Token"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-market",
+        "label": "Digital Asset Market"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:cryptocurrency-token",
+        "label": "Cryptocurrency Token"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:digital-currency",
+        "label": "Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:monetary-sovereignty",
+        "label": "Monetary Sovereignty"
+      },
+      {
+        "id": "urn:ngm:class:economic-layer",
+        "label": "Economic Layer"
+      }
+    ]
   },
   "wikilinks": [
     {

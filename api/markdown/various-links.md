@@ -1,12 +1,12 @@
 - ### Definition
-  - Various Links is a concept within the ngm domain.
+  - **Various Links** is a curated collection of external hyperlinks spanning blockchain, cryptocurrency, augmented and virtual reality, AI generative tools, and media production resources, assembled as a research reference page for cross-domain topics relevant to the NarrativeGoldmine knowledge graph.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:VariousLinks
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **relatedTo**: [[Blockchain]], [[Generative AI]], [[Augmented Reality]] — the link collection covers research and industry resources across these primary domains
 
 - ### Content
   - [Link](https://arxiv.org/abs/2103.15627)

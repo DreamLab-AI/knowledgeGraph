@@ -1,12 +1,14 @@
 - ### Definition
-  - ProductionFacility is a concept within the ngm domain.
+  - A Production Facility is a specialised physical and digital infrastructure for professional metaverse and immersive content creation, encompassing motion-capture stages, volumetric capture rigs, LED volume virtual production sets, GPU render farms, and cloud-based asset management pipelines. It integrates real-time rendering engines with collaborative tools enabling distributed global teams to produce high-fidelity 3D and spatial content.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:ProductionFacility
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart: [[Motion Capture]], [[Real-Time Rendering]], [[Asset Management]]
+  - uses: [[3D Content Pipeline]], [[Game Engine]]
+  - enables: [[Content Production Workflow]], [[3D Asset]]
 
 - ### Content
   # ProductionFacility

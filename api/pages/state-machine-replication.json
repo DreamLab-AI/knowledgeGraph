@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:state-machine-replication",
   "domain": "blockchain",
-  "definition": "State Machine Replication is a type of Blockchain in the blockchain domain.",
+  "definition": "State Machine Replication (SMR) is a fault-tolerance technique in which multiple server replicas each maintain an identical copy of a deterministic state machine, processing the same ordered sequence of client requests to achieve consistency. It underpins the correctness guarantees of distributed consensus protocols and forms the theoretical foundation of blockchain ledger replication.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-protocol-and-consensus",
@@ -14,11 +14,29 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +45,12 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:state-machine",
+        "label": "State Machine"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:procedural-generation",
   "domain": "spatial-computing",
-  "definition": "Procedural Generation is a spatial computing concept and a type of spatial-computing.",
+  "definition": "Procedural Generation is the algorithmic creation of content \u2014 including terrain, textures, vegetation, buildings, and narrative elements \u2014 using mathematical functions, noise algorithms, and rule-based systems rather than manual authoring. It is foundational to scalable world-building in games and metaverse platforms, enabling vast, varied environments from compact seed parameters.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:world-building",
+        "label": "World Building"
+      },
+      {
+        "id": "urn:ngm:class:procedural-terrain",
+        "label": "Procedural Terrain"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:noise-function-library",
+        "label": "Noise Function Library"
+      },
+      {
+        "id": "urn:ngm:class:3-d-content-generation",
+        "label": "3D Content Generation"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

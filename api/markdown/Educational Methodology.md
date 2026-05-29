@@ -42,20 +42,48 @@ public:: true
   "@id": "urn:ngm:class:educational-methodology",
   "@type": "Class",
   "label": "Educational Methodology",
-  "definition": "Educational Methodology is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Educational Methodology is a structured approach to the design, delivery, and evaluation of learning experiences, encompassing pedagogical theories, instructional design models, and assessment frameworks. In spatial computing contexts it includes immersive, experiential, and simulation-based learning paradigms enabled by XR technologies.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
     }
   ],
-  "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:generative-content",
+        "label": "Generative Content"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ]
   }
 }
 ```
@@ -87,14 +115,18 @@ public:: true
 
 
 - ### Definition
-  - Educational Methodology is a concept within the metaverse domain. Further enrichment pending.
+  - Educational Methodology is a structured approach to the design, delivery, and evaluation of learning experiences, encompassing pedagogical theories, instructional design models, and assessment frameworks. In spatial computing contexts it includes immersive, experiential, and simulation-based learning paradigms enabled by XR technologies.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:EducationalMethodology
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses [[Simulation]] as a safe, repeatable practice environment
+  - Uses [[Virtual Reality]] for full-immersion experiential learning scenarios
+  - Enables [[Generative Content]] (AI-generated adaptive learning materials)
+  - Related to [[Augmented Reality]] as an overlay-based instructional modality
+  - Related to [[Digital Twin]] for applied training against real-system replicas
 
 - ### Content
 

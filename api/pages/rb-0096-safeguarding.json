@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:rb-0096-safeguarding",
   "domain": "robotics",
-  "definition": "safeguarding is a robotics and autonomous systems concept and a type of Robot Safety.",
+  "definition": "Safeguarding, in the context of collaborative and industrial robotics, refers to the ensemble of physical barriers, electronic devices, and procedural controls deployed to prevent hazardous contact between robots and humans. Safeguarding measures include hard guards, light curtains, safety zones, and monitored-stop functions, and are mandated by standards such as ISO 10218 and ISO/TS 15066. Effective safeguarding is complementary to inherent safe design: it mitigates residual risks that cannot be eliminated through power-and-force limiting or speed reduction alone.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-safety-and-standards",
@@ -17,11 +17,33 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:rb-0095-safety-zone",
+        "label": "rb 0095 safety zone"
+      },
+      {
+        "id": "urn:ngm:class:light-curtain",
+        "label": "Light Curtain"
+      },
+      {
+        "id": "urn:ngm:class:rb-0090-emergency-stop",
+        "label": "rb 0090 emergency stop"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:rb-0089-risk-assessment",
+        "label": "rb 0089 risk assessment"
+      },
+      {
+        "id": "urn:ngm:class:rb-0087-safety-standard",
+        "label": "rb 0087 safety standard"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
@@ -29,9 +51,31 @@
     "bridgesTo": [],
     "uses": [],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-10218",
+        "label": "ISO 10218"
+      },
+      {
+        "id": "urn:ngm:class:iso-ts-15066",
+        "label": "ISO TS 15066"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rb-0091-safety-rated-monitored-stop",
+        "label": "rb 0091 safety rated monitored stop"
+      },
+      {
+        "id": "urn:ngm:class:rb-0094-power-and-force-limiting",
+        "label": "rb 0094 power and force limiting"
+      },
+      {
+        "id": "urn:ngm:class:rb-0093-speed-limitation",
+        "label": "rb 0093 speed limitation"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -143,7 +143,7 @@ public:: true
       "label": "Robot Type"
     },
     {
-      "@id": "urn:ngm:class:parallel-robots",
+      "@id": "urn:ngm:class:parallel-robot",
       "label": "Parallel Robots"
     },
     {

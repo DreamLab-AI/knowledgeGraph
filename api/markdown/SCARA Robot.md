@@ -46,7 +46,7 @@ public:: true
   "@id": "urn:ngm:class:scara-robot",
   "@type": "Class",
   "label": "SCARA Robot",
-  "definition": "SCARA robot has selective compliance in X-Y plane and rigidity in Z-axis for fast assembly operations.",
+  "definition": "Selective Compliance Articulated Robot Arm — a four-axis industrial robot with two rotary joints in the horizontal plane that give high compliance laterally whilst providing rigid vertical stiffness along the Z-axis. SCARA robots excel at high-speed pick-and-place, assembly, and packaging tasks that require precise horizontal positioning but resist vertical forces.",
   "domain": "robotics",
   "maturity": "established",
   "subClassOf": [
@@ -59,7 +59,25 @@ public:: true
       "label": "Industrial Robot"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:servo-motor", "label": "Servo Motor"},
+      {"@id": "urn:ngm:class:pid-control", "label": "PID Control"},
+      {"@id": "urn:ngm:class:encoder", "label": "Encoder"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:delta-robot", "label": "Delta Robot"},
+      {"@id": "urn:ngm:class:collaborative-robot", "label": "Collaborative Robot"},
+      {"@id": "urn:ngm:class:forward-kinematics", "label": "Forward Kinematics"},
+      {"@id": "urn:ngm:class:inverse-kinematics", "label": "Inverse Kinematics"},
+      {"@id": "urn:ngm:class:motion-control", "label": "Motion Control"},
+      {"@id": "urn:ngm:class:trajectory-planning", "label": "Trajectory Planning"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:robo-actuation-and-control", "label": "Actuation and Control"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

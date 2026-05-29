@@ -58,9 +58,9 @@ public:: true
   "@id": "urn:ngm:class:ai-ethics",
   "@type": "Class",
   "label": "AI Ethics",
-  "definition": "AI ics addresses the moral principles, values, and guidelines governing the design, development, deployment, and use of artificial intelligence systems.",
+  "definition": "AI Ethics addresses the moral principles, values, and guidelines governing the design, development, deployment, and use of artificial intelligence systems. This interdisciplinary field examines fairness, accountability, transparency, privacy, and bias mitigation, drawing on philosophy, law, and computer science to ensure AI systems respect human rights and societal values.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
@@ -71,7 +71,22 @@ public:: true
       "label": "AI Governance"
     }
   ],
+  "maturity": "emerging",
   "quality": 0.35,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"},
+      {"@id": "urn:ngm:class:fairness", "label": "Fairness"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:bias-mitigation-techniques", "label": "Bias Mitigation Techniques"},
+      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -142,6 +157,12 @@ public:: true
 - ### Relationships
   - is-subclass-of:: ['owl:Thing']
   - bridges-to:: [[Smart Contract]] (domain: bc)
+  - requires:: [[Explainable AI]]
+  - requires:: [[Fairness]]
+  - supports:: [[Responsible AI]]
+  - supports:: [[AI Governance]]
+  - relatedTo:: [[Bias Mitigation Techniques]]
+  - relatedTo:: [[Compliance Framework]]
 
 - ### Content
 

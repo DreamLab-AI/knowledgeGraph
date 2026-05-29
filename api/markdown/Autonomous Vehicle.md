@@ -88,13 +88,29 @@ public:: true
   "label": "Autonomous Vehicle",
   "definition": "An Autonomous Vehicle is a self-driving vehicle capable of navigating and operating without human intervention, employing artificial intelligence for perception, localisation, path planning, motion control, and decision-making.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-robot-type",
       "label": "Robot Type"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
+      {"@id": "urn:ngm:class:perception-system", "label": "Perception System"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:slam", "label": "SLAM"},
+      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:path-planning", "label": "Path Planning"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -195,6 +211,12 @@ public:: true
 
 - ### Relationships
   - bridges-to:: [[Autonomous Robot]] (rb)
+  - requires:: [[Sensor Fusion]]
+  - requires:: [[Perception System]]
+  - uses:: [[SLAM]]
+  - uses:: [[Motion Planning]]
+  - enables:: [[Autonomous Navigation]]
+  - relatedTo:: [[Path Planning]]
 
 - ### Content
   - An Autonomous Vehicle is a self-driving vehicle capable of navigating and operating without human intervention, employing artificial intelligence for perception, localisation, path planning, motion control, and decision-making. Autonomous vehicles integrate sensor fusion, computer vision, deep learning, and control algorithms to achieve SAE automation levels ranging from Level 1 (driver assistance) to Level 5 (full automation).

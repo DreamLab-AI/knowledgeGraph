@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:shape-memory-alloy-actuator",
   "domain": "robotics",
-  "definition": "Soft robotics actuator using shape memory alloys that change shape when heated, enabling lightweight and compact actuation for compliant robots.",
+  "definition": "A shape memory alloy (SMA) actuator exploits the thermoelastic phase transformation of nickel-titanium (Nitinol) or similar alloys, which contract and generate force when thermally activated, then return to their original shape on cooling. SMA actuators are valued for their high force-to-weight ratio, silent operation, and inherent compliance, making them well-suited to soft robotics, minimally invasive surgical tools, and wearable exoskeletons. Control bandwidth is limited by thermal cycle times, which remains a key engineering challenge.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
@@ -13,21 +13,65 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.75,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:surgical-robot",
+        "label": "Surgical Robot"
+      },
+      {
+        "id": "urn:ngm:class:exoskeleton-robot",
+        "label": "Exoskeleton Robot"
+      },
+      {
+        "id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:tactile-sensor",
+        "label": "Tactile Sensor"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:soft-robotics",
+        "label": "Soft Robotics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:pneumatic-actuator",
+        "label": "Pneumatic Actuator"
+      },
+      {
+        "id": "urn:ngm:class:hydraulic-actuator",
+        "label": "Hydraulic Actuator"
+      },
+      {
+        "id": "urn:ngm:class:robot-actuator",
+        "label": "Robot Actuator"
+      },
+      {
+        "id": "urn:ngm:class:manipulation",
+        "label": "Manipulation"
+      },
+      {
+        "id": "urn:ngm:class:end-effector",
+        "label": "End Effector"
+      }
+    ]
   },
   "wikilinks": [
     {

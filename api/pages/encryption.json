@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:encryption",
   "domain": "infrastructure",
-  "definition": "The process of transforming plaintext data into ciphertext using a cryptographic algorithm and key, ensuring confidentiality so that only authorised parties can recover the original information.",
+  "definition": "Encryption is the cryptographic process of transforming plaintext data into ciphertext using a defined algorithm and key, such that only parties possessing the correct decryption key can recover the original information, thereby ensuring confidentiality. Symmetric encryption schemes (such as AES-GCM) use a shared secret key for both encryption and decryption, while asymmetric schemes (such as RSA-OAEP) use mathematically linked key pairs. Encryption operates at multiple layers of modern infrastructure\u2014at rest in storage systems, in transit via TLS, and at the application layer in end-to-end encrypted messaging protocols.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-security-and-identity",
@@ -14,11 +14,29 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "id": "urn:ngm:class:confidential-computing",
+        "label": "Confidential Computing"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +45,16 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:zero-knowledge",
+        "label": "Zero Knowledge"
+      },
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

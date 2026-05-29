@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:virtual-field-trip",
   "@type": "Class",
   "label": "Virtual Field Trip",
-  "definition": "An educational experience using VR, AR, or MR technologies that transports students to locations they could not otherwise visit, enabling immersive learning through 360-degree environments, interactive simulations, and experiential content without leaving the classroom.",
+  "definition": "An educational experience using VR, AR, or MR technologies that transports students to locations they could not otherwise visit, enabling immersive learning through 360-degree environments, interactive simulations, and experiential content without leaving the classroom. Research indicates VR can improve knowledge acquisition and retention compared to traditional instruction; platforms such as Google Arts and Culture and Google Expeditions have demonstrated feasibility at scale across subjects including science, history, and geography.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -59,7 +60,23 @@ public:: true
       "label": "Educational Technology"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:immersive-technology", "label": "Immersive Technology"},
+      {"@id": "urn:ngm:class:virtual-environment", "label": "Virtual Environment"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:immersive-learning", "label": "Immersive Learning"},
+      {"@id": "urn:ngm:class:virtual-destination", "label": "Virtual Destination"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:virtual-museum-tour", "label": "Virtual Museum Tour"},
+      {"@id": "urn:ngm:class:cultural-heritage-xr-experience", "label": "Cultural Heritage XR Experience"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -109,6 +126,10 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Educational Technology]]
+  - requires:: [[Immersive Technology]], [[Virtual Environment]]
+  - uses:: [[Immersive Learning]], [[Virtual Destination]]
+  - enables:: [[Immersive Experience]]
+  - relatedTo:: [[Virtual Museum Tour]], [[Cultural Heritage XR Experience]]
 
 - ### Content
 

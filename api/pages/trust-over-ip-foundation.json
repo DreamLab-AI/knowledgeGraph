@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:trust-over-ip-foundation",
   "domain": "blockchain",
-  "definition": "The Trust over IP (ToIP) Foundation is a Linux Foundation project that defines a dual-stack architecture combining cryptographic trust at the technical layer with human and legal trust governance frameworks for decentralised identity.",
+  "definition": "The Trust over IP (ToIP) Foundation is a Linux Foundation project that defines a dual-stack architecture combining cryptographic trust at the technical layer with human and legal trust governance frameworks for decentralised identity. The lower technical stack encompasses decentralised identifiers, verifiable credentials, and cryptographic key management, whilst the upper governance stack provides legal frameworks, policy schemas, and trust registries enabling parties to establish authoritative trust relationships without a central intermediary. ToIP aims to provide the governance meta-model needed to make self-sovereign identity deployments interoperable at scale.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-network-component",
@@ -14,20 +14,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralized-identity-foundation",
+        "label": "Decentralized Identity Foundation"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:did-document",
+        "label": "DID Document"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

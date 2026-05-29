@@ -37,15 +37,29 @@ public:: true
   "@id": "urn:ngm:class:procedural-generation",
   "@type": "Class",
   "label": "Procedural Generation",
-  "definition": "Procedural Generation is a spatial computing concept and a type of spatial-computing.",
+  "definition": "Procedural Generation is the algorithmic creation of content — including terrain, textures, vegetation, buildings, and narrative elements — using mathematical functions, noise algorithms, and rule-based systems rather than manual authoring. It is foundational to scalable world-building in games and metaverse platforms, enabling vast, varied environments from compact seed parameters.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
     }
   ],
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:world-building", "label": "World Building"},
+      {"@id": "urn:ngm:class:procedural-terrain", "label": "Procedural Terrain"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:noise-function-library", "label": "Noise Function Library"},
+      {"@id": "urn:ngm:class:3-d-content-generation", "label": "3D Content Generation"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
+      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -76,14 +90,19 @@ public:: true
 
 
 - ### Definition
-  - ProceduralGeneration is a concept within the ngm domain.
+  - Procedural Generation is the algorithmic creation of content — terrain, textures, vegetation, buildings, and narrative elements — using mathematical functions, noise algorithms, and rule-based systems. It enables scalable world-building in games and metaverse platforms, producing vast, varied environments from compact seed parameters.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:ProceduralGeneration
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - enables [[World Building]]
+  - enables [[Procedural Terrain]]
+  - uses [[Noise Function Library]]
+  - uses [[3D Content Generation]]
+  - relatedTo [[Generative AI]]
+  - relatedTo [[Game Engine]]
 
 - ### Content
   # ProceduralGeneration

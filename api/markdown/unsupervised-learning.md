@@ -6,7 +6,11 @@
   - owl-role:: concept
 
 - ### Relationships
-  - is-subclass-of:: ['owl:Thing']
+  - Has part [[Dimensionality Reduction]] as a core unsupervised technique
+  - Enables [[Generative AI]] through generative modelling (VAEs, GANs)
+  - Contrasts with [[Supervised Learning]] (no labelled examples required)
+  - Related to [[Transfer Learning]] (pre-trained unsupervised representations power transfer)
+  - Related to [[Federated Learning]] (unsupervised objectives applicable in federated settings)
 
 - ### Content
 

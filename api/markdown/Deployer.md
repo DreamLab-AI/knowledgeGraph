@@ -50,9 +50,10 @@ public:: true
   "@id": "urn:ngm:class:deployer",
   "@type": "Class",
   "label": "Deployer",
-  "definition": "Deployer is a type of Digital Infrastructure in the infrastructure domain.",
+  "definition": "A Deployer, as defined in EU AI Act Article 3(4), is a natural or legal person, public authority, agency, or other body that uses an AI system under its authority in a professional context. Deployers bear obligations for human oversight, input data monitoring, logging, and fundamental rights impact assessments for high-risk AI systems. They are distinct from providers (who develop or place AI systems on the market) and incur provider-level obligations if they substantially modify an AI system.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
@@ -63,7 +64,22 @@ public:: true
       "label": "Digital Infrastructure"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:ai-agent-system", "label": "AI Agent System"},
+      {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
+      {"@id": "urn:ngm:class:digital-infrastructure", "label": "Digital Infrastructure"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:ai-governance-and-ethics", "label": "AI Governance and Ethics"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -116,7 +132,10 @@ bridges-to:: [[Autonomous Robot]]
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: AI Agent System, Autonomous Robot (the AI systems a deployer puts into service)
+  - **dependsOn**: AI Governance, Digital Infrastructure (oversight frameworks and technical infrastructure the deployer relies on)
+  - **supports**: AI Regulation (deployer compliance operationalises regulatory requirements)
+  - **relatedTo**: AI Governance and Ethics (ethical obligations that shape deployer conduct)
 - ### Content
   - A natural or legal person, public authority, agency or other body using an AI system under its authority except where the AI system is used in the course of a personal non-professional activity.
   ## Source

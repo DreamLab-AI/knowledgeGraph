@@ -9,11 +9,22 @@
   - implemented-in-layer:: [[ConceptualLayer]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
-  - bridges-to:: [[Autonomous Robot]], [[Digital Twin]]
+  - requires:: [[Inference]], [[Hardware Acceleration]]
+  - enables:: [[Edge Computing]], [[Federated Learning]], [[Autonomous Vehicle]], [[Edge AI System]]
+  - hasPart:: [[NPU]], [[TPU]], [[FPGA]], [[GPU Compute]]
+  - dependsOn:: [[Model Compression for Edge]], [[Knowledge Distillation for Edge]]
+  - relatedTo:: [[Embedded Systems]], [[Inference Hardware]], [[Neuromorphic Computing]], [[Edge AI Security]]
+  - uses:: [[Model Pruning for Edge Deployment]], [[Embedded AI Frameworks]]
+  - supports:: [[Autonomous Robot]], [[Digital Twin]]
 
 - ### Content
-  Edge AI Accelerators (AI-0441) — content pending enrichment.
+  Edge AI accelerators address the fundamental mismatch between neural network computation patterns and general-purpose processor design. Standard CPUs are optimised for sequential instruction execution with low-latency memory access; neural network inference is dominated by matrix multiplications and convolutions that benefit from massive parallelism across thousands of arithmetic units operating simultaneously on spatially local data. Accelerators exploit this by integrating large arrays of multiply-accumulate (MAC) units, on-chip SRAM scratchpads to minimise memory bandwidth bottlenecks, and dedicated datapaths for low-precision arithmetic.
+
+  The major accelerator categories serve different deployment contexts. Mobile NPUs (Qualcomm Hexagon, Apple Neural Engine, MediaTek APU) are integrated into system-on-chip designs for smartphones and AR headsets, achieving 2–21 TOPS at 2–10 TOPS/W within strict power envelopes. Embedded GPU modules such as NVIDIA Jetson AGX Orin provide workstation-class inference capability (275 TOPS) for autonomous robots and industrial systems. FPGAs (Xilinx Versal AI, Intel Agilex) offer programmable logic fabrics that can be reconfigured for specific model architectures, useful when fixed-function accelerators cannot accommodate model updates. Neuromorphic chips (Intel Loihi 2) use spiking neural network computation for ultra-low-power event-driven inference in sensor fusion applications.
+
+  Model–hardware co-design is critical for achieving peak accelerator utilisation. Models must be adapted for edge deployment through quantisation (reducing weight precision from FP32 to INT8 or lower), pruning (eliminating low-magnitude weights), and knowledge distillation (training smaller student models to replicate larger teacher model outputs). Frameworks such as TensorFlow Lite, ONNX Runtime, and PyTorch Mobile provide toolchains for converting, optimising, and deploying models to specific accelerator targets.
+
+  In XR and spatial computing contexts, edge AI accelerators are essential for real-time computer vision tasks — hand tracking, scene understanding, gaze estimation, SLAM — that must complete within 10–15 ms to maintain perceptual fidelity. Meta's Orion AR glasses and Apple Vision Pro both incorporate custom silicon specifically designed for low-latency, low-power on-device AI inference, demonstrating that edge accelerator design has become a strategic hardware differentiator for spatial computing platforms.
 
 - ### Provenance
   - sources::

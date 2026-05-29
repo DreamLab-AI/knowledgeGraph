@@ -7,6 +7,13 @@
 
 - ### Relationships
   - is-subclass-of:: [[Avatar]]
+  - Requires [[Avatar Interoperability]]
+  - Requires [[Avatar Standard]]
+  - Uses [[Gltf Standard]]
+  - Uses [[VRM Format]]
+  - Enables [[Avatar Portability]]
+  - Enables [[Cross-Platform Identity]]
+  - Has Part [[Avatar Customization]]
 
 - ### Content
 

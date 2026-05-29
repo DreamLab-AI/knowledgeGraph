@@ -1,5 +1,5 @@
 - ### Definition
-  - Digital Content is a concept within the metaverse domain. Further enrichment pending.
+  - Digital Content encompasses any information or media encoded in digital form, including text, images, audio, video, 3D models, and interactive experiences. Within spatial computing platforms, digital content is the primary artefact that users create, exchange, and monetise, often represented as NFTs or other digital assets with embedded provenance.
 
 bridges-to:: [[Computer Vision]]
 
@@ -8,7 +8,11 @@ bridges-to:: [[Computer Vision]]
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Has Part [[Digital Asset]]
+  - Enables [[Digital Content Creation]]
+  - Uses [[Digital Asset Management]]
+  - Related To [[Content Moderation]]
+  - Related To [[NFT]]
 
 - ### Content
 

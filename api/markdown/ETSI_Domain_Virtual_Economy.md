@@ -222,16 +222,32 @@ public:: true
   "@id": "urn:ngm:class:etsi-domain-virtual-economy",
   "@type": "Class",
   "label": "ETSI_Domain_Virtual_Economy",
-  "definition": "ETSI domain encompassing economic systems, digital assets, and financial mechanisms enabling value exchange within metaverse and virtual environments through CryptoToken|crypto tokens, Cryptocurrency|cryptocurrencies, CentralBankDigitalCurrency|CBDCs, and",
+  "definition": "ETSI domain encompassing economic systems, digital assets, and financial mechanisms enabling value exchange within metaverse and virtual environments through crypto tokens, cryptocurrencies, CBDCs, NFTs, and virtual assets. It coordinates decentralised exchanges, creator economy mechanisms, creator royalty tokens, carbon credit tokenisation, and standards development integrating virtual economies with traditional finance and regulatory compliance frameworks.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
     }
   ],
-  "quality": 0.4,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:virtual-economy", "label": "Virtual Economy"},
+      {"@id": "urn:ngm:class:creator-economy", "label": "Creator Economy"},
+      {"@id": "urn:ngm:class:non-fungible-token-nft", "label": "Non-Fungible Token (NFT)"},
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:tokenization", "label": "Tokenization"},
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:marketplace", "label": "Marketplace"},
+      {"@id": "urn:ngm:class:play-to-earn-p2-e", "label": "Play-to-Earn (P2E)"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -498,7 +514,9 @@ public:: true
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **hasPart**: Virtual Economy, Creator Economy, Non-Fungible Token (NFT), Smart Contract — core components governed by this ETSI domain
+  - **uses**: Tokenization, Blockchain — the domain's mechanisms depend on tokenisation and distributed ledger infrastructure
+  - **enables**: Marketplace, Play-to-Earn (P2E) — virtual economy standards enable digital marketplaces and participatory economic models
 - ### Content
   - The ETSI Virtual Economy domain encompasses economic systems, digital asset frameworks, and value exchange mechanisms for metaverse and virtual environments, coordinating tokenisation, creator incentives, and sustainable economic value creation.
   - ### Original Content

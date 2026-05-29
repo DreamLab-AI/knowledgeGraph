@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:configuration-setting",
   "domain": "spatial-computing",
-  "definition": "Configuration Setting is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "A Configuration Setting is a named parameter or preference value that governs the runtime behaviour of a spatial computing application, platform, or XR experience. Configuration settings control rendering quality, user accessibility options, privacy preferences, and network parameters, and are typically persisted across sessions to maintain consistent user experiences within metaverse and immersive environments.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -13,12 +13,21 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -26,8 +35,22 @@
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ]
   },
   "wikilinks": [
     {

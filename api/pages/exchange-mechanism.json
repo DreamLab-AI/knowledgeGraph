@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:exchange-mechanism",
   "domain": "spatial-computing",
-  "definition": "Exchange Mechanism is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "An Exchange Mechanism is a protocol or technical construct that governs the transfer of digital assets, tokens, or value between parties within a virtual economy or cross-platform environment. Exchange mechanisms specify the rules for matching buyers and sellers, executing atomic swaps, handling liquidity, and settling transactions, forming the economic infrastructure of metaverse marketplaces.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:marketplace",
+        "label": "Marketplace"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-trading",
+        "label": "Digital Asset Trading"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
+    ]
   },
   "wikilinks": [
     {

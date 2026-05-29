@@ -70,9 +70,10 @@ public:: true
   "@id": "urn:ngm:class:agentic-mycelia",
   "@type": "Class",
   "label": "Agentic Mycelia",
-  "definition": "Agentic Mycelia is a artificial intelligence concept and a type of Agent Frameworks.",
+  "definition": "Agentic Mycelia is a multi-layered framework of specialised AI agents—scene agents, transfer agents, onboarding agents, and jurisdictional agents—that collectively manage governance, identity, value exchange, and protocol translation across interconnected metaverse instances. Analogous to fungal mycelium, the network forms resilient, decentralised inter-instance communication that enables seamless asset transfer, reputation propagation, and automated ontology exchange between diverse virtual worlds.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-application",
@@ -83,7 +84,24 @@ public:: true
       "label": "Agent Frameworks"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"},
+      {"@id": "urn:ngm:class:nostr-protocol", "label": "Nostr Protocol"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:metaverse-ontology", "label": "Metaverse Ontology"},
+      {"@id": "urn:ngm:class:governance", "label": "Governance"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:privacy", "label": "Privacy"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -166,6 +184,14 @@ public:: true
   - owl-role:: Concept
 
 - ### Relationships
+  - **requires** [[Interoperability]] — cross-instance communication demands protocol interoperability
+  - **requires** [[Nostr Protocol]] — identity, event relay, and cryptographic commitment layer
+  - **uses** [[Large Language Models]] — LLMs underpin scene and transfer agent reasoning
+  - **uses** [[Blockchain]] — on-chain settlement and asset provenance tracking
+  - **uses** [[Self Sovereign Identity]] — users control identity across metaverse instances
+  - **enables** [[Metaverse Ontology]] — scene agents publish and consume shared ontologies
+  - **enables** [[Governance]] — the framework provides adaptable, AI-driven governance structures
+  - **relatedTo** [[Privacy]] — user data and interaction records require privacy-preserving handling
   - bridges-to:: [[Blockchain]]
 
 - ### Content

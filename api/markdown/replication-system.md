@@ -1,12 +1,17 @@
 - ### Definition
-  - ReplicationSystem is a concept within the ngm domain.
+  - A replication system maintains synchronised copies of data or state across multiple nodes in a distributed environment, ensuring consistency, availability, and fault tolerance. It coordinates state propagation through protocols such as leader-based or leaderless replication, supporting both synchronous and asynchronous update strategies in blockchain, database, and metaverse infrastructure contexts.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:ReplicationSystem
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Implements [[Data Replication]]
+  - Enables [[Fault Tolerance]]
+  - Enables [[High Availability]]
+  - Depends on [[Distributed System]]
+  - Depends on [[Consensus Mechanism]]
+  - Related to [[Database System]]
 
 - ### Content
   # ReplicationSystem

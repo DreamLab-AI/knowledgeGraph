@@ -66,7 +66,7 @@ public:: true
   "@id": "urn:ngm:class:keccak-256",
   "@type": "Class",
   "label": "Keccak-256",
-  "definition": "SHA-3 hash function variant within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "A 256-bit cryptographic hash function based on the Keccak sponge construction, selected as the SHA-3 standard and used natively in Ethereum for address derivation, transaction hashing, and smart contract storage. It differs from NIST SHA-3 in padding and offers strong collision resistance and preimage resistance properties.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -77,13 +77,25 @@ public:: true
     {
       "@id": "urn:ngm:class:blockchain-entity",
       "label": "Blockchain Entity"
-    },
-    {
-      "@id": "urn:ngm:class:cryptographic-primitive",
-      "label": "CryptographicPrimitive"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"},
+      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
+      {"@id": "urn:ngm:class:sha-256", "label": "SHA-256"},
+      {"@id": "urn:ngm:class:collision-resistance", "label": "Collision Resistance"},
+      {"@id": "urn:ngm:class:preimage-resistance", "label": "Preimage Resistance"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
+      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:bc-cryptographic-primitive", "label": "Cryptographic Primitive"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

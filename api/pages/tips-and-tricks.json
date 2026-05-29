@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:tips-and-tricks",
   "domain": "infrastructure",
-  "definition": "Tips and Tricks is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Practical heuristics, shortcuts, and workflow optimisations accumulated through practitioner experience with software tools, knowledge-management systems, and AI-assisted development. This category collects actionable guidance that reduces friction in everyday tasks such as Logseq database management, document format conversion, and prompt engineering.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-software-engineering",
@@ -13,8 +13,8 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,11 +23,34 @@
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:software-development-process",
+        "label": "Software Development Process"
+      },
+      {
+        "id": "urn:ngm:class:documentation-standards",
+        "label": "Documentation Standards"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      }
+    ]
   },
   "wikilinks": [
     {

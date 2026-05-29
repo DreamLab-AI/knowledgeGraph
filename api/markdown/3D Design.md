@@ -37,16 +37,33 @@ public:: true
   "@id": "urn:ngm:class:3-d-design",
   "@type": "Class",
   "label": "3D Design",
-  "definition": "3D Design is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "3D Design is the creative and technical discipline of conceiving, modelling, and refining three-dimensional digital objects and environments for interactive, immersive, or real-time applications. It encompasses spatial composition, form language, and visual hierarchy adapted for game engines, virtual reality, and metaverse platforms, requiring performance-conscious workflows such as level-of-detail strategies, UV unwrapping, and real-time shader design.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:3-d-modeling", "label": "3D Modeling"},
+      {"@id": "urn:ngm:class:rendering-engine", "label": "Rendering Engine"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:3-d-content-generation", "label": "3D Content Generation"},
+      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:3-d-asset", "label": "3D Asset"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:3-d-content-pipeline", "label": "3D Content Pipeline"},
+      {"@id": "urn:ngm:class:3-d-development", "label": "3D Development"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -76,14 +93,20 @@ public:: true
 
 
 - ### Definition
-  - 3D Design is a concept within the ngm domain.
+  - 3D Design is the creative and technical discipline of conceiving, modelling, and refining three-dimensional digital objects and environments for interactive, immersive, or real-time applications. It encompasses spatial composition, form language, and visual hierarchy adapted for game engines, virtual reality, and metaverse platforms, requiring performance-conscious workflows such as level-of-detail strategies, UV unwrapping, and real-time shader design.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:3D Design
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires** [[3D Modeling]] — foundational skill for authoring geometry
+  - **requires** [[Rendering Engine]] — real-time feedback loop for design iteration
+  - **enables** [[3D Content Generation]] — design artefacts feed generative pipelines
+  - **enables** [[Real-Time Rendering]] — optimised assets enable live rendering
+  - **hasPart** [[3D Asset]] — designs produce reusable 3D assets
+  - **partOf** [[3D Content Pipeline]] — design is the authoring stage of the pipeline
+  - **partOf** [[3D Development]] — design is a core phase of 3D development
 
 - ### Content
 

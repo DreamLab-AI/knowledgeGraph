@@ -79,7 +79,7 @@ public:: true
       "label": "Security and Identity"
     },
     {
-      "@id": "urn:ngm:class:security-service",
+      "@id": "urn:ngm:class:security-services",
       "label": "Security Service"
     }
   ],

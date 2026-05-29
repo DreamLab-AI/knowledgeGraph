@@ -37,9 +37,10 @@ public:: true
   "@id": "urn:ngm:class:organizational-change",
   "@type": "Class",
   "label": "Organizational Change",
-  "definition": "Organizational Change is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Organizational Change is the deliberate process of transforming an organisation's structures, workflows, cultural norms, and operational paradigms. In technology contexts this encompasses adoption of immersive collaboration tools, distributed team models, and AI-augmented workflows, requiring sustained stakeholder engagement and iterative change management strategies.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
@@ -51,6 +52,36 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:distributed-work",
+        "label": "Distributed Work"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:enterprise-architecture",
+        "label": "Enterprise Architecture"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:collaboration-platform",
+        "label": "Collaboration Platform"
+      }
+    ]
   }
 }
 ```
@@ -76,14 +107,18 @@ public:: true
 
 
 - ### Definition
-  - OrganizationalChange is a concept within the ngm domain.
+  - Organizational Change is the deliberate process of transforming an organisation's structures, workflows, cultural norms, and operational paradigms. In technology contexts this encompasses adoption of immersive collaboration tools, distributed team models, and AI-augmented workflows, requiring sustained stakeholder engagement and iterative change management strategies.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:OrganizationalChange
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Requires [[Governance]]
+  - Enables [[Distributed Work]]
+  - Contrasts With [[Enterprise Architecture]]
+  - Related To [[AI Governance]]
+  - Related To [[Collaboration Platform]]
 
 - ### Content
   # OrganizationalChange

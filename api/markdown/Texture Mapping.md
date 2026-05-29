@@ -37,9 +37,10 @@ public:: true
   "@id": "urn:ngm:class:texture-mapping",
   "@type": "Class",
   "label": "Texture Mapping",
-  "definition": "Texture Mapping is a spatial computing concept and a type of spatial-computing.",
+  "definition": "Texture Mapping is the technique of projecting a 2D image (texture) onto a 3D surface to add surface detail, colour, and material appearance without increasing geometric complexity. Common forms include UV mapping, normal mapping, and physically-based rendering (PBR) texture sets.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-display-and-rendering",
@@ -51,6 +52,44 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:computer-graphics",
+        "label": "Computer Graphics"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:differentiable-rendering",
+        "label": "Differentiable Rendering"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:procedural-texture",
+        "label": "Procedural Texture"
+      },
+      {
+        "@id": "urn:ngm:class:pixel-shader",
+        "label": "Pixel Shader"
+      },
+      {
+        "@id": "urn:ngm:class:compute-shader",
+        "label": "Compute Shader"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:3-d-rendering-engine",
+        "label": "3D Rendering Engine"
+      }
+    ]
   }
 }
 ```
@@ -76,14 +115,20 @@ public:: true
 
 
 - ### Definition
-  - TextureMapping is a concept within the ngm domain.
+  - Texture Mapping is the technique of projecting a 2D image (texture) onto a 3D surface to add surface detail, colour, and material appearance without increasing geometric complexity. Common forms include UV mapping, normal mapping, and physically-based rendering (PBR) texture sets.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:TextureMapping
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Requires [[Computer Graphics]]
+  - Uses [[Procedural Texture]]
+  - Uses [[Pixel Shader]]
+  - Uses [[Compute Shader]]
+  - Enables [[Real-Time Rendering]]
+  - Enables [[Differentiable Rendering]]
+  - Part Of [[3D Rendering Engine]]
 
 - ### Content
   # TextureMapping

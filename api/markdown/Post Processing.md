@@ -37,9 +37,10 @@ public:: true
   "@id": "urn:ngm:class:post-processing",
   "@type": "Class",
   "label": "Post Processing",
-  "definition": "Post Processing is a spatial computing concept and a type of Visual Effects.",
+  "definition": "A set of screen-space image processing effects applied after the primary rendering pass to enhance visual fidelity. Common effects include bloom, motion blur, depth of field, tone mapping, colour grading, ambient occlusion, and anti-aliasing, all executed as full-screen shader passes over the rendered framebuffer before presentation.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-display-and-rendering",
@@ -55,6 +56,36 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:shader",
+        "label": "Shader"
+      },
+      {
+        "@id": "urn:ngm:class:rendering-technique",
+        "label": "Rendering Technique"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:rasterization",
+        "label": "Rasterization"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:visual-effects",
+        "label": "Visual Effects"
+      }
+    ]
   }
 }
 ```
@@ -80,14 +111,17 @@ public:: true
 
 
 - ### Definition
-  - PostProcessing is a concept within the ngm domain.
+  - A set of screen-space image processing effects applied after the primary rendering pass to enhance visual fidelity. Common effects include bloom, motion blur, depth of field, tone mapping, colour grading, ambient occlusion, and anti-aliasing, all executed as full-screen shader passes over the rendered framebuffer before presentation.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:PostProcessing
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Requires: [[Shader]], [[Rendering Technique]]
+  - Uses: [[Rasterization]]
+  - Supports: [[Visual Effects]]
+  - Related To: [[Ray Tracing]]
 
 - ### Content
   # PostProcessing

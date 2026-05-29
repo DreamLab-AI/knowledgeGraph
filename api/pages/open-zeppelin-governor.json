@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:open-zeppelin-governor",
   "domain": "blockchain",
-  "definition": "A modular, audited smart-contract framework for implementing on-chain governance systems compatible with the ERC-20 voting standard on EVM-compatible blockchains.",
+  "definition": "OpenZeppelin Governor is a modular, security-audited Solidity smart-contract framework that provides the core infrastructure for deploying on-chain governance systems on EVM-compatible blockchains. It implements a proposal lifecycle\u2014proposal creation, voting delay, voting period, quorum check, and timelock-guarded execution\u2014with pluggable modules for vote counting strategies (simple, bravo, fractional), token-based voting power sources (ERC-20 with EIP-5805 checkpointing or ERC-721), and timelock controller integration. Governor is used as the governance layer by major DeFi protocols and DAOs to manage protocol parameter changes, treasury disbursements, and contract upgrades.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-governance-and-regulation",
@@ -14,16 +14,39 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "id": "urn:ngm:class:voting-mechanism",
+        "label": "Voting Mechanism"
+      }
+    ],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:on-chain-governance",
+        "label": "On-chain Governance"
+      }
+    ],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

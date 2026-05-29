@@ -1,12 +1,14 @@
 - ### Definition
-  - RuV Agents is a concept within the ngm domain.
+  - RuV Agents refers to the ruv-swarm agent framework developed within the ruv-FANN project, providing a multi-agent orchestration layer for coordinating LLM-backed autonomous agents across tasks such as coding, research, and data processing. The framework integrates with inference APIs and supports rate-limit bypass strategies through unified LLM platform routing. It represents a practical implementation of multi-agent coordination patterns for software engineering and knowledge-work automation.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:RuVAgents
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: Large Language Models, Multi-Agent Systems
+  - **enables**: AI Agents, Autonomous AI Agents
+  - **relatedTo**: Agent Frameworks, Vector Database
 
 - ### Content
   - [ruv-FANN/ruv-swarm at ruv-swarm · ruvnet/ruv-FANN](https://github.com/ruvnet/ruv-FANN/tree/ruv-swarm/ruv-swarm)

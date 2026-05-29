@@ -66,24 +66,41 @@ public:: true
   "@id": "urn:ngm:class:light-node",
   "@type": "Class",
   "label": "Light Node",
-  "definition": "Partial blockchain data node within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "A Light Node is a blockchain network participant that downloads and verifies only block headers rather than the full transaction history, using Simplified Payment Verification (SPV) to confirm transaction inclusion via Merkle proofs. This design allows resource-constrained devices—mobile wallets, IoT devices, embedded clients—to interact securely with a blockchain without the storage and bandwidth demands of a Full Node, relying on connected full nodes to supply the underlying transaction data when required.",
   "domain": "blockchain",
   "maturity": "established",
+  "qualityScore": 0.8,
   "subClassOf": [
-    {
-      "@id": "urn:ngm:class:bc-network-component",
-      "label": "Network Component"
-    },
     {
       "@id": "urn:ngm:class:blockchain-entity",
       "label": "Blockchain Entity"
-    },
-    {
-      "@id": "urn:ngm:class:network-component",
-      "label": "NetworkComponent"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:full-node", "label": "Full Node"},
+      {"@id": "urn:ngm:class:archival-node", "label": "Archival Node"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
+      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"},
+      {"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:blockchain-infrastructure", "label": "Blockchain Infrastructure"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:bootstrap-node", "label": "Bootstrap Node"},
+      {"@id": "urn:ngm:class:validator-node", "label": "Validator Node"},
+      {"@id": "urn:ngm:class:blockchain-protocol", "label": "Blockchain Protocol"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:digital-wallet", "label": "Digital Wallet"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -149,79 +166,20 @@ public:: true
 
 
 - ### Definition
-  - Partial blockchain data node within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
-
-- ### Semantic Classification
-  - owl-class:: blockchain:LightNode
-  - owl-role:: Object
-  - owl-inferred:: blockchain:VirtualObject
-  - belongs-to-domain:: [[CryptographicDomain]]
-  - implemented-in-layer:: [[SecurityLayer]]
+  A Light Node is a blockchain network participant that downloads and verifies only block headers rather than the full transaction history, using Simplified Payment Verification (SPV) to confirm transaction inclusion via Merkle proofs. This design allows resource-constrained devices—mobile wallets, IoT devices, embedded clients—to interact securely with a blockchain without the storage and bandwidth demands of a Full Node.
 
 - ### Relationships
-  - is-subclass-of:: [[Blockchain Entity]], [[NetworkComponent]]
+  Light Nodes contrast sharply with Full Nodes and Archival Nodes, which maintain complete transaction histories. They require a Cryptographic Hash Function to verify Merkle proofs embedded in block headers and depend on the Peer-to-Peer Network to obtain header data from honest peers. They operate as participants within the broader Blockchain Infrastructure and are closely related to Bootstrap Nodes, which supply initial peer discovery, and Validator Nodes, which produce the blocks light nodes consume. The digital wallet use-case is the primary consumer of the light-node pattern, enabling mobile and browser-based wallets to verify payments trustlessly.
 
 - ### Content
 
-  ## Class Declaration
-  Declaration(Class(:LightNode))
+  A Light Node implements Simplified Payment Verification as described in Section 8 of the original Bitcoin whitepaper. Rather than downloading every transaction, the node fetches only the chain of block headers—each an 80-byte structure containing the previous block hash, Merkle root, timestamp, difficulty target, and nonce. To verify that a specific transaction appears in a block, the light node requests a Merkle branch from a full node: a minimal set of sibling hashes that, when hashed together in the correct order, reproduce the Merkle root stored in the header. Because the header is part of the longest proof-of-work chain, the transaction's inclusion is considered probabilistically confirmed to the same security depth as the chain length.
 
-  ## Subclass Relationships
-  SubClassOf(:LightNode :NetworkComponent)
-  SubClassOf(:LightNode :BlockchainEntity)
+  The principal trade-off is trust assumption. A light node inherits the security of the majority-honest full-node network; it cannot independently detect invalid transactions or double-spends unless it requests additional data. This makes light nodes appropriate for end-user wallets where convenience outweighs the marginal security benefit of running a full node, but unsuitable for exchange back-ends or high-value custody systems that demand full independent verification.
 
-  ## Essential Properties
-  SubClassOf(:LightNode
-    (ObjectSomeValuesFrom :partOf :Blockchain))
+  From a network-topology perspective, light nodes are consumers rather than contributors: they do not relay unconfirmed transactions, do not store historical blocks for other peers, and do not participate in block propagation. This means large populations of light nodes add negligible load to the peer-to-peer network while still benefiting from its security guarantees—a key scalability property supporting mass consumer adoption of blockchain-based payments.
 
-  SubClassOf(:LightNode
-    (ObjectSomeValuesFrom :hasProperty :Property))
-
-  ## Data Properties
-  DataPropertyAssertion(:hasIdentifier :LightNode "BC-0074"^^xsd:string)
-  DataPropertyAssertion(:hasAuthorityScore :LightNode "1.0"^^xsd:decimal)
-  DataPropertyAssertion(:isFoundational :LightNode "true"^^xsd:boolean)
-
-  ## Object Properties
-  ObjectPropertyAssertion(:enablesFeature :LightNode :BlockchainFeature)
-  ObjectPropertyAssertion(:relatesTo :LightNode :RelatedConcept)
-
-  ## Annotations
-  AnnotationAssertion(rdfs:label :LightNode "Light Node"@en)
-  AnnotationAssertion(rdfs:comment :LightNode
-    "Partial blockchain data node"@en)
-  AnnotationAssertion(dct:description :LightNode
-    "Foundational blockchain concept with formal ontological definition"@en)
-  AnnotationAssertion(:termID :LightNode "BC-0074")
-  AnnotationAssertion(:priority :LightNode "1"^^xsd:integer)
-  AnnotationAssertion(:category :LightNode "network-security"@en)
-  )
-      ```
-
-  - ## About Light Node
-
-  - Partial blockchain data node within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
-  - ### Key Characteristics
-    - 1. **Definitional Property**: Core defining characteristic
-    - 2. **Functional Property**: Operational behavior
-    - 3. **Structural Property**: Compositional elements
-    - 4. **Security Property**: Security guarantees provided
-    - 5. **Performance Property**: Efficiency considerations
-  - ### Technical Components
-    - **Implementation**: How concept is realized technically
-    - **Verification**: Methods for validating correctness
-    - **Interaction**: Relationships with other components
-    - **Constraints**: Technical limitations and requirements
-  - ### Use Cases
-    - **1. Core Blockchain Operation**
-    - **Application**: Fundamental blockchain functionality
-    - **Example**: Practical implementation in major blockchains
-    - **Requirements**: Technical prerequisites
-    - **Benefits**: Value provided to blockchain systems
-  - ### Standards & References
-    - [[ISO/IEC 23257:2021]] - Blockchain and distributed ledger technologies
-    - [[IEEE 2418.1]] - Blockchain and distributed ledger technologies
-    - [[NIST NISTIR]] - Blockchain and distributed ledger technologies
+  Implementation variants include compact block filters (BIP 157/158), which allow light clients to download compressed summaries of block contents and determine locally whether any transactions are relevant, reducing privacy leakage compared to classical Bloom-filter SPV (BIP 37). This evolution addresses a recognised weakness wherein BIP-37 light clients could reveal their wallet addresses to the full nodes they queried.
 
 - ### Provenance
   - sources:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]

@@ -8,6 +8,10 @@
 
 - ### Relationships
   - is-subclass-of:: [[Standards]]
+  - **requires**: [[Decentralized Identifiers]], [[Cryptography]] — DIDs provide the subject identifier and cryptographic proofs authenticate the credential
+  - **enables**: [[Identity Verification]], [[Digital Identity]] — VCs are the primary mechanism for portable, privacy-preserving identity claims
+  - **standardizedBy**: [[Standards]] — the W3C VC Data Model 1.1 is the normative specification
+  - **relatedTo**: [[Digital Signature]], [[Interoperability Standard]] — credentials rely on signature schemes and enable cross-platform identity interoperability
 
 - ### Content
 

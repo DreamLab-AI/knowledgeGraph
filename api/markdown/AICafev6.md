@@ -42,15 +42,32 @@ public:: true
   "@id": "urn:ngm:class:aicafev6",
   "@type": "Class",
   "label": "AICafev6",
-  "definition": "AICafev6 is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "AICafev6 is the sixth iteration of the AI Cafe demonstration platform, an open-source immersive knowledge development environment built on VisionFlow that integrates multi-modal AI, GPU-accelerated analytics, and agentic workflows for collaborative knowledge creation and presentation.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:ai-agent-system", "label": "AI Agent System"},
+      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"},
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -92,7 +109,7 @@ public:: true
 
 
 - ### Definition
-  - AICafev6 is a concept within the ngm domain.
+  - AICafev6 is the sixth iteration of the AI Cafe demonstration platform: an open-source immersive knowledge development environment built on VisionFlow that integrates multi-modal AI, GPU-accelerated analytics, and agentic workflows for collaborative knowledge creation and presentation.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:AICafev6
@@ -100,6 +117,9 @@ public:: true
 
 - ### Relationships
   - bridges-to:: [[AI Agent System]]
+  - uses:: [[Generative AI]], [[Large Language Models]]
+  - enables:: [[Agentic AI]], [[Natural Language Processing]]
+  - hasPart:: [[Computer Vision]]
 
 - ### Content
   - The software is free and open source here:

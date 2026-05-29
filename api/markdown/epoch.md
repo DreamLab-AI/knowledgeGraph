@@ -7,7 +7,12 @@
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **hasPart** [[Batch Size]] — each epoch is subdivided into batches of the configured batch size
+  - **relatedTo** [[Gradient Descent]] — gradient updates are performed within each epoch's batches
+  - **relatedTo** [[Hyperparameter]] — epoch count is a primary training hyperparameter
+  - **contrastsWith** [[Overfitting]] — excessive epochs are the primary cause of training-set overfitting
+  - **dependsOn** [[Deep Learning]] — epoch-based iteration is the standard training loop for deep networks
+  - **dependsOn** [[Early Stopping]] — early stopping determines when to terminate epoch iteration
   - bridges-to:: [[Blockchain]], [[Autonomous Robot]]
 
 - ### Content

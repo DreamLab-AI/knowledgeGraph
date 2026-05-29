@@ -38,9 +38,10 @@ public:: true
   "@id": "urn:ngm:class:funding-active-and-available",
   "@type": "Class",
   "label": "Funding (active and available)",
-  "definition": "Funding (active and available) is a technology infrastructure concept and a type of Resource Management.",
+  "definition": "A curated register of active and accessible funding opportunities for immersive technology, AI, and creative industries R&D, encompassing Innovate UK grants, UKRI programmes, ARIA challenges, Web3 venture capital, and academic grant schemes. The register tracks application status, eligibility constraints, match-funding requirements, and strategic alignment to accelerate project funding decisions.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
@@ -51,7 +52,20 @@ public:: true
       "label": "Resource Management"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:immersive-technology", "label": "Immersive Technology"},
+      {"@id": "urn:ngm:class:ai-agent-system", "label": "AI Agent System"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:resource-management", "label": "Resource Management"},
+      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
+      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -87,14 +101,16 @@ public:: true
 
 
 - ### Definition
-  - Funding (active and available) is a concept within the ngm domain.
+  - A curated register of active and accessible funding opportunities for immersive technology, AI, and creative industries R&D, encompassing Innovate UK grants, UKRI programmes, ARIA challenges, Web3 venture capital, and academic grant schemes. The register tracks application status, eligibility constraints, match-funding requirements, and strategic alignment to accelerate project funding decisions.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:FundingActiveAndAvailable
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **enables**: Immersive Technology, AI Agent System — securing funding enables R&D on immersive and agentic AI systems
+  - **relatedTo**: Resource Management, Extended Reality — funding tracking is a resource management activity aligned with XR development priorities
+  - **supports**: Knowledge Graph, Agentic AI — funded workstreams directly advance knowledge graph and agentic AI capabilities
 
 - ### Content
   - [AI Upskilling fund: application guide - GOV.UK (www.gov.uk)](https://www.gov.uk/government/publications/flexible-ai-upskilling-fund/ai-upskilling-fund-application-guide)

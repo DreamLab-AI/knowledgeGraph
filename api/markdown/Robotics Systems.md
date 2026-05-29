@@ -98,7 +98,7 @@ public:: true
   "@id": "urn:ngm:class:robotics-systems",
   "@type": "Class",
   "label": "Robotics Systems",
-  "definition": "The foundational technology domain encompassing autonomous and semi-autonomous mechanical systems, including manipulators, mobile robots, humanoids, and collaborative robots (cobots), along with their control systems, sensors, actuators, kinematics, and the integration of perception, planning, an...",
+  "definition": "The foundational technology domain encompassing autonomous and semi-autonomous mechanical systems, including manipulators, mobile robots, humanoids, and collaborative robots (cobots), along with their control systems, sensors, actuators, kinematics, and the integration of perception, planning, and action for physical world interaction.",
   "domain": "robotics",
   "maturity": "established",
   "subClassOf": [
@@ -111,7 +111,28 @@ public:: true
       "label": "Technology Domain"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:manipulator", "label": "Manipulator"},
+      {"@id": "urn:ngm:class:mobile-robot", "label": "Mobile Robot"},
+      {"@id": "urn:ngm:class:humanoid-robot", "label": "Humanoid Robot"},
+      {"@id": "urn:ngm:class:collaborative-robot", "label": "Collaborative Robot"},
+      {"@id": "urn:ngm:class:robot-control", "label": "Robot Control"},
+      {"@id": "urn:ngm:class:robot-sensor", "label": "Robot Sensor"},
+      {"@id": "urn:ngm:class:swarm-robotics", "label": "Swarm Robotics"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:robot-kinematics", "label": "Robot Kinematics"},
+      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
+      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"},
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:actuator", "label": "Actuator"},
+      {"@id": "urn:ngm:class:robo-perception", "label": "Perception and Sensing"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

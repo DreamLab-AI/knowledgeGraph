@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:virtual-stage",
   "@type": "Class",
   "label": "Virtual Stage",
-  "definition": "A production environment surrounded by LED walls and floors displaying real-time computer-generated imagery, enabling in-camera visual effects for film, television, and broadcast production where digital backgrounds react to camera movement and can be manipulated during live filming.",
+  "definition": "A production environment surrounded by curved LED walls and floors displaying real-time computer-generated imagery, enabling in-camera visual effects (ICVFX) for film, television, and broadcast production. Digital backgrounds rendered by a game engine react dynamically to tracked camera movement, capturing realistic lighting and reflections directly on-sensor. Epic Games' StageCraft system and Unreal Engine power the majority of commercial installations, with facilities now exceeding 1,700 m² of LED surface area.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -59,7 +60,24 @@ public:: true
       "label": "Production Facility"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:vr-rendering-engine", "label": "VR Rendering Engine"},
+      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:virtual-production-volume", "label": "Virtual Production Volume"},
+      {"@id": "urn:ngm:class:virtual-camera", "label": "Virtual Camera"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:virtual-production", "label": "Virtual Production"},
+      {"@id": "urn:ngm:class:virtual-production-pipeline", "label": "Virtual Production Pipeline"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"},
+      {"@id": "urn:ngm:class:motion-capture", "label": "Motion Capture"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -109,6 +127,10 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Production Facility]]
+  - requires:: [[VR Rendering Engine]], [[Real-Time Rendering]]
+  - hasPart:: [[Virtual Production Volume]], [[Virtual Camera]]
+  - enables:: [[Virtual Production]], [[Virtual Production Pipeline]]
+  - uses:: [[Game Engine]], [[Motion Capture]]
 
 - ### Content
 

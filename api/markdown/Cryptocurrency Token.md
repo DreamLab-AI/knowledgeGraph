@@ -42,20 +42,66 @@ public:: true
   "@id": "urn:ngm:class:cryptocurrency-token",
   "@type": "Class",
   "label": "Cryptocurrency Token",
-  "definition": "Cryptocurrency Token is a blockchain and distributed systems concept and a type of blockchain.",
+  "definition": "A programmable digital asset implemented via smart contracts on a blockchain platform, categorised into utility tokens (access rights), security tokens (equity or debt instruments), governance tokens (protocol voting rights), and non-fungible tokens (NFTs, unique digital ownership). Token behaviour and interoperability are defined by standards such as ERC-20, ERC-721, and ERC-1155.",
   "domain": "blockchain",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-token-and-asset",
       "label": "Token and Asset"
     }
   ],
-  "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:fungible-token",
+        "label": "Fungible Token"
+      },
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "@id": "urn:ngm:class:utility-token",
+        "label": "Utility Token"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      },
+      {
+        "@id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      },
+      {
+        "@id": "urn:ngm:class:erc-721",
+        "label": "ERC-721"
+      }
+    ]
   }
 }
 ```
@@ -94,9 +140,15 @@ public:: true
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
-
-  - bridges-to:: [[Blockchain]] (bc)
+  - Requires [[Smart Contract]]
+  - Requires [[Blockchain]]
+  - Standardized By [[Token Standard]]
+  - Standardized By [[ERC-20]]
+  - Standardized By [[ERC-721]]
+  - Has Part [[Fungible Token]]
+  - Has Part [[Governance Token]]
+  - Has Part [[Utility Token]]
+  - Related To [[Token Economics]]
 - ### Content
 
   ## Definition

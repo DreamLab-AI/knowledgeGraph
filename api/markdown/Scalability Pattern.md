@@ -37,16 +37,30 @@ public:: true
   "@id": "urn:ngm:class:scalability-pattern",
   "@type": "Class",
   "label": "Scalability Pattern",
-  "definition": "Scalability Pattern is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A Scalability Pattern is a reusable architectural strategy that enables a system to handle increasing load by adding resources or restructuring components without degrading performance or reliability. Patterns include horizontal scaling (adding parallel instances), vertical scaling (increasing instance capacity), sharding, caching, and event-driven decomposition, each suited to different bottleneck profiles.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:performance-optimization", "label": "Performance Optimization"},
+      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"},
+      {"@id": "urn:ngm:class:orchestration", "label": "Orchestration"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:infrastructure-architecture", "label": "Infrastructure Architecture"},
+      {"@id": "urn:ngm:class:performance-benchmarks", "label": "Performance Benchmarks"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -76,14 +90,16 @@ public:: true
 
 
 - ### Definition
-  - ScalabilityPattern is a concept within the ngm domain.
+  - A Scalability Pattern is a reusable architectural strategy that enables a system to handle increasing load by adding resources or restructuring components without degrading performance or reliability. Patterns include horizontal scaling (adding parallel instances), vertical scaling (increasing instance capacity), sharding, caching, and event-driven decomposition, each suited to different bottleneck profiles.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:ScalabilityPattern
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **enables** → [[Performance Optimization]], [[Distributed Systems]]
+  - **uses** → [[Microservices Architecture]], [[Orchestration]]
+  - **supports** → [[Infrastructure Architecture]], [[Performance Benchmarks]]
 
 - ### Content
   # ScalabilityPattern

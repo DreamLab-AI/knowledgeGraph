@@ -37,20 +37,62 @@ public:: true
   "@id": "urn:ngm:class:robotics-application",
   "@type": "Class",
   "label": "Robotics Application",
-  "definition": "Robotics Application is a robotics and autonomous systems concept and a type of robotics.",
+  "definition": "A deployed use-case or task domain in which robotic systems perform physical or cyber-physical work, spanning industrial automation, telepresence, telemedicine, logistics, hazardous environment inspection, and collaborative human-robot interaction. Robotics applications integrate perception, planning, actuation, and communication subsystems to accomplish domain-specific objectives with varying degrees of autonomy.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-actuation-and-control",
       "label": "Actuation and Control"
     }
   ],
-  "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:robot-control",
+        "label": "Robot Control"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:teleoperation",
+        "label": "Teleoperation"
+      },
+      {
+        "@id": "urn:ngm:class:robotic-telepresence",
+        "label": "Robotic Telepresence"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:robotic-system",
+        "label": "Robotic System"
+      },
+      {
+        "@id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      }
+    ]
   }
 }
 ```
@@ -76,14 +118,17 @@ public:: true
 
 
 - ### Definition
-  - RoboticsApplication is a concept within the ngm domain.
+  - A deployed use-case or task domain in which robotic systems perform physical or cyber-physical work, spanning industrial automation, telepresence, telemedicine, logistics, hazardous environment inspection, and collaborative human-robot interaction. Robotics applications integrate perception, planning, actuation, and communication subsystems to accomplish domain-specific objectives with varying degrees of autonomy.
 
 - ### Semantic Classification
   - owl-class:: robotics:RoboticsApplication
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses [[Robotic System]], [[Feedback Control]], [[Sensor Fusion]]
+  - Enables [[Teleoperation]], [[Robotic Telepresence]]
+  - Requires [[Robot Control]]
+  - Related to [[Human Robot Interaction]], [[Autonomous System]]
 
 - ### Content
 

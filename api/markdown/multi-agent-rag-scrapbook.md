@@ -1,12 +1,17 @@
 - ### Definition
-  - Multi Agent RAG scrapbook is a concept within the ngm domain.
+  - A research and literature collection exploring architectures in which multiple specialised AI agents collaborate through retrieval-augmented generation pipelines, combining knowledge graphs, ontologies, and constrained large language models to model complex social and environmental contexts in immersive environments. Covers formal ontology design, multi-modal data ingestion, and ethical deployment constraints.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:MultiAgentRAGScrapbook
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses [[Retrieval-Augmented Generation]]
+  - Uses [[Knowledge Graph]]
+  - Requires [[Ontology]]
+  - Requires [[Multi-Agent Systems]]
+  - Related To [[Natural Language Processing]]
+  - Related To [[Knowledge Representation]]
 
 - ### Content
   - Lit survey for [[PEOPLE]] [[David Tully]] [[MUST]] In here for now.

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:location-based-experience",
   "domain": "spatial-computing",
-  "definition": "Location Based Experience is a spatial computing concept and a type of Immersive Experience.",
+  "definition": "An immersive or interactive experience tied to a specific physical venue or geographic location, combining real-world presence with digital or spatial computing overlays. Location-based experiences leverage spatial mapping, real-time content delivery, and user proximity to deliver contextually relevant narrative or interactive content that cannot be replicated remotely.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -17,21 +17,53 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:spatial-mapping",
+        "label": "Spatial Mapping"
+      },
+      {
+        "id": "urn:ngm:class:gps",
+        "label": "Gps"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:performing-arts",
+        "label": "Performing Arts"
+      },
+      {
+        "id": "urn:ngm:class:virtual-production",
+        "label": "Virtual Production"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:metaverse-venue",
+        "label": "Metaverse Venue"
+      }
+    ]
   },
   "wikilinks": [
     {

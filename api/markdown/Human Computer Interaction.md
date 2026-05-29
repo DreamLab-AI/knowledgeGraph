@@ -54,9 +54,9 @@ public:: true
   "@id": "urn:ngm:class:human-computer-interaction",
   "@type": "Class",
   "label": "Human Computer Interaction",
-  "definition": "Human-Computer Interaction (HCI) in the AI context examines the design, eand implementation of interactive systems that incorporate artificial intelligence capabilities. This interdisciplinary field addresses usability, accessibility, user experience, and cognitive aspects of AI-powered interfaces.",
+  "definition": "Human-Computer Interaction (HCI) in the AI context examines the design, evaluation, and implementation of interactive systems that incorporate artificial intelligence capabilities. This interdisciplinary field addresses usability, accessibility, user experience, and cognitive aspects of AI-powered interfaces.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
@@ -68,7 +68,20 @@ public:: true
       "@id": "urn:ngm:class:ai-research-area",
       "label": "AI Research Area"
     }
-  ]
+  ],
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:user-experience", "label": "User Experience"},
+      {"@id": "urn:ngm:class:accessibility", "label": "Accessibility"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:conversational-ai", "label": "Conversational AI"},
+      {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+    ]
+  }
 }
 ```
 
@@ -122,6 +135,11 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: ['owl:Thing']
+  - enables [[User Experience]]
+  - enables [[Accessibility]]
+  - relatedTo [[Conversational AI]]
+  - relatedTo [[Explainable AI]]
+  - uses [[Natural Language Processing]]
 
 - ### Content
 

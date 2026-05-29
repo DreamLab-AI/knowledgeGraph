@@ -84,13 +84,28 @@ public:: true
   "label": "Reinforcement Learning",
   "definition": "Reinforcement learning is a machine learning paradigm in which agents learn optimal BC-0452-policy|policies through interaction with an environment, receiving reward signals for actions and iteratively improving their decision-making through trial and error.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-research-area",
       "label": "AI Research Area"
     }
   ],
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
+      {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:reinforcement-learning-from-human-feedback", "label": "Reinforcement Learning from Human Feedback"}
+    ]
+  },
   "quality": 0.4,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -186,6 +201,11 @@ public:: true
 
 - ### Relationships
   - bridges-to:: [[Autonomous Robot]]
+  - partOf:: [[Machine Learning]]
+  - enables:: [[Autonomous Navigation]]
+  - enables:: [[Autonomous Robot]]
+  - uses:: [[Deep Learning]]
+  - relatedTo:: [[Reinforcement Learning from Human Feedback]]
 
 - ### Content
   - Machine learning paradigm where agents learn optimal [[Policy|policies]] through environmental interaction, receiving reward signals for actions and iteratively improving decision-making through trial and error. Fundamental to [[AutonomousRobot|autonomous systems]] and [[ArtificialIntelligence|AI agents]] adapting to dynamic, uncertain environments without explicit human supervision. Applications span [[GameAI|game-playing agents]], [[RoboticControl|robotic control]], and [[RecommendationSystem|recommendation systems]] where learning from environmental feedback optimises long-term performance through [[ValueFunction|value functions]] and [[TemporalDifference|temporal difference]] learning.

@@ -46,20 +46,38 @@ public:: true
   "@id": "urn:ngm:class:rb-0035-accuracy",
   "@type": "Class",
   "label": "rb 0035 accuracy",
-  "definition": "Accuracy - Difference between commanded and actual position",
+  "definition": "Robot accuracy is the closeness of agreement between a robot's commanded pose and its actual achieved pose, measured as the mean positional or orientational error across multiple repeated commanded positions. Defined in ISO 9283, it encompasses pose accuracy, path accuracy, and static compliance accuracy, and is distinct from repeatability, which measures the spread of repeated attempts at the same pose rather than deviation from the commanded value.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-actuation-and-control",
       "label": "Actuation and Control"
     },
     {
-      "@id": "urn:ngm:class:robot",
-      "label": "Robot"
+      "@id": "urn:ngm:class:accuracy",
+      "label": "Accuracy"
     }
   ],
-  "quality": 0.5,
+  "qualityScore": 0.7,
+  "relations": {
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:rb-0034-repeatability", "label": "rb 0034 repeatability"},
+      {"@id": "urn:ngm:class:rb-0036-resolution", "label": "rb 0036 resolution"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:rb-0021-robot-kinematics", "label": "rb 0021 robot kinematics"},
+      {"@id": "urn:ngm:class:rb-0029-inverse-kinematics", "label": "rb 0029 inverse kinematics"},
+      {"@id": "urn:ngm:class:calibration", "label": "Calibration"},
+      {"@id": "urn:ngm:class:precision", "label": "Precision"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:rb-0087-safety-standard", "label": "rb 0087 safety standard"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:rb-0048-pid-controller", "label": "rb 0048 pid controller"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

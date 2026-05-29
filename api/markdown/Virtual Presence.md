@@ -48,7 +48,8 @@ public:: true
   "label": "Virtual Presence",
   "definition": "The psychological experience of being there within a virtual place or situation, encompassing spatial presence (sense of location), social presence (connection with others), and self-presence (embodiment in virtual form), achieved through telepresence technologies and immersive environments.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -64,6 +65,44 @@ public:: true
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:social-presence",
+        "label": "Social Presence"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      }
+    ]
   }
 }
 ```
@@ -109,6 +148,13 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Telepresence]]
+  - Requires: [[Virtual Reality]]
+  - Requires: [[Avatar]]
+  - Enables: [[Social Presence]]
+  - Enables: [[Immersive Experience]]
+  - Uses: [[Haptic Feedback]]
+  - Uses: [[Spatial Audio]]
+  - Related To: [[Extended Reality]]
 
 - ### Content
 

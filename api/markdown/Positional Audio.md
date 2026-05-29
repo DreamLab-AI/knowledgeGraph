@@ -37,9 +37,10 @@ public:: true
   "@id": "urn:ngm:class:positional-audio",
   "@type": "Class",
   "label": "Positional Audio",
-  "definition": "Positional Audio is a spatial computing concept and a type of spatial-computing.",
+  "definition": "Positional Audio is a technique for rendering sound sources at specific locations within a 3D virtual or mixed-reality environment, simulating how sound propagates, attenuates, and is spatially perceived by the listener. It relies on head-related transfer functions (HRTFs) and room acoustics modelling to create realistic auditory presence.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-display-and-rendering",
@@ -51,6 +52,42 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:audio-spatialization",
+        "label": "Audio Spatialization"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:immersive-audio-system",
+        "label": "Immersive Audio System"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:audio-processing-system",
+        "label": "Audio Processing System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:procedural-audio-generator",
+        "label": "Procedural Audio Generator"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:spatial-audio-system",
+        "label": "Spatial Audio System"
+      }
+    ]
   }
 }
 ```
@@ -76,14 +113,19 @@ public:: true
 
 
 - ### Definition
-  - PositionalAudio is a concept within the ngm domain.
+  - Positional Audio is a technique for rendering sound sources at specific locations within a 3D virtual or mixed-reality environment, simulating how sound propagates, attenuates, and is spatially perceived by the listener. It relies on head-related transfer functions (HRTFs) and room acoustics modelling to create realistic auditory presence.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:PositionalAudio
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Part Of [[Spatial Audio System]]
+  - Requires [[Audio Spatialization]]
+  - Enables [[Immersive Audio System]]
+  - Enables [[Spatial Audio]]
+  - Uses [[Audio Processing System]]
+  - Related To [[Procedural Audio Generator]]
 
 - ### Content
   # PositionalAudio

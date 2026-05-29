@@ -52,7 +52,7 @@ public:: true
   "label": "Mixture of Experts",
   "definition": "An architecture that uses multiple specialised sub-networks (experts) with a gating mechanism that routes inputs to a sparse subset of experts, enabling scaling without proportional compute increases. MoE is adopted in production LLMs like GPT-4, enabling massive scale with controlled costs.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-model-architecture",
@@ -63,6 +63,21 @@ public:: true
       "label": "Model Architecture"
     }
   ],
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:sparse-mixture-of-experts", "label": "Sparse Mixture of Experts"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -117,7 +132,11 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart [[Sparse Mixture of Experts]]
+  - enables [[Large Language Models]]
+  - enables [[Natural Language Processing]]
+  - uses [[Transformer Architecture]]
+  - contrastsWith [[Deep Learning]]
 
 - ### Content
   - An architecture that uses multiple specialised sub-networks (experts) with a gating mechanism that routes inputs to a sparse subset of experts, enabling scaling without proportional compute increases. MoE is adopted in production LLMs like GPT-4, enabling massive scale with controlled costs.

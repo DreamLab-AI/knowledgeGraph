@@ -37,16 +37,30 @@ public:: true
   "@id": "urn:ngm:class:3-d-content-pipeline",
   "@type": "Class",
   "label": "3D Content Pipeline",
-  "definition": "3D Content Pipeline is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "The comprehensive workflows, tools, and methodologies for creating, processing, optimising, and delivering three-dimensional assets for metaverse and spatial computing applications. A 3D content pipeline spans concept art, geometry modelling, UV mapping, PBR texturing, rigging, LOD generation, and platform-specific optimisation, integrating DCC tools, game engines, version control, and CI/CD systems to support distributed teams and continuous asset delivery.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:3-d-asset", "label": "3D Asset"},
+      {"@id": "urn:ngm:class:3-d-animation", "label": "3D Animation"},
+      {"@id": "urn:ngm:class:rendering-pipeline", "label": "Rendering Pipeline"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
+      {"@id": "urn:ngm:class:metaverse-and-telecollaboration", "label": "Metaverse and Telecollaboration"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:3-d-content-generation", "label": "3D Content Generation"}
+    ]
+  },
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -76,14 +90,19 @@ public:: true
 
 
 - ### Definition
-  - 3D Content Pipeline is a concept within the ngm domain.
+  - The comprehensive workflows, tools, and methodologies for creating, processing, optimising, and delivering three-dimensional assets for metaverse and spatial computing applications. A 3D content pipeline spans concept art, geometry modelling, UV mapping, PBR texturing, rigging, LOD generation, and platform-specific optimisation, integrating DCC tools, game engines, version control, and CI/CD systems to support distributed teams and continuous asset delivery.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:3D Content Pipeline
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart [[3D Asset]]
+  - hasPart [[3D Animation]]
+  - hasPart [[Rendering Pipeline]]
+  - enables [[Real-Time Rendering]]
+  - enables [[Metaverse and Telecollaboration]]
+  - relatedTo [[3D Content Generation]]
 
 - ### Content
 

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:stakeholder-engagement-in-ai",
   "domain": "artificial-intelligence",
-  "definition": "Stakeholder Engagement in AI is a participatory process that systematically identifies, involves, and incorporates perspectives from individuals, groups, and communities affected by or having legitimate interests in AI systems, ensuring inclusive design, accountable deployment, and responsive gov...",
+  "definition": "Stakeholder Engagement in AI is a participatory process that systematically identifies, involves, and incorporates perspectives from individuals, groups, and communities affected by or having legitimate interests in AI systems, ensuring inclusive design, accountable deployment, and responsive governance. Engagement spans a spectrum from information provision and consultation through to co-design and empowerment mechanisms, and is required by frameworks including the EU AI Act and the OECD AI Principles.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -13,21 +13,73 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-impact-assessment",
+        "label": "AI Impact Assessment"
+      },
+      {
+        "id": "urn:ngm:class:ethical-review-process",
+        "label": "Ethical Review Process"
+      },
+      {
+        "id": "urn:ngm:class:bias-detection-methods",
+        "label": "Bias Detection Methods"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      },
+      {
+        "id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      },
+      {
+        "id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      },
+      {
+        "id": "urn:ngm:class:participation-framework",
+        "label": "Participation Framework"
+      },
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      }
+    ]
   },
   "wikilinks": [
     {

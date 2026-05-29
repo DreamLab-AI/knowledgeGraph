@@ -62,9 +62,10 @@ public:: true
   "@id": "urn:ngm:class:land-economics",
   "@type": "Class",
   "label": "Land Economics",
-  "definition": "Land Economics is a spatial computing concept and a type of Metaverse.",
+  "definition": "Land Economics is the economic framework governing virtual land ownership, valuation, development, and transaction within metaverse environments, characterised by artificial scarcity, spatial positioning premiums, and speculative markets. It encompasses primary sales, secondary peer-to-peer trading, rental systems, platform taxation models, and zoning policies that together determine how virtual parcels accumulate and lose value.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -75,6 +76,20 @@ public:: true
       "label": "Metaverse"
     }
   ],
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:virtual-economy", "label": "Virtual Economy"},
+      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:digital-ownership", "label": "Digital Ownership"},
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:virtual-labor", "label": "Virtual Labor"},
+      {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
@@ -136,7 +151,7 @@ public:: true
 
 
 - ### Definition
-  - Land Economics is a concept within the mv domain.
+  - Land Economics is the economic framework governing virtual land ownership, valuation, development, and transaction within metaverse environments, characterised by artificial scarcity, spatial positioning premiums, and speculative markets. It encompasses primary sales, secondary peer-to-peer trading, rental systems, platform taxation models, and zoning policies that together determine how virtual parcels accumulate and lose value.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:LandEconomics
@@ -144,6 +159,9 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Metaverse]]
+  - partOf:: [[Virtual Economy]], [[Metaverse]]
+  - requires:: [[Digital Ownership]], [[Smart Contract]]
+  - relatedTo:: [[Virtual Labor]], [[Digital Asset]]
 
 - ### Content
 

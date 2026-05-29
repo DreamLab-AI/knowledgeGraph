@@ -8,6 +8,13 @@
 
 - ### Relationships
   - is-subclass-of:: [[Generative Content]]
+  - Uses [[Procedural Generation]]
+  - Uses [[NFT Minting]]
+  - Enables [[NFT]]
+  - Enables [[Content Authentication]]
+  - Standardized by [[ERC-721]]
+  - Related to [[Digital Art Application]]
+  - Related to [[NFT Ownership Proof]]
 
 - ### Content
 

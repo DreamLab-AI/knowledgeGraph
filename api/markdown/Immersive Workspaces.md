@@ -42,9 +42,11 @@ public:: true
   "@id": "urn:ngm:class:immersive-workspaces",
   "@type": "Class",
   "label": "Immersive Workspaces",
-  "definition": "Immersive Workspaces is a type of Metaverse and Telecollaboration in the spatial computing domain.",
+  "definition": "Immersive workspaces are physical or virtual environments enhanced with spatial and extended-reality technologies—including AR, VR, and mixed reality—that allow users to interact intuitively with digital content and collaborators in three-dimensional space, fostering a strong sense of presence and engagement. They integrate spatial computing principles to support real-time manipulation of data, collaborative visualisation, immersive training, and seamless transitions between physical and digital environments. Immersive workspaces are increasingly deployed across corporate, industrial, and educational settings to support hybrid and remote collaboration at scale.",
   "domain": "spatial-computing",
   "maturity": "emerging",
+  "quality": 0.75,
+  "qualityScore": 0.75,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -55,7 +57,28 @@ public:: true
       "label": "Metaverse and Telecollaboration"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
+      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
+      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"},
+      {"@id": "urn:ngm:class:spatial-audio", "label": "Spatial Audio"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:extended-reality-xr", "label": "Extended Reality (XR)"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
+      {"@id": "urn:ngm:class:xr-device", "label": "XR Device"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:remote-collaboration", "label": "Remote Collaboration"},
+      {"@id": "urn:ngm:class:telepresence", "label": "Telepresence"},
+      {"@id": "urn:ngm:class:immersive-learning", "label": "Immersive Learning"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

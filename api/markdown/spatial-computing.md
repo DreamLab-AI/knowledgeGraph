@@ -1,12 +1,17 @@
 - ### Definition
-  - SpatialComputing is a concept within the ngm domain.
+  - Spatial Computing is the convergence of augmented reality, virtual reality, and mixed reality with physical-world sensing to create persistent spatial layers in which digital content is anchored to real-world locations and objects. Core capabilities include SLAM-based spatial mapping, depth sensing, object recognition, and spatial anchoring. Spatial Computing underpins immersive experiences in manufacturing, healthcare, retail, education, and navigation by enabling seamless interaction between physical and digital spaces.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:SpatialComputing
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart:: [[SLAM]]
+  - hasPart:: [[Augmented Reality]]
+  - enables:: [[Autonomous Navigation]]
+  - enables:: [[Mixed Reality]]
+  - requires:: [[Sensor Fusion]]
+  - requires:: [[Computer Vision]]
 
 - ### Content
   # SpatialComputing

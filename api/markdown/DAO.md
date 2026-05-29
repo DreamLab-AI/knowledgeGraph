@@ -72,13 +72,29 @@ public:: true
   "label": "DAO",
   "definition": "Decentralised Autonomous Organisation operating through transparent code-based rules and distributed governance rather than hierarchical management, enabling community coordination at scale.",
   "domain": "blockchain",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-governance-and-regulation",
       "label": "Governance and Regulation"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
+      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:smart-contract-platform", "label": "Smart Contract Platform"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:decentralized-governance", "label": "Decentralized Governance"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:blockchain-infrastructure", "label": "Blockchain Infrastructure"},
+      {"@id": "urn:ngm:class:dao-governance", "label": "DAO Governance"}
+    ]
+  },
   "quality": 0.4,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -164,8 +180,12 @@ public:: true
   - belongs-to-domain:: [[BlockchainDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
-
+  - uses:: [[Smart Contract]]
+  - uses:: [[Governance Token]]
+  - requires:: [[Smart Contract Platform]]
+  - enables:: [[Decentralized Governance]]
+  - relatedTo:: [[Blockchain Infrastructure]]
+  - relatedTo:: [[DAO Governance]]
   - bridges-to:: [[AI Agent System]] (ai)
 - ### Content
   - An organisational structure operating through transparent, code-based rules and community-driven governance rather than hierarchical command structures, enabled by [[Smart Contracts]] and [[Blockchain Infrastructure]]. DAOs coordinate stakeholder decisions, manage shared resources, and execute treasury operations through [[Distributed Consensus]] mechanisms.

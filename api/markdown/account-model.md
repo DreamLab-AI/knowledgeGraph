@@ -1,5 +1,5 @@
 - ### Definition
-  - Balance-based accounting model within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
+  The Account Model is a balance-based ledger paradigm in which each address maintains a persistent balance that is updated in-place when transactions execute. Unlike the UTXO model, accounts hold state across transactions, simplifying smart contract programming while introducing challenges around replay protection and nonce management.
 
 - ### Semantic Classification
   - owl-class:: blockchain:AccountModel
@@ -9,8 +9,7 @@
   - implemented-in-layer:: [[ConceptualLayer]]
 
 - ### Relationships
-  - is-subclass-of:: [[Blockchain Entity]], [[DistributedDataStructure]]
-  - bridges-to:: [[AI Agent System]]
+  The Account Model contrasts fundamentally with the [[UTXO Model]] used by Bitcoin, trading fine-grained output tracking for simpler stateful programming. It enables [[Smart Contract]] execution by providing addressable mutable state, and all state changes are driven by [[Transaction]] submissions. Account security depends on [[Wallet]] custody of private keys via [[Cryptographic Keys]]. The model simplifies [[Transaction Processing]] logic but requires nonce tracking to prevent [[Double Spending]]. [[Transaction Fee]] calculation is integrated as a gas mechanism in account-based chains like Ethereum.
 
 - ### Content
 
@@ -49,30 +48,17 @@
   )
       ```
 
-  - ## About Account Model
+  #### Design Principles
+  In the account model every address—whether an externally owned account or a smart contract—holds a balance and associated state. A transaction decrements the sender's balance and increments the recipient's, with the net difference covering gas fees. Smart contracts store their internal state (mappings, arrays, variables) in the contract's storage trie, making the account model the natural substrate for programmable money and decentralised applications.
 
-  - Balance-based accounting model within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
-  - ### Key Characteristics
-    - 1. **Definitional Property**: Core defining characteristic
-    - 2. **Functional Property**: Operational behavior
-    - 3. **Structural Property**: Compositional elements
-    - 4. **Security Property**: Security guarantees provided
-    - 5. **Performance Property**: Efficiency considerations
-  - ### Technical Components
-    - **Implementation**: How concept is realized technically
-    - **Verification**: Methods for validating correctness
-    - **Interaction**: Relationships with other components
-    - **Constraints**: Technical limitations and requirements
-  - ### Use Cases
-    - **1. Core Blockchain Operation**
-    - **Application**: Fundamental blockchain functionality
-    - **Example**: Practical implementation in major blockchains
-    - **Requirements**: Technical prerequisites
-    - **Benefits**: Value provided to blockchain systems
-  - ### Standards & References
-    - [[ISO/IEC 23257:2021]] - Blockchain and distributed ledger technologies
-    - [[IEEE 2418.1]] - Blockchain and distributed ledger technologies
-    - [[NIST NISTIR]] - Blockchain and distributed ledger technologies
+  #### Comparison with UTXO
+  The UTXO model used by Bitcoin tracks individual unspent outputs, giving it superior parallelism for transaction validation and better privacy properties through output reuse avoidance. The account model sacrifices these properties for easier programmability: developers reason about balances and contract state rather than managing chains of unspent outputs. Ethereum chose the account model specifically to support Turing-complete smart contracts, while Bitcoin's scripting system is intentionally limited.
+
+  #### Nonce and Replay Protection
+  Each account maintains a transaction counter (nonce) that must be included in every outgoing transaction. The network rejects transactions whose nonce does not match the expected sequence, preventing replay attacks in which a signed transaction is submitted more than once. This mechanism ties transaction ordering to the account, unlike the UTXO model where outputs can be spent in any order.
+
+  #### Security Considerations
+  Because account balances are mutable global state, smart contracts operating on the account model must guard against reentrancy attacks, where a malicious contract recursively calls back into the victim before its state update is committed. Nonce management, access control patterns (checks-effects-interactions), and formal verification tools are the principal defences.
 
 - ### Provenance
   - sources:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]

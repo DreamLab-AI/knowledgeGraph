@@ -37,16 +37,30 @@ public:: true
   "@id": "urn:ngm:class:three-dimensional-graphics",
   "@type": "Class",
   "label": "Three Dimensional Graphics",
-  "definition": "Three Dimensional Graphics is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Three Dimensional Graphics encompasses the computational techniques for modelling, transforming, and rendering three-dimensional geometry onto two-dimensional display surfaces, encompassing rasterisation, ray tracing, shading, and scene graph management. It underpins game engines, virtual and augmented reality platforms, digital twins, and scientific visualisation.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"},
+      {"@id": "urn:ngm:class:3-d-rendering-engine", "label": "3D Rendering Engine"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:3-d-modeling", "label": "3D Modeling"},
+      {"@id": "urn:ngm:class:3-d-asset-standard", "label": "3D Asset Standard"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -76,14 +90,16 @@ public:: true
 
 
 - ### Definition
-  - ThreeDimensionalGraphics is a concept within the ngm domain.
+  Three Dimensional Graphics encompasses the computational techniques for modelling, transforming, and rendering three-dimensional geometry onto two-dimensional display surfaces, encompassing rasterisation, ray tracing, shading, and scene graph management. It underpins game engines, virtual and augmented reality platforms, digital twins, and scientific visualisation.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:ThreeDimensionalGraphics
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **enables**: Augmented Reality, Digital Twin
+  - **uses**: Game Engine, 3D Rendering Engine
+  - **hasPart**: 3D Modeling, 3D Asset Standard
 
 - ### Content
   # ThreeDimensionalGraphics

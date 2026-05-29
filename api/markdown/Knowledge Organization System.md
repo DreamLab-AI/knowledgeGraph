@@ -42,15 +42,29 @@ public:: true
   "@id": "urn:ngm:class:knowledge-organization-system",
   "@type": "Class",
   "label": "Knowledge Organization System",
-  "definition": "Knowledge Organization System is a type of Artificial Intelligence in the artificial intelligence domain.",
+  "definition": "A Knowledge Organization System (KOS) is any formal scheme used to organise, classify, and relate concepts within a domain — including thesauri, classification schemes, ontologies, taxonomies, and controlled vocabularies. KOS structures enable semantic interoperability by providing shared conceptual frameworks that allow heterogeneous systems to exchange and interpret information consistently. In AI infrastructure they underpin knowledge graphs, semantic search, and entity disambiguation in large language model pipelines.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:cat-ai-infrastructure",
+      "@id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure (Category)"
     }
   ],
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
+      {"@id": "urn:ngm:class:controlled-vocabulary", "label": "Controlled Vocabulary"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
+      {"@id": "urn:ngm:class:semantic-search", "label": "Semantic Search"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"},
+      {"@id": "urn:ngm:class:knowledge-organization", "label": "Knowledge Organization"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -87,23 +101,25 @@ public:: true
 
 
 - ### Definition
-  - Knowledge Organization System is a concept within the metaverse domain. Further enrichment pending.
+  - A Knowledge Organization System (KOS) is any formal scheme used to organise, classify, and relate concepts within a domain — including thesauri, classification schemes, ontologies, taxonomies, and controlled vocabularies. KOS structures enable semantic interoperability by providing shared conceptual frameworks that allow heterogeneous systems to exchange and interpret information consistently. In AI infrastructure they underpin knowledge graphs, semantic search, and entity disambiguation in large language model pipelines.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:KnowledgeOrganizationSystem
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart [[Ontology]]
+  - hasPart [[Controlled Vocabulary]]
+  - enables [[Knowledge Graph]]
+  - enables [[Semantic Search]]
+  - relatedTo [[Information Retrieval]]
+  - relatedTo [[Knowledge Organization]]
 
 - ### Content
 
   ## Overview
 
-  Knowledge Organization System represents an abstract concept in the metaverse ontology hierarchy.
-
-  #### Related Concepts
-  - [[owl:Thing]]
+  A Knowledge Organization System (KOS) is any formal scheme for organising, classifying, and relating concepts within a domain, including thesauri, classification schemes, ontologies, and controlled vocabularies. KOS structures provide the semantic scaffolding that allows heterogeneous AI systems and information retrieval platforms to exchange and interpret information consistently. In machine learning infrastructure, KOS plays a pivotal role in entity disambiguation for named entity recognition, providing structured background knowledge that grounds language model outputs in verifiable concept hierarchies. In the metaverse context, KOS enables cross-platform semantic interoperability by defining shared ontological namespaces for avatars, virtual assets, and spatial environments — reducing the risk of semantic mismatch when users migrate between platforms.
 
 - ### Provenance
   - sources::

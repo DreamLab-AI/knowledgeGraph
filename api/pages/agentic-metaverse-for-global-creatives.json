@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:agentic-metaverse-for-global-creatives",
   "domain": "artificial-intelligence",
-  "definition": "Agentic Metaverse for Global Creatives is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "A conceptual and technical framework for a decentralised, AI-agent-driven metaverse ecosystem enabling global creative collaboration, autonomous task execution, and value exchange. The architecture integrates Nostr for identity and communication, Bitcoin and Lightning Network for payments, and USD/Omniverse for 3D asset manipulation, with agentic actors managing task negotiation, content delivery, and digital-object provenance across interconnected virtual spaces.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-application",
@@ -13,17 +13,48 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:nostr-protocol",
+        "label": "Nostr Protocol"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

@@ -70,7 +70,7 @@ public:: true
   "@id": "urn:ngm:class:selfish-mining",
   "@type": "Class",
   "label": "Selfish Mining",
-  "definition": "Strategic block withholding within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "A strategic block-withholding attack in proof-of-work blockchains where a mining pool privately mines a secret chain and selectively publishes blocks to waste the computational work of honest miners, thereby earning a disproportionate share of block rewards relative to its hash-rate contribution. Selfish mining is profitable when the attacker controls more than ~33% of network hash-rate.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -87,7 +87,24 @@ public:: true
       "label": "NetworkComponent"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:51-attack", "label": "51% Attack"},
+      {"@id": "urn:ngm:class:mining-pool", "label": "Mining Pool"},
+      {"@id": "urn:ngm:class:bitcoin-mining", "label": "Bitcoin Mining"},
+      {"@id": "urn:ngm:class:double-spending", "label": "Double Spending"},
+      {"@id": "urn:ngm:class:longest-chain-rule", "label": "Longest Chain Rule"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:decentralization", "label": "Decentralization"},
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:block", "label": "Block"},
+      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

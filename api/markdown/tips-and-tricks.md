@@ -1,12 +1,14 @@
 - ### Definition
-  - Tips and Tricks is a concept within the ngm domain.
+  - Practical heuristics, shortcuts, and workflow optimisations accumulated through practitioner experience with software tools, knowledge-management systems, and AI-assisted development. This category collects actionable guidance that reduces friction in everyday tasks such as Logseq database management, document format conversion, and prompt engineering.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:TipsAndTricks
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **relatedTo**: Prompt Engineering, Version Control — tips for effective prompting and source-control hygiene are the most common entries in this category.
+  - **supports**: Software Development Process, Documentation Standards — practitioner tips improve both the development workflow and the quality of resulting documentation.
+  - **uses**: Workflow Automation — many tips describe how to automate repetitive tasks using available tooling.
 
 - ### Content
   - [Logseq Tutorial: 5 Tips to Improve Your Logseq Database

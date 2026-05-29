@@ -6,7 +6,13 @@
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses** [[Blockchain]] — blockchain networks provide immutable, decentralised transaction settlement
+  - **uses** [[Cryptocurrency]] — cryptocurrencies are the primary assets transferred in on-chain transactions
+  - **uses** [[Smart Contract]] — smart contracts automate conditional financial transaction execution
+  - **enables** [[De Fi Services]] — financial transactions are the atomic units enabling DeFi protocols
+  - **enables** [[Digital Asset Trading]] — trading platforms execute financial transactions over digital assets
+  - **relatedTo** [[Lightning Network]] — Lightning enables high-throughput micropayment financial transactions
+  - **relatedTo** [[Financial Services]] — financial transactions are the operational core of financial services
 
 - ### Content
 

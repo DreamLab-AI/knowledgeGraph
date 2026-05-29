@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:liquid-democracy",
   "domain": "blockchain",
-  "definition": "A delegative governance model in which voters may either vote directly on proposals or delegate their voting power transitively to trusted representatives.",
+  "definition": "Liquid democracy is a hybrid governance model that combines direct and representative democracy by allowing participants to vote on proposals themselves or transitively delegate their voting power to a trusted proxy, who may further re-delegate to another delegate, forming an arbitrarily deep delegation chain. Delegations are revocable at any time, allowing voters to reclaim their votes before a proposal closes. In blockchain governance contexts, liquid democracy is implemented via governance token delegation mechanisms, enabling token holders to assign their on-chain voting weight to domain experts while retaining the right to override delegated votes on individual proposals.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-governance-and-regulation",
@@ -14,16 +14,39 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-governance",
+        "label": "On-chain Governance"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:voting-mechanism",
+        "label": "Voting Mechanism"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

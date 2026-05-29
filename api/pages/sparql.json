@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:sparql",
   "domain": "infrastructure",
-  "definition": "SPARQL is a W3C-standardised query language and protocol for retrieving and manipulating data stored in RDF triple stores and linked-data endpoints.",
+  "definition": "SPARQL (SPARQL Protocol and RDF Query Language) is a W3C Recommendation defining a query language, update language, and HTTP-based protocol for retrieving and modifying data stored in RDF graph databases and Linked Data endpoints. SPARQL 1.1 (2013) introduced federated queries across multiple SPARQL endpoints via the SERVICE keyword, property paths for navigating arbitrary-length chains of RDF triples, aggregation functions, and the SPARQL Update (SPARUL) sublanguage for graph mutation. It is the standard access layer for the Semantic Web and knowledge graph ecosystems, analogous to SQL for relational databases.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-data-management",
@@ -14,11 +14,29 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      },
+      {
+        "id": "urn:ngm:class:graph-database",
+        "label": "Graph Database"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:knowledge-graph-construction",
+        "label": "Knowledge Graph Construction"
+      },
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +45,20 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web-standards",
+        "label": "Semantic Web Standards"
+      },
+      {
+        "id": "urn:ngm:class:sparql-endpoint",
+        "label": "SPARQL Endpoint"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

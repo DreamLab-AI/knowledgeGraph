@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:virtual-community-practice",
   "@type": "Class",
   "label": "Virtual Community Practice",
-  "definition": "The modologies, norms, and behaviors that govern how members interact, collaborate, and build relationships within virtual community platforms, including governance structures, social conventions, and collective practices that shape online community culture.",
+  "definition": "The methodologies, norms, and behaviours that govern how members interact, collaborate, and build relationships within virtual community platforms. This encompasses governance structures, social conventions, moderation policies, and collective practices that shape online community culture in metaverse and social VR environments.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
@@ -59,11 +60,44 @@ public:: true
       "label": "Community Governance"
     }
   ],
-  "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:governance-model",
+        "label": "Governance Model"
+      },
+      {
+        "@id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:digital-citizenship",
+        "label": "Digital Citizenship"
+      },
+      {
+        "@id": "urn:ngm:class:social-vr",
+        "label": "Social VR"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:virtual-world",
+        "label": "Virtual World"
+      }
+    ]
   }
 }
 ```
@@ -109,6 +143,12 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Community Governance]]
+  - Requires [[Governance Model]]
+  - Requires [[Content Moderation]]
+  - Supports [[Digital Citizenship]]
+  - Supports [[Social VR]]
+  - Part Of [[Virtual World]]
+  - Contrasts With [[DAO Governance]]
 
 - ### Content
 

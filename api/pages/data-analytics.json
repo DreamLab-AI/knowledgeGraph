@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:data-analytics",
   "domain": "infrastructure",
-  "definition": "Data Analytics is a type of Infrastructure in the infrastructure domain.",
+  "definition": "Data Analytics is the systematic computational analysis of data sets to discover patterns, draw conclusions, and support decision-making. It encompasses descriptive analytics (summarising historical data), diagnostic analytics (root-cause analysis), predictive analytics (forecasting), and prescriptive analytics (recommending actions). Data analytics pipelines ingest data from multiple sources, apply statistical and machine learning methods, and deliver insights through dashboards and reports.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-data-management",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:data-lake",
+        "label": "Data Lake"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      },
+      {
+        "id": "urn:ngm:class:data-processing",
+        "label": "Data Processing"
+      }
+    ]
   },
   "wikilinks": [
     {

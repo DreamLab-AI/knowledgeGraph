@@ -56,13 +56,27 @@ public:: true
   "label": "Image to Image Translation",
   "definition": "Image-to-Image Translation transforms images from one visual domain to another whilst preserving content structure, converting between image modalities such as sketch-to-photo, day-to-night, satellite-to-map, or style transfer between artistic styles.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-display-and-rendering",
       "label": "Display and Rendering"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:generative-adversarial-network", "label": "Generative Adversarial Network"},
+      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:style-transfer", "label": "Style Transfer"},
+      {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -122,7 +136,12 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses [[Generative Adversarial Network]]
+  - uses [[Diffusion Model]]
+  - enables [[Style Transfer]]
+  - enables [[Image Generation]]
+  - dependsOn [[Convolutional Neural Network]]
+  - dependsOn [[Computer Vision]]
 
 - ### Content
   - Image-to-Image Translation transforms images from one visual domain to another whilst preserving content structure, converting between image modalities such as sketch-to-photo, day-to-night, satellite-to-map, or style transfer between artistic styles. Image translation models (Pix2Pix, CycleGAN, StyleGAN) employ conditional generation and adversarial learning to learn mappings between paired or unpaired image domains.

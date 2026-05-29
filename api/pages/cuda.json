@@ -5,26 +5,53 @@
   "public": true,
   "classIri": "urn:ngm:class:cuda",
   "domain": "artificial-intelligence",
-  "definition": "CUDA (Compute Unified Device Architecture) is NVIDIA's parallel computing platform and programming model that enables general-purpose computation on GPUs for deep learning and scientific workloads.",
+  "definition": "CUDA (Compute Unified Device Architecture) is NVIDIA's proprietary parallel computing platform and programming model that exposes GPU hardware through a C/C++ extension, enabling thousands of threads to execute concurrently across GPU cores. It provides a hierarchical thread model of grids, blocks, and warps, alongside a managed memory model that spans host (CPU) and device (GPU) address spaces. CUDA underpins the majority of production deep learning training and inference workloads, acting as the primary execution substrate for frameworks such as PyTorch and TensorFlow.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:training",
+        "label": "Training"
+      },
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-framework",
+        "label": "Machine Learning Framework"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": []

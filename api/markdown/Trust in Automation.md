@@ -138,7 +138,7 @@ public:: true
   "@id": "urn:ngm:class:trust-in-automation",
   "@type": "Class",
   "label": "Trust in Automation",
-  "definition": "The psychological state in which a human user accepts vulnerability to an automated system's actions based on expectations that the system will perform appropriately to achieve the user's goals, despite uncertainty and the possibility of negative consequences.",
+  "definition": "The psychological state in which a human user accepts vulnerability to an automated system's actions based on expectations that the system will perform appropriately to achieve the user's goals, despite uncertainty and the possibility of negative consequences. It represents the user's confidence in the system's reliability, competence, and integrity, and when miscalibrated manifests as over-trust (complacency) or under-trust (disuse).",
   "domain": "robotics",
   "maturity": "established",
   "subClassOf": [
@@ -151,7 +151,24 @@ public:: true
       "label": "Human Factors"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:explainability", "label": "Explainability"},
+      {"@id": "urn:ngm:class:transparency", "label": "Transparency"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:technology-adoption", "label": "Technology Adoption"},
+      {"@id": "urn:ngm:class:collaborative-robot", "label": "Collaborative Robot"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"},
+      {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"},
+      {"@id": "urn:ngm:class:ai-trustworthiness", "label": "AI Trustworthiness"},
+      {"@id": "urn:ngm:class:safety", "label": "Safety"},
+      {"@id": "urn:ngm:class:robot", "label": "Robot"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

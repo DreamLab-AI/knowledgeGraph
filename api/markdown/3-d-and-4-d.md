@@ -1,12 +1,14 @@
 - ### Definition
-  - 3D and 4D is a concept within the ngm domain.
+  - The domain of three-dimensional and four-dimensional content creation, covering AI-powered pipelines for generating, editing, and rendering 3D assets and temporally dynamic (4D) representations. Encompasses text-to-3D systems, neural radiance fields, Gaussian splatting, diffusion-based mesh generation, 6D pose estimation, and scene-scale generation integrated with AR/VR workflows.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:3DAnd4D
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses:: [[Generative AI]], [[Diffusion Model]], [[Neural Radiance Field]], [[Deep Learning]]
+  - enables:: [[Augmented Reality]], [[3D Asset]], [[Pose Estimation]]
+  - relatedTo:: [[Computer Vision]], [[Machine Learning]]
 
 - ### Content
   - # 3D and 4D Content Creation

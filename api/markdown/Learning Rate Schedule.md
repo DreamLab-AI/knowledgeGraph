@@ -42,20 +42,58 @@ public:: true
   "@id": "urn:ngm:class:learning-rate-schedule",
   "@type": "Class",
   "label": "Learning Rate Schedule",
-  "definition": "A strategy for adjusting the learning rate during training according to a predefined or adaptive schedule. Learning rate schedules improve convergence and final performance by using higher rates early for rapid progress and lower rates later for fine-tuning.",
-  "domain": "spatial-computing",
-  "maturity": "draft",
+  "definition": "A systematic strategy for varying the learning rate hyperparameter during model training, either according to a fixed rule (step decay, cosine annealing, exponential decay) or adaptively in response to training signals. Learning rate schedules improve convergence and final model performance by applying higher rates early for rapid progress and lower rates during fine-tuning, thereby reducing the risk of overshooting loss minima.",
+  "domain": "artificial-intelligence",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
     }
   ],
-  "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:training-and-fine-tuning",
+        "label": "Training and fine tuning"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:training",
+        "label": "Training"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-framework",
+        "label": "Machine Learning Framework"
+      }
+    ]
   }
 }
 ```
@@ -95,7 +133,10 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses [[Gradient Descent]], [[Training]]
+  - Requires [[Machine Learning]], [[Deep Learning]]
+  - Enables [[Training and fine tuning]]
+  - Related to [[Neural Network]], [[Machine Learning Framework]]
 
 - ### Content
   - A strategy for adjusting the learning rate during training according to a predefined or adaptive schedule. Learning rate schedules improve convergence and final performance by using higher rates early for rapid progress and lower rates later for fine-tuning.

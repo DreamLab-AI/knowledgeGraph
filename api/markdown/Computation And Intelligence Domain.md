@@ -62,16 +62,36 @@ public:: true
   "@id": "urn:ngm:class:computation-and-intelligence-domain",
   "@type": "Class",
   "label": "Computation And Intelligence Domain",
-  "definition": "A foundational domain at the intersection of computational theory and cognitive science, encompassing concepts related to algorithmic information processing, computational complexity, machine cognition, and the theoretical underpinnings of intelligent behaviour in both natural and artificial syst...",
+  "definition": "A foundational domain at the intersection of computational theory and cognitive science, encompassing algorithmic information processing, computational complexity, machine cognition, and the theoretical underpinnings of intelligent behaviour in both natural and artificial systems. The domain integrates Turing's computability framework, Shannon's information theory, and cognitive architecture research to address the fundamental question of what computational processes constitute intelligence.",
   "domain": "artificial-intelligence",
   "maturity": "established",
+  "qualityScore": 0.8,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-research-area",
       "label": "AI Research Area"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:cognitive-architecture", "label": "Cognitive Architecture"},
+      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"},
+      {"@id": "urn:ngm:class:reasoning", "label": "Reasoning"},
+      {"@id": "urn:ngm:class:symbolic-ai", "label": "Symbolic AI"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:artificial-general-intelligence", "label": "Artificial General Intelligence"},
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:algorithmic-framework", "label": "Algorithmic Framework"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

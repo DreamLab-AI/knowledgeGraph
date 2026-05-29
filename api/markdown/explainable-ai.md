@@ -7,7 +7,12 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - enables [[AI Governance]]
+  - enables [[Bias Detection Methods]]
+  - relatedTo [[Model Interpretability]]
+  - relatedTo [[AI Safety]]
+  - supports [[AI Governance Framework]]
+  - supports [[Regulatory Compliance]]
 
 - ### Content
   - AI systems designed to provide clear, understandable explanations of their decision-making processes, enabling stakeholders to comprehend how and why specific outputs are generated.

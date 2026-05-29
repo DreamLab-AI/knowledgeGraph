@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:financial-regulation",
   "domain": "blockchain",
-  "definition": "Financial Regulation is a foundational concept in blockchain that serves as a classification parent for 4 related concepts in the ontology.",
+  "definition": "Financial Regulation comprises the rules, statutes, supervisory frameworks, and oversight bodies that govern financial markets, institutions, and digital asset ecosystems. In blockchain and DLT contexts, it encompasses anti-money laundering (AML) obligations, know-your-customer (KYC) requirements, securities classification of tokens, stablecoin frameworks, and central bank digital currency (CBDC) governance. Regulatory approaches differ substantially across jurisdictions, creating compliance complexity for cross-border decentralised finance.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-governance-and-regulation",
@@ -14,11 +14,29 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.3,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:stablecoin-regulation",
+        "label": "Stablecoin Regulation"
+      },
+      {
+        "id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +45,16 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

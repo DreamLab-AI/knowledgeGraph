@@ -42,20 +42,38 @@ public:: true
   "@id": "urn:ngm:class:m-t5",
   "@type": "Class",
   "label": "mT5",
-  "definition": "Multilingual T5: a massively multilingual variant of T5 pre-trained on the mC4 corpus covering 101 languages, using the same text-to-text framework as T5.",
+  "definition": "mT5 (Multilingual T5) is a massively multilingual pre-trained text-to-text transformer model developed by Google Research, covering 101 languages through pre-training on the mC4 multilingual Common Crawl corpus. It extends the T5 architecture's unified text-to-text framework to multilingual settings, treating all NLP tasks as sequence-to-sequence problems. mT5 enables strong cross-lingual transfer and zero-shot performance on low-resource languages, making it a foundational model for multilingual NLP applications including translation, question answering, and information retrieval.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-model-architecture",
       "label": "AI Model Architecture"
-    },
-    {
-      "@id": "urn:ngm:individual:foundation-models",
-      "label": "Foundation Models"
     }
   ],
-  "quality": 0.5,
+  "quality": 0.7,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
+      {"@id": "urn:ngm:class:encoder-decoder-architecture", "label": "Encoder Decoder Architecture"},
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:tokenization", "label": "Tokenization"},
+      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
+      {"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:pretrained-model", "label": "Pretrained Model"},
+      {"@id": "urn:ngm:class:embedding-model", "label": "Embedding Model"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

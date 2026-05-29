@@ -1,13 +1,18 @@
 - ### Definition
-  - A neural network connection that adds the input of a layer to its output, enabling gradient flow in deep networks and facilitating training of very deep architectures.
+  - A neural network connection that adds the input of a layer directly to its output, forming a skip connection that enables stable gradient flow during backpropagation in very deep architectures. Residual connections mitigate the vanishing gradient problem and allow networks of hundreds of layers to be trained effectively, forming a foundational component of ResNet and Transformer architectures.
 
 - ### Semantic Classification
-  - owl-class:: spatial-computing:ResidualConnection
+  - owl-class:: artificial-intelligence:ResidualConnection
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Part Of: [[Transformer Architecture]]
+  - Part Of: [[Residual Network]]
+  - Enables: [[Deep Learning]]
+  - Uses: [[Backpropagation]]
+  - Related To: [[Layer Normalisation]]
+  - Related To: [[Activation Function]]
 
 - ### Content
   - A neural network connection that adds the input of a layer to its output, enabling gradient flow in deep networks and facilitating training of very deep architectures.

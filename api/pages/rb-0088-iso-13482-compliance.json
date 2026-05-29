@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:rb-0088-iso-13482-compliance",
   "domain": "robotics",
-  "definition": "iso 13482 compliance is a robotics and autonomous systems concept and a type of Functional Safety.",
+  "definition": "ISO 13482 compliance refers to conformance with ISO 13482:2014, the international safety standard for personal care robots that interact with humans in non-industrial settings. Achieving compliance requires demonstrating that hazards have been identified, risks reduced to acceptable levels via protective measures, and that the robot meets defined performance and safety integrity criteria throughout its operational life.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-safety-and-standards",
@@ -17,21 +17,57 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:rb-0089-risk-assessment",
+        "label": "rb 0089 risk assessment"
+      },
+      {
+        "id": "urn:ngm:class:rb-0100-safety-integrity-level",
+        "label": "rb 0100 safety integrity level"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:iso-10218",
+        "label": "ISO 10218"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iec-61508",
+        "label": "IEC 61508"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rb-0087-safety-standard",
+        "label": "rb 0087 safety standard"
+      },
+      {
+        "id": "urn:ngm:class:rb-0096-safeguarding",
+        "label": "rb 0096 safeguarding"
+      },
+      {
+        "id": "urn:ngm:class:rb-0091-safety-rated-monitored-stop",
+        "label": "rb 0091 safety rated monitored stop"
+      },
+      {
+        "id": "urn:ngm:class:service-robot",
+        "label": "Service Robot"
+      }
+    ]
   },
   "wikilinks": [
     {

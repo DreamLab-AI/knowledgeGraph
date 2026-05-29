@@ -46,15 +46,29 @@ public:: true
   "@id": "urn:ngm:class:blockchain-transaction",
   "@type": "Class",
   "label": "Blockchain Transaction",
-  "definition": "Blockchain Transaction is a blockchain and distributed systems concept and a type of blockchain.",
+  "definition": "A Blockchain Transaction is an atomic, cryptographically signed state-change operation recorded on a distributed ledger, representing value transfer, smart contract execution, or data mutation. Each transaction is validated by network nodes according to the active consensus algorithm, included in a block, and made immutable through chaining. Transaction structure, fee markets, and confirmation semantics vary across UTXO-based systems such as Bitcoin and account-based systems such as Ethereum.",
   "domain": "blockchain",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-protocol-and-consensus",
       "label": "Protocol and Consensus"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:consensus-algorithm", "label": "Consensus Algorithm"},
+      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
+      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public-Key Cryptography"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
+      {"@id": "urn:ngm:class:payment-system", "label": "Payment System"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -96,7 +110,7 @@ public:: true
 
 
 - ### Definition
-  - BlockchainTransaction is a concept within the ngm domain.
+  - A Blockchain Transaction is an atomic, cryptographically signed state-change operation recorded on a distributed ledger, representing value transfer, smart contract execution, or data mutation. Each transaction is validated by network nodes according to the active consensus algorithm, included in a block, and made immutable through chaining. Transaction structure, fee markets, and confirmation semantics vary across UTXO-based systems such as Bitcoin and account-based systems such as Ethereum.
 
 - ### Semantic Classification
   - owl-class:: blockchain/BlockchainTransaction
@@ -104,6 +118,12 @@ public:: true
 
 - ### Relationships
   - bridges-to:: [[Blockchain]]
+  - requires [[Consensus Algorithm]]
+  - requires [[Digital Signature]]
+  - requires [[Public-Key Cryptography]]
+  - enables [[Smart Contract]]
+  - enables [[Payment System]]
+  - partOf [[Blockchain]]
 
 - ### Content
 

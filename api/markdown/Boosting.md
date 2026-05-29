@@ -62,9 +62,10 @@ public:: true
   "@id": "urn:ngm:class:boosting",
   "@type": "Class",
   "label": "Boosting",
-  "definition": "Boosting is a artificial intelligence concept and a type of Ensemble Mods.",
+  "definition": "A sequential ensemble learning technique that combines multiple weak learners into a strong predictor by iteratively training each new model to correct the errors of its predecessors. Instance weights are adjusted after each round so that misclassified examples receive more attention; the final prediction is a weighted vote across all weak learners. Key algorithms include AdaBoost, Gradient Boosting, XGBoost, LightGBM, and CatBoost.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
@@ -75,7 +76,22 @@ public:: true
       "label": "Ensemble Methods"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:training-data", "label": "Training Data"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:overfitting", "label": "Overfitting"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"},
+      {"@id": "urn:ngm:class:regularisation", "label": "Regularisation"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -136,7 +152,7 @@ public:: true
 
 
 - ### Definition
-  - Boosting is a concept within the ai domain.
+  - A sequential ensemble learning technique that combines multiple weak learners into a strong predictor by iteratively training each new model to correct the errors of its predecessors. Instance weights are adjusted after each round so that misclassified examples receive more attention; the final prediction is a weighted vote across all weak learners. Key algorithms include AdaBoost, Gradient Boosting, XGBoost, LightGBM, and CatBoost.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:Boosting
@@ -144,6 +160,10 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Ensemble Methods]]
+  - **requires**: Machine Learning (theoretical foundation), Training Data (iterative reweighting input)
+  - **enables**: Overfitting (risk without regularisation; managed by early stopping)
+  - **uses**: Gradient Descent (loss minimisation in gradient boosting), Regularisation (L1/L2 penalties in XGBoost/LightGBM)
+  - **contrastsWith**: Deep Learning (competing high-accuracy paradigm for tabular data)
 
 - ### Content
 

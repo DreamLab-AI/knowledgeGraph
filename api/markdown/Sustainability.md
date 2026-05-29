@@ -37,15 +37,28 @@ public:: true
   "@id": "urn:ngm:class:sustainability",
   "@type": "Class",
   "label": "Sustainability",
-  "definition": "Sustainability is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Sustainability in digital and metaverse contexts addresses the long-term viability of technology systems across environmental, social, and economic dimensions. Environmental sustainability encompasses energy-efficient rendering, carbon footprint reduction via green hosting, and electronic waste minimisation. Social sustainability includes digital accessibility, equity of access, and psychological wellbeing. Economic sustainability requires viable creator economies and protection against exploitative practices.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-legal-and-regulatory",
       "label": "Legal and Regulatory"
     }
   ],
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:blockchain-energy-consumption", "label": "Blockchain Energy Consumption"},
+      {"@id": "urn:ngm:class:esg-reporting", "label": "ESG Reporting"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:circular-economy", "label": "Circular Economy"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:carbon-footprint-measurement", "label": "Carbon Footprint Measurement"},
+      {"@id": "urn:ngm:class:renewable-energy-certificates", "label": "Renewable Energy Certificates"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -81,7 +94,11 @@ public:: true
   - owl-class:: infrastructure:Sustainability
   - owl-role:: Concept
 - ### Relationships
-  - <!-- No relationships defined -->
+  - relatedTo:: [[Blockchain Energy Consumption]]
+  - relatedTo:: [[ESG Reporting]]
+  - enables:: [[Circular Economy]]
+  - supports:: [[Carbon Footprint Measurement]]
+  - supports:: [[Renewable Energy Certificates]]
 - ### Content
   # Sustainability
   Sustainability in Metaverse contexts addresses environmental, social, and economic impacts ensuring long-term viability without compromising future generations. Environmental considerations include energy efficiency optimizing rendering workloads and network transmission, carbon footprint measurement and reduction through green hosting and renewable energy, electronic waste minimization extending hardware lifecycles and improving recyclability, and resource-conscious design favoring procedural generation over storage-intensive assets. Social sustainability involves digital accessibility ensuring experiences accommodate disabilities, digital equity bridging gaps in access to technology and connectivity, labor practices ensuring fair compensation for content creators, and psychological wellbeing preventing addiction and promoting healthy usage patterns. Economic sustainability requires viable business models avoiding exploitative practices, fair value exchange between users and platforms, protection against virtual asset speculation bubbles, and support for creator economies enabling sustainable livelihoods. Emerging practices include carbon-aware computing scheduling intensive tasks during renewable energy availability, degrowth approaches questioning unlimited expansion, circular economy principles enabling asset reuse and repurposing, and sustainability reporting transparently communicating environmental and social impacts. Challenges include measuring impact across complex global supply chains, balancing performance with efficiency, addressing rebound effects where efficiency gains enable increased consumption, and coordinating action across fragmented ecosystems.

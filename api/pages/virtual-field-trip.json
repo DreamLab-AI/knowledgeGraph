@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:virtual-field-trip",
   "domain": "spatial-computing",
-  "definition": "An educational experience using VR, AR, or MR technologies that transports students to locations they could not otherwise visit, enabling immersive learning through 360-degree environments, interactive simulations, and experiential content without leaving the classroom.",
+  "definition": "An educational experience using VR, AR, or MR technologies that transports students to locations they could not otherwise visit, enabling immersive learning through 360-degree environments, interactive simulations, and experiential content without leaving the classroom. Research indicates VR can improve knowledge acquisition and retention compared to traditional instruction; platforms such as Google Arts and Culture and Google Expeditions have demonstrated feasibility at scale across subjects including science, history, and geography.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -17,21 +17,53 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:immersive-technology",
+        "label": "Immersive Technology"
+      },
+      {
+        "id": "urn:ngm:class:virtual-environment",
+        "label": "Virtual Environment"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:immersive-learning",
+        "label": "Immersive Learning"
+      },
+      {
+        "id": "urn:ngm:class:virtual-destination",
+        "label": "Virtual Destination"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:virtual-museum-tour",
+        "label": "Virtual Museum Tour"
+      },
+      {
+        "id": "urn:ngm:class:cultural-heritage-xr-experience",
+        "label": "Cultural Heritage XR Experience"
+      }
+    ]
   },
   "wikilinks": [
     {

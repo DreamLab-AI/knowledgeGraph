@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:actuator",
   "domain": "robotics",
-  "definition": "An actuator is an electromechanical or hydraulic device that converts control signals into physical motion or force to drive a robot's joints or effectors.",
+  "definition": "An actuator is a device that converts energy \u2014 electrical, hydraulic, or pneumatic \u2014 into mechanical motion or force, serving as the output element of a robot's control chain. Actuators translate commands from a robot controller into joint rotations, linear displacements, or gripping forces, and their dynamic characteristics (torque density, bandwidth, backdrivability) fundamentally constrain a robot's speed, precision, and physical safety in human-robot interaction. Common types include servo motors, hydraulic cylinders, pneumatic actuators, and emerging soft actuator materials.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
@@ -14,10 +14,28 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:servo-motor",
+        "label": "Servo Motor"
+      },
+      {
+        "id": "urn:ngm:class:hydraulic-actuator",
+        "label": "Hydraulic Actuator"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      },
+      {
+        "id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
@@ -26,7 +44,12 @@
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:robot",
+        "label": "Robot"
+      }
+    ],
     "relatedTo": []
   },
   "wikilinks": [],

@@ -10,7 +10,10 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: [[Verifiable Credentials]], [[Decentralised Identity]], [[DID Nostr Identity]]
+  - **requires**: [[Digital Identity]], [[Zero Trust Architecture]]
+  - **enables**: [[Digital Identity Framework]], [[Digital Identity Wallet]]
+  - **relatedTo**: [[ETSI Domain Security and Privacy]]
 
 - ### Content
   - The ETSI Identity and Trust domain establishes identity management, authentication, and trust infrastructure for virtual environments enabling secure, privacy-respecting identity assurance.

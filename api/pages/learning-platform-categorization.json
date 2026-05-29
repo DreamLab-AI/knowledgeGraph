@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:learning-platform-categorization",
   "domain": "spatial-computing",
-  "definition": "A learning platform categorization component in the Metaverse domain that enables EtsiDomainApplicationEducation.",
+  "definition": "A taxonomy of platforms and environments used to deliver educational experiences, spanning traditional learning management systems, online learning portals, virtual classrooms, immersive XR-based environments, and metaverse-native learning spaces. The categorization framework identifies dimensions such as modality (synchronous/asynchronous), immersion level, social presence, and assessment integration, enabling educators and institutions to select or compare platforms for pedagogical fit. In the spatial computing context, the taxonomy extends to cover platforms that leverage augmented reality, virtual reality, and simulated environments to enable experiential, collaborative, and gamified learning at scale.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -17,10 +17,27 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.75,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:learning-management-system",
+        "label": "Learning Management System"
+      },
+      {
+        "id": "urn:ngm:class:virtual-classroom",
+        "label": "Virtual Classroom"
+      },
+      {
+        "id": "urn:ngm:class:immersive-learning",
+        "label": "Immersive Learning"
+      },
+      {
+        "id": "urn:ngm:class:online-learning",
+        "label": "Online Learning"
+      }
+    ],
     "requires": [],
     "enables": [],
     "dependsOn": [],
@@ -30,8 +47,42 @@
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:metaverse-classification",
+        "label": "Metaverse Classification"
+      },
+      {
+        "id": "urn:ngm:class:educational-technology",
+        "label": "Educational Technology"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-learning",
+        "label": "Collaborative Learning"
+      }
+    ]
   },
   "wikilinks": [
     {

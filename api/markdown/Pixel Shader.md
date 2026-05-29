@@ -62,9 +62,10 @@ public:: true
   "@id": "urn:ngm:class:pixel-shader",
   "@type": "Class",
   "label": "Pixel Shader",
-  "definition": "Pixel Shader is a spatial computing concept and a type of Metaverse.",
+  "definition": "A programmable GPU stage that executes once per rasterised fragment, determining each pixel's final colour and depth by sampling textures, computing lighting models, and applying material properties. Pixel shaders operate in a massively parallel fashion and are the primary site for physically-based rendering calculations in real-time graphics pipelines.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-display-and-rendering",
@@ -80,6 +81,44 @@ public:: true
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:vertex-shader",
+        "label": "Vertex Shader"
+      },
+      {
+        "@id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:compute-shader",
+        "label": "Compute Shader"
+      },
+      {
+        "@id": "urn:ngm:class:shader",
+        "label": "Shader"
+      }
+    ]
   }
 }
 ```
@@ -136,7 +175,7 @@ public:: true
 
 
 - ### Definition
-  - Pixel Shader is a concept within the mv domain.
+  - A programmable GPU stage that executes once per rasterised fragment, determining each pixel's final colour and depth by sampling textures, computing lighting models, and applying material properties. Pixel shaders operate in a massively parallel fashion and are the primary site for physically-based rendering calculations in real-time graphics pipelines.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:PixelShader
@@ -144,6 +183,13 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Metaverse]]
+  - Requires [[Vertex Shader]]
+  - Requires [[Rendering Pipeline]]
+  - Uses [[Texture Mapping]]
+  - Uses [[GPU Compute]]
+  - Implements [[Physically Based Rendering]]
+  - Related To [[Compute Shader]]
+  - Related To [[Shader]]
 
 - ### Content
 

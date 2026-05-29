@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:rlhf",
   "domain": "artificial-intelligence",
-  "definition": "Reinforcement Learning from Human Feedback (RLHF) is a training methodology that fine-tunes language models using reward signals derived from human preference judgements.",
+  "definition": "Reinforcement Learning from Human Feedback (RLHF) is a training methodology that aligns large language models with human preferences by first training a reward model on human comparison judgements, then optimising the language model policy against that reward model using reinforcement learning \u2014 typically Proximal Policy Optimisation. RLHF enables models to be steered towards outputs that human annotators prefer for helpfulness, harmlessness, and honesty, going beyond what is achievable with supervised fine-tuning on static demonstration data alone. Variants including Direct Preference Optimisation (DPO) and Constitutional AI extend or simplify the original three-stage pipeline.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -14,11 +14,29 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:reward-model",
+        "label": "Reward Model"
+      },
+      {
+        "id": "urn:ngm:class:human-feedback",
+        "label": "Human Feedback"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +45,16 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:direct-preference-optimisation",
+        "label": "Direct Preference Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:constitutional-ai",
+        "label": "Constitutional AI"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

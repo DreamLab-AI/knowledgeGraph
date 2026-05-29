@@ -8,6 +8,14 @@
 
 - ### Relationships
   - is-subclass-of:: [[Metaverse]]
+  - Requires: [[Avatar System]]
+  - Requires: [[Virtual World Infrastructure]]
+  - Enables: [[Virtual Concerts]]
+  - Enables: [[Social VR]]
+  - Uses: [[Content Moderation]]
+  - Uses: [[Virtual Identity]]
+  - Related To: [[Metaverse Platform]]
+  - Related To: [[Virtual Community Practice]]
 
 - ### Content
 

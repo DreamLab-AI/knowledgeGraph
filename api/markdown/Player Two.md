@@ -50,9 +50,10 @@ public:: true
   "@id": "urn:ngm:class:player-two",
   "@type": "Class",
   "label": "Player Two",
-  "definition": "Player Two is a technology infrastructure concept and a type of Collaboration Platform.",
+  "definition": "Player Two is a decentralised AI-character and collaborative storytelling platform combining Nostr-relay messaging, BIP85 key derivation, and generative AI workflows. It enables trustless group interactions with AI-driven waifu characters, token-gated access, and a robot project with on-device edge compute for the ED3N distributed network.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
@@ -63,6 +64,23 @@ public:: true
       "label": "Collaboration Platform"
     }
   ],
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:player-two-code", "label": "Player Two code"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:ai-video", "label": "AI Video"},
+      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:player-tracking", "label": "Player Tracking"},
+      {"@id": "urn:ngm:class:identity-management", "label": "Identity Management"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
+      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -114,14 +132,17 @@ public:: true
 
 
 - ### Definition
-  - PlayerTwo is a concept within the ngm domain.
+  - Player Two is a decentralised AI-character and collaborative storytelling platform combining Nostr-relay messaging, BIP85 key derivation, and generative AI workflows. It enables trustless group interactions with AI-driven waifu characters, token-gated access, and a robot project with on-device edge compute for the ED3N distributed network.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:PlayerTwo
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart: [[Player Two code]]
+  - uses: [[AI Video]], [[Generative AI]]
+  - enables: [[Player Tracking]], [[Identity Management]]
+  - dependsOn: [[Decentralised Identity]], [[Cryptography]]
 
 - ### Content
   - Planning for work on [[Neocadia]] and [[Player Two code]]

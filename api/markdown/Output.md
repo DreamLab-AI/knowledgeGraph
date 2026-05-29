@@ -66,9 +66,10 @@ public:: true
   "@id": "urn:ngm:class:output",
   "@type": "Class",
   "label": "Output",
-  "definition": "Transaction recipient destination within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "An Output is a component of a blockchain transaction that specifies a recipient address and an amount of value to be transferred, forming the fundamental unit through which cryptocurrency is allocated and ownership is recorded on a distributed ledger. In UTXO-based systems such as Bitcoin, unspent outputs serve as inputs to subsequent transactions, creating a directed graph of value flows secured by digital signatures.",
   "domain": "blockchain",
   "maturity": "established",
+  "qualityScore": 0.8,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-protocol-and-consensus",
@@ -80,10 +81,32 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:distributed-data-structure",
-      "label": "DistributedDataStructure"
+      "label": "Distributed Data Structure"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"},
+      {"@id": "urn:ngm:class:block", "label": "Block"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:address", "label": "Address"},
+      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:script", "label": "Script"},
+      {"@id": "urn:ngm:class:cryptographic-hash", "label": "Cryptographic Hash"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
+      {"@id": "urn:ngm:class:token-economics", "label": "Token Economics"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:blockchain-scalability", "label": "Blockchain Scalability"},
+      {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"},
+      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -149,83 +172,23 @@ public:: true
 
 
 - ### Definition
-  - Transaction recipient destination within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
-
-- ### Semantic Classification
-  - owl-class:: blockchain:Output
-  - owl-role:: Object
-  - owl-inferred:: blockchain:VirtualObject
-  - belongs-to-domain:: [[BlockchainDomain]]
-  - implemented-in-layer:: [[ConceptualLayer]]
+  An Output is a component of a blockchain transaction that specifies a recipient address and amount of value to be transferred, forming the fundamental unit through which cryptocurrency is allocated and ownership is recorded on a distributed ledger. In UTXO-based systems such as Bitcoin, unspent outputs serve as inputs to subsequent transactions, creating a directed graph of value flows secured by digital signatures.
 
 - ### Relationships
-  - is-subclass-of:: [[Blockchain Entity]], [[DistributedDataStructure]]
+  - partOf:: [[Blockchain Transaction]], [[Block]]
+  - requires:: [[Address]], [[Digital Signature]]
+  - uses:: [[Script]], [[Cryptographic Hash]]
+  - enables:: [[Smart Contract]], [[Token Economics]]
+  - relatedTo:: [[Blockchain Scalability]], [[Distributed Ledger Technology]], [[Audit Trail]]
 
 - ### Content
+  In UTXO-based blockchains, every transaction consumes one or more existing unspent transaction outputs (UTXOs) as inputs and produces one or more new outputs. Each output encodes a locking script (scriptPubKey in Bitcoin) that specifies the conditions under which the output can be spent—typically requiring a valid digital signature corresponding to the recipient address. The UTXO model's explicit accounting of unspent outputs enables efficient parallel validation and clear ownership semantics without requiring global state.
 
-  ## Class Declaration
-  Declaration(Class(:Output))
+  Outputs are fundamental to the security model of distributed ledgers. The cryptographic binding between an output's locking script and the corresponding unlocking script presented in a spending transaction ensures that only the authorised holder of private key material can claim the value. This design eliminates double-spending without a central authority by making the entire UTXO set the canonical ownership ledger, verifiable by every full node.
 
-  ## Subclass Relationships
-  SubClassOf(:Output :DistributedDataStructure)
-  SubClassOf(:Output :BlockchainEntity)
+  In account-model blockchains such as Ethereum, the output concept generalises to state transitions: a transaction specifies a recipient address and value, updating account balances in the world state. Smart contracts extend this further by allowing outputs to trigger arbitrary code execution, enabling programmable value transfer. The output therefore bridges simple cryptocurrency transfer and complex DeFi logic, making it a foundational primitive across blockchain architectures.
 
-  ## Essential Properties
-  SubClassOf(:Output
-    (ObjectSomeValuesFrom :partOf :Blockchain))
-
-  SubClassOf(:Output
-    (ObjectSomeValuesFrom :hasProperty :Property))
-
-  ## Data Properties
-  DataPropertyAssertion(:hasIdentifier :Output "BC-0022"^^xsd:string)
-  DataPropertyAssertion(:hasAuthorityScore :Output "1.0"^^xsd:decimal)
-  DataPropertyAssertion(:isFoundational :Output "true"^^xsd:boolean)
-
-  ## Object Properties
-  ObjectPropertyAssertion(:enablesFeature :Output :BlockchainFeature)
-  ObjectPropertyAssertion(:relatesTo :Output :RelatedConcept)
-
-  ## Annotations
-  AnnotationAssertion(rdfs:label :Output "Output"@en)
-  AnnotationAssertion(rdfs:comment :Output
-    "Transaction recipient destination"@en)
-  AnnotationAssertion(dct:description :Output
-    "Foundational blockchain concept with formal ontological definition"@en)
-  AnnotationAssertion(:termID :Output "BC-0022")
-  AnnotationAssertion(:priority :Output "1"^^xsd:integer)
-  AnnotationAssertion(:category :Output "blockchain-fundamentals"@en)
-  )
-      ```
-
-  - ## About Output
-
-  - Transaction recipient destination within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
-  - ### Key Characteristics
-    - 1. **Definitional Property**: Core defining characteristic
-    - 2. **Functional Property**: Operational behavior
-    - 3. **Structural Property**: Compositional elements
-    - 4. **Security Property**: Security guarantees provided
-    - 5. **Performance Property**: Efficiency considerations
-  - ### Technical Components
-    - **Implementation**: How concept is realized technically
-    - **Verification**: Methods for validating correctness
-    - **Interaction**: Relationships with other components
-    - **Constraints**: Technical limitations and requirements
-  - ### Use Cases
-    - **1. Core Blockchain Operation**
-    - **Application**: Fundamental blockchain functionality
-    - **Example**: Practical implementation in major blockchains
-    - **Requirements**: Technical prerequisites
-    - **Benefits**: Value provided to blockchain systems
-  - ### Standards & References
-    - [[ISO/IEC 23257:2021]] - Blockchain and distributed ledger technologies
-    - [[IEEE 2418.1]] - Blockchain and distributed ledger technologies
-    - [[NIST NISTIR]] - Blockchain and distributed ledger technologies
-
-
-
-  <!-- Merged from Output.md: modeling -->
+  Scalability considerations around outputs include UTXO set growth (each unspent output consumes node storage), output consolidation strategies, and the trade-offs between output granularity and transaction fee efficiency. Layer-2 protocols such as Lightning Network aggregate many off-chain value transfers into a single on-chain settlement output, dramatically increasing effective throughput while preserving the security guarantees of the base layer.
 
 - ### Provenance
   - sources:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]

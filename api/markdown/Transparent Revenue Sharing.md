@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:transparent-revenue-sharing",
   "@type": "Class",
   "label": "Transparent Revenue Sharing",
-  "definition": "A financial distribution model where allocation, payment calculations, and disbursements are openly visible and verifiable by all stakeholders, often implemented through smart contracts that automatically distribute earnings according to predefined rules.",
+  "definition": "A financial distribution model where revenue allocation percentages, payment calculations, and disbursement records are openly visible and independently verifiable by all stakeholders. It is typically implemented through smart contracts that automatically distribute earnings according to immutable predefined rules, with all transactions recorded on-chain. Common applications include NFT creator royalties, DAO treasury allocations, gaming guild earnings, and metaverse land rental income.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
@@ -59,7 +60,24 @@ public:: true
       "label": "Revenue Distribution"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:transparency-metrics", "label": "Transparency Metrics"},
+      {"@id": "urn:ngm:class:dao-governance", "label": "DAO Governance"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:nft", "label": "NFT"},
+      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:virtual-economy", "label": "Virtual Economy"},
+      {"@id": "urn:ngm:class:nft-marketplace", "label": "NFT Marketplace"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -109,6 +127,10 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Revenue Distribution]]
+  - requires:: [[Smart Contract]], [[Blockchain]]
+  - enables:: [[Transparency Metrics]], [[DAO Governance]]
+  - uses:: [[NFT]], [[Audit Trail]]
+  - relatedTo:: [[Virtual Economy]], [[NFT Marketplace]]
 
 - ### Content
 

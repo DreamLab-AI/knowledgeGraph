@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:sparql-endpoint",
   "domain": "spatial-computing",
-  "definition": "A sparql endpoint component in the Metaverse domain that required by ProvenanceOntologyProvO.",
+  "definition": "A SPARQL Endpoint is a network-accessible service that accepts SPARQL Protocol and RDF Query Language queries and returns structured results over HTTP, enabling federated access to RDF knowledge graphs and linked data stores. It acts as the primary interface between client applications and triple stores, supporting SELECT, CONSTRUCT, ASK, and UPDATE operations. SPARQL Endpoints are foundational to the Semantic Web stack and to provenance-aware knowledge graph systems.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-standards-and-interop",
@@ -17,21 +17,77 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.75,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:sparql-query-engine",
+        "label": "Sparql Query Engine"
+      },
+      {
+        "id": "urn:ngm:class:query-processor",
+        "label": "Query Processor"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "id": "urn:ngm:class:provenance-ontology-prov-o",
+        "label": "Provenance Ontology (PROV-O)"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      },
+      {
+        "id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      },
+      {
+        "id": "urn:ngm:class:json-ld",
+        "label": "JSON-LD"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:graph-database",
+        "label": "Graph Database"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "id": "urn:ngm:class:database-query",
+        "label": "Database Query"
+      },
+      {
+        "id": "urn:ngm:class:sparql-examples",
+        "label": "SPARQL EXAMPLES"
+      }
+    ]
   },
   "wikilinks": [
     {

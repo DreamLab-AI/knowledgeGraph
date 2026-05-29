@@ -58,15 +58,30 @@ public:: true
   "@id": "urn:ngm:class:ai-office",
   "@type": "Class",
   "label": "AI Office",
-  "definition": "Commission body established as the centre of AI expertise forming the foundation for a single European AI governance system, with primary responsibility for supervising general-purpose AI models and coordinating market surveillance.",
+  "definition": "European Commission body established under AI Act Articles 64–68 as the primary centre of AI expertise for a unified European AI governance system, holding executive authority for supervising general-purpose AI model providers, coordinating cross-border market surveillance, imposing corrective measures and fines, facilitating regulatory sandboxes, and representing the EU in international AI governance forums.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
     }
   ],
+  "relations": {
+    "supports": [
+      {"@id": "urn:ngm:class:eu-ai-act", "label": "EU AI Act"},
+      {"@id": "urn:ngm:class:ai-board", "label": "AI Board"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
+      {"@id": "urn:ngm:class:ai-governance-framework", "label": "AI Governance Framework"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:general-purpose-ai-model", "label": "General Purpose AI Model"},
+      {"@id": "urn:ngm:class:ai-risk-management", "label": "AI Risk Management"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -131,7 +146,9 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - bridges-to:: [[AI Agent System]]
+  - supports:: [[EU AI Act]], [[AI Board]]
+  - enables:: [[AI Governance]], [[AI Governance Framework]]
+  - relatedTo:: [[General Purpose AI Model]], [[AI Risk Management]]
 
 - ### Content
   - Commission body established as the centre of AI expertise forming the foundation for a single European AI governance system, with primary responsibility for supervising general-purpose AI models and coordinating market surveillance.

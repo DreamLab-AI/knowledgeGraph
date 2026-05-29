@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:verification-report",
   "domain": "spatial-computing",
-  "definition": "A verification report documents systematic assessment results confirming that OntologyAssets|ontologies, KnowledgeGraph|knowledge graphs, and metaverse infrastructure meet specified quality standards and functional requirements through automated and manual validation procedures.",
+  "definition": "A verification report is a structured document recording the outcomes of systematic assessment activities that confirm ontologies, knowledge graphs, and metaverse infrastructure meet specified quality standards and functional requirements. It captures defect categorisation, schema compliance checks, semantic consistency validation, RDF triple counts, OWL axiom correctness, and remediation progress to provide transparent evidence of production readiness.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -13,21 +13,44 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.4,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:standards-validation",
+        "label": "Standards Validation"
+      },
+      {
+        "id": "urn:ngm:class:standards-compliance",
+        "label": "Standards Compliance"
+      }
+    ]
   },
   "wikilinks": [
     {

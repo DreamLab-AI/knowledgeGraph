@@ -50,16 +50,40 @@ public:: true
   "@id": "urn:ngm:class:sheffield-advanced-manufacturing",
   "@type": "Class",
   "label": "Sheffield Advanced Manufacturing",
-  "definition": "Sheffield's advanced manufacturing hub specialising in materials science, robotics, and Industry 4.0 technologies.",
+  "definition": "Sheffield Advanced Manufacturing denotes the cluster of research institutions, industrial facilities, and technology parks centred on the Advanced Manufacturing Park (AMP) in South Yorkshire, UK, specialising in materials science, aerospace engineering, robotics, and Industry 4.0 technologies. Anchored by the University of Sheffield's Advanced Manufacturing Research Centre (AMRC) and hosting global firms including Boeing and Rolls-Royce, the cluster forms the core of the Advanced Manufacturing Innovation District (AMID) — the UK's largest research-led advanced manufacturing ecosystem. It bridges traditional industrial heritage with digital manufacturing, additive processes, and intelligent automation.",
   "domain": "infrastructure",
   "maturity": "established",
+  "qualityScore": 0.8,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:infra-computing-and-cloud",
-      "label": "Computing and Cloud"
+      "@id": "urn:ngm:class:uk-tech-ecosystem",
+      "label": "UK Tech Ecosystem"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:north-england-innovation-corridor", "label": "North England Innovation Corridor"},
+      {"@id": "urn:ngm:class:industrial-automation", "label": "IndustrialAutomation"},
+      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:uk-tech-ecosystem", "label": "UK Tech Ecosystem"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:industrial-robot", "label": "Industrial Robot"},
+      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:industrial-io-t", "label": "Industrial IoT"},
+      {"@id": "urn:ngm:class:robotics-application", "label": "Robotics Application"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:newcastle-ai-and-health-innovation", "label": "Newcastle AI & Health Innovation"},
+      {"@id": "urn:ngm:class:national-industrial-centre-for-virtual-environments", "label": "National Industrial Centre for Virtual Environments"},
+      {"@id": "urn:ngm:class:sustainable-technology", "label": "Sustainable Technology"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -113,9 +137,27 @@ public:: true
   - belongs-to-domain:: [[UK Tech Ecosystem]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart:: [[North England Innovation Corridor]], [[IndustrialAutomation]], [[Robotics]]
+  - partOf:: [[UK Tech Ecosystem]]
+  - uses:: [[Industrial Robot]], [[Sensor Fusion]], [[Digital Twin]]
+  - enables:: [[Industrial IoT]], [[Robotics Application]]
+  - relatedTo:: [[Newcastle AI & Health Innovation]], [[National Industrial Centre for Virtual Environments]], [[Sustainable Technology]]
 
 - ### Content
+
+  ### Definition
+
+  Sheffield Advanced Manufacturing denotes the cluster of research institutions, industrial facilities, and technology parks centred on the Advanced Manufacturing Park (AMP) in South Yorkshire, UK, specialising in materials science, aerospace engineering, robotics, and Industry 4.0 technologies. The University of Sheffield AMRC anchors the cluster, supporting over 1,100 businesses annually and attracting foreign direct investment from Boeing, Rolls-Royce, and McLaren. The broader Advanced Manufacturing Innovation District (AMID) represents the UK's largest research-led advanced manufacturing ecosystem, bridging traditional steel and toolmaking heritage with digital manufacturing and intelligent automation.
+
+  ### Relationships
+
+  Sheffield Advanced Manufacturing is a constituent part of the UK Tech Ecosystem and connects directly to the North England Innovation Corridor. The cluster uses Industrial Robot systems, Sensor Fusion techniques, and Digital Twin simulation environments in its research programmes. It enables Industrial IoT deployments and Robotics Applications across aerospace, nuclear, and automotive sectors. It is relationally linked to Newcastle AI & Health Innovation as a complementary northern UK innovation hub, and to the National Industrial Centre for Virtual Environments which supports immersive manufacturing simulation.
+
+  ### Content
+
+  The Advanced Manufacturing Park, established in 2001 on the former Orgreave Colliery brownfield site, exemplifies post-industrial regeneration through knowledge-economy transition. The AMRC's partnership model — combining university research capability with co-located industry facilities — has become a template for innovation districts worldwide. Key programmes include the Aerospace Technology Institute programme, government-funded SME support initiatives, and the Royce Translational Centre focused on advanced materials.
+
+  The cluster's designation as part of the UK's first Investment Zone provided targeted incentives that accelerated private sector co-investment. South Yorkshire's deep specialisation in aerospace-grade materials, nuclear components, and precision engineering positions Sheffield Advanced Manufacturing as a critical node in UK sovereign industrial capability, particularly relevant to defence, clean energy, and next-generation transport sectors. Digital manufacturing techniques including additive manufacturing, high-performance computing simulation, and robotic assembly are central to the AMRC's R&D portfolio.
 
   ## Regional Technology Hub
 

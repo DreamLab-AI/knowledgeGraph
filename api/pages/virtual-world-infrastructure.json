@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:virtual-world-infrastructure",
   "domain": "infrastructure",
-  "definition": "The underlying technical foundation required to operate metaverse platforms, encompassing cloud computing services, edge networks, distributed systems, real-time rendering capabilities, networking protocols, and blockchain integration that toger enable persistent, scalable virtual environments wi...",
+  "definition": "The underlying technical foundation required to operate metaverse platforms, encompassing cloud computing services, edge networks, distributed systems, real-time rendering capabilities, networking protocols, and blockchain integration that together enable persistent, scalable virtual environments with low-latency user interactions.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
@@ -17,17 +17,57 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:network-latency",
+        "label": "Network Latency"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:virtual-world",
+        "label": "Virtual World"
+      },
+      {
+        "id": "urn:ngm:class:virtual-experience",
+        "label": "Virtual Experience"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

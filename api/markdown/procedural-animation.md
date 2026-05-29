@@ -1,12 +1,14 @@
 - ### Definition
-  - ProceduralAnimation is a concept within the ngm domain.
+  - Procedural Animation is a spatial computing technique that generates character and object motion algorithmically at runtime rather than from pre-authored keyframe sequences. It encompasses inverse kinematics systems, physics-based secondary motion, dynamic environmental adaptation, and behaviour-driven posing, enabling responsive and scalable animation in interactive metaverse environments.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:ProceduralAnimation
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses: [[Inverse Kinematics]], [[Physics Simulation]], [[Physics Engine]]
+  - enables: [[Avatar Behavior]], [[Animation Technique]]
+  - relatedTo: [[Motion Capture]], [[Animation Retargeting]]
 
 - ### Content
   # ProceduralAnimation

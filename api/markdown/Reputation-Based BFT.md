@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:reputation-based-bft",
   "@type": "Class",
   "label": "Reputation-Based BFT",
-  "definition": "A BFT algorithm incorporating a reputation model to evaluate the operations of each node in the consensus process, giving higher weight to nodes with better historical behavior.",
+  "definition": "Reputation-Based BFT is a variant of Byzantine Fault Tolerance in which each consensus participant is assigned a dynamic reputation score derived from its historical behaviour—vote accuracy, uptime, and honest message propagation—so that nodes with strong track records carry greater weight in the consensus outcome. This design allows the protocol to tolerate Byzantine actors more efficiently than pure stake-weighted schemes by penalising misbehaving validators through reputation decay rather than requiring slashing of locked collateral. It is commonly deployed in permissioned or consortium blockchain networks where participants are identified and accountable.",
   "domain": "blockchain",
   "maturity": "established",
+  "qualityScore": 0.8,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-protocol-and-consensus",
@@ -59,7 +60,28 @@ public:: true
       "label": "Byzantine Fault Tolerance"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"},
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"},
+      {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:validator-node", "label": "Validator Node"},
+      {"@id": "urn:ngm:class:consensus-algorithm", "label": "Consensus Algorithm"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:proof-of-authority", "label": "Proof of Authority"},
+      {"@id": "urn:ngm:class:validator-set", "label": "Validator Set"},
+      {"@id": "urn:ngm:class:blockchain-protocol", "label": "Blockchain Protocol"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -100,18 +122,23 @@ public:: true
 
 
 - ### Definition
-  - A BFT algorithm incorporating a reputation model to evaluate the operations of each node in the consensus process, giving higher weight to nodes with better historical behavior.
-
-- ### Semantic Classification
-  - owl-class:: blockchain:ReputationBasedBFT
-  - owl-role:: Concept
-  - belongs-to-domain:: [[Blockchain]]
+  Reputation-Based BFT is a variant of Byzantine Fault Tolerance in which each consensus participant is assigned a dynamic reputation score derived from its historical behaviour—vote accuracy, uptime, and honest message propagation—so that nodes with strong track records carry greater weight in the consensus outcome. This design allows the protocol to tolerate Byzantine actors more efficiently than pure stake-weighted schemes by penalising misbehaving validators through reputation decay rather than requiring slashing of locked collateral. It is commonly deployed in permissioned or consortium blockchain networks where participants are identified and accountable.
 
 - ### Relationships
-  - is-subclass-of:: [[Byzantine Fault Tolerance]]
+  - requires:: [[Byzantine Fault Tolerance]], [[Consensus Mechanism]]
+  - enables:: [[Fault Tolerance]], [[Blockchain Governance]]
+  - uses:: [[Validator Node]], [[Consensus Algorithm]]
+  - relatedTo:: [[Proof of Authority]], [[Validator Set]], [[Blockchain Protocol]]
+  - contrastsWith:: [[Proof of Stake]]
 
 - ### Content
-  Reputation-Based BFT — content pending enrichment.
+  Classical BFT protocols—such as PBFT—require 3f+1 total replicas to tolerate f Byzantine faults and provide liveness guarantees only in partially-synchronous networks. These protocols treat all non-faulty validators as equivalent, which means a newly admitted node has the same consensus influence as one with years of verified uptime. Reputation-Based BFT addresses this by continuously scoring validators and adjusting their voting weights accordingly.
+
+  Reputation accumulation typically considers message latency (nodes that consistently respond within timeout windows receive positive scores), vote agreement with the eventual commit (nodes that vote for blocks that are later confirmed accumulate credit), and absence of equivocation (sending conflicting votes is heavily penalised). Some implementations add external attestations—governance bodies, identity oracles, or staking mechanisms that serve as initial reputation bootstraps.
+
+  The practical advantage over pure Proof of Stake is that reputation decay can marginalise a validator without requiring on-chain slashing of collateral, which may be legally or operationally problematic in regulated consortium networks such as those used in supply-chain finance or central-bank-backed digital currencies. The disadvantage is that reputation models must guard against Sybil attacks where an actor accumulates multiple high-reputation identities before acting maliciously.
+
+  Reputation-Based BFT is closely related to Proof of Authority in that both rely on identified, accountable validators, but differs in that PoA grants authority through a fixed whitelist whereas reputation scores are dynamic and continuously earned or lost.
 
 - ### Provenance
   - sources:: Chimera Prime Research

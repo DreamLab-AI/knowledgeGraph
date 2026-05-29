@@ -48,7 +48,8 @@ public:: true
   "label": "Standards Conformance",
   "definition": "The state or process of meeting the requirements specified in a technical standard, specification, or guideline, ensuring that a product, process, or system aligns with internal or industry-specific standards for interoperability, quality, and compatibility.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-standards-and-interop",
@@ -64,6 +65,40 @@ public:: true
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:technical-standards",
+        "label": "Technical Standards"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:standards-conformance-testing",
+        "label": "Standards Conformance Testing"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:standards-body",
+        "label": "Standards Body"
+      }
+    ]
   }
 }
 ```
@@ -109,6 +144,12 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Standards]]
+  - Requires [[Technical Standards]]
+  - Enables [[Interoperability]]
+  - Enables [[Quality Assurance]]
+  - Standardized By [[Standards Body]]
+  - Related To [[Standards Conformance Testing]]
+  - Related To [[Interoperability Standard]]
 
 - ### Content
 

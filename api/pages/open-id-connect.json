@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:open-id-connect",
   "domain": "infrastructure",
-  "definition": "OpenID Connect (OIDC) is an identity layer built on top of OAuth 2.0 that enables clients to verify user identity via JSON Web Tokens issued by an authorisation server.",
+  "definition": "OpenID Connect (OIDC) is a federated identity protocol standardised by the OpenID Foundation that adds an authentication layer on top of the OAuth 2.0 authorisation framework. Upon successful authentication, an OIDC-compliant identity provider issues a signed JSON Web Token (ID Token) containing identity claims\u2014such as subject identifier, email, and session expiry\u2014which the relying party verifies cryptographically without querying the provider again. OIDC defines standard flows (authorisation code, implicit, hybrid) and a UserInfo endpoint, enabling single sign-on across web and mobile applications and serving as the identity spine for enterprise federation, consumer logins, and decentralised identity wallets.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-security-and-identity",
@@ -14,20 +14,44 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:oauth-2-0",
+        "label": "OAuth 2.0"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:identity-federation",
+        "label": "Identity Federation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:open-id-foundation",
+        "label": "OpenID Foundation"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

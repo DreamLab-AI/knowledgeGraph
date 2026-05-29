@@ -8,6 +8,12 @@
 
 - ### Relationships
   - is-subclass-of:: [[Standards]]
+  - Requires [[Technical Standards]]
+  - Enables [[Interoperability]]
+  - Enables [[Quality Assurance]]
+  - Standardized By [[Standards Body]]
+  - Related To [[Standards Conformance Testing]]
+  - Related To [[Interoperability Standard]]
 
 - ### Content
 

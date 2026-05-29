@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:collaborative-technology",
   "domain": "infrastructure",
-  "definition": "Collaborative Technology is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Collaborative Technology encompasses the hardware, software, protocols, and infrastructure components that enable distributed teams to work together effectively across time and space. This includes real-time media processing, synchronisation protocols, edge computing for latency reduction, and zero-trust security models forming the technological substrate of telecollaboration.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
@@ -14,17 +14,45 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:video-conferencing",
+        "label": "Video Conferencing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:networking-infrastructure",
+        "label": "Networking Infrastructure"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": []

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:software-infrastructure",
   "domain": "infrastructure",
-  "definition": "Software Infrastructure is a type of Infrastructure in the infrastructure domain.",
+  "definition": "Software Infrastructure comprises the foundational software layers \u2014 including operating systems, middleware, APIs, frameworks, and runtime environments \u2014 that underpin applications and services without being directly user-facing. It provides the shared services, communication channels, and execution contexts on which higher-level metaverse, AI, and distributed-systems applications are built, analogous to the role that physical infrastructure plays for built environments.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-software-engineering",
@@ -13,12 +13,34 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:middleware",
+        "label": "Middleware"
+      },
+      {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "id": "urn:ngm:class:software-architecture",
+        "label": "Software Architecture"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:serverless-architecture",
+        "label": "Serverless Architecture"
+      },
+      {
+        "id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -26,7 +48,12 @@
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
+      }
+    ],
     "relatedTo": []
   },
   "wikilinks": [

@@ -7,7 +7,9 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **hasPart**: Avatar Interoperability, Digital Twin Interop Protocol, State Synchronization, Portability — this domain encompasses these core interoperability mechanisms
+  - **standardizedBy**: API Standard, Interoperability Framework — ETSI TS and TR specifications govern the technical implementations
+  - **enables**: Interoperability, Discovery Layer — the domain makes cross-system discovery and data exchange possible
 
 - ### Content
   - The ETSI Interoperability domain establishes standards and mechanisms enabling different organisations and systems to exchange information and collaborate effectively through semantic data models, standardised protocols, and inclusive accessibility compliance.

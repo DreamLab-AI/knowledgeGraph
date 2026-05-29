@@ -46,16 +46,35 @@ public:: true
   "@id": "urn:ngm:class:rb-0049-motion-planning",
   "@type": "Class",
   "label": "rb 0049 motion planning",
-  "definition": "Motion Planning - Motion Planning in robotics systems",
+  "definition": "Motion planning is the computational process of determining a sequence of valid robot configurations or control inputs that moves a robot from an initial state to a goal state while satisfying constraints such as obstacle avoidance, joint limits, and dynamic feasibility. It bridges high-level task specification and low-level actuation, encompassing path planning, trajectory optimisation, and task-and-motion planning (TAMP). Sampling-based methods (RRT, PRM) and optimisation-based approaches are the dominant paradigms, increasingly augmented by learning-based techniques for dynamic and uncertain environments.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-navigation-and-planning",
       "label": "Navigation and Planning"
     }
   ],
-  "quality": 0.5,
+  "quality": 0.7,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:rb-0051-trajectory-planning", "label": "rb 0051 trajectory planning"},
+      {"@id": "urn:ngm:class:path-planning", "label": "Path Planning"},
+      {"@id": "urn:ngm:class:rb-0052-collision-avoidance", "label": "rb 0052 collision avoidance"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:rrt-algorithm", "label": "RRT Algorithm"},
+      {"@id": "urn:ngm:class:rb-0021-robot-kinematics", "label": "rb 0021 robot kinematics"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:task-planning", "label": "Task Planning"},
+      {"@id": "urn:ngm:class:obstacle-avoidance", "label": "Obstacle Avoidance"},
+      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:rb-0103-collaborative-operation", "label": "rb 0103 collaborative operation"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

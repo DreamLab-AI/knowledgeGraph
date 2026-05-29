@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:asset-portability",
   "domain": "spatial-computing",
-  "definition": "Asset portability in spatial computing refers to the ability to transfer and render digital assets\u2014such as 3D models, avatars, and environments\u2014across different platforms, engines, and virtual worlds.",
+  "definition": "Asset portability in spatial computing refers to the technical and standards-based capability to transfer, import, and faithfully render digital assets \u2014 including 3D models, textures, avatars, animations, and environments \u2014 across different rendering engines, platforms, and virtual world applications without loss of fidelity or functionality. Portability depends on common open file formats, agreed semantic conventions for material properties and skeletal rigs, and runtime interoperability layers. It is a prerequisite for the open metaverse vision of user-owned, platform-neutral digital property.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -14,11 +14,29 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:3-d-file-format",
+        "label": "3D File Format"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:avatar-portability",
+        "label": "Avatar Portability"
+      },
+      {
+        "id": "urn:ngm:class:cross-platform-interoperability",
+        "label": "Cross-Platform Interoperability"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +45,12 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:3-d-asset-standard",
+        "label": "3D Asset Standard"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

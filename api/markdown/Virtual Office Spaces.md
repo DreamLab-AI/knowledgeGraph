@@ -70,9 +70,11 @@ public:: true
   "@id": "urn:ngm:class:virtual-office-spaces",
   "@type": "Class",
   "label": "Virtual Office Spaces",
-  "definition": "\"Persistent virtual reality or metaverse environments designed as professional workspaces where distributed teams gather as avatars to collaborate, attend meetings, use shared whiteboards, and navigate 3D office layouts, replicating physical office spatial dynamics whilst enabling global remote p...",
+  "definition": "Virtual office spaces are persistent 3D environments hosted on VR or metaverse platforms where distributed teams gather as avatars to collaborate, attend meetings, use shared whiteboards, and navigate spatial office layouts, replicating physical workplace social dynamics whilst enabling global remote participation through immersive telepresence. Unlike transient video calls, these environments preserve spatial context across sessions — desks remain assigned, whiteboards retain content, and colleagues can be discovered by proximity cues. Leading implementations include Microsoft Mesh, Meta Horizon Workrooms, and Spatial.",
   "domain": "distributed-collaboration",
   "maturity": "emerging",
+  "qualityScore": 0.75,
+  "quality": 0.75,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:dc-workspace-tools",
@@ -83,7 +85,27 @@ public:: true
       "label": "Virtual Environment"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:telecollaboration", "label": "Telecollaboration"},
+      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
+      {"@id": "urn:ngm:class:spatial-audio", "label": "Spatial Audio"},
+      {"@id": "urn:ngm:class:avatar-system", "label": "Avatar System"},
+      {"@id": "urn:ngm:class:presence", "label": "Presence"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:social-vr", "label": "Social VR"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
+      {"@id": "urn:ngm:class:remote-collaboration", "label": "Remote Collaboration"},
+      {"@id": "urn:ngm:class:mixed-reality", "label": "Mixed Reality"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

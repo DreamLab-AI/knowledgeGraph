@@ -42,15 +42,33 @@ public:: true
   "@id": "urn:ngm:class:limited-risk-ai",
   "@type": "Class",
   "label": "Limited Risk AI",
-  "definition": "AI systems subject only to transparency obligations, requiring users to be informed they are interacting with AI. These systems include chatbots, emotion recognition, biometric categorisation, and deepfake generation.",
+  "definition": "Under the EU AI Act (Article 50), Limited Risk AI denotes systems subject only to transparency obligations—primarily chatbots and deepfake generators—where providers must inform users they are interacting with AI or label synthetic content as artificially generated. These systems face no conformity assessment, but non-compliance attracts fines of up to €7.5 million or 1.5% of global annual turnover.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:transparency", "label": "Transparency"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
+      {"@id": "urn:ngm:class:regulatory-framework", "label": "Regulatory Framework"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:bias", "label": "Bias"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
+      {"@id": "urn:ngm:class:synthetic-media", "label": "Synthetic Media"},
+      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -95,7 +113,10 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires:: [[Transparency]]
+  - partOf:: [[AI Governance]], [[Regulatory Framework]]
+  - contrastsWith:: [[Bias]]
+  - relatedTo:: [[Generative AI]], [[Synthetic Media]], [[AI Ethics]]
 
 - ### Content
   - AI systems subject only to transparency obligations, requiring users to be informed they are interacting with AI. These systems include chatbots, emotion recognition, biometric categorisation, and deepfake generation.

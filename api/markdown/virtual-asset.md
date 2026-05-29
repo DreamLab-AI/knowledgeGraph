@@ -7,7 +7,12 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses [[Smart Contract]]
+  - uses [[Blockchain]]
+  - relatedTo [[NFT]]
+  - relatedTo [[Digital Ownership]]
+  - relatedTo [[Interoperability]]
+  - partOf [[Virtual Economy]]
 
 - ### Content
   - Digital items with economic value within [[MetaversePlatforms|metaverse environments]], spanning [[NFT|non-fungible tokens]] representing unique collectibles, [[Avatar|avatars]] and customisations, [[VirtualRealEstate|virtual real estate]], and [[InGameItems|in-game items]] with market-tradeable value. Ownership and transfer rely on [[BlockchainTechnology|blockchain]] smart contracts or centralised platform ledgers, with [[Interoperability|interoperability standards]] enabling asset portability across platforms and markets. Economic significance spans consumer entertainment to investment speculation, with regulatory frameworks increasingly addressing [[VirtualAssetTaxation|taxation]] and securities classification.

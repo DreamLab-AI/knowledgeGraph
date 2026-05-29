@@ -1,12 +1,14 @@
 - ### Definition
-  - T E L E 050 neuralrenderingtelepresence is a concept within the telecollaboration domain. Further enrichment pending.
+  - Neural Rendering Telepresence (TELE 050) is a class of telepresence systems that replace conventional rasterisation pipelines with neural rendering techniques — including neural radiance fields, Gaussian splatting, and differentiable rendering — to reconstruct and transmit photorealistic volumetric representations of remote participants in real time. These approaches substantially reduce capture hardware requirements while improving perceptual fidelity and supporting free-viewpoint synthesis.
 
 - ### Semantic Classification
   - owl-class:: distributed-collaboration:TELE050neuralrenderingtelepresence
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses:: Neural Rendering, Neural Radiance Field, Gaussian Splatting
+  - enables:: Volumetric Capture, Metaverse and Telecollaboration
+  - relatedTo:: TELE020virtualrealitytelepresence, Real-Time Rendering
 
 - ### Content
 

@@ -42,20 +42,52 @@ public:: true
   "@id": "urn:ngm:class:pre-production",
   "@type": "Class",
   "label": "Pre Production",
-  "definition": "Pre Production is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Pre-production is the planning and preparation phase of a creative or software project that occurs before active content creation or development commences. It encompasses conceptual design, narrative structuring, technical specification, asset planning, and prototyping activities that reduce risk and align stakeholder expectations in film, game, and metaverse content pipelines.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
     }
   ],
-  "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:digital-content-creation",
+        "label": "Digital Content Creation"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-environment-creation",
+        "label": "Virtual Environment Creation"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:creative-tools",
+        "label": "Creative Tools"
+      },
+      {
+        "@id": "urn:ngm:class:content-production-workflow",
+        "label": "Content Production Workflow"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:game-development",
+        "label": "Game Development"
+      },
+      {
+        "@id": "urn:ngm:class:film-production",
+        "label": "Film Production"
+      }
+    ]
   }
 }
 ```
@@ -87,14 +119,19 @@ public:: true
 
 
 - ### Definition
-  - Pre Production is a concept within the metaverse domain. Further enrichment pending.
+  - Pre-production is the planning and preparation phase of a creative or software project that occurs before active content creation or development commences. It encompasses conceptual design, narrative structuring, technical specification, asset planning, and prototyping activities that reduce risk and align stakeholder expectations in film, game, and metaverse content pipelines.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:PreProduction
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Enables [[Digital Content Creation]]
+  - Enables [[Virtual Environment Creation]]
+  - Uses [[Creative Tools]]
+  - Uses [[Content Production Workflow]]
+  - Related to [[Game Development]]
+  - Related to [[Film Production]]
 
 - ### Content
 

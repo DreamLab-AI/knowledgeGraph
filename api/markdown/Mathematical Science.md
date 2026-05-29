@@ -42,9 +42,10 @@ public:: true
   "@id": "urn:ngm:class:mathematical-science",
   "@type": "Class",
   "label": "Mathematical Science",
-  "definition": "Mathematical Science is a type of Machine Learning in the artificial intelligence domain.",
+  "definition": "Mathematical Science encompasses the formal disciplines—including probability theory, linear algebra, calculus, graph theory, and cryptography—that underpin machine learning model design, algorithm analysis, and blockchain cryptographic security. It provides the theoretical substrate for understanding optimisation landscapes, neural network convergence, and information-theoretic limits of AI systems.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-research-area",
@@ -55,6 +56,16 @@ public:: true
       "label": "Machine Learning"
     }
   ],
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:algorithm", "label": "Algorithm"},
+      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -91,14 +102,15 @@ public:: true
 
 
 - ### Definition
-  - Mathematical Science is a concept within the blockchain domain. Further enrichment pending.
+  - Mathematical Science encompasses the formal disciplines—including probability theory, linear algebra, calculus, graph theory, and cryptography—that underpin machine learning model design, algorithm analysis, and blockchain cryptographic security. It provides the theoretical substrate for understanding optimisation landscapes, neural network convergence, and information-theoretic limits of AI systems.
 
 - ### Semantic Classification
   - owl-class:: blockchain:MathematicalScience
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - enables:: [[Machine Learning]], [[Neural Network]]
+  - supports:: [[Algorithm]], [[Cryptography]]
 
 - ### Content
 

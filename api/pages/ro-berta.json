@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ro-berta",
   "domain": "artificial-intelligence",
-  "definition": "Robustly Optimised BERT Approach: an optimised version of BERT that removes next sentence prediction, trains with larger batches and learning rates, and uses dynamic masking to improve performance.",
+  "definition": "RoBERTa (Robustly Optimised BERT Pretraining Approach) is a transformer-based language model that refines BERT by removing the next-sentence-prediction objective, adopting dynamic masking, training on substantially larger corpora (160 GB vs 16 GB), and using larger batch sizes. These training-procedure improvements yield consistent performance gains on NLP benchmarks without altering the underlying transformer encoder architecture.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-model-architecture",
@@ -13,17 +13,49 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:language-modeling",
+        "label": "Language Modeling"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:sentiment-analysis",
+        "label": "Sentiment Analysis"
+      },
+      {
+        "id": "urn:ngm:class:named-entity-recognition",
+        "label": "Named Entity Recognition"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:albert",
+        "label": "ALBERT"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

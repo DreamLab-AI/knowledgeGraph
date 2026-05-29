@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:virtual-museum-tour",
   "domain": "spatial-computing",
-  "definition": "An immersive digital experience that enables users to explore museum collections, exhibitions, and cultural heritage sites through VR, AR, 360-degree imagery, or interactive 3D environments, providing global access to art and artifacts regardless of physical location.",
+  "definition": "An immersive digital experience that enables users to explore museum collections, exhibitions, and cultural heritage sites through VR, AR, 360-degree imagery, or interactive 3D environments, providing global access to art and artefacts regardless of physical location. Delivery formats range from photogrammetry-reconstructed 3D galleries (Smithsonian, British Museum) to fully navigable VR spaces, with platforms such as Google Arts and Culture and Matterport enabling broad public access across device types.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -17,21 +17,57 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cultural-heritage-xr-experience",
+        "label": "Cultural Heritage XR Experience"
+      },
+      {
+        "id": "urn:ngm:class:immersive-learning",
+        "label": "Immersive Learning"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:3-d-model",
+        "label": "3D Model"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:virtual-field-trip",
+        "label": "Virtual Field Trip"
+      },
+      {
+        "id": "urn:ngm:class:virtual-tourism",
+        "label": "Virtual Tourism"
+      }
+    ]
   },
   "wikilinks": [
     {

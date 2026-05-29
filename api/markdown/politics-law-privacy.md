@@ -1,12 +1,15 @@
 - ### Definition
-  - Politics, Law, Privacy is a concept within the ngm domain.
+  - The intersecting domain of political governance, legal frameworks, and individual privacy rights as they apply to AI and digital technologies. This cluster addresses how legislation (e.g., EU AI Act, GDPR), regulatory enforcement, and political economy shape what AI systems are permitted to do, how data about individuals is collected and used, and how citizens can exercise rights against automated decision-making and surveillance.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:PoliticsLawPrivacy
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **hasPart**: Data Protection, Digital Rights, AI Regulation — these are the substantive regulatory components that make up the law-and-privacy field.
+  - **requires**: GDPR Compliance — any entity processing personal data within EU jurisdiction must satisfy GDPR obligations.
+  - **relatedTo**: Trust and Safety, copyright, Education and AI — privacy norms intersect strongly with trust dynamics, intellectual-property law, and AI use in education.
+  - **contrastsWith**: Digital Society Surveillance — privacy rights are in direct tension with state and corporate surveillance capabilities.
 
 - ### Content
   This is a general purpose linking slide for future [[presentation]]

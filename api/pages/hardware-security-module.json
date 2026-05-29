@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:hardware-security-module",
   "domain": "infrastructure",
-  "definition": "A Hardware Security Module (HSM) is a dedicated tamper-resistant hardware device that generates, stores, and manages cryptographic keys and performs sensitive cryptographic operations in a secure enclave.",
+  "definition": "A Hardware Security Module (HSM) is a dedicated, tamper-evident and tamper-resistant hardware appliance that generates, stores, and manages cryptographic keys in a physically protected environment and performs sensitive cryptographic operations\u2014such as signing, encryption, and key derivation\u2014entirely within that secure boundary, so that plaintext key material is never exposed to the host system. HSMs are validated against formal security standards such as FIPS 140-2/140-3 (at levels 2 and 3) and Common Criteria, and are mandated by financial payment schemes (PCI-DSS), certificate authorities, and government PKI infrastructures.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-security-and-identity",
@@ -14,20 +14,51 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      },
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      },
+      {
+        "id": "urn:ngm:class:secure-enclave",
+        "label": "Secure Enclave"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

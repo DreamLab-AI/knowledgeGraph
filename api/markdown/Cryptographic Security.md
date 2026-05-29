@@ -46,9 +46,9 @@ public:: true
   "@id": "urn:ngm:class:cryptographic-security",
   "@type": "Class",
   "label": "Cryptographic Security",
-  "definition": "Cryptographic Security is a type of Security Framework in the infrastructure domain.",
+  "definition": "Cryptographic Security is the application of cryptographic primitives and protocols—including symmetric and asymmetric encryption, digital signatures, hash functions, and zero-knowledge proofs—to protect data confidentiality, integrity, and authenticity. In blockchain and metaverse contexts it underpins transaction authorisation, identity verification, secure key management, and privacy-preserving computation, forming the bedrock upon which trustless systems and decentralised applications are built.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-security-and-identity",
@@ -59,6 +59,20 @@ public:: true
       "label": "Security Framework"
     }
   ],
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:encryption", "label": "Encryption"},
+      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
+      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public-Key Cryptography"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:privacy-framework", "label": "Privacy Framework"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -100,7 +114,7 @@ public:: true
 
 
 - ### Definition
-  - Cryptographic Security is a concept within the metaverse domain. Further enrichment pending.
+  - Cryptographic Security is the application of cryptographic primitives and protocols—including symmetric and asymmetric encryption, digital signatures, hash functions, and zero-knowledge proofs—to protect data confidentiality, integrity, and authenticity. In blockchain and metaverse contexts it underpins transaction authorisation, identity verification, secure key management, and privacy-preserving computation, forming the bedrock upon which trustless systems and decentralised applications are built.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:CryptographicSecurity
@@ -108,6 +122,12 @@ public:: true
 
 - ### Relationships
   - bridges-to:: [[Blockchain]]
+  - hasPart [[Encryption]]
+  - hasPart [[Digital Signature]]
+  - hasPart [[Public-Key Cryptography]]
+  - supports [[Blockchain]]
+  - supports [[Privacy Framework]]
+  - enables [[Zero-Knowledge Proof]]
 
 - ### Content
 

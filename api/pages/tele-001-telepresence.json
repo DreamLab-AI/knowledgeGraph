@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:tele-001-telepresence",
   "domain": "distributed-collaboration",
-  "definition": "TELE 001 telepresence is a type of Distributed Collaboration in the distributed collaboration domain.",
+  "definition": "TELE 001 Telepresence is a foundational concept within the telecollaboration domain that defines the sense of physical presence transmitted across a distance through audio-visual, haptic, and immersive communication technologies. It serves as the baseline specification for how distributed participants experience co-presence in collaborative environments, underpinning higher-order telecollaboration and virtual meeting systems.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:dc-telepresence",
@@ -14,19 +14,46 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:virtual-collaboration",
+        "label": "Virtual Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:immersive-communication",
+        "label": "Immersive Communication"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:audio-system",
+        "label": "Audio System"
+      },
+      {
+        "id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
+    ],
     "relatedTo": []
   },
   "wikilinks": [

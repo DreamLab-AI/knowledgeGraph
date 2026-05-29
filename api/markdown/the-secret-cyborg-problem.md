@@ -1,12 +1,14 @@
 - ### Definition
-  - The Secret Cyborg Problem is a concept within the ngm domain.
+  The Secret Cyborg Problem describes the widespread but concealed practice of workers integrating AI tools into professional workflows without disclosure to employers or colleagues, creating risks around data governance, accountability, and skills assessment. Research indicates approximately 78% of AI-using knowledge workers employ tools covertly, undermining organisational AI adoption strategies and responsible-use frameworks.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:TheSecretCyborgProblem
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **relatedTo**: AI Adoption, AI Ethics, Generative AI
+  - **contrastsWith**: AI Governance, Trust in Automation
+  - **enables**: Workforce Augmentation
 
 - ### Content
   # Trust Attitudes in the Use of Artificial Intelligence

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:interactive-storytelling",
   "domain": "spatial-computing",
-  "definition": "Interactive Storytelling is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Interactive Storytelling is a narrative form in which user choices, actions, or presence dynamically shape the progression, branching structure, or emotional arc of a story. In spatial computing contexts, it encompasses XR experiences, virtual worlds, and location-based entertainment where embodied interaction and spatial presence deepen narrative immersion beyond passive media consumption.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -14,20 +14,51 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "id": "urn:ngm:class:virtual-world",
+        "label": "Virtual World"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:dialogue-system",
+        "label": "Dialogue System"
+      },
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:social-vr",
+        "label": "Social VR"
+      },
+      {
+        "id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ]
   },
   "wikilinks": [
     {

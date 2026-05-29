@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:rb-0037-dexterity",
   "domain": "robotics",
-  "definition": "dexterity is a robotics and autonomous systems concept and a type of robotics.",
+  "definition": "Dexterity, in robotics, is the ability of a manipulator to achieve a broad range of end-effector orientations and positions within its workspace, particularly in the vicinity of a given point, without encountering kinematic singularities. It is quantified by measures such as the Jacobian condition number, manipulability ellipsoid volume, or isotropy index. High dexterity enables a robot arm to approach objects from many angles, reconfigure during a task, and avoid joint limits \u2014 properties critical for assembly, surgery, and unstructured manipulation tasks.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
@@ -13,21 +13,56 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:rb-0030-jacobian-matrix",
+        "label": "rb 0030 jacobian matrix"
+      },
+      {
+        "id": "urn:ngm:class:rb-0029-inverse-kinematics",
+        "label": "rb 0029 inverse kinematics"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:manipulation",
+        "label": "Manipulation"
+      },
+      {
+        "id": "urn:ngm:class:end-effector",
+        "label": "End Effector"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rb-0032-manipulability",
+        "label": "rb 0032 manipulability"
+      },
+      {
+        "id": "urn:ngm:class:rb-0031-singularity",
+        "label": "rb 0031 singularity"
+      },
+      {
+        "id": "urn:ngm:class:rb-0023-degrees-of-freedom",
+        "label": "rb 0023 degrees of freedom"
+      },
+      {
+        "id": "urn:ngm:class:rb-0024-workspace",
+        "label": "rb 0024 workspace"
+      }
+    ]
   },
   "wikilinks": [
     {

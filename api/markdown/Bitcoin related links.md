@@ -574,15 +574,31 @@ public:: true
   "@id": "urn:ngm:class:bitcoin-related-links",
   "@type": "Class",
   "label": "Bitcoin related links",
-  "definition": "Bitcoin related links is a blockchain and distributed systems concept and a type of blockchain.",
+  "definition": "Bitcoin Related Links is a curated reference collection aggregating news, technical resources, regulatory developments, and community analysis pertaining to the Bitcoin blockchain ecosystem. It encompasses coverage of Bitcoin as money, mining economics, environmental debates, ETF instruments, and the broader cryptocurrency landscape.",
   "domain": "blockchain",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-token-and-asset",
       "label": "Token and Asset"
     }
   ],
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:cryptocurrency", "label": "Cryptocurrency"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:bitcoin-mining", "label": "Bitcoin Mining"},
+      {"@id": "urn:ngm:class:bitcoin-as-money", "label": "Bitcoin As Money"},
+      {"@id": "urn:ngm:class:bitcoin-etf", "label": "Bitcoin ETF"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:lightning-network", "label": "Lightning Network"},
+      {"@id": "urn:ngm:class:bitcoin-environmental-issues", "label": "Bitcoin Environmental Issues"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -1289,7 +1305,7 @@ public:: true
 
 
 - ### Definition
-  - Bitcoin related links is a concept within the ngm domain.
+  - Bitcoin Related Links is a curated reference collection aggregating news, technical resources, regulatory developments, and community analysis pertaining to the Bitcoin blockchain ecosystem. It encompasses coverage of Bitcoin as money, mining economics, environmental debates, ETF instruments, and the broader cryptocurrency landscape.
 
 - ### Semantic Classification
   - owl-class:: blockchain:BitcoinRelatedLinks
@@ -1297,6 +1313,9 @@ public:: true
 
 - ### Relationships
   - bridges-to:: [[Blockchain]]
+  - related-to:: [[Cryptocurrency]]
+  - has-part:: [[Bitcoin Mining]], [[Bitcoin As Money]], [[Bitcoin ETF]]
+  - bridges-to:: [[Lightning Network]], [[Bitcoin Environmental Issues]]
 
 - ### Content
 

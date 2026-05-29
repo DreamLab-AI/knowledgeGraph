@@ -7,7 +7,12 @@
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - partOf [[Transformer Architecture]]
+  - requires [[Attention Mechanism]]
+  - requires [[Tokenisation]]
+  - enables [[Large Language Models]]
+  - enables [[Retrieval-Augmented Generation]]
+  - relatedTo [[Language Modeling]]
   - bridges-to:: [[Autonomous Robot]], [[Blockchain]]
 
 - ### Content

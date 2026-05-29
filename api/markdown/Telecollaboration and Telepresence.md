@@ -4374,9 +4374,10 @@ public:: true
   "@id": "urn:ngm:class:telecollaboration-and-telepresence",
   "@type": "Class",
   "label": "Telecollaboration and Telepresence",
-  "definition": "Telecollaboration and Telepresence is a spatial computing concept and a type of Telepresence.",
+  "definition": "Telecollaboration and Telepresence are complementary technologies enabling geographically distributed participants to share a common virtual or augmented workspace with a sense of physical co-presence. They combine real-time audiovisual communication, spatial audio, avatar embodiment, and low-latency networking to support synchronous collaborative tasks across professional, educational, and social domains.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -4387,7 +4388,22 @@ public:: true
       "label": "Telepresence"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:latency", "label": "Latency"},
+      {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"},
+      {"@id": "urn:ngm:class:video-conferencing", "label": "Video Conferencing"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:distributed-work", "label": "Distributed Work"},
+      {"@id": "urn:ngm:class:immersive-communication", "label": "Immersive Communication"},
+      {"@id": "urn:ngm:class:robotic-telepresence", "label": "Robotic Telepresence"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:avatar", "label": "Avatar"},
+      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -9838,14 +9854,16 @@ public:: true
 
 
 - ### Definition
-  - Telecollaboration and Telepresence is a concept within the ngm domain.
+  - Telecollaboration and Telepresence are complementary technologies enabling geographically distributed participants to share a common virtual or augmented workspace with a sense of physical co-presence. They combine real-time audiovisual communication, spatial audio, avatar embodiment, and low-latency networking to support synchronous collaborative tasks across professional, educational, and social domains.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:TelecollaborationAndTelepresence
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires** → [[Latency]], [[Network Protocol]], [[Video Conferencing]]
+  - **enables** → [[Distributed Work]], [[Immersive Communication]], [[Robotic Telepresence]]
+  - **uses** → [[Avatar]], [[Extended Reality]]
 
 - ### Content
   # Telecollaboration and Telepresence

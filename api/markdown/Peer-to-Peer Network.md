@@ -66,7 +66,7 @@ public:: true
   "@id": "urn:ngm:class:peer-to-peer-network",
   "@type": "Class",
   "label": "Peer-to-Peer Network",
-  "definition": "Decentralized communication within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "A decentralised communication architecture in which participating nodes connect directly to one another without a central coordinator, enabling distributed ledger technology to broadcast transactions, propagate blocks, and maintain a shared state across an open membership set. It underlies the censorship resistance and fault tolerance of blockchain systems.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -77,13 +77,28 @@ public:: true
     {
       "@id": "urn:ngm:class:blockchain-entity",
       "label": "Blockchain Entity"
-    },
-    {
-      "@id": "urn:ngm:class:network-component",
-      "label": "NetworkComponent"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:gossip-protocol", "label": "Gossip Protocol"},
+      {"@id": "urn:ngm:class:peer-discovery", "label": "Peer Discovery"},
+      {"@id": "urn:ngm:class:mempool", "label": "Mempool"},
+      {"@id": "urn:ngm:class:transaction-pool", "label": "Transaction Pool"},
+      {"@id": "urn:ngm:class:bootstrap-node", "label": "Bootstrap Node"},
+      {"@id": "urn:ngm:class:archival-node", "label": "Archival Node"},
+      {"@id": "urn:ngm:class:full-node", "label": "Full Node"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"},
+      {"@id": "urn:ngm:class:nakamoto-consensus", "label": "Nakamoto Consensus"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:consensus-protocol", "label": "Consensus Protocol"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

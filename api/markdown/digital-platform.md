@@ -1,5 +1,5 @@
 - ### Definition
-  - Digital Platform is a concept within the metaverse domain. Further enrichment pending.
+  - A Digital Platform is a software-mediated environment that enables interaction, transaction, and value exchange between multiple user groups, often exploiting network effects to grow. In spatial computing and Web3 contexts, digital platforms host virtual experiences, marketplaces, and decentralised applications, frequently integrating blockchain infrastructure for ownership and governance.
 
 bridges-to:: [[Blockchain]]
 
@@ -8,7 +8,12 @@ bridges-to:: [[Blockchain]]
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Has Part [[Digital Asset Ecosystem]]
+  - Uses [[Blockchain]]
+  - Uses [[Smart Contract]]
+  - Enables [[Marketplace]]
+  - Related To [[Digital Content]]
+  - Related To [[Computing Platform]]
 
 - ### Content
 

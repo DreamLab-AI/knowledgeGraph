@@ -62,7 +62,7 @@ public:: true
   "@id": "urn:ngm:class:societal-and-environmental-wellbeing",
   "@type": "Class",
   "label": "Societal and Environmental Wellbeing",
-  "definition": "Societal and Environmental Wellbeing is a trustworthiness dimension ensuring AI systems consider broader impacts on communities, environment, democratic processes, and human flourishing beyond immediate functional objectives, promoting sustainable development and social cohesion.",
+  "definition": "Societal and Environmental Wellbeing is a trustworthiness dimension ensuring AI systems consider broader impacts on communities, environments, democratic processes, and human flourishing beyond immediate functional objectives. It promotes sustainable development, social cohesion, and alignment with the UN Sustainable Development Goals across the AI lifecycle.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -75,7 +75,26 @@ public:: true
       "label": "AI Ethics"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
+      {"@id": "urn:ngm:class:ai-impact-assessment", "label": "AI Impact Assessment"},
+      {"@id": "urn:ngm:class:carbon-footprint-assessment", "label": "Carbon Footprint Assessment"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:democratic-participation", "label": "Democratic Participation"},
+      {"@id": "urn:ngm:class:digital-rights", "label": "Digital Rights"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:ai-fairness", "label": "AI Fairness"},
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
+      {"@id": "urn:ngm:class:algorithmic-accountability", "label": "Algorithmic Accountability"},
+      {"@id": "urn:ngm:class:carbon-neutrality-planning", "label": "Carbon Neutrality Planning"},
+      {"@id": "urn:ngm:class:responsible-ai-principles", "label": "Responsible AI Principles"},
+      {"@id": "urn:ngm:class:transparency", "label": "Transparency"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

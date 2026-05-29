@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:machine-translation",
   "domain": "artificial-intelligence",
-  "definition": "Machine Translation is the automated translation of text or speech from one natural language to another using neural network models, particularly transformer-based sequence-to-sequence architectures.",
+  "definition": "Machine Translation is the automated translation of text or speech from one natural language to another using neural network models, particularly transformer-based sequence-to-sequence architectures. Modern neural MT systems achieve near-human quality through pre-training on massive multilingual corpora, cross-lingual transfer learning, and attention mechanisms that model long-range linguistic dependencies.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-application",
@@ -18,20 +18,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:language-modeling",
+        "label": "Language Modeling"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:encoder-decoder-architecture",
+        "label": "Encoder Decoder Architecture"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:language-translation",
+        "label": "Language Translation"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
+    ]
   },
   "wikilinks": [
     {

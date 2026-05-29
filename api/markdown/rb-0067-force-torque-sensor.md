@@ -1,5 +1,6 @@
 - ### Definition
-  - ### Primary Definition
+  - A force-torque (FT) sensor is a wrist-mounted transducer that measures all six mechanical load components — three forces and three torques — in real time. These measurements close the loop for force-controlled manipulation, allowing a robot to regulate contact force rather than merely position. FT sensors are essential for compliant assembly, polishing, insertion tasks, and for meeting the power-and-force limiting safety requirements of ISO/TS 15066 in collaborative robot deployments.
+  - Common technologies include strain-gauge bridges, piezoelectric elements, and optical transducers. The sensor output feeds directly into impedance and admittance controllers, enabling the robot to behave as a controllable mechanical impedance at the point of contact.
 
 - ### Semantic Classification
   - owl-class:: robotics:rb0067forcetorquesensor
@@ -7,7 +8,7 @@
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Enables force control (rb 0053), impedance control (rb 0056), and admittance control (rb 0057); supports cobot safety-level compliance through power-and-force limiting (rb 0094).
 
 - ### Content
   - ### Primary Definition

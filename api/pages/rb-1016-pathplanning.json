@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:rb-1016-pathplanning",
   "domain": "robotics",
-  "definition": "RB 1016 pathplanning is a type of Robotics in the robotics domain.",
+  "definition": "RB 1016 Path Planning is an ontology term in the NarrativeGoldmine robotics hierarchy representing the superclass of algorithms that compute collision-free trajectories from a start configuration to a goal configuration in a robot's configuration space. It encompasses graph-search methods (A*, Dijkstra), sampling-based planners (RRT, PRM), and reactive local-planning strategies (DWA, potential fields), all of which underpin autonomous navigation in structured and unstructured environments.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-navigation-and-planning",
@@ -13,17 +13,65 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:trajectory-planning",
+        "label": "Trajectory Planning"
+      },
+      {
+        "id": "urn:ngm:class:rrt-algorithm",
+        "label": "RRT Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:graph-search",
+        "label": "Graph Search"
+      },
+      {
+        "id": "urn:ngm:class:dijkstra-algorithm",
+        "label": "Dijkstra Algorithm"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:localization",
+        "label": "Localization"
+      },
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "id": "urn:ngm:class:obstacle-avoidance",
+        "label": "Obstacle Avoidance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

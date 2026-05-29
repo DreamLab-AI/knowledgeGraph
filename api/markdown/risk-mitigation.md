@@ -7,7 +7,12 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Risk Management]]
+  - requires [[AI Safety]]
+  - enables [[Compliance Framework]]
+  - enables [[Robustness]]
+  - relatedTo [[Bias Mitigation Techniques]]
+  - relatedTo [[Ai Governance Principle]]
 
 - ### Content
   - Actions taken to reduce the likelihood or impact of identified AI risks through technical, organizational, or procedural controls, implemented throughout the AI lifecycle to achieve acceptable risk levels.

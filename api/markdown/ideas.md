@@ -6,7 +6,8 @@
   - owl-role:: Concept
 
 - ### Relationships
-  - bridges-to:: [[AI Agent System]]
+  - **relatedTo**: [[Agents]], [[Large Language Models]]
+  - **bridgesTo**: [[AI Technique]], [[Machine Learning]]
 
 - ### Content
   - Get Todays Information as a template

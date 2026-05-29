@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:extended-reality",
   "domain": "spatial-computing",
-  "definition": "Extended Reality is a foundational concept in spatial computing that serves as a classification parent for 3 related concepts in the ontology.",
+  "definition": "Extended Reality (XR) is an umbrella term encompassing Virtual Reality (VR), Augmented Reality (AR), and Mixed Reality (MR). XR technologies alter or extend the user's perception of the physical environment through head-mounted displays, spatial tracking, and real-time rendering. XR serves as the primary experiential layer of the spatial computing stack, bridging physical and digital environments across training, collaboration, entertainment, and industrial applications.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -14,16 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.3,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:virtual-environment",
+        "label": "Virtual Environment"
+      },
+      {
+        "id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:xr-hardware",
+        "label": "XR Hardware"
+      },
+      {
+        "id": "urn:ngm:class:haptics",
+        "label": "Haptics"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

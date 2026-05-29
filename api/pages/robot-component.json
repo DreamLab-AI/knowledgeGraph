@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:robot-component",
   "domain": "robotics",
-  "definition": "Robot Component is a robotics and autonomous systems concept and a type of robotics.",
+  "definition": "A Robot Component is any modular element forming part of a robotic system, encompassing hardware modules (motors, sensors, links, joints), electrical components (power supplies, motor drivers, embedded computers), software components (perception modules, planners, controllers), and interface components (communication protocols, connectors, mounting systems). Standardised component interfaces\u2014ISO 9409 tool flanges, EtherCAT, ROS 2\u2014enable plug-and-play integration, reducing development time and supporting modular system design, component reuse, and hierarchical decomposition.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
@@ -14,16 +14,39 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:end-effector",
+        "label": "End Effector"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:manipulation",
+        "label": "Manipulation"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

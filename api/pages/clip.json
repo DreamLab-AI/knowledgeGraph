@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:clip",
   "domain": "artificial-intelligence",
-  "definition": "CLIP (Contrastive Language-Image Pre-training) is a multimodal neural network trained by OpenAI to learn visual concepts from natural language supervision, enabling zero-shot image classification.",
+  "definition": "CLIP (Contrastive Language-Image Pre-training) is a dual-encoder neural network architecture in which a vision encoder (ViT or CNN) and a text encoder (Transformer) are jointly trained on large-scale image-text pairs using a contrastive objective that maximises the cosine similarity of matching pairs and minimises it for non-matching pairs. This training procedure produces a shared multimodal embedding space in which semantically related images and text are proximate, enabling zero-shot image classification by comparing image embeddings to textual class descriptions without any task-specific fine-tuning. CLIP embeddings have become a foundational component in text-to-image generation pipelines, image-text retrieval systems, and vision-language models.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-model-architecture",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:image-classification",
+        "label": "Image Classification"
+      },
+      {
+        "id": "urn:ngm:class:text-to-image",
+        "label": "Text-to-Image"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:contrastive-learning",
+        "label": "Contrastive Learning"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai",
+        "label": "Multimodal AI"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:embedding-model",
+        "label": "Embedding Model"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:sustainability-reporting",
   "domain": "blockchain",
-  "definition": "Sustainability reporting is the practice of disclosing an organisation's environmental, social, and governance (ESG) performance data to stakeholders in accordance with recognised frameworks.",
+  "definition": "Sustainability reporting is the structured practice of disclosing an organisation's environmental, social, and governance (ESG) performance data to investors, regulators, and wider stakeholders in accordance with recognised frameworks such as GRI, TCFD, ISSB, and the EU Corporate Sustainability Reporting Directive (CSRD). High-quality sustainability disclosure requires consistent data collection across scope 1, 2, and 3 emissions, reliable carbon accounting methodologies, and assurance processes comparable to financial audit. Blockchain-based provenance mechanisms and tokenised carbon credits are increasingly used to enhance the integrity and verifiability of reported ESG claims.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-governance-and-regulation",
@@ -14,20 +14,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:carbon-accounting",
+        "label": "Carbon Accounting"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:carbon-footprint-measurement",
+        "label": "Carbon Footprint Measurement"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-sustainability",
+        "label": "Blockchain Sustainability"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

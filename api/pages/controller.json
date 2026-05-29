@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:controller",
   "domain": "robotics",
-  "definition": "In robotics, a computational module that processes sensor feedback and generates actuator commands to achieve desired system states according to a control law or policy.",
+  "definition": "A Controller is a computational module in a robotic or cyber-physical system that receives sensor feedback and reference setpoints, applies a control law or learned policy, and generates actuator commands that drive the system towards desired states. Controllers range from classical linear regulators (PID, LQR) to nonlinear model-based controllers (Model Predictive Control) and data-driven approaches (neural network policies, reinforcement learning). They operate within a closed-loop feedback architecture where the difference between desired and measured states \u2014 the error signal \u2014 drives corrective action.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
@@ -14,16 +14,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:robot-control",
+        "label": "Robot Control"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      },
+      {
+        "id": "urn:ngm:class:pid-controller",
+        "label": "Pid Controller"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

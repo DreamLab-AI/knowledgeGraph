@@ -54,9 +54,10 @@ public:: true
   "@id": "urn:ngm:class:inflation-control",
   "@type": "Class",
   "label": "Inflation Control",
-  "definition": "Mechanisms and policies in virtual economies to regulate the creation and distribution of virtual currency, preventing value depreciation and economic instability.",
+  "definition": "Inflation Control encompasses the mechanisms, policies, and economic design patterns used within virtual and metaverse economies to regulate the creation, circulation, and destruction of virtual currency and digital assets. These controls prevent hyperinflation and value collapse by balancing supply-side minting with demand-side sinks. Effective inflation control underpins the long-term viability of play-to-earn ecosystems, NFT markets, and decentralised finance platforms built on virtual worlds.",
   "domain": "spatial-computing",
   "maturity": "established",
+  "qualityScore": 0.8,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -67,7 +68,38 @@ public:: true
       "label": "Metaverse"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:minting", "label": "Minting"},
+      {"@id": "urn:ngm:class:burning-mechanism", "label": "Burning Mechanism"},
+      {"@id": "urn:ngm:class:sink-mechanism", "label": "Sink Mechanism"},
+      {"@id": "urn:ngm:class:circulating-supply", "label": "Circulating Supply"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:tokenomics", "label": "Tokenomics"},
+      {"@id": "urn:ngm:class:virtual-currency", "label": "Virtual Currency"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:play-to-earn-p2-e", "label": "Play-to-Earn (P2E)"},
+      {"@id": "urn:ngm:class:digital-economy", "label": "Digital Economy"},
+      {"@id": "urn:ngm:class:creator-economy", "label": "Creator Economy"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
+      {"@id": "urn:ngm:class:tokenomics-governance", "label": "Tokenomics Governance"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:blockchain-economics", "label": "Blockchain Economics"},
+      {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"},
+      {"@id": "urn:ngm:class:monetary-system", "label": "Monetary System"},
+      {"@id": "urn:ngm:class:stablecoin", "label": "Stablecoin"},
+      {"@id": "urn:ngm:class:social-token-economy", "label": "Social Token Economy"},
+      {"@id": "urn:ngm:class:cross-metaverse-commerce", "label": "Cross Metaverse Commerce"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:blockchain-gaming", "label": "Blockchain Gaming"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -117,19 +149,28 @@ public:: true
 ```
 
 
-- ### Definition
-  - Mechanisms and policies in virtual economies to regulate the creation and distribution of virtual currency, preventing value depreciation and economic instability.
+### Definition
+
+Inflation Control encompasses the mechanisms, policies, and economic design patterns used within virtual and metaverse economies to regulate the creation, circulation, and destruction of virtual currency and digital assets. These controls prevent hyperinflation and value collapse by balancing supply-side minting with demand-side sinks. Effective inflation control underpins the long-term viability of play-to-earn ecosystems, NFT markets, and decentralised finance platforms built on virtual worlds.
+
+### Relationships
+
+Inflation Control is a foundational component of [[Tokenomics]] and depends directly on [[Virtual Currency]] as the asset class being regulated. It has constituent mechanisms including [[Minting]] (supply creation), [[Burning Mechanism]] (supply destruction), and [[Sink Mechanism]] (demand-side withdrawal), all of which operate over the [[Circulating Supply]]. It uses [[Smart Contract]] logic to enforce rules automatically and relies on [[Tokenomics Governance]] for parameter adjustment. Inflation Control enables sustainable [[Play-to-Earn (P2E)]] economies, broader [[Digital Economy]] activity, and [[Creator Economy]] participation within virtual worlds. It is related to [[Blockchain Economics]], [[Blockchain Governance]], [[Monetary System]], [[Stablecoin]] design, [[Social Token Economy]], and [[Cross Metaverse Commerce]]. It is a part of the broader [[Blockchain Gaming]] ecosystem.
+
+### Content
+
+Inflation in virtual economies follows dynamics analogous to macroeconomic monetary theory, but with key distinctions: virtual currency can be minted at near-zero marginal cost, and the monetary authority (game developer, DAO, or protocol) has far more direct levers than a central bank. Without deliberate inflation control, play-to-earn games historically suffer hyperinflation cycles — players farm tokens at increasing rates, prices rise, new players are priced out, and the economy collapses. Games such as Axie Infinity's SLP token serve as a canonical case study: unconstrained supply issuance with insufficient sinks drove severe devaluation.
+
+The core toolkit for inflation control consists of three mechanisms operating in tandem. Minting controls set caps or bonding curves on new token issuance, ensuring supply growth is tied to genuine economic activity rather than time alone. Burning mechanisms permanently remove tokens from circulation — transaction fee burns, NFT upgrade costs, and penalty slashing are common implementations. Sink mechanisms create sustained ongoing demand: crafting systems, cosmetic purchases, premium features, and staking lockups all reduce circulating supply without permanently destroying tokens.
+
+Tokenomics governance — whether centralised (developer-controlled) or decentralised (DAO vote) — determines how and when inflation parameters are adjusted. On-chain governance through smart contracts enables transparent, auditable parameter changes. However, governance itself introduces risks: poorly designed voting structures can be captured by large holders who benefit from inflationary policies at the expense of smaller participants. Stablecoin mechanisms and dual-token architectures (separating utility tokens from governance tokens) have emerged as design patterns to isolate inflation pressure from governance activity.
+
+Inflation control intersects with cross-metaverse commerce as interoperability between virtual worlds creates new arbitrage and capital flow dynamics. An economy that achieves stability in isolation may face inflationary pressure from external asset bridges. As the metaverse matures, inflation control frameworks will need to account for cross-platform liquidity, real-world currency pegs, and regulatory requirements imposed by central bank digital currency frameworks operating alongside virtual currencies.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:InflationControl
   - owl-role:: Process
   - belongs-to-domain:: [[MetaverseDomain]]
-
-- ### Relationships
-  - is-subclass-of:: [[Metaverse]]
-
-- ### Content
-  Inflation Control — content pending enrichment.
 
 - ### Provenance
   - sources:: [[Virtual Economics]], [[Game Economics]]

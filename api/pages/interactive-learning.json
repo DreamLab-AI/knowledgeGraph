@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:interactive-learning",
   "domain": "artificial-intelligence",
-  "definition": "Interactive Learning is a type of Artificial Intelligence in the artificial intelligence domain.",
+  "definition": "A machine learning paradigm in which a model interactively queries a user, oracle, or environment to obtain labels or feedback for the most informative examples, iteratively improving performance while minimising annotation cost. Interactive learning encompasses active learning, online learning, and human-in-the-loop approaches that tighten the loop between model uncertainty and human input.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -13,21 +13,48 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:human-in-the-loop-learning",
+        "label": "Human-in-the- Loop Learning"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "id": "urn:ngm:class:data-annotation",
+        "label": "Data Annotation"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "id": "urn:ngm:class:semi-supervised-learning",
+        "label": "Semi-Supervised Learning"
+      }
+    ]
   },
   "wikilinks": [
     {

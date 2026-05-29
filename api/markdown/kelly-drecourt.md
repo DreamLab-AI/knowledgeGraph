@@ -1,12 +1,13 @@
 - ### Definition
-  - Kelly Drecourt is a concept within the ngm domain.
+  - Kelly Drecourt is a collaborator and practitioner associated with teacher-support application development, operating at the intersection of educational technology and AI-assisted tools for classroom and curriculum support.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:KellyDrecourt
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses:: [[Educational Technology]]
+  - relatedTo:: [[Learning Management System]], [[Artificial Intelligence]]
 
 - ### Content
   - Looking for help with teacher support app

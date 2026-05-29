@@ -66,9 +66,10 @@ public:: true
   "@id": "urn:ngm:class:democratic-values",
   "@type": "Class",
   "label": "Democratic Values",
-  "definition": "Principles and practices of democratic governance including pluralism, participatory decision-making, transparent governance, electoral integrity, free formation of political will and protection of civic space, which AI systems should respect and strengthen rather than undermine.",
+  "definition": "Principles and practices of democratic governance—including pluralism, participatory decision-making, transparent governance, electoral integrity, free formation of political will, and protection of civic space—which AI systems and digital platforms should respect and strengthen rather than undermine. As codified in the OECD AI Principles 2024 and the EU AI Act, these values impose specific constraints on AI deployment in electoral, civic, and public-interest contexts.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-legal-and-regulatory",
@@ -79,7 +80,21 @@ public:: true
       "label": "Policy Enforcement"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "supports": [
+      {"@id": "urn:ngm:class:transparency", "label": "Transparency"},
+      {"@id": "urn:ngm:class:accountability", "label": "Accountability"},
+      {"@id": "urn:ngm:class:governance", "label": "Governance"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:attack-vector", "label": "Attack Vector"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:eu-ai-act", "label": "EU AI Act"},
+      {"@id": "urn:ngm:class:democratic-governance", "label": "Democratic Governance"},
+      {"@id": "urn:ngm:class:privacy", "label": "Privacy"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -155,7 +170,13 @@ bridges-to:: [[Telecollaboration]]
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **supports** [[Transparency]] — democratic governance requires visible, auditable decision-making
+  - **supports** [[Accountability]] — democratic values demand accountability of AI systems and institutions
+  - **supports** [[Governance]] — democratic values provide the normative foundation for governance frameworks
+  - **contrastsWith** [[Attack Vector]] — disinformation and electoral manipulation are active attack vectors against democracy
+  - **relatedTo** [[EU AI Act]] — the EU AI Act encodes democratic safeguards into binding regulation
+  - **relatedTo** [[Democratic Governance]] — democratic values are operationalised through democratic governance structures
+  - **relatedTo** [[Privacy]] — civic freedoms depend on privacy from state and corporate surveillance
 
 - ### Content
   - Principles and practices of democratic governance including pluralism, participatory decision-making, transparent governance, electoral integrity, free formation of political will and protection of civic space, which AI systems should respect and strengthen rather than undermine.

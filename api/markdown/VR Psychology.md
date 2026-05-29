@@ -42,9 +42,10 @@ public:: true
   "@id": "urn:ngm:class:vr-psychology",
   "@type": "Class",
   "label": "VR Psychology",
-  "definition": "VR Psychology is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "VR Psychology is the scientific study of how virtual reality environments affect human cognition, perception, emotion, behaviour, and wellbeing. It encompasses research into presence, embodiment, cybersickness, avatar effects, and therapeutic applications of immersive virtual environments, informing the design of XR systems that are psychologically safe and effective.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -56,6 +57,36 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "uses": [
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:immersion",
+        "label": "Immersion"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:presence",
+        "label": "Presence"
+      },
+      {
+        "@id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      },
+      {
+        "@id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      },
+      {
+        "@id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      }
+    ]
   }
 }
 ```
@@ -87,14 +118,19 @@ public:: true
 
 
 - ### Definition
-  - V R Psychology is a concept within the metaverse domain. Further enrichment pending.
+  - VR Psychology is the scientific study of how virtual reality environments affect human cognition, perception, emotion, behaviour, and wellbeing. It encompasses research into presence, embodiment, cybersickness, avatar effects, and therapeutic applications of immersive virtual environments, informing the design of XR systems that are psychologically safe and effective.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:VRPsychology
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses [[Virtual Reality]]
+  - Uses [[Immersion]]
+  - Related To [[Presence]]
+  - Related To [[User Experience]]
+  - Related To [[Cognitive Science]]
+  - Related To [[Haptic Feedback]]
 
 - ### Content
 

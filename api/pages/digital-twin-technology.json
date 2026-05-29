@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:digital-twin-technology",
   "domain": "spatial-computing",
-  "definition": "Digital Twin Technology is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Digital Twin Technology is the practice of creating a live, synchronised virtual replica of a physical object, system, or environment that ingests real-time sensor data to mirror the state of its physical counterpart. Digital twins enable simulation, predictive maintenance, design optimisation, and remote monitoring without physical intervention. In the metaverse context they bridge physical-world data into spatial computing environments, enabling industrial metaverse applications in manufacturing, urban planning, and infrastructure management.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -14,15 +14,42 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cyber-physical-systems",
+        "label": "Cyber Physical Systems"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin-framework",
+        "label": "Digital Twin Framework"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-twin-ecosystem",
+        "label": "Digital Twin Ecosystem"
+      },
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],

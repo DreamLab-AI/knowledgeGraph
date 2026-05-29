@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:programmable-money",
   "domain": "blockchain",
-  "definition": "Programmable Money refers to digital currency encoded with conditional logic\u2014typically via smart contracts\u2014that automatically enforces rules governing its transfer, use, or settlement.",
+  "definition": "Programmable Money is a form of digital currency in which the conditions governing the creation, transfer, and use of monetary units are encoded as executable logic\u2014typically within smart contracts on a public or permissioned blockchain\u2014and enforced autonomously without requiring trusted intermediaries. This enables payment instruments that can embed compliance rules, spending constraints, vesting schedules, or multi-party approval workflows directly into the currency itself. Central bank digital currencies (CBDCs), tokenised commercial bank deposits, and DeFi stablecoins are all instances of programmable money at different points on the decentralisation spectrum.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-defi-and-economics",
@@ -14,11 +14,29 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:digital-currency",
+        "label": "Digital Currency"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +45,16 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cbdcs",
+        "label": "CBDCs"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

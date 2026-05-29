@@ -8,7 +8,7 @@
   "definition": "Cross-domain marker for metaverse components combining artificial intelligence with data management capabilities including ML pipelines, intelligent data processing, analytics, and AI-driven data governance.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure (Category)"
     },
     {

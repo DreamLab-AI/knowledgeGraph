@@ -66,7 +66,7 @@ public:: true
   "@id": "urn:ngm:class:gas",
   "@type": "Class",
   "label": "Gas",
-  "definition": "Transaction execution cost unit within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "Gas is the unit of computational work measurement within EVM-compatible blockchains. Every opcode executed by the Ethereum Virtual Machine consumes a defined gas quantity; users pay gas_price × gas_used to validators, preventing denial-of-service through unbounded computation and creating a market for block space.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -83,7 +83,27 @@ public:: true
       "label": "EconomicMechanism"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:gas-limit", "label": "Gas Limit"},
+      {"@id": "urn:ngm:class:gas-price", "label": "Gas Price"},
+      {"@id": "urn:ngm:class:gas-fee-market", "label": "Gas Fee Market"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:transaction-fee", "label": "Transaction Fee"},
+      {"@id": "urn:ngm:class:fee-market", "label": "Fee Market"},
+      {"@id": "urn:ngm:class:eip-1559", "label": "EIP-1559"},
+      {"@id": "urn:ngm:class:smart-contract-execution", "label": "Smart Contract Execution"},
+      {"@id": "urn:ngm:class:tokenomics", "label": "Tokenomics"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

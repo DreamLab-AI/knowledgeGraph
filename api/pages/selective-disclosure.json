@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:selective-disclosure",
   "domain": "blockchain",
-  "definition": "Selective Disclosure is a cryptographic capability allowing a credential holder to reveal only a chosen subset of their verified claims to a verifier, preserving privacy.",
+  "definition": "Selective disclosure is a cryptographic capability that allows the holder of a verifiable credential to present only a chosen subset of the credential's claims to a verifier, without the verifier being able to learn anything about the undisclosed fields and without requiring re-issuance of a new credential by the issuer. It is implemented through cryptographic mechanisms such as BBS+ signatures, SD-JWT, and zero-knowledge proofs, and is a core design goal of the W3C Verifiable Credentials standard and decentralised identity architectures that aim to minimise unnecessary personal data exposure.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-cryptographic-primitive",
@@ -14,11 +14,29 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:privacy-preserving-technology",
+        "label": "Privacy Preserving Technology"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +45,12 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:credential-format-standard",
+        "label": "Credential Format Standard"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

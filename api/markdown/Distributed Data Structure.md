@@ -94,7 +94,7 @@ public:: true
   "@id": "urn:ngm:class:distributed-data-structure",
   "@type": "Class",
   "label": "Distributed Data Structure",
-  "definition": "A Distributed Data Structure is an abstract organizational framework for storing, managing, and accessing data across multiple networked computing nodes without centralized coordination.",
+  "definition": "A Distributed Data Structure is an abstract organisational framework for storing, managing, and accessing data across multiple networked computing nodes without centralised coordination. It partitions or replicates data across independent nodes employing consensus protocols to maintain consistency and availability, providing the foundational storage architecture for blockchain systems and other decentralised platforms.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -107,7 +107,27 @@ public:: true
       "label": "Blockchain Entity"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:transaction-pool", "label": "Transaction Pool"},
+      {"@id": "urn:ngm:class:merkle-root", "label": "Merkle Root"},
+      {"@id": "urn:ngm:class:merkle-proof", "label": "Merkle Proof"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
+      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"},
+      {"@id": "urn:ngm:class:blockchain-scalability", "label": "Blockchain Scalability"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:network-synchronization", "label": "Network Synchronization"},
+      {"@id": "urn:ngm:class:gossip-protocol", "label": "Gossip Protocol"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

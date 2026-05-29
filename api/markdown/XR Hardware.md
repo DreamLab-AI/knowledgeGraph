@@ -42,15 +42,29 @@ public:: true
   "@id": "urn:ngm:class:xr-hardware",
   "@type": "Class",
   "label": "XR Hardware",
-  "definition": "XR Hardware is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "XR Hardware encompasses the physical devices — head-mounted displays, spatial computing headsets, hand-tracking controllers, and wearable sensors — that enable augmented, mixed, and virtual reality experiences. These devices integrate display optics, inertial measurement units, inside-out tracking cameras, and wireless connectivity to render immersive spatial content with minimal latency.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-display-and-rendering",
       "label": "Display and Rendering"
     }
   ],
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
+      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
+      {"@id": "urn:ngm:class:mixed-reality", "label": "Mixed Reality"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:eye-tracking", "label": "Eye Tracking"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -94,16 +108,26 @@ public:: true
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - enables:: [[Augmented Reality]]
+  - enables:: [[Virtual Reality]]
+  - enables:: [[Mixed Reality]]
+  - uses:: [[Spatial Computing]]
+  - uses:: [[Eye Tracking]]
+  - relatedTo:: [[Haptic Feedback]]
 
 - ### Content
 
   ## Overview
 
-  X R Hardware represents an abstract concept in the metaverse ontology hierarchy.
+  XR Hardware encompasses head-mounted displays, spatial computing headsets, hand-tracking controllers, and wearable sensors that deliver augmented, mixed, and virtual reality experiences. These devices combine high-resolution display optics, inside-out tracking cameras, inertial measurement units, and low-latency wireless connectivity. Eye tracking enables foveated rendering to reduce GPU load, while haptic feedback peripherals enhance physical presence in virtual environments.
 
   #### Related Concepts
-  - [[owl:Thing]]
+  - [[Augmented Reality]]
+  - [[Virtual Reality]]
+  - [[Mixed Reality]]
+  - [[Spatial Computing]]
+  - [[Eye Tracking]]
+  - [[Haptic Feedback]]
 
 - ### Provenance
   - sources::

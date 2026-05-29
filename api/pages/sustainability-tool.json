@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:sustainability-tool",
   "domain": "infrastructure",
-  "definition": "Sustainability Tool is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A Sustainability Tool is a software or analytical instrument used to measure, monitor, and optimise the environmental impact of digital systems, virtual environments, and technology infrastructure. In the metaverse context such tools address energy monitoring of rendering workloads, carbon footprint tracking for data-centre operations, and lifecycle assessment of hardware, enabling organisations to meet regulatory and voluntary environmental commitments.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-legal-and-regulatory",
@@ -13,8 +13,8 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,11 +23,43 @@
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:carbon-accounting",
+        "label": "Carbon Accounting"
+      },
+      {
+        "id": "urn:ngm:class:carbon-footprint-measurement",
+        "label": "Carbon Footprint Measurement"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:environmental-sustainability",
+        "label": "Environmental Sustainability"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:legal-framework",
+        "label": "Legal Framework"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:technology-ecosystem",
+        "label": "Technology Ecosystem"
+      },
+      {
+        "id": "urn:ngm:class:technology-infrastructure",
+        "label": "Technology Infrastructure"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:single-sign-on",
   "domain": "infrastructure",
-  "definition": "Single Sign-On (SSO) is an authentication scheme that allows a user to log in once and gain access to multiple related but independent software systems without re-entering credentials.",
+  "definition": "Single Sign-On (SSO) is an authentication scheme that allows a user to authenticate once to a central identity provider and obtain delegated access tokens that grant entry to multiple related but independent service providers without re-entering credentials. Common protocol implementations include SAML 2.0, OAuth 2.0 with OpenID Connect, and Kerberos, each varying in how assertions are encoded and transported. SSO reduces credential exposure, simplifies user lifecycle management, and is a foundational component of enterprise identity and access management (IAM) platforms.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-security-and-identity",
@@ -14,11 +14,29 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:authentication-standards",
+        "label": "Authentication Standards"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity-management",
+        "label": "Digital Identity Management"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +45,12 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:federated-credential-exchange",
+        "label": "Federated Credential Exchange"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

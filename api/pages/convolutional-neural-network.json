@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:convolutional-neural-network",
   "domain": "artificial-intelligence",
-  "definition": "Convolutional Neural Network is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "A Convolutional Neural Network (CNN) is a feed-forward deep learning architecture that applies learned convolutional filters across spatial dimensions of input data, enabling hierarchical feature extraction from images and other grid-structured inputs. Weight sharing and local receptive fields make CNNs highly parameter-efficient for visual recognition tasks including image classification, object detection, and semantic segmentation.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-model-architecture",
@@ -14,17 +14,45 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:image-classification",
+        "label": "Image Classification"
+      },
+      {
+        "id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": []

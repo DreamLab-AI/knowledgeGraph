@@ -48,7 +48,8 @@ public:: true
   "label": "Virtual Tour",
   "definition": "An interactive 360-degree digital representation of a physical location that enables remote exploration through web browsers or VR headsets, commonly used in real estate, museums, hospitality, and education to provide immersive walkthroughs without physical presence.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -59,7 +60,22 @@ public:: true
       "label": "Immersive Experience"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:3-d-li-dar", "label": "3D LiDAR"},
+      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:education-metaverse", "label": "Education Metaverse"},
+      {"@id": "urn:ngm:class:digital-real-estate", "label": "Digital Real Estate"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -109,6 +125,10 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Immersive Experience]]
+  - **uses**: 3D LiDAR, Virtual Reality — LiDAR scanning captures spatial geometry for high-fidelity tour creation; VR headsets deliver the resulting immersive walkthrough experience.
+  - **enables**: Education Metaverse, Digital Real Estate — virtual tours are a primary entry point for remote educational field trips and property marketing.
+  - **partOf**: Metaverse — virtual tours are a lightweight, browser-accessible metaverse application category.
+  - **relatedTo**: Digital Twin — both represent physical spaces digitally; digital twins extend this to real-time data-synchronised models while tours focus on navigable media.
 
 - ### Content
 

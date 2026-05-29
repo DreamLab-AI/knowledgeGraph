@@ -92,7 +92,7 @@ public:: true
   "label": "Supply Chain Traceability",
   "definition": "Supply chain traceability employs BlockchainTechnology|blockchain and SmartContract|smart contracts to create immutable, transparent records of product journey from origin through manufacturing, distribution, and final delivery, enabling verification of authenticity and compliance at each...",
   "domain": "blockchain",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-network-component",
@@ -103,6 +103,20 @@ public:: true
       "label": "Blockchain Application"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
+      {"@id": "urn:ngm:class:hyperledger-fabric", "label": "Hyperledger Fabric"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"},
+      {"@id": "urn:ngm:class:cold-chain-monitoring", "label": "Cold Chain Monitoring"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:circular-economy", "label": "Circular Economy"},
+      {"@id": "urn:ngm:class:transparency", "label": "Transparency"}
+    ]
+  },
   "quality": 0.4,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -207,7 +221,12 @@ public:: true
   - belongs-to-domain:: [[BlockchainDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses [[Smart Contract]]
+  - uses [[Hyperledger Fabric]]
+  - enables [[Audit Trail]]
+  - enables [[Cold Chain Monitoring]]
+  - relatedTo [[Circular Economy]]
+  - relatedTo [[Transparency]]
 
 - ### Content
   - Blockchain and [[SmartContract|smart contracts]] creating immutable, transparent records of product journey from origin through manufacturing, distribution, and final delivery, enabling verification of authenticity and compliance at each stage. Systems like [[HyperledgerFabric|Hyperledger Fabric]] implementations track product provenance, environmental conditions (via [[ColdChainMonitoring|cold chain monitoring]]), and regulatory certifications providing cryptographic proof preventing [[Counterfeiting|counterfeiting]]. Applications extend across food safety, pharmaceutical verification, luxury goods authentication, and [[CircularEconomy|circular economy]] initiatives enabling product take-back and responsible resource recovery.

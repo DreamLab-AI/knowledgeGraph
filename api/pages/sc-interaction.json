@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:sc-interaction",
   "domain": "spatial-computing",
-  "definition": "Intermediate taxonomy category for interaction technology concepts within the spatial computing domain.",
+  "definition": "Interaction Technology is the spatial-computing taxonomy hub for all modalities through which users perceive and manipulate virtual and mixed-reality environments \u2014 including hand tracking, eye tracking, gaze control, haptics, voice interaction, and VR controllers. It sits alongside Display and Rendering and Platform and Environment as a peer category within spatial computing.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:spatial-computing",
@@ -13,12 +13,54 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
+  "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:hand-tracking",
+        "label": "Hand Tracking"
+      },
+      {
+        "id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      },
+      {
+        "id": "urn:ngm:class:gaze-control",
+        "label": "Gaze Control"
+      },
+      {
+        "id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      },
+      {
+        "id": "urn:ngm:class:voice-interaction",
+        "label": "Voice Interaction"
+      },
+      {
+        "id": "urn:ngm:class:vr-controllers",
+        "label": "VR Controllers"
+      },
+      {
+        "id": "urn:ngm:class:3-d-user-interface",
+        "label": "3D User Interface"
+      },
+      {
+        "id": "urn:ngm:class:haptics",
+        "label": "Haptics"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality-collaboration",
+        "label": "Augmented Reality Collaboration"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +69,20 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:sc-display-and-rendering",
+        "label": "Display and Rendering"
+      },
+      {
+        "id": "urn:ngm:class:sc-platform-and-environment",
+        "label": "Platform and Environment"
+      },
+      {
+        "id": "urn:ngm:class:immersive-interface",
+        "label": "Immersive Interface"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": []

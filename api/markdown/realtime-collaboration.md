@@ -1,12 +1,14 @@
 - ### Definition
-  - RealtimeCollaboration is a concept within the ngm domain.
+  - Realtime Collaboration is the capability for multiple distributed users to co-create, co-edit, and synchronise shared digital artefacts with sub-second latency, such that all participants observe consistent state simultaneously. It requires low-latency networking, conflict-resolution mechanisms such as CRDTs or operational transforms, and state-synchronisation protocols to reconcile concurrent edits without data loss.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:RealtimeCollaboration
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires:: [[Network Latency]], [[CRDT]], [[Multi User Systems]]
+  - enables:: [[Virtual Meeting]], [[Immersive Workspaces]], [[Distributed Collaboration]]
+  - relatedTo:: [[Metaverse and Telecollaboration]], [[Social Presence]]
 
 - ### Content
   # RealtimeCollaboration

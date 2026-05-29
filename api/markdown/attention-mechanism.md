@@ -1,5 +1,5 @@
 - ### Definition
-  - ### Primary Definition
+  - An Attention Mechanism is a neural network component that enables models to dynamically weight the relevance of different input positions when producing each output element, computing weighted combinations based on learned similarity scores. Originally introduced for sequence-to-sequence machine translation, self-attention and multi-head attention are now the core computational primitives of transformer architectures, enabling parallel processing of sequences and capturing long-range dependencies that recurrent models struggle with.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:AttentionMechanism
@@ -8,6 +8,11 @@
 
 - ### Relationships
   - bridges-to:: [[Telecollaboration]] (domain: tc)
+  - partOf:: [[Transformer Architecture]]
+  - enables:: [[Large Language Models]]
+  - enables:: [[Natural Language Processing]]
+  - uses:: [[Neural Network]]
+  - relatedTo:: [[Explainable AI]]
 
 - ### Content
   - ### Primary Definition

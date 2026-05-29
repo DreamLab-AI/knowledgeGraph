@@ -162,9 +162,10 @@ public:: true
   "@id": "urn:ngm:class:data-pipeline",
   "@type": "Class",
   "label": "Data Pipeline",
-  "definition": "A series of connected data processing stages orchestrating Data Ingestion, Data Transformation, Quality Assurance, and Data Delivery to produce actionable analytical outputs.",
+  "definition": "An automated, end-to-end sequence of connected processing stages that orchestrates data ingestion, transformation, validation, and delivery, enforcing quality assurance and error handling at each stage to produce reliable, actionable analytical outputs for downstream consumers such as machine learning systems and business intelligence platforms.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-data-management",
@@ -176,6 +177,48 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:etl-pipeline",
+        "label": "ETL Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:monitoring-dashboard",
+        "label": "Monitoring Dashboard"
+      }
+    ]
   }
 }
 ```
@@ -365,7 +408,10 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Has Part: [[Feature Engineering]], [[Quality Assurance]]
+  - Enables: [[Machine Learning]], [[Deep Learning]]
+  - Uses: [[ETL Pipeline]], [[Distributed System]]
+  - Related To: [[Blockchain]], [[Monitoring Dashboard]]
 
 - ### Content
   - Data pipelines orchestrate connected processing stages implementing data ingestion, transformation, quality assurance, and delivery, with validation, error handling, and monitoring ensuring reliable, available analytical outputs.

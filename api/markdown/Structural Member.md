@@ -42,16 +42,32 @@ public:: true
   "@id": "urn:ngm:class:structural-member",
   "@type": "Class",
   "label": "Structural Member",
-  "definition": "Structural Member is a type of Robotics in the robotics domain.",
+  "definition": "A Structural Member is a discrete load-bearing component of a robotic system's physical frame, such as a link, beam, bracket, or chassis element, that transmits forces and torques between joints or actuators. Structural members define the kinematic chain of a robot and their geometric and material properties directly constrain workspace, payload, and dynamic performance.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-actuation-and-control",
       "label": "Actuation and Control"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:robo-actuation-and-control", "label": "Actuation and Control"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:taxonomic-framework", "label": "Taxonomic Framework"},
+      {"@id": "urn:ngm:class:robo-robot-type", "label": "Robot Type"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:robo-navigation-and-planning", "label": "Navigation and Planning"},
+      {"@id": "urn:ngm:class:robo-safety-and-standards", "label": "Safety and Standards"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:systems-engineering", "label": "Systems Engineering"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -87,14 +103,17 @@ public:: true
 
 
 - ### Definition
-  - Structural Member is a concept within the robotics domain. Further enrichment pending.
+  - A Structural Member is a discrete load-bearing component of a robotic system's physical frame, such as a link, beam, bracket, or chassis element, that transmits forces and torques between joints or actuators. Structural members define the kinematic chain of a robot and their geometric and material properties directly constrain workspace, payload, and dynamic performance.
 
 - ### Semantic Classification
   - owl-class:: robotics:StructuralMember
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - partOf:: Actuation and Control
+  - relatedTo:: Taxonomic Framework, Robot Type
+  - supports:: Navigation and Planning, Safety and Standards
+  - uses:: Systems Engineering
 
 - ### Content
 

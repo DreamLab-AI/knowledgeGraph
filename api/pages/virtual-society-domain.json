@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:virtual-society-domain",
   "domain": "spatial-computing",
-  "definition": "The social, cultural, and governance frameworks that emerge within metaverse environments, encompassing virtual communities, digital citizenship, social interactions through avatars, cultural events, and the ical and regulatory considerations governing behavior and rights in persistent virtual wo...",
+  "definition": "The social, cultural, and governance frameworks that emerge within metaverse environments, encompassing virtual communities, digital citizenship, social interactions through avatars, cultural events, and the ethical and regulatory considerations governing behaviour and rights in persistent virtual worlds. It addresses questions of identity, inclusion, economic participation, and platform accountability in digitally mediated social spaces.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -17,21 +17,53 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
+      },
+      {
+        "id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:identity",
+        "label": "Identity"
+      },
+      {
+        "id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
+    ]
   },
   "wikilinks": [
     {

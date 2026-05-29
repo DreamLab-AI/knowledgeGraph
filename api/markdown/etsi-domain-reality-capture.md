@@ -5,7 +5,14 @@
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **hasPart** [[Photogrammetry]] — photogrammetry is a core reality capture technique
+  - **hasPart** [[Motion Capture Rig]] — motion capture rigs capture dynamic human movement
+  - **hasPart** [[Reality Capture System]] — reality capture systems are the primary instrumentation
+  - **enables** [[Digital Twin]] — captured spatial data feeds digital twin construction pipelines
+  - **enables** [[3D Reconstruction]] — reality capture produces 3D reconstructions from sensor data
+  - **uses** [[Depth Sensing]] — depth sensors acquire geometric data for mesh reconstruction
+  - **uses** [[Lidar]] — LiDAR provides high-precision point cloud data for scene reconstruction
+  - **uses** [[Point Cloud]] — point clouds are the canonical intermediate representation in reality capture
 - ### Content
   - The ETSI Reality Capture domain encompasses technologies and standards for digitising physical environments and objects into semantic digital representations, enabling accurate creation of digital twins and immersive content for metaverse applications.
   - ### Original Content

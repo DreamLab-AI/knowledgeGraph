@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:mathematical-science",
   "domain": "artificial-intelligence",
-  "definition": "Mathematical Science is a type of Machine Learning in the artificial intelligence domain.",
+  "definition": "Mathematical Science encompasses the formal disciplines\u2014including probability theory, linear algebra, calculus, graph theory, and cryptography\u2014that underpin machine learning model design, algorithm analysis, and blockchain cryptographic security. It provides the theoretical substrate for understanding optimisation landscapes, neural network convergence, and information-theoretic limits of AI systems.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-research-area",
@@ -18,17 +18,35 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:algorithm",
+        "label": "Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": []

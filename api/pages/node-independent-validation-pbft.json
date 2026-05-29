@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:node-independent-validation-pbft",
   "domain": "blockchain",
-  "definition": "An improved PBFT algorithm based on node-independent validation, enabling more flexible and resilient consensus.",
+  "definition": "Node-Independent Validation PBFT is a variant of Practical Byzantine Fault Tolerance in which each validator independently verifies transaction validity without delegating validation authority to a designated primary node, eliminating the single point of failure inherent in classical PBFT's primary-replica model. By distributing validation responsibility uniformly across all consensus participants, the protocol improves resilience against primary node compromise and reduces the attack surface for Byzantine behaviour in consortium and enterprise blockchain deployments.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-protocol-and-consensus",
@@ -17,21 +17,65 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:finality",
+        "label": "Finality"
+      },
+      {
+        "id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:nakamoto-consensus",
+        "label": "Nakamoto Consensus"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:tendermint-consensus",
+        "label": "Tendermint Consensus"
+      },
+      {
+        "id": "urn:ngm:class:gasper-consensus",
+        "label": "Gasper Consensus"
+      },
+      {
+        "id": "urn:ngm:class:validator-node",
+        "label": "Validator Node"
+      },
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerant-system",
+        "label": "Byzantine Fault Tolerant System"
+      },
+      {
+        "id": "urn:ngm:class:double-spending",
+        "label": "Double Spending"
+      }
+    ]
   },
   "wikilinks": [
     {

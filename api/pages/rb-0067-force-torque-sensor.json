@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:rb-0067-force-torque-sensor",
   "domain": "robotics",
-  "definition": "force torque sensor is a robotics and autonomous systems concept and a type of Force Torque Sensor.",
+  "definition": "A force-torque sensor (FT sensor) is a transducer mounted at a robot's wrist or tool centre point that simultaneously measures all six components of mechanical load: three orthogonal forces (Fx, Fy, Fz) and three orthogonal torques (Tx, Ty, Tz). These measurements enable the robot controller to monitor contact forces in real time, supporting force-controlled assembly, surface-following tasks, human-robot contact detection, and safety-critical power-and-force limiting under ISO/TS 15066. FT sensors are the primary feedback device for impedance and admittance control strategies.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-perception",
@@ -17,21 +17,56 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:rb-0053-force-control",
+        "label": "rb 0053 force control"
+      },
+      {
+        "id": "urn:ngm:class:rb-0056-impedance-control",
+        "label": "rb 0056 impedance control"
+      },
+      {
+        "id": "urn:ngm:class:rb-0057-admittance-control",
+        "label": "rb 0057 admittance control"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:cobot-safety-levels",
+        "label": "Cobot Safety Levels"
+      },
+      {
+        "id": "urn:ngm:class:rb-0066-robot-sensor",
+        "label": "rb 0066 robot sensor"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rb-0070-tactile-sensing",
+        "label": "rb 0070 tactile sensing"
+      },
+      {
+        "id": "urn:ngm:class:rb-0094-power-and-force-limiting",
+        "label": "rb 0094 power and force limiting"
+      },
+      {
+        "id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      }
+    ]
   },
   "wikilinks": [
     {

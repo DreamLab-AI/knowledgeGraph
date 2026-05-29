@@ -8,6 +8,15 @@
 
 - ### Relationships
   - is-subclass-of:: [[Digital Infrastructure]]
+  - Has Part: [[Edge Computing]]
+  - Has Part: [[Cloud Infrastructure]]
+  - Has Part: [[Distributed Systems]]
+  - Has Part: [[Real-Time Rendering]]
+  - Enables: [[Virtual World]]
+  - Enables: [[Virtual Experience]]
+  - Uses: [[Blockchain]]
+  - Uses: [[Content Delivery Network]]
+  - Requires: [[Network Latency]]
 
 - ### Content
 

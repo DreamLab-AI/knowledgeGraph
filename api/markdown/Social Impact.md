@@ -134,16 +134,34 @@ public:: true
   "@id": "urn:ngm:class:social-impact",
   "@type": "Class",
   "label": "Social Impact",
-  "definition": "The effects—positive and negative, intended and unintended—that AI systems have on individuals, communities, societies and social structures including employment, education, social cohesion, cultural practices and power distributions.",
+  "definition": "Social Impact refers to the full spectrum of effects — positive and negative, intended and unintended — that AI systems and digital technologies exert on individuals, communities, and social structures, encompassing changes to employment patterns, educational access, cultural practices, power distributions, social cohesion, and fundamental rights. Assessing social impact requires both quantitative metrics and qualitative analysis across affected stakeholder groups.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
       "label": "Governance and Safety"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:ai-impact-assessment", "label": "AI Impact Assessment"},
+      {"@id": "urn:ngm:class:social-impact-assessment-sia", "label": "Social Impact Assessment (SIA)"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:social-contract", "label": "Social Contract"},
+      {"@id": "urn:ngm:class:digital-society", "label": "Digital Society"},
+      {"@id": "urn:ngm:class:societal-and-environmental-wellbeing", "label": "Societal and Environmental Wellbeing"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:digital-society-harms", "label": "Digital Society Harms"}
+    ]
+  },
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -302,7 +320,10 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires**: AI Impact Assessment, Social Impact Assessment (SIA) — systematic assessment methodologies are required to measure social impact rigorously.
+  - **relatedTo**: Social Contract — social impact shapes and reshapes the implicit social contract between technology providers, governments, and citizens; Digital Society — social impact is experienced within and through digital society structures; Societal and Environmental Wellbeing — wellbeing is both the lens and the goal of social impact analysis.
+  - **enables**: AI Governance — evidence of social impact informs governance frameworks and regulatory design.
+  - **contrastsWith**: Digital Society Harms — Digital Society Harms focuses on the negative extreme, whereas Social Impact encompasses the full positive-negative spectrum.
 
 - ### Content
   - The effects—positive and negative, intended and unintended—that AI systems have on individuals, communities, societies and social structures including employment, education, social cohesion, cultural practices and power distributions.

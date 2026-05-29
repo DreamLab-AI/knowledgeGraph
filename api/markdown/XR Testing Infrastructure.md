@@ -48,7 +48,7 @@ public:: true
   "label": "XR Testing Infrastructure",
   "definition": "The hardware, software, and modological frameworks for validating extended reality applications, including automated testing tools, motion capture systems, user testing labs, performance profiling equipment, and simulation environments for quality assurance of VR, AR, and MR experiences.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
@@ -59,6 +59,21 @@ public:: true
       "label": "Testing Infrastructure"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:tracking-technology", "label": "Tracking Technology"},
+      {"@id": "urn:ngm:class:latency", "label": "Latency"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:quality-assurance", "label": "Quality Assurance"},
+      {"@id": "urn:ngm:class:accessibility", "label": "Accessibility"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"},
+      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
+      {"@id": "urn:ngm:class:user-research", "label": "User Research"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
@@ -109,6 +124,13 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Testing Infrastructure]]
+  - requires [[Tracking Technology]]
+  - requires [[Latency]]
+  - enables [[Quality Assurance]]
+  - enables [[Accessibility]]
+  - supports [[Extended Reality]]
+  - supports [[Immersive Experience]]
+  - supports [[User Research]]
 
 - ### Content
 

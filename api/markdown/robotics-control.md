@@ -7,6 +7,10 @@
 
 - ### Relationships
   - is-subclass-of:: ['owl:Thing']
+  - **requires**: Sensor Fusion (multi-sensor state estimation), Motion Planning (collision-free trajectory computation)
+  - **uses**: Reinforcement Learning (policy learning from environment reward), Computer Vision (scene perception and object recognition), Deep Learning (visuomotor policy networks)
+  - **enables**: Autonomous Navigation (self-directed locomotion in environments), Autonomous Robot (fully capable robotic agent)
+  - **relatedTo**: Actuator (physical output mechanism executing control commands)
 
 - ### Content
 

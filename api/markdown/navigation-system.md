@@ -1,12 +1,20 @@
 - ### Definition
-  - NavigationSystem is a concept within the ngm domain.
+  - An integrated set of hardware and software components that enables a robot or autonomous agent to determine its position, plan collision-free paths, and execute motion towards a goal. Navigation systems typically combine localisation, mapping, path planning, and obstacle avoidance modules, often relying on sensor fusion from LiDAR, cameras, and IMUs.
 
 - ### Semantic Classification
   - owl-class:: robotics:NavigationSystem
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires** [[SLAM]] — simultaneous localisation and mapping provides the real-time map and pose needed for navigation
+  - **requires** [[Sensor]] — sensors (LiDAR, cameras, IMUs) supply the perceptual data the navigation system depends on
+  - **hasPart** [[Path Planning]] — path planning is a core sub-module computing collision-free trajectories
+  - **hasPart** [[Localization]] — localisation determines the robot's current position within the map
+  - **hasPart** [[Obstacle Avoidance]] — reactive obstacle avoidance handles dynamic impediments not in the static map
+  - **uses** [[Lidar]] — LiDAR is the most common sensor modality for outdoor and large-scale navigation
+  - **uses** [[Motion Planning]] — motion planning converts high-level paths into executable joint or velocity commands
+  - **enables** [[Autonomous Vehicle]] — navigation systems are the operational core of autonomous vehicles
+  - **enables** [[Mobile Robot]] — mobile robots rely entirely on the navigation system for autonomous traversal
 
 - ### Content
   # NavigationSystem

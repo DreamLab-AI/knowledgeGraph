@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:virtual-object-pose",
   "domain": "spatial-computing",
-  "definition": "The position, orientation, and scale of a 3D object within a virtual environment, typically represented as translation (X, Y, Z coordinates), rotation (quaternion or Euler angles), and scale values that define how the object exists in 3D space.",
+  "definition": "The position, orientation, and scale of a 3D object within a virtual environment, represented as a combined transform: translation (X, Y, Z world coordinates), rotation (quaternion or Euler angles), and scale factors. Accurate pose determination underpins AR object anchoring, motion capture replay, physics simulation, and hand-object interaction in XR systems.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -17,20 +17,48 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      }
+    ],
     "relatedTo": []
   },
   "wikilinks": [

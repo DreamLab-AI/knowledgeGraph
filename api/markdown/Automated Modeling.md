@@ -46,15 +46,32 @@ public:: true
   "@id": "urn:ngm:class:automated-modeling",
   "@type": "Class",
   "label": "Automated Modeling",
-  "definition": "Automated Modeling is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "The application of AI and machine learning techniques to automatically generate, refine, or parameterise three-dimensional models and spatial environments, reducing manual content-creation overhead in metaverse, digital-twin, and spatial-computing platforms.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
+      {"@id": "urn:ngm:class:machine-learning-model", "label": "Machine Learning Model"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
+      {"@id": "urn:ngm:class:metaverse-domain", "label": "Metaverse Domain"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -96,14 +113,18 @@ public:: true
 
 
 - ### Definition
-  - Automated Modeling is a concept within the metaverse domain. Further enrichment pending.
+  - The application of AI and machine learning to automatically generate, refine, or parameterise three-dimensional models and spatial environments, reducing manual content-creation overhead in metaverse, digital-twin, and spatial-computing platforms.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:AutomatedModeling
   - owl-role:: concept
 
 - ### Relationships
-  - bridges-to:: [[Computer Vision]] (ai)
+  - bridges-to:: [[Computer Vision]]
+  - uses:: [[Computer Vision]], [[Machine Learning Model]]
+  - enables:: [[Generative AI]], [[Metaverse Domain]]
+  - dependsOn:: [[Neural Network]]
+  - relatedTo:: [[Natural Language Processing]]
 
 - ### Content
 

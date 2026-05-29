@@ -8,6 +8,12 @@
 
 - ### Relationships
   - is-subclass-of:: [[Zero Knowledge Proof]]
+  - Part Of [[Zero-Knowledge Proof]]
+  - Enables [[Privacy Preserving Blockchain]]
+  - Enables [[Blockchain Scalability]]
+  - Uses [[Elliptic Curve Cryptography]]
+  - Contrasts With [[Smart Contracts]]
+  - Related To [[Censorship Resistance]]
 
 - ### Content
 

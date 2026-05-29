@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:semantic-interoperability",
   "domain": "spatial-computing",
-  "definition": "Semantic interoperability is the capability of disparate systems to exchange data with shared, unambiguous meaning by aligning data models, ontologies, and vocabularies.",
+  "definition": "Semantic interoperability is the capability of disparate systems to exchange data with shared, unambiguous meaning by aligning data models, ontologies, and controlled vocabularies. Unlike syntactic interoperability, which concerns data format agreement, semantic interoperability requires that the interpretation of data values is consistent across system boundaries, typically enforced through shared ontologies, RDF triplestores, or standardised schema mappings. It underpins federated knowledge graphs, cross-platform data sharing, and machine-readable regulatory compliance.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-standards-and-interop",
@@ -14,11 +14,29 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:data-standards",
+        "label": "Data Standards"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-interoperability",
+        "label": "Data Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +45,16 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

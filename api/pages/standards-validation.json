@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:standards-validation",
   "domain": "spatial-computing",
-  "definition": "Processes used to determine wher development products conform to requirements and wher the final product satisfies its intended use and user needs, confirming that the correct product was built to meet stakeholder goals.",
+  "definition": "Standards validation is the process of confirming that a development product satisfies its intended use and stakeholder requirements\u2014distinct from verification, which checks only internal specification conformance. It employs testing, formal review, and compliance checks against published standards such as IEEE 1012 and FDA Computer Software Assurance to ensure the correct artefact was built.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-standards-and-interop",
@@ -17,8 +17,8 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -27,11 +27,39 @@
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      },
+      {
+        "id": "urn:ngm:class:compliance-verification",
+        "label": "Compliance Verification"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:standards-body",
+        "label": "Standards Body"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:standards-conformance-testing",
+        "label": "Standards Conformance Testing"
+      }
+    ]
   },
   "wikilinks": [
     {

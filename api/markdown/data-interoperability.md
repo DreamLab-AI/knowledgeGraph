@@ -1,12 +1,17 @@
 - ### Definition
-  - Data Interoperability is a concept within the metaverse domain. Further enrichment pending.
+  - Data Interoperability is the capability of heterogeneous systems, applications, and data sources to exchange, interpret, and act upon shared data without loss of meaning. It encompasses syntactic interoperability (common formats and protocols), semantic interoperability (shared vocabularies and ontologies), and pragmatic interoperability (agreed processes and workflows). Achieving data interoperability across distributed environments requires standards-based data formats, schema alignment, and API contracts.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:DataInteroperability
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Data Standards]]
+  - requires [[Data Format]]
+  - enables [[Interoperability]]
+  - enables [[Data Pipeline]]
+  - relatedTo [[Semantic Interoperability]]
+  - relatedTo [[Data Governance]]
 
 - ### Content
 

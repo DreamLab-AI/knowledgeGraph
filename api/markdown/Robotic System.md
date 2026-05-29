@@ -42,20 +42,56 @@ public:: true
   "@id": "urn:ngm:class:robotic-system",
   "@type": "Class",
   "label": "Robotic System",
-  "definition": "Robotic System is a type of Distributed Collaboration in the distributed collaboration domain.",
+  "definition": "An integrated assembly of mechanical, electronic, and computational subsystems — including actuators, sensors, a control architecture, and software — that perceives its environment and executes physical tasks autonomously or under remote human direction, spanning industrial, collaborative, and telepresence applications.",
   "domain": "distributed-collaboration",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:dc-telepresence",
       "label": "Telepresence"
     }
   ],
-  "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:motion-control",
+        "label": "Motion Control"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:robotic-telepresence",
+        "label": "Robotic Telepresence"
+      },
+      {
+        "@id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      }
+    ]
   }
 }
 ```
@@ -87,14 +123,20 @@ public:: true
 
 
 - ### Definition
-  - Robotic System is a concept within the telecollaboration domain. Further enrichment pending.
+  - An integrated assembly of mechanical, electronic, and computational subsystems — including actuators, sensors, a control architecture, and software — that perceives its environment and executes physical tasks autonomously or under remote human direction, spanning industrial, collaborative, and telepresence applications.
 
 - ### Semantic Classification
   - owl-class:: distributed-collaboration:RoboticSystem
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Has Part: [[Actuator]]
+  - Has Part: [[Sensor Fusion]]
+  - Has Part: [[Motion Control]]
+  - Uses: [[Robot Operating System]]
+  - Uses: [[Computer Vision]]
+  - Related To: [[Robotic Telepresence]]
+  - Related To: [[Human Robot Interaction]]
 
 - ### Content
 

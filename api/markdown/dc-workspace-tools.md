@@ -26,7 +26,7 @@ public:: true
   "@type": "Class",
   "@id": "urn:ngm:class:dc-workspace-tools",
   "label": "Workspace Tools",
-  "definition": "Intermediate taxonomy category for workspace tools concepts within the distributed collaboration domain.",
+  "definition": "Workspace Tools is the distributed-collaboration taxonomy hub for software and platform technologies that support remote and hybrid team productivity — including collaboration platforms, shared whiteboards, asynchronous video, meeting AI assistants, and immersive workspaces. It is a peer category to Telepresence and Communication Technology within the distributed collaboration domain.",
   "domain": "distributed-collaboration",
   "subClassOf": [
     {
@@ -34,8 +34,29 @@ public:: true
       "label": "Distributed Collaboration"
     }
   ],
-  "relations": {},
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:collaboration-platform", "label": "Collaboration Platform"},
+      {"@id": "urn:ngm:class:collaborative-whiteboard", "label": "Collaborative Whiteboard"},
+      {"@id": "urn:ngm:class:asynchronous-collaboration", "label": "Asynchronous Collaboration"},
+      {"@id": "urn:ngm:class:synchronous-collaboration", "label": "Synchronous Collaboration"},
+      {"@id": "urn:ngm:class:meeting-ai-assistant", "label": "Meeting AI Assistant"},
+      {"@id": "urn:ngm:class:immersive-workspaces", "label": "Immersive Workspaces"},
+      {"@id": "urn:ngm:class:virtual-office-spaces", "label": "Virtual Office Spaces"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:dc-telepresence", "label": "Telepresence"},
+      {"@id": "urn:ngm:class:dc-communication", "label": "Communication Technology"},
+      {"@id": "urn:ngm:class:remote-collaboration", "label": "Remote Collaboration"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
+    ]
+  },
+  "quality": 0.8,
   "qualityScore": 0.8,
   "maturity": "established"
 }
 ```
+
+Workspace Tools covers the full spectrum of software used by geographically distributed teams, from document co-editing and project management to AI-powered meeting transcription and virtual office environments. The category has expanded significantly with the mainstreaming of remote work, incorporating immersive workspaces that blend XR technology with familiar collaboration workflows.

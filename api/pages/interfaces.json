@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:interfaces",
   "domain": "infrastructure",
-  "definition": "Interfaces is a technology infrastructure concept and a type of User Interface.",
+  "definition": "The set of software boundaries, interaction surfaces, and protocol contracts through which humans, AI agents, and system components communicate. In the context of LLMs and spatial computing, interfaces include node-based visual editors, chat frontends, API gateways, and multimodal input layers that mediate access to underlying AI or infrastructure capabilities.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
@@ -17,21 +17,48 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:agents",
+        "label": "Agents"
+      },
+      {
+        "id": "urn:ngm:class:hardware-and-edge",
+        "label": "Hardware and Edge"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:node-based-visual-interfaces",
+        "label": "Node based visual interfaces"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:user-interface",
+        "label": "User Interface"
+      },
+      {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      }
+    ]
   },
   "wikilinks": [
     {

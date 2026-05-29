@@ -46,15 +46,31 @@ public:: true
   "@id": "urn:ngm:class:banodoco",
   "@type": "Class",
   "label": "Banodoco",
-  "definition": "Banodoco is a spatial computing concept and a type of spatial-computing.",
+  "definition": "Banodoco is a community platform focused on open-source AI video generation, bringing together model architects, fine-tuners, engineers, and artists to advance controllable creative AI. It serves as a coordination space for collaborative development of video diffusion models and related tooling under a shared artistic mission.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
+      {"@id": "urn:ngm:class:video-generation", "label": "Video Generation"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:open-source-ai", "label": "Open-Source AI"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -96,12 +112,15 @@ public:: true
 
 
 - ### Definition
-  - Banodoco is a concept within the ngm domain.
+  - Banodoco is a community platform focused on open-source AI video generation, bringing together model architects, fine-tuners, engineers, and artists to advance controllable creative AI. It serves as a coordination space for collaborative development of video diffusion models and related tooling under a shared artistic mission.
 - ### Semantic Classification
   - owl-class:: spatial-computing:Banodoco
   - owl-role:: Concept
 - ### Relationships
   - bridges-to:: [[Digital Twin]]
+  - uses:: [[Diffusion Model]], [[Video Generation]]
+  - enables:: [[Open-Source AI]]
+  - related-to:: [[Spatial Computing]]
 - ### Content
   - Here, we aim to bring **architects and fine-tuners** who are creating open source video models, together with **engineers and tinkerers** who are expanding what these technologies can do, and **ambitious artists** who want push the bounds of creative expression with AI. [[Stable Diffusion]]
   - Our hope is that bringing together talented and driven people from these different groups will motivate the open source open source AI art community to be more cohesively driven towards a collective purpose: creating the best tools and technologies for controllable artistic creation with AI:

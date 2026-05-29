@@ -1,12 +1,15 @@
 - ### Definition
-  - Financialised Agentic Memetics is a concept within the ngm domain.
+  - The phenomenon in which AI agents and autonomous social actors propagate memetic content—ideas, tokens, political positions—tied to speculative financial instruments (memecoins, programmatically-aligned tokens) that derive value from attention and community adoption rather than underlying utility. This creates feedback loops between AI terminal outputs, social media virality, and tokenised capital allocation with tangible real-world effects.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:FinancialisedAgenticMemetics
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: Crypto Token, Social Token Economy — memecoins and social tokens are the primary financial instruments through which attention is monetised
+  - **relatedTo**: Agentic AI, DAO, AI Agent System — autonomous agents and decentralised autonomous organisations are key actors in this ecosystem
+  - **enables**: Carbon Credit Token — programmatically-aligned tokens demonstrate that memetic capital can fund tangible environmental actions
+  - **dependsOn**: Blockchain — on-chain settlement and provenance verification underpin the financialisation layer
 
 - ### Content
   - Memecoins are tokens representing an idea

@@ -1,12 +1,14 @@
 - ### Definition
-  - GraphSearch is a concept within the ngm domain.
+  - Algorithms that systematically explore graph-structured state spaces to find optimal or feasible paths between configurations, forming the computational foundation for robot motion planning, task planning, and navigation. Classical methods (BFS, Dijkstra, A*) guarantee completeness or optimality on discrete graphs; sampling-based variants (RRT, PRM) address high-dimensional continuous configuration spaces.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:GraphSearch
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses: [[Graph Algorithms]], [[Knowledge Representation]]
+  - Enables: [[Motion Planning]], [[Navigation]]
+  - Related To: [[Graph Neural Network]], [[Knowledge Graph]]
 
 - ### Content
   term-id: RB-9009

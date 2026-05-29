@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:two-heads-are-better-than-one",
   "domain": "infrastructure",
-  "definition": "Two Heads Are Better Than One is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Two Heads Are Better Than One is the principle that collaborative or ensemble approaches to problem-solving outperform individual effort, applied in AI contexts to multi-agent systems, ensemble methods, and human-in-the-loop architectures. It underpins debate-based reasoning, peer-review agent patterns, and consensus mechanisms where diverse model outputs are aggregated to improve accuracy and reduce error.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-software-engineering",
@@ -13,21 +13,44 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      },
+      {
+        "id": "urn:ngm:class:ensemble-methods",
+        "label": "Ensemble Methods"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human in the Loop"
+      },
+      {
+        "id": "urn:ngm:class:collective-intelligence-system",
+        "label": "Collective Intelligence System"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:collaborative-learning",
+        "label": "Collaborative Learning"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": []

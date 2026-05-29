@@ -7,6 +7,13 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
+  - **requires** [[Security]] — adversarial robustness is a security property of AI systems
+  - **requires** [[AI Safety]] — robustness is a prerequisite for safe deployment
+  - **contrastsWith** [[Attack Vector]] — robustness defends against the attack vectors it opposes
+  - **contrastsWith** [[Vulnerability]] — robustness reduces exploitable weaknesses in models
+  - **uses** [[Deep Learning]] — adversarial training relies on deep network training procedures
+  - **relatedTo** [[Resilience]] — robustness is a component of broader system resilience
+  - **relatedTo** [[Risk]] — quantified adversarial risk informs deployment decisions
   - bridges-to:: [[Computer Vision]] (ai)
 
 - ### Content

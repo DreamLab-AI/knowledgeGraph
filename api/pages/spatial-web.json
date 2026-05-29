@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:spatial-web",
   "domain": "spatial-computing",
-  "definition": "Spatial Web is a spatial computing concept and a type of spatial-computing.",
+  "definition": "The Spatial Web is a computing paradigm that overlays machine-readable semantic information on physical locations and objects, enabling devices to understand and interact with the real world in context. It combines spatial computing, geospatial data, IoT sensors, and web standards to blur the boundary between physical and digital environments, and is regarded as a foundational layer for persistent augmented reality and metaverse experiences.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -14,15 +14,42 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:spatial-anchor",
+        "label": "Spatial Anchor"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:web3",
+        "label": "Web3"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],

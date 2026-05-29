@@ -37,15 +37,29 @@ public:: true
   "@id": "urn:ngm:class:simulation",
   "@type": "Class",
   "label": "Simulation",
-  "definition": "Simulation is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Simulation creates computational models that replicate the behaviour of real-world systems, processes, or phenomena for training, experimentation, prediction, or entertainment. In metaverse and spatial computing contexts, simulations leverage physics engines, rendering pipelines, and AI-driven procedural content generation to produce interactive virtual environments that improve learning transfer, enable safe rehearsal of dangerous scenarios, and support distributed collaboration across geographies.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:physics-engine", "label": "Physics Engine"},
+      {"@id": "urn:ngm:class:render-pipeline", "label": "Render Pipeline"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -76,12 +90,17 @@ public:: true
 
 
 - ### Definition
-  - Simulation is a concept within the ngm domain.
+  - Simulation creates computational models that replicate the behaviour of real-world systems, processes, or phenomena for training, experimentation, prediction, or entertainment. In metaverse and spatial computing contexts, simulations leverage physics engines, rendering pipelines, and AI-driven procedural content generation to produce interactive virtual environments that improve learning transfer, enable safe rehearsal of dangerous scenarios, and support distributed collaboration across geographies.
 - ### Semantic Classification
   - owl-class:: infrastructure:Simulation
   - owl-role:: Concept
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses [[Physics Engine]]
+  - uses [[Render Pipeline]]
+  - uses [[Digital Twin]]
+  - enables [[Immersive Experience]]
+  - enables [[Reinforcement Learning]]
+  - relatedTo [[Virtual Reality]]
 - ### Content
   # Simulation
   Simulation creates interactive models approximating real-world systems, processes, or phenomena for training, experimentation, entertainment, or prediction within virtual environments. Applications span diverse domains including flight simulators replicating aircraft dynamics and control systems for pilot training, medical simulations providing risk-free surgical practice with haptic feedback and realistic anatomy, industrial training simulations teaching complex machinery operation and maintenance procedures, urban planning simulations visualizing infrastructure changes and traffic patterns, and climate/ecosystem simulations modeling environmental dynamics. Simulation fidelity balances realism against computational tractability: high-fidelity simulations incorporate detailed physics, material properties, and stochastic variation matching reality closely, while lower-fidelity simulations simplify for real-time interaction or accessibility. Effective simulations validate against empirical data, quantify uncertainty, and document assumptions and limitations. Metaverse simulations leverage immersion enhancing learning transfer to real-world contexts, enable impossible or dangerous scenarios safely, support remote collaboration across distances, and generate analytics quantifying performance and identifying improvement opportunities. Emerging techniques integrate machine learning for procedural content generation, adaptive difficulty, and intelligent scenario branching.

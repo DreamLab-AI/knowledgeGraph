@@ -42,16 +42,30 @@ public:: true
   "@id": "urn:ngm:class:media-theory",
   "@type": "Class",
   "label": "Media Theory",
-  "definition": "Media Theory is a type of Distributed Collaboration in the distributed collaboration domain.",
+  "definition": "An interdisciplinary field examining how communication media shape human perception, social interaction, and cultural meaning, encompassing frameworks such as media richness theory, social presence theory, and Marshall McLuhan's medium-as-message thesis. Media theory informs the design of telecollaboration and immersive systems by analysing how channel properties affect communication fidelity and presence.",
   "domain": "distributed-collaboration",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:dc-communication",
       "label": "Communication Technology"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:telecollaboration", "label": "Telecollaboration"},
+      {"@id": "urn:ngm:class:social-presence", "label": "Social Presence"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:media-richness-theory", "label": "Media Richness Theory"},
+      {"@id": "urn:ngm:class:social-presence-theory", "label": "Social Presence Theory"},
+      {"@id": "urn:ngm:class:communication-theory", "label": "Communication Theory"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -87,14 +101,19 @@ public:: true
 
 
 - ### Definition
-  - Media Theory is a concept within the telecollaboration domain. Further enrichment pending.
+  - An interdisciplinary field examining how communication media shape human perception, social interaction, and cultural meaning, encompassing frameworks such as media richness theory, social presence theory, and Marshall McLuhan's medium-as-message thesis. Media theory informs the design of telecollaboration and immersive systems by analysing how channel properties affect communication fidelity and presence.
 
 - ### Semantic Classification
   - owl-class:: distributed-collaboration:MediaTheory
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **enables** [[Telecollaboration]] — media theory provides the conceptual grounding for effective telecollaboration design
+  - **enables** [[Social Presence]] — understanding media richness shapes how presence is engineered in virtual environments
+  - **relatedTo** [[Media Richness Theory]] — media richness is a core sub-framework within media theory
+  - **relatedTo** [[Social Presence Theory]] — social presence theory extends media theory to virtual context
+  - **relatedTo** [[Communication Theory]] — media theory is a branch of broader communication theory
+  - **supports** [[Immersive Experience]] — media theory explains how immersion amplifies communicative engagement
 
 - ### Content
 

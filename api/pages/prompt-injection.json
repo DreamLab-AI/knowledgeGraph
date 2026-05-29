@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:prompt-injection",
   "domain": "artificial-intelligence",
-  "definition": "An adversarial attack on large language models in which malicious instructions are embedded in input prompts to override the model's intended behaviour or extract sensitive information.",
+  "definition": "Prompt injection is a class of adversarial attacks against large language model systems in which attacker-controlled text embedded in the model's input context overrides or subverts the developer-specified system prompt, causing the model to follow attacker instructions rather than its intended operating constraints. Direct prompt injection occurs when a user submits malicious instructions in their own turn; indirect prompt injection occurs when the model retrieves or processes external content (web pages, documents, tool outputs) that contains embedded adversarial instructions. As LLMs are deployed in agentic pipelines with tool-calling access to external systems, prompt injection becomes a significant security boundary violation risk.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -14,20 +14,48 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:adversarial-attack",
+        "label": "Adversarial Attack"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:adversarial-testing",
+        "label": "Adversarial Testing"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:adversarial-robustness",
+        "label": "Adversarial Robustness"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:jailbreaking",
+        "label": "Jailbreaking"
+      },
+      {
+        "id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

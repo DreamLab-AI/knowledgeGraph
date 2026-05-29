@@ -58,16 +58,37 @@ public:: true
   "@id": "urn:ngm:class:pseudonymisation",
   "@type": "Class",
   "label": "Pseudonymisation",
-  "definition": "Pseudonymisation is a data protection technique defined in GDPR Article 4(5) as processing personal data such that it can no longer be attributed to a specific data subject without additional information, which is kept separately under technical and organizational measures preventing re-identific...",
+  "definition": "Pseudonymisation is a data de-identification technique, defined in GDPR Article 4(5), that processes personal data such that it can no longer be attributed to a specific data subject without additional information held separately under technical and organisational safeguards. It replaces direct identifiers—names, national identification numbers, email addresses—with pseudonyms such as tokens, encrypted identifiers, or keyed hashes, preserving data utility for analytics and machine learning while reducing but not eliminating re-identification risk. Unlike full anonymisation, pseudonymisation is reversible by an authorised party holding the supplementary mapping or key material.",
   "domain": "artificial-intelligence",
   "maturity": "established",
+  "qualityScore": 0.8,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:cryptographic-key-management", "label": "Cryptographic Key Management"},
+      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:differential-privacy", "label": "Differential Privacy"},
+      {"@id": "urn:ngm:class:k-anonymity-in-datasets", "label": "k-Anonymity in Datasets"},
+      {"@id": "urn:ngm:class:gdpr-compliance", "label": "GDPR Compliance"},
+      {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"},
+      {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy By Design"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:data-minimisation", "label": "Data Minimisation"},
+      {"@id": "urn:ngm:class:privacy-preserving-data-mining", "label": "Privacy Preserving Data Mining"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:ai-governance-and-ethics", "label": "AI Governance and Ethics"},
+      {"@id": "urn:ngm:class:ai-fairness", "label": "AI Fairness"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -133,10 +154,15 @@ public:: true
   - implemented-in-layer:: [[ConceptualLayer]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  Pseudonymisation requires Cryptographic Key Management to secure the mapping between pseudonyms and real identities, and typically uses a Cryptographic Hash Function with a secret key (HMAC) to produce deterministic pseudonyms. It is closely related to Differential Privacy and k-Anonymity in Datasets, which are complementary de-identification approaches targeting different threat models. It enables Data Minimisation by reducing the granularity of identifying information in downstream processing and supports Privacy Preserving Data Mining. Regulatory alignment with GDPR Compliance and Data Protection frameworks is central to its application, and it is an operationalisation of Privacy By Design principles.
 
 - ### Content
-  0427 Pseudonymisation — content pending enrichment.
+
+  Pseudonymisation implementation takes several practical forms. Cryptographic hashing with a secret key (keyed HMAC) transforms direct identifiers into fixed-length pseudonyms deterministically, enabling consistent linkage across datasets without exposing the original identifiers. Tokenisation replaces identifiers with randomly generated tokens stored in a secure mapping table, enabling authorised re-identification on request. Encryption-based approaches apply reversible symmetric or asymmetric encryption, with keys held in a separate, access-controlled key management system. Format-preserving encryption maintains the structural properties of the original identifier—such as postal code format or date format—for compatibility with legacy schema constraints.
+
+  Under GDPR, pseudonymised data remains personal data (Recital 26): it is still subject to data subject rights and processing restrictions, but the regulation offers processing flexibilities and reduced obligations where pseudonymisation is in place. Article 25 requires data controllers to implement pseudonymisation as a technical measure supporting data protection by design. Article 32 lists it as an appropriate security measure proportionate to risk. The combination of pseudonymisation with Data Minimisation—collecting only pseudonymised identifiers rather than full names—reduces the severity of data breach consequences, because stolen pseudonyms have limited value to an attacker without the corresponding key material.
+
+  In AI systems, pseudonymisation is applied at dataset creation—replacing subject identifiers in training data—and at inference time—masking identifiers in inputs to model APIs. Both applications reduce the risk that trained models memorise and later reproduce personal information in their outputs. However, pseudonymisation is not a complete defence against model inversion or membership inference attacks, which can sometimes recover information about training data without needing the original identifiers.
 
 - ### Provenance
   - sources:: [[GDPR Article 4(5)]], [[GDPR Article 25]], [[GDPR Article 32]]

@@ -1,12 +1,14 @@
 - ### Definition
-  - Organisational Theory is a concept within the telecollaboration domain. Further enrichment pending.
+  - The study of structural, behavioural, and governance patterns within organisations as they adopt distributed collaboration and immersive technologies. Organisational theory examines how hierarchies, communication channels, decision-making processes, and incentive structures must adapt to support decentralised, asynchronous, and spatially distributed teams operating within metaverse and mixed-reality workspaces.
 
 - ### Semantic Classification
   - owl-class:: distributed-collaboration:OrganisationalTheory
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - supports: [[Collaboration]], [[Governance Model]]
+  - enables: [[Community Governance]], [[Decentralized Governance]]
+  - relatedTo: [[Collaboration Platform]], [[Knowledge Management]]
 
 - ### Content
 

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:distributed-collaboration",
   "domain": "distributed-collaboration",
-  "definition": "Distributed Collaboration is a foundational concept in distributed collaboration that serves as a classification parent for 19 related concepts in the ontology.",
+  "definition": "Distributed Collaboration is the set of technologies, protocols, and practices that enable geographically dispersed individuals or teams to work together on shared tasks in real time or asynchronously. It encompasses communication protocols, version control systems, shared workspaces, and presence mechanisms, and serves as the umbrella concept for synchronous, asynchronous, and spatial collaboration modalities in the ontology.",
   "subClassOf": [
     {
       "id": "owl:Thing",
@@ -14,16 +14,39 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.3,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:synchronous-collaboration",
+        "label": "Synchronous Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:asynchronous-collaboration",
+        "label": "Asynchronous Collaboration"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      },
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

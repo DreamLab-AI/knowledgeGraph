@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:tax",
   "domain": "infrastructure",
-  "definition": "Tax is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Tax, in the context of this knowledge graph, refers to the statutory obligations imposed on individuals and legal entities \u2014 particularly limited companies \u2014 by HMRC and comparable revenue authorities, covering corporation tax on trading profits, self-assessment for personal income drawn as salary or dividends, and VAT registration thresholds. Compliance requires accurate bookkeeping, timely filing of CT600 returns, and annual accounts submission to Companies House.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-legal-and-regulatory",
@@ -13,11 +13,20 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:accounts",
+        "label": "Accounts"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
@@ -25,9 +34,27 @@
     "bridgesTo": [],
     "uses": [],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:legal-framework",
+        "label": "Legal Framework"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "id": "urn:ngm:class:legal-compliance",
+        "label": "Legal Compliance"
+      },
+      {
+        "id": "urn:ngm:class:digital-tax-compliance-node",
+        "label": "Digital Tax Compliance Node"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:complete-ontology-index",
   "domain": "spatial-computing",
-  "definition": "A comprehensive reference catalog documenting and interconnecting all Ontology terms, Semantic Classifications, and Knowledge Relationships across multiple domains and knowledge graphs. This index enables discovery, navigation, and semantic reasoning across the entire Knowledge Base.",
+  "definition": "A comprehensive reference catalogue documenting and interconnecting all ontology terms, semantic classifications, and knowledge relationships across multiple domains and knowledge graphs. This index enables discovery, navigation, and semantic reasoning across the entire knowledge base, serving as the master pointer for all class hierarchies and inter-domain relations.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-standards-and-interop",
@@ -18,17 +18,44 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.4,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:ontology-structure",
+        "label": "Ontology Structure"
+      },
+      {
+        "id": "urn:ngm:class:owl-class-hierarchy",
+        "label": "OWL Class Hierarchy"
+      }
+    ],
     "requires": [],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": []

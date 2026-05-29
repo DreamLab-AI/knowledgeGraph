@@ -7,7 +7,10 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **enables**: Explainable AI, Human Oversight — post-hoc methods produce the explanations that make black-box model decisions auditable by human overseers.
+  - **contrastsWith**: Intrinsic Interpretability — intrinsically interpretable models (decision trees, linear models) are transparent by design, whereas post-hoc methods retrofit transparency onto opaque models.
+  - **supports**: AI Governance, Model Interpretability — explanation outputs provide the evidence trail required by AI governance frameworks and interpretability research.
+  - **uses**: Fairness Metrics — post-hoc explanations are often used to interrogate model outputs for disparate treatment across groups, feeding fairness assessments.
 
 - ### Content
   - Interpretability techniques applied after a machine learning model has been trained, providing explanations for model behaviour and predictions without modifying the model's architecture or requiring retraining.

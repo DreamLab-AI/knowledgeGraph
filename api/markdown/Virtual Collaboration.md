@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:virtual-collaboration",
   "@type": "Class",
   "label": "Virtual Collaboration",
-  "definition": "A 3D virtual immersive environment where employees interact using avatar identities, perform work tasks, and engage in real-time teamwork through metaverse-enabled workspaces featuring interactive whiteboards, document sharing, and spatial presence capabilities.",
+  "definition": "A 3D immersive environment enabling geographically distributed teams to interact via avatar identities, perform work tasks in real time, and access shared artefacts through metaverse-enabled workspaces. Capabilities include interactive whiteboards, document co-editing, spatial audio, and persistent virtual rooms accessible via desktop, mobile, and VR/AR devices.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -64,6 +65,40 @@ public:: true
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:remote-collaboration",
+        "label": "Remote Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:immersive-communication",
+        "label": "Immersive Communication"
+      }
+    ]
   }
 }
 ```
@@ -109,6 +144,10 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Virtual Workspace]]
+  - Requires: [[Avatar]], [[Spatial Audio]]
+  - Uses: [[Metaverse]]
+  - Bridges To: [[Remote Collaboration]], [[Telecollaboration]]
+  - Related To: [[Immersive Communication]]
 
 - ### Content
 

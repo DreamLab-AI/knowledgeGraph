@@ -7,7 +7,10 @@
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Part Of: [[Transformer]], [[Encoder Decoder Architecture]]
+  - Enables: [[Natural Language Processing]]
+  - Uses: [[Deep Learning]]
+  - Related To: [[Self Attention]], [[Neural Network Layer]]
 
 - ### Content
   - {{embed ((661d5f74-f334-4872-ba92-51244c2fb490))}}

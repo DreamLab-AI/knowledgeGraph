@@ -26,7 +26,7 @@ public:: true
   "@type": "Class",
   "@id": "urn:ngm:class:dc-protocol-and-infra",
   "label": "Protocol and Infrastructure",
-  "definition": "Intermediate taxonomy category for protocol and infrastructure concepts within the distributed collaboration domain.",
+  "definition": "Taxonomy hub for the communication protocols, data-interchange formats, and underlying infrastructure that enable distributed collaboration. Encompasses decentralised messaging protocols, identity systems, content-addressed storage, version control, and the networking substrate on which remote collaborative workflows operate.",
   "domain": "distributed-collaboration",
   "subClassOf": [
     {
@@ -34,7 +34,25 @@ public:: true
       "label": "Distributed Collaboration"
     }
   ],
-  "relations": {},
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:nostr-protocol", "label": "Nostr Protocol"},
+      {"@id": "urn:ngm:class:ipfs", "label": "IPFS"},
+      {"@id": "urn:ngm:class:crdt", "label": "CRDT"},
+      {"@id": "urn:ngm:class:version-control", "label": "Version Control"},
+      {"@id": "urn:ngm:class:communication-protocol", "label": "Communication Protocol"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:dc-workspace-tools", "label": "Workspace Tools"},
+      {"@id": "urn:ngm:class:decentralized-storage", "label": "Decentralized Storage"},
+      {"@id": "urn:ngm:class:collaboration-platform", "label": "Collaboration Platform"},
+      {"@id": "urn:ngm:class:asynchronous-collaboration", "label": "Asynchronous Collaboration"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:decentralized-identifiers", "label": "Decentralized Identifiers"}
+    ]
+  },
+  "quality": 0.8,
   "qualityScore": 0.8,
   "maturity": "established"
 }

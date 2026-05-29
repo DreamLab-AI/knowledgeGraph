@@ -42,20 +42,54 @@ public:: true
   "@id": "urn:ngm:class:infrastructure-component",
   "@type": "Class",
   "label": "Infrastructure Component",
-  "definition": "Infrastructure Component is a type of Artificial Intelligence in the artificial intelligence domain.",
+  "definition": "A discrete, independently deployable unit of technical infrastructure that fulfils a specific function within a larger system, such as a compute node, network layer, storage service, or security module, and that can be composed with other components to deliver end-to-end platform capabilities.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:cat-ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
+      "@id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure"
     }
   ],
-  "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:network-component",
+        "label": "Network Component"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:networking-infrastructure",
+        "label": "Networking Infrastructure"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
+      }
+    ]
   }
 }
 ```
@@ -87,14 +121,19 @@ public:: true
 
 
 - ### Definition
-  - Infrastructure Component is a concept within the ai domain. Further enrichment pending.
+  - A discrete, independently deployable unit of technical infrastructure that fulfils a specific function within a larger system, such as a compute node, network layer, storage service, or security module, and that can be composed with other components to deliver end-to-end platform capabilities.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:InfrastructureComponent
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Part Of: [[Digital Infrastructure]]
+  - Has Part: [[Network Component]]
+  - Uses: [[Cloud Infrastructure]]
+  - Uses: [[Edge Computing]]
+  - Related To: [[Distributed Systems]]
+  - Related To: [[Networking Infrastructure]]
 
 - ### Content
 

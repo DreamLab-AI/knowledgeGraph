@@ -1,12 +1,14 @@
 - ### Definition
-  - ProjectionMapping is a concept within the ngm domain.
+  - Projection Mapping is a spatial AR display technique that aligns projected imagery precisely onto three-dimensional physical surfaces, transforming arbitrary geometry into dynamic visual canvases. It requires real-time rendering of geometry-corrected frames, spatial calibration, and surface modelling, enabling immersive installations, virtual production environments, and location-based XR experiences.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:ProjectionMapping
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses: [[Real-Time Rendering]], [[Augmented Reality]]
+  - enables: [[Immersive Experience]], [[Immersive Entertainment]]
+  - relatedTo: [[Spatial Computing]], [[AR Technology]]
 
 - ### Content
   # ProjectionMapping

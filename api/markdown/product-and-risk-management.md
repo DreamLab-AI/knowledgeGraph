@@ -1,12 +1,15 @@
 - ### Definition
-  - Product and Risk Management is a concept within the ngm domain.
+  - A framework mapping the scientific method onto lean product development, guiding AI product decisions through vision setting, market analysis, and strategic planning. It addresses SWOT evaluation, moat assessment, and risk mitigation for AI products—particularly the legal, privacy, and safety risks introduced by generative AI and the EU regulatory landscape.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:ProductAndRiskManagement
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires: [[Product Design]], [[Safety and alignment]]
+  - relatedTo: [[Politics, Law, Privacy]], [[AI Risk Management]]
+  - contrastsWith: [[AI Risk]]
+  - supports: [[AI Governance]]
 
 - ### Content
   - #Public page

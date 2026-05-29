@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:rb-0056-impedance-control",
   "domain": "robotics",
-  "definition": "impedance control is a robotics and autonomous systems concept and a type of Interaction Control.",
+  "definition": "Impedance control is a robot interaction-control strategy that regulates the dynamic relationship between end-effector force and motion by imposing a desired mechanical impedance (mass, damping, stiffness) on the robot's behaviour at the point of contact. Rather than commanding precise positions or forces independently, impedance control allows compliant, safe physical interaction with humans or uncertain environments by shaping the robot's apparent mechanical response. It is fundamental to collaborative robotics, enabling robots to yield to external forces in a controlled manner without requiring an explicit force setpoint.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
@@ -17,21 +17,57 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:rb-0067-force-torque-sensor",
+        "label": "rb 0067 force torque sensor"
+      },
+      {
+        "id": "urn:ngm:class:rb-0072-encoder",
+        "label": "rb 0072 encoder"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:rb-0054-position-control",
+        "label": "rb 0054 position control"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:rb-0007-collaborative-robot",
+        "label": "rb 0007 collaborative robot"
+      },
+      {
+        "id": "urn:ngm:class:rb-0094-power-and-force-limiting",
+        "label": "rb 0094 power and force limiting"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rb-0057-admittance-control",
+        "label": "rb 0057 admittance control"
+      },
+      {
+        "id": "urn:ngm:class:rb-0053-force-control",
+        "label": "rb 0053 force control"
+      },
+      {
+        "id": "urn:ngm:class:rb-0038-compliance",
+        "label": "rb 0038 compliance"
+      }
+    ]
   },
   "wikilinks": [
     {

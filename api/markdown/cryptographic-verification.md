@@ -1,5 +1,5 @@
 - ### Definition
-  - Cryptographic Verification is a concept within the metaverse domain. Further enrichment pending.
+  - Cryptographic Verification is the process of using cryptographic primitives—such as digital signatures, hash functions, and zero-knowledge proofs—to confirm the authenticity, integrity, and non-repudiation of data, identities, or transactions. It forms the trust foundation for blockchain systems, content authentication, and decentralised identity schemes.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:CryptographicVerification
@@ -7,6 +7,12 @@
 
 - ### Relationships
   - bridges-to:: [[Blockchain]]
+  - Uses [[Cryptographic Hash Function]]
+  - Uses [[Digital Signature]]
+  - Enables [[Content Authentication]]
+  - Enables [[Blockchain]]
+  - Related To [[Zero-Knowledge Proof]]
+  - Related To [[Public-Key Cryptography]]
 
 - ### Content
 

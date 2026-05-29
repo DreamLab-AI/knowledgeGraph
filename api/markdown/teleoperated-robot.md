@@ -1,5 +1,5 @@
 - ### Definition
-  - ### Primary Definition
+  - A Teleoperated Robot is a robotic system remotely controlled by a human operator via a communication link, combining human-level judgement with robotic precision and reach in environments inaccessible or hazardous to people. Key technical dimensions include haptic feedback, anthropomorphic dexterity, immersive operator interfaces (including VR headsets), latency management, and AI-assisted control to reduce operator cognitive load; applications span surgery, nuclear decommissioning, disaster response, and construction.
 
 - ### Semantic Classification
   - owl-class:: robotics:rb0009teleoperatedrobot
@@ -7,7 +7,10 @@
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires:: Human Robot Interaction, Perception and Sensing
+  - uses:: Haptic Feedback, Immersive Interface
+  - relatedTo:: Robotic Telepresence, Safety and Standards
+  - bridgesTo:: Telepresence
 
 - ### Content
   - ### Primary Definition

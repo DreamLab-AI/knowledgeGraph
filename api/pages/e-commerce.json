@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:e-commerce",
   "domain": "spatial-computing",
-  "definition": "E-Commerce is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "E-Commerce encompasses the buying and selling of goods and services over digital networks, including web storefronts, mobile commerce, and emerging spatial-computing contexts such as in-metaverse marketplaces. It integrates payment systems, digital identity, transaction processing, and virtual product catalogues, increasingly blurring with blockchain-based asset trading and immersive retail experiences.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -14,20 +14,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:marketplace",
+        "label": "Marketplace"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:virtual-tourism",
+        "label": "Virtual Tourism"
+      }
+    ]
   },
   "wikilinks": [
     {

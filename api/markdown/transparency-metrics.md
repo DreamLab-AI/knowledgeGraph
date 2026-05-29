@@ -8,6 +8,10 @@
 
 - ### Relationships
   - is-subclass-of:: [[Governance]]
+  - requires:: [[Audit Trail]]
+  - enables:: [[Compliance Monitoring]], [[Decision Transparency]]
+  - uses:: [[DAO Governance]], [[Blockchain]]
+  - relatedTo:: [[AI Governance Framework]], [[Compliance Framework]]
 
 - ### Content
 

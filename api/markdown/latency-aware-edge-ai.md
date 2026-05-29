@@ -8,11 +8,21 @@
   - belongs-to-domain:: [[AIEthicsDomain]]
   - implemented-in-layer:: [[ConceptualLayer]]
 
+- ### Definition
+  Latency-Aware Edge AI is a design paradigm for machine learning systems deployed at the network edge that dynamically adapts inference strategies, model selection, and compute offloading decisions to satisfy hard or soft real-time response-time deadlines. Such systems continuously monitor available time budgets, device load, and network conditions, trading accuracy for speed when necessary to maintain service-level objectives.
+
 - ### Relationships
-  - <!-- No relationships defined -->
+  Latency-Aware Edge AI **requires** specialized Inference Hardware and Edge Computing infrastructure to meet deadline constraints. It **uses** standard Inference pipelines accelerated by Edge AI Accelerators and underpinned by Deep Learning model families. The paradigm **enables** safety-critical applications such as Autonomous Vehicles (100 ms perception deadlines) and Augmented Reality experiences (16.7 ms frame budgets). It is **related to** Edge AI Systems as a broader deployment context, Bandwidth Adaptation for dynamic offloading decisions, and Computer Vision as a primary inference workload. It **contrasts with** cloud-centric GPU Compute deployments where network round-trip latency would violate real-time requirements.
 
 - ### Content
-  Latency-Aware Edge AI (AI-0446) — content pending enrichment.
+
+  Latency-Aware Edge AI represents the maturation of edge intelligence from best-effort inference toward predictable, deadline-driven operation. The core insight is that a fixed model architecture optimised for accuracy alone is insufficient when the deployment context imposes strict timing constraints. Instead, systems maintain a portfolio of models spanning different accuracy/latency trade-off points—lightweight EfficientNet variants for tight budgets, deeper ResNet architectures when the time allowance is generous—and select dynamically at runtime based on measured context.
+
+  Key technical mechanisms include early-exit neural networks that return predictions at intermediate layers when confidence thresholds are satisfied, reducing average latency without altering worst-case model depth. Adaptive offloading routes inference between the on-device accelerator and a proximate edge server by continuously estimating the network round-trip time against the remaining deadline; if the round-trip would exceed the budget, local inference proceeds regardless of quality. Cascading inference pipelines chain a cheap classifier in front of a costly specialist model, invoking the specialist only for ambiguous inputs.
+
+  Quality-of-Service guarantees are enforced through priority queues and admission control. Systems targeting P99 latency under 50 ms with jitter under 2 ms must account for thermal throttling, memory contention, and variable workload bursts. Scheduling algorithms borrow from real-time operating system theory—Earliest Deadline First and Rate Monotonic scheduling—adapted to the stochastic execution times of neural network inference on heterogeneous hardware.
+
+  The energy dimension is inseparable from latency management: on battery-powered devices, the power envelope constrains the sustainable inference rate. Duty-cycling accelerators and dynamic voltage/frequency scaling allow systems to sustain throughput over extended operation. Hardware Neural Processing Units (NPUs) integrated into mobile SoCs achieve 2–21 TOPS at 2–10 TOPS/W, making them the preferred substrate for latency-aware workloads compared to general-purpose CPU execution.
 
 - ### Provenance
   - sources::

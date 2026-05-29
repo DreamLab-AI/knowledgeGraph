@@ -94,20 +94,35 @@ public:: true
   "@id": "urn:ngm:class:robotics-domain",
   "@type": "Class",
   "label": "Robotics Domain",
-  "definition": "The Robotics Domain encompasses intelligent machines and automated systems, providing a formal ontological framework for knowledge representation, autonomous reasoning, and robotic behaviors.",
+  "definition": "The Robotics Domain is a top-level knowledge domain encompassing the design, construction, operation, and governance of intelligent machines. It provides a formal ontological framework — anchored in standards such as IEEE 1872 (CORA) — for representing robot architectures, sensor systems, actuators, motion planning, perception, and human-robot interaction, enabling unambiguous knowledge transfer among humans, robots, and AI systems.",
   "domain": "robotics",
   "maturity": "emerging",
+  "qualityScore": 0.75,
+  "quality": 0.75,
   "subClassOf": [
-    {
-      "@id": "urn:ngm:class:robo-actuation-and-control",
-      "label": "Actuation and Control"
-    },
     {
       "@id": "urn:ngm:class:technology-domain",
       "label": "Technology Domain"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:robo-actuation-and-control", "label": "Actuation and Control"},
+      {"@id": "urn:ngm:class:robo-human-robot-interaction", "label": "Human-Robot Interaction"},
+      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
+      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
+      {"@id": "urn:ngm:class:perception-system", "label": "Perception System"},
+      {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"},
+      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

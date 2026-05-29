@@ -8,6 +8,14 @@
 
 - ### Relationships
   - is-subclass-of:: [[Content Authentication]]
+  - Implements [[Content Authentication]]
+  - Implements [[Open Standard]]
+  - Supports [[Digital Rights Management]]
+  - Supports [[Provenance Tracking]]
+  - Supports [[Content Moderation]]
+  - Uses [[Cryptography]]
+  - Uses [[Signal Processing]]
+  - Enables [[Digital Asset]]
 
 - ### Content
 

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ether-cat",
   "domain": "robotics",
-  "definition": "An Ethernet-based fieldbus protocol designed for deterministic, real-time communication between industrial controllers and actuators with sub-microsecond synchronisation.",
+  "definition": "EtherCAT (Ethernet for Control Automation Technology) is an open, IEC 61158-standardised real-time Ethernet fieldbus protocol developed by Beckhoff Automation, designed for deterministic, high-bandwidth communication between industrial master controllers and distributed slave devices such as servo drives, I/O modules, and encoders. Its distinctive on-the-fly processing architecture allows each slave node to read addressed data and insert its response while the Ethernet frame propagates through the network, achieving sub-microsecond synchronisation across distributed axes with minimal wiring complexity. EtherCAT is governed by the EtherCAT Technology Group (ETG) and is widely deployed in robotics, CNC machining, and semiconductor manufacturing.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
@@ -14,20 +14,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:motion-control",
+        "label": "Motion Control"
+      },
+      {
+        "id": "urn:ngm:class:real-time",
+        "label": "Real Time"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:industrial-robot",
+        "label": "Industrial Robot"
+      },
+      {
+        "id": "urn:ngm:class:servo-motor",
+        "label": "Servo Motor"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "IndustrialAutomation"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

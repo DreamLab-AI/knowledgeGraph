@@ -42,9 +42,9 @@ public:: true
   "@id": "urn:ngm:class:educational-technology",
   "@type": "Class",
   "label": "Educational Technology",
-  "definition": "Educational Technology in the metaverse context encompasses the tools, platforms, and modologies for delivering learning experiences in immersive virtual environments.",
+  "definition": "Educational Technology in the metaverse context encompasses the tools, platforms, and methodologies for delivering learning experiences in immersive virtual environments.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -55,6 +55,20 @@ public:: true
       "label": "Metaverse Technology"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
+      {"@id": "urn:ngm:class:simulation", "label": "Simulation"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:immersive-learning", "label": "Immersive Learning"},
+      {"@id": "urn:ngm:class:collaborative-learning", "label": "Collaborative Learning"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:virtual-classroom", "label": "Virtual Classroom"},
+      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
@@ -100,9 +114,15 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Metaverse Technology]]
+  - uses [[Virtual Reality]]
+  - uses [[Simulation]]
+  - enables [[Immersive Learning]]
+  - enables [[Collaborative Learning]]
+  - relatedTo [[Virtual Classroom]]
+  - relatedTo [[Extended Reality]]
 
 - ### Content
-  Educational Technology — content pending enrichment.
+  Educational Technology in the metaverse encompasses platforms, tools, and pedagogical methods designed to deliver learning through immersive, interactive virtual environments. Virtual classrooms built on spatial computing infrastructure replicate physical educational spaces whilst adding affordances impossible in physical settings: instant environment switching, scaled visualisations of molecular structures or historical events, and synchronous collaboration across geographic boundaries. Simulation-based training — from surgical skills to industrial safety procedures — uses photorealistic virtual environments to reduce cost and risk relative to real-world practice. Extended reality modalities (VR, AR, MR) support diverse learning styles; haptic feedback devices reinforce kinaesthetic learning. Collaborative learning is enhanced by shared virtual spaces where distributed learners co-construct knowledge via avatars and spatial audio. Challenges include equitable device access, motion sickness mitigation, and curriculum alignment with institutional standards.
 
 - ### Provenance
   - sources::

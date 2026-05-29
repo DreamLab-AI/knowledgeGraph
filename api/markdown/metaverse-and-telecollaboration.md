@@ -1,12 +1,18 @@
 - ### Definition
-  - Metaverse and Telecollaboration is a concept within the ngm domain.
+  - The convergence of persistent, shared virtual environments with real-time remote collaboration technologies, enabling geographically distributed participants to interact through embodied avatars, spatial audio, and shared 3D workspaces. Metaverse telecollaboration combines immersive XR hardware, low-latency networking, avatar systems, and spatial computing to replicate the social and spatial cues of co-presence across distances.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:MetaverseAndTelecollaboration
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Avatar System]]
+  - requires [[Latency]]
+  - requires [[Digital Infrastructure]]
+  - uses [[Extended Reality (XR)]]
+  - uses [[3D Content Pipeline]]
+  - relatedTo [[Immersive Communication]]
+  - relatedTo [[Spatial Audio]]
 
 - ### Content
   - #Public page automatically published

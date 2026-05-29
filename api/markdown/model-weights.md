@@ -1,5 +1,5 @@
 - ### Definition
-  - ### Primary Definition
+  - The learnable numerical parameters in a neural network that encode the connection strengths adjusted during training via backpropagation to minimise loss. Model weights constitute the primary artefact of training and are the target of fine-tuning, quantisation, pruning, and transfer learning; their distribution and magnitude critically determine model capability and safety.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:ModelWeights
@@ -7,7 +7,13 @@
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Requires [[Training]]
+  - Requires [[Backpropagation]]
+  - Part Of [[Neural Network]]
+  - Enables [[Transfer Learning]]
+  - Enables [[Fine Tuning]]
+  - Related To [[Network Architecture]]
+  - Related To [[AI Safety]]
 
 - ### Content
   - ### Primary Definition

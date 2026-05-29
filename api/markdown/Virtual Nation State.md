@@ -48,7 +48,8 @@ public:: true
   "label": "Virtual Nation State",
   "definition": "A digital sovereign entity existing within metaverse platforms that offers forms of virtual citizenship, governance structures, economic systems, and legal frameworks, potentially providing e-residency, digital identity, and participation in virtual economies independent of geographic territory.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
@@ -64,6 +65,42 @@ public:: true
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "@id": "urn:ngm:class:governance-model",
+        "label": "Governance Model"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "@id": "urn:ngm:class:dao",
+        "label": "DAO"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      }
+    ]
   }
 }
 ```
@@ -109,6 +146,13 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Digital Governance]]
+  - Uses [[Decentralised Identity]]
+  - Uses [[DAO]]
+  - Uses [[Smart Contract]]
+  - Enables [[Digital Identity]]
+  - Enables [[Governance Model]]
+  - Related To [[Metaverse]]
+  - Related To [[Identity Management]]
 
 - ### Content
 

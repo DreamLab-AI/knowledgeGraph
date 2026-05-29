@@ -7,7 +7,11 @@
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 
 - ### Relationships
-  - bridges-to:: [[Edge Computing]] (domain: ngm)
+  - Part of [[Neural Network]] as a mandatory computational primitive within each neuron
+  - Requires [[Backpropagation]] for differentiable gradient computation through each unit
+  - Enables [[Deep Learning]] by introducing the non-linearity necessary for deep stacking
+  - Related to [[Gradient Descent]] which optimises weights exploiting activation derivatives
+  - Related to [[Neural Network Layer]] as the structural unit in which activations reside
 
 - ### Content
   - ### Primary Definition

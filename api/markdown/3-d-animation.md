@@ -1,12 +1,18 @@
 - ### Definition
-  - 3D Animation is a concept within the ngm domain.
+  - 3D Animation is the discipline of creating motion in three-dimensional digital environments using techniques such as keyframe animation, motion capture, and procedural simulation. It underpins character movement, environmental dynamics, and cinematic sequences in spatial computing platforms, game engines, and metaverse applications.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:3D Animation
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses [[Inverse Kinematics]] for skeletal character rigging
+  - Uses [[Motion Capture]] to record and retarget real-world movement
+  - Uses [[Physics Simulation]] for cloth, fluid, and rigid-body dynamics
+  - Requires [[Game Engine]] for real-time playback and blending
+  - Requires [[3D Asset]] as the geometric substrate being animated
+  - Enables [[Digital Twin]] by providing animated behavioural representations
+  - Related to [[Rendering Pipeline]] which composites animated frames into images
 
 - ### Content
 

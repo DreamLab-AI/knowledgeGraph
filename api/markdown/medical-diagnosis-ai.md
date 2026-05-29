@@ -7,7 +7,12 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses [[Deep Learning]]
+  - Uses [[Knowledge Graph]]
+  - Enables [[Clinical Decision Support]]
+  - Enables [[Treatment Planning AI]]
+  - Related To [[Explainable AI]]
+  - Related To [[Healthcare AI]]
 
 - ### Content
   - Medical Diagnosis AI refers to artificial intelligence systems that automate or assist in the diagnostic process by analysing patient symptoms, medical history, laboratory results, imaging findings, and other clinical data to generate differential diagnoses, diagnostic hypotheses, and diagnostic recommendations. These systems employ machine learning, knowledge representation, and clinical reasoning algorithms validated against expert physician performance.

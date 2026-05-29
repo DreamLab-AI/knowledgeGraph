@@ -6,8 +6,9 @@
   - owl-role:: concept
 
 - ### Relationships
-  - is-subclass-of:: ['owl:Thing']
-  - bridges-to:: [[Blockchain]] (domain: bc)
+  - enables:: [[Data Provenance]], [[AI Governance]], [[Transparency (OECD)]]
+  - supports:: [[AI Audit]], [[Data Governance]]
+  - uses:: [[AI Model Card]], [[Training Dataset Metadata]]
 
 - ### Content
 

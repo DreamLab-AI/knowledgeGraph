@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:visual-effects",
   "domain": "spatial-computing",
-  "definition": "Visual Effects is a spatial computing concept and a type of spatial-computing.",
+  "definition": "Visual Effects (VFX) in spatial and real-time contexts encompasses the computational techniques applied after or during scene rendering to enhance visual fidelity. These include particle systems for fire and smoke simulation, post-processing stacks (bloom, depth-of-field, ambient occlusion), procedural shader effects, and screen-space reflections. Real-time VFX are increasingly GPU-accelerated via compute shaders and physically-based rendering pipelines.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-display-and-rendering",
@@ -14,19 +14,46 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:shader",
+        "label": "Shader"
+      },
+      {
+        "id": "urn:ngm:class:particle-systems",
+        "label": "Particle Systems"
+      },
+      {
+        "id": "urn:ngm:class:post-processing",
+        "label": "Post Processing"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
     "relatedTo": []
   },
   "wikilinks": [],

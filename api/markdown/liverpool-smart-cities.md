@@ -1,5 +1,5 @@
 - ### Definition
-  - Liverpool's smart cities initiative and technology sector focusing on Internet of Things, urban technology, and digital infrastructure.
+  Liverpool Smart Cities refers to the Merseyside city region's integrated programme of digital innovation, IoT deployment, and sustainable urban infrastructure targeting net-zero carbon status by 2030 and 100,000 new jobs by 2040. It encompasses city council strategy, university-led research (University of Liverpool, LJMU, Edge Hill), the Horizons innovation programme backed by the UK Shared Prosperity Fund, and partnerships driving smart transport, digital health, and climate technology.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:LiverpoolSmartCities
@@ -7,7 +7,11 @@
   - belongs-to-domain:: [[UK Tech Ecosystem]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart:: [[IoT Sensor Network]], [[Digital Infrastructure]], [[Edge AI for Smart Cities]]
+  - partOf:: [[North England Innovation Corridor]], [[UK Tech Ecosystem]]
+  - relatedTo:: [[Manchester Tech Cluster]], [[Leeds Digital Hub]], [[Newcastle AI & Health Innovation]], [[Sheffield Advanced Manufacturing]]
+  - requires:: [[Io T Sensors]], [[Sensor Data]]
+  - enables:: [[Industrial IoT]], [[IoT AI Integration]]
 
 - ### Content
 

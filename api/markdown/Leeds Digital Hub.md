@@ -50,16 +50,33 @@ public:: true
   "@id": "urn:ngm:class:leeds-digital-hub",
   "@type": "Class",
   "label": "Leeds Digital Hub",
-  "definition": "Leeds' digital technology sector focusing on health technology innovation, financial services technology, and digital creative industries.",
+  "definition": "Leeds Digital Hub is a regional technology cluster centred in Leeds city centre, UK, that concentrates collaborative workspace, mentoring, and innovation infrastructure to support digital startups and established technology companies in healthtech, fintech, and digital creative sectors. It operates as a node within the broader UK Tech Ecosystem and North England Innovation Corridor, leveraging anchor institutions such as the University of Leeds and Leeds Teaching Hospitals NHS Trust to translate research into commercial ventures.",
   "domain": "infrastructure",
   "maturity": "established",
+  "qualityScore": 0.8,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:uk-tech-ecosystem", "label": "UK Tech Ecosystem"},
+      {"@id": "urn:ngm:class:north-england-innovation-corridor", "label": "North England Innovation Corridor"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:digital-economy", "label": "Digital Economy"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:digital-economy", "label": "Digital Economy"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:uk-tech-ecosystem", "label": "UK Tech Ecosystem"},
+      {"@id": "urn:ngm:class:north-england-innovation-corridor", "label": "North England Innovation Corridor"},
+      {"@id": "urn:ngm:class:digital-economy", "label": "Digital Economy"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -105,7 +122,7 @@ public:: true
 
 
 - ### Definition
-  - Leeds' digital technology sector focusing on health technology innovation, financial services technology, and digital creative industries.
+  Leeds Digital Hub is a regional technology cluster in Leeds city centre that concentrates collaborative workspace, mentoring, and innovation infrastructure for digital startups and established technology companies in healthtech, fintech, and digital creative sectors. It is a node within the broader UK Tech Ecosystem and North England Innovation Corridor, anchored by the University of Leeds and Leeds Teaching Hospitals NHS Trust.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:LeedsDigitalHub
@@ -113,7 +130,9 @@ public:: true
   - belongs-to-domain:: [[UK Tech Ecosystem]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - partOf:: [[UK Tech Ecosystem]], [[North England Innovation Corridor]]
+  - enables:: [[Digital Economy]]
+  - relatedTo:: [[UK Tech Ecosystem]], [[North England Innovation Corridor]], [[Digital Economy]]
 
 - ### Content
 

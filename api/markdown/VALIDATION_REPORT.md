@@ -46,16 +46,29 @@ public:: true
   "@id": "urn:ngm:class:validation-report",
   "@type": "Class",
   "label": "VALIDATION_REPORT",
-  "definition": "A systematic assessment document verifying ontology compliance, data quality, and structural integrity across knowledge graphs and semantic systems.",
+  "definition": "A Validation Report is a systematic assessment document verifying ontology compliance, data quality, and structural integrity across knowledge graphs and semantic systems. It checks that class hierarchies, relation targets, definition coverage, and maturity fields meet specified quality thresholds, producing actionable findings for enrichment pipelines.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:knowledge-graph-construction", "label": "Knowledge Graph Construction"},
+      {"@id": "urn:ngm:class:documentation-standards", "label": "Documentation Standards"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:compliance-verification", "label": "Compliance Verification"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -96,13 +109,15 @@ public:: true
 
 
 - ### Definition
-  - A systematic assessment document verifying ontology compliance, data quality, and structural integrity across knowledge graphs and semantic systems. Validation reports document conformance to standards, identify inconsistencies, and provide recommendations for [[QualityAssurance|quality improvements]].
+  A Validation Report is a systematic assessment document verifying ontology compliance, data quality, and structural integrity across knowledge graphs and semantic systems. It checks that class hierarchies, relation targets, definition coverage, and maturity fields meet specified quality thresholds, producing actionable findings for enrichment pipelines. Validation reports document conformance to standards, identify inconsistencies, and provide recommendations for [[QualityAssurance|quality improvements]].
 - ### Semantic Classification
   - owl-class:: spatial-computing:VALIDATION_REPORT
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: Knowledge Graph Construction, Documentation Standards
+  - **enables**: Compliance Verification
+  - **relatedTo**: Ontology, Knowledge Graph
 - ### Content
   - Validation reports document conformance assessment results verifying systems meet quality standards through systematic testing and defect identification.
   - ### Original Content

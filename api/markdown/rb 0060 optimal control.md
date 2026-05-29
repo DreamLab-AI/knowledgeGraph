@@ -42,9 +42,9 @@ public:: true
   "@id": "urn:ngm:class:rb-0060-optimal-control",
   "@type": "Class",
   "label": "rb 0060 optimal control",
-  "definition": "optimal control is a robotics and autonomous systems concept and a type of Control Theory.",
+  "definition": "Optimal control is a branch of control theory that computes control inputs minimising (or maximising) a performance criterion — such as energy consumption, time, or tracking error — subject to system dynamics and constraints. In robotics, optimal control underpins trajectory optimisation, model predictive control, and reinforcement learning-based policy synthesis.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-actuation-and-control",
@@ -55,7 +55,26 @@ public:: true
       "label": "Control Theory"
     }
   ],
-  "quality": 0.5,
+  "qualityScore": 0.7,
+  "quality": 0.7,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:rb-0062-model-predictive-control", "label": "rb 0062 model predictive control"},
+      {"@id": "urn:ngm:class:rb-0047-feedback-control", "label": "rb 0047 feedback control"},
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:rb-0030-jacobian-matrix", "label": "rb 0030 jacobian matrix"},
+      {"@id": "urn:ngm:class:rb-0022-robot-dynamics", "label": "rb 0022 robot dynamics"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:trajectory-planning", "label": "Trajectory Planning"},
+      {"@id": "urn:ngm:class:rb-0051-trajectory-planning", "label": "rb 0051 trajectory planning"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:rb-0064-computed-torque-control", "label": "rb 0064 computed torque control"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -91,7 +110,7 @@ public:: true
 
 
 - ### Definition
-  - ### Primary Definition
+  - **Optimal control** formulates robot motion and actuation as an optimisation problem: find a control trajectory that drives the system from an initial to a goal state while minimising a cost functional (e.g., joint torques, execution time, or deviation from a reference). Classical methods include Pontryagin's minimum principle and dynamic programming; practical implementations in robotics use model predictive control (rb 0062) and computed-torque control (rb 0064).
 
 - ### Semantic Classification
   - owl-class:: robotics:rb0060optimalcontrol
@@ -99,7 +118,9 @@ public:: true
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Directly instantiated by model predictive control (rb 0062) which solves optimal control problems over a receding time horizon.
+  - Depends on accurate robot dynamics models (rb 0022) and uses the Jacobian matrix (rb 0030) for gradient computations.
+  - Connects to reinforcement learning as a model-based policy synthesis framework.
 
 - ### Content
   - ### Primary Definition

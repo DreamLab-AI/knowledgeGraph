@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:programming-language",
   "domain": "artificial-intelligence",
-  "definition": "Programming Languages for AI are formal languages designed to express algorithms, models, and computations for artificial intelligence applications.",
+  "definition": "A formal notation system used to specify algorithms, data structures, and computational models for AI and software applications, characterised by defined syntax and semantics; prominent examples include Python for machine-learning ecosystems, Julia for high-performance numerical computing, and domain-specific languages embedded in ML frameworks.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -13,21 +13,48 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:open-source-framework",
+        "label": "Open Source Framework"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:software-development-process",
+        "label": "Software Development Process"
+      },
+      {
+        "id": "urn:ngm:class:ai-model-architecture",
+        "label": "AI Model Architecture"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ]
   },
   "wikilinks": [
     {

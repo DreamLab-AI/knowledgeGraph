@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:epoch",
   "domain": "artificial-intelligence",
-  "definition": "Epoch is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "In machine learning, an Epoch is one complete pass through the entire training dataset, during which model parameters are updated after each constituent batch. The number of epochs is a primary training hyperparameter: too few yield underfitting, whilst too many risk overfitting\u2014a trade-off managed by techniques such as early stopping and learning-rate scheduling.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -13,21 +13,49 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:batch-size",
+        "label": "Batch Size"
+      }
+    ],
     "requires": [],
     "enables": [],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:early-stopping",
+        "label": "Early Stopping"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:hyperparameter",
+        "label": "Hyperparameter"
+      }
+    ]
   },
   "wikilinks": [
     {

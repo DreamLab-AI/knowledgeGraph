@@ -46,16 +46,31 @@ public:: true
   "@id": "urn:ngm:class:distributor",
   "@type": "Class",
   "label": "Distributor",
-  "definition": "A natural or legal person in the supply chain, other than the provider or the importer, that makes an AI system available on the Union market.",
+  "definition": "A Distributor is a natural or legal person in the AI supply chain, other than the provider or the importer, that makes an AI system available on the Union market without modifying it. Distributors bear verification and cooperation duties under the EU AI Act Article 24, including confirming CE marking, ensuring documentation completeness, and informing authorities of suspected non-compliance.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
       "label": "Governance and Safety"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:supply-chain", "label": "Supply Chain"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:provider", "label": "Provider"},
+      {"@id": "urn:ngm:class:importer", "label": "Importer"},
+      {"@id": "urn:ngm:class:deployer", "label": "Deployer"},
+      {"@id": "urn:ngm:class:market-surveillance-authority", "label": "Market Surveillance Authority"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:conformity-assessment", "label": "Conformity Assessment"},
+      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -104,7 +119,9 @@ public:: true
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **partOf**: [[Supply Chain]]
+  - **relatedTo**: [[Provider]], [[Importer]], [[Deployer]], [[Market Surveillance Authority]]
+  - **requires**: [[Conformity Assessment]], [[Regulatory Compliance]]
 - ### Content
   - A natural or legal person in the supply chain, other than the provider or the importer, that makes an AI system available on the Union market.
   ## Source

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:taxonomic-framework",
   "domain": "robotics",
-  "definition": "Taxonomic Framework is a type of Robotics in the robotics domain.",
+  "definition": "A Taxonomic Framework is a principled hierarchical classification system that organises concepts within a domain into superclass-subclass relationships, enabling consistent identification, comparison, and retrieval of entities. In the robotics ontology it structures robot types, actuators, sensors, and control strategies into a formal class hierarchy that supports OWL reasoning, SPARQL queries, and interoperability across ontologies.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
@@ -13,21 +13,53 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:robo-robot-type",
+        "label": "Robot Type"
+      },
+      {
+        "id": "urn:ngm:class:robo-actuation-and-control",
+        "label": "Actuation and Control"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:domain-ontology",
+        "label": "Domain Ontology"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:semantic-web-standards",
+        "label": "Semantic Web Standards"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:structural-member",
+        "label": "Structural Member"
+      },
+      {
+        "id": "urn:ngm:class:systems-engineering",
+        "label": "Systems Engineering"
+      }
+    ]
   },
   "wikilinks": [
     {

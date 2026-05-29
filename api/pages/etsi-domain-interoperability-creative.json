@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:etsi-domain-interoperability-creative",
   "domain": "infrastructure",
-  "definition": "The ETSI functional domain classification addressing the intersection of Interoperability and Creative domains within metaverse and extended reality ecosystems, encompassing technical standards, protocols, and frameworks that enable creative digital content\u2014including three-dimensional models, tex...",
+  "definition": "The ETSI Domain Interoperability/Creative is a functional domain classification defined by the European Telecommunications Standards Institute that addresses the intersection of technical interoperability standards and creative content workflows within metaverse and extended reality ecosystems. It encompasses the standards, protocols, and toolchains\u2014including glTF 2.0, USD, WebXR, OpenXR, and MPEG-I Scene Description\u2014that enable digital creative assets such as three-dimensional models, animations, and immersive environments to be authored once and deployed across heterogeneous platforms without proprietary lock-in or fidelity degradation. The domain integrates digital rights management frameworks and semantic metadata schemas to preserve creator attribution, licensing terms, and provenance across cross-platform distribution pipelines.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-network-and-comms",
@@ -13,21 +13,74 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:metaverse-content-pipeline",
+        "label": "Metaverse Content Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:3-d-asset-standard",
+        "label": "3D Asset Standard"
+      },
+      {
+        "id": "urn:ngm:class:gltf-standard",
+        "label": "Gltf Standard"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:interoperability-framework",
+        "label": "Interoperability Framework"
+      },
+      {
+        "id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:3-d-animation",
+        "label": "3D Animation"
+      },
+      {
+        "id": "urn:ngm:class:digital-rights-management",
+        "label": "Digital Rights Management"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:extended-reality-xr",
+        "label": "Extended Reality (XR)"
+      },
+      {
+        "id": "urn:ngm:class:3-d-asset",
+        "label": "3D Asset"
+      },
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      }
+    ]
   },
   "wikilinks": [
     {

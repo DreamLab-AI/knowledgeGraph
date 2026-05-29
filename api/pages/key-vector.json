@@ -5,29 +5,82 @@
   "public": true,
   "classIri": "urn:ngm:class:key-vector",
   "domain": "artificial-intelligence",
-  "definition": "Key Vector is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "In transformer-based neural networks, a Key Vector is one of three learned linear projections of an input token embedding\u2014alongside the Query Vector and Value Vector\u2014that together implement the scaled dot-product attention mechanism. The key vector represents what a given token has to offer: each query\u2013key dot product measures the compatibility or relevance between a querying token and every other token in the sequence, with the resulting attention weights determining how much each value vector contributes to the output representation.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
+      "id": "urn:ngm:class:neural-network-component",
+      "label": "Neural Network Component"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:token-embedding",
+        "label": "Token Embedding"
+      },
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:embedding-model",
+        "label": "Embedding Model"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:multi-head-attention",
+        "label": "Multi-Head Attention"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:query-vector",
+        "label": "Query Vector"
+      },
+      {
+        "id": "urn:ngm:class:value-vector",
+        "label": "Value Vector"
+      },
+      {
+        "id": "urn:ngm:class:query-key-value",
+        "label": "Query Key Value"
+      },
+      {
+        "id": "urn:ngm:class:self-attention",
+        "label": "Self Attention"
+      },
+      {
+        "id": "urn:ngm:class:positional-encoding",
+        "label": "Positional Encoding"
+      }
+    ]
   },
   "wikilinks": [
     {

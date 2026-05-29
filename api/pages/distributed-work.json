@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:distributed-work",
   "domain": "infrastructure",
-  "definition": "Distributed Work is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Organisational models, practices, and enabling technologies that allow geographically dispersed teams to collaborate effectively whilst maintaining productivity, cohesion, and wellbeing. Distributed work encompasses remote, hybrid, and globally distributed team configurations, supported by asynchronous communication norms, shared documentation practices, and virtual presence technologies ranging from video conferencing to XR meeting spaces.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-software-engineering",
@@ -13,21 +13,53 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:collaboration-platform",
+        "label": "Collaboration Platform"
+      },
+      {
+        "id": "urn:ngm:class:asynchronous-collaboration",
+        "label": "Asynchronous Collaboration"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:xr-meeting-space",
+        "label": "XR Meeting Space"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:virtual-collaboration",
+        "label": "Virtual Collaboration"
+      }
+    ]
   },
   "wikilinks": [
     {

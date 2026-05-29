@@ -106,16 +106,39 @@ public:: true
   "@id": "urn:ngm:class:conflict-mineral-tracking",
   "@type": "Class",
   "label": "Conflict Mineral Tracking",
-  "definition": "Blockchain applications addressing ical sourcing challenges for 3TG minerals (tin, tantalum, tungsten, gold) used in electronics, ensuring minerals don't finance armed conflict or human rights abuses in DRC and adjoining regions.",
+  "definition": "Conflict Mineral Tracking denotes the use of blockchain technology to record and verify the provenance of 3TG minerals (tin, tantalum, tungsten, gold) through complex supply chains, ensuring they do not finance armed conflict or human rights abuses in the Democratic Republic of Congo and adjoining regions. Implementations combine immutable custody chains, cryptographic material fingerprinting, and smart-contract-enforced compliance checks to satisfy regulatory obligations including Dodd-Frank Section 1502 and the EU Conflict Minerals Regulation while enabling premium pricing for verified responsible sourcing.",
   "domain": "blockchain",
   "maturity": "established",
+  "qualityScore": 0.8,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-network-component",
       "label": "Network Component"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:hyperledger-fabric", "label": "Hyperledger Fabric"},
+      {"@id": "urn:ngm:class:permissioned-blockchain", "label": "Permissioned Blockchain"},
+      {"@id": "urn:ngm:class:smart-contracts", "label": "Smart Contracts"},
+      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:provenance-tracking", "label": "Provenance Tracking"},
+      {"@id": "urn:ngm:class:supply-chain-traceability", "label": "Supply Chain Traceability"},
+      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:supply-chain-management", "label": "Supply Chain Management"},
+      {"@id": "urn:ngm:class:compliance-verification", "label": "Compliance Verification"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:supply-chain-blockchain", "label": "Supply Chain Blockchain"},
+      {"@id": "urn:ngm:class:consortium-blockchain", "label": "Consortium Blockchain"},
+      {"@id": "urn:ngm:class:esg-reporting", "label": "ESG Reporting"},
+      {"@id": "urn:ngm:class:blockchain-compliance", "label": "Blockchain Compliance"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -231,15 +254,13 @@ public:: true
 
 
 - ### Definition
-  - Blockchain applications addressing ethical sourcing challenges for 3TG minerals (tin, tantalum, tungsten, gold) used in electronics, ensuring minerals don't finance armed conflict or human rights abuses in DRC and adjoining regions. Over 6,000 companies spend £500 million annually on conflict mineral due diligence under Dodd-Frank Section 1502 and EU Conflict Minerals Regulation, with blockchain implementations by Circulor (Volvo, VW, Tesla), RCS Global Better Sourcing (Apple, Samsung), and Everledger demonstrating 40-60% reductions in due diligence costs through automated verification, immutable custody chains, and cryptographic material fingerprinting that enable 5-15% premium pricing for verified responsible sourcing whilst dramatically reducing human rights abuses.
-
-- ### Semantic Classification
-  - owl-class:: blockchain:ConflictMineralTracking
-  - owl-role:: Concept
-  - belongs-to-domain:: [[BlockchainDomain]]
+  Conflict Mineral Tracking denotes the use of blockchain technology to record and verify the provenance of 3TG minerals (tin, tantalum, tungsten, gold) through complex supply chains, ensuring they do not finance armed conflict or human rights abuses in the Democratic Republic of Congo and adjoining regions. Implementations combine immutable custody chains, cryptographic material fingerprinting, and smart-contract-enforced compliance checks to satisfy Dodd-Frank Section 1502 and EU Conflict Minerals Regulation while enabling premium pricing for verified responsible sourcing.
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses:: [[Hyperledger Fabric]], [[Permissioned Blockchain]], [[Smart Contracts]], [[Internet of Things]]
+  - enables:: [[Provenance Tracking]], [[Supply Chain Traceability]], [[Audit Trail]]
+  - requires:: [[Supply Chain Management]], [[Compliance Verification]]
+  - relatedTo:: [[Supply Chain Blockchain]], [[Consortium Blockchain]], [[ESG Reporting]], [[Blockchain Compliance]]
 
 - ### Content
   - Conflict mineral tracking addresses one of the most challenging ethical sourcing problems in global supply chains: ensuring that minerals used in consumer electronics, automotive, aerospace, and industrial manufacturing don't finance armed conflict or human rights abuses in regions including the Democratic Republic of Congo (DRC) and adjoining countries. The "3TG" minerals—tin, tantalum, tungsten, and gold—are essential components in modern electronics, with an estimated 80% of consumer electronic devices containing minerals potentially sourced from conflict regions. Traditional conflict mineral due diligence relies on paper-based documentation including supplier declarations, smelter audits, and chain of custody certificates that suffer from fraud, documentation gaps, and the practical impossibility of verifying mineral provenance through supply chains involving dozens of intermediaries spanning artisanal miners, local traders, regional exporters, international smelters, and component manufacturers. [[Blockchain]] technology transforms conflict mineral compliance through immutable supply chain records, cryptographic verification of mineral provenance, and shared visibility that enables stakeholders across complex supply chains to verify responsible sourcing whilst protecting confidential commercial relationships.

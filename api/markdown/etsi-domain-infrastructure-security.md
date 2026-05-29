@@ -7,7 +7,10 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires**: Identity Management, Cryptographic Protocol — security depends on robust identity verification and cryptographic primitives
+  - **enables**: Decentralized Identity (DID), Quantum Network Node — the framework enables decentralised trust and quantum-secure communications
+  - **uses**: Security Framework — implements ETSI NFV and cross-domain authentication standards
+  - **relatedTo**: Privacy Preserving Technology, Data Governance — aligned with privacy-by-design principles and EU regulatory compliance
 
 - ### Content
   - The ETSI Infrastructure Security domain protects metaverse systems through distributed security frameworks, cryptographic mechanisms, identity management, and privacy controls ensuring resilient, trustworthy operation across decentralised networks.

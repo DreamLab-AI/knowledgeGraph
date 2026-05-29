@@ -7,7 +7,11 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Under the OECD AI Principles, Safety (OECD) has the following typed relations:
+  - **requires**: Risk Management, Functional Safety — lifecycle hazard analysis and risk mitigation are prerequisites for realising safety.
+  - **contrastsWith**: Robustness (OECD) — safety addresses harm avoidance; robustness addresses performance under adversarial or distributional shifts.
+  - **enables**: High Risk AI System classification triggers, AI Governance frameworks — safety compliance unlocks authorisation pathways.
+  - **relatedTo**: Serious Incident (mandatory reporting obligation when safety fails), AI Safety (broader research discipline).
 
 - ### Content
   - AI systems should operate safely without causing unacceptable risk of physical or psychological harm to people, property or the environment, with appropriate safeguards to prevent, detect and respond to hazardous failures throughout the AI lifecycle.

@@ -6,7 +6,10 @@
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **hasPart**: ZK-SNARKs, ZK-STARKs, ECDSA, SHA-256 (constituent cryptographic primitives of this domain)
+  - **enables**: Blockchain, Verifiable Credentials (cryptographic primitives are the foundation that makes these possible)
+  - **uses**: Public Key Infrastructure (asymmetric key hierarchies underpin the domain)
+  - **supports**: Cryptographic Key Management, Privacy Preserving Blockchain (operational capabilities the domain provides)
 
   - bridges-to:: [[Blockchain]] (bc)
 - ### Content

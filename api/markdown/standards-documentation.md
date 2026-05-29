@@ -9,6 +9,12 @@
 - ### Relationships
   - is-subclass-of:: [[Standards]]
   - bridges-to:: [[Blockchain]] (domain: bc) for transparent standards management and versioning
+  - Requires [[Technical Standard]]
+  - Supports [[Interoperability]]
+  - Supports [[Standards Compliance]]
+  - Enables [[Standards Conformance]]
+  - Enables [[Standards Validation]]
+  - Related To [[Standards Body]]
 
 - ### Content
 

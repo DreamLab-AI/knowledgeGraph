@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:virtual-replica",
   "@type": "Class",
   "label": "Virtual Replica",
-  "definition": "A digital representation of a physical object, system, or environment created through 3D modeling, photogrammetry, or scanning technologies, serving as a static or dynamic copy for visualization, simulation, analysis, and testing purposes without the real-time data connectivity that characterizes...",
+  "definition": "A digital representation of a physical object, system, or environment created through 3D modelling, photogrammetry, or LiDAR scanning, serving as a static or dynamic copy for visualisation, simulation, analysis, and testing without the real-time bidirectional data connectivity that distinguishes a full digital twin. Virtual replicas are typically point-in-time snapshots; they support heritage preservation, product safety testing, urban planning, and manufacturing visualisation workflows.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -59,7 +60,24 @@ public:: true
       "label": "Digital Model"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:photogrammetry", "label": "Photogrammetry"},
+      {"@id": "urn:ngm:class:3-d-modeling", "label": "3D Modeling"},
+      {"@id": "urn:ngm:class:simulation", "label": "Simulation"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:virtual-museum-tour", "label": "Virtual Museum Tour"},
+      {"@id": "urn:ngm:class:virtual-factory", "label": "Virtual Factory"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:digital-modeling", "label": "Digital Modeling"},
+      {"@id": "urn:ngm:class:simulation-software", "label": "Simulation Software"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -109,6 +127,10 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Digital Model]]
+  - uses:: [[Photogrammetry]], [[3D Modeling]], [[Simulation]]
+  - contrastsWith:: [[Digital Twin]]
+  - enables:: [[Virtual Museum Tour]], [[Virtual Factory]]
+  - relatedTo:: [[Digital Modeling]], [[Simulation Software]]
 
 - ### Content
 

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:dc-workspace-tools",
   "domain": "distributed-collaboration",
-  "definition": "Intermediate taxonomy category for workspace tools concepts within the distributed collaboration domain.",
+  "definition": "Workspace Tools is the distributed-collaboration taxonomy hub for software and platform technologies that support remote and hybrid team productivity \u2014 including collaboration platforms, shared whiteboards, asynchronous video, meeting AI assistants, and immersive workspaces. It is a peer category to Telepresence and Communication Technology within the distributed collaboration domain.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:distributed-collaboration",
@@ -13,12 +13,46 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
+  "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:collaboration-platform",
+        "label": "Collaboration Platform"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-whiteboard",
+        "label": "Collaborative Whiteboard"
+      },
+      {
+        "id": "urn:ngm:class:asynchronous-collaboration",
+        "label": "Asynchronous Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:synchronous-collaboration",
+        "label": "Synchronous Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:meeting-ai-assistant",
+        "label": "Meeting AI Assistant"
+      },
+      {
+        "id": "urn:ngm:class:immersive-workspaces",
+        "label": "Immersive Workspaces"
+      },
+      {
+        "id": "urn:ngm:class:virtual-office-spaces",
+        "label": "Virtual Office Spaces"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +61,20 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:dc-telepresence",
+        "label": "Telepresence"
+      },
+      {
+        "id": "urn:ngm:class:dc-communication",
+        "label": "Communication Technology"
+      },
+      {
+        "id": "urn:ngm:class:remote-collaboration",
+        "label": "Remote Collaboration"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": []

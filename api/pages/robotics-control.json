@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:robotics-control",
   "domain": "artificial-intelligence",
-  "definition": "Robotics Control integrates artificial intelligence with robotic systems to enable autonomous navigation, manipulation, perception, and task execution.",
+  "definition": "The application of artificial intelligence and control theory to robotic systems to enable autonomous navigation, manipulation, perception, and task execution. AI-driven robotics control integrates reinforcement learning for policy optimisation, computer vision for scene perception, motion planning for collision-free trajectory generation, and sensor fusion for robust state estimation \u2014 operating in real time under uncertainty and safety constraints.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-application",
@@ -13,21 +13,57 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:rb-0012-wheeled-mobile-robot",
   "domain": "robotics",
-  "definition": "wheeled mobile robot is a robotics and autonomous systems concept and a type of Mobile Robot.",
+  "definition": "A wheeled mobile robot (WMR) is a ground-based autonomous or semi-autonomous robot that uses wheels for locomotion. WMRs range from differential-drive platforms to omnidirectional holonomic designs; they rely on odometry for dead-reckoning, SLAM for map building, and path-planning algorithms for autonomous navigation in structured or semi-structured environments.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-robot-type",
@@ -17,21 +17,56 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:odometry",
+        "label": "Odometry"
+      },
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "id": "urn:ngm:class:rb-0075-range-finder",
+        "label": "rb 0075 range finder"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:differential-drive-robot",
+        "label": "Differential Drive Robot"
+      },
+      {
+        "id": "urn:ngm:class:mobile-robot-platform",
+        "label": "Mobile Robot Platform"
+      },
+      {
+        "id": "urn:ngm:class:wheeled-mobile-robot",
+        "label": "Wheeled Mobile Robot"
+      }
+    ]
   },
   "wikilinks": [
     {

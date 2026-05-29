@@ -7,7 +7,10 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **partOf**: Attention Mechanism (QKV is the core computational primitive of attention)
+  - **enables**: Large Language Models (QKV attention is the foundational operation of transformer LLMs), Deep Learning (enables expressive sequence modelling)
+  - **requires**: Neural Network (learnable weight matrices W^Q, W^K, W^V), Machine Learning (training framework)
+  - **relatedTo**: Model Capacity (multi-head count directly increases capacity), Neural Network Architecture (transformer layout built from QKV layers)
 
 - ### Content
   - The three fundamental components in attention mechanisms: queries determine what information to seek, keys determine what information is available, and values contain the actual information to be retrieved.

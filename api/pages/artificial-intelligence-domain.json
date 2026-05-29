@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:artificial-intelligence-domain",
   "domain": "artificial-intelligence",
-  "definition": "The top-level ontological domain classification encompassing all concepts related to artificial intelligence, including research modologies, system architectures, learning paradigms, application domains, and governance frameworks for intelligent computational systems.",
+  "definition": "The Artificial Intelligence Domain is the top-level ontological domain classification encompassing all concepts related to artificial intelligence, including research methodologies, system architectures, learning paradigms, application areas, and governance frameworks for intelligent computational systems. It serves as the taxonomic root organising subdomains such as Machine Learning, Computer Vision, Natural Language Processing, Autonomous Agents, and AI Governance, and maintains formal cross-domain bridges to Robotics, Blockchain, Metaverse, and Telecollaboration fields.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-research-area",
@@ -17,21 +17,81 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:ai-applications",
+        "label": "AI Applications"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:robotics-systems",
+        "label": "Robotics Systems"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-technology",
+        "label": "Metaverse Technology"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ecash",
   "domain": "blockchain",
-  "definition": "ecash is a blockchain and distributed systems concept and a type of Payment System.",
+  "definition": "A privacy-preserving digital cash system based on David Chaum's blind-signature cryptography, enabling bearer-token payments in which the issuing mint cannot link individual transactions to users. Modern implementations such as Cashu and Fedimint build Chaumian eCash on top of Bitcoin and the Lightning Network, enabling censorship-resistant micropayments for human and autonomous-agent use.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-token-and-asset",
@@ -18,20 +18,52 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:censorship-resistance",
+        "label": "Censorship Resistance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:privacy-preserving-blockchain",
+        "label": "Privacy Preserving Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cashu",
+        "label": "Cashu"
+      },
+      {
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      }
+    ]
   },
   "wikilinks": [
     {

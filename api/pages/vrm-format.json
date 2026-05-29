@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:vrm-format",
   "domain": "spatial-computing",
-  "definition": "An open file format standard for 3D humanoid avatars built on glTF, designed for cross-platform interoperability in VR, AR, and metaverse applications, incorporating standardized rigging, facial expressions, gaze controls, and licensing metadata to enable seamless avatar use across different virt...",
+  "definition": "An open file format standard for 3D humanoid avatars built on glTF, designed for cross-platform interoperability in VR, AR, and metaverse applications. It incorporates standardised humanoid rigging, facial blend-shape expressions, first-person gaze controls, and embedded licensing metadata, enabling seamless avatar portability across different virtual environments. In 2024 the VRM Consortium began collaboration with the Khronos Group to advance VRM specifications as official glTF extensions for international standardisation.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-standards-and-interop",
@@ -13,19 +13,55 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gltf-standard",
+        "label": "Gltf Standard"
+      },
+      {
+        "id": "urn:ngm:class:3-d-file-format",
+        "label": "3D File Format"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:avatar-interoperability",
+        "label": "Avatar Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:avatar-portability",
+        "label": "Avatar Portability"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:avatar-standard",
+        "label": "Avatar Standard"
+      },
+      {
+        "id": "urn:ngm:class:3-d-model",
+        "label": "3D Model"
+      }
+    ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      },
+      {
+        "id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      }
+    ],
     "partOf": [],
     "relatedTo": []
   },

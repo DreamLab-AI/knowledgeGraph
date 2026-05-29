@@ -46,15 +46,32 @@ public:: true
   "@id": "urn:ngm:class:product-and-risk-management",
   "@type": "Class",
   "label": "Product and Risk Management",
-  "definition": "Product and Risk Management is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A framework mapping the scientific method onto lean product development, guiding AI product decisions through vision setting, market analysis, and strategic planning. It addresses SWOT evaluation, moat assessment, and risk mitigation for AI products—particularly the legal, privacy, and safety risks introduced by generative AI and the EU regulatory landscape.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:product-design", "label": "Product Design"},
+      {"@id": "urn:ngm:class:safety-and-alignment", "label": "Safety and alignment"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:politics-law-privacy", "label": "Politics, Law, Privacy"},
+      {"@id": "urn:ngm:class:ai-risk-management", "label": "AI Risk Management"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:ai-risk", "label": "AI Risk"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -101,14 +118,17 @@ public:: true
 
 
 - ### Definition
-  - Product and Risk Management is a concept within the ngm domain.
+  - A framework mapping the scientific method onto lean product development, guiding AI product decisions through vision setting, market analysis, and strategic planning. It addresses SWOT evaluation, moat assessment, and risk mitigation for AI products—particularly the legal, privacy, and safety risks introduced by generative AI and the EU regulatory landscape.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:ProductAndRiskManagement
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires: [[Product Design]], [[Safety and alignment]]
+  - relatedTo: [[Politics, Law, Privacy]], [[AI Risk Management]]
+  - contrastsWith: [[AI Risk]]
+  - supports: [[AI Governance]]
 
 - ### Content
   - #Public page

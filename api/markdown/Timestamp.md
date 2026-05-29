@@ -66,7 +66,7 @@ public:: true
   "@id": "urn:ngm:class:timestamp",
   "@type": "Class",
   "label": "Timestamp",
-  "definition": "Block creation time record within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "A recorded value indicating the time of block creation in a blockchain system, embedded in each block header to establish chronological ordering of the chain and enable time-based protocol rules. Timestamps support difficulty adjustment, consensus validity checks, and provide an immutable audit trail for transaction ordering and data provenance.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -83,7 +83,26 @@ public:: true
       "label": "DistributedDataStructure"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:block-header", "label": "Block Header"},
+      {"@id": "urn:ngm:class:block", "label": "Block"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:block-time", "label": "Block Time"},
+      {"@id": "urn:ngm:class:consensus-protocol", "label": "Consensus Protocol"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:transaction-confirmation", "label": "Transaction Confirmation"},
+      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"},
+      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:finality", "label": "Finality"},
+      {"@id": "urn:ngm:class:block-height", "label": "Block Height"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:real-world-asset-tokenisation",
   "domain": "blockchain",
-  "definition": "Real-world asset tokenisation is the process of creating on-chain digital representations of physical or financial assets\u2014such as real estate, bonds, or commodities\u2014to enable fractional ownership and programmable transfer.",
+  "definition": "Real-world asset tokenisation (RWA) is the process of issuing blockchain-based digital tokens that represent legally enforceable claims over physical or financial assets such as real estate, government bonds, private credit, or commodities. By encoding ownership rights and transfer rules in smart contracts, RWA tokenisation enables fractional ownership, 24/7 secondary-market liquidity, and automated compliance enforcement. The practice bridges traditional capital markets and decentralised finance, requiring regulatory alignment with securities law and robust oracle infrastructure to reflect off-chain asset valuations on-chain.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-token-and-asset",
@@ -14,11 +14,29 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:oracle-network",
+        "label": "Oracle Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:liquidity-provision",
+        "label": "Liquidity Provision"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +45,16 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:security-token",
+        "label": "Security Token"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

@@ -46,20 +46,58 @@ public:: true
   "@id": "urn:ngm:class:artificial-superintelligence",
   "@type": "Class",
   "label": "artificial superintelligence",
-  "definition": "artificial superintelligence is a technology infrastructure concept and a type of infrastructure.",
-  "domain": "infrastructure",
-  "maturity": "draft",
+  "definition": "A hypothetical form of artificial intelligence that surpasses human cognitive performance across all domains, capable of recursive self-improvement leading to an intelligence explosion. Distinguished from artificial general intelligence by the degree of capability surplus; considered an existential risk scenario requiring robust safety and alignment research before any attempt at development.",
+  "domain": "artificial-intelligence",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
     }
   ],
-  "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:artificial-general-intelligence",
+        "label": "Artificial General Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:singularity",
+        "label": "Singularity"
+      },
+      {
+        "@id": "urn:ngm:class:ai-risks",
+        "label": "AI Risks"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:aiethics",
+        "label": "AIEthics"
+      }
+    ]
   }
 }
 ```
@@ -101,14 +139,20 @@ public:: true
 
 
 - ### Definition
-  - artificial superintelligence is a concept within the ngm domain.
+  - A hypothetical form of artificial intelligence that surpasses human cognitive performance across all domains, capable of recursive self-improvement leading to an intelligence explosion. Distinguished from artificial general intelligence by the degree of capability surplus; considered an existential risk scenario requiring robust safety and alignment research before any attempt at development.
 
 - ### Semantic Classification
-  - owl-class:: infrastructure:ArtificialSuperintelligence
+  - owl-class:: artificial-intelligence:ArtificialSuperintelligence
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Requires [[Artificial General Intelligence]]
+  - Requires [[Machine Learning]]
+  - Contrasts With [[Artificial Intelligence]]
+  - Related To [[Singularity]]
+  - Related To [[AI Risks]]
+  - Related To [[AI Safety]]
+  - Supports [[AIEthics]]
 
 - ### Content
   - # Artificial Superintelligence

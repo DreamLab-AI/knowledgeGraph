@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:secp256k1",
   "domain": "blockchain",
-  "definition": "The elliptic curve defined by the equation y\u00b2 = x\u00b3 + 7 over a 256-bit prime field, used by Bitcoin and Ethereum as the basis for ECDSA digital signatures and key derivation.",
+  "definition": "secp256k1 is a Koblitz elliptic curve defined by the equation y\u00b2 = x\u00b3 + 7 over the 256-bit prime field Fp (where p = 2\u00b2\u2075\u2076 \u2212 2\u00b3\u00b2 \u2212 977), standardised in SEC 2 by the Standards for Efficient Cryptography Group (SECG). It is the cryptographic foundation of Bitcoin and Ethereum, where it underpins the Elliptic Curve Digital Signature Algorithm (ECDSA) used to authenticate transactions and derive public keys from private keys. secp256k1's specific choice of parameters enables unusually efficient computation via the Frobenius endomorphism, making scalar multiplication faster than on comparably secure non-Koblitz curves such as NIST P-256.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-cryptographic-primitive",
@@ -14,20 +14,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-keys",
+        "label": "Cryptographic Keys"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:ecdsa",
+        "label": "ECDSA"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

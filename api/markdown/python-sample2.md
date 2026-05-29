@@ -1,12 +1,14 @@
 - ### Definition
-  - PythonSample2 is a concept within the ngm domain.
+  - Python Sample2 is a minimal Logseq JavaScript/Pyodide evaluation block used as a stub execution test. It demonstrates the evalblock mechanism that allows inline code execution within the Logseq knowledge graph, serving as a baseline template for more complex Python integrations.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:PythonSample2
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - relatedTo:: [[Code Generation]], [[Knowledge Management]]
+  - partOf:: [[Software Engineering]]
+  - uses:: [[Knowledge Graph]]
 
 - ### Content
   - ```javascript

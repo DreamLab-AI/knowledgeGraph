@@ -8,6 +8,10 @@
 
 - ### Relationships
   - is-subclass-of:: [[Virtual Reality Applications]]
+  - Uses [[Virtual Reality]], [[Haptic Feedback]]
+  - Requires [[Virtual Reality Platform]]
+  - Supports [[User Safety]]
+  - Related to [[Metaverse and Spatial Risks]], [[Avatar System]]
 
 - ### Content
 

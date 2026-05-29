@@ -33,15 +33,32 @@ public:: true
   "@id": "urn:ngm:class:player-two-code",
   "@type": "Class",
   "label": "Player Two code",
-  "definition": "Player Two code is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Player Two code is the technical implementation layer of the Player Two platform, comprising a Vue.js front-end, BIP85-derived key management for trustless authentication, a Nostr-relay-based messaging architecture, and middleware whitelist logic. It enables encrypted group collaboration without server-held keys, using derivation path m/44'/1237 for per-user identity.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
+  "relations": {
+    "implements": [
+      {"@id": "urn:ngm:class:player-two", "label": "Player Two"},
+      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"},
+      {"@id": "urn:ngm:class:authentication", "label": "Authentication"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:collaboration-platform", "label": "Collaboration Platform"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:identity-management", "label": "Identity Management"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -72,14 +89,17 @@ public:: true
 
 
 - ### Definition
-  - Player Two code is a concept within the ngm domain.
+  - Player Two code is the technical implementation layer of the Player Two platform, comprising a Vue.js front-end, BIP85-derived key management for trustless authentication, a Nostr-relay-based messaging architecture, and middleware whitelist logic. It enables encrypted group collaboration without server-held keys, using derivation path m/44'/1237 for per-user identity.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:PlayerTwoCode
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - implements: [[Player Two]], [[Decentralised Identity]]
+  - uses: [[Cryptography]], [[Authentication]]
+  - dependsOn: [[Collaboration Platform]]
+  - enables: [[Identity Management]]
 
 - ### Content
   - {{renderer code_diagram,mermaid}}

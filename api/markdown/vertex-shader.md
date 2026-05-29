@@ -1,5 +1,5 @@
 - ### Definition
-  - Vertex Shader is a concept within the mv domain.
+  - A mandatory, programmable GPU stage that processes individual vertices within the graphics pipeline, transforming 3D coordinates through model, view, and projection matrices into clip space whilst computing per-vertex attributes such as normals, texture coordinates, and lighting terms that are subsequently interpolated across primitives for the fragment shader.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:VertexShader
@@ -7,6 +7,10 @@
 
 - ### Relationships
   - is-subclass-of:: [[Metaverse]]
+  - Part Of: [[Shader]]
+  - Uses: [[Rasterization]]
+  - Enables: [[Pixel Shader]]
+  - Related To: [[Compute Shader]], [[Visual Effects]]
 
 - ### Content
 

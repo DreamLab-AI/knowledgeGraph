@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:difficulty",
   "domain": "blockchain",
-  "definition": "Mining computational requirement within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "Difficulty is a dynamic parameter in proof-of-work blockchain systems that expresses the computational effort required to find a valid block hash\u2014specifically, the number of leading zeros (or equivalent target threshold) that a candidate block hash must satisfy for the block to be accepted by the network. The difficulty value is adjusted periodically by the protocol based on the observed rate of block production relative to the target interval, ensuring that new blocks are produced at a predictable rate regardless of fluctuations in aggregate network hash rate. Difficulty is the primary mechanism by which proof-of-work blockchains self-regulate their monetary policy and security budget.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-cryptographic-primitive",
@@ -21,21 +21,79 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:nonce",
+        "label": "Nonce"
+      },
+      {
+        "id": "urn:ngm:class:difficulty-adjustment",
+        "label": "Difficulty Adjustment"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:mining",
+        "label": "Mining"
+      },
+      {
+        "id": "urn:ngm:class:consensus-protocol",
+        "label": "Consensus Protocol"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:block-time",
+        "label": "Block Time"
+      },
+      {
+        "id": "urn:ngm:class:block-height",
+        "label": "Block Height"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-energy-consumption",
+        "label": "Blockchain Energy Consumption"
+      },
+      {
+        "id": "urn:ngm:class:mining-reward",
+        "label": "Mining Reward"
+      }
+    ]
   },
   "wikilinks": [
     {

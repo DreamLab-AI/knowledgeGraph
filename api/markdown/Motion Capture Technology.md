@@ -42,9 +42,10 @@ public:: true
   "@id": "urn:ngm:class:motion-capture-technology",
   "@type": "Class",
   "label": "Motion Capture Technology",
-  "definition": "Motion Capture Technology is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Motion Capture Technology refers to systems that record the position and orientation of physical bodies—human performers, objects, or camera rigs—in three-dimensional space, producing skeletal or marker-based data streams used to animate digital avatars, create realistic character performances, and drive real-time spatial computing applications.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
@@ -56,6 +57,38 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      },
+      {
+        "@id": "urn:ngm:class:animation-technique",
+        "label": "Animation Technique"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:animation-retargeting",
+        "label": "Animation Retargeting"
+      },
+      {
+        "@id": "urn:ngm:class:motion-capture-rig",
+        "label": "Motion Capture Rig"
+      }
+    ]
   }
 }
 ```
@@ -87,14 +120,19 @@ public:: true
 
 
 - ### Definition
-  - Motion Capture Technology is a concept within the metaverse domain. Further enrichment pending.
+  - Motion Capture Technology refers to systems that record the position and orientation of physical bodies—human performers, objects, or camera rigs—in three-dimensional space, producing skeletal or marker-based data streams used to animate digital avatars, create realistic character performances, and drive real-time spatial computing applications.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:MotionCaptureTechnology
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Enables [[Avatar]]
+  - Enables [[Animation Technique]]
+  - Uses [[Motion Capture]]
+  - Uses [[Sensor Fusion]]
+  - Related To [[Animation Retargeting]]
+  - Related To [[Motion Capture Rig]]
 
 - ### Content
 

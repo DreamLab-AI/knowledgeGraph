@@ -5,20 +5,38 @@
   "public": true,
   "classIri": "urn:ngm:class:flash-attention",
   "domain": "artificial-intelligence",
-  "definition": "Flash Attention is an IO-aware exact attention algorithm that reorders computations to minimise GPU high-bandwidth memory reads and writes, substantially reducing the memory footprint and wall-clock time of transformer attention.",
+  "definition": "Flash Attention is an IO-aware, exact attention algorithm that exploits GPU memory hierarchy by tiling the query, key, and value matrices to keep intermediate activations in fast on-chip SRAM rather than the much slower high-bandwidth DRAM (HBM), eliminating the O(N\u00b2) memory materialisation of the standard scaled dot-product attention. Introduced by Dao et al. at Stanford in 2022 and extended in Flash Attention 2 and 3, it achieves the same numerical output as standard attention whilst reducing HBM reads and writes by a factor proportional to the SRAM tile size, yielding 2\u20134\u00d7 wall-clock speedups for long sequences with sub-linear memory growth. It is now a standard component of transformer training and inference frameworks including PyTorch, JAX, and vLLM.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +45,16 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

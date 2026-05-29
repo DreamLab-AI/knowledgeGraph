@@ -394,16 +394,47 @@ public:: true
   "@id": "urn:ngm:class:private-blockchain",
   "@type": "Class",
   "label": "Private Blockchain",
-  "definition": "A permissioned Blockchain network where access, participation, and validation rights are restricted to authorized entities, typically used in enterprise and consortium settings with controlled governance and enhanced privacy.",
+  "definition": "A private blockchain is a permissioned distributed ledger in which access, participation, and validation rights are restricted to a pre-approved set of known entities, typically operated by a single organisation or a closed consortium. Unlike public blockchains, private blockchains prioritise throughput, deterministic finality, and data confidentiality over open participation, relying on governance frameworks and identity management rather than anonymous proof-of-work mining to secure the network.",
   "domain": "blockchain",
   "maturity": "established",
+  "qualityScore": 0.8,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-network-component",
       "label": "Network Component"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
+      {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"},
+      {"@id": "urn:ngm:class:permissioned-network", "label": "Permissioned Network"},
+      {"@id": "urn:ngm:class:blockchain-compliance", "label": "Blockchain Compliance"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:enterprise-blockchain", "label": "Enterprise Blockchain"},
+      {"@id": "urn:ngm:class:supply-chain-blockchain", "label": "Supply Chain Blockchain"},
+      {"@id": "urn:ngm:class:blockchain-interoperability", "label": "Blockchain Interoperability"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:hyperledger-fabric", "label": "Hyperledger Fabric"},
+      {"@id": "urn:ngm:class:hyperledger-besu", "label": "Hyperledger Besu"},
+      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:public-blockchain", "label": "Public Blockchain"},
+      {"@id": "urn:ngm:class:consortium-blockchain", "label": "Consortium Blockchain"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"},
+      {"@id": "urn:ngm:class:blockchain-scalability", "label": "Blockchain Scalability"},
+      {"@id": "urn:ngm:class:deterministic-finality", "label": "Deterministic Finality"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -879,7 +910,7 @@ public:: true
 
 
 - ### Definition
-  - A permissioned [[Blockchain]] network where access, participation, and validation rights are restricted to authorized entities, typically used in enterprise and consortium settings with controlled governance and enhanced privacy.
+  A private blockchain is a permissioned distributed ledger in which access, participation, and validation rights are restricted to a pre-approved set of known entities, typically operated by a single organisation or a closed consortium. Unlike public blockchains, private blockchains prioritise throughput, deterministic finality, and data confidentiality over open participation, relying on governance frameworks and identity management rather than anonymous proof-of-work mining to secure the network.
 
 - ### Semantic Classification
   - owl-class:: blockchain:PrivateBlockchain
@@ -887,7 +918,12 @@ public:: true
   - belongs-to-domain:: [[BlockchainDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart:: [[Smart Contract]], [[Access Control]], [[Consensus Mechanism]]
+  - requires:: [[Blockchain Governance]], [[Permissioned Network]], [[Blockchain Compliance]]
+  - enables:: [[Enterprise Blockchain]], [[Supply Chain Blockchain]], [[Blockchain Interoperability]]
+  - uses:: [[Hyperledger Fabric]], [[Hyperledger Besu]], [[Byzantine Fault Tolerance]]
+  - contrastsWith:: [[Public Blockchain]], [[Consortium Blockchain]]
+  - relatedTo:: [[Distributed Ledger]], [[Blockchain Scalability]], [[Deterministic Finality]]
 
 - ### Content
   - A **private blockchain** is a permissioned [[distributed ledger]] technology where network access, transaction validation, and data visibility are restricted to authorized participants, offering enterprises enhanced privacy, control, and performance compared to [[PublicBlockchain]] networks.

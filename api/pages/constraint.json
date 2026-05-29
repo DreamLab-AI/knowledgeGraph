@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:constraint",
   "domain": "artificial-intelligence",
-  "definition": "Constraint is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "A Constraint is a condition, restriction, or rule that limits the set of permissible states, actions, or solutions within a computational, logical, or physical system. Constraints formalise requirements such as resource bounds, logical invariants, safety properties, and optimality criteria, and are manipulated by constraint-satisfaction and optimisation algorithms to find feasible or optimal solutions. They appear across AI planning, machine learning regularisation, smart-contract execution, and formal verification.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -13,21 +13,95 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:objective",
+        "label": "Objective"
+      },
+      {
+        "id": "urn:ngm:class:model",
+        "label": "Model"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:safety",
+        "label": "Safety"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:algorithm",
+        "label": "Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:search-algorithm",
+        "label": "Search Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      },
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:parameter",
+        "label": "Parameter"
+      },
+      {
+        "id": "urn:ngm:class:property",
+        "label": "Property"
+      },
+      {
+        "id": "urn:ngm:class:system",
+        "label": "System"
+      }
+    ]
   },
   "wikilinks": [
     {

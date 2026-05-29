@@ -46,7 +46,7 @@ public:: true
   "@id": "urn:ngm:class:computer-vision-task",
   "@type": "Class",
   "label": "Computer Vision Task",
-  "definition": "Computer vision tasks are specific computational problems that machines solve using visual data, including image classification (assigning labels to images), object detection (locating and identifying objects with bounding boxes), semantic segmentation (pixel-wise classification), and instance se...",
+  "definition": "A Computer Vision Task is a specific computational problem solved using visual input data, encompassing image classification, object detection, semantic segmentation, instance segmentation, and pose estimation. These tasks form the building blocks of downstream vision applications such as scene understanding, autonomous navigation, and visual question answering, typically implemented via convolutional or transformer-based neural architectures.",
   "domain": "artificial-intelligence",
   "maturity": "emerging",
   "subClassOf": [
@@ -55,7 +55,32 @@ public:: true
       "label": "AI Research Area"
     }
   ],
-  "quality": 0.35,
+  "quality": 0.75,
+  "qualityScore": 0.75,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:image-classification", "label": "Image Classification"},
+      {"@id": "urn:ngm:class:object-detection", "label": "Object Detection"},
+      {"@id": "urn:ngm:class:semantic-segmentation", "label": "Semantic Segmentation"},
+      {"@id": "urn:ngm:class:instance-segmentation", "label": "Instance Segmentation"},
+      {"@id": "urn:ngm:class:pose-estimation", "label": "Pose Estimation"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
+      {"@id": "urn:ngm:class:feature-extraction", "label": "Feature Extraction"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:scene-understanding", "label": "Scene Understanding"},
+      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:multimodal-ai", "label": "Multimodal AI"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

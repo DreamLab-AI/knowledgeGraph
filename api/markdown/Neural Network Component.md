@@ -42,7 +42,7 @@ public:: true
   "@id": "urn:ngm:class:neural-network-component",
   "@type": "Class",
   "label": "Neural Network Component",
-  "definition": "A component or building block of neural networks.",
+  "definition": "A discrete structural or functional building block within a neural network model, including layers, activation functions, normalisation mechanisms, attention heads, and connection schemes. These components are composed to form complete neural network architectures and directly determine model capacity, training dynamics, and inference behaviour.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -51,7 +51,25 @@ public:: true
       "label": "AI Technique"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:neural-network-layer", "label": "Neural Network Layer"},
+      {"@id": "urn:ngm:class:activation-function", "label": "Activation Function"},
+      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},
+      {"@id": "urn:ngm:class:attention-head", "label": "Attention Head"},
+      {"@id": "urn:ngm:class:batch-normalisation", "label": "Batch Normalisation"},
+      {"@id": "urn:ngm:class:dropout", "label": "Dropout"},
+      {"@id": "urn:ngm:class:residual-connection", "label": "Residual Connection"},
+      {"@id": "urn:ngm:class:encoder", "label": "Encoder"},
+      {"@id": "urn:ngm:class:decoder", "label": "Decoder"},
+      {"@id": "urn:ngm:class:positional-encoding", "label": "Positional Encoding"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:neural-network-architecture", "label": "Neural Network Architecture"},
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

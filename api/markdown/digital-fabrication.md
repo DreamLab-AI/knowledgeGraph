@@ -6,7 +6,11 @@
   - owl-role:: concept
 
 - ### Relationships
-  - is-subclass-of:: ['owl:Thing']
+  - **uses**: Computer Vision, Reinforcement Learning (vision-based quality control and RL-optimised toolpaths)
+  - **requires**: Digital Twin (simulation-first design validation before physical production)
+  - **enables**: Robotics, Autonomous Robot (AI-driven fabrication systems are a subclass of robotic automation)
+  - **supports**: Digital Asset Management (fabricated physical assets are linked to their digital representations)
+
   - bridges-to:: [[Autonomous Robot]], [[Digital Twin]]
 
 - ### Content

@@ -7,7 +7,9 @@
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - is-subclass-of:: [[Robotics]]
+  - is-subclass-of:: [[Robotics]], [[Mobile Robot]]
+  - **Uses**: [[SLAM]] (localisation and mapping), [[Sensor Fusion]] (lidar, camera, IMU), [[Robot Operating System]]
+  - **Enables**: [[Autonomous Navigation]], [[Digital Twin]] (real-world robot state in virtual model)
 
 - ### Content
   - ### Original Content

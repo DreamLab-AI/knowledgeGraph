@@ -1,5 +1,5 @@
 - ### Definition
-  - AICafev6 is a concept within the ngm domain.
+  - AICafev6 is the sixth iteration of the AI Cafe demonstration platform: an open-source immersive knowledge development environment built on VisionFlow that integrates multi-modal AI, GPU-accelerated analytics, and agentic workflows for collaborative knowledge creation and presentation.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:AICafev6
@@ -7,6 +7,9 @@
 
 - ### Relationships
   - bridges-to:: [[AI Agent System]]
+  - uses:: [[Generative AI]], [[Large Language Models]]
+  - enables:: [[Agentic AI]], [[Natural Language Processing]]
+  - hasPart:: [[Computer Vision]]
 
 - ### Content
   - The software is free and open source here:

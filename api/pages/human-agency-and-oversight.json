@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:human-agency-and-oversight",
   "domain": "artificial-intelligence",
-  "definition": "Human Agency and Oversight is a trustworthiness dimension ensuring AI systems respect human autonomy, preserve meaningful human control, and implement appropriate human supervision mechanisms to prevent undue coercion, manipulation, or erosion of self-determination.",
+  "definition": "Human Agency and Oversight is a core trustworthiness dimension of responsible AI that encompasses two coupled principles: human agency\u2014protecting individuals' freedom to make informed, uncoerced decisions when interacting with or affected by AI systems\u2014and human oversight\u2014establishing technical and organisational mechanisms that allow authorised humans to monitor, intervene in, correct, or deactivate AI operations at appropriate granularity. The EU AI Act Article 14 mandates these mechanisms for high-risk AI systems, requiring that oversight be achievable by qualified natural persons who understand system outputs and can exercise meaningful authority over them.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -13,21 +13,77 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human in the Loop"
+      },
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:ai-trustworthiness",
+        "label": "AI Trustworthiness"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      },
+      {
+        "id": "urn:ngm:class:robustness",
+        "label": "Robustness"
+      },
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "id": "urn:ngm:class:model-interpretability",
+        "label": "Model Interpretability"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -8,6 +8,11 @@
 
 - ### Relationships
   - bridges-to:: [[Computer Vision]]
+  - enables [[Feature Extraction]]
+  - enables [[Embedding Model]]
+  - enables [[Multimodal AI]]
+  - relatedTo [[Deep Learning]]
+  - contrastsWith [[Curriculum Learning]]
 
 - ### Content
   - A self-supervised learning approach that learns representations by contrasting positive pairs (similar samples) against negative pairs (dissimilar samples). Contrastive learning enables models to learn powerful representations without explicit labels by pushing similar examples together and dissimilar ones apart in embedding space.

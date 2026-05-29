@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:data-format",
   "domain": "infrastructure",
-  "definition": "Data Format is a type of Data Standards in the infrastructure domain.",
+  "definition": "Data Format defines the structural and encoding specification by which data is stored, transmitted, and interpreted between systems. Formats span binary serialisation (Protocol Buffers, Avro), text-based interchange (JSON, JSON-LD, XML), domain-specific schemas (DICOM, glTF), and columnar storage formats (Parquet). Format choice determines interoperability scope, parsing overhead, and compatibility with downstream processing pipelines.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-data-management",
@@ -18,11 +18,20 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-interoperability",
+        "label": "Data Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -30,8 +39,22 @@
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:data-standards",
+        "label": "Data Standards"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:json-ld",
+        "label": "JSON-LD"
+      },
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      }
+    ]
   },
   "wikilinks": [
     {

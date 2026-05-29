@@ -46,7 +46,7 @@ public:: true
   "@id": "urn:ngm:class:practical-byzantine-fault-tolerance",
   "@type": "Class",
   "label": "Practical Byzantine Fault Tolerance",
-  "definition": "A consensus algorithm providing high-performance Byzantine state machine replication, processing thousands of requests per second with sub-millisecond latency increases. Designed for asynchronous systems with low latency optimization.",
+  "definition": "A consensus algorithm providing high-performance Byzantine state machine replication for asynchronous distributed systems, tolerating up to f faulty nodes in a system of 3f+1 total nodes. PBFT achieves deterministic finality through a three-phase protocol (pre-prepare, prepare, commit) and processes thousands of requests per second with sub-millisecond latency overhead, making it suitable for permissioned blockchain networks requiring strong consistency guarantees.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -59,7 +59,28 @@ public:: true
       "label": "Byzantine Fault Tolerance"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:consensus-algorithm", "label": "Consensus Algorithm"},
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
+      {"@id": "urn:ngm:class:federated-byzantine-fault-tolerance", "label": "Federated Byzantine Fault Tolerance"},
+      {"@id": "urn:ngm:class:hot-stuff-consensus", "label": "HotStuff Consensus"},
+      {"@id": "urn:ngm:class:deterministic-finality", "label": "Deterministic Finality"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:validator-node", "label": "Validator Node"},
+      {"@id": "urn:ngm:class:trusted-execution-pbft", "label": "Trusted Execution PBFT"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:finality", "label": "Finality"},
+      {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:nakamoto-consensus", "label": "Nakamoto Consensus"},
+      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

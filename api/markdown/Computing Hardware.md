@@ -46,15 +46,30 @@ public:: true
   "@id": "urn:ngm:class:computing-hardware",
   "@type": "Class",
   "label": "Computing Hardware",
-  "definition": "Computing Hardware is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Computing Hardware encompasses the physical processing, memory, and peripheral devices that underpin spatial computing experiences, including GPUs, neural accelerators, XR headsets, and edge devices. It forms the substrate on which spatial applications, rendering engines, and sensor fusion pipelines execute.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
     }
   ],
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:xr-hardware", "label": "XR Hardware"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
+      {"@id": "urn:ngm:class:hardware-acceleration", "label": "Hardware Acceleration"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:hardware-and-edge", "label": "Hardware and Edge"},
+      {"@id": "urn:ngm:class:mixed-reality", "label": "Mixed Reality"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -96,7 +111,7 @@ public:: true
 
 
 - ### Definition
-  - Computing Hardware is a concept within the metaverse domain. Further enrichment pending.
+  - Computing Hardware encompasses the physical processing, memory, and peripheral devices that underpin spatial computing experiences, including GPUs, neural accelerators, XR headsets, and edge devices. It forms the substrate on which spatial applications, rendering engines, and sensor fusion pipelines execute.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:ComputingHardware
@@ -104,12 +119,15 @@ public:: true
 
 - ### Relationships
   - bridges-to:: [[Sensor Input]]
+  - enables:: [[Spatial Computing]], [[XR Hardware]]
+  - has-part:: [[GPU Compute]], [[Hardware Acceleration]]
+  - supports:: [[Hardware and Edge]], [[Mixed Reality]]
 
 - ### Content
 
   ## Overview
 
-  Computing Hardware represents an abstract concept in the metaverse ontology hierarchy.
+  Computing Hardware encompasses the physical processing, memory, and peripheral devices that underpin spatial computing experiences, including GPUs, neural accelerators, XR headsets, and edge devices. It forms the substrate on which spatial applications, rendering engines, and sensor fusion pipelines execute.
 
   #### Related Concepts
   - [[owl:Thing]]

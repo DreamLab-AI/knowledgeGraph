@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:proximity-sensor",
   "domain": "robotics",
-  "definition": "Proximity Sensor is a robotics and autonomous systems concept and a type of robotics.",
+  "definition": "An electronic device that detects the presence or distance of nearby objects without physical contact, using capacitive, inductive, ultrasonic, optical, or magnetic principles. Proximity sensors are foundational to robotic collision avoidance, autonomous navigation, and spatial mapping in both physical and hybrid physical-digital environments.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-perception",
@@ -13,12 +13,25 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:ngm:class:robot-safety",
+        "label": "Robot Safety"
+      },
+      {
+        "id": "urn:ngm:class:spatial-mapping",
+        "label": "Spatial Mapping"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -26,8 +39,26 @@
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:robot-sensor",
+        "label": "Robot Sensor"
+      },
+      {
+        "id": "urn:ngm:class:robotic-system",
+        "label": "Robotic System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      }
+    ]
   },
   "wikilinks": [
     {

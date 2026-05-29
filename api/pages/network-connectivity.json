@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:network-connectivity",
   "domain": "blockchain",
-  "definition": "Network Connectivity refers to the capacity of nodes, devices, or systems to establish reliable data communication links within or across networks, underpinning distributed applications and blockchain peer discovery.",
+  "definition": "Network Connectivity describes the ability of computing nodes, devices, or systems to establish, maintain, and exchange data across communication links, whether within a local area network, wide area network, or across heterogeneous internet topologies. It encompasses the physical layer (cables, wireless signals), logical addressing, routing protocols, and transport-layer reliability guarantees that together enable end-to-end data delivery. In distributed and blockchain contexts, network connectivity is a prerequisite for peer discovery, transaction propagation, and consensus participation.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-network-component",
@@ -14,11 +14,25 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +41,20 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:network-topology",
+        "label": "Network Topology"
+      },
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

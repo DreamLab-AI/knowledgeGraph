@@ -42,16 +42,32 @@ public:: true
   "@id": "urn:ngm:class:trojan-attack",
   "@type": "Class",
   "label": "Trojan Attack",
-  "definition": "A backdoor attack on AI models, often emphasizing supply chain compromise, where a pre-trained model or training pipeline is maliciously modified to contain hidden triggers that cause specific attacker-defined behaviors when activated, while maintaining normal performance otherwise.",
+  "definition": "A Trojan Attack is a supply-chain-oriented backdoor attack on AI models in which a pre-trained model or training pipeline is maliciously modified to embed hidden triggers; the model performs normally on clean inputs but produces attacker-defined outputs when specific trigger patterns are present. Unlike general backdoor attacks, Trojan attacks emphasise persistence through fine-tuning and distribution via public model repositories.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
       "label": "Governance and Safety"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:backdoor-attack", "label": "Backdoor Attack"},
+      {"@id": "urn:ngm:class:data-poisoning", "label": "Data Poisoning"},
+      {"@id": "urn:ngm:class:adversarial-attack", "label": "Adversarial Attack"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:adversarial-robustness", "label": "Adversarial Robustness"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:supply-chain", "label": "Supply Chain"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:ai-security", "label": "AI Security"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -95,7 +111,10 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **relatedTo**: Backdoor Attack, Data Poisoning, Adversarial Attack
+  - **contrastsWith**: Adversarial Robustness
+  - **requires**: Supply Chain
+  - **dependsOn**: AI Security
 
 - ### Content
   - A backdoor attack on AI models, often emphasizing supply chain compromise, where a pre-trained model or training pipeline is maliciously modified to contain hidden triggers that cause specific attacker-defined behaviors when activated, while maintaining normal performance otherwise.

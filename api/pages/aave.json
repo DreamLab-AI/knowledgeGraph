@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:aave",
   "domain": "blockchain",
-  "definition": "A decentralised, non-custodial liquidity protocol on Ethereum that enables users to supply and borrow crypto assets through algorithmically determined interest rates.",
+  "definition": "Aave is a decentralised, non-custodial liquidity protocol deployed on Ethereum and several EVM-compatible networks that enables users to supply crypto assets to earn yield and borrow against collateral at algorithmically determined variable or stable interest rates. It is governed by holders of its AAVE token through an on-chain governance process, and pioneered the flash loan \u2014 an uncollateralised loan that must be borrowed and repaid within a single transaction block \u2014 as a primitive for arbitrage and self-liquidation.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-defi-and-economics",
@@ -14,20 +14,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:yield-farming",
+        "label": "Yield Farming"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

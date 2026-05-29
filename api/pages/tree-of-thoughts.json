@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:tree-of-thoughts",
   "domain": "artificial-intelligence",
-  "definition": "A prompting framework for large language models that structures reasoning as a deliberate search over a tree of intermediate thought steps, enabling exploration and evaluation of multiple solution paths.",
+  "definition": "Tree of Thoughts (ToT) is a deliberate reasoning framework for large language models that generalises linear chain-of-thought prompting into a tree-structured search over intermediate thought steps. At each node in the tree the model generates multiple candidate next-thoughts, evaluates their promise using an LLM-based heuristic, and selects branches to expand via breadth-first or depth-first search with backtracking. This framework enables systematic exploration of alternative reasoning paths and is particularly effective for tasks requiring combinatorial planning, mathematical proof construction, or multi-step problem-solving where greedy left-to-right decoding is insufficient.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -14,20 +14,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:mathematical-reasoning",
+        "label": "Mathematical Reasoning"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:chain-of-thought",
+        "label": "Chain of Thought"
+      },
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "id": "urn:ngm:class:monte-carlo-tree-search",
+        "label": "Monte Carlo Tree Search"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

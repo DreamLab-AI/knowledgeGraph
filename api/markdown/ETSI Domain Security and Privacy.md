@@ -94,9 +94,10 @@ public:: true
   "@id": "urn:ngm:class:etsi-domain-security-and-privacy",
   "@type": "Class",
   "label": "ETSI Domain Security and Privacy",
-  "definition": "ETSI security and privacy framework protecting metaverse ecosystems through comprehensive controls spanning cryptography, access management, data governance, and compliance measures.",
+  "definition": "The ETSI Domain Security and Privacy is a governance framework protecting metaverse ecosystems through comprehensive controls spanning cryptography, access management, data governance, and compliance measures. It addresses threat surface mapping, post-quantum cryptographic resilience, privacy-enhancing computation, digital evidence chain of custody, and psychological profiling safeguards for users of immersive environments.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
@@ -107,7 +108,22 @@ public:: true
       "label": "Metaverse governance and safeguarding"
     }
   ],
-  "quality": 0.4,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:post-quantum-cryptography", "label": "Post-Quantum Cryptography"},
+      {"@id": "urn:ngm:class:privacy-impact-assessment", "label": "Privacy Impact Assessment"},
+      {"@id": "urn:ngm:class:threat-surface-map", "label": "Threat Surface Map"},
+      {"@id": "urn:ngm:class:security-layer", "label": "Security Layer"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:zero-trust-architecture-zta", "label": "Zero-Trust Architecture (ZTA)"},
+      {"@id": "urn:ngm:class:privacy-enhancing-computation-pec", "label": "Privacy-Enhancing Computation (PEC)"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:etsi-domain-identity-and-trust", "label": "ETSI Domain Identity and Trust"},
+      {"@id": "urn:ngm:class:digital-evidence-chain-of-custody", "label": "Digital Evidence Chain of Custody"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -214,7 +230,9 @@ public:: true
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **hasPart**: [[Post-Quantum Cryptography]], [[Privacy Impact Assessment]], [[Threat Surface Map]], [[Security Layer]]
+  - **requires**: [[Zero-Trust Architecture (ZTA)]], [[Privacy-Enhancing Computation (PEC)]]
+  - **relatedTo**: [[ETSI Domain Identity and Trust]], [[Digital Evidence Chain of Custody]]
 - ### Content
   - The ETSI Security and Privacy domain protects metaverse ecosystems through comprehensive security controls, cryptographic mechanisms, access governance, and privacy safeguards ensuring secure, trustworthy user experiences across distributed virtual environments.
   - ### Original Content

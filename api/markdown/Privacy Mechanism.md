@@ -42,9 +42,10 @@ public:: true
   "@id": "urn:ngm:class:privacy-mechanism",
   "@type": "Class",
   "label": "Privacy Mechanism",
-  "definition": "Privacy Mechanism is a type of Artificial Intelligence in the artificial intelligence domain.",
+  "definition": "A Privacy Mechanism is a technical method or protocol designed to preserve individuals' data privacy during data collection, processing, or publication. Examples include differential privacy, federated learning, and homomorphic encryption, each providing mathematically grounded guarantees against disclosure of sensitive information.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
@@ -56,6 +57,44 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy By Design"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      }
+    ]
   }
 }
 ```
@@ -87,14 +126,20 @@ public:: true
 
 
 - ### Definition
-  - Privacy Mechanism is a concept within the ai domain. Further enrichment pending.
+  - A Privacy Mechanism is a technical method or protocol designed to preserve individuals' data privacy during data collection, processing, or publication. Examples include differential privacy, federated learning, and homomorphic encryption, each providing mathematically grounded guarantees against disclosure of sensitive information.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:PrivacyMechanism
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Implements [[Differential Privacy]]
+  - Implements [[Federated Learning]]
+  - Implements [[Homomorphic Encryption]]
+  - Supports [[Privacy]]
+  - Supports [[Data Protection]]
+  - Requires [[Privacy By Design]]
+  - Related To [[GDPR Compliance]]
 
 - ### Content
 

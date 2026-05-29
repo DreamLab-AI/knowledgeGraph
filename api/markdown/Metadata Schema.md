@@ -79,7 +79,7 @@ public:: true
       "label": "Data Management"
     },
     {
-      "@id": "urn:ngm:class:data-standard",
+      "@id": "urn:ngm:class:data-standards",
       "label": "Data Standard"
     }
   ],

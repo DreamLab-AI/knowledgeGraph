@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:augmented-connected-workforce",
   "domain": "spatial-computing",
-  "definition": "Augmented Connected Workforce is a type of Metaverse and Telecollaboration in the spatial computing domain.",
+  "definition": "The Augmented Connected Workforce (ACW) is a digitally enhanced work paradigm in which human capabilities are amplified through the seamless integration of AI, augmented reality, virtual reality, and IoT technologies, enabling immersive spatial interactions and real-time connectivity across distributed teams. ACW systems overlay contextual digital information onto physical workspaces and connect workers to shared virtual environments, boosting safety, training efficacy, and operational coordination. It is recognised by Gartner as a strategic technology trend reshaping how organisations design, operate, and evolve their human workforce.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -17,21 +17,64 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.75,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:immersive-technology",
+        "label": "Immersive Technology"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:wearable-computing-platform",
+        "label": "Wearable Computing Platform"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:immersive-workspaces",
+        "label": "Immersive Workspaces"
+      },
+      {
+        "id": "urn:ngm:class:collaboration-platform",
+        "label": "Collaboration Platform"
+      },
+      {
+        "id": "urn:ngm:class:digital-workplace-platform",
+        "label": "Digital Workplace Platform"
+      }
+    ]
   },
   "wikilinks": [
     {

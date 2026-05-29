@@ -42,9 +42,10 @@ public:: true
   "@id": "urn:ngm:class:transferable-right",
   "@type": "Class",
   "label": "Transferable Right",
-  "definition": "Transferable Right is a type of Blockchain in the blockchain domain.",
+  "definition": "A Transferable Right is a legally or technically encoded entitlement that can be assigned, sold, or delegated from one party to another, typically enforced via smart contracts on a blockchain. Examples include tokenised intellectual property licences, digital asset ownership tokens, and royalty claims encoded in NFT standards.",
   "domain": "blockchain",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-token-and-asset",
@@ -56,6 +57,44 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:digital-ownership",
+        "label": "Digital Ownership"
+      },
+      {
+        "@id": "urn:ngm:class:digital-rights",
+        "label": "Digital Rights"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:royalty-distribution",
+        "label": "Royalty Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:asset-tokenisation",
+        "label": "Asset Tokenisation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "@id": "urn:ngm:class:license",
+        "label": "license"
+      }
+    ]
   }
 }
 ```
@@ -87,14 +126,20 @@ public:: true
 
 
 - ### Definition
-  - Transferable Right is a concept within the blockchain domain. Further enrichment pending.
+  - A Transferable Right is a legally or technically encoded entitlement that can be assigned, sold, or delegated from one party to another, typically enforced via smart contracts on a blockchain. Examples include tokenised intellectual property licences, digital asset ownership tokens, and royalty claims encoded in NFT standards.
 
 - ### Semantic Classification
   - owl-class:: blockchain:TransferableRight
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Implements [[Smart Contract]]
+  - Requires [[Digital Ownership]]
+  - Requires [[Digital Rights]]
+  - Enables [[Royalty Distribution]]
+  - Enables [[Asset Tokenisation]]
+  - Related To [[NFT]]
+  - Related To [[license]]
 
 - ### Content
 

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:metaverse-classification",
   "domain": "spatial-computing",
-  "definition": "Metaverse Classification is a type of Etsi Metaverse Domain Taxonomy in the spatial computing domain.",
+  "definition": "A structured taxonomy scheme for categorising metaverse platforms, applications, and components according to defined criteria such as openness, immersion level, economic model, and governance structure, enabling systematic comparison and standardised description within the ETSI metaverse domain model.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -17,8 +17,8 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -27,11 +27,34 @@
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:etsi-metaverse-domain-model",
+        "label": "Etsi Metaverse Domain Model"
+      }
+    ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:etsi-domain-immersive",
+        "label": "Etsi Domain Immersive"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:metaverse-domain",
+        "label": "Metaverse Domain"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-ontology",
+        "label": "Metaverse Ontology"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-architecture",
+        "label": "Metaverse Architecture"
+      }
+    ]
   },
   "wikilinks": [
     {

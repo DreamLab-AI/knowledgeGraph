@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:based-on",
   "domain": "robotics",
-  "definition": "International standard for quality management systems.",
+  "definition": "\"Based on\" is a provenance and derivation relation used in robotics standards and quality management frameworks to indicate that a system, design, or specification is derived from or conforms to an authoritative reference standard such as ISO 9001 or functional-safety norms. Within the robotics domain it records the normative lineage of robot software architectures, safety certifications, and performance benchmarks relative to their governing standards.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-safety-and-standards",
@@ -17,21 +17,70 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:standardization-bodies",
+        "label": "Standardization Bodies"
+      },
+      {
+        "id": "urn:ngm:class:standards-documentation",
+        "label": "Standards Documentation"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:robotics-platform",
+        "label": "Robotics Platform"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:standards-conformance",
+        "label": "Standards Conformance"
+      },
+      {
+        "id": "urn:ngm:class:compliance-standards",
+        "label": "Compliance Standards"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:robot-safety",
+        "label": "Robot Safety"
+      },
+      {
+        "id": "urn:ngm:class:robotics-systems",
+        "label": "Robotics Systems"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "id": "urn:ngm:class:quality-standard",
+        "label": "Quality Standard"
+      },
+      {
+        "id": "urn:ngm:class:iso-standards",
+        "label": "Iso Standards"
+      }
+    ]
   },
   "wikilinks": [
     {

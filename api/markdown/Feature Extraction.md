@@ -42,15 +42,29 @@ public:: true
   "@id": "urn:ngm:class:feature-extraction",
   "@type": "Class",
   "label": "Feature Extraction",
-  "definition": "Feature Extraction is a spatial computing concept and a type of spatial-computing.",
-  "domain": "spatial-computing",
-  "maturity": "draft",
+  "definition": "Feature Extraction is the process of transforming raw data into a reduced set of meaningful representations that capture task-relevant information for machine learning models. Deep learning architectures perform hierarchical feature extraction automatically through successive layers, whilst classical techniques such as PCA or wavelet transforms require manual engineering. Feature extraction reduces dimensionality, improves computational efficiency, and determines the quality of downstream model predictions.",
+  "domain": "artificial-intelligence",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
+      {"@id": "urn:ngm:class:autoencoder", "label": "Autoencoder"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:machine-learning-pipeline", "label": "Machine Learning Pipeline"},
+      {"@id": "urn:ngm:class:dimensionality-reduction", "label": "Dimensionality Reduction"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:feature-engineering", "label": "Feature Engineering"},
+      {"@id": "urn:ngm:class:embedding-model", "label": "Embedding Model"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -95,7 +109,12 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses:: [[Convolutional Neural Network]]
+  - uses:: [[Autoencoder]]
+  - enables:: [[Machine Learning Pipeline]]
+  - enables:: [[Dimensionality Reduction]]
+  - relatedTo:: [[Feature Engineering]]
+  - relatedTo:: [[Embedding Model]]
 
 - ### Content
   - ### Primary Definition

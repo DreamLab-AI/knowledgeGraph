@@ -8,6 +8,12 @@
 
 - ### Relationships
   - is-subclass-of:: [[Standards]]
+  - requires [[Regulatory Framework]]
+  - requires [[Compliance Framework]]
+  - enables [[Interoperability]]
+  - enables [[Audit Trail]]
+  - uses [[Compliance Monitoring]]
+  - uses [[Compliance Verification]]
 
 - ### Content
 

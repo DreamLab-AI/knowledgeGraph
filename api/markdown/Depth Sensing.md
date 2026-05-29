@@ -46,15 +46,29 @@ public:: true
   "@id": "urn:ngm:class:depth-sensing",
   "@type": "Class",
   "label": "Depth Sensing",
-  "definition": "Depth Sensing is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Depth Sensing is the measurement and capture of per-pixel distance information from a sensor to surfaces in the environment, producing depth maps or point clouds. Technologies include structured light, time-of-flight (ToF), active stereoscopy, and LiDAR. Depth sensing is foundational to augmented reality occlusion, robotic navigation, 3D scene reconstruction, and gesture recognition in spatial computing systems.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-interaction",
       "label": "Interaction Technology"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:lidar", "label": "Lidar"},
+      {"@id": "urn:ngm:class:stereo-camera", "label": "Stereo Camera"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:3-d-reconstruction", "label": "3D Reconstruction"},
+      {"@id": "urn:ngm:class:point-cloud", "label": "Point Cloud"},
+      {"@id": "urn:ngm:class:slam", "label": "SLAM"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:depth-estimation", "label": "Depth Estimation"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -96,7 +110,7 @@ public:: true
 
 
 - ### Definition
-  - Depth Sensing is a concept within the metaverse domain. Further enrichment pending.
+  - Depth Sensing is the measurement and capture of per-pixel distance information from a sensor to surfaces in the environment, producing depth maps or point clouds. Technologies include structured light, time-of-flight (ToF), active stereoscopy, and LiDAR. Depth sensing is foundational to augmented reality occlusion, robotic navigation, 3D scene reconstruction, and gesture recognition in spatial computing systems.
 
 bridges-to:: [[Sensor Input]]
 
@@ -105,7 +119,12 @@ bridges-to:: [[Sensor Input]]
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses [[Lidar]]
+  - uses [[Stereo Camera]]
+  - enables [[3D Reconstruction]]
+  - enables [[Point Cloud]]
+  - enables [[SLAM]]
+  - relatedTo [[Depth Estimation]]
 
 - ### Content
 

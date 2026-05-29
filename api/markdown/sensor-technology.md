@@ -1,12 +1,14 @@
 - ### Definition
-  - SensorTechnology is a concept within the ngm domain.
+  - Sensor Technology encompasses the diverse hardware devices and fusion algorithms that capture physical-world data for use in robotics, spatial computing, and XR systems. This includes inertial measurement units, LiDAR scanners, depth cameras, eye-tracking, haptic sensors, and biometric devices, combined with fusion techniques such as visual-inertial odometry and Kalman filtering to produce accurate, robust state estimates for autonomous systems and immersive experiences.
 
 - ### Semantic Classification
   - owl-class:: robotics:SensorTechnology
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **hasPart**: IMU, LiDAR, Camera, Eye Tracking, Haptic Feedback — these are the principal sensor modalities comprising Sensor Technology.
+  - **enables**: SLAM — sensor data is the raw input SLAM algorithms require; Sensor Fusion — multiple sensor streams are fused into coherent estimates; Perception System — sensors are the transducer layer feeding perception.
+  - **uses**: Depth Sensing — structured light and time-of-flight depth sensing is a core modality within the sensor technology stack.
 
 - ### Content
   # SensorTechnology

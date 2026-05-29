@@ -6,7 +6,9 @@
   - owl-role:: concept
 
 - ### Relationships
-  - is-subclass-of:: ['owl:Thing']
+  - hasPart: [[Gradient Descent]], [[Backpropagation]]
+  - enables: [[Deep Learning]], [[Fine Tuning]], [[Machine Learning]]
+  - uses: [[Neural Network]]
 
 - ### Content
 

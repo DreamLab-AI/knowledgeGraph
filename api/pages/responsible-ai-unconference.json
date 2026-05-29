@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:responsible-ai-unconference",
   "domain": "artificial-intelligence",
-  "definition": "Responsible AI Unconference is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "A Responsible AI Unconference is a participant-driven gathering that applies open-space technology to surface and negotiate ethical, social, and governance concerns around artificial intelligence. Unlike traditional conferences, the agenda is set on the day by attendees, enabling communities\u2014artists, technologists, marginalised groups, and policymakers\u2014to co-author discussions on topics such as bias, child-centric AI, feminist design, and the boundaries of acceptable automation. The format foregrounds perspectives historically excluded from mainstream AI discourse.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -14,20 +14,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:diversity-non-discrimination-and-fairness",
+        "label": "Diversity, Non-Discrimination, and Fairness"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:algorithmic-bias",
+        "label": "Algorithmic Bias"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": []

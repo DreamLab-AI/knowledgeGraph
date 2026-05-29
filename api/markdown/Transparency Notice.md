@@ -48,7 +48,7 @@ public:: true
   "label": "Transparency Notice",
   "definition": "A formal disclosure document or notification that informs users about data collection practices, processing purposes, privacy policies, and their rights regarding personal information handling in digital platforms and metaverse environments.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
@@ -59,11 +59,53 @@ public:: true
       "label": "Privacy Disclosure"
     }
   ],
-  "quality": 0.5,
+  "qualityScore": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:aiethics",
+        "label": "AIEthics"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:digital-rights",
+        "label": "Digital Rights"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:privacy-disclosure",
+        "label": "Privacy Disclosure"
+      }
+    ]
   }
 }
 ```
@@ -109,6 +151,14 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Privacy Disclosure]]
+  - Part Of [[Privacy Disclosure]]
+  - Requires [[GDPR Compliance]]
+  - Requires [[Data Protection]]
+  - Supports [[Data Governance]]
+  - Supports [[Digital Rights]]
+  - Supports [[Regulatory Compliance]]
+  - Related To [[Accountability]]
+  - Related To [[AIEthics]]
 
 - ### Content
 

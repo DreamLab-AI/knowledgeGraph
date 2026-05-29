@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:rb-0070-tactile-sensing",
   "domain": "robotics",
-  "definition": "tactile sensing is a robotics and autonomous systems concept and a type of Tactile Sensor.",
+  "definition": "Tactile sensing is the robotic capability to detect and measure contact forces, pressures, textures, and slip at points of physical interaction between the robot and its environment or human operators. Realised through arrays of pressure sensors, capacitive skins, or piezoelectric films distributed across end-effectors and link surfaces, tactile sensing enables compliant grasping, contact-triggered safety stops, and rich feedback for teleoperation. It is a key enabling technology for human-robot collaboration under ISO/TS 15066.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-perception",
@@ -17,21 +17,57 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:rb-0092-protective-stop",
+        "label": "rb 0092 protective stop"
+      },
+      {
+        "id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-operation",
+        "label": "Collaborative Operation"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:pressure-sensor",
+        "label": "Pressure Sensor"
+      },
+      {
+        "id": "urn:ngm:class:force-torque-sensor",
+        "label": "Force Torque Sensor"
+      }
+    ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-ts-15066",
+        "label": "ISO TS 15066"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:force-control",
+        "label": "Force Control"
+      }
+    ]
   },
   "wikilinks": [
     {

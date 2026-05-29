@@ -1,12 +1,13 @@
 - ### Definition
-  - Landvættir is a concept within the ngm domain.
+  - Landvættir is a practice-based art research project and portfolio documenting the bootstrapping era of Generative AI and AGI through digital landscapes, virtual worlds, and AI-generated imagery. Drawing on Scenism, Romanticism, and environmental psychology, it explores how AI systems trained on cultural visual heritage may dream or hallucinate the virtual landscapes that seeded their intelligence.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:Landvttir
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses:: [[Generative AI]]
+  - relatedTo:: [[Virtual World]], [[Immersive Experience]], [[Landscape]]
 
 - ### Content
   - Papers with Umran [[PEOPLE]]

@@ -5,20 +5,38 @@
   "public": true,
   "classIri": "urn:ngm:class:domain-adaptation",
   "domain": "artificial-intelligence",
-  "definition": "Domain adaptation is a machine learning technique that adjusts a model trained on a source domain to perform effectively on a target domain with a different data distribution, often with limited target-domain supervision.",
+  "definition": "Domain adaptation is a sub-field of transfer learning concerned with reducing the performance degradation that occurs when a model trained on a labelled source domain is applied to a target domain whose data distribution differs. Adaptation methods range from feature alignment (learning domain-invariant representations via adversarial training or maximum mean discrepancy minimisation) to instance re-weighting and self-training on unlabelled target data. It is applied extensively in NLP, computer vision, and speech recognition when labelled target data is scarce or costly to acquire.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
+    },
+    {
+      "id": "urn:ngm:class:transfer-learning",
+      "label": "Transfer Learning"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:pre-training",
+        "label": "Pre Training"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +45,16 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

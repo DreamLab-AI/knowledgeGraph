@@ -58,16 +58,33 @@ public:: true
   "@id": "urn:ngm:class:research-summary",
   "@type": "Class",
   "label": "RESEARCH_SUMMARY",
-  "definition": "A comprehensive synthesis document aggregating research findings, literature reviews, and academic insights across Metaverse, Blockchain, ArtificialIntelligence, and Robotics domains.",
+  "definition": "A comprehensive synthesis document aggregating research findings, literature reviews, and academic insights across Metaverse, Blockchain, Artificial Intelligence, and Robotics domains. It distils empirical evidence, theoretical frameworks, mathematical foundations, algorithm comparisons, implementation guidance, and future research directions for practitioners and stakeholders working across these converging technological fields.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:metaverse-domain", "label": "Metaverse Domain"},
+      {"@id": "urn:ngm:class:robotics-domain", "label": "Robotics Domain"},
+      {"@id": "urn:ngm:class:metaverse-ontology", "label": "Metaverse Ontology"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -129,7 +146,9 @@ public:: true
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart:: [[Robotics]], [[Artificial Intelligence]], [[Blockchain]], [[Metaverse]]
+  - uses:: [[Ontology]], [[Knowledge Graph]]
+  - relatedTo:: [[Metaverse Domain]], [[Robotics Domain]], [[Metaverse Ontology]]
 - ### Content
   - Research summaries aggregate findings, literature reviews, and academic insights across multiple domains, distilling evidence and future directions for stakeholders.
   - ### Original Content

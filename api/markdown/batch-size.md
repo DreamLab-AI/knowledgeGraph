@@ -7,7 +7,11 @@
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **partOf** [[Gradient Descent]] — batch size defines the granularity of each gradient update
+  - **relatedTo** [[Epoch]] — an epoch contains training-set-size divided by batch-size update steps
+  - **relatedTo** [[Hyperparameter]] — batch size is a key hyperparameter governing training dynamics
+  - **contrastsWith** [[Overfitting]] — small batches introduce noise that acts as implicit regularisation
+  - **dependsOn** [[Deep Learning]] — batch-based training is the standard deep learning optimisation loop
 
 - ### Content
   - ### Primary Definition

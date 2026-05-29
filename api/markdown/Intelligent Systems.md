@@ -42,15 +42,27 @@ public:: true
   "@id": "urn:ngm:class:intelligent-systems",
   "@type": "Class",
   "label": "Intelligent Systems",
-  "definition": "Intelligent Systems is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Intelligent Systems are computational systems that exhibit goal-directed behaviour through perception, reasoning, learning, and action. They integrate machine learning, knowledge representation, planning, and autonomous decision-making to operate effectively in complex or uncertain environments. In spatial computing contexts, intelligent systems underpin adaptive avatars, AI-driven scene management, and autonomous agents within persistent virtual environments.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:reasoning", "label": "Reasoning"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -87,14 +99,17 @@ public:: true
 
 
 - ### Definition
-  - Intelligent Systems is a concept within the metaverse domain. Further enrichment pending.
+  - Intelligent Systems are computational systems that exhibit goal-directed behaviour through perception, reasoning, learning, and action. They integrate machine learning, knowledge representation, planning, and autonomous decision-making to operate effectively in complex or uncertain environments. In spatial computing contexts, intelligent systems underpin adaptive avatars, AI-driven scene management, and autonomous agents within persistent virtual environments.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:IntelligentSystems
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Machine Learning]]
+  - requires [[Reasoning]]
+  - enables [[Artificial Intelligence]]
+  - relatedTo [[Knowledge Representation]]
 
 - ### Content
 

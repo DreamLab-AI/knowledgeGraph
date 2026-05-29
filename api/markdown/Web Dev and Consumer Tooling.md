@@ -42,15 +42,29 @@ public:: true
   "@id": "urn:ngm:class:web-dev-and-consumer-tooling",
   "@type": "Class",
   "label": "Web Dev and Consumer Tooling",
-  "definition": "Web Dev and Consumer Tooling is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "The ecosystem of frameworks, deployment platforms, low-code builders, and developer utilities used to construct and ship web applications and AI-assisted consumer products. Encompasses front-end frameworks (React Three Fiber, Streamlit, FastHTML), deployment pipelines (Vercel), and no-code/low-code AI builders enabling rapid product prototyping.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:code-generation", "label": "Code Generation"},
+      {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:web-technology", "label": "Web Technology"},
+      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:software-engineering", "label": "Software Engineering"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -92,14 +106,16 @@ public:: true
 
 
 - ### Definition
-  - WebDev and Consumer Tooling is a concept within the ngm domain.
+  - The ecosystem of frameworks, deployment platforms, low-code builders, and developer utilities used to construct and ship web applications and AI-assisted consumer products. Encompasses front-end frameworks (React Three Fiber, Streamlit, FastHTML), deployment pipelines (Vercel), and no-code/low-code AI builders enabling rapid product prototyping.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:WebDevAndConsumerTooling
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **Enables**: [[Code Generation]], [[Image Generation]] (via diffusion tooling)
+  - **Uses**: [[Web Technology]], [[Prompt Engineering]] (AI-assisted development)
+  - **Part-of**: [[Software Engineering]] discipline
 
 - ### Content
   - [SaaS WebApp with Streamlit & Python: Quick Guide | Level Up Coding (gitconnected.com)](https://levelup.gitconnected.com/build-a-data-science-saas-app-with-just-python-a-streamlit-guide-240e0a56fc86)

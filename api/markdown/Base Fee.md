@@ -70,9 +70,10 @@ public:: true
   "@id": "urn:ngm:class:base-fee",
   "@type": "Class",
   "label": "Base Fee",
-  "definition": "Minimum transaction fee within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "The Base Fee is the algorithmically determined minimum fee per unit of gas that every transaction must pay to be included in an Ethereum block, introduced by EIP-1559. It adjusts automatically each block based on whether the previous block was above or below its gas target, increasing when demand is high and decreasing when low. Unlike miner tips, the base fee is burned rather than paid to validators, creating a deflationary pressure on ETH supply and making gas price prediction more reliable for users.",
   "domain": "blockchain",
   "maturity": "established",
+  "qualityScore": 0.8,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-protocol-and-consensus",
@@ -87,7 +88,34 @@ public:: true
       "label": "EconomicMechanism"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:gas", "label": "Gas"},
+      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"},
+      {"@id": "urn:ngm:class:mempool", "label": "Mempool"},
+      {"@id": "urn:ngm:class:eip-1559", "label": "EIP-1559"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:gas-fee-market", "label": "Gas Fee Market"},
+      {"@id": "urn:ngm:class:burning-mechanism", "label": "Burning Mechanism"},
+      {"@id": "urn:ngm:class:mev", "label": "MEV"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:gas-price", "label": "Gas Price"},
+      {"@id": "urn:ngm:class:gas-limit", "label": "Gas Limit"},
+      {"@id": "urn:ngm:class:priority-fee", "label": "Priority Fee"},
+      {"@id": "urn:ngm:class:block-reward", "label": "Block Reward"},
+      {"@id": "urn:ngm:class:blockchain-economics", "label": "Blockchain Economics"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:priority-fee", "label": "Priority Fee"},
+      {"@id": "urn:ngm:class:miner", "label": "Miner"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:gas-fee-market", "label": "Gas Fee Market"},
+      {"@id": "urn:ngm:class:blockchain-economics", "label": "Blockchain Economics"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -158,7 +186,7 @@ public:: true
 
 
 - ### Definition
-  - Minimum transaction fee within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
+  The Base Fee is the algorithmically determined minimum fee per unit of gas that every transaction must pay to be included in an Ethereum block, introduced by EIP-1559. It adjusts automatically each block based on whether the previous block was above or below its gas target, increasing when demand is high and decreasing when low. Unlike miner tips, the base fee is burned rather than paid to validators, creating a deflationary pressure on ETH supply and making gas price prediction more reliable for users.
 
 - ### Semantic Classification
   - owl-class:: blockchain:BaseFee
@@ -169,7 +197,11 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Blockchain Entity]], [[EconomicMechanism]]
-  - bridges-to:: [[Virtual Economy]]
+  - requires:: [[Gas]], [[Blockchain Transaction]], [[Mempool]], [[EIP-1559]]
+  - enables:: [[Gas Fee Market]], [[Burning Mechanism]], [[MEV]]
+  - relatedTo:: [[Gas Price]], [[Gas Limit]], [[Priority Fee]], [[Block Reward]], [[Blockchain Economics]]
+  - contrastsWith:: [[Priority Fee]], [[Miner]]
+  - partOf:: [[Gas Fee Market]], [[Blockchain Economics]]
 
 - ### Content
 
@@ -239,6 +271,22 @@ public:: true
 
 
   <!-- Merged from Base Fee.md: Blockchain, Transaction Fee -->
+
+  ### EIP-1559 and the Base Fee Mechanism
+
+  Ethereum Improvement Proposal 1559 (London hard fork, August 2021) replaced the first-price auction gas model with a two-component fee system. Every block has a target gas limit (currently 15M gas), and the base fee adjusts ±12.5% per block depending on whether the previous block exceeded or was below this target. This creates a predictable, smooth fee curve that follows demand without wild per-block volatility, greatly improving the user experience for fee estimation.
+
+  ### Burning and Deflationary Dynamics
+
+  The entire base fee is permanently destroyed (burned) rather than distributed to validators. This introduces a deflationary supply mechanism: during periods of high network activity, ETH is burned faster than it is issued as block rewards, making the net issuance of ETH negative (ultra-sound money narrative). The priority fee (tip) is the only component retained by the validator proposing the block, preserving the incentive to include transactions.
+
+  ### Interaction with MEV and Mempool
+
+  Because the base fee is predictable, searchers and builders in MEV (Maximal Extractable Value) ecosystems can price their bundles relative to the base fee and optimise their priority tip to ensure inclusion. The mempool queues transactions; those bidding below the current base fee are excluded entirely. When network demand spikes suddenly, the base fee rises sharply, temporarily pricing out low-priority transactions and smoothing congestion over subsequent blocks.
+
+  ### Layer-2 Implications
+
+  On Ethereum rollups (Optimism, Arbitrum), the L2 gas fee structure inherits the L1 base fee as a component of the data publication cost. Rollup operators must monitor L1 base fee fluctuations to price their L2 transaction fees correctly. EIP-4844 (proto-danksharding) introduced separate blob fee markets that reduce rollup costs by providing cheaper, ephemeral data publication outside the standard base fee mechanism.
 
 - ### Provenance
   - sources:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]

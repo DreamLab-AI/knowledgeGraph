@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:nft",
   "domain": "blockchain",
-  "definition": "A Non-Fungible Token (NFT) is a unique cryptographic token on a blockchain that represents provable ownership and provenance of a distinct digital or physical asset.",
+  "definition": "A Non-Fungible Token (NFT) is a cryptographic token deployed on a blockchain that provides verifiable, tamper-resistant proof of unique ownership and provenance for a specific digital or physical asset, distinguishing it from fungible tokens where each unit is interchangeable. NFT metadata and media assets are typically stored off-chain (via IPFS or centralised hosting) while only the token identifier and ownership record reside on-chain. Primary token standards include ERC-721 for single-asset tokens and ERC-1155 for semi-fungible batch tokens on Ethereum-compatible chains.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-token-and-asset",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-ownership",
+        "label": "Digital Ownership"
+      },
+      {
+        "id": "urn:ngm:class:creator-economy",
+        "label": "Creator Economy"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:erc-721",
+        "label": "ERC-721"
+      },
+      {
+        "id": "urn:ngm:class:erc-1155",
+        "label": "ERC-1155"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

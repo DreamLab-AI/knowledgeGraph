@@ -58,9 +58,10 @@ public:: true
   "@id": "urn:ngm:class:healthcare-analytics",
   "@type": "Class",
   "label": "Healthcare Analytics",
-  "definition": "Healthcare Analytics applies artificial intelligence and data science to healthcare data for population health management, operational efficiency optimisation, clinical outcome prediction, resource allocation, and healthcare policy decision-making.",
+  "definition": "The application of artificial intelligence and data science to healthcare data for population health management, operational efficiency optimisation, clinical outcome prediction, resource allocation, and healthcare policy decision-making. Healthcare analytics systems analyse electronic health records, claims data, public health datasets, and operational metrics to derive actionable insights for clinical and administrative improvement.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-application",
@@ -71,11 +72,46 @@ public:: true
       "label": "Machine Learning"
     }
   ],
-  "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:medical-ai",
+        "label": "Medical AI"
+      },
+      {
+        "@id": "urn:ngm:class:healthcare-technology",
+        "label": "Healthcare Technology"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:pathology-ai",
+        "label": "Pathology AI"
+      },
+      {
+        "@id": "urn:ngm:class:medical-imaging-ai",
+        "label": "Medical Imaging AI"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-preserving-analytics",
+        "label": "Privacy Preserving Analytics"
+      }
+    ]
   }
 }
 ```
@@ -135,7 +171,14 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - is-subclass-of:: Medical AI
+  - Uses [[Data Analytics]]
+  - Uses [[Machine Learning]]
+  - Enables [[Medical AI]]
+  - Enables [[Healthcare Technology]]
+  - Related To [[Pathology AI]]
+  - Related To [[Medical Imaging AI]]
+  - Related To [[Privacy Preserving Analytics]]
 
 - ### Content
   - Healthcare Analytics applies artificial intelligence and data science to healthcare data for population health management, operational efficiency optimisation, clinical outcome prediction, resource allocation, and healthcare policy decision-making. These systems analyse electronic health records, claims data, public health data, and operational metrics to derive actionable insights for healthcare improvement.

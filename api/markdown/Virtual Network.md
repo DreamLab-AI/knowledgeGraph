@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:virtual-network",
   "@type": "Class",
   "label": "Virtual Network",
-  "definition": "A software-defined network infrastructure that creates logical network segments over physical hardware, enabling isolated, configurable communication channels for metaverse platforms, cloud services, and distributed applications through technologies like VLANs, VPNs, and network slicing.",
+  "definition": "A software-defined network infrastructure that creates logical network segments over physical hardware, enabling isolated, configurable communication channels for metaverse platforms, cloud services, and distributed applications through technologies such as VLANs, VPNs, Software Defined Networking (SDN), and 5G network slicing. Virtual networks provide Quality of Service guarantees, traffic isolation, and bandwidth allocation essential for latency-sensitive XR workloads.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -59,7 +60,21 @@ public:: true
       "label": "Network Infrastructure"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:network-infrastructure", "label": "Network Infrastructure"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:metaverse-platform", "label": "Metaverse Platform"},
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:encryption", "label": "Encryption"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -109,6 +124,10 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Network Infrastructure]]
+  - **partOf**: [[Network Infrastructure]] — virtual networks are a logical overlay on physical network infrastructure
+  - **enables**: [[Metaverse Platform]], [[Edge Computing]] — isolated virtual networks provide the QoS guarantees and security boundaries required by metaverse platforms and edge deployments
+  - **uses**: [[Encryption]] — VPN tunnels and encrypted VLAN traffic protect inter-service communication
+  - **supports**: [[Spatial Computing]] — network slicing and SDN provide the low-latency, high-bandwidth channels required by spatial computing workloads
 
 - ### Content
 

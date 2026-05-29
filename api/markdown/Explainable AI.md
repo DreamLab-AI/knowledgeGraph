@@ -88,13 +88,27 @@ public:: true
   "label": "Explainable AI",
   "definition": "AI systems designed to provide clear, understandable explanations of their decision-making processes, enabling stakeholders to comprehend how and why specific outputs are generated.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
     }
   ],
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
+      {"@id": "urn:ngm:class:bias-detection-methods", "label": "Bias Detection Methods"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:model-interpretability", "label": "Model Interpretability"},
+      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:ai-governance-framework", "label": "AI Governance Framework"},
+      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -194,7 +208,12 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - enables [[AI Governance]]
+  - enables [[Bias Detection Methods]]
+  - relatedTo [[Model Interpretability]]
+  - relatedTo [[AI Safety]]
+  - supports [[AI Governance Framework]]
+  - supports [[Regulatory Compliance]]
 
 - ### Content
   - AI systems designed to provide clear, understandable explanations of their decision-making processes, enabling stakeholders to comprehend how and why specific outputs are generated.

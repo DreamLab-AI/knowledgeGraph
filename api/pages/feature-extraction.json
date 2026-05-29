@@ -4,8 +4,8 @@
   "slug": "feature-extraction",
   "public": true,
   "classIri": "urn:ngm:class:feature-extraction",
-  "domain": "spatial-computing",
-  "definition": "Feature Extraction is a spatial computing concept and a type of spatial-computing.",
+  "domain": "artificial-intelligence",
+  "definition": "Feature Extraction is the process of transforming raw data into a reduced set of meaningful representations that capture task-relevant information for machine learning models. Deep learning architectures perform hierarchical feature extraction automatically through successive layers, whilst classical techniques such as PCA or wavelet transforms require manual engineering. Feature extraction reduces dimensionality, improves computational efficiency, and determines the quality of downstream model predictions.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:machine-learning-pipeline",
+        "label": "Machine Learning Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:dimensionality-reduction",
+        "label": "Dimensionality Reduction"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:autoencoder",
+        "label": "Autoencoder"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      },
+      {
+        "id": "urn:ngm:class:embedding-model",
+        "label": "Embedding Model"
+      }
+    ]
   },
   "wikilinks": [
     {

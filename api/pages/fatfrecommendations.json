@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:fatfrecommendations",
   "domain": "blockchain",
-  "definition": "The comprehensive international standards established by the Financial Action Task Force (FATF)\u2014an intergovernmental policy-making body founded at the July 1989 G7 Summit in Paris comprising 40 member jurisdictions and 2 regional organizations coordinating with 9 FATF-Style Regional Bodies (FSRBs...",
+  "definition": "The FATF Recommendations are the comprehensive international standards established by the Financial Action Task Force\u2014an intergovernmental body founded in 1989 comprising 40 member jurisdictions\u2014for combating money laundering, terrorist financing, and proliferation financing, covering customer due diligence, suspicious transaction reporting, record-keeping, and the regulation of virtual asset service providers through Recommendation 15 and the Travel Rule. They constitute the primary global anti-financial-crime framework that national regulators translate into domestic law, creating compliance obligations for financial institutions and cryptocurrency exchanges.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-governance-and-regulation",
@@ -17,21 +17,79 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "id": "urn:ngm:class:travel-rule",
+        "label": "Travel Rule"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-compliance",
+        "label": "Blockchain Compliance"
+      }
+    ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:virtual-asset",
+        "label": "Virtual Asset"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-compliance",
+        "label": "Blockchain Compliance"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ]
   },
   "wikilinks": [
     {

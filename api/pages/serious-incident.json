@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:serious-incident",
   "domain": "spatial-computing",
-  "definition": "An incident or malfunctioning of an AI system that directly or indirectly leads to death, serious health damage, serious disruption of critical infrastructure, or serious fundamental rights infringements.",
+  "definition": "Under EU AI Act Article 3(44), a Serious Incident is any incident or malfunctioning of an AI system that directly or indirectly causes death, serious health damage, serious disruption of critical infrastructure, or serious infringement of fundamental rights. Such incidents trigger mandatory reporting obligations for providers and deployers of high-risk AI systems and GPAI models with systemic risk, enabling rapid regulatory response and market surveillance under Article 73.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-governance-and-safety",
@@ -17,13 +17,28 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:market-surveillance-authority",
+        "label": "Market Surveillance Authority"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
@@ -31,7 +46,20 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:high-risk-ai-system",
+        "label": "High Risk AI System"
+      },
+      {
+        "id": "urn:ngm:class:ai-incident",
+        "label": "AI Incident"
+      },
+      {
+        "id": "urn:ngm:class:safety-oecd",
+        "label": "Safety (OECD)"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:plotting-a-graph-using-matplotlib-python-library",
   "domain": "infrastructure",
-  "definition": "Plotting a graph using matplotlib python library is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A Logseq-embedded Python code example demonstrating inline data visualisation using matplotlib within a Pyodide runtime. The snippet generates a sinusoidal plot, encodes it as a base64 PNG, and returns it for display inside the knowledge graph note, illustrating programmatic data visualisation within a personal knowledge management environment.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-software-engineering",
@@ -14,20 +14,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:visualization-layer",
+        "label": "Visualization Layer"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:data-visualisation",
+        "label": "Data Visualisation"
+      },
+      {
+        "id": "urn:ngm:class:python-and-py-torch",
+        "label": "Python and PyTorch"
+      },
+      {
+        "id": "urn:ngm:class:software-library",
+        "label": "Software Library"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": []

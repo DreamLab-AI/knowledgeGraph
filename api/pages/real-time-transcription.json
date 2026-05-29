@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:real-time-transcription",
   "domain": "artificial-intelligence",
-  "definition": "Automated speech recognition processing in which audio is converted to text with sub-second latency, enabling live captioning, voice interfaces, and streaming analytics.",
+  "definition": "Real-time transcription is the automated conversion of streaming audio to text with latency sufficiently low (typically below 500 ms word latency) to support synchronous human use cases such as live captioning, voice-controlled interfaces, meeting assistance, and broadcast subtitling. It requires streaming automatic speech recognition (ASR) architectures that produce partial and final hypotheses incrementally as audio frames arrive, rather than processing complete utterances offline. Modern systems combine acoustic models (typically based on conformer or whisper-encoder architectures), language models for hypothesis rescoring, and punctuation/formatting post-processors to produce readable output in real time.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-application",
@@ -14,11 +14,29 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:automatic-speech-recognition",
+        "label": "Automatic Speech Recognition"
+      },
+      {
+        "id": "urn:ngm:class:real-time-processing",
+        "label": "Real-time Processing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:voice-interaction",
+        "label": "Voice Interaction"
+      },
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +45,16 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

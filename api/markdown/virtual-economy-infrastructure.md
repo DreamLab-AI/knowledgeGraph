@@ -8,6 +8,12 @@
 
 - ### Relationships
   - is-subclass-of:: [[Virtual Economy]]
+  - hasPart [[Blockchain]]
+  - hasPart [[NFT Marketplace]]
+  - hasPart [[Decentralized Finance (DeFi)]]
+  - enables [[Digital Asset Trading]]
+  - enables [[Virtual Currency]]
+  - relatedTo [[Blockchain Governance]]
 
 - ### Content
 

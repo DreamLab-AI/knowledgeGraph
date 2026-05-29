@@ -37,16 +37,34 @@ public:: true
   "@id": "urn:ngm:class:social-platform",
   "@type": "Class",
   "label": "Social Platform",
-  "definition": "Social Platform is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A Social Platform is a networked software environment that mediates human connection, identity expression, content sharing, and community formation. It combines identity management, real-time communication, moderation tooling, and reputation mechanisms to sustain persistent social graphs, supporting both synchronous interaction (voice, video) and asynchronous content exchange across devices.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-network-and-comms",
       "label": "Network and Communication"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"},
+      {"@id": "urn:ngm:class:communication-protocol", "label": "Communication Protocol"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:virtual-community-platform", "label": "Virtual Community Platform"},
+      {"@id": "urn:ngm:class:avatar", "label": "Avatar"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:content-moderation", "label": "Content Moderation"},
+      {"@id": "urn:ngm:class:user-interface", "label": "User Interface"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:platform-governance", "label": "Platform Governance"},
+      {"@id": "urn:ngm:class:social-network-graph", "label": "Social Network Graph"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -76,14 +94,17 @@ public:: true
 
 
 - ### Definition
-  - SocialPlatform is a concept within the ngm domain.
+  - A Social Platform is a networked software environment that mediates human connection, identity expression, content sharing, and community formation. It combines identity management, real-time communication, moderation tooling, and reputation mechanisms to sustain persistent social graphs, supporting both synchronous interaction (voice, video) and asynchronous content exchange across devices.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:SocialPlatform
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires** → [[Digital Identity]], [[Communication Protocol]]
+  - **enables** → [[Virtual Community Platform]], [[Avatar]]
+  - **uses** → [[Content Moderation]], [[User Interface]]
+  - **supports** → [[Platform Governance]], [[Social Network Graph]]
 
 - ### Content
   # SocialPlatform

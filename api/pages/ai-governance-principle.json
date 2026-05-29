@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ai-governance-principle",
   "domain": "artificial-intelligence",
-  "definition": "Ai Governance Principle is a foundational concept in artificial intelligence that serves as a classification parent for 5 related concepts in the ontology.",
+  "definition": "A normative rule or guideline that shapes the design, development, deployment, and oversight of AI systems to ensure they remain safe, fair, transparent, and accountable. AI governance principles operationalise ethical commitments into actionable standards, informing policy frameworks such as the OECD AI Principles and the EU AI Act, and guiding organisational decision-making throughout the AI lifecycle.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -13,12 +13,34 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.3,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      },
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      },
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +49,12 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

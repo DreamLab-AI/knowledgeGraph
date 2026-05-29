@@ -33,15 +33,29 @@ public:: true
   "@id": "urn:ngm:class:projects",
   "@type": "Class",
   "label": "Projects",
-  "definition": "Projects is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Projects is the top-level organisational concept grouping active development initiatives within this knowledge graph. It serves as a Kanban and progress-tracking container for ongoing technical, research, and creative workstreams, linking to child project nodes such as PlayerTwo, BroBots, and Automated Podcast.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:player-two", "label": "Player Two"},
+      {"@id": "urn:ngm:class:project-bro-bots", "label": "Project BroBots"},
+      {"@id": "urn:ngm:class:project-automated-podcast", "label": "Project Automated Podcast"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:automated-planning", "label": "Automated Planning"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:agentic-alliance", "label": "Agentic Alliance"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -72,14 +86,16 @@ public:: true
 
 
 - ### Definition
-  - Projects is a concept within the ngm domain.
+  - Projects is the top-level organisational concept grouping active development initiatives within this knowledge graph. It serves as a Kanban and progress-tracking container for ongoing technical, research, and creative workstreams, linking to child project nodes such as PlayerTwo, BroBots, and Automated Podcast.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:Projects
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart: [[Player Two]], [[Project BroBots]], [[Project Automated Podcast]]
+  - uses: [[Automated Planning]]
+  - relatedTo: [[Agentic Alliance]]
 
 - ### Content
   - Fashion 3D objects

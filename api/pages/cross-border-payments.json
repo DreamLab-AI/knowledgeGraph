@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:cross-border-payments",
   "domain": "blockchain",
-  "definition": "Cross-Border Payments are financial transactions that originate in one country and are settled in another, increasingly facilitated by blockchain rails to reduce cost, latency, and intermediary friction.",
+  "definition": "Cross-Border Payments are financial transactions that originate in one country and are settled in another, requiring currency conversion and multi-jurisdiction clearing. Traditional correspondent banking routes incur multi-day settlement cycles and layered fees; blockchain-based rails\u2014including stablecoins, payment channels, and CBDCs\u2014reduce settlement to minutes and lower intermediary costs. They sit at the intersection of monetary policy, regulatory compliance, and distributed-ledger technology.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-defi-and-economics",
@@ -14,20 +14,44 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
     "enables": [],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

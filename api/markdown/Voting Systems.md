@@ -72,7 +72,7 @@ public:: true
   "label": "Voting Systems",
   "definition": "Blockchain-based electoral systems employing cryptographic verification, end-to-end verifiability, and distributed ledger technology to enable secure voting whilst facing critical security challenges identified by MIT research showing vulnerabilities allowing vote alteration, academic consensus o...",
   "domain": "blockchain",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-governance-and-regulation",
@@ -83,6 +83,21 @@ public:: true
       "label": "Blockchain Governance"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
+      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
+      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-chain Governance"},
+      {"@id": "urn:ngm:class:dao", "label": "DAO"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:privacy", "label": "Privacy"},
+      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -162,7 +177,13 @@ public:: true
   - belongs-to-domain:: [[BlockchainDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses [[Smart Contract]]
+  - uses [[Zero-Knowledge Proof]]
+  - uses [[Self Sovereign Identity]]
+  - enables [[On-chain Governance]]
+  - enables [[DAO]]
+  - relatedTo [[Privacy]]
+  - relatedTo [[Governance Token]]
 
 - ### Content
   - Blockchain-based voting systems address electoral integrity challenges whilst facing profound security concerns documented by leading academic researchers. Implementations demonstrate operational viability: Voatz processed **80,000+ votes across 50+ elections** with **4 audits** confirming authenticity, Estonia's **50%+ votes** now cast online through world's longest-running system (since 2005), and cost reductions from **$7-25 per vote to under $0.50** generate **$300 million savings** (2023 study). However, **MIT research (2020)** identified Voatz vulnerabilities enabling vote alteration without software independence, **Trail of Bits audit** discovered **79 findings** (one-third high-severity), **Moscow 2019** encryption cracked in **20 minutes** by French researcher, and **Swiss Post 2019** trapdoor commitment scheme enabled undetectable manipulation, leading **security expert Bruce Schneier** to conclude "Blockchain makes security worse" whilst academic consensus reaches "nearly universal" agreement that no technology can adequately secure online public elections.

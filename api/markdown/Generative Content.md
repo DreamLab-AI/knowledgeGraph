@@ -42,20 +42,50 @@ public:: true
   "@id": "urn:ngm:class:generative-content",
   "@type": "Class",
   "label": "Generative Content",
-  "definition": "Generative Content is a type of Artificial Intelligence in the artificial intelligence domain.",
+  "definition": "Generative Content is digital media — text, imagery, audio, 3D assets, or code — produced by generative AI models rather than human authors. It encompasses outputs of large language models, diffusion models, GANs, and neural synthesis systems, and raises distinct questions of provenance, copyright, and quality assurance in metaverse and spatial computing pipelines.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-application",
       "label": "AI Application"
     }
   ],
-  "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:metaverse-content-pipeline",
+        "label": "Metaverse Content Pipeline"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:3-d-asset",
+        "label": "3D Asset"
+      },
+      {
+        "@id": "urn:ngm:class:educational-methodology",
+        "label": "Educational Methodology"
+      }
+    ]
   }
 }
 ```
@@ -87,14 +117,18 @@ public:: true
 
 
 - ### Definition
-  - Generative Content is a concept within the metaverse domain. Further enrichment pending.
+  - Generative Content is digital media — text, imagery, audio, 3D assets, or code — produced by generative AI models rather than human authors. It encompasses outputs of large language models, diffusion models, GANs, and neural synthesis systems, and raises distinct questions of provenance, copyright, and quality assurance in metaverse and spatial computing pipelines.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:GenerativeContent
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Requires [[Generative AI]] as the underlying model technology
+  - Enables [[Metaverse Content Pipeline]] by automating asset creation at scale
+  - Uses [[Large Language Models]] for text and code generation
+  - Related to [[3D Asset]] (generative models increasingly produce geometry and textures)
+  - Related to [[Educational Methodology]] (adaptive learning materials as generative content)
 
 - ### Content
 

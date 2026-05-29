@@ -42,20 +42,62 @@ public:: true
   "@id": "urn:ngm:class:human-computer-interface",
   "@type": "Class",
   "label": "Human Computer Interface",
-  "definition": "Human Computer Interface is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "The set of hardware and software components through which a human user perceives, commands, and receives feedback from a computing system. In spatial computing, human computer interfaces extend beyond screens and keyboards to include gesture input, voice commands, gaze control, haptic feedback, and brain-computer interfaces, fundamentally shaping how users navigate and manipulate virtual environments.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-interaction",
       "label": "Interaction Technology"
     }
   ],
-  "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:hand-tracking",
+        "label": "Hand Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:spatial-tracking-technology",
+        "label": "Spatial Tracking Technology"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:brain-computer-interfaces",
+        "label": "Brain Computer Interfaces"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-user-interface",
+        "label": "3D User Interface"
+      }
+    ]
   }
 }
 ```
@@ -87,14 +129,17 @@ public:: true
 
 
 - ### Definition
-  - Human Computer Interface is a concept within the metaverse domain. Further enrichment pending.
+  - The set of hardware and software components through which a human user perceives, commands, and receives feedback from a computing system. In spatial computing, human computer interfaces extend beyond screens and keyboards to include gesture input, voice commands, gaze control, haptic feedback, and brain-computer interfaces, fundamentally shaping how users navigate and manipulate virtual environments.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:HumanComputerInterface
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Has part [[Hand Tracking]], [[Eye Tracking]], [[Haptic Feedback]]
+  - Uses [[Spatial Tracking Technology]]
+  - Enables [[Mixed Reality]], [[Augmented Reality]]
+  - Related to [[Brain Computer Interfaces]], [[3D User Interface]]
 
 - ### Content
 

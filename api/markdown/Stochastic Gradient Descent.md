@@ -42,15 +42,28 @@ public:: true
   "@id": "urn:ngm:class:stochastic-gradient-descent",
   "@type": "Class",
   "label": "Stochastic Gradient Descent",
-  "definition": "Stochastic Gradient Descent is a spatial computing concept and a type of spatial-computing.",
-  "domain": "spatial-computing",
-  "maturity": "draft",
+  "definition": "Stochastic Gradient Descent (SGD) is an iterative optimisation algorithm that updates model parameters by computing gradients from randomly sampled mini-batches rather than the full training dataset, trading gradient accuracy for computational efficiency and the ability to escape shallow local minima. SGD and its adaptive variants (Adam, RMSprop, AdaGrad) are the primary training algorithms for deep neural networks across vision, language, and reinforcement learning domains.",
+  "domain": "artificial-intelligence",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
     }
   ],
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
+      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -95,7 +108,11 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - enables [[Deep Learning]]
+  - enables [[Neural Network]]
+  - uses [[Machine Learning]]
+  - relatedTo [[Reinforcement Learning]]
+  - relatedTo [[Transfer Learning]]
 
 - ### Content
   - ### Primary Definition

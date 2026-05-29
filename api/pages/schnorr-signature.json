@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:schnorr-signature",
   "domain": "blockchain",
-  "definition": "Efficient signature scheme within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "A provably secure digital signature scheme based on the discrete logarithm problem over elliptic curves, offering linearity properties that enable key and signature aggregation. Within blockchain systems Schnorr signatures underpin features such as Taproot, MuSig multi-signature protocols, and threshold signing, providing smaller signature sizes and stronger privacy compared to ECDSA.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-cryptographic-primitive",
@@ -21,21 +21,60 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-signature-verification",
+        "label": "Digital Signature Verification"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:secp256k1",
+        "label": "secp256k1"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ecdsa",
+        "label": "ECDSA"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:taproot-assets",
+        "label": "Taproot Assets"
+      },
+      {
+        "id": "urn:ngm:class:signature-scheme",
+        "label": "Signature Scheme"
+      }
+    ]
   },
   "wikilinks": [
     {

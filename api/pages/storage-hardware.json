@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:storage-hardware",
   "domain": "spatial-computing",
-  "definition": "A storage hardware component in the Metaverse domain that required by DataStorageLayer.",
+  "definition": "Storage Hardware comprises the physical devices and subsystems responsible for persistently recording, retrieving, and managing digital data within computing infrastructure. This category covers technologies ranging from solid-state drives and NVMe arrays to distributed storage nodes and archival media. In AI and spatial computing contexts, storage hardware is a critical constraint on model training throughput, inference latency, and the scalability of data pipelines.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -17,11 +17,29 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.75,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:data-storage-layer",
+        "label": "Data Storage Layer"
+      },
+      {
+        "id": "urn:ngm:class:storage-layer",
+        "label": "Storage Layer"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
+      },
+      {
+        "id": "urn:ngm:class:storage-infrastructure",
+        "label": "Storage Infrastructure"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
@@ -30,8 +48,34 @@
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:hardware-and-edge",
+        "label": "Hardware and Edge"
+      },
+      {
+        "id": "urn:ngm:class:computing-hardware",
+        "label": "Computing Hardware"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:processing-hardware",
+        "label": "Processing Hardware"
+      },
+      {
+        "id": "urn:ngm:class:training-hardware",
+        "label": "Training Hardware"
+      },
+      {
+        "id": "urn:ngm:class:inference-hardware",
+        "label": "Inference Hardware"
+      },
+      {
+        "id": "urn:ngm:class:data-processing-hardware",
+        "label": "Data Processing Hardware"
+      }
+    ]
   },
   "wikilinks": [
     {

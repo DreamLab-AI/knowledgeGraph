@@ -66,9 +66,10 @@ public:: true
   "@id": "urn:ngm:class:gas-limit",
   "@type": "Class",
   "label": "Gas Limit",
-  "definition": "Maximum gas per transaction within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "A Gas Limit is the maximum amount of gas — the unit measuring computational effort — that a sender authorises for a blockchain transaction or that a block may contain in aggregate. It serves as a hard cap preventing unbounded resource consumption, protecting network nodes from denial-of-service attacks and ensuring predictable block processing times. On Ethereum, each transaction carries a user-set gas limit and each block carries a protocol-enforced block gas limit that validators adjust over time.",
   "domain": "blockchain",
   "maturity": "established",
+  "qualityScore": 0.8,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-protocol-and-consensus",
@@ -80,10 +81,36 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:economic-mechanism",
-      "label": "EconomicMechanism"
+      "label": "Economic Mechanism"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"},
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:smart-contract-execution", "label": "Smart Contract Execution"},
+      {"@id": "urn:ngm:class:blockchain-scalability", "label": "Blockchain Scalability"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:base-fee", "label": "Base Fee"},
+      {"@id": "urn:ngm:class:fee-market", "label": "Fee Market"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:gas-price", "label": "Gas Price"},
+      {"@id": "urn:ngm:class:transaction-fee", "label": "Transaction Fee"},
+      {"@id": "urn:ngm:class:mev", "label": "MEV"},
+      {"@id": "urn:ngm:class:blockchain-economics", "label": "Blockchain Economics"},
+      {"@id": "urn:ngm:class:validator-node", "label": "Validator Node"},
+      {"@id": "urn:ngm:class:mempool", "label": "Mempool"},
+      {"@id": "urn:ngm:class:block-size", "label": "Block Size"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
+      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -148,8 +175,23 @@ public:: true
 ```
 
 
-- ### Definition
-  - Maximum gas per transaction within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
+### Definition
+
+A Gas Limit is the maximum amount of gas — the unit measuring computational effort — that a sender authorises for a blockchain transaction or that a block may contain in aggregate. It serves as a hard cap preventing unbounded resource consumption, protecting network nodes from denial-of-service attacks and ensuring predictable block processing times. On Ethereum, each transaction carries a user-set gas limit and each block carries a protocol-enforced block gas limit that validators adjust over time.
+
+### Relationships
+
+Gas Limit **requires** Blockchain Transaction (as the entity to which limits apply) and a Consensus Mechanism (to enforce block-level limits across all nodes). It **enables** Smart Contract Execution by bounding the computational cost of arbitrary code and contributes to Blockchain Scalability by controlling how many transactions fit in a block. It **depends on** Base Fee (EIP-1559's protocol-calculated per-unit cost) and the Fee Market (the broader mechanism that balances supply and demand for block space). Gas Limit is closely **related to** Gas Price (the per-unit fee multiplier), Transaction Fee (the product of gas used and gas price), MEV (miners/validators exploit gas ordering), Blockchain Economics (resource pricing signals), Validator Node (which proposes block gas limits), Mempool (where transactions queue waiting for inclusion), and Block Size (the byte-level analogue to gas-level resource caps). It **contrasts with** pure Proof of Work and Proof of Stake as those describe the sybil-resistance mechanism, whereas gas limit describes the resource-metering layer that sits above consensus.
+
+### Content
+
+Gas as a concept was introduced by Ethereum to decouple the cost of computation from the volatile market price of Ether. Every EVM opcode carries a fixed gas cost reflecting its relative computational and storage burden; the sum of opcode costs for a transaction must not exceed the sender's stated gas limit. If a transaction runs out of gas mid-execution, all state changes revert and the sender still pays for gas consumed — a design that discourages spam while preventing loss of miner/validator work.
+
+The block gas limit governs throughput at the network layer. In Ethereum's pre-EIP-1559 model miners could vote to adjust the block gas limit by ±0.1% per block, giving a slow but responsive feedback loop between demand and capacity. EIP-1559, deployed in the London upgrade (2021), introduced a target block size of half the gas limit and a protocol-calculated base fee that rises when blocks are fuller than target, providing more predictable fees while preserving the outer block gas limit as an absolute cap.
+
+The interaction between Gas Limit and the Fee Market is critical for Blockchain Economics. When network congestion is high, the Mempool fills with pending transactions and users raise gas prices (or priority fees post-EIP-1559) to increase the probability of inclusion. MEV actors, including block builders under proposer-builder separation, optimise transaction ordering within gas-limit constraints to capture arbitrage and liquidation revenue. Validator Nodes on proof-of-stake Ethereum now vote on the gas limit through a similar gradual-adjustment mechanism, balancing demand for block space against the hardware requirements of running full nodes.
+
+Blockchain Scalability is directly constrained by block gas limits. Layer-2 solutions — optimistic rollups and ZK-rollups — batch many L2 transactions into a single L1 transaction that consumes a bounded amount of gas, effectively multiplying throughput without raising the L1 gas limit. Adjusting the gas limit involves a trade-off: higher limits increase throughput but raise the computational and storage burden on every Validator Node, risking centralisation as only high-performance nodes can keep up.
 
 - ### Semantic Classification
   - owl-class:: blockchain:GasLimit
@@ -157,78 +199,6 @@ public:: true
   - owl-inferred:: blockchain:VirtualObject
   - belongs-to-domain:: [[TokenEconomicsDomain]]
   - implemented-in-layer:: [[EconomicLayer]]
-
-- ### Relationships
-  - is-subclass-of:: [[Blockchain Entity]], [[EconomicMechanism]]
-
-- ### Content
-
-  ## Class Declaration
-  Declaration(Class(:GasLimit))
-
-  ## Subclass Relationships
-  SubClassOf(:GasLimit :EconomicMechanism)
-  SubClassOf(:GasLimit :BlockchainEntity)
-
-  ## Essential Properties
-  SubClassOf(:GasLimit
-    (ObjectSomeValuesFrom :partOf :Blockchain))
-
-  SubClassOf(:GasLimit
-    (ObjectSomeValuesFrom :hasProperty :Property))
-
-  ## Data Properties
-  DataPropertyAssertion(:hasIdentifier :GasLimit "BC-0107"^^xsd:string)
-  DataPropertyAssertion(:hasAuthorityScore :GasLimit "1.0"^^xsd:decimal)
-  DataPropertyAssertion(:isFoundational :GasLimit "true"^^xsd:boolean)
-
-  ## Object Properties
-  ObjectPropertyAssertion(:enablesFeature :GasLimit :BlockchainFeature)
-  ObjectPropertyAssertion(:relatesTo :GasLimit :RelatedConcept)
-
-  ## Annotations
-  AnnotationAssertion(rdfs:label :GasLimit "Gas Limit"@en)
-  AnnotationAssertion(rdfs:comment :GasLimit
-    "Maximum gas per transaction"@en)
-  AnnotationAssertion(dct:description :GasLimit
-    "Foundational blockchain concept with formal ontological definition"@en)
-  AnnotationAssertion(:termID :GasLimit "BC-0107")
-  AnnotationAssertion(:priority :GasLimit "1"^^xsd:integer)
-  AnnotationAssertion(:category :GasLimit "economic-incentive"@en)
-  )
-      ```
-
-  - ## About Gas Limit
-
-  - Maximum gas per transaction within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
-  - ### Key Characteristics
-    - 1. **Definitional Property**: Core defining characteristic
-    - 2. **Functional Property**: Operational behavior
-    - 3. **Structural Property**: Compositional elements
-    - 4. **Security Property**: Security guarantees provided
-    - 5. **Performance Property**: Efficiency considerations
-  - ### Technical Components
-    - **Implementation**: How concept is realized technically
-    - **Verification**: Methods for validating correctness
-    - **Interaction**: Relationships with other components
-    - **Constraints**: Technical limitations and requirements
-  - ### Use Cases
-    - **1. Core Blockchain Operation**
-    - **Application**: Fundamental blockchain functionality
-    - **Example**: Practical implementation in major blockchains
-    - **Requirements**: Technical prerequisites
-    - **Benefits**: Value provided to blockchain systems
-  - ### Standards & References
-    - [[ISO/IEC 23257:2021]] - Blockchain and distributed ledger technologies
-    - [[IEEE 2418.1]] - Blockchain and distributed ledger technologies
-    - [[NIST NISTIR]] - Blockchain and distributed ledger technologies
-
-
-
-  <!-- Merged from BC 0107 gas limit.md: MetaverseDomain -->
-
-
-  <!-- Merged from Gas Limit.md: Base Fee, Blockchain, Gas Price, Priority Fee, Resource Control -->
 
 - ### Provenance
   - sources:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]

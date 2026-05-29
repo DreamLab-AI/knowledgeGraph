@@ -37,16 +37,31 @@ public:: true
   "@id": "urn:ngm:class:telecommunications-infrastructure",
   "@type": "Class",
   "label": "Telecommunications Infrastructure",
-  "definition": "Telecommunications Infrastructure is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Telecommunications Infrastructure comprises the physical and logical systems — including fibre-optic networks, cellular base stations, satellite links, exchange points, and backbone routers — that carry digital communications at scale. It underpins latency-sensitive applications such as real-time rendering, telecollaboration, and edge AI by providing the transport layer on which higher-level protocols operate.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-network-and-comms",
       "label": "Network and Communication"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:remote-communication", "label": "Remote Communication"},
+      {"@id": "urn:ngm:class:telecollaboration", "label": "Telecollaboration"},
+      {"@id": "urn:ngm:class:video-conferencing", "label": "Video Conferencing"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:latency-management-protocol", "label": "Latency Management Protocol"},
+      {"@id": "urn:ngm:class:content-delivery-network", "label": "Content Delivery Network"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"},
+      {"@id": "urn:ngm:class:bandwidth-adaptation", "label": "Bandwidth Adaptation"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -76,14 +91,16 @@ public:: true
 
 
 - ### Definition
-  - TelecommunicationsInfrastructure is a concept within the ngm domain.
+  - Telecommunications Infrastructure comprises the physical and logical systems — including fibre-optic networks, cellular base stations, satellite links, exchange points, and backbone routers — that carry digital communications at scale. It underpins latency-sensitive applications such as real-time rendering, telecollaboration, and edge AI by providing the transport layer on which higher-level protocols operate.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:TelecommunicationsInfrastructure
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **enables** → [[Remote Communication]], [[Telecollaboration]], [[Video Conferencing]]
+  - **supports** → [[Latency Management Protocol]], [[Content Delivery Network]]
+  - **hasPart** → [[Network Protocol]], [[Bandwidth Adaptation]]
 
 - ### Content
   # TelecommunicationsInfrastructure

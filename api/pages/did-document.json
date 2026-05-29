@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:did-document",
   "domain": "blockchain",
-  "definition": "A JSON-LD resource associated with a Decentralised Identifier that contains cryptographic public keys, authentication methods, and service endpoints enabling verifiable, self-sovereign identity interactions.",
+  "definition": "A DID Document is a JSON-LD resource associated with a Decentralised Identifier (DID) that expresses the DID subject's cryptographic public keys, authentication methods, assertion methods, key agreement protocols, and service endpoints. Resolved from a DID via a DID method-specific read operation, a DID Document enables verifiers to discover how to authenticate with, or communicate securely to, the DID subject without relying on a centralised registry. DID Documents are specified by the W3C DID Core standard and are a foundational component of self-sovereign identity and verifiable credential ecosystems.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-cryptographic-primitive",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:json-ld",
+        "label": "JSON-LD"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

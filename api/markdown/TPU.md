@@ -54,12 +54,12 @@ public:: true
   "@id": "urn:ngm:class:tpu",
   "@type": "Class",
   "label": "TPU",
-  "definition": "Tensor Processing Unit, Google's custom-developed application-specific integrated circuit (ASIC) optimized for neural network machine learning workloads.",
+  "definition": "Tensor Processing Unit — Google's custom ASIC optimised for the dense matrix multiplications that dominate neural network training and inference. TPUs use systolic arrays to achieve high throughput on 8-bit and 16-bit arithmetic at significantly lower energy per FLOP than general-purpose GPUs, and are available via Google Cloud as Cloud TPUs for large-scale model training.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:cat-ai-infrastructure",
+      "@id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure (Category)"
     },
     {
@@ -67,7 +67,24 @@ public:: true
       "label": "AI Hardware"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
+      {"@id": "urn:ngm:class:hardware-acceleration", "label": "Hardware Acceleration"},
+      {"@id": "urn:ngm:class:edge-ai-accelerator", "label": "Edge AI Accelerator"},
+      {"@id": "urn:ngm:class:fpga", "label": "FPGA"},
+      {"@id": "urn:ngm:class:npu", "label": "NPU"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
+      {"@id": "urn:ngm:class:model-training", "label": "Model Training"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:distributed-training", "label": "Distributed Training"},
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

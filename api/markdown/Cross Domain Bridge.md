@@ -62,16 +62,30 @@ public:: true
   "@id": "urn:ngm:class:cross-domain-bridge",
   "@type": "Class",
   "label": "Cross Domain Bridge",
-  "definition": "Cross Domain Bridge is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A Cross Domain Bridge is an architectural pattern, protocol, or middleware system that enables interoperability and data exchange between heterogeneous collaboration platforms, virtual environments, and organisational systems. Implementations include protocol translators (WebRTC, SIP, H.323), identity federation layers (SAML, OAuth, OpenID Connect), and data transformation services (REST, GraphQL, gRPC). Advanced bridges leverage blockchain for trustless cross-domain transactions and open standards such as OpenXR for spatial interoperability.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-network-and-comms",
       "label": "Network and Communication"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"},
+      {"@id": "urn:ngm:class:avatar-interoperability", "label": "Avatar Interoperability"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:open-xr", "label": "OpenXR"},
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:cross-platform-interoperability", "label": "Cross-Platform Interoperability"},
+      {"@id": "urn:ngm:class:data-interoperability", "label": "Data Interoperability"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -139,7 +153,9 @@ public:: true
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **enables**: Interoperability, Avatar Interoperability (bridges unlock cross-platform participation)
+  - **uses**: OpenXR, Blockchain (open standards and trustless ledgers underpin bridge protocols)
+  - **supports**: Cross-Platform Interoperability, Data Interoperability (downstream properties a bridge realises)
 
   - bridges-to:: [[Blockchain]] (bc)
 - ### Content

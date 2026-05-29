@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:aiethics-domain",
   "domain": "artificial-intelligence",
-  "definition": "The AIicsDomain represents the comprehensive knowledge domain of ical considerations, fairness principles, governance frameworks, and accountability mechanisms in artificial intelligence systems.",
+  "definition": "The AIEthicsDomain is the comprehensive knowledge domain encompassing ethical considerations, fairness principles, governance frameworks, and accountability mechanisms for artificial intelligence systems, spanning mathematical fairness metrics, bias mitigation techniques, transparency methods, and regulatory compliance across the full AI lifecycle.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -14,10 +14,36 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      },
+      {
+        "id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      },
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:bias",
+        "label": "Bias"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
@@ -25,9 +51,19 @@
     "bridgesTo": [],
     "uses": [],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:aiethics",
+        "label": "AIEthics"
+      }
+    ]
   },
   "wikilinks": [
     {

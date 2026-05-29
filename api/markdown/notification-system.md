@@ -1,12 +1,17 @@
 - ### Definition
-  - Notification System is a concept within the ngm domain.
+  - A software component that delivers event-driven alerts, presence indicators, and system messages to users or services in real time. In virtual world and metaverse contexts, notification systems manage social events, user-to-user signals, and platform state changes across distributed infrastructure, typically using push protocols or pub-sub messaging patterns.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:NotificationSystem
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses** [[Event Driven Architecture]] — notification delivery relies on event-driven messaging patterns
+  - **uses** [[Realtime Communication]] — real-time delivery channels carry notifications to connected clients
+  - **partOf** [[Platform Service]] — notification systems are a core managed service within platform stacks
+  - **partOf** [[Networking Infrastructure]] — notification pipelines depend on underlying networking infrastructure
+  - **enables** [[Social Presence]] — presence indicators are a key notification type in virtual social environments
+  - **enables** [[Event Management]] — event-driven notifications coordinate user actions around scheduled events
 
 - ### Content
   # Notification System

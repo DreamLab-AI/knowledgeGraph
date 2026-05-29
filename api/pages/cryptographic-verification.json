@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:cryptographic-verification",
   "domain": "infrastructure",
-  "definition": "Cryptographic Verification is a type of Cryptographic System in the infrastructure domain.",
+  "definition": "Cryptographic Verification is the process of using cryptographic primitives\u2014such as digital signatures, hash functions, and zero-knowledge proofs\u2014to confirm the authenticity, integrity, and non-repudiation of data, identities, or transactions. It forms the trust foundation for blockchain systems, content authentication, and decentralised identity schemes.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-security-and-identity",
@@ -18,20 +18,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:content-authentication",
+        "label": "Content Authentication"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      }
+    ]
   },
   "wikilinks": [
     {

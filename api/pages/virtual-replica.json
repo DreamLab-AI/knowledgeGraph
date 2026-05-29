@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:virtual-replica",
   "domain": "spatial-computing",
-  "definition": "A digital representation of a physical object, system, or environment created through 3D modeling, photogrammetry, or scanning technologies, serving as a static or dynamic copy for visualization, simulation, analysis, and testing purposes without the real-time data connectivity that characterizes...",
+  "definition": "A digital representation of a physical object, system, or environment created through 3D modelling, photogrammetry, or LiDAR scanning, serving as a static or dynamic copy for visualisation, simulation, analysis, and testing without the real-time bidirectional data connectivity that distinguishes a full digital twin. Virtual replicas are typically point-in-time snapshots; they support heritage preservation, product safety testing, urban planning, and manufacturing visualisation workflows.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -17,21 +17,57 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:virtual-museum-tour",
+        "label": "Virtual Museum Tour"
+      },
+      {
+        "id": "urn:ngm:class:virtual-factory",
+        "label": "Virtual Factory"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      },
+      {
+        "id": "urn:ngm:class:3-d-modeling",
+        "label": "3D Modeling"
+      },
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-modeling",
+        "label": "Digital Modeling"
+      },
+      {
+        "id": "urn:ngm:class:simulation-software",
+        "label": "Simulation Software"
+      }
+    ]
   },
   "wikilinks": [
     {

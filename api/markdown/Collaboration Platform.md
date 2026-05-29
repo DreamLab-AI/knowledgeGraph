@@ -42,20 +42,50 @@ public:: true
   "@id": "urn:ngm:class:collaboration-platform",
   "@type": "Class",
   "label": "Collaboration Platform",
-  "definition": "Collaboration Platform is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A Collaboration Platform is an integrated software infrastructure that unifies communication channels, content management, workflow automation, and coordination tools to support distributed teamwork. Contemporary platforms combine real-time messaging, video conferencing, shared workspaces, and third-party integration ecosystems within API-first architectures.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
     }
   ],
-  "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:augmented-reality-collaboration",
+        "label": "Augmented Reality Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin-collaboration",
+        "label": "Digital Twin Collaboration"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:metaverse-and-telecollaboration",
+        "label": "Metaverse and Telecollaboration"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:xr-meeting-space",
+        "label": "XR Meeting Space"
+      }
+    ]
   }
 }
 ```
@@ -87,14 +117,18 @@ public:: true
 
 
 - ### Definition
-  - CollaborationPlatform is a concept within the ngm domain.
+  - A Collaboration Platform is an integrated software infrastructure that unifies communication channels, content management, workflow automation, and coordination tools to support distributed teamwork. Contemporary platforms combine real-time messaging, video conferencing, shared workspaces, and third-party integration ecosystems within API-first architectures.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:CollaborationPlatform
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Enables [[Augmented Reality Collaboration]] by providing the communication substrate
+  - Enables [[Digital Twin Collaboration]] for shared virtual model review
+  - Uses [[Edge Computing]] for low-latency media processing
+  - Bridges to [[Metaverse and Telecollaboration]] as spatial extensions of collaboration
+  - Related to [[XR Meeting Space]] as an immersive collaboration modality
 
 - ### Content
 

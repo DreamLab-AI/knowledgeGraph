@@ -37,9 +37,10 @@ public:: true
   "@id": "urn:ngm:class:rigid-body-dynamics",
   "@type": "Class",
   "label": "Rigid Body Dynamics",
-  "definition": "Rigid Body Dynamics is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Rigid Body Dynamics is a branch of classical mechanics that models objects as non-deformable solids, computing motion, collision response, and momentum conservation through numerical integration. It underpins real-time physics simulation in game engines, robotics, and spatial computing environments.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
@@ -51,6 +52,40 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:physics-engine",
+        "label": "Physics Engine"
+      },
+      {
+        "@id": "urn:ngm:class:physics-based-animation",
+        "label": "Physics-Based Animation"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:real-time-processing",
+        "label": "Real-time Processing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:fluid-simulation",
+        "label": "Fluid Simulation"
+      }
+    ]
   }
 }
 ```
@@ -76,14 +111,19 @@ public:: true
 
 
 - ### Definition
-  - RigidBodyDynamics is a concept within the ngm domain.
+  - Rigid Body Dynamics is a branch of classical mechanics that models objects as non-deformable solids, computing motion, collision response, and momentum conservation through numerical integration. It underpins real-time physics simulation in game engines, robotics, and spatial computing environments.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:RigidBodyDynamics
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Requires [[Physics Simulation]]
+  - Requires [[Collision Detection]]
+  - Enables [[Physics Engine]]
+  - Enables [[Physics-Based Animation]]
+  - Uses [[Real-time Processing]]
+  - Related To [[Fluid Simulation]]
 
 - ### Content
   # RigidBodyDynamics

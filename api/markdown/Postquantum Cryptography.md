@@ -42,16 +42,46 @@ public:: true
   "@id": "urn:ngm:class:postquantum-cryptography",
   "@type": "Class",
   "label": "Postquantum Cryptography",
-  "definition": "Postquantum Cryptography is a type of Infrastructure in the infrastructure domain.",
+  "definition": "Postquantum Cryptography (PQC) is the class of cryptographic algorithms designed to remain secure against adversaries equipped with large-scale quantum computers, replacing public-key schemes such as RSA and elliptic-curve cryptography that are broken by Shor's algorithm. PQC families include lattice-based, hash-based, code-based, and isogeny-based constructions, several of which NIST standardised in 2024 (e.g. CRYSTALS-Kyber, CRYSTALS-Dilithium).",
   "domain": "infrastructure",
-  "maturity": "emerging",
+  "maturity": "established",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-security-and-identity",
       "label": "Security and Identity"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:elliptic-curve-cryptography", "label": "Elliptic Curve Cryptography"},
+      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public-Key Cryptography"},
+      {"@id": "urn:ngm:class:asymmetric-encryption", "label": "Asymmetric Encryption"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
+      {"@id": "urn:ngm:class:cryptographic-key-management", "label": "Cryptographic Key Management"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
+      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public-Key Infrastructure"},
+      {"@id": "urn:ngm:class:censorship-resistance", "label": "Censorship Resistance"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:encryption", "label": "Encryption"},
+      {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:cyber-security-and-cryptography", "label": "Cyber Security and Cryptography"},
+      {"@id": "urn:ngm:class:cybersecurity-standard", "label": "Cybersecurity Standard"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:quantum-computing", "label": "Quantum Computing"},
+      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
+      {"@id": "urn:ngm:class:blockchain-application", "label": "Blockchain Application"},
+      {"@id": "urn:ngm:class:digital-signature-verification", "label": "Digital Signature Verification"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -101,7 +131,11 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **Contrasts with** the quantum-vulnerable [[Elliptic Curve Cryptography]], [[Public-Key Cryptography]], and [[Asymmetric Encryption]] schemes it is designed to supersede.
+  - **Requires** [[Cryptographic Hash Function]] primitives and sound [[Cryptographic Key Management]] for hybrid and hash-based constructions.
+  - **Enables** quantum-safe [[Digital Signature]]s, forward-secure [[Public-Key Infrastructure]], and [[Censorship Resistance]] for long-lived data.
+  - **Uses** [[Encryption]] and [[Hash Function]] building blocks; **supports** [[Cyber Security and Cryptography]] practice and [[Cybersecurity Standard]] compliance.
+  - **Related to** [[Quantum Computing]], [[Zero-Knowledge Proof]] systems, [[Blockchain Application]]s, and [[Digital Signature Verification]].
 
 - ### Content
 

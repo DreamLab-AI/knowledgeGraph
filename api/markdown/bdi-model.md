@@ -1,5 +1,5 @@
 - ### Definition
-  - BDI Model is a concept within the ai domain.
+  - A deliberative agent architecture grounded in Bratman's theory of practical reasoning, structuring agent cognition around Beliefs (world knowledge), Desires (motivational goals), and Intentions (committed plans), with a reasoning cycle covering belief revision, deliberation, means-end reasoning, and intention reconsideration.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:BdiModel
@@ -7,6 +7,10 @@
 
 - ### Relationships
   - is-subclass-of:: [[Artificial Intelligence]]
+  - hasPart:: [[Goal]], [[Agent]]
+  - enables:: [[Autonomy Level]], [[AI Agent System]]
+  - uses:: [[Artificial Intelligence]]
+  - relatedTo:: [[Objective]], [[Human in the Loop]]
 
 - ### Content
 

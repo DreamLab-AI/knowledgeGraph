@@ -1,5 +1,5 @@
 - ### Definition
-  - Generative Pre-trained Transformer: an autoregressive language model that uses transformer decoder architecture and is pre-trained on large text corpora using next-token prediction.
+  - Generative Pre-trained Transformer: an autoregressive language model that uses transformer decoder architecture and is pre-trained on large text corpora using next-token prediction. GPT models learn rich representations through unsupervised pre-training and are subsequently fine-tuned for diverse downstream NLP tasks, demonstrating that scale and the language modelling objective yield powerful transfer learning.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:GPT
@@ -7,7 +7,14 @@
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Implements: [[Transformer Architecture]]
+  - Uses: [[Pre Training]]
+  - Uses: [[Transfer Learning]]
+  - Uses: [[Attention Mechanism]]
+  - Enables: [[Text Generation]]
+  - Enables: [[Natural Language Processing]]
+  - Depends On: [[Large Language Models]]
+  - Related To: [[Fine Tuning]]
 
 - ### Content
   - Generative Pre-trained Transformer: an autoregressive language model that uses transformer decoder architecture and is pre-trained on large text corpora using next-token prediction.

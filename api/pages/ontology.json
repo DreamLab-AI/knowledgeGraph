@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ontology",
   "domain": "infrastructure",
-  "definition": "A formal, explicit specification of a shared conceptualisation that defines entities, their properties, and the relationships between them within a knowledge domain.",
+  "definition": "In computer science and knowledge engineering, an ontology is a formal, machine-readable specification of a shared conceptualisation within a domain: it explicitly defines the classes of entities that exist, the properties and attributes of those entities, the relationships (object properties) that may hold between them, and the logical axioms that constrain valid world states. Ontologies are expressed using languages such as OWL 2 (Web Ontology Language) built atop RDF, enabling automated reasoning engines to infer implicit knowledge and detect logical inconsistencies. They serve as the schema and semantic backbone of knowledge graphs, linked data systems, and interoperability frameworks across domains.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-data-management",
@@ -14,20 +14,51 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      },
+      {
+        "id": "urn:ngm:class:owl-class-hierarchy",
+        "label": "OWL Class Hierarchy"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

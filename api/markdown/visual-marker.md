@@ -8,6 +8,9 @@
 
 - ### Relationships
   - is-subclass-of:: [[AR Technology]]
+  - uses:: [[Computer Vision]], [[Pose Estimation]], [[Sensor Fusion]]
+  - enables:: [[Augmented Reality]], [[Spatial Mapping]]
+  - relatedTo:: [[SLAM]], [[Object Detection]]
 
 - ### Content
 

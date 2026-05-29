@@ -48,7 +48,7 @@ public:: true
   "label": "Contrastive Learning",
   "definition": "A self-supervised learning approach that learns representations by contrasting positive pairs (similar samples) against negative pairs (dissimilar samples).",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
@@ -59,7 +59,21 @@ public:: true
       "label": "Machine Learning"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:feature-extraction", "label": "Feature Extraction"},
+      {"@id": "urn:ngm:class:embedding-model", "label": "Embedding Model"},
+      {"@id": "urn:ngm:class:multimodal-ai", "label": "Multimodal AI"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:curriculum-learning", "label": "Curriculum Learning"}
+    ]
+  },
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -109,6 +123,11 @@ public:: true
 
 - ### Relationships
   - bridges-to:: [[Computer Vision]]
+  - enables [[Feature Extraction]]
+  - enables [[Embedding Model]]
+  - enables [[Multimodal AI]]
+  - relatedTo [[Deep Learning]]
+  - contrastsWith [[Curriculum Learning]]
 
 - ### Content
   - A self-supervised learning approach that learns representations by contrasting positive pairs (similar samples) against negative pairs (dissimilar samples). Contrastive learning enables models to learn powerful representations without explicit labels by pushing similar examples together and dissimilar ones apart in embedding space.

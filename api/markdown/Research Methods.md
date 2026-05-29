@@ -42,9 +42,10 @@ public:: true
   "@id": "urn:ngm:class:research-methods",
   "@type": "Class",
   "label": "Research Methods",
-  "definition": "Research Methods is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Research Methods are the systematic procedures and techniques used to collect, analyse, and interpret data in order to generate reliable knowledge. They encompass qualitative approaches (interviews, ethnography), quantitative approaches (controlled experiments, statistical analysis), and mixed-methods designs, with evaluation benchmarks and user studies being particularly relevant to AI and spatial computing research.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
@@ -56,6 +57,34 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards",
+        "label": "Evaluation benchmarks and leaderboards"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:user-research",
+        "label": "User Research"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-research-area",
+        "label": "AI Research Area"
+      },
+      {
+        "@id": "urn:ngm:class:clinical-trials",
+        "label": "Clinical Trials"
+      },
+      {
+        "@id": "urn:ngm:class:data-augmentation-strategies",
+        "label": "Data Augmentation Strategies"
+      }
+    ]
   }
 }
 ```
@@ -87,14 +116,18 @@ public:: true
 
 
 - ### Definition
-  - Research Methods is a concept within the metaverse domain. Further enrichment pending.
+  - Research Methods are the systematic procedures and techniques used to collect, analyse, and interpret data in order to generate reliable knowledge. They encompass qualitative approaches (interviews, ethnography), quantitative approaches (controlled experiments, statistical analysis), and mixed-methods designs, with evaluation benchmarks and user studies being particularly relevant to AI and spatial computing research.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:ResearchMethods
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Enables [[Evaluation benchmarks and leaderboards]]
+  - Uses [[User Research]]
+  - Related To [[AI Research Area]]
+  - Related To [[Clinical Trials]]
+  - Related To [[Data Augmentation Strategies]]
 
 - ### Content
 

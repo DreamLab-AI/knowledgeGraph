@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:latent-diffusion",
   "domain": "artificial-intelligence",
-  "definition": "Latent Diffusion Models perform the denoising diffusion process in a compressed latent space encoded by a variational autoencoder, substantially reducing computational cost while maintaining high-quality image synthesis.",
+  "definition": "Latent Diffusion Models (LDMs) are a class of generative models that perform the iterative denoising diffusion process in the compressed latent space of a pre-trained variational autoencoder (VAE), rather than directly in pixel space. This design reduces the computational cost of training and inference by an order of magnitude whilst retaining perceptual quality, because the VAE encodes high-dimensional image data into a compact, semantically rich latent representation. LDMs are conditioned on text, image, or other modalities via cross-attention mechanisms inside a U-Net backbone, enabling text-to-image synthesis and image-to-image translation at practical compute budgets.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -14,11 +14,29 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:variational-autoencoders",
+        "label": "Variational Autoencoders"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "id": "urn:ngm:class:text-to-image",
+        "label": "Text-to-Image"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +45,16 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      },
+      {
+        "id": "urn:ngm:class:latent-space",
+        "label": "latent space"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

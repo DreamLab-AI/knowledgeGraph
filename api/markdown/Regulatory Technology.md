@@ -42,15 +42,28 @@ public:: true
   "@id": "urn:ngm:class:regulatory-technology",
   "@type": "Class",
   "label": "Regulatory Technology",
-  "definition": "Regulatory Technology is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Regulatory Technology (RegTech) applies digital tools—including AI, machine learning, and distributed ledger systems—to automate and streamline regulatory compliance processes such as KYC/AML checks, audit trail generation, risk reporting, and consent management. In spatial-computing and metaverse contexts, RegTech addresses jurisdiction-sensitive data flows, real-time content moderation, and smart-contract-based enforcement of platform governance rules.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
       "label": "Governance and Safety"
     }
   ],
+  "relations": {
+    "supports": [
+      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"},
+      {"@id": "urn:ngm:class:data-protection-regulation", "label": "Data Protection Regulation"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:smart-contracts", "label": "Smart Contracts"},
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:governance-framework", "label": "Governance Framework"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -87,23 +100,30 @@ public:: true
 
 
 - ### Definition
-  - Regulatory Technology is a concept within the metaverse domain. Further enrichment pending.
+  - Regulatory Technology (RegTech) applies digital tools—including AI, machine learning, and distributed ledger systems—to automate and streamline regulatory compliance processes such as KYC/AML checks, audit trail generation, risk reporting, and consent management. In spatial-computing and metaverse contexts, RegTech addresses jurisdiction-sensitive data flows, real-time content moderation, and smart-contract-based enforcement of platform governance rules.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:RegulatoryTechnology
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - supports [[Compliance Framework]]
+  - supports [[Data Protection Regulation]]
+  - uses [[Smart Contracts]]
+  - uses [[Machine Learning]]
+  - relatedTo [[Governance Framework]]
 
 - ### Content
 
   ## Overview
 
-  Regulatory Technology represents an abstract concept in the metaverse ontology hierarchy.
+  Regulatory Technology automates compliance workflows that would otherwise require manual legal and administrative effort. In the metaverse domain, RegTech tools are applied to monitor in-world transactions for anti-money-laundering signals, enforce age-gating and content-moderation policies, and generate immutable audit trails for regulatory reporting. Smart-contract-based enforcement allows compliance rules to be embedded directly into platform logic rather than applied as post-hoc manual review.
 
   #### Related Concepts
-  - [[owl:Thing]]
+  - [[Compliance Framework]]
+  - [[Data Protection Regulation]]
+  - [[Smart Contracts]]
+  - [[Governance Framework]]
 
 - ### Provenance
   - sources::

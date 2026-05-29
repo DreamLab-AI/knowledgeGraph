@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:license",
   "domain": "infrastructure",
-  "definition": "license is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A legal instrument that specifies the permissions, conditions, and restrictions under which intellectual property \u2014 including software, data, and creative works \u2014 may be used, reproduced, modified, and distributed, forming the contractual basis for open-source and open-data ecosystems.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-legal-and-regulatory",
@@ -13,8 +13,8 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -24,10 +24,36 @@
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-rights",
+        "label": "Digital Rights"
+      },
+      {
+        "id": "urn:ngm:class:digital-rights-management",
+        "label": "Digital Rights Management"
+      },
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      },
+      {
+        "id": "urn:ngm:class:copyright",
+        "label": "copyright"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": []

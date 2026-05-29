@@ -10,7 +10,11 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Preference Learning]]
+  - requires [[Large Language Models]]
+  - contrastsWith [[Reinforcement Learning from Human Feedback]]
+  - enables [[AI Alignment]]
+  - enables [[Fine Tuning]]
 
 - ### Content
   - An alignment method that directly uses preference data to fine-tune language models without training a separate reward model or using reinforcement learning, offering a simpler alternative to RLHF. DPO optimizes the policy directly on preference comparisons through a reparameterisation of the reward model objective.

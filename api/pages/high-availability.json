@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:high-availability",
   "domain": "infrastructure",
-  "definition": "A system design property ensuring continuous operational uptime and minimal service disruption through redundancy, failover mechanisms, and fault-tolerant architecture patterns.",
+  "definition": "High availability (HA) is an infrastructure design property that specifies and implements the conditions under which a system continues to deliver its intended service in the presence of component failures, maintenance windows, or demand spikes. HA is quantified by availability targets expressed in nines (e.g., 99.9% equates to roughly 8.7 hours of permitted downtime per year), achieved through redundant components, active-passive or active-active failover, health monitoring, and automated recovery. It is a core non-functional requirement in cloud-native, telecommunications, and financial systems where service interruption carries regulatory or commercial penalties.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:reliability",
+        "label": "Reliability"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "id": "urn:ngm:class:data-replication",
+        "label": "Data Replication"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

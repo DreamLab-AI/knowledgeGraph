@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:multi-user-systems",
   "domain": "spatial-computing",
-  "definition": "Multi User Systems is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Networked platforms that enable multiple simultaneous participants to share, interact with, and mutually modify a common virtual environment in real time. Multi-user systems require state synchronisation, authority arbitration, conflict resolution, and low-latency communication to maintain coherent shared presence across distributed clients.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -13,13 +13,45 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      },
+      {
+        "id": "urn:ngm:class:network-quality-metric",
+        "label": "Network Quality Metric"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:networking-technology",
+        "label": "Networking Technology"
+      },
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "id": "urn:ngm:class:mixed-reality-platform",
+        "label": "Mixed Reality Platform"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],

@@ -48,7 +48,8 @@ public:: true
   "label": "Virtual Commissioning",
   "definition": "The simulation and testing of manufacturing systems in a virtual environment before physical implementation, using digital twins and real-time simulation to validate control algorithms, robot motion, and process sequences, reducing commissioning time and costs during development.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -64,6 +65,44 @@ public:: true
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:industrial-automation",
+        "label": "IndustrialAutomation"
+      },
+      {
+        "@id": "urn:ngm:class:cyber-physical-systems",
+        "label": "Cyber Physical Systems"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      },
+      {
+        "@id": "urn:ngm:class:simulation-software",
+        "label": "Simulation Software"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      }
+    ]
   }
 }
 ```
@@ -109,6 +148,13 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Digital Twin]]
+  - Requires: [[Simulation]]
+  - Requires: [[Digital Twin]]
+  - Uses: [[Control System]]
+  - Uses: [[Simulation Software]]
+  - Enables: [[IndustrialAutomation]]
+  - Enables: [[Cyber Physical Systems]]
+  - Related To: [[Embedded Systems]]
 
 - ### Content
 

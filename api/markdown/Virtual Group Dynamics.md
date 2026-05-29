@@ -62,9 +62,10 @@ public:: true
   "@id": "urn:ngm:class:virtual-group-dynamics",
   "@type": "Class",
   "label": "Virtual Group Dynamics",
-  "definition": "Virtual Group Dynamics is a spatial computing concept and a type of Metaverse.",
+  "definition": "The psychological and behavioural patterns of interaction, role formation, norm development, decision-making, conflict, and cohesion within groups operating in virtual environments, shaped by unique affordances of digital mediation such as anonymity, persistence, and spatial distribution. Key phenomena include the online disinhibition effect, avatar-mediated identity, emergent leadership hierarchies, and scalable broadcast communication structures.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -75,7 +76,22 @@ public:: true
       "label": "Metaverse"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:social-presence", "label": "Social Presence"},
+      {"@id": "urn:ngm:class:proteus-effect", "label": "Proteus Effect"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:avatar", "label": "Avatar"},
+      {"@id": "urn:ngm:class:spatial-audio", "label": "Spatial Audio"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:governance-framework", "label": "Governance Framework"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -136,7 +152,7 @@ public:: true
 
 
 - ### Definition
-  - Virtual Group Dynamics is a concept within the mv domain.
+  - **Virtual Group Dynamics** describes the psychological and behavioural patterns of interaction, role formation, norm development, decision-making, conflict, and cohesion within groups operating in virtual environments, shaped by unique affordances of digital mediation such as anonymity, persistence, and spatial distribution. Key phenomena include the online disinhibition effect, avatar-mediated identity, emergent leadership hierarchies, and scalable broadcast communication structures.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:VirtualGroupDynamics
@@ -144,6 +160,10 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Metaverse]]
+  - **relatedTo**: [[Social Presence]], [[Proteus Effect]] — group behaviour is modulated by perceived social presence and avatar-identity congruence
+  - **requires**: [[Avatar]], [[Spatial Audio]] — embodied group interaction depends on avatar representation and spatially accurate audio cues
+  - **partOf**: [[Metaverse]] — virtual group dynamics are a core sociological dimension of metaverse environments
+  - **enables**: [[Governance Framework]] — understanding group dynamics informs the design of community governance and moderation systems
 
 - ### Content
 

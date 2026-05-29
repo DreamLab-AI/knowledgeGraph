@@ -1,14 +1,19 @@
 - ### Definition
-  - Digital Experience is a concept within the metaverse domain. Further enrichment pending.
+  - Digital Experience encompasses the totality of interactions a user has with digital products, services, and environments — spanning web, mobile, and immersive (XR) surfaces. It integrates user interface design, content delivery, personalisation, and spatial computing to shape how users perceive and engage with digital platforms.
 
-bridges-to:: [[Sensor Input]]
+- bridges-to:: [[Sensor Input]]
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:DigitalExperience
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Requires [[User Experience]]
+  - Requires [[User Interface]]
+  - Enables [[Immersive Experience]]
+  - Enables [[Virtual World]]
+  - Uses [[Content Delivery Network]]
+  - Related To [[Digital Content]]
 
 - ### Content
 

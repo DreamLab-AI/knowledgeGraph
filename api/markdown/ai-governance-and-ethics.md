@@ -26,7 +26,7 @@ public:: true
   "@type": "Class",
   "@id": "urn:ngm:class:ai-governance-and-ethics",
   "label": "AI Governance and Ethics",
-  "definition": "Intermediate taxonomy category for ai governance and ethics concepts within the artificial intelligence domain.",
+  "definition": "A taxonomy hub encompassing the policies, frameworks, principles, and regulatory mechanisms that govern the responsible development, deployment, and oversight of artificial intelligence systems. This category covers ethical guidelines, accountability structures, safety requirements, bias mitigation, transparency mandates, and legal compliance obligations that collectively shape how AI systems are built and governed.",
   "domain": "artificial-intelligence",
   "subClassOf": [
     {
@@ -34,7 +34,24 @@ public:: true
       "label": "Artificial Intelligence"
     }
   ],
-  "relations": {},
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"},
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
+      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
+      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"},
+      {"@id": "urn:ngm:class:ai-fairness", "label": "AI Fairness"},
+      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"},
+      {"@id": "urn:ngm:class:ai-risk-management", "label": "AI Risk Management"},
+      {"@id": "urn:ngm:class:algorithmic-bias", "label": "Algorithmic Bias"},
+      {"@id": "urn:ngm:class:algorithmic-accountability", "label": "Algorithmic Accountability"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:ai-governance-framework", "label": "AI Governance Framework"},
+      {"@id": "urn:ngm:class:ai-transparency-framework", "label": "Ai Transparency Framework"},
+      {"@id": "urn:ngm:class:accountability", "label": "Accountability"}
+    ]
+  },
   "qualityScore": 0.8,
   "maturity": "established"
 }

@@ -33,9 +33,9 @@ public:: true
   "@id": "urn:ngm:class:human-tracking-and-slam-capture",
   "@type": "Class",
   "label": "Human tracking and SLAM capture",
-  "definition": "Human tracking and SLAM capture is a robotics and autonomous systems concept and a type of Sensor Technology.",
+  "definition": "Human tracking and SLAM (Simultaneous Localisation and Mapping) capture is the combined process of localising and mapping an environment while concurrently tracking human body pose, motion, and spatial position. Applied in XR headsets, autonomous robots, and motion capture rigs, it fuses depth sensing, inertial data, and computer vision to produce real-time skeletal and spatial models used for avatar animation, scene reconstruction, and safety-aware robot navigation.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-perception",
@@ -46,6 +46,20 @@ public:: true
       "label": "Sensor Technology"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:slam", "label": "SLAM"},
+      {"@id": "urn:ngm:class:depth-sensing", "label": "Depth Sensing"},
+      {"@id": "urn:ngm:class:pose-estimation", "label": "Pose Estimation"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:spatial-mapping", "label": "Spatial Mapping"},
+      {"@id": "urn:ngm:class:motion-capture", "label": "Motion Capture"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -83,7 +97,12 @@ public:: true
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses:: [[SLAM]]
+  - uses:: [[Depth Sensing]]
+  - uses:: [[Pose Estimation]]
+  - enables:: [[Spatial Mapping]]
+  - enables:: [[Motion Capture]]
+  - requires:: [[Computer Vision]]
 
 - ### Content
   - #Public page

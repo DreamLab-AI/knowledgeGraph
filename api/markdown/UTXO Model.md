@@ -70,7 +70,7 @@ public:: true
   "@id": "urn:ngm:class:utxo-model",
   "@type": "Class",
   "label": "UTXO Model",
-  "definition": "Unspent Transaction Output accounting model within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "Unspent Transaction Output accounting model used in Bitcoin and related blockchains, where each coin is represented as a discrete unspent output that must be fully consumed and re-created by a transaction. The model enables straightforward parallel validation, eliminates double-spend via simple output-state queries, and underpins script-based programmability.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -81,13 +81,31 @@ public:: true
     {
       "@id": "urn:ngm:class:blockchain-entity",
       "label": "Blockchain Entity"
-    },
-    {
-      "@id": "urn:ngm:class:distributed-data-structure",
-      "label": "DistributedDataStructure"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:bc-protocol-and-consensus", "label": "Protocol and Consensus"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"},
+      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"},
+      {"@id": "urn:ngm:class:transaction-fee", "label": "Transaction Fee"},
+      {"@id": "urn:ngm:class:wallet", "label": "Wallet"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:immutability", "label": "Immutability"},
+      {"@id": "urn:ngm:class:cryptographic-verification", "label": "Cryptographic Verification"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
+      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:decentralized-finance-de-fi", "label": "Decentralized Finance (DeFi)"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

@@ -42,16 +42,32 @@ public:: true
   "@id": "urn:ngm:class:network-quality-metric",
   "@type": "Class",
   "label": "Network Quality Metric",
-  "definition": "Network Quality Metric is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "A quantitative measure used to characterise the performance and reliability of a network connection for real-time interactive applications, encompassing parameters such as latency (round-trip time), jitter, packet loss rate, available bandwidth, and connection stability. These metrics directly determine the feasibility of synchronised multi-user experiences in spatial computing environments.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:networking-technology", "label": "Networking Technology"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:multi-user-systems", "label": "Multi User Systems"},
+      {"@id": "urn:ngm:class:real-time", "label": "Real Time"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:distributed-system", "label": "Distributed System"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:latency", "label": "Latency"},
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -87,14 +103,19 @@ public:: true
 
 
 - ### Definition
-  - Network Quality Metric is a concept within the metaverse domain. Further enrichment pending.
+  - A quantitative measure used to characterise the performance and reliability of a network connection for real-time interactive applications, encompassing parameters such as latency (round-trip time), jitter, packet loss rate, available bandwidth, and connection stability. These metrics directly determine the feasibility of synchronised multi-user experiences in spatial computing environments.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:NetworkQualityMetric
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires** [[Networking Technology]] — network quality metrics are measured over the underlying networking stack
+  - **supports** [[Multi User Systems]] — quality metrics determine whether multi-user sessions can sustain coherent shared presence
+  - **supports** [[Real Time]] — real-time interaction constraints define the acceptable thresholds for each metric
+  - **partOf** [[Distributed System]] — NQMs are diagnostic outputs of distributed system operation
+  - **relatedTo** [[Latency]] — latency (round-trip time) is the most critical individual network quality metric
+  - **relatedTo** [[Edge Computing]] — edge deployment is a primary strategy for meeting NQM thresholds
 
 - ### Content
 

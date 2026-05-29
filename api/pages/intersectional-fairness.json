@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:intersectional-fairness",
   "domain": "artificial-intelligence",
-  "definition": "Intersectional Fairness is an approach to algorithmic fairness that accounts for overlapping and interacting protected attributes, recognizing that individuals with multiple marginalized identities may experience unique forms of discrimination not captured by analyzing single attributes in isolat...",
+  "definition": "Intersectional Fairness is an approach to algorithmic fairness that evaluates bias and discrimination across subgroups defined by combinations of multiple protected attributes\u2014such as race, gender, age, and disability\u2014recognising that individuals with intersecting marginalised identities may experience unique harms not captured by single-attribute analysis. Rooted in Crenshaw's (1989) intersectionality theory, it requires auditing model performance across all cross-attribute subgroup combinations, demanding both statistical rigour and sufficient sample sizes for rare intersectional groups.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -13,21 +13,74 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:fairness-metrics",
+        "label": "Fairness Metrics"
+      },
+      {
+        "id": "urn:ngm:class:bias-detection-methods",
+        "label": "Bias Detection Methods"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:fairness-accuracy-tradeoffs",
+        "label": "Fairness Accuracy Tradeoffs"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:fairness-constraints",
+        "label": "Fairness Constraints"
+      },
+      {
+        "id": "urn:ngm:class:fairness-auditing-tools",
+        "label": "Fairness Auditing Tools"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:algorithmic-bias",
+        "label": "Algorithmic Bias"
+      },
+      {
+        "id": "urn:ngm:class:disparate-impact",
+        "label": "Disparate Impact"
+      },
+      {
+        "id": "urn:ngm:class:bias-mitigation-techniques",
+        "label": "Bias Mitigation Techniques"
+      },
+      {
+        "id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
+    ]
   },
   "wikilinks": [
     {

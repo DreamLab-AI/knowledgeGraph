@@ -7,7 +7,12 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses [[Medical AI]]
+  - Uses [[Deep Learning]]
+  - Enables [[Drug Discovery AI]]
+  - Requires [[Machine Learning]]
+  - Requires [[Privacy Preserving Data Sharing]]
+  - Related To [[Federated Learning]]
 
 - ### Content
   - Precision Medicine utilises artificial intelligence to tailor medical treatment to individual patient characteristics, integrating genomic data, clinical information, lifestyle factors, and environmental data to predict treatment response, identify optimal therapies, and stratify patient populations. AI-driven precision medicine enables personalised diagnosis, prognosis, and therapeutic selection based on multi-omic data integration and predictive modelling.

@@ -7,7 +7,12 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Technical Standards]]
+  - requires [[Interoperability Standard]]
+  - enables [[Cross-Platform Interoperability]]
+  - enables [[Blockchain Interoperability]]
+  - relatedTo [[Semantic Web]]
+  - relatedTo [[Data Standards]]
 
 - ### Content
   - The capability of distinct systems, applications, or organizational entities to exchange information, interpret shared data correctly, and utilize exchanged information for coordinated operations. Interoperability encompasses technical protocol compatibility, semantic data alignment, and organizational process integration across heterogeneous environments.

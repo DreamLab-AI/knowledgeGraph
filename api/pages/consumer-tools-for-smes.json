@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:consumer-tools-for-smes",
   "domain": "infrastructure",
-  "definition": "Consumer Tools for SMEs is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Consumer Tools for SMEs encompasses the accessible AI-powered productivity applications, creative tools, and automation platforms used by small and medium enterprises. These tools lower the barrier to adopting generative AI and workflow automation without requiring technical expertise or enterprise-scale infrastructure investment.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
@@ -14,20 +14,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:coding-support",
+        "label": "Coding support"
+      }
+    ]
   },
   "wikilinks": [
     {

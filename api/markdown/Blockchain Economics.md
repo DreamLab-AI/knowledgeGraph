@@ -42,9 +42,10 @@ public:: true
   "@id": "urn:ngm:class:blockchain-economics",
   "@type": "Class",
   "label": "Blockchain Economics",
-  "definition": "Blockchain Economics is a type of Token Economics in the blockchain domain.",
+  "definition": "The study and design of economic mechanisms governing blockchain networks, including incentive structures for validators, fee markets, token supply schedules, governance models, and the emergent macro-economic properties of decentralised systems. Blockchain economics integrates mechanism design, game theory, and monetary theory to sustain network security and participant alignment.",
   "domain": "blockchain",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-defi-and-economics",
@@ -55,11 +56,42 @@ public:: true
       "label": "Token Economics"
     }
   ],
-  "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset-market",
+        "label": "Digital Asset Market"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "@id": "urn:ngm:class:cryptocurrency-token",
+        "label": "Cryptocurrency Token"
+      }
+    ]
   }
 }
 ```
@@ -91,23 +123,31 @@ public:: true
 
 
 - ### Definition
-  - Blockchain Economics is a concept within the metaverse domain. Further enrichment pending.
+  - The study and design of economic mechanisms governing blockchain networks, including incentive structures for validators, fee markets, token supply schedules, governance models, and the emergent macro-economic properties of decentralised systems. Blockchain economics integrates mechanism design, game theory, and monetary theory to sustain network security and participant alignment.
 
 - ### Semantic Classification
-  - owl-class:: infrastructure:BlockchainEconomics
+  - owl-class:: blockchain:BlockchainEconomics
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - is-subclass-of:: Token Economics
+  - Has Part [[Consensus Mechanism]]
+  - Has Part [[Governance Token]]
+  - Enables [[Decentralised Finance]]
+  - Enables [[Digital Asset Market]]
+  - Related To [[Blockchain Governance]]
+  - Related To [[Cryptocurrency Token]]
 
 - ### Content
 
   ## Overview
 
-  Blockchain Economics represents an abstract concept in the metaverse ontology hierarchy.
+  Blockchain economics governs how decentralised networks sustain themselves through aligned incentive design. Key concerns include validator reward mechanisms (proof-of-work vs. proof-of-stake), transaction fee models, token emission schedules, and governance processes. The field draws on mechanism design and game theory to ensure that rational participants' self-interest reinforces network security and liveness.
 
   #### Related Concepts
-  - [[owl:Thing]]
+  - [[Token Economics]]
+  - [[Decentralised Finance]]
+  - [[Consensus Mechanism]]
 
 - ### Provenance
   - sources::

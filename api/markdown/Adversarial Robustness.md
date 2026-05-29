@@ -54,16 +54,33 @@ public:: true
   "@id": "urn:ngm:class:adversarial-robustness",
   "@type": "Class",
   "label": "Adversarial Robustness",
-  "definition": "The capability of an AI system to maintain correct and consistent behavior when subjected to adversarial examples—inputs intentionally crafted with small, often imperceptible perturbations designed to cause misclassification or incorrect outputs.",
+  "definition": "The capability of an AI system to maintain correct and consistent behaviour when subjected to adversarial examples—inputs intentionally crafted with small, often imperceptible perturbations designed to cause misclassification or incorrect outputs. Defensive strategies include adversarial training, randomised smoothing, and ensemble methods, each offering different trade-offs between certified guarantees and computational cost.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:security", "label": "Security"},
+      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:attack-vector", "label": "Attack Vector"},
+      {"@id": "urn:ngm:class:vulnerability", "label": "Vulnerability"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:resilience", "label": "Resilience"},
+      {"@id": "urn:ngm:class:risk", "label": "Risk"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -122,6 +139,13 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
+  - **requires** [[Security]] — adversarial robustness is a security property of AI systems
+  - **requires** [[AI Safety]] — robustness is a prerequisite for safe deployment
+  - **contrastsWith** [[Attack Vector]] — robustness defends against the attack vectors it opposes
+  - **contrastsWith** [[Vulnerability]] — robustness reduces exploitable weaknesses in models
+  - **uses** [[Deep Learning]] — adversarial training relies on deep network training procedures
+  - **relatedTo** [[Resilience]] — robustness is a component of broader system resilience
+  - **relatedTo** [[Risk]] — quantified adversarial risk informs deployment decisions
   - bridges-to:: [[Computer Vision]] (ai)
 
 - ### Content

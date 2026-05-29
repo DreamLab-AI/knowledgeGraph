@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:trajectory-planning",
   "domain": "robotics",
-  "definition": "Trajectory Planning - Trajectory Planning in robotics systems",
+  "definition": "The process of computing a time-parameterised path for a robot or autonomous system that satisfies kinematic constraints, avoids obstacles, and achieves a target configuration smoothly and efficiently. Trajectory planning bridges high-level path planning with low-level motion control, incorporating velocity and acceleration profiles, inverse kinematics, and real-time replanning for dynamic environments.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-navigation-and-planning",
@@ -13,17 +13,49 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:motion-control",
+        "label": "Motion Control"
+      },
+      {
+        "id": "urn:ngm:class:collision-avoidance",
+        "label": "Collision Avoidance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:obstacle-avoidance",
+        "label": "Obstacle Avoidance"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:key-management",
   "domain": "infrastructure",
-  "definition": "Key management encompasses the policies, procedures, and systems for generating, distributing, storing, rotating, and revoking cryptographic keys throughout their lifecycle.",
+  "definition": "Key management is the discipline encompassing the full lifecycle governance of cryptographic keys: generation (using cryptographically secure random number generators and appropriate key derivation functions), distribution (secure out-of-band or in-band delivery), storage (in hardware security modules, key management services, or encrypted keystores), rotation (periodic replacement to limit exposure windows), and revocation (timely invalidation of compromised or expired keys). Effective key management is a prerequisite for all cryptographic security guarantees, since even strong algorithms are undermined by weak key custody practices. It is a mandatory control domain in standards including ISO/IEC 27001 (Annex A, A.10) and NIST SP 800-57.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-security-and-identity",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

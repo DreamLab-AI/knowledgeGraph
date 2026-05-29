@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:activation-function",
   "domain": "artificial-intelligence",
-  "definition": "Activation Function is a artificial intelligence concept and a type of Neural Network Component.",
+  "definition": "An Activation Function is a non-linear mathematical transformation applied to a neuron's weighted input sum, enabling neural networks to learn complex, non-linear mappings. Common variants include Sigmoid, Tanh, ReLU, Leaky ReLU, and GELU; the choice of activation function critically affects gradient flow, convergence speed, and model expressivity.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -17,12 +17,22 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -30,8 +40,22 @@
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-layer",
+        "label": "Neural Network Layer"
+      }
+    ]
   },
   "wikilinks": [
     {

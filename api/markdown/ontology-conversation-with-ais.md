@@ -1,12 +1,17 @@
 - ### Definition
-  - Ontology conversation with AIs is a concept within the ngm domain.
+  - A structured methodology for collaboratively building and refining formal knowledge representations by conducting iterative dialogues with AI systems. In these conversations, AI agents interpret, critique, and extend ontological schemas, producing machine-readable linked-data artefacts such as OWL classes and JSON-LD graphs that document both the resulting ontology and the reasoning process that produced it.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:OntologyConversationWithAIs
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses [[Knowledge Graph]]
+  - Uses [[Linked Data]]
+  - Uses [[Agentic AI]]
+  - Enables [[Metaverse Ontology]]
+  - Enables [[Interoperability]]
+  - Related To [[Agentic Mycelia]]
 
 - ### Content
   - ok this is where we got to. I would like to set this discussion diagrammatically in a wider context and scope. Let's decide that this ontology that we've been working on represents one notional domain of a wider connected digital society, with it's emergent human/AI social constructs, preferences, compliances, audiences, jurisdictions, opt in rule sets etc. Here's a way to start that conversation with you.

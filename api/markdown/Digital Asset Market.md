@@ -46,20 +46,62 @@ public:: true
   "@id": "urn:ngm:class:digital-asset-market",
   "@type": "Class",
   "label": "Digital Asset Market",
-  "definition": "Digital Asset Market is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "A marketplace — centralised or decentralised — where digital assets including cryptocurrencies, NFTs, and tokenised securities are bought, sold, and exchanged. Digital asset markets encompass order-book exchanges, automated market makers, NFT marketplaces, and OTC desks, each governed by distinct liquidity, pricing, and regulatory mechanisms.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
     }
   ],
-  "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:nft-marketplace",
+        "label": "NFT Marketplace"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset-trading",
+        "label": "Digital Asset Trading"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset-infrastructure",
+        "label": "Digital Asset Infrastructure"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:digital-asset-ecosystem",
+        "label": "Digital Asset Ecosystem"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-economics",
+        "label": "Blockchain Economics"
+      }
+    ]
   }
 }
 ```
@@ -96,23 +138,32 @@ public:: true
 
 
 - ### Definition
-  - Digital Asset Market is a concept within the metaverse domain. Further enrichment pending.
+  - A marketplace — centralised or decentralised — where digital assets including cryptocurrencies, NFTs, and tokenised securities are bought, sold, and exchanged. Digital asset markets encompass order-book exchanges, automated market makers, NFT marketplaces, and OTC desks, each governed by distinct liquidity, pricing, and regulatory mechanisms.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:DigitalAssetMarket
   - owl-role:: concept
 
 - ### Relationships
-  - bridges-to:: [[Blockchain]]
+  - Has Part [[NFT Marketplace]]
+  - Has Part [[Digital Asset Trading]]
+  - Requires [[Blockchain]]
+  - Requires [[Digital Asset Infrastructure]]
+  - Uses [[Automated Market Maker]]
+  - Uses [[Smart Contract]]
+  - Related To [[Digital Asset Ecosystem]]
+  - Related To [[Blockchain Economics]]
 
 - ### Content
 
   ## Overview
 
-  Digital Asset Market represents an abstract concept in the metaverse ontology hierarchy.
+  A digital asset market enables buying, selling, and exchanging of digital assets including cryptocurrencies, NFTs, and tokenised securities. Markets may be centralised (order-book exchanges with custodial settlement) or decentralised (AMM-based DEXs with on-chain settlement via smart contracts). NFT marketplaces represent a distinct segment focused on unique digital ownership. Market health depends on liquidity provision, price discovery mechanisms, and regulatory compliance frameworks.
 
   #### Related Concepts
-  - [[owl:Thing]]
+  - [[NFT Marketplace]]
+  - [[Automated Market Maker]]
+  - [[Digital Asset Ecosystem]]
 
 - ### Provenance
   - sources::

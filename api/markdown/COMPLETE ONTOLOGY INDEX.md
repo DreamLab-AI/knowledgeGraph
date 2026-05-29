@@ -78,9 +78,10 @@ public:: true
   "@id": "urn:ngm:class:complete-ontology-index",
   "@type": "Class",
   "label": "COMPLETE ONTOLOGY INDEX",
-  "definition": "A comprehensive reference catalog documenting and interconnecting all Ontology terms, Semantic Classifications, and Knowledge Relationships across multiple domains and knowledge graphs. This index enables discovery, navigation, and semantic reasoning across the entire Knowledge Base.",
+  "definition": "A comprehensive reference catalogue documenting and interconnecting all ontology terms, semantic classifications, and knowledge relationships across multiple domains and knowledge graphs. This index enables discovery, navigation, and semantic reasoning across the entire knowledge base, serving as the master pointer for all class hierarchies and inter-domain relations.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-standards-and-interop",
@@ -91,6 +92,20 @@ public:: true
       "label": "Metaverse Ontology"
     }
   ],
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:ontology-structure", "label": "Ontology Structure"},
+      {"@id": "urn:ngm:class:owl-class-hierarchy", "label": "OWL Class Hierarchy"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"},
+      {"@id": "urn:ngm:class:rdf", "label": "RDF"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
+      {"@id": "urn:ngm:class:ontology", "label": "Ontology"}
+    ]
+  },
   "quality": 0.4,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -172,11 +187,15 @@ public:: true
 
 
 - ### Definition
-  - A comprehensive reference catalog documenting and interconnecting all [[Ontology]] terms, [[Semantic Classifications]], and [[Knowledge Relationships]] across multiple domains and knowledge graphs. This index enables discovery, navigation, and semantic reasoning across the entire [[Knowledge Base]].
+  - A comprehensive reference catalogue documenting and interconnecting all ontology terms, semantic classifications, and knowledge relationships across multiple domains and knowledge graphs. This index enables discovery, navigation, and semantic reasoning across the entire knowledge base, serving as the master pointer for all class hierarchies and inter-domain relations.
 - ### Semantic Classification
   - owl-class:: spatial-computing:COMPLETEONTOLOGYINDEX
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
+- ### Relationships
+  - has-part:: [[Ontology Structure]], [[OWL Class Hierarchy]]
+  - uses:: [[Knowledge Representation]], [[RDF]]
+  - supports:: [[Knowledge Graph]], [[Ontology]]
 - ### Relationships
   - <!-- No relationships defined -->
 - ### Content

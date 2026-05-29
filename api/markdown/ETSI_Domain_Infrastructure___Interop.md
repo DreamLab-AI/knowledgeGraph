@@ -50,16 +50,33 @@ public:: true
   "@id": "urn:ngm:class:etsi-domain-infrastructure-interop",
   "@type": "Class",
   "label": "ETSI_Domain_Infrastructure___Interop",
-  "definition": "ETSI infrastructure interoperability framework enabling disparate systems and domains to exchange data and operate cohesively through cross-domain models, standardised data exchange protocols, and linked data principles (RDF, RDFS, OWL).",
+  "definition": "ETSI infrastructure interoperability domain providing standardised frameworks enabling disparate systems, services, and domains to exchange data and operate cohesively across organisational boundaries. It underpins cross-domain data integration through NGSI-LD interfaces, intent-based network management, spectrum sharing frameworks, and EU Data Act Article 35 mandates for centralised interoperability standards repositories.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-network-and-comms",
       "label": "Network and Communication"
     }
   ],
-  "quality": 0.4,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:interoperability-framework", "label": "Interoperability Framework"},
+      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"},
+      {"@id": "urn:ngm:class:digital-twin-interop-protocol", "label": "Digital Twin Interop Protocol"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:api-standard", "label": "API Standard"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:etsi-domain-interoperability", "label": "ETSI_Domain_Interoperability"},
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -113,7 +130,10 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires**: Interoperability Framework, Linked Data — the framework depends on shared ontological standards and linked data principles
+  - **enables**: Interoperability, Digital Twin Interop Protocol — cross-domain integration becomes possible through these mechanisms
+  - **standardizedBy**: API Standard — ETSI specifies the APIs governing cross-domain exchange
+  - **relatedTo**: ETSI_Domain_Interoperability, Data Governance — closely coupled with the broader ETSI interoperability domain and EU data governance mandates
 
 - ### Content
   - The ETSI Infrastructure Interoperability domain enables different systems and platforms to exchange data and operate cohesively through standardised protocols, linked data frameworks, and semantic alignment facilitating seamless cross-domain integration.

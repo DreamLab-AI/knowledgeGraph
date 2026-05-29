@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:rb-0077-depth-camera",
   "domain": "robotics",
-  "definition": "depth camera is a robotics and autonomous systems concept and a type of Camera.",
+  "definition": "A depth camera is a sensor that captures per-pixel distance information alongside a conventional intensity image, producing a registered RGB-D data stream or raw point cloud. In robotics, depth cameras are used for 3D scene reconstruction, obstacle avoidance, object recognition, and SLAM. Common operating principles include structured light projection (e.g. Intel RealSense), time-of-flight measurement, and stereo triangulation; each involves different trade-offs in range, resolution, and outdoor usability.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-perception",
@@ -17,21 +17,70 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "id": "urn:ngm:class:obstacle-avoidance",
+        "label": "Obstacle Avoidance"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:depth-sensing",
+        "label": "Depth Sensing"
+      },
+      {
+        "id": "urn:ngm:class:depth-estimation",
+        "label": "Depth Estimation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:visual-odometry",
+        "label": "Visual Odometry"
+      },
+      {
+        "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:rb-0066-robot-sensor",
+        "label": "rb 0066 robot sensor"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:stereo-camera",
+        "label": "Stereo Camera"
+      },
+      {
+        "id": "urn:ngm:class:rb-0068-vision-system",
+        "label": "rb 0068 vision system"
+      },
+      {
+        "id": "urn:ngm:class:rb-0069-lidar",
+        "label": "rb 0069 lidar"
+      }
+    ]
   },
   "wikilinks": [
     {

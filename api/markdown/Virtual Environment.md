@@ -48,7 +48,7 @@ public:: true
   "label": "Virtual Environment",
   "definition": "A simulated three-dimensional (3D) digital space created with computer hardware and software that enables users to explore, interact, and experience an immersive surrounding approximating reality, accessed through devices such as VR headsets, AR glasses, or standard displays.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -59,6 +59,20 @@ public:: true
       "label": "Metaverse"
     }
   ],
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:spatial-audio", "label": "Spatial Audio"},
+      {"@id": "urn:ngm:class:avatar", "label": "Avatar"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"},
+      {"@id": "urn:ngm:class:xr-hardware", "label": "XR Hardware"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
@@ -109,6 +123,12 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Metaverse]]
+  - hasPart [[Spatial Audio]]
+  - hasPart [[Avatar]]
+  - enables [[Immersive Experience]]
+  - enables [[Digital Twin]]
+  - uses [[Extended Reality]]
+  - uses [[XR Hardware]]
 
 - ### Content
 

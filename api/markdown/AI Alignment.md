@@ -52,7 +52,7 @@ public:: true
   "label": "AI Alignment",
   "definition": "The process of making AI systems' behaviour and goals consistent with human values, preferences, and intentions. AI alignment encompasses technical mods and research aimed at ensuring AI systems act in accordance with human interests, even as they become more capable.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
@@ -63,6 +63,21 @@ public:: true
       "label": "AI Safety"
     }
   ],
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:reinforcement-learning-from-human-feedback", "label": "Reinforcement Learning from Human Feedback"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -118,6 +133,11 @@ public:: true
 
 - ### Relationships
   - bridges-to:: [[AI Agent System]]
+  - partOf:: [[AI Safety]]
+  - requires:: [[Reinforcement Learning from Human Feedback]]
+  - supports:: [[Responsible AI]]
+  - supports:: [[AI Governance]]
+  - relatedTo:: [[Explainable AI]]
 
 - ### Content
   - The process of making AI systems' behaviour and goals consistent with human values, preferences, and intentions. AI alignment encompasses technical methods and research aimed at ensuring AI systems act in accordance with human interests, even as they become more capable.

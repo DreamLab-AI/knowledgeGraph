@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:shared-whiteboards",
   "domain": "distributed-collaboration",
-  "definition": "\"Digital canvases in telepresence platforms enabling distributed team members to simultaneously draw, write, annotate, and manipulate visual content (text, images, diagrams, sticky notes) in real-time, replicating physical whiteboard collaboration dynamics through multi-user synchronisation and p...",
+  "definition": "Digital canvases in telepresence and collaboration platforms enabling distributed team members to simultaneously draw, write, annotate, and manipulate visual content \u2014 including text, images, diagrams, and sticky notes \u2014 in real time. Shared whiteboards replicate physical whiteboard collaboration dynamics through multi-user synchronisation and persistent storage of collaborative artefacts, supporting brainstorming, diagramming, and visual sensemaking across geographic distances.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:dc-workspace-tools",
@@ -17,21 +17,65 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:remote-collaboration",
+        "label": "Remote Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:synchronous-collaboration",
+        "label": "Synchronous Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:asynchronous-collaboration",
+        "label": "Asynchronous Collaboration"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:telepresence",
+        "label": "Telepresence"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:collaboration-platform",
+        "label": "Collaboration Platform"
+      },
+      {
+        "id": "urn:ngm:class:virtual-office-spaces",
+        "label": "Virtual Office Spaces"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:video-conferencing",
+        "label": "Video Conferencing"
+      },
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      }
+    ]
   },
   "wikilinks": [
     {

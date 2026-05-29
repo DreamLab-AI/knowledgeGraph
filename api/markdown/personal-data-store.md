@@ -1,12 +1,17 @@
 - ### Definition
-  - PersonalDataStore is a concept within the ngm domain.
+  - A user-controlled repository that aggregates, manages, and selectively shares an individual's personal data, enabling the data owner to grant and revoke third-party access under consent-based mechanisms, thereby supporting data sovereignty and privacy-by-design principles in digital and metaverse contexts.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:PersonalDataStore
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Supports: [[Data Sovereignty]]
+  - Supports: [[Privacy By Design]]
+  - Uses: [[Decentralized Identifiers]]
+  - Uses: [[Access Control]]
+  - Related To: [[Digital Identity]]
+  - Related To: [[Data Governance]]
 
 - ### Content
   # PersonalDataStore

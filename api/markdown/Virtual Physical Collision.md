@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:virtual-physical-collision",
   "@type": "Class",
   "label": "Virtual Physical Collision",
-  "definition": "The detection and simulation of contact between virtual objects and real-world elements in mixed reality environments, enabling realistic interactions, haptic feedback, and safety boundaries that prevent users from colliding with physical obstacles while immersed in virtual experiences.",
+  "definition": "The detection and simulation of contact events between virtual objects and real-world physical elements in mixed and augmented reality environments. Virtual-physical collision systems generate haptic alerts, visual boundary warnings, and passthrough camera activations to prevent user injury and to produce physically plausible interactions between digital content and the real world.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -59,11 +60,48 @@ public:: true
       "label": "Physics Simulation"
     }
   ],
-  "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:room-scale",
+        "label": "Room Scale"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:physics-engine",
+        "label": "Physics Engine"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-tracking-technology",
+        "label": "Spatial Tracking Technology"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:user-safety",
+        "label": "User Safety"
+      }
+    ]
   }
 }
 ```
@@ -109,6 +147,10 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Physics Simulation]]
+  - Uses [[Physics Engine]], [[Spatial Tracking Technology]]
+  - Requires [[Haptic Feedback]], [[Room Scale]]
+  - Enables [[Mixed Reality]]
+  - Related to [[Augmented Reality]], [[User Safety]]
 
 - ### Content
 

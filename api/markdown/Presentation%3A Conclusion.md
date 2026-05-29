@@ -33,15 +33,26 @@ public:: true
   "@id": "urn:ngm:class:presentation-3-a-conclusion",
   "@type": "Class",
   "label": "Presentation: Conclusion",
-  "definition": "Presentation%3A Conclusion is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "The concluding slide deck section of a presentation on generative AI and its societal significance. It synthesises key points about AI's role in society, addresses audience takeaways, and acknowledges contributors, serving as the closing narrative arc for a structured public or academic AI presentation.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
+      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:projects", "label": "Projects"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -72,14 +83,15 @@ public:: true
 
 
 - ### Definition
-  - Presentation%3A Conclusion is a concept within the ngm domain.
+  - The concluding slide deck section of a presentation on generative AI and its societal significance. It synthesises key points about AI's role in society, addresses audience takeaways, and acknowledges contributors, serving as the closing narrative arc for a structured public or academic AI presentation.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:Presentation3AConclusion
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - relatedTo: [[Generative AI]], [[AI Governance]], [[AI Ethics]]
+  - partOf: [[Projects]]
 
 - ### Content
   - Recap of Key Points

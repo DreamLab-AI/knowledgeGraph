@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:permissionless-network",
   "domain": "blockchain",
-  "definition": "Open access blockchain within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "A Permissionless Network is a blockchain or distributed ledger system in which any entity may join as a node, submit transactions, and participate in consensus without prior authorisation or identity verification from a central authority. Permissionlessness is a foundational design property of public blockchains such as Bitcoin and Ethereum, enabling censorship resistance and global open access at the cost of requiring Sybil-resistant consensus mechanisms\u2014typically proof-of-work or proof-of-stake\u2014to prevent anonymous actors from subverting the network.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-network-component",
@@ -21,21 +21,69 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:public-blockchain",
+        "label": "Public Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:incentive-alignment",
+        "label": "Incentive Alignment"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:51-attack",
+        "label": "51% Attack"
+      },
+      {
+        "id": "urn:ngm:class:double-spending",
+        "label": "Double Spending"
+      },
+      {
+        "id": "urn:ngm:class:gossip-protocol",
+        "label": "Gossip Protocol"
+      },
+      {
+        "id": "urn:ngm:class:nakamoto-consensus",
+        "label": "Nakamoto Consensus"
+      },
+      {
+        "id": "urn:ngm:class:network-topology",
+        "label": "Network Topology"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:economic-layer",
   "domain": "infrastructure",
-  "definition": "The EconomicLayer represents the abstraction level of implemented economic mechanisms, incentive structures, market designs, resource allocation systems, and game-theoretic implementations that govern economic behavior in blockchain and distributed systems.",
+  "definition": "The Economic Layer is the abstraction level at which concrete economic mechanisms are implemented in blockchain and distributed systems, encompassing fee markets, reward distribution formulae, automated market makers, staking yield calculations, and game-theoretic incentive structures. It is distinct from conceptual economic theory in that it specifies exact parameters, formulas, and on-chain behaviours.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
@@ -13,12 +13,26 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:governance-model",
+        "label": "Governance Model"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:metaverse-as-markets",
+        "label": "Metaverse as Markets"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +41,16 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

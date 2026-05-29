@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:metaverse-navigation-systems",
   "domain": "spatial-computing",
-  "definition": "Metaverse Navigation Systems is a type of Metaverse and Telecollaboration in the spatial computing domain.",
+  "definition": "Metaverse navigation systems are spatially-embedded interaction mechanisms that enable users to traverse, orient, and coordinate within persistent three-dimensional virtual environments through modalities such as gaze-based controls, hand-tracking, locomotion techniques (joystick, teleportation, redirected walking), and spatial overlays including mini-maps and AR wayfinding cues. These systems integrate environmental awareness, social presence, and user experience design to maintain spatial cognition across interconnected virtual worlds. They form a critical infrastructure layer for usable, inclusive metaverse participation.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -17,21 +17,69 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.75,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      },
+      {
+        "id": "urn:ngm:class:presence",
+        "label": "Presence"
+      },
+      {
+        "id": "urn:ngm:class:avatar-system",
+        "label": "Avatar System"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:social-vr",
+        "label": "Social VR"
+      },
+      {
+        "id": "urn:ngm:class:virtual-environment",
+        "label": "Virtual Environment"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ]
   },
   "wikilinks": [
     {

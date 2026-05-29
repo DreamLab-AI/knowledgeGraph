@@ -42,7 +42,7 @@ public:: true
   "@id": "urn:ngm:class:hyperparameter",
   "@type": "Class",
   "label": "Hyperparameter",
-  "definition": "A configuration variable set before training that controls the learning process but is not learned from data. Examples include learning rate, batch size, and number of layers.",
+  "definition": "A configuration variable set before training that controls the learning process but is not learned from data. Examples include learning rate, batch size, number of layers, dropout rate, and regularisation coefficients. Hyperparameter selection directly determines model capacity, convergence speed, and generalisation, making their tuning a critical step in building effective machine learning systems.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -55,7 +55,27 @@ public:: true
       "label": "Machine Learning"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
+      {"@id": "urn:ngm:class:neural-network-architecture", "label": "Neural Network Architecture"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:batch-size", "label": "Batch Size"},
+      {"@id": "urn:ngm:class:learning-rate-schedule", "label": "Learning Rate Schedule"},
+      {"@id": "urn:ngm:class:dropout", "label": "Dropout"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:auto-ml", "label": "AutoML"},
+      {"@id": "urn:ngm:class:overfitting", "label": "Overfitting"},
+      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"},
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:stochastic-gradient-descent", "label": "Stochastic Gradient Descent"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

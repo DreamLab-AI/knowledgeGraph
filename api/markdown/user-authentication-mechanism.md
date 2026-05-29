@@ -1,12 +1,15 @@
 - ### Definition
-  - UserAuthenticationMechanism is a concept within the ngm domain.
+  A User Authentication Mechanism is a protocol or system component that verifies the claimed identity of a user before granting access to a resource or service. Mechanisms include password-based credentials, OAuth 2.0 federated login, biometric binding, multi-factor authentication, and decentralised identity using DIDs, each offering different trade-offs between security, usability, and privacy.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:UserAuthenticationMechanism
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: OAuth 2.0, Decentralised Identity
+  - **requires**: Identity Verification, Access Control
+  - **enables**: Digital Identity Management
+  - **relatedTo**: Identity and Access Management
 
 - ### Content
   # UserAuthenticationMechanism

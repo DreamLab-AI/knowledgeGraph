@@ -7,7 +7,14 @@
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - is-subclass-of:: [[Robotics]]
+  - is-subclass-of:: Navigation and Planning
+  - Requires [[Kinematics]]
+  - Requires [[Inverse Kinematics]]
+  - Uses [[Motion Planning]]
+  - Uses [[Sensor Fusion]]
+  - Enables [[Motion Control]]
+  - Enables [[Collision Avoidance]]
+  - Depends On [[Obstacle Avoidance]]
 
 - ### Content
   - ### Original Content

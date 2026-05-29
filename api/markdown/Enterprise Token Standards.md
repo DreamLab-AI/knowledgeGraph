@@ -1259,7 +1259,7 @@ public:: true
       "label": "Token and Asset"
     },
     {
-      "@id": "urn:ngm:class:digital-asset-standard",
+      "@id": "urn:ngm:class:digital-asset-standards",
       "label": "Digital Asset Standard"
     }
   ],

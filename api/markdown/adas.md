@@ -7,6 +7,13 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
+  - **requires** [[Sensor Fusion]] — multi-sensor data fusion is essential for ADAS perception
+  - **requires** [[Perception System]] — environment understanding drives all assistance functions
+  - **uses** [[Computer Vision]] — camera-based lane, sign, and obstacle detection
+  - **uses** [[Camera]] — primary imaging sensor for ADAS
+  - **uses** [[Lidar]] — depth sensing for obstacle detection in advanced variants
+  - **contrastsWith** [[Autonomous Vehicle]] — ADAS augments the driver; AV replaces the driver
+  - **relatedTo** [[Risk]] — ADAS directly addresses collision and operational risk
   - bridges-to:: [[Autonomous Robot]]
 
 - ### Content

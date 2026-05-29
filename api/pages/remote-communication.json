@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:remote-communication",
   "domain": "distributed-collaboration",
-  "definition": "Remote Communication is a type of Distributed Collaboration in the distributed collaboration domain.",
+  "definition": "Remote Communication encompasses the protocols, platforms, and practices that enable synchronous and asynchronous exchange of information between geographically distributed participants. It spans text, voice, video, and immersive modalities, and underpins distributed work, telecollaboration, and telepresence systems by abstracting physical distance through networked infrastructure.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:dc-communication",
@@ -13,12 +13,34 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:distributed-work",
+        "label": "Distributed Work"
+      },
+      {
+        "id": "urn:ngm:class:video-conferencing",
+        "label": "Video Conferencing"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +49,16 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:collaboration-platform",
+        "label": "Collaboration Platform"
+      },
+      {
+        "id": "urn:ngm:class:immersive-communication",
+        "label": "Immersive Communication"
+      }
+    ]
   },
   "wikilinks": [
     {

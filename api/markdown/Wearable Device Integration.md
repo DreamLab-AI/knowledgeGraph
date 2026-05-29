@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:wearable-device-integration",
   "@type": "Class",
   "label": "Wearable Device Integration",
-  "definition": "The technical processes and protocols for connecting wearable computing devices with metaverse platforms, enterprise systems, and cloud services, enabling seamless data exchange, cross-device synchronization, and coordinated multi-device experiences.",
+  "definition": "The technical processes and protocols for connecting wearable computing devices with metaverse platforms, enterprise systems, and cloud services, enabling seamless data exchange, cross-device synchronisation, and coordinated multi-device experiences.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-interaction",
@@ -59,6 +60,22 @@ public:: true
       "label": "System Integration"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
+      {"@id": "urn:ngm:class:authentication", "label": "Authentication"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
+      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:wearable-computing-platform", "label": "Wearable Computing Platform"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
@@ -109,6 +126,10 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[System Integration]]
+  - **Requires**: [[Sensor Fusion]], [[Authentication]] (device identity)
+  - **Enables**: [[Digital Twin]] (real-world wearable data in virtual spaces), [[Augmented Reality]]
+  - **Part-of**: [[Wearable Computing Platform]] ecosystem
+  - **Uses**: [[Interoperability]] protocols (Bluetooth LE, UWB, 5G)
 
 - ### Content
 

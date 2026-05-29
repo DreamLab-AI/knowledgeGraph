@@ -42,9 +42,10 @@ public:: true
   "@id": "urn:ngm:class:transaction-parameter",
   "@type": "Class",
   "label": "Transaction Parameter",
-  "definition": "Configuration values that define the execution characteristics of a blockchain transaction, including gas limit, gas price, nonce, and other parameters that determine transaction priority, cost, and computational resources allocated.",
+  "definition": "Transaction Parameters are the configuration values that define the execution characteristics of a blockchain transaction, including gas limit, gas price (or priority fee under EIP-1559), nonce, value, and calldata. These parameters determine transaction priority, cost, computational resources consumed, and ordering within blocks, directly influencing DeFi strategies such as MEV extraction and Layer 2 batching efficiency.",
   "domain": "blockchain",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-protocol-and-consensus",
@@ -55,7 +56,24 @@ public:: true
       "label": "Blockchain Transaction"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:gas-limit", "label": "Gas Limit"},
+      {"@id": "urn:ngm:class:gas-price", "label": "Gas Price"},
+      {"@id": "urn:ngm:class:eip-1559", "label": "EIP-1559"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:gas-optimization", "label": "Gas Optimization"},
+      {"@id": "urn:ngm:class:mev", "label": "MEV"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
+      {"@id": "urn:ngm:class:layer2", "label": "Layer2"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -99,6 +117,10 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Blockchain Transaction]]
+  - **partOf**: Blockchain Transaction
+  - **uses**: Gas Limit, Gas Price, EIP-1559
+  - **enables**: Gas Optimization, MEV
+  - **relatedTo**: Smart Contract, Layer2
 
 - ### Content
 

@@ -1,12 +1,14 @@
 - ### Definition
-  - Emerging tech stack is a concept within the ngm domain.
+  - A convergent set of nascent and rapidly maturing technologies—including decentralised identity, linked data, nostr key-pair agents, lightning-network micropayments, and knowledge graph tooling—that together enable a new paradigm of interoperable, agent-driven digital infrastructure. The stack combines protocol-level primitives with knowledge management and collaborative AI to support autonomous, verifiable workflows.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:EmergingTechStack
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **hasPart**: Linked Data, Decentralized Identity (DID), Knowledge Graph — these are core constituent technologies of the emerging stack
+  - **enables**: Agentic AI, Version Control — the stack enables autonomous agent workflows with versioned, auditable knowledge artefacts
+  - **relatedTo**: Blockchain, Interoperability — decentralised ledger primitives and cross-system interoperability are foundational concerns
 
 - ### Content
   - [Claude](https://claude.ai/chat/abc3702e-5cfa-40fe-8573-87d4240809fd)

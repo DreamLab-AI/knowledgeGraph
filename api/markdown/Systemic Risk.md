@@ -44,13 +44,28 @@ public:: true
   "label": "Systemic Risk",
   "definition": "Risk specific to high-impact capabilities of general-purpose AI models with significant impact on the Union market due to reach, or actual or foreseeable negative effects on public health, safety, fundamental rights, environment, democracy, or rule of law.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"},
+      {"@id": "urn:ngm:class:adversarial-testing", "label": "Adversarial Testing"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:red-teaming", "label": "Red Teaming"},
+      {"@id": "urn:ngm:class:conformity-assessment", "label": "Conformity Assessment"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"},
+      {"@id": "urn:ngm:class:human-oversight", "label": "Human Oversight"},
+      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -95,7 +110,13 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Risk Assessment]]
+  - requires [[Adversarial Testing]]
+  - enables [[Red Teaming]]
+  - enables [[Conformity Assessment]]
+  - relatedTo [[AI Regulation]]
+  - relatedTo [[Human Oversight]]
+  - relatedTo [[Cybersecurity]]
 
 - ### Content
   - Risk specific to high-impact capabilities of general-purpose AI models with significant impact on the Union market due to reach, or actual or foreseeable negative effects on public health, safety, fundamental rights, environment, democracy, or rule of law.

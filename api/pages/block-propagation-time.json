@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:block-propagation-time",
   "domain": "blockchain",
-  "definition": "Network distribution duration within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "Block Propagation Time is the latency metric measuring how long it takes for a newly mined or validated block to be disseminated to all (or a target percentage of) nodes in a blockchain peer-to-peer network after its initial announcement. It is a critical determinant of blockchain security and throughput: long propagation times increase the probability of temporary forks (stale/orphan blocks), waste miner effort, and reduce effective network throughput. Bitcoin historically achieved median propagation times of approximately 1\u20132 seconds to reach 50% of nodes, while Ethereum's uncle mechanism tolerated higher latency by including competing blocks in the canonical chain.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-protocol-and-consensus",
@@ -21,21 +21,74 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:block-propagation",
+        "label": "Block Propagation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gossip-protocol",
+        "label": "Gossip Protocol"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:fork-choice-rule",
+        "label": "Fork Choice Rule"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:network-latency",
+        "label": "Network Latency"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      },
+      {
+        "id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-infrastructure",
+        "label": "Blockchain Infrastructure"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:early-stopping",
   "domain": "spatial-computing",
-  "definition": "A regularisation technique that terminates training when validation performance stops improving, preventing overfitting by avoiding overtraining on the training set. Early stopping balances training progress against generalisation to unseen data.",
+  "definition": "A regularisation technique that terminates model training when validation performance ceases to improve for a configurable number of epochs (the patience parameter), preventing overfitting by restoring the best checkpoint before performance degraded. Early stopping balances training progress against generalisation to unseen data and is most effective when combined with other regularisation techniques such as dropout and weight decay.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -13,21 +13,49 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:regularisation",
+        "label": "Regularisation"
+      },
+      {
+        "id": "urn:ngm:class:epoch",
+        "label": "Epoch"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:hyperparameter",
+        "label": "Hyperparameter"
+      },
+      {
+        "id": "urn:ngm:class:batch-size",
+        "label": "Batch Size"
+      }
+    ]
   },
   "wikilinks": [
     {

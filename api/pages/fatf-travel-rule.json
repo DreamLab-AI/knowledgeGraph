@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:fatf-travel-rule",
   "domain": "blockchain",
-  "definition": "The FATF Travel Rule requires virtual asset service providers to collect, verify, and transmit originator and beneficiary information alongside cryptocurrency transactions above a defined threshold to combat money laundering.",
+  "definition": "The FATF Travel Rule (Recommendation 16 as applied to virtual assets) requires Virtual Asset Service Providers (VASPs) to collect, verify, and transmit originator and beneficiary identity information alongside cryptocurrency transactions that meet or exceed the applicable threshold. Issued by the Financial Action Task Force, it extends traditional wire-transfer obligations to crypto-asset transfers, obligating sending VASPs to share identifying data with receiving VASPs before or simultaneously with the transfer. Compliance demands interoperability protocols and data-sharing infrastructure between exchanges, wallets, and custodians operating in different jurisdictions.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-governance-and-regulation",
@@ -14,10 +14,19 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
@@ -25,9 +34,23 @@
     "bridgesTo": [],
     "uses": [],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:fatf",
+        "label": "FATF"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:virtual-asset",
+        "label": "Virtual Asset"
+      },
+      {
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

@@ -42,16 +42,30 @@ public:: true
   "@id": "urn:ngm:class:social-network-graph",
   "@type": "Class",
   "label": "Social Network Graph",
-  "definition": "Social Network Graph is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "A graph-theoretic representation of social relationships in which nodes denote individuals or entities and edges encode interactions, follows, or trust links. Social network graphs underpin recommendation systems, community detection, influence analysis, and decentralised identity federation protocols such as Nostr and ActivityPub.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"},
+      {"@id": "urn:ngm:class:nostr-protocol", "label": "Nostr Protocol"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:identity-federation", "label": "Identity Federation"},
+      {"@id": "urn:ngm:class:virtual-community-platform", "label": "Virtual Community Platform"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
+      {"@id": "urn:ngm:class:federation-surface", "label": "Federation Surface"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -87,14 +101,16 @@ public:: true
 
 
 - ### Definition
-  - Social Network Graph is a concept within the metaverse domain. Further enrichment pending.
+  - A graph-theoretic representation of social relationships in which nodes denote individuals or entities and edges encode interactions, follows, or trust links. Social network graphs underpin recommendation systems, community detection, influence analysis, and decentralised identity federation protocols such as Nostr and ActivityPub.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:SocialNetworkGraph
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: Digital Identity, Nostr Protocol — each graph node is anchored to a verifiable identity, and Nostr provides a decentralised graph propagation mechanism.
+  - **enables**: Identity Federation, Virtual Community Platform — the graph structure makes federated identity discovery and virtual community formation possible.
+  - **relatedTo**: Knowledge Graph, Federation Surface — social network graphs share structural properties with knowledge graphs and expose a federation surface for cross-platform data exchange.
 
 - ### Content
 

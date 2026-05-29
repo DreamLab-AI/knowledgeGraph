@@ -46,15 +46,31 @@ public:: true
   "@id": "urn:ngm:class:ai-infrastructure",
   "@type": "Class",
   "label": "AI Infrastructure",
-  "definition": "AI Infrastructure refers to the hardware, software, and systems required to develop, train, deploy, and operate artificial intelligence applications.",
+  "definition": "AI Infrastructure refers to the hardware, software, and systems required to develop, train, deploy, and operate artificial intelligence applications. It encompasses GPU compute clusters, cloud platforms, model serving frameworks, data pipelines, and the surrounding toolchains for experiment tracking, versioning, and monitoring. Effective AI Infrastructure is a prerequisite for scaling machine learning workloads from research prototypes to production systems.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence"
     }
   ],
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:cloud-infrastructure", "label": "Cloud Infrastructure"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
@@ -106,9 +122,14 @@ public:: true
 - ### Relationships
   - is-subclass-of:: [[Artificial Intelligence]]
   - bridges-to:: [[Blockchain]] (domain: bc)
+  - hasPart:: [[GPU Compute]]
+  - hasPart:: [[Edge Computing]]
+  - supports:: [[Machine Learning]]
+  - supports:: [[Deep Learning]]
+  - relatedTo:: [[Cloud Infrastructure]]
 
 - ### Content
-  AI Infrastructure — content pending enrichment.
+  AI Infrastructure refers to the full stack of hardware, software, and services required to build, train, serve, and monitor AI systems. Core components include GPU compute clusters for model training, distributed data storage and pipelines, model serving runtimes (e.g. Triton, TorchServe), experiment tracking platforms, and orchestration layers such as Kubernetes. Cloud providers offer managed AI infrastructure via platforms such as AWS SageMaker, Google Vertex AI, and Azure ML, while edge deployments bring inference closer to data sources using specialised accelerators. Modern AI infrastructure must handle large-scale data ingestion, parallel distributed training across hundreds of accelerators, low-latency inference serving, and continuous monitoring of model drift and system health. Infrastructure choices directly determine the cost, speed, and reliability of AI development cycles.
 
 - ### Provenance
   - sources::

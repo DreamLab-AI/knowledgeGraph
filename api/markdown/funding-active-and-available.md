@@ -1,12 +1,14 @@
 - ### Definition
-  - Funding (active and available) is a concept within the ngm domain.
+  - A curated register of active and accessible funding opportunities for immersive technology, AI, and creative industries R&D, encompassing Innovate UK grants, UKRI programmes, ARIA challenges, Web3 venture capital, and academic grant schemes. The register tracks application status, eligibility constraints, match-funding requirements, and strategic alignment to accelerate project funding decisions.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:FundingActiveAndAvailable
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **enables**: Immersive Technology, AI Agent System — securing funding enables R&D on immersive and agentic AI systems
+  - **relatedTo**: Resource Management, Extended Reality — funding tracking is a resource management activity aligned with XR development priorities
+  - **supports**: Knowledge Graph, Agentic AI — funded workstreams directly advance knowledge graph and agentic AI capabilities
 
 - ### Content
   - [AI Upskilling fund: application guide - GOV.UK (www.gov.uk)](https://www.gov.uk/government/publications/flexible-ai-upskilling-fund/ai-upskilling-fund-application-guide)

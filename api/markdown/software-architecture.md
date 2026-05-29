@@ -7,6 +7,11 @@
 
 - ### Relationships
   - is-subclass-of:: ['owl:Thing']
+  - hasPart [[Microservices Architecture]]
+  - hasPart [[Distributed Systems]]
+  - enables [[Software Engineering]]
+  - relatedTo [[Machine Learning Infrastructure]]
+  - relatedTo [[Knowledge Graph]]
 
 - ### Content
 

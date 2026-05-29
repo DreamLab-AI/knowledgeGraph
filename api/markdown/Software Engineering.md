@@ -37,15 +37,28 @@ public:: true
   "@id": "urn:ngm:class:software-engineering",
   "@type": "Class",
   "label": "Software Engineering",
-  "definition": "Software Engineering is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Software Engineering is the disciplined application of systematic, quantifiable approaches to the development, operation, and maintenance of software. It encompasses requirements engineering, architectural design, implementation, testing, and DevOps practices for producing reliable, maintainable, and scalable systems. In metaverse and distributed real-time contexts, software engineering addresses concurrent state synchronisation, cross-platform compatibility, and asset pipeline management.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:software-architecture", "label": "Software Architecture"},
+      {"@id": "urn:ngm:class:software-testing", "label": "Software Testing"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:system-integration", "label": "System Integration"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:version-control", "label": "Version Control"},
+      {"@id": "urn:ngm:class:software-architecture", "label": "Software Architecture"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -76,14 +89,17 @@ public:: true
 
 
 - ### Definition
-  - SoftwareEngineering is a concept within the ngm domain.
+  - Software Engineering is the disciplined application of systematic, quantifiable approaches to the development, operation, and maintenance of software. It encompasses requirements engineering, architectural design, implementation, testing, and DevOps practices for producing reliable, maintainable, and scalable systems. In metaverse and distributed real-time contexts, software engineering addresses concurrent state synchronisation, cross-platform compatibility, and asset pipeline management.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:SoftwareEngineering
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart [[Software Architecture]]
+  - hasPart [[Software Testing]]
+  - enables [[System Integration]]
+  - relatedTo [[Version Control]]
 
 - ### Content
   # SoftwareEngineering

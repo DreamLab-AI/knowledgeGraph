@@ -42,9 +42,9 @@ public:: true
   "@id": "urn:ngm:class:rb-0012-wheeled-mobile-robot",
   "@type": "Class",
   "label": "rb 0012 wheeled mobile robot",
-  "definition": "wheeled mobile robot is a robotics and autonomous systems concept and a type of Mobile Robot.",
+  "definition": "A wheeled mobile robot (WMR) is a ground-based autonomous or semi-autonomous robot that uses wheels for locomotion. WMRs range from differential-drive platforms to omnidirectional holonomic designs; they rely on odometry for dead-reckoning, SLAM for map building, and path-planning algorithms for autonomous navigation in structured or semi-structured environments.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-robot-type",
@@ -55,7 +55,24 @@ public:: true
       "label": "Mobile Robot"
     }
   ],
-  "quality": 0.5,
+  "qualityScore": 0.7,
+  "quality": 0.7,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:differential-drive-robot", "label": "Differential Drive Robot"},
+      {"@id": "urn:ngm:class:mobile-robot-platform", "label": "Mobile Robot Platform"},
+      {"@id": "urn:ngm:class:wheeled-mobile-robot", "label": "Wheeled Mobile Robot"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:odometry", "label": "Odometry"},
+      {"@id": "urn:ngm:class:slam", "label": "SLAM"},
+      {"@id": "urn:ngm:class:rb-0075-range-finder", "label": "rb 0075 range finder"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:path-planning", "label": "Path Planning"},
+      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -91,7 +108,7 @@ public:: true
 
 
 - ### Definition
-  - ### Primary Definition
+  - A **wheeled mobile robot** uses one or more wheels for planar locomotion and is the dominant platform for indoor and logistics autonomy. Differential-drive WMRs steer by varying relative wheel speeds; omnidirectional designs (mecanum or omni wheels) move in any direction without turning. Navigation stacks combine wheel odometry with SLAM (using LiDAR or range finders) and path planners to operate safely under standards such as ISO 3691-4.
 
 - ### Semantic Classification
   - owl-class:: robotics:rb0012wheeledmobilerobot
@@ -99,7 +116,9 @@ public:: true
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Relies on range finders (rb 0075) and SLAM for environment mapping and localisation.
+  - Path planning and autonomous navigation are prerequisite capabilities for safe deployment.
+  - Governed by ISO 3691-4:2020 for industrial automated guided vehicles (AGVs).
 
 - ### Content
   - ### Primary Definition

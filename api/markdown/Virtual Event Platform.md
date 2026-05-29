@@ -48,7 +48,8 @@ public:: true
   "label": "Virtual Event Platform",
   "definition": "Software platforms that enable hosting digital events in metaverse environments, supporting conferences, exhibitions, concerts, and networking through immersive 3D spaces with avatar-based attendance, interactive features, and real-time collaboration tools.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -64,6 +65,44 @@ public:: true
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:virtual-event",
+        "label": "Virtual Event"
+      },
+      {
+        "@id": "urn:ngm:class:event-management",
+        "label": "Event Management"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      },
+      {
+        "@id": "urn:ngm:class:collaboration-platform",
+        "label": "Collaboration Platform"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:social-vr",
+        "label": "Social VR"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-platform",
+        "label": "Metaverse Platform"
+      }
+    ]
   }
 }
 ```
@@ -109,6 +148,13 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Metaverse]]
+  - Has Part: [[Virtual Event]]
+  - Has Part: [[Event Management]]
+  - Requires: [[Avatar]]
+  - Requires: [[Collaboration Platform]]
+  - Uses: [[Social VR]]
+  - Uses: [[Metaverse Platform]]
+  - Enables: [[Immersive Experience]]
 
 - ### Content
 

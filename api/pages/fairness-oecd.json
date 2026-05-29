@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:fairness-oecd",
   "domain": "artificial-intelligence",
-  "definition": "AI systems should not create or reinforce unfair bias, discrimination or disparate impacts on individuals or groups based on protected characteristics, and should incorporate appropriate safeguards to ensure equitable treatment and opportunity whilst respecting legitimate differentiation based on...",
+  "definition": "The OECD AI Principle (1.2) requiring that AI systems do not create or reinforce unfair bias, discrimination, or disparate impacts on individuals or groups based on protected characteristics. Fairness mandates proactive safeguards\u2014pre-processing reweighting, in-processing constraints, post-processing calibration\u2014ensuring equitable treatment whilst respecting legitimate, evidence-based differentiation.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -13,21 +13,53 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:human-centred-values",
+        "label": "Human Centred Values"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:explainability-oecd",
+        "label": "Explainability (OECD)"
+      },
+      {
+        "id": "urn:ngm:class:accountability-oecd",
+        "label": "Accountability (OECD)"
+      },
+      {
+        "id": "urn:ngm:class:equity",
+        "label": "Equity"
+      }
+    ]
   },
   "wikilinks": [
     {

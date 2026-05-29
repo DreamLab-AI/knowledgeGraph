@@ -42,16 +42,33 @@ public:: true
   "@id": "urn:ngm:class:metaverse-as-markets",
   "@type": "Class",
   "label": "Metaverse as Markets",
-  "definition": "Metaverse as Markets is a spatial computing concept and a type of spatial-computing.",
+  "definition": "A conceptual framing of metaverse platforms as economic ecosystems in which virtual goods, services, experiences, and digital assets are produced, traded, and consumed. This view foregrounds creator economies, digital ownership, interoperable asset standards, and market dynamics including adoption curves, pricing models, and regulatory challenges specific to virtual worlds.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:digital-goods", "label": "Digital Goods"},
+      {"@id": "urn:ngm:class:creator-economy", "label": "Creator Economy"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"},
+      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:digital-economy", "label": "Digital Economy"},
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:metaverse-platform", "label": "Metaverse Platform"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -87,14 +104,20 @@ public:: true
 
 
 - ### Definition
-  - Metaverse as Markets is a concept within the ngm domain.
+  - A conceptual framing of metaverse platforms as economic ecosystems in which virtual goods, services, experiences, and digital assets are produced, traded, and consumed. This view foregrounds creator economies, digital ownership, interoperable asset standards, and market dynamics including adoption curves, pricing models, and regulatory challenges specific to virtual worlds.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:MetaverseAsMarkets
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **hasPart** [[Digital Goods]] — virtual goods are the tradeable units within metaverse market ecosystems
+  - **hasPart** [[Creator Economy]] — creator monetisation is the supply side of metaverse markets
+  - **requires** [[Digital Identity]] — market participation requires verified, portable digital identities
+  - **requires** [[Interoperability]] — asset portability across platforms requires interoperability standards
+  - **relatedTo** [[Digital Economy]] — metaverse markets are a sub-domain of the broader digital economy
+  - **relatedTo** [[Blockchain]] — blockchain provides ownership provenance and exchange infrastructure for virtual assets
+  - **dependsOn** [[Metaverse Platform]] — markets operate within and depend on underlying platform infrastructure
 
 - ### Content
   - #Public page

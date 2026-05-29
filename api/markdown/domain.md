@@ -1,10 +1,13 @@
 - ### Definition
-  - Domain is a concept within the ngm domain.
+  - A Domain is a coherent and bounded sphere of knowledge or subject area within formal ontology engineering, establishing the scope of conceptualisation—the set of entities, relationships, and axioms characterising a particular area of discourse. Domains serve as fundamental organising principles enabling modular knowledge organisation and interoperability between specialised knowledge systems, realised through namespace declarations, import mechanisms, and modular ontology structures.
 - ### Semantic Classification
   - owl-class:: infrastructure:Domain
   - owl-role:: Concept
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **relatedTo**: [[Domain Ontology]], [[Ontology]]
+  - **enables**: [[Knowledge Graph]], [[Semantic Web]]
+  - **uses**: [[Semantic Web Standards]]
+  - **hasPart**: [[Metaverse Domain]], [[Blockchain Domain]]
   - bridges-to:: [[Blockchain]] (bc)
 - ### Content
   ## Definition

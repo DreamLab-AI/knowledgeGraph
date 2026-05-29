@@ -1,5 +1,5 @@
 - ### Definition
-  - Resilience is a concept within the bc domain.
+  - The capacity of a system, network, or organisation to anticipate, withstand, recover from, and adapt to adverse conditions, attacks, or failures whilst maintaining essential functions. In distributed and blockchain contexts, resilience is achieved through decentralisation, redundancy, byzantine fault tolerance, and adaptive response mechanisms.
 
 - ### Semantic Classification
   - owl-class:: blockchain:Resilience
@@ -7,6 +7,13 @@
 
 - ### Relationships
   - is-subclass-of:: [[Blockchain]]
+  - Requires: [[Byzantine Fault Tolerance]]
+  - Requires: [[Consensus Mechanism]]
+  - Supports: [[Cybersecurity]]
+  - Supports: [[Data Security]]
+  - Contrasts With: [[Blockchain Scalability]]
+  - Related To: [[Blockchain Governance]]
+  - Related To: [[Blockchain Network]]
 
 - ### Content
 

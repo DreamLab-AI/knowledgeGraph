@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:fraud-detection",
   "domain": "infrastructure",
-  "definition": "The application of statistical models, machine learning, and rule-based systems to identify anomalous transactions or behaviours indicative of deception or unauthorised activity.",
+  "definition": "Fraud detection is the real-time or near-real-time identification of deceptive or unauthorised activities\u2014such as payment fraud, account takeover, and identity theft\u2014using statistical models, machine learning classifiers, and rule-based engines applied to transactional and behavioural data. The field operates under severe class-imbalance constraints, where fraudulent events are rare relative to legitimate activity, demanding specialised sampling strategies and evaluation metrics such as precision-recall curves and F1 scores. Explainability of model decisions is increasingly mandated by financial regulators to support human review of adverse determinations.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-security-and-identity",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

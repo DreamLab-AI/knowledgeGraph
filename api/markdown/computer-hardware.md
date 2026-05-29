@@ -6,8 +6,10 @@
   - owl-role:: concept
 
 - ### Relationships
-  - is-subclass-of:: ['owl:Thing']
-  - bridges-to:: [[Autonomous Robot]], [[Blockchain]], [[Digital Twin]]
+  - Enables [[Deep Learning]], [[GPU Compute]]
+  - Uses [[Hardware Acceleration]]
+  - Supports [[Digital Twin]], [[Autonomous Robot]]
+  - Related to [[Distributed Computing]], [[Training]]
 
 - ### Content
 

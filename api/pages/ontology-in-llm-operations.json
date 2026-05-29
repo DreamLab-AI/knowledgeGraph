@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ontology-in-llm-operations",
   "domain": "artificial-intelligence",
-  "definition": "Ontology in LLM Operations is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "The application of formal ontological structures to guide, constrain, and enrich large language model inference and retrieval pipelines. Ontologies supply typed entity schemas, relation vocabularies, and axioms that reduce hallucination, improve structured output consistency, and enable semantic grounding of LLM responses within knowledge-graph-backed retrieval-augmented generation systems.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -13,18 +13,45 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:knowledge-base",
+        "label": "Knowledge Base"
+      },
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:metaverse-ontology",
+        "label": "Metaverse Ontology"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": []

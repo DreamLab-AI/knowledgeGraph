@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:chain-of-thought",
   "domain": "artificial-intelligence",
-  "definition": "Chain-of-Thought prompting is a technique that elicits step-by-step intermediate reasoning from large language models before producing a final answer, improving performance on complex reasoning tasks.",
+  "definition": "Chain-of-Thought (CoT) prompting is a prompting technique for large language models in which the model is encouraged to produce explicit intermediate reasoning steps prior to its final answer, substantially improving accuracy on arithmetic, symbolic, and commonsense reasoning tasks. The technique exploits the sequential token-generation process of autoregressive transformers: each generated reasoning step conditions all subsequent steps, allowing multi-hop deductions that single-step prompting cannot reliably perform. CoT has given rise to a family of variants including zero-shot CoT, self-consistency CoT, and tree-of-thought search strategies.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -14,11 +14,25 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +41,16 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:chain-of-thought-reasoning",
+        "label": "Chain-of-Thought Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

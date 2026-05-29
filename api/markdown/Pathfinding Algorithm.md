@@ -46,7 +46,7 @@ public:: true
   "@id": "urn:ngm:class:pathfinding-algorithm",
   "@type": "Class",
   "label": "Pathfinding Algorithm",
-  "definition": "Pathfinding Algorithm is a artificial intelligence concept and a type of Algorithm.",
+  "definition": "A computational algorithm that determines an optimal or near-optimal route between a start and goal node in a graph or spatial environment. Pathfinding algorithms are central to autonomous navigation, game AI, robotics, and metaverse movement systems, with classical examples including Dijkstra's algorithm for shortest paths and A* for heuristic-guided search in spatial graphs.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -59,7 +59,28 @@ public:: true
       "label": "Algorithm"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:dijkstra-algorithm", "label": "Dijkstra Algorithm"},
+      {"@id": "urn:ngm:class:graph-search", "label": "Graph Search"},
+      {"@id": "urn:ngm:class:heuristic-methods", "label": "Heuristic Methods"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:graph-algorithms", "label": "Graph Algorithms"},
+      {"@id": "urn:ngm:class:search-algorithm", "label": "Search Algorithm"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
+      {"@id": "urn:ngm:class:navigation", "label": "Navigation"},
+      {"@id": "urn:ngm:class:metaverse-navigation-systems", "label": "Metaverse Navigation Systems"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:search-algorithms", "label": "Search Algorithms"},
+      {"@id": "urn:ngm:class:autonomous-agent", "label": "Autonomous Agent"},
+      {"@id": "urn:ngm:class:fast-spatial-queries", "label": "Fast Spatial Queries"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

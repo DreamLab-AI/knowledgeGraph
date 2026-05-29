@@ -7,7 +7,11 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - enables [[Reward Model]]
+  - enables [[Reinforcement Learning from Human Feedback]]
+  - enables [[AI Alignment]]
+  - requires [[Supervised Fine Tuning]]
+  - relatedTo [[Model Performance]]
 
 - ### Content
   - Information provided by human evaluators about model outputs, typically in the form of rankings, ratings, demonstrations, or corrections. Human feedback serves as the training signal for aligning AI systems with human preferences and values, enabling learning of complex objectives difficult to specify formally.

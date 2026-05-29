@@ -42,16 +42,30 @@ public:: true
   "@id": "urn:ngm:class:rb-0024-workspace",
   "@type": "Class",
   "label": "rb 0024 workspace",
-  "definition": "workspace is a robotics and autonomous systems concept and a type of robotics.",
+  "definition": "The workspace of a robot manipulator is the total volume of space that the end-effector can reach, given the joint range limits of all links. The reachable workspace encompasses every point the tool-centre-point (TCP) can attain in at least one orientation, while the dexterous workspace is the subset reachable in all possible orientations. Workspace volume, shape, and dexterity distribution are primary design criteria for robot selection and cell layout, and must account for self-collisions, payload, and safety exclusion zones.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-actuation-and-control",
       "label": "Actuation and Control"
     }
   ],
-  "quality": 0.5,
+  "quality": 0.7,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:rb-0023-degrees-of-freedom", "label": "rb 0023 degrees of freedom"},
+      {"@id": "urn:ngm:class:rb-0037-dexterity", "label": "rb 0037 dexterity"},
+      {"@id": "urn:ngm:class:rb-0031-singularity", "label": "rb 0031 singularity"},
+      {"@id": "urn:ngm:class:rb-0095-safety-zone", "label": "rb 0095 safety zone"},
+      {"@id": "urn:ngm:class:rb-0033-payload", "label": "rb 0033 payload"},
+      {"@id": "urn:ngm:class:manipulator-arm", "label": "Manipulator Arm"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:rb-0021-robot-kinematics", "label": "rb 0021 robot kinematics"},
+      {"@id": "urn:ngm:class:rb-0026-robot-joint", "label": "rb 0026 robot joint"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -87,7 +101,8 @@ public:: true
 
 
 - ### Definition
-  - ### Primary Definition
+  - The workspace of a robot manipulator is the total volumetric region that the tool-centre-point (TCP) can reach given all joint travel limits. The reachable workspace encompasses every point attainable in at least one joint configuration, while the dexterous workspace is the smaller subset reachable in every orientation — a critical distinction for tasks requiring precise approach angles. Workspace geometry is computed analytically or by Monte Carlo sampling of the joint space and is a primary criterion when selecting or designing a robot for a given cell layout.
+  - Beyond the kinematic envelope, practical workspace planning must account for self-collisions, link length ratios, payload at full extension, and the safety exclusion zones mandated for collaborative or industrial installations. The shape of the workspace (e.g., toroidal for 6-DoF arms, spherical for some parallel robots) directly influences how a robot can be positioned relative to the task.
 
 - ### Semantic Classification
   - owl-class:: robotics:Workspace
@@ -95,7 +110,7 @@ public:: true
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Determined by robot kinematics (rb 0021) and joint ranges (rb 0026); closely coupled with dexterity (rb 0037), degrees of freedom (rb 0023), and singularity avoidance (rb 0031).
 
 - ### Content
   - ### Primary Definition

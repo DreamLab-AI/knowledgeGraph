@@ -78,9 +78,10 @@ public:: true
   "@id": "urn:ngm:class:local-explanation",
   "@type": "Class",
   "label": "Local Explanation",
-  "definition": "Interpretability techniques that explain individual model predictions for specific instances, providing insight into why a particular input produced a given output without necessarily characterising the model's global behaviour.",
-  "domain": "spatial-computing",
-  "maturity": "draft",
+  "definition": "Interpretability techniques that explain individual model predictions for specific instances, providing insight into why a particular input produced a given output without necessarily characterising the model's global behaviour. Methods such as LIME and SHAP generate feature-attribution scores scoped to the neighbourhood of a single query point.",
+  "domain": "artificial-intelligence",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
@@ -91,7 +92,21 @@ public:: true
       "label": "Model Interpretability"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:global-explanation", "label": "Global Explanation"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:feature-importance", "label": "Feature Importance"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:accountability", "label": "Accountability"},
+      {"@id": "urn:ngm:class:fairness", "label": "Fairness"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -172,15 +187,19 @@ public:: true
 
 
 - ### Definition
-  - Interpretability techniques that explain individual model predictions for specific instances, providing insight into why a particular input produced a given output without necessarily characterising the model's global behaviour.
+  - Interpretability techniques that explain individual model predictions for specific instances, providing insight into why a particular input produced a given output without necessarily characterising the model's global behaviour. Methods such as LIME and SHAP generate feature-attribution scores scoped to the neighbourhood of a single query point.
 
 - ### Semantic Classification
-  - owl-class:: spatial-computing:LocalExplanation
+  - owl-class:: artificial-intelligence:LocalExplanation
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **partOf** [[Explainable AI]] — local explanation techniques are a core component of the XAI toolbox
+  - **contrastsWith** [[Global Explanation]] — local explanations scope to one instance; global explanations characterise the full model
+  - **uses** [[Feature Importance]] — local methods compute per-instance feature attributions as their primary output
+  - **enables** [[Accountability]] — instance-level explanations provide the evidentiary basis for challenging individual decisions
+  - **enables** [[Fairness]] — local explanations reveal whether individual decisions are driven by protected attributes
 
 - ### Content
   - Interpretability techniques that explain individual model predictions for specific instances, providing insight into why a particular input produced a given output without necessarily characterising the model's global behaviour.

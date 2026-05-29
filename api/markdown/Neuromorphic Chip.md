@@ -58,27 +58,48 @@ public:: true
   "@id": "urn:ngm:class:neuromorphic-chip",
   "@type": "Class",
   "label": "Neuromorphic Chip",
-  "definition": "Computer chips designed to mimic the structure and function of biological neural networks, using analog circuits to emulate neuronal behavior for energy-efficient AI processing.",
+  "definition": "A neuromorphic chip is a specialised integrated circuit designed to emulate the structure and dynamics of biological neural networks, employing analogue or mixed-signal circuits to implement spiking neuron models that process information through sparse, event-driven spikes rather than continuous clock-driven computation. This brain-inspired architecture achieves orders-of-magnitude improvements in energy efficiency for pattern recognition, sensory processing, and on-device inference compared with conventional von Neumann processors. Representative implementations include IBM TrueNorth and Intel Loihi.",
   "domain": "artificial-intelligence",
   "maturity": "emerging",
+  "quality": 0.75,
+  "qualityScore": 0.75,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:cat-ai-infrastructure",
+      "@id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure (Category)"
     }
   ],
-  "quality": 0.35,
-  "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
-  },
   "sameAs": [
     {
       "@id": "urn:ngm:class:neuromorphic-chips",
       "label": "Neuromorphic Chips"
     }
-  ]
+  ],
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:ai-hardware", "label": "AI Hardware"},
+      {"@id": "urn:ngm:class:neuromorphic-computing", "label": "Neuromorphic Computing"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:inference-hardware", "label": "Inference Hardware"},
+      {"@id": "urn:ngm:class:parallel-processing", "label": "Parallel Processing"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:edge-ai-accelerator", "label": "Edge AI Accelerator"},
+      {"@id": "urn:ngm:class:on-device-learning", "label": "On-Device Learning"},
+      {"@id": "urn:ngm:class:tiny-ml", "label": "TinyML"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:cognitive-architecture", "label": "Cognitive Architecture"},
+      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
+      {"@id": "urn:ngm:class:tensor-processing-unit", "label": "Tensor Processing Unit"}
+    ]
+  },
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 
@@ -140,7 +161,14 @@ public:: true
   - is-subclass-of:: [[Artificial Intelligence]]
 
 - ### Content
-  Neuromorphic Chip — content pending enrichment.
+
+  ## Overview
+
+  A neuromorphic chip implements computation in a manner analogous to the mammalian brain: massively parallel, event-driven processing by large populations of artificial spiking neurons, with co-located memory and compute that avoids the energy cost of shuttling data across a traditional memory bus. Unlike GPU compute or tensor processing units, neuromorphic architectures are optimised for sparse, temporally coded signals—making them well suited to sensor-driven applications such as edge inference on audio, vision, and motion data with extreme power budgets.
+
+  ## Key Characteristics and Applications
+
+  Neuromorphic chips operate at milliwatt or sub-milliwatt power levels, enabling always-on perception on battery-constrained devices. The event-driven paradigm means that computation occurs only when input changes, yielding near-zero idle power. Application domains include robotics, prosthetics, always-on keyword spotting, real-time anomaly detection in industrial sensors, and TinyML inference on embedded systems. Continued progress depends on advances in device physics (memristors, phase-change materials) to implement synaptic plasticity in silicon at scale.
 
 - ### Provenance
   - sources:: [[AI Hardware]], [[Intel Loihi]], [[IBM TrueNorth]]

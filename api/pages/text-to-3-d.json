@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:text-to-3-d",
   "domain": "artificial-intelligence",
-  "definition": "Text-to-3D is a artificial intelligence concept and a type of Generative Ai.",
+  "definition": "Text-to-3D is a generative AI capability that synthesises three-dimensional geometry, texture, and material properties from natural-language descriptions, bridging the gap between linguistic intent and spatial representation. Dominant technical approaches include score-distillation sampling (SDS) that distils a 2D diffusion prior into a NeRF or 3D Gaussian Splatting field, multi-view diffusion models that jointly generate consistent images from multiple viewpoints before reconstructing a mesh, and image-conditioned 3D reconstruction pipelines. Text-to-3D has transformative applications in game asset creation, virtual production, digital twins, augmented-reality content authoring, and e-commerce visualisation, dramatically reducing the time and expertise required to populate 3D environments.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-application",
@@ -13,25 +13,85 @@
     },
     {
       "id": "urn:ngm:class:generative-ai",
-      "label": "Generative Ai"
+      "label": "Generative AI"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:neural-radiance-field",
+        "label": "Neural Radiance Field"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:3-d-asset",
+        "label": "3D Asset"
+      },
+      {
+        "id": "urn:ngm:class:3-d-model",
+        "label": "3D Model"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:text-to-image",
+        "label": "Text-to-Image"
+      },
+      {
+        "id": "urn:ngm:class:3-d-gaussian-splatting",
+        "label": "3D Gaussian Splatting"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:3-d-content-generation",
+        "label": "3D Content Generation"
+      },
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -7,6 +7,10 @@
 
 - ### Relationships
   - is-subclass-of:: ['owl:Thing']
+  - **requires**: Software Testing (quality assurance gate), Software Engineering (engineering discipline foundation)
+  - **uses**: Machine Learning Pipeline (automated training and evaluation workflow), AI Development Tools (experiment tracking, versioning, monitoring)
+  - **enables**: AI Deployment (moves models from development to production), AI-Augmented Software Engineering (code assistants and automated review)
+  - **supports**: Standards Conformance Testing (structured test suites embedded in CI/CD)
 
 - ### Content
 

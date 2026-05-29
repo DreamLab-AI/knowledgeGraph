@@ -158,9 +158,10 @@ public:: true
   "@id": "urn:ngm:class:text-summarisation",
   "@type": "Class",
   "label": "Text Summarisation",
-  "definition": "Text Summarisation is the NLP task of producing concise, coherent summaries that capture the essential information from longer documents or document collections.",
+  "definition": "Text summarisation is the NLP task of producing concise, coherent summaries that capture the essential information from longer documents or collections. Systems employ extractive methods (selecting key sentences) or abstractive methods (generating new text) using transformer architectures such as BART, PEGASUS, and T5, with applications spanning news aggregation, research synthesis, and document retrieval.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
@@ -171,7 +172,23 @@ public:: true
       "label": "Natural Language Processing"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:bart", "label": "BART"},
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
+      {"@id": "urn:ngm:class:language-modeling", "label": "Language Modeling"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:text-generation", "label": "Text Generation"},
+      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -360,7 +377,10 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: BART, Large Language Models
+  - **requires**: Natural Language Processing, Language Modeling
+  - **enables**: Information Retrieval
+  - **relatedTo**: Text Generation, Prompt Engineering
 
 - ### Content
   - Text Summarisation is the NLP task of producing concise, coherent summaries that capture the essential information from longer documents or document collections. Summarisation systems employ extractive methods (selecting key sentences) or abstractive methods (generating new summary text) using transformer models to enable applications in news aggregation, document analysis, and information retrieval.

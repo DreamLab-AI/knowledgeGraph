@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:fault-tolerance-system",
   "domain": "blockchain",
-  "definition": "A Fault Tolerance System is a design framework enabling a distributed system to continue correct operation despite the occurrence of component failures, network disruptions, or malicious behavior by subset of participants.",
+  "definition": "A Fault Tolerance System is an engineering design framework enabling a distributed system to continue correct operation despite component failures, network disruptions, or malicious behaviour by a subset of participants. These systems employ redundancy, error detection, and automatic recovery to mask failures from end users, with Byzantine fault tolerance being the gold standard for adversarial environments such as public blockchains, which require at least 3f+1 total nodes to tolerate f Byzantine failures.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-network-component",
@@ -17,21 +17,87 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:replication-system",
+        "label": "Replication System"
+      },
+      {
+        "id": "urn:ngm:class:data-replication",
+        "label": "Data Replication"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "id": "urn:ngm:class:operational-resilience",
+        "label": "Operational Resilience"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:practical-byzantine-fault-tolerance",
+        "label": "Practical Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:federated-byzantine-fault-tolerance",
+        "label": "Federated Byzantine Fault Tolerance"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:distributed-architecture",
+        "label": "Distributed Architecture"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerant-system",
+        "label": "Byzantine Fault Tolerant System"
+      }
+    ]
   },
   "wikilinks": [
     {

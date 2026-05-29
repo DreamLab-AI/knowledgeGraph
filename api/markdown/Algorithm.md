@@ -46,7 +46,7 @@ public:: true
   "@id": "urn:ngm:class:algorithm",
   "@type": "Class",
   "label": "Algorithm",
-  "definition": "Algorithm is a artificial intelligence concept and a type of Artificial Intelligence.",
+  "definition": "A finite, deterministic sequence of instructions or rules that solves a computational problem or performs a transformation on data. In AI and blockchain contexts algorithms encompass learning procedures, consensus rules, cryptographic primitives, and optimisation methods that underpin intelligent systems and distributed ledgers.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -55,7 +55,27 @@ public:: true
       "label": "AI Technique"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"},
+      {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"},
+      {"@id": "urn:ngm:class:consensus-algorithm", "label": "Consensus Algorithm"},
+      {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:algorithmic-framework", "label": "Algorithmic Framework"},
+      {"@id": "urn:ngm:class:algorithmic-bias", "label": "Algorithmic Bias"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:machine-learning-model", "label": "Machine Learning Model"},
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:inference", "label": "Inference"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

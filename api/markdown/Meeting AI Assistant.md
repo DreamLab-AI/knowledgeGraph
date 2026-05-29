@@ -379,7 +379,7 @@ public:: true
       "label": "Communication Technology"
     },
     {
-      "@id": "urn:ngm:class:ai-agent",
+      "@id": "urn:ngm:class:ai-agents",
       "label": "AI Agent"
     },
     {

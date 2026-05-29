@@ -92,14 +92,33 @@ public:: true
   "label": "Security",
   "definition": "The protection of AI systems and their components against unauthorized access, manipulation, disruption, or exploitation, encompassing confidentiality, integrity, and availability of data, models, and infrastructure throughout the AI lifecycle.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
       "label": "Governance and Safety"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:authentication", "label": "Authentication"},
+      {"@id": "urn:ngm:class:encryption", "label": "Encryption"},
+      {"@id": "urn:ngm:class:identity-and-access-management", "label": "Identity and Access Management"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:privacy", "label": "Privacy"},
+      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:threat-actor", "label": "Threat Actor"},
+      {"@id": "urn:ngm:class:attack-vector", "label": "Attack Vector"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:zero-trust-architecture", "label": "Zero Trust Architecture"},
+      {"@id": "urn:ngm:class:security-framework", "label": "Security Framework"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -201,7 +220,10 @@ public:: true
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires** → [[Authentication]], [[Encryption]], [[Identity and Access Management]]
+  - **enables** → [[Privacy]], [[Cybersecurity]]
+  - **contrastsWith** → [[Threat Actor]], [[Attack Vector]]
+  - **supports** → [[Zero Trust Architecture]], [[Security Framework]]
 - ### Content
   - The protection of AI systems and their components against unauthorized access, manipulation, disruption, or exploitation, encompassing confidentiality, integrity, and availability of data, models, and infrastructure throughout the AI lifecycle.
   - ### **VMesh**

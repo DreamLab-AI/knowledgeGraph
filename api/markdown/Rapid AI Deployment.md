@@ -42,16 +42,42 @@ public:: true
   "@id": "urn:ngm:class:rapid-ai-deployment",
   "@type": "Class",
   "label": "Rapid AI Deployment",
-  "definition": "Rapid AI Deployment is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "Rapid AI Deployment refers to accelerated processes for taking AI models from development into production, prioritising speed-to-market through streamlined MLOps pipelines, automated testing, and pre-built infrastructure. It encompasses practices such as continuous delivery of model updates, containerised inference serving, and automated monitoring to minimise the time between model training and live operation while managing associated risks.",
   "domain": "artificial-intelligence",
   "maturity": "established",
+  "qualityScore": 0.8,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:cat-ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
+      "@id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:machine-learning-pipeline", "label": "Machine Learning Pipeline"},
+      {"@id": "urn:ngm:class:cloud-infrastructure", "label": "Cloud Infrastructure"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:inference", "label": "Inference"},
+      {"@id": "urn:ngm:class:ai-deployment", "label": "AI Deployment"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:machine-learning-infrastructure", "label": "Machine Learning Infrastructure"},
+      {"@id": "urn:ngm:class:api-gateway", "label": "API Gateway"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:machine-learning-model", "label": "Machine Learning Model"},
+      {"@id": "urn:ngm:class:inference-hardware", "label": "Inference Hardware"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
+      {"@id": "urn:ngm:class:ai-risk-management", "label": "AI Risk Management"},
+      {"@id": "urn:ngm:class:ai-lifecycle", "label": "AI Lifecycle"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -87,18 +113,24 @@ public:: true
 
 
 - ### Definition
-  - Rapid AI Deployment is a concept within the ai domain.
-
-- ### Semantic Classification
-  - owl-class:: artificial-intelligence:RapidAiDeployment
-  - owl-role:: Concept
-  - belongs-to-domain:: [[Artificial Intelligence]]
+  Rapid AI Deployment refers to accelerated processes for taking AI models from development into production, prioritising speed-to-market through streamlined MLOps pipelines, automated testing, and pre-built infrastructure. It encompasses continuous delivery of model updates, containerised inference serving, and automated monitoring to minimise time between model training and live operation while managing associated risks.
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires:: [[Machine Learning Pipeline]], [[Cloud Infrastructure]]
+  - enables:: [[Inference]], [[AI Deployment]]
+  - uses:: [[Machine Learning Infrastructure]], [[API Gateway]]
+  - dependsOn:: [[Machine Learning Model]], [[Inference Hardware]]
+  - relatedTo:: [[Responsible AI]], [[AI Risk Management]], [[AI Lifecycle]]
+  - contrastsWith:: [[Federated Learning]]
 
 - ### Content
-  Rapid AI Deployment — content pending enrichment.
+  Rapid AI Deployment addresses the operational gap between model research and production value delivery. Traditional model deployment cycles involved sequential handoffs—from data scientists to ML engineers to infrastructure teams—creating multi-week or multi-month delays. Rapid deployment frameworks compress this timeline through model registries, automated CI/CD pipelines for ML, and one-click deployment abstractions that provision inference endpoints with pre-configured scaling, monitoring, and rollback capabilities.
+
+  Infrastructure components central to rapid deployment include containerised model packaging (commonly via Docker and Kubernetes orchestration), managed model serving platforms that abstract hardware provisioning, and feature stores enabling consistent feature computation between training and serving. API gateways handle authentication, rate limiting, and traffic routing to multiple model versions, enabling A/B testing and canary releases that validate new model versions against subsets of live traffic before full rollout.
+
+  Risk management within rapid deployment requires automated quality gates: inference latency benchmarks, prediction drift detectors, and data schema validators must pass before a model advances through deployment stages. Organisations governed by the EU AI Act or internal AI governance policies must integrate ethical review checkpoints into the deployment pipeline, ensuring that speed does not circumvent accountability or human oversight obligations for high-risk AI systems.
+
+  Cloud infrastructure providers have standardised rapid deployment tooling through managed ML platforms (AWS SageMaker, Google Vertex AI, Azure ML), reducing infrastructure engineering burden. Edge computing architectures extend rapid deployment to low-latency use cases by pre-positioning model artefacts on edge nodes, enabling inference without cloud round-trips while retaining centralised model update distribution.
 
 - ### Provenance
   - sources:: Chimera Prime Research

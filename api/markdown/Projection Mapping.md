@@ -37,15 +37,30 @@ public:: true
   "@id": "urn:ngm:class:projection-mapping",
   "@type": "Class",
   "label": "Projection Mapping",
-  "definition": "Projection Mapping is a spatial computing concept and a type of spatial-computing.",
+  "definition": "Projection Mapping is a spatial AR display technique that aligns projected imagery precisely onto three-dimensional physical surfaces, transforming arbitrary geometry into dynamic visual canvases. It requires real-time rendering of geometry-corrected frames, spatial calibration, and surface modelling, enabling immersive installations, virtual production environments, and location-based XR experiences.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-display-and-rendering",
       "label": "Display and Rendering"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
+      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
+      {"@id": "urn:ngm:class:immersive-entertainment", "label": "Immersive Entertainment"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:ar-technology", "label": "AR Technology"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -76,14 +91,16 @@ public:: true
 
 
 - ### Definition
-  - ProjectionMapping is a concept within the ngm domain.
+  - Projection Mapping is a spatial AR display technique that aligns projected imagery precisely onto three-dimensional physical surfaces, transforming arbitrary geometry into dynamic visual canvases. It requires real-time rendering of geometry-corrected frames, spatial calibration, and surface modelling, enabling immersive installations, virtual production environments, and location-based XR experiences.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:ProjectionMapping
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses: [[Real-Time Rendering]], [[Augmented Reality]]
+  - enables: [[Immersive Experience]], [[Immersive Entertainment]]
+  - relatedTo: [[Spatial Computing]], [[AR Technology]]
 
 - ### Content
   # ProjectionMapping

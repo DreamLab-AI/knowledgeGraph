@@ -26,7 +26,7 @@ public:: true
   "@type": "Class",
   "@id": "urn:ngm:class:ai-application",
   "label": "AI Application",
-  "definition": "Intermediate taxonomy category for ai application concepts within the artificial intelligence domain.",
+  "definition": "AI Application is the taxonomy hub for deployed uses of artificial intelligence across domains — encompassing conversational AI, computer vision, generative AI, healthcare AI, autonomous systems, fraud detection, and multimodal AI. It bridges AI research and real-world deployment, grouping systems by the function they perform rather than the techniques they use.",
   "domain": "artificial-intelligence",
   "subClassOf": [
     {
@@ -34,8 +34,33 @@ public:: true
       "label": "Artificial Intelligence"
     }
   ],
-  "relations": {},
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:conversational-ai", "label": "Conversational AI"},
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
+      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
+      {"@id": "urn:ngm:class:healthcare-ai", "label": "Healthcare AI"},
+      {"@id": "urn:ngm:class:autonomous-system", "label": "Autonomous System"},
+      {"@id": "urn:ngm:class:fraud-detection", "label": "Fraud Detection"},
+      {"@id": "urn:ngm:class:multimodal-ai", "label": "Multimodal AI"},
+      {"@id": "urn:ngm:class:autonomous-driving", "label": "Autonomous Driving"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"},
+      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+    ]
+  },
+  "quality": 0.8,
   "qualityScore": 0.8,
   "maturity": "established"
 }
 ```
+
+AI Application is the top-level category grouping all deployed uses of AI technology. Unlike AI technique categories that organise by method, AI Application organises by purpose and deployment context — the problems being solved and the domains being served.
+
+Key sub-domains include conversational AI (chatbots, voice assistants), computer vision (object detection, scene understanding), generative AI (image, text, code generation), healthcare AI (diagnostics, drug discovery), and autonomous systems (robotics, self-driving). The category is closely coupled to AI infrastructure (the compute and serving platforms enabling deployment) and AI safety (the governance constraints on what applications may do).

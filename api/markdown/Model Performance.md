@@ -122,16 +122,32 @@ public:: true
   "@id": "urn:ngm:class:model-performance",
   "@type": "Class",
   "label": "Model Performance",
-  "definition": "The quantitative and qualitative measure of how effectively an artificial intelligence model accomplishes its designated tasks, typically assessed through statistical metrics evaluating prediction accuracy, reliability, generalisability, computational efficiency, and robustness, considered across...",
+  "definition": "The quantitative and qualitative measure of how effectively an artificial intelligence model accomplishes its designated tasks, typically assessed through statistical metrics evaluating prediction accuracy, reliability, generalisability, computational efficiency, and robustness, considered across different data distributions, operational conditions, and stakeholder requirements, serving as a critical basis for model selection, deployment decisions, ongoing monitoring, and continuous improvement throughout the AI lifecycle.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:accuracy", "label": "Accuracy"},
+      {"@id": "urn:ngm:class:f1-score", "label": "F1 Score"},
+      {"@id": "urn:ngm:class:confusion-matrix", "label": "Confusion Matrix"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:benchmark-standard", "label": "Benchmark Standard"},
+      {"@id": "urn:ngm:class:model-training", "label": "Model Training"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:fairness", "label": "Fairness"},
+      {"@id": "urn:ngm:class:robustness", "label": "Robustness"},
+      {"@id": "urn:ngm:class:ai-monitoring", "label": "AI Monitoring"}
+    ]
+  },
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -275,7 +291,14 @@ public:: true
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart [[Accuracy]]
+  - hasPart [[F1 Score]]
+  - hasPart [[Confusion Matrix]]
+  - requires [[Benchmark Standard]]
+  - requires [[Model Training]]
+  - relatedTo [[Fairness]]
+  - relatedTo [[Robustness]]
+  - relatedTo [[AI Monitoring]]
 
 - ### Content
   - The quantitative and qualitative measure of how effectively an artificial intelligence model accomplishes its designated tasks, typically assessed through statistical metrics evaluating prediction accuracy, reliability, generalisability, computational efficiency, and robustness, considered across different data distributions, operational conditions, and stakeholder requirements, serving as a critical basis for model selection, deployment decisions, ongoing monitoring, and continuous improvement throughout the AI lifecycle.

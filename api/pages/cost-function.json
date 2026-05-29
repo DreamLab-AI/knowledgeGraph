@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:cost-function",
   "domain": "robotics",
-  "definition": "A mathematical function that quantifies the discrepancy between the current and desired states of a robotic system, guiding optimisation of control policies or trajectories.",
+  "definition": "A cost function is a scalar-valued mathematical function that quantifies the discrepancy between the current and desired states of a robotic system, or the total resource expenditure of a planned trajectory, providing the objective that control and planning algorithms minimise. In motion planning, cost functions encode factors such as path length, joint torque, collision risk, and time; in reinforcement learning they appear inverted as reward functions whose maximisation drives policy learning. The choice and design of the cost function critically shapes the behaviour of the optimised system, and poorly specified costs can lead to reward hacking or physically unrealisable trajectories.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-navigation-and-planning",
@@ -14,20 +14,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:optimal-control",
+        "label": "Optimal Control"
+      },
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:reward-function",
+        "label": "Reward Function"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

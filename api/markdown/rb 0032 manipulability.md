@@ -42,20 +42,38 @@ public:: true
   "@id": "urn:ngm:class:rb-0032-manipulability",
   "@type": "Class",
   "label": "rb 0032 manipulability",
-  "definition": "manipulability is a robotics and autonomous systems concept and a type of Robot.",
+  "definition": "Manipulability is a scalar or ellipsoid measure of a robotic manipulator's capacity to move and exert forces in arbitrary directions from a given joint configuration. Introduced by Tsuneo Yoshikawa, the manipulability measure w = sqrt(det(J·Jᵀ)) quantifies how far a configuration is from kinematic singularity: higher values indicate greater dexterity, while w = 0 indicates a singular configuration where motion in at least one direction is lost. Manipulability is used in motion planning, redundancy resolution, and task-space control to avoid singular regions.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-actuation-and-control",
       "label": "Actuation and Control"
     },
     {
-      "@id": "urn:ngm:class:robot",
-      "label": "Robot"
+      "@id": "urn:ngm:class:robot-kinematics",
+      "label": "Robot Kinematics"
     }
   ],
-  "quality": 0.5,
+  "quality": 0.7,
+  "relations": {
+    "dependsOn": [
+      {"@id": "urn:ngm:class:rb-0030-jacobian-matrix", "label": "rb 0030 jacobian matrix"},
+      {"@id": "urn:ngm:class:rb-0021-robot-kinematics", "label": "rb 0021 robot kinematics"},
+      {"@id": "urn:ngm:class:rb-0023-degrees-of-freedom", "label": "rb 0023 degrees of freedom"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:rb-0031-singularity", "label": "rb 0031 singularity"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:rb-0037-dexterity", "label": "rb 0037 dexterity"},
+      {"@id": "urn:ngm:class:rb-0024-workspace", "label": "rb 0024 workspace"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:rb-0049-motion-planning", "label": "rb 0049 motion planning"},
+      {"@id": "urn:ngm:class:rb-0029-inverse-kinematics", "label": "rb 0029 inverse kinematics"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -92,6 +110,9 @@ public:: true
 
 - ### Definition
   - ### Primary Definition
+  Manipulability characterises how easily a robot can move its end-effector from a given configuration. It is derived from the Jacobian matrix: the manipulability ellipsoid (axes = singular values of J) visualises the directions of ease or difficulty of motion in task space. Maximising manipulability during path planning results in configurations with good force and velocity isotropy, avoiding near-singular postures that amplify joint efforts and reduce control accuracy.
+
+  In redundant manipulators (more joints than task-space dimensions), manipulability is used as a secondary objective in null-space optimisation — the extra degrees of freedom are used to reposition joints to increase w without affecting the end-effector pose. This is particularly important for human-robot collaboration where accessible and comfortable postures improve safety.
 
 - ### Semantic Classification
   - owl-class:: robotics:Manipulability
@@ -99,7 +120,8 @@ public:: true
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Derived from the Jacobian matrix (RB-0030); contrasts with singularity (RB-0031); supports dexterity (RB-0037) and workspace (RB-0024) analysis.
+  - Used by motion planning (RB-0049) and inverse kinematics (RB-0029) solvers to maintain kinematic performance across trajectories.
 
 - ### Content
   - ### Primary Definition

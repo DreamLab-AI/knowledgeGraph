@@ -42,9 +42,10 @@ public:: true
   "@id": "urn:ngm:class:weight-decay",
   "@type": "Class",
   "label": "Weight Decay",
-  "definition": "A regularisation technique that adds a penalty proportional to the magnitude of weights to the loss function, encouraging smaller weight values. Weight decay (L2 regularisation) prevents overfitting by limiting model complexity and promoting simpler solutions.",
+  "definition": "A regularisation technique that adds a penalty proportional to the L2 norm of model weights to the loss function, discouraging large weight magnitudes and thereby limiting model complexity. Weight decay prevents overfitting, promotes simpler generalisable solutions, and in optimisers such as AdamW is implemented directly in the weight update step rather than via loss augmentation.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
@@ -55,6 +56,21 @@ public:: true
       "label": "Machine Learning Technique"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:optimiser", "label": "Optimiser"},
+      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:regularisation", "label": "Regularisation"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:dropout", "label": "Dropout"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:training", "label": "Training"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -99,7 +115,10 @@ public:: true
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **Uses**: [[Optimiser]] (AdamW, SGD), [[Gradient Descent]] (weight update step)
+  - **Enables**: [[Regularisation]] (L2 penalty variant)
+  - **Contrasts-with**: [[Dropout]] (complementary regularisation approach)
+  - **Part-of**: [[Training]] pipeline (applied at each optimisation step)
 
 - ### Content
   - A regularisation technique that adds a penalty proportional to the magnitude of weights to the loss function, encouraging smaller weight values. Weight decay (L2 regularisation) prevents overfitting by limiting model complexity and promoting simpler solutions.

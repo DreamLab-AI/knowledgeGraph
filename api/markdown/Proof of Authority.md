@@ -50,7 +50,7 @@ public:: true
   "@id": "urn:ngm:class:proof-of-authority",
   "@type": "Class",
   "label": "Proof of Authority",
-  "definition": "A consensus mechanism where pre-approved validators (authorities) with verified identities are authorized to validate transactions and create blocks.",
+  "definition": "A permissioned blockchain consensus mechanism in which a fixed set of pre-approved validators with verified real-world identities are authorised to produce and validate blocks. PoA sacrifices decentralisation for high throughput and fast finality, making it suitable for enterprise and consortium blockchains where participant trust can be established off-chain.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -63,7 +63,22 @@ public:: true
       "label": "Proof-Based Consensus"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
+      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
+      {"@id": "urn:ngm:class:consortium-blockchain", "label": "Consortium Blockchain"},
+      {"@id": "urn:ngm:class:finality", "label": "Finality"},
+      {"@id": "urn:ngm:class:consensus-algorithm", "label": "Consensus Algorithm"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

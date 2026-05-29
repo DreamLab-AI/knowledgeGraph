@@ -46,7 +46,7 @@ public:: true
   "@id": "urn:ngm:class:newton-euler-dynamics",
   "@type": "Class",
   "label": "Newton-Euler Dynamics",
-  "definition": "Newton-Euler mod applies F=ma and τ=Iα to each link recursively.",
+  "definition": "Recursive formulation of rigid-body mechanics that applies Newton's second law (F=ma) and Euler's rotation equation (τ=Iα) to each link of a robot chain in outward and inward passes, computing joint torques and reaction forces for dynamics simulation, control, and real-time motion planning.",
   "domain": "robotics",
   "maturity": "established",
   "subClassOf": [
@@ -59,7 +59,28 @@ public:: true
       "label": "Robot Dynamics"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:rigid-body-dynamics", "label": "Rigid Body Dynamics"},
+      {"@id": "urn:ngm:class:kinematics", "label": "Kinematics"},
+      {"@id": "urn:ngm:class:inverse-kinematics", "label": "Inverse Kinematics"},
+      {"@id": "urn:ngm:class:robot-kinematics", "label": "Robot Kinematics"},
+      {"@id": "urn:ngm:class:robot-joint", "label": "Robot Joint"},
+      {"@id": "urn:ngm:class:inertia", "label": "Inertia"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:force-torque-sensor", "label": "Force Torque Sensor"},
+      {"@id": "urn:ngm:class:physics-simulation", "label": "Physics Simulation"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:control-system", "label": "Control System"},
+      {"@id": "urn:ngm:class:embodied-ai-simulation", "label": "Embodied AI Simulation"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:robot-dynamics", "label": "Robot Dynamics"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

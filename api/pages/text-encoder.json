@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:text-encoder",
   "domain": "artificial-intelligence",
-  "definition": "A text encoder is a neural network component that maps raw text tokens into dense vector representations capturing semantic and contextual information for downstream tasks.",
+  "definition": "A text encoder is a neural network component that maps raw text\u2014after tokenisation\u2014into dense, contextualised vector representations that capture semantic, syntactic, and relational information for use in downstream tasks. Transformer-based encoders such as BERT, RoBERTa, and ALBERT produce bidirectional contextual embeddings via masked language model pre-training, whilst CLIP's text tower produces contrastively aligned embeddings shared with a visual encoder. In generative image and video pipelines, the text encoder translates natural language prompts into conditioning vectors that guide the diffusion denoising process via cross-attention.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-model-architecture",
@@ -14,11 +14,29 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:tokeniser",
+        "label": "Tokeniser"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "id": "urn:ngm:class:video-generation",
+        "label": "Video Generation"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +45,20 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:embedding-model",
+        "label": "Embedding Model"
+      },
+      {
+        "id": "urn:ngm:class:clip",
+        "label": "CLIP"
+      },
+      {
+        "id": "urn:ngm:class:token-embedding",
+        "label": "Token Embedding"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

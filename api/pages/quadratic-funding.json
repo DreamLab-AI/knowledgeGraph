@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:quadratic-funding",
   "domain": "blockchain",
-  "definition": "A public goods funding mechanism where matching funds are allocated proportional to the square root of contributions, amplifying broad community support over large individual donations.",
+  "definition": "Quadratic Funding (QF) is a mechanism-design approach to allocating public goods subsidies in which a matching pool is distributed proportionally to the square of the sum of square roots of individual contributions to each project, mathematically maximising the democratic signal of funding breadth over depth. Proposed by Vitalik Buterin, Zoe Hitzig, and E. Glen Weyl, QF operationalises the concept of liberal radicalism: a project with many small contributors receives more matching funds than one with a single large donor, even if the absolute sums are equal. QF has been deployed on-chain via platforms such as Gitcoin Grants, where smart contracts automate matching calculations against a community-funded subsidy pool.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-defi-and-economics",
@@ -14,11 +14,25 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "id": "urn:ngm:class:public-goods-funding",
+        "label": "Public Goods Funding"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:dao",
+        "label": "DAO"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +41,20 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      },
+      {
+        "id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

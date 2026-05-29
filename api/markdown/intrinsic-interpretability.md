@@ -7,7 +7,10 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **contrastsWith**: [[Post Hoc Explanation]], [[Explainable AI]]
+  - **partOf**: [[Model Interpretability]], [[Interpretable AI]]
+  - **enables**: [[Model Transparency]], [[Accountability]]
+  - **supports**: [[Trustworthy AI]], [[AI Governance]]
 
 - ### Content
   - The inherent transparency and understandability of a machine learning model's architecture and decision-making process, achieved through model design rather than external explanation techniques, enabling direct human comprehension without additional interpretability methods.

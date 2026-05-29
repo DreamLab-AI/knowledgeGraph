@@ -7,7 +7,12 @@
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Contrasts With [[Differential Privacy]]
+  - Contrasts With [[Federated Learning]]
+  - Related To [[Membership Inference]]
+  - Related To [[Adversarial Attacks]]
+  - Requires [[Model Weights]]
+  - Supports [[AI Safety]]
 
 - ### Content
   - An inference-time privacy attack that reconstructs sensitive training data or attributes from a trained model by exploiting model outputs, predictions, or internal representations, potentially revealing confidential information about individuals in the training dataset.

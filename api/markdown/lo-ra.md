@@ -7,7 +7,12 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - partOf [[Parameter-Efficient Fine-Tuning]]
+  - requires [[Transformer Architecture]]
+  - requires [[Large Language Models]]
+  - enables [[Fine Tuning]]
+  - enables [[Instruction Tuning]]
+  - contrastsWith [[Knowledge Distillation]]
 
 - ### Content
   - A parameter-efficient fine-tuning method that freezes pre-trained weights and injects trainable low-rank decomposition matrices into each layer of the transformer, dramatically reducing trainable parameters whilst maintaining performance. LoRA represents weight updates as the product of two low-rank matrices.

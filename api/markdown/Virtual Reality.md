@@ -37,9 +37,9 @@ public:: true
   "@id": "urn:ngm:class:virtual-reality",
   "@type": "Class",
   "label": "Virtual Reality",
-  "definition": "Virtual Reality is a spatial computing concept and a type of Extended Reality (XR).",
+  "definition": "Virtual Reality (VR) is a fully immersive simulation technology that replaces the user's physical environment with a computer-generated three-dimensional world, experienced through head-mounted displays with stereoscopic rendering, spatial audio, and motion tracking. VR applications span entertainment, education, remote collaboration, surgical training, and therapeutic interventions.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -50,6 +50,20 @@ public:: true
       "label": "Extended Reality (XR)"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:physics-simulation", "label": "Physics Simulation"},
+      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"},
+      {"@id": "urn:ngm:class:3-d-model", "label": "3D Model"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
+      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -80,14 +94,19 @@ public:: true
 
 
 - ### Definition
-  - VirtualReality is a concept within the ngm domain.
+  - Virtual Reality (VR) is a fully immersive simulation technology that replaces the user's physical environment with a computer-generated three-dimensional world, experienced through head-mounted displays with stereoscopic rendering, spatial audio, and motion tracking.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:VirtualReality
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires:: [[Physics Simulation]]
+  - requires:: [[Haptic Feedback]]
+  - uses:: [[Game Engine]]
+  - uses:: [[3D Model]]
+  - relatedTo:: [[Augmented Reality]]
+  - relatedTo:: [[Metaverse]]
 
 - ### Content
 

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:content-authentication",
   "domain": "infrastructure",
-  "definition": "Content Authentication is a type of Infrastructure in the infrastructure domain.",
+  "definition": "Content Authentication is the process of verifying the origin, integrity, and provenance of digital content through cryptographic techniques such as digital signatures, watermarking, and blockchain-anchored certificates. It enables consumers and platforms to distinguish authentic content from synthetically generated or tampered media, particularly critical as generative AI proliferates.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-security-and-identity",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-verification",
+        "label": "Cryptographic Verification"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:watermarks",
+        "label": "Watermarks"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-rights-management",
+        "label": "Digital Rights Management"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      }
+    ]
   },
   "wikilinks": [
     {

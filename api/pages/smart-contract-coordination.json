@@ -5,33 +5,77 @@
   "public": true,
   "classIri": "urn:ngm:class:smart-contract-coordination",
   "domain": "distributed-collaboration",
-  "definition": "\"The use of blockchain smart contracts\u2014self-executing programs stored on distributed ledgers\u2014to automate coordination, task allocation, payment distribution, and milestone verification in distributed teams, enabling trustless collaboration through cryptographically enforced agreements that execut...",
+  "definition": "Smart Contract Coordination is the use of blockchain smart contracts\u2014self-executing programs stored on distributed ledgers\u2014to automate coordination, task allocation, payment distribution, and milestone verification in distributed teams, enabling trustless collaboration through cryptographically enforced agreements that execute deterministically without centralised intermediaries. This approach removes the need for escrow agents and manual approvals by encoding collaboration rules as immutable on-chain logic triggered by verifiable real-world events. It is foundational to decentralised autonomous organisations and cryptocurrency-based remuneration workflows.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:dc-protocol-and-infra",
       "label": "Protocol and Infrastructure"
-    },
-    {
-      "id": "urn:ngm:class:smart-contract",
-      "label": "Smart Contract"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.75,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency-remuneration",
+        "label": "Cryptocurrency Remuneration"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:blockchain-infrastructure",
+        "label": "Blockchain Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-collaboration",
+        "label": "Blockchain Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
+    ]
   },
   "wikilinks": [
     {

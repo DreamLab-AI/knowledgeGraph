@@ -42,7 +42,7 @@ public:: true
   "@id": "urn:ngm:class:parameter",
   "@type": "Class",
   "label": "Parameter",
-  "definition": "Parameter is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "A Parameter in machine learning and AI is a learnable variable internal to a model whose values are adjusted during training to minimise a loss function, as distinguished from hyperparameters, which are configuration choices set before training begins. In neural networks, parameters encompass weight matrices and bias vectors in each layer; the total parameter count (ranging from thousands in small models to hundreds of billions in large language models) is a primary indicator of model capacity and computational cost. Parameters are initialised randomly or via transfer learning, then updated iteratively through gradient-based optimisation algorithms such as stochastic gradient descent, encoding learned representations of the training distribution.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -51,7 +51,32 @@ public:: true
       "label": "AI Technique"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
+      {"@id": "urn:ngm:class:loss-function", "label": "Loss Function"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:inference", "label": "Inference"},
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"},
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:hyperparameter", "label": "Hyperparameter"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:overfitting", "label": "Overfitting"},
+      {"@id": "urn:ngm:class:underfitting", "label": "Underfitting"},
+      {"@id": "urn:ngm:class:dropout", "label": "Dropout"},
+      {"@id": "urn:ngm:class:neural-network-architecture", "label": "Neural Network Architecture"},
+      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
+      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"}
+    ]
+  },
+  "qualityScore": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

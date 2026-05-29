@@ -42,20 +42,48 @@ public:: true
   "@id": "urn:ngm:class:software-testing",
   "@type": "Class",
   "label": "Software Testing",
-  "definition": "Software Testing is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Software Testing is the systematic process of executing a software system or component under specified conditions, observing its behaviour, and evaluating whether it meets defined requirements. It encompasses unit, integration, system, and acceptance testing, as well as performance, security, and regression testing, forming a quality gate in the development lifecycle.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
     }
   ],
-  "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:xr-testing-infrastructure",
+        "label": "XR Testing Infrastructure"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:robustness",
+        "label": "Robustness"
+      },
+      {
+        "@id": "urn:ngm:class:safety",
+        "label": "Safety"
+      }
+    ]
   }
 }
 ```
@@ -87,14 +115,18 @@ public:: true
 
 
 - ### Definition
-  - Software Testing is a concept within the metaverse domain. Further enrichment pending.
+  - Software Testing is the systematic process of executing a software system or component under specified conditions, observing its behaviour, and evaluating whether it meets defined requirements. It encompasses unit, integration, system, and acceptance testing, as well as performance, security, and regression testing, forming a quality gate in the development lifecycle.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:SoftwareTesting
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Supports [[Robustness]] by verifying behaviour across varied and adversarial conditions
+  - Supports [[Safety]] through validation against safety requirements
+  - Related to [[Simulation]] as an execution environment for system-level tests
+  - Related to [[XR Testing Infrastructure]] for immersive platform quality assurance
+  - Enables [[Digital Twin]] by verifying the fidelity of simulation models against real systems
 
 - ### Content
 

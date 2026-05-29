@@ -46,16 +46,30 @@ public:: true
   "@id": "urn:ngm:class:distributed-systems",
   "@type": "Class",
   "label": "Distributed Systems",
-  "definition": "Distributed Systems is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Collections of independent computing nodes that coordinate through message passing to present a unified service, providing fault tolerance, horizontal scalability, and geographic distribution. Distributed systems are foundational to metaverse platforms, blockchain networks, and large-scale AI inference pipelines, where no single node holds all state and consistency guarantees (CAP theorem trade-offs) govern design choices.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:orchestration", "label": "Orchestration"},
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:digital-infrastructure", "label": "Digital Infrastructure"},
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"},
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+    ]
+  },
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -96,7 +110,7 @@ public:: true
 
 
 - ### Definition
-  - Distributed Systems is a concept within the metaverse domain. Further enrichment pending.
+  - Collections of independent computing nodes that coordinate through message passing to present a unified service, providing fault tolerance, horizontal scalability, and geographic distribution. Distributed systems are foundational to metaverse platforms, blockchain networks, and large-scale AI inference pipelines, where no single node holds all state and consistency guarantees (CAP theorem trade-offs) govern design choices.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:DistributedSystems
@@ -104,6 +118,11 @@ public:: true
 
 - ### Relationships
   - bridges-to:: [[Blockchain]]
+  - enables [[Orchestration]]
+  - relatedTo [[Digital Infrastructure]]
+  - relatedTo [[Consensus Mechanism]]
+  - supports [[Microservices Architecture]]
+  - supports [[Edge Computing]]
 
 - ### Content
 

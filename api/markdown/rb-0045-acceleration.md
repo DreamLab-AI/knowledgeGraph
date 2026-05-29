@@ -1,5 +1,8 @@
 - ### Definition
   - ### Primary Definition
+  Acceleration is the second time derivative of position (or first derivative of velocity) and is a fundamental quantity in robot dynamics. In joint space, joint accelerations are combined with the mass-inertia matrix and Coriolis/centrifugal terms to compute the required joint torques via the Newton-Euler or Lagrangian formulations. In task space, Cartesian acceleration of the end-effector is obtained through differentiation of the Jacobian.
+
+  Bounding acceleration is essential in collaborative robot standards: ISO/TS 15066 specifies transient contact force limits that implicitly constrain end-effector acceleration during human-robot contact scenarios. Smooth acceleration profiles (trapezoidal, S-curve, jerk-limited) reduce mechanical wear and improve tracking performance during high-speed manipulation.
 
 - ### Semantic Classification
   - owl-class:: robotics:rb0045acceleration
@@ -7,7 +10,7 @@
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Tightly coupled with velocity (RB-0044), torque (RB-0043), and inertia (RB-0041) within Newton-Euler dynamics; used in trajectory planning (RB-0051) and power/force limiting (RB-0094) for safe collaborative operation.
 
 - ### Content
   - ### Primary Definition

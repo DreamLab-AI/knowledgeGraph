@@ -8,6 +8,10 @@
 
 - ### Relationships
   - is-subclass-of:: [[Virtual Economy]]
+  - **partOf**: Virtual Economy — economic parameters are the tunable controls within virtual economy systems
+  - **dependsOn**: Tokenization, Smart Contract — token supply and reward logic is implemented via smart contracts and tokenisation protocols
+  - **enables**: Marketplace, Creator Economy — well-calibrated parameters enable functional markets and creator incentive structures
+  - **relatedTo**: Digital Asset — parameters directly govern how digital assets are valued and exchanged
 
 - ### Content
 

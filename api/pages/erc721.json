@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:erc721",
   "domain": "blockchain",
-  "definition": "The ereum non-fungible token standard for unique digital assets.",
+  "definition": "ERC721 is the Ethereum non-fungible token standard enabling unique, individually identified digital assets each with a distinct tokenId and metadata URI. It specifies eight mandatory functions and three events supporting ownership transfer, provenance tracking, and approval management, underpinning NFT markets, digital art, gaming items, and tokenised real-world assets on EVM-compatible blockchains.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-token-and-asset",
@@ -13,17 +13,53 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.4,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-asset-management",
+        "label": "Digital Asset Management"
+      },
+      {
+        "id": "urn:ngm:class:digital-ownership",
+        "label": "Digital Ownership"
+      },
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      }
+    ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:erc20",
+        "label": "ERC20"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

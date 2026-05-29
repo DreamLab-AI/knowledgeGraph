@@ -42,15 +42,28 @@ public:: true
   "@id": "urn:ngm:class:state-machine-replication",
   "@type": "Class",
   "label": "State Machine Replication",
-  "definition": "State Machine Replication is a type of Blockchain in the blockchain domain.",
+  "definition": "State Machine Replication (SMR) is a fault-tolerance technique in which multiple server replicas each maintain an identical copy of a deterministic state machine, processing the same ordered sequence of client requests to achieve consistency. It underpins the correctness guarantees of distributed consensus protocols and forms the theoretical foundation of blockchain ledger replication.",
   "domain": "blockchain",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-protocol-and-consensus",
       "label": "Protocol and Consensus"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
+      {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:state-machine", "label": "State Machine"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -87,23 +100,30 @@ public:: true
 
 
 - ### Definition
-  - State Machine Replication is a concept within the blockchain domain. Further enrichment pending.
+  - State Machine Replication (SMR) is a fault-tolerance technique in which multiple server replicas each maintain an identical copy of a deterministic state machine, processing the same ordered sequence of client requests to achieve consistency. It underpins the correctness guarantees of distributed consensus protocols and forms the theoretical foundation of blockchain ledger replication.
 
 - ### Semantic Classification
   - owl-class:: blockchain:StateMachineReplication
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Consensus Mechanism]]
+  - requires [[Fault Tolerance]]
+  - enables [[Blockchain]]
+  - enables [[Distributed Systems]]
+  - relatedTo [[State Machine]]
 
 - ### Content
 
   ## Overview
 
-  State Machine Replication represents an abstract concept in the blockchain ontology hierarchy.
+  State Machine Replication is the core abstraction behind replicated distributed services. By ensuring all replicas apply the same sequence of commands to the same initial state, SMR guarantees that all replicas reach identical states. Classical implementations include Paxos and Raft; blockchain systems such as Bitcoin and Ethereum instantiate SMR using Nakamoto consensus and proof-of-stake variants respectively.
 
   #### Related Concepts
-  - [[owl:Thing]]
+  - [[Consensus Mechanism]]
+  - [[Fault Tolerance]]
+  - [[Blockchain]]
+  - [[Distributed Systems]]
 
 - ### Provenance
   - sources::

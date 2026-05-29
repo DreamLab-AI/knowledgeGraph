@@ -8,6 +8,11 @@
 
 - ### Relationships
   - is-subclass-of:: [[Virtual Environment]]
+  - Part Of: [[Virtual World]]
+  - Uses: [[Portal System]]
+  - Uses: [[Metaverse Navigation Systems]]
+  - Related To: [[Virtual Land Rights]]
+  - Related To: [[Virtual Identity]]
 
 - ### Content
 

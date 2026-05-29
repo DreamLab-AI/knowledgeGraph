@@ -2254,7 +2254,7 @@ public:: true
   "@id": "urn:ngm:class:virtual-production",
   "@type": "Class",
   "label": "Virtual Production",
-  "definition": "Real-time filmmaking technique combining LED Volume stages, game engine rendering, and in-camera visual effects (ICVFX) to create photorealistic virtual environments during live-action production, enabling directors to see final composited imagery on set",
+  "definition": "Real-time filmmaking technique combining LED Volume stages, game engine rendering, and in-camera visual effects (ICVFX) to create photorealistic virtual environments during live-action production, enabling directors to see final composited imagery on set. It integrates motion capture, photogrammetry, and neural rendering to compress post-production timelines and allow creative decisions to be made on set rather than in post.",
   "domain": "spatial-computing",
   "maturity": "established",
   "subClassOf": [
@@ -2267,7 +2267,28 @@ public:: true
       "label": "Real Time Rendering"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:virtual-production-pipeline", "label": "Virtual Production Pipeline"},
+      {"@id": "urn:ngm:class:virtual-production-volume", "label": "Virtual Production Volume"},
+      {"@id": "urn:ngm:class:virtual-stage", "label": "Virtual Stage"},
+      {"@id": "urn:ngm:class:virtual-production-workflow", "label": "Virtual Production Workflow"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"},
+      {"@id": "urn:ngm:class:motion-capture", "label": "Motion Capture"},
+      {"@id": "urn:ngm:class:real-time-rendering-pipeline", "label": "Real-Time Rendering Pipeline"},
+      {"@id": "urn:ngm:class:neural-rendering", "label": "Neural Rendering"},
+      {"@id": "urn:ngm:class:photogrammetry", "label": "Photogrammetry"},
+      {"@id": "urn:ngm:class:display-hardware", "label": "Display Hardware"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:film-production", "label": "Film Production"},
+      {"@id": "urn:ngm:class:vfx-tools", "label": "VFX Tools"},
+      {"@id": "urn:ngm:class:volumetric-capture", "label": "Volumetric Capture"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

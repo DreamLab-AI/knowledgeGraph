@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:context-aware-computing",
   "domain": "spatial-computing",
-  "definition": "Context Aware Computing is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Context Aware Computing is a paradigm in which systems automatically adapt their behaviour based on contextual signals such as the user's location, activity, device state, social environment, and temporal cues. In spatial computing and XR applications, context awareness allows virtual overlays and services to respond intelligently to physical surroundings, enabling location-sensitive AR, adaptive user interfaces, and personalised immersive experiences.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -14,15 +14,46 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:scene-understanding",
+        "label": "Scene Understanding"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],

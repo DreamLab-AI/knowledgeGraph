@@ -6,6 +6,10 @@
   - belongs-to-domain:: [[metaverse]]
 - ### Relationships
   - is-subclass-of:: [[Digital Society]]
+  - **hasPart**: [[Virtual Economy]], [[Governance Framework]] — virtual societies contain economic subsystems and require governance frameworks for rule-making and dispute resolution
+  - **requires**: [[Identity]], [[Avatar]] — participation in virtual society is mediated through persistent digital identity and avatar-based embodiment
+  - **relatedTo**: [[Digital Identity]], [[Metaverse]] — virtual society is the sociological dimension of metaverse platforms, requiring robust digital identity systems
+  - **supports**: [[Privacy]] — virtual society frameworks must embed privacy rights for citizens navigating persistent digital environments
 - ### Content
   - ## Overview
   - Virtual society encompasses social dynamics, communities, and governance within metaverse platforms. VR social platforms like Rec Room and Meta's Horizon Worlds have become central hubs for immersive interaction. The Virtual Society Foundation launched in March 2024 to establish a unified, open metaverse with universal standards for avatar and asset interoperability. VRChat enables global users to gather in customizable spaces with lifelike avatars.

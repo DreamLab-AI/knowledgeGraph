@@ -46,7 +46,7 @@ public:: true
   "@id": "urn:ngm:class:augmented-connected-workforce",
   "@type": "Class",
   "label": "Augmented Connected Workforce",
-  "definition": "Augmented Connected Workforce is a type of Metaverse and Telecollaboration in the spatial computing domain.",
+  "definition": "The Augmented Connected Workforce (ACW) is a digitally enhanced work paradigm in which human capabilities are amplified through the seamless integration of AI, augmented reality, virtual reality, and IoT technologies, enabling immersive spatial interactions and real-time connectivity across distributed teams. ACW systems overlay contextual digital information onto physical workspaces and connect workers to shared virtual environments, boosting safety, training efficacy, and operational coordination. It is recognised by Gartner as a strategic technology trend reshaping how organisations design, operate, and evolve their human workforce.",
   "domain": "spatial-computing",
   "maturity": "emerging",
   "subClassOf": [
@@ -59,11 +59,29 @@ public:: true
       "label": "Metaverse and Telecollaboration"
     }
   ],
-  "quality": 0.5,
+  "quality": 0.75,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
+      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
+      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"},
+      {"@id": "urn:ngm:class:wearable-computing-platform", "label": "Wearable Computing Platform"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:telecollaboration", "label": "Telecollaboration"},
+      {"@id": "urn:ngm:class:immersive-workspaces", "label": "Immersive Workspaces"},
+      {"@id": "urn:ngm:class:collaboration-platform", "label": "Collaboration Platform"},
+      {"@id": "urn:ngm:class:digital-workplace-platform", "label": "Digital Workplace Platform"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:immersive-technology", "label": "Immersive Technology"},
+      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"}
+    ]
   }
 }
 ```

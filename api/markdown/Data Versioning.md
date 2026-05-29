@@ -62,20 +62,43 @@ public:: true
   "@id": "urn:ngm:class:data-versioning",
   "@type": "Class",
   "label": "Data Versioning",
-  "definition": "Version control system for datasets and ML models, tracking changes to data over time to ensure reproducibility and lineage in machine learning workflows (e.g., DVC).",
+  "definition": "Data Versioning is the systematic practice of tracking, storing, and managing changes to datasets and machine learning models over time, ensuring reproducibility of experiments and auditability of data lineage. Tools such as DVC (Data Version Control) apply version control semantics to large binary assets, linking dataset snapshots to the code and configurations that produced them, enabling rollback, comparison, and collaborative data science workflows.",
   "domain": "artificial-intelligence",
   "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:cat-ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
+      "@id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure"
     },
     {
       "@id": "urn:ngm:class:machine-learning-pipeline",
       "label": "Machine Learning Pipeline"
     }
   ],
-  "quality": 0.35,
+  "quality": 0.75,
+  "qualityScore": 0.75,
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:machine-learning-pipeline", "label": "Machine Learning Pipeline"},
+      {"@id": "urn:ngm:class:data-management", "label": "Data Management"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:version-control", "label": "Version Control"},
+      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
+      {"@id": "urn:ngm:class:experiment", "label": "experiment"},
+      {"@id": "urn:ngm:class:feature-engineering", "label": "Feature Engineering"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:artifact-metadata", "label": "Artifact Metadata"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:machine-learning-infrastructure", "label": "Machine Learning Infrastructure"},
+      {"@id": "urn:ngm:class:workflow-automation", "label": "Workflow Automation"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -148,7 +171,9 @@ public:: true
   - bridges-to:: [[Blockchain]]
 
 - ### Content
-  Data Versioning — content pending enrichment.
+  Data Versioning applies the principles of software version control — branching, tagging, diffing, and rollback — to the large binary assets that underpin machine learning: raw datasets, processed feature stores, and trained model artefacts. Unlike source code, data files are rarely stored in Git directly; instead, tools such as DVC maintain a lightweight pointer file tracked in Git while storing the actual data in remote object stores (S3, GCS, Azure Blob). This allows teams to reproduce any historical experiment by checking out a specific commit and pulling the matching dataset version.
+
+  Beyond reproducibility, data versioning enables auditability and regulatory compliance by recording the provenance of every training run — which data slice, which preprocessing script, and which hyperparameters produced a given model checkpoint. In combination with experiment tracking and model registries, data versioning forms a core pillar of mature MLOps practice, closing the loop between data engineering pipelines and model deployment lifecycles.
 
 - ### Provenance
   - sources:: [[MLOps]], [[Data Engineering]], [[DVC]]

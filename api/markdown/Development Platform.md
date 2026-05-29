@@ -46,16 +46,33 @@ public:: true
   "@id": "urn:ngm:class:development-platform",
   "@type": "Class",
   "label": "Development Platform",
-  "definition": "Development Platform is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "A Development Platform is an integrated suite of tools, APIs, runtimes, and infrastructure services that enables engineers and creators to build, test, and deploy applications. In spatial computing contexts, development platforms provide SDKs for XR hardware, scene-graph editors, physics engines, and asset pipelines supporting OpenXR and Universal Scene Description (USD). They abstract hardware heterogeneity and supply governance tooling for collaborative multi-stakeholder development.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:open-xr", "label": "OpenXR"},
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:digital-fabrication", "label": "Digital Fabrication"},
+      {"@id": "urn:ngm:class:collaboration", "label": "Collaboration"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:digital-infrastructure", "label": "Digital Infrastructure"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -96,22 +113,23 @@ public:: true
 
 
 - ### Definition
-  - Development Platform is a concept within the metaverse domain. Further enrichment pending.
-
-bridges-to:: [[Computer Vision]]
+  A Development Platform is an integrated suite of tools, APIs, runtimes, and infrastructure services enabling engineers and creators to build, test, and deploy applications. In spatial computing contexts, development platforms supply SDKs for XR hardware, scene-graph editors, physics engines, and asset pipelines supporting OpenXR and USD. They abstract hardware heterogeneity and supply governance tooling for collaborative development.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:DevelopmentPlatform
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: OpenXR, Computer Vision (standards and vision pipelines the platform exposes to developers)
+  - **enables**: Digital Twin, Spatial Computing (outputs and capabilities the platform unlocks)
+  - **supports**: Digital Fabrication, Collaboration (application domains the platform serves)
+  - **dependsOn**: Digital Infrastructure (compute, networking, and storage the platform runs on)
 
 - ### Content
 
   ## Overview
 
-  Development Platform represents an abstract concept in the metaverse ontology hierarchy.
+  A Development Platform provides the integrated toolchain for building spatial computing and metaverse applications. It abstracts hardware differences and supplies governance, asset management, and collaboration tooling.
 
   #### Related Concepts
   - [[owl:Thing]]

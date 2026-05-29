@@ -1,12 +1,14 @@
 - ### Definition
-  - Python and PyTorch is a concept within the ngm domain.
+  - Python and PyTorch together form the dominant open-source stack for deep learning research and production. Python provides the high-level scripting environment and ecosystem (NumPy, Hugging Face, spaCy), whilst PyTorch supplies dynamic computational graph execution, autograd differentiation, and GPU acceleration via CUDA, enabling rapid prototyping and deployment of neural network models.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:PythonAndPyTorch
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **enables** → [[Deep Learning]], [[Model Training]], [[Natural Language Processing]]
+  - **uses** → [[Machine Learning Framework]], [[GPU Compute]]
+  - **supports** → [[Neural Network Architecture]], [[Data Pipeline]]
 
 - ### Content
   - https://intel.github.io/intel-extension-for-pytorch/#introduction [[Python and PyTorch]]

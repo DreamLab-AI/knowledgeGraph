@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:technique",
   "domain": "artificial-intelligence",
-  "definition": "Technique is a artificial intelligence concept and a type of Artificial Intelligence.",
+  "definition": "A Technique is a specific, repeatable method or procedure applied within a domain to achieve a defined outcome, distinguishing it from broader algorithms or frameworks by its focus on concrete application steps. In artificial intelligence, techniques encompass approaches such as supervised learning, fine-tuning, and prompt engineering that are composed into pipelines and evaluated against benchmarks. Techniques may be realised by models or algorithms, and their effectiveness is assessed through empirical evaluation on datasets.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -13,21 +13,75 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:algorithm",
+        "label": "Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-technique",
+        "label": "Machine Learning Technique"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
+      },
+      {
+        "id": "urn:ngm:class:model-performance",
+        "label": "Model Performance"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:architecture",
+        "label": "Architecture"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:model",
+        "label": "Model"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-framework",
+        "label": "Algorithmic Framework"
+      }
+    ]
   },
   "wikilinks": [
     {

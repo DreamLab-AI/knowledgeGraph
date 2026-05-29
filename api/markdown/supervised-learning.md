@@ -6,7 +6,13 @@
   - owl-role:: concept
 
 - ### Relationships
-  - is-subclass-of:: ['owl:Thing']
+  - Requires [[Training Data]] (labelled examples are the essential input)
+  - Requires [[Loss Function]] (measures prediction error during training)
+  - Uses [[Backpropagation]] to propagate error gradients through the model
+  - Uses [[Gradient Descent]] to minimise the loss over training iterations
+  - Enables [[Deep Learning]] as its primary large-scale realisation
+  - Contrasts with [[Unsupervised Learning]] (no labels required)
+  - Contrasts with [[Reinforcement Learning]] (reward signal rather than labels)
 
 - ### Content
 

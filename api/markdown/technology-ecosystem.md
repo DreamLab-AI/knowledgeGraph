@@ -1,12 +1,15 @@
 - ### Definition
-  - TechnologyEcosystem is a concept within the ngm domain.
+  - A Technology Ecosystem is the interconnected network of platforms, developer tools, standards bodies, runtime environments, and community participants that collectively sustain a technology domain. In the metaverse context it encompasses rendering engines, spatial-computing SDKs, open standards (OpenXR, USD, WebXR), cloud infrastructure, hardware manufacturers, and application developers whose interdependencies determine adoption trajectories and competitive dynamics.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:TechnologyEcosystem
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart:: Technology Infrastructure, Open Standard
+  - enables:: Convergence, Adoption of Convergent Technologies
+  - relatedTo:: Spatial Computing, Metaverse Domain
+  - uses:: Distributed System
 
 - ### Content
   # TechnologyEcosystem

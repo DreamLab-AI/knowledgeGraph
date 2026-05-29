@@ -347,7 +347,7 @@ public:: true
       "label": "Robot Type"
     },
     {
-      "@id": "urn:ngm:class:cyber-physical-system",
+      "@id": "urn:ngm:class:cyber-physical-systems",
       "label": "Cyber Physical System"
     },
     {

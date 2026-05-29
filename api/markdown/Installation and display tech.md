@@ -38,16 +38,30 @@ public:: true
   "@id": "urn:ngm:class:installation-and-display-tech",
   "@type": "Class",
   "label": "Installation and display tech",
-  "definition": "Installation and display tech is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "The hardware and software infrastructure used to install, calibrate, and drive immersive visual displays in XR, digital signage, and spatial computing contexts. This encompasses projection mapping, light-field displays, LED walls, head-mounted display optics, and the rendering pipelines that feed them.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:light-field", "label": "Light field"},
+      {"@id": "urn:ngm:class:xr-hardware", "label": "XR Hardware"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
+      {"@id": "urn:ngm:class:mixed-reality", "label": "Mixed Reality"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
+      {"@id": "urn:ngm:class:xr-device", "label": "XR Device"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -90,7 +104,9 @@ public:: true
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: [[Light field]], [[XR Hardware]]
+  - **enables**: [[Augmented Reality]], [[Mixed Reality]]
+  - **relatedTo**: [[Virtual Reality]], [[XR Device]]
 
 - ### Content
   - [[Light field]]

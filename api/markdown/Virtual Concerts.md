@@ -48,7 +48,8 @@ public:: true
   "label": "Virtual Concerts",
   "definition": "Live musical performances conducted in metaverse or virtual reality environments where virtual avatars perform on virtual stages synced to music, enabling immersive concert experiences accessible globally through VR headsets, gaming platforms, or streaming services.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -59,11 +60,46 @@ public:: true
       "label": "Virtual Event"
     }
   ],
-  "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:avatar-system",
+        "label": "Avatar System"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-world-infrastructure",
+        "label": "Virtual World Infrastructure"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:audio-spatialization",
+        "label": "Audio Spatialization"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-community-platform",
+        "label": "Virtual Community Platform"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:event-management",
+        "label": "Event Management"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-venue",
+        "label": "Metaverse Venue"
+      }
+    ]
   }
 }
 ```
@@ -109,6 +145,13 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Virtual Event]]
+  - Requires: [[Avatar System]]
+  - Requires: [[Real-Time Rendering]]
+  - Requires: [[Virtual World Infrastructure]]
+  - Uses: [[Audio Spatialization]]
+  - Uses: [[Virtual Community Platform]]
+  - Related To: [[Event Management]]
+  - Related To: [[Metaverse Venue]]
 
 - ### Content
 

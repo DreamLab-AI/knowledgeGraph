@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:task-specific-head",
   "domain": "spatial-computing",
-  "definition": "A small neural network layer or module added on top of a pre-trained model to adapt it for specific downstream tasks. Task-specific heads process the pre-trained model's representations to produce task-appropriate outputs (classifications, spans, sequences, etc.).",
+  "definition": "A Task-Specific Head is a shallow neural network module appended to a frozen or fine-tuned pre-trained model to adapt its representations for a particular downstream task. Architecturally it may be a single linear projection for classification, start/end span predictors for question answering, or a lightweight decoder for generation; it is randomly initialised and optimised during fine-tuning whilst the shared base model provides task-agnostic representations.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -13,21 +13,53 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-technique",
+        "label": "AI Technique"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:neural-network-layer",
+        "label": "Neural Network Layer"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-model",
+        "label": "Machine Learning Model"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:parameter-efficient-fine-tuning",
+        "label": "Parameter-Efficient Fine-Tuning"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
+      }
+    ]
   },
   "wikilinks": [
     {

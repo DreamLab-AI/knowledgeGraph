@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:warehouse-automation",
   "domain": "robotics",
-  "definition": "The application of robotic systems, autonomous mobile robots, and automated conveyor or storage technologies to mechanise goods handling, sorting, and fulfilment in warehouses.",
+  "definition": "Warehouse automation is the deployment of robotic systems, autonomous mobile robots (AMRs), automated storage and retrieval systems (AS/RS), and AI-driven software orchestration to perform goods induction, storage, picking, sorting, packing, and despatch with minimal direct human intervention. It integrates perception systems for item identification and navigation, motion planning for collision-free path execution, and warehouse management system (WMS) integration for order orchestration. Modern warehouse automation architectures layer machine learning for demand forecasting and adaptive task scheduling on top of physical robotic fleets.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-robot-type",
@@ -14,16 +14,39 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:logistics-optimization",
+        "label": "Logistics Optimization"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:mobile-robot",
+        "label": "Mobile Robot"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

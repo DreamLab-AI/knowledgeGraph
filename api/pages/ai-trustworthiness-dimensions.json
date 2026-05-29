@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ai-trustworthiness-dimensions",
   "domain": "artificial-intelligence",
-  "definition": "AI Trustworthiness Dimensions are the seven interdependent assessment criteria that collectively define wher an AI system meets trustworthiness requirements, ensuring ical, lawful, and robust deployment while protecting fundamental rights and enabling societal benefit.",
+  "definition": "AI Trustworthiness Dimensions are the seven interdependent assessment criteria\u2014human agency and oversight, technical robustness and safety, privacy and data governance, transparency and explainability, diversity and non-discrimination and fairness, societal and environmental wellbeing, and accountability\u2014that collectively determine whether an AI system meets the requirements for trustworthy deployment. Established by the EU High-Level Expert Group on AI Ethics Guidelines (2019) and operationalised through the EU AI Act, these dimensions are mutually reinforcing rather than substitutable: satisfying one does not compensate for deficiencies in another.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -13,12 +13,51 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:human-agency-and-oversight",
+        "label": "Human Agency and Oversight"
+      },
+      {
+        "id": "urn:ngm:class:diversity-non-discrimination-and-fairness",
+        "label": "Diversity, Non-Discrimination, and Fairness"
+      },
+      {
+        "id": "urn:ngm:class:societal-and-environmental-wellbeing",
+        "label": "Societal and Environmental Wellbeing"
+      },
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:fairness-metrics",
+        "label": "Fairness Metrics"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +66,24 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-trustworthiness",
+        "label": "AI Trustworthiness"
+      },
+      {
+        "id": "urn:ngm:class:ethical-ai",
+        "label": "Ethical AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy By Design"
+      }
+    ]
   },
   "wikilinks": [
     {

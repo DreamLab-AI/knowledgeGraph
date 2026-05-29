@@ -42,9 +42,10 @@ public:: true
   "@id": "urn:ngm:class:communication-theory",
   "@type": "Class",
   "label": "Communication Theory",
-  "definition": "Communication Theory provides the theoretical foundations for understanding how information, meaning, and social presence are transmitted and perceived in mediated communication contexts.",
+  "definition": "Communication Theory provides the theoretical foundations for understanding how information, meaning, and social presence are transmitted and perceived in mediated communication contexts. Key frameworks include media richness theory, social presence theory, and theories of computer-mediated communication that directly inform the design of telecollaboration systems and collaborative technology.",
   "domain": "distributed-collaboration",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:dc-communication",
@@ -55,6 +56,20 @@ public:: true
       "label": "Telecollaboration"
     }
   ],
+  "relations": {
+    "supports": [
+      {"@id": "urn:ngm:class:telecollaboration", "label": "Telecollaboration"},
+      {"@id": "urn:ngm:class:collaborative-technology", "label": "Collaborative Technology"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:media-richness-theory", "label": "Media Richness Theory"},
+      {"@id": "urn:ngm:class:social-presence-theory", "label": "Social Presence Theory"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:social-presence", "label": "Social Presence"},
+      {"@id": "urn:ngm:class:video-conferencing", "label": "Video Conferencing"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
@@ -100,9 +115,12 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Telecollaboration]]
+  - supports:: [[Telecollaboration]], [[Collaborative Technology]]
+  - has-part:: [[Media Richness Theory]], [[Social Presence Theory]]
+  - related-to:: [[Social Presence]], [[Video Conferencing]]
 
 - ### Content
-  Communication Theory — content pending enrichment.
+  Communication Theory provides the theoretical foundations for understanding how information, meaning, and social presence are transmitted and perceived in mediated communication contexts. Key frameworks — media richness theory, social presence theory, and computer-mediated communication models — directly inform the design of telecollaboration systems and collaborative technology platforms.
 
 - ### Provenance
   - sources::

@@ -8,6 +8,12 @@
 
 - ### Relationships
   - bridges-to:: [[Computer Vision]]
+  - partOf [[Transformer Architecture]]
+  - partOf [[Encoder Decoder Architecture]]
+  - requires [[Query Key Value]]
+  - contrastsWith [[Self Attention]]
+  - enables [[Multimodal AI]]
+  - enables [[Multimodal Understanding]]
 
 - ### Content
   - An attention mechanism where queries come from one sequence whilst keys and values come from a different sequence, enabling information flow between the encoder and decoder in sequence-to-sequence models.

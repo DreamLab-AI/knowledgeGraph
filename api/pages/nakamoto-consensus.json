@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:nakamoto-consensus",
   "domain": "blockchain",
-  "definition": "Bitcoin-style consensus within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "The proof-of-work based consensus mechanism introduced in the Bitcoin whitepaper, where nodes expend computational effort to extend the longest valid chain. It achieves probabilistic Byzantine fault tolerance in open, permissionless networks through the longest-chain rule and difficulty-adjusted mining, enabling trustless agreement without a central coordinator.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-protocol-and-consensus",
@@ -17,16 +17,42 @@
     },
     {
       "id": "urn:ngm:class:consensus-protocol",
-      "label": "ConsensusProtocol"
+      "label": "Consensus Protocol"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "id": "urn:ngm:class:difficulty-adjustment",
+        "label": "Difficulty Adjustment"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:mining",
+        "label": "Mining"
+      },
+      {
+        "id": "urn:ngm:class:block-reward",
+        "label": "Block Reward"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -35,7 +61,24 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:longest-chain-rule",
+        "label": "Longest Chain Rule"
+      },
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:double-spending",
+        "label": "Double Spending"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ]
   },
   "wikilinks": [
     {

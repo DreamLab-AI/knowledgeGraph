@@ -58,20 +58,54 @@ public:: true
   "@id": "urn:ngm:class:interface",
   "@type": "Class",
   "label": "Interface",
-  "definition": "Interface is a blockchain and distributed systems concept and a type of Blockchain.",
+  "definition": "A boundary or contract between system components that defines how they communicate, exchange data, and interact. Interfaces abstract implementation details to enable modular system design, appearing across domains as REST APIs, smart contract ABIs, ROS topics, rendering APIs, and chat APIs. Interface design governs versioning, error handling, and protocol compliance.",
   "domain": "blockchain",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-network-component",
       "label": "Network Component"
     }
   ],
-  "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:user-interface",
+        "label": "User Interface"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:semantic-interoperability",
+        "label": "Semantic Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract-execution",
+        "label": "Smart Contract Execution"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:api-standard",
+        "label": "API Standard"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ]
   }
 }
 ```
@@ -134,6 +168,12 @@ public:: true
   - owl-role:: Concept
 - ### Relationships
   - is-subclass-of:: [[Blockchain]]
+  - Enables [[Semantic Interoperability]]
+  - Enables [[Smart Contract Execution]]
+  - Uses [[API Standard]]
+  - Has Part [[User Interface]]
+  - Related To [[Blockchain Protocol]]
+  - Related To [[Smart Contract]]
 - ### Content
   ---
   id: DT-1015

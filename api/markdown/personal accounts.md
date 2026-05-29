@@ -33,20 +33,36 @@ public:: true
   "@id": "urn:ngm:class:personal-accounts",
   "@type": "Class",
   "label": "personal accounts",
-  "definition": "personal accounts is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Personal accounts are individual user accounts that grant access to digital services, platforms, or financial instruments, uniquely associated with a natural person. In the context of digital assets and cryptocurrency, personal accounts include exchange accounts, self-custody wallets, and HMRC Self Assessment registrations through which an individual reports capital gains from asset disposals. Proper management of personal accounts intersects identity management, authentication, privacy, and tax compliance obligations.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-security-and-identity",
       "label": "Security and Identity"
     }
   ],
-  "quality": 0.35,
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:authentication", "label": "Authentication"},
+      {"@id": "urn:ngm:class:identity-management", "label": "Identity Management"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"},
+      {"@id": "urn:ngm:class:privacy", "label": "Privacy"},
+      {"@id": "urn:ngm:class:access-control", "label": "Access Control"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:cryptocurrency", "label": "Cryptocurrency"},
+      {"@id": "urn:ngm:class:tax", "label": "Tax"},
+      {"@id": "urn:ngm:class:tax-treatment-crypto", "label": "Tax Treatment Crypto"}
+    ]
   }
 }
 ```
@@ -72,14 +88,16 @@ public:: true
 
 
 - ### Definition
-  - personal accounts is a concept within the ngm domain.
+  Personal accounts are individually attributed user accounts providing access to digital services, financial platforms, or governmental systems, uniquely bound to a natural person's verified identity. They are the primary locus of credential management, authentication, and access-control enforcement. In the digital asset space, personal accounts span exchange trading accounts, self-custody wallets, and HMRC Self Assessment portals used to declare capital gains from cryptocurrency disposals.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:PersonalAccounts
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Requires authentication mechanisms and identity management infrastructure.
+  - Relates to digital identity frameworks, privacy obligations (GDPR), and access control policies.
+  - In the context of UK cryptocurrency taxation, personal accounts are the basis for HMRC Self Assessment reporting of capital gains from digital asset disposals (see Tax Treatment Crypto).
 
 - ### Content
   If you sold Bitcoin in the UK in **May 2025**, here is what you need to know about tax reporting:

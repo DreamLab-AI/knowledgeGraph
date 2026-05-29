@@ -1,12 +1,13 @@
 - ### Definition
-  - Recent Projects is a concept within the ngm domain.
+  - Recent Projects is a curated portfolio page cataloguing active and completed applied research and commercial engagements spanning conversational AI, autonomous marine vision systems, human-attention analytics, large-scale exhibition AI, GenAI film pre-visualisation, interactive image/video generation, text-to-3D modelling, Bitcoin-native digital assets, AI education products, and Logseq-based training materials. It serves as an index demonstrating cross-domain expertise in AI, robotics, spatial computing, and blockchain.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:RecentProjects
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses:: [[Artificial Intelligence]], [[Hardware and Edge]], [[Computer Vision]]
+  - relatedTo:: [[Generative Content]], [[Immersive Entertainment]], [[Metaverse Application]], [[Blockchain]], [[Edge Computing]]
 
 - ### Content
   - # Notable works

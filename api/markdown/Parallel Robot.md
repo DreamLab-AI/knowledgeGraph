@@ -46,7 +46,7 @@ public:: true
   "@id": "urn:ngm:class:parallel-robot",
   "@type": "Class",
   "label": "Parallel Robot",
-  "definition": "Parallel robot has end-effector directly connected to base by multiple separate linkages working simultaneously.",
+  "definition": "A robot whose end-effector is connected to the base by multiple independent, simultaneously actuated kinematic chains (limbs), giving it a closed-loop structure. Parallel robots achieve high rigidity, speed, and accuracy with low moving mass; canonical examples include the Delta robot and Stewart platform used in pick-and-place, machining, and flight simulation applications.",
   "domain": "robotics",
   "maturity": "established",
   "subClassOf": [
@@ -59,7 +59,27 @@ public:: true
       "label": "Manipulator Robot"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:delta-robot", "label": "Delta Robot"},
+      {"@id": "urn:ngm:class:stewart-platform", "label": "Stewart Platform"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:scara-robot", "label": "SCARA Robot"},
+      {"@id": "urn:ngm:class:kinematics", "label": "Kinematics"},
+      {"@id": "urn:ngm:class:inverse-kinematics", "label": "Inverse Kinematics"},
+      {"@id": "urn:ngm:class:end-effector", "label": "End Effector"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:forward-kinematics", "label": "Forward Kinematics"},
+      {"@id": "urn:ngm:class:robot-joint", "label": "Robot Joint"},
+      {"@id": "urn:ngm:class:electric-linear-actuator", "label": "Electric Linear Actuator"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:cylindrical-robot", "label": "Cylindrical Robot"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

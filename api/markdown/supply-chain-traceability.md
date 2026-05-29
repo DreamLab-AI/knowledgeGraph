@@ -7,7 +7,12 @@
   - belongs-to-domain:: [[BlockchainDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses [[Smart Contract]]
+  - uses [[Hyperledger Fabric]]
+  - enables [[Audit Trail]]
+  - enables [[Cold Chain Monitoring]]
+  - relatedTo [[Circular Economy]]
+  - relatedTo [[Transparency]]
 
 - ### Content
   - Blockchain and [[SmartContract|smart contracts]] creating immutable, transparent records of product journey from origin through manufacturing, distribution, and final delivery, enabling verification of authenticity and compliance at each stage. Systems like [[HyperledgerFabric|Hyperledger Fabric]] implementations track product provenance, environmental conditions (via [[ColdChainMonitoring|cold chain monitoring]]), and regulatory certifications providing cryptographic proof preventing [[Counterfeiting|counterfeiting]]. Applications extend across food safety, pharmaceutical verification, luxury goods authentication, and [[CircularEconomy|circular economy]] initiatives enabling product take-back and responsible resource recovery.

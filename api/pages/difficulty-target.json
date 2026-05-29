@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:difficulty-target",
   "domain": "blockchain",
-  "definition": "Mining success threshold within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "A 256-bit threshold value in proof-of-work blockchains that a block's hash must be numerically less than or equal to for the block to be considered valid. The difficulty target is periodically recalculated by the Difficulty Adjustment algorithm to maintain a consistent average inter-block time regardless of changes in aggregate hash power. It is the primary mechanism by which mining difficulty is quantified and enforced across all network participants.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-protocol-and-consensus",
@@ -17,17 +17,53 @@
     },
     {
       "id": "urn:ngm:class:consensus-protocol",
-      "label": "ConsensusProtocol"
+      "label": "Consensus Protocol"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:difficulty-adjustment",
+        "label": "Difficulty Adjustment"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:nonce",
+        "label": "Nonce"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:network-hash-rate",
+        "label": "Network Hash Rate"
+      },
+      {
+        "id": "urn:ngm:class:consensus-rule",
+        "label": "Consensus Rule"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
@@ -35,7 +71,36 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:halving",
+        "label": "Halving"
+      },
+      {
+        "id": "urn:ngm:class:block-reward",
+        "label": "Block Reward"
+      },
+      {
+        "id": "urn:ngm:class:mining-pool",
+        "label": "Mining Pool"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-mining",
+        "label": "Bitcoin Mining"
+      },
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:merkle-root",
+        "label": "Merkle Root"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-energy-consumption",
+        "label": "Blockchain Energy Consumption"
+      }
+    ]
   },
   "wikilinks": [
     {

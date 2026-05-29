@@ -42,16 +42,33 @@ public:: true
   "@id": "urn:ngm:class:teleoperated-robot",
   "@type": "Class",
   "label": "Teleoperated Robot",
-  "definition": "Teleoperated Robot is a robotics and autonomous systems concept and a type of robotics.",
+  "definition": "A Teleoperated Robot is a robotic system remotely controlled by a human operator via a communication link, combining human-level judgement with robotic precision and reach in environments inaccessible or hazardous to people. Key technical dimensions include haptic feedback, anthropomorphic dexterity, immersive operator interfaces (including VR headsets), latency management, and AI-assisted control to reduce operator cognitive load; applications span surgery, nuclear decommissioning, disaster response, and construction.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-human-robot-interaction",
       "label": "Human-Robot Interaction"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"},
+      {"@id": "urn:ngm:class:robo-perception", "label": "Perception and Sensing"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"},
+      {"@id": "urn:ngm:class:immersive-interface", "label": "Immersive Interface"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:robotic-telepresence", "label": "Robotic Telepresence"},
+      {"@id": "urn:ngm:class:robo-safety-and-standards", "label": "Safety and Standards"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:dc-telepresence", "label": "Telepresence"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -87,7 +104,7 @@ public:: true
 
 
 - ### Definition
-  - ### Primary Definition
+  - A Teleoperated Robot is a robotic system remotely controlled by a human operator via a communication link, combining human-level judgement with robotic precision and reach in environments inaccessible or hazardous to people. Key technical dimensions include haptic feedback, anthropomorphic dexterity, immersive operator interfaces (including VR headsets), latency management, and AI-assisted control to reduce operator cognitive load; applications span surgery, nuclear decommissioning, disaster response, and construction.
 
 - ### Semantic Classification
   - owl-class:: robotics:rb0009teleoperatedrobot
@@ -95,7 +112,10 @@ public:: true
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires:: Human Robot Interaction, Perception and Sensing
+  - uses:: Haptic Feedback, Immersive Interface
+  - relatedTo:: Robotic Telepresence, Safety and Standards
+  - bridgesTo:: Telepresence
 
 - ### Content
   - ### Primary Definition

@@ -8,6 +8,12 @@
 
 - ### Relationships
   - is-subclass-of:: [[Blockchain Economics]]
+  - Part Of [[Blockchain Economics]]
+  - Requires [[Consensus Mechanism]]
+  - Requires [[Smart Contract Execution]]
+  - Related To [[EIP-1559]]
+  - Related To [[Layer2]]
+  - Related To [[Blockchain Scalability]]
 
 - ### Content
 

@@ -7,7 +7,11 @@
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart:: [[Autonomous Robot]]
+  - hasPart:: [[Multi-Agent Systems]]
+  - uses:: [[Robot Sensor]]
+  - uses:: [[Robot Operating System]]
+  - enables:: [[Robot Learning]]
 
 - ### Content
   - Large numbers of simple, autonomous agents exhibiting sophisticated collective behaviours through local interactions and [[DecentralisedControl|decentralised control]] without centralised coordination, inspired by biological swarms like ant colonies and bird flocks. Individual robots with limited sensing, computation, and actuation communicate locally with neighbours, creating [[EmergentBehavior|emergent]] system-level intelligence enabling tasks exceeding individual capabilities. Applications span [[SearchAndRescue|search and rescue]], agricultural monitoring, warehouse logistics, and construction automation, with [[FaultTolerance|fault tolerance]] and scalability enabling deployment of thousands of autonomous agents.

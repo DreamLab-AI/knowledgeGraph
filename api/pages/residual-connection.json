@@ -4,30 +4,58 @@
   "slug": "residual-connection",
   "public": true,
   "classIri": "urn:ngm:class:residual-connection",
-  "domain": "spatial-computing",
-  "definition": "A neural network connection that adds the input of a layer to its output, enabling gradient flow in deep networks and facilitating training of very deep architectures.",
+  "domain": "artificial-intelligence",
+  "definition": "A neural network connection that adds the input of a layer directly to its output, forming a skip connection that enables stable gradient flow during backpropagation in very deep architectures. Residual connections mitigate the vanishing gradient problem and allow networks of hundreds of layers to be trained effectively, forming a foundational component of ResNet and Transformer architectures.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-content-and-assets",
-      "label": "Content and Assets"
+      "id": "urn:ngm:class:neural-network-component",
+      "label": "Neural Network Component"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:residual-network",
+        "label": "Residual Network"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:layer-normalisation",
+        "label": "Layer Normalisation"
+      },
+      {
+        "id": "urn:ngm:class:activation-function",
+        "label": "Activation Function"
+      }
+    ]
   },
   "wikilinks": [
     {

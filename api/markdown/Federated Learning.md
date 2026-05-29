@@ -124,7 +124,7 @@ public:: true
   "label": "Federated Learning",
   "definition": "Distributed machine learning paradigm enabling collaborative model training across decentralized data sources without centralizing sensitive information.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
@@ -135,6 +135,22 @@ public:: true
       "label": "Distributed Computing"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:differential-privacy", "label": "Differential Privacy"},
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:model-training", "label": "Model Training"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:privacy-preserving-data-sharing", "label": "Privacy Preserving Data Sharing"},
+      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}
+    ]
+  },
   "quality": 0.4,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -280,6 +296,12 @@ public:: true
 
 - ### Relationships
   - bridges-to:: [[Consensus Protocol]] (domain: blockchain→ai, type: coordination)
+  - uses:: [[Differential Privacy]]
+  - uses:: [[Edge Computing]]
+  - requires:: [[Model Training]]
+  - supports:: [[Privacy Preserving Data Sharing]]
+  - supports:: [[AI Ethics]]
+  - relatedTo:: [[Distributed Systems]]
 
 - ### Content
   - Federated learning enables collaborative model training across decentralised data sources whilst preserving privacy through on-device computation, secure aggregation, and blockchain coordination, enabling organisations to collaborate without centralising sensitive information.

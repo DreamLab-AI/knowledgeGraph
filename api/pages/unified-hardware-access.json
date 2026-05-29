@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:unified-hardware-access",
   "domain": "spatial-computing",
-  "definition": "A standardized abstraction layer that provides consistent interfaces for accessing diverse XR hardware devices, including VR headsets, AR glasses, haptic controllers, and tracking systems, enabling cross-platform application development.",
+  "definition": "A standardised abstraction layer that provides consistent programmatic interfaces for accessing diverse XR hardware devices \u2014 including VR headsets, AR glasses, haptic controllers, eye-tracking modules, and six-DoF tracking systems \u2014 enabling cross-platform application development without device-specific code paths. The WebXR Device API (W3C) and OpenXR (Khronos Group) are the primary open standards implementing this abstraction for web and native runtimes respectively.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-standards-and-interop",
@@ -17,21 +17,57 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cross-platform-interoperability",
+        "label": "Cross-Platform Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:xr-device",
+        "label": "XR Device"
+      },
+      {
+        "id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      },
+      {
+        "id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      }
+    ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      },
+      {
+        "id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:xr-runtime-environment",
+        "label": "XR Runtime Environment"
+      }
+    ]
   },
   "wikilinks": [
     {

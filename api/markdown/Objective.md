@@ -42,7 +42,7 @@ public:: true
   "@id": "urn:ngm:class:objective",
   "@type": "Class",
   "label": "Objective",
-  "definition": "Objective is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "A formal specification of the goal or criterion that an AI system, optimisation algorithm, or training procedure is designed to satisfy or maximise. In machine learning this is typically expressed as a loss function or reward signal that guides parameter updates; in planning and reinforcement learning it encodes desired agent behaviour through utility or reward functions.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -51,7 +51,23 @@ public:: true
       "label": "AI Technique"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:loss-function", "label": "Loss Function"},
+      {"@id": "urn:ngm:class:reward-function", "label": "Reward Function"},
+      {"@id": "urn:ngm:class:optimiser", "label": "Optimiser"},
+      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"},
+      {"@id": "urn:ngm:class:model-training", "label": "Model Training"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:optimization-algorithm", "label": "Optimization Algorithm"},
+      {"@id": "urn:ngm:class:training-data", "label": "Training Data"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:model-optimisation-and-performance", "label": "Model Optimisation and Performance"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

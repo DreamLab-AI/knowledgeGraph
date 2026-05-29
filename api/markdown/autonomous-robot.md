@@ -7,6 +7,12 @@
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
+  - requires:: [[Sensor Fusion]]
+  - requires:: [[Computer Vision]]
+  - uses:: [[Motion Planning]]
+  - uses:: [[Reinforcement Learning]]
+  - relatedTo:: [[Multi-Agent Systems]]
+  - relatedTo:: [[Robot Learning]]
   - bridges-to:: [[Deep Learning]] (domain: ai→robotics, type: implementation)
 
 - ### Content

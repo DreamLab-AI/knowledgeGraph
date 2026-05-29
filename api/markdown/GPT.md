@@ -42,9 +42,10 @@ public:: true
   "@id": "urn:ngm:class:gpt",
   "@type": "Class",
   "label": "GPT",
-  "definition": "Generative Pre-trained Transformer: an autoregressive language model that uses transformer decoder architecture and is pre-trained on large text corpora using next-token prediction.",
+  "definition": "Generative Pre-trained Transformer: an autoregressive language model that uses transformer decoder architecture and is pre-trained on large text corpora using next-token prediction. GPT models learn rich representations through unsupervised pre-training and are subsequently fine-tuned for diverse downstream NLP tasks, demonstrating that scale and the language modelling objective yield powerful transfer learning.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-model-architecture",
@@ -56,6 +57,50 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:text-generation",
+        "label": "Text Generation"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:pre-training",
+        "label": "Pre Training"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      }
+    ]
   }
 }
 ```
@@ -87,7 +132,7 @@ public:: true
 
 
 - ### Definition
-  - Generative Pre-trained Transformer: an autoregressive language model that uses transformer decoder architecture and is pre-trained on large text corpora using next-token prediction.
+  - Generative Pre-trained Transformer: an autoregressive language model that uses transformer decoder architecture and is pre-trained on large text corpora using next-token prediction. GPT models learn rich representations through unsupervised pre-training and are subsequently fine-tuned for diverse downstream NLP tasks, demonstrating that scale and the language modelling objective yield powerful transfer learning.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:GPT
@@ -95,7 +140,14 @@ public:: true
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Implements: [[Transformer Architecture]]
+  - Uses: [[Pre Training]]
+  - Uses: [[Transfer Learning]]
+  - Uses: [[Attention Mechanism]]
+  - Enables: [[Text Generation]]
+  - Enables: [[Natural Language Processing]]
+  - Depends On: [[Large Language Models]]
+  - Related To: [[Fine Tuning]]
 
 - ### Content
   - Generative Pre-trained Transformer: an autoregressive language model that uses transformer decoder architecture and is pre-trained on large text corpora using next-token prediction.

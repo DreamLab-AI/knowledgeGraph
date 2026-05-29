@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:sparql-examples",
   "domain": "spatial-computing",
-  "definition": "SPARQL is a semantic query language and protocol for querying and manipulating data stored in RDF|Resource Description Framework format, enabling structured queries across linked data and knowledge graphs at massive scale.",
+  "definition": "SPARQL (SPARQL Protocol and RDF Query Language) is the W3C-standardised query language for RDF-based knowledge graphs and linked data endpoints, supporting SELECT, CONSTRUCT, ASK, and DESCRIBE query forms, as well as federated queries across distributed SPARQL endpoints and SPARQL Update for graph mutation. SPARQL 1.1 (2013) added aggregates, subqueries, and property paths; SPARQL 1.2 (2023) further refined the protocol and service description vocabulary. It is the primary access interface for semantic knowledge graph exploration, ontology navigation, and cross-domain data integration.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-standards-and-interop",
@@ -18,20 +18,52 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.4,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      }
+    ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:knowledge-graph-construction",
+        "label": "Knowledge Graph Construction"
+      },
+      {
+        "id": "urn:ngm:class:domain-ontology",
+        "label": "Domain Ontology"
+      }
+    ]
   },
   "wikilinks": [
     {

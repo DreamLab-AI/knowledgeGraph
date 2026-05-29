@@ -1,12 +1,17 @@
 - ### Definition
-  - PositionalAudio is a concept within the ngm domain.
+  - Positional Audio is a technique for rendering sound sources at specific locations within a 3D virtual or mixed-reality environment, simulating how sound propagates, attenuates, and is spatially perceived by the listener. It relies on head-related transfer functions (HRTFs) and room acoustics modelling to create realistic auditory presence.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:PositionalAudio
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Part Of [[Spatial Audio System]]
+  - Requires [[Audio Spatialization]]
+  - Enables [[Immersive Audio System]]
+  - Enables [[Spatial Audio]]
+  - Uses [[Audio Processing System]]
+  - Related To [[Procedural Audio Generator]]
 
 - ### Content
   # PositionalAudio

@@ -42,15 +42,30 @@ public:: true
   "@id": "urn:ngm:class:conceptual-hierarchy",
   "@type": "Class",
   "label": "Conceptual Hierarchy",
-  "definition": "Conceptual Hierarchy is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A Conceptual Hierarchy is a structured taxonomic organisation of domain concepts into subsumption (is-a) and composition (part-of) relationships, enabling systematic knowledge representation, inheritance of properties, and semantic interoperability across robotic and autonomous systems. It supports automated reasoning, modular system design, and classification of new entities within standardised ontological frameworks.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
+      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:owl-class-hierarchy", "label": "OWL Class Hierarchy"},
+      {"@id": "urn:ngm:class:rdf", "label": "RDF"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -92,14 +107,16 @@ public:: true
 
 
 - ### Definition
-  - ConceptualHierarchy is a concept within the ngm domain.
+  - A Conceptual Hierarchy is a structured taxonomic organisation of domain concepts into subsumption (is-a) and composition (part-of) relationships, enabling systematic knowledge representation, inheritance of properties, and semantic interoperability across robotic and autonomous systems. It supports automated reasoning, modular system design, and classification of new entities within standardised ontological frameworks.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:ConceptualHierarchy
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses:: [[Ontology]], [[Knowledge Representation]]
+  - supports:: [[Robotics]], [[Knowledge Graph]]
+  - related-to:: [[OWL Class Hierarchy]], [[RDF]]
 
 - ### Content
   term-id: RB-9003

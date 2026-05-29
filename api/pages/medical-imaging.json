@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:medical-imaging",
   "domain": "spatial-computing",
-  "definition": "Medical Imaging encompasses technologies and AI techniques used to visualise the interior of the human body for clinical diagnosis, treatment planning, and spatial computing applications in healthcare.",
+  "definition": "Medical imaging encompasses the acquisition, processing, and AI-assisted analysis of visual representations of the human body\u2014including X-ray, CT, MRI, ultrasound, PET, and histopathology slides\u2014for clinical diagnosis, treatment planning, and disease monitoring. Deep learning models, particularly convolutional neural networks and vision transformers, have achieved clinician-level performance on specific image classification and segmentation tasks. The field is governed by standards such as DICOM for data interchange and requires regulatory clearance (e.g., FDA 510(k) or CE marking) for clinical-decision software.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:clinical-decision-support",
+        "label": "Clinical Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:radiology-ai",
+        "label": "Radiology AI"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:image-segmentation",
+        "label": "Image Segmentation"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:healthcare-ai",
+        "label": "Healthcare AI"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

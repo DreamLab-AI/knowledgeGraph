@@ -1,12 +1,15 @@
 - ### Definition
-  - Style Guide is a concept within the ngm domain.
+  - A Style Guide is a normative document specifying authoring conventions — voice, tone, markup syntax, citation format, and structural patterns — for consistent content creation within a knowledge graph or publication system. In the NarrativeGoldmine context it captures Logseq markdown conventions, UK English preferences, and the analytical-conversational register used throughout the graph.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:StyleGuide
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - supports:: Knowledge Graph, Ontology
+  - relatedTo:: Software Engineering, Semantic Web Standards
+  - standardizedBy:: Open Standard
+  - enables:: Knowledge Graph Construction
 
 - ### Content
   - This guide aims to capture the stylistic nuances of the provided text for accurate imitation by an LLM. It focuses on replicating the author's voice, tone, and the specific Logseq markdown and markup conventions.

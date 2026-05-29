@@ -8,6 +8,9 @@
 
 - ### Relationships
   - is-subclass-of:: [[Knowledge Management]]
+  - uses:: [[Ontology]], [[Controlled Vocabulary]], [[Skos Vocabulary]]
+  - enables:: [[Knowledge Graph]], [[Knowledge Representation]]
+  - supports:: [[Knowledge Management System]]
 
 - ### Content
 

@@ -42,16 +42,33 @@ public:: true
   "@id": "urn:ngm:class:explainability-oecd",
   "@type": "Class",
   "label": "Explainability (OECD)",
-  "definition": "People affected by AI-based outcomes should be able to understand how and why particular decisions or recommendations were reached, with explanations provided in ways appropriate to the context and enabling meaningful contestation of AI-influenced decisions.",
+  "definition": "The OECD AI Principle (1.3) requiring that people affected by AI-based outcomes are able to understand how and why particular decisions or recommendations were reached. Explanations must be contextually appropriate, enable meaningful contestation, and illuminate causal factors—operationalised through LIME, SHAP, attention visualisation, and inherently interpretable model architectures.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:fairness-oecd", "label": "Fairness (OECD)"},
+      {"@id": "urn:ngm:class:accountability-oecd", "label": "Accountability (OECD)"},
+      {"@id": "urn:ngm:class:human-centred-values", "label": "Human Centred Values"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"},
+      {"@id": "urn:ngm:class:human-in-the-loop", "label": "Human in the Loop"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -95,7 +112,10 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **relatedTo**: Fairness (OECD), Accountability (OECD), Human Centred Values — explainability is the evidential basis for fairness audits and accountability enforcement
+  - **requires**: AI Regulation, Human in the Loop — contextually appropriate explanations require regulatory mandates and human oversight mechanisms
+  - **enables**: AI Safety — transparent reasoning about AI outputs supports safer deployment decisions
+  - **contrastsWith**: AI Ethics — explainability is a technical operationalisation of the broader AI ethics discourse
 
 - ### Content
   - People affected by AI-based outcomes should be able to understand how and why particular decisions or recommendations were reached, with explanations provided in ways appropriate to the context and enabling meaningful contestation of AI-influenced decisions.

@@ -94,15 +94,33 @@ public:: true
   "@id": "urn:ngm:class:agent",
   "@type": "Class",
   "label": "Agent",
-  "definition": "Agent is a blockchain and distributed systems concept and a type of Blockchain.",
+  "definition": "An autonomous computational or physical entity that perceives its environment, reasons about its perceptions using internal beliefs and goals, and acts to achieve specified objectives—exhibiting autonomy, reactivity, proactivity, and social ability across AI, blockchain, robotics, and metaverse domains.",
   "domain": "blockchain",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-network-component",
       "label": "Network Component"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:bdi-model", "label": "BDI Model"},
+      {"@id": "urn:ngm:class:goal", "label": "Goal"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:autonomy-level", "label": "Autonomy Level"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:ai-agent-system", "label": "AI Agent System"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:objective", "label": "Objective"},
+      {"@id": "urn:ngm:class:human-in-the-loop", "label": "Human in the Loop"},
+      {"@id": "urn:ngm:class:safety", "label": "Safety"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
@@ -215,12 +233,16 @@ public:: true
 
 
 - ### Definition
-  - Agent is a concept within the bc domain.
+  - An autonomous computational or physical entity that perceives its environment, reasons using internal beliefs and goals, and acts to achieve specified objectives—exhibiting autonomy, reactivity, proactivity, and social ability across AI, blockchain, robotics, and metaverse domains.
 - ### Semantic Classification
   - owl-class:: blockchain:Agent
   - owl-role:: Concept
 - ### Relationships
   - is-subclass-of:: [[Blockchain]]
+  - uses:: [[BDI Model]], [[Goal]]
+  - hasPart:: [[Autonomy Level]]
+  - requires:: [[AI Agent System]]
+  - relatedTo:: [[Objective]], [[Human in the Loop]], [[Safety]]
 - ### Content
   ## Definition
   An **Agent** is an autonomous computational or physical entity that:

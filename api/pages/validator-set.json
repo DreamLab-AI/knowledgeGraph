@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:validator-set",
   "domain": "blockchain",
-  "definition": "A validator set is the collection of nodes in a proof-of-stake or delegated consensus blockchain that are authorised to propose, attest, and finalise new blocks.",
+  "definition": "A validator set is the collection of nodes in a proof-of-stake or delegated consensus blockchain that are authorised to propose, attest, and finalise new blocks in each epoch. Validators are typically selected through staking\u2014locking collateral that is subject to slashing penalties for misbehaviour\u2014ensuring economic alignment with protocol security. The composition of the validator set changes at epoch boundaries based on delegation, unbonding, and slashing events, and its size determines the trade-off between decentralisation and consensus latency.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-network-component",
@@ -14,10 +14,24 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:validator-node",
+        "label": "Validator Node"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
@@ -27,7 +41,20 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:delegated-proof-of-stake",
+        "label": "Delegated Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:epoch",
+        "label": "Epoch"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

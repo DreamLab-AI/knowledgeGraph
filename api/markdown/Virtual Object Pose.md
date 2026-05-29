@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:virtual-object-pose",
   "@type": "Class",
   "label": "Virtual Object Pose",
-  "definition": "The position, orientation, and scale of a 3D object within a virtual environment, typically represented as translation (X, Y, Z coordinates), rotation (quaternion or Euler angles), and scale values that define how the object exists in 3D space.",
+  "definition": "The position, orientation, and scale of a 3D object within a virtual environment, represented as a combined transform: translation (X, Y, Z world coordinates), rotation (quaternion or Euler angles), and scale factors. Accurate pose determination underpins AR object anchoring, motion capture replay, physics simulation, and hand-object interaction in XR systems.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -59,7 +60,22 @@ public:: true
       "label": "Physics Simulation"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
+      {"@id": "urn:ngm:class:slam", "label": "SLAM"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
+      {"@id": "urn:ngm:class:motion-capture", "label": "Motion Capture"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:physics-simulation", "label": "Physics Simulation"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -109,6 +125,10 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Spatial Computing]]
+  - **requires**: [[Sensor Fusion]], [[SLAM]] — pose estimation fuses IMU, optical, and depth sensors; SLAM provides environment-relative localisation
+  - **enables**: [[Augmented Reality]], [[Motion Capture]] — precise pose data is prerequisite for AR object anchoring and motion capture playback
+  - **uses**: [[Computer Vision]] — markerless pose estimation algorithms rely on computer vision techniques (feature matching, depth estimation)
+  - **partOf**: [[Physics Simulation]] — object pose is the primary state variable integrated by physics engines at each simulation step
 
 - ### Content
 

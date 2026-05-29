@@ -42,7 +42,7 @@ public:: true
   "@id": "urn:ngm:class:system",
   "@type": "Class",
   "label": "System",
-  "definition": "System is a artificial intelligence concept and a type of Artificial Intelligence.",
+  "definition": "A bounded, purposeful arrangement of components—hardware, software, data, and processes—that interact to perform functions beyond those of any individual component. In AI contexts, a system integrates models, inference engines, data pipelines, and interfaces into deployable solutions that operate within broader sociotechnical environments.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -51,7 +51,28 @@ public:: true
       "label": "AI Technique"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:ai-system-component", "label": "AI System Component"},
+      {"@id": "urn:ngm:class:control-system", "label": "Control System"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
+      {"@id": "urn:ngm:class:autonomous-system", "label": "Autonomous System"},
+      {"@id": "urn:ngm:class:distributed-system", "label": "Distributed System"},
+      {"@id": "urn:ngm:class:ai-agent-system", "label": "AI Agent System"},
+      {"@id": "urn:ngm:class:aisystem", "label": "AISystem"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:ai-deployment", "label": "AI Deployment"},
+      {"@id": "urn:ngm:class:embedded-ai-frameworks", "label": "Embedded AI Frameworks"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
+      {"@id": "urn:ngm:class:inference", "label": "Inference"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

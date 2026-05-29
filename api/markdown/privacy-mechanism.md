@@ -1,12 +1,18 @@
 - ### Definition
-  - Privacy Mechanism is a concept within the ai domain. Further enrichment pending.
+  - A Privacy Mechanism is a technical method or protocol designed to preserve individuals' data privacy during data collection, processing, or publication. Examples include differential privacy, federated learning, and homomorphic encryption, each providing mathematically grounded guarantees against disclosure of sensitive information.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:PrivacyMechanism
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Implements [[Differential Privacy]]
+  - Implements [[Federated Learning]]
+  - Implements [[Homomorphic Encryption]]
+  - Supports [[Privacy]]
+  - Supports [[Data Protection]]
+  - Requires [[Privacy By Design]]
+  - Related To [[GDPR Compliance]]
 
 - ### Content
 

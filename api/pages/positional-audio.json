@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:positional-audio",
   "domain": "spatial-computing",
-  "definition": "Positional Audio is a spatial computing concept and a type of spatial-computing.",
+  "definition": "Positional Audio is a technique for rendering sound sources at specific locations within a 3D virtual or mixed-reality environment, simulating how sound propagates, attenuates, and is spatially perceived by the listener. It relies on head-related transfer functions (HRTFs) and room acoustics modelling to create realistic auditory presence.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-display-and-rendering",
@@ -14,20 +14,49 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:audio-spatialization",
+        "label": "Audio Spatialization"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:immersive-audio-system",
+        "label": "Immersive Audio System"
+      },
+      {
+        "id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:audio-processing-system",
+        "label": "Audio Processing System"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:spatial-audio-system",
+        "label": "Spatial Audio System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:procedural-audio-generator",
+        "label": "Procedural Audio Generator"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

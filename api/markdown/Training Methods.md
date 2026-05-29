@@ -42,16 +42,31 @@ public:: true
   "@id": "urn:ngm:class:training-methods",
   "@type": "Class",
   "label": "Training Methods",
-  "definition": "Training Mods encompass the techniques and algorithms used to teach machine learning models to perform specific tasks by adjusting model parameters based on training data.",
+  "definition": "Training Methods encompass the algorithms and procedures used to optimise machine learning model parameters against training data, including supervised, unsupervised, semi-supervised, reinforcement, transfer, curriculum, and contrastive learning paradigms. The choice of method fundamentally determines model capability, data efficiency, and generalisation behaviour.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:supervised-learning", "label": "Supervised Learning"},
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
+      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
+      {"@id": "urn:ngm:class:contrastive-learning", "label": "Contrastive Learning"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
+      {"@id": "urn:ngm:class:machine-learning-model", "label": "Machine Learning Model"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -87,7 +102,7 @@ public:: true
 
 
 - ### Definition
-  - Training Methods encompass the techniques and algorithms used to teach machine learning models to perform specific tasks by adjusting model parameters based on training data. These methods include supervised learning, unsupervised learning, reinforcement learning, transfer learning, fine-tuning, and curriculum learning approaches.
+  Training Methods encompass the algorithms and procedures used to optimise machine learning model parameters against training data, including supervised, unsupervised, semi-supervised, reinforcement, transfer, curriculum, and contrastive learning paradigms. The choice of method fundamentally determines model capability, data efficiency, and generalisation behaviour.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:TrainingMethod
@@ -96,6 +111,9 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Artificial Intelligence]]
+  - **hasPart**: Supervised Learning, Reinforcement Learning, Transfer Learning, Contrastive Learning
+  - **requires**: Training Data, Machine Learning Model
+  - **enables**: Fine Tuning
 
 - ### Content
   Training Methods — content pending enrichment.

@@ -55,7 +55,7 @@ public:: true
       "label": "Protocol and Consensus"
     },
     {
-      "@id": "urn:ngm:class:blockchain-transactions",
+      "@id": "urn:ngm:class:blockchain-transaction",
       "label": "Blockchain Transactions"
     }
   ],

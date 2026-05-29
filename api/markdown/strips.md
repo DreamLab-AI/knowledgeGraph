@@ -1,12 +1,15 @@
 - ### Definition
-  - STRIPS is a concept within the ai domain.
+  - STRIPS (Stanford Research Institute Problem Solver) is a classical automated planning formalism that represents world states as conjunctions of propositions and defines actions via precondition, add-list, and delete-list operators. It introduced the core abstraction underlying modern planning languages such as PDDL and remains foundational to symbolic AI planning.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:Strips
   - owl-role:: Concept
 
 - ### Relationships
-  - is-subclass-of:: [[Knowledge Representation]]
+  - Enables [[Automated Planning]] as its primary application domain
+  - Uses [[Knowledge Representation]] (propositional logic for state and action encoding)
+  - Bridges to [[Path Planning]] (STRIPS-style operators underpin robot motion planning)
+  - Related to [[Reinforcement Learning]] as a complementary sequential decision-making paradigm
 
 - ### Content
 

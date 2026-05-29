@@ -6,7 +6,10 @@
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **partOf**: [[Machine Learning]]
+  - **uses**: [[Machine Learning Technique]]
+  - **enables**: [[Autonomous Navigation]], [[Autonomous System]]
+  - **relatedTo**: [[Reinforcement Learning]], [[Active Learning]]
 
 - ### Content
 

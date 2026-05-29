@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:variable-impedance-control",
   "domain": "robotics",
-  "definition": "Variable impedance control modulates robot impedance parameters online based on task requirements.",
+  "definition": "Variable Impedance Control is a robot control strategy that modulates stiffness, damping, and inertia parameters online during task execution, adapting mechanical impedance in response to sensed interaction forces, task phase, or environmental uncertainty rather than maintaining fixed impedance. This contrasts with conventional impedance control, which prescribes constant mechanical properties, by enabling robots to behave compliantly during contact-rich or uncertain phases and rigidly during free-space precision movements. Key implementations include learning-based approaches that infer optimal impedance trajectories from demonstrations, model predictive formulations that optimise impedance over a receding horizon, and biomimetic strategies that replicate the variable stiffness observed in human neuromuscular systems to achieve safe, dexterous physical interaction.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
@@ -17,21 +17,77 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      },
+      {
+        "id": "urn:ngm:class:torque",
+        "label": "Torque"
+      },
+      {
+        "id": "urn:ngm:class:force-control",
+        "label": "Force Control"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "id": "urn:ngm:class:safety",
+        "label": "Safety"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-robot",
+        "label": "Collaborative Robot"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:adaptive-control",
+        "label": "Adaptive Control"
+      },
+      {
+        "id": "urn:ngm:class:model-predictive-control",
+        "label": "Model Predictive Control"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      },
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:lower-limb-exoskeleton",
+        "label": "Lower Limb Exoskeleton"
+      },
+      {
+        "id": "urn:ngm:class:embodied-ai",
+        "label": "Embodied AI"
+      }
+    ]
   },
   "wikilinks": [
     {

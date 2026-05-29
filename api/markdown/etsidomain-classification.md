@@ -10,7 +10,9 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **hasPart**: [[ETSI_Domain_Infrastructure]], [[ETSI Domain Identity and Trust]], [[ETSI Domain Security and Privacy]]
+  - **enables**: [[Etsi Metaverse Domain Taxonomy]], [[Metaverse Ontology]]
+  - **relatedTo**: [[Etsi Metaverse Domain Model]], [[Metaverse Domain]]
 
 - ### Content
   - The ETSI Domain Classification taxonomy organises technology domains, standards, and governance areas systematically enabling discovery, standards alignment, and cross-domain coordination for metaverse and digital infrastructure development.

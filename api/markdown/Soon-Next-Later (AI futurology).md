@@ -78,16 +78,34 @@ public:: true
   "@id": "urn:ngm:class:soon-next-later-ai-futurology",
   "@type": "Class",
   "label": "Soon-Next-Later (AI futurology)",
-  "definition": "Soon-Next-Later (AI futurology) is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "Soon-Next-Later is a structured futurology framework for categorising AI capability developments across three temporal horizons: Soon (0–5 years, capabilities already emerging in products), Next (5–10 years, capabilities requiring current research to mature), and Later (10+ years, speculative capabilities dependent on fundamental advances). The framework provides practitioners with a tractable planning scaffold that avoids both near-term over-hype and long-horizon dismissiveness.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-research-area",
       "label": "AI Research Area"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:sam-hammond", "label": "Sam Hammond"},
+      {"@id": "urn:ngm:class:artificial-general-intelligence", "label": "Artificial General Intelligence"},
+      {"@id": "urn:ngm:class:social-contract", "label": "Social Contract"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
+      {"@id": "urn:ngm:class:ai-policy", "label": "AI Policy"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:ai-risk", "label": "AI Risk"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:sovereign-ai-bid", "label": "Sovereign AI bid"}
+    ]
+  },
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -173,14 +191,17 @@ public:: true
 
 
 - ### Definition
-  - Soon-Next-Later (AI futurology) is a concept within the ngm domain.
+  - Soon-Next-Later is a structured futurology framework for categorising AI capability developments across three temporal horizons: Soon (0–5 years, capabilities already emerging in products), Next (5–10 years, capabilities requiring current research to mature), and Later (10+ years, speculative capabilities dependent on fundamental advances). The framework provides practitioners with a tractable planning scaffold that avoids both near-term over-hype and long-horizon dismissiveness.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:SoonNextLaterAIFuturology
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **relatedTo**: Sam Hammond — Hammond's timeline work is a key source informing this framework; Artificial General Intelligence — AGI sits in the Later horizon of the framework; Social Contract — the framework explicitly addresses how AI transformation affects the social contract across all three horizons.
+  - **enables**: AI Governance — temporal horizon structuring helps governance bodies prioritise regulation; AI Policy — policy makers use the framework to sequence regulatory interventions.
+  - **uses**: AI Risk — risk assessment per horizon is integral to applying the framework responsibly.
+  - **bridgesTo**: Sovereign AI bid — sovereign AI strategy requires exactly the kind of temporal horizon reasoning that Soon-Next-Later provides.
 
 - ### Content
   - # Soon, Next, and Later 

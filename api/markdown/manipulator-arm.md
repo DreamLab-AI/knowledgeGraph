@@ -7,7 +7,14 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Requires: [[Inverse Kinematics]]
+  - Requires: [[Motion Control]]
+  - Uses: [[Computer Vision]]
+  - Uses: [[Haptic Feedback]]
+  - Uses: [[Reinforcement Learning]]
+  - Has Part: [[Actuator]]
+  - Has Part: [[End Effector]]
+  - Enables: [[Collision Avoidance]]
 
 - ### Content
   - Multi-jointed mechanical or virtual robotic arm integrated with avatars enabling precise object manipulation and physical interaction within virtual or mixed reality environments. Manipulator arms combine robotics hardware (mechanical joints, actuators, end-effectors), computer vision guidance, and AI-driven control enabling naturalistic manipulation through inverse kinematics algorithms and haptic feedback. Deployed in surgical robotics, laboratory automation, pick-and-place operations, and immersive training addressing latency, haptic fidelity, and standardised physical-virtual interaction interfaces.

@@ -7,6 +7,11 @@
 
 - ### Relationships
   - is-subclass-of:: ['owl:Thing']
+  - uses [[Deep Learning]]
+  - uses [[Feature Extraction]]
+  - enables [[Object Detection]]
+  - enables [[Computer Vision]]
+  - relatedTo [[Machine Learning]]
 
 - ### Content
 

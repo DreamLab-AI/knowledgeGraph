@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:pathfinding-algorithm",
   "domain": "artificial-intelligence",
-  "definition": "Pathfinding Algorithm is a artificial intelligence concept and a type of Algorithm.",
+  "definition": "A computational algorithm that determines an optimal or near-optimal route between a start and goal node in a graph or spatial environment. Pathfinding algorithms are central to autonomous navigation, game AI, robotics, and metaverse movement systems, with classical examples including Dijkstra's algorithm for shortest paths and A* for heuristic-guided search in spatial graphs.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -17,21 +17,69 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:dijkstra-algorithm",
+        "label": "Dijkstra Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:graph-search",
+        "label": "Graph Search"
+      },
+      {
+        "id": "urn:ngm:class:heuristic-methods",
+        "label": "Heuristic Methods"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:ngm:class:navigation",
+        "label": "Navigation"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-navigation-systems",
+        "label": "Metaverse Navigation Systems"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:graph-algorithms",
+        "label": "Graph Algorithms"
+      },
+      {
+        "id": "urn:ngm:class:search-algorithm",
+        "label": "Search Algorithm"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:search-algorithms",
+        "label": "Search Algorithms"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "id": "urn:ngm:class:fast-spatial-queries",
+        "label": "Fast Spatial Queries"
+      }
+    ]
   },
   "wikilinks": [
     {

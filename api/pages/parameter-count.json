@@ -4,8 +4,8 @@
   "slug": "parameter-count",
   "public": true,
   "classIri": "urn:ngm:class:parameter-count",
-  "domain": "spatial-computing",
-  "definition": "The total number of trainable parameters in a neural network, serving as a primary measure of model size and capacity, typically ranging from s to hundreds of s in modern language models.",
+  "domain": "artificial-intelligence",
+  "definition": "The total number of trainable weights and biases in a neural network, serving as the primary measure of model size and capacity. Parameter count typically ranges from millions to hundreds of billions in modern language models, and governs memory requirements, inference cost, and the upper bound on information that can be encoded; scaling law research relates it to training compute and dataset size.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -13,21 +13,49 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:neural-network-architecture",
+        "label": "Neural Network Architecture"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:machine-learning-infrastructure",
+        "label": "Machine Learning Infrastructure"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -9,7 +9,10 @@ bridges-to:: [[Autonomous Robot]]
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - part-of:: [[Semi-Supervised Learning]]
+  - related-to:: [[Self Training]], [[Active Learning]]
+  - uses:: [[Machine Learning]], [[Machine Learning Model]]
+  - enables:: [[Generative AI]]
 
 - ### Content
   - A semi-supervised learning technique where two or more models with different views of the data train each other by labelling unlabelled examples. Co-training leverages complementary feature sets or model architectures to improve performance through mutual teaching.

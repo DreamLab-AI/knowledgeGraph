@@ -42,15 +42,28 @@ public:: true
   "@id": "urn:ngm:class:identity-systems",
   "@type": "Class",
   "label": "Identity Systems",
-  "definition": "Identity Systems is a type of Infrastructure in the infrastructure domain.",
+  "definition": "Identity Systems are the technical and organisational frameworks that establish, manage, verify, and revoke digital identities for users, devices, and services. They encompass authentication mechanisms, credential issuance, public-key infrastructure, and decentralised identity models (self-sovereign identity, DIDs) that enable secure, interoperable identification across platforms and jurisdictions.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-security-and-identity",
       "label": "Security and Identity"
     }
   ],
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
+      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:authentication", "label": "Authentication"},
+      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:access-control", "label": "Access Control"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -87,23 +100,24 @@ public:: true
 
 
 - ### Definition
-  - Identity Systems is a concept within the metaverse domain. Further enrichment pending.
+  - Identity Systems are the technical and organisational frameworks that establish, manage, verify, and revoke digital identities for users, devices, and services. They encompass authentication mechanisms, credential issuance, public-key infrastructure, and decentralised identity models (self-sovereign identity, DIDs) that enable secure, interoperable identification across platforms and jurisdictions.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:IdentitySystems
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart [[Self Sovereign Identity]]
+  - hasPart [[Public Key Infrastructure]]
+  - uses [[Authentication]]
+  - uses [[Digital Identity]]
+  - enables [[Access Control]]
 
 - ### Content
 
   ## Overview
 
-  Identity Systems represents an abstract concept in the metaverse ontology hierarchy.
-
-  #### Related Concepts
-  - [[owl:Thing]]
+  Identity Systems provide the mechanisms by which digital actors — humans, organisations, devices, and services — prove who or what they are. Traditional federated identity relies on centralised identity providers (OAuth, SAML); decentralised models use cryptographic key pairs anchored on distributed ledgers (DIDs, verifiable credentials) to give users portable, self-sovereign identities not dependent on any single service. Public-key infrastructure underpins certificate-based authentication. In metaverse and spatial computing contexts, persistent cross-platform identity is essential: users need a consistent identity that carries reputation, assets, and access rights across virtual environments. Authentication mechanisms range from passwords and hardware tokens to biometric verification and zero-knowledge proofs that assert attributes without revealing raw data.
 
 - ### Provenance
   - sources::

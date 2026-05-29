@@ -8,6 +8,10 @@
 
 - ### Relationships
   - is-subclass-of:: [[Immersive Experience]]
+  - **uses**: 3D LiDAR, Virtual Reality — LiDAR scanning captures spatial geometry for high-fidelity tour creation; VR headsets deliver the resulting immersive walkthrough experience.
+  - **enables**: Education Metaverse, Digital Real Estate — virtual tours are a primary entry point for remote educational field trips and property marketing.
+  - **partOf**: Metaverse — virtual tours are a lightweight, browser-accessible metaverse application category.
+  - **relatedTo**: Digital Twin — both represent physical spaces digitally; digital twins extend this to real-time data-synchronised models while tours focus on navigable media.
 
 - ### Content
 

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:neural-radiance-field",
   "domain": "artificial-intelligence",
-  "definition": "NeRF - neural representation for 3D scene synthesis.",
+  "definition": "A continuous volumetric scene representation that uses a multilayer perceptron to map 5D coordinates (3D position plus 2D viewing direction) to colour and volume density, enabling novel view synthesis via differentiable ray marching. NeRF achieves photo-realistic rendering of complex scenes from a sparse set of calibrated images and has spawned instant variants, Gaussian Splatting successors, and robotics perception applications.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-model-architecture",
@@ -13,21 +13,53 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:neural-radiance-fields",
+        "label": "Neural Radiance Fields"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ray-marching",
+        "label": "Ray Marching"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gaussian-splatting",
+        "label": "Gaussian Splatting"
+      },
+      {
+        "id": "urn:ngm:class:3-d-gaussian-splatting",
+        "label": "3D Gaussian Splatting"
+      },
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "id": "urn:ngm:class:depth-estimation",
+        "label": "Depth Estimation"
+      }
+    ]
   },
   "wikilinks": [
     {

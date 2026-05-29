@@ -818,9 +818,9 @@ public:: true
   "@id": "urn:ngm:class:metaverse-and-telecollaboration",
   "@type": "Class",
   "label": "Metaverse and Telecollaboration",
-  "definition": "Metaverse and Telecollaboration is a spatial computing concept and a type of Metaverse.",
+  "definition": "The convergence of persistent, shared virtual environments with real-time remote collaboration technologies, enabling geographically distributed participants to interact through embodied avatars, spatial audio, and shared 3D workspaces. Metaverse telecollaboration combines immersive XR hardware, low-latency networking, avatar systems, and spatial computing to replicate the social and spatial cues of co-presence across distances.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -831,7 +831,22 @@ public:: true
       "label": "Metaverse"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:avatar-system", "label": "Avatar System"},
+      {"@id": "urn:ngm:class:latency", "label": "Latency"},
+      {"@id": "urn:ngm:class:digital-infrastructure", "label": "Digital Infrastructure"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:extended-reality-xr", "label": "Extended Reality (XR)"},
+      {"@id": "urn:ngm:class:3-d-content-pipeline", "label": "3D Content Pipeline"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:immersive-communication", "label": "Immersive Communication"},
+      {"@id": "urn:ngm:class:spatial-audio", "label": "Spatial Audio"}
+    ]
+  },
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -1837,14 +1852,20 @@ public:: true
 
 
 - ### Definition
-  - Metaverse and Telecollaboration is a concept within the ngm domain.
+  - The convergence of persistent, shared virtual environments with real-time remote collaboration technologies, enabling geographically distributed participants to interact through embodied avatars, spatial audio, and shared 3D workspaces. Metaverse telecollaboration combines immersive XR hardware, low-latency networking, avatar systems, and spatial computing to replicate the social and spatial cues of co-presence across distances.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:MetaverseAndTelecollaboration
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Avatar System]]
+  - requires [[Latency]]
+  - requires [[Digital Infrastructure]]
+  - uses [[Extended Reality (XR)]]
+  - uses [[3D Content Pipeline]]
+  - relatedTo [[Immersive Communication]]
+  - relatedTo [[Spatial Audio]]
 
 - ### Content
   - #Public page automatically published

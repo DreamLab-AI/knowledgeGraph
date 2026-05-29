@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:telethrone",
   "domain": "spatial-computing",
-  "definition": "Telrone is a spatial computing concept and a type of spatial-computing.",
+  "definition": "Telethrone is a research concept for a hyper-personal display and telepresence installation that resolves the challenge of rendering a spatially aware, photorealistic metahuman avatar for a single collocated viewer. It combines personalised 3D reconstruction from 2D imagery, gaze-contingent rendering, and situated display technology to achieve high-fidelity presence without requiring the viewer to wear head-mounted displays.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -13,21 +13,52 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:hyper-personalisation",
+        "label": "Hyper personalisation"
+      },
+      {
+        "id": "urn:ngm:class:neural-rendering",
+        "label": "Neural Rendering"
+      },
+      {
+        "id": "urn:ngm:class:display-hardware",
+        "label": "Display Hardware"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:tele020virtualrealitytelepresence",
+        "label": "TELE020virtualrealitytelepresence"
+      },
+      {
+        "id": "urn:ngm:class:tele-050-neuralrenderingtelepresence",
+        "label": "TELE 050 neuralrenderingtelepresence"
+      },
+      {
+        "id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -7,7 +7,12 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **enables** [[Model Interpretability]] — feature importance scores explain which inputs drive predictions
+  - **enables** [[Global Explanation]] — aggregated feature importance provides global model explanations
+  - **uses** [[Dimensionality Reduction]] — feature importance informs which dimensions to retain or remove
+  - **uses** [[Machine Learning]] — importance scores are computed from trained machine learning models
+  - **supports** [[AI Governance]] — feature importance evidence supports governance audits and fairness assessments
+  - **supports** [[Transparency]] — publishing feature importance increases AI system transparency
 
 - ### Content
   - Quantitative measures indicating the relative contribution or influence of individual input features on a machine learning model's predictions, enabling identification of the most critical variables driving model outputs.

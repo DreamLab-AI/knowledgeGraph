@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:pre-production",
   "domain": "spatial-computing",
-  "definition": "Pre Production is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Pre-production is the planning and preparation phase of a creative or software project that occurs before active content creation or development commences. It encompasses conceptual design, narrative structuring, technical specification, asset planning, and prototyping activities that reduce risk and align stakeholder expectations in film, game, and metaverse content pipelines.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -13,21 +13,48 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-content-creation",
+        "label": "Digital Content Creation"
+      },
+      {
+        "id": "urn:ngm:class:virtual-environment-creation",
+        "label": "Virtual Environment Creation"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:creative-tools",
+        "label": "Creative Tools"
+      },
+      {
+        "id": "urn:ngm:class:content-production-workflow",
+        "label": "Content Production Workflow"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:game-development",
+        "label": "Game Development"
+      },
+      {
+        "id": "urn:ngm:class:film-production",
+        "label": "Film Production"
+      }
+    ]
   },
   "wikilinks": [
     {

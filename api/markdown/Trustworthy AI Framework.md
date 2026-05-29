@@ -58,7 +58,7 @@ public:: true
   "@id": "urn:ngm:class:trustworthy-ai-framework",
   "@type": "Class",
   "label": "Trustworthy AI Framework",
-  "definition": "Trustworthy AI Framework is a comprehensive governance and standards framework establishing principles, requirements, and assessment processes to ensure AI systems are lawful, ical, and robust throughout their lifecycle, protecting fundamental rights while enabling beneficial innovation.",
+  "definition": "Comprehensive governance and standards framework establishing principles, requirements, and assessment processes to ensure AI systems are lawful, ethical, and technically robust throughout their lifecycle. Defined by the EU High-Level Expert Group on AI and formalised in the EU AI Act, it implements a risk-based approach with seven trustworthiness dimensions covering human oversight, safety, privacy, transparency, fairness, societal wellbeing, and accountability.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -67,7 +67,31 @@ public:: true
       "label": "AI Governance and Ethics"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
+      {"@id": "urn:ngm:class:explainability", "label": "Explainability"},
+      {"@id": "urn:ngm:class:accountability", "label": "Accountability"},
+      {"@id": "urn:ngm:class:conformity-assessment", "label": "Conformity Assessment"},
+      {"@id": "urn:ngm:class:high-risk-ai-system", "label": "High Risk AI System"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
+      {"@id": "urn:ngm:class:ai-governance-framework", "label": "AI Governance Framework"},
+      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
+      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"},
+      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"},
+      {"@id": "urn:ngm:class:trustworthy-ai", "label": "Trustworthy AI"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:ai-audit", "label": "AI Audit"},
+      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:ai-governance-principle", "label": "Ai Governance Principle"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

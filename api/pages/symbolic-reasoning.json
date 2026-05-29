@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:symbolic-reasoning",
   "domain": "artificial-intelligence",
-  "definition": "Symbolic Reasoning is a artificial intelligence concept and a type of Reasoning.",
+  "definition": "A family of AI techniques that represent knowledge as explicit symbols, rules, and logical relations and derive new conclusions through formal inference mechanisms such as resolution, forward/backward chaining, or constraint propagation. Symbolic reasoning underpins expert systems, knowledge graphs, and logic programming, and contrasts with sub-symbolic connectionist approaches while being combined with them in neuro-symbolic architectures.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -17,21 +17,65 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert Systems"
+      },
+      {
+        "id": "urn:ngm:class:logic-programming",
+        "label": "Logic Programming"
+      },
+      {
+        "id": "urn:ngm:class:fuzzy-logic",
+        "label": "Fuzzy Logic"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      }
+    ],
     "requires": [],
     "enables": [],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:chain-of-thought-reasoning",
+        "label": "Chain-of-Thought Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:mathematical-reasoning",
+        "label": "Mathematical Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:automated-planning",
+        "label": "Automated Planning"
+      }
+    ]
   },
   "wikilinks": [
     {

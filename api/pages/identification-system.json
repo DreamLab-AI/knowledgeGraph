@@ -5,10 +5,10 @@
   "public": true,
   "classIri": "urn:ngm:class:identification-system",
   "domain": "artificial-intelligence",
-  "definition": "Identification System is a artificial intelligence concept and a type of System.",
+  "definition": "An Identification System is a system that determines or confirms the identity of an entity\u2014person, device, organisation, or digital asset\u2014by collecting, processing, and evaluating identity evidence against registered credentials or biometric templates. In AI contexts, identification systems increasingly use machine learning models for biometric recognition, document verification, and behavioural profiling, raising significant questions about accuracy, fairness, and privacy.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure (Category)"
     },
     {
@@ -17,21 +17,74 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:access-control-system",
+        "label": "Access Control System"
+      },
+      {
+        "id": "urn:ngm:class:identity-systems",
+        "label": "Identity Systems"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:biometric-binding-mechanism",
+        "label": "Biometric Binding Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:identity-management-system",
+        "label": "Identity Management System"
+      },
+      {
+        "id": "urn:ngm:class:privacy-preserving-technology",
+        "label": "Privacy Preserving Technology"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-bias",
+        "label": "Algorithmic Bias"
+      }
+    ]
   },
   "wikilinks": [
     {

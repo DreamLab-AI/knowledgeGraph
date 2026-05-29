@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:octocopter",
   "domain": "robotics",
-  "definition": "Octocopter is an eight-rotor VTOL aircraft for heavy payloads.",
+  "definition": "An Octocopter is a multirotor unmanned aerial vehicle (UAV) equipped with eight independently controlled rotors arranged symmetrically around a central frame, providing significant redundancy that allows continued stable flight after individual motor failure. The eight-rotor configuration enables lift capacity substantially exceeding that of quadcopters or hexacopters, making it the preferred platform for heavy industrial payloads such as professional cinema cameras, LiDAR scanners, and precision agricultural dispensers.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-robot-type",
@@ -17,21 +17,70 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:ngm:class:robotics-control",
+        "label": "Robotics Control"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:inspection-robot",
+        "label": "Inspection Robot"
+      },
+      {
+        "id": "urn:ngm:class:aerial-robot",
+        "label": "Aerial Robot"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:quadcopter",
+        "label": "Quadcopter"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:ngm:class:swarm-robotics",
+        "label": "Swarm Robotics"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      },
+      {
+        "id": "urn:ngm:class:robotics-platform",
+        "label": "Robotics Platform"
+      },
+      {
+        "id": "urn:ngm:class:robotics-application",
+        "label": "Robotics Application"
+      }
+    ]
   },
   "wikilinks": [
     {

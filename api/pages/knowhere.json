@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:knowhere",
   "domain": "infrastructure",
-  "definition": "Knowhere is a technology infrastructure concept and a type of Tracking Technology.",
+  "definition": "KnoWhere is an AI-driven visitor attention-tracking system for museums and immersive experience spaces, using computer vision and machine vision cameras to capture gaze vectors, emotion signals, and spatial attention metrics in real time without wearables. It enables hyper-personalised narrative adaptation and provides curators with actionable behavioural analytics whilst preserving visitor privacy through anonymised data processing.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
@@ -18,16 +18,52 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:segmentation-and-identification",
+        "label": "Segmentation and Identification"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

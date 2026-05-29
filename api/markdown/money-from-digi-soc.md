@@ -1,12 +1,19 @@
 - ### Definition
-  - Money from DigiSoc is a concept within the ngm domain.
+  - A research and funding node documenting monetary theory, digital currency mechanisms, and value-exchange models relevant to digital society contexts. It examines base money, fiduciary media, cryptocurrency properties, and the interplay between decentralised and state-backed monetary systems in virtual and metaverse economies.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:MoneyFromDigiSoc
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **relatedTo** [[Cryptocurrency]] — examines cryptocurrency as an emergent form of digital base money
+  - **relatedTo** [[Digital Currency]] — covers both state-backed and decentralised digital currency models
+  - **relatedTo** [[Virtual Economy]] — connects monetary theory to virtual and metaverse economic systems
+  - **uses** [[Blockchain]] — blockchain provides the trust-minimised ledger underpinning bearer asset money
+  - **uses** [[Smart Contract]] — smart contracts enable programmable monetary rules in decentralised systems
+  - **bridgesTo** [[Decentralised Finance]] — the node's monetary analysis bridges to DeFi primitives
+  - **bridgesTo** [[Tokenomics]] — monetary properties map directly to token design considerations
+  - **dependsOn** [[Distributed Ledger]] — distributed ledger technology is the infrastructure for digital bearer assets
 
 - ### Content
   # Money in the real world

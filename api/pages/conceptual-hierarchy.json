@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:conceptual-hierarchy",
   "domain": "infrastructure",
-  "definition": "Conceptual Hierarchy is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A Conceptual Hierarchy is a structured taxonomic organisation of domain concepts into subsumption (is-a) and composition (part-of) relationships, enabling systematic knowledge representation, inheritance of properties, and semantic interoperability across robotic and autonomous systems. It supports automated reasoning, modular system design, and classification of new entities within standardised ontological frameworks.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-software-engineering",
@@ -14,7 +14,7 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,11 +23,38 @@
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:owl-class-hierarchy",
+        "label": "OWL Class Hierarchy"
+      },
+      {
+        "id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:rb-0089-risk-assessment",
   "domain": "robotics",
-  "definition": "risk assessment is a robotics and autonomous systems concept and a type of robotics.",
+  "definition": "Risk Assessment in robotics is the systematic process of identifying hazards associated with a robot system, estimating the severity and probability of potential harm, and determining whether risks are acceptable or require mitigation. It is mandated by ISO 10218-1/-2 for industrial robots and ISO 13482 for personal care robots, and forms the foundation for selecting appropriate safeguarding measures and collaborative operation modes.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-safety-and-standards",
@@ -13,13 +13,32 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:rb-0087-safety-standard",
+        "label": "rb 0087 safety standard"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:rb-0096-safeguarding",
+        "label": "rb 0096 safeguarding"
+      },
+      {
+        "id": "urn:ngm:class:rb-0103-collaborative-operation",
+        "label": "rb 0103 collaborative operation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:rb-0088-iso-13482-compliance",
+        "label": "rb 0088 iso 13482 compliance"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
@@ -27,7 +46,28 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rb-0090-emergency-stop",
+        "label": "rb 0090 emergency stop"
+      },
+      {
+        "id": "urn:ngm:class:rb-0095-safety-zone",
+        "label": "rb 0095 safety zone"
+      },
+      {
+        "id": "urn:ngm:class:rb-0100-safety-integrity-level",
+        "label": "rb 0100 safety integrity level"
+      },
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      }
+    ]
   },
   "wikilinks": [
     {

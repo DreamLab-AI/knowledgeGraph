@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:robot-kinematics",
   "domain": "robotics",
-  "definition": "Robot Kinematics - Study of robot motion without considering forces",
+  "definition": "Robot Kinematics is the mathematical study of the geometry of robot motion\u2014comprising forward kinematics (mapping joint parameters to end-effector pose) and inverse kinematics (computing joint configurations that achieve a desired pose)\u2014without regard to the forces or torques that produce that motion. It is foundational to robot programming, trajectory planning, and the design of manipulation systems.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
@@ -14,11 +14,20 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -26,8 +35,22 @@
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:surgical-robot",
+        "label": "Surgical Robot"
+      },
+      {
+        "id": "urn:ngm:class:service-robot",
+        "label": "Service Robot"
+      }
+    ]
   },
   "wikilinks": [
     {

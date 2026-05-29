@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:advice-for-developing-gen-ai",
   "domain": "artificial-intelligence",
-  "definition": "Advice for developing GenAI is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "A practitioner's phased methodology for building generative AI applications, progressing from proof-of-concept (using the best available models and rapid prototyping tools) through stakeholder validation to a robust production build, with explicit guidance on iterative evaluation, legal risk deferral, and avoidance of premature fine-tuning.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -14,20 +14,56 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "id": "urn:ngm:class:lo-ra-do-ra-etc",
+        "label": "LoRA DoRA etc"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:ai-video",
+        "label": "AI Video"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:music-and-audio",
+        "label": "Music and Audio"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      }
+    ]
   },
   "wikilinks": [
     {

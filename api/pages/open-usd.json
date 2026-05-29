@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:open-usd",
   "domain": "spatial-computing",
-  "definition": "An open-source 3-D scene description framework developed by Pixar and adopted as an industry standard for composing, simulating, and exchanging richly structured 3-D content across tools and pipelines.",
+  "definition": "OpenUSD (Universal Scene Description) is an open-source framework and file format developed by Pixar Animation Studios for composing, simulating, collaborating on, and exchanging richly structured 3D scenes across digital content creation tools and real-time rendering pipelines. USD encodes a hierarchical scene graph with support for layered composition, non-destructive overrides, and time-sampled animation, enabling multiple departments or tools to contribute to a shared scene without overwriting each other's work. OpenUSD has been adopted as the foundation for Apple's RealityKit (.usdz), NVIDIA's Omniverse platform, and the emerging ISO/IEC 22886 standard for 3D scene exchange.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:3-d-content-pipeline",
+        "label": "3D Content Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:gltf-standard",
+        "label": "Gltf Standard"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:3-d-asset",
+        "label": "3D Asset"
+      },
+      {
+        "id": "urn:ngm:class:3-d-asset-standard",
+        "label": "3D Asset Standard"
+      },
+      {
+        "id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

@@ -1,12 +1,13 @@
 - ### Definition
-  - Role reorg is a concept within the ngm domain.
+  - Role reorg denotes an organisational restructuring process in which employment or contractual arrangements are renegotiated, typically comparing permanent employment contracts with temporary or agency-based assignments across dimensions such as salary, holiday entitlement, pension eligibility, notice periods, and additional benefits. Such analysis underpins workforce planning decisions in academic and research institutions, balancing income stability against contractual flexibility and total compensation.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:RoleReorg
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **relatedTo**: Augmented Connected Workforce, Economics
+  - **contrastsWith**: civil service job
 
 - ### Content
   # Role reorg

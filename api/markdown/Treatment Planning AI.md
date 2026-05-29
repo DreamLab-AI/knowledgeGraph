@@ -54,9 +54,10 @@ public:: true
   "@id": "urn:ngm:class:treatment-planning-ai",
   "@type": "Class",
   "label": "Treatment Planning AI",
-  "definition": "Treatment Planning AI encompasses artificial intelligence systems that optimise therapeutic interventions through automated treatment selection, dosage optimisation, radiation therapy planning, surgical planning, and personalised care pathway design.",
+  "definition": "Artificial intelligence systems that optimise therapeutic interventions by integrating patient-specific clinical data, treatment guidelines, outcome predictions, and resource constraints to generate evidence-based, individualised care plans. Core capabilities include automated treatment protocol selection, dosage optimisation, radiotherapy dose distribution planning, surgical simulation, and adverse event risk stratification.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-application",
@@ -67,7 +68,23 @@ public:: true
       "label": "Medical AI"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:healthcare-records", "label": "Healthcare Records"},
+      {"@id": "urn:ngm:class:medical-diagnosis-ai", "label": "Medical Diagnosis AI"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:drug-discovery-ai", "label": "Drug Discovery AI"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:medical-ai", "label": "Medical AI"},
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -126,7 +143,10 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires**: Healthcare Records (patient-specific clinical data input), Medical Diagnosis AI (diagnosis output feeds treatment selection)
+  - **uses**: Reinforcement Learning (adaptive dosage and protocol optimisation), Deep Learning (radiotherapy dose distribution modelling)
+  - **dependsOn**: Drug Discovery AI (candidate therapeutics that treatment planning selects from)
+  - **relatedTo**: Medical AI (parent application domain), Data Governance (clinical data stewardship requirements)
 
 - ### Content
   - Treatment Planning AI encompasses artificial intelligence systems that optimise therapeutic interventions through automated treatment selection, dosage optimisation, radiation therapy planning, surgical planning, and personalised care pathway design. These systems integrate patient-specific data, treatment guidelines, outcome predictions, and resource constraints to generate evidence-based, individualised treatment plans.

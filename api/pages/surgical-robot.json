@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:surgical-robot",
   "domain": "robotics",
-  "definition": "Surgical Robot is a robotics and autonomous systems concept and a type of Service Robot.",
+  "definition": "A Surgical Robot is a teleoperated or semi-autonomous robotic system designed to assist surgeons in performing minimally invasive procedures with enhanced precision, dexterity, and haptic feedback. Systems such as the da Vinci platform translate the surgeon's hand movements\u2014filtered for tremor\u2014into sub-millimetre instrument motions within the patient's body, enabling laparoscopic, urological, and cardiac procedures through small incisions.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-robot-type",
@@ -18,19 +18,42 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:robot-kinematics",
+        "label": "Robot Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      },
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
     "relatedTo": []
   },
   "wikilinks": [

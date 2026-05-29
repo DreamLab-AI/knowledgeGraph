@@ -8,6 +8,11 @@
 
 - ### Relationships
   - is-subclass-of:: [[Tourism Industry]]
+  - requires [[Virtual Reality]]
+  - requires [[Real-Time Rendering]]
+  - uses [[Volumetric Capture]]
+  - uses [[Digital Twin]]
+  - partOf [[Metaverse]]
 
 - ### Content
 

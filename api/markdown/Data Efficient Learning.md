@@ -42,15 +42,29 @@ public:: true
   "@id": "urn:ngm:class:data-efficient-learning",
   "@type": "Class",
   "label": "Data Efficient Learning",
-  "definition": "Data Efficient Learning is a type of Artificial Intelligence in the artificial intelligence domain.",
+  "definition": "Data Efficient Learning encompasses machine learning techniques that achieve strong generalisation from limited labelled training examples, including transfer learning, few-shot learning, semi-supervised learning, data augmentation, and self-supervised pretraining. These methods address real-world constraints where large annotated datasets are impractical to obtain, making AI deployable in specialised or resource-constrained domains.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
+      {"@id": "urn:ngm:class:synthetic-data", "label": "Synthetic Data"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:active-learning", "label": "Active Learning"},
+      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:curriculum-learning", "label": "Curriculum Learning"},
+      {"@id": "urn:ngm:class:contrastive-learning", "label": "Contrastive Learning"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -87,23 +101,33 @@ public:: true
 
 
 - ### Definition
-  - Data Efficient Learning is a concept within the ai domain. Further enrichment pending.
+  - Data Efficient Learning encompasses machine learning techniques that achieve strong generalisation from limited labelled training examples, including transfer learning, few-shot learning, semi-supervised learning, data augmentation, and self-supervised pretraining. These methods address real-world constraints where large annotated datasets are impractical to obtain, making AI deployable in specialised or resource-constrained domains.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:DataEfficientLearning
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses [[Transfer Learning]]
+  - uses [[Synthetic Data]]
+  - enables [[Active Learning]]
+  - enables [[Federated Learning]]
+  - relatedTo [[Curriculum Learning]]
+  - relatedTo [[Contrastive Learning]]
 
 - ### Content
 
   ## Overview
 
-  Data Efficient Learning represents an abstract concept in the ai ontology hierarchy.
+  Data Efficient Learning encompasses machine learning techniques that achieve strong generalisation from limited labelled training examples. Core strategies include transfer learning (reusing representations from pretrained models), self-supervised pretraining (learning from unlabelled data through auxiliary tasks), active learning (querying informative samples), data augmentation (artificially expanding training distributions), and curriculum learning (ordering examples by difficulty). Synthetic data generation via generative models further reduces the dependency on expensive human annotation. These approaches are foundational in specialised domains such as medical imaging, rare event detection, and robotics, where large labelled corpora are unavailable. Federated learning extends data-efficient principles to distributed settings by training across decentralised data without centralisation. Contrastive learning methods like SimCLR and MoCo have demonstrated that powerful representations can emerge with minimal supervision, narrowing the gap between supervised and self-supervised performance benchmarks.
 
   #### Related Concepts
-  - [[owl:Thing]]
+  - [[Transfer Learning]]
+  - [[Synthetic Data]]
+  - [[Active Learning]]
+  - [[Federated Learning]]
+  - [[Curriculum Learning]]
+  - [[Contrastive Learning]]
 
 - ### Provenance
   - sources::

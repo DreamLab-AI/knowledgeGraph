@@ -1,12 +1,15 @@
 - ### Definition
-  - Runes and Glyphs is a concept within the ngm domain.
+  - Runes and Glyphs refers to two complementary Bitcoin token protocols: Runes, which encodes fungible token balances directly in Bitcoin transaction outputs using OP_RETURN data, and Glyphs, a related protocol developed by Melvin Carvalho that encodes token metadata as on-chain inscriptions compatible with the Ordinals framework. Together they extend Bitcoin's base layer with native fungible asset issuance without requiring a separate blockchain, enabling DAOs, project tokens, and programmable digital objects on Bitcoin testnet and mainnet.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:RunesAndGlyphs
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **partOf**: Blockchain
+  - **uses**: Digital Objects, NFT
+  - **enables**: Digital Asset, Asset Tokenization
+  - **relatedTo**: Decentralised Autonomous Organisation
 
 - ### Content
   - ![the-future-of-bitcoin-2-tokens.pdf](../assets/the-future-of-bitcoin-2-tokens_1723564035683_0.pdf)

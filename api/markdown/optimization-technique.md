@@ -1,12 +1,14 @@
 - ### Definition
-  - OptimizationTechnique is a concept within the ngm domain.
+  - A systematic method applied to improve computational performance, memory efficiency, or rendering throughput in metaverse and spatial computing infrastructure. Optimisation techniques span algorithmic improvements (level-of-detail, culling, compression), hardware utilisation strategies (GPU parallelism, cache coherence), and software-level approaches (batching, shader optimisation) that collectively reduce latency and resource consumption.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:OptimizationTechnique
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses: [[GPU Compute]], [[Data Compression]]
+  - enables: [[Rendering Pipeline]], [[Metaverse Infrastructure]]
+  - supports: [[Optimization Algorithms]], [[Latency]]
 
 - ### Content
   # OptimizationTechnique

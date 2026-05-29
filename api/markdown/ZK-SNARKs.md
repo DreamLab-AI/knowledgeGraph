@@ -48,7 +48,7 @@ public:: true
   "label": "ZK-SNARKs",
   "definition": "Zero-Knowledge Succinct Non-Interactive Arguments of Knowledge - a cryptographic proof system enabling one party to prove possession of information without revealing the information itself, characterized by small proof sizes, fast verification, and no interaction required between prover and verif...",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
@@ -59,6 +59,21 @@ public:: true
       "label": "Zero Knowledge Proof"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"},
+      {"@id": "urn:ngm:class:elliptic-curve-cryptography", "label": "Elliptic Curve Cryptography"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:privacy", "label": "Privacy"},
+      {"@id": "urn:ngm:class:confidential-computing", "label": "Confidential Computing"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:homomorphic-encryption", "label": "Homomorphic Encryption"},
+      {"@id": "urn:ngm:class:identity", "label": "Identity"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
@@ -109,6 +124,13 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Zero Knowledge Proof]]
+  - requires [[Cryptography]]
+  - requires [[Elliptic Curve Cryptography]]
+  - enables [[Privacy]]
+  - enables [[Confidential Computing]]
+  - relatedTo [[Blockchain]]
+  - relatedTo [[Homomorphic Encryption]]
+  - relatedTo [[Identity]]
 
 - ### Content
 

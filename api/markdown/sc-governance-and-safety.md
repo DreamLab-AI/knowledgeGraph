@@ -26,7 +26,7 @@ public:: true
   "@type": "Class",
   "@id": "urn:ngm:class:sc-governance-and-safety",
   "label": "Governance and Safety",
-  "definition": "Intermediate taxonomy category for governance and safety concepts within the spatial computing domain.",
+  "definition": "Taxonomy hub for governance, safety, regulation, and privacy concepts within the spatial computing domain, encompassing frameworks for responsible XR and metaverse deployment, data protection, content moderation, risk management, and user safety standards.",
   "domain": "spatial-computing",
   "subClassOf": [
     {
@@ -34,8 +34,29 @@ public:: true
       "label": "Spatial Computing"
     }
   ],
-  "relations": {},
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy By Design"},
+      {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"},
+      {"@id": "urn:ngm:class:content-moderation", "label": "Content Moderation"},
+      {"@id": "urn:ngm:class:user-safety", "label": "User Safety"},
+      {"@id": "urn:ngm:class:digital-safety", "label": "Digital Safety"},
+      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"},
+      {"@id": "urn:ngm:class:metaverse-and-spatial-risks", "label": "Metaverse and Spatial Risks"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:sc-standards-and-interop", "label": "Standards and Interoperability"},
+      {"@id": "urn:ngm:class:sc-platform-and-environment", "label": "Platform and Environment"},
+      {"@id": "urn:ngm:class:regulatory-framework", "label": "Regulatory Framework"},
+      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"},
+      {"@id": "urn:ngm:class:privacy-framework", "label": "Privacy Framework"}
+    ]
+  },
   "qualityScore": 0.8,
+  "quality": 0.8,
   "maturity": "established"
 }
 ```

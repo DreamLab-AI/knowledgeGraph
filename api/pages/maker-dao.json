@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:maker-dao",
   "domain": "blockchain",
-  "definition": "A decentralised autonomous organisation on Ethereum that governs the Maker Protocol, enabling users to generate the DAI stablecoin by locking collateral in smart-contract vaults.",
+  "definition": "MakerDAO is a decentralised autonomous organisation on the Ethereum blockchain that governs the Maker Protocol, a smart-contract system enabling users to generate the DAI stablecoin by locking over-collateralised assets in collateralised debt positions (CDPs, also called Vaults). Governance decisions\u2014including collateral onboarding, risk parameters, and stability fees\u2014are made by MKR token holders through on-chain voting. MakerDAO is a foundational component of the decentralised finance (DeFi) ecosystem and one of the earliest large-scale deployments of DAO governance coordinating billions of dollars of collateral.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-defi-and-economics",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:dao",
+        "label": "DAO"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

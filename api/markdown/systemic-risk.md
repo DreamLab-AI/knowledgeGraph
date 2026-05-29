@@ -7,7 +7,13 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Risk Assessment]]
+  - requires [[Adversarial Testing]]
+  - enables [[Red Teaming]]
+  - enables [[Conformity Assessment]]
+  - relatedTo [[AI Regulation]]
+  - relatedTo [[Human Oversight]]
+  - relatedTo [[Cybersecurity]]
 
 - ### Content
   - Risk specific to high-impact capabilities of general-purpose AI models with significant impact on the Union market due to reach, or actual or foreseeable negative effects on public health, safety, fundamental rights, environment, democracy, or rule of law.

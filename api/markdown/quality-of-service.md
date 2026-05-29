@@ -1,12 +1,17 @@
 - ### Definition
-  - QualityOfService is a concept within the ngm domain.
+  - A set of network management techniques and policies that prioritise, control, and guarantee specified performance characteristics—including latency, jitter, bandwidth, and packet loss—for different traffic classes. In metaverse and real-time XR applications, QoS mechanisms are critical for maintaining acceptable user experience under variable network load.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:QualityOfService
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Requires [[Network Infrastructure]]
+  - Requires [[Network Protocol]]
+  - Enables [[Real Time]]
+  - Enables [[Telecollaboration]]
+  - Related To [[Latency]]
+  - Related To [[Bandwidth Adaptation]]
 
 - ### Content
   # QualityOfService

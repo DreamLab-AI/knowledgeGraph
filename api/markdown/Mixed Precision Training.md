@@ -44,13 +44,26 @@ public:: true
   "label": "Mixed Precision Training",
   "definition": "A training technique that uses lower precision (FP16) for most computations whilst maintaining higher precision (FP32) for critical operations, reducing memory usage and increasing training speed without sacrificing model quality.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:hardware-acceleration", "label": "Hardware Acceleration"},
+      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:neural-network-quantisation", "label": "Neural Network Quantisation"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -95,7 +108,11 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires:: [[Hardware Acceleration]]
+  - requires:: [[GPU Compute]]
+  - enables:: [[Model Training]]
+  - enables:: [[Large Language Models]]
+  - contrastsWith:: [[Neural Network Quantisation]]
 
 - ### Content
   - A training technique that uses lower precision (FP16) for most computations whilst maintaining higher precision (FP32) for critical operations, reducing memory usage and increasing training speed without sacrificing model quality. Mixed precision training leverages modern GPU tensor cores for significant speedups.

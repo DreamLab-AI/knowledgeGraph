@@ -5,33 +5,92 @@
   "public": true,
   "classIri": "urn:ngm:class:module",
   "domain": "artificial-intelligence",
-  "definition": "Module is a artificial intelligence concept and a type of Component.",
+  "definition": "A Module is a self-contained, reusable unit of software or system design that encapsulates a discrete set of related functions, data structures, or responsibilities behind a well-defined interface, enabling independent development, testing, deployment, and composition within larger systems. Modules promote separation of concerns, reduce coupling between system components, and support both horizontal reuse across different systems and vertical composition within a single system architecture. In AI contexts, a module may refer to a functional unit within a model architecture (e.g., an attention module, an adapter module) or a deployable component in an AI pipeline.",
   "subClassOf": [
-    {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
-    },
     {
       "id": "urn:ngm:class:component",
       "label": "Component"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:component",
+        "label": "Component"
+      },
+      {
+        "id": "urn:ngm:class:interface",
+        "label": "Interface"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:interface",
+        "label": "Interface"
+      },
+      {
+        "id": "urn:ngm:class:configuration",
+        "label": "Configuration"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:software-architecture",
+        "label": "Software Architecture"
+      },
+      {
+        "id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:service-layer",
+        "label": "Service Layer"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:architecture",
+        "label": "Architecture"
+      },
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:adapter-modules",
+        "label": "Adapter Modules"
+      },
+      {
+        "id": "urn:ngm:class:model-architecture",
+        "label": "Model Architecture"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:software-library",
+        "label": "Software Library"
+      }
+    ]
   },
   "wikilinks": [
     {

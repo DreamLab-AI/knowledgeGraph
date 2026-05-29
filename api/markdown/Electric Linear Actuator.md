@@ -46,7 +46,7 @@ public:: true
   "@id": "urn:ngm:class:electric-linear-actuator",
   "@type": "Class",
   "label": "Electric Linear Actuator",
-  "definition": "Electric linear actuator converts rotary motion to linear motion using screw, belt, or rack-pinion.",
+  "definition": "An actuator that converts rotary electrical motor output into controlled linear displacement using a mechanical transmission such as a lead screw, rack-and-pinion, or belt drive. Electric linear actuators offer precise position control, programmable stroke lengths, and clean operation, making them preferable to pneumatic or hydraulic counterparts in many robotics and automation applications.",
   "domain": "robotics",
   "maturity": "established",
   "subClassOf": [
@@ -59,7 +59,27 @@ public:: true
       "label": "Electric Actuator"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:lead-screw-actuator", "label": "Lead Screw Actuator"},
+      {"@id": "urn:ngm:class:rack-and-pinion-actuator", "label": "Rack and Pinion Actuator"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:pneumatic-actuator", "label": "Pneumatic Actuator"},
+      {"@id": "urn:ngm:class:hydraulic-actuator", "label": "Hydraulic Actuator"},
+      {"@id": "urn:ngm:class:servo-motor", "label": "Servo Motor"},
+      {"@id": "urn:ngm:class:stepper-motor", "label": "Stepper Motor"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:electric-motor", "label": "Electric Motor"},
+      {"@id": "urn:ngm:class:position-control", "label": "PositionControl"},
+      {"@id": "urn:ngm:class:motion-control", "label": "Motion Control"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:parallel-robot", "label": "Parallel Robot"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

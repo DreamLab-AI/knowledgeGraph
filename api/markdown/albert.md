@@ -8,6 +8,10 @@
 
 - ### Relationships
   - bridges-to:: [[AI Agent System]]
+  - uses:: [[Transformer Architecture]], [[Natural Language Processing]]
+  - enables:: [[Fine Tuning]], [[Transfer Learning]]
+  - contrastsWith:: [[RoBERTa]]
+  - relatedTo:: [[Large Language Models]], [[LoRA DoRA etc]]
 
 - ### Content
   - A Lite BERT: a parameter-efficient variant of BERT that uses factorised embedding parameterisation and cross-layer parameter sharing to reduce model size whilst maintaining or improving performance.

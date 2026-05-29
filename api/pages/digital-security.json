@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:digital-security",
   "domain": "spatial-computing",
-  "definition": "Digital Security is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Digital Security encompasses the technical controls, protocols, and governance frameworks protecting digital systems, data, and identities from unauthorised access, tampering, and exploitation. It integrates cryptographic mechanisms, access management policies, threat detection, and incident response to ensure confidentiality, integrity, and availability of digital assets and infrastructure across networked environments.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-governance-and-safety",
@@ -13,21 +13,53 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-security",
+        "label": "Cryptographic Security"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      },
+      {
+        "id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:data-security",
+        "label": "Data Security"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-security",
+        "label": "AI Security"
+      }
+    ]
   },
   "wikilinks": [
     {

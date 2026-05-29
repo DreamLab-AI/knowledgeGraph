@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ru-v-agents",
   "domain": "infrastructure",
-  "definition": "RuV Agents is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "RuV Agents refers to the ruv-swarm agent framework developed within the ruv-FANN project, providing a multi-agent orchestration layer for coordinating LLM-backed autonomous agents across tasks such as coding, research, and data processing. The framework integrates with inference APIs and supports rate-limit bypass strategies through unified LLM platform routing. It represents a practical implementation of multi-agent coordination patterns for software engineering and knowledge-work automation.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-agents",
+        "label": "AI Agents"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-ai-agents",
+        "label": "Autonomous AI Agents"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": []

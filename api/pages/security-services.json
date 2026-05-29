@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:security-services",
   "domain": "spatial-computing",
-  "definition": "Security Services is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Security Services are the technical and organisational mechanisms that protect spatial computing platforms from unauthorised access, data breaches, and malicious activity. They encompass authentication, encryption, access control, and identity management components that collectively enforce security policies across metaverse, cloud, and immersive technology deployments.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-governance-and-safety",
@@ -14,17 +14,44 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": []

@@ -46,20 +46,50 @@ public:: true
   "@id": "urn:ngm:class:audio-processing-system",
   "@type": "Class",
   "label": "Audio Processing System",
-  "definition": "Audio Processing System is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "An Audio Processing System is a hardware or software subsystem responsible for capturing, transforming, and rendering audio signals within spatial computing environments. It encompasses digital signal processing, spatial audio rendering (binaural, ambisonics, HRTF), noise cancellation, speech recognition integration, and real-time mixing for immersive presence.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-display-and-rendering",
       "label": "Display and Rendering"
     }
   ],
-  "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:audio-spatialization",
+        "label": "Audio Spatialization"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:audio-technology",
+        "label": "Audio Technology"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "@id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:audio-system",
+        "label": "Audio System"
+      }
+    ]
   }
 }
 ```
@@ -96,14 +126,18 @@ public:: true
 
 
 - ### Definition
-  - Audio Processing System is a concept within the metaverse domain. Further enrichment pending.
+  - An Audio Processing System is a hardware or software subsystem responsible for capturing, transforming, and rendering audio signals within spatial computing environments. It encompasses digital signal processing, spatial audio rendering (binaural, ambisonics, HRTF), noise cancellation, speech recognition integration, and real-time mixing for immersive presence.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:AudioProcessingSystem
   - owl-role:: concept
 
 - ### Relationships
-  - bridges-to:: [[Telepresence]] (tc)
+  - Uses [[Signal Processing]] for filtering, encoding, and real-time transformation of audio streams
+  - Uses [[Speech Recognition]] for voice command and transcription integration
+  - Has part [[Audio Spatialization]] as the spatial rendering subsystem
+  - Enables [[Audio Technology]] as its practical realisation domain
+  - Related to [[Audio System]] as the broader architectural category
 
 - ### Content
 

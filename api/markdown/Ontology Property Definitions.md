@@ -62,7 +62,7 @@ public:: true
   "@id": "urn:ngm:class:ontology-property-definitions",
   "@type": "Class",
   "label": "Ontology Property Definitions",
-  "definition": "Comprehensive definitions of object properties and datatype properties used throughout the Disruptive Technology Ontology, establishing formal semantic relationships between concepts across AI, blockchain, robotics, and metaverse domains.",
+  "definition": "Comprehensive definitions of object properties and datatype properties used throughout the Disruptive Technology Ontology, establishing formal semantic relationships between concepts across AI, blockchain, robotics, and metaverse domains. Properties define typed, directional links (enables, requires, hasPart, uses, etc.) with explicit domains, ranges, inverse relationships, and logical characteristics enabling automated reasoning and knowledge graph traversal.",
   "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": [
@@ -71,7 +71,26 @@ public:: true
       "label": "Software Engineering"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:ontology-structure", "label": "Ontology Structure"},
+      {"@id": "urn:ngm:class:ontology-definition", "label": "Ontology Definition"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"},
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
+      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"},
+      {"@id": "urn:ngm:class:semantic-web-standards", "label": "Semantic Web Standards"},
+      {"@id": "urn:ngm:class:domain-ontology", "label": "Domain Ontology"},
+      {"@id": "urn:ngm:class:owl-class-hierarchy", "label": "OWL Class Hierarchy"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:blockchain-domain", "label": "Blockchain Domain"},
+      {"@id": "urn:ngm:class:artificial-intelligence-domain", "label": "Artificial Intelligence Domain"},
+      {"@id": "urn:ngm:class:robotics-domain", "label": "Robotics Domain"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

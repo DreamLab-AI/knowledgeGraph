@@ -42,15 +42,33 @@ public:: true
   "@id": "urn:ngm:class:blockchain-process",
   "@type": "Class",
   "label": "Blockchain Process",
-  "definition": "Blockchain Process is a blockchain and distributed systems concept and a type of blockchain.",
+  "definition": "Blockchain Process encompasses the operational workflows and procedural mechanisms that govern blockchain network functioning, including consensus execution, block validation, transaction verification, mempool management, state transitions, and protocol upgrade procedures. These processes collectively maintain network integrity and enable trustless distributed agreement.",
   "domain": "blockchain",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-network-component",
       "label": "Network Component"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
+      {"@id": "urn:ngm:class:bc-cryptographic-primitive", "label": "Cryptographic Primitive"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:consensus-protocol", "label": "Consensus Protocol"},
+      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:blockchain-domain", "label": "Blockchain Domain"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"},
+      {"@id": "urn:ngm:class:blockchain-scalability", "label": "Blockchain Scalability"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -95,6 +113,10 @@ public:: true
 
 - ### Relationships
   - bridges-to:: [[Blockchain]]
+  - requires:: [[Consensus Mechanism]], [[Cryptographic Primitive]]
+  - uses:: [[Consensus Protocol]], [[Blockchain Network]]
+  - part-of:: [[Blockchain Domain]]
+  - enables:: [[Blockchain Transaction]], [[Blockchain Scalability]]
 
 - ### Content
 

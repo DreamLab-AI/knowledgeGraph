@@ -78,9 +78,10 @@ public:: true
   "@id": "urn:ngm:class:goal",
   "@type": "Class",
   "label": "Goal",
-  "definition": "Goal is a artificial intelligence concept and a type of Objective.",
+  "definition": "A desired future state that an agent aims to realise through planned action sequences. Goals are declarative, future-oriented, and action-guiding; they encompass achievement, maintenance, optimisation, and avoidance types, and are managed in hierarchies that decompose complex objectives into sub-goals. In AI systems, goal specification is central to alignment: misspecified goals produce unintended consequences regardless of capability.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
@@ -91,7 +92,23 @@ public:: true
       "label": "Objective"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:agent", "label": "Agent"},
+      {"@id": "urn:ngm:class:bdi-model", "label": "BDI Model"},
+      {"@id": "urn:ngm:class:autonomy-level", "label": "Autonomy Level"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:value-alignment", "label": "Value Alignment"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:ai-agent-system", "label": "AI Agent System"},
+      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:bdi-model", "label": "BDI Model"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -177,7 +194,7 @@ public:: true
 
 
 - ### Definition
-  - Goal is a concept within the ai domain.
+  - A desired future state that an agent aims to realise through planned action sequences. Goals are declarative, future-oriented, and action-guiding; they encompass achievement, maintenance, optimisation, and avoidance types, and are managed in hierarchies that decompose complex objectives into sub-goals. In AI systems, goal specification is central to alignment: misspecified goals produce unintended consequences regardless of capability.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:Goal
@@ -185,6 +202,10 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Artificial Intelligence]]
+  - **relatedTo**: Agent, BDI Model, Autonomy Level — goals are the desire component of BDI agents and scale in complexity with autonomy level
+  - **requires**: Value Alignment — correct goal specification requires alignment with human values to prevent misaligned instrumental behaviour
+  - **enables**: AI Agent System, Agentic AI — goal-directed reasoning is the foundation of all agentic system designs
+  - **partOf**: BDI Model — goals constitute the Desire layer of the Belief-Desire-Intention architecture
 
 - ### Content
 

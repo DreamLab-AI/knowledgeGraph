@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:user-education",
   "domain": "spatial-computing",
-  "definition": "User Education is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Structured programmes, tutorials, and onboarding materials that build user competencies in operating spatial computing platforms, XR devices, and metaverse applications, including safety guidance, digital literacy, and skill development delivered through interactive or immersive pedagogic methods.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -13,21 +13,48 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:education-metaverse",
+        "label": "Education Metaverse"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:education-technology",
+        "label": "Education Technology"
+      },
+      {
+        "id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:courses-and-training",
+        "label": "Courses and Training"
+      },
+      {
+        "id": "urn:ngm:class:education-and-ai",
+        "label": "Education and AI"
+      },
+      {
+        "id": "urn:ngm:class:virtual-experience",
+        "label": "Virtual Experience"
+      }
+    ]
   },
   "wikilinks": [
     {

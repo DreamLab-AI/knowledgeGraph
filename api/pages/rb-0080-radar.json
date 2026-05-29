@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:rb-0080-radar",
   "domain": "robotics",
-  "definition": "radar is a robotics and autonomous systems concept and a type of Sensor.",
+  "definition": "Radar (Radio Detection and Ranging) is an active sensing technology that emits radio-frequency electromagnetic pulses and detects reflected returns to measure the range, velocity, and bearing of objects in the environment. In robotics, radar sensors provide reliable obstacle detection and velocity estimation across diverse weather and lighting conditions where cameras and LiDAR may degrade, making them particularly valuable for autonomous ground vehicles, drones, and safety-critical proximity monitoring in industrial settings.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-perception",
@@ -17,21 +17,56 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:rb-0052-collision-avoidance",
+        "label": "rb 0052 collision avoidance"
+      },
+      {
+        "id": "urn:ngm:class:proximity-detection",
+        "label": "Proximity Detection"
+      },
+      {
+        "id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:rb-0077-depth-camera",
+        "label": "rb 0077 depth camera"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rb-0069-lidar",
+        "label": "rb 0069 lidar"
+      },
+      {
+        "id": "urn:ngm:class:rb-0075-range-finder",
+        "label": "rb 0075 range finder"
+      },
+      {
+        "id": "urn:ngm:class:rb-0066-robot-sensor",
+        "label": "rb 0066 robot sensor"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ]
   },
   "wikilinks": [
     {

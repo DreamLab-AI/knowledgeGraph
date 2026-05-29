@@ -6,8 +6,12 @@
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
-
+  - hasPart:: [[Consensus Mechanism]]
+  - hasPart:: [[Blockchain Network]]
+  - enables:: [[Blockchain]]
+  - enables:: [[Distributed Ledger]]
+  - requires:: [[Cryptographic Hash]]
+  - requires:: [[Data Replication]]
   - bridges-to:: [[Blockchain]] (bc)
 - ### Content
 

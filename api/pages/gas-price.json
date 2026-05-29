@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:gas-price",
   "domain": "blockchain",
-  "definition": "Cost per gas unit within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "Gas Price is the amount of cryptocurrency (denominated in gwei on Ethereum) that a transaction sender is willing to pay per unit of gas consumed during execution. It serves as the primary market mechanism for prioritising transactions within a block and compensating validators or miners for computational work. Gas price interacts with the gas limit and base fee to determine total transaction cost, and is subject to dynamic adjustment under fee-market protocols such as EIP-1559.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-defi-and-economics",
@@ -17,17 +17,57 @@
     },
     {
       "id": "urn:ngm:class:economic-mechanism",
-      "label": "EconomicMechanism"
+      "label": "Economic Mechanism"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:base-fee",
+        "label": "Base Fee"
+      },
+      {
+        "id": "urn:ngm:class:priority-fee",
+        "label": "Priority Fee"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gas",
+        "label": "Gas"
+      },
+      {
+        "id": "urn:ngm:class:gas-limit",
+        "label": "Gas Limit"
+      },
+      {
+        "id": "urn:ngm:class:transaction",
+        "label": "Transaction"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:fee-market",
+        "label": "Fee Market"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:mempool",
+        "label": "Mempool"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
@@ -35,7 +75,36 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:eip-1559",
+        "label": "EIP-1559"
+      },
+      {
+        "id": "urn:ngm:class:miner",
+        "label": "Miner"
+      },
+      {
+        "id": "urn:ngm:class:transaction-fee",
+        "label": "Transaction Fee"
+      },
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      }
+    ]
   },
   "wikilinks": [
     {

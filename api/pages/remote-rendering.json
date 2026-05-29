@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:remote-rendering",
   "domain": "infrastructure",
-  "definition": "Remote Rendering is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Remote Rendering offloads GPU-intensive 3D scene computation to a server or cloud node, streaming compressed video frames to a thin client such as an XR headset or mobile device. This approach decouples visual fidelity from device hardware constraints, enabling photorealistic graphics on low-power endpoints while centralising GPU resources. Latency and bandwidth are critical quality-of-service parameters; edge computing deployments minimise round-trip delay to support interactive frame rates.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
@@ -14,16 +14,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:photorealistic-rendering",
+        "label": "Photorealistic Rendering"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      },
+      {
+        "id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

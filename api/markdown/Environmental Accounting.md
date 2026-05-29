@@ -42,9 +42,10 @@ public:: true
   "@id": "urn:ngm:class:environmental-accounting",
   "@type": "Class",
   "label": "Environmental Accounting",
-  "definition": "Environmental Accounting is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "A systematic framework for measuring, tracking, and reporting the environmental costs and impacts associated with economic activities, extending traditional financial accounting to incorporate natural capital, carbon emissions, resource consumption, and waste generation. Environmental accounting supports sustainability reporting, regulatory compliance, and circular economy transitions.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
@@ -56,6 +57,40 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:environmental-sustainability",
+        "label": "Environmental Sustainability"
+      },
+      {
+        "@id": "urn:ngm:class:sustainability-reporting",
+        "label": "SustainabilityReporting"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:environmental-impact-metric",
+        "label": "Environmental Impact Metric"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:environmental-assessment",
+        "label": "Environmental Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:waste-management",
+        "label": "Waste Management"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:circular-economy",
+        "label": "Circular Economy"
+      }
+    ]
   }
 }
 ```
@@ -87,14 +122,19 @@ public:: true
 
 
 - ### Definition
-  - Environmental Accounting is a concept within the metaverse domain. Further enrichment pending.
+  - A systematic framework for measuring, tracking, and reporting the environmental costs and impacts associated with economic activities, extending traditional financial accounting to incorporate natural capital, carbon emissions, resource consumption, and waste generation. Environmental accounting supports sustainability reporting, regulatory compliance, and circular economy transitions.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:EnvironmentalAccounting
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Enables [[Environmental Sustainability]]
+  - Enables [[SustainabilityReporting]]
+  - Uses [[Environmental Impact Metric]]
+  - Supports [[Circular Economy]]
+  - Related To [[Environmental Assessment]]
+  - Related To [[Waste Management]]
 
 - ### Content
 

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:healthcare-ai",
   "domain": "artificial-intelligence",
-  "definition": "The application of artificial intelligence techniques\u2014including machine learning, NLP, and computer vision\u2014to clinical decision support, medical imaging analysis, and patient outcome prediction.",
+  "definition": "Healthcare AI is the systematic application of machine learning, natural language processing, computer vision, and large language models to clinical and operational problems in healthcare\u2014including diagnostic imaging analysis, clinical decision support, drug discovery, genomic interpretation, and patient outcome prediction. The field operates under stringent regulatory oversight (FDA, MHRA, MDR) requiring prospective clinical validation, post-market surveillance, and clear human-AI workflow integration to ensure patient safety. Fairness, explainability, and bias auditing are central concerns given the high-stakes nature of clinical decisions.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-application",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:clinical-decision-support",
+        "label": "Clinical Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:medical-imaging",
+        "label": "Medical Imaging"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:radiology-ai",
+        "label": "Radiology AI"
+      },
+      {
+        "id": "urn:ngm:class:pathology-ai",
+        "label": "Pathology AI"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

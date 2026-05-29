@@ -5,7 +5,10 @@
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires** → [[Authentication]], [[Encryption]], [[Identity and Access Management]]
+  - **enables** → [[Privacy]], [[Cybersecurity]]
+  - **contrastsWith** → [[Threat Actor]], [[Attack Vector]]
+  - **supports** → [[Zero Trust Architecture]], [[Security Framework]]
 - ### Content
   - The protection of AI systems and their components against unauthorized access, manipulation, disruption, or exploitation, encompassing confidentiality, integrity, and availability of data, models, and infrastructure throughout the AI lifecycle.
   - ### **VMesh**

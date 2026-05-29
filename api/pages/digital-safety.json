@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:digital-safety",
   "domain": "spatial-computing",
-  "definition": "Digital Safety is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Digital Safety encompasses the policies, technical controls, and design practices that protect individuals from harm in digital and spatial computing environments, including cybersecurity threats, privacy violations, online harassment, and misuse of immersive technologies. It applies governance frameworks, access controls, and content moderation mechanisms to ensure safe participation across metaverse, VR, and telecollaboration platforms.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-governance-and-safety",
@@ -14,11 +14,29 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +45,16 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:digital-rights",
+        "label": "Digital Rights"
+      }
+    ]
   },
   "wikilinks": [
     {

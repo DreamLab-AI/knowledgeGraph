@@ -46,7 +46,7 @@ public:: true
   "@id": "urn:ngm:class:avatar-behavior",
   "@type": "Class",
   "label": "Avatar Behavior",
-  "definition": "Behavioral patterns of avatars and NPCs, often driven by AI/ML.",
+  "definition": "The set of behavioural patterns, animation responses, and interactive capabilities that govern how avatars and NPCs act in virtual environments, driven by AI/ML inference, procedural animation, inverse kinematics, facial expression synthesis, and real-time response to user inputs and social context.",
   "domain": "spatial-computing",
   "maturity": "established",
   "subClassOf": [
@@ -59,7 +59,28 @@ public:: true
       "label": "Metaverse"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:avatar", "label": "Avatar"},
+      {"@id": "urn:ngm:class:avatar-system", "label": "Avatar System"},
+      {"@id": "urn:ngm:class:ai-avatars", "label": "AI Avatars"},
+      {"@id": "urn:ngm:class:intelligent-npc", "label": "Intelligent NPC"},
+      {"@id": "urn:ngm:class:digital-human-technology", "label": "Digital Human Technology"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:inverse-kinematics", "label": "Inverse Kinematics"},
+      {"@id": "urn:ngm:class:animation-retargeting", "label": "Animation Retargeting"},
+      {"@id": "urn:ngm:class:behavioral-modeling", "label": "Behavioral Modeling"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:social-presence", "label": "Social Presence"},
+      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

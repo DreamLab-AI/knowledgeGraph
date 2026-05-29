@@ -33,15 +33,28 @@ public:: true
   "@id": "urn:ngm:class:web-bookmarks",
   "@type": "Class",
   "label": "Web Bookmarks",
-  "definition": "Web Bookmarks is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A curated collection of saved hyperlinks to external web resources, serving as a personal or shared reference library for articles, tools, and research material. In knowledge management contexts, web bookmarks act as annotated entry points linking internal knowledge graphs to external sources.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:knowledge-management", "label": "Knowledge Management"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:knowledge-base", "label": "Knowledge Base"},
+      {"@id": "urn:ngm:class:web-technology", "label": "Web Technology"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:web-dev-and-consumer-tooling", "label": "Web Dev and Consumer Tooling"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -72,14 +85,16 @@ public:: true
 
 
 - ### Definition
-  - Web Bookmarks is a concept within the ngm domain.
+  - A curated collection of saved hyperlinks to external web resources, serving as a personal or shared reference library for articles, tools, and research material. In knowledge management contexts, web bookmarks act as annotated entry points linking internal knowledge graphs to external sources.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:WebBookmarks
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **Part-of**: [[Knowledge Management]] reference system
+  - **Related-to**: [[Knowledge Base]], [[Web Technology]]
+  - **Uses**: [[Web Dev and Consumer Tooling]]
 
 - ### Content
   # Articles

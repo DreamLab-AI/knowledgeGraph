@@ -4,7 +4,9 @@
   - owl-class:: infrastructure:Interfaces
   - owl-role:: Concept
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: [[Node based visual interfaces]], [[Large Language Models]]
+  - **enables**: [[Agents]], [[Hardware and Edge]]
+  - **relatedTo**: [[User Interface]], [[API Gateway]]
 - ### Content
   - # Node based
   - [Rivet (ironcladapp.com)](https://rivet.ironcladapp.com/) is a [[Interfaces]] for [[Infrastructure]] [[Hardware and Edge]] based [[Agents]] using [[Large Language Models]]

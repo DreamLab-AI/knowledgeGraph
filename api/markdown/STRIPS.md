@@ -42,9 +42,10 @@ public:: true
   "@id": "urn:ngm:class:strips",
   "@type": "Class",
   "label": "STRIPS",
-  "definition": "STRIPS is a artificial intelligence concept and a type of Knowledge Representation.",
+  "definition": "STRIPS (Stanford Research Institute Problem Solver) is a classical automated planning formalism that represents world states as conjunctions of propositions and defines actions via precondition, add-list, and delete-list operators. It introduced the core abstraction underlying modern planning languages such as PDDL and remains foundational to symbolic AI planning.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
@@ -55,11 +56,36 @@ public:: true
       "label": "Knowledge Representation"
     }
   ],
-  "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:automated-planning",
+        "label": "Automated Planning"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ]
   }
 }
 ```
@@ -91,14 +117,17 @@ public:: true
 
 
 - ### Definition
-  - STRIPS is a concept within the ai domain.
+  - STRIPS (Stanford Research Institute Problem Solver) is a classical automated planning formalism that represents world states as conjunctions of propositions and defines actions via precondition, add-list, and delete-list operators. It introduced the core abstraction underlying modern planning languages such as PDDL and remains foundational to symbolic AI planning.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:Strips
   - owl-role:: Concept
 
 - ### Relationships
-  - is-subclass-of:: [[Knowledge Representation]]
+  - Enables [[Automated Planning]] as its primary application domain
+  - Uses [[Knowledge Representation]] (propositional logic for state and action encoding)
+  - Bridges to [[Path Planning]] (STRIPS-style operators underpin robot motion planning)
+  - Related to [[Reinforcement Learning]] as a complementary sequential decision-making paradigm
 
 - ### Content
 

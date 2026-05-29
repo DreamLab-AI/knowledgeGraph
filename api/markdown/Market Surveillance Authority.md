@@ -44,14 +44,31 @@ public:: true
   "label": "Market Surveillance Authority",
   "definition": "National authority responsible for carrying out market surveillance activities on AI systems, including inspections, testing, enforcement, and ensuring compliance with EU AI Act requirements within a Member State.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
       "label": "Governance and Safety"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:compliance-monitoring", "label": "Compliance Monitoring"},
+      {"@id": "urn:ngm:class:conformity-assessment", "label": "Conformity Assessment"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"},
+      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:high-risk-ai-system", "label": "High Risk AI System"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:notified-body", "label": "Notified Body"},
+      {"@id": "urn:ngm:class:provider", "label": "Provider"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -95,7 +112,10 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **enables**: Compliance Monitoring, Conformity Assessment — the authority conducts the market-monitoring activities and verifies that AI systems meet conformity requirements before and after market placement.
+  - **requires**: AI Regulation, Risk Management — the authority's mandate and powers derive from the AI Act regulatory framework and depend on structured risk assessment processes.
+  - **supports**: High Risk AI System — the authority specifically oversees the highest-risk category of AI deployments.
+  - **relatedTo**: Notified Body, Provider — authorities coordinate with accredited notified bodies and interact directly with system providers during compliance verification.
 
 - ### Content
   - National authority responsible for carrying out market surveillance activities on AI systems, including inspections, testing, enforcement, and ensuring compliance with EU AI Act requirements within a Member State.

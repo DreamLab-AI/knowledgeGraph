@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:compute-shader",
   "domain": "spatial-computing",
-  "definition": "Compute Shader is a spatial computing concept and a type of Metaverse.",
+  "definition": "A Compute Shader is a programmable GPU kernel that executes arbitrary parallel computations outside the traditional graphics rendering pipeline, enabling general-purpose GPU (GPGPU) workloads such as physics simulation, procedural generation, image post-processing, and data-parallel algorithms within real-time 3D and metaverse applications.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-display-and-rendering",
@@ -18,16 +18,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:vertex-shader",
+        "label": "Vertex Shader"
+      },
+      {
+        "id": "urn:ngm:class:pixel-shader",
+        "label": "Pixel Shader"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      },
+      {
+        "id": "urn:ngm:class:procedural-generation",
+        "label": "Procedural Generation"
+      },
+      {
+        "id": "urn:ngm:class:post-processing",
+        "label": "Post Processing"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:parallel-processing",
+        "label": "Parallel Processing"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

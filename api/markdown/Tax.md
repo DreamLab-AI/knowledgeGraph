@@ -38,16 +38,30 @@ public:: true
   "@id": "urn:ngm:class:tax",
   "@type": "Class",
   "label": "Tax",
-  "definition": "Tax is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Tax, in the context of this knowledge graph, refers to the statutory obligations imposed on individuals and legal entities — particularly limited companies — by HMRC and comparable revenue authorities, covering corporation tax on trading profits, self-assessment for personal income drawn as salary or dividends, and VAT registration thresholds. Compliance requires accurate bookkeeping, timely filing of CT600 returns, and annual accounts submission to Companies House.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-legal-and-regulatory",
       "label": "Legal and Regulatory"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:accounts", "label": "Accounts"},
+      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"},
+      {"@id": "urn:ngm:class:legal-compliance", "label": "Legal Compliance"},
+      {"@id": "urn:ngm:class:digital-tax-compliance-node", "label": "Digital Tax Compliance Node"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:legal-framework", "label": "Legal Framework"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -83,14 +97,16 @@ public:: true
 
 
 - ### Definition
-  - Tax is a concept within the ngm domain.
+  - Tax, in the context of this knowledge graph, refers to the statutory obligations imposed on individuals and legal entities — particularly limited companies — by HMRC and comparable revenue authorities, covering corporation tax on trading profits, self-assessment for personal income drawn as salary or dividends, and VAT registration thresholds. Compliance requires accurate bookkeeping, timely filing of CT600 returns, and annual accounts submission to Companies House.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:Tax
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires:: Accounts, Regulatory Compliance
+  - relatedTo:: Financial Regulation, Legal Compliance, Digital Tax Compliance Node
+  - standardizedBy:: Legal Framework
 
 - ### Content
   - Flossverse is a limited company in April last year and haven't earned enough to pay personal tax, but will owe 20% corporation tax. You're aware of the self-assessment deadline in late January 2024 and the business tax filing in April. You're seeking guidance on what you need to know and do regarding these tax obligations.

@@ -1,12 +1,13 @@
 - ### Definition
-  - nostr relay list is a concept within the ngm domain.
+  - A Nostr relay list is a curated set of WebSocket relay server endpoints that a Nostr client uses to publish and retrieve signed events. In the Nostr protocol, there is no central server: instead, clients broadcast events (notes, reactions, metadata) to a chosen set of relays and subscribe to feeds by connecting to the same relays where their contacts post. Because relay connectivity is the sole routing mechanism, the relay list directly governs a user's social-graph reach and censorship-resistance posture.
+  - Relay lists are themselves portable: under NIP-65, clients store their preferred relay configuration as a signed kind:10002 event on the network, allowing any compatible client to discover and adopt a user's relay preferences from their public key alone. The list above represents a latency-sorted selection of public relays, providing a snapshot useful for bootstrapping a new Nostr identity or evaluating network coverage.
 
 - ### Semantic Classification
   - owl-class:: blockchain:NostrRelayList
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Part of the Nostr Protocol; relies on WebSocket transport and gossip-style propagation for event delivery across the decentralised relay network.
 
 - ### Content
   - 1. wss://[nostr.oxtr.dev/](https://nostr.oxtr.dev/) - 40ms

@@ -5,7 +5,10 @@
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires**: [[AI Alignment]], [[AI Safety]]
+  - **relatedTo**: [[Constitutional AI]], [[Reinforcement Learning from Human Feedback]]
+  - **contrastsWith**: [[AI Risk]], [[Harmful Bias]]
+  - **supports**: [[Trustworthy AI]], [[Value Alignment]]
 - ### Content
   - An alignment objective ensuring AI systems avoid generating outputs that could cause harm, including toxic, dangerous, misleading, or unethical content. Harmlessness represents a key dimension of AI safety alongside helpfulness and honesty.
 		- #### Ambiguity and Potential Overreach

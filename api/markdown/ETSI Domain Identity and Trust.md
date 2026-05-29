@@ -90,16 +90,34 @@ public:: true
   "@id": "urn:ngm:class:etsi-domain-identity-and-trust",
   "@type": "Class",
   "label": "ETSI Domain Identity and Trust",
-  "definition": "An ETSI governance domain establishing identity management, authentication, and trust infrastructure for VirtualEnvironment|virtual environments.",
+  "definition": "An ETSI governance domain establishing identity management, authentication, and trust infrastructure for virtual environments. It integrates decentralised identity models, verifiable credentials, biometric authentication, zero-trust architecture, and multi-party trust platforms aligned with eIDAS 2.0 and ISO/IEC 24760, enabling secure, privacy-respecting identity assurance across distributed metaverse platforms and consortia.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-security-and-identity",
       "label": "Security and Identity"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"},
+      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
+      {"@id": "urn:ngm:class:did-nostr-identity", "label": "DID Nostr Identity"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"},
+      {"@id": "urn:ngm:class:zero-trust-architecture", "label": "Zero Trust Architecture"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:digital-identity-framework", "label": "Digital Identity Framework"},
+      {"@id": "urn:ngm:class:digital-identity-wallet", "label": "Digital Identity Wallet"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:etsi-domain-security-and-privacy", "label": "ETSI Domain Security and Privacy"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -206,7 +224,10 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: [[Verifiable Credentials]], [[Decentralised Identity]], [[DID Nostr Identity]]
+  - **requires**: [[Digital Identity]], [[Zero Trust Architecture]]
+  - **enables**: [[Digital Identity Framework]], [[Digital Identity Wallet]]
+  - **relatedTo**: [[ETSI Domain Security and Privacy]]
 
 - ### Content
   - The ETSI Identity and Trust domain establishes identity management, authentication, and trust infrastructure for virtual environments enabling secure, privacy-respecting identity assurance.

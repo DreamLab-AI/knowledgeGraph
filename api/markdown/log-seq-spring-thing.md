@@ -1,12 +1,13 @@
 - ### Definition
-  - LogSeqSpringThing is a concept within the ngm domain.
+  - Log Seq Spring Thing is a project workstream and AI hacking initiative that connects Logseq-based knowledge graph authoring with VisionFlow, exploring how networked thought can be published, visualised, and extended through AI-assisted tooling. It serves as a bridge between personal knowledge management workflows and semantic web infrastructure.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:LogSeqSpringThing
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses:: [[Knowledge Graph]], [[Ontology]]
+  - relatedTo:: [[Knowledge Management]], [[Semantic Web]], [[Linked Data]]
 
 - ### Content
   - [(4) AI Project Hacking | LinkedIn](https://www.linkedin.com/pulse/ai-project-hacking-dreamlabinstitute-6u5ue/?trackingId=H%2FB9cbMIRf2u%2FJuM8BAYkg%3D%3D)

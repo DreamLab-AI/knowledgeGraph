@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:environmental-assessment",
   "domain": "spatial-computing",
-  "definition": "Environmental Assessment is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "The systematic evaluation of the environmental impact of technological systems, infrastructure, or projects, measuring metrics such as energy consumption, carbon footprint, and e-waste generation. In spatial computing and metaverse contexts, environmental assessment applies to data centre operations, XR hardware lifecycles, and the cumulative sustainability profile of immersive platform deployments.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-governance-and-safety",
@@ -14,20 +14,52 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:carbon-footprint-assessment",
+        "label": "Carbon Footprint Assessment"
+      },
+      {
+        "id": "urn:ngm:class:environmental-accounting",
+        "label": "Environmental Accounting"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:environmental-standards",
+        "label": "Environmental Standards"
+      },
+      {
+        "id": "urn:ngm:class:environmental-sustainability",
+        "label": "Environmental Sustainability"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:carbon-footprint-measurement",
+        "label": "Carbon Footprint Measurement"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:circular-economy",
+        "label": "Circular Economy"
+      }
+    ]
   },
   "wikilinks": [
     {

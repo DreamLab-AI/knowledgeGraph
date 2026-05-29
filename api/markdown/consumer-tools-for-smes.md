@@ -1,14 +1,14 @@
 - ### Definition
-  - Consumer Tools for SMEs is a concept within the ngm domain.
+  - Consumer Tools for SMEs encompasses the accessible AI-powered productivity applications, creative tools, and automation platforms used by small and medium enterprises. These tools lower the barrier to adopting generative AI and workflow automation without requiring technical expertise or enterprise-scale infrastructure investment.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:ConsumerToolsForSMEs
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
-
-  - bridges-to:: [[Blockchain]] (bc)
+  - uses:: [[Generative AI]], [[Large Language Models]]
+  - enables:: [[Workflow Automation]]
+  - related-to:: [[Blockchain]], [[Coding support]]
 - ### Content
   - # Business Functions
 	  **AI Technology & Concepts**

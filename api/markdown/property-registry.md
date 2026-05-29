@@ -7,7 +7,10 @@
   - belongs-to-domain:: [[BlockchainDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires: [[Distributed Ledger]], [[Smart Contract]]
+  - uses: [[Cryptography]], [[Blockchain Domain]]
+  - enables: [[Asset Registry]], [[Asset Tokenization]]
+  - relatedTo: [[Decentralised Identity]], [[Digital Identity]]
 
 - ### Content
   - Blockchain-based property registry systems address a global land administration crisis where **70% of the world's population** lacks access to formal land registration, **£700 million in annual bribes** corrupt India's system alone, **£1 billion** is lost to deed fraud globally each year, and **66% of Indian court cases** involve land disputes. By employing immutable distributed ledgers with cryptographic verification and timestamp validation, blockchain implementations demonstrate transformative outcomes: Dubai's system achieved **67% reduction in property fraud**, **96% reduction in transaction processing time** (90 days to 72 hours), **99.95% reduction** in compliance processing (14 days to 9 minutes), and **30% administrative cost savings** across **188,000+ transactions** worth **AED 625 billion** in 2024, whilst Georgia registered **100,000+ land titles** as the first country to fully adopt blockchain land administration.

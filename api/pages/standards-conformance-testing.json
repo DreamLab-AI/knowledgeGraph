@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:standards-conformance-testing",
   "domain": "spatial-computing",
-  "definition": "Testing or verification activities that determine wher a process, product, or service complies with the requirements of a specification, technical standard, contract, or regulation, verifying that implementations faithfully meet specified requirements.",
+  "definition": "Testing or verification activities that determine whether a process, product, or service complies with the requirements of a specification, technical standard, contract, or regulation. Conformance testing verifies that implementations faithfully meet specified requirements through structured test suites, automated harnesses, and formal certification regimes \u2014 and is distinct from functional testing in that it judges compliance against an external normative reference rather than internal design intent.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-standards-and-interop",
@@ -17,21 +17,57 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      },
+      {
+        "id": "urn:ngm:class:software-testing",
+        "label": "Software Testing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:standards-compliance",
+        "label": "Standards Compliance"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      },
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:standards-validation",
+        "label": "Standards Validation"
+      },
+      {
+        "id": "urn:ngm:class:software-development-process",
+        "label": "Software Development Process"
+      }
+    ]
   },
   "wikilinks": [
     {

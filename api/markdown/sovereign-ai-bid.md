@@ -1,12 +1,15 @@
 - ### Definition
-  - Sovereign AI bid is a concept within the ngm domain.
+  - A Sovereign AI bid is a state or regional initiative to develop, procure, or deploy AI infrastructure and foundation models under national control, reducing dependence on foreign hyperscalers and ensuring that AI capabilities, data residency, and compute sovereignty remain within a defined jurisdiction. Such bids typically involve national compute investment, open-source model adoption, and alignment with local regulatory frameworks including the EU AI Act.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:SovereignAIBid
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **relatedTo**: Sovereign AI — the bid is the procurement and policy process through which a Sovereign AI strategy is executed; AI Regulation — sovereign AI bids must comply with and shape national and regional AI regulation; Inference Hardware — sovereign compute requires specific hardware procurement decisions.
+  - **requires**: AI Governance — a governance framework is needed to specify and oversee the sovereign AI mandate; Compute Infrastructure — physical or cloud compute must be procured or built to realise sovereignty.
+  - **enables**: AI Deployment — a successful sovereign AI bid enables domestically governed AI deployment at scale.
+  - **bridgesTo**: Soon-Next-Later (AI futurology) — sovereign AI bids are long-horizon infrastructure investments that span the Next and Later horizons of the futurology framework.
 
 - ### Content
   - [Runpod GPU Cloud](https://console.runpod.io/deploy?gpu=H200+SXM&count=1&template=runpod-torch-v280) [[Visionflow]]

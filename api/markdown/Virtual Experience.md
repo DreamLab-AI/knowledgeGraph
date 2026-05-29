@@ -42,20 +42,58 @@ public:: true
   "@id": "urn:ngm:class:virtual-experience",
   "@type": "Class",
   "label": "Virtual Experience",
-  "definition": "Virtual Experience is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "A user-facing encounter or activity delivered within a virtual environment, encompassing immersive simulations, interactive narratives, social engagements, and entertainment events that are accessed through XR devices, gaming platforms, or web-based spatial interfaces.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
     }
   ],
-  "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:virtual-world-infrastructure",
+        "label": "Virtual World Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:avatar-system",
+        "label": "Avatar System"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      },
+      {
+        "@id": "urn:ngm:class:personalized-virtual-experiences",
+        "label": "Personalized Virtual Experiences"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:virtual-environment",
+        "label": "Virtual Environment"
+      }
+    ]
   }
 }
 ```
@@ -87,14 +125,20 @@ public:: true
 
 
 - ### Definition
-  - Virtual Experience is a concept within the metaverse domain. Further enrichment pending.
+  - A user-facing encounter or activity delivered within a virtual environment, encompassing immersive simulations, interactive narratives, social engagements, and entertainment events that are accessed through XR devices, gaming platforms, or web-based spatial interfaces.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:VirtualExperience
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Requires: [[Virtual World Infrastructure]]
+  - Requires: [[Avatar System]]
+  - Part Of: [[Virtual Environment]]
+  - Uses: [[Immersive Experience]]
+  - Uses: [[Extended Reality]]
+  - Related To: [[User Experience]]
+  - Related To: [[Personalized Virtual Experiences]]
 
 - ### Content
 

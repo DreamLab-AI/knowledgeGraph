@@ -7,7 +7,9 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Requires [[Legal Framework]], [[Accountability]]
+  - Supports [[Human Rights]], [[Democratic Values]], [[AI Ethics]]
+  - Related to [[Compliance Framework]], [[AI Governance]]
 
 - ### Content
   - The principle that all persons, institutions and entities, including AI systems and their operators, are accountable to laws that are publicly promulgated, equally enforced, independently adjudicated and consistent with international human rights norms.

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ai-technique",
   "domain": "artificial-intelligence",
-  "definition": "Intermediate taxonomy category for ai technique concepts within the artificial intelligence domain.",
+  "definition": "Taxonomy hub encompassing the principal methods and algorithmic approaches used in artificial intelligence, spanning symbolic, statistical, and neural paradigms. AI Technique organises the broad spectrum of techniques \u2014 from classical reasoning and search to contemporary deep learning and generative models \u2014 that implement intelligent behaviour in systems.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:artificial-intelligence",
@@ -16,7 +16,48 @@
   "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      }
+    ],
     "requires": [],
     "enables": [],
     "dependsOn": [],
@@ -27,7 +68,20 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-research-area",
+        "label": "AI Research Area"
+      },
+      {
+        "id": "urn:ngm:class:ai-application",
+        "label": "AI Application"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": []

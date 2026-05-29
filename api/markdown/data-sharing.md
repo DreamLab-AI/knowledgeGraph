@@ -1,12 +1,19 @@
 - ### Definition
-  - Data Sharing is a concept within the metaverse domain. Further enrichment pending.
+  - The controlled exchange of datasets, data streams, or derived information between organisations, systems, or individuals under agreed governance, access control, and privacy constraints. Data sharing in distributed infrastructure contexts relies on interoperability standards, consent management frameworks, and data governance policies to balance openness with security and sovereignty.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:DataSharing
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Requires: [[Data Governance]]
+  - Requires: [[Access Control]]
+  - Uses: [[Interoperability]]
+  - Uses: [[Data Standards]]
+  - Enables: [[Federated Learning]]
+  - Enables: [[Data Interoperability]]
+  - Related To: [[Privacy]]
+  - Related To: [[Data Sovereignty]]
 
 - ### Content
 

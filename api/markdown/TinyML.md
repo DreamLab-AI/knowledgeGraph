@@ -58,7 +58,7 @@ public:: true
   "@id": "urn:ngm:class:tiny-ml",
   "@type": "Class",
   "label": "TinyML",
-  "definition": "TinyML is machine learning deployment on extremely resource-constrained microcontrollers with memory measured in kilobytes (typically 256KB RAM, 1MB flash storage), power consumption in milliwatts (under 1mW idle, a few mW active), and processing measured in MHz (typically 16-80MHz ARM Cortex-M c...",
+  "definition": "Machine learning inference deployed on resource-constrained microcontrollers with kilobyte-scale RAM, milliwatt power budgets, and MHz-range processors, enabling always-on intelligent sensing in IoT devices, wearables, and embedded sensors without cloud connectivity. Requires aggressive model optimisation through INT8 quantisation, pruning, and knowledge distillation.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -71,7 +71,26 @@ public:: true
       "label": "Deep Learning"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:neural-network-quantisation", "label": "Neural Network Quantisation"},
+      {"@id": "urn:ngm:class:model-pruning-for-edge-deployment", "label": "Model Pruning for Edge Deployment"},
+      {"@id": "urn:ngm:class:model-compression-for-edge", "label": "Model Compression for Edge"},
+      {"@id": "urn:ngm:class:embedded-systems", "label": "Embedded Systems"},
+      {"@id": "urn:ngm:class:embedded-ai-frameworks", "label": "Embedded AI Frameworks"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
+      {"@id": "urn:ngm:class:knowledge-distillation-for-edge", "label": "Knowledge Distillation for Edge"},
+      {"@id": "urn:ngm:class:on-device-learning", "label": "On-Device Learning"},
+      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"},
+      {"@id": "urn:ngm:class:edge-ai-system", "label": "Edge AI System"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:ai-deployment", "label": "AI Deployment"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

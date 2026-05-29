@@ -26,7 +26,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:carbon-credit",
+        "id": "urn:ngm:class:carbon-credits",
         "label": "Carbon Credit"
       },
       {
@@ -300,7 +300,7 @@
         "label": "Algorand"
       },
       {
-        "id": "urn:ngm:class:carbon-credit",
+        "id": "urn:ngm:class:carbon-credits",
         "label": "Carbon Credit"
       },
       {

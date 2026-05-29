@@ -42,9 +42,9 @@ public:: true
   "@id": "urn:ngm:class:rb-0026-robot-joint",
   "@type": "Class",
   "label": "rb 0026 robot joint",
-  "definition": "robot joint is a robotics and autonomous systems concept and a type of Robot.",
+  "definition": "A robot joint is a mechanical articulation connecting two adjacent robot links that permits one or more degrees of relative motion—translational (prismatic) or rotational (revolute). Robot joints are the fundamental kinematic elements that determine a manipulator's workspace and degrees of freedom; their dynamic properties, including inertia, backlash, and compliance, critically influence both control precision and safe interaction with the environment.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-actuation-and-control",
@@ -55,7 +55,26 @@ public:: true
       "label": "Robot"
     }
   ],
-  "quality": 0.5,
+  "quality": 0.7,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:rb-0072-encoder", "label": "rb 0072 encoder"},
+      {"@id": "urn:ngm:class:robot-actuator", "label": "Robot Actuator"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:rb-0027-robot-link", "label": "rb 0027 robot link"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:rb-0040-backlash", "label": "rb 0040 backlash"},
+      {"@id": "urn:ngm:class:rb-0041-inertia", "label": "rb 0041 inertia"},
+      {"@id": "urn:ngm:class:rb-0038-compliance", "label": "rb 0038 compliance"},
+      {"@id": "urn:ngm:class:rb-0039-stiffness", "label": "rb 0039 stiffness"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:rb-0021-robot-kinematics", "label": "rb 0021 robot kinematics"},
+      {"@id": "urn:ngm:class:rb-0054-position-control", "label": "rb 0054 position control"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

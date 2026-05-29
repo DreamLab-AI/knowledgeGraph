@@ -82,9 +82,10 @@ public:: true
   "@id": "urn:ngm:class:documentation-standards",
   "@type": "Class",
   "label": "Documentation Standards",
-  "definition": "Formal specifications and technical guidelines established by standards bodies to ensure interoperability, consistency, and quality across metaverse platforms, encompassing terminology, data formats, interfaces, and ical considerations for immersive technology development.",
+  "definition": "Formal specifications and technical guidelines established by standards bodies to ensure interoperability, consistency, and quality across metaverse platforms, encompassing terminology, data formats, interfaces, and ethical considerations for immersive technology development.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-standards-and-interop",
@@ -100,6 +101,40 @@ public:: true
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:metadata-standard",
+        "label": "Metadata Standard"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      },
+      {
+        "@id": "urn:ngm:class:api-standard",
+        "label": "API Standard"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:documentation-generation",
+        "label": "Documentation Generation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      }
+    ]
   }
 }
 ```
@@ -193,6 +228,12 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Technical Standards]]
+  - Standardized By: [[Open Standard]]
+  - Enables: [[Interoperability]]
+  - Enables: [[Metadata Standard]]
+  - Supports: [[Documentation Generation]]
+  - Related To: [[Interoperability Standard]]
+  - Related To: [[API Standard]]
 
 - ### Content
 

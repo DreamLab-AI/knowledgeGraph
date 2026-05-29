@@ -5,7 +5,10 @@
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires**: [[AI Regulation]], [[Legal Compliance]]
+  - **partOf**: [[Supply Chain]], [[AI Governance]]
+  - **relatedTo**: [[Risk Management]], [[Accountability]]
+  - **dependsOn**: [[Legal Framework]]
 - ### Content
   - A natural or legal person located or established in the Union that places on the market an AI system that bears the name or trademark of a natural or legal person established in a third country.
   ## Source

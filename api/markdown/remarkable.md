@@ -1,12 +1,14 @@
 - ### Definition
-  - Remarkable is a concept within the ngm domain.
+  - The reMarkable is an e-ink tablet designed for distraction-free writing, note-taking, and document annotation, running a Linux-based OS that supports SSH access and a rich open-source ecosystem. Its platform enables handwriting recognition, LaTeX generation, AI-assisted prompt workflows, and integration with knowledge management systems such as Obsidian. The device serves as a digital-analogue bridge for researchers and knowledge workers seeking pen-on-paper fidelity with machine-readable output.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:Remarkable
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **enables**: Knowledge Management, Data Annotation
+  - **uses**: Machine Learning, Large Language Models
+  - **relatedTo**: Knowledge Management System
 
 - ### Content
   - https://github.com/kevinconway/remouseable?tab=readme-ov-file#remarkable-2-tablets Remarkable tablet mouse events for ssh

@@ -8,6 +8,12 @@
 
 - ### Relationships
   - bridges-to:: [[Computer Vision]] (ai)
+  - Part Of [[Parameter-Efficient Fine-Tuning]]
+  - Uses [[Transfer Learning]]
+  - Uses [[Neural Network Layer]]
+  - Requires [[Fine Tuning]]
+  - Contrasts With [[Prefix Tuning]]
+  - Contrasts With [[Prompt Tuning]]
 
 - ### Content
   - Small neural network modules inserted between transformer layers that are trained whilst keeping the original model frozen. Adapter modules provide a parameter-efficient way to adapt pre-trained models to new tasks by learning task-specific transformations without modifying the base model.

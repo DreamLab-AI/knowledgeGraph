@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:platform-service",
   "domain": "infrastructure",
-  "definition": "Platform Service is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A managed cloud or middleware service exposed via APIs that provides reusable capabilities\u2014such as authentication, storage, rendering, or notification\u2014to applications built on top of a platform. Platform services abstract infrastructure complexity, enabling developers to compose higher-order virtual world and spatial computing features without managing underlying infrastructure.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
@@ -13,17 +13,44 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:notification-system",
+        "label": "Notification System"
+      },
+      {
+        "id": "urn:ngm:class:authentication-service",
+        "label": "Authentication Service"
+      },
+      {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:metaverse-platform",
+        "label": "Metaverse Platform"
+      },
+      {
+        "id": "urn:ngm:class:cloud-native-applications",
+        "label": "Cloud-Native Applications"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

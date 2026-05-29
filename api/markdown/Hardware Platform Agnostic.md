@@ -42,16 +42,33 @@ public:: true
   "@id": "urn:ngm:class:hardware-platform-agnostic",
   "@type": "Class",
   "label": "Hardware Platform Agnostic",
-  "definition": "A design principle and architectural quality ensuring that software, systems, or protocols can operate independently of specific hardware architectures or platform implementations.",
+  "definition": "A design principle and architectural quality ensuring that software, systems, or protocols can operate independently of specific hardware architectures or platform implementations. Hardware-agnostic systems achieve portability through abstraction layers—such as virtual machines, containers, or cross-platform runtimes—that decouple application logic from underlying physical or operating-system constraints.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"},
+      {"@id": "urn:ngm:class:xr-framework", "label": "XR Framework"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:open-standard", "label": "Open Standard"},
+      {"@id": "urn:ngm:class:interoperability-standard", "label": "Interoperability Standard"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"},
+      {"@id": "urn:ngm:class:metaverse-architecture", "label": "Metaverse Architecture"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:xr-hardware", "label": "XR Hardware"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -87,13 +104,19 @@ public:: true
 
 
 - ### Definition
-  - A design principle and architectural quality ensuring that software, systems, or protocols can operate independently of specific hardware architectures or platform implementations. Hardware-/Platform-Agnostic systems achieve portability through abstraction layers that decouple functionality from underlying physical or operating system constraints.
+  - A design principle and architectural quality ensuring that software, systems, or protocols can operate independently of specific hardware architectures or platform implementations. Hardware-agnostic systems achieve portability through abstraction layers—such as virtual machines, containers, or cross-platform runtimes—that decouple application logic from underlying physical or operating-system constraints.
 - ### Semantic Classification
   - owl-class:: spatial-computing:HardwarePlatformAgnostic
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **enables** [[Interoperability]] — hardware-agnostic designs make systems interoperable across heterogeneous device ecosystems
+  - **enables** [[XR Framework]] — XR frameworks depend on platform-agnostic runtimes to target multiple headset families
+  - **requires** [[Open Standard]] — hardware agnosticism is realised through open, vendor-neutral standards
+  - **requires** [[Interoperability Standard]] — interoperability standards define the cross-platform contracts that agnostic systems implement
+  - **supports** [[Extended Reality]] — XR deployment across diverse hardware requires platform-agnostic middleware
+  - **supports** [[Metaverse Architecture]] — metaverse architectures must be hardware-agnostic to avoid vendor lock-in
+  - **contrastsWith** [[XR Hardware]] — proprietary XR hardware ecosystems are the antithesis of hardware-agnostic design
 - ### Content
   - A design principle and architectural quality ensuring that software, systems, or protocols can operate independently of specific hardware architectures or platform implementations. Hardware-/Platform-Agnostic systems achieve portability through abstraction layers that decouple functionality from underlying physical or operating system constraints.
   ---

@@ -58,7 +58,7 @@ public:: true
   "@id": "urn:ngm:class:haptic-feedback-telepresence",
   "@type": "Class",
   "label": "Haptic Feedback Telepresence",
-  "definition": "\"The integration of haptic (tactile and kinesthetic) feedback devices into telepresence systems, enabling remote operators to feel forces, textures, and vibrations from distant environments through force-feedback gloves, exoskeletons, or handheld controllers, creating bidirectional touch sensatio...",
+  "definition": "Haptic Feedback Telepresence is the integration of tactile and kinesthetic feedback devices — such as force-feedback gloves, exoskeletons, and haptic controllers — into telepresence systems, enabling bidirectional touch sensation between a remote operator and a distant physical or virtual environment. It closes the sensorimotor loop beyond visual and auditory channels, allowing operators to feel forces, textures, weight, and vibration, which significantly enhances manipulation precision and immersive presence in teleoperation, surgical robotics, and VR collaboration contexts.",
   "domain": "distributed-collaboration",
   "maturity": "emerging",
   "subClassOf": [
@@ -67,11 +67,37 @@ public:: true
       "label": "Telepresence"
     },
     {
-      "@id": "urn:ngm:class:haptic-technology",
-      "label": "Haptic Technology"
+      "@id": "urn:ngm:class:haptic-feedback",
+      "label": "Haptic Feedback"
     }
   ],
-  "quality": 0.5,
+  "quality": 0.75,
+  "qualityScore": 0.75,
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:telepresence", "label": "Telepresence"},
+      {"@id": "urn:ngm:class:telecollaboration-and-telepresence", "label": "Telecollaboration and Telepresence"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:haptics", "label": "Haptics"},
+      {"@id": "urn:ngm:class:exoskeleton-robot", "label": "Exoskeleton Robot"},
+      {"@id": "urn:ngm:class:tactile-sensor", "label": "Tactile Sensor"},
+      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:teleoperation", "label": "Teleoperation"},
+      {"@id": "urn:ngm:class:guaranteed-bandwidth", "label": "Guaranteed Bandwidth"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:robotic-telepresence", "label": "Robotic Telepresence"},
+      {"@id": "urn:ngm:class:immersive-communication", "label": "Immersive Communication"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"},
+      {"@id": "urn:ngm:class:virtual-environment", "label": "Virtual Environment"},
+      {"@id": "urn:ngm:class:tele-001-telepresence", "label": "TELE 001 telepresence"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

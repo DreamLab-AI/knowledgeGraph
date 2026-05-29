@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:torque",
   "@type": "Class",
   "label": "Torque",
-  "definition": "Torque - Rotational force about an axis",
+  "definition": "Torque is the rotational analogue of force, defined as the cross product of the moment arm and the applied force vector (τ = r × F), measured in newton-metres. In robotics it governs joint actuation, grip force, and dynamic loading across mechanical transmissions, and is the primary physical quantity managed by torque-controlled servos and force-torque sensors during manipulation tasks.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-actuation-and-control",
@@ -59,7 +60,21 @@ public:: true
       "label": "Robot Dynamics"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:actuator", "label": "Actuator"},
+      {"@id": "urn:ngm:class:force-torque-sensor", "label": "Force Torque Sensor"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:motion-control", "label": "Motion Control"},
+      {"@id": "urn:ngm:class:force-control", "label": "Force Control"},
+      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:robot-kinematics", "label": "Robot Kinematics"},
+      {"@id": "urn:ngm:class:robot-joint", "label": "Robot Joint"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -100,7 +115,7 @@ public:: true
 
 
 - ### Definition
-  - **Torque** - Rotational force about an axis
+  - Torque is the rotational analogue of force, defined as the cross product of the moment arm and the applied force vector (τ = r × F), measured in newton-metres. In robotics it governs joint actuation, grip force, and dynamic loading across mechanical transmissions, and is the primary physical quantity managed by torque-controlled servos and force-torque sensors during manipulation tasks.
 
 - ### Semantic Classification
   - owl-class:: robotics:Torque
@@ -109,6 +124,9 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Robotics]]
+  - **requires** → [[Actuator]], [[Force Torque Sensor]]
+  - **enables** → [[Motion Control]], [[Force Control]], [[Haptic Feedback]]
+  - **partOf** → [[Robot Kinematics]], [[Robot Joint]]
 
 - ### Content
   - ### Original Content

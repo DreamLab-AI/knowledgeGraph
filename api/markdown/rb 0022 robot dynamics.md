@@ -50,9 +50,9 @@ public:: true
   "@id": "urn:ngm:class:rb-0022-robot-dynamics",
   "@type": "Class",
   "label": "rb 0022 robot dynamics",
-  "definition": "robot dynamics is a robotics and autonomous systems concept and a type of Robot Dynamics.",
+  "definition": "Robot dynamics is the study of the relationship between the forces and torques applied to a robot's joints and links and the resulting motion of the robot. It encompasses forward dynamics (computing accelerations from applied torques), inverse dynamics (computing required torques to achieve a desired motion), and the derivation of equations of motion via Newton-Euler or Lagrangian formulations. Dynamic models are essential for model-based controllers such as computed-torque control, optimal control, and trajectory optimisation.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-actuation-and-control",
@@ -63,7 +63,23 @@ public:: true
       "label": "Robot Dynamics"
     }
   ],
-  "quality": 0.5,
+  "qualityScore": 0.7,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:rb-0021-robot-kinematics", "label": "rb 0021 robot kinematics"},
+      {"@id": "urn:ngm:class:rb-0041-inertia", "label": "rb 0041 inertia"},
+      {"@id": "urn:ngm:class:rb-0043-torque", "label": "rb 0043 torque"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:rb-0064-computed-torque-control", "label": "rb 0064 computed torque control"},
+      {"@id": "urn:ngm:class:rb-0051-trajectory-planning", "label": "rb 0051 trajectory planning"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:rigid-body-dynamics", "label": "Rigid Body Dynamics"},
+      {"@id": "urn:ngm:class:newton-euler-dynamics", "label": "Newton-Euler Dynamics"},
+      {"@id": "urn:ngm:class:rb-0030-jacobian-matrix", "label": "rb 0030 jacobian matrix"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -109,7 +125,7 @@ public:: true
 
 
 - ### Definition
-  - ### Primary Definition
+  - **Robot Dynamics** studies the relationships between forces/torques and resulting robot motion. Forward dynamics computes accelerations from applied joint torques; inverse dynamics computes required torques to achieve a specified trajectory. Equations of motion are derived via Newton-Euler recursive formulations or the Lagrangian energy method. Dynamic models underpin model-based controllers — computed-torque control, model-predictive control, and trajectory optimisation — where ignoring dynamics leads to significant tracking errors at high speeds or under heavy payloads.
 
 - ### Semantic Classification
   - owl-class:: robotics:rb0022robotdynamics
@@ -117,7 +133,9 @@ public:: true
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires:: rb 0021 robot kinematics, rb 0041 inertia, rb 0043 torque
+  - enables:: rb 0064 computed torque control, rb 0051 trajectory planning
+  - relatedTo:: Rigid Body Dynamics, Newton-Euler Dynamics, rb 0030 jacobian matrix
 
 - ### Content
   - ### Primary Definition

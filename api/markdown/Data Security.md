@@ -46,20 +46,52 @@ public:: true
   "@id": "urn:ngm:class:data-security",
   "@type": "Class",
   "label": "Data Security",
-  "definition": "Data Security is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Data security comprises the policies, controls, and technologies that protect digital information from unauthorised access, corruption, or theft throughout its lifecycle. It spans encryption at rest and in transit, access control mechanisms, identity verification, and governance frameworks that together ensure confidentiality, integrity, and availability of data assets.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
       "label": "Governance and Safety"
     }
   ],
-  "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "@id": "urn:ngm:class:information-security",
+        "label": "Information Security"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ]
   }
 }
 ```
@@ -96,14 +128,19 @@ public:: true
 
 
 - ### Definition
-  - Data Security is a concept within the metaverse domain. Further enrichment pending.
+  - Data security comprises the policies, controls, and technologies that protect digital information from unauthorised access, corruption, or theft throughout its lifecycle. It spans encryption at rest and in transit, access control mechanisms, identity verification, and governance frameworks that together ensure confidentiality, integrity, and availability of data assets.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:DataSecurity
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Requires [[Encryption]]
+  - Requires [[Access Control]]
+  - Supports [[Privacy]]
+  - Supports [[Data Governance]]
+  - Related to [[Cybersecurity]]
+  - Related to [[Information Security]]
 
 - ### Content
 

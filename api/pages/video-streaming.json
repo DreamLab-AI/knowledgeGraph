@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:video-streaming",
   "domain": "infrastructure",
-  "definition": "Video Streaming is a technology infrastructure concept and a type of Network Infrastructure.",
+  "definition": "Video Streaming is the continuous, real-time transmission of encoded video data over a network to a client that decodes and renders the content progressively, without requiring the full file to be downloaded first. In metaverse and virtual production contexts it encompasses live streaming, adaptive bitrate (ABR) delivery, 360-degree video, and volumetric video streaming, each with distinct latency, bandwidth, and codec requirements.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-network-and-comms",
@@ -17,21 +17,49 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:virtual-production",
+        "label": "Virtual Production"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-platform",
+        "label": "Metaverse Platform"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bandwidth-adaptation",
+        "label": "Bandwidth Adaptation"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

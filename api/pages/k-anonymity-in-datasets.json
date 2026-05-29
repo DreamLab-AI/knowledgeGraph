@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:k-anonymity-in-datasets",
   "domain": "artificial-intelligence",
-  "definition": "k-Anonymity in Datasets is a privacy-preserving property ensuring that each record in a dataset is indistinguishable from at least k-1 other records with respect to quasi-identifiers (attributes that could potentially identify individuals when combined, such as age, gender, zip code), preventing ...",
+  "definition": "k-Anonymity is a dataset privacy property that guarantees each record is indistinguishable from at least k-1 other records with respect to quasi-identifier attributes\u2014fields such as age, gender, and postal code that can be combined to re-identify individuals. Anonymization is achieved through generalisation (replacing specific values with broader categories) and suppression (removing highly identifying records), producing equivalence classes where all members share identical quasi-identifier values.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -17,21 +17,74 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-anonymization-pipeline",
+        "label": "Data Anonymization Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:privacy-preserving-data-sharing",
+        "label": "Privacy Preserving Data Sharing"
+      },
+      {
+        "id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:synthetic-data-generation",
+        "label": "Synthetic Data Generation"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-data",
+        "label": "Synthetic Data"
+      },
+      {
+        "id": "urn:ngm:class:privacy-preserving-analytics",
+        "label": "Privacy Preserving Analytics"
+      },
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "id": "urn:ngm:class:privacy-mechanism",
+        "label": "Privacy Mechanism"
+      }
+    ]
   },
   "wikilinks": [
     {

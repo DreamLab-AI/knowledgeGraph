@@ -37,16 +37,30 @@ public:: true
   "@id": "urn:ngm:class:spatial-mapping",
   "@type": "Class",
   "label": "Spatial Mapping",
-  "definition": "Spatial Mapping is a spatial computing concept and a type of spatial-computing.",
+  "definition": "The process of constructing and continuously updating three-dimensional representations of physical environments using sensor data—including depth cameras, LiDAR, and IMU—enabling AR/VR systems to understand surroundings for occlusion, collision, content placement, and navigation. Core algorithms include SLAM variants that fuse visual features with inertial measurements to produce dense mesh or voxel representations in real time.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:slam", "label": "SLAM"},
+      {"@id": "urn:ngm:class:lidar", "label": "Lidar"},
+      {"@id": "urn:ngm:class:computer-vision-system", "label": "Computer Vision System"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
+      {"@id": "urn:ngm:class:spatial-anchor", "label": "Spatial Anchor"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:ar-technology", "label": "AR Technology"}
+    ]
+  },
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -76,14 +90,19 @@ public:: true
 
 
 - ### Definition
-  - SpatialMapping is a concept within the ngm domain.
+  - The process of constructing and continuously updating three-dimensional representations of physical environments using sensor data—including depth cameras, LiDAR, and IMU—enabling AR/VR systems to understand surroundings for occlusion, collision, content placement, and navigation. Core algorithms include SLAM variants that fuse visual features with inertial measurements to produce dense mesh or voxel representations in real time.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:SpatialMapping
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses [[SLAM]]
+  - uses [[Lidar]]
+  - uses [[Computer Vision System]]
+  - enables [[Augmented Reality]]
+  - enables [[Spatial Anchor]]
+  - relatedTo [[AR Technology]]
 
 - ### Content
   # SpatialMapping

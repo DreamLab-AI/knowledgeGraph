@@ -5,7 +5,9 @@
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses: [[Transformers]], [[Encoder Decoder Architecture]], [[Attention Mechanism]]
+  - requires: [[Pre Training]]
+  - enables: [[Natural Language Processing]], [[Fine Tuning]]
 - ### Content
   - Pre-training with Extracted Gap-sentences for Abstractive SUmmarization: a pre-training approach specifically designed for abstractive summarisation that masks and predicts entire sentences rather than individual tokens.
   ## Characteristics

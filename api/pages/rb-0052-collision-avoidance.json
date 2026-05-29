@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:rb-0052-collision-avoidance",
   "domain": "robotics",
-  "definition": "collision avoidance is a robotics and autonomous systems concept and a type of Motion Planning.",
+  "definition": "Collision avoidance in robotics is the capability of a robot system to detect and react to obstacles \u2014 including other robots, infrastructure, and human operators \u2014 so as to prevent physical contact that could cause damage or injury. It encompasses both reactive techniques (e.g. potential field methods, velocity obstacles) and proactive planning approaches that embed free-space constraints into the trajectory from the outset. It is a prerequisite for safe autonomous navigation and collaborative operation.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-navigation-and-planning",
@@ -17,13 +17,32 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:rb-0066-robot-sensor",
+        "label": "rb 0066 robot sensor"
+      },
+      {
+        "id": "urn:ngm:class:rb-0049-motion-planning",
+        "label": "rb 0049 motion planning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:rb-0103-collaborative-operation",
+        "label": "rb 0103 collaborative operation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:rb-0051-trajectory-planning",
+        "label": "rb 0051 trajectory planning"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
@@ -31,7 +50,24 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rb-0095-safety-zone",
+        "label": "rb 0095 safety zone"
+      },
+      {
+        "id": "urn:ngm:class:rb-0092-protective-stop",
+        "label": "rb 0092 protective stop"
+      },
+      {
+        "id": "urn:ngm:class:obstacle-avoidance",
+        "label": "Obstacle Avoidance"
+      },
+      {
+        "id": "urn:ngm:class:rb-0105-speed-and-separation-monitoring",
+        "label": "rb 0105 speed and separation monitoring"
+      }
+    ]
   },
   "wikilinks": [
     {

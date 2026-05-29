@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:copyright",
   "domain": "infrastructure",
-  "definition": "copyright is a technology infrastructure concept and a type of Legal Framework.",
+  "definition": "A legal right granting creators exclusive control over reproduction, distribution, adaptation, and public performance of original works for a defined term. In AI and metaverse contexts, copyright raises contested questions about ownership of AI-generated content, the legality of training data ingestion, and rights management for user-created assets within virtual platforms.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-legal-and-regulatory",
@@ -18,20 +18,44 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:legal-compliance",
+        "label": "Legal Compliance"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-rights",
+        "label": "Digital Rights"
+      },
+      {
+        "id": "urn:ngm:class:digital-rights-management",
+        "label": "Digital Rights Management"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

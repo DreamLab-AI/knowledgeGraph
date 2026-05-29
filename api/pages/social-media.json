@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:social-media",
   "domain": "infrastructure",
-  "definition": "social media is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Digital platforms and applications that enable users to create, share, and interact with user-generated content within networked communities. Social media platforms combine content distribution infrastructure, algorithmic recommendation, identity and profile management, and real-time communication at scale. They are significant vectors for AI application (content moderation, recommendation, advertising optimisation) and raise governance challenges around bias, privacy, and misinformation.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-network-and-comms",
@@ -13,21 +13,57 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      },
+      {
+        "id": "urn:ngm:class:platform-governance",
+        "label": "Platform Governance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bias",
+        "label": "Bias"
+      },
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "id": "urn:ngm:class:social-platform",
+        "label": "Social Platform"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

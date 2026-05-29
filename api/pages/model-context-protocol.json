@@ -8,7 +8,7 @@
   "definition": "The Model Context Protocol (MCP) is an open standard published by Anthropic in November 2024 that defines a JSON-RPC 2.0-based client\u2013server protocol for connecting Large Language Model inference hosts (MCP clients) to external capability providers (MCP servers), exposing tools, resources, an...",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure (Category)"
     },
     {

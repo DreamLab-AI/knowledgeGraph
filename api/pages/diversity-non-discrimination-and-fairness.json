@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:diversity-non-discrimination-and-fairness",
   "domain": "artificial-intelligence",
-  "definition": "Diversity Non-Discrimination and Fairness is a trustworthiness dimension ensuring AI systems avoid unfair bias, ensure equitable treatment across demographic groups, implement accessibility and universal design, and enable inclusive stakeholder participation throughout development and deployment.",
+  "definition": "Diversity, Non-Discrimination, and Fairness is a foundational trustworthiness dimension of responsible AI that requires systems to avoid unfair bias against protected characteristics (sex, race, religion, disability, age, sexual orientation), ensure equitable treatment and outcomes across demographic groups, implement accessibility and universal design for people with diverse abilities, and enable inclusive stakeholder participation throughout the AI development lifecycle. It encompasses three interdependent pillars: unfair-bias avoidance through pre-processing data corrections, in-processing fairness constraints, and post-processing adjustments; accessibility and universal design aligned with WCAG and the European Accessibility Act; and participatory design methodologies that co-create systems with affected communities. Legal mandates including the EU AI Act and GDPR enforce these requirements with substantial penalties.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -13,21 +13,82 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      },
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      },
+      {
+        "id": "urn:ngm:class:equity",
+        "label": "Equity"
+      },
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:bias",
+        "label": "Bias"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-bias",
+        "label": "Algorithmic Bias"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:human-rights",
+        "label": "Human Rights"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      },
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "id": "urn:ngm:class:ai-impact-assessment",
+        "label": "AI Impact Assessment"
+      },
+      {
+        "id": "urn:ngm:class:stakeholder",
+        "label": "Stakeholder"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -7,7 +7,11 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - relatedTo [[Carbon Credits]]
+  - relatedTo [[Sustainability]]
+  - relatedTo [[Blockchain Energy Consumption]]
+  - supports [[AI Governance and Ethics]]
+  - contrastsWith [[Bitcoin Environmental Issues]]
 
 - ### Content
   - The responsible stewardship of natural resources and environmental systems in AI development and deployment, minimising ecological harm whilst potentially leveraging AI to address environmental challenges including climate change, biodiversity loss and resource depletion.

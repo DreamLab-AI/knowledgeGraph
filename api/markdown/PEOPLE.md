@@ -46,16 +46,27 @@ public:: true
   "@id": "urn:ngm:class:people",
   "@type": "Class",
   "label": "PEOPLE",
-  "definition": "PEOPLE is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A curated personal contact and collaboration index tracking domain experts, industry practitioners, and potential collaborators relevant to AI, immersive technology, and spatial computing initiatives. Entries record relationship context, project overlap, and follow-up actions to support relationship management and opportunity development.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
-  "quality": 0.35,
+  "qualityScore": 0.7,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:education-and-ai", "label": "Education and AI"},
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
+      {"@id": "urn:ngm:class:collaboration", "label": "Collaboration"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
+      {"@id": "urn:ngm:class:knowledge-management", "label": "Knowledge Management"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -101,14 +112,15 @@ public:: true
 
 
 - ### Definition
-  - PEOPLE is a concept within the ngm domain.
+  - A curated personal contact and collaboration index tracking domain experts, industry practitioners, and potential collaborators relevant to AI, immersive technology, and spatial computing initiatives. Entries record relationship context, project overlap, and follow-up actions to support relationship management and opportunity development.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:PEOPLE
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - relatedTo: [[Education and AI]], [[Large Language Models]], [[Collaboration]]
+  - supports: [[Generative AI]], [[Knowledge Management]]
 
 - ### Content
   # Nick Avis

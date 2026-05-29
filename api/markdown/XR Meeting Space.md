@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:xr-meeting-space",
   "@type": "Class",
   "label": "XR Meeting Space",
-  "definition": "Virtual collaboration environments accessed through extended reality devices that enable remote participants to interact as avatars or volumetric representations in shared 3D spaces, supporting meetings, presentations, design reviews, and team collaboration with spatial audio and gesture-based co...",
+  "definition": "Virtual collaboration environments accessed through extended reality devices that enable remote participants to interact as avatars or volumetric representations in shared 3D spaces, supporting meetings, presentations, design reviews, and team collaboration with spatial audio and gesture-based communication. XR meeting spaces extend traditional video conferencing by providing persistent, spatially aware environments where presence, proximity, and embodied interaction improve engagement and coordination.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -59,7 +60,25 @@ public:: true
       "label": "Virtual Collaboration"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:virtual-reality-platform", "label": "Virtual Reality Platform"},
+      {"@id": "urn:ngm:class:avatar", "label": "Avatar"},
+      {"@id": "urn:ngm:class:spatial-audio", "label": "Spatial Audio"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"},
+      {"@id": "urn:ngm:class:haptics", "label": "Haptics"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:distributed-work", "label": "Distributed Work"},
+      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"},
+      {"@id": "urn:ngm:class:metaverse-application", "label": "Metaverse Application"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -109,6 +128,10 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Virtual Collaboration]]
+  - **requires**: Virtual Reality Platform (XR device and runtime), Avatar (user embodiment in shared space), Spatial Audio (directional presence cues)
+  - **uses**: Extended Reality (mixed/VR/AR display modalities), Haptics (physical interaction feedback)
+  - **enables**: Distributed Work (location-independent team operation), Distributed Collaboration (cross-geography coordinated work)
+  - **relatedTo**: Metaverse (broader virtual environment ecosystem), Metaverse Application (application category this instantiates)
 
 - ### Content
 

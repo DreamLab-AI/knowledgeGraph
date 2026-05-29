@@ -46,20 +46,54 @@ public:: true
   "@id": "urn:ngm:class:robot-joint",
   "@type": "Class",
   "label": "Robot Joint",
-  "definition": "Robot Joint - Articulation between robot links allowing relative motion",
+  "definition": "A Robot Joint is a mechanical articulation between two robot links that permits controlled relative motion — rotational, translational, or compound — enabling the full kinematic range of a robotic arm or manipulator. Joint types include revolute, prismatic, and spherical, each characterised by degrees of freedom and load capacity.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-actuation-and-control",
       "label": "Actuation and Control"
     }
   ],
-  "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      },
+      {
+        "@id": "urn:ngm:class:robot-sensor",
+        "label": "Robot Sensor"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ]
   }
 }
 ```
@@ -96,7 +130,7 @@ public:: true
 
 
 - ### Definition
-  - **Robot Joint** - Articulation between robot links allowing relative motion
+  - A Robot Joint is a mechanical articulation between two robot links that permits controlled relative motion — rotational, translational, or compound — enabling the full kinematic range of a robotic arm or manipulator. Joint types include revolute, prismatic, and spherical, each characterised by degrees of freedom and load capacity.
 
 - ### Semantic Classification
   - owl-class:: robotics:RobotJoint
@@ -104,7 +138,12 @@ public:: true
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - is-subclass-of:: [[Robotics]]
+  - Part of [[Robotics]] as a fundamental structural component
+  - Requires [[Control System]] for torque and position regulation
+  - Requires [[Robot Sensor]] for joint state feedback (encoders, force sensors)
+  - Uses [[Inverse Kinematics]] to resolve target poses into joint angles
+  - Related to [[Path Planning]] which generates joint-space trajectories
+  - Related to [[Digital Twin]] for joint simulation and predictive maintenance
 
 - ### Content
   - ### Original Content

@@ -62,24 +62,41 @@ public:: true
   "@id": "urn:ngm:class:smart-contract-coordination",
   "@type": "Class",
   "label": "Smart Contract Coordination",
-  "definition": "\"The use of blockchain smart contracts—self-executing programs stored on distributed ledgers—to automate coordination, task allocation, payment distribution, and milestone verification in distributed teams, enabling trustless collaboration through cryptographically enforced agreements that execut...",
+  "definition": "Smart Contract Coordination is the use of blockchain smart contracts—self-executing programs stored on distributed ledgers—to automate coordination, task allocation, payment distribution, and milestone verification in distributed teams, enabling trustless collaboration through cryptographically enforced agreements that execute deterministically without centralised intermediaries. This approach removes the need for escrow agents and manual approvals by encoding collaboration rules as immutable on-chain logic triggered by verifiable real-world events. It is foundational to decentralised autonomous organisations and cryptocurrency-based remuneration workflows.",
   "domain": "distributed-collaboration",
   "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:dc-protocol-and-infra",
       "label": "Protocol and Infrastructure"
-    },
-    {
-      "@id": "urn:ngm:class:smart-contract",
-      "label": "Smart Contract"
     }
   ],
-  "quality": 0.5,
+  "quality": 0.75,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:blockchain-infrastructure", "label": "Blockchain Infrastructure"},
+      {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"},
+      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
+      {"@id": "urn:ngm:class:cryptocurrency-remuneration", "label": "Cryptocurrency Remuneration"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:dao-governance", "label": "DAO Governance"},
+      {"@id": "urn:ngm:class:decentralised-autonomous-organisation", "label": "Decentralised Autonomous Organisation"},
+      {"@id": "urn:ngm:class:blockchain-collaboration", "label": "Blockchain Collaboration"},
+      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:payment-system", "label": "Payment System"},
+      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"}
+    ]
   }
 }
 ```

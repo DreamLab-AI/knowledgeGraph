@@ -8,6 +8,10 @@
 
 - ### Relationships
   - bridges-to:: [[Computer Vision]]
+  - part-of:: [[Transformer]], [[Decoder]]
+  - requires:: [[Self Attention]]
+  - enables:: [[GPT]], [[Language Modeling]]
+  - contrasts-with:: [[Transformer Architecture]] (bidirectional encoders use full attention)
 
 - ### Content
   - An attention mechanism where each position can only attend to earlier positions in the sequence, preventing information flow from future tokens, essential for autoregressive generation.

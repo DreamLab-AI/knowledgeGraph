@@ -42,15 +42,28 @@ public:: true
   "@id": "urn:ngm:class:knowledge-management",
   "@type": "Class",
   "label": "Knowledge Management",
-  "definition": "Knowledge Management is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Knowledge Management is the systematic practice of capturing, organising, sharing, and applying the collective knowledge of an organisation or platform to improve decision-making and innovation. In AI-augmented and spatial computing contexts it encompasses knowledge graphs, ontologies, semantic search, and retrieval-augmented generation pipelines that make tacit and explicit knowledge discoverable and reusable by both human users and autonomous agents.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
+      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
+      {"@id": "urn:ngm:class:semantic-web", "label": "Semantic Web"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:ontology", "label": "Ontology"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -87,14 +100,18 @@ public:: true
 
 
 - ### Definition
-  - Knowledge Management is a concept within the metaverse domain. Further enrichment pending.
+  - Knowledge Management is the systematic practice of capturing, organising, sharing, and applying the collective knowledge of an organisation or platform to improve decision-making and innovation. In AI-augmented and spatial computing contexts it encompasses knowledge graphs, ontologies, semantic search, and retrieval-augmented generation pipelines that make tacit and explicit knowledge discoverable and reusable by both human users and autonomous agents.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:KnowledgeManagement
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses [[Knowledge Graph]]
+  - uses [[Knowledge Representation]]
+  - enables [[Retrieval-Augmented Generation]]
+  - enables [[Semantic Web]]
+  - relatedTo [[Ontology]]
 
 - ### Content
 

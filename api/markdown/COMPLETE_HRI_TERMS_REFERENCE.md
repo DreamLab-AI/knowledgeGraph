@@ -78,15 +78,30 @@ public:: true
   "@id": "urn:ngm:class:complete-hri-terms-reference",
   "@type": "Class",
   "label": "COMPLETE_HRI_TERMS_REFERENCE",
-  "definition": "A structured terminology reference documenting standardised vocabulary for Human-Robot Interaction, encompassing Communication Protocols, Behavioural Patterns, and Engagement Modalities.",
+  "definition": "A structured terminology reference documenting standardised vocabulary for Human-Robot Interaction (HRI), encompassing communication protocols, behavioural patterns, and engagement modalities. It enables consistent annotation and semantic understanding of interaction contexts across robotic and autonomous systems, aligned with IEEE and ISO standards.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-human-robot-interaction",
       "label": "Human-Robot Interaction"
     }
   ],
+  "relations": {
+    "supports": [
+      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"},
+      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:communication-protocol", "label": "Communication Protocol"},
+      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:social-robotics", "label": "Social Robotics"},
+      {"@id": "urn:ngm:class:robotics-domain", "label": "Robotics Domain"}
+    ]
+  },
   "quality": 0.4,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -176,7 +191,9 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - supports:: [[Human Robot Interaction]], [[Robotics]]
+  - uses:: [[Communication Protocol]], [[Knowledge Representation]]
+  - related-to:: [[Social Robotics]], [[Robotics Domain]]
 
 - ### Content
   - The Complete HRI Terms Reference provides standardised vocabulary and structured definitions for human-robot interaction, enabling consistent annotation, semantic understanding, and cross-domain terminology alignment for robotic systems.

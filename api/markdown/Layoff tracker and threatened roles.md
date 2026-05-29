@@ -33,15 +33,27 @@ public:: true
   "@id": "urn:ngm:class:layoff-tracker-and-threatened-roles",
   "@type": "Class",
   "label": "Layoff tracker and threatened roles",
-  "definition": "Layoff tracker and threatened roles is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A curated record of mass layoffs in the technology sector from 2023 onwards, cataloguing headcount reductions at major firms alongside UK government estimates that AI automation may displace 10–30% of existing jobs. The tracker contextualises how AI adoption—particularly large language models and agentic AI—is accelerating workforce restructuring across white-collar roles.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
+      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"},
+      {"@id": "urn:ngm:class:economics", "label": "Economics"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
+      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -72,14 +84,15 @@ public:: true
 
 
 - ### Definition
-  - Layoff tracker and threatened roles is a concept within the ngm domain.
+  - A curated record of mass layoffs in the technology sector from 2023 onwards, cataloguing headcount reductions at major firms alongside UK government estimates that AI automation may displace 10–30% of existing jobs. The tracker contextualises how AI adoption—particularly large language models and agentic AI—is accelerating workforce restructuring across white-collar roles.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:LayoffTrackerAndThreatenedRoles
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - relatedTo:: [[Artificial Intelligence]], [[Agentic AI]], [[Economics]]
+  - dependsOn:: [[Large Language Models]], [[Generative AI]]
 
 - ### Content
   - #Public page

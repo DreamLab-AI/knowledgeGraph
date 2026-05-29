@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:parallel-robot",
   "domain": "robotics",
-  "definition": "Parallel robot has end-effector directly connected to base by multiple separate linkages working simultaneously.",
+  "definition": "A robot whose end-effector is connected to the base by multiple independent, simultaneously actuated kinematic chains (limbs), giving it a closed-loop structure. Parallel robots achieve high rigidity, speed, and accuracy with low moving mass; canonical examples include the Delta robot and Stewart platform used in pick-and-place, machining, and flight simulation applications.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-robot-type",
@@ -17,21 +17,65 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:delta-robot",
+        "label": "Delta Robot"
+      },
+      {
+        "id": "urn:ngm:class:stewart-platform",
+        "label": "Stewart Platform"
+      }
+    ],
     "requires": [],
     "enables": [],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:cylindrical-robot",
+        "label": "Cylindrical Robot"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:forward-kinematics",
+        "label": "Forward Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:robot-joint",
+        "label": "Robot Joint"
+      },
+      {
+        "id": "urn:ngm:class:electric-linear-actuator",
+        "label": "Electric Linear Actuator"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:scara-robot",
+        "label": "SCARA Robot"
+      },
+      {
+        "id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:end-effector",
+        "label": "End Effector"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:virtual-objects",
   "@type": "Class",
   "label": "Virtual Objects",
-  "definition": "Digital 3D assets existing within virtual environments that users can interact with, own, trade, and customize, including avatars, wearables, furniture, vehicles, and environmental elements, often represented as NFTs for verifiable ownership in blockchain-based metaverses.",
+  "definition": "Digital 3D assets existing within virtual environments that users can interact with, own, trade, and customise, including avatars, wearables, furniture, vehicles, and environmental elements. NFT smart contracts on blockchain networks provide verifiable, transferable ownership records, while interoperable formats such as glTF and VRM support cross-platform portability of virtual objects.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
@@ -59,7 +60,22 @@ public:: true
       "label": "Digital Asset"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:nft", "label": "NFT"},
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:avatar-wearable", "label": "Avatar Wearable"},
+      {"@id": "urn:ngm:class:avatar-customization", "label": "Avatar Customization"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:virtual-economy", "label": "Virtual Economy"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -109,6 +125,10 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Digital Asset]]
+  - **uses**: [[NFT]], [[Blockchain]] — NFT smart contracts provide verifiable, transferable ownership of unique virtual objects on-chain
+  - **hasPart**: [[Avatar Wearable]], [[Avatar Customization]] — virtual objects include wearable items and customisation accessories for avatars
+  - **requires**: [[Real-Time Rendering]] — virtual objects must be rendered at interactive frame rates within their host environments
+  - **enables**: [[Virtual Economy]] — tradeable virtual objects are the primary commodities that constitute virtual economies
 
 - ### Content
 

@@ -1,12 +1,18 @@
 - ### Definition
-  - Metaverse as Markets is a concept within the ngm domain.
+  - A conceptual framing of metaverse platforms as economic ecosystems in which virtual goods, services, experiences, and digital assets are produced, traded, and consumed. This view foregrounds creator economies, digital ownership, interoperable asset standards, and market dynamics including adoption curves, pricing models, and regulatory challenges specific to virtual worlds.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:MetaverseAsMarkets
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **hasPart** [[Digital Goods]] — virtual goods are the tradeable units within metaverse market ecosystems
+  - **hasPart** [[Creator Economy]] — creator monetisation is the supply side of metaverse markets
+  - **requires** [[Digital Identity]] — market participation requires verified, portable digital identities
+  - **requires** [[Interoperability]] — asset portability across platforms requires interoperability standards
+  - **relatedTo** [[Digital Economy]] — metaverse markets are a sub-domain of the broader digital economy
+  - **relatedTo** [[Blockchain]] — blockchain provides ownership provenance and exchange infrastructure for virtual assets
+  - **dependsOn** [[Metaverse Platform]] — markets operate within and depend on underlying platform infrastructure
 
 - ### Content
   - #Public page

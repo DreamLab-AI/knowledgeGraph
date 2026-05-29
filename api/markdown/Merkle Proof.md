@@ -66,7 +66,7 @@ public:: true
   "@id": "urn:ngm:class:merkle-proof",
   "@type": "Class",
   "label": "Merkle Proof",
-  "definition": "Cryptographic inclusion proof within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "A cryptographic proof of inclusion or exclusion that demonstrates whether a specific data element is part of a Merkle tree, requiring only O(log n) sibling hashes rather than the full data set. Merkle proofs underpin light-client verification in blockchain systems and enable simplified payment verification (SPV) without downloading the entire chain.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -83,7 +83,23 @@ public:: true
       "label": "CryptographicPrimitive"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"},
+      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
+      {"@id": "urn:ngm:class:merkle-root", "label": "Merkle Root"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:blockchain-scalability", "label": "Blockchain Scalability"},
+      {"@id": "urn:ngm:class:cryptographic-security", "label": "Cryptographic Security"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:block-header", "label": "Block Header"},
+      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"},
+      {"@id": "urn:ngm:class:cryptographic-commitment", "label": "Cryptographic Commitment"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

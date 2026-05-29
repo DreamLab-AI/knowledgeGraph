@@ -182,16 +182,33 @@ public:: true
   "@id": "urn:ngm:class:us-regulatory-framework",
   "@type": "Class",
   "label": "US Regulatory Framework",
-  "definition": "US cryptocurrency regulation operates through a fragmented multi-agency framework where SEC|Securities and Exchange Commission applies securities law to tokens, FinCEN|Financial Crimes Enforcement Network supervises money transmission and AMLKYCCompliance|anti-money laundering, the",
+  "definition": "The US Regulatory Framework for cryptocurrency operates through a fragmented multi-agency structure in which the SEC applies securities law to tokens, FinCEN supervises money transmission and anti-money laundering compliance, the CFTC regulates commodity-classified digital assets and derivatives, and the OCC addresses banking integration. This jurisdictional overlap creates significant compliance complexity for exchanges, DeFi protocols, and digital asset issuers absent comprehensive Congressional legislation.",
   "domain": "blockchain",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-governance-and-regulation",
       "label": "Governance and Regulation"
     }
   ],
-  "quality": 0.4,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:aml-kyc-compliance", "label": "AML KYC Compliance"},
+      {"@id": "urn:ngm:class:blockchain-compliance", "label": "Blockchain Compliance"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:securities-regulation", "label": "Securities Regulation"},
+      {"@id": "urn:ngm:class:stablecoin-regulation", "label": "Stablecoin Regulation"},
+      {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:bc-governance-and-regulation", "label": "Governance and Regulation"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -410,7 +427,10 @@ public:: true
   - belongs-to-domain:: [[BlockchainDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires**: AML KYC Compliance, Blockchain Compliance
+  - **relatedTo**: Securities Regulation, Stablecoin Regulation, Digital Asset
+  - **contrastsWith**: Governance and Regulation (bc-governance-and-regulation)
+  - **dependsOn**: Blockchain Governance
 
 - ### Content
   - The United States regulatory framework for [[Cryptocurrency]] and [[Blockchain]] technology represents one of the world's most complex and fragmented approaches, characterised by overlapping jurisdiction amongst multiple federal agencies, divergent state-level regulation, and fundamental disagreements about whether digital assets constitute securities, commodities, currencies, or entirely new asset classes requiring bespoke regulation. Unlike the European Union's comprehensive [[MiCA]] framework or jurisdictions with single cryptocurrency regulators, the US employs a multi-agency approach where the Securities and Exchange Commission ([[SEC]]), Commodity Futures Trading Commission ([[CFTC]]), Financial Crimes Enforcement Network ([[FinCEN]]), Office of the Comptroller of the Currency (OCC), Federal Reserve, Department of Justice (DOJ), Internal Revenue Service ([[IRS]]), and various state regulators assert authority over different aspects of crypto activity. The fundamental tension centres on the Howey Test's application to digital assets: the SEC has aggressively pursued enforcement actions characterising most cryptocurrencies as unregistered securities, whilst the CFTC claims commodities jurisdiction over major cryptocurrencies like [[Bitcoin]] and [[Ethereum]], and industry advocates argue many tokens are neither securities nor commodities but rather software, data, or new categories requiring Congressional action. This regulatory fragmentation creates significant compliance uncertainty for cryptocurrency businesses, which must navigate Bank Secrecy Act requirements through FinCEN, potential securities registration with the SEC, commodities oversight by the CFTC, state money transmitter licensing, tax reporting to the IRS, and consumer protection enforcement by the Federal Trade Commission (FTC). The absence of comprehensive federal legislation specifically addressing cryptocurrency has forced regulators to apply decades-old laws written for traditional finance to novel blockchain applications, generating ongoing litigation and regulatory arbitrage. State-level approaches vary dramatically, from New York's stringent BitLicense regime requiring extensive authorisation to Wyoming's blockchain-friendly statutes creating special-purpose depository institutions and recognising [[DAO]] legal status, to states providing minimal specific cryptocurrency regulation. Congressional efforts to establish comprehensive federal frameworks have repeatedly stalled amid partisan disagreements, industry lobbying, and jurisdictional battles between committees, leaving enforcement actions and administrative guidance as the primary regulatory development mechanisms. This approach contrasts sharply with the EU's legislative clarity under MiCA or Asia-Pacific jurisdictions' proactive regulatory frameworks, generating debate about whether US fragmentation represents healthy regulatory competition and innovation accommodation or chaotic uncertainty harming competitiveness and consumer protection.

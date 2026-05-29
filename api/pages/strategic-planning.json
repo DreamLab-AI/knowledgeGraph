@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:strategic-planning",
   "domain": "spatial-computing",
-  "definition": "Strategic Planning is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Strategic Planning is an organisational process for defining long-term direction, priorities, and resource allocation to achieve goals within a given domain. In spatial computing and metaverse contexts, it encompasses technology roadmaps, governance design, and stakeholder alignment for platform development.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -14,20 +14,48 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      },
+      {
+        "id": "urn:ngm:class:digital-transformation",
+        "label": "Digital Transformation"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:stakeholder",
+        "label": "Stakeholder"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
+    ]
   },
   "wikilinks": [
     {

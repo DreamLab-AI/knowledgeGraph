@@ -8,7 +8,7 @@
   "definition": "Training data encompasses all curated, collected, and pre-processed corpora of examples \u2014 text, images, audio, video, structured records, code, and synthetic artefacts \u2014 ingested during the learning phase of Machine Learning and Foundation Models to optimise model parameters via gradient-...",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure (Category)"
     },
     {

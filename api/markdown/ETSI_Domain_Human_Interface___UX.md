@@ -86,16 +86,32 @@ public:: true
   "@id": "urn:ngm:class:etsi-domain-human-interface-ux",
   "@type": "Class",
   "label": "ETSI_Domain_Human_Interface___UX",
-  "definition": "An ETSI subdomain focusing on user experience design, usability engineering, and interaction paradigms optimising satisfaction, efficiency, and accessibility in VirtualEnvironment|immersive digital environments.",
+  "definition": "An ETSI subdomain focusing on user experience design, usability engineering, and interaction paradigms optimising satisfaction, efficiency, and accessibility in immersive digital environments. It covers design principles, usability testing, accessibility compliance, inclusive UX design, and AI-driven adaptive interfaces aligned with ISO 9241-110 dialogue principles and ETSI GR ARF 010 specifications.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-interaction",
       "label": "Interaction Technology"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:etsi-domain-human-interface", "label": "ETSI_Domain_Human_Interface"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:virtual-environment", "label": "Virtual Environment"},
+      {"@id": "urn:ngm:class:accessibility-standards", "label": "Accessibility Standards"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
+      {"@id": "urn:ngm:class:telecollaboration", "label": "Telecollaboration"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:inclusive-xr-design", "label": "Inclusive Xr Design"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -194,7 +210,10 @@ public:: true
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **partOf**: [[ETSI_Domain_Human_Interface]]
+  - **requires**: [[Virtual Environment]], [[Accessibility Standards]]
+  - **enables**: [[Immersive Experience]], [[Telecollaboration]]
+  - **relatedTo**: [[Inclusive Xr Design]]
 - ### Content
   - The ETSI Human Interface UX domain focuses on user experience design and accessibility optimising satisfaction and inclusion in virtual environments.
   - ### Original Content

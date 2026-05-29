@@ -8,7 +8,7 @@
   "definition": "The series of distinct phases through which an artificial intelligence system progresses from initial conception to eventual decommissioning, encompassing planning, design, development, verification, deployment, operation, monitoring, maintenance, and retirement, with each phase involving specifi...",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure (Category)"
     }
   ],

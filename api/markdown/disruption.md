@@ -1,12 +1,14 @@
 - ### Definition
-  - Disruption is a concept within the ngm domain.
+  - Disruption describes the process by which emerging technologies, platforms, or economic models radically displace incumbent systems by offering superior capability, lower cost, or fundamentally new value propositions. In the context of AI, blockchain, and spatial computing, disruption manifests as wholesale replacement of legacy industries—finance, knowledge work, supply chain, governance—rather than incremental improvement.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:Disruption
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **enables**: [[Disruptive Technology]], [[Decentralised Finance]]
+  - **relatedTo**: [[Blockchain]], [[Generative AI]], [[Emerging tech stack]]
+  - **contrastsWith**: [[Supply Chain Management]]
 
   - bridges-to:: [[Blockchain]] (bc)
 - ### Content

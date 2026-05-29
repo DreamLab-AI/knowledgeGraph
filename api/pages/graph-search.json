@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:graph-search",
   "domain": "infrastructure",
-  "definition": "Graph Search is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Algorithms that systematically explore graph-structured state spaces to find optimal or feasible paths between configurations, forming the computational foundation for robot motion planning, task planning, and navigation. Classical methods (BFS, Dijkstra, A*) guarantee completeness or optimality on discrete graphs; sampling-based variants (RRT, PRM) address high-dimensional continuous configuration spaces.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-data-management",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:navigation",
+        "label": "Navigation"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:graph-algorithms",
+        "label": "Graph Algorithms"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

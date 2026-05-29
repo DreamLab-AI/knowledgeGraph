@@ -50,9 +50,10 @@ public:: true
   "@id": "urn:ngm:class:feature-engineering",
   "@type": "Class",
   "label": "Feature Engineering",
-  "definition": "Feature Engineering is a artificial intelligence concept and a type of Data Preprocessing.",
+  "definition": "The process of using domain knowledge and statistical transformations to construct, select, and encode input variables from raw data so that they better represent the underlying predictive signal for machine learning models. Techniques include polynomial expansion, normalisation, temporal feature extraction, embedding of categorical variables, and dimensionality reduction via PCA or autoencoders.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
@@ -68,6 +69,40 @@ public:: true
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "@id": "urn:ngm:class:feature-store",
+        "label": "Feature Store"
+      }
+    ]
   }
 }
 ```
@@ -109,7 +144,7 @@ public:: true
 
 
 - ### Definition
-  - Feature Engineering is a concept within the ai domain.
+  - The process of using domain knowledge and statistical transformations to construct, select, and encode input variables from raw data so that they better represent the underlying predictive signal for machine learning models. Techniques include polynomial expansion, normalisation, temporal feature extraction, embedding of categorical variables, and dimensionality reduction via PCA or autoencoders.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:FeatureEngineering
@@ -118,6 +153,10 @@ public:: true
 - ### Relationships
   - is-subclass-of:: [[Data Preprocessing]]
   - bridges-to:: [[Autonomous Robot]], [[Digital Twin]]
+  - Enables: [[Machine Learning]], [[Model Training]]
+  - Uses: [[Data Pipeline]]
+  - Related To: [[Transfer Learning]], [[Feature Store]]
+  - Bridges To: [[Digital Twin]]
 
 - ### Content
 

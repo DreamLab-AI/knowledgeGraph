@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:predictive-personalization",
   "domain": "artificial-intelligence",
-  "definition": "Predictive Personalization is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "The use of machine learning models to anticipate individual user preferences and dynamically tailor content, recommendations, interfaces, and experiences before an explicit request is made. Systems combine behavioural analytics, user profiling, and predictive models to deliver contextually relevant personalisation at scale.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-application",
@@ -13,21 +13,61 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:behavioral-analytics",
+        "label": "Behavioral Analytics"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-model",
+        "label": "Machine Learning Model"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:recommendation-engine",
+        "label": "Recommendation Engine"
+      },
+      {
+        "id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      },
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ]
   },
   "wikilinks": [
     {

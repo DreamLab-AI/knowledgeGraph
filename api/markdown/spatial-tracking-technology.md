@@ -1,12 +1,15 @@
 - ### Definition
-  - Spatial Tracking Technology is a concept within the metaverse domain. Further enrichment pending.
+  - Hardware and software systems that determine the position and orientation of physical objects, users, or devices in three-dimensional space in real time. Spatial tracking underpins head-mounted display tracking, hand and eye tracking, and room-scale boundary definition in virtual and mixed reality systems, enabling accurate registration between physical movement and virtual scene response.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:SpatialTrackingTechnology
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Has part [[Hand Tracking]], [[Eye Tracking]], [[Motion Tracking]]
+  - Enables [[Room Scale]], [[Mixed Reality]]
+  - Requires [[Sensor Fusion]]
+  - Related to [[Spatial Tracking System]], [[Haptic Feedback]]
 
 - ### Content
 

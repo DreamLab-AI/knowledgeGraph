@@ -42,7 +42,7 @@ public:: true
   "@id": "urn:ngm:class:wireless-value-realization",
   "@type": "Class",
   "label": "Wireless Value Realization",
-  "definition": "Wireless Value Realization is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Wireless Value Realization is the strategic process of identifying, measuring, and maximising the business and operational benefits derived from wireless technologies — including 5G, Wi-Fi 6/7, Bluetooth, and LPWAN — by aligning connectivity investments with productivity, efficiency, and innovation outcomes. It encompasses analytics-driven optimisation of wireless data flows, integration with edge computing and IoT sensor networks, and governance frameworks that translate connectivity capability into quantifiable organisational value. The concept moves beyond infrastructure provision to treat wireless as an active enabler of digital transformation.",
   "domain": "spatial-computing",
   "maturity": "emerging",
   "subClassOf": [
@@ -51,11 +51,32 @@ public:: true
       "label": "Platform and Environment"
     }
   ],
-  "quality": 0.5,
+  "quality": 0.75,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
+      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"},
+      {"@id": "urn:ngm:class:io-t-sensor-network", "label": "IoT Sensor Network"},
+      {"@id": "urn:ngm:class:6-g-network-slice", "label": "6G Network Slice"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:digital-transformation", "label": "Digital Transformation"},
+      {"@id": "urn:ngm:class:edge-ai-for-smart-cities", "label": "Edge AI for Smart Cities"},
+      {"@id": "urn:ngm:class:io-t-ai-integration", "label": "IoT AI Integration"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:edge-cloud-collaboration", "label": "Edge-Cloud Collaboration"},
+      {"@id": "urn:ngm:class:industrial-io-t", "label": "Industrial IoT"},
+      {"@id": "urn:ngm:class:bandwidth-adaptation", "label": "Bandwidth Adaptation"},
+      {"@id": "urn:ngm:class:latency", "label": "Latency"},
+      {"@id": "urn:ngm:class:edge-mesh-network", "label": "Edge Mesh Network"},
+      {"@id": "urn:ngm:class:io-t-sensors", "label": "Io T Sensors"}
+    ]
   }
 }
 ```

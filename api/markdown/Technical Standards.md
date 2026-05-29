@@ -48,7 +48,7 @@ public:: true
   "label": "Technical Standards",
   "definition": "Formal specifications, protocols, and guidelines that define how metaverse technologies, components, and systems should operate and interact, ensuring interoperability, quality, and compatibility across different platforms and implementations.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-standards-and-interop",
@@ -59,6 +59,20 @@ public:: true
       "label": "Standards"
     }
   ],
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"},
+      {"@id": "urn:ngm:class:cross-platform-interoperability", "label": "Cross-Platform Interoperability"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:interoperability-standard", "label": "Interoperability Standard"},
+      {"@id": "urn:ngm:class:3-d-asset-standard", "label": "3D Asset Standard"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:universal-scene-description", "label": "Universal Scene Description"},
+      {"@id": "urn:ngm:class:3-d-file-format", "label": "3D File Format"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
@@ -115,6 +129,12 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Standards]]
+  - enables [[Interoperability]]
+  - enables [[Cross-Platform Interoperability]]
+  - standardizedBy [[Interoperability Standard]]
+  - standardizedBy [[3D Asset Standard]]
+  - relatedTo [[Universal Scene Description]]
+  - relatedTo [[3D File Format]]
 
 - ### Content
 

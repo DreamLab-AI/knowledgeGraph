@@ -8,6 +8,14 @@
 
 - ### Relationships
   - bridges-to:: [[AI Agent System]]
+  - Requires [[Accountability]]
+  - Requires [[AI Governance and Ethics]]
+  - Supports [[AI Safety]]
+  - Supports [[Transparency Notice]]
+  - Supports [[Regulatory Compliance]]
+  - Related To [[AI Risk]]
+  - Related To [[Governance]]
+  - Contrasts With [[artificial superintelligence]]
 
 - ### Content
   - A normative framework establishing standards for responsible [[Artificial Intelligence]] development, deployment, and oversight within [[Digital Systems]]. It encompasses mechanisms for bias mitigation, fairness assessment, transparency requirements, and accountability structures that align AI capabilities with [[Human Values]] and societal interests.

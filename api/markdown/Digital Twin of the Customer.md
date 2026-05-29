@@ -46,7 +46,7 @@ public:: true
   "@id": "urn:ngm:class:digital-twin-of-the-customer",
   "@type": "Class",
   "label": "Digital Twin of the Customer",
-  "definition": "Digital Twin of the Customer is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "A Digital Twin of the Customer is a dynamic virtual replica that mirrors an individual customer's behaviours, preferences, interactions, and decision-making patterns within a spatially-aware digital environment, enabling real-time simulation and predictive analysis of customer journeys. It integrates IoT telemetry, AI-driven behavioural modelling, and immersive 3D visualisations to create a continuously updated model reflecting how customers engage with products, services, and physical or digital spaces. Organisations use these twins to personalise experiences, predict service needs, and test interventions before live deployment.",
   "domain": "spatial-computing",
   "maturity": "emerging",
   "subClassOf": [
@@ -55,11 +55,32 @@ public:: true
       "label": "Platform and Environment"
     }
   ],
-  "quality": 0.5,
+  "quality": 0.75,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
+      {"@id": "urn:ngm:class:digital-twin-ecosystem", "label": "Digital Twin Ecosystem"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:behavioral-modeling", "label": "Behavioral Modeling"},
+      {"@id": "urn:ngm:class:predictive-analytics", "label": "Predictive Analytics"},
+      {"@id": "urn:ngm:class:data-analytics", "label": "Data Analytics"},
+      {"@id": "urn:ngm:class:simulation", "label": "Simulation"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:digital-twin-technology", "label": "Digital Twin Technology"},
+      {"@id": "urn:ngm:class:predictive-personalization", "label": "Predictive Personalization"},
+      {"@id": "urn:ngm:class:recommendation-engine", "label": "Recommendation Engine"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"},
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+    ]
   }
 }
 ```

@@ -42,16 +42,33 @@ public:: true
   "@id": "urn:ngm:class:information-protection",
   "@type": "Class",
   "label": "Information Protection",
-  "definition": "Information Protection is a type of Blockchain in the blockchain domain.",
+  "definition": "The set of policies, cryptographic mechanisms, and technical controls applied in blockchain and distributed systems to ensure the confidentiality, integrity, and availability of on-chain and off-chain data. Information protection encompasses encryption, access control, privacy-preserving computation, and secure key management.",
   "domain": "blockchain",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-cryptographic-primitive",
       "label": "Cryptographic Primitive"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"},
+      {"@id": "urn:ngm:class:encryption", "label": "Encryption"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"},
+      {"@id": "urn:ngm:class:privacy", "label": "Privacy"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"},
+      {"@id": "urn:ngm:class:information-security", "label": "Information Security"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:privacy-preserving-blockchain", "label": "Privacy Preserving Blockchain"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -94,7 +111,10 @@ public:: true
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: [[Cryptography]], [[Encryption]]
+  - **requires**: [[Data Protection]], [[Privacy]]
+  - **supports**: [[Blockchain Governance]], [[Information Security]]
+  - **relatedTo**: [[Privacy Preserving Blockchain]]
 
 - ### Content
 

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:virtual-network",
   "domain": "spatial-computing",
-  "definition": "A software-defined network infrastructure that creates logical network segments over physical hardware, enabling isolated, configurable communication channels for metaverse platforms, cloud services, and distributed applications through technologies like VLANs, VPNs, and network slicing.",
+  "definition": "A software-defined network infrastructure that creates logical network segments over physical hardware, enabling isolated, configurable communication channels for metaverse platforms, cloud services, and distributed applications through technologies such as VLANs, VPNs, Software Defined Networking (SDN), and 5G network slicing. Virtual networks provide Quality of Service guarantees, traffic isolation, and bandwidth allocation essential for latency-sensitive XR workloads.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -17,20 +17,44 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:metaverse-platform",
+        "label": "Metaverse Platform"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
+    ],
     "relatedTo": []
   },
   "wikilinks": [

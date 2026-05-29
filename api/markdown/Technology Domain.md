@@ -66,21 +66,39 @@ public:: true
   "@id": "urn:ngm:class:technology-domain",
   "@type": "Class",
   "label": "Technology Domain",
-  "definition": "The foundational meta-domain encompassing all technology-related knowledge domains within the Narrative Gold Mine ontology, serving as the top-level classification for artificial intelligence, blockchain, metaverse, robotics, and telecollaboration systems.",
+  "definition": "The foundational meta-domain encompassing all technology-related knowledge domains within the Narrative Gold Mine ontology, serving as the top-level classification for artificial intelligence, blockchain, metaverse, robotics, and telecollaboration systems. It provides shared semantic infrastructure for cross-domain reasoning and relationship traversal.",
   "domain": "infrastructure",
   "maturity": "established",
-  "quality": 0.35,
-  "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
-  },
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
     }
-  ]
+  ],
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
+      {"@id": "urn:ngm:class:blockchain-domain", "label": "Blockchain Domain"},
+      {"@id": "urn:ngm:class:robotics-systems", "label": "Robotics Systems"},
+      {"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:digital-infrastructure", "label": "Digital Infrastructure"},
+      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"},
+      {"@id": "urn:ngm:class:domain-ontology", "label": "Domain Ontology"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:blockchain-application", "label": "Blockchain Application"},
+      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
+      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"}
+    ]
+  },
+  "quality": 0.8,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

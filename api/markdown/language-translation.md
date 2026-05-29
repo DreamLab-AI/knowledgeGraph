@@ -1,12 +1,17 @@
 - ### Definition
-  - Language Translation is a concept within the telecollaboration domain. Further enrichment pending.
+  - Language translation is the automated or human-assisted conversion of text or speech from a source language into a target language whilst preserving semantic meaning, tone, and cultural context. Modern neural machine translation systems, built on transformer architectures and large language models, enable real-time multilingual communication across distributed collaboration platforms and metaverse environments.
 
 - ### Semantic Classification
   - owl-class:: distributed-collaboration:LanguageTranslation
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Implements [[Machine Translation]]
+  - Uses [[Natural Language Processing]]
+  - Uses [[Large Language Models]]
+  - Uses [[Transformer]]
+  - Enables [[Localization]]
+  - Related to [[Distributed Collaboration]]
 
 - ### Content
 

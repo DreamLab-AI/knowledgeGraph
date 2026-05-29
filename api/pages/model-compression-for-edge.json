@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:model-compression-for-edge",
   "domain": "artificial-intelligence",
-  "definition": "Model Compression for Edge is the systematic application of techniques reducing neural network computational requirements, memory footprint, and inference latency to enable deployment on resource-constrained edge devices while maintaining acceptable accuracy levels through quantization, pruning, ...",
+  "definition": "Model Compression for Edge is the systematic application of techniques reducing neural network computational requirements, memory footprint, and inference latency to enable deployment on resource-constrained edge devices while maintaining acceptable accuracy levels through quantization, pruning, knowledge distillation, and architectural optimization.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -13,21 +13,73 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-distillation-for-edge",
+        "label": "Knowledge Distillation for Edge"
+      },
+      {
+        "id": "urn:ngm:class:model-pruning-for-edge-deployment",
+        "label": "Model Pruning for Edge Deployment"
+      },
+      {
+        "id": "urn:ngm:class:tiny-ml",
+        "label": "TinyML"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:edge-ai-system",
+        "label": "Edge AI System"
+      },
+      {
+        "id": "urn:ngm:class:embedded-ai-frameworks",
+        "label": "Embedded AI Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:federated-edge-learning",
+        "label": "Federated Edge Learning"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:edge-ai-accelerator",
+        "label": "Edge AI Accelerator"
+      },
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "id": "urn:ngm:class:inference-hardware",
+        "label": "Inference Hardware"
+      }
+    ]
   },
   "wikilinks": [
     {

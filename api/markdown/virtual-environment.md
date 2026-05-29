@@ -8,6 +8,12 @@
 
 - ### Relationships
   - is-subclass-of:: [[Metaverse]]
+  - hasPart [[Spatial Audio]]
+  - hasPart [[Avatar]]
+  - enables [[Immersive Experience]]
+  - enables [[Digital Twin]]
+  - uses [[Extended Reality]]
+  - uses [[XR Hardware]]
 
 - ### Content
 

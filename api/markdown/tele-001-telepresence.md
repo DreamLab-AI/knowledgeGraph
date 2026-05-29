@@ -1,12 +1,17 @@
 - ### Definition
-  - T E L E 001 telepresence is a concept within the telecollaboration domain. Further enrichment pending.
+  - TELE 001 Telepresence is a foundational concept within the telecollaboration domain defining the sense of physical presence transmitted across distance through audio-visual, haptic, and immersive communication technologies, underpinning higher-order telecollaboration and virtual meeting systems.
 
 - ### Semantic Classification
   - owl-class:: distributed-collaboration:TELE001telepresence
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - partOf [[Telecollaboration]]
+  - partOf [[Distributed Collaboration]]
+  - enables [[Virtual Collaboration]]
+  - enables [[Immersive Communication]]
+  - uses [[Audio System]]
+  - uses [[Avatar]]
 
 - ### Content
 

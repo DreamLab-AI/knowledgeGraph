@@ -7,7 +7,12 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses:: [[Transformer Architecture]]
+  - uses:: [[Encoder]]
+  - enables:: [[Knowledge Graph Construction]]
+  - enables:: [[Information Retrieval]]
+  - enables:: [[Question Answering]]
+  - partOf:: [[Natural Language Processing]]
 
 - ### Content
   - Named Entity Recognition (NER) is the NLP task of identifying and classifying named entities (persons, organisations, locations, dates, quantities) within unstructured text into predefined categories. NER systems employ transformer-based models (BERT, RoBERTa) with sequence labelling architectures (CRF, BiLSTM-CRF) to extract structured information from documents, enabling information extraction, knowledge graph construction, and semantic search.

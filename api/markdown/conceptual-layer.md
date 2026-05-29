@@ -6,7 +6,10 @@
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - contrasts-with:: [[Protocol Layer]] (implementation-specific vs. implementation-agnostic)
+  - supports:: [[Ontology]], [[Knowledge Representation]]
+  - related-to:: [[Software Architecture]], [[System Architecture]]
+  - has-part:: [[Ontology Structure]]
 
 - ### Content
   - **Classification**

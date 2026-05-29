@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:computer-vision-system",
   "domain": "spatial-computing",
-  "definition": "Computer Vision System is a type of Computer Vision in the spatial computing domain.",
+  "definition": "An integrated assembly of hardware and software components\u2014cameras, depth sensors, inference pipelines, and output interfaces\u2014that acquires, processes, and interprets visual information from the physical world. Computer vision systems underpin spatial computing applications such as AR tracking, spatial mapping, and object detection, translating raw image data into actionable semantic understanding for downstream tasks.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-interaction",
@@ -17,21 +17,44 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:spatial-mapping",
+        "label": "Spatial Mapping"
+      },
+      {
+        "id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:pattern-recognition",
+        "label": "Pattern Recognition"
+      }
+    ]
   },
   "wikilinks": [
     {

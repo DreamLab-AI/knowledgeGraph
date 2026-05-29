@@ -1,5 +1,5 @@
 - ### Definition
-  - Virtual Labor is a concept within the mv domain.
+  - **Virtual Labor** is work performed in virtual environments that generates economic value, spanning content creation, service provision, virtual construction, platform governance, and social labour. It is often platform-dependent, contract-based, and remunerated via virtual currency or revenue-sharing models, raising significant questions around labour rights, taxation of cross-border virtual income, and platform exploitation.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:VirtualLabor
@@ -7,6 +7,10 @@
 
 - ### Relationships
   - is-subclass-of:: [[Metaverse]]
+  - **partOf**: [[Virtual Economy]] — virtual labour is the productive activity that creates value within virtual economies
+  - **uses**: [[Virtual Currency]], [[Digital Asset]] — labour is compensated in virtual currencies and produces digital assets as outputs
+  - **requires**: [[Metaverse]] — virtual labour is contingent on a persistent virtual environment platform
+  - **relatedTo**: [[Land Economics]], [[Governance Framework]] — virtual labour intersects with land-based value creation and requires governance frameworks to protect workers
 
 - ### Content
 

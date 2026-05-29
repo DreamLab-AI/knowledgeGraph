@@ -58,9 +58,10 @@ public:: true
   "@id": "urn:ngm:class:sink-mechanism",
   "@type": "Class",
   "label": "Sink Mechanism",
-  "definition": "Sink Mechanism is a blockchain and distributed systems concept and a type of Virtual Economy.",
+  "definition": "A Sink Mechanism is an economic design pattern that permanently removes virtual currency, tokens, or items from circulation in order to counterbalance sources of supply and maintain economic equilibrium, preventing hyperinflation in metaverse economies, play-to-earn platforms, and DeFi protocols. Effective sinks are integrated into desirable activities — such as cosmetic purchases, crafting costs, or transaction fees — so that value removal feels voluntary and rewarding to participants.",
   "domain": "blockchain",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-defi-and-economics",
@@ -71,7 +72,23 @@ public:: true
       "label": "Virtual Economy"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:virtual-economy", "label": "Virtual Economy"},
+      {"@id": "urn:ngm:class:tokenomics", "label": "Tokenomics"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:inflation-control", "label": "Inflation Control"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:virtual-currency", "label": "Virtual Currency"},
+      {"@id": "urn:ngm:class:economic-mechanism", "label": "Economic Mechanism"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:inflation", "label": "Inflation"}
+    ]
+  },
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -132,7 +149,7 @@ public:: true
 
 
 - ### Definition
-  - Sink Mechanism is a concept within the bc domain.
+  - A Sink Mechanism is an economic design pattern that permanently removes virtual currency, tokens, or items from circulation in order to counterbalance sources of supply and maintain economic equilibrium, preventing hyperinflation in metaverse economies, play-to-earn platforms, and DeFi protocols. Effective sinks are integrated into desirable activities — such as cosmetic purchases, crafting costs, or transaction fees — so that value removal feels voluntary and rewarding to participants.
 
 - ### Semantic Classification
   - owl-class:: blockchain:SinkMechanism
@@ -140,6 +157,10 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Blockchain]]
+  - **partOf**: Virtual Economy — sink mechanisms are a structural component of any sustainable virtual economy; Tokenomics — sink design is a central concern of tokenomic engineering.
+  - **enables**: Inflation Control — by permanently removing supply, sinks counteract inflationary pressure.
+  - **requires**: Virtual Currency — a sink operates on a currency or token that exists within the economy; Economic Mechanism — a sink is a specific instance of an economic mechanism.
+  - **contrastsWith**: Inflation — hyperinflation is the failure mode that sink mechanisms are designed to prevent.
 
 - ### Content
 

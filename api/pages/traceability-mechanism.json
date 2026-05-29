@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:traceability-mechanism",
   "domain": "artificial-intelligence",
-  "definition": "A Traceability Mechanism is a systematic approach for recording, maintaining, and retrieving comprehensive documentation of an AI system's development process, data lineage, decision-making logic, and operational history to enable accountability, auditability, and debugging.",
+  "definition": "A Traceability Mechanism is a systematic approach for recording, maintaining, and retrieving comprehensive documentation of an AI system's development process, data lineage, decision-making logic, and operational history to enable accountability, auditability, and debugging. It encompasses data provenance tracking, model versioning, decision logging, and tamper-evident audit trails that allow stakeholders to reconstruct the causal chain from system outputs back to training data and design choices. Regulatory frameworks including the EU AI Act and GDPR increasingly mandate specific traceability capabilities for high-risk AI deployments.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -13,25 +13,82 @@
     },
     {
       "id": "urn:ngm:class:ai-governance-principle",
-      "label": "AI Governance Principle"
+      "label": "Ai Governance Principle"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "id": "urn:ngm:class:data-provenance",
+        "label": "Data Provenance"
+      },
+      {
+        "id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      },
+      {
+        "id": "urn:ngm:class:compliance-verification",
+        "label": "Compliance Verification"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      },
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      }
+    ]
   },
   "wikilinks": [
     {

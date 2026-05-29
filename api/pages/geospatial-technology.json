@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:geospatial-technology",
   "domain": "spatial-computing",
-  "definition": "Geospatial Technology is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Geospatial Technology encompasses the tools, systems, and methods used to acquire, process, analyse, and visualise spatially referenced data about the Earth's surface and built environment. In spatial computing and metaverse contexts, it underpins world-scale anchoring, location-based experiences, digital twin construction of urban environments, and precise coordinate registration between physical and virtual spaces.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -13,21 +13,53 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:gps",
+        "label": "Gps"
+      },
+      {
+        "id": "urn:ngm:class:geospatial-information",
+        "label": "Geospatial Information"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:location-based-experience",
+        "label": "Location Based Experience"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "id": "urn:ngm:class:geospatial-engine",
+        "label": "Geospatial Engine"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ]
   },
   "wikilinks": [
     {

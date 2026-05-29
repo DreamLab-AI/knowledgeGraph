@@ -26,7 +26,7 @@ public:: true
   "@type": "Class",
   "@id": "urn:ngm:class:sc-platform-and-environment",
   "label": "Platform and Environment",
-  "definition": "Intermediate taxonomy category for platform and environment concepts within the spatial computing domain.",
+  "definition": "Taxonomy hub covering the software runtimes, hardware platforms, operating systems, and execution environments that host spatial computing applications. This category encompasses the infrastructure layer on which XR experiences are built and deployed, spanning cloud, edge, and on-device compute contexts.",
   "domain": "spatial-computing",
   "subClassOf": [
     {
@@ -34,8 +34,30 @@ public:: true
       "label": "Spatial Computing"
     }
   ],
-  "relations": {},
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:mixed-reality-platform", "label": "Mixed Reality Platform"},
+      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"},
+      {"@id": "urn:ngm:class:rendering-engine", "label": "Rendering Engine"},
+      {"@id": "urn:ngm:class:operating-system", "label": "Operating System"},
+      {"@id": "urn:ngm:class:runtime-environment", "label": "Runtime Environment"},
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
+      {"@id": "urn:ngm:class:spatial-computing-layer", "label": "Spatial Computing Layer"},
+      {"@id": "urn:ngm:class:wearable-computing-platform", "label": "Wearable Computing Platform"},
+      {"@id": "urn:ngm:class:middleware", "label": "Middleware"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:sc-display-and-rendering", "label": "Display and Rendering"},
+      {"@id": "urn:ngm:class:sc-standards-and-interop", "label": "Standards and Interoperability"},
+      {"@id": "urn:ngm:class:sc-interaction", "label": "Interaction Technology"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:spatial-computing-system", "label": "Spatial Computing System"},
+      {"@id": "urn:ngm:class:open-xr", "label": "OpenXR"}
+    ]
+  },
   "qualityScore": 0.8,
+  "quality": 0.8,
   "maturity": "established"
 }
 ```

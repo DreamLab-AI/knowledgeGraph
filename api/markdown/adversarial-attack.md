@@ -7,7 +7,11 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - bridges-to:: [[Computer Vision]] (ai)
+  - Contrasts with [[Robustness]] (the defensive property adversarial attacks seek to undermine)
+  - Contrasts with [[Safety Fine Tuning]] (the training-time mitigation strategy)
+  - Related to [[Computer Vision]] (image-domain attacks are the canonical demonstration)
+  - Related to [[AI Safety]] as a primary threat category motivating safety research
+  - Uses [[Deep Learning]] models as the primary attack surface
 
 - ### Content
   - A deliberate attempt to manipulate an AI system by crafting malicious inputs or exploiting vulnerabilities to cause misclassification, extract confidential information, degrade performance, or subvert the system's intended behavior.

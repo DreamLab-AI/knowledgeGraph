@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:simulation",
   "domain": "infrastructure",
-  "definition": "Simulation is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Simulation creates computational models that replicate the behaviour of real-world systems, processes, or phenomena for training, experimentation, prediction, or entertainment. In metaverse and spatial computing contexts, simulations leverage physics engines, rendering pipelines, and AI-driven procedural content generation to produce interactive virtual environments that improve learning transfer, enable safe rehearsal of dangerous scenarios, and support distributed collaboration across geographies.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:physics-engine",
+        "label": "Physics Engine"
+      },
+      {
+        "id": "urn:ngm:class:render-pipeline",
+        "label": "Render Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

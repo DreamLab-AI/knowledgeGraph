@@ -7,7 +7,13 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Requires [[Reinforcement Learning from Human Feedback]] as its primary technical implementation
+  - Supports [[AI Safety]] as the value-theoretic foundation for safe systems
+  - Supports [[AI Governance]] by providing the normative grounding for governance frameworks
+  - Related to [[Safety Fine Tuning]] as the training-time operationalisation of alignment
+  - Related to [[Fairness]] (aligned AI must treat individuals and groups equitably)
+  - Related to [[Bias]] (unmitigated bias constitutes a value alignment failure)
+  - Depends on [[Interpretability]] to verify that learned objectives match intended human values
 
 - ### Content
   - The challenge and process of ensuring AI systems pursue objectives that align with human values, even as those systems become more capable and autonomous. Value alignment addresses both technical and philosophical questions about encoding human preferences into AI behaviour.

@@ -48,7 +48,7 @@ public:: true
   "label": "Virtual Economy Infrastructure",
   "definition": "The collection of technologies, platforms, and systems essential for creating, managing, and sustaining economic activities within metaverse environments, including blockchain networks, payment systems, marketplaces, and decentralized finance protocols.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
@@ -59,6 +59,20 @@ public:: true
       "label": "Virtual Economy"
     }
   ],
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:nft-marketplace", "label": "NFT Marketplace"},
+      {"@id": "urn:ngm:class:decentralized-finance-de-fi", "label": "Decentralized Finance (DeFi)"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:digital-asset-trading", "label": "Digital Asset Trading"},
+      {"@id": "urn:ngm:class:virtual-currency", "label": "Virtual Currency"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
@@ -109,6 +123,12 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Virtual Economy]]
+  - hasPart [[Blockchain]]
+  - hasPart [[NFT Marketplace]]
+  - hasPart [[Decentralized Finance (DeFi)]]
+  - enables [[Digital Asset Trading]]
+  - enables [[Virtual Currency]]
+  - relatedTo [[Blockchain Governance]]
 
 - ### Content
 

@@ -1,12 +1,17 @@
 - ### Definition
-  - SimulationEngine is a concept within the ngm domain.
+  - The computational core that manages state updates, inter-object interactions, deterministic execution, and data instrumentation within a simulation. Specialised engines include physics engines (PhysX, Bullet), behaviour-simulation engines, and AI training frameworks that expose parametric control, checkpointing, and massive parallelisation for large-scale experimental runs.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:SimulationEngine
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Part Of [[Simulation Software]]
+  - Uses [[GPU Compute]]
+  - Uses [[Real-time Processing]]
+  - Enables [[Digital Twin]]
+  - Enables [[Machine Learning]]
+  - Related To [[Rendering Engine]]
 
 - ### Content
   # SimulationEngine

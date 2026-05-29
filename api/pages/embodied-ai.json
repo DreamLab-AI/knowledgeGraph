@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:embodied-ai",
   "domain": "artificial-intelligence",
-  "definition": "Embodied AI is a research field focused on developing intelligent agents that learn and reason through physical or simulated interaction with an environment, grounding perception and action.",
+  "definition": "Embodied AI is a research paradigm holding that intelligence emerges from the continuous sensorimotor interaction of an agent with its physical or simulated environment, rather than from purely symbolic or language-based reasoning. Embodied agents perceive the world through sensors (cameras, proprioceptive IMUs, tactile arrays) and act upon it through actuators, learning to navigate, manipulate, and cooperate via reinforcement learning or imitation learning in physics simulators. The field bridges robotics, cognitive science, and deep learning, with applications in household manipulation, autonomous navigation, and grounded language understanding.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-research-area",
@@ -14,11 +14,29 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:robot-learning",
+        "label": "Robot Learning"
+      },
+      {
+        "id": "urn:ngm:class:sim-to-real-transfer",
+        "label": "Sim-to-Real Transfer"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +45,16 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:embodied-ai-simulation",
+        "label": "Embodied AI Simulation"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

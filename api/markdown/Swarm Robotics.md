@@ -140,13 +140,26 @@ public:: true
   "label": "Swarm Robotics",
   "definition": "Swarm robotics employs large numbers of simple, autonomous agents that exhibit sophisticated collective behaviours through local interactions and DecentralizedControl|decentralised control without centralised coordination, inspired by biological swarms like ant colonies and bird flocks.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-robot-type",
       "label": "Robot Type"
     }
   ],
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"},
+      {"@id": "urn:ngm:class:multi-agent-systems", "label": "Multi-Agent Systems"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:robot-sensor", "label": "Robot Sensor"},
+      {"@id": "urn:ngm:class:robot-operating-system", "label": "Robot Operating System"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:robot-learning", "label": "Robot Learning"}
+    ]
+  },
   "quality": 0.4,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -311,7 +324,11 @@ public:: true
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart:: [[Autonomous Robot]]
+  - hasPart:: [[Multi-Agent Systems]]
+  - uses:: [[Robot Sensor]]
+  - uses:: [[Robot Operating System]]
+  - enables:: [[Robot Learning]]
 
 - ### Content
   - Large numbers of simple, autonomous agents exhibiting sophisticated collective behaviours through local interactions and [[DecentralisedControl|decentralised control]] without centralised coordination, inspired by biological swarms like ant colonies and bird flocks. Individual robots with limited sensing, computation, and actuation communicate locally with neighbours, creating [[EmergentBehavior|emergent]] system-level intelligence enabling tasks exceeding individual capabilities. Applications span [[SearchAndRescue|search and rescue]], agricultural monitoring, warehouse logistics, and construction automation, with [[FaultTolerance|fault tolerance]] and scalability enabling deployment of thousands of autonomous agents.

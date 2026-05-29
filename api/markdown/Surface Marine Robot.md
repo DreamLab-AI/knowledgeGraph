@@ -46,20 +46,39 @@ public:: true
   "@id": "urn:ngm:class:surface-marine-robot",
   "@type": "Class",
   "label": "Surface Marine Robot",
-  "definition": "Surface marine robot operates on water surface like unmanned surface vessels.",
+  "definition": "A Surface Marine Robot, also known as an Unmanned Surface Vehicle (USV), is an autonomous or remotely operated robotic platform that operates on the surface of bodies of water—oceans, lakes, rivers, and coastal zones. It performs tasks including hydrographic survey, environmental monitoring, maritime patrol, search-and-rescue support, and data relay without requiring an onboard crew, thereby reducing operational cost and human risk in hazardous or remote marine environments.",
   "domain": "robotics",
   "maturity": "established",
+  "qualityScore": 0.8,
   "subClassOf": [
-    {
-      "@id": "urn:ngm:class:robo-robot-type",
-      "label": "Robot Type"
-    },
     {
       "@id": "urn:ngm:class:marine-robot",
       "label": "Marine Robot"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:underwater-robot", "label": "Underwater Robot"},
+      {"@id": "urn:ngm:class:aerial-robot", "label": "Aerial Robot"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:inspection-robot", "label": "Inspection Robot"},
+      {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"},
+      {"@id": "urn:ngm:class:remotely-operated-vehicle-rov", "label": "Remotely Operated Vehicle (ROV)"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
+      {"@id": "urn:ngm:class:perception-system", "label": "Perception System"},
+      {"@id": "urn:ngm:class:lidar", "label": "Lidar"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
+      {"@id": "urn:ngm:class:navigation-system", "label": "Navigation System"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -100,18 +119,20 @@ public:: true
 
 
 - ### Definition
-  - Surface marine robot operates on water surface like unmanned surface vessels.
-
-- ### Semantic Classification
-  - owl-class:: robotics:SurfaceRobot
-  - owl-role:: Concept
-  - belongs-to-domain:: [[Robotics]]
+  A Surface Marine Robot (Unmanned Surface Vehicle, USV) is an autonomous or remotely operated robotic platform that operates on the surface of bodies of water, performing tasks such as hydrographic survey, environmental monitoring, maritime patrol, and search-and-rescue support without requiring an onboard crew.
 
 - ### Relationships
-  - is-subclass-of:: [[Marine Robot]]
+  Surface Marine Robots contrast with Underwater Robots, which operate fully submerged, and Aerial Robots, which operate above the surface. They are a specialised class of Autonomous Robots and are related to Inspection Robots for infrastructure assessment and Remotely Operated Vehicles for close-range underwater tasks. They use Autonomous Navigation and Perception Systems including Lidar for collision avoidance and situational awareness, and require Motion Planning and Navigation Systems to operate safely in dynamic marine environments. They are part of the broader Robotics domain.
 
 - ### Content
-  Surface Marine Robot — content pending enrichment.
+
+  Surface marine robots operate across a wide range of form factors, from small kayak-sized platforms such as the Saildrone Explorer and AutoNaut wave-propelled glider to large ship-class USVs like the Sea Hunter developed for the US Navy. Propulsion systems vary accordingly: electric thrusters for small survey vehicles, diesel-driven waterjets for higher-speed patrol craft, and wind or wave energy for ultra-endurance scientific platforms that can remain at sea for months without refuelling.
+
+  Navigation in the marine environment presents unique challenges compared to ground or air robotics. Currents, wind, and wave action introduce persistent disturbances that must be compensated through model-predictive control or adaptive autopilots. Obstacle avoidance must comply with the International Regulations for Preventing Collisions at Sea (COLREGs), which impose right-of-way rules beyond simple proximity avoidance and require the USV to infer the intent of manned vessels. GPS-denied environments—under bridges, in harbours with multi-path signal reflections, or in polar regions—demand dead-reckoning fusion with inertial measurement units and Doppler velocity logs.
+
+  Environmental monitoring is one of the highest-value application domains. Surface robots deployed on rivers and coastal zones collect water quality samples, measure turbidity and dissolved oxygen, map harmful algal blooms, and track pollutant plumes. The persistence advantage over crewed vessels is substantial: a USV can conduct 24-hour continuous surveys in remote or dangerous areas, producing data density that manned operations cannot match cost-effectively. Oceanographic institutions increasingly deploy fleets of USVs in coordinated swarms to gather synoptic data over large areas, with each vehicle handling a sub-region of the survey domain.
+
+  In maritime security, surface robots patrol harbours and critical infrastructure, conduct anti-piracy monitoring, and act as communication relays extending the operational range of underwater vehicles.
 
 - ### Provenance
   - sources:: Chimera Prime Research

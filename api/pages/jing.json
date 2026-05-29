@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:jing",
   "domain": "infrastructure",
-  "definition": "jing is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Jing is a multi-agent AI framework designed to minimise hallucination in Chinese-English bilingual retrieval-augmented generation (RAG) pipelines, specifically applied to emotional-support chatbots for end-of-life counselling and palliative care. The system combines multiple large language models with open-source text-to-speech engines and real-time 3D avatars to deliver culturally sensitive, affectively aware conversational companions, initially targeting Japanese VR screen deployment contexts. Its multi-agent architecture distributes validation, retrieval, and generation tasks across specialised model instances to improve factual grounding and reduce hallucinated responses in high-stakes care settings.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-software-engineering",
@@ -13,8 +13,8 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,11 +23,46 @@
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:text-to-speech",
+        "label": "Text-to-Speech"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:virtual-reality-applications",
+        "label": "Virtual Reality Applications"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-avatar",
+        "label": "Digital Avatar"
+      },
+      {
+        "id": "urn:ngm:class:emotional-intelligence",
+        "label": "Emotional Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:healthcare-ai",
+        "label": "Healthcare AI"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": []

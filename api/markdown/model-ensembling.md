@@ -7,7 +7,14 @@
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **enables** [[Robustness]] — aggregating diverse models reduces sensitivity to individual model errors
+  - **enables** [[Accuracy]] — ensemble predictions consistently outperform single-model baselines
+  - **uses** [[Machine Learning]] — ensembling is a general ML meta-strategy applicable to any learner type
+  - **uses** [[Deep Learning]] — commonly applied to neural network ensembles in production systems
+  - **contrastsWith** [[Knowledge Distillation]] — distillation compresses an ensemble into one model; ensembling expands capacity
+  - **contrastsWith** [[Mixture of Experts]] — MoE is a learned ensemble-like architecture; model ensembling uses independent training runs
+  - **relatedTo** [[Overfitting]] — diversity among models counteracts overfitting present in individual members
+  - **relatedTo** [[Transfer Learning]] — pre-trained base models are frequently the building blocks of ensembles
 
 - ### Content
   - A technique that combines predictions from multiple independently trained models to improve overall performance and robustness. Ensembling leverages diversity among models to reduce variance, improve generalisation, and provide more reliable predictions.

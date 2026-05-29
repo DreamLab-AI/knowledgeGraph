@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:configuration",
   "domain": "spatial-computing",
-  "definition": "Configuration is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Configuration is the set of parameters, settings, and environment variables that determine the runtime behaviour of a spatial computing platform, application, or pipeline component. Proper configuration governs interoperability between subsystems, controls feature flags, and defines integration points between platform services, hardware abstraction layers, and content pipelines.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -14,20 +14,44 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:hardware-abstraction",
+        "label": "Hardware Abstraction"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:platform-service",
+        "label": "Platform Service"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:configuration-setting",
+        "label": "Configuration Setting"
+      },
+      {
+        "id": "urn:ngm:class:platform-engineering",
+        "label": "Platform Engineering"
+      }
+    ]
   },
   "wikilinks": [
     {

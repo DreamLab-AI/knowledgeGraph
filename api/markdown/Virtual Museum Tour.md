@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:virtual-museum-tour",
   "@type": "Class",
   "label": "Virtual Museum Tour",
-  "definition": "An immersive digital experience that enables users to explore museum collections, exhibitions, and cultural heritage sites through VR, AR, 360-degree imagery, or interactive 3D environments, providing global access to art and artifacts regardless of physical location.",
+  "definition": "An immersive digital experience that enables users to explore museum collections, exhibitions, and cultural heritage sites through VR, AR, 360-degree imagery, or interactive 3D environments, providing global access to art and artefacts regardless of physical location. Delivery formats range from photogrammetry-reconstructed 3D galleries (Smithsonian, British Museum) to fully navigable VR spaces, with platforms such as Google Arts and Culture and Matterport enabling broad public access across device types.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -59,7 +60,24 @@ public:: true
       "label": "Virtual Tour"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
+      {"@id": "urn:ngm:class:photogrammetry", "label": "Photogrammetry"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
+      {"@id": "urn:ngm:class:3-d-model", "label": "3D Model"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:cultural-heritage-xr-experience", "label": "Cultural Heritage XR Experience"},
+      {"@id": "urn:ngm:class:immersive-learning", "label": "Immersive Learning"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:virtual-field-trip", "label": "Virtual Field Trip"},
+      {"@id": "urn:ngm:class:virtual-tourism", "label": "Virtual Tourism"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -109,6 +127,10 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Virtual Tour]]
+  - requires:: [[Immersive Experience]], [[Photogrammetry]]
+  - uses:: [[Virtual Reality]], [[3D Model]]
+  - enables:: [[Cultural Heritage XR Experience]], [[Immersive Learning]]
+  - relatedTo:: [[Virtual Field Trip]], [[Virtual Tourism]]
 
 - ### Content
 

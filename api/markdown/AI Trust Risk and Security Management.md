@@ -50,16 +50,42 @@ public:: true
   "@id": "urn:ngm:class:ai-trust-risk-and-security-management",
   "@type": "Class",
   "label": "AI Trust Risk and Security Management",
-  "definition": "AI Trust Risk and Security Management is a type of Artificial Intelligence in the artificial intelligence domain.",
+  "definition": "A comprehensive governance framework — popularised by Gartner and aligned with the NIST AI Risk Management Framework — for managing the trustworthiness, security, and ethical risks of AI systems throughout their lifecycle. It operationalises three pillars: Trust (transparent, auditable, reliable AI behaviour), Risk (proactive identification and mitigation of algorithmic bias, data quality issues, and regulatory non-compliance), and Security (protection against adversarial attacks, data poisoning, and model integrity threats).",
   "domain": "artificial-intelligence",
   "maturity": "emerging",
+  "qualityScore": 0.75,
+  "quality": 0.75,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:ai-risk-management", "label": "AI Risk Management"},
+      {"@id": "urn:ngm:class:ai-security", "label": "AI Security"},
+      {"@id": "urn:ngm:class:ai-trustworthiness", "label": "AI Trustworthiness"},
+      {"@id": "urn:ngm:class:ai-audit", "label": "AI Audit"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"},
+      {"@id": "urn:ngm:class:algorithmic-bias", "label": "Algorithmic Bias"},
+      {"@id": "urn:ngm:class:model-robustness", "label": "Model Robustness"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:red-teaming", "label": "Red Teaming"},
+      {"@id": "urn:ngm:class:ai-lifecycle", "label": "AI Lifecycle"},
+      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

@@ -59,7 +59,29 @@ public:: true
       "label": "Electric Motor"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:rotary-encoder", "label": "Rotary Encoder"},
+      {"@id": "urn:ngm:class:pid-controller", "label": "Pid Controller"},
+      {"@id": "urn:ngm:class:dc-servo-motor", "label": "DC Servo Motor"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:stepper-motor", "label": "Stepper Motor"},
+      {"@id": "urn:ngm:class:motion-control", "label": "Motion Control"},
+      {"@id": "urn:ngm:class:torque-control", "label": "Torque Control"},
+      {"@id": "urn:ngm:class:position-control", "label": "PositionControl"},
+      {"@id": "urn:ngm:class:feedback-control", "label": "Feedback Control"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:encoder", "label": "Encoder"},
+      {"@id": "urn:ngm:class:actuator", "label": "Actuator"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:robot-joint", "label": "Robot Joint"},
+      {"@id": "urn:ngm:class:manipulator-arm", "label": "Manipulator Arm"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

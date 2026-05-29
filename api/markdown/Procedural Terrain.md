@@ -37,9 +37,10 @@ public:: true
   "@id": "urn:ngm:class:procedural-terrain",
   "@type": "Class",
   "label": "Procedural Terrain",
-  "definition": "Procedural Terrain is a spatial computing concept and a type of spatial-computing.",
+  "definition": "Procedural Terrain refers to algorithmically generated landscape geometry, typically based on noise functions such as Perlin or simplex noise, fractals, hydraulic erosion simulation, and rule-based placement of features. It enables scalable, varied, and believable virtual worlds without manual authoring of every surface element, supporting open-world game environments and simulation scenarios.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
@@ -51,6 +52,38 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:metaverse-application",
+        "label": "Metaverse Application"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:procedural-content-generation",
+        "label": "Procedural Content Generation"
+      },
+      {
+        "@id": "urn:ngm:class:procedural-generation",
+        "label": "Procedural Generation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:procedural-and-hybrid-4-d",
+        "label": "Procedural and Hybrid 4D"
+      },
+      {
+        "@id": "urn:ngm:class:procedural-texture",
+        "label": "Procedural Texture"
+      },
+      {
+        "@id": "urn:ngm:class:rendering-engine",
+        "label": "Rendering Engine"
+      }
+    ]
   }
 }
 ```
@@ -76,14 +109,19 @@ public:: true
 
 
 - ### Definition
-  - ProceduralTerrain is a concept within the ngm domain.
+  - Procedural Terrain refers to algorithmically generated landscape geometry, typically based on noise functions such as Perlin or simplex noise, fractals, hydraulic erosion simulation, and rule-based placement of features. It enables scalable, varied, and believable virtual worlds without manual authoring of every surface element, supporting open-world game environments and simulation scenarios.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:ProceduralTerrain
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses [[Procedural Content Generation]]
+  - Uses [[Procedural Generation]]
+  - Enables [[Metaverse Application]]
+  - Related To [[Procedural and Hybrid 4D]]
+  - Related To [[Procedural Texture]]
+  - Related To [[Rendering Engine]]
 
 - ### Content
   # ProceduralTerrain

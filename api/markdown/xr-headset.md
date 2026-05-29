@@ -8,6 +8,9 @@
 
 - ### Relationships
   - is-subclass-of:: [[XR Hardware]]
+  - **Enables**: [[Virtual Reality]], [[Augmented Reality]], [[Spatial Computing]]
+  - **Requires**: [[WebXR API]] (browser session), [[Sensor Fusion]] (6DoF tracking)
+  - **Part-of**: [[Wearable Computing Platform]], [[Metaverse]] access layer
 
 - ### Content
 

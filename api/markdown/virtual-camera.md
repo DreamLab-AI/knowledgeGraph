@@ -8,6 +8,10 @@
 
 - ### Relationships
   - is-subclass-of:: [[Virtual Production]]
+  - requires:: [[Motion Capture]], [[Real-Time Rendering]]
+  - uses:: [[Game Engine]], [[Virtual Production Volume]]
+  - enables:: [[Virtual Scouting]], [[Virtual Production Pipeline]]
+  - partOf:: [[Virtual Stage]]
 
 - ### Content
 

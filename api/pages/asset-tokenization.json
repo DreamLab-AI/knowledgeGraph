@@ -4,8 +4,8 @@
   "slug": "asset-tokenization",
   "public": true,
   "classIri": "urn:ngm:class:asset-tokenization",
-  "domain": "artificial-intelligence",
-  "definition": "Asset Tokenization is a type of Artificial Intelligence in the artificial intelligence domain.",
+  "domain": "blockchain",
+  "definition": "Asset Tokenization is the process of representing ownership rights to real-world or digital assets as blockchain-based tokens. It enables fractional ownership, programmatic transfer via smart contracts, and transparent provenance tracking on distributed ledgers. Tokenization applies to financial instruments, real estate, intellectual property, and virtual goods in metaverse environments.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-application",
@@ -14,11 +14,29 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +45,12 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
+      }
+    ]
   },
   "wikilinks": [
     {

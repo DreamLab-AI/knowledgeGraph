@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:model-width",
   "domain": "artificial-intelligence",
-  "definition": "The dimensionality of representations within each layer, typically referring to the hidden dimension (d_model), determining the capacity of the model to encode information at each layer.",
+  "definition": "The dimensionality of internal representations at each transformer layer, commonly denoted d_model or hidden dimension. Width sets the information-carrying capacity per token and scales the size of attention heads and feed-forward projections, making it a primary axis alongside depth and data volume in neural scaling law research.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -13,21 +13,49 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:mixture-of-experts",
+        "label": "Mixture of Experts"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:hyperparameter",
+        "label": "Hyperparameter"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:model-depth",
+        "label": "Model Depth"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:parameter-count",
+        "label": "Parameter Count"
+      }
+    ]
   },
   "wikilinks": [
     {

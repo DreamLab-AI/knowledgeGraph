@@ -5,7 +5,10 @@
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: Linked Data, Ontology
+  - **enables**: Knowledge Graph, Knowledge Representation
+  - **standardizedBy**: Interoperability Standard
+  - **relatedTo**: Knowledge Graph Construction, Domain Ontology
 - ### Content
   - SPARQL enables structured querying of RDF-based knowledge graphs and linked data through standardised operations, supporting exploration and transformation of interconnected data across semantic web applications and domain-specific ontologies.
   - ### Original Content

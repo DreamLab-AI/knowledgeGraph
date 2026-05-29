@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:whole-body-control",
   "domain": "robotics",
-  "definition": "A control framework that simultaneously optimises motion, force, and balance across all degrees of freedom of a legged or humanoid robot.",
+  "definition": "Whole Body Control (WBC) is a control framework for legged and humanoid robots that simultaneously optimises motion tasks, contact forces, and balance constraints across all degrees of freedom by solving a hierarchical quadratic programme or weighted task-space objective at each control cycle. By treating locomotion, manipulation, and postural balance as a unified optimisation problem, WBC avoids the sub-optimality of treating these objectives separately. It typically relies on a rigid-body dynamics model and is often combined with model predictive control or reinforcement learning policies for online adaptation to uneven terrain and external disturbances.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
@@ -14,11 +14,29 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:system-identification",
+        "label": "System Identification"
+      },
+      {
+        "id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:legged-locomotion",
+        "label": "Legged Locomotion"
+      },
+      {
+        "id": "urn:ngm:class:humanoid-robot",
+        "label": "Humanoid Robot"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +45,16 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:model-predictive-control",
+        "label": "Model Predictive Control"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

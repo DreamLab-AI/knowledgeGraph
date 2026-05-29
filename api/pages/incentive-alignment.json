@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:incentive-alignment",
   "domain": "blockchain",
-  "definition": "Stakeholder interest convergence within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "Incentive Alignment is the design principle by which blockchain protocols structure economic rewards and penalties such that individual rational behaviour converges with the collective goals of the network. When correctly engineered, participants who act in their own self-interest\u2014validators confirming blocks, miners extending chains, token holders participating in governance\u2014simultaneously reinforce system security, liveness, and integrity. Misaligned incentives produce attack vectors such as selfish mining, validator collusion, or governance capture.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-defi-and-economics",
@@ -17,25 +17,78 @@
     },
     {
       "id": "urn:ngm:class:economic-mechanism",
-      "label": "EconomicMechanism"
+      "label": "Economic Mechanism"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:block-reward",
+        "label": "Block Reward"
+      },
+      {
+        "id": "urn:ngm:class:reward-distribution",
+        "label": "Reward Distribution"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:validator-node",
+        "label": "Validator Node"
+      },
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:selfish-mining",
+        "label": "Selfish Mining"
+      },
+      {
+        "id": "urn:ngm:class:51-attack",
+        "label": "51% Attack"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:emission-schedule",
+        "label": "Emission Schedule"
+      }
+    ]
   },
   "wikilinks": [
     {

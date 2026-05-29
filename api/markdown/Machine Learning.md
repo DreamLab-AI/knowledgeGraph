@@ -66,9 +66,9 @@ public:: true
   "@id": "urn:ngm:class:machine-learning",
   "@type": "Class",
   "label": "Machine Learning",
-  "definition": "Machine Learning is a concept in artificial intelligence.",
+  "definition": "Machine Learning is the branch of artificial intelligence in which systems learn predictive or generative models directly from data, without being explicitly programmed with domain rules. It encompasses supervised, unsupervised, and reinforcement learning paradigms, and forms the foundation for deep learning, natural language processing, and computer vision applications. Practical machine learning involves data preparation, feature engineering, model selection, training, evaluation, and deployment within a production pipeline.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-research-area",
@@ -79,6 +79,22 @@ public:: true
       "label": "Artificial Intelligence"
     }
   ],
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
+      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -153,7 +169,12 @@ public:: true
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - enables:: [[Deep Learning]]
+  - enables:: [[Natural Language Processing]]
+  - requires:: [[AI Infrastructure]]
+  - hasPart:: [[Reinforcement Learning]]
+  - hasPart:: [[Transfer Learning]]
+  - relatedTo:: [[Federated Learning]]
 
 - ### Content
   - ### Primary Definition

@@ -1,12 +1,14 @@
 - ### Definition
-  - ScalabilityPattern is a concept within the ngm domain.
+  - A Scalability Pattern is a reusable architectural strategy that enables a system to handle increasing load by adding resources or restructuring components without degrading performance or reliability. Patterns include horizontal scaling (adding parallel instances), vertical scaling (increasing instance capacity), sharding, caching, and event-driven decomposition, each suited to different bottleneck profiles.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:ScalabilityPattern
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **enables** → [[Performance Optimization]], [[Distributed Systems]]
+  - **uses** → [[Microservices Architecture]], [[Orchestration]]
+  - **supports** → [[Infrastructure Architecture]], [[Performance Benchmarks]]
 
 - ### Content
   # ScalabilityPattern

@@ -44,14 +44,32 @@ public:: true
   "label": "Harmful Bias",
   "definition": "Systematic and unjust discrimination in AI system outcomes that disadvantages individuals or groups based on protected characteristics (race, gender, age, disability, religion, etc.) or other sensitive attributes, resulting in material harm, dignity violations, or perpetuation of societal inequal...",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:fairness", "label": "Fairness"},
+      {"@id": "urn:ngm:class:fairness-metrics", "label": "Fairness Metrics"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:ai-risk", "label": "AI Risk"},
+      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:bias-detection-methods", "label": "Bias Detection Methods"},
+      {"@id": "urn:ngm:class:bias-mitigation-techniques", "label": "Bias Mitigation Techniques"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
+      {"@id": "urn:ngm:class:accountability", "label": "Accountability"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -95,7 +113,10 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **contrastsWith**: [[Fairness]], [[Fairness Metrics]]
+  - **partOf**: [[AI Risk]], [[AI Ethics]]
+  - **requires**: [[Bias Detection Methods]], [[Bias Mitigation Techniques]]
+  - **relatedTo**: [[Training Data]], [[Accountability]]
 
 - ### Content
   - Systematic and unjust discrimination in AI system outcomes that disadvantages individuals or groups based on protected characteristics (race, gender, age, disability, religion, etc.) or other sensitive attributes, resulting in material harm, dignity violations, or perpetuation of societal inequalities.

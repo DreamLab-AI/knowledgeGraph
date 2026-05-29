@@ -37,16 +37,32 @@ public:: true
   "@id": "urn:ngm:class:user-authentication-mechanism",
   "@type": "Class",
   "label": "User Authentication Mechanism",
-  "definition": "User Authentication Mechanism is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A User Authentication Mechanism is a protocol or system component that verifies the claimed identity of a user before granting access to a resource or service. Mechanisms include password-based credentials, OAuth 2.0 federated login, biometric binding, multi-factor authentication, and decentralised identity using DIDs, each offering different trade-offs between security, usability, and privacy.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-security-and-identity",
       "label": "Security and Identity"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:oauth-2-0", "label": "OAuth 2.0"},
+      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:identity-verification", "label": "Identity Verification"},
+      {"@id": "urn:ngm:class:access-control", "label": "Access Control"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:digital-identity-management", "label": "Digital Identity Management"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:identity-and-access-management", "label": "Identity and Access Management"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -76,14 +92,17 @@ public:: true
 
 
 - ### Definition
-  - UserAuthenticationMechanism is a concept within the ngm domain.
+  A User Authentication Mechanism is a protocol or system component that verifies the claimed identity of a user before granting access to a resource or service. Mechanisms include password-based credentials, OAuth 2.0 federated login, biometric binding, multi-factor authentication, and decentralised identity using DIDs, each offering different trade-offs between security, usability, and privacy.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:UserAuthenticationMechanism
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: OAuth 2.0, Decentralised Identity
+  - **requires**: Identity Verification, Access Control
+  - **enables**: Digital Identity Management
+  - **relatedTo**: Identity and Access Management
 
 - ### Content
   # UserAuthenticationMechanism

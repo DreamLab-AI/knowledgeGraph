@@ -42,15 +42,31 @@ public:: true
   "@id": "urn:ngm:class:xr-framework",
   "@type": "Class",
   "label": "XR Framework",
-  "definition": "XR Framework is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "An XR Framework is a software architecture or SDK that provides unified runtime support, device abstraction, and application programming interfaces for extended reality experiences spanning augmented, virtual, and mixed reality. Frameworks such as OpenXR standardise access to headsets and input devices, whilst game engine integrations enable developers to target multiple XR platforms from a single codebase.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
     }
   ],
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
+      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
+      {"@id": "urn:ngm:class:mixed-reality", "label": "Mixed Reality"},
+      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"},
+      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -87,14 +103,16 @@ public:: true
 
 
 - ### Definition
-  - X R Framework is a concept within the metaverse domain. Further enrichment pending.
+  - An XR Framework is a software architecture or SDK that provides unified runtime support, device abstraction, and application programming interfaces for extended reality experiences spanning augmented, virtual, and mixed reality. Frameworks such as OpenXR standardise access to headsets and input devices, whilst game engine integrations enable developers to target multiple XR platforms from a single codebase.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:XRFramework
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - enables:: [[Augmented Reality]], [[Virtual Reality]], [[Mixed Reality]], [[Immersive Experience]]
+  - uses:: [[Extended Reality]], [[Game Engine]]
+  - partOf:: [[Spatial Computing]]
 
 - ### Content
 

@@ -42,16 +42,43 @@ public:: true
   "@id": "urn:ngm:class:neuromorphic-computing",
   "@type": "Class",
   "label": "Neuromorphic Computing",
-  "definition": "Neuromorphic Computing is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "A computational paradigm that designs hardware and software systems to mirror the structure and function of biological neural networks, integrating memory and processing units to enable parallel, event-driven information processing inspired by how neurons communicate through electrical spikes. Unlike conventional von Neumann architectures, neuromorphic systems perform computation asynchronously at the location of data, enabling orders-of-magnitude improvements in energy efficiency for AI inference at the edge.",
   "domain": "spatial-computing",
   "maturity": "emerging",
+  "quality": 0.75,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:neuromorphic-chip", "label": "Neuromorphic Chip"},
+      {"@id": "urn:ngm:class:neuromorphic-chips", "label": "Neuromorphic Chips"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:edge-ai-system", "label": "Edge AI System"},
+      {"@id": "urn:ngm:class:edge-ai-accelerator", "label": "Edge AI Accelerator"},
+      {"@id": "urn:ngm:class:autonomous-system", "label": "Autonomous System"},
+      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:parallel-processing", "label": "Parallel Processing"},
+      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event Driven Architecture"},
+      {"@id": "urn:ngm:class:hardware-acceleration", "label": "Hardware Acceleration"},
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:ai-hardware", "label": "AI Hardware"},
+      {"@id": "urn:ngm:class:inference-hardware", "label": "Inference Hardware"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:artificial-general-intelligence", "label": "Artificial General Intelligence"},
+      {"@id": "urn:ngm:class:cognitive-architecture", "label": "Cognitive Architecture"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

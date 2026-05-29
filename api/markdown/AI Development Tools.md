@@ -58,21 +58,37 @@ public:: true
   "@id": "urn:ngm:class:ai-development-tools",
   "@type": "Class",
   "label": "AI Development Tools",
-  "definition": "AI Development Tools comprise the software frameworks, libraries, platforms, and integrated development environments designed to facilitate the creation, training, deployment, and maintenance of artificial intelligence systems.",
+  "definition": "Software frameworks, libraries, platforms, and integrated development environments designed to facilitate the creation, training, deployment, and maintenance of artificial intelligence systems. Includes deep learning frameworks (TensorFlow, PyTorch, JAX), AutoML platforms, model optimisation toolkits, MLOps infrastructure, and AI-assisted IDEs. Modern tools emphasise reproducibility, scalability, experiment tracking, and continuous delivery of AI systems.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure (Category)"
+    }
+  ],
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
+      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:auto-ml", "label": "AutoML"},
+      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:machine-learning-infrastructure", "label": "Machine Learning Infrastructure"},
+      {"@id": "urn:ngm:class:ai-lifecycle", "label": "AI Lifecycle"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
-  },
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:cat-ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
-    }
-  ]
+  }
 }
 ```
 
@@ -130,8 +146,9 @@ public:: true
   - owl-role:: concept
 
 - ### Relationships
-  - is-subclass-of:: ['owl:Thing']
-  - bridges-to:: [[Blockchain]] (domain: bc)
+  - enables:: [[Machine Learning]], [[Deep Learning]], [[Generative AI]]
+  - uses:: [[AutoML]], [[Data Pipeline]]
+  - supports:: [[Machine Learning Infrastructure]], [[AI Lifecycle]]
 
 - ### Content
 

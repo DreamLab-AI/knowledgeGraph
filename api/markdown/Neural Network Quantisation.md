@@ -58,7 +58,7 @@ public:: true
   "@id": "urn:ngm:class:neural-network-quantisation",
   "@type": "Class",
   "label": "Neural Network Quantisation",
-  "definition": "Neural Network Quantization is a model compression technique reducing numerical precision of weights and activations from floating-point (FP32, FP16) to lower-bit integer representations (INT8, INT4, binary) decreasing memory footprint, improving inference speed through efficient integer arithmet...",
+  "definition": "A model compression technique that reduces the numerical precision of neural network weights and activations from floating-point (FP32, FP16) to lower-bit integer representations (INT8, INT4, binary), decreasing memory footprint and improving inference speed on hardware with integer arithmetic units. Approaches include post-training quantisation and quantisation-aware training.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -67,7 +67,26 @@ public:: true
       "label": "AI Technique"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:quantisation", "label": "Quantisation"},
+      {"@id": "urn:ngm:class:mixed-precision-training", "label": "Mixed Precision Training"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:knowledge-distillation", "label": "Knowledge Distillation"},
+      {"@id": "urn:ngm:class:model-compression-for-edge", "label": "Model Compression for Edge"},
+      {"@id": "urn:ngm:class:model-pruning-for-edge-deployment", "label": "Model Pruning for Edge Deployment"},
+      {"@id": "urn:ngm:class:knowledge-distillation-for-edge", "label": "Knowledge Distillation for Edge"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:inference-hardware", "label": "Inference Hardware"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:pretrained-model", "label": "Pretrained Model"},
+      {"@id": "urn:ngm:class:machine-learning-model", "label": "Machine Learning Model"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

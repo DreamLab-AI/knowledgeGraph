@@ -1,12 +1,14 @@
 - ### Definition
-  - Remote Communication is a concept within the telecollaboration domain. Further enrichment pending.
+  - Remote Communication encompasses the protocols, platforms, and practices that enable synchronous and asynchronous exchange of information between geographically distributed participants. It spans text, voice, video, and immersive modalities, and underpins distributed work, telecollaboration, and telepresence systems by abstracting physical distance through networked infrastructure.
 
 - ### Semantic Classification
   - owl-class:: distributed-collaboration:RemoteCommunication
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **enables** → [[Telecollaboration]], [[Distributed Work]], [[Video Conferencing]]
+  - **requires** → [[Network Protocol]], [[Latency]]
+  - **relatedTo** → [[Collaboration Platform]], [[Immersive Communication]]
 
 - ### Content
 

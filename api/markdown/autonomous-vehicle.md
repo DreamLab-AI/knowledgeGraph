@@ -8,6 +8,12 @@
 
 - ### Relationships
   - bridges-to:: [[Autonomous Robot]] (rb)
+  - requires:: [[Sensor Fusion]]
+  - requires:: [[Perception System]]
+  - uses:: [[SLAM]]
+  - uses:: [[Motion Planning]]
+  - enables:: [[Autonomous Navigation]]
+  - relatedTo:: [[Path Planning]]
 
 - ### Content
   - An Autonomous Vehicle is a self-driving vehicle capable of navigating and operating without human intervention, employing artificial intelligence for perception, localisation, path planning, motion control, and decision-making. Autonomous vehicles integrate sensor fusion, computer vision, deep learning, and control algorithms to achieve SAE automation levels ranging from Level 1 (driver assistance) to Level 5 (full automation).

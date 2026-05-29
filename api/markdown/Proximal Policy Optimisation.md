@@ -42,9 +42,10 @@ public:: true
   "@id": "urn:ngm:class:proximal-policy-optimisation",
   "@type": "Class",
   "label": "Proximal Policy Optimisation",
-  "definition": "A reinforcement learning algorithm that updates policies through incremental steps whilst constraining how much the policy can change, preventing destabilising updates. PPO is the standard RL algorithm used in RLHF for optimising language models based on reward model feedback.",
+  "definition": "A reinforcement learning algorithm that updates policies through incremental steps whilst constraining how much the policy can change via a clipped surrogate objective, preventing destabilising updates. PPO is the dominant RL algorithm used in reinforcement learning from human feedback (RLHF) for fine-tuning language models to align with human preferences.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
@@ -55,7 +56,22 @@ public:: true
       "label": "Reinforcement Learning"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:reward-model", "label": "Reward Model"},
+      {"@id": "urn:ngm:class:human-feedback", "label": "Human Feedback"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:reinforcement-learning-from-human-feedback", "label": "Reinforcement Learning from Human Feedback"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:reinforcement-learning-algorithm", "label": "Reinforcement Learning Algorithm"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -91,15 +107,20 @@ public:: true
 
 
 - ### Definition
-  - A reinforcement learning algorithm that updates policies through incremental steps whilst constraining how much the policy can change, preventing destabilising updates. PPO is the standard RL algorithm used in RLHF for optimising language models based on reward model feedback.
+  - A reinforcement learning algorithm that updates policies through incremental steps whilst constraining how much the policy can change via a clipped surrogate objective, preventing destabilising updates. PPO is the dominant RL algorithm used in reinforcement learning from human feedback (RLHF) for fine-tuning language models to align with human preferences.
 
 - ### Semantic Classification
-  - owl-class:: spatial-computing:ProximalPolicyOptimisation
+  - owl-class:: artificial-intelligence:ProximalPolicyOptimisation
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses** [[Reward Model]] — the reward model provides the scalar signal that PPO optimises against
+  - **uses** [[Human Feedback]] — human preference labels train the reward model that PPO then optimises
+  - **partOf** [[Reinforcement Learning from Human Feedback]] — PPO is the optimisation algorithm within RLHF pipelines
+  - **enables** [[Fine Tuning]] — PPO drives the fine-tuning phase that aligns pre-trained models to human preferences
+  - **enables** [[Large Language Models]] — PPO-based RLHF is the dominant technique for producing instruction-following LLMs
+  - **dependsOn** [[Reinforcement Learning Algorithm]] — PPO is a specific instance of the policy gradient algorithm family
 
 - ### Content
   - A reinforcement learning algorithm that updates policies through incremental steps whilst constraining how much the policy can change, preventing destabilising updates. PPO is the standard RL algorithm used in RLHF for optimising language models based on reward model feedback.

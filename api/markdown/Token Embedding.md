@@ -42,9 +42,10 @@ public:: true
   "@id": "urn:ngm:class:token-embedding",
   "@type": "Class",
   "label": "Token Embedding",
-  "definition": "A learnable lookup table that maps each token in the vocabulary to a dense vector representation, providing the initial semantic encoding for transformer models.",
+  "definition": "A learnable lookup table that maps each discrete token in a vocabulary to a dense continuous vector, providing the initial semantic encoding fed into transformer model layers. Embeddings are trained end-to-end and combined with positional encodings; they may be tied with the output un-embedding matrix to reduce parameter count and improve training stability.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
@@ -56,6 +57,40 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:self-attention",
+        "label": "Self Attention"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network-layer",
+        "label": "Neural Network Layer"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:encoder-decoder-architecture",
+        "label": "Encoder Decoder Architecture"
+      }
+    ]
   }
 }
 ```
@@ -95,7 +130,10 @@ public:: true
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Part Of: [[Transformer]], [[Encoder Decoder Architecture]]
+  - Enables: [[Natural Language Processing]]
+  - Uses: [[Deep Learning]]
+  - Related To: [[Self Attention]], [[Neural Network Layer]]
 
 - ### Content
   - {{embed ((661d5f74-f334-4872-ba92-51244c2fb490))}}

@@ -1,12 +1,8 @@
 - ### Definition
-  - "Digital canvases in telepresence platforms enabling distributed team members to simultaneously draw, write, annotate, and manipulate visual content (text, images, diagrams, sticky notes) in real-time, replicating physical whiteboard collaboration dynamics through multi-user synchronisation and persistent storage of collaborative artefacts."
-
-- ### Semantic Classification
-  - owl-class:: distributed-collaboration:SharedWhiteboards
-  - owl-role:: Object
+  Digital canvases in telepresence and collaboration platforms enabling distributed team members to simultaneously draw, write, annotate, and manipulate visual content in real time. They replicate physical whiteboard dynamics through multi-user synchronisation and persistent artefact storage, supporting brainstorming and visual sensemaking across geographic distances.
 
 - ### Relationships
-  - is-subclass-of:: [[TELE-002-telecollaboration]]
+  Shared Whiteboards **enable** Remote Collaboration, Synchronous Collaboration, and Asynchronous Collaboration modes. They **use** Telepresence infrastructure for immersive integration and Augmented Reality for spatial annotation overlays. They are **part of** Collaboration Platform ecosystems and Virtual Office Spaces. They are **related to** Video Conferencing (often co-embedded), Virtual Reality whiteboard implementations, and Mixed Reality spatial canvases.
 
 - ### Content
 

@@ -7,7 +7,9 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **partOf**: [[Neural Network Architecture]], [[Transformer]]
+  - **requires**: [[Neural Network]], [[Attention Mechanism]]
+  - **relatedTo**: [[Parameter Count]], [[Large Language Models]]
 
 - ### Content
   - The dimensionality of the internal representations in a neural network, determining the capacity of each layer to encode information, typically denoted as d_model in transformers.

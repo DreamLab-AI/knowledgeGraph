@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:recursive-self-improvement",
   "domain": "artificial-intelligence",
-  "definition": "A theoretical AI capability whereby a system autonomously identifies and implements modifications to its own architecture or training process to increase its own performance.",
+  "definition": "Recursive self-improvement (RSI) is a theoretical AI capability in which a system autonomously identifies and implements modifications to its own architecture, training procedure, or objective function that result in increased performance or capability, such that each improvement cycle enables further improvements in a self-amplifying feedback loop. This process is conjectured to be a pathway to artificial superintelligence if left unconstrained, as successive capability doublings could occur faster than human oversight can track. RSI is a central concern in AI safety research because systems capable of recursive self-improvement may rapidly violate designers' assumptions about capability bounds and alignment properties.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -14,20 +14,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:self-improvement",
+        "label": "Self Improvement"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ai-safety-research",
+        "label": "AI Safety Research"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:value-alignment",
+        "label": "Value Alignment"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

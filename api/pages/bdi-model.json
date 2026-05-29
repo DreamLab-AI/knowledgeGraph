@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:bdi-model",
   "domain": "artificial-intelligence",
-  "definition": "BDI Model is a artificial intelligence concept and a type of Artificial Intelligence.",
+  "definition": "A deliberative agent architecture grounded in Bratman's theory of practical reasoning, structuring agent cognition around Beliefs (knowledge about the world), Desires (motivational goals), and Intentions (committed plans), with a reasoning cycle of belief revision, deliberation, means-end reasoning, and intention reconsideration.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-research-area",
@@ -14,20 +14,52 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:goal",
+        "label": "Goal"
+      },
+      {
+        "id": "urn:ngm:class:agent",
+        "label": "Agent"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomy-level",
+        "label": "Autonomy Level"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:objective",
+        "label": "Objective"
+      },
+      {
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human in the Loop"
+      }
+    ]
   },
   "wikilinks": [
     {

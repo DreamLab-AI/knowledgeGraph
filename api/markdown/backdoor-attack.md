@@ -7,7 +7,10 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses:: [[Data Poisoning]], [[Machine Learning Model]]
+  - contrastsWith:: [[Adversarial Attack]], [[Adversarial Robustness]]
+  - requires:: [[AI Safety]]
+  - relatedTo:: [[Model Robustness]], [[Privacy]]
 
 - ### Content
   - A training-time attack that embeds a hidden trigger pattern into an AI model, causing the model to behave normally on standard inputs but produce attacker-chosen outputs when the trigger is present, creating a covert vulnerability exploitable post-deployment.

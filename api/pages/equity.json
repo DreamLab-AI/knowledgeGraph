@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:equity",
   "domain": "infrastructure",
-  "definition": "Equity is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "The principle of fair and impartial access to AI, media technologies, and digital infrastructure across geographic, socioeconomic, and demographic groups. Equity in this context addresses disparities in technological access, educational opportunity, and participation in AI-driven economies, and informs legal frameworks and international cooperation mechanisms designed to close digital divide gaps.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-legal-and-regulatory",
@@ -13,21 +13,45 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:education-technology",
+        "label": "Education Technology"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:education-and-ai",
+        "label": "Education and AI"
+      },
+      {
+        "id": "urn:ngm:class:fairness-oecd",
+        "label": "Fairness (OECD)"
+      }
+    ]
   },
   "wikilinks": [
     {

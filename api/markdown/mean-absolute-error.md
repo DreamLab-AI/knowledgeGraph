@@ -8,6 +8,10 @@
 
 - ### Relationships
   - bridges-to:: [[Computer Vision]] (domain: ai) for model performance evaluation in visual tasks
+  - Part Of [[Model Performance]]
+  - Contrasts With [[Root Mean Square Error]]
+  - Uses [[Machine Learning Model]]
+  - Supports [[Fairness]]
 
 - ### Content
   - A regression performance metric representing the average magnitude of errors between predicted and actual values, calculated as the arithmetic mean of absolute differences between predictions and ground truth across all instances, providing an intuitive measure of prediction accuracy in the same units as the target variable, treating all errors equally regardless of direction, and being less sensitive to outliers than squared error metrics.

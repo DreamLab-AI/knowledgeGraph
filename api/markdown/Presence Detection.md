@@ -37,9 +37,10 @@ public:: true
   "@id": "urn:ngm:class:presence-detection",
   "@type": "Class",
   "label": "Presence Detection",
-  "definition": "Presence Detection is a spatial computing concept and a type of spatial-computing.",
+  "definition": "Presence Detection is the real-time determination of whether a user, avatar, or entity is active and spatially located within a digital environment. It combines sensor fusion, computer vision, and network signalling to maintain accurate availability states, enabling responsive social interactions, attention-aware interfaces, and adaptive content delivery in spatial computing systems.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-interaction",
@@ -51,6 +52,34 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:spatial-interaction",
+        "label": "Spatial Interaction"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:presence",
+        "label": "Presence"
+      },
+      {
+        "@id": "urn:ngm:class:context-aware-computing",
+        "label": "Context Aware Computing"
+      }
+    ]
   }
 }
 ```
@@ -76,14 +105,18 @@ public:: true
 
 
 - ### Definition
-  - PresenceDetection is a concept within the ngm domain.
+  - Presence Detection is the real-time determination of whether a user, avatar, or entity is active and spatially located within a digital environment. It combines sensor fusion, computer vision, and network signalling to maintain accurate availability states, enabling responsive social interactions, attention-aware interfaces, and adaptive content delivery in spatial computing systems.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:PresenceDetection
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses [[Sensor Fusion]]
+  - Uses [[Computer Vision]]
+  - Enables [[Spatial Interaction]]
+  - Related To [[Presence]]
+  - Related To [[Context Aware Computing]]
 
 - ### Content
   # PresenceDetection

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:human-in-the-loop-learning",
   "domain": "artificial-intelligence",
-  "definition": "Human-in-the-Loop Learning integrates human expertise into the machine learning process through iterative feedback, active learning, and collaborative intelligence.",
+  "definition": "A machine learning paradigm that integrates human expertise into the training process through iterative feedback, active learning queries, and collaborative validation. HITL learning combines automated model updates with human judgement for data labelling, error correction, and safety-critical decision review, and is essential in domains where ground truth is subjective or expert-dependent.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -13,21 +13,53 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:interactive-learning",
+        "label": "Interactive Learning"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "id": "urn:ngm:class:data-annotation",
+        "label": "Data Annotation"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human in the Loop"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ]
   },
   "wikilinks": [
     {

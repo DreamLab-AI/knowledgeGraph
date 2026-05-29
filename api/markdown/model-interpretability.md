@@ -7,7 +7,13 @@
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Has Part: [[Feature Importance]]
+  - Has Part: [[Local Explanation]]
+  - Has Part: [[Global Explanation]]
+  - Requires: [[Machine Learning]]
+  - Supports: [[AI Governance]]
+  - Supports: [[Fairness]]
+  - Related To: [[Interpretable AI]]
 
 - ### Content
   - The degree to which a human can understand the cause-effect relationships within a machine learning model's decision-making process, encompassing both the model's internal mechanisms and the reasoning behind specific predictions.

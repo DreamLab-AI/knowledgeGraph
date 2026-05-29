@@ -7,7 +7,9 @@
   - belongs-to-domain:: [[Metaverse Domain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart:: [[HumanComputerInteraction]], [[UserExperience]], [[VoiceInteraction]], [[HapticFeedback]], [[Accessibility]]
+  - relatedTo:: [[NaturalLanguageProcessing]], [[AugmentedReality]], [[MetaverseDomain]]
+  - enables:: [[ImmersiveExperience]], [[ImmersiveInterface]]
 
 - ### Content
 

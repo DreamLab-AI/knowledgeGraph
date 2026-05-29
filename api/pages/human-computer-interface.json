@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:human-computer-interface",
   "domain": "spatial-computing",
-  "definition": "Human Computer Interface is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "The set of hardware and software components through which a human user perceives, commands, and receives feedback from a computing system. In spatial computing, human computer interfaces extend beyond screens and keyboards to include gesture input, voice commands, gaze control, haptic feedback, and brain-computer interfaces, fundamentally shaping how users navigate and manipulate virtual environments.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-interaction",
@@ -13,21 +13,57 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:hand-tracking",
+        "label": "Hand Tracking"
+      },
+      {
+        "id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      },
+      {
+        "id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:spatial-tracking-technology",
+        "label": "Spatial Tracking Technology"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:brain-computer-interfaces",
+        "label": "Brain Computer Interfaces"
+      },
+      {
+        "id": "urn:ngm:class:3-d-user-interface",
+        "label": "3D User Interface"
+      }
+    ]
   },
   "wikilinks": [
     {

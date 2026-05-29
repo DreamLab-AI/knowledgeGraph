@@ -5,29 +5,56 @@
   "public": true,
   "classIri": "urn:ngm:class:iec-61508",
   "domain": "robotics",
-  "definition": "An international functional-safety standard specifying requirements for electrical, electronic, and programmable electronic safety-related systems across all industries.",
+  "definition": "IEC 61508 is a foundational international functional safety standard published by the International Electrotechnical Commission that specifies requirements for the design, development, validation, and lifecycle management of electrical, electronic, and programmable electronic (E/E/PE) safety-related systems across all application domains. It defines Safety Integrity Levels (SIL 1\u20134) as quantitative risk-reduction targets and prescribes the development methods\u2014fault trees, FMEAs, formal methods, and software design constraints\u2014appropriate to each SIL. Sector-specific derivative standards including ISO 26262 (automotive) and EN 50128 (rail) inherit its SIL framework and lifecycle requirements.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-safety-and-standards",
-      "label": "Robo Safety and Standards"
+      "label": "Safety and Standards"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:robo-safety-and-standards",
+        "label": "Safety and Standards"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      },
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity-standard",
+        "label": "Cybersecurity Standard"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

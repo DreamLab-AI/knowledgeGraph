@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:address",
   "domain": "blockchain",
-  "definition": "Public key-derived identifier within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "A blockchain Address is a compact, human-transmissible identifier derived from a public key via cryptographic hashing (typically SHA-256 followed by RIPEMD-160 for Bitcoin, or Keccak-256 for Ethereum), which designates the recipient or controller of blockchain funds or smart-contract state. Addresses function as pseudonymous identifiers: they reveal nothing about the owner's real identity while allowing cryptographic proof of ownership through digital signature with the corresponding private key. They are encoded in formats such as Base58Check (Bitcoin legacy), Bech32 (Bitcoin native SegWit), or hexadecimal with EIP-55 checksum (Ethereum).",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-cryptographic-primitive",
@@ -21,21 +21,81 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      },
+      {
+        "id": "urn:ngm:class:wallet",
+        "label": "Wallet"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:public-key",
+        "label": "Public Key"
+      },
+      {
+        "id": "urn:ngm:class:private-key",
+        "label": "Private Key"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:utxo-model",
+        "label": "UTXO Model"
+      },
+      {
+        "id": "urn:ngm:class:account-model",
+        "label": "Account Model"
+      },
+      {
+        "id": "urn:ngm:class:secp256k1",
+        "label": "secp256k1"
+      },
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
+      }
+    ]
   },
   "wikilinks": [
     {

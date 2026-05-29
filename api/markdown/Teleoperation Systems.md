@@ -58,7 +58,7 @@ public:: true
   "@id": "urn:ngm:class:teleoperation-systems",
   "@type": "Class",
   "label": "Teleoperation Systems",
-  "definition": "\"Robotic control systems enabling human operators to command and manipulate remote robots through intuitive interfaces, transmitting operator intentions to robot actuators whilst providing sensory feedback (visual, auditory, haptic) from the robot to the operator, creating bidirectional human-mac...",
+  "definition": "Teleoperation Systems are robotic control architectures enabling human operators to command and manipulate remote robots through master-slave or supervisory interfaces, transmitting operator intentions to robot actuators whilst providing sensory feedback (visual, auditory, haptic) from the robot to the operator, creating bidirectional human-machine coupling for remote physical interaction.",
   "domain": "distributed-collaboration",
   "maturity": "established",
   "subClassOf": [
@@ -71,7 +71,28 @@ public:: true
       "label": "Robotic Telepresence"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"},
+      {"@id": "urn:ngm:class:haptic-feedback-telepresence", "label": "Haptic Feedback Telepresence"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:feedback-control", "label": "Feedback Control"},
+      {"@id": "urn:ngm:class:actuator", "label": "Actuator"},
+      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:robotics-telepresence-bridge", "label": "Robotics-Telepresence Bridge"},
+      {"@id": "urn:ngm:class:robotic-telepresence", "label": "Robotic Telepresence"},
+      {"@id": "urn:ngm:class:haptics", "label": "Haptics"},
+      {"@id": "urn:ngm:class:encoder", "label": "Encoder"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:presence", "label": "Presence"},
+      {"@id": "urn:ngm:class:social-presence", "label": "Social Presence"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

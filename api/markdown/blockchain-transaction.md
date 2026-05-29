@@ -1,5 +1,5 @@
 - ### Definition
-  - BlockchainTransaction is a concept within the ngm domain.
+  - A Blockchain Transaction is an atomic, cryptographically signed state-change operation recorded on a distributed ledger, representing value transfer, smart contract execution, or data mutation. Each transaction is validated by network nodes according to the active consensus algorithm, included in a block, and made immutable through chaining. Transaction structure, fee markets, and confirmation semantics vary across UTXO-based systems such as Bitcoin and account-based systems such as Ethereum.
 
 - ### Semantic Classification
   - owl-class:: blockchain/BlockchainTransaction
@@ -7,6 +7,12 @@
 
 - ### Relationships
   - bridges-to:: [[Blockchain]]
+  - requires [[Consensus Algorithm]]
+  - requires [[Digital Signature]]
+  - requires [[Public-Key Cryptography]]
+  - enables [[Smart Contract]]
+  - enables [[Payment System]]
+  - partOf [[Blockchain]]
 
 - ### Content
 

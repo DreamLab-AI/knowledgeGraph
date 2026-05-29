@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:preference-learning",
   "@type": "Class",
   "label": "Preference Learning",
-  "definition": "A machine learning paradigm that learns from comparative judgments (e.g., \"A is better than B\") rather than absolute labels or demonstrations.",
+  "definition": "A machine learning paradigm that trains models from comparative human judgements (e.g., 'A is better than B') rather than absolute labels or demonstrations, enabling alignment with human values. Preference learning underpins reinforcement learning from human feedback and direct preference optimisation, and is the standard technique for aligning large language models.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
@@ -60,6 +61,40 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:reward-model",
+        "label": "Reward Model"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:training",
+        "label": "Training"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
+    ]
   }
 }
 ```
@@ -104,7 +139,12 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Enables [[Reinforcement Learning from Human Feedback]]
+  - Enables [[Reward Model]]
+  - Uses [[Reinforcement Learning]]
+  - Uses [[Machine Learning]]
+  - Supports [[AI Safety]]
+  - Related To [[Training]]
 
 - ### Content
   - A machine learning paradigm that learns from comparative judgments (e.g., "A is better than B") rather than absolute labels or demonstrations. Preference learning enables training models to align with human values by learning from rankings and comparisons, which are often easier for humans to provide than absolute ratings or demonstrations.

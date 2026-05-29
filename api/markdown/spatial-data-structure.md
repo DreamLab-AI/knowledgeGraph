@@ -1,12 +1,17 @@
 - ### Definition
-  - SpatialDataStructure is a concept within the ngm domain.
+  - A Spatial Data Structure is a data organisation scheme that indexes geometric or geographic information to enable efficient queries over position, proximity, and containment. Examples include octrees, k-d trees, BVH hierarchies, R-trees, and spatial hash grids, each offering different trade-offs between build cost, query performance, and dynamic update capability for real-time 3D applications.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:SpatialDataStructure
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - enables [[Collision Detection]]
+  - enables [[Ray Tracing]]
+  - enables [[Real-Time Rendering]]
+  - uses [[Scene Graph]]
+  - relatedTo [[Physics Simulation]]
+  - relatedTo [[Spatial Mapping]]
 
 - ### Content
   # SpatialDataStructure

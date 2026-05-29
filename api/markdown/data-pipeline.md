@@ -7,7 +7,10 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Has Part: [[Feature Engineering]], [[Quality Assurance]]
+  - Enables: [[Machine Learning]], [[Deep Learning]]
+  - Uses: [[ETL Pipeline]], [[Distributed System]]
+  - Related To: [[Blockchain]], [[Monitoring Dashboard]]
 
 - ### Content
   - Data pipelines orchestrate connected processing stages implementing data ingestion, transformation, quality assurance, and delivery, with validation, error handling, and monitoring ensuring reliable, available analytical outputs.

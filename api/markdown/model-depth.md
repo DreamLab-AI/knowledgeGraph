@@ -7,7 +7,13 @@
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **contrastsWith** [[Model Width]] — depth (layer count) and width (hidden dimension) are the two primary scaling axes
+  - **requires** [[Residual Connection]] — skip connections are essential to train very deep networks stably
+  - **requires** [[Layer Normalisation]] — normalisation at each layer prevents gradient vanishing in depth
+  - **dependsOn** [[Transformer]] — transformer architecture defines the repeatable layer unit that depth counts
+  - **dependsOn** [[Hyperparameter]] — depth is a hyperparameter set prior to training
+  - **relatedTo** [[Parameter Count]] — depth linearly increases total parameter count for fixed width
+  - **relatedTo** [[Deep Learning]] — depth is the defining structural property of deep learning architectures
 
 - ### Content
   - The number of transformer layers (encoder and/or decoder) stacked in a model, determining the number of sequential transformations applied to representations.

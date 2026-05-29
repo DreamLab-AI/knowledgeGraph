@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:scripting-language",
   "domain": "infrastructure",
-  "definition": "Scripting Language is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A scripting language is an interpreted or dynamically compiled programming language used to automate tasks, define interactive behaviours, and extend the capabilities of host applications or game engines without modifying core engine code. In metaverse contexts, scripting languages such as JavaScript, Lua, Python, and C# enable content creators to author custom gameplay mechanics, NPC behaviour, and dynamic environment logic with rapid iteration cycles.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-software-engineering",
@@ -13,21 +13,45 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:game-development",
+        "label": "Game Development"
+      },
+      {
+        "id": "urn:ngm:class:virtual-world-creation",
+        "label": "Virtual World Creation"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:programming-language",
+        "label": "Programming Language"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": []

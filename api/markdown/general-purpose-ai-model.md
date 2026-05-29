@@ -7,7 +7,13 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses [[Transformer Architecture]]
+  - Uses [[Pre Training]]
+  - Uses [[Fine Tuning]]
+  - Enables [[Large Language Models]]
+  - Depends on [[AI Regulation]]
+  - Depends on [[AI Governance]]
+  - Related to [[AI Governance Framework]]
 
 - ### Content
   - An AI model that displays significant generality and is capable of competently performing a wide range of distinct tasks regardless of the way the model is placed on the market.

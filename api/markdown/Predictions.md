@@ -33,15 +33,29 @@ public:: true
   "@id": "urn:ngm:class:predictions",
   "@type": "Class",
   "label": "Predictions",
-  "definition": "Predictions is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A curated set of near-term forecasts for the generative AI video and creative-tool landscape, covering model aggregators, story-level tooling, template ecosystems, real-time trend integration, open-source convergence, inference cost reduction, specialised models, and the social/legal challenges of AI-generated content. These predictions frame strategic planning for platforms operating in the AI creative economy.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
+      {"@id": "urn:ngm:class:ai-video", "label": "AI Video"},
+      {"@id": "urn:ngm:class:video-generation", "label": "Video Generation"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:ai-generated-content-disclosure", "label": "AI-Generated Content Disclosure"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:proprietary-ai-video", "label": "Proprietary AI Video"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -72,14 +86,16 @@ public:: true
 
 
 - ### Definition
-  - Predictions is a concept within the ngm domain.
+  - A curated set of near-term forecasts for the generative AI video and creative-tool landscape, covering model aggregators, story-level tooling, template ecosystems, real-time trend integration, open-source convergence, inference cost reduction, specialised models, and the social/legal challenges of AI-generated content. These predictions frame strategic planning for platforms operating in the AI creative economy.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:Predictions
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - relatedTo: [[Generative AI]], [[AI Video]], [[Video Generation]]
+  - enables: [[AI-Generated Content Disclosure]]
+  - contrastsWith: [[Proprietary AI Video]]
 
 - ### Content
   - Applications

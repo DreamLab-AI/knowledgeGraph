@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ray-marching",
   "domain": "spatial-computing",
-  "definition": "Ray Marching is a spatial computing concept and a type of Rendering Technique.",
+  "definition": "Ray Marching is a rendering technique in which a ray is incrementally stepped through a scene, evaluating a signed distance field (SDF) at each step to determine proximity to geometry. The step size adapts to the SDF value (sphere tracing), enabling efficient rendering of implicit surfaces, volumetric effects, soft shadows, and ambient occlusion that are impractical with triangle-based rasterisation. It is widely implemented in GPU shader programs and is foundational to procedural 3D scene generation in real-time and offline contexts.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-display-and-rendering",
@@ -17,15 +17,46 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:shader",
+        "label": "Shader"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:global-illumination",
+        "label": "Global Illumination"
+      },
+      {
+        "id": "urn:ngm:class:procedural-generation",
+        "label": "Procedural Generation"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:rasterization",
+        "label": "Rasterization"
+      },
+      {
+        "id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],

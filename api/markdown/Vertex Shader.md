@@ -62,9 +62,10 @@ public:: true
   "@id": "urn:ngm:class:vertex-shader",
   "@type": "Class",
   "label": "Vertex Shader",
-  "definition": "Vertex Shader is a spatial computing concept and a type of Metaverse.",
+  "definition": "A mandatory, programmable GPU stage that processes individual vertices within the graphics pipeline, transforming 3D coordinates through model, view, and projection matrices into clip space whilst computing per-vertex attributes such as normals, texture coordinates, and lighting terms that are subsequently interpolated across primitives for the fragment shader.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-display-and-rendering",
@@ -80,6 +81,36 @@ public:: true
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:pixel-shader",
+        "label": "Pixel Shader"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:rasterization",
+        "label": "Rasterization"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:compute-shader",
+        "label": "Compute Shader"
+      },
+      {
+        "@id": "urn:ngm:class:visual-effects",
+        "label": "Visual Effects"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:shader",
+        "label": "Shader"
+      }
+    ]
   }
 }
 ```
@@ -136,7 +167,7 @@ public:: true
 
 
 - ### Definition
-  - Vertex Shader is a concept within the mv domain.
+  - A mandatory, programmable GPU stage that processes individual vertices within the graphics pipeline, transforming 3D coordinates through model, view, and projection matrices into clip space whilst computing per-vertex attributes such as normals, texture coordinates, and lighting terms that are subsequently interpolated across primitives for the fragment shader.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:VertexShader
@@ -144,6 +175,10 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Metaverse]]
+  - Part Of: [[Shader]]
+  - Uses: [[Rasterization]]
+  - Enables: [[Pixel Shader]]
+  - Related To: [[Compute Shader]], [[Visual Effects]]
 
 - ### Content
 

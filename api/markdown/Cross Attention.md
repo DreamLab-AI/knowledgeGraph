@@ -72,13 +72,29 @@ public:: true
   "label": "Cross Attention",
   "definition": "An attention mechanism where queries come from one sequence whilst keys and values come from a different sequence, enabling information flow between the encoder and decoder in sequence-to-sequence models.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-model-architecture",
       "label": "AI Model Architecture"
     }
   ],
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
+      {"@id": "urn:ngm:class:encoder-decoder-architecture", "label": "Encoder Decoder Architecture"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:query-key-value", "label": "Query Key Value"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:self-attention", "label": "Self Attention"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:multimodal-ai", "label": "Multimodal AI"},
+      {"@id": "urn:ngm:class:multimodal-understanding", "label": "Multimodal Understanding"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -159,6 +175,12 @@ public:: true
 
 - ### Relationships
   - bridges-to:: [[Computer Vision]]
+  - partOf [[Transformer Architecture]]
+  - partOf [[Encoder Decoder Architecture]]
+  - requires [[Query Key Value]]
+  - contrastsWith [[Self Attention]]
+  - enables [[Multimodal AI]]
+  - enables [[Multimodal Understanding]]
 
 - ### Content
   - An attention mechanism where queries come from one sequence whilst keys and values come from a different sequence, enabling information flow between the encoder and decoder in sequence-to-sequence models.

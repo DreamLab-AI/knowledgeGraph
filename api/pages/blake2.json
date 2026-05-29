@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:blake2",
   "domain": "blockchain",
-  "definition": "Cryptographic hash function within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "BLAKE2 is a high-performance cryptographic hash function designed as a faster, simpler alternative to SHA-2 and SHA-3 while preserving equivalent security guarantees. Introduced in 2012 by Jean-Philippe Aumasson, Samuel Neves, Zooko Wilcox-O'Hearn, and Christian Winnerlein, it produces digests of up to 512 bits (BLAKE2b) or 256 bits (BLAKE2s) and is widely adopted in blockchain systems, password-hashing schemes, and data integrity verification due to its speed advantage over SHA-256 on modern 64-bit processors. Its resistance to length-extension attacks and configurability\u2014including personalisation, salting, and variable digest length\u2014make it a versatile drop-in for many cryptographic protocol requirements.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-cryptographic-primitive",
@@ -21,21 +21,66 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-infrastructure",
+        "label": "Blockchain Infrastructure"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:sha-256",
+        "label": "SHA-256"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:cryptographic-primitive",
+        "label": "CryptographicPrimitive"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:sha-256",
+        "label": "SHA-256"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:ngm:class:digital-signatures",
+        "label": "Digital Signatures"
+      }
+    ]
   },
   "wikilinks": [
     {

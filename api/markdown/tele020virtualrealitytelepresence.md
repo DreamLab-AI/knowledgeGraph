@@ -1,12 +1,14 @@
 - ### Definition
-  - TELE020virtualrealitytelepresence is a concept within the ngm domain.
+  - Virtual Reality Telepresence (TELE020) combines immersive head-mounted display technology with real-time communication infrastructure to create a compelling shared sense of presence among geographically distributed participants. Key technical components include stereoscopic rendering, head-related transfer function spatial audio, full-body motion tracking for avatar animation, and bandwidth-adaptive network transport; modern platforms extend to eye tracking, facial capture, haptic feedback, and mixed-reality blending of physical and virtual participants.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:TELE020virtualrealitytelepresence
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses:: Virtual Reality, Spatial Audio, Haptic Feedback
+  - enables:: Metaverse and Telecollaboration, Immersive Experience
+  - relatedTo:: TELE 050 neuralrenderingtelepresence, Mixed Reality
 
 - ### Content
 

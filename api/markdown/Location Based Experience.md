@@ -42,9 +42,10 @@ public:: true
   "@id": "urn:ngm:class:location-based-experience",
   "@type": "Class",
   "label": "Location Based Experience",
-  "definition": "Location Based Experience is a spatial computing concept and a type of Immersive Experience.",
+  "definition": "An immersive or interactive experience tied to a specific physical venue or geographic location, combining real-world presence with digital or spatial computing overlays. Location-based experiences leverage spatial mapping, real-time content delivery, and user proximity to deliver contextually relevant narrative or interactive content that cannot be replicated remotely.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -55,7 +56,23 @@ public:: true
       "label": "Immersive Experience"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:spatial-mapping", "label": "Spatial Mapping"},
+      {"@id": "urn:ngm:class:gps", "label": "Gps"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"},
+      {"@id": "urn:ngm:class:content-delivery-network", "label": "Content Delivery Network"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:performing-arts", "label": "Performing Arts"},
+      {"@id": "urn:ngm:class:virtual-production", "label": "Virtual Production"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:metaverse-venue", "label": "Metaverse Venue"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -91,14 +108,20 @@ public:: true
 
 
 - ### Definition
-  - Location Based Experience is a concept within the ngm domain.
+  - An immersive or interactive experience tied to a specific physical venue or geographic location, combining real-world presence with digital or spatial computing overlays. Location-based experiences leverage spatial mapping, real-time content delivery, and user proximity to deliver contextually relevant narrative or interactive content that cannot be replicated remotely.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:LocationBasedExperience
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires** [[Spatial Mapping]] — location-aware content depends on accurate real-world spatial models
+  - **requires** [[Gps]] — geolocation anchoring grounds experiences to physical coordinates
+  - **uses** [[Extended Reality]] — XR overlays deliver the digital layer of location-based content
+  - **uses** [[Content Delivery Network]] — CDN infrastructure streams assets to on-site devices at low latency
+  - **enables** [[Performing Arts]] — location-based technology supports hybrid physical-digital performances
+  - **enables** [[Virtual Production]] — venue-anchored virtual production workflows leverage location binding
+  - **relatedTo** [[Metaverse Venue]] — metaverse venues are the digital counterparts of physical location-based spaces
 
 - ### Content
   - This is the new trigger word for immersive and reactive experiences like those being planned with [[Immersive]] and

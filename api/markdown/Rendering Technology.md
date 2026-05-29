@@ -42,16 +42,31 @@ public:: true
   "@id": "urn:ngm:class:rendering-technology",
   "@type": "Class",
   "label": "Rendering Technology",
-  "definition": "Rendering Technology is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Rendering Technology comprises the algorithms, pipelines, and hardware interfaces that convert geometric scene descriptions into pixel images. It encompasses rasterisation, ray tracing, and hybrid approaches, executed on GPUs through APIs such as Vulkan, Metal, and WebGPU, and is foundational to real-time interactive graphics, spatial computing experiences, and digital twin visualisation.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-display-and-rendering",
       "label": "Display and Rendering"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:rendering-pipeline", "label": "Rendering Pipeline"},
+      {"@id": "urn:ngm:class:shader", "label": "Shader"},
+      {"@id": "urn:ngm:class:rendering-engine", "label": "Rendering Engine"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
+      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
+      {"@id": "urn:ngm:class:scene-graph", "label": "Scene Graph"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -87,14 +102,16 @@ public:: true
 
 
 - ### Definition
-  - Rendering Technology is a concept within the metaverse domain. Further enrichment pending.
+  - Rendering Technology comprises the algorithms, pipelines, and hardware interfaces that convert geometric scene descriptions into pixel images. It encompasses rasterisation, ray tracing, and hybrid approaches, executed on GPUs through APIs such as Vulkan, Metal, and WebGPU, and is foundational to real-time interactive graphics, spatial computing experiences, and digital twin visualisation.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:RenderingTechnology
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **hasPart** → [[Rendering Pipeline]], [[Shader]], [[Rendering Engine]]
+  - **enables** → [[Real-Time Rendering]], [[Augmented Reality]]
+  - **uses** → [[GPU Compute]], [[Scene Graph]]
 
 - ### Content
 

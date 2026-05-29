@@ -7,7 +7,9 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - bridges-to:: [[AI Agent System]]
+  - supports:: [[AI Office]], [[EU AI Act]]
+  - enables:: [[AI Governance]], [[AI Governance Framework]]
+  - relatedTo:: [[AI Risk Management]], [[General Purpose AI Model]]
 
 - ### Content
   - Advisory body composed of representatives from EU Member States, supported by the AI Office, with the mission of coordinating uniform AI Act implementation, issuing guidelines, and facilitating cooperation among national authorities.

@@ -5,7 +5,9 @@
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses:: [[Smart Contract]], [[Blockchain]]
+  - enables:: [[Decentralised Finance]], [[Decentralised Autonomous Organisation]]
+  - supports:: [[Digital Asset]], [[Smart Contracts]]
 - ### Content
   - Implementation examples demonstrate theoretical concepts in production systems through smart contracts, NFT patterns, metaverse platform APIs, DeFi mechanics, and privacy-preserving techniques, serving as reference designs and educational resources with security guidance.
   - ### Original Content

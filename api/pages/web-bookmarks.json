@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:web-bookmarks",
   "domain": "infrastructure",
-  "definition": "Web Bookmarks is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A curated collection of saved hyperlinks to external web resources, serving as a personal or shared reference library for articles, tools, and research material. In knowledge management contexts, web bookmarks act as annotated entry points linking internal knowledge graphs to external sources.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-software-engineering",
@@ -14,7 +14,7 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,11 +23,30 @@
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:web-dev-and-consumer-tooling",
+        "label": "Web Dev and Consumer Tooling"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:knowledge-base",
+        "label": "Knowledge Base"
+      },
+      {
+        "id": "urn:ngm:class:web-technology",
+        "label": "Web Technology"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": []

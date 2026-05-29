@@ -1,13 +1,14 @@
 - ### Definition
-  - A standardization domain within the [[ETSI]] (European Telecommunications Standards Institute) focused on virtual society technologies, encompassing metaverse ecosystems, [[XR (Extended Reality)]], [[digital identity]], and interoperable virtual worlds.
-
-- ### Semantic Classification
-  - owl-class:: spatial-computing:ETSI_Domain_Virtual_Society
-  - owl-role:: StandardizationDomain
-  - belongs-to-domain:: [[MetaverseDomain]]
+  ETSI_Domain_Virtual_Society is a standardisation domain within the European Telecommunications Standards Institute (ETSI) that addresses technical foundations and interoperability requirements for virtual society infrastructures, including metaverse ecosystems, Extended Reality (XR) environments, decentralised digital identity, virtual economies, and interoperable virtual worlds. It coordinates work across ETSI bodies and with ISO/IEC, ITU-T, 3GPP, and the Metaverse Standards Forum.
 
 - ### Relationships
-  - bridges-to:: [[Blockchain]]
+  - hasPart:: [[Virtual World]], [[Avatar]], [[Digital Identity]]
+  - partOf:: [[ETSI Domain Taxonomy]]
+  - requires:: [[Extended Reality (XR)]], [[Avatar Interoperability]]
+  - enables:: [[Virtual Society]], [[Immersive Experience]], [[Social VR]]
+  - relatedTo:: [[Metaverse Platform]], [[Decentralized Identity (DID)]], [[NFT]], [[Digital Citizenship]]
+  - standardizedBy:: [[ETSI Domain Identity and Trust]], [[ETSI Domain Security and Privacy]]
+  - uses:: [[Smart Contract]], [[Decentralized Governance]]
 
 - ### Content
   - The **ETSI Domain: Virtual Society** represents the standardization ecosystem supporting virtual, immersive, and interconnected digital environments within the [[metaverse]] framework. This domain encompasses technical standards for [[interoperability]], [[digital identity]], [[privacy]], [[digital rights management]], and social interaction within virtual worlds, ensuring seamless, secure, and inclusive experiences for users. [Updated 2025]

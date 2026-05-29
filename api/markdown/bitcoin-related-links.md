@@ -1,5 +1,5 @@
 - ### Definition
-  - Bitcoin related links is a concept within the ngm domain.
+  - Bitcoin Related Links is a curated reference collection aggregating news, technical resources, regulatory developments, and community analysis pertaining to the Bitcoin blockchain ecosystem. It encompasses coverage of Bitcoin as money, mining economics, environmental debates, ETF instruments, and the broader cryptocurrency landscape.
 
 - ### Semantic Classification
   - owl-class:: blockchain:BitcoinRelatedLinks
@@ -7,6 +7,9 @@
 
 - ### Relationships
   - bridges-to:: [[Blockchain]]
+  - related-to:: [[Cryptocurrency]]
+  - has-part:: [[Bitcoin Mining]], [[Bitcoin As Money]], [[Bitcoin ETF]]
+  - bridges-to:: [[Lightning Network]], [[Bitcoin Environmental Issues]]
 
 - ### Content
 

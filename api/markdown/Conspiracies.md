@@ -58,15 +58,30 @@ public:: true
   "@id": "urn:ngm:class:conspiracies",
   "@type": "Class",
   "label": "Conspiracies",
-  "definition": "Conspiracies is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Conspiracies, in the context of technology communities, refers to the recurring pattern of conspiratorial thinking that attaches to emerging technologies such as cryptocurrency and AI. Often rooted in legitimate governance concerns, such thinking can escalate into disinformation ecosystems, creating tensions within technology policy, AI safety debates, and open-source governance.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:politics-law-privacy", "label": "Politics, Law, Privacy"},
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:safety-and-alignment", "label": "Safety and alignment"},
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:california-ai-bill", "label": "California AI bill"},
+      {"@id": "urn:ngm:class:open-source-ai", "label": "Open-Source AI"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -128,16 +143,16 @@ public:: true
 
 
 - ### Definition
-  - Conspiracies is a concept within the ngm domain.
+  - Conspiracies, in the context of technology communities, refers to the recurring pattern of conspiratorial thinking that attaches to emerging technologies such as cryptocurrency and AI. Often rooted in legitimate governance concerns, such thinking can escalate into disinformation ecosystems, creating tensions within technology policy, AI safety debates, and open-source governance.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:Conspiracies
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
-
-  - bridges-to:: [[Blockchain]] (bc)
+  - related-to:: [[Politics, Law, Privacy]], [[Blockchain]]
+  - contrasts-with:: [[Safety and alignment]], [[AI Governance]]
+  - bridges-to:: [[California AI bill]], [[Open-Source AI]]
 - ### Content
   - Lots of the online communities that glom around the research topics of this book self identify as libertarian, mistrustful of government. To be clear, there are many specific failings they can (and do) point to. It's not the work of this knowledge base to unpick who is right and wrong here. As usual most likely there are no simple solutions, and the trust, as ever, is in the middle. With that said, there a significant pockets of outright conspiracy within these technology communities, and it makes some sense to gather them here.
   - # A grounding: The Paranoid Style in American Politics

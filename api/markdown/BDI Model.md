@@ -82,15 +82,33 @@ public:: true
   "@id": "urn:ngm:class:bdi-model",
   "@type": "Class",
   "label": "BDI Model",
-  "definition": "BDI Model is a artificial intelligence concept and a type of Artificial Intelligence.",
+  "definition": "A deliberative agent architecture grounded in Bratman's theory of practical reasoning, structuring agent cognition around Beliefs (knowledge about the world), Desires (motivational goals), and Intentions (committed plans), with a reasoning cycle of belief revision, deliberation, means-end reasoning, and intention reconsideration.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-research-area",
       "label": "AI Research Area"
     }
   ],
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:goal", "label": "Goal"},
+      {"@id": "urn:ngm:class:agent", "label": "Agent"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:autonomy-level", "label": "Autonomy Level"},
+      {"@id": "urn:ngm:class:ai-agent-system", "label": "AI Agent System"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:objective", "label": "Objective"},
+      {"@id": "urn:ngm:class:human-in-the-loop", "label": "Human in the Loop"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
@@ -182,7 +200,7 @@ public:: true
 
 
 - ### Definition
-  - BDI Model is a concept within the ai domain.
+  - A deliberative agent architecture grounded in Bratman's theory of practical reasoning, structuring agent cognition around Beliefs (world knowledge), Desires (motivational goals), and Intentions (committed plans), with a reasoning cycle covering belief revision, deliberation, means-end reasoning, and intention reconsideration.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:BdiModel
@@ -190,6 +208,10 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Artificial Intelligence]]
+  - hasPart:: [[Goal]], [[Agent]]
+  - enables:: [[Autonomy Level]], [[AI Agent System]]
+  - uses:: [[Artificial Intelligence]]
+  - relatedTo:: [[Objective]], [[Human in the Loop]]
 
 - ### Content
 

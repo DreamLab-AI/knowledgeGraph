@@ -5,33 +5,66 @@
   "public": true,
   "classIri": "urn:ngm:class:rb-0034-repeatability",
   "domain": "robotics",
-  "definition": "repeatability is a robotics and autonomous systems concept and a type of Robot.",
+  "definition": "Repeatability is a key performance metric of robot manipulators that quantifies the closeness of agreement between successive commanded returns to the same target position or pose, measured under identical conditions. It is formally defined in ISO 9283 as the radius of a sphere enclosing a specified percentage of attained positions from repeated attempts. Repeatability is distinct from accuracy \u2014 a robot may be highly repeatable but systematically offset from the commanded target \u2014 and is critical for applications such as assembly, welding, and precision manufacturing.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
       "label": "Actuation and Control"
-    },
-    {
-      "id": "urn:ngm:class:robot",
-      "label": "Robot"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:rb-0021-robot-kinematics",
+        "label": "rb 0021 robot kinematics"
+      },
+      {
+        "id": "urn:ngm:class:rb-0047-feedback-control",
+        "label": "rb 0047 feedback control"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:rb-0035-accuracy",
+        "label": "rb 0035 accuracy"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:rb-0087-safety-standard",
+        "label": "rb 0087 safety standard"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:rb-0036-resolution",
+        "label": "rb 0036 resolution"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:precision",
+        "label": "Precision"
+      },
+      {
+        "id": "urn:ngm:class:calibration",
+        "label": "Calibration"
+      },
+      {
+        "id": "urn:ngm:class:performance-metrics",
+        "label": "Performance Metrics"
+      }
+    ]
   },
   "wikilinks": [
     {

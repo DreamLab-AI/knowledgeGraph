@@ -48,7 +48,7 @@ public:: true
   "label": "Watermarking Service",
   "definition": "Digital infrastructure that embeds imperceptible markers into media content to establish provenance, authenticate ownership, detect tampering, and identify AI-generated content, supporting content credentials standards like C2PA for verifiable digital asset tracking.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
@@ -59,11 +59,53 @@ public:: true
       "label": "Content Authentication"
     }
   ],
-  "quality": 0.5,
+  "qualityScore": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:content-authentication",
+        "label": "Content Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:digital-rights-management",
+        "label": "Digital Rights Management"
+      },
+      {
+        "@id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      }
+    ]
   }
 }
 ```
@@ -109,6 +151,14 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Content Authentication]]
+  - Implements [[Content Authentication]]
+  - Implements [[Open Standard]]
+  - Supports [[Digital Rights Management]]
+  - Supports [[Provenance Tracking]]
+  - Supports [[Content Moderation]]
+  - Uses [[Cryptography]]
+  - Uses [[Signal Processing]]
+  - Enables [[Digital Asset]]
 
 - ### Content
 

@@ -50,16 +50,32 @@ public:: true
   "@id": "urn:ngm:class:epoch",
   "@type": "Class",
   "label": "Epoch",
-  "definition": "Epoch is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "In machine learning, an Epoch is one complete pass through the entire training dataset, during which model parameters are updated after each constituent batch. The number of epochs is a primary training hyperparameter: too few yield underfitting, whilst too many risk overfitting—a trade-off managed by techniques such as early stopping and learning-rate scheduling.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:batch-size", "label": "Batch Size"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"},
+      {"@id": "urn:ngm:class:hyperparameter", "label": "Hyperparameter"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:overfitting", "label": "Overfitting"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
+      {"@id": "urn:ngm:class:early-stopping", "label": "Early Stopping"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -113,7 +129,12 @@ public:: true
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **hasPart** [[Batch Size]] — each epoch is subdivided into batches of the configured batch size
+  - **relatedTo** [[Gradient Descent]] — gradient updates are performed within each epoch's batches
+  - **relatedTo** [[Hyperparameter]] — epoch count is a primary training hyperparameter
+  - **contrastsWith** [[Overfitting]] — excessive epochs are the primary cause of training-set overfitting
+  - **dependsOn** [[Deep Learning]] — epoch-based iteration is the standard training loop for deep networks
+  - **dependsOn** [[Early Stopping]] — early stopping determines when to terminate epoch iteration
   - bridges-to:: [[Blockchain]], [[Autonomous Robot]]
 
 - ### Content

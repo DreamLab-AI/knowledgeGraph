@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:virtual-office-spaces",
   "domain": "distributed-collaboration",
-  "definition": "\"Persistent virtual reality or metaverse environments designed as professional workspaces where distributed teams gather as avatars to collaborate, attend meetings, use shared whiteboards, and navigate 3D office layouts, replicating physical office spatial dynamics whilst enabling global remote p...",
+  "definition": "Virtual office spaces are persistent 3D environments hosted on VR or metaverse platforms where distributed teams gather as avatars to collaborate, attend meetings, use shared whiteboards, and navigate spatial office layouts, replicating physical workplace social dynamics whilst enabling global remote participation through immersive telepresence. Unlike transient video calls, these environments preserve spatial context across sessions \u2014 desks remain assigned, whiteboards retain content, and colleagues can be discovered by proximity cues. Leading implementations include Microsoft Mesh, Meta Horizon Workrooms, and Spatial.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:dc-workspace-tools",
@@ -17,21 +17,69 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.75,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      },
+      {
+        "id": "urn:ngm:class:avatar-system",
+        "label": "Avatar System"
+      },
+      {
+        "id": "urn:ngm:class:presence",
+        "label": "Presence"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:social-vr",
+        "label": "Social VR"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:remote-collaboration",
+        "label": "Remote Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -42,16 +42,33 @@ public:: true
   "@id": "urn:ngm:class:taxonomic-framework",
   "@type": "Class",
   "label": "Taxonomic Framework",
-  "definition": "Taxonomic Framework is a type of Robotics in the robotics domain.",
+  "definition": "A Taxonomic Framework is a principled hierarchical classification system that organises concepts within a domain into superclass-subclass relationships, enabling consistent identification, comparison, and retrieval of entities. In the robotics ontology it structures robot types, actuators, sensors, and control strategies into a formal class hierarchy that supports OWL reasoning, SPARQL queries, and interoperability across ontologies.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-actuation-and-control",
       "label": "Actuation and Control"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
+      {"@id": "urn:ngm:class:domain-ontology", "label": "Domain Ontology"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:robo-robot-type", "label": "Robot Type"},
+      {"@id": "urn:ngm:class:robo-actuation-and-control", "label": "Actuation and Control"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:structural-member", "label": "Structural Member"},
+      {"@id": "urn:ngm:class:systems-engineering", "label": "Systems Engineering"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:semantic-web-standards", "label": "Semantic Web Standards"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -87,14 +104,17 @@ public:: true
 
 
 - ### Definition
-  - Taxonomic Framework is a concept within the robotics domain. Further enrichment pending.
+  - A Taxonomic Framework is a principled hierarchical classification system that organises concepts within a domain into superclass-subclass relationships, enabling consistent identification, comparison, and retrieval of entities. In the robotics ontology it structures robot types, actuators, sensors, and control strategies into a formal class hierarchy that supports OWL reasoning, SPARQL queries, and interoperability across ontologies.
 
 - ### Semantic Classification
   - owl-class:: robotics:TaxonomicFramework
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - enables:: Ontology, Domain Ontology
+  - hasPart:: Robot Type, Actuation and Control
+  - relatedTo:: Structural Member, Systems Engineering
+  - standardizedBy:: Semantic Web Standards
 
 - ### Content
 

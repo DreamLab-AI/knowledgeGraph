@@ -5,29 +5,56 @@
   "public": true,
   "classIri": "urn:ngm:class:homomorphic-encryption",
   "domain": "infrastructure",
-  "definition": "Homomorphic encryption is a cryptographic scheme that allows computation to be performed directly on ciphertext, producing an encrypted result that matches the outcome of operations on the plaintext.",
+  "definition": "Homomorphic encryption is a cryptographic scheme that allows arithmetic and logical operations to be performed directly on ciphertext, producing an encrypted result that decrypts to the same value as if the operations had been applied to the plaintext. Fully homomorphic encryption (FHE) supports arbitrary computation over encrypted data, enabling cloud services to process sensitive inputs without ever decrypting them. It sits at the intersection of cryptography and privacy-preserving technology, with practical schemes including BGV, BFV, CKKS, and TFHE.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-security-and-identity",
       "label": "Infra Security and Identity"
+    },
+    {
+      "id": "urn:ngm:class:cryptography",
+      "label": "Cryptography"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:privacy-preserving-technology",
+        "label": "Privacy Preserving Technology"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:homomorphic-encryption-for-machine-learning",
+        "label": "Homomorphic Encryption for Machine Learning"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

@@ -37,15 +37,29 @@ public:: true
   "@id": "urn:ngm:class:volumetric-capture",
   "@type": "Class",
   "label": "Volumetric Capture",
-  "definition": "Volumetric Capture is a spatial computing concept and a type of spatial-computing.",
+  "definition": "Volumetric Capture is the process of recording a subject or environment in three dimensions using arrays of cameras, depth sensors, or LiDAR to produce a fully navigable 4D (space + time) representation. The resulting volumetric video or point-cloud sequences can be rendered from any viewpoint, enabling photorealistic holographic telepresence, immersive sports broadcasting, and digital twin creation for spatial computing platforms.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-display-and-rendering",
       "label": "Display and Rendering"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:depth-sensing", "label": "Depth Sensing"},
+      {"@id": "urn:ngm:class:photogrammetry", "label": "Photogrammetry"},
+      {"@id": "urn:ngm:class:point-cloud", "label": "Point Cloud"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:3-d-reconstruction", "label": "3D Reconstruction"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -76,21 +90,24 @@ public:: true
 
 
 - ### Definition
-  - VolumetricCapture is a concept within the ngm domain.
+  - Volumetric Capture is the process of recording a subject or environment in three dimensions using arrays of cameras, depth sensors, or LiDAR to produce a fully navigable 4D (space + time) representation. The resulting volumetric video or point-cloud sequences can be rendered from any viewpoint, enabling photorealistic holographic telepresence, immersive sports broadcasting, and digital twin creation for spatial computing platforms.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:VolumetricCapture
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses [[Depth Sensing]]
+  - uses [[Photogrammetry]]
+  - uses [[Point Cloud]]
+  - enables [[3D Reconstruction]]
+  - enables [[Digital Twin]]
+  - relatedTo [[Real-Time Rendering]]
 
 - ### Content
-  # VolumetricCapture
-  VolumetricCapture represents a key component in Metaverse infrastructure and technology. Research: VolumetricCapture - 3D video, holographic capture, photogrammetry, depth capture
-  - https://www.khronos.org/ - Industry standards
-  - https://www.w3.org/TR/ - Web standards
-  - https://developer.mozilla.org/ - Technical documentation
+  # Volumetric Capture
+
+  Volumetric capture combines multi-camera photogrammetry, structured-light depth sensing, and neural rendering to produce free-viewpoint video. Industrial deployments—such as Microsoft's Mixed Reality Capture Studios—use hundreds of cameras in calibrated rigs to reconstruct performers with sub-millimetre accuracy. Consumer-grade systems increasingly leverage commodity depth cameras and neural radiance field (NeRF) methods to reduce hardware cost. The outputs are consumed by XR headsets, holographic displays, and digital twin platforms for training, entertainment, and telepresence applications.
 
   ## Sources
 

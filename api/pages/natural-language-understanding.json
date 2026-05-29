@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:natural-language-understanding",
   "domain": "artificial-intelligence",
-  "definition": "The subfield of NLP concerned with machine comprehension of meaning, intent, and context in human language, encompassing parsing, semantic analysis, and inference.",
+  "definition": "Natural Language Understanding (NLU) is the subfield of Natural Language Processing concerned with enabling machines to comprehend the meaning, intent, and pragmatic context of human language beyond surface-level syntax. NLU tasks include semantic role labelling, named entity recognition, coreference resolution, intent classification, and entailment inference, all of which require models to build structured representations of utterance meaning. Modern NLU systems are predominantly built on large pre-trained Transformer architectures such as BERT and its derivatives, which learn contextualised word representations from large corpora.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-research-area",
@@ -14,19 +14,42 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
+      },
+      {
+        "id": "urn:ngm:class:sentiment-analysis",
+        "label": "Sentiment Analysis"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:named-entity-recognition",
+        "label": "Named Entity Recognition"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
     "relatedTo": []
   },
   "wikilinks": [],

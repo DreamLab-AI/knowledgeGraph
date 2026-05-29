@@ -44,14 +44,32 @@ public:: true
   "label": "Gradient Clipping",
   "definition": "A technique that limits the magnitude of gradients during backpropagation to prevent exploding gradients and training instability. Gradient clipping rescales gradients when their norm exceeds a threshold, enabling stable training of deep networks, especially recurrent architectures.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"},
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:recurrent-neural-network", "label": "Recurrent Neural Network"},
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"},
+      {"@id": "urn:ngm:class:loss-function", "label": "Loss Function"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:optimiser", "label": "Optimiser"},
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -95,7 +113,10 @@ public:: true
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires**: [[Backpropagation]], [[Neural Network]]
+  - **enables**: [[Recurrent Neural Network]], [[Deep Learning]]
+  - **uses**: [[Gradient Descent]], [[Loss Function]]
+  - **relatedTo**: [[Optimiser]], [[Large Language Models]]
 
 - ### Content
   - A technique that limits the magnitude of gradients during backpropagation to prevent exploding gradients and training instability. Gradient clipping rescales gradients when their norm exceeds a threshold, enabling stable training of deep networks, especially recurrent architectures.

@@ -154,7 +154,7 @@ public:: true
   "@id": "urn:ngm:class:pharmaceutical-traceability",
   "@type": "Class",
   "label": "Pharmaceutical Traceability",
-  "definition": "Blockchain-based pharmaceutical supply chain systems employing unit-level serialization, immutable audit trails, and automated verification to combat the £200 counterfeit medicine market causing over 1 deaths annually, enabling DSCSA and EU FMD regulatory compliance, supporting MediLedger Network...",
+  "definition": "Blockchain-based pharmaceutical supply chain systems employing unit-level serialisation, immutable audit trails, and automated smart-contract verification to combat counterfeit medicines, enable DSCSA and EU FMD regulatory compliance, and deliver cold-chain monitoring and clinical-trial supply management across consortium networks such as MediLedger.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -163,7 +163,27 @@ public:: true
       "label": "Network Component"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:smart-contracts", "label": "Smart Contracts"},
+      {"@id": "urn:ngm:class:hyperledger-fabric", "label": "Hyperledger Fabric"},
+      {"@id": "urn:ngm:class:permissioned-blockchain", "label": "Permissioned Blockchain"},
+      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
+      {"@id": "urn:ngm:class:immutability", "label": "Immutability"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:provenance-tracking", "label": "Provenance Tracking"},
+      {"@id": "urn:ngm:class:compliance-verification", "label": "Compliance Verification"},
+      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:food-safety-blockchain", "label": "Food Safety Blockchain"},
+      {"@id": "urn:ngm:class:blockchain-compliance", "label": "Blockchain Compliance"},
+      {"@id": "urn:ngm:class:healthcare-technology", "label": "Healthcare Technology"},
+      {"@id": "urn:ngm:class:consortium-blockchain", "label": "Consortium Blockchain"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

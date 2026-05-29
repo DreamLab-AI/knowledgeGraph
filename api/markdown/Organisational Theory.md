@@ -42,16 +42,30 @@ public:: true
   "@id": "urn:ngm:class:organisational-theory",
   "@type": "Class",
   "label": "Organisational Theory",
-  "definition": "Organisational Theory is a type of Distributed Collaboration in the distributed collaboration domain.",
+  "definition": "The study of structural, behavioural, and governance patterns within organisations as they adopt distributed collaboration and immersive technologies. Organisational theory examines how hierarchies, communication channels, decision-making processes, and incentive structures must adapt to support decentralised, asynchronous, and spatially distributed teams operating within metaverse and mixed-reality workspaces.",
   "domain": "distributed-collaboration",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:dc-protocol-and-infra",
       "label": "Protocol and Infrastructure"
     }
   ],
-  "quality": 0.35,
+  "qualityScore": 0.7,
+  "relations": {
+    "supports": [
+      {"@id": "urn:ngm:class:collaboration", "label": "Collaboration"},
+      {"@id": "urn:ngm:class:governance-model", "label": "Governance Model"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:community-governance", "label": "Community Governance"},
+      {"@id": "urn:ngm:class:decentralized-governance", "label": "Decentralized Governance"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:collaboration-platform", "label": "Collaboration Platform"},
+      {"@id": "urn:ngm:class:knowledge-management", "label": "Knowledge Management"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -87,14 +101,16 @@ public:: true
 
 
 - ### Definition
-  - Organisational Theory is a concept within the telecollaboration domain. Further enrichment pending.
+  - The study of structural, behavioural, and governance patterns within organisations as they adopt distributed collaboration and immersive technologies. Organisational theory examines how hierarchies, communication channels, decision-making processes, and incentive structures must adapt to support decentralised, asynchronous, and spatially distributed teams operating within metaverse and mixed-reality workspaces.
 
 - ### Semantic Classification
   - owl-class:: distributed-collaboration:OrganisationalTheory
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - supports: [[Collaboration]], [[Governance Model]]
+  - enables: [[Community Governance]], [[Decentralized Governance]]
+  - relatedTo: [[Collaboration Platform]], [[Knowledge Management]]
 
 - ### Content
 

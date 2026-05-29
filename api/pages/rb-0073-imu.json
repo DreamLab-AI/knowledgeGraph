@@ -5,33 +5,77 @@
   "public": true,
   "classIri": "urn:ngm:class:rb-0073-imu",
   "domain": "robotics",
-  "definition": "imu is a robotics and autonomous systems concept and a type of Proprioceptive Sensor.",
+  "definition": "An Inertial Measurement Unit (IMU) is an electronic device that measures and reports a body's specific force, angular rate, and sometimes magnetic field using a combination of accelerometers, gyroscopes, and optional magnetometers. In robotics, IMUs provide high-frequency proprioceptive feedback for state estimation, pose tracking, and stabilisation control, and are commonly fused with odometry or SLAM algorithms to reduce drift.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-perception",
       "label": "Perception and Sensing"
     },
     {
-      "id": "urn:ngm:class:proprioceptive-sensor",
-      "label": "Proprioceptive Sensor"
+      "id": "urn:ngm:class:inertial-measurement-unit",
+      "label": "Inertial Measurement Unit"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:accelerometer",
+        "label": "Accelerometer"
+      },
+      {
+        "id": "urn:ngm:class:gyroscope",
+        "label": "Gyroscope"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:state-estimation",
+        "label": "State Estimation"
+      },
+      {
+        "id": "urn:ngm:class:odometry",
+        "label": "Odometry"
+      },
+      {
+        "id": "urn:ngm:class:localization",
+        "label": "Localization"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "id": "urn:ngm:class:rb-0066-robot-sensor",
+        "label": "rb 0066 robot sensor"
+      },
+      {
+        "id": "urn:ngm:class:rb-0072-encoder",
+        "label": "rb 0072 encoder"
+      }
+    ]
   },
   "wikilinks": [
     {

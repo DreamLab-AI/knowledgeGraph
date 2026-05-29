@@ -17,19 +17,40 @@
   "@id": "urn:ngm:class:byzantine-fault-tolerant-system",
   "@type": "Class",
   "label": "Byzantine Fault Tolerant System",
-  "definition": "Byzantine Fault Tolerant System is a foundational concept in infrastructure that serves as a classification parent for 3 related concepts in the ontology.",
+  "definition": "A Byzantine Fault Tolerant System is a distributed computing system designed to continue operating correctly even when a subset of its nodes exhibit arbitrary failures, including malicious or contradictory behaviour. It implements protocols guaranteeing safety and liveness as long as fewer than one-third of participants are faulty, underpinning consensus in blockchain and distributed ledger networks.",
   "domain": "infrastructure",
-  "maturity": "draft",
-  "quality": 0.3,
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
     }
-  ]
+  ],
+  "relations": {
+    "implements": [
+      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
+      {"@id": "urn:ngm:class:consensus-protocol", "label": "Consensus Protocol"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:consensus-algorithm", "label": "Consensus Algorithm"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"}
+    ]
+  }
 }
 ```
 
 ## Byzantine Fault Tolerant System
 
-Byzantine Fault Tolerant System is a foundational concept that serves as a taxonomy parent for related classes in the infrastructure domain.
+A Byzantine Fault Tolerant System is a distributed computing system designed to continue operating correctly even when a subset of its nodes exhibit arbitrary failures, including malicious or contradictory behaviour. It implements protocols guaranteeing safety and liveness as long as fewer than one-third of participants are faulty, underpinning consensus in blockchain and distributed ledger networks.
+
+### Relationships
+- implements:: [[Byzantine Fault Tolerance]]
+- enables:: [[Consensus Mechanism]], [[Consensus Protocol]]
+- requires:: [[Consensus Algorithm]]
+- supports:: [[Blockchain Network]]

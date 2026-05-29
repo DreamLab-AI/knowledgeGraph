@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:object-manipulation",
   "domain": "robotics",
-  "definition": "Object Manipulation is a robotics and autonomous systems concept and a type of robotics.",
+  "definition": "The robotic capability to grasp, reorient, move, and release physical objects using end-effectors, encompassing grasp planning, force-torque control, dexterous in-hand manipulation, and task-level sequencing. Object manipulation integrates computer vision for object detection and pose estimation with tactile sensing and compliant actuation to handle diverse and unstructured items.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
@@ -13,17 +13,49 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:manipulation",
+        "label": "Manipulation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:end-effector",
+        "label": "End Effector"
+      },
+      {
+        "id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:industrial-robot",
+        "label": "Industrial Robot"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-robot",
+        "label": "Collaborative Robot"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:force-control",
+        "label": "Force Control"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

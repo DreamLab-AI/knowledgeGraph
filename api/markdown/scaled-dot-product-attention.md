@@ -7,7 +7,13 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Part Of: [[Transformer Architecture]]
+  - Uses: [[Query Key Value]]
+  - Uses: [[Positional Encoding]]
+  - Enables: [[Multi-Head Attention]]
+  - Related To: [[Self Attention]]
+  - Related To: [[Feed Forward Network]]
+  - Related To: [[Backpropagation]]
 
 - ### Content
   - An attention mechanism that computes attention weights using the dot product of queries and keys, scaled by the square root of the key dimension, followed by a softmax normalisation.

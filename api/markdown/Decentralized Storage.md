@@ -163,6 +163,20 @@ public:: true
       "label": "Network Infrastructure"
     }
   ],
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:censorship-resistance", "label": "Censorship Resistance"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:content-addressing", "label": "Content Addressing"},
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:network-infrastructure", "label": "Network Infrastructure"}
+    ]
+  },
+  "maturity": "emerging",
   "quality": 0.4,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -342,7 +356,11 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - enables [[Censorship Resistance]]
+  - enables [[Digital Twin]]
+  - uses [[Content Addressing]]
+  - uses [[Blockchain]]
+  - contrastsWith [[Network Infrastructure]]
 
 - ### Content
   - Decentralised storage distributes data across peer-to-peer networks providing persistence, redundancy, and access without single points of failure, delivering censorship resistance, data availability, and user sovereignty guarantees.

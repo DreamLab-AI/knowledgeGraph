@@ -33,16 +33,34 @@ public:: true
   "@id": "urn:ngm:class:spatial-ai-associate",
   "@type": "Class",
   "label": "Spatial AI Associate",
-  "definition": "Spatial AI Associate is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "A Spatial AI Associate is an AI-powered assistant role or software agent embedded within spatial computing and extended reality environments, responsible for contextual scene understanding, user intent interpretation, and proactive spatial guidance. It combines computer vision, SLAM-derived spatial maps, and large language model reasoning to deliver situated, location-aware assistance within physical or mixed-reality spaces.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-application",
       "label": "AI Application"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:spatial-ai", "label": "Spatial AI"},
+      {"@id": "urn:ngm:class:slam", "label": "SLAM"},
+      {"@id": "urn:ngm:class:sensor-technology", "label": "Sensor Technology"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"},
+      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:scene-management", "label": "Scene Management"}
+    ]
+  },
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -72,17 +90,20 @@ public:: true
 
 
 - ### Definition
-  - Spatial AI Associate is a concept within the ngm domain.
+  - A Spatial AI Associate is an AI-powered assistant role or software agent embedded within spatial computing and extended reality environments, responsible for contextual scene understanding, user intent interpretation, and proactive spatial guidance. It combines computer vision, SLAM-derived spatial maps, and large language model reasoning to deliver situated, location-aware assistance within physical or mixed-reality spaces.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:SpatialAIAssociate
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: Spatial AI — the core intelligence layer; SLAM — the spatial mapping and localisation system that provides the associate with a model of its environment; Sensor Technology — cameras, depth sensors, and IMUs feed the spatial understanding pipeline.
+  - **enables**: Extended Reality — the spatial AI associate is a key enabler of intelligent, context-aware XR experiences; Augmented Reality — AR assistants are the most immediate realisation of the spatial AI associate concept.
+  - **partOf**: Spatial Computing — the spatial AI associate is a software agent operating within the spatial computing paradigm.
+  - **relatedTo**: Scene Management — the associate must query and respond to the scene graph maintained by scene management systems.
 
 - ### Content
-  Spatial AI Associate — content pending enrichment.
+  A Spatial AI Associate is an AI-powered assistant embedded within spatial computing and XR environments, combining scene understanding, SLAM localisation, and LLM reasoning to deliver situated, location-aware guidance.
 
 - ### Provenance
   - sources::

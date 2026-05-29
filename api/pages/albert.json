@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:albert",
   "domain": "artificial-intelligence",
-  "definition": "A Lite BERT: a parameter-efficient variant of BERT that uses factorised embedding parameterisation and cross-layer parameter sharing to reduce model size whilst maintaining or improving performance.",
+  "definition": "A Lite BERT: a parameter-efficient transformer variant that uses factorised embedding parameterisation and cross-layer parameter sharing to achieve 18x fewer parameters than BERT-large whilst matching or exceeding its performance on NLP benchmarks such as GLUE, SQuAD, and RACE.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-model-architecture",
@@ -14,20 +14,52 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ro-berta",
+        "label": "RoBERTa"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:lo-ra-do-ra-etc",
+        "label": "LoRA DoRA etc"
+      }
+    ]
   },
   "wikilinks": [
     {

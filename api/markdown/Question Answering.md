@@ -72,7 +72,7 @@ public:: true
   "label": "Question Answering",
   "definition": "Question Answering (QA) is the NLP task of automatically generating accurate answers to natural language questions posed by users, either by extracting answers from text passages (extractive QA) or generating free-form responses (generative QA).",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-application",
@@ -83,6 +83,20 @@ public:: true
       "label": "Machine Learning"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
+      {"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:dialogue-system", "label": "Dialogue System"},
+      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -162,7 +176,12 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Natural Language Processing]]
+  - requires [[Information Retrieval]]
+  - enables [[Dialogue System]]
+  - enables [[Retrieval-Augmented Generation]]
+  - uses [[Transformer]]
+  - uses [[Knowledge Graph]]
 
 - ### Content
   - Question Answering (QA) is the NLP task of automatically generating accurate answers to natural language questions posed by users, either by extracting answers from text passages (extractive QA) or generating free-form responses (generative QA). QA systems employ reading comprehension models, retrieval-augmented generation, and knowledge reasoning to power applications including search engines, virtual assistants, and customer support.

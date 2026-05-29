@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:sim-to-real-transfer",
   "domain": "robotics",
-  "definition": "The set of techniques for training robot policies in simulation and then deploying them in the physical world, bridging the gap caused by discrepancies between simulated and real dynamics.",
+  "definition": "Sim-to-real transfer encompasses the techniques and strategies for training robotic policies, perception models, and control algorithms in simulation environments and subsequently deploying them on physical hardware with acceptable performance degradation. The core challenge is the reality gap: discrepancies between simulated and real-world physics, sensor noise characteristics, contact dynamics, and visual appearance cause policies optimised in simulation to fail when deployed. Mitigation strategies include domain randomisation, domain adaptation, system identification, and the use of high-fidelity physics engines to narrow the gap before transfer.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-navigation-and-planning",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:robot-learning",
+        "label": "Robot Learning"
+      },
+      {
+        "id": "urn:ngm:class:legged-locomotion",
+        "label": "Legged Locomotion"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:synthetic-data",
+        "label": "Synthetic Data"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

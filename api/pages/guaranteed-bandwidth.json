@@ -5,24 +5,42 @@
   "public": true,
   "classIri": "urn:ngm:class:guaranteed-bandwidth",
   "domain": "spatial-computing",
-  "definition": "A guaranteed bandwidth component in the Metaverse domain that enables gNetworkSlice.",
+  "definition": "Guaranteed Bandwidth is a network quality commitment that ensures a minimum throughput level is reserved for a specific application or user session, regardless of concurrent network load. In spatial computing and XR contexts, it is a prerequisite for low-latency immersive streaming, enabling consistent frame delivery without compression artefacts or stutter that would degrade presence. It is typically enforced through Quality of Service mechanisms, traffic prioritisation, or network slicing in 5G infrastructure.",
   "subClassOf": [
-    {
-      "id": "urn:ngm:class:sc-content-and-assets",
-      "label": "Content and Assets"
-    },
     {
       "id": "urn:ngm:class:network-quality-metric",
       "label": "Network Quality Metric"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.75,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:quality-of-service",
+        "label": "Quality Of Service"
+      },
+      {
+        "id": "urn:ngm:class:telecommunications-infrastructure",
+        "label": "Telecommunications Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:real-time-processing",
+        "label": "Real-time Processing"
+      },
+      {
+        "id": "urn:ngm:class:immersive-communication",
+        "label": "Immersive Communication"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -30,8 +48,34 @@
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:network-quality-metric",
+        "label": "Network Quality Metric"
+      },
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:bandwidth-adaptation",
+        "label": "Bandwidth Adaptation"
+      },
+      {
+        "id": "urn:ngm:class:latency-management-protocol",
+        "label": "Latency Management Protocol"
+      }
+    ]
   },
   "wikilinks": [
     {

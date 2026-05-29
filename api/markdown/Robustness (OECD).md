@@ -42,15 +42,32 @@ public:: true
   "@id": "urn:ngm:class:robustness-oecd",
   "@type": "Class",
   "label": "Robustness (OECD)",
-  "definition": "AI systems should function reliably and securely throughout their lifecycle, demonstrating resilience against errors, faults, inconsistencies and attempts to alter system use or performance, with continuous assessment and management of potential risks.",
+  "definition": "The OECD Robustness principle (Principle 1.4, revised 2024) mandates that AI systems function reliably and securely throughout their lifecycle, demonstrating resilience against errors, faults, distributional inconsistencies, and adversarial attempts to alter system use or performance. It requires continuous risk assessment covering statistical robustness, fault tolerance, and adversarial resistance, and connects to the EU AI Act Article 15 technical requirements. Providers are responsible for design and testing; deployers are responsible for ongoing monitoring.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
     }
   ],
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:trustworthy-ai-framework", "label": "Trustworthy AI Framework"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:safety-oecd", "label": "Safety (OECD)"},
+      {"@id": "urn:ngm:class:adversarial-robustness", "label": "Adversarial Robustness"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:adversarial-testing", "label": "Adversarial Testing"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:responsible-ai-principles", "label": "Responsible AI Principles"},
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -95,7 +112,10 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **partOf**: Trustworthy AI Framework
+  - **relatedTo**: Safety (OECD), Adversarial Robustness
+  - **requires**: Adversarial Testing
+  - **enables**: Responsible AI Principles, AI Governance
 
 - ### Content
   - AI systems should function reliably and securely throughout their lifecycle, demonstrating resilience against errors, faults, inconsistencies and attempts to alter system use or performance, with continuous assessment and management of potential risks.

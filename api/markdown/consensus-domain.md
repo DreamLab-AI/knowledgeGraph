@@ -6,9 +6,11 @@
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
-
-  - bridges-to:: [[Blockchain]] (bc)
+  - bridges-to:: [[Blockchain]]
+  - has-part:: [[Consensus Mechanism]], [[Consensus Algorithm]], [[Consensus Protocol]]
+  - part-of:: [[Blockchain Domain]]
+  - requires:: [[Byzantine Fault Tolerant System]], [[Cryptographic Primitive]]
+  - enables:: [[Blockchain Network]]
 - ### Content
   - **Classification**
   - **Definition**

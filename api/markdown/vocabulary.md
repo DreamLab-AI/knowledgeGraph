@@ -5,7 +5,10 @@
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **Requires**: [[Tokenisation]] (algorithm determines vocabulary membership)
+  - **Enables**: [[Natural Language Processing]], [[Inference]] (model token prediction)
+  - **Uses**: [[Subword Tokenisation]], [[Byte Pair Encoding]], [[WordPiece]]
+  - **Part-of**: [[Transformer]] architecture (embedding and output projection layers)
 - ### Content
   - The number of unique tokens in a model's tokenisation scheme, balancing expressiveness with computational efficiency, typically ranging from 30,000 to 250,000 tokens in modern language models.
   ## Characteristics

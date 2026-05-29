@@ -46,16 +46,34 @@ public:: true
   "@id": "urn:ngm:class:vrm-format",
   "@type": "Class",
   "label": "VRM Format",
-  "definition": "An open file format standard for 3D humanoid avatars built on glTF, designed for cross-platform interoperability in VR, AR, and metaverse applications, incorporating standardized rigging, facial expressions, gaze controls, and licensing metadata to enable seamless avatar use across different virt...",
+  "definition": "An open file format standard for 3D humanoid avatars built on glTF, designed for cross-platform interoperability in VR, AR, and metaverse applications. It incorporates standardised humanoid rigging, facial blend-shape expressions, first-person gaze controls, and embedded licensing metadata, enabling seamless avatar portability across different virtual environments. In 2024 the VRM Consortium began collaboration with the Khronos Group to advance VRM specifications as official glTF extensions for international standardisation.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-standards-and-interop",
       "label": "Standards and Interoperability"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:gltf-standard", "label": "Gltf Standard"},
+      {"@id": "urn:ngm:class:3-d-file-format", "label": "3D File Format"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:avatar-interoperability", "label": "Avatar Interoperability"},
+      {"@id": "urn:ngm:class:avatar-portability", "label": "Avatar Portability"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:avatar-standard", "label": "Avatar Standard"},
+      {"@id": "urn:ngm:class:3-d-model", "label": "3D Model"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:open-standard", "label": "Open Standard"},
+      {"@id": "urn:ngm:class:interoperability-standard", "label": "Interoperability Standard"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -105,6 +123,10 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[3D File Format]]
+  - requires:: [[Gltf Standard]], [[3D File Format]]
+  - enables:: [[Avatar Interoperability]], [[Avatar Portability]]
+  - uses:: [[Avatar Standard]], [[3D Model]]
+  - standardizedBy:: [[Open Standard]], [[Interoperability Standard]]
 
 - ### Content
 

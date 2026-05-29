@@ -50,9 +50,10 @@ public:: true
   "@id": "urn:ngm:class:shared-whiteboards",
   "@type": "Class",
   "label": "Shared Whiteboards",
-  "definition": "\"Digital canvases in telepresence platforms enabling distributed team members to simultaneously draw, write, annotate, and manipulate visual content (text, images, diagrams, sticky notes) in real-time, replicating physical whiteboard collaboration dynamics through multi-user synchronisation and p...",
+  "definition": "Digital canvases in telepresence and collaboration platforms enabling distributed team members to simultaneously draw, write, annotate, and manipulate visual content — including text, images, diagrams, and sticky notes — in real time. Shared whiteboards replicate physical whiteboard collaboration dynamics through multi-user synchronisation and persistent storage of collaborative artefacts, supporting brainstorming, diagramming, and visual sensemaking across geographic distances.",
   "domain": "distributed-collaboration",
   "maturity": "established",
+  "qualityScore": 0.8,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:dc-workspace-tools",
@@ -63,7 +64,26 @@ public:: true
       "label": "TELE-002-telecollaboration"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:remote-collaboration", "label": "Remote Collaboration"},
+      {"@id": "urn:ngm:class:synchronous-collaboration", "label": "Synchronous Collaboration"},
+      {"@id": "urn:ngm:class:asynchronous-collaboration", "label": "Asynchronous Collaboration"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:telepresence", "label": "Telepresence"},
+      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:collaboration-platform", "label": "Collaboration Platform"},
+      {"@id": "urn:ngm:class:virtual-office-spaces", "label": "Virtual Office Spaces"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:video-conferencing", "label": "Video Conferencing"},
+      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
+      {"@id": "urn:ngm:class:mixed-reality", "label": "Mixed Reality"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -109,14 +129,10 @@ public:: true
 
 
 - ### Definition
-  - "Digital canvases in telepresence platforms enabling distributed team members to simultaneously draw, write, annotate, and manipulate visual content (text, images, diagrams, sticky notes) in real-time, replicating physical whiteboard collaboration dynamics through multi-user synchronisation and persistent storage of collaborative artefacts."
-
-- ### Semantic Classification
-  - owl-class:: distributed-collaboration:SharedWhiteboards
-  - owl-role:: Object
+  Digital canvases in telepresence and collaboration platforms enabling distributed team members to simultaneously draw, write, annotate, and manipulate visual content in real time. They replicate physical whiteboard dynamics through multi-user synchronisation and persistent artefact storage, supporting brainstorming and visual sensemaking across geographic distances.
 
 - ### Relationships
-  - is-subclass-of:: [[TELE-002-telecollaboration]]
+  Shared Whiteboards **enable** Remote Collaboration, Synchronous Collaboration, and Asynchronous Collaboration modes. They **use** Telepresence infrastructure for immersive integration and Augmented Reality for spatial annotation overlays. They are **part of** Collaboration Platform ecosystems and Virtual Office Spaces. They are **related to** Video Conferencing (often co-embedded), Virtual Reality whiteboard implementations, and Mixed Reality spatial canvases.
 
 - ### Content
 

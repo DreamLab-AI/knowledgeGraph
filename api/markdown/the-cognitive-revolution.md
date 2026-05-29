@@ -1,12 +1,14 @@
 - ### Definition
-  - The Cognitive Revolution is a concept within the ngm domain.
+  The Cognitive Revolution describes the transformative societal shift driven by AI systems automating cognitive and knowledge work at scale, drawing analogy to the Industrial Revolution's mechanisation of physical labour. It encompasses the displacement of routine mental tasks—coding, content creation, data analysis—freeing human effort for higher-order creativity and judgement, whilst raising urgent questions about workforce adaptation and economic equity.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:TheCognitiveRevolution
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **enables**: Workforce Augmentation, Workflow Automation
+  - **relatedTo**: Generative AI, AI Adoption, AI Ethics
+  - **contrastsWith**: AI Impact Assessment
 
 - ### Content
   - Compare Ai to the industrial revolution (this need a rewrite to not be so AI supported)

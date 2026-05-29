@@ -1,12 +1,13 @@
 - ### Definition
-  - Mathematical Science is a concept within the blockchain domain. Further enrichment pending.
+  - Mathematical Science encompasses the formal disciplines—including probability theory, linear algebra, calculus, graph theory, and cryptography—that underpin machine learning model design, algorithm analysis, and blockchain cryptographic security. It provides the theoretical substrate for understanding optimisation landscapes, neural network convergence, and information-theoretic limits of AI systems.
 
 - ### Semantic Classification
   - owl-class:: blockchain:MathematicalScience
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - enables:: [[Machine Learning]], [[Neural Network]]
+  - supports:: [[Algorithm]], [[Cryptography]]
 
 - ### Content
 

@@ -7,7 +7,10 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires:: [[Transparency]]
+  - partOf:: [[AI Governance]], [[Regulatory Framework]]
+  - contrastsWith:: [[Bias]]
+  - relatedTo:: [[Generative AI]], [[Synthetic Media]], [[AI Ethics]]
 
 - ### Content
   - AI systems subject only to transparency obligations, requiring users to be informed they are interacting with AI. These systems include chatbots, emotion recognition, biometric categorisation, and deepfake generation.

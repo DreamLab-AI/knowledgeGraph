@@ -1,12 +1,15 @@
 - ### Definition
-  - SoftwareEngineering is a concept within the ngm domain.
+  - Software Engineering is the disciplined application of systematic, quantifiable approaches to the development, operation, and maintenance of software. It encompasses requirements engineering, architectural design, implementation, testing, and DevOps practices for producing reliable, maintainable, and scalable systems. In metaverse and distributed real-time contexts, software engineering addresses concurrent state synchronisation, cross-platform compatibility, and asset pipeline management.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:SoftwareEngineering
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart [[Software Architecture]]
+  - hasPart [[Software Testing]]
+  - enables [[System Integration]]
+  - relatedTo [[Version Control]]
 
 - ### Content
   # SoftwareEngineering

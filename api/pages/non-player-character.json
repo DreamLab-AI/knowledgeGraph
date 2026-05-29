@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:non-player-character",
   "domain": "spatial-computing",
-  "definition": "Non Player Character is a spatial computing concept and a type of spatial-computing.",
+  "definition": "An autonomous, computer-controlled character in a virtual environment that follows scripted behaviour trees, finite state machines, or AI-driven policies to interact with human users and the scene. Modern NPCs increasingly leverage conversational AI and large language models to produce contextually responsive dialogue and adaptive behavioural patterns.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -13,17 +13,49 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      },
+      {
+        "id": "urn:ngm:class:agent",
+        "label": "Agent"
+      }
+    ],
     "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:animation",
+        "label": "Animation"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:state-machine",
+        "label": "State Machine"
+      },
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

@@ -146,15 +146,33 @@ public:: true
   "@id": "urn:ngm:class:aisystem",
   "@type": "Class",
   "label": "AISystem",
-  "definition": "A comprehensive system architecture comprising machine learning models, data pipelines, inference engines, and deployment infrastructure that enables intelligent decision-making and automation.",
+  "definition": "A comprehensive system architecture comprising machine learning models, data pipelines, inference engines, and deployment infrastructure that enables intelligent decision-making and automation across diverse application domains.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:cat-ai-infrastructure",
+      "@id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure (Category)"
     }
   ],
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:machine-learning-model", "label": "Machine Learning Model"},
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:ai-agent-system", "label": "AI Agent System"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:aiethics", "label": "AIEthics"},
+      {"@id": "urn:ngm:class:governance-framework", "label": "Governance Framework"}
+    ]
+  },
   "quality": 0.4,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -330,6 +348,9 @@ public:: true
 
 - ### Relationships
   - bridges-to:: [[AI Agent System]]
+  - hasPart:: [[Machine Learning Model]], [[Neural Network]]
+  - uses:: [[Natural Language Processing]], [[Computer Vision]]
+  - supports:: [[AIEthics]], [[Governance Framework]]
 
 - ### Content
   - An integrated technical architecture combining [[Machine Learning Models]], data processing pipelines, inference engines, and operational infrastructure to enable autonomous decision-making and intelligent automation. AI Systems represent the computational foundation enabling [[Artificial Intelligence]] capabilities across diverse application domains and deployment contexts.

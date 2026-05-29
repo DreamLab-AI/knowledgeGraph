@@ -42,7 +42,7 @@ public:: true
   "@id": "urn:ngm:class:knowledge-graph-construction",
   "@type": "Class",
   "label": "Knowledge Graph Construction",
-  "definition": "Knowledge Graph Construction is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "Knowledge Graph Construction is the process of automatically or semi-automatically building structured graph representations of world knowledge by extracting entities, relations, and attributes from heterogeneous sources such as text corpora, databases, and web data. The discipline combines techniques from natural language processing, information retrieval, and ontology engineering to produce machine-readable graphs that support reasoning, question answering, and semantic search.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -51,7 +51,26 @@ public:: true
       "label": "AI Technique"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:named-entity-recognition", "label": "Named Entity Recognition"},
+      {"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"},
+      {"@id": "urn:ngm:class:ontology", "label": "Ontology"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
+      {"@id": "urn:ngm:class:graph-database", "label": "Graph Database"},
+      {"@id": "urn:ngm:class:sparql", "label": "SPARQL"},
+      {"@id": "urn:ngm:class:embedding-model", "label": "Embedding Model"},
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
+      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"},
+      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

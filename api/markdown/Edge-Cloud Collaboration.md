@@ -66,16 +66,46 @@ public:: true
   "@id": "urn:ngm:class:edge-cloud-collaboration",
   "@type": "Class",
   "label": "Edge-Cloud Collaboration",
-  "definition": "Edge-Cloud Collaboration is a hybrid architecture dynamically partitioning AI workloads between resource-constrained edge devices and powerful cloud infrastructure, optimizing end-to-end latency, bandwidth utilization, energy consumption, and accuracy through adaptive offloading, model splitting,...",
+  "definition": "Edge-Cloud Collaboration is a hybrid architecture that dynamically partitions AI workloads between resource-constrained edge devices and powerful cloud infrastructure, optimising end-to-end latency, bandwidth utilisation, energy consumption, and inference accuracy through adaptive offloading, model splitting, early exit, and cascaded inference strategies. The architecture enables edge devices to handle time-sensitive inference locally while delegating computationally intensive or contextually uncertain tasks to the cloud, achieving the complementary strengths of both deployment tiers.",
   "domain": "artificial-intelligence",
   "maturity": "established",
+  "qualityScore": 0.8,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:cat-ai-infrastructure",
+      "@id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure (Category)"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
+      {"@id": "urn:ngm:class:cloud-infrastructure", "label": "Cloud Infrastructure"},
+      {"@id": "urn:ngm:class:bandwidth-adaptation", "label": "Bandwidth Adaptation"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:edge-ai-system", "label": "Edge AI System"},
+      {"@id": "urn:ngm:class:federated-edge-learning", "label": "Federated Edge Learning"},
+      {"@id": "urn:ngm:class:machine-learning-infrastructure", "label": "Machine Learning Infrastructure"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:latency-aware-edge-ai", "label": "Latency-Aware Edge AI"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
+      {"@id": "urn:ngm:class:io-t-ai-integration", "label": "IoT AI Integration"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
+      {"@id": "urn:ngm:class:edge-orchestration", "label": "Edge Orchestration"},
+      {"@id": "urn:ngm:class:edge-computing-architecture", "label": "Edge Computing Architecture"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:edge-ai-accelerators", "label": "Edge AI Accelerators"},
+      {"@id": "urn:ngm:class:machine-learning-platform", "label": "Machine Learning Platform"},
+      {"@id": "urn:ngm:class:cloud-native-applications", "label": "Cloud-Native Applications"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:edge-computing-node", "label": "Edge Computing Node"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -151,11 +181,19 @@ public:: true
   - implemented-in-layer:: [[ConceptualLayer]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
-  - bridges-to:: [[Blockchain]], [[Digital Twin]]
+  - hasPart:: [[Edge Computing]], [[Cloud Infrastructure]], [[Bandwidth Adaptation]]
+  - requires:: [[Edge AI System]], [[Federated Edge Learning]], [[Machine Learning Infrastructure]]
+  - enables:: [[Latency-Aware Edge AI]], [[Digital Twin]], [[IoT AI Integration]]
+  - uses:: [[Federated Learning]], [[Edge Orchestration]], [[Edge Computing Architecture]]
+  - relatedTo:: [[Edge AI Accelerators]], [[Machine Learning Platform]], [[Cloud-Native Applications]]
+  - contrastsWith:: [[Edge Computing Node]]
 
 - ### Content
-  Edge-Cloud Collaboration (AI-0436) — content pending enrichment.
+  Edge-Cloud Collaboration resolves the fundamental trade-off in AI deployment: edge devices offer low latency and data locality but limited compute; cloud servers offer vast compute and storage but introduce network latency and bandwidth costs. Hybrid architectures dissolve this dichotomy through several collaboration patterns. Model splitting partitions a neural network so early layers execute on the edge — extracting compact feature representations — while later, computationally heavier layers execute in the cloud, communicating only the compressed intermediate tensor rather than raw sensor data. This can reduce upstream bandwidth by 90% for video-based applications.
+
+  Early exit extends this idea by adding lightweight classification heads at intermediate network layers: when a sample's confidence exceeds a threshold at an early exit, inference terminates on the edge without involving the cloud. Autonomous vehicle perception systems use this pattern, resolving straightforward lane markings locally in under 10 ms while escalating ambiguous scenes to cloud re-analysis. Cascaded inference deploys a small, fast edge model as a first-stage filter, routing only the uncertain minority of samples to a larger, more accurate cloud model — achieving 60–80% latency reduction for common-case inputs.
+
+  Federated edge learning closes the loop: each edge device trains locally on its own data stream, contributing model gradients to cloud aggregation rounds without exposing raw data. This enables continual model improvement across IoT fleets while preserving data privacy. Frameworks such as AWS IoT Greengrass, Azure IoT Edge, and Google Cloud IoT Core provide orchestration layers managing model versioning, deployment, and telemetry across heterogeneous edge hardware. The ETSI Multi-access Edge Computing (MEC) standard provides the interoperability framework for carrier-grade deployments, enabling 5G networks to host edge inference nodes co-located with radio access infrastructure.
 
 - ### Provenance
   - sources:: [[AWS IoT Greengrass]], [[Azure IoT Edge]], [[ETSI MEC]]

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:data-integration",
   "domain": "infrastructure",
-  "definition": "Data Integration is a type of Infrastructure in the infrastructure domain.",
+  "definition": "Data Integration is the process of combining data from heterogeneous sources into a unified, consistent view suitable for analysis, model training, or operational use. It involves ETL/ELT pipelines, schema harmonisation, semantic mapping, and API-based federation. In metaverse and AI contexts, data integration connects sensor streams, user telemetry, digital-twin feeds, and blockchain records into coherent data products.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-data-management",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-interoperability",
+        "label": "Data Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:semantic-interoperability",
+        "label": "Semantic Interoperability"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:etl-pipeline",
+        "label": "ETL Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      }
+    ]
   },
   "wikilinks": [
     {

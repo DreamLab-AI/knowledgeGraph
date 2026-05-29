@@ -48,7 +48,7 @@ public:: true
   "label": "User Interface Architecture",
   "definition": "The structural design and organization of user interface components, interaction patterns, and navigation systems that enable users to interact with metaverse platforms and virtual environments across different devices and modalities.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-interaction",
@@ -59,11 +59,57 @@ public:: true
       "label": "System Architecture"
     }
   ],
-  "quality": 0.5,
+  "qualityScore": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "@id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:system-architecture",
+        "label": "System Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:hand-tracking",
+        "label": "Hand Tracking"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      }
+    ]
   }
 }
 ```
@@ -109,6 +155,15 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[System Architecture]]
+  - Has Part [[Accessibility]]
+  - Has Part [[User Experience]]
+  - Requires [[System Architecture]]
+  - Requires [[Human Computer Interaction]]
+  - Uses [[Eye Tracking]]
+  - Uses [[Haptic Feedback]]
+  - Uses [[Hand Tracking]]
+  - Supports [[Metaverse]]
+  - Supports [[Immersive Experience]]
 
 - ### Content
 

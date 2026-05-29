@@ -5,7 +5,10 @@
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **Uses**: [[Transformer]] (Transformer-XL backbone with segment recurrence), [[Natural Language Processing]]
+  - **Enables**: [[Inference]] (bidirectional autoregressive generation)
+  - **Contrasts-with**: [[WordPiece]] (XLNet uses SentencePiece tokenisation rather than WordPiece)
+  - **Requires**: [[Vocabulary]] (SentencePiece vocabulary), [[Training]] (permutation-based pre-training)
 - ### Content
   - A generalised autoregressive pre-training method that learns bidirectional contexts by maximising expected likelihood over all permutations of the factorisation order, overcoming limitations of BERT's masked language modelling.
   ## Characteristics

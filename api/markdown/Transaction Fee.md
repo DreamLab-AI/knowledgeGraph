@@ -66,24 +66,34 @@ public:: true
   "@id": "urn:ngm:class:transaction-fee",
   "@type": "Class",
   "label": "Transaction Fee",
-  "definition": "Payment for transaction processing within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "Transaction Fee is an economic mechanism in blockchain systems whereby originators of transactions pay a fee — denominated in the network's native cryptocurrency — to validators or miners in exchange for including and processing their transaction in a block. Fees simultaneously compensate network participants and provide a spam-prevention signal.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-defi-and-economics",
       "label": "DeFi and Economics"
-    },
-    {
-      "@id": "urn:ngm:class:blockchain-entity",
-      "label": "Blockchain Entity"
-    },
-    {
-      "@id": "urn:ngm:class:economic-mechanism",
-      "label": "EconomicMechanism"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:block-reward", "label": "Block Reward"},
+      {"@id": "urn:ngm:class:mining", "label": "Mining"},
+      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
+      {"@id": "urn:ngm:class:tokenomics", "label": "Tokenomics"},
+      {"@id": "urn:ngm:class:token-economics", "label": "Token Economics"},
+      {"@id": "urn:ngm:class:cryptocurrency", "label": "Cryptocurrency"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:validator-node", "label": "Validator Node"},
+      {"@id": "urn:ngm:class:miner", "label": "Miner"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

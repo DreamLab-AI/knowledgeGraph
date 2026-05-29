@@ -37,16 +37,31 @@ public:: true
   "@id": "urn:ngm:class:quaternion-math",
   "@type": "Class",
   "label": "Quaternion Math",
-  "definition": "Quaternion Math is a spatial computing concept and a type of spatial-computing.",
+  "definition": "Quaternion Math is the application of Hamilton's four-dimensional number system (q = w + xi + yj + zk) to represent and interpolate 3D rotations and orientations in spatial computing. Quaternions avoid gimbal lock inherent to Euler angles, enable smooth spherical linear interpolation (SLERP), and are computationally efficient for composing rotations in real-time rendering engines, robotics kinematics, and XR head-tracking pipelines.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:animation-technique", "label": "Animation Technique"},
+      {"@id": "urn:ngm:class:physics-simulation", "label": "Physics Simulation"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:rendering-technique", "label": "Rendering Technique"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:physics-engine", "label": "Physics Engine"},
+      {"@id": "urn:ngm:class:ray-tracing", "label": "Ray Tracing"},
+      {"@id": "urn:ngm:class:vr-rendering-engine", "label": "VR Rendering Engine"},
+      {"@id": "urn:ngm:class:xr-hardware", "label": "XR Hardware"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -76,14 +91,16 @@ public:: true
 
 
 - ### Definition
-  - QuaternionMath is a concept within the ngm domain.
+  - Quaternion Math is the application of Hamilton's four-dimensional number system (q = w + xi + yj + zk) to represent and interpolate 3D rotations in spatial computing. Quaternions avoid gimbal lock inherent to Euler angles, enable smooth SLERP interpolation, and are computationally efficient for composing rotations in real-time rendering engines, robotics kinematics, and XR head-tracking pipelines.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:QuaternionMath
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - enables:: [[Animation Technique]], [[Physics Simulation]]
+  - uses:: [[Rendering Technique]]
+  - relatedTo:: [[Physics Engine]], [[Ray Tracing]], [[VR Rendering Engine]], [[XR Hardware]]
 
 - ### Content
   # QuaternionMath

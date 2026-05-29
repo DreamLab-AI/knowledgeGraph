@@ -146,15 +146,34 @@ public:: true
   "@id": "urn:ngm:class:product-recall-management",
   "@type": "Class",
   "label": "Product Recall Management",
-  "definition": "Blockchain-powered systems enabling rapid, precise product recall execution through immutable supply chain traceability, reducing recall scope by 70-whilst accelerating contamination source identification from days to seconds, deployed at scale by Walmart (6 days → 2.2 seconds mango tracing),...",
+  "definition": "Blockchain-powered systems enabling rapid, precise product recall execution through immutable supply chain traceability, reducing recall scope by 70–85% whilst accelerating contamination source identification from days to seconds. Deployed at scale by Walmart (6 days to 2.2 seconds mango tracing), MediLedger, and automotive consortia for food safety, pharmaceuticals, and vehicle component recalls.",
   "domain": "blockchain",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-network-component",
       "label": "Network Component"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:supply-chain-traceability", "label": "Supply Chain Traceability"},
+      {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
+      {"@id": "urn:ngm:class:blockchain-domain", "label": "Blockchain Domain"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:consumer-protection", "label": "Consumer Protection"},
+      {"@id": "urn:ngm:class:food-safety-blockchain", "label": "Food Safety Blockchain"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:pharmaceutical-traceability", "label": "Pharmaceutical Traceability"},
+      {"@id": "urn:ngm:class:supply-chain-management", "label": "Supply Chain Management"}
+    ]
+  },
   "quality": 0.4,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -329,7 +348,10 @@ public:: true
   - belongs-to-domain:: [[BlockchainDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires: [[Supply Chain Traceability]], [[Distributed Ledger]]
+  - uses: [[Smart Contract]], [[Blockchain Domain]]
+  - enables: [[Consumer Protection]], [[Food Safety Blockchain]]
+  - relatedTo: [[Pharmaceutical Traceability]], [[Supply Chain Management]]
 
 - ### Content
   - Blockchain-powered systems for rapid, precise product recall execution, reducing recall scope by 70-85% through granular traceability whilst accelerating contamination source identification from days to seconds. These platforms transform food safety, automotive, pharmaceutical, and consumer electronics recalls through immutable supply chain tracking, automated consumer notification, and surgical precision in affected product identification. Walmart's pioneering implementation reduced mango traceability from 6 days 18 hours to 2.2 seconds, whilst automotive blockchain pilots enable component-level recalls affecting 15,000 vehicles instead of 1.5 million. Major deployments include IBM Food Trust's network covering £25+ billion in food products annually, MediLedger's pharmaceutical recall system preventing £130 million in counterfeit drug incidents, and automotive consortia (MOBI) tracking 45+ million connected vehicles for safety-critical component recalls across Toyota, GM, BMW, and Ford.

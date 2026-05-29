@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:virtual-reality",
   "domain": "spatial-computing",
-  "definition": "Virtual Reality is a spatial computing concept and a type of Extended Reality (XR).",
+  "definition": "Virtual Reality (VR) is a fully immersive simulation technology that replaces the user's physical environment with a computer-generated three-dimensional world, experienced through head-mounted displays with stereoscopic rendering, spatial audio, and motion tracking. VR applications span entertainment, education, remote collaboration, surgical training, and therapeutic interventions.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -18,20 +18,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      },
+      {
+        "id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "id": "urn:ngm:class:3-d-model",
+        "label": "3D Model"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

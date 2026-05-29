@@ -8,6 +8,10 @@
 
 - ### Relationships
   - is-subclass-of:: [[Workforce Development]]
+  - requires:: [[Simulation]], [[Immersive Technology]]
+  - uses:: [[Virtual Environment]], [[Immersive Learning]], [[Simulation Engine]]
+  - enables:: [[Augmented Connected Workforce]], [[Immersive Experience]]
+  - relatedTo:: [[Virtual Factory]]
 
 - ### Content
 

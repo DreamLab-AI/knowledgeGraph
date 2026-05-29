@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:graph-algorithms",
   "domain": "artificial-intelligence",
-  "definition": "Graph Algorithms is a type of Artificial Intelligence in the artificial intelligence domain.",
+  "definition": "A family of computational methods that operate on graph structures\u2014nodes and edges\u2014to solve problems such as shortest-path finding, community detection, ranking, and traversal. Graph algorithms are foundational to knowledge graph querying, social network analysis, and AI reasoning over relational data.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -13,21 +13,48 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:knowledge-graph-construction",
+        "label": "Knowledge Graph Construction"
+      },
+      {
+        "id": "urn:ngm:class:feature-importance",
+        "label": "Feature Importance"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ]
   },
   "wikilinks": [
     {

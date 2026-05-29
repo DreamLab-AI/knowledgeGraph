@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:hot-stuff-consensus",
   "domain": "blockchain",
-  "definition": "The first state machine replication protocol with linear view transformation complexity and optimistic responsiveness, simplifying PBFT for better performance.",
+  "definition": "A Byzantine fault-tolerant state machine replication protocol that achieves the first simultaneous combination of linear message complexity, optimistic responsiveness, and a simple three-phase voting pipeline. HotStuff replaces PBFT's quadratic message complexity with a leader-based threshold signature aggregation scheme, enabling safe view changes with O(n) messages and forming the foundation for the DiemBFT/LibraBFT and Aptos consensus protocols.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-protocol-and-consensus",
@@ -17,21 +17,66 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:finality",
+        "label": "Finality"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      }
+    ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:state-machine-replication",
+        "label": "State Machine Replication"
+      },
+      {
+        "id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:raft-consensus",
+        "label": "RAFT Consensus"
+      },
+      {
+        "id": "urn:ngm:class:tendermint-consensus",
+        "label": "Tendermint Consensus"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:sybil-resistance",
+        "label": "Sybil Resistance"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      }
+    ]
   },
   "wikilinks": [
     {

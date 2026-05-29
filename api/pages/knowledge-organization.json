@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:knowledge-organization",
   "domain": "artificial-intelligence",
-  "definition": "Knowledge Organization is a type of Artificial Intelligence in the artificial intelligence domain.",
+  "definition": "The systematic arrangement, classification, and representation of knowledge structures so that information can be discovered, related, and reasoned over. Knowledge organization encompasses taxonomies, thesauri, ontologies, and knowledge graphs, and underpins semantic search, question answering, and AI knowledge-base construction.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-research-area",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-organization-system",
+        "label": "Knowledge Organization System"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -42,9 +42,10 @@ public:: true
   "@id": "urn:ngm:class:production-design",
   "@type": "Class",
   "label": "Production Design",
-  "definition": "Production Design is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Production Design is the creative and technical discipline responsible for defining the visual aesthetic, spatial environment, and material world of a production — whether film, game, or virtual world. It spans concept art, environment modelling, asset creation pipelines, and art direction, ensuring visual coherence across all content elements.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
@@ -56,6 +57,42 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:digital-content-creation",
+        "label": "Digital Content Creation"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-design",
+        "label": "3D Design"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:world-building",
+        "label": "World Building"
+      },
+      {
+        "@id": "urn:ngm:class:content-production-workflow",
+        "label": "Content Production Workflow"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:creative-tools",
+        "label": "Creative Tools"
+      },
+      {
+        "@id": "urn:ngm:class:design-software",
+        "label": "Design Software"
+      },
+      {
+        "@id": "urn:ngm:class:animation-software",
+        "label": "Animation Software"
+      }
+    ]
   }
 }
 ```
@@ -87,14 +124,20 @@ public:: true
 
 
 - ### Definition
-  - Production Design is a concept within the metaverse domain. Further enrichment pending.
+  - Production Design is the creative and technical discipline responsible for defining the visual aesthetic, spatial environment, and material world of a production — whether film, game, or virtual world. It spans concept art, environment modelling, asset creation pipelines, and art direction, ensuring visual coherence across all content elements.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:ProductionDesign
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Has Part [[Digital Content Creation]]
+  - Has Part [[3D Design]]
+  - Uses [[Creative Tools]]
+  - Uses [[Design Software]]
+  - Uses [[Animation Software]]
+  - Enables [[World Building]]
+  - Enables [[Content Production Workflow]]
 
 - ### Content
 

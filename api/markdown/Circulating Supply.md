@@ -66,9 +66,10 @@ public:: true
   "@id": "urn:ngm:class:circulating-supply",
   "@type": "Class",
   "label": "Circulating Supply",
-  "definition": "Publicly available tokens within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "Circulating Supply is the quantity of a blockchain token that is publicly available and actively tradeable in the market at a given point in time—excluding tokens locked in smart contracts, held in treasury reserves, vested to team members, or burned. It serves as the operative supply figure for computing market capitalisation and price-to-earnings metrics, and changes continuously as new tokens are emitted via block rewards and locked tokens are released according to vesting schedules.",
   "domain": "blockchain",
   "maturity": "established",
+  "qualityScore": 0.8,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-defi-and-economics",
@@ -83,7 +84,28 @@ public:: true
       "label": "EconomicMechanism"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:total-supply", "label": "Total Supply"},
+      {"@id": "urn:ngm:class:fixed-supply-token", "label": "Fixed Supply Token"},
+      {"@id": "urn:ngm:class:halving", "label": "Halving"},
+      {"@id": "urn:ngm:class:tokenomics", "label": "Tokenomics"},
+      {"@id": "urn:ngm:class:token-economics", "label": "Token Economics"},
+      {"@id": "urn:ngm:class:market-capitalization", "label": "Market Capitalization"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:emission-schedule", "label": "Emission Schedule"},
+      {"@id": "urn:ngm:class:blockchain-protocol", "label": "Blockchain Protocol"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:burning-mechanism", "label": "Burning Mechanism"},
+      {"@id": "urn:ngm:class:blockchain-economics", "label": "Blockchain Economics"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:inflationary-token", "label": "Inflationary Token"},
+      {"@id": "urn:ngm:class:deflationary-token", "label": "Deflationary Token"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -149,7 +171,7 @@ public:: true
 
 
 - ### Definition
-  - Publicly available tokens within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
+  Circulating Supply is the quantity of a blockchain token that is publicly available and actively tradeable in the market at a given point in time—excluding tokens locked in smart contracts, held in treasury reserves, vested to team members, or burned. It serves as the operative supply figure for computing market capitalisation and price-to-earnings metrics, and changes continuously as new tokens are emitted via block rewards and locked tokens are released according to vesting schedules.
 
 - ### Semantic Classification
   - owl-class:: blockchain:CirculatingSupply
@@ -159,73 +181,19 @@ public:: true
   - implemented-in-layer:: [[EconomicLayer]]
 
 - ### Relationships
-  - is-subclass-of:: [[Blockchain Entity]], [[EconomicMechanism]]
+  - relatedTo:: [[Total Supply]], [[Fixed Supply Token]], [[Halving]], [[Tokenomics]], [[Token Economics]], [[Market Capitalization]]
+  - requires:: [[Emission Schedule]], [[Blockchain Protocol]]
+  - enables:: [[Burning Mechanism]], [[Blockchain Economics]]
+  - contrastsWith:: [[Inflationary Token]], [[Deflationary Token]]
 
 - ### Content
+  Circulating Supply represents the liquid, economically active portion of a token's total issuance. It is the figure used to compute market capitalisation (price × circulating supply) and is therefore the most influential supply metric watched by investors, analysts, and protocol governance participants. Circulating supply is not static: it increases as block rewards are minted and vesting schedules unlock previously locked allocations, and it can decrease if tokens are burned by smart contract mechanisms or sent to verifiably unspendable addresses.
 
-  ## Class Declaration
-  Declaration(Class(:CirculatingSupply))
+  The distinction between circulating supply, total supply, and maximum supply is critical for accurate economic modelling. Total supply includes all minted tokens minus burned tokens but may include locked or unvested tokens that are not yet tradeable. Maximum supply is the hard cap that cannot be exceeded—it may equal total supply in a fully emitted fixed-supply token, or exceed it for tokens with future planned emissions. Data aggregators such as CoinMarketCap and CoinGecko publish circulating supply figures sourced from protocol APIs and team disclosures, but methodological differences mean these figures can vary between providers.
 
-  ## Subclass Relationships
-  SubClassOf(:CirculatingSupply :EconomicMechanism)
-  SubClassOf(:CirculatingSupply :BlockchainEntity)
+  Emission schedules define the rate at which new tokens enter circulating supply over time. In proof-of-work chains such as Bitcoin, the emission is governed by block rewards that halve at predetermined block heights, producing a predictable, decelerating supply curve. In proof-of-stake chains, emission is typically a percentage of staked supply per epoch, producing an inflationary supply that may be partially offset by transaction fee burning (as in Ethereum's EIP-1559). Understanding these schedules is essential for projecting future supply dilution and evaluating real yield for token holders.
 
-  ## Essential Properties
-  SubClassOf(:CirculatingSupply
-    (ObjectSomeValuesFrom :partOf :Blockchain))
-
-  SubClassOf(:CirculatingSupply
-    (ObjectSomeValuesFrom :hasProperty :Property))
-
-  ## Data Properties
-  DataPropertyAssertion(:hasIdentifier :CirculatingSupply "BC-0117"^^xsd:string)
-  DataPropertyAssertion(:hasAuthorityScore :CirculatingSupply "1.0"^^xsd:decimal)
-  DataPropertyAssertion(:isFoundational :CirculatingSupply "true"^^xsd:boolean)
-
-  ## Object Properties
-  ObjectPropertyAssertion(:enablesFeature :CirculatingSupply :BlockchainFeature)
-  ObjectPropertyAssertion(:relatesTo :CirculatingSupply :RelatedConcept)
-
-  ## Annotations
-  AnnotationAssertion(rdfs:label :CirculatingSupply "Circulating Supply"@en)
-  AnnotationAssertion(rdfs:comment :CirculatingSupply
-    "Publicly available tokens"@en)
-  AnnotationAssertion(dct:description :CirculatingSupply
-    "Foundational blockchain concept with formal ontological definition"@en)
-  AnnotationAssertion(:termID :CirculatingSupply "BC-0117")
-  AnnotationAssertion(:priority :CirculatingSupply "1"^^xsd:integer)
-  AnnotationAssertion(:category :CirculatingSupply "economic-incentive"@en)
-  )
-      ```
-
-  - ## About Circulating Supply
-
-  - Publicly available tokens within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
-  - ### Key Characteristics
-    - 1. **Definitional Property**: Core defining characteristic
-    - 2. **Functional Property**: Operational behavior
-    - 3. **Structural Property**: Compositional elements
-    - 4. **Security Property**: Security guarantees provided
-    - 5. **Performance Property**: Efficiency considerations
-  - ### Technical Components
-    - **Implementation**: How concept is realized technically
-    - **Verification**: Methods for validating correctness
-    - **Interaction**: Relationships with other components
-    - **Constraints**: Technical limitations and requirements
-  - ### Use Cases
-    - **1. Core Blockchain Operation**
-    - **Application**: Fundamental blockchain functionality
-    - **Example**: Practical implementation in major blockchains
-    - **Requirements**: Technical prerequisites
-    - **Benefits**: Value provided to blockchain systems
-  - ### Standards & References
-    - [[ISO/IEC 23257:2021]] - Blockchain and distributed ledger technologies
-    - [[IEEE 2418.1]] - Blockchain and distributed ledger technologies
-    - [[NIST NISTIR]] - Blockchain and distributed ledger technologies
-
-
-
-  <!-- Merged from Circulating Supply.md: Blockchain, Tokenomics -->
+  Monitoring circulating supply changes is a standard practice in DeFi risk management because sudden large unlocks from vesting contracts can create sell pressure and price dislocations. Protocol treasuries may manage circulating supply actively through buyback-and-burn programmes or liquidity mining incentives, positioning circulating supply as a governed economic lever rather than a purely mechanical output of the emission schedule.
 
 - ### Provenance
   - sources:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]

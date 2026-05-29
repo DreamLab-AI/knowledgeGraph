@@ -1,5 +1,5 @@
 - ### Definition
-  - Content Authentication is a concept within the metaverse domain. Further enrichment pending.
+  - Content Authentication is the process of verifying the origin, integrity, and provenance of digital content through cryptographic techniques such as digital signatures, watermarking, and blockchain-anchored certificates. It enables consumers and platforms to distinguish authentic content from synthetically generated or tampered media, particularly critical as generative AI proliferates.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:ContentAuthentication
@@ -7,6 +7,12 @@
 
 - ### Relationships
   - bridges-to:: [[Blockchain]]
+  - Requires [[Cryptographic Verification]]
+  - Requires [[Digital Signature]]
+  - Uses [[Watermarks]]
+  - Uses [[Blockchain]]
+  - Related To [[Digital Rights Management]]
+  - Related To [[Cryptographic Hash Function]]
 
 - ### Content
 

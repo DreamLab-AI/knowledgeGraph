@@ -8,6 +8,10 @@
 
 - ### Relationships
   - is-subclass-of:: [[System Integration]]
+  - **Requires**: [[Sensor Fusion]], [[Authentication]] (device identity)
+  - **Enables**: [[Digital Twin]] (real-world wearable data in virtual spaces), [[Augmented Reality]]
+  - **Part-of**: [[Wearable Computing Platform]] ecosystem
+  - **Uses**: [[Interoperability]] protocols (Bluetooth LE, UWB, 5G)
 
 - ### Content
 

@@ -44,13 +44,27 @@ public:: true
   "label": "Red Teaming",
   "definition": "The practice of deliberately attempting to elicit harmful, biased, or undesired outputs from AI systems to identify vulnerabilities and weaknesses.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
       "label": "Governance and Safety"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
+      {"@id": "urn:ngm:class:adversarial-testing", "label": "Adversarial Testing"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
+      {"@id": "urn:ngm:class:safety-fine-tuning", "label": "Safety Fine Tuning"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"},
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -95,7 +109,12 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Large Language Models]]
+  - requires [[Adversarial Testing]]
+  - enables [[AI Safety]]
+  - enables [[Safety Fine Tuning]]
+  - supports [[AI Alignment]]
+  - supports [[AI Governance]]
 
 - ### Content
   - The practice of deliberately attempting to elicit harmful, biased, or undesired outputs from AI systems to identify vulnerabilities and weaknesses. Red teaming involves adversarial testing where human evaluators or automated systems probe for failure modes, informing alignment training and safety improvements.

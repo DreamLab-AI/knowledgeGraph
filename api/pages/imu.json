@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:imu",
   "domain": "spatial-computing",
-  "definition": "An Inertial Measurement Unit (IMU) is a sensor module combining accelerometers and gyroscopes\u2014and optionally magnetometers\u2014to measure and report a body's linear and angular motion in spatial-computing devices.",
+  "definition": "An Inertial Measurement Unit (IMU) is a self-contained electronic sensor module that combines tri-axial accelerometers, gyroscopes, and optionally magnetometers to measure a body's specific force, angular rate, and orientation relative to an inertial reference frame. In spatial-computing headsets and controllers, the IMU provides low-latency, high-frequency pose estimates that are fused with visual odometry or SLAM to achieve stable, drift-corrected tracking. The same component is integral to robot proprioception, UAV stabilisation, and motion-capture systems.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-interaction",
@@ -14,11 +14,20 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:motion-tracking",
+        "label": "Motion Tracking"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -26,8 +35,22 @@
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:inertial-measurement-unit",
+        "label": "Inertial Measurement Unit"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

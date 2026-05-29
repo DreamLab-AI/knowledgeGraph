@@ -33,16 +33,26 @@ public:: true
   "@id": "urn:ngm:class:update-cycle",
   "@type": "Class",
   "label": "Update Cycle",
-  "definition": "Update Cycle is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "An Update Cycle is the recurring interval at which knowledge artefacts, links, or system components are reviewed and refreshed to maintain accuracy and relevance. In knowledge graph and documentation contexts, update cycles are defined per content type based on the rate of underlying change, balancing maintenance effort against information staleness.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:knowledge-management", "label": "Knowledge Management"},
+      {"@id": "urn:ngm:class:version-control", "label": "Version Control"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:knowledge-management-system", "label": "Knowledge Management System"},
+      {"@id": "urn:ngm:class:documentation-standards", "label": "Documentation Standards"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -72,14 +82,15 @@ public:: true
 
 
 - ### Definition
-  - Update Cycle is a concept within the ngm domain.
+  An Update Cycle is the recurring interval at which knowledge artefacts, links, or system components are reviewed and refreshed to maintain accuracy and relevance. In knowledge graph and documentation contexts, update cycles are defined per content type based on the rate of underlying change, balancing maintenance effort against information staleness.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:UpdateCycle
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **relatedTo**: Knowledge Management, Version Control
+  - **supports**: Knowledge Management System, Documentation Standards
 
 - ### Content
   - These links are numbers that likely need revisiting every couple of months to update them.

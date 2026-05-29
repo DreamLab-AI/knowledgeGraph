@@ -8,7 +8,7 @@
   "definition": "The phase of the AI lifecycle encompassing the design, creation, training, and validation of artificial intelligence systems, including activities such as algorithm selection, data preparation, model architecture design, training process execution, hyperparameter optimisation, performance eand do...",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure (Category)"
     }
   ],

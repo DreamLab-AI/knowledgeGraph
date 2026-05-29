@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ai-provider",
   "domain": "artificial-intelligence",
-  "definition": "An individual, organisation, or legal entity that develops, produces, or supplies an artificial intelligence system, including responsibility for design decisions, training processes, system capabilities, documentation, and compliance with applicable requirements, and who either places the AI sys...",
+  "definition": "An individual, organisation, or legal entity that develops, produces, or supplies an AI system, assuming primary accountability for design decisions, training processes, capabilities, documentation, and regulatory compliance. Under the EU AI Act a provider places a system on the market under their own name, substantially modifies an existing system, or makes it available for use, thereby triggering obligations including conformity assessment, technical documentation, quality management, human oversight design, and post-market monitoring.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -14,20 +14,55 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ai-lifecycle",
+        "label": "AI Lifecycle"
+      },
+      {
+        "id": "urn:ngm:class:ai-impact-assessment",
+        "label": "AI Impact Assessment"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      }
+    ],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-operator",
+        "label": "AI Operator"
+      },
+      {
+        "id": "urn:ngm:class:ai-user",
+        "label": "AI User"
+      },
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ]
   },
   "wikilinks": [
     {

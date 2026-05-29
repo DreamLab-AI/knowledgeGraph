@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:content-production-workflow",
   "@type": "Class",
   "label": "Content Production Workflow",
-  "definition": "Content Production Workflow is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "A structured sequence of stages and toolchain integrations through which raw creative inputs are transformed into publishable digital assets, covering pre-production, asset authoring, review, rendering, and distribution. In spatial computing contexts, such workflows incorporate 3D asset pipelines, real-time rendering checks, and version-controlled delivery to metaverse platforms.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
@@ -60,6 +61,36 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:digital-content-creation",
+        "label": "Digital Content Creation"
+      },
+      {
+        "@id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:digital-content",
+        "label": "Digital Content"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:metaverse-content-pipeline",
+        "label": "Metaverse Content Pipeline"
+      }
+    ]
   }
 }
 ```
@@ -96,7 +127,7 @@ public:: true
 
 
 - ### Definition
-  - Content Production Workflow is a concept within the metaverse domain. Further enrichment pending.
+  - A structured sequence of stages and toolchain integrations through which raw creative inputs are transformed into publishable digital assets, covering pre-production, asset authoring, review, rendering, and distribution. In spatial computing contexts, such workflows incorporate 3D asset pipelines, real-time rendering checks, and version-controlled delivery to metaverse platforms.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:ContentProductionWorkflow
@@ -104,6 +135,11 @@ public:: true
 
 - ### Relationships
   - bridges-to:: [[Computer Vision]]
+  - Has Part [[Digital Content Creation]]
+  - Has Part [[Rendering Pipeline]]
+  - Uses [[Generative AI]]
+  - Enables [[Digital Content]]
+  - Related To [[Metaverse Content Pipeline]]
 
 - ### Content
 

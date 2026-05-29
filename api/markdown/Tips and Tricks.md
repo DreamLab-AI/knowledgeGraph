@@ -42,16 +42,29 @@ public:: true
   "@id": "urn:ngm:class:tips-and-tricks",
   "@type": "Class",
   "label": "Tips and Tricks",
-  "definition": "Tips and Tricks is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Practical heuristics, shortcuts, and workflow optimisations accumulated through practitioner experience with software tools, knowledge-management systems, and AI-assisted development. This category collects actionable guidance that reduces friction in everyday tasks such as Logseq database management, document format conversion, and prompt engineering.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"},
+      {"@id": "urn:ngm:class:version-control", "label": "Version Control"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:software-development-process", "label": "Software Development Process"},
+      {"@id": "urn:ngm:class:documentation-standards", "label": "Documentation Standards"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:workflow-automation", "label": "Workflow Automation"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -92,14 +105,16 @@ public:: true
 
 
 - ### Definition
-  - Tips and Tricks is a concept within the ngm domain.
+  - Practical heuristics, shortcuts, and workflow optimisations accumulated through practitioner experience with software tools, knowledge-management systems, and AI-assisted development. This category collects actionable guidance that reduces friction in everyday tasks such as Logseq database management, document format conversion, and prompt engineering.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:TipsAndTricks
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **relatedTo**: Prompt Engineering, Version Control — tips for effective prompting and source-control hygiene are the most common entries in this category.
+  - **supports**: Software Development Process, Documentation Standards — practitioner tips improve both the development workflow and the quality of resulting documentation.
+  - **uses**: Workflow Automation — many tips describe how to automate repetitive tasks using available tooling.
 
 - ### Content
   - [Logseq Tutorial: 5 Tips to Improve Your Logseq Database

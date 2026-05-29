@@ -46,16 +46,37 @@ public:: true
   "@id": "urn:ngm:class:cloud-native-applications",
   "@type": "Class",
   "label": "Cloud-Native Applications",
-  "definition": "Cloud-Native Applications is a type of Infrastructure in the infrastructure domain.",
+  "definition": "Cloud-native applications are software systems specifically designed and architected to exploit the capabilities of cloud computing environments, built from loosely coupled microservices deployed via containers and orchestrated across private, public, or hybrid cloud infrastructure. They prioritise scalability, resilience, observability, and automated lifecycle management over the characteristics of traditional monolithic systems. The paradigm is distinguished not by where an application runs but by how it is constructed, operated, and evolved.",
   "domain": "infrastructure",
   "maturity": "emerging",
+  "quality": 0.75,
+  "qualityScore": 0.75,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"},
+      {"@id": "urn:ngm:class:serverless-architecture", "label": "Serverless Architecture"},
+      {"@id": "urn:ngm:class:api-gateway", "label": "API Gateway"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:cloud-infrastructure", "label": "Cloud Infrastructure"},
+      {"@id": "urn:ngm:class:platform-engineering", "label": "Platform Engineering"},
+      {"@id": "urn:ngm:class:edge-cloud-collaboration", "label": "Edge-Cloud Collaboration"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:platform-service", "label": "Platform Service"},
+      {"@id": "urn:ngm:class:industry-cloud-platforms", "label": "Industry Cloud Platforms"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
+      {"@id": "urn:ngm:class:infrastructure-architecture", "label": "Infrastructure Architecture"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

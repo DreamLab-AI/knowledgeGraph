@@ -66,9 +66,10 @@ public:: true
   "@id": "urn:ngm:class:resilience-metric",
   "@type": "Class",
   "label": "Resilience Metric",
-  "definition": "Resilience metrics are quantitative and qualitative measurements assessing system robustness, fault tolerance, and recovery capabilities within digital and physical infrastructure, encompassing availability percentages, RecoveryTimeObjective|recovery time objectives, and failure rates that de...",
+  "definition": "Resilience metrics are quantitative and qualitative measurements that assess the robustness, fault tolerance, and recovery capabilities of digital and physical infrastructure. Core indicators include availability percentage, Recovery Time Objective (RTO), Recovery Point Objective (RPO), Mean Time Between Failures (MTBF), and Mean Time to Repair (MTTR). Effective resilience measurement combines real-time monitoring, predictive analytics, and automated remediation to maintain service quality under adverse conditions and verify SLA compliance.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
@@ -79,6 +80,22 @@ public:: true
       "label": "Distributed Systems"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:cloud-infrastructure", "label": "Cloud Infrastructure"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:anomaly-detection", "label": "Anomaly Detection"},
+      {"@id": "urn:ngm:class:compliance-monitoring", "label": "Compliance Monitoring"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"},
+      {"@id": "urn:ngm:class:reliability", "label": "Reliability"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:computing-infrastructure", "label": "Computing Infrastructure"}
+    ]
+  },
   "quality": 0.4,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -153,7 +170,10 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires**: Cloud Infrastructure
+  - **uses**: Anomaly Detection, Compliance Monitoring
+  - **relatedTo**: Fault Tolerance, Reliability
+  - **enables**: Computing Infrastructure
 
 - ### Content
   - Quantitative and qualitative measurements assessing system robustness, fault tolerance, and recovery capabilities through availability percentages, [[RecoveryTimeObjective|recovery time objectives]], and failure rates determining operational continuity. Metrics enable proactive [[IncidentResponse|incident management]] and [[SLAVerification|SLA compliance verification]] across [[CloudInfrastructure|cloud platforms]], [[MetaversePlatforms|metaverse services]], and [[BlockchainNetworks|blockchain networks]]. Effective measurement combines real-time monitoring, predictive analytics, and automated remediation to maintain service quality during adverse conditions.

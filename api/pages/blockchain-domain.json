@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:blockchain-domain",
   "domain": "blockchain",
-  "definition": "The BlockchainDomain represents the comprehensive knowledge domain of blockchain and distributed ledger technologies.",
+  "definition": "The Blockchain Domain is the comprehensive knowledge domain of blockchain and distributed ledger technologies, encompassing cryptographic primitives, consensus mechanisms, smart contracts, token economics, and decentralised applications. It serves as the parent classification for all blockchain-related ontological concepts, spanning foundational theory through enterprise deployments.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-network-component",
@@ -14,11 +14,42 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:consensus-domain",
+        "label": "Consensus Domain"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-domain",
+        "label": "Cryptographic Domain"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-process",
+        "label": "Blockchain Process"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:bc-cryptographic-primitive",
+        "label": "Cryptographic Primitive"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:blockchain-application",
+        "label": "Blockchain Application"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],

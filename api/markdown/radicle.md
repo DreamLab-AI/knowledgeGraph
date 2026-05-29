@@ -1,12 +1,14 @@
 - ### Definition
-  - Radicle is a concept within the ngm domain.
+  - Radicle is a decentralised, peer-to-peer code collaboration platform built on Git that eliminates dependence on centralised forges. It uses a content-addressed, cryptographically signed data model where repositories are identified by public keys rather than server-hosted URLs, enabling sovereign code hosting, offline collaboration, and censorship-resistant software development. Radicle integrates with Ethereum-based smart contracts for governance and funding.
 
 - ### Semantic Classification
   - owl-class:: blockchain:Radicle
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses:: [[Peer-to-Peer Network]], [[Version Control]], [[Cryptographic Signature]]
+  - enables:: [[Open Source Software]], [[Decentralized Governance]]
+  - relatedTo:: [[Smart Contract]], [[Blockchain Network]], [[Distributed System]]
 
 - ### Content
   - [Radicle - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=radicle-ide-plugins-team.radicle)

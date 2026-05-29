@@ -5,16 +5,20 @@
   "public": true,
   "classIri": "urn:ngm:class:iso-ts-15066",
   "domain": "robotics",
-  "definition": "An ISO technical specification defining safety requirements for collaborative robot workspaces in which robots and humans share the same operating space without physical barriers.",
+  "definition": "ISO/TS 15066:2016 is an ISO Technical Specification that supplements ISO 10218-1 and ISO 10218-2 by providing detailed guidance and biomechanical data for the safety of collaborative robot applications in which industrial robots and human workers share a common workspace without a physical separating guard. It defines four collaboration modes \u2014 safety-rated monitored stop, hand guiding, speed and separation monitoring, and power and force limiting \u2014 along with body-part-specific pain thresholds that govern permissible contact forces and pressures. The specification is a foundational reference for cobot risk assessment and CE marking under the EU Machinery Directive.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-safety-and-standards",
       "label": "Robotics Safety and Standards"
+    },
+    {
+      "id": "urn:ngm:class:robot-standard",
+      "label": "Robot Standard"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -24,10 +28,33 @@
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "id": "urn:ngm:class:force-control",
+        "label": "Force Control"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:collaborative-robot",
+        "label": "Collaborative Robot"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:iso-10218",
+        "label": "ISO 10218"
+      },
+      {
+        "id": "urn:ngm:class:robot-safety",
+        "label": "Robot Safety"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

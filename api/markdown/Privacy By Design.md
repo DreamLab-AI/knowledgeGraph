@@ -58,7 +58,7 @@ public:: true
   "@id": "urn:ngm:class:privacy-by-design",
   "@type": "Class",
   "label": "Privacy By Design",
-  "definition": "Privacy by Design is a proactive privacy framework and GDPR requirement (Article 25) mandating that data protection be embedded into system architecture, business practices, and technologies from inception rather than bolted on as afterthought, implementing privacy as default setting and core fun...",
+  "definition": "Privacy by Design is a proactive privacy framework and GDPR requirement (Article 25) mandating that data protection be embedded into system architecture, business practices, and technologies from inception rather than bolted on as afterthought, implementing privacy as the default setting. The framework comprises seven foundational principles including data minimisation, consent management, and transparency, requiring engineers and product teams to treat privacy as a design constraint from the earliest specification stage.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -67,7 +67,26 @@ public:: true
       "label": "AI Governance and Ethics"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:consent-management", "label": "Consent Management"},
+      {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"},
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:gdpr-compliance", "label": "GDPR Compliance"},
+      {"@id": "urn:ngm:class:differential-privacy", "label": "Differential Privacy"},
+      {"@id": "urn:ngm:class:transparency", "label": "Transparency"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"},
+      {"@id": "urn:ngm:class:algorithmic-accountability", "label": "Algorithmic Accountability"},
+      {"@id": "urn:ngm:class:data-protection-regulation", "label": "Data Protection Regulation"},
+      {"@id": "urn:ngm:class:transparency-and-explainability", "label": "Transparency and Explainability"},
+      {"@id": "urn:ngm:class:ai-risk-management", "label": "AI Risk Management"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

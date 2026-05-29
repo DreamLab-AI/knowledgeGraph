@@ -1,5 +1,5 @@
 - ### Definition
-  - Miner tip for inclusion within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
+  A Priority Fee (also called a miner tip or validator tip) is an optional, user-specified additional payment on top of the base fee in EIP-1559-compatible blockchains, paid directly to the block producer to incentivise preferential inclusion and ordering of a transaction within the next block. By offering a higher tip, users signal urgency and compete for limited block space during periods of network congestion, enabling a market-based transaction prioritisation mechanism. Priority fees are burned alongside the base fee under EIP-1559's fee model only partially — the base fee is burned while the priority fee flows to the validator, aligning incentives for prompt transaction confirmation.
 
 - ### Semantic Classification
   - owl-class:: blockchain:PriorityFee
@@ -9,71 +9,23 @@
   - implemented-in-layer:: [[EconomicLayer]]
 
 - ### Relationships
-  - is-subclass-of:: [[Blockchain Entity]], [[EconomicMechanism]]
+  - is-subclass-of:: [[Blockchain Entity]], [[Economic Mechanism]]
+  - requires:: [[Blockchain Transaction]], [[Consensus Mechanism]]
+  - enables:: [[Gas Optimization]], [[MEV]]
+  - dependsOn:: [[EIP-1559]], [[Base Fee]]
+  - hasPart:: [[Gas]]
+  - partOf:: [[Fee Market]], [[Tokenomics]]
+  - relatedTo:: [[Transaction Fee]], [[Gas Price]], [[Gas Fee Market]], [[Validator Node]]
+  - contrastsWith:: [[Burning Mechanism]]
 
 - ### Content
+  The Priority Fee was formalised as a distinct component of Ethereum's fee structure by EIP-1559, activated in the London hard fork (August 2021). Before EIP-1559, users submitted a single gas price bid in a first-price auction; miners included the highest-bidding transactions, creating unpredictability and overpayment. EIP-1559 separated fees into an algorithmically determined base fee (burned permanently) and a discretionary priority fee (paid to the validator).
 
-  ## Class Declaration
-  Declaration(Class(:PriorityFee))
+  From the user's perspective, setting a priority fee involves estimating the competitive tip level required to achieve inclusion within the desired number of blocks. Wallets typically query the mempool to surface recent percentile tip values (e.g., the 50th, 90th, and 99th percentile) and suggest appropriate values for slow, standard, or fast confirmation. During periods of extreme congestion — such as popular NFT mints — priority fees can spike by orders of magnitude as users compete for a fixed block capacity.
 
-  ## Subclass Relationships
-  SubClassOf(:PriorityFee :EconomicMechanism)
-  SubClassOf(:PriorityFee :BlockchainEntity)
+  Validators (formerly miners) rationally include transactions offering the highest priority fees first, up to the block gas limit. This creates a secondary market dynamic: MEV searchers use sophisticated strategies to insert their transactions at precise positions within a block's ordering, sometimes paying extremely high priority fees for front-running or arbitrage opportunities. The priority fee thus sits at the intersection of transaction economics, consensus incentives, and MEV extraction.
 
-  ## Essential Properties
-  SubClassOf(:PriorityFee
-    (ObjectSomeValuesFrom :partOf :Blockchain))
-
-  SubClassOf(:PriorityFee
-    (ObjectSomeValuesFrom :hasProperty :Property))
-
-  ## Data Properties
-  DataPropertyAssertion(:hasIdentifier :PriorityFee "BC-0109"^^xsd:string)
-  DataPropertyAssertion(:hasAuthorityScore :PriorityFee "1.0"^^xsd:decimal)
-  DataPropertyAssertion(:isFoundational :PriorityFee "true"^^xsd:boolean)
-
-  ## Object Properties
-  ObjectPropertyAssertion(:enablesFeature :PriorityFee :BlockchainFeature)
-  ObjectPropertyAssertion(:relatesTo :PriorityFee :RelatedConcept)
-
-  ## Annotations
-  AnnotationAssertion(rdfs:label :PriorityFee "Priority Fee"@en)
-  AnnotationAssertion(rdfs:comment :PriorityFee
-    "Miner tip for inclusion"@en)
-  AnnotationAssertion(dct:description :PriorityFee
-    "Foundational blockchain concept with formal ontological definition"@en)
-  AnnotationAssertion(:termID :PriorityFee "BC-0109")
-  AnnotationAssertion(:priority :PriorityFee "1"^^xsd:integer)
-  AnnotationAssertion(:category :PriorityFee "economic-incentive"@en)
-  )
-      ```
-
-  - ## About Priority Fee
-
-  - Miner tip for inclusion within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
-  - ### Key Characteristics
-    - 1. **Definitional Property**: Core defining characteristic
-    - 2. **Functional Property**: Operational behavior
-    - 3. **Structural Property**: Compositional elements
-    - 4. **Security Property**: Security guarantees provided
-    - 5. **Performance Property**: Efficiency considerations
-  - ### Technical Components
-    - **Implementation**: How concept is realized technically
-    - **Verification**: Methods for validating correctness
-    - **Interaction**: Relationships with other components
-    - **Constraints**: Technical limitations and requirements
-  - ### Use Cases
-    - **1. Core Blockchain Operation**
-    - **Application**: Fundamental blockchain functionality
-    - **Example**: Practical implementation in major blockchains
-    - **Requirements**: Technical prerequisites
-    - **Benefits**: Value provided to blockchain systems
-  - ### Standards & References
-    - [[ISO/IEC 23257:2021]] - Blockchain and distributed ledger technologies
-    - [[IEEE 2418.1]] - Blockchain and distributed ledger technologies
-    - [[NIST NISTIR]] - Blockchain and distributed ledger technologies
-
-
+  In the context of Layer 2 scaling solutions and alternative blockchains with lower base fees, priority fees become less contested but remain structurally present as a validator-incentive mechanism. Cross-chain comparison of priority fee norms is relevant to tokenomics design, particularly when modelling user cost sensitivity and network congestion dynamics.
 
   <!-- Merged from Priority Fee.md: Blockchain, Transaction Fee -->
 

@@ -38,16 +38,34 @@ public:: true
   "@id": "urn:ngm:class:money-from-digi-soc",
   "@type": "Class",
   "label": "Money from DigiSoc",
-  "definition": "Money from DigiSoc is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A research and funding node documenting monetary theory, digital currency mechanisms, and value-exchange models relevant to digital society contexts. It examines base money, fiduciary media, cryptocurrency properties, and the interplay between decentralised and state-backed monetary systems in virtual and metaverse economies.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:cryptocurrency", "label": "Cryptocurrency"},
+      {"@id": "urn:ngm:class:digital-currency", "label": "Digital Currency"},
+      {"@id": "urn:ngm:class:virtual-economy", "label": "Virtual Economy"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
+      {"@id": "urn:ngm:class:tokenomics", "label": "Tokenomics"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -83,14 +101,21 @@ public:: true
 
 
 - ### Definition
-  - Money from DigiSoc is a concept within the ngm domain.
+  - A research and funding node documenting monetary theory, digital currency mechanisms, and value-exchange models relevant to digital society contexts. It examines base money, fiduciary media, cryptocurrency properties, and the interplay between decentralised and state-backed monetary systems in virtual and metaverse economies.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:MoneyFromDigiSoc
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **relatedTo** [[Cryptocurrency]] — examines cryptocurrency as an emergent form of digital base money
+  - **relatedTo** [[Digital Currency]] — covers both state-backed and decentralised digital currency models
+  - **relatedTo** [[Virtual Economy]] — connects monetary theory to virtual and metaverse economic systems
+  - **uses** [[Blockchain]] — blockchain provides the trust-minimised ledger underpinning bearer asset money
+  - **uses** [[Smart Contract]] — smart contracts enable programmable monetary rules in decentralised systems
+  - **bridgesTo** [[Decentralised Finance]] — the node's monetary analysis bridges to DeFi primitives
+  - **bridgesTo** [[Tokenomics]] — monetary properties map directly to token design considerations
+  - **dependsOn** [[Distributed Ledger]] — distributed ledger technology is the infrastructure for digital bearer assets
 
 - ### Content
   # Money in the real world

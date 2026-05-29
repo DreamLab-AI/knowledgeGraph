@@ -38,20 +38,40 @@ public:: true
   "@id": "urn:ngm:class:webid",
   "@type": "Class",
   "label": "webid",
-  "definition": "webid is a blockchain and distributed systems concept and a type of blockchain.",
-  "domain": "blockchain",
-  "maturity": "draft",
+  "definition": "A WebID is a URI that uniquely identifies an agent (person, organisation, or software) on the web and dereferences to an RDF profile document containing structured data about that agent. It underpins decentralised identity and access control across the Solid ecosystem and linked-data applications, allowing any service to authenticate and authorise users without a central identity provider.",
+  "domain": "identity",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-network-component",
       "label": "Network Component"
     }
   ],
-  "quality": 0.35,
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:solid", "label": "Solid"},
+      {"@id": "urn:ngm:class:solid-pod", "label": "Solid Pod"},
+      {"@id": "urn:ngm:class:decentralized-identity-did", "label": "Decentralized Identity (DID)"},
+      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
+      {"@id": "urn:ngm:class:rdf", "label": "RDF"},
+      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"},
+      {"@id": "urn:ngm:class:semantic-web", "label": "Semantic Web"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:authentication", "label": "Authentication"},
+      {"@id": "urn:ngm:class:access-control", "label": "Access Control"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:privacy", "label": "Privacy"},
+      {"@id": "urn:ngm:class:data-sovereignty", "label": "Data Sovereignty"},
+      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"}
+    ]
   }
 }
 ```

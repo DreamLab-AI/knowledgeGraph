@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:homomorphic-encryption-for-machine-learning",
   "domain": "artificial-intelligence",
-  "definition": "Homomorphic Encryption for Machine Learning is a cryptographic technique enabling computation on encrypted data without decryption, allowing AI model training and inference to be performed on ciphertext while preserving data confidentiality throughout processing.",
+  "definition": "Homomorphic Encryption for Machine Learning is a cryptographic paradigm that enables arithmetic computations to be performed directly on ciphertext, so that AI model training and inference can proceed on encrypted data without any decryption step, guaranteeing that neither cloud servers nor third parties ever observe plaintext inputs, intermediate activations, or model weights. The approach relies on algebraic homomorphisms\u2014addition and multiplication over encrypted values\u2014combined with bootstrapping techniques to manage noise accumulation, with schemes such as CKKS targeting approximate real-number arithmetic well-suited to neural-network workloads. Applications span privacy-preserving inference, encrypted federated learning aggregation, and collaborative multi-party model training on sensitive data spanning healthcare, finance, and government.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -13,21 +13,74 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:secure-multi-party-computation",
+        "label": "Secure Multi-Party Computation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "id": "urn:ngm:class:privacy-preserving-data-mining",
+        "label": "Privacy Preserving Data Mining"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
+      }
+    ]
   },
   "wikilinks": [
     {

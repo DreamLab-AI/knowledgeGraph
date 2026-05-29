@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:documentation-generation",
   "domain": "artificial-intelligence",
-  "definition": "Documentation Generation is a artificial intelligence concept and a type of Generative Ai.",
+  "definition": "Documentation Generation is the automated production of human-readable technical documentation\u2014API references, code comments, user guides, and release notes\u2014using large language models and natural language generation pipelines. By coupling static analysis, code execution traces, and prompt engineering, these systems reduce the documentation burden on developers while improving consistency and coverage.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-application",
@@ -17,21 +17,61 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-augmented-software-engineering",
+        "label": "AI-Augmented Software Engineering"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:text-generation",
+        "label": "Text Generation"
+      },
+      {
+        "id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ai-application",
+        "label": "AI Application"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      },
+      {
+        "id": "urn:ngm:class:language-modeling",
+        "label": "Language Modeling"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative Ai"
+      }
+    ]
   },
   "wikilinks": [
     {

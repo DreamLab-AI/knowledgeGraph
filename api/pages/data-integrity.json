@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:data-integrity",
   "domain": "infrastructure",
-  "definition": "The assurance that data remains accurate, consistent, and unaltered during storage, transmission, and processing, typically enforced through checksums, hashing, or cryptographic proofs.",
+  "definition": "Data integrity is the property that data remains accurate, consistent, and unaltered throughout its entire lifecycle\u2014spanning creation, storage, transmission, and processing\u2014without authorised modification. It is enforced through a combination of technical controls including cryptographic hash functions, digital signatures, Merkle trees, and immutable audit trails, as well as procedural controls such as access management and change-control workflows. Violations of data integrity\u2014whether from storage errors, transmission corruption, or malicious tampering\u2014can have cascading consequences in systems that rely on the data for decision-making.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-data-management",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "id": "urn:ngm:class:immutability",
+        "label": "Immutability"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

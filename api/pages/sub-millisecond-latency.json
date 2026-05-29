@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:sub-millisecond-latency",
   "domain": "blockchain",
-  "definition": "Latency characteristic where consensus adds less than one millisecond to transaction confirmation time.",
+  "definition": "Sub-Millisecond Latency is a network performance characteristic in which end-to-end transaction confirmation or consensus completion occurs in under one millisecond, enabling near-real-time settlement on blockchain networks. It depends on highly optimised peer-to-peer propagation, deterministic finality mechanisms, and minimal block time, distinguishing high-performance chains from conventional systems with multi-second confirmation times.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-network-component",
@@ -17,21 +17,65 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:deterministic-finality",
+        "label": "Deterministic Finality"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:transaction-finality",
+        "label": "Transaction Finality"
+      },
+      {
+        "id": "urn:ngm:class:transaction-processing",
+        "label": "Transaction Processing"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:probabilistic-finality",
+        "label": "Probabilistic Finality"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "id": "urn:ngm:class:network-latency",
+        "label": "Network Latency"
+      },
+      {
+        "id": "urn:ngm:class:block-time",
+        "label": "Block Time"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      }
+    ]
   },
   "wikilinks": [
     {

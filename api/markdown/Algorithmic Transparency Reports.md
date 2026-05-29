@@ -62,7 +62,7 @@ public:: true
   "@id": "urn:ngm:class:algorithmic-transparency-reports",
   "@type": "Class",
   "label": "Algorithmic Transparency Reports",
-  "definition": "Algorithmic Transparency Reports are periodic public disclosures that document AI system characteristics, performance metrics, governance practices, and accountability mechanisms to ensure public accountability, promote stakeholder trust, and address societal concerns about algorithmic decision-m...",
+  "definition": "Algorithmic Transparency Reports are periodic public disclosures that document AI system characteristics, performance metrics, governance practices, and accountability mechanisms, enabling external stakeholders, regulators, and affected communities to scrutinise how algorithmic decision-making systems operate and impact individuals. Core sections include system purpose and deployment scope, disaggregated performance and fairness metrics, bias and disparate-impact analyses, data governance practices, explainability provisions, incident and remediation records, and stakeholder engagement summaries. Reports balance transparency objectives against proprietary-information protection and adversarial-exploitation risks, and align with requirements in EU AI Act Article 13 (high-risk system transparency), Platform-to-Business Regulation disclosure obligations, and voluntary civil-society commitments led by organisations such as the AI Now Institute.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -75,7 +75,34 @@ public:: true
       "label": "AI Ethics"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:transparency", "label": "Transparency"},
+      {"@id": "urn:ngm:class:accountability", "label": "Accountability"},
+      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:trustworthy-ai", "label": "Trustworthy AI"},
+      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
+      {"@id": "urn:ngm:class:stakeholder", "label": "Stakeholder"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:explainability", "label": "Explainability"},
+      {"@id": "urn:ngm:class:fairness", "label": "Fairness"},
+      {"@id": "urn:ngm:class:ai-impact-assessment", "label": "AI Impact Assessment"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
+      {"@id": "urn:ngm:class:governance-framework", "label": "Governance Framework"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:redress-procedure", "label": "Redress Procedure"},
+      {"@id": "urn:ngm:class:diversity-non-discrimination-and-fairness", "label": "Diversity, Non-Discrimination, and Fairness"},
+      {"@id": "urn:ngm:class:human-oversight", "label": "Human Oversight"},
+      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"}
+    ]
+  },
+  "qualityScore": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

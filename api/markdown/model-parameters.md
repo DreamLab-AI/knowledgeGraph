@@ -7,7 +7,12 @@
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Requires [[Neural Network]]
+  - Requires [[Training]]
+  - Uses [[Machine Learning]]
+  - Related To [[Natural Language Processing]]
+  - Related To [[Artificial Intelligence]]
+  - Supports [[AI Technique]]
 
 - ### Content
   - ### Primary Definition

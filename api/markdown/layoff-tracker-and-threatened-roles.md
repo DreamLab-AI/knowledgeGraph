@@ -1,12 +1,13 @@
 - ### Definition
-  - Layoff tracker and threatened roles is a concept within the ngm domain.
+  - A curated record of mass layoffs in the technology sector from 2023 onwards, cataloguing headcount reductions at major firms alongside UK government estimates that AI automation may displace 10–30% of existing jobs. The tracker contextualises how AI adoption—particularly large language models and agentic AI—is accelerating workforce restructuring across white-collar roles.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:LayoffTrackerAndThreatenedRoles
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - relatedTo:: [[Artificial Intelligence]], [[Agentic AI]], [[Economics]]
+  - dependsOn:: [[Large Language Models]], [[Generative AI]]
 
 - ### Content
   - #Public page

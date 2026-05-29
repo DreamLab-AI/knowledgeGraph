@@ -7,7 +7,12 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - relatedTo [[Machine Learning]]
+  - relatedTo [[Transfer Learning]]
+  - relatedTo [[Contrastive Learning]]
+  - enables [[Model Performance]]
+  - enables [[Computer Vision]]
+  - uses [[Deep Learning]]
 
 - ### Content
   - A training strategy that presents examples to the model in a meaningful order, typically from easy to difficult, mimicking how humans learn. Curriculum learning can improve convergence speed, final performance, and generalization by structuring the learning progression.

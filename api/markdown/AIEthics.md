@@ -130,20 +130,62 @@ public:: true
   "@id": "urn:ngm:class:aiethics",
   "@type": "Class",
   "label": "AIEthics",
-  "definition": "A framework of ical principles and governance structures ensuring responsible development, deployment, and oversight of Artificial Intelligence systems in compliance with societal values.",
+  "definition": "A framework of ethical principles and governance structures ensuring responsible development, deployment, and oversight of artificial intelligence systems in compliance with societal values. Addresses fairness, accountability, transparency, bias mitigation, privacy preservation, and alignment with human rights norms across the AI lifecycle from design through decommissioning.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
     }
   ],
-  "quality": 0.4,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:artificial-superintelligence",
+        "label": "artificial superintelligence"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-risk",
+        "label": "AI Risk"
+      },
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:transparency-notice",
+        "label": "Transparency Notice"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ]
   }
 }
 ```
@@ -294,6 +336,14 @@ public:: true
 
 - ### Relationships
   - bridges-to:: [[AI Agent System]]
+  - Requires [[Accountability]]
+  - Requires [[AI Governance and Ethics]]
+  - Supports [[AI Safety]]
+  - Supports [[Transparency Notice]]
+  - Supports [[Regulatory Compliance]]
+  - Related To [[AI Risk]]
+  - Related To [[Governance]]
+  - Contrasts With [[artificial superintelligence]]
 
 - ### Content
   - A normative framework establishing standards for responsible [[Artificial Intelligence]] development, deployment, and oversight within [[Digital Systems]]. It encompasses mechanisms for bias mitigation, fairness assessment, transparency requirements, and accountability structures that align AI capabilities with [[Human Values]] and societal interests.

@@ -1,12 +1,17 @@
 - ### Definition
-  - ProceduralGeneration is a concept within the ngm domain.
+  - Procedural Generation is the algorithmic creation of content — terrain, textures, vegetation, buildings, and narrative elements — using mathematical functions, noise algorithms, and rule-based systems. It enables scalable world-building in games and metaverse platforms, producing vast, varied environments from compact seed parameters.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:ProceduralGeneration
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - enables [[World Building]]
+  - enables [[Procedural Terrain]]
+  - uses [[Noise Function Library]]
+  - uses [[3D Content Generation]]
+  - relatedTo [[Generative AI]]
+  - relatedTo [[Game Engine]]
 
 - ### Content
   # ProceduralGeneration

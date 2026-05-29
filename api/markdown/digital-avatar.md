@@ -9,7 +9,13 @@ bridges-to:: [[DID Nostr Identity]]
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses [[Avatar Customization]]
+  - Uses [[MotionCapture]]
+  - Uses [[Generative AI]]
+  - Requires [[DigitalIdentity]]
+  - Requires [[VirtualIdentity]]
+  - Enables [[SocialPresence]]
+  - Enables [[Avatar Interoperability]]
 
 - ### Content
   - Digital avatars represent users within virtual environments with embodied presence, visual customisation, and behavioural agency, enabling social presence, user interaction, and persistent identity anchors within metaverse platforms.

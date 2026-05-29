@@ -5,29 +5,52 @@
   "public": true,
   "classIri": "urn:ngm:class:zero-trust-architecture",
   "domain": "infrastructure",
-  "definition": "Zero Trust Architecture is a cybersecurity model that eliminates implicit trust within a network perimeter, requiring continuous verification of every user, device, and workload regardless of location.",
+  "definition": "Zero Trust Architecture (ZTA) is a cybersecurity paradigm that abandons the notion of a trusted network perimeter and instead requires explicit, continuous verification of every principal (user, device, service) and every request, regardless of its network origin. Grounded in the principle of least-privilege access, ZTA evaluates contextual signals \u2014 identity, device health posture, location, and behavioural risk \u2014 at each access decision point, enforced by policy engines and micro-segmentation. The model was formalised in NIST SP 800-207 and is increasingly mandated by government and enterprise security frameworks as a response to lateral movement threats and cloud-native architectures that dissolve traditional perimeter boundaries.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-security-and-identity",
-      "label": "Infra Security and Identity"
+      "label": "Security and Identity"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:policy-engine",
+        "label": "Policy Engine"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:confidential-computing",
+        "label": "Confidential Computing"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:loyalty-programs",
   "domain": "spatial-computing",
-  "definition": "Loyalty Programs is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Loyalty Programs are structured incentive mechanisms that reward repeat customer engagement through points, tiers, or token-based systems. In spatial computing and metaverse contexts, loyalty programmes are increasingly tokenised on blockchain networks using loyalty tokens or NFTs, enabling cross-brand redemption, secondary-market trading, and programmable reward logic embedded in smart contracts.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:e-commerce",
+        "label": "E-Commerce"
+      },
+      {
+        "id": "urn:ngm:class:digital-marketing",
+        "label": "Digital Marketing"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:loyalty-token",
+        "label": "Loyalty Token"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "id": "urn:ngm:class:token",
+        "label": "Token"
+      }
+    ]
   },
   "wikilinks": [
     {

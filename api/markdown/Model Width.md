@@ -82,16 +82,32 @@ public:: true
   "@id": "urn:ngm:class:model-width",
   "@type": "Class",
   "label": "Model Width",
-  "definition": "The dimensionality of representations within each layer, typically referring to the hidden dimension (d_model), determining the capacity of the model to encode information at each layer.",
+  "definition": "The dimensionality of internal representations at each transformer layer, commonly denoted d_model or hidden dimension. Width sets the information-carrying capacity per token and scales the size of attention heads and feed-forward projections, making it a primary axis alongside depth and data volume in neural scaling law research.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:model-depth", "label": "Model Depth"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
+      {"@id": "urn:ngm:class:hyperparameter", "label": "Hyperparameter"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},
+      {"@id": "urn:ngm:class:parameter-count", "label": "Parameter Count"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:mixture-of-experts", "label": "Mixture of Experts"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -185,7 +201,12 @@ public:: true
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **contrastsWith** [[Model Depth]] — width (hidden dimension) and depth (layer count) are independent scaling axes
+  - **dependsOn** [[Transformer]] — transformer architectures expose width as the d_model hyperparameter
+  - **dependsOn** [[Hyperparameter]] — width is selected prior to training and fixed throughout
+  - **relatedTo** [[Attention Mechanism]] — attention head dimension is a direct function of d_model width
+  - **relatedTo** [[Parameter Count]] — wider models have quadratically more parameters in attention layers
+  - **enables** [[Mixture of Experts]] — MoE decouples apparent parameter count from active width per token
 
 - ### Content
   - The dimensionality of representations within each layer, typically referring to the hidden dimension (d_model), determining the capacity of the model to encode information at each layer.

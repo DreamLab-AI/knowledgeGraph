@@ -37,16 +37,33 @@ public:: true
   "@id": "urn:ngm:class:online-identity",
   "@type": "Class",
   "label": "Online Identity",
-  "definition": "Online Identity is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "The digital representation and persistent persona that an individual constructs and maintains across online platforms and virtual environments, encompassing usernames, avatars, credentials, reputation data, and linked digital assets. Online identity management raises questions of authentication, portability, privacy, and the mapping between real-world and digital personas.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-security-and-identity",
       "label": "Security and Identity"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"},
+      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
+      {"@id": "urn:ngm:class:avatar", "label": "Avatar"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:authentication", "label": "Authentication"},
+      {"@id": "urn:ngm:class:identity-management", "label": "Identity Management"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:reputation-system", "label": "Reputation System"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:privacy", "label": "Privacy"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -76,14 +93,20 @@ public:: true
 
 
 - ### Definition
-  - OnlineIdentity is a concept within the ngm domain.
+  - The digital representation and persistent persona that an individual constructs and maintains across online platforms and virtual environments, encompassing usernames, avatars, credentials, reputation data, and linked digital assets. Online identity management raises questions of authentication, portability, privacy, and the mapping between real-world and digital personas.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:OnlineIdentity
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **relatedTo** [[Digital Identity]] — digital identity is the broader infrastructure concept; online identity is the user-facing instantiation
+  - **relatedTo** [[Decentralised Identity]] — decentralised identity frameworks enable portable, user-controlled online personas
+  - **relatedTo** [[Avatar]] — avatars are the visual representation layer of an online identity
+  - **requires** [[Authentication]] — verifying online identity requires authentication mechanisms
+  - **requires** [[Identity Management]] — lifecycle management of credentials and personas underpins online identity systems
+  - **enables** [[Reputation System]] — persistent online identities accumulate reputation signals over time
+  - **dependsOn** [[Privacy]] — effective online identity management must respect user privacy rights
 
 - ### Content
   # OnlineIdentity

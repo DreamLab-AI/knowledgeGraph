@@ -8,6 +8,12 @@
 
 - ### Relationships
   - is-subclass-of:: [[Digital Asset]]
+  - Enables [[Cross Metaverse Commerce]]
+  - Uses [[Payment System]]
+  - Contrasts With [[Cryptocurrency]]
+  - Contrasts With [[Stablecoin]]
+  - Related To [[Token Economics]]
+  - Related To [[Financial System]]
 
 - ### Content
 

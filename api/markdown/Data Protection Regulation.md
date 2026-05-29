@@ -46,15 +46,28 @@ public:: true
   "@id": "urn:ngm:class:data-protection-regulation",
   "@type": "Class",
   "label": "Data Protection Regulation",
-  "definition": "Data Protection Regulation is a type of Artificial Intelligence in the artificial intelligence domain.",
+  "definition": "Data Protection Regulation refers to the legal and policy frameworks—such as the EU General Data Protection Regulation (GDPR) and the UK Data Protection Act 2018—that govern how personal data may be collected, processed, stored, and shared by organisations. These regulations impose obligations around lawful basis for processing, data subject rights, cross-border transfer restrictions, and mandatory breach notification, creating compliance requirements for AI systems that handle personal data.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
+      {"@id": "urn:ngm:class:privacy-preserving-technology", "label": "Privacy Preserving Technology"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
+      {"@id": "urn:ngm:class:regulatory-technology", "label": "Regulatory Technology"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -96,23 +109,30 @@ public:: true
 
 
 - ### Definition
-  - Data Protection Regulation is a concept within the metaverse domain. Further enrichment pending.
+  - Data Protection Regulation refers to the legal and policy frameworks—such as the EU General Data Protection Regulation (GDPR) and the UK Data Protection Act 2018—that govern how personal data may be collected, processed, stored, and shared by organisations. These regulations impose obligations around lawful basis for processing, data subject rights, cross-border transfer restrictions, and mandatory breach notification, creating compliance requirements for AI systems that handle personal data.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:DataProtectionRegulation
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Data Governance]]
+  - requires [[Privacy Preserving Technology]]
+  - supports [[Compliance Framework]]
+  - relatedTo [[AI Safety]]
+  - relatedTo [[Regulatory Technology]]
 
 - ### Content
 
   ## Overview
 
-  Data Protection Regulation represents an abstract concept in the metaverse ontology hierarchy.
+  Data Protection Regulation creates the binding legal environment within which AI systems processing personal data must operate. GDPR and equivalent legislation impose rights of access, rectification, erasure, and portability for individuals, while also requiring organisations to conduct data protection impact assessments for high-risk processing. The rise of AI-generated content, biometric profiling, and large-scale behavioural analytics in metaverse systems makes compliance with these frameworks increasingly complex.
 
   #### Related Concepts
-  - [[owl:Thing]]
+  - [[Data Governance]]
+  - [[Privacy Preserving Technology]]
+  - [[Compliance Framework]]
+  - [[Regulatory Technology]]
 
 - ### Provenance
   - bridges-to:: [[Blockchain]] (bc)

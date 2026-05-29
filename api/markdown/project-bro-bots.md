@@ -1,12 +1,15 @@
 - ### Definition
-  - Project BroBots is a concept within the ngm domain.
+  - Project BroBots is a multi-agent research initiative to identify, classify, and counter toxic online content using NLP-based harm detection and counter-narrative generation. It employs fine-tuned large language models on social media corpora, the Agentic Alliance tech stack, and is motivated by the harms of automated bot-driven misinformation and harassment across internet platforms.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:ProjectBroBots
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses: [[Agents]], [[Agentic Alliance]], [[Natural Language Processing]]
+  - enables: [[Content Moderation]]
+  - contrastsWith: [[Digital Society Harms]], [[Death of the Internet]]
+  - partOf: [[Projects]]
 
 - ### Content
   - # Project: BroBots

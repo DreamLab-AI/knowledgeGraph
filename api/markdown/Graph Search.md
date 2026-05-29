@@ -33,9 +33,10 @@ public:: true
   "@id": "urn:ngm:class:graph-search",
   "@type": "Class",
   "label": "Graph Search",
-  "definition": "Graph Search is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Algorithms that systematically explore graph-structured state spaces to find optimal or feasible paths between configurations, forming the computational foundation for robot motion planning, task planning, and navigation. Classical methods (BFS, Dijkstra, A*) guarantee completeness or optimality on discrete graphs; sampling-based variants (RRT, PRM) address high-dimensional continuous configuration spaces.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-data-management",
@@ -47,6 +48,38 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "@id": "urn:ngm:class:navigation",
+        "label": "Navigation"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:graph-algorithms",
+        "label": "Graph Algorithms"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ]
   }
 }
 ```
@@ -72,14 +105,16 @@ public:: true
 
 
 - ### Definition
-  - GraphSearch is a concept within the ngm domain.
+  - Algorithms that systematically explore graph-structured state spaces to find optimal or feasible paths between configurations, forming the computational foundation for robot motion planning, task planning, and navigation. Classical methods (BFS, Dijkstra, A*) guarantee completeness or optimality on discrete graphs; sampling-based variants (RRT, PRM) address high-dimensional continuous configuration spaces.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:GraphSearch
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses: [[Graph Algorithms]], [[Knowledge Representation]]
+  - Enables: [[Motion Planning]], [[Navigation]]
+  - Related To: [[Graph Neural Network]], [[Knowledge Graph]]
 
 - ### Content
   term-id: RB-9009

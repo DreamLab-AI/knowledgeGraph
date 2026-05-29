@@ -44,14 +44,30 @@ public:: true
   "label": "SimCLR",
   "definition": "A self-supervised learning framework that learns visual representations through contrastive learning with data augmentation. A linear classifier on SimCLR representations achieves top-1 accuracy, matching supervised ResNet-50 performance.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:contrastive-learning", "label": "Contrastive Learning"},
+      {"@id": "urn:ngm:class:data-augmentation-strategies", "label": "Data Augmentation Strategies"},
+      {"@id": "urn:ngm:class:neural-network-architecture", "label": "Neural Network Architecture"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:image-classification", "label": "Image Classification"},
+      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
+      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -93,7 +109,9 @@ public:: true
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses** → [[Contrastive Learning]], [[Data Augmentation Strategies]], [[Neural Network Architecture]]
+  - **enables** → [[Image Classification]], [[Transfer Learning]], [[Computer Vision]]
+  - **relatedTo** → [[Deep Learning]], [[Fine Tuning]]
 - ### Content
   - A self-supervised learning framework that learns visual representations through contrastive learning with data augmentation. A linear classifier on SimCLR representations achieves 76.5% top-1 accuracy, matching supervised ResNet-50 performance.
   #### Key Characteristics

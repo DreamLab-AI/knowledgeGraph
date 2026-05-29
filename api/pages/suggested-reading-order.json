@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:suggested-reading-order",
   "domain": "infrastructure",
-  "definition": "Suggested Reading Order is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Suggested Reading Order is a curated navigation guide that sequences the principal pages of the NarrativeGoldmine knowledge graph into a coherent pedagogical path. It maps the intended conceptual dependencies \u2014 from foundational web technologies through decentralisation, digital assets, spatial computing, and AI \u2014 enabling readers to build understanding progressively across the graph's interconnected topic areas.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-software-engineering",
@@ -13,12 +13,38 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:state-of-the-art-in-ai",
+        "label": "State of the art in AI"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:adoption-of-convergent-technologies",
+        "label": "Adoption of Convergent Technologies"
+      },
+      {
+        "id": "urn:ngm:class:convergence",
+        "label": "Convergence"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +53,16 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:update-cycle",
+        "label": "Update Cycle"
+      },
+      {
+        "id": "urn:ngm:class:distributed-identity",
+        "label": "Distributed Identity"
+      }
+    ]
   },
   "wikilinks": [
     {

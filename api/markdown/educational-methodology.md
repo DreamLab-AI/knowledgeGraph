@@ -1,12 +1,16 @@
 - ### Definition
-  - Educational Methodology is a concept within the metaverse domain. Further enrichment pending.
+  - Educational Methodology is a structured approach to the design, delivery, and evaluation of learning experiences, encompassing pedagogical theories, instructional design models, and assessment frameworks. In spatial computing contexts it includes immersive, experiential, and simulation-based learning paradigms enabled by XR technologies.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:EducationalMethodology
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses [[Simulation]] as a safe, repeatable practice environment
+  - Uses [[Virtual Reality]] for full-immersion experiential learning scenarios
+  - Enables [[Generative Content]] (AI-generated adaptive learning materials)
+  - Related to [[Augmented Reality]] as an overlay-based instructional modality
+  - Related to [[Digital Twin]] for applied training against real-system replicas
 
 - ### Content
 

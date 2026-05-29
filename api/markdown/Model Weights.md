@@ -42,9 +42,10 @@ public:: true
   "@id": "urn:ngm:class:model-weights",
   "@type": "Class",
   "label": "Model Weights",
-  "definition": "Model Weights is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "The learnable numerical parameters in a neural network that encode the connection strengths adjusted during training via backpropagation to minimise loss. Model weights constitute the primary artefact of training and are the target of fine-tuning, quantisation, pruning, and transfer learning; their distribution and magnitude critically determine model capability and safety.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
@@ -56,6 +57,44 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:training",
+        "label": "Training"
+      },
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:network-architecture",
+        "label": "Network Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ]
   }
 }
 ```
@@ -87,7 +126,7 @@ public:: true
 
 
 - ### Definition
-  - ### Primary Definition
+  - The learnable numerical parameters in a neural network that encode the connection strengths adjusted during training via backpropagation to minimise loss. Model weights constitute the primary artefact of training and are the target of fine-tuning, quantisation, pruning, and transfer learning; their distribution and magnitude critically determine model capability and safety.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:ModelWeights
@@ -95,7 +134,13 @@ public:: true
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Requires [[Training]]
+  - Requires [[Backpropagation]]
+  - Part Of [[Neural Network]]
+  - Enables [[Transfer Learning]]
+  - Enables [[Fine Tuning]]
+  - Related To [[Network Architecture]]
+  - Related To [[AI Safety]]
 
 - ### Content
   - ### Primary Definition

@@ -46,7 +46,7 @@ public:: true
   "@id": "urn:ngm:class:synthetic-data-generation",
   "@type": "Class",
   "label": "Synthetic Data Generation",
-  "definition": "Synthetic Data Generation is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "Synthetic Data Generation is the process of algorithmically producing artificial datasets that statistically mirror real-world distributions without exposing sensitive personal information. Techniques include generative adversarial networks, diffusion models, physics simulation, and rule-based sampling, enabling model training where real data is scarce, private, or costly to label.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -55,7 +55,26 @@ public:: true
       "label": "AI Application"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:generative-model", "label": "Generative Model"},
+      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
+      {"@id": "urn:ngm:class:generative-adversarial-network", "label": "Generative Adversarial Network"},
+      {"@id": "urn:ngm:class:simulation", "label": "Simulation"},
+      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
+      {"@id": "urn:ngm:class:privacy-preserving-data-sharing", "label": "Privacy Preserving Data Sharing"},
+      {"@id": "urn:ngm:class:embodied-ai-simulation", "label": "Embodied AI Simulation"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:data-augmentation-strategies", "label": "Data Augmentation Strategies"},
+      {"@id": "urn:ngm:class:differential-privacy", "label": "Differential Privacy"},
+      {"@id": "urn:ngm:class:deep-generative-model", "label": "Deep Generative Model"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

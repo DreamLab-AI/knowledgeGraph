@@ -1,12 +1,18 @@
 - ### Definition
-  - QueryProcessor is a concept within the ngm domain.
+  - A system component responsible for parsing, optimising, and executing queries against a data store or knowledge base, including spatial queries in 3D environments. Query processors translate declarative query expressions into efficient execution plans, leveraging indexing structures such as octrees, k-d trees, R-trees, and scene graph hierarchies to minimise retrieval latency.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:QueryProcessor
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses [[Database System]]
+  - Uses [[Scene Graph]]
+  - Enables [[Semantic Search]]
+  - Enables [[Information Retrieval]]
+  - Has Part [[Database Query]]
+  - Related To [[Knowledge Graph]]
+  - Related To [[Vector Database]]
 
 - ### Content
   # QueryProcessor

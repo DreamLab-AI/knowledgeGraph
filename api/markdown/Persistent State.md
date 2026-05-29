@@ -37,20 +37,52 @@ public:: true
   "@id": "urn:ngm:class:persistent-state",
   "@type": "Class",
   "label": "Persistent State",
-  "definition": "Persistent State is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "The durable retention of application or world state across user sessions, server restarts, and network interruptions, such that virtual environments, user progress, and asset ownership remain consistent over time. In metaverse and multiplayer systems, persistent state is typically achieved through distributed databases, cloud storage synchronisation, or blockchain-based ledgers.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-data-management",
       "label": "Data Management"
     }
   ],
-  "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:metaverse-application",
+        "label": "Metaverse Application"
+      },
+      {
+        "@id": "urn:ngm:class:session-management",
+        "label": "Session Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ]
   }
 }
 ```
@@ -76,14 +108,16 @@ public:: true
 
 
 - ### Definition
-  - PersistentState is a concept within the ngm domain.
+  - The durable retention of application or world state across user sessions, server restarts, and network interruptions, such that virtual environments, user progress, and asset ownership remain consistent over time. In metaverse and multiplayer systems, persistent state is typically achieved through distributed databases, cloud storage synchronisation, or blockchain-based ledgers.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:PersistentState
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Requires [[Data Storage]], [[Cloud Infrastructure]]
+  - Enables [[Metaverse Application]], [[Session Management]]
+  - Related to [[Distributed System]], [[Blockchain]]
 
 - ### Content
   # PersistentState

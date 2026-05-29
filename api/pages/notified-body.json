@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:notified-body",
   "domain": "infrastructure",
-  "definition": "A conformity assessment body notified under the AI Act and other relevant EU harmonisation legislation, responsible for performing third-party conformity assessment of certain high-risk AI systems.",
+  "definition": "An independent third-party conformity assessment organisation formally designated by a national notifying authority under the EU AI Act (Articles 29\u201339) to audit and certify high-risk AI systems \u2014 particularly biometric identification and product-safety-component systems \u2014 against technical documentation, quality management, and harmonised standards requirements.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-legal-and-regulatory",
@@ -17,20 +17,48 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [],
-    "dependsOn": [],
-    "implements": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:conformity-assessment",
+        "label": "Conformity Assessment"
+      }
+    ],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:national-competent-authority",
+        "label": "National Competent Authority"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      }
+    ],
     "relatedTo": []
   },
   "wikilinks": [

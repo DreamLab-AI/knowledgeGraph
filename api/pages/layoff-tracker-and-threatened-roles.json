@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:layoff-tracker-and-threatened-roles",
   "domain": "infrastructure",
-  "definition": "Layoff tracker and threatened roles is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A curated record of mass layoffs in the technology sector from 2023 onwards, cataloguing headcount reductions at major firms alongside UK government estimates that AI automation may displace 10\u201330% of existing jobs. The tracker contextualises how AI adoption\u2014particularly large language models and agentic AI\u2014is accelerating workforce restructuring across white-collar roles.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-software-engineering",
@@ -14,12 +14,21 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
@@ -27,7 +36,20 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "id": "urn:ngm:class:economics",
+        "label": "Economics"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

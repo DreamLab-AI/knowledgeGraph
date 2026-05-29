@@ -7,8 +7,12 @@
   - belongs-to-domain:: [[BlockchainDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
-
+  - enables:: [[Digital Signatures]]
+  - enables:: [[Merkle Tree]]
+  - requires:: [[Hash Function]]
+  - supports:: [[Blockchain]]
+  - supports:: [[Encryption]]
+  - supports:: [[Zero-Knowledge Proof]]
   - bridges-to:: [[AI Agent System]] (ai)
 - ### Content
   - A deterministic mathematical transformation converting arbitrary input data into fixed-length output values with collision-resistance properties that ensure [[Data Integrity]] and [[Tamper Detection]]. [[Cryptographic Hash Functions]] underpin [[Digital Signatures]], [[Merkle Trees]], [[Blockchain Validation]], and cryptographic security protocols.

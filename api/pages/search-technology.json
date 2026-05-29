@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:search-technology",
   "domain": "artificial-intelligence",
-  "definition": "Search Technology is a type of Artificial Intelligence in the artificial intelligence domain.",
+  "definition": "Search technology encompasses the algorithms, indexing systems, and retrieval mechanisms that enable efficient discovery of relevant information across structured and unstructured data sources. Modern search systems combine inverted indices, vector embeddings, and machine learning ranking models to support keyword, semantic, and hybrid queries at scale.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-application",
@@ -13,17 +13,45 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-search",
+        "label": "Enterprise Search"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:embedding-model",
+        "label": "Embedding Model"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

@@ -90,16 +90,33 @@ public:: true
   "@id": "urn:ngm:class:etsi-domain-human-interface",
   "@type": "Class",
   "label": "ETSI_Domain_Human_Interface",
-  "definition": "An ETSI governance domain addressing user interaction design, accessibility, and human-computer interfaces within VirtualEnvironment|virtual environments.",
+  "definition": "An ETSI governance domain addressing user interaction design, accessibility, and human-computer interfaces within virtual environments. It defines standards for gesture, voice, gaze, and biometric input modalities, ensuring metaverse platforms prioritise usable and accessible experiences through alignment with ISO 9241 ergonomics standards, ETSI GR ARF 007/010, and inclusive design principles.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-interaction",
       "label": "Interaction Technology"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:etsi-domain-human-interface-ux", "label": "ETSI_Domain_Human_Interface___UX"},
+      {"@id": "urn:ngm:class:accessibility-standards", "label": "Accessibility Standards"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:virtual-environment", "label": "Virtual Environment"},
+      {"@id": "urn:ngm:class:telecollaboration", "label": "Telecollaboration"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:immersive-interface", "label": "Immersive Interface"},
+      {"@id": "urn:ngm:class:accessibility", "label": "Accessibility"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:etsidomain-classification", "label": "ETSIDomainClassification"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -203,7 +220,10 @@ public:: true
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **hasPart**: [[ETSI_Domain_Human_Interface___UX]], [[Accessibility Standards]]
+  - **requires**: [[Virtual Environment]], [[Telecollaboration]]
+  - **enables**: [[Immersive Interface]], [[Accessibility]]
+  - **relatedTo**: [[ETSIDomainClassification]]
 - ### Content
   - The ETSI Domain for Human Interface encompasses the design, implementation, and governance of user-facing systems within metaverse platforms and immersive digital environments, prioritising accessibility, usability, and inclusive interaction design.
   - ### Original Content

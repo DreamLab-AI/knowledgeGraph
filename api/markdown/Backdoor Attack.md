@@ -42,15 +42,33 @@ public:: true
   "@id": "urn:ngm:class:backdoor-attack",
   "@type": "Class",
   "label": "Backdoor Attack",
-  "definition": "A training-time attack that embeds a hidden trigger pattern into an AI model, causing the model to behave normally on standard inputs but produce attacker-chosen outputs when the trigger is present, creating a covert vulnerability exploitable post-deployment.",
+  "definition": "A training-time adversarial attack that embeds a hidden trigger pattern into an AI model via data poisoning, causing the model to behave normally on standard inputs but produce attacker-chosen outputs when the trigger is present, creating a covert vulnerability that survives fine-tuning and is exploitable post-deployment.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:data-poisoning", "label": "Data Poisoning"},
+      {"@id": "urn:ngm:class:machine-learning-model", "label": "Machine Learning Model"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:adversarial-attack", "label": "Adversarial Attack"},
+      {"@id": "urn:ngm:class:adversarial-robustness", "label": "Adversarial Robustness"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:model-robustness", "label": "Model Robustness"},
+      {"@id": "urn:ngm:class:privacy", "label": "Privacy"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -95,7 +113,10 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses:: [[Data Poisoning]], [[Machine Learning Model]]
+  - contrastsWith:: [[Adversarial Attack]], [[Adversarial Robustness]]
+  - requires:: [[AI Safety]]
+  - relatedTo:: [[Model Robustness]], [[Privacy]]
 
 - ### Content
   - A training-time attack that embeds a hidden trigger pattern into an AI model, causing the model to behave normally on standard inputs but produce attacker-chosen outputs when the trigger is present, creating a covert vulnerability exploitable post-deployment.

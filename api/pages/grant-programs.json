@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:grant-programs",
   "domain": "blockchain",
-  "definition": "Crucial resource allocation mechanisms through which DAO|DAOs deploy governance treasuries worth s to ecosystem development, public goods funding, protocol research, and community initiatives\u2014ranging from prospective grants (Uniswap ) to retroactive public goods funding (Optimism ) to inn...",
+  "definition": "Grant Programs are structured resource allocation mechanisms through which DAOs and blockchain protocols deploy governance treasuries to ecosystem development, public goods, protocol research, and community initiatives. They range from prospective grants and quadratic funding (Gitcoin) to retroactive public goods funding (Optimism RetroPGF), and are administered by elected committees, independent foundations, or algorithmic allocation systems.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-governance-and-regulation",
@@ -14,20 +14,48 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.4,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:dao",
+        "label": "DAO"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:public-goods-funding",
+        "label": "Public Goods Funding"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
+      },
+      {
+        "id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:tokenomics-governance",
+        "label": "Tokenomics Governance"
+      }
+    ]
   },
   "wikilinks": [
     {

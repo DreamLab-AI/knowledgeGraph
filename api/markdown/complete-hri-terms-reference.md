@@ -7,7 +7,9 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - supports:: [[Human Robot Interaction]], [[Robotics]]
+  - uses:: [[Communication Protocol]], [[Knowledge Representation]]
+  - related-to:: [[Social Robotics]], [[Robotics Domain]]
 
 - ### Content
   - The Complete HRI Terms Reference provides standardised vocabulary and structured definitions for human-robot interaction, enabling consistent annotation, semantic understanding, and cross-domain terminology alignment for robotic systems.

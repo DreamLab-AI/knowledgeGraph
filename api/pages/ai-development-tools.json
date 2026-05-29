@@ -5,26 +5,57 @@
   "public": true,
   "classIri": "urn:ngm:class:ai-development-tools",
   "domain": "artificial-intelligence",
-  "definition": "AI Development Tools comprise the software frameworks, libraries, platforms, and integrated development environments designed to facilitate the creation, training, deployment, and maintenance of artificial intelligence systems.",
+  "definition": "Software frameworks, libraries, platforms, and integrated development environments designed to facilitate the creation, training, deployment, and maintenance of artificial intelligence systems. Includes deep learning frameworks (TensorFlow, PyTorch, JAX), AutoML platforms, model optimisation toolkits, MLOps infrastructure, and AI-assisted IDEs. Modern tools emphasise reproducibility, scalability, experiment tracking, and continuous delivery of AI systems.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure (Category)"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:auto-ml",
+        "label": "AutoML"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:machine-learning-infrastructure",
+        "label": "Machine Learning Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:ai-lifecycle",
+        "label": "AI Lifecycle"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": []

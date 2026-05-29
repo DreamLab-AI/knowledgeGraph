@@ -7,7 +7,12 @@
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses:: [[Backpropagation]]
+  - uses:: [[Training Data]]
+  - enables:: [[Image Classification]]
+  - enables:: [[Object Detection]]
+  - supports:: [[Computer Vision]]
+  - contrastsWith:: [[Recurrent Neural Network]]
 
 - ### Content
   - ### Primary Definition

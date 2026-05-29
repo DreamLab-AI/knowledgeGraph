@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:oauth-2-0",
   "domain": "infrastructure",
-  "definition": "OAuth 2.0 is an authorisation framework that enables third-party applications to obtain limited access to a user's resources without exposing credentials, using token-based delegation.",
+  "definition": "OAuth 2.0 is an open authorisation framework (RFC 6749) that allows resource owners to grant third-party clients scoped, time-limited access to their resources hosted on a resource server, without sharing credentials. The framework defines four grant types\u2014authorisation code, implicit (deprecated), resource owner password credentials, and client credentials\u2014each suited to different client trust levels and deployment contexts. OAuth 2.0 is the foundation on which OpenID Connect (OIDC) builds to add federated identity and authentication capabilities.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-security-and-identity",
@@ -14,11 +14,25 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:single-sign-on",
+        "label": "Single Sign-On"
+      },
+      {
+        "id": "urn:ngm:class:identity-federation",
+        "label": "Identity Federation"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +41,16 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      },
+      {
+        "id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

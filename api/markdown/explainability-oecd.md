@@ -7,7 +7,10 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **relatedTo**: Fairness (OECD), Accountability (OECD), Human Centred Values — explainability is the evidential basis for fairness audits and accountability enforcement
+  - **requires**: AI Regulation, Human in the Loop — contextually appropriate explanations require regulatory mandates and human oversight mechanisms
+  - **enables**: AI Safety — transparent reasoning about AI outputs supports safer deployment decisions
+  - **contrastsWith**: AI Ethics — explainability is a technical operationalisation of the broader AI ethics discourse
 
 - ### Content
   - People affected by AI-based outcomes should be able to understand how and why particular decisions or recommendations were reached, with explanations provided in ways appropriate to the context and enabling meaningful contestation of AI-influenced decisions.

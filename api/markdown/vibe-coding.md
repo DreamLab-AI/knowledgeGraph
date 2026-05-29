@@ -1,12 +1,15 @@
 - ### Definition
-  - Vibe Coding is a concept within the ngm domain.
+  - **Vibe Coding** is an AI-assisted software development practice in which developers direct large language models or AI coding tools (such as Cursor, Aider, or Copilot) with high-level intent rather than writing all code manually. The practitioner retains system-level design authority whilst delegating implementation of discrete, scoped tasks to the AI, requiring disciplined use of version control, structured context documents, and iterative refinement cycles.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:VibeCoding
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: [[Generative AI]], [[Machine Learning]] — vibe coding relies on LLMs as the core code-generation engine
+  - **requires**: [[Software Engineering]] — sound engineering principles (version control, architecture, testing) remain essential even when AI writes the code
+  - **enables**: [[User Experience]] — lower barriers to building custom software tools can improve UX prototyping speed
+  - **relatedTo**: [[Generative AI Engineering]] — shares techniques and tooling with the broader generative AI engineering practice
 
 - ### Content
   - Start like a Project Manager, not a Prompt Monkey

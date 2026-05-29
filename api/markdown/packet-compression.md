@@ -1,12 +1,14 @@
 - ### Definition
-  - PacketCompression is a concept within the ngm domain.
+  - The application of lossless or lossy compression algorithms to network packets to reduce transmission bandwidth and latency in real-time data pipelines. In metaverse and spatial computing contexts, packet compression is critical for streaming 3D scene state, avatar motion data, and sensor telemetry with minimal perceptual degradation at constrained network bandwidths.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:PacketCompression
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses: [[Data Compression]], [[Network Protocol]]
+  - enables: [[Bandwidth Adaptation]], [[Metaverse Infrastructure]]
+  - supports: [[Latency]]
 
 - ### Content
   # PacketCompression

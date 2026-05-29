@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:burning-mechanism",
   "domain": "blockchain",
-  "definition": "Token destruction process within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "A Burning Mechanism is an economic design pattern in tokenised blockchain systems whereby tokens are permanently removed from circulating supply by sending them to an unspendable address (a null or black-hole address) or by protocol-enforced destruction, permanently contracting the total token supply. Token burning is deployed as a deflationary monetary policy tool to counteract inflationary issuance, to create token scarcity as a value-accrual mechanism, to implement fee markets (as in Ethereum's EIP-1559 base fee burn), and to regulate supply in algorithmic stablecoins and tokenomics models. The economic effect depends critically on the rate and predictability of burning relative to issuance.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-defi-and-economics",
@@ -17,25 +17,92 @@
     },
     {
       "id": "urn:ngm:class:economic-mechanism",
-      "label": "EconomicMechanism"
+      "label": "Economic Mechanism"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:base-fee",
+        "label": "Base Fee"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:deflationary-token",
+        "label": "Deflationary Token"
+      },
+      {
+        "id": "urn:ngm:class:inflation-control",
+        "label": "Inflation Control"
+      },
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:eip-1559",
+        "label": "EIP-1559"
+      },
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:block-reward",
+        "label": "Block Reward"
+      },
+      {
+        "id": "urn:ngm:class:inflationary-token",
+        "label": "Inflationary Token"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:tokenomics-governance",
+        "label": "Tokenomics Governance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:fee-market",
+        "label": "Fee Market"
+      },
+      {
+        "id": "urn:ngm:class:market-capitalization",
+        "label": "Market Capitalization"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-economics",
+        "label": "Blockchain Economics"
+      },
+      {
+        "id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
+      }
+    ]
   },
   "wikilinks": [
     {

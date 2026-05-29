@@ -66,7 +66,7 @@ public:: true
   "@id": "urn:ngm:class:merkle-tree",
   "@type": "Class",
   "label": "Merkle Tree",
-  "definition": "Hierarchical hash data structure within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "A binary tree of cryptographic hashes in which each leaf node contains the hash of a data block and each non-leaf node contains the hash of its children. Merkle trees enable efficient and tamper-evident verification of large data sets; in blockchain systems they allow nodes to confirm individual transaction inclusion without downloading an entire block.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -83,7 +83,26 @@ public:: true
       "label": "CryptographicPrimitive"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:merkle-root", "label": "Merkle Root"},
+      {"@id": "urn:ngm:class:merkle-proof", "label": "Merkle Proof"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
+      {"@id": "urn:ngm:class:cryptographic-hash", "label": "Cryptographic Hash"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"},
+      {"@id": "urn:ngm:class:block-header", "label": "Block Header"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:block", "label": "Block"},
+      {"@id": "urn:ngm:class:cryptographic-commitment", "label": "Cryptographic Commitment"},
+      {"@id": "urn:ngm:class:blockchain-scalability", "label": "Blockchain Scalability"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

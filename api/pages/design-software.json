@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:design-software",
   "domain": "spatial-computing",
-  "definition": "Design Software is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Software tools used to create, edit, and manage visual, spatial, or interactive design assets, including 2D vector and raster editors, 3D modelling and sculpting applications, CAD tools, motion graphics platforms, and UI/UX prototyping environments. In the spatial computing context, design software increasingly supports real-time 3D asset pipelines, procedural generation, and direct export to game engines and XR runtimes.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -13,21 +13,52 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:3-d-content-generation",
+        "label": "3D Content Generation"
+      },
+      {
+        "id": "urn:ngm:class:film-production",
+        "label": "Film Production"
+      },
+      {
+        "id": "urn:ngm:class:virtual-production-workflow",
+        "label": "Virtual Production Workflow"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:3-d-rendering-engine",
+        "label": "3D Rendering Engine"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:animation-software",
+        "label": "Animation Software"
+      },
+      {
+        "id": "urn:ngm:class:3-d-modeling",
+        "label": "3D Modeling"
+      }
+    ]
   },
   "wikilinks": [
     {

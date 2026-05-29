@@ -54,21 +54,53 @@ public:: true
   "@id": "urn:ngm:class:programming-language",
   "@type": "Class",
   "label": "Programming Language",
-  "definition": "Programming Languages for AI are formal languages designed to express algorithms, models, and computations for artificial intelligence applications.",
+  "definition": "A formal notation system used to specify algorithms, data structures, and computational models for AI and software applications, characterised by defined syntax and semantics; prominent examples include Python for machine-learning ecosystems, Julia for high-performance numerical computing, and domain-specific languages embedded in ML frameworks.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
-  "quality": 0.35,
-  "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
-  },
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
     }
-  ]
+  ],
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:open-source-framework",
+        "label": "Open Source Framework"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:software-development-process",
+        "label": "Software Development Process"
+      },
+      {
+        "@id": "urn:ngm:class:ai-model-architecture",
+        "label": "AI Model Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ]
+  }
 }
 ```
 
@@ -121,7 +153,13 @@ public:: true
   - owl-role:: concept
 
 - ### Relationships
-  - is-subclass-of:: ['owl:Thing']
+  - is-subclass-of:: [[AI Technique]]
+  - Enables: [[Deep Learning]]
+  - Enables: [[Natural Language Processing]]
+  - Uses: [[Open Source Framework]]
+  - Related To: [[Software Development Process]]
+  - Related To: [[AI Model Architecture]]
+  - Related To: [[Transformer Architecture]]
 
 - ### Content
 

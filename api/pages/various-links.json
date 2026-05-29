@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:various-links",
   "domain": "infrastructure",
-  "definition": "Various Links is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A curated collection of external hyperlinks spanning blockchain, cryptocurrency, augmented and virtual reality, AI generative tools, and media production resources, assembled as a research reference page for cross-domain topics relevant to the NarrativeGoldmine knowledge graph.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-software-engineering",
@@ -13,8 +13,8 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -27,7 +27,20 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ]
   },
   "wikilinks": [
     {

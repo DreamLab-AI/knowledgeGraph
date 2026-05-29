@@ -38,16 +38,25 @@ public:: true
   "@id": "urn:ngm:class:valsoft",
   "@type": "Class",
   "label": "Valsoft",
-  "definition": "Valsoft is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Valsoft (operating as Aspire Software) is a Canadian software conglomerate that acquires, operates, and grows vertical-market software companies, applying a decentralised management model to deliver AI-augmented solutions across multiple industry sectors.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
+      {"@id": "urn:ngm:class:software-engineering", "label": "Software Engineering"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -83,14 +92,15 @@ public:: true
 
 
 - ### Definition
-  - Valsoft is a concept within the ngm domain.
+  - **Valsoft** (operating as Aspire Software) is a Canadian software conglomerate that acquires, operates, and grows vertical-market software companies, applying a decentralised management model to deliver AI-augmented solutions across multiple industry sectors.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:Valsoft
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: [[Artificial Intelligence]], [[Software Engineering]] — Valsoft/Aspire positions AI solutions architecture as a core capability across its portfolio
+  - **relatedTo**: [[Machine Learning]] — AI solutions at Valsoft include LLM and traditional ML implementations
 
 - ### Content
   - Their email [[Contracts and jobs]]

@@ -112,13 +112,26 @@ public:: true
   "label": "Fine Tuning",
   "definition": "The process of adapting a pre-trained model to a specific downstream task by continuing training on task-specific data, typically with a lower learning rate. Fine-tuning leverages knowledge acquired during pre-training whilst specialising the model for particular applications.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
     }
   ],
+  "relations": {
+    "dependsOn": [
+      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
+      {"@id": "urn:ngm:class:training-data", "label": "Training Data"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
+      {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -246,7 +259,11 @@ public:: true
   - owl-role:: Concept
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - dependsOn:: [[Transfer Learning]]
+  - dependsOn:: [[Training Data]]
+  - uses:: [[Gradient Descent]]
+  - enables:: [[Large Language Models]]
+  - enables:: [[Image Generation]]
 - ### Content
   - The process of adapting a pre-trained model to a specific downstream task by continuing training on task-specific data, typically with a lower learning rate. Fine-tuning leverages knowledge acquired during pre-training whilst specialising the model for particular applications.
   - ### [Crawl4AI](https://github.com/unclecode/crawl4ai)

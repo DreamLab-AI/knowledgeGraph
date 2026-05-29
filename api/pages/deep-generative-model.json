@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:deep-generative-model",
   "domain": "artificial-intelligence",
-  "definition": "Deep Generative Model is a foundational concept in artificial intelligence that serves as a classification parent for 3 related concepts in the ontology.",
+  "definition": "A Deep Generative Model is a neural network architecture trained to learn the underlying probability distribution of a dataset and draw new samples from it. The principal families include Generative Adversarial Networks (GANs), Variational Autoencoders (VAEs), normalising flows, and diffusion models, each offering different trade-offs between sample quality, diversity, training stability, and latent-space interpretability.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-model-architecture",
@@ -14,11 +14,33 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.3,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:autoencoder",
+        "label": "Autoencoder"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-data",
+        "label": "Synthetic Data"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -26,7 +48,12 @@
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ],
     "relatedTo": []
   },
   "wikilinks": [],

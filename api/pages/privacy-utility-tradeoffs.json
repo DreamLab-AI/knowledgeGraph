@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:privacy-utility-tradeoffs",
   "domain": "artificial-intelligence",
-  "definition": "Privacy-Utility Tradeoffs represent the fundamental tension in privacy-preserving AI between privacy preservation (protecting sensitive information through techniques like differential privacy, anonymization, or encryption) and model utility (maintaining accuracy, precision, recall, and other per...",
+  "definition": "Privacy-Utility Tradeoffs represent the fundamental tension in privacy-preserving AI between privacy preservation\u2014protecting sensitive information through techniques such as differential privacy, anonymisation, or encryption\u2014and model utility, which encompasses accuracy and other performance metrics necessary for effective decision-making. This tension is characterised by Pareto frontiers of achievable (privacy, utility) pairs where strengthening privacy typically degrades model performance and vice versa.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -13,21 +13,73 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      },
+      {
+        "id": "urn:ngm:class:privacy-budget-management",
+        "label": "Privacy Budget Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:privacy-preserving-analytics",
+        "label": "Privacy Preserving Analytics"
+      },
+      {
+        "id": "urn:ngm:class:privacy-preserving-data-sharing",
+        "label": "Privacy Preserving Data Sharing"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:k-anonymity-in-datasets",
+        "label": "k-Anonymity in Datasets"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-minimisation",
+        "label": "Data Minimisation"
+      },
+      {
+        "id": "urn:ngm:class:fairness-accuracy-tradeoffs",
+        "label": "Fairness Accuracy Tradeoffs"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      }
+    ]
   },
   "wikilinks": [
     {

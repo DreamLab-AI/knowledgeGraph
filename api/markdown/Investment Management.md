@@ -42,9 +42,10 @@ public:: true
   "@id": "urn:ngm:class:investment-management",
   "@type": "Class",
   "label": "Investment Management",
-  "definition": "Investment Management is a type of Digital Asset in the blockchain domain.",
+  "definition": "The professional discipline and supporting technological infrastructure for allocating, monitoring, and optimising portfolios of digital and traditional financial assets. In the blockchain and DeFi context, investment management encompasses on-chain portfolio tools, automated yield strategies, risk modelling, and governance-token-weighted decision frameworks.",
   "domain": "blockchain",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-defi-and-economics",
@@ -55,7 +56,21 @@ public:: true
       "label": "Digital Asset"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"},
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"},
+      {"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:asset-management", "label": "Asset Management"},
+      {"@id": "urn:ngm:class:digital-asset-trading", "label": "Digital Asset Trading"},
+      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -98,7 +113,9 @@ public:: true
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: [[Digital Asset]], [[Smart Contract]]
+  - **requires**: [[Risk Management]], [[Financial Regulation]]
+  - **relatedTo**: [[Asset Management]], [[Digital Asset Trading]], [[Governance Token]]
 
 - ### Content
 

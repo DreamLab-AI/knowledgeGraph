@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:term-index",
   "domain": "spatial-computing",
-  "definition": "A term index is a comprehensive reference catalogue mapping domain terminology, identifiers, and conceptual relationships within ontologies, enabling discovery and navigation of complex knowledge spaces across metaverse, blockchain, and robotics ecosystems.",
+  "definition": "A Term Index is a comprehensive reference catalogue mapping domain terminology, identifiers, and conceptual relationships within ontologies, enabling discovery and navigation of complex knowledge spaces across metaverse, blockchain, and robotics ecosystems. Well-structured indices provide hierarchical classification, cross-references, and semantic linking that facilitate knowledge retrieval, API design, and knowledge-graph integration, serving both user-facing navigation and machine-readable specifications supporting automated reasoning and SPARQL query optimisation.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -13,12 +13,30 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.4,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:domain-ontology",
+        "label": "Domain Ontology"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +45,20 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      },
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-domain",
+        "label": "Metaverse Domain"
+      }
+    ]
   },
   "wikilinks": [
     {

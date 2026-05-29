@@ -5,29 +5,99 @@
   "public": true,
   "classIri": "urn:ngm:class:io-t-ai-integration",
   "domain": "artificial-intelligence",
-  "definition": "IoT AI Integration synergizes Internet of Things sensor networks with embedded machine learning, enabling intelligent autonomous decision-making directly on IoT devices without requiring centralized cloud processing.",
+  "definition": "IoT AI Integration is the convergence of Internet of Things sensor networks with embedded machine learning models, enabling intelligent, autonomous decision-making directly on constrained IoT devices without requiring centralised cloud processing. The integration addresses fundamental IoT challenges \u2014 network latency, bandwidth limitations, power budgets, and privacy concerns \u2014 by deploying quantised and pruned inference models onto microcontroller-class hardware, transforming passive sensor networks into active edge intelligence systems.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure (Category)"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:io-t-sensor-network",
+        "label": "IoT Sensor Network"
+      },
+      {
+        "id": "urn:ngm:class:io-t-sensors",
+        "label": "Io T Sensors"
+      },
+      {
+        "id": "urn:ngm:class:edge-ai-system",
+        "label": "Edge AI System"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "id": "urn:ngm:class:mqtt",
+        "label": "MQTT"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "id": "urn:ngm:class:industrial-io-t",
+        "label": "Industrial IoT"
+      },
+      {
+        "id": "urn:ngm:class:edge-ai-for-smart-cities",
+        "label": "Edge AI for Smart Cities"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:embedded-ai-frameworks",
+        "label": "Embedded AI Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:edge-ai-accelerator",
+        "label": "Edge AI Accelerator"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:edge-cloud-collaboration",
+        "label": "Edge-Cloud Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:latency-aware-edge-ai",
+        "label": "Latency-Aware Edge AI"
+      }
+    ]
   },
   "wikilinks": [
     {

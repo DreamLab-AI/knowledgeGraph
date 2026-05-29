@@ -6,8 +6,9 @@
   - owl-role:: Concept
 
 - ### Relationships
-  - is-subclass-of:: [[owl:Thing]]
-  - bridges-to:: [[Blockchain]] (domain: bc)
+  - requires:: [[Knowledge Representation]]
+  - enables:: [[Machine Learning]], [[Artificial Intelligence]]
+  - relatedTo:: [[Neural Network]], [[AI Alignment]], [[Explainability]]
 
 - ### Content
 

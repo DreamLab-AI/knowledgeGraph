@@ -1,5 +1,5 @@
 - ### Definition
-  - **Robot Joint** - Articulation between robot links allowing relative motion
+  - A Robot Joint is a mechanical articulation between two robot links that permits controlled relative motion — rotational, translational, or compound — enabling the full kinematic range of a robotic arm or manipulator. Joint types include revolute, prismatic, and spherical, each characterised by degrees of freedom and load capacity.
 
 - ### Semantic Classification
   - owl-class:: robotics:RobotJoint
@@ -7,7 +7,12 @@
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - is-subclass-of:: [[Robotics]]
+  - Part of [[Robotics]] as a fundamental structural component
+  - Requires [[Control System]] for torque and position regulation
+  - Requires [[Robot Sensor]] for joint state feedback (encoders, force sensors)
+  - Uses [[Inverse Kinematics]] to resolve target poses into joint angles
+  - Related to [[Path Planning]] which generates joint-space trajectories
+  - Related to [[Digital Twin]] for joint simulation and predictive maintenance
 
 - ### Content
   - ### Original Content

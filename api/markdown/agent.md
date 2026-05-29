@@ -1,10 +1,14 @@
 - ### Definition
-  - Agent is a concept within the bc domain.
+  - An autonomous computational or physical entity that perceives its environment, reasons using internal beliefs and goals, and acts to achieve specified objectives—exhibiting autonomy, reactivity, proactivity, and social ability across AI, blockchain, robotics, and metaverse domains.
 - ### Semantic Classification
   - owl-class:: blockchain:Agent
   - owl-role:: Concept
 - ### Relationships
   - is-subclass-of:: [[Blockchain]]
+  - uses:: [[BDI Model]], [[Goal]]
+  - hasPart:: [[Autonomy Level]]
+  - requires:: [[AI Agent System]]
+  - relatedTo:: [[Objective]], [[Human in the Loop]], [[Safety]]
 - ### Content
   ## Definition
   An **Agent** is an autonomous computational or physical entity that:

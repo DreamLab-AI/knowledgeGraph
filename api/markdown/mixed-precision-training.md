@@ -7,7 +7,11 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires:: [[Hardware Acceleration]]
+  - requires:: [[GPU Compute]]
+  - enables:: [[Model Training]]
+  - enables:: [[Large Language Models]]
+  - contrastsWith:: [[Neural Network Quantisation]]
 
 - ### Content
   - A training technique that uses lower precision (FP16) for most computations whilst maintaining higher precision (FP32) for critical operations, reducing memory usage and increasing training speed without sacrificing model quality. Mixed precision training leverages modern GPU tensor cores for significant speedups.

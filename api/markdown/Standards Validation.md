@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:standards-validation",
   "@type": "Class",
   "label": "Standards Validation",
-  "definition": "Processes used to determine wher development products conform to requirements and wher the final product satisfies its intended use and user needs, confirming that the correct product was built to meet stakeholder goals.",
+  "definition": "Standards validation is the process of confirming that a development product satisfies its intended use and stakeholder requirements—distinct from verification, which checks only internal specification conformance. It employs testing, formal review, and compliance checks against published standards such as IEEE 1012 and FDA Computer Software Assurance to ensure the correct artefact was built.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-standards-and-interop",
@@ -59,11 +60,44 @@ public:: true
       "label": "Standards"
     }
   ],
-  "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "uses": [
+      {
+        "@id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-verification",
+        "label": "Compliance Verification"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:standards-conformance-testing",
+        "label": "Standards Conformance Testing"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:standards-body",
+        "label": "Standards Body"
+      }
+    ]
   }
 }
 ```
@@ -109,6 +143,12 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Standards]]
+  - Uses [[Quality Assurance]]
+  - Uses [[Compliance Verification]]
+  - Supports [[Regulatory Compliance]]
+  - Supports [[Interoperability]]
+  - Standardized by [[Standards Body]]
+  - Related to [[Standards Conformance Testing]]
 
 - ### Content
 

@@ -38,16 +38,26 @@ public:: true
   "@id": "urn:ngm:class:ideas",
   "@type": "Class",
   "label": "Ideas",
-  "definition": "Ideas is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A collection of exploratory concepts and prototype application sketches within the AI and metaverse infrastructure domain, serving as a seed space for tooling, workflows, and agentic system designs that may be formalised into distinct ontology nodes.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:agents", "label": "Agents"},
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:ai-technique", "label": "AI Technique"},
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -90,7 +100,8 @@ public:: true
   - owl-role:: Concept
 
 - ### Relationships
-  - bridges-to:: [[AI Agent System]]
+  - **relatedTo**: [[Agents]], [[Large Language Models]]
+  - **bridgesTo**: [[AI Technique]], [[Machine Learning]]
 
 - ### Content
   - Get Todays Information as a template

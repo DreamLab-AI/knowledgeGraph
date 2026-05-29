@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:peer-to-peer-network",
   "domain": "blockchain",
-  "definition": "Decentralized communication within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "A decentralised communication architecture in which participating nodes connect directly to one another without a central coordinator, enabling distributed ledger technology to broadcast transactions, propagate blocks, and maintain a shared state across an open membership set. It underlies the censorship resistance and fault tolerance of blockchain systems.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-network-component",
@@ -14,19 +14,53 @@
     {
       "id": "urn:ngm:class:blockchain-entity",
       "label": "Blockchain Entity"
-    },
-    {
-      "id": "urn:ngm:class:network-component",
-      "label": "NetworkComponent"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:gossip-protocol",
+        "label": "Gossip Protocol"
+      },
+      {
+        "id": "urn:ngm:class:peer-discovery",
+        "label": "Peer Discovery"
+      },
+      {
+        "id": "urn:ngm:class:mempool",
+        "label": "Mempool"
+      },
+      {
+        "id": "urn:ngm:class:transaction-pool",
+        "label": "Transaction Pool"
+      },
+      {
+        "id": "urn:ngm:class:bootstrap-node",
+        "label": "Bootstrap Node"
+      },
+      {
+        "id": "urn:ngm:class:archival-node",
+        "label": "Archival Node"
+      },
+      {
+        "id": "urn:ngm:class:full-node",
+        "label": "Full Node"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:nakamoto-consensus",
+        "label": "Nakamoto Consensus"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -35,7 +69,16 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:consensus-protocol",
+        "label": "Consensus Protocol"
+      }
+    ]
   },
   "wikilinks": [
     {

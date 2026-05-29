@@ -7,7 +7,11 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart [[Sparse Mixture of Experts]]
+  - enables [[Large Language Models]]
+  - enables [[Natural Language Processing]]
+  - uses [[Transformer Architecture]]
+  - contrastsWith [[Deep Learning]]
 
 - ### Content
   - An architecture that uses multiple specialised sub-networks (experts) with a gating mechanism that routes inputs to a sparse subset of experts, enabling scaling without proportional compute increases. MoE is adopted in production LLMs like GPT-4, enabling massive scale with controlled costs.

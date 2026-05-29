@@ -8,6 +8,10 @@
 
 - ### Relationships
   - bridges-to:: [[Autonomous Robot]]
+  - uses:: [[Blockchain]], [[Smart Contract]]
+  - enables:: [[Supply Chain Traceability]], [[Luxury Goods Authentication]]
+  - hasPart:: [[Pharmaceutical Traceability]], [[Supply Chain Management]]
+  - standardizedBy:: [[Blockchain Compliance]]
 
 - ### Content
   - Blockchain-based anti-counterfeiting solutions address a £1.023 trillion global counterfeit trade crisis that affects every major industry from pharmaceuticals to luxury goods, electronics to food safety. By creating immutable digital twins of physical products through cryptographic verification and secure physical-digital integration technologies, blockchain systems provide unprecedented product authentication capabilities whilst simultaneously tracking complete supply chain provenance from manufacture to end consumer.

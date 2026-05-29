@@ -46,16 +46,31 @@ public:: true
   "@id": "urn:ngm:class:model-capacity",
   "@type": "Class",
   "label": "Model Capacity",
-  "definition": "Model Capacity is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "The measure of a machine learning model's ability to represent a wide variety of functions, determined by parameter count, architecture depth and width, and representational power. Models with insufficient capacity underfit the data; those with excessive capacity risk overfitting. Capacity is formally bounded by concepts such as the Vapnik–Chervonenkis dimension, and is managed in practice through regularisation, pruning, and architecture search.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
+      {"@id": "urn:ngm:class:training-data", "label": "Training Data"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:overfitting", "label": "Overfitting"},
+      {"@id": "urn:ngm:class:underfitting", "label": "Underfitting"},
+      {"@id": "urn:ngm:class:regularisation", "label": "Regularisation"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -96,7 +111,7 @@ public:: true
 
 
 - ### Definition
-  - ### Primary Definition
+  - The measure of a machine learning model's ability to represent a wide variety of functions, determined by parameter count, architecture depth and width, and representational power. Models with insufficient capacity underfit the data; those with excessive capacity risk overfitting. Capacity is formally bounded by concepts such as the Vapnik–Chervonenkis dimension, and is managed in practice through regularisation, pruning, and architecture search.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:ModelCapacity
@@ -105,6 +120,9 @@ public:: true
 
 - ### Relationships
   - bridges-to:: [[Digital Twin]]
+  - **requires**: Neural Network (architectural substrate that instantiates capacity), Training Data (data complexity drives capacity requirements)
+  - **enables**: Deep Learning (high-capacity deep architectures)
+  - **relatedTo**: Overfitting (excess capacity symptom), Underfitting (insufficient capacity symptom), Regularisation (capacity control mechanism), Digital Twin (high-fidelity simulation requires high-capacity models)
 
 - ### Content
   - ### Primary Definition

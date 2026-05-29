@@ -626,7 +626,7 @@ public:: true
   "@id": "urn:ngm:class:proof-of-work",
   "@type": "Class",
   "label": "Proof Of Work",
-  "definition": "Computational puzzle consensus mechanism within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "A consensus mechanism requiring network participants to expend significant computational effort solving a cryptographic puzzle before appending a new block to the blockchain. The difficulty of the puzzle self-adjusts to maintain a target block interval, making chain rewriting computationally prohibitive and providing Sybil resistance through physical resource expenditure.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -640,10 +640,31 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:consensus-protocol",
-      "label": "ConsensusProtocol"
+      "label": "Consensus Protocol"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"},
+      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:mining-pool", "label": "Mining Pool"},
+      {"@id": "urn:ngm:class:block-reward", "label": "Block Reward"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
+      {"@id": "urn:ngm:class:consensus-algorithm", "label": "Consensus Algorithm"},
+      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"},
+      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"},
+      {"@id": "urn:ngm:class:mempool", "label": "Mempool"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"},
+      {"@id": "urn:ngm:class:transaction-finality", "label": "Transaction Finality"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

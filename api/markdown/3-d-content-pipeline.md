@@ -1,12 +1,17 @@
 - ### Definition
-  - 3D Content Pipeline is a concept within the ngm domain.
+  - The comprehensive workflows, tools, and methodologies for creating, processing, optimising, and delivering three-dimensional assets for metaverse and spatial computing applications. A 3D content pipeline spans concept art, geometry modelling, UV mapping, PBR texturing, rigging, LOD generation, and platform-specific optimisation, integrating DCC tools, game engines, version control, and CI/CD systems to support distributed teams and continuous asset delivery.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:3D Content Pipeline
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart [[3D Asset]]
+  - hasPart [[3D Animation]]
+  - hasPart [[Rendering Pipeline]]
+  - enables [[Real-Time Rendering]]
+  - enables [[Metaverse and Telecollaboration]]
+  - relatedTo [[3D Content Generation]]
 
 - ### Content
 

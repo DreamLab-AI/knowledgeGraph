@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:virtual-wedding",
   "domain": "spatial-computing",
-  "definition": "A marriage ceremony conducted in virtual environments or metaverse platforms where participants are represented by digital avatars, enabling global attendance, customizable virtual venues, and unique digital elements like NFT wedding gifts, often requiring accompaniment by legal proceedings for o...",
+  "definition": "A marriage ceremony conducted within a metaverse or virtual reality platform in which participants are represented by digital avatars, enabling global attendance without physical travel. Virtual weddings may incorporate NFT wedding gifts, custom virtual venues, and live-streamed officiants, but typically require separate legal proceedings for official recognition under applicable jurisdictional law.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -17,21 +17,57 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:virtual-reality-platform",
+        "label": "Virtual Reality Platform"
+      },
+      {
+        "id": "urn:ngm:class:avatar-system",
+        "label": "Avatar System"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-venue",
+        "label": "Metaverse Venue"
+      },
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:metaverse-application",
+        "label": "Metaverse Application"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:social-platform",
+        "label": "Social Platform"
+      },
+      {
+        "id": "urn:ngm:class:legal-framework",
+        "label": "Legal Framework"
+      }
+    ]
   },
   "wikilinks": [
     {

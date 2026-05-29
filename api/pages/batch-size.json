@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:batch-size",
   "domain": "artificial-intelligence",
-  "definition": "Batch Size is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "Batch Size is the number of training examples processed together in a single forward and backward pass before model parameters are updated. It is a critical hyperparameter governing the trade-off between training speed, memory usage, gradient noise, and convergence stability\u2014small batches introduce regularising noise via stochastic gradient estimates, whilst large batches enable faster hardware utilisation but may generalise less well.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -13,21 +13,45 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:epoch",
+        "label": "Epoch"
+      },
+      {
+        "id": "urn:ngm:class:hyperparameter",
+        "label": "Hyperparameter"
+      }
+    ]
   },
   "wikilinks": [
     {

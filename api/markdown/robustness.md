@@ -5,7 +5,12 @@
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Contrasts with [[Adversarial Attack]] (robustness is the defence property that attacks seek to undermine)
+  - Supports [[AI Safety]] as a necessary technical precondition
+  - Supports [[Safety Fine Tuning]] which directly improves behavioural robustness
+  - Related to [[Fairness]] (robust models must not fail disproportionately across subgroups)
+  - Related to [[Explainability]] (understanding failure modes informs robustness measures)
+  - Related to [[Bias]] (distributional biases are a source of robustness failures)
 - ### Content
   - The ability of an AI system to maintain consistent, correct, and safe performance across diverse operating conditions, including unexpected inputs, environmental variations, and adversarial perturbations, without catastrophic failure or significant degradation.
 		- ## Analysis of the underlying security

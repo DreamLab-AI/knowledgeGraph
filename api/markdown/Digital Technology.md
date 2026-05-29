@@ -46,16 +46,30 @@ public:: true
   "@id": "urn:ngm:class:digital-technology",
   "@type": "Class",
   "label": "Digital Technology",
-  "definition": "Digital Technology is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Digital Technology refers to electronic tools, systems, and platforms that generate, store, or process information in binary or digital form. It encompasses computing hardware, software, networks, and embedded systems that collectively enable the creation, transformation, and distribution of digital content and services, forming the foundational layer of the modern digital economy.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:immersive-technology", "label": "Immersive Technology"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:computing-hardware", "label": "Computing Hardware"},
+      {"@id": "urn:ngm:class:computing-infrastructure", "label": "Computing Infrastructure"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:disruptive-technology", "label": "Disruptive Technology"},
+      {"@id": "urn:ngm:class:digital-infrastructure", "label": "Digital Infrastructure"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -96,7 +110,7 @@ public:: true
 
 
 - ### Definition
-  - Digital Technology is a concept within the metaverse domain. Further enrichment pending.
+  - Digital Technology refers to electronic tools, systems, and platforms that generate, store, or process information in binary or digital form. It encompasses computing hardware, software, networks, and embedded systems that collectively enable the creation, transformation, and distribution of digital content and services, forming the foundational layer of the modern digital economy.
 
 bridges-to:: [[Computer Vision]]
 
@@ -105,7 +119,9 @@ bridges-to:: [[Computer Vision]]
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **enables**: [[Spatial Computing]], [[Immersive Technology]]
+  - **uses**: [[Computing Hardware]], [[Computing Infrastructure]]
+  - **relatedTo**: [[Disruptive Technology]], [[Digital Infrastructure]]
 
 - ### Content
 

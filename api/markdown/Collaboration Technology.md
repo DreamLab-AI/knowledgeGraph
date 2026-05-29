@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:collaboration-technology",
   "@type": "Class",
   "label": "Collaboration Technology",
-  "definition": "Collaboration Technology is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Software and hardware systems that enable multiple participants to coordinate, communicate, and jointly produce work across physical or virtual spaces. In spatial computing contexts, collaboration technology encompasses shared XR environments, co-presence avatars, spatial audio, and synchronised digital workspace tools that support telecollaboration at a distance.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -60,6 +61,38 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:quality-of-service",
+        "label": "Quality Of Service"
+      },
+      {
+        "@id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "@id": "urn:ngm:class:collaboration",
+        "label": "Collaboration"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:telecollaboration-and-telepresence",
+        "label": "Telecollaboration and Telepresence"
+      },
+      {
+        "@id": "urn:ngm:class:collaboration-platform",
+        "label": "Collaboration Platform"
+      }
+    ]
   }
 }
 ```
@@ -96,7 +129,7 @@ public:: true
 
 
 - ### Definition
-  - Collaboration Technology is a concept within the metaverse domain. Further enrichment pending.
+  - Software and hardware systems that enable multiple participants to coordinate, communicate, and jointly produce work across physical or virtual spaces. In spatial computing contexts, collaboration technology encompasses shared XR environments, co-presence avatars, spatial audio, and synchronised digital workspace tools that support telecollaboration at a distance.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:CollaborationTechnology
@@ -104,6 +137,12 @@ public:: true
 
 - ### Relationships
   - bridges-to:: [[Telecollaboration]]
+  - Enables [[Telecollaboration]]
+  - Enables [[Collaboration]]
+  - Requires [[Quality Of Service]]
+  - Requires [[Network Infrastructure]]
+  - Related To [[Telecollaboration and Telepresence]]
+  - Related To [[Collaboration Platform]]
 
 - ### Content
 

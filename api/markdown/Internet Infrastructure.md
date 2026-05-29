@@ -56,19 +56,34 @@ public:: true
   "label": "Internet Infrastructure",
   "definition": "Internet Infrastructure for AI encompasses the networking protocols, distributed systems, edge computing platforms, and content delivery networks that enable large-scale deployment and operation of AI services.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
-  "quality": 0.35,
+  "maturity": "emerging",
+  "qualityScore": 0.7,
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure (Category)"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
+      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
+      {"@id": "urn:ngm:class:content-delivery-network", "label": "Content Delivery Network"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:machine-learning-infrastructure", "label": "Machine Learning Infrastructure"},
+      {"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"},
+      {"@id": "urn:ngm:class:cloud-infrastructure", "label": "Cloud Infrastructure"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
-  },
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:cat-ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
-    }
-  ]
+  }
 }
 ```
 
@@ -121,7 +136,9 @@ public:: true
   - owl-role:: concept
 
 - ### Relationships
-  - is-subclass-of:: ['owl:Thing']
+  - **hasPart**: [[Edge Computing]], [[Distributed Systems]], [[Content Delivery Network]]
+  - **enables**: [[Machine Learning Infrastructure]], [[Distributed Computing]]
+  - **uses**: [[Network Protocol]], [[Cloud Infrastructure]]
 
 - ### Content
 

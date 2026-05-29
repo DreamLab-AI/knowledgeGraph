@@ -42,9 +42,10 @@ public:: true
   "@id": "urn:ngm:class:national-competent-authority",
   "@type": "Class",
   "label": "National Competent Authority",
-  "definition": "A notifying authority, a market surveillance authority, or any other authority designated by a Member State to supervise the application and implementation of the AI Act, including national data protection authorities where relevant.",
+  "definition": "A body designated by an EU Member State under the AI Act — encompassing market surveillance authorities, notifying authorities, and data protection authorities — responsible for supervising provider and deployer compliance with the Act's requirements, enforcing penalties, and coordinating with the AI Office on cross-border and GPAI model matters.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-legal-and-regulatory",
@@ -55,7 +56,23 @@ public:: true
       "label": "Regulatory Framework"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "supports": [
+      {"@id": "urn:ngm:class:ai-office", "label": "AI Office"},
+      {"@id": "urn:ngm:class:conformity-assessment", "label": "Conformity Assessment"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:market-surveillance-authority", "label": "Market Surveillance Authority"},
+      {"@id": "urn:ngm:class:notified-body", "label": "Notified Body"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:accountability", "label": "Accountability"},
+      {"@id": "urn:ngm:class:transparency", "label": "Transparency"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -99,7 +116,13 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **supports** [[AI Office]] — NCAs coordinate with and report to the EU AI Office on cross-border and GPAI matters
+  - **supports** [[Conformity Assessment]] — NCAs verify that mandatory conformity assessments have been conducted correctly
+  - **uses** [[Market Surveillance Authority]] — market surveillance is a primary NCA function type
+  - **uses** [[Notified Body]] — NCAs designate and monitor notified bodies for third-party assessment
+  - **implements** [[AI Governance]] — NCAs are the national enforcement arm of the EU AI governance framework
+  - **dependsOn** [[Accountability]] — NCAs are themselves subject to parliamentary and judicial accountability
+  - **dependsOn** [[Transparency]] — NCAs must publish enforcement decisions and annual statistics
 
 - ### Content
   - A notifying authority, a market surveillance authority, or any other authority designated by a Member State to supervise the application and implementation of the AI Act, including national data protection authorities where relevant.

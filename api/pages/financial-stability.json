@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:financial-stability",
   "domain": "blockchain",
-  "definition": "Financial stability in the context of blockchain refers to the systemic resilience of financial markets and institutions against disruptions caused by the growth, volatility, or failure of crypto-asset markets.",
+  "definition": "Financial stability refers to the condition in which the financial system \u2014 comprising banks, markets, payment infrastructure, and intermediaries \u2014 can absorb shocks and continue to perform its core functions of credit intermediation, risk transfer, and payment settlement. In the context of blockchain and crypto-assets, financial stability analysis examines how the growth of crypto markets, the interconnections between crypto and traditional finance, and the failure of large participants can propagate systemic risk. Regulatory bodies such as the Financial Stability Board, BIS, and IMF monitor these dynamics and advise on macroprudential policy responses.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-governance-and-regulation",
@@ -14,20 +14,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:systemic-risk",
+        "label": "Systemic Risk"
+      },
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:robot-singularity",
   "domain": "robotics",
-  "definition": "Robot Singularity is a robotics and autonomous systems concept and a type of robotics.",
+  "definition": "A Robot Singularity is a configuration of a serial or parallel robot manipulator at which the Jacobian matrix loses rank, causing the determinant to approach zero. At a singularity, the robot loses one or more degrees of freedom in Cartesian space: it cannot produce force or motion in certain directions, and inverse kinematics solutions become ill-conditioned or non-unique. Singularity avoidance and detection are central problems in motion planning, trajectory generation, and real-time control of robotic arms.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
@@ -14,10 +14,24 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:differential-kinematics",
+        "label": "Differential Kinematics"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
@@ -27,7 +41,16 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "id": "urn:ngm:class:control-algorithm",
+        "label": "Control Algorithm"
+      }
+    ]
   },
   "wikilinks": [
     {

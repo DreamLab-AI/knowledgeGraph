@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:proxemics",
   "domain": "robotics",
-  "definition": "Study and application of spatial relationships between humans and robots, including personal space, social distance, and comfort zones for effective human-robot interaction.",
+  "definition": "The study and application of interpersonal and human-robot spatial relationships \u2014 including intimate, personal, social, and public distance zones \u2014 to design robotic systems that behave in spatially appropriate ways. Proxemics-aware robots adjust their approach trajectories, velocities, and stopping distances in response to detected human zones, improving perceived safety, comfort, and social acceptability in shared environments.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-human-robot-interaction",
@@ -13,12 +13,30 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.75,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:proximity-detection",
+        "label": "Proximity Detection"
+      },
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:collision-avoidance",
+        "label": "Collision Avoidance"
+      },
+      {
+        "id": "urn:ngm:class:embodied-ai",
+        "label": "Embodied AI"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -26,8 +44,30 @@
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "id": "urn:ngm:class:social-robotics",
+        "label": "Social Robotics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:attention-aware-interaction",
+        "label": "Attention Aware Interaction"
+      },
+      {
+        "id": "urn:ngm:class:emotion-aware-interaction",
+        "label": "Emotion Aware Interaction"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -42,20 +42,56 @@ public:: true
   "@id": "urn:ngm:class:hybrid-robot",
   "@type": "Class",
   "label": "Hybrid Robot",
-  "definition": "Hybrid Robot is a type of Robotics in the robotics domain.",
+  "definition": "A robotic system that combines two or more distinct locomotion or manipulation modalities—such as wheeled and legged movement, or fixed-base and mobile operation—to extend operational range and adaptability across heterogeneous environments. Hybrid robots exploit the efficiency of specialised subsystems whilst maintaining versatility that no single modality can achieve alone.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-robot-type",
       "label": "Robot Type"
     }
   ],
-  "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:robot-actuator",
+        "label": "Robot Actuator"
+      },
+      {
+        "@id": "urn:ngm:class:robot-sensor",
+        "label": "Robot Sensor"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
+        "@id": "urn:ngm:class:collaborative-robot",
+        "label": "Collaborative Robot"
+      },
+      {
+        "@id": "urn:ngm:class:robotic-system",
+        "label": "Robotic System"
+      }
+    ]
   }
 }
 ```
@@ -87,14 +123,16 @@ public:: true
 
 
 - ### Definition
-  - Hybrid Robot is a concept within the robotics domain. Further enrichment pending.
+  - A robotic system that combines two or more distinct locomotion or manipulation modalities—such as wheeled and legged movement, or fixed-base and mobile operation—to extend operational range and adaptability across heterogeneous environments. Hybrid robots exploit the efficiency of specialised subsystems whilst maintaining versatility that no single modality can achieve alone.
 
 - ### Semantic Classification
   - owl-class:: robotics:HybridRobot
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Has part [[Robot Actuator]], [[Robot Sensor]]
+  - Uses [[Feedback Control]], [[Sensor Fusion]]
+  - Related to [[Autonomous Robot]], [[Collaborative Robot]], [[Robotic System]]
 
 - ### Content
 

@@ -54,16 +54,40 @@ public:: true
   "@id": "urn:ngm:class:polkadot-parachains",
   "@type": "Class",
   "label": "Polkadot Parachains",
-  "definition": "Application-specific blockchains that connect to and are secured by the Polkadot Relay Chain, enabling interoperability and shared security across heterogeneous blockchain networks.",
+  "definition": "Application-specific sovereign blockchains that lease a slot on the Polkadot Relay Chain, inheriting its shared security model and cross-chain messaging infrastructure. Parachains can have custom runtime logic, consensus rules, and token economics whilst relying on the relay chain's validator set for finalisation, enabling heterogeneous specialised chains to interoperate without sacrificing security or decentralisation.",
   "domain": "blockchain",
   "maturity": "emerging",
+  "quality": 0.75,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-network-component",
       "label": "Network Component"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"},
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
+      {"@id": "urn:ngm:class:nominated-proof-of-stake", "label": "Nominated Proof of Stake"},
+      {"@id": "urn:ngm:class:validator-node", "label": "Validator Node"},
+      {"@id": "urn:ngm:class:web-assembly", "label": "WebAssembly"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:blockchain-interoperability", "label": "Blockchain Interoperability"},
+      {"@id": "urn:ngm:class:cross-chain-messaging", "label": "Cross-Chain Messaging"},
+      {"@id": "urn:ngm:class:blockchain-scalability", "label": "Blockchain Scalability"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:cross-chain-bridge", "label": "Cross-Chain Bridge"},
+      {"@id": "urn:ngm:class:blockchain-protocol", "label": "Blockchain Protocol"},
+      {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"},
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
+      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -125,7 +149,9 @@ public:: true
   - is-subclass-of:: [[Blockchain]]
 
 - ### Content
-  Polkadot Parachains — content pending enrichment.
+  Polkadot Parachains are sovereign blockchains built with the Substrate framework and leased a slot on the Polkadot Relay Chain through an on-chain auction mechanism. Once connected, a parachain's block production is collated locally and validated by a randomly assigned subset of the relay chain's nominated proof-of-stake validators, meaning the parachain inherits the full economic security of the entire DOT-staked validator pool without needing to bootstrap its own validator set.
+
+  Cross-parachain communication is handled natively via the Cross-Consensus Messaging format (XCM), enabling assets and arbitrary data to flow between parachains and the relay chain without external bridges. This architecture addresses the blockchain scalability trilemma by separating application-layer execution (parachains) from consensus and security (relay chain), and represents one of the most technically sophisticated approaches to heterogeneous multi-chain interoperability deployed in production.
 
 - ### Provenance
   - sources:: [[Polkadot]], [[Web3 Foundation]]

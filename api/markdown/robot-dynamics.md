@@ -1,5 +1,5 @@
 - ### Definition
-  - - maturity:: draft
+  - Robot Dynamics is the study of the forces, torques, and inertial properties that govern the motion of robotic systems. It encompasses forward dynamics (computing accelerations from applied forces) and inverse dynamics (computing required torques for a desired motion), underpinning trajectory planning, model-based control, and simulation.
 
 - ### Semantic Classification
   - owl-class:: robotics:RobotDynamics
@@ -7,6 +7,12 @@
 
 - ### Relationships
   - is-subclass-of:: [[RobotMechanics]]
+  - requires [[Kinematics]]
+  - requires [[Torque]]
+  - enables [[Motion Planning]]
+  - enables [[Robot Control]]
+  - relatedTo [[Robot Safety]]
+  - relatedTo [[State Estimation]]
 
 - ### Content
 

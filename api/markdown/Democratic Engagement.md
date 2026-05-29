@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:democratic-engagement",
   "@type": "Class",
   "label": "Democratic Engagement",
-  "definition": "Democratic Engagement is a type of Metaverse and Telecollaboration in the spatial computing domain.",
+  "definition": "Democratic Engagement refers to the mechanisms, platforms, and practices through which citizens and communities participate in governance decisions, policy formation, and collective sense-making, including via digital and virtual channels. In metaverse and telecollaboration contexts, democratic engagement encompasses online deliberation tools, DAO-based governance, participatory spatial environments, and AI-assisted facilititation of broad-based civic participation.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
@@ -59,7 +60,23 @@ public:: true
       "label": "Metaverse and Telecollaboration"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:democratic-governance", "label": "Democratic Governance"},
+      {"@id": "urn:ngm:class:democratic-participation", "label": "Democratic Participation"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:telecollaboration", "label": "Telecollaboration"},
+      {"@id": "urn:ngm:class:digital-platform", "label": "Digital Platform"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:democratic-values", "label": "Democratic Values"},
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:platform-governance", "label": "Platform Governance"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -100,20 +117,23 @@ public:: true
 
 
 - ### Definition
-  - Democratic Engagement is a concept within the metaverse domain. Further enrichment pending.
+  Democratic Engagement refers to the mechanisms and practices through which citizens participate in governance decisions via digital and virtual channels. In metaverse and telecollaboration contexts this encompasses online deliberation tools, DAO-based governance, participatory spatial environments, and AI-assisted facilitation of civic participation.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:DemocraticEngagement
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **enables**: Democratic Governance, Democratic Participation (engagement mechanisms produce these outcomes)
+  - **uses**: Telecollaboration, Digital Platform (the channels through which engagement is mediated)
+  - **supports**: Democratic Values, AI Governance (foundational values and governance frameworks the concept upholds)
+  - **relatedTo**: Platform Governance (shared governance concerns for online civic spaces)
 
 - ### Content
 
   ## Overview
 
-  Democratic Engagement represents an abstract concept in the metaverse ontology hierarchy.
+  Democratic Engagement encompasses the digital and spatial mechanisms enabling citizens and communities to participate in governance and collective sense-making. Digital platforms, including telecollaboration tools and metaverse environments, extend the reach and accessibility of democratic processes.
 
   #### Related Concepts
   - [[owl:Thing]]

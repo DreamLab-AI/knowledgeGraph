@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:preference-learning",
   "domain": "spatial-computing",
-  "definition": "A machine learning paradigm that learns from comparative judgments (e.g., \"A is better than B\") rather than absolute labels or demonstrations.",
+  "definition": "A machine learning paradigm that trains models from comparative human judgements (e.g., 'A is better than B') rather than absolute labels or demonstrations, enabling alignment with human values. Preference learning underpins reinforcement learning from human feedback and direct preference optimisation, and is the standard technique for aligning large language models.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -14,20 +14,48 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "id": "urn:ngm:class:reward-model",
+        "label": "Reward Model"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:training",
+        "label": "Training"
+      }
+    ]
   },
   "wikilinks": [
     {

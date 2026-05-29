@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:distributed-training",
   "domain": "artificial-intelligence",
-  "definition": "A machine learning training strategy that partitions computation across multiple processors, nodes, or devices to accelerate training and enable models that exceed single-device memory.",
+  "definition": "Distributed training is a machine learning training strategy that partitions computation, data, and/or model parameters across multiple processors, accelerators, or nodes to accelerate training, handle models that exceed the memory capacity of a single device, and improve throughput. The principal parallelism strategies are data parallelism (each worker trains on a different data shard with gradients synchronised), model parallelism (different layers reside on different devices), tensor parallelism (individual weight matrices are partitioned across devices), and pipeline parallelism (different stages of the forward pass run concurrently on different devices). These approaches are frequently combined in large-scale training runs.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -14,11 +14,25 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-infrastructure",
+        "label": "Machine Learning Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +41,20 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:mixed-precision-training",
+        "label": "Mixed Precision Training"
+      },
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

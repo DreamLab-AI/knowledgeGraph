@@ -5,20 +5,38 @@
   "public": true,
   "classIri": "urn:ngm:class:json-schema",
   "domain": "artificial-intelligence",
-  "definition": "JSON Schema is a declarative vocabulary that allows annotation and validation of JSON documents by specifying their required structure, data types, and constraints.",
+  "definition": "JSON Schema is an IETF-standardised declarative vocabulary for annotating and validating the structure, data types, required fields, and value constraints of JSON documents. It enables machine-readable contracts between API producers and consumers by expressing rules such as property types, enumerated values, pattern matching, minimum/maximum boundaries, and composition via allOf, anyOf, and oneOf combiners. JSON Schema is widely used in REST API description languages, configuration file validation, and as the basis for verifiable credential schemas in decentralised identity systems.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
+    },
+    {
+      "id": "urn:ngm:class:data-format-standard",
+      "label": "Data Format Standard"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:json",
+        "label": "json"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "id": "urn:ngm:class:credential-schema",
+        "label": "Credential Schema"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +45,16 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:json-ld",
+        "label": "JSON-LD"
+      },
+      {
+        "id": "urn:ngm:class:data-format",
+        "label": "Data Format"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

@@ -1,5 +1,5 @@
 - ### Definition
-  - ### Primary Definition
+  - A neural network architecture in which connections between nodes do not form cycles, with information flowing unidirectionally from input through hidden layers to output. The simplest and most foundational artificial neural network type, trained via backpropagation with gradient descent, and proven by the universal approximation theorem to model arbitrary continuous functions given sufficient width.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:FeedforwardNeuralNetwork
@@ -7,7 +7,10 @@
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires**: Backpropagation, Activation Function — training depends on gradient propagation through nonlinear activation functions
+  - **contrastsWith**: Recurrent Neural Network, Transformer Architecture — FNNs lack feedback loops and attention mechanisms that characterise these alternatives
+  - **enables**: Deep Learning, Machine Learning — multi-layer feedforward networks are the conceptual substrate of deep learning
+  - **partOf**: Convolutional Neural Network — CNNs are specialised feedforward architectures with spatially-structured weight sharing
 
 - ### Content
   - ### Primary Definition

@@ -42,7 +42,7 @@ public:: true
   "@id": "urn:ngm:class:metaverse-infrastructure",
   "@type": "Class",
   "label": "Metaverse Infrastructure",
-  "definition": "Technical infrastructure supporting metaverse platforms.",
+  "definition": "Technical infrastructure supporting persistent, large-scale metaverse platforms, encompassing the networking, cloud compute, edge nodes, rendering servers, and spatial data systems required to deliver low-latency immersive experiences at scale. It spans connectivity layers (5G, content delivery), server-side rendering and simulation, asset storage, and identity services that together underpin interoperable virtual worlds.",
   "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": [
@@ -51,7 +51,26 @@ public:: true
       "label": "Computing and Cloud"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "supports": [
+      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"},
+      {"@id": "urn:ngm:class:metaverse-platform", "label": "Metaverse Platform"},
+      {"@id": "urn:ngm:class:virtual-world", "label": "Virtual World"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
+      {"@id": "urn:ngm:class:content-delivery-network", "label": "Content Delivery Network"},
+      {"@id": "urn:ngm:class:networking-infrastructure", "label": "Networking Infrastructure"},
+      {"@id": "urn:ngm:class:virtual-world-infrastructure", "label": "Virtual World Infrastructure"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:metaverse-architecture", "label": "Metaverse Architecture"},
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:remote-rendering", "label": "Remote Rendering"},
+      {"@id": "urn:ngm:class:latency", "label": "Latency"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

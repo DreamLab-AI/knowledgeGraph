@@ -1,12 +1,17 @@
 - ### Definition
-  - NetworkInfrastructure is a concept within the ngm domain.
+  - Network Infrastructure comprises the physical and logical communication systems — fibre, wireless, routing, and switching equipment, alongside software-defined networking layers — that enable data transmission for real-time collaboration and distributed computing. Modern network infrastructure integrates 5G/6G wireless, SD-WAN, content delivery networks, and multi-access edge computing to support low-latency, high-bandwidth applications such as immersive XR experiences and autonomous systems.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:NetworkInfrastructure
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - supports:: [[Spatial Computing]]
+  - supports:: [[AI Infrastructure]]
+  - hasPart:: [[Network Component]]
+  - hasPart:: [[Edge Computing]]
+  - relatedTo:: [[Telecommunications Infrastructure]]
+  - relatedTo:: [[Cybersecurity]]
 
 - ### Content
 

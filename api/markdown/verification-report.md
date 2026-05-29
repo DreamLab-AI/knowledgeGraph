@@ -5,7 +5,9 @@
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: [[Ontology]], [[Knowledge Graph]] — verification reports assess the quality of ontology structures and knowledge graph data
+  - **enables**: [[Compliance Framework]] — the report provides the evidence base for compliance sign-off and regulatory audits
+  - **relatedTo**: [[Standards Validation]], [[Standards Compliance]] — verification reports measure conformance against declared ontology and data standards
 - ### Content
   - Verification reports document systematic assessment results confirming ontologies and knowledge graphs meet quality standards through automated and manual validation, providing transparent documentation of compliance, defect categorisation, and remediation progress.
   - ### Original Content

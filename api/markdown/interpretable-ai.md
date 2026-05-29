@@ -1,5 +1,5 @@
 - ### Definition
-  - Machine learning models and systems whose internal decision-making processes are inherently transparent and understandable to humans without requiring additional post-hoc explanation techniques.
+  - Machine learning models and systems whose internal decision-making processes are inherently transparent and understandable to humans without requiring additional post-hoc explanation techniques. Interpretable AI prioritises transparency by design—via linear models, decision trees, or rule-based systems—distinguishing it from explainable AI approaches that retrofit explanations onto opaque models.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:InterpretableAI
@@ -7,7 +7,13 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires** [[Model Transparency]] — interpretable systems must expose their internal logic to scrutiny
+  - **requires** [[Model Interpretability]] — interpretability is the defining property that distinguishes this class
+  - **enables** [[Explainable AI]] — interpretable architectures simplify the production of human-readable explanations
+  - **enables** [[Fairness]] — transparent decision logic facilitates fairness auditing
+  - **enables** [[Accountability]] — traceable reasoning chains support regulatory accountability
+  - **contrastsWith** [[Large Language Models]] — large neural language models are typically opaque, not inherently interpretable
+  - **relatedTo** [[AI Regulation]] — interpretability requirements are increasingly codified in AI governance frameworks
 
 - ### Content
   - Machine learning models and systems whose internal decision-making processes are inherently transparent and understandable to humans without requiring additional post-hoc explanation techniques.

@@ -6,7 +6,13 @@
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Has part [[Cryptography]]
+  - Has part [[Hash Function]]
+  - Has part [[Digital Signature]]
+  - Uses [[Zero-Knowledge Proof]]
+  - Uses [[Formal Verification]]
+  - Supports [[Data Security]]
+  - Supports [[Cryptographic Security]]
 
 - ### Content
   - **Classification**

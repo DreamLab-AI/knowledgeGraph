@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:transaction-parameter",
   "domain": "blockchain",
-  "definition": "Configuration values that define the execution characteristics of a blockchain transaction, including gas limit, gas price, nonce, and other parameters that determine transaction priority, cost, and computational resources allocated.",
+  "definition": "Transaction Parameters are the configuration values that define the execution characteristics of a blockchain transaction, including gas limit, gas price (or priority fee under EIP-1559), nonce, value, and calldata. These parameters determine transaction priority, cost, computational resources consumed, and ordering within blocks, directly influencing DeFi strategies such as MEV extraction and Layer 2 batching efficiency.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-protocol-and-consensus",
@@ -17,21 +17,57 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:gas-optimization",
+        "label": "Gas Optimization"
+      },
+      {
+        "id": "urn:ngm:class:mev",
+        "label": "MEV"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gas-limit",
+        "label": "Gas Limit"
+      },
+      {
+        "id": "urn:ngm:class:gas-price",
+        "label": "Gas Price"
+      },
+      {
+        "id": "urn:ngm:class:eip-1559",
+        "label": "EIP-1559"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:layer2",
+        "label": "Layer2"
+      }
+    ]
   },
   "wikilinks": [
     {

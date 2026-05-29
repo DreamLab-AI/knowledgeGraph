@@ -8,6 +8,15 @@
 
 - ### Relationships
   - is-subclass-of:: [[System Architecture]]
+  - Has Part [[Accessibility]]
+  - Has Part [[User Experience]]
+  - Requires [[System Architecture]]
+  - Requires [[Human Computer Interaction]]
+  - Uses [[Eye Tracking]]
+  - Uses [[Haptic Feedback]]
+  - Uses [[Hand Tracking]]
+  - Supports [[Metaverse]]
+  - Supports [[Immersive Experience]]
 
 - ### Content
 

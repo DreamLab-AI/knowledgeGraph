@@ -1,12 +1,14 @@
 - ### Definition
-  - PsychologicalPhenomenon is a concept within the ngm domain.
+  - A Psychological Phenomenon, in the context of spatial computing, denotes any observable, reproducible effect on cognition, emotion, or behaviour arising from interaction with immersive virtual environments. Established examples include the Proteus Effect (avatar-driven behavioural conformity), simulator sickness (sensorimotor conflict), flow states, social presence, and embodiment illusions. Understanding these phenomena is foundational to ethical metaverse design and therapeutic XR applications.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:PsychologicalPhenomenon
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart:: [[Proteus Effect]], [[Social Presence]], [[VR Psychology]]
+  - relatedTo:: [[Immersive Experience]], [[Cognitive Science]], [[Emotional Immersion]], [[Embodied AI]]
+  - enables:: [[Behavioral Modeling]]
 
 - ### Content
   # PsychologicalPhenomenon

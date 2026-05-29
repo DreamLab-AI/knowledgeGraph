@@ -7,7 +7,11 @@
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - enables:: [[Gradient Descent]]
+  - enables:: [[Model Training]]
+  - uses:: [[Neural Network]]
+  - uses:: [[Loss Function]]
+  - relatedTo:: [[Activation Function]]
 
 - ### Content
   - ### Primary Definition

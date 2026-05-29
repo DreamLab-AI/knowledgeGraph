@@ -37,16 +37,30 @@ public:: true
   "@id": "urn:ngm:class:notification-system",
   "@type": "Class",
   "label": "Notification System",
-  "definition": "Notification System is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A software component that delivers event-driven alerts, presence indicators, and system messages to users or services in real time. In virtual world and metaverse contexts, notification systems manage social events, user-to-user signals, and platform state changes across distributed infrastructure, typically using push protocols or pub-sub messaging patterns.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-network-and-comms",
       "label": "Network and Communication"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event Driven Architecture"},
+      {"@id": "urn:ngm:class:realtime-communication", "label": "Realtime Communication"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:platform-service", "label": "Platform Service"},
+      {"@id": "urn:ngm:class:networking-infrastructure", "label": "Networking Infrastructure"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:social-presence", "label": "Social Presence"},
+      {"@id": "urn:ngm:class:event-management", "label": "Event Management"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -76,14 +90,19 @@ public:: true
 
 
 - ### Definition
-  - Notification System is a concept within the ngm domain.
+  - A software component that delivers event-driven alerts, presence indicators, and system messages to users or services in real time. In virtual world and metaverse contexts, notification systems manage social events, user-to-user signals, and platform state changes across distributed infrastructure, typically using push protocols or pub-sub messaging patterns.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:NotificationSystem
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses** [[Event Driven Architecture]] — notification delivery relies on event-driven messaging patterns
+  - **uses** [[Realtime Communication]] — real-time delivery channels carry notifications to connected clients
+  - **partOf** [[Platform Service]] — notification systems are a core managed service within platform stacks
+  - **partOf** [[Networking Infrastructure]] — notification pipelines depend on underlying networking infrastructure
+  - **enables** [[Social Presence]] — presence indicators are a key notification type in virtual social environments
+  - **enables** [[Event Management]] — event-driven notifications coordinate user actions around scheduled events
 
 - ### Content
   # Notification System

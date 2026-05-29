@@ -37,9 +37,10 @@ public:: true
   "@id": "urn:ngm:class:resource-management",
   "@type": "Class",
   "label": "Resource Management",
-  "definition": "Resource Management is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "The systematic allocation, scheduling, and monitoring of computational resources — CPU, GPU, memory, storage, and network bandwidth — across applications and services within an infrastructure, ensuring efficient utilisation, quality-of-service guarantees, and graceful degradation under load. Encompasses asset lifecycle management, resource pooling, and dynamic scaling strategies.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
@@ -51,6 +52,36 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:metaverse-infrastructure",
+        "label": "Metaverse Infrastructure"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:computing-infrastructure",
+        "label": "Computing Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      }
+    ]
   }
 }
 ```
@@ -76,14 +107,17 @@ public:: true
 
 
 - ### Definition
-  - ResourceManagement is a concept within the ngm domain.
+  - The systematic allocation, scheduling, and monitoring of computational resources — CPU, GPU, memory, storage, and network bandwidth — across applications and services within an infrastructure, ensuring efficient utilisation, quality-of-service guarantees, and graceful degradation under load. Encompasses asset lifecycle management, resource pooling, and dynamic scaling strategies.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:ResourceManagement
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Supports: [[Computing Infrastructure]], [[Distributed System]]
+  - Uses: [[Edge Computing]]
+  - Enables: [[Metaverse Infrastructure]]
+  - Related To: [[Content Delivery Network]]
 
 - ### Content
   # ResourceManagement

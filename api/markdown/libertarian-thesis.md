@@ -1,12 +1,14 @@
 - ### Definition
-  - Libertarian thesis is a concept within the ngm domain.
+  - The Libertarian Thesis, as represented here by Hans-Hermann Hoppe's 'Democracy: The God That Failed', argues that democratic governance systematically expands state power and erodes individual liberties relative to private property-based natural order, and that radical decentralisation, covenant communities, and privatisation of public goods offer a more consistent path to a free society.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:LibertarianThesis
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires:: [[Property Rights]]
+  - contrastsWith:: [[Governance]], [[AI Governance]]
+  - relatedTo:: [[Economics]]
 
 - ### Content
   - ---

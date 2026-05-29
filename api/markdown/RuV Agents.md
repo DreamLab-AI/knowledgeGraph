@@ -33,15 +33,30 @@ public:: true
   "@id": "urn:ngm:class:ru-v-agents",
   "@type": "Class",
   "label": "RuV Agents",
-  "definition": "RuV Agents is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "RuV Agents refers to the ruv-swarm agent framework developed within the ruv-FANN project, providing a multi-agent orchestration layer for coordinating LLM-backed autonomous agents across tasks such as coding, research, and data processing. The framework integrates with inference APIs and supports rate-limit bypass strategies through unified LLM platform routing. It represents a practical implementation of multi-agent coordination patterns for software engineering and knowledge-work automation.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
+      {"@id": "urn:ngm:class:multi-agent-systems", "label": "Multi-Agent Systems"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:ai-agents", "label": "AI Agents"},
+      {"@id": "urn:ngm:class:autonomous-ai-agents", "label": "Autonomous AI Agents"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:agent-frameworks", "label": "Agent Frameworks"},
+      {"@id": "urn:ngm:class:vector-database", "label": "Vector Database"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -72,14 +87,16 @@ public:: true
 
 
 - ### Definition
-  - RuV Agents is a concept within the ngm domain.
+  - RuV Agents refers to the ruv-swarm agent framework developed within the ruv-FANN project, providing a multi-agent orchestration layer for coordinating LLM-backed autonomous agents across tasks such as coding, research, and data processing. The framework integrates with inference APIs and supports rate-limit bypass strategies through unified LLM platform routing. It represents a practical implementation of multi-agent coordination patterns for software engineering and knowledge-work automation.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:RuVAgents
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: Large Language Models, Multi-Agent Systems
+  - **enables**: AI Agents, Autonomous AI Agents
+  - **relatedTo**: Agent Frameworks, Vector Database
 
 - ### Content
   - [ruv-FANN/ruv-swarm at ruv-swarm · ruvnet/ruv-FANN](https://github.com/ruvnet/ruv-FANN/tree/ruv-swarm/ruv-swarm)

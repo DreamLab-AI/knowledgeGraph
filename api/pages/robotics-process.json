@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:robotics-process",
   "domain": "robotics",
-  "definition": "Robotics Process is a robotics and autonomous systems concept and a type of robotics.",
+  "definition": "A Robotics Process encompasses the systematic procedures, methodologies, and workflows for robot development, deployment, operation, and maintenance, spanning requirements engineering, system design, hardware-software integration, verification and validation, commissioning, and lifecycle management. Agile and iterative development methods accommodate uncertainty and enable rapid prototyping; simulation-driven approaches using digital twins support virtual commissioning. Compliance with process standards such as ISO 9001 and IEC 61508 is required for safety-critical robotic applications.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
@@ -14,20 +14,48 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:robot-component",
+        "label": "Robot Component"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:systems-engineering",
+        "label": "Systems Engineering"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": []

@@ -33,16 +33,34 @@ public:: true
   "@id": "urn:ngm:class:state-space-and-other-approaches",
   "@type": "Class",
   "label": "State Space and Other Approaches",
-  "definition": "State Space and Other Approaches is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "State Space and Other Approaches encompasses structured state space models (SSMs) and related sequence modelling architectures, most notably the Mamba family, which apply selective state-space mechanisms to achieve linear-time sequence processing. These approaches offer a compelling alternative to Transformers by combining efficient recurrence with hardware-aware algorithms, enabling superior throughput on long sequences across language, vision, and genomics domains.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
+      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:mixture-of-experts", "label": "Mixture of Experts"},
+      {"@id": "urn:ngm:class:recurrent-neural-network", "label": "Recurrent Neural Network"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:neural-rendering", "label": "Neural Rendering"},
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -72,14 +90,17 @@ public:: true
 
 
 - ### Definition
-  - State Space and Other Approaches is a concept within the ngm domain.
+  - State Space and Other Approaches encompasses structured state space models (SSMs) and related sequence modelling architectures, most notably the Mamba family, which apply selective state-space mechanisms to achieve linear-time sequence processing. These approaches offer a compelling alternative to Transformers by combining efficient recurrence with hardware-aware algorithms, enabling superior throughput on long sequences across language, vision, and genomics domains.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:StateSpaceAndOtherApproaches
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - contrastsWith:: Transformer, Transformer Architecture
+  - hasPart:: Mixture of Experts, Recurrent Neural Network
+  - uses:: Machine Learning, Deep Learning
+  - relatedTo:: Neural Rendering, Large Language Models
 
 - ### Content
   - # Mamba: Linear-Time Sequence Modelling with Selective State Spaces

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:erasure-coding",
   "domain": "infrastructure",
-  "definition": "A data protection technique that encodes information into redundant fragments distributed across nodes such that the original data can be reconstructed from any sufficient subset of fragments.",
+  "definition": "Erasure coding is a forward error-correction technique that encodes a data object into n fragments (shards), distributed across nodes or storage devices, such that any k of those n fragments are sufficient to reconstruct the original data without any centralised copy. The redundancy overhead (n \u2212 k) / k is typically much lower than full replication, making erasure coding the preferred durability mechanism in large-scale distributed storage systems and distributed ledgers where storage efficiency matters. Common schemes include Reed-Solomon codes, and more computationally efficient variants such as LDPC and Cauchy Reed-Solomon.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-data-management",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:data-replication",
+        "label": "Data Replication"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      },
+      {
+        "id": "urn:ngm:class:storage-infrastructure",
+        "label": "Storage Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

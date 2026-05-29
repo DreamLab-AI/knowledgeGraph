@@ -58,9 +58,9 @@ public:: true
   "@id": "urn:ngm:class:reward-model",
   "@type": "Class",
   "label": "Reward Model",
-  "definition": "A neural network trained to predict scalar rewards for model outputs based on human feedback, used to provide learning signals in reinforcement learning from human feedback (RLHF). The reward model serves as a proxy for human preferences, enabling efficient optimization without constant human e",
+  "definition": "A neural network trained to predict scalar rewards for model outputs based on human feedback, used to provide learning signals in reinforcement learning from human feedback (RLHF). The reward model serves as a proxy for human preferences, enabling efficient optimization without constant human evaluation.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
@@ -71,7 +71,20 @@ public:: true
       "label": "Reinforcement Learning"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:human-feedback", "label": "Human Feedback"},
+      {"@id": "urn:ngm:class:supervised-fine-tuning", "label": "Supervised Fine Tuning"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:reinforcement-learning-from-human-feedback", "label": "Reinforcement Learning from Human Feedback"},
+      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:model-performance", "label": "Model Performance"}
+    ]
+  },
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -135,7 +148,11 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Human Feedback]]
+  - requires [[Supervised Fine Tuning]]
+  - enables [[Reinforcement Learning from Human Feedback]]
+  - enables [[AI Alignment]]
+  - relatedTo [[Model Performance]]
 
 - ### Content
   - A neural network trained to predict scalar rewards for model outputs based on human feedback, used to provide learning signals in reinforcement learning from human feedback (RLHF). The reward model serves as a proxy for human preferences, enabling efficient optimization without constant human evaluation.

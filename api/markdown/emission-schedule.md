@@ -1,84 +1,18 @@
-- ### Definition
-  - Token issuance timeline within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
+### Definition
 
-- ### Semantic Classification
-  - owl-class:: blockchain:EmissionSchedule
-  - owl-role:: Object
-  - owl-inferred:: blockchain:VirtualObject
-  - belongs-to-domain:: [[TokenEconomicsDomain]]
-  - implemented-in-layer:: [[EconomicLayer]]
+An Emission Schedule is the predetermined, protocol-encoded timeline that specifies the rate at which new tokens are minted and distributed to participants over the lifetime of a blockchain network. It governs how the total supply of a token expands from genesis toward any eventual supply cap or steady-state inflation rate, directly shaping the economic incentives for validators, miners, and stakers. Well-designed emission schedules balance early bootstrapping of network security with long-term sustainability once adoption is established.
 
-- ### Relationships
-  - is-subclass-of:: [[Blockchain Entity]], [[EconomicMechanism]]
+### Relationships
 
-- ### Content
+The emission schedule **hasPart** [[Block Reward]] (the per-block issuance amount) and [[Halving]] (the programmatic event that reduces that reward). It **requires** [[Total Supply]] to be defined—either as a hard cap (Bitcoin's 21 million) or an unbounded inflationary target—and depends on a functioning [[Consensus Mechanism]] to deliver rewards to eligible participants. It **enables** [[Incentive Alignment]] by ensuring validators/miners are compensated during network bootstrapping, and sustains [[Validator Node]] participation throughout the schedule. The concept is **relatedTo** [[Inflation]] (the annualised issuance rate), [[Deflationary Token]] (supply-decreasing variants that burn tokens), [[Monetary Policy Implementation]] (the broader economic intent), [[Tokenomics]] (the wider economic design), and [[Circulating Supply]] (the running total of all issued tokens minus burns).
 
-  ## Class Declaration
-  Declaration(Class(:EmissionSchedule))
+### Content
 
-  ## Subclass Relationships
-  SubClassOf(:EmissionSchedule :EconomicMechanism)
-  SubClassOf(:EmissionSchedule :BlockchainEntity)
+Emission schedules vary dramatically across blockchain architectures. Bitcoin employs a disinflationary schedule with a fixed 21 million cap: block rewards began at 50 BTC and halve every 210,000 blocks (~4 years), trending asymptotically toward zero. This creates predictable supply scarcity but demands that transaction fees eventually substitute for block rewards. Ethereum's post-Merge schedule is determined dynamically by staking participation: more validators dilute per-validator rewards while the absolute issuance is offset by EIP-1559 fee burning, potentially making ETH net-deflationary during high-demand periods.
 
-  ## Essential Properties
-  SubClassOf(:EmissionSchedule
-    (ObjectSomeValuesFrom :partOf :Blockchain))
+The emission schedule is one of the most consequential parameters in tokenomics design. A too-rapid initial emission floods the market and suppresses price, undermining early staker returns and incentive alignment. Too-slow an emission may fail to attract sufficient hash power or stake to secure the network during its vulnerable early phase. Many DeFi protocols adopt a front-loaded schedule—high initial liquidity mining rewards to bootstrap pools—followed by a long tail of declining emissions that transition the protocol toward fee revenue.
 
-  SubClassOf(:EmissionSchedule
-    (ObjectSomeValuesFrom :hasProperty :Property))
-
-  ## Data Properties
-  DataPropertyAssertion(:hasIdentifier :EmissionSchedule "BC-0113"^^xsd:string)
-  DataPropertyAssertion(:hasAuthorityScore :EmissionSchedule "1.0"^^xsd:decimal)
-  DataPropertyAssertion(:isFoundational :EmissionSchedule "true"^^xsd:boolean)
-
-  ## Object Properties
-  ObjectPropertyAssertion(:enablesFeature :EmissionSchedule :BlockchainFeature)
-  ObjectPropertyAssertion(:relatesTo :EmissionSchedule :RelatedConcept)
-
-  ## Annotations
-  AnnotationAssertion(rdfs:label :EmissionSchedule "Emission Schedule"@en)
-  AnnotationAssertion(rdfs:comment :EmissionSchedule
-    "Token issuance timeline"@en)
-  AnnotationAssertion(dct:description :EmissionSchedule
-    "Foundational blockchain concept with formal ontological definition"@en)
-  AnnotationAssertion(:termID :EmissionSchedule "BC-0113")
-  AnnotationAssertion(:priority :EmissionSchedule "1"^^xsd:integer)
-  AnnotationAssertion(:category :EmissionSchedule "economic-incentive"@en)
-  )
-      ```
-
-  - ## About Emission Schedule
-
-  - Token issuance timeline within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
-  - ### Key Characteristics
-    - 1. **Definitional Property**: Core defining characteristic
-    - 2. **Functional Property**: Operational behavior
-    - 3. **Structural Property**: Compositional elements
-    - 4. **Security Property**: Security guarantees provided
-    - 5. **Performance Property**: Efficiency considerations
-  - ### Technical Components
-    - **Implementation**: How concept is realized technically
-    - **Verification**: Methods for validating correctness
-    - **Interaction**: Relationships with other components
-    - **Constraints**: Technical limitations and requirements
-  - ### Use Cases
-    - **1. Core Blockchain Operation**
-    - **Application**: Fundamental blockchain functionality
-    - **Example**: Practical implementation in major blockchains
-    - **Requirements**: Technical prerequisites
-    - **Benefits**: Value provided to blockchain systems
-  - ### Standards & References
-    - [[ISO/IEC 23257:2021]] - Blockchain and distributed ledger technologies
-    - [[IEEE 2418.1]] - Blockchain and distributed ledger technologies
-    - [[NIST NISTIR]] - Blockchain and distributed ledger technologies
-
-
-
-  <!-- Merged from BC 0113 emission schedule.md: MetaverseDomain -->
-
-
-  <!-- Merged from Emission Schedule.md: Blockchain, Tokenomics -->
+Governance plays an increasing role: some protocols (e.g., Compound, Aave) allow token holder votes to adjust emission rates in response to market conditions, blurring the line between immutable protocol rules and adaptive monetary policy. Analysing emission schedules requires modelling the interaction between issuance rate, circulating supply, token velocity, market demand, and staking participation to assess long-run viability.
 
 - ### Provenance
   - sources:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]

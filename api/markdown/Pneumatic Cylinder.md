@@ -46,7 +46,7 @@ public:: true
   "@id": "urn:ngm:class:pneumatic-cylinder",
   "@type": "Class",
   "label": "Pneumatic Cylinder",
-  "definition": "Pneumatic cylinder uses compressed air to produce linear motion.",
+  "definition": "A pneumatic cylinder is a mechanical actuator that converts compressed air pressure into linear mechanical force and motion, producing strokes from a few millimetres to over a metre. Pneumatic cylinders are widely used in industrial robotics, material handling, and assembly systems because of their high force-to-weight ratio, fast response, and inherent compliance compared to hydraulic counterparts.",
   "domain": "robotics",
   "maturity": "established",
   "subClassOf": [
@@ -59,7 +59,27 @@ public:: true
       "label": "Pneumatic Actuator"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:hydraulic-cylinder", "label": "Hydraulic Cylinder"},
+      {"@id": "urn:ngm:class:electric-linear-actuator", "label": "Electric Linear Actuator"},
+      {"@id": "urn:ngm:class:pneumatic-motor", "label": "Pneumatic Motor"},
+      {"@id": "urn:ngm:class:pressure-sensor", "label": "Pressure Sensor"},
+      {"@id": "urn:ngm:class:robot-joint", "label": "Robot Joint"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:actuator", "label": "Actuator"},
+      {"@id": "urn:ngm:class:mechanical-component", "label": "Mechanical Component"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:end-effector", "label": "End Effector"},
+      {"@id": "urn:ngm:class:manipulator", "label": "Manipulator"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:robo-actuation-and-control", "label": "Actuation and Control"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

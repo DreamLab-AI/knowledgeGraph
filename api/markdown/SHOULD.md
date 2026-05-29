@@ -33,15 +33,28 @@ public:: true
   "@id": "urn:ngm:class:should",
   "@type": "Class",
   "label": "SHOULD",
-  "definition": "SHOULD is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "SHOULD is an RFC 2119 normative keyword indicating that a particular behaviour or implementation choice is strongly recommended but not absolutely required. In specification and standards documents, SHOULD implies that valid reasons may exist in particular circumstances to deviate from the stated guidance, but the implementer must understand the implications and weigh the trade-offs carefully before choosing a different course. It contrasts with MUST (mandatory) and MAY (optional).",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:interoperability-standard", "label": "Interoperability Standard"},
+      {"@id": "urn:ngm:class:standards-conformance", "label": "Standards Conformance"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:compliance-standards", "label": "Compliance Standards"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:standards-conformance-testing", "label": "Standards Conformance Testing"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -72,17 +85,19 @@ public:: true
 
 
 - ### Definition
-  - SHOULD is a concept within the ngm domain.
+  - SHOULD is an RFC 2119 normative keyword indicating that a particular behaviour or implementation choice is strongly recommended but not absolutely required. Valid reasons may exist in particular circumstances to deviate from the guidance, but the implementer must understand the implications and weigh trade-offs carefully. It contrasts with MUST (mandatory) and MAY (optional), and is essential vocabulary in specifications governing interoperability, security, and conformance.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:SHOULD
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **relatedTo**: Interoperability Standard, Standards Conformance
+  - **uses**: Compliance Standards
+  - **contrastsWith**: Standards Conformance Testing
 
 - ### Content
-  SHOULD — content pending enrichment.
+  SHOULD is the RFC 2119 recommendation-level normative keyword used in IETF, W3C, and related technical specifications to signal that an implementation ought to follow guidance unless specific circumstances justify deviation.
 
 - ### Provenance
   - sources::

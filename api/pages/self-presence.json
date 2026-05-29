@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:self-presence",
   "domain": "distributed-collaboration",
-  "definition": "Subjective experience of embodiment and self-location in a mediated environment, feeling that one's virtual representation is an extension of oneself.",
+  "definition": "The subjective sense that one's virtual or avatar representation in a mediated environment is a genuine extension of the physical self \u2014 encompassing body ownership, proprioceptive coherence, and self-location within virtual space. Self presence is a component of overall presence and a prerequisite for authentic immersive collaboration, as it governs how naturally users interact with and move through shared virtual environments.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:dc-telepresence",
@@ -17,21 +17,82 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.75,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      },
+      {
+        "id": "urn:ngm:class:digital-avatar",
+        "label": "Digital Avatar"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:telepresence",
+        "label": "Telepresence"
+      },
+      {
+        "id": "urn:ngm:class:embodied-ai",
+        "label": "Embodied AI"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      },
+      {
+        "id": "urn:ngm:class:hand-tracking",
+        "label": "Hand Tracking"
+      },
+      {
+        "id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:presence",
+        "label": "Presence"
+      },
+      {
+        "id": "urn:ngm:class:immersion",
+        "label": "Immersion"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:social-presence",
+        "label": "Social Presence"
+      },
+      {
+        "id": "urn:ngm:class:spatial-presence",
+        "label": "Spatial Presence"
+      },
+      {
+        "id": "urn:ngm:class:virtual-presence",
+        "label": "Virtual Presence"
+      },
+      {
+        "id": "urn:ngm:class:emotional-immersion",
+        "label": "Emotional Immersion"
+      },
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      }
+    ]
   },
   "wikilinks": [
     {

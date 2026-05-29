@@ -92,7 +92,8 @@ public:: true
   "label": "Post Hoc Explanation",
   "definition": "Interpretability techniques applied after a machine learning model has been trained, providing explanations for model behaviour and predictions without modifying the model's architecture or requiring retraining.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
@@ -103,7 +104,22 @@ public:: true
       "label": "Explainability"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"},
+      {"@id": "urn:ngm:class:human-oversight", "label": "Human Oversight"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:intrinsic-interpretability", "label": "Intrinsic Interpretability"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
+      {"@id": "urn:ngm:class:model-interpretability", "label": "Model Interpretability"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:fairness-metrics", "label": "Fairness Metrics"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -207,7 +223,10 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **enables**: Explainable AI, Human Oversight — post-hoc methods produce the explanations that make black-box model decisions auditable by human overseers.
+  - **contrastsWith**: Intrinsic Interpretability — intrinsically interpretable models (decision trees, linear models) are transparent by design, whereas post-hoc methods retrofit transparency onto opaque models.
+  - **supports**: AI Governance, Model Interpretability — explanation outputs provide the evidence trail required by AI governance frameworks and interpretability research.
+  - **uses**: Fairness Metrics — post-hoc explanations are often used to interrogate model outputs for disparate treatment across groups, feeding fairness assessments.
 
 - ### Content
   - Interpretability techniques applied after a machine learning model has been trained, providing explanations for model behaviour and predictions without modifying the model's architecture or requiring retraining.

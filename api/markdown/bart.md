@@ -7,7 +7,10 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses:: [[Transformer Architecture]], [[Attention Mask]]
+  - contrastsWith:: [[ALBERT]], [[RoBERTa]]
+  - enables:: [[Natural Language Processing]], [[Fine Tuning]]
+  - relatedTo:: [[Large Language Models]]
 
 - ### Content
   - Bidirectional and Auto-Regressive Transformers: a denoising autoencoder for pre-training sequence-to-sequence models, combining bidirectional encoding (like BERT) with autoregressive decoding (like GPT).

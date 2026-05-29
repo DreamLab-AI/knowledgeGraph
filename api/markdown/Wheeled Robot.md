@@ -42,15 +42,28 @@ public:: true
   "@id": "urn:ngm:class:wheeled-robot",
   "@type": "Class",
   "label": "Wheeled Robot",
-  "definition": "Wheeled Robot is a type of Robotics in the robotics domain.",
+  "definition": "A Wheeled Robot is a mobile robot platform that uses wheels as its primary locomotion mechanism. Wheeled robots offer high energy efficiency and speed on flat terrain, making them dominant in warehouse automation, last-mile delivery, and research platforms. Differential drive, omnidirectional, and car-like Ackermann steering configurations each present distinct kinematic constraints that influence navigation algorithm design.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-robot-type",
       "label": "Robot Type"
     }
   ],
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:mobile-robot", "label": "Mobile Robot"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:odometry", "label": "Odometry"},
+      {"@id": "urn:ngm:class:navigation", "label": "Navigation"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:robot-operating-system", "label": "Robot Operating System"},
+      {"@id": "urn:ngm:class:slam", "label": "SLAM"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -87,14 +100,18 @@ public:: true
 
 
 - ### Definition
-  - Wheeled Robot is a concept within the robotics domain. Further enrichment pending.
+  - A Wheeled Robot is a mobile robot platform that uses wheels as its primary locomotion mechanism. Wheeled robots offer high energy efficiency and speed on flat terrain, making them dominant in warehouse automation, last-mile delivery, and research platforms. Differential drive, omnidirectional, and car-like Ackermann steering configurations each present distinct kinematic constraints that influence navigation algorithm design.
 
 - ### Semantic Classification
   - owl-class:: robotics:WheeledRobot
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - partOf [[Mobile Robot]]
+  - requires [[Odometry]]
+  - requires [[Navigation]]
+  - uses [[Robot Operating System]]
+  - uses [[SLAM]]
 
 - ### Content
 

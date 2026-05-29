@@ -1,12 +1,15 @@
 - ### Definition
-  - PostProcessing is a concept within the ngm domain.
+  - A set of screen-space image processing effects applied after the primary rendering pass to enhance visual fidelity. Common effects include bloom, motion blur, depth of field, tone mapping, colour grading, ambient occlusion, and anti-aliasing, all executed as full-screen shader passes over the rendered framebuffer before presentation.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:PostProcessing
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Requires: [[Shader]], [[Rendering Technique]]
+  - Uses: [[Rasterization]]
+  - Supports: [[Visual Effects]]
+  - Related To: [[Ray Tracing]]
 
 - ### Content
   # PostProcessing

@@ -46,7 +46,7 @@ public:: true
   "@id": "urn:ngm:class:proof-of-history",
   "@type": "Class",
   "label": "Proof of History",
-  "definition": "A cryptographic mechanism that timestamps transactions to establish a historical record, enabling validators to process transactions in parallel for high throughput. Creates verifiable passage of time between events without requiring nodes to trust each other.",
+  "definition": "Proof of History is a cryptographic clock mechanism that timestamps transactions using a sequential, verifiable delay function (SHA-256 hash chain), establishing a tamper-evident historical record. This allows Solana validators to process transactions in parallel without requiring round-trip consensus on ordering, dramatically increasing throughput.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -59,7 +59,25 @@ public:: true
       "label": "Proof-Based Consensus"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:proof-based-consensus", "label": "Proof-Based Consensus"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"},
+      {"@id": "urn:ngm:class:validator-node", "label": "Validator Node"},
+      {"@id": "urn:ngm:class:transaction-finality", "label": "Transaction Finality"},
+      {"@id": "urn:ngm:class:blockchain-scalability", "label": "Blockchain Scalability"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:deterministic-finality", "label": "Deterministic Finality"},
+      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -67,6 +85,8 @@ public:: true
   }
 }
 ```
+
+Proof of History was introduced by Anatoly Yakovenko as the ordering layer underpinning Solana. By encoding time directly into the ledger as a verifiable sequence of hashes, PoH decouples transaction ordering from leader voting, allowing each validator to independently verify the timeline without waiting for network-wide agreement before processing. It is used in combination with Tower BFT (a PoS variant) rather than as a standalone consensus mechanism.
 
 ```json-ld
 {

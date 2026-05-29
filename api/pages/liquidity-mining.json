@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:liquidity-mining",
   "domain": "blockchain",
-  "definition": "Liquidity mining is a DeFi incentive mechanism in which users earn protocol-issued tokens as rewards for providing liquidity to decentralised exchanges or lending pools.",
+  "definition": "Liquidity mining is a decentralised finance incentive mechanism in which participants deposit token pairs into automated market maker pools or lending protocols and receive protocol-issued tokens as rewards proportional to their share of pooled liquidity. The reward tokens often confer governance rights and a share of trading fee revenue, creating compounding yield incentives. Liquidity mining bootstraps network liquidity for nascent protocols but introduces impermanent loss risk and token inflation dynamics that require careful mechanism design.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-defi-and-economics",
@@ -14,11 +14,29 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:yield-farming",
+        "label": "Yield Farming"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-exchange",
+        "label": "Decentralized Exchange"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +45,16 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:zk-starks",
   "@type": "Class",
   "label": "ZK-STARKs",
-  "definition": "Zero-Knowledge Scalable Transparent Arguments of Knowledge - a cryptographic proof system that enables verification of computations without revealing underlying data, featuring transparency through no trusted setup requirement, quantum resistance, and efficient scalability for large witness sizes...",
+  "definition": "Zero-Knowledge Scalable Transparent Arguments of Knowledge: a cryptographic proof system enabling verification of computations without revealing underlying data. Unlike ZK-SNARKs, STARKs require no trusted setup, are conjectured to be quantum-resistant, and scale efficiently for large witness sizes, making them foundational for Layer 2 blockchain rollups and privacy-preserving computation.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
@@ -64,6 +65,42 @@ public:: true
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:privacy-preserving-blockchain",
+        "label": "Privacy Preserving Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:censorship-resistance",
+        "label": "Censorship Resistance"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ]
   }
 }
 ```
@@ -109,6 +146,12 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Zero Knowledge Proof]]
+  - Part Of [[Zero-Knowledge Proof]]
+  - Enables [[Privacy Preserving Blockchain]]
+  - Enables [[Blockchain Scalability]]
+  - Uses [[Elliptic Curve Cryptography]]
+  - Contrasts With [[Smart Contracts]]
+  - Related To [[Censorship Resistance]]
 
 - ### Content
 

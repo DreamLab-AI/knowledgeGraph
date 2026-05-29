@@ -42,15 +42,29 @@ public:: true
   "@id": "urn:ngm:class:training",
   "@type": "Class",
   "label": "Training",
-  "definition": "Training is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "Training is the supervised or self-supervised process of iteratively adjusting the parameters of a machine learning model to minimise a loss function over a labelled or unlabelled dataset. It encompasses forward passes, backpropagation, gradient descent optimisation, and regularisation techniques such as dropout and weight decay. The output of training is a fitted model whose learned weights encode patterns from the training data, ready for inference on unseen inputs.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
+      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:inference", "label": "Inference"},
+      {"@id": "urn:ngm:class:machine-learning-model", "label": "Machine Learning Model"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"},
+      {"@id": "urn:ngm:class:regularisation", "label": "Regularisation"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -95,7 +109,12 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Training Data]]
+  - requires [[Gradient Descent]]
+  - enables [[Inference]]
+  - enables [[Machine Learning Model]]
+  - uses [[Backpropagation]]
+  - uses [[Regularisation]]
 
 - ### Content
   - ### Primary Definition

@@ -42,9 +42,9 @@ public:: true
   "@id": "urn:ngm:class:rb-0065-visual-servoing",
   "@type": "Class",
   "label": "rb 0065 visual servoing",
-  "definition": "visual servoing is a robotics and autonomous systems concept and a type of Feedback Control.",
+  "definition": "Visual servoing is a robot control technique that uses real-time visual feedback from a camera to regulate the motion of a robot toward a goal configuration. Image-based visual servoing (IBVS) minimises an image-feature error directly, while position-based visual servoing (PBVS) reconstructs 3-D pose from vision before computing Cartesian control signals. The approach is widely used in manipulation, assembly, and tracking tasks where precise end-effector placement relative to a visually perceived target is required.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-perception",
@@ -55,7 +55,23 @@ public:: true
       "label": "Feedback Control"
     }
   ],
-  "quality": 0.5,
+  "qualityScore": 0.7,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:rb-0068-vision-system", "label": "rb 0068 vision system"},
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
+      {"@id": "urn:ngm:class:feature-extraction", "label": "Feature Extraction"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:rb-0047-feedback-control", "label": "rb 0047 feedback control"},
+      {"@id": "urn:ngm:class:rb-0030-jacobian-matrix", "label": "rb 0030 jacobian matrix"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:rb-0064-computed-torque-control", "label": "rb 0064 computed torque control"},
+      {"@id": "urn:ngm:class:object-detection", "label": "Object Detection"},
+      {"@id": "urn:ngm:class:pose-estimation", "label": "Pose Estimation"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -91,7 +107,7 @@ public:: true
 
 
 - ### Definition
-  - ### Primary Definition
+  - **Visual Servoing** is a robot control technique that closes the feedback loop using real-time camera imagery. Image-based visual servoing (IBVS) drives image-feature errors to zero directly, while position-based visual servoing (PBVS) estimates 3-D target pose from vision before computing Cartesian control signals. The Jacobian image matrix maps camera-space errors to joint velocities, enabling precise end-effector placement relative to visually perceived targets in manipulation, assembly, and tracking.
 
 - ### Semantic Classification
   - owl-class:: robotics:rb0065visualservoing
@@ -99,7 +115,9 @@ public:: true
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses:: rb 0068 vision system, Computer Vision, Feature Extraction
+  - requires:: rb 0047 feedback control, rb 0030 jacobian matrix
+  - relatedTo:: rb 0064 computed torque control, Object Detection, Pose Estimation
 
 - ### Content
   - ### Primary Definition

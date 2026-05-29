@@ -50,16 +50,45 @@ public:: true
   "@id": "urn:ngm:class:newcastle-ai-and-health-innovation",
   "@type": "Class",
   "label": "Newcastle AI & Health Innovation",
-  "definition": "Newcastle's technology ecosystem centred on artificial intelligence and health innovation, anchored by research institutions and the Great North Snowdome.",
+  "definition": "Newcastle AI and Health Innovation is the regional technology ecosystem in North East England centred on the application of artificial intelligence to healthcare, life sciences, and digital health, anchored by Newcastle University, Northumbria University, and innovation institutions including the National Innovation Centre for Data and the National Innovation Centre for Ageing. The ecosystem combines academic research, NHS partnerships, and private sector investment to accelerate AI-driven health technology from discovery through to clinical and commercial deployment.",
   "domain": "artificial-intelligence",
   "maturity": "established",
+  "qualityScore": 0.8,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-application",
       "label": "AI Application"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:healthcare-ai", "label": "Healthcare AI"},
+      {"@id": "urn:ngm:class:medical-ai", "label": "Medical AI"},
+      {"@id": "urn:ngm:class:clinical-decision-support", "label": "Clinical Decision Support"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:healthcare-technology", "label": "Healthcare Technology"},
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
+      {"@id": "urn:ngm:class:healthcare-analytics", "label": "Healthcare Analytics"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:ai-applications", "label": "AI Applications"},
+      {"@id": "urn:ngm:class:healthcare-records", "label": "Healthcare Records"},
+      {"@id": "urn:ngm:class:clinical-trials", "label": "Clinical Trials"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:north-england-innovation-corridor", "label": "North England Innovation Corridor"},
+      {"@id": "urn:ngm:class:uk-tech-ecosystem", "label": "UK Tech Ecosystem"},
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:predictive-analytics", "label": "Predictive Analytics"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:ai-monitoring", "label": "AI Monitoring"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -105,7 +134,7 @@ public:: true
 
 
 - ### Definition
-  - Newcastle's technology ecosystem centred on artificial intelligence and health innovation, anchored by research institutions and the Great North Snowdome.
+  Newcastle AI and Health Innovation is the regional technology ecosystem in North East England centred on the application of artificial intelligence to healthcare, life sciences, and digital health, anchored by Newcastle University, Northumbria University, and innovation institutions including the National Innovation Centre for Data and the National Innovation Centre for Ageing. The ecosystem combines academic research, NHS partnerships, and private sector investment to accelerate AI-driven health technology from discovery through to clinical and commercial deployment.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:NewcastleAIAndHealthInnovation
@@ -113,7 +142,12 @@ public:: true
   - belongs-to-domain:: [[UK Tech Ecosystem]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart:: [[Healthcare AI]], [[Medical AI]], [[Clinical Decision Support]]
+  - requires:: [[Healthcare Technology]], [[Artificial Intelligence]], [[Healthcare Analytics]]
+  - enables:: [[AI Applications]], [[Healthcare Records]], [[Clinical Trials]]
+  - relatedTo:: [[North England Innovation Corridor]], [[UK Tech Ecosystem]], [[AI Governance]]
+  - supports:: [[Machine Learning]], [[Predictive Analytics]]
+  - bridgesTo:: [[AI Monitoring]]
 
 - ### Content
 

@@ -1,5 +1,5 @@
 - ### Definition
-  - Autonomy Level is a concept within the bc domain.
+  - A graded classification (typically 0–5) quantifying the degree to which an agent perceives, decides, and acts without human intervention, ranging from fully manual operation through conditional autonomy to full self-governance, with domain-specific scales for AI agents, robotics, blockchain DAOs, and multi-agent systems.
 
 - ### Semantic Classification
   - owl-class:: blockchain:AutonomyLevel
@@ -7,6 +7,11 @@
 
 - ### Relationships
   - is-subclass-of:: [[Blockchain]]
+  - hasPart:: [[Agent]]
+  - requires:: [[Human in the Loop]], [[Safety]]
+  - enables:: [[AI Agent System]], [[BDI Model]]
+  - standardizedBy:: [[EU AI Act]]
+  - relatedTo:: [[Goal]], [[Objective]]
 
 - ### Content
 

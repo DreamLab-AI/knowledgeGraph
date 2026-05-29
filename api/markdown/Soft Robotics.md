@@ -120,13 +120,27 @@ public:: true
   "label": "Soft Robotics",
   "definition": "Robotics discipline employing compliant, flexible materials enabling safe human interaction and adaptation to unstructured environments, with applications across surgical robotics, food handling automation, wearable assistive devices, and collaborative manufacturing—advancing through bio-inspired...",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-robot-type",
       "label": "Robot Type"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:physics-engine", "label": "Physics Engine"},
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:simulation", "label": "Simulation"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:teleoperation", "label": "Teleoperation"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
+      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"}
+    ]
+  },
   "quality": 0.4,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -266,7 +280,12 @@ public:: true
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses [[Physics Engine]]
+  - uses [[Machine Learning]]
+  - uses [[Simulation]]
+  - enables [[Teleoperation]]
+  - relatedTo [[Reinforcement Learning]]
+  - relatedTo [[Haptic Feedback]]
 
 - ### Content
   - Robotics discipline employing compliant, flexible materials enabling safe human interaction and adaptation to unstructured environments. Applications span surgical robotics, food handling automation, wearable assistive devices, and collaborative manufacturing, advancing through bio-inspired design, soft actuation, and machine learning control. Soft robotics enables robots to handle delicate objects without damage whilst providing inherent safety in close human collaboration environments, complementing rigid industrial robots.

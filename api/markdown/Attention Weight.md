@@ -46,7 +46,7 @@ public:: true
   "@id": "urn:ngm:class:attention-weight",
   "@type": "Class",
   "label": "Attention Weight",
-  "definition": "Weights computed by attention mechanisms.",
+  "definition": "A scalar coefficient produced by an attention mechanism that quantifies the relevance of one position (key/value) to another (query) in a sequence or across modalities. Attention weights are computed via a softmax over scaled dot-products of query and key vectors, and govern how much each value contributes to the output representation. They are the core computational primitive of Transformer-based models.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -55,7 +55,26 @@ public:: true
       "label": "AI Model Architecture"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},
+      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:self-attention", "label": "Self Attention"},
+      {"@id": "urn:ngm:class:multi-head-attention", "label": "Multi-Head Attention"},
+      {"@id": "urn:ngm:class:cross-attention", "label": "Cross Attention"},
+      {"@id": "urn:ngm:class:query-key-value", "label": "Query Key Value"},
+      {"@id": "urn:ngm:class:positional-encoding", "label": "Positional Encoding"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:transformer", "label": "Transformer"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

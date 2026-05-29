@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:environmental-verification",
   "domain": "spatial-computing",
-  "definition": "Environmental Verification is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "The process of validating that a physical or virtual environment meets defined safety, compliance, or operational standards before allowing XR interactions to proceed. Encompasses spatial boundary checks, hazard detection, and cross-referencing environment state against authoritative registries to ensure user safety and regulatory compliance.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-governance-and-safety",
@@ -13,21 +13,53 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:environmental-registry",
+        "label": "Environmental Registry"
+      },
+      {
+        "id": "urn:ngm:class:verification-standard",
+        "label": "Verification Standard"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:optical-tracking",
+        "label": "Optical Tracking"
+      },
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:xr-runtime-environment",
+        "label": "XR Runtime Environment"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:calibration-tools",
+        "label": "Calibration Tools"
+      }
+    ]
   },
   "wikilinks": [
     {

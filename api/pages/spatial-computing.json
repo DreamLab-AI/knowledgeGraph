@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:spatial-computing",
   "domain": "spatial-computing",
-  "definition": "Spatial Computing is a spatial computing concept and a type of owl:Thing.",
+  "definition": "Spatial Computing is the convergence of augmented reality, virtual reality, and mixed reality with physical-world sensing to create persistent spatial layers in which digital content is anchored to real-world locations and objects. Core capabilities include SLAM-based spatial mapping, depth sensing, object recognition, and spatial anchoring. Spatial Computing underpins immersive experiences in manufacturing, healthcare, retail, education, and navigation by enabling seamless interaction between physical and digital spaces.",
   "subClassOf": [
     {
       "id": "owl:Thing",
@@ -14,11 +14,38 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],

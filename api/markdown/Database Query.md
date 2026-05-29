@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:database-query",
   "@type": "Class",
   "label": "Database Query",
-  "definition": "Database Query is a type of Data Management in the infrastructure domain.",
+  "definition": "A structured request submitted to a database management system to retrieve, insert, update, or delete data according to defined criteria. Queries are expressed in formal query languages such as SQL for relational databases or SPARQL for RDF triple stores, and underpin knowledge graph retrieval, analytics pipelines, and real-time application data access.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-data-management",
@@ -59,11 +60,48 @@ public:: true
       "label": "Data Management"
     }
   ],
-  "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      },
+      {
+        "@id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      }
+    ]
   }
 }
 ```
@@ -100,23 +138,26 @@ public:: true
 
 
 - ### Definition
-  - Database Query is a concept within the metaverse domain. Further enrichment pending.
+  - A structured request submitted to a database management system to retrieve, insert, update, or delete data according to defined criteria. Queries are expressed in formal query languages such as SQL for relational databases or SPARQL for RDF triple stores, and underpin knowledge graph retrieval, analytics pipelines, and real-time application data access.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:DatabaseQuery
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses [[SPARQL]]
+  - Uses [[REST API]]
+  - Part Of [[Data Management]]
+  - Enables [[Knowledge Graph]]
+  - Enables [[Linked Data]]
+  - Related To [[RDF]]
+  - Related To [[Semantic Web]]
 
 - ### Content
 
   ## Overview
 
-  Database Query represents an abstract concept in the metaverse ontology hierarchy.
-
-  #### Related Concepts
-  - [[owl:Thing]]
+  Database queries are the primary mechanism for extracting structured information from persistent stores. In knowledge graph contexts, SPARQL queries traverse RDF triple patterns to answer complex relational questions. In metaverse and XR platforms, low-latency query execution is critical for real-time asset retrieval, spatial indexing, and user state synchronisation.
 
 - ### Provenance
   - bridges-to:: [[Blockchain]] (bc)

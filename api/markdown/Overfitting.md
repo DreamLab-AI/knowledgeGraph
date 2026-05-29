@@ -42,9 +42,10 @@ public:: true
   "@id": "urn:ngm:class:overfitting",
   "@type": "Class",
   "label": "Overfitting",
-  "definition": "Overfitting is a artificial intelligence concept and a type of Machine Learning.",
+  "definition": "Overfitting is a phenomenon in machine learning where a model learns the training data too precisely—including noise and spurious correlations—resulting in poor generalisation to unseen data. It corresponds to high variance and low bias in the bias-variance tradeoff, and is mitigated through regularisation, dropout, early stopping, and data augmentation.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
@@ -60,6 +61,38 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:underfitting",
+        "label": "Underfitting"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:dropout",
+        "label": "Dropout"
+      },
+      {
+        "@id": "urn:ngm:class:model-capacity",
+        "label": "Model Capacity"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ]
   }
 }
 ```
@@ -97,7 +130,12 @@ public:: true
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Contrasts With [[Underfitting]]
+  - Requires [[Training Data]]
+  - Requires [[Model Training]]
+  - Related To [[Dropout]]
+  - Related To [[Model Capacity]]
+  - Related To [[Deep Learning]]
 - ### Content
   - ### Primary Definition
   **Overfitting** is a phenomenon where a model learns training data too well, including noise and artefacts, resulting in poor generalisation to new data. Overfitted models perform well on training data but poorly on test data.

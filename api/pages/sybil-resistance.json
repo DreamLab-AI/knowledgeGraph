@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:sybil-resistance",
   "domain": "blockchain",
-  "definition": "Sybil resistance is the ability of a distributed network to withstand attacks in which a single adversary creates multiple fake identities to subvert reputation or consensus mechanisms.",
+  "definition": "Sybil resistance is the property of a distributed network that limits the influence any single adversary can exert by creating multiple pseudonymous or fake identities. It is a foundational security requirement for decentralised systems where participation rights, voting power, or reputation depend on identity uniqueness. Mechanisms achieving sybil resistance include proof-of-work, proof-of-stake, and humanity attestation schemes such as biometric or social vouching protocols.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-protocol-and-consensus",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:sybil-attack",
+        "label": "Sybil Attack"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:humanity-attestation",
+        "label": "Humanity Attestation"
+      },
+      {
+        "id": "urn:ngm:class:reputation-system",
+        "label": "Reputation System"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

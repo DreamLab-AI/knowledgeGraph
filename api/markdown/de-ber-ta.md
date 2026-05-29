@@ -7,7 +7,10 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **implements**: Transformer, Language Modeling (DeBERTa is a disentangled-attention transformer pre-trained with masked language modelling)
+  - **uses**: Model Training, Training Data (pre-training requires large corpora and supervised fine-tuning)
+  - **enables**: Natural Language Understanding, Natural Language Processing (downstream task performance the architecture unlocks)
+  - **contrastsWith**: Large Language Models (DeBERTa occupies a distinct encoder-only niche versus autoregressive LLMs)
 
 - ### Content
   - Decoding-enhanced BERT with Disentangled Attention: an improved BERT architecture that uses disentangled attention (separating content and position) and an enhanced mask decoder for better performance.

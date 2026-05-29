@@ -1,5 +1,5 @@
 - ### Definition
-  - Computing Platform is a concept within the metaverse domain. Further enrichment pending.
+  - A computing platform is a hardware and software environment that provides the foundational execution context for applications, services, and AI workloads. It encompasses the combination of processor architecture, operating system, runtime libraries, and supporting infrastructure—such as cloud, edge, or on-premises nodes—that determines what software can run and how it performs.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:ComputingPlatform
@@ -7,6 +7,13 @@
 
 - ### Relationships
   - bridges-to:: [[Computer Vision]]
+  - Requires [[Hardware]]
+  - Requires [[Operating System]]
+  - Enables [[AI Infrastructure]]
+  - Enables [[Distributed Computing]]
+  - Has part [[GPU Compute]]
+  - Has part [[Middleware]]
+  - Related to [[Edge Computing]]
 
 - ### Content
 

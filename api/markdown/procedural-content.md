@@ -1,12 +1,14 @@
 - ### Definition
-  - ProceduralContent is a concept within the ngm domain.
+  - Digital content—terrain, architecture, textures, narrative events, or game levels—generated algorithmically from rules and random seeds rather than authored by hand. Procedural content enables scalable world-building in metaverse and gaming contexts by producing combinatorially vast, non-repetitive environments at runtime whilst reducing manual asset creation effort.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:ProceduralContent
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses [[Procedural Generation]], [[Algorithm]]
+  - Enables [[Procedural Content Generation]], [[Adaptive Virtual World]]
+  - Related to [[Game Engine]], [[3D Asset]], [[Metaverse Content Pipeline]]
 
 - ### Content
   # ProceduralContent

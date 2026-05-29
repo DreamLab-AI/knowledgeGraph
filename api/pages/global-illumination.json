@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:global-illumination",
   "domain": "spatial-computing",
-  "definition": "Global Illumination is a spatial computing concept and a type of Metaverse.",
+  "definition": "Global Illumination (GI) is a rendering approach that simulates all light interactions within a scene, including both direct illumination from light sources and indirect illumination from light bouncing between surfaces. Techniques range from offline radiosity and photon mapping to real-time approximations such as voxel cone tracing, screen-space ambient occlusion, and hardware-accelerated ray tracing, producing physically plausible colour bleeding, soft shadows, and caustics.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-display-and-rendering",
@@ -18,16 +18,39 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      },
+      {
+        "id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:rasterization",
+        "label": "Rasterization"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:compute-shader",
+        "label": "Compute Shader"
+      },
+      {
+        "id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

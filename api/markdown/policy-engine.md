@@ -1,5 +1,5 @@
 - ### Definition
-  - automated component that applies governance or access-control rules within a metaverse system.
+  - A Policy Engine is an automated software component that evaluates, enforces, and logs governance, access-control, and behavioural rules within a metaverse or spatial computing system. It interprets declarative policy specifications and applies them at runtime to user actions, asset transactions, and inter-platform communications, enabling consistent compliance across distributed virtual environments.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:PolicyEngine
@@ -7,7 +7,12 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - implements [[Access Control]]
+  - implements [[Policy Enforcement]]
+  - requires [[Technical Standards]]
+  - requires [[Authentication]]
+  - supports [[Metaverse governance and safeguarding]]
+  - supports [[Compliance Framework]]
 
 - ### Content
   - automated component that applies governance or access-control rules within a metaverse system.

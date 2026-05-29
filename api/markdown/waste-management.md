@@ -7,7 +7,12 @@
   - belongs-to-domain:: [[BlockchainDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses [[Smart Contract]]
+  - Uses [[Blockchain]]
+  - Supports [[Circular Economy]]
+  - Supports [[Environmental Sustainability]]
+  - Related To [[Environmental Accounting]]
+  - Related To [[Blockchain Sustainability]]
 
 - ### Content
   - Blockchain-enabled waste tracking, recycling verification, and circular economy systems addressing the global waste crisis of 2+ billion tonnes annually. These platforms provide immutable verification of waste collection, processing, recycling rates, and material recovery whilst enabling incentive mechanisms for responsible waste behaviour. Major implementations include Plastic Bank's blockchain-verified ocean plastic collection tracking 100+ million kg recovered, RecycleGO's smart bin networks across 45+ cities rewarding recycling participation, IBM's waste-to-energy verification systems, and the Empower platform's pay-as-you-throw tokenisation reducing household waste by 35-45%. These solutions support circular economy transitions, plastic credit markets, e-waste traceability, and zero waste certification programmes across municipalities, corporations, and supply chains.

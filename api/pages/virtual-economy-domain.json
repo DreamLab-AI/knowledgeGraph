@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:virtual-economy-domain",
   "domain": "spatial-computing",
-  "definition": "The conceptual and technical framework encompassing all economic activities within metaverse environments, including NFT marketplaces, virtual real estate trading, digital goods commerce, cryptocurrency transactions, and tokenized asset exchanges that operate through blockchain-verified ownership...",
+  "definition": "The conceptual and technical framework encompassing all economic activities within metaverse environments, including NFT marketplaces, virtual real estate trading, digital goods commerce, cryptocurrency transactions, and tokenised asset exchanges that operate through blockchain-verified ownership and smart contract automation.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -18,16 +18,56 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:nft-marketplace",
+        "label": "NFT Marketplace"
+      },
+      {
+        "id": "urn:ngm:class:creator-economy",
+        "label": "Creator Economy"
+      },
+      {
+        "id": "urn:ngm:class:virtual-currency",
+        "label": "Virtual Currency"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:play-to-earn-p2-e",
+        "label": "Play-to-Earn (P2E)"
+      },
+      {
+        "id": "urn:ngm:class:digital-marketplace",
+        "label": "Digital Marketplace"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:tokenization",
+        "label": "Tokenization"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

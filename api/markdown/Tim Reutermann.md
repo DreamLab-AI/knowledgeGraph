@@ -33,16 +33,27 @@ public:: true
   "@id": "urn:ngm:class:tim-reutermann",
   "@type": "Class",
   "label": "Tim Reutermann",
-  "definition": "Tim Reutermann is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Tim Reutermann is a writer and technologist whose work synthesises cypherpunk philosophy, decentralised governance models, and AI-driven economic paradigm shifts. He advocates liquid democracy, universal basic income, and open-source systems as mechanisms for aligning economic incentives with social goods in the face of automation-driven disruption.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:cypherpunk", "label": "cypherpunk"},
+      {"@id": "urn:ngm:class:dao-governance", "label": "DAO Governance"},
+      {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -72,14 +83,15 @@ public:: true
 
 
 - ### Definition
-  - Tim Reutermann is a concept within the ngm domain.
+  Tim Reutermann is a writer and technologist whose work synthesises cypherpunk philosophy, decentralised governance models, and AI-driven economic paradigm shifts. He advocates liquid democracy, universal basic income, and open-source systems as mechanisms for aligning economic incentives with social goods in the face of automation-driven disruption.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:TimReutermann
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **relatedTo**: cypherpunk, DAO Governance, Blockchain Governance
+  - **supports**: Decentralised Identity, AI Governance
 
 - ### Content
   - #Public page automatically published

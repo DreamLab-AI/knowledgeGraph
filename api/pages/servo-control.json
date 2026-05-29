@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:servo-control",
   "domain": "robotics",
-  "definition": "Servo Control is a type of Robotics in the robotics domain.",
+  "definition": "Servo Control is a closed-loop control methodology that uses feedback signals \u2014 typically from encoders or resolvers \u2014 to precisely regulate the position, velocity, or torque of an actuator. A servo controller computes the error between a desired setpoint and the measured output, then drives a servo motor or hydraulic actuator to minimise that error, making servo control foundational to high-precision robotic joint control, CNC machining, and collaborative robot safety systems.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
@@ -13,21 +13,53 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:closed-loop-control",
+        "label": "Closed-Loop Control"
+      },
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:motion-control",
+        "label": "Motion Control"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      },
+      {
+        "id": "urn:ngm:class:pid-controller",
+        "label": "Pid Controller"
+      },
+      {
+        "id": "urn:ngm:class:servo-motor",
+        "label": "Servo Motor"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:safety-plc",
+        "label": "Safety PLC"
+      }
+    ]
   },
   "wikilinks": [
     {

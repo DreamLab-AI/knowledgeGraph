@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:synthetic-media",
   "domain": "infrastructure",
-  "definition": "Synthetic Media is a foundational concept in infrastructure that serves as a classification parent for 3 related concepts in the ontology.",
+  "definition": "Synthetic Media encompasses digitally generated or algorithmically manipulated audio, video, image, and text content produced by AI systems including generative adversarial networks, diffusion models, and large language models. It includes deepfakes, AI-generated video, voice cloning, and text-to-image outputs. Synthetic media raises significant concerns around misinformation, identity fraud, and content authenticity, driving the development of detection techniques and disclosure standards.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
@@ -14,20 +14,51 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.3,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:deepfakes",
+        "label": "Deepfakes"
+      },
+      {
+        "id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:video-generation",
+        "label": "Video Generation"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      },
+      {
+        "id": "urn:ngm:class:ai-generated-content-disclosure",
+        "label": "AI-Generated Content Disclosure"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

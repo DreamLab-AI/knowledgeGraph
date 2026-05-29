@@ -48,7 +48,8 @@ public:: true
   "label": "Virtual Clinic",
   "definition": "A telemedicine platform that enables clinicians to provide health services by connecting with patients through virtual means, offering remote consultations, diagnosis, treatment recommendations, and follow-up care using HIPAA-compliant video and digital communication technologies.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -59,11 +60,46 @@ public:: true
       "label": "Virtual Environment"
     }
   ],
-  "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:virtual-reality-applications",
+        "label": "Virtual Reality Applications"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:healthcare-technology",
+        "label": "Healthcare Technology"
+      },
+      {
+        "@id": "urn:ngm:class:healthcare-records",
+        "label": "Healthcare Records"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:healthcare-ai",
+        "label": "Healthcare AI"
+      },
+      {
+        "@id": "urn:ngm:class:etsi-domain-application-health",
+        "label": "ETSI Domain Application + Health"
+      },
+      {
+        "@id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
+    ]
   }
 }
 ```
@@ -109,6 +145,13 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Virtual Environment]]
+  - Requires: [[Virtual Reality Applications]]
+  - Requires: [[Access Control]]
+  - Uses: [[Healthcare Technology]]
+  - Uses: [[Healthcare Records]]
+  - Related To: [[Healthcare AI]]
+  - Related To: [[ETSI Domain Application + Health]]
+  - Related To: [[Privacy]]
 
 - ### Content
 

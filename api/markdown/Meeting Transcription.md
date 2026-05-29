@@ -46,7 +46,7 @@ public:: true
   "@id": "urn:ngm:class:meeting-transcription",
   "@type": "Class",
   "label": "Meeting Transcription",
-  "definition": "Meeting Transcription is a artificial intelligence concept and a type of Speech Recognition.",
+  "definition": "The automated conversion of spoken dialogue in synchronous or asynchronous meetings into structured text, combining automatic speech recognition with speaker diarisation, punctuation restoration, and optionally action-item extraction. AI-powered meeting transcription systems enable searchable records, accessibility, and downstream summarisation workflows.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -59,7 +59,22 @@ public:: true
       "label": "Speech Recognition"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:automatic-speech-recognition", "label": "Automatic Speech Recognition"},
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:audio-processing-system", "label": "Audio Processing System"},
+      {"@id": "urn:ngm:class:audio-technology", "label": "Audio Technology"},
+      {"@id": "urn:ngm:class:speech-recognition", "label": "Speech Recognition"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:documentation-generation", "label": "Documentation Generation"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -111,7 +126,9 @@ public:: true
   - is-subclass-of:: [[Speech Recognition]]
 
 - ### Content
-  Meeting Transcription — content pending enrichment.
+  Meeting transcription systems combine automatic speech recognition (ASR) with speaker diarisation to produce speaker-attributed transcripts of multi-party conversations. Modern ASR engines based on transformer architectures (e.g., Whisper) achieve near-human word error rates in clean acoustic conditions, while diarisation clusters audio segments by speaker identity using voice embeddings.
+
+  Post-processing stages add punctuation restoration, paragraph segmentation, and optionally named-entity extraction, sentiment analysis, and action-item detection powered by large language models. The resulting structured transcript supports downstream use cases including meeting summaries, searchable knowledge archives, accessibility compliance, and CRM integration, making meeting transcription a foundational enterprise AI application.
 
 - ### Provenance
   - sources:: Chimera Prime Research

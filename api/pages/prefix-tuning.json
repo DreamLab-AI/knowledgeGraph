@@ -4,29 +4,57 @@
   "slug": "prefix-tuning",
   "public": true,
   "classIri": "urn:ngm:class:prefix-tuning",
-  "domain": "spatial-computing",
-  "definition": "A parameter-efficient fine-tuning technique that prepends trainable continuous vectors (prefixes) to the key and value matrices at each transformer layer, whilst keeping the pre-trained model parameters frozen.",
+  "domain": "artificial-intelligence",
+  "definition": "A parameter-efficient fine-tuning technique that prepends trainable continuous vectors (prefixes) to the key and value matrices at each transformer layer, whilst keeping the pre-trained model parameters frozen. Unlike prompt tuning, which operates only on input embeddings, prefix tuning influences the attention mechanism at every layer, achieving stronger task-specific adaptation with roughly 0.1% of model parameters.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:sc-content-and-assets",
-      "label": "Content and Assets"
+      "id": "urn:ngm:class:parameter-efficient-fine-tuning",
+      "label": "Parameter-Efficient Fine-Tuning"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:prompt-tuning",
+        "label": "Prompt Tuning"
+      },
+      {
+        "id": "urn:ngm:class:adapter-modules",
+        "label": "Adapter Modules"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:parameter-efficient-fine-tuning",
+        "label": "Parameter-Efficient Fine-Tuning"
+      }
+    ],
     "relatedTo": []
   },
   "wikilinks": [

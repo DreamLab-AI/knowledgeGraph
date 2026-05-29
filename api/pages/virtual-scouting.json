@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:virtual-scouting",
   "domain": "spatial-computing",
-  "definition": "The process of exploring and evaluating potential filming locations or virtual production environments using digital tools, VR headsets, 360-degree cameras, and game engines, enabling filmmakers to navigate through locations remotely, compose shots, set up scene blocking, and make creative decisi...",
+  "definition": "The process of exploring and evaluating potential filming locations or virtual production environments using digital tools \u2014 VR headsets, 360-degree cameras, LiDAR, and game engines \u2014 enabling directors and cinematographers to navigate locations remotely, compose shots, analyse lighting, and make blocking decisions without physical travel. Tools within Unreal Engine provide measurement, interaction, and real-time world-building capabilities compatible with major VR headsets, substantially reducing pre-production travel costs and carbon footprint.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -17,20 +17,56 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:virtual-production-workflow",
+        "label": "Virtual Production Workflow"
+      },
+      {
+        "id": "urn:ngm:class:virtual-production",
+        "label": "Virtual Production"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "id": "urn:ngm:class:virtual-camera",
+        "label": "Virtual Camera"
+      },
+      {
+        "id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:pre-production",
+        "label": "Pre Production"
+      }
+    ],
     "relatedTo": []
   },
   "wikilinks": [

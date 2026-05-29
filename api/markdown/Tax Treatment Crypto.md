@@ -106,7 +106,7 @@ public:: true
   "@id": "urn:ngm:class:tax-treatment-crypto",
   "@type": "Class",
   "label": "Tax Treatment Crypto",
-  "definition": "The application of domestic and international taxation principles, regulations, and compliance frameworks to transactions involving cryptocurrency and digital assets, encompassing capital gains taxation income taxation value-added tax and goods-and-services tax treatment (e), whilst purchases of ...",
+  "definition": "The application of domestic and international taxation principles, regulations, and compliance frameworks to transactions involving cryptocurrency and digital assets, encompassing capital gains taxation, income taxation, value-added tax treatment, and reporting obligations under frameworks such as HMRC guidance, IRS Notice 2014-21, and the OECD Crypto-Asset Reporting Framework.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -119,7 +119,24 @@ public:: true
       "label": "Blockchain Compliance"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"},
+      {"@id": "urn:ngm:class:cryptocurrency", "label": "Cryptocurrency"},
+      {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"},
+      {"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"},
+      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
+      {"@id": "urn:ngm:class:anti-money-laundering", "label": "Anti-Money Laundering"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"},
+      {"@id": "urn:ngm:class:compliance-monitoring", "label": "Compliance Monitoring"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:regulatory-framework", "label": "Regulatory Framework"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

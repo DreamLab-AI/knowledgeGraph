@@ -46,16 +46,32 @@ public:: true
   "@id": "urn:ngm:class:velocity",
   "@type": "Class",
   "label": "Velocity",
-  "definition": "Velocity - Rate of change of position",
+  "definition": "Velocity is the vector quantity expressing rate of change of position with respect to time, formally defined as v = dx/dt. In robotics and autonomous systems, it is a fundamental parameter governing motion planning, collision avoidance, and control, with algorithms such as Velocity Obstacle (VO) and Reciprocal Velocity Obstacle (RVO) built directly upon it.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-actuation-and-control",
       "label": "Actuation and Control"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
+      {"@id": "urn:ngm:class:control-system", "label": "Control System"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:collision-avoidance", "label": "Collision Avoidance"},
+      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:physics-simulation", "label": "Physics Simulation"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:robotics-control", "label": "Robotics Control"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -96,7 +112,7 @@ public:: true
 
 
 - ### Definition
-  - **Velocity** - Rate of change of position
+  - **Velocity** is the vector quantity expressing rate of change of position with respect to time (v = dx/dt). In robotics and autonomous systems, it is a fundamental parameter governing motion planning, collision avoidance, and control. Algorithms such as Velocity Obstacle (VO) and Reciprocal Velocity Obstacle (RVO) are built directly upon velocity representations to enable safe multi-agent navigation.
 
 - ### Semantic Classification
   - owl-class:: robotics:Velocity
@@ -105,6 +121,10 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Robotics]]
+  - **requires**: [[Sensor Fusion]], [[Control System]] — velocity measurement depends on fusion of inertial and optical sensor data and is consumed by closed-loop controllers
+  - **enables**: [[Collision Avoidance]], [[Motion Planning]] — velocity fields are the basis for VO/RVO collision-avoidance and trajectory generation
+  - **uses**: [[Physics Simulation]] — velocity is a primary state variable in physics engines and dynamic simulations
+  - **relatedTo**: [[Robotics Control]] — velocity setpoints are the primary command interface for most robot actuators
 
 - ### Content
   - ### Original Content

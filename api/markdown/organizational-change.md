@@ -1,12 +1,16 @@
 - ### Definition
-  - OrganizationalChange is a concept within the ngm domain.
+  - Organizational Change is the deliberate process of transforming an organisation's structures, workflows, cultural norms, and operational paradigms. In technology contexts this encompasses adoption of immersive collaboration tools, distributed team models, and AI-augmented workflows, requiring sustained stakeholder engagement and iterative change management strategies.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:OrganizationalChange
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Requires [[Governance]]
+  - Enables [[Distributed Work]]
+  - Contrasts With [[Enterprise Architecture]]
+  - Related To [[AI Governance]]
+  - Related To [[Collaboration Platform]]
 
 - ### Content
   # OrganizationalChange

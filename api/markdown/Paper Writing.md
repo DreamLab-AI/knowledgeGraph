@@ -33,16 +33,29 @@ public:: true
   "@id": "urn:ngm:class:paper-writing",
   "@type": "Class",
   "label": "Paper Writing",
-  "definition": "Paper Writing is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "The structured process of composing and submitting scholarly manuscripts, including literature review, argument construction, citation management, and formatting to venue-specific standards. In AI-adjacent contexts, paper writing increasingly involves AI-assisted drafting, ontology-grounded claims, and tool-augmented workflows (LaTeX, reference managers, large language models) that must be balanced against academic integrity requirements.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
+      {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
+      {"@id": "urn:ngm:class:version-control", "label": "Version Control"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -72,14 +85,16 @@ public:: true
 
 
 - ### Definition
-  - Paper Writing is a concept within the ngm domain.
+  - The structured process of composing and submitting scholarly manuscripts, including literature review, argument construction, citation management, and formatting to venue-specific standards. In AI-adjacent contexts, paper writing increasingly involves AI-assisted drafting, ontology-grounded claims, and tool-augmented workflows (LaTeX, reference managers, large language models) that must be balanced against academic integrity requirements.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:PaperWriting
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: Natural Language Processing, Ontology, Version Control — NLP tools assist drafting and proofreading; ontologies provide controlled vocabularies for claims; version control tracks manuscript revisions collaboratively.
+  - **enables**: Knowledge Graph — systematic paper writing can feed structured claims into knowledge graphs as citable edges.
+  - **relatedTo**: Large Language Models — LLMs are increasingly used as co-writing and paraphrasing tools in academic contexts.
 
 - ### Content
   # Conference presentation

@@ -5,10 +5,10 @@
   "public": true,
   "classIri": "urn:ngm:class:computational-component",
   "domain": "artificial-intelligence",
-  "definition": "Computational Component is a artificial intelligence concept and a type of Component.",
+  "definition": "A Computational Component is a modular, well-defined unit of an AI or software system that encapsulates specific processing logic \u2014 such as a neural network layer, a feature extraction module, or an inference engine \u2014 and interacts with other components through defined interfaces. Computational components abstract implementation details from consumers, enabling composition into larger pipelines and substitution of equivalent implementations without modifying the surrounding system. They are the primary unit of reuse, testing, and deployment in AI infrastructure, ranging from low-level hardware accelerator kernels to high-level model serving endpoints.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure (Category)"
     },
     {
@@ -17,21 +17,91 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:neural-network-layer",
+        "label": "Neural Network Layer"
+      },
+      {
+        "id": "urn:ngm:class:algorithm",
+        "label": "Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:module",
+        "label": "Module"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:computational-resources",
+        "label": "Computational Resources"
+      },
+      {
+        "id": "urn:ngm:class:interface",
+        "label": "Interface"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
+      },
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      },
+      {
+        "id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ai-system-component",
+        "label": "AI System Component"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-pipeline",
+        "label": "Machine Learning Pipeline"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:neural-network-component",
+        "label": "Neural Network Component"
+      },
+      {
+        "id": "urn:ngm:class:model-architecture",
+        "label": "Model Architecture"
+      },
+      {
+        "id": "urn:ngm:class:software-architecture",
+        "label": "Software Architecture"
+      },
+      {
+        "id": "urn:ngm:class:middleware",
+        "label": "Middleware"
+      }
+    ]
   },
   "wikilinks": [
     {

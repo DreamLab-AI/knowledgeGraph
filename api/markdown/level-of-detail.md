@@ -1,12 +1,17 @@
 - ### Definition
-  - Level of Detail is a concept within the mv domain.
+  - Level of Detail (LOD) is a rendering optimisation technique that dynamically adjusts the geometric complexity, texture resolution, and shader fidelity of 3D objects based on viewing distance or screen-space coverage, trading visual precision for computational efficiency. LOD is essential for maintaining real-time frame rates in large-scale metaverse and spatial computing scenes.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:LevelOfDetail
   - owl-role:: Concept
 
 - ### Relationships
-  - is-subclass-of:: [[Metaverse]]
+  - Supports [[Performance Optimization]] as a primary real-time rendering mechanism
+  - Uses [[Rasterization]] as the underlying rendering primitive
+  - Uses [[Shader]] with simplified programs at lower LOD levels
+  - Related to [[Occlusion Culling]] (complementary draw-call reduction technique)
+  - Related to [[Rendering Pipeline]] within which LOD switching occurs
+  - Requires [[3D Asset]] provided at multiple polygon resolutions
 
 - ### Content
 

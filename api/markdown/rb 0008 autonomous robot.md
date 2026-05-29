@@ -42,20 +42,40 @@ public:: true
   "@id": "urn:ngm:class:rb-0008-autonomous-robot",
   "@type": "Class",
   "label": "rb 0008 autonomous robot",
-  "definition": "autonomous robot is a robotics and autonomous systems concept and a type of robotics.",
+  "definition": "An autonomous robot is a robotic system capable of performing tasks in unstructured environments without continuous human intervention, relying on onboard sensing, perception, decision-making, and actuation. Autonomy spans a spectrum from simple programmed responses to full cognitive agency; key enabling technologies include SLAM, path planning, machine learning-based perception, and safety-certified control architectures.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-robot-type",
       "label": "Robot Type"
     }
   ],
-  "quality": 0.5,
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:autonomous-system", "label": "Autonomous System"},
+      {"@id": "urn:ngm:class:rb-0007-collaborative-robot", "label": "rb 0007 collaborative robot"},
+      {"@id": "urn:ngm:class:rb-0012-wheeled-mobile-robot", "label": "rb 0012 wheeled mobile robot"},
+      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:slam", "label": "SLAM"},
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:rb-0049-motion-planning", "label": "rb 0049 motion planning"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:perception-system", "label": "Perception System"},
+      {"@id": "urn:ngm:class:rb-0089-risk-assessment", "label": "rb 0089 risk assessment"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:rb-0096-safeguarding", "label": "rb 0096 safeguarding"}
+    ]
   }
 }
 ```

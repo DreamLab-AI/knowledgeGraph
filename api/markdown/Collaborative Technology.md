@@ -46,15 +46,32 @@ public:: true
   "@id": "urn:ngm:class:collaborative-technology",
   "@type": "Class",
   "label": "Collaborative Technology",
-  "definition": "Collaborative Technology is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Collaborative Technology encompasses the hardware, software, protocols, and infrastructure components that enable distributed teams to work together effectively across time and space. This includes real-time media processing, synchronisation protocols, edge computing for latency reduction, and zero-trust security models forming the technological substrate of telecollaboration.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
     }
   ],
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:telecollaboration", "label": "Telecollaboration"},
+      {"@id": "urn:ngm:class:video-conferencing", "label": "Video Conferencing"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"},
+      {"@id": "urn:ngm:class:communication-protocol", "label": "Communication Protocol"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:networking-infrastructure", "label": "Networking Infrastructure"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -96,14 +113,17 @@ public:: true
 
 
 - ### Definition
-  - CollaborativeTechnology is a concept within the ngm domain.
+  - Collaborative Technology encompasses the hardware, software, protocols, and infrastructure components that enable distributed teams to work together effectively across time and space. This includes real-time media processing, synchronisation protocols, edge computing for latency reduction, and zero-trust security models forming the technological substrate of telecollaboration.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:CollaborativeTechnology
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - enables:: [[Telecollaboration]], [[Video Conferencing]]
+  - uses:: [[Network Protocol]], [[Communication Protocol]]
+  - supports:: [[Distributed Collaboration]]
+  - depends-on:: [[Networking Infrastructure]]
 
 - ### Content
 

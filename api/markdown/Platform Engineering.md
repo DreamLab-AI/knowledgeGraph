@@ -42,7 +42,7 @@ public:: true
   "@id": "urn:ngm:class:platform-engineering",
   "@type": "Class",
   "label": "Platform Engineering",
-  "definition": "Platform Engineering is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Platform Engineering is the discipline of designing, building, and operating internal developer platforms (IDPs) that abstract infrastructure complexity and provide self-service toolchains, automated CI/CD pipelines, and standardised operational workflows for software engineering teams. It treats the IDP as a product, applying product management techniques to improve developer experience and reduce cognitive load. Platform Engineering sits at the intersection of DevOps, site reliability engineering, and cloud-native infrastructure.",
   "domain": "spatial-computing",
   "maturity": "emerging",
   "subClassOf": [
@@ -51,11 +51,35 @@ public:: true
       "label": "Platform and Environment"
     }
   ],
-  "quality": 0.5,
+  "quality": 0.75,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:infrastructure-architecture", "label": "Infrastructure Architecture"},
+      {"@id": "urn:ngm:class:api-gateway", "label": "API Gateway"},
+      {"@id": "urn:ngm:class:version-control", "label": "Version Control"},
+      {"@id": "urn:ngm:class:orchestration", "label": "Orchestration"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:cloud-infrastructure", "label": "Cloud Infrastructure"},
+      {"@id": "urn:ngm:class:cloud-native-applications", "label": "Cloud-Native Applications"},
+      {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:software-engineering", "label": "Software Engineering"},
+      {"@id": "urn:ngm:class:digital-transformation", "label": "Digital Transformation"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:computing-platform", "label": "Computing Platform"},
+      {"@id": "urn:ngm:class:development-platform", "label": "Development Platform"},
+      {"@id": "urn:ngm:class:digital-infrastructure", "label": "Digital Infrastructure"},
+      {"@id": "urn:ngm:class:industry-cloud-platforms", "label": "Industry Cloud Platforms"},
+      {"@id": "urn:ngm:class:service-oriented-architecture", "label": "Service Oriented Architecture"}
+    ]
   }
 }
 ```

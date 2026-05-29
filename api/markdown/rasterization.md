@@ -1,10 +1,14 @@
 - ### Definition
-  - Rasterization is a concept within the mv domain.
+  - The dominant real-time rendering technique that converts 3D geometric primitives — predominantly triangles — into a 2D pixel representation by determining per-pixel coverage, depth, and colour through a GPU-accelerated pipeline of vertex processing, primitive assembly, scan conversion, fragment shading, and output merging. Rasterization trades photorealistic accuracy for deterministic, high-throughput performance suitable for interactive applications.
 - ### Semantic Classification
   - owl-class:: spatial-computing:Rasterization
   - owl-role:: Concept
 - ### Relationships
   - is-subclass-of:: [[Metaverse]]
+  - Uses: [[Vertex Shader]], [[Pixel Shader]]
+  - Supports: [[Rendering Technique]], [[Post Processing]]
+  - Contrasts With: [[Ray Tracing]]
+  - Related To: [[Level of Detail]]
 - ### Content
   #### Key Characteristics
   - **Triangle-Based**: Processes geometry as discrete triangles

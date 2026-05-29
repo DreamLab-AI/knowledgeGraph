@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:parallel-processing",
   "domain": "infrastructure",
-  "definition": "Parallel Processing is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Parallel Processing is a computational paradigm in which multiple calculations or processes are executed simultaneously by dividing a problem into sub-tasks that run concurrently across multiple processor cores, GPUs, or distributed nodes. It underpins modern machine learning training, real-time rendering, and large-scale data pipelines.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
@@ -14,20 +14,44 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:computing-infrastructure",
+        "label": "Computing Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

@@ -8,6 +8,13 @@
 
 - ### Relationships
   - is-subclass-of:: [[Zero Knowledge Proof]]
+  - requires [[Cryptography]]
+  - requires [[Elliptic Curve Cryptography]]
+  - enables [[Privacy]]
+  - enables [[Confidential Computing]]
+  - relatedTo [[Blockchain]]
+  - relatedTo [[Homomorphic Encryption]]
+  - relatedTo [[Identity]]
 
 - ### Content
 

@@ -54,9 +54,9 @@ public:: true
   "@id": "urn:ngm:class:autoencoder",
   "@type": "Class",
   "label": "Autoencoder",
-  "definition": "Autoencoder is a artificial intelligence concept and a type of Deep Learning.",
+  "definition": "An Autoencoder is a neural network trained to reconstruct its input by learning a compressed latent representation. The encoder maps input data to a lower-dimensional latent space and the decoder reconstructs the original from this representation, minimising a reconstruction loss. Variants including variational autoencoders (VAEs), denoising autoencoders, and convolutional autoencoders extend this framework to generative modelling, anomaly detection, and feature extraction.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-model-architecture",
@@ -67,6 +67,21 @@ public:: true
       "label": "Deep Learning"
     }
   ],
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:anomaly-detection", "label": "Anomaly Detection"},
+      {"@id": "urn:ngm:class:dimensionality-reduction", "label": "Dimensionality Reduction"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:latent-space", "label": "latent space"},
+      {"@id": "urn:ngm:class:unsupervised-learning", "label": "Unsupervised Learning"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:variational-autoencoders", "label": "Variational Autoencoders"},
+      {"@id": "urn:ngm:class:generative-adversarial-network", "label": "Generative Adversarial Network"},
+      {"@id": "urn:ngm:class:feature-extraction", "label": "Feature Extraction"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -118,6 +133,8 @@ public:: true
 
 
 - ### Definition
+  - An Autoencoder is a neural network trained to reconstruct its input by learning a compressed latent representation. The encoder maps input to a lower-dimensional latent space; the decoder reconstructs the original from this representation. Variants including VAEs, denoising autoencoders, and convolutional autoencoders extend this to generative modelling, anomaly detection, and feature extraction.
+
   - ### Primary Definition
 
 - ### Semantic Classification
@@ -127,6 +144,13 @@ public:: true
 
 - ### Relationships
   - bridges-to:: [[Computer Vision]] (ai)
+  - enables [[Anomaly Detection]]
+  - enables [[Dimensionality Reduction]]
+  - uses [[latent space]]
+  - uses [[Unsupervised Learning]]
+  - relatedTo [[Variational Autoencoders]]
+  - relatedTo [[Generative Adversarial Network]]
+  - relatedTo [[Feature Extraction]]
 
 - ### Content
   - ### Primary Definition

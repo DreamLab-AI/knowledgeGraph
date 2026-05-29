@@ -1,12 +1,14 @@
 - ### Definition
-  - Tax is a concept within the ngm domain.
+  - Tax, in the context of this knowledge graph, refers to the statutory obligations imposed on individuals and legal entities — particularly limited companies — by HMRC and comparable revenue authorities, covering corporation tax on trading profits, self-assessment for personal income drawn as salary or dividends, and VAT registration thresholds. Compliance requires accurate bookkeeping, timely filing of CT600 returns, and annual accounts submission to Companies House.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:Tax
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires:: Accounts, Regulatory Compliance
+  - relatedTo:: Financial Regulation, Legal Compliance, Digital Tax Compliance Node
+  - standardizedBy:: Legal Framework
 
 - ### Content
   - Flossverse is a limited company in April last year and haven't earned enough to pay personal tax, but will owe 20% corporation tax. You're aware of the self-assessment deadline in late January 2024 and the business tax filing in April. You're seeking guidance on what you need to know and do regarding these tax obligations.

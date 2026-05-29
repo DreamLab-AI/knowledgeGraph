@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:text-summarisation",
   "domain": "spatial-computing",
-  "definition": "Text Summarisation is the NLP task of producing concise, coherent summaries that capture the essential information from longer documents or document collections.",
+  "definition": "Text summarisation is the NLP task of producing concise, coherent summaries that capture the essential information from longer documents or collections. Systems employ extractive methods (selecting key sentences) or abstractive methods (generating new text) using transformer architectures such as BART, PEGASUS, and T5, with applications spanning news aggregation, research synthesis, and document retrieval.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -17,21 +17,53 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:language-modeling",
+        "label": "Language Modeling"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:bart",
+        "label": "BART"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:text-generation",
+        "label": "Text Generation"
+      },
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      }
+    ]
   },
   "wikilinks": [
     {

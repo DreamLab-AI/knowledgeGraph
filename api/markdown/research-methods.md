@@ -1,12 +1,16 @@
 - ### Definition
-  - Research Methods is a concept within the metaverse domain. Further enrichment pending.
+  - Research Methods are the systematic procedures and techniques used to collect, analyse, and interpret data in order to generate reliable knowledge. They encompass qualitative approaches (interviews, ethnography), quantitative approaches (controlled experiments, statistical analysis), and mixed-methods designs, with evaluation benchmarks and user studies being particularly relevant to AI and spatial computing research.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:ResearchMethods
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Enables [[Evaluation benchmarks and leaderboards]]
+  - Uses [[User Research]]
+  - Related To [[AI Research Area]]
+  - Related To [[Clinical Trials]]
+  - Related To [[Data Augmentation Strategies]]
 
 - ### Content
 

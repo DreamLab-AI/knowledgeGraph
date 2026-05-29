@@ -50,15 +50,31 @@ public:: true
   "@id": "urn:ngm:class:blockchain-domain",
   "@type": "Class",
   "label": "Blockchain Domain",
-  "definition": "The BlockchainDomain represents the comprehensive knowledge domain of blockchain and distributed ledger technologies.",
+  "definition": "The Blockchain Domain is the comprehensive knowledge domain of blockchain and distributed ledger technologies, encompassing cryptographic primitives, consensus mechanisms, smart contracts, token economics, and decentralised applications. It serves as the parent classification for all blockchain-related ontological concepts, spanning foundational theory through enterprise deployments.",
   "domain": "blockchain",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-network-component",
       "label": "Network Component"
     }
   ],
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:consensus-domain", "label": "Consensus Domain"},
+      {"@id": "urn:ngm:class:cryptographic-domain", "label": "Cryptographic Domain"},
+      {"@id": "urn:ngm:class:blockchain-process", "label": "Blockchain Process"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:bc-cryptographic-primitive", "label": "Cryptographic Primitive"},
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:blockchain-application", "label": "Blockchain Application"},
+      {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -118,6 +134,9 @@ public:: true
 
 - ### Relationships
   - bridges-to:: [[Blockchain]]
+  - has-part:: [[Consensus Domain]], [[Cryptographic Domain]], [[Blockchain Process]]
+  - requires:: [[Cryptographic Primitive]], [[Consensus Mechanism]]
+  - enables:: [[Blockchain Application]], [[Blockchain Governance]]
 
 - ### Content
   - **Classification**

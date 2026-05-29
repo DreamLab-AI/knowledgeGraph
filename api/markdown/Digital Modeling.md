@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:digital-modeling",
   "@type": "Class",
   "label": "Digital Modeling",
-  "definition": "Digital Modeling is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Digital Modelling is the process of creating mathematical or geometric representations of physical objects, environments, or systems in a computer, encompassing polygonal mesh construction, NURBS surfaces, procedural generation, and scan-based reconstruction. Digital models serve as the foundation for real-time rendering, simulation, digital twin creation, and asset delivery in spatial computing platforms.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
@@ -60,6 +61,40 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:rendering-engine",
+        "label": "Rendering Engine"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      },
+      {
+        "@id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:procedural-content-generation",
+        "label": "Procedural Content Generation"
+      }
+    ]
   }
 }
 ```
@@ -96,7 +131,7 @@ public:: true
 
 
 - ### Definition
-  - Digital Modelling is a concept within the metaverse domain. Further enrichment pending.
+  - Digital Modelling is the process of creating mathematical or geometric representations of physical objects, environments, or systems in a computer, encompassing polygonal mesh construction, NURBS surfaces, procedural generation, and scan-based reconstruction. Digital models serve as the foundation for real-time rendering, simulation, digital twin creation, and asset delivery in spatial computing platforms.
 
 bridges-to:: [[Computer Vision]]
 
@@ -105,7 +140,12 @@ bridges-to:: [[Computer Vision]]
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Enables [[Digital Twin]]
+  - Enables [[Rendering Engine]]
+  - Uses [[Photogrammetry]]
+  - Uses [[Point Cloud]]
+  - Bridges To [[Computer Vision]]
+  - Related To [[Procedural Content Generation]]
 
 - ### Content
 

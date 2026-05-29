@@ -1,12 +1,17 @@
 - ### Definition
-  - Data Security is a concept within the metaverse domain. Further enrichment pending.
+  - Data security comprises the policies, controls, and technologies that protect digital information from unauthorised access, corruption, or theft throughout its lifecycle. It spans encryption at rest and in transit, access control mechanisms, identity verification, and governance frameworks that together ensure confidentiality, integrity, and availability of data assets.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:DataSecurity
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Requires [[Encryption]]
+  - Requires [[Access Control]]
+  - Supports [[Privacy]]
+  - Supports [[Data Governance]]
+  - Related to [[Cybersecurity]]
+  - Related to [[Information Security]]
 
 - ### Content
 

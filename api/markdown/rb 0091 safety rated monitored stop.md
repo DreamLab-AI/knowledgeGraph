@@ -42,9 +42,9 @@ public:: true
   "@id": "urn:ngm:class:rb-0091-safety-rated-monitored-stop",
   "@type": "Class",
   "label": "rb 0091 safety rated monitored stop",
-  "definition": "safety rated monitored stop is a robotics and autonomous systems concept and a type of Robot Safety.",
+  "definition": "A safety-rated monitored stop (SRMS) is a robot stopping function in which the robot halts motion while the control system continuously monitors joint positions to verify the robot remains stationary, without removing power to the actuators. Unlike an emergency stop, SRMS allows rapid resumption of operation when the hazardous condition clears, and is central to collaborative robot (cobot) safety architectures defined in ISO 10218 and ISO/TS 15066.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-safety-and-standards",
@@ -55,7 +55,26 @@ public:: true
       "label": "Robot Safety"
     }
   ],
-  "quality": 0.5,
+  "quality": 0.7,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:rb-0090-emergency-stop", "label": "rb 0090 emergency stop"},
+      {"@id": "urn:ngm:class:rb-0092-protective-stop", "label": "rb 0092 protective stop"},
+      {"@id": "urn:ngm:class:rb-0093-speed-limitation", "label": "rb 0093 speed limitation"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:rb-0089-risk-assessment", "label": "rb 0089 risk assessment"},
+      {"@id": "urn:ngm:class:rb-0054-position-control", "label": "rb 0054 position control"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:iso-10218", "label": "ISO 10218"},
+      {"@id": "urn:ngm:class:iso-ts-15066", "label": "ISO TS 15066"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"},
+      {"@id": "urn:ngm:class:rb-0096-safeguarding", "label": "rb 0096 safeguarding"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

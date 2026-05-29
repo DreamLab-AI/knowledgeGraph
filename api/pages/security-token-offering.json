@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:security-token-offering",
   "domain": "spatial-computing",
-  "definition": "Security Token Offering is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "A Security Token Offering (STO) is a regulated fundraising mechanism in which blockchain-based tokens representing ownership rights, revenue shares, or other financial entitlements are offered to investors under applicable securities law. Unlike utility token sales, STOs require issuer compliance with financial regulation, investor accreditation, and prospectus or exemption filings, bringing traditional capital market discipline to tokenised asset issuance.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -14,20 +14,51 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:security-token",
+        "label": "Security Token"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:asset-tokenization",
+        "label": "Asset Tokenization"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      }
+    ]
   },
   "wikilinks": [
     {

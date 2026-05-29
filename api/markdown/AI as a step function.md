@@ -38,15 +38,30 @@ public:: true
   "@id": "urn:ngm:class:ai-as-a-step-function",
   "@type": "Class",
   "label": "AI as a step function",
-  "definition": "AI as a step function is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "A conceptual framework positing that AI capability does not progress linearly but instead exhibits discontinuous threshold transitions—analogous to the mathematical step function—where accumulated incremental improvements trigger rapid, self-reinforcing shifts in capability order, akin to historical inflection points such as the Cambrian explosion or the printing press. The framework draws on self-organisation theory and feedback-loop dynamics to argue that AI represents the next major complexity transition in evolutionary and technological history.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-research-area",
       "label": "AI Research Area"
     }
   ],
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
+      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"},
+      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
+      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:ai-concept", "label": "AI Concept"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -83,14 +98,16 @@ public:: true
 
 
 - ### Definition
-  - AI as a step function is a concept within the ngm domain.
+  - A conceptual framework positing that AI capability exhibits discontinuous threshold transitions—analogous to the mathematical step function—where accumulated incremental improvements trigger rapid, self-reinforcing shifts in capability order, akin to historical inflection points such as the Cambrian explosion or the printing press. The framework draws on self-organisation theory and feedback-loop dynamics to argue that AI represents the next major complexity transition in evolutionary and technological history.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:AIAsAStepFunction
   - owl-role:: Concept
 
 - ### Relationships
-  - bridges-to:: [[AI Agent System]]
+  - relatedTo:: [[Artificial Intelligence]], [[AI Alignment]], [[Generative AI]]
+  - enables:: [[AI Safety]], [[Responsible AI]]
+  - supports:: [[AI Concept]]
 
 - ### Content
   - This is metaphysics, so take it or leave it.

@@ -66,15 +66,34 @@ public:: true
   "@id": "urn:ngm:class:agentic-alliance",
   "@type": "Class",
   "label": "Agentic Alliance",
-  "definition": "Agentic Alliance is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "An open collaborative initiative advancing decentralised agent frameworks that integrate Nostr relays for communication, Bitcoin Lightning for micropayments, distributed identity, and open data connectors to enable trustless, economically-incentivised multi-agent coordination without central intermediaries.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-application",
       "label": "AI Application"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:nostr-protocol", "label": "Nostr Protocol"},
+      {"@id": "urn:ngm:class:distributed-identity", "label": "Distributed Identity"},
+      {"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:agents", "label": "Agents"},
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"},
+      {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -146,7 +165,7 @@ public:: true
 
 
 - ### Definition
-  - Agentic Alliance is a concept within the ngm domain.
+  - An open collaborative initiative advancing decentralised agent frameworks that integrate Nostr relays, Bitcoin Lightning micropayments, distributed identity, and open data connectors to enable trustless, economically-incentivised multi-agent coordination.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:AgenticAlliance
@@ -154,6 +173,10 @@ public:: true
 
 - ### Relationships
   - bridges-to:: [[Blockchain]]
+  - uses:: [[Nostr Protocol]], [[Distributed Identity]], [[Distributed Computing]]
+  - hasPart:: [[Agents]], [[Smart Contract]]
+  - requires:: [[Blockchain]]
+  - relatedTo:: [[Agentic AI]], [[Distributed Ledger]]
 
 - ### Content
   - [[Projects]] with [[Melvin Carvalho]] for [[Agents]] [[Distributed Identity]] [[Distributed Computing]] [[Nostr protocol]] [[Bitcoin]]

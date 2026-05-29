@@ -54,7 +54,7 @@ public:: true
   "@id": "urn:ngm:class:documentation-generation",
   "@type": "Class",
   "label": "Documentation Generation",
-  "definition": "Documentation Generation is a artificial intelligence concept and a type of Generative Ai.",
+  "definition": "Documentation Generation is the automated production of human-readable technical documentation—API references, code comments, user guides, and release notes—using large language models and natural language generation pipelines. By coupling static analysis, code execution traces, and prompt engineering, these systems reduce the documentation burden on developers while improving consistency and coverage.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -67,7 +67,26 @@ public:: true
       "label": "Generative Ai"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
+      {"@id": "urn:ngm:class:text-generation", "label": "Text Generation"},
+      {"@id": "urn:ngm:class:code-generation", "label": "Code Generation"},
+      {"@id": "urn:ngm:class:transformer", "label": "Transformer"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:software-engineering", "label": "Software Engineering"},
+      {"@id": "urn:ngm:class:language-modeling", "label": "Language Modeling"},
+      {"@id": "urn:ngm:class:generative-ai", "label": "Generative Ai"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:ai-application", "label": "AI Application"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:ai-augmented-software-engineering", "label": "AI-Augmented Software Engineering"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

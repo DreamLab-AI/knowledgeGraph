@@ -1,12 +1,17 @@
 - ### Definition
-  - VirtualReality is a concept within the ngm domain.
+  - Virtual Reality (VR) is a fully immersive simulation technology that replaces the user's physical environment with a computer-generated three-dimensional world, experienced through head-mounted displays with stereoscopic rendering, spatial audio, and motion tracking.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:VirtualReality
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires:: [[Physics Simulation]]
+  - requires:: [[Haptic Feedback]]
+  - uses:: [[Game Engine]]
+  - uses:: [[3D Model]]
+  - relatedTo:: [[Augmented Reality]]
+  - relatedTo:: [[Metaverse]]
 
 - ### Content
 

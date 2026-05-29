@@ -33,16 +33,33 @@ public:: true
   "@id": "urn:ngm:class:property-schema",
   "@type": "Class",
   "label": "Property Schema",
-  "definition": "Property Schema is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A formal specification of the object properties, data properties, and annotation properties that relate classes within an ontology, including domain and range constraints, cardinality axioms, and logical characteristics such as transitivity and symmetry. Property schemas are the mechanism by which OWL2 ontologies encode typed, machine-readable relations between entities.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
+      {"@id": "urn:ngm:class:owl-class-hierarchy", "label": "OWL Class Hierarchy"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"},
+      {"@id": "urn:ngm:class:semantic-web", "label": "Semantic Web"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:rdf", "label": "RDF"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
+      {"@id": "urn:ngm:class:sparql", "label": "SPARQL"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -72,14 +89,20 @@ public:: true
 
 
 - ### Definition
-  - PropertySchema is a concept within the ngm domain.
+  - A formal specification of the object properties, data properties, and annotation properties that relate classes within an ontology, including domain and range constraints, cardinality axioms, and logical characteristics such as transitivity and symmetry. Property schemas are the mechanism by which OWL2 ontologies encode typed, machine-readable relations between entities.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:PropertySchema
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **partOf** [[Ontology]] — a property schema is a constitutive component of every formal ontology
+  - **partOf** [[OWL Class Hierarchy]] — property axioms are declared alongside and inter-relate OWL class hierarchies
+  - **implements** [[Linked Data]] — property schemas realise the typed predicates that link data nodes in RDF graphs
+  - **implements** [[Semantic Web]] — the semantic web depends on agreed property schemas to enable cross-ontology inference
+  - **standardizedBy** [[RDF]] — RDF provides the triple model within which property schemas are instantiated
+  - **enables** [[Knowledge Graph]] — knowledge graphs use property schemas to type and constrain their edges
+  - **enables** [[SPARQL]] — SPARQL queries exploit property schema declarations for pattern matching and inference
 
 - ### Content
   # Metaverse Ontology Property Schema

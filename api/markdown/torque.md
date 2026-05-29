@@ -1,5 +1,5 @@
 - ### Definition
-  - **Torque** - Rotational force about an axis
+  - Torque is the rotational analogue of force, defined as the cross product of the moment arm and the applied force vector (τ = r × F), measured in newton-metres. In robotics it governs joint actuation, grip force, and dynamic loading across mechanical transmissions, and is the primary physical quantity managed by torque-controlled servos and force-torque sensors during manipulation tasks.
 
 - ### Semantic Classification
   - owl-class:: robotics:Torque
@@ -8,6 +8,9 @@
 
 - ### Relationships
   - is-subclass-of:: [[Robotics]]
+  - **requires** → [[Actuator]], [[Force Torque Sensor]]
+  - **enables** → [[Motion Control]], [[Force Control]], [[Haptic Feedback]]
+  - **partOf** → [[Robot Kinematics]], [[Robot Joint]]
 
 - ### Content
   - ### Original Content

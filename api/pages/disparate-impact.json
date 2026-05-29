@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:disparate-impact",
   "domain": "artificial-intelligence",
-  "definition": "Disparate Impact is a legal doctrine and form of indirect discrimination that occurs when facially neutral policies, practices, or algorithmic systems disproportionately affect protected groups, regardless of intent to discriminate.",
+  "definition": "Disparate Impact is a legal doctrine and AI fairness concept denoting the condition where a facially neutral policy, practice, or algorithmic decision system produces outcomes that disproportionately disadvantage a legally protected group relative to a comparator group, regardless of discriminatory intent. Measured via the four-fifths rule or statistical significance tests, it is legally actionable in employment (US EEOC guidelines), lending, housing, and insurance, and is the analytical basis for algorithmic bias audits under the EU AI Act and GDPR. Remediation requires either demonstrating business necessity or adopting less discriminatory alternatives.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -17,21 +17,73 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:fairness-metrics",
+        "label": "Fairness Metrics"
+      },
+      {
+        "id": "urn:ngm:class:bias-detection-methods",
+        "label": "Bias Detection Methods"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:fairness-auditing-tools",
+        "label": "Fairness Auditing Tools"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:group-vs-individual-fairness",
+        "label": "Group vs Individual Fairness"
+      },
+      {
+        "id": "urn:ngm:class:fairness-accuracy-tradeoffs",
+        "label": "Fairness Accuracy Tradeoffs"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:algorithmic-bias",
+        "label": "Algorithmic Bias"
+      },
+      {
+        "id": "urn:ngm:class:harmful-bias",
+        "label": "Harmful Bias"
+      },
+      {
+        "id": "urn:ngm:class:bias-mitigation-techniques",
+        "label": "Bias Mitigation Techniques"
+      },
+      {
+        "id": "urn:ngm:class:diversity-non-discrimination-and-fairness",
+        "label": "Diversity, Non-Discrimination, and Fairness"
+      },
+      {
+        "id": "urn:ngm:class:intersectional-fairness",
+        "label": "Intersectional Fairness"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ]
   },
   "wikilinks": [
     {

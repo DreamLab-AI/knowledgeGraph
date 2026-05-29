@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:animation-technique",
   "domain": "spatial-computing",
-  "definition": "Animation Technique is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "An Animation Technique is a method or algorithm for generating the illusion of motion in digital content, encompassing keyframe interpolation, skeletal rigging, physics-based simulation, and procedural approaches. Animation techniques are fundamental to character representation, environmental dynamics, and interactive responsiveness in spatial computing environments.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -14,7 +14,7 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,11 +23,38 @@
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      },
+      {
+        "id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rendering-technique",
+        "label": "Rendering Technique"
+      },
+      {
+        "id": "urn:ngm:class:animation-retargeting",
+        "label": "Animation Retargeting"
+      },
+      {
+        "id": "urn:ngm:class:3-d-animation",
+        "label": "3D Animation"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -42,9 +42,10 @@ public:: true
   "@id": "urn:ngm:class:laser-scanner",
   "@type": "Class",
   "label": "Laser Scanner",
-  "definition": "Laser Scanner is a robotics and autonomous systems concept and a type of robotics.",
+  "definition": "A Laser Scanner is a sensor that emits laser pulses and measures the time-of-flight or phase-shift of the returned signal to compute precise distance measurements across a scene, generating dense point clouds. In robotics and spatial computing, laser scanners serve as primary perception instruments for environment mapping, obstacle detection, and the construction of digital twins via LiDAR-based SLAM pipelines.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-perception",
@@ -56,6 +57,38 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "@id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-mapping",
+        "label": "Spatial Mapping"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ]
   }
 }
 ```
@@ -95,7 +128,12 @@ public:: true
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Enables [[SLAM]]
+  - Enables [[Point Cloud]]
+  - Enables [[Spatial Mapping]]
+  - Uses [[Lidar]]
+  - Related To [[Photogrammetry]]
+  - Related To [[Sensor Fusion]]
 
 - ### Content
   - ### Primary Definition

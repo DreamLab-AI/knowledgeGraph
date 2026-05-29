@@ -44,7 +44,7 @@ public:: true
   "label": "PEGASUS",
   "definition": "Pre-training with Extracted Gap-sentences for Abstractive SUmmarization: a pre-training approach specifically designed for abstractive summarisation that masks and predicts entire sentences rather than individual tokens.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-model-architecture",
@@ -55,7 +55,21 @@ public:: true
       "label": "Natural Language Processing"
     }
   ],
-  "quality": 0.5,
+  "qualityScore": 0.7,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:transformers", "label": "Transformers"},
+      {"@id": "urn:ngm:class:encoder-decoder-architecture", "label": "Encoder Decoder Architecture"},
+      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:pre-training", "label": "Pre Training"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
+      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -97,7 +111,9 @@ public:: true
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses: [[Transformers]], [[Encoder Decoder Architecture]], [[Attention Mechanism]]
+  - requires: [[Pre Training]]
+  - enables: [[Natural Language Processing]], [[Fine Tuning]]
 - ### Content
   - Pre-training with Extracted Gap-sentences for Abstractive SUmmarization: a pre-training approach specifically designed for abstractive summarisation that masks and predicts entire sentences rather than individual tokens.
   ## Characteristics

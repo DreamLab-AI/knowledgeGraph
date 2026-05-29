@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:model-depth",
   "domain": "artificial-intelligence",
-  "definition": "The number of transformer layers (encoder and/or decoder) stacked in a model, determining the number of sequential transformations applied to representations.",
+  "definition": "The count of stacked transformer layers (encoder, decoder, or both) in a neural network, governing the number of sequential representation transformations. Greater depth enables more abstract hierarchical feature learning but increases training difficulty, requiring residual connections and layer normalisation to stabilise gradient flow.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -13,21 +13,53 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:residual-connection",
+        "label": "Residual Connection"
+      },
+      {
+        "id": "urn:ngm:class:layer-normalisation",
+        "label": "Layer Normalisation"
+      }
+    ],
     "enables": [],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:hyperparameter",
+        "label": "Hyperparameter"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:model-width",
+        "label": "Model Width"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:parameter-count",
+        "label": "Parameter Count"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ]
   },
   "wikilinks": [
     {

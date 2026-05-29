@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:treatment-planning-ai",
   "domain": "artificial-intelligence",
-  "definition": "Treatment Planning AI encompasses artificial intelligence systems that optimise therapeutic interventions through automated treatment selection, dosage optimisation, radiation therapy planning, surgical planning, and personalised care pathway design.",
+  "definition": "Artificial intelligence systems that optimise therapeutic interventions by integrating patient-specific clinical data, treatment guidelines, outcome predictions, and resource constraints to generate evidence-based, individualised care plans. Core capabilities include automated treatment protocol selection, dosage optimisation, radiotherapy dose distribution planning, surgical simulation, and adverse event risk stratification.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-application",
@@ -17,21 +17,53 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:healthcare-records",
+        "label": "Healthcare Records"
+      },
+      {
+        "id": "urn:ngm:class:medical-diagnosis-ai",
+        "label": "Medical Diagnosis AI"
+      }
+    ],
     "enables": [],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:drug-discovery-ai",
+        "label": "Drug Discovery AI"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:medical-ai",
+        "label": "Medical AI"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ]
   },
   "wikilinks": [
     {

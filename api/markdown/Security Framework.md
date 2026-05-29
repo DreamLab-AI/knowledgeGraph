@@ -37,15 +37,26 @@ public:: true
   "@id": "urn:ngm:class:security-framework",
   "@type": "Class",
   "label": "Security Framework",
-  "definition": "Security Framework is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A Security Framework is a structured set of policies, standards, controls, and procedures that an organisation applies to protect digital assets, infrastructure, and user data from threats. In metaverse and spatial-computing contexts, security frameworks address identity verification, access control, cryptographic integrity, DDoS mitigation, smart-contract auditing, and content-moderation pipelines operating at platform scale.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-security-and-identity",
       "label": "Security and Identity"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:authentication", "label": "Authentication"},
+      {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
+      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:privacy-preserving-technology", "label": "Privacy Preserving Technology"},
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -76,14 +87,18 @@ public:: true
 
 
 - ### Definition
-  - SecurityFramework is a concept within the ngm domain.
+  - A Security Framework is a structured set of policies, standards, controls, and procedures that an organisation applies to protect digital assets, infrastructure, and user data from threats. In metaverse and spatial-computing contexts, security frameworks address identity verification, access control, cryptographic integrity, DDoS mitigation, smart-contract auditing, and content-moderation pipelines operating at platform scale.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:SecurityFramework
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Authentication]]
+  - requires [[Access Control]]
+  - requires [[Cryptography]]
+  - supports [[Privacy Preserving Technology]]
+  - supports [[Data Governance]]
 
 - ### Content
   # SecurityFramework

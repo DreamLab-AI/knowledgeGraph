@@ -62,9 +62,10 @@ public:: true
   "@id": "urn:ngm:class:3-d-content-generation",
   "@type": "Class",
   "label": "3D Content Generation",
-  "definition": "3D Content Generation refers to the computational process of creating three-dimensional digital content through algorithmic and AI-driven mods.",
+  "definition": "The computational process of producing three-dimensional digital content through algorithmic and AI-driven methods, encompassing procedural generation, neural rendering, NeRF-based scene synthesis, and GAN-based 3D model creation. Applications span game development, virtual reality, digital twins, and automated CAD, enabling scalable production of photorealistic 3D assets from text or image inputs.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-application",
@@ -80,6 +81,42 @@ public:: true
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:neural-rendering",
+        "label": "Neural Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:procedural-generation",
+        "label": "Procedural Generation"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:3-d-asset",
+        "label": "3D Asset"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-animation",
+        "label": "3D Animation"
+      }
+    ]
   }
 }
 ```
@@ -145,6 +182,9 @@ public:: true
 - ### Relationships
   - is-subclass-of:: ['owl:Thing']
   - bridges-to:: [[Digital Asset]] (domain: mv), [[Autonomous Robot]] (domain: rb)
+  - Uses: [[Neural Rendering]], [[Procedural Generation]], [[Deep Learning]]
+  - Enables: [[Digital Asset]], [[Digital Twin]]
+  - Related To: [[3D Asset]], [[3D Animation]]
 
 - ### Content
 

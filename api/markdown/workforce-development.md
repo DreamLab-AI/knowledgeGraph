@@ -1,12 +1,17 @@
 - ### Definition
-  - Workforce Development is a concept within the metaverse domain. Further enrichment pending.
+  - Workforce development encompasses structured programmes, training environments, and skills-acquisition systems that equip individuals and organisations with the competencies required by evolving labour markets. In spatial computing contexts, it leverages immersive learning, simulation, and augmented connected workforce platforms to deliver scalable, experiential upskilling.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:WorkforceDevelopment
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses [[Immersive Learning]]
+  - Uses [[Simulation]]
+  - Enables [[Augmented Connected Workforce]]
+  - Enables [[Education Metaverse]]
+  - Depends on [[Education Technology]]
+  - Depends on [[Virtual Reality]]
 
 - ### Content
 

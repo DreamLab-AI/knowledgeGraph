@@ -1,12 +1,15 @@
 - ### Definition
-  - RenderingTechnique is a concept within the ngm domain.
+  - A specific algorithm or methodology for transforming a geometric scene description into a final pixel image, trading image quality against computational cost. Fundamental categories include rasterization for real-time performance, ray tracing for physically accurate light transport, and path tracing for unbiased global illumination, with hybrid and screen-space variants bridging these extremes.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:RenderingTechnique
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Has Part: [[Rasterization]], [[Ray Tracing]], [[Post Processing]]
+  - Uses: [[Shader]]
+  - Supports: [[Visual Effects]]
+  - Related To: [[Level of Detail]]
 
 - ### Content
   # RenderingTechnique

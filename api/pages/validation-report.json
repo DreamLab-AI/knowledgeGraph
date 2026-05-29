@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:validation-report",
   "domain": "spatial-computing",
-  "definition": "A systematic assessment document verifying ontology compliance, data quality, and structural integrity across knowledge graphs and semantic systems.",
+  "definition": "A Validation Report is a systematic assessment document verifying ontology compliance, data quality, and structural integrity across knowledge graphs and semantic systems. It checks that class hierarchies, relation targets, definition coverage, and maturity fields meet specified quality thresholds, producing actionable findings for enrichment pipelines.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -13,21 +13,44 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:compliance-verification",
+        "label": "Compliance Verification"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:knowledge-graph-construction",
+        "label": "Knowledge Graph Construction"
+      },
+      {
+        "id": "urn:ngm:class:documentation-standards",
+        "label": "Documentation Standards"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -60,7 +60,7 @@ public:: true
   "label": "Super Resolution",
   "definition": "Super-Resolution is the process of enhancing the resolution and quality of low-resolution images by predicting and synthesising high-frequency details using deep learning models.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-display-and-rendering",
@@ -71,6 +71,19 @@ public:: true
       "label": "Image Generation"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:rasterization", "label": "Rasterization"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -133,7 +146,11 @@ public:: true
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Convolutional Neural Network]]
+  - requires [[Deep Learning]]
+  - enables [[Real-Time Rendering]]
+  - enables [[Computer Vision]]
+  - contrastsWith [[Rasterization]]
 - ### Content
   - Super-Resolution is the process of enhancing the resolution and quality of low-resolution images by predicting and synthesising high-frequency details using deep learning models. Single image super-resolution (SISR) networks (SRCNN, ESRGAN, Real-ESRGAN) reconstruct plausible high-resolution images from degraded inputs, enabling applications in medical imaging enhancement, satellite imagery analysis, and consumer photo enhancement.
 			- #### Computer & Video Games

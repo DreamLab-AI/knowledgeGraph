@@ -1,5 +1,5 @@
 - ### Definition
-  - principle of distributing control and governance of assets or data rather than centralising it in a single authority.
+  - The principle of distributing control and governance of digital assets or data across multiple participants rather than concentrating authority in a single entity. This encompasses decentralised identity, cryptographic ownership proofs, peer-to-peer governance mechanisms, and user-controlled data portability as foundational guarantees for sovereignty in metaverse and Web3 ecosystems.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:OwnershipFreedomDistributed
@@ -7,7 +7,9 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires: [[Cryptography]], [[Blockchain]]
+  - enables: [[Self Sovereign Identity]], [[Data Sovereignty]], [[Decentralized Governance]]
+  - relatedTo: [[Ownership Freedom distributed]], [[Decentralized Autonomous Organization]]
 
 - ### Content
   - principle of distributing control and governance of assets or data rather than centralising it in a single authority.

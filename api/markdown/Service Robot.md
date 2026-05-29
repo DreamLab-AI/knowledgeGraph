@@ -42,15 +42,31 @@ public:: true
   "@id": "urn:ngm:class:service-robot",
   "@type": "Class",
   "label": "Service Robot",
-  "definition": "Service Robot is a robotics and autonomous systems concept and a type of robotics.",
+  "definition": "A Service Robot is an autonomous or semi-autonomous robotic system designed to perform tasks for humans in non-industrial settings such as healthcare, logistics, hospitality, and domestic environments. Unlike fixed industrial robots, service robots operate in dynamic, unstructured spaces and must navigate safely around people, relying on sensor fusion, motion planning, and human-robot interaction capabilities.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-robot-type",
       "label": "Robot Type"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
+      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
+      {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:robot-control", "label": "Robot Control"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -87,6 +103,8 @@ public:: true
 
 
 - ### Definition
+  - A Service Robot is an autonomous or semi-autonomous machine designed to perform tasks for humans outside industrial settings — in healthcare, logistics, hospitality, and domestic environments. It relies on sensor fusion, computer vision, motion planning, and human-robot interaction capabilities to operate safely in dynamic, unstructured spaces.
+
   - ### Primary Definition
 
 - ### Semantic Classification
@@ -95,7 +113,12 @@ public:: true
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Motion Planning]]
+  - requires [[Sensor Fusion]]
+  - enables [[Human Robot Interaction]]
+  - uses [[Computer Vision]]
+  - uses [[Autonomous Robot]]
+  - relatedTo [[Robot Control]]
 
 - ### Content
   - ### Primary Definition

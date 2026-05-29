@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:explanation",
   "domain": "artificial-intelligence",
-  "definition": "Explanation of AI system behavior or decisions.",
+  "definition": "An Explanation in the context of AI systems is a human-interpretable account of why a model produced a particular output, which features influenced the prediction, and how the system would behave differently under alternative inputs. Explanations may be global (describing overall model behaviour across the input space), local (accounting for a single prediction), or contrastive (answering why outcome A rather than outcome B). They are the primary instrument through which AI Transparency and Explainability is operationalised for stakeholders including regulators, domain experts, and affected individuals.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -13,21 +13,78 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:feature-importance",
+        "label": "Feature Importance"
+      },
+      {
+        "id": "urn:ngm:class:post-hoc-explanation",
+        "label": "Post Hoc Explanation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "id": "urn:ngm:class:model-interpretability",
+        "label": "Model Interpretability"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:transparency-and-explainability",
+        "label": "Transparency and Explainability"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      },
+      {
+        "id": "urn:ngm:class:decision-transparency",
+        "label": "Decision Transparency"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:intrinsic-interpretability",
+        "label": "Intrinsic Interpretability"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:interpretability",
+        "label": "Interpretability"
+      },
+      {
+        "id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      },
+      {
+        "id": "urn:ngm:class:ai-trustworthiness",
+        "label": "AI Trustworthiness"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ]
   },
   "wikilinks": [
     {

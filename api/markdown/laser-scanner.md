@@ -7,7 +7,12 @@
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Enables [[SLAM]]
+  - Enables [[Point Cloud]]
+  - Enables [[Spatial Mapping]]
+  - Uses [[Lidar]]
+  - Related To [[Photogrammetry]]
+  - Related To [[Sensor Fusion]]
 
 - ### Content
   - ### Primary Definition

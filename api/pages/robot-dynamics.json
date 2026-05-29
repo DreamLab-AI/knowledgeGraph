@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:robot-dynamics",
   "domain": "robotics",
-  "definition": "Robot Dynamics is a type of Robot Mechanics in the robotics domain.",
+  "definition": "Robot Dynamics is the study of the forces, torques, and inertial properties that govern the motion of robotic systems. It encompasses forward dynamics (computing accelerations from applied forces) and inverse dynamics (computing required torques for a desired motion), underpinning trajectory planning, model-based control, and simulation. Accurate dynamic models are essential for high-speed manipulation, legged locomotion, and compliant human-robot interaction.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
@@ -18,11 +18,29 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:torque",
+        "label": "Torque"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:robot-control",
+        "label": "Robot Control"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -31,7 +49,16 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:robot-safety",
+        "label": "Robot Safety"
+      },
+      {
+        "id": "urn:ngm:class:state-estimation",
+        "label": "State Estimation"
+      }
+    ]
   },
   "wikilinks": [
     {

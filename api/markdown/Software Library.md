@@ -37,9 +37,10 @@ public:: true
   "@id": "urn:ngm:class:software-library",
   "@type": "Class",
   "label": "Software Library",
-  "definition": "Software Library is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A Software Library is a collection of pre-compiled, reusable code modules that expose stable APIs, encapsulating common functionality such as rendering, physics simulation, networking, or cryptography. Libraries accelerate development by abstracting complexity, reducing defect rates, and enabling interoperability between components within a software stack.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
@@ -51,6 +52,40 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:software-development-process",
+        "label": "Software Development Process"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:api-standard",
+        "label": "API Standard"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:software-architecture",
+        "label": "Software Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:machine-learning-framework",
+        "label": "Machine Learning Framework"
+      },
+      {
+        "@id": "urn:ngm:class:rendering-engine",
+        "label": "Rendering Engine"
+      }
+    ]
   }
 }
 ```
@@ -76,14 +111,19 @@ public:: true
 
 
 - ### Definition
-  - SoftwareLibrary is a concept within the ngm domain.
+  - A Software Library is a collection of pre-compiled, reusable code modules that expose stable APIs, encapsulating common functionality such as rendering, physics simulation, networking, or cryptography. Libraries accelerate development by abstracting complexity, reducing defect rates, and enabling interoperability between components within a software stack.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:SoftwareLibrary
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Enables [[Software Development Process]]
+  - Uses [[API Standard]]
+  - Supports [[Machine Learning Framework]]
+  - Supports [[Rendering Engine]]
+  - Related To [[Software Architecture]]
+  - Related To [[Version Control]]
 
 - ### Content
   # SoftwareLibrary

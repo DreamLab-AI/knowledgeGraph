@@ -50,16 +50,41 @@ public:: true
   "@id": "urn:ngm:class:ai-tri-sm",
   "@type": "Class",
   "label": "AI TRiSM",
-  "definition": "AI TRiSM is a type of Artificial Intelligence in the artificial intelligence domain.",
+  "definition": "AI TRiSM (Artificial Intelligence Trust, Risk, and Security Management) is a Gartner-coined framework that integrates technical, organisational, and regulatory controls to ensure AI systems are trustworthy, fair, reliable, and secure throughout their lifecycle. It addresses algorithmic bias, model opacity, data privacy, adversarial vulnerabilities, and compliance with regulations such as the EU AI Act, structured around three pillars: Trust, Risk, and Security.",
   "domain": "artificial-intelligence",
   "maturity": "emerging",
+  "qualityScore": 0.75,
+  "quality": 0.75,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:ai-risk-management", "label": "AI Risk Management"},
+      {"@id": "urn:ngm:class:ai-security", "label": "AI Security"},
+      {"@id": "urn:ngm:class:ai-trustworthiness", "label": "AI Trustworthiness"},
+      {"@id": "urn:ngm:class:ai-audit", "label": "AI Audit"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"},
+      {"@id": "urn:ngm:class:model-robustness", "label": "Model Robustness"},
+      {"@id": "urn:ngm:class:algorithmic-bias", "label": "Algorithmic Bias"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"},
+      {"@id": "urn:ngm:class:red-teaming", "label": "Red Teaming"},
+      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
+      {"@id": "urn:ngm:class:ai-lifecycle", "label": "AI Lifecycle"},
+      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

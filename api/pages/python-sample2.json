@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:python-sample2",
   "domain": "infrastructure",
-  "definition": "Python Sample2 is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Python Sample2 is a minimal Logseq JavaScript/Pyodide evaluation block used as a stub execution test. It demonstrates the evalblock mechanism that allows inline code execution within the Logseq knowledge graph, serving as a baseline template for more complex Python integrations that interact with the Logseq Plugin API.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-software-engineering",
@@ -13,8 +13,8 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,11 +23,30 @@
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": []

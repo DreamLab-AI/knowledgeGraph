@@ -66,9 +66,10 @@ public:: true
   "@id": "urn:ngm:class:adas",
   "@type": "Class",
   "label": "ADAS",
-  "definition": "Advanced Driver Assistance Systems (ADAS) are electronic systems that assist vehicle operators with driving and parking functions through automated technologies including adaptive cruise control, lane keeping assist, automatic emergency braking, blind spot detection, and parking assistance.",
+  "definition": "Advanced Driver Assistance Systems (ADAS) are electronic systems that assist vehicle operators with driving and parking functions through automated technologies including adaptive cruise control, lane keeping assist, automatic emergency braking, blind spot detection, and parking assistance. ADAS operates at SAE Level 1–2 automation, augmenting rather than replacing the driver, and relies on sensor fusion across cameras, radar, and ultrasonic systems to perceive the vehicle's environment.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-robot-type",
@@ -79,7 +80,23 @@ public:: true
       "label": "Autonomous Vehicle"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
+      {"@id": "urn:ngm:class:perception-system", "label": "Perception System"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
+      {"@id": "urn:ngm:class:camera", "label": "Camera"},
+      {"@id": "urn:ngm:class:lidar", "label": "Lidar"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:autonomous-vehicle", "label": "Autonomous Vehicle"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:risk", "label": "Risk"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -153,6 +170,13 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
+  - **requires** [[Sensor Fusion]] — multi-sensor data fusion is essential for ADAS perception
+  - **requires** [[Perception System]] — environment understanding drives all assistance functions
+  - **uses** [[Computer Vision]] — camera-based lane, sign, and obstacle detection
+  - **uses** [[Camera]] — primary imaging sensor for ADAS
+  - **uses** [[Lidar]] — depth sensing for obstacle detection in advanced variants
+  - **contrastsWith** [[Autonomous Vehicle]] — ADAS augments the driver; AV replaces the driver
+  - **relatedTo** [[Risk]] — ADAS directly addresses collision and operational risk
   - bridges-to:: [[Autonomous Robot]]
 
 - ### Content

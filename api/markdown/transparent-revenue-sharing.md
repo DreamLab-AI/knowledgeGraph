@@ -8,6 +8,10 @@
 
 - ### Relationships
   - is-subclass-of:: [[Revenue Distribution]]
+  - requires:: [[Smart Contract]], [[Blockchain]]
+  - enables:: [[Transparency Metrics]], [[DAO Governance]]
+  - uses:: [[NFT]], [[Audit Trail]]
+  - relatedTo:: [[Virtual Economy]], [[NFT Marketplace]]
 
 - ### Content
 

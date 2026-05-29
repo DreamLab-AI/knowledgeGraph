@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:model-capacity",
   "domain": "artificial-intelligence",
-  "definition": "Model Capacity is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "The measure of a machine learning model's ability to represent a wide variety of functions, determined by parameter count, architecture depth and width, and representational power. Models with insufficient capacity underfit the data; those with excessive capacity risk overfitting. Capacity is formally bounded by concepts such as the Vapnik\u2013Chervonenkis dimension, and is managed in practice through regularisation, pruning, and architecture search.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -13,12 +13,26 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +41,24 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      },
+      {
+        "id": "urn:ngm:class:underfitting",
+        "label": "Underfitting"
+      },
+      {
+        "id": "urn:ngm:class:regularisation",
+        "label": "Regularisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ]
   },
   "wikilinks": [
     {

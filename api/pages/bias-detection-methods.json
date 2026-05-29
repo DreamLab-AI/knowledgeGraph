@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:bias-detection-methods",
   "domain": "artificial-intelligence",
-  "definition": "Bias Detection Mods are systematic approaches and analytical techniques for identifying algorithmic bias in AI systems through statistical testing, fairness audits, counterfactual analysis, and causal inference.",
+  "definition": "Bias Detection Methods are systematic analytical techniques for identifying algorithmic bias in AI systems through statistical hypothesis testing, fairness audits, counterfactual analysis, intersectional evaluation, and causal inference. These methods examine model predictions across protected demographic groups to detect disparate impacts, unequal error rates, and discriminatory patterns, producing bias audit reports that document severity, affected populations, and regulatory compliance status.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -13,10 +13,27 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:fairness-metrics",
+        "label": "Fairness Metrics"
+      },
+      {
+        "id": "urn:ngm:class:disparate-impact",
+        "label": "Disparate Impact"
+      },
+      {
+        "id": "urn:ngm:class:fairness-auditing-tools",
+        "label": "Fairness Auditing Tools"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-bias",
+        "label": "Algorithmic Bias"
+      }
+    ],
     "requires": [],
     "enables": [],
     "dependsOn": [],
@@ -24,10 +41,40 @@
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-fairness",
+        "label": "AI Fairness"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-audit",
+        "label": "AI Audit"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:bias-in-large-language-models",
+        "label": "Bias in Large Language Models"
+      }
+    ]
   },
   "wikilinks": [
     {

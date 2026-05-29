@@ -5,29 +5,56 @@
   "public": true,
   "classIri": "urn:ngm:class:ens",
   "domain": "blockchain",
-  "definition": "The Ethereum Name Service (ENS) is a decentralised, on-chain naming system mapping human-readable .eth domain names to Ethereum addresses and other distributed resources.",
+  "definition": "The Ethereum Name Service (ENS) is a decentralised, on-chain naming system that maps human-readable names ending in .eth to Ethereum addresses, content hashes, and other on-chain or off-chain resources via ERC-137 compliant smart contracts. It functions as the Web3 analogue of DNS, replacing hexadecimal addresses with memorable labels that are owned and controlled by the holder of the corresponding NFT. ENS resolvers extend the system to support IPFS content hashes, text records, and multi-chain addresses, making it a foundational identity and discoverability layer for the decentralised web.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-protocol-and-consensus",
       "label": "Blockchain Protocol and Consensus"
+    },
+    {
+      "id": "urn:ngm:class:decentralised-identity",
+      "label": "Decentralised Identity"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralised-web",
+        "label": "Decentralised Web"
+      },
+      {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

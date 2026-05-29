@@ -446,20 +446,62 @@ public:: true
   "@id": "urn:ngm:class:digital-asset-risks",
   "@type": "Class",
   "label": "Digital Asset Risks",
-  "definition": "Comprehensive analysis of risks associated with digital assets, particularly Bitcoin, encompassing technical vulnerabilities, regulatory challenges, geopolitical concerns, financial stability threats, and systemic implications for global monetary systems",
+  "definition": "Comprehensive analysis of risks associated with digital assets, particularly Bitcoin, encompassing technical vulnerabilities, regulatory challenges, geopolitical concerns, financial stability threats, and systemic implications for global monetary systems. Covers attack vectors such as 51% attacks, selfish mining, network partitioning, exchange failures, and regulatory suppression, alongside macro-level risks including volatility, liquidity crises, and stablecoin depegging.",
   "domain": "blockchain",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-token-and-asset",
       "label": "Token and Asset"
     }
   ],
-  "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      }
+    ]
   }
 }
 ```
@@ -1008,8 +1050,14 @@ public:: true
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
-
+  - Related To [[Risk Management]]
+  - Related To [[Blockchain]]
+  - Related To [[Cryptocurrency]]
+  - Requires [[Regulatory Compliance]]
+  - Requires [[Fraud Detection]]
+  - Contrasts With [[Digital Asset]]
+  - Uses [[Cybersecurity]]
+  - Uses [[Consensus Mechanism]]
   - bridges-to:: [[Blockchain]] (bc)
 - ### Content
   - #Public page automatically published

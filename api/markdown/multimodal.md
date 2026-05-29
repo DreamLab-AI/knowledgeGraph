@@ -50,9 +50,9 @@ public:: true
   "@id": "urn:ngm:class:multimodal",
   "@type": "Class",
   "label": "multimodal",
-  "definition": "multimodal is a artificial intelligence concept and a type of Multimodal AI.",
+  "definition": "Multimodal AI refers to artificial intelligence systems that process, fuse, and generate content across multiple data modalities—including text, images, audio, video, and 3D—within a unified model architecture. Multimodal systems learn cross-modal alignments through joint embedding spaces, enabling capabilities such as image captioning, visual question answering, text-to-image synthesis, and real-time audio-visual understanding that single-modality models cannot achieve.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-research-area",
@@ -63,6 +63,20 @@ public:: true
       "label": "Multimodal AI"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"},
+      {"@id": "urn:ngm:class:text-to-speech", "label": "Text-to-Speech"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:diffusion-models", "label": "Diffusion Models"},
+      {"@id": "urn:ngm:class:speech-recognition", "label": "Speech Recognition"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -114,14 +128,19 @@ public:: true
 
 
 - ### Definition
-  - multimodal is a concept within the ngm domain.
+  - Multimodal AI refers to artificial intelligence systems that process, fuse, and generate content across multiple data modalities—including text, images, audio, video, and 3D—within a unified model architecture. Multimodal systems learn cross-modal alignments through joint embedding spaces, enabling capabilities such as image captioning, visual question answering, text-to-image synthesis, and real-time audio-visual understanding that single-modality models cannot achieve.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:Multimodal
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Large Language Models]]
+  - requires [[Computer Vision]]
+  - enables [[Image Generation]]
+  - enables [[Text-to-Speech]]
+  - relatedTo [[Diffusion Models]]
+  - relatedTo [[Speech Recognition]]
 
 - ### Content
   - #Public page automatically published

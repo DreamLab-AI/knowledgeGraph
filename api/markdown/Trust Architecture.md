@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:trust-architecture",
   "@type": "Class",
   "label": "Trust Architecture",
-  "definition": "The structural framework of protocols, technologies, and governance mechanisms that establish, verify, and maintain trust relationships between users, platforms, and services in decentralized digital environments and metaverse ecosystems.",
+  "definition": "The structural framework of protocols, technologies, and governance mechanisms that establish, verify, and maintain trust relationships between users, platforms, and services in decentralized digital environments and metaverse ecosystems. It encompasses identity verification through Decentralised Identifiers (DIDs), cryptographically signed Verifiable Credentials, smart-contract-enforced rules, and consensus mechanisms, supporting both zero-trust security models and reputation-based trust scoring across cross-platform interactions.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
@@ -59,7 +60,24 @@ public:: true
       "label": "Security Architecture"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:decentralized-identifiers", "label": "Decentralized Identifiers"},
+      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:cross-platform-identity", "label": "Cross-Platform Identity"},
+      {"@id": "urn:ngm:class:decentralized-governance", "label": "Decentralized Governance"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:cryptographic-security", "label": "Cryptographic Security"},
+      {"@id": "urn:ngm:class:trusted-execution-environment", "label": "Trusted Execution Environment"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:trust-framework", "label": "Trust Framework"},
+      {"@id": "urn:ngm:class:trust-infrastructure", "label": "Trust Infrastructure"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -109,6 +127,10 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Security Architecture]]
+  - requires:: [[Decentralized Identifiers]], [[Verifiable Credentials]]
+  - enables:: [[Cross-Platform Identity]], [[Decentralized Governance]]
+  - uses:: [[Cryptographic Security]], [[Trusted Execution Environment]]
+  - relatedTo:: [[Trust Framework]], [[Trust Infrastructure]]
 
 - ### Content
 

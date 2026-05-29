@@ -46,7 +46,7 @@ public:: true
   "@id": "urn:ngm:class:marine-robot",
   "@type": "Class",
   "label": "Marine Robot",
-  "definition": "Marine robot is a robot capable of operating on or under water surfaces.",
+  "definition": "A robot designed to operate on or under water surfaces, encompassing unmanned surface vehicles (USVs), autonomous underwater vehicles (AUVs), and remotely operated vehicles (ROVs). Marine robots address unique challenges including buoyancy control, pressure resistance, underwater acoustic communication, and GPS-denied navigation using sonar and pressure sensors.",
   "domain": "robotics",
   "maturity": "established",
   "subClassOf": [
@@ -59,7 +59,28 @@ public:: true
       "label": "Mobile Robot"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:underwater-robot", "label": "Underwater Robot"},
+      {"@id": "urn:ngm:class:remotely-operated-vehicle-rov", "label": "Remotely Operated Vehicle (ROV)"},
+      {"@id": "urn:ngm:class:aerial-robot", "label": "Aerial Robot"},
+      {"@id": "urn:ngm:class:ground-robot", "label": "Ground Robot"},
+      {"@id": "urn:ngm:class:inspection-robot", "label": "Inspection Robot"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
+      {"@id": "urn:ngm:class:slam", "label": "SLAM"},
+      {"@id": "urn:ngm:class:pressure-sensor", "label": "Pressure Sensor"},
+      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:autonomous-system", "label": "Autonomous System"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:mobile-robot", "label": "Mobile Robot"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

@@ -42,9 +42,9 @@ public:: true
   "@id": "urn:ngm:class:rb-0029-inverse-kinematics",
   "@type": "Class",
   "label": "rb 0029 inverse kinematics",
-  "definition": "inverse kinematics is a robotics and autonomous systems concept and a type of Kinematics.",
+  "definition": "Inverse kinematics (IK) is the computational process of determining the joint angles or actuator lengths required to place a robot's end-effector at a desired position and orientation in task space. Unlike forward kinematics, IK is typically under-determined or over-determined and requires iterative numerical solvers, analytical solutions, or Jacobian-based methods; it is a foundational component of motion planning, manipulation, and trajectory execution in robotic systems.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-actuation-and-control",
@@ -55,11 +55,30 @@ public:: true
       "label": "Kinematics"
     }
   ],
-  "quality": 0.5,
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:rb-0028-forward-kinematics", "label": "rb 0028 forward kinematics"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:rb-0030-jacobian-matrix", "label": "rb 0030 jacobian matrix"},
+      {"@id": "urn:ngm:class:rb-0031-singularity", "label": "rb 0031 singularity"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:rb-0021-robot-kinematics", "label": "rb 0021 robot kinematics"},
+      {"@id": "urn:ngm:class:rb-0023-degrees-of-freedom", "label": "rb 0023 degrees of freedom"},
+      {"@id": "urn:ngm:class:end-effector", "label": "End Effector"},
+      {"@id": "urn:ngm:class:manipulator-arm", "label": "Manipulator Arm"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
+      {"@id": "urn:ngm:class:rb-0051-trajectory-planning", "label": "rb 0051 trajectory planning"}
+    ]
   }
 }
 ```

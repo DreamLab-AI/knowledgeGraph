@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:rb-0007-collaborative-robot",
   "domain": "robotics",
-  "definition": "collaborative robot is a robotics and autonomous systems concept and a type of Industrial Robot.",
+  "definition": "A collaborative robot (cobot) is an industrial robot designed and certified to work in direct physical proximity with human operators within a shared workspace, without requiring conventional hard safety guarding. Defined under ISO/TS 15066, cobots implement one or more of four collaborative operation modes \u2014 safety-rated monitored stop, hand guiding, speed-and-separation monitoring, and power-and-force limiting \u2014 each constraining robot behaviour so that human contact does not result in injury. Cobots typically feature lightweight, rounded structures, intrinsic force/torque sensing, and redundant safety-rated control architectures compliant with ISO 10218-1/-2.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-robot-type",
@@ -17,21 +17,61 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:rb-0089-risk-assessment",
+        "label": "rb 0089 risk assessment"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:rb-0103-collaborative-operation",
+        "label": "rb 0103 collaborative operation"
+      },
+      {
+        "id": "urn:ngm:class:rb-0093-speed-limitation",
+        "label": "rb 0093 speed limitation"
+      },
+      {
+        "id": "urn:ngm:class:rb-0094-power-and-force-limiting",
+        "label": "rb 0094 power and force limiting"
+      }
+    ],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-ts-15066",
+        "label": "ISO TS 15066"
+      },
+      {
+        "id": "urn:ngm:class:rb-0087-safety-standard",
+        "label": "rb 0087 safety standard"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rb-0056-impedance-control",
+        "label": "rb 0056 impedance control"
+      },
+      {
+        "id": "urn:ngm:class:rb-0105-speed-and-separation-monitoring",
+        "label": "rb 0105 speed and separation monitoring"
+      },
+      {
+        "id": "urn:ngm:class:robo-human-robot-interaction",
+        "label": "Human-Robot Interaction"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:physics-simulation",
   "domain": "spatial-computing",
-  "definition": "Physics Simulation is a spatial computing concept and a type of spatial-computing.",
+  "definition": "Physics Simulation is the computational modelling of physical phenomena \u2014 including rigid-body dynamics, soft-body deformation, fluid behaviour, and collision detection \u2014 to produce physically plausible behaviour in virtual environments. It underpins interactive experiences in virtual reality, robotics training, and digital-twin applications by enabling real-time or near-real-time approximations of classical mechanics.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -14,17 +14,40 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:robot-learning",
+        "label": "Robot Learning"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": []

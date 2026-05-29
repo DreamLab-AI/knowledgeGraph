@@ -38,16 +38,32 @@ public:: true
   "@id": "urn:ngm:class:radicle",
   "@type": "Class",
   "label": "Radicle",
-  "definition": "Radicle is a blockchain and distributed systems concept and a type of blockchain.",
+  "definition": "Radicle is a decentralised, peer-to-peer code collaboration platform built on Git that eliminates dependence on centralised forges such as GitHub or GitLab. It uses a content-addressed, cryptographically signed data model where repositories are identified by public keys rather than server-hosted URLs, enabling sovereign code hosting, offline collaboration, and censorship-resistant software development. Radicle integrates with Ethereum-based smart contracts for governance and funding, positioning it at the intersection of blockchain infrastructure and open-source software tooling.",
   "domain": "blockchain",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-network-component",
       "label": "Network Component"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"},
+      {"@id": "urn:ngm:class:version-control", "label": "Version Control"},
+      {"@id": "urn:ngm:class:cryptographic-signature", "label": "Cryptographic Signature"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:open-source-software", "label": "Open Source Software"},
+      {"@id": "urn:ngm:class:decentralized-governance", "label": "Decentralized Governance"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
+      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"},
+      {"@id": "urn:ngm:class:distributed-system", "label": "Distributed System"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -83,14 +99,16 @@ public:: true
 
 
 - ### Definition
-  - Radicle is a concept within the ngm domain.
+  - Radicle is a decentralised, peer-to-peer code collaboration platform built on Git that eliminates dependence on centralised forges. It uses a content-addressed, cryptographically signed data model where repositories are identified by public keys rather than server-hosted URLs, enabling sovereign code hosting, offline collaboration, and censorship-resistant software development. Radicle integrates with Ethereum-based smart contracts for governance and funding.
 
 - ### Semantic Classification
   - owl-class:: blockchain:Radicle
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses:: [[Peer-to-Peer Network]], [[Version Control]], [[Cryptographic Signature]]
+  - enables:: [[Open Source Software]], [[Decentralized Governance]]
+  - relatedTo:: [[Smart Contract]], [[Blockchain Network]], [[Distributed System]]
 
 - ### Content
   - [Radicle - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=radicle-ide-plugins-team.radicle)

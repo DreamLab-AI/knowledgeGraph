@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:pid-controller",
   "domain": "spatial-computing",
-  "definition": "Pid Controller is a type of Feedback Control in the spatial computing domain.",
+  "definition": "A PID Controller (Proportional-Integral-Derivative Controller) is a closed-loop feedback control algorithm that continuously calculates an error value as the difference between a desired setpoint and a measured process variable, then applies corrections based on proportional, integral, and derivative terms. PID controllers are foundational in robotics, autonomous systems, and industrial automation for precisely regulating position, velocity, and force.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-interaction",
@@ -18,11 +18,20 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:robot-control",
+        "label": "Robot Control"
+      },
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -30,8 +39,26 @@
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      },
+      {
+        "id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      }
+    ]
   },
   "wikilinks": [
     {

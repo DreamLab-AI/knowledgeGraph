@@ -1,5 +1,5 @@
 - ### Definition
-  - ### Primary Definition
+  - A deep neural network architecture introduced by He et al. (2016) that employs skip connections to allow gradients to propagate directly through layers, expressed as H(x) = F(x) + x. This residual formulation resolves the vanishing gradient problem in very deep networks, enabling training of architectures with hundreds of layers and achieving state-of-the-art performance on image recognition benchmarks.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:ResidualNetwork
@@ -7,7 +7,9 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires** → [[Backpropagation]], [[Neural Network Layer]]
+  - **enables** → [[Computer Vision]], [[Image Classification]], [[Transfer Learning]]
+  - **uses** → [[Convolutional Neural Network]], [[GPU Compute]]
 
 - ### Content
   - ### Primary Definition

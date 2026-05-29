@@ -6,7 +6,14 @@
   - owl-role:: Concept
 
 - ### Relationships
-  - is-subclass-of:: [[ETSI Standards]]
+  - is-subclass-of:: [[ETSI]]
+  - Standardized By: [[ETSI_Domain_Immersive_Experiences]]
+  - Enables: [[Interoperability Standard]]
+  - Enables: [[Metaverse Classification]]
+  - Related To: [[Extended Reality]]
+  - Related To: [[Virtual Reality]]
+  - Related To: [[Augmented Reality]]
+  - Related To: [[Mixed Reality]]
 
 - ### Content
 

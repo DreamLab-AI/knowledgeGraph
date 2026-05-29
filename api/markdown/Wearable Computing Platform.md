@@ -48,7 +48,8 @@ public:: true
   "label": "Wearable Computing Platform",
   "definition": "Hardware and software ecosystems for body-worn computing devices including smartwatches, smart glasses, fitness trackers, and XR headsets, providing operating systems, development frameworks, and connectivity infrastructure for continuous personal computing and metaverse interaction.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
@@ -59,6 +60,22 @@ public:: true
       "label": "Computing Platform"
     }
   ],
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:xr-headset", "label": "XR Headset"},
+      {"@id": "urn:ngm:class:wearable-device-integration", "label": "Wearable Device Integration"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
@@ -109,6 +126,10 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Computing Platform]]
+  - **Has-part**: [[XR Headset]], [[Wearable Device Integration]]
+  - **Enables**: [[Augmented Reality]], [[Spatial Computing]]
+  - **Uses**: [[Sensor Fusion]] (biometric and positional data)
+  - **Part-of**: [[Metaverse]] ecosystem
 
 - ### Content
 

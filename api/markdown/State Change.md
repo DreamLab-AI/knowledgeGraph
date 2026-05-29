@@ -42,16 +42,36 @@ public:: true
   "@id": "urn:ngm:class:state-change",
   "@type": "Class",
   "label": "State Change",
-  "definition": "A transition from one defined state to another within a system, component, or entity, representing how systems evolve through discrete or continuous modifications to their properties.",
+  "definition": "A State Change is the transition from one defined configuration or status to another within a system, component, or entity, representing how systems evolve through discrete or continuous modifications to their properties. State changes are fundamental to distributed systems, blockchain ledgers (where account balances and smart-contract storage are updated atomically), digital twins (where physical sensor readings update virtual representations), and agentic AI systems (where goal statuses transition through planning and execution). Formal modelling of state changes enables audit trails, causality analysis, and consistency guarantees.",
   "domain": "artificial-intelligence",
   "maturity": "emerging",
+  "qualityScore": 0.75,
+  "quality": 0.75,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:state-machine", "label": "State Machine"},
+      {"@id": "urn:ngm:class:state-synchronization", "label": "State Synchronization"},
+      {"@id": "urn:ngm:class:state-machine-replication", "label": "State Machine Replication"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event Driven Architecture"},
+      {"@id": "urn:ngm:class:event", "label": "Event"},
+      {"@id": "urn:ngm:class:transaction", "label": "Transaction"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
+      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
+      {"@id": "urn:ngm:class:state-estimation", "label": "State Estimation"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

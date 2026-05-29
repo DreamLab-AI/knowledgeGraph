@@ -66,7 +66,7 @@ public:: true
   "@id": "urn:ngm:class:eclipse-attack",
   "@type": "Class",
   "label": "Eclipse Attack",
-  "definition": "Node isolation attack within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "An Eclipse Attack is a peer-to-peer network attack in which an adversary monopolises all of a target node's inbound and outbound connections, isolating it from the honest network. The eclipsed node is fed a fabricated view of the blockchain, enabling the attacker to double-spend against that node, delay its transaction confirmations, or waste its mining resources on a private fork. Countermeasures include connection diversity, random peer selection, and detecting network-level routing anomalies.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -83,7 +83,26 @@ public:: true
       "label": "NetworkComponent"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:double-spending", "label": "Double Spending"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:sybil-attack", "label": "Sybil Attack"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:network-synchronization", "label": "Network Synchronization"},
+      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"},
+      {"@id": "urn:ngm:class:network-topology", "label": "Network Topology"},
+      {"@id": "urn:ngm:class:selfish-mining", "label": "Selfish Mining"},
+      {"@id": "urn:ngm:class:51-attack", "label": "51% Attack"},
+      {"@id": "urn:ngm:class:blockchain-protocol", "label": "Blockchain Protocol"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

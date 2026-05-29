@@ -37,15 +37,29 @@ public:: true
   "@id": "urn:ngm:class:runtime-environment",
   "@type": "Class",
   "label": "Runtime Environment",
-  "definition": "Runtime Environment is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A Runtime Environment provides the execution context in which application code runs, managing memory allocation, code interpretation or compilation, system resource access, and cross-platform compatibility. In spatial computing, runtime environments span browser-based JavaScript engines with WebXR and WebGPU APIs, native frameworks such as Unity's IL2CPP and Unreal's C++ runtime, and standards such as WebAssembly that enable near-native performance across diverse hardware.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
     }
   ],
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"},
+      {"@id": "urn:ngm:class:scripting-language", "label": "Scripting Language"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:web-assembly", "label": "WebAssembly"},
+      {"@id": "urn:ngm:class:virtual-machine", "label": "Virtual Machine"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:cross-platform-interoperability", "label": "Cross-Platform Interoperability"},
+      {"@id": "urn:ngm:class:3-d-rendering-engine", "label": "3D Rendering Engine"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -83,7 +97,12 @@ public:: true
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - enables [[Game Engine]]
+  - enables [[Scripting Language]]
+  - uses [[WebAssembly]]
+  - uses [[Virtual Machine]]
+  - supports [[Cross-Platform Interoperability]]
+  - supports [[3D Rendering Engine]]
 
 - ### Content
   # RuntimeEnvironment

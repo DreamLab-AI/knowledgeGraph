@@ -33,16 +33,30 @@ public:: true
   "@id": "urn:ngm:class:pdf",
   "@type": "Class",
   "label": "PDF",
-  "definition": "PDF is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Portable Document Format: an ISO-standardised file format (ISO 32000) that encodes documents with fixed layout, fonts, graphics, and metadata in a device-independent, platform-agnostic representation. In AI and knowledge-graph contexts, PDFs serve as primary carriers of academic papers, technical specifications, and legal documents that are ingested via extraction pipelines for training, retrieval-augmented generation, and knowledge-base construction.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
-  "quality": 0.35,
+  "qualityScore": 0.7,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:knowledge-management", "label": "Knowledge Management"},
+      {"@id": "urn:ngm:class:documentation-standards", "label": "Documentation Standards"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:knowledge-base", "label": "Knowledge Base"},
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -72,14 +86,16 @@ public:: true
 
 
 - ### Definition
-  - PDF is a concept within the ngm domain.
+  - Portable Document Format: an ISO-standardised file format (ISO 32000) that encodes documents with fixed layout, fonts, graphics, and metadata in a device-independent, platform-agnostic representation. In AI and knowledge-graph contexts, PDFs serve as primary carriers of academic papers, technical specifications, and legal documents that are ingested via extraction pipelines for training, retrieval-augmented generation, and knowledge-base construction.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:PDF
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses: [[Knowledge Management]], [[Documentation Standards]]
+  - enables: [[Knowledge Base]], [[Large Language Models]]
+  - relatedTo: [[Natural Language Processing]], [[Knowledge Graph]]
 
 - ### Content
   - [ChatDOC

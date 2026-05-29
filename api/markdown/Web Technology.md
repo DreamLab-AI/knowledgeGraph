@@ -37,15 +37,31 @@ public:: true
   "@id": "urn:ngm:class:web-technology",
   "@type": "Class",
   "label": "Web Technology",
-  "definition": "Web Technology is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "The distributed infrastructure, protocols, and frameworks underpinning the World Wide Web and decentralised Web3 applications, including content-addressed storage (IPFS), blockchain naming systems (ENS), decentralised identity (DIDs), and smart-contract-governed application hosting that shifts data ownership from centralised providers to users.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
     }
   ],
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:ipfs", "label": "IPFS"},
+      {"@id": "urn:ngm:class:ens", "label": "ENS"},
+      {"@id": "urn:ngm:class:web3", "label": "Web3"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
+      {"@id": "urn:ngm:class:content-addressing", "label": "Content Addressing"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
+      {"@id": "urn:ngm:class:decentralized-storage", "label": "Decentralized Storage"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -76,14 +92,16 @@ public:: true
 
 
 - ### Definition
-  - WebTechnology is a concept within the ngm domain.
+  - The distributed infrastructure, protocols, and frameworks underpinning the World Wide Web and decentralised Web3 applications, including content-addressed storage (IPFS), blockchain naming systems (ENS), decentralised identity (DIDs), and smart-contract-governed application hosting that shifts data ownership from centralised providers to users.
 
 - ### Semantic Classification
   - owl-class:: blockchain:WebTechnology
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **Has-part**: [[IPFS]], [[ENS]], [[Web3]]
+  - **Enables**: [[Decentralised Identity]], [[Content Addressing]]
+  - **Uses**: [[Smart Contract]] (application logic), [[Decentralized Storage]]
 
 - ### Content
 

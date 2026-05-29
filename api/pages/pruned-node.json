@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:pruned-node",
   "domain": "blockchain",
-  "definition": "Partial history storage node within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "A Pruned Node is a blockchain full node that validates the complete chain history during initial block download but subsequently discards spent transaction outputs and old block data beyond a configurable retention window, reducing on-disk storage requirements by orders of magnitude while retaining full validation capability for new blocks. Pruning enables operators with limited storage (e.g. 5\u201310 GB rather than 500+ GB for Bitcoin's full history) to participate in consensus verification without trusting third parties, unlike SPV light nodes that skip validation entirely. The pruned node can no longer serve historical block data to peers, constraining its contribution to network archival.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-network-component",
@@ -21,21 +21,71 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:archival-node",
+        "label": "Archival Node"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:full-node",
+        "label": "Full Node"
+      },
+      {
+        "id": "urn:ngm:class:light-node",
+        "label": "Light Node"
+      },
+      {
+        "id": "urn:ngm:class:archival-node",
+        "label": "Archival Node"
+      },
+      {
+        "id": "urn:ngm:class:utxo-model",
+        "label": "UTXO Model"
+      }
+    ]
   },
   "wikilinks": [
     {

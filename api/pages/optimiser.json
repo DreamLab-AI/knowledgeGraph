@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:optimiser",
   "domain": "spatial-computing",
-  "definition": "Optimiser is a spatial computing concept and a type of spatial-computing.",
+  "definition": "An Optimiser is an algorithm that adjusts model parameters during training to minimise a loss function, guiding convergence towards an optimal solution. Modern optimisers such as Adam, RMSProp, and AdaGrad extend stochastic gradient descent with adaptive learning rates, momentum accumulation, and second-moment estimates, enabling faster and more stable training of deep neural networks across diverse tasks.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -14,11 +14,29 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +45,20 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:hyperparameter",
+        "label": "Hyperparameter"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      }
+    ]
   },
   "wikilinks": [
     {

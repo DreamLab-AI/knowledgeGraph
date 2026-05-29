@@ -33,9 +33,10 @@ public:: true
   "@id": "urn:ngm:class:legacy-media",
   "@type": "Class",
   "label": "legacy media",
-  "definition": "legacy media is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Legacy media refers to established, traditional forms of mass communication — including print, broadcast television, and radio — that preceded the digital internet era. These institutions hold significant cultural authority and are undergoing structural disruption as AI-driven platforms alter content distribution and audience economics.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
@@ -47,6 +48,34 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:social-media",
+        "label": "social media"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:digital-transformation",
+        "label": "Digital Transformation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:media-theory",
+        "label": "Media Theory"
+      },
+      {
+        "@id": "urn:ngm:class:media-richness-theory",
+        "label": "Media Richness Theory"
+      },
+      {
+        "@id": "urn:ngm:class:digital-content-creation",
+        "label": "Digital Content Creation"
+      }
+    ]
   }
 }
 ```
@@ -72,14 +101,18 @@ public:: true
 
 
 - ### Definition
-  - legacy media is a concept within the ngm domain.
+  - Legacy media refers to established, traditional forms of mass communication — including print, broadcast television, and radio — that preceded the digital internet era. These institutions hold significant cultural authority and are undergoing structural disruption as AI-driven platforms alter content distribution and audience economics.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:LegacyMedia
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Contrasts With [[social media]]
+  - Related To [[Media Theory]]
+  - Related To [[Media Richness Theory]]
+  - Related To [[Digital Content Creation]]
+  - Bridges To [[Digital Transformation]]
 
 - ### Content
   - # stub page

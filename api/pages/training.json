@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:training",
   "domain": "artificial-intelligence",
-  "definition": "Training is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "Training is the supervised or self-supervised process of iteratively adjusting the parameters of a machine learning model to minimise a loss function over a labelled or unlabelled dataset. It encompasses forward passes, backpropagation, gradient descent optimisation, and regularisation techniques such as dropout and weight decay. The output of training is a fitted model whose learned weights encode patterns from the training data, ready for inference on unseen inputs.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -14,16 +14,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-model",
+        "label": "Machine Learning Model"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:regularisation",
+        "label": "Regularisation"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

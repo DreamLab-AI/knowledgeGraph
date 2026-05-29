@@ -27,7 +27,7 @@ public:: true
   "@id": "urn:ngm:class:re-act",
   "@type": "Class",
   "label": "ReAct",
-  "definition": "ReAct is a prompting paradigm that interleaves reasoning traces and action steps in large language models, enabling them to dynamically plan and execute tasks by alternating between thought and tool use.",
+  "definition": "ReAct (Reasoning and Acting) is a prompting framework for large language models that interleaves free-form reasoning traces (thought steps) with structured action calls (tool invocations) in a single output sequence, enabling the model to dynamically plan multi-step tasks, observe the results of tool actions, and revise its reasoning accordingly. Unlike pure chain-of-thought prompting which only produces reasoning without grounding, or pure action-only agents which cannot explain their decisions, ReAct unifies both in a synergistic loop that improves task completion rates and interpretability. ReAct has become foundational to agentic AI frameworks including LangChain, LlamaIndex, and OpenAI's Assistants API.",
   "domain": "artificial-intelligence",
   "subClassOf": [
     {
@@ -35,26 +35,45 @@ public:: true
       "label": "AI Technique"
     }
   ],
-  "relations": {},
-  "qualityScore": 0.6,
-  "maturity": "stub"
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:chain-of-thought", "label": "Chain of Thought"},
+      {"@id": "urn:ngm:class:tool-use", "label": "Tool Use"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"},
+      {"@id": "urn:ngm:class:autonomous-agent", "label": "Autonomous Agent"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:reasoning", "label": "Reasoning"},
+      {"@id": "urn:ngm:class:planning-and-scheduling", "label": "Planning and Scheduling"}
+    ]
+  },
+  "qualityScore": 0.75,
+  "maturity": "emerging"
 }
 ```
 
 
 - ### Definition
-  - ReAct is a prompting paradigm that interleaves reasoning traces and action steps in large language models, enabling them to dynamically plan and execute tasks by alternating between thought and tool use.
+  - ReAct (Reasoning and Acting) is a prompting framework for large language models that interleaves free-form reasoning traces (thought steps) with structured action calls (tool invocations) in a single output sequence, enabling the model to dynamically plan multi-step tasks, observe the results of tool actions, and revise its reasoning accordingly. Unlike pure chain-of-thought prompting which only produces reasoning without grounding, or pure action-only agents which cannot explain their decisions, ReAct unifies both in a synergistic loop that improves task completion rates and interpretability. ReAct has become foundational to agentic AI frameworks including LangChain, LlamaIndex, and OpenAI's Assistants API.
 
 - ### Semantic Classification
   - owl-class:: re-act:ReAct
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- Stub page — relationships inherited from referencing pages -->
+  - requires [[Chain of Thought]]
+  - requires [[Tool Use]]
+  - enables [[Agentic AI]]
+  - enables [[Autonomous Agent]]
+  - relatedTo [[Reasoning]]
+  - relatedTo [[Planning and Scheduling]]
 
 - ### Content
-  - #Public page
-  - automatically published
+  - The ReAct framework, introduced by Yao et al. in 2022, structures LLM outputs as an alternating sequence of Thought (free-form reasoning about the current state and next step), Action (a structured call to an external tool such as a search engine, calculator, or database), and Observation (the returned result of the action). This cycle repeats until the model produces a final answer. The framework was evaluated on HotpotQA, FEVER, AlfWorld, and WebShop benchmarks, demonstrating improved reasoning and grounding over chain-of-thought and action-only baselines.
+  - A key advantage of ReAct's explicit reasoning traces is interpretability: operators can inspect the thought steps to understand why an agent took a particular action or reached a particular conclusion, enabling debugging and safety monitoring. The traces also provide a natural mechanism for human-in-the-loop approval: a human can interrupt between thought and action steps to verify or redirect the agent's plan.
+  - Modern agentic frameworks generalise ReAct into multi-agent orchestration architectures. In frameworks such as LangGraph and AutoGen, multiple ReAct-style agents operate concurrently with shared memory and message passing, enabling parallel tool execution and specialisation (e.g., a search agent, a code execution agent, and a critic agent collaborating on a complex task). The fundamental ReAct loop—reason, act, observe—remains the core interaction primitive even in these more complex orchestration patterns.
 
 - ### Provenance
   - sources::

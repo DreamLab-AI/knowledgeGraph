@@ -1,16 +1,22 @@
 - ### Definition
-  - A Content Delivery Network (CDN) is a geographically distributed network of proxy servers and data centres that caches and delivers web content to users from locations closer to them, reducing latency.
+  - A Content Delivery Network (CDN) is a geographically distributed system of edge servers and Points of Presence (PoPs) that cache, replicate, and serve web assets — static files, media streams, and increasingly dynamic API responses — from locations physically near end users, thereby reducing round-trip latency and offloading origin infrastructure. CDNs employ anycast routing and DNS-based request steering to direct clients to the nearest healthy PoP. Beyond caching, modern CDNs provide TLS termination, DDoS mitigation, Web Application Firewall (WAF) services, and edge compute runtimes.
 
 - ### Semantic Classification
   - owl-class:: content-delivery-network:Content Delivery Network
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- Stub page — relationships inherited from referencing pages -->
+  - enables [[Latency]] reduction
+  - enables [[Edge Computing]]
+  - uses [[Network Infrastructure]]
+  - uses [[Encryption]]
+  - supports [[Scalability Pattern]]
+  - supports [[Cloud Infrastructure]]
 
 - ### Content
-  - #Public page
-  - automatically published
+  - A CDN's architecture is built around geographically dispersed PoPs, each containing clusters of caching servers. When a user requests a resource, the CDN's DNS resolver or anycast routing layer directs the request to the nearest PoP. If the asset is cached and fresh (validated via cache-control headers and ETags per HTTP/1.1 and HTTP/2 semantics), it is served immediately; otherwise, the PoP fetches from the origin, caches the response, and serves the client. This origin-offload pattern reduces egress bandwidth costs and shields origin servers from traffic spikes.
+  - Modern CDNs have expanded well beyond static asset caching. Edge computing runtimes — such as Cloudflare Workers, Fastly Compute, and AWS Lambda@Edge — allow execution of JavaScript or WebAssembly at PoPs, enabling personalisation, A/B testing, authentication, and API routing without round-trips to the origin. HTTP/3 (QUIC) support at edge PoPs further reduces connection establishment latency, particularly for mobile clients on lossy networks. TLS termination at the edge also means that Encryption is centralised at PoPs, simplifying certificate management for origin infrastructure.
+  - CDNs interact with Cloud Infrastructure for origin hosting and with Microservices Architecture for API delivery. DDoS mitigation capabilities — traffic scrubbing, rate limiting, IP reputation filtering — make CDNs an integral layer of the security perimeter. Standards bodies such as the IETF define the HTTP caching semantics (RFC 9111) and QUIC transport (RFC 9000) that CDNs implement. Network Latency reduction remains the core value proposition, with Edge Computing an increasingly strategic differentiation vector.
 
 - ### Provenance
   - sources::

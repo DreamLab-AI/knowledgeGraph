@@ -8,6 +8,13 @@
 
 - ### Relationships
   - is-subclass-of:: [[Digital Identity]]
+  - Uses: [[Decentralized Identifiers]]
+  - Uses: [[Avatar System]]
+  - Uses: [[Avatar Portability]]
+  - Requires: [[Authentication]]
+  - Requires: [[Personal Data Store]]
+  - Related To: [[Digital Identity Management]]
+  - Related To: [[Privacy]]
 
 - ### Content
 

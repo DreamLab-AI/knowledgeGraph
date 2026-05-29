@@ -5,7 +5,10 @@
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **relatedTo**: Inclusive Growth, Sustainable Development, Social Impact — well-being is a component of the OECD's foundational AI principle alongside inclusive growth and sustainability.
+  - **requires**: Human Centred Values, AI Governance — achieving well-being outcomes requires that AI is designed around human priorities and governed to prevent harms.
+  - **supports**: Accessibility — systems that improve well-being must be accessible across diverse populations to avoid exacerbating inequalities.
+  - **contrastsWith**: Digital Well-Being Index — the index provides measurable operationalisation of the qualitative concept of digital well-being.
 - ### Content
   - AI should enhance human and societal well-being by augmenting human capabilities, enriching quality of life, supporting physical and mental health, enabling meaningful work, strengthening social connections, and contributing to flourishing individuals and communities.
   - ## Funding and Organisational Changes

@@ -42,9 +42,10 @@ public:: true
   "@id": "urn:ngm:class:qlo-ra",
   "@type": "Class",
   "label": "QLoRA",
-  "definition": "An extension of LoRA that combines 4-bit quantisation with low-rank adaptation, enabling fine-tuning of very large models (65B+ parameters) on consumer-grade GPUs.",
+  "definition": "An extension of LoRA (Low-Rank Adaptation) that combines 4-bit NormalFloat quantisation of frozen base model weights with full-precision trainable low-rank adapter matrices. QLoRA additionally employs double quantisation and paged optimisers to achieve extreme memory efficiency, enabling fine-tuning of 65B-parameter models on a single 48GB GPU without significant performance degradation.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
@@ -52,14 +53,51 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:parameter-efficient-fine-tuning",
-      "label": "Parameter Efficient Fine-Tuning"
+      "label": "Parameter-Efficient Fine-Tuning"
     }
   ],
-  "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:quantisation",
+        "label": "Quantisation"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network-quantisation",
+        "label": "Neural Network Quantisation"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:domain-adaptation",
+        "label": "Domain Adaptation"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
+      }
+    ]
   }
 }
 ```
@@ -97,7 +135,13 @@ public:: true
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Requires [[Quantisation]]
+  - Requires [[Neural Network Quantisation]]
+  - Uses [[Fine Tuning]]
+  - Uses [[Large Language Models]]
+  - Enables [[Federated Learning]]
+  - Enables [[Domain Adaptation]]
+  - Related To [[Knowledge Distillation]]
 - ### Content
   - An extension of LoRA that combines 4-bit quantisation with low-rank adaptation, enabling fine-tuning of very large models (65B+ parameters) on consumer-grade GPUs. QLoRA uses NormalFloat4 quantisation, double quantisation, and paged optimisers to achieve extreme memory efficiency whilst maintaining performance.
   #### Key Characteristics

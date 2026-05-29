@@ -48,7 +48,8 @@ public:: true
   "label": "Environmental Standards",
   "definition": "Regulatory frameworks and technical specifications governing the environmental sustainability of metaverse infrastructure, including energy efficiency requirements for data centres, carbon footprint disclosure mandates, and e-waste management guidelines for XR hardware.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
@@ -64,6 +65,40 @@ public:: true
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:environmental-assessment",
+        "label": "Environmental Assessment"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:carbon-accounting",
+        "label": "Carbon Accounting"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-sustainability",
+        "label": "Blockchain Sustainability"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:environmental-sustainability",
+        "label": "Environmental Sustainability"
+      },
+      {
+        "@id": "urn:ngm:class:circular-economy",
+        "label": "Circular Economy"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iso-standards",
+        "label": "Iso Standards"
+      }
+    ]
   }
 }
 ```
@@ -109,6 +144,12 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Technical Standards]]
+  - Standardized By: [[Iso Standards]]
+  - Requires: [[Environmental Assessment]]
+  - Supports: [[Environmental Sustainability]]
+  - Supports: [[Circular Economy]]
+  - Related To: [[Carbon Accounting]]
+  - Related To: [[Blockchain Sustainability]]
 
 - ### Content
 

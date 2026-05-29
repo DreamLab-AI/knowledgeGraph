@@ -54,7 +54,7 @@ public:: true
   "@id": "urn:ngm:class:shape-memory-alloy-actuator",
   "@type": "Class",
   "label": "Shape Memory Alloy Actuator",
-  "definition": "Soft robotics actuator using shape memory alloys that change shape when heated, enabling lightweight and compact actuation for compliant robots.",
+  "definition": "A shape memory alloy (SMA) actuator exploits the thermoelastic phase transformation of nickel-titanium (Nitinol) or similar alloys, which contract and generate force when thermally activated, then return to their original shape on cooling. SMA actuators are valued for their high force-to-weight ratio, silent operation, and inherent compliance, making them well-suited to soft robotics, minimally invasive surgical tools, and wearable exoskeletons. Control bandwidth is limited by thermal cycle times, which remains a key engineering challenge.",
   "domain": "robotics",
   "maturity": "emerging",
   "subClassOf": [
@@ -63,11 +63,31 @@ public:: true
       "label": "Actuation and Control"
     }
   ],
-  "quality": 0.35,
+  "quality": 0.75,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:soft-robotics", "label": "Soft Robotics"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:pneumatic-actuator", "label": "Pneumatic Actuator"},
+      {"@id": "urn:ngm:class:hydraulic-actuator", "label": "Hydraulic Actuator"},
+      {"@id": "urn:ngm:class:robot-actuator", "label": "Robot Actuator"},
+      {"@id": "urn:ngm:class:manipulation", "label": "Manipulation"},
+      {"@id": "urn:ngm:class:end-effector", "label": "End Effector"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:surgical-robot", "label": "Surgical Robot"},
+      {"@id": "urn:ngm:class:exoskeleton-robot", "label": "Exoskeleton Robot"},
+      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:tactile-sensor", "label": "Tactile Sensor"}
+    ]
   }
 }
 ```
@@ -125,7 +145,9 @@ public:: true
   - is-subclass-of:: [[Robotics]]
 
 - ### Content
-  Shape Memory Alloy Actuator — content pending enrichment.
+  Shape memory alloy actuators operate by exploiting a reversible solid-state phase transition between martensite (cool, deformable) and austenite (hot, rigid) crystal structures. Nitinol wire heated above its transformation temperature (~70-100 °C) shortens by 4-8% and can exert contractile forces exceeding 150 MPa, far exceeding equivalent-mass electric motors for linear actuation.
+
+  In soft-robotic applications, SMA wires or coils are embedded in elastomeric matrices to produce bending and twisting motions that replicate biological muscle groups. Medical devices — including endoscopes, catheter steerers, and minimally invasive grippers — exploit SMA compliance to navigate tortuous anatomy without rigid linkages. Active cooling strategies (forced convection, Peltier junctions) are used to reduce the thermal lag that limits repetition frequency.
 
 - ### Provenance
   - sources:: [[Soft Robotics]], [[Materials Science]]

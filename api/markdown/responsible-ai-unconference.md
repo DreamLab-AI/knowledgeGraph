@@ -1,12 +1,14 @@
 - ### Definition
-  - Responsible AI Unconference is a concept within the ngm domain.
+  - A Responsible AI Unconference is a participant-driven gathering that applies open-space technology to surface and negotiate ethical, social, and governance concerns around artificial intelligence. Unlike traditional conferences, the agenda is set on the day by attendees, enabling communities—artists, technologists, marginalised groups, and policymakers—to co-author discussions on topics such as bias, child-centric AI, feminist design, and the boundaries of acceptable automation. The format foregrounds perspectives historically excluded from mainstream AI discourse.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:ResponsibleAIUnconference
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **relatedTo**: Responsible AI, AI Ethics
+  - **enables**: AI Governance, Diversity Non-Discrimination and Fairness
+  - **contrastsWith**: Algorithmic Bias
 
 - ### Content
   - Report will be made from the unconference

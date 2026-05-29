@@ -7,7 +7,12 @@
   - belongs-to-domain:: [[Core Technology]]
 
 - ### Relationships
-  - is-subclass-of:: [[Processing Model]]
+  - is-subclass-of:: Processing Model
+  - Enables [[Machine Learning Pipeline]]
+  - Uses [[AI Infrastructure]]
+  - Has Part [[Batch Normalisation]]
+  - Has Part [[Batch Size]]
+  - Contrasts With [[Inference]]
 
 - ### Content
 

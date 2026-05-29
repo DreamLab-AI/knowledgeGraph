@@ -38,15 +38,33 @@ public:: true
   "@id": "urn:ngm:class:consensus-domain",
   "@type": "Class",
   "label": "Consensus Domain",
-  "definition": "The Consensomain represents a specialized sub-domain within blockchain technology that encompasses all consensus mechanisms, distributed agreement protocols, and coordination systems that enable decentralized networks to achieve consistent state without trusted central authorities.",
+  "definition": "The Consensus Domain is a specialised sub-domain of blockchain technology encompassing all consensus mechanisms, distributed agreement protocols, and coordination systems that enable decentralised networks to achieve consistent state without trusted central authorities. It covers Proof-of-Work, Proof-of-Stake, Byzantine Fault Tolerance variants, finality concepts, and consensus security analysis.",
   "domain": "blockchain",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-protocol-and-consensus",
       "label": "Protocol and Consensus"
     }
   ],
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
+      {"@id": "urn:ngm:class:consensus-algorithm", "label": "Consensus Algorithm"},
+      {"@id": "urn:ngm:class:consensus-protocol", "label": "Consensus Protocol"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:blockchain-domain", "label": "Blockchain Domain"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:byzantine-fault-tolerant-system", "label": "Byzantine Fault Tolerant System"},
+      {"@id": "urn:ngm:class:bc-cryptographic-primitive", "label": "Cryptographic Primitive"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -90,9 +108,11 @@ public:: true
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
-
-  - bridges-to:: [[Blockchain]] (bc)
+  - bridges-to:: [[Blockchain]]
+  - has-part:: [[Consensus Mechanism]], [[Consensus Algorithm]], [[Consensus Protocol]]
+  - part-of:: [[Blockchain Domain]]
+  - requires:: [[Byzantine Fault Tolerant System]], [[Cryptographic Primitive]]
+  - enables:: [[Blockchain Network]]
 - ### Content
   - **Classification**
   - **Definition**

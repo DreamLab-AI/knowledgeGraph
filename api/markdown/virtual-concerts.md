@@ -8,6 +8,13 @@
 
 - ### Relationships
   - is-subclass-of:: [[Virtual Event]]
+  - Requires: [[Avatar System]]
+  - Requires: [[Real-Time Rendering]]
+  - Requires: [[Virtual World Infrastructure]]
+  - Uses: [[Audio Spatialization]]
+  - Uses: [[Virtual Community Platform]]
+  - Related To: [[Event Management]]
+  - Related To: [[Metaverse Venue]]
 
 - ### Content
 

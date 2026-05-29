@@ -106,16 +106,37 @@ public:: true
   "@id": "urn:ngm:class:infrastructure-domain",
   "@type": "Class",
   "label": "Infrastructure Domain",
-  "definition": "The Infrastructure Domain provides an ontological framework for ICT infrastructure configuration items, resources, and resource groups common across IT service management systems.",
+  "definition": "The Infrastructure Domain is the ontological framework that classifies and relates ICT infrastructure configuration items, resources, and resource groups common across IT service management systems. It encompasses network components, server and compute resources, data centres, storage, databases, cloud services, and security configurations that together underpin network connectivity, communication, and computing services. The domain provides a structured vocabulary for infrastructure-as-code, containerisation, and cloud-native architectures.",
   "domain": "infrastructure",
   "maturity": "emerging",
+  "qualityScore": 0.75,
+  "quality": 0.75,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:cloud-infrastructure", "label": "Cloud Infrastructure"},
+      {"@id": "urn:ngm:class:network-infrastructure", "label": "Network Infrastructure"},
+      {"@id": "urn:ngm:class:network-topology", "label": "Network Topology"},
+      {"@id": "urn:ngm:class:security-architecture", "label": "Security Architecture"},
+      {"@id": "urn:ngm:class:infrastructure-component", "label": "Infrastructure Component"},
+      {"@id": "urn:ngm:class:infrastructure-architecture", "label": "Infrastructure Architecture"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:cloud-native-applications", "label": "Cloud-Native Applications"},
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
+      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:digital-transformation", "label": "Digital Transformation"},
+      {"@id": "urn:ngm:class:enterprise-architecture", "label": "Enterprise Architecture"},
+      {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -239,7 +260,9 @@ public:: true
   - belongs-to-domain:: [[NGM Domain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart:: [[CloudInfrastructure]], [[NetworkInfrastructure]], [[NetworkTopology]], [[SecurityArchitecture]], [[InfrastructureComponent]], [[InfrastructureArchitecture]]
+  - enables:: [[CloudNativeApplications]], [[EdgeComputing]], [[DistributedSystems]]
+  - relatedTo:: [[DigitalTransformation]], [[EnterpriseArchitecture]], [[MicroservicesArchitecture]]
 
 - ### Content
 

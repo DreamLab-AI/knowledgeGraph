@@ -126,16 +126,34 @@ public:: true
   "@id": "urn:ngm:class:metaverse-core-concepts",
   "@type": "Class",
   "label": "metaverse core concepts",
-  "definition": "A comprehensive framework encompassing foundational concepts and technologies enabling the metaverse: immersive technologies (Augmented Reality, Spatial Computing, Haptic Feedback), virtual environments (Virtual World, Social VR, Digital Twin), digital identity and assets ...",
+  "definition": "Metaverse core concepts is an index class grouping the foundational building blocks of persistent shared virtual spaces: immersive rendering technologies (Augmented Reality, Spatial Computing, Haptic Feedback), virtual environments (Virtual World, Social VR, Digital Twin), digital identity and economic primitives (Digital Avatar, Virtual Asset, Virtual Economy), and cross-platform integration enablers (Interoperability). Together these concepts define the design space for metaverse platforms and standards such as those developed by the Metaverse Standards Forum.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
     }
   ],
-  "quality": 0.4,
+  "qualityScore": 0.7,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:virtual-world", "label": "Virtual World"},
+      {"@id": "urn:ngm:class:digital-avatar", "label": "Digital Avatar"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
+      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"},
+      {"@id": "urn:ngm:class:virtual-economy", "label": "Virtual Economy"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"},
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:social-vr", "label": "Social VR"},
+      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"},
+      {"@id": "urn:ngm:class:virtual-asset", "label": "Virtual Asset"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

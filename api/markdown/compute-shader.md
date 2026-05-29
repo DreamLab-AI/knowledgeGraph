@@ -1,5 +1,5 @@
 - ### Definition
-  - Compute Shader is a concept within the mv domain.
+  - A Compute Shader is a programmable GPU kernel that executes arbitrary parallel computations outside the traditional graphics rendering pipeline, enabling general-purpose GPU (GPGPU) workloads such as physics simulation, procedural generation, image post-processing, and data-parallel algorithms within real-time 3D and metaverse applications.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:ComputeShader
@@ -8,6 +8,13 @@
 - ### Relationships
   - is-subclass-of:: [[Metaverse]]
   - bridges-to:: [[Computer Vision]] (domain: ai) for GPU-accelerated visual processing and real-time graphics intelligence
+  - hasPart [[Vertex Shader]]
+  - hasPart [[Pixel Shader]]
+  - enables [[Physics Simulation]]
+  - enables [[Procedural Generation]]
+  - enables [[Post Processing]]
+  - uses [[Parallel Processing]]
+  - uses [[Real-Time Rendering]]
 
 - ### Content
 

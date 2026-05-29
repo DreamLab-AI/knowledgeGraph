@@ -70,7 +70,7 @@ public:: true
   "@id": "urn:ngm:class:block-header",
   "@type": "Class",
   "label": "Block Header",
-  "definition": "Metadata section of a block within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "The fixed-size metadata section of a blockchain block that encodes the previous block hash, Merkle root of transactions, timestamp, difficulty target, and nonce. The block header is the unit that miners and validators hash during proof-of-work or verify during proof-of-stake, and it commits to the complete block body via the Merkle root without including raw transactions.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -87,7 +87,25 @@ public:: true
       "label": "DistributedDataStructure"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:merkle-root", "label": "Merkle Root"},
+      {"@id": "urn:ngm:class:nonce", "label": "Nonce"},
+      {"@id": "urn:ngm:class:timestamp", "label": "Timestamp"},
+      {"@id": "urn:ngm:class:difficulty", "label": "Difficulty"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:block", "label": "Block"},
+      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"},
+      {"@id": "urn:ngm:class:genesis-block", "label": "Genesis Block"},
+      {"@id": "urn:ngm:class:block-height", "label": "Block Height"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
+      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

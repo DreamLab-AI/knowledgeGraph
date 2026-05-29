@@ -8,6 +8,9 @@
 
 - ### Relationships
   - bridges-to:: [[AI Agent System]]
+  - hasPart:: [[Machine Learning Model]], [[Neural Network]]
+  - uses:: [[Natural Language Processing]], [[Computer Vision]]
+  - supports:: [[AIEthics]], [[Governance Framework]]
 
 - ### Content
   - An integrated technical architecture combining [[Machine Learning Models]], data processing pipelines, inference engines, and operational infrastructure to enable autonomous decision-making and intelligent automation. AI Systems represent the computational foundation enabling [[Artificial Intelligence]] capabilities across diverse application domains and deployment contexts.

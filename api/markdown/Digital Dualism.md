@@ -66,9 +66,10 @@ public:: true
   "@id": "urn:ngm:class:digital-dualism",
   "@type": "Class",
   "label": "Digital Dualism",
-  "definition": "Digital Dualism is a type of Metaverse in the spatial computing domain.",
+  "definition": "Digital Dualism is the conceptual framework positing a fundamental, hierarchical separation between digital/virtual and physical/offline experience domains, treating them as mutually exclusive rather than mutually constitutive. Critiqued by Nathan Jurgenson (2011), who proposed an augmented reality perspective recognising that digital and physical are increasingly entangled: digital interactions produce physical consequences, and physical activities generate digital traces. The critique is particularly relevant to metaverse and telecollaboration design, where dualist assumptions lead to poorly integrated hybrid experiences.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -79,7 +80,19 @@ public:: true
       "label": "Metaverse"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
+      {"@id": "urn:ngm:class:telecollaboration", "label": "Telecollaboration"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"},
+      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -154,6 +167,10 @@ bridges-to:: [[Telecollaboration]]
   - owl-role:: Concept
 
 - ### Relationships
+  - **contrastsWith**: Augmented Reality, Telecollaboration (AR and telecollaboration assume integration, not separation)
+  - **relatedTo**: Metaverse, Digital Identity (metaverse design and identity continuity are directly affected by dualist assumptions)
+  - **bridgesTo**: Digital Twin (digital twins exemplify the physical-digital integration that refutes strong dualism)
+
   - is-subclass-of:: [[Metaverse]]
 
 - ### Content

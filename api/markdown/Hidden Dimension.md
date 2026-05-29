@@ -44,7 +44,8 @@ public:: true
   "label": "Hidden Dimension",
   "definition": "The dimensionality of the internal representations in a neural network, determining the capacity of each layer to encode information, typically denoted as d_model in transformers.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
@@ -55,7 +56,20 @@ public:: true
       "label": "Hyperparameter"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:neural-network-architecture", "label": "Neural Network Architecture"},
+      {"@id": "urn:ngm:class:transformer", "label": "Transformer"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
+      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:parameter-count", "label": "Parameter Count"},
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -99,7 +113,9 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **partOf**: [[Neural Network Architecture]], [[Transformer]]
+  - **requires**: [[Neural Network]], [[Attention Mechanism]]
+  - **relatedTo**: [[Parameter Count]], [[Large Language Models]]
 
 - ### Content
   - The dimensionality of the internal representations in a neural network, determining the capacity of each layer to encode information, typically denoted as d_model in transformers.

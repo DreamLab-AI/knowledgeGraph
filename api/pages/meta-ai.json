@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:meta-ai",
   "domain": "artificial-intelligence",
-  "definition": "Artificial intelligence research and product division of Meta Platforms, responsible for open-weight models such as LLaMA and multimodal systems including ImageBind.",
+  "definition": "Meta AI is the artificial intelligence research and applied AI division of Meta Platforms, conducting foundational research in machine learning and releasing notable open-weight artefacts including the LLaMA series of large language models and the multimodal embedding model ImageBind. The division operates FAIR (Fundamental AI Research) for long-horizon research and applied AI teams that integrate models into Meta products such as Facebook, Instagram, and WhatsApp. Meta AI's open-weight release strategy has materially shaped the open-source AI ecosystem by enabling fine-tuning and deployment without proprietary API dependency.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-research-area",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:open-source-ai",
+        "label": "Open-Source AI"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai",
+        "label": "Multimodal AI"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:instruction-tuning",
+        "label": "Instruction Tuning"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

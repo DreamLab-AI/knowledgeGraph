@@ -66,7 +66,7 @@ public:: true
   "@id": "urn:ngm:class:transaction-pool",
   "@type": "Class",
   "label": "Transaction Pool",
-  "definition": "Pending unconfirmed transactions within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "The Transaction Pool (mempool) is the in-memory distributed data structure held by each full node that stores validated but as-yet-unconfirmed transactions awaiting inclusion in a block. Nodes propagate transactions through the pool via gossip, miners and validators select transactions (typically by fee priority), and the pool is cleared as blocks confirm or transactions expire. Pool size, fee dynamics, and congestion directly determine user-experienced confirmation latency and cost.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -83,7 +83,26 @@ public:: true
       "label": "DistributedDataStructure"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:gossip-protocol", "label": "Gossip Protocol"},
+      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:miner", "label": "Miner"},
+      {"@id": "urn:ngm:class:fee-market", "label": "Fee Market"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:mempool", "label": "Mempool"},
+      {"@id": "urn:ngm:class:block-propagation", "label": "Block Propagation"},
+      {"@id": "urn:ngm:class:network-synchronization", "label": "Network Synchronization"},
+      {"@id": "urn:ngm:class:double-spending", "label": "Double Spending"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

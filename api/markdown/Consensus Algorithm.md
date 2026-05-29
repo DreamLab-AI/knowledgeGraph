@@ -164,13 +164,27 @@ public:: true
   "label": "Consensus Algorithm",
   "definition": "Distributed computational protocol ensuring all participants in a Blockchain Network agree on the canonical transaction history and current state without centralised authority.",
   "domain": "blockchain",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-protocol-and-consensus",
       "label": "Protocol and Consensus"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"},
+      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"},
+      {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
+      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"}
+    ]
+  },
   "quality": 0.4,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -365,7 +379,12 @@ public:: true
   - belongs-to-domain:: [[BlockchainDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Blockchain Network]]
+  - requires [[Byzantine Fault Tolerance]]
+  - enables [[Blockchain Transaction]]
+  - enables [[Distributed Ledger]]
+  - hasPart [[Proof Of Work]]
+  - hasPart [[Proof of Stake]]
 
 - ### Content
   - A distributed computational protocol enabling participants in a [[Blockchain Network]] to agree on transaction history and canonical state without centralised coordination. [[Consensus Algorithms]] such as [[Proof of Work]], [[Proof of Stake]], and [[Byzantine Fault Tolerance]] ensure [[Network Security]], [[Data Integrity]], and [[Trustless Coordination]].

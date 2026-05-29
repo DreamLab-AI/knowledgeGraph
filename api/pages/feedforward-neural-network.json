@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:feedforward-neural-network",
   "domain": "artificial-intelligence",
-  "definition": "Feedforward Neural Network is a artificial intelligence concept and a type of Network Architecture.",
+  "definition": "A neural network architecture in which connections between nodes do not form cycles, with information flowing unidirectionally from input through hidden layers to output. The simplest and most foundational artificial neural network type, trained via backpropagation with gradient descent, and proven by the universal approximation theorem to model arbitrary continuous functions given sufficient width.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-model-architecture",
@@ -17,20 +17,52 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:activation-function",
+        "label": "Activation Function"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      }
+    ],
     "relatedTo": []
   },
   "wikilinks": [

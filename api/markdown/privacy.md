@@ -5,7 +5,13 @@
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Encryption]]
+  - requires [[Consent Management]]
+  - relatedTo [[Data Protection]]
+  - relatedTo [[Cybersecurity]]
+  - relatedTo [[Access Control]]
+  - enables [[Differential Privacy]]
+  - enables [[Zero-Knowledge Proof]]
 - ### Content
   - The protection of personal information and individual autonomy in AI systems, encompassing data minimization, purpose limitation, transparency, and individual control over how personal data is collected, processed, stored, and shared throughout the AI lifecycle.
   - # What to use and when

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:media-theory",
   "domain": "distributed-collaboration",
-  "definition": "Media Theory is a type of Distributed Collaboration in the distributed collaboration domain.",
+  "definition": "An interdisciplinary field examining how communication media shape human perception, social interaction, and cultural meaning, encompassing frameworks such as media richness theory, social presence theory, and Marshall McLuhan's medium-as-message thesis. Media theory informs the design of telecollaboration and immersive systems by analysing how channel properties affect communication fidelity and presence.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:dc-communication",
@@ -13,21 +13,48 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:social-presence",
+        "label": "Social Presence"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:media-richness-theory",
+        "label": "Media Richness Theory"
+      },
+      {
+        "id": "urn:ngm:class:social-presence-theory",
+        "label": "Social Presence Theory"
+      },
+      {
+        "id": "urn:ngm:class:communication-theory",
+        "label": "Communication Theory"
+      }
+    ]
   },
   "wikilinks": [
     {

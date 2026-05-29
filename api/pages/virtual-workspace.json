@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:virtual-workspace",
   "domain": "spatial-computing",
-  "definition": "Virtual Workspace is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "A Virtual Workspace is a spatially organised digital environment \u2014 typically experienced through XR headsets or desktop 3D interfaces \u2014 that replicates or enhances the collaborative and cognitive functions of a physical office. It supports remote collaboration, persistent shared artefacts, spatial audio, and embodied presence, addressing the limitations of flat video-conferencing for complex knowledge work.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -14,11 +14,33 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      },
+      {
+        "id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:remote-collaboration",
+        "label": "Remote Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:telepresence",
+        "label": "Telepresence"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +49,16 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:social-vr",
+        "label": "Social VR"
+      },
+      {
+        "id": "urn:ngm:class:virtual-world",
+        "label": "Virtual World"
+      }
+    ]
   },
   "wikilinks": [
     {

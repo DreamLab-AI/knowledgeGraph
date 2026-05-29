@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:conformity-assessment",
   "domain": "artificial-intelligence",
-  "definition": "A structured procedure for evaluating whether an AI system meets specified regulatory, technical, or ethical requirements before deployment or market entry.",
+  "definition": "Conformity Assessment is a structured set of procedures used to evaluate whether an AI system or product satisfies specified regulatory, technical, or ethical requirements prior to deployment or market entry. Under frameworks such as the EU AI Act, high-risk AI systems must undergo either a third-party audit by a notified body or a documented self-assessment process; the resulting conformity declaration is a legal precondition for placing the system on the EU market. The process typically includes technical documentation review, testing, risk analysis, and ongoing post-market surveillance.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -14,20 +14,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

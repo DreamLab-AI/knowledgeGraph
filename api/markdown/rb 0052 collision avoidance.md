@@ -42,9 +42,9 @@ public:: true
   "@id": "urn:ngm:class:rb-0052-collision-avoidance",
   "@type": "Class",
   "label": "rb 0052 collision avoidance",
-  "definition": "collision avoidance is a robotics and autonomous systems concept and a type of Motion Planning.",
+  "definition": "Collision avoidance in robotics is the capability of a robot system to detect and react to obstacles — including other robots, infrastructure, and human operators — so as to prevent physical contact that could cause damage or injury. It encompasses both reactive techniques (e.g. potential field methods, velocity obstacles) and proactive planning approaches that embed free-space constraints into the trajectory from the outset. It is a prerequisite for safe autonomous navigation and collaborative operation.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-navigation-and-planning",
@@ -55,7 +55,25 @@ public:: true
       "label": "Motion Planning"
     }
   ],
-  "quality": 0.5,
+  "quality": 0.7,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:rb-0066-robot-sensor", "label": "rb 0066 robot sensor"},
+      {"@id": "urn:ngm:class:rb-0049-motion-planning", "label": "rb 0049 motion planning"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:rb-0103-collaborative-operation", "label": "rb 0103 collaborative operation"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:rb-0051-trajectory-planning", "label": "rb 0051 trajectory planning"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:rb-0095-safety-zone", "label": "rb 0095 safety zone"},
+      {"@id": "urn:ngm:class:rb-0092-protective-stop", "label": "rb 0092 protective stop"},
+      {"@id": "urn:ngm:class:obstacle-avoidance", "label": "Obstacle Avoidance"},
+      {"@id": "urn:ngm:class:rb-0105-speed-and-separation-monitoring", "label": "rb 0105 speed and separation monitoring"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -92,6 +110,9 @@ public:: true
 
 - ### Definition
   - ### Primary Definition
+  Collision avoidance in robotics encompasses the algorithms and hardware that allow a robot to detect obstacles — including humans, other robots, fixtures, and unforeseen objects — and modify its motion so as to prevent physically harmful contact. Reactive approaches compute avoidance actions in real time from sensor readings; deliberate approaches embed free-space constraints into the trajectory optimisation during the planning phase. In human-robot collaborative environments collision avoidance is a critical safety function that complements and enables speed and separation monitoring.
+
+  Modern collision avoidance implementations often combine multiple sensing modalities (LiDAR point clouds, depth cameras, safety scanners) with probabilistic occupancy maps or signed-distance fields. The resulting avoidance guarantees depend heavily on sensor latency, map update rate, and the robot's maximum braking distance — all parameters that must be validated as part of the overall risk assessment.
 
 - ### Semantic Classification
   - owl-class:: robotics:rb0052collisionavoidance
@@ -99,7 +120,10 @@ public:: true
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Requires: rb 0066 robot sensor, rb 0049 motion planning
+  - Enables: rb 0103 collaborative operation
+  - Depends on: rb 0051 trajectory planning
+  - Related to: rb 0095 safety zone, rb 0092 protective stop, Obstacle Avoidance, rb 0105 speed and separation monitoring
 
 - ### Content
   - ### Primary Definition

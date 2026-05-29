@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:data-discovery",
   "domain": "infrastructure",
-  "definition": "The process of locating, cataloguing, and understanding available data assets within an organisation's data ecosystem to support analytics and governance.",
+  "definition": "Data Discovery is the iterative process of locating, profiling, cataloguing, and contextualising data assets distributed across an organisation's storage systems, databases, data lakes, SaaS applications, and streaming pipelines to make them findable, understandable, and trustworthy for analytics, governance, and compliance purposes. It encompasses automated metadata extraction, schema inference, data profiling (statistical characterisation), lineage tracing (upstream/downstream dependencies), and classification (sensitivity tagging). Data Discovery is foundational to implementing Data Governance frameworks and enabling self-service analytics in data mesh and data fabric architectures.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-data-management",
@@ -14,17 +14,40 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:metadata-registry",
+        "label": "Metadata Registry"
+      },
+      {
+        "id": "urn:ngm:class:data-lake",
+        "label": "Data Lake"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": []

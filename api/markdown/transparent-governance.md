@@ -8,6 +8,12 @@
 
 - ### Relationships
   - is-subclass-of:: [[Governance]]
+  - requires [[Accountability]]
+  - requires [[Audit Trail]]
+  - enables [[Transparency]]
+  - enables [[Regulatory Compliance]]
+  - uses [[Smart Contract]]
+  - uses [[DAO]]
 
 - ### Content
 

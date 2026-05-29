@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:git-hub-actions",
   "domain": "infrastructure",
-  "definition": "Git Hub Actions is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A CI/CD automation platform integrated into GitHub that executes workflow pipelines triggered by repository events, schedules, or manual dispatch. GitHub Actions enables ML model training, data versioning with DVC, experiment tracking with MLflow, fairness testing, Docker container builds, and scheduled retraining, making it the standard orchestration layer for MLOps pipelines on GitHub-hosted or self-hosted runners.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-software-engineering",
@@ -13,21 +13,49 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:machine-learning-pipeline",
+        "label": "Machine Learning Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:machine-learning-infrastructure",
+        "label": "Machine Learning Infrastructure"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:fairness-oecd",
+        "label": "Fairness (OECD)"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": []

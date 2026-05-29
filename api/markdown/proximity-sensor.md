@@ -1,13 +1,19 @@
 - ### Definition
-  - ### Primary Definition
+  - An electronic device that detects the presence or distance of nearby objects without physical contact, using capacitive, inductive, ultrasonic, optical, or magnetic principles. Proximity sensors are foundational to robotic collision avoidance, autonomous navigation, and spatial mapping in both physical and hybrid physical-digital environments.
 
 - ### Semantic Classification
-  - owl-class:: robotics:rb0071proximitysensor
+  - owl-class:: robotics:ProximitySensor
   - owl-role:: Concept
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **partOf** [[Robot Sensor]] — proximity sensors are a category of robot sensor providing distance and presence data
+  - **partOf** [[Robotic System]] — proximity sensors are integral components of robotic perception systems
+  - **enables** [[Autonomous Navigation]] — proximity sensing is a prerequisite for safe autonomous movement
+  - **enables** [[Robot Safety]] — proximity detection prevents collisions between robots and humans or obstacles
+  - **enables** [[Spatial Mapping]] — arrays of proximity sensors contribute distance measurements to spatial maps
+  - **relatedTo** [[Sensor Fusion]] — proximity sensor data is fused with other modalities for robust perception
+  - **relatedTo** [[Lidar]] — lidar is a long-range proximity sensing technology used for precise distance measurement
 
 - ### Content
   - ### Primary Definition

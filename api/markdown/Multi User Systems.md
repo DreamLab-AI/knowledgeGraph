@@ -42,16 +42,33 @@ public:: true
   "@id": "urn:ngm:class:multi-user-systems",
   "@type": "Class",
   "label": "Multi User Systems",
-  "definition": "Multi User Systems is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Networked platforms that enable multiple simultaneous participants to share, interact with, and mutually modify a common virtual environment in real time. Multi-user systems require state synchronisation, authority arbitration, conflict resolution, and low-latency communication to maintain coherent shared presence across distributed clients.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:networking-technology", "label": "Networking Technology"},
+      {"@id": "urn:ngm:class:latency", "label": "Latency"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:avatar", "label": "Avatar"},
+      {"@id": "urn:ngm:class:network-quality-metric", "label": "Network Quality Metric"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"},
+      {"@id": "urn:ngm:class:mixed-reality-platform", "label": "Mixed Reality Platform"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:distributed-system", "label": "Distributed System"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -87,14 +104,20 @@ public:: true
 
 
 - ### Definition
-  - Multi User Systems is a concept within the metaverse domain. Further enrichment pending.
+  - Networked platforms that enable multiple simultaneous participants to share, interact with, and mutually modify a common virtual environment in real time. Multi-user systems require state synchronisation, authority arbitration, conflict resolution, and low-latency communication to maintain coherent shared presence across distributed clients.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:MultiUserSystems
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires** [[Networking Technology]] — real-time data synchronisation over a network is the core dependency
+  - **requires** [[Latency]] — low latency is a hard requirement for coherent shared presence
+  - **hasPart** [[Avatar]] — each participant is represented by an avatar within the shared space
+  - **hasPart** [[Network Quality Metric]] — metrics such as RTT and packet loss are monitored to maintain experience quality
+  - **enables** [[Metaverse]] — persistent multi-user virtual worlds are the primary application of MUS technology
+  - **enables** [[Mixed Reality Platform]] — MR platforms rely on multi-user infrastructure for collaborative sessions
+  - **dependsOn** [[Distributed System]] — state consistency across clients requires distributed systems design
 
 - ### Content
 

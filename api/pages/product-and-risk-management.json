@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:product-and-risk-management",
   "domain": "infrastructure",
-  "definition": "Product and Risk Management is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A framework mapping the scientific method onto lean product development, guiding AI product decisions through vision setting, market analysis, and strategic planning. It addresses SWOT evaluation, moat assessment, and risk mitigation for AI products\u2014particularly the legal, privacy, and safety risks introduced by generative AI and the EU regulatory landscape.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-software-engineering",
@@ -14,20 +14,48 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:product-design",
+        "label": "Product Design"
+      },
+      {
+        "id": "urn:ngm:class:safety-and-alignment",
+        "label": "Safety and alignment"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ai-risk",
+        "label": "AI Risk"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:politics-law-privacy",
+        "label": "Politics, Law, Privacy"
+      },
+      {
+        "id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      }
+    ]
   },
   "wikilinks": [
     {

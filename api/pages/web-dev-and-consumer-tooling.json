@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:web-dev-and-consumer-tooling",
   "domain": "infrastructure",
-  "definition": "Web Dev and Consumer Tooling is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "The ecosystem of frameworks, deployment platforms, low-code builders, and developer utilities used to construct and ship web applications and AI-assisted consumer products. Encompasses front-end frameworks (React Three Fiber, Streamlit, FastHTML), deployment pipelines (Vercel), and no-code/low-code AI builders enabling rapid product prototyping.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-software-engineering",
@@ -14,19 +14,42 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:web-technology",
+        "label": "Web Technology"
+      },
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      }
+    ],
     "relatedTo": []
   },
   "wikilinks": [

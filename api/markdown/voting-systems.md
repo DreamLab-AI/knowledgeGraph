@@ -7,7 +7,13 @@
   - belongs-to-domain:: [[BlockchainDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses [[Smart Contract]]
+  - uses [[Zero-Knowledge Proof]]
+  - uses [[Self Sovereign Identity]]
+  - enables [[On-chain Governance]]
+  - enables [[DAO]]
+  - relatedTo [[Privacy]]
+  - relatedTo [[Governance Token]]
 
 - ### Content
   - Blockchain-based voting systems address electoral integrity challenges whilst facing profound security concerns documented by leading academic researchers. Implementations demonstrate operational viability: Voatz processed **80,000+ votes across 50+ elections** with **4 audits** confirming authenticity, Estonia's **50%+ votes** now cast online through world's longest-running system (since 2005), and cost reductions from **$7-25 per vote to under $0.50** generate **$300 million savings** (2023 study). However, **MIT research (2020)** identified Voatz vulnerabilities enabling vote alteration without software independence, **Trail of Bits audit** discovered **79 findings** (one-third high-severity), **Moscow 2019** encryption cracked in **20 minutes** by French researcher, and **Swiss Post 2019** trapdoor commitment scheme enabled undetectable manipulation, leading **security expert Bruce Schneier** to conclude "Blockchain makes security worse" whilst academic consensus reaches "nearly universal" agreement that no technology can adequately secure online public elections.

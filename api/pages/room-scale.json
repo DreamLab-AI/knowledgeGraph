@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:room-scale",
   "domain": "spatial-computing",
-  "definition": "Room Scale is a spatial computing concept and a type of spatial-computing.",
+  "definition": "A VR interaction paradigm in which the user can physically walk within a tracked play area \u2014 typically 2m \u00d7 2m or larger \u2014 with inside-out or lighthouse-based positional tracking translating real-world movement into the virtual environment. Room-scale VR requires boundary (chaperone) systems to prevent collisions with physical obstacles, and is contrasted with seated or standing-only VR experiences.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -13,12 +13,30 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:virtual-reality-platform",
+        "label": "Virtual Reality Platform"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:haptics",
+        "label": "Haptics"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -26,8 +44,22 @@
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:metaverse-infrastructure",
+        "label": "Metaverse Infrastructure"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:xr-meeting-space",
+        "label": "XR Meeting Space"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": []

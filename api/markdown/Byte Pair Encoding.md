@@ -44,13 +44,28 @@ public:: true
   "label": "Byte Pair Encoding",
   "definition": "A subword tokenisation algorithm that iteratively merges the most frequent pairs of characters or character sequences to build a vocabulary, originally developed for data compression.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
     }
   ],
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:tokenisation", "label": "Tokenisation"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
+      {"@id": "urn:ngm:class:text-generation", "label": "Text Generation"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:transformer", "label": "Transformer"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -95,7 +110,11 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - partOf [[Tokenisation]]
+  - enables [[Natural Language Processing]]
+  - enables [[Text Generation]]
+  - uses [[Transformer]]
+  - relatedTo [[Large Language Models]]
 
 - ### Content
   - A subword tokenisation algorithm that iteratively merges the most frequent pairs of characters or character sequences to build a vocabulary, originally developed for data compression.

@@ -38,15 +38,32 @@ public:: true
   "@id": "urn:ngm:class:accounts",
   "@type": "Class",
   "label": "Accounts",
-  "definition": "Accounts is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Accounts denotes the financial reporting and filing obligations of a limited company under UK law, encompassing annual accounts preparation, Companies House submission deadlines, confirmation statements, and the penalties regime for late filing.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-security-and-identity",
       "label": "Security and Identity"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"},
+      {"@id": "urn:ngm:class:governance", "label": "Governance"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:privacy", "label": "Privacy"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:compliance-audit-trail", "label": "Compliance Audit Trail"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -83,7 +100,7 @@ public:: true
 
 
 - ### Definition
-  - Accounts is a concept within the ngm domain.
+  - Accounts denotes the financial reporting and filing obligations of a limited company under UK law, covering annual accounts preparation, Companies House submission deadlines (9 months from accounting reference date for subsequent years), confirmation statements, and the penalties regime for late filing.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:Accounts
@@ -91,6 +108,10 @@ public:: true
 
 - ### Relationships
   - bridges-to:: [[Blockchain]]
+  - requires:: [[Compliance Framework]], [[Governance]]
+  - supports:: [[Compliance Audit Trail]]
+  - dependsOn:: [[Risk Management]]
+  - relatedTo:: [[Privacy]]
 
 - ### Content
   - For a limited company in the UK, the due dates for annual accounts are determined by your company's 'accounting reference date,' which is the end of your financial year. Here's how it typically works:

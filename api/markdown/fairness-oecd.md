@@ -7,7 +7,10 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **relatedTo**: Explainability (OECD), Accountability (OECD), Equity — fairness is one of a cluster of OECD principles that mutually reinforce trustworthy AI deployment
+  - **requires**: Data Governance, AI Regulation — effective bias mitigation requires governed training data and enforceable regulatory mandates
+  - **enables**: Human Centred Values — fair AI systems operationalise the broader commitment to human-centred design
+  - **contrastsWith**: AI Ethics — fairness is a specific, measurable commitment within the wider AI ethics discourse
 
 - ### Content
   - AI systems should not create or reinforce unfair bias, discrimination or disparate impacts on individuals or groups based on protected characteristics, and should incorporate appropriate safeguards to ensure equitable treatment and opportunity whilst respecting legitimate differentiation based on actual relevant differences.

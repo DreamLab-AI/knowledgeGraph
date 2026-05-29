@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:dropout",
   "domain": "artificial-intelligence",
-  "definition": "Dropout is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "Dropout is a regularisation technique for neural network training in which a randomly selected fraction of neuron activations is set to zero during each forward pass, preventing neurons from co-adapting and forcing the network to learn redundant representations. By randomly deactivating 20\u201350% of units per training step, dropout acts as an ensemble method \u2014 each mini-batch trains a slightly different network architecture \u2014 significantly reducing overfitting on limited training datasets. At inference time, all neurons are active but their outputs are scaled by the retention probability.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -14,19 +14,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:training",
+        "label": "Training"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:regularisation",
+        "label": "Regularisation"
+      }
+    ],
     "relatedTo": []
   },
   "wikilinks": [

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:mathematical-reasoning",
   "domain": "artificial-intelligence",
-  "definition": "The capacity of an AI system to perform symbolic manipulation, proof construction, and quantitative inference over structured mathematical problems.",
+  "definition": "Mathematical reasoning is the capacity of an AI system to perform multi-step symbolic manipulation, formal proof construction, and quantitative inference over structured mathematical problems including arithmetic, algebra, geometry, and theorem proving. It is considered a rigorous benchmark for general intelligence because correct solutions require compositional reasoning without shortcut pattern matching. Contemporary large language models exhibit emergent mathematical reasoning capabilities when combined with chain-of-thought prompting and tool use (e.g., code interpreters), though formal verification of proofs remains an open research challenge.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-research-area",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:chain-of-thought-reasoning",
+        "label": "Chain-of-Thought Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

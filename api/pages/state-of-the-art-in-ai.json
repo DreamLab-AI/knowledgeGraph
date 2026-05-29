@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:state-of-the-art-in-ai",
   "domain": "artificial-intelligence",
-  "definition": "State of the art in AI is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "State of the Art in AI is a curated survey of the current frontier of artificial intelligence capability, covering large language models, generative AI, multimodal systems, hardware advances, and sociotechnical implications. It synthesises emerging research directions, benchmark performance milestones, and near-term deployment trajectories across proprietary and open-source AI ecosystems.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-research-area",
@@ -13,21 +13,57 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:proprietary-large-language-models",
+        "label": "Proprietary Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:open-generative-ai-tools",
+        "label": "Open Generative AI tools"
+      },
+      {
+        "id": "urn:ngm:class:hardware-and-edge",
+        "label": "Hardware and Edge"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:adoption-of-convergent-technologies",
+        "label": "Adoption of Convergent Technologies"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:politics-law-privacy",
+        "label": "Politics, Law, Privacy"
+      },
+      {
+        "id": "urn:ngm:class:update-cycle",
+        "label": "Update Cycle"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:soon-next-later-ai-futurology",
+        "label": "Soon-Next-Later (AI futurology)"
+      },
+      {
+        "id": "urn:ngm:class:trust-and-safety",
+        "label": "Trust and Safety"
+      }
+    ]
   },
   "wikilinks": [
     {

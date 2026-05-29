@@ -1,12 +1,14 @@
 - ### Definition
-  - List Of Agent Projects is a concept within the ngm domain.
+  - A curated catalogue of open-source and commercial autonomous agent frameworks and projects, spanning general-purpose agents (AutoGPT, BabyAGI, CAMEL), coding agents (GPT Engineer, SWE-Agent), productivity agents, research agents, and DIY framework scaffolds (CrewAI, MetaGPT, AutoGen). The list provides practitioners with an entry point into the rapidly expanding agentic AI ecosystem.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:ListOfAgentProjects
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart:: [[Autonomous Agent]], [[Agentic AI]]
+  - uses:: [[Large Language Models]], [[Tool Use]]
+  - relatedTo:: [[Reinforcement Learning]], [[Natural Language Processing]]
 
 - ### Content
   - Agent Projects

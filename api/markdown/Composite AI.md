@@ -46,16 +46,34 @@ public:: true
   "@id": "urn:ngm:class:composite-ai",
   "@type": "Class",
   "label": "Composite AI",
-  "definition": "Composite AI is a type of Artificial Intelligence in the artificial intelligence domain.",
+  "definition": "Composite AI is an architectural paradigm that integrates multiple distinct AI techniques — such as machine learning, symbolic reasoning, natural language processing, computer vision, and knowledge graphs — into a unified hierarchical system to solve complex real-world problems that no single technique alone can address adequately. By orchestrating complementary AI capabilities, composite AI achieves higher contextual understanding, adaptability, and decision-making precision than monolithic approaches. It is increasingly the default pattern in enterprise intelligent automation, autonomous systems, and multimodal applications.",
   "domain": "artificial-intelligence",
   "maturity": "emerging",
+  "qualityScore": 0.75,
+  "quality": 0.75,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-research-area",
       "label": "AI Research Area"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:symbolic-reasoning", "label": "Symbolic Reasoning"},
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:ensemble-methods", "label": "Ensemble Methods"},
+      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
+      {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"},
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
+      {"@id": "urn:ngm:class:multimodal", "label": "multimodal"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

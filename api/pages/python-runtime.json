@@ -5,16 +5,16 @@
   "public": true,
   "classIri": "urn:ngm:class:python-runtime",
   "domain": "artificial-intelligence",
-  "definition": "The interpreter and associated standard library environment that executes Python bytecode, managing memory allocation, garbage collection, and module imports.",
+  "definition": "The Python runtime is the interpreter process and associated standard library environment responsible for compiling Python source to bytecode, executing that bytecode in a virtual machine, managing heap memory through reference-counting combined with a cyclic garbage collector, and resolving module imports via the package search path. CPython\u2014the canonical C-language reference implementation\u2014uses a Global Interpreter Lock (GIL) that serialises bytecode execution across threads, making multi-processing the preferred concurrency model for CPU-bound workloads. The Python runtime underpins the dominant AI/ML toolchain including PyTorch, TensorFlow, and the Hugging Face ecosystem, making its performance characteristics, extension mechanisms, and packaging conventions central concerns for AI infrastructure engineering.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,11 +23,34 @@
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:machine-learning-framework",
+        "label": "Machine Learning Framework"
+      },
+      {
+        "id": "urn:ngm:class:python",
+        "label": "Python"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:runtime-environment",
+        "label": "Runtime Environment"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

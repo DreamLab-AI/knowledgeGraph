@@ -1,12 +1,15 @@
 - ### Definition
-  - Python to build RAG data page is a concept within the ngm domain.
+  - Python to build RAG data page is a Logseq Pyodide script that enumerates all pages with the `public:: true` property, loads their block content, applies text-cleaning routines, and appends the cleaned content to a FULLRAG page. This serves as the consolidated corpus for local Retrieval-Augmented Generation pipelines, enabling semantic search over the public knowledge graph without external data transfer.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:PythonToBuildRAGDataPage
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses:: [[Knowledge Graph]], [[Data Pipeline]], [[Tokenization]]
+  - enables:: [[Retrieval-Augmented Generation]], [[Semantic Search]]
+  - dependsOn:: [[Embedding Model]], [[Vector Database]]
+  - relatedTo:: [[Knowledge Management]]
 
 - ### Content
   - Note Python will load the first time this block is evaluated

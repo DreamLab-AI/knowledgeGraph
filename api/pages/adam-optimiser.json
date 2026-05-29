@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:adam-optimiser",
   "domain": "artificial-intelligence",
-  "definition": "The Adam optimiser is an adaptive gradient descent algorithm that combines momentum and RMSProp to compute per-parameter learning rates, enabling efficient training of deep neural networks.",
+  "definition": "The Adam optimiser (Adaptive Moment Estimation) is a first-order gradient-based optimisation algorithm that maintains exponentially decaying moving averages of both past gradients (first moment) and past squared gradients (second moment) to compute per-parameter adaptive learning rates. It combines the advantages of momentum-based optimisation and the RMSProp algorithm, making it robust to sparse gradients and non-stationary objectives. Adam is the de-facto default optimiser for training transformer-based large language models and deep neural networks across most domains.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -14,11 +14,29 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +45,12 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

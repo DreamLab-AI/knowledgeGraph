@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:decentralized-identity-foundation",
   "domain": "blockchain",
-  "definition": "An open industry consortium developing interoperable standards, protocols, and reference implementations for decentralised digital identity systems.",
+  "definition": "The Decentralized Identity Foundation (DIF) is an open industry consortium that develops interoperable specifications, protocols, and reference implementations for decentralised digital identity systems. It produces work items including the DIF Presentation Exchange specification for credential proof requests, the Decentralized Web Node (DWN) protocol for identity-linked personal data storage, and the Sidetree protocol family for scalable DID method implementations. DIF operates as a complement to W3C standards, producing the lower-level coordination layer that W3C DID and verifiable credential specifications rely on.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-governance-and-regulation",
@@ -14,20 +14,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "id": "urn:ngm:class:did-document",
+        "label": "DID Document"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      },
+      {
+        "id": "urn:ngm:class:identity",
+        "label": "Identity"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

@@ -48,7 +48,8 @@ public:: true
   "label": "Virtual Land Rights",
   "definition": "Blockchain-based ownership and property rights for digital land parcels in metaverse platforms, represented as NFTs that serve as digital deeds providing proof of ownership, development rights, and transferability of virtual real estate assets.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
@@ -59,11 +60,46 @@ public:: true
       "label": "Digital Property Rights"
     }
   ],
-  "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:blockchain-infrastructure",
+        "label": "Blockchain Infrastructure"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:virtual-location",
+        "label": "Virtual Location"
+      },
+      {
+        "@id": "urn:ngm:class:real-estate-tokenization",
+        "label": "Real Estate Tokenization"
+      },
+      {
+        "@id": "urn:ngm:class:nft-ownership-proof",
+        "label": "NFT Ownership Proof"
+      }
+    ]
   }
 }
 ```
@@ -109,6 +145,13 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Digital Property Rights]]
+  - Uses: [[NFT]]
+  - Uses: [[Smart Contract]]
+  - Uses: [[Blockchain]]
+  - Requires: [[Blockchain Infrastructure]]
+  - Related To: [[Virtual Location]]
+  - Related To: [[Real Estate Tokenization]]
+  - Related To: [[NFT Ownership Proof]]
 
 - ### Content
 

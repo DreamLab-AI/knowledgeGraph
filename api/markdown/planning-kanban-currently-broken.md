@@ -1,12 +1,14 @@
 - ### Definition
-  - Planning Kanban - currently broken is a concept within the ngm domain.
+  - A Kanban-style project planning board within a Logseq knowledge graph that aggregates query-driven progress views across active projects. It uses embedded block queries to surface tasks tagged with progress properties, enabling at-a-glance visibility of TODO, DOING, and DONE states across linked project nodes such as PlayerTwo and ParentsGuideToAI.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:PlanningKanbanCurrentlyBroken
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart: [[Projects]], [[Player Two]]
+  - uses: [[Automated Planning]]
+  - relatedTo: [[Multi-Agent Systems]], [[Agentic Alliance]]
 
 - ### Content
   - {{renderer :kboard-query, High level Projects View, progress, TODO, DOING, DONE, cover, 260px}}

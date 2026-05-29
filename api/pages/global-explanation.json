@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:global-explanation",
   "domain": "artificial-intelligence",
-  "definition": "Interpretability techniques that characterise the overall behaviour, decision-making patterns, and feature importance of a machine learning model across its entire input space, rather than explaining individual predictions.",
+  "definition": "Interpretability techniques that characterise the overall behaviour, decision-making patterns, and feature importance of a machine learning model across its entire input space, rather than explaining individual predictions. Global explanations\u2014such as feature importance rankings, partial dependence plots, and surrogate model trees\u2014reveal systematic model tendencies and support auditing, debugging, and regulatory compliance.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -17,20 +17,48 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-transparency",
+        "label": "Model Transparency"
+      },
+      {
+        "id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:local-explanation",
+        "label": "Local Explanation"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:feature-importance",
+        "label": "Feature Importance"
+      },
+      {
+        "id": "urn:ngm:class:model-interpretability",
+        "label": "Model Interpretability"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      }
+    ],
     "relatedTo": []
   },
   "wikilinks": [

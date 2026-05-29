@@ -46,7 +46,7 @@ public:: true
   "@id": "urn:ngm:class:text-to-speech",
   "@type": "Class",
   "label": "Text-to-Speech",
-  "definition": "Text-to-Speech is a artificial intelligence concept and a type of Natural Language Processing.",
+  "definition": "A speech-synthesis technology that converts written text into spoken audio output using neural vocoder models, enabling voice interfaces, accessibility tools, voice assistants, and real-time narration. Modern TTS systems leverage transformer-based architectures to produce natural, expressive speech with controllable prosody.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -59,7 +59,24 @@ public:: true
       "label": "Natural Language Processing"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:speech-recognition", "label": "Speech Recognition"},
+      {"@id": "urn:ngm:class:voice-cloning", "label": "Voice Cloning"},
+      {"@id": "urn:ngm:class:natural-language-understanding", "label": "Natural Language Understanding"},
+      {"@id": "urn:ngm:class:dialogue-system", "label": "Dialogue System"},
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:voice-interaction", "label": "Voice Interaction"},
+      {"@id": "urn:ngm:class:real-time-language-translation", "label": "Real-Time Language Translation"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

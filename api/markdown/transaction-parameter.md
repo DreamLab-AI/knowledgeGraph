@@ -7,6 +7,10 @@
 
 - ### Relationships
   - is-subclass-of:: [[Blockchain Transaction]]
+  - **partOf**: Blockchain Transaction
+  - **uses**: Gas Limit, Gas Price, EIP-1559
+  - **enables**: Gas Optimization, MEV
+  - **relatedTo**: Smart Contract, Layer2
 
 - ### Content
 

@@ -38,16 +38,33 @@ public:: true
   "@id": "urn:ngm:class:financialised-agentic-memetics",
   "@type": "Class",
   "label": "Financialised Agentic Memetics",
-  "definition": "Financialised Agentic Memetics is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "The phenomenon in which AI agents and autonomous social actors propagate memetic content—ideas, tokens, political positions—tied to speculative financial instruments (memecoins, programmatically-aligned tokens) that derive value from attention and community adoption rather than underlying utility. This creates feedback loops between AI terminal outputs, social media virality, and tokenised capital allocation with tangible real-world effects.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-application",
       "label": "AI Application"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:crypto-token", "label": "Crypto Token"},
+      {"@id": "urn:ngm:class:social-token-economy", "label": "Social Token Economy"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"},
+      {"@id": "urn:ngm:class:dao", "label": "DAO"},
+      {"@id": "urn:ngm:class:ai-agent-system", "label": "AI Agent System"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:carbon-credit-token", "label": "Carbon Credit Token"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -83,14 +100,17 @@ public:: true
 
 
 - ### Definition
-  - Financialised Agentic Memetics is a concept within the ngm domain.
+  - The phenomenon in which AI agents and autonomous social actors propagate memetic content—ideas, tokens, political positions—tied to speculative financial instruments (memecoins, programmatically-aligned tokens) that derive value from attention and community adoption rather than underlying utility. This creates feedback loops between AI terminal outputs, social media virality, and tokenised capital allocation with tangible real-world effects.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:FinancialisedAgenticMemetics
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: Crypto Token, Social Token Economy — memecoins and social tokens are the primary financial instruments through which attention is monetised
+  - **relatedTo**: Agentic AI, DAO, AI Agent System — autonomous agents and decentralised autonomous organisations are key actors in this ecosystem
+  - **enables**: Carbon Credit Token — programmatically-aligned tokens demonstrate that memetic capital can fund tangible environmental actions
+  - **dependsOn**: Blockchain — on-chain settlement and provenance verification underpin the financialisation layer
 
 - ### Content
   - Memecoins are tokens representing an idea

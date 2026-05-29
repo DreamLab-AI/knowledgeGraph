@@ -10,7 +10,10 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **partOf**: Medical AI (parent application domain)
+  - **uses**: Graph Neural Network (molecular property prediction), Deep Learning (protein structure and binding prediction), Reinforcement Learning (molecule generation optimisation)
+  - **enables**: Treatment Planning AI (downstream clinical application of discovered candidates)
+  - **relatedTo**: Computer Vision (microscopy image analysis), Drug Discovery (traditional process being augmented)
 
 - ### Content
   - Drug Discovery AI encompasses artificial intelligence systems that accelerate pharmaceutical research and development through automated molecular design, virtual screening, target identification, toxicity prediction, and clinical trial optimisation. These systems integrate cheminformatics, molecular modelling, and machine learning to reduce drug development timelines and costs whilst improving success rates.

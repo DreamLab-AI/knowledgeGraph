@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:user-awareness",
   "@type": "Class",
   "label": "User Awareness",
-  "definition": "The understanding and knowledge that users possess about digital systems, privacy practices, security risks, and their rights when interacting with metaverse platforms and virtual environments.",
+  "definition": "The level of understanding and knowledge that users possess about digital systems, privacy practices, security risks, and their rights when interacting with metaverse platforms and virtual environments. Effective user awareness encompasses privacy literacy, recognition of security threats, platform policy comprehension, and knowledge of available remedies, forming a prerequisite for informed consent and safe participation.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
@@ -59,11 +60,46 @@ public:: true
       "label": "User Education"
     }
   ],
-  "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:user-education",
+        "label": "User Education"
+      },
+      {
+        "@id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy By Design"
+      },
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:user-safety",
+        "label": "User Safety"
+      },
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      }
+    ]
   }
 }
 ```
@@ -109,6 +145,9 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[User Education]]
+  - Requires [[User Education]], [[Privacy]]
+  - Supports [[User Safety]], [[Accountability]]
+  - Related to [[Privacy By Design]], [[Cybersecurity]], [[AI Ethics]]
 
 - ### Content
 

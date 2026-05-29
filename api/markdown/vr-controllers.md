@@ -8,6 +8,12 @@
 
 - ### Relationships
   - is-subclass-of:: [[XR Hardware]]
+  - Has part [[Haptic Feedback]]
+  - Has part [[Motion Tracking]]
+  - Enables [[Immersive Experience]]
+  - Enables [[Hand Tracking]]
+  - Uses [[Virtual Reality (VR)]]
+  - Related to [[Human Computer Interaction]]
 
 - ### Content
 

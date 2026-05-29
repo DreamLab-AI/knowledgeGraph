@@ -66,7 +66,7 @@ public:: true
   "@id": "urn:ngm:class:finality",
   "@type": "Class",
   "label": "Finality",
-  "definition": "Transaction irreversibility within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "The property of a blockchain transaction or block whereby it becomes irreversible and cannot be reverted by any future state of the network. Probabilistic finality—as in proof-of-work chains—increases with confirmation depth, while deterministic finality—as in BFT-based protocols—is achieved at the point of commitment, with strong consequences for payment settlement, cross-chain interoperability, and user trust.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -77,13 +77,26 @@ public:: true
     {
       "@id": "urn:ngm:class:blockchain-entity",
       "label": "Blockchain Entity"
-    },
-    {
-      "@id": "urn:ngm:class:network-component",
-      "label": "NetworkComponent"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:probabilistic-finality", "label": "Probabilistic Finality"},
+      {"@id": "urn:ngm:class:deterministic-finality", "label": "Deterministic Finality"},
+      {"@id": "urn:ngm:class:transaction-finality", "label": "Transaction Finality"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:consensus-protocol", "label": "Consensus Protocol"},
+      {"@id": "urn:ngm:class:transaction-confirmation", "label": "Transaction Confirmation"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:nakamoto-consensus", "label": "Nakamoto Consensus"},
+      {"@id": "urn:ngm:class:chain-reorganization", "label": "Chain Reorganization"},
+      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"},
+      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

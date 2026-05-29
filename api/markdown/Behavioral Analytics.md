@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:behavioral-analytics",
   "@type": "Class",
   "label": "Behavioral Analytics",
-  "definition": "Behavioral Analytics is a artificial intelligence concept and a type of Machine Learning.",
+  "definition": "The application of statistical and machine learning methods to large-scale records of user or system actions — including clickstreams, transaction logs, application events, and network telemetry — in order to model normal behaviour, detect anomalies, predict future actions, and personalise experiences. Behavioural analytics underpins cybersecurity (UEBA — user and entity behaviour analytics), e-commerce recommendation, digital health monitoring, and fraud detection.",
   "domain": "artificial-intelligence",
   "maturity": "established",
+  "qualityScore": 0.8,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
@@ -59,7 +60,26 @@ public:: true
       "label": "Machine Learning"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:anomaly-detection", "label": "Anomaly Detection"},
+      {"@id": "urn:ngm:class:pattern-recognition", "label": "Pattern Recognition"},
+      {"@id": "urn:ngm:class:predictive-analytics", "label": "Predictive Analytics"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"},
+      {"@id": "urn:ngm:class:data-analytics", "label": "Data Analytics"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
+      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

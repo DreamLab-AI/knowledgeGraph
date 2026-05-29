@@ -7,7 +7,11 @@
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 
 - ### Relationships
-  - bridges-to:: [[Telecollaboration]] (domain: tc)
+  - bridges-to:: [[Telecollaboration]]
+  - partOf:: [[Transformer Architecture]]
+  - uses:: [[Natural Language Processing]]
+  - enables:: [[Large Language Models]], [[ALBERT]]
+  - relatedTo:: [[Neural Network Architecture]], [[BART]]
 
 - ### Content
   - A mechanism that controls which positions in a sequence can attend to which other positions, typically implemented by adding large negative values before softmax to effectively zero out unwanted attention weights.

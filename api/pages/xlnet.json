@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:xlnet",
   "domain": "spatial-computing",
-  "definition": "A generalised autoregressive pre-training mod that learns bidirectional contexts by maximising expected likelihood over all permutations of the factorisation order, overcoming limitations of BERT's masked language modelling.",
+  "definition": "A generalised autoregressive pre-training model that learns bidirectional contexts by maximising the expected likelihood over all permutations of the token factorisation order, using a two-stream self-attention mechanism to avoid information leakage. XLNet integrates the Transformer-XL segment recurrence mechanism for long-range dependency modelling and outperforms BERT on 20 NLU benchmarks.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -14,16 +14,44 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:vocabulary",
+        "label": "Vocabulary"
+      },
+      {
+        "id": "urn:ngm:class:training",
+        "label": "Training"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:word-piece",
+        "label": "WordPiece"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

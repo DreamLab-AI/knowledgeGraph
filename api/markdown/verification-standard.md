@@ -8,6 +8,14 @@
 
 - ### Relationships
   - is-subclass-of:: [[Standards]]
+  - Standardized By [[Standards]]
+  - Standardized By [[Open Standard]]
+  - Requires [[Cryptography]]
+  - Requires [[Digital Identity]]
+  - Supports [[Identity Verification]]
+  - Supports [[Authentication]]
+  - Supports [[Access Control]]
+  - Related To [[Data Governance]]
 
 - ### Content
 

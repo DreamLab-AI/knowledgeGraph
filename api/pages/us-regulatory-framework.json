@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:us-regulatory-framework",
   "domain": "blockchain",
-  "definition": "US cryptocurrency regulation operates through a fragmented multi-agency framework where SEC|Securities and Exchange Commission applies securities law to tokens, FinCEN|Financial Crimes Enforcement Network supervises money transmission and AMLKYCCompliance|anti-money laundering, the",
+  "definition": "The US Regulatory Framework for cryptocurrency operates through a fragmented multi-agency structure in which the SEC applies securities law to tokens, FinCEN supervises money transmission and anti-money laundering compliance, the CFTC regulates commodity-classified digital assets and derivatives, and the OCC addresses banking integration. This jurisdictional overlap creates significant compliance complexity for exchanges, DeFi protocols, and digital asset issuers absent comprehensive Congressional legislation.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-governance-and-regulation",
@@ -13,21 +13,53 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.4,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-compliance",
+        "label": "Blockchain Compliance"
+      }
+    ],
     "enables": [],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:bc-governance-and-regulation",
+        "label": "Governance and Regulation"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin-regulation",
+        "label": "Stablecoin Regulation"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      }
+    ]
   },
   "wikilinks": [
     {

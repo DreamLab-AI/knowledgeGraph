@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:long-short-term-memory",
   "domain": "artificial-intelligence",
-  "definition": "Long Short Term Memory is a artificial intelligence concept and a type of Recurrent Neural Network.",
+  "definition": "Long Short-Term Memory (LSTM) is a specialised recurrent neural network architecture introduced by Hochreiter and Schmidhuber (1997) that mitigates the vanishing gradient problem through gating mechanisms\u2014input, forget, and output gates\u2014enabling selective retention or forgetting of information across long sequences. LSTMs underpin sequence modelling tasks in natural language processing, time-series forecasting, and speech recognition, though they have largely been superseded by Transformer architectures for large-scale language tasks.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-model-architecture",
@@ -18,19 +18,51 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:attention",
+        "label": "Attention"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:ai-model-architecture",
+        "label": "AI Model Architecture"
+      }
+    ],
     "relatedTo": []
   },
   "wikilinks": [

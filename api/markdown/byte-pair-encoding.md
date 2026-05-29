@@ -7,7 +7,11 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - partOf [[Tokenisation]]
+  - enables [[Natural Language Processing]]
+  - enables [[Text Generation]]
+  - uses [[Transformer]]
+  - relatedTo [[Large Language Models]]
 
 - ### Content
   - A subword tokenisation algorithm that iteratively merges the most frequent pairs of characters or character sequences to build a vocabulary, originally developed for data compression.

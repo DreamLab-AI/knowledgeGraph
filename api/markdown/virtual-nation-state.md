@@ -8,6 +8,13 @@
 
 - ### Relationships
   - is-subclass-of:: [[Digital Governance]]
+  - Uses [[Decentralised Identity]]
+  - Uses [[DAO]]
+  - Uses [[Smart Contract]]
+  - Enables [[Digital Identity]]
+  - Enables [[Governance Model]]
+  - Related To [[Metaverse]]
+  - Related To [[Identity Management]]
 
 - ### Content
 

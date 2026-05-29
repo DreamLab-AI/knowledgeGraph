@@ -1,5 +1,5 @@
 - ### Definition
-  - Agentic Workshop is a concept within the ngm domain.
+  - A structured training programme introducing practitioners to agentic AI systems: context engineering, memory management, agent orchestration tools, and practical case studies across project management, data visualisation, and academic research via phased multi-session instruction.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:AgenticWorkshop
@@ -7,6 +7,10 @@
 
 - ### Relationships
   - bridges-to:: [[AI Agent System]]
+  - uses:: [[AI Agent System]], [[Large Language Models]]
+  - enables:: [[Agentic AI]], [[Generative AI]]
+  - supports:: [[AI Governance and Ethics]]
+  - relatedTo:: [[Agent Frameworks]], [[Advice for developing GenAI]]
 
 - ### Content
   - {{embed ((68d3ab67-38ca-43b6-b924-439d02c7f3bd))}}

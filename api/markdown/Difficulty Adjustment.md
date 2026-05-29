@@ -70,24 +70,33 @@ public:: true
   "@id": "urn:ngm:class:difficulty-adjustment",
   "@type": "Class",
   "label": "Difficulty Adjustment",
-  "definition": "Mining difficulty recalibration within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "Difficulty Adjustment is a Proof-of-Work consensus mechanism that periodically recalibrates the cryptographic puzzle difficulty so that blocks are produced at a statistically stable rate (e.g., approximately every 10 minutes in Bitcoin). It ensures network stability and security as total hash rate fluctuates.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-protocol-and-consensus",
       "label": "Protocol and Consensus"
-    },
-    {
-      "@id": "urn:ngm:class:blockchain-entity",
-      "label": "Blockchain Entity"
-    },
-    {
-      "@id": "urn:ngm:class:consensus-protocol",
-      "label": "ConsensusProtocol"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:mining", "label": "Mining"},
+      {"@id": "urn:ngm:class:block-reward", "label": "Block Reward"},
+      {"@id": "urn:ngm:class:miner", "label": "Miner"},
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:transaction-fee", "label": "Transaction Fee"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:validator-node", "label": "Validator Node"},
+      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

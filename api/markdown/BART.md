@@ -42,15 +42,33 @@ public:: true
   "@id": "urn:ngm:class:bart",
   "@type": "Class",
   "label": "BART",
-  "definition": "Bidirectional and Auto-Regressive Transformers: a denoising autoencoder for pre-training sequence-to-sequence models, combining bidirectional encoding (like BERT) with autoregressive decoding (like GPT).",
+  "definition": "Bidirectional and Auto-Regressive Transformers: a denoising sequence-to-sequence pre-training architecture developed by Meta AI that combines a bidirectional encoder (as in BERT) with an autoregressive decoder (as in GPT), achieving state-of-the-art results on abstractive summarisation, dialogue, and machine translation through flexible noise-based corruption objectives.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-model-architecture",
       "label": "AI Model Architecture"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
+      {"@id": "urn:ngm:class:attention-mask", "label": "Attention Mask"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:albert", "label": "ALBERT"},
+      {"@id": "urn:ngm:class:ro-berta", "label": "RoBERTa"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
+      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -95,7 +113,10 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses:: [[Transformer Architecture]], [[Attention Mask]]
+  - contrastsWith:: [[ALBERT]], [[RoBERTa]]
+  - enables:: [[Natural Language Processing]], [[Fine Tuning]]
+  - relatedTo:: [[Large Language Models]]
 
 - ### Content
   - Bidirectional and Auto-Regressive Transformers: a denoising autoencoder for pre-training sequence-to-sequence models, combining bidirectional encoding (like BERT) with autoregressive decoding (like GPT).

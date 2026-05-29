@@ -1,16 +1,22 @@
 - ### Definition
-  - Embodied AI is a research field focused on developing intelligent agents that learn and reason through physical or simulated interaction with an environment, grounding perception and action.
+  - Embodied AI is a research paradigm holding that intelligence emerges from the continuous sensorimotor interaction of an agent with its physical or simulated environment, rather than from purely symbolic or language-based reasoning. Embodied agents perceive the world through sensors (cameras, proprioceptive IMUs, tactile arrays) and act upon it through actuators, learning to navigate, manipulate, and cooperate via reinforcement learning or imitation learning in physics simulators. The field bridges robotics, cognitive science, and deep learning, with applications in household manipulation, autonomous navigation, and grounded language understanding.
 
 - ### Semantic Classification
   - owl-class:: embodied-ai:Embodied AI
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- Stub page — relationships inherited from referencing pages -->
+  - requires [[Simulation]]
+  - requires [[Reinforcement Learning]]
+  - enables [[Robot Learning]]
+  - enables [[Sim-to-Real Transfer]]
+  - relatedTo [[Embodied AI Simulation]]
+  - relatedTo [[Robotics]]
 
 - ### Content
-  - #Public page
-  - automatically published
+  - Embodied AI draws its philosophical foundation from the situated cognition tradition in cognitive science, which argues that cognition cannot be separated from the body and environment in which it is embedded. In AI, this translates to the hypothesis that agents learn richer, more transferable representations when they act in the world rather than passively observing datasets — a claim supported empirically by the superior sample efficiency and generalisation of agents trained with interactive exploration versus offline learning on equivalent data.
+  - The dominant training paradigm for embodied AI is reinforcement learning in simulation, leveraging physics engines such as MuJoCo, Isaac Gym, Habitat, AI2-THOR, and RoboSuite. Large-scale simulation enables data generation at rates impossible in the real world and permits domain randomisation — varying lighting, textures, friction, object masses — to improve robustness to the sim-to-real gap when policies are deployed on physical robots. Foundation models pre-trained on vision and language (e.g., SayCan, RT-2, OpenVLA) are increasingly used as policy backbones, combining world knowledge from internet-scale pretraining with embodied fine-tuning in simulation.
+  - Key challenge areas include long-horizon task planning (decomposing a high-level instruction like "tidy the kitchen" into primitive manipulation actions), multi-object generalisation (handling unseen object geometries and materials), and safe exploration in contact-rich manipulation. The EmbodiedScan, HM3D, and Gibson datasets provide photorealistic indoor environments for navigation tasks. Embodied AI is converging with large language models through grounded language following — where a robot must interpret natural language instructions by reasoning about its physical state and affordances in the environment.
 
 - ### Provenance
   - sources::

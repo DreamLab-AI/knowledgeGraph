@@ -1,5 +1,5 @@
 - ### Definition
-  - civil service job is a concept within the ngm domain.
+  - A **civil service job** (here specifically a Principal Technologist role at GDS OCTO) represents public-sector technology leadership responsible for shaping government AI and platform strategy. Such roles bridge software engineering expertise with policy influence, advising on open-source adoption, cloud infrastructure, machine learning capabilities, and digital service delivery across government.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:CivilServiceJob

@@ -8,6 +8,12 @@
 
 - ### Relationships
   - bridges-to:: [[Computer Vision]]
+  - requires:: [[Reinforcement Learning]]
+  - enables:: [[AI Safety]]
+  - enables:: [[AI Alignment]]
+  - uses:: [[Large Language Models]]
+  - supports:: [[Responsible AI]]
+  - supports:: [[AI Ethics]]
 
 - ### Content
   - A method for training AI assistants to be harmless through self-improvement, using a set of principles or "constitution" to guide behaviour without human labels for harmful outputs. Constitutional AI combines supervised learning for self-critiques and revisions with RL from AI Feedback (RLAIF).

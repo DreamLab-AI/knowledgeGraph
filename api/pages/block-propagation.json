@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:block-propagation",
   "domain": "blockchain",
-  "definition": "Network block distribution within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "Block Propagation is the process by which a newly mined or validated block is broadcast across a blockchain peer-to-peer network so that all full nodes can update their local copy of the chain. Propagation latency directly influences the orphan/stale block rate, security against selfish mining, and the degree of centralisation pressure towards large, well-connected mining pools. Techniques such as Compact Block Relay (Bitcoin BIP 152) and Graphene reduce bandwidth requirements by sending block sketches rather than full transaction lists, exploiting the fact that recipient nodes already hold most transactions in their mempools.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-protocol-and-consensus",
@@ -21,21 +21,71 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:block-propagation-time",
+        "label": "Block Propagation Time"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:full-node",
+        "label": "Full Node"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:light-node",
+        "label": "Light Node"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:block-time",
+        "label": "Block Time"
+      },
+      {
+        "id": "urn:ngm:class:block-size",
+        "label": "Block Size"
+      },
+      {
+        "id": "urn:ngm:class:mempool",
+        "label": "Mempool"
+      },
+      {
+        "id": "urn:ngm:class:miner",
+        "label": "Miner"
+      }
+    ]
   },
   "wikilinks": [
     {

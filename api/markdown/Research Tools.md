@@ -42,15 +42,29 @@ public:: true
   "@id": "urn:ngm:class:research-tools",
   "@type": "Class",
   "label": "Research Tools",
-  "definition": "Research Tools is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Research Tools are software applications and platforms that augment the academic and professional research process, encompassing AI-powered literature assistants (e.g. Elicit, Undermind), systematic review automation, citation management, and natural language interfaces to scientific corpora. They accelerate information retrieval, evidence synthesis, and knowledge organisation, and increasingly leverage large language models and retrieval-augmented generation to surface relevant findings across heterogeneous sources.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
+      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:knowledge-management", "label": "Knowledge Management"},
+      {"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -92,14 +106,16 @@ public:: true
 
 
 - ### Definition
-  - Research Tools is a concept within the ngm domain.
+  - Research Tools are software applications and platforms that augment the academic and professional research process, encompassing AI-powered literature assistants (e.g. Elicit, Undermind), systematic review automation, citation management, and natural language interfaces to scientific corpora. They accelerate information retrieval, evidence synthesis, and knowledge organisation, and increasingly leverage large language models and retrieval-augmented generation to surface relevant findings across heterogeneous sources.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:ResearchTools
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: Large Language Models, Retrieval-Augmented Generation
+  - **enables**: Knowledge Management, Information Retrieval
+  - **relatedTo**: Knowledge Graph
 
 - ### Content
   - #Public page

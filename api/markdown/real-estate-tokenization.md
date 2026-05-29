@@ -7,7 +7,10 @@
   - belongs-to-domain:: [[BlockchainDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires** → [[Smart Contract]], [[Blockchain]], [[Decentralised Identity]]
+  - **enables** → [[Digital Asset Trading]], [[Decentralised Finance]]
+  - **uses** → [[Distributed Ledger Technology]], [[Consensus Mechanism]]
+  - **dependsOn** → [[Blockchain Compliance]]
 
 - ### Content
   - Blockchain-based real estate tokenization transforms the **£637 trillion global real estate market** by converting property ownership into tradeable digital security tokens, reducing investment minimums from tens or hundreds of thousands to as little as **£50** whilst enabling **24/7 global trading** and automated rental income distribution. With the market growing from **£2.6-3.5 billion (2024)** to projected **£4 trillion by 2035** at 27% compound annual growth rate, implementations span RealT's **600+ properties** serving **65,000+ investors** with weekly stablecoin dividends, the St. Regis Aspen Resort's **£18 million** tokenized offering achieving **30% value increase** within 18 months, and Dubai luxury apartments selling out in **under 2 minutes** to buyers from **35 countries**.

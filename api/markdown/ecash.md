@@ -250,9 +250,10 @@ public:: true
   "@id": "urn:ngm:class:ecash",
   "@type": "Class",
   "label": "ecash",
-  "definition": "ecash is a blockchain and distributed systems concept and a type of Payment System.",
+  "definition": "A privacy-preserving digital cash system based on David Chaum's blind-signature cryptography, enabling bearer-token payments in which the issuing mint cannot link individual transactions to users. Modern implementations such as Cashu and Fedimint build Chaumian eCash on top of Bitcoin and the Lightning Network, enabling censorship-resistant micropayments for human and autonomous-agent use.",
   "domain": "blockchain",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-token-and-asset",
@@ -268,6 +269,44 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R2WikilinkParentInference"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:censorship-resistance",
+        "label": "Censorship Resistance"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:privacy-preserving-blockchain",
+        "label": "Privacy Preserving Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:cashu",
+        "label": "Cashu"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      }
+    ]
   }
 }
 ```
@@ -564,14 +603,20 @@ public:: true
 
 
 - ### Definition
-  - ecash is a concept within the ngm domain.
+  - A privacy-preserving digital cash system based on David Chaum's blind-signature cryptography, enabling bearer-token payments in which the issuing mint cannot link individual transactions to users. Modern implementations such as Cashu and Fedimint build Chaumian eCash on top of Bitcoin and the Lightning Network, enabling censorship-resistant micropayments for human and autonomous-agent use.
 
 - ### Semantic Classification
   - owl-class:: blockchain:Ecash
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses [[Elliptic Curve Cryptography]]
+  - Uses [[Lightning Network]]
+  - Requires [[Censorship Resistance]]
+  - Enables [[Privacy Preserving Blockchain]]
+  - Enables [[Identity Management]]
+  - Related To [[Cashu]]
+  - Related To [[Smart Contracts]]
 
 - ### Content
   - #Public page -- automatically published

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:validator-node",
   "domain": "blockchain",
-  "definition": "Transaction validation participant within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "A network participant in a Proof of Stake or similar blockchain that locks collateral (stake) to earn the right to propose and attest to blocks, and is subject to slashing penalties for equivocation or liveness failures. Validator nodes form the security backbone of staking-based consensus, replacing the hash-rate competition of mining.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-network-component",
@@ -21,21 +21,61 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:block",
+        "label": "Block"
+      },
+      {
+        "id": "urn:ngm:class:transaction-finality",
+        "label": "Transaction Finality"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      },
+      {
+        "id": "urn:ngm:class:schnorr-signature",
+        "label": "Schnorr Signature"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:validator-set",
+        "label": "Validator Set"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:epoch",
+        "label": "Epoch"
+      },
+      {
+        "id": "urn:ngm:class:finality",
+        "label": "Finality"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -7,7 +7,9 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses:: [[Cryptography]], [[Cryptographic Protocol]]
+  - enables:: [[Blockchain Scalability]], [[Digital Identity]], [[Privacy Preserving Blockchain]]
+  - supports:: [[Decentralised Finance]], [[Zero-Knowledge Machine Learning]]
 
 - ### Content
   - Cryptographic techniques enabling one party to prove knowledge of information without revealing the information itself, establishing mathematical certainty about claim validity through [[InteractiveProtocol|interactive protocols]] or [[NIZKProof|non-interactive proofs]]. [[ZKProofSystems|ZK proof systems]] like [[zkSNARK|zk-SNARKs]] and [[zkSTARK|zk-STARKs]] enable privacy-preserving authentication, [[PrivacyCoin|confidential transactions]], and [[ZKRollup|zkRollups]] compressing on-chain computation whilst maintaining verifiable correctness. Applications span [[BlockchainScalability|blockchain scalability]], [[VerifiableComputation|verifiable computation]], and [[SelectiveDisclosure|selective disclosure]] systems enabling users to prove attributes without revealing underlying personal data.

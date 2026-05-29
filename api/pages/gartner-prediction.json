@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:gartner-prediction",
   "domain": "artificial-intelligence",
-  "definition": "Gartner Prediction is a type of Artificial Intelligence in the artificial intelligence domain.",
+  "definition": "A formal technology forecast published by Gartner Research, typically quantifying the adoption timeline, business impact, or market penetration of an emerging technology within a stated confidence window. Gartner Predictions appear in annual research reports and are contextualised within the Hype Cycle framework, providing enterprise IT strategists and technology leaders with actionable guidance on when and whether to invest in specific capabilities.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-research-area",
@@ -13,21 +13,62 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:predictions",
+        "label": "Predictions"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:strategic-planning",
+        "label": "Strategic Planning"
+      },
+      {
+        "id": "urn:ngm:class:digital-transformation",
+        "label": "Digital Transformation"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:generative-ai-engineering",
+        "label": "Generative AI Engineering"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:technology-adoption",
+        "label": "Technology Adoption"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ]
   },
   "wikilinks": [
     {

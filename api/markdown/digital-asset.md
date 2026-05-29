@@ -1,14 +1,17 @@
 - ### Definition
-  - DigitalAsset is a concept within the ngm domain.
+  - A Digital Asset is any blockchain-recorded value representation with cryptographic ownership guarantees, including cryptocurrencies, tokenised securities, non-fungible tokens, stablecoins, and programmable financial instruments. Asset tokenisation transforms real-world assets into blockchain-native representations through smart contracts that encode legal ownership rights, fractional interests, and automated compliance rules, enabling new forms of value transfer, settlement, and programmable finance.
 
 - ### Semantic Classification
   - owl-class:: blockchain/DigitalAsset
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
-
   - bridges-to:: [[Blockchain]] (bc)
+  - requires:: [[Blockchain]]
+  - requires:: [[Smart Contract]]
+  - enables:: [[Decentralised Finance]]
+  - enables:: [[NFT]]
+  - relatedTo:: [[Digital Asset Management]]
 - ### Content
 
   ## Definition

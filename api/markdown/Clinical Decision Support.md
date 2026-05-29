@@ -64,7 +64,7 @@ public:: true
   "label": "Clinical Decision Support",
   "definition": "Clinical Decision Support (CDS) refers to AI systems that provide healthcare professionals with patient-specific assessments, recommendations, and information to support clinical decision-making at the point of care.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -75,6 +75,21 @@ public:: true
       "label": "Healthcare Analytics"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:medical-ai", "label": "Medical AI"},
+      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"},
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:treatment-planning-ai", "label": "Treatment Planning AI"},
+      {"@id": "urn:ngm:class:medical-diagnosis-ai", "label": "Medical Diagnosis AI"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"},
+      {"@id": "urn:ngm:class:data-integration", "label": "Data Integration"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -145,6 +160,13 @@ public:: true
 
 - ### Relationships
   - bridges-to:: [[Telecollaboration]]
+  - uses [[Medical AI]]
+  - uses [[Knowledge Representation]]
+  - uses [[Natural Language Processing]]
+  - enables [[Treatment Planning AI]]
+  - enables [[Medical Diagnosis AI]]
+  - requires [[Interoperability]]
+  - requires [[Data Integration]]
 
 - ### Content
   - Clinical Decision Support (CDS) refers to AI systems that provide healthcare professionals with patient-specific assessments, recommendations, and information to support clinical decision-making at the point of care. CDS systems integrate patient data, medical knowledge bases, clinical guidelines, and evidence-based protocols to assist in diagnosis, treatment selection, medication management, and care coordination whilst maintaining clinician autonomy and clinical judgement.

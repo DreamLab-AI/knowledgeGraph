@@ -42,9 +42,10 @@ public:: true
   "@id": "urn:ngm:class:notified-body",
   "@type": "Class",
   "label": "Notified Body",
-  "definition": "A conformity assessment body notified under the AI Act and other relevant EU harmonisation legislation, responsible for performing third-party conformity assessment of certain high-risk AI systems.",
+  "definition": "An independent third-party conformity assessment organisation formally designated by a national notifying authority under the EU AI Act (Articles 29–39) to audit and certify high-risk AI systems — particularly biometric identification and product-safety-component systems — against technical documentation, quality management, and harmonised standards requirements.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-legal-and-regulatory",
@@ -55,7 +56,22 @@ public:: true
       "label": "Regulatory Framework"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "implements": [
+      {"@id": "urn:ngm:class:conformity-assessment", "label": "Conformity Assessment"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:national-competent-authority", "label": "National Competent Authority"},
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:regulatory-framework", "label": "Regulatory Framework"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:accountability", "label": "Accountability"},
+      {"@id": "urn:ngm:class:transparency", "label": "Transparency"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -99,7 +115,12 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **implements** [[Conformity Assessment]] — notified bodies execute third-party conformity assessment procedures
+  - **supports** [[National Competent Authority]] — notified bodies operate under the oversight of national notifying authorities
+  - **supports** [[AI Governance]] — third-party certification strengthens the overall AI governance system
+  - **partOf** [[Regulatory Framework]] — notified bodies are a formal component of the EU product certification framework
+  - **dependsOn** [[Accountability]] — notified bodies are accountable to notifying authorities and subject to periodic review
+  - **dependsOn** [[Transparency]] — assessment findings and certificate status must be disclosed to relevant authorities
 
 - ### Content
   - A conformity assessment body notified under the AI Act and other relevant EU harmonisation legislation, responsible for performing third-party conformity assessment of certain high-risk AI systems.

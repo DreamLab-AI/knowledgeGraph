@@ -74,9 +74,10 @@ public:: true
   "@id": "urn:ngm:class:client-side-dco",
   "@type": "Class",
   "label": "Client side DCO",
-  "definition": "Client side DCO is a technology infrastructure concept and a type of Decentralised Web.",
+  "definition": "Client-side Dynamic Creative Optimisation (DCO) is an approach where personalised advertising content is generated and matched on the user's device rather than on centralised servers. Using locally maintained preference hashes and decentralised distribution protocols (such as Nostr), the system delivers contextually relevant content without exposing personal identity data to advertisers.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
@@ -87,6 +88,23 @@ public:: true
       "label": "Decentralised Web"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:nostr-protocol", "label": "Nostr Protocol"},
+      {"@id": "urn:ngm:class:latent-space", "label": "latent space"},
+      {"@id": "urn:ngm:class:hardware-and-edge", "label": "Hardware and Edge"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:hyper-personalisation", "label": "Hyper personalisation"},
+      {"@id": "urn:ngm:class:privacy", "label": "Privacy"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:multimodal", "label": "multimodal"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -168,14 +186,17 @@ public:: true
 
 
 - ### Definition
-  - Client side DCO is a concept within the ngm domain.
+  - Client-side Dynamic Creative Optimisation (DCO) is an approach where personalised advertising content is generated and matched on the user's device rather than on centralised servers. Using locally maintained preference hashes and decentralised distribution protocols (such as Nostr), the system delivers contextually relevant content without exposing personal identity data to advertisers.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:ClientSideDCO
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses:: [[Nostr Protocol]], [[latent space]], [[Hardware and Edge]]
+  - enables:: [[Hyper personalisation]], [[Privacy]]
+  - requires:: [[Edge Computing]]
+  - depends-on:: [[multimodal]]
 
 - ### Content
   - #Public page

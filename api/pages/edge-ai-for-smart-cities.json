@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:edge-ai-for-smart-cities",
   "domain": "artificial-intelligence",
-  "definition": "Edge AI for Smart Cities deploys machine learning intelligence across distributed urban infrastructure\u2014smart cameras, IoT sensors, edge gateways\u2014enabling real-time autonomous city systems without centralized cloud processing.",
+  "definition": "Edge AI for Smart Cities is the deployment of machine learning inference directly on distributed urban infrastructure\u2014smart cameras, IoT sensors, edge gateways, and computing nodes embedded in roads, buildings, and public spaces\u2014enabling real-time autonomous decision-making for traffic management, public safety monitoring, environmental sensing, and energy optimisation without requiring centrally routed cloud processing. This architecture achieves sub-second response latencies, preserves citizen privacy by processing video locally, and overcomes bandwidth constraints that make continuous cloud uplink of high-resolution urban sensor streams impractical.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-application",
@@ -13,21 +13,82 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:edge-ai-system",
+        "label": "Edge AI System"
+      },
+      {
+        "id": "urn:ngm:class:real-time-processing",
+        "label": "Real-time Processing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-twin-ecosystem",
+        "label": "Digital Twin Ecosystem"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
+        "id": "urn:ngm:class:edge-ai-accelerator",
+        "label": "Edge AI Accelerator"
+      },
+      {
+        "id": "urn:ngm:class:edge-ai-security",
+        "label": "Edge AI Security"
+      }
+    ]
   },
   "wikilinks": [
     {

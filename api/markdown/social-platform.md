@@ -1,12 +1,15 @@
 - ### Definition
-  - SocialPlatform is a concept within the ngm domain.
+  - A Social Platform is a networked software environment that mediates human connection, identity expression, content sharing, and community formation. It combines identity management, real-time communication, moderation tooling, and reputation mechanisms to sustain persistent social graphs, supporting both synchronous interaction (voice, video) and asynchronous content exchange across devices.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:SocialPlatform
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires** → [[Digital Identity]], [[Communication Protocol]]
+  - **enables** → [[Virtual Community Platform]], [[Avatar]]
+  - **uses** → [[Content Moderation]], [[User Interface]]
+  - **supports** → [[Platform Governance]], [[Social Network Graph]]
 
 - ### Content
   # SocialPlatform

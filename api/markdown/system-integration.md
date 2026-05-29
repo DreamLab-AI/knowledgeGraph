@@ -1,12 +1,16 @@
 - ### Definition
-  - SystemIntegration is a concept within the ngm domain.
+  - System Integration is the engineering practice of combining disparate software components, services, and data sources into a coherent, functioning whole. It encompasses API design and management, middleware orchestration, event-driven messaging, ETL pipelines, and identity federation to ensure that independently developed subsystems exchange information reliably and consistently across organisational and technical boundaries.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:SystemIntegration
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Middleware]]
+  - requires [[API Gateway]]
+  - enables [[Interoperability]]
+  - enables [[Data Pipeline]]
+  - relatedTo [[Event Driven Architecture]]
 
 - ### Content
   # SystemIntegration

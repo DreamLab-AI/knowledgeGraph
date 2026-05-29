@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ai-user",
   "domain": "artificial-intelligence",
-  "definition": "An individual or entity who interacts with, relies upon, or is affected by the outputs, decisions, or recommendations of an artificial intelligence system in order to accomplish tasks, make decisions, obtain services, or achieve objectives, either through direct system interaction or indirect exp...",
+  "definition": "An individual or entity who interacts with, relies upon, or is affected by the outputs, decisions, or recommendations of an AI system in order to accomplish tasks, obtain services, or achieve objectives\u2014either through direct interaction or indirect exposure to AI-mediated decisions. AI users are the primary experiencers of AI benefits and harms, encompassing diverse populations with varying technical literacy, accessibility needs, and degrees of voluntary engagement, making their rights and interests central to responsible AI governance.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -14,12 +14,34 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      },
+      {
+        "id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      },
+      {
+        "id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      }
+    ],
     "enables": [],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
@@ -27,7 +49,20 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-provider",
+        "label": "AI Provider"
+      },
+      {
+        "id": "urn:ngm:class:ai-operator",
+        "label": "AI Operator"
+      },
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      }
+    ]
   },
   "wikilinks": [
     {

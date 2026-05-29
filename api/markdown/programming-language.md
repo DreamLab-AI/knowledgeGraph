@@ -6,7 +6,13 @@
   - owl-role:: concept
 
 - ### Relationships
-  - is-subclass-of:: ['owl:Thing']
+  - is-subclass-of:: [[AI Technique]]
+  - Enables: [[Deep Learning]]
+  - Enables: [[Natural Language Processing]]
+  - Uses: [[Open Source Framework]]
+  - Related To: [[Software Development Process]]
+  - Related To: [[AI Model Architecture]]
+  - Related To: [[Transformer Architecture]]
 
 - ### Content
 

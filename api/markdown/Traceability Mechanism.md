@@ -98,7 +98,7 @@ public:: true
   "@id": "urn:ngm:class:traceability-mechanism",
   "@type": "Class",
   "label": "Traceability Mechanism",
-  "definition": "A Traceability Mechanism is a systematic approach for recording, maintaining, and retrieving comprehensive documentation of an AI system's development process, data lineage, decision-making logic, and operational history to enable accountability, auditability, and debugging.",
+  "definition": "A Traceability Mechanism is a systematic approach for recording, maintaining, and retrieving comprehensive documentation of an AI system's development process, data lineage, decision-making logic, and operational history to enable accountability, auditability, and debugging. It encompasses data provenance tracking, model versioning, decision logging, and tamper-evident audit trails that allow stakeholders to reconstruct the causal chain from system outputs back to training data and design choices. Regulatory frameworks including the EU AI Act and GDPR increasingly mandate specific traceability capabilities for high-risk AI deployments.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -108,10 +108,35 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:ai-governance-principle",
-      "label": "AI Governance Principle"
+      "label": "Ai Governance Principle"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"},
+      {"@id": "urn:ngm:class:data-provenance", "label": "Data Provenance"},
+      {"@id": "urn:ngm:class:metadata-management", "label": "Metadata Management"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:accountability", "label": "Accountability"},
+      {"@id": "urn:ngm:class:explainability", "label": "Explainability"},
+      {"@id": "urn:ngm:class:compliance-verification", "label": "Compliance Verification"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
+      {"@id": "urn:ngm:class:model-training", "label": "Model Training"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:ai-risk-management", "label": "AI Risk Management"},
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:transparency", "label": "Transparency"},
+      {"@id": "urn:ngm:class:gdpr-compliance", "label": "GDPR Compliance"},
+      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"}
+    ]
+  },
+  "qualityScore": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -227,7 +252,7 @@ public:: true
   - implemented-in-layer:: [[ConceptualLayer]]
 
 - ### Relationships
-  - is-subclass-of:: [[AI Governance Principle]]
+  The Traceability Mechanism **has parts** including the Audit Trail (tamper-evident event log), Data Provenance records (origins and transformations of training data), and Metadata Management (structured documentation of system properties). It **enables** Accountability (assigning responsibility for outcomes), Explainability (supporting interpretations of decisions), and Compliance Verification (demonstrating adherence to regulations). It **requires** Data Governance frameworks and access to Model Training records. It **supports** AI Risk Management and AI Governance programmes as the evidentiary foundation. It is **related to** Transparency obligations, GDPR Compliance requirements, and AI Regulation frameworks that mandate its implementation.
 
 - ### Content
 

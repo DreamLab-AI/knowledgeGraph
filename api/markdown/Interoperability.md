@@ -664,13 +664,27 @@ public:: true
   "label": "Interoperability",
   "definition": "The capability of distinct systems, applications, or organizational entities to exchange information, interpret shared data correctly, and utilize exchanged information for coordinated operations.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-network-and-comms",
       "label": "Network and Communication"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:technical-standards", "label": "Technical Standards"},
+      {"@id": "urn:ngm:class:interoperability-standard", "label": "Interoperability Standard"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:cross-platform-interoperability", "label": "Cross-Platform Interoperability"},
+      {"@id": "urn:ngm:class:blockchain-interoperability", "label": "Blockchain Interoperability"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:semantic-web", "label": "Semantic Web"},
+      {"@id": "urn:ngm:class:data-standards", "label": "Data Standards"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -1490,7 +1504,12 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Technical Standards]]
+  - requires [[Interoperability Standard]]
+  - enables [[Cross-Platform Interoperability]]
+  - enables [[Blockchain Interoperability]]
+  - relatedTo [[Semantic Web]]
+  - relatedTo [[Data Standards]]
 
 - ### Content
   - The capability of distinct systems, applications, or organizational entities to exchange information, interpret shared data correctly, and utilize exchanged information for coordinated operations. Interoperability encompasses technical protocol compatibility, semantic data alignment, and organizational process integration across heterogeneous environments.

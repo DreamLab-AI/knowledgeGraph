@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:smart-contract-execution",
   "domain": "blockchain",
-  "definition": "The deterministic, on-chain processing of self-enforcing code stored at a blockchain address that automatically executes predefined business logic when invoked by a transaction.",
+  "definition": "Smart contract execution is the deterministic, on-chain processing of immutable bytecode deployed at a blockchain address, triggered by an inbound transaction and evaluated by every validating node in the network. Execution occurs inside a sandboxed virtual machine\u2014such as the Ethereum Virtual Machine (EVM)\u2014which enforces gas metering to bound computation costs, ensures state isolation, and guarantees identical outputs across all nodes given the same inputs. Because execution is transparent and auditable, smart contracts can automate trustless multi-party agreements including token transfers, DeFi protocol logic, decentralised governance, and RWA settlement without relying on a central intermediary.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-protocol-and-consensus",
@@ -14,16 +14,39 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:gas",
+        "label": "Gas"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

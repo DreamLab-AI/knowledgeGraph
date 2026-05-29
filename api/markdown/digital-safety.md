@@ -1,5 +1,5 @@
 - ### Definition
-  - Digital Safety is a concept within the metaverse domain. Further enrichment pending.
+  - Digital Safety encompasses the policies, technical controls, and design practices that protect individuals from harm in digital and spatial computing environments, including cybersecurity threats, privacy violations, online harassment, and misuse of immersive technologies.
 
 bridges-to:: [[Telecollaboration]]
 
@@ -8,7 +8,12 @@ bridges-to:: [[Telecollaboration]]
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Cybersecurity]]
+  - requires [[Authentication]]
+  - enables [[Privacy]]
+  - enables [[Content Moderation]]
+  - relatedTo [[Data Governance]]
+  - relatedTo [[Digital Rights]]
 
 - ### Content
 

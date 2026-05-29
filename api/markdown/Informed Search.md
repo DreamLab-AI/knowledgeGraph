@@ -42,16 +42,32 @@ public:: true
   "@id": "urn:ngm:class:informed-search",
   "@type": "Class",
   "label": "Informed Search",
-  "definition": "Informed Search is a type of Artificial Intelligence in the artificial intelligence domain.",
+  "definition": "A class of search algorithms in artificial intelligence that use domain-specific heuristic knowledge to guide exploration of the search space, reducing computational cost compared to uninformed search. Canonical examples include A* and greedy best-first search, which evaluate states using an estimate of the remaining cost to a goal.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:machine-learning-technique", "label": "Machine Learning Technique"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
+      {"@id": "urn:ngm:class:autonomous-system", "label": "Autonomous System"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
+      {"@id": "urn:ngm:class:active-learning", "label": "Active Learning"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -94,7 +110,10 @@ public:: true
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **partOf**: [[Machine Learning]]
+  - **uses**: [[Machine Learning Technique]]
+  - **enables**: [[Autonomous Navigation]], [[Autonomous System]]
+  - **relatedTo**: [[Reinforcement Learning]], [[Active Learning]]
 
 - ### Content
 

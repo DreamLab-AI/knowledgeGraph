@@ -17,9 +17,9 @@
   "@id": "urn:ngm:class:diffusion-model",
   "@type": "Class",
   "label": "Diffusion Model",
-  "definition": "Diffusion Model is a foundational concept in artificial intelligence that serves as a classification parent for 5 related concepts in the ontology.",
+  "definition": "A Diffusion Model is a class of generative model that learns to synthesise data by reversing a gradual noising process. During training the model observes how data is progressively corrupted by Gaussian noise; at inference time it iteratively denoises a random sample, guided by a learned score function, to produce high-fidelity outputs such as images, audio, or video. Diffusion models underpin systems like Stable Diffusion and DALL-E 3.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
   "quality": 0.3,
   "sameAs": [
     {
@@ -32,10 +32,30 @@
       "@id": "urn:ngm:class:ai-model-architecture",
       "label": "AI Model Architecture"
     }
-  ]
+  ],
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"},
+      {"@id": "urn:ngm:class:text-to-image", "label": "Text-to-Image"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:generative-adversarial-network", "label": "Generative Adversarial Network"}
+    ]
+  }
 }
 ```
 
 ## Diffusion Model
 
-Diffusion Model is a foundational concept that serves as a taxonomy parent for related classes in the artificial intelligence domain.
+A Diffusion Model is a class of generative model that learns to synthesise data by reversing a gradual noising process. During training the model observes how data is progressively corrupted by Gaussian noise; at inference time it iteratively denoises a random sample, guided by a learned score function, to produce high-fidelity outputs such as images, audio, or video. Diffusion models underpin systems like Stable Diffusion and DALL-E 3.
+
+### Relationships
+  - enables:: [[Image Generation]]
+  - enables:: [[Text-to-Image]]
+  - uses:: [[Training Data]]
+  - uses:: [[Neural Network]]
+  - contrastsWith:: [[Generative Adversarial Network]]

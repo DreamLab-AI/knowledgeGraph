@@ -7,7 +7,10 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires**: Computer Vision, Deep Learning — modern detection-and-tracking systems are built on learned visual representations.
+  - **enables**: Autonomous Navigation, Human tracking and SLAM capture — accurate object tracking is prerequisite to autonomous movement and to capturing human pose.
+  - **uses**: Image Segmentation, Convolutional Neural Network — segmentation heads and CNN backbones are core components of detection architectures (YOLO, Faster R-CNN).
+  - **partOf**: Object Detection — tracking extends the static detection task into the temporal domain.
 
 - ### Content
   - Object Detection and Tracking combines spatial object localisation with temporal tracking to identify, classify, and follow objects across video frames or sensor streams. This capability is essential for autonomous systems to understand dynamic environments, predict object motion, and make safe navigation decisions. Modern systems employ deep learning detectors (YOLO, Faster R-CNN) combined with tracking algorithms (Kalman filters, SORT, DeepSORT).

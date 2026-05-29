@@ -70,7 +70,7 @@ public:: true
   "@id": "urn:ngm:class:cryptographic-commitment",
   "@type": "Class",
   "label": "Cryptographic Commitment",
-  "definition": "Binding and hiding scheme within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "A cryptographic scheme that allows a party to commit to a chosen value while keeping it hidden, with the ability to reveal it later, satisfying the binding property (cannot change the committed value) and the hiding property (the commitment reveals no information about the value). Used in zero-knowledge proofs, atomic swaps, and confidential transactions.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -87,7 +87,26 @@ public:: true
       "label": "CryptographicPrimitive"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
+      {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"},
+      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:zk-snarks", "label": "ZK-SNARKs"},
+      {"@id": "urn:ngm:class:zk-starks", "label": "ZK-STARKs"},
+      {"@id": "urn:ngm:class:immutability", "label": "Immutability"},
+      {"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:schnorr-signature", "label": "Schnorr Signature"},
+      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"},
+      {"@id": "urn:ngm:class:zero-knowledge", "label": "Zero Knowledge"},
+      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

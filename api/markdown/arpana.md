@@ -42,15 +42,29 @@ public:: true
   "@id": "urn:ngm:class:arpana",
   "@type": "Class",
   "label": "arpana",
-  "definition": "arpana is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A UK-focused jurisdictional practice framework for integrating crime scene reconstruction with court proceedings, combining forensic evidence management, chain-of-custody protocols, and digital evidence presentation standards to support admissible expert testimony.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:privacy", "label": "Privacy"},
+      {"@id": "urn:ngm:class:authentication", "label": "Authentication"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
+      {"@id": "urn:ngm:class:knowledge-base", "label": "Knowledge Base"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:encryption", "label": "Encryption"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -92,14 +106,16 @@ public:: true
 
 
 - ### Definition
-  - arpana is a concept within the ngm domain.
+  - A UK-focused jurisdictional practice framework for integrating crime scene reconstruction with court proceedings, combining forensic evidence management, chain-of-custody protocols, and digital evidence presentation standards to support admissible expert testimony.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:Arpana
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **Related-to**: [[Privacy]] (data handling standards), [[Authentication]] (chain-of-custody verification)
+  - **Uses**: [[Digital Twin]] (crime scene 3D reconstruction), [[Knowledge Base]] (case evidence repository)
+  - **Requires**: [[Encryption]] (secure evidence storage and transmission)
 
 - ### Content
   - [[law]]

@@ -42,9 +42,10 @@ public:: true
   "@id": "urn:ngm:class:regularisation",
   "@type": "Class",
   "label": "Regularisation",
-  "definition": "Regularisation is a artificial intelligence concept and a type of Machine Learning.",
+  "definition": "A family of techniques that constrain or penalise model complexity during training to prevent overfitting and improve generalisation to unseen data. Common methods include L1 (Lasso) and L2 (Ridge) weight penalties, dropout, early stopping, and data augmentation, each discouraging the model from memorising noise at the expense of learning underlying patterns.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
@@ -60,6 +61,42 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:dropout",
+        "label": "Dropout"
+      },
+      {
+        "@id": "urn:ngm:class:training",
+        "label": "Training"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
+    ]
   }
 }
 ```
@@ -97,7 +134,11 @@ public:: true
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Supports: [[Model Training]]
+  - Requires: [[Loss Function]]
+  - Enables: [[Deep Learning]]
+  - Contrasts With: [[Overfitting]]
+  - Related To: [[Dropout]], [[Training]]
 - ### Content
   - ### Primary Definition
   **Regularisation** comprises techniques that constrain or penalise model complexity during training to prevent overfitting and improve generalisation. Common methods include L1/L2 penalties, dropout, and early stopping.

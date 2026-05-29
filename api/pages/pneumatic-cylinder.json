@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:pneumatic-cylinder",
   "domain": "robotics",
-  "definition": "Pneumatic cylinder uses compressed air to produce linear motion.",
+  "definition": "A pneumatic cylinder is a mechanical actuator that converts compressed air pressure into linear mechanical force and motion, producing strokes from a few millimetres to over a metre. Pneumatic cylinders are widely used in industrial robotics, material handling, and assembly systems because of their high force-to-weight ratio, fast response, and inherent compliance compared to hydraulic counterparts.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
@@ -17,21 +17,65 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:end-effector",
+        "label": "End Effector"
+      },
+      {
+        "id": "urn:ngm:class:manipulator",
+        "label": "Manipulator"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "id": "urn:ngm:class:mechanical-component",
+        "label": "Mechanical Component"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:robo-actuation-and-control",
+        "label": "Actuation and Control"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:hydraulic-cylinder",
+        "label": "Hydraulic Cylinder"
+      },
+      {
+        "id": "urn:ngm:class:electric-linear-actuator",
+        "label": "Electric Linear Actuator"
+      },
+      {
+        "id": "urn:ngm:class:pneumatic-motor",
+        "label": "Pneumatic Motor"
+      },
+      {
+        "id": "urn:ngm:class:pressure-sensor",
+        "label": "Pressure Sensor"
+      },
+      {
+        "id": "urn:ngm:class:robot-joint",
+        "label": "Robot Joint"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -42,20 +42,56 @@ public:: true
   "@id": "urn:ngm:class:technology-stack",
   "@type": "Class",
   "label": "Technology Stack",
-  "definition": "Technology Stack is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "The integrated set of software components, frameworks, libraries, runtime environments, and infrastructure services that together support the development and operation of a digital application or platform. In spatial computing contexts, a technology stack spans from hardware drivers and operating systems through XR runtimes, game engines, and application frameworks up to user-facing interfaces and cloud services.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
     }
   ],
-  "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:system-software",
+        "label": "System Software"
+      },
+      {
+        "@id": "urn:ngm:class:middleware",
+        "label": "Middleware"
+      },
+      {
+        "@id": "urn:ngm:class:runtime-environment",
+        "label": "Runtime Environment"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      },
+      {
+        "@id": "urn:ngm:class:xr-runtime-environment",
+        "label": "XR Runtime Environment"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "@id": "urn:ngm:class:rendering-engine",
+        "label": "Rendering Engine"
+      }
+    ]
   }
 }
 ```
@@ -87,23 +123,26 @@ public:: true
 
 
 - ### Definition
-  - Technology Stack is a concept within the metaverse domain. Further enrichment pending.
+  - The integrated set of software components, frameworks, libraries, runtime environments, and infrastructure services that together support the development and operation of a digital application or platform. In spatial computing contexts, a technology stack spans from hardware drivers and operating systems through XR runtimes, game engines, and application frameworks up to user-facing interfaces and cloud services.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:TechnologyStack
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Has Part [[System Software]]
+  - Has Part [[Middleware]]
+  - Has Part [[Runtime Environment]]
+  - Uses [[Game Engine]]
+  - Uses [[Rendering Engine]]
+  - Depends On [[Operating System]]
+  - Depends On [[XR Runtime Environment]]
 
 - ### Content
 
   ## Overview
 
-  Technology Stack represents an abstract concept in the metaverse ontology hierarchy.
-
-  #### Related Concepts
-  - [[owl:Thing]]
+  A technology stack defines the complete layered assembly of technologies underpinning a platform. In XR and metaverse deployments, the stack typically spans operating system and device drivers, XR runtime (e.g. OpenXR), game or rendering engine, networking middleware, and cloud infrastructure, all integrating to deliver coherent immersive experiences.
 
 - ### Provenance
   - sources::

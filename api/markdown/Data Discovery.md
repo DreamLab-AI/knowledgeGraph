@@ -27,7 +27,7 @@ public:: true
   "@id": "urn:ngm:class:data-discovery",
   "@type": "Class",
   "label": "Data Discovery",
-  "definition": "The process of locating, cataloguing, and understanding available data assets within an organisation's data ecosystem to support analytics and governance.",
+  "definition": "Data Discovery is the iterative process of locating, profiling, cataloguing, and contextualising data assets distributed across an organisation's storage systems, databases, data lakes, SaaS applications, and streaming pipelines to make them findable, understandable, and trustworthy for analytics, governance, and compliance purposes. It encompasses automated metadata extraction, schema inference, data profiling (statistical characterisation), lineage tracing (upstream/downstream dependencies), and classification (sensitivity tagging). Data Discovery is foundational to implementing Data Governance frameworks and enabling self-service analytics in data mesh and data fabric architectures.",
   "domain": "infrastructure",
   "subClassOf": [
     {
@@ -35,26 +35,43 @@ public:: true
       "label": "Infra Data Management"
     }
   ],
-  "relations": {},
-  "qualityScore": 0.6,
-  "maturity": "stub"
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
+      {"@id": "urn:ngm:class:metadata-management", "label": "Metadata Management"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:metadata-registry", "label": "Metadata Registry"},
+      {"@id": "urn:ngm:class:data-lake", "label": "Data Lake"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:data-management", "label": "Data Management"}
+    ]
+  },
+  "qualityScore": 0.75,
+  "maturity": "emerging"
 }
 ```
 
 
 - ### Definition
-  - The process of locating, cataloguing, and understanding available data assets within an organisation's data ecosystem to support analytics and governance.
+  - Data Discovery is the iterative process of locating, profiling, cataloguing, and contextualising data assets distributed across an organisation's storage systems, databases, data lakes, SaaS applications, and streaming pipelines to make them findable, understandable, and trustworthy for analytics, governance, and compliance purposes. It encompasses automated metadata extraction, schema inference, data profiling (statistical characterisation), lineage tracing (upstream/downstream dependencies), and classification (sensitivity tagging). Data Discovery is foundational to implementing Data Governance frameworks and enabling self-service analytics in data mesh and data fabric architectures.
 
 - ### Semantic Classification
   - owl-class:: data-discovery:Data Discovery
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- Stub page — relationships inherited from referencing pages -->
+  - enables [[Data Governance]]
+  - enables [[Metadata Management]]
+  - uses [[Metadata Registry]]
+  - uses [[Data Lake]]
+  - supports [[Data Management]]
 
 - ### Content
-  - #Public page
-  - automatically published
+  - Data Discovery addresses a critical operational challenge in modern enterprises: as data proliferates across cloud storage, relational databases, data lakes, SaaS platforms, and event streaming systems, individual analysts and data consumers cannot efficiently locate datasets relevant to their use case. Data catalogue platforms — such as Apache Atlas, Alation, Collibra, and DataHub — automate the ingestion of technical metadata (schema, table names, column types, row counts) from connected data sources, enriching it with business metadata (descriptions, ownership, glossary terms, usage statistics) curated by domain stewards.
+  - Data profiling generates statistical summaries — null rates, cardinality, value distributions, format patterns — that help consumers assess data quality before use. Data lineage graphs trace the transformation path from raw sources to derived datasets, enabling impact analysis (what downstream consumers are affected by an upstream schema change) and root-cause diagnosis of data quality issues. These capabilities feed directly into Data Governance processes: privacy classification flags PII columns for access control and masking; regulatory lineage documents data flows for GDPR or CCPA compliance audits.
+  - In Data Fabric and data mesh architectures, Data Discovery is decentralised: each domain team publishes their data products to a federated catalogue with standardised metadata schemas, and a global search layer aggregates these product entries. Metadata Registry infrastructure provides the shared vocabulary and identifier namespace for cross-domain discovery. Standards such as DCAT (W3C Data Catalogue Vocabulary) and Schema.org's Dataset type provide semantic interoperability for discovery across organisations and open data portals.
 
 - ### Provenance
   - sources::

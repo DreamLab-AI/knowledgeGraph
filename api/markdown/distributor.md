@@ -7,7 +7,9 @@
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **partOf**: [[Supply Chain]]
+  - **relatedTo**: [[Provider]], [[Importer]], [[Deployer]], [[Market Surveillance Authority]]
+  - **requires**: [[Conformity Assessment]], [[Regulatory Compliance]]
 - ### Content
   - A natural or legal person in the supply chain, other than the provider or the importer, that makes an AI system available on the Union market.
   ## Source

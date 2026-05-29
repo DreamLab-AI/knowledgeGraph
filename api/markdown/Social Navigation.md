@@ -54,7 +54,7 @@ public:: true
   "@id": "urn:ngm:class:social-navigation",
   "@type": "Class",
   "label": "Social Navigation",
-  "definition": "Robot navigation strategies that account for social norms, human comfort, and contextual appropriateness when moving through human-populated environments.",
+  "definition": "Social Navigation is the discipline within robotics concerned with planning and executing robot motion through human-occupied spaces while respecting social norms, personal space conventions (proxemics), cultural context, and human comfort. It extends classical motion planning by incorporating models of human behaviour, pedestrian flow prediction, and non-verbal communication cues such as gaze and gesture, with the goal of producing movement that is perceived as natural and non-threatening.",
   "domain": "robotics",
   "maturity": "emerging",
   "subClassOf": [
@@ -63,7 +63,30 @@ public:: true
       "label": "Human-Robot Interaction"
     }
   ],
-  "quality": 0.35,
+  "quality": 0.75,
+  "qualityScore": 0.75,
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
+      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:path-planning", "label": "Path Planning"},
+      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
+      {"@id": "urn:ngm:class:proxemics", "label": "Proxemics"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
+      {"@id": "urn:ngm:class:slam", "label": "SLAM"},
+      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:obstacle-avoidance", "label": "Obstacle Avoidance"},
+      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
+      {"@id": "urn:ngm:class:social-robotics", "label": "Social Robotics"},
+      {"@id": "urn:ngm:class:collision-avoidance", "label": "Collision Avoidance"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -125,7 +148,9 @@ public:: true
   - is-subclass-of:: [[Robotics]]
 
 - ### Content
-  Social Navigation — content pending enrichment.
+  Social Navigation goes beyond obstacle avoidance by treating the humans sharing a space as dynamic social agents with expectations about interpersonal distance, movement trajectories, and contextual cues. Hallway passing, doorway negotiation, and group approach scenarios each carry implicit behavioural scripts that socially aware robots must learn and respect to avoid alarming or obstructing people.
+
+  Techniques include learning-based approaches (reinforcement learning with social reward functions), model-based prediction of pedestrian trajectories using social force models, and real-time re-planning with SLAM to maintain situational awareness in dynamic environments. Evaluation metrics combine traditional navigation efficiency (path length, time to goal) with human-centric measures such as minimum approach distance, jerk profiles, and subjective comfort ratings gathered in user studies.
 
 - ### Provenance
   - sources:: [[HRI]], [[Mobile Robotics]]

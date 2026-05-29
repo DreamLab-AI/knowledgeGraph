@@ -38,16 +38,29 @@ public:: true
   "@id": "urn:ngm:class:exhibition",
   "@type": "Class",
   "label": "exhibition",
-  "definition": "exhibition is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "An exhibition is a curated public or professional presentation of artefacts, technologies, artworks, or innovations staged in a physical venue, virtual environment, or hybrid setting. In the context of immersive technology and AI, exhibitions serve as deployment contexts for spatial computing experiences, interactive demonstrations, and knowledge communication — including trade fairs, museum installations, and dedicated industry events such as AIX. They sit at the intersection of event management, immersive experience design, and audience engagement.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:infra-software-engineering",
-      "label": "Software Engineering"
+      "@id": "urn:ngm:class:event",
+      "label": "Event"
     }
   ],
-  "quality": 0.35,
+  "qualityScore": 0.7,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:event-management", "label": "Event Management"},
+      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
+      {"@id": "urn:ngm:class:immersive-technology", "label": "Immersive Technology"},
+      {"@id": "urn:ngm:class:virtual-event", "label": "Virtual Event"},
+      {"@id": "urn:ngm:class:metaverse-core-concepts", "label": "metaverse core concepts"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -83,17 +96,20 @@ public:: true
 
 
 - ### Definition
-  - exhibition is a concept within the ngm domain.
+  - An **Exhibition** is a curated presentation of artefacts, technologies, or artworks staged in a physical, virtual, or hybrid setting. In immersive technology contexts, exhibitions are primary deployment venues for spatial computing demonstrations, AI showcases, and interactive installations — bridging research, commerce, and public engagement. Hybrid and fully virtual formats (e.g., on metaverse platforms) are increasingly common, extending reach beyond physical attendance.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:Exhibition
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - relatedTo:: Event Management, Immersive Experience, Immersive Technology, Virtual Event, metaverse core concepts
+  - uses:: Spatial Computing, Digital Twin
 
 - ### Content
   - [[AIX]]
+
+  Exhibitions act as proving grounds for emerging technologies: augmented reality overlays, digital twin visualisations, and robotics demonstrations are regularly premiered at trade shows and specialist conferences. The AIX (Artificial Intelligence Expo) series exemplifies this role, bringing together practitioners across AI, XR, and automation sectors.
 
 - ### Provenance
   - sources::

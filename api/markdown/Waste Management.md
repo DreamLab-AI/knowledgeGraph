@@ -162,9 +162,10 @@ public:: true
   "@id": "urn:ngm:class:waste-management",
   "@type": "Class",
   "label": "Waste Management",
-  "definition": "Waste management via blockchain leverages distributed ledgers and SmartContract|smart contracts to create transparent, immutable records of waste generation, segregation, collection, and processing throughout the CircularEconomy|circular economy lifecycle.",
+  "definition": "The collection, transport, processing, and disposal of waste materials, increasingly augmented by blockchain-based distributed ledgers and smart contracts that create immutable records of waste generation, segregation, and recovery throughout the circular economy lifecycle. Blockchain-enabled systems enable verifiable recycling rates, incentivise responsible disposal, and prevent illegal dumping.",
   "domain": "blockchain",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-network-component",
@@ -176,6 +177,38 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "uses": [
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:environmental-accounting",
+        "label": "Environmental Accounting"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-sustainability",
+        "label": "Blockchain Sustainability"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:circular-economy",
+        "label": "Circular Economy"
+      },
+      {
+        "@id": "urn:ngm:class:environmental-sustainability",
+        "label": "Environmental Sustainability"
+      }
+    ]
   }
 }
 ```
@@ -365,7 +398,12 @@ public:: true
   - belongs-to-domain:: [[BlockchainDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses [[Smart Contract]]
+  - Uses [[Blockchain]]
+  - Supports [[Circular Economy]]
+  - Supports [[Environmental Sustainability]]
+  - Related To [[Environmental Accounting]]
+  - Related To [[Blockchain Sustainability]]
 
 - ### Content
   - Blockchain-enabled waste tracking, recycling verification, and circular economy systems addressing the global waste crisis of 2+ billion tonnes annually. These platforms provide immutable verification of waste collection, processing, recycling rates, and material recovery whilst enabling incentive mechanisms for responsible waste behaviour. Major implementations include Plastic Bank's blockchain-verified ocean plastic collection tracking 100+ million kg recovered, RecycleGO's smart bin networks across 45+ cities rewarding recycling participation, IBM's waste-to-energy verification systems, and the Empower platform's pay-as-you-throw tokenisation reducing household waste by 35-45%. These solutions support circular economy transitions, plastic credit markets, e-waste traceability, and zero waste certification programmes across municipalities, corporations, and supply chains.

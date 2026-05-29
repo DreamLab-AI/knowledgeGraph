@@ -1,12 +1,13 @@
 - ### Definition
-  - Valsoft is a concept within the ngm domain.
+  - **Valsoft** (operating as Aspire Software) is a Canadian software conglomerate that acquires, operates, and grows vertical-market software companies, applying a decentralised management model to deliver AI-augmented solutions across multiple industry sectors.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:Valsoft
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: [[Artificial Intelligence]], [[Software Engineering]] — Valsoft/Aspire positions AI solutions architecture as a core capability across its portfolio
+  - **relatedTo**: [[Machine Learning]] — AI solutions at Valsoft include LLM and traditional ML implementations
 
 - ### Content
   - Their email [[Contracts and jobs]]

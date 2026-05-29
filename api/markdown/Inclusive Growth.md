@@ -44,7 +44,8 @@ public:: true
   "label": "Inclusive Growth",
   "definition": "AI should benefit people and planet by augmenting human capabilities, enhancing creativity, advancing inclusion of underrepresented populations, reducing economic, social and geographical inequalities, and protecting natural environments, thereby invigorating inclusive growth, sustainable develop...",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-legal-and-regulatory",
@@ -55,7 +56,23 @@ public:: true
       "label": "Policy Enforcement"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:sustainable-development", "label": "Sustainable Development"},
+      {"@id": "urn:ngm:class:well-being", "label": "Well Being"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:fairness", "label": "Fairness"},
+      {"@id": "urn:ngm:class:financial-inclusion", "label": "Financial Inclusion"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
+      {"@id": "urn:ngm:class:policy-enforcement", "label": "Policy Enforcement"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:harmful-bias", "label": "Harmful Bias"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -99,7 +116,10 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **relatedTo**: [[Sustainable Development]], [[Well Being]]
+  - **supports**: [[Fairness]], [[Financial Inclusion]]
+  - **requires**: [[AI Governance]], [[Policy Enforcement]]
+  - **contrastsWith**: [[Harmful Bias]]
 
 - ### Content
   - AI should benefit people and planet by augmenting human capabilities, enhancing creativity, advancing inclusion of underrepresented populations, reducing economic, social and geographical inequalities, and protecting natural environments, thereby invigorating inclusive growth, sustainable development and well-being.

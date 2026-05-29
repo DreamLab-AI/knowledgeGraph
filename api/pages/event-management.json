@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:event-management",
   "domain": "spatial-computing",
-  "definition": "Event Management is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "The planning, coordination, technical orchestration, and delivery of virtual or hybrid events within spatial computing and metaverse platforms, encompassing scheduling, access control, audience management, live streaming, and post-event analytics for concerts, conferences, and social gatherings.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -13,21 +13,52 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:virtual-concerts",
+        "label": "Virtual Concerts"
+      },
+      {
+        "id": "urn:ngm:class:virtual-event",
+        "label": "Virtual Event"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:virtual-community-platform",
+        "label": "Virtual Community Platform"
+      },
+      {
+        "id": "urn:ngm:class:virtual-event-platform",
+        "label": "Virtual Event Platform"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:metaverse-venue",
+        "label": "Metaverse Venue"
+      },
+      {
+        "id": "urn:ngm:class:virtual-location",
+        "label": "Virtual Location"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -58,7 +58,7 @@ public:: true
   "@id": "urn:ngm:class:on-device-learning",
   "@type": "Class",
   "label": "On-Device Learning",
-  "definition": "On-Device Learning is machine learning model training and adaptation occurring directly on end-user devices (smartphones, tablets, embedded systems) using local data without transmitting raw data to cloud servers, enabling personalized model adaptation, privacy preservation, and offline functiona...",
+  "definition": "Machine learning model training and adaptation occurring directly on end-user devices using only local data, without transmitting raw data to cloud servers. Enables personalised model adaptation, privacy preservation, and offline functionality while addressing challenges of limited compute, memory, and energy. Implemented through transfer learning, few-shot adaptation, and continual learning techniques on mobile and embedded platforms.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -67,7 +67,28 @@ public:: true
       "label": "AI Technique"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
+      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
+      {"@id": "urn:ngm:class:machine-learning-framework", "label": "Machine Learning Framework"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:tiny-ml", "label": "TinyML"},
+      {"@id": "urn:ngm:class:knowledge-distillation-for-edge", "label": "Knowledge Distillation for Edge"},
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
+      {"@id": "urn:ngm:class:differential-privacy", "label": "Differential Privacy"},
+      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:ai-deployment", "label": "AI Deployment"},
+      {"@id": "urn:ngm:class:edge-ai-system", "label": "Edge AI System"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:model-compression-for-edge", "label": "Model Compression for Edge"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

@@ -1,5 +1,5 @@
 - ### Definition
-  - Digital Content Creation is a concept within the metaverse domain. Further enrichment pending.
+  - The process of authoring, editing, and producing digital assets—including 3D models, textures, audio, video, and interactive experiences—using software toolchains. In spatial computing and metaverse contexts, digital content creation encompasses generative AI assistance, physically-based material authoring, and export pipelines targeting real-time rendering engines.
 
 bridges-to:: [[Computer Vision]]
 
@@ -8,7 +8,12 @@ bridges-to:: [[Computer Vision]]
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses [[Generative AI]]
+  - Uses [[Rendering Technology]]
+  - Part Of [[Content Production Workflow]]
+  - Enables [[Digital Content]]
+  - Enables [[Metaverse Content Pipeline]]
+  - Related To [[Digital Content Layer]]
 
 - ### Content
 

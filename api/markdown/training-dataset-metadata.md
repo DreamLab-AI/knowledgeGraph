@@ -9,7 +9,9 @@
   - is-subclass-of:: [[ModelArchitecture]]
 
 - ### Content
-  TrainingDatasetMetadata — content pending enrichment.
+  Training dataset metadata documents the origins, composition, and limitations of the data used to train a model. Fields typically include dataset name and version, collection date range, geographic or demographic scope, labelling methodology, inter-annotator agreement, and known class imbalances.
+
+  Accurate metadata enables downstream teams to assess whether a model is appropriate for a given deployment context. Regulators under the EU AI Act and equivalent frameworks increasingly mandate structured dataset documentation as part of technical file requirements for high-risk AI systems.
 
 - ### Provenance
   - sources:: Generated from bridge validation

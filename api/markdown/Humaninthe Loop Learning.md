@@ -54,15 +54,10 @@ public:: true
   "@id": "urn:ngm:class:humaninthe-loop-learning",
   "@type": "Class",
   "label": "Humaninthe Loop Learning",
-  "definition": "A concept in artificial intelligence related to Humaninthe Loop Learning.",
+  "definition": "A machine learning paradigm in which human annotators or domain experts are incorporated into the training loop to provide labels, corrections, or preference signals at points where automated methods are insufficient. Human-in-the-loop learning improves model quality on ambiguous or high-stakes tasks and is foundational to techniques such as active learning and RLHF.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
-  "quality": 0.35,
-  "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
-  },
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "sameAs": [
     {
       "@id": "urn:ngm:class:human-in-the-loop-learning",
@@ -74,7 +69,29 @@ public:: true
       "@id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
     }
-  ]
+  ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:active-learning", "label": "Active Learning"},
+      {"@id": "urn:ngm:class:reinforcement-learning-from-human-feedback", "label": "Reinforcement Learning from Human Feedback"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:human-in-the-loop", "label": "Human in the Loop"},
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"},
+      {"@id": "urn:ngm:class:value-alignment", "label": "Value Alignment"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:training-data", "label": "Training Data"}
+    ]
+  },
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 
@@ -127,7 +144,10 @@ public:: true
   - owl-role:: concept
 
 - ### Relationships
-  - is-subclass-of:: ['owl:Thing']
+  - **uses**: [[Active Learning]], [[Reinforcement Learning from Human Feedback]]
+  - **requires**: [[Human in the Loop]], [[Machine Learning]]
+  - **supports**: [[AI Alignment]], [[Value Alignment]]
+  - **relatedTo**: [[Training Data]]
 
 - ### Content
 

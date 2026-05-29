@@ -1,10 +1,14 @@
 - ### Definition
-  - Orchestration is a concept within the ngm domain.
+  - The automated coordination, scheduling, and lifecycle management of containerised workloads, microservices, and distributed agents across heterogeneous infrastructure. In the context of metaverse and telecollaboration systems, orchestration—exemplified by Kubernetes—ensures that compute-intensive rendering, AI inference, and real-time communication services scale elastically and recover automatically from failures.
 - ### Semantic Classification
   - owl-class:: infrastructure:Orchestration
   - owl-role:: Concept
 - ### Relationships
-  - <!-- No relationships defined -->
+  - enables [[Microservices Architecture]]
+  - enables [[Distributed Systems]]
+  - requires [[Digital Infrastructure]]
+  - supports [[Edge Computing]]
+  - supports [[Latency]]
 - ### Content
   # Orchestration
   Orchestration represents a key component in Metaverse infrastructure and technology. Research: Orchestration in distributed Metaverse - service orchestration, microservices, container orchestration

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:soon-next-later-ai-futurology",
   "domain": "artificial-intelligence",
-  "definition": "Soon-Next-Later (AI futurology) is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "Soon-Next-Later is a structured futurology framework for categorising AI capability developments across three temporal horizons: Soon (0\u20135 years, capabilities already emerging in products), Next (5\u201310 years, capabilities requiring current research to mature), and Later (10+ years, speculative capabilities dependent on fundamental advances). The framework provides practitioners with a tractable planning scaffold that avoids both near-term over-hype and long-horizon dismissiveness.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-research-area",
@@ -13,21 +13,53 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:sovereign-ai-bid",
+        "label": "Sovereign AI bid"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ai-risk",
+        "label": "AI Risk"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:sam-hammond",
+        "label": "Sam Hammond"
+      },
+      {
+        "id": "urn:ngm:class:artificial-general-intelligence",
+        "label": "Artificial General Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:social-contract",
+        "label": "Social Contract"
+      }
+    ]
   },
   "wikilinks": [
     {

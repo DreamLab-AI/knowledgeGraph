@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:digital-heritage",
   "domain": "spatial-computing",
-  "definition": "Digital Heritage is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "The digitisation, preservation, and interactive presentation of cultural artefacts, historical sites, and intangible heritage through spatial computing technologies such as 3D reconstruction, AR, and VR. Digital heritage enables remote access, scholarly analysis, and public engagement with cultural memory that may otherwise be physically inaccessible or at risk of loss.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -14,20 +14,48 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:cultural-heritage-xr-experience",
+        "label": "Cultural Heritage XR Experience"
+      },
+      {
+        "id": "urn:ngm:class:archival-standards",
+        "label": "Archival Standards"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:digital-preservation",
+        "label": "Digital Preservation"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      }
+    ]
   },
   "wikilinks": [
     {

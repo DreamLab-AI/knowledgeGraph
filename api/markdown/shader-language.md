@@ -6,7 +6,12 @@
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses [[Compute Shader]]
+  - uses [[Vertex Shader]]
+  - enables [[Rendering Pipeline]]
+  - enables [[Physically Based Rendering]]
+  - relatedTo [[GPU Compute]]
+  - relatedTo [[Real-Time Rendering]]
 
 - ### Content
   # ShaderLanguage

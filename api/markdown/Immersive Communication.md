@@ -42,9 +42,10 @@ public:: true
   "@id": "urn:ngm:class:immersive-communication",
   "@type": "Class",
   "label": "Immersive Communication",
-  "definition": "Immersive Communication refers to communication systems and experiences that leverage extended reality (XR) technologies to create highly engaging, spatially-aware interaction environments.",
+  "definition": "Communication systems and experiences that leverage extended reality (XR) technologies — including VR meetings, AR collaboration tools, spatial audio conferencing, and mixed reality platforms — to create spatially-aware interaction environments that transcend conventional 2D video interfaces and convey presence, embodiment, and spatial context.",
   "domain": "distributed-collaboration",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:dc-telepresence",
@@ -60,6 +61,34 @@ public:: true
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      },
+      {
+        "@id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:virtual-collaboration",
+        "label": "Virtual Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:remote-collaboration",
+        "label": "Remote Collaboration"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
+    ]
   }
 }
 ```
@@ -100,6 +129,9 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Telecollaboration]]
+  - Requires: [[Spatial Audio]], [[Avatar]]
+  - Uses: [[Metaverse]]
+  - Bridges To: [[Virtual Collaboration]], [[Remote Collaboration]]
 
 - ### Content
   Immersive Communication — content pending enrichment.

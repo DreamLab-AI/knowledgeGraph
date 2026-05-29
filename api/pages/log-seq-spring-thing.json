@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:log-seq-spring-thing",
   "domain": "infrastructure",
-  "definition": "Log Seq Spring Thing is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Log Seq Spring Thing is a project workstream and AI hacking initiative that connects Logseq-based knowledge graph authoring with VisionFlow, exploring how networked thought can be published, visualised, and extended through AI-assisted tooling. It serves as a bridge between personal knowledge management workflows and semantic web infrastructure.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-software-engineering",
@@ -14,7 +14,7 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,11 +23,33 @@
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      },
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": []

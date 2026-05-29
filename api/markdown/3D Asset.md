@@ -42,9 +42,9 @@ public:: true
   "@id": "urn:ngm:class:3-d-asset",
   "@type": "Class",
   "label": "3D Asset",
-  "definition": "3D Asset is a spatial computing concept and a type of Digital Asset Management.",
+  "definition": "A 3D Asset is a discrete digital artefact representing geometry, materials, animations, or environments used in spatial computing and metaverse applications. These assets follow standardised interchange formats such as glTF, FBX, USD, and OBJ to ensure cross-platform interoperability, and typically include multiple levels of detail (LOD), physically-based rendering (PBR) material maps, skeletal rigs, and collision meshes. Effective 3D asset pipelines integrate version control, DRM provenance tracking, and automated quality assurance workflows to support diverse hardware configurations.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
@@ -55,6 +55,20 @@ public:: true
       "label": "Digital Asset Management"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:3-d-asset-standard", "label": "3D Asset Standard"},
+      {"@id": "urn:ngm:class:physically-based-rendering", "label": "Physically Based Rendering"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:level-of-detail", "label": "Level of Detail"},
+      {"@id": "urn:ngm:class:gltf-standard", "label": "Gltf Standard"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -98,7 +112,12 @@ public:: true
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[3D Asset Standard]]
+  - requires [[Physically Based Rendering]]
+  - enables [[Metaverse]]
+  - enables [[Digital Twin]]
+  - uses [[Level of Detail]]
+  - uses [[Gltf Standard]]
 
 - ### Content
 

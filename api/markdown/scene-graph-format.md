@@ -1,12 +1,14 @@
 - ### Definition
-  - SceneGraphFormat is a concept within the ngm domain.
+  - A Scene Graph Format is a standardised serialisation schema for directed acyclic graphs that represent 3D scene hierarchies, encoding spatial transforms, geometry, materials, lights, cameras, and behaviours. Major formats include glTF (optimised for runtime delivery), USD (layered composition for production pipelines), X3D (ISO web standard), and Collada (interchange for DCC tools).
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:SceneGraphFormat
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **enables** → [[Interoperability]], [[Real-Time Rendering]], [[Digital Twin]]
+  - **uses** → [[3D Asset Standard]], [[Gltf Standard]]
+  - **supports** → [[3D Model]], [[Rendering Pipeline]]
 
 - ### Content
   # SceneGraphFormat

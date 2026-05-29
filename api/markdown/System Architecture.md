@@ -56,8 +56,24 @@ public:: true
   "label": "System Architecture",
   "definition": "System Architecture in AI defines the holistic structure integrating hardware, software, data infrastructure, and operational components to deliver intelligent capabilities at scale.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
   "quality": 0.35,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:machine-learning-infrastructure", "label": "Machine Learning Infrastructure"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"},
+      {"@id": "urn:ngm:class:model-architecture", "label": "Model Architecture"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -122,6 +138,12 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: ['owl:Thing']
+  - hasPart:: [[Data Pipeline]]
+  - requires:: [[Distributed Systems]]
+  - requires:: [[Edge Computing]]
+  - enables:: [[Machine Learning Infrastructure]]
+  - relatedTo:: [[Microservices Architecture]]
+  - relatedTo:: [[Model Architecture]]
 
 - ### Content
 

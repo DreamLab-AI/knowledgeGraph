@@ -1,12 +1,18 @@
 - ### Definition
-  - Geospatial Information is a concept within the metaverse domain. Further enrichment pending.
+  - Geospatial Information is data that describes objects, events, or phenomena with reference to a location on or near the Earth's surface. It integrates coordinate systems, geographic data layers, and spatial analytics to support location-aware applications including digital twins, augmented reality overlays, and urban simulation.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:GeospatialInformation
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses [[Coordinate System]]
+  - Uses [[Lidar]]
+  - Uses [[Point Cloud]]
+  - Enables [[Geospatial Engine]]
+  - Enables [[Location Based Experience]]
+  - Related To [[Spatial Data Structure]]
+  - Related To [[Geospatial Technology]]
 
 - ### Content
 

@@ -42,16 +42,40 @@ public:: true
   "@id": "urn:ngm:class:industry-cloud-platforms",
   "@type": "Class",
   "label": "Industry Cloud Platforms",
-  "definition": "Industry Cloud Platforms is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Industry Cloud Platforms (ICPs) are collections of integrated cloud IT assets — including applications, data services, AI pipelines, and compliance tooling — tailored to the specific workflows, regulatory requirements, and data models of a vertical industry such as healthcare, financial services, manufacturing, or retail. They combine horizontal cloud infrastructure with deep domain knowledge, enabling organisations to run both vertical and cross-functional business applications on a unified platform while maintaining appropriate security controls. Gartner identified ICPs as a top strategic technology trend for 2024, driven by the need to reduce IT sprawl and accelerate industry-specific digital transformation.",
   "domain": "spatial-computing",
   "maturity": "emerging",
+  "qualityScore": 0.75,
+  "quality": 0.75,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:platform-service", "label": "Platform Service"},
+      {"@id": "urn:ngm:class:data-analytics", "label": "Data Analytics"},
+      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"},
+      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:cloud-infrastructure", "label": "Cloud Infrastructure"},
+      {"@id": "urn:ngm:class:cloud-native-applications", "label": "Cloud-Native Applications"},
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
+      {"@id": "urn:ngm:class:enterprise-architecture", "label": "Enterprise Architecture"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:digital-transformation", "label": "Digital Transformation"},
+      {"@id": "urn:ngm:class:healthcare-technology", "label": "Healthcare Technology"},
+      {"@id": "urn:ngm:class:supply-chain-management", "label": "Supply Chain Management"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:platform-engineering", "label": "Platform Engineering"},
+      {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -87,7 +111,9 @@ public:: true
 
 
 - ### Definition
-  - [Generated from Gartner emerging tech analysis]
+  - Industry Cloud Platforms (ICPs) are vertically specialised cloud solutions that bundle industry-specific applications, AI-enriched data services, compliance tooling, and horizontal business functions (finance, HR, supply chain) onto a unified cloud-native stack. Unlike generic IaaS or PaaS offerings, ICPs embed deep domain knowledge — regulatory schemas, data models, and workflow patterns — so that organisations in healthcare, financial services, manufacturing, or retail can rapidly deploy industry-relevant workloads without building bespoke integrations from scratch.
+
+  - ICPs represent the next evolutionary stage following Infrastructure-as-a-Service and Platform-as-a-Service, and were identified by Gartner as a top strategic technology trend for 2024. Major cloud providers (AWS, Microsoft, Google) and consulting firms (PwC, Kyndryl) have launched vertical offerings; composability capabilities allow IT leaders to modularly assemble and customise these platforms to match accelerating industry disruptions.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:IndustryCloudPlatforms

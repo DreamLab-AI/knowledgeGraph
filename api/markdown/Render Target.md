@@ -37,9 +37,10 @@ public:: true
   "@id": "urn:ngm:class:render-target",
   "@type": "Class",
   "label": "Render Target",
-  "definition": "Render Target is a spatial computing concept and a type of Render Pipeline.",
+  "definition": "A memory buffer or texture surface to which a GPU writes the output of a rendering pass, including the default framebuffer displayed on screen and off-screen targets used for post-processing effects, shadow maps, reflections, and multi-pass rendering in real-time graphics pipelines.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-display-and-rendering",
@@ -50,11 +51,42 @@ public:: true
       "label": "Render Pipeline"
     }
   ],
-  "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "uses": [
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:compute-shader",
+        "label": "Compute Shader"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:pixel-shader",
+        "label": "Pixel Shader"
+      },
+      {
+        "@id": "urn:ngm:class:vertex-shader",
+        "label": "Vertex Shader"
+      },
+      {
+        "@id": "urn:ngm:class:shader",
+        "label": "Shader"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:real-time-rendering-pipeline",
+        "label": "Real-Time Rendering Pipeline"
+      }
+    ]
   }
 }
 ```
@@ -80,14 +112,19 @@ public:: true
 
 
 - ### Definition
-  - RenderTarget is a concept within the ngm domain.
+  - A memory buffer or texture surface to which a GPU writes the output of a rendering pass, including the default framebuffer displayed on screen and off-screen targets used for post-processing effects, shadow maps, reflections, and multi-pass rendering in real-time graphics pipelines.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:RenderTarget
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Part Of: [[Real-Time Rendering Pipeline]]
+  - Uses: [[GPU Compute]]
+  - Uses: [[Compute Shader]]
+  - Related To: [[Pixel Shader]]
+  - Related To: [[Vertex Shader]]
+  - Related To: [[Shader]]
 
 - ### Content
   # RenderTarget

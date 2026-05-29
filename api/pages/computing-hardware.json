@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:computing-hardware",
   "domain": "spatial-computing",
-  "definition": "Computing Hardware is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Computing Hardware encompasses the physical processing, memory, and peripheral devices that underpin spatial computing experiences, including GPUs, neural accelerators, XR headsets, and edge devices. It forms the substrate on which spatial applications, rendering engines, and sensor fusion pipelines execute.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -14,17 +14,44 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:xr-hardware",
+        "label": "XR Hardware"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:hardware-and-edge",
+        "label": "Hardware and Edge"
+      },
+      {
+        "id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": []

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:virtual-society-regulations",
   "domain": "artificial-intelligence",
-  "definition": "The legal frameworks, governance structures, and policy mechanisms designed to regulate behavior, protect rights, and ensure safety within metaverse platforms and virtual world environments, encompassing intellectual property, data privacy, content moderation, and cross-jurisdictional enforcement...",
+  "definition": "The legal frameworks, governance structures, and policy mechanisms designed to regulate behaviour, protect rights, and ensure safety within metaverse platforms and virtual world environments, encompassing intellectual property, data privacy, content moderation, and cross-jurisdictional enforcement challenges. The EU regulatory suite \u2014 GDPR, Digital Services Act, Digital Markets Act, and AI Act \u2014 forms the most comprehensive current framework, with international coordination emerging through the Global Digital Compact adopted in September 2024.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -17,21 +17,57 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:platform-governance",
+        "label": "Platform Governance"
+      },
+      {
+        "id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-rights",
+        "label": "Digital Rights"
+      },
+      {
+        "id": "urn:ngm:class:cross-border-compliance",
+        "label": "Cross Border Compliance"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:metaverse-governance-and-safeguarding",
+        "label": "Metaverse governance and safeguarding"
+      },
+      {
+        "id": "urn:ngm:class:virtual-society",
+        "label": "Virtual Society"
+      }
+    ]
   },
   "wikilinks": [
     {

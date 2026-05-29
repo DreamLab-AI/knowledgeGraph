@@ -46,7 +46,7 @@ public:: true
   "@id": "urn:ngm:class:3-d-li-dar",
   "@type": "Class",
   "label": "3D LiDAR",
-  "definition": "3D LiDAR generates three-dimensional point cloud of environment.",
+  "definition": "3D LiDAR is a active ranging sensor that emits pulsed laser light across multiple vertical channels to capture dense three-dimensional point clouds of the surrounding environment. Spinning or solid-state variants measure range and intensity for hundreds of thousands of points per second, enabling robots and autonomous vehicles to perform obstacle detection, SLAM, and high-fidelity scene reconstruction in real time.",
   "domain": "robotics",
   "maturity": "established",
   "subClassOf": [
@@ -59,7 +59,25 @@ public:: true
       "label": "Lidar"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:point-cloud", "label": "Point Cloud"},
+      {"@id": "urn:ngm:class:slam", "label": "SLAM"},
+      {"@id": "urn:ngm:class:simultaneous-localisation-and-mapping", "label": "Simultaneous Localisation and Mapping"},
+      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
+      {"@id": "urn:ngm:class:perception-system", "label": "Perception System"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:2-d-li-dar", "label": "2D LiDAR"},
+      {"@id": "urn:ngm:class:lidar-scanning", "label": "Lidar Scanning"},
+      {"@id": "urn:ngm:class:stereo-camera", "label": "Stereo Camera"},
+      {"@id": "urn:ngm:class:multirotor-uav", "label": "Multirotor UAV"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

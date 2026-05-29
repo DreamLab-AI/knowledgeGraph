@@ -37,15 +37,28 @@ public:: true
   "@id": "urn:ngm:class:physics-simulation",
   "@type": "Class",
   "label": "Physics Simulation",
-  "definition": "Physics Simulation is a spatial computing concept and a type of spatial-computing.",
+  "definition": "Physics Simulation is the computational modelling of physical phenomena — including rigid-body dynamics, soft-body deformation, fluid behaviour, and collision detection — to produce physically plausible behaviour in virtual environments. It underpins interactive experiences in virtual reality, robotics training, and digital-twin applications by enabling real-time or near-real-time approximations of classical mechanics.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
     }
   ],
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
+      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:robot-learning", "label": "Robot Learning"},
+      {"@id": "urn:ngm:class:autonomous-vehicle", "label": "Autonomous Vehicle"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -76,14 +89,18 @@ public:: true
 
 
 - ### Definition
-  - PhysicsSimulation is a concept within the ngm domain.
+  - Physics Simulation is the computational modelling of physical phenomena — including rigid-body dynamics, soft-body deformation, fluid behaviour, and collision detection — to produce physically plausible behaviour in virtual environments. It underpins interactive experiences in virtual reality, robotics training, and digital-twin applications.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:PhysicsSimulation
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - enables:: [[Virtual Reality]]
+  - enables:: [[Robotics]]
+  - uses:: [[Game Engine]]
+  - supports:: [[Robot Learning]]
+  - supports:: [[Autonomous Vehicle]]
 
 - ### Content
   # PhysicsSimulation

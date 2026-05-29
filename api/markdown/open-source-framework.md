@@ -1,12 +1,15 @@
 - ### Definition
-  - OpenSourceFramework is a concept within the ngm domain.
+  - A publicly licensed software framework whose source code is freely available for inspection, modification, and redistribution under an approved open-source licence. Open source frameworks provide reusable architectural scaffolding—APIs, libraries, conventions, and tooling—that accelerate development whilst enabling community-driven quality assurance, security auditing, and interoperability across vendor boundaries.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:OpenSourceFramework
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Has part [[Open Source Software]], [[API Standard]]
+  - Enables [[Interoperability]], [[Machine Learning Framework]]
+  - Supports [[Open-Source AI]]
+  - Related to [[Robot Operating System]], [[Game Engine]]
 
 - ### Content
   # OpenSourceFramework

@@ -52,7 +52,7 @@ public:: true
   "label": "Constitutional AI",
   "definition": "A mod for training AI assistants to be harmless through self-improvement, using a set of principles or \"constitution\" to guide behaviour without human labels for harmful outputs. Constitutional AI combines supervised learning for self-critiques and revisions with RL from AI Feedback (RLAIF).",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
@@ -60,6 +60,22 @@ public:: true
     }
   ],
   "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
+      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
+      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -114,6 +130,12 @@ public:: true
 
 - ### Relationships
   - bridges-to:: [[Computer Vision]]
+  - requires:: [[Reinforcement Learning]]
+  - enables:: [[AI Safety]]
+  - enables:: [[AI Alignment]]
+  - uses:: [[Large Language Models]]
+  - supports:: [[Responsible AI]]
+  - supports:: [[AI Ethics]]
 
 - ### Content
   - A method for training AI assistants to be harmless through self-improvement, using a set of principles or "constitution" to guide behaviour without human labels for harmful outputs. Constitutional AI combines supervised learning for self-critiques and revisions with RL from AI Feedback (RLAIF).

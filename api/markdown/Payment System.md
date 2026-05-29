@@ -37,15 +37,29 @@ public:: true
   "@id": "urn:ngm:class:payment-system",
   "@type": "Class",
   "label": "Payment System",
-  "definition": "Payment System is a blockchain and distributed systems concept and a type of blockchain.",
+  "definition": "A Payment System is an infrastructure layer enabling secure and auditable exchange of value between parties, encompassing fiat payment gateways, blockchain-native token transfers, and hybrid settlement mechanisms. Within virtual economies and metaverse platforms, payment systems must handle high-frequency microtransactions, cross-currency conversion, smart-contract-mediated escrow, and compliance with AML/KYC regulations while preserving user privacy and minimising settlement latency.",
   "domain": "blockchain",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-defi-and-economics",
       "label": "DeFi and Economics"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"},
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:cryptographic-security", "label": "Cryptographic Security"},
+      {"@id": "urn:ngm:class:lightning-network", "label": "Lightning Network"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:tokenomics", "label": "Tokenomics"},
+      {"@id": "urn:ngm:class:nft", "label": "NFT"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -76,14 +90,19 @@ public:: true
 
 
 - ### Definition
-  - PaymentSystem is a concept within the ngm domain.
+  - A Payment System is an infrastructure layer enabling secure and auditable exchange of value between parties, encompassing fiat payment gateways, blockchain-native token transfers, and hybrid settlement mechanisms. Within virtual economies and metaverse platforms, payment systems must handle high-frequency microtransactions, cross-currency conversion, smart-contract-mediated escrow, and compliance with AML/KYC regulations while preserving user privacy and minimising settlement latency.
 
 - ### Semantic Classification
   - owl-class:: blockchain/PaymentSystem
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Blockchain Transaction]]
+  - requires [[Smart Contract]]
+  - uses [[Cryptographic Security]]
+  - uses [[Lightning Network]]
+  - relatedTo [[Tokenomics]]
+  - relatedTo [[NFT]]
 
 - ### Content
   # PaymentSystem

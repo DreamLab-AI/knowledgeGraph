@@ -17,19 +17,42 @@
   "@id": "urn:ngm:class:asynchronous-communication",
   "@type": "Class",
   "label": "Asynchronous Communication",
-  "definition": "Asynchronous Communication is a foundational concept in infrastructure that serves as a classification parent for 3 related concepts in the ontology.",
+  "definition": "A communication paradigm in which message senders and receivers do not interact in real-time; messages are queued, buffered, or stored so that the sender continues processing without blocking until the recipient acknowledges or responds, enabling decoupled, resilient distributed systems.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "quality": 0.3,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-network-and-comms",
       "label": "Network and Communication"
     }
-  ]
+  ],
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:asynchronous-execution", "label": "Asynchronous Execution"},
+      {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event Driven Architecture"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:parallel-processing", "label": "Parallel Processing"},
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}
+    ]
+  }
 }
 ```
 
 ## Asynchronous Communication
 
-Asynchronous Communication is a foundational concept that serves as a taxonomy parent for related classes in the infrastructure domain.
+A communication paradigm in which senders and receivers do not interact in real-time: messages are queued or buffered so the sender continues processing without blocking, enabling decoupled, resilient distributed systems.
+
+### Relationships
+- enables:: [[Asynchronous Execution]], [[Microservices Architecture]]
+- uses:: [[Event Driven Architecture]]
+- supports:: [[Parallel Processing]], [[Edge Computing]]
+- relatedTo:: [[AI Infrastructure]]

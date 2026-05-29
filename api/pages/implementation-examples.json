@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:implementation-examples",
   "domain": "spatial-computing",
-  "definition": "Implementation examples in metaverse and blockchain contexts are concrete, production-ready code samples demonstrating how theoretical concepts translate into functioning systems, including SmartContractExamples|smart contract implementations, NFTContracts|NFT contract patterns, and",
+  "definition": "Concrete, production-oriented code samples and reference designs demonstrating how theoretical concepts translate into functioning systems. In metaverse and blockchain contexts these span smart contract patterns (DeFi AMMs, NFT contracts, DAO governance), gas optimisation techniques, security patterns such as checks-effects-interactions, and upgradeability proxies. They serve as educational resources and accelerators for developers, reducing deployment risk through audited, annotated reference implementations.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -14,17 +14,44 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.4,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": []

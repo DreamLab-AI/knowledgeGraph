@@ -42,16 +42,33 @@ public:: true
   "@id": "urn:ngm:class:geospatial-technology",
   "@type": "Class",
   "label": "Geospatial Technology",
-  "definition": "Geospatial Technology is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Geospatial Technology encompasses the tools, systems, and methods used to acquire, process, analyse, and visualise spatially referenced data about the Earth's surface and built environment. In spatial computing and metaverse contexts, it underpins world-scale anchoring, location-based experiences, digital twin construction of urban environments, and precise coordinate registration between physical and virtual spaces.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:gps", "label": "Gps"},
+      {"@id": "urn:ngm:class:geospatial-information", "label": "Geospatial Information"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
+      {"@id": "urn:ngm:class:location-based-experience", "label": "Location Based Experience"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:lidar", "label": "Lidar"},
+      {"@id": "urn:ngm:class:geospatial-engine", "label": "Geospatial Engine"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -94,7 +111,13 @@ public:: true
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **hasPart** [[Gps]] — GPS is a primary geospatial positioning technology
+  - **hasPart** [[Geospatial Information]] — geospatial technology acquires and processes geospatial information
+  - **enables** [[Digital Twin]] — georeferenced spatial data underpins urban and infrastructure digital twins
+  - **enables** [[Location Based Experience]] — precise positioning enables location-anchored XR experiences
+  - **uses** [[Lidar]] — LiDAR provides high-accuracy 3D geospatial point cloud data
+  - **uses** [[Geospatial Engine]] — geospatial engines process and render spatial data at scale
+  - **relatedTo** [[Spatial Computing]] — geospatial technology is a foundational layer of spatial computing platforms
 
 - ### Content
 

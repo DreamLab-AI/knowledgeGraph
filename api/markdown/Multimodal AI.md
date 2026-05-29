@@ -42,7 +42,7 @@ public:: true
   "@id": "urn:ngm:class:multimodal-ai",
   "@type": "Class",
   "label": "Multimodal AI",
-  "definition": "Multimodal AI is a type of Artificial Intelligence in the artificial intelligence domain.",
+  "definition": "Multimodal AI refers to machine learning systems that process and integrate information from multiple data modalities — including text, images, audio, and video — simultaneously to produce contextually richer outputs than single-modality systems. These architectures employ specialised neural network fusion techniques to replicate the human brain's capacity to synthesise diverse sensory inputs, enabling applications in healthcare diagnostics, human-computer interaction, and cross-modal content generation.",
   "domain": "artificial-intelligence",
   "maturity": "emerging",
   "subClassOf": [
@@ -51,7 +51,31 @@ public:: true
       "label": "AI Research Area"
     }
   ],
-  "quality": 0.5,
+  "quality": 0.75,
+  "qualityScore": 0.75,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
+      {"@id": "urn:ngm:class:speech-recognition", "label": "Speech Recognition"},
+      {"@id": "urn:ngm:class:multimodal-understanding", "label": "Multimodal Understanding"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
+      {"@id": "urn:ngm:class:feature-extraction", "label": "Feature Extraction"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"},
+      {"@id": "urn:ngm:class:text-to-image", "label": "Text-to-Image"},
+      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
+      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

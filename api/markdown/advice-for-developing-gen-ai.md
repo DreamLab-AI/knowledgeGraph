@@ -1,5 +1,5 @@
 - ### Definition
-  - Advice for developing GenAI is a concept within the ngm domain.
+  - A practitioner's phased methodology for building generative AI applications: start with the best available model, prototype rapidly, validate with stakeholders, then build robustly—deferring fine-tuning and legal risk until each phase is proven.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:AdviceForDevelopingGenAI
@@ -7,6 +7,10 @@
 
 - ### Relationships
   - bridges-to:: [[AI Agent System]]
+  - uses:: [[Generative AI]], [[Large Language Models]], [[AI Video]]
+  - enables:: [[Fine Tuning]], [[LoRA DoRA etc]]
+  - supports:: [[AI Governance and Ethics]]
+  - relatedTo:: [[Music and Audio]]
 
 - ### Content
   **DO:**

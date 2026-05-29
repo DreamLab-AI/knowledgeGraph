@@ -42,9 +42,10 @@ public:: true
   "@id": "urn:ngm:class:universal-avatar",
   "@type": "Class",
   "label": "Universal Avatar",
-  "definition": "A cross-platform digital representation of a user that maintains consistent identity, appearance, and customizations across multiple metaverse applications, games, and virtual environments through interoperability standards and shared formats.",
+  "definition": "A cross-platform digital representation of a user that maintains consistent identity, appearance, and asset customisations across multiple metaverse applications, games, and virtual environments. Universal avatars rely on interoperability standards such as glTF and VRM to enable a single avatar to function across thousands of compatible platforms without requiring recreation.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
@@ -55,11 +56,48 @@ public:: true
       "label": "Avatar"
     }
   ],
-  "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:avatar-customization",
+        "label": "Avatar Customization"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:avatar-interoperability",
+        "label": "Avatar Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:avatar-standard",
+        "label": "Avatar Standard"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:avatar-portability",
+        "label": "Avatar Portability"
+      },
+      {
+        "@id": "urn:ngm:class:cross-platform-identity",
+        "label": "Cross-Platform Identity"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:gltf-standard",
+        "label": "Gltf Standard"
+      },
+      {
+        "@id": "urn:ngm:class:vrm-format",
+        "label": "VRM Format"
+      }
+    ]
   }
 }
 ```
@@ -99,6 +137,13 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Avatar]]
+  - Requires [[Avatar Interoperability]]
+  - Requires [[Avatar Standard]]
+  - Uses [[Gltf Standard]]
+  - Uses [[VRM Format]]
+  - Enables [[Avatar Portability]]
+  - Enables [[Cross-Platform Identity]]
+  - Has Part [[Avatar Customization]]
 
 - ### Content
 

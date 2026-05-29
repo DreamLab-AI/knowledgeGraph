@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:agentic-ai",
   "domain": "artificial-intelligence",
-  "definition": "Agentic AI refers to AI systems that autonomously plan, reason, and execute multi-step tasks by calling tools and taking actions in an environment to achieve specified goals.",
+  "definition": "Agentic AI refers to AI systems characterised by autonomy, goal-directedness, and the capacity to take sustained sequences of actions \u2014 including calling tools, spawning sub-agents, and modifying their own environment \u2014 in pursuit of high-level objectives specified by a user or orchestrator. Agentic systems differ from conversational AI in that they operate over extended time horizons, maintain state across steps, and may take consequential irreversible actions. The term is used both to describe individual agents and multi-agent architectures in which agentic components collaborate.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-application",
@@ -14,11 +14,25 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +41,16 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-agents",
+        "label": "AI Agents"
+      },
+      {
+        "id": "urn:ngm:class:orchestration",
+        "label": "Orchestration"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

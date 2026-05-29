@@ -1,12 +1,18 @@
 - ### Definition
-  - NetworkingTechnology is a concept within the ngm domain.
+  - The protocols, hardware, and software frameworks that enable real-time data transmission, synchronisation, and communication between distributed participants. In spatial computing contexts this encompasses WebRTC, QUIC, UDP/TCP stacks, adaptive bitrate streaming, and delta-compression techniques supporting low-latency avatar synchronisation and shared world-state updates.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:NetworkingTechnology
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **enables** [[Multi User Systems]] — networking technology is the prerequisite for any synchronised multi-user platform
+  - **enables** [[Real Time]] — low-latency network protocols enable real-time data exchange
+  - **hasPart** [[Network Quality Metric]] — quality metrics are produced by and used to tune the networking stack
+  - **hasPart** [[Open Standard]] — open standards (WebRTC, QUIC, WebSocket) define the interoperable networking layer
+  - **uses** [[Distributed System]] — networking technology is the communication substrate of distributed systems
+  - **supports** [[Edge Computing]] — edge nodes reduce latency for time-sensitive networked applications
+  - **supports** [[Spatial Computing]] — spatial computing platforms depend on networking technology for multi-user presence
 
 - ### Content
   # NetworkingTechnology

@@ -1,12 +1,15 @@
 - ### Definition
-  - State Space and Other Approaches is a concept within the ngm domain.
+  - State Space and Other Approaches encompasses structured state space models (SSMs) and related sequence modelling architectures, most notably the Mamba family, which apply selective state-space mechanisms to achieve linear-time sequence processing. These approaches offer a compelling alternative to Transformers by combining efficient recurrence with hardware-aware algorithms, enabling superior throughput on long sequences across language, vision, and genomics domains.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:StateSpaceAndOtherApproaches
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - contrastsWith:: Transformer, Transformer Architecture
+  - hasPart:: Mixture of Experts, Recurrent Neural Network
+  - uses:: Machine Learning, Deep Learning
+  - relatedTo:: Neural Rendering, Large Language Models
 
 - ### Content
   - # Mamba: Linear-Time Sequence Modelling with Selective State Spaces

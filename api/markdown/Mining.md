@@ -66,7 +66,7 @@ public:: true
   "@id": "urn:ngm:class:mining",
   "@type": "Class",
   "label": "Mining",
-  "definition": "Proof-of-work block creation within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "Mining is the proof-of-work block-creation process in which participating nodes compete to solve a cryptographic hash puzzle, with the winner appending the next block to the chain and receiving a block reward. Mining provides Sybil resistance, ensures probabilistic finality, and anchors chain security to real-world energy expenditure.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -83,7 +83,28 @@ public:: true
       "label": "ConsensusProtocol"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:mining-pool", "label": "Mining Pool"},
+      {"@id": "urn:ngm:class:mining-reward", "label": "Mining Reward"},
+      {"@id": "urn:ngm:class:bitcoin-mining", "label": "Bitcoin Mining"},
+      {"@id": "urn:ngm:class:nonce", "label": "Nonce"},
+      {"@id": "urn:ngm:class:block-reward", "label": "Block Reward"},
+      {"@id": "urn:ngm:class:network-hash-rate", "label": "Network Hash Rate"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:blockchain-energy-consumption", "label": "Blockchain Energy Consumption"},
+      {"@id": "urn:ngm:class:nakamoto-consensus", "label": "Nakamoto Consensus"},
+      {"@id": "urn:ngm:class:probabilistic-finality", "label": "Probabilistic Finality"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

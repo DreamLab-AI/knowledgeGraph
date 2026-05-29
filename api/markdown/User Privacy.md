@@ -37,9 +37,10 @@ public:: true
   "@id": "urn:ngm:class:user-privacy",
   "@type": "Class",
   "label": "User Privacy",
-  "definition": "User Privacy is a technology infrastructure concept and a type of Privacy Framework.",
+  "definition": "User Privacy encompasses the rights, technical mechanisms, and regulatory obligations protecting individuals from unwanted disclosure of their identity, transactions, and behavioural patterns within digital and blockchain systems. Protections span cryptographic techniques (zero-knowledge proofs, ring signatures, confidential transactions), network-layer obfuscation (Dandelion++, Tor), and compliance frameworks (GDPR, data minimisation principles).",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-legal-and-regulatory",
@@ -50,7 +51,21 @@ public:: true
       "label": "Privacy Framework"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
+      {"@id": "urn:ngm:class:differential-privacy", "label": "Differential Privacy"},
+      {"@id": "urn:ngm:class:encryption", "label": "Encryption"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"},
+      {"@id": "urn:ngm:class:gdpr-compliance", "label": "GDPR Compliance"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy By Design"},
+      {"@id": "urn:ngm:class:cryptography-security-and-privacy", "label": "Cryptography Security and Privacy"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -80,14 +95,16 @@ public:: true
 
 
 - ### Definition
-  - UserPrivacy is a concept within the ngm domain.
+  User Privacy encompasses the rights, technical mechanisms, and regulatory obligations protecting individuals from unwanted disclosure of their identity, transactions, and behavioural patterns within digital and blockchain systems. Protections span cryptographic techniques (zero-knowledge proofs, ring signatures, confidential transactions), network-layer obfuscation (Dandelion++, Tor), and compliance frameworks (GDPR, data minimisation principles).
 
 - ### Semantic Classification
   - owl-class:: blockchain:UserPrivacy
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: Zero-Knowledge Proof, Differential Privacy, Encryption
+  - **requires**: Data Protection, GDPR Compliance
+  - **relatedTo**: Privacy By Design, Cryptography Security and Privacy
 
 - ### Content
 

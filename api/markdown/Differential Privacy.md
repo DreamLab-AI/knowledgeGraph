@@ -66,7 +66,7 @@ public:: true
   "@id": "urn:ngm:class:differential-privacy",
   "@type": "Class",
   "label": "Differential Privacy",
-  "definition": "Differential Privacy is a mathematical framework providing provable privacy guarantees by adding carefully calibrated noise to data queries or model outputs, ensuring that the presence or absence of any single individual's data has negligible impact on analysis results.",
+  "definition": "Differential Privacy is a mathematical framework providing provable privacy guarantees by adding carefully calibrated noise to data queries or model outputs, ensuring that the presence or absence of any single individual's data has negligible impact on analysis results. The epsilon (ε) parameter quantifies the privacy budget, with smaller values indicating stronger guarantees.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -75,7 +75,27 @@ public:: true
       "label": "AI Technique"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
+      {"@id": "urn:ngm:class:privacy-mechanism", "label": "Privacy Mechanism"},
+      {"@id": "urn:ngm:class:privacy-budget-management", "label": "Privacy Budget Management"},
+      {"@id": "urn:ngm:class:data-minimisation", "label": "Data Minimisation"},
+      {"@id": "urn:ngm:class:homomorphic-encryption", "label": "Homomorphic Encryption"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy By Design"},
+      {"@id": "urn:ngm:class:federated-edge-learning", "label": "Federated Edge Learning"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:gdpr-compliance", "label": "GDPR Compliance"},
+      {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

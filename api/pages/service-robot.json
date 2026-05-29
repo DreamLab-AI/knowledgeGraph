@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:service-robot",
   "domain": "robotics",
-  "definition": "Service Robot is a robotics and autonomous systems concept and a type of robotics.",
+  "definition": "A Service Robot is an autonomous or semi-autonomous robotic system designed to perform tasks for humans in non-industrial settings such as healthcare, logistics, hospitality, and domestic environments. Unlike fixed industrial robots, service robots operate in dynamic, unstructured spaces and must navigate safely around people, relying on sensor fusion, motion planning, and human-robot interaction capabilities.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-robot-type",
@@ -14,20 +14,48 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:robot-control",
+        "label": "Robot Control"
+      }
+    ]
   },
   "wikilinks": [
     {

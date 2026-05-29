@@ -7,7 +7,10 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **enables**: Compliance Monitoring, Conformity Assessment — the authority conducts the market-monitoring activities and verifies that AI systems meet conformity requirements before and after market placement.
+  - **requires**: AI Regulation, Risk Management — the authority's mandate and powers derive from the AI Act regulatory framework and depend on structured risk assessment processes.
+  - **supports**: High Risk AI System — the authority specifically oversees the highest-risk category of AI deployments.
+  - **relatedTo**: Notified Body, Provider — authorities coordinate with accredited notified bodies and interact directly with system providers during compliance verification.
 
 - ### Content
   - National authority responsible for carrying out market surveillance activities on AI systems, including inspections, testing, enforcement, and ensuring compliance with EU AI Act requirements within a Member State.

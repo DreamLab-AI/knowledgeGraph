@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:render-pipeline",
   "domain": "spatial-computing",
-  "definition": "Render Pipeline is a spatial computing concept and a type of spatial-computing.",
+  "definition": "A Render Pipeline is the ordered sequence of programmable and fixed-function GPU stages that transforms 3D scene geometry and material data into a final 2D image frame, encompassing vertex shading, rasterisation, fragment shading, post-processing, and presentation. Modern pipelines in Vulkan, Metal, and WebGPU expose fine-grained control over each stage, enabling techniques such as deferred rendering, ray tracing, and compute-shader-based effects that underpin real-time immersive experiences in XR headsets and metaverse platforms.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-display-and-rendering",
@@ -14,20 +14,48 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:shader",
+        "label": "Shader"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:3-d-rendering-engine",
+        "label": "3D Rendering Engine"
+      },
+      {
+        "id": "urn:ngm:class:physics-engine",
+        "label": "Physics Engine"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:rb-0047-feedback-control",
   "domain": "robotics",
-  "definition": "feedback control is a robotics and autonomous systems concept and a type of Closed-Loop Control.",
+  "definition": "A closed-loop control strategy in which sensor measurements of a system's output are continuously compared to a reference setpoint, and the resulting error signal drives corrective actuator commands. Feedback control is the foundational mechanism for stable, accurate robotic motion, enabling autonomous robots and telerobotic systems to compensate for disturbances, model uncertainty, and environmental variation.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
@@ -17,21 +17,53 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:adaptive-control",
+        "label": "Adaptive Control"
+      },
+      {
+        "id": "urn:ngm:class:robot-control",
+        "label": "Robot Control"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:pid-control",
+        "label": "PID Control"
+      },
+      {
+        "id": "urn:ngm:class:robot-sensor",
+        "label": "Robot Sensor"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:robotics-control",
+        "label": "Robotics Control"
+      },
+      {
+        "id": "urn:ngm:class:teleoperation",
+        "label": "Teleoperation"
+      }
+    ]
   },
   "wikilinks": [
     {

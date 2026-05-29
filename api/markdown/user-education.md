@@ -1,12 +1,17 @@
 - ### Definition
-  - User Education is a concept within the metaverse domain. Further enrichment pending.
+  - Structured programmes, tutorials, and onboarding materials that build user competencies in operating spatial computing platforms, XR devices, and metaverse applications, including safety guidance, digital literacy, and skill development delivered through interactive or immersive pedagogic methods.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:UserEducation
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Enables: [[Education Metaverse]]
+  - Uses: [[Education Technology]]
+  - Uses: [[Immersive Experience]]
+  - Related To: [[Courses and Training]]
+  - Related To: [[Education and AI]]
+  - Related To: [[Virtual Experience]]
 
 - ### Content
 

@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:cryptographic-verification",
   "@type": "Class",
   "label": "Cryptographic Verification",
-  "definition": "Cryptographic Verification is a type of Cryptographic System in the infrastructure domain.",
+  "definition": "Cryptographic Verification is the process of using cryptographic primitives—such as digital signatures, hash functions, and zero-knowledge proofs—to confirm the authenticity, integrity, and non-repudiation of data, identities, or transactions. It forms the trust foundation for blockchain systems, content authentication, and decentralised identity schemes.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-security-and-identity",
@@ -64,6 +65,38 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:content-authentication",
+        "label": "Content Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      }
+    ]
   }
 }
 ```
@@ -100,7 +133,7 @@ public:: true
 
 
 - ### Definition
-  - Cryptographic Verification is a concept within the metaverse domain. Further enrichment pending.
+  - Cryptographic Verification is the process of using cryptographic primitives—such as digital signatures, hash functions, and zero-knowledge proofs—to confirm the authenticity, integrity, and non-repudiation of data, identities, or transactions. It forms the trust foundation for blockchain systems, content authentication, and decentralised identity schemes.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:CryptographicVerification
@@ -108,6 +141,12 @@ public:: true
 
 - ### Relationships
   - bridges-to:: [[Blockchain]]
+  - Uses [[Cryptographic Hash Function]]
+  - Uses [[Digital Signature]]
+  - Enables [[Content Authentication]]
+  - Enables [[Blockchain]]
+  - Related To [[Zero-Knowledge Proof]]
+  - Related To [[Public-Key Cryptography]]
 
 - ### Content
 

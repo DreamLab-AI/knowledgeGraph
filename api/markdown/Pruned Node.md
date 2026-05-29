@@ -66,7 +66,7 @@ public:: true
   "@id": "urn:ngm:class:pruned-node",
   "@type": "Class",
   "label": "Pruned Node",
-  "definition": "Partial history storage node within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "A Pruned Node is a blockchain full node that validates the complete chain history during initial block download but subsequently discards spent transaction outputs and old block data beyond a configurable retention window, reducing on-disk storage requirements by orders of magnitude while retaining full validation capability for new blocks. Pruning enables operators with limited storage (e.g. 5–10 GB rather than 500+ GB for Bitcoin's full history) to participate in consensus verification without trusting third parties, unlike SPV light nodes that skip validation entirely. The pruned node can no longer serve historical block data to peers, constraining its contribution to network archival.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -83,7 +83,32 @@ public:: true
       "label": "NetworkComponent"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:full-node", "label": "Full Node"},
+      {"@id": "urn:ngm:class:light-node", "label": "Light Node"},
+      {"@id": "urn:ngm:class:archival-node", "label": "Archival Node"},
+      {"@id": "urn:ngm:class:utxo-model", "label": "UTXO Model"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
+      {"@id": "urn:ngm:class:blockchain-scalability", "label": "Blockchain Scalability"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:archival-node", "label": "Archival Node"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:data-storage", "label": "Data Storage"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"}
+    ]
+  },
+  "qualityScore": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -149,7 +174,7 @@ public:: true
 
 
 - ### Definition
-  - Partial history storage node within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
+  A Pruned Node is a blockchain full node that validates the complete chain history during initial block download but subsequently discards spent transaction outputs and old block data beyond a configurable retention window, reducing on-disk storage by orders of magnitude while retaining full validation capability. Pruning enables operators with limited storage to participate in consensus without trusting third parties, unlike SPV light nodes that skip validation entirely.
 
 - ### Semantic Classification
   - owl-class:: blockchain:PrunedNode
@@ -159,7 +184,7 @@ public:: true
   - implemented-in-layer:: [[SecurityLayer]]
 
 - ### Relationships
-  - is-subclass-of:: [[Blockchain Entity]], [[NetworkComponent]]
+  A Pruned Node is **related to** Full Node (the uncompromised variant), Light Node (which provides even less verification), Archival Node (which retains complete history), and the UTXO Model (whose spent-output set is what pruning discards). It **requires** the Blockchain itself and Cryptographic Hash Functions to verify block integrity. It **enables** Consensus Mechanism participation and improves Blockchain Scalability by lowering the barrier to running validating nodes. It **contrasts with** Archival Nodes that retain full history for serving historical queries. It **depends on** Data Storage subsystems. It is **part of** the Blockchain Network as a validating participant.
 
 - ### Content
 
@@ -198,30 +223,13 @@ public:: true
   )
       ```
 
-  - ## About Pruned Node
+  Pruned nodes occupy an important middle ground in the blockchain node taxonomy. A full archival node stores the entire chain history from genesis—by mid-2025, Bitcoin's full UTXO set and block data exceeded 600 GB—making operation impractical on consumer hardware with modest storage. A pruned node downloads and validates every block during initial block download (IBD), maintaining the same security model as a full node, but once IBD completes it discards blocks and transactions older than its configured retention depth, retaining only the current UTXO set plus recent blocks sufficient to handle reorgs.
 
-  - Partial history storage node within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
-  - ### Key Characteristics
-    - 1. **Definitional Property**: Core defining characteristic
-    - 2. **Functional Property**: Operational behavior
-    - 3. **Structural Property**: Compositional elements
-    - 4. **Security Property**: Security guarantees provided
-    - 5. **Performance Property**: Efficiency considerations
-  - ### Technical Components
-    - **Implementation**: How concept is realized technically
-    - **Verification**: Methods for validating correctness
-    - **Interaction**: Relationships with other components
-    - **Constraints**: Technical limitations and requirements
-  - ### Use Cases
-    - **1. Core Blockchain Operation**
-    - **Application**: Fundamental blockchain functionality
-    - **Example**: Practical implementation in major blockchains
-    - **Requirements**: Technical prerequisites
-    - **Benefits**: Value provided to blockchain systems
-  - ### Standards & References
-    - [[ISO/IEC 23257:2021]] - Blockchain and distributed ledger technologies
-    - [[IEEE 2418.1]] - Blockchain and distributed ledger technologies
-    - [[NIST NISTIR]] - Blockchain and distributed ledger technologies
+  The key distinction from SPV (Simple Payment Verification) light nodes is validation. SPV nodes do not verify block content; they trust the longest proof-of-work chain and verify only Merkle inclusion proofs for specific transactions. A pruned node verifies every transaction it processes against the full consensus rules, making it immune to miner fraud and block-withholding attacks that SPV clients cannot detect.
+
+  Bitcoin Core implements pruning with a configurable `prune=N` setting specifying the minimum retained block data in MiB (minimum 550 MiB, practical range 1–10 GB). Ethereum clients implement similar state pruning through mechanisms like snap sync and path-based state storage, addressing the Ethereum state bloat problem where the state trie grew to hundreds of GB due to accumulated contract state.
+
+  The trade-off is that pruned nodes cannot serve historical block data to peers requesting blocks they have discarded. This limits the network's archival capacity if most nodes prune aggressively. Preserving the archival layer requires a population of unpruned archival nodes, motivating economic models (such as fee incentives for archive providers) to ensure historical data remains accessible.
 
 - ### Provenance
   - sources:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]

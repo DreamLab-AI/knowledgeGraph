@@ -7,7 +7,12 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Large Language Models]]
+  - requires [[Training Data]]
+  - enables [[Edge Computing]]
+  - enables [[Model Compression for Edge]]
+  - contrastsWith [[Parameter-Efficient Fine-Tuning]]
+  - relatedTo [[Transfer Learning]]
 
 - ### Content
   - A model compression technique where a smaller "student" model is trained to mimic the behaviour of a larger "teacher" model, transferring knowledge through soft targets. Knowledge distillation enables simple student networks with few parameters to achieve comparable performance to deep teacher networks.

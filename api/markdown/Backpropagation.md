@@ -54,15 +54,28 @@ public:: true
   "@id": "urn:ngm:class:backpropagation",
   "@type": "Class",
   "label": "Backpropagation",
-  "definition": "Backpropagation is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "Backpropagation is the algorithm for computing gradients of the loss function with respect to each weight in a neural network by applying the chain rule of calculus in reverse through the computation graph. It enables efficient gradient calculation across all layers in a single backward pass, making large-scale neural network training computationally feasible.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
     }
   ],
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"},
+      {"@id": "urn:ngm:class:model-training", "label": "Model Training"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
+      {"@id": "urn:ngm:class:loss-function", "label": "Loss Function"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:activation-function", "label": "Activation Function"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -122,7 +135,11 @@ public:: true
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - enables:: [[Gradient Descent]]
+  - enables:: [[Model Training]]
+  - uses:: [[Neural Network]]
+  - uses:: [[Loss Function]]
+  - relatedTo:: [[Activation Function]]
 
 - ### Content
   - ### Primary Definition

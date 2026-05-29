@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:simulation-software",
   "domain": "spatial-computing",
-  "definition": "Simulation Software is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Application software that constructs and executes computational models of physical, biological, or social systems, allowing experimental manipulation of parameters to study behaviour over time. Simulation software spans physics engines, agent-based frameworks, and digital twin environments, and is used across engineering, scientific research, training, and metaverse development.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -14,20 +14,44 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:simulation-engine",
+        "label": "Simulation Engine"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:rendering-engine",
+        "label": "Rendering Engine"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ]
   },
   "wikilinks": [
     {

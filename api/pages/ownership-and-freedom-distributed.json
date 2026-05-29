@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ownership-and-freedom-distributed",
   "domain": "spatial-computing",
-  "definition": "principle of distributing control and governance of assets or data rather than centralising it in a single authority.",
+  "definition": "The principle of distributing control and governance of digital assets or data across multiple participants rather than concentrating authority in a single entity. This encompasses decentralised identity, cryptographic ownership proofs, peer-to-peer governance mechanisms, and user-controlled data portability as foundational guarantees for sovereignty in metaverse and Web3 ecosystems.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-governance-and-safety",
@@ -17,12 +17,34 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      },
+      {
+        "id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-governance",
+        "label": "Decentralized Governance"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -31,7 +53,16 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ownership-freedom-distributed",
+        "label": "Ownership Freedom distributed"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-autonomous-organization",
+        "label": "Decentralized Autonomous Organization"
+      }
+    ]
   },
   "wikilinks": [
     {

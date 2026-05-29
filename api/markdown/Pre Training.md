@@ -220,13 +220,27 @@ public:: true
   "label": "Pre Training",
   "definition": "The initial training phase where a model learns general representations from large amounts of unlabelled or weakly labelled data before being adapted to specific tasks. Pre-training establishes foundational knowledge that can be transferred across multiple downstream applications.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
     }
   ],
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
+      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
+      {"@id": "urn:ngm:class:model-training", "label": "Model Training"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:contrastive-learning", "label": "Contrastive Learning"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -491,7 +505,12 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - enables:: [[Fine Tuning]]
+  - enables:: [[Transfer Learning]]
+  - enables:: [[Large Language Models]]
+  - requires:: [[Training Data]]
+  - requires:: [[Model Training]]
+  - contrastsWith:: [[Contrastive Learning]]
 
 - ### Content
   - The initial training phase where a model learns general representations from large amounts of unlabelled or weakly labelled data before being adapted to specific tasks. Pre-training establishes foundational knowledge that can be transferred across multiple downstream applications.

@@ -42,16 +42,33 @@ public:: true
   "@id": "urn:ngm:class:courses-and-training",
   "@type": "Class",
   "label": "Courses and Training",
-  "definition": "Courses and Training is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Structured educational programmes and skill-development resources covering artificial intelligence, machine learning, blockchain, spatial computing, and related technologies. These include MOOCs, short courses, university programmes, professional certifications, and self-directed learning materials that build practitioner capacity across technical and non-technical audiences.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:ai-development", "label": "AI Development"},
+      {"@id": "urn:ngm:class:software-development-process", "label": "Software Development Process"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:learning-management-system", "label": "Learning Management System"},
+      {"@id": "urn:ngm:class:learning-resources", "label": "Learning Resources"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:education-technology", "label": "Education Technology"},
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -92,14 +109,17 @@ public:: true
 
 
 - ### Definition
-  - Courses and Training is a concept within the ngm domain.
+  - Structured educational programmes and skill-development resources covering artificial intelligence, machine learning, blockchain, spatial computing, and related technologies. These include MOOCs, short courses, university programmes, professional certifications, and self-directed learning materials that build practitioner capacity across technical and non-technical audiences.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:CoursesAndTraining
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **enables**: AI Development (trained workforce prerequisite), Software Development Process (practitioner skill pipeline)
+  - **uses**: Learning Management System (delivery platform), Learning Resources (curated content libraries)
+  - **supports**: Education Technology (pedagogical tooling), Machine Learning (primary subject domain)
+  - **relatedTo**: Blockchain (specialist curriculum track)
 
   - bridges-to:: [[Blockchain]] (bc)
 - ### Content

@@ -44,7 +44,8 @@ public:: true
   "label": "Honesty",
   "definition": "An alignment objective ensuring AI systems provide truthful and accurate information, avoiding false claims and acknowledging uncertainty when appropriate. Honesty (also called truthfulness) represents a critical dimension of trustworthy AI alongside helpfulness and harmlessness.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
@@ -55,7 +56,23 @@ public:: true
       "label": "AI Alignment"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:harmlessness", "label": "Harmlessness"},
+      {"@id": "urn:ngm:class:helpfulness", "label": "Helpfulness"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"},
+      {"@id": "urn:ngm:class:value-alignment", "label": "Value Alignment"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:trustworthy-ai", "label": "Trustworthy AI"},
+      {"@id": "urn:ngm:class:explainability", "label": "Explainability"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:bias", "label": "Bias"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -97,7 +114,10 @@ public:: true
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **relatedTo**: [[Harmlessness]], [[Helpfulness]]
+  - **requires**: [[AI Alignment]], [[Value Alignment]]
+  - **supports**: [[Trustworthy AI]], [[Explainability]]
+  - **contrastsWith**: [[Bias]]
 - ### Content
   - An alignment objective ensuring AI systems provide truthful and accurate information, avoiding false claims and acknowledging uncertainty when appropriate. Honesty (also called truthfulness) represents a critical dimension of trustworthy AI alongside helpfulness and harmlessness.
   - ## Section 5: The RAG/Ops War

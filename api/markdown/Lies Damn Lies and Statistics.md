@@ -38,15 +38,26 @@ public:: true
   "@id": "urn:ngm:class:lies-damn-lies-and-statistics",
   "@type": "Class",
   "label": "Lies Damn Lies and Statistics",
-  "definition": "Lies Damn Lies and Statistics is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A critical epistemological lens applied to AI benchmark claims, model capability assessments, and statistical presentations that may mislead through selective metrics, dataset contamination, cherry-picked results, or hallucination. The page collects resources and reasoning for evaluating AI performance claims with rigour, highlighting how large language models can generate plausible but false outputs that resemble statistical truth.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
+      {"@id": "urn:ngm:class:bias", "label": "Bias"},
+      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -83,14 +94,15 @@ public:: true
 
 
 - ### Definition
-  - Lies Damn Lies and Statistics is a concept within the ngm domain.
+  - A critical epistemological lens applied to AI benchmark claims, model capability assessments, and statistical presentations that may mislead through selective metrics, dataset contamination, cherry-picked results, or hallucination. The page collects resources and reasoning for evaluating AI performance claims with rigour, highlighting how large language models can generate plausible but false outputs that resemble statistical truth.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:LiesDamnLiesAndStatistics
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - relatedTo:: [[Large Language Models]], [[Bias]], [[AI Ethics]]
+  - contrastsWith:: [[Natural Language Processing]]
 
 - ### Content
   # Hallucinations

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:politics-law-privacy",
   "domain": "infrastructure",
-  "definition": "Politics, Law, Privacy is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "The intersecting domain of political governance, legal frameworks, and individual privacy rights as they apply to AI and digital technologies. This cluster addresses how legislation (e.g., EU AI Act, GDPR), regulatory enforcement, and political economy shape what AI systems are permitted to do, how data about individuals is collected and used, and how citizens can exercise rights against automated decision-making and surveillance.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-legal-and-regulatory",
@@ -13,21 +13,57 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "id": "urn:ngm:class:digital-rights",
+        "label": "Digital Rights"
+      },
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:digital-society-surveillance",
+        "label": "Digital Society Surveillance"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:trust-and-safety",
+        "label": "Trust and Safety"
+      },
+      {
+        "id": "urn:ngm:class:copyright",
+        "label": "copyright"
+      },
+      {
+        "id": "urn:ngm:class:education-and-ai",
+        "label": "Education and AI"
+      }
+    ]
   },
   "wikilinks": [
     {

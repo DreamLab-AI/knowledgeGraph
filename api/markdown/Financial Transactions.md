@@ -42,16 +42,31 @@ public:: true
   "@id": "urn:ngm:class:financial-transactions",
   "@type": "Class",
   "label": "Financial Transactions",
-  "definition": "Financial Transactions is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Financial Transactions are records of the transfer of monetary value or digital assets between parties, executed through centralised payment systems, blockchain networks, or Layer-2 protocols such as the Lightning Network. Within spatial computing and metaverse contexts, financial transactions underpin virtual economies, in-world purchases, NFT trades, and cross-platform value exchange, requiring robust settlement, fraud detection, and regulatory compliance mechanisms.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:cryptocurrency", "label": "Cryptocurrency"},
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:de-fi-services", "label": "De Fi Services"},
+      {"@id": "urn:ngm:class:digital-asset-trading", "label": "Digital Asset Trading"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:lightning-network", "label": "Lightning Network"},
+      {"@id": "urn:ngm:class:financial-services", "label": "Financial Services"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -94,7 +109,13 @@ public:: true
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses** [[Blockchain]] — blockchain networks provide immutable, decentralised transaction settlement
+  - **uses** [[Cryptocurrency]] — cryptocurrencies are the primary assets transferred in on-chain transactions
+  - **uses** [[Smart Contract]] — smart contracts automate conditional financial transaction execution
+  - **enables** [[De Fi Services]] — financial transactions are the atomic units enabling DeFi protocols
+  - **enables** [[Digital Asset Trading]] — trading platforms execute financial transactions over digital assets
+  - **relatedTo** [[Lightning Network]] — Lightning enables high-throughput micropayment financial transactions
+  - **relatedTo** [[Financial Services]] — financial transactions are the operational core of financial services
 
 - ### Content
 

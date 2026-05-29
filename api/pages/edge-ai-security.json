@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:edge-ai-security",
   "domain": "artificial-intelligence",
-  "definition": "Edge AI Security protects machine learning systems deployed on distributed edge devices against adversarial attacks, model theft, data poisoning, and unauthorized access while respecting resource constraints of embedded environments.",
+  "definition": "The discipline of protecting machine learning systems deployed on distributed edge devices against adversarial attacks, model theft, data poisoning, physical tampering, and unauthorised access, while respecting the severe resource constraints of embedded and IoT environments. Edge AI Security integrates hardware-level protections (Trusted Execution Environments, secure boot), software hardening (model encryption, differential privacy), and algorithmic defences (certified robustness, Byzantine-robust aggregation) into defence-in-depth architectures.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -13,21 +13,70 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:adversarial-robustness",
+        "label": "Adversarial Robustness"
+      },
+      {
+        "id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
     "enables": [],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:model-compression-for-edge",
+        "label": "Model Compression for Edge"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:adversarial-attacks",
+        "label": "Adversarial Attacks"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:edge-ai-system",
+        "label": "Edge AI System"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:privacy-preserving-technology",
+        "label": "Privacy Preserving Technology"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      }
+    ]
   },
   "wikilinks": [
     {

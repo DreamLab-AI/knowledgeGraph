@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:rb-0033-payload",
   "domain": "robotics",
-  "definition": "payload is a robotics and autonomous systems concept and a type of Robot.",
+  "definition": "Payload in robotics refers to the maximum mass that a robot can carry or manipulate while maintaining its specified performance characteristics, including accuracy, repeatability, and speed. Payload capacity is a fundamental design parameter for robot arms, mobile robots, and drones, directly constraining the tools, parts, or cargo the robot can handle. It is typically quoted at the wrist or end-effector mounting face and may vary with configuration and speed; dynamic payload accounts for inertial forces during acceleration.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
@@ -17,21 +17,57 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:end-effector",
+        "label": "End Effector"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:rb-0022-robot-dynamics",
+        "label": "rb 0022 robot dynamics"
+      },
+      {
+        "id": "urn:ngm:class:rb-0039-stiffness",
+        "label": "rb 0039 stiffness"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:robot",
+        "label": "Robot"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rb-0034-repeatability",
+        "label": "rb 0034 repeatability"
+      },
+      {
+        "id": "urn:ngm:class:rb-0035-accuracy",
+        "label": "rb 0035 accuracy"
+      },
+      {
+        "id": "urn:ngm:class:rb-0041-inertia",
+        "label": "rb 0041 inertia"
+      },
+      {
+        "id": "urn:ngm:class:rb-0043-torque",
+        "label": "rb 0043 torque"
+      }
+    ]
   },
   "wikilinks": [
     {

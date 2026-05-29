@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:group-vs-individual-fairness",
   "domain": "artificial-intelligence",
-  "definition": "Group vs Individual Fairness represents two distinct paradigms for conceptualizing and operationalizing algorithmic fairness with fundamentally different units of analysis and philosophical foundations.",
+  "definition": "Group vs Individual Fairness denotes two competing paradigms for defining and enforcing algorithmic fairness: group fairness requires statistical parity of outcomes or error rates across protected demographic cohorts, while individual fairness requires that similar individuals receive similar predictions regardless of group membership. The two paradigms are formally incompatible in general \u2014 satisfying demographic parity does not guarantee individual fairness and vice versa \u2014 representing a fundamental tension in fair machine learning that practitioners must resolve through context-specific policy choices. This distinction shapes the selection of fairness metrics, audit methodologies, and bias mitigation interventions in AI system design.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -17,21 +17,83 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:fairness-metrics",
+        "label": "Fairness Metrics"
+      },
+      {
+        "id": "urn:ngm:class:fairness-constraints",
+        "label": "Fairness Constraints"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:fairness-auditing-tools",
+        "label": "Fairness Auditing Tools"
+      },
+      {
+        "id": "urn:ngm:class:bias-detection-methods",
+        "label": "Bias Detection Methods"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:bias-mitigation-techniques",
+        "label": "Bias Mitigation Techniques"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:fairness-accuracy-tradeoffs",
+        "label": "Fairness Accuracy Tradeoffs"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:machine-learning-model",
+        "label": "Machine Learning Model"
+      },
+      {
+        "id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      },
+      {
+        "id": "urn:ngm:class:fairness-oecd",
+        "label": "Fairness (OECD)"
+      },
+      {
+        "id": "urn:ngm:class:disparate-impact",
+        "label": "Disparate Impact"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-bias",
+        "label": "Algorithmic Bias"
+      },
+      {
+        "id": "urn:ngm:class:equity",
+        "label": "Equity"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -38,16 +38,31 @@ public:: true
   "@id": "urn:ngm:class:push-to-local-rag",
   "@type": "Class",
   "label": "Push To Local RAG",
-  "definition": "Push To Local RAG is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "Push To Local RAG is a data-pipeline operation that extracts, cleans, and concatenates Logseq markdown pages—filtering out short or low-quality documents—then writes the result to a single corpus file consumed by a local Retrieval-Augmented Generation system. The process involves URL stripping, special-character normalisation, whitespace normalisation, and a minimum byte-length threshold, producing a curated text corpus that improves retrieval precision for local LLM inference without sending data to external services.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-application",
       "label": "AI Application"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
+      {"@id": "urn:ngm:class:tokenization", "label": "Tokenization"},
+      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
+      {"@id": "urn:ngm:class:semantic-search", "label": "Semantic Search"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:vector-database", "label": "Vector Database"},
+      {"@id": "urn:ngm:class:embedding-model", "label": "Embedding Model"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -83,14 +98,16 @@ public:: true
 
 
 - ### Definition
-  - Push To Local RAG is a concept within the ngm domain.
+  - Push To Local RAG is a data-pipeline operation that extracts, cleans, and concatenates Logseq markdown pages, then writes a curated corpus file consumed by a local Retrieval-Augmented Generation system. Steps include URL stripping, special-character normalisation, whitespace normalisation, and a minimum byte-length threshold. The output improves retrieval precision for local LLM inference without sending data to external services.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:PushToLocalRAG
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses:: [[Knowledge Graph]], [[Tokenization]], [[Data Pipeline]]
+  - enables:: [[Retrieval-Augmented Generation]], [[Semantic Search]]
+  - dependsOn:: [[Vector Database]], [[Embedding Model]]
 
 - ### Content
   - {{evalpage}}

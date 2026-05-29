@@ -6,7 +6,12 @@
   - owl-role:: concept
 
 - ### Relationships
-  - is-subclass-of:: ['owl:Thing']
+  - hasPart:: [[Feature Engineering]]
+  - hasPart:: [[Data Pipeline]]
+  - enables:: [[Model Training]]
+  - enables:: [[Inference]]
+  - uses:: [[Training Data]]
+  - uses:: [[Performance Metrics]]
 
 - ### Content
 

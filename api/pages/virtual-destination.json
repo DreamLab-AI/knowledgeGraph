@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:virtual-destination",
   "domain": "spatial-computing",
-  "definition": "A digital location or space within virtual environments that serves as a point of interest or travel objective, including virtual recreations of real-world landmarks, fantasy worlds, themed experiences, and interactive attractions accessible through metaverse platforms.",
+  "definition": "A digital location or space within a virtual environment that serves as a point of interest or travel objective, encompassing photogrammetry-reconstructed heritage sites, procedurally generated fantasy worlds, brand experience spaces, and interactive event venues accessible through metaverse platforms. Virtual destinations underpin virtual tourism, educational field trips, and social gathering use-cases, and are created using real-time rendering engines together with photogrammetry and 3D modelling pipelines.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -17,21 +17,53 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:virtual-world-platform",
+        "label": "Virtual World Platform"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:virtual-tourism",
+        "label": "Virtual Tourism"
+      },
+      {
+        "id": "urn:ngm:class:virtual-field-trip",
+        "label": "Virtual Field Trip"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      },
+      {
+        "id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:virtual-tour",
+        "label": "Virtual Tour"
+      }
+    ]
   },
   "wikilinks": [
     {

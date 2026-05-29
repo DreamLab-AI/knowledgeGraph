@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:parametric",
   "domain": "infrastructure",
-  "definition": "Parametric is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A design methodology in which objects, environments, or behaviours are specified through adjustable parameters rather than fixed geometry, enabling variant generation and real-time adaptation. In metaverse and spatial computing contexts, parametric approaches underpin voice-and-text-driven CAD primitive creation, procedural content generation, and digital twin model customisation within shared virtual workspaces.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
@@ -13,21 +13,48 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:procedural-generation",
+        "label": "Procedural Generation"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:parametric-modeling",
+        "label": "Parametric Modeling"
+      },
+      {
+        "id": "urn:ngm:class:procedural-content-generation",
+        "label": "Procedural Content Generation"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:rendering-engine",
+        "label": "Rendering Engine"
+      }
+    ]
   },
   "wikilinks": [
     {

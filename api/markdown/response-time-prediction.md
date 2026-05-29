@@ -1,12 +1,14 @@
 - ### Definition
-  - ResponseTimePrediction is a concept within the ngm domain.
+  - Response Time Prediction applies statistical and machine learning models to forecast the end-to-end latency of requests in networked systems, enabling proactive quality-of-service management and resource scheduling. Inputs typically include historical latency distributions, network conditions, server load, and request characteristics; outputs drive adaptive scheduling, pre-emptive caching, and SLA alerting. Accurate prediction is critical for latency-sensitive applications such as real-time XR streaming, interactive robotics teleoperation, and cloud-gaming platforms.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:ResponseTimePrediction
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: Machine Learning, Anomaly Detection
+  - **requires**: Latency, Network Latency
+  - **enables**: Latency-Aware Edge AI, Edge Computing
 
 - ### Content
   # ResponseTimePrediction

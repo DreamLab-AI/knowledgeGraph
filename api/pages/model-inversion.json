@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:model-inversion",
   "domain": "artificial-intelligence",
-  "definition": "An inference-time privacy attack that reconstructs sensitive training data or attributes from a trained model by exploiting model outputs, predictions, or internal representations, potentially revealing confidential information about individuals in the training dataset.",
+  "definition": "An inference-time privacy attack that reconstructs sensitive training data or personal attributes from a trained model by iteratively querying model outputs, confidence scores, or internal representations. Model inversion attacks expose a fundamental tension between model utility and data privacy, motivating defences such as differential privacy, federated learning, and membership-inference auditing.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -14,20 +14,48 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:model-weights",
+        "label": "Model Weights"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:membership-inference",
+        "label": "Membership Inference"
+      },
+      {
+        "id": "urn:ngm:class:adversarial-attacks",
+        "label": "Adversarial Attacks"
+      }
+    ]
   },
   "wikilinks": [
     {

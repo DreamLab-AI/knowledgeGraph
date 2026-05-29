@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:rb-0018-inspection-robot",
   "domain": "robotics",
-  "definition": "inspection robot is a robotics and autonomous systems concept and a type of Mobile Robot.",
+  "definition": "An inspection robot is a mobile robotic system designed to autonomously or semi-autonomously navigate environments that are hazardous, inaccessible, or inefficient for human workers, in order to assess the structural, mechanical, or operational condition of infrastructure, equipment, or facilities. Equipped with sensor arrays (cameras, LiDAR, ultrasonic, thermal IR), inspection robots collect data for predictive maintenance, safety auditing, and non-destructive testing across industries such as oil and gas pipelines, power-grid infrastructure, bridges, and confined industrial spaces.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-robot-type",
@@ -17,8 +17,8 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -27,11 +27,46 @@
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:rb-0066-robot-sensor",
+        "label": "rb 0066 robot sensor"
+      },
+      {
+        "id": "urn:ngm:class:rb-0069-lidar",
+        "label": "rb 0069 lidar"
+      },
+      {
+        "id": "urn:ngm:class:rb-0078-infrared-sensor",
+        "label": "rb 0078 infrared sensor"
+      },
+      {
+        "id": "urn:ngm:class:rb-0068-vision-system",
+        "label": "rb 0068 vision system"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:rb-0089-risk-assessment",
+        "label": "rb 0089 risk assessment"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rb-0017-rescue-robot",
+        "label": "rb 0017 rescue robot"
+      },
+      {
+        "id": "urn:ngm:class:rb-0012-wheeled-mobile-robot",
+        "label": "rb 0012 wheeled mobile robot"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      }
+    ]
   },
   "wikilinks": [
     {

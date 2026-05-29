@@ -10,7 +10,7 @@
   - is-subclass-of:: [[Metaverse]]
 
 - ### Content
-  Fluid Simulation — content pending enrichment.
+  Fluid simulation encompasses a family of numerical techniques for modelling the motion of liquids and gases. The most physically rigorous approaches solve the incompressible Navier-Stokes equations using methods such as smoothed-particle hydrodynamics (SPH), lattice Boltzmann, or grid-based finite-difference schemes. In real-time applications — games, virtual reality, and interactive metaverse environments — trade-offs favour GPU-accelerated compute shaders with simplified fluid models that still achieve convincing visual results. Particle systems are frequently combined with fluid solvers for hybrid effects such as splashing water or billowing smoke.
 
 - ### Provenance
   - sources:: [[Physics Engine]], [[CFD]]

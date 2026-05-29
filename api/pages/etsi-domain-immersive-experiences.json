@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:etsi-domain-immersive-experiences",
   "domain": "spatial-computing",
-  "definition": "An ETSI governance domain encompassing technologies, standards, and practices for creating immersive digital experiences including VirtualReality, AugmentedReality, ExtendedReality, and SpatialComputing.",
+  "definition": "An ETSI standardisation domain encompassing technologies, frameworks, and practices for creating immersive digital experiences including Virtual Reality, Augmented Reality, Extended Reality, and Spatial Computing. Governed by ETSI GR CIM 052 and GR ARF 020, this domain addresses content rendering, real-time interaction, sensory feedback, and environmental simulation to deliver seamless, engaging immersive experiences across heterogeneous hardware from HMDs to mobile AR.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -13,21 +13,53 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      }
+    ]
   },
   "wikilinks": [
     {

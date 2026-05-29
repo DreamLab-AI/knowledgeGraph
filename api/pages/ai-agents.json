@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ai-agents",
   "domain": "artificial-intelligence",
-  "definition": "AI Agents are software entities powered by large language models that autonomously perceive their environment, make decisions, and execute actions through tool use to complete complex tasks.",
+  "definition": "AI Agents are software entities that combine large language models with tool-use capabilities and memory to autonomously perceive environmental state, plan sequences of actions, and execute those actions in pursuit of user-specified goals. Unlike single-shot inference, agents operate in iterative loops, calling external APIs, browsing the web, running code, or invoking other agents as sub-tasks. They sit at the intersection of language modeling, planning, and classical software agents in cognitive architectures.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-application",
@@ -14,12 +14,35 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:planning-and-scheduling",
+        "label": "Planning and Scheduling"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],

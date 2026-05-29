@@ -37,16 +37,33 @@ public:: true
   "@id": "urn:ngm:class:neural-networking",
   "@type": "Class",
   "label": "Neural Networking",
-  "definition": "Neural Networking is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "The application of artificial neural network architectures — including convolutional, recurrent, and transformer-based models — to optimise network routing, traffic prediction, and resource allocation in communication infrastructure. Neural networking extends classical networking by replacing heuristic control planes with learned, data-driven decision policies.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-model-architecture",
       "label": "AI Model Architecture"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:networking-technology", "label": "Networking Technology"},
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:ai-technique", "label": "AI Technique"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:real-time", "label": "Real Time"},
+      {"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -76,14 +93,20 @@ public:: true
 
 
 - ### Definition
-  - NeuralNetworking is a concept within the ngm domain.
+  - The application of artificial neural network architectures to optimise network routing, traffic prediction, and resource allocation in communication infrastructure. Neural networking extends classical networking by replacing heuristic control planes with learned, data-driven decision policies, improving adaptability under variable load and topology conditions.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence/NeuralNetworking
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses** [[Neural Network]] — applies artificial neural network models as the core decision-making component
+  - **uses** [[Deep Learning]] — deep learning architectures provide the learned control policies
+  - **enables** [[Networking Technology]] — neural approaches improve adaptive routing, congestion control, and QoS management
+  - **enables** [[Edge Computing]] — neural networking enables intelligent resource allocation at network edges
+  - **dependsOn** [[AI Technique]] — relies on AI techniques including reinforcement learning and supervised prediction
+  - **supports** [[Real Time]] — neural networking aims to meet the strict latency requirements of real-time systems
+  - **supports** [[Distributed Computing]] — applies to distributed infrastructure management and optimisation tasks
 
 - ### Content
   # NeuralNetworking

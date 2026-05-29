@@ -5,29 +5,56 @@
   "public": true,
   "classIri": "urn:ngm:class:hugging-face",
   "domain": "artificial-intelligence",
-  "definition": "Hugging Face is an AI company and open-source community that develops and maintains the Transformers library and Hub, providing state-of-the-art NLP and multimodal model implementations.",
+  "definition": "Hugging Face is an AI company and open-source platform that maintains the Transformers, Diffusers, and Datasets libraries as well as the Hugging Face Hub \u2014 a model and dataset repository hosting hundreds of thousands of community-contributed checkpoints spanning NLP, computer vision, audio, multimodal, and reinforcement learning tasks. The Hub provides model cards, dataset cards, and Spaces (interactive Gradio or Streamlit demos), and has become the de facto distribution platform for open-weight large language models and fine-tuned variants. Hugging Face also develops the Inference API, AutoTrain, and the PEFT library for parameter-efficient fine-tuning methods.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:open-source-ai",
+      "label": "Open-Source AI"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai",
+        "label": "Multimodal AI"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:parameter-efficient-fine-tuning",
+        "label": "Parameter-Efficient Fine-Tuning"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

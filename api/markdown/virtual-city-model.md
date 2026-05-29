@@ -8,6 +8,10 @@
 
 - ### Relationships
   - is-subclass-of:: [[Digital Twin]]
+  - **uses**: [[Lidar]], [[Photogrammetry]] — real-world city geometry is captured via LiDAR point clouds and photogrammetric reconstruction
+  - **enables**: [[Digital Twin Technology]], [[Metaverse Platform]] — virtual city models serve as the spatial substrate for smart-city digital twins and metaverse environments
+  - **requires**: [[Real-Time Rendering]] — interactive visualisation of city-scale geometry requires optimised rendering pipelines (LOD, streaming, tiling)
+  - **standardizedBy**: [[Interoperability Standard]] — CityGML, 3D Tiles, and IFC are the primary interoperability standards governing data exchange
 
 - ### Content
 

@@ -42,15 +42,28 @@ public:: true
   "@id": "urn:ngm:class:gradient-descent",
   "@type": "Class",
   "label": "Gradient Descent",
-  "definition": "Gradient Descent is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "Gradient Descent is an iterative first-order optimisation algorithm that minimises a differentiable loss function by repeatedly updating model parameters in the direction of the negative gradient. It is the foundational optimisation strategy for training machine learning models, with variants including batch, stochastic, and mini-batch gradient descent, as well as adaptive-rate methods such as Adam and RMSProp.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"},
+      {"@id": "urn:ngm:class:loss-function", "label": "Loss Function"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
+      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:hyperparameter", "label": "Hyperparameter"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -95,7 +108,11 @@ public:: true
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires:: [[Backpropagation]]
+  - requires:: [[Loss Function]]
+  - enables:: [[Model Training]]
+  - enables:: [[Fine Tuning]]
+  - uses:: [[Hyperparameter]]
 
 - ### Content
   - ### Primary Definition

@@ -1470,16 +1470,27 @@ public:: true
   "@id": "urn:ngm:class:patent",
   "@type": "Class",
   "label": "Patent",
-  "definition": "Patent is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A time-limited exclusive right granted by a sovereign authority to an inventor for a novel, inventive, and industrially applicable invention, in exchange for public disclosure of the invention. In the AI and spatial computing landscape, patents protect novel model architectures, training methods, compression algorithms, and hardware accelerators, with global filings exceeding 3.7 million applications annually as of 2024.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-legal-and-regulatory",
       "label": "Legal and Regulatory"
     }
   ],
-  "quality": 0.5,
+  "qualityScore": 0.7,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:copyright", "label": "copyright"},
+      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"},
+      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"},
+      {"@id": "urn:ngm:class:conformity-assessment", "label": "Conformity Assessment"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -3305,14 +3316,15 @@ public:: true
 
 
 - ### Definition
-  - Patent is a concept within the ngm domain.
+  - A time-limited exclusive right granted by a sovereign authority to an inventor for a novel, inventive, and industrially applicable invention, in exchange for public disclosure. In the AI and spatial computing landscape, patents protect novel model architectures, training methods, compression algorithms, and hardware accelerators, with global filings exceeding 3.7 million applications annually as of 2024.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:Patent
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - relatedTo: [[copyright]], [[AI Regulation]], [[AI Ethics]]
+  - supports: [[Compliance Framework]], [[Conformity Assessment]]
 
 - ### Content
   - # Patent Landscape 2025: Global IP Trends & Innovation Analysis

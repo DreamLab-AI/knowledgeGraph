@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:user-interface",
   "domain": "infrastructure",
-  "definition": "User Interface is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A User Interface (UI) is the set of visual, auditory, and interactive components through which a human operates a software system. In spatial and metaverse contexts, UIs extend beyond flat screens to encompass 3D menus, gesture controls, voice interfaces, and haptic feedback, mediated by head-mounted displays, handheld controllers, or bare-hand tracking. Effective UI design balances accessibility, cognitive load, and rendering performance, drawing on human-computer interaction principles and user experience research.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
@@ -14,11 +14,25 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "id": "urn:ngm:class:3-d-user-interface",
+        "label": "3D User Interface"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +41,16 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      },
+      {
+        "id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

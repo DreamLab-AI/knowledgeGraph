@@ -8,6 +8,10 @@
 
 - ### Relationships
   - is-subclass-of:: [[Virtual Environment]]
+  - requires:: [[Virtual World Platform]], [[Real-Time Rendering]]
+  - uses:: [[Photogrammetry]], [[Immersive Experience]]
+  - enables:: [[Virtual Tourism]], [[Virtual Field Trip]]
+  - relatedTo:: [[Virtual Tour]]
 
 - ### Content
 

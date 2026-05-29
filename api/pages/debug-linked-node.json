@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:debug-linked-node",
   "domain": "infrastructure",
-  "definition": "debug linked node is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A debug linked node is a diagnostic artefact within a knowledge graph or ontology system \u2014 a placeholder page that is deliberately linked to from another node in order to verify that the wikilink resolution, graph edge creation, and link-traversal mechanisms are functioning correctly. It serves as a test fixture for the ontology pipeline, confirming that bidirectional link references are parsed, stored as edges, and retrievable through graph queries.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-software-engineering",
@@ -13,8 +13,8 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -24,10 +24,37 @@
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:knowledge-graph-construction",
+        "label": "Knowledge Graph Construction"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:software-testing",
+        "label": "Software Testing"
+      },
+      {
+        "id": "urn:ngm:class:node",
+        "label": "Node"
+      },
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "id": "urn:ngm:class:lognet",
+        "label": "lognet"
+      }
+    ]
   },
   "wikilinks": [
     {

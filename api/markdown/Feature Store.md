@@ -62,20 +62,40 @@ public:: true
   "@id": "urn:ngm:class:feature-store",
   "@type": "Class",
   "label": "Feature Store",
-  "definition": "Centralized repository for storing, managing, and serving machine learning features, ensuring consistency between training and inference while enabling feature reuse across models.",
+  "definition": "A centralised repository for storing, managing, versioning, and serving machine learning features at scale. It ensures point-in-time consistency between training and online inference, prevents training-serving skew, and enables cross-team feature reuse so that features computed once can be shared across multiple models and pipelines.",
   "domain": "artificial-intelligence",
   "maturity": "emerging",
+  "qualityScore": 0.75,
+  "quality": 0.75,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:cat-ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
+      "@id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure"
     },
     {
       "@id": "urn:ngm:class:machine-learning-pipeline",
       "label": "Machine Learning Pipeline"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:feature-engineering", "label": "Feature Engineering"},
+      {"@id": "urn:ngm:class:feature-extraction", "label": "Feature Extraction"},
+      {"@id": "urn:ngm:class:training-data", "label": "Training Data"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"},
+      {"@id": "urn:ngm:class:data-lake", "label": "Data Lake"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
+      {"@id": "urn:ngm:class:machine-learning-pipeline", "label": "Machine Learning Pipeline"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:vector-database", "label": "Vector Database"},
+      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -148,7 +168,9 @@ public:: true
   - bridges-to:: [[Blockchain]], [[Digital Twin]]
 
 - ### Content
-  Feature Store — content pending enrichment.
+  A Feature Store acts as the central hub of an ML platform, bridging the gap between data engineering and model development. It typically exposes two interfaces: an offline store (backed by a data lake or warehouse) for batch training jobs, and an online store (backed by a low-latency key-value database) for real-time inference. By materialising and versioning feature transformations centrally, teams avoid duplicating transformation logic across notebooks and services, which is the primary source of training-serving skew.
+
+  Modern feature stores also support time-travel queries, allowing models to be trained on the exact feature values that would have been available at a given historical timestamp — a critical safeguard for financial, fraud-detection, and forecasting applications.
 
 - ### Provenance
   - sources:: [[MLOps]], [[Data Engineering]]

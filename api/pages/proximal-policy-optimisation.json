@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:proximal-policy-optimisation",
   "domain": "artificial-intelligence",
-  "definition": "A reinforcement learning algorithm that updates policies through incremental steps whilst constraining how much the policy can change, preventing destabilising updates. PPO is the standard RL algorithm used in RLHF for optimising language models based on reward model feedback.",
+  "definition": "A reinforcement learning algorithm that updates policies through incremental steps whilst constraining how much the policy can change via a clipped surrogate objective, preventing destabilising updates. PPO is the dominant RL algorithm used in reinforcement learning from human feedback (RLHF) for fine-tuning language models to align with human preferences.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -17,20 +17,48 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning-algorithm",
+        "label": "Reinforcement Learning Algorithm"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:reward-model",
+        "label": "Reward Model"
+      },
+      {
+        "id": "urn:ngm:class:human-feedback",
+        "label": "Human Feedback"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      }
+    ],
     "relatedTo": []
   },
   "wikilinks": [

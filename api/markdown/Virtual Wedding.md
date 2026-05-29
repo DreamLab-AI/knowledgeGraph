@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:virtual-wedding",
   "@type": "Class",
   "label": "Virtual Wedding",
-  "definition": "A marriage ceremony conducted in virtual environments or metaverse platforms where participants are represented by digital avatars, enabling global attendance, customizable virtual venues, and unique digital elements like NFT wedding gifts, often requiring accompaniment by legal proceedings for o...",
+  "definition": "A marriage ceremony conducted within a metaverse or virtual reality platform in which participants are represented by digital avatars, enabling global attendance without physical travel. Virtual weddings may incorporate NFT wedding gifts, custom virtual venues, and live-streamed officiants, but typically require separate legal proceedings for official recognition under applicable jurisdictional law.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -59,11 +60,52 @@ public:: true
       "label": "Virtual Event"
     }
   ],
-  "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:virtual-reality-platform",
+        "label": "Virtual Reality Platform"
+      },
+      {
+        "@id": "urn:ngm:class:avatar-system",
+        "label": "Avatar System"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-venue",
+        "label": "Metaverse Venue"
+      },
+      {
+        "@id": "urn:ngm:class:nft",
+        "label": "NFT"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:social-platform",
+        "label": "Social Platform"
+      },
+      {
+        "@id": "urn:ngm:class:legal-framework",
+        "label": "Legal Framework"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:metaverse-application",
+        "label": "Metaverse Application"
+      }
+    ]
   }
 }
 ```
@@ -109,6 +151,10 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Virtual Event]]
+  - Uses [[Avatar]], [[Metaverse Venue]], [[NFT]]
+  - Requires [[Virtual Reality Platform]], [[Avatar System]]
+  - Part of [[Metaverse Application]]
+  - Related to [[Social Platform]], [[Legal Framework]]
 
 - ### Content
 

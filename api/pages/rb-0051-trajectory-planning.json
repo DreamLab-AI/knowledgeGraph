@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:rb-0051-trajectory-planning",
   "domain": "robotics",
-  "definition": "trajectory planning is a robotics and autonomous systems concept and a type of Motion Planning.",
+  "definition": "Trajectory planning is the process of computing a time-parametrised path \u2014 specifying position, velocity, and acceleration profiles \u2014 that moves a robot from a start configuration to a goal while satisfying kinematic and dynamic constraints, joint limits, and task requirements. It extends path planning by assigning timing to waypoints, enabling smooth, jerk-limited motions suitable for real-time execution by a robot controller.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-navigation-and-planning",
@@ -17,21 +17,56 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:rb-0049-motion-planning",
+        "label": "rb 0049 motion planning"
+      },
+      {
+        "id": "urn:ngm:class:rb-0021-robot-kinematics",
+        "label": "rb 0021 robot kinematics"
+      },
+      {
+        "id": "urn:ngm:class:rb-0022-robot-dynamics",
+        "label": "rb 0022 robot dynamics"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:rb-0048-pid-controller",
+        "label": "rb 0048 pid controller"
+      },
+      {
+        "id": "urn:ngm:class:optimal-control",
+        "label": "Optimal Control"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rb-0044-velocity",
+        "label": "rb 0044 velocity"
+      },
+      {
+        "id": "urn:ngm:class:rb-0045-acceleration",
+        "label": "rb 0045 acceleration"
+      },
+      {
+        "id": "urn:ngm:class:rb-0052-collision-avoidance",
+        "label": "rb 0052 collision avoidance"
+      }
+    ]
   },
   "wikilinks": [
     {

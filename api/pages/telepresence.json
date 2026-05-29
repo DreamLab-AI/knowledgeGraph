@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:telepresence",
   "domain": "spatial-computing",
-  "definition": "Telepresence is a spatial computing concept and a type of spatial-computing.",
+  "definition": "Telepresence encompasses technologies and interaction paradigms that create a compelling perception of physical presence in a remote or virtual location, enabling natural communication and manipulation at a distance. Systems range from high-definition video conferencing with matched room geometries and spatial audio through robotic telepresence platforms to fully immersive XR environments that deliver volumetric representations and haptic feedback, reducing the cognitive and social costs of geographic separation.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -14,20 +14,48 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      },
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      },
+      {
+        "id": "urn:ngm:class:teleoperation",
+        "label": "Teleoperation"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:hardware",
   "domain": "spatial-computing",
-  "definition": "Hardware is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Hardware in the spatial computing domain encompasses the physical devices and electronic components that execute metaverse workloads: head-mounted displays, spatial audio systems, GPU rendering accelerators, depth cameras, haptic controllers, and edge compute nodes. Hardware capability is a primary constraint on the fidelity and interactivity of immersive experiences, driving the need for hardware abstraction layers and adaptive rendering pipelines that scale content quality to available compute resources.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -14,11 +14,29 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:hardware-component",
+        "label": "Hardware Component"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      },
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +45,16 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:hardware-abstraction",
+        "label": "Hardware Abstraction"
+      },
+      {
+        "id": "urn:ngm:class:hardware-and-edge",
+        "label": "Hardware and Edge"
+      }
+    ]
   },
   "wikilinks": [
     {

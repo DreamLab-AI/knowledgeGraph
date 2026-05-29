@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:raft-consensus",
   "domain": "blockchain",
-  "definition": "Raft is a distributed consensus algorithm designed for understandability that elects a leader node to manage log replication across a cluster, ensuring fault-tolerant agreement on system state.",
+  "definition": "Raft is a distributed consensus algorithm designed as a more understandable alternative to Paxos, decomposing consensus into three relatively independent sub-problems: leader election, log replication, and safety. A Raft cluster elects a single leader by majority vote during which followers grant a term-limited mandate; the leader receives all client writes, appends them to its log, and replicates them to followers, committing entries once a quorum acknowledges receipt. Raft guarantees that committed entries are never lost as long as a majority of nodes remain connected, providing crash fault tolerance but not Byzantine fault tolerance.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-protocol-and-consensus",
@@ -14,20 +14,48 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:state-machine-replication",
+        "label": "State Machine Replication"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

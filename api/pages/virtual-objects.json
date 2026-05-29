@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:virtual-objects",
   "domain": "spatial-computing",
-  "definition": "Digital 3D assets existing within virtual environments that users can interact with, own, trade, and customize, including avatars, wearables, furniture, vehicles, and environmental elements, often represented as NFTs for verifiable ownership in blockchain-based metaverses.",
+  "definition": "Digital 3D assets existing within virtual environments that users can interact with, own, trade, and customise, including avatars, wearables, furniture, vehicles, and environmental elements. NFT smart contracts on blockchain networks provide verifiable, transferable ownership records, while interoperable formats such as glTF and VRM support cross-platform portability of virtual objects.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -17,17 +17,45 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:avatar-wearable",
+        "label": "Avatar Wearable"
+      },
+      {
+        "id": "urn:ngm:class:avatar-customization",
+        "label": "Avatar Customization"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

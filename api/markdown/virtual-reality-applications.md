@@ -1,12 +1,18 @@
 - ### Definition
-  - Virtual Reality Applications is a concept within the metaverse domain. Further enrichment pending.
+  - Software programmes and use-case deployments that leverage virtual reality technology to deliver immersive, interactive experiences for domains including healthcare, education, enterprise training, entertainment, and social interaction, running on dedicated VR hardware or spatial computing platforms.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:VirtualRealityApplications
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Requires: [[Virtual Reality Platform]]
+  - Requires: [[Virtual World Infrastructure]]
+  - Enables: [[Virtual Experience]]
+  - Enables: [[Virtual Clinic]]
+  - Related To: [[Extended Reality]]
+  - Related To: [[Immersive Experience]]
+  - Related To: [[Education Metaverse]]
 
 - ### Content
 

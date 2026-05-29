@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:shader",
   "domain": "spatial-computing",
-  "definition": "Shader is a spatial computing concept and a type of spatial-computing.",
+  "definition": "A programmable GPU program that replaces fixed-function rendering stages, defining how vertices are transformed and how fragments are coloured by executing artist-authored algorithms in parallel across thousands of GPU threads. Shaders encompass vertex, fragment, geometry, and compute variants, collectively controlling every aspect of a rendered image's visual appearance.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-display-and-rendering",
@@ -14,20 +14,52 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:vertex-shader",
+        "label": "Vertex Shader"
+      },
+      {
+        "id": "urn:ngm:class:pixel-shader",
+        "label": "Pixel Shader"
+      },
+      {
+        "id": "urn:ngm:class:compute-shader",
+        "label": "Compute Shader"
+      }
+    ],
     "requires": [],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:rasterization",
+        "label": "Rasterization"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:rendering-technique",
+        "label": "Rendering Technique"
+      },
+      {
+        "id": "urn:ngm:class:visual-effects",
+        "label": "Visual Effects"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:shader-language",
+        "label": "Shader Language"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

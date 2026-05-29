@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:multi-agent-systems",
   "domain": "artificial-intelligence",
-  "definition": "Computational systems composed of multiple autonomous agents that perceive their environment, communicate, and coordinate to solve problems that exceed the capacity of any single agent.",
+  "definition": "Multi-agent systems (MAS) are computational architectures in which multiple autonomous agents\u2014each with their own perception, memory, and action capabilities\u2014interact within a shared environment to accomplish tasks that benefit from parallelisation, specialisation, or distributed coordination. In contemporary AI, MAS are realised through networks of LLM-backed agents orchestrated by frameworks that manage inter-agent communication, tool invocation, and task decomposition. Emergent collective behaviours, coordination protocols, and mechanism-design principles from classical MAS theory inform how modern agentic systems handle conflict, deception, and incentive alignment.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-application",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "id": "urn:ngm:class:task-planning",
+        "label": "Task Planning"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:orchestration",
+        "label": "Orchestration"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

@@ -5,29 +5,56 @@
   "public": true,
   "classIri": "urn:ngm:class:gpu-compute",
   "domain": "artificial-intelligence",
-  "definition": "GPU Compute refers to the use of Graphics Processing Units for massively parallel numerical computation, enabling high-throughput training and inference of deep learning models.",
+  "definition": "GPU Compute refers to the use of Graphics Processing Units for general-purpose massively parallel numerical computation (GPGPU), exploiting the GPU's thousands of shader cores to execute data-parallel workloads \u2014 principally matrix multiplications and convolutions \u2014 at throughputs far exceeding those achievable on CPUs. GPU compute is the dominant hardware substrate for training and inference of deep neural networks, enabled by programming frameworks such as CUDA and ROCm that expose the GPU's parallel execution model to software developers. It underpins the large-scale computation required for training large language models, diffusion models, and other foundation models.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      },
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:tpu",
+        "label": "TPU"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-infrastructure",
+        "label": "Machine Learning Infrastructure"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

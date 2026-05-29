@@ -1,12 +1,15 @@
 - ### Definition
-  - Graphics Library is a concept within the metaverse domain. Further enrichment pending.
+  - A software library that provides a standardised API for issuing draw calls, managing GPU resources, and configuring the graphics pipeline, abstracting hardware differences from application code. Canonical graphics libraries—OpenGL, Vulkan, Metal, DirectX, WebGL—enable portable, high-performance 2D and 3D rendering across diverse hardware platforms and are foundational to real-time spatial computing applications.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:GraphicsLibrary
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Enables [[Rendering Pipeline]], [[Computer Graphics]]
+  - Uses [[Shader]], [[GPU Compute]]
+  - Supports [[Game Engine]], [[Rendering Engine]]
+  - Standardised by [[3D Graphics Standard]]
 
 - ### Content
 

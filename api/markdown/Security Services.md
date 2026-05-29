@@ -42,15 +42,29 @@ public:: true
   "@id": "urn:ngm:class:security-services",
   "@type": "Class",
   "label": "Security Services",
-  "definition": "Security Services is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Security Services are the technical and organisational mechanisms that protect spatial computing platforms from unauthorised access, data breaches, and malicious activity. They encompass authentication, encryption, access control, and identity management components that collectively enforce security policies across metaverse, cloud, and immersive technology deployments.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
       "label": "Governance and Safety"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:authentication", "label": "Authentication"},
+      {"@id": "urn:ngm:class:encryption", "label": "Encryption"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
+      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"},
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -87,14 +101,19 @@ public:: true
 
 
 - ### Definition
-  - Security Services is a concept within the metaverse domain. Further enrichment pending.
+  - Security Services are the technical and organisational mechanisms that protect spatial computing platforms from unauthorised access, data breaches, and malicious activity, encompassing authentication, encryption, access control, and identity management.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:SecurityServices
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Authentication]]
+  - requires [[Encryption]]
+  - enables [[Access Control]]
+  - enables [[Digital Identity]]
+  - supports [[Cybersecurity]]
+  - supports [[Data Governance]]
 
 - ### Content
 

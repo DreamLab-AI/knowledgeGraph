@@ -150,15 +150,32 @@ public:: true
   "@id": "urn:ngm:class:co-training",
   "@type": "Class",
   "label": "Co Training",
-  "definition": "Co Training is a type of Artificial Intelligence in the artificial intelligence domain.",
+  "definition": "Co-training is a semi-supervised machine learning technique where two or more models trained on complementary feature views iteratively label unlabelled data for each other. Each model labels examples confidently classified under its own view, and these pseudo-labels are added to the other model's training set, bootstrapping performance without requiring large labelled corpora.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
     }
   ],
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:semi-supervised-learning", "label": "Semi-Supervised Learning"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:self-training", "label": "Self Training"},
+      {"@id": "urn:ngm:class:active-learning", "label": "Active Learning"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:machine-learning-model", "label": "Machine Learning Model"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -340,7 +357,10 @@ bridges-to:: [[Autonomous Robot]]
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - part-of:: [[Semi-Supervised Learning]]
+  - related-to:: [[Self Training]], [[Active Learning]]
+  - uses:: [[Machine Learning]], [[Machine Learning Model]]
+  - enables:: [[Generative AI]]
 
 - ### Content
   - A semi-supervised learning technique where two or more models with different views of the data train each other by labelling unlabelled examples. Co-training leverages complementary feature sets or model architectures to improve performance through mutual teaching.

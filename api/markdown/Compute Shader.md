@@ -70,9 +70,9 @@ public:: true
   "@id": "urn:ngm:class:compute-shader",
   "@type": "Class",
   "label": "Compute Shader",
-  "definition": "Compute Shader is a spatial computing concept and a type of Metaverse.",
+  "definition": "A Compute Shader is a programmable GPU kernel that executes arbitrary parallel computations outside the traditional graphics rendering pipeline, enabling general-purpose GPU (GPGPU) workloads such as physics simulation, procedural generation, image post-processing, and data-parallel algorithms within real-time 3D and metaverse applications.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-display-and-rendering",
@@ -83,6 +83,21 @@ public:: true
       "label": "Metaverse"
     }
   ],
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:vertex-shader", "label": "Vertex Shader"},
+      {"@id": "urn:ngm:class:pixel-shader", "label": "Pixel Shader"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:physics-simulation", "label": "Physics Simulation"},
+      {"@id": "urn:ngm:class:procedural-generation", "label": "Procedural Generation"},
+      {"@id": "urn:ngm:class:post-processing", "label": "Post Processing"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:parallel-processing", "label": "Parallel Processing"},
+      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
@@ -154,7 +169,7 @@ public:: true
 
 
 - ### Definition
-  - Compute Shader is a concept within the mv domain.
+  - A Compute Shader is a programmable GPU kernel that executes arbitrary parallel computations outside the traditional graphics rendering pipeline, enabling general-purpose GPU (GPGPU) workloads such as physics simulation, procedural generation, image post-processing, and data-parallel algorithms within real-time 3D and metaverse applications.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:ComputeShader
@@ -163,6 +178,13 @@ public:: true
 - ### Relationships
   - is-subclass-of:: [[Metaverse]]
   - bridges-to:: [[Computer Vision]] (domain: ai) for GPU-accelerated visual processing and real-time graphics intelligence
+  - hasPart [[Vertex Shader]]
+  - hasPart [[Pixel Shader]]
+  - enables [[Physics Simulation]]
+  - enables [[Procedural Generation]]
+  - enables [[Post Processing]]
+  - uses [[Parallel Processing]]
+  - uses [[Real-Time Rendering]]
 
 - ### Content
 

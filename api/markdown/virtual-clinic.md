@@ -8,6 +8,13 @@
 
 - ### Relationships
   - is-subclass-of:: [[Virtual Environment]]
+  - Requires: [[Virtual Reality Applications]]
+  - Requires: [[Access Control]]
+  - Uses: [[Healthcare Technology]]
+  - Uses: [[Healthcare Records]]
+  - Related To: [[Healthcare AI]]
+  - Related To: [[ETSI Domain Application + Health]]
+  - Related To: [[Privacy]]
 
 - ### Content
 

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:uniswap",
   "domain": "blockchain",
-  "definition": "A decentralised exchange protocol on Ethereum implementing an automated market maker model using constant-product invariant liquidity pools to enable permissionless token swaps.",
+  "definition": "Uniswap is a decentralised exchange (DEX) protocol deployed on Ethereum that enables permissionless, non-custodial token swaps through an Automated Market Maker (AMM) mechanism. Rather than maintaining an order book, it uses liquidity pools governed by the constant-product invariant (x \u00d7 y = k), where liquidity providers deposit token pairs and earn fees proportional to their pool share. Successive protocol versions have introduced concentrated liquidity (v3) and multi-hop routing, making Uniswap a foundational primitive of decentralised finance.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-defi-and-economics",
@@ -14,16 +14,44 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      }
+    ],
     "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:yield-farming",
+        "label": "Yield Farming"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

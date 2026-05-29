@@ -33,16 +33,27 @@ public:: true
   "@id": "urn:ngm:class:public",
   "@type": "Class",
   "label": "Public",
-  "definition": "Public is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Public, as a Logseq property tag (`public:: true`), marks a knowledge-graph page as intended for external publication. In the NarrativeGoldmine ontology it acts as an access-control classifier: pages bearing this annotation are included in export pipelines targeting the open WebVOWL visualisation and the public-facing OWL2 dataset. It is a metadata concept rather than a domain-level class, functioning analogously to an access-control label within the data-governance layer.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:metadata-standard", "label": "Metadata Standard"},
+      {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
+      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -72,17 +83,18 @@ public:: true
 
 
 - ### Definition
-  - Public is a concept within the ngm domain.
+  - `public:: true` is a Logseq property tag marking a knowledge-graph page for external publication. In the NarrativeGoldmine ontology it acts as an access-control classifier: pages bearing this annotation are included in export pipelines targeting the open WebVOWL visualisation and the public-facing OWL2 dataset. It functions analogously to an access-control label within the data-governance layer.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:Public
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses:: [[Knowledge Graph]], [[Data Governance]]
+  - relatedTo:: [[Metadata Standard]], [[Access Control]], [[Linked Data]]
 
 - ### Content
-  Public — content pending enrichment.
+  The `public:: true` property gates page inclusion in NarrativeGoldmine export pipelines. Only pages carrying this tag contribute nodes and edges to the published OWL2 EL++ graph and WebVOWL visualisation.
 
 - ### Provenance
   - sources::

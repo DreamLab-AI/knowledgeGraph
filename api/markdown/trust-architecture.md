@@ -8,6 +8,10 @@
 
 - ### Relationships
   - is-subclass-of:: [[Security Architecture]]
+  - requires:: [[Decentralized Identifiers]], [[Verifiable Credentials]]
+  - enables:: [[Cross-Platform Identity]], [[Decentralized Governance]]
+  - uses:: [[Cryptographic Security]], [[Trusted Execution Environment]]
+  - relatedTo:: [[Trust Framework]], [[Trust Infrastructure]]
 
 - ### Content
 

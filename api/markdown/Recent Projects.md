@@ -42,16 +42,30 @@ public:: true
   "@id": "urn:ngm:class:recent-projects",
   "@type": "Class",
   "label": "Recent Projects",
-  "definition": "Recent Projects is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Recent Projects is a curated portfolio page cataloguing active and completed applied research and commercial engagements spanning conversational AI, autonomous marine vision systems, human-attention analytics, large-scale exhibition AI, GenAI film pre-visualisation, interactive image/video generation, text-to-3D modelling, Bitcoin-native digital assets, AI education products, and Logseq-based training materials. It serves as an index of practical deployments demonstrating cross-domain expertise in AI, robotics, spatial computing, and blockchain.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
+      {"@id": "urn:ngm:class:hardware-and-edge", "label": "Hardware and Edge"},
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:generative-content", "label": "Generative Content"},
+      {"@id": "urn:ngm:class:immersive-entertainment", "label": "Immersive Entertainment"},
+      {"@id": "urn:ngm:class:metaverse-application", "label": "Metaverse Application"},
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -92,14 +106,15 @@ public:: true
 
 
 - ### Definition
-  - Recent Projects is a concept within the ngm domain.
+  - Recent Projects is a curated portfolio page cataloguing active and completed applied research and commercial engagements spanning conversational AI, autonomous marine vision systems, human-attention analytics, large-scale exhibition AI, GenAI film pre-visualisation, interactive image/video generation, text-to-3D modelling, Bitcoin-native digital assets, AI education products, and Logseq-based training materials. It serves as an index demonstrating cross-domain expertise in AI, robotics, spatial computing, and blockchain.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:RecentProjects
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses:: [[Artificial Intelligence]], [[Hardware and Edge]], [[Computer Vision]]
+  - relatedTo:: [[Generative Content]], [[Immersive Entertainment]], [[Metaverse Application]], [[Blockchain]], [[Edge Computing]]
 
 - ### Content
   - # Notable works

@@ -7,6 +7,12 @@
 
 - ### Relationships
   - is-subclass-of:: [[Domain Model]]
+  - standardizedBy [[Reference Architecture]]
+  - hasPart [[Network Infrastructure]]
+  - hasPart [[Digital Identity]]
+  - enables [[Metaverse]]
+  - enables [[Interoperability]]
+  - relatedTo [[Edge Computing]]
 
 - ### Content
 

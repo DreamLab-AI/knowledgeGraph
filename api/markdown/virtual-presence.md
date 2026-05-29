@@ -8,6 +8,13 @@
 
 - ### Relationships
   - is-subclass-of:: [[Telepresence]]
+  - Requires: [[Virtual Reality]]
+  - Requires: [[Avatar]]
+  - Enables: [[Social Presence]]
+  - Enables: [[Immersive Experience]]
+  - Uses: [[Haptic Feedback]]
+  - Uses: [[Spatial Audio]]
+  - Related To: [[Extended Reality]]
 
 - ### Content
 

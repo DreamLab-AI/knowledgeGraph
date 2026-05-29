@@ -46,15 +46,32 @@ public:: true
   "@id": "urn:ngm:class:rescue-robot",
   "@type": "Class",
   "label": "Rescue Robot",
-  "definition": "Rescue Robot - Rescue Robot in robotics systems",
+  "definition": "A Rescue Robot is a specialised mobile robot engineered to operate in hazardous, unstructured environments—including collapsed structures, disaster zones, and nuclear incidents—where direct human presence is unsafe. Such systems integrate multimodal locomotion (tracked, wheeled, or legged), sensor suites (IR, LIDAR, acoustic, tactile), and teleoperation or autonomous navigation to locate, assess, and extract casualties or gather situational data. Conformance with safety standards such as ISO 8373 and participation in benchmarks such as the RoboCup Rescue Robot League drives continuous capability development.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-robot-type",
       "label": "Robot Type"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
+      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:path-planning", "label": "Path Planning"},
+      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:mobile-robot", "label": "Mobile Robot"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:functional-safety", "label": "Functional Safety"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
@@ -96,7 +113,7 @@ public:: true
 
 
 - ### Definition
-  - **Rescue Robot** - Rescue Robot in robotics systems
+  - A Rescue Robot is a specialised mobile robot engineered to operate in hazardous, unstructured environments—including collapsed structures, disaster zones, and nuclear incidents—where direct human presence is unsafe. Such systems integrate multimodal locomotion (tracked, wheeled, or legged), sensor suites (IR, LIDAR, acoustic, tactile), and teleoperation or autonomous navigation to locate, assess, and extract casualties or gather situational data. Conformance with safety standards such as ISO 8373 and participation in benchmarks such as the RoboCup Rescue Robot League drives continuous capability development.
 
 - ### Semantic Classification
   - owl-class:: robotics:RescueRobot
@@ -105,6 +122,10 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Robotics]]
+  - **requires**: Sensor Fusion, Autonomous Navigation
+  - **uses**: Path Planning, Human Robot Interaction
+  - **partOf**: Mobile Robot
+  - **relatedTo**: Functional Safety
 
 - ### Content
   - ### Original Content

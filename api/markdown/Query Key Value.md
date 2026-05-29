@@ -42,9 +42,10 @@ public:: true
   "@id": "urn:ngm:class:query-key-value",
   "@type": "Class",
   "label": "Query Key Value",
-  "definition": "The three fundamental components in attention mechanisms: queries determine what information to seek, keys determine what information is available, and values contain the actual information to be retrieved.",
+  "definition": "The three fundamental components of the attention mechanism introduced by Vaswani et al. (2017): a Query vector representing the current information need, Key vectors representing available information descriptors, and Value vectors containing the content to retrieve. Attention weights are computed via scaled dot-product similarity between queries and keys, then applied to values to produce context-aware output representations.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-model-architecture",
@@ -55,7 +56,23 @@ public:: true
       "label": "Attention Mechanism"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:model-capacity", "label": "Model Capacity"},
+      {"@id": "urn:ngm:class:neural-network-architecture", "label": "Neural Network Architecture"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -99,7 +116,10 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **partOf**: Attention Mechanism (QKV is the core computational primitive of attention)
+  - **enables**: Large Language Models (QKV attention is the foundational operation of transformer LLMs), Deep Learning (enables expressive sequence modelling)
+  - **requires**: Neural Network (learnable weight matrices W^Q, W^K, W^V), Machine Learning (training framework)
+  - **relatedTo**: Model Capacity (multi-head count directly increases capacity), Neural Network Architecture (transformer layout built from QKV layers)
 
 - ### Content
   - The three fundamental components in attention mechanisms: queries determine what information to seek, keys determine what information is available, and values contain the actual information to be retrieved.

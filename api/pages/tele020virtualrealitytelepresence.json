@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:tele020virtualrealitytelepresence",
   "domain": "infrastructure",
-  "definition": "TELE020virtualrealitytelepresence is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Virtual Reality Telepresence (TELE020) combines immersive head-mounted display technology with real-time communication infrastructure to create a compelling shared sense of presence among geographically distributed participants. Key technical components include stereoscopic rendering, head-related transfer function spatial audio, full-body motion tracking for avatar animation, and bandwidth-adaptive network transport; modern platforms extend to eye tracking, facial capture, haptic feedback, and mixed-reality blending of physical and virtual participants.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
@@ -13,21 +13,52 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:metaverse-and-telecollaboration",
+        "label": "Metaverse and Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      },
+      {
+        "id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:tele-050-neuralrenderingtelepresence",
+        "label": "TELE 050 neuralrenderingtelepresence"
+      },
+      {
+        "id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": []

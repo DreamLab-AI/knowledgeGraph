@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:financial-inclusion",
   "domain": "blockchain",
-  "definition": "Financial Inclusion is the goal of providing access to affordable, useful financial products and services to underserved or unbanked populations, increasingly enabled by blockchain and mobile technologies.",
+  "definition": "Financial Inclusion is the policy objective and market outcome of ensuring that individuals and businesses, particularly those in underserved or economically marginalised populations, have access to affordable, useful, and safe financial products and services \u2014 including payments, credit, savings, and insurance. Blockchain and mobile technologies are increasingly deployed as enabling mechanisms, offering the ability to serve populations lacking access to traditional bank accounts, physical branch infrastructure, or formal identity documentation. Decentralised Finance protocols and Central Bank Digital Currencies are among the mechanisms being evaluated for their potential to advance financial inclusion goals.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-defi-and-economics",
@@ -14,12 +14,22 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
@@ -27,7 +37,20 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

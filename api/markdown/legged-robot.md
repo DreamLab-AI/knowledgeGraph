@@ -1,5 +1,5 @@
 - ### Definition
-  - ### Primary Definition
+  - A Legged Robot is a mobile robotic system that achieves locomotion via articulated limbs rather than wheels or tracks, drawing on bio-inspired design and gait control algorithms to navigate complex, unstructured terrain. Contemporary platforms combine reinforcement learning, sensor fusion, and compliant actuators to achieve robust autonomous operation across search-and-rescue, logistics, and infrastructure inspection scenarios.
 
 - ### Semantic Classification
   - owl-class:: robotics:rb0013leggedrobot
@@ -7,7 +7,10 @@
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart:: [[Actuator]], [[Control System]]
+  - uses:: [[Reinforcement Learning]], [[Sensor Fusion]], [[Robot Operating System]]
+  - partOf:: [[Mobile Robot]]
+  - relatedTo:: [[Simulation]], [[Digital Twin]]
 
 - ### Content
   - ### Primary Definition

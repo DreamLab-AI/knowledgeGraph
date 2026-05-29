@@ -6,7 +6,9 @@
   - owl-role:: concept
 
 - ### Relationships
-  - is-subclass-of:: ['owl:Thing']
+  - **hasPart**: [[Edge Computing]], [[Distributed Systems]], [[Content Delivery Network]]
+  - **enables**: [[Machine Learning Infrastructure]], [[Distributed Computing]]
+  - **uses**: [[Network Protocol]], [[Cloud Infrastructure]]
 
 - ### Content
 

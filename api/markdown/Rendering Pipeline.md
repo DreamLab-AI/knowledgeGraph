@@ -435,7 +435,7 @@ public:: true
       "label": "GPU Compute"
     },
     {
-      "@id": "urn:ngm:class:rasterisation",
+      "@id": "urn:ngm:class:rasterization",
       "label": "Rasterisation"
     }
   ],

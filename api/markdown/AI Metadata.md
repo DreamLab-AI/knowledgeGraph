@@ -58,21 +58,37 @@ public:: true
   "@id": "urn:ngm:class:ai-metadata",
   "@type": "Class",
   "label": "AI Metadata",
-  "definition": "AI Metadata encompasses the descriptive information, provenance data, and contextual attributes associated with artificial intelligence models, datasets, and computational artifacts.",
+  "definition": "Descriptive information, provenance data, and contextual attributes associated with AI models, datasets, and computational artefacts. Includes model cards documenting architecture, training procedures, performance metrics, intended use, and known limitations; dataset metadata capturing collection methods, labelling procedures, and potential biases; and lineage records enabling reproducibility, regulatory compliance, and responsible deployment throughout the machine learning lifecycle.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure (Category)"
+    }
+  ],
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:data-provenance", "label": "Data Provenance"},
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
+      {"@id": "urn:ngm:class:transparency-oecd", "label": "Transparency (OECD)"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:ai-audit", "label": "AI Audit"},
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:ai-model-card", "label": "AI Model Card"},
+      {"@id": "urn:ngm:class:training-dataset-metadata", "label": "Training Dataset Metadata"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
-  },
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:cat-ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
-    }
-  ]
+  }
 }
 ```
 
@@ -130,8 +146,9 @@ public:: true
   - owl-role:: concept
 
 - ### Relationships
-  - is-subclass-of:: ['owl:Thing']
-  - bridges-to:: [[Blockchain]] (domain: bc)
+  - enables:: [[Data Provenance]], [[AI Governance]], [[Transparency (OECD)]]
+  - supports:: [[AI Audit]], [[Data Governance]]
+  - uses:: [[AI Model Card]], [[Training Dataset Metadata]]
 
 - ### Content
 

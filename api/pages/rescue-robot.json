@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:rescue-robot",
   "domain": "robotics",
-  "definition": "Rescue Robot - Rescue Robot in robotics systems",
+  "definition": "A Rescue Robot is a specialised mobile robot engineered to operate in hazardous, unstructured environments\u2014including collapsed structures, disaster zones, and nuclear incidents\u2014where direct human presence is unsafe. Such systems integrate multimodal locomotion (tracked, wheeled, or legged), sensor suites (IR, LIDAR, acoustic, tactile), and teleoperation or autonomous navigation to locate, assess, and extract casualties or gather situational data. Conformance with safety standards such as ISO 8373 and participation in benchmarks such as the RoboCup Rescue Robot League drives continuous capability development.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-robot-type",
@@ -14,20 +14,48 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:mobile-robot",
+        "label": "Mobile Robot"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      }
+    ]
   },
   "wikilinks": [
     {

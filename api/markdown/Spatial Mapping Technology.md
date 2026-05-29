@@ -42,9 +42,10 @@ public:: true
   "@id": "urn:ngm:class:spatial-mapping-technology",
   "@type": "Class",
   "label": "Spatial Mapping Technology",
-  "definition": "Spatial Mapping Technology is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Spatial Mapping Technology refers to hardware and software systems that capture, process, and maintain geometric representations of physical environments in real time, enabling AR and MR devices to understand and interact with their surroundings. Core techniques include depth sensing, structured light, time-of-flight, and SLAM algorithms that fuse sensor data into persistent, updatable mesh models.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -56,6 +57,42 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:spatial-mapping",
+        "label": "Spatial Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-anchor",
+        "label": "Spatial Anchor"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "@id": "urn:ngm:class:depth-sensing",
+        "label": "Depth Sensing"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      }
+    ]
   }
 }
 ```
@@ -87,14 +124,20 @@ public:: true
 
 
 - ### Definition
-  - Spatial Mapping Technology is a concept within the metaverse domain. Further enrichment pending.
+  - Spatial Mapping Technology refers to hardware and software systems that capture, process, and maintain geometric representations of physical environments in real time, enabling AR and MR devices to understand and interact with their surroundings. Core techniques include depth sensing, structured light, time-of-flight, and SLAM algorithms that fuse sensor data into persistent, updatable mesh models.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:SpatialMappingTechnology
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses [[SLAM]]
+  - Uses [[Depth Sensing]]
+  - Uses [[Sensor Fusion]]
+  - Enables [[Spatial Mapping]]
+  - Enables [[Spatial Anchor]]
+  - Related To [[Point Cloud]]
+  - Related To [[Lidar]]
 
 - ### Content
 

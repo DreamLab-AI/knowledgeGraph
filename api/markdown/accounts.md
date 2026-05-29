@@ -1,5 +1,5 @@
 - ### Definition
-  - Accounts is a concept within the ngm domain.
+  - Accounts denotes the financial reporting and filing obligations of a limited company under UK law, covering annual accounts preparation, Companies House submission deadlines (9 months from accounting reference date for subsequent years), confirmation statements, and the penalties regime for late filing.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:Accounts
@@ -7,6 +7,10 @@
 
 - ### Relationships
   - bridges-to:: [[Blockchain]]
+  - requires:: [[Compliance Framework]], [[Governance]]
+  - supports:: [[Compliance Audit Trail]]
+  - dependsOn:: [[Risk Management]]
+  - relatedTo:: [[Privacy]]
 
 - ### Content
   - For a limited company in the UK, the due dates for annual accounts are determined by your company's 'accounting reference date,' which is the end of your financial year. Here's how it typically works:

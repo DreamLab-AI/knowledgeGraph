@@ -7,7 +7,10 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **hasPart**: [[Storage Layer]], [[Data Management]]
+  - **requires**: [[Data Governance]], [[Verifiable Credentials]]
+  - **enables**: [[Distributed Ledger Technology (DLT)]], [[Edge Computing]]
+  - **relatedTo**: [[ETSI_Domain_Infrastructure]], [[ETSI Domain: Data Management]]
 
 - ### Content
   - The ETSI Infrastructure and Data domain governs foundational data exchange, storage, and governance for metaverse systems through trustworthy data spaces, sovereign data control, and policy-driven interoperability enabling secure cross-platform data coordination.

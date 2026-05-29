@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:digital-model",
   "domain": "spatial-computing",
-  "definition": "Digital Model is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "A Digital Model is a structured computational representation of a real-world or conceptual entity, capturing geometry, behaviour, and semantic attributes for use in simulation, visualisation, or analysis. Digital models underpin virtual environments, digital twins, and spatial computing applications by providing machine-readable, interoperable representations of physical or abstract objects.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -13,21 +13,48 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:virtual-environment",
+        "label": "Virtual Environment"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin-infrastructure",
+        "label": "Digital Twin Infrastructure"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:digital-modeling",
+        "label": "Digital Modeling"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -1,12 +1,15 @@
 - ### Definition
-  - Financial Trading is a concept within the metaverse domain. Further enrichment pending.
+  - The exchange of financial instruments—including equities, derivatives, cryptocurrencies, and digital assets—within regulated or decentralised markets. In the metaverse and spatial computing context, financial trading encompasses algorithmic and AI-driven trading of virtual assets, NFTs, and tokenised real-world assets through smart-contract-enabled marketplaces and decentralised exchanges.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:FinancialTrading
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: Smart Contract, Decentralized Exchange (DEX) — automated settlement and on-chain order books underpin virtual asset trading
+  - **relatedTo**: Digital Asset, Virtual Economy, Cryptocurrency — trading operates over these asset classes within virtual economic systems
+  - **enables**: Marketplace — liquid trading activity is the mechanism through which marketplaces function
+  - **dependsOn**: Transaction Standard — consistent transaction schemas are required for settlement interoperability
 
 - ### Content
 

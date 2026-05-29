@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:industrial-automation",
   "domain": "robotics",
-  "definition": "The use of control systems, robotics, and information technologies to operate industrial processes and machinery with minimal human intervention, increasing throughput and consistency.",
+  "definition": "Industrial automation is the application of control systems\u2014including programmable logic controllers (PLCs), distributed control systems (DCS), and robotic manipulators\u2014along with information technologies to operate industrial processes and machinery with minimal or no human intervention. It spans discrete manufacturing (assembly lines, packaging, welding) and process industries (chemical plants, oil refineries, power generation), increasing throughput, consistency, and safety by removing humans from hazardous environments. Industrial automation integrates mechanical, electrical, and software engineering disciplines and is increasingly augmented by machine vision, collaborative robots, and AI-driven process optimisation.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-robot-type",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:industrial-io-t",
+        "label": "Industrial IoT"
+      },
+      {
+        "id": "urn:ngm:class:predictive-maintenance",
+        "label": "Predictive Maintenance"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      },
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:real-time-processing",
+        "label": "Real-time Processing"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

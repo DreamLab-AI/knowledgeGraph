@@ -6,7 +6,13 @@
   - owl-role:: concept
 
 - ### Relationships
-  - is-subclass-of:: ['owl:Thing']
+  - is-subclass-of:: [[AI Technique]]
+  - Uses [[Search Algorithms]]
+  - Uses [[Optimization Algorithm]]
+  - Enables [[Automated Planning]]
+  - Enables [[Pathfinding Algorithm]]
+  - Depends on [[Search Algorithm]]
+  - Related to [[Planning and Scheduling]]
 
 - ### Content
 

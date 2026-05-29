@@ -54,7 +54,7 @@ public:: true
   "@id": "urn:ngm:class:delegated-proof-of-stake",
   "@type": "Class",
   "label": "Delegated Proof of Stake",
-  "definition": "A PoS variant where network participants have the right to delegate the production of new blocks to a fixed number of delegates (witnesses), with users determining delegates via democratic voting mechanism weighted by locked tokens.",
+  "definition": "A Proof-of-Stake variant in which token holders delegate block production rights to a fixed number of elected delegates (witnesses or block producers) via a token-weighted democratic voting mechanism. DPoS achieves high throughput and fast block times by concentrating validation among a small elected set, with delegates subject to removal by voters if they misbehave or underperform.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -67,7 +67,29 @@ public:: true
       "label": "Proof of Stake"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
+      {"@id": "urn:ngm:class:nominated-proof-of-stake", "label": "Nominated Proof of Stake"},
+      {"@id": "urn:ngm:class:liquid-proof-of-stake", "label": "Liquid Proof of Stake"},
+      {"@id": "urn:ngm:class:delegate-democracy", "label": "Delegate Democracy"},
+      {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:validator-set", "label": "Validator Set"},
+      {"@id": "urn:ngm:class:epoch", "label": "Epoch"},
+      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:deterministic-finality", "label": "Deterministic Finality"},
+      {"@id": "urn:ngm:class:virtual-economy", "label": "Virtual Economy"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
+      {"@id": "urn:ngm:class:nakamoto-consensus", "label": "Nakamoto Consensus"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

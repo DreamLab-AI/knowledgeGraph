@@ -42,9 +42,9 @@ public:: true
   "@id": "urn:ngm:class:rb-0045-acceleration",
   "@type": "Class",
   "label": "rb 0045 acceleration",
-  "definition": "acceleration is a robotics and autonomous systems concept and a type of Newton-Euler Dynamics.",
+  "definition": "In robotics, acceleration is the rate of change of velocity with respect to time, expressed for each joint (joint-space acceleration) or for the robot's end-effector (task-space acceleration), measured in rad/s² or m/s² respectively. Acceleration profiles govern the dynamic forces and torques that a manipulator must generate, coupling directly into Newton-Euler equations of motion. Limiting acceleration is central to safety (reducing impact forces) and to trajectory smoothness in collaborative applications.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-actuation-and-control",
@@ -55,7 +55,23 @@ public:: true
       "label": "Newton-Euler Dynamics"
     }
   ],
-  "quality": 0.5,
+  "quality": 0.7,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:rb-0044-velocity", "label": "rb 0044 velocity"},
+      {"@id": "urn:ngm:class:rb-0043-torque", "label": "rb 0043 torque"},
+      {"@id": "urn:ngm:class:rb-0041-inertia", "label": "rb 0041 inertia"},
+      {"@id": "urn:ngm:class:rb-0022-robot-dynamics", "label": "rb 0022 robot dynamics"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:rb-0021-robot-kinematics", "label": "rb 0021 robot kinematics"},
+      {"@id": "urn:ngm:class:rb-0030-jacobian-matrix", "label": "rb 0030 jacobian matrix"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:rb-0051-trajectory-planning", "label": "rb 0051 trajectory planning"},
+      {"@id": "urn:ngm:class:rb-0094-power-and-force-limiting", "label": "rb 0094 power and force limiting"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -92,6 +108,9 @@ public:: true
 
 - ### Definition
   - ### Primary Definition
+  Acceleration is the second time derivative of position (or first derivative of velocity) and is a fundamental quantity in robot dynamics. In joint space, joint accelerations are combined with the mass-inertia matrix and Coriolis/centrifugal terms to compute the required joint torques via the Newton-Euler or Lagrangian formulations. In task space, Cartesian acceleration of the end-effector is obtained through differentiation of the Jacobian.
+
+  Bounding acceleration is essential in collaborative robot standards: ISO/TS 15066 specifies transient contact force limits that implicitly constrain end-effector acceleration during human-robot contact scenarios. Smooth acceleration profiles (trapezoidal, S-curve, jerk-limited) reduce mechanical wear and improve tracking performance during high-speed manipulation.
 
 - ### Semantic Classification
   - owl-class:: robotics:rb0045acceleration
@@ -99,7 +118,7 @@ public:: true
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Tightly coupled with velocity (RB-0044), torque (RB-0043), and inertia (RB-0041) within Newton-Euler dynamics; used in trajectory planning (RB-0051) and power/force limiting (RB-0094) for safe collaborative operation.
 
 - ### Content
   - ### Primary Definition

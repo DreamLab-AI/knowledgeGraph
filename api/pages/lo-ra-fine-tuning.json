@@ -5,20 +5,42 @@
   "public": true,
   "classIri": "urn:ngm:class:lo-ra-fine-tuning",
   "domain": "artificial-intelligence",
-  "definition": "LoRA (Low-Rank Adaptation) fine-tuning is a parameter-efficient method for adapting large pre-trained models by injecting trainable low-rank decomposition matrices into selected weight layers, drastically reducing trainable parameter count.",
+  "definition": "LoRA (Low-Rank Adaptation) fine-tuning is a parameter-efficient fine-tuning technique that adapts large pre-trained transformer models by inserting pairs of trainable low-rank matrices (A \u2208 \u211d^{d\u00d7r} and B \u2208 \u211d^{r\u00d7d}, where r \u226a d) alongside frozen weight matrices in selected layers, so that the effective weight update \u0394W = BA is constrained to a low-dimensional subspace. By training only the injected adapter matrices \u2014 typically representing 0.1\u20131% of the original parameter count \u2014 LoRA achieves near full fine-tuning performance at a fraction of the GPU memory and compute cost, enabling adaptation of billion-parameter models on consumer hardware. It is now the dominant technique in the PEFT ecosystem and is implemented in Hugging Face's PEFT library.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
+    },
+    {
+      "id": "urn:ngm:class:parameter-efficient-fine-tuning",
+      "label": "Parameter-Efficient Fine-Tuning"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:pre-training",
+        "label": "Pre Training"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "id": "urn:ngm:class:domain-adaptation",
+        "label": "Domain Adaptation"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +49,16 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:quantisation",
+        "label": "Quantisation"
+      },
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

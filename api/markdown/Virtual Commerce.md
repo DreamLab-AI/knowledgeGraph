@@ -48,7 +48,7 @@ public:: true
   "label": "Virtual Commerce",
   "definition": "An emerging form of e-commerce (V-commerce) that enables buying and selling of goods and services within virtual reality environments, including virtual storefronts, enhanced product visualization, social shopping experiences, and immersive customer-product interactions in metaverse platforms.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -59,6 +59,22 @@ public:: true
       "label": "Virtual Economy"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:digital-currency", "label": "Digital Currency"},
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:digital-marketplace", "label": "Digital Marketplace"},
+      {"@id": "urn:ngm:class:nft", "label": "NFT"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:e-commerce", "label": "E-Commerce"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
@@ -109,6 +125,12 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Virtual Economy]]
+  - requires:: [[Digital Currency]]
+  - requires:: [[Smart Contract]]
+  - enables:: [[Digital Marketplace]]
+  - enables:: [[NFT]]
+  - partOf:: [[Metaverse]]
+  - contrastsWith:: [[E-Commerce]]
 
 - ### Content
 

@@ -48,7 +48,8 @@ public:: true
   "label": "De BER Ta",
   "definition": "Decoding-enhanced BERT with Disentangled Attention: an improved BERT architecture that uses disentangled attention (separating content and position) and an enhanced mask decoder for better performance.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
@@ -59,7 +60,23 @@ public:: true
       "label": "Language Modeling"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "implements": [
+      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
+      {"@id": "urn:ngm:class:language-modeling", "label": "Language Modeling"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
+      {"@id": "urn:ngm:class:training-data", "label": "Training Data"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:natural-language-understanding", "label": "Natural Language Understanding"},
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -108,7 +125,10 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **implements**: Transformer, Language Modeling (DeBERTa is a disentangled-attention transformer pre-trained with masked language modelling)
+  - **uses**: Model Training, Training Data (pre-training requires large corpora and supervised fine-tuning)
+  - **enables**: Natural Language Understanding, Natural Language Processing (downstream task performance the architecture unlocks)
+  - **contrastsWith**: Large Language Models (DeBERTa occupies a distinct encoder-only niche versus autoregressive LLMs)
 
 - ### Content
   - Decoding-enhanced BERT with Disentangled Attention: an improved BERT architecture that uses disentangled attention (separating content and position) and an enhanced mask decoder for better performance.

@@ -5,7 +5,13 @@
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **enables** [[Robustness]] — interpolated training smooths decision boundaries and reduces sensitivity to perturbations
+  - **enables** [[Calibration]] — training on soft, interpolated labels improves model confidence calibration
+  - **contrastsWith** [[Label Smoothing]] — both regularise label distributions but via different mechanisms
+  - **dependsOn** [[Training Data]] — requires labelled pairs from the training set as interpolation inputs
+  - **dependsOn** [[Supervised Learning]] — operates within a supervised loss minimisation framework
+  - **relatedTo** [[Overfitting]] — reduces overfitting by discouraging memorisation of individual samples
+  - **relatedTo** [[Deep Learning]] — widely adopted across deep learning architectures and domains
 - ### Content
   - A data augmentation technique that creates virtual training examples by linearly interpolating pairs of examples and their labels. Mixup improves generalisation, calibration, and robustness by training on convex combinations of training samples.
   #### Key Characteristics

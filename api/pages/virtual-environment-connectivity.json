@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:virtual-environment-connectivity",
   "domain": "spatial-computing",
-  "definition": "The networking technologies and protocols that enable seamless communication, data synchronization, and user interaction across distributed virtual environments, including real-time streaming, peer-to-peer networks, and cross-platform interoperability systems.",
+  "definition": "The networking technologies and protocols that enable seamless communication, data synchronisation, and user interaction across distributed virtual environments, including real-time streaming, peer-to-peer networks, and cross-platform interoperability systems. Achieving sub-20ms latency for VR experiences requires a combination of 5G/6G mobile networks, edge computing, WebRTC for browser-to-browser communication, and software-defined networking for traffic management.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -17,19 +17,47 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:metaverse-platform",
+        "label": "Metaverse Platform"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      }
+    ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      }
+    ],
     "partOf": [],
     "relatedTo": []
   },

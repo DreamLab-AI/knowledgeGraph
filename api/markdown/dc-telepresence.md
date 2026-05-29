@@ -26,7 +26,7 @@ public:: true
   "@type": "Class",
   "@id": "urn:ngm:class:dc-telepresence",
   "label": "Telepresence",
-  "definition": "Intermediate taxonomy category for telepresence concepts within the distributed collaboration domain.",
+  "definition": "Telepresence is the distributed-collaboration taxonomy hub covering technologies that create a convincing sense of physical co-presence across remote locations — spanning robotic telepresence, haptic-feedback telepresence, virtual-reality telepresence, and social presence theory. It is a peer category to Workspace Tools and Communication Technology within the distributed collaboration domain.",
   "domain": "distributed-collaboration",
   "subClassOf": [
     {
@@ -34,8 +34,33 @@ public:: true
       "label": "Distributed Collaboration"
     }
   ],
-  "relations": {},
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:robotic-telepresence", "label": "Robotic Telepresence"},
+      {"@id": "urn:ngm:class:haptic-feedback-telepresence", "label": "Haptic Feedback Telepresence"},
+      {"@id": "urn:ngm:class:teleoperation-systems", "label": "Teleoperation Systems"},
+      {"@id": "urn:ngm:class:social-presence", "label": "Social Presence"},
+      {"@id": "urn:ngm:class:spatial-presence", "label": "Spatial Presence"},
+      {"@id": "urn:ngm:class:presence", "label": "Presence"},
+      {"@id": "urn:ngm:class:immersive-communication", "label": "Immersive Communication"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:dc-workspace-tools", "label": "Workspace Tools"},
+      {"@id": "urn:ngm:class:dc-communication", "label": "Communication Technology"},
+      {"@id": "urn:ngm:class:robotics-telepresence-bridge", "label": "Robotics-Telepresence Bridge"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:haptics", "label": "Haptics"},
+      {"@id": "urn:ngm:class:avatar-system", "label": "Avatar System"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:metaverse-telepresence-bridge", "label": "Metaverse-Telepresence Bridge"}
+    ]
+  },
+  "quality": 0.8,
   "qualityScore": 0.8,
   "maturity": "established"
 }
 ```
+
+Telepresence technologies aim to dissolve the perceptual gap between geographically distributed participants. Achieving high-fidelity presence requires convergence of low-latency video/audio, spatial audio, haptic feedback, and — increasingly — robotic avatars and VR environments. Social presence theory provides the theoretical grounding for evaluating how effectively any given system achieves the subjective experience of being physically co-located.

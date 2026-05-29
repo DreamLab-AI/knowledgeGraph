@@ -5,7 +5,10 @@
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **relatedTo**: [[Harmlessness]], [[Honesty]]
+  - **requires**: [[AI Alignment]], [[Reinforcement Learning from Human Feedback]]
+  - **supports**: [[Trustworthy AI]], [[Value Alignment]]
+  - **contrastsWith**: [[AI Risk]]
 - ### Content
   - An alignment objective ensuring AI systems provide useful, relevant, and informative responses to user queries. Helpfulness represents a key dimension of AI utility that must be balanced against harmlessness and honesty.
   - ### **Monster Mash Troubleshooting**

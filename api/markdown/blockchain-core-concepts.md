@@ -7,7 +7,9 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **Has-part**: [[Consensus Algorithm]], [[Smart Contract]], [[Hash Function]], [[Merkle Tree]]
+  - **Enables**: [[DAO]] (decentralised governance), [[Zero Knowledge]] proofs, [[Layer2Scaling]]
+  - **Uses**: [[Distributed Ledger]] (immutable append-only record), [[Digital Signature]] (transaction authorisation)
 
 - ### Content
   - Blockchain core concepts encompass distributed ledger fundamentals including consensus mechanisms, cryptographic primitives, data structures, transactions, smart contracts, and governance frameworks enabling DeFi, NFTs, and metaverse economies with scalability and regulatory considerations.

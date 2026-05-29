@@ -42,9 +42,9 @@ public:: true
   "@id": "urn:ngm:class:metaverse-and-spatial-risks",
   "@type": "Class",
   "label": "Metaverse and Spatial Risks",
-  "definition": "Metaverse and Spatial Risks is a spatial computing concept and a type of Metaverse governance and safeguarding.",
+  "definition": "Metaverse and Spatial Risks encompass the range of harms and hazards that arise specifically from spatially embodied, real-time virtual interactions — including harassment and abuse that mimics physical-world dynamics, miscommunication amplified by latency and avatar fidelity limitations, digital addiction, physical health impacts from prolonged immersive use, privacy violations through biometric data collection, and regulatory gaps as legislation lags behind technology deployment. These risks require multi-layered mitigation combining technical safeguards, governance frameworks, and international regulatory coordination.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
@@ -55,6 +55,20 @@ public:: true
       "label": "Metaverse governance and safeguarding"
     }
   ],
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:user-safety", "label": "User Safety"},
+      {"@id": "urn:ngm:class:privacy", "label": "Privacy"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:content-moderation", "label": "Content Moderation"},
+      {"@id": "urn:ngm:class:regulatory-framework", "label": "Regulatory Framework"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"},
+      {"@id": "urn:ngm:class:metaverse-liability-model", "label": "Metaverse Liability Model"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -91,14 +105,19 @@ public:: true
 
 
 - ### Definition
-  - Metaverse and Spatial Risks is a concept within the ngm domain.
+  - Metaverse and Spatial Risks encompass the range of harms and hazards that arise specifically from spatially embodied, real-time virtual interactions — including harassment and abuse that mimics physical-world dynamics, miscommunication amplified by latency and avatar fidelity limitations, digital addiction, physical health impacts from prolonged immersive use, privacy violations through biometric data collection, and regulatory gaps as legislation lags behind technology deployment.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:MetaverseAndSpatialRisks
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart [[User Safety]]
+  - hasPart [[Privacy]]
+  - requires [[Content Moderation]]
+  - requires [[Regulatory Framework]]
+  - relatedTo [[Risk Management]]
+  - relatedTo [[Metaverse Liability Model]]
 
 - ### Content
   - #Public page

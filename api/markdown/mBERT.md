@@ -42,16 +42,36 @@ public:: true
   "@id": "urn:ngm:class:m-bert",
   "@type": "Class",
   "label": "mBERT",
-  "definition": "Multilingual BERT: a variant of BERT pre-trained on Wikipedia in 104 languages, enabling cross-lingual transfer and multilingual understanding without language-specific modifications.",
+  "definition": "Multilingual BERT (mBERT) is a variant of the BERT encoder pre-trained jointly on Wikipedia text in 104 languages using masked language modelling and next-sentence prediction objectives. By sharing a single vocabulary and model weights across all languages, mBERT learns cross-lingually aligned representations that support zero-shot cross-lingual transfer: a model fine-tuned for a task in one language can be applied directly to another language without that language's labelled data. mBERT is the foundational benchmark for evaluating multilingual language understanding and cross-lingual transfer learning.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-model-architecture",
       "label": "AI Model Architecture"
     }
   ],
-  "quality": 0.5,
+  "quality": 0.7,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
+      {"@id": "urn:ngm:class:albert", "label": "ALBERT"},
+      {"@id": "urn:ngm:class:embedding-model", "label": "Embedding Model"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},
+      {"@id": "urn:ngm:class:tokenisation", "label": "Tokenisation"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
+      {"@id": "urn:ngm:class:named-entity-recognition", "label": "Named Entity Recognition"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:pre-training", "label": "Pre Training"},
+      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

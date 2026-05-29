@@ -7,7 +7,12 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses:: [[Convolutional Neural Network]]
+  - uses:: [[Autoencoder]]
+  - enables:: [[Machine Learning Pipeline]]
+  - enables:: [[Dimensionality Reduction]]
+  - relatedTo:: [[Feature Engineering]]
+  - relatedTo:: [[Embedding Model]]
 
 - ### Content
   - ### Primary Definition

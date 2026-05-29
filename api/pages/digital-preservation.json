@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:digital-preservation",
   "domain": "spatial-computing",
-  "definition": "Digital Preservation is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Digital Preservation encompasses the strategies, standards, and technical processes that ensure long-term accessibility and integrity of digital content, including 3D assets, metadata, and cultural heritage materials. It involves format migration, checksumming, redundant storage, and provenance tracking, increasingly leveraging blockchain for immutable audit trails and decentralised storage for resilience.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-asset-management",
+        "label": "Digital Asset Management"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:metadata-standard",
+        "label": "Metadata Standard"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:archival-standards",
+        "label": "Archival Standards"
+      },
+      {
+        "id": "urn:ngm:class:storage-infrastructure",
+        "label": "Storage Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:3-d-file-format",
+        "label": "3D File Format"
+      }
+    ]
   },
   "wikilinks": [
     {

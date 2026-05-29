@@ -1,12 +1,17 @@
 - ### Definition
-  - Infrastructure Component is a concept within the ai domain. Further enrichment pending.
+  - A discrete, independently deployable unit of technical infrastructure that fulfils a specific function within a larger system, such as a compute node, network layer, storage service, or security module, and that can be composed with other components to deliver end-to-end platform capabilities.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:InfrastructureComponent
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Part Of: [[Digital Infrastructure]]
+  - Has Part: [[Network Component]]
+  - Uses: [[Cloud Infrastructure]]
+  - Uses: [[Edge Computing]]
+  - Related To: [[Distributed Systems]]
+  - Related To: [[Networking Infrastructure]]
 
 - ### Content
 

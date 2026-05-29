@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:lead-screw-actuator",
   "domain": "robotics",
-  "definition": "Lead screw actuator uses threaded rod for simple linear motion.",
+  "definition": "A linear actuation mechanism that converts rotational motion from a motor into controlled axial displacement by driving a threaded nut along a precision-cut helical screw shaft. Lead screw actuators provide high mechanical advantage, inherent load-holding capability (due to the self-locking property when lead angle is below the friction angle), and positional repeatability, making them widely used in CNC machines, 3D printers, robotic joints, and medical devices.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
@@ -17,21 +17,66 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:mechanical-component",
+        "label": "Mechanical Component"
+      },
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:torque-control",
+        "label": "Torque Control"
+      },
+      {
+        "id": "urn:ngm:class:industrial-robot",
+        "label": "Industrial Robot"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:pid-controller",
+        "label": "Pid Controller"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:stepper-motor",
+        "label": "Stepper Motor"
+      },
+      {
+        "id": "urn:ngm:class:servo-motor",
+        "label": "Servo Motor"
+      },
+      {
+        "id": "urn:ngm:class:torque",
+        "label": "Torque"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:robotics-control",
+        "label": "Robotics Control"
+      },
+      {
+        "id": "urn:ngm:class:robotics-systems",
+        "label": "Robotics Systems"
+      }
+    ]
   },
   "wikilinks": [
     {

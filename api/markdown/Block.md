@@ -70,7 +70,7 @@ public:: true
   "@id": "urn:ngm:class:block",
   "@type": "Class",
   "label": "Block",
-  "definition": "Fundamental unit containing transactions within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "The fundamental unit of a blockchain: a cryptographically linked, immutable data container that batches a set of transactions together with a block header containing the Merkle root of those transactions, a timestamp, the previous block's hash, and consensus-specific fields such as a nonce or validator signature. Sequential blocks form the chain that provides an append-only audit trail.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -87,7 +87,26 @@ public:: true
       "label": "DistributedDataStructure"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:block-header", "label": "Block Header"},
+      {"@id": "urn:ngm:class:merkle-root", "label": "Merkle Root"},
+      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"},
+      {"@id": "urn:ngm:class:coinbase-transaction", "label": "Coinbase Transaction"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:genesis-block", "label": "Genesis Block"},
+      {"@id": "urn:ngm:class:block-time", "label": "Block Time"},
+      {"@id": "urn:ngm:class:block-size", "label": "Block Size"},
+      {"@id": "urn:ngm:class:block-reward", "label": "Block Reward"},
+      {"@id": "urn:ngm:class:block-propagation", "label": "Block Propagation"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"},
+      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

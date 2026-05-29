@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:enterprise-search",
   "domain": "artificial-intelligence",
-  "definition": "Enterprise search is the capability to retrieve relevant information from heterogeneous internal data sources\u2014documents, databases, emails\u2014within an organisation, increasingly enhanced by AI and semantic retrieval techniques.",
+  "definition": "Enterprise search is the organisational capability to retrieve relevant information from heterogeneous internal data sources\u2014documents, databases, emails, intranets, and code repositories\u2014within a single unified query interface. Modern enterprise search systems increasingly combine full-text indexing with semantic retrieval, vector embeddings, and retrieval-augmented generation (RAG) to surface contextually relevant results rather than mere keyword matches. The discipline sits at the intersection of information retrieval, knowledge management, and applied AI, requiring connectors, access-control enforcement, and relevance tuning at scale.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-application",
@@ -14,20 +14,48 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:surgical-robotics",
   "domain": "artificial-intelligence",
-  "definition": "Surgical Robotics applies robotic systems, computer vision, and AI to assist or perform surgical procedures with enhanced precision, dexterity, and minimal invasiveness.",
+  "definition": "Surgical robotics is the application of robotic systems, real-time computer vision, and AI-driven control to assist surgeons or perform procedures autonomously with enhanced precision, dexterity, tremor cancellation, and minimally invasive access. Systems range from teleoperated master-slave platforms\u2014where a surgeon's hand movements are scaled and filtered\u2014to semi-autonomous robots capable of suturing or tissue manipulation under human supervision. Key technical challenges include sub-millimetre motion tracking, intraoperative tissue deformation modelling, real-time haptic feedback, and regulatory compliance under medical device frameworks such as ISO 13485 and IEC 62304.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-application",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:medical-ai",
+        "label": "Medical AI"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      },
+      {
+        "id": "urn:ngm:class:teleoperation",
+        "label": "Teleoperation"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:medical-robot",
+        "label": "Medical Robot"
+      },
+      {
+        "id": "urn:ngm:class:surgical-robot",
+        "label": "Surgical Robot"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

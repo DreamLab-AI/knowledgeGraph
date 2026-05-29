@@ -42,7 +42,7 @@ public:: true
   "@id": "urn:ngm:class:spatial-ai",
   "@type": "Class",
   "label": "Spatial AI",
-  "definition": "Spatial AI is a artificial intelligence concept and a type of Artificial Intelligence.",
+  "definition": "Spatial AI is the application of machine learning and computer vision to understand, represent, and reason about three-dimensional physical space. It encompasses scene understanding, semantic mapping, depth estimation, and object detection, enabling robots, AR/VR systems, and autonomous agents to interpret their environment and plan actions within it.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -51,7 +51,26 @@ public:: true
       "label": "AI Research Area"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:scene-understanding", "label": "Scene Understanding"},
+      {"@id": "urn:ngm:class:semantic-segmentation", "label": "Semantic Segmentation"},
+      {"@id": "urn:ngm:class:depth-estimation", "label": "Depth Estimation"},
+      {"@id": "urn:ngm:class:object-detection", "label": "Object Detection"},
+      {"@id": "urn:ngm:class:3-d-gaussian-splatting", "label": "3D Gaussian Splatting"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:spatial-mapping", "label": "Spatial Mapping"},
+      {"@id": "urn:ngm:class:slam", "label": "SLAM"},
+      {"@id": "urn:ngm:class:embodied-ai", "label": "Embodied AI"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:spatial-mapping-technology", "label": "Spatial Mapping Technology"},
+      {"@id": "urn:ngm:class:neural-radiance-field", "label": "Neural Radiance Field"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

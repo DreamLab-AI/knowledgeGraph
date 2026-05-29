@@ -7,7 +7,11 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - partOf [[Transformer]]
+  - enables [[Large Language Models]]
+  - enables [[Natural Language Processing]]
+  - relatedTo [[Attention Mechanism]]
+  - contrastsWith [[Reinforcement Learning]]
 
 - ### Content
   - An attention mechanism where every token in a sequence attends to every other token in the same sequence, allowing the model to capture intra-sequence dependencies.

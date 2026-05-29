@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:total-supply",
   "domain": "blockchain",
-  "definition": "All existing tokens within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "Total Supply is the count of all tokens that have ever been created on a blockchain network, encompassing circulating tokens, locked or vested tokens, tokens held in treasury reserves, and any tokens that have been minted but not yet distributed\u2014but excluding permanently destroyed (burned) tokens. It differs from the maximum supply (the hard cap set by the protocol) and from circulating supply (tokens freely tradeable on secondary markets). Total supply is a fundamental parameter in tokenomics analysis used to assess inflation, dilution, and long-term value dynamics.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-defi-and-economics",
@@ -17,15 +17,29 @@
     },
     {
       "id": "urn:ngm:class:economic-mechanism",
-      "label": "EconomicMechanism"
+      "label": "Economic Mechanism"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:circulating-supply",
+        "label": "Circulating Supply"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:emission-schedule",
+        "label": "Emission Schedule"
+      },
+      {
+        "id": "urn:ngm:class:supply-cap",
+        "label": "Supply Cap"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
@@ -35,7 +49,36 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:market-capitalization",
+        "label": "Market Capitalization"
+      },
+      {
+        "id": "urn:ngm:class:deflationary-token",
+        "label": "Deflationary Token"
+      },
+      {
+        "id": "urn:ngm:class:inflationary-token",
+        "label": "Inflationary Token"
+      },
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      },
+      {
+        "id": "urn:ngm:class:inflation",
+        "label": "Inflation"
+      },
+      {
+        "id": "urn:ngm:class:halving",
+        "label": "Halving"
+      },
+      {
+        "id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
+      }
+    ]
   },
   "wikilinks": [
     {

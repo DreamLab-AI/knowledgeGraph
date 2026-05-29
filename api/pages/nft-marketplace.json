@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:nft-marketplace",
   "domain": "blockchain",
-  "definition": "NFT Marketplace is a type of Blockchain in the blockchain domain.",
+  "definition": "A digital platform enabling the creation, listing, buying, selling, and auctioning of non-fungible tokens (NFTs). NFT marketplaces provide discovery, escrow, royalty enforcement, and settlement infrastructure for unique digital assets, typically integrating smart contracts for trustless ownership transfer and on-chain provenance tracking.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-token-and-asset",
@@ -13,21 +13,77 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "id": "urn:ngm:class:nft-minting",
+        "label": "NFT Minting"
+      },
+      {
+        "id": "urn:ngm:class:nft-standard",
+        "label": "NFT Standard"
+      },
+      {
+        "id": "urn:ngm:class:creator-royalty-token",
+        "label": "Creator Royalty Token"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:fractionalized-nft",
+        "label": "Fractionalized NFT"
+      },
+      {
+        "id": "urn:ngm:class:nft-renting",
+        "label": "NFT Renting"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:erc-721",
+        "label": "ERC-721"
+      },
+      {
+        "id": "urn:ngm:class:erc-1155",
+        "label": "ERC-1155"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-asset-trading",
+        "label": "Digital Asset Trading"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-exchange",
+        "label": "Decentralized Exchange"
+      },
+      {
+        "id": "urn:ngm:class:digital-marketplace",
+        "label": "Digital Marketplace"
+      },
+      {
+        "id": "urn:ngm:class:non-fungible-token-nft",
+        "label": "Non-Fungible Token (NFT)"
+      }
+    ]
   },
   "wikilinks": [
     {

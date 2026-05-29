@@ -1,12 +1,15 @@
 - ### Definition
-  - RoboticsProcess is a concept within the ngm domain.
+  - A Robotics Process encompasses the systematic procedures, methodologies, and workflows for robot development, deployment, operation, and maintenance, spanning requirements engineering, system design, hardware-software integration, verification and validation, commissioning, and lifecycle management. Agile and iterative methods accommodate uncertainty and enable rapid prototyping; simulation-driven approaches using digital twins support virtual commissioning. Compliance with process standards such as ISO 9001 and IEC 61508 is required for safety-critical robotic applications.
 
 - ### Semantic Classification
   - owl-class:: robotics:RoboticsProcess
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: Digital Twin, Formal Verification
+  - **requires**: Functional Safety
+  - **enables**: Robot Component, Autonomous Robot
+  - **relatedTo**: Systems Engineering
 
 - ### Content
   term-id: RB-9029

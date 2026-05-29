@@ -9,7 +9,13 @@ bridges-to:: [[Telecollaboration]]
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **supports** [[Transparency]] — democratic governance requires visible, auditable decision-making
+  - **supports** [[Accountability]] — democratic values demand accountability of AI systems and institutions
+  - **supports** [[Governance]] — democratic values provide the normative foundation for governance frameworks
+  - **contrastsWith** [[Attack Vector]] — disinformation and electoral manipulation are active attack vectors against democracy
+  - **relatedTo** [[EU AI Act]] — the EU AI Act encodes democratic safeguards into binding regulation
+  - **relatedTo** [[Democratic Governance]] — democratic values are operationalised through democratic governance structures
+  - **relatedTo** [[Privacy]] — civic freedoms depend on privacy from state and corporate surveillance
 
 - ### Content
   - Principles and practices of democratic governance including pluralism, participatory decision-making, transparent governance, electoral integrity, free formation of political will and protection of civic space, which AI systems should respect and strengthen rather than undermine.

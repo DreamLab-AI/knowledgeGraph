@@ -46,20 +46,50 @@ public:: true
   "@id": "urn:ngm:class:multi-task-learning",
   "@type": "Class",
   "label": "Multi Task Learning",
-  "definition": "A machine learning paradigm where a model is trained simultaneously on multiple related tasks, sharing representations across tasks to improve generalization and efficiency. Multi-task learning leverages task relatedness to learn better features than training on each task independently.",
-  "domain": "spatial-computing",
-  "maturity": "draft",
+  "definition": "Multi Task Learning is a machine learning paradigm where a single model is trained simultaneously on multiple related tasks, sharing intermediate representations to improve generalisation, sample efficiency, and regularisation relative to independently trained single-task models.",
+  "domain": "artificial-intelligence",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:sc-content-and-assets",
-      "label": "Content and Assets"
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
     }
   ],
-  "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:multimodal-ai",
+        "label": "Multimodal AI"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:neural-network-architecture",
+        "label": "Neural Network Architecture"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "@id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      }
+    ]
   }
 }
 ```
@@ -104,7 +134,11 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses [[Neural Network Architecture]] with shared encoders and task-specific heads
+  - Related to [[Transfer Learning]] (knowledge sharing via pre-trained representations)
+  - Related to [[Supervised Learning]] (most MTL setups are supervised across all task heads)
+  - Enables [[Multimodal AI]] by jointly training on heterogeneous task types
+  - Contrasts with [[Overfitting]] (task diversity acts as an implicit regulariser)
 
 - ### Content
   - A machine learning paradigm where a model is trained simultaneously on multiple related tasks, sharing representations across tasks to improve generalization and efficiency. Multi-task learning leverages task relatedness to learn better features than training on each task independently.

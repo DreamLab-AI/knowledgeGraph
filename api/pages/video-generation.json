@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:video-generation",
   "domain": "artificial-intelligence",
-  "definition": "Video generation is the AI-driven synthesis of temporally coherent video sequences from text prompts, images, or other conditioning inputs using generative models such as diffusion or transformer architectures.",
+  "definition": "Video generation is the AI-driven synthesis of temporally coherent video sequences from text prompts, images, or other conditioning inputs using generative models such as latent diffusion or transformer architectures. Beyond static spatial coherence, video generation must maintain temporal consistency across frames, respect physical motion dynamics, and handle variable-length sequences, making it substantially more constrained than image generation. Modern approaches typically encode video into a compressed latent space, apply a diffusion or autoregressive process in that space, and decode back to pixel space, with text conditioning provided via a cross-attention mechanism fed by a text encoder.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-application",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:text-encoder",
+        "label": "Text Encoder"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "id": "urn:ngm:class:latent-diffusion",
+        "label": "Latent Diffusion"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai",
+        "label": "Multimodal AI"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

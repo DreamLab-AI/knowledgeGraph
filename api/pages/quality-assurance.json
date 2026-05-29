@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:quality-assurance",
   "domain": "infrastructure",
-  "definition": "Quality Assurance is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Quality Assurance (QA) is the systematic process of verifying that software systems and AI models meet defined requirements and quality standards through structured testing, validation, and review activities. In AI contexts, QA extends to evaluating model performance, fairness, robustness, and safety, encompassing techniques such as unit testing, integration testing, adversarial testing, and continuous monitoring in production.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-software-engineering",
@@ -14,7 +14,7 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,11 +23,34 @@
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:software-testing",
+        "label": "Software Testing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:adversarial-testing",
+        "label": "Adversarial Testing"
+      },
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

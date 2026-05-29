@@ -7,7 +7,10 @@
   - belongs-to-domain:: [[BlockchainDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires**: Smart Contract (consent automation), Distributed Ledger (immutable audit trail), Access Control (patient-controlled permissions)
+  - **uses**: Verifiable Credentials (identity attestation), Encryption (data protection), Privacy By Design (GDPR/HIPAA compliance architecture)
+  - **enables**: Interoperability (cross-provider data exchange)
+  - **relatedTo**: Self Sovereign Identity (patient-owned identity)
 
 - ### Content
   - Blockchain-based electronic health record (EHR) systems address critical healthcare data fragmentation challenges where nearly **20% of organisational patient records are duplicates** and provider directory inaccuracies affect **52.2% of locations**, creating inefficiencies costing the U.S. healthcare system **over £30 billion annually**. By employing distributed ledger technology with patient-controlled consent management through smart contracts, blockchain implementations enable secure data sharing across healthcare providers whilst maintaining regulatory compliance and reducing the staggering costs of data breaches that reached **275-277 million records** compromised in 2024 alone.

@@ -70,9 +70,11 @@ public:: true
   "@id": "urn:ngm:class:rendering-engine",
   "@type": "Class",
   "label": "Rendering Engine",
-  "definition": "A rendering engine is software that generates 2D images or animations from 3D scene descriptions through rasterisation, ray tracing, or hybrid approaches.",
+  "definition": "A rendering engine is a software system that generates 2D images or animations from 3D scene descriptions through rasterisation, ray tracing, or hybrid pipelines. Modern real-time engines such as Unreal Engine 5 and Unity combine global illumination, virtualised geometry, neural shaders, and AI-driven upscaling to produce cinematic-quality visuals at interactive frame rates. They serve as the foundational compute layer for games, virtual reality, film production, and spatial-computing applications.",
   "domain": "spatial-computing",
   "maturity": "emerging",
+  "qualityScore": 0.75,
+  "quality": 0.75,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-display-and-rendering",
@@ -83,7 +85,30 @@ public:: true
       "label": "Computer Graphics"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:rendering-pipeline", "label": "Rendering Pipeline"},
+      {"@id": "urn:ngm:class:shader", "label": "Shader"},
+      {"@id": "urn:ngm:class:scene-graph", "label": "Scene Graph"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:ray-tracing", "label": "Ray Tracing"},
+      {"@id": "urn:ngm:class:global-illumination", "label": "Global Illumination"},
+      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
+      {"@id": "urn:ngm:class:graphics-api", "label": "Graphics API"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:virtual-reality-vr", "label": "Virtual Reality (VR)"},
+      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
+      {"@id": "urn:ngm:class:film-production", "label": "Film Production"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:gaussian-splatting", "label": "Gaussian Splatting"},
+      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"},
+      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
+      {"@id": "urn:ngm:class:rendering-technique", "label": "Rendering Technique"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

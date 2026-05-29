@@ -7,7 +7,10 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires**: Transformer Architecture, Language Modeling — RoBERTa is built directly on the transformer encoder and relies on masked language-model pre-training.
+  - **enables**: Sentiment Analysis, Named Entity Recognition — the improved representations transfer effectively to these downstream NLP tasks.
+  - **uses**: Transfer Learning, Fine Tuning — the standard deployment pattern is to fine-tune RoBERTa on labelled task data.
+  - **contrastsWith**: ALBERT — ALBERT pursues parameter efficiency via factorised embeddings and cross-layer sharing, whereas RoBERTa optimises training procedure without altering architecture.
 
 - ### Content
   - Robustly Optimised BERT Approach: an optimised version of BERT that removes next sentence prediction, trains with larger batches and learning rates, and uses dynamic masking to improve performance.

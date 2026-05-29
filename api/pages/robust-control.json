@@ -5,30 +5,62 @@
   "public": true,
   "classIri": "urn:ngm:class:robust-control",
   "domain": "spatial-computing",
-  "definition": "Robust Control is a type of Control Algorithms in the spatial computing domain.",
+  "definition": "Robust Control is a branch of control theory that designs controllers guaranteeing stable and acceptable performance across a bounded set of model uncertainties and disturbances. It formalises worst-case design requirements through H-infinity and H2 optimisation frameworks, ensuring actuated systems remain within specification even when plant parameters deviate from nominal values.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
     },
     {
-      "id": "urn:ngm:class:control-algorithms",
+      "id": "urn:ngm:class:control-algorithm",
       "label": "ControlAlgorithms"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:motion-control",
+        "label": "Motion Control"
+      },
+      {
+        "id": "urn:ngm:class:robot-control",
+        "label": "Robot Control"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:adaptive-control",
+        "label": "Adaptive Control"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      },
+      {
+        "id": "urn:ngm:class:pid-control",
+        "label": "PID Control"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:robot-safety",
+        "label": "Robot Safety"
+      },
+      {
+        "id": "urn:ngm:class:trajectory-control",
+        "label": "Trajectory Control"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": []

@@ -5,7 +5,10 @@
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **relatedTo** → [[AI Governance]], [[AI Impact Assessment]]
+  - **hasPart** → [[AI User]], [[AI Operator]], [[AI Provider]]
+  - **requires** → [[Accountability]], [[Transparency]]
+  - **supports** → [[Fairness]], [[Governance Framework]]
 - ### Content
   - Any individual, group, organisation, or entity that has an interest in, is affected by, influences, or holds rights regarding an artificial intelligence system throughout its lifecycle, including those who develop, deploy, operate, use, regulate, are impacted by, or hold accountability for AI systems, as well as broader society and communities whose interests may be affected by AI system design, deployment, or outcomes, encompassing both direct participants in AI value chains and indirect parties with legitimate concerns about AI systems' societal implications.
 		- ## Timing and how to find us.

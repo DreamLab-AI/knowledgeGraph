@@ -37,15 +37,29 @@ public:: true
   "@id": "urn:ngm:class:spatial-data-structure",
   "@type": "Class",
   "label": "Spatial Data Structure",
-  "definition": "Spatial Data Structure is a spatial computing concept and a type of spatial-computing.",
+  "definition": "A Spatial Data Structure is a data organisation scheme that indexes geometric or geographic information to enable efficient queries over position, proximity, and containment. Examples include octrees, k-d trees, BVH hierarchies, R-trees, and spatial hash grids, each offering different trade-offs between build cost, query performance, and dynamic update capability for real-time 3D applications.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-display-and-rendering",
       "label": "Display and Rendering"
     }
   ],
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:collision-detection", "label": "Collision Detection"},
+      {"@id": "urn:ngm:class:ray-tracing", "label": "Ray Tracing"},
+      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:scene-graph", "label": "Scene Graph"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:physics-simulation", "label": "Physics Simulation"},
+      {"@id": "urn:ngm:class:spatial-mapping", "label": "Spatial Mapping"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -76,14 +90,19 @@ public:: true
 
 
 - ### Definition
-  - SpatialDataStructure is a concept within the ngm domain.
+  - A Spatial Data Structure is a data organisation scheme that indexes geometric or geographic information to enable efficient queries over position, proximity, and containment. Examples include octrees, k-d trees, BVH hierarchies, R-trees, and spatial hash grids, each offering different trade-offs between build cost, query performance, and dynamic update capability for real-time 3D applications.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:SpatialDataStructure
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - enables [[Collision Detection]]
+  - enables [[Ray Tracing]]
+  - enables [[Real-Time Rendering]]
+  - uses [[Scene Graph]]
+  - relatedTo [[Physics Simulation]]
+  - relatedTo [[Spatial Mapping]]
 
 - ### Content
   # SpatialDataStructure

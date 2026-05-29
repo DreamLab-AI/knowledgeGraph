@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:virtual-group-dynamics",
   "domain": "spatial-computing",
-  "definition": "Virtual Group Dynamics is a spatial computing concept and a type of Metaverse.",
+  "definition": "The psychological and behavioural patterns of interaction, role formation, norm development, decision-making, conflict, and cohesion within groups operating in virtual environments, shaped by unique affordances of digital mediation such as anonymity, persistence, and spatial distribution. Key phenomena include the online disinhibition effect, avatar-mediated identity, emergent leadership hierarchies, and scalable broadcast communication structures.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -17,12 +17,26 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      },
+      {
+        "id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -30,8 +44,22 @@
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:social-presence",
+        "label": "Social Presence"
+      },
+      {
+        "id": "urn:ngm:class:proteus-effect",
+        "label": "Proteus Effect"
+      }
+    ]
   },
   "wikilinks": [
     {

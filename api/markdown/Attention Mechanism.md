@@ -54,9 +54,9 @@ public:: true
   "@id": "urn:ngm:class:attention-mechanism",
   "@type": "Class",
   "label": "Attention Mechanism",
-  "definition": "Attention Mechanism is a artificial intelligence concept and a type of Neural Network Component.",
+  "definition": "An Attention Mechanism is a neural network component that enables models to dynamically weight the relevance of different input positions when producing each output element, computing weighted combinations based on learned similarity scores. Originally introduced for sequence-to-sequence machine translation, self-attention and multi-head attention are now the core computational primitives of transformer architectures, enabling parallel processing of sequences and capturing long-range dependencies that recurrent models struggle with.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-model-architecture",
@@ -67,6 +67,21 @@ public:: true
       "label": "Neural Network Component"
     }
   ],
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -118,7 +133,7 @@ public:: true
 
 
 - ### Definition
-  - ### Primary Definition
+  - An Attention Mechanism is a neural network component that enables models to dynamically weight the relevance of different input positions when producing each output element, computing weighted combinations based on learned similarity scores. Originally introduced for sequence-to-sequence machine translation, self-attention and multi-head attention are now the core computational primitives of transformer architectures, enabling parallel processing of sequences and capturing long-range dependencies that recurrent models struggle with.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:AttentionMechanism
@@ -127,6 +142,11 @@ public:: true
 
 - ### Relationships
   - bridges-to:: [[Telecollaboration]] (domain: tc)
+  - partOf:: [[Transformer Architecture]]
+  - enables:: [[Large Language Models]]
+  - enables:: [[Natural Language Processing]]
+  - uses:: [[Neural Network]]
+  - relatedTo:: [[Explainable AI]]
 
 - ### Content
   - ### Primary Definition

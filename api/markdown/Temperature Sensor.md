@@ -42,16 +42,30 @@ public:: true
   "@id": "urn:ngm:class:temperature-sensor",
   "@type": "Class",
   "label": "Temperature Sensor",
-  "definition": "Temperature Sensor is a robotics and autonomous systems concept and a type of robotics.",
+  "definition": "A temperature sensor is a transducer that converts thermal energy into an electrical signal, enabling robotic and autonomous systems to monitor ambient, surface, or internal temperatures. Common types include thermocouples, RTDs, and infrared sensors, each suited to different accuracy, range, and response-time requirements in industrial, healthcare, and field robotics.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-perception",
       "label": "Perception and Sensing"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:robo-perception", "label": "Perception and Sensing"},
+      {"@id": "urn:ngm:class:robotic-system", "label": "Robotic System"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:sensor", "label": "Sensor"},
+      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
+      {"@id": "urn:ngm:class:sensor-data", "label": "Sensor Data"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:sensor-technology", "label": "Sensor Technology"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -87,6 +101,8 @@ public:: true
 
 
 - ### Definition
+  A temperature sensor is a transducer that converts thermal energy into an electrical signal, enabling robotic and autonomous systems to monitor ambient, surface, or internal temperatures. Common types include thermocouples, RTDs, and infrared sensors, each suited to different accuracy, range, and response-time requirements in industrial, healthcare, and field robotics.
+
   - ### Primary Definition
 
 - ### Semantic Classification
@@ -95,7 +111,9 @@ public:: true
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **partOf**: Perception and Sensing (robo-perception), Robotic System
+  - **relatedTo**: Sensor, Sensor Fusion, Sensor Data
+  - **uses**: Sensor Technology
 
 - ### Content
   - ### Primary Definition

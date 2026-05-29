@@ -5,33 +5,104 @@
   "public": true,
   "classIri": "urn:ngm:class:intelligent-npc",
   "domain": "spatial-computing",
-  "definition": "Non-player characters with AI-driven behavior.",
+  "definition": "An Intelligent NPC (Non-Player Character) is a virtual agent in a game, simulation, or metaverse environment whose behaviour is driven by AI systems \u2014 typically combining perception, reasoning, planning, and natural-language interaction \u2014 rather than purely scripted or rule-based finite state machines. Modern intelligent NPCs leverage large language models for open-ended dialogue, reinforcement learning for adaptive combat and movement, and behavioural AI architectures (behaviour trees, goal-oriented action planning) to produce emergent, contextually appropriate responses to player actions and environmental stimuli. They form the interactive population of persistent virtual worlds and are central to immersive narrative experiences.",
   "subClassOf": [
-    {
-      "id": "urn:ngm:class:sc-platform-and-environment",
-      "label": "Platform and Environment"
-    },
     {
       "id": "urn:ngm:class:digital-humans",
       "label": "Digital Humans"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:dialogue-system",
+        "label": "Dialogue System"
+      },
+      {
+        "id": "urn:ngm:class:behavioral-learning",
+        "label": "Behavioral Learning"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:behavioral-modeling",
+        "label": "Behavioral Modeling"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:interactive-storytelling",
+        "label": "Interactive Storytelling"
+      },
+      {
+        "id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "id": "urn:ngm:class:npc-interaction",
+        "label": "NPC Interaction"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "id": "urn:ngm:class:pathfinding-algorithm",
+        "label": "Pathfinding Algorithm"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      },
+      {
+        "id": "urn:ngm:class:character-model",
+        "label": "Character Model"
+      },
+      {
+        "id": "urn:ngm:class:procedural-content-generation",
+        "label": "Procedural Content Generation"
+      },
+      {
+        "id": "urn:ngm:class:game-mechanics",
+        "label": "Game Mechanics"
+      }
+    ]
   },
   "wikilinks": [
     {

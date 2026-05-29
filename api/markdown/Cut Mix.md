@@ -48,14 +48,29 @@ public:: true
   "label": "Cut Mix",
   "definition": "A data augmentation technique that creates training examples by cutting and pasting patches between images, with labels mixed proportionally to the patch areas. CutMix improves model robustness and localisation ability by forcing attention to less discriminative regions.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:data-augmentation-strategies", "label": "Data Augmentation Strategies"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:training-data", "label": "Training Data"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:adversarial-robustness", "label": "Adversarial Robustness"},
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -104,7 +119,10 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **partOf**: Data Augmentation Strategies (CutMix is one specialised technique within the broader augmentation family)
+  - **requires**: Training Data (patch-cutting operates on existing labelled image datasets)
+  - **enables**: Adversarial Robustness, Computer Vision (improved generalisation and localisation accuracy)
+  - **uses**: Deep Learning (applied within neural network training loops)
 
 - ### Content
   - A data augmentation technique that creates training examples by cutting and pasting patches between images, with labels mixed proportionally to the patch areas. CutMix improves model robustness and localisation ability by forcing attention to less discriminative regions.

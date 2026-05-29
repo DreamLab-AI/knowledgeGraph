@@ -46,20 +46,56 @@ public:: true
   "@id": "urn:ngm:class:digital-human-technology",
   "@type": "Class",
   "label": "Digital Human Technology",
-  "definition": "Digital Human Technology is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "A class of technologies for creating photorealistic or stylised computer-generated human representations, encompassing 3D body and face modelling, motion capture-driven animation, procedural skin and cloth simulation, and real-time rendering pipelines. Digital human technology enables believable avatars, virtual actors, and AI-driven conversational agents in spatial computing, entertainment, and training applications.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
     }
   ],
-  "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:digital-humans",
+        "label": "Digital Humans"
+      },
+      {
+        "@id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      },
+      {
+        "@id": "urn:ngm:class:animation-software",
+        "label": "Animation Software"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:rendering-engine",
+        "label": "Rendering Engine"
+      },
+      {
+        "@id": "urn:ngm:class:computer-graphics",
+        "label": "Computer Graphics"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:avatar-creation",
+        "label": "Avatar Creation"
+      },
+      {
+        "@id": "urn:ngm:class:character-model",
+        "label": "Character Model"
+      }
+    ]
   }
 }
 ```
@@ -96,7 +132,7 @@ public:: true
 
 
 - ### Definition
-  - Digital Human Technology is a concept within the metaverse domain. Further enrichment pending.
+  - A class of technologies for creating photorealistic or stylised computer-generated human representations, encompassing 3D body and face modelling, motion capture-driven animation, procedural skin and cloth simulation, and real-time rendering pipelines. Digital human technology enables believable avatars, virtual actors, and AI-driven conversational agents in spatial computing, entertainment, and training applications.
 
 bridges-to:: [[DID Nostr Identity]]
 
@@ -105,7 +141,9 @@ bridges-to:: [[DID Nostr Identity]]
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Has part [[Digital Humans]], [[Motion Capture]], [[Animation Software]]
+  - Uses [[Avatar Creation]], [[Character Model]]
+  - Requires [[Rendering Engine]], [[Computer Graphics]]
 
 - ### Content
 

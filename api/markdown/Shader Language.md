@@ -37,15 +37,29 @@ public:: true
   "@id": "urn:ngm:class:shader-language",
   "@type": "Class",
   "label": "Shader Language",
-  "definition": "Shader Language is a spatial computing concept and a type of spatial-computing.",
+  "definition": "A Shader Language is a domain-specific programming language designed for expressing GPU-executable algorithms that control the stages of a rendering pipeline. Major shader languages include GLSL for OpenGL/WebGL, HLSL for DirectX, Metal Shading Language for Apple platforms, and WGSL for WebGPU. They support specialised data types such as vectors and matrices, and are compiled to intermediate representations like SPIR-V for hardware-agnostic deployment.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-display-and-rendering",
       "label": "Display and Rendering"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:compute-shader", "label": "Compute Shader"},
+      {"@id": "urn:ngm:class:vertex-shader", "label": "Vertex Shader"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:rendering-pipeline", "label": "Rendering Pipeline"},
+      {"@id": "urn:ngm:class:physically-based-rendering", "label": "Physically Based Rendering"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
+      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -83,7 +97,12 @@ public:: true
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses [[Compute Shader]]
+  - uses [[Vertex Shader]]
+  - enables [[Rendering Pipeline]]
+  - enables [[Physically Based Rendering]]
+  - relatedTo [[GPU Compute]]
+  - relatedTo [[Real-Time Rendering]]
 
 - ### Content
   # ShaderLanguage

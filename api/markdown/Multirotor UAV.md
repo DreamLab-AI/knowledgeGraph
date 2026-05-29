@@ -46,7 +46,7 @@ public:: true
   "@id": "urn:ngm:class:multirotor-uav",
   "@type": "Class",
   "label": "Multirotor UAV",
-  "definition": "Multirotor UAV achieves lift through multiple propellers driven by motors.",
+  "definition": "A Multirotor UAV is an unmanned aerial vehicle that achieves lift and attitude control through three or more independently driven rotors. Differential rotor speed adjustment enables hover, translation, yaw, and agile manoeuvring without mechanical pitch or collective mechanisms, making multirotors highly manoeuvrable platforms suited to inspection, aerial photography, payload delivery, and search-and-rescue operations.",
   "domain": "robotics",
   "maturity": "established",
   "subClassOf": [
@@ -59,7 +59,25 @@ public:: true
       "label": "Aerial Robot"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:state-space-control", "label": "State Space Control"},
+      {"@id": "urn:ngm:class:pid-controller", "label": "Pid Controller"},
+      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
+      {"@id": "urn:ngm:class:3-d-li-dar", "label": "3D LiDAR"},
+      {"@id": "urn:ngm:class:kalman-filter", "label": "Kalman Filter"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
+      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:swarm-robotics", "label": "Swarm Robotics"},
+      {"@id": "urn:ngm:class:path-planning", "label": "Path Planning"},
+      {"@id": "urn:ngm:class:odometry", "label": "Odometry"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

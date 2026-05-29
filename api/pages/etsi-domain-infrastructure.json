@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:etsi-domain-infrastructure",
   "domain": "infrastructure",
-  "definition": "An ETSI governance domain governing foundational systems, networks, and computational resources enabling Metaverse platforms at scale.",
+  "definition": "An ETSI governance domain governing the foundational systems, networks, and computational resources enabling Metaverse platforms at scale. It encompasses network infrastructure, cloud and edge computing, data centres, content delivery, latency management, and hardware abstraction, providing reliable, performant, and secure technical foundations for distributed virtual environment operation.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
@@ -13,12 +13,38 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network-cdn",
+        "label": "Content Delivery Network (CDN)"
+      },
+      {
+        "id": "urn:ngm:class:latency-management-protocol",
+        "label": "Latency Management Protocol"
+      },
+      {
+        "id": "urn:ngm:class:networking-layer",
+        "label": "Networking Layer"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:metaverse-architecture-stack",
+        "label": "Metaverse Architecture Stack"
+      },
+      {
+        "id": "urn:ngm:class:virtual-environment",
+        "label": "Virtual Environment"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +53,16 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:etsi-domain-infrastructure-data",
+        "label": "ETSI_Domain_Infrastructure_Data"
+      },
+      {
+        "id": "urn:ngm:class:etsidomain-classification",
+        "label": "ETSIDomainClassification"
+      }
+    ]
   },
   "wikilinks": [
     {

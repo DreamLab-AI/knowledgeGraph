@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:therapeutic-vr",
   "@type": "Class",
   "label": "Therapeutic VR",
-  "definition": "The application of virtual reality technology for clinical therapeutic purposes, including treatment of mental health conditions, pain management, rehabilitation, and behavioral health interventions through immersive, interactive digital environments.",
+  "definition": "The clinical application of virtual reality technology for treatment and rehabilitation purposes, including exposure therapy for phobias and PTSD, distraction-based pain management, cognitive behavioural therapy delivered in immersive digital environments, and motor rehabilitation. FDA regulatory authorisation and CMS billing codes established from 2021 onwards have formalised therapeutic VR as a reimbursable clinical modality.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -59,11 +60,44 @@ public:: true
       "label": "Virtual Reality Applications"
     }
   ],
-  "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:virtual-reality-platform",
+        "label": "Virtual Reality Platform"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:metaverse-and-spatial-risks",
+        "label": "Metaverse and Spatial Risks"
+      },
+      {
+        "@id": "urn:ngm:class:avatar-system",
+        "label": "Avatar System"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:user-safety",
+        "label": "User Safety"
+      }
+    ]
   }
 }
 ```
@@ -109,6 +143,10 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Virtual Reality Applications]]
+  - Uses [[Virtual Reality]], [[Haptic Feedback]]
+  - Requires [[Virtual Reality Platform]]
+  - Supports [[User Safety]]
+  - Related to [[Metaverse and Spatial Risks]], [[Avatar System]]
 
 - ### Content
 

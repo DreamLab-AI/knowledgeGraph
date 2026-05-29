@@ -59,6 +59,20 @@ public:: true
       "label": "Tourism Industry"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
+      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:volumetric-capture", "label": "Volumetric Capture"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}
+    ]
+  },
+  "maturity": "emerging",
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
@@ -109,6 +123,11 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Tourism Industry]]
+  - requires [[Virtual Reality]]
+  - requires [[Real-Time Rendering]]
+  - uses [[Volumetric Capture]]
+  - uses [[Digital Twin]]
+  - partOf [[Metaverse]]
 
 - ### Content
 

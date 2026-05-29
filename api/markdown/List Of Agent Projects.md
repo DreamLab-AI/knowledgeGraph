@@ -33,15 +33,30 @@ public:: true
   "@id": "urn:ngm:class:list-of-agent-projects",
   "@type": "Class",
   "label": "List Of Agent Projects",
-  "definition": "List Of Agent Projects is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "A curated catalogue of open-source and commercial autonomous agent frameworks and projects, spanning general-purpose agents (AutoGPT, BabyAGI, CAMEL), coding agents (GPT Engineer, SWE-Agent), productivity agents, research agents, and DIY framework scaffolds (CrewAI, MetaGPT, AutoGen). The list provides practitioners with an entry point into the rapidly expanding agentic AI ecosystem.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-application",
       "label": "AI Application"
     }
   ],
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:autonomous-agent", "label": "Autonomous Agent"},
+      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
+      {"@id": "urn:ngm:class:tool-use", "label": "Tool Use"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -72,14 +87,16 @@ public:: true
 
 
 - ### Definition
-  - List Of Agent Projects is a concept within the ngm domain.
+  - A curated catalogue of open-source and commercial autonomous agent frameworks and projects, spanning general-purpose agents (AutoGPT, BabyAGI, CAMEL), coding agents (GPT Engineer, SWE-Agent), productivity agents, research agents, and DIY framework scaffolds (CrewAI, MetaGPT, AutoGen). The list provides practitioners with an entry point into the rapidly expanding agentic AI ecosystem.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:ListOfAgentProjects
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart:: [[Autonomous Agent]], [[Agentic AI]]
+  - uses:: [[Large Language Models]], [[Tool Use]]
+  - relatedTo:: [[Reinforcement Learning]], [[Natural Language Processing]]
 
 - ### Content
   - Agent Projects

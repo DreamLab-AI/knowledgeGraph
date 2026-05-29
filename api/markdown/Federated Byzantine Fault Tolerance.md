@@ -46,7 +46,7 @@ public:: true
   "@id": "urn:ngm:class:federated-byzantine-fault-tolerance",
   "@type": "Class",
   "label": "Federated Byzantine Fault Tolerance",
-  "definition": "A consensus mechanism enhancing scalability, speed, and security of blockchain networks by using a trusted set of federated nodes for consensus rather than the entire network.",
+  "definition": "Federated Byzantine Fault Tolerance (FBFT) is a consensus mechanism in which each node independently selects a trusted subset of peers—its quorum slice—forming overlapping quorums that propagate agreement without requiring global participation or expensive proof-of-work computation. Unlike classic BFT protocols that demand a fixed, known validator set, FBFT allows open membership: any node may join by declaring its quorum slices, and safety is guaranteed as long as quorum intersections contain at least one correct node. FBFT underpins the Stellar Consensus Protocol (SCP), enabling low-latency, high-throughput cross-border payment settlement with safety and liveness properties derived from quorum-intersection analysis.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -59,7 +59,33 @@ public:: true
       "label": "Byzantine Fault Tolerance"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:node", "label": "Node"},
+      {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"},
+      {"@id": "urn:ngm:class:gossip-protocol", "label": "Gossip Protocol"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:finality", "label": "Finality"},
+      {"@id": "urn:ngm:class:transaction", "label": "Transaction"},
+      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
+      {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
+      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:block", "label": "Block"},
+      {"@id": "urn:ngm:class:security", "label": "Security"},
+      {"@id": "urn:ngm:class:distributed-system", "label": "Distributed System"}
+    ]
+  },
+  "qualityScore": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

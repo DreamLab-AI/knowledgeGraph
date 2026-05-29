@@ -90,10 +90,15 @@ public:: true
   "@id": "urn:ngm:class:prompt-tuning",
   "@type": "Class",
   "label": "Prompt Tuning",
-  "definition": "A parameter-efficient fine-tuning mod that learns continuous prompt embeddings prepended to the input whilst keeping the pre-trained model frozen. Prompt tuning optimises task-specific soft prompts in the embedding space rather than modifying model weights.",
+  "definition": "Prompt Tuning is a parameter-efficient fine-tuning method that learns continuous soft prompt embeddings prepended to the input sequence, whilst keeping all pre-trained model weights frozen. It optimises task-specific prompts in the embedding space using gradient descent, requiring as little as 0.01% of model parameters and enabling efficient multi-task deployment from a single frozen backbone.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
+    {
+      "@id": "urn:ngm:class:parameter-efficient-fine-tuning",
+      "label": "Parameter-Efficient Fine-Tuning"
+    },
     {
       "@id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
@@ -104,6 +109,40 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:prefix-tuning",
+        "label": "Prefix Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:adapter-modules",
+        "label": "Adapter Modules"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:language-modeling",
+        "label": "Language Modeling"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:parameter-efficient-fine-tuning",
+        "label": "Parameter-Efficient Fine-Tuning"
+      }
+    ]
   }
 }
 ```
@@ -203,7 +242,12 @@ public:: true
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Part Of [[Parameter-Efficient Fine-Tuning]]
+  - Uses [[Language Modeling]]
+  - Contrasts With [[Prefix Tuning]]
+  - Contrasts With [[Adapter Modules]]
+  - Related To [[Prompt Engineering]]
+  - Related To [[Fine Tuning]]
 
 - ### Content
   - A parameter-efficient fine-tuning method that learns continuous prompt embeddings prepended to the input whilst keeping the pre-trained model frozen. Prompt tuning optimises task-specific soft prompts in the embedding space rather than modifying model weights.

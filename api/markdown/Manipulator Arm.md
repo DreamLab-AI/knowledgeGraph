@@ -120,7 +120,8 @@ public:: true
   "label": "Manipulator Arm",
   "definition": "A multi-jointed mechanical or virtual robotic arm integrated with avatars or immersive systems to enable precise object manipulation and physical interaction within virtual or mixed reality environments through control systems, haptic feedback, and inverse kinematics algorithms.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-interaction",
@@ -136,6 +137,48 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "@id": "urn:ngm:class:end-effector",
+        "label": "End Effector"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:motion-control",
+        "label": "Motion Control"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:collision-avoidance",
+        "label": "Collision Avoidance"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ]
   }
 }
 ```
@@ -270,7 +313,14 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Requires: [[Inverse Kinematics]]
+  - Requires: [[Motion Control]]
+  - Uses: [[Computer Vision]]
+  - Uses: [[Haptic Feedback]]
+  - Uses: [[Reinforcement Learning]]
+  - Has Part: [[Actuator]]
+  - Has Part: [[End Effector]]
+  - Enables: [[Collision Avoidance]]
 
 - ### Content
   - Multi-jointed mechanical or virtual robotic arm integrated with avatars enabling precise object manipulation and physical interaction within virtual or mixed reality environments. Manipulator arms combine robotics hardware (mechanical joints, actuators, end-effectors), computer vision guidance, and AI-driven control enabling naturalistic manipulation through inverse kinematics algorithms and haptic feedback. Deployed in surgical robotics, laboratory automation, pick-and-place operations, and immersive training addressing latency, haptic fidelity, and standardised physical-virtual interaction interfaces.

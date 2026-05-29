@@ -1,5 +1,5 @@
 - ### Definition
-  - Sink Mechanism is a concept within the bc domain.
+  - A Sink Mechanism is an economic design pattern that permanently removes virtual currency, tokens, or items from circulation in order to counterbalance sources of supply and maintain economic equilibrium, preventing hyperinflation in metaverse economies, play-to-earn platforms, and DeFi protocols. Effective sinks are integrated into desirable activities — such as cosmetic purchases, crafting costs, or transaction fees — so that value removal feels voluntary and rewarding to participants.
 
 - ### Semantic Classification
   - owl-class:: blockchain:SinkMechanism
@@ -7,6 +7,10 @@
 
 - ### Relationships
   - is-subclass-of:: [[Blockchain]]
+  - **partOf**: Virtual Economy — sink mechanisms are a structural component of any sustainable virtual economy; Tokenomics — sink design is a central concern of tokenomic engineering.
+  - **enables**: Inflation Control — by permanently removing supply, sinks counteract inflationary pressure.
+  - **requires**: Virtual Currency — a sink operates on a currency or token that exists within the economy; Economic Mechanism — a sink is a specific instance of an economic mechanism.
+  - **contrastsWith**: Inflation — hyperinflation is the failure mode that sink mechanisms are designed to prevent.
 
 - ### Content
 

@@ -42,7 +42,7 @@ public:: true
   "@id": "urn:ngm:class:named-entity",
   "@type": "Class",
   "label": "Named Entity",
-  "definition": "Person, organization, location, or other named entity.",
+  "definition": "A Named Entity is a real-world object or concept denoted by a proper noun—typically a person, organisation, location, geopolitical entity, date, time expression, monetary value, or product—that can be identified and classified within text by a named-entity recognition system. Named entities form the primary subjects, objects, and contextual anchors of factual statements, making their accurate identification a prerequisite for downstream information-extraction, relation-extraction, question-answering, and knowledge-graph construction tasks. The boundary and category of a named entity are determined by an annotation schema and domain ontology, so the same text span may be categorised differently across biomedical, legal, and news domains.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -51,7 +51,30 @@ public:: true
       "label": "AI Technique"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
+      {"@id": "urn:ngm:class:named-entity-recognition", "label": "Named Entity Recognition"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
+      {"@id": "urn:ngm:class:knowledge-base", "label": "Knowledge Base"},
+      {"@id": "urn:ngm:class:ontology", "label": "Ontology"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:tokenization", "label": "Tokenization"},
+      {"@id": "urn:ngm:class:conditional-random-field", "label": "Conditional Random Field"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:vocabulary", "label": "Vocabulary"},
+      {"@id": "urn:ngm:class:token", "label": "Token"},
+      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
+      {"@id": "urn:ngm:class:feature-engineering", "label": "Feature Engineering"},
+      {"@id": "urn:ngm:class:pattern-recognition", "label": "Pattern Recognition"}
+    ]
+  },
+  "qualityScore": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

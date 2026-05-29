@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:knowledge-management",
   "domain": "spatial-computing",
-  "definition": "Knowledge Management is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Knowledge Management is the systematic practice of capturing, organising, sharing, and applying the collective knowledge of an organisation or platform to improve decision-making and innovation. In AI-augmented and spatial computing contexts it encompasses knowledge graphs, ontologies, semantic search, and retrieval-augmented generation pipelines that make tacit and explicit knowledge discoverable and reusable by both human users and autonomous agents.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -14,20 +14,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      }
+    ]
   },
   "wikilinks": [
     {

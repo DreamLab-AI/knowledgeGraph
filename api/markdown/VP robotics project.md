@@ -33,16 +33,30 @@ public:: true
   "@id": "urn:ngm:class:vp-robotics-project",
   "@type": "Class",
   "label": "VP robotics project",
-  "definition": "VP robotics project is a robotics and autonomous systems concept and a type of robotics.",
+  "definition": "The VP Robotics Project (VisionFlow) is a feasibility study investigating the integration of robotic camera control with machine learning and virtual production workflows. It inverts conventional pre-visualisation pipelines by deriving scene-driven camera motion from AI-generated content, combining open-source robotics software with parallax-plates-as-a-service delivery for the film and television industry.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-actuation-and-control",
       "label": "Actuation and Control"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:virtual-production", "label": "Virtual Production"},
+      {"@id": "urn:ngm:class:virtual-set-design", "label": "Virtual Set Design"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:motion-capture", "label": "Motion Capture"},
+      {"@id": "urn:ngm:class:robotics-control", "label": "Robotics Control"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -72,14 +86,16 @@ public:: true
 
 
 - ### Definition
-  - VP robotics project is a concept within the ngm domain.
+  - The **VP Robotics Project** (VisionFlow) is a feasibility study investigating the integration of robotic camera control with machine learning and virtual production workflows. It inverts conventional pre-visualisation pipelines by deriving scene-driven camera motion from AI-generated content, combining open-source robotics software with parallax-plates-as-a-service delivery for the film and television industry.
 
 - ### Semantic Classification
   - owl-class:: robotics:VPRoboticsProject
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: [[Robotics]], [[Machine Learning]] — robotic camera systems are directed by ML-derived motion paths from scene analysis
+  - **enables**: [[Virtual Production]], [[Virtual Set Design]] — the project develops workflows directly applicable to virtual production and virtual set creation
+  - **relatedTo**: [[Motion Capture]], [[Robotics Control]] — robotic camera control shares techniques with motion capture rigs and robotics control systems
 
 - ### Content
   - #Public page

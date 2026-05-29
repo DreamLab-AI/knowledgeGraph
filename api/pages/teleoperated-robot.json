@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:teleoperated-robot",
   "domain": "robotics",
-  "definition": "Teleoperated Robot is a robotics and autonomous systems concept and a type of robotics.",
+  "definition": "A Teleoperated Robot is a robotic system remotely controlled by a human operator via a communication link, combining human-level judgement with robotic precision and reach in environments inaccessible or hazardous to people. Key technical dimensions include haptic feedback, anthropomorphic dexterity, immersive operator interfaces (including VR headsets), latency management, and AI-assisted control to reduce operator cognitive load; applications span surgery, nuclear decommissioning, disaster response, and construction.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-human-robot-interaction",
@@ -13,21 +13,53 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "id": "urn:ngm:class:robo-perception",
+        "label": "Perception and Sensing"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:dc-telepresence",
+        "label": "Telepresence"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      },
+      {
+        "id": "urn:ngm:class:immersive-interface",
+        "label": "Immersive Interface"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:robotic-telepresence",
+        "label": "Robotic Telepresence"
+      },
+      {
+        "id": "urn:ngm:class:robo-safety-and-standards",
+        "label": "Safety and Standards"
+      }
+    ]
   },
   "wikilinks": [
     {

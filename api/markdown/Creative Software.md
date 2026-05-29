@@ -46,20 +46,62 @@ public:: true
   "@id": "urn:ngm:class:creative-software",
   "@type": "Class",
   "label": "Creative Software",
-  "definition": "Creative Software is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Application software designed to support artistic, design, and content production workflows, including 3D modelling, animation, compositing, generative art, and interactive experience authoring. In spatial computing contexts, creative software bridges concept and deployment by enabling artists to produce assets compatible with real-time rendering engines and metaverse platforms.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
     }
   ],
-  "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:design-software",
+        "label": "Design Software"
+      },
+      {
+        "@id": "urn:ngm:class:animation-software",
+        "label": "Animation Software"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:3-d-content-generation",
+        "label": "3D Content Generation"
+      },
+      {
+        "@id": "urn:ngm:class:creative-tools",
+        "label": "Creative Tools"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:computer-graphics",
+        "label": "Computer Graphics"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "@id": "urn:ngm:class:rendering-engine",
+        "label": "Rendering Engine"
+      }
+    ]
   }
 }
 ```
@@ -96,14 +138,17 @@ public:: true
 
 
 - ### Definition
-  - Creative Software is a concept within the metaverse domain. Further enrichment pending.
+  - Application software designed to support artistic, design, and content production workflows, including 3D modelling, animation, compositing, generative art, and interactive experience authoring. In spatial computing contexts, creative software bridges concept and deployment by enabling artists to produce assets compatible with real-time rendering engines and metaverse platforms.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:CreativeSoftware
   - owl-role:: concept
 
 - ### Relationships
-  - bridges-to:: [[Computer Vision]]
+  - Has part [[Design Software]], [[Animation Software]]
+  - Uses [[Computer Graphics]], [[Computer Vision]]
+  - Enables [[3D Content Generation]], [[Creative Tools]]
+  - Related to [[Game Engine]], [[Rendering Engine]]
 
 - ### Content
 

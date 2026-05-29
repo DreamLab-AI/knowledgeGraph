@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:life-cycle-assessment",
   "domain": "infrastructure",
-  "definition": "Life Cycle Assessment (LCA) is a systematic methodology for evaluating the environmental impacts of a product or system across its entire lifespan from raw material extraction to end-of-life disposal.",
+  "definition": "Life Cycle Assessment (LCA) is a standardised, systematic methodology (ISO 14040/14044) for compiling and evaluating the inputs, outputs, and potential environmental impacts of a product system across all stages of its life cycle\u2014from raw material acquisition through production, use, and end-of-life treatment. LCA quantifies a range of environmental impact categories including global warming potential (greenhouse gas emissions), acidification, eutrophication, water depletion, and land use, providing a comprehensive evidence base for comparing product alternatives and informing design for environment decisions. The results of LCA studies increasingly feed into ESG reporting, green finance due diligence, and supply chain transparency requirements.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-legal-and-regulatory",
@@ -14,11 +14,25 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:environmental-assessment",
+        "label": "Environmental Assessment"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:carbon-footprint-assessment",
+        "label": "Carbon Footprint Assessment"
+      },
+      {
+        "id": "urn:ngm:class:environmental-sustainability",
+        "label": "Environmental Sustainability"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +41,20 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-traceability",
+        "label": "Supply Chain Traceability"
+      },
+      {
+        "id": "urn:ngm:class:circular-economy",
+        "label": "Circular Economy"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

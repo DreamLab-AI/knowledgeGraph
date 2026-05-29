@@ -54,10 +54,10 @@ public:: true
   "@id": "urn:ngm:class:optimization-algorithms",
   "@type": "Class",
   "label": "Optimization Algorithms",
-  "definition": "Optimization Algorithms in AI are mathematical procedures for minimizing or maximizing objective functions, central to training machine learning models. Gradient-based mods (SGD, Adam, RMSprop, AdaGrad) iteratively update model parameters to minimize loss functions.",
+  "definition": "Mathematical procedures for minimising or maximising objective functions, central to training machine learning models. Gradient-based methods (SGD, Adam, RMSprop, AdaGrad) iteratively update model parameters to reduce loss; advanced techniques encompass momentum-based optimisation, adaptive learning rates, second-order methods (L-BFGS, natural gradient), and gradient-free approaches (evolutionary strategies, Bayesian optimisation), addressing non-convexity, saddle points, and high-dimensional parameter-space challenges.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
-  "quality": 0.35,
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -74,7 +74,21 @@ public:: true
       "@id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
     }
-  ]
+  ],
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"},
+      {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
+      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
+    ]
+  }
 }
 ```
 
@@ -127,7 +141,9 @@ public:: true
   - owl-role:: concept
 
 - ### Relationships
-  - is-subclass-of:: ['owl:Thing']
+  - hasPart: [[Gradient Descent]], [[Backpropagation]]
+  - enables: [[Deep Learning]], [[Fine Tuning]], [[Machine Learning]]
+  - uses: [[Neural Network]]
 
 - ### Content
 

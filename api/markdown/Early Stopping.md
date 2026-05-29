@@ -46,16 +46,32 @@ public:: true
   "@id": "urn:ngm:class:early-stopping",
   "@type": "Class",
   "label": "Early Stopping",
-  "definition": "A regularisation technique that terminates training when validation performance stops improving, preventing overfitting by avoiding overtraining on the training set. Early stopping balances training progress against generalisation to unseen data.",
+  "definition": "A regularisation technique that terminates model training when validation performance ceases to improve for a configurable number of epochs (the patience parameter), preventing overfitting by restoring the best checkpoint before performance degraded. Early stopping balances training progress against generalisation to unseen data and is most effective when combined with other regularisation techniques such as dropout and weight decay.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:regularisation", "label": "Regularisation"},
+      {"@id": "urn:ngm:class:epoch", "label": "Epoch"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:overfitting", "label": "Overfitting"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:hyperparameter", "label": "Hyperparameter"},
+      {"@id": "urn:ngm:class:batch-size", "label": "Batch Size"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -104,7 +120,12 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires** [[Regularisation]] — early stopping is a regularisation technique
+  - **requires** [[Epoch]] — early stopping monitors validation metrics across training epochs
+  - **contrastsWith** [[Overfitting]] — early stopping directly prevents overfitting on training data
+  - **partOf** [[Deep Learning]] — early stopping is a standard component of deep learning training pipelines
+  - **relatedTo** [[Hyperparameter]] — patience and monitor metric are configurable hyperparameters
+  - **relatedTo** [[Batch Size]] — epoch length and batch size jointly determine update frequency
 
 - ### Content
   - A regularisation technique that terminates training when validation performance stops improving, preventing overfitting by avoiding overtraining on the training set. Early stopping balances training progress against generalisation to unseen data.

@@ -37,9 +37,10 @@ public:: true
   "@id": "urn:ngm:class:quality-of-service",
   "@type": "Class",
   "label": "Quality Of Service",
-  "definition": "Quality Of Service is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A set of network management techniques and policies that prioritise, control, and guarantee specified performance characteristics—including latency, jitter, bandwidth, and packet loss—for different traffic classes. In metaverse and real-time XR applications, QoS mechanisms are critical for maintaining acceptable user experience under variable network load.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-network-and-comms",
@@ -51,6 +52,38 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:real-time",
+        "label": "Real Time"
+      },
+      {
+        "@id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "@id": "urn:ngm:class:bandwidth-adaptation",
+        "label": "Bandwidth Adaptation"
+      }
+    ]
   }
 }
 ```
@@ -76,14 +109,19 @@ public:: true
 
 
 - ### Definition
-  - QualityOfService is a concept within the ngm domain.
+  - A set of network management techniques and policies that prioritise, control, and guarantee specified performance characteristics—including latency, jitter, bandwidth, and packet loss—for different traffic classes. In metaverse and real-time XR applications, QoS mechanisms are critical for maintaining acceptable user experience under variable network load.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:QualityOfService
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Requires [[Network Infrastructure]]
+  - Requires [[Network Protocol]]
+  - Enables [[Real Time]]
+  - Enables [[Telecollaboration]]
+  - Related To [[Latency]]
+  - Related To [[Bandwidth Adaptation]]
 
 - ### Content
   # QualityOfService

@@ -44,7 +44,7 @@ public:: true
   "label": "Etsi Metaverse Domain Model",
   "definition": "A conceptual framework developed by ETSI defining the structural organisation, functional components, and interaction patterns of metaverse systems, providing a standardised reference architecture for telecommunications infrastructure supporting persistent, interconnected virtual environments.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -55,6 +55,22 @@ public:: true
       "label": "Domain Model"
     }
   ],
+  "relations": {
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:reference-architecture", "label": "Reference Architecture"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:network-infrastructure", "label": "Network Infrastructure"},
+      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"},
+      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
@@ -99,6 +115,12 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Domain Model]]
+  - standardizedBy [[Reference Architecture]]
+  - hasPart [[Network Infrastructure]]
+  - hasPart [[Digital Identity]]
+  - enables [[Metaverse]]
+  - enables [[Interoperability]]
+  - relatedTo [[Edge Computing]]
 
 - ### Content
 

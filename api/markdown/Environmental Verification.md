@@ -42,20 +42,58 @@ public:: true
   "@id": "urn:ngm:class:environmental-verification",
   "@type": "Class",
   "label": "Environmental Verification",
-  "definition": "Environmental Verification is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "The process of validating that a physical or virtual environment meets defined safety, compliance, or operational standards before allowing XR interactions to proceed. Encompasses spatial boundary checks, hazard detection, and cross-referencing environment state against authoritative registries to ensure user safety and regulatory compliance.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
       "label": "Governance and Safety"
     }
   ],
-  "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:environmental-registry",
+        "label": "Environmental Registry"
+      },
+      {
+        "@id": "urn:ngm:class:verification-standard",
+        "label": "Verification Standard"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:optical-tracking",
+        "label": "Optical Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:calibration-tools",
+        "label": "Calibration Tools"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:xr-runtime-environment",
+        "label": "XR Runtime Environment"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ]
   }
 }
 ```
@@ -87,23 +125,26 @@ public:: true
 
 
 - ### Definition
-  - Environmental Verification is a concept within the metaverse domain. Further enrichment pending.
+  - The process of validating that a physical or virtual environment meets defined safety, compliance, or operational standards before allowing XR interactions to proceed. Encompasses spatial boundary checks, hazard detection, and cross-referencing environment state against authoritative registries to ensure user safety and regulatory compliance.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:EnvironmentalVerification
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses [[Optical Tracking]]
+  - Uses [[SLAM]]
+  - Depends On [[Environmental Registry]]
+  - Depends On [[Verification Standard]]
+  - Supports [[XR Runtime Environment]]
+  - Supports [[Spatial Computing]]
+  - Related To [[Calibration Tools]]
 
 - ### Content
 
   ## Overview
 
-  Environmental Verification represents an abstract concept in the metaverse ontology hierarchy.
-
-  #### Related Concepts
-  - [[owl:Thing]]
+  Environmental verification ensures that XR deployments operate within safe and compliant spatial boundaries. It draws on optical tracking and SLAM to map the current environment in real time and compares the result against registered environment profiles. Failures trigger guardian systems, boundary alerts, or session termination to protect users.
 
 - ### Provenance
   - sources::

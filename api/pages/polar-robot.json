@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:polar-robot",
   "domain": "robotics",
-  "definition": "Polar robot has rotary base, elevated rotary shoulder, and telescoping arm creating spherical workspace.",
+  "definition": "A Polar Robot (also called a spherical robot) is an industrial robot configuration with a rotary base joint that provides 360-degree horizontal rotation, an elevated rotary shoulder joint that tilts the arm up and down, and a linear telescoping arm that extends and retracts radially\u2014producing a spherical working envelope defined in spherical coordinates (radius, polar angle, azimuth). This geometry provides a large workspace volume relative to the physical footprint of the arm and was historically common in early industrial automation for tasks such as die casting and forging, though articulated arm designs have largely supplanted it in modern applications due to superior dexterity.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-robot-type",
@@ -17,21 +17,67 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:robot-joint",
+        "label": "Robot Joint"
+      },
+      {
+        "id": "urn:ngm:class:robot-actuator",
+        "label": "Robot Actuator"
+      }
+    ],
     "requires": [],
     "enables": [],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:robot-component",
+        "label": "Robot Component"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:collaborative-robot",
+        "label": "Collaborative Robot"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:robot-kinematics",
+        "label": "Robot Kinematics"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cylindrical-robot",
+        "label": "Cylindrical Robot"
+      },
+      {
+        "id": "urn:ngm:class:scara-robot",
+        "label": "SCARA Robot"
+      },
+      {
+        "id": "urn:ngm:class:delta-robot",
+        "label": "Delta Robot"
+      },
+      {
+        "id": "urn:ngm:class:robot-hardware",
+        "label": "Robot Hardware"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -58,16 +58,34 @@ public:: true
   "@id": "urn:ngm:class:etl-pipeline",
   "@type": "Class",
   "label": "ETL Pipeline",
-  "definition": "Extract, Transform, Load pipeline that automates the process of moving data from source systems, transforming it for analysis, and loading it into target data stores.",
+  "definition": "An Extract-Transform-Load pipeline that automates the movement of data from heterogeneous source systems, applies normalisation and enrichment transformations, and loads the results into target data stores such as data warehouses or feature stores. ETL pipelines are foundational to data engineering and AI/ML workflows.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:cat-ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
+      "@id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"},
+      {"@id": "urn:ngm:class:data-integration", "label": "Data Integration"},
+      {"@id": "urn:ngm:class:feature-engineering", "label": "Feature Engineering"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:data-lake", "label": "Data Lake"},
+      {"@id": "urn:ngm:class:machine-learning-pipeline", "label": "Machine Learning Pipeline"},
+      {"@id": "urn:ngm:class:feature-store", "label": "Feature Store"},
+      {"@id": "urn:ngm:class:data-versioning", "label": "Data Versioning"},
+      {"@id": "urn:ngm:class:database-system", "label": "Database System"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:predictive-analytics", "label": "Predictive Analytics"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -135,7 +153,9 @@ public:: true
   - bridges-to:: [[Blockchain]], [[Digital Twin]]
 
 - ### Content
-  ETL Pipeline — content pending enrichment.
+  ETL pipelines orchestrate three sequential phases: extraction pulls raw data from heterogeneous sources (databases, APIs, files, streaming systems) into a staging area; transformation applies cleaning, normalisation, deduplication, schema mapping, and enrichment rules; and loading writes the prepared data into target stores such as data warehouses, data lakes, or feature stores.
+
+  Modern ETL architectures increasingly adopt ELT patterns (extract-load-transform) that leverage the compute power of cloud data warehouses for transformation, and support streaming ingestion alongside batch processing. In AI/ML contexts, ETL pipelines are foundational to model training data preparation, feature engineering workflows, and production monitoring data collection.
 
 - ### Provenance
   - sources:: [[Data Engineering]]

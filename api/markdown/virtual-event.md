@@ -1,12 +1,17 @@
 - ### Definition
-  - Virtual Event is a concept within the metaverse domain. Further enrichment pending.
+  - A Virtual Event is a digitally mediated gathering where participants interact in real time within a shared virtual environment, replicating or augmenting the social, educational, or commercial functions of physical events. Virtual events leverage spatial audio, avatar-based presence, interactive objects, and live streaming to create shared experiences for conferences, concerts, exhibitions, and collaborative workshops across geographically distributed participants.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:VirtualEvent
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Virtual Reality]]
+  - requires [[Avatar]]
+  - enables [[Remote Collaboration]]
+  - enables [[Telecollaboration]]
+  - relatedTo [[Immersive Experience]]
+  - relatedTo [[Metaverse]]
 
 - ### Content
 

@@ -37,15 +37,29 @@ public:: true
   "@id": "urn:ngm:class:spatial-web",
   "@type": "Class",
   "label": "Spatial Web",
-  "definition": "Spatial Web is a spatial computing concept and a type of spatial-computing.",
+  "definition": "The Spatial Web is a computing paradigm that overlays machine-readable semantic information on physical locations and objects, enabling devices to understand and interact with the real world in context. It combines spatial computing, geospatial data, IoT sensors, and web standards to blur the boundary between physical and digital environments, and is regarded as a foundational layer for persistent augmented reality and metaverse experiences.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:spatial-anchor", "label": "Spatial Anchor"},
+      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
+      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:web3", "label": "Web3"},
+      {"@id": "urn:ngm:class:semantic-web", "label": "Semantic Web"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -76,14 +90,19 @@ public:: true
 
 
 - ### Definition
-  - Spatial Web is a concept within the ngm domain.
+  - The Spatial Web is a computing paradigm that overlays machine-readable semantic information on physical locations and objects, enabling devices to understand and interact with the real world in context. It combines spatial computing, geospatial data, IoT sensors, and web standards to blur the boundary between physical and digital environments, and is regarded as a foundational layer for persistent augmented reality and metaverse experiences.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:SpatialWeb
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Spatial Anchor]]
+  - requires [[Internet of Things]]
+  - enables [[Augmented Reality]]
+  - enables [[Immersive Experience]]
+  - bridgesTo [[Web3]]
+  - bridgesTo [[Semantic Web]]
 
 - ### Content
   “The Spatial Web”, a blurring of the boundaries between digital and geospatial physical objects, seems to have developed from the strands in the original W3C scope around devices in the real world. It has been concentrating around AR and VR but is being marketed and amplified with the same references to availability of data. This too is finding little traction in practice, though obviously the component technologies continue to enjoy rapid development. Nonetheless, this interpretation of Web3 becomes valuable when examining Metaverse later.

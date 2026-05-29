@@ -48,7 +48,7 @@ public:: true
   "label": "Virtual Theater",
   "definition": "A form of immersive performing arts that uses VR headsets and virtual environments to present theatrical productions, enabling audiences to experience performances as silent observers within the scene, with some productions featuring interactive narratives where story outcomes depend on audience ...",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -59,11 +59,53 @@ public:: true
       "label": "Performing Arts"
     }
   ],
-  "quality": 0.5,
+  "qualityScore": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-audio-technology",
+        "label": "Immersive Audio Technology"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "@id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      },
+      {
+        "@id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:performing-arts",
+        "label": "Performing Arts"
+      }
+    ]
   }
 }
 ```
@@ -109,6 +151,14 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Performing Arts]]
+  - Part Of [[Performing Arts]]
+  - Requires [[Virtual Reality]]
+  - Requires [[Immersive Audio Technology]]
+  - Uses [[Avatar]]
+  - Uses [[Spatial Audio]]
+  - Uses [[Rendering Pipeline]]
+  - Enables [[Immersive Experience]]
+  - Enables [[Accessibility]]
 
 - ### Content
 

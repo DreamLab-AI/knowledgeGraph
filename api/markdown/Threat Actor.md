@@ -58,9 +58,10 @@ public:: true
   "@id": "urn:ngm:class:threat-actor",
   "@type": "Class",
   "label": "Threat Actor",
-  "definition": "Threat Actor is a blockchain and distributed systems concept and a type of Attack Vector.",
+  "definition": "A Threat Actor is an individual, organised group, or nation-state entity that possesses the intent, capability, and opportunity to exploit vulnerabilities in digital systems. Actors are classified by motivation (financial, ideological, strategic, personal) and sophistication tier (opportunistic script-kiddies through state-sponsored APTs), with attribution performed via TTPs, infrastructure patterns, and targeting behaviour.",
   "domain": "blockchain",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-protocol-and-consensus",
@@ -71,7 +72,24 @@ public:: true
       "label": "Attack Vector"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:attack-vector", "label": "Attack Vector"},
+      {"@id": "urn:ngm:class:vulnerability", "label": "Vulnerability"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:security", "label": "Security"},
+      {"@id": "urn:ngm:class:resilience", "label": "Resilience"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:risk", "label": "Risk"},
+      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:security-framework", "label": "Security Framework"},
+      {"@id": "urn:ngm:class:zero-trust-architecture", "label": "Zero Trust Architecture"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -132,7 +150,7 @@ public:: true
 
 
 - ### Definition
-  - Threat Actor is a concept within the bc domain.
+  - A Threat Actor is an individual, organised group, or nation-state entity that possesses the intent, capability, and opportunity to exploit vulnerabilities in digital systems. Actors are classified by motivation (financial, ideological, strategic, personal) and sophistication tier (opportunistic script-kiddies through state-sponsored APTs), with attribution performed via TTPs, infrastructure patterns, and targeting behaviour.
 
 - ### Semantic Classification
   - owl-class:: blockchain:ThreatActor
@@ -140,6 +158,10 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Blockchain]]
+  - **uses** → [[Attack Vector]], [[Vulnerability]]
+  - **contrastsWith** → [[Security]], [[Resilience]]
+  - **relatedTo** → [[Risk]], [[Cybersecurity]]
+  - **enables** (defensive response) → [[Security Framework]], [[Zero Trust Architecture]]
 
 - ### Content
 

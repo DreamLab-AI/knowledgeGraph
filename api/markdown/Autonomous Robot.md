@@ -160,13 +160,27 @@ public:: true
   "label": "Autonomous Robot",
   "definition": "A robotic system equipped with sensors, processing units, and actuators that operates independently to perform tasks without direct human control, using Artificial Intelligence and Autonomous Navigation.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-robot-type",
       "label": "Robot Type"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:multi-agent-systems", "label": "Multi-Agent Systems"},
+      {"@id": "urn:ngm:class:robot-learning", "label": "Robot Learning"}
+    ]
+  },
   "quality": 0.4,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -356,6 +370,12 @@ public:: true
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
+  - requires:: [[Sensor Fusion]]
+  - requires:: [[Computer Vision]]
+  - uses:: [[Motion Planning]]
+  - uses:: [[Reinforcement Learning]]
+  - relatedTo:: [[Multi-Agent Systems]]
+  - relatedTo:: [[Robot Learning]]
   - bridges-to:: [[Deep Learning]] (domain: ai→robotics, type: implementation)
 
 - ### Content

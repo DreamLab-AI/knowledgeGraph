@@ -6,8 +6,11 @@
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
-
+  - **uses** [[Software Engineering]] — Dagger pipelines are authored in general-purpose software engineering languages
+  - **enables** [[Machine Learning Pipeline]] — Dagger unifies ML training and evaluation pipeline execution
+  - **enables** [[Simulation]] — reproducible containerised environments underpin simulation pipelines
+  - **relatedTo** [[Software Development Process]] — Dagger replaces shell-script CI with typed, composable pipeline code
+  - **relatedTo** [[Blockchain]] — Dagger's containerised environments can orchestrate blockchain node deployments
   - bridges-to:: [[Blockchain]] (bc)
 - ### Content
   - Of course! This is an excellent question and a perfect use case for comparing the traditional Docker wrapper script pattern with Dagger. Your `powerdev.sh` and `Dockerfile` are a very well-structured and powerful example of the conventional approach.

@@ -37,20 +37,58 @@ public:: true
   "@id": "urn:ngm:class:recommendation-engine",
   "@type": "Class",
   "label": "Recommendation Engine",
-  "definition": "Recommendation Engine is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A recommendation engine is a system that filters, ranks, and surfaces content or items most relevant to an individual user by analysing preferences, behaviour history, and contextual signals. It employs collaborative filtering, content-based filtering, or hybrid deep-learning approaches to personalise discovery at scale across e-commerce, media, and metaverse platforms.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
     }
   ],
-  "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:predictive-personalization",
+        "label": "Predictive Personalization"
+      },
+      {
+        "@id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:embedding-model",
+        "label": "Embedding Model"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:search-technology",
+        "label": "Search Technology"
+      }
+    ]
   }
 }
 ```
@@ -76,14 +114,20 @@ public:: true
 
 
 - ### Definition
-  - RecommendationEngine is a concept within the ngm domain.
+  - A recommendation engine is a system that filters, ranks, and surfaces content or items most relevant to an individual user by analysing preferences, behaviour history, and contextual signals. It employs collaborative filtering, content-based filtering, or hybrid deep-learning approaches to personalise discovery at scale across e-commerce, media, and metaverse platforms.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:RecommendationEngine
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses [[Machine Learning]]
+  - Uses [[Embedding Model]]
+  - Enables [[Predictive Personalization]]
+  - Enables [[Information Retrieval]]
+  - Depends on [[Deep Learning]]
+  - Depends on [[Data Pipeline]]
+  - Related to [[Search Technology]]
 
 - ### Content
   # RecommendationEngine

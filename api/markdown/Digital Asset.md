@@ -42,15 +42,28 @@ public:: true
   "@id": "urn:ngm:class:digital-asset",
   "@type": "Class",
   "label": "Digital Asset",
-  "definition": "Digital Asset is a blockchain and distributed systems concept and a type of blockchain.",
+  "definition": "A Digital Asset is any blockchain-recorded value representation with cryptographic ownership guarantees, including cryptocurrencies, tokenised securities, non-fungible tokens, stablecoins, and programmable financial instruments. Asset tokenisation transforms real-world assets into blockchain-native representations through smart contracts that encode legal ownership rights, fractional interests, and automated compliance rules, enabling new forms of value transfer, settlement, and programmable finance.",
   "domain": "blockchain",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-token-and-asset",
       "label": "Token and Asset"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
+      {"@id": "urn:ngm:class:nft", "label": "NFT"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:digital-asset-management", "label": "Digital Asset Management"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -87,16 +100,19 @@ public:: true
 
 
 - ### Definition
-  - DigitalAsset is a concept within the ngm domain.
+  - A Digital Asset is any blockchain-recorded value representation with cryptographic ownership guarantees, including cryptocurrencies, tokenised securities, non-fungible tokens, stablecoins, and programmable financial instruments. Asset tokenisation transforms real-world assets into blockchain-native representations through smart contracts that encode legal ownership rights, fractional interests, and automated compliance rules, enabling new forms of value transfer, settlement, and programmable finance.
 
 - ### Semantic Classification
   - owl-class:: blockchain/DigitalAsset
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
-
   - bridges-to:: [[Blockchain]] (bc)
+  - requires:: [[Blockchain]]
+  - requires:: [[Smart Contract]]
+  - enables:: [[Decentralised Finance]]
+  - enables:: [[NFT]]
+  - relatedTo:: [[Digital Asset Management]]
 - ### Content
 
   ## Definition

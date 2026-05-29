@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:yield-farming",
   "domain": "blockchain",
-  "definition": "Yield farming is the practice of supplying liquidity or assets to DeFi protocols in exchange for token rewards, optimising returns by moving assets across multiple protocols.",
+  "definition": "Yield farming is the practice of actively deploying digital assets into decentralised finance protocols\u2014including liquidity pools, lending markets, and staking contracts\u2014to earn token rewards, trading fees, or interest income, and optimising risk-adjusted returns by dynamically reallocating across multiple protocols. Participants typically receive liquidity provider tokens representing their pool share, which can themselves be deposited into other protocols to compound rewards, creating layered risk exposure. Yield farming strategies are sensitive to smart contract risk, impermanent loss, reward token price volatility, and regulatory classification of token distributions.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-defi-and-economics",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:liquidity-provision",
+        "label": "Liquidity Provision"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:liquidity-mining",
+        "label": "Liquidity Mining"
+      },
+      {
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

@@ -7,7 +7,14 @@
   - belongs-to-domain:: [[BlockchainDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses [[Smart Contract]]
+  - Uses [[Audit Trail]]
+  - Uses [[Hyperledger Fabric]]
+  - Requires [[Data Integrity]]
+  - Requires [[Blockchain Compliance]]
+  - Supports [[Drug Discovery]]
+  - Supports [[Healthcare Records]]
+  - Depends on [[Compliance Framework]]
 
 - ### Content
   - Blockchain applications in clinical trials address a pharmaceutical development crisis where new drug development costs range from **£160 million to £2 billion** with failed clinical trials alone costing **£800 million to £1.4 billion**, whilst annual trial costs increase at **9% per year** and development timelines extend to **10 years** before medicines reach patients—with only **1 in 10 compounds** eventually succeeding. By employing immutable blockchain-registered audit trails, smart contracts automating protocol compliance, and cryptographic time-stamping of all data collection stages, blockchain systems demonstrate **98.6% cost reductions** (monitoring costs from **€722 to €10** per participant/visit), **98.9% verification success rates**, and complete elimination of data falsification opportunities that have resulted in **£11 billion** in pharmaceutical fines for criminal wrongdoing.

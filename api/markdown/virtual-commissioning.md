@@ -8,6 +8,13 @@
 
 - ### Relationships
   - is-subclass-of:: [[Digital Twin]]
+  - Requires: [[Simulation]]
+  - Requires: [[Digital Twin]]
+  - Uses: [[Control System]]
+  - Uses: [[Simulation Software]]
+  - Enables: [[IndustrialAutomation]]
+  - Enables: [[Cyber Physical Systems]]
+  - Related To: [[Embedded Systems]]
 
 - ### Content
 

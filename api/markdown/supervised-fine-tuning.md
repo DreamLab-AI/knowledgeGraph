@@ -7,7 +7,12 @@
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Human Feedback]]
+  - requires [[Model Training]]
+  - enables [[Reward Model]]
+  - enables [[Reinforcement Learning]]
+  - relatedTo [[Transfer Learning]]
+  - relatedTo [[Fine Tuning]]
 
 - ### Content
   - A fine-tuning approach that uses labelled training data to adapt a pre-trained model to specific tasks, optimising performance through supervised learning on input-output pairs. Supervised fine-tuning (SFT) represents the most direct path from general pre-training to task-specific capability.

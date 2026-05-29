@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:multi-agent-rag-scrapbook",
   "@type": "Class",
   "label": "Multi Agent RAG scrapbook",
-  "definition": "Multi Agent RAG scrapbook is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "A research and literature collection exploring architectures in which multiple specialised AI agents collaborate through retrieval-augmented generation pipelines, combining knowledge graphs, ontologies, and constrained large language models to model complex social and environmental contexts in immersive environments. Covers formal ontology design, multi-modal data ingestion, and ethical deployment constraints.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-application",
@@ -60,6 +61,38 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      }
+    ]
   }
 }
 ```
@@ -101,14 +134,19 @@ public:: true
 
 
 - ### Definition
-  - Multi Agent RAG scrapbook is a concept within the ngm domain.
+  - A research and literature collection exploring architectures in which multiple specialised AI agents collaborate through retrieval-augmented generation pipelines, combining knowledge graphs, ontologies, and constrained large language models to model complex social and environmental contexts in immersive environments. Covers formal ontology design, multi-modal data ingestion, and ethical deployment constraints.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:MultiAgentRAGScrapbook
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses [[Retrieval-Augmented Generation]]
+  - Uses [[Knowledge Graph]]
+  - Requires [[Ontology]]
+  - Requires [[Multi-Agent Systems]]
+  - Related To [[Natural Language Processing]]
+  - Related To [[Knowledge Representation]]
 
 - ### Content
   - Lit survey for [[PEOPLE]] [[David Tully]] [[MUST]] In here for now.

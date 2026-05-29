@@ -54,21 +54,51 @@ public:: true
   "@id": "urn:ngm:class:unsupervised-learning",
   "@type": "Class",
   "label": "Unsupervised Learning",
-  "definition": "Unsupervised Learning discovers hidden patterns, structures, and representations in unlabeled data without explicit supervision.",
+  "definition": "Unsupervised Learning discovers hidden patterns, structures, and representations in unlabeled data without explicit supervision. Key techniques include clustering, dimensionality reduction, density estimation, anomaly detection, and generative modelling, enabling exploratory data analysis and latent feature extraction.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
-  "quality": 0.35,
-  "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
-  },
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
     }
-  ]
+  ],
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:dimensionality-reduction",
+        "label": "Dimensionality Reduction"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ]
+  }
 }
 ```
 
@@ -121,7 +151,11 @@ public:: true
   - owl-role:: concept
 
 - ### Relationships
-  - is-subclass-of:: ['owl:Thing']
+  - Has part [[Dimensionality Reduction]] as a core unsupervised technique
+  - Enables [[Generative AI]] through generative modelling (VAEs, GANs)
+  - Contrasts with [[Supervised Learning]] (no labelled examples required)
+  - Related to [[Transfer Learning]] (pre-trained unsupervised representations power transfer)
+  - Related to [[Federated Learning]] (unsupervised objectives applicable in federated settings)
 
 - ### Content
 

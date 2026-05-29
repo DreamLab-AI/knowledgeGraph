@@ -42,9 +42,10 @@ public:: true
   "@id": "urn:ngm:class:medical-robot",
   "@type": "Class",
   "label": "Medical Robot",
-  "definition": "Medical Robot is a robotics and autonomous systems concept and a type of Service Robot.",
+  "definition": "A Medical Robot is a robotic system designed for use in clinical and healthcare settings, encompassing surgical assistants, rehabilitation exoskeletons, and diagnostic platforms. Medical robots operate under strict safety standards (ISO 13482) and integrate sensing, actuation, and AI to augment human clinical capability.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-robot-type",
@@ -60,6 +61,38 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "@id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:medical-imaging",
+        "label": "Medical Imaging"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision-system",
+        "label": "Computer Vision System"
+      },
+      {
+        "@id": "urn:ngm:class:medical-ai",
+        "label": "Medical AI"
+      }
+    ]
   }
 }
 ```
@@ -91,7 +124,7 @@ public:: true
 
 
 - ### Definition
-  - ### Primary Definition
+  - A Medical Robot is a robotic system designed for use in clinical and healthcare settings, encompassing surgical assistants, rehabilitation exoskeletons, and diagnostic platforms. Medical robots operate under strict safety standards (ISO 13482) and integrate sensing, actuation, and AI to augment human clinical capability.
 
 - ### Semantic Classification
   - owl-class:: robotics:rb0016medicalrobot
@@ -99,7 +132,12 @@ public:: true
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses [[Haptic Feedback]]
+  - Uses [[Computer Vision System]]
+  - Uses [[Medical AI]]
+  - Requires [[Functional Safety]]
+  - Requires [[Human Robot Interaction]]
+  - Enables [[Medical Imaging]]
 
 - ### Content
   - ### Primary Definition

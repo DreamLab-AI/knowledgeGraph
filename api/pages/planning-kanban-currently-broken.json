@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:planning-kanban-currently-broken",
   "domain": "infrastructure",
-  "definition": "Planning Kanban - currently broken is a technology infrastructure concept and a type of Projects.",
+  "definition": "A Kanban-style project planning board within a Logseq knowledge graph that aggregates query-driven progress views across active projects. It uses embedded block queries to surface tasks tagged with progress properties, enabling at-a-glance visibility of TODO, DOING, and DONE states across linked project pages such as PlayerTwo and ParentsGuideToAI.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-software-engineering",
@@ -18,20 +18,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:projects",
+        "label": "Projects"
+      },
+      {
+        "id": "urn:ngm:class:player-two",
+        "label": "Player Two"
+      }
+    ],
     "requires": [],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:automated-planning",
+        "label": "Automated Planning"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      },
+      {
+        "id": "urn:ngm:class:agentic-alliance",
+        "label": "Agentic Alliance"
+      }
+    ]
   },
   "wikilinks": [
     {

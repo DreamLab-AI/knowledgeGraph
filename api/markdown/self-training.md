@@ -7,7 +7,10 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **partOf**: Semi-Supervised Learning — self-training is the canonical iterative pseudo-labelling algorithm within the semi-supervised paradigm.
+  - **enables**: Large Language Models, Active Learning — self-training underpins pre-training at scale for LLMs, and its confidence-threshold logic connects naturally to active-learning strategies.
+  - **uses**: Transfer Learning — self-training typically initialises from a pre-trained model and then fine-tunes using pseudo-labelled data.
+  - **relatedTo**: Knowledge Distillation — both techniques exploit model predictions to produce additional training signal without human annotation.
 
 - ### Content
   - A semi-supervised learning technique where a model is iteratively improved by training on its own high-confidence predictions on unlabelled data. Self-training enables learning from large amounts of unlabelled data by using the model's own predictions as pseudo-labels.

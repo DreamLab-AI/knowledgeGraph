@@ -37,9 +37,9 @@ public:: true
   "@id": "urn:ngm:class:spatial-computing",
   "@type": "Class",
   "label": "Spatial Computing",
-  "definition": "Spatial Computing is a spatial computing concept and a type of owl:Thing.",
+  "definition": "Spatial Computing is the convergence of augmented reality, virtual reality, and mixed reality with physical-world sensing to create persistent spatial layers in which digital content is anchored to real-world locations and objects. Core capabilities include SLAM-based spatial mapping, depth sensing, object recognition, and spatial anchoring. Spatial Computing underpins immersive experiences in manufacturing, healthcare, retail, education, and navigation by enabling seamless interaction between physical and digital spaces.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -51,7 +51,21 @@ public:: true
       "@id": "owl:Thing",
       "label": "Thing"
     }
-  ]
+  ],
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:slam", "label": "SLAM"},
+      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
+      {"@id": "urn:ngm:class:mixed-reality", "label": "Mixed Reality"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+    ]
+  }
 }
 ```
 
@@ -76,14 +90,19 @@ public:: true
 
 
 - ### Definition
-  - SpatialComputing is a concept within the ngm domain.
+  - Spatial Computing is the convergence of augmented reality, virtual reality, and mixed reality with physical-world sensing to create persistent spatial layers in which digital content is anchored to real-world locations and objects. Core capabilities include SLAM-based spatial mapping, depth sensing, object recognition, and spatial anchoring. Spatial Computing underpins immersive experiences in manufacturing, healthcare, retail, education, and navigation by enabling seamless interaction between physical and digital spaces.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:SpatialComputing
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart:: [[SLAM]]
+  - hasPart:: [[Augmented Reality]]
+  - enables:: [[Autonomous Navigation]]
+  - enables:: [[Mixed Reality]]
+  - requires:: [[Sensor Fusion]]
+  - requires:: [[Computer Vision]]
 
 - ### Content
   # SpatialComputing

@@ -1,12 +1,15 @@
 - ### Definition
-  - SessionManagement is a concept within the ngm domain.
+  - The infrastructure mechanisms for creating, maintaining, and terminating authenticated user sessions within a networked application or virtual environment. Session management encompasses token issuance, state synchronisation, session timeout and recovery, and revocation, forming a critical layer between user authentication and persistent application state.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:SessionManagement
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Requires [[Authentication]], [[Identity Management]]
+  - Enables [[Persistent State]]
+  - Uses [[Encryption]]
+  - Related to [[Access Control]], [[Cybersecurity]], [[Cloud Infrastructure]]
 
 - ### Content
   # SessionManagement

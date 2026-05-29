@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:disruption",
   "domain": "infrastructure",
-  "definition": "Disruption is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Disruption describes the process by which emerging technologies, platforms, or economic models radically displace incumbent systems by offering superior capability, lower cost, or fundamentally new value propositions. In the context of AI, blockchain, and spatial computing, disruption manifests as wholesale replacement of legacy industries\u2014finance, knowledge work, supply chain, governance\u2014rather than incremental improvement.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-software-engineering",
@@ -13,21 +13,48 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:disruptive-technology",
+        "label": "Disruptive Technology"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:emerging-tech-stack",
+        "label": "Emerging tech stack"
+      }
+    ]
   },
   "wikilinks": [
     {

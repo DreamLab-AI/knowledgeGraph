@@ -42,20 +42,52 @@ public:: true
   "@id": "urn:ngm:class:interactive-learning",
   "@type": "Class",
   "label": "Interactive Learning",
-  "definition": "Interactive Learning is a type of Artificial Intelligence in the artificial intelligence domain.",
+  "definition": "A machine learning paradigm in which a model interactively queries a user, oracle, or environment to obtain labels or feedback for the most informative examples, iteratively improving performance while minimising annotation cost. Interactive learning encompasses active learning, online learning, and human-in-the-loop approaches that tighten the loop between model uncertainty and human input.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
     }
   ],
-  "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:human-in-the-loop-learning",
+        "label": "Human-in-the- Loop Learning"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "@id": "urn:ngm:class:data-annotation",
+        "label": "Data Annotation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:semi-supervised-learning",
+        "label": "Semi-Supervised Learning"
+      }
+    ]
   }
 }
 ```
@@ -87,23 +119,31 @@ public:: true
 
 
 - ### Definition
-  - Interactive Learning is a concept within the ai domain. Further enrichment pending.
+  - A machine learning paradigm in which a model interactively queries a user, oracle, or environment to obtain labels or feedback for the most informative examples, iteratively improving performance while minimising annotation cost. Interactive learning encompasses active learning, online learning, and human-in-the-loop approaches that tighten the loop between model uncertainty and human input.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:InteractiveLearning
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - is-subclass-of:: AI Technique
+  - Uses [[Active Learning]]
+  - Uses [[Data Annotation]]
+  - Enables [[Human-in-the- Loop Learning]]
+  - Related To [[Reinforcement Learning]]
+  - Related To [[Reinforcement Learning from Human Feedback]]
+  - Related To [[Semi-Supervised Learning]]
 
 - ### Content
 
   ## Overview
 
-  Interactive Learning represents an abstract concept in the ai ontology hierarchy.
+  Interactive learning is a machine learning paradigm where the model actively queries informative examples from a human oracle or environment, iteratively improving with minimal labelling effort. It encompasses active learning, online learning, and human-in-the-loop workflows. Key to this paradigm is uncertainty sampling — identifying the examples the model is least confident about — and using human feedback to refine performance in label-scarce domains.
 
   #### Related Concepts
-  - [[owl:Thing]]
+  - [[Active Learning]]
+  - [[Human-in-the- Loop Learning]]
+  - [[Reinforcement Learning from Human Feedback]]
 
 - ### Provenance
   - sources::

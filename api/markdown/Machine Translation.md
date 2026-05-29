@@ -86,9 +86,10 @@ public:: true
   "@id": "urn:ngm:class:machine-translation",
   "@type": "Class",
   "label": "Machine Translation",
-  "definition": "Machine Translation is the automated translation of text or speech from one natural language to another using neural network models, particularly transformer-based sequence-to-sequence architectures.",
+  "definition": "Machine Translation is the automated translation of text or speech from one natural language to another using neural network models, particularly transformer-based sequence-to-sequence architectures. Modern neural MT systems achieve near-human quality through pre-training on massive multilingual corpora, cross-lingual transfer learning, and attention mechanisms that model long-range linguistic dependencies.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-application",
@@ -104,6 +105,38 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:language-modeling",
+        "label": "Language Modeling"
+      },
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:encoder-decoder-architecture",
+        "label": "Encoder Decoder Architecture"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:language-translation",
+        "label": "Language Translation"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
+    ]
   }
 }
 ```
@@ -198,7 +231,12 @@ public:: true
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses [[Attention Mechanism]]
+  - Uses [[Encoder Decoder Architecture]]
+  - Requires [[Language Modeling]]
+  - Requires [[Training Data]]
+  - Related To [[Language Translation]]
+  - Related To [[Transfer Learning]]
 
 - ### Content
   - Machine Translation is the automated translation of text or speech from one natural language to another using neural network models, particularly transformer-based sequence-to-sequence architectures. Modern neural machine translation systems (Google Translate, DeepL, NLLB) achieve near-human translation quality through pre-training on massive multilingual corpora, attention mechanisms, and cross-lingual transfer learning.

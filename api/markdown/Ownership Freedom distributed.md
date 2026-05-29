@@ -44,7 +44,7 @@ public:: true
   "label": "Ownership Freedom distributed",
   "definition": "A socio-technical paradigm establishing user sovereignty through decentralized control mechanisms, cryptographic ownership proofs, and distributed governance models.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
@@ -55,7 +55,24 @@ public:: true
       "label": "Metaverse governance and safeguarding"
     }
   ],
-  "quality": 0.5,
+  "qualityScore": 0.7,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"},
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
+      {"@id": "urn:ngm:class:decentralized-identifiers", "label": "Decentralized Identifiers"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
+      {"@id": "urn:ngm:class:data-sovereignty", "label": "Data Sovereignty"},
+      {"@id": "urn:ngm:class:decentralized-governance", "label": "Decentralized Governance"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:governance-framework", "label": "Governance Framework"},
+      {"@id": "urn:ngm:class:nft-ownership-proof", "label": "NFT Ownership Proof"}
+    ]
+  },
+  "maturity": "emerging",
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -97,7 +114,9 @@ public:: true
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires: [[Cryptography]], [[Smart Contract]], [[Decentralized Identifiers]]
+  - enables: [[Self Sovereign Identity]], [[Data Sovereignty]], [[Decentralized Governance]]
+  - supports: [[Governance Framework]], [[NFT Ownership Proof]]
 - ### Content
   - A socio-technical paradigm establishing user sovereignty through decentralized control mechanisms, cryptographic ownership proofs, and distributed governance models. Distributed ownership and freedom principles ensure individuals retain control over digital assets, personal data, and participation rights without reliance on centralized authorities or intermediaries.
   ---

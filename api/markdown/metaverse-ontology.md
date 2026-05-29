@@ -1,12 +1,17 @@
 - ### Definition
-  - Metaverse Ontology is a concept within the ngm domain.
+  - The Metaverse Ontology is a formal knowledge representation that classifies the entities, relationships, and properties constituting a metaverse ecosystem—including agents, scenes, digital assets, economies, governance structures, and communication protocols. It provides a shared semantic vocabulary enabling interoperability between platforms, AI systems, and toolchains operating within or around persistent immersive environments.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:MetaverseOntology
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses [[Knowledge Graph]]
+  - uses [[JSON-LD]]
+  - uses [[Ontology]]
+  - enables [[Metaverse]]
+  - enables [[Knowledge Graphing]]
+  - relatedTo [[Metaverse Ontology Schema]]
 
 - ### Content
   - #Public page automatically published

@@ -7,7 +7,12 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires** [[Regularisation]] — early stopping is a regularisation technique
+  - **requires** [[Epoch]] — early stopping monitors validation metrics across training epochs
+  - **contrastsWith** [[Overfitting]] — early stopping directly prevents overfitting on training data
+  - **partOf** [[Deep Learning]] — early stopping is a standard component of deep learning training pipelines
+  - **relatedTo** [[Hyperparameter]] — patience and monitor metric are configurable hyperparameters
+  - **relatedTo** [[Batch Size]] — epoch length and batch size jointly determine update frequency
 
 - ### Content
   - A regularisation technique that terminates training when validation performance stops improving, preventing overfitting by avoiding overtraining on the training set. Early stopping balances training progress against generalisation to unseen data.

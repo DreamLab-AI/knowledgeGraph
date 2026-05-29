@@ -42,16 +42,41 @@ public:: true
   "@id": "urn:ngm:class:nlptask",
   "@type": "Class",
   "label": "NLPTask",
-  "definition": "Natural Language Processing (NLP) tasks are computational problems involving human language understanding and generation, including text classification, sentiment analysis (identifying positive/negative/neutral opinions), named entity recognition, machine translation, text summarization, and ques...",
+  "definition": "NLP tasks are the canonical computational problems that define the scope of natural language processing: text classification, sentiment analysis, named entity recognition, machine translation, text summarisation, and question answering. Each task specifies an input-output contract over human language and serves as a benchmark for evaluating model capability. Transformer-based architectures such as BERT and GPT have become the dominant approach across nearly all NLP tasks, replacing earlier feature-engineering and statistical methods with pre-trained, fine-tunable representations.",
   "domain": "infrastructure",
   "maturity": "emerging",
+  "qualityScore": 0.75,
+  "quality": 0.75,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:sentiment-analysis", "label": "Sentiment Analysis"},
+      {"@id": "urn:ngm:class:named-entity-recognition", "label": "Named Entity Recognition"},
+      {"@id": "urn:ngm:class:machine-translation", "label": "Machine Translation"},
+      {"@id": "urn:ngm:class:question-answering", "label": "Question Answering"},
+      {"@id": "urn:ngm:class:text-generation", "label": "Text Generation"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
+      {"@id": "urn:ngm:class:tokenization", "label": "Tokenization"},
+      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:gpt", "label": "GPT"},
+      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
+      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

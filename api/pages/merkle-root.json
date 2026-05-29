@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:merkle-root",
   "domain": "blockchain",
-  "definition": "Top hash of Merkle tree within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "A Merkle Root is the single cryptographic hash at the apex of a Merkle tree, computed by recursively hashing pairs of child hashes until a single digest remains, such that the root encodes the integrity of every transaction or data element in the tree. In blockchain systems, each block header contains the Merkle root of all transactions in that block, enabling lightweight clients to verify transaction inclusion via a logarithmic-length Merkle proof without downloading the full block. This compact commitment property makes the Merkle root fundamental to blockchain scalability, security, and efficient synchronisation protocols.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-cryptographic-primitive",
@@ -21,21 +21,79 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:blockchain-infrastructure",
+        "label": "Blockchain Infrastructure"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:block",
+        "label": "Block"
+      },
+      {
+        "id": "urn:ngm:class:block-header",
+        "label": "Block Header"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:nonce",
+        "label": "Nonce"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-entity",
+        "label": "Blockchain Entity"
+      }
+    ]
   },
   "wikilinks": [
     {

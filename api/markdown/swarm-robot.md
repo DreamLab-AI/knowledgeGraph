@@ -1,5 +1,5 @@
 - ### Definition
-  - ### Primary Definition
+  - A Swarm Robot is a member of a multi-agent robotic system in which large numbers of simple, decentralised agents coordinate through local interactions to achieve complex collective behaviours without centralised control. Drawing from biological models such as ant colonies and flocking birds, swarm robotics enables robustness through redundancy, scalability, and emergent task execution across domains including environmental monitoring, logistics, and disaster response.
 
 - ### Semantic Classification
   - owl-class:: robotics:rb0020swarmrobot
@@ -7,7 +7,10 @@
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses:: Decentralized Swarm Control, Multi-Agent Systems
+  - hasPart:: Swarm Robotics, Collective Intelligence System
+  - contrastsWith:: Centralized Swarm Control
+  - relatedTo:: Navigation and Planning, Safety and Standards
 
 - ### Content
   - ### Primary Definition

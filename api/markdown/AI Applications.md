@@ -54,13 +54,35 @@ public:: true
   "@id": "urn:ngm:class:ai-applications",
   "@type": "Class",
   "label": "AI Applications",
-  "definition": "AI Applications represent domain-specific implementations of artificial intelligence technologies across various industries and use cases.",
+  "definition": "Domain-specific deployments of artificial intelligence technologies delivering measurable value across industries including healthcare diagnostics, autonomous vehicles, industrial automation, financial services, and personal assistants. AI Applications translate research-level techniques—machine learning models, natural language processing, computer vision—into production systems operating within real-world constraints of safety, reliability, and regulatory compliance.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-application",
       "label": "AI Application"
+    }
+  ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"},
+      {"@id": "urn:ngm:class:autonomous-system", "label": "Autonomous System"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
+      {"@id": "urn:ngm:class:ai-risk-management", "label": "AI Risk Management"}
+    ]
+  },
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:aiapplications",
+      "label": "AIApplications"
     }
   ],
   "quality": 0.35,
@@ -68,13 +90,7 @@ public:: true
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
-  },
-  "sameAs": [
-    {
-      "@id": "urn:ngm:class:aiapplications",
-      "label": "AIApplications"
-    }
-  ]
+  }
 }
 ```
 
@@ -129,7 +145,9 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Artificial Intelligence]]
-  - bridges-to:: [[Autonomous Robot]] (domain: rb), [[Digital Asset]] (domain: mv), [[Smart Contract]] (domain: bc)
+  - uses:: [[Machine Learning]], [[Natural Language Processing]], [[Computer Vision]]
+  - enables:: [[Autonomous Robot]], [[Autonomous System]]
+  - requires:: [[AI Governance]], [[AI Risk Management]]
 
 - ### Content
   AI Applications — content pending enrichment.

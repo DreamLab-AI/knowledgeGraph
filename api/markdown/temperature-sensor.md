@@ -1,4 +1,6 @@
 - ### Definition
+  A temperature sensor is a transducer that converts thermal energy into an electrical signal, enabling robotic and autonomous systems to monitor ambient, surface, or internal temperatures. Common types include thermocouples, RTDs, and infrared sensors, each suited to different accuracy, range, and response-time requirements in industrial, healthcare, and field robotics.
+
   - ### Primary Definition
 
 - ### Semantic Classification
@@ -7,7 +9,9 @@
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **partOf**: Perception and Sensing (robo-perception), Robotic System
+  - **relatedTo**: Sensor, Sensor Fusion, Sensor Data
+  - **uses**: Sensor Technology
 
 - ### Content
   - ### Primary Definition

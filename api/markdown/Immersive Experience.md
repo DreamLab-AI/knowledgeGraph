@@ -42,15 +42,29 @@ public:: true
   "@id": "urn:ngm:class:immersive-experience",
   "@type": "Class",
   "label": "Immersive Experience",
-  "definition": "Immersive Experience is a spatial computing concept and a type of spatial-computing.",
+  "definition": "An Immersive Experience is a deeply engaging interaction or environment that induces a compelling sense of presence by combining high-fidelity multi-sensory stimulation, responsive interaction, and narrative coherence across visual, auditory, and haptic channels. Underpinned by virtual reality, augmented reality, and spatial audio technologies, immersive experiences span VR training simulations, therapeutic applications, collaborative virtual workspaces, and entertainment, with quality measured through presence questionnaires, physiological indicators, and behavioural engagement metrics.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
+      {"@id": "urn:ngm:class:spatial-audio", "label": "Spatial Audio"},
+      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:simulation", "label": "Simulation"},
+      {"@id": "urn:ngm:class:telepresence", "label": "Telepresence"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -101,7 +115,12 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Virtual Reality]]
+  - requires [[Spatial Audio]]
+  - requires [[Haptic Feedback]]
+  - enables [[Simulation]]
+  - enables [[Telepresence]]
+  - relatedTo [[Augmented Reality]]
 
 - ### Content
   - ### Primary Definition

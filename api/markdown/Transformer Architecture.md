@@ -56,7 +56,7 @@ public:: true
   "label": "Transformer Architecture",
   "definition": "A neural network architecture based solely on attention mechanisms, dispensing with recurrence and convolutions entirely, designed for sequence-to-sequence tasks.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-model-architecture",
@@ -67,6 +67,21 @@ public:: true
       "label": "Neural Network"
     }
   ],
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -126,7 +141,11 @@ public:: true
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart:: [[Attention Mechanism]]
+  - enables:: [[Large Language Models]]
+  - enables:: [[Natural Language Processing]]
+  - uses:: [[Neural Network]]
+  - supports:: [[Computer Vision]]
 
 - ### Content
   - A neural network architecture based solely on attention mechanisms, dispensing with recurrence and convolutions entirely, designed for sequence-to-sequence tasks.

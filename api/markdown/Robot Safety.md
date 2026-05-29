@@ -46,15 +46,29 @@ public:: true
   "@id": "urn:ngm:class:robot-safety",
   "@type": "Class",
   "label": "Robot Safety",
-  "definition": "Robot Safety - Robot Safety in robotics systems",
+  "definition": "Robot Safety encompasses the engineering principles, risk assessment methods, and regulatory standards that ensure robotic systems operate without causing harm to humans, other machines, or the environment. It includes functional safety standards (ISO 10218, ISO 13849), collaborative robot (cobot) application requirements, dynamic risk assessment, and the emerging challenges of AI-integrated and autonomous robot deployment in shared workspaces.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-safety-and-standards",
       "label": "Safety and Standards"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
+      {"@id": "urn:ngm:class:collision-avoidance", "label": "Collision Avoidance"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"},
+      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:robot-dynamics", "label": "Robot Dynamics"},
+      {"@id": "urn:ngm:class:state-estimation", "label": "State Estimation"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
@@ -96,7 +110,7 @@ public:: true
 
 
 - ### Definition
-  - **Robot Safety** - Robot Safety in robotics systems
+  - Robot Safety encompasses the engineering principles, risk assessment methods, and regulatory standards that ensure robotic systems operate without causing harm to humans, other machines, or the environment. It includes functional safety standards (ISO 10218, ISO 13849), collaborative robot (cobot) application requirements, dynamic risk assessment, and the emerging challenges of AI-integrated and autonomous robot deployment in shared workspaces.
 
 - ### Semantic Classification
   - owl-class:: robotics:RobotSafety
@@ -105,6 +119,12 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Robotics]]
+  - requires [[Sensor Fusion]]
+  - requires [[Collision Avoidance]]
+  - enables [[Human Robot Interaction]]
+  - enables [[Robotics]]
+  - relatedTo [[Robot Dynamics]]
+  - relatedTo [[State Estimation]]
 
 - ### Content
   - ### Original Content

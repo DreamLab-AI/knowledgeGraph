@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:tele-050-neuralrenderingtelepresence",
   "domain": "distributed-collaboration",
-  "definition": "TELE 050 neuralrenderingtelepresence is a type of TELE 001 telepresence in the distributed collaboration domain.",
+  "definition": "Neural Rendering Telepresence (TELE 050) is a class of telepresence systems that replace conventional rasterisation pipelines with neural rendering techniques \u2014 including neural radiance fields, Gaussian splatting, and differentiable rendering \u2014 to reconstruct and transmit photorealistic volumetric representations of remote participants in real time. These approaches substantially reduce capture hardware requirements while improving perceptual fidelity and supporting free-viewpoint synthesis.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:dc-telepresence",
@@ -17,21 +17,52 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:volumetric-capture",
+        "label": "Volumetric Capture"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-and-telecollaboration",
+        "label": "Metaverse and Telecollaboration"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:neural-rendering",
+        "label": "Neural Rendering"
+      },
+      {
+        "id": "urn:ngm:class:neural-radiance-field",
+        "label": "Neural Radiance Field"
+      },
+      {
+        "id": "urn:ngm:class:gaussian-splatting",
+        "label": "Gaussian Splatting"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:tele020virtualrealitytelepresence",
+        "label": "TELE020virtualrealitytelepresence"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ]
   },
   "wikilinks": [
     {

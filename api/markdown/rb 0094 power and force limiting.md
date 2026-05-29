@@ -42,9 +42,9 @@ public:: true
   "@id": "urn:ngm:class:rb-0094-power-and-force-limiting",
   "@type": "Class",
   "label": "rb 0094 power and force limiting",
-  "definition": "power and force limiting is a robotics and autonomous systems concept and a type of Robot Safety.",
+  "definition": "Power and Force Limiting (PFL) is a collaborative robot safety mode defined in ISO/TS 15066 in which the robot's mechanical power, force, and momentum are continuously constrained so that any contact with a human remains below biomechanical injury thresholds. Unlike speed-and-separation monitoring, PFL allows direct physical contact by ensuring that contact forces can never exceed prescribed quasi-static and transient limits.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-safety-and-standards",
@@ -55,11 +55,31 @@ public:: true
       "label": "Robot Safety"
     }
   ],
-  "quality": 0.5,
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:iso-ts-15066", "label": "ISO TS 15066"},
+      {"@id": "urn:ngm:class:iso-10218", "label": "ISO 10218"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:rb-0091-safety-rated-monitored-stop", "label": "rb 0091 safety rated monitored stop"},
+      {"@id": "urn:ngm:class:rb-0092-protective-stop", "label": "rb 0092 protective stop"},
+      {"@id": "urn:ngm:class:rb-0093-speed-limitation", "label": "rb 0093 speed limitation"},
+      {"@id": "urn:ngm:class:rb-0089-risk-assessment", "label": "rb 0089 risk assessment"},
+      {"@id": "urn:ngm:class:cobot-safety-levels", "label": "Cobot Safety Levels"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:rb-0067-force-torque-sensor", "label": "rb 0067 force torque sensor"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"},
+      {"@id": "urn:ngm:class:rb-0057-admittance-control", "label": "rb 0057 admittance control"}
+    ]
   }
 }
 ```

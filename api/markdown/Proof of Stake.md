@@ -46,7 +46,7 @@ public:: true
   "@id": "urn:ngm:class:proof-of-stake",
   "@type": "Class",
   "label": "Proof of Stake",
-  "definition": "A consensus mechanism allowing blockchains to validate transactions and create new blocks based on the number of tokens held or staked by network participants.",
+  "definition": "A consensus mechanism allowing blockchains to validate transactions and create new blocks based on the number of tokens held or staked by network participants. Validators are selected proportionally to their stake, replacing the energy-intensive mining of Proof of Work with a capital-cost security model that achieves deterministic or probabilistic finality.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -59,7 +59,25 @@ public:: true
       "label": "Proof-Based Consensus"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:validator-node", "label": "Validator Node"},
+      {"@id": "urn:ngm:class:validator-set", "label": "Validator Set"},
+      {"@id": "urn:ngm:class:epoch", "label": "Epoch"},
+      {"@id": "urn:ngm:class:delegated-proof-of-stake", "label": "Delegated Proof of Stake"},
+      {"@id": "urn:ngm:class:liquid-proof-of-stake", "label": "Liquid Proof of Stake"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
+      {"@id": "urn:ngm:class:finality", "label": "Finality"},
+      {"@id": "urn:ngm:class:deterministic-finality", "label": "Deterministic Finality"},
+      {"@id": "urn:ngm:class:sustainable-consensus", "label": "Sustainable Consensus"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:blockchain-sustainability", "label": "Blockchain Sustainability"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

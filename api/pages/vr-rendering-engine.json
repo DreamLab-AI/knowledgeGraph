@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:vr-rendering-engine",
   "domain": "spatial-computing",
-  "definition": "Specialized real-time graphics software that generates stereoscopic imagery for virtual reality headsets, optimizing frame rates, latency, and visual fidelity while managing the unique requirements of immersive display including foveated rendering, reprojection, and lens distortion correction.",
+  "definition": "Specialised real-time graphics software that generates stereoscopic imagery for virtual reality headsets, optimising frame rates (minimum 90 fps), motion-to-photon latency (sub-20 ms), and visual fidelity while managing VR-specific pipeline requirements including foveated rendering, asynchronous reprojection, and lens distortion correction. Leading implementations include Unreal Engine 5 (Lumen, Nanite) and Unity (URP/HDRP), both supporting major XR hardware via OpenXR and platform-specific SDKs.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-display-and-rendering",
@@ -17,17 +17,49 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:foveated-rendering",
+        "label": "Foveated Rendering"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering-pipeline",
+        "label": "Real-Time Rendering Pipeline"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:xr-device",
+        "label": "XR Device"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:virtual-production",
+        "label": "Virtual Production"
+      },
+      {
+        "id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

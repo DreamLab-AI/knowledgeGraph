@@ -46,7 +46,7 @@ public:: true
   "@id": "urn:ngm:class:2-d-li-dar",
   "@type": "Class",
   "label": "2D LiDAR",
-  "definition": "2D LiDAR scans single horizontal or vertical plane for obstacle detection.",
+  "definition": "2D LiDAR is a laser scanning sensor that emits a rotating beam in a single horizontal or vertical plane, producing a planar point cloud used for obstacle detection, proximity sensing, and 2D mapping. It is widely deployed on mobile robots and autonomous guided vehicles where full 3D sensing is unnecessary or cost-prohibitive.",
   "domain": "robotics",
   "maturity": "established",
   "subClassOf": [
@@ -59,7 +59,28 @@ public:: true
       "label": "Lidar"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:3-d-li-dar", "label": "3D LiDAR"},
+      {"@id": "urn:ngm:class:slam", "label": "SLAM"},
+      {"@id": "urn:ngm:class:point-cloud", "label": "Point Cloud"},
+      {"@id": "urn:ngm:class:proximity-sensor", "label": "Proximity Sensor"},
+      {"@id": "urn:ngm:class:laser-scanner", "label": "Laser Scanner"},
+      {"@id": "urn:ngm:class:ultrasonic-sensor", "label": "Ultrasonic Sensor"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:lidar-scanning", "label": "Lidar Scanning"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:simultaneous-localisation-and-mapping", "label": "Simultaneous Localisation and Mapping"},
+      {"@id": "urn:ngm:class:localization", "label": "Localization"},
+      {"@id": "urn:ngm:class:proximity-detection", "label": "Proximity Detection"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:robo-perception", "label": "Perception and Sensing"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

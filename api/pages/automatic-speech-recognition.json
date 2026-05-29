@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:automatic-speech-recognition",
   "domain": "distributed-collaboration",
-  "definition": "Automatic Speech Recognition (ASR) is the technology that converts spoken language into text using acoustic and language models trained on large corpora of transcribed audio.",
+  "definition": "Automatic Speech Recognition (ASR) is the technology that transcribes spoken language into text by jointly modelling the acoustic signal \u2014 frame-level spectral features derived from the raw audio waveform \u2014 and linguistic context, using neural sequence-to-sequence models trained on large corpora of paired audio and transcripts. Modern ASR systems based on transformer and conformer architectures achieve near-human word error rates on clean speech, and have expanded to multilingual and low-resource settings through large-scale self-supervised pre-training on unlabelled audio. ASR is a foundational component of voice assistants, transcription services, accessibility tools, and spoken language understanding pipelines.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:dc-communication",
@@ -14,20 +14,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:voice-interaction",
+        "label": "Voice Interaction"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:language-modeling",
+        "label": "Language Modeling"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:speaker-diarisation",
+        "label": "Speaker Diarisation"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

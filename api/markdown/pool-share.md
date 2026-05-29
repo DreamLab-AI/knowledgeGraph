@@ -1,15 +1,8 @@
 - ### Definition
-  - Mining contribution unit within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
-
-- ### Semantic Classification
-  - owl-class:: blockchain:PoolShare
-  - owl-role:: Object
-  - owl-inferred:: blockchain:VirtualObject
-  - belongs-to-domain:: [[ConsensusDomain]]
-  - implemented-in-layer:: [[ProtocolLayer]]
+  A proof-of-work unit submitted by an individual miner to a mining pool server demonstrating bounded computational work toward finding a valid block hash. Pool shares have a lower difficulty target than the network block target, enabling the pool to credit proportional work and distribute block rewards fairly across contributors.
 
 - ### Relationships
-  - is-subclass-of:: [[Blockchain Entity]], [[ConsensusProtocol]]
+  Pool Share is **part of** Mining Pool (the collective it serves) and Mining (the broader process). It **requires** Proof Of Work (as the underlying hash puzzle) and Consensus Mechanism (the network rules it contributes to). It **enables** Mining Reward distribution and Block Reward allocation. It is **related to** Cryptocurrency (as the economic output), Blockchain Network (the ledger being extended), and Blockchain Protocol (which defines share difficulty). It **contrasts with** Proof of Stake, which replaces hash-based contributions with stake-weighted selection.
 
 - ### Content
 

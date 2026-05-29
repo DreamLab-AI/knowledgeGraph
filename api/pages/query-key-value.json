@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:query-key-value",
   "domain": "artificial-intelligence",
-  "definition": "The three fundamental components in attention mechanisms: queries determine what information to seek, keys determine what information is available, and values contain the actual information to be retrieved.",
+  "definition": "The three fundamental components of the attention mechanism introduced by Vaswani et al. (2017): a Query vector representing the current information need, Key vectors representing available information descriptors, and Value vectors containing the content to retrieve. Attention weights are computed via scaled dot-product similarity between queries and keys, then applied to values to produce context-aware output representations.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-model-architecture",
@@ -17,12 +17,30 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -30,8 +48,22 @@
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:model-capacity",
+        "label": "Model Capacity"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-architecture",
+        "label": "Neural Network Architecture"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -56,7 +56,7 @@ public:: true
   "label": "Natural Language Processing",
   "definition": "Natural Language Processing (NLP) is the subfield of AI focused on enabling computers to understand, interpret, generate, and manipulate human language.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
@@ -68,7 +68,21 @@ public:: true
       "@id": "urn:ngm:class:ai-research-area",
       "label": "AI Research Area"
     }
-  ]
+  ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
+      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
+      {"@id": "urn:ngm:class:question-answering", "label": "Question Answering"},
+      {"@id": "urn:ngm:class:text-generation", "label": "Text Generation"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:machine-translation", "label": "Machine Translation"}
+    ]
+  }
 }
 ```
 
@@ -122,6 +136,12 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: ['owl:Thing']
+  - uses:: [[Transformer Architecture]]
+  - uses:: [[Attention Mechanism]]
+  - enables:: [[Large Language Models]]
+  - enables:: [[Question Answering]]
+  - enables:: [[Text Generation]]
+  - relatedTo:: [[Machine Translation]]
 
 - ### Content
 

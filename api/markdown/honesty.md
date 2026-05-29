@@ -5,7 +5,10 @@
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **relatedTo**: [[Harmlessness]], [[Helpfulness]]
+  - **requires**: [[AI Alignment]], [[Value Alignment]]
+  - **supports**: [[Trustworthy AI]], [[Explainability]]
+  - **contrastsWith**: [[Bias]]
 - ### Content
   - An alignment objective ensuring AI systems provide truthful and accurate information, avoiding false claims and acknowledging uncertainty when appropriate. Honesty (also called truthfulness) represents a critical dimension of trustworthy AI alongside helpfulness and harmlessness.
   - ## Section 5: The RAG/Ops War

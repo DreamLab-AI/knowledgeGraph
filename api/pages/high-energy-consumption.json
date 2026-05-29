@@ -5,29 +5,85 @@
   "public": true,
   "classIri": "urn:ngm:class:high-energy-consumption",
   "domain": "blockchain",
-  "definition": "Energy consumption level characteristic of PoW consensus mechanisms requiring significant computational resources.",
+  "definition": "High Energy Consumption characterises Proof-of-Work blockchain networks that secure the ledger through computationally intensive mining, requiring significant and ongoing electricity expenditure proportional to network hash rate. This property creates environmental concerns, drives carbon footprint assessments, and motivates regulatory scrutiny of PoW chains, contrasting sharply with the energy profile of stake-based consensus alternatives.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-governance-and-regulation",
       "label": "Governance and Regulation"
+    },
+    {
+      "id": "urn:ngm:class:blockchain-energy-consumption",
+      "label": "Blockchain Energy Consumption"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:mining-pool",
+        "label": "Mining Pool"
+      },
+      {
+        "id": "urn:ngm:class:mining-reward",
+        "label": "Mining Reward"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:computational-resources",
+        "label": "Computational Resources"
+      },
+      {
+        "id": "urn:ngm:class:mining",
+        "label": "Mining"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:low-energy-consumption",
+        "label": "Low Energy Consumption"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-stake-sustainability",
+        "label": "Proof Of Stake Sustainability"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-energy-consumption",
+        "label": "Blockchain Energy Consumption"
+      },
+      {
+        "id": "urn:ngm:class:carbon-footprint-measurement",
+        "label": "Carbon Footprint Measurement"
+      },
+      {
+        "id": "urn:ngm:class:environmental-impact-metric",
+        "label": "Environmental Impact Metric"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-environmental-issues",
+        "label": "Bitcoin Environmental Issues"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -8,6 +8,10 @@
 
 - ### Relationships
   - is-subclass-of:: [[Virtual Tour]]
+  - requires:: [[Immersive Experience]], [[Photogrammetry]]
+  - uses:: [[Virtual Reality]], [[3D Model]]
+  - enables:: [[Cultural Heritage XR Experience]], [[Immersive Learning]]
+  - relatedTo:: [[Virtual Field Trip]], [[Virtual Tourism]]
 
 - ### Content
 

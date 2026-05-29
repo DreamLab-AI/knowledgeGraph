@@ -42,20 +42,58 @@ public:: true
   "@id": "urn:ngm:class:graphics-library",
   "@type": "Class",
   "label": "Graphics Library",
-  "definition": "Graphics Library is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "A software library that provides a standardised API for issuing draw calls, managing GPU resources, and configuring the graphics pipeline, abstracting hardware differences from application code. Canonical graphics libraries—OpenGL, Vulkan, Metal, DirectX, WebGL—enable portable, high-performance 2D and 3D rendering across diverse hardware platforms and are foundational to real-time spatial computing applications.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-display-and-rendering",
       "label": "Display and Rendering"
     }
   ],
-  "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:computer-graphics",
+        "label": "Computer Graphics"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:shader",
+        "label": "Shader"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "@id": "urn:ngm:class:rendering-engine",
+        "label": "Rendering Engine"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:3-d-graphics-standard",
+        "label": "3D Graphics Standard"
+      }
+    ]
   }
 }
 ```
@@ -87,14 +125,17 @@ public:: true
 
 
 - ### Definition
-  - Graphics Library is a concept within the metaverse domain. Further enrichment pending.
+  - A software library that provides a standardised API for issuing draw calls, managing GPU resources, and configuring the graphics pipeline, abstracting hardware differences from application code. Canonical graphics libraries—OpenGL, Vulkan, Metal, DirectX, WebGL—enable portable, high-performance 2D and 3D rendering across diverse hardware platforms and are foundational to real-time spatial computing applications.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:GraphicsLibrary
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Enables [[Rendering Pipeline]], [[Computer Graphics]]
+  - Uses [[Shader]], [[GPU Compute]]
+  - Supports [[Game Engine]], [[Rendering Engine]]
+  - Standardised by [[3D Graphics Standard]]
 
 - ### Content
 

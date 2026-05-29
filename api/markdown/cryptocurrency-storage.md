@@ -6,7 +6,10 @@
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires**: Cryptographic Key Management, Blockchain (storage is only meaningful with a live chain and keys to sign)
+  - **uses**: ECDSA, Cryptographic Signature (core signing mechanisms for authorising transactions)
+  - **supports**: Digital Asset Management (storage is the custody layer enabling asset governance)
+  - **dependsOn**: Public Key Infrastructure (HD wallet hierarchies and certificate chains underpin key derivation)
 
   - bridges-to:: [[Blockchain]] (bc)
 - ### Content

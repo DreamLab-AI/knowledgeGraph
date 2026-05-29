@@ -50,20 +50,58 @@ public:: true
   "@id": "urn:ngm:class:batch-normalisation",
   "@type": "Class",
   "label": "Batch Normalisation",
-  "definition": "Batch Normalisation is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "A technique that normalises layer inputs within a mini-batch to zero mean and unit variance, stabilising training dynamics, enabling higher learning rates, and acting as a form of regularisation in deep neural networks. Introduced by Ioffe and Szegedy (2015), it reduces internal covariate shift and has become a standard component in convolutional and other deep learning architectures.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
     }
   ],
-  "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network-layer",
+        "label": "Neural Network Layer"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:regularisation",
+        "label": "Regularisation"
+      },
+      {
+        "@id": "urn:ngm:class:dropout",
+        "label": "Dropout"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      }
+    ]
   }
 }
 ```
@@ -113,7 +151,13 @@ public:: true
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses [[Neural Network]]
+  - Uses [[Neural Network Layer]]
+  - Enables [[Deep Learning]]
+  - Related To [[Regularisation]]
+  - Related To [[Dropout]]
+  - Related To [[Gradient Descent]]
+  - Part Of [[Convolutional Neural Network]]
 
 - ### Content
   - ### Primary Definition

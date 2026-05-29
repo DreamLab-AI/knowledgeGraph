@@ -46,7 +46,7 @@ public:: true
   "@id": "urn:ngm:class:torque-control",
   "@type": "Class",
   "label": "Torque Control",
-  "definition": "Torque control directly commands actuator torques for compliant interaction.",
+  "definition": "A low-level actuation strategy that directly commands the output torque of joints or motors rather than position or velocity, enabling compliant, force-sensitive interaction between a robot and its environment. Torque control is essential for safe human-robot collaboration and dexterous manipulation tasks.",
   "domain": "robotics",
   "maturity": "established",
   "subClassOf": [
@@ -59,7 +59,24 @@ public:: true
       "label": "Motion Control"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:feedback-control", "label": "Feedback Control"},
+      {"@id": "urn:ngm:class:pid-control", "label": "PID Control"},
+      {"@id": "urn:ngm:class:servo-control", "label": "Servo Control"},
+      {"@id": "urn:ngm:class:robot-kinematics", "label": "Robot Kinematics"},
+      {"@id": "urn:ngm:class:inverse-kinematics", "label": "Inverse Kinematics"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:actuator", "label": "Actuator"},
+      {"@id": "urn:ngm:class:robot-actuator", "label": "Robot Actuator"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:collaborative-robot", "label": "Collaborative Robot"},
+      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

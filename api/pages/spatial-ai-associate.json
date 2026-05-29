@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:spatial-ai-associate",
   "domain": "artificial-intelligence",
-  "definition": "Spatial AI Associate is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "A Spatial AI Associate is an AI-powered assistant role or software agent embedded within spatial computing and extended reality environments, responsible for contextual scene understanding, user intent interpretation, and proactive spatial guidance. It combines computer vision, SLAM-derived spatial maps, and large language model reasoning to deliver situated, location-aware assistance within physical or mixed-reality spaces.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-application",
@@ -13,21 +13,53 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:spatial-ai",
+        "label": "Spatial AI"
+      },
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "id": "urn:ngm:class:sensor-technology",
+        "label": "Sensor Technology"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:scene-management",
+        "label": "Scene Management"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": []

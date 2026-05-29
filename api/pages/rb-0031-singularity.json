@@ -5,33 +5,69 @@
   "public": true,
   "classIri": "urn:ngm:class:rb-0031-singularity",
   "domain": "robotics",
-  "definition": "singularity is a robotics and autonomous systems concept and a type of Robot.",
+  "definition": "A kinematic singularity is a robot configuration in which the Jacobian matrix loses rank, causing the manipulator to lose one or more degrees of freedom in Cartesian space. At a singularity, certain end-effector motions become unachievable regardless of joint velocity magnitudes, and inverse kinematics solutions either vanish or require unbounded joint speeds. Singularity avoidance and singularity-robust inverse kinematics (via damped least-squares) are critical for safe, continuous robot motion, particularly near workspace boundaries and for wrist configurations of six-axis arms.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
       "label": "Actuation and Control"
-    },
-    {
-      "id": "urn:ngm:class:robot",
-      "label": "Robot"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:rb-0030-jacobian-matrix",
+        "label": "rb 0030 jacobian matrix"
+      },
+      {
+        "id": "urn:ngm:class:rb-0021-robot-kinematics",
+        "label": "rb 0021 robot kinematics"
+      }
+    ],
     "enables": [],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:rb-0029-inverse-kinematics",
+        "label": "rb 0029 inverse kinematics"
+      },
+      {
+        "id": "urn:ngm:class:differential-kinematics",
+        "label": "Differential Kinematics"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:rb-0037-dexterity",
+        "label": "rb 0037 dexterity"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rb-0023-degrees-of-freedom",
+        "label": "rb 0023 degrees of freedom"
+      },
+      {
+        "id": "urn:ngm:class:rb-0032-manipulability",
+        "label": "rb 0032 manipulability"
+      },
+      {
+        "id": "urn:ngm:class:robot-singularity",
+        "label": "Robot Singularity"
+      },
+      {
+        "id": "urn:ngm:class:rb-0024-workspace",
+        "label": "rb 0024 workspace"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -42,7 +42,7 @@ public:: true
   "@id": "urn:ngm:class:value",
   "@type": "Class",
   "label": "Value",
-  "definition": "Value is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "In the AI domain, a principle, preference, or objective that guides the behaviour and optimisation targets of an intelligent system. Values encode what outcomes a system should pursue or avoid, underpinning alignment research, reward function design, and ethical AI. They range from measurable utility metrics to abstract normative principles such as fairness, human dignity, and autonomy.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -51,7 +51,26 @@ public:: true
       "label": "AI Technique"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:value-alignment", "label": "Value Alignment"},
+      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"},
+      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"},
+      {"@id": "urn:ngm:class:human-centred-values", "label": "Human Centred Values"},
+      {"@id": "urn:ngm:class:democratic-values", "label": "Democratic Values"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:reward-function", "label": "Reward Function"},
+      {"@id": "urn:ngm:class:preference-learning", "label": "Preference Learning"},
+      {"@id": "urn:ngm:class:human-preference", "label": "Human Preference"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
+      {"@id": "urn:ngm:class:ai-fairness", "label": "AI Fairness"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

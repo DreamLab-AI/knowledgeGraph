@@ -48,7 +48,8 @@ public:: true
   "label": "Decoder",
   "definition": "The component in an encoder-decoder architecture that generates the output sequence autoregressively, using masked self-attention, cross-attention to encoder outputs, and feed-forward layers.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-model-architecture",
@@ -60,6 +61,46 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "uses": [
+      {
+        "@id": "urn:ngm:class:self-attention",
+        "label": "Self Attention"
+      },
+      {
+        "@id": "urn:ngm:class:cross-attention",
+        "label": "Cross Attention"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:encoder",
+        "label": "Encoder"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:gpt",
+        "label": "GPT"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:encoder-decoder-architecture",
+        "label": "Encoder Decoder Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
+    ]
   }
 }
 ```
@@ -104,7 +145,14 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Part Of [[Encoder Decoder Architecture]]
+  - Part Of [[Transformer]]
+  - Uses [[Self Attention]]
+  - Uses [[Cross Attention]]
+  - Uses [[Attention Mechanism]]
+  - Related To [[Encoder]]
+  - Related To [[Large Language Models]]
+  - Related To [[GPT]]
 
 - ### Content
   - The component in an encoder-decoder architecture that generates the output sequence autoregressively, using masked self-attention, cross-attention to encoder outputs, and feed-forward layers.

@@ -46,7 +46,7 @@ public:: true
   "@id": "urn:ngm:class:neural-radiance-field",
   "@type": "Class",
   "label": "Neural Radiance Field",
-  "definition": "NeRF - neural representation for 3D scene synthesis.",
+  "definition": "A continuous volumetric scene representation that uses a multilayer perceptron to map 5D coordinates (3D position plus 2D viewing direction) to colour and volume density, enabling novel view synthesis via differentiable ray marching. NeRF achieves photo-realistic rendering of complex scenes from a sparse set of calibrated images and has spawned instant variants, Gaussian Splatting successors, and robotics perception applications.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -55,18 +55,35 @@ public:: true
       "label": "AI Model Architecture"
     }
   ],
-  "quality": 0.35,
-  "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
-  },
   "sameAs": [
     {
       "@id": "urn:ngm:class:neural-radiance-fields",
       "label": "Neural Radiance Fields"
     }
-  ]
+  ],
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:gaussian-splatting", "label": "Gaussian Splatting"},
+      {"@id": "urn:ngm:class:3-d-gaussian-splatting", "label": "3D Gaussian Splatting"},
+      {"@id": "urn:ngm:class:point-cloud", "label": "Point Cloud"},
+      {"@id": "urn:ngm:class:depth-estimation", "label": "Depth Estimation"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:ray-marching", "label": "Ray Marching"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:neural-radiance-fields", "label": "Neural Radiance Fields"}
+    ]
+  },
+  "quality": 0.8,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

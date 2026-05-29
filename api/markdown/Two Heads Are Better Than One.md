@@ -33,16 +33,29 @@ public:: true
   "@id": "urn:ngm:class:two-heads-are-better-than-one",
   "@type": "Class",
   "label": "Two Heads Are Better Than One",
-  "definition": "Two Heads Are Better Than One is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Two Heads Are Better Than One is the principle that collaborative or ensemble approaches to problem-solving outperform individual effort, applied in AI contexts to multi-agent systems, ensemble methods, and human-in-the-loop architectures. It underpins debate-based reasoning, peer-review agent patterns, and consensus mechanisms where diverse model outputs are aggregated to improve accuracy and reduce error.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:multi-agent-systems", "label": "Multi-Agent Systems"},
+      {"@id": "urn:ngm:class:ensemble-methods", "label": "Ensemble Methods"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:human-in-the-loop", "label": "Human in the Loop"},
+      {"@id": "urn:ngm:class:collective-intelligence-system", "label": "Collective Intelligence System"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:collaborative-learning", "label": "Collaborative Learning"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -72,17 +85,19 @@ public:: true
 
 
 - ### Definition
-  - Two Heads Are Better Than One is a concept within the ngm domain.
+  Two Heads Are Better Than One is the principle that collaborative or ensemble approaches to problem-solving outperform individual effort, applied in AI contexts to multi-agent systems, ensemble methods, and human-in-the-loop architectures. It underpins debate-based reasoning, peer-review agent patterns, and consensus mechanisms where diverse model outputs are aggregated to improve accuracy and reduce error.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:TwoHeadsAreBetterThanOne
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **enables**: Multi-Agent Systems, Ensemble Methods
+  - **uses**: Human in the Loop, Collective Intelligence System
+  - **relatedTo**: Collaborative Learning
 
 - ### Content
-  Two Heads Are Better Than One — content pending enrichment.
+  Two Heads Are Better Than One encapsulates the design principle that combining multiple agents, models, or human-AI pairs produces superior outputs compared to any single contributor acting in isolation. In multi-agent AI architectures, this manifests as debate protocols, voting ensembles, and peer-review chains.
 
 - ### Provenance
   - sources::

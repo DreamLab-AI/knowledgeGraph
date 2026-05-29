@@ -1,12 +1,18 @@
 - ### Definition
-  - 3D Design is a concept within the ngm domain.
+  - 3D Design is the creative and technical discipline of conceiving, modelling, and refining three-dimensional digital objects and environments for interactive, immersive, or real-time applications. It encompasses spatial composition, form language, and visual hierarchy adapted for game engines, virtual reality, and metaverse platforms, requiring performance-conscious workflows such as level-of-detail strategies, UV unwrapping, and real-time shader design.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:3D Design
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires** [[3D Modeling]] — foundational skill for authoring geometry
+  - **requires** [[Rendering Engine]] — real-time feedback loop for design iteration
+  - **enables** [[3D Content Generation]] — design artefacts feed generative pipelines
+  - **enables** [[Real-Time Rendering]] — optimised assets enable live rendering
+  - **hasPart** [[3D Asset]] — designs produce reusable 3D assets
+  - **partOf** [[3D Content Pipeline]] — design is the authoring stage of the pipeline
+  - **partOf** [[3D Development]] — design is a core phase of 3D development
 
 - ### Content
 

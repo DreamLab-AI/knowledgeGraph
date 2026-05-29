@@ -54,20 +54,58 @@ public:: true
   "@id": "urn:ngm:class:self-driving-car",
   "@type": "Class",
   "label": "Self Driving Car",
-  "definition": "A Self-Driving Car is an autonomous passenger vehicle capable of sensing its environment and operating with minimal or no human input, employing AI-driven perception, decision-making, and control systems to navigate roads, comply with traffic regulations, and transport occupants safely.",
+  "definition": "A self-driving car is an autonomous passenger vehicle capable of sensing its environment and operating with minimal or no human input, employing AI-driven perception, decision-making, and control systems to navigate roads, comply with traffic regulations, and transport occupants safely. Self-driving cars represent the consumer application of autonomous vehicle technology, typically targeting SAE Level 3–5 automation in urban and highway environments.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
     }
   ],
-  "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:perception-system",
+        "label": "Perception System"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:adas",
+        "label": "ADAS"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      }
+    ]
   }
 }
 ```
@@ -122,7 +160,13 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Part of [[Autonomous Vehicle]]
+  - Requires [[Perception System]]
+  - Requires [[Sensor Fusion]]
+  - Uses [[Lidar]]
+  - Uses [[Computer Vision]]
+  - Uses [[Motion Planning]]
+  - Related to [[ADAS]]
 
 - ### Content
   - A Self-Driving Car is an autonomous passenger vehicle capable of sensing its environment and operating with minimal or no human input, employing AI-driven perception, decision-making, and control systems to navigate roads, comply with traffic regulations, and transport occupants safely. Self-driving cars represent the consumer application of autonomous vehicle technology, typically targeting SAE Level 3-5 automation in urban and highway environments.

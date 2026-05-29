@@ -50,16 +50,41 @@ public:: true
   "@id": "urn:ngm:class:liverpool-smart-cities",
   "@type": "Class",
   "label": "Liverpool Smart Cities",
-  "definition": "Liverpool's smart cities initiative and technology sector focusing on Internet of Things, urban technology, and digital infrastructure.",
+  "definition": "Liverpool Smart Cities refers to the Merseyside city region's integrated programme of digital innovation, IoT deployment, and sustainable urban infrastructure targeting net-zero carbon status by 2030 and 100,000 new jobs by 2040. It encompasses city council strategy, university-led research (University of Liverpool, LJMU, Edge Hill), the Horizons innovation programme backed by the UK Shared Prosperity Fund, and partnerships driving smart transport, digital health, and climate technology.",
   "domain": "infrastructure",
   "maturity": "established",
+  "qualityScore": 0.8,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:io-t-sensor-network", "label": "IoT Sensor Network"},
+      {"@id": "urn:ngm:class:digital-infrastructure", "label": "Digital Infrastructure"},
+      {"@id": "urn:ngm:class:edge-ai-for-smart-cities", "label": "Edge AI for Smart Cities"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:north-england-innovation-corridor", "label": "North England Innovation Corridor"},
+      {"@id": "urn:ngm:class:uk-tech-ecosystem", "label": "UK Tech Ecosystem"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:manchester-tech-cluster", "label": "Manchester Tech Cluster"},
+      {"@id": "urn:ngm:class:leeds-digital-hub", "label": "Leeds Digital Hub"},
+      {"@id": "urn:ngm:class:newcastle-ai-and-health-innovation", "label": "Newcastle AI & Health Innovation"},
+      {"@id": "urn:ngm:class:sheffield-advanced-manufacturing", "label": "Sheffield Advanced Manufacturing"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:io-t-sensors", "label": "Io T Sensors"},
+      {"@id": "urn:ngm:class:sensor-data", "label": "Sensor Data"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:industrial-io-t", "label": "Industrial IoT"},
+      {"@id": "urn:ngm:class:io-t-ai-integration", "label": "IoT AI Integration"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -105,7 +130,7 @@ public:: true
 
 
 - ### Definition
-  - Liverpool's smart cities initiative and technology sector focusing on Internet of Things, urban technology, and digital infrastructure.
+  Liverpool Smart Cities refers to the Merseyside city region's integrated programme of digital innovation, IoT deployment, and sustainable urban infrastructure targeting net-zero carbon status by 2030 and 100,000 new jobs by 2040. It encompasses city council strategy, university-led research (University of Liverpool, LJMU, Edge Hill), the Horizons innovation programme backed by the UK Shared Prosperity Fund, and partnerships driving smart transport, digital health, and climate technology.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:LiverpoolSmartCities
@@ -113,7 +138,11 @@ public:: true
   - belongs-to-domain:: [[UK Tech Ecosystem]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart:: [[IoT Sensor Network]], [[Digital Infrastructure]], [[Edge AI for Smart Cities]]
+  - partOf:: [[North England Innovation Corridor]], [[UK Tech Ecosystem]]
+  - relatedTo:: [[Manchester Tech Cluster]], [[Leeds Digital Hub]], [[Newcastle AI & Health Innovation]], [[Sheffield Advanced Manufacturing]]
+  - requires:: [[Io T Sensors]], [[Sensor Data]]
+  - enables:: [[Industrial IoT]], [[IoT AI Integration]]
 
 - ### Content
 

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:self-custody",
   "domain": "blockchain",
-  "definition": "Self-custody is the practice of individuals directly controlling their own private keys and digital assets without relying on a third-party custodian.",
+  "definition": "Self-custody is the security model and operational practice whereby an individual or entity retains exclusive control of the private cryptographic keys that authorise transactions over their digital assets, without delegating that custody to a centralised exchange or financial institution. Assets governed by self-custodied keys are accessible directly on the blockchain; loss of the private key or seed phrase results in permanent, irrecoverable loss of those assets. Self-custody is realised through software wallets (hot wallets), hardware security devices (cold wallets), or multi-signature threshold schemes that distribute key material across several signatories to reduce single-point-of-failure risk.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-cryptographic-primitive",
@@ -14,20 +14,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:private-key",
+        "label": "Private Key"
+      },
+      {
+        "id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:wallet",
+        "label": "Wallet"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

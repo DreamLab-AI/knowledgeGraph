@@ -42,15 +42,29 @@ public:: true
   "@id": "urn:ngm:class:virtual-event",
   "@type": "Class",
   "label": "Virtual Event",
-  "definition": "Virtual Event is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "A Virtual Event is a digitally mediated gathering where participants interact in real time within a shared virtual environment, replicating or augmenting the social, educational, or commercial functions of physical events. Virtual events leverage spatial audio, avatar-based presence, interactive objects, and live streaming to create shared experiences for conferences, concerts, exhibitions, and collaborative workshops across geographically distributed participants.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
+      {"@id": "urn:ngm:class:avatar", "label": "Avatar"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:remote-collaboration", "label": "Remote Collaboration"},
+      {"@id": "urn:ngm:class:telecollaboration", "label": "Telecollaboration"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
+      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -87,14 +101,19 @@ public:: true
 
 
 - ### Definition
-  - Virtual Event is a concept within the metaverse domain. Further enrichment pending.
+  - A Virtual Event is a digitally mediated gathering where participants interact in real time within a shared virtual environment, replicating or augmenting the social, educational, or commercial functions of physical events. Virtual events leverage spatial audio, avatar-based presence, interactive objects, and live streaming to create shared experiences for conferences, concerts, exhibitions, and collaborative workshops across geographically distributed participants.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:VirtualEvent
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Virtual Reality]]
+  - requires [[Avatar]]
+  - enables [[Remote Collaboration]]
+  - enables [[Telecollaboration]]
+  - relatedTo [[Immersive Experience]]
+  - relatedTo [[Metaverse]]
 
 - ### Content
 

@@ -5,29 +5,64 @@
   "public": true,
   "classIri": "urn:ngm:class:ros-2",
   "domain": "robotics",
-  "definition": "ROS 2 (Robot Operating System 2) is an open-source middleware framework providing communication, tooling, and libraries for building modular, real-time-capable robot software systems.",
+  "definition": "ROS 2 (Robot Operating System 2) is an open-source robotics middleware framework developed by Open Robotics that provides a standardised publish-subscribe communication layer built on the DDS (Data Distribution Service) standard, along with a comprehensive ecosystem of drivers, libraries, and tools for sensor integration, motion planning, simulation, and hardware abstraction. ROS 2 supersedes ROS 1 with support for real-time execution, multi-robot systems, production-grade security via DDS-Security, and native Windows and macOS compatibility. It has become the de facto standard software framework for research and increasingly for commercial robotic platforms.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
       "label": "Actuation and Control"
+    },
+    {
+      "id": "urn:ngm:class:middleware",
+      "label": "Middleware"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:robot-control",
+        "label": "Robot Control"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      },
+      {
+        "id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:real-time",
+        "label": "Real Time"
+      },
+      {
+        "id": "urn:ngm:class:simulation-software",
+        "label": "Simulation Software"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

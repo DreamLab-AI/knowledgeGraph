@@ -1,12 +1,16 @@
 - ### Definition
-  - Metaverse Classification is a concept within the metaverse domain. Further enrichment pending.
+  - A structured taxonomy scheme for categorising metaverse platforms, applications, and components according to defined criteria such as openness, immersion level, economic model, and governance structure, enabling systematic comparison and standardised description within the ETSI metaverse domain model.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:MetaverseClassification
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses: [[Etsi Metaverse Domain Model]]
+  - Standardized By: [[Etsi Domain Immersive]]
+  - Related To: [[Metaverse Domain]]
+  - Related To: [[Metaverse Ontology]]
+  - Related To: [[Metaverse Architecture]]
 
 - ### Content
 

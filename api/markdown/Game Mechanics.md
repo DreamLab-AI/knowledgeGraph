@@ -42,16 +42,30 @@ public:: true
   "@id": "urn:ngm:class:game-mechanics",
   "@type": "Class",
   "label": "Game Mechanics",
-  "definition": "Game Mechanics is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "The rules, systems, and interaction patterns that define player agency and emergent behaviour within a game or virtual environment. Game mechanics encompass reward loops, progression systems, physics constraints, NPC behaviours, and economic structures that govern how participants interact with a metaverse platform, and are increasingly encoded in smart contracts for transparent, programmable enforcement.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:play-to-earn-p2-e", "label": "Play-to-Earn (P2E)"},
+      {"@id": "urn:ngm:class:virtual-economy", "label": "Virtual Economy"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
+      {"@id": "urn:ngm:class:economic-parameters", "label": "Economic Parameters"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
+      {"@id": "urn:ngm:class:digital-goods", "label": "Digital Goods"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -87,14 +101,16 @@ public:: true
 
 
 - ### Definition
-  - Game Mechanics is a concept within the metaverse domain. Further enrichment pending.
+  - The rules, systems, and interaction patterns that define player agency and emergent behaviour within a game or virtual environment. Game mechanics encompass reward loops, progression systems, physics constraints, NPC behaviours, and economic structures that govern how participants interact with a metaverse platform, and are increasingly encoded in smart contracts for transparent, programmable enforcement.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:GameMechanics
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **enables**: Play-to-Earn (P2E), Virtual Economy — participatory economic models emerge from well-designed incentive mechanics
+  - **uses**: Smart Contract, Economic Parameters — programmable rule enforcement and tunable economic variables underpin modern game mechanics
+  - **relatedTo**: Immersive Experience, Digital Goods — mechanics shape how participants experience virtual worlds and value in-game goods
 
 - ### Content
 

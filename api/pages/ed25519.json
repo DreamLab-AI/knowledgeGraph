@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ed25519",
   "domain": "blockchain",
-  "definition": "A high-performance elliptic-curve digital signature scheme based on the Twisted Edwards curve over the prime field GF(2^255-19), providing 128-bit security.",
+  "definition": "Ed25519 is a high-performance elliptic-curve digital signature scheme instantiated on the Twisted Edwards curve over the prime field GF(2^255-19), offering approximately 128 bits of security with deterministic signing and compact 64-byte signatures. Designed by Bernstein et al., it is engineered to resist side-channel attacks through constant-time implementation properties and avoids the weak-nonce vulnerabilities that affect ECDSA. Ed25519 is standardised in RFC 8032 and is widely deployed across blockchain networks, SSH authentication (OpenSSH), and decentralised identity systems.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-cryptographic-primitive",
@@ -14,20 +14,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      }
+    ],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      }
+    ],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:private-key",
+        "label": "Private Key"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

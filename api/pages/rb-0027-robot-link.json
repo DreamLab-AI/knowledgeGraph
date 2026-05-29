@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:rb-0027-robot-link",
   "domain": "robotics",
-  "definition": "robot link is a robotics and autonomous systems concept and a type of Robot.",
+  "definition": "A robot link is a rigid (or semi-rigid) structural body that forms one segment of a robot's kinematic chain, connecting adjacent joints and transmitting forces and torques between them. Links define the geometry of the robot's workspace by their length, mass, and inertial properties, and together with joints they constitute the Denavit-Hartenberg representation used in forward and inverse kinematics. Link stiffness, material choice, and mass distribution directly affect dynamic performance, vibration characteristics, and safety in human-robot interaction.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
@@ -17,10 +17,19 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:robot-joint",
+        "label": "Robot Joint"
+      },
+      {
+        "id": "urn:ngm:class:robot-link",
+        "label": "RobotLink"
+      }
+    ],
     "requires": [],
     "enables": [],
     "dependsOn": [],
@@ -30,8 +39,34 @@
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:robot",
+        "label": "Robot"
+      },
+      {
+        "id": "urn:ngm:class:robot-kinematics",
+        "label": "Robot Kinematics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:rigid-body",
+        "label": "Rigid Body"
+      },
+      {
+        "id": "urn:ngm:class:inertia",
+        "label": "Inertia"
+      },
+      {
+        "id": "urn:ngm:class:rb-0039-stiffness",
+        "label": "rb 0039 stiffness"
+      }
+    ]
   },
   "wikilinks": [
     {

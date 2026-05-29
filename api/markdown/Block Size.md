@@ -70,7 +70,7 @@ public:: true
   "@id": "urn:ngm:class:block-size",
   "@type": "Class",
   "label": "Block Size",
-  "definition": "Data capacity limit of a block within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "Block Size is the maximum data capacity—measured in bytes or weight units—that a single block in a blockchain may contain, governing how many transactions can be confirmed per block and therefore setting a fundamental upper bound on network throughput. Larger blocks increase per-block transaction capacity but raise propagation latency, orphan-block rates, and hardware requirements for full nodes, while smaller blocks favour decentralisation and faster propagation at the cost of throughput and higher fee markets when demand exceeds capacity. The Bitcoin block-size debate (resulting in the SegWit upgrade and eventual Bitcoin Cash fork) made block size one of the most consequential and politically contentious protocol parameters in blockchain history.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -87,7 +87,30 @@ public:: true
       "label": "DistributedDataStructure"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:block", "label": "Block"},
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:transaction", "label": "Transaction"},
+      {"@id": "urn:ngm:class:finality", "label": "Finality"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
+      {"@id": "urn:ngm:class:node", "label": "Node"},
+      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:block-time", "label": "Block Time"},
+      {"@id": "urn:ngm:class:latency", "label": "Latency"},
+      {"@id": "urn:ngm:class:gas", "label": "Gas"},
+      {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"},
+      {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"},
+      {"@id": "urn:ngm:class:sidechain", "label": "Sidechain"}
+    ]
+  },
+  "qualityScore": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

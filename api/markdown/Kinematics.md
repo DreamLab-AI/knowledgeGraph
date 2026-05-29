@@ -42,15 +42,29 @@ public:: true
   "@id": "urn:ngm:class:kinematics",
   "@type": "Class",
   "label": "Kinematics",
-  "definition": "Kinematics is a type of Robotics in the robotics domain.",
+  "definition": "Kinematics in robotics describes the geometry of motion of a robot's links and joints without reference to the forces producing that motion. Forward kinematics maps joint parameters to end-effector pose; inverse kinematics solves the reverse problem. Kinematic analysis is foundational for motion planning, trajectory generation, workspace analysis, and robot programming, forming the mathematical basis on which dynamic and control models build.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-actuation-and-control",
       "label": "Actuation and Control"
     }
   ],
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:forward-kinematics", "label": "Forward Kinematics"},
+      {"@id": "urn:ngm:class:inverse-kinematics", "label": "Inverse Kinematics"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:robot-dynamics", "label": "Robot Dynamics"},
+      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:robot-joint", "label": "Robot Joint"},
+      {"@id": "urn:ngm:class:manipulator", "label": "Manipulator"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -87,14 +101,19 @@ public:: true
 
 
 - ### Definition
-  - Kinematics is a concept within the robotics domain. Further enrichment pending.
+  - Kinematics in robotics describes the geometry of motion of a robot's links and joints without reference to the forces producing that motion. Forward kinematics maps joint parameters to end-effector pose; inverse kinematics solves the reverse problem. Kinematic analysis is foundational for motion planning, trajectory generation, workspace analysis, and robot programming.
 
 - ### Semantic Classification
   - owl-class:: robotics:Kinematics
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart [[Forward Kinematics]]
+  - hasPart [[Inverse Kinematics]]
+  - enables [[Robot Dynamics]]
+  - enables [[Motion Planning]]
+  - relatedTo [[Robot Joint]]
+  - relatedTo [[Manipulator]]
 
 - ### Content
 

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:realtime-collaboration",
   "domain": "infrastructure",
-  "definition": "Realtime Collaboration is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Realtime Collaboration is the capability for multiple geographically distributed users to co-create, co-edit, and synchronise shared digital artefacts\u2014documents, 3D scenes, code, or virtual environments\u2014with sub-second latency, such that all participants observe consistent state simultaneously. Technically, it requires low-latency networking, conflict-resolution mechanisms such as CRDTs or operational transforms, and state-synchronisation protocols to reconcile concurrent edits without data loss.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-network-and-comms",
@@ -13,12 +13,38 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:network-latency",
+        "label": "Network Latency"
+      },
+      {
+        "id": "urn:ngm:class:crdt",
+        "label": "CRDT"
+      },
+      {
+        "id": "urn:ngm:class:multi-user-systems",
+        "label": "Multi User Systems"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:virtual-meeting",
+        "label": "Virtual Meeting"
+      },
+      {
+        "id": "urn:ngm:class:immersive-workspaces",
+        "label": "Immersive Workspaces"
+      },
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +53,16 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:metaverse-and-telecollaboration",
+        "label": "Metaverse and Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:social-presence",
+        "label": "Social Presence"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": []

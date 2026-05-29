@@ -1,12 +1,13 @@
 - ### Definition
-  - PEOPLE is a concept within the ngm domain.
+  - A curated personal contact and collaboration index tracking domain experts, industry practitioners, and potential collaborators relevant to AI, immersive technology, and spatial computing initiatives. Entries record relationship context, project overlap, and follow-up actions to support relationship management and opportunity development.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:PEOPLE
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - relatedTo: [[Education and AI]], [[Large Language Models]], [[Collaboration]]
+  - supports: [[Generative AI]], [[Knowledge Management]]
 
 - ### Content
   # Nick Avis

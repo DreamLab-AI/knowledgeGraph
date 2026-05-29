@@ -56,13 +56,29 @@ public:: true
   "label": "Context Window",
   "definition": "The maximum sequence length that a model can process at once, determining how much prior context it can consider during generation or understanding tasks.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
     }
   ],
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},
+      {"@id": "urn:ngm:class:tokenisation", "label": "Tokenisation"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
+      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:language-modeling", "label": "Language Modeling"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -122,7 +138,12 @@ public:: true
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - partOf [[Transformer Architecture]]
+  - requires [[Attention Mechanism]]
+  - requires [[Tokenisation]]
+  - enables [[Large Language Models]]
+  - enables [[Retrieval-Augmented Generation]]
+  - relatedTo [[Language Modeling]]
   - bridges-to:: [[Autonomous Robot]], [[Blockchain]]
 
 - ### Content

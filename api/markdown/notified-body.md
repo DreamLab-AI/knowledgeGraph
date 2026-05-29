@@ -7,7 +7,12 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **implements** [[Conformity Assessment]] — notified bodies execute third-party conformity assessment procedures
+  - **supports** [[National Competent Authority]] — notified bodies operate under the oversight of national notifying authorities
+  - **supports** [[AI Governance]] — third-party certification strengthens the overall AI governance system
+  - **partOf** [[Regulatory Framework]] — notified bodies are a formal component of the EU product certification framework
+  - **dependsOn** [[Accountability]] — notified bodies are accountable to notifying authorities and subject to periodic review
+  - **dependsOn** [[Transparency]] — assessment findings and certificate status must be disclosed to relevant authorities
 
 - ### Content
   - A conformity assessment body notified under the AI Act and other relevant EU harmonisation legislation, responsible for performing third-party conformity assessment of certain high-risk AI systems.

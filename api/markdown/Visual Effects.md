@@ -37,15 +37,29 @@ public:: true
   "@id": "urn:ngm:class:visual-effects",
   "@type": "Class",
   "label": "Visual Effects",
-  "definition": "Visual Effects is a spatial computing concept and a type of spatial-computing.",
+  "definition": "Visual Effects (VFX) in spatial and real-time contexts encompasses the computational techniques applied after or during scene rendering to enhance visual fidelity. These include particle systems for fire and smoke simulation, post-processing stacks (bloom, depth-of-field, ambient occlusion), procedural shader effects, and screen-space reflections. Real-time VFX are increasingly GPU-accelerated via compute shaders and physically-based rendering pipelines.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-display-and-rendering",
       "label": "Display and Rendering"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:shader", "label": "Shader"},
+      {"@id": "urn:ngm:class:particle-systems", "label": "Particle Systems"},
+      {"@id": "urn:ngm:class:post-processing", "label": "Post Processing"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:rendering-pipeline", "label": "Rendering Pipeline"},
+      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -83,11 +97,16 @@ public:: true
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses:: [[Shader]]
+  - uses:: [[Particle Systems]]
+  - uses:: [[Post Processing]]
+  - requires:: [[Rendering Pipeline]]
+  - requires:: [[GPU Compute]]
+  - partOf:: [[Real-Time Rendering]]
 
 - ### Content
   # VisualEffects
-  VisualEffects represents a key component in Metaverse infrastructure and technology. Research: VisualEffects in real-time - particle systems, post-processing, shader effects, VFX techniques
+  Visual Effects in real-time and spatial computing contexts encompass computational techniques applied during or after scene rendering to enhance visual fidelity. Particle systems simulate fire, smoke, water, and crowds; post-processing stacks add bloom, depth-of-field, ambient occlusion, and screen-space reflections; custom shaders implement stylised surface responses and procedural animations. Modern VFX pipelines leverage compute shaders on the GPU to execute these effects at interactive frame rates within physically-based rendering frameworks.
   - https://www.khronos.org/ - Industry standards
   - https://www.w3.org/TR/ - Web standards
   - https://developer.mozilla.org/ - Technical documentation

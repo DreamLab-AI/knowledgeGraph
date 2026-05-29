@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:node-based-editor",
   "domain": "spatial-computing",
-  "definition": "Node Based Editor is a spatial computing concept and a type of spatial-computing.",
+  "definition": "A visual authoring tool that represents computational logic, material properties, or content workflows as directed graphs of interconnected nodes and edges, enabling non-linear dataflow programming. Node-based editors are widely used in game engines, VFX pipelines, and spatial computing tools for shader authoring, procedural geometry generation, and real-time behaviour scripting.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -13,18 +13,50 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:user-interface",
+        "label": "User Interface"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:procedural-generation",
+        "label": "Procedural Generation"
+      },
+      {
+        "id": "urn:ngm:class:world-building",
+        "label": "World Building"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:shader",
+        "label": "Shader"
+      },
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:3-d-asset",
+        "label": "3D Asset"
+      },
+      {
+        "id": "urn:ngm:class:rendering-engine",
+        "label": "Rendering Engine"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": []

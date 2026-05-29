@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:digital-entertainment",
   "@type": "Class",
   "label": "Digital Entertainment",
-  "definition": "Digital Entertainment is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Digital Entertainment encompasses interactive and passive media experiences delivered through digital platforms, including video games, streaming services, virtual concerts, and immersive XR content. Within the metaverse context, digital entertainment drives user engagement and economic activity, often integrating blockchain-based ownership of digital assets and in-world economies.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -60,6 +61,38 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:metaverse-application",
+        "label": "Metaverse Application"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:game-development",
+        "label": "Game Development"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:nft",
+        "label": "NFT"
+      }
+    ]
   }
 }
 ```
@@ -96,7 +129,7 @@ public:: true
 
 
 - ### Definition
-  - Digital Entertainment is a concept within the metaverse domain. Further enrichment pending.
+  - Digital Entertainment encompasses interactive and passive media experiences delivered through digital platforms, including video games, streaming services, virtual concerts, and immersive XR content. Within the metaverse context, digital entertainment drives user engagement and economic activity, often integrating blockchain-based ownership of digital assets and in-world economies.
 
 bridges-to:: [[Blockchain]]
 
@@ -105,7 +138,12 @@ bridges-to:: [[Blockchain]]
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses [[Game Engine]]
+  - Uses [[Blockchain]]
+  - Enables [[Metaverse Application]]
+  - Related To [[Game Development]]
+  - Related To [[Virtual Reality]]
+  - Related To [[NFT]]
 
 - ### Content
 

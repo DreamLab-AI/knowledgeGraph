@@ -1,12 +1,15 @@
 - ### Definition
-  - solar plans is a concept within the ngm domain.
+  **Solar plans** describe engineered configurations and simulation-driven optimisation analyses for solar PV installations. This page focuses on a three-tier cascading array designed for Cumbria, England, using a differential evolution algorithm to maximise annual energy yield within a constrained 10 m² footprint at 54.5°N latitude. The resulting design — 18 panels across three tiers at 43–45° tilt with 20% horizontal overlap — achieves 3,179 kWh/year, compared to ~1,065 kWh/year for a conventional flat array.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:SolarPlans
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses simulation (differential evolution optimisation) and optimisation algorithms to derive tier angles and overlap.
+  - Contributes to sustainability goals, carbon footprint reduction, and renewable energy generation at the local/community scale.
+  - Enables technology adoption of novel PV configurations in high-latitude temperate climates.
+  - IoT integration (separate MPPT per tier, monitoring systems) supports real-time performance validation.
 
 - ### Content
   # Three-Tier Solar Collector System Analysis for Cumbria, England

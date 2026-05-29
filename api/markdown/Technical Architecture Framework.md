@@ -42,9 +42,10 @@ public:: true
   "@id": "urn:ngm:class:technical-architecture-framework",
   "@type": "Class",
   "label": "Technical Architecture Framework",
-  "definition": "Technical Architecture Framework is a type of Definitions and frameworks for Metaverse in the spatial computing domain.",
+  "definition": "A Technical Architecture Framework is a structured methodology or reference model that defines the components, interfaces, and integration patterns needed to design and evaluate complex technology systems — such as metaverse platforms, distributed applications, or spatial-computing stacks. Frameworks such as ETSI's metaverse domain model or IEEE P2874 provide vocabulary, layered decompositions, and conformance criteria that guide architectural decision-making and interoperability.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -55,7 +56,23 @@ public:: true
       "label": "Definitions and frameworks for Metaverse"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:technology-infrastructure", "label": "Technology Infrastructure"},
+      {"@id": "urn:ngm:class:technology-ecosystem", "label": "Technology Ecosystem"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:systems-engineering", "label": "Systems Engineering"},
+      {"@id": "urn:ngm:class:distributed-system-architecture", "label": "Distributed System Architecture"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:etsi-metaverse-domain-model", "label": "Etsi Metaverse Domain Model"},
+      {"@id": "urn:ngm:class:technical-architecture", "label": "Technical Architecture"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:open-standard", "label": "Open Standard"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -91,14 +108,17 @@ public:: true
 
 
 - ### Definition
-  - Technical Architecture Framework is a concept within the metaverse domain. Further enrichment pending.
+  - A Technical Architecture Framework is a structured methodology or reference model that defines the components, interfaces, and integration patterns needed to design and evaluate complex technology systems — such as metaverse platforms, distributed applications, or spatial-computing stacks. Frameworks such as ETSI's metaverse domain model or IEEE P2874 provide vocabulary, layered decompositions, and conformance criteria that guide architectural decision-making and interoperability.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:TechnicalArchitectureFramework
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - enables:: Technology Infrastructure, Technology Ecosystem
+  - uses:: Systems Engineering, Distributed System Architecture
+  - relatedTo:: Etsi Metaverse Domain Model, Technical Architecture
+  - standardizedBy:: Open Standard
 
 - ### Content
 

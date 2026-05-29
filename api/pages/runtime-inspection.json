@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:runtime-inspection",
   "domain": "artificial-intelligence",
-  "definition": "Runtime Inspection is a artificial intelligence concept and a type of Ai Governance.",
+  "definition": "Runtime Inspection is the practice of dynamically examining the internal state, activations, attention patterns, and behavioural properties of an AI model while it is executing inference, as opposed to static analysis of weights or architecture prior to deployment. It enables detection of unexpected or dangerous reasoning paths, verification of safety constraints during live operation, and post-hoc explanation of individual predictions by observing intermediate computations at the moment they occur.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -13,25 +13,73 @@
     },
     {
       "id": "urn:ngm:class:ai-governance",
-      "label": "Ai Governance"
+      "label": "AI Governance"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:interpretability",
+        "label": "Interpretability"
+      },
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:model-transparency",
+        "label": "Model Transparency"
+      },
+      {
+        "id": "urn:ngm:class:monitoring-dashboard",
+        "label": "Monitoring Dashboard"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:traceability-mechanism",
+        "label": "Traceability Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:runtime-environment",
+        "label": "Runtime Environment"
+      },
+      {
+        "id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      }
+    ]
   },
   "wikilinks": [
     {

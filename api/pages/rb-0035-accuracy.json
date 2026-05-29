@@ -5,33 +5,69 @@
   "public": true,
   "classIri": "urn:ngm:class:rb-0035-accuracy",
   "domain": "robotics",
-  "definition": "Accuracy - Difference between commanded and actual position",
+  "definition": "Robot accuracy is the closeness of agreement between a robot's commanded pose and its actual achieved pose, measured as the mean positional or orientational error across multiple repeated commanded positions. Defined in ISO 9283, it encompasses pose accuracy, path accuracy, and static compliance accuracy, and is distinct from repeatability, which measures the spread of repeated attempts at the same pose rather than deviation from the commanded value.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
       "label": "Actuation and Control"
     },
     {
-      "id": "urn:ngm:class:robot",
-      "label": "Robot"
+      "id": "urn:ngm:class:accuracy",
+      "label": "Accuracy"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:rb-0048-pid-controller",
+        "label": "rb 0048 pid controller"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:rb-0034-repeatability",
+        "label": "rb 0034 repeatability"
+      },
+      {
+        "id": "urn:ngm:class:rb-0036-resolution",
+        "label": "rb 0036 resolution"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:rb-0087-safety-standard",
+        "label": "rb 0087 safety standard"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rb-0021-robot-kinematics",
+        "label": "rb 0021 robot kinematics"
+      },
+      {
+        "id": "urn:ngm:class:rb-0029-inverse-kinematics",
+        "label": "rb 0029 inverse kinematics"
+      },
+      {
+        "id": "urn:ngm:class:calibration",
+        "label": "Calibration"
+      },
+      {
+        "id": "urn:ngm:class:precision",
+        "label": "Precision"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -37,15 +37,31 @@ public:: true
   "@id": "urn:ngm:class:render-pipeline",
   "@type": "Class",
   "label": "Render Pipeline",
-  "definition": "Render Pipeline is a spatial computing concept and a type of spatial-computing.",
+  "definition": "A Render Pipeline is the ordered sequence of programmable and fixed-function GPU stages that transforms 3D scene geometry and material data into a final 2D image frame, encompassing vertex shading, rasterisation, fragment shading, post-processing, and presentation. Modern pipelines in Vulkan, Metal, and WebGPU expose fine-grained control over each stage, enabling techniques such as deferred rendering, ray tracing, and compute-shader-based effects that underpin real-time immersive experiences in XR headsets and metaverse platforms.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-display-and-rendering",
       "label": "Display and Rendering"
     }
   ],
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:shader", "label": "Shader"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:3-d-rendering-engine", "label": "3D Rendering Engine"},
+      {"@id": "urn:ngm:class:physics-engine", "label": "Physics Engine"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
+      {"@id": "urn:ngm:class:simulation", "label": "Simulation"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:signal-processing", "label": "Signal Processing"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -76,14 +92,19 @@ public:: true
 
 
 - ### Definition
-  - RenderPipeline is a concept within the ngm domain.
+  - A Render Pipeline is the ordered sequence of programmable and fixed-function GPU stages that transforms 3D scene geometry and material data into a final 2D image frame, encompassing vertex shading, rasterisation, fragment shading, post-processing, and presentation. Modern pipelines in Vulkan, Metal, and WebGPU expose fine-grained control over each stage, enabling techniques such as deferred rendering, ray tracing, and compute-shader-based effects that underpin real-time immersive experiences in XR headsets and metaverse platforms.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:RenderPipeline
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart [[Shader]]
+  - uses [[3D Rendering Engine]]
+  - uses [[Physics Engine]]
+  - enables [[Immersive Experience]]
+  - enables [[Simulation]]
+  - relatedTo [[Signal Processing]]
 
 - ### Content
   # RenderPipeline

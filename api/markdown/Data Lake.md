@@ -54,12 +54,12 @@ public:: true
   "@id": "urn:ngm:class:data-lake",
   "@type": "Class",
   "label": "Data Lake",
-  "definition": "Centralized repository that stores structured and unstructured data at scale in its native format, enabling big data analytics and machine learning workloads.",
+  "definition": "A centralized repository that stores structured, semi-structured, and unstructured data at any scale in its native format, deferring schema enforcement to query time (schema-on-read). Data lakes enable big-data analytics, machine learning pipelines, and exploratory analysis without upfront data modelling, serving as the foundational ingestion layer for modern data architectures.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:cat-ai-infrastructure",
+      "@id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure (Category)"
     },
     {
@@ -67,7 +67,28 @@ public:: true
       "label": "ETSI Domain: Data Management + AI"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"},
+      {"@id": "urn:ngm:class:etl-pipeline", "label": "ETL Pipeline"},
+      {"@id": "urn:ngm:class:batch-processing", "label": "Batch Processing"},
+      {"@id": "urn:ngm:class:data-storage", "label": "Data Storage"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
+      {"@id": "urn:ngm:class:vector-database", "label": "Vector Database"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:machine-learning-pipeline", "label": "Machine Learning Pipeline"},
+      {"@id": "urn:ngm:class:machine-learning-infrastructure", "label": "Machine Learning Infrastructure"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:data-fabric-architecture", "label": "Data Fabric Architecture"},
+      {"@id": "urn:ngm:class:data-storage-layer", "label": "Data Storage Layer"},
+      {"@id": "urn:ngm:class:graph-database", "label": "Graph Database"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -75,6 +96,8 @@ public:: true
   }
 }
 ```
+
+Data lakes differ from traditional data warehouses in that they retain raw, unprocessed data and apply structure only at query time. This schema-on-read approach maximises flexibility for machine learning workloads where feature engineering requirements are not known in advance. Modern data lake architectures (lakehouses) increasingly blend the structure of warehouses with the flexibility of lakes, incorporating transactional metadata layers like Apache Iceberg or Delta Lake.
 
 ```json-ld
 {

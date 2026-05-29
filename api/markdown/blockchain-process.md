@@ -7,6 +7,10 @@
 
 - ### Relationships
   - bridges-to:: [[Blockchain]]
+  - requires:: [[Consensus Mechanism]], [[Cryptographic Primitive]]
+  - uses:: [[Consensus Protocol]], [[Blockchain Network]]
+  - part-of:: [[Blockchain Domain]]
+  - enables:: [[Blockchain Transaction]], [[Blockchain Scalability]]
 
 - ### Content
 

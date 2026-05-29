@@ -62,9 +62,10 @@ public:: true
   "@id": "urn:ngm:class:rasterization",
   "@type": "Class",
   "label": "Rasterization",
-  "definition": "Rasterization is a spatial computing concept and a type of Metaverse.",
+  "definition": "The dominant real-time rendering technique that converts 3D geometric primitives — predominantly triangles — into a 2D pixel representation by determining per-pixel coverage, depth, and colour through a GPU-accelerated pipeline of vertex processing, primitive assembly, scan conversion, fragment shading, and output merging. Rasterization trades photorealistic accuracy for deterministic, high-throughput performance suitable for interactive applications.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-display-and-rendering",
@@ -80,6 +81,40 @@ public:: true
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:vertex-shader",
+        "label": "Vertex Shader"
+      },
+      {
+        "@id": "urn:ngm:class:pixel-shader",
+        "label": "Pixel Shader"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:level-of-detail",
+        "label": "Level of Detail"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:rendering-technique",
+        "label": "Rendering Technique"
+      },
+      {
+        "@id": "urn:ngm:class:post-processing",
+        "label": "Post Processing"
+      }
+    ]
   }
 }
 ```
@@ -136,12 +171,16 @@ public:: true
 
 
 - ### Definition
-  - Rasterization is a concept within the mv domain.
+  - The dominant real-time rendering technique that converts 3D geometric primitives — predominantly triangles — into a 2D pixel representation by determining per-pixel coverage, depth, and colour through a GPU-accelerated pipeline of vertex processing, primitive assembly, scan conversion, fragment shading, and output merging. Rasterization trades photorealistic accuracy for deterministic, high-throughput performance suitable for interactive applications.
 - ### Semantic Classification
   - owl-class:: spatial-computing:Rasterization
   - owl-role:: Concept
 - ### Relationships
   - is-subclass-of:: [[Metaverse]]
+  - Uses: [[Vertex Shader]], [[Pixel Shader]]
+  - Supports: [[Rendering Technique]], [[Post Processing]]
+  - Contrasts With: [[Ray Tracing]]
+  - Related To: [[Level of Detail]]
 - ### Content
   #### Key Characteristics
   - **Triangle-Based**: Processes geometry as discrete triangles

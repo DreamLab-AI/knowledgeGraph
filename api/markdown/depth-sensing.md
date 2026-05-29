@@ -1,5 +1,5 @@
 - ### Definition
-  - Depth Sensing is a concept within the metaverse domain. Further enrichment pending.
+  - Depth Sensing is the measurement and capture of per-pixel distance information from a sensor to surfaces in the environment, producing depth maps or point clouds. Technologies include structured light, time-of-flight (ToF), active stereoscopy, and LiDAR. Depth sensing is foundational to augmented reality occlusion, robotic navigation, 3D scene reconstruction, and gesture recognition in spatial computing systems.
 
 bridges-to:: [[Sensor Input]]
 
@@ -8,7 +8,12 @@ bridges-to:: [[Sensor Input]]
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses [[Lidar]]
+  - uses [[Stereo Camera]]
+  - enables [[3D Reconstruction]]
+  - enables [[Point Cloud]]
+  - enables [[SLAM]]
+  - relatedTo [[Depth Estimation]]
 
 - ### Content
 

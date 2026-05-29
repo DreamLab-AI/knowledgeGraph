@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:prohibited-ai-practice",
   "domain": "artificial-intelligence",
-  "definition": "AI systems deploying subliminal/manipulative techniques, exploiting vulnerabilities, social scoring, or real-time biometric identification in publicly accessible spaces (with limited law enforcement exceptions).",
+  "definition": "Prohibited AI Practices are categories of AI deployment banned under EU AI Act Article 5 (effective 2 February 2025), covering subliminal manipulation, exploitation of vulnerability groups, social scoring by public or private bodies, and real-time remote biometric identification in publicly accessible spaces. Violations carry fines up to \u20ac35 million or 7% of global annual turnover.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -14,20 +14,52 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:manipulation",
+        "label": "Manipulation"
+      },
+      {
+        "id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      }
+    ]
   },
   "wikilinks": [
     {

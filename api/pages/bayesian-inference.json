@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:bayesian-inference",
   "domain": "artificial-intelligence",
-  "definition": "Bayesian Inference is a foundational concept in artificial intelligence that serves as a classification parent for 3 related concepts in the ontology.",
+  "definition": "Bayesian Inference is a statistical method that updates the probability of a hypothesis as new evidence becomes available, using Bayes' theorem to combine prior beliefs with likelihood functions derived from observed data. In machine learning it enables uncertainty quantification, model selection, and principled incorporation of domain knowledge, underpinning probabilistic graphical models, variational autoencoders, and active learning frameworks.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -14,20 +14,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.3,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

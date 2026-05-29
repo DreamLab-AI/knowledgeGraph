@@ -1,5 +1,5 @@
 - ### Definition
-  - Digital Gaming is a concept within the metaverse domain. Further enrichment pending.
+  - Digital Gaming encompasses interactive software experiences delivered across platforms including PCs, consoles, and mobile devices, encompassing game design, virtual economies, player interaction systems, and increasingly blockchain-based asset ownership. It represents a convergence of entertainment, spatial computing, and digital economy mechanisms within persistent or session-based virtual environments.
 
 bridges-to:: [[Blockchain]]
 
@@ -8,7 +8,10 @@ bridges-to:: [[Blockchain]]
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **relatedTo**: [[Blockchain Gaming]], [[Immersive Gaming]]
+  - **uses**: [[Game Engine]], [[NFT]]
+  - **enables**: [[Digital Ownership]], [[Immersive Experience]]
+  - **bridgesTo**: [[Blockchain]]
 
 - ### Content
 

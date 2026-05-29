@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:transaction-pool",
   "domain": "blockchain",
-  "definition": "Pending unconfirmed transactions within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "The Transaction Pool (mempool) is the in-memory distributed data structure held by each full node that stores validated but as-yet-unconfirmed transactions awaiting inclusion in a block. Nodes propagate transactions through the pool via gossip, miners and validators select transactions (typically by fee priority), and the pool is cleared as blocks confirm or transactions expire. Pool size, fee dynamics, and congestion directly determine user-experienced confirmation latency and cost.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-network-component",
@@ -21,21 +21,61 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:miner",
+        "label": "Miner"
+      },
+      {
+        "id": "urn:ngm:class:fee-market",
+        "label": "Fee Market"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gossip-protocol",
+        "label": "Gossip Protocol"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:mempool",
+        "label": "Mempool"
+      },
+      {
+        "id": "urn:ngm:class:block-propagation",
+        "label": "Block Propagation"
+      },
+      {
+        "id": "urn:ngm:class:network-synchronization",
+        "label": "Network Synchronization"
+      },
+      {
+        "id": "urn:ngm:class:double-spending",
+        "label": "Double Spending"
+      }
+    ]
   },
   "wikilinks": [
     {

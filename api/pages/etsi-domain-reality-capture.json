@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:etsi-domain-reality-capture",
   "domain": "spatial-computing",
-  "definition": "ETSI technical framework enabling digital reconstruction of physical environments and objects through 3D scanning, photogrammetry, sensor fusion, and motion capture to create semantic DigitalTwin|digital twins for metaverse and immersive environments.",
+  "definition": "An ETSI standardisation domain enabling digital reconstruction of physical environments and objects through 3D scanning, photogrammetry, sensor fusion, depth sensing, and motion capture to create semantically labelled digital twins for metaverse and immersive applications. Governed by ETSI GS ARF 004-6 and GR ARF 010, this domain defines interoperability requirements for real-time mesh generation, volumetric video coding (ISO V3C/V-PCC), and integration with scene management and digital twin platforms.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -13,17 +13,52 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.4,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      },
+      {
+        "id": "urn:ngm:class:motion-capture-rig",
+        "label": "Motion Capture Rig"
+      },
+      {
+        "id": "urn:ngm:class:reality-capture-system",
+        "label": "Reality Capture System"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:depth-sensing",
+        "label": "Depth Sensing"
+      },
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

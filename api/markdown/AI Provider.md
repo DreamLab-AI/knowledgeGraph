@@ -98,15 +98,32 @@ public:: true
   "@id": "urn:ngm:class:ai-provider",
   "@type": "Class",
   "label": "AI Provider",
-  "definition": "An individual, organisation, or legal entity that develops, produces, or supplies an artificial intelligence system, including responsibility for design decisions, training processes, system capabilities, documentation, and compliance with applicable requirements, and who either places the AI sys...",
+  "definition": "An individual, organisation, or legal entity that develops, produces, or supplies an AI system, assuming primary accountability for design decisions, training processes, capabilities, documentation, and regulatory compliance. Under the EU AI Act a provider places a system on the market under their own name, substantially modifies an existing system, or makes it available for use, thereby triggering obligations including conformity assessment, technical documentation, quality management, human oversight design, and post-market monitoring.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:ai-lifecycle", "label": "AI Lifecycle"},
+      {"@id": "urn:ngm:class:ai-impact-assessment", "label": "AI Impact Assessment"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:eu-ai-act", "label": "EU AI Act"},
+      {"@id": "urn:ngm:class:ai-governance-framework", "label": "AI Governance Framework"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:ai-operator", "label": "AI Operator"},
+      {"@id": "urn:ngm:class:ai-user", "label": "AI User"},
+      {"@id": "urn:ngm:class:accountability", "label": "Accountability"},
+      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -221,7 +238,9 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - bridges-to:: [[AI Agent System]]
+  - requires:: [[AI Lifecycle]], [[AI Impact Assessment]]
+  - implements:: [[EU AI Act]], [[AI Governance Framework]]
+  - relatedTo:: [[AI Operator]], [[AI User]], [[Accountability]], [[Risk Management]]
 
 - ### Content
   - An individual, organisation, or legal entity that develops, produces, or supplies an artificial intelligence system, including responsibility for design decisions, training processes, system capabilities, documentation, and compliance with applicable requirements, and who either places the AI system on the market under their own name or trademark, substantially modifies an existing system, or makes the system available for use, thereby assuming primary accountability for the system's characteristics, performance, and conformity with regulatory obligations.

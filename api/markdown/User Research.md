@@ -44,7 +44,7 @@ public:: true
   "label": "User Research",
   "definition": "Systematic investigation of user behaviors, needs, preferences, and experiences in metaverse environments through qualitative and quantitative mods to inform design decisions and improve virtual world experiences.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-interaction",
@@ -55,6 +55,20 @@ public:: true
       "label": "Research Methods"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:eye-tracking", "label": "Eye Tracking"},
+      {"@id": "urn:ngm:class:avatar", "label": "Avatar"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"},
+      {"@id": "urn:ngm:class:accessibility", "label": "Accessibility"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
+      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
@@ -99,6 +113,12 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Research Methods]]
+  - uses:: [[Eye Tracking]]
+  - uses:: [[Avatar]]
+  - supports:: [[Human Computer Interaction]]
+  - supports:: [[Accessibility]]
+  - relatedTo:: [[Immersive Experience]]
+  - relatedTo:: [[Virtual Reality]]
 
 - ### Content
 

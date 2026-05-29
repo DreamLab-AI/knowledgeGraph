@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:xr-headset",
   "@type": "Class",
   "label": "XR Headset",
-  "definition": "A head-mounted display device that delivers immersive visual and audio experiences for virtual reality, augmented reality, or mixed reality applications, featuring integrated displays, tracking sensors, audio systems, and processing capabilities for rendering digital content in the user's field o...",
+  "definition": "A head-mounted display device that delivers immersive visual and audio experiences for virtual reality, augmented reality, or mixed reality applications, featuring integrated displays, tracking sensors, audio systems, and processing capabilities for rendering digital content in the user's field of view.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-display-and-rendering",
@@ -59,6 +60,21 @@ public:: true
       "label": "XR Hardware"
     }
   ],
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
+      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:web-xr-api", "label": "WebXR API"},
+      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:wearable-computing-platform", "label": "Wearable Computing Platform"},
+      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
@@ -109,6 +125,9 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[XR Hardware]]
+  - **Enables**: [[Virtual Reality]], [[Augmented Reality]], [[Spatial Computing]]
+  - **Requires**: [[WebXR API]] (browser session), [[Sensor Fusion]] (6DoF tracking)
+  - **Part-of**: [[Wearable Computing Platform]], [[Metaverse]] access layer
 
 - ### Content
 

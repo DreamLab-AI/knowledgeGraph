@@ -33,16 +33,28 @@ public:: true
   "@id": "urn:ngm:class:python-sample2",
   "@type": "Class",
   "label": "Python Sample2",
-  "definition": "Python Sample2 is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Python Sample2 is a minimal Logseq JavaScript/Pyodide evaluation block used as a stub execution test. It demonstrates the evalblock mechanism that allows inline code execution within the Logseq knowledge graph, serving as a baseline template for more complex Python integrations that interact with the Logseq Plugin API.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:code-generation", "label": "Code Generation"},
+      {"@id": "urn:ngm:class:knowledge-management", "label": "Knowledge Management"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:software-engineering", "label": "Software Engineering"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -72,14 +84,16 @@ public:: true
 
 
 - ### Definition
-  - PythonSample2 is a concept within the ngm domain.
+  - Python Sample2 is a minimal Logseq JavaScript/Pyodide evaluation block used as a stub execution test. It demonstrates the evalblock mechanism that allows inline code execution within the Logseq knowledge graph, serving as a baseline template for more complex Python integrations.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:PythonSample2
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - relatedTo:: [[Code Generation]], [[Knowledge Management]]
+  - partOf:: [[Software Engineering]]
+  - uses:: [[Knowledge Graph]]
 
 - ### Content
   - ```javascript

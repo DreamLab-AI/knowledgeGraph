@@ -42,20 +42,62 @@ public:: true
   "@id": "urn:ngm:class:calibration-tools",
   "@type": "Class",
   "label": "Calibration Tools",
-  "definition": "Calibration Tools is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Software and hardware utilities used to align, tune, and verify the accuracy of XR sensors, displays, and tracking systems. Calibration establishes ground-truth references for IMUs, cameras, optical tracking arrays, and display geometry, ensuring that virtual content is correctly registered to the physical world and that tracking data is within acceptable error tolerances.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-display-and-rendering",
       "label": "Display and Rendering"
     }
   ],
-  "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:imu",
+        "label": "IMU"
+      },
+      {
+        "@id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:optical-tracking",
+        "label": "Optical Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:environmental-verification",
+        "label": "Environmental Verification"
+      },
+      {
+        "@id": "urn:ngm:class:xr-runtime-environment",
+        "label": "XR Runtime Environment"
+      }
+    ]
   }
 }
 ```
@@ -87,23 +129,27 @@ public:: true
 
 
 - ### Definition
-  - Calibration Tools is a concept within the metaverse domain. Further enrichment pending.
+  - Software and hardware utilities used to align, tune, and verify the accuracy of XR sensors, displays, and tracking systems. Calibration establishes ground-truth references for IMUs, cameras, optical tracking arrays, and display geometry, ensuring that virtual content is correctly registered to the physical world and that tracking data is within acceptable error tolerances.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:CalibrationTools
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Supports [[Optical Tracking]]
+  - Supports [[Environmental Verification]]
+  - Supports [[XR Runtime Environment]]
+  - Uses [[IMU]]
+  - Uses [[Photogrammetry]]
+  - Requires [[Rendering Pipeline]]
+  - Enables [[Mixed Reality]]
+  - Enables [[Augmented Reality]]
 
 - ### Content
 
   ## Overview
 
-  Calibration Tools represents an abstract concept in the metaverse ontology hierarchy.
-
-  #### Related Concepts
-  - [[owl:Thing]]
+  Calibration tools are essential for maintaining tracking accuracy and visual fidelity in XR systems. They encompass display geometry calibrators that correct lens distortion, IMU bias estimation routines, stereo camera extrinsic calibration procedures, and optical marker placement wizards. Without regular calibration, positional drift degrades user comfort and breaks world-locked AR overlays.
 
 - ### Provenance
   - sources::

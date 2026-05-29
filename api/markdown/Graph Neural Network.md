@@ -190,9 +190,9 @@ public:: true
   "@id": "urn:ngm:class:graph-neural-network",
   "@type": "Class",
   "label": "Graph Neural Network",
-  "definition": "Graph Neural Network is a artificial intelligence concept and a type of Neural Network.",
+  "definition": "A Graph Neural Network (GNN) is a deep learning architecture that operates directly on graph-structured data by iteratively propagating and aggregating feature information across node neighbourhoods. GNNs generalise convolutional and attention mechanisms to non-Euclidean domains, learning node, edge, and graph-level representations suitable for tasks including node classification, link prediction, and graph classification across domains such as knowledge graphs, social networks, molecular modelling, and recommendation systems.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-model-architecture",
@@ -203,6 +203,20 @@ public:: true
       "label": "Neural Network"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
+      {"@id": "urn:ngm:class:anomaly-detection", "label": "Anomaly Detection"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
+      {"@id": "urn:ngm:class:semantic-web", "label": "Semantic Web"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -432,7 +446,12 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses [[Knowledge Graph]]
+  - uses [[Deep Learning]]
+  - enables [[Retrieval-Augmented Generation]]
+  - enables [[Anomaly Detection]]
+  - relatedTo [[Transformer]]
+  - relatedTo [[Semantic Web]]
 
 - ### Content
   - ### Primary Definition

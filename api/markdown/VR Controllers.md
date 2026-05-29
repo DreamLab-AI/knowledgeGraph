@@ -48,7 +48,8 @@ public:: true
   "label": "VR Controllers",
   "definition": "Handheld input devices designed for virtual reality systems that enable users to interact with virtual environments through motion tracking, buttons, triggers, and haptic feedback, providing intuitive manipulation of virtual objects and navigation through immersive spaces.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-interaction",
@@ -59,11 +60,44 @@ public:: true
       "label": "XR Hardware"
     }
   ],
-  "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:motion-tracking",
+        "label": "Motion Tracking"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "@id": "urn:ngm:class:hand-tracking",
+        "label": "Hand Tracking"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:virtual-reality-vr",
+        "label": "Virtual Reality (VR)"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      }
+    ]
   }
 }
 ```
@@ -109,6 +143,12 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[XR Hardware]]
+  - Has part [[Haptic Feedback]]
+  - Has part [[Motion Tracking]]
+  - Enables [[Immersive Experience]]
+  - Enables [[Hand Tracking]]
+  - Uses [[Virtual Reality (VR)]]
+  - Related to [[Human Computer Interaction]]
 
 - ### Content
 

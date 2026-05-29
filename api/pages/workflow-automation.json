@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:workflow-automation",
   "domain": "artificial-intelligence",
-  "definition": "Workflow automation is the use of software, including AI-driven orchestration, to execute a series of tasks or business processes with minimal human intervention.",
+  "definition": "Workflow automation is the systematic encoding of business processes, data-transformation pipelines, or task sequences into software so that they execute reliably and repeatedly with minimal human intervention, using rule-based triggers, conditional branching, and, increasingly, AI-driven orchestration of tool-using agents. It spans a spectrum from deterministic robotic process automation (RPA), which replicates human UI interactions, to agentic AI systems where large language models plan and execute multi-step tasks by calling APIs, running code, and delegating sub-tasks. Workflow automation reduces operational latency, enforces process compliance, and enables organisations to scale knowledge-work capacity.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-application",
@@ -14,20 +14,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      },
+      {
+        "id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:orchestration",
+        "label": "Orchestration"
+      },
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:planning-and-scheduling",
+        "label": "Planning and Scheduling"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

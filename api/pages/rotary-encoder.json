@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:rotary-encoder",
   "domain": "robotics",
-  "definition": "Rotary encoder measures shaft angle and direction.",
+  "definition": "A rotary encoder is an electromechanical transducer that converts shaft angular position or velocity into digital pulses or absolute position codes. Incremental encoders output A/B quadrature pulses enabling direction and relative position measurement; absolute encoders output a unique binary code at every shaft position. Used ubiquitously in robot joints, servo motors, and motion-control systems for precise closed-loop feedback.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-perception",
@@ -17,21 +17,60 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      },
+      {
+        "id": "urn:ngm:class:pid-controller",
+        "label": "Pid Controller"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:servo-motor",
+        "label": "Servo Motor"
+      },
+      {
+        "id": "urn:ngm:class:dc-servo-motor",
+        "label": "DC Servo Motor"
+      },
+      {
+        "id": "urn:ngm:class:stepper-motor",
+        "label": "Stepper Motor"
+      },
+      {
+        "id": "urn:ngm:class:imu",
+        "label": "IMU"
+      },
+      {
+        "id": "urn:ngm:class:odometry",
+        "label": "Odometry"
+      },
+      {
+        "id": "urn:ngm:class:force-torque-sensor",
+        "label": "Force Torque Sensor"
+      }
+    ]
   },
   "wikilinks": [
     {

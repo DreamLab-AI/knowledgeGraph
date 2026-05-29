@@ -5,7 +5,11 @@
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Supports: [[Model Training]]
+  - Requires: [[Loss Function]]
+  - Enables: [[Deep Learning]]
+  - Contrasts With: [[Overfitting]]
+  - Related To: [[Dropout]], [[Training]]
 - ### Content
   - ### Primary Definition
   **Regularisation** comprises techniques that constrain or penalise model complexity during training to prevent overfitting and improve generalisation. Common methods include L1/L2 penalties, dropout, and early stopping.

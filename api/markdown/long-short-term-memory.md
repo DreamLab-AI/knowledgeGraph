@@ -1,5 +1,5 @@
 - ### Definition
-  - ### Primary Definition
+  - Long Short-Term Memory (LSTM) is a specialised recurrent neural network architecture introduced by Hochreiter and Schmidhuber (1997) that mitigates the vanishing gradient problem through gating mechanisms—input, forget, and output gates—enabling selective retention or forgetting of information across long sequences. LSTMs underpin sequence modelling tasks in natural language processing, time-series forecasting, and speech recognition, though they have largely been superseded by Transformer architectures for large-scale language tasks.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:LongShortTermMemory
@@ -7,7 +7,10 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - partOf:: [[Recurrent Neural Network]], [[AI Model Architecture]]
+  - requires:: [[Backpropagation]], [[Deep Learning]]
+  - contrastsWith:: [[Transformer]], [[Attention]]
+  - enables:: [[Natural Language Processing]]
 
 - ### Content
   - ### Primary Definition

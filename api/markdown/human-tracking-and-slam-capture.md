@@ -6,7 +6,12 @@
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses:: [[SLAM]]
+  - uses:: [[Depth Sensing]]
+  - uses:: [[Pose Estimation]]
+  - enables:: [[Spatial Mapping]]
+  - enables:: [[Motion Capture]]
+  - requires:: [[Computer Vision]]
 
 - ### Content
   - #Public page

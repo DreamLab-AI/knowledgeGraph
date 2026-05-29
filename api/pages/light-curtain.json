@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:light-curtain",
   "domain": "robotics",
-  "definition": "Light Curtain is a robotics and autonomous systems concept and a type of robotics.",
+  "definition": "A Light Curtain is an optoelectronic safety device that creates an invisible infrared detection zone around hazardous machinery or robot work cells. When an object or person interrupts the beam matrix, the curtain triggers an emergency stop, enforcing compliance with ISO 8373 and IEC 61496 safety standards.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-safety-and-standards",
@@ -14,20 +14,45 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:collaborative-robot",
+        "label": "Collaborative Robot"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-10218",
+        "label": "ISO 10218"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cobot-safety-levels",
+        "label": "Cobot Safety Levels"
+      }
+    ]
   },
   "wikilinks": [
     {

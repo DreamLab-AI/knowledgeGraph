@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:digital-content-creation",
   "domain": "spatial-computing",
-  "definition": "Digital Content Creation is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "The process of authoring, editing, and producing digital assets\u2014including 3D models, textures, audio, video, and interactive experiences\u2014using software toolchains. In spatial computing and metaverse contexts, digital content creation encompasses generative AI assistance, physically-based material authoring, and export pipelines targeting real-time rendering engines.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -14,20 +14,48 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-content",
+        "label": "Digital Content"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-content-pipeline",
+        "label": "Metaverse Content Pipeline"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:rendering-technology",
+        "label": "Rendering Technology"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:content-production-workflow",
+        "label": "Content Production Workflow"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-content-layer",
+        "label": "Digital Content Layer"
+      }
+    ]
   },
   "wikilinks": [
     {

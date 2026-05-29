@@ -37,16 +37,34 @@ public:: true
   "@id": "urn:ngm:class:sensor-technology",
   "@type": "Class",
   "label": "Sensor Technology",
-  "definition": "Sensor Technology is a robotics and autonomous systems concept and a type of robotics.",
+  "definition": "Sensor Technology encompasses the diverse hardware devices and fusion algorithms that capture physical-world data for use in robotics, spatial computing, and XR systems. This includes inertial measurement units, LiDAR scanners, depth cameras, eye-tracking, haptic sensors, and biometric devices, combined with fusion techniques such as visual-inertial odometry and Kalman filtering to produce accurate, robust state estimates for autonomous systems and immersive experiences.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-perception",
       "label": "Perception and Sensing"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:imu", "label": "IMU"},
+      {"@id": "urn:ngm:class:lidar", "label": "Lidar"},
+      {"@id": "urn:ngm:class:camera", "label": "Camera"},
+      {"@id": "urn:ngm:class:eye-tracking", "label": "Eye Tracking"},
+      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:slam", "label": "SLAM"},
+      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
+      {"@id": "urn:ngm:class:perception-system", "label": "Perception System"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:depth-sensing", "label": "Depth Sensing"}
+    ]
+  },
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -76,14 +94,16 @@ public:: true
 
 
 - ### Definition
-  - SensorTechnology is a concept within the ngm domain.
+  - Sensor Technology encompasses the diverse hardware devices and fusion algorithms that capture physical-world data for use in robotics, spatial computing, and XR systems. This includes inertial measurement units, LiDAR scanners, depth cameras, eye-tracking, haptic sensors, and biometric devices, combined with fusion techniques such as visual-inertial odometry and Kalman filtering to produce accurate, robust state estimates for autonomous systems and immersive experiences.
 
 - ### Semantic Classification
   - owl-class:: robotics:SensorTechnology
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **hasPart**: IMU, LiDAR, Camera, Eye Tracking, Haptic Feedback — these are the principal sensor modalities comprising Sensor Technology.
+  - **enables**: SLAM — sensor data is the raw input SLAM algorithms require; Sensor Fusion — multiple sensor streams are fused into coherent estimates; Perception System — sensors are the transducer layer feeding perception.
+  - **uses**: Depth Sensing — structured light and time-of-flight depth sensing is a core modality within the sensor technology stack.
 
 - ### Content
   # SensorTechnology

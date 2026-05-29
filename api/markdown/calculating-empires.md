@@ -1,12 +1,15 @@
 - ### Definition
-  - Calculating Empires is a concept within the ngm domain.
+  - Calculating Empires is a large-scale research visualisation project by Kate Crawford and Vladan Joler that maps the co-evolution of technology and power structures from 1500 to the present. The work contextualises contemporary AI within five centuries of imperial infrastructure, surveillance, and control systems, foregrounding continuities between historical colonialism and digital power.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:CalculatingEmpires
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - related-to:: [[Artificial Intelligence]], [[Politics, Law, Privacy]]
+  - bridges-to:: [[Digital Society Surveillance]], [[Education and AI]]
+  - contrasts-with:: [[Cyber Security and Military]]
+  - uses:: [[Digital Rights]]
 
 - ### Content
   - Calculating Empires is a large-scale research visualization project and exhibition that explores the interconnected history of technology and power [from 1500 to the present day](https://calculatingempires.net/about.html)

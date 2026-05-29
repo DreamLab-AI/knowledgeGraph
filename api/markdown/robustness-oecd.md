@@ -7,7 +7,10 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **partOf**: Trustworthy AI Framework
+  - **relatedTo**: Safety (OECD), Adversarial Robustness
+  - **requires**: Adversarial Testing
+  - **enables**: Responsible AI Principles, AI Governance
 
 - ### Content
   - AI systems should function reliably and securely throughout their lifecycle, demonstrating resilience against errors, faults, inconsistencies and attempts to alter system use or performance, with continuous assessment and management of potential risks.

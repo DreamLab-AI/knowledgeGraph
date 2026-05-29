@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:etsi-domain-human-interface",
   "domain": "spatial-computing",
-  "definition": "An ETSI governance domain addressing user interaction design, accessibility, and human-computer interfaces within VirtualEnvironment|virtual environments.",
+  "definition": "An ETSI governance domain addressing user interaction design, accessibility, and human-computer interfaces within virtual environments. It defines standards for gesture, voice, gaze, and biometric input modalities, ensuring metaverse platforms prioritise usable and accessible experiences through alignment with ISO 9241 ergonomics standards, ETSI GR ARF 007/010, and inclusive design principles.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-interaction",
@@ -13,12 +13,39 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:etsi-domain-human-interface-ux",
+        "label": "ETSI_Domain_Human_Interface___UX"
+      },
+      {
+        "id": "urn:ngm:class:accessibility-standards",
+        "label": "Accessibility Standards"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:virtual-environment",
+        "label": "Virtual Environment"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:immersive-interface",
+        "label": "Immersive Interface"
+      },
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +54,12 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:etsidomain-classification",
+        "label": "ETSIDomainClassification"
+      }
+    ]
   },
   "wikilinks": [
     {

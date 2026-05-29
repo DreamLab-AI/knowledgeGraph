@@ -26,7 +26,7 @@ public:: true
   "@type": "Class",
   "@id": "urn:ngm:class:robo-human-robot-interaction",
   "label": "Human-Robot Interaction",
-  "definition": "Intermediate taxonomy category for human-robot interaction concepts within the robotics domain.",
+  "definition": "Taxonomy hub covering the methods, interfaces, and social dynamics through which humans and robots communicate, cooperate, and coordinate. This category spans teleoperation, haptic feedback, social robotics, speech and gesture interfaces, and safety considerations for shared human-robot workspaces.",
   "domain": "robotics",
   "subClassOf": [
     {
@@ -34,7 +34,24 @@ public:: true
       "label": "Robotics"
     }
   ],
-  "relations": {},
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:teleoperation", "label": "Teleoperation"},
+      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"},
+      {"@id": "urn:ngm:class:social-robotics", "label": "Social Robotics"},
+      {"@id": "urn:ngm:class:collaborative-robot", "label": "Collaborative Robot"},
+      {"@id": "urn:ngm:class:speech-recognition", "label": "Speech Recognition"},
+      {"@id": "urn:ngm:class:user-interface", "label": "User Interface"},
+      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"},
+      {"@id": "urn:ngm:class:accessibility", "label": "Accessibility"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:robo-actuation-and-control", "label": "Actuation and Control"},
+      {"@id": "urn:ngm:class:robo-safety-and-standards", "label": "Safety and Standards"},
+      {"@id": "urn:ngm:class:robo-perception", "label": "Perception and Sensing"},
+      {"@id": "urn:ngm:class:robot-control", "label": "Robot Control"}
+    ]
+  },
   "qualityScore": 0.8,
   "maturity": "established"
 }

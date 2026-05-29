@@ -6,6 +6,15 @@
   - belongs-to-domain:: [[metaverse]]
 - ### Relationships
   - is-subclass-of:: [[Digital Economy]]
+  - Has Part: [[NFT Marketplace]]
+  - Has Part: [[Creator Economy]]
+  - Has Part: [[Virtual Currency]]
+  - Requires: [[Smart Contract]]
+  - Requires: [[Blockchain]]
+  - Uses: [[Tokenization]]
+  - Uses: [[Cryptocurrency]]
+  - Enables: [[Play-to-Earn (P2E)]]
+  - Enables: [[Digital Marketplace]]
 - ### Content
   - ## Overview
   - The virtual economy domain encompasses digital commerce within metaverse environments. The Global Metaverse NFT Market is expected to reach $3.08 billion by 2033, from $335.9 million in 2023, growing at 24.8% CAGR. Currently 600 million unique users engage across platforms including Roblox, Fortnite, and Minecraft. The overall metaverse market could reach $2.35 trillion by 2032. NFT marketplaces enable trading of virtual real estate, avatars, fashion, and artwork.

@@ -6,6 +6,14 @@
   - owl-role:: Concept
 
 - ### Relationships
+  - **requires** [[Interoperability]] — cross-instance communication demands protocol interoperability
+  - **requires** [[Nostr Protocol]] — identity, event relay, and cryptographic commitment layer
+  - **uses** [[Large Language Models]] — LLMs underpin scene and transfer agent reasoning
+  - **uses** [[Blockchain]] — on-chain settlement and asset provenance tracking
+  - **uses** [[Self Sovereign Identity]] — users control identity across metaverse instances
+  - **enables** [[Metaverse Ontology]] — scene agents publish and consume shared ontologies
+  - **enables** [[Governance]] — the framework provides adaptable, AI-driven governance structures
+  - **relatedTo** [[Privacy]] — user data and interaction records require privacy-preserving handling
   - bridges-to:: [[Blockchain]]
 
 - ### Content

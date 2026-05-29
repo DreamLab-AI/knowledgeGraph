@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ai-applications",
   "domain": "artificial-intelligence",
-  "definition": "AI Applications represent domain-specific implementations of artificial intelligence technologies across various industries and use cases.",
+  "definition": "Domain-specific deployments of artificial intelligence technologies delivering measurable value across industries including healthcare diagnostics, autonomous vehicles, industrial automation, financial services, and personal assistants. AI Applications translate research-level techniques\u2014machine learning models, natural language processing, computer vision\u2014into production systems operating within real-world constraints of safety, reliability, and regulatory compliance.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-application",
@@ -14,16 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

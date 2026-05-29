@@ -102,16 +102,38 @@ public:: true
   "@id": "urn:ngm:class:interaction-domain",
   "@type": "Class",
   "label": "Interaction Domain",
-  "definition": "The Interaction Domain encompasses the ontological framework for human-computer interaction (HCI) phenomena, including interactive computer systems, user interfaces, user actions, and the processes by which interactions occur.",
+  "definition": "The Interaction Domain is the ontological framework that structures all human-computer interaction (HCI) phenomena, covering interactive systems, user interfaces, input modalities, and the cognitive and physical processes by which users engage with digital environments. It provides formal representation of user-experience elements, adaptive interface patterns, and multi-modal interaction channels including voice, gesture, haptics, and natural language. As spatial computing matures, the domain expands to encompass embodied interaction within augmented and virtual spaces.",
   "domain": "spatial-computing",
   "maturity": "emerging",
+  "qualityScore": 0.75,
+  "quality": 0.75,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-interaction",
       "label": "Interaction Technology"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"},
+      {"@id": "urn:ngm:class:user-experience", "label": "User Experience"},
+      {"@id": "urn:ngm:class:voice-interaction", "label": "Voice Interaction"},
+      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"},
+      {"@id": "urn:ngm:class:accessibility", "label": "Accessibility"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
+      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
+      {"@id": "urn:ngm:class:metaverse-domain", "label": "Metaverse Domain"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
+      {"@id": "urn:ngm:class:immersive-interface", "label": "Immersive Interface"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -230,7 +252,9 @@ public:: true
   - belongs-to-domain:: [[Metaverse Domain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart:: [[HumanComputerInteraction]], [[UserExperience]], [[VoiceInteraction]], [[HapticFeedback]], [[Accessibility]]
+  - relatedTo:: [[NaturalLanguageProcessing]], [[AugmentedReality]], [[MetaverseDomain]]
+  - enables:: [[ImmersiveExperience]], [[ImmersiveInterface]]
 
 - ### Content
 

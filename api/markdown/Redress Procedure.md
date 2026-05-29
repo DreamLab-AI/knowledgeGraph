@@ -102,7 +102,7 @@ public:: true
   "@id": "urn:ngm:class:redress-procedure",
   "@type": "Class",
   "label": "Redress Procedure",
-  "definition": "A Redress Procedure is a formalized mechanism enabling individuals or groups adversely affected by AI system decisions to challenge those decisions, seek explanations, request human review, and obtain remedies including correction, compensation, or policy changes.",
+  "definition": "A Redress Procedure is a formalised mechanism enabling individuals or groups adversely affected by AI system decisions to challenge those decisions, seek explanations, request human review, and obtain remedies including correction, compensation, or policy changes. Redress procedures embody accountability by ensuring that consequential algorithmic decisions—in employment, credit, housing, criminal justice, and public services—remain contestable rather than treated as unappealable automated verdicts. Effective procedures must be accessible (understandable without legal expertise), timely (preventing irreversible harm), thorough (genuine rather than perfunctory human review), and proportionate, with escalation pathways from internal review through independent ombudsman services to judicial challenge.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -112,10 +112,33 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:ai-governance-principle",
-      "label": "AI Governance Principle"
+      "label": "Ai Governance Principle"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:human-oversight", "label": "Human Oversight"},
+      {"@id": "urn:ngm:class:explainability", "label": "Explainability"},
+      {"@id": "urn:ngm:class:transparency", "label": "Transparency"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:accountability", "label": "Accountability"},
+      {"@id": "urn:ngm:class:trustworthy-ai", "label": "Trustworthy AI"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:human-rights", "label": "Human Rights"},
+      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"},
+      {"@id": "urn:ngm:class:ai-impact-assessment", "label": "AI Impact Assessment"},
+      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"},
+      {"@id": "urn:ngm:class:diversity-non-discrimination-and-fairness", "label": "Diversity, Non-Discrimination, and Fairness"},
+      {"@id": "urn:ngm:class:algorithmic-transparency-reports", "label": "Algorithmic Transparency Reports"},
+      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"}
+    ]
+  },
+  "qualityScore": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

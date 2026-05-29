@@ -27,7 +27,7 @@ public:: true
   "@id": "urn:ngm:class:vae",
   "@type": "Class",
   "label": "VAE",
-  "definition": "Variational Autoencoder \u2014 a generative model that learns a probabilistic latent-space representation of data by jointly optimising a reconstruction loss and a KL-divergence regularisation term.",
+  "definition": "A Variational Autoencoder (VAE) is a generative model that learns a probabilistic latent-space representation of data by jointly optimising a reconstruction loss and a KL-divergence regularisation term, using variational inference to make the latent posterior tractable. The encoder network maps input data to a distribution over latent codes, whilst the decoder network reconstructs data from samples drawn from that distribution, enabling the model to generate novel, coherent samples at inference time. VAEs are foundational to latent diffusion models, image synthesis pipelines, and representation learning tasks where structured, disentangled latent spaces are desirable.",
   "domain": "artificial-intelligence",
   "subClassOf": [
     {
@@ -35,26 +35,47 @@ public:: true
       "label": "AI Model Architecture"
     }
   ],
-  "relations": {},
-  "qualityScore": 0.6,
-  "maturity": "stub"
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:variational-inference", "label": "Variational Inference"},
+      {"@id": "urn:ngm:class:autoencoder", "label": "Autoencoder"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:latent-diffusion", "label": "Latent Diffusion"},
+      {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:latent-space", "label": "latent space"},
+      {"@id": "urn:ngm:class:deep-generative-model", "label": "Deep Generative Model"}
+    ]
+  },
+  "qualityScore": 0.75,
+  "maturity": "emerging"
 }
 ```
 
 
 - ### Definition
-  - Variational Autoencoder — a generative model that learns a probabilistic latent-space representation of data by jointly optimising a reconstruction loss and a KL-divergence regularisation term.
+  - A Variational Autoencoder (VAE) is a generative model that learns a probabilistic latent-space representation of data by jointly optimising a reconstruction loss and a KL-divergence regularisation term, using variational inference to make the latent posterior tractable. The encoder network maps input data to a distribution over latent codes, whilst the decoder network reconstructs data from samples drawn from that distribution, enabling the model to generate novel, coherent samples at inference time. VAEs are foundational to latent diffusion models, image synthesis pipelines, and representation learning tasks where structured, disentangled latent spaces are desirable.
 
 - ### Semantic Classification
   - owl-class:: vae:VAE
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- Stub page — relationships inherited from referencing pages -->
+  - requires [[Variational Inference]]
+  - requires [[Autoencoder]]
+  - enables [[Latent Diffusion]]
+  - enables [[Image Generation]]
+  - relatedTo [[latent space]]
+  - relatedTo [[Deep Generative Model]]
 
 - ### Content
-  - #Public page
-  - automatically published
+  The Variational Autoencoder (VAE) unifies the encoder-decoder architecture of classical autoencoders with the probabilistic framework of variational inference. The encoder network—also called the recognition model—takes an input x and outputs the parameters (mean and variance) of a Gaussian distribution over latent codes z, rather than a single deterministic code. The decoder network takes a sample drawn from that distribution and reconstructs the input, trained with a composite loss consisting of a reconstruction term (pixel-wise MSE or cross-entropy) and a KL divergence term that regularises the posterior to stay close to a unit Gaussian prior, ensuring the latent space is smooth and continuously traversable.
+
+  The reparameterisation trick—expressing z = μ + σ · ε where ε ~ N(0,I)—makes the sampling operation differentiable, enabling end-to-end backpropagation through the stochastic node. This technical device was central to the original VAE formulation and is reused in many subsequent probabilistic deep learning architectures.
+
+  VAEs are a key component in Latent Diffusion Models such as Stable Diffusion, where the VAE compresses images into a lower-dimensional latent space in which the diffusion process operates, dramatically reducing computational cost. Extensions including hierarchical VAEs, VQ-VAEs (vector-quantised), and DALL-E's discrete VAE have broadened the applicability of the framework to high-fidelity image and audio generation.
 
 - ### Provenance
   - sources::

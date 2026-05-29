@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:financial-instruments",
   "domain": "infrastructure",
-  "definition": "Financial Instruments is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Financial Instruments are contractual agreements that represent a monetary value and can be created, traded, modified, or settled. In blockchain and decentralised finance ecosystems they include smart contract-based derivatives, lending protocols, automated market makers, yield aggregators, and synthetic assets that replicate exposure to real-world financial assets through on-chain collateralisation and oracle price feeds.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-legal-and-regulatory",
@@ -14,10 +14,19 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
@@ -26,8 +35,22 @@
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:financial-services",
+        "label": "Financial Services"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:tokenization",
+        "label": "Tokenization"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

@@ -46,15 +46,28 @@ public:: true
   "@id": "urn:ngm:class:audio-system",
   "@type": "Class",
   "label": "Audio System",
-  "definition": "Audio System is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "An Audio System in spatial computing manages the capture, processing, and playback of sound within immersive environments, encompassing spatial audio rendering, voice communication, and environmental sound simulation. It coordinates audio hardware and software to deliver positional audio that reinforces presence and enables natural verbal interaction in virtual and mixed-reality contexts.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-display-and-rendering",
       "label": "Display and Rendering"
     }
   ],
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:spatial-audio", "label": "Spatial Audio"},
+      {"@id": "urn:ngm:class:audio-spatialization", "label": "Audio Spatialization"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:speech-recognition", "label": "Speech Recognition"},
+      {"@id": "urn:ngm:class:telecollaboration", "label": "Telecollaboration"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:audio-processing-system", "label": "Audio Processing System"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -96,7 +109,7 @@ public:: true
 
 
 - ### Definition
-  - Audio System is a concept within the metaverse domain. Further enrichment pending.
+  - An Audio System in spatial computing manages capture, processing, and playback of sound within immersive environments, encompassing spatial audio rendering, voice communication, and environmental sound simulation to reinforce presence and enable natural verbal interaction.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:AudioSystem
@@ -104,6 +117,11 @@ public:: true
 
 - ### Relationships
   - bridges-to:: [[Telepresence]] (tc)
+  - hasPart [[Spatial Audio]]
+  - hasPart [[Audio Spatialization]]
+  - enables [[Speech Recognition]]
+  - enables [[Telecollaboration]]
+  - relatedTo [[Audio Processing System]]
 
 - ### Content
 

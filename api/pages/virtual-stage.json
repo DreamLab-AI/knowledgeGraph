@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:virtual-stage",
   "domain": "spatial-computing",
-  "definition": "A production environment surrounded by LED walls and floors displaying real-time computer-generated imagery, enabling in-camera visual effects for film, television, and broadcast production where digital backgrounds react to camera movement and can be manipulated during live filming.",
+  "definition": "A production environment surrounded by curved LED walls and floors displaying real-time computer-generated imagery, enabling in-camera visual effects (ICVFX) for film, television, and broadcast production. Digital backgrounds rendered by a game engine react dynamically to tracked camera movement, capturing realistic lighting and reflections directly on-sensor. Epic Games' StageCraft system and Unreal Engine power the majority of commercial installations, with facilities now exceeding 1,700 m\u00b2 of LED surface area.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -17,17 +17,53 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:virtual-production-volume",
+        "label": "Virtual Production Volume"
+      },
+      {
+        "id": "urn:ngm:class:virtual-camera",
+        "label": "Virtual Camera"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:vr-rendering-engine",
+        "label": "VR Rendering Engine"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:virtual-production",
+        "label": "Virtual Production"
+      },
+      {
+        "id": "urn:ngm:class:virtual-production-pipeline",
+        "label": "Virtual Production Pipeline"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

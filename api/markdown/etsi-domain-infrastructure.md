@@ -5,7 +5,9 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **hasPart**: [[EdgeComputing]], [[Content Delivery Network (CDN)]], [[Latency Management Protocol]], [[Networking Layer]]
+  - **enables**: [[Metaverse Architecture Stack]], [[Virtual Environment]]
+  - **relatedTo**: [[ETSI_Domain_Infrastructure_Data]], [[ETSIDomainClassification]]
 
 - ### Content
   - The ETSI Infrastructure domain governs foundational systems and computational resources enabling metaverse platforms through networks, cloud infrastructure, and security.

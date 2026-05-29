@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:virtual-production-workflow",
   "@type": "Class",
   "label": "Virtual Production Workflow",
-  "definition": "The end-to-end process for creating film and television content using virtual production techniques, integrating pre-visualization, virtual art department asset creation, real-time game engine rendering, LED volume shooting, and post-production refinement in a non-linear pipeline where VFX work b...",
+  "definition": "The end-to-end process for creating film and television content using virtual production techniques, integrating pre-visualisation, virtual art department asset creation, real-time game engine rendering, LED volume shooting, and post-production refinement in a non-linear pipeline where VFX work begins in pre-production rather than post-production. This approach captures composited digital environments in-camera, enabling creative decisions about lighting and framing to be made on set.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-display-and-rendering",
@@ -59,7 +60,24 @@ public:: true
       "label": "Production Pipeline"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"},
+      {"@id": "urn:ngm:class:3-d-asset", "label": "3D Asset"},
+      {"@id": "urn:ngm:class:3-d-rendering-engine", "label": "3D Rendering Engine"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:design-software", "label": "Design Software"},
+      {"@id": "urn:ngm:class:content-production-workflow", "label": "Content Production Workflow"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:film-production", "label": "Film Production"},
+      {"@id": "urn:ngm:class:world-building", "label": "World Building"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -109,6 +127,10 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Production Pipeline]]
+  - **requires**: Game Engine (real-time background rendering on LED volume), 3D Asset (environment and character geometry), 3D Rendering Engine (final frame compositing)
+  - **uses**: Design Software (virtual art department authoring), Content Production Workflow (asset tracking and versioning)
+  - **enables**: Film Production (end-to-end feature/TV content creation), World Building (interactive environment design)
+  - **relatedTo**: Metaverse (shared technology stack and creative overlap)
 
 - ### Content
 

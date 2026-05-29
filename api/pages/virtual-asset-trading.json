@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:virtual-asset-trading",
   "domain": "spatial-computing",
-  "definition": "The exchange, purchase, and sale of digital assets including cryptocurrencies, NFTs, virtual land, in-game items, and other tokenized value through marketplaces, exchanges, and peer-to-peer transactions.",
+  "definition": "The exchange, purchase, and sale of digital assets \u2014 including cryptocurrencies, NFTs, virtual land parcels, in-game items, and other tokenised value \u2014 through centralised exchanges, decentralised exchanges (DEXs), NFT marketplaces, and peer-to-peer transactions. Trading is governed by AML/KYC requirements, FATF Travel Rule obligations, and emerging securities classification frameworks that vary by jurisdiction.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -17,21 +17,57 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
     "enables": [],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "id": "urn:ngm:class:nft-marketplace",
+        "label": "NFT Marketplace"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-exchange",
+        "label": "Decentralized Exchange"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:virtual-economy-infrastructure",
+        "label": "Virtual Economy Infrastructure"
+      }
+    ]
   },
   "wikilinks": [
     {

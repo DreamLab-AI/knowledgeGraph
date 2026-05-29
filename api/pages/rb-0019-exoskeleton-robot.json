@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:rb-0019-exoskeleton-robot",
   "domain": "robotics",
-  "definition": "exoskeleton robot is a robotics and autonomous systems concept and a type of Exoskeleton Robot.",
+  "definition": "An exoskeleton robot is a wearable robotic device that attaches to the human body and augments, supports, or replaces the wearer's physical capabilities. Exoskeletons may be powered (actuated) or passive (spring-and-damper based), and are used for physical rehabilitation after stroke or spinal cord injury, industrial worker fatigue reduction, and military load-carrying augmentation. Safety is paramount because the robot shares the mechanical structure with a human; ISO 13482 governs safety requirements for personal care robots including exoskeletons.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-robot-type",
@@ -17,21 +17,61 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:rb-0088-iso-13482-compliance",
+        "label": "rb 0088 iso 13482 compliance"
+      },
+      {
+        "id": "urn:ngm:class:rb-0089-risk-assessment",
+        "label": "rb 0089 risk assessment"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:rb-0056-impedance-control",
+        "label": "rb 0056 impedance control"
+      },
+      {
+        "id": "urn:ngm:class:rb-0067-force-torque-sensor",
+        "label": "rb 0067 force torque sensor"
+      }
+    ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-ts-15066",
+        "label": "ISO TS 15066"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "id": "urn:ngm:class:rb-0007-collaborative-robot",
+        "label": "rb 0007 collaborative robot"
+      },
+      {
+        "id": "urn:ngm:class:service-robot",
+        "label": "Service Robot"
+      },
+      {
+        "id": "urn:ngm:class:wearable-computing-platform",
+        "label": "Wearable Computing Platform"
+      }
+    ]
   },
   "wikilinks": [
     {

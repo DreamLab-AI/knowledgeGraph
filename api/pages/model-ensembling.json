@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:model-ensembling",
   "domain": "artificial-intelligence",
-  "definition": "A technique that combines predictions from multiple independently trained models to improve overall performance and robustness. Ensembling leverages diversity among models to reduce variance, improve generalisation, and provide more reliable predictions.",
+  "definition": "A machine learning technique that aggregates predictions from multiple independently trained base models \u2014 via voting, averaging, stacking, or boosting \u2014 to reduce variance, improve generalisation, and produce more reliable outputs than any single constituent model. Diversity among base learners is the key driver of ensemble benefit.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -13,21 +13,57 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:robustness",
+        "label": "Robustness"
+      },
+      {
+        "id": "urn:ngm:class:accuracy",
+        "label": "Accuracy"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
+      },
+      {
+        "id": "urn:ngm:class:mixture-of-experts",
+        "label": "Mixture of Experts"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
+    ]
   },
   "wikilinks": [
     {

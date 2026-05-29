@@ -1,12 +1,14 @@
 - ### Definition
-  - Game Mechanics is a concept within the metaverse domain. Further enrichment pending.
+  - The rules, systems, and interaction patterns that define player agency and emergent behaviour within a game or virtual environment. Game mechanics encompass reward loops, progression systems, physics constraints, NPC behaviours, and economic structures that govern how participants interact with a metaverse platform, and are increasingly encoded in smart contracts for transparent, programmable enforcement.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:GameMechanics
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **enables**: Play-to-Earn (P2E), Virtual Economy — participatory economic models emerge from well-designed incentive mechanics
+  - **uses**: Smart Contract, Economic Parameters — programmable rule enforcement and tunable economic variables underpin modern game mechanics
+  - **relatedTo**: Immersive Experience, Digital Goods — mechanics shape how participants experience virtual worlds and value in-game goods
 
 - ### Content
 

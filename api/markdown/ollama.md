@@ -70,16 +70,29 @@ public:: true
   "@id": "urn:ngm:class:ollama",
   "@type": "Class",
   "label": "ollama",
-  "definition": "ollama is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "An open-source runtime and model management platform that allows users to download, serve, and interact with large language models locally on macOS, Windows, and Linux. Ollama provides an OpenAI-compatible REST API, enabling integration with tools such as Open WebUI, ComfyUI, and agent frameworks, making local LLM inference accessible without cloud dependencies.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:cat-ai-infrastructure",
+      "@id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure (Category)"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:open-webui-and-pipelines", "label": "Open Webui and Pipelines"},
+      {"@id": "urn:ngm:class:function-calling", "label": "Function Calling"},
+      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:knowledge-graphing", "label": "Knowledge Graphing"}
+    ]
+  },
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -155,14 +168,18 @@ public:: true
 
 
 - ### Definition
-  - ollama is a concept within the ngm domain.
+  - An open-source runtime and model management platform that allows users to download, serve, and interact with large language models locally on macOS, Windows, and Linux. Ollama provides an OpenAI-compatible REST API, enabling integration with tools such as Open WebUI, ComfyUI, and agent frameworks, making local LLM inference accessible without cloud dependencies.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:Ollama
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - enables [[Open Webui and Pipelines]]
+  - enables [[Function Calling]]
+  - enables [[Prompt Engineering]]
+  - uses [[Large Language Models]]
+  - relatedTo [[Knowledge Graphing]]
 
 - ### Content
   - The [[Ollama]] repository on GitHub is a comprehensive, MIT-licensed platform for utilizing and managing large language models (LLMs) such as Llama 3.1, Mistral, Gemma 2, and others. It offers a straightforward way to run these models on various operating systems, including macOS, Windows, and Linux, either through manual installation or via Docker.

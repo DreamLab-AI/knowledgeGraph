@@ -8,6 +8,11 @@
 
 - ### Relationships
   - bridges-to:: [[Autonomous Robot]]
+  - partOf [[Regularisation]]
+  - requires [[Neural Network]]
+  - requires [[Training]]
+  - contrastsWith [[Overfitting]]
+  - enables [[Deep Learning]]
 
 - ### Content
   - ### Primary Definition

@@ -7,7 +7,11 @@
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - partOf [[Computer Vision]]
+  - contrastsWith [[Instance Segmentation]]
+  - contrastsWith [[Panoptic Segmentation]]
+  - enables [[Scene Understanding]]
+  - enables [[Object Detection]]
 
 - ### Content
   - Semantic Segmentation is the computer vision task of assigning a class label to every pixel in an image, partitioning the image into semantically meaningful regions without distinguishing between individual object instances. Semantic segmentation networks (FCN, U-Net, DeepLab) produce dense pixel-wise predictions enabling scene understanding applications in medical imaging, autonomous driving, and satellite imagery analysis.

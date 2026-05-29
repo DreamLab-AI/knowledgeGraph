@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:rb-0064-computed-torque-control",
   "domain": "robotics",
-  "definition": "computed torque control is a robotics and autonomous systems concept and a type of Model Based Control.",
+  "definition": "Computed torque control (CTC) is a model-based robot control strategy that uses the full inverse dynamics model of a manipulator to compute the joint torques required to follow a desired trajectory. By cancelling the nonlinear dynamics \u2014 including Coriolis, centripetal, and gravitational terms \u2014 CTC transforms the closed-loop system into a set of independent linear double-integrators, enabling simple PD outer-loop controllers to achieve high-accuracy tracking. Its effectiveness depends on the fidelity of the dynamic model and is sensitive to parameter uncertainty.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
@@ -17,21 +17,57 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:rb-0051-trajectory-planning",
+        "label": "rb 0051 trajectory planning"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:rb-0022-robot-dynamics",
+        "label": "rb 0022 robot dynamics"
+      },
+      {
+        "id": "urn:ngm:class:rb-0021-robot-kinematics",
+        "label": "rb 0021 robot kinematics"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:rb-0043-torque",
+        "label": "rb 0043 torque"
+      },
+      {
+        "id": "urn:ngm:class:rb-0048-pid-controller",
+        "label": "rb 0048 pid controller"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rb-0061-nonlinear-control",
+        "label": "rb 0061 nonlinear control"
+      },
+      {
+        "id": "urn:ngm:class:rb-0062-model-predictive-control",
+        "label": "rb 0062 model predictive control"
+      },
+      {
+        "id": "urn:ngm:class:rb-0056-impedance-control",
+        "label": "rb 0056 impedance control"
+      }
+    ]
   },
   "wikilinks": [
     {

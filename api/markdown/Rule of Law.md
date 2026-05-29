@@ -42,9 +42,10 @@ public:: true
   "@id": "urn:ngm:class:rule-of-law",
   "@type": "Class",
   "label": "Rule of Law",
-  "definition": "The principle that all persons, institutions and entities, including AI systems and their operators, are accountable to laws that are publicly promulgated, equally enforced, independently adjudicated and consistent with international human rights norms.",
+  "definition": "The constitutional and institutional principle that all persons, institutions, and entities—including AI systems and their operators—are accountable to laws that are publicly promulgated, equally enforced, independently adjudicated, and consistent with international human rights norms. Applied to AI governance, the rule of law requires legal certainty, non-arbitrary decision-making, procedural fairness, and effective remedies for AI-related harms.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-legal-and-regulatory",
@@ -55,11 +56,46 @@ public:: true
       "label": "Legal Framework"
     }
   ],
-  "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:legal-framework",
+        "label": "Legal Framework"
+      },
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:human-rights",
+        "label": "Human Rights"
+      },
+      {
+        "@id": "urn:ngm:class:democratic-values",
+        "label": "Democratic Values"
+      },
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      }
+    ]
   }
 }
 ```
@@ -99,7 +135,9 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Requires [[Legal Framework]], [[Accountability]]
+  - Supports [[Human Rights]], [[Democratic Values]], [[AI Ethics]]
+  - Related to [[Compliance Framework]], [[AI Governance]]
 
 - ### Content
   - The principle that all persons, institutions and entities, including AI systems and their operators, are accountable to laws that are publicly promulgated, equally enforced, independently adjudicated and consistent with international human rights norms.

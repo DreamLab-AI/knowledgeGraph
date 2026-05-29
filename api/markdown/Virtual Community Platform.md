@@ -48,7 +48,8 @@ public:: true
   "label": "Virtual Community Platform",
   "definition": "Spatial computing platforms that enable users to create and interact within immersive 3D virtual environments as digital avatars, supporting social interaction, community building, collaborative activities, and shared experiences across geographic boundaries.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -59,11 +60,52 @@ public:: true
       "label": "Metaverse"
     }
   ],
-  "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:avatar-system",
+        "label": "Avatar System"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-world-infrastructure",
+        "label": "Virtual World Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:virtual-concerts",
+        "label": "Virtual Concerts"
+      },
+      {
+        "@id": "urn:ngm:class:social-vr",
+        "label": "Social VR"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-identity",
+        "label": "Virtual Identity"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:metaverse-platform",
+        "label": "Metaverse Platform"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-community-practice",
+        "label": "Virtual Community Practice"
+      }
+    ]
   }
 }
 ```
@@ -109,6 +151,14 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Metaverse]]
+  - Requires: [[Avatar System]]
+  - Requires: [[Virtual World Infrastructure]]
+  - Enables: [[Virtual Concerts]]
+  - Enables: [[Social VR]]
+  - Uses: [[Content Moderation]]
+  - Uses: [[Virtual Identity]]
+  - Related To: [[Metaverse Platform]]
+  - Related To: [[Virtual Community Practice]]
 
 - ### Content
 

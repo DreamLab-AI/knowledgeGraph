@@ -1,4 +1,6 @@
 - ### Definition
+  An Underwater Robot is a robotic platform designed to operate in aquatic environments, encompassing Remotely Operated Vehicles (ROVs) tethered for real-time control and Autonomous Underwater Vehicles (AUVs) executing pre-programmed or AI-guided missions. Applications include deep-sea scientific survey, offshore infrastructure inspection, marine conservation, and defence, with platforms rated from hundreds to thousands of metres depth.
+
   - ### Primary Definition
 
 - ### Semantic Classification
@@ -7,7 +9,9 @@
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: Sensor Fusion, Autonomous System
+  - **hasPart**: Perception and Sensing, Robotics Control
+  - **relatedTo**: Robotic System, Robotics Platform
 
 - ### Content
   - ### Primary Definition

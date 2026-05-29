@@ -46,12 +46,13 @@ public:: true
   "@id": "urn:ngm:class:computational-component",
   "@type": "Class",
   "label": "Computational Component",
-  "definition": "Computational Component is a artificial intelligence concept and a type of Component.",
+  "definition": "A Computational Component is a modular, well-defined unit of an AI or software system that encapsulates specific processing logic — such as a neural network layer, a feature extraction module, or an inference engine — and interacts with other components through defined interfaces. Computational components abstract implementation details from consumers, enabling composition into larger pipelines and substitution of equivalent implementations without modifying the surrounding system. They are the primary unit of reuse, testing, and deployment in AI infrastructure, ranging from low-level hardware accelerator kernels to high-level model serving endpoints.",
   "domain": "artificial-intelligence",
   "maturity": "established",
+  "qualityScore": 0.8,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:cat-ai-infrastructure",
+      "@id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure (Category)"
     },
     {
@@ -59,7 +60,36 @@ public:: true
       "label": "Component"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:neural-network-layer", "label": "Neural Network Layer"},
+      {"@id": "urn:ngm:class:algorithm", "label": "Algorithm"},
+      {"@id": "urn:ngm:class:module", "label": "Module"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:ai-system-component", "label": "AI System Component"},
+      {"@id": "urn:ngm:class:machine-learning-pipeline", "label": "Machine Learning Pipeline"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:computational-resources", "label": "Computational Resources"},
+      {"@id": "urn:ngm:class:interface", "label": "Interface"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:inference", "label": "Inference"},
+      {"@id": "urn:ngm:class:model-training", "label": "Model Training"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
+      {"@id": "urn:ngm:class:hardware-acceleration", "label": "Hardware Acceleration"},
+      {"@id": "urn:ngm:class:compute-infrastructure", "label": "Compute Infrastructure"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:neural-network-component", "label": "Neural Network Component"},
+      {"@id": "urn:ngm:class:model-architecture", "label": "Model Architecture"},
+      {"@id": "urn:ngm:class:software-architecture", "label": "Software Architecture"},
+      {"@id": "urn:ngm:class:middleware", "label": "Middleware"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -100,18 +130,24 @@ public:: true
 
 
 - ### Definition
-  - Computational Component is a concept within the ai domain.
-
-- ### Semantic Classification
-  - owl-class:: artificial-intelligence:ComputationalComponent
-  - owl-role:: Concept
-  - belongs-to-domain:: [[Artificial Intelligence]]
+  A Computational Component is a modular, well-defined unit of an AI or software system that encapsulates specific processing logic — such as a neural network layer, a feature extraction module, or an inference engine — and interacts with other components through defined interfaces. Computational components abstract implementation details from consumers, enabling composition into larger pipelines and substitution of equivalent implementations without modifying the surrounding system. They are the primary unit of reuse, testing, and deployment in AI infrastructure, ranging from low-level hardware accelerator kernels to high-level model serving endpoints.
 
 - ### Relationships
-  - is-subclass-of:: [[Component]]
+  - hasPart:: [[Neural Network Layer]], [[Algorithm]], [[Module]]
+  - partOf:: [[AI System Component]], [[Machine Learning Pipeline]]
+  - requires:: [[Computational Resources]], [[Interface]]
+  - enables:: [[Inference]], [[Model Training]]
+  - uses:: [[GPU Compute]], [[Hardware Acceleration]], [[Compute Infrastructure]]
+  - relatedTo:: [[Neural Network Component]], [[Model Architecture]], [[Software Architecture]], [[Middleware]]
 
 - ### Content
-  Computational Component — content pending enrichment.
+  In modern AI systems, computational components are arranged in layered architectures where each component handles a specific stage of data transformation. At the hardware layer, accelerator kernels (CUDA/ROCm GPU kernels, TPU XLA operations) form the lowest-level computational components, operating on tensor data structures with fixed numerical precision. These are assembled by higher-level frameworks (PyTorch, JAX, TensorFlow) into neural network layers — linear transformations, normalisations, attention heads — that constitute the intermediate component level.
+
+  At the model level, sets of layers form functional modules such as encoders, decoders, cross-attention bridges, and classification heads. Model-level components expose standardised interfaces (e.g., forward() methods in PyTorch, Hugging Face PreTrainedModel base classes) that allow components to be swapped, fine-tuned, or frozen independently. The modularity of transformer architectures exemplifies good computational component design: attention heads, feed-forward sublayers, and positional encoding are independently replaceable and analysable.
+
+  At the system level, computational components include model serving endpoints, batch inference workers, feature stores, and preprocessing pipelines. These are orchestrated by ML pipeline frameworks (Kubeflow, MLflow, Ray) that manage component scheduling, data passing, monitoring, and versioning. The shift from monolithic model files to component-based model registries (e.g., Hugging Face Hub) reflects the maturation of component thinking in the AI engineering discipline.
+
+  The primary design concerns for computational components are interface stability, version compatibility, resource requirements specification, and testability in isolation. Well-designed components declare their input/output tensor shapes, data types, and hardware dependencies, enabling automated resource allocation and compatibility checking in pipeline orchestration systems.
 
 - ### Provenance
   - sources:: Chimera Prime Research

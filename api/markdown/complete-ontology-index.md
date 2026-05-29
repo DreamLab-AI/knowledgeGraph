@@ -1,9 +1,13 @@
 - ### Definition
-  - A comprehensive reference catalog documenting and interconnecting all [[Ontology]] terms, [[Semantic Classifications]], and [[Knowledge Relationships]] across multiple domains and knowledge graphs. This index enables discovery, navigation, and semantic reasoning across the entire [[Knowledge Base]].
+  - A comprehensive reference catalogue documenting and interconnecting all ontology terms, semantic classifications, and knowledge relationships across multiple domains and knowledge graphs. This index enables discovery, navigation, and semantic reasoning across the entire knowledge base, serving as the master pointer for all class hierarchies and inter-domain relations.
 - ### Semantic Classification
   - owl-class:: spatial-computing:COMPLETEONTOLOGYINDEX
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
+- ### Relationships
+  - has-part:: [[Ontology Structure]], [[OWL Class Hierarchy]]
+  - uses:: [[Knowledge Representation]], [[RDF]]
+  - supports:: [[Knowledge Graph]], [[Ontology]]
 - ### Relationships
   - <!-- No relationships defined -->
 - ### Content

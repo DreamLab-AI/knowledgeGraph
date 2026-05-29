@@ -5,29 +5,56 @@
   "public": true,
   "classIri": "urn:ngm:class:python",
   "domain": "artificial-intelligence",
-  "definition": "A high-level, dynamically typed, general-purpose programming language widely used in AI and data science due to its extensive library ecosystem and readable syntax.",
+  "definition": "Python is a high-level, dynamically typed, interpreted programming language with a design philosophy emphasising code readability and the minimisation of syntactic ceremony. Its extensive standard library and the PyPI ecosystem of third-party packages\u2014including NumPy, SciPy, Pandas, PyTorch, TensorFlow, and Scikit-learn\u2014make it the dominant language for machine learning research, data science, and scientific computing. Python's combination of interactive development via Jupyter notebooks, a permissive licence, and first-class support in cloud ML platforms has made it the lingua franca of artificial intelligence development.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:programming-language",
+      "label": "Programming Language"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-pipeline",
+        "label": "Machine Learning Pipeline"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:machine-learning-framework",
+        "label": "Machine Learning Framework"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:python-and-py-torch",
+        "label": "Python and PyTorch"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

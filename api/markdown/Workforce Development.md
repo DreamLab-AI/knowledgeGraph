@@ -42,20 +42,52 @@ public:: true
   "@id": "urn:ngm:class:workforce-development",
   "@type": "Class",
   "label": "Workforce Development",
-  "definition": "Workforce Development is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Workforce development encompasses structured programmes, training environments, and skills-acquisition systems that equip individuals and organisations with the competencies required by evolving labour markets. In spatial computing contexts, it leverages immersive learning, simulation, and augmented connected workforce platforms to deliver scalable, experiential upskilling.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
     }
   ],
-  "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:augmented-connected-workforce",
+        "label": "Augmented Connected Workforce"
+      },
+      {
+        "@id": "urn:ngm:class:education-metaverse",
+        "label": "Education Metaverse"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:education-technology",
+        "label": "Education Technology"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:immersive-learning",
+        "label": "Immersive Learning"
+      },
+      {
+        "@id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      }
+    ]
   }
 }
 ```
@@ -87,14 +119,19 @@ public:: true
 
 
 - ### Definition
-  - Workforce Development is a concept within the metaverse domain. Further enrichment pending.
+  - Workforce development encompasses structured programmes, training environments, and skills-acquisition systems that equip individuals and organisations with the competencies required by evolving labour markets. In spatial computing contexts, it leverages immersive learning, simulation, and augmented connected workforce platforms to deliver scalable, experiential upskilling.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:WorkforceDevelopment
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses [[Immersive Learning]]
+  - Uses [[Simulation]]
+  - Enables [[Augmented Connected Workforce]]
+  - Enables [[Education Metaverse]]
+  - Depends on [[Education Technology]]
+  - Depends on [[Virtual Reality]]
 
 - ### Content
 

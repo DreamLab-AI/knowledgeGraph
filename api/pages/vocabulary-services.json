@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:vocabulary-services",
   "domain": "spatial-computing",
-  "definition": "Technical infrastructure and APIs that provide access to controlled vocabularies, taxonomies, and ontologies, enabling applications to retrieve, search, and validate terminology for consistent semantic interpretation across metaverse platforms and knowledge systems.",
+  "definition": "Technical infrastructure and APIs that provide programmatic access to controlled vocabularies, taxonomies, and ontologies, enabling applications to retrieve concept definitions, navigate broader/narrower hierarchies, validate terminology, and perform cross-vocabulary mapping for consistent semantic interpretation across platforms. Common interfaces include SPARQL endpoints, SKOS APIs, and REST services backed by platforms such as PoolParty or Metaphactory.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-standards-and-interop",
@@ -18,17 +18,44 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:controlled-vocabulary",
+        "label": "Controlled Vocabulary"
+      },
+      {
+        "id": "urn:ngm:class:skos-vocabulary",
+        "label": "Skos Vocabulary"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:knowledge-management-system",
+        "label": "Knowledge Management System"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": []

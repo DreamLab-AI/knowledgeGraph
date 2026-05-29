@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:perceptual-experience",
   "domain": "distributed-collaboration",
-  "definition": "Perceptual Experience is a type of Distributed Collaboration in the distributed collaboration domain.",
+  "definition": "The multimodal sensory and cognitive engagement a user undergoes within a telepresence or immersive environment, encompassing visual fidelity, spatial audio, haptic feedback, and sense of presence. Perceptual experience quality determines the degree to which a distributed or virtual interaction is felt as equivalent to physical co-presence, directly impacting collaboration effectiveness and user well-being.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:dc-telepresence",
@@ -13,12 +13,30 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:telepresence",
+        "label": "Telepresence"
+      },
+      {
+        "id": "urn:ngm:class:immersive-technology",
+        "label": "Immersive Technology"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:social-presence",
+        "label": "Social Presence"
+      },
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +45,16 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ]
   },
   "wikilinks": [
     {

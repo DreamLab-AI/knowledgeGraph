@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:handwritten-demo",
   "domain": "infrastructure",
-  "definition": "handwritten demo is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A handwritten demo is an informal, analogue artefact\u2014such as a hand-annotated sketch, cost sheet, or prototype diagram\u2014used to communicate design intent, feasibility, or scope before digital tooling is applied. In the context of knowledge graph construction and AI-assisted workflows, handwritten demos often serve as raw input for multimodal AI systems capable of recognising, digitising, and annotating unstructured human-authored content.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-software-engineering",
@@ -13,21 +13,61 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-understanding",
+        "label": "Multimodal Understanding"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:knowledge-graph-construction",
+        "label": "Knowledge Graph Construction"
+      },
+      {
+        "id": "urn:ngm:class:domain-ontology",
+        "label": "Domain Ontology"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:multimodal-ai",
+        "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:data-annotation",
+        "label": "Data Annotation"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:user-research",
+        "label": "User Research"
+      },
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": []

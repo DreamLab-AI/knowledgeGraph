@@ -38,9 +38,9 @@ public:: true
   "@id": "urn:ngm:class:robot-dynamics",
   "@type": "Class",
   "label": "Robot Dynamics",
-  "definition": "Robot Dynamics is a type of Robot Mechanics in the robotics domain.",
+  "definition": "Robot Dynamics is the study of the forces, torques, and inertial properties that govern the motion of robotic systems. It encompasses forward dynamics (computing accelerations from applied forces) and inverse dynamics (computing required torques for a desired motion), underpinning trajectory planning, model-based control, and simulation. Accurate dynamic models are essential for high-speed manipulation, legged locomotion, and compliant human-robot interaction.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-actuation-and-control",
@@ -51,6 +51,20 @@ public:: true
       "label": "RobotMechanics"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:kinematics", "label": "Kinematics"},
+      {"@id": "urn:ngm:class:torque", "label": "Torque"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
+      {"@id": "urn:ngm:class:robot-control", "label": "Robot Control"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:robot-safety", "label": "Robot Safety"},
+      {"@id": "urn:ngm:class:state-estimation", "label": "State Estimation"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
@@ -87,7 +101,7 @@ public:: true
 
 
 - ### Definition
-  - - maturity:: draft
+  - Robot Dynamics is the study of the forces, torques, and inertial properties that govern the motion of robotic systems. It encompasses forward dynamics (computing accelerations from applied forces) and inverse dynamics (computing required torques for a desired motion), underpinning trajectory planning, model-based control, and simulation.
 
 - ### Semantic Classification
   - owl-class:: robotics:RobotDynamics
@@ -95,6 +109,12 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[RobotMechanics]]
+  - requires [[Kinematics]]
+  - requires [[Torque]]
+  - enables [[Motion Planning]]
+  - enables [[Robot Control]]
+  - relatedTo [[Robot Safety]]
+  - relatedTo [[State Estimation]]
 
 - ### Content
 

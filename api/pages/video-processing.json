@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:video-processing",
   "domain": "artificial-intelligence",
-  "definition": "Video Processing in AI involves computational analysis, understanding, and manipulation of video data using machine learning and computer vision techniques.",
+  "definition": "The computational analysis, understanding, and manipulation of video data using machine learning and computer vision techniques. Core tasks include object detection and tracking, semantic segmentation, action recognition, temporal modelling, and scene understanding. Modern approaches employ 3D convolutional networks, vision transformers, and self-supervised learning on large-scale video datasets.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-application",
@@ -13,17 +13,44 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      },
+      {
+        "id": "urn:ngm:class:semantic-segmentation",
+        "label": "Semantic Segmentation"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:instance-segmentation",
+        "label": "Instance Segmentation"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:classifier-free-guidance",
   "domain": "artificial-intelligence",
-  "definition": "Classifier-Free Guidance is a diffusion model sampling technique that improves conditional generation quality by interpolating between conditional and unconditional score estimates without a separate classifier.",
+  "definition": "Classifier-Free Guidance (CFG) is a conditional generation technique for diffusion models that steers the denoising trajectory towards a specified condition (e.g., a text prompt) by computing a weighted extrapolation between a conditional score estimate and an unconditional score estimate produced by the same model. Unlike classifier guidance, which requires a separate differentiable classifier, CFG trains a single model jointly on conditional and unconditional objectives (using null conditioning with a fixed probability), eliminating the need for an auxiliary network whilst achieving superior sample fidelity and prompt adherence. The guidance scale hyperparameter controls the trade-off between sample diversity and condition alignment.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -14,20 +14,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "id": "urn:ngm:class:text-to-image",
+        "label": "Text-to-Image"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:latent-diffusion",
+        "label": "Latent Diffusion"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

@@ -8,6 +8,12 @@
 
 - ### Relationships
   - is-subclass-of:: [[Security Services]]
+  - requires [[Smart Contract]]
+  - requires [[Vulnerability]]
+  - enables [[Compliance Verification]]
+  - enables [[Audit Trail]]
+  - supports [[Blockchain]]
+  - supports [[Risk Assessment]]
 
 - ### Content
 

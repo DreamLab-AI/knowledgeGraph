@@ -5,29 +5,52 @@
   "public": true,
   "classIri": "urn:ngm:class:w3-c-did-core",
   "domain": "blockchain",
-  "definition": "The W3C Decentralised Identifiers (DID) Core specification defining a globally unique, cryptographically verifiable identifier standard that is independent of centralised registries.",
+  "definition": "W3C DID Core is the World Wide Web Consortium recommendation defining Decentralised Identifiers (DIDs) \u2014 a type of globally unique identifier that is controller-owned, cryptographically verifiable, and resolvable without requiring a centralised registration authority. A DID is a URI of the form did:<method>:<method-specific-id> that resolves to a DID Document containing public keys, service endpoints, and authentication verification methods. The specification is method-agnostic, allowing DIDs to be anchored on various infrastructure including distributed ledgers, peer-to-peer networks, and web servers, enabling interoperable self-sovereign identity across systems.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-governance-and-regulation",
-      "label": "Blockchain Governance and Regulation"
+      "label": "Governance and Regulation"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

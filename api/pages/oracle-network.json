@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:oracle-network",
   "domain": "blockchain",
-  "definition": "A decentralised infrastructure layer that securely fetches, aggregates, and delivers off-chain real-world data to smart contracts in a tamper-resistant and trust-minimised manner.",
+  "definition": "An oracle network is a decentralised infrastructure layer composed of independent node operators that collectively fetch, validate, aggregate, and deliver off-chain data\u2014such as asset prices, weather readings, or event outcomes\u2014to smart contracts executing on a blockchain. Because blockchains cannot natively access external information, oracle networks serve as the trusted bridge between on-chain logic and real-world state. Cryptoeconomic incentives and slashing conditions align node operators to report accurately, while aggregation mechanisms (median, TWAP) mitigate manipulation by individual nodes. Oracle networks underpin critical DeFi primitives including lending protocols, synthetic assets, insurance products, and real-world asset settlement.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-network-component",
@@ -14,20 +14,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:price-oracle",
+        "label": "Price Oracle"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:smart-contract-execution",
+        "label": "Smart Contract Execution"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockchain-oracle",
+        "label": "Blockchain Oracle"
+      },
+      {
+        "id": "urn:ngm:class:real-world-asset-tokenisation",
+        "label": "Real-World Asset Tokenisation"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

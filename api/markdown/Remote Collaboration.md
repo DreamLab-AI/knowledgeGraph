@@ -37,9 +37,10 @@ public:: true
   "@id": "urn:ngm:class:remote-collaboration",
   "@type": "Class",
   "label": "Remote Collaboration",
-  "definition": "Remote Collaboration is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Work practices, tools, and methodologies enabling geographically distributed teams to coordinate effectively without physical co-location, combining synchronous channels (video conferencing, real-time co-editing, spatial audio) with asynchronous coordination (version control, project management, persistent chat) to maintain team cohesion and productivity across time zones.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-network-and-comms",
@@ -51,6 +52,38 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:virtual-collaboration",
+        "label": "Virtual Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      },
+      {
+        "@id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:immersive-communication",
+        "label": "Immersive Communication"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-workspace",
+        "label": "Virtual Workspace"
+      }
+    ]
   }
 }
 ```
@@ -83,7 +116,9 @@ public:: true
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses: [[Spatial Audio]], [[Encryption]]
+  - Bridges To: [[Virtual Collaboration]], [[Telecollaboration]]
+  - Related To: [[Immersive Communication]], [[Virtual Workspace]]
 
 - ### Content
 

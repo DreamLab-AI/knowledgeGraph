@@ -66,7 +66,7 @@ public:: true
   "@id": "urn:ngm:class:ecdsa",
   "@type": "Class",
   "label": "ECDSA",
-  "definition": "Elliptic Curve Digital Signature Algorithm within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "Elliptic Curve Digital Signature Algorithm (ECDSA) is a cryptographic primitive that uses elliptic curve mathematics to generate and verify digital signatures, underpinning transaction authentication in Bitcoin, Ethereum, and most public blockchain networks. ECDSA provides non-repudiation, integrity verification, and ownership proof with compact key sizes relative to RSA equivalents.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -75,15 +75,29 @@ public:: true
       "label": "Cryptographic Primitive"
     },
     {
-      "@id": "urn:ngm:class:blockchain-entity",
-      "label": "Blockchain Entity"
-    },
-    {
       "@id": "urn:ngm:class:cryptographic-primitive",
       "label": "CryptographicPrimitive"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:elliptic-curve-cryptography", "label": "Elliptic Curve Cryptography"},
+      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
+      {"@id": "urn:ngm:class:private-key", "label": "Private Key"},
+      {"@id": "urn:ngm:class:public-key", "label": "Public Key"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
+      {"@id": "urn:ngm:class:cryptographic-verification", "label": "Cryptographic Verification"},
+      {"@id": "urn:ngm:class:authentication", "label": "Authentication"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:cryptographic-key-management", "label": "Cryptographic Key Management"},
+      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public-Key Cryptography"},
+      {"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

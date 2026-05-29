@@ -33,20 +33,36 @@ public:: true
   "@id": "urn:ngm:class:solar-plans",
   "@type": "Class",
   "label": "solar plans",
-  "definition": "solar plans is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Solar plans are engineered configurations and optimisation analyses for solar photovoltaic (PV) installations, specifying panel tilt angles, array tiering, MPPT string layout, and economic projections for a given site's latitude and climate. This page documents a three-tier cascading solar panel system designed for Cumbria, England (54.5°N), where seasonal solar variation is extreme; the optimal configuration (43–45° tilt, 20% horizontal overlap, 18 panels at 6.3 kW peak) achieves approximately 3,179 kWh/year — three times the output of a conventional single-layer array in the same 10 m² footprint.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
-  "quality": 0.5,
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:simulation", "label": "Simulation"},
+      {"@id": "urn:ngm:class:optimization-algorithm", "label": "Optimization Algorithm"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:sustainability", "label": "Sustainability"},
+      {"@id": "urn:ngm:class:renewable-energy-certificates", "label": "Renewable Energy Certificates"},
+      {"@id": "urn:ngm:class:carbon-footprint-assessment", "label": "Carbon Footprint Assessment"},
+      {"@id": "urn:ngm:class:environmental-impact-metric", "label": "Environmental Impact Metric"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:technology-adoption", "label": "Technology Adoption"},
+      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"}
+    ]
   }
 }
 ```
@@ -72,14 +88,17 @@ public:: true
 
 
 - ### Definition
-  - solar plans is a concept within the ngm domain.
+  **Solar plans** describe engineered configurations and simulation-driven optimisation analyses for solar PV installations. This page focuses on a three-tier cascading array designed for Cumbria, England, using a differential evolution algorithm to maximise annual energy yield within a constrained 10 m² footprint at 54.5°N latitude. The resulting design — 18 panels across three tiers at 43–45° tilt with 20% horizontal overlap — achieves 3,179 kWh/year, compared to ~1,065 kWh/year for a conventional flat array.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:SolarPlans
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses simulation (differential evolution optimisation) and optimisation algorithms to derive tier angles and overlap.
+  - Contributes to sustainability goals, carbon footprint reduction, and renewable energy generation at the local/community scale.
+  - Enables technology adoption of novel PV configurations in high-latitude temperate climates.
+  - IoT integration (separate MPPT per tier, monitoring systems) supports real-time performance validation.
 
 - ### Content
   # Three-Tier Solar Collector System Analysis for Cumbria, England

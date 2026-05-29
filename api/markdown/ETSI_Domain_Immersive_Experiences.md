@@ -82,16 +82,33 @@ public:: true
   "@id": "urn:ngm:class:etsi-domain-immersive-experiences",
   "@type": "Class",
   "label": "ETSI_Domain_Immersive_Experiences",
-  "definition": "An ETSI governance domain encompassing technologies, standards, and practices for creating immersive digital experiences including VirtualReality, AugmentedReality, ExtendedReality, and SpatialComputing.",
+  "definition": "An ETSI standardisation domain encompassing technologies, frameworks, and practices for creating immersive digital experiences including Virtual Reality, Augmented Reality, Extended Reality, and Spatial Computing. Governed by ETSI GR CIM 052 and GR ARF 020, this domain addresses content rendering, real-time interaction, sensory feedback, and environmental simulation to deliver seamless, engaging immersive experiences across heterogeneous hardware from HMDs to mobile AR.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
       "label": "Platform and Environment"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
+      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
+      {"@id": "urn:ngm:class:mixed-reality", "label": "Mixed Reality"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:simulation", "label": "Simulation"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -185,7 +202,13 @@ public:: true
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **hasPart** [[Virtual Reality]] — VR is a primary technology domain within immersive experiences
+  - **hasPart** [[Augmented Reality]] — AR is a primary technology domain within immersive experiences
+  - **hasPart** [[Mixed Reality]] — MR spans the reality–virtuality continuum covered by this domain
+  - **requires** [[Spatial Computing]] — immersive experiences depend on spatial computing infrastructure
+  - **requires** [[Real-Time Rendering]] — low-latency rendering is essential for presence in immersive systems
+  - **uses** [[Computer Vision]] — inside-out tracking and scene understanding rely on computer vision
+  - **relatedTo** [[Simulation]] — immersive experience delivery and environmental simulation overlap significantly
 - ### Content
   - The ETSI Immersive Experiences domain encompasses technologies and standards for creating immersive digital experiences through VR, AR, XR, and spatial computing.
   - ### Original Content

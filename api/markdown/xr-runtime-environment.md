@@ -8,6 +8,14 @@
 
 - ### Relationships
   - is-subclass-of:: [[Runtime Environment]]
+  - Requires [[Rendering Pipeline]]
+  - Requires [[Hardware Abstraction]]
+  - Implements [[Open Standard]]
+  - Enables [[Spatial Computing]]
+  - Enables [[Virtual Reality]]
+  - Enables [[Augmented Reality]]
+  - Uses [[Optical Tracking]]
+  - Uses [[Middleware]]
 
 - ### Content
 

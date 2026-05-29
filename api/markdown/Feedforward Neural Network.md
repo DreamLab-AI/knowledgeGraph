@@ -42,9 +42,10 @@ public:: true
   "@id": "urn:ngm:class:feedforward-neural-network",
   "@type": "Class",
   "label": "Feedforward Neural Network",
-  "definition": "Feedforward Neural Network is a artificial intelligence concept and a type of Network Architecture.",
+  "definition": "A neural network architecture in which connections between nodes do not form cycles, with information flowing unidirectionally from input through hidden layers to output. The simplest and most foundational artificial neural network type, trained via backpropagation with gradient descent, and proven by the universal approximation theorem to model arbitrary continuous functions given sufficient width.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-model-architecture",
@@ -55,7 +56,23 @@ public:: true
       "label": "Network Architecture"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"},
+      {"@id": "urn:ngm:class:activation-function", "label": "Activation Function"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:recurrent-neural-network", "label": "Recurrent Neural Network"},
+      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -91,7 +108,7 @@ public:: true
 
 
 - ### Definition
-  - ### Primary Definition
+  - A neural network architecture in which connections between nodes do not form cycles, with information flowing unidirectionally from input through hidden layers to output. The simplest and most foundational artificial neural network type, trained via backpropagation with gradient descent, and proven by the universal approximation theorem to model arbitrary continuous functions given sufficient width.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:FeedforwardNeuralNetwork
@@ -99,7 +116,10 @@ public:: true
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires**: Backpropagation, Activation Function — training depends on gradient propagation through nonlinear activation functions
+  - **contrastsWith**: Recurrent Neural Network, Transformer Architecture — FNNs lack feedback loops and attention mechanisms that characterise these alternatives
+  - **enables**: Deep Learning, Machine Learning — multi-layer feedforward networks are the conceptual substrate of deep learning
+  - **partOf**: Convolutional Neural Network — CNNs are specialised feedforward architectures with spatially-structured weight sharing
 
 - ### Content
   - ### Primary Definition

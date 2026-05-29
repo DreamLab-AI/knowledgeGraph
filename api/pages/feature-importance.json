@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:feature-importance",
   "domain": "artificial-intelligence",
-  "definition": "Quantitative measures indicating the relative contribution or influence of individual input features on a machine learning model's predictions, enabling identification of the most critical variables driving model outputs.",
+  "definition": "Quantitative measures indicating the relative contribution or influence of individual input features on a machine learning model's predictions, enabling identification of the most critical variables driving model outputs. Methods include permutation importance, SHAP (SHapley Additive exPlanations) values, and tree-based Gini impurity scores, each providing global or local views of feature influence that support model debugging, data selection, and regulatory explainability requirements.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -17,18 +17,45 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-interpretability",
+        "label": "Model Interpretability"
+      },
+      {
+        "id": "urn:ngm:class:global-explanation",
+        "label": "Global Explanation"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:dimensionality-reduction",
+        "label": "Dimensionality Reduction"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": []

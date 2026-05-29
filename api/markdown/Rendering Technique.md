@@ -37,9 +37,10 @@ public:: true
   "@id": "urn:ngm:class:rendering-technique",
   "@type": "Class",
   "label": "Rendering Technique",
-  "definition": "Rendering Technique is a spatial computing concept and a type of spatial-computing.",
+  "definition": "A specific algorithm or methodology for transforming a geometric scene description into a final pixel image, trading image quality against computational cost. Fundamental categories include rasterization for real-time performance, ray tracing for physically accurate light transport, and path tracing for unbiased global illumination, with hybrid and screen-space variants bridging these extremes.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-display-and-rendering",
@@ -51,6 +52,40 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:rasterization",
+        "label": "Rasterization"
+      },
+      {
+        "@id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      },
+      {
+        "@id": "urn:ngm:class:post-processing",
+        "label": "Post Processing"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:shader",
+        "label": "Shader"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:level-of-detail",
+        "label": "Level of Detail"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:visual-effects",
+        "label": "Visual Effects"
+      }
+    ]
   }
 }
 ```
@@ -76,14 +111,17 @@ public:: true
 
 
 - ### Definition
-  - RenderingTechnique is a concept within the ngm domain.
+  - A specific algorithm or methodology for transforming a geometric scene description into a final pixel image, trading image quality against computational cost. Fundamental categories include rasterization for real-time performance, ray tracing for physically accurate light transport, and path tracing for unbiased global illumination, with hybrid and screen-space variants bridging these extremes.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:RenderingTechnique
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Has Part: [[Rasterization]], [[Ray Tracing]], [[Post Processing]]
+  - Uses: [[Shader]]
+  - Supports: [[Visual Effects]]
+  - Related To: [[Level of Detail]]
 
 - ### Content
   # RenderingTechnique

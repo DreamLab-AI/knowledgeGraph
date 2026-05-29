@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:customer-service-automation",
   "domain": "artificial-intelligence",
-  "definition": "Customer Service Automation applies AI techniques such as conversational agents and intent classification to handle customer enquiries without human agent involvement.",
+  "definition": "Customer Service Automation applies AI techniques\u2014including conversational agents, intent classification, sentiment analysis, and retrieval-augmented generation\u2014to resolve customer enquiries, route escalations, and perform account transactions without requiring human agent involvement. It integrates with CRM platforms, ticketing systems, and knowledge bases to provide contextually accurate responses at scale. Increasingly, large language models serve as the generation backbone, enabling natural multi-turn dialogue that can handle nuanced or composite queries.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-application",
@@ -14,20 +14,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:knowledge-base",
+        "label": "Knowledge Base"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:sentiment-analysis",
+        "label": "Sentiment Analysis"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

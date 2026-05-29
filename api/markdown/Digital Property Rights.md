@@ -46,16 +46,33 @@ public:: true
   "@id": "urn:ngm:class:digital-property-rights",
   "@type": "Class",
   "label": "Digital Property Rights",
-  "definition": "Digital Property Rights is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Digital Property Rights are the legally and technically enforceable claims governing ownership, transfer, and use of digital assets and virtual content. They encompass intellectual property protections, on-chain ownership assertions via non-fungible tokens, licensing frameworks, and governance rules that determine who can access, modify, or commercialise digital objects within virtual and mixed-reality environments.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
       "label": "Governance and Safety"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:nft", "label": "NFT"},
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:digital-governance", "label": "Digital Governance"},
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:digital-ownership", "label": "Digital Ownership"},
+      {"@id": "urn:ngm:class:digital-asset-management", "label": "Digital Asset Management"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -96,7 +113,7 @@ public:: true
 
 
 - ### Definition
-  - Digital Property Rights is a concept within the metaverse domain. Further enrichment pending.
+  - Digital Property Rights are the legally and technically enforceable claims governing ownership, transfer, and use of digital assets and virtual content. They encompass intellectual property protections, on-chain ownership assertions via non-fungible tokens, licensing frameworks, and governance rules that determine who can access, modify, or commercialise digital objects within virtual and mixed-reality environments.
 
 bridges-to:: [[Blockchain]]
 
@@ -105,7 +122,10 @@ bridges-to:: [[Blockchain]]
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: [[NFT]], [[Smart Contract]]
+  - **requires**: [[Digital Governance]], [[Blockchain]]
+  - **enables**: [[Digital Ownership]], [[Digital Asset Management]]
+  - **relatedTo**: [[Regulatory Compliance]]
 
 - ### Content
 

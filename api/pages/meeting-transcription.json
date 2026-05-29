@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:meeting-transcription",
   "domain": "artificial-intelligence",
-  "definition": "Meeting Transcription is a artificial intelligence concept and a type of Speech Recognition.",
+  "definition": "The automated conversion of spoken dialogue in synchronous or asynchronous meetings into structured text, combining automatic speech recognition with speaker diarisation, punctuation restoration, and optionally action-item extraction. AI-powered meeting transcription systems enable searchable records, accessibility, and downstream summarisation workflows.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-application",
@@ -17,21 +17,52 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:documentation-generation",
+        "label": "Documentation Generation"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:automatic-speech-recognition",
+        "label": "Automatic Speech Recognition"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:audio-processing-system",
+        "label": "Audio Processing System"
+      },
+      {
+        "id": "urn:ngm:class:audio-technology",
+        "label": "Audio Technology"
+      },
+      {
+        "id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      }
+    ]
   },
   "wikilinks": [
     {

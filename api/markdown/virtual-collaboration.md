@@ -8,6 +8,10 @@
 
 - ### Relationships
   - is-subclass-of:: [[Virtual Workspace]]
+  - Requires: [[Avatar]], [[Spatial Audio]]
+  - Uses: [[Metaverse]]
+  - Bridges To: [[Remote Collaboration]], [[Telecollaboration]]
+  - Related To: [[Immersive Communication]]
 
 - ### Content
 

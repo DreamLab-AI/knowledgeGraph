@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:virtual-camera",
   "@type": "Class",
   "label": "Virtual Camera",
-  "definition": "A simulated camera system in virtual production environments that captures real-time virtual scenes, enabling filmmakers to visualize and shoot CG environments as if using a physical camera with real-world lens and movement characteristics.",
+  "definition": "A simulated camera system in virtual production environments that captures real-time virtual scenes, enabling filmmakers to visualise and shoot CG environments as though using a physical camera with real-world lens characteristics — including focal length, aperture, and depth-of-field — and six-DoF movement tracking. It integrates with motion capture rigs, LED volume stages, and game engines to deliver live compositing preview and Genlock-synchronised output.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-display-and-rendering",
@@ -59,7 +60,23 @@ public:: true
       "label": "Virtual Production"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:motion-capture", "label": "Motion Capture"},
+      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"},
+      {"@id": "urn:ngm:class:virtual-production-volume", "label": "Virtual Production Volume"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:virtual-scouting", "label": "Virtual Scouting"},
+      {"@id": "urn:ngm:class:virtual-production-pipeline", "label": "Virtual Production Pipeline"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:virtual-stage", "label": "Virtual Stage"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -109,6 +126,10 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Virtual Production]]
+  - requires:: [[Motion Capture]], [[Real-Time Rendering]]
+  - uses:: [[Game Engine]], [[Virtual Production Volume]]
+  - enables:: [[Virtual Scouting]], [[Virtual Production Pipeline]]
+  - partOf:: [[Virtual Stage]]
 
 - ### Content
 

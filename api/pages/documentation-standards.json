@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:documentation-standards",
   "domain": "spatial-computing",
-  "definition": "Formal specifications and technical guidelines established by standards bodies to ensure interoperability, consistency, and quality across metaverse platforms, encompassing terminology, data formats, interfaces, and ical considerations for immersive technology development.",
+  "definition": "Formal specifications and technical guidelines established by standards bodies to ensure interoperability, consistency, and quality across metaverse platforms, encompassing terminology, data formats, interfaces, and ethical considerations for immersive technology development.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-standards-and-interop",
@@ -18,20 +18,48 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:metadata-standard",
+        "label": "Metadata Standard"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:documentation-generation",
+        "label": "Documentation Generation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      },
+      {
+        "id": "urn:ngm:class:api-standard",
+        "label": "API Standard"
+      }
+    ]
   },
   "wikilinks": [
     {

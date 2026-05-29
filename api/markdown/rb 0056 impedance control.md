@@ -42,9 +42,9 @@ public:: true
   "@id": "urn:ngm:class:rb-0056-impedance-control",
   "@type": "Class",
   "label": "rb 0056 impedance control",
-  "definition": "impedance control is a robotics and autonomous systems concept and a type of Interaction Control.",
+  "definition": "Impedance control is a robot interaction-control strategy that regulates the dynamic relationship between end-effector force and motion by imposing a desired mechanical impedance (mass, damping, stiffness) on the robot's behaviour at the point of contact. Rather than commanding precise positions or forces independently, impedance control allows compliant, safe physical interaction with humans or uncertain environments by shaping the robot's apparent mechanical response. It is fundamental to collaborative robotics, enabling robots to yield to external forces in a controlled manner without requiring an explicit force setpoint.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-actuation-and-control",
@@ -55,7 +55,25 @@ public:: true
       "label": "Interaction Control"
     }
   ],
-  "quality": 0.5,
+  "quality": 0.7,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:rb-0057-admittance-control", "label": "rb 0057 admittance control"},
+      {"@id": "urn:ngm:class:rb-0053-force-control", "label": "rb 0053 force control"},
+      {"@id": "urn:ngm:class:rb-0038-compliance", "label": "rb 0038 compliance"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:rb-0067-force-torque-sensor", "label": "rb 0067 force torque sensor"},
+      {"@id": "urn:ngm:class:rb-0072-encoder", "label": "rb 0072 encoder"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:rb-0007-collaborative-robot", "label": "rb 0007 collaborative robot"},
+      {"@id": "urn:ngm:class:rb-0094-power-and-force-limiting", "label": "rb 0094 power and force limiting"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:rb-0054-position-control", "label": "rb 0054 position control"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -91,7 +109,7 @@ public:: true
 
 
 - ### Definition
-  - ### Primary Definition
+  - **Impedance Control** (RB-0056) regulates the force-motion relationship at a robot's end effector by imposing a desired mechanical impedance (virtual mass, damping, stiffness). This allows compliant interaction with humans and uncertain environments without requiring an explicit force setpoint, making it foundational to safe collaborative operation.
 
 - ### Semantic Classification
   - owl-class:: robotics:rb0056impedancecontrol
@@ -99,11 +117,16 @@ public:: true
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - relatedTo:: rb 0057 admittance control, rb 0053 force control, rb 0038 compliance
+  - requires:: rb 0067 force torque sensor, rb 0072 encoder
+  - supports:: rb 0007 collaborative robot, rb 0094 power and force limiting
+  - contrastsWith:: rb 0054 position control
 
 - ### Content
   - ### Primary Definition
-  **Impedance Control** - Impedance Control in robotics systems
+  **Impedance Control** (RB-0056) shapes robot behaviour at contact by imposing a virtual mechanical impedance on the end effector, described by the equation: F = M_d * x_ddot + B_d * x_dot + K_d * x, where M_d, B_d, and K_d are desired inertia, damping, and stiffness matrices respectively.
+
+  Unlike pure position control (which is rigid) or pure force control (which is compliant), impedance control occupies the full position-force spectrum and is therefore the preferred strategy for tasks involving unpredictable contact, such as assembly with tight tolerances, surface finishing, or physical human-robot collaboration.
   - ### Original Content
 		- ```
   # RB-0056: Impedance Control

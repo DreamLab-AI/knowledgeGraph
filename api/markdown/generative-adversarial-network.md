@@ -7,7 +7,12 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - partOf [[Generative AI]]
+  - enables [[Image Generation]]
+  - enables [[Synthetic Data]]
+  - enables [[Synthetic Media]]
+  - contrastsWith [[Diffusion Model]]
+  - contrastsWith [[Autoencoder]]
 
 - ### Content
   - ### Primary Definition

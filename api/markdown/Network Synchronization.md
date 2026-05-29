@@ -66,7 +66,7 @@ public:: true
   "@id": "urn:ngm:class:network-synchronization",
   "@type": "Class",
   "label": "Network Synchronization",
-  "definition": "Node state alignment within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "Network Synchronization is the process by which blockchain nodes align their local chain state with the canonical ledger through block propagation, header-first sync, and fork resolution protocols. It governs initial block download, peer discovery, and the ongoing receipt of new blocks and transactions via gossip, ensuring all honest participants converge on an identical view of the distributed ledger despite network partitions and latency.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -83,7 +83,24 @@ public:: true
       "label": "ConsensusProtocol"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"},
+      {"@id": "urn:ngm:class:gossip-protocol", "label": "Gossip Protocol"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
+      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:block-propagation", "label": "Block Propagation"},
+      {"@id": "urn:ngm:class:transaction-pool", "label": "Transaction Pool"},
+      {"@id": "urn:ngm:class:distributed-data-structure", "label": "Distributed Data Structure"},
+      {"@id": "urn:ngm:class:network-topology", "label": "Network Topology"},
+      {"@id": "urn:ngm:class:eclipse-attack", "label": "Eclipse Attack"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

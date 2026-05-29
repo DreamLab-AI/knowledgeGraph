@@ -70,9 +70,10 @@ public:: true
   "@id": "urn:ngm:class:synchronous-execution",
   "@type": "Class",
   "label": "Synchronous Execution",
-  "definition": "Synchronous Execution is a computational model where operations are performed sequentially, with each operation blocking until completion before the next operation begins.",
+  "definition": "Synchronous Execution is a computational execution model in which operations are performed sequentially, with each call blocking the invoking thread until a result is returned before the next operation begins. This model provides deterministic, predictable control flow and simplifies error handling, making it well-suited for transactional operations, authentication flows, and ACID-compliant database interactions, though it constrains throughput and scalability under high-concurrency workloads.",
   "domain": "blockchain",
   "maturity": "emerging",
+  "quality": 0.75,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-protocol-and-consensus",
@@ -83,7 +84,25 @@ public:: true
       "label": "Execution Model"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:asynchronous-execution", "label": "Asynchronous Execution"},
+      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event Driven Architecture"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:transaction-processing", "label": "Transaction Processing"},
+      {"@id": "urn:ngm:class:transaction-finality", "label": "Transaction Finality"},
+      {"@id": "urn:ngm:class:state-machine", "label": "State Machine"},
+      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:smart-contract-execution", "label": "Smart Contract Execution"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:transaction-confirmation", "label": "Transaction Confirmation"},
+      {"@id": "urn:ngm:class:state-machine-replication", "label": "State Machine Replication"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

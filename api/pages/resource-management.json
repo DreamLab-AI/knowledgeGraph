@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:resource-management",
   "domain": "infrastructure",
-  "definition": "Resource Management is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "The systematic allocation, scheduling, and monitoring of computational resources \u2014 CPU, GPU, memory, storage, and network bandwidth \u2014 across applications and services within an infrastructure, ensuring efficient utilisation, quality-of-service guarantees, and graceful degradation under load. Encompasses asset lifecycle management, resource pooling, and dynamic scaling strategies.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
@@ -14,20 +14,44 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:metaverse-infrastructure",
+        "label": "Metaverse Infrastructure"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:computing-infrastructure",
+        "label": "Computing Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

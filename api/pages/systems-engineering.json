@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:systems-engineering",
   "domain": "infrastructure",
-  "definition": "Systems Engineering is a foundational concept in infrastructure that serves as a classification parent for 4 related concepts in the ontology.",
+  "definition": "Systems Engineering is an interdisciplinary methodology for designing, integrating, and managing complex systems over their lifecycle. It applies structured processes \u2014 requirements analysis, architecture definition, verification, and validation \u2014 to ensure that subsystem interactions meet overall system objectives within cost, schedule, and quality constraints.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-software-engineering",
@@ -13,19 +13,51 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.3,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:technology-infrastructure",
+        "label": "Technology Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:technical-architecture-framework",
+        "label": "Technical Architecture Framework"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:robo-safety-and-standards",
+        "label": "Safety and Standards"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      }
+    ],
     "partOf": [],
     "relatedTo": []
   },

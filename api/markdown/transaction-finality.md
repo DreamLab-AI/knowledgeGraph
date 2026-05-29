@@ -9,6 +9,10 @@
 - ### Relationships
   - is-subclass-of:: [[Blockchain]]
   - depends-on:: [[Consensus Mechanism]]
+  - **requires**: Consensus Mechanism — the finality guarantee is produced by the underlying consensus protocol.
+  - **hasPart**: Deterministic Finality, Probabilistic Finality — these are the two primary sub-types of finality guarantee.
+  - **enables**: Smart Contract, Decentralized Finance (DeFi) — applications relying on settlement certainty (DeFi protocols, on-chain contracts) depend on well-defined finality.
+  - **partOf**: Blockchain — transaction finality is a core property of any blockchain ledger.
 
 - ### Content
 

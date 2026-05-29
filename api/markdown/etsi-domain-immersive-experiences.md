@@ -7,7 +7,13 @@
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **hasPart** [[Virtual Reality]] — VR is a primary technology domain within immersive experiences
+  - **hasPart** [[Augmented Reality]] — AR is a primary technology domain within immersive experiences
+  - **hasPart** [[Mixed Reality]] — MR spans the reality–virtuality continuum covered by this domain
+  - **requires** [[Spatial Computing]] — immersive experiences depend on spatial computing infrastructure
+  - **requires** [[Real-Time Rendering]] — low-latency rendering is essential for presence in immersive systems
+  - **uses** [[Computer Vision]] — inside-out tracking and scene understanding rely on computer vision
+  - **relatedTo** [[Simulation]] — immersive experience delivery and environmental simulation overlap significantly
 - ### Content
   - The ETSI Immersive Experiences domain encompasses technologies and standards for creating immersive digital experiences through VR, AR, XR, and spatial computing.
   - ### Original Content

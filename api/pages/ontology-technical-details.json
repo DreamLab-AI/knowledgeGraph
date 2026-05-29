@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ontology-technical-details",
   "domain": "infrastructure",
-  "definition": "ONTOLOGY_TECHNICAL_DETAILS is a technology infrastructure concept and a type of Blockchain Entity.",
+  "definition": "A meta-documentation node cataloguing the technical structure, bidirectional link patterns, missing parent audits, and inheritance statistics of the NarrativeGoldmine ontology graph. It serves as a diagnostic reference for ontology engineers, documenting cross-domain isolation rules, broken reference inventories, and recommended file structures for parent concept pages.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-data-management",
@@ -21,21 +21,48 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
     "requires": [],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:data-structure",
+        "label": "Data Structure"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      },
+      {
+        "id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      }
+    ]
   },
   "wikilinks": [
     {

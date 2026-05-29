@@ -82,9 +82,10 @@ public:: true
   "@id": "urn:ngm:class:feature-importance",
   "@type": "Class",
   "label": "Feature Importance",
-  "definition": "Quantitative measures indicating the relative contribution or influence of individual input features on a machine learning model's predictions, enabling identification of the most critical variables driving model outputs.",
+  "definition": "Quantitative measures indicating the relative contribution or influence of individual input features on a machine learning model's predictions, enabling identification of the most critical variables driving model outputs. Methods include permutation importance, SHAP (SHapley Additive exPlanations) values, and tree-based Gini impurity scores, each providing global or local views of feature influence that support model debugging, data selection, and regulatory explainability requirements.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
@@ -95,7 +96,20 @@ public:: true
       "label": "Explainability"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:model-interpretability", "label": "Model Interpretability"},
+      {"@id": "urn:ngm:class:global-explanation", "label": "Global Explanation"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:dimensionality-reduction", "label": "Dimensionality Reduction"},
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
+      {"@id": "urn:ngm:class:transparency", "label": "Transparency"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -189,7 +203,12 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **enables** [[Model Interpretability]] — feature importance scores explain which inputs drive predictions
+  - **enables** [[Global Explanation]] — aggregated feature importance provides global model explanations
+  - **uses** [[Dimensionality Reduction]] — feature importance informs which dimensions to retain or remove
+  - **uses** [[Machine Learning]] — importance scores are computed from trained machine learning models
+  - **supports** [[AI Governance]] — feature importance evidence supports governance audits and fairness assessments
+  - **supports** [[Transparency]] — publishing feature importance increases AI system transparency
 
 - ### Content
   - Quantitative measures indicating the relative contribution or influence of individual input features on a machine learning model's predictions, enabling identification of the most critical variables driving model outputs.

@@ -7,7 +7,9 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - bridges-to:: [[AI Agent System]]
+  - relatedTo:: [[AI Provider]], [[AI Operator]], [[Accountability]]
+  - requires:: [[Human Oversight]], [[Fairness]], [[Explainability]]
+  - dependsOn:: [[EU AI Act]], [[Responsible AI]]
 
 - ### Content
   - An individual or entity who interacts with, relies upon, or is affected by the outputs, decisions, or recommendations of an artificial intelligence system in order to accomplish tasks, make decisions, obtain services, or achieve objectives, either through direct system interaction or indirect exposure to AI-mediated outcomes, encompassing both active users who consciously engage with AI systems and passive subjects whose data is processed or whose circumstances are influenced by AI operations.

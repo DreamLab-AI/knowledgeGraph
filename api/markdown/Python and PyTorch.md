@@ -54,16 +54,31 @@ public:: true
   "@id": "urn:ngm:class:python-and-py-torch",
   "@type": "Class",
   "label": "Python and PyTorch",
-  "definition": "Python and PyTorch is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "Python and PyTorch together form the dominant open-source stack for deep learning research and production. Python provides the high-level scripting environment and ecosystem (NumPy, Hugging Face, spaCy), whilst PyTorch supplies dynamic computational graph execution, autograd differentiation, and GPU acceleration via CUDA, enabling rapid prototyping and deployment of neural network models.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:cat-ai-infrastructure",
+      "@id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure (Category)"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
+      {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:machine-learning-framework", "label": "Machine Learning Framework"},
+      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:neural-network-architecture", "label": "Neural Network Architecture"},
+      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -119,14 +134,16 @@ public:: true
 
 
 - ### Definition
-  - Python and PyTorch is a concept within the ngm domain.
+  - Python and PyTorch together form the dominant open-source stack for deep learning research and production. Python provides the high-level scripting environment and ecosystem (NumPy, Hugging Face, spaCy), whilst PyTorch supplies dynamic computational graph execution, autograd differentiation, and GPU acceleration via CUDA, enabling rapid prototyping and deployment of neural network models.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:PythonAndPyTorch
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **enables** → [[Deep Learning]], [[Model Training]], [[Natural Language Processing]]
+  - **uses** → [[Machine Learning Framework]], [[GPU Compute]]
+  - **supports** → [[Neural Network Architecture]], [[Data Pipeline]]
 
 - ### Content
   - https://intel.github.io/intel-extension-for-pytorch/#introduction [[Python and PyTorch]]

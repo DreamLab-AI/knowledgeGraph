@@ -1,12 +1,15 @@
 - ### Definition
-  - PropertySystem is a concept within the ngm domain.
+  - A Property System is a software architecture pattern for attaching typed key-value attributes to entities within a metaverse or game engine context, enabling data binding, runtime configuration, and dynamic object behaviour without hard-coded class inheritance. It underpins avatar customisation, world-object state management, and reactive UI data flows in spatial computing platforms.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:PropertySystem
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - enables: [[Avatar Customization]], [[Avatar System]]
+  - uses: [[Game Engine]]
+  - relatedTo: [[Asset Management]], [[Digital Asset]]
+  - partOf: [[Spatial Computing]]
 
 - ### Content
   # PropertySystem

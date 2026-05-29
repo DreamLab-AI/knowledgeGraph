@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:qlo-ra",
   "domain": "artificial-intelligence",
-  "definition": "An extension of LoRA that combines 4-bit quantisation with low-rank adaptation, enabling fine-tuning of very large models (65B+ parameters) on consumer-grade GPUs.",
+  "definition": "An extension of LoRA (Low-Rank Adaptation) that combines 4-bit NormalFloat quantisation of frozen base model weights with full-precision trainable low-rank adapter matrices. QLoRA additionally employs double quantisation and paged optimisers to achieve extreme memory efficiency, enabling fine-tuning of 65B-parameter models on a single 48GB GPU without significant performance degradation.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -13,25 +13,57 @@
     },
     {
       "id": "urn:ngm:class:parameter-efficient-fine-tuning",
-      "label": "Parameter Efficient Fine-Tuning"
+      "label": "Parameter-Efficient Fine-Tuning"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:quantisation",
+        "label": "Quantisation"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-quantisation",
+        "label": "Neural Network Quantisation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:domain-adaptation",
+        "label": "Domain Adaptation"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
+      }
+    ]
   },
   "wikilinks": [
     {

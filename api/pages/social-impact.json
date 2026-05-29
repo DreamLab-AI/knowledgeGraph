@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:social-impact",
   "domain": "spatial-computing",
-  "definition": "The effects\u2014positive and negative, intended and unintended\u2014that AI systems have on individuals, communities, societies and social structures including employment, education, social cohesion, cultural practices and power distributions.",
+  "definition": "Social Impact refers to the full spectrum of effects \u2014 positive and negative, intended and unintended \u2014 that AI systems and digital technologies exert on individuals, communities, and social structures, encompassing changes to employment patterns, educational access, cultural practices, power distributions, social cohesion, and fundamental rights. Assessing social impact requires both quantitative metrics and qualitative analysis across affected stakeholder groups.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-governance-and-safety",
@@ -13,21 +13,53 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ai-impact-assessment",
+        "label": "AI Impact Assessment"
+      },
+      {
+        "id": "urn:ngm:class:social-impact-assessment-sia",
+        "label": "Social Impact Assessment (SIA)"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:digital-society-harms",
+        "label": "Digital Society Harms"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:social-contract",
+        "label": "Social Contract"
+      },
+      {
+        "id": "urn:ngm:class:digital-society",
+        "label": "Digital Society"
+      },
+      {
+        "id": "urn:ngm:class:societal-and-environmental-wellbeing",
+        "label": "Societal and Environmental Wellbeing"
+      }
+    ]
   },
   "wikilinks": [
     {

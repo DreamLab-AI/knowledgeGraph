@@ -6,7 +6,10 @@
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: [[Cryptography]], [[Encryption]]
+  - **requires**: [[Data Protection]], [[Privacy]]
+  - **supports**: [[Blockchain Governance]], [[Information Security]]
+  - **relatedTo**: [[Privacy Preserving Blockchain]]
 
 - ### Content
 

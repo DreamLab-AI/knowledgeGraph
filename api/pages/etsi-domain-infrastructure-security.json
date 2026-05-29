@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:etsi-domain-infrastructure-security",
   "domain": "infrastructure",
-  "definition": "ETSI infrastructure security framework safeguarding immersive digital environments through distributed network functions, identity management enhancements, and privacy-preserving mechanisms tailored for metaverse and edge computing applications.",
+  "definition": "ETSI infrastructure security domain safeguarding metaverse and edge computing environments through NFV architectural frameworks, cross-domain authentication standards, and decentralised identity systems. It addresses multi-party trust models, privacy-preserving mechanisms, and security lifecycle management coordinated with 3GPP and ITU-T for ultra-edge and terminal-edge deployments.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-security-and-identity",
@@ -13,21 +13,53 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.4,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralized-identity-did",
+        "label": "Decentralized Identity (DID)"
+      },
+      {
+        "id": "urn:ngm:class:quantum-network-node",
+        "label": "Quantum Network Node"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:security-framework",
+        "label": "Security Framework"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:privacy-preserving-technology",
+        "label": "Privacy Preserving Technology"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ]
   },
   "wikilinks": [
     {

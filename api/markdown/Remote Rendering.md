@@ -37,15 +37,30 @@ public:: true
   "@id": "urn:ngm:class:remote-rendering",
   "@type": "Class",
   "label": "Remote Rendering",
-  "definition": "Remote Rendering is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Remote Rendering offloads GPU-intensive 3D scene computation to a server or cloud node, streaming compressed video frames to a thin client such as an XR headset or mobile device. This approach decouples visual fidelity from device hardware constraints, enabling photorealistic graphics on low-power endpoints while centralising GPU resources. Latency and bandwidth are critical quality-of-service parameters; edge computing deployments minimise round-trip delay to support interactive frame rates.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
+      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
+      {"@id": "urn:ngm:class:latency", "label": "Latency"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:content-delivery-network", "label": "Content Delivery Network"},
+      {"@id": "urn:ngm:class:cloud-infrastructure", "label": "Cloud Infrastructure"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:photorealistic-rendering", "label": "Photorealistic Rendering"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -76,14 +91,16 @@ public:: true
 
 
 - ### Definition
-  - RemoteRendering is a concept within the ngm domain.
+  - Remote Rendering offloads GPU-intensive 3D scene computation to a server or cloud node, streaming compressed video frames to a thin client such as an XR headset or mobile device. This approach decouples visual fidelity from device hardware constraints, enabling photorealistic graphics on low-power endpoints while centralising GPU resources. Latency and bandwidth are critical quality-of-service parameters; edge computing deployments minimise round-trip delay to support interactive frame rates.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:RemoteRendering
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires**: Edge Computing, GPU Compute, Latency
+  - **uses**: Content Delivery Network, Cloud Infrastructure
+  - **enables**: Photorealistic Rendering
 
 - ### Content
   # RemoteRendering

@@ -37,15 +37,31 @@ public:: true
   "@id": "urn:ngm:class:procedural-animation",
   "@type": "Class",
   "label": "Procedural Animation",
-  "definition": "Procedural Animation is a spatial computing concept and a type of spatial-computing.",
+  "definition": "Procedural Animation is a spatial computing technique that generates character and object motion algorithmically at runtime rather than from pre-authored keyframe sequences. It encompasses inverse kinematics systems, physics-based secondary motion, dynamic environmental adaptation, and behaviour-driven posing, enabling responsive and scalable animation in interactive metaverse environments.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:inverse-kinematics", "label": "Inverse Kinematics"},
+      {"@id": "urn:ngm:class:physics-simulation", "label": "Physics Simulation"},
+      {"@id": "urn:ngm:class:physics-engine", "label": "Physics Engine"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:avatar-behavior", "label": "Avatar Behavior"},
+      {"@id": "urn:ngm:class:animation-technique", "label": "Animation Technique"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:motion-capture", "label": "Motion Capture"},
+      {"@id": "urn:ngm:class:animation-retargeting", "label": "Animation Retargeting"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -76,14 +92,16 @@ public:: true
 
 
 - ### Definition
-  - ProceduralAnimation is a concept within the ngm domain.
+  - Procedural Animation is a spatial computing technique that generates character and object motion algorithmically at runtime rather than from pre-authored keyframe sequences. It encompasses inverse kinematics systems, physics-based secondary motion, dynamic environmental adaptation, and behaviour-driven posing, enabling responsive and scalable animation in interactive metaverse environments.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:ProceduralAnimation
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses: [[Inverse Kinematics]], [[Physics Simulation]], [[Physics Engine]]
+  - enables: [[Avatar Behavior]], [[Animation Technique]]
+  - relatedTo: [[Motion Capture]], [[Animation Retargeting]]
 
 - ### Content
   # ProceduralAnimation

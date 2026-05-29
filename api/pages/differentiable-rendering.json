@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:differentiable-rendering",
   "domain": "artificial-intelligence",
-  "definition": "Differentiable rendering is a class of rendering algorithms that compute gradients of image outputs with respect to scene parameters, enabling gradient-based optimisation for 3D reconstruction and neural scene representation.",
+  "definition": "Differentiable rendering is a class of rendering algorithms that formulate the image formation process in a manner that admits the computation of gradients of pixel values with respect to scene parameters \u2014 including geometry, materials, lighting, and camera pose. By backpropagating through the rendering pipeline, these methods enable gradient-based optimisation to reconstruct 3D scenes from 2D observations, train neural scene representations, and perform inverse rendering. Differentiable rendering forms a bridge between classical computer graphics and deep learning, enabling end-to-end training of 3D-aware generative and perception models.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:neural-radiance-field",
+        "label": "Neural Radiance Field"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gaussian-splatting",
+        "label": "Gaussian Splatting"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

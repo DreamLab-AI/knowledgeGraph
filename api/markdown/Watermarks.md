@@ -33,15 +33,30 @@ public:: true
   "@id": "urn:ngm:class:watermarks",
   "@type": "Class",
   "label": "Watermarks",
-  "definition": "Watermarks is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Techniques for embedding imperceptible or visible signals into digital content—such as text, images, audio, or AI-generated outputs—to assert provenance, ownership, or authenticity. AI watermarking approaches include statistical token-distribution biasing (for large language models) and frequency-domain embedding (for images), enabling detection of machine-generated content and supporting intellectual property protection and content provenance verification.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-security-and-identity",
       "label": "Security and Identity"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"},
+      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:data-provenance", "label": "Data Provenance"},
+      {"@id": "urn:ngm:class:accountability", "label": "Accountability"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
+      {"@id": "urn:ngm:class:transparency-oecd", "label": "Transparency (OECD)"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -72,14 +87,16 @@ public:: true
 
 
 - ### Definition
-  - Watermarks is a concept within the ngm domain.
+  - Techniques for embedding imperceptible or visible signals into digital content—text, images, audio, or AI-generated outputs—to assert provenance, ownership, or authenticity. AI watermarking approaches include statistical token-distribution biasing for large language models and frequency-domain embedding for images, enabling detection of machine-generated content and supporting intellectual property protection and content provenance verification.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:Watermarks
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses:: [[Cryptography]], [[Generative AI]]
+  - enables:: [[Data Provenance]], [[Accountability]]
+  - supports:: [[AI Governance]], [[Transparency (OECD)]]
 
 - ### Content
   - [Watermarking in the sand

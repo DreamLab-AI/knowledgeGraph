@@ -26,7 +26,7 @@ public:: true
   "@type": "Class",
   "@id": "urn:ngm:class:ai-technique",
   "label": "AI Technique",
-  "definition": "Intermediate taxonomy category for ai technique concepts within the artificial intelligence domain.",
+  "definition": "Taxonomy hub encompassing the principal methods and algorithmic approaches used in artificial intelligence, spanning symbolic, statistical, and neural paradigms. AI Technique organises the broad spectrum of techniques — from classical reasoning and search to contemporary deep learning and generative models — that implement intelligent behaviour in systems.",
   "domain": "artificial-intelligence",
   "subClassOf": [
     {
@@ -34,7 +34,25 @@ public:: true
       "label": "Artificial Intelligence"
     }
   ],
-  "relations": {},
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
+      {"@id": "urn:ngm:class:symbolic-ai", "label": "Symbolic AI"},
+      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
+      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
+      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
+      {"@id": "urn:ngm:class:reasoning", "label": "Reasoning"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:ai-research-area", "label": "AI Research Area"},
+      {"@id": "urn:ngm:class:ai-application", "label": "AI Application"},
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
+    ]
+  },
   "qualityScore": 0.8,
   "maturity": "established"
 }

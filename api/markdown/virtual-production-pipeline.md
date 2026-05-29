@@ -8,6 +8,13 @@
 
 - ### Relationships
   - is-subclass-of:: [[Virtual Production]]
+  - Requires: [[Real-Time Rendering]]
+  - Requires: [[Motion Capture]]
+  - Requires: [[Game Engine]]
+  - Uses: [[Virtual Production Volume]]
+  - Uses: [[Visual Effects]]
+  - Enables: [[Film Production]]
+  - Has Part: [[Virtual Production Workflow]]
 
 - ### Content
 

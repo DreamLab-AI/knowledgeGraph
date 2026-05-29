@@ -66,7 +66,7 @@ public:: true
   "@id": "urn:ngm:class:network-latency",
   "@type": "Class",
   "label": "Network Latency",
-  "definition": "Communication delay within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "Network Latency is the round-trip communication delay between nodes in a blockchain network, directly constraining consensus speed, block propagation, and transaction throughput. High latency increases the probability of forks, degrades user experience in real-time applications, and sets a fundamental lower bound on block time in geographically distributed deployments.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -83,7 +83,25 @@ public:: true
       "label": "NetworkComponent"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:block-propagation-time", "label": "Block Propagation Time"},
+      {"@id": "urn:ngm:class:blockchain-scalability", "label": "Blockchain Scalability"},
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
+      {"@id": "urn:ngm:class:network-topology", "label": "Network Topology"},
+      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"},
+      {"@id": "urn:ngm:class:distributed-system", "label": "Distributed System"},
+      {"@id": "urn:ngm:class:gossip-protocol", "label": "Gossip Protocol"},
+      {"@id": "urn:ngm:class:sub-millisecond-latency", "label": "Sub-Millisecond Latency"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:latency", "label": "Latency"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:latency-management-protocol", "label": "Latency Management Protocol"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

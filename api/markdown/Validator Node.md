@@ -66,7 +66,7 @@ public:: true
   "@id": "urn:ngm:class:validator-node",
   "@type": "Class",
   "label": "Validator Node",
-  "definition": "Transaction validation participant within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "A network participant in a Proof of Stake or similar blockchain that locks collateral (stake) to earn the right to propose and attest to blocks, and is subject to slashing penalties for equivocation or liveness failures. Validator nodes form the security backbone of staking-based consensus, replacing the hash-rate competition of mining.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -83,7 +83,26 @@ public:: true
       "label": "NetworkComponent"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"},
+      {"@id": "urn:ngm:class:validator-set", "label": "Validator Set"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
+      {"@id": "urn:ngm:class:epoch", "label": "Epoch"},
+      {"@id": "urn:ngm:class:finality", "label": "Finality"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:cryptographic-signature", "label": "Cryptographic Signature"},
+      {"@id": "urn:ngm:class:schnorr-signature", "label": "Schnorr Signature"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:block", "label": "Block"},
+      {"@id": "urn:ngm:class:transaction-finality", "label": "Transaction Finality"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

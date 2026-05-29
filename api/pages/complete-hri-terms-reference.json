@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:complete-hri-terms-reference",
   "domain": "robotics",
-  "definition": "A structured terminology reference documenting standardised vocabulary for Human-Robot Interaction, encompassing Communication Protocols, Behavioural Patterns, and Engagement Modalities.",
+  "definition": "A structured terminology reference documenting standardised vocabulary for Human-Robot Interaction (HRI), encompassing communication protocols, behavioural patterns, and engagement modalities. It enables consistent annotation and semantic understanding of interaction contexts across robotic and autonomous systems, aligned with IEEE and ISO standards.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-human-robot-interaction",
@@ -14,7 +14,7 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.4,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,11 +23,38 @@
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:social-robotics",
+        "label": "Social Robotics"
+      },
+      {
+        "id": "urn:ngm:class:robotics-domain",
+        "label": "Robotics Domain"
+      }
+    ]
   },
   "wikilinks": [
     {

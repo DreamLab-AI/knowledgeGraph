@@ -1,12 +1,16 @@
 - ### Definition
-  - ScriptingLanguage is a concept within the ngm domain.
+  - A scripting language is an interpreted or dynamically compiled programming language used to automate tasks, define interactive behaviours, and extend the capabilities of host applications or game engines without modifying core engine code. In metaverse contexts, scripting languages such as JavaScript, Lua, Python, and C# enable content creators to author custom gameplay mechanics, NPC behaviour, and dynamic environment logic with rapid iteration cycles.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:ScriptingLanguage
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Part of [[Programming Language]]
+  - Enables [[Game Development]]
+  - Enables [[Virtual World Creation]]
+  - Uses [[Game Engine]]
+  - Related to [[Software Engineering]]
 
 - ### Content
   # ScriptingLanguage

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:public-goods-funding",
   "domain": "blockchain",
-  "definition": "A mechanism for financing non-excludable, non-rival resources by pooling contributions from stakeholders to sustain shared infrastructure and open-source projects.",
+  "definition": "Public goods funding refers to mechanisms that finance resources which are non-excludable and non-rival \u2014 meaning consumption by one party does not diminish availability to others and exclusion is impractical. In decentralised ecosystems, on-chain coordination primitives such as quadratic funding, retroactive grants, and DAO-managed treasuries are used to allocate capital towards open-source software, protocol research, and shared infrastructure. These mechanisms attempt to correct the market failure of under-provision that arises when contributors cannot capture sufficient private value from their public-benefit work.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-defi-and-economics",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:quadratic-funding",
+        "label": "Quadratic Funding"
+      },
+      {
+        "id": "urn:ngm:class:retroactive-public-goods-funding",
+        "label": "Retroactive Public Goods Funding"
+      }
+    ],
     "requires": [],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:dao",
+        "label": "DAO"
+      },
+      {
+        "id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

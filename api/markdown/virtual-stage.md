@@ -8,6 +8,10 @@
 
 - ### Relationships
   - is-subclass-of:: [[Production Facility]]
+  - requires:: [[VR Rendering Engine]], [[Real-Time Rendering]]
+  - hasPart:: [[Virtual Production Volume]], [[Virtual Camera]]
+  - enables:: [[Virtual Production]], [[Virtual Production Pipeline]]
+  - uses:: [[Game Engine]], [[Motion Capture]]
 
 - ### Content
 

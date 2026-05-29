@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:open-source-framework",
   "domain": "infrastructure",
-  "definition": "Open Source Framework is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A publicly licensed software framework whose source code is freely available for inspection, modification, and redistribution under an approved open-source licence. Open source frameworks provide reusable architectural scaffolding\u2014APIs, libraries, conventions, and tooling\u2014that accelerate development whilst enabling community-driven quality assurance, security auditing, and interoperability across vendor boundaries.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-software-engineering",
@@ -13,21 +13,53 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      },
+      {
+        "id": "urn:ngm:class:api-standard",
+        "label": "API Standard"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-framework",
+        "label": "Machine Learning Framework"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:open-source-ai",
+        "label": "Open-Source AI"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
+      },
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": []

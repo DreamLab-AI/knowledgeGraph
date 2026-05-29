@@ -78,7 +78,7 @@ public:: true
   "relations": {
     "enables": [
       {
-        "@id": "urn:ngm:class:carbon-credit",
+        "@id": "urn:ngm:class:carbon-credits",
         "label": "Carbon Credit"
       }
     ],

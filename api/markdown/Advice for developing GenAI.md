@@ -70,15 +70,34 @@ public:: true
   "@id": "urn:ngm:class:advice-for-developing-gen-ai",
   "@type": "Class",
   "label": "Advice for developing GenAI",
-  "definition": "Advice for developing GenAI is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "A practitioner's phased methodology for building generative AI applications, progressing from proof-of-concept (using the best available models and rapid prototyping tools) through stakeholder validation to a robust production build, with explicit guidance on iterative evaluation, legal risk deferral, and avoidance of premature fine-tuning.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
+      {"@id": "urn:ngm:class:ai-video", "label": "AI Video"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
+      {"@id": "urn:ngm:class:lo-ra-do-ra-etc", "label": "LoRA DoRA etc"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:ai-governance-and-ethics", "label": "AI Governance and Ethics"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:music-and-audio", "label": "Music and Audio"},
+      {"@id": "urn:ngm:class:ai-agent-system", "label": "AI Agent System"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -155,7 +174,7 @@ public:: true
 
 
 - ### Definition
-  - Advice for developing GenAI is a concept within the ngm domain.
+  - A practitioner's phased methodology for building generative AI applications: start with the best available model, prototype rapidly, validate with stakeholders, then build robustly—deferring fine-tuning and legal risk until each phase is proven.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:AdviceForDevelopingGenAI
@@ -163,6 +182,10 @@ public:: true
 
 - ### Relationships
   - bridges-to:: [[AI Agent System]]
+  - uses:: [[Generative AI]], [[Large Language Models]], [[AI Video]]
+  - enables:: [[Fine Tuning]], [[LoRA DoRA etc]]
+  - supports:: [[AI Governance and Ethics]]
+  - relatedTo:: [[Music and Audio]]
 
 - ### Content
   **DO:**

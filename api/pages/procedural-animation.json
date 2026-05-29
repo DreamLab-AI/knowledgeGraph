@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:procedural-animation",
   "domain": "spatial-computing",
-  "definition": "Procedural Animation is a spatial computing concept and a type of spatial-computing.",
+  "definition": "Procedural Animation is a spatial computing technique that generates character and object motion algorithmically at runtime rather than from pre-authored keyframe sequences. It encompasses inverse kinematics systems, physics-based secondary motion, dynamic environmental adaptation, and behaviour-driven posing, enabling responsive and scalable animation in interactive metaverse environments.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -14,20 +14,51 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:avatar-behavior",
+        "label": "Avatar Behavior"
+      },
+      {
+        "id": "urn:ngm:class:animation-technique",
+        "label": "Animation Technique"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      },
+      {
+        "id": "urn:ngm:class:physics-engine",
+        "label": "Physics Engine"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      },
+      {
+        "id": "urn:ngm:class:animation-retargeting",
+        "label": "Animation Retargeting"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

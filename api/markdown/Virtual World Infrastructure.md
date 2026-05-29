@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:virtual-world-infrastructure",
   "@type": "Class",
   "label": "Virtual World Infrastructure",
-  "definition": "The underlying technical foundation required to operate metaverse platforms, encompassing cloud computing services, edge networks, distributed systems, real-time rendering capabilities, networking protocols, and blockchain integration that toger enable persistent, scalable virtual environments wi...",
+  "definition": "The underlying technical foundation required to operate metaverse platforms, encompassing cloud computing services, edge networks, distributed systems, real-time rendering capabilities, networking protocols, and blockchain integration that together enable persistent, scalable virtual environments with low-latency user interactions.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
@@ -59,11 +60,56 @@ public:: true
       "label": "Digital Infrastructure"
     }
   ],
-  "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:network-latency",
+        "label": "Network Latency"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:virtual-world",
+        "label": "Virtual World"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-experience",
+        "label": "Virtual Experience"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      }
+    ]
   }
 }
 ```
@@ -109,6 +155,15 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Digital Infrastructure]]
+  - Has Part: [[Edge Computing]]
+  - Has Part: [[Cloud Infrastructure]]
+  - Has Part: [[Distributed Systems]]
+  - Has Part: [[Real-Time Rendering]]
+  - Enables: [[Virtual World]]
+  - Enables: [[Virtual Experience]]
+  - Uses: [[Blockchain]]
+  - Uses: [[Content Delivery Network]]
+  - Requires: [[Network Latency]]
 
 - ### Content
 

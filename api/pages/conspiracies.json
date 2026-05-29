@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:conspiracies",
   "domain": "infrastructure",
-  "definition": "Conspiracies is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Conspiracies, in the context of technology communities, refers to the recurring pattern of conspiratorial thinking that attaches to emerging technologies such as cryptocurrency and AI. Often rooted in legitimate governance concerns, such thinking can escalate into disinformation ecosystems, creating tensions within technology policy, AI safety debates, and open-source governance.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-software-engineering",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:safety-and-alignment",
+        "label": "Safety and alignment"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:california-ai-bill",
+        "label": "California AI bill"
+      },
+      {
+        "id": "urn:ngm:class:open-source-ai",
+        "label": "Open-Source AI"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:politics-law-privacy",
+        "label": "Politics, Law, Privacy"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -42,9 +42,9 @@ public:: true
   "@id": "urn:ngm:class:rb-0043-torque",
   "@type": "Class",
   "label": "rb 0043 torque",
-  "definition": "torque is a robotics and autonomous systems concept and a type of Robot Dynamics.",
+  "definition": "Torque is the rotational force applied about a joint axis, expressed in Newton-metres (N·m). In robot dynamics, joint torques are the primary control inputs that drive links through desired trajectories; torque limits constrain the feasible workspace and influence payload capacity, and torque sensing enables compliant and force-controlled interaction.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-actuation-and-control",
@@ -55,7 +55,24 @@ public:: true
       "label": "Robot Dynamics"
     }
   ],
-  "quality": 0.5,
+  "qualityScore": 0.7,
+  "quality": 0.7,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:rb-0041-inertia", "label": "rb 0041 inertia"},
+      {"@id": "urn:ngm:class:rb-0044-velocity", "label": "rb 0044 velocity"},
+      {"@id": "urn:ngm:class:rb-0045-acceleration", "label": "rb 0045 acceleration"},
+      {"@id": "urn:ngm:class:rb-0067-force-torque-sensor", "label": "rb 0067 force torque sensor"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:actuator", "label": "Actuator"},
+      {"@id": "urn:ngm:class:servo-motor", "label": "Servo Motor"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:rb-0022-robot-dynamics", "label": "rb 0022 robot dynamics"},
+      {"@id": "urn:ngm:class:rb-0064-computed-torque-control", "label": "rb 0064 computed torque control"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -91,7 +108,7 @@ public:: true
 
 
 - ### Definition
-  - ### Primary Definition
+  - **Torque** is the rotational equivalent of linear force — a moment acting about a joint axis that accelerates or decelerates a robot link according to Newton's second law for rotation (τ = Iα). In manipulator control, joint torque commands are computed from the robot's dynamic model (rb 0022) using inertia, Coriolis, and gravity terms, then realised by servo motors and actuators.
 
 - ### Semantic Classification
   - owl-class:: robotics:rb0043torque
@@ -99,7 +116,9 @@ public:: true
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Closely coupled to inertia (rb 0041): higher inertia requires greater torque for the same acceleration (rb 0045).
+  - Measured by force-torque sensors (rb 0067) for compliant control and collision detection.
+  - Computed and commanded by computed-torque control (rb 0064) and optimal control frameworks (rb 0060).
 
 - ### Content
   - ### Primary Definition

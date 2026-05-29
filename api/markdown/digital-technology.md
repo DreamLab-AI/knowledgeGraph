@@ -1,5 +1,5 @@
 - ### Definition
-  - Digital Technology is a concept within the metaverse domain. Further enrichment pending.
+  - Digital Technology refers to electronic tools, systems, and platforms that generate, store, or process information in binary or digital form. It encompasses computing hardware, software, networks, and embedded systems that collectively enable the creation, transformation, and distribution of digital content and services, forming the foundational layer of the modern digital economy.
 
 bridges-to:: [[Computer Vision]]
 
@@ -8,7 +8,9 @@ bridges-to:: [[Computer Vision]]
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **enables**: [[Spatial Computing]], [[Immersive Technology]]
+  - **uses**: [[Computing Hardware]], [[Computing Infrastructure]]
+  - **relatedTo**: [[Disruptive Technology]], [[Digital Infrastructure]]
 
 - ### Content
 

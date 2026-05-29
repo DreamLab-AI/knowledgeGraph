@@ -38,16 +38,29 @@ public:: true
   "@id": "urn:ngm:class:dagger",
   "@type": "Class",
   "label": "Dagger",
-  "definition": "Dagger is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Dagger is a programmable CI/CD engine that unifies pipeline definition and execution within typed, composable functions authored in general-purpose languages such as Go, Python, or TypeScript. Unlike traditional Dockerfile-and-shell-script approaches, Dagger caches the result of every function call at fine granularity, achieves CI/local parity by running identically on developer machines and cloud runners, and exposes pipelines as strongly-typed APIs discoverable via `dagger functions`.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:software-engineering", "label": "Software Engineering"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:simulation", "label": "Simulation"},
+      {"@id": "urn:ngm:class:machine-learning-pipeline", "label": "Machine Learning Pipeline"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:software-development-process", "label": "Software Development Process"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -90,8 +103,11 @@ public:: true
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
-
+  - **uses** [[Software Engineering]] — Dagger pipelines are authored in general-purpose software engineering languages
+  - **enables** [[Machine Learning Pipeline]] — Dagger unifies ML training and evaluation pipeline execution
+  - **enables** [[Simulation]] — reproducible containerised environments underpin simulation pipelines
+  - **relatedTo** [[Software Development Process]] — Dagger replaces shell-script CI with typed, composable pipeline code
+  - **relatedTo** [[Blockchain]] — Dagger's containerised environments can orchestrate blockchain node deployments
   - bridges-to:: [[Blockchain]] (bc)
 - ### Content
   - Of course! This is an excellent question and a perfect use case for comparing the traditional Docker wrapper script pattern with Dagger. Your `powerdev.sh` and `Dockerfile` are a very well-structured and powerful example of the conventional approach.

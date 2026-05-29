@@ -147,7 +147,7 @@ public:: true
       "label": "Token and Asset"
     },
     {
-      "@id": "urn:ngm:class:carbon-credit",
+      "@id": "urn:ngm:class:carbon-credits",
       "label": "CarbonCredit"
     },
     {

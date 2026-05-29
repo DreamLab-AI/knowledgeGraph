@@ -1,12 +1,15 @@
 - ### Definition
-  - PlayerTwo is a concept within the ngm domain.
+  - Player Two is a decentralised AI-character and collaborative storytelling platform combining Nostr-relay messaging, BIP85 key derivation, and generative AI workflows. It enables trustless group interactions with AI-driven waifu characters, token-gated access, and a robot project with on-device edge compute for the ED3N distributed network.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:PlayerTwo
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart: [[Player Two code]]
+  - uses: [[AI Video]], [[Generative AI]]
+  - enables: [[Player Tracking]], [[Identity Management]]
+  - dependsOn: [[Decentralised Identity]], [[Cryptography]]
 
 - ### Content
   - Planning for work on [[Neocadia]] and [[Player Two code]]

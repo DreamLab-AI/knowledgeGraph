@@ -92,13 +92,27 @@ public:: true
   "label": "Cryptographic Hash",
   "definition": "Deterministic mathematical function transforming arbitrary input data into fixed-length output ensuring data integrity verification and tamper detection through collision resistance properties.",
   "domain": "blockchain",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-cryptographic-primitive",
       "label": "Cryptographic Primitive"
     }
   ],
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:digital-signatures", "label": "Digital Signatures"},
+      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:encryption", "label": "Encryption"},
+      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"}
+    ]
+  },
   "quality": 0.4,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -203,8 +217,12 @@ public:: true
   - belongs-to-domain:: [[BlockchainDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
-
+  - enables:: [[Digital Signatures]]
+  - enables:: [[Merkle Tree]]
+  - requires:: [[Hash Function]]
+  - supports:: [[Blockchain]]
+  - supports:: [[Encryption]]
+  - supports:: [[Zero-Knowledge Proof]]
   - bridges-to:: [[AI Agent System]] (ai)
 - ### Content
   - A deterministic mathematical transformation converting arbitrary input data into fixed-length output values with collision-resistance properties that ensure [[Data Integrity]] and [[Tamper Detection]]. [[Cryptographic Hash Functions]] underpin [[Digital Signatures]], [[Merkle Trees]], [[Blockchain Validation]], and cryptographic security protocols.

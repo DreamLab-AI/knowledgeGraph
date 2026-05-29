@@ -54,9 +54,10 @@ public:: true
   "@id": "urn:ngm:class:adversarial-testing",
   "@type": "Class",
   "label": "Adversarial Testing",
-  "definition": "Testing modology that deliberately attempts to cause AI system failures through adversarial inputs, edge cases, and challenging scenarios. Adversarial testing helps identify robustness issues, safety vulnerabilities, and alignment failures before deployment.",
+  "definition": "A testing methodology that deliberately attempts to cause AI system failures through adversarial inputs, edge cases, and challenging scenarios in order to identify robustness issues, safety vulnerabilities, and alignment failures before deployment. It encompasses both explicitly adversarial prompts and implicitly problematic queries, drawing on red-teaming practices and formalised by NIST AI 100-2.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
@@ -72,6 +73,40 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:machine-learning-model",
+        "label": "Machine Learning Model"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:robustness",
+        "label": "Robustness"
+      }
+    ]
   }
 }
 ```
@@ -127,6 +162,10 @@ public:: true
 
 - ### Relationships
   - bridges-to:: [[Digital Twin]]
+  - Uses: [[Red Teaming]]
+  - Supports: [[AI Safety]], [[Robustness]]
+  - Requires: [[Machine Learning Model]]
+  - Related To: [[AI Governance]], [[Digital Twin]]
 
 - ### Content
   - Testing methodology that deliberately attempts to cause AI system failures through adversarial inputs, edge cases, and challenging scenarios. Adversarial testing helps identify robustness issues, safety vulnerabilities, and alignment failures before deployment.

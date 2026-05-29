@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:digital-heritage",
   "@type": "Class",
   "label": "Digital Heritage",
-  "definition": "Digital Heritage is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "The digitisation, preservation, and interactive presentation of cultural artefacts, historical sites, and intangible heritage through spatial computing technologies such as 3D reconstruction, AR, and VR. Digital heritage enables remote access, scholarly analysis, and public engagement with cultural memory that may otherwise be physically inaccessible or at risk of loss.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
@@ -60,6 +61,40 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:cultural-heritage-xr-experience",
+        "label": "Cultural Heritage XR Experience"
+      },
+      {
+        "@id": "urn:ngm:class:archival-standards",
+        "label": "Archival Standards"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "@id": "urn:ngm:class:digital-preservation",
+        "label": "Digital Preservation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:nft",
+        "label": "NFT"
+      }
+    ]
   }
 }
 ```
@@ -96,7 +131,7 @@ public:: true
 
 
 - ### Definition
-  - Digital Heritage is a concept within the metaverse domain. Further enrichment pending.
+  - The digitisation, preservation, and interactive presentation of cultural artefacts, historical sites, and intangible heritage through spatial computing technologies such as 3D reconstruction, AR, and VR. Digital heritage enables remote access, scholarly analysis, and public engagement with cultural memory that may otherwise be physically inaccessible or at risk of loss.
 
 bridges-to:: [[Blockchain]]
 
@@ -105,7 +140,12 @@ bridges-to:: [[Blockchain]]
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses: [[3D Reconstruction]]
+  - Uses: [[Digital Preservation]]
+  - Has Part: [[Cultural Heritage XR Experience]]
+  - Has Part: [[Archival Standards]]
+  - Enables: [[Immersive Experience]]
+  - Related To: [[NFT]]
 
 - ### Content
 

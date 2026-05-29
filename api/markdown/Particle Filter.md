@@ -351,7 +351,7 @@ public:: true
       "label": "AI Technique"
     },
     {
-      "@id": "urn:ngm:class:monte-carlo-method",
+      "@id": "urn:ngm:class:monte-carlo-methods",
       "label": "Monte Carlo Method"
     },
     {

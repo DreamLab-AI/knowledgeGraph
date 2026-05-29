@@ -7,7 +7,9 @@
   - belongs-to-domain:: [[NGM Domain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart:: [[CloudInfrastructure]], [[NetworkInfrastructure]], [[NetworkTopology]], [[SecurityArchitecture]], [[InfrastructureComponent]], [[InfrastructureArchitecture]]
+  - enables:: [[CloudNativeApplications]], [[EdgeComputing]], [[DistributedSystems]]
+  - relatedTo:: [[DigitalTransformation]], [[EnterpriseArchitecture]], [[MicroservicesArchitecture]]
 
 - ### Content
 

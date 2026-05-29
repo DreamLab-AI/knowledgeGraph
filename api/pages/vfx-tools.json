@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:vfx-tools",
   "domain": "spatial-computing",
-  "definition": "VFX Tools is a type of Visual Effects in the spatial computing domain.",
+  "definition": "VFX Tools are software applications and pipelines used to create, composite, and render visual effects for film, television, real-time engines, and immersive media. They encompass particle simulation, fluid and cloth dynamics, compositing, colour grading, and procedural generation capabilities, and increasingly interface with real-time rendering engines for deployment in spatial computing contexts.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-display-and-rendering",
@@ -18,20 +18,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:rendering-technique",
+        "label": "Rendering Technique"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:particle-system",
+        "label": "Particle System"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:animation-software",
+        "label": "Animation Software"
+      },
+      {
+        "id": "urn:ngm:class:rendering-engine",
+        "label": "Rendering Engine"
+      }
+    ]
   },
   "wikilinks": [
     {

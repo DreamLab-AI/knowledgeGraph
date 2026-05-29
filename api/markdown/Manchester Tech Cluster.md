@@ -50,16 +50,36 @@ public:: true
   "@id": "urn:ngm:class:manchester-tech-cluster",
   "@type": "Class",
   "label": "Manchester Tech Cluster",
-  "definition": "Manchester's thriving technology ecosystem centred on MediaCityUK, including AI, digital innovation, and financial technology sectors.",
+  "definition": "Manchester Tech Cluster is Greater Manchester's technology and digital innovation ecosystem, forming the UK's second-largest tech hub after London with over 10,000 digital businesses contributing a £5 billion digital economy. The cluster is anchored by MediaCityUK, the University of Manchester, Manchester Science Park, and the ID Manchester innovation district, with notable strengths in artificial intelligence, FinTech, and eCommerce.",
   "domain": "infrastructure",
   "maturity": "established",
+  "qualityScore": 0.8,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:north-england-innovation-corridor", "label": "North England Innovation Corridor"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:uk-tech-ecosystem", "label": "UK Tech Ecosystem"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:digital-economy", "label": "Digital Economy"},
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:ai-development", "label": "AI Development"},
+      {"@id": "urn:ngm:class:research-methods", "label": "Research Methods"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:investment-management", "label": "Investment Management"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

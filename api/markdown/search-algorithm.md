@@ -7,6 +7,13 @@
 
 - ### Relationships
   - is-subclass-of:: ['owl:Thing']
+  - uses [[Heuristic Methods]]
+  - uses [[Graph Search]]
+  - enables [[Monte Carlo Tree Search]]
+  - enables [[Navigation]]
+  - relatedTo [[Reinforcement Learning]]
+  - relatedTo [[Constraint]]
+  - relatedTo [[Information Retrieval]]
 
 - ### Content
 

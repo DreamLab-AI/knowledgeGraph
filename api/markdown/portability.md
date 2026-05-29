@@ -5,7 +5,10 @@
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires**: Asset Format Standards, Interoperability — portability depends on agreed open formats and platform interoperability contracts.
+  - **enables**: Avatar Portability, Cross-Platform Interoperability — portability mechanisms directly deliver avatar and asset migration across platforms.
+  - **uses**: Digital Identity, Blockchain — decentralised identity and on-chain provenance are the mechanisms that preserve ownership across platform boundaries.
+  - **supports**: Metaverse — an open, interoperable metaverse requires portability as a foundational property.
 - ### Content
   - Capability for seamless migration of digital assets, identities, and experiences across heterogeneous virtual platforms through standardised formats ([[glTF]], [[USD]]), metadata schemas, and blockchain bridges. Portability eliminates vendor lock-in by enabling users to transfer avatars, digital goods, and social connections across platforms, exemplified by [[ReadyPlayerMe]] cross-platform avatars and [[Decentraland]] [[NFT]] portability. Standards-based interoperability reduces switching costs and encourages multi-platform presence, supporting user agency and ecosystem composability.
   - ### Original Content

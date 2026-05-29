@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:transparent-data-processing",
   "@type": "Class",
   "label": "Transparent Data Processing",
-  "definition": "Data handling practices that are openly disclosed to users, providing clear information about what data is collected, how it is processed, who has access, and for what purposes, enabling informed consent and accountability.",
+  "definition": "Data handling practices that are openly disclosed to users, specifying what data is collected, how it is processed, who has access, and for what purposes, so as to enable informed consent and meaningful accountability. GDPR codifies this as the principle of lawfulness, fairness, and transparency; in metaverse and XR contexts it extends to immersive data streams including gaze tracking, movement patterns, and biometric signals. Implementation relies on audit trails, data flow mapping, privacy notices, and increasingly on zero-knowledge proofs for privacy-preserving verification.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-data-management",
@@ -59,7 +60,23 @@ public:: true
       "label": "Data Processing"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:consent-management", "label": "Consent Management"},
+      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:gdpr-compliance", "label": "GDPR Compliance"},
+      {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy By Design"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
+      {"@id": "urn:ngm:class:privacy-framework", "label": "Privacy Framework"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -109,6 +126,10 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Data Processing]]
+  - requires:: [[Consent Management]], [[Audit Trail]]
+  - enables:: [[GDPR Compliance]], [[Privacy By Design]]
+  - uses:: [[Zero-Knowledge Proof]], [[Privacy Framework]]
+  - relatedTo:: [[Data Governance]]
 
 - ### Content
 

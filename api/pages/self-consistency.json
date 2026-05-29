@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:self-consistency",
   "domain": "artificial-intelligence",
-  "definition": "Self-consistency is a prompting strategy in which a language model generates multiple independent reasoning chains for a problem and selects the most frequently occurring answer to improve reliability.",
+  "definition": "Self-consistency is a prompting strategy for large language models in which multiple independent reasoning chains are sampled stochastically for a given problem and the final answer is determined by majority vote across those chains. The technique exploits the observation that correct reasoning paths, although varied in surface form, tend to converge on the same answer, whilst incorrect paths are more diverse. Self-consistency substantially improves performance on mathematical reasoning and multi-step logic tasks compared to greedy decoding, and it is commonly combined with chain-of-thought prompting.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -14,11 +14,29 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:chain-of-thought",
+        "label": "Chain of Thought"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:reliability",
+        "label": "Reliability"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +45,12 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

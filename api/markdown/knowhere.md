@@ -1,12 +1,15 @@
 - ### Definition
-  - Knowhere is a concept within the ngm domain.
+  - KnoWhere is an AI-driven visitor attention-tracking system for museums and immersive experience spaces, using computer vision and machine vision cameras to capture gaze vectors, emotion signals, and spatial attention metrics in real time without wearables. It enables hyper-personalised narrative adaptation and provides curators with actionable behavioural analytics whilst preserving visitor privacy through anonymised data processing.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:Knowhere
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses:: [[Computer Vision]], [[Neural Network]], [[Sensor Fusion]], [[Edge Computing]]
+  - enables:: [[Immersive Experience]], [[User Experience]]
+  - hasPart:: [[Segmentation and Identification]]
+  - requires:: [[Privacy]]
 
 - ### Content
   - #Public page

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:re-act",
   "domain": "artificial-intelligence",
-  "definition": "ReAct is a prompting paradigm that interleaves reasoning traces and action steps in large language models, enabling them to dynamically plan and execute tasks by alternating between thought and tool use.",
+  "definition": "ReAct (Reasoning and Acting) is a prompting framework for large language models that interleaves free-form reasoning traces (thought steps) with structured action calls (tool invocations) in a single output sequence, enabling the model to dynamically plan multi-step tasks, observe the results of tool actions, and revise its reasoning accordingly. Unlike pure chain-of-thought prompting which only produces reasoning without grounding, or pure action-only agents which cannot explain their decisions, ReAct unifies both in a synergistic loop that improves task completion rates and interpretability. ReAct has become foundational to agentic AI frameworks including LangChain, LlamaIndex, and OpenAI's Assistants API.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -14,11 +14,29 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:chain-of-thought",
+        "label": "Chain of Thought"
+      },
+      {
+        "id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +45,16 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:planning-and-scheduling",
+        "label": "Planning and Scheduling"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

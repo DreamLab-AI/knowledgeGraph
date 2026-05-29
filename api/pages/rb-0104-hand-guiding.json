@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:rb-0104-hand-guiding",
   "domain": "robotics",
-  "definition": "hand guiding is a robotics and autonomous systems concept and a type of Human Robot Interaction.",
+  "definition": "Hand guiding is a collaborative robot operation mode in which an operator physically moves the robot arm by direct physical contact, typically through a dedicated hand-guiding device, while the robot's safety systems monitor force, speed, and separation. It is one of four collaborative operation modes defined in ISO/TS 15066 and ISO 10218, enabling intuitive programming-by-demonstration and safe human-robot co-manipulation tasks.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-human-robot-interaction",
@@ -17,11 +17,20 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:rb-0067-force-torque-sensor",
+        "label": "rb 0067 force torque sensor"
+      },
+      {
+        "id": "urn:ngm:class:rb-0056-impedance-control",
+        "label": "rb 0056 impedance control"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
@@ -29,9 +38,36 @@
     "bridgesTo": [],
     "uses": [],
     "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-ts-15066",
+        "label": "ISO TS 15066"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:rb-0103-collaborative-operation",
+        "label": "rb 0103 collaborative operation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rb-0007-collaborative-robot",
+        "label": "rb 0007 collaborative robot"
+      },
+      {
+        "id": "urn:ngm:class:rb-0094-power-and-force-limiting",
+        "label": "rb 0094 power and force limiting"
+      },
+      {
+        "id": "urn:ngm:class:rb-0105-speed-and-separation-monitoring",
+        "label": "rb 0105 speed and separation monitoring"
+      },
+      {
+        "id": "urn:ngm:class:end-effector",
+        "label": "End Effector"
+      }
+    ]
   },
   "wikilinks": [
     {

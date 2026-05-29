@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:agricultural-robotics",
   "domain": "robotics",
-  "definition": "The application of robotic systems to automate farming operations such as planting, harvesting, and crop monitoring.",
+  "definition": "Agricultural robotics is the application of autonomous and semi-autonomous robotic systems to farming operations including soil preparation, precision planting, selective harvesting, crop health monitoring, and livestock management. Agricultural robots leverage computer vision, GPS positioning, and machine learning to operate in unstructured outdoor environments, adapting to variable terrain, crop geometry, and weather conditions. The field addresses labour shortages, resource efficiency, and the precision-agriculture imperative to reduce agrochemical inputs while maintaining or improving yields.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-robot-type",
@@ -14,20 +14,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:gps",
+        "label": "Gps"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

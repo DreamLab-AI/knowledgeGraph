@@ -54,7 +54,7 @@ public:: true
   "@id": "urn:ngm:class:social-presence",
   "@type": "Class",
   "label": "Social Presence",
-  "definition": "Subjective experience of feeling connected to and aware of other people in a mediated communication environment, fostering social interactions and relationships.",
+  "definition": "Subjective experience of feeling connected to and aware of other people in a mediated communication environment, fostering social interactions and relationships. Social presence is heightened by richer media, avatar fidelity, spatial audio, and shared immersive spaces, and is a key quality metric for telecollaboration and virtual world platforms.",
   "domain": "distributed-collaboration",
   "maturity": "established",
   "subClassOf": [
@@ -67,7 +67,27 @@ public:: true
       "label": "Presence"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:telecollaboration", "label": "Telecollaboration"},
+      {"@id": "urn:ngm:class:immersive-communication", "label": "Immersive Communication"},
+      {"@id": "urn:ngm:class:avatar", "label": "Avatar"},
+      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:virtual-collaboration", "label": "Virtual Collaboration"},
+      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:dc-communication", "label": "Communication Technology"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:video-conferencing", "label": "Video Conferencing"},
+      {"@id": "urn:ngm:class:web-rtc", "label": "WebRTC"},
+      {"@id": "urn:ngm:class:presence-detection", "label": "Presence Detection"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

@@ -42,9 +42,10 @@ public:: true
   "@id": "urn:ngm:class:environmental-trading",
   "@type": "Class",
   "label": "Environmental Trading",
-  "definition": "Environmental Trading is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Environmental Trading encompasses market-based mechanisms for buying and selling environmental assets such as carbon credits, renewable energy certificates, and biodiversity offsets. These mechanisms use blockchain-backed registries and smart contracts to provide transparent, auditable records of environmental value transfers, enabling organisations to meet sustainability obligations through market participation.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
@@ -56,6 +57,48 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:environmental-registry",
+        "label": "Environmental Registry"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-credit-token",
+        "label": "Carbon Credit Token"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-credits",
+        "label": "Carbon Credits"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:digital-economy",
+        "label": "Digital Economy"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:environmental-sustainability",
+        "label": "Environmental Sustainability"
+      },
+      {
+        "@id": "urn:ngm:class:sustainability",
+        "label": "Sustainability"
+      }
+    ]
   }
 }
 ```
@@ -87,14 +130,21 @@ public:: true
 
 
 - ### Definition
-  - Environmental Trading is a concept within the metaverse domain. Further enrichment pending.
+  - Environmental Trading encompasses market-based mechanisms for buying and selling environmental assets such as carbon credits, renewable energy certificates, and biodiversity offsets. These mechanisms use blockchain-backed registries and smart contracts to provide transparent, auditable records of environmental value transfers, enabling organisations to meet sustainability obligations through market participation.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:EnvironmentalTrading
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses [[Blockchain]]
+  - Uses [[Smart Contract]]
+  - Uses [[Carbon Credits]]
+  - Has Part [[Environmental Registry]]
+  - Has Part [[Carbon Credit Token]]
+  - Supports [[Environmental Sustainability]]
+  - Supports [[Sustainability]]
+  - Related To [[Digital Economy]]
 
 - ### Content
 

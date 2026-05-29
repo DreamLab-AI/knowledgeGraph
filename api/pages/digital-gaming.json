@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:digital-gaming",
   "domain": "spatial-computing",
-  "definition": "Digital Gaming is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Digital Gaming encompasses interactive software experiences delivered across platforms including PCs, consoles, and mobile devices, encompassing game design, virtual economies, player interaction systems, and increasingly blockchain-based asset ownership. It represents a convergence of entertainment, spatial computing, and digital economy mechanisms within persistent or session-based virtual environments.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -13,21 +13,53 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-ownership",
+        "label": "Digital Ownership"
+      },
+      {
+        "id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockchain-gaming",
+        "label": "Blockchain Gaming"
+      },
+      {
+        "id": "urn:ngm:class:immersive-gaming",
+        "label": "Immersive Gaming"
+      }
+    ]
   },
   "wikilinks": [
     {

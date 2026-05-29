@@ -42,16 +42,30 @@ public:: true
   "@id": "urn:ngm:class:perceptual-experience",
   "@type": "Class",
   "label": "Perceptual Experience",
-  "definition": "Perceptual Experience is a type of Distributed Collaboration in the distributed collaboration domain.",
+  "definition": "The multimodal sensory and cognitive engagement a user undergoes within a telepresence or immersive environment, encompassing visual fidelity, spatial audio, haptic feedback, and sense of presence. Perceptual experience quality determines the degree to which a distributed or virtual interaction is felt as equivalent to physical co-presence, directly impacting collaboration effectiveness and user well-being.",
   "domain": "distributed-collaboration",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:dc-telepresence",
       "label": "Telepresence"
     }
   ],
-  "quality": 0.35,
+  "qualityScore": 0.7,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:telepresence", "label": "Telepresence"},
+      {"@id": "urn:ngm:class:immersive-technology", "label": "Immersive Technology"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:social-presence", "label": "Social Presence"},
+      {"@id": "urn:ngm:class:user-experience", "label": "User Experience"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
+      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -87,14 +101,16 @@ public:: true
 
 
 - ### Definition
-  - Perceptual Experience is a concept within the telecollaboration domain. Further enrichment pending.
+  - The multimodal sensory and cognitive engagement a user undergoes within a telepresence or immersive environment, encompassing visual fidelity, spatial audio, haptic feedback, and sense of presence. Perceptual experience quality determines the degree to which a distributed or virtual interaction is felt as equivalent to physical co-presence, directly impacting collaboration effectiveness and user well-being.
 
 - ### Semantic Classification
   - owl-class:: distributed-collaboration:PerceptualExperience
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires: [[Telepresence]], [[Immersive Technology]]
+  - enables: [[Social Presence]], [[User Experience]]
+  - relatedTo: [[Virtual Reality]], [[Augmented Reality]]
 
 - ### Content
 

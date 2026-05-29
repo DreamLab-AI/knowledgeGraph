@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:virtual-model",
   "domain": "spatial-computing",
-  "definition": "A digital 3D representation of objects, characters, environments, or systems created using computer graphics software for use in metaverse platforms, simulations, games, and virtual production, including static assets, animated models, and procedurally generated content.",
+  "definition": "A digital 3D representation of objects, characters, environments, or systems created using computer graphics software for use in metaverse platforms, simulations, games, and virtual production, including static assets, animated models, and procedurally generated content. Models are authored in formats such as glTF/GLB, FBX, and USD, and are consumed by game engines, real-time renderers, and XR runtimes.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -17,19 +17,51 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:virtual-production",
+        "label": "Virtual Production"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-platform",
+        "label": "Metaverse Platform"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      },
+      {
+        "id": "urn:ngm:class:procedural-generation",
+        "label": "Procedural Generation"
+      }
+    ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:3-d-asset-standard",
+        "label": "3D Asset Standard"
+      }
+    ],
     "partOf": [],
     "relatedTo": []
   },

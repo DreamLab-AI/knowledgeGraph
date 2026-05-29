@@ -66,7 +66,7 @@ public:: true
   "@id": "urn:ngm:class:fork-choice-rule",
   "@type": "Class",
   "label": "Fork Choice Rule",
-  "definition": "Canonical chain selection within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "Algorithm by which blockchain nodes select the canonical chain head when multiple competing branches exist, resolving temporary forks deterministically. Bitcoin uses longest-chain (most cumulative proof-of-work) while Ethereum post-Merge uses the LMD-GHOST fork-choice weighted by validator attestation stake, determining network-wide finality.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -83,7 +83,27 @@ public:: true
       "label": "ConsensusProtocol"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:consensus-algorithm", "label": "Consensus Algorithm"},
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:censorship-resistance", "label": "Censorship Resistance"},
+      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
+      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"},
+      {"@id": "urn:ngm:class:blockchain-protocol", "label": "Blockchain Protocol"},
+      {"@id": "urn:ngm:class:consensus-rule", "label": "Consensus Rule"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:immutability", "label": "Immutability"},
+      {"@id": "urn:ngm:class:blockchain-scalability", "label": "Blockchain Scalability"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:peer-discovery", "label": "Peer Discovery"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

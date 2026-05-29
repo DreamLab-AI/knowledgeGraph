@@ -48,7 +48,7 @@ public:: true
   "label": "Virtual Classroom",
   "definition": "An online learning environment that replicates a traditional classroom's interactive experience without physical boundaries, leveraging education technology to connect students and instructors through real-time engagement, collaboration tools, and shared learning materials.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -59,6 +59,20 @@ public:: true
       "label": "Virtual Environment"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:learning-management-system", "label": "Learning Management System"},
+      {"@id": "urn:ngm:class:collaboration-platform", "label": "Collaboration Platform"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:collaborative-learning", "label": "Collaborative Learning"},
+      {"@id": "urn:ngm:class:immersive-learning", "label": "Immersive Learning"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:education-metaverse", "label": "Education Metaverse"},
+      {"@id": "urn:ngm:class:education-technology", "label": "Education Technology"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
@@ -109,6 +123,12 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Virtual Environment]]
+  - requires [[Learning Management System]]
+  - requires [[Collaboration Platform]]
+  - enables [[Collaborative Learning]]
+  - enables [[Immersive Learning]]
+  - relatedTo [[Education Metaverse]]
+  - relatedTo [[Education Technology]]
 
 - ### Content
 

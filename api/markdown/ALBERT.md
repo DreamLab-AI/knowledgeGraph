@@ -46,15 +46,33 @@ public:: true
   "@id": "urn:ngm:class:albert",
   "@type": "Class",
   "label": "ALBERT",
-  "definition": "A Lite BERT: a parameter-efficient variant of BERT that uses factorised embedding parameterisation and cross-layer parameter sharing to reduce model size whilst maintaining or improving performance.",
+  "definition": "A Lite BERT: a parameter-efficient transformer variant that uses factorised embedding parameterisation and cross-layer parameter sharing to achieve 18x fewer parameters than BERT-large whilst matching or exceeding its performance on NLP benchmarks such as GLUE, SQuAD, and RACE.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-model-architecture",
       "label": "AI Model Architecture"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:ro-berta", "label": "RoBERTa"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
+      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
+      {"@id": "urn:ngm:class:lo-ra-do-ra-etc", "label": "LoRA DoRA etc"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -105,6 +123,10 @@ public:: true
 
 - ### Relationships
   - bridges-to:: [[AI Agent System]]
+  - uses:: [[Transformer Architecture]], [[Natural Language Processing]]
+  - enables:: [[Fine Tuning]], [[Transfer Learning]]
+  - contrastsWith:: [[RoBERTa]]
+  - relatedTo:: [[Large Language Models]], [[LoRA DoRA etc]]
 
 - ### Content
   - A Lite BERT: a parameter-efficient variant of BERT that uses factorised embedding parameterisation and cross-layer parameter sharing to reduce model size whilst maintaining or improving performance.

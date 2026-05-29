@@ -44,13 +44,27 @@ public:: true
   "label": "Reinforcement Learning from Human Feedback",
   "definition": "A technique for aligning language models with human preferences by training a reward model from human rankings of outputs and using reinforcement learning (typically PPO) to optimise the policy towards maximising predicted human preference.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:reward-model", "label": "Reward Model"},
+      {"@id": "urn:ngm:class:human-feedback", "label": "Human Feedback"},
+      {"@id": "urn:ngm:class:supervised-fine-tuning", "label": "Supervised Fine Tuning"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"},
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:direct-preference-optimisation", "label": "Direct Preference Optimisation"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -95,7 +109,12 @@ public:: true
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Reward Model]]
+  - requires [[Human Feedback]]
+  - requires [[Supervised Fine Tuning]]
+  - enables [[AI Alignment]]
+  - enables [[Large Language Models]]
+  - contrastsWith [[Direct Preference Optimisation]]
 
 - ### Content
   - A technique for aligning language models with human preferences by training a reward model from human rankings of outputs and using reinforcement learning (typically PPO) to optimise the policy towards maximising predicted human preference. RLHF enables models to learn complex alignment objectives difficult to specify explicitly.

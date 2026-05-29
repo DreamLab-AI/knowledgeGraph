@@ -1,5 +1,5 @@
 - ### Definition
-  - The first making available of an AI system on the Union market.
+  - The first making available of an AI system or general-purpose AI model on the EU Union market, as defined in EU AI Act Article 3(12). This act triggers the full set of provider obligations under the Act, including risk management, technical documentation, conformity assessment, CE marking, and post-market monitoring, and applies regardless of whether the system is offered for payment or free of charge.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:PlacingontheMarket
@@ -7,7 +7,9 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires: [[Conformity Assessment]], [[Risk Management]], [[Compliance Framework]]
+  - enables: [[Market Surveillance Authority]], [[Deployer]]
+  - relatedTo: [[Provider]], [[Importer]], [[High Risk AI System]]
 
 - ### Content
   - The first making available of an AI system on the Union market.

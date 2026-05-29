@@ -66,9 +66,10 @@ public:: true
   "@id": "urn:ngm:class:pool-share",
   "@type": "Class",
   "label": "Pool Share",
-  "definition": "Mining contribution unit within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "A proof-of-work unit submitted by an individual miner to a mining pool server demonstrating that the miner performed a bounded amount of computational work toward finding a valid block hash. Pool shares have a lower difficulty target than the network block target, allowing the pool to credit each contributor proportional work units and distribute block rewards fairly, regardless of which specific miner finds the winning nonce.",
   "domain": "blockchain",
   "maturity": "established",
+  "qualityScore": 0.8,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-protocol-and-consensus",
@@ -83,7 +84,28 @@ public:: true
       "label": "ConsensusProtocol"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:mining-pool", "label": "Mining Pool"},
+      {"@id": "urn:ngm:class:mining", "label": "Mining"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:mining-reward", "label": "Mining Reward"},
+      {"@id": "urn:ngm:class:block-reward", "label": "Block Reward"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:cryptocurrency", "label": "Cryptocurrency"},
+      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"},
+      {"@id": "urn:ngm:class:blockchain-protocol", "label": "Blockchain Protocol"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -149,17 +171,10 @@ public:: true
 
 
 - ### Definition
-  - Mining contribution unit within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
-
-- ### Semantic Classification
-  - owl-class:: blockchain:PoolShare
-  - owl-role:: Object
-  - owl-inferred:: blockchain:VirtualObject
-  - belongs-to-domain:: [[ConsensusDomain]]
-  - implemented-in-layer:: [[ProtocolLayer]]
+  A proof-of-work unit submitted by an individual miner to a mining pool server demonstrating bounded computational work toward finding a valid block hash. Pool shares have a lower difficulty target than the network block target, enabling the pool to credit proportional work and distribute block rewards fairly across contributors.
 
 - ### Relationships
-  - is-subclass-of:: [[Blockchain Entity]], [[ConsensusProtocol]]
+  Pool Share is **part of** Mining Pool (the collective it serves) and Mining (the broader process). It **requires** Proof Of Work (as the underlying hash puzzle) and Consensus Mechanism (the network rules it contributes to). It **enables** Mining Reward distribution and Block Reward allocation. It is **related to** Cryptocurrency (as the economic output), Blockchain Network (the ledger being extended), and Blockchain Protocol (which defines share difficulty). It **contrasts with** Proof of Stake, which replaces hash-based contributions with stake-weighted selection.
 
 - ### Content
 

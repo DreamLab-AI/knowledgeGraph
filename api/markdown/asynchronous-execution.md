@@ -1,5 +1,5 @@
 - ### Definition
-  - Asynchronous Execution is a concept within the ai domain.
+  - An execution model in which operations are initiated without blocking the calling thread; completion is signalled via callbacks, promises, futures, or events, enabling high-throughput concurrent processing for I/O-bound workloads and distributed system communication.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:AsynchronousExecution
@@ -8,7 +8,10 @@
 
 - ### Relationships
   - is-subclass-of:: [[Execution Model]]
-  - bridges-to:: [[Edge Computing]] (domain: ngm)
+  - bridges-to:: [[Edge Computing]]
+  - uses:: [[Event Driven Architecture]], [[Asynchronous Communication]]
+  - enables:: [[Parallel Processing]], [[Microservices Architecture]]
+  - supports:: [[AI Agent System]]
 
 - ### Content
 

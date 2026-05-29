@@ -46,16 +46,38 @@ public:: true
   "@id": "urn:ngm:class:architecture",
   "@type": "Class",
   "label": "Architecture",
-  "definition": "Architecture is a artificial intelligence concept and a type of Artificial Intelligence.",
+  "definition": "In the AI domain, Architecture refers to the structural design of an AI model or system, specifying how computational components—such as layers, modules, attention heads, and connections—are organised and interact to process inputs and produce outputs. Architectural choices fundamentally determine a model's capacity, inductive biases, scalability, and suitability for particular tasks.",
   "domain": "artificial-intelligence",
   "maturity": "established",
+  "qualityScore": 0.8,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-model-architecture",
       "label": "AI Model Architecture"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:neural-network-layer", "label": "Neural Network Layer"},
+      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},
+      {"@id": "urn:ngm:class:encoder", "label": "Encoder"},
+      {"@id": "urn:ngm:class:decoder", "label": "Decoder"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
+      {"@id": "urn:ngm:class:neural-network-architecture", "label": "Neural Network Architecture"},
+      {"@id": "urn:ngm:class:model-architecture", "label": "Model Architecture"},
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:model-training", "label": "Model Training"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

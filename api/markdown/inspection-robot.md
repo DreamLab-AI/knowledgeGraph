@@ -7,7 +7,10 @@
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - is-subclass-of:: [[Robotics]]
+  - **uses**: [[Computer Vision]], [[Sensor Fusion]]
+  - **enables**: [[Quality Assurance]]
+  - **partOf**: [[Robotics]]
+  - **relatedTo**: [[Autonomous Robot]], [[Mobile Robot]], [[Collaborative Robot]]
 
 - ### Content
   - ### Original Content

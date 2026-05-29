@@ -7,7 +7,10 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Has Part: [[Self Attention]], [[Cross Attention]], [[Token Embedding]]
+  - Uses: [[Transformer]]
+  - Enables: [[Natural Language Processing]]
+  - Contrasts With: [[Model Architecture]]
 
 - ### Content
   - A neural network structure consisting of an encoder that processes the input sequence and a decoder that generates the output sequence, commonly used in sequence-to-sequence tasks.

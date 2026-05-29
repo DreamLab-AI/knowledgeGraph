@@ -42,20 +42,56 @@ public:: true
   "@id": "urn:ngm:class:storytelling",
   "@type": "Class",
   "label": "Storytelling",
-  "definition": "Storytelling is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "The craft and practice of structuring narrative content to communicate meaning, emotion, and experience to an audience. In spatial computing and metaverse contexts, storytelling encompasses interactive narrative design, world-building, and immersive experience creation that leverage real-time 3D environments to place participants inside the story.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
     }
   ],
-  "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:narrative-structure",
+        "label": "Narrative Structure"
+      },
+      {
+        "@id": "urn:ngm:class:narrative-arc",
+        "label": "Narrative Arc"
+      },
+      {
+        "@id": "urn:ngm:class:narrative-theme",
+        "label": "Narrative Theme"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-entertainment",
+        "label": "Immersive Entertainment"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:narrative-content",
+        "label": "Narrative Content"
+      },
+      {
+        "@id": "urn:ngm:class:storytelling-structure",
+        "label": "Storytelling Structure"
+      }
+    ]
   }
 }
 ```
@@ -87,17 +123,25 @@ public:: true
 
 
 - ### Definition
-  - Storytelling is a concept within the metaverse domain. Further enrichment pending.
+  - The craft and practice of structuring narrative content to communicate meaning, emotion, and experience to an audience. In spatial computing and metaverse contexts, storytelling encompasses interactive narrative design, world-building, and immersive experience creation that leverage real-time 3D environments to place participants inside the story.
 - ### Semantic Classification
   - owl-class:: spatial-computing:Storytelling
   - owl-role:: concept
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Has Part [[Narrative Structure]]
+  - Has Part [[Narrative Arc]]
+  - Has Part [[Narrative Theme]]
+  - Enables [[Immersive Experience]]
+  - Enables [[Immersive Entertainment]]
+  - Related To [[Narrative Content]]
+  - Related To [[Storytelling Structure]]
 - ### Content
   ## Overview
-  Storytelling represents an abstract concept in the metaverse ontology hierarchy.
+  Storytelling is the craft of structuring narrative content to communicate meaning, emotion, and experience. In spatial computing and metaverse contexts, it encompasses interactive narrative design, world-building, and immersive experience creation that leverages real-time 3D environments to place participants inside the story. Strong narrative structure—comprising arc, theme, and character—distinguishes compelling virtual experiences from mere interactive environments.
   #### Related Concepts
-  - [[owl:Thing]]
+  - [[Narrative Structure]]
+  - [[Narrative Arc]]
+  - [[Narrative Content]]
 - ### Provenance
   - sources::
   - migration-date:: 2026-04-26T00:00:00Z

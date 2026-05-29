@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:encoder-decoder-architecture",
   "domain": "artificial-intelligence",
-  "definition": "A neural network structure consisting of an encoder that processes the input sequence and a decoder that generates the output sequence, commonly used in sequence-to-sequence tasks.",
+  "definition": "A neural network design pattern comprising an encoder that compresses an input sequence into a latent representation and a decoder that generates an output sequence from that representation, enabling sequence-to-sequence mappings for tasks such as machine translation, summarisation, and image captioning. The architecture underpins the original Transformer (Vaswani et al., 2017) and models such as T5 and BART.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-model-architecture",
@@ -14,16 +14,44 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:self-attention",
+        "label": "Self Attention"
+      },
+      {
+        "id": "urn:ngm:class:cross-attention",
+        "label": "Cross Attention"
+      },
+      {
+        "id": "urn:ngm:class:token-embedding",
+        "label": "Token Embedding"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:model-architecture",
+        "label": "Model Architecture"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

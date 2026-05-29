@@ -104,18 +104,56 @@ public:: true
   "label": "Value Alignment",
   "definition": "The challenge and process of ensuring AI systems pursue objectives that align with human values, even as those systems become more capable and autonomous. Value alignment addresses both technical and philosophical questions about encoding human preferences into AI behaviour.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
     }
   ],
-  "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:interpretability",
+        "label": "Interpretability"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:safety-fine-tuning",
+        "label": "Safety Fine Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      },
+      {
+        "@id": "urn:ngm:class:bias",
+        "label": "Bias"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ]
   }
 }
 ```
@@ -230,7 +268,13 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Requires [[Reinforcement Learning from Human Feedback]] as its primary technical implementation
+  - Supports [[AI Safety]] as the value-theoretic foundation for safe systems
+  - Supports [[AI Governance]] by providing the normative grounding for governance frameworks
+  - Related to [[Safety Fine Tuning]] as the training-time operationalisation of alignment
+  - Related to [[Fairness]] (aligned AI must treat individuals and groups equitably)
+  - Related to [[Bias]] (unmitigated bias constitutes a value alignment failure)
+  - Depends on [[Interpretability]] to verify that learned objectives match intended human values
 
 - ### Content
   - The challenge and process of ensuring AI systems pursue objectives that align with human values, even as those systems become more capable and autonomous. Value alignment addresses both technical and philosophical questions about encoding human preferences into AI behaviour.

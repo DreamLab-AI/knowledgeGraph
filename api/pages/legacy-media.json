@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:legacy-media",
   "domain": "infrastructure",
-  "definition": "legacy media is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Legacy media refers to established, traditional forms of mass communication \u2014 including print, broadcast television, and radio \u2014 that preceded the digital internet era. These institutions hold significant cultural authority and are undergoing structural disruption as AI-driven platforms alter content distribution and audience economics.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-software-engineering",
@@ -14,20 +14,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:social-media",
+        "label": "social media"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-transformation",
+        "label": "Digital Transformation"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:media-theory",
+        "label": "Media Theory"
+      },
+      {
+        "id": "urn:ngm:class:media-richness-theory",
+        "label": "Media Richness Theory"
+      },
+      {
+        "id": "urn:ngm:class:digital-content-creation",
+        "label": "Digital Content Creation"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

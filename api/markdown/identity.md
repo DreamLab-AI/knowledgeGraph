@@ -1,12 +1,14 @@
 - ### Definition
-  - Identity is a concept within the metaverse domain. Further enrichment pending.
+  - The set of attributes, credentials, and verifiable claims that uniquely identify a principal — person, organisation, or device — within a digital system, enabling authentication, authorisation, and accountability. In metaverse and Web3 contexts, identity may be self-sovereign, portable across platforms, and anchored to decentralised identifiers.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:Identity
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Requires: [[Authentication]], [[Cryptography]]
+  - Enables: [[Access Control]]
+  - Related To: [[Identity Management]], [[Decentralised Identity]], [[Self Sovereign Identity]]
 
 - ### Content
 

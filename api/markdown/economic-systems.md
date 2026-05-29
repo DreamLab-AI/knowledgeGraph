@@ -1,12 +1,16 @@
 - ### Definition
-  - Economic Systems is a concept within the metaverse domain. Further enrichment pending.
+  - Economic Systems are the structured sets of rules, institutions, and mechanisms that govern the production, distribution, and consumption of goods, value, and digital assets within a platform or environment. In spatial computing and Web3 contexts, economic systems encompass tokenomics, smart-contract-enforced incentive structures, and decentralised exchange mechanisms.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:EconomicSystems
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Has Part [[Tokenomics]]
+  - Has Part [[Token Economics]]
+  - Requires [[Smart Contract]]
+  - Related To [[Blockchain Economics]]
+  - Related To [[DAO Governance]]
 
 - ### Content
 

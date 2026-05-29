@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:etsi-domain-reality-capture-creative",
   "@type": "Class",
   "label": "ETSI_Domain_Reality_Capture___Creative",
-  "definition": "ETSI framework for real-time digital performance capture and creative content generation enabling actors, performers, and creators to capture expressive movements, facial animations, and embodied interactions for metaverse avatars and immersive experiences.",
+  "definition": "ETSI domain addressing real-time digital performance capture and creative content generation for immersive experiences. It integrates motion capture, facial expression tracking, gesture recognition, and AI-enhanced animation synthesis to transform physical performances into high-fidelity digital representations for metaverse avatars, virtual events, and interactive entertainment applications.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
@@ -59,7 +60,21 @@ public:: true
       "label": "Digital Performance Capture"
     }
   ],
-  "quality": 0.4,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:motion-capture", "label": "Motion Capture"},
+      {"@id": "urn:ngm:class:3-d-asset", "label": "3D Asset"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
+      {"@id": "urn:ngm:class:avatar-interoperability", "label": "Avatar Interoperability"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
+      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -106,7 +121,9 @@ public:: true
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: Motion Capture, 3D Asset — core capture technology and output asset formats underpin the domain
+  - **enables**: Immersive Experience, Avatar Interoperability — captured performances populate avatars and immersive environments
+  - **relatedTo**: Augmented Reality, Extended Reality, Digital Twin — reality capture feeds AR/XR experiences and digital twin creation pipelines
 - ### Content
   - The ETSI Reality Capture Creative domain enables performers and creators to digitally capture expressive movements, facial animations, and embodied interactions for metaverse avatars through motion capture and real-time performance processing.
   - ### Original Content

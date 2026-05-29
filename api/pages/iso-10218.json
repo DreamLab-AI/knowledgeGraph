@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:iso-10218",
   "domain": "robotics",
-  "definition": "An international safety standard specifying requirements for the design, construction, and testing of industrial robots and integrated robot systems to protect operators and bystanders.",
+  "definition": "ISO 10218 is a two-part international safety standard published by the International Organisation for Standardisation that specifies requirements for the design, construction, and safeguarding of industrial robots and robot systems. Part 1 addresses the robot itself and requires manufacturers to conduct risk assessments and implement safety-rated stop functions, speed and force limitation, and workspace monitoring. Part 2 addresses the integration of robots into workcells, covering safety-rated control functions, safeguarding devices, and the responsibilities of system integrators.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-safety-and-standards",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:robot-safety",
+        "label": "Robot Safety"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-robot",
+        "label": "Collaborative Robot"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:iso-ts-15066",
+        "label": "ISO TS 15066"
+      },
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

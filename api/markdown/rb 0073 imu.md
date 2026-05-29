@@ -42,24 +42,44 @@ public:: true
   "@id": "urn:ngm:class:rb-0073-imu",
   "@type": "Class",
   "label": "rb 0073 imu",
-  "definition": "imu is a robotics and autonomous systems concept and a type of Proprioceptive Sensor.",
+  "definition": "An Inertial Measurement Unit (IMU) is an electronic device that measures and reports a body's specific force, angular rate, and sometimes magnetic field using a combination of accelerometers, gyroscopes, and optional magnetometers. In robotics, IMUs provide high-frequency proprioceptive feedback for state estimation, pose tracking, and stabilisation control, and are commonly fused with odometry or SLAM algorithms to reduce drift.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-perception",
       "label": "Perception and Sensing"
     },
     {
-      "@id": "urn:ngm:class:proprioceptive-sensor",
-      "label": "Proprioceptive Sensor"
+      "@id": "urn:ngm:class:inertial-measurement-unit",
+      "label": "Inertial Measurement Unit"
     }
   ],
-  "quality": 0.5,
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R3SemanticRefinement"
+  },
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:accelerometer", "label": "Accelerometer"},
+      {"@id": "urn:ngm:class:gyroscope", "label": "Gyroscope"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:state-estimation", "label": "State Estimation"},
+      {"@id": "urn:ngm:class:odometry", "label": "Odometry"},
+      {"@id": "urn:ngm:class:localization", "label": "Localization"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
+      {"@id": "urn:ngm:class:slam", "label": "SLAM"},
+      {"@id": "urn:ngm:class:rb-0066-robot-sensor", "label": "rb 0066 robot sensor"},
+      {"@id": "urn:ngm:class:rb-0072-encoder", "label": "rb 0072 encoder"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"}
+    ]
   }
 }
 ```

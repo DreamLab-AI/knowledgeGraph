@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:non-genesis-block",
   "domain": "blockchain",
-  "definition": "Non Genesis Block is a blockchain and distributed systems concept and a type of Block.",
+  "definition": "A Non Genesis Block is any block in a blockchain with a block height greater than zero\u2014that is, every block produced after the genesis (first) block. Non-genesis blocks are structurally identical to the genesis block in terms of their header and transaction payload format, but they include a previous block hash field that cryptographically links them to their parent, forming the immutable chain structure. The vast majority of blocks in any mature blockchain are non-genesis blocks; they carry the transaction history and consensus record that gives the chain its economic value.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-protocol-and-consensus",
@@ -17,21 +17,74 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      },
+      {
+        "id": "urn:ngm:class:merkle-root",
+        "label": "Merkle Root"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:block-header",
+        "label": "Block Header"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:transaction-confirmation",
+        "label": "Transaction Confirmation"
+      },
+      {
+        "id": "urn:ngm:class:transaction-finality",
+        "label": "Transaction Finality"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:genesis-block",
+        "label": "Genesis Block"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:genesis-block",
+        "label": "Genesis Block"
+      },
+      {
+        "id": "urn:ngm:class:block-height",
+        "label": "Block Height"
+      },
+      {
+        "id": "urn:ngm:class:block-reward",
+        "label": "Block Reward"
+      },
+      {
+        "id": "urn:ngm:class:block-time",
+        "label": "Block Time"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -1,12 +1,14 @@
 - ### Definition
-  - Jupyter like behaviour within a page is a concept within the ngm domain.
+  - A knowledge-management pattern that embeds executable code cells with shared global state within a page or document, mimicking the interactive notebook paradigm of Jupyter. Code blocks execute in sequence against a common variable scope, enabling data loading, transformation, and display without leaving the note-taking environment.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:JupyterLikeBehaviourWithinAPage
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses:: [[Python]], [[Script]]
+  - partOf:: [[Knowledge Management]]
+  - relatedTo:: [[Knowledge Graph]]
 
 - ### Content
   - Note use of global variables to pass values between functions

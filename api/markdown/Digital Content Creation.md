@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:digital-content-creation",
   "@type": "Class",
   "label": "Digital Content Creation",
-  "definition": "Digital Content Creation is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "The process of authoring, editing, and producing digital assets—including 3D models, textures, audio, video, and interactive experiences—using software toolchains. In spatial computing and metaverse contexts, digital content creation encompasses generative AI assistance, physically-based material authoring, and export pipelines targeting real-time rendering engines.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
@@ -60,6 +61,40 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:digital-content",
+        "label": "Digital Content"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-content-pipeline",
+        "label": "Metaverse Content Pipeline"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:rendering-technology",
+        "label": "Rendering Technology"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:digital-content-layer",
+        "label": "Digital Content Layer"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:content-production-workflow",
+        "label": "Content Production Workflow"
+      }
+    ]
   }
 }
 ```
@@ -96,7 +131,7 @@ public:: true
 
 
 - ### Definition
-  - Digital Content Creation is a concept within the metaverse domain. Further enrichment pending.
+  - The process of authoring, editing, and producing digital assets—including 3D models, textures, audio, video, and interactive experiences—using software toolchains. In spatial computing and metaverse contexts, digital content creation encompasses generative AI assistance, physically-based material authoring, and export pipelines targeting real-time rendering engines.
 
 bridges-to:: [[Computer Vision]]
 
@@ -105,7 +140,12 @@ bridges-to:: [[Computer Vision]]
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses [[Generative AI]]
+  - Uses [[Rendering Technology]]
+  - Part Of [[Content Production Workflow]]
+  - Enables [[Digital Content]]
+  - Enables [[Metaverse Content Pipeline]]
+  - Related To [[Digital Content Layer]]
 
 - ### Content
 

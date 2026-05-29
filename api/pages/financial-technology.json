@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:financial-technology",
   "domain": "blockchain",
-  "definition": "Financial Technology is a type of Crypto Token in the blockchain domain.",
+  "definition": "Financial Technology (FinTech) refers to the application of technology to improve, automate, or disrupt the delivery of financial services. It encompasses digital payments, open banking APIs, blockchain-based asset issuance, decentralised finance protocols, regulatory technology, and AI-driven credit and fraud scoring, collectively transforming how individuals and institutions access, transfer, and manage capital.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-token-and-asset",
@@ -18,20 +18,51 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      }
+    ]
   },
   "wikilinks": [
     {

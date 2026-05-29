@@ -5,29 +5,99 @@
   "public": true,
   "classIri": "urn:ngm:class:edge-ai-system",
   "domain": "artificial-intelligence",
-  "definition": "An Edge AI System is a distributed computing architecture that deploys machine learning models directly onto edge devices and sensors at the network periphery, enabling local inference without requiring continuous cloud connectivity.",
+  "definition": "An Edge AI System is a distributed computing architecture that deploys trained machine learning models directly onto edge devices, sensors, and gateways at the network periphery, enabling local inference without requiring continuous cloud connectivity. Processing occurs close to the data source, achieving sub-millisecond latency, reduced bandwidth consumption, and enhanced data privacy. Edge AI Systems must fit within the memory, power, and computational constraints of embedded hardware through model compression techniques such as quantisation, pruning, and knowledge distillation.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:cat-ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
+      "id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:edge-ai-accelerator",
+        "label": "Edge AI Accelerator"
+      },
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:neural-network-quantisation",
+        "label": "Neural Network Quantisation"
+      },
+      {
+        "id": "urn:ngm:class:model-compression-for-edge",
+        "label": "Model Compression for Edge"
+      },
+      {
+        "id": "urn:ngm:class:real-time-inference-at-edge",
+        "label": "Real-Time Inference at Edge"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:latency-aware-edge-ai",
+        "label": "Latency-Aware Edge AI"
+      },
+      {
+        "id": "urn:ngm:class:on-device-learning",
+        "label": "On-Device Learning"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:edge-computing-architecture",
+        "label": "Edge Computing Architecture"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-model",
+        "label": "Machine Learning Model"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:embedded-ai-frameworks",
+        "label": "Embedded AI Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:federated-edge-learning",
+        "label": "Federated Edge Learning"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:edge-cloud-collaboration",
+        "label": "Edge-Cloud Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ]
   },
   "wikilinks": [
     {

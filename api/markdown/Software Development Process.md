@@ -54,10 +54,10 @@ public:: true
   "@id": "urn:ngm:class:software-development-process",
   "@type": "Class",
   "label": "Software Development Process",
-  "definition": "Software Development Process for AI encompasses modologies, workflows, and best practices for building, testing, deploying, and maintaining machine learning systems. This includes agile AI development, data-centric workflows, experiment tracking, model validation protocols, and MLOps practices.",
+  "definition": "The structured set of methodologies, workflows, and best practices governing how software — including AI and machine learning systems — is conceived, built, tested, deployed, and maintained. For AI systems this encompasses data-centric workflows, experiment tracking, model validation protocols, MLOps pipelines, and cross-functional collaboration between data scientists, engineers, and domain experts across the full model lifecycle.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
-  "quality": 0.35,
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -65,10 +65,27 @@ public:: true
   },
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:cat-ai-infrastructure",
+      "@id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure (Category)"
     }
-  ]
+  ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:software-testing", "label": "Software Testing"},
+      {"@id": "urn:ngm:class:software-engineering", "label": "Software Engineering"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:machine-learning-pipeline", "label": "Machine Learning Pipeline"},
+      {"@id": "urn:ngm:class:ai-development-tools", "label": "AI Development Tools"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:ai-deployment", "label": "AI Deployment"},
+      {"@id": "urn:ngm:class:ai-augmented-software-engineering", "label": "AI-Augmented Software Engineering"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:standards-conformance-testing", "label": "Standards Conformance Testing"}
+    ]
+  }
 }
 ```
 
@@ -122,6 +139,10 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: ['owl:Thing']
+  - **requires**: Software Testing (quality assurance gate), Software Engineering (engineering discipline foundation)
+  - **uses**: Machine Learning Pipeline (automated training and evaluation workflow), AI Development Tools (experiment tracking, versioning, monitoring)
+  - **enables**: AI Deployment (moves models from development to production), AI-Augmented Software Engineering (code assistants and automated review)
+  - **supports**: Standards Conformance Testing (structured test suites embedded in CI/CD)
 
 - ### Content
 

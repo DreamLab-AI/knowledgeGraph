@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:eip-1559",
   "domain": "blockchain",
-  "definition": "An Ethereum Improvement Proposal that reformed the transaction fee market by introducing a base fee burned each block and an optional priority tip paid to block producers.",
+  "definition": "EIP-1559 is an Ethereum Improvement Proposal implemented in the London hard fork that fundamentally reformed Ethereum's transaction fee market. It replaced the simple first-price auction mechanism with a protocol-determined base fee that automatically adjusts each block based on demand relative to a target block gas usage. The base fee is burned rather than paid to validators, creating a deflationary pressure on ether supply. Users optionally add a priority fee (tip) to incentivise timely inclusion. The mechanism improves fee predictability for users and reduces the miner extractable value (MEV) captured through fee sniping.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-protocol-and-consensus",
@@ -14,20 +14,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gas-fee-market",
+        "label": "Gas Fee Market"
+      },
+      {
+        "id": "urn:ngm:class:transaction-fee",
+        "label": "Transaction Fee"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-economics",
+        "label": "Blockchain Economics"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

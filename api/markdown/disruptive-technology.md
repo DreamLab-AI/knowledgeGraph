@@ -7,9 +7,10 @@
   - belongs-to-domain:: [[InnovationDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
-
-  - bridges-to:: [[Blockchain]] (bc)
+  - partOf:: [[DisruptiveTechDomain]]
+  - relatedTo:: [[Disruption]], [[TechnologyAdoption]], [[DigitalTransformation]], [[Blockchain]]
+  - enables:: [[GenerativeAI]], [[MachineLearning]], [[EdgeComputing]], [[InternetOfThings]]
+  - contrastsWith:: [[TechnologyStack]] (sustaining technologies)
 - ### Content
 
   #### Key Characteristics

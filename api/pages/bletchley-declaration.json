@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:bletchley-declaration",
   "domain": "artificial-intelligence",
-  "definition": "The Bletchley Declaration is the 2023 international agreement signed at the AI Safety Summit in which participating nations committed to cooperative risk assessment and governance of frontier AI systems.",
+  "definition": "The Bletchley Declaration is a joint statement signed in November 2023 by 28 nations and the European Union at the inaugural AI Safety Summit held at Bletchley Park, UK, in which signatories acknowledged the serious risks posed by frontier AI models and committed to international cooperation on safety evaluation, information sharing, and the development of national and international governance frameworks. It represents the first multilateral political commitment specifically addressing the risks of highly capable foundation models and established the precedent for government-led AI safety institutes conducting pre-deployment evaluations.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -14,20 +14,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-safety-research",
+        "label": "AI Safety Research"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:virtual-world-platform",
   "@type": "Class",
   "label": "Virtual World Platform",
-  "definition": "A software ecosystem that enables users to create, explore, and interact within persistent 3D virtual environments, encompassing both centralized platforms like Roblox and Fortnite, and blockchain-based decentralized platforms like Decentraland and The Sandbox that feature user-owned digital asse...",
+  "definition": "A software ecosystem that enables users to create, explore, and interact within persistent 3D virtual environments. It encompasses both centralised platforms — such as Roblox (214 million monthly active users) and Fortnite — controlled by platform operators, and blockchain-based decentralised platforms — such as Decentraland and The Sandbox — where users hold genuine ownership of digital assets and participate in on-chain governance. The metaverse market hosting these platforms is valued at USD 103.6 billion and projected to reach USD 507.8 billion by 2030.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -59,7 +60,25 @@ public:: true
       "label": "Digital Platform"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:virtual-world-building", "label": "Virtual World Building"},
+      {"@id": "urn:ngm:class:virtual-economy", "label": "Virtual Economy"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:virtual-asset-trading", "label": "Virtual Asset Trading"},
+      {"@id": "urn:ngm:class:social-vr", "label": "Social VR"},
+      {"@id": "urn:ngm:class:virtual-event", "label": "Virtual Event"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:vr-rendering-engine", "label": "VR Rendering Engine"},
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:metaverse-platform", "label": "Metaverse Platform"},
+      {"@id": "urn:ngm:class:virtual-world-infrastructure", "label": "Virtual World Infrastructure"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -109,6 +128,10 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Digital Platform]]
+  - hasPart:: [[Virtual World Building]], [[Virtual Economy]]
+  - enables:: [[Virtual Asset Trading]], [[Social VR]], [[Virtual Event]]
+  - uses:: [[VR Rendering Engine]], [[Blockchain]]
+  - relatedTo:: [[Metaverse Platform]], [[Virtual World Infrastructure]]
 
 - ### Content
 

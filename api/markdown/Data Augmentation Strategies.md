@@ -64,7 +64,8 @@ public:: true
   "label": "Data Augmentation Strategies",
   "definition": "Techniques that create modified versions of training examples to increase dataset diversity and model robustness. Data augmentation strategies apply transformations that preserve label semantics whilst introducing variation, improving generalisation and reducing overfitting.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
@@ -80,6 +81,42 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:machine-learning-pipeline",
+        "label": "Machine Learning Pipeline"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      }
+    ]
   }
 }
 ```
@@ -144,7 +181,12 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Requires [[Training Data]]
+  - Enables [[Transfer Learning]]
+  - Enables [[Computer Vision]]
+  - Supports (mitigation of) [[Overfitting]]
+  - Uses [[Generative AI]]
+  - Related To [[Machine Learning Pipeline]]
 
 - ### Content
   - Techniques that create modified versions of training examples to increase dataset diversity and model robustness. Data augmentation strategies apply transformations that preserve label semantics whilst introducing variation, improving generalisation and reducing overfitting.

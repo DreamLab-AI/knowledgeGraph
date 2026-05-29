@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:content-protection",
   "@type": "Class",
   "label": "Content Protection",
-  "definition": "Content Protection is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Content Protection comprises technical and legal mechanisms that prevent unauthorised reproduction, distribution, or alteration of digital creative works. It includes digital rights management (DRM), encryption, access control, and blockchain-based provenance systems applied to media, software, and metaverse assets.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
@@ -60,6 +61,40 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:digital-rights",
+        "label": "Digital Rights"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:digital-ownership",
+        "label": "Digital Ownership"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:digital-rights-management",
+        "label": "Digital Rights Management"
+      },
+      {
+        "@id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:copyright",
+        "label": "copyright"
+      }
+    ]
   }
 }
 ```
@@ -96,7 +131,7 @@ public:: true
 
 
 - ### Definition
-  - Content Protection is a concept within the metaverse domain. Further enrichment pending.
+  - Content Protection comprises technical and legal mechanisms that prevent unauthorised reproduction, distribution, or alteration of digital creative works. It includes digital rights management (DRM), encryption, access control, and blockchain-based provenance systems applied to media, software, and metaverse assets.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:ContentProtection
@@ -104,6 +139,12 @@ public:: true
 
 - ### Relationships
   - bridges-to:: [[Blockchain]]
+  - Uses [[Digital Rights Management]]
+  - Uses [[Encryption]]
+  - Uses [[Access Control]]
+  - Requires [[Digital Rights]]
+  - Enables [[Digital Ownership]]
+  - Related To [[copyright]]
 
 - ### Content
 

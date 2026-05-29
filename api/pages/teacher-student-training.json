@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:teacher-student-training",
   "domain": "artificial-intelligence",
-  "definition": "A training paradigm where a larger, more capable \"teacher\" model guides the training of a smaller \"student\" model. Teacher-student training transfers knowledge from the teacher's learned representations or predictions to improve student model performance.",
+  "definition": "Teacher-Student Training is a machine learning paradigm in which a larger, higher-capacity teacher model supervises the training of a smaller student model, transferring knowledge through soft probability distributions (dark knowledge), intermediate feature representations, or attention maps rather than hard labels alone. The approach underpins knowledge distillation for model compression and is widely used to deploy efficient models on edge hardware without sacrificing task performance.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -17,21 +17,53 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-compression-for-edge",
+        "label": "Model Compression for Edge"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-distillation-for-edge",
+        "label": "Knowledge Distillation for Edge"
+      }
+    ],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
+    ],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ]
   },
   "wikilinks": [
     {

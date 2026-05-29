@@ -74,9 +74,10 @@ public:: true
   "@id": "urn:ngm:class:deflationary-token",
   "@type": "Class",
   "label": "Deflationary Token",
-  "definition": "Decreasing supply token within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "A Deflationary Token is a cryptocurrency or blockchain token whose total circulating supply decreases over time through one or more programmatic burning mechanisms—such as transaction fee burns, scheduled buyback-and-burn events, or protocol-level token destruction—creating supply-side scarcity intended to exert upward price pressure and incentivise long-term holding.",
   "domain": "blockchain",
   "maturity": "established",
+  "qualityScore": 0.8,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-token-and-asset",
@@ -91,7 +92,26 @@ public:: true
       "label": "EconomicMechanism"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:burning-mechanism", "label": "Burning Mechanism"},
+      {"@id": "urn:ngm:class:supply-cap", "label": "Supply Cap"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:inflationary-token", "label": "Inflationary Token"},
+      {"@id": "urn:ngm:class:native-token", "label": "Native Token"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:tokenomics", "label": "Tokenomics"},
+      {"@id": "urn:ngm:class:token-economics", "label": "Token Economics"},
+      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"},
+      {"@id": "urn:ngm:class:blockchain-economics", "label": "Blockchain Economics"},
+      {"@id": "urn:ngm:class:transaction-fee", "label": "Transaction Fee"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:token-economics-domain", "label": "Token Economics Domain"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

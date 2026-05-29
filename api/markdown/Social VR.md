@@ -148,7 +148,7 @@ public:: true
   "label": "Social VR",
   "definition": "Social VR encompasses immersive virtual reality experiences specifically designed for real-time social interaction and collaboration among multiple users within shared persistent virtual spaces, leveraging avatar-based presence and synchronised communication.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -159,6 +159,20 @@ public:: true
       "label": "Virtual Reality"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:avatar", "label": "Avatar"},
+      {"@id": "urn:ngm:class:spatial-audio", "label": "Spatial Audio"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:virtual-collaboration", "label": "Virtual Collaboration"},
+      {"@id": "urn:ngm:class:immersive-communication", "label": "Immersive Communication"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:virtual-economy", "label": "Virtual Economy"},
+      {"@id": "urn:ngm:class:collaboration", "label": "Collaboration"}
+    ]
+  },
   "quality": 0.4,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -333,7 +347,12 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Avatar]]
+  - requires [[Spatial Audio]]
+  - enables [[Virtual Collaboration]]
+  - enables [[Immersive Communication]]
+  - relatedTo [[Virtual Economy]]
+  - relatedTo [[Collaboration]]
 
 - ### Content
   - Immersive virtual reality experiences specifically designed for real-time social interaction and collaboration among multiple users within shared persistent virtual spaces using avatar-based presence and synchronised communication. Platforms like [[MetaHorizonWorlds|Meta Horizon Worlds]], [[VRChat]], and [[AltspaceVR]] enable social activities from casual hangouts to professional meetings and educational workshops, enhanced by spatial audio and gesture recognition. Integration with [[DecentralisedIdentity|blockchain-based identity]], [[NFT|NFT avatars]], and [[VirtualEconomy|virtual economies]] enables interoperable social metaverses where users maintain control over digital identities and virtual assets across platforms.

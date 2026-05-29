@@ -42,7 +42,7 @@ public:: true
   "@id": "urn:ngm:class:generative-ai-engineering",
   "@type": "Class",
   "label": "Generative AI Engineering",
-  "definition": "Generative AI Engineering is a type of Artificial Intelligence in the artificial intelligence domain.",
+  "definition": "Generative AI Engineering is the applied discipline concerned with designing, developing, fine-tuning, and deploying generative AI systems—such as large language models, diffusion models, and multimodal transformer architectures—to create novel artefacts including text, images, audio, code, and synthetic data. It encompasses the full engineering lifecycle from model selection and prompt engineering through retrieval-augmented generation, evaluation, and production observability. The field bridges machine learning research and software engineering, requiring competence in model architecture, infrastructure, and responsible AI practices.",
   "domain": "artificial-intelligence",
   "maturity": "emerging",
   "subClassOf": [
@@ -51,11 +51,35 @@ public:: true
       "label": "AI Application"
     }
   ],
-  "quality": 0.5,
+  "quality": 0.75,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"},
+      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
+      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
+      {"@id": "urn:ngm:class:synthetic-data-generation", "label": "Synthetic Data Generation"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
+      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:autonomous-ai-agents", "label": "Autonomous AI Agents"},
+      {"@id": "urn:ngm:class:workflow-automation", "label": "Workflow Automation"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}
+    ]
   }
 }
 ```

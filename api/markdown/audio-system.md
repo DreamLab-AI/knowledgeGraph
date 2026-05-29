@@ -1,5 +1,5 @@
 - ### Definition
-  - Audio System is a concept within the metaverse domain. Further enrichment pending.
+  - An Audio System in spatial computing manages capture, processing, and playback of sound within immersive environments, encompassing spatial audio rendering, voice communication, and environmental sound simulation to reinforce presence and enable natural verbal interaction.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:AudioSystem
@@ -7,6 +7,11 @@
 
 - ### Relationships
   - bridges-to:: [[Telepresence]] (tc)
+  - hasPart [[Spatial Audio]]
+  - hasPart [[Audio Spatialization]]
+  - enables [[Speech Recognition]]
+  - enables [[Telecollaboration]]
+  - relatedTo [[Audio Processing System]]
 
 - ### Content
 

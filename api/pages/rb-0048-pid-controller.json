@@ -5,33 +5,69 @@
   "public": true,
   "classIri": "urn:ngm:class:rb-0048-pid-controller",
   "domain": "robotics",
-  "definition": "pid controller is a robotics and autonomous systems concept and a type of Control System.",
+  "definition": "A PID (Proportional-Integral-Derivative) controller is the most widely deployed feedback control algorithm in robotics and industrial automation. It computes a control output as the weighted sum of three terms: the proportional term (reacts to the current error magnitude), the integral term (eliminates steady-state error by accumulating past errors), and the derivative term (anticipates future error by responding to the rate of change). PID controllers are used in robot joint position and velocity loops, temperature regulation, and process control, often augmented with feed-forward terms to improve performance under known dynamics.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
       "label": "Actuation and Control"
     },
     {
-      "id": "urn:ngm:class:control-system",
-      "label": "Control System"
+      "id": "urn:ngm:class:control-theory",
+      "label": "Control Theory"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:rb-0054-position-control",
+        "label": "rb 0054 position control"
+      },
+      {
+        "id": "urn:ngm:class:rb-0055-velocity-control",
+        "label": "rb 0055 velocity control"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:rb-0072-encoder",
+        "label": "rb 0072 encoder"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:rb-0062-model-predictive-control",
+        "label": "rb 0062 model predictive control"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rb-0047-feedback-control",
+        "label": "rb 0047 feedback control"
+      },
+      {
+        "id": "urn:ngm:class:rb-0063-sliding-mode-control",
+        "label": "rb 0063 sliding mode control"
+      },
+      {
+        "id": "urn:ngm:class:rb-0060-optimal-control",
+        "label": "rb 0060 optimal control"
+      },
+      {
+        "id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      }
+    ]
   },
   "wikilinks": [
     {

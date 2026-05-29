@@ -37,9 +37,10 @@ public:: true
   "@id": "urn:ngm:class:scene-graph-format",
   "@type": "Class",
   "label": "Scene Graph Format",
-  "definition": "Scene Graph Format is a spatial computing concept and a type of Scene Graph.",
+  "definition": "A Scene Graph Format is a standardised serialisation schema for directed acyclic graphs that represent 3D scene hierarchies, encoding spatial transforms, geometry, materials, lights, cameras, and behaviours. Major formats include glTF (optimised for runtime delivery), USD (layered composition for production pipelines), X3D (ISO web standard), and Collada (interchange for DCC tools).",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-standards-and-interop",
@@ -50,7 +51,21 @@ public:: true
       "label": "Scene Graph"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"},
+      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:3-d-asset-standard", "label": "3D Asset Standard"},
+      {"@id": "urn:ngm:class:gltf-standard", "label": "Gltf Standard"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:3-d-model", "label": "3D Model"},
+      {"@id": "urn:ngm:class:rendering-pipeline", "label": "Rendering Pipeline"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -80,14 +95,16 @@ public:: true
 
 
 - ### Definition
-  - SceneGraphFormat is a concept within the ngm domain.
+  - A Scene Graph Format is a standardised serialisation schema for directed acyclic graphs that represent 3D scene hierarchies, encoding spatial transforms, geometry, materials, lights, cameras, and behaviours. Major formats include glTF (optimised for runtime delivery), USD (layered composition for production pipelines), X3D (ISO web standard), and Collada (interchange for DCC tools).
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:SceneGraphFormat
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **enables** → [[Interoperability]], [[Real-Time Rendering]], [[Digital Twin]]
+  - **uses** → [[3D Asset Standard]], [[Gltf Standard]]
+  - **supports** → [[3D Model]], [[Rendering Pipeline]]
 
 - ### Content
   # SceneGraphFormat

@@ -46,16 +46,29 @@ public:: true
   "@id": "urn:ngm:class:configuration-setting",
   "@type": "Class",
   "label": "Configuration Setting",
-  "definition": "Configuration Setting is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "A Configuration Setting is a named parameter or preference value that governs the runtime behaviour of a spatial computing application, platform, or XR experience. Configuration settings control rendering quality, user accessibility options, privacy preferences, and network parameters, and are typically persisted across sessions to maintain consistent user experiences within metaverse and immersive environments.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:simulation", "label": "Simulation"},
+      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:privacy", "label": "Privacy"},
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -103,6 +116,11 @@ public:: true
   - owl-role:: concept
 
 - ### Relationships
+  - **partOf** [[Spatial Computing]] — configuration settings govern runtime behaviour of spatial computing systems
+  - **enables** [[Simulation]] — quality and fidelity settings determine simulation parameters
+  - **enables** [[Real-Time Rendering]] — rendering quality settings control the real-time pipeline
+  - **relatedTo** [[Privacy]] — privacy preference settings protect user data within XR platforms
+  - **relatedTo** [[Computer Vision]] — vision pipeline parameters are a key configuration domain
   - bridges-to:: [[Computer Vision]]
 
 - ### Content

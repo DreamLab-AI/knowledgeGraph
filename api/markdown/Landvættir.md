@@ -38,15 +38,26 @@ public:: true
   "@id": "urn:ngm:class:landv-ttir",
   "@type": "Class",
   "label": "Landvættir",
-  "definition": "Landvættir is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Landvættir is a practice-based art research project and portfolio documenting the bootstrapping era of Generative AI and AGI through digital landscapes, virtual worlds, and AI-generated imagery. Drawing on Scenism, Romanticism, and environmental psychology, it explores how AI systems trained on cultural visual heritage may dream or hallucinate the virtual landscapes that seeded their intelligence.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:virtual-world", "label": "Virtual World"},
+      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
+      {"@id": "urn:ngm:class:landscape", "label": "Landscape"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -83,14 +94,15 @@ public:: true
 
 
 - ### Definition
-  - Landvættir is a concept within the ngm domain.
+  - Landvættir is a practice-based art research project and portfolio documenting the bootstrapping era of Generative AI and AGI through digital landscapes, virtual worlds, and AI-generated imagery. Drawing on Scenism, Romanticism, and environmental psychology, it explores how AI systems trained on cultural visual heritage may dream or hallucinate the virtual landscapes that seeded their intelligence.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:Landvttir
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses:: [[Generative AI]]
+  - relatedTo:: [[Virtual World]], [[Immersive Experience]], [[Landscape]]
 
 - ### Content
   - Papers with Umran [[PEOPLE]]

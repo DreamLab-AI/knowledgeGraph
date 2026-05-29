@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:open-source-ai",
   "domain": "artificial-intelligence",
-  "definition": "Open-Source AI refers to artificial intelligence models, datasets, and tooling whose weights, source code, and training procedures are publicly released under permissive licences.",
+  "definition": "Open-Source AI refers to artificial intelligence models, training datasets, evaluation benchmarks, and software tooling whose weights, source code, data pipelines, and training procedures are publicly released under licences that permit inspection, reproduction, modification, and redistribution. The degree of openness varies considerably: some releases provide weights only (open-weights), others include full training code and data (fully open), while a further subset additionally discloses evaluation methodology and safety assessments. Open-source AI accelerates scientific reproducibility, enables community fine-tuning and red-teaming, and reduces barriers to deployment\u2014but also raises governance questions about dual-use risk and safety assurance that closed-release pipelines handle through access controls.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-research-area",
@@ -14,20 +14,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "id": "urn:ngm:class:benchmark-standard",
+        "label": "Benchmark Standard"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:model-weights",
+        "label": "Model Weights"
+      },
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

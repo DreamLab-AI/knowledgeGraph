@@ -8,6 +8,10 @@
 
 - ### Relationships
   - is-subclass-of:: [[Digital Asset]]
+  - **hasPart** → [[3D Model]], [[3D Asset]]
+  - **uses** → [[3D Asset Standard]], [[Gltf Standard]]
+  - **enables** → [[Digital Asset Workflow]], [[Interoperability]]
+  - **supports** → [[Digital Twin]], [[Avatar]]
 
 - ### Content
 

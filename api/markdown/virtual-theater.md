@@ -8,6 +8,14 @@
 
 - ### Relationships
   - is-subclass-of:: [[Performing Arts]]
+  - Part Of [[Performing Arts]]
+  - Requires [[Virtual Reality]]
+  - Requires [[Immersive Audio Technology]]
+  - Uses [[Avatar]]
+  - Uses [[Spatial Audio]]
+  - Uses [[Rendering Pipeline]]
+  - Enables [[Immersive Experience]]
+  - Enables [[Accessibility]]
 
 - ### Content
 

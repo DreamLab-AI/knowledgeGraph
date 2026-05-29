@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:technical-history-extended-cv",
   "domain": "infrastructure",
-  "definition": "Technical History (extended CV) is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Technical History (extended CV) is the knowledge-graph representation of the author's professional research trajectory, spanning 15+ years leading immersive technology laboratories, securing multi-million-pound grant funding, and developing open-source metaverse and AI systems. It contextualises published research, institutional roles, and ongoing projects \u2014 including Knowhere, Flossverse, and FutureFleet \u2014 within the graph's broader topics of spatial computing, AI, and decentralised systems.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-software-engineering",
@@ -13,21 +13,61 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:knowhere",
+        "label": "Knowhere"
+      },
+      {
+        "id": "urn:ngm:class:dreamlab",
+        "label": "Dreamlab"
+      }
+    ],
     "requires": [],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:trust-and-safety",
+        "label": "Trust and Safety"
+      },
+      {
+        "id": "urn:ngm:class:location-based-experience",
+        "label": "Location Based Experience"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:proprietary-large-language-models",
+        "label": "Proprietary Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:hyper-personalisation",
+        "label": "Hyper personalisation"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:national-industrial-centre-for-virtual-environments",
+        "label": "National Industrial Centre for Virtual Environments"
+      },
+      {
+        "id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-and-telecollaboration",
+        "label": "Metaverse and Telecollaboration"
+      }
+    ]
   },
   "wikilinks": [
     {

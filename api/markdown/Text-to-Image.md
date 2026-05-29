@@ -46,7 +46,7 @@ public:: true
   "@id": "urn:ngm:class:text-to-image",
   "@type": "Class",
   "label": "Text-to-Image",
-  "definition": "Text-to-Image is a artificial intelligence concept and a type of Generative Ai.",
+  "definition": "A generative AI capability that synthesises visual imagery from natural language textual descriptions. Systems such as diffusion models iteratively denoise latent representations conditioned on text embeddings, enabling creation of photorealistic and artistic images from prompts without requiring explicit pixel-level instructions.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -56,10 +56,29 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:generative-ai",
-      "label": "Generative Ai"
+      "label": "Generative AI"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
+      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
+      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"},
+      {"@id": "urn:ngm:class:multimodal-ai", "label": "Multimodal AI"},
+      {"@id": "urn:ngm:class:diffusion-models", "label": "Diffusion Models"},
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:3-d-content-generation", "label": "3D Content Generation"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:generative-ai-engineering", "label": "Generative AI Engineering"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -111,7 +130,9 @@ public:: true
   - is-subclass-of:: [[Generative Ai]]
 
 - ### Content
-  Text-to-Image — content pending enrichment.
+  Text-to-image systems translate natural language prompts into visual content by conditioning generative models on text embeddings. Diffusion models—including latent diffusion architectures—iteratively denoise a random latent vector guided by a CLIP or transformer-based text encoder, progressively constructing an image that matches the textual description.
+
+  Practical systems expose controls for image dimensions, guidance scale (balancing prompt adherence and diversity), negative prompts, and inpainting or outpainting for localised editing. Text-to-image capabilities underpin applications in digital art, advertising asset generation, concept visualisation, and synthetic data creation for downstream AI training.
 
 - ### Provenance
   - sources:: Chimera Prime Research

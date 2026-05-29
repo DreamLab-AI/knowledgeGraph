@@ -5,26 +5,57 @@
   "public": true,
   "classIri": "urn:ngm:class:ai-metadata",
   "domain": "artificial-intelligence",
-  "definition": "AI Metadata encompasses the descriptive information, provenance data, and contextual attributes associated with artificial intelligence models, datasets, and computational artifacts.",
+  "definition": "Descriptive information, provenance data, and contextual attributes associated with AI models, datasets, and computational artefacts. Includes model cards documenting architecture, training procedures, performance metrics, intended use, and known limitations; dataset metadata capturing collection methods, labelling procedures, and potential biases; and lineage records enabling reproducibility, regulatory compliance, and responsible deployment throughout the machine learning lifecycle.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure (Category)"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-provenance",
+        "label": "Data Provenance"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:transparency-oecd",
+        "label": "Transparency (OECD)"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ai-model-card",
+        "label": "AI Model Card"
+      },
+      {
+        "id": "urn:ngm:class:training-dataset-metadata",
+        "label": "Training Dataset Metadata"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-audit",
+        "label": "AI Audit"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": []

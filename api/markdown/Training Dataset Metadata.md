@@ -42,20 +42,45 @@ public:: true
   "@id": "urn:ngm:class:training-dataset-metadata",
   "@type": "Class",
   "label": "Training Dataset Metadata",
-  "definition": "A training dataset metadata component in the Artificial Intelligence domain that required by AiModelCard.",
+  "definition": "Training dataset metadata is structured descriptive information about the data used to train a machine learning model, including its provenance, size, collection method, class distribution, known biases, and licensing terms. This metadata is a core component of AI model cards and datasheets, enabling reproducibility, fairness auditing, and regulatory accountability. Thorough dataset metadata underpins model transparency and responsible AI governance.",
   "domain": "artificial-intelligence",
   "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:cat-ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
+      "@id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure"
     }
   ],
-  "quality": 0.35,
+  "quality": 0.75,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:ai-model-card", "label": "AI Model Card"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:data-versioning", "label": "Data Versioning"},
+      {"@id": "urn:ngm:class:provenance-tracking", "label": "Provenance Tracking"},
+      {"@id": "urn:ngm:class:metadata-schema", "label": "Metadata Schema"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
+      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
+      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:model-transparency", "label": "Model Transparency"},
+      {"@id": "urn:ngm:class:ai-fairness", "label": "AI Fairness"},
+      {"@id": "urn:ngm:class:model-evaluation-results", "label": "Model Evaluation Results"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:provenance-standard", "label": "Provenance Standard"},
+      {"@id": "urn:ngm:class:fairness-metrics", "label": "Fairness Metrics"},
+      {"@id": "urn:ngm:class:model-performance", "label": "Model Performance"}
+    ]
   }
 }
 ```
@@ -97,7 +122,9 @@ public:: true
   - is-subclass-of:: [[ModelArchitecture]]
 
 - ### Content
-  TrainingDatasetMetadata — content pending enrichment.
+  Training dataset metadata documents the origins, composition, and limitations of the data used to train a model. Fields typically include dataset name and version, collection date range, geographic or demographic scope, labelling methodology, inter-annotator agreement, and known class imbalances.
+
+  Accurate metadata enables downstream teams to assess whether a model is appropriate for a given deployment context. Regulators under the EU AI Act and equivalent frameworks increasingly mandate structured dataset documentation as part of technical file requirements for high-risk AI systems.
 
 - ### Provenance
   - sources:: Generated from bridge validation

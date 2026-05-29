@@ -68,7 +68,7 @@ public:: true
   "label": "AI Governance",
   "definition": "AI Governance encompasses the policies, frameworks, standards, and institutional mechanisms for overseeing the responsible development, deployment, and use of artificial intelligence technologies.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
@@ -79,6 +79,20 @@ public:: true
       "label": "Governance Framework"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"},
+      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
+      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"},
+      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
@@ -154,6 +168,12 @@ public:: true
 - ### Relationships
   - is-subclass-of:: ['owl:Thing']
   - bridges-to:: [[Smart Contract]] (domain: bc)
+  - requires:: [[AI Ethics]]
+  - requires:: [[Regulatory Compliance]]
+  - supports:: [[Responsible AI]]
+  - supports:: [[AI Safety]]
+  - relatedTo:: [[Risk Management]]
+  - relatedTo:: [[AI Alignment]]
 
 - ### Content
 

@@ -46,16 +46,34 @@ public:: true
   "@id": "urn:ngm:class:electra",
   "@type": "Class",
   "label": "ELECTRA",
-  "definition": "Efficiently Learning an Encoder that Classifies Token Replacements Accurately: a pre-training approach that trains a discriminator to detect replaced tokens rather than reconstructing masked inputs, improving sample efficiency.",
+  "definition": "ELECTRA (Efficiently Learning an Encoder that Classifies Token Replacements Accurately) is a transformer pre-training method that trains a discriminator to detect replaced tokens rather than reconstructing masked inputs, using a generator-discriminator architecture. This replaced token detection task utilises all positions in a sequence, yielding substantially greater sample efficiency than masked language modelling with less than one quarter of the compute required by comparable models.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
+      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
+      {"@id": "urn:ngm:class:language-modeling", "label": "Language Modeling"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:albert", "label": "ALBERT"},
+      {"@id": "urn:ngm:class:ro-berta", "label": "RoBERTa"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
+      {"@id": "urn:ngm:class:machine-learning-model", "label": "Machine Learning Model"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -104,7 +122,10 @@ public:: true
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: [[Transformer]], [[Transformer Architecture]], [[Language Modeling]]
+  - **contrastsWith**: [[ALBERT]], [[RoBERTa]]
+  - **enables**: [[Natural Language Processing]], [[Machine Learning Model]]
+  - **relatedTo**: [[Large Language Models]]
 - ### Content
   - Efficiently Learning an Encoder that Classifies Token Replacements Accurately: a pre-training approach that trains a discriminator to detect replaced tokens rather than reconstructing masked inputs, improving sample efficiency.
   ## Characteristics

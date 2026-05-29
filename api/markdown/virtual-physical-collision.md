@@ -8,6 +8,10 @@
 
 - ### Relationships
   - is-subclass-of:: [[Physics Simulation]]
+  - Uses [[Physics Engine]], [[Spatial Tracking Technology]]
+  - Requires [[Haptic Feedback]], [[Room Scale]]
+  - Enables [[Mixed Reality]]
+  - Related to [[Augmented Reality]], [[User Safety]]
 
 - ### Content
 

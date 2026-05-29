@@ -46,7 +46,7 @@ public:: true
   "@id": "urn:ngm:class:pure-proof-of-stake",
   "@type": "Class",
   "label": "Pure Proof of Stake",
-  "definition": "A PoS variant that randomly selects validators from all stakers proportional to their stake weight, without delegation mechanisms.",
+  "definition": "A proof-of-stake consensus variant, exemplified by Algorand, that randomly selects block proposers and committee members from all token holders proportional to their stake weight using cryptographic sortition, without delegation mechanisms, enabling high decentralisation and Byzantine fault tolerance with immediate finality.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -59,7 +59,27 @@ public:: true
       "label": "Proof of Stake"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:delegated-proof-of-stake", "label": "Delegated Proof of Stake"},
+      {"@id": "urn:ngm:class:liquid-proof-of-stake", "label": "Liquid Proof of Stake"},
+      {"@id": "urn:ngm:class:nominated-proof-of-stake", "label": "Nominated Proof of Stake"},
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
+      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:deterministic-finality", "label": "Deterministic Finality"},
+      {"@id": "urn:ngm:class:proof-of-stake-sustainability", "label": "Proof Of Stake Sustainability"},
+      {"@id": "urn:ngm:class:validator-node", "label": "Validator Node"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:bc-protocol-and-consensus", "label": "Protocol and Consensus"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

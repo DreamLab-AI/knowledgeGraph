@@ -1,12 +1,14 @@
 - ### Definition
-  - Training for Design Practitioners is a concept within the ngm domain.
+  Training for Design Practitioners covers structured programmes and self-directed learning pathways that equip designers—particularly in landscape, product, and spatial disciplines—with practical AI literacy, covering generative image tools, RAG-based knowledge management, client communication automation, and AI-assisted rendering workflows for immediate professional application.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:TrainingForDesignPractitioners
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: Image Generation, Retrieval Augmented Generation - RAG, Prompt Engineering
+  - **enables**: Consumer Tools for SMEs, Knowledge Graphing
+  - **supports**: Generative Design Tool
 
 - ### Content
   - # Insights about AI for small businesses

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:regularisation",
   "domain": "artificial-intelligence",
-  "definition": "Regularisation is a artificial intelligence concept and a type of Machine Learning.",
+  "definition": "A family of techniques that constrain or penalise model complexity during training to prevent overfitting and improve generalisation to unseen data. Common methods include L1 (Lasso) and L2 (Ridge) weight penalties, dropout, early stopping, and data augmentation, each discouraging the model from memorising noise at the expense of learning underlying patterns.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -18,20 +18,49 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:dropout",
+        "label": "Dropout"
+      },
+      {
+        "id": "urn:ngm:class:training",
+        "label": "Training"
+      }
+    ]
   },
   "wikilinks": [
     {

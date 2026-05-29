@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:rb-0039-stiffness",
   "domain": "robotics",
-  "definition": "stiffness is a robotics and autonomous systems concept and a type of robotics.",
+  "definition": "Stiffness, in robotics, is the ratio of applied force (or torque) to the resulting displacement (or angular deflection) of a robot link, joint, or end-effector. High stiffness yields precise positioning at the cost of storing large elastic energy that can be hazardous in contact; low stiffness (compliance) absorbs impact and is preferred in human-robot collaboration. Variable-stiffness actuation and impedance control allow robots to modulate stiffness dynamically, trading accuracy against safety depending on task context.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
@@ -13,21 +13,56 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:force-control",
+        "label": "Force Control"
+      },
+      {
+        "id": "urn:ngm:class:soft-robotics",
+        "label": "Soft Robotics"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:rb-0027-robot-link",
+        "label": "rb 0027 robot link"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:impedance-control",
+        "label": "Impedance Control"
+      },
+      {
+        "id": "urn:ngm:class:compliance-control",
+        "label": "Compliance Control"
+      },
+      {
+        "id": "urn:ngm:class:robot-dynamics",
+        "label": "Robot Dynamics"
+      },
+      {
+        "id": "urn:ngm:class:inertia",
+        "label": "Inertia"
+      },
+      {
+        "id": "urn:ngm:class:rigid-body-dynamics",
+        "label": "Rigid Body Dynamics"
+      }
+    ]
   },
   "wikilinks": [
     {

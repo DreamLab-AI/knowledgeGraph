@@ -48,7 +48,7 @@ public:: true
   "label": "Verifiable Data Registry",
   "definition": "A system that mediates the creation, verification, and resolution of decentralized identifiers and verifiable credentials, typically implemented as a blockchain, distributed ledger, or decentralized network for storing public key and revocation information.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-data-management",
@@ -59,6 +59,20 @@ public:: true
       "label": "Data Registry"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"},
+      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"},
+      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
+      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:trust-framework", "label": "Trust Framework"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
@@ -109,6 +123,12 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Data Registry]]
+  - uses [[Distributed Ledger]]
+  - uses [[Cryptography]]
+  - uses [[Public Key Infrastructure]]
+  - enables [[Self Sovereign Identity]]
+  - enables [[Digital Identity]]
+  - supports [[Trust Framework]]
 
 - ### Content
 

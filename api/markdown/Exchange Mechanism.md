@@ -42,9 +42,10 @@ public:: true
   "@id": "urn:ngm:class:exchange-mechanism",
   "@type": "Class",
   "label": "Exchange Mechanism",
-  "definition": "Exchange Mechanism is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "An Exchange Mechanism is a protocol or technical construct that governs the transfer of digital assets, tokens, or value between parties within a virtual economy or cross-platform environment. Exchange mechanisms specify the rules for matching buyers and sellers, executing atomic swaps, handling liquidity, and settling transactions, forming the economic infrastructure of metaverse marketplaces.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -56,6 +57,38 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:marketplace",
+        "label": "Marketplace"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset-trading",
+        "label": "Digital Asset Trading"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "@id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
+    ]
   }
 }
 ```
@@ -87,14 +120,19 @@ public:: true
 
 
 - ### Definition
-  - Exchange Mechanism is a concept within the metaverse domain. Further enrichment pending.
+  - An Exchange Mechanism is a protocol or technical construct that governs the transfer of digital assets, tokens, or value between parties within a virtual economy or cross-platform environment. Exchange mechanisms specify the rules for matching buyers and sellers, executing atomic swaps, handling liquidity, and settling transactions, forming the economic infrastructure of metaverse marketplaces.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:ExchangeMechanism
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses [[Smart Contract]]
+  - Uses [[Blockchain]]
+  - Enables [[Marketplace]]
+  - Enables [[Digital Asset Trading]]
+  - Related To [[Liquidity Pool]]
+  - Related To [[Token Economics]]
 
 - ### Content
 

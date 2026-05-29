@@ -66,7 +66,7 @@ public:: true
   "@id": "urn:ngm:class:immutability",
   "@type": "Class",
   "label": "Immutability",
-  "definition": "Tamper-resistant property within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "The tamper-resistant property of blockchain ledgers whereby confirmed records cannot be altered without invalidating the cryptographic chain of hashes, providing verifiable finality, audit-trail integrity, and resistance to retroactive manipulation. Achieved through chained Merkle roots, accumulated proof-of-work, or BFT-based finality.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -77,13 +77,30 @@ public:: true
     {
       "@id": "urn:ngm:class:blockchain-entity",
       "label": "Blockchain Entity"
-    },
-    {
-      "@id": "urn:ngm:class:network-component",
-      "label": "NetworkComponent"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
+      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"},
+      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"},
+      {"@id": "urn:ngm:class:data-integrity", "label": "Data Integrity"},
+      {"@id": "urn:ngm:class:pharmaceutical-traceability", "label": "Pharmaceutical Traceability"},
+      {"@id": "urn:ngm:class:provenance-tracking", "label": "Provenance Tracking"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:cryptographic-commitment", "label": "Cryptographic Commitment"},
+      {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"},
+      {"@id": "urn:ngm:class:finality", "label": "Finality"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:bc-protocol-and-consensus", "label": "Protocol and Consensus"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

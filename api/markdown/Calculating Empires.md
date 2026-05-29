@@ -54,15 +54,32 @@ public:: true
   "@id": "urn:ngm:class:calculating-empires",
   "@type": "Class",
   "label": "Calculating Empires",
-  "definition": "Calculating Empires is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Calculating Empires is a large-scale research visualisation project by Kate Crawford and Vladan Joler that maps the co-evolution of technology and power structures from 1500 to the present. The work contextualises contemporary AI within five centuries of imperial infrastructure, surveillance, and control systems, foregrounding continuities between historical colonialism and digital power.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-software-engineering",
       "label": "Software Engineering"
     }
   ],
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
+      {"@id": "urn:ngm:class:politics-law-privacy", "label": "Politics, Law, Privacy"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:digital-society-surveillance", "label": "Digital Society Surveillance"},
+      {"@id": "urn:ngm:class:education-and-ai", "label": "Education and AI"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:cyber-security-and-military", "label": "Cyber Security and Military"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:digital-rights", "label": "Digital Rights"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -119,14 +136,17 @@ public:: true
 
 
 - ### Definition
-  - Calculating Empires is a concept within the ngm domain.
+  - Calculating Empires is a large-scale research visualisation project by Kate Crawford and Vladan Joler that maps the co-evolution of technology and power structures from 1500 to the present. The work contextualises contemporary AI within five centuries of imperial infrastructure, surveillance, and control systems, foregrounding continuities between historical colonialism and digital power.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:CalculatingEmpires
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - related-to:: [[Artificial Intelligence]], [[Politics, Law, Privacy]]
+  - bridges-to:: [[Digital Society Surveillance]], [[Education and AI]]
+  - contrasts-with:: [[Cyber Security and Military]]
+  - uses:: [[Digital Rights]]
 
 - ### Content
   - Calculating Empires is a large-scale research visualization project and exhibition that explores the interconnected history of technology and power [from 1500 to the present day](https://calculatingempires.net/about.html)

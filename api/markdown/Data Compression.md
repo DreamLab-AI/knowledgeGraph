@@ -54,10 +54,10 @@ public:: true
   "@id": "urn:ngm:class:data-compression",
   "@type": "Class",
   "label": "Data Compression",
-  "definition": "Data Compression in AI involves reducing the size of datasets, models, and computational representations while preserving essential information.",
+  "definition": "Data Compression in AI encompasses techniques for reducing the size of datasets, models, and computational representations while preserving essential information and predictive performance. Key methods include model quantisation (reducing numerical precision of weights), pruning (removing redundant parameters), knowledge distillation (training compact student models from large teachers), and neural compression via autoencoders. These techniques are critical for deploying AI on resource-constrained edge devices and for reducing storage, bandwidth, and energy costs.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
-  "quality": 0.35,
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -68,7 +68,23 @@ public:: true
       "@id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
     }
-  ]
+  ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:knowledge-distillation", "label": "Knowledge Distillation"},
+      {"@id": "urn:ngm:class:quantisation", "label": "Quantisation"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:model-compression-for-edge", "label": "Model Compression for Edge"},
+      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:model-training", "label": "Model Training"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:model-pruning-for-edge-deployment", "label": "Model Pruning for Edge Deployment"}
+    ]
+  }
 }
 ```
 
@@ -121,7 +137,10 @@ public:: true
   - owl-role:: concept
 
 - ### Relationships
-  - is-subclass-of:: ['owl:Thing']
+  - **uses**: Knowledge Distillation, Quantisation (core compression methods)
+  - **enables**: Model Compression for Edge, Federated Learning (compressed models are prerequisite for efficient edge/federated deployment)
+  - **requires**: Model Training (a trained model is necessary before compression can be applied)
+  - **relatedTo**: Model Pruning for Edge Deployment (complementary sparsification technique)
 
 - ### Content
 

@@ -7,7 +7,10 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires: [[AI Regulation]], [[AI Governance]]
+  - contrastsWith: [[Manipulation]], [[Content Moderation]]
+  - relatedTo: [[Data Protection]], [[GDPR Compliance]]
+  - partOf: [[AI Governance and Ethics]]
 
 - ### Content
   - AI systems deploying subliminal/manipulative techniques, exploiting vulnerabilities, social scoring, or real-time biometric identification in publicly accessible spaces (with limited law enforcement exceptions).

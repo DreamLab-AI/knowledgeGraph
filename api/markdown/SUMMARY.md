@@ -66,16 +66,32 @@ public:: true
   "@id": "urn:ngm:class:summary",
   "@type": "Class",
   "label": "SUMMARY",
-  "definition": "The metaverse represents a convergent technological paradigm combining VirtualReality|virtual reality, AugmentedReality|augmented reality, and ExtendedReality|extended reality to create persistent, 3D virtual shared environments enabling user interaction, economic transactions, and so...",
+  "definition": "The metaverse represents a convergent technological paradigm combining virtual reality, augmented reality, and extended reality to create persistent, 3D virtual shared environments enabling user interaction, economic transactions, and social collaboration. This digital infrastructure integrates blockchain-based assets, smart contracts, and decentralised identity systems to support genuine digital ownership, interoperability, and governance across platforms.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
     }
   ],
-  "quality": 0.4,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
+      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
+      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:smart-contracts", "label": "Smart Contracts"},
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}
+    ]
+  },
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -147,7 +163,9 @@ public:: true
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **hasPart**: Virtual Reality, Augmented Reality, Extended Reality — the metaverse is composed of these immersive reality modalities operating in concert.
+  - **uses**: Blockchain — for asset ownership and transaction integrity; Smart Contracts — for automated, trustless economic logic; Spatial Computing — as the computation paradigm enabling 3D persistent environments.
+  - **relatedTo**: Metaverse — this page summarises the core ontological terms of the Metaverse domain.
 - ### Content
   - The metaverse integrates immersive reality technologies, blockchain infrastructure, and distributed systems enabling persistent shared virtual environments with genuine digital ownership, interoperability, and user-driven economic value creation.
   - ### Original Content

@@ -70,16 +70,32 @@ public:: true
   "@id": "urn:ngm:class:transaction-finality",
   "@type": "Class",
   "label": "Transaction Finality",
-  "definition": "The point at which a blockchain transaction becomes irreversible and cannot be altered or removed, providing settlement certainty for participants.",
+  "definition": "The point at which a blockchain transaction becomes irreversible and cannot be altered or removed, providing settlement certainty for participants. Finality types include probabilistic (increasing confidence with confirmations), deterministic (explicit protocol guarantee), and economic (cost to revert exceeds benefit).",
   "domain": "blockchain",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-protocol-and-consensus",
       "label": "Protocol and Consensus"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:deterministic-finality", "label": "Deterministic Finality"},
+      {"@id": "urn:ngm:class:probabilistic-finality", "label": "Probabilistic Finality"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
+      {"@id": "urn:ngm:class:decentralized-finance-de-fi", "label": "Decentralized Finance (DeFi)"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -160,6 +176,10 @@ public:: true
 - ### Relationships
   - is-subclass-of:: [[Blockchain]]
   - depends-on:: [[Consensus Mechanism]]
+  - **requires**: Consensus Mechanism — the finality guarantee is produced by the underlying consensus protocol.
+  - **hasPart**: Deterministic Finality, Probabilistic Finality — these are the two primary sub-types of finality guarantee.
+  - **enables**: Smart Contract, Decentralized Finance (DeFi) — applications relying on settlement certainty (DeFi protocols, on-chain contracts) depend on well-defined finality.
+  - **partOf**: Blockchain — transaction finality is a core property of any blockchain ledger.
 
 - ### Content
 

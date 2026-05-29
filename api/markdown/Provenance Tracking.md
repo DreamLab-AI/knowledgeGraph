@@ -182,7 +182,7 @@ public:: true
   "@id": "urn:ngm:class:provenance-tracking",
   "@type": "Class",
   "label": "Provenance Tracking",
-  "definition": "Blockchain-based systems employing immutable distributed ledgers, IoT sensors, and smart contracts to create comprehensive audit trails tracking product journeys from origin to consumer, enabling reduction in tracing time (7 days to 2.2 seconds), combating £30 counterfeit markets, and supporting ...",
+  "definition": "Blockchain-based systems employing immutable distributed ledgers, IoT sensors, and smart contracts to create comprehensive audit trails tracking product journeys from origin to consumer, enabling dramatic reduction in tracing time (7 days to 2.2 seconds), combating counterfeit markets, and supporting food safety, pharmaceutical traceability, luxury goods authentication, and ethical sourcing verification.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -191,7 +191,26 @@ public:: true
       "label": "Network Component"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
+      {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"},
+      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"},
+      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"},
+      {"@id": "urn:ngm:class:immutability", "label": "Immutability"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:supply-chain-traceability", "label": "Supply Chain Traceability"},
+      {"@id": "urn:ngm:class:traceability-mechanism", "label": "Traceability Mechanism"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:supply-chain-blockchain", "label": "Supply Chain Blockchain"},
+      {"@id": "urn:ngm:class:supply-chain-management", "label": "Supply Chain Management"},
+      {"@id": "urn:ngm:class:blockchain-compliance", "label": "Blockchain Compliance"},
+      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

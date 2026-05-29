@@ -1,12 +1,16 @@
 - ### Definition
-  - PhysicsSimulation is a concept within the ngm domain.
+  - Physics Simulation is the computational modelling of physical phenomena — including rigid-body dynamics, soft-body deformation, fluid behaviour, and collision detection — to produce physically plausible behaviour in virtual environments. It underpins interactive experiences in virtual reality, robotics training, and digital-twin applications.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:PhysicsSimulation
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - enables:: [[Virtual Reality]]
+  - enables:: [[Robotics]]
+  - uses:: [[Game Engine]]
+  - supports:: [[Robot Learning]]
+  - supports:: [[Autonomous Vehicle]]
 
 - ### Content
   # PhysicsSimulation

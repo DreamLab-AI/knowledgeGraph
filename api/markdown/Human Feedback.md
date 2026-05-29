@@ -48,14 +48,27 @@ public:: true
   "label": "Human Feedback",
   "definition": "Information provided by human evaluators about model outputs, typically in the form of rankings, ratings, demonstrations, or corrections.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:reward-model", "label": "Reward Model"},
+      {"@id": "urn:ngm:class:reinforcement-learning-from-human-feedback", "label": "Reinforcement Learning from Human Feedback"},
+      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:supervised-fine-tuning", "label": "Supervised Fine Tuning"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:model-performance", "label": "Model Performance"}
+    ]
+  },
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -104,7 +117,11 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - enables [[Reward Model]]
+  - enables [[Reinforcement Learning from Human Feedback]]
+  - enables [[AI Alignment]]
+  - requires [[Supervised Fine Tuning]]
+  - relatedTo [[Model Performance]]
 
 - ### Content
   - Information provided by human evaluators about model outputs, typically in the form of rankings, ratings, demonstrations, or corrections. Human feedback serves as the training signal for aligning AI systems with human preferences and values, enabling learning of complex objectives difficult to specify formally.

@@ -42,16 +42,33 @@ public:: true
   "@id": "urn:ngm:class:privacy-disclosure",
   "@type": "Class",
   "label": "Privacy Disclosure",
-  "definition": "Privacy Disclosure is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "The formal process by which platforms communicate to users what personal data is collected, how it is used, who it is shared with, and what rights users hold over it. In spatial computing and metaverse contexts, privacy disclosure must address novel data types including biometric signals, eye tracking, motion data, and behavioural analytics gathered in immersive environments.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
       "label": "Governance and Safety"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:consent-management", "label": "Consent Management"},
+      {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy By Design"},
+      {"@id": "urn:ngm:class:gdpr-compliance", "label": "GDPR Compliance"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:privacy-framework", "label": "Privacy Framework"},
+      {"@id": "urn:ngm:class:eye-tracking", "label": "Eye Tracking"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:accountability", "label": "Accountability"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -87,14 +104,20 @@ public:: true
 
 
 - ### Definition
-  - Privacy Disclosure is a concept within the metaverse domain. Further enrichment pending.
+  - The formal process by which platforms communicate to users what personal data is collected, how it is used, who it is shared with, and what rights users hold over it. In spatial computing and metaverse contexts, privacy disclosure must address novel data types including biometric signals, eye tracking, motion data, and behavioural analytics gathered in immersive environments.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:PrivacyDisclosure
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires** [[Consent Management]] — meaningful disclosure must be paired with genuine consent mechanisms
+  - **requires** [[Data Protection]] — data protection regulation defines the minimum content of privacy disclosures
+  - **enables** [[Privacy By Design]] — proactive disclosure is a key pillar of privacy-by-design architecture
+  - **enables** [[GDPR Compliance]] — GDPR Articles 13–14 mandate specific privacy disclosure obligations
+  - **relatedTo** [[Privacy Framework]] — privacy frameworks define templates and standards for disclosure content
+  - **relatedTo** [[Eye Tracking]] — eye-tracking data collected in XR devices is a sensitive disclosure subject
+  - **supports** [[Accountability]] — transparent disclosure creates the evidentiary basis for regulatory accountability
 
 - ### Content
 

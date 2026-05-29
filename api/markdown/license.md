@@ -33,20 +33,50 @@ public:: true
   "@id": "urn:ngm:class:license",
   "@type": "Class",
   "label": "license",
-  "definition": "license is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A legal instrument that specifies the permissions, conditions, and restrictions under which intellectual property — including software, data, and creative works — may be used, reproduced, modified, and distributed, forming the contractual basis for open-source and open-data ecosystems.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-legal-and-regulatory",
       "label": "Legal and Regulatory"
     }
   ],
-  "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:digital-rights",
+        "label": "Digital Rights"
+      },
+      {
+        "@id": "urn:ngm:class:digital-rights-management",
+        "label": "Digital Rights Management"
+      },
+      {
+        "@id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      },
+      {
+        "@id": "urn:ngm:class:copyright",
+        "label": "copyright"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ]
   }
 }
 ```
@@ -72,14 +102,19 @@ public:: true
 
 
 - ### Definition
-  - license is a concept within the ngm domain.
+  - A legal instrument that specifies the permissions, conditions, and restrictions under which intellectual property — including software, data, and creative works — may be used, reproduced, modified, and distributed, forming the contractual basis for open-source and open-data ecosystems.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:License
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Related To: [[Digital Rights]]
+  - Related To: [[Digital Rights Management]]
+  - Related To: [[Open Source Software]]
+  - Related To: [[copyright]]
+  - Supports: [[Open Standard]]
+  - Supports: [[Data Governance]]
 
 - ### Content
   - #Public page automatically published

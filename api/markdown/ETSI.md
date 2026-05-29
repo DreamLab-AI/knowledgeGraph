@@ -27,7 +27,7 @@ public:: true
   "@id": "urn:ngm:class:etsi",
   "@type": "Class",
   "label": "ETSI",
-  "definition": "ETSI (European Telecommunications Standards Institute) is a not-for-profit organisation that produces globally applicable standards for information and communications technology.",
+  "definition": "ETSI (European Telecommunications Standards Institute) is a not-for-profit, independent standardisation organisation that produces globally applicable standards for information and communications technology, including telecommunications, broadcasting, and electronic signatures. Headquartered in Sophia Antipolis, France, it operates under a unique membership model that grants access to industry, research organisations, and governments worldwide. ETSI standards underpin technologies such as 5G NR, NFV, MEC, and the eIDAS-compliant electronic signature formats (CAdES, XAdES, PAdES).",
   "domain": "infrastructure",
   "subClassOf": [
     {
@@ -35,26 +35,43 @@ public:: true
       "label": "Infra Network and Comms"
     }
   ],
-  "relations": {},
-  "qualityScore": 0.6,
-  "maturity": "stub"
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:open-standard", "label": "Open Standard"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"},
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:etsi-domain-taxonomy", "label": "ETSI Domain Taxonomy"},
+      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"}
+    ]
+  },
+  "qualityScore": 0.75,
+  "maturity": "emerging"
 }
 ```
 
 
 - ### Definition
-  - ETSI (European Telecommunications Standards Institute) is a not-for-profit organisation that produces globally applicable standards for information and communications technology.
+  - ETSI (European Telecommunications Standards Institute) is a not-for-profit, independent standardisation organisation that produces globally applicable standards for information and communications technology, including telecommunications, broadcasting, and electronic signatures. Headquartered in Sophia Antipolis, France, it operates under a unique membership model that grants access to industry, research organisations, and governments worldwide. ETSI standards underpin technologies such as 5G NR, NFV, MEC, and the eIDAS-compliant electronic signature formats (CAdES, XAdES, PAdES).
 
 - ### Semantic Classification
   - owl-class:: etsi:ETSI
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- Stub page — relationships inherited from referencing pages -->
+  - enables [[Open Standard]]
+  - supports [[Interoperability]]
+  - supports [[Edge Computing]]
+  - relatedTo [[ETSI Domain Taxonomy]]
+  - relatedTo [[AI Regulation]]
 
 - ### Content
-  - #Public page
-  - automatically published
+  - ETSI occupies a central role in the global ICT standards ecosystem, working alongside ISO/IEC, ITU-T, and 3GPP to deliver specifications that achieve wide market adoption. Its technical committees cover areas from network functions virtualisation (NFV) and multi-access edge computing (MEC) to cybersecurity, quantum-safe cryptography, and AI. The ETSI ISG (Industry Specification Group) model allows faster-moving, industry-led work that complements the more formal technical committee process.
+  - In the AI domain, ETSI's ISG on Experiential Networked Intelligence (ENI) addresses AI-assisted network management, while other groups contribute to AI trustworthiness, testing, and conformity specification. ETSI also participates in CEN-CENELEC joint working groups that develop European harmonised standards supporting the EU AI Act, providing the technical backbone that manufacturers reference when demonstrating conformity.
+  - ETSI's electronic signature standards—particularly the ETSI EN 319 series—are mandated under the eIDAS regulation and define the formats (CAdES, XAdES, PAdES, JAdES) used for qualified electronic signatures across the EU. This places ETSI at the intersection of digital identity, legal compliance, and cryptographic infrastructure, linking its telecommunications heritage to emerging digital trust frameworks.
 
 - ### Provenance
   - sources::

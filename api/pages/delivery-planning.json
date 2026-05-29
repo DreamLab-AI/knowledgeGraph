@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:delivery-planning",
   "domain": "infrastructure",
-  "definition": "Delivery Planning is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Delivery Planning is the structured process of decomposing a technology programme into milestones, tasks, resource assignments, and timelines to ensure coherent execution. In the context of spatial computing and AI platform development, delivery planning coordinates parallel workstreams\u2014GenAI model development, platform infrastructure, digital asset creation, human tracking integration, and USD file format implementation\u2014typically represented as Gantt charts or sprint boards.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-software-engineering",
@@ -13,18 +13,46 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:development-platform",
+        "label": "Development Platform"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:collaboration",
+        "label": "Collaboration"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:digital-platform",
+        "label": "Digital Platform"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": []

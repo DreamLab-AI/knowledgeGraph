@@ -8,6 +8,12 @@
 
 - ### Relationships
   - is-subclass-of:: [[Governance]]
+  - Enables [[Accountability]]
+  - Enables [[Distributed Decision Making]]
+  - Supports [[DAO Governance]]
+  - Supports [[Community Governance]]
+  - Depends on [[Blockchain Governance]]
+  - Related to [[Governance Framework]]
 
 - ### Content
 

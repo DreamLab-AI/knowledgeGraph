@@ -471,7 +471,7 @@ public:: true
       "label": "AI Governance and Ethics"
     },
     {
-      "@id": "urn:ngm:class:organisational-change",
+      "@id": "urn:ngm:class:organizational-change",
       "label": "Organisational Change"
     },
     {

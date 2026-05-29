@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:virtual-city-model",
   "@type": "Class",
   "label": "Virtual City Model",
-  "definition": "A digital representation of an urban environment including buildings, infrastructure, terrain, and dynamic elements, used for urban planning, simulation, gaming, and metaverse world-building based on real or imagined cities.",
+  "definition": "A digital representation of an urban environment including buildings, infrastructure, terrain, and dynamic elements, used for urban planning, simulation, gaming, and metaverse world-building based on real or imagined cities. Data standards such as CityGML (OGC), 3D Tiles, and BIM/IFC underpin interoperable city model exchange, while capture techniques including LiDAR scanning and photogrammetry feed real-world geometry into the model.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -59,7 +60,22 @@ public:: true
       "label": "Digital Twin"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:lidar", "label": "Lidar"},
+      {"@id": "urn:ngm:class:photogrammetry", "label": "Photogrammetry"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:digital-twin-technology", "label": "Digital Twin Technology"},
+      {"@id": "urn:ngm:class:metaverse-platform", "label": "Metaverse Platform"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:interoperability-standard", "label": "Interoperability Standard"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -109,6 +125,10 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Digital Twin]]
+  - **uses**: [[Lidar]], [[Photogrammetry]] — real-world city geometry is captured via LiDAR point clouds and photogrammetric reconstruction
+  - **enables**: [[Digital Twin Technology]], [[Metaverse Platform]] — virtual city models serve as the spatial substrate for smart-city digital twins and metaverse environments
+  - **requires**: [[Real-Time Rendering]] — interactive visualisation of city-scale geometry requires optimised rendering pipelines (LOD, streaming, tiling)
+  - **standardizedBy**: [[Interoperability Standard]] — CityGML, 3D Tiles, and IFC are the primary interoperability standards governing data exchange
 
 - ### Content
 

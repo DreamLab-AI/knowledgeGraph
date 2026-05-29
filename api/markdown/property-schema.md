@@ -1,12 +1,18 @@
 - ### Definition
-  - PropertySchema is a concept within the ngm domain.
+  - A formal specification of the object properties, data properties, and annotation properties that relate classes within an ontology, including domain and range constraints, cardinality axioms, and logical characteristics such as transitivity and symmetry. Property schemas are the mechanism by which OWL2 ontologies encode typed, machine-readable relations between entities.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:PropertySchema
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **partOf** [[Ontology]] — a property schema is a constitutive component of every formal ontology
+  - **partOf** [[OWL Class Hierarchy]] — property axioms are declared alongside and inter-relate OWL class hierarchies
+  - **implements** [[Linked Data]] — property schemas realise the typed predicates that link data nodes in RDF graphs
+  - **implements** [[Semantic Web]] — the semantic web depends on agreed property schemas to enable cross-ontology inference
+  - **standardizedBy** [[RDF]] — RDF provides the triple model within which property schemas are instantiated
+  - **enables** [[Knowledge Graph]] — knowledge graphs use property schemas to type and constrain their edges
+  - **enables** [[SPARQL]] — SPARQL queries exploit property schema declarations for pattern matching and inference
 
 - ### Content
   # Metaverse Ontology Property Schema

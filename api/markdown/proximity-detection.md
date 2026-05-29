@@ -1,12 +1,15 @@
 - ### Definition
-  - ProximityDetection is a concept within the ngm domain.
+  - Proximity Detection is the computational process of determining the spatial distance and relative position between entities—users, objects, or agents—within a virtual or physical environment in real time. It underpins collision avoidance, interaction triggering, and context-sensitive content delivery. Implementations range from bounding-volume overlap tests and signed-distance fields in 3D engines to sensor-fusion pipelines combining lidar, ultrasound, and camera inputs.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:ProximityDetection
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires:: [[Sensor Fusion]], [[Collision Detection]]
+  - enables:: [[Collision Avoidance]], [[Presence Detection]]
+  - uses:: [[Lidar]], [[Point Cloud]]
+  - relatedTo:: [[Social Presence]]
 
 - ### Content
   # ProximityDetection

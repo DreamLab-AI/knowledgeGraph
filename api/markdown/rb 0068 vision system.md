@@ -50,20 +50,36 @@ public:: true
   "@id": "urn:ngm:class:rb-0068-vision-system",
   "@type": "Class",
   "label": "rb 0068 vision system",
-  "definition": "vision system is a robotics and autonomous systems concept and a type of Robotics Systems.",
+  "definition": "A robotic vision system is an integrated sensor subsystem that captures and processes visual data—using cameras, depth sensors, or LiDAR—to provide a robot with spatial awareness, object recognition, and scene understanding capabilities. Vision systems underpin tasks including visual servoing, part inspection, SLAM-based localisation, and human-robot interaction, and conform to ISO 8373:2021 perception-system definitions.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-perception",
       "label": "Perception and Sensing"
-    },
-    {
-      "@id": "urn:ngm:class:robotics-systems",
-      "label": "Robotics Systems"
     }
   ],
-  "quality": 0.5,
+  "quality": 0.7,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:rb-0077-depth-camera", "label": "rb 0077 depth camera"},
+      {"@id": "urn:ngm:class:rb-0066-robot-sensor", "label": "rb 0066 robot sensor"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
+      {"@id": "urn:ngm:class:object-detection", "label": "Object Detection"},
+      {"@id": "urn:ngm:class:point-cloud", "label": "Point Cloud"},
+      {"@id": "urn:ngm:class:slam", "label": "SLAM"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:rb-0065-visual-servoing", "label": "rb 0065 visual servoing"},
+      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:rb-0069-lidar", "label": "rb 0069 lidar"},
+      {"@id": "urn:ngm:class:perception-system", "label": "Perception System"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

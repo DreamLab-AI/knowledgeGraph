@@ -1,12 +1,14 @@
 - ### Definition
-  - RobotComponent is a concept within the ngm domain.
+  - A Robot Component is any modular element forming part of a robotic system, encompassing hardware modules (motors, sensors, links, joints), electrical components (power supplies, motor drivers, embedded computers), software components (perception modules, planners, controllers), and interface components (communication protocols, connectors, mounting systems). Standardised interfaces—ISO 9409 tool flanges, EtherCAT, ROS 2—enable plug-and-play integration, reducing development time and supporting modular system design, component reuse, and hierarchical decomposition.
 
 - ### Semantic Classification
   - owl-class:: robotics:RobotComponent
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **hasPart**: Actuator, Sensor Fusion, End Effector
+  - **uses**: Control System
+  - **enables**: Manipulation
 
 - ### Content
   term-id: RB-9025

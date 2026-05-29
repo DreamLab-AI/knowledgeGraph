@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:etsi",
   "domain": "infrastructure",
-  "definition": "ETSI (European Telecommunications Standards Institute) is a not-for-profit organisation that produces globally applicable standards for information and communications technology.",
+  "definition": "ETSI (European Telecommunications Standards Institute) is a not-for-profit, independent standardisation organisation that produces globally applicable standards for information and communications technology, including telecommunications, broadcasting, and electronic signatures. Headquartered in Sophia Antipolis, France, it operates under a unique membership model that grants access to industry, research organisations, and governments worldwide. ETSI standards underpin technologies such as 5G NR, NFV, MEC, and the eIDAS-compliant electronic signature formats (CAdES, XAdES, PAdES).",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-network-and-comms",
@@ -14,20 +14,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:etsi-domain-taxonomy",
+        "label": "ETSI Domain Taxonomy"
+      },
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

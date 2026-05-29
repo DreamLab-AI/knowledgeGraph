@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:hydraulic-cylinder",
   "domain": "robotics",
-  "definition": "Hydraulic cylinder uses pressurized fluid in cylinder to produce linear force.",
+  "definition": "A hydraulic cylinder is a mechanical actuator that converts hydraulic pressure and fluid flow into unidirectional linear force and motion. It consists of a cylindrical barrel, piston, piston rod, end caps, and seals; pressurised fluid acts on the piston face to extend or retract the rod, generating forces from tens of newtons to several meganewtons depending on bore diameter and system pressure. Hydraulic cylinders are foundational components in industrial robots, heavy machinery, manufacturing automation, and construction equipment where high force density and precise position control are required.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
@@ -17,21 +17,79 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:seals",
+        "label": "Seals"
+      },
+      {
+        "id": "urn:ngm:class:pressure-sensor",
+        "label": "Pressure Sensor"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:hydraulic-motor",
+        "label": "Hydraulic Motor"
+      },
+      {
+        "id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:force-control",
+        "label": "Force Control"
+      },
+      {
+        "id": "urn:ngm:class:motion-control",
+        "label": "Motion Control"
+      },
+      {
+        "id": "urn:ngm:class:industrial-robot",
+        "label": "Industrial Robot"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:pneumatic-cylinder",
+        "label": "Pneumatic Cylinder"
+      },
+      {
+        "id": "urn:ngm:class:servo-motor",
+        "label": "Servo Motor"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:pid-control",
+        "label": "PID Control"
+      },
+      {
+        "id": "urn:ngm:class:position-control",
+        "label": "PositionControl"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:robot-joint",
+        "label": "Robot Joint"
+      },
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "IndustrialAutomation"
+      }
+    ]
   },
   "wikilinks": [
     {

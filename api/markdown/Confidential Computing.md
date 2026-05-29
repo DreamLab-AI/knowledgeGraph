@@ -66,16 +66,37 @@ public:: true
   "@id": "urn:ngm:class:confidential-computing",
   "@type": "Class",
   "label": "Confidential Computing",
-  "definition": "Confidential Computing is a hardware-based security paradigm protecting data in use by isolating computation within trusted execution environments (TEEs) backed by processor security extensions, ensuring that sensitive data and code remain encrypted and protected even from privileged software, op...",
+  "definition": "A hardware-based security paradigm that protects data in use by isolating computation within trusted execution environments (TEEs) backed by processor security extensions (Intel SGX, AMD SEV, ARM TrustZone). It extends encryption from data at rest and in transit to data actively being processed, preventing access even by privileged software, hypervisors, or cloud providers. Key AI applications include secure model training, private inference, and TEE-protected federated learning aggregation.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:cat-ai-infrastructure",
+      "@id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure (Category)"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:trusted-execution-environment", "label": "Trusted Execution Environment"},
+      {"@id": "urn:ngm:class:secure-enclave", "label": "Secure Enclave"},
+      {"@id": "urn:ngm:class:hardware-security-module", "label": "Hardware Security Module"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:homomorphic-encryption", "label": "Homomorphic Encryption"},
+      {"@id": "urn:ngm:class:secure-multi-party-computation", "label": "Secure Multi-Party Computation"},
+      {"@id": "urn:ngm:class:differential-privacy", "label": "Differential Privacy"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
+      {"@id": "urn:ngm:class:homomorphic-encryption-for-machine-learning", "label": "Homomorphic Encryption for Machine Learning"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"},
+      {"@id": "urn:ngm:class:data-security", "label": "Data Security"},
+      {"@id": "urn:ngm:class:ai-security", "label": "AI Security"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

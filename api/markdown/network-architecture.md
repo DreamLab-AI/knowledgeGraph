@@ -7,6 +7,12 @@
 
 - ### Relationships
   - is-subclass-of:: ['owl:Thing']
+  - Has Part [[Neural Network Layer]]
+  - Has Part [[Attention Mechanism]]
+  - Implements [[Transformers]]
+  - Implements [[Neural Network]]
+  - Enables [[Deep Learning]]
+  - Related To [[Model Weights]]
 
 - ### Content
 

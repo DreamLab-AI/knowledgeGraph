@@ -50,16 +50,32 @@ public:: true
   "@id": "urn:ngm:class:north-england-innovation-corridor",
   "@type": "Class",
   "label": "North England Innovation Corridor",
-  "definition": "The collaborative innovation corridor spanning Manchester, Leeds, Liverpool, Sheffield, and Newcastle, forming the Northern Powerhouse technology ecosystem.",
+  "definition": "The collaborative technology and innovation ecosystem spanning Manchester, Leeds, Liverpool, Sheffield, and Newcastle that constitutes the Northern Powerhouse. The corridor links world-class research universities, NHS trusts, advanced manufacturing facilities, and digital startups through coordinated investment, shared infrastructure, and regional development frameworks aimed at closing the productivity gap between North and South England.",
   "domain": "infrastructure",
   "maturity": "established",
+  "qualityScore": 0.8,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:manchester-tech-cluster", "label": "Manchester Tech Cluster"},
+      {"@id": "urn:ngm:class:leeds-digital-hub", "label": "Leeds Digital Hub"},
+      {"@id": "urn:ngm:class:sheffield-advanced-manufacturing", "label": "Sheffield Advanced Manufacturing"},
+      {"@id": "urn:ngm:class:liverpool-smart-cities", "label": "Liverpool Smart Cities"},
+      {"@id": "urn:ngm:class:newcastle-ai-and-health-innovation", "label": "Newcastle AI & Health Innovation"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:uk-tech-ecosystem", "label": "UK Tech Ecosystem"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:digital-economy", "label": "Digital Economy"},
+      {"@id": "urn:ngm:class:digital-infrastructure", "label": "Digital Infrastructure"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -105,15 +121,10 @@ public:: true
 
 
 - ### Definition
-  - The collaborative innovation corridor spanning Manchester, Leeds, Liverpool, Sheffield, and Newcastle, forming the Northern Powerhouse technology ecosystem.
-
-- ### Semantic Classification
-  - owl-class:: infrastructure:NorthEnglandInnovationCorridor
-  - owl-role:: RegionalEcosystem
-  - belongs-to-domain:: [[UK Tech Ecosystem]]
+  The collaborative technology and innovation ecosystem spanning Manchester, Leeds, Liverpool, Sheffield, and Newcastle that constitutes the Northern Powerhouse. The corridor links research universities, NHS trusts, advanced manufacturing, and digital startups through coordinated investment and regional development frameworks.
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  The North England Innovation Corridor **has part** Manchester Tech Cluster, Leeds Digital Hub, Sheffield Advanced Manufacturing, Liverpool Smart Cities, and Newcastle AI & Health Innovation as its constituent city-level hubs. It is **part of** the UK Tech Ecosystem. It is **related to** Digital Economy (as its economic context) and Digital Infrastructure (as its enabling substrate).
 
 - ### Content
 

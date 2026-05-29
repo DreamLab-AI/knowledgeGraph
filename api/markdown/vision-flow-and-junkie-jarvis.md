@@ -1,12 +1,14 @@
 - ### Definition
-  - VisionFlow and Junkie Jarvis is a concept within the ngm domain.
+  - VisionFlow is a GPU-accelerated, Rust-backed collaborative platform for real-time 3D knowledge graph visualisation and human-AI agent orchestration on private datasets, integrating Claude Flow MCP for spawning specialised agents. Junkie Jarvis refers to the integrated AI orchestration layer enabling multi-agent task delegation within the VisionFlow environment.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:VisionFlowAndJunkieJarvis
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **Uses**: [[Knowledge Graph]], [[Model Context Protocol]], [[Scene Graph]], [[Physics Simulation]]
+  - **Enables**: [[Agent]] orchestration, [[Knowledge Management]] workflows
+  - **Requires**: [[Authentication]] (Nostr-based decentralised identity), [[Encryption]] (AES-256/TLS 1.3)
 
 - ### Content
   - [[VisionFlow Client]]

@@ -48,7 +48,8 @@ public:: true
   "label": "Symbolic Object Library",
   "definition": "A collection or repository of standardized 3D digital objects, assets, and components designed for use across metaverse platforms, including models, textures, animations, and interactive elements that can be shared and reused in virtual environments.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
@@ -59,7 +60,24 @@ public:: true
       "label": "Digital Asset"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:3-d-model", "label": "3D Model"},
+      {"@id": "urn:ngm:class:3-d-asset", "label": "3D Asset"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:3-d-asset-standard", "label": "3D Asset Standard"},
+      {"@id": "urn:ngm:class:gltf-standard", "label": "Gltf Standard"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:digital-asset-workflow", "label": "Digital Asset Workflow"},
+      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
+      {"@id": "urn:ngm:class:avatar", "label": "Avatar"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -109,6 +127,10 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Digital Asset]]
+  - **hasPart** → [[3D Model]], [[3D Asset]]
+  - **uses** → [[3D Asset Standard]], [[Gltf Standard]]
+  - **enables** → [[Digital Asset Workflow]], [[Interoperability]]
+  - **supports** → [[Digital Twin]], [[Avatar]]
 
 - ### Content
 

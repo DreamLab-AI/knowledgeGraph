@@ -104,7 +104,8 @@ public:: true
   "label": "Data Poisoning",
   "definition": "A training-time adversarial attack where malicious actors inject, modify, or manipulate training data to compromise model integrity, causing targeted misclassifications, backdoor triggers, or general performance degradation.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
@@ -115,7 +116,20 @@ public:: true
       "label": "Adversarial Attack"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
+      {"@id": "urn:ngm:class:model-training", "label": "Model Training"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:adversarial-robustness", "label": "Adversarial Robustness"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:data-augmentation-strategies", "label": "Data Augmentation Strategies"},
+      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -234,7 +248,9 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires**: Training Data, Model Training (the attack operates on training data during the training process)
+  - **contrastsWith**: Adversarial Robustness (robustness techniques are the defensive response to poisoning)
+  - **relatedTo**: Data Augmentation Strategies, Federated Learning, Machine Learning (augmentation can mask poisoning; federated learning faces distributed poisoning risks; machine learning is the broader affected domain)
 
 - ### Content
   - A training-time adversarial attack where malicious actors inject, modify, or manipulate training data to compromise model integrity, causing targeted misclassifications, backdoor triggers, or general performance degradation.

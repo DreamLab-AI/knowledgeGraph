@@ -42,9 +42,10 @@ public:: true
   "@id": "urn:ngm:class:swarm-robot",
   "@type": "Class",
   "label": "Swarm Robot",
-  "definition": "Swarm Robot is a robotics and autonomous systems concept and a type of Autonomous Robot.",
+  "definition": "A Swarm Robot is a member of a multi-agent robotic system in which large numbers of simple, decentralised agents coordinate through local interactions to achieve complex collective behaviours without centralised control. Drawing from biological models such as ant colonies and flocking birds, swarm robotics enables robustness through redundancy, scalability, and emergent task execution across domains including environmental monitoring, logistics, and disaster response.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-robot-type",
@@ -55,7 +56,23 @@ public:: true
       "label": "Autonomous Robot"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:decentralized-swarm-control", "label": "Decentralized Swarm Control"},
+      {"@id": "urn:ngm:class:multi-agent-systems", "label": "Multi-Agent Systems"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:swarm-robotics", "label": "Swarm Robotics"},
+      {"@id": "urn:ngm:class:collective-intelligence-system", "label": "Collective Intelligence System"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:centralized-swarm-control", "label": "Centralized Swarm Control"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:robo-navigation-and-planning", "label": "Navigation and Planning"},
+      {"@id": "urn:ngm:class:robo-safety-and-standards", "label": "Safety and Standards"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -91,7 +108,7 @@ public:: true
 
 
 - ### Definition
-  - ### Primary Definition
+  - A Swarm Robot is a member of a multi-agent robotic system in which large numbers of simple, decentralised agents coordinate through local interactions to achieve complex collective behaviours without centralised control. Drawing from biological models such as ant colonies and flocking birds, swarm robotics enables robustness through redundancy, scalability, and emergent task execution across domains including environmental monitoring, logistics, and disaster response.
 
 - ### Semantic Classification
   - owl-class:: robotics:rb0020swarmrobot
@@ -99,7 +116,10 @@ public:: true
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses:: Decentralized Swarm Control, Multi-Agent Systems
+  - hasPart:: Swarm Robotics, Collective Intelligence System
+  - contrastsWith:: Centralized Swarm Control
+  - relatedTo:: Navigation and Planning, Safety and Standards
 
 - ### Content
   - ### Primary Definition

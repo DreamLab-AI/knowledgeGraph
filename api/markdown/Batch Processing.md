@@ -46,24 +46,54 @@ public:: true
   "@id": "urn:ngm:class:batch-processing",
   "@type": "Class",
   "label": "Batch Processing",
-  "definition": "Batch Processing is a artificial intelligence concept and a type of Processing Model.",
+  "definition": "A computational paradigm in which jobs are accumulated and executed as a group rather than individually in real-time. Batch processing optimises throughput by amortising fixed overhead across many records, enabling efficient ETL pipelines, model training over large datasets, report generation, and vulnerability scanning. Scheduling may be time-based, event-triggered, or dependency-driven.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:cat-ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
+      "@id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure"
     },
     {
       "@id": "urn:ngm:class:processing-model",
       "label": "Processing Model"
     }
   ],
-  "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:batch-normalisation",
+        "label": "Batch Normalisation"
+      },
+      {
+        "@id": "urn:ngm:class:batch-size",
+        "label": "Batch Size"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:machine-learning-pipeline",
+        "label": "Machine Learning Pipeline"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:inference",
+        "label": "Inference"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      }
+    ]
   }
 }
 ```
@@ -108,7 +138,12 @@ public:: true
   - belongs-to-domain:: [[Core Technology]]
 
 - ### Relationships
-  - is-subclass-of:: [[Processing Model]]
+  - is-subclass-of:: Processing Model
+  - Enables [[Machine Learning Pipeline]]
+  - Uses [[AI Infrastructure]]
+  - Has Part [[Batch Normalisation]]
+  - Has Part [[Batch Size]]
+  - Contrasts With [[Inference]]
 
 - ### Content
 

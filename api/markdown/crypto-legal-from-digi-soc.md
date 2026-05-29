@@ -6,7 +6,10 @@
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires**: Blockchain, Digital Asset (legal frameworks are predicated on these technical objects)
+  - **relatedTo**: AI Regulation, Data Governance (regulatory family to which crypto law belongs)
+  - **contrastsWith**: Digital Commerce (crypto legal constraints shape but differ from conventional e-commerce law)
+  - **supports**: Verifiable Credentials (legal recognition of cryptographic identity instruments)
 
   - bridges-to:: [[Blockchain]] (bc)
 - ### Content

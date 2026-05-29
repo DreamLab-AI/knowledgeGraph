@@ -1,5 +1,5 @@
 - ### Definition
-  - Lightning and Similar L2 is a concept within the ngm domain.
+  - Off-chain payment channel networks and related Layer-2 scaling protocols built atop base-layer blockchains, enabling high-throughput, low-latency micropayments without recording every transaction on-chain. The Lightning Network, state channels, and analogous protocols route value through cryptographically secured payment channels, dramatically improving transaction throughput and cost-efficiency for Bitcoin and similar networks.
 
 - ### Semantic Classification
   - owl-class:: blockchain:LightningAndSimilarL2
@@ -7,7 +7,13 @@
   - belongs-to-domain:: [[Bitcoin Domain]], [[Layer 2]], [[Payment Protocols]], [[Scaling Solutions]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Blockchain Protocol]]
+  - requires [[Consensus Mechanism]]
+  - enables [[Micropayments]]
+  - enables [[Blockchain Scalability]]
+  - relatedTo [[Lightning Network]]
+  - relatedTo [[Smart Contract]]
+  - relatedTo [[State Channel]]
 
 - ### Content
   - #Public page automatically published

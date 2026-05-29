@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:uk-ai-safety-institute",
   "domain": "artificial-intelligence",
-  "definition": "A UK government body established to evaluate the safety of frontier AI models, conduct research into AI risks, and coordinate international AI safety evaluations.",
+  "definition": "The UK AI Safety Institute (AISI) is a UK government body established to evaluate the safety properties of frontier AI models before and after deployment, conduct research into emergent AI risks including deceptive alignment and capability elicitation, and coordinate with international counterparts\u2014notably the US AI Safety Institute\u2014on shared evaluation methodologies. It operates Inspect, an open-source AI evaluation framework, and publishes model evaluation results to inform regulatory and procurement decisions. The AISI sits within the Department for Science, Innovation and Technology and maintains close links with the Frontier Model Forum.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-evaluation-results",
+        "label": "Model Evaluation Results"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety-research",
+        "label": "AI Safety Research"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
+      },
+      {
+        "id": "urn:ngm:class:frontier-model-forum",
+        "label": "Frontier Model Forum"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

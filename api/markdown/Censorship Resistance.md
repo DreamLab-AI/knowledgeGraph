@@ -66,7 +66,7 @@ public:: true
   "@id": "urn:ngm:class:censorship-resistance",
   "@type": "Class",
   "label": "Censorship Resistance",
-  "definition": "Transaction inclusion guarantee within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "Property of blockchain networks guaranteeing that any valid transaction submitted by any participant will eventually be included in the canonical chain, preventing miners, validators, or any coordinated group from systematically excluding transactions. Achieved through decentralised consensus, permissionless participation, and economic incentive alignment.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -83,7 +83,25 @@ public:: true
       "label": "NetworkComponent"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"},
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
+      {"@id": "urn:ngm:class:sybil-resistance", "label": "Sybil Resistance"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:peer-discovery", "label": "Peer Discovery"},
+      {"@id": "urn:ngm:class:fork-choice-rule", "label": "Fork Choice Rule"},
+      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"},
+      {"@id": "urn:ngm:class:double-spending", "label": "Double Spending"},
+      {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:immutability", "label": "Immutability"},
+      {"@id": "urn:ngm:class:decentralized-governance", "label": "Decentralized Governance"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

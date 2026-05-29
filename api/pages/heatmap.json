@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:heatmap",
   "domain": "infrastructure",
-  "definition": "heatmap is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A heatmap is a data visualisation technique that encodes numerical values as colour intensities in a two-dimensional matrix, allowing rapid visual comparison of magnitudes across categorical dimensions. In the context of AI risk and impact analysis, heatmaps are used to compare urgency, impact, and composite severity scores across AI risk categories (such as security risks, algorithmic bias, job automation, and AI ethics), guiding prioritisation for governance and regulation. Heatmaps are typically rendered with colour-scheme gradients (e.g., Vega-Lite's blues scheme) and can be embedded directly in knowledge-graph pages for interactive analysis.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-software-engineering",
@@ -13,8 +13,8 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,11 +23,50 @@
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:data-visualisation",
+        "label": "Data Visualisation"
+      },
+      {
+        "id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "id": "urn:ngm:class:visualization-layer",
+        "label": "Visualization Layer"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-risk",
+        "label": "AI Risk"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-bias",
+        "label": "Algorithmic Bias"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": []

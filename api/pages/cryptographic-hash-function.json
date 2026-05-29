@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:cryptographic-hash-function",
   "domain": "blockchain",
-  "definition": "A Cryptographic Hash Function is a deterministic algorithm that maps arbitrary-length input data to a fixed-length digest such that it is computationally infeasible to reverse the mapping or find collisions.",
+  "definition": "A Cryptographic Hash Function is a deterministic algorithm that maps arbitrary-length input data to a fixed-length output digest of fixed size, such that it is computationally infeasible to reverse the mapping, find two inputs producing the same digest (collision resistance), or derive the input from the digest alone (preimage resistance). Hash functions such as SHA-256 and Keccak-256 underpin blockchain data integrity, Merkle tree construction, and digital signature schemes. They are a foundational primitive for proof-of-work consensus, address derivation, and commitment schemes across distributed ledger systems.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-cryptographic-primitive",
@@ -14,11 +14,29 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:collision-resistance",
+        "label": "Collision Resistance"
+      },
+      {
+        "id": "urn:ngm:class:preimage-resistance",
+        "label": "Preimage Resistance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +45,16 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:sha-256",
+        "label": "SHA-256"
+      },
+      {
+        "id": "urn:ngm:class:keccak-256",
+        "label": "Keccak-256"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

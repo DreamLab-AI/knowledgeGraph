@@ -58,16 +58,33 @@ public:: true
   "@id": "urn:ngm:class:model-depth",
   "@type": "Class",
   "label": "Model Depth",
-  "definition": "The number of transformer layers (encoder and/or decoder) stacked in a model, determining the number of sequential transformations applied to representations.",
+  "definition": "The count of stacked transformer layers (encoder, decoder, or both) in a neural network, governing the number of sequential representation transformations. Greater depth enables more abstract hierarchical feature learning but increases training difficulty, requiring residual connections and layer normalisation to stabilise gradient flow.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:model-width", "label": "Model Width"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:residual-connection", "label": "Residual Connection"},
+      {"@id": "urn:ngm:class:layer-normalisation", "label": "Layer Normalisation"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
+      {"@id": "urn:ngm:class:hyperparameter", "label": "Hyperparameter"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:parameter-count", "label": "Parameter Count"},
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -131,7 +148,13 @@ public:: true
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **contrastsWith** [[Model Width]] — depth (layer count) and width (hidden dimension) are the two primary scaling axes
+  - **requires** [[Residual Connection]] — skip connections are essential to train very deep networks stably
+  - **requires** [[Layer Normalisation]] — normalisation at each layer prevents gradient vanishing in depth
+  - **dependsOn** [[Transformer]] — transformer architecture defines the repeatable layer unit that depth counts
+  - **dependsOn** [[Hyperparameter]] — depth is a hyperparameter set prior to training
+  - **relatedTo** [[Parameter Count]] — depth linearly increases total parameter count for fixed width
+  - **relatedTo** [[Deep Learning]] — depth is the defining structural property of deep learning architectures
 
 - ### Content
   - The number of transformer layers (encoder and/or decoder) stacked in a model, determining the number of sequential transformations applied to representations.

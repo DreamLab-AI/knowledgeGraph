@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:placing-on-the-market",
   "domain": "spatial-computing",
-  "definition": "The first making available of an AI system on the Union market.",
+  "definition": "The first making available of an AI system or general-purpose AI model on the EU Union market, as defined in EU AI Act Article 3(12). This act triggers the full set of provider obligations under the Act, including risk management, technical documentation, conformity assessment, CE marking, and post-market monitoring, and applies regardless of whether the system is offered for payment or free of charge.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-governance-and-safety",
@@ -13,12 +13,34 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:conformity-assessment",
+        "label": "Conformity Assessment"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:market-surveillance-authority",
+        "label": "Market Surveillance Authority"
+      },
+      {
+        "id": "urn:ngm:class:deployer",
+        "label": "Deployer"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +49,20 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:provider",
+        "label": "Provider"
+      },
+      {
+        "id": "urn:ngm:class:importer",
+        "label": "Importer"
+      },
+      {
+        "id": "urn:ngm:class:high-risk-ai-system",
+        "label": "High Risk AI System"
+      }
+    ]
   },
   "wikilinks": [
     {

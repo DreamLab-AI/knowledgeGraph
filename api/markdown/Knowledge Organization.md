@@ -42,9 +42,10 @@ public:: true
   "@id": "urn:ngm:class:knowledge-organization",
   "@type": "Class",
   "label": "Knowledge Organization",
-  "definition": "Knowledge Organization is a type of Artificial Intelligence in the artificial intelligence domain.",
+  "definition": "The systematic arrangement, classification, and representation of knowledge structures so that information can be discovered, related, and reasoned over. Knowledge organization encompasses taxonomies, thesauri, ontologies, and knowledge graphs, and underpins semantic search, question answering, and AI knowledge-base construction.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-research-area",
@@ -56,6 +57,38 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "@id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-organization-system",
+        "label": "Knowledge Organization System"
+      }
+    ]
   }
 }
 ```
@@ -87,14 +120,19 @@ public:: true
 
 
 - ### Definition
-  - Knowledge Organization is a concept within the metaverse domain. Further enrichment pending.
+  - The systematic arrangement, classification, and representation of knowledge structures so that information can be discovered, related, and reasoned over. Knowledge organization encompasses taxonomies, thesauri, ontologies, and knowledge graphs, and underpins semantic search, question answering, and AI knowledge-base construction.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:KnowledgeOrganization
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses [[Ontology]]
+  - Uses [[Knowledge Graph]]
+  - Enables [[Knowledge Representation]]
+  - Enables [[Information Retrieval]]
+  - Related To [[Linked Data]]
+  - Related To [[Knowledge Organization System]]
 
 - ### Content
 

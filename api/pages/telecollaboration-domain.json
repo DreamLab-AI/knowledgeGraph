@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:telecollaboration-domain",
   "domain": "distributed-collaboration",
-  "definition": "\"The domain of knowledge encompassing technology-mediated collaboration, distributed teamwork, remote presence systems, and virtual cooperation platforms enabling humans to work toger effectively across geographical and temporal boundaries.\"",
+  "definition": "The Telecollaboration Domain is the top-level knowledge domain encompassing technology-mediated collaboration, distributed teamwork, remote presence systems, and virtual cooperation platforms. It integrates synchronous and asynchronous collaboration modalities, telepresence technologies, and cross-domain bridges to AI, blockchain, metaverse, and robotics to enable effective human cooperation across geographical and temporal boundaries.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:dc-protocol-and-infra",
@@ -17,12 +17,55 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:asynchronous-collaboration",
+        "label": "Asynchronous Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:collaboration-platform",
+        "label": "Collaboration Platform"
+      },
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:dao-governance-for-telecollaboration",
+        "label": "DAO Governance for Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-collaboration",
+        "label": "Blockchain Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality-collaboration",
+        "label": "Augmented Reality Collaboration"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:collaboration-technology",
+        "label": "Collaboration Technology"
+      },
+      {
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-twin-collaboration",
+        "label": "Digital Twin Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract-coordination",
+        "label": "Smart Contract Coordination"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -31,7 +74,16 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      }
+    ]
   },
   "wikilinks": [
     {

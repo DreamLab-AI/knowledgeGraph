@@ -5,37 +5,70 @@
   "public": true,
   "classIri": "urn:ngm:class:salt",
   "domain": "blockchain",
-  "definition": "Random data for hash uniqueness within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "A Salt is a randomly generated value appended or prepended to input data before it is processed by a cryptographic hash function, ensuring that two identical inputs produce distinct hash outputs. Salts defeat precomputed dictionary and rainbow-table attacks on hashed credentials and commitments by making each hash unique even when the underlying plaintext is shared. In blockchain contexts, salts appear in commitment schemes, zero-knowledge proofs, and password-based key derivation functions, where they guarantee that a hash reveals no information about the original value to an observer who does not know the salt.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:bc-cryptographic-primitive",
-      "label": "Cryptographic Primitive"
-    },
-    {
-      "id": "urn:ngm:class:blockchain-entity",
-      "label": "Blockchain Entity"
-    },
-    {
       "id": "urn:ngm:class:cryptographic-primitive",
-      "label": "CryptographicPrimitive"
+      "label": "Cryptographic Primitive"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cryptographic-verification",
+        "label": "Cryptographic Verification"
+      },
+      {
+        "id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:nonce",
+        "label": "Nonce"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-commitment",
+        "label": "Cryptographic Commitment"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-keys",
+        "label": "Cryptographic Keys"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-security",
+        "label": "Cryptographic Security"
+      }
+    ]
   },
   "wikilinks": [
     {

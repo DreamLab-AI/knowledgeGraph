@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:national-industrial-centre-for-virtual-environments",
   "domain": "spatial-computing",
-  "definition": "National Industrial Centre for Virtual Environments is a spatial computing concept and a type of spatial-computing.",
+  "definition": "A UK academic research centre active in the late 1990s and 2000s, based at the University of Salford, that advanced industrial applications of virtual reality including CAVE systems, immersive workbenches, and telepresence. NICVE succeeded the National Advanced Robotics Research Centre and produced early foundational work in multi-user virtual environments and real-time rendering on SGI hardware.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -13,17 +13,49 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:immersive-technology",
+        "label": "Immersive Technology"
+      },
+      {
+        "id": "urn:ngm:class:multi-user-systems",
+        "label": "Multi User Systems"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:rendering-engine",
+        "label": "Rendering Engine"
+      },
+      {
+        "id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:attention-mechanism",
   "domain": "artificial-intelligence",
-  "definition": "Attention Mechanism is a artificial intelligence concept and a type of Neural Network Component.",
+  "definition": "An Attention Mechanism is a neural network component that enables models to dynamically weight the relevance of different input positions when producing each output element, computing weighted combinations based on learned similarity scores. Originally introduced for sequence-to-sequence machine translation, self-attention and multi-head attention are now the core computational primitives of transformer architectures, enabling parallel processing of sequences and capturing long-range dependencies that recurrent models struggle with.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-model-architecture",
@@ -18,20 +18,44 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      }
+    ]
   },
   "wikilinks": [
     {

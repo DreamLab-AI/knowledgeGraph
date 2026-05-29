@@ -1,12 +1,14 @@
 - ### Definition
-  - AI Defence Doc is a concept within the ngm domain.
+  - A curated reference document aggregating empirical evidence countering common objections to AI capability and originality claims, compiling benchmarks, research findings, and expert commentary demonstrating that large language models exhibit reasoning, world-model construction, and generalisation beyond stochastic pattern matching. Serves as an evidence base for constructive discourse on AI capabilities and societal implications.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:AIDefenceDoc
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - supports:: [[Responsible AI]], [[AI Safety]]
+  - relatedTo:: [[Large Language Models]], [[AI Alignment]], [[Generative AI]]
+  - enables:: [[AI Ethics]], [[Explainability]]
 
 - ### Content
   - [AI Defense Doc (google.com)](https://docs.google.com/document/u/0/d/15myK_6eTxEPuKnDi5krjBM_0jrv3GELs8TGmqOYBvug/mobilebasic#h.gboye8hkf0r8)  << from here

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:national-competent-authority",
   "domain": "infrastructure",
-  "definition": "A notifying authority, a market surveillance authority, or any other authority designated by a Member State to supervise the application and implementation of the AI Act, including national data protection authorities where relevant.",
+  "definition": "A body designated by an EU Member State under the AI Act \u2014 encompassing market surveillance authorities, notifying authorities, and data protection authorities \u2014 responsible for supervising provider and deployer compliance with the Act's requirements, enforcing penalties, and coordinating with the AI Office on cross-border and GPAI model matters.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-legal-and-regulatory",
@@ -17,18 +17,50 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [],
-    "dependsOn": [],
-    "implements": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:market-surveillance-authority",
+        "label": "Market Surveillance Authority"
+      },
+      {
+        "id": "urn:ngm:class:notified-body",
+        "label": "Notified Body"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-office",
+        "label": "AI Office"
+      },
+      {
+        "id": "urn:ngm:class:conformity-assessment",
+        "label": "Conformity Assessment"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": []

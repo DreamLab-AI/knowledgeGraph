@@ -42,9 +42,9 @@ public:: true
   "@id": "urn:ngm:class:user-safety",
   "@type": "Class",
   "label": "User Safety",
-  "definition": "User Safety is a type of Metaverse and Spatial Risks in the spatial computing domain.",
+  "definition": "User Safety in spatial computing and metaverse environments encompasses the technical, policy, and design measures that protect participants from harm including harassment, predatory behaviour, physical discomfort from extended immersive use, and unwanted exposure to harmful content. Because interactions in the metaverse occur in real-time and within spatially embodied contexts, abusive behaviour resembles physical-world harm more closely than conventional social media, demanding proactive moderation, privacy-preserving reporting mechanisms, and platform-level governance frameworks.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
@@ -55,6 +55,20 @@ public:: true
       "label": "Metaverse and Spatial Risks"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:content-moderation", "label": "Content Moderation"},
+      {"@id": "urn:ngm:class:privacy", "label": "Privacy"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:governance-framework", "label": "Governance Framework"},
+      {"@id": "urn:ngm:class:metaverse-safety-protocol", "label": "Metaverse Safety Protocol"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:digital-rights", "label": "Digital Rights"},
+      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -91,23 +105,25 @@ public:: true
 
 
 - ### Definition
-  - User Safety is a concept within the metaverse domain. Further enrichment pending.
+  - User Safety in spatial computing and metaverse environments encompasses the technical, policy, and design measures that protect participants from harm including harassment, predatory behaviour, physical discomfort from extended immersive use, and unwanted exposure to harmful content. Because interactions in the metaverse occur in real-time and within spatially embodied contexts, abusive behaviour resembles physical-world harm more closely than conventional social media, demanding proactive moderation, privacy-preserving reporting mechanisms, and platform-level governance frameworks.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:UserSafety
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Content Moderation]]
+  - requires [[Privacy]]
+  - supports [[Governance Framework]]
+  - supports [[Metaverse Safety Protocol]]
+  - relatedTo [[Digital Rights]]
+  - relatedTo [[Risk Management]]
 
 - ### Content
 
   ## Overview
 
-  User Safety represents an abstract concept in the metaverse ontology hierarchy.
-
-  #### Related Concepts
-  - [[owl:Thing]]
+  User Safety in the metaverse is fundamentally different from online safety in traditional web contexts because spatial embodiment intensifies the experience of harm. Verbal abuse delivered through a spatial audio channel at close proximity, or unwanted avatar contact, can produce reactions comparable to physical-world harassment. Key technical mitigations include privacy-preserving speech-to-text monitoring, encrypted attestation for abuse reports, and reputation systems built on zero-knowledge proofs that allow patterns of harmful behaviour to be flagged without exposing personal data. Policy mitigations include clear platform codes of conduct, graduated enforcement mechanisms, and mandatory age verification for certain content types. The UK Online Safety Act represents an early legislative framework addressing metaverse-specific harms, requiring platforms to implement proactive duty-of-care obligations. Effective user safety design must balance protection against harm with the preservation of legitimate free expression and user privacy.
 
 - ### Provenance
   - sources::

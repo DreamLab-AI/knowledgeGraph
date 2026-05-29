@@ -46,7 +46,7 @@ public:: true
   "@id": "urn:ngm:class:neural-network-architecture",
   "@type": "Class",
   "label": "Neural Network Architecture",
-  "definition": "Neural network architecture defines the structural organization of artificial neurons into layers and the connectivity patterns between them, determining how the network processes and transforms input data through weighted connections and activation functions.",
+  "definition": "Neural network architecture defines the structural organisation of artificial neurons into layers and the connectivity patterns between them, determining how a network processes and transforms input data through weighted connections and activation functions. Different architectural families — feedforward, convolutional, recurrent, and transformer — embody distinct inductive biases suited to different data modalities and task types. Architectural choices govern capacity, training stability, and generalisation.",
   "domain": "artificial-intelligence",
   "maturity": "emerging",
   "subClassOf": [
@@ -55,11 +55,41 @@ public:: true
       "label": "AI Model Architecture"
     }
   ],
-  "quality": 0.35,
+  "quality": 0.75,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
+      {"@id": "urn:ngm:class:recurrent-neural-network", "label": "Recurrent Neural Network"},
+      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
+      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},
+      {"@id": "urn:ngm:class:activation-function", "label": "Activation Function"},
+      {"@id": "urn:ngm:class:dropout", "label": "Dropout"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"},
+      {"@id": "urn:ngm:class:loss-function", "label": "Loss Function"},
+      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
+      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:hyperparameter", "label": "Hyperparameter"},
+      {"@id": "urn:ngm:class:model-training", "label": "Model Training"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:generative-adversarial-network", "label": "Generative Adversarial Network"},
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+    ]
   }
 }
 ```

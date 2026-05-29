@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:neural-rendering",
   "domain": "distributed-collaboration",
-  "definition": "Neural Rendering is a type of Distributed Collaboration in the distributed collaboration domain.",
+  "definition": "Neural Rendering combines deep neural networks with classical rendering pipelines to synthesise photorealistic images of 3D scenes from novel viewpoints. Techniques such as Neural Radiance Fields (NeRF) represent scenes as continuous volumetric functions enabling high-fidelity view synthesis from sparse image collections. Neural rendering underpins photorealistic telepresence, 3D asset generation, and immersive environment reconstruction for spatial computing applications.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:dc-telepresence",
@@ -14,20 +14,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:neural-radiance-field",
+        "label": "Neural Radiance Field"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:computer-graphics",
+        "label": "Computer Graphics"
+      }
+    ]
   },
   "wikilinks": [
     {

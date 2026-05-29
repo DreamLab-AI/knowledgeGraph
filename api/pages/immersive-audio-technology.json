@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:immersive-audio-technology",
   "domain": "spatial-computing",
-  "definition": "Immersive Audio Technology is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Technologies and techniques for rendering spatially accurate, three-dimensional soundscapes within virtual and augmented reality environments. Encompasses binaural rendering, ambisonics, head-related transfer function (HRTF) personalisation, and real-time positional audio to create convincing auditory presence that reinforces visual immersion.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-display-and-rendering",
@@ -13,18 +13,54 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:xr-runtime-environment",
+        "label": "XR Runtime Environment"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "id": "urn:ngm:class:virtual-theater",
+        "label": "Virtual Theater"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      },
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": []

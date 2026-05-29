@@ -66,7 +66,7 @@ public:: true
   "@id": "urn:ngm:class:mempool",
   "@type": "Class",
   "label": "Mempool",
-  "definition": "Memory pool of pending transactions within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "The memory pool maintained by each blockchain node holding broadcast but as-yet unconfirmed transactions awaiting inclusion in a block. Miners select transactions from the mempool, typically prioritising by fee rate, while node operators use mempool policies to manage capacity and mitigate spam.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -83,7 +83,25 @@ public:: true
       "label": "DistributedDataStructure"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:transaction-pool", "label": "Transaction Pool"},
+      {"@id": "urn:ngm:class:transaction", "label": "Transaction"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"},
+      {"@id": "urn:ngm:class:fee-market", "label": "Fee Market"},
+      {"@id": "urn:ngm:class:transaction-fee", "label": "Transaction Fee"},
+      {"@id": "urn:ngm:class:block-size", "label": "Block Size"},
+      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
+      {"@id": "urn:ngm:class:mining-pool", "label": "Mining Pool"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:transaction-confirmation", "label": "Transaction Confirmation"},
+      {"@id": "urn:ngm:class:transaction-processing", "label": "Transaction Processing"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

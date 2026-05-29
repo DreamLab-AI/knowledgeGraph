@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:digital-entertainment",
   "domain": "spatial-computing",
-  "definition": "Digital Entertainment is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Digital Entertainment encompasses interactive and passive media experiences delivered through digital platforms, including video games, streaming services, virtual concerts, and immersive XR content. Within the metaverse context, digital entertainment drives user engagement and economic activity, often integrating blockchain-based ownership of digital assets and in-world economies.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:metaverse-application",
+        "label": "Metaverse Application"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:game-development",
+        "label": "Game Development"
+      },
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      }
+    ]
   },
   "wikilinks": [
     {

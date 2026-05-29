@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:online-identity",
   "domain": "infrastructure",
-  "definition": "Online Identity is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "The digital representation and persistent persona that an individual constructs and maintains across online platforms and virtual environments, encompassing usernames, avatars, credentials, reputation data, and linked digital assets. Online identity management raises questions of authentication, portability, privacy, and the mapping between real-world and digital personas.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-security-and-identity",
@@ -13,13 +13,32 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:reputation-system",
+        "label": "Reputation System"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
@@ -27,7 +46,20 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": []

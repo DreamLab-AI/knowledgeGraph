@@ -6,7 +6,9 @@
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: [[Light field]], [[XR Hardware]]
+  - **enables**: [[Augmented Reality]], [[Mixed Reality]]
+  - **relatedTo**: [[Virtual Reality]], [[XR Device]]
 
 - ### Content
   - [[Light field]]

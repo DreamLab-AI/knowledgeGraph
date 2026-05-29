@@ -7,7 +7,10 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses [[Gradient Descent]], [[Training]]
+  - Requires [[Machine Learning]], [[Deep Learning]]
+  - Enables [[Training and fine tuning]]
+  - Related to [[Neural Network]], [[Machine Learning Framework]]
 
 - ### Content
   - A strategy for adjusting the learning rate during training according to a predefined or adaptive schedule. Learning rate schedules improve convergence and final performance by using higher rates early for rapid progress and lower rates later for fine-tuning.

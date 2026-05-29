@@ -1,5 +1,5 @@
 - ### Definition
-  - **Robot Sensor** - Robot Sensor in robotics systems
+  - A Robot Sensor is a transducer or measurement device integrated into a robotic system to acquire data about the robot's internal state (proprioception: joint angles, torques, currents) or external environment (exteroception: proximity, force, vision, lidar). Sensor data drives closed-loop control, obstacle avoidance, and higher-level perception pipelines.
 
 - ### Semantic Classification
   - owl-class:: robotics:RobotSensor
@@ -7,7 +7,12 @@
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - is-subclass-of:: [[Robotics]]
+  - Part of [[Robotics]] as the perceptual front end of any robotic system
+  - Enables [[Sensor Fusion]] by providing raw measurement streams
+  - Enables [[SLAM]] through range and odometry data
+  - Uses [[Signal Processing]] for filtering and feature extraction
+  - Related to [[Lidar]] as a common exteroceptive sensor modality
+  - Related to [[Control System]] which consumes sensor feedback for actuation
 
 - ### Content
   - ### Original Content

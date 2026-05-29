@@ -58,9 +58,10 @@ public:: true
   "@id": "urn:ngm:class:ai-incident",
   "@type": "Class",
   "label": "AI Incident",
-  "definition": "An event involving an AI system that causes or has the potential to cause harm to individuals, property, environment, or fundamental rights, including malfunctions, security breaches, bias-driven discrimination, privacy violations, or unintended consequences requiring investigation and remediation.",
+  "definition": "An event in which an AI system causes or has the potential to cause harm to individuals, property, the environment, or fundamental rights, encompassing technical failures, security breaches, bias-driven discrimination, privacy violations, and unintended consequences. Under the EU AI Act Article 72, serious incidents must be reported to national competent authorities within 15 days; structured incident taxonomies and response protocols (detection, containment, investigation, remediation) are codified in ISO/IEC 23894:2023.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
@@ -71,6 +72,21 @@ public:: true
       "label": "AI Risk"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:ai-risk-management", "label": "AI Risk Management"},
+      {"@id": "urn:ngm:class:accountability", "label": "Accountability"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
+      {"@id": "urn:ngm:class:bias", "label": "Bias"},
+      {"@id": "urn:ngm:class:eu-ai-act", "label": "EU AI Act"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -135,7 +151,9 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - bridges-to:: [[AI Agent System]]
+  - requires:: [[AI Risk Management]], [[Accountability]]
+  - relatedTo:: [[AI Safety]], [[Bias]], [[EU AI Act]]
+  - enables:: [[Responsible AI]], [[AI Governance]]
 
 - ### Content
   - An event involving an AI system that causes or has the potential to cause harm to individuals, property, environment, or fundamental rights, including malfunctions, security breaches, bias-driven discrimination, privacy violations, or unintended consequences requiring investigation and remediation.

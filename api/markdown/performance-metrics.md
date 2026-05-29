@@ -6,7 +6,11 @@
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - supports:: [[Machine Learning Pipeline]]
+  - supports:: [[Monitoring Dashboard]]
+  - relatedTo:: [[Latency]]
+  - relatedTo:: [[Model Evaluation Results]]
+  - uses:: [[Performance Benchmarks]]
 
 - ### Content
   # PerformanceMetrics

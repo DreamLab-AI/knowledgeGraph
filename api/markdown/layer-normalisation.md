@@ -1,5 +1,5 @@
 - ### Definition
-  - A normalisation technique that normalises activations across the feature dimension for each example independently, stabilising deep network training.
+  - A normalisation technique that computes mean and variance across the feature dimension for each training example independently, then rescales activations using learnable scale and shift parameters. Unlike batch normalisation, layer normalisation is invariant to batch size, making it the standard choice for transformer and recurrent architectures where sequence lengths vary.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:LayerNormalisation
@@ -7,7 +7,12 @@
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Part Of: [[Transformer Architecture]]
+  - Enables: [[Deep Learning]]
+  - Contrasts With: [[Batch Normalisation]]
+  - Related To: [[Residual Connection]]
+  - Related To: [[Feed Forward Network]]
+  - Related To: [[Attention Mechanism]]
 
 - ### Content
   - A normalisation technique that normalises activations across the feature dimension for each example independently, stabilising deep network training.

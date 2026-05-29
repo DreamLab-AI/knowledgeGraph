@@ -7,7 +7,12 @@
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses [[Physics Engine]]
+  - uses [[Machine Learning]]
+  - uses [[Simulation]]
+  - enables [[Teleoperation]]
+  - relatedTo [[Reinforcement Learning]]
+  - relatedTo [[Haptic Feedback]]
 
 - ### Content
   - Robotics discipline employing compliant, flexible materials enabling safe human interaction and adaptation to unstructured environments. Applications span surgical robotics, food handling automation, wearable assistive devices, and collaborative manufacturing, advancing through bio-inspired design, soft actuation, and machine learning control. Soft robotics enables robots to handle delicate objects without damage whilst providing inherent safety in close human collaboration environments, complementing rigid industrial robots.

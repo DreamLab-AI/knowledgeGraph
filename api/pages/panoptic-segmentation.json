@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:panoptic-segmentation",
   "domain": "spatial-computing",
-  "definition": "Panoptic Segmentation unifies semantic segmentation and instance segmentation by assigning every pixel both a class label and an instance ID, providing a complete scene understanding with \"thing\" classes (countable objects) and \"stuff\" classes (amorphous regions).",
+  "definition": "A computer vision task that unifies semantic segmentation and instance segmentation by assigning every image pixel both a class label and an instance identifier, providing holistic scene parsing that distinguishes countable foreground objects (\"things\") from amorphous background regions (\"stuff\"). Architectures such as Panoptic FPN, Panoptic-DeepLab, and MaskFormer formalise this unified representation.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-interaction",
@@ -14,11 +14,30 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:instance-segmentation",
+        "label": "Instance Segmentation"
+      },
+      {
+        "id": "urn:ngm:class:semantic-segmentation",
+        "label": "Semantic Segmentation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:scene-understanding",
+        "label": "Scene Understanding"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +46,12 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:computer-vision-task",
+        "label": "Computer Vision Task"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -42,13 +42,14 @@ public:: true
   "@id": "urn:ngm:class:prefix-tuning",
   "@type": "Class",
   "label": "Prefix Tuning",
-  "definition": "A parameter-efficient fine-tuning technique that prepends trainable continuous vectors (prefixes) to the key and value matrices at each transformer layer, whilst keeping the pre-trained model parameters frozen.",
-  "domain": "spatial-computing",
-  "maturity": "draft",
+  "definition": "A parameter-efficient fine-tuning technique that prepends trainable continuous vectors (prefixes) to the key and value matrices at each transformer layer, whilst keeping the pre-trained model parameters frozen. Unlike prompt tuning, which operates only on input embeddings, prefix tuning influences the attention mechanism at every layer, achieving stronger task-specific adaptation with roughly 0.1% of model parameters.",
+  "domain": "artificial-intelligence",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:sc-content-and-assets",
-      "label": "Content and Assets"
+      "@id": "urn:ngm:class:parameter-efficient-fine-tuning",
+      "label": "Parameter-Efficient Fine-Tuning"
     }
   ],
   "quality": 0.5,
@@ -56,6 +57,40 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:prompt-tuning",
+        "label": "Prompt Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:adapter-modules",
+        "label": "Adapter Modules"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:parameter-efficient-fine-tuning",
+        "label": "Parameter-Efficient Fine-Tuning"
+      }
+    ]
   }
 }
 ```
@@ -95,7 +130,12 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Part Of [[Parameter-Efficient Fine-Tuning]]
+  - Uses [[Attention Mechanism]]
+  - Uses [[Transfer Learning]]
+  - Requires [[Fine Tuning]]
+  - Contrasts With [[Prompt Tuning]]
+  - Contrasts With [[Adapter Modules]]
 
 - ### Content
   - A parameter-efficient fine-tuning technique that prepends trainable continuous vectors (prefixes) to the key and value matrices at each transformer layer, whilst keeping the pre-trained model parameters frozen. Unlike prompt tuning which only modifies input embeddings, prefix tuning affects attention computation at every layer.

@@ -37,16 +37,32 @@ public:: true
   "@id": "urn:ngm:class:raycast-system",
   "@type": "Class",
   "label": "Raycast System",
-  "definition": "Raycast System is a spatial computing concept and a type of spatial-computing.",
+  "definition": "A Raycast System is the interaction subsystem in a spatial computing or XR engine that casts geometric rays from a controller, gaze direction, or cursor into the 3D scene to detect intersections with scene objects, enabling selection, pointing, UI interaction, and collision queries. It forms the primary input-resolution layer in VR/AR user interfaces, translating physical or tracked user intent into object picks within the scene graph.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-interaction",
       "label": "Interaction Technology"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:physics-engine", "label": "Physics Engine"},
+      {"@id": "urn:ngm:class:collision-detection", "label": "Collision Detection"},
+      {"@id": "urn:ngm:class:scene-graph", "label": "Scene Graph"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:user-interface", "label": "User Interface"},
+      {"@id": "urn:ngm:class:gaze-control", "label": "Gaze Control"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:vr-controllers", "label": "VR Controllers"},
+      {"@id": "urn:ngm:class:hand-tracking", "label": "Hand Tracking"},
+      {"@id": "urn:ngm:class:eye-tracking", "label": "Eye Tracking"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -76,14 +92,16 @@ public:: true
 
 
 - ### Definition
-  - RaycastSystem is a concept within the ngm domain.
+  - A Raycast System is the interaction subsystem in a spatial computing or XR engine that casts geometric rays from a controller, gaze direction, or cursor into the 3D scene to detect intersections with scene objects, enabling selection, pointing, UI interaction, and collision queries. It forms the primary input-resolution layer in VR/AR user interfaces, translating tracked user intent into object picks within the scene graph.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:RaycastSystem
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires:: [[Physics Engine]], [[Collision Detection]], [[Scene Graph]]
+  - enables:: [[User Interface]], [[Gaze Control]]
+  - uses:: [[VR Controllers]], [[Hand Tracking]], [[Eye Tracking]]
 
 - ### Content
   # RaycastSystem

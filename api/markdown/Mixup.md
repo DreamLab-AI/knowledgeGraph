@@ -42,9 +42,10 @@ public:: true
   "@id": "urn:ngm:class:mixup",
   "@type": "Class",
   "label": "Mixup",
-  "definition": "A data augmentation technique that creates virtual training examples by linearly interpolating pairs of examples and their labels. Mixup improves generalisation, calibration, and robustness by training on convex combinations of training samples.",
+  "definition": "A data augmentation technique that creates virtual training samples by computing convex linear combinations of input pairs and their corresponding labels, parameterised by a mixing coefficient drawn from a Beta distribution. Mixup reduces overfitting, improves calibration, and promotes smoother decision boundaries across supervised and semi-supervised learning tasks.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
@@ -55,7 +56,23 @@ public:: true
       "label": "Data Augmentation Strategies"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:robustness", "label": "Robustness"},
+      {"@id": "urn:ngm:class:calibration", "label": "Calibration"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:label-smoothing", "label": "Label Smoothing"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
+      {"@id": "urn:ngm:class:supervised-learning", "label": "Supervised Learning"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:overfitting", "label": "Overfitting"},
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -97,7 +114,13 @@ public:: true
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **enables** [[Robustness]] — interpolated training smooths decision boundaries and reduces sensitivity to perturbations
+  - **enables** [[Calibration]] — training on soft, interpolated labels improves model confidence calibration
+  - **contrastsWith** [[Label Smoothing]] — both regularise label distributions but via different mechanisms
+  - **dependsOn** [[Training Data]] — requires labelled pairs from the training set as interpolation inputs
+  - **dependsOn** [[Supervised Learning]] — operates within a supervised loss minimisation framework
+  - **relatedTo** [[Overfitting]] — reduces overfitting by discouraging memorisation of individual samples
+  - **relatedTo** [[Deep Learning]] — widely adopted across deep learning architectures and domains
 - ### Content
   - A data augmentation technique that creates virtual training examples by linearly interpolating pairs of examples and their labels. Mixup improves generalisation, calibration, and robustness by training on convex combinations of training samples.
   #### Key Characteristics

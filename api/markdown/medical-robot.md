@@ -1,5 +1,5 @@
 - ### Definition
-  - ### Primary Definition
+  - A Medical Robot is a robotic system designed for use in clinical and healthcare settings, encompassing surgical assistants, rehabilitation exoskeletons, and diagnostic platforms. Medical robots operate under strict safety standards (ISO 13482) and integrate sensing, actuation, and AI to augment human clinical capability.
 
 - ### Semantic Classification
   - owl-class:: robotics:rb0016medicalrobot
@@ -7,7 +7,12 @@
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses [[Haptic Feedback]]
+  - Uses [[Computer Vision System]]
+  - Uses [[Medical AI]]
+  - Requires [[Functional Safety]]
+  - Requires [[Human Robot Interaction]]
+  - Enables [[Medical Imaging]]
 
 - ### Content
   - ### Primary Definition

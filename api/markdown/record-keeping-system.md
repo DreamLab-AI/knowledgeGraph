@@ -1,12 +1,14 @@
 - ### Definition
-  - Record Keeping System is a concept within the blockchain domain. Further enrichment pending.
+  - A Record Keeping System, in the blockchain domain, is an immutable, append-only ledger in which transactions are cryptographically hashed, linked via Merkle trees, and validated by a consensus mechanism to provide a tamper-evident audit trail. It replaces or augments centralised databases in applications requiring transparent provenance, non-repudiation, and multi-party data integrity—including asset registries, supply-chain tracking, and compliance logging.
 
 - ### Semantic Classification
   - owl-class:: blockchain:RecordKeepingSystem
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses:: [[Distributed Ledger]], [[Merkle Tree]], [[Cryptographic Hash]], [[Consensus Mechanism]]
+  - enables:: [[Audit Trail]], [[Data Integrity]], [[Data Provenance]]
+  - relatedTo:: [[Smart Contract]], [[Data Governance]]
 
 - ### Content
 

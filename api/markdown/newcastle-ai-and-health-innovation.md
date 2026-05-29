@@ -1,5 +1,5 @@
 - ### Definition
-  - Newcastle's technology ecosystem centred on artificial intelligence and health innovation, anchored by research institutions and the Great North Snowdome.
+  Newcastle AI and Health Innovation is the regional technology ecosystem in North East England centred on the application of artificial intelligence to healthcare, life sciences, and digital health, anchored by Newcastle University, Northumbria University, and innovation institutions including the National Innovation Centre for Data and the National Innovation Centre for Ageing. The ecosystem combines academic research, NHS partnerships, and private sector investment to accelerate AI-driven health technology from discovery through to clinical and commercial deployment.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:NewcastleAIAndHealthInnovation
@@ -7,7 +7,12 @@
   - belongs-to-domain:: [[UK Tech Ecosystem]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart:: [[Healthcare AI]], [[Medical AI]], [[Clinical Decision Support]]
+  - requires:: [[Healthcare Technology]], [[Artificial Intelligence]], [[Healthcare Analytics]]
+  - enables:: [[AI Applications]], [[Healthcare Records]], [[Clinical Trials]]
+  - relatedTo:: [[North England Innovation Corridor]], [[UK Tech Ecosystem]], [[AI Governance]]
+  - supports:: [[Machine Learning]], [[Predictive Analytics]]
+  - bridgesTo:: [[AI Monitoring]]
 
 - ### Content
 

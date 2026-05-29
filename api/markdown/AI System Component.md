@@ -58,21 +58,36 @@ public:: true
   "@id": "urn:ngm:class:ai-system-component",
   "@type": "Class",
   "label": "AI System Component",
-  "definition": "AI System Component refers to the modular functional units that constitute a complete artificial intelligence system. These components include data ingestion pipelines, feature engineering modules, model training infrastructure, inference engines, monitoring systems, and user interfaces.",
+  "definition": "Modular functional units constituting a complete artificial intelligence system, including data ingestion pipelines, feature engineering modules, model training infrastructure, inference engines, monitoring dashboards, and user interfaces. Modern AI systems adopt microservices architectures enabling independent scaling, version control, and A/B testing per component, with observability integrated at each layer for production reliability.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure (Category)"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"},
+      {"@id": "urn:ngm:class:machine-learning-pipeline", "label": "Machine Learning Pipeline"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"},
+      {"@id": "urn:ngm:class:machine-learning-model", "label": "Machine Learning Model"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:ai-lifecycle", "label": "AI Lifecycle"},
+      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
-  },
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:cat-ai-infrastructure",
-      "label": "AI Infrastructure (Category)"
-    }
-  ]
+  }
 }
 ```
 
@@ -130,8 +145,9 @@ public:: true
   - owl-role:: concept
 
 - ### Relationships
-  - is-subclass-of:: ['owl:Thing']
-  - bridges-to:: [[Blockchain]] (domain: bc)
+  - hasPart:: [[Data Pipeline]], [[Machine Learning Pipeline]]
+  - uses:: [[Microservices Architecture]], [[Machine Learning Model]]
+  - supports:: [[AI Lifecycle]], [[AI Infrastructure]]
 
 - ### Content
 

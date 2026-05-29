@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:co-training",
   "domain": "artificial-intelligence",
-  "definition": "Co Training is a type of Artificial Intelligence in the artificial intelligence domain.",
+  "definition": "Co-training is a semi-supervised machine learning technique where two or more models trained on complementary feature views iteratively label unlabelled data for each other. Each model labels examples confidently classified under its own view, and these pseudo-labels are added to the other model's training set, bootstrapping performance without requiring large labelled corpora.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -14,20 +14,48 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-model",
+        "label": "Machine Learning Model"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:semi-supervised-learning",
+        "label": "Semi-Supervised Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:self-training",
+        "label": "Self Training"
+      },
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      }
+    ]
   },
   "wikilinks": [
     {

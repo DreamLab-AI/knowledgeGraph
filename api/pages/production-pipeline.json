@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:production-pipeline",
   "domain": "spatial-computing",
-  "definition": "Production Pipeline is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "The end-to-end sequence of tools, processes, and automated stages that transform raw creative or data assets into finished, deployable outputs. In spatial computing contexts a production pipeline typically spans asset creation, format conversion, quality assurance, rendering, and deployment to target platforms (game engines, XR runtimes, or streaming services).",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -13,18 +13,46 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-workflow",
+        "label": "Digital Asset Workflow"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "id": "urn:ngm:class:asset-format-standards",
+        "label": "Asset Format Standards"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": []

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:autoencoder",
   "domain": "artificial-intelligence",
-  "definition": "Autoencoder is a artificial intelligence concept and a type of Deep Learning.",
+  "definition": "An Autoencoder is a neural network trained to reconstruct its input by learning a compressed latent representation. The encoder maps input data to a lower-dimensional latent space and the decoder reconstructs the original from this representation, minimising a reconstruction loss. Variants including variational autoencoders (VAEs), denoising autoencoders, and convolutional autoencoders extend this framework to generative modelling, anomaly detection, and feature extraction.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-model-architecture",
@@ -18,20 +18,51 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "id": "urn:ngm:class:dimensionality-reduction",
+        "label": "Dimensionality Reduction"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:latent-space",
+        "label": "latent space"
+      },
+      {
+        "id": "urn:ngm:class:unsupervised-learning",
+        "label": "Unsupervised Learning"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:variational-autoencoders",
+        "label": "Variational Autoencoders"
+      },
+      {
+        "id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      },
+      {
+        "id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      }
+    ]
   },
   "wikilinks": [
     {

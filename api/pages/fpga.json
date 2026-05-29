@@ -8,7 +8,7 @@
   "definition": "FPGA is a artificial intelligence concept and a type of Inference Hardware. that enables Custom Neural Architectures.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure (Category)"
     },
     {

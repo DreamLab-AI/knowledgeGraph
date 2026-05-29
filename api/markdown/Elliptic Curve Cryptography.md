@@ -66,7 +66,7 @@ public:: true
   "@id": "urn:ngm:class:elliptic-curve-cryptography",
   "@type": "Class",
   "label": "Elliptic Curve Cryptography",
-  "definition": "ECC-based public-key system within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "A public-key cryptographic system based on the algebraic structure of elliptic curves over finite fields, providing strong security guarantees with shorter key lengths than RSA. ECC underpins digital signatures (ECDSA), key agreement (ECDH), and identity operations throughout blockchain infrastructure.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -83,7 +83,26 @@ public:: true
       "label": "CryptographicPrimitive"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
+      {"@id": "urn:ngm:class:cryptographic-key-management", "label": "Cryptographic Key Management"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
+      {"@id": "urn:ngm:class:private-key", "label": "Private Key"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"},
+      {"@id": "urn:ngm:class:cryptographic-security", "label": "Cryptographic Security"},
+      {"@id": "urn:ngm:class:cryptographic-signature", "label": "Cryptographic Signature"},
+      {"@id": "urn:ngm:class:decentralization", "label": "Decentralization"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

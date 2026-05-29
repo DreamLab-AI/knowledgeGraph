@@ -5,7 +5,9 @@
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: Motion Capture, 3D Asset — core capture technology and output asset formats underpin the domain
+  - **enables**: Immersive Experience, Avatar Interoperability — captured performances populate avatars and immersive environments
+  - **relatedTo**: Augmented Reality, Extended Reality, Digital Twin — reality capture feeds AR/XR experiences and digital twin creation pipelines
 - ### Content
   - The ETSI Reality Capture Creative domain enables performers and creators to digitally capture expressive movements, facial animations, and embodied interactions for metaverse avatars through motion capture and real-time performance processing.
   - ### Original Content

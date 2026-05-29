@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:iso-14064",
   "domain": "blockchain",
-  "definition": "A suite of ISO standards specifying requirements for quantifying, monitoring, reporting, and verifying greenhouse gas emissions and removals at organisation and project level.",
+  "definition": "ISO 14064 is a three-part international standard series specifying principles and requirements for the quantification, monitoring, reporting, and independent verification of greenhouse gas (GHG) emissions and removals at organisational level (Part 1), at project level (Part 2), and for validation and verification bodies (Part 3). The standard provides a framework for organisations to account for their Scope 1, 2, and 3 emissions in a manner that is auditable by third-party verification bodies, and it underpins voluntary carbon markets, corporate sustainability reporting obligations, and blockchain-based carbon credit tokenisation schemes.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-governance-and-regulation",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:carbon-accounting",
+        "label": "Carbon Accounting"
+      },
+      {
+        "id": "urn:ngm:class:carbon-credits",
+        "label": "Carbon Credits"
+      },
+      {
+        "id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:environmental-standards",
+        "label": "Environmental Standards"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ghg-protocol",
+        "label": "GHG Protocol"
+      },
+      {
+        "id": "urn:ngm:class:third-party-auditor",
+        "label": "Third Party Auditor"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

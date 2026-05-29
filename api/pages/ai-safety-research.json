@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ai-safety-research",
   "domain": "artificial-intelligence",
-  "definition": "An interdisciplinary field studying techniques and frameworks to ensure that AI systems behave safely, reliably, and in accordance with human values as they become more capable.",
+  "definition": "AI Safety Research is an interdisciplinary field that develops theoretical frameworks, empirical methods, and engineering techniques to ensure advanced AI systems behave in ways that are safe, reliable, and aligned with human values across a range of capability levels. The field spans near-term concerns \u2014 such as robustness, fairness, and adversarial resistance \u2014 and longer-term challenges including scalable oversight, corrigibility, and the avoidance of catastrophic risks from highly capable systems. It draws on machine learning, decision theory, formal verification, and cognitive science.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -14,20 +14,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:interpretability",
+        "label": "Interpretability"
+      },
+      {
+        "id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-risk",
+        "label": "AI Risk"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

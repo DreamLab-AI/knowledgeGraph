@@ -37,15 +37,30 @@ public:: true
   "@id": "urn:ngm:class:response-time-prediction",
   "@type": "Class",
   "label": "Response Time Prediction",
-  "definition": "Response Time Prediction is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Response Time Prediction applies statistical and machine learning models to forecast the end-to-end latency of requests in networked systems, enabling proactive quality-of-service management and resource scheduling. Inputs typically include historical latency distributions, network conditions, server load, and request characteristics; outputs drive adaptive scheduling, pre-emptive caching, and SLA alerting. Accurate prediction is critical for latency-sensitive applications such as real-time XR streaming, interactive robotics teleoperation, and cloud-gaming platforms.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:anomaly-detection", "label": "Anomaly Detection"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:latency", "label": "Latency"},
+      {"@id": "urn:ngm:class:network-latency", "label": "Network Latency"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:latency-aware-edge-ai", "label": "Latency-Aware Edge AI"},
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -76,14 +91,16 @@ public:: true
 
 
 - ### Definition
-  - ResponseTimePrediction is a concept within the ngm domain.
+  - Response Time Prediction applies statistical and machine learning models to forecast the end-to-end latency of requests in networked systems, enabling proactive quality-of-service management and resource scheduling. Inputs typically include historical latency distributions, network conditions, server load, and request characteristics; outputs drive adaptive scheduling, pre-emptive caching, and SLA alerting. Accurate prediction is critical for latency-sensitive applications such as real-time XR streaming, interactive robotics teleoperation, and cloud-gaming platforms.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:ResponseTimePrediction
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: Machine Learning, Anomaly Detection
+  - **requires**: Latency, Network Latency
+  - **enables**: Latency-Aware Edge AI, Edge Computing
 
 - ### Content
   # ResponseTimePrediction

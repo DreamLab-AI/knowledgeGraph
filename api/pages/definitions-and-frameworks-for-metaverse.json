@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:definitions-and-frameworks-for-metaverse",
   "domain": "spatial-computing",
-  "definition": "Definitions and frameworks for Metaverse is a spatial computing concept and a type of Metaverse Ontology.",
+  "definition": "This page surveys competing definitions and analytical frameworks used to characterise the metaverse, drawing from industry reports, academic literature, and standards bodies. It compares platform-centric, social-first, and open-interoperability framings; examines primitives such as persistence, embodiment, real-time 3D graphics, and economic actors; and contextualises failed early attempts (Decentraland, Sandbox) against more enduring platforms (Roblox). The analysis informs design principles for trust, value transfer, and AI-mediated governance in spatial social systems.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -17,21 +17,57 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:definitions-and-frameworks-for-metaverse",
+        "label": "Definitions and frameworks for Metaverse"
+      },
+      {
+        "id": "urn:ngm:class:digital-commerce",
+        "label": "Digital Commerce"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ]
   },
   "wikilinks": [
     {

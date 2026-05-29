@@ -1,12 +1,15 @@
 - ### Definition
-  - Coding support is a concept within the ngm domain.
+  - Coding Support encompasses AI-assisted tools, IDE integrations, and agent frameworks that augment software developers with capabilities including inline completion, code generation, automated refactoring, debugging assistance, and test generation. Tools range from general-purpose LLM-backed assistants to domain-specific coding agents operating on full codebases.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:CodingSupport
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses:: [[Large Language Models]], [[Agent Frameworks]]
+  - enables:: [[Code Generation]], [[Generative AI]]
+  - supports:: [[Software Engineering]]
+  - related-to:: [[Tips and Tricks]], [[GPT Engineer]]
 
 - ### Content
   - {{video https://www.youtube.com/watch?v=yj73GIEKmLI}}

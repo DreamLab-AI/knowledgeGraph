@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:erc3643-token",
   "@type": "Class",
   "label": "ERC3643 Token",
-  "definition": "A permissioned token standard for security tokens with on-chain identity verification and compliance rules, enabling compliant transfer restrictions based on investor identity and jurisdiction.",
+  "definition": "The ERC-3643 (T-REX) standard is an Ethereum permissioned token framework designed for compliant security token issuance, embedding on-chain identity verification and transfer-restriction logic that enforces investor eligibility, jurisdiction rules, and AML/KYC requirements at the smart contract level. Transfer authorisation is governed by an on-chain identity registry and a modular compliance module, enabling automated regulatory enforcement.",
   "domain": "blockchain",
   "maturity": "established",
+  "qualityScore": 0.8,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-token-and-asset",
@@ -59,7 +60,28 @@ public:: true
       "label": "Security Token"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:identity-verification", "label": "Identity Verification"},
+      {"@id": "urn:ngm:class:aml-kyc-compliance", "label": "AML KYC Compliance"},
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:security-token-offering", "label": "Security Token Offering"},
+      {"@id": "urn:ngm:class:compliance-verification", "label": "Compliance Verification"},
+      {"@id": "urn:ngm:class:blockchain-compliance", "label": "Blockchain Compliance"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:erc3643-standard", "label": "ERC3643 Standard"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:erc20-token", "label": "ERC20 Token"},
+      {"@id": "urn:ngm:class:erc1400-token", "label": "ERC1400 Token"},
+      {"@id": "urn:ngm:class:identity-management", "label": "Identity Management"},
+      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"},
+      {"@id": "urn:ngm:class:tokenomics-governance", "label": "Tokenomics Governance"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

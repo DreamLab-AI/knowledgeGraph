@@ -7,7 +7,12 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Enables [[Reinforcement Learning from Human Feedback]]
+  - Enables [[Reward Model]]
+  - Uses [[Reinforcement Learning]]
+  - Uses [[Machine Learning]]
+  - Supports [[AI Safety]]
+  - Related To [[Training]]
 
 - ### Content
   - A machine learning paradigm that learns from comparative judgments (e.g., "A is better than B") rather than absolute labels or demonstrations. Preference learning enables training models to align with human values by learning from rankings and comparisons, which are often easier for humans to provide than absolute ratings or demonstrations.

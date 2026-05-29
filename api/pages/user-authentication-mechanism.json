@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:user-authentication-mechanism",
   "domain": "infrastructure",
-  "definition": "User Authentication Mechanism is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A User Authentication Mechanism is a protocol or system component that verifies the claimed identity of a user before granting access to a resource or service. Mechanisms include password-based credentials, OAuth 2.0 federated login, biometric binding, multi-factor authentication, and decentralised identity using DIDs, each offering different trade-offs between security, usability, and privacy.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-security-and-identity",
@@ -13,21 +13,49 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-identity-management",
+        "label": "Digital Identity Management"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:oauth-2-0",
+        "label": "OAuth 2.0"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": []

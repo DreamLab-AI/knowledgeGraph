@@ -42,16 +42,31 @@ public:: true
   "@id": "urn:ngm:class:remote-communication",
   "@type": "Class",
   "label": "Remote Communication",
-  "definition": "Remote Communication is a type of Distributed Collaboration in the distributed collaboration domain.",
+  "definition": "Remote Communication encompasses the protocols, platforms, and practices that enable synchronous and asynchronous exchange of information between geographically distributed participants. It spans text, voice, video, and immersive modalities, and underpins distributed work, telecollaboration, and telepresence systems by abstracting physical distance through networked infrastructure.",
   "domain": "distributed-collaboration",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:dc-communication",
       "label": "Communication Technology"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:telecollaboration", "label": "Telecollaboration"},
+      {"@id": "urn:ngm:class:distributed-work", "label": "Distributed Work"},
+      {"@id": "urn:ngm:class:video-conferencing", "label": "Video Conferencing"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"},
+      {"@id": "urn:ngm:class:latency", "label": "Latency"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:collaboration-platform", "label": "Collaboration Platform"},
+      {"@id": "urn:ngm:class:immersive-communication", "label": "Immersive Communication"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -87,14 +102,16 @@ public:: true
 
 
 - ### Definition
-  - Remote Communication is a concept within the telecollaboration domain. Further enrichment pending.
+  - Remote Communication encompasses the protocols, platforms, and practices that enable synchronous and asynchronous exchange of information between geographically distributed participants. It spans text, voice, video, and immersive modalities, and underpins distributed work, telecollaboration, and telepresence systems by abstracting physical distance through networked infrastructure.
 
 - ### Semantic Classification
   - owl-class:: distributed-collaboration:RemoteCommunication
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **enables** → [[Telecollaboration]], [[Distributed Work]], [[Video Conferencing]]
+  - **requires** → [[Network Protocol]], [[Latency]]
+  - **relatedTo** → [[Collaboration Platform]], [[Immersive Communication]]
 
 - ### Content
 

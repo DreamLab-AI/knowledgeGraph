@@ -1,5 +1,5 @@
 - ### Definition
-  - Threat Actor is a concept within the bc domain.
+  - A Threat Actor is an individual, organised group, or nation-state entity that possesses the intent, capability, and opportunity to exploit vulnerabilities in digital systems. Actors are classified by motivation (financial, ideological, strategic, personal) and sophistication tier (opportunistic script-kiddies through state-sponsored APTs), with attribution performed via TTPs, infrastructure patterns, and targeting behaviour.
 
 - ### Semantic Classification
   - owl-class:: blockchain:ThreatActor
@@ -7,6 +7,10 @@
 
 - ### Relationships
   - is-subclass-of:: [[Blockchain]]
+  - **uses** → [[Attack Vector]], [[Vulnerability]]
+  - **contrastsWith** → [[Security]], [[Resilience]]
+  - **relatedTo** → [[Risk]], [[Cybersecurity]]
+  - **enables** (defensive response) → [[Security Framework]], [[Zero Trust Architecture]]
 
 - ### Content
 

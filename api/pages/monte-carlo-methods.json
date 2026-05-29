@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:monte-carlo-methods",
   "domain": "artificial-intelligence",
-  "definition": "A class of computational algorithms that use repeated random sampling to estimate numerical results for problems involving probability distributions or high-dimensional integrals.",
+  "definition": "Monte Carlo methods are a broad class of computational algorithms that employ repeated random sampling to approximate numerical quantities that are analytically intractable, including high-dimensional integrals, expectations under complex probability distributions, and optimal policies in stochastic decision processes. The core idea is that drawing sufficiently many random samples from an appropriate distribution and averaging a function of those samples converges, by the law of large numbers, to the true expected value. Monte Carlo methods underpin Bayesian inference, reinforcement learning, particle filters, and physics simulation, and are foundational to risk analysis, financial modelling, and scientific computing.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:monte-carlo-tree-search",
+        "label": "Monte Carlo Tree Search"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:monte-carlo-localization",
+        "label": "Monte Carlo Localization"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:sampling",
+        "label": "Sampling"
+      },
+      {
+        "id": "urn:ngm:class:stochastic-process",
+        "label": "Stochastic Process"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

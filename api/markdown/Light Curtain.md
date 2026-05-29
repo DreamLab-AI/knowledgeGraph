@@ -42,9 +42,10 @@ public:: true
   "@id": "urn:ngm:class:light-curtain",
   "@type": "Class",
   "label": "Light Curtain",
-  "definition": "Light Curtain is a robotics and autonomous systems concept and a type of robotics.",
+  "definition": "A Light Curtain is an optoelectronic safety device that creates an invisible infrared detection zone around hazardous machinery or robot work cells. When an object or person interrupts the beam matrix, the curtain triggers an emergency stop, enforcing compliance with ISO 8373 and IEC 61496 safety standards.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-safety-and-standards",
@@ -56,6 +57,38 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:collaborative-robot",
+        "label": "Collaborative Robot"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:cobot-safety-levels",
+        "label": "Cobot Safety Levels"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iso-10218",
+        "label": "ISO 10218"
+      }
+    ]
   }
 }
 ```
@@ -87,7 +120,7 @@ public:: true
 
 
 - ### Definition
-  - ### Primary Definition
+  - A Light Curtain is an optoelectronic safety device that creates an invisible infrared detection zone around hazardous machinery or robot work cells. When an object or person interrupts the beam matrix, the curtain triggers an emergency stop, enforcing compliance with ISO 8373 and IEC 61496 safety standards.
 
 - ### Semantic Classification
   - owl-class:: robotics:LightCurtain
@@ -95,7 +128,11 @@ public:: true
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Requires [[Functional Safety]]
+  - Enables [[Collaborative Robot]]
+  - Supports [[Human Robot Interaction]]
+  - Standardized By [[ISO 10218]]
+  - Related To [[Cobot Safety Levels]]
 
 - ### Content
   - ### Primary Definition

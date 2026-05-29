@@ -66,7 +66,7 @@ public:: true
   "@id": "urn:ngm:class:node",
   "@type": "Class",
   "label": "Node",
-  "definition": "Network participant computer within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "A network participant computer within a blockchain system that stores, validates, and relays transactions and blocks. Nodes enforce consensus rules, maintain copies of the distributed ledger, and collectively provide the decentralised security guarantees that distinguish blockchain from centralised databases.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -83,7 +83,27 @@ public:: true
       "label": "NetworkComponent"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:full-node", "label": "Full Node"},
+      {"@id": "urn:ngm:class:archival-node", "label": "Archival Node"},
+      {"@id": "urn:ngm:class:bootstrap-node", "label": "Bootstrap Node"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"},
+      {"@id": "urn:ngm:class:decentralization", "label": "Decentralization"},
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
+      {"@id": "urn:ngm:class:blockchain-infrastructure", "label": "Blockchain Infrastructure"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"},
+      {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

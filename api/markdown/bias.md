@@ -7,7 +7,10 @@
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **contrastsWith**: AI Fairness (the corrective property Bias undermines)
+  - **relatedTo**: Bias in Large Language Models (domain-specific manifestation), AI Risks (component risk category), Transparency (mitigation enabler), Accountability (oversight mechanism)
+  - **requires**: Bias Detection Methods (prerequisite for mitigation)
+  - **enables**: Bias Mitigation Techniques (downstream remediation processes)
 
 - ### Content
   - Systematic deviation from fairness, objectivity, or expected outcomes in an AI system that leads to prejudiced results favouring or disfavouring particular groups, individuals, or outcomes, arising from data, algorithms, or deployment contexts.

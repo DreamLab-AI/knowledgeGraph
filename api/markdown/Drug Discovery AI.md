@@ -66,16 +66,33 @@ public:: true
   "@id": "urn:ngm:class:drug-discovery-ai",
   "@type": "Class",
   "label": "Drug Discovery AI",
-  "definition": "Drug Discovery AI encompasses artificial intelligence systems that accelerate pharmaceutical research and development through automated molecular design, virtual screening, target identification, toxicity prediction, and clinical trial optimisation.",
+  "definition": "Drug Discovery AI encompasses artificial intelligence systems that accelerate pharmaceutical research and development through automated molecular design, virtual screening, target identification, toxicity prediction, and clinical trial optimisation. These systems integrate cheminformatics, molecular modelling, and machine learning — including graph neural networks and generative models — to reduce drug development timelines and costs whilst improving candidate success rates.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-application",
       "label": "AI Application"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:medical-ai", "label": "Medical AI"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:graph-neural-network", "label": "Graph Neural Network"},
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:treatment-planning-ai", "label": "Treatment Planning AI"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
+      {"@id": "urn:ngm:class:drug-discovery", "label": "Drug Discovery"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -152,7 +169,10 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **partOf**: Medical AI (parent application domain)
+  - **uses**: Graph Neural Network (molecular property prediction), Deep Learning (protein structure and binding prediction), Reinforcement Learning (molecule generation optimisation)
+  - **enables**: Treatment Planning AI (downstream clinical application of discovered candidates)
+  - **relatedTo**: Computer Vision (microscopy image analysis), Drug Discovery (traditional process being augmented)
 
 - ### Content
   - Drug Discovery AI encompasses artificial intelligence systems that accelerate pharmaceutical research and development through automated molecular design, virtual screening, target identification, toxicity prediction, and clinical trial optimisation. These systems integrate cheminformatics, molecular modelling, and machine learning to reduce drug development timelines and costs whilst improving success rates.

@@ -5,29 +5,56 @@
   "public": true,
   "classIri": "urn:ngm:class:hugging-face-hub",
   "domain": "artificial-intelligence",
-  "definition": "Hugging Face Hub is a centralised platform for hosting, versioning, and sharing machine learning models, datasets, and Spaces under a collaborative open-source ecosystem.",
+  "definition": "Hugging Face Hub is a centralised, version-controlled platform for hosting, discovering, and sharing machine learning models, datasets, and interactive Spaces under a collaborative open-source ecosystem. It provides Git-LFS-backed repositories for large artefact storage, model cards for documentation and responsible AI metadata, and a Python SDK (huggingface_hub) for programmatic access. The Hub functions as the de-facto registry for open-weight foundation models, transformer checkpoints, and diffusion model pipelines, serving millions of downloads daily across research and production workflows.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:open-source-ai",
+        "label": "Open-Source AI"
+      },
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:hugging-face-diffusers",
+        "label": "Hugging Face Diffusers"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

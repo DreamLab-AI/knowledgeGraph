@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:privacy-budget-management",
   "domain": "artificial-intelligence",
-  "definition": "Privacy Budget Management is the systematic allocation, tracking, and enforcement of differential privacy budget (epsilon/delta parameters) across multiple queries or analyses to prevent cumulative privacy loss from exceeding acceptable thresholds over time.",
+  "definition": "Privacy Budget Management is the systematic allocation, tracking, and enforcement of differential privacy parameters (epsilon and delta) across multiple queries or analyses, preventing cumulative privacy loss from exceeding acceptable thresholds over time. It applies composition theorems to bound total privacy expenditure and employs strategies such as fixed allocation, adaptive allocation, and hierarchical budgeting to maximise analytical utility while respecting organisational privacy constraints.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -13,21 +13,74 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      },
+      {
+        "id": "urn:ngm:class:privacy-mechanism",
+        "label": "Privacy Mechanism"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:privacy-preserving-analytics",
+        "label": "Privacy Preserving Analytics"
+      },
+      {
+        "id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy By Design"
+      },
+      {
+        "id": "urn:ngm:class:privacy-impact-assessment",
+        "label": "Privacy Impact Assessment"
+      },
+      {
+        "id": "urn:ngm:class:data-minimisation",
+        "label": "Data Minimisation"
+      },
+      {
+        "id": "urn:ngm:class:privacy-utility-tradeoffs",
+        "label": "Privacy Utility Tradeoffs"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ]
   },
   "wikilinks": [
     {

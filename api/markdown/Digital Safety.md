@@ -46,15 +46,29 @@ public:: true
   "@id": "urn:ngm:class:digital-safety",
   "@type": "Class",
   "label": "Digital Safety",
-  "definition": "Digital Safety is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Digital Safety encompasses the policies, technical controls, and design practices that protect individuals from harm in digital and spatial computing environments, including cybersecurity threats, privacy violations, online harassment, and misuse of immersive technologies. It applies governance frameworks, access controls, and content moderation mechanisms to ensure safe participation across metaverse, VR, and telecollaboration platforms.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
       "label": "Governance and Safety"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"},
+      {"@id": "urn:ngm:class:authentication", "label": "Authentication"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:privacy", "label": "Privacy"},
+      {"@id": "urn:ngm:class:content-moderation", "label": "Content Moderation"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
+      {"@id": "urn:ngm:class:digital-rights", "label": "Digital Rights"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -96,7 +110,7 @@ public:: true
 
 
 - ### Definition
-  - Digital Safety is a concept within the metaverse domain. Further enrichment pending.
+  - Digital Safety encompasses the policies, technical controls, and design practices that protect individuals from harm in digital and spatial computing environments, including cybersecurity threats, privacy violations, online harassment, and misuse of immersive technologies.
 
 bridges-to:: [[Telecollaboration]]
 
@@ -105,7 +119,12 @@ bridges-to:: [[Telecollaboration]]
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Cybersecurity]]
+  - requires [[Authentication]]
+  - enables [[Privacy]]
+  - enables [[Content Moderation]]
+  - relatedTo [[Data Governance]]
+  - relatedTo [[Digital Rights]]
 
 - ### Content
 

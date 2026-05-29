@@ -7,7 +7,12 @@
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - enables:: [[Deep Learning]]
+  - enables:: [[Natural Language Processing]]
+  - requires:: [[AI Infrastructure]]
+  - hasPart:: [[Reinforcement Learning]]
+  - hasPart:: [[Transfer Learning]]
+  - relatedTo:: [[Federated Learning]]
 
 - ### Content
   - ### Primary Definition

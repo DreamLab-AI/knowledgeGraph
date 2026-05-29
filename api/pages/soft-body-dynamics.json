@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:soft-body-dynamics",
   "domain": "spatial-computing",
-  "definition": "Physics simulation of deformable objects like cloth, flesh, or elastic materials, modeling realistic deformation and dynamic behavior in virtual environments.",
+  "definition": "Soft Body Dynamics is the branch of physics simulation concerned with deformable objects \u2014 including cloth, flesh, elastic materials, vegetation, and fluids \u2014 that change shape in response to forces, collisions, and internal stresses. Unlike rigid body simulation, soft body methods must track per-vertex or per-element deformation states, typically using mass-spring networks, finite element methods (FEM), or position-based dynamics (PBD). It is essential for visual fidelity in real-time virtual environments, character animation, and embodied AI simulations.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-display-and-rendering",
@@ -17,21 +17,73 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.75,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "id": "urn:ngm:class:embodied-ai-simulation",
+        "label": "Embodied AI Simulation"
+      },
+      {
+        "id": "urn:ngm:class:3-d-animation",
+        "label": "3D Animation"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:physics-engine",
+        "label": "Physics Engine"
+      },
+      {
+        "id": "urn:ngm:class:compute-shader",
+        "label": "Compute Shader"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rigid-body-dynamics",
+        "label": "Rigid Body Dynamics"
+      },
+      {
+        "id": "urn:ngm:class:fluid-simulation",
+        "label": "Fluid Simulation"
+      },
+      {
+        "id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:dynamic-character-animation",
+        "label": "Dynamic Character Animation"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -7,7 +7,12 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires:: [[Explainability]]
+  - requires:: [[Data Governance]]
+  - supports:: [[Compliance Framework]]
+  - supports:: [[AI Safety]]
+  - relatedTo:: [[AI Ethics]]
+  - relatedTo:: [[Responsible AI]]
 
 - ### Content
   - The coordinated activities to direct and control an AI system with regard to risk, encompassing risk identification, assessment, treatment, monitoring, and communication throughout the AI lifecycle to minimize potential adverse effects while maximizing benefits.

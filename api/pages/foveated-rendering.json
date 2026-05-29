@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:foveated-rendering",
   "domain": "spatial-computing",
-  "definition": "A rendering technique that concentrates computational resources at the viewer's gaze point at full resolution while progressively reducing detail in the peripheral visual field, exploiting eye-tracking.",
+  "definition": "Foveated rendering is a real-time rendering technique that exploits the human visual system's non-uniform acuity by rendering the region at or near the viewer's gaze point at full resolution whilst progressively reducing geometric detail, texture resolution, and shading complexity in the peripheral visual field. Combined with high-speed eye tracking to continuously locate the gaze point, foveated rendering achieves substantial reductions in GPU workload \u2014 typically enabling higher frame rates or higher central-region quality for a given compute budget. It is a critical technique for practical high-fidelity XR head-mounted displays where GPU thermal and power constraints are severe.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-display-and-rendering",
@@ -14,20 +14,48 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:level-of-detail",
+        "label": "Level of Detail"
+      },
+      {
+        "id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:display-hardware",
+        "label": "Display Hardware"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

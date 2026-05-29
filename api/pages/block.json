@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:block",
   "domain": "blockchain",
-  "definition": "Fundamental unit containing transactions within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "The fundamental unit of a blockchain: a cryptographically linked, immutable data container that batches a set of transactions together with a block header containing the Merkle root of those transactions, a timestamp, the previous block's hash, and consensus-specific fields such as a nonce or validator signature. Sequential blocks form the chain that provides an append-only audit trail.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-protocol-and-consensus",
@@ -21,21 +21,68 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:block-header",
+        "label": "Block Header"
+      },
+      {
+        "id": "urn:ngm:class:merkle-root",
+        "label": "Merkle Root"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      },
+      {
+        "id": "urn:ngm:class:coinbase-transaction",
+        "label": "Coinbase Transaction"
+      }
+    ],
     "requires": [],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:genesis-block",
+        "label": "Genesis Block"
+      },
+      {
+        "id": "urn:ngm:class:block-time",
+        "label": "Block Time"
+      },
+      {
+        "id": "urn:ngm:class:block-size",
+        "label": "Block Size"
+      },
+      {
+        "id": "urn:ngm:class:block-reward",
+        "label": "Block Reward"
+      },
+      {
+        "id": "urn:ngm:class:block-propagation",
+        "label": "Block Propagation"
+      }
+    ]
   },
   "wikilinks": [
     {

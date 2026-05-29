@@ -48,7 +48,7 @@ public:: true
   "label": "XR Runtime Environment",
   "definition": "The software infrastructure layer that manages extended reality hardware and provides standardized APIs for XR applications, handling device abstraction, tracking systems, rendering pipelines, input processing, and compositor services to enable cross-platform XR development.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -59,11 +59,57 @@ public:: true
       "label": "Runtime Environment"
     }
   ],
-  "quality": 0.5,
+  "qualityScore": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-abstraction",
+        "label": "Hardware Abstraction"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      },
+      {
+        "@id": "urn:ngm:class:runtime-environment",
+        "label": "Runtime Environment"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:optical-tracking",
+        "label": "Optical Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:middleware",
+        "label": "Middleware"
+      }
+    ]
   }
 }
 ```
@@ -109,6 +155,14 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Runtime Environment]]
+  - Requires [[Rendering Pipeline]]
+  - Requires [[Hardware Abstraction]]
+  - Implements [[Open Standard]]
+  - Enables [[Spatial Computing]]
+  - Enables [[Virtual Reality]]
+  - Enables [[Augmented Reality]]
+  - Uses [[Optical Tracking]]
+  - Uses [[Middleware]]
 
 - ### Content
 

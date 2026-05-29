@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:virtual-environment-connectivity",
   "@type": "Class",
   "label": "Virtual Environment Connectivity",
-  "definition": "The networking technologies and protocols that enable seamless communication, data synchronization, and user interaction across distributed virtual environments, including real-time streaming, peer-to-peer networks, and cross-platform interoperability systems.",
+  "definition": "The networking technologies and protocols that enable seamless communication, data synchronisation, and user interaction across distributed virtual environments, including real-time streaming, peer-to-peer networks, and cross-platform interoperability systems. Achieving sub-20ms latency for VR experiences requires a combination of 5G/6G mobile networks, edge computing, WebRTC for browser-to-browser communication, and software-defined networking for traffic management.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -59,7 +60,22 @@ public:: true
       "label": "Network Infrastructure"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:network-infrastructure", "label": "Network Infrastructure"},
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:metaverse-platform", "label": "Metaverse Platform"},
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:interoperability-standard", "label": "Interoperability Standard"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:encryption", "label": "Encryption"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -109,6 +125,10 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Network Infrastructure]]
+  - **requires**: [[Network Infrastructure]], [[Edge Computing]] — sub-20ms latency requires both high-bandwidth networks and edge nodes distributed close to users
+  - **enables**: [[Metaverse Platform]], [[Spatial Computing]] — reliable low-latency connectivity is a prerequisite for immersive multi-user spatial experiences
+  - **standardizedBy**: [[Interoperability Standard]] — OpenXR, WebXR, and WebRTC are the primary standards enabling cross-platform connectivity
+  - **uses**: [[Encryption]] — all virtual environment traffic must be encrypted to protect user data and prevent man-in-the-middle attacks
 
 - ### Content
 

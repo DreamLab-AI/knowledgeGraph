@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:trajectory-control",
   "domain": "robotics",
-  "definition": "Trajectory control tracks desired time-varying position, velocity, and acceleration profiles.",
+  "definition": "Trajectory Control is a robotics control methodology that tracks desired time-varying position, velocity, and acceleration profiles along planned paths. It coordinates joint-space and task-space motion to ensure smooth, precise end-effector movement while respecting dynamic and kinematic constraints.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
@@ -17,11 +17,41 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:trajectory-generation",
+        "label": "Trajectory Generation"
+      },
+      {
+        "id": "urn:ngm:class:trajectory-planning",
+        "label": "Trajectory Planning"
+      },
+      {
+        "id": "urn:ngm:class:velocity-control",
+        "label": "VelocityControl"
+      },
+      {
+        "id": "urn:ngm:class:position-control",
+        "label": "PositionControl"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
@@ -31,7 +61,24 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:robot-control",
+        "label": "Robot Control"
+      },
+      {
+        "id": "urn:ngm:class:collision-avoidance",
+        "label": "Collision Avoidance"
+      }
+    ]
   },
   "wikilinks": [
     {

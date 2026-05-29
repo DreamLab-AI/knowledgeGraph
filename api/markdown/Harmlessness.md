@@ -54,16 +54,34 @@ public:: true
   "@id": "urn:ngm:class:harmlessness",
   "@type": "Class",
   "label": "Harmlessness",
-  "definition": "An alignment objective ensuring AI systems avoid generating outputs that could cause harm, including toxic, dangerous, misleading, or unical content. Harmlessness represents a key dimension of AI safety alongside helpfulness and honesty.",
+  "definition": "An alignment objective ensuring AI systems avoid generating outputs that could cause harm, including toxic, dangerous, misleading, or unethical content. Harmlessness is one of the three core alignment dimensions alongside helpfulness and honesty, implemented through techniques such as Constitutional AI and RLHF to constrain model behaviour without sacrificing utility.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
       "label": "Governance and Safety"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"},
+      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:constitutional-ai", "label": "Constitutional AI"},
+      {"@id": "urn:ngm:class:reinforcement-learning-from-human-feedback", "label": "Reinforcement Learning from Human Feedback"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:ai-risk", "label": "AI Risk"},
+      {"@id": "urn:ngm:class:harmful-bias", "label": "Harmful Bias"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:trustworthy-ai", "label": "Trustworthy AI"},
+      {"@id": "urn:ngm:class:value-alignment", "label": "Value Alignment"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -120,7 +138,10 @@ public:: true
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires**: [[AI Alignment]], [[AI Safety]]
+  - **relatedTo**: [[Constitutional AI]], [[Reinforcement Learning from Human Feedback]]
+  - **contrastsWith**: [[AI Risk]], [[Harmful Bias]]
+  - **supports**: [[Trustworthy AI]], [[Value Alignment]]
 - ### Content
   - An alignment objective ensuring AI systems avoid generating outputs that could cause harm, including toxic, dangerous, misleading, or unethical content. Harmlessness represents a key dimension of AI safety alongside helpfulness and honesty.
 		- #### Ambiguity and Potential Overreach

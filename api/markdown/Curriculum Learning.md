@@ -56,14 +56,28 @@ public:: true
   "label": "Curriculum Learning",
   "definition": "A training strategy that presents examples to the model in a meaningful order, typically from easy to difficult, mimicking how humans learn. Curriculum learning can improve convergence speed, final performance, and generalization by structuring the learning progression.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
+      {"@id": "urn:ngm:class:contrastive-learning", "label": "Contrastive Learning"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:model-performance", "label": "Model Performance"},
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+    ]
+  },
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -122,7 +136,12 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - relatedTo [[Machine Learning]]
+  - relatedTo [[Transfer Learning]]
+  - relatedTo [[Contrastive Learning]]
+  - enables [[Model Performance]]
+  - enables [[Computer Vision]]
+  - uses [[Deep Learning]]
 
 - ### Content
   - A training strategy that presents examples to the model in a meaningful order, typically from easy to difficult, mimicking how humans learn. Curriculum learning can improve convergence speed, final performance, and generalization by structuring the learning progression.

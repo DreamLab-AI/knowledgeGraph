@@ -54,15 +54,33 @@ public:: true
   "@id": "urn:ngm:class:authorised-representative",
   "@type": "Class",
   "label": "Authorised Representative",
-  "definition": "A natural or legal person located or established in the Union who has received and accepted a written mandate from a provider of an AI system or a general-purpose AI model to, respectively, perform and carry out on its behalf the tasks and procedures established by this Regulation.",
+  "definition": "A natural or legal person located or established in the EU who has received and accepted a written mandate from a non-EU provider of an AI system or general-purpose AI model to perform regulatory tasks on its behalf, including maintaining technical documentation, cooperating with market surveillance authorities, and serving as the primary EU contact point under the EU AI Act.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
       "label": "Governance and Safety"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:eu-ai-act", "label": "EU AI Act"},
+      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:governance", "label": "Governance"},
+      {"@id": "urn:ngm:class:ai-governance-and-ethics", "label": "AI Governance and Ethics"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"},
+      {"@id": "urn:ngm:class:privacy", "label": "Privacy"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:governance-framework", "label": "Governance Framework"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -122,7 +140,11 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - bridges-to:: [[Governance]] (bc)
+  - bridges-to:: [[Governance]]
+  - requires:: [[EU AI Act]], [[Compliance Framework]]
+  - supports:: [[Governance]], [[AI Governance and Ethics]]
+  - relatedTo:: [[Risk Management]], [[Privacy]]
+  - standardizedBy:: [[Governance Framework]]
 
 - ### Content
   - A natural or legal person located or established in the Union who has received and accepted a written mandate from a provider of an AI system or a general-purpose AI model to, respectively, perform and carry out on its behalf the tasks and procedures established by this Regulation.

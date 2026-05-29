@@ -6,7 +6,12 @@
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - enables [[Game Engine]]
+  - enables [[Scripting Language]]
+  - uses [[WebAssembly]]
+  - uses [[Virtual Machine]]
+  - supports [[Cross-Platform Interoperability]]
+  - supports [[3D Rendering Engine]]
 
 - ### Content
   # RuntimeEnvironment

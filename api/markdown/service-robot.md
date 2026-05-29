@@ -1,4 +1,6 @@
 - ### Definition
+  - A Service Robot is an autonomous or semi-autonomous machine designed to perform tasks for humans outside industrial settings — in healthcare, logistics, hospitality, and domestic environments. It relies on sensor fusion, computer vision, motion planning, and human-robot interaction capabilities to operate safely in dynamic, unstructured spaces.
+
   - ### Primary Definition
 
 - ### Semantic Classification
@@ -7,7 +9,12 @@
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Motion Planning]]
+  - requires [[Sensor Fusion]]
+  - enables [[Human Robot Interaction]]
+  - uses [[Computer Vision]]
+  - uses [[Autonomous Robot]]
+  - relatedTo [[Robot Control]]
 
 - ### Content
   - ### Primary Definition

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ai-policy",
   "domain": "artificial-intelligence",
-  "definition": "AI policy refers to the set of government strategies, guidelines, and regulatory frameworks that govern research priorities, deployment standards, and societal impacts of artificial intelligence.",
+  "definition": "AI policy refers to the ensemble of government strategies, investment frameworks, voluntary guidelines, and mandatory regulatory instruments through which states shape the development, adoption, and societal impact of artificial intelligence. Policy instruments span public funding allocation for research, national AI strategies, procurement standards for government AI use, export controls on frontier hardware and models, and requirements for transparency and accountability in high-stakes applications. Effective AI policy navigates tensions between competitiveness, safety, and equitable access.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -14,20 +14,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

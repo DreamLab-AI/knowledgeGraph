@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:digital-twin-of-the-customer",
   "domain": "spatial-computing",
-  "definition": "Digital Twin of the Customer is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "A Digital Twin of the Customer is a dynamic virtual replica that mirrors an individual customer's behaviours, preferences, interactions, and decision-making patterns within a spatially-aware digital environment, enabling real-time simulation and predictive analysis of customer journeys. It integrates IoT telemetry, AI-driven behavioural modelling, and immersive 3D visualisations to create a continuously updated model reflecting how customers engage with products, services, and physical or digital spaces. Organisations use these twins to personalise experiences, predict service needs, and test interventions before live deployment.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -13,21 +13,69 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.75,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:behavioral-modeling",
+        "label": "Behavioral Modeling"
+      },
+      {
+        "id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      },
+      {
+        "id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      },
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin-ecosystem",
+        "label": "Digital Twin Ecosystem"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-twin-technology",
+        "label": "Digital Twin Technology"
+      },
+      {
+        "id": "urn:ngm:class:predictive-personalization",
+        "label": "Predictive Personalization"
+      },
+      {
+        "id": "urn:ngm:class:recommendation-engine",
+        "label": "Recommendation Engine"
+      }
+    ]
   },
   "wikilinks": [
     {

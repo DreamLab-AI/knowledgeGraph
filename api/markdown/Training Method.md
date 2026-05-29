@@ -46,27 +46,52 @@ public:: true
   "@id": "urn:ngm:class:training-method",
   "@type": "Class",
   "label": "Training Method",
-  "definition": "Training mods in machine learning are algorithms and techniques used to optimize model parameters by minimizing a loss function through iterative weight updates.",
+  "definition": "A Training Method is a systematic algorithm or procedure used to optimise the parameters of a machine learning model by minimising a loss function through iterative updates over labelled or unlabelled data. Training methods span the full spectrum from supervised and unsupervised learning to reinforcement learning and self-supervised pre-training, each with distinct update rules, convergence properties, and data requirements. Specific optimisers such as gradient descent, Adam, and RMSprop, together with regularisation strategies like dropout and batch normalisation, are key components within training methods.",
   "domain": "artificial-intelligence",
   "maturity": "emerging",
+  "qualityScore": 0.75,
+  "quality": 0.75,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
     }
   ],
-  "quality": 0.35,
-  "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
-  },
   "sameAs": [
     {
       "@id": "urn:ngm:class:training-methods",
       "label": "Training Methods"
     }
-  ]
+  ],
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"},
+      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"},
+      {"@id": "urn:ngm:class:supervised-learning", "label": "Supervised Learning"},
+      {"@id": "urn:ngm:class:unsupervised-learning", "label": "Unsupervised Learning"},
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
+      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
+      {"@id": "urn:ngm:class:pre-training", "label": "Pre Training"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:loss-function", "label": "Loss Function"},
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:optimization-algorithm", "label": "Optimization Algorithm"},
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
+      {"@id": "urn:ngm:class:mixed-precision-training", "label": "Mixed Precision Training"},
+      {"@id": "urn:ngm:class:distributed-training", "label": "Distributed Training"},
+      {"@id": "urn:ngm:class:gradient-clipping", "label": "Gradient Clipping"},
+      {"@id": "urn:ngm:class:learning-rate-schedule", "label": "Learning Rate Schedule"}
+    ]
+  },
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

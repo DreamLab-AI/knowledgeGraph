@@ -68,14 +68,31 @@ public:: true
   "label": "Well Being",
   "definition": "AI should enhance human and societal well-being by augmenting human capabilities, enriching quality of life, supporting physical and mental health, enabling meaningful work, strengthening social connections, and contributing to flourishing individuals and communities.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
       "label": "Governance and Safety"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:inclusive-growth", "label": "Inclusive Growth"},
+      {"@id": "urn:ngm:class:sustainable-development", "label": "Sustainable Development"},
+      {"@id": "urn:ngm:class:social-impact", "label": "Social Impact"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:human-centred-values", "label": "Human Centred Values"},
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:accessibility", "label": "Accessibility"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:digital-well-being-index", "label": "Digital Well-Being Index"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -147,7 +164,10 @@ public:: true
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **relatedTo**: Inclusive Growth, Sustainable Development, Social Impact — well-being is a component of the OECD's foundational AI principle alongside inclusive growth and sustainability.
+  - **requires**: Human Centred Values, AI Governance — achieving well-being outcomes requires that AI is designed around human priorities and governed to prevent harms.
+  - **supports**: Accessibility — systems that improve well-being must be accessible across diverse populations to avoid exacerbating inequalities.
+  - **contrastsWith**: Digital Well-Being Index — the index provides measurable operationalisation of the qualitative concept of digital well-being.
 - ### Content
   - AI should enhance human and societal well-being by augmenting human capabilities, enriching quality of life, supporting physical and mental health, enabling meaningful work, strengthening social connections, and contributing to flourishing individuals and communities.
   - ## Funding and Organisational Changes

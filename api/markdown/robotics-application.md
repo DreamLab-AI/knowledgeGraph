@@ -1,12 +1,15 @@
 - ### Definition
-  - RoboticsApplication is a concept within the ngm domain.
+  - A deployed use-case or task domain in which robotic systems perform physical or cyber-physical work, spanning industrial automation, telepresence, telemedicine, logistics, hazardous environment inspection, and collaborative human-robot interaction. Robotics applications integrate perception, planning, actuation, and communication subsystems to accomplish domain-specific objectives with varying degrees of autonomy.
 
 - ### Semantic Classification
   - owl-class:: robotics:RoboticsApplication
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Uses [[Robotic System]], [[Feedback Control]], [[Sensor Fusion]]
+  - Enables [[Teleoperation]], [[Robotic Telepresence]]
+  - Requires [[Robot Control]]
+  - Related to [[Human Robot Interaction]], [[Autonomous System]]
 
 - ### Content
 

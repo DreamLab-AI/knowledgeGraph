@@ -70,9 +70,10 @@ public:: true
   "@id": "urn:ngm:class:genesis-block",
   "@type": "Class",
   "label": "Genesis Block",
-  "definition": "First block in a blockchain within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "The genesis block is the first block in a blockchain, hardcoded into the client software and serving as the immutable anchor from which the entire chain of subsequent blocks descends. It establishes the initial chain state, encodes the founding parameters of the network, and contains no reference to a previous block hash. Because it cannot be altered without invalidating all subsequent blocks, the genesis block is the ultimate root of trust for the distributed ledger.",
   "domain": "blockchain",
   "maturity": "established",
+  "qualityScore": 0.8,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-protocol-and-consensus",
@@ -84,10 +85,35 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:distributed-data-structure",
-      "label": "DistributedDataStructure"
+      "label": "Distributed Data Structure"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:block-header", "label": "Block Header"},
+      {"@id": "urn:ngm:class:merkle-root", "label": "Merkle Root"},
+      {"@id": "urn:ngm:class:timestamp", "label": "Timestamp"},
+      {"@id": "urn:ngm:class:nonce", "label": "Nonce"},
+      {"@id": "urn:ngm:class:coinbase-transaction", "label": "Coinbase Transaction"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:cryptographic-hash", "label": "Cryptographic Hash"},
+      {"@id": "urn:ngm:class:immutability", "label": "Immutability"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"},
+      {"@id": "urn:ngm:class:block-height", "label": "Block Height"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
+      {"@id": "urn:ngm:class:blockchain-protocol", "label": "Blockchain Protocol"},
+      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -157,82 +183,24 @@ public:: true
 ```
 
 
-- ### Definition
-  - First block in a blockchain within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
+### Definition
 
-- ### Semantic Classification
-  - owl-class:: blockchain:GenesisBlock
-  - owl-role:: Object
-  - owl-inferred:: blockchain:VirtualObject
-  - belongs-to-domain:: [[BlockchainDomain]]
-  - implemented-in-layer:: [[ConceptualLayer]]
+The genesis block is the first block in a [[Blockchain]], hardcoded into client software and serving as the immutable anchor from which the entire chain descends. It establishes the initial chain state, encodes the founding parameters of the network, and contains no reference to a previous block hash. Because it cannot be altered without invalidating all subsequent blocks, the genesis block is the ultimate root of trust for the [[Distributed Ledger]].
 
-- ### Relationships
-  - is-subclass-of:: [[Blockchain Entity]], [[DistributedDataStructure]]
-  - bridges-to:: [[Autonomous Robot]]
+### Relationships
 
-- ### Content
+The genesis block is a structural component (`partOf`) both [[Blockchain]] and [[Distributed Ledger]]. It compositionally contains (`hasPart`) a [[Block Header]], [[Merkle Root]], [[Timestamp]], [[Nonce]], and a [[Coinbase Transaction]] — the special first transaction awarding the initial block reward. Its structural integrity `requires` [[Cryptographic Hash]] functions and the property of [[Immutability]]. The existence of a valid genesis block `enables` the bootstrapping of a [[Blockchain Network]] and defines block zero for [[Block Height]] accounting. It is governed by the network's [[Consensus Mechanism]] and [[Blockchain Protocol]], and its internal data structure is organised around a [[Merkle Tree]].
 
-  ## Class Declaration
-  Declaration(Class(:GenesisBlock))
+### Content
 
-  ## Subclass Relationships
-  SubClassOf(:GenesisBlock :DistributedDataStructure)
-  SubClassOf(:GenesisBlock :BlockchainEntity)
+The genesis block occupies a unique position in blockchain architecture: it is the only block that has no parent. Every other block in the chain references the hash of its predecessor, creating the chain of custody that gives blockchains their tamper-evident property. The genesis block instead carries a zero or null value in its "previous hash" field, making it self-referential and defining the chain's starting height of zero.
 
-  ## Essential Properties
-  SubClassOf(:GenesisBlock
-    (ObjectSomeValuesFrom :partOf :Blockchain))
+In Bitcoin, the genesis block (block 0) was mined by Satoshi Nakamoto on 3 January 2009. It famously embeds a newspaper headline in its coinbase transaction — "The Times 03/Jan/2009 Chancellor on brink of second bailout for banks" — providing an unforgeable timestamp proof and a statement of intent about the motivation for the technology. Its [[Block Reward]] of 50 BTC is permanently unspendable due to an anomaly in how the coinbase transaction was encoded, making it one of the few supply-reducing artefacts in Bitcoin history.
 
-  SubClassOf(:GenesisBlock
-    (ObjectSomeValuesFrom :hasProperty :Property))
+From a protocol standpoint, the genesis block hardcodes the initial [[Difficulty]] target and any network-specific configuration parameters. When a node first connects to a network, it verifies incoming blocks by tracing the chain back to the genesis block hash embedded in its software. A different genesis block hash means a different network entirely — this is why Bitcoin and Bitcoin Cash, despite sharing history up to a point, are fundamentally separate chains. The genesis block thus functions as a species identifier for the chain.
 
-  ## Data Properties
-  DataPropertyAssertion(:hasIdentifier :GenesisBlock "BC-0005"^^xsd:string)
-  DataPropertyAssertion(:hasAuthorityScore :GenesisBlock "1.0"^^xsd:decimal)
-  DataPropertyAssertion(:isFoundational :GenesisBlock "true"^^xsd:boolean)
+In proof-of-work systems the genesis block's [[Nonce]] and [[Timestamp]] establish the baseline from which the [[Difficulty Adjustment]] algorithm begins operating. In proof-of-stake and other consensus families the genesis block additionally may record initial validator allocations and staking parameters. Regardless of consensus mechanism, the genesis block's immutability is guaranteed by the same [[Cryptographic Hash Function]] that secures all subsequent blocks — any retroactive modification produces a hash mismatch that the [[Blockchain Network]] immediately rejects.
 
-  ## Object Properties
-  ObjectPropertyAssertion(:enablesFeature :GenesisBlock :BlockchainFeature)
-  ObjectPropertyAssertion(:relatesTo :GenesisBlock :RelatedConcept)
-
-  ## Annotations
-  AnnotationAssertion(rdfs:label :GenesisBlock "Genesis Block"@en)
-  AnnotationAssertion(rdfs:comment :GenesisBlock
-    "First block in a blockchain"@en)
-  AnnotationAssertion(dct:description :GenesisBlock
-    "Foundational blockchain concept with formal ontological definition"@en)
-  AnnotationAssertion(:termID :GenesisBlock "BC-0005")
-  AnnotationAssertion(:priority :GenesisBlock "1"^^xsd:integer)
-  AnnotationAssertion(:category :GenesisBlock "blockchain-fundamentals"@en)
-  )
-      ```
-
-  - ## About Genesis Block
-
-  - First block in a blockchain within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
-  - ### Key Characteristics
-    - 1. **Definitional Property**: Core defining characteristic
-    - 2. **Functional Property**: Operational behavior
-    - 3. **Structural Property**: Compositional elements
-    - 4. **Security Property**: Security guarantees provided
-    - 5. **Performance Property**: Efficiency considerations
-  - ### Technical Components
-    - **Implementation**: How concept is realized technically
-    - **Verification**: Methods for validating correctness
-    - **Interaction**: Relationships with other components
-    - **Constraints**: Technical limitations and requirements
-  - ### Use Cases
-    - **1. Core Blockchain Operation**
-    - **Application**: Fundamental blockchain functionality
-    - **Example**: Practical implementation in major blockchains
-    - **Requirements**: Technical prerequisites
-    - **Benefits**: Value provided to blockchain systems
-  - ### Standards & References
-    - [[ISO/IEC 23257:2021]] - Blockchain and distributed ledger technologies
-    - [[IEEE 2418.1]] - Blockchain and distributed ledger technologies
-    - [[NIST NISTIR]] - Blockchain and distributed ledger technologies
-
-- ### Provenance
-  - sources:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]
-  - migration-date:: 2026-04-26T00:00:00Z
+### Provenance
+- sources:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]
+- migration-date:: 2026-04-26T00:00:00Z

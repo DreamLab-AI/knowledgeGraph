@@ -48,13 +48,28 @@ public:: true
   "label": "Tokenisation",
   "definition": "The process of breaking text into discrete units (tokens) that can be processed by neural networks, ranging from characters to subwords to whole words.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
     }
   ],
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
+      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:text-generation", "label": "Text Generation"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -102,7 +117,11 @@ public:: true
   - owl-role:: Concept
   - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - partOf:: [[Natural Language Processing]]
+  - enables:: [[Large Language Models]]
+  - enables:: [[Transformer Architecture]]
+  - uses:: [[Neural Network]]
+  - relatedTo:: [[Text Generation]]
 - ### Content
   - The process of breaking text into discrete units (tokens) that can be processed by neural networks, ranging from characters to subwords to whole words.
   - ## Mass Movements and Tokenisation

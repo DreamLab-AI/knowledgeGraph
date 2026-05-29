@@ -62,21 +62,36 @@ public:: true
   "@id": "urn:ngm:class:ai-concept",
   "@type": "Class",
   "label": "AI Concept",
-  "definition": "AI Concept represents the fundamental theoretical constructs and abstract principles that underpin artificial intelligence systems. This includes core notions such as intelligence representation, learning paradigms, reasoning mechanisms, and cognitive architectures.",
+  "definition": "The foundational theoretical constructs and abstract principles underlying artificial intelligence systems, encompassing both symbolic approaches (knowledge representation, logic-based reasoning) and subsymbolic methods (connectionist networks, distributed representations). AI Concepts define learning paradigms, reasoning mechanisms, and cognitive architectures that serve as the theoretical basis for designing, evaluating, and advancing intelligent systems across research and application domains.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
-  "quality": 0.35,
-  "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
-  },
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-research-area",
       "label": "AI Research Area"
     }
-  ]
+  ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
+      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"},
+      {"@id": "urn:ngm:class:explainability", "label": "Explainability"}
+    ]
+  },
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 
@@ -139,8 +154,9 @@ public:: true
   - owl-role:: Concept
 
 - ### Relationships
-  - is-subclass-of:: [[owl:Thing]]
-  - bridges-to:: [[Blockchain]] (domain: bc)
+  - requires:: [[Knowledge Representation]]
+  - enables:: [[Machine Learning]], [[Artificial Intelligence]]
+  - relatedTo:: [[Neural Network]], [[AI Alignment]], [[Explainability]]
 
 - ### Content
 

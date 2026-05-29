@@ -1,13 +1,18 @@
 - ### Definition
-  - Interpretability techniques that characterise the overall behaviour, decision-making patterns, and feature importance of a machine learning model across its entire input space, rather than explaining individual predictions.
+  - Interpretability techniques that characterise the overall behaviour, decision-making patterns, and feature importance of a machine learning model across its entire input space, rather than explaining individual predictions. Global explanations—such as feature importance rankings, partial dependence plots, and surrogate model trees—reveal systematic model tendencies and support auditing, debugging, and regulatory compliance.
 
 - ### Semantic Classification
-  - owl-class:: spatial-computing:GlobalExplanation
+  - owl-class:: artificial-intelligence:GlobalExplanation
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **partOf** [[Explainable AI]] — global explanation methods are a major sub-category of XAI techniques
+  - **uses** [[Feature Importance]] — feature importance rankings are the most common form of global explanation
+  - **uses** [[Model Interpretability]] — global explanations operationalise model-level interpretability
+  - **contrastsWith** [[Local Explanation]] — global explanations characterise the whole model; local explanations target single instances
+  - **enables** [[Model Transparency]] — global explanations communicate systematic model behaviour to non-technical stakeholders
+  - **enables** [[Fairness]] — global feature importance reveals whether protected attributes drive model decisions
 
 - ### Content
   - Interpretability techniques that characterise the overall behaviour, decision-making patterns, and feature importance of a machine learning model across its entire input space, rather than explaining individual predictions.

@@ -48,7 +48,8 @@ public:: true
   "label": "Virtual Location",
   "definition": "A defined spatial coordinate or addressable place within a virtual environment, representing specific positions, areas, or destinations that users can navigate to, reference, and interact with in metaverse platforms.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-platform-and-environment",
@@ -59,11 +60,38 @@ public:: true
       "label": "Virtual Environment"
     }
   ],
-  "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
+  },
+  "relations": {
+    "uses": [
+      {
+        "@id": "urn:ngm:class:portal-system",
+        "label": "Portal System"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-navigation-systems",
+        "label": "Metaverse Navigation Systems"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:virtual-land-rights",
+        "label": "Virtual Land Rights"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-identity",
+        "label": "Virtual Identity"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:virtual-world",
+        "label": "Virtual World"
+      }
+    ]
   }
 }
 ```
@@ -109,6 +137,11 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Virtual Environment]]
+  - Part Of: [[Virtual World]]
+  - Uses: [[Portal System]]
+  - Uses: [[Metaverse Navigation Systems]]
+  - Related To: [[Virtual Land Rights]]
+  - Related To: [[Virtual Identity]]
 
 - ### Content
 

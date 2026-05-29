@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:digital-infrastructure",
   "domain": "infrastructure",
-  "definition": "Digital Infrastructure is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "The foundational computing, networking, and storage systems that underpin large-scale digital services and telecollaboration platforms, including hyperscale data centres with GPU clusters, content delivery networks, software-defined networking, and edge computing nodes. Digital infrastructure is increasingly defined by cloud-native patterns\u2014containerisation, orchestration, and infrastructure-as-code\u2014enabling programmatic resource allocation and resilient, globally distributed deployments.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
@@ -13,12 +13,34 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:orchestration",
+        "label": "Orchestration"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +49,12 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ]
   },
   "wikilinks": [
     {

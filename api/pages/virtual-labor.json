@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:virtual-labor",
   "domain": "spatial-computing",
-  "definition": "Virtual Labor is a spatial computing concept and a type of Metaverse.",
+  "definition": "Work performed in virtual environments that generates economic value, spanning content creation, service provision, virtual construction, platform governance, and social labour. Virtual labour is often platform-dependent, contract-based, and remunerated via virtual currency or revenue-sharing models, raising significant questions around labour rights, taxation of cross-border virtual income, and platform exploitation.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -17,21 +17,49 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:virtual-currency",
+        "label": "Virtual Currency"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:land-economics",
+        "label": "Land Economics"
+      },
+      {
+        "id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      }
+    ]
   },
   "wikilinks": [
     {

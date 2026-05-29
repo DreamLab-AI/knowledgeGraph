@@ -7,7 +7,10 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **contrastsWith**: [[Fairness]], [[Fairness Metrics]]
+  - **partOf**: [[AI Risk]], [[AI Ethics]]
+  - **requires**: [[Bias Detection Methods]], [[Bias Mitigation Techniques]]
+  - **relatedTo**: [[Training Data]], [[Accountability]]
 
 - ### Content
   - Systematic and unjust discrimination in AI system outcomes that disadvantages individuals or groups based on protected characteristics (race, gender, age, disability, religion, etc.) or other sensitive attributes, resulting in material harm, dignity violations, or perpetuation of societal inequalities.

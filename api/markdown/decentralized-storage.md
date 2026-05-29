@@ -7,7 +7,11 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - enables [[Censorship Resistance]]
+  - enables [[Digital Twin]]
+  - uses [[Content Addressing]]
+  - uses [[Blockchain]]
+  - contrastsWith [[Network Infrastructure]]
 
 - ### Content
   - Decentralised storage distributes data across peer-to-peer networks providing persistence, redundancy, and access without single points of failure, delivering censorship resistance, data availability, and user sovereignty guarantees.

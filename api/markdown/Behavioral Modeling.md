@@ -46,7 +46,7 @@ public:: true
   "@id": "urn:ngm:class:behavioral-modeling",
   "@type": "Class",
   "label": "Behavioral Modeling",
-  "definition": "Behavioral Modeling is a artificial intelligence concept and a type of Machine Learning.",
+  "definition": "Behavioral Modeling is the application of machine learning and statistical methods to represent, predict, and simulate how agents (humans, robots, or software entities) act under varying conditions. It underpins applications ranging from user-behaviour analytics and fraud detection to reinforcement learning policies and autonomous agent control.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -59,7 +59,28 @@ public:: true
       "label": "Machine Learning"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:behavioral-analytics", "label": "Behavioral Analytics"},
+      {"@id": "urn:ngm:class:behavioral-learning", "label": "Behavioral Learning"},
+      {"@id": "urn:ngm:class:behavior-analysis", "label": "Behavior Analysis"},
+      {"@id": "urn:ngm:class:anomaly-detection", "label": "Anomaly Detection"},
+      {"@id": "urn:ngm:class:pattern-recognition", "label": "Pattern Recognition"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
+      {"@id": "urn:ngm:class:machine-learning-model", "label": "Machine Learning Model"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:fraud-detection", "label": "Fraud Detection"},
+      {"@id": "urn:ngm:class:autonomous-agent", "label": "Autonomous Agent"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:embodied-ai-simulation", "label": "Embodied AI Simulation"},
+      {"@id": "urn:ngm:class:avatar-behavior", "label": "Avatar Behavior"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -67,6 +88,8 @@ public:: true
   }
 }
 ```
+
+Behavioral modeling bridges the gap between observed actions and the latent intent driving those actions. In robotics and autonomous systems, behavioral models encode how agents should respond to environmental stimuli. In security and fraud contexts, they establish baselines from which deviations signal anomalous activity. In social simulation and virtual worlds, behavioral models animate non-player characters and digital avatars with convincing, context-sensitive conduct.
 
 ```json-ld
 {

@@ -5,15 +5,11 @@
   "public": true,
   "classIri": "urn:ngm:class:ecdsa",
   "domain": "blockchain",
-  "definition": "Elliptic Curve Digital Signature Algorithm within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "Elliptic Curve Digital Signature Algorithm (ECDSA) is a cryptographic primitive that uses elliptic curve mathematics to generate and verify digital signatures, underpinning transaction authentication in Bitcoin, Ethereum, and most public blockchain networks. ECDSA provides non-repudiation, integrity verification, and ownership proof with compact key sizes relative to RSA equivalents.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-cryptographic-primitive",
       "label": "Cryptographic Primitive"
-    },
-    {
-      "id": "urn:ngm:class:blockchain-entity",
-      "label": "Blockchain Entity"
     },
     {
       "id": "urn:ngm:class:cryptographic-primitive",
@@ -21,21 +17,64 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-verification",
+        "label": "Cryptographic Verification"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:private-key",
+        "label": "Private Key"
+      },
+      {
+        "id": "urn:ngm:class:public-key",
+        "label": "Public Key"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      }
+    ]
   },
   "wikilinks": [
     {

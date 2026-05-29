@@ -33,20 +33,48 @@ public:: true
   "@id": "urn:ngm:class:economic-layer",
   "@type": "Class",
   "label": "Economic Layer",
-  "definition": "The EconomicLayer represents the abstraction level of implemented economic mechanisms, incentive structures, market designs, resource allocation systems, and game-theoretic implementations that govern economic behavior in blockchain and distributed systems.",
+  "definition": "The Economic Layer is the abstraction level at which concrete economic mechanisms are implemented in blockchain and distributed systems, encompassing fee markets, reward distribution formulae, automated market makers, staking yield calculations, and game-theoretic incentive structures. It is distinct from conceptual economic theory in that it specifies exact parameters, formulas, and on-chain behaviours.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
     }
   ],
-  "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "@id": "urn:ngm:class:governance-model",
+        "label": "Governance Model"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:metaverse-as-markets",
+        "label": "Metaverse as Markets"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "@id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      }
+    ]
   }
 }
 ```
@@ -79,7 +107,11 @@ public:: true
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Has part [[Governance Token]] as the primary instrument of on-chain economic agency
+  - Has part [[Governance Model]] which specifies voting and incentive rules
+  - Enables [[Metaverse as Markets]] by providing the economic infrastructure for virtual economies
+  - Related to [[Governance]] as the broader policy framework within which mechanisms operate
+  - Related to [[Governance Framework]] for regulatory and procedural compliance
 
 - ### Content
   - **Classification**

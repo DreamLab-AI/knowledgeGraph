@@ -1,12 +1,14 @@
 - ### Definition
-  - RemoteRendering is a concept within the ngm domain.
+  - Remote Rendering offloads GPU-intensive 3D scene computation to a server or cloud node, streaming compressed video frames to a thin client such as an XR headset or mobile device. This approach decouples visual fidelity from device hardware constraints, enabling photorealistic graphics on low-power endpoints while centralising GPU resources. Latency and bandwidth are critical quality-of-service parameters; edge computing deployments minimise round-trip delay to support interactive frame rates.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:RemoteRendering
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires**: Edge Computing, GPU Compute, Latency
+  - **uses**: Content Delivery Network, Cloud Infrastructure
+  - **enables**: Photorealistic Rendering
 
 - ### Content
   # RemoteRendering

@@ -42,15 +42,29 @@ public:: true
   "@id": "urn:ngm:class:distributed-system",
   "@type": "Class",
   "label": "Distributed System",
-  "definition": "Distributed System is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A Distributed System is a collection of autonomous computing nodes that communicate over a network and coordinate their actions to appear as a single coherent system to end users. Key properties include decentralisation (no single point of failure), fault tolerance via consensus protocols, and eventual consistency governed by CAP theorem trade-offs. Blockchain networks, microservices architectures, and distributed databases are canonical instantiations.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
     }
   ],
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
+      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:cryptographic-hash", "label": "Cryptographic Hash"},
+      {"@id": "urn:ngm:class:data-replication", "label": "Data Replication"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -100,8 +114,12 @@ public:: true
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
-
+  - hasPart:: [[Consensus Mechanism]]
+  - hasPart:: [[Blockchain Network]]
+  - enables:: [[Blockchain]]
+  - enables:: [[Distributed Ledger]]
+  - requires:: [[Cryptographic Hash]]
+  - requires:: [[Data Replication]]
   - bridges-to:: [[Blockchain]] (bc)
 - ### Content
 

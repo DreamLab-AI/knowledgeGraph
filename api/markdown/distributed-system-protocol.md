@@ -1,12 +1,15 @@
 - ### Definition
-  - DistributedSystemProtocol is a concept within the ngm domain.
+  - A Distributed System Protocol defines the communication and coordination mechanisms enabling distributed nodes to achieve collective functionality through standardised message formats, state synchronisation procedures, and failure recovery mechanisms. Such protocols underpin blockchain networks, peer-to-peer systems, and consensus-based infrastructure through gossip dissemination, leader election, distributed hash tables, and inter-node authentication channels.
 
 - ### Semantic Classification
   - owl-class:: blockchain:DistributedSystemProtocol
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **implements**: [[Consensus Protocol]], [[Communication Protocol]]
+  - **enables**: [[Distributed System]], [[Blockchain Network]]
+  - **uses**: [[Cryptographic Protocol]], [[Network Infrastructure]]
+  - **relatedTo**: [[Distributed Ledger Technology]]
 
   - bridges-to:: [[Blockchain]] (bc)
 - ### Content

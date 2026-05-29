@@ -7,7 +7,12 @@
   - belongs-to-domain:: [[BlockchainDomain]], [[RegulatoryDomain]], [[ComplianceDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires:: [[Anti-Money Laundering]], [[Travel Rule]]
+  - hasPart:: [[Compliance Framework]], [[Compliance Monitoring]]
+  - uses:: [[Risk Assessment]], [[Blockchain Compliance]]
+  - relatedTo:: [[Virtual Asset]], [[Cryptocurrency]], [[Decentralised Finance]], [[Blockchain Compliance]], [[Regulatory Compliance]]
+  - standardizedBy:: [[Financial Regulation]]
+  - enables:: [[Blockchain Governance]]
 
 - ### Content
   - The Financial Action Task Force (FATF) Recommendations represent the most comprehensive and influential global standards for combating money laundering, terrorist financing, and the financing of proliferation of weapons of mass destruction. Originally established in 1989 by the G7 Summit in Paris, the FATF has evolved from a temporary initiative into the premier international standard-setting body for [[Anti-Money Laundering]] (AML) and [[Counter-Terrorist Financing]] (CTF) compliance. The Recommendations, initially numbering 40 with an additional 9 Special Recommendations on terrorist financing added after September 11, 2001, were consolidated and revised in 2012 into a unified set of 40 Recommendations that apply to both money laundering and terrorist financing. These standards have been adopted by over 200 jurisdictions worldwide and form the foundation for national AML/CTF legislation across the globe. For the [[Blockchain]] and [[Cryptocurrency]] industry, the FATF Recommendations gained particular significance following the October 2018 amendments that explicitly addressed [[Virtual Assets]] and Virtual Asset Service Providers (VASPs), bringing digital assets firmly within the scope of traditional financial crime compliance frameworks. The June 2019 Interpretive Note to Recommendation 15 introduced the controversial "travel rule" requiring VASPs to share originator and beneficiary information for [[Virtual Asset]] transfers, fundamentally challenging the pseudonymous nature of blockchain transactions. The FATF standards are not legally binding international law but exert tremendous practical force through peer pressure, mutual evaluations, and the threat of being listed as a non-cooperative jurisdiction, which can result in financial isolation. The cryptocurrency industry's struggle to implement these standards whilst preserving innovation and privacy has become one of the defining regulatory challenges of the blockchain era, with ongoing tensions between compliance obligations and the technological capabilities of decentralised systems.

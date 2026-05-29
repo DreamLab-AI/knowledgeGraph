@@ -70,7 +70,7 @@ public:: true
   "@id": "urn:ngm:class:decentralization",
   "@type": "Class",
   "label": "Decentralization",
-  "definition": "Distribution of control across network within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "definition": "The architectural property of distributing control, data storage, and decision-making across many independent network participants rather than concentrating them in a single authority. In blockchain systems, decentralisation is achieved through open participation, distributed consensus, and cryptographic enforcement of rules, providing censorship resistance, fault tolerance, and permissionless access.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
@@ -87,7 +87,28 @@ public:: true
       "label": "DistributedDataStructure"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"},
+      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
+      {"@id": "urn:ngm:class:decentralised-autonomous-organisation", "label": "Decentralised Autonomous Organisation"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:node", "label": "Node"},
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"},
+      {"@id": "urn:ngm:class:decentralized-storage", "label": "Decentralized Storage"},
+      {"@id": "urn:ngm:class:decentralization-layer", "label": "Decentralization Layer"},
+      {"@id": "urn:ngm:class:blockchain-scalability", "label": "Blockchain Scalability"},
+      {"@id": "urn:ngm:class:longest-chain-rule", "label": "Longest Chain Rule"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:51-attack", "label": "51% Attack"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

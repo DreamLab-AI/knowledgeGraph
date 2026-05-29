@@ -7,7 +7,12 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Requires [[Training Data]]
+  - Enables [[Transfer Learning]]
+  - Enables [[Computer Vision]]
+  - Supports (mitigation of) [[Overfitting]]
+  - Uses [[Generative AI]]
+  - Related To [[Machine Learning Pipeline]]
 
 - ### Content
   - Techniques that create modified versions of training examples to increase dataset diversity and model robustness. Data augmentation strategies apply transformations that preserve label semantics whilst introducing variation, improving generalisation and reducing overfitting.

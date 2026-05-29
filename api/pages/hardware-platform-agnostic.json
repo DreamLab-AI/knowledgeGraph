@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:hardware-platform-agnostic",
   "domain": "spatial-computing",
-  "definition": "A design principle and architectural quality ensuring that software, systems, or protocols can operate independently of specific hardware architectures or platform implementations.",
+  "definition": "A design principle and architectural quality ensuring that software, systems, or protocols can operate independently of specific hardware architectures or platform implementations. Hardware-agnostic systems achieve portability through abstraction layers\u2014such as virtual machines, containers, or cross-platform runtimes\u2014that decouple application logic from underlying physical or operating-system constraints.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -13,18 +13,50 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      },
+      {
+        "id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:xr-framework",
+        "label": "XR Framework"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:xr-hardware",
+        "label": "XR Hardware"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-architecture",
+        "label": "Metaverse Architecture"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": []

@@ -1,12 +1,15 @@
 - ### Definition
-  - Equity is a concept within the ngm domain.
+  - The principle of fair and impartial access to AI, media technologies, and digital infrastructure across geographic, socioeconomic, and demographic groups. Equity in this context addresses disparities in technological access, educational opportunity, and participation in AI-driven economies, and informs legal frameworks and international cooperation mechanisms designed to close digital divide gaps.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:Equity
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **relatedTo**: Education and AI, Fairness (OECD) — equity in technology access directly conditions educational outcomes and is formalised in OECD fairness principles
+  - **requires**: AI Regulation — effective equity requires regulatory frameworks mandating non-discriminatory access
+  - **enables**: Education Technology — equitable access enables broader uptake of educational technology
+  - **contrastsWith**: AI Ethics — equity is a concrete distributional concern within the broader AI ethics discourse
 
 - ### Content
   # Global Equity in Access to AI and Media Technologies

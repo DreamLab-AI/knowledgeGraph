@@ -54,7 +54,7 @@ public:: true
   "@id": "urn:ngm:class:conversational-ai",
   "@type": "Class",
   "label": "Conversational AI",
-  "definition": "Conversational AI is a artificial intelligence concept and a type of Natural Language Processing.",
+  "definition": "Conversational AI encompasses systems that engage in natural-language dialogue with humans, including chatbots, voice assistants, and large-language-model-powered interfaces. It applies natural language processing, language modeling, dialogue management, and speech recognition to understand intent and generate contextually appropriate responses.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -67,7 +67,25 @@ public:: true
       "label": "Natural Language Processing"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:chatbots", "label": "Chatbots"},
+      {"@id": "urn:ngm:class:dialogue-system", "label": "Dialogue System"},
+      {"@id": "urn:ngm:class:natural-language-understanding", "label": "Natural Language Understanding"},
+      {"@id": "urn:ngm:class:sentiment-analysis", "label": "Sentiment Analysis"},
+      {"@id": "urn:ngm:class:voice-interaction", "label": "Voice Interaction"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
+      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
+      {"@id": "urn:ngm:class:speech-recognition", "label": "Speech Recognition"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:language-modeling", "label": "Language Modeling"},
+      {"@id": "urn:ngm:class:multimodal-ai", "label": "Multimodal AI"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

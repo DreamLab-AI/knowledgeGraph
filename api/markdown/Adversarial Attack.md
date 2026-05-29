@@ -50,27 +50,55 @@ public:: true
   "@id": "urn:ngm:class:adversarial-attack",
   "@type": "Class",
   "label": "Adversarial Attack",
-  "definition": "A deliberate attempt to manipulate an AI system by crafting malicious inputs or exploiting vulnerabilities to cause misclassification, extract confidential information, degrade performance, or subvert the system's intended behavior.",
+  "definition": "An Adversarial Attack is a deliberate attempt to manipulate an AI system by crafting malicious inputs or exploiting model vulnerabilities to cause misclassification, extract confidential information, degrade performance, or subvert intended behaviour. Attack classes include evasion, poisoning, model extraction, inversion, and backdoor, across white-box, black-box, and grey-box threat models.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
     }
   ],
-  "quality": 0.5,
-  "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
-  },
   "sameAs": [
     {
       "@id": "urn:ngm:class:adversarial-attacks",
       "label": "Adversarial Attacks"
     }
-  ]
+  ],
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:robustness",
+        "label": "Robustness"
+      },
+      {
+        "@id": "urn:ngm:class:safety-fine-tuning",
+        "label": "Safety Fine Tuning"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
+    ]
+  }
 }
 ```
 
@@ -119,7 +147,11 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - bridges-to:: [[Computer Vision]] (ai)
+  - Contrasts with [[Robustness]] (the defensive property adversarial attacks seek to undermine)
+  - Contrasts with [[Safety Fine Tuning]] (the training-time mitigation strategy)
+  - Related to [[Computer Vision]] (image-domain attacks are the canonical demonstration)
+  - Related to [[AI Safety]] as a primary threat category motivating safety research
+  - Uses [[Deep Learning]] models as the primary attack surface
 
 - ### Content
   - A deliberate attempt to manipulate an AI system by crafting malicious inputs or exploiting vulnerabilities to cause misclassification, extract confidential information, degrade performance, or subvert the system's intended behavior.

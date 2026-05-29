@@ -175,7 +175,7 @@ public:: true
       "label": "Feedback Systems"
     },
     {
-      "@id": "urn:ngm:class:robotic-systems",
+      "@id": "urn:ngm:class:robotic-system",
       "label": "Robotic Systems"
     }
   ],

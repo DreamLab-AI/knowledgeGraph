@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:policy-engine",
   "domain": "spatial-computing",
-  "definition": "automated component that applies governance or access-control rules within a metaverse system.",
+  "definition": "A Policy Engine is an automated software component that evaluates, enforces, and logs governance, access-control, and behavioural rules within a metaverse or spatial computing system. It interprets declarative policy specifications (e.g., XACML, OPA Rego, or bespoke ontology-derived rules) and applies them at runtime to user actions, asset transactions, and inter-platform communications, enabling consistent compliance across distributed, multi-stakeholder virtual environments.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-governance-and-safety",
@@ -18,17 +18,44 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:technical-standards",
+        "label": "Technical Standards"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:policy-enforcement",
+        "label": "Policy Enforcement"
+      }
+    ],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:metaverse-governance-and-safeguarding",
+        "label": "Metaverse governance and safeguarding"
+      },
+      {
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": []

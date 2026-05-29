@@ -10,6 +10,12 @@
 
 - ### Relationships
   - is-subclass-of:: [[Blockchain Entity]]
+  - hasPart:: [[Byzantine Fault Tolerance]], [[Replication System]], [[Data Replication]]
+  - requires:: [[Consensus Mechanism]], [[Distributed System]], [[Distributed Systems]]
+  - enables:: [[High Availability]], [[Operational Resilience]], [[Blockchain]]
+  - uses:: [[Practical Byzantine Fault Tolerance]], [[Federated Byzantine Fault Tolerance]]
+  - relatedTo:: [[Distributed Architecture]], [[Fault Tolerance]], [[Byzantine Fault Tolerant System]]
+  - contrastsWith:: [[Distributed Ledger Technology]]
 
 - ### Content
 

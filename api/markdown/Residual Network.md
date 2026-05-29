@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:residual-network",
   "@type": "Class",
   "label": "Residual Network",
-  "definition": "Residual Network is a artificial intelligence concept and a type of Deep Learning.",
+  "definition": "A deep neural network architecture introduced by He et al. (2016) that employs skip connections to allow gradients to propagate directly through layers, expressed as H(x) = F(x) + x. This residual formulation resolves the vanishing gradient problem in very deep networks, enabling training of architectures with hundreds of layers and achieving state-of-the-art performance on image recognition benchmarks.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
@@ -59,7 +60,21 @@ public:: true
       "label": "Deep Learning"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"},
+      {"@id": "urn:ngm:class:neural-network-layer", "label": "Neural Network Layer"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
+      {"@id": "urn:ngm:class:image-classification", "label": "Image Classification"},
+      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
+      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -100,7 +115,7 @@ public:: true
 
 
 - ### Definition
-  - ### Primary Definition
+  - A deep neural network architecture introduced by He et al. (2016) that employs skip connections to allow gradients to propagate directly through layers, expressed as H(x) = F(x) + x. This residual formulation resolves the vanishing gradient problem in very deep networks, enabling training of architectures with hundreds of layers and achieving state-of-the-art performance on image recognition benchmarks.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:ResidualNetwork
@@ -108,7 +123,9 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires** → [[Backpropagation]], [[Neural Network Layer]]
+  - **enables** → [[Computer Vision]], [[Image Classification]], [[Transfer Learning]]
+  - **uses** → [[Convolutional Neural Network]], [[GPU Compute]]
 
 - ### Content
   - ### Primary Definition

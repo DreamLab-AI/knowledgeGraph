@@ -54,9 +54,10 @@ public:: true
   "@id": "urn:ngm:class:instance-segmentation",
   "@type": "Class",
   "label": "Instance Segmentation",
-  "definition": "Instance Segmentation extends object detection by predicting precise pixel-level masks for each individual object instance, combining object detection with semantic segmentation to delineate exact boundaries of distinct objects.",
+  "definition": "A computer vision task that extends object detection by predicting precise pixel-level masks for each individual object instance, jointly performing detection and segmentation to delineate the exact boundaries of distinct objects. Architectures such as Mask R-CNN, YOLACT, and SOLOv2 enable fine-grained object localisation essential for robotics manipulation, autonomous driving, and medical image analysis.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-interaction",
@@ -72,6 +73,36 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-segmentation",
+        "label": "Semantic Segmentation"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:scene-understanding",
+        "label": "Scene Understanding"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:computer-vision-task",
+        "label": "Computer Vision Task"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:panoptic-segmentation",
+        "label": "Panoptic Segmentation"
+      }
+    ]
   }
 }
 ```
@@ -126,7 +157,10 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Requires: [[Object Detection]], [[Semantic Segmentation]]
+  - Enables: [[Scene Understanding]]
+  - Part Of: [[Panoptic Segmentation]]
+  - Related To: [[Computer Vision Task]]
 
 - ### Content
   - Instance Segmentation extends object detection by predicting precise pixel-level masks for each individual object instance, combining object detection with semantic segmentation to delineate exact boundaries of distinct objects. Instance segmentation models (Mask R-CNN, YOLACT, SOLOv2) enable fine-grained object localisation essential for robotics manipulation, autonomous driving, and medical image analysis.

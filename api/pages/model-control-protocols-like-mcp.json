@@ -8,7 +8,7 @@
   "definition": "Model Control Protocols like MCP refers to the family of open, standardised communication protocols that govern how large language model (LLM) inference hosts communicate with external services, tools, data sources, and agents at runtime, enabling composable agentic ecosystems without per-integra...",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure (Category)"
     }
   ],

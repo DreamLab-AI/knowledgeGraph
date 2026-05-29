@@ -7,7 +7,12 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Avatar]]
+  - requires [[Spatial Audio]]
+  - enables [[Virtual Collaboration]]
+  - enables [[Immersive Communication]]
+  - relatedTo [[Virtual Economy]]
+  - relatedTo [[Collaboration]]
 
 - ### Content
   - Immersive virtual reality experiences specifically designed for real-time social interaction and collaboration among multiple users within shared persistent virtual spaces using avatar-based presence and synchronised communication. Platforms like [[MetaHorizonWorlds|Meta Horizon Worlds]], [[VRChat]], and [[AltspaceVR]] enable social activities from casual hangouts to professional meetings and educational workshops, enhanced by spatial audio and gesture recognition. Integration with [[DecentralisedIdentity|blockchain-based identity]], [[NFT|NFT avatars]], and [[VirtualEconomy|virtual economies]] enables interoperable social metaverses where users maintain control over digital identities and virtual assets across platforms.

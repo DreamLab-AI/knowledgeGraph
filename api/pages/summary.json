@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:summary",
   "domain": "spatial-computing",
-  "definition": "The metaverse represents a convergent technological paradigm combining VirtualReality|virtual reality, AugmentedReality|augmented reality, and ExtendedReality|extended reality to create persistent, 3D virtual shared environments enabling user interaction, economic transactions, and so...",
+  "definition": "The metaverse represents a convergent technological paradigm combining virtual reality, augmented reality, and extended reality to create persistent, 3D virtual shared environments enabling user interaction, economic transactions, and social collaboration. This digital infrastructure integrates blockchain-based assets, smart contracts, and decentralised identity systems to support genuine digital ownership, interoperability, and governance across platforms.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -13,21 +13,52 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.4,
-  "maturity": "draft",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      }
+    ],
     "requires": [],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
+    ]
   },
   "wikilinks": [
     {

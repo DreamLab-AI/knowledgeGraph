@@ -37,15 +37,28 @@ public:: true
   "@id": "urn:ngm:class:financial-instruments",
   "@type": "Class",
   "label": "Financial Instruments",
-  "definition": "Financial Instruments is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Financial Instruments are contractual agreements that represent a monetary value and can be created, traded, modified, or settled. In blockchain and decentralised finance ecosystems they include smart contract-based derivatives, lending protocols, automated market makers, yield aggregators, and synthetic assets that replicate exposure to real-world financial assets through on-chain collateralisation and oracle price feeds.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-legal-and-regulatory",
       "label": "Legal and Regulatory"
     }
   ],
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:financial-services", "label": "Financial Services"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:smart-contracts", "label": "Smart Contracts"},
+      {"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:cryptocurrency", "label": "Cryptocurrency"},
+      {"@id": "urn:ngm:class:tokenization", "label": "Tokenization"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -76,14 +89,18 @@ public:: true
 
 
 - ### Definition
-  - FinancialInstruments is a concept within the ngm domain.
+  - Financial Instruments are contractual agreements that represent a monetary value and can be created, traded, modified, or settled. In blockchain and decentralised finance ecosystems they include smart contract-based derivatives, lending protocols, automated market makers, yield aggregators, and synthetic assets that replicate exposure to real-world financial assets through on-chain collateralisation and oracle price feeds.
 
 - ### Semantic Classification
   - owl-class:: blockchain:FinancialInstruments
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - partOf [[Financial Services]]
+  - requires [[Smart Contracts]]
+  - requires [[Financial Regulation]]
+  - relatedTo [[Cryptocurrency]]
+  - relatedTo [[Tokenization]]
 
 - ### Content
 

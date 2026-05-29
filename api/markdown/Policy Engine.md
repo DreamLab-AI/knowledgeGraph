@@ -46,9 +46,9 @@ public:: true
   "@id": "urn:ngm:class:policy-engine",
   "@type": "Class",
   "label": "Policy Engine",
-  "definition": "automated component that applies governance or access-control rules within a metaverse system.",
+  "definition": "A Policy Engine is an automated software component that evaluates, enforces, and logs governance, access-control, and behavioural rules within a metaverse or spatial computing system. It interprets declarative policy specifications (e.g., XACML, OPA Rego, or bespoke ontology-derived rules) and applies them at runtime to user actions, asset transactions, and inter-platform communications, enabling consistent compliance across distributed, multi-stakeholder virtual environments.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-governance-and-safety",
@@ -59,6 +59,20 @@ public:: true
       "label": "Metaverse governance and safeguarding"
     }
   ],
+  "relations": {
+    "implements": [
+      {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
+      {"@id": "urn:ngm:class:policy-enforcement", "label": "Policy Enforcement"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:technical-standards", "label": "Technical Standards"},
+      {"@id": "urn:ngm:class:authentication", "label": "Authentication"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:metaverse-governance-and-safeguarding", "label": "Metaverse governance and safeguarding"},
+      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -100,7 +114,7 @@ public:: true
 
 
 - ### Definition
-  - automated component that applies governance or access-control rules within a metaverse system.
+  - A Policy Engine is an automated software component that evaluates, enforces, and logs governance, access-control, and behavioural rules within a metaverse or spatial computing system. It interprets declarative policy specifications and applies them at runtime to user actions, asset transactions, and inter-platform communications, enabling consistent compliance across distributed virtual environments.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:PolicyEngine
@@ -108,7 +122,12 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - implements [[Access Control]]
+  - implements [[Policy Enforcement]]
+  - requires [[Technical Standards]]
+  - requires [[Authentication]]
+  - supports [[Metaverse governance and safeguarding]]
+  - supports [[Compliance Framework]]
 
 - ### Content
   - automated component that applies governance or access-control rules within a metaverse system.

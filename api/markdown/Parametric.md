@@ -42,16 +42,30 @@ public:: true
   "@id": "urn:ngm:class:parametric",
   "@type": "Class",
   "label": "Parametric",
-  "definition": "Parametric is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A design methodology in which objects, environments, or behaviours are specified through adjustable parameters rather than fixed geometry, enabling variant generation and real-time adaptation. In metaverse and spatial computing contexts, parametric approaches underpin voice-and-text-driven CAD primitive creation, procedural content generation, and digital twin model customisation within shared virtual workspaces.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
     }
   ],
-  "quality": 0.5,
+  "qualityScore": 0.7,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:parametric-modeling", "label": "Parametric Modeling"},
+      {"@id": "urn:ngm:class:procedural-content-generation", "label": "Procedural Content Generation"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
+      {"@id": "urn:ngm:class:procedural-generation", "label": "Procedural Generation"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:rendering-engine", "label": "Rendering Engine"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -92,14 +106,16 @@ public:: true
 
 
 - ### Definition
-  - Parametric is a concept within the ngm domain.
+  - A design methodology in which objects, environments, or behaviours are specified through adjustable parameters rather than fixed geometry, enabling variant generation and real-time adaptation. In metaverse and spatial computing contexts, parametric approaches underpin voice-and-text-driven CAD primitive creation, procedural content generation, and digital twin model customisation within shared virtual workspaces.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:Parametric
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses: [[Parametric Modeling]], [[Procedural Content Generation]]
+  - enables: [[Digital Twin]], [[Procedural Generation]]
+  - relatedTo: [[Spatial Computing]], [[Rendering Engine]]
 
 - ### Content
   - ![BB1mNtGj.jpeg](../assets/BB1mNtGj_1716451730618_0.jpeg)

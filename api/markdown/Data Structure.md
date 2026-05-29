@@ -60,7 +60,7 @@ public:: true
   "label": "Data Structure",
   "definition": "Data Structures in AI represent the organizational schemes for efficiently storing, accessing, and manipulating data used in machine learning algorithms.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
@@ -72,7 +72,20 @@ public:: true
       "@id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
     }
-  ]
+  ],
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
+      {"@id": "urn:ngm:class:graph-neural-network", "label": "Graph Neural Network"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
+      {"@id": "urn:ngm:class:algorithm", "label": "Algorithm"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+    ]
+  }
 }
 ```
 
@@ -131,6 +144,11 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: ['owl:Thing']
+  - enables [[Neural Network]]
+  - enables [[Graph Neural Network]]
+  - uses [[GPU Compute]]
+  - uses [[Algorithm]]
+  - relatedTo [[Machine Learning]]
 
 - ### Content
 

@@ -5,20 +5,33 @@
   "public": true,
   "classIri": "urn:ngm:class:inertial-measurement-unit",
   "domain": "robotics",
-  "definition": "An electronic sensor device that measures a body's specific force, angular rate, and magnetic field using accelerometers, gyroscopes, and magnetometers to estimate orientation and motion.",
+  "definition": "An Inertial Measurement Unit (IMU) is an electronic device incorporating tri-axial accelerometers and gyroscopes \u2014 and optionally tri-axial magnetometers \u2014 that measures a rigid body's specific force, angular velocity, and magnetic field strength to compute estimates of linear acceleration, angular rate, and orientation relative to an inertial reference frame. IMUs are classified by grade (consumer MEMS, tactical, navigation, strategic) according to drift, noise, and bias stability specifications. In robotics and spatial computing, IMUs provide the high-frequency proprioceptive backbone for state estimation, sensor-fusion pipelines, and attitude control loops.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-perception",
       "label": "Robot Perception"
+    },
+    {
+      "id": "urn:ngm:class:robot-sensor",
+      "label": "Robot Sensor"
     }
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:odometry",
+        "label": "Odometry"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -26,8 +39,22 @@
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:robot-hardware",
+        "label": "Robot Hardware"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

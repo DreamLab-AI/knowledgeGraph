@@ -33,16 +33,31 @@ public:: true
   "@id": "urn:ngm:class:some-legacy-linked-json",
   "@type": "Class",
   "label": "Some legacy Linked-JSON",
-  "definition": "Some legacy Linked-JSON is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Some legacy Linked-JSON is a collection of early-stage JSON-LD-based ontology data structures capturing metaverse entity models — including agents, scenes, digital assets, and virtual economies — created before the current NarrativeGoldmine v2 schema. These artefacts document the iterative evolution of the knowledge graph's data model and serve as a reference for schema migration and ontology provenance tracing.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-data-management",
       "label": "Data Management"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:json-ld", "label": "JSON-LD"},
+      {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:knowledge-graph-construction", "label": "Knowledge Graph Construction"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:rdf", "label": "RDF"},
+      {"@id": "urn:ngm:class:semantic-web", "label": "Semantic Web"}
+    ]
+  },
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -72,14 +87,16 @@ public:: true
 
 
 - ### Definition
-  - Some legacy Linked-JSON is a concept within the ngm domain.
+  - Some legacy Linked-JSON is a collection of early-stage JSON-LD-based ontology data structures capturing metaverse entity models — including agents, scenes, digital assets, and virtual economies — created before the current NarrativeGoldmine v2 schema. These artefacts document the iterative evolution of the knowledge graph's data model and serve as a reference for schema migration and ontology provenance tracing.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:SomeLegacyLinkedJSON
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **relatedTo**: JSON-LD — the content uses JSON-LD syntax for linked data representation; Ontology — the artefacts encode an early ontological model of the metaverse domain; Knowledge Graph — this data was a precursor to the current knowledge graph.
+  - **enables**: Knowledge Graph Construction — the legacy models inform how the current graph is structured and what entities are required.
+  - **uses**: RDF — the underlying data model follows RDF triples; Semantic Web — the design reflects Semantic Web principles for interlinked machine-readable data.
 
 - ### Content
   - ```mermaid

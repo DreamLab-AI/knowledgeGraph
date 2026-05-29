@@ -33,20 +33,56 @@ public:: true
   "@id": "urn:ngm:class:humans-avatars-character",
   "@type": "Class",
   "label": "Humans, Avatars , Character",
-  "definition": "Humans, Avatars Character is a technology infrastructure concept and a type of infrastructure.",
-  "domain": "infrastructure",
-  "maturity": "draft",
+  "definition": "The combined domain encompassing the creation, animation, and management of digital representations of human beings in virtual environments, including photorealistic digital humans, stylised avatars, and fictional characters. This domain integrates motion capture, AI-driven face and body generation, lip-synchronisation, and avatar portability standards to produce consistent, expressive agents across metaverse platforms.",
+  "domain": "spatial-computing",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
       "label": "Computing and Cloud"
     }
   ],
-  "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      },
+      {
+        "@id": "urn:ngm:class:digital-humans",
+        "label": "Digital Humans"
+      },
+      {
+        "@id": "urn:ngm:class:character-model",
+        "label": "Character Model"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:avatar-interoperability",
+        "label": "Avatar Interoperability"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      },
+      {
+        "@id": "urn:ngm:class:animation-software",
+        "label": "Animation Software"
+      },
+      {
+        "@id": "urn:ngm:class:digital-human-technology",
+        "label": "Digital Human Technology"
+      }
+    ]
   }
 }
 ```
@@ -72,14 +108,16 @@ public:: true
 
 
 - ### Definition
-  - Humans, Avatars , Character is a concept within the ngm domain.
+  - The combined domain encompassing the creation, animation, and management of digital representations of human beings in virtual environments, including photorealistic digital humans, stylised avatars, and fictional characters. This domain integrates motion capture, AI-driven face and body generation, lip-synchronisation, and avatar portability standards to produce consistent, expressive agents across metaverse platforms.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:HumansAvatarsCharacter
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Has part [[Avatar]], [[Digital Humans]], [[Character Model]]
+  - Uses [[Motion Capture]], [[Animation Software]], [[Digital Human Technology]]
+  - Enables [[Avatar Interoperability]]
 
 - ### Content
   - This section focuses on platforms and research enabling the generation of complete avatars, encompassing both visual representation and underlying technologies.

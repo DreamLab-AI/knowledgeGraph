@@ -37,9 +37,10 @@ public:: true
   "@id": "urn:ngm:class:parallel-processing",
   "@type": "Class",
   "label": "Parallel Processing",
-  "definition": "Parallel Processing is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Parallel Processing is a computational paradigm in which multiple calculations or processes are executed simultaneously by dividing a problem into sub-tasks that run concurrently across multiple processor cores, GPUs, or distributed nodes. It underpins modern machine learning training, real-time rendering, and large-scale data pipelines.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
@@ -51,6 +52,36 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:computing-infrastructure",
+        "label": "Computing Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      }
+    ]
   }
 }
 ```
@@ -76,14 +107,18 @@ public:: true
 
 
 - ### Definition
-  - ParallelProcessing is a concept within the ngm domain.
+  - Parallel Processing is a computational paradigm in which multiple calculations or processes are executed simultaneously by dividing a problem into sub-tasks that run concurrently across multiple processor cores, GPUs, or distributed nodes. It underpins modern machine learning training, real-time rendering, and large-scale data pipelines.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:ParallelProcessing
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Requires [[Computing Infrastructure]]
+  - Enables [[Distributed Training]]
+  - Enables [[Deep Learning]]
+  - Uses [[GPU Compute]]
+  - Related To [[Distributed Computing]]
 
 - ### Content
   # ParallelProcessing

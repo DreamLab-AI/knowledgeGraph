@@ -74,9 +74,10 @@ public:: true
   "@id": "urn:ngm:class:sparql-examples",
   "@type": "Class",
   "label": "SPARQL EXAMPLES",
-  "definition": "SPARQL is a semantic query language and protocol for querying and manipulating data stored in RDF|Resource Description Framework format, enabling structured queries across linked data and knowledge graphs at massive scale.",
+  "definition": "SPARQL (SPARQL Protocol and RDF Query Language) is the W3C-standardised query language for RDF-based knowledge graphs and linked data endpoints, supporting SELECT, CONSTRUCT, ASK, and DESCRIBE query forms, as well as federated queries across distributed SPARQL endpoints and SPARQL Update for graph mutation. SPARQL 1.1 (2013) added aggregates, subqueries, and property paths; SPARQL 1.2 (2023) further refined the protocol and service description vocabulary. It is the primary access interface for semantic knowledge graph exploration, ontology navigation, and cross-domain data integration.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-standards-and-interop",
@@ -87,6 +88,23 @@ public:: true
       "label": "Semantic Web Standards"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"},
+      {"@id": "urn:ngm:class:ontology", "label": "Ontology"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
+      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:interoperability-standard", "label": "Interoperability Standard"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:knowledge-graph-construction", "label": "Knowledge Graph Construction"},
+      {"@id": "urn:ngm:class:domain-ontology", "label": "Domain Ontology"}
+    ]
+  },
   "quality": 0.4,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -169,7 +187,10 @@ public:: true
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **uses**: Linked Data, Ontology
+  - **enables**: Knowledge Graph, Knowledge Representation
+  - **standardizedBy**: Interoperability Standard
+  - **relatedTo**: Knowledge Graph Construction, Domain Ontology
 - ### Content
   - SPARQL enables structured querying of RDF-based knowledge graphs and linked data through standardised operations, supporting exploration and transformation of interconnected data across semantic web applications and domain-specific ontologies.
   - ### Original Content

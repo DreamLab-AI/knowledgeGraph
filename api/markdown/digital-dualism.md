@@ -8,6 +8,10 @@ bridges-to:: [[Telecollaboration]]
   - owl-role:: Concept
 
 - ### Relationships
+  - **contrastsWith**: Augmented Reality, Telecollaboration (AR and telecollaboration assume integration, not separation)
+  - **relatedTo**: Metaverse, Digital Identity (metaverse design and identity continuity are directly affected by dualist assumptions)
+  - **bridgesTo**: Digital Twin (digital twins exemplify the physical-digital integration that refutes strong dualism)
+
   - is-subclass-of:: [[Metaverse]]
 
 - ### Content

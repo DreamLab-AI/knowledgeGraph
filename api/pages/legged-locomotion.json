@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:legged-locomotion",
   "domain": "robotics",
-  "definition": "The study and implementation of robot motion using articulated limbs to traverse unstructured terrain by dynamically managing contact forces and stability.",
+  "definition": "Legged locomotion is the study and engineering of robot motion through articulated limb contacts with the environment, enabling traversal of unstructured terrain that is inaccessible to wheeled or tracked platforms. It requires coordinated management of contact forces, centre-of-mass dynamics, gait sequencing, and reactive balance control across walking, running, climbing, and stair-negotiation tasks. Modern legged locomotion controllers combine whole-body control, model predictive control (MPC), and reinforcement learning \u2014 often trained in simulation and transferred to hardware \u2014 to achieve robust performance on irregular natural and urban terrain.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-navigation-and-planning",
@@ -14,11 +14,25 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:robot-dynamics",
+        "label": "Robot Dynamics"
+      },
+      {
+        "id": "urn:ngm:class:motion-control",
+        "label": "Motion Control"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +41,20 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:sim-to-real-transfer",
+        "label": "Sim-to-Real Transfer"
+      },
+      {
+        "id": "urn:ngm:class:quadruped-robot",
+        "label": "Quadruped Robot"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

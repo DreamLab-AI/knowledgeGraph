@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:quality-of-service",
   "domain": "infrastructure",
-  "definition": "Quality Of Service is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A set of network management techniques and policies that prioritise, control, and guarantee specified performance characteristics\u2014including latency, jitter, bandwidth, and packet loss\u2014for different traffic classes. In metaverse and real-time XR applications, QoS mechanisms are critical for maintaining acceptable user experience under variable network load.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-network-and-comms",
@@ -14,11 +14,29 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:real-time",
+        "label": "Real Time"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +45,16 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "id": "urn:ngm:class:bandwidth-adaptation",
+        "label": "Bandwidth Adaptation"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

@@ -58,16 +58,31 @@ public:: true
   "@id": "urn:ngm:class:term-index",
   "@type": "Class",
   "label": "TERM INDEX",
-  "definition": "A term index is a comprehensive reference catalogue mapping domain terminology, identifiers, and conceptual relationships within ontologies, enabling discovery and navigation of complex knowledge spaces across metaverse, blockchain, and robotics ecosystems.",
+  "definition": "A Term Index is a comprehensive reference catalogue mapping domain terminology, identifiers, and conceptual relationships within ontologies, enabling discovery and navigation of complex knowledge spaces across metaverse, blockchain, and robotics ecosystems. Well-structured indices provide hierarchical classification, cross-references, and semantic linking that facilitate knowledge retrieval, API design, and knowledge-graph integration, serving both user-facing navigation and machine-readable specifications supporting automated reasoning and SPARQL query optimisation.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
       "label": "Content and Assets"
     }
   ],
-  "quality": 0.4,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
+      {"@id": "urn:ngm:class:domain-ontology", "label": "Domain Ontology"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
+      {"@id": "urn:ngm:class:sparql", "label": "SPARQL"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:semantic-web", "label": "Semantic Web"},
+      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"},
+      {"@id": "urn:ngm:class:metaverse-domain", "label": "Metaverse Domain"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -123,13 +138,15 @@ public:: true
 
 
 - ### Definition
-  - A term index is a comprehensive reference catalogue mapping domain terminology, identifiers, and conceptual relationships within ontologies, enabling discovery and navigation of complex knowledge spaces across metaverse, blockchain, and robotics ecosystems. Well-structured indices like the [[RoboticsOntology|robotics ontology term index]] organisation provide hierarchical classification, cross-references, and semantic linking that facilitate knowledge retrieval, API design, and [[KnowledgeGraphIntegration|knowledge graph integration]]. These catalogues serve as both user-facing navigation aids and machine-readable specifications supporting automated reasoning, [[OWLOntology|OWL ontology]] validation, and [[SPARQLQuery|SPARQL query]] optimisation.
+  - A Term Index is a comprehensive reference catalogue mapping domain terminology, identifiers, and conceptual relationships within ontologies, enabling discovery and navigation of complex knowledge spaces across metaverse, blockchain, and robotics ecosystems. Well-structured indices like the [[RoboticsOntology|robotics ontology term index]] organisation provide hierarchical classification, cross-references, and semantic linking that facilitate knowledge retrieval, API design, and [[KnowledgeGraphIntegration|knowledge graph integration]]. These catalogues serve as both user-facing navigation aids and machine-readable specifications supporting automated reasoning, [[OWLOntology|OWL ontology]] validation, and [[SPARQLQuery|SPARQL query]] optimisation.
 - ### Semantic Classification
   - owl-class:: spatial-computing:TERMINDEX
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart:: Ontology, Domain Ontology
+  - enables:: Knowledge Graph, SPARQL
+  - relatedTo:: Semantic Web, Linked Data, Metaverse Domain
 - ### Content
   - Term indices provide hierarchical, cross-referenced organisation of domain terminology within ontologies, enabling discovery, navigation, and machine-readable specifications supporting automated reasoning and knowledge graph integration.
   - ### Original Content

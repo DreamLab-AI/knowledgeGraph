@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:democratic-engagement",
   "domain": "spatial-computing",
-  "definition": "Democratic Engagement is a type of Metaverse and Telecollaboration in the spatial computing domain.",
+  "definition": "Democratic Engagement refers to the mechanisms, platforms, and practices through which citizens and communities participate in governance decisions, policy formation, and collective sense-making, including via digital and virtual channels. In metaverse and telecollaboration contexts, democratic engagement encompasses online deliberation tools, DAO-based governance, participatory spatial environments, and AI-assisted facilititation of broad-based civic participation.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-governance-and-safety",
@@ -17,21 +17,53 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:democratic-governance",
+        "label": "Democratic Governance"
+      },
+      {
+        "id": "urn:ngm:class:democratic-participation",
+        "label": "Democratic Participation"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:digital-platform",
+        "label": "Digital Platform"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:democratic-values",
+        "label": "Democratic Values"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:platform-governance",
+        "label": "Platform Governance"
+      }
+    ]
   },
   "wikilinks": [
     {

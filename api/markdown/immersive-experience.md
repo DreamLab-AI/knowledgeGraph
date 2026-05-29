@@ -7,7 +7,12 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Virtual Reality]]
+  - requires [[Spatial Audio]]
+  - requires [[Haptic Feedback]]
+  - enables [[Simulation]]
+  - enables [[Telepresence]]
+  - relatedTo [[Augmented Reality]]
 
 - ### Content
   - ### Primary Definition

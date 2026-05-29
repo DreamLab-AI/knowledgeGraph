@@ -1,12 +1,15 @@
 - ### Definition
-  - DistributedWork is a concept within the ngm domain.
+  - Organisational models, practices, and enabling technologies that allow geographically dispersed teams to collaborate effectively whilst maintaining productivity, cohesion, and wellbeing. Distributed work encompasses remote, hybrid, and globally distributed team configurations, supported by asynchronous communication norms, shared documentation practices, and virtual presence technologies ranging from video conferencing to XR meeting spaces.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:DistributedWork
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires**: Collaboration Platform (shared digital workspace), Asynchronous Collaboration (time-zone-agnostic communication norms)
+  - **enables**: Distributed Collaboration (cross-geography team coordination)
+  - **uses**: XR Meeting Space (presence-rich virtual meetings), Digital Twin (virtual office coordination layer)
+  - **relatedTo**: Blockchain (decentralised coordination substrate), Virtual Collaboration (synchronous shared-space modality)
 
   - bridges-to:: [[Blockchain]] (bc)
 - ### Content

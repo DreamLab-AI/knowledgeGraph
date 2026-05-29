@@ -1,5 +1,5 @@
 - ### Definition
-  - Incentive for block creation within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
+  A Block Reward is the cryptoeconomic incentive paid to the producer of a valid block—comprising a protocol-specified subsidy (newly minted tokens) plus the aggregate transaction fees included in that block—which compensates validators or miners for expending resources to extend the canonical chain and maintain network security. Block reward schedules are a core parameter of a blockchain's monetary policy, directly governing token inflation, miner revenue, and the long-run security budget of the network.
 
 - ### Semantic Classification
   - owl-class:: blockchain:BlockReward
@@ -10,7 +10,11 @@
 
 - ### Relationships
   - is-subclass-of:: [[Blockchain Entity]], [[DistributedDataStructure]]
-  - bridges-to:: [[Virtual Economy]]
+  - hasPart:: [[Transaction Fee]], [[Mining Reward]]
+  - requires:: [[Consensus Mechanism]], [[Proof Of Work]]
+  - enables:: [[Mining]], [[Blockchain Economics]], [[Tokenomics]]
+  - supports:: [[Blockchain Governance]]
+  - relatedTo:: [[Cryptocurrency]], [[Blockchain Transaction]], [[Proof of Stake]], [[Validator Node]]
 
 - ### Content
 
@@ -51,29 +55,11 @@
 
   - ## About Block Reward
 
-  - Incentive for block creation within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
-  - ### Key Characteristics
-    - 1. **Definitional Property**: Core defining characteristic
-    - 2. **Functional Property**: Operational behavior
-    - 3. **Structural Property**: Compositional elements
-    - 4. **Security Property**: Security guarantees provided
-    - 5. **Performance Property**: Efficiency considerations
-  - ### Technical Components
-    - **Implementation**: How concept is realized technically
-    - **Verification**: Methods for validating correctness
-    - **Interaction**: Relationships with other components
-    - **Constraints**: Technical limitations and requirements
-  - ### Use Cases
-    - **1. Core Blockchain Operation**
-    - **Application**: Fundamental blockchain functionality
-    - **Example**: Practical implementation in major blockchains
-    - **Requirements**: Technical prerequisites
-    - **Benefits**: Value provided to blockchain systems
-  - ### Standards & References
-    - [[ISO/IEC 23257:2021]] - Blockchain and distributed ledger technologies
-    - [[IEEE 2418.1]] - Blockchain and distributed ledger technologies
-    - [[NIST NISTIR]] - Blockchain and distributed ledger technologies
+  The block reward mechanism is Bitcoin's foundational innovation for bootstrapping decentralised network security without a pre-existing authority. Satoshi Nakamoto's original design mints new coins and awards them to the miner who solves the proof-of-work puzzle first. This dual function—new money issuance and security incentive—is elegant: miners are paid to protect the very chain that denomates their reward in value, creating a self-reinforcing security budget proportional to the market capitalisation of the native token.
 
+  Bitcoin's block subsidy halves approximately every four years (every 210,000 blocks): from 50 BTC at genesis, to 25, 12.5, 6.25, 3.125, and so on. This programmatic halving schedule encodes a disinflationary monetary policy with a hard cap of 21 million BTC. As the subsidy trends toward zero over the coming decades, Bitcoin's security budget will increasingly depend on transaction fees—a regime transition whose consequences for long-run network security are an active area of economic research. Ethereum's transition to proof-of-stake in 2022 (The Merge) replaced miner block rewards with validator attestation rewards and proposer rewards, reducing annual issuance by approximately 90% while maintaining network security through staked collateral rather than compute expenditure.
+
+  In proof-of-stake systems, block rewards accrue to the validator selected as the block proposer in a given slot, with additional smaller rewards distributed to attesters who vote for the correct chain head. The reward rate is typically a function of the total amount of staked capital: as more validators stake, the reward per validator decreases (preventing runaway inflation), while the aggregate security budget increases. EIP-1559 (Ethereum) further restructured the fee component by burning the base fee and allowing validators to capture only the priority fee (tip), turning the fee market from a pure revenue stream into a partial ETH deflationary mechanism.
 
   <!-- Merged from BC-0055-block-reward.md: ConsensusDomain, ConsensusProtocol, ProtocolLayer -->
 

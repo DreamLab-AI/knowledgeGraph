@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:power-management",
   "domain": "robotics",
-  "definition": "Power management in robotics encompasses strategies and hardware for regulating, distributing, and optimising electrical energy consumption across a robot's actuators, sensors, and compute subsystems.",
+  "definition": "Power management in robotics encompasses the hardware circuits, firmware algorithms, and system-level strategies responsible for regulating, distributing, monitoring, and optimising electrical energy flow across a robot's actuators, sensors, computation units, and communication modules. It includes battery management systems (BMS) that track state-of-charge and cell health, DC\u2013DC conversion topologies that match supply voltage to load requirements, dynamic power scaling that throttles compute or actuators under low-charge conditions, and energy recovery mechanisms such as regenerative braking in joint drives. Effective power management directly determines operational endurance, thermal safety margins, and the feasibility of untethered deployment in field and human-collaborative scenarios.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
@@ -14,7 +14,7 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,11 +23,38 @@
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "id": "urn:ngm:class:power-supply",
+        "label": "Power Supply"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:mobile-robot",
+        "label": "Mobile Robot"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:robot-hardware",
+        "label": "Robot Hardware"
+      },
+      {
+        "id": "urn:ngm:class:real-time-processing",
+        "label": "Real-time Processing"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

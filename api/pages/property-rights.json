@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:property-rights",
   "domain": "spatial-computing",
-  "definition": "Property Rights is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "The legal and technical frameworks that establish, verify, and enforce ownership of digital assets, virtual land, and intellectual creations within metaverse environments. Property rights in spatial computing contexts rely on blockchain-based ownership records, NFT standards, and smart contracts to grant creators and users enforceable claims over their digital goods.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-governance-and-safety",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:digital-ownership",
+        "label": "Digital Ownership"
+      }
+    ],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:copyright",
+        "label": "copyright"
+      },
+      {
+        "id": "urn:ngm:class:tokenization",
+        "label": "Tokenization"
+      }
+    ]
   },
   "wikilinks": [
     {

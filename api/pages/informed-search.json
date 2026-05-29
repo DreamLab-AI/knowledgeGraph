@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:informed-search",
   "domain": "artificial-intelligence",
-  "definition": "Informed Search is a type of Artificial Intelligence in the artificial intelligence domain.",
+  "definition": "A class of search algorithms in artificial intelligence that use domain-specific heuristic knowledge to guide exploration of the search space, reducing computational cost compared to uninformed search. Canonical examples include A* and greedy best-first search, which evaluate states using an estimate of the remaining cost to a goal.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -13,21 +13,49 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:machine-learning-technique",
+        "label": "Machine Learning Technique"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      }
+    ]
   },
   "wikilinks": [
     {

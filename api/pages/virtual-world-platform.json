@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:virtual-world-platform",
   "domain": "spatial-computing",
-  "definition": "A software ecosystem that enables users to create, explore, and interact within persistent 3D virtual environments, encompassing both centralized platforms like Roblox and Fortnite, and blockchain-based decentralized platforms like Decentraland and The Sandbox that feature user-owned digital asse...",
+  "definition": "A software ecosystem that enables users to create, explore, and interact within persistent 3D virtual environments. It encompasses both centralised platforms \u2014 such as Roblox (214 million monthly active users) and Fortnite \u2014 controlled by platform operators, and blockchain-based decentralised platforms \u2014 such as Decentraland and The Sandbox \u2014 where users hold genuine ownership of digital assets and participate in on-chain governance. The metaverse market hosting these platforms is valued at USD 103.6 billion and projected to reach USD 507.8 billion by 2030.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -17,21 +17,61 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:virtual-world-building",
+        "label": "Virtual World Building"
+      },
+      {
+        "id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:virtual-asset-trading",
+        "label": "Virtual Asset Trading"
+      },
+      {
+        "id": "urn:ngm:class:social-vr",
+        "label": "Social VR"
+      },
+      {
+        "id": "urn:ngm:class:virtual-event",
+        "label": "Virtual Event"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:vr-rendering-engine",
+        "label": "VR Rendering Engine"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:metaverse-platform",
+        "label": "Metaverse Platform"
+      },
+      {
+        "id": "urn:ngm:class:virtual-world-infrastructure",
+        "label": "Virtual World Infrastructure"
+      }
+    ]
   },
   "wikilinks": [
     {

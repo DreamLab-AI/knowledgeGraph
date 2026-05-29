@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:security-layer",
   "domain": "infrastructure",
-  "definition": "The SecurityLayer represents the abstraction level of security-focused implementations, cryptographic mechanisms, threat models, security protocols, and defensive systems that protect blockchain and distributed systems from attacks, ensure data integrity and authenticity, provide confidentiality ...",
+  "definition": "The Security Layer is the implementation-focused abstraction level that encapsulates cryptographic mechanisms, security protocols, threat models, and defensive architectures protecting blockchain and distributed systems from attacks whilst ensuring data integrity, authenticity, and confidentiality. It encompasses concrete implementations such as hash functions, digital signatures, zero-knowledge proofs, access control, and formal verification, distinct from higher-level conceptual security properties.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-security-and-identity",
@@ -13,18 +13,49 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ],
     "requires": [],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:data-security",
+        "label": "Data Security"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-security",
+        "label": "Cryptographic Security"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": []

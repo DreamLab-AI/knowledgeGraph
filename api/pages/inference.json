@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:inference",
   "domain": "artificial-intelligence",
-  "definition": "Inference is a artificial intelligence concept and a type of artificial-intelligence.",
+  "definition": "Inference is the process of applying a trained AI model to new, unseen data to produce predictions, classifications, or generated outputs. It is distinct from training in that model parameters are fixed; the computational objective is throughput, latency, and memory efficiency. Inference is the primary execution path in production deployments and is governed by ISO/IEC 22989:2022 clause 3.3.4.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -14,16 +14,39 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:training",
+        "label": "Training"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      },
+      {
+        "id": "urn:ngm:class:inference-hardware",
+        "label": "Inference Hardware"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],

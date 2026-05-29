@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:landscape",
   "domain": "infrastructure",
-  "definition": "Landscape is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A Landscape, in the context of this knowledge graph, is a structured market-analysis overview of the current state of an AI or technology sector, mapping key players, technology stacks, investment flows, and emerging patterns. Landscape analyses such as those from a16z or Cowboy Ventures provide practitioners with orientation in rapidly shifting fields and inform infrastructure strategy.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
@@ -14,7 +14,7 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,11 +23,30 @@
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:infra-computing-and-cloud",
+        "label": "Computing and Cloud"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ]
   },
   "wikilinks": [
     {

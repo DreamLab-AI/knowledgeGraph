@@ -1,12 +1,18 @@
 - ### Definition
-  - TextureMapping is a concept within the ngm domain.
+  - Texture Mapping is the technique of projecting a 2D image (texture) onto a 3D surface to add surface detail, colour, and material appearance without increasing geometric complexity. Common forms include UV mapping, normal mapping, and physically-based rendering (PBR) texture sets.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:TextureMapping
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Requires [[Computer Graphics]]
+  - Uses [[Procedural Texture]]
+  - Uses [[Pixel Shader]]
+  - Uses [[Compute Shader]]
+  - Enables [[Real-Time Rendering]]
+  - Enables [[Differentiable Rendering]]
+  - Part Of [[3D Rendering Engine]]
 
 - ### Content
   # TextureMapping

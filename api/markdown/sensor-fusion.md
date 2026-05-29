@@ -7,7 +7,11 @@
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - enables:: [[SLAM]]
+  - enables:: [[Autonomous Vehicle]]
+  - partOf:: [[Perception System]]
+  - uses:: [[Deep Learning]]
+  - uses:: [[Object Detection]]
 
 - ### Content
   - Sensor Fusion is the process of combining data from multiple sensors (camera, lidar, radar, GPS, IMU) to produce more accurate, reliable, and complete information than could be obtained from any individual sensor. Sensor fusion employs algorithms including Kalman filtering, particle filtering, and deep learning-based fusion to integrate complementary sensor modalities whilst managing sensor noise, uncertainties, and failures.

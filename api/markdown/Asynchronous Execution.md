@@ -50,12 +50,13 @@ public:: true
   "@id": "urn:ngm:class:asynchronous-execution",
   "@type": "Class",
   "label": "Asynchronous Execution",
-  "definition": "Asynchronous Execution is a artificial intelligence concept and a type of Execution Model.",
+  "definition": "An execution model in which operations are initiated without blocking the calling thread; completion is signalled via callbacks, promises, futures, or events, enabling high-throughput concurrent processing particularly suited to I/O-bound workloads and distributed system communication.",
   "domain": "artificial-intelligence",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:cat-ai-infrastructure",
+      "@id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure (Category)"
     },
     {
@@ -63,6 +64,20 @@ public:: true
       "label": "Execution Model"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event Driven Architecture"},
+      {"@id": "urn:ngm:class:asynchronous-communication", "label": "Asynchronous Communication"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:parallel-processing", "label": "Parallel Processing"},
+      {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
+      {"@id": "urn:ngm:class:ai-agent-system", "label": "AI Agent System"}
+    ]
+  },
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
@@ -109,7 +124,7 @@ public:: true
 
 
 - ### Definition
-  - Asynchronous Execution is a concept within the ai domain.
+  - An execution model in which operations are initiated without blocking the calling thread; completion is signalled via callbacks, promises, futures, or events, enabling high-throughput concurrent processing for I/O-bound workloads and distributed system communication.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:AsynchronousExecution
@@ -118,7 +133,10 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Execution Model]]
-  - bridges-to:: [[Edge Computing]] (domain: ngm)
+  - bridges-to:: [[Edge Computing]]
+  - uses:: [[Event Driven Architecture]], [[Asynchronous Communication]]
+  - enables:: [[Parallel Processing]], [[Microservices Architecture]]
+  - supports:: [[AI Agent System]]
 
 - ### Content
 

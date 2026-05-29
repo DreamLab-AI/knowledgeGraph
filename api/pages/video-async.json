@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:video-async",
   "domain": "distributed-collaboration",
-  "definition": "Asynchronous video communication allowing users to record, share, and view video messages at their convenience, combining visual richness with time flexibility.",
+  "definition": "Asynchronous video communication is a mode of distributed collaboration in which participants record, share, and consume video messages at times of their own choosing rather than in a live session, combining the visual richness and non-verbal expressiveness of video with the time-zone flexibility and cognitive benefits of asynchronous working. Tools such as screen-and-webcam recorders reduce dependence on synchronous meetings, enable clearer knowledge sharing across distributed teams, and produce persistent, referenceable communication artefacts.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:dc-communication",
@@ -17,21 +17,65 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.75,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-sharing",
+        "label": "Knowledge Sharing"
+      },
+      {
+        "id": "urn:ngm:class:remote-collaboration",
+        "label": "Remote Collaboration"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:video-conferencing",
+        "label": "Video Conferencing"
+      },
+      {
+        "id": "urn:ngm:class:synchronous-collaboration",
+        "label": "Synchronous Collaboration"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:screen-sharing",
+        "label": "Screen Sharing"
+      },
+      {
+        "id": "urn:ngm:class:asynchronous-video",
+        "label": "Asynchronous Video"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:asynchronous-communication",
+        "label": "Asynchronous Communication"
+      },
+      {
+        "id": "urn:ngm:class:collaboration-platform",
+        "label": "Collaboration Platform"
+      },
+      {
+        "id": "urn:ngm:class:digital-workplace-platform",
+        "label": "Digital Workplace Platform"
+      }
+    ]
   },
   "wikilinks": [
     {

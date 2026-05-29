@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:technical-architecture",
   "domain": "spatial-computing",
-  "definition": "Technical Architecture is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Technical Architecture is the structured design of a system's components, their relationships, and the principles governing their evolution. It defines how hardware, software, data, and communication elements are organised to satisfy functional and non-functional requirements within a spatial computing or platform context.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",
@@ -14,11 +14,38 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:infrastructure-architecture",
+        "label": "Infrastructure Architecture"
+      },
+      {
+        "id": "urn:ngm:class:network-architecture",
+        "label": "Network Architecture"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:system-architecture",
+        "label": "System Architecture"
+      },
+      {
+        "id": "urn:ngm:class:computing-infrastructure",
+        "label": "Computing Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:distributed-system-architecture",
+        "label": "Distributed System Architecture"
+      },
+      {
+        "id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,7 +54,12 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:software-architecture",
+        "label": "Software Architecture"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:recommendation-engine",
   "domain": "infrastructure",
-  "definition": "Recommendation Engine is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "A recommendation engine is a system that filters, ranks, and surfaces content or items most relevant to an individual user by analysing preferences, behaviour history, and contextual signals. It employs collaborative filtering, content-based filtering, or hybrid deep-learning approaches to personalise discovery at scale across e-commerce, media, and metaverse platforms.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-computing-and-cloud",
@@ -13,21 +13,53 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:predictive-personalization",
+        "label": "Predictive Personalization"
+      },
+      {
+        "id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:embedding-model",
+        "label": "Embedding Model"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:search-technology",
+        "label": "Search Technology"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": []

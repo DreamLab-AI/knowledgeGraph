@@ -42,15 +42,31 @@ public:: true
   "@id": "urn:ngm:class:kinematic-element",
   "@type": "Class",
   "label": "Kinematic Element",
-  "definition": "Kinematic Element is a type of Robotics in the robotics domain.",
+  "definition": "A Kinematic Element is a rigid body or joint primitive within a robot's mechanical structure that participates in the forward and inverse kinematic chain, defining the positional and orientational degrees of freedom of a limb segment. Chains of kinematic elements model the geometry of robotic arms, legs, and manipulators for motion planning and control.",
   "domain": "robotics",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:robo-actuation-and-control",
       "label": "Actuation and Control"
     }
   ],
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:actuator", "label": "Actuator"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:robot", "label": "Robot"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:control-system", "label": "Control System"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:legged-robot", "label": "Legged Robot"},
+      {"@id": "urn:ngm:class:mobile-robot", "label": "Mobile Robot"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -87,14 +103,17 @@ public:: true
 
 
 - ### Definition
-  - Kinematic Element is a concept within the robotics domain. Further enrichment pending.
+  - A Kinematic Element is a rigid body or joint primitive within a robot's mechanical structure that participates in the forward and inverse kinematic chain, defining the positional and orientational degrees of freedom of a limb segment. Chains of kinematic elements model the geometry of robotic arms, legs, and manipulators for motion planning and control.
 
 - ### Semantic Classification
   - owl-class:: robotics:KinematicElement
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - hasPart:: [[Actuator]]
+  - partOf:: [[Robot]]
+  - requires:: [[Control System]]
+  - enables:: [[Legged Robot]], [[Mobile Robot]]
 
 - ### Content
 

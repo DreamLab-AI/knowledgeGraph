@@ -8,6 +8,9 @@
 
 - ### Relationships
   - is-subclass-of:: [[Telecollaboration]]
+  - Requires: [[Spatial Audio]], [[Avatar]]
+  - Uses: [[Metaverse]]
+  - Bridges To: [[Virtual Collaboration]], [[Remote Collaboration]]
 
 - ### Content
   Immersive Communication — content pending enrichment.

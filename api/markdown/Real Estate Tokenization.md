@@ -72,14 +72,32 @@ public:: true
   "label": "Real Estate Tokenization",
   "definition": "Blockchain-based systems employing security tokens (ERC-3643, ERC-1400, ERC-20 standards) to represent fractional ownership interests in real estate properties, enabling automated dividend distribution through smart contracts, reducing investment minimums from tens of thousands to £50, and creati...",
   "domain": "blockchain",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-token-and-asset",
       "label": "Token and Asset"
     }
   ],
-  "quality": 0.5,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:digital-asset-trading", "label": "Digital Asset Trading"},
+      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"},
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:blockchain-compliance", "label": "Blockchain Compliance"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -158,7 +176,10 @@ public:: true
   - belongs-to-domain:: [[BlockchainDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **requires** → [[Smart Contract]], [[Blockchain]], [[Decentralised Identity]]
+  - **enables** → [[Digital Asset Trading]], [[Decentralised Finance]]
+  - **uses** → [[Distributed Ledger Technology]], [[Consensus Mechanism]]
+  - **dependsOn** → [[Blockchain Compliance]]
 
 - ### Content
   - Blockchain-based real estate tokenization transforms the **£637 trillion global real estate market** by converting property ownership into tradeable digital security tokens, reducing investment minimums from tens or hundreds of thousands to as little as **£50** whilst enabling **24/7 global trading** and automated rental income distribution. With the market growing from **£2.6-3.5 billion (2024)** to projected **£4 trillion by 2035** at 27% compound annual growth rate, implementations span RealT's **600+ properties** serving **65,000+ investors** with weekly stablecoin dividends, the St. Regis Aspen Resort's **£18 million** tokenized offering achieving **30% value increase** within 18 months, and Dubai luxury apartments selling out in **under 2 minutes** to buyers from **35 countries**.

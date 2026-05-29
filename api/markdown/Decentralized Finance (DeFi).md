@@ -339,7 +339,7 @@ public:: true
       "label": "DeFi and Economics"
     },
     {
-      "@id": "urn:ngm:class:cryptographic-protocols",
+      "@id": "urn:ngm:class:cryptographic-protocol",
       "label": "Cryptographic Protocols"
     },
     {

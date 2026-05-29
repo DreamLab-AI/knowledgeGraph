@@ -7,7 +7,11 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Part Of [[Tokenisation]]
+  - Enables [[Natural Language Processing]]
+  - Enables [[Large Language Models]]
+  - Requires [[Language Modeling]]
+  - Related To [[Natural Language Understanding]]
 
 - ### Content
   - A tokenisation approach that breaks words into smaller meaningful units, balancing vocabulary size with the ability to represent rare words and novel compositions.

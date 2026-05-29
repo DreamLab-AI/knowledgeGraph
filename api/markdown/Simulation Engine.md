@@ -37,9 +37,10 @@ public:: true
   "@id": "urn:ngm:class:simulation-engine",
   "@type": "Class",
   "label": "Simulation Engine",
-  "definition": "Simulation Engine is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "The computational core that manages state updates, inter-object interactions, deterministic execution, and data instrumentation within a simulation. Specialised engines include physics engines (PhysX, Bullet), behaviour-simulation engines, and AI training frameworks that expose parametric control, checkpointing, and massive parallelisation for large-scale experimental runs.",
   "domain": "infrastructure",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
@@ -51,6 +52,40 @@ public:: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-processing",
+        "label": "Real-time Processing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:rendering-engine",
+        "label": "Rendering Engine"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:simulation-software",
+        "label": "Simulation Software"
+      }
+    ]
   }
 }
 ```
@@ -76,14 +111,19 @@ public:: true
 
 
 - ### Definition
-  - SimulationEngine is a concept within the ngm domain.
+  - The computational core that manages state updates, inter-object interactions, deterministic execution, and data instrumentation within a simulation. Specialised engines include physics engines (PhysX, Bullet), behaviour-simulation engines, and AI training frameworks that expose parametric control, checkpointing, and massive parallelisation for large-scale experimental runs.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:SimulationEngine
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Part Of [[Simulation Software]]
+  - Uses [[GPU Compute]]
+  - Uses [[Real-time Processing]]
+  - Enables [[Digital Twin]]
+  - Enables [[Machine Learning]]
+  - Related To [[Rendering Engine]]
 
 - ### Content
   # SimulationEngine

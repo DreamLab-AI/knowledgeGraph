@@ -8,6 +8,12 @@
 
 - ### Relationships
   - is-subclass-of:: [[Virtual Environment]]
+  - requires [[Learning Management System]]
+  - requires [[Collaboration Platform]]
+  - enables [[Collaborative Learning]]
+  - enables [[Immersive Learning]]
+  - relatedTo [[Education Metaverse]]
+  - relatedTo [[Education Technology]]
 
 - ### Content
 

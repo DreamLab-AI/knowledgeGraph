@@ -46,7 +46,7 @@ public:: true
   "@id": "urn:ngm:class:code-generation",
   "@type": "Class",
   "label": "Code Generation",
-  "definition": "Code Generation is a artificial intelligence concept and a type of Generative Ai.",
+  "definition": "The automated production of source code by AI systems from natural language specifications, partial code, or structured prompts. Code generation systems leverage large language models trained on code corpora to synthesise functions, classes, and complete programs, accelerating software development workflows.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -56,10 +56,29 @@ public:: true
     },
     {
       "@id": "urn:ngm:class:generative-ai",
-      "label": "Generative Ai"
+      "label": "Generative AI"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
+      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
+      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:software-development-process", "label": "Software Development Process"},
+      {"@id": "urn:ngm:class:documentation-generation", "label": "Documentation Generation"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
+      {"@id": "urn:ngm:class:software-testing", "label": "Software Testing"},
+      {"@id": "urn:ngm:class:software-architecture", "label": "Software Architecture"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:infra-software-engineering", "label": "Software Engineering"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -111,7 +130,9 @@ public:: true
   - is-subclass-of:: [[Generative Ai]]
 
 - ### Content
-  Code Generation — content pending enrichment.
+  Code generation systems use large language models (LLMs) trained on large code corpora—such as GitHub repositories—to synthesise syntactically and semantically correct source code from natural language or partial-code inputs. Modern systems employ transformer architectures with code-aware tokenisation and are capable of producing functions, unit tests, documentation, and complete modules across dozens of programming languages.
+
+  Key capabilities include fill-in-the-middle completion, repository-level context awareness, and iterative refinement through conversational interaction. Integration with IDEs, CI pipelines, and pull-request review workflows means code generation increasingly operates as a collaborative tool within software development processes rather than a standalone generator.
 
 - ### Provenance
   - sources:: Chimera Prime Research

@@ -42,15 +42,29 @@ public:: true
   "@id": "urn:ngm:class:information-retrieval",
   "@type": "Class",
   "label": "Information Retrieval",
-  "definition": "Information Retrieval is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "Information Retrieval (IR) is the discipline and set of techniques for finding relevant documents, passages, or facts from a corpus in response to a query. Modern IR systems employ inverted indices, vector embeddings, and semantic search to match queries against large-scale knowledge bases and document collections. In spatial computing, IR underpins context-aware search, knowledge graph querying, and retrieval-augmented generation pipelines that ground AI responses in factual content.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-standards-and-interop",
       "label": "Standards and Interoperability"
     }
   ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:semantic-search", "label": "Semantic Search"},
+      {"@id": "urn:ngm:class:vector-database", "label": "Vector Database"},
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
+      {"@id": "urn:ngm:class:search-engine", "label": "Search Engine"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+    ]
+  },
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -87,23 +101,25 @@ public:: true
 
 
 - ### Definition
-  - Information Retrieval is a concept within the metaverse domain. Further enrichment pending.
+  - Information Retrieval (IR) is the discipline and set of techniques for finding relevant documents, passages, or facts from a corpus in response to a query. Modern IR systems employ inverted indices, vector embeddings, and semantic search to match queries against large-scale knowledge bases and document collections. In spatial computing, IR underpins context-aware search, knowledge graph querying, and retrieval-augmented generation pipelines that ground AI responses in factual content.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:InformationRetrieval
   - owl-role:: concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - uses [[Semantic Search]]
+  - uses [[Vector Database]]
+  - uses [[Knowledge Graph]]
+  - enables [[Retrieval-Augmented Generation]]
+  - enables [[Search Engine]]
+  - relatedTo [[Natural Language Processing]]
 
 - ### Content
 
   ## Overview
 
-  Information Retrieval represents an abstract concept in the metaverse ontology hierarchy.
-
-  #### Related Concepts
-  - [[owl:Thing]]
+  Information Retrieval is the foundational discipline enabling systems to locate and rank relevant information from large corpora. Classic approaches use term-frequency-inverse-document-frequency (TF-IDF) weighted inverted indices; modern dense retrieval encodes queries and documents as vectors in a shared embedding space and finds nearest neighbours via approximate nearest-neighbour search in a vector database. Semantic search improves over keyword matching by capturing meaning rather than surface form. Knowledge graphs augment retrieval with structured entity-relationship data. Retrieval-Augmented Generation (RAG) combines IR with large language models: retrieved passages are injected into the model's context to ground generation in factual sources. In spatial computing, real-time IR supports scene understanding, contextual annotation of physical objects, and on-device search over personal knowledge stores without cloud round-trips.
 
 - ### Provenance
   - sources::

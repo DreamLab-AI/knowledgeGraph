@@ -83,6 +83,22 @@ public:: true
       "label": "Transformer"
     }
   ],
+  "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:transformer", "label": "Transformer"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}
+    ]
+  },
+  "maturity": "emerging",
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -162,7 +178,11 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - partOf [[Transformer]]
+  - enables [[Large Language Models]]
+  - enables [[Natural Language Processing]]
+  - relatedTo [[Attention Mechanism]]
+  - contrastsWith [[Reinforcement Learning]]
 
 - ### Content
   - An attention mechanism where every token in a sequence attends to every other token in the same sequence, allowing the model to capture intra-sequence dependencies.

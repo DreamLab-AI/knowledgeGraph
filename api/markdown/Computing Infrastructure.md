@@ -46,7 +46,7 @@ public:: true
   "@id": "urn:ngm:class:computing-infrastructure",
   "@type": "Class",
   "label": "Computing Infrastructure",
-  "definition": "Computing infrastructure encompasses the physical and virtual resources required for building, running, and delivering applications and services, including servers, storage systems, networking equipment, power systems, and cooling facilities housed in data centers.",
+  "definition": "Computing infrastructure encompasses the physical and virtual resources required for building, running, and delivering applications and services, including servers, storage systems, networking equipment, power systems, and cooling facilities housed in data centres. It provides the foundational capacity that IT systems require to process, store, and transmit digital data. Modern computing infrastructure increasingly extends from on-premises hardware into cloud-hosted and edge environments, and is a prerequisite for AI workloads, distributed applications, and spatial computing platforms.",
   "domain": "infrastructure",
   "maturity": "emerging",
   "subClassOf": [
@@ -55,11 +55,33 @@ public:: true
       "label": "Computing and Cloud"
     }
   ],
-  "quality": 0.5,
+  "quality": 0.75,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
+  },
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:storage-infrastructure", "label": "Storage Infrastructure"},
+      {"@id": "urn:ngm:class:network-infrastructure", "label": "Network Infrastructure"},
+      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
+      {"@id": "urn:ngm:class:networking-infrastructure", "label": "Networking Infrastructure"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:cloud-infrastructure", "label": "Cloud Infrastructure"},
+      {"@id": "urn:ngm:class:digital-infrastructure", "label": "Digital Infrastructure"},
+      {"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"},
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"},
+      {"@id": "urn:ngm:class:orchestration", "label": "Orchestration"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:sustainability", "label": "Sustainability"},
+      {"@id": "urn:ngm:class:power-management", "label": "Power Management"}
+    ]
   }
 }
 ```

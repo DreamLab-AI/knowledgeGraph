@@ -5,7 +5,11 @@
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Contrasts With [[Overfitting]]
+  - Requires [[Model Capacity]]
+  - Requires [[Training]]
+  - Related To [[Regularisation]]
+  - Related To [[Loss Function]]
 - ### Content
   - ### Primary Definition
   **Underfitting** occurs when a model is too simple to capture the underlying patterns in the training data, resulting in poor performance on both training and test data. Underfitted models have insufficient capacity or training.

@@ -7,7 +7,9 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires:: [[Conformity Assessment]], [[Supply Chain]]
+  - relatedTo:: [[Placing on the Market]], [[Distributor]], [[Provider]]
+  - partOf:: [[AI Governance]]
 
 - ### Content
   - The supply of an AI system for distribution or use on the Union market in the course of a commercial activity, whether in return for payment or free of charge.

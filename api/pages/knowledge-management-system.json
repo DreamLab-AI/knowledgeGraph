@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:knowledge-management-system",
   "domain": "spatial-computing",
-  "definition": "Knowledge Management System is a type of Spatial Computing in the spatial computing domain.",
+  "definition": "A Knowledge Management System (KMS) is a platform that captures, organises, retrieves, and shares structured and unstructured knowledge across an organisation or community. In spatial computing contexts, a KMS may underpin documentation of 3D assets, ontologies, and procedural content, integrating knowledge graphs, semantic search, and metadata management to make information discoverable and actionable.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-base",
+        "label": "Knowledge Base"
+      }
+    ]
   },
   "wikilinks": [
     {

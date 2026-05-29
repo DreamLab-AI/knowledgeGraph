@@ -7,6 +7,12 @@
 
 - ### Relationships
   - is-subclass-of:: [[owl:Thing]]
+  - uses [[Knowledge Graph]]
+  - uses [[Semantic Web]]
+  - uses [[Ontology]]
+  - enables [[Bayesian Inference]]
+  - enables [[Question Answering]]
+  - relatedTo [[Knowledge Management]]
 
 - ### Content
 

@@ -1,12 +1,16 @@
 - ### Definition
-  - FinancialInstruments is a concept within the ngm domain.
+  - Financial Instruments are contractual agreements that represent a monetary value and can be created, traded, modified, or settled. In blockchain and decentralised finance ecosystems they include smart contract-based derivatives, lending protocols, automated market makers, yield aggregators, and synthetic assets that replicate exposure to real-world financial assets through on-chain collateralisation and oracle price feeds.
 
 - ### Semantic Classification
   - owl-class:: blockchain:FinancialInstruments
   - owl-role:: Concept
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - partOf [[Financial Services]]
+  - requires [[Smart Contracts]]
+  - requires [[Financial Regulation]]
+  - relatedTo [[Cryptocurrency]]
+  - relatedTo [[Tokenization]]
 
 - ### Content
 

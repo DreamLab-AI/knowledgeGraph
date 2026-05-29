@@ -99,6 +99,23 @@ public:: true
       "label": "AI Application"
     }
   ],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:object-detection", "label": "Object Detection"},
+      {"@id": "urn:ngm:class:scene-understanding", "label": "Scene Understanding"}
+    ]
+  },
+  "maturity": "emerging",
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
@@ -203,7 +220,12 @@ public:: true
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - requires [[Convolutional Neural Network]]
+  - requires [[Deep Learning]]
+  - uses [[Transfer Learning]]
+  - partOf [[Computer Vision]]
+  - enables [[Object Detection]]
+  - enables [[Scene Understanding]]
 
 - ### Content
   - Image Classification is the computer vision task of assigning a categorical label to an entire image from a predefined set of classes, determining what is depicted in the image as a whole. Modern image classification employs deep convolutional neural networks (ResNet, EfficientNet, Vision Transformers) trained on large-scale datasets (ImageNet) to achieve human-level or super-human performance on diverse visual recognition tasks.

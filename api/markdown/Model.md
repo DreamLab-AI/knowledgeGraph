@@ -42,7 +42,7 @@ public:: true
   "@id": "urn:ngm:class:model",
   "@type": "Class",
   "label": "Model",
-  "definition": "Model is a artificial intelligence concept and a type of Artificial Intelligence.",
+  "definition": "In artificial intelligence, a Model is a mathematical or computational structure learned from data that encodes a mapping from inputs to outputs (or latent representations). Models range from classical machine learning models (linear, tree-based) to deep neural networks, generative models, and large language models, and constitute the core artefact produced by training and consumed during inference.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -51,7 +51,31 @@ public:: true
       "label": "AI Technique"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:model-architecture", "label": "Model Architecture"},
+      {"@id": "urn:ngm:class:model-capacity", "label": "Model Capacity"},
+      {"@id": "urn:ngm:class:model-depth", "label": "Model Depth"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:machine-learning-model", "label": "Machine Learning Model"},
+      {"@id": "urn:ngm:class:generative-model", "label": "Generative Model"},
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
+      {"@id": "urn:ngm:class:pretrained-model", "label": "Pretrained Model"},
+      {"@id": "urn:ngm:class:model-interpretability", "label": "Model Interpretability"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:model-training", "label": "Model Training"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:inference", "label": "Inference"},
+      {"@id": "urn:ngm:class:model-performance", "label": "Model Performance"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+    ]
+  },
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -59,6 +83,8 @@ public:: true
   }
 }
 ```
+
+A model is the central artefact of the machine learning lifecycle — produced by training, versioned in a registry, served for inference, and monitored in production. Different sub-types serve different purposes: discriminative models classify or regress; generative models synthesise new data; foundation models are pre-trained at scale and fine-tuned for specific tasks. Model interpretability and model cards provide transparency into what a model has learned and what its limitations are.
 
 ```json-ld
 {

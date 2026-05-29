@@ -57,6 +57,20 @@ public:: true
   "definition": "Software Architecture for AI systems defines high-level structural patterns, component interactions, and design principles for building scalable, maintainable, and robust artificial intelligence applications.",
   "domain": "artificial-intelligence",
   "maturity": "draft",
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"},
+      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:software-engineering", "label": "Software Engineering"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:machine-learning-infrastructure", "label": "Machine Learning Infrastructure"},
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+    ]
+  },
+  "maturity": "emerging",
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
@@ -65,7 +79,7 @@ public:: true
   },
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:cat-ai-infrastructure",
+      "@id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure (Category)"
     }
   ]
@@ -122,6 +136,11 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: ['owl:Thing']
+  - hasPart [[Microservices Architecture]]
+  - hasPart [[Distributed Systems]]
+  - enables [[Software Engineering]]
+  - relatedTo [[Machine Learning Infrastructure]]
+  - relatedTo [[Knowledge Graph]]
 
 - ### Content
 

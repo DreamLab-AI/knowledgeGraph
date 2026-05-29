@@ -7,7 +7,12 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - Supports [[AI Safety]] by hardening models against harmful outputs
+  - Supports [[Value Alignment]] as its primary operational realisation
+  - Requires [[Training Data]] (safety-curated datasets)
+  - Requires [[Reinforcement Learning from Human Feedback]] as a core technique
+  - Contrasts with [[Adversarial Attack]] (which it aims to mitigate)
+  - Related to [[Robustness]] as safety tuning improves behavioural consistency
 
 - ### Content
   - Fine-tuning specifically aimed at improving AI system safety, reducing harmful outputs, and enhancing alignment with safety principles. Safety fine-tuning typically follows general capability training and uses safety-focused datasets and objectives.

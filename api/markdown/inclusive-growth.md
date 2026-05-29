@@ -7,7 +7,10 @@
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - **relatedTo**: [[Sustainable Development]], [[Well Being]]
+  - **supports**: [[Fairness]], [[Financial Inclusion]]
+  - **requires**: [[AI Governance]], [[Policy Enforcement]]
+  - **contrastsWith**: [[Harmful Bias]]
 
 - ### Content
   - AI should benefit people and planet by augmenting human capabilities, enhancing creativity, advancing inclusion of underrepresented populations, reducing economic, social and geographical inequalities, and protecting natural environments, thereby invigorating inclusive growth, sustainable development and well-being.

@@ -46,9 +46,10 @@ public:: true
   "@id": "urn:ngm:class:standards-conformance-testing",
   "@type": "Class",
   "label": "Standards Conformance Testing",
-  "definition": "Testing or verification activities that determine wher a process, product, or service complies with the requirements of a specification, technical standard, contract, or regulation, verifying that implementations faithfully meet specified requirements.",
+  "definition": "Testing or verification activities that determine whether a process, product, or service complies with the requirements of a specification, technical standard, contract, or regulation. Conformance testing verifies that implementations faithfully meet specified requirements through structured test suites, automated harnesses, and formal certification regimes — and is distinct from functional testing in that it judges compliance against an external normative reference rather than internal design intent.",
   "domain": "spatial-computing",
-  "maturity": "draft",
+  "maturity": "emerging",
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-standards-and-interop",
@@ -59,7 +60,24 @@ public:: true
       "label": "Standards"
     }
   ],
-  "quality": 0.35,
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:standards", "label": "Standards"},
+      {"@id": "urn:ngm:class:software-testing", "label": "Software Testing"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"},
+      {"@id": "urn:ngm:class:standards-compliance", "label": "Standards Compliance"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:interoperability-standard", "label": "Interoperability Standard"},
+      {"@id": "urn:ngm:class:accountability", "label": "Accountability"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:standards-validation", "label": "Standards Validation"},
+      {"@id": "urn:ngm:class:software-development-process", "label": "Software Development Process"}
+    ]
+  },
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -109,6 +127,10 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Standards]]
+  - **requires**: Standards (normative reference document), Software Testing (test execution infrastructure)
+  - **enables**: Interoperability (cross-vendor system compatibility), Standards Compliance (certified conformance status)
+  - **supports**: Interoperability Standard (verifies inter-system contracts), Accountability (audit evidence chain)
+  - **relatedTo**: Standards Validation (pre-publication verification), Software Development Process (embedded quality gate)
 
 - ### Content
 

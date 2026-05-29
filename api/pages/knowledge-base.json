@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:knowledge-base",
   "domain": "artificial-intelligence",
-  "definition": "A knowledge base is a structured repository of domain-specific information, facts, and rules that can be queried or reasoned over by software systems including AI and expert systems.",
+  "definition": "A knowledge base is a structured, machine-readable repository of domain-specific information, factual assertions, and inference rules that software systems\u2014including expert systems, question answering engines, and AI agents\u2014can query, reason over, and update. Knowledge bases range from relational tables and document stores to formal ontologies expressed in OWL/RDF and property graphs, each offering different trade-offs between expressiveness, scalability, and reasoning complexity. In contemporary AI architectures, knowledge bases frequently serve as the external long-term memory component in retrieval-augmented generation pipelines.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-application",
@@ -14,20 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.0,
-  "maturity": "stub",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert Systems"
+      }
+    ]
   },
   "wikilinks": [],
   "backlinks": [

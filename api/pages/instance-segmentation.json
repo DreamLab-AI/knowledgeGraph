@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:instance-segmentation",
   "domain": "spatial-computing",
-  "definition": "Instance Segmentation extends object detection by predicting precise pixel-level masks for each individual object instance, combining object detection with semantic segmentation to delineate exact boundaries of distinct objects.",
+  "definition": "A computer vision task that extends object detection by predicting precise pixel-level masks for each individual object instance, jointly performing detection and segmentation to delineate the exact boundaries of distinct objects. Architectures such as Mask R-CNN, YOLACT, and SOLOv2 enable fine-grained object localisation essential for robotics manipulation, autonomous driving, and medical image analysis.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-interaction",
@@ -18,11 +18,25 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      },
+      {
+        "id": "urn:ngm:class:semantic-segmentation",
+        "label": "Semantic Segmentation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:scene-understanding",
+        "label": "Scene Understanding"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -30,8 +44,18 @@
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:panoptic-segmentation",
+        "label": "Panoptic Segmentation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:computer-vision-task",
+        "label": "Computer Vision Task"
+      }
+    ]
   },
   "wikilinks": [
     {

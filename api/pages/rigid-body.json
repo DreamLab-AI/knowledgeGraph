@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:rigid-body",
   "domain": "robotics",
-  "definition": "Rigid Body is a type of Robotics in the robotics domain.",
+  "definition": "A Rigid Body is an idealised mechanical object whose internal distances between all constituent points remain constant regardless of applied forces, making it the foundational abstraction for classical mechanics, robotic kinematics, and physics simulation. In robotics, links of a kinematic chain are modelled as rigid bodies connected by joints; their mass, centre of gravity, and inertia tensor parameterise the dynamics equations used for motion planning, control, and simulation. Rigid body assumptions break down for flexible or soft-robotic systems.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-actuation-and-control",
@@ -14,19 +14,43 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.35,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:forward-kinematics",
+        "label": "Forward Kinematics"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:robot-component",
+        "label": "Robot Component"
+      }
+    ],
     "relatedTo": []
   },
   "wikilinks": [

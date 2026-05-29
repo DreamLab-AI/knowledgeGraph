@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:word-piece",
   "domain": "spatial-computing",
-  "definition": "A subword tokenisation mod that merges character sequences based on likelihood maximisation rather than frequency, used in BERT and related models.",
+  "definition": "A subword tokenisation algorithm that iteratively merges character sequences by maximising the likelihood of the training corpus under a unigram language model, rather than merging the most frequent pairs. WordPiece is the default tokeniser for BERT, DistilBERT, and ELECTRA, producing vocabularies of approximately 30,000 tokens that handle rare and compound words via subword splitting.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -14,19 +14,47 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.5,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:byte-pair-encoding",
+        "label": "Byte Pair Encoding"
+      },
+      {
+        "id": "urn:ngm:class:sentence-piece",
+        "label": "SentencePiece"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:vocabulary",
+        "label": "Vocabulary"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:subword-tokenisation",
+        "label": "Subword Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      }
+    ],
     "relatedTo": []
   },
   "wikilinks": [

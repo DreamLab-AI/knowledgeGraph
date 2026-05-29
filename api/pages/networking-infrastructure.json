@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:networking-infrastructure",
   "domain": "infrastructure",
-  "definition": "Networking Infrastructure is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "The physical and logical systems\u2014including routers, CDNs, edge nodes, and communication protocols\u2014that underpin connectivity for distributed applications. For spatial computing and metaverse contexts, networking infrastructure must deliver sub-20ms latency, support massive concurrent connections, and enable geographically distributed state synchronisation.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infra-network-and-comms",
@@ -13,13 +13,40 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
     "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:realtime-communication",
+        "label": "Realtime Communication"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-infrastructure",
+        "label": "Metaverse Infrastructure"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "id": "urn:ngm:class:bandwidth-adaptation",
+        "label": "Bandwidth Adaptation"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],

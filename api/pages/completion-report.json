@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:completion-report",
   "domain": "spatial-computing",
-  "definition": "A formal documentation artefact summarising the outcomes, achievements, and validation status of a completed Project or Work Package.",
+  "definition": "A Completion Report is a formal documentation artefact summarising the outcomes, achievements, and validation status of a completed project or work package. It captures deliverables, quality metrics, sign-off records, and governance evidence required for stakeholder communication and project closure in regulated or standards-aligned environments.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-content-and-assets",
@@ -14,7 +14,7 @@
   ],
   "entityType": "Class",
   "qualityScore": 0.4,
-  "maturity": "draft",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,11 +23,34 @@
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:documentation-standards",
+        "label": "Documentation Standards"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-domain",
+        "label": "Metaverse Domain"
+      }
+    ]
   },
   "wikilinks": [
     {
