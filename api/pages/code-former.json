@@ -1,0 +1,87 @@
+{
+  "id": "urn:visionflow:page:code-former",
+  "title": "CodeFormer",
+  "slug": "code-former",
+  "public": true,
+  "classIri": "urn:ngm:class:code-former",
+  "domain": "ai",
+  "definition": "CodeFormer is a Transformer-based blind face restoration model that combines a discrete codebook prior \u2014 learned via a vector-quantised autoencoder \u2014 with a controllable fidelity-quality trade-off mechanism, allowing it to recover high-quality facial details from severely degraded inputs such as low-resolution, compressed, or heavily noisy images. Unlike earlier GAN-based restoration approaches, CodeFormer's codebook provides rich, semantically plausible facial priors that guide reconstruction without requiring clean reference images, and its fidelity weight parameter lets users tune the balance between realism and fidelity to the original degraded input. The model generalises to face enhancement tasks in AI-generated images, old photo restoration, and video face restoration.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:deep-learning",
+      "label": "Deep Learning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:diffusion-transformer",
+        "label": "Diffusion Transformer"
+      },
+      {
+        "id": "urn:ngm:class:image-processing",
+        "label": "Image Processing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:film-vfx",
+        "label": "Film VFX"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-upscaling-and-super-resolution",
+        "label": "AI Upscaling and Super-Resolution"
+      },
+      {
+        "id": "urn:ngm:class:super-resolution",
+        "label": "Super Resolution"
+      },
+      {
+        "id": "urn:ngm:class:inpainting",
+        "label": "Inpainting"
+      },
+      {
+        "id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-upscaling-and-super-resolution",
+      "label": "AI Upscaling and Super-Resolution"
+    },
+    {
+      "slug": "comfy-ui-for-fashion-and-brands",
+      "label": "comfy-ui-for-fashion-and-brands"
+    },
+    {
+      "slug": "face-swap",
+      "label": "Face Swap"
+    },
+    {
+      "slug": "image-and-video-restoration",
+      "label": "Image and Video Restoration"
+    }
+  ]
+}

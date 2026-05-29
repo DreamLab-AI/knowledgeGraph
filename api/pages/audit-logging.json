@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:audit-logging",
+  "title": "Audit Logging",
+  "slug": "audit-logging",
+  "public": true,
+  "classIri": "urn:ngm:class:audit-logging",
+  "domain": "security",
+  "definition": "Audit logging is the systematic, tamper-evident recording of security-relevant events, user actions, and system operations to an immutable or append-only store, enabling retrospective forensic analysis, regulatory compliance, and incident response. Each log entry captures who performed an action, what was performed, when, from where, and the outcome, providing an authoritative chain of evidence. Audit logs are distinct from general application logs by their integrity guarantees and structured, queryable format.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:audit-log",
+      "label": "Audit Log"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:algorithmic-auditing",
+        "label": "Algorithmic Auditing"
+      },
+      {
+        "id": "urn:ngm:class:compliance-verification",
+        "label": "Compliance Verification"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:information-security",
+        "label": "Information Security"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cybersecurity-standard",
+      "label": "Cybersecurity Standard"
+    },
+    {
+      "slug": "etsi-domain-data-management-ethics",
+      "label": "ETSI Domain: Data Management + Ethics"
+    },
+    {
+      "slug": "ethics-and-law-layer",
+      "label": "Ethics & Law Layer"
+    }
+  ]
+}

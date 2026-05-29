@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:atomic-settlement",
+  "title": "Atomic Settlement",
+  "slug": "atomic-settlement",
+  "public": true,
+  "classIri": "urn:ngm:class:atomic-settlement",
+  "domain": "blockchain",
+  "definition": "Atomic settlement is a transaction completion mechanism in which the transfer of assets between two or more parties either executes in its entirety or not at all, eliminating counterparty risk and the possibility of partial fulfilment. The mechanism is enforced at the protocol level, ensuring that delivery and payment occur simultaneously and indivisibly within a single transaction or smart contract execution. This property derives from atomicity \u2014 one of the four ACID properties of database transactions \u2014 applied to financial and digital asset exchanges. Atomic settlement is the foundational guarantee underpinning trustless exchange protocols, cross-chain bridges, and real-time gross settlement systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:transaction",
+      "label": "Transaction"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralized-exchange",
+        "label": "Decentralized Exchange"
+      },
+      {
+        "id": "urn:ngm:class:securities-settlement",
+        "label": "Securities Settlement"
+      },
+      {
+        "id": "urn:ngm:class:instant-value-settlement",
+        "label": "Instant value settlement"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:hash-time-locked-contract",
+        "label": "Hash Time-Locked Contract"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:atomic-swap",
+        "label": "Atomic Swap"
+      },
+      {
+        "id": "urn:ngm:class:finality",
+        "label": "Finality"
+      },
+      {
+        "id": "urn:ngm:class:transaction-finality",
+        "label": "Transaction Finality"
+      },
+      {
+        "id": "urn:ngm:class:trustless-settlement",
+        "label": "Trustless Settlement"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "enterprise-smart-contracts",
+      "label": "Enterprise Smart Contracts"
+    },
+    {
+      "slug": "r3-corda",
+      "label": "R3 Corda"
+    }
+  ]
+}

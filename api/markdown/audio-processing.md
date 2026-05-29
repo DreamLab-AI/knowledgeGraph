@@ -1,0 +1,14 @@
+- ### Definition
+  - [[Audio Processing]] is the computational manipulation of digital audio signals using [[Digital Signal Processing]] techniques to transform, enhance, or analyse sound for applications ranging from [[Speech Recognition]] to [[Spatial Audio System]] rendering in [[Immersive Audio System]] contexts.
+
+- ### Relationships
+  - [[Audio Processing]] is a specialisation of [[Signal Processing]] that draws on [[Digital Signal Processing]] mathematics. It enables [[Speech Recognition]] pipelines, powers [[Spatial Audio System]] engines, and underpins [[Immersive Audio System]] deployments. The [[Audio Parameters]] that govern gains, filters, and routing are consumed by an [[Audio Processing System]] to produce outputs such as [[Audio Spatialization]] and [[Spatial Audio]] scenes.
+
+- ### Content
+  - Audio processing emerged as a formal discipline in the 1960s alongside digital computing, building on Shannon's information theory and the Nyquist-Shannon sampling theorem. Early implementations ran on specialised DSP chips; today the workload is distributed across CPUs, GPUs, and dedicated neural processing units, enabling real-time pipelines that would previously have required entire studios.
+
+  - A digital audio processing pipeline typically begins with analogue-to-digital conversion, producing a pulse-code-modulated stream. Algorithms then operate in either the time domain (convolution, dynamic range compression) or the frequency domain via fast Fourier transforms (spectral equalisation, pitch shifting, noise suppression). Machine learning models increasingly handle tasks such as source separation, dereverberation, and codec artefact removal that rule-based approaches could not address with sufficient quality.
+
+  - The significance of audio processing spans consumer electronics, broadcast media, telecommunications, healthcare diagnostics via audio biomarkers, and spatial computing. In extended reality systems, real-time audio processing governs how virtual sound sources are rendered relative to a listener's head position, making the difference between convincing presence and obvious artificiality. Automotive applications use it for noise cancellation, hands-free calling, and in-cabin personalisation.
+
+  - Between 2024 and 2025 neural audio codecs such as EnCodec and DAC have demonstrated near-lossless compression at very low bitrates, while foundation models trained on diverse audio corpora perform zero-shot separation and enhancement. Spatial audio processing is being standardised through MPEG-H and immersive voice codecs for next-generation telecommunications, positioning audio processing as a critical infrastructure layer for both AI assistants and spatial computing platforms.

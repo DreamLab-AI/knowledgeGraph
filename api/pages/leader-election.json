@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:leader-election",
+  "title": "Leader Election",
+  "slug": "leader-election",
+  "public": true,
+  "classIri": "urn:ngm:class:leader-election",
+  "domain": "infrastructure",
+  "definition": "Leader election is a fundamental coordination primitive in distributed computing that enables a cluster of peer nodes to agree on a single node \u2014 the leader \u2014 that assumes special coordination responsibilities such as sequencing writes, directing consensus rounds, or managing resource allocation on behalf of the group. In the presence of node failures, network partitions, or leader crashes, the leader election protocol must reliably select a new leader from the surviving nodes while ensuring safety (at most one leader at a time) and liveness (a leader is eventually elected) properties hold.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:distributed-consensus",
+      "label": "Distributed Consensus"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
+        "id": "urn:ngm:class:service-discovery",
+        "label": "Service Discovery"
+      },
+      {
+        "id": "urn:ngm:class:consensus-protocol",
+        "label": "Consensus Protocol"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:raft",
+        "label": "Raft"
+      },
+      {
+        "id": "urn:ngm:class:paxos",
+        "label": "Paxos"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:participant-coordination",
+        "label": "Participant Coordination"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "byzantine-fault-tolerance",
+      "label": "Byzantine Fault Tolerance"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "distributed-computing",
+      "label": "Distributed Computing"
+    }
+  ]
+}

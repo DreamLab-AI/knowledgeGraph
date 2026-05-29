@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:graph-ql",
+  "title": "GraphQL",
+  "slug": "graph-ql",
+  "public": true,
+  "classIri": "urn:ngm:class:graph-ql",
+  "domain": "web",
+  "definition": "GraphQL is a query language and runtime for APIs, developed by Facebook and open-sourced in 2015, that allows clients to specify precisely the data they need in a single request rather than consuming fixed-shape REST endpoints. It is defined by a strongly typed schema that describes the graph of types and fields the API exposes, and a runtime that resolves client queries against that schema by executing resolver functions. GraphQL eliminates the over-fetching and under-fetching problems inherent in REST by shifting data shape control to the client, and its introspection capability enables rich developer tooling and automatic documentation generation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:api-standard",
+      "label": "API Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:api-integration",
+        "label": "API Integration"
+      },
+      {
+        "id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:json",
+        "label": "json"
+      },
+      {
+        "id": "urn:ngm:class:schema-definition",
+        "label": "Schema Definition"
+      },
+      {
+        "id": "urn:ngm:class:http-protocol",
+        "label": "HTTP Protocol"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "id": "urn:ngm:class:api-management",
+        "label": "API Management"
+      },
+      {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "api-gateway",
+      "label": "API Gateway"
+    },
+    {
+      "slug": "dao-analytics",
+      "label": "DAO Analytics"
+    },
+    {
+      "slug": "data-layer",
+      "label": "Data Layer"
+    },
+    {
+      "slug": "digital-twin-interop-protocol",
+      "label": "Digital Twin Interop Protocol"
+    }
+  ]
+}

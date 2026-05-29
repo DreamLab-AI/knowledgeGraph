@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:haptic-feedback-system",
+  "title": "Haptic Feedback System",
+  "slug": "haptic-feedback-system",
+  "public": true,
+  "classIri": "urn:ngm:class:haptic-feedback-system",
+  "domain": "graphics",
+  "definition": "A Haptic Feedback System is a hardware-software assembly that generates controlled tactile and kinaesthetic sensations in response to digital events, using actuator arrays (vibrotactile motors, piezoelectric patches, pneumatic bladders, or shape-memory alloys), real-time rendering engines, and closed-loop sensorimotor control loops to simulate textures, resistances, impacts, and spatial forces for users of VR/AR headsets, surgical simulators, teleoperation systems, and mobile devices. The system comprises transducers that convert electrical signals into mechanical motion, driver electronics that modulate waveform parameters (frequency, amplitude, duration), rendering middleware that maps virtual-world physics to actuator commands, and perceptual models calibrated to human mechanoreceptor response characteristics.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:haptic-feedback",
+      "label": "Haptic Feedback"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "id": "urn:ngm:class:tactile-sensor",
+        "label": "Tactile Sensor"
+      },
+      {
+        "id": "urn:ngm:class:force-control",
+        "label": "Force Control"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:haptics",
+        "label": "Haptics"
+      },
+      {
+        "id": "urn:ngm:class:force-feedback",
+        "label": "Force Feedback"
+      },
+      {
+        "id": "urn:ngm:class:haptic-feedback-telepresence",
+        "label": "Haptic Feedback Telepresence"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "feedback-mechanism",
+      "label": "Feedback Mechanism"
+    },
+    {
+      "slug": "force-torque-sensor",
+      "label": "Force Torque Sensor"
+    },
+    {
+      "slug": "health-metaverse-application",
+      "label": "Health Metaverse Application"
+    }
+  ]
+}

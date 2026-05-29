@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:jacobian-matrix",
+  "title": "Jacobian Matrix",
+  "slug": "jacobian-matrix",
+  "public": true,
+  "classIri": "urn:ngm:class:jacobian-matrix",
+  "domain": "robotics",
+  "definition": "The Jacobian matrix is the matrix of all first-order partial derivatives of a vector-valued function, representing the best linear approximation to that function near a point and encoding how each output component changes with respect to each input variable. In robotics, the geometric and analytic Jacobian matrices map from joint velocity space to end-effector Cartesian velocity space, providing the fundamental tool for differential kinematics, inverse kinematics resolution, singularity analysis, and force-torque transmission between joint and task space. The Jacobian's rank and condition number determine the manipulability of a robot configuration and identify singular configurations where the end-effector loses degrees of freedom in certain directions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:differential-kinematics",
+      "label": "Differential Kinematics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:robot-control",
+        "label": "Robot Control"
+      },
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:forward-kinematics",
+        "label": "Forward Kinematics"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:robot-manipulation",
+        "label": "Robot Manipulation"
+      },
+      {
+        "id": "urn:ngm:class:trajectory-control",
+        "label": "Trajectory Control"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "differential-kinematics",
+      "label": "Differential Kinematics"
+    },
+    {
+      "slug": "inverse-kinematics",
+      "label": "Inverse Kinematics"
+    },
+    {
+      "slug": "kinematics-model",
+      "label": "Kinematics Model"
+    }
+  ]
+}

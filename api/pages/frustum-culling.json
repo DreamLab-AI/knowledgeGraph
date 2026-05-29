@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:frustum-culling",
+  "title": "Frustum Culling",
+  "slug": "frustum-culling",
+  "public": true,
+  "classIri": "urn:ngm:class:frustum-culling",
+  "domain": "graphics",
+  "definition": "Frustum culling is a real-time rendering visibility optimisation technique that discards scene objects whose bounding volumes lie entirely outside the camera's view frustum\u2014the truncated pyramid defined by the near and far clipping planes and the four side planes corresponding to the viewport edges. By testing object bounding spheres or axis-aligned bounding boxes against the six frustum planes before submitting draw calls, the GPU receives only geometry that could potentially contribute to the final image, dramatically reducing vertex processing and rasterisation work. It is a foundational stage in all production scene management pipelines.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:rendering-technique",
+      "label": "Rendering Technique"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:scene-optimization",
+        "label": "Scene Optimization"
+      },
+      {
+        "id": "urn:ngm:class:performance-optimization",
+        "label": "Performance Optimization"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:scene-graph",
+        "label": "Scene Graph"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:occlusion-culling",
+        "label": "Occlusion Culling"
+      },
+      {
+        "id": "urn:ngm:class:level-of-detail",
+        "label": "Level of Detail"
+      },
+      {
+        "id": "urn:ngm:class:scene-management",
+        "label": "Scene Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bounding-volume-hierarchy",
+      "label": "Bounding Volume Hierarchy"
+    },
+    {
+      "slug": "collision-detection",
+      "label": "Collision Detection"
+    },
+    {
+      "slug": "scene-graph",
+      "label": "Scene Graph"
+    },
+    {
+      "slug": "vircadia",
+      "label": "Vircadia"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    }
+  ]
+}

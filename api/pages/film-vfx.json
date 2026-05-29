@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:film-vfx",
+  "title": "Film VFX",
+  "slug": "film-vfx",
+  "public": true,
+  "classIri": "urn:ngm:class:film-vfx",
+  "domain": "graphics",
+  "definition": "Film VFX (Visual Effects) encompasses the full suite of techniques used to create, augment, or manipulate imagery in cinematic productions that cannot be practically achieved through conventional photography, including computer-generated imagery (CGI), digital compositing, motion capture-driven character animation, photorealistic simulation of natural phenomena, and digital environment creation. Modern film VFX pipelines integrate real-time rendering engines, deep learning-based tools for rotoscoping, denoising, and face replacement, and virtual production stages using LED volume displays to blend physical and digital environments in-camera rather than in post-production. VFX is distinct from practical effects (pyrotechnics, prosthetics) and from colour grading, though all three coexist within the broader post-production discipline.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:visual-effects",
+      "label": "Visual Effects"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:generative-content",
+        "label": "Generative Content"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:virtual-production",
+        "label": "Virtual Production"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      },
+      {
+        "id": "urn:ngm:class:vfx-tools",
+        "label": "VFX Tools"
+      },
+      {
+        "id": "urn:ngm:class:neural-rendering",
+        "label": "Neural Rendering"
+      },
+      {
+        "id": "urn:ngm:class:photorealistic-rendering",
+        "label": "Photorealistic Rendering"
+      },
+      {
+        "id": "urn:ngm:class:film-production",
+        "label": "Film Production"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "face-swap",
+      "label": "Face Swap"
+    },
+    {
+      "slug": "motion-capture",
+      "label": "Motion Capture"
+    },
+    {
+      "slug": "ray-tracing",
+      "label": "Ray Tracing"
+    }
+  ]
+}

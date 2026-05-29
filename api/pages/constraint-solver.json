@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:constraint-solver",
+  "title": "Constraint Solver",
+  "slug": "constraint-solver",
+  "public": true,
+  "classIri": "urn:ngm:class:constraint-solver",
+  "domain": "ai",
+  "definition": "A constraint solver is a computational engine that finds assignments of values to variables such that all specified constraints \u2014 mathematical relationships, logical predicates, or physical laws \u2014 are simultaneously satisfied, drawing on techniques from constraint programming, SAT/SMT solving, linear programming, and numerical methods. Solvers operate by propagating constraint implications to prune the search space, applying backtracking or branch-and-bound search, and invoking domain-specific inference procedures that make the infeasibility of partial assignments detectable early. They are applied across planning and scheduling, combinatorial optimisation, formal verification, physics simulation, computer-aided design, and robotic motion planning.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:optimization-algorithm",
+      "label": "Optimization Algorithm"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:automated-planning",
+        "label": "Automated Planning"
+      },
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:planning-and-scheduling",
+        "label": "Planning and Scheduling"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:logic-programming",
+        "label": "Logic Programming"
+      },
+      {
+        "id": "urn:ngm:class:constraint",
+        "label": "Constraint"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:constraint-based-design",
+        "label": "Constraint Based Design"
+      },
+      {
+        "id": "urn:ngm:class:trajectory-planning",
+        "label": "Trajectory Planning"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "generative-design-tool",
+      "label": "Generative Design Tool"
+    },
+    {
+      "slug": "physics-engine",
+      "label": "Physics Engine"
+    },
+    {
+      "slug": "physics-based-animation",
+      "label": "Physics-Based Animation"
+    }
+  ]
+}

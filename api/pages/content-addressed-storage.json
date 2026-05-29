@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:content-addressed-storage",
+  "title": "Content-Addressed Storage",
+  "slug": "content-addressed-storage",
+  "public": true,
+  "classIri": "urn:ngm:class:content-addressed-storage",
+  "domain": "infrastructure",
+  "definition": "Content-addressed storage (CAS) is a data storage paradigm in which each piece of data is identified and retrieved by a cryptographic hash of its content rather than by its location or a human-assigned name. Because the identifier is derived deterministically from the data itself, identical content always maps to the same address, enabling automatic deduplication and verifiable integrity without requiring trust in the storage provider. Content-addressed storage forms the basis of systems such as IPFS, Git, and Arweave, and underlies the content-integrity mechanisms of blockchain data layers. It is fundamentally different from location-addressed storage, where the same content can exist at multiple addresses or the same address can point to different content over time.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-storage",
+      "label": "Data Storage"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-availability",
+        "label": "Data Availability"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-verification",
+        "label": "Cryptographic Verification"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:ngm:class:content-addressing",
+        "label": "Content Addressing"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      },
+      {
+        "id": "urn:ngm:class:arweave",
+        "label": "Arweave"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-storage",
+        "label": "Decentralized Storage"
+      },
+      {
+        "id": "urn:ngm:class:distributed-storage",
+        "label": "Distributed Storage"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "decentralised-file-storage",
+      "label": "Decentralised file storage"
+    },
+    {
+      "slug": "decentralized-identifiers",
+      "label": "Decentralized Identifiers"
+    },
+    {
+      "slug": "uri-canonicaliser",
+      "label": "URI Canonicaliser"
+    },
+    {
+      "slug": "web3",
+      "label": "Web3"
+    }
+  ]
+}

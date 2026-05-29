@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:cross-entropy-loss",
+  "title": "Cross-Entropy Loss",
+  "slug": "cross-entropy-loss",
+  "public": true,
+  "classIri": "urn:ngm:class:cross-entropy-loss",
+  "domain": "ai",
+  "definition": "Cross-entropy loss is a differentiable scalar objective function that measures the dissimilarity between a model's predicted probability distribution and the true label distribution, computed as the negative log-likelihood of the correct class under the model's output. It is the canonical training objective for classification tasks and language modelling, directly optimising the model to assign maximum probability mass to correct outputs. Minimising cross-entropy is equivalent to maximising the likelihood of the training data under the model's parameterised distribution.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:loss-function",
+      "label": "Loss Function"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:language-modeling",
+        "label": "Language Modeling"
+      },
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "direct-preference-optimization",
+      "label": "Direct Preference Optimization"
+    },
+    {
+      "slug": "image-segmentation",
+      "label": "Image Segmentation"
+    },
+    {
+      "slug": "segmentation-and-identification",
+      "label": "Segmentation and Identification"
+    }
+  ]
+}

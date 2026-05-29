@@ -1,0 +1,62 @@
+public:: true
+
+# Image Processing
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:image-processing",
+  "@type": "Page",
+  "vc:slug": "image-processing",
+  "title": "Image Processing",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 2
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:image-processing",
+  "@type": "Class",
+  "label": "Image Processing",
+  "definition": "Image Processing is the computational manipulation of digital images using mathematical operations to enhance visual quality, extract information, or transform image representations for downstream analysis or display. It encompasses classical signal processing operations—filtering, convolution, histogram equalisation, morphological operations, and frequency-domain transforms—as well as learned operations implemented through convolutional neural networks and vision transformers. Image processing is a prerequisite step in computer vision pipelines, medical imaging workflows, satellite remote sensing, and industrial quality inspection systems, operating on pixel grids to produce processed images or structured outputs.",
+  "domain": "ai",
+  "maturity": "established",
+  "subClassOf": [{"@id": "urn:ngm:class:signal-processing", "label": "Signal Processing"}],
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
+      {"@id": "urn:ngm:class:image-processing-software", "label": "Image Processing Software"},
+      {"@id": "urn:ngm:class:digital-signal-processing", "label": "Digital Signal Processing"},
+      {"@id": "urn:ngm:class:open-cv", "label": "OpenCV"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:object-detection", "label": "Object Detection"},
+      {"@id": "urn:ngm:class:image-segmentation", "label": "Image Segmentation"},
+      {"@id": "urn:ngm:class:feature-extraction", "label": "Feature Extraction"},
+      {"@id": "urn:ngm:class:image-classification", "label": "Image Classification"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+    ]
+  },
+  "quality": 0.8
+}
+```
+
+- ### Definition
+  - Image Processing is the systematic application of mathematical transformations to digital images—from classical spatial filtering and morphological operations to learned [[Convolutional Neural Network]] pipelines—to enhance, analyse, or compress visual data as a foundational stage in [[Computer Vision]] and medical imaging workflows.
+
+- ### Relationships
+  - Image Processing is a subfield of [[Signal Processing]] applied to two-dimensional spatial data and is the preparatory stage for [[Computer Vision]] tasks. It uses [[Convolutional Neural Network]] and [[Deep Learning]] methods to perform learned filtering operations that generalise beyond hand-designed kernels. Its outputs directly enable [[Object Detection]], [[Image Segmentation]], [[Feature Extraction]], and [[Image Classification]] downstream. [[OpenCV]] is the dominant open-source library providing classical image processing primitives, while [[Digital Signal Processing]] theory provides the frequency-domain mathematical foundations through Fourier and wavelet transforms.
+
+- ### Content
+  - Image processing as a computational discipline emerged from the space program of the 1960s, when NASA needed to reconstruct images transmitted from lunar probes corrupted by noise during radio transmission. The development of the Fast Fourier Transform in 1965 enabled practical frequency-domain filtering, and digital image enhancement algorithms developed at JPL became foundational techniques. Medical imaging—X-ray enhancement, CT reconstruction from projections, MRI signal processing—drove further development of spatial and frequency-domain methods throughout the 1970s and 1980s. Industrial machine vision systems deployed from the 1980s onward applied image processing to quality inspection on manufacturing lines.
+
+  - Classical image processing operates through well-understood mathematical operations. Spatial domain processing applies kernels through convolution to implement blurring (Gaussian filter), edge detection (Sobel, Canny), and sharpening. Morphological operations (erosion, dilation, opening, closing) process binary images to remove noise, separate touching objects, and compute shape descriptors. Frequency domain methods apply the Fourier transform, manipulate spectrum coefficients to suppress or amplify frequency bands, and invert back to the spatial domain—enabling noise reduction, compression artefact removal, and texture analysis. Histogram equalisation redistributes pixel value distributions to improve contrast.
+
+  - Deep learning transformed image processing from 2012 onward when convolutional neural networks demonstrated that learned filters—trained end-to-end on labelled datasets—outperformed hand-engineered features across nearly all vision benchmarks. Modern image processing pipelines are hybrid: classical preprocessing steps (demosaicing, lens distortion correction, colour space conversion) prepare raw sensor data before learned models perform semantic operations. Generative models based on diffusion processes have added image synthesis, super-resolution, and inpainting as new image processing capabilities, enabling reconstruction of missing or corrupted image regions with photorealistic quality.
+
+  - By 2024-2025 the frontier of image processing has moved to foundation models trained on billions of image-text pairs. Vision-language models such as SAM (Segment Anything Model) from Meta provide universal segmentation masks from point or text prompts, replacing task-specific segmentation pipelines. Diffusion-based image restoration achieves state-of-the-art results for super-resolution, denoising, and deblurring. In medical imaging, AI-powered image processing for radiology has received regulatory approval in multiple jurisdictions, with imaging biomarkers derived from deep learning-processed scans entering clinical practice. Edge deployment on mobile processors and embedded vision chips brings real-time image processing to autonomous vehicles, augmented reality devices, and smart cameras at scale.

@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:inclusive-design",
+  "title": "Inclusive Design",
+  "slug": "inclusive-design",
+  "public": true,
+  "classIri": "urn:ngm:class:inclusive-design",
+  "domain": "web",
+  "definition": "Inclusive design is a design methodology and philosophy that creates products, services, environments, and digital experiences to be usable by the widest possible range of people across diverse abilities, ages, languages, cultures, and contexts, without requiring specialised adaptations or separate versions for different user groups. It treats human diversity as a design resource rather than a problem to be accommodated, recognising that designing for people with disabilities, situational impairments, or non-standard use contexts typically produces solutions that benefit all users. The approach is distinct from universal design in emphasising process \u2014 including people with diverse characteristics as active co-designers throughout \u2014 rather than solely optimising for a single configuration serving all.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:universal-design",
+      "label": "Universal Design"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:inclusive-xr-design",
+        "label": "Inclusive Xr Design"
+      },
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      },
+      {
+        "id": "urn:ngm:class:inclusive-participation",
+        "label": "Inclusive Participation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:interaction-design",
+        "label": "Interaction Design"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:accessibility-standard",
+        "label": "Accessibility Standard"
+      },
+      {
+        "id": "urn:ngm:class:equity",
+        "label": "Equity"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "accessibility-audit-tool",
+      "label": "Accessibility Audit Tool"
+    },
+    {
+      "slug": "accessibility",
+      "label": "Accessibility"
+    },
+    {
+      "slug": "accessible-design",
+      "label": "Accessible Design"
+    },
+    {
+      "slug": "etsi-domain-human-interface",
+      "label": "ETSI_Domain_Human_Interface"
+    },
+    {
+      "slug": "product-design",
+      "label": "Product Design"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

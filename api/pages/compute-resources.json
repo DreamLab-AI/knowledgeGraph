@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:compute-resources",
+  "title": "Compute Resources",
+  "slug": "compute-resources",
+  "public": true,
+  "classIri": "urn:ngm:class:compute-resources",
+  "domain": "infrastructure",
+  "definition": "Compute resources are the aggregate processing capacity available to execute computational workloads, encompassing CPUs, GPUs, specialised accelerators (TPUs, NPUs), memory, network bandwidth, and associated storage I/O. They are quantified by metrics such as FLOPS, memory bandwidth, core count, and clock speed, and are provisioned via physical hardware, virtualised cloud instances, or serverless functions. Effective allocation and scheduling of compute resources is the foundational concern of cloud computing, high-performance computing, and AI infrastructure.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:computational-resources",
+      "label": "Computational Resources"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:gpu-resources",
+        "label": "GPU Resources"
+      },
+      {
+        "id": "urn:ngm:class:compute-layer",
+        "label": "Compute Layer"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
+      },
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "open-generative-ai-tools",
+      "label": "Open Generative AI tools"
+    },
+    {
+      "slug": "robot-learning",
+      "label": "Robot Learning"
+    },
+    {
+      "slug": "spatial-computing-layer",
+      "label": "Spatial Computing Layer"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

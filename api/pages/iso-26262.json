@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:iso-26262",
+  "title": "ISO 26262",
+  "slug": "iso-26262",
+  "public": true,
+  "classIri": "urn:ngm:class:iso-26262",
+  "domain": "infrastructure",
+  "definition": "ISO 26262 is the international functional safety standard for electrical and electronic systems in road vehicles, published in 2011 and revised in 2018 to cover motorcycles and semi-conductors. It defines an Automotive Safety Integrity Level (ASIL) classification system (A through D, with D being most critical) that governs the rigour of safety lifecycle activities\u2014hazard analysis, safety requirements, design, implementation, testing, and validation\u2014required for each item. Compliance provides the framework for demonstrating that vehicle systems and software achieve an acceptable residual risk of hazardous failure.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:safety-standard",
+      "label": "Safety Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "id": "urn:ngm:class:software-testing",
+        "label": "Software Testing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      },
+      {
+        "id": "urn:ngm:class:adas",
+        "label": "ADAS"
+      },
+      {
+        "id": "urn:ngm:class:self-driving-car",
+        "label": "Self Driving Car"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "id": "urn:ngm:class:iec-61508",
+        "label": "IEC 61508"
+      },
+      {
+        "id": "urn:ngm:class:do-178-c",
+        "label": "DO-178C"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "adas",
+      "label": "ADAS"
+    },
+    {
+      "slug": "autonomous-vehicle",
+      "label": "Autonomous Vehicle"
+    },
+    {
+      "slug": "control-algorithm",
+      "label": "Control Algorithm"
+    },
+    {
+      "slug": "fault-tolerance",
+      "label": "Fault Tolerance"
+    },
+    {
+      "slug": "perception-system",
+      "label": "Perception System"
+    },
+    {
+      "slug": "real-time",
+      "label": "Real Time"
+    }
+  ]
+}

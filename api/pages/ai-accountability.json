@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:ai-accountability",
+  "title": "AI Accountability",
+  "slug": "ai-accountability",
+  "public": true,
+  "classIri": "urn:ngm:class:ai-accountability",
+  "domain": "ai",
+  "definition": "AI Accountability is the set of mechanisms, obligations, and institutional structures that ensure developers, deployers, and operators of AI systems can be held responsible for the outcomes those systems produce. It encompasses technical auditability, legal liability, organisational governance, and redress pathways for harms caused by algorithmic decisions. Accountability frameworks bind technical transparency measures to enforceable consequences, distinguishing it from voluntary explainability efforts. Effective AI accountability requires clear assignment of responsibility across the AI value chain\u2014from data collection through deployment and monitoring.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:accountability",
+      "label": "Accountability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      },
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-trustworthiness",
+        "label": "AI Trustworthiness"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-governance-framework",
+      "label": "AI Governance Framework"
+    },
+    {
+      "slug": "ai-model-card",
+      "label": "AI Model Card"
+    },
+    {
+      "slug": "algorithmic-transparency-index",
+      "label": "Algorithmic Transparency Index"
+    }
+  ]
+}

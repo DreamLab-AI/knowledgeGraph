@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:asset-management-system",
+  "title": "Asset Management System",
+  "slug": "asset-management-system",
+  "public": true,
+  "classIri": "urn:ngm:class:asset-management-system",
+  "domain": "infrastructure",
+  "definition": "An Asset Management System (AMS) is an integrated software platform that tracks, manages, and optimises the lifecycle of physical, digital, or financial assets across an organisation. It consolidates asset data including acquisition, depreciation, maintenance, and disposal into a single governed repository. Modern AMS platforms enforce audit trails, automate compliance reporting, and feed into enterprise resource planning (ERP) and financial systems. They enable organisations to reduce total cost of ownership, mitigate risk, and demonstrate regulatory compliance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:asset-management",
+      "label": "Asset Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:digital-asset-management",
+        "label": "Digital Asset Management"
+      },
+      {
+        "id": "urn:ngm:class:monitoring-system",
+        "label": "Monitoring System"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:compliance-audit-trail",
+        "label": "Compliance Audit Trail"
+      },
+      {
+        "id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "game-engine",
+      "label": "Game Engine"
+    },
+    {
+      "slug": "metaverse-content-pipeline",
+      "label": "Metaverse Content Pipeline"
+    },
+    {
+      "slug": "universal-manifest",
+      "label": "Universal Manifest"
+    }
+  ]
+}

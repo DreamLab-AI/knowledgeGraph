@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:cbor",
+  "title": "CBOR",
+  "slug": "cbor",
+  "public": true,
+  "classIri": "urn:ngm:class:cbor",
+  "domain": "infrastructure",
+  "definition": "Concise Binary Object Representation (CBOR) is a binary data serialisation format specified in RFC 7049 (superseded by RFC 8949) designed to enable extremely compact encoding of structured data with a data model that is a superset of JSON. CBOR encodes values using a type-length-value scheme, eliminating the overhead of textual delimiters and key quotation, which makes it particularly well-suited for constrained environments such as IoT devices, embedded systems, and low-bandwidth protocols where minimising message size and parsing complexity is critical.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-serialization",
+      "label": "Data Serialization"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "id": "urn:ngm:class:credential-format-standard",
+        "label": "Credential Format Standard"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:binary-encoding",
+        "label": "Binary Encoding"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:json",
+        "label": "json"
+      },
+      {
+        "id": "urn:ngm:class:protocol-buffer",
+        "label": "Protocol Buffer"
+      },
+      {
+        "id": "urn:ngm:class:data-format-standard",
+        "label": "Data Format Standard"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "distributed-identity",
+      "label": "Distributed Identity"
+    },
+    {
+      "slug": "io-t-sensor-network",
+      "label": "IoT Sensor Network"
+    },
+    {
+      "slug": "self-sovereign-identity",
+      "label": "Self Sovereign Identity"
+    },
+    {
+      "slug": "verifiable-credentials",
+      "label": "Verifiable Credentials"
+    }
+  ]
+}

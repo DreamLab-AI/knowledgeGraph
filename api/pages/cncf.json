@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:cncf",
+  "title": "CNCF",
+  "slug": "cncf",
+  "public": true,
+  "classIri": "urn:ngm:class:cncf",
+  "domain": "infrastructure",
+  "definition": "The Cloud Native Computing Foundation (CNCF) is a vendor-neutral, open-source foundation established in 2015 under the Linux Foundation to steward cloud-native software projects including Kubernetes, Prometheus, Envoy, and over 150 additional hosted projects. CNCF defines cloud-native computing as building and running scalable applications in modern, dynamic environments such as public, private, and hybrid clouds using techniques including containers, microservices, and declarative APIs. The Foundation operates a Technical Oversight Committee (TOC) that governs project acceptance through sandbox, incubating, and graduated maturity stages.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:linux-foundation",
+      "label": "Linux Foundation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "id": "urn:ngm:class:open-telemetry",
+        "label": "OpenTelemetry"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cloud-native-applications",
+        "label": "Cloud-Native Applications"
+      },
+      {
+        "id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "id": "urn:ngm:class:technical-standards",
+        "label": "Technical Standards"
+      },
+      {
+        "id": "urn:ngm:class:standards-body",
+        "label": "Standards Body"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "api-gateway",
+      "label": "API Gateway"
+    },
+    {
+      "slug": "digital-infrastructure",
+      "label": "Digital Infrastructure"
+    },
+    {
+      "slug": "distributed-computing",
+      "label": "Distributed Computing"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    }
+  ]
+}

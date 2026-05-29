@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:collaborative-robotics",
+  "title": "Collaborative Robotics",
+  "slug": "collaborative-robotics",
+  "public": true,
+  "classIri": "urn:ngm:class:collaborative-robotics",
+  "domain": "robotics",
+  "definition": "Collaborative Robotics is the engineering discipline concerned with designing, deploying, and operating robotic systems \u2014 particularly collaborative robots (cobots) \u2014 that share workspace and tasks with human workers without requiring physical barriers, relying instead on force-torque sensing, speed-and-separation monitoring, and power-and-force limiting to maintain safety under ISO 10218 and ISO/TS 15066. Unlike traditional industrial robots that operate in guarded cages, cobots are designed with compliant joints, rounded profiles, and real-time collision-detection to enable direct physical cooperation with humans on assembly, inspection, and logistics tasks. The discipline integrates mechanical design, control theory, human-robot interaction research, and regulatory compliance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:collaborative-robot",
+      "label": "Collaborative Robot"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:manufacturing-automation",
+        "label": "Manufacturing Automation"
+      },
+      {
+        "id": "urn:ngm:class:assistive-robotics",
+        "label": "Assistive Robotics"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:force-torque-sensor",
+        "label": "Force Torque Sensor"
+      },
+      {
+        "id": "urn:ngm:class:impedance-control",
+        "label": "Impedance Control"
+      },
+      {
+        "id": "urn:ngm:class:end-effector",
+        "label": "End Effector"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "id": "urn:ngm:class:cobot-safety-levels",
+        "label": "Cobot Safety Levels"
+      },
+      {
+        "id": "urn:ngm:class:industrial-robot",
+        "label": "Industrial Robot"
+      },
+      {
+        "id": "urn:ngm:class:robot-safety",
+        "label": "Robot Safety"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cobot-safety-levels",
+      "label": "Cobot Safety Levels"
+    },
+    {
+      "slug": "force-control",
+      "label": "Force Control"
+    },
+    {
+      "slug": "human-factors",
+      "label": "Human Factors"
+    },
+    {
+      "slug": "motion-control",
+      "label": "Motion Control"
+    },
+    {
+      "slug": "pneumatic-actuator",
+      "label": "Pneumatic Actuator"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    }
+  ]
+}

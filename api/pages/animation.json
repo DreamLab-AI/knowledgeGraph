@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:animation",
+  "title": "Animation",
+  "slug": "animation",
+  "public": true,
+  "classIri": "urn:ngm:class:animation",
+  "domain": "graphics",
+  "definition": "Animation is the technique of creating the illusion of movement by rapidly displaying a sequence of static images or by computationally interpolating between keyframe states of a scene or character over time. In digital contexts, animation encompasses skeletal rigging, keyframe interpolation, physics simulation, and procedural generation to produce lifelike motion in real-time or pre-rendered environments. Modern animation pipelines integrate motion capture data, inverse kinematics, and blend trees to deliver nuanced character performances. Animation is foundational to game engines, virtual reality, film, and interactive simulations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:animation-technique",
+      "label": "Animation Technique"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:skeletal-animation",
+        "label": "Skeletal Animation"
+      },
+      {
+        "id": "urn:ngm:class:procedural-animation",
+        "label": "Procedural Animation"
+      },
+      {
+        "id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      },
+      {
+        "id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      }
+    ],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:animation-controller",
+        "label": "Animation Controller"
+      },
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "id": "urn:ngm:class:rendering-engine",
+        "label": "Rendering Engine"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:computer-graphics",
+        "label": "Computer Graphics"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "collision-detection",
+      "label": "Collision Detection"
+    },
+    {
+      "slug": "motion-capture",
+      "label": "Motion Capture"
+    }
+  ]
+}

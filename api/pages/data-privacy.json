@@ -1,0 +1,83 @@
+{
+  "id": "urn:visionflow:page:data-privacy",
+  "title": "Data Privacy",
+  "slug": "data-privacy",
+  "public": true,
+  "classIri": "urn:ngm:class:data-privacy",
+  "domain": "governance",
+  "definition": "Data Privacy is the field governing the appropriate collection, processing, storage, and sharing of personal information, ensuring that individuals retain meaningful control over their own data through technical safeguards, legal frameworks, and organisational policies. It encompasses both the regulatory compliance dimension\u2014expressed in instruments such as GDPR, CCPA, and sector-specific regulations\u2014and the engineering discipline of implementing privacy-by-design principles that minimise data exposure through techniques such as anonymisation, pseudonymisation, differential privacy, and consent management. Data privacy is now a core organisational risk management domain as data breaches, surveillance capitalism, and AI training practices raise the stakes of personal information handling.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:compliance-framework",
+      "label": "Compliance Framework"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:consent-management",
+        "label": "Consent Management"
+      },
+      {
+        "id": "urn:ngm:class:data-anonymization-pipeline",
+        "label": "Data Anonymization Pipeline"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:informed-consent",
+        "label": "Informed Consent"
+      },
+      {
+        "id": "urn:ngm:class:granular-consent-control",
+        "label": "Granular Consent Control"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-security",
+        "label": "Cryptographic Security"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      },
+      {
+        "id": "urn:ngm:class:personal-data-store",
+        "label": "Personal Data Store"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "consent-management",
+      "label": "Consent Management"
+    },
+    {
+      "slug": "data-protection",
+      "label": "Data Protection"
+    },
+    {
+      "slug": "privacy-architecture",
+      "label": "Privacy Architecture"
+    }
+  ]
+}

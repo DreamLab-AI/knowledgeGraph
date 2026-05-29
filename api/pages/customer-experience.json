@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:customer-experience",
+  "title": "Customer Experience",
+  "slug": "customer-experience",
+  "public": true,
+  "classIri": "urn:ngm:class:customer-experience",
+  "domain": "ai",
+  "definition": "Customer experience (CX) is the holistic perception a customer forms of an organisation across every interaction and touchpoint throughout the customer lifecycle, from initial awareness through purchase, post-sale service, and eventual advocacy or churn. It encompasses emotional, cognitive, sensory, and behavioural dimensions of customer engagement and is recognised as a primary competitive differentiator in markets where product parity is high. Organisations systematically measure and engineer CX through journey mapping, voice-of-customer programmes, service design, and data-driven personalisation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:user-experience",
+      "label": "User Experience"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:customer-service-automation",
+        "label": "Customer Service Automation"
+      },
+      {
+        "id": "urn:ngm:class:hyper-personalisation",
+        "label": "Hyper personalisation"
+      },
+      {
+        "id": "urn:ngm:class:loyalty-programs",
+        "label": "Loyalty Programs"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:predictive-personalization",
+        "label": "Predictive Personalization"
+      },
+      {
+        "id": "urn:ngm:class:behavioral-analytics",
+        "label": "Behavioral Analytics"
+      },
+      {
+        "id": "urn:ngm:class:sentiment-analysis",
+        "label": "Sentiment Analysis"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-twin-of-the-customer",
+        "label": "Digital Twin of the Customer"
+      },
+      {
+        "id": "urn:ngm:class:customer-support",
+        "label": "Customer Support"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "call-centres",
+      "label": "Call Centres"
+    },
+    {
+      "slug": "digital-transformation",
+      "label": "Digital Transformation"
+    },
+    {
+      "slug": "logistics-optimization",
+      "label": "Logistics Optimization"
+    }
+  ]
+}

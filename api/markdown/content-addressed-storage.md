@@ -1,0 +1,14 @@
+- ### Definition
+  - Content-addressed storage is a storage model that identifies data by a [[Cryptographic Hash]] of its contents, using [[Merkle Tree]] structures to enable efficient integrity verification, and forming the foundational storage layer for systems such as [[IPFS]] and [[Arweave]].
+
+- ### Relationships
+  - Content-addressed storage depends on [[Cryptographic Hash]] functions (typically SHA-256 or Blake3) to generate deterministic content identifiers (CIDs), organises hierarchical data using [[Merkle Tree]] structures for efficient partial verification, and implements the [[Content Addressing]] retrieval model. It enables [[Data Availability]] guarantees by allowing any node holding the data to serve it verifiably, and supports [[Cryptographic Verification]] without trusted intermediaries. It is the architectural basis for [[Decentralized Storage]] and [[Distributed Storage]] networks.
+
+- ### Content
+  - The concept of content-addressing predates the internet—Linus Torvalds applied it systematically in Git in 2005, where every commit, tree, and blob is identified by its SHA-1 hash, enabling distributed version control without a central authority. Academic work on content-addressable network (CAN) overlays and distributed hash tables (DHTs) in the early 2000s established the theoretical basis for large-scale peer-to-peer retrieval.
+
+  - In a content-addressed system, a write operation computes H(data) = address, then stores the data at that address across one or more nodes. A read operation takes an address, retrieves data from any node holding it, recomputes the hash, and rejects the data if the hash does not match—ensuring tamper-evidence without trusting the serving node. Merkle trees extend this to structured data: each internal node hashes its children, allowing a root hash to commit to an entire dataset while enabling efficient proof of inclusion for individual chunks.
+
+  - Content-addressed storage is significant in decentralised web and blockchain contexts because it severs the dependency between data location and data identity, enabling censorship-resistant publishing (IPFS), permanent storage incentivised by blockchain payments (Filecoin, Arweave), and verifiable off-chain data references in smart contract systems. It also enables efficient deduplication in backup and scientific data repositories.
+
+  - In 2024–2025, content-addressed storage is seeing rapid adoption in AI infrastructure for reproducible dataset and model versioning (DVC, Hugging Face datasets), in Ethereum's danksharding roadmap where blob data is addressed by KZG commitments, and in decentralised AI training pipelines that require verifiable provenance for training data. CID-based interoperability is maturing across IPFS, Filecoin, and Ethereum, creating a unified verifiable storage substrate.

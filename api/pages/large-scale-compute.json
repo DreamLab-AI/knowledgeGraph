@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:large-scale-compute",
+  "title": "Large-Scale Compute",
+  "slug": "large-scale-compute",
+  "public": true,
+  "classIri": "urn:ngm:class:large-scale-compute",
+  "domain": "infrastructure",
+  "definition": "Large-scale compute refers to the aggregation of massive computational resources \u2014 spanning thousands to hundreds of thousands of processors, accelerators, and memory modules \u2014 into coordinated systems capable of executing workloads at magnitudes that are impractical for single machines or small clusters, including the training of frontier AI models, climate simulation, drug discovery, and national security applications. It encompasses the physical infrastructure (data centres, power supply, cooling), interconnect fabrics (InfiniBand, NVLink, custom optical networks), software orchestration layers (job schedulers, distributed training frameworks), and the operational expertise required to sustain utilisation and reliability at exascale levels.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:computational-infrastructure",
+      "label": "Computational Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-infrastructure",
+        "label": "Machine Learning Infrastructure"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      },
+      {
+        "id": "urn:ngm:class:tensor-processing-unit",
+        "label": "Tensor Processing Unit"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "artificial-general-intelligence",
+      "label": "Artificial General Intelligence"
+    },
+    {
+      "slug": "proprietary-image-generation",
+      "label": "Proprietary Image Generation"
+    },
+    {
+      "slug": "proprietary-large-language-models",
+      "label": "Proprietary Large Language Models"
+    }
+  ]
+}

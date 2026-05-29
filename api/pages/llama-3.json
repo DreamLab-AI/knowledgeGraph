@@ -1,0 +1,93 @@
+{
+  "id": "urn:visionflow:page:llama-3",
+  "title": "Llama 3",
+  "slug": "llama-3",
+  "public": true,
+  "classIri": "urn:ngm:individual:llama-3",
+  "domain": "ai",
+  "definition": "Llama 3 is a family of open-weight large language models developed and released by Meta AI in April 2024, spanning 8 billion and 70 billion parameter base and instruction-tuned variants, with a 405 billion parameter model subsequently released in July 2024. Llama 3 models are trained on approximately 15 trillion tokens from a curated multilingual corpus, use a 128,000-token vocabulary with a custom BPE tokeniser, incorporate grouped-query attention for inference efficiency, and are post-trained with supervised fine-tuning and reinforcement learning from human feedback. The models are released under a custom Meta Llama 3 Community License that permits commercial use for most organisations while imposing restrictions on deployments exceeding 700 million monthly active users.",
+  "subClassOf": [],
+  "entityType": "Individual",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "id": "urn:ngm:class:inference-engine",
+        "label": "Inference Engine"
+      },
+      {
+        "id": "urn:ngm:class:open-source-ai",
+        "label": "Open-Source AI"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:rlhf",
+        "label": "RLHF"
+      },
+      {
+        "id": "urn:ngm:class:instruction-tuning",
+        "label": "Instruction Tuning"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:meta-ai",
+        "label": "Meta AI"
+      },
+      {
+        "id": "urn:ngm:class:model-weights",
+        "label": "Model Weights"
+      },
+      {
+        "id": "urn:ngm:class:benchmarks",
+        "label": "Benchmarks"
+      },
+      {
+        "id": "urn:ngm:class:safety-and-alignment",
+        "label": "Safety and alignment"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ms-phi-models",
+      "label": "MS Phi models"
+    },
+    {
+      "slug": "open-generative-ai-tools",
+      "label": "Open Generative AI tools"
+    },
+    {
+      "slug": "open-webui-and-pipelines",
+      "label": "Open Webui and Pipelines"
+    },
+    {
+      "slug": "proprietary-large-language-models",
+      "label": "Proprietary Large Language Models"
+    },
+    {
+      "slug": "training-and-fine-tuning",
+      "label": "Training and fine tuning"
+    }
+  ]
+}

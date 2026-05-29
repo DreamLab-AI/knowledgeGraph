@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:diffusion-transformer",
+  "title": "Diffusion Transformer",
+  "slug": "diffusion-transformer",
+  "public": true,
+  "classIri": "urn:ngm:class:diffusion-transformer",
+  "domain": "ai",
+  "definition": "A Diffusion Transformer (DiT) is a generative model architecture that replaces the convolutional U-Net backbone traditionally used in diffusion models with a scalable transformer architecture operating in a compressed latent space. DiT conditions the denoising process on class labels or text embeddings injected via adaptive layer normalisation or cross-attention, and processes image or video patches as sequences of tokens, enabling the model to leverage the scaling laws well-established for language transformers. Introduced by Peebles and Xie (2023), DiT demonstrated that transformer-based denoisers match or surpass U-Net performance while scaling predictably with model size and compute, forming the basis for state-of-the-art image and video generation systems including Stable Diffusion 3, FLUX, and OpenAI's Sora.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:generative-model",
+      "label": "Generative Model"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "id": "urn:ngm:class:video-generation",
+        "label": "Video Generation"
+      },
+      {
+        "id": "urn:ngm:class:text-to-image",
+        "label": "Text-to-Image"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:latent-diffusion",
+        "label": "Latent Diffusion"
+      },
+      {
+        "id": "urn:ngm:class:self-attention",
+        "label": "Self Attention"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:flow-matching",
+        "label": "Flow Matching"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-video",
+      "label": "AI Video"
+    },
+    {
+      "slug": "diffusion-models",
+      "label": "Diffusion Models"
+    },
+    {
+      "slug": "proprietary-ai-video",
+      "label": "Proprietary AI Video"
+    }
+  ]
+}

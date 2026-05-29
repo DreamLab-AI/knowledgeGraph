@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:display-calibration",
+  "title": "Display Calibration",
+  "slug": "display-calibration",
+  "public": true,
+  "classIri": "urn:ngm:class:display-calibration",
+  "domain": "graphics",
+  "definition": "Display calibration is the process of measuring and adjusting a display device's photometric and colorimetric characteristics\u2014luminance, white point, gamma or EOTF, and colour gamut\u2014to conform to a defined target standard or ICC colour profile. It employs colorimetric measurement instruments (colorimeters, spectrophotometers) to sample the display output and generates correction data (LUTs or ICC profiles) applied by the operating system or display hardware to compensate for manufacturing variation and age-related drift. Calibration is mandatory in colour-critical workflows including digital cinema (DCI-P3), broadcast (Rec. 709, Rec. 2020), medical imaging, and visual effects production.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:calibration",
+      "label": "Calibration"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:photorealistic-rendering",
+        "label": "Photorealistic Rendering"
+      },
+      {
+        "id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:calibration-equipment",
+        "label": "Calibration Equipment"
+      },
+      {
+        "id": "urn:ngm:class:calibration-standards",
+        "label": "Calibration Standards"
+      },
+      {
+        "id": "urn:ngm:class:optical-calibration-target",
+        "label": "Optical Calibration Target"
+      },
+      {
+        "id": "urn:ngm:class:display-metrology",
+        "label": "Display Metrology"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:display-technology",
+        "label": "Display Technology"
+      },
+      {
+        "id": "urn:ngm:class:display-hardware",
+        "label": "Display Hardware"
+      },
+      {
+        "id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "display-metrology",
+      "label": "Display Metrology"
+    },
+    {
+      "slug": "mixed-reality",
+      "label": "Mixed Reality"
+    },
+    {
+      "slug": "resolution-test-chart",
+      "label": "Resolution Test Chart"
+    }
+  ]
+}

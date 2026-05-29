@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:collective-decision-making",
+  "title": "Collective Decision Making",
+  "slug": "collective-decision-making",
+  "public": true,
+  "classIri": "urn:ngm:class:collective-decision-making",
+  "domain": "governance",
+  "definition": "Collective decision making is the social and technical process by which a group of agents \u2014 human, algorithmic, or hybrid \u2014 aggregate individual preferences, information, or votes to arrive at a binding or advisory choice on behalf of the group. It encompasses the design and analysis of voting systems, preference aggregation mechanisms, deliberation protocols, and incentive structures that determine how group choices are reached and enforced. In digital and blockchain contexts, collective decision making is formalised through on-chain governance mechanisms, decentralised autonomous organisations, and algorithmic voting schemes that encode group agency in smart contract logic.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:decentralised-decision-making",
+      "label": "Decentralised Decision-Making"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-governance",
+        "label": "On-chain Governance"
+      },
+      {
+        "id": "urn:ngm:class:community-governance",
+        "label": "Community Governance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:voting-mechanism",
+        "label": "Voting Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      },
+      {
+        "id": "urn:ngm:class:conviction-voting",
+        "label": "Conviction Voting"
+      },
+      {
+        "id": "urn:ngm:class:token-weighted-voting",
+        "label": "Token-Weighted Voting"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:collective-intelligence-system",
+        "label": "Collective Intelligence System"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "delegate-democracy",
+      "label": "Delegate Democracy"
+    },
+    {
+      "slug": "digital-citizens-assembly",
+      "label": "Digital Citizens' Assembly"
+    },
+    {
+      "slug": "governance-board",
+      "label": "Governance Board"
+    }
+  ]
+}

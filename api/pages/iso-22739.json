@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:iso-22739",
+  "title": "ISO 22739",
+  "slug": "iso-22739",
+  "public": true,
+  "classIri": "urn:ngm:class:iso-22739",
+  "domain": "blockchain",
+  "definition": "ISO 22739:2020 is the foundational International Organisation for Standardisation standard that establishes a comprehensive vocabulary of terms and definitions for distributed ledger technology (DLT) and blockchain systems, providing a normative reference for terminology used across all subsequent blockchain-related ISO standards, regulatory documents, and technical specifications. The standard was developed by ISO/TC 307 (Blockchain and distributed ledger technologies) and covers over 60 core concepts including blockchain, distributed ledger, smart contract, consensus mechanism, node, fork, digital asset, cryptographic key, and wallet.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:iso-standards",
+      "label": "Iso Standards"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:compliance-standards",
+        "label": "Compliance Standards"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-compliance",
+        "label": "Blockchain Compliance"
+      },
+      {
+        "id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-core-concepts",
+        "label": "blockchain core concepts"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "consortium-blockchain",
+      "label": "Consortium Blockchain"
+    },
+    {
+      "slug": "distributed-ledger-technology-dlt",
+      "label": "Distributed Ledger Technology (DLT)"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "hyperledger-iroha",
+      "label": "Hyperledger Iroha"
+    }
+  ]
+}

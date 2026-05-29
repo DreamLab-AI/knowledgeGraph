@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:energy-management",
+  "title": "Energy Management",
+  "slug": "energy-management",
+  "public": true,
+  "classIri": "urn:ngm:class:energy-management",
+  "domain": "infrastructure",
+  "definition": "Energy management is the systematic process of monitoring, controlling, and optimising the generation, distribution, and consumption of energy in facilities, industrial processes, or grid infrastructure to minimise cost, reduce waste, and meet sustainability and regulatory targets. It encompasses metering infrastructure, energy auditing, demand-side management, load forecasting, and integration of renewable generation, governed by standards such as ISO 50001. Modern energy management systems (EMS) use real-time telemetry from IoT sensors, predictive analytics, and automated control loops to balance supply and demand dynamically.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:power-management",
+      "label": "Power Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:demand-response",
+        "label": "Demand Response"
+      },
+      {
+        "id": "urn:ngm:class:smart-grid",
+        "label": "Smart Grid"
+      },
+      {
+        "id": "urn:ngm:class:environmental-sustainability",
+        "label": "Environmental Sustainability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:io-t-sensor-network",
+        "label": "IoT Sensor Network"
+      },
+      {
+        "id": "urn:ngm:class:monitoring-system",
+        "label": "Monitoring System"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:renewable-energy",
+        "label": "Renewable Energy"
+      },
+      {
+        "id": "urn:ngm:class:power-systems",
+        "label": "Power Systems"
+      },
+      {
+        "id": "urn:ngm:class:industrial-io-t",
+        "label": "Industrial IoT"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "control-algorithm",
+      "label": "Control Algorithm"
+    },
+    {
+      "slug": "home-assistant",
+      "label": "Home Assistant"
+    },
+    {
+      "slug": "io-t-sensor-network",
+      "label": "IoT Sensor Network"
+    }
+  ]
+}

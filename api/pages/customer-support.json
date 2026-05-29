@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:customer-support",
+  "title": "Customer Support",
+  "slug": "customer-support",
+  "public": true,
+  "classIri": "urn:ngm:class:customer-support",
+  "domain": "ai",
+  "definition": "Customer Support is the organisational function and set of processes by which a company provides assistance, guidance, and resolution of problems to its customers before, during, and after the purchase or use of a product or service. It encompasses multiple channels\u2014telephone, email, live chat, self-service portals, and increasingly AI-powered interfaces\u2014and spans activities from answering product questions and processing returns to resolving technical failures and managing complaints. Modern customer support operations integrate customer relationship management systems, knowledge bases, ticketing workflows, and sentiment analytics to optimise resolution efficiency and customer satisfaction.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:customer-service-automation",
+      "label": "Customer Service Automation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      },
+      {
+        "id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:chatbots",
+        "label": "Chatbots"
+      },
+      {
+        "id": "urn:ngm:class:dialogue-system",
+        "label": "Dialogue System"
+      },
+      {
+        "id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "id": "urn:ngm:class:sentiment-analysis",
+        "label": "Sentiment Analysis"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "ai-search",
+      "label": "AI Search"
+    },
+    {
+      "slug": "gpts-and-custom-assistants",
+      "label": "GPTs and Custom Assistants"
+    },
+    {
+      "slug": "real-time-translation",
+      "label": "Real-time Translation"
+    }
+  ]
+}

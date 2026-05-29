@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:concentrated-liquidity",
+  "title": "Concentrated Liquidity",
+  "slug": "concentrated-liquidity",
+  "public": true,
+  "classIri": "urn:ngm:class:concentrated-liquidity",
+  "domain": "blockchain",
+  "definition": "Concentrated liquidity is a capital efficiency mechanism for automated market makers (AMMs) in which liquidity providers deposit assets within user-specified price ranges rather than uniformly across the full price curve from zero to infinity. Within an active price range, the capital deployed behaves equivalently to a much larger position in a constant-product AMM, dramatically increasing fee revenue per unit of capital while simultaneously reducing the price impact of trades of a given size. This design was pioneered by Uniswap v3 and has since been widely adopted across decentralised exchanges.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:liquidity-provision",
+      "label": "Liquidity Provision"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralized-exchange",
+        "label": "Decentralized Exchange"
+      },
+      {
+        "id": "urn:ngm:class:yield-farming",
+        "label": "Yield Farming"
+      },
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:uniswap",
+        "label": "Uniswap"
+      },
+      {
+        "id": "urn:ngm:class:de-fi",
+        "label": "DeFi"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "decentralized-exchange",
+      "label": "Decentralized Exchange"
+    },
+    {
+      "slug": "decentralized-finance-de-fi",
+      "label": "Decentralized Finance (DeFi)"
+    },
+    {
+      "slug": "liquidity-provision",
+      "label": "Liquidity Provision"
+    }
+  ]
+}

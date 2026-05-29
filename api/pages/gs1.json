@@ -1,0 +1,106 @@
+{
+  "id": "urn:visionflow:page:gs1",
+  "title": "GS1",
+  "slug": "gs1",
+  "public": true,
+  "classIri": "urn:ngm:class:gs1",
+  "domain": "infrastructure",
+  "definition": "GS1 is a global not-for-profit standards organisation that develops and administers an open supply chain standards system used by over two million companies in more than 150 countries. Its standards define globally unique identification schemes for products (GTIN\u2014Global Trade Item Number), locations (GLN), shipments (SSCC), and assets (GIAI), encoded in barcodes (EAN-13, ITF-14), QR codes, and GS1 DataMatrix symbols, and exchanged electronically via EDI and the GS1 Electronic Product Code Information Services (EPCIS) event standard. GS1 standards form the common language of global retail, logistics, healthcare, and food safety traceability systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supply-chain-management",
+      "label": "Supply Chain Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:supply-chain-traceability",
+        "label": "Supply Chain Traceability"
+      },
+      {
+        "id": "urn:ngm:class:pharmaceutical-traceability",
+        "label": "Pharmaceutical Traceability"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-visibility",
+        "label": "Supply Chain Visibility"
+      },
+      {
+        "id": "urn:ngm:class:food-safety-blockchain",
+        "label": "Food Safety Blockchain"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:provenance-standard",
+        "label": "Provenance Standard"
+      },
+      {
+        "id": "urn:ngm:class:calibration-standards",
+        "label": "Calibration Standards"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-provenance",
+        "label": "Supply Chain Provenance"
+      },
+      {
+        "id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      },
+      {
+        "id": "urn:ngm:class:logistics-optimization",
+        "label": "Logistics Optimization"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "circular-economy",
+      "label": "Circular Economy"
+    },
+    {
+      "slug": "cold-chain-monitoring",
+      "label": "Cold Chain Monitoring"
+    },
+    {
+      "slug": "customs-trade-facilitation",
+      "label": "Customs Trade Facilitation"
+    },
+    {
+      "slug": "decentralized-identifiers",
+      "label": "Decentralized Identifiers"
+    },
+    {
+      "slug": "food-safety-blockchain",
+      "label": "Food Safety Blockchain"
+    },
+    {
+      "slug": "logistics-optimization",
+      "label": "Logistics Optimization"
+    },
+    {
+      "slug": "provenance-tracking",
+      "label": "Provenance Tracking"
+    }
+  ]
+}

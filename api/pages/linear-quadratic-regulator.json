@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:linear-quadratic-regulator",
+  "title": "Linear Quadratic Regulator",
+  "slug": "linear-quadratic-regulator",
+  "public": true,
+  "classIri": "urn:ngm:class:linear-quadratic-regulator",
+  "domain": "robotics",
+  "definition": "The Linear Quadratic Regulator (LQR) is an optimal control framework that computes the state-feedback gain matrix minimising a quadratic cost function \u2014 a weighted sum of squared state deviations and squared control inputs over a time horizon \u2014 for a linear dynamical system, yielding the globally optimal linear feedback law in closed form through the algebraic Riccati equation. LQR provides a principled, tunable controller where the designer specifies performance-energy trade-offs through cost weight matrices Q (penalising state error) and R (penalising control effort), and the solution guarantees both optimality with respect to this cost and closed-loop stability for controllable systems. Despite its linearity assumption, LQR is widely extended to nonlinear systems via linearisation, iterative LQR (iLQR), and as the backbone of linear-quadratic-Gaussian (LQG) control when combined with Kalman filtering.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:optimal-control",
+      "label": "Optimal Control"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:robot-control",
+        "label": "Robot Control"
+      },
+      {
+        "id": "urn:ngm:class:trajectory-tracking",
+        "label": "Trajectory Tracking"
+      },
+      {
+        "id": "urn:ngm:class:model-predictive-control",
+        "label": "Model Predictive Control"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:state-space-control",
+        "label": "State Space Control"
+      },
+      {
+        "id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "id": "urn:ngm:class:stability-analysis",
+        "label": "Stability Analysis"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:pid-controller",
+        "label": "Pid Controller"
+      },
+      {
+        "id": "urn:ngm:class:adaptive-control",
+        "label": "Adaptive Control"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "control-algorithm",
+      "label": "Control Algorithm"
+    },
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "slug": "optimal-control",
+      "label": "Optimal Control"
+    }
+  ]
+}

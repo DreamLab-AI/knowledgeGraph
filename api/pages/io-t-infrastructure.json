@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:io-t-infrastructure",
+  "title": "IoT Infrastructure",
+  "slug": "io-t-infrastructure",
+  "public": true,
+  "classIri": "urn:ngm:class:io-t-infrastructure",
+  "domain": "infrastructure",
+  "definition": "IoT infrastructure is the integrated stack of hardware, networking, middleware, and cloud or edge platforms that enables the deployment, connectivity, management, and data processing of Internet of Things device fleets at scale. It encompasses device provisioning and lifecycle management, low-power wide-area or local-area communication protocols, edge gateways that aggregate and pre-process sensor data, secure device identity and over-the-air update mechanisms, and cloud or fog computing backends that host the data pipelines, analytics, and control planes for IoT applications across industrial, urban, consumer, and agricultural domains.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-infrastructure",
+      "label": "Digital Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:io-t-ai-integration",
+        "label": "IoT AI Integration"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:real-time-monitoring",
+        "label": "Real-Time Monitoring"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:mqtt",
+        "label": "MQTT"
+      },
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:industrial-io-t",
+        "label": "Industrial IoT"
+      },
+      {
+        "id": "urn:ngm:class:io-t-sensor-network",
+        "label": "IoT Sensor Network"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "construction-digital-twin",
+      "label": "Construction Digital Twin"
+    },
+    {
+      "slug": "context-awareness",
+      "label": "Context Awareness"
+    },
+    {
+      "slug": "digital-twin-ecosystem",
+      "label": "Digital Twin Ecosystem"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    }
+  ]
+}

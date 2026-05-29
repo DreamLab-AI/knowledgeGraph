@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:fleet-management",
+  "title": "Fleet Management",
+  "slug": "fleet-management",
+  "public": true,
+  "classIri": "urn:ngm:class:fleet-management",
+  "domain": "infrastructure",
+  "definition": "Fleet management is the coordinated administration, monitoring, and optimisation of a collection of mobile assets \u2014 vehicles, drones, robots, or edge devices \u2014 across their operational lifecycle, encompassing real-time telemetry collection, route and task planning, maintenance scheduling, regulatory compliance, driver or operator management, and fuel or energy consumption optimisation. Modern fleet management systems integrate GPS tracking, telematics sensors, AI-driven analytics, and communications networks to provide operators with situational awareness and control over large numbers of assets dispersed across wide geographic areas.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:asset-management",
+      "label": "Asset Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:ngm:class:delivery-planning",
+        "label": "Delivery Planning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:real-time-monitoring",
+        "label": "Real-Time Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:io-t-sensor-network",
+        "label": "IoT Sensor Network"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      },
+      {
+        "id": "urn:ngm:class:logistics-optimization",
+        "label": "Logistics Optimization"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "logistics-optimization",
+      "label": "Logistics Optimization"
+    },
+    {
+      "slug": "mobile-robot-platform",
+      "label": "Mobile Robot Platform"
+    },
+    {
+      "slug": "robotics-platform",
+      "label": "Robotics Platform"
+    }
+  ]
+}

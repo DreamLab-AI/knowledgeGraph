@@ -1,0 +1,14 @@
+- ### Definition
+  - Cloud storage is a networked data persistence model in which files, objects, and blobs are hosted on remote [[Cloud Infrastructure]] managed by third-party providers, delivered to clients via APIs, and secured through [[Encryption]] at rest and in transit.
+
+- ### Relationships
+  - Cloud storage depends on [[Cloud Computing]] platforms for compute-adjacency and access management, integrates with a [[Content Delivery Network]] to reduce latency for globally distributed users, and is managed as part of broader [[Data Management]] strategies. It contrasts with [[Distributed Storage]] and [[Content-Addressed Storage]] architectures that prioritise decentralisation and content integrity over provider-managed availability guarantees. The [[Cloud Platform]] layer provides billing, IAM, and lifecycle policy controls.
+
+- ### Content
+  - Cloud storage emerged commercially in the mid-2000s when Amazon Web Services launched S3 in 2006, offering pay-per-use object storage that eliminated the need for enterprises to provision physical storage arrays. The model rapidly displaced on-premises NAS and SAN systems for many use cases by offering elastic capacity, geographic redundancy via multi-region replication, and eleven-nines durability through erasure coding across distributed nodes.
+
+  - Architecturally, cloud object storage separates storage from compute, allowing data to persist independently of running instances. Access is mediated by REST APIs supporting GET, PUT, DELETE, and multipart upload operations, with access controlled via identity and access management policies. Providers implement tiered storage classes—hot, cool, archive—to align cost with access frequency, and lifecycle policies automate transition between tiers.
+
+  - Cloud storage is essential to virtually every modern application stack: it backs machine learning training datasets, serves static web assets, stores application logs, archives database backups, and hosts media content at global CDN edges. It enables cloud-native application patterns in which stateless compute nodes read and write persistent data to a shared object store rather than local disks.
+
+  - In 2024–2025, cloud storage is evolving toward intelligent tiering driven by AI-based access prediction, multi-cloud and hybrid-cloud portability frameworks (S3-compatible APIs have become a de facto standard), and tighter integration with vector databases for embedding storage in AI pipelines. Regulatory pressure around data residency is driving sovereign cloud storage offerings, and cost optimisation tooling is maturing to help organisations manage exabyte-scale storage bills.

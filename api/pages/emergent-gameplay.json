@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:emergent-gameplay",
+  "title": "Emergent Gameplay",
+  "slug": "emergent-gameplay",
+  "public": true,
+  "classIri": "urn:ngm:class:emergent-gameplay",
+  "domain": "ai",
+  "definition": "Emergent Gameplay refers to complex, often unanticipated play behaviours, strategies, and narratives that arise spontaneously from the interaction of relatively simple, well-defined game rules, systems, and player agency, rather than being explicitly scripted or designed by the game's creators. It occurs when the combinatorial space of game mechanics, physics simulations, AI agent behaviours, and player decisions produces outcomes that exceed the designers' explicit intentions, creating novel experiences from the bottom up. Emergent gameplay is a hallmark of open-world, sandbox, and simulation genres, and is increasingly studied in the context of AI game agents and procedural content generation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:game-mechanics",
+      "label": "Game Mechanics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:game-development",
+        "label": "Game Development"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      },
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:procedural-content-generation",
+        "label": "Procedural Content Generation"
+      },
+      {
+        "id": "urn:ngm:class:procedural-generation",
+        "label": "Procedural Generation"
+      },
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "id": "urn:ngm:class:open-world",
+        "label": "Open World"
+      },
+      {
+        "id": "urn:ngm:class:ai-game-agent",
+        "label": "AI Game Agent"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-in-games",
+      "label": "AI in Games"
+    },
+    {
+      "slug": "adaptive-virtual-world",
+      "label": "Adaptive Virtual World"
+    },
+    {
+      "slug": "open-world",
+      "label": "Open World"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:ico",
+  "title": "ICO",
+  "slug": "ico",
+  "public": true,
+  "classIri": "urn:ngm:class:ico",
+  "domain": "blockchain",
+  "definition": "An Initial Coin Offering (ICO) is a blockchain-based fundraising mechanism in which a project or organisation sells newly issued cryptographic tokens to investors in exchange for established cryptocurrencies (typically ETH or BTC) or fiat currency, with the tokens granting access to a future service, governance rights, or speculative value appreciation. ICOs gained widespread use in 2017\u20132018 as an alternative to traditional venture capital and IPO processes, raising billions of dollars before facing significant regulatory scrutiny from securities authorities worldwide. They differ from traditional securities offerings in being permissionless, globally accessible, and typically not subject to investor accreditation requirements.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:crypto-token",
+      "label": "Crypto Token"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:mi-ca-regulation",
+        "label": "MiCA Regulation"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:security-token-offering",
+        "label": "Security Token Offering"
+      },
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-economics",
+        "label": "Blockchain Economics"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-liability",
+      "label": "AI Liability"
+    },
+    {
+      "slug": "compliance-control",
+      "label": "Compliance Control"
+    },
+    {
+      "slug": "consumer-protection",
+      "label": "Consumer Protection"
+    },
+    {
+      "slug": "cross-border-compliance",
+      "label": "Cross Border Compliance"
+    },
+    {
+      "slug": "fatfrecommendations",
+      "label": "FATFRecommendations"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    },
+    {
+      "slug": "private-blockchain",
+      "label": "Private Blockchain"
+    }
+  ]
+}

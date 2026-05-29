@@ -1,0 +1,105 @@
+{
+  "id": "urn:visionflow:page:bert",
+  "title": "BERT",
+  "slug": "bert",
+  "public": true,
+  "classIri": "urn:ngm:individual:bert",
+  "domain": "ai",
+  "definition": "BERT (Bidirectional Encoder Representations from Transformers) is a pre-trained deep language representation model developed by Google AI Language and published in 2018. It applies a bidirectional Transformer encoder trained with masked language modelling (MLM) and next sentence prediction (NSP) objectives on large text corpora, producing contextualised word embeddings. BERT established a new paradigm of pre-train-then-fine-tune for natural language processing tasks, achieving state-of-the-art performance across eleven NLP benchmarks upon release. Its architecture underpins a large family of subsequent models including RoBERTa, ALBERT, and multilingual mBERT.",
+  "subClassOf": [],
+  "entityType": "Individual",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:natural-language-understanding",
+        "label": "Natural Language Understanding"
+      },
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:self-attention",
+        "label": "Self Attention"
+      },
+      {
+        "id": "urn:ngm:class:embeddings",
+        "label": "Embeddings"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ro-berta",
+        "label": "RoBERTa"
+      },
+      {
+        "id": "urn:ngm:class:albert",
+        "label": "ALBERT"
+      },
+      {
+        "id": "urn:ngm:class:m-bert",
+        "label": "mBERT"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "language-modeling",
+      "label": "Language Modeling"
+    },
+    {
+      "slug": "ms-phi-models",
+      "label": "MS Phi models"
+    },
+    {
+      "slug": "named-entity-recognition",
+      "label": "Named Entity Recognition"
+    },
+    {
+      "slug": "semantic-search",
+      "label": "Semantic Search"
+    },
+    {
+      "slug": "transformer",
+      "label": "Transformer"
+    },
+    {
+      "slug": "transformers",
+      "label": "Transformers"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    },
+    {
+      "slug": "fast-ai",
+      "label": "fast.ai"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:force-feedback",
+  "title": "Force Feedback",
+  "slug": "force-feedback",
+  "public": true,
+  "classIri": "urn:ngm:class:force-feedback",
+  "domain": "robotics",
+  "definition": "Force feedback is a class of haptic technology that renders mechanical forces \u2014 including resistance, weight, texture, and impact \u2014 directly to a user's body through a controlled actuator system, enabling the sense of touch and proprioception to convey information about virtual or remote physical environments. Distinguished from simpler vibrotactile feedback by its ability to generate directional, grounded forces (requiring a mechanical linkage to the user), force feedback systems are used in surgical simulators, teleoperation of remote robots, vehicle simulation, and advanced XR interfaces. The fidelity of the rendered force field is constrained by the bandwidth, peak force, backdrivability, and transparency of the underlying actuator mechanism.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:haptics",
+      "label": "Haptics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:haptic-feedback-telepresence",
+        "label": "Haptic Feedback Telepresence"
+      },
+      {
+        "id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "id": "urn:ngm:class:series-elastic-actuator",
+        "label": "Series Elastic Actuator"
+      },
+      {
+        "id": "urn:ngm:class:motion-control",
+        "label": "Motion Control"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      },
+      {
+        "id": "urn:ngm:class:haptic-feedback-system",
+        "label": "Haptic Feedback System"
+      },
+      {
+        "id": "urn:ngm:class:tactile-sensing",
+        "label": "Tactile Sensing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "collaborative-operation",
+      "label": "Collaborative Operation"
+    },
+    {
+      "slug": "end-effector",
+      "label": "End Effector"
+    },
+    {
+      "slug": "force-torque-sensor",
+      "label": "Force Torque Sensor"
+    },
+    {
+      "slug": "haptic-feedback",
+      "label": "Haptic Feedback"
+    },
+    {
+      "slug": "haptics",
+      "label": "Haptics"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

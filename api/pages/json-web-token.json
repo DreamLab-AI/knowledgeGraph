@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:json-web-token",
+  "title": "JSON Web Token",
+  "slug": "json-web-token",
+  "public": true,
+  "classIri": "urn:ngm:class:json-web-token",
+  "domain": "security",
+  "definition": "A JSON Web Token (JWT) is a compact, URL-safe representation of claims transmitted between parties, defined by IETF RFC 7519. A JWT consists of three Base64URL-encoded parts \u2014 header, payload, and signature \u2014 concatenated with periods. The header specifies the token type and signing algorithm; the payload carries claims (assertions about a subject such as user identity, roles, and expiry time); and the signature is computed using either a symmetric shared secret (HMAC) or an asymmetric key pair (RSA, ECDSA), allowing the receiving party to verify token integrity without a round-trip to an authorisation server. JWTs are the dominant stateless session mechanism in REST API and OAuth 2.0 / OpenID Connect identity architectures.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:authentication-mechanism",
+      "label": "Authentication Mechanism"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:oauth-2-0",
+        "label": "OAuth 2.0"
+      },
+      {
+        "id": "urn:ngm:class:open-id-connect",
+        "label": "OpenID Connect"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:sd-jwt",
+        "label": "SD-JWT"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "identity-provider",
+      "label": "Identity Provider"
+    },
+    {
+      "slug": "trust-framework",
+      "label": "Trust Framework"
+    },
+    {
+      "slug": "verifiable-credentials",
+      "label": "Verifiable Credentials"
+    }
+  ]
+}

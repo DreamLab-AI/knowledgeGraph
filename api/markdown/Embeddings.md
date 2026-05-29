@@ -1,0 +1,63 @@
+public:: true
+
+# Embeddings
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:embeddings",
+  "@type": "Page",
+  "vc:slug": "embeddings",
+  "title": "Embeddings",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 2
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:embeddings",
+  "@type": "Class",
+  "label": "Embeddings",
+  "definition": "Embeddings are dense, low-dimensional vector representations of discrete objects—words, sentences, images, code, graphs, or arbitrary entities—learned by neural networks such that geometric relationships in the vector space correspond to semantic or functional relationships between the original objects. The core property is that semantically similar inputs map to nearby vectors, enabling tasks like similarity search, clustering, and retrieval to be performed as efficient geometric operations. Embeddings are the foundational representation layer of modern deep learning, underpinning language models, recommendation systems, search engines, and retrieval-augmented generation pipelines.",
+  "domain": "ai",
+  "maturity": "established",
+  "subClassOf": [{"@id": "urn:ngm:class:machine-learning-technique", "label": "Machine Learning Technique"}],
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:token-embedding", "label": "Token Embedding"},
+      {"@id": "urn:ngm:class:soft-prompt-embedding", "label": "Soft Prompt Embedding"},
+      {"@id": "urn:ngm:class:embedding-model", "label": "Embedding Model"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:semantic-search", "label": "Semantic Search"},
+      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
+      {"@id": "urn:ngm:class:vector-database", "label": "Vector Database"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+    ]
+  },
+  "quality": 0.8
+}
+```
+
+- ### Definition
+  - [[Embeddings]] are dense numerical vector representations learned by [[Transformer]] and other neural architectures that encode semantic relationships between tokens, sentences, images, or entities, enabling [[Semantic Search]], [[Retrieval-Augmented Generation]], and similarity computation via geometric distance operations in high-dimensional [[Vector Database]] stores.
+
+- ### Relationships
+  - [[Embeddings]] are a [[Machine Learning Technique]] produced by [[Embedding Model]] architectures—typically [[Transformer]] networks—that compress inputs from sparse high-dimensional spaces (e.g., one-hot vocabulary) into dense continuous vectors where cosine similarity reflects semantic proximity. [[Token Embedding]] layers are the first component of virtually every large language model, converting discrete vocabulary indices into continuous representations that attention mechanisms can process. [[Soft Prompt Embedding]] extends this into prompt tuning, where trainable embedding vectors are prepended to inputs. The primary applications are [[Semantic Search]] (finding documents with related meaning rather than keyword overlap), [[Retrieval-Augmented Generation]] which uses embedding similarity to retrieve relevant context for language model generation, and [[Vector Database]] storage which provides approximate nearest-neighbour search at billion-vector scale. The embedding technique was heavily shaped by progress in [[Natural Language Processing]], from Word2Vec through BERT to current contrastive learning approaches.
+
+- ### Content
+  - The modern embedding paradigm traces directly to Mikolov et al.'s Word2Vec (2013), which showed that a shallow neural network trained to predict word context could produce word vectors with remarkable analogical properties: the vector arithmetic king − man + woman ≈ queen demonstrated that semantic relationships were encoded as geometric directions. GloVe (2014) extended this to global co-occurrence statistics, and FastText (2016) decomposed words into character n-gram subword units to handle morphological variation. These static embeddings, however, produced a single fixed vector per word regardless of context; bank meant the same thing in financial and riverbank contexts.
+
+  - Contextual embeddings emerged with ELMo (2018) and reached their current dominant form with BERT (2019), which processes the entire input sequence with bidirectional attention to produce context-sensitive representations where each token's embedding reflects its specific usage. Sentence transformers such as SBERT fine-tune these models using contrastive learning on sentence pairs to produce fixed-size sentence embeddings optimised for similarity comparisons. Multimodal embeddings—CLIP, ALIGN, ImageBind—extend the concept across modalities, aligning text and image representations in a shared vector space so that an image of a dog and the word "dog" are geometrically proximate.
+
+  - Embeddings are commercially critical infrastructure. Every recommendation engine (Spotify, YouTube, Netflix) uses item and user embeddings to compute similarity in latent preference space. Enterprise semantic search systems replace keyword indices with embedding retrieval. Fraud detection models embed transaction sequences to find anomalous patterns. The rise of RAG architectures for LLM applications has made embedding generation and vector storage a high-volume commodity service: OpenAI's text-embedding-3 models, Cohere's Embed API, and open-source models such as GTE and E5 are queried billions of times daily to index and retrieve enterprise knowledge bases.
+
+  - In 2024-2025, the embedding field is advancing on several fronts: long-context embedding models that can represent entire documents rather than truncated chunks are improving RAG retrieval quality; binary quantisation of embeddings to one bit per dimension is enabling 40× compression with minimal recall loss for billion-scale search; and late-interaction models such as ColBERT, which preserve token-level granularity at query time, are improving over single-vector representations for complex queries. Matryoshka Representation Learning produces embeddings that are valid at multiple truncated dimensions, enabling dynamic precision-compute trade-offs.
+
+- ### See Also
+  - [[Transformer]] | [[Semantic Search]] | [[Retrieval-Augmented Generation]] | [[Vector Database]] | [[Token Embedding]]

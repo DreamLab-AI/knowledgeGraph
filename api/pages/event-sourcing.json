@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:event-sourcing",
+  "title": "Event Sourcing",
+  "slug": "event-sourcing",
+  "public": true,
+  "classIri": "urn:ngm:class:event-sourcing",
+  "domain": "infrastructure",
+  "definition": "Event sourcing is an architectural pattern for data persistence in which the state of a system is stored not as a mutable current-state record but as an append-only, ordered log of discrete domain events \u2014 each representing a fact that occurred at a specific point in time. Current application state is derived by replaying the event log from the beginning (or from a periodic snapshot), making the full history of state transitions a first-class, queryable artefact. This contrasts with CRUD-oriented architectures where only the latest state is stored, discarding historical change information.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:software-architecture",
+      "label": "Software Architecture"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:state-management",
+        "label": "State Management"
+      },
+      {
+        "id": "urn:ngm:class:agent-event-stream",
+        "label": "Agent Event Stream"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:message-queue",
+        "label": "Message Queue"
+      },
+      {
+        "id": "urn:ngm:class:apache-kafka",
+        "label": "Apache Kafka"
+      },
+      {
+        "id": "urn:ngm:class:data-persistence",
+        "label": "Data Persistence"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      },
+      {
+        "id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "id": "urn:ngm:class:audit-log",
+        "label": "Audit Log"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "crdt",
+      "label": "CRDT"
+    },
+    {
+      "slug": "data-layer",
+      "label": "Data Layer"
+    },
+    {
+      "slug": "event",
+      "label": "Event"
+    }
+  ]
+}

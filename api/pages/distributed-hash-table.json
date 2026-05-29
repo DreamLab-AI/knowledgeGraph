@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:distributed-hash-table",
+  "title": "Distributed Hash Table",
+  "slug": "distributed-hash-table",
+  "public": true,
+  "classIri": "urn:ngm:class:distributed-hash-table",
+  "domain": "infrastructure",
+  "definition": "A distributed hash table (DHT) is a decentralised data structure that partitions a key-value store across a set of participating nodes so that each node is responsible for only a fraction of the total keyspace, with lookups routed through a structured overlay network in O(log n) hops without any central coordinator. Nodes join and leave dynamically, and the system automatically rebalances responsibility for keys through a consistent hashing or XOR-metric routing algorithm. DHTs are the foundational lookup and routing primitive of peer-to-peer networks, enabling applications such as decentralised content addressing, bootstrapping, and peer discovery.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:distributed-system",
+      "label": "Distributed System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      },
+      {
+        "id": "urn:ngm:class:content-addressing",
+        "label": "Content Addressing"
+      },
+      {
+        "id": "urn:ngm:class:distributed-storage",
+        "label": "Distributed Storage"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:libp2p",
+        "label": "libp2p"
+      },
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:kademlia-dht",
+        "label": "Kademlia DHT"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:gossip-protocol",
+        "label": "Gossip Protocol"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "content-addressing",
+      "label": "Content Addressing"
+    },
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    },
+    {
+      "slug": "decentralised-file-storage",
+      "label": "Decentralised file storage"
+    },
+    {
+      "slug": "decentralization-layer",
+      "label": "Decentralization Layer"
+    },
+    {
+      "slug": "digital-objects",
+      "label": "Digital Objects"
+    },
+    {
+      "slug": "distributed-data-structure",
+      "label": "Distributed Data Structure"
+    }
+  ]
+}

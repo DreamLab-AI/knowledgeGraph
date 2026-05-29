@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:iso-iec-jtc-1-sc-42",
+  "title": "ISO/IEC JTC 1/SC 42",
+  "slug": "iso-iec-jtc-1-sc-42",
+  "public": true,
+  "classIri": "urn:ngm:class:iso-iec-jtc-1-sc-42",
+  "domain": "governance",
+  "definition": "ISO/IEC JTC 1/SC 42 (Artificial Intelligence) is the international standardisation subcommittee within the ISO/IEC Joint Technical Committee 1 responsible for developing and maintaining global standards for artificial intelligence. Established in 2017, it coordinates with national bodies across more than 40 participating countries to produce standards covering AI terminology, foundational concepts, trustworthiness, bias, risk management, data lifecycle, governance frameworks, and AI system evaluation. Its publications inform regulatory frameworks worldwide, including the EU AI Act, and provide the shared vocabulary necessary for interoperability of AI governance instruments across jurisdictions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-regulation",
+      "label": "AI Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:ai-fairness",
+        "label": "AI Fairness"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ai-trustworthiness",
+        "label": "AI Trustworthiness"
+      },
+      {
+        "id": "urn:ngm:class:ai-accountability",
+        "label": "AI Accountability"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "asia-pacific-regulation",
+      "label": "Asia Pacific Regulation"
+    },
+    {
+      "slug": "california-ai-bill",
+      "label": "California AI bill"
+    },
+    {
+      "slug": "competition-in-ai",
+      "label": "Competition in AI"
+    }
+  ]
+}

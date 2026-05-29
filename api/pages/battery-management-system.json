@@ -1,0 +1,83 @@
+{
+  "id": "urn:visionflow:page:battery-management-system",
+  "title": "Battery Management System",
+  "slug": "battery-management-system",
+  "public": true,
+  "classIri": "urn:ngm:class:battery-management-system",
+  "domain": "hardware",
+  "definition": "A Battery Management System (BMS) is an embedded electronic system that monitors, protects, and optimises the operation of a rechargeable battery pack by continuously measuring cell voltages, currents, and temperatures, then enforcing safety limits and balancing cell state-of-charge to extend pack lifetime. It provides the digital intelligence layer between raw electrochemical energy storage and the broader power electronics or vehicle system, communicating pack status via standardised interfaces such as CAN bus. Accurate state-of-charge and state-of-health estimation algorithms are the defining computational challenge of modern BMS design.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:embedded-systems",
+      "label": "Embedded Systems"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:current-sensor",
+        "label": "Current Sensor"
+      },
+      {
+        "id": "urn:ngm:class:monitoring-system",
+        "label": "Monitoring System"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:power-supply",
+        "label": "Power Supply"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      },
+      {
+        "id": "urn:ngm:class:power-management",
+        "label": "Power Management"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:energy-management",
+        "label": "Energy Management"
+      },
+      {
+        "id": "urn:ngm:class:energy-and-power",
+        "label": "Energy and Power"
+      },
+      {
+        "id": "urn:ngm:class:hardware-component",
+        "label": "Hardware Component"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ground-robot",
+      "label": "Ground Robot"
+    },
+    {
+      "slug": "mobile-robot-platform",
+      "label": "Mobile Robot Platform"
+    },
+    {
+      "slug": "robot-hardware",
+      "label": "Robot Hardware"
+    }
+  ]
+}

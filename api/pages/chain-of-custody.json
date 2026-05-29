@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:chain-of-custody",
+  "title": "Chain of Custody",
+  "slug": "chain-of-custody",
+  "public": true,
+  "classIri": "urn:ngm:class:chain-of-custody",
+  "domain": "governance",
+  "definition": "Chain of Custody is a documented, unbroken sequence of records that tracks the possession, handling, transfer, analysis, and disposition of physical or digital items from their point of origin to their ultimate use\u2014most critically in legal proceedings and regulated industries. Each handoff event must be recorded with the identity of the parties involved, the time and location of transfer, and the state of the item, ensuring that the integrity and authenticity of the item can be demonstrated to any subsequent examiner. In digital contexts the concept extends to data provenance, AI training datasets, and blockchain-based asset transfer records.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:provenance-tracking",
+      "label": "Provenance Tracking"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:audit-logging",
+        "label": "Audit Logging"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:supply-chain-traceability",
+        "label": "Supply Chain Traceability"
+      },
+      {
+        "id": "urn:ngm:class:compliance-verification",
+        "label": "Compliance Verification"
+      },
+      {
+        "id": "urn:ngm:class:provenance-verification",
+        "label": "Provenance Verification"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-evidence-chain-of-custody",
+        "label": "Digital Evidence Chain of Custody"
+      },
+      {
+        "id": "urn:ngm:class:digital-forensics",
+        "label": "Digital Forensics"
+      },
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "id": "urn:ngm:class:data-provenance",
+        "label": "Data Provenance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "digital-forensics-framework",
+      "label": "Digital Forensics Framework"
+    },
+    {
+      "slug": "ethical-sourcing",
+      "label": "Ethical Sourcing"
+    },
+    {
+      "slug": "gold",
+      "label": "Gold"
+    }
+  ]
+}

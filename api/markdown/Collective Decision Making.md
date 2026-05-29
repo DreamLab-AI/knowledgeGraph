@@ -1,0 +1,62 @@
+public:: true
+
+# Collective Decision Making
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:collective-decision-making",
+  "@type": "Page",
+  "vc:slug": "collective-decision-making",
+  "title": "Collective Decision Making",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 2
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:collective-decision-making",
+  "@type": "Class",
+  "label": "Collective Decision Making",
+  "definition": "Collective decision making is the social and technical process by which a group of agents — human, algorithmic, or hybrid — aggregate individual preferences, information, or votes to arrive at a binding or advisory choice on behalf of the group. It encompasses the design and analysis of voting systems, preference aggregation mechanisms, deliberation protocols, and incentive structures that determine how group choices are reached and enforced. In digital and blockchain contexts, collective decision making is formalised through on-chain governance mechanisms, decentralised autonomous organisations, and algorithmic voting schemes that encode group agency in smart contract logic.",
+  "domain": "governance",
+  "maturity": "established",
+  "subClassOf": [{"@id": "urn:ngm:class:decentralised-decision-making", "label": "Decentralised Decision-Making"}],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:voting-mechanism", "label": "Voting Mechanism"},
+      {"@id": "urn:ngm:class:quadratic-voting", "label": "Quadratic Voting"},
+      {"@id": "urn:ngm:class:conviction-voting", "label": "Conviction Voting"},
+      {"@id": "urn:ngm:class:token-weighted-voting", "label": "Token-Weighted Voting"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:dao-governance", "label": "DAO Governance"},
+      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-chain Governance"},
+      {"@id": "urn:ngm:class:community-governance", "label": "Community Governance"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:collective-intelligence-system", "label": "Collective Intelligence System"},
+      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"}
+    ]
+  },
+  "quality": 0.8
+}
+```
+
+- ### Definition
+  - [[Collective Decision Making]] is the structured process through which groups aggregate individual preferences or judgements into binding group choices, implemented in digital governance via [[Voting Mechanism]] designs ranging from [[Quadratic Voting]] to [[Conviction Voting]], and encoded on-chain to enable [[DAO Governance]] and [[Community Governance]] without centralised authorities.
+
+- ### Relationships
+  - Collective decision making relies on [[Voting Mechanism]] primitives including [[Quadratic Voting]], [[Conviction Voting]], and [[Token-Weighted Voting]] to translate individual signals into group outcomes. It enables [[DAO Governance]] and [[On-chain Governance]] by providing the procedural foundation for decentralised organisations to reach binding choices. The concept is closely related to [[Collective Intelligence System]] theory and is operationalised using [[Governance Token]] instruments that confer voting rights on holders.
+
+- ### Content
+  - Collective decision making has been studied in political philosophy, economics, and social choice theory since Kenneth Arrow's 1951 impossibility theorem demonstrated that no ranked-choice voting system satisfies all desirable rationality conditions simultaneously. Condorcet's paradox, Gibbard's theorem, and subsequent mechanism design literature established the formal constraints and trade-offs inherent in aggregating preferences. These theoretical foundations underpin modern institutional designs ranging from parliamentary procedure to corporate governance to international treaty negotiation.
+
+  - The digital transformation of collective decision making began with online deliberation platforms and prediction markets in the 1990s and 2000s, before blockchain technology made binding on-chain voting technically feasible around 2016. The core challenge in any collective decision mechanism is the aggregation problem: how to combine heterogeneous, privately held preferences into a group choice that is fair, incentive-compatible, and resistant to manipulation. Different mechanisms resolve this trade-off differently — simple majority voting is transparent but vulnerable to tyranny of the majority; quadratic voting reduces the influence of extreme preferences; conviction voting smooths out temporal gaming by requiring sustained commitment to proposals.
+
+  - In decentralised networks, collective decision making governs protocol upgrades, treasury disbursements, parameter changes, and dispute resolution. DAO governance has demonstrated both the promise and limitations of on-chain collective choice: participation rates are often low, large token holders can dominate outcomes, and the speed of blockchain execution can outpace deliberation quality. Hybrid models combining off-chain deliberation platforms (such as forums and snapshot votes) with on-chain execution have emerged as a pragmatic compromise, separating the social process of sense-making from the technical act of commitment.
+
+  - As of 2024–2025, collective decision making in Web3 governance is undergoing significant refinement. Research from Vitalik Buterin and others on "pairwise preference" mechanisms and "heterogeneous stake-weighted voting" addresses plutocracy risks in token-weighted systems. AI-assisted deliberation tools — which summarise stakeholder positions, surface consensus zones, and flag logical inconsistencies — are being piloted by several large DAOs. Nation-state digital democracy experiments, including Taiwan's vTaiwan platform and the UK Citizens' Assembly model, are increasingly cited alongside blockchain governance as complementary implementations of the same underlying theory.
+

@@ -1,0 +1,87 @@
+{
+  "id": "urn:visionflow:page:data-serialization",
+  "title": "Data Serialization",
+  "slug": "data-serialization",
+  "public": true,
+  "classIri": "urn:ngm:class:data-serialization",
+  "domain": "infrastructure",
+  "definition": "Data Serialization is the process of converting structured in-memory data objects \u2014 including primitive types, collections, and complex graphs \u2014 into a byte-sequence or character-stream representation that can be stored persistently, transmitted across a network boundary, or reconstructed (deserialised) into an equivalent in-memory representation on a different machine or at a different time, potentially running different software. Serialization formats vary along axes of human readability (JSON, YAML, XML versus binary), schema enforcement (Protocol Buffers, Apache Avro with mandatory schemas versus schemaless JSON), compactness, and cross-language support, making format selection a critical engineering decision that affects system interoperability, performance, and evolvability.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-format",
+      "label": "Data Format"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:interoperability-protocol",
+        "label": "Interoperability Protocol"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:data-schema",
+        "label": "Data Schema"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:json",
+        "label": "json"
+      },
+      {
+        "id": "urn:ngm:class:protocol-buffer",
+        "label": "Protocol Buffer"
+      },
+      {
+        "id": "urn:ngm:class:schema-registry",
+        "label": "Schema Registry"
+      },
+      {
+        "id": "urn:ngm:class:data-format-standard",
+        "label": "Data Format Standard"
+      },
+      {
+        "id": "urn:ngm:class:binary-encoding",
+        "label": "Binary Encoding"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "avatar-interoperability",
+      "label": "Avatar Interoperability"
+    },
+    {
+      "slug": "binary-encoding",
+      "label": "Binary Encoding"
+    },
+    {
+      "slug": "digital-twin-interop-protocol",
+      "label": "Digital Twin Interop Protocol"
+    }
+  ]
+}

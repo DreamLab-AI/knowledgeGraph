@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:digital-gold",
+  "title": "Digital Gold",
+  "slug": "digital-gold",
+  "public": true,
+  "classIri": "urn:ngm:class:digital-gold",
+  "domain": "blockchain",
+  "definition": "Digital Gold is a conceptual and investment category that characterises a cryptocurrency\u2014most commonly Bitcoin\u2014as a bearer instrument that performs the monetary functions traditionally attributed to gold: a scarce, durable, fungible, portable, and divisible store of value that preserves purchasing power across time and political regimes without dependence on any issuing authority. The analogy rests on Bitcoin's algorithmically enforced supply cap of 21 million coins, its proof-of-work scarcity mechanism, and its censorship resistance, which proponents argue replicate or improve upon gold's monetary properties in a digital-native form. The digital gold thesis underpins institutional Bitcoin investment strategies and shapes regulatory and macroeconomic discourse about the role of cryptographic assets in global monetary systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptocurrency",
+      "label": "Cryptocurrency"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:bitcoin-etf",
+        "label": "Bitcoin ETF"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:digital-currency",
+        "label": "Digital Currency"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bitcoin-standard",
+        "label": "Bitcoin Standard"
+      },
+      {
+        "id": "urn:ngm:class:sound-money",
+        "label": "Sound Money"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-as-money",
+        "label": "Bitcoin As Money"
+      },
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-as-money",
+      "label": "Bitcoin As Money"
+    },
+    {
+      "slug": "bitcoin-technical-overview",
+      "label": "Bitcoin Technical Overview"
+    },
+    {
+      "slug": "bitcoin-value-proposition",
+      "label": "Bitcoin Value Proposition"
+    }
+  ]
+}

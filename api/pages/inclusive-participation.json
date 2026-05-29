@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:inclusive-participation",
+  "title": "Inclusive Participation",
+  "slug": "inclusive-participation",
+  "public": true,
+  "classIri": "urn:ngm:class:inclusive-participation",
+  "domain": "governance",
+  "definition": "Inclusive participation is the design principle and operational practice of structuring technologies, platforms, and governance processes to enable full and meaningful engagement by individuals of diverse abilities, economic circumstances, cultural backgrounds, and technical literacy levels, removing barriers that would otherwise exclude underrepresented or marginalised populations. In technology contexts, inclusive participation encompasses accessible user interface design, multilingual support, low-bandwidth alternatives, assistive technology compatibility, and governance mechanisms that distribute decision-making power beyond technically or economically privileged groups. It is a cross-cutting concern in XR platform design, DAO governance, metaverse standards development, and public goods infrastructure.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:participation-framework",
+      "label": "Participation Framework"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:inclusive-design",
+        "label": "Inclusive Design"
+      },
+      {
+        "id": "urn:ngm:class:equity",
+        "label": "Equity"
+      },
+      {
+        "id": "urn:ngm:class:community-governance",
+        "label": "Community Governance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "id": "urn:ngm:class:universal-design",
+        "label": "Universal Design"
+      },
+      {
+        "id": "urn:ngm:class:localization",
+        "label": "Localization"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:xr-accessibility-standards",
+        "label": "XR Accessibility Standards"
+      },
+      {
+        "id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      },
+      {
+        "id": "urn:ngm:class:social-impact",
+        "label": "Social Impact"
+      },
+      {
+        "id": "urn:ngm:class:diversity-non-discrimination-and-fairness",
+        "label": "Diversity, Non-Discrimination, and Fairness"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "accessible-design",
+      "label": "Accessible Design"
+    },
+    {
+      "slug": "accessible-experience",
+      "label": "Accessible Experience"
+    },
+    {
+      "slug": "collaborative-whiteboard",
+      "label": "Collaborative Whiteboard"
+    }
+  ]
+}

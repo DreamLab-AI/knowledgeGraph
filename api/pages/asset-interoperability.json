@@ -1,0 +1,87 @@
+{
+  "id": "urn:visionflow:page:asset-interoperability",
+  "title": "Asset Interoperability",
+  "slug": "asset-interoperability",
+  "public": true,
+  "classIri": "urn:ngm:class:asset-interoperability",
+  "domain": "blockchain",
+  "definition": "Asset Interoperability is the technical capacity for digital assets \u2014 including 3D models, avatars, NFTs, in-game items, and financial instruments \u2014 to function, be recognised, and retain their properties across multiple distinct platforms, ecosystems, or blockchains without loss of fidelity or ownership provenance. It encompasses both syntactic compatibility (shared file formats and protocols) and semantic compatibility (consistent meaning of asset attributes across contexts). Achieving asset interoperability typically requires common standards bodies, bridge contracts, or cross-chain protocols that translate asset representations between heterogeneous systems. It is a foundational concern for open metaverse architectures, decentralised finance, and multi-chain gaming economies.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:interoperability",
+      "label": "Interoperability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-asset-ecosystem",
+        "label": "Digital Asset Ecosystem"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-gaming",
+        "label": "Blockchain Gaming"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-format-standard",
+        "label": "Data Format Standard"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:interoperability-protocol",
+        "label": "Interoperability Protocol"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-standards",
+        "label": "Digital Asset Standards"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:avatar-interoperability",
+        "label": "Avatar Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-interoperability",
+        "label": "Cross-Chain Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "nft-wrapping",
+      "label": "NFT Wrapping"
+    },
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    },
+    {
+      "slug": "universal-manifest",
+      "label": "Universal Manifest"
+    }
+  ]
+}

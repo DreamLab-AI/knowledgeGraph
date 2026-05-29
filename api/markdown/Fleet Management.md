@@ -1,0 +1,60 @@
+public:: true
+
+# Fleet Management
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:fleet-management",
+  "@type": "Page",
+  "vc:slug": "fleet-management",
+  "title": "Fleet Management",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 2
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:fleet-management",
+  "@type": "Class",
+  "label": "Fleet Management",
+  "definition": "Fleet management is the coordinated administration, monitoring, and optimisation of a collection of mobile assets — vehicles, drones, robots, or edge devices — across their operational lifecycle, encompassing real-time telemetry collection, route and task planning, maintenance scheduling, regulatory compliance, driver or operator management, and fuel or energy consumption optimisation. Modern fleet management systems integrate GPS tracking, telematics sensors, AI-driven analytics, and communications networks to provide operators with situational awareness and control over large numbers of assets dispersed across wide geographic areas.",
+  "domain": "infrastructure",
+  "maturity": "established",
+  "subClassOf": [{"@id": "urn:ngm:class:asset-management", "label": "Asset Management"}],
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:autonomous-vehicle", "label": "Autonomous Vehicle"},
+      {"@id": "urn:ngm:class:logistics-optimization", "label": "Logistics Optimization"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:real-time-monitoring", "label": "Real-Time Monitoring"},
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
+      {"@id": "urn:ngm:class:io-t-sensor-network", "label": "IoT Sensor Network"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
+      {"@id": "urn:ngm:class:delivery-planning", "label": "Delivery Planning"}
+    ]
+  },
+  "quality": 0.8
+}
+```
+
+- ### Definition
+  - [[Fleet Management]] is the coordinated administration and optimisation of mobile asset collections — from vehicles and drones to robots — using [[Real-Time Monitoring]], [[IoT Sensor Network]] telemetry, and AI analytics to maximise utilisation, safety, and regulatory compliance while enabling [[Logistics Optimization]] and [[Delivery Planning]] at scale.
+
+- ### Relationships
+  - [[Fleet Management]] is a specialisation of [[Asset Management]] applied to mobile, geographically distributed assets. It relies on [[IoT Sensor Network]] infrastructure for telemetry, [[Edge Computing]] for local processing near assets, and [[Real-Time Monitoring]] dashboards for operator situational awareness. [[Digital Twin]] representations of individual assets enable predictive maintenance. As [[Autonomous Vehicle]] technology matures, fleet management platforms must extend to supervise AI-driven agents rather than human operators, requiring [[Autonomous Navigation]] coordination and exception handling at scale. [[Logistics Optimization]] algorithms determine optimal routing and task assignment across the fleet.
+
+- ### Content
+  - Fleet management as an organised discipline emerged in the trucking and passenger transport industries of the mid-20th century, initially relying on radio dispatch and manual logging. The introduction of GPS tracking in the 1990s — initially military, then commercially available after the selective availability switch-off in 2000 — transformed fleet management from reactive control to real-time situational awareness. Telematics devices that combine GPS with vehicle diagnostics via OBD-II ports became standard fitment, enabling remote monitoring of engine health, speed, fuel consumption, and driver behaviour.
+
+  - Contemporary fleet management platforms integrate multiple data streams: GPS position updates (typically every 30-60 seconds), vehicle diagnostic data, driver behaviour metrics (harsh braking, acceleration patterns), fuel consumption, cargo sensor readings for refrigerated transport, and environmental conditions. AI and machine learning models process this data to predict maintenance needs before failures occur, optimise route assignments dynamically in response to traffic conditions, and identify anomalous patterns that may indicate theft or misuse. Communication uses cellular networks (4G/5G) for real-time data and GNSS for positioning, with edge gateways on the vehicle pre-processing data to reduce bandwidth consumption.
+
+  - Fleet management has significant economic impact: for a large logistics operator, a 10% improvement in vehicle utilisation through better scheduling can save millions in capital expenditure on additional vehicles. Fuel optimisation through eco-driving coaching and route planning typically delivers 5-15% fuel savings. Predictive maintenance reduces unplanned downtime, which is particularly costly for fleets operating time-sensitive delivery contracts. Insurance companies use telematics data to offer usage-based insurance products that reward safe driving behaviour.
+
+  - Between 2024 and 2025 the field is being reshaped by three forces: the electrification of vehicle fleets requiring new energy management capabilities (charging scheduling, range anxiety mitigation, grid demand response); the integration of autonomous vehicle technology for hub-to-hub highway segments; and the expansion of drone fleet management for last-mile delivery and inspection tasks. Multi-modal fleet management that coordinates mixed fleets of manned vehicles, autonomous trucks, and delivery drones across a single logistics network represents the frontier challenge for the industry.

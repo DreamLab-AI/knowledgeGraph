@@ -1,0 +1,91 @@
+{
+  "id": "urn:visionflow:page:graph-rag",
+  "title": "GraphRAG",
+  "slug": "graph-rag",
+  "public": true,
+  "classIri": "urn:ngm:class:graph-rag",
+  "domain": "ai",
+  "definition": "GraphRAG (Graph Retrieval-Augmented Generation) is an architecture that extends standard retrieval-augmented generation by structuring the indexed knowledge corpus as a knowledge graph of entities and relationships rather than as a flat collection of text chunks, enabling the retrieval system to answer questions that require multi-hop reasoning over connected facts \u2014 such as 'what do entities A and B have in common' \u2014 which naive vector similarity search over disconnected chunks cannot reliably resolve. Microsoft Research's GraphRAG implementation, open-sourced in 2024, uses an LLM to extract entity-relationship triples from a document corpus, builds a community-detected hierarchical graph, generates community summaries at multiple granularities, and retrieves relevant subgraphs and summaries at query time to ground the LLM's response in structured relational context.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:retrieval-augmented-generation",
+      "label": "Retrieval-Augmented Generation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ontology-in-llm-operations",
+        "label": "Ontology in LLM Operations"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-base",
+        "label": "Knowledge Base"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph-construction",
+        "label": "Knowledge Graph Construction"
+      },
+      {
+        "id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:graph-database",
+        "label": "Graph Database"
+      },
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "graph-database",
+      "label": "Graph Database"
+    },
+    {
+      "slug": "graph-neural-network",
+      "label": "Graph Neural Network"
+    },
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "retrieval-augmented-generation-rag",
+      "label": "Retrieval Augmented Generation - RAG"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+public:: true
+
+# Layer 2 Scaling
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:layer-2-scaling",
+  "@type": "Page",
+  "vc:slug": "layer-2-scaling",
+  "title": "Layer 2 Scaling",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 2
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:layer-2-scaling",
+  "@type": "Class",
+  "label": "Layer 2 Scaling",
+  "definition": "Layer 2 scaling refers to a category of protocols and systems built atop an existing blockchain (the Layer 1) that increase transaction throughput and reduce fees by processing the majority of transaction computation and data storage off the main chain while inheriting the security guarantees of the underlying Layer 1 through cryptographic proofs, fraud-proof mechanisms, or periodic state commitments. The Layer 2 anchors itself to the Layer 1 by periodically publishing compressed state roots or validity proofs, allowing the Layer 1 to serve as the ultimate settlement and security layer while the Layer 2 handles high-volume transaction processing.",
+  "domain": "blockchain",
+  "maturity": "emerging",
+  "subClassOf": [{"@id": "urn:ngm:class:blockchain-scalability", "label": "Blockchain Scalability"}],
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:state-channel", "label": "State Channel"},
+      {"@id": "urn:ngm:class:sidechain", "label": "Sidechain"},
+      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
+      {"@id": "urn:ngm:class:lightning-network", "label": "Lightning Network"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:layer2-scaling", "label": "Layer2Scaling"},
+      {"@id": "urn:ngm:class:lightning-and-similar-l2", "label": "Lightning and Similar L2"},
+      {"@id": "urn:ngm:class:gas-optimization", "label": "Gas Optimization"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:de-fi", "label": "DeFi"},
+      {"@id": "urn:ngm:class:blockchain-interoperability", "label": "Blockchain Interoperability"},
+      {"@id": "urn:ngm:class:cross-chain-asset-transfer", "label": "Cross Chain Asset Transfer"}
+    ]
+  },
+  "quality": 0.8
+}
+```
+
+- ### Definition
+  - [[Layer 2 Scaling]] is the class of off-chain protocols that execute transactions at high throughput on secondary networks while anchoring security to a Layer 1 blockchain through mechanisms such as [[Zero-Knowledge Proof]] validity proofs or optimistic fraud-proof commitments, enabling [[DeFi]] and other blockchain applications to achieve orders-of-magnitude higher transaction volume than the base layer permits while reducing [[Gas Optimization]] costs for end users.
+
+- ### Relationships
+  - [[Layer 2 Scaling]] is a specialisation of [[Blockchain Scalability]], the broader problem of increasing blockchain throughput without sacrificing decentralisation or security. Its primary architectural families include rollups (ZK-rollups using [[Zero-Knowledge Proof]] and optimistic rollups using fraud proofs), [[State Channel]] networks exemplified by the [[Lightning Network]] for Bitcoin, and [[Sidechain]] designs with their own consensus that periodically anchor to the main chain. [[Lightning and Similar L2]] captures the payment channel family specifically. The pattern enables [[DeFi]] protocols to operate economically at scale, facilitates [[Cross Chain Asset Transfer]] through standardised bridge contracts, and contributes to [[Blockchain Interoperability]] by creating an ecosystem of interconnected Layer 2 networks sharing a common settlement layer. [[Gas Optimization]] is a primary driver of Layer 2 adoption, as Layer 1 gas fees during congestion can make small transactions economically unviable.
+
+- ### Content
+  - The conceptual foundations of Layer 2 scaling appear in Satoshi Nakamoto's original Bitcoin whitepaper (2008), which mentioned payment channels as a possibility, and were elaborated in Joseph Poon and Thaddeus Dryja's Lightning Network whitepaper (2016), which formalised bidirectional payment channels with hash time-locked contracts. The term "Layer 2" emerged as a conceptual framework around 2017-2018 as Ethereum developers grappled with scalability limits: Ethereum's mainnet processed approximately 15 transactions per second, orders of magnitude below the thousands per second needed for mainstream application throughput. The trilemma framing — that a blockchain cannot simultaneously be decentralised, secure, and scalable — motivated off-chain solutions that relaxed the throughput constraint while preserving the other two properties by anchoring to the Layer 1.
+
+  - Layer 2 architectures divide into several distinct families. Rollups process transactions off-chain in a sequencer that batches hundreds or thousands of transactions, then submits a compressed summary (state root) and proof to the Layer 1. ZK-rollups (as implemented by zkSync, Starknet, Polygon zkEVM, and Scroll) generate a cryptographic zero-knowledge validity proof that the state transition is correct; Layer 1 smart contracts verify this proof, ensuring soundness without trust assumptions but requiring significant prover computation. Optimistic rollups (Optimism, Arbitrum) assume all submitted state roots are valid and allow a challenge window (typically 7 days) during which fraud proofs can be submitted to invalidate incorrect state; this avoids prover overhead but introduces withdrawal delays. State channels (Lightning Network, Raiden) establish bilateral or multi-party channels where participants exchange signed state updates off-chain and only settle the final state on Layer 1, enabling high-frequency micropayments at negligible cost but requiring funds to be locked in channels and counterparties to be online.
+
+  - The practical impact of Layer 2 scaling has been substantial. By 2024, Arbitrum and Optimism together process more transaction volume than Ethereum mainnet, and zkSync Era and Starknet have demonstrated ZK-rollup throughput exceeding 2,000 transactions per second with sub-cent fees. The Lightning Network has grown to over 60,000 channels carrying approximately 5,000 BTC in capacity, enabling Bitcoin micropayments at millisecond latency. This throughput expansion has made DeFi economically accessible to users transacting small amounts who would otherwise be priced out by Layer 1 gas fees exceeding the transaction value.
+
+  - In 2024-2025, the Layer 2 landscape is characterised by intense competition and rapid technical evolution. Ethereum's EIP-4844 (proto-danksharding, deployed March 2024) introduced "blob" storage on the beacon chain at dramatically reduced cost for rollup data availability, reducing Layer 2 fees by 80-90%. The "based rollup" design aligns Layer 2 sequencing with Layer 1 validators to inherit liveness and decentralisation properties. ZK proof generation has become 100x faster over four years through algorithmic and hardware improvements, making ZK-rollups competitive with optimistic designs on latency. The major open challenge is achieving full Ethereum-equivalence (bytecode-compatible EVM execution) in a ZK-rollup with acceptable proving costs, with multiple teams reaching production readiness in 2024-2025. Layer 3 "hyperchain" architectures — rollups built atop rollups — extend the hierarchy further, with zkSync's ZK Stack enabling permissioned application-specific Layer 3 instances.
+

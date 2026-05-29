@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:distributed-team-collaboration",
+  "title": "Distributed Team Collaboration",
+  "slug": "distributed-team-collaboration",
+  "public": true,
+  "classIri": "urn:ngm:class:distributed-team-collaboration",
+  "domain": "governance",
+  "definition": "Distributed team collaboration encompasses the practices, tools, and organisational patterns that enable geographically dispersed individuals working across multiple time zones to coordinate effectively on shared goals without co-location. It integrates asynchronous communication protocols, synchronous video conferencing, shared digital workspaces, version-controlled artefacts, and social norms around documentation and decision-making transparency to replicate \u2014 and often surpass \u2014 the coordination bandwidth of co-located teams. The discipline has grown from a niche practice of open-source communities and multinational corporations into a mainstream organisational capability following the global shift to remote work accelerated by the 2020 pandemic.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:distributed-collaboration",
+      "label": "Distributed Collaboration"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:synchronous-collaboration",
+        "label": "Synchronous Collaboration"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:asynchronous-communication",
+        "label": "Asynchronous Communication"
+      },
+      {
+        "id": "urn:ngm:class:collaboration-platform",
+        "label": "Collaboration Platform"
+      },
+      {
+        "id": "urn:ngm:class:realtime-communication",
+        "label": "Realtime Communication"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:remote-work",
+        "label": "Remote Work"
+      },
+      {
+        "id": "urn:ngm:class:remote-collaboration",
+        "label": "Remote Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:asynchronous-collaboration",
+        "label": "Asynchronous Collaboration"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "breakout-room",
+      "label": "Breakout Room"
+    },
+    {
+      "slug": "knowledge-sharing",
+      "label": "Knowledge Sharing"
+    },
+    {
+      "slug": "remote-pair-programming",
+      "label": "Remote Pair Programming"
+    }
+  ]
+}

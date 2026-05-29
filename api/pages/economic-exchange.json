@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:economic-exchange",
+  "title": "Economic Exchange",
+  "slug": "economic-exchange",
+  "public": true,
+  "classIri": "urn:ngm:class:economic-exchange",
+  "domain": "finance",
+  "definition": "Economic exchange is the voluntary transfer of goods, services, information, or rights between parties according to mutually agreed terms of value equivalence, constituting the fundamental transaction unit through which market economies allocate resources, generate price signals, and produce social surplus. It encompasses the full spectrum from primitive barter to complex multi-party financial instrument transactions, requiring coordination mechanisms \u2014 markets, prices, contracts, platforms \u2014 to match counterparties, communicate value, and enforce agreements. Modern digital economic exchange increasingly occurs through automated market makers, decentralised exchange protocols, and algorithmic trading systems that reduce friction and enable global, continuous, programmatic commerce.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:economic-mechanism",
+      "label": "Economic Mechanism"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralized-exchange",
+        "label": "Decentralized Exchange"
+      },
+      {
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "id": "urn:ngm:class:digital-marketplace",
+        "label": "Digital Marketplace"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "id": "urn:ngm:class:price-discovery",
+        "label": "Price Discovery"
+      },
+      {
+        "id": "urn:ngm:class:barter-system",
+        "label": "Barter System"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      },
+      {
+        "id": "urn:ngm:class:economics",
+        "label": "Economics"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "monetary-system",
+      "label": "Monetary System"
+    },
+    {
+      "slug": "money",
+      "label": "Money"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    }
+  ]
+}

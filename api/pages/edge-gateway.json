@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:edge-gateway",
+  "title": "Edge Gateway",
+  "slug": "edge-gateway",
+  "public": true,
+  "classIri": "urn:ngm:class:edge-gateway",
+  "domain": "infrastructure",
+  "definition": "An edge gateway is a network device or software component deployed at the boundary between a local edge environment and wider network infrastructure\u2014such as the internet or a cloud backend\u2014that performs protocol translation, security enforcement, traffic routing, and local data preprocessing before forwarding selected data to upstream systems. Edge gateways aggregate data from IoT devices, sensors, and local compute nodes, filter and normalise it, enforce access control policies, and reduce bandwidth consumption by processing and compressing data at the point of collection rather than transmitting raw streams to the cloud. They are essential components of edge computing architectures in industrial IoT, smart cities, autonomous systems, and distributed XR infrastructure.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:edge-computing-node",
+      "label": "Edge Computing Node"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:edge-orchestration",
+        "label": "Edge Orchestration"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      },
+      {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:edge-network",
+        "label": "Edge Network"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing-architecture",
+        "label": "Edge Computing Architecture"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cold-chain-monitoring",
+      "label": "Cold Chain Monitoring"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    },
+    {
+      "slug": "io-t-sensor-network",
+      "label": "IoT Sensor Network"
+    }
+  ]
+}

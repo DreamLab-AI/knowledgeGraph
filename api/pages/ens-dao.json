@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:ens-dao",
+  "title": "ENS DAO",
+  "slug": "ens-dao",
+  "public": true,
+  "classIri": "urn:ngm:class:ens-dao",
+  "domain": "governance",
+  "definition": "ENS DAO is the decentralised autonomous organisation that governs the Ethereum Name Service (ENS), the primary naming infrastructure for the Ethereum ecosystem, using the ENS governance token ($ENS) to enable token-weighted voting on protocol upgrades, treasury allocation, and price oracle parameter changes through a Governor Bravo-compatible on-chain governance contract. Established in November 2021 via a retroactive airdrop of 25 million ENS tokens to historical registrants and contributors, the DAO holds a treasury of tens of millions of dollars in ETH and ENS, oversees the root multi-sig controlling the ENS root keys, and appoints stewards for working groups covering Meta-Governance, Ecosystem, Public Goods, and Community operations. ENS DAO represents one of the largest and most active protocol DAOs by voter participation and treasury size.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dao",
+      "label": "DAO"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-decision-making",
+        "label": "Decentralised Decision-Making"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:compound-governor-bravo",
+        "label": "Compound Governor Bravo"
+      },
+      {
+        "id": "urn:ngm:class:snapshot-voting",
+        "label": "Snapshot Voting"
+      },
+      {
+        "id": "urn:ngm:class:timelock-controller",
+        "label": "Timelock Controller"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ens",
+        "label": "ENS"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-governance",
+        "label": "On-chain Governance"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-identity",
+        "label": "Decentralized Identity"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "dao-analytics",
+      "label": "DAO Analytics"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "delegate-democracy",
+      "label": "Delegate Democracy"
+    },
+    {
+      "slug": "snapshot-voting",
+      "label": "Snapshot Voting"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:cache-layer",
+  "title": "Cache Layer",
+  "slug": "cache-layer",
+  "public": true,
+  "classIri": "urn:ngm:class:cache-layer",
+  "domain": "infrastructure",
+  "definition": "A cache layer is an intermediate storage tier interposed between a data consumer and an authoritative data source, holding frequently or recently accessed data in faster storage to reduce latency, decrease load on origin systems, and improve overall system throughput. Cache layers operate at multiple levels of a computing stack\u2014CPU caches, in-process memory caches, distributed shared caches, and edge CDN caches\u2014each exploiting temporal or spatial locality of access patterns. Correctness requires coherence protocols or explicit invalidation strategies to prevent stale data from being served.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:storage-layer",
+      "label": "Storage Layer"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:performance-optimization",
+        "label": "Performance Optimization"
+      },
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:kv-cache",
+        "label": "KV Cache"
+      },
+      {
+        "id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network-cdn",
+        "label": "Content Delivery Network (CDN)"
+      },
+      {
+        "id": "urn:ngm:class:database-system",
+        "label": "Database System"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "data-layer",
+      "label": "Data Layer"
+    },
+    {
+      "slug": "data-storage-layer",
+      "label": "Data Storage Layer"
+    },
+    {
+      "slug": "storage-layer",
+      "label": "Storage Layer"
+    }
+  ]
+}

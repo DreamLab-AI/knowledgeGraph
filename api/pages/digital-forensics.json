@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:digital-forensics",
+  "title": "Digital Forensics",
+  "slug": "digital-forensics",
+  "public": true,
+  "classIri": "urn:ngm:class:digital-forensics",
+  "domain": "security",
+  "definition": "Digital forensics is the scientific discipline concerned with the identification, preservation, extraction, analysis, and presentation of digital evidence from computing systems, networks, storage media, and connected devices in a manner that is legally admissible and reproducible. It applies structured methodologies \u2014 including write-blocked acquisition, cryptographic hashing for evidence integrity, and chain-of-custody documentation \u2014 to support criminal investigations, civil litigation, incident response, and regulatory compliance inquiries. Sub-disciplines include network forensics, mobile forensics, memory forensics, and cloud forensics.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cybersecurity",
+      "label": "Cybersecurity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      },
+      {
+        "id": "urn:ngm:class:digital-evidence-chain-of-custody",
+        "label": "Digital Evidence Chain of Custody"
+      },
+      {
+        "id": "urn:ngm:class:digital-forensics-framework",
+        "label": "Digital Forensics Framework"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity-standard",
+        "label": "Cybersecurity Standard"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      },
+      {
+        "id": "urn:ngm:class:threat-detection",
+        "label": "Threat Detection"
+      },
+      {
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      },
+      {
+        "id": "urn:ngm:class:threat-model",
+        "label": "Threat Model"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "cyber-security-and-cryptography",
+      "label": "Cyber Security and Cryptography"
+    },
+    {
+      "slug": "inpainting",
+      "label": "Inpainting"
+    }
+  ]
+}

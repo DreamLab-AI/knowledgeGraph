@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:data-availability",
+  "title": "Data Availability",
+  "slug": "data-availability",
+  "public": true,
+  "classIri": "urn:ngm:class:data-availability",
+  "domain": "blockchain",
+  "definition": "Data availability in the context of blockchain and distributed systems refers to the guarantee that all data necessary to verify and reconstruct the state of a network\u2014particularly transaction data published by block producers\u2014is accessible to any participant who wishes to retrieve it. The data availability problem arises when validators or light clients cannot verify that a block producer has published the full data backing a block header without downloading and checking every byte. Modern solutions to data availability employ erasure coding and data availability sampling (DAS), allowing light nodes to probabilistically verify full data availability by checking only a small random subset of encoded chunks. Data availability is a foundational property in modular blockchain architectures and rollup scaling systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-layer",
+      "label": "Data Layer"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:erasure-coding",
+        "label": "Erasure Coding"
+      },
+      {
+        "id": "urn:ngm:class:sampling",
+        "label": "Sampling"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-commitment",
+        "label": "Cryptographic Commitment"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:sharding",
+        "label": "Sharding"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:content-addressed-storage",
+        "label": "Content-Addressed Storage"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "data-layer",
+      "label": "Data Layer"
+    },
+    {
+      "slug": "data-replication",
+      "label": "Data Replication"
+    },
+    {
+      "slug": "decentralized-storage",
+      "label": "Decentralized Storage"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

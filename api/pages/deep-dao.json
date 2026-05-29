@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:deep-dao",
+  "title": "DeepDAO",
+  "slug": "deep-dao",
+  "public": true,
+  "classIri": "urn:ngm:class:deep-dao",
+  "domain": "blockchain",
+  "definition": "DeepDAO is a leading analytics and data aggregation platform dedicated to tracking and measuring the organisational health, financial activity, governance participation, and membership dynamics of decentralised autonomous organisations across multiple blockchain networks. It provides standardised metrics \u2014 total assets under management, number of token holders, proposal counts, voter participation rates, and delegate rankings \u2014 that enable comparative analysis of DAO ecosystems and inform investment, research, and governance design decisions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dao-analytics",
+      "label": "DAO Analytics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-governance",
+        "label": "Decentralized Governance"
+      },
+      {
+        "id": "urn:ngm:class:decision-transparency",
+        "label": "Decision Transparency"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:blockchain-analytics",
+        "label": "Blockchain Analytics"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-governance",
+        "label": "On-chain Governance"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:dao",
+        "label": "DAO"
+      },
+      {
+        "id": "urn:ngm:class:dao-tooling",
+        "label": "DAO Tooling"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "dao-analytics",
+      "label": "DAO Analytics"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "snapshot-voting",
+      "label": "Snapshot Voting"
+    },
+    {
+      "slug": "treasury-management",
+      "label": "Treasury Management"
+    }
+  ]
+}

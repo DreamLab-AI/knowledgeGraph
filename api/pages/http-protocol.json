@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:http-protocol",
+  "title": "HTTP Protocol",
+  "slug": "http-protocol",
+  "public": true,
+  "classIri": "urn:ngm:class:http-protocol",
+  "domain": "web",
+  "definition": "The Hypertext Transfer Protocol (HTTP) is a stateless, application-layer request-response protocol that forms the foundation of data communication on the World Wide Web, defining the format and semantics of messages exchanged between clients (browsers, API consumers) and servers (web servers, API gateways) over TCP/IP connections. Each HTTP transaction consists of a request message specifying a method (GET, POST, PUT, DELETE, PATCH, HEAD, OPTIONS), a target URI, headers conveying metadata, and an optional body, followed by a response message containing a status code, headers, and an optional body. HTTP has evolved through versions 1.0, 1.1, 2, and 3, with each version improving multiplexing, compression, and connection management.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:network-protocol",
+      "label": "Network Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "id": "urn:ngm:class:web-socket-protocol",
+        "label": "WebSocket Protocol"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network-cdn",
+        "label": "Content Delivery Network (CDN)"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:tls",
+        "label": "TLS"
+      },
+      {
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:graph-ql",
+        "label": "GraphQL"
+      },
+      {
+        "id": "urn:ngm:class:open-api-specification",
+        "label": "OpenAPI Specification"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-scrapers",
+      "label": "AI Scrapers"
+    },
+    {
+      "slug": "model-context-protocol",
+      "label": "Model Context Protocol"
+    },
+    {
+      "slug": "solid-pod",
+      "label": "Solid Pod"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "id": "urn:visionflow:page:double-spend-prevention",
+  "title": "Double-Spend Prevention",
+  "slug": "double-spend-prevention",
+  "public": true,
+  "classIri": "urn:ngm:class:double-spend-prevention",
+  "domain": "blockchain",
+  "definition": "Double-spend prevention refers to the set of cryptographic, consensus-based, and protocol-level mechanisms that ensure a given unit of digital value cannot be spent more than once within a payment or transaction system. This problem is fundamental to digital money because, unlike physical currency, digital data can be trivially copied; preventing double-spending without a trusted central authority was the key unsolved challenge that Satoshi Nakamoto's Bitcoin whitepaper addressed through the combination of a public transaction ledger and proof-of-work consensus.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain-security",
+      "label": "Blockchain Security"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:finality",
+        "label": "Finality"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:double-spending",
+        "label": "Double Spending"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:nakamoto-consensus",
+        "label": "Nakamoto Consensus"
+      },
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "blockchain-protocol",
+      "label": "Blockchain Protocol"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    }
+  ]
+}

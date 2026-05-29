@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:audit-log",
+  "title": "Audit Log",
+  "slug": "audit-log",
+  "public": true,
+  "classIri": "urn:ngm:class:audit-log",
+  "domain": "security",
+  "definition": "An audit log is an immutable, chronologically ordered record of discrete events that captures who performed an action, what action was performed, on which resource, at what time, and from where, providing an authoritative evidence trail for security investigation, regulatory compliance, and forensic analysis. Each log entry is typically structured with a timestamp, actor identity, event type, affected object identifier, outcome status, and contextual metadata. Audit logs are foundational to accountability in information systems, distinguishing themselves from operational logs by their emphasis on human-actionable accountability rather than system diagnostics.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:audit-trail",
+      "label": "Audit Trail"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:event-sourcing",
+        "label": "Event Sourcing"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "id": "urn:ngm:class:information-security",
+        "label": "Information Security"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:audit-logging",
+        "label": "Audit Logging"
+      },
+      {
+        "id": "urn:ngm:class:compliance-audit-trail",
+        "label": "Compliance Audit Trail"
+      },
+      {
+        "id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "access-control-system",
+      "label": "Access Control System"
+    },
+    {
+      "slug": "digital-evidence-chain-of-custody",
+      "label": "Digital Evidence Chain of Custody"
+    },
+    {
+      "slug": "identity-provider",
+      "label": "Identity Provider"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:dispute-resolution",
+  "title": "Dispute Resolution",
+  "slug": "dispute-resolution",
+  "public": true,
+  "classIri": "urn:ngm:class:dispute-resolution",
+  "domain": "governance",
+  "definition": "Dispute Resolution encompasses the processes and mechanisms by which conflicting parties reach a binding or agreed settlement without necessarily resorting to formal court litigation, including negotiation, mediation, arbitration, and online dispute resolution (ODR) platforms. In blockchain and smart-contract contexts, dispute resolution refers to the programmatic or semi-programmatic adjudication of disagreements arising from contract ambiguity, code exploits, or off-chain facts that automated execution cannot verify, using decentralised arbitration protocols, escrow mechanisms, and cryptoeconomic incentives to produce impartial outcomes. Effective dispute resolution balances finality, cost, speed, and procedural fairness across both traditional legal frameworks and emerging decentralised governance structures.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dispute-resolution-mechanism",
+      "label": "Dispute Resolution Mechanism"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:e-contract-arbitration",
+        "label": "E-Contract Arbitration"
+      },
+      {
+        "id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:arbitration-decision-engine",
+        "label": "Arbitration Decision Engine"
+      },
+      {
+        "id": "urn:ngm:class:legal-compliance",
+        "label": "Legal Compliance"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:conflict-resolution",
+        "label": "Conflict Resolution"
+      },
+      {
+        "id": "urn:ngm:class:arbitration-process",
+        "label": "Arbitration Process"
+      },
+      {
+        "id": "urn:ngm:class:legal-framework",
+        "label": "Legal Framework"
+      },
+      {
+        "id": "urn:ngm:class:dao-legal-structures",
+        "label": "DAO Legal Structures"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "digital-jurisdiction",
+      "label": "Digital Jurisdiction"
+    },
+    {
+      "slug": "metaverse-liability-model",
+      "label": "Metaverse Liability Model"
+    },
+    {
+      "slug": "non-repudiation",
+      "label": "Non-Repudiation"
+    }
+  ]
+}

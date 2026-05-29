@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:jira",
+  "title": "Jira",
+  "slug": "jira",
+  "public": true,
+  "classIri": "urn:ngm:class:jira",
+  "domain": "infrastructure",
+  "definition": "Jira is an issue and project tracking platform developed by Atlassian, widely used for planning, tracking, and releasing software across agile and traditional software development workflows. It provides configurable issue types (epics, stories, tasks, bugs), workflow state machines, sprint planning boards, backlog management, and reporting dashboards that support Scrum, Kanban, and hybrid methodologies. Jira integrates deeply with development toolchains\u2014source control, CI/CD pipelines, monitoring systems\u2014and serves as a central system of record for engineering work status, enabling cross-team coordination and stakeholder visibility at scale. It is available as a cloud SaaS product (Jira Cloud) and a self-hosted server or data centre deployment.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:project-management",
+      "label": "Project Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:software-development-process",
+        "label": "Software Development Process"
+      },
+      {
+        "id": "urn:ngm:class:collaboration",
+        "label": "Collaboration"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:software-development",
+        "label": "Software Development"
+      },
+      {
+        "id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      },
+      {
+        "id": "urn:ngm:class:cloud-platform",
+        "label": "Cloud Platform"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:collaboration-platform",
+        "label": "Collaboration Platform"
+      },
+      {
+        "id": "urn:ngm:class:software-platform",
+        "label": "Software Platform"
+      },
+      {
+        "id": "urn:ngm:class:api-integration",
+        "label": "API Integration"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "asynchronous-video",
+      "label": "Asynchronous Video"
+    },
+    {
+      "slug": "collaborative-whiteboard",
+      "label": "Collaborative Whiteboard"
+    },
+    {
+      "slug": "digital-workplace-platform",
+      "label": "Digital Workplace Platform"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

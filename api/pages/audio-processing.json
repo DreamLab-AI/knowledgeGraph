@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:audio-processing",
+  "title": "Audio Processing",
+  "slug": "audio-processing",
+  "public": true,
+  "classIri": "urn:ngm:class:audio-processing",
+  "domain": "ai",
+  "definition": "Audio processing is the computational manipulation of digital audio signals to transform, analyse, enhance, or synthesise sound, encompassing operations such as filtering, compression, equalization, spatialization, and feature extraction. It operates on discrete-time representations of acoustic waveforms using algorithms drawn from digital signal processing theory. Applications range from consumer media playback to professional studio production, speech recognition pipelines, and immersive spatial audio for extended reality environments.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:signal-processing",
+      "label": "Signal Processing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "id": "urn:ngm:class:spatial-audio-system",
+        "label": "Spatial Audio System"
+      },
+      {
+        "id": "urn:ngm:class:immersive-audio-system",
+        "label": "Immersive Audio System"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:audio-processing-system",
+        "label": "Audio Processing System"
+      },
+      {
+        "id": "urn:ngm:class:audio-parameters",
+        "label": "Audio Parameters"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-signal-processing",
+        "label": "Digital Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:audio-spatialization",
+        "label": "Audio Spatialization"
+      },
+      {
+        "id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "deepfakes",
+      "label": "Deepfakes"
+    },
+    {
+      "slug": "speech-and-voice",
+      "label": "Speech and Voice"
+    },
+    {
+      "slug": "transformers",
+      "label": "Transformers"
+    },
+    {
+      "slug": "voice-interaction",
+      "label": "Voice Interaction"
+    }
+  ]
+}

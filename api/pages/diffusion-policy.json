@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:diffusion-policy",
+  "title": "Diffusion Policy",
+  "slug": "diffusion-policy",
+  "public": true,
+  "classIri": "urn:ngm:class:diffusion-policy",
+  "domain": "robotics",
+  "definition": "Diffusion Policy is a class of robot learning algorithms that represent robot action sequences as the output of a conditional denoising diffusion process, treating action prediction as iterative noise removal conditioned on sensor observations rather than as direct regression or classification. By leveraging the expressiveness of diffusion models to capture multi-modal action distributions, Diffusion Policy can represent one-to-many mappings from observation to action \u2014 a critical capability for dexterous manipulation tasks where multiple valid action trajectories exist. The approach, introduced by Chi et al. (2023), achieves state-of-the-art performance on imitation learning benchmarks and generalises across diverse manipulation settings.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robot-learning",
+      "label": "Robot Learning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:robot-manipulation",
+        "label": "Robot Manipulation"
+      },
+      {
+        "id": "urn:ngm:class:teleoperation",
+        "label": "Teleoperation"
+      },
+      {
+        "id": "urn:ngm:class:embodied-ai",
+        "label": "Embodied AI"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:imitation-learning",
+        "label": "Imitation Learning"
+      },
+      {
+        "id": "urn:ngm:class:flow-matching",
+        "label": "Flow Matching"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:end-effector",
+        "label": "End Effector"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "embodied-minds",
+      "label": "Embodied Minds"
+    },
+    {
+      "slug": "imitation-learning",
+      "label": "Imitation Learning"
+    },
+    {
+      "slug": "kinematics-model",
+      "label": "Kinematics Model"
+    },
+    {
+      "slug": "task-planning",
+      "label": "Task Planning"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    }
+  ]
+}

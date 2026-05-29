@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:do-178-c",
+  "title": "DO-178C",
+  "slug": "do-178-c",
+  "public": true,
+  "classIri": "urn:ngm:class:do-178-c",
+  "domain": "infrastructure",
+  "definition": "DO-178C (Software Considerations in Airborne Systems and Equipment Certification) is the primary international standard governing the development and certification of airborne software, published by RTCA in 2011 as the successor to DO-178B. It defines five software levels (A through E) based on failure severity, each requiring progressively more rigorous development assurance activities including requirements traceability, structural coverage testing, and independence in reviews. Compliance with DO-178C is required by aviation regulatory authorities (FAA, EASA) for software installed in certified aircraft.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:safety-standard",
+      "label": "Safety Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "id": "urn:ngm:class:software-testing",
+        "label": "Software Testing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "id": "urn:ngm:class:iec-61508",
+        "label": "IEC 61508"
+      },
+      {
+        "id": "urn:ngm:class:iso-26262",
+        "label": "ISO 26262"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "control-algorithm",
+      "label": "Control Algorithm"
+    },
+    {
+      "slug": "fault-tolerance",
+      "label": "Fault Tolerance"
+    },
+    {
+      "slug": "real-time",
+      "label": "Real Time"
+    }
+  ]
+}

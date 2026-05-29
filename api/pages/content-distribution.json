@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:content-distribution",
+  "title": "Content Distribution",
+  "slug": "content-distribution",
+  "public": true,
+  "classIri": "urn:ngm:class:content-distribution",
+  "domain": "infrastructure",
+  "definition": "Content Distribution encompasses the technical and logistical systems that deliver digital media\u2014web pages, video, software, and other assets\u2014from origin servers to end users at scale, minimising latency and maximising availability by replicating and caching content geographically close to consumers. It is realised primarily through Content Delivery Networks (CDNs) that operate distributed edge node infrastructure, but also includes peer-to-peer protocols, adaptive bitrate streaming, and decentralised storage networks as alternative or complementary mechanisms. Effective content distribution is the foundational infrastructure of the commercial internet, underpinning e-commerce, streaming media, and cloud-native application delivery.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-infrastructure",
+      "label": "Digital Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:content-delivery-network-cdn",
+        "label": "Content Delivery Network (CDN)"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:video-streaming",
+        "label": "Video Streaming"
+      },
+      {
+        "id": "urn:ngm:class:cloud-native-applications",
+        "label": "Cloud-Native Applications"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-storage",
+        "label": "Decentralized Storage"
+      },
+      {
+        "id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "data-storage-layer",
+      "label": "Data Storage Layer"
+    },
+    {
+      "slug": "decentralized-storage",
+      "label": "Decentralized Storage"
+    },
+    {
+      "slug": "digital-asset-workflow",
+      "label": "Digital Asset Workflow"
+    },
+    {
+      "slug": "etsi-domain-data-management-creative-media",
+      "label": "ETSI Domain: Data Management + Creative Media"
+    }
+  ]
+}

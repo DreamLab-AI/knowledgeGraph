@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:avatar-animation",
+  "title": "Avatar Animation",
+  "slug": "avatar-animation",
+  "public": true,
+  "classIri": "urn:ngm:class:avatar-animation",
+  "domain": "graphics",
+  "definition": "Avatar animation is the specialised subset of digital animation concerned with driving the motion and expression of user-controlled or AI-controlled avatar representations in real-time interactive environments. It encompasses full-body locomotion, facial expression synthesis, hand and gaze tracking, and upper-body gesture systems, all coordinated to produce social believability within virtual and extended reality spaces. Avatar animation systems must balance visual fidelity with low-latency responsiveness to maintain user embodiment and presence. Standards such as VRM and glTF define interchange formats that allow avatar animations to transfer across platforms.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:animation",
+      "label": "Animation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:social-presence",
+        "label": "Social Presence"
+      },
+      {
+        "id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      },
+      {
+        "id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:animation-retargeting",
+        "label": "Animation Retargeting"
+      },
+      {
+        "id": "urn:ngm:class:vrm-format",
+        "label": "VRM Format"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      },
+      {
+        "id": "urn:ngm:class:avatar-system",
+        "label": "Avatar System"
+      },
+      {
+        "id": "urn:ngm:class:avatar-interoperability",
+        "label": "Avatar Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "animation-retargeting",
+      "label": "Animation Retargeting"
+    },
+    {
+      "slug": "motion-tracking",
+      "label": "Motion Tracking"
+    },
+    {
+      "slug": "pose-estimation",
+      "label": "Pose Estimation"
+    }
+  ]
+}

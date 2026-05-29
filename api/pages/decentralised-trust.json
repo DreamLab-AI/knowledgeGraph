@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:decentralised-trust",
+  "title": "Decentralised Trust",
+  "slug": "decentralised-trust",
+  "public": true,
+  "classIri": "urn:ngm:class:decentralised-trust",
+  "domain": "blockchain",
+  "definition": "Decentralised trust is an architectural property of a system in which confidence in the correctness of data, identity claims, or transaction outcomes is derived from cryptographic proofs, distributed consensus, and transparent protocol rules rather than from reliance on any single central authority or intermediary. Rather than placing faith in a bank, government registry, or certificate authority, participants in a decentralised trust model verify claims independently using public-key cryptography, Merkle proofs, or zero-knowledge proofs enforced by a distributed network. The result is a system where trust is a computable property of the protocol rather than a social or legal delegation to an institution.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:trust",
+      "label": "Trust"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:trustless-settlement",
+        "label": "Trustless Settlement"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-verification",
+        "label": "Cryptographic Verification"
+      },
+      {
+        "id": "urn:ngm:class:trust-anchor",
+        "label": "Trust Anchor"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:decentralisation",
+        "label": "Decentralisation"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "did-nostr-identity",
+      "label": "DID Nostr Identity"
+    },
+    {
+      "slug": "sovereign-keyset",
+      "label": "Sovereign Keyset"
+    },
+    {
+      "slug": "verifiable-credential-surface",
+      "label": "Verifiable Credential Surface"
+    }
+  ]
+}

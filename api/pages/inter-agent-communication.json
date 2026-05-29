@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:inter-agent-communication",
+  "title": "Inter-Agent Communication",
+  "slug": "inter-agent-communication",
+  "public": true,
+  "classIri": "urn:ngm:class:inter-agent-communication",
+  "domain": "ai",
+  "definition": "Inter-Agent Communication is the set of protocols, message formats, and transport mechanisms through which autonomous software agents exchange information, coordinate tasks, delegate subtasks, share observations, and negotiate commitments in multi-agent systems (MAS), spanning both classical symbolic AI frameworks (FIPA ACL, KQML) and contemporary LLM-based architectures (Model Context Protocol, Agent2Agent Protocol, tool-calling schemas). Effective inter-agent communication defines the content language (what is expressed), the interaction protocol (how exchanges are sequenced), and the transport layer (how messages are delivered), enabling heterogeneous agents built on different underlying models to collaborate without shared internal state. The discipline encompasses message authentication, semantic interoperability, context propagation, and trust boundaries between agents of differing capability and provenance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:multi-agent-system",
+      "label": "Multi-Agent System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      },
+      {
+        "id": "urn:ngm:class:orchestration",
+        "label": "Orchestration"
+      },
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      },
+      {
+        "id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      },
+      {
+        "id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      },
+      {
+        "id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:mas",
+        "label": "MAS"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      },
+      {
+        "id": "urn:ngm:class:agent2-agent-protocol",
+        "label": "Agent2Agent Protocol"
+      },
+      {
+        "id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cli-multi-agent-systems",
+      "label": "CLI Multi-Agent Systems"
+    },
+    {
+      "slug": "centralized-swarm-control",
+      "label": "Centralized Swarm Control"
+    },
+    {
+      "slug": "decentralized-swarm-control",
+      "label": "Decentralized Swarm Control"
+    }
+  ]
+}

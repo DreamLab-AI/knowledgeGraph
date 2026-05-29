@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:layer-2-scaling",
+  "title": "Layer 2 Scaling",
+  "slug": "layer-2-scaling",
+  "public": true,
+  "classIri": "urn:ngm:class:layer-2-scaling",
+  "domain": "blockchain",
+  "definition": "Layer 2 scaling refers to a category of protocols and systems built atop an existing blockchain (the Layer 1) that increase transaction throughput and reduce fees by processing the majority of transaction computation and data storage off the main chain while inheriting the security guarantees of the underlying Layer 1 through cryptographic proofs, fraud-proof mechanisms, or periodic state commitments. The Layer 2 anchors itself to the Layer 1 by periodically publishing compressed state roots or validity proofs, allowing the Layer 1 to serve as the ultimate settlement and security layer while the Layer 2 handles high-volume transaction processing.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain-scalability",
+      "label": "Blockchain Scalability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:state-channel",
+        "label": "State Channel"
+      },
+      {
+        "id": "urn:ngm:class:sidechain",
+        "label": "Sidechain"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:de-fi",
+        "label": "DeFi"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-asset-transfer",
+        "label": "Cross Chain Asset Transfer"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:layer2-scaling",
+        "label": "Layer2Scaling"
+      },
+      {
+        "id": "urn:ngm:class:lightning-and-similar-l2",
+        "label": "Lightning and Similar L2"
+      },
+      {
+        "id": "urn:ngm:class:gas-optimization",
+        "label": "Gas Optimization"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-related-links",
+      "label": "Bitcoin related links"
+    },
+    {
+      "slug": "blockchain-infrastructure",
+      "label": "Blockchain Infrastructure"
+    },
+    {
+      "slug": "green-blockchain-initiatives",
+      "label": "Green Blockchain Initiatives"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "sustainable-consensus",
+      "label": "Sustainable Consensus"
+    }
+  ]
+}

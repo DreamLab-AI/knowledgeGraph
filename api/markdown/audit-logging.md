@@ -1,0 +1,14 @@
+- ### Definition
+  - Audit logging is the practice of recording security-relevant system events into an immutable [[Audit Trail]], providing forensic evidence and supporting [[Compliance Framework]] obligations.
+
+- ### Relationships
+  - Audit logging directly produces the [[Audit Trail]] records that regulators and auditors inspect, and its outputs feed [[Compliance Monitoring]] dashboards and [[Algorithmic Auditing]] processes. Integrity guarantees—hash chaining, write-once storage, or cryptographic signatures—are what distinguish audit logs from ordinary application logs in the context of [[Information Security]] and [[Cybersecurity]]. [[Compliance Verification]] workflows consume audit log data to demonstrate adherence to policies and standards.
+
+- ### Content
+  - Audit logging has roots in mainframe accounting journals of the 1960s, where batch job resource consumption was recorded for billing and error diagnosis. As multi-user time-sharing systems emerged, the concept expanded to include security events—logins, privilege escalations, and file accesses. The TCSEC (Orange Book) in 1983 formally mandated audit trails for trusted systems at higher assurance levels, establishing the discipline as a security engineering requirement.
+
+  - A well-designed audit logging system captures structured event records containing a timestamp (ideally from a trusted time source), subject identity, resource identifier, action type, and result code. Storage is typically append-only with cryptographic chaining (each record's hash is included in the next) or forwarding to an immutable SIEM platform. Access to audit logs is itself governed and logged to prevent cover-up. Indexing and query interfaces allow security operations teams to reconstruct sequences of events for incident investigation.
+
+  - Audit logging is a cornerstone compliance requirement under regulations such as SOX, PCI-DSS, HIPAA, and the EU AI Act's transparency obligations. In cloud environments, services like AWS CloudTrail, Azure Monitor, and Google Cloud Audit Logs provide managed audit logging at infrastructure scale. Application-level audit logs complement infrastructure logs by capturing business-logic events (record reads, approvals, configuration changes) that have no corresponding infrastructure event.
+
+  - By 2024–2025 audit logging is evolving under several pressures: the volume of microservice and serverless architectures generates enormous log throughput requiring streaming ingestion pipelines; AI Act obligations are driving demand for audit trails of model decisions and training data provenance; and zero-trust architectures mandate continuous verification that produces rich audit event streams. Immutable audit logs stored on blockchain or content-addressed storage are being explored for highest-assurance environments where the logging infrastructure itself could be compromised.

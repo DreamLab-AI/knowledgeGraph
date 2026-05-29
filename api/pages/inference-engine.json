@@ -1,0 +1,87 @@
+{
+  "id": "urn:visionflow:page:inference-engine",
+  "title": "Inference Engine",
+  "slug": "inference-engine",
+  "public": true,
+  "classIri": "urn:ngm:class:inference-engine",
+  "domain": "ai",
+  "definition": "An Inference Engine is a specialised software runtime optimised for executing trained machine learning models in production \u2014 transforming input data into predictions, classifications, or generated content \u2014 with primary objectives of minimising latency, maximising throughput, and efficiently utilising hardware accelerators (GPUs, TPUs, NPUs). Inference engines apply techniques including operator fusion, kernel auto-tuning, mixed-precision quantisation, and memory layout optimisation to close the performance gap between a training-time model representation and optimal hardware utilisation, and they typically accept models in portable interchange formats such as ONNX or TensorRT engine plans to decouple model architecture from the serving runtime.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:inference",
+      "label": "Inference"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:real-time-inference-at-edge",
+        "label": "Real-Time Inference at Edge"
+      },
+      {
+        "id": "urn:ngm:class:ai-deployment",
+        "label": "AI Deployment"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:machine-learning-model",
+        "label": "Machine Learning Model"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:inference-hardware",
+        "label": "Inference Hardware"
+      },
+      {
+        "id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      },
+      {
+        "id": "urn:ngm:class:tensor-processing-unit",
+        "label": "Tensor Processing Unit"
+      },
+      {
+        "id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      },
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "chatbots",
+      "label": "Chatbots"
+    },
+    {
+      "slug": "cognitive-ai",
+      "label": "Cognitive AI"
+    },
+    {
+      "slug": "knowledge-graph",
+      "label": "Knowledge Graph"
+    }
+  ]
+}

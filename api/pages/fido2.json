@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:fido2",
+  "title": "FIDO2",
+  "slug": "fido2",
+  "public": true,
+  "classIri": "urn:ngm:class:fido2",
+  "domain": "security",
+  "definition": "FIDO2 is an open authentication standard developed by the FIDO Alliance and W3C that enables passwordless, phishing-resistant authentication using public-key cryptography. It consists of two components: the W3C Web Authentication API (WebAuthn), which defines the browser and platform interface for creating and using public key credentials, and the Client to Authenticator Protocol (CTAP2), which defines the communication between a platform and an external authenticator such as a hardware security key or passkey-capable device. FIDO2 credentials are bound to a specific relying party origin, making them immune to phishing, and private keys never leave the authenticator device, eliminating the credential theft risk associated with password databases.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:authentication-standards",
+      "label": "Authentication Standards"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:passwordless-authentication",
+        "label": "Passwordless Authentication"
+      },
+      {
+        "id": "urn:ngm:class:multi-factor-authentication",
+        "label": "Multi-Factor Authentication"
+      },
+      {
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      },
+      {
+        "id": "urn:ngm:class:web-standard",
+        "label": "Web Standard"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cyber-security-and-cryptography",
+      "label": "Cyber Security and Cryptography"
+    },
+    {
+      "slug": "identity-management-system",
+      "label": "Identity Management System"
+    },
+    {
+      "slug": "identity-provider",
+      "label": "Identity Provider"
+    }
+  ]
+}

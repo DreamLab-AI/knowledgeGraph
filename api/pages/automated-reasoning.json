@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:automated-reasoning",
+  "title": "Automated Reasoning",
+  "slug": "automated-reasoning",
+  "public": true,
+  "classIri": "urn:ngm:class:automated-reasoning",
+  "domain": "ai",
+  "definition": "Automated Reasoning is a subfield of artificial intelligence and computer science concerned with developing algorithms and systems that can perform logical inference, theorem proving, satisfiability checking, and knowledge-based deduction without continuous human guidance. It encompasses formal methods such as first-order logic, propositional calculus, and higher-order logics, implemented in systems ranging from SAT solvers and automated theorem provers to description logic reasoners underpinning knowledge graphs. Automated reasoning forms the rigorous backbone of formal verification, ontology inference, planning, and constraint satisfaction problems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:reasoning",
+      "label": "Reasoning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "id": "urn:ngm:class:automated-planning",
+        "label": "Automated Planning"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert Systems"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:symbolic-reasoning",
+        "label": "Symbolic Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:logic-programming",
+        "label": "Logic Programming"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "domain-ontology",
+      "label": "Domain Ontology"
+    },
+    {
+      "slug": "metaverse-ontology-schema",
+      "label": "Metaverse Ontology Schema"
+    },
+    {
+      "slug": "owl-class-hierarchy",
+      "label": "OWL Class Hierarchy"
+    }
+  ]
+}

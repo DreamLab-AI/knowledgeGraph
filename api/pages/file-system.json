@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:file-system",
+  "title": "File System",
+  "slug": "file-system",
+  "public": true,
+  "classIri": "urn:ngm:class:file-system",
+  "domain": "infrastructure",
+  "definition": "A file system is the data structure and associated management software that an operating system uses to organise, store, retrieve, and manage data on storage media. It defines how data is logically partitioned into named files and directories, governs access permissions, maintains metadata such as timestamps and ownership, and translates logical file operations into physical block I/O against underlying storage hardware. File systems range from local single-disk formats (NTFS, ext4, APFS) to distributed and network-attached systems (NFS, HDFS, GFS) that span many physical storage nodes.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:operating-system",
+      "label": "Operating System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-storage-layer",
+        "label": "Data Storage Layer"
+      },
+      {
+        "id": "urn:ngm:class:content-addressed-storage",
+        "label": "Content-Addressed Storage"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:storage-hardware",
+        "label": "Storage Hardware"
+      },
+      {
+        "id": "urn:ngm:class:virtual-machine",
+        "label": "Virtual Machine"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
+      },
+      {
+        "id": "urn:ngm:class:distributed-storage",
+        "label": "Distributed Storage"
+      },
+      {
+        "id": "urn:ngm:class:cloud-storage",
+        "label": "Cloud Storage"
+      },
+      {
+        "id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      },
+      {
+        "id": "urn:ngm:class:storage-systems",
+        "label": "Storage Systems"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "checkpoints",
+      "label": "Checkpoints"
+    },
+    {
+      "slug": "data-layer",
+      "label": "Data Layer"
+    },
+    {
+      "slug": "storage-layer",
+      "label": "Storage Layer"
+    }
+  ]
+}

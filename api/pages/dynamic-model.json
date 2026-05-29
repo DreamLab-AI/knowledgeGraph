@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:dynamic-model",
+  "title": "Dynamic Model",
+  "slug": "dynamic-model",
+  "public": true,
+  "classIri": "urn:ngm:class:dynamic-model",
+  "domain": "ai",
+  "definition": "A Dynamic Model is a mathematical or computational representation of a system that explicitly captures how the system's state evolves over time in response to inputs, internal dynamics, and disturbances. Distinguished from static models by their time-varying state equations\u2014typically differential equations for continuous systems or recurrence relations for discrete systems\u2014dynamic models are fundamental to control engineering, physics simulation, robotics, and economic forecasting. They may be physics-derived from first principles, identified from data using system identification techniques, or learned end-to-end from observations using neural networks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:simulation",
+      "label": "Simulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-based-control",
+        "label": "Model Based Control"
+      },
+      {
+        "id": "urn:ngm:class:simulation-engine",
+        "label": "Simulation Engine"
+      },
+      {
+        "id": "urn:ngm:class:cyber-physical-systems",
+        "label": "Cyber Physical Systems"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:state-machine",
+        "label": "State Machine"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      },
+      {
+        "id": "urn:ngm:class:world-model",
+        "label": "World Model"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "admittance-control",
+      "label": "Admittance Control"
+    },
+    {
+      "slug": "model-based-control",
+      "label": "Model Based Control"
+    },
+    {
+      "slug": "motion-control",
+      "label": "Motion Control"
+    }
+  ]
+}

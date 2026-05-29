@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:gpu-resources",
+  "title": "GPU Resources",
+  "slug": "gpu-resources",
+  "public": true,
+  "classIri": "urn:ngm:class:gpu-resources",
+  "domain": "infrastructure",
+  "definition": "GPU resources refer to the pool of graphics processing unit capacity \u2014 including VRAM, streaming multiprocessors, tensor cores, and associated interconnect bandwidth \u2014 that is provisioned, allocated, and managed as a computational resource for parallel workloads such as AI model training and inference, scientific simulation, computer graphics rendering, and high-performance computing. In cloud and data centre contexts, GPU resources are typically accessed through virtualisation or direct hardware passthrough, managed by schedulers that partition capacity across competing workloads and billed on per-hour or per-token consumption models.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:compute-resources",
+      "label": "Compute Resources"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      },
+      {
+        "id": "urn:ngm:class:large-scale-compute",
+        "label": "Large-Scale Compute"
+      },
+      {
+        "id": "urn:ngm:class:computer-graphics",
+        "label": "Computer Graphics"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      },
+      {
+        "id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      },
+      {
+        "id": "urn:ngm:class:compute-shader",
+        "label": "Compute Shader"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:edge-ai-accelerator",
+        "label": "Edge AI Accelerator"
+      },
+      {
+        "id": "urn:ngm:class:inference-hardware",
+        "label": "Inference Hardware"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "compute-layer",
+      "label": "Compute Layer"
+    },
+    {
+      "slug": "rendering-pipeline",
+      "label": "Rendering Pipeline"
+    },
+    {
+      "slug": "visualization-layer",
+      "label": "Visualization Layer"
+    }
+  ]
+}

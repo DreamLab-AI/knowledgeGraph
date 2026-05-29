@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:decentralized-application",
+  "title": "Decentralized Application",
+  "slug": "decentralized-application",
+  "public": true,
+  "classIri": "urn:ngm:class:decentralized-application",
+  "domain": "blockchain",
+  "definition": "A decentralized application (dApp) is a software application whose backend logic runs on a blockchain or peer-to-peer network rather than on centralised servers controlled by a single entity, ensuring that no single party can unilaterally modify, censor, or shut down the application. The on-chain components \u2014 typically smart contracts \u2014 enforce business logic and state transitions transparently, while user-facing frontends may remain conventional web or mobile interfaces that communicate with the blockchain via wallet connectors. dApps inherit the censorship resistance and trustlessness of their underlying blockchain while exposing usability challenges related to transaction costs, latency, and key management.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain-application",
+      "label": "Blockchain Application"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:dao",
+        "label": "DAO"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:evm",
+        "label": "EVM"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract-platform",
+        "label": "Smart Contract Platform"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:web3",
+        "label": "Web3"
+      },
+      {
+        "id": "urn:ngm:class:de-fi",
+        "label": "DeFi"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "decentralised-file-storage",
+      "label": "Decentralised file storage"
+    },
+    {
+      "slug": "distributed-ledger-technology-dlt",
+      "label": "Distributed Ledger Technology (DLT)"
+    },
+    {
+      "slug": "smart-contracts",
+      "label": "Smart Contracts"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:ieee-robotics-and-automation-society",
+  "title": "IEEE Robotics And Automation Society",
+  "slug": "ieee-robotics-and-automation-society",
+  "public": true,
+  "classIri": "urn:ngm:class:ieee-robotics-and-automation-society",
+  "domain": "robotics",
+  "definition": "The IEEE Robotics and Automation Society (IEEE RAS) is the preeminent international professional and technical society dedicated to advancing the theory, design, practice, and application of robotics, automation, and related technologies. Founded in 1984 as a successor to the IEEE Robotics and Automation Council, it serves a global membership of engineers, researchers, and practitioners through flagship conferences including ICRA and IROS, peer-reviewed publications such as the IEEE Transactions on Robotics, and technical committee activities that coordinate standards development and community building across the full breadth of robotics disciplines.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:standards-body",
+      "label": "Standards Body"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:robotics-systems",
+        "label": "Robotics Systems"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-robotics",
+        "label": "Collaborative Robotics"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:humanoid-robotics",
+        "label": "Humanoid Robotics"
+      },
+      {
+        "id": "urn:ngm:class:swarm-robotics",
+        "label": "Swarm Robotics"
+      },
+      {
+        "id": "urn:ngm:class:surgical-robotics",
+        "label": "Surgical Robotics"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ieee-control-systems-society",
+        "label": "IEEE Control Systems Society"
+      },
+      {
+        "id": "urn:ngm:class:robotics-core-concepts",
+        "label": "RoboticsCoreConcepts"
+      },
+      {
+        "id": "urn:ngm:class:technical-standards",
+        "label": "Technical Standards"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bayes-filter",
+      "label": "Bayes Filter"
+    },
+    {
+      "slug": "kinematics-model",
+      "label": "Kinematics Model"
+    },
+    {
+      "slug": "robot-standard",
+      "label": "Robot Standard"
+    }
+  ]
+}

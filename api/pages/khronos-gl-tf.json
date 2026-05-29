@@ -1,0 +1,91 @@
+{
+  "id": "urn:visionflow:page:khronos-gl-tf",
+  "title": "Khronos glTF",
+  "slug": "khronos-gl-tf",
+  "public": true,
+  "classIri": "urn:ngm:class:khronos-gl-tf",
+  "domain": "graphics",
+  "definition": "Khronos glTF (GL Transmission Format) is an open royalty-free specification maintained by the Khronos Group that defines a JSON-based container format for 3D scenes and models, designed for efficient runtime delivery and rendering rather than authoring \u2014 storing geometry as compact binary buffer views, referencing PBR (Physically Based Rendering) material parameters, animation data, skeletal hierarchies, and scene graphs in a format that maps closely to GPU resource layouts, minimising parse and upload overhead. glTF 2.0 (2017) established the core specification and is widely regarded as the 'JPEG of 3D' due to its adoption across web browsers (via Three.js and Babylon.js), game engines (Unreal, Unity, Godot), AR/VR runtimes (OpenXR, WebXR), and digital twin platforms.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:gl-tf-3-d-file-format",
+      "label": "glTF (3D File Format)"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:asset-interoperability",
+        "label": "Asset Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:3-d-file-format",
+        "label": "3D File Format"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:virtual-production",
+        "label": "Virtual Production"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      },
+      {
+        "id": "urn:ngm:class:gltf-standard",
+        "label": "Gltf Standard"
+      },
+      {
+        "id": "urn:ngm:class:open-xr",
+        "label": "OpenXR"
+      },
+      {
+        "id": "urn:ngm:class:vulkan",
+        "label": "Vulkan"
+      },
+      {
+        "id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-in-games",
+      "label": "AI in Games"
+    },
+    {
+      "slug": "ar-frame",
+      "label": "AR Frame"
+    },
+    {
+      "slug": "digital-objects",
+      "label": "Digital Objects"
+    }
+  ]
+}

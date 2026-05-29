@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:cross-chain-asset-transfer",
+  "title": "Cross Chain Asset Transfer",
+  "slug": "cross-chain-asset-transfer",
+  "public": true,
+  "classIri": "urn:ngm:class:cross-chain-asset-transfer",
+  "domain": "blockchain",
+  "definition": "Cross-chain asset transfer is the process of moving a digital asset \u2014 whether a cryptocurrency, token, or non-fungible token \u2014 from one blockchain network to a distinct blockchain network while preserving the asset's economic properties and maintaining integrity guarantees across the transfer. The core challenge is that independent blockchains have no shared state; consequently, protocols must ensure that an asset locked or burned on the source chain is atomically minted or released on the destination chain, preventing double-spend. Implementations include hash time-locked contracts (HTLCs), trust-minimised bridge contracts with validator committees, and native inter-blockchain communication protocols.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cross-chain-interoperability",
+      "label": "Cross-Chain Interoperability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:de-fi",
+        "label": "DeFi"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:atomic-swap",
+        "label": "Atomic Swap"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cross-chain-messaging",
+        "label": "Cross-Chain Messaging"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-security",
+        "label": "Blockchain Security"
+      },
+      {
+        "id": "urn:ngm:class:sidechain",
+        "label": "Sidechain"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    },
+    {
+      "slug": "cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    },
+    {
+      "slug": "nft-wrapping",
+      "label": "NFT Wrapping"
+    }
+  ]
+}

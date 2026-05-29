@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:kv-cache",
+  "title": "KV Cache",
+  "slug": "kv-cache",
+  "public": true,
+  "classIri": "urn:ngm:class:kv-cache",
+  "domain": "ai",
+  "definition": "A KV Cache (Key-Value Cache) in transformer-based language models is a memory structure that stores the computed key and value projection tensors from the multi-head self-attention mechanism for all previously processed tokens in a sequence, allowing autoregressive decoding to reuse these intermediate results rather than recomputing them at every generation step, thereby reducing the per-token computational cost from O(N\u00b2) to O(N) in generation. Each decoder layer maintains its own KV cache, which grows linearly with sequence length and model width, making memory bandwidth and GPU HBM capacity the primary constraints on inference throughput for long-context models. KV cache management strategies \u2014 including paged allocation (PagedAttention), prefix sharing, quantisation, and off-loading \u2014 are critical determinants of serving efficiency and cost.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:inference-engine",
+      "label": "Inference Engine"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:speculative-decoding",
+        "label": "Speculative Decoding"
+      },
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:flash-attention",
+        "label": "Flash Attention"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:self-attention",
+        "label": "Self Attention"
+      },
+      {
+        "id": "urn:ngm:class:query-key-value",
+        "label": "Query Key Value"
+      },
+      {
+        "id": "urn:ngm:class:context-window",
+        "label": "Context Window"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "attention",
+      "label": "Attention"
+    },
+    {
+      "slug": "model-optimisation-and-performance",
+      "label": "Model Optimisation and Performance"
+    },
+    {
+      "slug": "transformers",
+      "label": "Transformers"
+    }
+  ]
+}

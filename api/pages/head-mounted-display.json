@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:head-mounted-display",
+  "title": "Head-Mounted Display",
+  "slug": "head-mounted-display",
+  "public": true,
+  "classIri": "urn:ngm:class:head-mounted-display",
+  "domain": "hardware",
+  "definition": "A head-mounted display (HMD) is a wearable visual output device worn on the head that positions one or more display panels or optical projectors in front of the user's eyes, delivering immersive visual content for virtual reality, augmented reality, or mixed reality experiences. HMDs incorporate optics to focus near-focal-plane displays at a comfortable viewing distance, tracking systems to measure head orientation and position, and increasingly passthrough cameras for environment sensing. The design space spans sealed VR devices that occlude the real world, optical see-through AR waveguide systems, and video passthrough mixed reality headsets.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:display-hardware",
+      "label": "Display Hardware"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      },
+      {
+        "id": "urn:ngm:class:foveated-rendering",
+        "label": "Foveated Rendering"
+      },
+      {
+        "id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:xr-headset",
+        "label": "XR Headset"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality-xr",
+        "label": "Extended Reality (XR)"
+      },
+      {
+        "id": "urn:ngm:class:display-technology",
+        "label": "Display Technology"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ar-frame",
+      "label": "AR Frame"
+    },
+    {
+      "slug": "extended-reality-xr",
+      "label": "Extended Reality (XR)"
+    },
+    {
+      "slug": "eye-tracking",
+      "label": "Eye Tracking"
+    },
+    {
+      "slug": "mixed-reality",
+      "label": "Mixed Reality"
+    },
+    {
+      "slug": "virtual-reality-vr",
+      "label": "Virtual Reality (VR)"
+    }
+  ]
+}

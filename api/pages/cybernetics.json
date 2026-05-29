@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:cybernetics",
+  "title": "Cybernetics",
+  "slug": "cybernetics",
+  "public": true,
+  "classIri": "urn:ngm:class:cybernetics",
+  "domain": "science",
+  "definition": "Cybernetics is the transdisciplinary science of regulatory systems, feedback mechanisms, and goal-directed behaviour in animals, machines, and organisations, founded by Norbert Wiener in 1948 to provide a unified framework for understanding how systems use information to maintain stability and achieve purposes across biological, mechanical, and social domains. It centres on the study of circular causal processes \u2014 feedback loops \u2014 through which a system compares its actual state against a desired state and acts to reduce the discrepancy, extending naturally to concepts of information, communication, control, and self-organisation. Second-order cybernetics extends this to include the observer as a participant in the system being observed, influencing systems theory, cognitive science, constructivism, and AI.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:control-theory",
+      "label": "Control Theory"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:adaptive-control",
+        "label": "Adaptive Control"
+      },
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "id": "urn:ngm:class:brain-computer-interfaces",
+        "label": "Brain Computer Interfaces"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      },
+      {
+        "id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      },
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      },
+      {
+        "id": "urn:ngm:class:emergence",
+        "label": "Emergence"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "slug": "embodied-minds",
+      "label": "Embodied Minds"
+    },
+    {
+      "slug": "emergence",
+      "label": "Emergence"
+    },
+    {
+      "slug": "feedback-loop",
+      "label": "Feedback Loop"
+    }
+  ]
+}

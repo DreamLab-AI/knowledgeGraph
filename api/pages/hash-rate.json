@@ -1,0 +1,101 @@
+{
+  "id": "urn:visionflow:page:hash-rate",
+  "title": "Hash Rate",
+  "slug": "hash-rate",
+  "public": true,
+  "classIri": "urn:ngm:class:hash-rate",
+  "domain": "blockchain",
+  "definition": "Hash rate is the aggregate computational throughput of a proof-of-work blockchain network, measured as the number of hash function evaluations performed per unit of time across all participating mining nodes. It serves as the primary quantitative indicator of a network's security: a higher hash rate means an attacker must control and operate more hardware to execute a 51% attack, making double-spend attacks proportionally more expensive. Hash rate is typically expressed in hashes per second (H/s) with SI prefixes (kH/s, MH/s, GH/s, TH/s, PH/s, EH/s) and fluctuates with the entry or exit of miners, hardware efficiency improvements, and changes in mining profitability.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:proof-of-work",
+      "label": "Proof Of Work"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:compute-resources",
+        "label": "Compute Resources"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:network-hash-rate",
+        "label": "Network Hash Rate"
+      },
+      {
+        "id": "urn:ngm:class:difficulty",
+        "label": "Difficulty"
+      },
+      {
+        "id": "urn:ngm:class:difficulty-adjustment",
+        "label": "Difficulty Adjustment"
+      },
+      {
+        "id": "urn:ngm:class:mining",
+        "label": "Mining"
+      },
+      {
+        "id": "urn:ngm:class:mining-pool",
+        "label": "Mining Pool"
+      },
+      {
+        "id": "urn:ngm:class:51-attack",
+        "label": "51% Attack"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-mining",
+        "label": "Bitcoin Mining"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "51-attack",
+      "label": "51% Attack"
+    },
+    {
+      "slug": "51-attack",
+      "label": "51% Attack"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "bitcoin-environmental-issues",
+      "label": "Bitcoin Environmental Issues"
+    },
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "blockchain-energy-consumption",
+      "label": "Blockchain Energy Consumption"
+    }
+  ]
+}

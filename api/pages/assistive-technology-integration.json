@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:assistive-technology-integration",
+  "title": "Assistive Technology Integration",
+  "slug": "assistive-technology-integration",
+  "public": true,
+  "classIri": "urn:ngm:class:assistive-technology-integration",
+  "domain": "ai",
+  "definition": "Assistive Technology Integration is the practice of embedding tools, software, and hardware designed to support people with disabilities into digital systems, applications, and physical environments so that those individuals can access and interact with technology equitably. It encompasses screen readers, alternative input devices, augmentative communication systems, and adaptive interfaces, requiring compliance with accessibility standards and universal design principles. Effective integration ensures that assistive technologies interoperate seamlessly with underlying platforms rather than operating as bolt-on afterthoughts. The discipline spans hardware-software co-design, API compatibility, and user-centred testing with disabled communities.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:accessibility",
+      "label": "Accessibility"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:accessible-experience",
+        "label": "Accessible Experience"
+      },
+      {
+        "id": "urn:ngm:class:inclusive-xr-experience",
+        "label": "Inclusive Xr Experience"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      },
+      {
+        "id": "urn:ngm:class:gesture-recognition",
+        "label": "Gesture Recognition"
+      },
+      {
+        "id": "urn:ngm:class:accessibility-audit-tool",
+        "label": "Accessibility Audit Tool"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:universal-design",
+        "label": "Universal Design"
+      },
+      {
+        "id": "urn:ngm:class:accessibility-standard",
+        "label": "Accessibility Standard"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "accessibility-standards",
+      "label": "Accessibility Standards"
+    },
+    {
+      "slug": "accessible-design",
+      "label": "Accessible Design"
+    },
+    {
+      "slug": "xr-accessibility-guideline",
+      "label": "XR Accessibility Guideline"
+    }
+  ]
+}

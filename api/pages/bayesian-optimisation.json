@@ -1,0 +1,83 @@
+{
+  "id": "urn:visionflow:page:bayesian-optimisation",
+  "title": "Bayesian Optimisation",
+  "slug": "bayesian-optimisation",
+  "public": true,
+  "classIri": "urn:ngm:class:bayesian-optimisation",
+  "domain": "ai",
+  "definition": "Bayesian Optimisation is a sequential, sample-efficient strategy for optimising expensive black-box objective functions by building a probabilistic surrogate model \u2014 most commonly a Gaussian process \u2014 over the function's input space, then using an acquisition function to decide which point to evaluate next by trading off exploration of uncertain regions against exploitation of known optima. Unlike grid search or random search, it accumulates knowledge about the objective between evaluations, making it particularly valuable when each evaluation is computationally or financially costly, such as neural architecture search, hyperparameter tuning, and laboratory experiment design. The method produces a posterior distribution over the objective that quantifies uncertainty and guides efficient convergence.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:optimisation",
+      "label": "Optimisation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:neural-architecture-search",
+        "label": "Neural Architecture Search"
+      },
+      {
+        "id": "urn:ngm:class:auto-ml",
+        "label": "AutoML"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:machine-learning-model",
+        "label": "Machine Learning Model"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:acquisition-function",
+        "label": "Acquisition Function"
+      },
+      {
+        "id": "urn:ngm:class:hyperparameter-tuning",
+        "label": "Hyperparameter Tuning"
+      },
+      {
+        "id": "urn:ngm:class:optimization-algorithm",
+        "label": "Optimization Algorithm"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "auto-ml",
+      "label": "AutoML"
+    },
+    {
+      "slug": "probabilistic-model",
+      "label": "Probabilistic Model"
+    },
+    {
+      "slug": "stochastic-process",
+      "label": "Stochastic Process"
+    }
+  ]
+}

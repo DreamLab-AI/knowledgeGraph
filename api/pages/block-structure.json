@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:block-structure",
+  "title": "Block Structure",
+  "slug": "block-structure",
+  "public": true,
+  "classIri": "urn:ngm:class:block-structure",
+  "domain": "blockchain",
+  "definition": "Block structure is the internal data layout of a block in a blockchain or distributed ledger, specifying the fields, encoding formats, and cryptographic commitments that constitute a valid unit of the chain. A block consists of a header containing metadata \u2014 including the parent block hash, timestamp, nonce, and Merkle root of the transaction set \u2014 and a body containing the ordered list of transactions or state transitions. The specific fields, size limits, and serialisation rules of the block structure are defined by the network's consensus protocol and directly govern the chain's security properties, throughput, and upgrade path.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:block",
+      "label": "Block"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:block-header",
+        "label": "Block Header"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:ngm:class:merkle-root",
+        "label": "Merkle Root"
+      },
+      {
+        "id": "urn:ngm:class:nonce",
+        "label": "Nonce"
+      },
+      {
+        "id": "urn:ngm:class:transaction",
+        "label": "Transaction"
+      }
+    ],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:block-size",
+        "label": "Block Size"
+      },
+      {
+        "id": "urn:ngm:class:block-time",
+        "label": "Block Time"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-technical-overview",
+      "label": "Bitcoin Technical Overview"
+    },
+    {
+      "slug": "blockchain-protocol",
+      "label": "Blockchain Protocol"
+    },
+    {
+      "slug": "distributed-ledger-technology-dlt",
+      "label": "Distributed Ledger Technology (DLT)"
+    }
+  ]
+}

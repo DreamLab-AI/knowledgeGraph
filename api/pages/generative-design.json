@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:generative-design",
+  "title": "Generative Design",
+  "slug": "generative-design",
+  "public": true,
+  "classIri": "urn:ngm:class:generative-design",
+  "domain": "ai",
+  "definition": "Generative Design is a computational design methodology in which algorithms autonomously explore a defined design space\u2014bounded by performance constraints, manufacturing requirements, and material properties\u2014to generate and evaluate large numbers of design candidates, surfacing options that meet objectives a human designer specifies but did not hand-craft. Implemented through topology optimisation, evolutionary algorithms, and increasingly through deep generative models, it produces geometrically complex structures\u2014often resembling organic forms\u2014that achieve material efficiency or performance targets unattainable through conventional manual design. The output is typically a ranked set of design alternatives that engineers evaluate and refine.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:parametric-modeling",
+      "label": "Parametric Modeling"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:smart-manufacturing",
+        "label": "Smart Manufacturing"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:deep-generative-model",
+        "label": "Deep Generative Model"
+      },
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:generative-design-tool",
+        "label": "Generative Design Tool"
+      },
+      {
+        "id": "urn:ngm:class:parametric",
+        "label": "Parametric"
+      },
+      {
+        "id": "urn:ngm:class:optimization-algorithm",
+        "label": "Optimization Algorithm"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "digital-fabrication",
+      "label": "Digital Fabrication"
+    },
+    {
+      "slug": "fashion",
+      "label": "Fashion"
+    },
+    {
+      "slug": "parametric-modeling",
+      "label": "Parametric Modeling"
+    },
+    {
+      "slug": "product-design",
+      "label": "Product Design"
+    },
+    {
+      "slug": "soft-robotics",
+      "label": "Soft Robotics"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "id": "urn:visionflow:page:erc-4337",
+  "title": "ERC-4337",
+  "slug": "erc-4337",
+  "public": true,
+  "classIri": "urn:ngm:class:erc-4337",
+  "domain": "blockchain",
+  "definition": "ERC-4337 is an Ethereum Request for Comment specifying an account abstraction standard that enables smart contract accounts to function as first-class transaction originators without requiring changes to the Ethereum consensus protocol. It introduces a separate transaction processing pipeline \u2014 the user operation mempool \u2014 in which bundlers aggregate user operations (UserOps), simulate them for validity, and submit them as bundled transactions to the EntryPoint smart contract, which validates and executes them on behalf of the respective smart contract wallets. Paymasters, a complementary component, allow third parties to sponsor gas fees, enabling gasless transactions and alternative fee payment tokens.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:account-abstraction",
+      "label": "Account Abstraction"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:wallet",
+        "label": "Wallet"
+      },
+      {
+        "id": "urn:ngm:class:multi-signature-wallet",
+        "label": "Multi-Signature Wallet"
+      },
+      {
+        "id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:gas",
+        "label": "Gas"
+      },
+      {
+        "id": "urn:ngm:class:evm",
+        "label": "EVM"
+      },
+      {
+        "id": "urn:ngm:class:gas-optimization",
+        "label": "Gas Optimization"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:transaction-standard",
+        "label": "Transaction Standard"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract-execution",
+        "label": "Smart Contract Execution"
+      },
+      {
+        "id": "urn:ngm:individual:ethereum",
+        "label": "Ethereum"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "account-abstraction",
+      "label": "Account Abstraction"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "money",
+      "label": "Money"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "web3",
+      "label": "Web3"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

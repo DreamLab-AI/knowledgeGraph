@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:finality-gadget",
+  "title": "Finality Gadget",
+  "slug": "finality-gadget",
+  "public": true,
+  "classIri": "urn:ngm:class:finality-gadget",
+  "domain": "blockchain",
+  "definition": "A Finality Gadget is a protocol component layered onto a block-producing (typically probabilistically-final) blockchain to provide periodic deterministic finality for checkpointed epochs, operating as a BFT overlay that requires a supermajority of validator stake to attest to a canonical chain prefix before that prefix is considered irreversible. The archetypal finality gadget is Casper the Friendly Finality Gadget (Casper FFG), which Ethereum uses in its Gasper consensus construction alongside LMD-GHOST fork-choice to combine liveness (blocks always added) with periodic safety (epochs finalised every ~12.8 minutes). Finality gadgets decouple the latency-optimised block-production layer from the safety-optimised finality layer, allowing chains to maintain high throughput while providing applications with a provable point after which reorganisation is cryptoeconomically infeasible.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:consensus-mechanism",
+      "label": "Consensus Mechanism"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:transaction-finality",
+        "label": "Transaction Finality"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-security",
+        "label": "Blockchain Security"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:validator-set",
+        "label": "Validator Set"
+      },
+      {
+        "id": "urn:ngm:class:validator-node",
+        "label": "Validator Node"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-finality",
+        "label": "Probabilistic Finality"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:finality",
+        "label": "Finality"
+      },
+      {
+        "id": "urn:ngm:class:deterministic-finality",
+        "label": "Deterministic Finality"
+      },
+      {
+        "id": "urn:ngm:class:gasper-consensus",
+        "label": "Gasper Consensus"
+      },
+      {
+        "id": "urn:ngm:class:checkpoints",
+        "label": "Checkpoints"
+      },
+      {
+        "id": "urn:ngm:class:epoch",
+        "label": "Epoch"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "byzantine-fault-tolerance",
+      "label": "Byzantine Fault Tolerance"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "sustainable-consensus",
+      "label": "Sustainable Consensus"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:decentralised-decision-making",
+  "title": "Decentralised Decision-Making",
+  "slug": "decentralised-decision-making",
+  "public": true,
+  "classIri": "urn:ngm:class:decentralised-decision-making",
+  "domain": "governance",
+  "definition": "Decentralised Decision-Making is a governance paradigm in which authority to make binding choices is distributed across multiple autonomous actors \u2014 individuals, nodes, or smart contracts \u2014 rather than concentrated in a single hierarchical centre, typically relying on voting mechanisms, consensus protocols, or market-based coordination to aggregate preferences and resolve conflicts. In blockchain and DAO contexts, decentralised decision-making is operationalised through on-chain proposal-and-vote cycles, token-weighted or quadratic voting, and cryptographically enforced execution of outcomes via smart contracts. The paradigm spans organisational theory, political science, distributed systems, and mechanism design, with implementations ranging from holocratic corporations to fully autonomous protocol governance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:decentralized-governance",
+      "label": "Decentralized Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-governance",
+        "label": "On-chain Governance"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:snapshot-voting",
+        "label": "Snapshot Voting"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:dao",
+        "label": "DAO"
+      },
+      {
+        "id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:liquid-democracy",
+        "label": "Liquid Democracy"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "dao-governance",
+      "label": "DAO Governance"
+    },
+    {
+      "slug": "governance-architecture",
+      "label": "Governance Architecture"
+    },
+    {
+      "slug": "platform-governance",
+      "label": "Platform Governance"
+    }
+  ]
+}

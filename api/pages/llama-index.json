@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:llama-index",
+  "title": "LlamaIndex",
+  "slug": "llama-index",
+  "public": true,
+  "classIri": "urn:ngm:class:llama-index",
+  "domain": "ai",
+  "definition": "LlamaIndex (formerly GPT Index) is an open-source data framework and Python library that provides the abstractions and tooling needed to connect large language models with external data sources through structured indexing, retrieval, and query pipelines, primarily enabling production-grade retrieval-augmented generation (RAG) applications. It handles the full pipeline from document ingestion and chunking, through embedding and vector storage, to query decomposition, retrieval, reranking, and response synthesis, providing high-level abstractions over underlying LLMs, embedding models, and vector databases. LlamaIndex is positioned as the data orchestration complement to LangChain's agent orchestration focus, with particular strength in structured data retrieval and multi-document reasoning.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:agent-frameworks",
+      "label": "Agent Frameworks"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph-construction",
+        "label": "Knowledge Graph Construction"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:embeddings",
+        "label": "Embeddings"
+      },
+      {
+        "id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:lang-chain",
+        "label": "LangChain"
+      },
+      {
+        "id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "adoption-of-convergent-technologies",
+      "label": "Adoption of Convergent Technologies"
+    },
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "function-calling",
+      "label": "Function Calling"
+    },
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "retrieval-augmented-generation-rag",
+      "label": "Retrieval Augmented Generation - RAG"
+    }
+  ]
+}
