@@ -131,7 +131,7 @@ public:: true
       "label": "Navigation and Planning"
     },
     {
-      "@id": "urn:ngm:class:rb-1016-path-planning",
+      "@id": "urn:ngm:class:path-planning",
       "label": "RB-1016-path-planning"
     },
     {

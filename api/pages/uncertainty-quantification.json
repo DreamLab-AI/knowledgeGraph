@@ -1,0 +1,121 @@
+{
+  "id": "urn:visionflow:page:uncertainty-quantification",
+  "title": "Uncertainty Quantification",
+  "slug": "uncertainty-quantification",
+  "public": true,
+  "classIri": "urn:ngm:class:uncertainty-quantification",
+  "domain": "ai",
+  "definition": "Uncertainty Quantification (UQ) is a discipline concerned with characterising, propagating, and communicating the uncertainties inherent in computational models, predictions, and measurements. It distinguishes between aleatoric uncertainty (irreducible randomness in the data or system) and epistemic uncertainty (reducible uncertainty arising from limited knowledge or data), providing principled methods \u2014 including Bayesian inference, Monte Carlo sampling, conformal prediction, and ensemble methods \u2014 for producing calibrated probability estimates rather than point predictions. UQ is foundational to trustworthy AI, safety-critical systems engineering, and scientific computing.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:probabilistic-model",
+      "label": "Probabilistic Model"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      },
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:model-robustness",
+        "label": "Model Robustness"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:adversarial-robustness",
+        "label": "Adversarial Robustness"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:calibration",
+        "label": "Calibration"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:interpretability",
+        "label": "Interpretability"
+      },
+      {
+        "id": "urn:ngm:class:model-evaluation-results",
+        "label": "Model Evaluation Results"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:monte-carlo-methods",
+        "label": "Monte Carlo Methods"
+      },
+      {
+        "id": "urn:ngm:class:ensemble-methods",
+        "label": "Ensemble Methods"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "active-learning",
+      "label": "Active Learning"
+    },
+    {
+      "slug": "bayes-filter",
+      "label": "Bayes Filter"
+    },
+    {
+      "slug": "medical-ai",
+      "label": "Medical AI"
+    },
+    {
+      "slug": "perception-system",
+      "label": "Perception System"
+    },
+    {
+      "slug": "probabilistic-model",
+      "label": "Probabilistic Model"
+    },
+    {
+      "slug": "sampling",
+      "label": "Sampling"
+    },
+    {
+      "slug": "stochastic-process",
+      "label": "Stochastic Process"
+    }
+  ]
+}

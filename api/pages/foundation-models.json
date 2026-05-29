@@ -1,0 +1,218 @@
+{
+  "id": "urn:visionflow:page:foundation-models",
+  "title": "Foundation Models",
+  "slug": "foundation-models",
+  "public": true,
+  "classIri": "urn:ngm:individual:foundation-models",
+  "domain": "ai",
+  "definition": "Foundation models are large-scale neural networks trained on broad, diverse datasets via self-supervised learning that acquire general-purpose representations transferable to a wide range of downstream tasks. They are characterised by massive parameter counts, emergent capabilities not explicitly trained for, and the ability to be fine-tuned or prompted for specialised applications. Prominent examples include GPT-4, BERT, CLIP, and Stable Diffusion, spanning language, vision, and multimodal domains. Their scale and generality make them qualitatively distinct from narrow task-specific models.",
+  "subClassOf": [],
+  "entityType": "Individual",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai",
+        "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "id": "urn:ngm:class:video-generation",
+        "label": "Video Generation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:parameter-count",
+        "label": "Parameter Count"
+      },
+      {
+        "id": "urn:ngm:class:scaling-laws",
+        "label": "Scaling Laws"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-risks",
+      "label": "AI Risks"
+    },
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "bio-terror",
+      "label": "Bio Terror"
+    },
+    {
+      "slug": "checkpoints",
+      "label": "Checkpoints"
+    },
+    {
+      "slug": "competition-in-ai",
+      "label": "Competition in AI"
+    },
+    {
+      "slug": "convergence",
+      "label": "Convergence"
+    },
+    {
+      "slug": "cortex-agent",
+      "label": "Cortex Agent"
+    },
+    {
+      "slug": "death-of-the-internet",
+      "label": "Death of the Internet"
+    },
+    {
+      "slug": "gpts-and-custom-assistants",
+      "label": "GPTs and Custom Assistants"
+    },
+    {
+      "slug": "ground-robot",
+      "label": "Ground Robot"
+    },
+    {
+      "slug": "hardware-and-edge",
+      "label": "Hardware and Edge"
+    },
+    {
+      "slug": "hyper-personalisation",
+      "label": "Hyper personalisation"
+    },
+    {
+      "slug": "image-segmentation",
+      "label": "Image Segmentation"
+    },
+    {
+      "slug": "imitation-learning",
+      "label": "Imitation Learning"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "learning-algorithm",
+      "label": "Learning Algorithm"
+    },
+    {
+      "slug": "ms-phi-models",
+      "label": "MS Phi models"
+    },
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    },
+    {
+      "slug": "music-and-audio",
+      "label": "Music and Audio"
+    },
+    {
+      "slug": "navigation",
+      "label": "Navigation"
+    },
+    {
+      "slug": "open-generative-ai-tools",
+      "label": "Open Generative AI tools"
+    },
+    {
+      "slug": "open-webui-and-pipelines",
+      "label": "Open Webui and Pipelines"
+    },
+    {
+      "slug": "perception-system",
+      "label": "Perception System"
+    },
+    {
+      "slug": "proprietary-ai-video",
+      "label": "Proprietary AI Video"
+    },
+    {
+      "slug": "proprietary-large-language-models",
+      "label": "Proprietary Large Language Models"
+    },
+    {
+      "slug": "retrieval-augmented-generation-rag",
+      "label": "Retrieval Augmented Generation - RAG"
+    },
+    {
+      "slug": "sampling",
+      "label": "Sampling"
+    },
+    {
+      "slug": "singularity",
+      "label": "Singularity"
+    },
+    {
+      "slug": "topological-map",
+      "label": "Topological Map"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    },
+    {
+      "slug": "training-and-fine-tuning",
+      "label": "Training and fine tuning"
+    },
+    {
+      "slug": "transformers",
+      "label": "Transformers"
+    },
+    {
+      "slug": "trust-and-safety",
+      "label": "Trust and Safety"
+    }
+  ]
+}

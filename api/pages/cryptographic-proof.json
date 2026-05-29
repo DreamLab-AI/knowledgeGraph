@@ -1,0 +1,127 @@
+{
+  "id": "urn:visionflow:page:cryptographic-proof",
+  "title": "Cryptographic Proof",
+  "slug": "cryptographic-proof",
+  "public": true,
+  "classIri": "urn:ngm:class:cryptographic-proof",
+  "domain": "blockchain",
+  "definition": "A cryptographic proof is a mathematical construction that enables one party to demonstrate knowledge of, or the truth of, a statement to another party in a verifiable and tamper-evident manner, without necessarily revealing the underlying information. Cryptographic proofs underpin the security and integrity guarantees of blockchain systems, digital signatures, and privacy-preserving protocols by providing computationally binding evidence that is infeasible to forge. The field encompasses classical constructions such as hash-based proofs and digital signatures, as well as advanced techniques including zero-knowledge proofs and succinct non-interactive arguments of knowledge.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:proof-based-consensus",
+        "label": "Proof-Based Consensus"
+      },
+      {
+        "id": "urn:ngm:class:privacy-preserving-blockchain",
+        "label": "Privacy-Preserving Blockchain"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:digital-certificate",
+        "label": "Digital Certificate"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:blockchain-compliance",
+        "label": "Blockchain Compliance"
+      },
+      {
+        "id": "urn:ngm:class:verification",
+        "label": "Verification"
+      },
+      {
+        "id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "humanity-attestation",
+      "label": "Humanity Attestation"
+    },
+    {
+      "slug": "layer2-scaling",
+      "label": "Layer2Scaling"
+    },
+    {
+      "slug": "layer2-scaling",
+      "label": "Layer2Scaling"
+    },
+    {
+      "slug": "reputation-system",
+      "label": "Reputation System"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "trust-framework",
+      "label": "Trust Framework"
+    },
+    {
+      "slug": "verifiable-credential-vc",
+      "label": "Verifiable Credential (VC)"
+    },
+    {
+      "slug": "verifiable-credentials",
+      "label": "Verifiable Credentials"
+    },
+    {
+      "slug": "zero-knowledge",
+      "label": "Zero Knowledge"
+    }
+  ]
+}

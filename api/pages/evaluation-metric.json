@@ -1,0 +1,114 @@
+{
+  "id": "urn:visionflow:page:evaluation-metric",
+  "title": "Evaluation Metric",
+  "slug": "evaluation-metric",
+  "public": true,
+  "classIri": "urn:ngm:class:evaluation-metric",
+  "domain": "ai",
+  "definition": "An evaluation metric is a quantitative or qualitative measure used to assess the performance, quality, or behaviour of a machine learning model, algorithm, or system against a defined objective. Metrics are computed over held-out test data or through human judgment protocols and provide the empirical basis for model comparison, selection, and deployment decisions. The choice of metric directly shapes what properties a model optimises for during training and what trade-offs are made between competing objectives such as accuracy, fairness, and calibration.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:performance-metrics",
+      "label": "Performance Metrics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:accuracy",
+        "label": "Accuracy"
+      },
+      {
+        "id": "urn:ngm:class:precision",
+        "label": "Precision"
+      },
+      {
+        "id": "urn:ngm:class:recall",
+        "label": "Recall"
+      },
+      {
+        "id": "urn:ngm:class:f1-score",
+        "label": "F1 Score"
+      },
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      }
+    ],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:model-performance",
+        "label": "Model Performance"
+      },
+      {
+        "id": "urn:ngm:class:benchmark-standard",
+        "label": "Benchmark Standard"
+      },
+      {
+        "id": "urn:ngm:class:model-evaluation-results",
+        "label": "Model Evaluation Results"
+      },
+      {
+        "id": "urn:ngm:class:performance-benchmarks",
+        "label": "Performance Benchmarks"
+      },
+      {
+        "id": "urn:ngm:class:fairness-metrics",
+        "label": "Fairness Metrics"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "active-learning",
+      "label": "Active Learning"
+    },
+    {
+      "slug": "auto-ml",
+      "label": "AutoML"
+    },
+    {
+      "slug": "learning-algorithm",
+      "label": "Learning Algorithm"
+    },
+    {
+      "slug": "time-series-forecasting",
+      "label": "Time Series Forecasting"
+    }
+  ]
+}

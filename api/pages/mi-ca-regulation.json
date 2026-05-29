@@ -1,0 +1,128 @@
+{
+  "id": "urn:visionflow:page:mi-ca-regulation",
+  "title": "MiCA Regulation",
+  "slug": "mi-ca-regulation",
+  "public": true,
+  "classIri": "urn:ngm:class:mi-ca-regulation",
+  "domain": "governance",
+  "definition": "The Markets in Crypto-Assets (MiCA) Regulation (EU 2023/1114) is the European Union's comprehensive legislative framework governing the issuance, offering, and trading of crypto-assets, including asset-referenced tokens, e-money tokens, and utility tokens. Adopted in June 2023 and phasing in through December 2024, MiCA establishes authorisation requirements for crypto-asset service providers (CASPs), disclosure obligations analogous to prospectus rules, and prudential standards for stablecoin issuers, creating the world's first complete statutory crypto-asset regime across a major economic bloc.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:financial-regulation",
+      "label": "Financial Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-asset-market",
+        "label": "Digital Asset Market"
+      },
+      {
+        "id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:digital-regulation",
+        "label": "Digital Regulation"
+      },
+      {
+        "id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:european-commission",
+        "label": "European Commission"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin-regulation",
+        "label": "Stablecoin Regulation"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-compliance",
+        "label": "Blockchain Compliance"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-analytics",
+        "label": "Blockchain Analytics"
+      },
+      {
+        "id": "urn:ngm:individual:ethereum",
+        "label": "Ethereum"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "dao-legal-structures",
+      "label": "DAO Legal Structures"
+    },
+    {
+      "slug": "decentralized-finance-de-fi",
+      "label": "Decentralized Finance (DeFi)"
+    },
+    {
+      "slug": "liquidity-provision",
+      "label": "Liquidity Provision"
+    },
+    {
+      "slug": "stable-coins",
+      "label": "Stable Coins"
+    },
+    {
+      "slug": "travel-rule",
+      "label": "Travel Rule"
+    },
+    {
+      "slug": "treasury-management",
+      "label": "Treasury Management"
+    }
+  ]
+}

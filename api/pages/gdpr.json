@@ -1,0 +1,299 @@
+{
+  "id": "urn:visionflow:page:gdpr",
+  "title": "GDPR",
+  "slug": "gdpr",
+  "public": true,
+  "classIri": "urn:ngm:class:gdpr",
+  "domain": "governance",
+  "definition": "The General Data Protection Regulation (GDPR) is a comprehensive EU legal framework governing the collection, processing, and storage of personal data of individuals within the European Union and European Economic Area. It establishes rights for data subjects and obligations for organisations handling personal data, enforced by national supervisory authorities with significant financial penalties for non-compliance. GDPR represents the most influential data protection law globally, shaping privacy practice and inspiring similar legislation worldwide.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-protection-regulation",
+      "label": "Data Protection Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-minimisation",
+        "label": "Data Minimisation"
+      },
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy by Design"
+      },
+      {
+        "id": "urn:ngm:class:privacy-impact-assessment",
+        "label": "Privacy Impact Assessment"
+      },
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "slug": "ai-impact-assessment",
+      "label": "AI Impact Assessment"
+    },
+    {
+      "slug": "ai-monitoring",
+      "label": "AI Monitoring"
+    },
+    {
+      "slug": "ai-provider",
+      "label": "AI Provider"
+    },
+    {
+      "slug": "ai-risk",
+      "label": "AI Risk"
+    },
+    {
+      "slug": "ai-trustworthiness",
+      "label": "AI Trustworthiness"
+    },
+    {
+      "slug": "ai-user",
+      "label": "AI User"
+    },
+    {
+      "slug": "ai-companions",
+      "label": "AI companions"
+    },
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    },
+    {
+      "slug": "accountability",
+      "label": "Accountability"
+    },
+    {
+      "slug": "adoption-of-convergent-technologies",
+      "label": "Adoption of Convergent Technologies"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "asia-pacific-regulation",
+      "label": "Asia Pacific Regulation"
+    },
+    {
+      "slug": "backlash",
+      "label": "Backlash"
+    },
+    {
+      "slug": "blockchain-as-a-service",
+      "label": "Blockchain As A Service"
+    },
+    {
+      "slug": "cbdc-frameworks",
+      "label": "CBDC Frameworks"
+    },
+    {
+      "slug": "california-ai-bill",
+      "label": "California AI bill"
+    },
+    {
+      "slug": "call-centres",
+      "label": "Call Centres"
+    },
+    {
+      "slug": "circular-economy",
+      "label": "Circular Economy"
+    },
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "compliance-standards",
+      "label": "Compliance Standards"
+    },
+    {
+      "slug": "cross-border-compliance",
+      "label": "Cross Border Compliance"
+    },
+    {
+      "slug": "cross-border-data-transfer-rule",
+      "label": "Cross-Border Data Transfer Rule"
+    },
+    {
+      "slug": "cross-platform-compliance-hub",
+      "label": "Cross-Platform Compliance Hub"
+    },
+    {
+      "slug": "customs-trade-facilitation",
+      "label": "Customs Trade Facilitation"
+    },
+    {
+      "slug": "cyber-security-and-cryptography",
+      "label": "Cyber Security and Cryptography"
+    },
+    {
+      "slug": "data-annotation",
+      "label": "Data Annotation"
+    },
+    {
+      "slug": "data-protection",
+      "label": "Data Protection"
+    },
+    {
+      "slug": "death-of-the-internet",
+      "label": "Death of the Internet"
+    },
+    {
+      "slug": "decentralized-identifiers",
+      "label": "Decentralized Identifiers"
+    },
+    {
+      "slug": "digital-citizenship",
+      "label": "Digital Citizenship"
+    },
+    {
+      "slug": "digital-identity-wallet",
+      "label": "Digital Identity Wallet"
+    },
+    {
+      "slug": "digital-rights",
+      "label": "Digital Rights"
+    },
+    {
+      "slug": "digital-society-surveillance",
+      "label": "Digital Society Surveillance"
+    },
+    {
+      "slug": "digital-workplace-platform",
+      "label": "Digital Workplace Platform"
+    },
+    {
+      "slug": "etsi-domain-security-and-privacy",
+      "label": "ETSI Domain Security and Privacy"
+    },
+    {
+      "slug": "etsi-domain-data-management-ethics",
+      "label": "ETSI Domain: Data Management + Ethics"
+    },
+    {
+      "slug": "etsi-domain-ethics-and-law",
+      "label": "ETSI Domain: Ethics & Law"
+    },
+    {
+      "slug": "etsi-domain-governance-compliance",
+      "label": "ETSI_Domain_Governance_Compliance"
+    },
+    {
+      "slug": "etsi-domain-virtual-society",
+      "label": "ETSI_Domain_Virtual_Society"
+    },
+    {
+      "slug": "enterprise-smart-contracts",
+      "label": "Enterprise Smart Contracts"
+    },
+    {
+      "slug": "hyper-personalisation",
+      "label": "Hyper personalisation"
+    },
+    {
+      "slug": "licensing-requirements",
+      "label": "Licensing Requirements"
+    },
+    {
+      "slug": "meeting-ai-assistant",
+      "label": "Meeting AI Assistant"
+    },
+    {
+      "slug": "privacy-preserving-blockchain",
+      "label": "Privacy Preserving Blockchain"
+    },
+    {
+      "slug": "privacy-and-data-governance",
+      "label": "Privacy and Data Governance"
+    },
+    {
+      "slug": "private-blockchain",
+      "label": "Private Blockchain"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    },
+    {
+      "slug": "self-sovereign-identity",
+      "label": "Self Sovereign Identity"
+    },
+    {
+      "slug": "solid",
+      "label": "Solid"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "travel-rule",
+      "label": "Travel Rule"
+    },
+    {
+      "slug": "user-consent-token",
+      "label": "User Consent Token"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

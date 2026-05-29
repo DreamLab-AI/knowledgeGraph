@@ -724,7 +724,7 @@ public:: true
         "label": "Sustainable Bitcoin Protocol"
       },
       {
-        "@id": "urn:ngm:class:eu-mi-ca-regulation",
+        "@id": "urn:ngm:class:mi-ca-regulation",
         "label": "EU MiCA Regulation"
       }
     ]

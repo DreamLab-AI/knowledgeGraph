@@ -1,0 +1,235 @@
+{
+  "id": "urn:visionflow:page:chat-gpt",
+  "title": "ChatGPT",
+  "slug": "chat-gpt",
+  "public": true,
+  "classIri": "urn:ngm:individual:chat-gpt",
+  "domain": "ai",
+  "definition": "ChatGPT is a large language model-based conversational AI assistant developed by OpenAI, publicly released in November 2022 and built on successive GPT model families. It demonstrated that general-purpose instruction-following dialogue could be deployed at consumer scale, triggering rapid adoption across education, coding, and knowledge-work domains. Its interface popularised prompt-based interaction as the dominant paradigm for human\u2013AI collaboration.",
+  "subClassOf": [],
+  "entityType": "Individual",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      },
+      {
+        "id": "urn:ngm:class:ai-agents",
+        "label": "AI Agents"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:gpt",
+        "label": "GPT"
+      },
+      {
+        "id": "urn:ngm:class:open-ai",
+        "label": "OpenAI"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:individual:gemini",
+        "label": "Gemini"
+      },
+      {
+        "id": "urn:ngm:individual:anthropic-claude",
+        "label": "Anthropic Claude"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "id": "urn:ngm:class:pre-training",
+        "label": "Pre Training"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:individual:gemini",
+        "label": "Gemini"
+      },
+      {
+        "id": "urn:ngm:individual:anthropic-claude",
+        "label": "Anthropic Claude"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "ai-companies",
+      "label": "AI Companies"
+    },
+    {
+      "slug": "automated-podcasting",
+      "label": "Automated Podcasting"
+    },
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "chatbots",
+      "label": "Chatbots"
+    },
+    {
+      "slug": "co-training",
+      "label": "Co Training"
+    },
+    {
+      "slug": "coding-support",
+      "label": "Coding support"
+    },
+    {
+      "slug": "diagrams-as-code",
+      "label": "Diagrams as Code"
+    },
+    {
+      "slug": "economics",
+      "label": "Economics"
+    },
+    {
+      "slug": "energy-and-power",
+      "label": "Energy and Power"
+    },
+    {
+      "slug": "gpt-engineer",
+      "label": "GPT Engineer"
+    },
+    {
+      "slug": "gpts-and-custom-assistants",
+      "label": "GPTs and Custom Assistants"
+    },
+    {
+      "slug": "graph-neural-network",
+      "label": "Graph Neural Network"
+    },
+    {
+      "slug": "history-and-path-to-agi",
+      "label": "History and Path to AGI"
+    },
+    {
+      "slug": "jailbreaking",
+      "label": "Jailbreaking"
+    },
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "lo-ra-do-ra-etc",
+      "label": "LoRA DoRA etc"
+    },
+    {
+      "slug": "ms-phi-models",
+      "label": "MS Phi models"
+    },
+    {
+      "slug": "metaverse-ontology",
+      "label": "Metaverse Ontology"
+    },
+    {
+      "slug": "micropayments",
+      "label": "Micropayments"
+    },
+    {
+      "slug": "model-control-protocols-like-mcp",
+      "label": "Model Control Protocols like MCP"
+    },
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    },
+    {
+      "slug": "open-generative-ai-tools",
+      "label": "Open Generative AI tools"
+    },
+    {
+      "slug": "open-webui-and-pipelines",
+      "label": "Open Webui and Pipelines"
+    },
+    {
+      "slug": "pre-training",
+      "label": "Pre Training"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "slug": "proprietary-ai-video",
+      "label": "Proprietary AI Video"
+    },
+    {
+      "slug": "proprietary-large-language-models",
+      "label": "Proprietary Large Language Models"
+    },
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    },
+    {
+      "slug": "reasoning",
+      "label": "Reasoning"
+    },
+    {
+      "slug": "retrieval-augmented-generation-rag",
+      "label": "Retrieval Augmented Generation - RAG"
+    },
+    {
+      "slug": "text-generation",
+      "label": "Text Generation"
+    },
+    {
+      "slug": "training-and-fine-tuning",
+      "label": "Training and fine tuning"
+    },
+    {
+      "slug": "training-for-design-practitioners",
+      "label": "Training for Design Practitioners"
+    },
+    {
+      "slug": "trust-and-safety",
+      "label": "Trust and Safety"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    }
+  ]
+}

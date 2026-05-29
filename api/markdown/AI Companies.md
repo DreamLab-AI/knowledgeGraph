@@ -808,7 +808,7 @@ public:: true
         "label": "ISO IEC 42001"
       },
       {
-        "@id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "@id": "urn:ngm:class:nist-ai-rmf",
         "label": "NIST AI Risk Management Framework"
       },
       {

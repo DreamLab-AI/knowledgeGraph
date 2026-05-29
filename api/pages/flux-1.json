@@ -1,0 +1,132 @@
+{
+  "id": "urn:visionflow:page:flux-1",
+  "title": "Flux.1",
+  "slug": "flux-1",
+  "public": true,
+  "classIri": "urn:ngm:individual:flux-1",
+  "domain": "ai",
+  "definition": "Flux.1 is a family of open-weight text-to-image generative models developed by Black Forest Labs, founded by former Stability AI researchers including Robin Rombach, the co-creator of Latent Diffusion. Released in August 2024, Flux.1 employs a hybrid architecture combining multimodal and parallel diffusion transformer (DiT) blocks, achieving state-of-the-art image quality and prompt adherence that surpasses earlier diffusion models on benchmarks such as GenEval and T2I-CompBench. The family offers three variants \u2014 Flux.1 [pro], Flux.1 [dev], and Flux.1 [schnell] \u2014 spanning commercial API, open-weights research, and fast inference use cases respectively.",
+  "subClassOf": [],
+  "entityType": "Individual",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:inpainting",
+        "label": "Inpainting"
+      },
+      {
+        "id": "urn:ngm:class:open-source-ai",
+        "label": "Open-Source AI"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:individual:stable-diffusion",
+        "label": "Stable Diffusion"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:neural-network-architecture",
+        "label": "Neural Network Architecture"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:lo-ra-do-ra-etc",
+        "label": "LoRA DoRA etc"
+      },
+      {
+        "id": "urn:ngm:class:comfy-ui-workflows",
+        "label": "ComfyUI Workflows"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:text-to-image",
+        "label": "Text-to-Image"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-models",
+        "label": "Diffusion Models"
+      },
+      {
+        "id": "urn:ngm:class:latent-diffusion",
+        "label": "Latent Diffusion"
+      },
+      {
+        "id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "comfy-ui-client",
+      "label": "ComfyUI Client"
+    },
+    {
+      "slug": "comfy-ui-workflows",
+      "label": "ComfyUI Workflows"
+    },
+    {
+      "slug": "comfy-ui-for-fashion-and-brands",
+      "label": "comfy-ui-for-fashion-and-brands"
+    },
+    {
+      "slug": "control-net-and-similar-spatial-conditioning-systems",
+      "label": "ControlNet and Similar Spatial Conditioning Systems"
+    },
+    {
+      "slug": "fine-tuning",
+      "label": "Fine Tuning"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "kohya-dreambooth-and-similar",
+      "label": "KOHYA Dreambooth and similar"
+    },
+    {
+      "slug": "model-performance",
+      "label": "Model Performance"
+    },
+    {
+      "slug": "open-generative-ai-tools",
+      "label": "Open Generative AI tools"
+    },
+    {
+      "slug": "open-webui-and-pipelines",
+      "label": "Open Webui and Pipelines"
+    },
+    {
+      "slug": "proprietary-image-generation",
+      "label": "Proprietary Image Generation"
+    },
+    {
+      "slug": "text-summarisation",
+      "label": "Text Summarisation"
+    }
+  ]
+}

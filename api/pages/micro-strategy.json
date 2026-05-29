@@ -1,0 +1,151 @@
+{
+  "id": "urn:visionflow:page:micro-strategy",
+  "title": "MicroStrategy",
+  "slug": "micro-strategy",
+  "public": true,
+  "classIri": "urn:ngm:individual:micro-strategy",
+  "domain": "blockchain",
+  "definition": "MicroStrategy (rebranded Strategy in 2025) is a Nasdaq-listed business intelligence and analytics software company that became the first publicly traded corporation to adopt Bitcoin as its primary treasury reserve asset, initiating this strategy in August 2020 under executive chairman Michael Saylor. The company has since deployed multiple capital market instruments\u2014including convertible notes, equity offerings, and preferred stock\u2014to continuously acquire Bitcoin, accumulating over 500,000 BTC by early 2025 and creating a leveraged Bitcoin exposure vehicle accessible through public equity markets. MicroStrategy's approach established a corporate treasury model that has been studied and replicated by other public companies seeking Bitcoin exposure.",
+  "subClassOf": [],
+  "entityType": "Individual",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-market",
+        "label": "Digital Asset Market"
+      },
+      {
+        "id": "urn:ngm:class:technology-adoption",
+        "label": "Technology Adoption"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:bitcoin-etf",
+        "label": "Bitcoin ETF"
+      },
+      {
+        "id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:bitcoin-as-money",
+        "label": "Bitcoin As Money"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-standard",
+        "label": "Bitcoin Standard"
+      },
+      {
+        "id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:digital-transformation",
+        "label": "Digital Transformation"
+      },
+      {
+        "id": "urn:ngm:class:asset-management",
+        "label": "Asset Management"
+      },
+      {
+        "id": "urn:ngm:class:investment-management",
+        "label": "Investment Management"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:individual:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-etf",
+        "label": "Bitcoin ETF"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-value-proposition",
+        "label": "Bitcoin Value Proposition"
+      },
+      {
+        "id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
+      },
+      {
+        "id": "urn:ngm:class:financial-instruments",
+        "label": "Financial Instruments"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-as-money",
+      "label": "Bitcoin As Money"
+    },
+    {
+      "slug": "bitcoin-centralisation-risks",
+      "label": "Bitcoin Centralisation Risks"
+    },
+    {
+      "slug": "bitcoin-distribution",
+      "label": "Bitcoin Distribution"
+    },
+    {
+      "slug": "bitcoin-distribution",
+      "label": "Bitcoin Distribution"
+    },
+    {
+      "slug": "bitcoin-etf",
+      "label": "Bitcoin ETF"
+    },
+    {
+      "slug": "bitcoin-etf",
+      "label": "Bitcoin ETF"
+    },
+    {
+      "slug": "bitcoin-etf",
+      "label": "Bitcoin ETF"
+    },
+    {
+      "slug": "bitcoin-etf",
+      "label": "Bitcoin ETF"
+    },
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "bitcoin-value-proposition",
+      "label": "Bitcoin Value Proposition"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "treasury-management",
+      "label": "Treasury Management"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    }
+  ]
+}

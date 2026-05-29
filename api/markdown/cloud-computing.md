@@ -1,0 +1,16 @@
+- ### Definition
+  - Cloud computing delivers on-demand computing resources over the internet through provider-managed data centres, enabling organisations to scale compute, storage, and AI workloads without owning physical hardware.
+
+- ### Relationships
+  - Cloud computing is a subclass of [[Infrastructure]] and is the primary enabler of modern [[AI Infrastructure]] and [[MLOps]] pipelines. It relies on [[Network Infrastructure]] and is commonly orchestrated via [[Kubernetes]]. It supports [[Distributed Training]] of large models and scalable [[Inference]] serving. [[Cloud Platform]] offerings package cloud computing capabilities into managed service tiers. [[High Availability]] architectures and [[Distributed Computing]] principles are realised at scale through cloud deployments. [[Edge Computing]] extends the cloud boundary toward end devices.
+
+- ### Content
+  - Cloud computing emerged from the consolidation of large-scale data centre operations by hyperscalers (Amazon Web Services, Microsoft Azure, Google Cloud Platform) who exposed spare capacity as rentable compute units. The three canonical service models — Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS) — abstract progressively more of the underlying hardware stack, allowing teams to focus on application logic rather than rack management.
+
+  - For AI and machine learning workloads, cloud computing is particularly significant because training large neural networks requires ephemeral access to hundreds or thousands of GPUs or TPUs for hours to days. Purchasing this hardware outright is economically prohibitive for most organisations; renting it from a cloud provider and paying only for active usage dramatically lowers the barrier to experimentation and production deployment.
+
+  - Elasticity — the ability to provision resources in seconds and release them just as quickly — transforms how AI systems are engineered. Data pipelines can burst to large clusters during batch ingestion, training jobs can scale to thousands of accelerators, and inference endpoints auto-scale with traffic, then shrink to near-zero during quiet periods. This contrasts sharply with on-premises deployments where hardware must be provisioned to peak load even when idle.
+
+  - Cloud computing also provides a rich ecosystem of managed services: object stores for training data, managed databases, message queues, monitoring stacks, and identity management layers. MLOps tooling such as experiment tracking, feature stores, and model registries is increasingly delivered as cloud-native managed services, further simplifying the end-to-end lifecycle from raw data to a production inference endpoint.
+
+  - Security and data residency considerations constrain cloud adoption in regulated sectors (healthcare, finance, defence). Hybrid and multi-cloud architectures address these concerns by combining private data centres with public cloud burst capacity, requiring careful network segmentation, encryption in transit and at rest, and compliance attestation against frameworks such as ISO 27001 and SOC 2.

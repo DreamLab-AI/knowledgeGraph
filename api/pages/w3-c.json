@@ -1,0 +1,209 @@
+{
+  "id": "urn:visionflow:page:w3-c",
+  "title": "W3C",
+  "slug": "w3-c",
+  "public": true,
+  "classIri": "urn:ngm:class:w3-c",
+  "domain": "governance",
+  "definition": "The World Wide Web Consortium (W3C) is the principal international standards organisation for the World Wide Web, founded by Tim Berners-Lee in 1994 and operating through a global membership model to develop open, interoperable web standards. W3C produces technical specifications, guidelines, and software that define the core technologies of the web including HTML, CSS, SVG, XML, RDF, and the semantic web stack. Its standards process emphasises consensus, royalty-free licensing, and broad implementability across browsers and platforms.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:standards-body",
+      "label": "Standards Body"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:w3-c-did-core",
+        "label": "W3C DID Core"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credential-standard",
+        "label": "Verifiable Credential Standard"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      },
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      },
+      {
+        "id": "urn:ngm:class:json-ld",
+        "label": "JSON-LD"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web-standards",
+        "label": "Semantic Web Standards"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:decentralized-identity-did",
+        "label": "Decentralized Identity (DID)"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "id": "urn:ngm:class:web-technology",
+        "label": "Web Technology"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:web-standard",
+        "label": "Web Standard"
+      },
+      {
+        "id": "urn:ngm:class:web-standards",
+        "label": "Web Standards"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      },
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "3-d-asset",
+      "label": "3D Asset"
+    },
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    },
+    {
+      "slug": "accessibility-standards",
+      "label": "Accessibility Standards"
+    },
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "authentication-standards",
+      "label": "Authentication Standards"
+    },
+    {
+      "slug": "compliance-standards",
+      "label": "Compliance Standards"
+    },
+    {
+      "slug": "death-of-the-internet",
+      "label": "Death of the Internet"
+    },
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    },
+    {
+      "slug": "decentralized-identifiers",
+      "label": "Decentralized Identifiers"
+    },
+    {
+      "slug": "diagrams-as-code",
+      "label": "Diagrams as Code"
+    },
+    {
+      "slug": "digital-identity-wallet",
+      "label": "Digital Identity Wallet"
+    },
+    {
+      "slug": "digital-ontology-repository",
+      "label": "Digital Ontology Repository"
+    },
+    {
+      "slug": "distributed-identity",
+      "label": "Distributed Identity"
+    },
+    {
+      "slug": "graphics-api",
+      "label": "Graphics API"
+    },
+    {
+      "slug": "hyperledger-indy",
+      "label": "Hyperledger Indy"
+    },
+    {
+      "slug": "identity-management-system",
+      "label": "Identity Management System"
+    },
+    {
+      "slug": "identity-provider",
+      "label": "Identity Provider"
+    },
+    {
+      "slug": "proprietary-video",
+      "label": "Proprietary Video"
+    },
+    {
+      "slug": "sparql-examples",
+      "label": "SPARQL EXAMPLES"
+    },
+    {
+      "slug": "self-sovereign-identity",
+      "label": "Self Sovereign Identity"
+    },
+    {
+      "slug": "solid",
+      "label": "Solid"
+    },
+    {
+      "slug": "trust-framework",
+      "label": "Trust Framework"
+    },
+    {
+      "slug": "verifiable-credentials",
+      "label": "Verifiable Credentials"
+    },
+    {
+      "slug": "web3",
+      "label": "Web3"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

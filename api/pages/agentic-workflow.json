@@ -1,0 +1,111 @@
+{
+  "id": "urn:visionflow:page:agentic-workflow",
+  "title": "Agentic Workflow",
+  "slug": "agentic-workflow",
+  "public": true,
+  "classIri": "urn:ngm:class:agentic-workflow",
+  "domain": "ai",
+  "definition": "An agentic workflow is a structured pattern of autonomous agent behaviour in which an AI model iteratively plans, executes tool calls, observes results, and revises its approach until a goal is achieved or a stopping condition is met. Unlike single-pass inference, agentic workflows employ loops, branching logic, memory, and multi-step reasoning that may span seconds to hours and involve multiple specialised sub-agents. The pattern emerged from large language model capabilities (tool use, function calling, long context) and underlies systems such as AutoGPT, LangGraph, Claude's computer use, and OpenAI's Agents SDK.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:workflow-automation",
+      "label": "Workflow Automation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:context-window",
+        "label": "Context Window"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:task-planning",
+        "label": "Task Planning"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      },
+      {
+        "id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      },
+      {
+        "id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:chain-of-thought",
+        "label": "Chain of Thought"
+      },
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      },
+      {
+        "id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:orchestration",
+        "label": "Orchestration"
+      },
+      {
+        "id": "urn:ngm:class:planning-and-scheduling",
+        "label": "Planning and Scheduling"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "cli-multi-agent-systems",
+      "label": "CLI Multi-Agent Systems"
+    },
+    {
+      "slug": "computer-use-and-browser-agents",
+      "label": "Computer Use and Browser Agents"
+    }
+  ]
+}

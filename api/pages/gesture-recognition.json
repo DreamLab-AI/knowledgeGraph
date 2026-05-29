@@ -1,0 +1,151 @@
+{
+  "id": "urn:visionflow:page:gesture-recognition",
+  "title": "Gesture Recognition",
+  "slug": "gesture-recognition",
+  "public": true,
+  "classIri": "urn:ngm:class:gesture-recognition",
+  "domain": "ai",
+  "definition": "Gesture recognition is the computational process of identifying and interpreting human physical movements\u2014typically of the hands, arms, head, or full body\u2014as meaningful symbolic inputs to a computing system, enabling touchless, natural interaction paradigms. The field encompasses multiple sensing modalities including optical cameras, depth sensors, inertial measurement units, and electromagnetic field detectors, combined with machine learning pipelines that extract skeletal or surface features and classify movement sequences into semantic categories. Gesture recognition underpins human-computer interaction in extended reality, robotics, automotive interfaces, and accessibility technology, replacing or augmenting physical input devices with embodied motion vocabulary.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      },
+      {
+        "id": "urn:ngm:class:user-interface",
+        "label": "User Interface"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision-system",
+        "label": "Computer Vision System"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:multimodal-ai",
+        "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      },
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:hand-tracking",
+        "label": "Hand Tracking"
+      },
+      {
+        "id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      },
+      {
+        "id": "urn:ngm:class:motion-tracking",
+        "label": "Motion Tracking"
+      },
+      {
+        "id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "3-d-user-interface",
+      "label": "3D User Interface"
+    },
+    {
+      "slug": "accelerometer",
+      "label": "Accelerometer"
+    },
+    {
+      "slug": "education-metaverse",
+      "label": "Education Metaverse"
+    },
+    {
+      "slug": "hand-tracking",
+      "label": "Hand Tracking"
+    },
+    {
+      "slug": "human-robot-interaction",
+      "label": "Human Robot Interaction"
+    },
+    {
+      "slug": "infrared-sensor",
+      "label": "InfraredSensor"
+    },
+    {
+      "slug": "interaction-domain",
+      "label": "Interaction Domain"
+    },
+    {
+      "slug": "pose-estimation",
+      "label": "Pose Estimation"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "social-vr",
+      "label": "Social VR"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

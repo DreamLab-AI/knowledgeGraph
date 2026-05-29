@@ -1,0 +1,142 @@
+{
+  "id": "urn:visionflow:page:mlops",
+  "title": "MLOps",
+  "slug": "mlops",
+  "public": true,
+  "classIri": "urn:ngm:class:mlops",
+  "domain": "ai",
+  "definition": "MLOps (Machine Learning Operations) is the set of practices, tools, and cultural norms that operationalise machine learning models at production scale by applying DevOps principles to the ML lifecycle. It encompasses the end-to-end automation and monitoring of ML pipelines: data ingestion, feature engineering, model training, evaluation, deployment, serving, and continuous retraining in response to data drift. MLOps addresses the unique challenges of ML systems \u2014 namely that code, data, and model weights all evolve independently and must be versioned, tested, and governed together.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-deployment",
+        "label": "AI Deployment"
+      },
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
+      },
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      },
+      {
+        "id": "urn:ngm:class:data-versioning",
+        "label": "Data Versioning"
+      },
+      {
+        "id": "urn:ngm:class:feature-store",
+        "label": "Feature Store"
+      },
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-lifecycle",
+        "label": "AI Lifecycle"
+      },
+      {
+        "id": "urn:ngm:class:ai-monitoring",
+        "label": "AI Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-pipeline",
+        "label": "Machine Learning Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-development-tools",
+      "label": "AI Development Tools"
+    },
+    {
+      "slug": "ai-system-component",
+      "label": "AI System Component"
+    },
+    {
+      "slug": "checkpoints",
+      "label": "Checkpoints"
+    },
+    {
+      "slug": "data-versioning",
+      "label": "Data Versioning"
+    },
+    {
+      "slug": "feature-store",
+      "label": "Feature Store"
+    },
+    {
+      "slug": "machine-learning-pipeline",
+      "label": "Machine Learning Pipeline"
+    },
+    {
+      "slug": "metadata-management",
+      "label": "Metadata Management"
+    },
+    {
+      "slug": "model-optimisation-and-performance",
+      "label": "Model Optimisation and Performance"
+    },
+    {
+      "slug": "software-architecture",
+      "label": "Software Architecture"
+    },
+    {
+      "slug": "software-development-process",
+      "label": "Software Development Process"
+    },
+    {
+      "slug": "system-architecture",
+      "label": "System Architecture"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    }
+  ]
+}

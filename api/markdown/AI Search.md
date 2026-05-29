@@ -612,7 +612,7 @@ public:: true
         "label": "ICO AI Guidance"
       },
       {
-        "@id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "@id": "urn:ngm:class:nist-ai-rmf",
         "label": "NIST AI Risk Management Framework"
       },
       {

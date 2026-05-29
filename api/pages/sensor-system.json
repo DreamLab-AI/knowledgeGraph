@@ -1,0 +1,115 @@
+{
+  "id": "urn:visionflow:page:sensor-system",
+  "title": "Sensor System",
+  "slug": "sensor-system",
+  "public": true,
+  "classIri": "urn:ngm:class:sensor-system",
+  "domain": "infrastructure",
+  "definition": "A sensor system is an integrated assembly of physical transducers, signal conditioning hardware, analogue-to-digital conversion, and data management software that captures physical-world phenomena and transforms them into structured digital representations suitable for processing, analysis, or control. Sensor systems range from single-chip inertial measurement units to multi-modal perception arrays combining cameras, LiDAR, RADAR, and acoustic sensors. Calibration, synchronisation, and fusion across heterogeneous modalities are core engineering concerns. Sensor systems are foundational to robotics, autonomous vehicles, industrial IoT, and environmental monitoring.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:hardware-component",
+      "label": "Hardware Component"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:sensor-data",
+        "label": "Sensor Data"
+      },
+      {
+        "id": "urn:ngm:class:analog-to-digital-converter",
+        "label": "Analog To Digital Converter"
+      },
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:calibration",
+        "label": "Calibration"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:perception-system",
+        "label": "Perception System"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:ngm:class:real-time-processing",
+        "label": "Real-time Processing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:imu",
+        "label": "IMU"
+      },
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "id": "urn:ngm:class:camera",
+        "label": "Camera"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      },
+      {
+        "id": "urn:ngm:class:reliability",
+        "label": "Reliability"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "biosensing-interface",
+      "label": "Biosensing Interface"
+    },
+    {
+      "slug": "closed-loop-control",
+      "label": "Closed-Loop Control"
+    },
+    {
+      "slug": "localization",
+      "label": "Localization"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    }
+  ]
+}

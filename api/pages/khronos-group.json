@@ -1,0 +1,134 @@
+{
+  "id": "urn:visionflow:page:khronos-group",
+  "title": "Khronos Group",
+  "slug": "khronos-group",
+  "public": true,
+  "classIri": "urn:ngm:class:khronos-group",
+  "domain": "governance",
+  "definition": "The Khronos Group is an open, member-driven industry consortium that creates and maintains royalty-free standards for graphics, compute, and media APIs across a wide range of platforms and devices. Founded in 2000, its portfolio includes OpenGL, Vulkan, OpenCL, OpenXR, glTF, and NNEF, among others. Khronos standards form the foundational layer for GPU-accelerated rendering, XR runtimes, and portable neural network deployment across the technology industry.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:standardization-bodies",
+      "label": "Standardization Bodies"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:graphics-api",
+        "label": "Graphics API"
+      },
+      {
+        "id": "urn:ngm:class:3-d-graphics-standard",
+        "label": "3D Graphics Standard"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      },
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-framework",
+        "label": "Machine Learning Framework"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      },
+      {
+        "id": "urn:ngm:class:technical-standard",
+        "label": "Technical Standard"
+      },
+      {
+        "id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      },
+      {
+        "id": "urn:ngm:class:rendering-technology",
+        "label": "Rendering Technology"
+      },
+      {
+        "id": "urn:ngm:class:3-d-file-format",
+        "label": "3D File Format"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "asset-format-standards",
+      "label": "Asset Format Standards"
+    },
+    {
+      "slug": "avatar-portability",
+      "label": "Avatar Portability"
+    },
+    {
+      "slug": "avatar-standard",
+      "label": "Avatar Standard"
+    },
+    {
+      "slug": "data-format-standard",
+      "label": "Data Format Standard"
+    },
+    {
+      "slug": "etsi-domain-virtual-society",
+      "label": "ETSI_Domain_Virtual_Society"
+    },
+    {
+      "slug": "graphics-api",
+      "label": "Graphics API"
+    },
+    {
+      "slug": "mixed-reality",
+      "label": "Mixed Reality"
+    },
+    {
+      "slug": "procedural-and-hybrid-4-d",
+      "label": "Procedural and Hybrid 4D"
+    },
+    {
+      "slug": "rendering-pipeline",
+      "label": "Rendering Pipeline"
+    },
+    {
+      "slug": "vircadia",
+      "label": "Vircadia"
+    },
+    {
+      "slug": "gl-tf-3-d-file-format",
+      "label": "glTF (3D File Format)"
+    }
+  ]
+}

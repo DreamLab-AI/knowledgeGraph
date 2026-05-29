@@ -1,0 +1,447 @@
+{
+  "id": "urn:visionflow:page:eu-ai-act",
+  "title": "EU AI Act",
+  "slug": "eu-ai-act",
+  "public": true,
+  "classIri": "urn:ngm:class:eu-ai-act",
+  "domain": "governance",
+  "definition": "The EU AI Act (Regulation 2024/1689) is the European Union's comprehensive legal framework for artificial intelligence, establishing harmonised rules for the development, deployment, and use of AI systems based on a risk-tiered classification. It prohibits certain AI practices outright, imposes strict conformity obligations on high-risk AI systems, and mandates transparency for limited-risk AI. Enacted in 2024 and progressively entering into force through 2026\u20132027, it is the world's first binding horizontal AI regulation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-regulation",
+      "label": "AI Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:conformity-assessment",
+        "label": "Conformity Assessment"
+      },
+      {
+        "id": "urn:ngm:class:notified-body",
+        "label": "Notified Body"
+      },
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:european-commission",
+        "label": "European Commission"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:prohibited-ai-practice",
+        "label": "Prohibited AI Practice"
+      },
+      {
+        "id": "urn:ngm:class:high-risk-ai-system",
+        "label": "High Risk AI System"
+      },
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-adoption",
+      "label": "AI Adoption"
+    },
+    {
+      "slug": "ai-audit",
+      "label": "AI Audit"
+    },
+    {
+      "slug": "ai-companies",
+      "label": "AI Companies"
+    },
+    {
+      "slug": "ai-deployment",
+      "label": "AI Deployment"
+    },
+    {
+      "slug": "ai-development",
+      "label": "AI Development"
+    },
+    {
+      "slug": "ai-documentation-standards",
+      "label": "AI Documentation Standards"
+    },
+    {
+      "slug": "ai-ethics-checklist",
+      "label": "AI Ethics Checklist"
+    },
+    {
+      "slug": "ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "slug": "ai-liability",
+      "label": "AI Liability"
+    },
+    {
+      "slug": "ai-model-card",
+      "label": "AI Model Card"
+    },
+    {
+      "slug": "ai-monitoring",
+      "label": "AI Monitoring"
+    },
+    {
+      "slug": "ai-office",
+      "label": "AI Office"
+    },
+    {
+      "slug": "ai-operator",
+      "label": "AI Operator"
+    },
+    {
+      "slug": "ai-provider",
+      "label": "AI Provider"
+    },
+    {
+      "slug": "ai-risk-management",
+      "label": "AI Risk Management"
+    },
+    {
+      "slug": "ai-risk-register",
+      "label": "AI Risk Register"
+    },
+    {
+      "slug": "ai-risk",
+      "label": "AI Risk"
+    },
+    {
+      "slug": "ai-risks",
+      "label": "AI Risks"
+    },
+    {
+      "slug": "ai-system-eu-definition",
+      "label": "AI System (EU Definition)"
+    },
+    {
+      "slug": "ai-tri-sm",
+      "label": "AI TRiSM"
+    },
+    {
+      "slug": "ai-trustworthiness-dimensions",
+      "label": "AI Trustworthiness Dimensions"
+    },
+    {
+      "slug": "ai-trustworthiness",
+      "label": "AI Trustworthiness"
+    },
+    {
+      "slug": "ai-user",
+      "label": "AI User"
+    },
+    {
+      "slug": "ai-video",
+      "label": "AI Video"
+    },
+    {
+      "slug": "ai-companions",
+      "label": "AI companions"
+    },
+    {
+      "slug": "ai-generated-content-disclosure",
+      "label": "AI-Generated Content Disclosure"
+    },
+    {
+      "slug": "aiethics-domain",
+      "label": "AIEthicsDomain"
+    },
+    {
+      "slug": "accountability-oecd",
+      "label": "Accountability (OECD)"
+    },
+    {
+      "slug": "accountability",
+      "label": "Accountability"
+    },
+    {
+      "slug": "accountable-party",
+      "label": "Accountable Party"
+    },
+    {
+      "slug": "adoption-of-convergent-technologies",
+      "label": "Adoption of Convergent Technologies"
+    },
+    {
+      "slug": "ai-origin-declaration",
+      "label": "Ai Origin Declaration"
+    },
+    {
+      "slug": "ai-transparency-framework",
+      "label": "Ai Transparency Framework"
+    },
+    {
+      "slug": "algorithmic-transparency-index",
+      "label": "Algorithmic Transparency Index"
+    },
+    {
+      "slug": "algorithmic-transparency-reports",
+      "label": "Algorithmic Transparency Reports"
+    },
+    {
+      "slug": "artificial-general-intelligence",
+      "label": "Artificial General Intelligence"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "asia-pacific-regulation",
+      "label": "Asia Pacific Regulation"
+    },
+    {
+      "slug": "authorised-representative",
+      "label": "Authorised Representative"
+    },
+    {
+      "slug": "autonomy-level",
+      "label": "Autonomy Level"
+    },
+    {
+      "slug": "bias",
+      "label": "Bias"
+    },
+    {
+      "slug": "complete-hri-terms-reference",
+      "label": "COMPLETE_HRI_TERMS_REFERENCE"
+    },
+    {
+      "slug": "california-ai-bill",
+      "label": "California AI bill"
+    },
+    {
+      "slug": "community-standards",
+      "label": "Community Standards"
+    },
+    {
+      "slug": "competition-in-ai",
+      "label": "Competition in AI"
+    },
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "consumer-protection",
+      "label": "Consumer Protection"
+    },
+    {
+      "slug": "convergence",
+      "label": "Convergence"
+    },
+    {
+      "slug": "convolutional-neural-network",
+      "label": "Convolutional Neural Network"
+    },
+    {
+      "slug": "cross-border-compliance",
+      "label": "Cross Border Compliance"
+    },
+    {
+      "slug": "death-of-the-internet",
+      "label": "Death of the Internet"
+    },
+    {
+      "slug": "democratic-values",
+      "label": "Democratic Values"
+    },
+    {
+      "slug": "deployer",
+      "label": "Deployer"
+    },
+    {
+      "slug": "digital-rights",
+      "label": "Digital Rights"
+    },
+    {
+      "slug": "digital-society-harms",
+      "label": "Digital Society Harms"
+    },
+    {
+      "slug": "digital-society-surveillance",
+      "label": "Digital Society Surveillance"
+    },
+    {
+      "slug": "diversity-non-discrimination-and-fairness",
+      "label": "Diversity, Non-Discrimination, and Fairness"
+    },
+    {
+      "slug": "education-and-ai",
+      "label": "Education and AI"
+    },
+    {
+      "slug": "empathetic-ai",
+      "label": "Empathetic AI"
+    },
+    {
+      "slug": "ethical-review-process",
+      "label": "Ethical Review Process"
+    },
+    {
+      "slug": "governance-structure",
+      "label": "Governance Structure"
+    },
+    {
+      "slug": "human-rights",
+      "label": "Human Rights"
+    },
+    {
+      "slug": "hyper-personalisation",
+      "label": "Hyper personalisation"
+    },
+    {
+      "slug": "inpainting",
+      "label": "Inpainting"
+    },
+    {
+      "slug": "jailbreaking",
+      "label": "Jailbreaking"
+    },
+    {
+      "slug": "ms-phi-models",
+      "label": "MS Phi models"
+    },
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    },
+    {
+      "slug": "music-and-audio",
+      "label": "Music and Audio"
+    },
+    {
+      "slug": "policy-enforcement",
+      "label": "Policy Enforcement"
+    },
+    {
+      "slug": "privacy-and-data-governance",
+      "label": "Privacy and Data Governance"
+    },
+    {
+      "slug": "proprietary-ai-video",
+      "label": "Proprietary AI Video"
+    },
+    {
+      "slug": "proprietary-image-generation",
+      "label": "Proprietary Image Generation"
+    },
+    {
+      "slug": "proprietary-large-language-models",
+      "label": "Proprietary Large Language Models"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "redress-procedure",
+      "label": "Redress Procedure"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    },
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    },
+    {
+      "slug": "robot-standard",
+      "label": "Robot Standard"
+    },
+    {
+      "slug": "safety-and-alignment",
+      "label": "Safety and alignment"
+    },
+    {
+      "slug": "singularity",
+      "label": "Singularity"
+    },
+    {
+      "slug": "societal-and-environmental-wellbeing",
+      "label": "Societal and Environmental Wellbeing"
+    },
+    {
+      "slug": "stakeholder-engagement-in-ai",
+      "label": "Stakeholder Engagement in AI"
+    },
+    {
+      "slug": "traceability-mechanism",
+      "label": "Traceability Mechanism"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    },
+    {
+      "slug": "training-and-fine-tuning",
+      "label": "Training and fine tuning"
+    },
+    {
+      "slug": "transformer",
+      "label": "Transformer"
+    },
+    {
+      "slug": "trust-and-safety",
+      "label": "Trust and Safety"
+    },
+    {
+      "slug": "trustworthy-ai-framework",
+      "label": "Trustworthy AI Framework"
+    }
+  ]
+}

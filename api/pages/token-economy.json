@@ -1,0 +1,116 @@
+{
+  "id": "urn:visionflow:page:token-economy",
+  "title": "Token Economy",
+  "slug": "token-economy",
+  "public": true,
+  "classIri": "urn:ngm:class:token-economy",
+  "domain": "blockchain",
+  "definition": "A token economy is an economic system in which digital tokens \u2014 cryptographic representations of value, rights, or access \u2014 serve as the primary medium of exchange, incentive, and governance within a defined platform or protocol. Token economies leverage blockchain infrastructure to create programmable, permissionless economic systems where tokens encode ownership (utility tokens, security tokens, governance tokens, NFTs), align participant incentives through staking and reward mechanisms, and enable decentralised governance. The concept spans DeFi protocols, Web3 platforms, creator economies, and emerging AI agent economies.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain-economics",
+      "label": "Blockchain Economics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "id": "urn:ngm:class:incentive-alignment",
+        "label": "Incentive Alignment"
+      },
+      {
+        "id": "urn:ngm:class:reward-distribution",
+        "label": "Reward Distribution"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
+      },
+      {
+        "id": "urn:ngm:class:creator-economy",
+        "label": "Creator Economy"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "id": "urn:ngm:class:social-token-economy",
+        "label": "Social Token Economy"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      },
+      {
+        "id": "urn:ngm:class:crypto-token",
+        "label": "Crypto Token"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:utility-token",
+        "label": "Utility Token"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "creator-economy",
+      "label": "Creator Economy"
+    },
+    {
+      "slug": "decentralized-exchange",
+      "label": "Decentralized Exchange"
+    },
+    {
+      "slug": "decentralized-finance-de-fi",
+      "label": "Decentralized Finance (DeFi)"
+    },
+    {
+      "slug": "social-token-economy",
+      "label": "Social Token Economy"
+    },
+    {
+      "slug": "token-bonding-curve",
+      "label": "Token Bonding Curve"
+    }
+  ]
+}

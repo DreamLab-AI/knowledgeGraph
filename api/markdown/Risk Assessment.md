@@ -468,7 +468,7 @@ public:: true
         "label": "MITRE ATLAS"
       },
       {
-        "@id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "@id": "urn:ngm:class:nist-ai-rmf",
         "label": "NIST AI Risk Management Framework"
       },
       {
@@ -572,7 +572,7 @@ public:: true
         "label": "ISO 31000"
       },
       {
-        "@id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "@id": "urn:ngm:class:nist-ai-rmf",
         "label": "NIST AI Risk Management Framework"
       },
       {

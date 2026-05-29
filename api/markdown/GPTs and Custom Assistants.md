@@ -480,7 +480,7 @@ public:: true
         "label": "Embedding Model"
       },
       {
-        "@id": "urn:ngm:individual:foundation-model",
+        "@id": "urn:ngm:individual:foundation-models",
         "label": "Foundation Model"
       },
       {

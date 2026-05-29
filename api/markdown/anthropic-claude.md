@@ -1,0 +1,16 @@
+- ### Definition
+  - Anthropic Claude is a family of safety-focused large language models built by [[Anthropic]], trained using [[Constitutional AI]] and [[RLHF]] to be helpful, harmless, and honest across a wide range of tasks.
+
+- ### Relationships
+  - Claude is the flagship product of [[Anthropic]] and directly implements [[Constitutional AI]] principles. It competes with [[ChatGPT]] (OpenAI) and [[Gemini]] (Google DeepMind) in the commercial [[Proprietary Large Language Models]] market. The model's training pipeline depends on [[Model Training]] infrastructure and [[RLHF]], enabling [[Conversational AI]] applications and advancing [[AI Alignment]] research. Claude's constitutional approach links it closely to [[AI Safety]] and [[Responsible AI]] frameworks.
+
+- ### Content
+  - Anthropic Claude is a series of large language models (LLMs) released by Anthropic, a safety-focused AI company founded in 2021 by former OpenAI researchers including Dario and Daniela Amodei. The Claude family is built around the premise that advanced AI should be simultaneously capable and safe, with safety considerations baked into the training methodology rather than bolted on afterward.
+
+  - The core differentiator of Claude is its use of Constitutional AI (CAI), a technique developed by Anthropic in which the model is trained with a set of written principles — a "constitution" — that guides self-critique and self-revision during training. This is combined with Reinforcement Learning from Human Feedback (RLHF) to produce a model that is less likely to generate harmful content while remaining highly useful. The constitutional approach reduces reliance on human labellers for harmful-content annotation, making the safety process more scalable.
+
+  - The model generations have progressed significantly since Claude 1 (2023). Claude 2 introduced a 100k-token context window, enabling analysis of entire codebases or lengthy documents in a single prompt. Claude 3 (released in early 2024) introduced three tiers — Haiku (fast and compact), Sonnet (balanced), and Opus (most capable) — with the latter achieving near-human scores on benchmarks such as MMLU, HumanEval, and GSM8K. Claude 3.5 Sonnet (mid-2024) further extended coding and reasoning capabilities, and introduced the "artifacts" feature for interactive output rendering.
+
+  - In 2024–2025, Claude has been widely adopted via the Anthropic API and Amazon Bedrock, powering enterprise chatbots, coding assistants, and document-processing pipelines. Anthropic has also introduced system-prompt-level controls and multi-turn memory features. The model's long context capability has made it a preferred choice for retrieval-augmented generation (RAG) pipelines where large document chunks must be processed. Claude's positioning as a safety-first model makes it particularly relevant for regulated industries and organisations implementing responsible AI frameworks.
+
+  - Research publications from Anthropic around Claude have advanced the field in areas such as mechanistic interpretability (understanding internal model representations), sleeper-agent robustness testing, and the scaling laws governing constitutional training. These contributions place Claude not merely as a commercial product but as a research artefact at the frontier of alignment-aware AI development.

@@ -634,7 +634,7 @@ public:: true
         "label": "Diffusion Model"
       },
       {
-        "@id": "urn:ngm:individual:foundation-model",
+        "@id": "urn:ngm:individual:foundation-models",
         "label": "Foundation Model"
       },
       {

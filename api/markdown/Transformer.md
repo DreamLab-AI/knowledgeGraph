@@ -122,7 +122,7 @@ public:: true
   "relations": {
     "enables": [
       {
-        "@id": "urn:ngm:individual:foundation-model",
+        "@id": "urn:ngm:individual:foundation-models",
         "label": "Foundation Model"
       },
       {
@@ -136,7 +136,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:individual:foundation-model",
+        "@id": "urn:ngm:individual:foundation-models",
         "label": "Foundation Model"
       },
       {

@@ -1,0 +1,139 @@
+{
+  "id": "urn:visionflow:page:blockchain-analytics",
+  "title": "Blockchain Analytics",
+  "slug": "blockchain-analytics",
+  "public": true,
+  "classIri": "urn:ngm:class:blockchain-analytics",
+  "domain": "blockchain",
+  "definition": "Blockchain Analytics is the application of data-science, graph-analysis, and heuristic-clustering techniques to the publicly visible transaction records of distributed ledgers, with the aim of tracing fund flows, identifying entities, detecting illicit activity, and producing compliance intelligence for regulators and financial institutions. It encompasses on-chain transaction monitoring, address clustering, cross-chain tracing, DeFi flow analysis, and risk-scoring of wallets and counterparties. Leading commercial providers include Chainalysis, Elliptic, and TRM Labs, whose tooling has become integral to AML compliance programmes worldwide.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-analytics",
+      "label": "Data Analytics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:compliance-audit-trail",
+        "label": "Compliance Audit Trail"
+      },
+      {
+        "id": "urn:ngm:class:fatf-travel-rule",
+        "label": "FATF Travel Rule"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
+      },
+      {
+        "id": "urn:ngm:individual:ethereum",
+        "label": "Ethereum"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      },
+      {
+        "id": "urn:ngm:class:mi-ca-regulation",
+        "label": "MiCA Regulation"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-model-card",
+      "label": "AI Model Card"
+    },
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    },
+    {
+      "slug": "bitcoin-technical-overview",
+      "label": "Bitcoin Technical Overview"
+    },
+    {
+      "slug": "blockchain-compliance",
+      "label": "Blockchain Compliance"
+    },
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "dao-analytics",
+      "label": "DAO Analytics"
+    },
+    {
+      "slug": "fatfrecommendations",
+      "label": "FATFRecommendations"
+    },
+    {
+      "slug": "regulatory-reporting",
+      "label": "Regulatory Reporting"
+    },
+    {
+      "slug": "travel-rule",
+      "label": "Travel Rule"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    }
+  ]
+}

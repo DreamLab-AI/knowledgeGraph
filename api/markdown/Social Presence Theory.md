@@ -96,7 +96,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:tele-002-telecollaboration",
+        "@id": "urn:ngm:class:telecollaboration-domain",
         "label": "TELE-002-telecollaboration"
       }
     ]

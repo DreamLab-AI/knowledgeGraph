@@ -648,7 +648,7 @@ public:: true
         "label": "Existential Risk"
       },
       {
-        "@id": "urn:ngm:individual:foundation-model",
+        "@id": "urn:ngm:individual:foundation-models",
         "label": "Foundation Model"
       },
       {

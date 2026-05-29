@@ -1,0 +1,114 @@
+{
+  "id": "urn:visionflow:page:icml",
+  "title": "ICML",
+  "slug": "icml",
+  "public": true,
+  "classIri": "urn:ngm:class:icml",
+  "domain": "ai",
+  "definition": "The International Conference on Machine Learning (ICML) is the premier annual academic conference for machine learning research, organised by the International Machine Learning Society (IMLS) since 1980. ICML serves as the primary venue for disseminating foundational and applied advances across supervised learning, unsupervised learning, reinforcement learning, deep learning, optimisation, and the theory of machine learning. Acceptance rates have fallen to roughly 26% as submission volumes have grown into the thousands annually, making it one of the most selective and impactful venues in AI research.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:research-methods",
+      "label": "Research Methods"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:machine-learning-technique",
+        "label": "Machine Learning Technique"
+      },
+      {
+        "id": "urn:ngm:class:benchmark-standard",
+        "label": "Benchmark Standard"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:optimization-algorithm",
+        "label": "Optimization Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-model",
+        "label": "Machine Learning Model"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety-research",
+        "label": "AI Safety Research"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "attention",
+      "label": "Attention"
+    },
+    {
+      "slug": "diffusion-models",
+      "label": "Diffusion Models"
+    },
+    {
+      "slug": "direct-preference-optimization",
+      "label": "Direct Preference Optimization"
+    },
+    {
+      "slug": "feed-forward-network",
+      "label": "Feed Forward Network"
+    },
+    {
+      "slug": "generative-adversarial-networks",
+      "label": "Generative Adversarial Networks"
+    },
+    {
+      "slug": "history-and-path-to-agi",
+      "label": "History and Path to AGI"
+    },
+    {
+      "slug": "learning-algorithm",
+      "label": "Learning Algorithm"
+    }
+  ]
+}

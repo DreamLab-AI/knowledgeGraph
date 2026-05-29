@@ -1,0 +1,206 @@
+{
+  "id": "urn:visionflow:page:cloud-computing",
+  "title": "Cloud Computing",
+  "slug": "cloud-computing",
+  "public": true,
+  "classIri": "urn:ngm:class:cloud-computing",
+  "domain": "infrastructure",
+  "definition": "Cloud computing is the on-demand delivery of computing resources \u2014 including servers, storage, databases, networking, software, analytics, and intelligence \u2014 over the internet, enabling scalable access without local hardware ownership. Providers such as AWS, Azure, and Google Cloud expose these resources through service models (IaaS, PaaS, SaaS) with pay-as-you-go pricing. The paradigm underpins modern AI training, inference serving, and distributed application deployment by abstracting physical infrastructure into programmable APIs.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      },
+      {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      },
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "id": "urn:ngm:class:cloud-platform",
+        "label": "Cloud Platform"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-adoption",
+      "label": "AI Adoption"
+    },
+    {
+      "slug": "adoption-of-convergent-technologies",
+      "label": "Adoption of Convergent Technologies"
+    },
+    {
+      "slug": "blockchain-as-a-service",
+      "label": "Blockchain As A Service"
+    },
+    {
+      "slug": "cold-chain-monitoring",
+      "label": "Cold Chain Monitoring"
+    },
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "convergence",
+      "label": "Convergence"
+    },
+    {
+      "slug": "cortex-agent",
+      "label": "Cortex Agent"
+    },
+    {
+      "slug": "cyber-security-and-cryptography",
+      "label": "Cyber Security and Cryptography"
+    },
+    {
+      "slug": "digital-society-surveillance",
+      "label": "Digital Society Surveillance"
+    },
+    {
+      "slug": "digital-transformation",
+      "label": "Digital Transformation"
+    },
+    {
+      "slug": "digital-twin-collaboration",
+      "label": "Digital Twin Collaboration"
+    },
+    {
+      "slug": "distributed-computing",
+      "label": "Distributed Computing"
+    },
+    {
+      "slug": "etsi-domain-infrastructure",
+      "label": "ETSI_Domain_Infrastructure"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    },
+    {
+      "slug": "energy-and-power",
+      "label": "Energy and Power"
+    },
+    {
+      "slug": "fault-tolerance",
+      "label": "Fault Tolerance"
+    },
+    {
+      "slug": "hardware-and-edge",
+      "label": "Hardware and Edge"
+    },
+    {
+      "slug": "identity-management-system",
+      "label": "Identity Management System"
+    },
+    {
+      "slug": "infrastructure-layer",
+      "label": "Infrastructure Layer"
+    },
+    {
+      "slug": "internet-infrastructure",
+      "label": "Internet Infrastructure"
+    },
+    {
+      "slug": "io-t-sensor-network",
+      "label": "IoT Sensor Network"
+    },
+    {
+      "slug": "logistics-optimization",
+      "label": "Logistics Optimization"
+    },
+    {
+      "slug": "machine-learning-platform",
+      "label": "Machine Learning Platform"
+    },
+    {
+      "slug": "metaverse-domain",
+      "label": "Metaverse Domain"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "predictive-maintenance",
+      "label": "Predictive Maintenance"
+    },
+    {
+      "slug": "prime-intellect",
+      "label": "Prime Intellect"
+    },
+    {
+      "slug": "prompt-tuning",
+      "label": "Prompt Tuning"
+    },
+    {
+      "slug": "real-time-translation",
+      "label": "Real-time Translation"
+    },
+    {
+      "slug": "regulatory-reporting",
+      "label": "Regulatory Reporting"
+    },
+    {
+      "slug": "storage-infrastructure",
+      "label": "Storage Infrastructure"
+    },
+    {
+      "slug": "system-architecture",
+      "label": "System Architecture"
+    }
+  ]
+}

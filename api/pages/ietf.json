@@ -1,0 +1,147 @@
+{
+  "id": "urn:visionflow:page:ietf",
+  "title": "IETF",
+  "slug": "ietf",
+  "public": true,
+  "classIri": "urn:ngm:class:ietf",
+  "domain": "governance",
+  "definition": "The Internet Engineering Task Force (IETF) is the principal international standards body responsible for developing and promoting voluntary Internet standards, particularly those comprising the Internet protocol suite (TCP/IP). It operates through working groups organised into areas and publishes specifications as Requests for Comments (RFCs), which become the canonical technical definitions of protocols such as HTTP, TLS, SMTP, and DNS. The IETF is a bottom-up, consensus-driven body with no formal membership; participation is open to any interested individual.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:web-standards",
+      "label": "Web Standards"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      },
+      {
+        "id": "urn:ngm:class:api-standard",
+        "label": "API Standard"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:authentication-standards",
+        "label": "Authentication Standards"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:oauth-2-0",
+        "label": "OAuth 2.0"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "id": "urn:ngm:class:network-standards",
+        "label": "Network Standards"
+      },
+      {
+        "id": "urn:ngm:class:web-standard",
+        "label": "Web Standard"
+      },
+      {
+        "id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web-standards",
+        "label": "Semantic Web Standards"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "api-gateway",
+      "label": "API Gateway"
+    },
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "cyber-security-and-cryptography",
+      "label": "Cyber Security and Cryptography"
+    },
+    {
+      "slug": "death-of-the-internet",
+      "label": "Death of the Internet"
+    },
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    },
+    {
+      "slug": "decentralised-file-storage",
+      "label": "Decentralised file storage"
+    },
+    {
+      "slug": "digital-infrastructure",
+      "label": "Digital Infrastructure"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "slug": "distributed-identity",
+      "label": "Distributed Identity"
+    },
+    {
+      "slug": "identity-management-system",
+      "label": "Identity Management System"
+    },
+    {
+      "slug": "identity-provider",
+      "label": "Identity Provider"
+    },
+    {
+      "slug": "self-sovereign-identity",
+      "label": "Self Sovereign Identity"
+    },
+    {
+      "slug": "solid",
+      "label": "Solid"
+    },
+    {
+      "slug": "verifiable-credentials",
+      "label": "Verifiable Credentials"
+    },
+    {
+      "slug": "web3",
+      "label": "Web3"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

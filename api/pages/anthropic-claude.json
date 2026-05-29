@@ -1,0 +1,248 @@
+{
+  "id": "urn:visionflow:page:anthropic-claude",
+  "title": "Anthropic Claude",
+  "slug": "anthropic-claude",
+  "public": true,
+  "classIri": "urn:ngm:individual:anthropic-claude",
+  "domain": "ai",
+  "definition": "Anthropic Claude is a family of large language models developed by Anthropic PBC, designed around Constitutional AI principles that prioritise safety, helpfulness, and honesty. The model series spans Claude Instant, Claude 2, Claude 3 (Haiku, Sonnet, Opus), and Claude 3.5, with each generation advancing reasoning, coding, and multilingual capabilities. Claude is distinguished by its long context windows (up to 200k tokens in Claude 3) and its training methodology that emphasises harmlessness through RLHF and Constitutional AI feedback loops.",
+  "subClassOf": [],
+  "entityType": "Individual",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:constitutional-ai",
+        "label": "Constitutional AI"
+      },
+      {
+        "id": "urn:ngm:class:instruction-tuning",
+        "label": "Instruction Tuning"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:individual:gemini",
+        "label": "Gemini"
+      },
+      {
+        "id": "urn:ngm:individual:chat-gpt",
+        "label": "ChatGPT"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:anthropic",
+        "label": "Anthropic"
+      },
+      {
+        "id": "urn:ngm:class:constitutional-ai",
+        "label": "Constitutional AI"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:rlhf",
+        "label": "RLHF"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "agentic-mycelia",
+      "label": "Agentic Mycelia"
+    },
+    {
+      "slug": "asset-registry",
+      "label": "Asset Registry"
+    },
+    {
+      "slug": "automated-podcasting",
+      "label": "Automated Podcasting"
+    },
+    {
+      "slug": "bio-terror",
+      "label": "Bio Terror"
+    },
+    {
+      "slug": "consumer-protection",
+      "label": "Consumer Protection"
+    },
+    {
+      "slug": "cortex-agent",
+      "label": "Cortex Agent"
+    },
+    {
+      "slug": "diagrams-as-code",
+      "label": "Diagrams as Code"
+    },
+    {
+      "slug": "digital-society-surveillance",
+      "label": "Digital Society Surveillance"
+    },
+    {
+      "slug": "digital-workplace-platform",
+      "label": "Digital Workplace Platform"
+    },
+    {
+      "slug": "energy-and-power",
+      "label": "Energy and Power"
+    },
+    {
+      "slug": "gpt-engineer",
+      "label": "GPT Engineer"
+    },
+    {
+      "slug": "gpts-and-custom-assistants",
+      "label": "GPTs and Custom Assistants"
+    },
+    {
+      "slug": "history-and-path-to-agi",
+      "label": "History and Path to AGI"
+    },
+    {
+      "slug": "home-assistant",
+      "label": "Home Assistant"
+    },
+    {
+      "slug": "jailbreaking",
+      "label": "Jailbreaking"
+    },
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "lo-ra-do-ra-etc",
+      "label": "LoRA DoRA etc"
+    },
+    {
+      "slug": "ms-phi-models",
+      "label": "MS Phi models"
+    },
+    {
+      "slug": "machine-translation",
+      "label": "Machine Translation"
+    },
+    {
+      "slug": "metaverse-ontology",
+      "label": "Metaverse Ontology"
+    },
+    {
+      "slug": "micropayments",
+      "label": "Micropayments"
+    },
+    {
+      "slug": "model-control-protocols-like-mcp",
+      "label": "Model Control Protocols like MCP"
+    },
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    },
+    {
+      "slug": "open-generative-ai-tools",
+      "label": "Open Generative AI tools"
+    },
+    {
+      "slug": "open-webui-and-pipelines",
+      "label": "Open Webui and Pipelines"
+    },
+    {
+      "slug": "pre-training",
+      "label": "Pre Training"
+    },
+    {
+      "slug": "prime-intellect",
+      "label": "Prime Intellect"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "slug": "proprietary-ai-video",
+      "label": "Proprietary AI Video"
+    },
+    {
+      "slug": "proprietary-large-language-models",
+      "label": "Proprietary Large Language Models"
+    },
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    },
+    {
+      "slug": "reasoning",
+      "label": "Reasoning"
+    },
+    {
+      "slug": "retrieval-augmented-generation-rag",
+      "label": "Retrieval Augmented Generation - RAG"
+    },
+    {
+      "slug": "safety-and-alignment",
+      "label": "Safety and alignment"
+    },
+    {
+      "slug": "security",
+      "label": "Security"
+    },
+    {
+      "slug": "singularity",
+      "label": "Singularity"
+    },
+    {
+      "slug": "training-and-fine-tuning",
+      "label": "Training and fine tuning"
+    },
+    {
+      "slug": "trust-and-safety",
+      "label": "Trust and Safety"
+    }
+  ]
+}

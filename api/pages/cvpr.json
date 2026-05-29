@@ -1,0 +1,127 @@
+{
+  "id": "urn:visionflow:page:cvpr",
+  "title": "CVPR",
+  "slug": "cvpr",
+  "public": true,
+  "classIri": "urn:ngm:class:cvpr",
+  "domain": "ai",
+  "definition": "CVPR (Conference on Computer Vision and Pattern Recognition) is the premier annual academic conference for computer vision research, co-sponsored by the IEEE and the Computer Vision Foundation (CVF). It is consistently ranked among the most impactful venues in artificial intelligence, publishing breakthroughs in image recognition, object detection, semantic segmentation, generative modelling, and 3D vision. Acceptance at CVPR is highly competitive and publication there is a widely recognised marker of significant research contribution.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:image-classification",
+        "label": "Image Classification"
+      },
+      {
+        "id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      },
+      {
+        "id": "urn:ngm:class:semantic-segmentation",
+        "label": "Semantic Segmentation"
+      },
+      {
+        "id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:benchmark-standard",
+        "label": "Benchmark Standard"
+      },
+      {
+        "id": "urn:ngm:class:evaluation-metric",
+        "label": "Evaluation Metric"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:iccv",
+        "label": "ICCV"
+      },
+      {
+        "id": "urn:ngm:class:neur-ips",
+        "label": "NeurIPS"
+      },
+      {
+        "id": "urn:ngm:class:icml",
+        "label": "ICML"
+      },
+      {
+        "id": "urn:ngm:class:iclr",
+        "label": "ICLR"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "attention",
+      "label": "Attention"
+    },
+    {
+      "slug": "control-net-and-similar-spatial-conditioning-systems",
+      "label": "ControlNet and Similar Spatial Conditioning Systems"
+    },
+    {
+      "slug": "diffusion-models",
+      "label": "Diffusion Models"
+    },
+    {
+      "slug": "face-swap",
+      "label": "Face Swap"
+    },
+    {
+      "slug": "generative-adversarial-networks",
+      "label": "Generative Adversarial Networks"
+    },
+    {
+      "slug": "image-and-video-restoration",
+      "label": "Image and Video Restoration"
+    },
+    {
+      "slug": "inpainting",
+      "label": "Inpainting"
+    },
+    {
+      "slug": "light-field",
+      "label": "Light field"
+    },
+    {
+      "slug": "perception-system",
+      "label": "Perception System"
+    },
+    {
+      "slug": "scene-capture-and-reconstruction",
+      "label": "Scene Capture and Reconstruction"
+    }
+  ]
+}

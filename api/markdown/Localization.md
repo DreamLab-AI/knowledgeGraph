@@ -140,7 +140,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:rb-1016-path-planning",
+        "@id": "urn:ngm:class:path-planning",
         "label": "RB-1016-path-planning"
       },
       {

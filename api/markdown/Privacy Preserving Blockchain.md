@@ -988,7 +988,7 @@ public:: true
         "label": "W3C DID Specification"
       },
       {
-        "@id": "urn:ngm:class:eu-mi-ca-regulation",
+        "@id": "urn:ngm:class:mi-ca-regulation",
         "label": "EU MiCA Regulation"
       }
     ]

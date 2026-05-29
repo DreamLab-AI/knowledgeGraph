@@ -1,0 +1,151 @@
+{
+  "id": "urn:visionflow:page:solidity",
+  "title": "Solidity",
+  "slug": "solidity",
+  "public": true,
+  "classIri": "urn:ngm:class:solidity",
+  "domain": "blockchain",
+  "definition": "Solidity is a statically-typed, curly-brace programming language designed specifically for writing smart contracts that execute on the Ethereum Virtual Machine (EVM) and compatible blockchain platforms. Developed by the Ethereum Foundation and released in 2014, it compiles to EVM bytecode and features contract-oriented constructs including inheritance, interfaces, libraries, events, modifiers, and custom error types. Solidity is the dominant language for decentralised finance (DeFi), non-fungible tokens (NFTs), and decentralised autonomous organisations (DAOs), though its complexity and historical vulnerability surface have prompted development of alternative contract languages.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:programming-language",
+      "label": "Programming Language"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:dao",
+        "label": "DAO"
+      },
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "id": "urn:ngm:class:token",
+        "label": "Token"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:vulnerability",
+        "label": "Vulnerability"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:gas",
+        "label": "Gas"
+      },
+      {
+        "id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      },
+      {
+        "id": "urn:ngm:class:erc-721",
+        "label": "ERC-721"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:individual:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:virtual-machine",
+        "label": "Virtual Machine"
+      },
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    },
+    {
+      "slug": "decentralized-finance-de-fi",
+      "label": "Decentralized Finance (DeFi)"
+    },
+    {
+      "slug": "enterprise-smart-contracts",
+      "label": "Enterprise Smart Contracts"
+    },
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    },
+    {
+      "slug": "grant-programs",
+      "label": "Grant Programs"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "liquidity-provision",
+      "label": "Liquidity Provision"
+    },
+    {
+      "slug": "nft-minting",
+      "label": "NFT Minting"
+    },
+    {
+      "slug": "private-blockchain",
+      "label": "Private Blockchain"
+    },
+    {
+      "slug": "quorum-blockchain",
+      "label": "Quorum Blockchain"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    },
+    {
+      "slug": "virtual-machine",
+      "label": "Virtual Machine"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:fasb-asu-2023-08",
+  "title": "FASB ASU 2023-08",
+  "slug": "fasb-asu-2023-08",
+  "public": true,
+  "classIri": "urn:ngm:class:fasb-asu-2023-08",
+  "domain": "governance",
+  "definition": "FASB Accounting Standards Update 2023-08 is a US accounting standard issued by the Financial Accounting Standards Board that requires public companies to measure certain cryptocurrency assets at fair value and recognise gains and losses in net income each reporting period. The standard applies to fungible crypto assets listed on active markets, effective for fiscal years beginning after 15 December 2024. It represents a significant departure from the previous indefinite-lived intangible asset treatment that suppressed recognised gains.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:compliance-standards",
+      "label": "Compliance Standards"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:regulatory-reporting",
+        "label": "Regulatory Reporting"
+      },
+      {
+        "id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:mi-ca-regulation",
+        "label": "MiCA Regulation"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      },
+      {
+        "id": "urn:ngm:class:financial-services",
+        "label": "Financial Services"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-market",
+        "label": "Digital Asset Market"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-standards",
+        "label": "Digital Asset Standards"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-as-money",
+      "label": "Bitcoin As Money"
+    },
+    {
+      "slug": "bitcoin-etf",
+      "label": "Bitcoin ETF"
+    },
+    {
+      "slug": "bitcoin-environmental-issues",
+      "label": "Bitcoin Environmental Issues"
+    },
+    {
+      "slug": "bitcoin-value-proposition",
+      "label": "Bitcoin Value Proposition"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "treasury-management",
+      "label": "Treasury Management"
+    }
+  ]
+}

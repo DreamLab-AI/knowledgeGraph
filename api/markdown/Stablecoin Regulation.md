@@ -488,7 +488,7 @@ public:: true
         "label": "AML KYC Compliance"
       },
       {
-        "@id": "urn:ngm:class:eu-mi-ca-regulation",
+        "@id": "urn:ngm:class:mi-ca-regulation",
         "label": "EU MiCA Regulation"
       }
     ],
@@ -544,7 +544,7 @@ public:: true
         "label": "Decentralized Exchange"
       },
       {
-        "@id": "urn:ngm:class:eu-mi-ca-regulation",
+        "@id": "urn:ngm:class:mi-ca-regulation",
         "label": "EU MiCA Regulation"
       },
       {

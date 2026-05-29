@@ -1,0 +1,110 @@
+{
+  "id": "urn:visionflow:page:docker",
+  "title": "Docker",
+  "slug": "docker",
+  "public": true,
+  "classIri": "urn:ngm:individual:docker",
+  "domain": "infrastructure",
+  "definition": "Docker is an open-source platform that automates the deployment, scaling, and management of applications using containerisation technology, packaging applications and their dependencies into lightweight, portable containers that run consistently across different computing environments. Founded in 2013 by Solomon Hykes, Docker Inc. commercialised Linux container technology and brought it to mainstream adoption, fundamentally transforming software development and deployment workflows. Docker containers share the host operating system kernel, making them more resource-efficient than virtual machines while providing process and filesystem isolation.",
+  "subClassOf": [],
+  "entityType": "Individual",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cloud-native-applications",
+        "label": "Cloud-Native Applications"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-infrastructure",
+        "label": "Machine Learning Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:software-development-process",
+        "label": "Software Development Process"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cloud-platform",
+        "label": "Cloud Platform"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:machine-learning-pipeline",
+        "label": "Machine Learning Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      },
+      {
+        "id": "urn:ngm:class:model-ops",
+        "label": "Model Ops"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:software-infrastructure",
+        "label": "Software Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      },
+      {
+        "id": "urn:ngm:class:development-platform",
+        "label": "Development Platform"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-as-a-service",
+      "label": "Blockchain As A Service"
+    },
+    {
+      "slug": "cli-multi-agent-systems",
+      "label": "CLI Multi-Agent Systems"
+    },
+    {
+      "slug": "gpt-engineer",
+      "label": "GPT Engineer"
+    },
+    {
+      "slug": "home-assistant",
+      "label": "Home Assistant"
+    },
+    {
+      "slug": "open-webui-and-pipelines",
+      "label": "Open Webui and Pipelines"
+    },
+    {
+      "slug": "private-blockchain",
+      "label": "Private Blockchain"
+    },
+    {
+      "slug": "r3-corda",
+      "label": "R3 Corda"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

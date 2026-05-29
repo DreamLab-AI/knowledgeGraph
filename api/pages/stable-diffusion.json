@@ -1,0 +1,227 @@
+{
+  "id": "urn:visionflow:page:stable-diffusion",
+  "title": "Stable Diffusion",
+  "slug": "stable-diffusion",
+  "public": true,
+  "classIri": "urn:ngm:individual:stable-diffusion",
+  "domain": "ai",
+  "definition": "Stable Diffusion is an open-source latent diffusion model developed by Stability AI in collaboration with CompVis and Runway, released in 2022, capable of generating high-quality images from text prompts. It operates in a compressed latent space rather than pixel space, dramatically reducing computational requirements compared to earlier diffusion models. The model supports text-to-image, image-to-image, and inpainting tasks, and has become the foundation for a large ecosystem of fine-tuned variants and extension tools.",
+  "subClassOf": [],
+  "entityType": "Individual",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:individual:ip-adapter",
+        "label": "IP-Adapter"
+      },
+      {
+        "id": "urn:ngm:class:control-net",
+        "label": "ControlNet"
+      },
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "id": "urn:ngm:class:style-transfer",
+        "label": "Style Transfer"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:diffusion-models",
+        "label": "Diffusion Models"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:cross-attention",
+        "label": "Cross Attention"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:latent-diffusion",
+        "label": "Latent Diffusion"
+      },
+      {
+        "id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      },
+      {
+        "id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "id": "urn:ngm:class:text-to-image",
+        "label": "Text-to-Image"
+      },
+      {
+        "id": "urn:ngm:class:inpainting",
+        "label": "Inpainting"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-development",
+      "label": "AI Development"
+    },
+    {
+      "slug": "ai-upscaling-and-super-resolution",
+      "label": "AI Upscaling and Super-Resolution"
+    },
+    {
+      "slug": "ai-video",
+      "label": "AI Video"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "banodoco",
+      "label": "Banodoco"
+    },
+    {
+      "slug": "comfy-ui-client",
+      "label": "ComfyUI Client"
+    },
+    {
+      "slug": "comfy-ui-workflows",
+      "label": "ComfyUI Workflows"
+    },
+    {
+      "slug": "comfy-ui-for-fashion-and-brands",
+      "label": "comfy-ui-for-fashion-and-brands"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "control-net-and-similar-spatial-conditioning-systems",
+      "label": "ControlNet and Similar Spatial Conditioning Systems"
+    },
+    {
+      "slug": "deepfakes-and-fraudulent-content",
+      "label": "Deepfakes and fraudulent content"
+    },
+    {
+      "slug": "face-swap",
+      "label": "Face Swap"
+    },
+    {
+      "slug": "fashion",
+      "label": "Fashion"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "inpainting",
+      "label": "Inpainting"
+    },
+    {
+      "slug": "interfaces",
+      "label": "Interfaces"
+    },
+    {
+      "slug": "kohya-dreambooth-and-similar",
+      "label": "KOHYA Dreambooth and similar"
+    },
+    {
+      "slug": "lo-ra-do-ra-etc",
+      "label": "LoRA DoRA etc"
+    },
+    {
+      "slug": "model-ensembling",
+      "label": "Model Ensembling"
+    },
+    {
+      "slug": "model-width",
+      "label": "Model Width"
+    },
+    {
+      "slug": "open-generative-ai-tools",
+      "label": "Open Generative AI tools"
+    },
+    {
+      "slug": "open-webui-and-pipelines",
+      "label": "Open Webui and Pipelines"
+    },
+    {
+      "slug": "pre-training",
+      "label": "Pre Training"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "slug": "prompt-tuning",
+      "label": "Prompt Tuning"
+    },
+    {
+      "slug": "proprietary-ai-video",
+      "label": "Proprietary AI Video"
+    },
+    {
+      "slug": "proprietary-image-generation",
+      "label": "Proprietary Image Generation"
+    },
+    {
+      "slug": "sampling",
+      "label": "Sampling"
+    },
+    {
+      "slug": "sensor-fusion",
+      "label": "Sensor Fusion"
+    },
+    {
+      "slug": "text-generation",
+      "label": "Text Generation"
+    },
+    {
+      "slug": "text-summarisation",
+      "label": "Text Summarisation"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    },
+    {
+      "slug": "fast-ai",
+      "label": "fast.ai"
+    }
+  ]
+}

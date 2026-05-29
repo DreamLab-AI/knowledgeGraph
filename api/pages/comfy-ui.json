@@ -1,0 +1,201 @@
+{
+  "id": "urn:visionflow:page:comfy-ui",
+  "title": "ComfyUI",
+  "slug": "comfy-ui",
+  "public": true,
+  "classIri": "urn:ngm:individual:comfy-ui",
+  "domain": "ai",
+  "definition": "ComfyUI is an open-source, node-based graphical interface for constructing and executing Stable Diffusion image-generation pipelines. It exposes the underlying diffusion inference graph as a visual workflow of interconnected nodes, enabling non-destructive, reproducible experimentation. The tool has become a de-facto community standard for advanced image and video synthesis workflows.",
+  "subClassOf": [],
+  "entityType": "Individual",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "id": "urn:ngm:class:video-generation",
+        "label": "Video Generation"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:individual:stable-diffusion",
+        "label": "Stable Diffusion"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:node-based-editor",
+        "label": "Node Based Editor"
+      },
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-pipeline",
+        "label": "Machine Learning Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:text-to-image",
+        "label": "Text-to-Image"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-upscaling-and-super-resolution",
+      "label": "AI Upscaling and Super-Resolution"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "comfy-ui-workflows",
+      "label": "ComfyUI Workflows"
+    },
+    {
+      "slug": "comfy-ui-for-fashion-and-brands",
+      "label": "comfy-ui-for-fashion-and-brands"
+    },
+    {
+      "slug": "comfy-ui-for-fashion-and-brands",
+      "label": "comfy-ui-for-fashion-and-brands"
+    },
+    {
+      "slug": "control-net-and-similar-spatial-conditioning-systems",
+      "label": "ControlNet and Similar Spatial Conditioning Systems"
+    },
+    {
+      "slug": "deepfakes-and-fraudulent-content",
+      "label": "Deepfakes and fraudulent content"
+    },
+    {
+      "slug": "fashion",
+      "label": "Fashion"
+    },
+    {
+      "slug": "fine-tuning",
+      "label": "Fine Tuning"
+    },
+    {
+      "slug": "fooocus",
+      "label": "Fooocus"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "kohya-dreambooth-and-similar",
+      "label": "KOHYA Dreambooth and similar"
+    },
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "lo-ra-do-ra-etc",
+      "label": "LoRA DoRA etc"
+    },
+    {
+      "slug": "model-performance",
+      "label": "Model Performance"
+    },
+    {
+      "slug": "motion-planning",
+      "label": "Motion Planning"
+    },
+    {
+      "slug": "open-generative-ai-tools",
+      "label": "Open Generative AI tools"
+    },
+    {
+      "slug": "open-webui-and-pipelines",
+      "label": "Open Webui and Pipelines"
+    },
+    {
+      "slug": "player-two",
+      "label": "Player Two"
+    },
+    {
+      "slug": "pre-training",
+      "label": "Pre Training"
+    },
+    {
+      "slug": "procedural-and-hybrid-4-d",
+      "label": "Procedural and Hybrid 4D"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "slug": "prompt-tuning",
+      "label": "Prompt Tuning"
+    },
+    {
+      "slug": "proprietary-ai-video",
+      "label": "Proprietary AI Video"
+    },
+    {
+      "slug": "proprietary-image-generation",
+      "label": "Proprietary Image Generation"
+    },
+    {
+      "slug": "python-and-py-torch",
+      "label": "Python and PyTorch"
+    },
+    {
+      "slug": "sampling",
+      "label": "Sampling"
+    },
+    {
+      "slug": "segmentation-and-identification",
+      "label": "Segmentation and Identification"
+    },
+    {
+      "slug": "text-generation",
+      "label": "Text Generation"
+    },
+    {
+      "slug": "text-summarisation",
+      "label": "Text Summarisation"
+    },
+    {
+      "slug": "ollama",
+      "label": "ollama"
+    },
+    {
+      "slug": "relighting",
+      "label": "relighting"
+    }
+  ]
+}

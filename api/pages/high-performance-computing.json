@@ -1,0 +1,131 @@
+{
+  "id": "urn:visionflow:page:high-performance-computing",
+  "title": "High-Performance Computing",
+  "slug": "high-performance-computing",
+  "public": true,
+  "classIri": "urn:ngm:class:high-performance-computing",
+  "domain": "infrastructure",
+  "definition": "High-Performance Computing (HPC) refers to the use of aggregated computational resources \u2014 clusters, supercomputers, and massively parallel systems \u2014 to solve problems requiring sustained compute throughput, memory bandwidth, or I/O rates far beyond those achievable on commodity servers. HPC systems combine specialised processors (CPUs, GPUs, FPGAs, TPUs), high-speed interconnects (InfiniBand, NVLink), parallel file systems, and workload-management software to execute scientific simulations, large-scale machine learning training, genomics, climate modelling, and computational fluid dynamics at peta- or exascale performance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:computing-infrastructure",
+      "label": "Computing Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:machine-learning-infrastructure",
+        "label": "Machine Learning Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:neur-ips",
+        "label": "NeurIPS"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-analytics",
+        "label": "Blockchain Analytics"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:computing-hardware",
+        "label": "Computing Hardware"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      },
+      {
+        "id": "urn:ngm:class:fpga",
+        "label": "FPGA"
+      },
+      {
+        "id": "urn:ngm:class:tpu",
+        "label": "TPU"
+      },
+      {
+        "id": "urn:ngm:class:parallel-processing",
+        "label": "Parallel Processing"
+      },
+      {
+        "id": "urn:ngm:class:batch-processing",
+        "label": "Batch Processing"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:ai-hardware",
+        "label": "AI Hardware"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "distributed-computing",
+      "label": "Distributed Computing"
+    },
+    {
+      "slug": "physical-layer",
+      "label": "Physical Layer"
+    },
+    {
+      "slug": "physical-layer",
+      "label": "Physical Layer"
+    },
+    {
+      "slug": "processing-hardware",
+      "label": "Processing Hardware"
+    },
+    {
+      "slug": "training-hardware",
+      "label": "Training Hardware"
+    }
+  ]
+}

@@ -6020,6 +6020,11 @@
       "qualityScore": 0.0
     },
     {
+      "slug": "apache-kafka",
+      "title": "Apache Kafka",
+      "qualityScore": 0.8
+    },
+    {
       "slug": "asset-management",
       "title": "Asset Management",
       "qualityScore": 0.5
@@ -6110,9 +6115,19 @@
       "qualityScore": 0.5
     },
     {
+      "slug": "cloud-computing",
+      "title": "Cloud Computing",
+      "qualityScore": 0.8
+    },
+    {
       "slug": "cloud-infrastructure",
       "title": "Cloud Infrastructure",
       "qualityScore": 0.5
+    },
+    {
+      "slug": "cloud-platform",
+      "title": "Cloud Platform",
+      "qualityScore": 0.8
     },
     {
       "slug": "cloud-native-applications",
@@ -6575,6 +6590,11 @@
       "qualityScore": 0.35
     },
     {
+      "slug": "distributed-storage",
+      "title": "Distributed Storage",
+      "qualityScore": 0.8
+    },
+    {
       "slug": "distributed-system-protocol",
       "title": "Distributed System Protocol",
       "qualityScore": 0.0
@@ -6588,6 +6608,11 @@
       "slug": "distributed-work",
       "title": "Distributed Work",
       "qualityScore": 0.0
+    },
+    {
+      "slug": "docker",
+      "title": "Docker",
+      "qualityScore": 0.8
     },
     {
       "slug": "domain-ontology",
@@ -6840,6 +6865,11 @@
       "qualityScore": 0.0
     },
     {
+      "slug": "high-performance-computing",
+      "title": "High-Performance Computing",
+      "qualityScore": 0.8
+    },
+    {
       "slug": "home-assistant",
       "title": "Home Assistant",
       "qualityScore": 0.52
@@ -6970,6 +7000,11 @@
       "qualityScore": 0.35
     },
     {
+      "slug": "interoperability-protocol",
+      "title": "Interoperability Protocol",
+      "qualityScore": 0.8
+    },
+    {
       "slug": "interoperability-standard",
       "title": "Interoperability Standard",
       "qualityScore": 0.5
@@ -7003,6 +7038,11 @@
       "slug": "knowhere",
       "title": "Knowhere",
       "qualityScore": 0.5
+    },
+    {
+      "slug": "kubernetes",
+      "title": "Kubernetes",
+      "qualityScore": 0.8
     },
     {
       "slug": "landscape",
@@ -7738,6 +7778,11 @@
       "slug": "semantic-metadata-registry",
       "title": "Semantic Metadata Registry",
       "qualityScore": 0.35
+    },
+    {
+      "slug": "sensor-system",
+      "title": "Sensor System",
+      "qualityScore": 0.8
     },
     {
       "slug": "serverless-architecture",
@@ -12701,6 +12746,11 @@
       "qualityScore": 0.5
     },
     {
+      "slug": "bitcoin",
+      "title": "Bitcoin",
+      "qualityScore": 0.8
+    },
+    {
       "slug": "block-header",
       "title": "Block Header",
       "qualityScore": 0.8
@@ -12738,6 +12788,11 @@
     {
       "slug": "block",
       "title": "Block",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "blockchain-analytics",
+      "title": "Blockchain Analytics",
       "qualityScore": 0.8
     },
     {
@@ -13064,6 +13119,11 @@
       "slug": "cryptographic-primitive",
       "title": "Cryptographic Primitive",
       "qualityScore": 0.75
+    },
+    {
+      "slug": "cryptographic-proof",
+      "title": "Cryptographic Proof",
+      "qualityScore": 0.8
     },
     {
       "slug": "cryptographic-signature",
@@ -13419,6 +13479,11 @@
       "slug": "enterprise-token-standards",
       "title": "Enterprise Token Standards",
       "qualityScore": 0.52
+    },
+    {
+      "slug": "ethereum",
+      "title": "Ethereum",
+      "qualityScore": 0.8
     },
     {
       "slug": "ethical-sourcing",
@@ -13848,6 +13913,11 @@
     {
       "slug": "merkle-tree",
       "title": "Merkle Tree",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "micro-strategy",
+      "title": "MicroStrategy",
       "qualityScore": 0.8
     },
     {
@@ -14431,6 +14501,11 @@
       "qualityScore": 0.52
     },
     {
+      "slug": "solidity",
+      "title": "Solidity",
+      "qualityScore": 0.8
+    },
+    {
       "slug": "solo-mining",
       "title": "Solo Mining",
       "qualityScore": 0.0
@@ -14576,6 +14651,11 @@
       "qualityScore": 0.5
     },
     {
+      "slug": "token-economy",
+      "title": "Token Economy",
+      "qualityScore": 0.8
+    },
+    {
       "slug": "token-standard",
       "title": "Token Standard",
       "qualityScore": 0.5
@@ -14599,6 +14679,11 @@
       "slug": "total-supply",
       "title": "Total Supply",
       "qualityScore": 0.0
+    },
+    {
+      "slug": "trade-finance",
+      "title": "Trade Finance",
+      "qualityScore": 0.8
     },
     {
       "slug": "transaction-confirmation",
@@ -14819,6 +14904,160 @@
       "slug": "x402-and-l402-payment-protocols",
       "title": "x402 and l402 payment protocols",
       "qualityScore": 0.5
+    }
+  ],
+  "ai": [
+    {
+      "slug": "agentic-workflow",
+      "title": "Agentic Workflow",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "animate-diff",
+      "title": "AnimateDiff",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "anthropic-claude",
+      "title": "Anthropic Claude",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "cvpr",
+      "title": "CVPR",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "chat-gpt",
+      "title": "ChatGPT",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "comfy-ui",
+      "title": "ComfyUI",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "evaluation-metric",
+      "title": "Evaluation Metric",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "flux-1",
+      "title": "Flux.1",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "foundation-models",
+      "title": "Foundation Models",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "gemini",
+      "title": "Gemini",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "gesture-recognition",
+      "title": "Gesture Recognition",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "iccv",
+      "title": "ICCV",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "iclr",
+      "title": "ICLR",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "icml",
+      "title": "ICML",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "ip-adapter",
+      "title": "IP-Adapter",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "mlops",
+      "title": "MLOps",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "neur-ips",
+      "title": "NeurIPS",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "open-ai",
+      "title": "OpenAI",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "py-torch",
+      "title": "PyTorch",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "stable-diffusion",
+      "title": "Stable Diffusion",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "uncertainty-quantification",
+      "title": "Uncertainty Quantification",
+      "qualityScore": 0.8
+    }
+  ],
+  "governance": [
+    {
+      "slug": "eu-ai-act",
+      "title": "EU AI Act",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "fasb-asu-2023-08",
+      "title": "FASB ASU 2023-08",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "gdpr",
+      "title": "GDPR",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "ietf",
+      "title": "IETF",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "khronos-group",
+      "title": "Khronos Group",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "mi-ca-regulation",
+      "title": "MiCA Regulation",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "nist-ai-rmf",
+      "title": "NIST AI RMF",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "nist",
+      "title": "NIST",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "w3-c",
+      "title": "W3C",
+      "qualityScore": 0.8
     }
   ],
   "economics": [

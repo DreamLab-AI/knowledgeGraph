@@ -1,0 +1,124 @@
+{
+  "id": "urn:visionflow:page:iccv",
+  "title": "ICCV",
+  "slug": "iccv",
+  "public": true,
+  "classIri": "urn:ngm:class:iccv",
+  "domain": "ai",
+  "definition": "ICCV (International Conference on Computer Vision) is a biennial top-tier academic conference sponsored by IEEE that focuses on the full spectrum of computer vision research, from low-level image processing to high-level scene understanding and embodied intelligence. Held in odd-numbered years and alternating with CVPR in global prestige, ICCV features highly selective peer review and is associated with the Marr Prize for outstanding contributions to the field.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      },
+      {
+        "id": "urn:ngm:class:semantic-segmentation",
+        "label": "Semantic Segmentation"
+      },
+      {
+        "id": "urn:ngm:class:image-classification",
+        "label": "Image Classification"
+      },
+      {
+        "id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:benchmark-standard",
+        "label": "Benchmark Standard"
+      },
+      {
+        "id": "urn:ngm:class:evaluation-metric",
+        "label": "Evaluation Metric"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:cvpr",
+        "label": "CVPR"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai",
+        "label": "Multimodal AI"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cvpr",
+        "label": "CVPR"
+      },
+      {
+        "id": "urn:ngm:class:neur-ips",
+        "label": "NeurIPS"
+      },
+      {
+        "id": "urn:ngm:class:iclr",
+        "label": "ICLR"
+      },
+      {
+        "id": "urn:ngm:class:icml",
+        "label": "ICML"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "control-net-and-similar-spatial-conditioning-systems",
+      "label": "ControlNet and Similar Spatial Conditioning Systems"
+    },
+    {
+      "slug": "face-swap",
+      "label": "Face Swap"
+    },
+    {
+      "slug": "image-and-video-restoration",
+      "label": "Image and Video Restoration"
+    },
+    {
+      "slug": "inpainting",
+      "label": "Inpainting"
+    },
+    {
+      "slug": "light-field",
+      "label": "Light field"
+    },
+    {
+      "slug": "perception-system",
+      "label": "Perception System"
+    },
+    {
+      "slug": "scene-capture-and-reconstruction",
+      "label": "Scene Capture and Reconstruction"
+    }
+  ]
+}
