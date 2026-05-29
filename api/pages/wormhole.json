@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:wormhole",
+  "title": "Wormhole",
+  "slug": "wormhole",
+  "public": true,
+  "classIri": "urn:ngm:class:wormhole",
+  "domain": "blockchain",
+  "definition": "Wormhole is a decentralised cross-chain messaging and asset-transfer protocol that enables the movement of tokens, NFTs, and arbitrary messages between heterogeneous blockchain networks by relying on a network of off-chain guardian validators who attest to events on one chain, producing signed VAA (Verified Action Approval) messages that unlock corresponding assets or trigger logic on the destination chain. Originally launched as a wrapped-asset bridge between Solana and Ethereum in 2020, Wormhole has evolved into a generic interoperability layer supporting over 30 ecosystems. A significant exploit in February 2022 resulted in the theft of approximately 120,000 wETH, subsequently made whole by Jump Crypto.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cross-chain-asset-transfer",
+        "label": "Cross Chain Asset Transfer"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-messaging",
+        "label": "Cross Chain Communication"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:bridge-contract",
+        "label": "Bridge Contract"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cross-chain-interoperability",
+        "label": "Cross-Chain Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    },
+    {
+      "slug": "blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    },
+    {
+      "slug": "blockchain-oracle",
+      "label": "Blockchain Oracle"
+    },
+    {
+      "slug": "cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    }
+  ]
+}

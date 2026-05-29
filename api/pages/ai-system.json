@@ -1,0 +1,75 @@
+{
+  "id": "urn:visionflow:page:ai-system",
+  "title": "AI System",
+  "slug": "ai-system",
+  "public": true,
+  "classIri": "urn:ngm:class:ai-system",
+  "domain": "ai",
+  "definition": "An integrated assembly of software, hardware, data, and processes that employs machine learning or related techniques to perceive inputs, infer patterns or decisions, and produce outputs that affect its environment or users. AI systems range from narrow task-specific classifiers to general-purpose language models and autonomous agents, and they are characterised by behaviour that emerges from learned parameters rather than explicit programming. Regulatory definitions such as that codified in the EU AI Act emphasise the system-level perspective, encompassing the full sociotechnical context of deployment.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-system-component",
+      "label": "AI System Component"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:ai-model",
+        "label": "AI Model"
+      },
+      {
+        "id": "urn:ngm:class:ai-inference",
+        "label": "AI Inference"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-risk-assessment",
+        "label": "AI Risk Assessment"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-system-eu-definition",
+        "label": "AI System (EU Definition)"
+      },
+      {
+        "id": "urn:ngm:class:edge-ai-system",
+        "label": "Edge AI System"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "autonomous-agent",
+      "label": "Autonomous Agent"
+    },
+    {
+      "slug": "open-world",
+      "label": "Open World"
+    },
+    {
+      "slug": "trust-in-automation",
+      "label": "Trust in Automation"
+    }
+  ]
+}

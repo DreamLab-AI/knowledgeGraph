@@ -1,0 +1,62 @@
+{
+  "id": "urn:visionflow:page:tokenizer",
+  "title": "Tokenizer",
+  "slug": "tokenizer",
+  "public": true,
+  "classIri": "urn:ngm:class:tokenizer",
+  "domain": "ai",
+  "definition": "A tokenizer is the component that converts raw text into the discrete units (tokens) a language model processes, and back again. Modern tokenizers use subword algorithms such as byte-pair encoding, WordPiece, or unigram language models to balance vocabulary size against sequence length, representing common words as single tokens and rare words as compositions of smaller pieces. The tokenizer defines the model's vocabulary and directly affects context-window usage, multilingual fairness, handling of code and numbers, and ultimately the cost and capability of the system.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:tokenization",
+      "label": "Tokenization"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "context-engineering",
+      "label": "Context Engineering"
+    },
+    {
+      "slug": "proprietary-large-language-models",
+      "label": "Proprietary Large Language Models"
+    }
+  ]
+}

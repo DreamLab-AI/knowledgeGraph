@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:proportional-valve",
+  "title": "Proportional Valve",
+  "slug": "proportional-valve",
+  "public": true,
+  "classIri": "urn:ngm:class:proportional-valve",
+  "domain": "robotics",
+  "definition": "A proportional valve is a fluid-power control element that modulates flow rate, pressure, or direction continuously and proportionally in response to an electrical command signal, in contrast to on/off solenoid valves that switch between two discrete states. The valve's spool or poppet position is controlled by a proportional solenoid or voice-coil actuator whose force output is linearly related to the applied current, enabling smooth, variable control of hydraulic or pneumatic systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:fluid-power-device",
+      "label": "Fluid Power Device"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.85,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:pid-controller",
+        "label": "PID Controller"
+      },
+      {
+        "id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "Industrial Automation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:servo-valve",
+        "label": "Servo Valve"
+      },
+      {
+        "id": "urn:ngm:class:hydraulic-actuator",
+        "label": "Hydraulic Actuator"
+      },
+      {
+        "id": "urn:ngm:class:pneumatic-actuator",
+        "label": "Pneumatic Actuator"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "hydraulic-actuator",
+      "label": "Hydraulic Actuator"
+    },
+    {
+      "slug": "pneumatic-actuator",
+      "label": "Pneumatic Actuator"
+    }
+  ]
+}

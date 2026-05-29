@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:robotic-grasping",
+  "title": "Robotic Grasping",
+  "slug": "robotic-grasping",
+  "public": true,
+  "classIri": "urn:ngm:class:robotic-grasping",
+  "domain": "robotics",
+  "definition": "Robotic Grasping is the subfield of robotics concerned with planning and executing stable, task-appropriate physical contact between a robotic end-effector and a target object. It integrates perception, grasp quality estimation, motion planning, and control to enable reliable object acquisition across varied geometries, materials, and environmental conditions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:manipulation",
+      "label": "Manipulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.85,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:end-effector",
+        "label": "End-Effector"
+      },
+      {
+        "id": "urn:ngm:class:grasp-planning",
+        "label": "Grasp Planning"
+      },
+      {
+        "id": "urn:ngm:class:robot-perception",
+        "label": "Robot Perception"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "id": "urn:ngm:class:tactile-sensing",
+        "label": "Tactile Sensing"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:dexterous-manipulation",
+        "label": "Dexterous Manipulation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "lens-and-camera-calibration",
+      "label": "Lens and Camera Calibration"
+    },
+    {
+      "slug": "pose-estimation",
+      "label": "Pose Estimation"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:bip-342",
+  "title": "BIP-342",
+  "slug": "bip-342",
+  "public": true,
+  "classIri": "urn:ngm:class:bip-342",
+  "domain": "blockchain",
+  "definition": "BIP-342 specifies Tapscript, the updated Bitcoin scripting language that replaces legacy script in the script-path spending branch of Taproot (BIP-341) outputs. Tapscript updates the signature opcodes to use BIP-340 Schnorr signatures, introduces the OP_CHECKSIGADD opcode to enable efficient threshold multisignature constructions, relaxes script resource limits, and establishes an extensible opcode upgrade mechanism via OP_SUCCESS opcodes for future soft forks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bitcoin-improvement-proposals",
+      "label": "Bitcoin Improvement Proposals"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:taproot",
+        "label": "Taproot"
+      },
+      {
+        "id": "urn:ngm:class:multisignature",
+        "label": "Multisignature"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:schnorr-signature",
+        "label": "Schnorr Signature"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-script",
+        "label": "Bitcoin Script"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bip-327",
+        "label": "BIP-327"
+      },
+      {
+        "id": "urn:ngm:class:bip-340-schnorr-keypair",
+        "label": "BIP-340 Schnorr Keypair"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-technical-overview",
+      "label": "Bitcoin Technical Overview"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "slug": "taproot-assets",
+      "label": "Taproot Assets"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "id": "urn:visionflow:page:dense-passage-retrieval",
+  "title": "Dense Passage Retrieval",
+  "slug": "dense-passage-retrieval",
+  "public": true,
+  "classIri": "urn:ngm:class:dense-passage-retrieval",
+  "domain": "ai",
+  "definition": "Dense Passage Retrieval (DPR) is an information retrieval approach in which both queries and document passages are encoded into dense continuous vector representations using dual-encoder neural networks, enabling similarity search via dot-product or cosine distance rather than sparse lexical matching. It substantially outperforms traditional BM25 retrieval on semantic matching tasks and forms the retriever component of open-domain question-answering and retrieval-augmented generation systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:information-retrieval",
+      "label": "Information Retrieval"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
+      },
+      {
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:embedding",
+        "label": "Embedding"
+      },
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-search",
+      "label": "AI Search"
+    },
+    {
+      "slug": "retrieval-augmented-generation-rag",
+      "label": "Retrieval Augmented Generation - RAG"
+    }
+  ]
+}

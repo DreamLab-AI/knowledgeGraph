@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:aes-gcm",
+  "title": "AES-GCM",
+  "slug": "aes-gcm",
+  "public": true,
+  "classIri": "urn:ngm:class:aes-gcm",
+  "domain": "security",
+  "definition": "AES-GCM (Advanced Encryption Standard \u2013 Galois/Counter Mode) is an authenticated encryption with associated data (AEAD) cipher mode that combines the AES block cipher operating in Counter Mode with the Galois Message Authentication Code. It provides both confidentiality and data integrity in a single pass, making it the dominant symmetric encryption scheme in modern secure communications.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:symmetric-encryption",
+      "label": "Symmetric Encryption"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:end-to-end-encryption",
+        "label": "End-to-End Encryption"
+      },
+      {
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:nonce",
+        "label": "Nonce"
+      },
+      {
+        "id": "urn:ngm:class:message-authentication-code",
+        "label": "Message Authentication Code"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "cyber-security-and-cryptography",
+      "label": "Cyber Security and Cryptography"
+    }
+  ]
+}

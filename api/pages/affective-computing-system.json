@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:affective-computing-system",
+  "title": "Affective Computing System",
+  "slug": "affective-computing-system",
+  "public": true,
+  "classIri": "urn:ngm:class:affective-computing-system",
+  "domain": "ai",
+  "definition": "An Affective Computing System is a computational architecture that can recognise, interpret, simulate, or respond to human emotional and affective states through the integration of multimodal physiological and behavioural signals with machine learning models. Such systems aim to make human-computer interaction more natural and context-sensitive by treating emotion as a first-class computational variable.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:affective-computing",
+      "label": "Affective Computing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:adaptive-interfaces",
+        "label": "Adaptive Interfaces"
+      },
+      {
+        "id": "urn:ngm:class:adaptive-learning",
+        "label": "Adaptive Learning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:facial-recognition",
+        "label": "Facial Recognition"
+      },
+      {
+        "id": "urn:ngm:class:behavioral-modeling",
+        "label": "Behavioral Modeling"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-companions",
+      "label": "AI companions"
+    },
+    {
+      "slug": "emotional-analytics-engine",
+      "label": "Emotional Analytics Engine"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:3-d-modeling-software",
+  "title": "3D Modeling Software",
+  "slug": "3-d-modeling-software",
+  "public": true,
+  "classIri": "urn:ngm:class:3-d-modeling-software",
+  "domain": "spatial",
+  "definition": "3D Modeling Software is a category of applications that provide tools for constructing, editing, and organising three-dimensional geometric representations of objects and scenes, typically via polygon mesh editing, subdivision surfaces, NURBS curves, sculpting, or parametric operations. These applications underpin virtually all digital content creation workflows for games, film, architecture, product design, and XR environments. They commonly integrate texturing, rigging, animation, and basic rendering capabilities alongside the core modelling toolkit.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:3-d-modeling",
+      "label": "3D Modeling"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:3-d-content-creation",
+        "label": "3D Content Creation"
+      },
+      {
+        "id": "urn:ngm:class:3-d-asset",
+        "label": "3D Asset"
+      },
+      {
+        "id": "urn:ngm:class:animation-rig",
+        "label": "Animation Rig"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:3-d-file-format",
+        "label": "3D File Format"
+      },
+      {
+        "id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      },
+      {
+        "id": "urn:ngm:class:shader",
+        "label": "Shader"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cad-software",
+        "label": "CAD Software"
+      },
+      {
+        "id": "urn:ngm:class:bim-software",
+        "label": "BIM Software"
+      },
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "3-d-scene-exchange-protocol-sxp",
+      "label": "3D Scene Exchange Protocol (SXP)"
+    },
+    {
+      "slug": "character-model",
+      "label": "Character Model"
+    }
+  ]
+}

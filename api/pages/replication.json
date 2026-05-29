@@ -1,0 +1,62 @@
+{
+  "id": "urn:visionflow:page:replication",
+  "title": "Replication",
+  "slug": "replication",
+  "public": true,
+  "classIri": "urn:ngm:class:replication",
+  "domain": "infrastructure",
+  "definition": "Replication is the practice of maintaining multiple copies of data or services across different machines or locations to improve availability, durability, fault tolerance, and read performance. Strategies range from synchronous replication, which guarantees copies are identical before acknowledging a write, to asynchronous replication, which favours latency at the risk of temporary divergence. Replication is foundational to distributed databases, content-delivery networks, and high-availability systems, and its design forces explicit choices among consistency, availability, and partition tolerance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:fault-tolerance",
+      "label": "Fault Tolerance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-availability",
+        "label": "Data Availability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:crdt",
+        "label": "CRDT"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:distributed-storage",
+        "label": "Distributed Storage"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "fault-tolerance",
+      "label": "Fault Tolerance"
+    },
+    {
+      "slug": "graph-database",
+      "label": "Graph Database"
+    }
+  ]
+}

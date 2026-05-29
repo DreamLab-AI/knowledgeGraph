@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:wireless-radio",
+  "title": "Wireless Radio",
+  "slug": "wireless-radio",
+  "public": true,
+  "classIri": "urn:ngm:class:wireless-radio",
+  "domain": "infrastructure",
+  "definition": "Wireless radio refers to the technology and systems that transmit and receive information using electromagnetic waves propagated through free space without physical conductors, encompassing the hardware, protocols, modulation schemes, and spectrum management practices that enable wireless communication across a range of frequencies from kilohertz to millimetre-wave bands. It is the physical-layer foundation of all wireless networking standards including cellular, Wi-Fi, Bluetooth, and satellite communications.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:telecommunications",
+      "label": "Telecommunications"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:telecommunications-infrastructure",
+        "label": "Telecommunications Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:wi-fi",
+        "label": "Wi-Fi"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:radio-transceiver",
+        "label": "Radio Transceiver"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:radio-access-network",
+        "label": "Radio Access Network"
+      },
+      {
+        "id": "urn:ngm:class:wireless-connectivity",
+        "label": "Wireless Connectivity"
+      },
+      {
+        "id": "urn:ngm:class:antenna-array",
+        "label": "Antenna Array"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ar-frame",
+      "label": "AR Frame"
+    },
+    {
+      "slug": "physical-layer",
+      "label": "Physical Layer"
+    }
+  ]
+}

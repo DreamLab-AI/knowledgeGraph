@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:clip-encoder",
+  "title": "CLIP Encoder",
+  "slug": "clip-encoder",
+  "public": true,
+  "classIri": "urn:ngm:class:clip-encoder",
+  "domain": "ai",
+  "definition": "A CLIP Encoder is either of the two paired neural network encoders \u2014 an image encoder and a text encoder \u2014 within the Contrastive Language-Image Pre-training (CLIP) framework developed by OpenAI. Each encoder maps its respective modality into a shared high-dimensional embedding space where semantically related image-text pairs are placed in proximity, enabling zero-shot image classification, cross-modal retrieval, and semantic image search without task-specific fine-tuning. CLIP Encoders serve as foundational components in multimodal AI pipelines, diffusion model conditioning, and vision-language models.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:encoder",
+      "label": "Encoder"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:multimodal-learning",
+        "label": "Multimodal Learning"
+      },
+      {
+        "id": "urn:ngm:class:image-classification",
+        "label": "Image Classification"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:contrastive-learning",
+        "label": "Contrastive Learning"
+      },
+      {
+        "id": "urn:ngm:class:vision-transformer",
+        "label": "Vision Transformer"
+      },
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:clip",
+        "label": "CLIP"
+      },
+      {
+        "id": "urn:ngm:class:embedding",
+        "label": "Embedding"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "control-net-and-similar-spatial-conditioning-systems",
+      "label": "ControlNet and Similar Spatial Conditioning Systems"
+    },
+    {
+      "slug": "diffusion-models",
+      "label": "Diffusion Models"
+    }
+  ]
+}

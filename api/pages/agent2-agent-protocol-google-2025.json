@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:agent2-agent-protocol-google-2025",
+  "title": "Agent2Agent Protocol (Google 2025)",
+  "slug": "agent2-agent-protocol-google-2025",
+  "public": true,
+  "classIri": "urn:ngm:class:agent2-agent-protocol-google-2025",
+  "domain": "ai",
+  "definition": "The Agent2Agent Protocol (A2A), released by Google as an open specification in April 2025, is a JSON-RPC over HTTP(S) protocol that enables AI agents to discover one another via standardised agent cards, delegate tasks through a defined task lifecycle, and stream results back to requesting agents, regardless of the underlying model or framework used to implement the agents. It is designed as a complementary peer-to-peer layer alongside Anthropic's Model Context Protocol.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:agent-to-agent-protocol",
+      "label": "Agent-to-Agent Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:inter-agent-communication",
+        "label": "Inter-Agent Communication"
+      },
+      {
+        "id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:service-discovery",
+        "label": "Service Discovery"
+      },
+      {
+        "id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      },
+      {
+        "id": "urn:ngm:class:agent-communication-protocol",
+        "label": "Agent Communication Protocol"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "computer-use-and-browser-agents",
+      "label": "Computer Use and Browser Agents"
+    }
+  ]
+}

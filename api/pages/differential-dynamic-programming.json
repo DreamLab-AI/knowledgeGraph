@@ -1,0 +1,58 @@
+{
+  "id": "urn:visionflow:page:differential-dynamic-programming",
+  "title": "Differential Dynamic Programming",
+  "slug": "differential-dynamic-programming",
+  "public": true,
+  "classIri": "urn:ngm:class:differential-dynamic-programming",
+  "domain": "robotics",
+  "definition": "Differential Dynamic Programming (DDP) is a trajectory-optimisation algorithm that solves optimal-control problems by iteratively improving a control sequence using second-order local approximations of the dynamics and cost along the current trajectory. It performs a backward pass computing value-function derivatives and feedback gains, followed by a forward pass that applies the improved controls, converging quadratically near a solution. Together with its Gauss-Newton variant iLQR, DDP is widely used in robotics and model-predictive control for generating smooth, dynamically feasible motions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:optimal-control",
+      "label": "Optimal Control"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:model-predictive-control",
+        "label": "Model Predictive Control"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:markov-decision-process",
+        "label": "Markov Decision Process"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "force-control",
+      "label": "Force Control"
+    },
+    {
+      "slug": "model-based-control",
+      "label": "Model Based Control"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:cross-border-settlement",
+  "title": "Cross-Border Settlement",
+  "slug": "cross-border-settlement",
+  "public": true,
+  "classIri": "urn:ngm:class:cross-border-settlement",
+  "domain": "blockchain",
+  "definition": "Cross-border settlement is the process of finalising the transfer of funds or assets between counterparties in different jurisdictions, including currency conversion, compliance checks, and the irrevocable discharge of obligations across correspondent banking chains, central bank systems, or emerging blockchain-based rails. It encompasses the full lifecycle from trade initiation to finality across multiple legal, regulatory, and technical environments.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cross-border-payments",
+      "label": "Cross-Border Payments"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.85,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:atomic-settlement",
+        "label": "Atomic Settlement"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:cross-border-payment-transparency",
+        "label": "Cross-Border Payment Transparency"
+      },
+      {
+        "id": "urn:ngm:class:fsb-cross-border-payments-roadmap",
+        "label": "FSB Cross-Border Payments Roadmap"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:correspondent-banking",
+        "label": "Correspondent Banking"
+      },
+      {
+        "id": "urn:ngm:class:cbdc-cross-border-settlement",
+        "label": "CBDC Cross-Border Settlement"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "asset-registry",
+      "label": "Asset Registry"
+    },
+    {
+      "slug": "gold",
+      "label": "Gold"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:institutional-custody",
+  "title": "Institutional Custody",
+  "slug": "institutional-custody",
+  "public": true,
+  "classIri": "urn:ngm:class:institutional-custody",
+  "domain": "blockchain",
+  "definition": "Institutional custody is the regulated safekeeping of digital assets on behalf of organisations such as funds, exchanges, and corporations, combining cryptographic key-management infrastructure with legal, operational, and insurance controls that meet fiduciary standards. Providers use cold storage, multi-signature and multi-party-computation schemes, hardware security modules, and segregated accounts to protect client assets against theft, loss, and insider risk while supporting auditability and regulatory reporting. It is a precondition for large-scale institutional participation in crypto markets.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:custody",
+      "label": "Custody"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cold-storage",
+        "label": "Cold Storage"
+      },
+      {
+        "id": "urn:ngm:class:multi-signature-wallet",
+        "label": "Multi-Signature Wallet"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:institutional-investment",
+        "label": "Institutional Investment"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-asset-custody",
+        "label": "Digital Asset Custody"
+      },
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-centralisation-risks",
+      "label": "Bitcoin Centralisation Risks"
+    },
+    {
+      "slug": "multi-sig-governance",
+      "label": "Multi Sig Governance"
+    }
+  ]
+}

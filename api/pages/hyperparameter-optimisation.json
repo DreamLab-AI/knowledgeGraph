@@ -1,0 +1,79 @@
+{
+  "id": "urn:visionflow:page:hyperparameter-optimisation",
+  "title": "Hyperparameter Optimisation",
+  "slug": "hyperparameter-optimisation",
+  "public": true,
+  "classIri": "urn:ngm:class:hyperparameter-optimisation",
+  "domain": "ai",
+  "definition": "Hyperparameter optimisation is the automated search process for the configuration values \u2014 such as learning rate, regularisation strength, architecture depth, and batch size \u2014 that govern a machine learning model's training dynamics but are not learned directly from data, with the aim of maximising held-out validation performance. It encompasses grid search, random search, Bayesian optimisation, and gradient-based meta-learning, operating over an outer loop that wraps the inner model training procedure.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:hyperparameter",
+      "label": "Hyperparameter"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-model",
+        "label": "Machine Learning Model"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:machine-learning-framework",
+        "label": "Machine Learning Framework"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:neural-architecture-search",
+        "label": "Neural Architecture Search"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-pipeline",
+        "label": "Machine Learning Pipeline"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:hyperparameter-tuning",
+        "label": "Hyperparameter Tuning"
+      },
+      {
+        "id": "urn:ngm:class:learning-rate-schedule",
+        "label": "Learning Rate Schedule"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "auto-ml",
+      "label": "AutoML"
+    },
+    {
+      "slug": "model-optimisation-and-performance",
+      "label": "Model Optimisation and Performance"
+    }
+  ]
+}

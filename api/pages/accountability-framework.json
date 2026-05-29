@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:accountability-framework",
+  "title": "Accountability Framework",
+  "slug": "accountability-framework",
+  "public": true,
+  "classIri": "urn:ngm:class:accountability-framework",
+  "domain": "governance",
+  "definition": "An accountability framework is a structured set of principles, roles, processes, and controls that together define how responsibility for outcomes is assigned, tracked, and enforced within an organisation or system. It specifies who is answerable for decisions and actions, what evidence of responsible conduct must be maintained, and what redress or corrective measures apply when obligations are unmet. Accountability frameworks appear across governance, AI ethics, financial regulation, and public sector administration.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:governance-framework",
+      "label": "Governance Framework"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:audit",
+        "label": "Audit"
+      },
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      },
+      {
+        "id": "urn:ngm:class:accountability-mechanism",
+        "label": "Accountability Mechanism"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-ethics-checklist",
+      "label": "AI Ethics Checklist"
+    },
+    {
+      "slug": "trust-framework-policy",
+      "label": "Trust Framework Policy"
+    }
+  ]
+}

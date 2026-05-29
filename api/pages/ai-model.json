@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:ai-model",
+  "title": "AI Model",
+  "slug": "ai-model",
+  "public": true,
+  "classIri": "urn:ngm:class:ai-model",
+  "domain": "ai",
+  "definition": "An AI Model is a computational artefact \u2014 comprising a parameterised mathematical function, its learned weights, and associated configuration \u2014 that encodes patterns extracted from training data and can be applied to new inputs to generate predictions, classifications, embeddings, or generative outputs. AI models range from simple linear regressors to billion-parameter deep neural networks and constitute the core intellectual and commercial asset of modern AI systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:generative-model",
+      "label": "Generative Model"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-inference",
+        "label": "AI Inference"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ai-model-architecture",
+        "label": "AI Model Architecture"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:ai-model-card",
+        "label": "AI Model Card"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "ai-development",
+      "label": "AI Development"
+    },
+    {
+      "slug": "ai-model-card",
+      "label": "AI Model Card"
+    },
+    {
+      "slug": "behavioural-feedback-loop",
+      "label": "Behavioural Feedback Loop"
+    },
+    {
+      "slug": "generative-design-tool",
+      "label": "Generative Design Tool"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "id": "urn:visionflow:page:liquidity-provider",
+  "title": "Liquidity Provider",
+  "slug": "liquidity-provider",
+  "public": true,
+  "classIri": "urn:ngm:class:liquidity-provider",
+  "domain": "finance",
+  "definition": "A liquidity provider is an entity \u2014 individual, institution, or automated protocol participant \u2014 that deposits assets into a trading venue or liquidity pool to enable others to execute trades, receiving fee income or other incentives in return. In decentralised finance, liquidity providers supply token pairs to automated market makers, receiving LP tokens representing their proportional pool share.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:decentralized-finance-de-fi",
+      "label": "Decentralized Finance (DeFi)"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "id": "urn:ngm:class:lp-token",
+        "label": "LP Token"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:impermanent-loss",
+        "label": "Impermanent Loss"
+      },
+      {
+        "id": "urn:ngm:class:yield-farming",
+        "label": "Yield Farming"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-exchange",
+        "label": "Decentralized Exchange"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    },
+    {
+      "slug": "decentralized-exchange",
+      "label": "Decentralized Exchange"
+    },
+    {
+      "slug": "decentralized-finance-de-fi",
+      "label": "Decentralized Finance (DeFi)"
+    },
+    {
+      "slug": "liquidity-pool",
+      "label": "Liquidity Pool"
+    }
+  ]
+}

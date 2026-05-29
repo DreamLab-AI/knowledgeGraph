@@ -1,0 +1,71 @@
+{
+  "id": "urn:visionflow:page:asset-service",
+  "title": "Asset Service",
+  "slug": "asset-service",
+  "public": true,
+  "classIri": "urn:ngm:class:asset-service",
+  "domain": "infrastructure",
+  "definition": "An Asset Service is a runtime or backend system that exposes digital assets and their associated metadata to consuming applications through well-defined APIs, handling storage, retrieval, transcoding, access control, and lifecycle operations as managed infrastructure. It abstracts the complexity of distributed storage and processing from client applications, enabling consistent, scalable access to asset libraries.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:service-layer",
+      "label": "Service Layer"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:api-management",
+        "label": "API Management"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-management",
+        "label": "Digital Asset Management"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:asset-management-system",
+        "label": "Asset Management System"
+      },
+      {
+        "id": "urn:ngm:class:content-pipeline",
+        "label": "Content Pipeline"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:platform-service",
+        "label": "Platform Service"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "platform-layer",
+      "label": "Platform Layer"
+    },
+    {
+      "slug": "service-layer",
+      "label": "Service Layer"
+    }
+  ]
+}

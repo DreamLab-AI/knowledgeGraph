@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:comet-metric",
+  "title": "COMET Metric",
+  "slug": "comet-metric",
+  "public": true,
+  "classIri": "urn:ngm:class:comet-metric",
+  "domain": "ai",
+  "definition": "A family of learned, reference-based and reference-free evaluation metrics for machine translation that use pre-trained multilingual language model representations to predict human-quality assessments of translation output. COMET models correlate more strongly with human judgements than n-gram-overlap metrics such as BLEU by capturing semantic and contextual similarity rather than surface string matching.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:evaluation-metric",
+      "label": "Evaluation Metric"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:bleu-score",
+        "label": "BLEU Score"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:machine-translation",
+        "label": "Machine Translation"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:neural-machine-translation",
+        "label": "Neural Machine Translation"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-understanding",
+        "label": "Natural Language Understanding"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "real-time-translation",
+      "label": "Real-time Translation"
+    },
+    {
+      "slug": "translation",
+      "label": "Translation"
+    }
+  ]
+}

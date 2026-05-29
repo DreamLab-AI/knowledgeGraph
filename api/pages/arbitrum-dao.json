@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:arbitrum-dao",
+  "title": "Arbitrum DAO",
+  "slug": "arbitrum-dao",
+  "public": true,
+  "classIri": "urn:ngm:class:arbitrum-dao",
+  "domain": "blockchain",
+  "definition": "Arbitrum DAO is the decentralised autonomous organisation that governs the Arbitrum One and Arbitrum Nova Layer 2 blockchain networks, operating through the ARB governance token launched by Offchain Labs in March 2023. Token holders propose and vote on protocol upgrades, treasury allocations, and parameter changes via on-chain governance contracts, making Arbitrum DAO one of the largest DAOs by treasury value in the Ethereum ecosystem. Governance decisions are executed through a Security Council with emergency intervention powers and a broader Arbitrum Improvement Proposal (AIP) process for standard changes.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dao",
+      "label": "DAO"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:on-chain-governance",
+        "label": "On-chain Governance"
+      },
+      {
+        "id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-voting",
+        "label": "On Chain Voting"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "dao-analytics",
+      "label": "DAO Analytics"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "snapshot-voting",
+      "label": "Snapshot Voting"
+    }
+  ]
+}

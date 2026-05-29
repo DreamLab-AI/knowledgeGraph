@@ -1,0 +1,69 @@
+{
+  "id": "urn:visionflow:page:stranded-energy-monetisation",
+  "title": "Stranded Energy Monetisation",
+  "slug": "stranded-energy-monetisation",
+  "public": true,
+  "classIri": "urn:ngm:class:stranded-energy-monetisation",
+  "domain": "blockchain",
+  "definition": "Stranded energy monetisation is the practice of converting otherwise wasted or non-transmittable electricity\u2014including curtailed renewable generation, flared natural gas, and grid-overflow surplus\u2014into economic value through flexible, interruptible load processes such as Bitcoin mining or electrolyser hydrogen production. By co-locating computation or industrial loads at the energy source, it captures value that cannot reach load centres due to grid constraints.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:stranded-energy",
+      "label": "Stranded Energy"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:bitcoin-mining",
+        "label": "Bitcoin Mining"
+      },
+      {
+        "id": "urn:ngm:class:demand-response",
+        "label": "Demand Response"
+      },
+      {
+        "id": "urn:ngm:class:methane-abatement",
+        "label": "Methane Abatement"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:demand-response-mining",
+        "label": "Demand Response Mining"
+      },
+      {
+        "id": "urn:ngm:class:methane-mitigation-mining",
+        "label": "Methane Mitigation Mining"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-sustainability",
+        "label": "Blockchain Sustainability"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-environmental-issues",
+      "label": "Bitcoin Environmental Issues"
+    },
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    }
+  ]
+}

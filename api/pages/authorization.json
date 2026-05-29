@@ -1,0 +1,83 @@
+{
+  "id": "urn:visionflow:page:authorization",
+  "title": "Authorization",
+  "slug": "authorization",
+  "public": true,
+  "classIri": "urn:ngm:class:authorization",
+  "domain": "security",
+  "definition": "The security process that determines what actions an authenticated principal is permitted to perform on specific resources within a system. Authorization evaluates the subject's identity, role, attributes, and contextual factors against a policy to produce an access decision, operating as a distinct layer from authentication and separate from audit.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:access-control",
+      "label": "Access Control"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:policy-decision-point",
+        "label": "Policy Decision Point"
+      },
+      {
+        "id": "urn:ngm:class:role-based-access-control",
+        "label": "Role-Based Access Control"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      },
+      {
+        "id": "urn:ngm:class:audit",
+        "label": "Audit"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "data-protection",
+      "label": "Data Protection"
+    },
+    {
+      "slug": "digital-identity",
+      "label": "Digital Identity"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "id": "urn:visionflow:page:acceleration-structure",
+  "title": "Acceleration Structure",
+  "slug": "acceleration-structure",
+  "public": true,
+  "classIri": "urn:ngm:class:acceleration-structure",
+  "domain": "spatial",
+  "definition": "An acceleration structure is a spatial data structure that organises geometric primitives in a scene to allow rapid culling of irrelevant geometry during ray intersection or visibility queries, dramatically reducing the computational complexity of rendering algorithms from O(n) per-ray to approximately O(log n). Common forms include bounding volume hierarchies, k-d trees, and octrees, each making different trade-offs between construction time, memory footprint, and query efficiency.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:spatial-index",
+      "label": "Spatial Index"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:bounding-volume-hierarchy",
+        "label": "Bounding Volume Hierarchy"
+      },
+      {
+        "id": "urn:ngm:class:gpu-acceleration",
+        "label": "GPU Acceleration"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      },
+      {
+        "id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:scene-graph",
+        "label": "Scene Graph"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ray-tracing",
+      "label": "Ray Tracing"
+    },
+    {
+      "slug": "rendering-pipeline",
+      "label": "Rendering Pipeline"
+    }
+  ]
+}

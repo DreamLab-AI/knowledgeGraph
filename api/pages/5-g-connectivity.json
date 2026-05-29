@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:5-g-connectivity",
+  "title": "5G Connectivity",
+  "slug": "5-g-connectivity",
+  "public": true,
+  "classIri": "urn:ngm:class:5-g-connectivity",
+  "domain": "infrastructure",
+  "definition": "5G Connectivity is the set of radio access and core network capabilities delivered by a 5G NR network that provides devices and applications with wireless communication services characterised by high throughput, ultra-low latency, and high device density. It encompasses the radio link between user equipment and the gNB base station, quality-of-service mechanisms, network slicing for application-specific service guarantees, and the APIs through which applications access network capabilities. 5G Connectivity is a critical enabler for cloud XR, autonomous systems, and real-time industrial applications.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:5-g",
+      "label": "5G"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:xr-applications",
+        "label": "XR Applications"
+      },
+      {
+        "id": "urn:ngm:class:io-t-infrastructure",
+        "label": "IoT Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:low-latency",
+        "label": "Low Latency"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:5-g-network",
+        "label": "5G Network"
+      },
+      {
+        "id": "urn:ngm:class:multi-access-edge-computing",
+        "label": "MultiAccessEdgeComputing"
+      },
+      {
+        "id": "urn:ngm:class:network-function-virtualization",
+        "label": "Network Function Virtualization"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:guaranteed-bandwidth",
+        "label": "Guaranteed Bandwidth"
+      },
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "id": "urn:ngm:class:3-gpp",
+        "label": "3GPP"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "digital-twin-infrastructure",
+      "label": "Digital Twin Infrastructure"
+    },
+    {
+      "slug": "ground-robot",
+      "label": "Ground Robot"
+    }
+  ]
+}

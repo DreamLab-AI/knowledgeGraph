@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:bridge-contract",
+  "title": "Bridge Contract",
+  "slug": "bridge-contract",
+  "public": true,
+  "classIri": "urn:ngm:class:bridge-contract",
+  "domain": "blockchain",
+  "definition": "A Bridge Contract is a smart contract deployed on one or more blockchain networks that facilitates the transfer of tokens, messages, or state between two separate chains by locking or burning assets on the source chain and minting or releasing equivalent assets on the destination chain. Bridge contracts are the on-chain components of cross-chain bridge protocols, enforcing custody, verifying cryptographic proofs of source-chain events, and coordinating with off-chain relayers or decentralised oracle networks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:smart-contract",
+      "label": "Smart Contract"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-asset-transfer",
+        "label": "Cross Chain Asset Transfer"
+      },
+      {
+        "id": "urn:ngm:class:wrapped-token",
+        "label": "Wrapped Token"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:relayer",
+        "label": "Relayer"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cross-chain-interoperability",
+        "label": "Cross-Chain Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:sidechain",
+        "label": "Sidechain"
+      },
+      {
+        "id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    },
+    {
+      "slug": "cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    }
+  ]
+}

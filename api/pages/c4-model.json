@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:c4-model",
+  "title": "C4 Model",
+  "slug": "c4-model",
+  "public": true,
+  "classIri": "urn:ngm:class:c4-model",
+  "domain": "infrastructure",
+  "definition": "The C4 Model is a hierarchical software architecture notation system developed by Simon Brown that uses four abstraction levels \u2014 Context, Containers, Components, and Code \u2014 to describe and communicate the structure of a software system at progressively increasing levels of technical detail. Each level targets a different audience, from non-technical stakeholders at the Context level to developers at the Code level, using a minimal, tool-agnostic set of diagram elements that are easy to reason about and keep up to date.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:software-architecture",
+      "label": "Software Architecture"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:documentation-generation",
+        "label": "Documentation Generation"
+      },
+      {
+        "id": "urn:ngm:class:documentation-standards",
+        "label": "Documentation Standards"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:diagrams-as-code",
+        "label": "Diagrams as Code"
+      },
+      {
+        "id": "urn:ngm:class:structurizr-dsl",
+        "label": "Structurizr DSL"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:enterprise-architecture",
+        "label": "Enterprise Architecture"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-diagram-tools",
+      "label": "AI Diagram Tools"
+    },
+    {
+      "slug": "diagrams-as-code",
+      "label": "Diagrams as Code"
+    },
+    {
+      "slug": "diagrams-as-code",
+      "label": "Diagrams as Code"
+    }
+  ]
+}

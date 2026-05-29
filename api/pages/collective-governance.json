@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:collective-governance",
+  "title": "Collective Governance",
+  "slug": "collective-governance",
+  "public": true,
+  "classIri": "urn:ngm:class:collective-governance",
+  "domain": "governance",
+  "definition": "A system of rules, norms, and decision-making processes through which a group of stakeholders jointly determines how shared resources, organisations, or platforms are managed. It distributes authority among participants rather than concentrating it in a single administrator, seeking legitimacy through inclusive participation and transparent deliberation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:community-governance",
+      "label": "Community Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:collective-action",
+        "label": "Collective Action"
+      },
+      {
+        "id": "urn:ngm:class:coordination-mechanisms",
+        "label": "Coordination Mechanisms"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "id": "urn:ngm:class:polycentric-governance",
+        "label": "Polycentric Governance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:collective-decision-making",
+        "label": "Collective Decision Making"
+      },
+      {
+        "id": "urn:ngm:class:community-decision-making",
+        "label": "Community Decision Making"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "civic-participation",
+      "label": "Civic Participation"
+    },
+    {
+      "slug": "climate-action-dao",
+      "label": "Climate Action DAO"
+    }
+  ]
+}

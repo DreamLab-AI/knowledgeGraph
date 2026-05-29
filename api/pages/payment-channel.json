@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:payment-channel",
+  "title": "Payment Channel",
+  "slug": "payment-channel",
+  "public": true,
+  "classIri": "urn:ngm:class:payment-channel",
+  "domain": "blockchain",
+  "definition": "A payment channel is a cryptographic construct that allows two or more parties to conduct multiple off-chain transactions by exchanging signed commitment messages, with only the opening and closing states recorded on a base-layer blockchain, thereby enabling high-throughput, low-fee payments without sacrificing on-chain settlement guarantees. Channels are typically secured by time-locked contracts and mutual revocation mechanisms.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:off-chain-scaling",
+      "label": "Off-Chain Scaling"
+    },
+    {
+      "id": "urn:ngm:class:layer-2-solutions",
+      "label": "Layer-2 Solutions"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:hash-time-locked-contract",
+        "label": "Hash Time-Locked Contract"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:settlement",
+        "label": "Settlement"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-protocol",
+        "label": "Bitcoin Protocol"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "atomic-swap",
+      "label": "Atomic Swap"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    },
+    {
+      "slug": "micropayments",
+      "label": "Micropayments"
+    },
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    },
+    {
+      "slug": "state-channel",
+      "label": "State Channel"
+    }
+  ]
+}

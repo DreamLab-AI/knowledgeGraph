@@ -1,0 +1,79 @@
+{
+  "id": "urn:visionflow:page:hybrid-search",
+  "title": "Hybrid Search",
+  "slug": "hybrid-search",
+  "public": true,
+  "classIri": "urn:ngm:class:hybrid-search",
+  "domain": "ai",
+  "definition": "Hybrid search is an information retrieval approach that combines sparse lexical retrieval \u2014 typically BM25 or TF-IDF \u2014 with dense vector search over neural embeddings, fusing their complementary strengths: precise keyword matching and semantic understanding respectively. The combination consistently outperforms either method alone across diverse query types, and has become the dominant retrieval pattern underpinning Retrieval-Augmented Generation pipelines.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:information-retrieval",
+      "label": "Information Retrieval"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:cross-encoder-reranking",
+        "label": "Cross-Encoder Reranking"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "id": "urn:ngm:class:bm25",
+        "label": "BM25"
+      },
+      {
+        "id": "urn:ngm:class:vector-embedding",
+        "label": "Vector Embedding"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation-rag",
+        "label": "Retrieval Augmented Generation - RAG"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "gpts-and-custom-assistants",
+      "label": "GPTs and Custom Assistants"
+    },
+    {
+      "slug": "retrieval-augmented-generation-rag",
+      "label": "Retrieval Augmented Generation - RAG"
+    }
+  ]
+}

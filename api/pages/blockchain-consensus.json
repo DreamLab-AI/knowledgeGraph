@@ -1,0 +1,91 @@
+{
+  "id": "urn:visionflow:page:blockchain-consensus",
+  "title": "Blockchain Consensus",
+  "slug": "blockchain-consensus",
+  "public": true,
+  "classIri": "urn:ngm:class:blockchain-consensus",
+  "domain": "blockchain",
+  "definition": "Blockchain Consensus refers to the family of distributed agreement protocols by which independent, potentially adversarial nodes in a blockchain network reach agreement on a single canonical version of the transaction ledger, including the ordering, validity, and finality of all blocks. These protocols must tolerate Byzantine faults \u2014 nodes that may behave maliciously or arbitrarily \u2014 and operate across open, permissionless networks without a trusted coordinator. The choice of consensus mechanism fundamentally shapes a blockchain's security model, throughput, energy consumption, and degree of decentralisation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:consensus-mechanism",
+      "label": "Consensus Mechanism"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:nakamoto-consensus",
+        "label": "Nakamoto Consensus"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:finality",
+        "label": "Finality"
+      },
+      {
+        "id": "urn:ngm:class:sybil-resistance",
+        "label": "Sybil Resistance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockchain-ledger",
+        "label": "Blockchain Ledger"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    },
+    {
+      "slug": "decentralized-exchange",
+      "label": "Decentralized Exchange"
+    },
+    {
+      "slug": "decentralized-governance",
+      "label": "Decentralized Governance"
+    },
+    {
+      "slug": "distributed-computing",
+      "label": "Distributed Computing"
+    },
+    {
+      "slug": "verification",
+      "label": "VERIFICATION"
+    }
+  ]
+}

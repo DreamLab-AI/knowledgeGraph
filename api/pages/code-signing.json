@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:code-signing",
+  "title": "Code Signing",
+  "slug": "code-signing",
+  "public": true,
+  "classIri": "urn:ngm:class:code-signing",
+  "domain": "security",
+  "definition": "Code Signing is a cryptographic practice in which software publishers digitally sign executables, scripts, container images, and other software artefacts using a private key, enabling recipients to verify the artefact's authenticity and integrity through the corresponding public key certificate. Implemented via asymmetric cryptography and X.509 certificate chains anchored to trusted Certificate Authorities or transparency logs, code signing is a fundamental control in software supply chain security, preventing the distribution of tampered or malicious software. Modern approaches include keyless signing via short-lived certificates and cryptographic transparency logs.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptographic-signing",
+      "label": "Cryptographic Signing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:supply-chain-traceability",
+        "label": "Supply Chain Traceability"
+      },
+      {
+        "id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      },
+      {
+        "id": "urn:ngm:class:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:notary-service",
+        "label": "Notary Service"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "slug": "hash-function",
+      "label": "Hash Function"
+    }
+  ]
+}

@@ -1,13 +1,13 @@
 {
-  "total_pages": 3493,
-  "pages_with_ontology": 3493,
-  "public_pages": 3479,
-  "total_issues": 1834,
+  "total_pages": 3960,
+  "pages_with_ontology": 3960,
+  "public_pages": 3946,
+  "total_issues": 2142,
   "errors": 0,
-  "warnings": 1834,
+  "warnings": 2142,
   "by_code": {
-    "MULTI_PARENT": 1533,
-    "INVALID_DOMAIN": 301
+    "MULTI_PARENT": 1544,
+    "INVALID_DOMAIN": 598
   },
   "issues": [
     {
@@ -27,6 +27,12 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Content and Assets, Digital Asset Management"
+    },
+    {
+      "path": "3D Content Creation.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'spatial' not in valid set"
     },
     {
       "path": "3D Content Generation.md",
@@ -53,6 +59,12 @@
       "message": "Multiple parents (2): Telepresence, TELE-050-neural-rendering-telepresence"
     },
     {
+      "path": "3D Generation.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
       "path": "3D Graphics Standard.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -71,10 +83,22 @@
       "message": "Multiple parents (2): Content and Assets, Digital Asset"
     },
     {
+      "path": "3D Modeling Software.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'spatial' not in valid set"
+    },
+    {
       "path": "3D Modeling.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): Content and Assets, Digital Art, 3D Development"
+    },
+    {
+      "path": "3D Perception.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'spatial' not in valid set"
     },
     {
       "path": "3D Reconstruction.md",
@@ -95,10 +119,34 @@
       "message": "Domain 'graphics' not in valid set"
     },
     {
+      "path": "3D Scanning.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'spatial' not in valid set"
+    },
+    {
+      "path": "3D Scene Reconstruction.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'spatial' not in valid set"
+    },
+    {
       "path": "3D User Interface.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): Interaction Technology, Interaction Design, User Interface"
+    },
+    {
+      "path": "6DoF Tracking.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'spatial' not in valid set"
+    },
+    {
+      "path": "A2A Protocol.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
     },
     {
       "path": "ACL.md",
@@ -113,6 +161,18 @@
       "message": "Multiple parents (2): Robot Type, Autonomous Vehicle"
     },
     {
+      "path": "ADE20K.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
+      "path": "AES-GCM.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'security' not in valid set"
+    },
+    {
       "path": "AI Accountability.md",
       "severity": "warning",
       "code": "INVALID_DOMAIN",
@@ -123,6 +183,12 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): AI Governance and Ethics, Organisational Change, Socio-Technical Process"
+    },
+    {
+      "path": "AI Agent Payments.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'finance' not in valid set"
     },
     {
       "path": "AI Agent System.md",
@@ -159,6 +225,12 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): AI Infrastructure (Category), Diagram-as-Code, Knowledge Visualisation"
+    },
+    {
+      "path": "AI Ecosystem.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
     },
     {
       "path": "AI Ethics Board.md",
@@ -215,10 +287,28 @@
       "message": "Multiple parents (2): AI Governance and Ethics, AI Risk"
     },
     {
+      "path": "AI Inference.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
       "path": "AI Liability.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): AI Governance and Ethics, Civil Liability, Tort Law"
+    },
+    {
+      "path": "AI Model Development.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
+      "path": "AI Model.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
     },
     {
       "path": "AI Monitoring.md",
@@ -231,6 +321,12 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): AI Governance and Ethics, AI Deployment"
+    },
+    {
+      "path": "AI Risk Assessment.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'governance' not in valid set"
     },
     {
       "path": "AI Risk Management.md",
@@ -281,6 +377,24 @@
       "message": "Multiple parents (2): AI Governance and Ethics, Cybersecurity"
     },
     {
+      "path": "AI System.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
+      "path": "AI Talent War.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
+      "path": "AI Talent.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
       "path": "AI Upscaling and Super-Resolution.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -317,6 +431,12 @@
       "message": "Multiple parents (2): AI Research Area, Technology Domain"
     },
     {
+      "path": "AISI Frontier AI Safety Framework.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'governance' not in valid set"
+    },
+    {
       "path": "AML KYC Compliance.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -335,6 +455,12 @@
       "message": "Multiple parents (3): Display and Rendering, AR Hardware, Optical See-Through HMD"
     },
     {
+      "path": "AR Occlusion.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'spatial' not in valid set"
+    },
+    {
       "path": "AR Registration.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -347,16 +473,40 @@
       "message": "Multiple parents (2): Platform and Environment, Extended Reality"
     },
     {
+      "path": "ARC-AGI.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
+      "path": "ARM TrustZone.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'security' not in valid set"
+    },
+    {
       "path": "AUC.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): AI Technique, Evaluation Metric"
     },
     {
+      "path": "Acceleration Structure.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'spatial' not in valid set"
+    },
+    {
       "path": "Accelerometer.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Perception and Sensing, Sensor"
+    },
+    {
+      "path": "Access Control Decisions.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'security' not in valid set"
     },
     {
       "path": "Access Control System.md",
@@ -369,6 +519,12 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Security and Identity, Security Mechanism"
+    },
+    {
+      "path": "Accessibility Captioning.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'media' not in valid set"
     },
     {
       "path": "Accessibility Standards.md",
@@ -407,10 +563,28 @@
       "message": "Multiple parents (3): Protocol and Consensus, Blockchain Entity, DistributedDataStructure"
     },
     {
+      "path": "Accountability (AI-0068).md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
       "path": "Accountability (OECD).md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): AI Governance and Ethics, Policy Framework"
+    },
+    {
+      "path": "Accountability Framework.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'governance' not in valid set"
+    },
+    {
+      "path": "Accountability Mechanism.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'governance' not in valid set"
     },
     {
       "path": "Accountability.md",
@@ -443,6 +617,12 @@
       "message": "Domain 'ai' not in valid set"
     },
     {
+      "path": "Action Space.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
       "path": "Activation Function.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -455,10 +635,46 @@
       "message": "Multiple parents (3): AI Technique, Data-Efficient Learning, Interactive Learning"
     },
     {
+      "path": "Activity Data.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
+      "path": "ActivityPub.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'web' not in valid set"
+    },
+    {
+      "path": "Adaptive Behaviour.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
       "path": "Adaptive Control.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Actuation and Control, RB-1002-closed-loop-control"
+    },
+    {
+      "path": "Adaptive Interfaces.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'web' not in valid set"
+    },
+    {
+      "path": "Adaptive Learning.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
+      "path": "Adaptive Music.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'media' not in valid set"
     },
     {
       "path": "Adaptive Virtual Experience.md",
@@ -485,6 +701,18 @@
       "message": "Multiple parents (3): Actuation and Control, Force Control, Compliance Control"
     },
     {
+      "path": "Adobe Creative Cloud.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'media' not in valid set"
+    },
+    {
+      "path": "Adobe Firefly.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'media' not in valid set"
+    },
+    {
       "path": "Adoption of Convergent Technologies.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -497,16 +725,40 @@
       "message": "Multiple parents (2): AI Technique, AI Security Threats"
     },
     {
+      "path": "Adversarial Machine Learning.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'security' not in valid set"
+    },
+    {
       "path": "Adversarial Testing.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): AI Governance and Ethics, AI Safety"
     },
     {
+      "path": "Advertising and Marketing.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'media' not in valid set"
+    },
+    {
+      "path": "Advertising.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'media' not in valid set"
+    },
+    {
       "path": "Aerial Robot.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Robot Type, Mobile Robot"
+    },
+    {
+      "path": "Affective Computing System.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
     },
     {
       "path": "Affective Computing.md",
@@ -521,10 +773,46 @@
       "message": "Domain 'governance' not in valid set"
     },
     {
+      "path": "Agent Communication Protocol.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
       "path": "Agent Frameworks.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): AI Infrastructure (Category), LLM Orchestration, Workflow Engine"
+    },
+    {
+      "path": "Agent Orchestrator.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
+      "path": "Agent Runtime.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
+      "path": "Agent-Based Models.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
+      "path": "Agent-to-Agent Protocol.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
+      "path": "Agent2Agent Protocol (Google 2025).md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
     },
     {
       "path": "Agent2Agent Protocol.md",
@@ -617,6 +905,30 @@
       "message": "Multiple parents (2): AI Governance and Ethics, AI Ethics"
     },
     {
+      "path": "Algorithmic Transparency.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'governance' not in valid set"
+    },
+    {
+      "path": "Alignment.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
+      "path": "Ambient Computing.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'spatial' not in valid set"
+    },
+    {
+      "path": "Ambient Occlusion.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'spatial' not in valid set"
+    },
+    {
       "path": "Analog To Digital Converter.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -639,6 +951,12 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Content and Assets, Animation Technology"
+    },
+    {
+      "path": "Animation Rig.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'spatial' not in valid set"
     },
     {
       "path": "Animation Software.md",
@@ -671,10 +989,34 @@
       "message": "Multiple parents (2): Network Component, Supply Chain Blockchain"
     },
     {
+      "path": "Apache License 2.0.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'governance' not in valid set"
+    },
+    {
       "path": "Appearance Translation.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Display and Rendering, Neural Image Processing"
+    },
+    {
+      "path": "Apple Vision Pro.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'spatial' not in valid set"
+    },
+    {
+      "path": "Apple.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'spatial' not in valid set"
+    },
+    {
+      "path": "Application Development.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'web' not in valid set"
     },
     {
       "path": "Ar Display Device.md",
@@ -717,6 +1059,12 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Governance and Safety, Professional Qualification"
+    },
+    {
+      "path": "ArcFace.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
     },
     {
       "path": "Archaeological Site Reconstruction.md",
@@ -767,16 +1115,40 @@
       "message": "Multiple parents (2): Content and Assets, Digital Repository"
     },
     {
+      "path": "Asset Creation.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'media' not in valid set"
+    },
+    {
+      "path": "Asset Digitization.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'spatial' not in valid set"
+    },
+    {
       "path": "Asset Format Standards.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Standards and Interoperability, Technical Standards"
     },
     {
+      "path": "Asset Liquidity.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'finance' not in valid set"
+    },
+    {
       "path": "Asset Management.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Computing and Cloud, Financial Services"
+    },
+    {
+      "path": "Asset Optimization.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'spatial' not in valid set"
     },
     {
       "path": "Asset Pipeline.md",
@@ -801,6 +1173,12 @@
       "severity": "warning",
       "code": "INVALID_DOMAIN",
       "message": "Domain 'ai' not in valid set"
+    },
+    {
+      "path": "Asymmetric Cryptography.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'security' not in valid set"
     },
     {
       "path": "Asynchronous Collaboration.md",
@@ -851,6 +1229,12 @@
       "message": "Multiple parents (2): Governance and Safety, Identity Management"
     },
     {
+      "path": "Audio Engine.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'media' not in valid set"
+    },
+    {
       "path": "Audio Parameters.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -863,10 +1247,22 @@
       "message": "Domain 'ai' not in valid set"
     },
     {
+      "path": "Audio Signal Processing.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'media' not in valid set"
+    },
+    {
       "path": "Audio Spatialization.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Display and Rendering, Spatial Audio Technology"
+    },
+    {
+      "path": "Audit Function.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'governance' not in valid set"
     },
     {
       "path": "Audit Log.md",
@@ -879,6 +1275,18 @@
       "severity": "warning",
       "code": "INVALID_DOMAIN",
       "message": "Domain 'security' not in valid set"
+    },
+    {
+      "path": "Audit Mechanism.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'security' not in valid set"
+    },
+    {
+      "path": "Audit.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'governance' not in valid set"
     },
     {
       "path": "Augmented Connected Workforce.md",
@@ -935,6 +1343,12 @@
       "message": "Domain 'security' not in valid set"
     },
     {
+      "path": "Authenticity Certification.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'security' not in valid set"
+    },
+    {
       "path": "Authoring Tool.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -942,6 +1356,12 @@
     },
     {
       "path": "Authorisation.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'security' not in valid set"
+    },
+    {
+      "path": "Authorization.md",
       "severity": "warning",
       "code": "INVALID_DOMAIN",
       "message": "Domain 'security' not in valid set"
@@ -963,6 +1383,12 @@
       "severity": "warning",
       "code": "INVALID_DOMAIN",
       "message": "Domain 'governance' not in valid set"
+    },
+    {
+      "path": "Automated Design.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
     },
     {
       "path": "Automated Market Making.md",
@@ -1001,16 +1427,46 @@
       "message": "Domain 'ai' not in valid set"
     },
     {
+      "path": "Automatic1111.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
       "path": "Autonomous AI Agents.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): AI Application, AI Agent System"
     },
     {
+      "path": "Autonomous Behavior.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
+      "path": "Autonomous Driving Perception.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
       "path": "Autonomous Navigation.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Platform and Environment, Autonomous Agent"
+    },
+    {
+      "path": "Autonomous Operation.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
+      "path": "Autonomous Task Execution.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
     },
     {
       "path": "Avatar Animation.md",
@@ -1073,6 +1529,24 @@
       "message": "Multiple parents (2): Interaction Technology, Social Computing"
     },
     {
+      "path": "BBS+ Signature.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'security' not in valid set"
+    },
+    {
+      "path": "BBS+ Signatures.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'security' not in valid set"
+    },
+    {
+      "path": "BEIR Benchmark.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
       "path": "BERT.md",
       "severity": "warning",
       "code": "INVALID_DOMAIN",
@@ -1103,10 +1577,22 @@
       "message": "Domain 'security' not in valid set"
     },
     {
+      "path": "BLEU Score.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
       "path": "BM25.md",
       "severity": "warning",
       "code": "INVALID_DOMAIN",
       "message": "Domain 'ai' not in valid set"
+    },
+    {
+      "path": "BSI Germany.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'security' not in valid set"
     },
     {
       "path": "BTC Layer 3.md",
@@ -1133,6 +1619,18 @@
       "message": "Multiple parents (3): Protocol and Infrastructure, Adaptive Bitrate Streaming, Congestion Control"
     },
     {
+      "path": "Bank Secrecy Act.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'governance' not in valid set"
+    },
+    {
+      "path": "Bank of England.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'finance' not in valid set"
+    },
+    {
       "path": "Barter System.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -1149,6 +1647,12 @@
       "severity": "warning",
       "code": "INVALID_DOMAIN",
       "message": "Domain 'finance' not in valid set"
+    },
+    {
+      "path": "Basel Committee.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'governance' not in valid set"
     },
     {
       "path": "Batch Processing.md",
@@ -1170,6 +1674,18 @@
     },
     {
       "path": "Bayesian Optimisation.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
+      "path": "Beam Search Decoding.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
+      "path": "Beam Search.md",
       "severity": "warning",
       "code": "INVALID_DOMAIN",
       "message": "Domain 'ai' not in valid set"
@@ -1205,6 +1721,12 @@
       "message": "Domain 'ai' not in valid set"
     },
     {
+      "path": "Behavioural Economics.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'finance' not in valid set"
+    },
+    {
       "path": "Benchmark Standard.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -1215,6 +1737,12 @@
       "severity": "warning",
       "code": "INVALID_DOMAIN",
       "message": "Domain 'ai' not in valid set"
+    },
+    {
+      "path": "Beneficial Ownership Disclosure.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'governance' not in valid set"
     },
     {
       "path": "Bias in Large Language Models.md",
@@ -1235,10 +1763,34 @@
       "message": "Multiple parents (2): Standards and Interoperability, Data Format"
     },
     {
+      "path": "Binaural Rendering.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'spatial' not in valid set"
+    },
+    {
+      "path": "Binding Corporate Rules.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'governance' not in valid set"
+    },
+    {
       "path": "Bio Terror.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): Legal and Regulatory, Biosecurity, Dual-Use Research"
+    },
+    {
+      "path": "Biometric Authentication.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'security' not in valid set"
+    },
+    {
+      "path": "Biometric Verification.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'security' not in valid set"
     },
     {
       "path": "Biosensing Interface.md",
@@ -1293,6 +1845,18 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): DeFi and Economics, Economic Philosophy, Store of Value"
+    },
+    {
+      "path": "Bitstring Status List.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'governance' not in valid set"
+    },
+    {
+      "path": "Blind Signatures.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'security' not in valid set"
     },
     {
       "path": "Block Header.md",
@@ -1415,6 +1979,18 @@
       "message": "Multiple parents (3): Protocol and Consensus, Protocol Architecture, System Performance"
     },
     {
+      "path": "Board-Level Oversight.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'governance' not in valid set"
+    },
+    {
+      "path": "Boardroom.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'governance' not in valid set"
+    },
+    {
       "path": "Boosting.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -1425,6 +2001,12 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Display and Rendering, Spatial Data Structure"
+    },
+    {
+      "path": "Bounding Volume.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'spatial' not in valid set"
     },
     {
       "path": "Brain Computer Interfaces.md",
@@ -1439,16 +2021,34 @@
       "message": "Multiple parents (3): Communication Technology, Collaborative Learning Infrastructure, Group Facilitation Tools"
     },
     {
+      "path": "Broadcast Production.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'media' not in valid set"
+    },
+    {
       "path": "Browser Automation.md",
       "severity": "warning",
       "code": "INVALID_DOMAIN",
       "message": "Domain 'ai' not in valid set"
     },
     {
+      "path": "Bullet Physics.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'spatial' not in valid set"
+    },
+    {
       "path": "Burning Mechanism.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): DeFi and Economics, Blockchain Entity, Economic Mechanism"
+    },
+    {
+      "path": "Business Process Management.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'governance' not in valid set"
     },
     {
       "path": "Byzantine Fault Tolerance.md",
@@ -1463,10 +2063,22 @@
       "message": "Multiple parents (2): Standards and Interoperability, Technical Standard"
     },
     {
+      "path": "CAD Software.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'spatial' not in valid set"
+    },
+    {
       "path": "CBDC Frameworks.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): Governance and Regulation, Central Bank Infrastructure, Monetary Policy Framework"
+    },
+    {
+      "path": "CBDC Infrastructure.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'finance' not in valid set"
     },
     {
       "path": "CBDCs.md",
@@ -1481,6 +2093,12 @@
       "message": "Multiple parents (3): AI Application, Agentic Workflow, Autonomous Agents"
     },
     {
+      "path": "CLIP Encoder.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
       "path": "COCO Dataset.md",
       "severity": "warning",
       "code": "INVALID_DOMAIN",
@@ -1493,6 +2111,12 @@
       "message": "Domain 'metaverse' not in valid set"
     },
     {
+      "path": "COMET Metric.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
       "path": "COMPLETE ONTOLOGY INDEX.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -1503,6 +2127,12 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): Protocol and Infrastructure, Commutative Data Structure, Distributed Data Synchronisation"
+    },
+    {
+      "path": "CRM.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
     },
     {
       "path": "CVPR.md",
@@ -1523,6 +2153,12 @@
       "message": "Multiple parents (2): Standards and Interoperability, Technical Standard"
     },
     {
+      "path": "Calibration System.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'spatial' not in valid set"
+    },
+    {
       "path": "Calibration Target.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -1541,16 +2177,58 @@
       "message": "Multiple parents (3): AI Application, Customer Service Automation, Enterprise AI"
     },
     {
+      "path": "Camera Intrinsics.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'spatial' not in valid set"
+    },
+    {
       "path": "Camera Parameters.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Display and Rendering, Imaging Parameters"
     },
     {
+      "path": "Camera Tracking System.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'spatial' not in valid set"
+    },
+    {
+      "path": "Camera Tracking.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'spatial' not in valid set"
+    },
+    {
       "path": "Camera.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): Perception and Sensing, VisualPerception, Sensor"
+    },
+    {
+      "path": "Canonical JSON.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'web' not in valid set"
+    },
+    {
+      "path": "Capability Elicitation.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
+      "path": "Capital Adequacy.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'finance' not in valid set"
+    },
+    {
+      "path": "Carbon Accounting Software.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'governance' not in valid set"
     },
     {
       "path": "Carbon Accounting.md",
@@ -1595,6 +2273,12 @@
       "message": "Multiple parents (3): Legal and Regulatory, Climate Risk Management, Measurement Frameworks"
     },
     {
+      "path": "Carbon Markets.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'finance' not in valid set"
+    },
+    {
       "path": "Carbon Neutral Blockchain.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -1613,16 +2297,34 @@
       "message": "Multiple parents (2): Governance and Safety, Environmental Verification"
     },
     {
+      "path": "Carbon Neutrality.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'governance' not in valid set"
+    },
+    {
       "path": "Carbon Offset Certificate.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Governance and Safety, Environmental Certificate"
     },
     {
+      "path": "Carbon Offset Programme.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'governance' not in valid set"
+    },
+    {
       "path": "Carbon Offset Trading.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Governance and Safety, Environmental Trading"
+    },
+    {
+      "path": "Carbon Price Discovery.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'finance' not in valid set"
     },
     {
       "path": "Carbon Registry.md",
@@ -1649,6 +2351,18 @@
       "message": "Multiple parents (2): AI Model Architecture, Attention Mechanism"
     },
     {
+      "path": "Causal Inference.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
+      "path": "Causal Language Modelling.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
       "path": "Censorship Resistance.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -1661,6 +2375,12 @@
       "message": "Multiple parents (2): Computing and Cloud, Digital Currency"
     },
     {
+      "path": "Central Bank Infrastructure.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'finance' not in valid set"
+    },
+    {
       "path": "Central Bank.md",
       "severity": "warning",
       "code": "INVALID_DOMAIN",
@@ -1671,6 +2391,18 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): Robot Type, Centralized Control Architecture, Swarm Control"
+    },
+    {
+      "path": "Certificate Transparency.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'security' not in valid set"
+    },
+    {
+      "path": "ChaCha20-Poly1305.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'security' not in valid set"
     },
     {
       "path": "Chain Reorganization.md",
@@ -1691,10 +2423,22 @@
       "message": "Domain 'governance' not in valid set"
     },
     {
+      "path": "Chain-of-Thought Prompting.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
       "path": "Change Management.md",
       "severity": "warning",
       "code": "INVALID_DOMAIN",
       "message": "Domain 'governance' not in valid set"
+    },
+    {
+      "path": "Chapman-Kolmogorov Equation.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
     },
     {
       "path": "Character Animation.md",
@@ -1751,6 +2495,18 @@
       "message": "Multiple parents (2): Governance and Safety, Democratic Engagement"
     },
     {
+      "path": "Civitai.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'media' not in valid set"
+    },
+    {
+      "path": "Classification Rules.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
       "path": "Claude.md",
       "severity": "warning",
       "code": "INVALID_DOMAIN",
@@ -1797,6 +2553,12 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): AI Application, Generative AI"
+    },
+    {
+      "path": "Code Signing.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'security' not in valid set"
     },
     {
       "path": "CodeFormer.md",
@@ -1865,10 +2627,28 @@
       "message": "Multiple parents (2): Robot Type, Industrial Robot"
     },
     {
+      "path": "Collaborative Simulation.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'spatial' not in valid set"
+    },
+    {
       "path": "Collaborative Whiteboard.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): Workspace Tools, Digital Workspace, Visual Collaboration Tools"
+    },
+    {
+      "path": "Collateral Management.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'finance' not in valid set"
+    },
+    {
+      "path": "Collective Action.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'governance' not in valid set"
     },
     {
       "path": "Collective Decision Making.md",
@@ -1877,10 +2657,28 @@
       "message": "Domain 'governance' not in valid set"
     },
     {
+      "path": "Collective Governance.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'governance' not in valid set"
+    },
+    {
+      "path": "Collective Intelligence.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
       "path": "Collective Learning.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): AI Technique, Educational Methodology"
+    },
+    {
+      "path": "Collision Detection System.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'spatial' not in valid set"
     },
     {
       "path": "Collision Detection.md",
@@ -1893,6 +2691,12 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Cryptographic Primitive, Blockchain Entity"
+    },
+    {
+      "path": "ComfyUI API Specification.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
     },
     {
       "path": "ComfyUI Client.md",
@@ -1919,6 +2723,18 @@
       "message": "Domain 'ai' not in valid set"
     },
     {
+      "path": "Common Pool Resources.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'governance' not in valid set"
+    },
+    {
+      "path": "Common Sense Reasoning.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
       "path": "Communication Software.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -1929,6 +2745,18 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Communication Technology, Telecollaboration"
+    },
+    {
+      "path": "Communication Tools.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'web' not in valid set"
+    },
+    {
+      "path": "Community Decision Making.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'governance' not in valid set"
     },
     {
       "path": "Community Governance Model.md",
@@ -1967,6 +2795,12 @@
       "message": "Multiple parents (2): AI Governance and Ethics, Regulatory Technology"
     },
     {
+      "path": "Compliance Management.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'governance' not in valid set"
+    },
+    {
       "path": "Compliance Monitoring.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -1979,10 +2813,22 @@
       "message": "Multiple parents (2): Legal and Regulatory, Compliance Monitoring"
     },
     {
+      "path": "Compliance.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'governance' not in valid set"
+    },
+    {
       "path": "Computational Component.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): AI Infrastructure (Category), Component"
+    },
+    {
+      "path": "Computational Intelligence.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
     },
     {
       "path": "Compute Infrastructure.md",
@@ -2081,6 +2927,12 @@
       "message": "Domain 'security' not in valid set"
     },
     {
+      "path": "Content Creation Pipeline.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'metaverse' not in valid set"
+    },
+    {
       "path": "Content Creation.md",
       "severity": "warning",
       "code": "INVALID_DOMAIN",
@@ -2099,10 +2951,22 @@
       "message": "Domain 'ai' not in valid set"
     },
     {
+      "path": "Content Licensing.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'media' not in valid set"
+    },
+    {
       "path": "Content Moderation.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): AI Governance and Ethics, AI Safety"
+    },
+    {
+      "path": "Content Pipeline.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'media' not in valid set"
     },
     {
       "path": "Context Awareness System.md",
@@ -2189,10 +3053,28 @@
       "message": "Multiple parents (3): Governance and Regulation, Continuous Decision-Making, DAO Governance Mechanism"
     },
     {
+      "path": "Convolution.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
+      "path": "Coordination Mechanisms.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'governance' not in valid set"
+    },
+    {
       "path": "Cortex Agent.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): AI Application, Agentic Internet, Agents"
+    },
+    {
+      "path": "Cosine Similarity.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
     },
     {
       "path": "Cosmos IBC.md",
@@ -2217,6 +3099,12 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Token and Asset, Virtual Economy"
+    },
+    {
+      "path": "Credential Definition.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'identity' not in valid set"
     },
     {
       "path": "Credential Format Standard.md",
@@ -2273,6 +3161,12 @@
       "message": "Multiple parents (3): Protocol and Consensus, Interoperability Protocol, Message Passing System"
     },
     {
+      "path": "Cross-Encoder Reranking.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
       "path": "Cross-Entropy Loss.md",
       "severity": "warning",
       "code": "INVALID_DOMAIN",
@@ -2291,6 +3185,12 @@
       "message": "Multiple parents (2): Network and Communication, Next Generation Mobile"
     },
     {
+      "path": "Cross-Validation.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
       "path": "Cryptocurrency Remuneration.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -2307,6 +3207,18 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): Token and Asset, Cryptoasset, Distributed Ledger Native Token"
+    },
+    {
+      "path": "Cryptographic Accumulator.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'security' not in valid set"
+    },
+    {
+      "path": "Cryptographic Algorithm.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'security' not in valid set"
     },
     {
       "path": "Cryptographic Commitment.md",
@@ -2333,16 +3245,40 @@
       "message": "Multiple parents (2): Cryptographic Primitive, Cryptography"
     },
     {
+      "path": "Cryptographic Library.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'security' not in valid set"
+    },
+    {
       "path": "Cryptographic Primitive.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Cryptographic Primitive, Cryptography"
     },
     {
+      "path": "Cryptographic Proof System.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'security' not in valid set"
+    },
+    {
+      "path": "Cryptographic Proofs.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'security' not in valid set"
+    },
+    {
       "path": "Cryptographic Security.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Security and Identity, Security Framework"
+    },
+    {
+      "path": "Cryptographic Signing.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'security' not in valid set"
     },
     {
       "path": "Cryptographic System.md",
@@ -2379,6 +3315,12 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Perception and Sensing, Sensor"
+    },
+    {
+      "path": "Custody Infrastructure.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Digital Asset Infrastructure, Custody"
     },
     {
       "path": "Customer Experience.md",
@@ -2475,6 +3417,18 @@
       "severity": "warning",
       "code": "INVALID_DOMAIN",
       "message": "Domain 'security' not in valid set"
+    },
+    {
+      "path": "DLSS.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'graphics' not in valid set"
+    },
+    {
+      "path": "DSPy.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
     },
     {
       "path": "Data Annotation.md",
@@ -2741,6 +3695,24 @@
       "message": "Multiple parents (2): AI Technique, Machine Learning"
     },
     {
+      "path": "Deep Reinforcement Learning.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
+      "path": "DeepSpeed.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
+      "path": "Deepfake Detection.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
       "path": "Deepfakes and fraudulent content.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -2771,10 +3743,22 @@
       "message": "Multiple parents (2): Protocol and Consensus, Proof of Stake"
     },
     {
+      "path": "Delivery-Versus-Payment.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'finance' not in valid set"
+    },
+    {
       "path": "Delta Robot.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): Robot Type, Parallel Robots, Industrial Robot"
+    },
+    {
+      "path": "Demand Forecasting.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
     },
     {
       "path": "Democratic Engagement.md",
@@ -2793,6 +3777,12 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Legal and Regulatory, Policy Enforcement"
+    },
+    {
+      "path": "Dense Passage Retrieval.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
     },
     {
       "path": "Deployer.md",
@@ -2823,6 +3813,12 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Content and Assets, Digital Marketing"
+    },
+    {
+      "path": "DevSecOps.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
     },
     {
       "path": "Diagrams as Code.md",
@@ -3027,6 +4023,12 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Security and Identity, Technical Standards"
+    },
+    {
+      "path": "Digital Identity Verification.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'security' not in valid set"
     },
     {
       "path": "Digital Identity Wallet.md",
@@ -3413,6 +4415,12 @@
       "message": "Domain 'governance' not in valid set"
     },
     {
+      "path": "DoRA.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
       "path": "Documentation Generation.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -3449,10 +4457,22 @@
       "message": "Multiple parents (2): Platform and Environment, System Software"
     },
     {
+      "path": "Dublin Core.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
       "path": "Dynamic Character Animation.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Content and Assets, 3D Animation"
+    },
+    {
+      "path": "Dynamic Lighting.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'spatial' not in valid set"
     },
     {
       "path": "Dynamic Model.md",
@@ -3671,6 +4691,12 @@
       "message": "Multiple parents (2): AI Infrastructure (Category), AI Hardware"
     },
     {
+      "path": "Edge AI.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
       "path": "Edge Computing Architecture.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -3729,6 +4755,18 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): Cryptographic Primitive, Blockchain Entity, CryptographicPrimitive"
+    },
+    {
+      "path": "Embedding Search.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
+      "path": "Embedding.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
     },
     {
       "path": "Embeddings.md",
@@ -3791,6 +4829,12 @@
       "message": "Multiple parents (2): Actuation and Control, Mechanical Component"
     },
     {
+      "path": "End-to-End Encryption.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'security' not in valid set"
+    },
+    {
       "path": "Energy and Power.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -3839,6 +4883,12 @@
       "message": "Multiple parents (2): Governance and Safety, Digital Asset Market"
     },
     {
+      "path": "Environmental Monitoring.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'science' not in valid set"
+    },
+    {
       "path": "Environmental Standards.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -3849,6 +4899,12 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Governance and Safety, Governance Framework"
+    },
+    {
+      "path": "Epipolar Geometry.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'spatial' not in valid set"
     },
     {
       "path": "Ethical Framework.md",
@@ -3881,6 +4937,12 @@
       "message": "Multiple parents (2): Platform and Environment, Taxonomy"
     },
     {
+      "path": "Evaluation Harness.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
       "path": "Evaluation Metric.md",
       "severity": "warning",
       "code": "INVALID_DOMAIN",
@@ -3903,6 +4965,18 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Computing and Cloud, Temporal Entity"
+    },
+    {
+      "path": "Evidence Collection.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'governance' not in valid set"
+    },
+    {
+      "path": "Existential Risk.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'governance' not in valid set"
     },
     {
       "path": "Exoskeleton Robot.md",
@@ -3971,6 +5045,12 @@
       "message": "Multiple parents (3): AI Application, Face Manipulation, Identity Transfer"
     },
     {
+      "path": "Facial Recognition.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
       "path": "Fashion.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -3987,6 +5067,18 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): Computing and Cloud, Dependability, Reliability Engineering"
+    },
+    {
+      "path": "Fault Tree Analysis.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'engineering' not in valid set"
+    },
+    {
+      "path": "Feature Detection.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'web' not in valid set"
     },
     {
       "path": "Feature Engineering.md",
@@ -4037,6 +5129,12 @@
       "message": "Multiple parents (2): Computing and Cloud, Distributed Computing"
     },
     {
+      "path": "Federated Social Networks.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'web' not in valid set"
+    },
+    {
       "path": "Federation Surface.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -4079,6 +5177,12 @@
       "message": "Multiple parents (2): AI Model Architecture, Network Architecture"
     },
     {
+      "path": "Few-Shot Prompting.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
       "path": "Film VFX.md",
       "severity": "warning",
       "code": "INVALID_DOMAIN",
@@ -4097,6 +5201,12 @@
       "message": "Multiple parents (2): Protocol and Consensus, Blockchain Entity"
     },
     {
+      "path": "Financial Crime Detection.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'finance' not in valid set"
+    },
+    {
       "path": "Financial Infrastructure.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -4104,6 +5214,12 @@
     },
     {
       "path": "Financial Privacy.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'finance' not in valid set"
+    },
+    {
+      "path": "Financial Stability Board.md",
       "severity": "warning",
       "code": "INVALID_DOMAIN",
       "message": "Domain 'finance' not in valid set"
@@ -4127,6 +5243,12 @@
       "message": "Domain 'ai' not in valid set"
     },
     {
+      "path": "Food Safety.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'governance' not in valid set"
+    },
+    {
       "path": "Fooocus.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -4143,6 +5265,12 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Perception and Sensing, Sensor"
+    },
+    {
+      "path": "Forensic Investigation.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'security' not in valid set"
     },
     {
       "path": "Fork Choice Rule.md",
@@ -4185,6 +5313,24 @@
       "severity": "warning",
       "code": "INVALID_DOMAIN",
       "message": "Domain 'ai' not in valid set"
+    },
+    {
+      "path": "Frontier Model Training.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
+      "path": "Frontier Models.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
+      "path": "Frontier Models.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Foundation Models, Large Language Models"
     },
     {
       "path": "Frustum Culling.md",
@@ -4241,6 +5387,12 @@
       "message": "Domain 'governance' not in valid set"
     },
     {
+      "path": "GHG Protocol Corporate Standard.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'sustainability' not in valid set"
+    },
+    {
       "path": "GPT Engineer.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -4259,6 +5411,18 @@
       "message": "Domain 'ai' not in valid set"
     },
     {
+      "path": "Game AI.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
+      "path": "Game Asset Generation.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'media' not in valid set"
+    },
+    {
       "path": "Game Engine.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -4269,6 +5433,18 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Content and Assets, Interactive Storytelling"
+    },
+    {
+      "path": "Game Theory.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
+      "path": "Game Theory.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Economics, Mechanism Design"
     },
     {
       "path": "Gas Fee Market.md",
@@ -4299,6 +5475,12 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Protocol and Consensus, Hybrid Consensus"
+    },
+    {
+      "path": "Gaussian Process.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
     },
     {
       "path": "Gaussian Splatting.md",
@@ -4457,6 +5639,12 @@
       "message": "Multiple parents (2): Governance and Safety, Privacy Framework"
     },
     {
+      "path": "Graph Analytics.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
       "path": "Graph Database.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -4523,6 +5711,12 @@
       "message": "Multiple parents (3): DeFi and Economics, Blockchain Entity, Economic Mechanism"
     },
     {
+      "path": "Hamiltonian Monte Carlo.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
       "path": "Hand Tracking.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -4583,6 +5777,12 @@
       "message": "Multiple parents (3): Cryptographic Primitive, Compression Function, Cryptographic Algorithm"
     },
     {
+      "path": "Hazard Analysis.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'governance' not in valid set"
+    },
+    {
       "path": "Head-Mounted Display.md",
       "severity": "warning",
       "code": "INVALID_DOMAIN",
@@ -4629,6 +5829,12 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): Computing and Cloud, Home Automation, IoT Platform"
+    },
+    {
+      "path": "Homeostasis.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'science' not in valid set"
     },
     {
       "path": "Homomorphic Encryption.md",
@@ -4721,6 +5927,12 @@
       "message": "Multiple parents (2): Protocol and Consensus, Consensus Mechanism"
     },
     {
+      "path": "Hybrid Search.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
       "path": "Hydraulic Actuator.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -4757,6 +5969,12 @@
       "message": "Multiple parents (3): Network Component, Enterprise Blockchain Framework, Hyperledger Project"
     },
     {
+      "path": "Hyperparameter Optimisation.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
       "path": "Hyperparameter Tuning.md",
       "severity": "warning",
       "code": "INVALID_DOMAIN",
@@ -4787,7 +6005,31 @@
       "message": "Domain 'ai' not in valid set"
     },
     {
+      "path": "ICVCM Core Carbon Principles.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'governance' not in valid set"
+    },
+    {
+      "path": "IEEE Standards Association.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'governance' not in valid set"
+    },
+    {
+      "path": "IEEE.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Standards Body, Standardization Bodies"
+    },
+    {
       "path": "IETF.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'governance' not in valid set"
+    },
+    {
+      "path": "IMF.md",
       "severity": "warning",
       "code": "INVALID_DOMAIN",
       "message": "Domain 'governance' not in valid set"
@@ -4859,10 +6101,22 @@
       "message": "Multiple parents (3): Security and Identity, Security Infrastructure, Trust Service"
     },
     {
+      "path": "Identity Resolution.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
       "path": "Identity Verification.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): Security and Identity, Authentication Method, Identity Proofing"
+    },
+    {
+      "path": "Image Editing.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'media' not in valid set"
     },
     {
       "path": "Image Processing Software.md",
@@ -4901,10 +6155,22 @@
       "message": "Multiple parents (2): Display and Rendering, Audio Technology"
     },
     {
+      "path": "Immersive Audio.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'spatial' not in valid set"
+    },
+    {
       "path": "Immersive Communication.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Telepresence, Telecollaboration"
+    },
+    {
+      "path": "Immersive Computing.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'metaverse' not in valid set"
     },
     {
       "path": "Immersive Entertainment.md",
@@ -4967,7 +6233,19 @@
       "message": "Multiple parents (2): Actuation and Control, Control Systems"
     },
     {
+      "path": "Impermanent Loss.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Decentralized Finance, Liquidity Provision"
+    },
+    {
       "path": "Importance Sampling.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
+      "path": "In-Context Learning.md",
       "severity": "warning",
       "code": "INVALID_DOMAIN",
       "message": "Domain 'ai' not in valid set"
@@ -4977,6 +6255,12 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): DeFi and Economics, Blockchain Entity, Economic Mechanism"
+    },
+    {
+      "path": "Incentive Compatibility.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'finance' not in valid set"
     },
     {
       "path": "Incident Reporting.md",
@@ -5141,6 +6425,18 @@
       "message": "Multiple parents (3): DeFi and Economics, Financial Infrastructure, Cryptocurrency"
     },
     {
+      "path": "Intelligent Tutoring System.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
+      "path": "Intent Classification.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
       "path": "Inter-Agent Communication.md",
       "severity": "warning",
       "code": "INVALID_DOMAIN",
@@ -5297,6 +6593,12 @@
       "message": "Multiple parents (3): Actuation and Control, Geometric Model, Mathematical Model"
     },
     {
+      "path": "Know Your Customer.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'finance' not in valid set"
+    },
+    {
       "path": "Knowhere.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -5313,6 +6615,18 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Content and Assets, Collaborative Technology"
+    },
+    {
+      "path": "LLM Agents.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
+      "path": "LP Token.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'finance' not in valid set"
     },
     {
       "path": "Land Economics.md",
@@ -5340,6 +6654,12 @@
     },
     {
       "path": "Language Model.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
+      "path": "Large Language Model Training.md",
       "severity": "warning",
       "code": "INVALID_DOMAIN",
       "message": "Domain 'ai' not in valid set"
@@ -5429,6 +6749,12 @@
       "message": "Multiple parents (2): Display and Rendering, Metaverse"
     },
     {
+      "path": "Liberal Radicalism.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'governance' not in valid set"
+    },
+    {
       "path": "Lidar Scanning.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -5505,6 +6831,12 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): DeFi and Economics, Smart Contract"
+    },
+    {
+      "path": "Liquidity Provider.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'finance' not in valid set"
     },
     {
       "path": "Liquidity Provision.md",
@@ -5591,6 +6923,12 @@
       "message": "Multiple parents (2): Content and Assets, Digital Preservation"
     },
     {
+      "path": "Long-Horizon Planning.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
       "path": "Longest Chain Rule.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -5625,6 +6963,12 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Network Component, Provenance Tracking"
+    },
+    {
+      "path": "LyCORIS.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
     },
     {
       "path": "MAS.md",
@@ -5765,6 +7109,18 @@
       "message": "Multiple parents (2): Platform and Environment, Virtual Economy"
     },
     {
+      "path": "Markov Chain Monte Carlo.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
+      "path": "Markov Chain Monte Carlo.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Monte Carlo Methods, Probabilistic Inference"
+    },
+    {
       "path": "Material Definition.md",
       "severity": "warning",
       "code": "INVALID_DOMAIN",
@@ -5873,6 +7229,12 @@
       "message": "Multiple parents (3): Network Component, Blockchain Entity, DistributedDataStructure"
     },
     {
+      "path": "Merkle DAG.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Data Structure, Content Addressing"
+    },
+    {
       "path": "Merkle Proof.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -5901,6 +7263,12 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Platform and Environment, Network Infrastructure"
+    },
+    {
+      "path": "Message Authentication Code.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'security' not in valid set"
     },
     {
       "path": "Message Signing.md",
@@ -5949,6 +7317,12 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Standards and Interoperability, Data Standards"
+    },
+    {
+      "path": "Metadata.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
     },
     {
       "path": "Metaverse Application Platform.md",
@@ -6015,6 +7389,12 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Platform and Environment, Technology Stack"
+    },
+    {
+      "path": "Metaverse Standards Forum.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'governance' not in valid set"
     },
     {
       "path": "Metaverse Venue.md",
@@ -6159,6 +7539,12 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): AI Infrastructure (Category), Agent Communication Protocol, JSON-RPC Protocol"
+    },
+    {
+      "path": "Model Evaluation.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
     },
     {
       "path": "Model Extraction.md",
@@ -6323,6 +7709,12 @@
       "message": "Multiple parents (2): Governance and Regulation, Committee Governance"
     },
     {
+      "path": "Multi-Agent Orchestration.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
       "path": "Multi-Agent System.md",
       "severity": "warning",
       "code": "INVALID_DOMAIN",
@@ -6345,6 +7737,24 @@
       "severity": "warning",
       "code": "INVALID_DOMAIN",
       "message": "Domain 'security' not in valid set"
+    },
+    {
+      "path": "Multi-Step Reasoning.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
+      "path": "Multi-View Stereo.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'spatial' not in valid set"
+    },
+    {
+      "path": "Multimodal Learning.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
     },
     {
       "path": "Multirotor UAV.md",
@@ -6503,6 +7913,12 @@
       "message": "Multiple parents (2): Content and Assets, Search Algorithm"
     },
     {
+      "path": "Net Zero Targets.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'governance' not in valid set"
+    },
+    {
       "path": "Network Analysis.md",
       "severity": "warning",
       "code": "INVALID_DOMAIN",
@@ -6513,6 +7929,12 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Network Component, Blockchain Entity"
+    },
+    {
+      "path": "Network Effects.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
     },
     {
       "path": "Network Function Virtualization.md",
@@ -6605,6 +8027,12 @@
       "message": "Multiple parents (2): AI Model Architecture, Deep Learning"
     },
     {
+      "path": "Neural Processing Unit.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
       "path": "Neural Radiance Fields.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -6683,6 +8111,12 @@
       "message": "Multiple parents (3): Security and Identity, Digital Evidence, Security Property"
     },
     {
+      "path": "Normalising Flows.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
       "path": "Nostr Protocol.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -6719,6 +8153,24 @@
       "message": "Domain 'governance' not in valid set"
     },
     {
+      "path": "ONNX Runtime.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
+      "path": "ONNX.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
+      "path": "ONNX.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Interoperability Standard, Open Standard"
+    },
+    {
       "path": "ONTOLOGY_TECHNICAL_DETAILS.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -6729,6 +8181,12 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Standards and Interoperability, Ontology Structure"
+    },
+    {
+      "path": "OWL.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
     },
     {
       "path": "Object Detection.md",
@@ -6749,6 +8207,12 @@
       "message": "Multiple parents (2): Navigation and Planning, Reactive Control"
     },
     {
+      "path": "Occlusion Rendering.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'spatial' not in valid set"
+    },
+    {
       "path": "Octocopter.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -6767,6 +8231,12 @@
       "message": "Domain 'governance' not in valid set"
     },
     {
+      "path": "Omnichannel.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
       "path": "Omnidirectional Robot.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -6777,6 +8247,18 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): Governance and Regulation, Cryptography Security and Privacy, DAO"
+    },
+    {
+      "path": "On-Device Inference.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
+      "path": "Onion Routing.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'security' not in valid set"
     },
     {
       "path": "Online Learning.md",
@@ -6825,6 +8307,12 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Actuation and Control, Control System"
+    },
+    {
+      "path": "OpenAI API.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
     },
     {
       "path": "OpenAI.md",
@@ -6879,6 +8367,12 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Display and Rendering, Calibration Equipment"
+    },
+    {
+      "path": "Optical Flow.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
     },
     {
       "path": "Optical Sensor Array.md",
@@ -7055,6 +8549,12 @@
       "message": "Multiple parents (2): AI Application, Medical Imaging AI"
     },
     {
+      "path": "Payment Channel.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Off-Chain Scaling, Layer-2 Solutions"
+    },
+    {
       "path": "Payment Gateway.md",
       "severity": "warning",
       "code": "INVALID_DOMAIN",
@@ -7127,10 +8627,22 @@
       "message": "Domain 'hardware' not in valid set"
     },
     {
+      "path": "Personalised Learning.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
       "path": "Personalized Virtual Experiences.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Platform and Environment, Virtual Experience"
+    },
+    {
+      "path": "Pharmaceutical Supply Chain.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'governance' not in valid set"
     },
     {
       "path": "Physical Hardware.md",
@@ -7181,6 +8693,12 @@
       "message": "Multiple parents (2): Software Engineering, Projects"
     },
     {
+      "path": "Planning Module.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
       "path": "Platform Economy.md",
       "severity": "warning",
       "code": "INVALID_DOMAIN",
@@ -7215,6 +8733,12 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Actuation and Control, Pneumatic Actuator"
+    },
+    {
+      "path": "Point Cloud Generation.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'metaverse' not in valid set"
     },
     {
       "path": "Point Cloud Processing.md",
@@ -7257,6 +8781,12 @@
       "severity": "warning",
       "code": "INVALID_DOMAIN",
       "message": "Domain 'governance' not in valid set"
+    },
+    {
+      "path": "Policy Optimisation.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
     },
     {
       "path": "Polycentric Governance.md",
@@ -7463,6 +8993,12 @@
       "message": "Multiple parents (3): AI Technique, Statistical Learning, Uncertainty Quantification"
     },
     {
+      "path": "Probability Theory.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'science' not in valid set"
+    },
+    {
       "path": "Procedural Texture.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -7491,6 +9027,12 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): Content and Assets, Creative Practice, Design Thinking"
+    },
+    {
+      "path": "Programmatic Advertising.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'media' not in valid set"
     },
     {
       "path": "Project Management.md",
@@ -7727,6 +9269,12 @@
       "message": "Multiple parents (3): Network Component, Financial Services Technology, Enterprise Blockchain"
     },
     {
+      "path": "RAG Pipeline.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
       "path": "RGB and Client Side Validation.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -7805,6 +9353,12 @@
       "message": "Multiple parents (3): Computing and Cloud, Operating Systems, Safety Critical Systems"
     },
     {
+      "path": "Real-Time AI Inference.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
       "path": "Real-Time AI.md",
       "severity": "warning",
       "code": "INVALID_DOMAIN",
@@ -7835,10 +9389,22 @@
       "message": "Multiple parents (3): Communication Technology, Accessibility Tools, Communication Infrastructure"
     },
     {
+      "path": "Reality Capture.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'spatial' not in valid set"
+    },
+    {
       "path": "Reality Virtuality Continuum.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Platform and Environment, XR Framework"
+    },
+    {
+      "path": "Reasoning Engine.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
     },
     {
       "path": "Reasoning.md",
@@ -8039,6 +9605,12 @@
       "message": "Multiple parents (2): Content and Assets, Creator Economy"
     },
     {
+      "path": "Revocation Mechanism.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'security' not in valid set"
+    },
+    {
       "path": "Revocation Registry.md",
       "severity": "warning",
       "code": "INVALID_DOMAIN",
@@ -8075,10 +9647,22 @@
       "message": "Domain 'governance' not in valid set"
     },
     {
+      "path": "Risk Assessment Methodology.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'governance' not in valid set"
+    },
+    {
       "path": "Risk Assessment.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): Legal and Regulatory, Audit, Systems Analysis"
+    },
+    {
+      "path": "Risk Management Framework.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'governance' not in valid set"
     },
     {
       "path": "Ritual Artifact.md",
@@ -8111,6 +9695,12 @@
       "message": "Multiple parents (3): Actuation and Control, Publish-Subscribe Framework, Robotic Middleware"
     },
     {
+      "path": "Robotic Process Automation.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
       "path": "Robotic Telepresence.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -8139,6 +9729,12 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): AI Governance and Ethics, AI Safety"
+    },
+    {
+      "path": "Role-Based Access Control.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'security' not in valid set"
     },
     {
       "path": "Root Mean Square Error.md",
@@ -8181,6 +9777,12 @@
       "severity": "warning",
       "code": "INVALID_DOMAIN",
       "message": "Domain 'governance' not in valid set"
+    },
+    {
+      "path": "SDXL.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
     },
     {
       "path": "SEC.md",
@@ -8237,6 +9839,24 @@
       "message": "Multiple parents (2): Governance and Safety, User Safety"
     },
     {
+      "path": "Safetensors.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
+      "path": "Safety Assessment.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'governance' not in valid set"
+    },
+    {
+      "path": "Safety Evaluation.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
       "path": "Safety Fine Tuning.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -8259,6 +9879,12 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): AI Technique, Numerical Methods, Stochastic Processes"
+    },
+    {
+      "path": "Sanctions Compliance.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'governance' not in valid set"
     },
     {
       "path": "Sanctions Enforcement.md",
@@ -8319,6 +9945,12 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): Cryptographic Primitive, Blockchain Entity, CryptographicPrimitive"
+    },
+    {
+      "path": "Science Based Targets.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'governance' not in valid set"
     },
     {
       "path": "Scope 3 Emissions.md",
@@ -8445,6 +10077,12 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): AI Technique, Semi-Supervised Learning"
+    },
+    {
+      "path": "Self-Organisation.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
     },
     {
       "path": "Self-Supervised Learning.md",
@@ -8579,10 +10217,22 @@
       "message": "Multiple parents (2): Workspace Tools, TELE-002-telecollaboration"
     },
     {
+      "path": "Signal Protocol.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
       "path": "Signature Scheme.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): Cryptographic Primitive, Blockchain Entity, CryptographicPrimitive"
+    },
+    {
+      "path": "Signed Distance Function.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'graphics' not in valid set"
     },
     {
       "path": "Singularity.md",
@@ -8607,6 +10257,12 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Standards and Interoperability, Knowledge Organization System"
+    },
+    {
+      "path": "Slot Filling.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
     },
     {
       "path": "Smart Contract.md",
@@ -8651,6 +10307,12 @@
       "message": "Domain 'ai' not in valid set"
     },
     {
+      "path": "Social Network Analysis.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'governance' not in valid set"
+    },
+    {
       "path": "Social Presence.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -8681,10 +10343,22 @@
       "message": "Multiple parents (2): AI Governance and Ethics, AI Ethics"
     },
     {
+      "path": "Sociotechnical System.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'governance' not in valid set"
+    },
+    {
       "path": "Soft Body Dynamics.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Display and Rendering, Metaverse"
+    },
+    {
+      "path": "Software Engineering Agents.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
     },
     {
       "path": "Software Platform.md",
@@ -8867,6 +10541,12 @@
       "message": "Domain 'ai' not in valid set"
     },
     {
+      "path": "Spherical Harmonics.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'graphics' not in valid set"
+    },
+    {
       "path": "Stability Analysis.md",
       "severity": "warning",
       "code": "INVALID_DOMAIN",
@@ -8933,6 +10613,12 @@
       "message": "Multiple parents (2): Legal and Regulatory, Regulatory Framework"
     },
     {
+      "path": "Standard Contractual Clauses.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'governance' not in valid set"
+    },
+    {
       "path": "Standardization Bodies.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -8987,6 +10673,12 @@
       "message": "Multiple parents (2): Actuation and Control, Feedback Control"
     },
     {
+      "path": "State Space.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
       "path": "State Synchronization.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -9005,10 +10697,22 @@
       "message": "Multiple parents (2): Perception and Sensing, Camera"
     },
     {
+      "path": "Stereo Vision.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'spatial' not in valid set"
+    },
+    {
       "path": "Stewart Platform.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Robot Type, Parallel Robot"
+    },
+    {
+      "path": "Stochastic Differential Equation.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'science' not in valid set"
     },
     {
       "path": "Stochastic Process.md",
@@ -9059,6 +10763,12 @@
       "message": "Multiple parents (2): Display and Rendering, Image Generation"
     },
     {
+      "path": "Superintelligence.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
       "path": "Supply Cap.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -9096,6 +10806,12 @@
     },
     {
       "path": "Sustainable Development Goals.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'governance' not in valid set"
+    },
+    {
+      "path": "Sustainable Finance.md",
       "severity": "warning",
       "code": "INVALID_DOMAIN",
       "message": "Domain 'governance' not in valid set"
@@ -9167,6 +10883,12 @@
       "message": "Multiple parents (2): Telepresence, TELE 001 telepresence"
     },
     {
+      "path": "TLS 1.3.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Transport Layer Security, Encryption Protocol"
+    },
+    {
       "path": "TLS Encryption.md",
       "severity": "warning",
       "code": "INVALID_DOMAIN",
@@ -9231,6 +10953,12 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Platform and Environment, Definitions and frameworks for Metaverse"
+    },
+    {
+      "path": "Technical Documentation.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'knowledge' not in valid set"
     },
     {
       "path": "Technical Robustness and Safety.md",
@@ -9389,6 +11117,12 @@
       "message": "Domain 'security' not in valid set"
     },
     {
+      "path": "Threat Modelling.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'governance' not in valid set"
+    },
+    {
       "path": "Threat Surface Map.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -9411,6 +11145,18 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): AI Technique, Probabilistic Forecasting, Sequential Data Processing"
+    },
+    {
+      "path": "Time-Series Analysis.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
+      "path": "Time-Series Analysis.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Data Analysis, Signal Processing"
     },
     {
       "path": "Timestamp Authority.md",
@@ -9453,6 +11199,12 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): AI Technique, Smart Contract Platform"
+    },
+    {
+      "path": "Tokenizer.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
     },
     {
       "path": "Tool Definition.md",
@@ -9563,6 +11315,12 @@
       "message": "Multiple parents (3): Protocol and Consensus, Blockchain Entity, DistributedDataStructure"
     },
     {
+      "path": "Transaction Monitoring.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'finance' not in valid set"
+    },
+    {
       "path": "Transaction Parameter.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -9585,6 +11343,12 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): Protocol and Consensus, Blockchain Entity, DistributedDataStructure"
+    },
+    {
+      "path": "Transfer Impact Assessment.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'governance' not in valid set"
     },
     {
       "path": "Transformer Architecture.md",
@@ -9723,6 +11487,24 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Protocol and Consensus, Practical Byzantine Fault Tolerance"
+    },
+    {
+      "path": "Trusted Timestamping.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'security' not in valid set"
+    },
+    {
+      "path": "Turtle.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
+      "path": "UK GDPR.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'governance' not in valid set"
     },
     {
       "path": "UK Online Safety Act.md",
@@ -9899,6 +11681,12 @@
       "message": "Multiple parents (3): Network Component, Blockchain Entity, NetworkComponent"
     },
     {
+      "path": "Value Function.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
       "path": "Value Transfer.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -9915,6 +11703,12 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): AI Model Architecture, Generative Model"
+    },
+    {
+      "path": "Vector Embedding.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
     },
     {
       "path": "Verifiable Credential Standard.md",
@@ -9959,10 +11753,22 @@
       "message": "Multiple parents (2): Communication Technology, Asynchronous Collaboration"
     },
     {
+      "path": "Video Codec.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'media' not in valid set"
+    },
+    {
       "path": "Video Conferencing.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Communication Technology, TC-0010-Synchronous-Collaboration"
+    },
+    {
+      "path": "Video Encoding.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'media' not in valid set"
     },
     {
       "path": "Video Games.md",
@@ -10385,6 +12191,18 @@
       "message": "Multiple parents (2): Platform and Environment, Spatial Computing"
     },
     {
+      "path": "Vision Language Model.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
+      "path": "Vision Transformer.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai' not in valid set"
+    },
+    {
       "path": "VisionClaw Agentic Container.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -10413,6 +12231,12 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Communication Technology, Asynchronous Collaboration"
+    },
+    {
+      "path": "Voluntary Carbon Market.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'governance' not in valid set"
     },
     {
       "path": "Voting Systems.md",
@@ -10449,6 +12273,12 @@
       "severity": "warning",
       "code": "INVALID_DOMAIN",
       "message": "Domain 'governance' not in valid set"
+    },
+    {
+      "path": "WCAG 2.2.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'web' not in valid set"
     },
     {
       "path": "Watermarking Service.md",
@@ -10493,6 +12323,12 @@
       "message": "Domain 'security' not in valid set"
     },
     {
+      "path": "WebID.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'identity' not in valid set"
+    },
+    {
       "path": "WebRTC.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -10511,6 +12347,12 @@
       "message": "Domain 'finance' not in valid set"
     },
     {
+      "path": "Wikidata.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'knowledge' not in valid set"
+    },
+    {
       "path": "Workforce Management.md",
       "severity": "warning",
       "code": "INVALID_DOMAIN",
@@ -10527,6 +12369,12 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Governance and Safety, Accessibility Standard"
+    },
+    {
+      "path": "XR Applications.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'spatial' not in valid set"
     },
     {
       "path": "XR Device.md",

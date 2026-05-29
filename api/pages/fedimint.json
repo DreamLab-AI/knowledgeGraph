@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:fedimint",
+  "title": "Fedimint",
+  "slug": "fedimint",
+  "public": true,
+  "classIri": "urn:ngm:class:fedimint",
+  "domain": "blockchain",
+  "definition": "Fedimint is an open-source protocol for federated, community-custodied Bitcoin Chaumian e-cash mints, in which a threshold of guardians collectively hold Bitcoin reserves and issue blinded bearer tokens redeemable for satoshis, providing privacy-preserving custody without requiring any single trusted party. The federation model distributes trust across a small, known set of guardians while the blind-signature scheme prevents guardians from linking redemptions to issuances.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ecash",
+      "label": "Ecash"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.85,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:chaumian-ecash",
+        "label": "Chaumian Ecash"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-lightning-network",
+        "label": "Bitcoin Lightning Network"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:bitcoin-custody",
+        "label": "Bitcoin Custody"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:federated-system",
+        "label": "Federated System"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-layer-2",
+        "label": "Bitcoin Layer 2"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-as-money",
+      "label": "Bitcoin As Money"
+    },
+    {
+      "slug": "cashu",
+      "label": "Cashu"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "lightning-and-similar-l2",
+      "label": "Lightning and Similar L2"
+    },
+    {
+      "slug": "micropayments",
+      "label": "Micropayments"
+    },
+    {
+      "slug": "ecash",
+      "label": "ecash"
+    }
+  ]
+}

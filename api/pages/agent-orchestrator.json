@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:agent-orchestrator",
+  "title": "Agent Orchestrator",
+  "slug": "agent-orchestrator",
+  "public": true,
+  "classIri": "urn:ngm:class:agent-orchestrator",
+  "domain": "ai",
+  "definition": "An Agent Orchestrator is a control component within a multi-agent system responsible for decomposing high-level goals into sub-tasks, assigning those tasks to appropriate specialised agents, monitoring execution progress, handling failures and retries, and assembling partial results into coherent outputs. It acts as the coordination hub that transforms a pool of individual autonomous agents into a collaborative system capable of accomplishing complex, multi-step objectives.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-agent-system",
+      "label": "AI Agent System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-task-execution",
+        "label": "Autonomous Task Execution"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:agent-communication-protocol",
+        "label": "Agent Communication Protocol"
+      },
+      {
+        "id": "urn:ngm:class:task-planning",
+        "label": "Task Planning"
+      },
+      {
+        "id": "urn:ngm:class:agent-runtime",
+        "label": "Agent Runtime"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:coordination-mechanisms",
+        "label": "Coordination Mechanisms"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "cli-multi-agent-systems",
+      "label": "CLI Multi-Agent Systems"
+    }
+  ]
+}

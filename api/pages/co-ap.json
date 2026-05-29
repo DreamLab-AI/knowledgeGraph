@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:co-ap",
+  "title": "CoAP",
+  "slug": "co-ap",
+  "public": true,
+  "classIri": "urn:ngm:class:co-ap",
+  "domain": "infrastructure",
+  "definition": "The Constrained Application Protocol (CoAP) is a specialised web transfer protocol defined in RFC 7252 (IETF, 2014) designed for use with constrained nodes and networks in the Internet of Things ecosystem. Modelled on HTTP's request-response semantics and RESTful resource model but optimised for low-power, lossy networks, CoAP uses UDP as its transport layer, features a compact binary header, supports observe (pub/sub) extensions, and includes built-in mechanisms for reliability, multicast, and asynchronous communication. CoAP is a cornerstone protocol for IoT device management and machine-to-machine communication.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:network-protocol",
+      "label": "Network Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:building-automation",
+        "label": "Building Automation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:mqtt",
+        "label": "MQTT"
+      },
+      {
+        "id": "urn:ngm:class:http-protocol",
+        "label": "HTTP Protocol"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "home-assistant",
+      "label": "Home Assistant"
+    },
+    {
+      "slug": "io-t-sensor-network",
+      "label": "IoT Sensor Network"
+    }
+  ]
+}

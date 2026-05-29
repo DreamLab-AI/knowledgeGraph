@@ -1,0 +1,57 @@
+public:: true
+
+# In-Context Learning
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:in-context-learning",
+  "@type": "Page",
+  "vc:slug": "in-context-learning",
+  "title": "In-Context Learning",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 2
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:in-context-learning",
+  "@type": "Class",
+  "label": "In-Context Learning",
+  "definition": "In-Context Learning (ICL) is a capability of large language models whereby the model adapts its behaviour to a new task at inference time by conditioning on a small number of input-output demonstrations supplied within the prompt, without any gradient-based weight updates. The model implicitly extracts task structure from the provided examples and applies it to unseen queries, enabling rapid task generalisation without retraining.",
+  "domain": "ai",
+  "maturity": "established",
+  "subClassOf": [
+    {"@id": "urn:ngm:class:meta-learning", "label": "Meta-Learning"}
+  ],
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:few-shot-learning", "label": "Few-Shot Learning"},
+      {"@id": "urn:ngm:class:few-shot-prompting", "label": "Few-Shot Prompting"},
+      {"@id": "urn:ngm:class:zero-shot-prompting", "label": "Zero-Shot Prompting"},
+      {"@id": "urn:ngm:class:chain-of-thought-prompting", "label": "Chain-of-Thought Prompting"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:large-language-model-training", "label": "Large Language Model Training"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"}
+    ]
+  },
+  "quality": 0.8
+}
+```
+
+- ### Definition
+  - [[In-Context Learning]] is the ability of a [[Large Language Model Training]]-derived model to perform new tasks by conditioning solely on demonstrations embedded in the input prompt, adapting its output distribution without modifying model weights, distinguishing it from conventional [[Fine-Tuning]].
+
+- ### Relationships
+  - ICL is theoretically grounded in [[Meta-Learning]], where prior training across diverse tasks equips the model to generalise; it encompasses [[Few-Shot Learning]] and [[Few-Shot Prompting]] as operational forms, contrasts with [[Zero-Shot Prompting]] (no examples), and is amplified by techniques like [[Chain-of-Thought Prompting]] that elicit intermediate reasoning steps via the [[Attention Mechanism]].
+
+- ### Content
+  - In-context learning was identified as an emergent property of GPT-3 in Brown et al. (2020), which demonstrated that a 175-billion-parameter language model could perform competitively on NLP benchmarks using only a handful of examples in the prompt. This observation was surprising because the model's weights were frozen during evaluation; the adaptation was entirely mediated by attention over the provided context. Prior work on meta-learning and task-agnostic pre-training laid conceptual groundwork, but GPT-3's scale revealed the phenomenon at an unprecedented capability level.
+  - Mechanistically, ICL exploits the transformer's attention mechanism to extract implicit task descriptions from the demonstrations. Each input-output pair in the prompt functions as a vector of constraints that steers the model's next-token distribution. Recent theoretical work frames ICL as implicit Bayesian inference: the model marginalises over possible latent task hypotheses consistent with the observed examples, approximating a posterior predictive distribution over outputs. Label words, input formatting, and demonstration order all measurably affect ICL performance, reflecting sensitivity to superficial prompt structure.
+  - ICL dramatically reduces the cost of deploying LLMs on specialised tasks: no fine-tuning data pipeline, no GPU cluster, and no redeployment cycle are required. It enables rapid prototyping for domain adaptation in legal, medical, and scientific text processing. Enterprises leverage ICL for instruction-following in customer support, code generation, and structured data extraction. The technique also underpins evaluation paradigms that probe model generalisation without contaminating held-out benchmarks with gradient-based training.
+  - By 2024–2025, ICL research has advanced to long-context regimes where models like GPT-4 and Gemini 1.5 Pro support million-token contexts, enabling hundreds of examples per prompt. Work on many-shot ICL shows that performance can match supervised fine-tuning on classification and reasoning benchmarks at sufficient example counts. Simultaneously, mechanistic interpretability research has identified specific attention heads that implement ICL algorithms, and retrieval-augmented ICL systems dynamically select the most informative demonstrations from large corpora at inference time, further extending the paradigm's reach.

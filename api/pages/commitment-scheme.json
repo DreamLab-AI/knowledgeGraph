@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:commitment-scheme",
+  "title": "Commitment Scheme",
+  "slug": "commitment-scheme",
+  "public": true,
+  "classIri": "urn:ngm:class:commitment-scheme",
+  "domain": "blockchain",
+  "definition": "A commitment scheme is a two-phase cryptographic primitive that allows a party (the committer) to bind itself to a chosen value by producing a short commitment string \u2014 analogous to sealing a value in an envelope \u2014 that is later opened by revealing the original value and a randomness parameter, with the scheme satisfying two security properties: binding (the committer cannot change the value after committing) and hiding (the commitment reveals nothing about the value before opening). Commitment schemes are foundational building blocks for zero-knowledge proofs, secure multi-party computation, and blockchain protocols.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptography",
+      "label": "Cryptography"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-anchoring",
+        "label": "Blockchain Anchoring"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:zero-knowledge",
+        "label": "Zero Knowledge"
+      },
+      {
+        "id": "urn:ngm:class:merkle-proof",
+        "label": "Merkle Proof"
+      },
+      {
+        "id": "urn:ngm:class:bc-cryptographic-primitive",
+        "label": "Cryptographic Primitive"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "hash-function",
+      "label": "Hash Function"
+    },
+    {
+      "slug": "privacy-preserving-blockchain",
+      "label": "Privacy Preserving Blockchain"
+    },
+    {
+      "slug": "random-number-generation",
+      "label": "Random Number Generation"
+    }
+  ]
+}

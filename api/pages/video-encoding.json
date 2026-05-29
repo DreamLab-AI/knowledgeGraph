@@ -1,0 +1,79 @@
+{
+  "id": "urn:visionflow:page:video-encoding",
+  "title": "Video Encoding",
+  "slug": "video-encoding",
+  "public": true,
+  "classIri": "urn:ngm:class:video-encoding",
+  "domain": "media",
+  "definition": "Video encoding is the process of compressing raw or lightly-compressed video frames into a deliverable bitstream using a video codec, encompassing decisions about encoding parameters (resolution, frame rate, bitrate mode, keyframe interval, codec profile and level), rate control algorithms, and hardware or software encoder selection to balance output quality, file size, and encoding speed for a given delivery target.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:video-codec",
+      "label": "Video Codec"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cdn",
+        "label": "CDN"
+      },
+      {
+        "id": "urn:ngm:class:bandwidth-adaptation",
+        "label": "Bandwidth Adaptation"
+      },
+      {
+        "id": "urn:ngm:class:bandwidth-optimization",
+        "label": "Bandwidth Optimization"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:compute-resources",
+        "label": "Compute Resources"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:encoder",
+        "label": "Encoder"
+      },
+      {
+        "id": "urn:ngm:class:video-processing",
+        "label": "Video Processing"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:decoder",
+        "label": "Decoder"
+      },
+      {
+        "id": "urn:ngm:class:content-creation-pipeline",
+        "label": "Content Creation Pipeline"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "meeting-recording",
+      "label": "Meeting Recording"
+    },
+    {
+      "slug": "screen-sharing",
+      "label": "Screen Sharing"
+    }
+  ]
+}

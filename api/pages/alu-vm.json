@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:alu-vm",
+  "title": "AluVM",
+  "slug": "alu-vm",
+  "public": true,
+  "classIri": "urn:ngm:class:alu-vm",
+  "domain": "blockchain",
+  "definition": "A purely functional, register-based virtual machine designed for deterministic execution of smart-contract validation logic within client-side validated Bitcoin protocol layers, notably the RGB Protocol. AluVM operates without mutable global state, using a RISC-like instruction set that guarantees bounded execution time and reproducible results across heterogeneous computing environments. Its architecture is specifically optimised for the constraints of client-side validation, where contract logic must execute identically across all validating parties without access to a shared blockchain state machine.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:virtual-machine",
+      "label": "Virtual Machine"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:rgb-protocol",
+        "label": "RGB Protocol"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:bitcoin-script",
+        "label": "Bitcoin Script"
+      },
+      {
+        "id": "urn:ngm:class:taproot",
+        "label": "Taproot"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rgb-and-client-side-validation",
+        "label": "RGB and Client Side Validation"
+      },
+      {
+        "id": "urn:ngm:class:layer-2-solutions",
+        "label": "Layer 2 Solutions"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    },
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    }
+  ]
+}

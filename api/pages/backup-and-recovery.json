@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:backup-and-recovery",
+  "title": "Backup and Recovery",
+  "slug": "backup-and-recovery",
+  "public": true,
+  "classIri": "urn:ngm:class:backup-and-recovery",
+  "domain": "infrastructure",
+  "definition": "Backup and Recovery is the set of processes, technologies, and policies that ensure data and system state can be copied to a secondary store and restored to a known-good condition following data loss, corruption, or infrastructure failure. It encompasses full, incremental, and differential backup strategies alongside recovery time objectives (RTO) and recovery point objectives (RPO) that define acceptable loss and restoration windows.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:disaster-recovery",
+      "label": "Disaster Recovery"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "id": "urn:ngm:class:operational-resilience",
+        "label": "Operational Resilience"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:data-replication",
+        "label": "Data Replication"
+      },
+      {
+        "id": "urn:ngm:class:cloud-storage",
+        "label": "Cloud Storage"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "data-storage",
+      "label": "Data Storage"
+    },
+    {
+      "slug": "storage-infrastructure",
+      "label": "Storage Infrastructure"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "id": "urn:visionflow:page:safety-evaluation",
+  "title": "Safety Evaluation",
+  "slug": "safety-evaluation",
+  "public": true,
+  "classIri": "urn:ngm:class:safety-evaluation",
+  "domain": "ai",
+  "definition": "Safety evaluation is the systematic assessment of whether an AI system behaves acceptably under a defined threat and risk model, measuring propensities for harmful outputs, susceptibility to misuse, robustness under adversarial pressure, and the presence of dangerous capabilities. It combines automated benchmarks, red-teaming, and structured human review to produce evidence used in deployment decisions and governance reporting. Distinct from capability evaluation, safety evaluation asks not only what a model can do but how reliably it refrains from causing harm.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:model-evaluation",
+      "label": "Model Evaluation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "california-ai-bill",
+      "label": "California AI bill"
+    },
+    {
+      "slug": "proprietary-large-language-models",
+      "label": "Proprietary Large Language Models"
+    }
+  ]
+}

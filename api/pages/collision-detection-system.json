@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:collision-detection-system",
+  "title": "Collision Detection System",
+  "slug": "collision-detection-system",
+  "public": true,
+  "classIri": "urn:ngm:class:collision-detection-system",
+  "domain": "spatial",
+  "definition": "A computational subsystem that continuously tests whether geometric objects in a simulation or physical environment intersect or are about to intersect, enabling physics engines, robotics planners, and interactive applications to respond to contact events. It combines spatial partitioning structures with narrow-phase geometry tests to balance accuracy against performance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:collision-detection",
+      "label": "Collision Detection"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:collision-avoidance",
+        "label": "Collision Avoidance"
+      },
+      {
+        "id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "id": "urn:ngm:class:bullet-physics",
+        "label": "Bullet Physics"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:collaborative-simulation",
+        "label": "Collaborative Simulation"
+      },
+      {
+        "id": "urn:ngm:class:cloth-simulation",
+        "label": "Cloth Simulation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "physics-engine",
+      "label": "Physics Engine"
+    },
+    {
+      "slug": "physics-based-animation",
+      "label": "Physics-Based Animation"
+    }
+  ]
+}

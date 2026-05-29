@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:board-level-oversight",
+  "title": "Board-Level Oversight",
+  "slug": "board-level-oversight",
+  "public": true,
+  "classIri": "urn:ngm:class:board-level-oversight",
+  "domain": "governance",
+  "definition": "Board-Level Oversight refers to the governance responsibility of a corporate or institutional board of directors to monitor, evaluate, and guide the organisation's strategic direction, risk appetite, executive conduct, and compliance posture. It encompasses the board's duty to act as an informed check on executive management, reviewing material risks\u2014including operational, financial, legal, reputational, and increasingly technology risks such as AI adoption\u2014on behalf of shareholders and other stakeholders.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:audit",
+        "label": "Audit"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      },
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      },
+      {
+        "id": "urn:ngm:class:boardroom",
+        "label": "Boardroom"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    },
+    {
+      "slug": "esg-reporting",
+      "label": "ESG Reporting"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:dev-sec-ops",
+  "title": "DevSecOps",
+  "slug": "dev-sec-ops",
+  "public": true,
+  "classIri": "urn:ngm:class:dev-sec-ops",
+  "domain": "ai",
+  "definition": "DevSecOps is a software engineering practice that integrates security controls, testing, and policy enforcement directly into the continuous integration and delivery pipeline, making security a shared responsibility across development, operations, and security teams. It applies the principle of shift-left security, automating vulnerability scanning, dependency auditing, and policy-as-code checks at every stage from code commit through production deployment.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:agile-software-development",
+      "label": "Agile Software Development"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ci-cd-automation",
+        "label": "CI/CD Automation"
+      },
+      {
+        "id": "urn:ngm:class:vulnerability-scanner",
+        "label": "Vulnerability Scanner"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:security-testing",
+        "label": "Security Testing"
+      },
+      {
+        "id": "urn:ngm:class:penetration-testing",
+        "label": "Penetration Testing"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:vulnerability-management",
+        "label": "Vulnerability Management"
+      },
+      {
+        "id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cli-multi-agent-systems",
+      "label": "CLI Multi-Agent Systems"
+    },
+    {
+      "slug": "identity-management-system",
+      "label": "Identity Management System"
+    }
+  ]
+}

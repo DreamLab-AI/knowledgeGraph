@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:safetensors",
+  "title": "Safetensors",
+  "slug": "safetensors",
+  "public": true,
+  "classIri": "urn:ngm:class:safetensors",
+  "domain": "ai",
+  "definition": "Safetensors is a secure, simple, and fast file format for storing and loading neural network tensor weights, developed by Hugging Face as a safe alternative to Python's pickle-based serialisation. The format stores tensor metadata in a JSON header followed by raw binary data, enabling zero-copy memory-mapped loading without executing arbitrary code during deserialisation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-serialization",
+      "label": "Data Serialization"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-checkpoint",
+        "label": "Model Checkpoint"
+      },
+      {
+        "id": "urn:ngm:class:ai-model-inference-engine",
+        "label": "AI Model Inference Engine"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:model-weights",
+        "label": "Model Weights"
+      },
+      {
+        "id": "urn:ngm:class:hugging-face",
+        "label": "Hugging Face"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:safetensors-format",
+        "label": "Safetensors Format"
+      },
+      {
+        "id": "urn:ngm:class:hugging-face-model-hub",
+        "label": "Hugging Face Model Hub"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "checkpoints",
+      "label": "Checkpoints"
+    },
+    {
+      "slug": "open-generative-ai-tools",
+      "label": "Open Generative AI tools"
+    }
+  ]
+}

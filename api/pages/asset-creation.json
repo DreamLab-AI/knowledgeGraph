@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:asset-creation",
+  "title": "Asset Creation",
+  "slug": "asset-creation",
+  "public": true,
+  "classIri": "urn:ngm:class:asset-creation",
+  "domain": "media",
+  "definition": "Asset Creation is the structured practice of producing digital or physical resources \u2014 including geometry, textures, audio, code, and data \u2014 intended for use within interactive experiences, virtual environments, or production pipelines. It encompasses the full authoring lifecycle from concept through final deliverable, applying artistic, technical, and automated methods to yield artefacts that meet quality, format, and performance requirements.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:content-creation",
+      "label": "Content Creation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:3-d-modeling",
+        "label": "3D Modeling"
+      },
+      {
+        "id": "urn:ngm:class:3-d-animation",
+        "label": "3D Animation"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:asset-pipeline",
+        "label": "Asset Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:digital-content-creation",
+        "label": "Digital Content Creation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "id": "urn:ngm:class:procedural-content-generation",
+        "label": "Procedural Content Generation"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "3-d-modeling",
+      "label": "3D Modeling"
+    },
+    {
+      "slug": "metaverse-content-pipeline",
+      "label": "Metaverse Content Pipeline"
+    }
+  ]
+}

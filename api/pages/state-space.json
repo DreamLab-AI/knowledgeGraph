@@ -1,0 +1,83 @@
+{
+  "id": "urn:visionflow:page:state-space",
+  "title": "State Space",
+  "slug": "state-space",
+  "public": true,
+  "classIri": "urn:ngm:class:state-space",
+  "domain": "ai",
+  "definition": "A state space is the mathematical set of all possible configurations (states) of a dynamical system, together with the transition rules that govern how the system evolves from one state to another over time. In control theory it is represented by first-order differential or difference equations relating state variables, inputs, and outputs; in artificial intelligence it denotes the complete set of system configurations that a search or planning algorithm may explore.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:control-theory",
+      "label": "Control Theory"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:optimal-control",
+        "label": "Optimal Control"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:system-identification",
+        "label": "System Identification"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "id": "urn:ngm:class:state-estimation",
+        "label": "State Estimation"
+      },
+      {
+        "id": "urn:ngm:class:hidden-state",
+        "label": "Hidden State"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:state-observer",
+        "label": "State Observer"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:time-series-analysis",
+        "label": "Time-Series Analysis"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "control-algorithm",
+      "label": "Control Algorithm"
+    },
+    {
+      "slug": "state-machine",
+      "label": "State Machine"
+    }
+  ]
+}

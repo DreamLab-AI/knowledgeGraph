@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:community-decision-making",
+  "title": "Community Decision Making",
+  "slug": "community-decision-making",
+  "public": true,
+  "classIri": "urn:ngm:class:community-decision-making",
+  "domain": "governance",
+  "definition": "The processes by which a defined community of stakeholders collectively identifies issues, deliberates alternatives, and reaches binding or advisory decisions about matters affecting shared resources, norms, or direction. It encompasses participatory design, public consultation, deliberative democracy mechanisms, and digital governance platforms that translate community preferences into actionable outcomes.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:collective-decision-making",
+      "label": "Collective Decision Making"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:community-governance",
+        "label": "Community Governance"
+      },
+      {
+        "id": "urn:ngm:class:collective-governance",
+        "label": "Collective Governance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:coordination-mechanisms",
+        "label": "Coordination Mechanisms"
+      },
+      {
+        "id": "urn:ngm:class:communication-tools",
+        "label": "Communication Tools"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "id": "urn:ngm:class:conviction-voting",
+        "label": "Conviction Voting"
+      },
+      {
+        "id": "urn:ngm:class:collective-action",
+        "label": "Collective Action"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "community-governance-model",
+      "label": "Community Governance Model"
+    },
+    {
+      "slug": "democratic-participation",
+      "label": "Democratic Participation"
+    }
+  ]
+}

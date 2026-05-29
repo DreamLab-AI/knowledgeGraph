@@ -1,0 +1,71 @@
+{
+  "id": "urn:visionflow:page:science-based-targets",
+  "title": "Science Based Targets",
+  "slug": "science-based-targets",
+  "public": true,
+  "classIri": "urn:ngm:class:science-based-targets",
+  "domain": "governance",
+  "definition": "Science Based Targets (SBTs) are greenhouse gas emission reduction targets set by companies in alignment with the level of decarbonisation required by climate science to limit global warming to 1.5\u00b0C above pre-industrial levels, as defined by the Science Based Targets initiative (SBTi). Targets are validated by the SBTi against approved methods including absolute contraction, sectoral decarbonisation approach, and economy-wide linear regression, and must cover Scope 1 and Scope 2 emissions with a growing requirement to include Scope 3.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:science-based-target",
+      "label": "Science Based Target"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ghg-protocol-corporate-standard",
+        "label": "GHG Protocol Corporate Standard"
+      },
+      {
+        "id": "urn:ngm:class:scope-3-emissions",
+        "label": "Scope 3 Emissions"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:net-zero-targets",
+        "label": "Net Zero Targets"
+      },
+      {
+        "id": "urn:ngm:class:decarbonisation",
+        "label": "Decarbonisation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:sbti",
+        "label": "SBTi"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:paris-agreement",
+        "label": "Paris Agreement"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "carbon-footprint-measurement",
+      "label": "Carbon Footprint Measurement"
+    },
+    {
+      "slug": "carbon-neutral-blockchain",
+      "label": "Carbon Neutral Blockchain"
+    }
+  ]
+}

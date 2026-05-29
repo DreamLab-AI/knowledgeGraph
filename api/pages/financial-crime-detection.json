@@ -1,0 +1,75 @@
+{
+  "id": "urn:visionflow:page:financial-crime-detection",
+  "title": "Financial Crime Detection",
+  "slug": "financial-crime-detection",
+  "public": true,
+  "classIri": "urn:ngm:class:financial-crime-detection",
+  "domain": "finance",
+  "definition": "Financial crime detection is the application of data analysis, machine learning, and rule-based systems to identify patterns indicative of money laundering, fraud, terrorist financing, bribery, market manipulation, and related illicit activities within financial transaction data. It operates at the intersection of compliance obligation and risk management, producing alerts that human investigators triage and escalate to regulatory or law-enforcement bodies.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:fraud-detection",
+      "label": "Fraud Detection"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:transaction-monitoring",
+        "label": "Transaction Monitoring"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:blockchain-analytics",
+        "label": "Blockchain Analytics"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      },
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "privacy-preserving-analytics",
+      "label": "Privacy Preserving Analytics"
+    },
+    {
+      "slug": "regulatory-reporting",
+      "label": "Regulatory Reporting"
+    }
+  ]
+}

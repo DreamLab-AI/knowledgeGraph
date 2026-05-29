@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:client-side-validation",
+  "title": "Client-Side Validation",
+  "slug": "client-side-validation",
+  "public": true,
+  "classIri": "urn:ngm:class:client-side-validation",
+  "domain": "blockchain",
+  "definition": "Client-Side Validation is the process of verifying user-supplied data within the browser or client application before that data is transmitted to a server, providing immediate feedback to users and reducing unnecessary network requests. In the context of Bitcoin and RGB Protocol, it refers to a distinct validation paradigm where the full state of off-chain assets is verified locally by the recipient rather than by all network nodes, enabling scalable, private asset transfers. The two usages share the principle of local verification but differ fundamentally in their security models and scope.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-integrity",
+      "label": "Data Integrity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:rgb-protocol",
+        "label": "RGB Protocol"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
+      },
+      {
+        "id": "urn:ngm:class:json-schema",
+        "label": "JSON Schema"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bitcoin-network",
+        "label": "Bitcoin Network"
+      },
+      {
+        "id": "urn:ngm:class:layer-2-solutions",
+        "label": "Layer 2 Solutions"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge",
+        "label": "Zero Knowledge"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    },
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    },
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    },
+    {
+      "slug": "taproot-assets",
+      "label": "Taproot Assets"
+    },
+    {
+      "slug": "wallet",
+      "label": "Wallet"
+    }
+  ]
+}

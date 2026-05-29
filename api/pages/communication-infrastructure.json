@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:communication-infrastructure",
+  "title": "Communication Infrastructure",
+  "slug": "communication-infrastructure",
+  "public": true,
+  "classIri": "urn:ngm:class:communication-infrastructure",
+  "domain": "infrastructure",
+  "definition": "The physical and logical substrate \u2014 including fibre, wireless networks, data centres, protocols, and switching equipment \u2014 that enables the transmission of information between nodes in a networked system. It underpins digital services by providing reliable, low-latency, and high-bandwidth connectivity at scale, from local area networks to global internet backbones.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:communication-tools",
+        "label": "Communication Tools"
+      },
+      {
+        "id": "urn:ngm:class:immersive-communication",
+        "label": "Immersive Communication"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      },
+      {
+        "id": "urn:ngm:class:5-g-network",
+        "label": "5G Network"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:network-communication",
+        "label": "Network Communication"
+      },
+      {
+        "id": "urn:ngm:class:bandwidth-optimization",
+        "label": "Bandwidth Optimization"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "real-time-translation",
+      "label": "Real-time Translation"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    }
+  ]
+}

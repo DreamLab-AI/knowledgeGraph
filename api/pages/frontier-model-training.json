@@ -1,0 +1,79 @@
+{
+  "id": "urn:visionflow:page:frontier-model-training",
+  "title": "Frontier Model Training",
+  "slug": "frontier-model-training",
+  "public": true,
+  "classIri": "urn:ngm:class:frontier-model-training",
+  "domain": "ai",
+  "definition": "Frontier model training refers to the end-to-end process of constructing the largest and most capable AI systems at the current performance frontier, encompassing data curation at web scale, distributed pretraining across thousands of accelerators, supervised fine-tuning, and reinforcement learning from human feedback, at compute costs exceeding tens of millions of US dollars per run. These training pipelines push the boundaries of achievable capability and introduce novel safety, governance, and infrastructure challenges not present in smaller-scale model development.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:large-language-model-training",
+      "label": "Large Language Model Training"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:frontier-models",
+        "label": "Frontier Models"
+      },
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:machine-learning-infrastructure",
+        "label": "Machine Learning Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:benchmarks",
+        "label": "Benchmarks"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-companies",
+      "label": "AI Companies"
+    },
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    }
+  ]
+}

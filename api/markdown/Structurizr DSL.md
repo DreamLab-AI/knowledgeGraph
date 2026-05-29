@@ -1,0 +1,62 @@
+public:: true
+
+# Structurizr DSL
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:structurizr-dsl",
+  "@type": "Page",
+  "vc:slug": "structurizr-dsl",
+  "title": "Structurizr DSL",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 2
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:structurizr-dsl",
+  "@type": "Class",
+  "label": "Structurizr DSL",
+  "definition": "The Structurizr DSL is a text-based domain-specific language for defining software architecture models conforming to Simon Brown's C4 Model, enabling teams to describe system context, containers, components, and code-level elements as code that can be version-controlled and rendered into multiple diagram formats. It is the primary input format for the Structurizr toolchain, which produces interactive, filterable architecture diagrams from a single workspace definition.",
+  "domain": "infrastructure",
+  "maturity": "emerging",
+  "subClassOf": [{"@id": "urn:ngm:class:diagrams-as-code", "label": "Diagrams as Code"}],
+  "relations": {
+    "implements": [
+      {"@id": "urn:ngm:class:c4-model", "label": "C4 Model"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:software-architecture", "label": "Software Architecture"},
+      {"@id": "urn:ngm:class:documentation-generation", "label": "Documentation Generation"},
+      {"@id": "urn:ngm:class:technical-documentation", "label": "Technical Documentation"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:architecture", "label": "Architecture"},
+      {"@id": "urn:ngm:class:documentation-standards", "label": "Documentation Standards"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:enterprise-architecture", "label": "Enterprise Architecture"}
+    ]
+  },
+  "quality": 0.8
+}
+```
+
+- ### Definition
+  - The Structurizr DSL provides a human-readable, machine-parseable syntax for defining workspace models that encode [[Software Architecture]] at multiple levels of abstraction, following the [[C4 Model]] hierarchy of system contexts, containers, components, and dynamic interaction sequences. A single `.dsl` workspace file declares people, software systems, containers, and their relationships, which the Structurizr renderer translates into C4-compliant diagram views without requiring manual diagram layout. The DSL supports workspace extensions, includes, and scripting integrations for large-scale architecture documentation.
+
+- ### Relationships
+  - Structurizr DSL sits within the [[Diagrams as Code]] movement alongside Mermaid, PlantUML, and D2, but is specifically aligned with the [[C4 Model]] abstraction levels. It enables [[Documentation Generation]] pipelines integrated with CI/CD, and supports [[Enterprise Architecture]] programmes where consistent notation and version-controlled models are required. [[Documentation Standards]] for software systems increasingly reference diagrams-as-code approaches to reduce diagram drift.
+
+- ### Content
+  - Simon Brown created the C4 Model around 2006–2008 as a pragmatic notation for communicating software architecture at different levels of detail, and the Structurizr tooling — initially a SaaS application — was developed to support it. The Structurizr DSL was introduced as an open-source alternative to the graphical workspace editor, enabling teams to define architecture models entirely in text files, which could be committed to version control alongside source code.
+
+  - The DSL syntax uses a hierarchical block structure: a `workspace` block contains a `model` block defining elements and relationships, and a `views` block specifying diagram renderings. Elements are declared with `softwareSystem`, `container`, `component`, and `person` keywords. Relationships use arrow-like syntax with optional technology and description annotations. The `!include` directive enables model decomposition across files, and `!extend` allows workspace inheritance for large organisations.
+
+  - The Structurizr CLI, available as a Docker image or standalone JAR, can render DSL files to static diagrams (PNG, SVG), push models to the Structurizr SaaS platform or on-premises installation, and validate workspace integrity. Integration with GitHub Actions, GitLab CI, and Jenkins enables automated diagram generation on commit. The Structurizr for .NET, Java, and TypeScript libraries provide programmatic workspace construction as alternatives to the DSL.
+
+  - By 2024–2025, the Structurizr DSL has gained significant traction in enterprises seeking to treat architecture documentation with the same rigour as infrastructure-as-code. AI-assisted tooling (GitHub Copilot, LLM agents) can generate DSL stubs from natural-language system descriptions, accelerating architecture documentation. The format is increasingly referenced in architecture decision records and onboarding materials, positioning it as an emerging standard for software architecture communication in modern engineering organisations.
+

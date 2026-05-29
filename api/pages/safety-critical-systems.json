@@ -1,0 +1,83 @@
+{
+  "id": "urn:visionflow:page:safety-critical-systems",
+  "title": "Safety-Critical Systems",
+  "slug": "safety-critical-systems",
+  "public": true,
+  "classIri": "urn:ngm:class:safety-critical-systems",
+  "domain": "infrastructure",
+  "definition": "Safety-critical systems are hardware and software systems whose failure or malfunction could result in death, serious injury, significant property damage, or severe environmental harm. They are subject to rigorous engineering processes, formal standards, and independent certification to demonstrate that residual risk is reduced to an acceptable level.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "id": "urn:ngm:class:hazard-analysis",
+        "label": "Hazard Analysis"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:reliability-engineering",
+        "label": "Reliability Engineering"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iec-61508",
+        "label": "IEC 61508"
+      },
+      {
+        "id": "urn:ngm:class:iso-26262",
+        "label": "ISO 26262"
+      },
+      {
+        "id": "urn:ngm:class:do-178-c",
+        "label": "DO-178C"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "control-algorithm",
+      "label": "Control Algorithm"
+    },
+    {
+      "slug": "real-time",
+      "label": "Real Time"
+    }
+  ]
+}

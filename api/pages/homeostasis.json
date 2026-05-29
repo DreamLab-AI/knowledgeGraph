@@ -1,0 +1,62 @@
+{
+  "id": "urn:visionflow:page:homeostasis",
+  "title": "Homeostasis",
+  "slug": "homeostasis",
+  "public": true,
+  "classIri": "urn:ngm:class:homeostasis",
+  "domain": "science",
+  "definition": "Homeostasis is the property of a biological or engineered system by which it maintains internal state variables within a defined physiological or operational range despite external perturbations, achieved through negative feedback control loops that sense deviations from a setpoint and activate corrective effectors. It is a foundational principle of physiology, cybernetics, and adaptive control engineering.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cybernetics",
+      "label": "Cybernetics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:complex-systems",
+        "label": "Complex Systems"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      },
+      {
+        "id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:systems-theory",
+        "label": "Systems Theory"
+      },
+      {
+        "id": "urn:ngm:class:emergence",
+        "label": "Emergence"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "feedback-loop",
+      "label": "Feedback Loop"
+    }
+  ]
+}

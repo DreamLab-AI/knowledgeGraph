@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:ai-agent-payments",
+  "title": "AI Agent Payments",
+  "slug": "ai-agent-payments",
+  "public": true,
+  "classIri": "urn:ngm:class:ai-agent-payments",
+  "domain": "finance",
+  "definition": "AI Agent Payments refers to the infrastructure, protocols, and economic mechanisms that enable autonomous AI agents to initiate, authorise, and settle financial transactions on behalf of users or autonomously as principals, spanning micropayment rails for API service consumption, programmatic access to payment networks, and identity-bound wallet abstractions that constrain agent spending to authorised scopes and budgets.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:agentic-finance",
+      "label": "Agentic Finance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:agentic-internet",
+        "label": "Agentic Internet"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-task-execution",
+        "label": "Autonomous Task Execution"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:micropayments",
+        "label": "Micropayments"
+      },
+      {
+        "id": "urn:ngm:class:digital-currency",
+        "label": "Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-as-money",
+      "label": "Bitcoin As Money"
+    },
+    {
+      "slug": "cashu",
+      "label": "Cashu"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:autonomous-task-execution",
+  "title": "Autonomous Task Execution",
+  "slug": "autonomous-task-execution",
+  "public": true,
+  "classIri": "urn:ngm:class:autonomous-task-execution",
+  "domain": "ai",
+  "definition": "Autonomous Task Execution refers to the capacity of AI agents or automated systems to independently carry out goal-directed actions \u2014 including planning, tool invocation, error recovery, and result validation \u2014 without continuous human supervision. It encompasses the full lifecycle from task decomposition through completion, spanning single-step tool calls and long-horizon multi-step workflows.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:agentic-ai",
+      "label": "Agentic AI"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-orchestration",
+        "label": "Multi-Agent Orchestration"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:automated-planning",
+        "label": "Automated Planning"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:llm-agents",
+        "label": "LLM Agents"
+      },
+      {
+        "id": "urn:ngm:class:long-horizon-planning",
+        "label": "Long-Horizon Planning"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "computer-use-and-browser-agents",
+      "label": "Computer Use and Browser Agents"
+    }
+  ]
+}

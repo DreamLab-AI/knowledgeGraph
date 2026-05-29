@@ -1,0 +1,62 @@
+{
+  "id": "urn:visionflow:page:dspy",
+  "title": "DSPy",
+  "slug": "dspy",
+  "public": true,
+  "classIri": "urn:ngm:class:dspy",
+  "domain": "ai",
+  "definition": "DSPy is an open-source framework for programming language models in which developers declare the structure of a task using typed signatures and composable modules, and an optimiser automatically generates and tunes the prompts and few-shot examples needed to maximise a defined metric. By treating prompts as learnable parameters rather than hand-written strings, DSPy shifts language-model application development from manual prompt engineering toward systematic, metric-driven compilation of pipelines. It targets reliable, portable multi-stage LLM programs such as retrieval-augmented and agentic systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:llm-application-framework",
+      "label": "LLM Application Framework"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:llm-orchestration",
+        "label": "LLM Orchestration"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:llm-agents",
+        "label": "LLM Agents"
+      },
+      {
+        "id": "urn:ngm:class:chain-of-thought-prompting",
+        "label": "Chain-of-Thought Prompting"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "slug": "prompt-tuning",
+      "label": "Prompt Tuning"
+    }
+  ]
+}

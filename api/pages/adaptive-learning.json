@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:adaptive-learning",
+  "title": "Adaptive Learning",
+  "slug": "adaptive-learning",
+  "public": true,
+  "classIri": "urn:ngm:class:adaptive-learning",
+  "domain": "ai",
+  "definition": "Adaptive learning is an educational methodology and technology paradigm in which instructional content, pacing, and assessment are dynamically tailored to each learner's demonstrated knowledge, learning style, and progress in real time. Computational systems analyse performance data to identify gaps and misconceptions, then serve personalised learning paths that optimise for mastery and engagement. The approach draws on psychometric theory, knowledge tracing algorithms, and machine learning to individualise instruction at scale.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:education-technology",
+      "label": "Education Technology"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:personalised-learning",
+        "label": "Personalised Learning"
+      },
+      {
+        "id": "urn:ngm:class:learning-analytics",
+        "label": "Learning Analytics"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:intelligent-tutoring-system",
+        "label": "Intelligent Tutoring System"
+      },
+      {
+        "id": "urn:ngm:class:learning-management-system",
+        "label": "Learning Management System"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:curriculum-learning",
+        "label": "Curriculum Learning"
+      },
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "education-and-ai",
+      "label": "Education and AI"
+    },
+    {
+      "slug": "learning-analytics",
+      "label": "Learning Analytics"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "id": "urn:visionflow:page:content-identifier",
+  "title": "Content Identifier",
+  "slug": "content-identifier",
+  "public": true,
+  "classIri": "urn:ngm:class:content-identifier",
+  "domain": "infrastructure",
+  "definition": "A Content Identifier (CID) is a self-describing, cryptographically derived label used in the InterPlanetary File System and IPLD ecosystem to uniquely identify and verify content through its hash, encoding the hash function used, the hash digest, and a multicodec descriptor for the serialised data format into a compact, version-aware multihash structure.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:content-addressing",
+      "label": "Content Addressing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:multihash",
+        "label": "Multihash"
+      },
+      {
+        "id": "urn:ngm:class:ipld",
+        "label": "IPLD"
+      },
+      {
+        "id": "urn:ngm:class:merkle-dag",
+        "label": "Merkle DAG"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      },
+      {
+        "id": "urn:ngm:class:ipfs-content-addressing",
+        "label": "IPFS Content Addressing"
+      },
+      {
+        "id": "urn:ngm:class:distributed-storage",
+        "label": "Distributed Storage"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "decentralised-file-storage",
+      "label": "Decentralised file storage"
+    },
+    {
+      "slug": "nft-minting",
+      "label": "NFT Minting"
+    }
+  ]
+}

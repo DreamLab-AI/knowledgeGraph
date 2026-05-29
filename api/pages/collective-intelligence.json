@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:collective-intelligence",
+  "title": "Collective Intelligence",
+  "slug": "collective-intelligence",
+  "public": true,
+  "classIri": "urn:ngm:class:collective-intelligence",
+  "domain": "ai",
+  "definition": "Collective intelligence is the shared or group intelligence that emerges from the collaboration, competition, and collective decision-making of many individuals or agents, producing cognitive capacities \u2014 prediction accuracy, problem-solving breadth, creative output \u2014 that exceed what any individual participant could achieve alone. It manifests in biological systems such as ant colonies and immune networks, human social institutions, and engineered multi-agent systems, and is characterised by distributed information processing, diversity of perspective, and aggregation mechanisms.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:collective-intelligence-system",
+      "label": "Collective Intelligence System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:collective-decision-making",
+        "label": "Collective Decision Making"
+      },
+      {
+        "id": "urn:ngm:class:emergence",
+        "label": "Emergence"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-coordination",
+        "label": "Decentralised Coordination"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:agent-based-models",
+        "label": "Agent-Based Models"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-governance",
+      "label": "Blockchain Governance"
+    },
+    {
+      "slug": "distributed-decision-making",
+      "label": "Distributed Decision Making"
+    },
+    {
+      "slug": "emergence",
+      "label": "Emergence"
+    },
+    {
+      "slug": "swarm-robotics",
+      "label": "Swarm Robotics"
+    },
+    {
+      "slug": "virtual-group-dynamics",
+      "label": "Virtual Group Dynamics"
+    }
+  ]
+}

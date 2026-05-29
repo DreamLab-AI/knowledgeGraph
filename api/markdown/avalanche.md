@@ -1,0 +1,14 @@
+- ### Definition
+  - Avalanche is a layer-1 smart contract platform launched in 2020 by Ava Labs that distinguishes itself through the Avalanche consensus family — a leaderless, Byzantine-fault-tolerant protocol suite that achieves sub-two-second finality at thousands of transactions per second. Its subnet architecture allows developers to deploy application-specific blockchains with custom virtual machines, sharing the security of the primary network whilst maintaining independent execution environments. The [[EVM]]-compatible C-Chain makes porting [[Ethereum]] dApps straightforward.
+
+- ### Relationships
+  - Avalanche uses a novel [[Consensus Mechanism]] based on repeated random sub-sampling rather than classical BFT leader election, giving it probabilistic [[Proof of Stake]] finality. Its [[EVM]]-compatible C-Chain connects it directly to the [[Ethereum]] developer ecosystem. The subnet model enables [[Cross-Chain Interoperability]] between application-specific chains. [[Decentralized Finance (DeFi)]] protocols such as Trader Joe and Platypus Finance have grown substantially on the platform. It is often compared and contrasted with [[Polkadot]]'s parachain model.
+
+- ### Content
+  - Avalanche was conceived by Cornell researchers Emin Gün Sirer, Kevin Sekniqi, and Maofan Yin, whose 2018 "Snowflake to Avalanche" paper introduced the Snowball/Snowflake/Avalanche consensus family. Ava Labs was founded in 2018, the mainnet launched in September 2020, and the platform rapidly accrued significant DeFi TVL through 2021–2022. The native AVAX token is used for transaction fees, staking, and subnet licensing.
+
+  - The technical architecture is split across three purpose-built chains: the X-Chain handles UTXO-model asset creation and transfer using the Avalanche Virtual Machine (AVM); the P-Chain manages validator sets, staking, and subnet creation; the C-Chain provides an EVM execution environment for Solidity smart contracts. Validators must stake AVAX and validate the primary network before optionally validating subnets. Consensus is achieved without a leader — each node repeatedly queries a small random sample of peers and converges via statistical reinforcement.
+
+  - The ecosystem spans DeFi (Trader Joe DEX, Aave on Avalanche), gaming (Shrapnel, DeFi Kingdoms), and enterprise subnets. Avalanche's Evergreen subnets target institutions requiring permissioned environments whilst remaining interoperable with the public network. Warp Messaging, introduced in 2022, enables native cross-subnet communication without third-party bridges.
+
+  - By 2024–2025, Avalanche has expanded subnet adoption substantially, with gaming and financial institutions deploying custom subnets. The platform competes directly with Polygon, BNB Chain, and Solana for EVM-compatible dApp deployment. Ongoing development focuses on HyperSDK for high-performance custom VM construction and deeper cross-chain connectivity via Avalanche Interchain Messaging.

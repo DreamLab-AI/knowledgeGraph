@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:ipld",
+  "title": "IPLD",
+  "slug": "ipld",
+  "public": true,
+  "classIri": "urn:ngm:class:ipld",
+  "domain": "infrastructure",
+  "definition": "IPLD (InterPlanetary Linked Data) is a data model and set of specifications for building content-addressed, hash-linked data structures that interoperate across distributed systems. It defines how to represent linked data as directed acyclic graphs whose edges are content identifiers (CIDs), allowing any hash-linked structure \u2014 Git commits, blockchain blocks, IPFS files \u2014 to be traversed through a common addressing scheme. IPLD provides the data layer beneath IPFS and Filecoin, decoupling the logical structure of data from the protocol used to store or transport it.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:content-addressing",
+      "label": "Content Addressing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-availability",
+        "label": "Data Availability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:merkle-dag",
+        "label": "Merkle DAG"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      },
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    },
+    {
+      "slug": "decentralised-file-storage",
+      "label": "Decentralised file storage"
+    }
+  ]
+}

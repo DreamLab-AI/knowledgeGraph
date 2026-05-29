@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:layer-2-solutions",
+  "title": "Layer 2 Solutions",
+  "slug": "layer-2-solutions",
+  "public": true,
+  "classIri": "urn:ngm:class:layer-2-solutions",
+  "domain": "blockchain",
+  "definition": "Layer 2 solutions are protocols and systems built atop a base blockchain (layer 1) that handle transactions off the main chain to increase throughput, reduce latency, and lower transaction costs, while periodically settling finality back to the underlying layer 1 for security. The principal layer 2 paradigms include optimistic rollups, zero-knowledge rollups, state channels, and sidechains, each offering distinct trust and performance tradeoffs.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain-scalability",
+      "label": "Blockchain Scalability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:state-channel",
+        "label": "State Channel"
+      },
+      {
+        "id": "urn:ngm:class:sidechain",
+        "label": "Sidechain"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      },
+      {
+        "id": "urn:ngm:class:payment-channel",
+        "label": "Payment Channel"
+      },
+      {
+        "id": "urn:ngm:class:gas-fee-market",
+        "label": "Gas Fee Market"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    },
+    {
+      "slug": "bitcoin-related-links",
+      "label": "Bitcoin related links"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "ecash",
+      "label": "ecash"
+    }
+  ]
+}

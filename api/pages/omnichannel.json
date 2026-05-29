@@ -1,0 +1,67 @@
+{
+  "id": "urn:visionflow:page:omnichannel",
+  "title": "Omnichannel",
+  "slug": "omnichannel",
+  "public": true,
+  "classIri": "urn:ngm:class:omnichannel",
+  "domain": "ai",
+  "definition": "Omnichannel is a customer engagement strategy that unifies all interaction channels \u2014 physical stores, web, mobile, social media, telephone, and messaging \u2014 into a single, consistent experience in which customer context and history transfer seamlessly across channel boundaries. Unlike multichannel approaches that operate channels in silos, omnichannel architectures share a common data layer and orchestration engine so that a session started on one channel can be continued on another without loss of state.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:customer-experience-management",
+      "label": "Customer Experience Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:customer-data-platform",
+        "label": "Customer Data Platform"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:customer-experience",
+        "label": "Customer Experience"
+      },
+      {
+        "id": "urn:ngm:class:customer-retention",
+        "label": "Customer Retention"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:crm",
+        "label": "CRM"
+      },
+      {
+        "id": "urn:ngm:class:omnichannel-routing",
+        "label": "Omnichannel Routing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "call-centres",
+      "label": "Call Centres"
+    }
+  ]
+}

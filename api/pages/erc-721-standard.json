@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:erc-721-standard",
+  "title": "ERC-721 Standard",
+  "slug": "erc-721-standard",
+  "public": true,
+  "classIri": "urn:ngm:class:erc-721-standard",
+  "domain": "blockchain",
+  "definition": "ERC-721 is an Ethereum token standard defining a minimal interface for non-fungible tokens (NFTs), where each token carries a unique identifier that distinguishes it from every other token in the same contract. It specifies ownership tracking, safe transfer functions, and an optional metadata extension for associating URIs with token properties.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:nft-standard",
+      "label": "NFT Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:erc-20-standard",
+        "label": "ERC-20 Standard"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:erc-1155",
+        "label": "ERC-1155"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "nft-minting",
+      "label": "NFT Minting"
+    },
+    {
+      "slug": "quorum-blockchain",
+      "label": "Quorum Blockchain"
+    }
+  ]
+}

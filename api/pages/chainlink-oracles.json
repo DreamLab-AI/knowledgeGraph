@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:chainlink-oracles",
+  "title": "Chainlink Oracles",
+  "slug": "chainlink-oracles",
+  "public": true,
+  "classIri": "urn:ngm:class:chainlink-oracles",
+  "domain": "blockchain",
+  "definition": "Chainlink Oracles are decentralised oracle networks operated by the Chainlink protocol that securely fetch, validate, and deliver off-chain data to on-chain smart contracts. They aggregate inputs from multiple independent node operators using cryptographic proofs and reputation systems to ensure tamper-resistant data feeds. Widely deployed for price feeds, verifiable randomness, and cross-chain communication, they form critical infrastructure for decentralised finance and Web3 applications.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:oracle-network",
+      "label": "Oracle Network"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-interoperability",
+        "label": "Cross-Chain Interoperability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-random-function",
+        "label": "Verifiable Random Function"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:chainlink",
+        "label": "Chainlink"
+      },
+      {
+        "id": "urn:ngm:class:price-oracle",
+        "label": "Price Oracle"
+      },
+      {
+        "id": "urn:ngm:class:chainlink-ccip",
+        "label": "Chainlink CCIP"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "carbon-credit-tracking",
+      "label": "Carbon Credit Tracking"
+    },
+    {
+      "slug": "green-blockchain-initiatives",
+      "label": "Green Blockchain Initiatives"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    }
+  ]
+}

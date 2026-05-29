@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:agent-communication-protocol",
+  "title": "Agent Communication Protocol",
+  "slug": "agent-communication-protocol",
+  "public": true,
+  "classIri": "urn:ngm:class:agent-communication-protocol",
+  "domain": "ai",
+  "definition": "An Agent Communication Protocol is a formalised specification governing the syntax, semantics, and pragmatics of message exchange between autonomous software agents, enabling them to coordinate actions, share information, delegate tasks, and negotiate goals across heterogeneous runtime environments. Such protocols define the speech act primitives, message envelope formats, conversation policies, and error-handling procedures that agents must implement to participate in a multi-agent system.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:coordination-protocol",
+      "label": "Coordination Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:inter-agent-communication",
+        "label": "Inter-Agent Communication"
+      },
+      {
+        "id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-task-execution",
+        "label": "Autonomous Task Execution"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:agent-to-agent-protocol",
+        "label": "Agent-to-Agent Protocol"
+      },
+      {
+        "id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "model-context-protocol",
+      "label": "Model Context Protocol"
+    }
+  ]
+}

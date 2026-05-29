@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:edge-ai",
+  "title": "Edge AI",
+  "slug": "edge-ai",
+  "public": true,
+  "classIri": "urn:ngm:class:edge-ai",
+  "domain": "ai",
+  "definition": "Edge AI is the deployment and execution of artificial intelligence inference workloads directly on edge devices\u2014such as smartphones, IoT sensors, cameras, and embedded systems\u2014close to the data source, rather than in centralised cloud data centres. It reduces latency, preserves data privacy, enables offline operation, and cuts bandwidth and cloud compute costs by processing data locally using optimised neural network models and dedicated hardware accelerators.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:edge-computing",
+      "label": "Edge Computing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:real-time-inference-at-edge",
+        "label": "Real-Time Inference at Edge"
+      },
+      {
+        "id": "urn:ngm:class:io-t-ai-integration",
+        "label": "IoT AI Integration"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:inference-engine",
+        "label": "Inference Engine"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
+      },
+      {
+        "id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      },
+      {
+        "id": "urn:ngm:class:onnx",
+        "label": "ONNX"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ar-frame",
+      "label": "AR Frame"
+    },
+    {
+      "slug": "data-compression",
+      "label": "Data Compression"
+    },
+    {
+      "slug": "home-assistant",
+      "label": "Home Assistant"
+    },
+    {
+      "slug": "mobile-robot-platform",
+      "label": "Mobile Robot Platform"
+    },
+    {
+      "slug": "proprietary-large-language-models",
+      "label": "Proprietary Large Language Models"
+    }
+  ]
+}

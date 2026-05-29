@@ -1,0 +1,68 @@
+{
+  "id": "urn:visionflow:page:cross-encoder-reranking",
+  "title": "Cross-Encoder Reranking",
+  "slug": "cross-encoder-reranking",
+  "public": true,
+  "classIri": "urn:ngm:class:cross-encoder-reranking",
+  "domain": "ai",
+  "definition": "Cross-Encoder Reranking is a two-stage information retrieval technique in which a cross-encoder transformer model receives a query and a candidate document concatenated as a single input sequence, performs full bidirectional self-attention across both, and outputs a relevance score used to re-order an initial candidate set retrieved by a faster but less accurate first-stage retriever. It typically yields substantially higher ranking quality than bi-encoder first-stage retrieval at the cost of higher computational latency.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:information-retrieval",
+      "label": "Information Retrieval"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:embedding-model",
+        "label": "Embedding Model"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:rag-pipeline",
+        "label": "RAG Pipeline"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cosine-similarity",
+        "label": "Cosine Similarity"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-search",
+      "label": "AI Search"
+    },
+    {
+      "slug": "semantic-search",
+      "label": "Semantic Search"
+    }
+  ]
+}

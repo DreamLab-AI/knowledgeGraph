@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:collaborative-simulation",
+  "title": "Collaborative Simulation",
+  "slug": "collaborative-simulation",
+  "public": true,
+  "classIri": "urn:ngm:class:collaborative-simulation",
+  "domain": "spatial",
+  "definition": "A computational environment in which multiple participants \u2014 human or agent \u2014 share, manipulate, and observe a common simulation state in real time. It combines networked synchronisation with physics or behavioural modelling to support joint exploration, training, or design activities across distributed locations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:collaborative-technology",
+      "label": "Collaborative Technology"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-twin-collaboration",
+        "label": "Digital Twin Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-design",
+        "label": "Collaborative Design"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:collaborative-learning",
+        "label": "Collaborative Learning"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality-xr",
+        "label": "Extended Reality (XR)"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cross-platform-digital-twins",
+      "label": "Cross Platform Digital Twins"
+    },
+    {
+      "slug": "digital-twin-collaboration",
+      "label": "Digital Twin Collaboration"
+    }
+  ]
+}

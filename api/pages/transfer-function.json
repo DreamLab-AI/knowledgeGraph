@@ -1,0 +1,79 @@
+{
+  "id": "urn:visionflow:page:transfer-function",
+  "title": "Transfer Function",
+  "slug": "transfer-function",
+  "public": true,
+  "classIri": "urn:ngm:class:transfer-function",
+  "domain": "infrastructure",
+  "definition": "A transfer function is the Laplace-domain (continuous-time) or Z-domain (discrete-time) ratio of output to input for a linear time-invariant (LTI) system with zero initial conditions, expressed as a ratio of polynomials whose roots yield the poles and zeros that determine the system's frequency response, stability, and transient behaviour. Transfer functions provide a frequency-domain characterisation of systems ranging from electronic filters and mechanical actuators to feedback control loops.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:control-theory",
+      "label": "Control Theory"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      },
+      {
+        "id": "urn:ngm:class:optimal-control",
+        "label": "Optimal Control"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:state-estimation",
+        "label": "State Estimation"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:digital-signal-processing",
+        "label": "Digital Signal Processing"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      },
+      {
+        "id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "id": "urn:ngm:class:bode-plot",
+        "label": "Bode Plot"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "slug": "feedback-loop",
+      "label": "Feedback Loop"
+    }
+  ]
+}

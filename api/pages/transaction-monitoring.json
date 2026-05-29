@@ -1,0 +1,91 @@
+{
+  "id": "urn:visionflow:page:transaction-monitoring",
+  "title": "Transaction Monitoring",
+  "slug": "transaction-monitoring",
+  "public": true,
+  "classIri": "urn:ngm:class:transaction-monitoring",
+  "domain": "finance",
+  "definition": "Transaction monitoring is the automated surveillance of financial transactions \u2014 payments, transfers, trade executions, and account activity \u2014 to identify patterns indicative of money laundering, terrorist financing, fraud, sanctions evasion, or other financial crimes, generating alerts for investigation and mandatory Suspicious Activity Reports (SARs) to regulators. It is a core component of Anti-Money Laundering compliance programmes required by FATF recommendations and national implementing legislation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:compliance-monitoring",
+      "label": "Compliance Monitoring"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:financial-crime-detection",
+        "label": "Financial Crime Detection"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-reporting",
+        "label": "Regulatory Reporting"
+      },
+      {
+        "id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:pattern-recognition",
+        "label": "Pattern Recognition"
+      },
+      {
+        "id": "urn:ngm:class:behavioral-analytics",
+        "label": "Behavioral Analytics"
+      },
+      {
+        "id": "urn:ngm:class:graph-analytics",
+        "label": "Graph Analytics"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "id": "urn:ngm:class:fatf",
+        "label": "FATF"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    },
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

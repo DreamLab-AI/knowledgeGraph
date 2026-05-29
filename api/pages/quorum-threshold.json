@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:quorum-threshold",
+  "title": "Quorum Threshold",
+  "slug": "quorum-threshold",
+  "public": true,
+  "classIri": "urn:ngm:class:quorum-threshold",
+  "domain": "blockchain",
+  "definition": "A quorum threshold is the minimum number or fraction of participants (nodes, validators, signatories, or voters) that must agree or respond for a distributed system or governance process to reach a valid decision. It is a foundational parameter in consensus protocols, distributed databases, and blockchain governance, balancing liveness (the system can make progress) against safety (decisions reflect genuine majority will).",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:consensus-mechanism",
+      "label": "Consensus Mechanism"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:paxos",
+        "label": "Paxos"
+      },
+      {
+        "id": "urn:ngm:class:raft",
+        "label": "Raft"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "decentralized-governance",
+      "label": "Decentralized Governance"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+public:: true
+
+# AI Ecosystem
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:ai-ecosystem",
+  "@type": "Page",
+  "vc:slug": "ai-ecosystem",
+  "title": "AI Ecosystem",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 2
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ai-ecosystem",
+  "@type": "Class",
+  "label": "AI Ecosystem",
+  "definition": "The AI Ecosystem is the interconnected network of organisations, technologies, standards, talent pipelines, regulatory frameworks, and capital flows that collectively produce, deploy, and govern artificial intelligence systems. It encompasses foundation model providers, cloud infrastructure operators, toolchain vendors, application developers, research institutions, standardisation bodies, and end-user communities, together constituting the supply chain and governance fabric of AI as a general-purpose technology.",
+  "domain": "ai",
+  "maturity": "established",
+  "subClassOf": [
+    {"@id": "urn:ngm:class:digital-asset-ecosystem", "label": "Digital Asset Ecosystem"}
+  ],
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
+      {"@id": "urn:ngm:class:ai-inference", "label": "AI Inference"},
+      {"@id": "urn:ngm:class:agent-frameworks", "label": "Agent Frameworks"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
+      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:ai-policy", "label": "AI Policy"}
+    ]
+  },
+  "quality": 0.8
+}
+```
+
+- ### Definition
+  - The [[AI Ecosystem]] is the complex sociotechnical system comprising the full value chain of artificial intelligence development and deployment. At its core sit foundation model providers creating [[Large Language Models]] and multimodal models; above these sit [[Agent Frameworks]], application SDKs, and deployment tooling; below them sit compute infrastructure providers (GPU cloud, specialised AI chips), data providers, and annotation services. Surrounding the technical stack are academic research institutions, venture capital and corporate investment flows, open-source communities, regulatory bodies (EU AI Act, NIST, ISO/IEC), professional standards organisations, and talent ecosystems trained at universities and bootcamps. [[AI Policy]] shapes the rules under which ecosystem actors operate.
+
+- ### Relationships
+  - The [[AI Ecosystem]] is composed of [[Large Language Models]] as foundational components, [[AI Inference]] infrastructure for deployment, and [[Agent Frameworks]] for application construction. It enables [[Generative AI]] products and [[Agentic AI]] applications. It operates within the governance context of [[AI Policy]] and connects to the broader [[Digital Asset Ecosystem]] as AI capabilities become embedded in digital goods and services.
+
+- ### Content
+  - The contemporary AI ecosystem emerged through several transformative phases: the deep learning renaissance of 2012–2017 (AlexNet, ResNet, Transformer), the NLP scaling era of 2018–2021 (BERT, GPT-2, GPT-3), and the foundation model and generative AI era from 2022 onwards (ChatGPT, GPT-4, Gemini, Claude, LLaMA). Each phase expanded the ecosystem's scope — from academic research labs to cloud providers, then to enterprise software, and now to consumer applications and autonomous agent deployments. The US, China, UK, EU, Canada, and Israel emerged as the primary national AI ecosystems, with distinct regulatory philosophies and competitive dynamics.
+
+  - The technical architecture of the AI ecosystem can be layered as: (1) silicon layer (NVIDIA H100/H200 GPUs, Google TPUs, Amazon Trainium, custom AI ASICs); (2) training infrastructure layer (distributed training frameworks, data centres, networking fabrics); (3) foundation model layer (GPT-4o, Gemini 2.0, Claude 3.5, LLaMA 3, Mistral, Qwen); (4) deployment and inference layer (vLLM, TensorRT, ONNX runtime, managed API endpoints); (5) developer tooling layer (LangChain, LlamaIndex, Hugging Face, model registries, evaluation frameworks); (6) application layer (copilots, chatbots, agents, autonomous workflows). Each layer has competitive dynamics and power-law concentration patterns.
+
+  - The open-source and closed-source divide is a defining tension in the AI ecosystem. Meta's LLaMA series democratised access to capable models and spawned a rich open-source tooling community. Simultaneously, OpenAI, Anthropic, Google, and Mistral maintain proprietary frontier models behind API walls. Hugging Face functions as the central hub of the open ML ecosystem, with over 500,000 models, 100,000 datasets, and 200,000 Spaces as of 2025. The ecosystem's concentration — a handful of GPU manufacturers, cloud providers, and frontier model labs — raises competition and resilience concerns that regulators are increasingly scrutinising.
+
+  - By 2025, the AI ecosystem is characterised by rapid capability escalation, intense geopolitical competition (particularly US-China chip export controls reshaping supply chains), and nascent but accelerating regulatory governance. The EU AI Act entered enforcement phases for prohibited-use provisions in 2024 and high-risk provisions in 2025. Ecosystem actors are investing heavily in safety, interpretability, and compliance tooling to navigate regulatory requirements. The shift from model-as-a-service to agent-as-a-service is reshaping business models, with [[Agentic AI]] platforms emerging as the next major revenue frontier.

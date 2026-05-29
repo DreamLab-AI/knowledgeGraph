@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:industry-4-0",
+  "title": "Industry 4.0",
+  "slug": "industry-4-0",
+  "public": true,
+  "classIri": "urn:ngm:class:industry-4-0",
+  "domain": "infrastructure",
+  "definition": "Industry 4.0 denotes the fourth industrial revolution, characterised by the integration of cyber-physical systems, industrial Internet of Things, cloud computing, advanced robotics, and artificial intelligence into manufacturing and supply chain operations to create smart, autonomous, and highly flexible production environments. Originating from a German government initiative, it represents a strategic framework for digitalising industrial production through real-time data exchange, machine intelligence, and networked automation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:industrial-automation",
+      "label": "Industrial Automation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:smart-city",
+        "label": "Smart City"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cyber-physical-systems",
+        "label": "Cyber-Physical Systems"
+      },
+      {
+        "id": "urn:ngm:class:industrial-io-t",
+        "label": "Industrial IoT"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:industrial-metaverse",
+        "label": "Industrial Metaverse"
+      },
+      {
+        "id": "urn:ngm:class:opc-ua",
+        "label": "OPC UA"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "adoption-of-convergent-technologies",
+      "label": "Adoption of Convergent Technologies"
+    },
+    {
+      "slug": "convergence",
+      "label": "Convergence"
+    },
+    {
+      "slug": "ground-robot",
+      "label": "Ground Robot"
+    }
+  ]
+}

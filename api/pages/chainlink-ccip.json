@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:chainlink-ccip",
+  "title": "Chainlink CCIP",
+  "slug": "chainlink-ccip",
+  "public": true,
+  "classIri": "urn:ngm:class:chainlink-ccip",
+  "domain": "blockchain",
+  "definition": "Chainlink Cross-Chain Interoperability Protocol (CCIP) is a cross-chain messaging and token transfer standard developed by Chainlink Labs that enables smart contracts on different blockchain networks to securely send messages and transfer assets across chain boundaries, backed by a decentralised oracle network providing an independent risk management layer that monitors and validates cross-chain transactions. CCIP introduces a programmable token transfer abstraction allowing arbitrary data payloads to accompany token movements, enabling complex cross-chain application logic.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cross-chain-interoperability",
+      "label": "Cross-Chain Interoperability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cross-chain-asset-transfer",
+        "label": "Cross Chain Asset Transfer"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-messaging",
+        "label": "Cross-Chain Messaging"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:chainlink-oracles",
+        "label": "Chainlink Oracles"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-oracle",
+        "label": "Blockchain Oracle"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:oracle-network",
+        "label": "Oracle Network"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    },
+    {
+      "slug": "cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    }
+  ]
+}

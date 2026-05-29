@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:on-device-inference",
+  "title": "On-Device Inference",
+  "slug": "on-device-inference",
+  "public": true,
+  "classIri": "urn:ngm:class:on-device-inference",
+  "domain": "ai",
+  "definition": "On-device inference is the execution of machine learning model forward passes entirely on the end-user's hardware \u2014 such as a smartphone, wearable, embedded controller, or edge server \u2014 without transmitting input data to a remote cloud backend. It requires models to be compressed, quantised, or distilled to fit within tight memory, compute, and power budgets while maintaining acceptable accuracy.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:edge-inference",
+      "label": "Edge Inference"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.88,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:model-compression-for-edge",
+        "label": "Model Compression for Edge"
+      },
+      {
+        "id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:onnx-runtime",
+        "label": "ONNX Runtime"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:knowledge-distillation-for-edge",
+        "label": "Knowledge Distillation for Edge"
+      },
+      {
+        "id": "urn:ngm:class:privacy-preserving-ai",
+        "label": "Privacy-Preserving AI"
+      },
+      {
+        "id": "urn:ngm:class:npu",
+        "label": "NPU"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "hardware-and-edge",
+      "label": "Hardware and Edge"
+    },
+    {
+      "slug": "model-optimisation-and-performance",
+      "label": "Model Optimisation and Performance"
+    }
+  ]
+}

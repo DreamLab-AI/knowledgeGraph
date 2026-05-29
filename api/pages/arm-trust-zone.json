@@ -1,0 +1,54 @@
+{
+  "id": "urn:visionflow:page:arm-trust-zone",
+  "title": "ARM TrustZone",
+  "slug": "arm-trust-zone",
+  "public": true,
+  "classIri": "urn:ngm:class:arm-trust-zone",
+  "domain": "security",
+  "definition": "ARM TrustZone is a hardware security technology built into ARM processors that partitions the system into two isolated execution worlds \u2014 a Secure World and a Normal World \u2014 enforced at the level of the CPU, memory, and peripherals. Sensitive code and data, such as cryptographic keys and biometric matching, run in the Secure World inaccessible to the rich operating system in the Normal World, providing a trusted execution environment without a separate security chip. It is ubiquitous in mobile devices, embedded systems, and IoT hardware.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:trusted-execution-environment",
+      "label": "Trusted Execution Environment"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:secure-enclave",
+        "label": "Secure Enclave"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:hardware-security",
+        "label": "Hardware Security"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:tee",
+        "label": "TEE"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "proprietary-video",
+      "label": "Proprietary Video"
+    }
+  ]
+}

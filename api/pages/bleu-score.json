@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:bleu-score",
+  "title": "BLEU Score",
+  "slug": "bleu-score",
+  "public": true,
+  "classIri": "urn:ngm:class:bleu-score",
+  "domain": "ai",
+  "definition": "BLEU Score (Bilingual Evaluation Understudy) is an automatic evaluation metric for machine translation and text generation quality that measures the overlap of n-gram sequences between a candidate output and one or more human reference translations, applying a brevity penalty to discourage pathologically short outputs. Scores range from 0 to 1 (or 0 to 100 in percentage form), with higher values indicating closer correspondence to the reference. BLEU correlates moderately with human judgement at the corpus level but is known to be unreliable for single-sentence evaluation and insufficient alone for capturing semantic adequacy.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:evaluation-metric",
+      "label": "Evaluation Metric"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:evaluation-harness",
+        "label": "Evaluation Harness"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:machine-translation",
+        "label": "Machine Translation"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:benchmarks",
+        "label": "Benchmarks"
+      },
+      {
+        "id": "urn:ngm:class:text-generation",
+        "label": "Text Generation"
+      },
+      {
+        "id": "urn:ngm:class:language-model",
+        "label": "Language Model"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "real-time-translation",
+      "label": "Real-time Translation"
+    },
+    {
+      "slug": "translation",
+      "label": "Translation"
+    }
+  ]
+}

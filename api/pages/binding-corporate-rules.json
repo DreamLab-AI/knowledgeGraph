@@ -1,0 +1,71 @@
+{
+  "id": "urn:visionflow:page:binding-corporate-rules",
+  "title": "Binding Corporate Rules",
+  "slug": "binding-corporate-rules",
+  "public": true,
+  "classIri": "urn:ngm:class:binding-corporate-rules",
+  "domain": "governance",
+  "definition": "Binding Corporate Rules (BCRs) are an intra-group data transfer mechanism approved by EU data protection authorities that allow multinational corporate groups to transfer personal data from the European Economic Area to group entities in third countries lacking an EU adequacy decision, provided the group adopts and enforces a comprehensive, legally binding internal data protection code. BCRs are assessed and approved by a lead supervisory authority under the GDPR framework.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cross-border-data-transfer-rule",
+      "label": "Cross-Border Data Transfer Rule"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:data-governance-framework",
+        "label": "Data Governance Framework"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:standard-contractual-clauses",
+        "label": "Standard Contractual Clauses"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy By Design"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cross-border-compliance",
+      "label": "Cross Border Compliance"
+    },
+    {
+      "slug": "cross-border-data-transfer-rule",
+      "label": "Cross-Border Data Transfer Rule"
+    }
+  ]
+}

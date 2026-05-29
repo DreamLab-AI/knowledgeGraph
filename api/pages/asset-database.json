@@ -1,0 +1,71 @@
+{
+  "id": "urn:visionflow:page:asset-database",
+  "title": "Asset Database",
+  "slug": "asset-database",
+  "public": true,
+  "classIri": "urn:ngm:class:asset-database",
+  "domain": "infrastructure",
+  "definition": "An Asset Database is a structured, queryable repository that stores descriptive records, binary references, version histories, and relational metadata for digital assets within a production or distribution system. It provides the persistent backbone enabling discovery, retrieval, provenance tracking, and lifecycle management of assets across teams and pipelines.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:database-system",
+      "label": "Database System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:metadata",
+        "label": "Metadata"
+      }
+    ],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:metadata-schema",
+        "label": "Metadata Schema"
+      },
+      {
+        "id": "urn:ngm:class:search-engine",
+        "label": "Search Engine"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:asset-management-system",
+        "label": "Asset Management System"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-management",
+        "label": "Digital Asset Management"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "construction-digital-twin",
+      "label": "Construction Digital Twin"
+    },
+    {
+      "slug": "etsi-domain-data-management-creative-media",
+      "label": "ETSI Domain: Data Management + Creative Media"
+    }
+  ]
+}

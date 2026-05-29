@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:evaluation-harness",
+  "title": "Evaluation Harness",
+  "slug": "evaluation-harness",
+  "public": true,
+  "classIri": "urn:ngm:class:evaluation-harness",
+  "domain": "ai",
+  "definition": "An evaluation harness is a software framework that automates the systematic assessment of AI model capabilities across standardised benchmark tasks, providing reproducible prompt formatting, answer extraction, scoring, and aggregated reporting. It enables consistent, comparable measurement of model performance across tasks, modalities, and versions, forming the backbone of LLM leaderboards and model selection workflows.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:model-evaluation",
+      "label": "Model Evaluation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards",
+        "label": "Evaluation benchmarks and leaderboards"
+      },
+      {
+        "id": "urn:ngm:class:model-evaluation-results",
+        "label": "Model Evaluation Results"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:benchmarks",
+        "label": "Benchmarks"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:evaluation-metric",
+        "label": "Evaluation Metric"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:benchmark-standard",
+        "label": "Benchmark Standard"
+      },
+      {
+        "id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "context-engineering",
+      "label": "Context Engineering"
+    },
+    {
+      "slug": "evaluation-benchmarks-and-leaderboards",
+      "label": "Evaluation benchmarks and leaderboards"
+    }
+  ]
+}

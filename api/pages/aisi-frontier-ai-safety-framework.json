@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:aisi-frontier-ai-safety-framework",
+  "title": "AISI Frontier AI Safety Framework",
+  "slug": "aisi-frontier-ai-safety-framework",
+  "public": true,
+  "classIri": "urn:ngm:class:aisi-frontier-ai-safety-framework",
+  "domain": "governance",
+  "definition": "A structured evaluation and oversight framework produced by the UK AI Safety Institute (AISI) to assess the catastrophic risks posed by frontier AI models prior to and following their public release. The framework specifies pre-deployment testing protocols, thresholds for dangerous capability uplift, and post-deployment monitoring obligations that developers of frontier models are expected to satisfy. It represents the UK government's primary technical instrument for operationalising AI safety commitments made at the Bletchley Park AI Safety Summit of November 2023.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-governance-framework",
+      "label": "AI Governance Framework"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
+      },
+      {
+        "id": "urn:ngm:class:adversarial-testing",
+        "label": "Adversarial Testing"
+      },
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:frontier-ai",
+        "label": "Frontier AI"
+      },
+      {
+        "id": "urn:ngm:class:frontier-model-forum",
+        "label": "Frontier Model Forum"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    },
+    {
+      "slug": "training-and-fine-tuning",
+      "label": "Training and fine tuning"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:gpu-acceleration",
+  "title": "GPU Acceleration",
+  "slug": "gpu-acceleration",
+  "public": true,
+  "classIri": "urn:ngm:class:gpu-acceleration",
+  "domain": "infrastructure",
+  "definition": "GPU Acceleration is the use of graphics processing units to perform general-purpose computational workloads in parallel, exploiting the thousands of smaller cores present in a GPU to achieve throughput far exceeding that of conventional CPUs for data-parallel tasks. It is the dominant execution paradigm for training and inference in modern deep learning systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:hardware-acceleration",
+      "label": "Hardware Acceleration"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      },
+      {
+        "id": "urn:ngm:class:compute-shader",
+        "label": "Compute Shader"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      },
+      {
+        "id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    },
+    {
+      "slug": "segmentation-and-identification",
+      "label": "Segmentation and Identification"
+    }
+  ]
+}

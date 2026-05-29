@@ -1,0 +1,106 @@
+{
+  "id": "urn:visionflow:page:chainalysis",
+  "title": "Chainalysis",
+  "slug": "chainalysis",
+  "public": true,
+  "classIri": "urn:ngm:class:chainalysis",
+  "domain": "blockchain",
+  "definition": "Chainalysis is a blockchain data and analytics company that provides investigative, compliance, and intelligence tools to government agencies, financial institutions, and cryptocurrency businesses for monitoring, tracing, and understanding blockchain transaction flows. Founded in 2014 and headquartered in New York, it maintains the largest proprietary database of attributed blockchain addresses \u2014 linking pseudonymous on-chain addresses to real-world entities through OSINT, exchange data, and investigative techniques \u2014 and offers products including Reactor (investigation graph tool), KYT (Know Your Transaction compliance monitoring), and market intelligence services. Chainalysis is a primary contractor to agencies including the US Department of Justice, IRS, and OFAC for cryptocurrency-related investigations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain-analytics",
+      "label": "Blockchain Analytics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "id": "urn:ngm:class:sanctions-compliance",
+        "label": "Sanctions Compliance"
+      },
+      {
+        "id": "urn:ngm:class:digital-forensics",
+        "label": "Digital Forensics"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:transaction-monitoring",
+        "label": "Transaction Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-compliance",
+        "label": "Blockchain Compliance"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:fatf-travel-rule",
+        "label": "FATF Travel Rule"
+      },
+      {
+        "id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      },
+      {
+        "id": "urn:ngm:class:sanctions-screening",
+        "label": "Sanctions Screening"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    },
+    {
+      "slug": "bitcoin-distribution",
+      "label": "Bitcoin Distribution"
+    },
+    {
+      "slug": "digital-asset-risks",
+      "label": "Digital Asset Risks"
+    },
+    {
+      "slug": "licensing-requirements",
+      "label": "Licensing Requirements"
+    },
+    {
+      "slug": "privacy-preserving-blockchain",
+      "label": "Privacy Preserving Blockchain"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "travel-rule",
+      "label": "Travel Rule"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    }
+  ]
+}

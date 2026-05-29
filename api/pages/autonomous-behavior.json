@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:autonomous-behavior",
+  "title": "Autonomous Behavior",
+  "slug": "autonomous-behavior",
+  "public": true,
+  "classIri": "urn:ngm:class:autonomous-behavior",
+  "domain": "ai",
+  "definition": "The capacity of an agent, robot, or AI system to select and execute actions in pursuit of goals without continuous human instruction, using internal models of the world, perception of environmental state, and learned or programmed decision policies. Autonomous behaviour spans a continuum from simple reactive reflexes to deliberative planning over extended time horizons.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:autonomous-operation",
+      "label": "Autonomous Operation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:perception-system",
+        "label": "Perception System"
+      },
+      {
+        "id": "urn:ngm:class:planning-module",
+        "label": "Planning Module"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-task-execution",
+        "label": "Autonomous Task Execution"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "id": "urn:ngm:class:behavioral-modeling",
+        "label": "Behavioral Modeling"
+      },
+      {
+        "id": "urn:ngm:class:goal",
+        "label": "Goal"
+      },
+      {
+        "id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "autonomous-agent",
+      "label": "Autonomous Agent"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:safety-assessment",
+  "title": "Safety Assessment",
+  "slug": "safety-assessment",
+  "public": true,
+  "classIri": "urn:ngm:class:safety-assessment",
+  "domain": "governance",
+  "definition": "Safety assessment is a systematic analytical process that identifies, evaluates, and mitigates hazards associated with a system, product, or operational process to demonstrate that residual risk is tolerable within accepted standards and regulatory frameworks. It encompasses methods such as Failure Modes and Effects Analysis (FMEA), Fault Tree Analysis (FTA), Hazard and Operability Studies (HAZOP), and probabilistic safety analysis, applied across domains including aerospace, automotive, nuclear, medical devices, and increasingly AI systems. Safety assessments form the evidentiary basis for certification against safety standards such as IEC 61508 and ISO 26262.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:risk-assessment",
+      "label": "Risk Assessment"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:safety-critical-systems",
+        "label": "Safety-Critical Systems"
+      },
+      {
+        "id": "urn:ngm:class:ai-risk-assessment",
+        "label": "AI Risk Assessment"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:hazard-analysis",
+        "label": "Hazard Analysis"
+      },
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "id": "urn:ngm:class:risk-assessment-methodology",
+        "label": "Risk Assessment Methodology"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:iso-26262",
+        "label": "ISO 26262"
+      },
+      {
+        "id": "urn:ngm:class:iec-61508",
+        "label": "IEC 61508"
+      },
+      {
+        "id": "urn:ngm:class:safety-standard",
+        "label": "Safety Standard"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "human-factors",
+      "label": "Human Factors"
+    },
+    {
+      "slug": "metaverse-safety-protocol",
+      "label": "Metaverse Safety Protocol"
+    }
+  ]
+}

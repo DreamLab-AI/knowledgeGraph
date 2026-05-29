@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:social-network-analysis",
+  "title": "Social Network Analysis",
+  "slug": "social-network-analysis",
+  "public": true,
+  "classIri": "urn:ngm:class:social-network-analysis",
+  "domain": "governance",
+  "definition": "Social network analysis (SNA) is a methodology for studying social structures through graph-theoretic and statistical techniques applied to networks of actors (nodes) and their relationships (edges). It measures structural properties such as centrality, clustering, path length, and community structure to identify influential actors, information bottlenecks, and emergent communities within social systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:network-analysis",
+      "label": "Network Analysis"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:community-detection",
+        "label": "Community Detection"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:graph-theory",
+        "label": "Graph Theory"
+      },
+      {
+        "id": "urn:ngm:class:community-detection",
+        "label": "Community Detection"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:network-science",
+        "label": "Network Science"
+      },
+      {
+        "id": "urn:ngm:class:social-network-graph",
+        "label": "Social Network Graph"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "digital-twin-of-society-dto-s",
+      "label": "Digital Twin of Society (DToS)"
+    },
+    {
+      "slug": "graph-database",
+      "label": "Graph Database"
+    },
+    {
+      "slug": "identity-graph",
+      "label": "Identity Graph"
+    }
+  ]
+}

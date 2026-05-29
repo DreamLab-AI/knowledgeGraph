@@ -1,0 +1,75 @@
+{
+  "id": "urn:visionflow:page:demand-forecasting",
+  "title": "Demand Forecasting",
+  "slug": "demand-forecasting",
+  "public": true,
+  "classIri": "urn:ngm:class:demand-forecasting",
+  "domain": "ai",
+  "definition": "Demand forecasting is the analytical process of estimating future customer demand for products or services over a specified time horizon using historical sales data, statistical models, and increasingly machine learning algorithms. Accurate demand forecasts drive inventory replenishment, capacity planning, production scheduling, and financial budgeting decisions across retail, manufacturing, logistics, and energy sectors.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:predictive-analytics",
+      "label": "Predictive Analytics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:forecast-horizon",
+        "label": "Forecast Horizon"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      },
+      {
+        "id": "urn:ngm:class:demand-planning",
+        "label": "Demand Planning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:logistics-optimisation",
+        "label": "Logistics Optimisation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "energy-and-power",
+      "label": "Energy and Power"
+    },
+    {
+      "slug": "logistics-optimization",
+      "label": "Logistics Optimization"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

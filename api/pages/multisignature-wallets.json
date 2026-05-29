@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:multisignature-wallets",
+  "title": "Multisignature Wallets",
+  "slug": "multisignature-wallets",
+  "public": true,
+  "classIri": "urn:ngm:class:multisignature-wallets",
+  "domain": "blockchain",
+  "definition": "Multisignature wallets are cryptocurrency custody arrangements requiring m-of-n cryptographic signatures before a transaction can be authorised, distributing key control across multiple independent parties or devices. They eliminate single points of failure in private key management, making them a standard security architecture for institutional digital asset custody and shared treasury governance. The underlying cryptographic mechanism uses threshold signing schemes such as ECDSA or Schnorr aggregation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain-entity",
+      "label": "Blockchain Entity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "id": "urn:ngm:class:cold-storage",
+        "label": "Cold Storage"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:asymmetric-cryptography",
+        "label": "Asymmetric Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      },
+      {
+        "id": "urn:ngm:class:bls-signature",
+        "label": "BLS Signature"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cryptocurrency-storage",
+        "label": "Cryptocurrency Storage"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-value-proposition",
+      "label": "Bitcoin Value Proposition"
+    },
+    {
+      "slug": "decentralized-governance",
+      "label": "Decentralized Governance"
+    }
+  ]
+}

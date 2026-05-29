@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:cid",
+  "title": "CID",
+  "slug": "cid",
+  "public": true,
+  "classIri": "urn:ngm:class:cid",
+  "domain": "infrastructure",
+  "definition": "A Content Identifier (CID) is a self-describing, cryptographic label used in the InterPlanetary File System (IPFS) and related protocols to uniquely and permanently address a piece of content based on its cryptographic hash rather than its location. CIDs encode the hash function used, the hash digest, and the codec describing the data format, enabling content-addressed storage where identical content always produces the same identifier regardless of where it is stored. CIDs are the primary addressing primitive of the IPLD (InterPlanetary Linked Data) ecosystem.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:content-identifier",
+      "label": "Content Identifier"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-storage",
+        "label": "Decentralized Storage"
+      },
+      {
+        "id": "urn:ngm:class:content-addressing",
+        "label": "Content Addressing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:multihash",
+        "label": "Multihash"
+      },
+      {
+        "id": "urn:ngm:class:ipld",
+        "label": "IPLD"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:distributed-hash-table",
+        "label": "Distributed Hash Table"
+      },
+      {
+        "id": "urn:ngm:class:merkle-dag",
+        "label": "Merkle DAG"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    },
+    {
+      "slug": "decentralised-file-storage",
+      "label": "Decentralised file storage"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

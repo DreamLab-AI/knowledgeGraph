@@ -1,0 +1,75 @@
+{
+  "id": "urn:visionflow:page:structurizr-dsl",
+  "title": "Structurizr DSL",
+  "slug": "structurizr-dsl",
+  "public": true,
+  "classIri": "urn:ngm:class:structurizr-dsl",
+  "domain": "infrastructure",
+  "definition": "The Structurizr DSL is a text-based domain-specific language for defining software architecture models conforming to Simon Brown's C4 Model, enabling teams to describe system context, containers, components, and code-level elements as code that can be version-controlled and rendered into multiple diagram formats. It is the primary input format for the Structurizr toolchain, which produces interactive, filterable architecture diagrams from a single workspace definition.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:diagrams-as-code",
+      "label": "Diagrams as Code"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:software-architecture",
+        "label": "Software Architecture"
+      },
+      {
+        "id": "urn:ngm:class:documentation-generation",
+        "label": "Documentation Generation"
+      },
+      {
+        "id": "urn:ngm:class:technical-documentation",
+        "label": "Technical Documentation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:c4-model",
+        "label": "C4 Model"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:enterprise-architecture",
+        "label": "Enterprise Architecture"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:architecture",
+        "label": "Architecture"
+      },
+      {
+        "id": "urn:ngm:class:documentation-standards",
+        "label": "Documentation Standards"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-diagram-tools",
+      "label": "AI Diagram Tools"
+    },
+    {
+      "slug": "diagrams-as-code",
+      "label": "Diagrams as Code"
+    }
+  ]
+}

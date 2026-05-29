@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:industrial-symbiosis",
+  "title": "Industrial Symbiosis",
+  "slug": "industrial-symbiosis",
+  "public": true,
+  "classIri": "urn:ngm:class:industrial-symbiosis",
+  "domain": "infrastructure",
+  "definition": "Industrial symbiosis is a collaborative approach within industrial ecology in which geographically proximate companies exchange materials, energy, water, and by-products to achieve collective environmental and economic benefits that are unattainable individually. By treating the waste or surplus of one facility as a resource input for another, industrial symbiosis operationalises circular economy principles at an industrial park or regional scale.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:circular-economy",
+      "label": "Circular Economy"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:resource-efficiency",
+        "label": "Resource Efficiency"
+      },
+      {
+        "id": "urn:ngm:class:waste-management",
+        "label": "Waste Management"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:material-flow-analysis",
+        "label": "Material Flow Analysis"
+      },
+      {
+        "id": "urn:ngm:class:life-cycle-assessment",
+        "label": "Life Cycle Assessment"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:sustainability",
+        "label": "Sustainability"
+      },
+      {
+        "id": "urn:ngm:class:e-waste",
+        "label": "E-Waste"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "circular-economy",
+      "label": "Circular Economy"
+    }
+  ]
+}

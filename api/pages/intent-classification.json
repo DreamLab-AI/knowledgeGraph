@@ -1,0 +1,71 @@
+{
+  "id": "urn:visionflow:page:intent-classification",
+  "title": "Intent Classification",
+  "slug": "intent-classification",
+  "public": true,
+  "classIri": "urn:ngm:class:intent-classification",
+  "domain": "ai",
+  "definition": "Intent classification is a natural language processing task that assigns a user utterance to one or more predefined intent categories, enabling a system to determine the semantic goal behind an input. It forms the core routing component of conversational AI systems, mapping raw text to structured action labels such as 'book_flight', 'check_balance', or 'cancel_order'.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:nlptask",
+      "label": "NLP Task"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:natural-language-understanding",
+        "label": "Natural Language Understanding"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:dialogue-system",
+        "label": "Dialogue System"
+      },
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:intent-recognition",
+        "label": "Intent Recognition"
+      },
+      {
+        "id": "urn:ngm:class:named-entity-recognition",
+        "label": "Named Entity Recognition"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "call-centres",
+      "label": "Call Centres"
+    },
+    {
+      "slug": "chatbots",
+      "label": "Chatbots"
+    }
+  ]
+}

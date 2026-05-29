@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:celestia",
+  "title": "Celestia",
+  "slug": "celestia",
+  "public": true,
+  "classIri": "urn:ngm:class:celestia",
+  "domain": "blockchain",
+  "definition": "Celestia is a modular blockchain network that decouples data availability from execution and consensus, functioning as a dedicated data availability layer that rollups and sovereign chains can use to publish and order transaction data without requiring a monolithic execution environment. It employs data availability sampling (DAS) via erasure coding so that light nodes can probabilistically verify that block data has been published without downloading it in full, enabling Celestia nodes to scale with the number of light clients rather than validators. Celestia introduced the concept of sovereign rollups, in which chains publish data to Celestia for ordering and availability whilst handling their own execution and settlement independently.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-availability",
+      "label": "Data Availability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:erasure-coding",
+        "label": "Erasure Coding"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:tendermint-consensus",
+        "label": "Tendermint Consensus"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cosmos",
+        "label": "Cosmos"
+      },
+      {
+        "id": "urn:ngm:class:reed-solomon-erasure-coding",
+        "label": "Reed-Solomon Erasure Coding"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    },
+    {
+      "slug": "data-layer",
+      "label": "Data Layer"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "privacy-preserving-blockchain",
+      "label": "Privacy Preserving Blockchain"
+    }
+  ]
+}

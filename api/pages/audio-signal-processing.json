@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:audio-signal-processing",
+  "title": "Audio Signal Processing",
+  "slug": "audio-signal-processing",
+  "public": true,
+  "classIri": "urn:ngm:class:audio-signal-processing",
+  "domain": "media",
+  "definition": "Audio Signal Processing is the application of signal processing theory and algorithms to the analysis, transformation, synthesis, and encoding of audio-frequency signals, operating in either the time domain or frequency domain. It encompasses filtering, equalisation, dynamic range control, time-frequency analysis, psychoacoustic coding, and spatial rendering as applied to sound reproduction, communication, and computational audition systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:signal-processing",
+      "label": "Signal Processing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      },
+      {
+        "id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "id": "urn:ngm:class:speech-synthesis",
+        "label": "SpeechSynthesis"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:digital-signal-processing",
+        "label": "Digital Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:audio-parameters",
+        "label": "Audio Parameters"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:audio-engine",
+        "label": "Audio Engine"
+      },
+      {
+        "id": "urn:ngm:class:audio-processing-system",
+        "label": "Audio Processing System"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "automated-podcasting",
+      "label": "Automated Podcasting"
+    },
+    {
+      "slug": "music-and-audio",
+      "label": "Music and Audio"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:building-automation",
+  "title": "Building Automation",
+  "slug": "building-automation",
+  "public": true,
+  "classIri": "urn:ngm:class:building-automation",
+  "domain": "infrastructure",
+  "definition": "Building Automation refers to the centralised monitoring and control of a building's mechanical, electrical, and environmental systems \u2014 including heating, ventilation, air conditioning, lighting, access control, and fire safety \u2014 through networked sensor-actuator architectures and programmable control logic. It aims to optimise occupant comfort, reduce energy consumption, and enable remote facility management via integrated software platforms.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:industrial-automation",
+      "label": "IndustrialAutomation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:energy-management",
+        "label": "Energy Management"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:actuators",
+        "label": "Actuators"
+      },
+      {
+        "id": "urn:ngm:class:zigbee",
+        "label": "Zigbee"
+      },
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:access-control-system",
+        "label": "Access Control System"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "home-assistant",
+      "label": "Home Assistant"
+    },
+    {
+      "slug": "io-t-sensor-network",
+      "label": "IoT Sensor Network"
+    }
+  ]
+}

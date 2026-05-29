@@ -1,0 +1,71 @@
+{
+  "id": "urn:visionflow:page:common-sense-reasoning",
+  "title": "Common Sense Reasoning",
+  "slug": "common-sense-reasoning",
+  "public": true,
+  "classIri": "urn:ngm:class:common-sense-reasoning",
+  "domain": "ai",
+  "definition": "The capacity of an AI system to draw inferences that humans consider obvious from general background knowledge about the physical world, social norms, causality, and everyday object behaviour \u2014 without explicit instruction. It encompasses na\u00efve physics, na\u00efve psychology, temporal reasoning, and spatial reasoning grounded in embodied human experience.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:natural-language-understanding",
+      "label": "Natural Language Understanding"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-agents",
+        "label": "AI Agents"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-understanding",
+        "label": "Natural Language Understanding"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:ai-core-concepts",
+        "label": "ai core concepts"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:collective-intelligence",
+        "label": "Collective Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cognitive-ai",
+      "label": "Cognitive AI"
+    },
+    {
+      "slug": "embodied-minds",
+      "label": "Embodied Minds"
+    }
+  ]
+}

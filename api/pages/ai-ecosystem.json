@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:ai-ecosystem",
+  "title": "AI Ecosystem",
+  "slug": "ai-ecosystem",
+  "public": true,
+  "classIri": "urn:ngm:class:ai-ecosystem",
+  "domain": "ai",
+  "definition": "The AI Ecosystem is the interconnected network of organisations, technologies, standards, talent pipelines, regulatory frameworks, and capital flows that collectively produce, deploy, and govern artificial intelligence systems. It encompasses foundation model providers, cloud infrastructure operators, toolchain vendors, application developers, research institutions, standardisation bodies, and end-user communities, together constituting the supply chain and governance fabric of AI as a general-purpose technology.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-asset-ecosystem",
+      "label": "Digital Asset Ecosystem"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:ai-inference",
+        "label": "AI Inference"
+      },
+      {
+        "id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "intelligent-virtual-entity",
+      "label": "Intelligent Virtual Entity"
+    },
+    {
+      "slug": "open-generative-ai-tools",
+      "label": "Open Generative AI tools"
+    }
+  ]
+}

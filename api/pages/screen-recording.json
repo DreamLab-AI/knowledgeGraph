@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:screen-recording",
+  "title": "Screen Recording",
+  "slug": "screen-recording",
+  "public": true,
+  "classIri": "urn:ngm:class:screen-recording",
+  "domain": "infrastructure",
+  "definition": "Screen recording is the capture of pixel-level output from a computer display \u2014 including cursor movement, application windows, and system UI \u2014 encoded into a video stream for later playback, streaming, or analysis. It combines display capture with optional audio recording and may include region selection, frame-rate control, hardware-accelerated encoding, and metadata tagging.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:screen-capture",
+      "label": "Screen Capture"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:screen-capture-api",
+        "label": "Screen Capture API"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:video-conferencing",
+        "label": "Video Conferencing"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:display-capture",
+        "label": "Display Capture"
+      },
+      {
+        "id": "urn:ngm:class:application-window-capture",
+        "label": "Application Window Capture"
+      },
+      {
+        "id": "urn:ngm:class:browser-based-screen-capture",
+        "label": "Browser-Based Screen Capture"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "asynchronous-video",
+      "label": "Asynchronous Video"
+    },
+    {
+      "slug": "meeting-recording",
+      "label": "Meeting Recording"
+    }
+  ]
+}

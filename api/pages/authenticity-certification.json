@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:authenticity-certification",
+  "title": "Authenticity Certification",
+  "slug": "authenticity-certification",
+  "public": true,
+  "classIri": "urn:ngm:class:authenticity-certification",
+  "domain": "security",
+  "definition": "A formal process or credential that attests to the genuine origin, integrity, and provenance of a digital or physical artefact, typically employing cryptographic signing, trusted third-party attestation, or standards-based metadata embedding. Authenticity certification enables recipients to verify that content has not been altered and originated from a claimed source.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:content-authenticity",
+      "label": "Content Authenticity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:provenance-verification",
+        "label": "Provenance Verification"
+      },
+      {
+        "id": "urn:ngm:class:trust",
+        "label": "Trust"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:deepfake-detection",
+        "label": "Deepfake Detection"
+      },
+      {
+        "id": "urn:ngm:class:data-provenance",
+        "label": "Data Provenance"
+      },
+      {
+        "id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "c2-pa-standard",
+      "label": "C2PA Standard"
+    },
+    {
+      "slug": "cultural-provenance-record",
+      "label": "Cultural Provenance Record"
+    }
+  ]
+}

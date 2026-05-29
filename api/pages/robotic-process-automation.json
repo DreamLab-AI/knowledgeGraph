@@ -1,0 +1,91 @@
+{
+  "id": "urn:visionflow:page:robotic-process-automation",
+  "title": "Robotic Process Automation",
+  "slug": "robotic-process-automation",
+  "public": true,
+  "classIri": "urn:ngm:class:robotic-process-automation",
+  "domain": "ai",
+  "definition": "Robotic Process Automation (RPA) is a software technology that uses configurable software robots to emulate human interactions with digital systems \u2014 clicking, typing, extracting data, navigating UIs \u2014 in order to execute repetitive, rule-based business processes without modifying the underlying applications. RPA robots operate at the presentation layer, interacting with applications through their graphical or web interfaces rather than through APIs, enabling automation of legacy systems that lack integration points.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:process-automation",
+      "label": "Process Automation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:business-process-management",
+        "label": "Business Process Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:enterprise-automation",
+        "label": "Enterprise Automation"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:business-process-automation",
+        "label": "Business Process Automation"
+      },
+      {
+        "id": "urn:ngm:class:task-automation",
+        "label": "Task Automation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "cli-multi-agent-systems",
+      "label": "CLI Multi-Agent Systems"
+    },
+    {
+      "slug": "call-centres",
+      "label": "Call Centres"
+    },
+    {
+      "slug": "computer-use-and-browser-agents",
+      "label": "Computer Use and Browser Agents"
+    },
+    {
+      "slug": "function-calling",
+      "label": "Function Calling"
+    },
+    {
+      "slug": "sovereign-mesh",
+      "label": "Sovereign Mesh"
+    }
+  ]
+}

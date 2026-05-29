@@ -1,0 +1,62 @@
+{
+  "id": "urn:visionflow:page:reed-solomon-erasure-coding",
+  "title": "Reed-Solomon Erasure Coding",
+  "slug": "reed-solomon-erasure-coding",
+  "public": true,
+  "classIri": "urn:ngm:class:reed-solomon-erasure-coding",
+  "domain": "infrastructure",
+  "definition": "Reed-Solomon erasure coding is a family of error-correcting codes that transform k data symbols into n encoded symbols such that any k of the n suffice to reconstruct the original data, tolerating up to n minus k erasures. Operating over finite (Galois) fields, it provides maximum-distance-separable efficiency, meaning no scheme can recover from more erasures for the same redundancy. It is foundational to RAID storage, optical media, QR codes, satellite communication, and distributed-storage and blockchain data-availability systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:erasure-coding",
+      "label": "Erasure Coding"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-availability",
+        "label": "Data Availability"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:error-correction",
+        "label": "Error Correction"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:distributed-storage",
+        "label": "Distributed Storage"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "decentralised-file-storage",
+      "label": "Decentralised file storage"
+    },
+    {
+      "slug": "storage-infrastructure",
+      "label": "Storage Infrastructure"
+    }
+  ]
+}

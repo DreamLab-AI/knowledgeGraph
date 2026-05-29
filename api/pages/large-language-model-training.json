@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:large-language-model-training",
+  "title": "Large Language Model Training",
+  "slug": "large-language-model-training",
+  "public": true,
+  "classIri": "urn:ngm:class:large-language-model-training",
+  "domain": "ai",
+  "definition": "Large Language Model Training is the computational process of optimising the parameters of a transformer-based neural network with billions to trillions of weights on web-scale text corpora using autoregressive next-token prediction objectives, followed by instruction tuning and reinforcement learning from human feedback (RLHF) alignment stages. The process requires distributed training across thousands of GPU or TPU accelerators coordinated through data, tensor, and pipeline parallelism, consuming petabytes of training data and megawatt-hours of electrical energy.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:pre-training",
+      "label": "Pre-Training"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gpu-cluster",
+        "label": "GPU Cluster"
+      },
+      {
+        "id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:in-context-learning",
+        "label": "In-Context Learning"
+      },
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine-Tuning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "id": "urn:ngm:class:instruction-tuning",
+        "label": "Instruction Tuning"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-scrapers",
+      "label": "AI Scrapers"
+    },
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    }
+  ]
+}

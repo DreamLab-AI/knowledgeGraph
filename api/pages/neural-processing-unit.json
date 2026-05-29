@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:neural-processing-unit",
+  "title": "Neural Processing Unit",
+  "slug": "neural-processing-unit",
+  "public": true,
+  "classIri": "urn:ngm:class:neural-processing-unit",
+  "domain": "ai",
+  "definition": "A Neural Processing Unit (NPU) is a specialised integrated circuit designed to accelerate neural network inference workloads by providing high-throughput, energy-efficient execution of the matrix multiplication and convolution operations that dominate deep learning computation. NPUs are integrated into mobile SoCs, personal computers, and edge devices to enable on-device AI inference without reliance on cloud compute, targeting performance-per-watt objectives unachievable by general-purpose CPUs or GPUs for these workloads.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-hardware",
+      "label": "AI Hardware"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:on-device-inference",
+        "label": "On-Device Inference"
+      },
+      {
+        "id": "urn:ngm:class:edge-ai",
+        "label": "Edge AI"
+      },
+      {
+        "id": "urn:ngm:class:real-time-ai-inference",
+        "label": "Real-Time AI Inference"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:inference-hardware",
+        "label": "Inference Hardware"
+      },
+      {
+        "id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:npu",
+        "label": "NPU"
+      },
+      {
+        "id": "urn:ngm:class:tensor-processing-unit",
+        "label": "Tensor Processing Unit"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    },
+    {
+      "slug": "hardware-and-edge",
+      "label": "Hardware and Edge"
+    }
+  ]
+}

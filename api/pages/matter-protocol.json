@@ -1,0 +1,62 @@
+{
+  "id": "urn:visionflow:page:matter-protocol",
+  "title": "Matter Protocol",
+  "slug": "matter-protocol",
+  "public": true,
+  "classIri": "urn:ngm:class:matter-protocol",
+  "domain": "infrastructure",
+  "definition": "Matter is a royalty-free smart-home connectivity standard developed by the Connectivity Standards Alliance to provide a common application layer enabling devices from different manufacturers to interoperate over IP networks. Built on top of Thread and Wi-Fi for transport, Matter defines a unified data model, secure commissioning, and local control that removes dependence on proprietary vendor clouds. It is backed by Apple, Google, Amazon, and Samsung, and aims to resolve the fragmentation that historically forced consumers into single-ecosystem smart-home purchases.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:network-protocol",
+      "label": "Network Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:thread-protocol",
+        "label": "Thread Protocol"
+      },
+      {
+        "id": "urn:ngm:class:zigbee",
+        "label": "Zigbee"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "home-assistant",
+      "label": "Home Assistant"
+    },
+    {
+      "slug": "io-t-sensor-network",
+      "label": "IoT Sensor Network"
+    }
+  ]
+}

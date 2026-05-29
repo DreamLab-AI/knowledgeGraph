@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:zigbee",
+  "title": "Zigbee",
+  "slug": "zigbee",
+  "public": true,
+  "classIri": "urn:ngm:class:zigbee",
+  "domain": "infrastructure",
+  "definition": "Zigbee is a low-power, low-data-rate wireless mesh networking protocol built on the IEEE 802.15.4 physical and MAC layer standard, designed for battery-powered IoT devices in home automation, industrial monitoring, and building management applications. Maintained by the Connectivity Standards Alliance, it supports mesh topologies that extend range through device-to-device relay whilst consuming minimal power.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ieee-802-15-4",
+      "label": "IEEE 802.15.4"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:sensor-data",
+        "label": "Sensor Data"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      },
+      {
+        "id": "urn:ngm:class:sensor-technology",
+        "label": "Sensor Technology"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:matter-protocol",
+        "label": "Matter Protocol"
+      },
+      {
+        "id": "urn:ngm:class:bluetooth-low-energy",
+        "label": "Bluetooth Low Energy"
+      },
+      {
+        "id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "io-t-sensor-network",
+      "label": "IoT Sensor Network"
+    },
+    {
+      "slug": "physical-layer",
+      "label": "Physical Layer"
+    }
+  ]
+}

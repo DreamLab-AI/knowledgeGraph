@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:vision-language-model",
+  "title": "Vision Language Model",
+  "slug": "vision-language-model",
+  "public": true,
+  "classIri": "urn:ngm:class:vision-language-model",
+  "domain": "ai",
+  "definition": "A Vision Language Model (VLM) is a multimodal neural architecture that jointly processes visual inputs (images or video) and natural language text, learning shared representations that enable cross-modal tasks such as image captioning, visual question answering, visual grounding, and instruction-following based on image context. VLMs typically pair a visual encoder with a large language model backbone connected by a learned projection mechanism.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:multimodal-models",
+      "label": "Multimodal Models"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.85,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:visual-question-answering",
+        "label": "Visual Question Answering"
+      },
+      {
+        "id": "urn:ngm:class:visual-grounding",
+        "label": "Visual Grounding"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:visual-representation",
+        "label": "Visual Representation"
+      },
+      {
+        "id": "urn:ngm:class:instruction-tuning",
+        "label": "Instruction Tuning"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:multimodal-reasoning",
+        "label": "Multimodal Reasoning"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "computer-use-and-browser-agents",
+      "label": "Computer Use and Browser Agents"
+    }
+  ]
+}

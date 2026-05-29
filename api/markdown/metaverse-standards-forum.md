@@ -1,0 +1,14 @@
+- ### Definition
+  - The Metaverse Standards Forum is an industry consortium that coordinates existing standards bodies to foster interoperability across metaverse and spatial-computing technologies, rather than authoring competing specifications itself.
+
+- ### Relationships
+  - Metaverse Standards Forum is a subclass of [[Standards Body]] and exists to enable cross-platform [[Interoperability]] and the adoption of [[Open Standard]]s for virtual worlds. It relates to the broader [[Technical Standard]] ecosystem and to [[Web Standard]] organisations such as the W3C with which it coordinates.
+
+- ### Content
+  - The Metaverse Standards Forum was founded on a diagnosis: the greatest risk to an open metaverse is not technical impossibility but fragmentation into proprietary walled gardens, where an avatar, asset, or identity created in one platform cannot move to another. Rather than add yet another specification to the landscape, the Forum positions itself as a coordination layer, identifying where interoperability gaps exist and aligning the many existing standards organisations whose work bears on spatial computing.
+
+  - Its membership is notable for breadth, spanning platform owners, hardware vendors, engine makers, and established standards bodies, and it is hosted by the Khronos Group, the consortium behind graphics standards such as glTF, OpenXR, and Vulkan. This composition reflects a deliberate choice to bring competitors and incumbents together pre-competitively, on the premise that an interoperable ecosystem expands the market for everyone more than locked-in platforms would.
+
+  - The Forum organises domain working groups around concrete interoperability problems: 3D asset interchange and digital fashion, interoperable avatars and identity, network-transmitted scene description, real-world digital twins, and accessibility. These groups produce gap analyses, prototyping projects, and recommendations that feed back into the relevant authoring bodies, where the actual normative specifications are ratified — a division of labour that avoids duplicating or competing with W3C, ISO, or Khronos processes.
+
+  - Whether the metaverse vision crystallises rapidly or evolves more gradually into ambient spatial computing, the underlying interoperability challenges — portable identity, interchangeable 3D assets, consistent rendering and physics, and privacy across immersive environments — are real and durable. The Metaverse Standards Forum represents the industry's principal coordinated attempt to address them through open standards, making it a governance institution to watch as immersive and spatial technologies mature.

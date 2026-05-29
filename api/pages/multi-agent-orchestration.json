@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:multi-agent-orchestration",
+  "title": "Multi-Agent Orchestration",
+  "slug": "multi-agent-orchestration",
+  "public": true,
+  "classIri": "urn:ngm:class:multi-agent-orchestration",
+  "domain": "ai",
+  "definition": "Multi-agent orchestration is the coordination and management of multiple autonomous AI agents \u2014 each capable of perceiving, reasoning, and acting \u2014 such that their collective behaviour accomplishes complex tasks beyond the capacity of any single agent. Orchestration encompasses task decomposition, agent assignment, inter-agent communication, state sharing, conflict resolution, and result aggregation, typically mediated by an orchestrator layer or emergent via peer protocols.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:orchestration",
+      "label": "Orchestration"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-ai-agents",
+        "label": "Autonomous AI Agents"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:agent-orchestrator",
+        "label": "Agent Orchestrator"
+      },
+      {
+        "id": "urn:ngm:class:agent-communication-protocol",
+        "label": "Agent Communication Protocol"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:agent-runtime",
+        "label": "Agent Runtime"
+      },
+      {
+        "id": "urn:ngm:class:orchestration-layer",
+        "label": "Orchestration Layer"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "model-context-protocol",
+      "label": "Model Context Protocol"
+    }
+  ]
+}

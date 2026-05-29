@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:adversarial-machine-learning",
+  "title": "Adversarial Machine Learning",
+  "slug": "adversarial-machine-learning",
+  "public": true,
+  "classIri": "urn:ngm:class:adversarial-machine-learning",
+  "domain": "security",
+  "definition": "Adversarial machine learning is the study of attacks that exploit vulnerabilities in machine learning models and the development of defences against them, encompassing threats across the model lifecycle including training-time data poisoning, evasion attacks at inference time, model inversion, and membership inference. Attackers craft carefully perturbed inputs or manipulate training data to cause misclassification, extract sensitive information, or degrade model performance, whilst defenders develop robust training procedures, certified defences, and detection mechanisms. The field spans both offensive security research and the development of trustworthy AI systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-security",
+      "label": "AI Security"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:adversarial-robustness",
+        "label": "Adversarial Robustness"
+      },
+      {
+        "id": "urn:ngm:class:model-robustness",
+        "label": "Model Robustness"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:adversarial-attacks",
+        "label": "Adversarial Attacks"
+      },
+      {
+        "id": "urn:ngm:class:data-poisoning",
+        "label": "Data Poisoning"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:model-inversion",
+        "label": "Model Inversion"
+      },
+      {
+        "id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      },
+      {
+        "id": "urn:ngm:class:adversarial-testing",
+        "label": "Adversarial Testing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cyber-security-and-cryptography",
+      "label": "Cyber Security and Cryptography"
+    },
+    {
+      "slug": "information-security",
+      "label": "Information Security"
+    },
+    {
+      "slug": "jailbreaking",
+      "label": "Jailbreaking"
+    }
+  ]
+}

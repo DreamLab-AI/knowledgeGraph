@@ -1,0 +1,71 @@
+{
+  "id": "urn:visionflow:page:action-space",
+  "title": "Action Space",
+  "slug": "action-space",
+  "public": true,
+  "classIri": "urn:ngm:class:action-space",
+  "domain": "ai",
+  "definition": "The action space in reinforcement learning and control theory is the complete set of actions available to an agent at any given decision step, defining the boundaries of what the agent may do when interacting with its environment. It may be discrete\u2014a finite enumeration of choices\u2014or continuous\u2014a real-valued manifold such as joint torques or steering angles\u2014and its structure fundamentally determines which learning algorithms are applicable and how efficiently a policy can be discovered.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:state-space",
+      "label": "State Space"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:policy-optimisation",
+        "label": "Policy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning-algorithm",
+        "label": "Reinforcement Learning Algorithm"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:environment-model",
+        "label": "Environment Model"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning-for-robotics",
+        "label": "Reinforcement Learning for Robotics"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:reward-function",
+        "label": "Reward Function"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "imitation-learning",
+      "label": "Imitation Learning"
+    }
+  ]
+}

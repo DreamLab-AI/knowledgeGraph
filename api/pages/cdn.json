@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:cdn",
+  "title": "CDN",
+  "slug": "cdn",
+  "public": true,
+  "classIri": "urn:ngm:class:cdn",
+  "domain": "infrastructure",
+  "definition": "A Content Delivery Network (CDN) is a geographically distributed network of proxy servers and data centres that caches and serves web content from locations physically close to end users, reducing latency, relieving origin server load, and improving resilience against traffic spikes and denial-of-service attacks. CDNs operate through anycast routing, edge caching policies, and real-time traffic steering algorithms to deliver optimal user experience across diverse network conditions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:content-delivery-network",
+      "label": "Content Delivery Network"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:bandwidth-optimization",
+        "label": "Bandwidth Optimization"
+      },
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:internet-infrastructure",
+        "label": "Internet Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network-cdn",
+        "label": "Content Delivery Network (CDN)"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "api-gateway",
+      "label": "API Gateway"
+    },
+    {
+      "slug": "infrastructure-layer",
+      "label": "Infrastructure Layer"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

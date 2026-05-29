@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:block-explorer",
+  "title": "Block Explorer",
+  "slug": "block-explorer",
+  "public": true,
+  "classIri": "urn:ngm:class:block-explorer",
+  "domain": "blockchain",
+  "definition": "A Block Explorer is a web-based or API-accessible tool that indexes and presents the contents of a blockchain in human-readable form, enabling users to search, inspect, and verify blocks, transactions, addresses, smart contracts, and network statistics without operating a full node locally. Block explorers ingest raw node data, parse it according to the chain's consensus rules, and expose it through search interfaces and REST or GraphQL APIs. They are the primary transparency and audit interface for blockchain networks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain-analytics",
+      "label": "Blockchain Analytics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:full-node",
+        "label": "Full Node"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      },
+      {
+        "id": "urn:ngm:class:data-visualisation",
+        "label": "Data Visualisation"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:mempool",
+        "label": "Mempool"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "dao-analytics",
+      "label": "DAO Analytics"
+    },
+    {
+      "slug": "testnet",
+      "label": "Testnet"
+    },
+    {
+      "slug": "treasury-management",
+      "label": "Treasury Management"
+    }
+  ]
+}

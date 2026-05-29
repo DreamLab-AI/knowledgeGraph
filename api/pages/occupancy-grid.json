@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:occupancy-grid",
+  "title": "Occupancy Grid",
+  "slug": "occupancy-grid",
+  "public": true,
+  "classIri": "urn:ngm:class:occupancy-grid",
+  "domain": "robotics",
+  "definition": "An occupancy grid is a probabilistic spatial representation of a robot's environment as a discretised lattice of cells, each storing a probability or log-odds value indicating the likelihood that the corresponding region of space is occupied by an obstacle. It provides a metric map suitable for collision avoidance, path planning, and SLAM by fusing noisy sensor measurements through Bayesian updates.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:environment-mapping",
+      "label": "Environment Mapping"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:lidar-sensor",
+        "label": "Lidar Sensor"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "navigation",
+      "label": "Navigation"
+    },
+    {
+      "slug": "particle-filter",
+      "label": "Particle Filter"
+    },
+    {
+      "slug": "slam",
+      "label": "SLAM"
+    },
+    {
+      "slug": "topological-map",
+      "label": "Topological Map"
+    },
+    {
+      "slug": "topological-map",
+      "label": "Topological Map"
+    },
+    {
+      "slug": "topological-map",
+      "label": "Topological Map"
+    },
+    {
+      "slug": "topological-map",
+      "label": "Topological Map"
+    }
+  ]
+}

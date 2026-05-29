@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:environment-model",
+  "title": "Environment Model",
+  "slug": "environment-model",
+  "public": true,
+  "classIri": "urn:ngm:class:environment-model",
+  "domain": "robotics",
+  "definition": "An environment model is an internal representation maintained by a robot, autonomous agent, or AI system that encodes the geometry, semantics, dynamics, and state of its surrounding physical or virtual world, enabling planning, navigation, and interaction without direct real-time sensor observation of every aspect of the scene. It may range from metric maps and occupancy grids to rich semantic scene graphs and learned neural radiance fields.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:scene-graph",
+      "label": "Scene Graph"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "id": "urn:ngm:class:occupancy-grid",
+        "label": "Occupancy Grid"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:depth-sensor",
+        "label": "Depth Sensor"
+      },
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "path-planning",
+      "label": "Path Planning"
+    }
+  ]
+}

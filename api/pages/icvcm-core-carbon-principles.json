@@ -1,0 +1,71 @@
+{
+  "id": "urn:visionflow:page:icvcm-core-carbon-principles",
+  "title": "ICVCM Core Carbon Principles",
+  "slug": "icvcm-core-carbon-principles",
+  "public": true,
+  "classIri": "urn:ngm:class:icvcm-core-carbon-principles",
+  "domain": "governance",
+  "definition": "The ICVCM Core Carbon Principles (CCPs) are a set of ten threshold standards established by the Integrity Council for the Voluntary Carbon Market to define what constitutes a high-quality carbon credit. They cover governance, emissions impact, and sustainable development dimensions, requiring that credits be real, additional, quantified, permanent, independently verified, and contribute positively to sustainable development goals without causing harm to local communities or ecosystems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:icvcm-framework",
+      "label": "ICVCM Framework"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:voluntary-carbon-market",
+        "label": "Voluntary Carbon Market"
+      },
+      {
+        "id": "urn:ngm:class:carbon-credit-retirement",
+        "label": "Carbon Credit Retirement"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:carbon-markets",
+        "label": "Carbon Markets"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:integrity-council-for-the-voluntary-carbon-market",
+        "label": "Integrity Council for the Voluntary Carbon Market"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:carbon-standard-certification",
+        "label": "Carbon Standard Certification"
+      },
+      {
+        "id": "urn:ngm:class:verra-vcs-standard",
+        "label": "Verra VCS Standard"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "carbon-credit-tracking",
+      "label": "Carbon Credit Tracking"
+    },
+    {
+      "slug": "green-blockchain-initiatives",
+      "label": "Green Blockchain Initiatives"
+    }
+  ]
+}

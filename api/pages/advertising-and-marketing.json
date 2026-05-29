@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:advertising-and-marketing",
+  "title": "Advertising and Marketing",
+  "slug": "advertising-and-marketing",
+  "public": true,
+  "classIri": "urn:ngm:class:advertising-and-marketing",
+  "domain": "media",
+  "definition": "Advertising and marketing is the combined domain of commercial practices concerned with identifying customer needs, developing products and services to meet them, communicating value propositions to target audiences through paid and unpaid channels, and building lasting brand relationships. Marketing encompasses the strategic disciplines of market research, product development, pricing, distribution, and communications, while advertising is the paid communications subset of the marketing mix. Together they constitute the primary commercial mechanism by which organisations acquire customers and generate revenue in market economies.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-marketing",
+      "label": "Digital Marketing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:advertising",
+        "label": "Advertising"
+      },
+      {
+        "id": "urn:ngm:class:programmatic-advertising",
+        "label": "Programmatic Advertising"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      },
+      {
+        "id": "urn:ngm:class:behavioral-analytics",
+        "label": "Behavioral Analytics"
+      },
+      {
+        "id": "urn:ngm:class:recommendation-engine",
+        "label": "Recommendation Engine"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:customer-experience",
+        "label": "Customer Experience"
+      },
+      {
+        "id": "urn:ngm:class:data-privacy",
+        "label": "Data Privacy"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "proprietary-ai-video",
+      "label": "Proprietary AI Video"
+    },
+    {
+      "slug": "proprietary-video",
+      "label": "Proprietary Video"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:clock-synchronization",
+  "title": "Clock Synchronization",
+  "slug": "clock-synchronization",
+  "public": true,
+  "classIri": "urn:ngm:class:clock-synchronization",
+  "domain": "infrastructure",
+  "definition": "Clock Synchronization is the process of coordinating the time references of distributed computing nodes or electronic systems so that they share a consistent and accurate notion of time, enabling correct ordering of events, coordinated actions, and time-stamped record-keeping. Protocols such as NTP (Network Time Protocol) and PTP (Precision Time Protocol, IEEE 1588) achieve synchronization by exchanging timestamped messages and compensating for network propagation delays. Accurate clock synchronization is critical for distributed databases, consensus algorithms, telecommunications, industrial control systems, and financial transaction ordering.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:network-synchronization",
+      "label": "Network Synchronization"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:time-sensitive-networking",
+        "label": "Time-Sensitive Networking"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:timestamp",
+        "label": "Timestamp"
+      },
+      {
+        "id": "urn:ngm:class:synchronization-protocol",
+        "label": "Synchronization Protocol"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "id": "urn:ngm:class:timestamp-service",
+        "label": "Timestamp Service"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "audit-trail",
+      "label": "Audit Trail"
+    },
+    {
+      "slug": "state-synchronization",
+      "label": "State Synchronization"
+    }
+  ]
+}

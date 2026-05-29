@@ -1,0 +1,71 @@
+{
+  "id": "urn:visionflow:page:execution-model",
+  "title": "Execution Model",
+  "slug": "execution-model",
+  "public": true,
+  "classIri": "urn:ngm:class:execution-model",
+  "domain": "infrastructure",
+  "definition": "An execution model is the abstract specification of how a computing system interprets, schedules, and carries out instructions or computations, defining the rules governing ordering, concurrency, memory access, and resource allocation. It forms the semantic foundation atop which programming languages, runtimes, and hardware platforms are designed, ensuring consistent and predictable behaviour across implementations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:programming-paradigm",
+      "label": "Programming Paradigm"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:runtime-environment",
+        "label": "Runtime Environment"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:virtual-machine",
+        "label": "Virtual Machine"
+      },
+      {
+        "id": "urn:ngm:class:compiler",
+        "label": "Compiler"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:software-architecture",
+        "label": "Software Architecture"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "asynchronous-execution",
+      "label": "Asynchronous Execution"
+    },
+    {
+      "slug": "synchronous-execution",
+      "label": "Synchronous Execution"
+    }
+  ]
+}

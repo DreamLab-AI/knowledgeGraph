@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:web-id",
+  "title": "WebID",
+  "slug": "web-id",
+  "public": true,
+  "classIri": "urn:ngm:class:web-id",
+  "domain": "identity",
+  "definition": "WebID is a decentralised identity mechanism in which a person or agent is identified by an HTTP(S) URI that dereferences to a machine-readable profile document describing them in RDF. Combined with authentication methods such as WebID-TLS or WebID-OIDC, it lets users prove control of their identifier without a central identity provider. WebID is a foundational building block of the Solid project and the broader linked-data web, enabling user-controlled identity, profiles, and access control across decentralised applications.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:decentralized-identity",
+      "label": "Decentralized Identity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:federated-identity",
+        "label": "Federated Identity"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      },
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "solid-pod",
+      "label": "Solid Pod"
+    },
+    {
+      "slug": "solid",
+      "label": "Solid"
+    }
+  ]
+}

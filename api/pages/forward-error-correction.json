@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:forward-error-correction",
+  "title": "Forward Error Correction",
+  "slug": "forward-error-correction",
+  "public": true,
+  "classIri": "urn:ngm:class:forward-error-correction",
+  "domain": "infrastructure",
+  "definition": "Forward error correction (FEC) is a channel-coding technique in which redundant information is added to a transmitted data stream so that the receiver can detect and correct errors introduced by the channel without requesting retransmission. FEC codes trade bandwidth or storage overhead for improved reliability over noisy or lossy channels, eliminating the round-trip latency penalty of automatic repeat request (ARQ) schemes.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:channel-coding",
+      "label": "Channel Coding"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.85,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:reed-solomon-codes",
+        "label": "Reed-Solomon Codes"
+      },
+      {
+        "id": "urn:ngm:class:ldpc-codes",
+        "label": "LDPC Codes"
+      }
+    ],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:telecommunications",
+        "label": "Telecommunications"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-redundancy",
+        "label": "Data Redundancy"
+      },
+      {
+        "id": "urn:ngm:class:packet-loss-recovery",
+        "label": "Packet Loss Recovery"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bandwidth-adaptation",
+      "label": "Bandwidth Adaptation"
+    },
+    {
+      "slug": "physical-layer",
+      "label": "Physical Layer"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

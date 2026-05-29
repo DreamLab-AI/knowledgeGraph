@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:6-do-f-tracking",
+  "title": "6DoF Tracking",
+  "slug": "6-do-f-tracking",
+  "public": true,
+  "classIri": "urn:ngm:class:6-do-f-tracking",
+  "domain": "spatial",
+  "definition": "6DoF (Six Degrees of Freedom) Tracking is the measurement and continuous estimation of an object's complete rigid-body pose in three-dimensional space, encompassing three translational components (x, y, z position) and three rotational components (pitch, yaw, roll orientation). It is the foundational capability for XR headsets, controllers, and spatial computing devices to understand and respond to the user's physical motion with sub-millimetre accuracy and minimal latency. 6DoF tracking is achieved through sensor fusion of inertial measurement units, camera-based visual odometry, and optionally external beacons or reference markers.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+      "label": "Simultaneous Localisation and Mapping"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:xr-applications",
+        "label": "XR Applications"
+      },
+      {
+        "id": "urn:ngm:class:ar-registration",
+        "label": "AR Registration"
+      },
+      {
+        "id": "urn:ngm:class:3-d-perception",
+        "label": "3D Perception"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:imu",
+        "label": "IMU"
+      },
+      {
+        "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      },
+      {
+        "id": "urn:ngm:class:camera-tracking",
+        "label": "Camera Tracking"
+      },
+      {
+        "id": "urn:ngm:class:depth-sensing",
+        "label": "Depth Sensing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "mixed-reality",
+      "label": "Mixed Reality"
+    },
+    {
+      "slug": "virtual-reality-vr",
+      "label": "Virtual Reality (VR)"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:autonomous-operation",
+  "title": "Autonomous Operation",
+  "slug": "autonomous-operation",
+  "public": true,
+  "classIri": "urn:ngm:class:autonomous-operation",
+  "domain": "ai",
+  "definition": "The sustained execution of a system's core functions without ongoing human intervention, encompassing self-monitoring, self-configuration, self-healing, and self-optimisation capabilities that allow the system to maintain operational objectives across varying environmental conditions and failure states. Autonomous operation represents the highest level of system self-sufficiency on the automation continuum.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:autonomous-system",
+      "label": "Autonomous System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:autonomous-behavior",
+        "label": "Autonomous Behavior"
+      },
+      {
+        "id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-mobile-robots",
+        "label": "Autonomous Mobile Robots"
+      },
+      {
+        "id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "id": "urn:ngm:class:monitoring-system",
+        "label": "Monitoring System"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "robot-hardware",
+      "label": "Robot Hardware"
+    }
+  ]
+}

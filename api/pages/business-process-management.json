@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:business-process-management",
+  "title": "Business Process Management",
+  "slug": "business-process-management",
+  "public": true,
+  "classIri": "urn:ngm:class:business-process-management",
+  "domain": "governance",
+  "definition": "Business Process Management (BPM) is a discipline that uses methods, techniques, and software tools to discover, model, analyse, measure, improve, and automate business processes \u2014 end-to-end workflows that produce value for internal stakeholders or external customers. It combines organisational management practice with process automation technology to make organisational operations more efficient, agile, and aligned with strategic goals.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:enterprise-architecture",
+      "label": "Enterprise Architecture"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:process-automation",
+        "label": "Process Automation"
+      },
+      {
+        "id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      },
+      {
+        "id": "urn:ngm:class:digital-transformation",
+        "label": "Digital Transformation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:service-oriented-architecture",
+        "label": "Service Oriented Architecture"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:compliance-management",
+        "label": "Compliance Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "compliance-control",
+      "label": "Compliance Control"
+    },
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "process",
+      "label": "Process"
+    }
+  ]
+}

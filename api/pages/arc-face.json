@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:arc-face",
+  "title": "ArcFace",
+  "slug": "arc-face",
+  "public": true,
+  "classIri": "urn:ngm:class:arc-face",
+  "domain": "ai",
+  "definition": "ArcFace is a deep learning loss function and associated training methodology for facial recognition, introduced by Deng et al. at Imperial College London in 2019, that improves discriminative feature learning by adding an additive angular margin penalty to the softmax loss function. By penalising the angle between a sample embedding and its class centre in hyperspherical feature space, ArcFace forces the model to learn more compact intra-class and more separable inter-class feature embeddings than standard softmax or earlier margin-based losses. It has achieved state-of-the-art performance on numerous facial recognition benchmarks and is widely adopted in production identity verification systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:facial-recognition",
+      "label": "Facial Recognition"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:biometric-verification",
+        "label": "Biometric Verification"
+      },
+      {
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      },
+      {
+        "id": "urn:ngm:class:embedding",
+        "label": "Embedding"
+      },
+      {
+        "id": "urn:ngm:class:cosine-similarity",
+        "label": "Cosine Similarity"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "comfy-ui-for-fashion-and-brands",
+      "label": "comfy-ui-for-fashion-and-brands"
+    },
+    {
+      "slug": "face-swap",
+      "label": "Face Swap"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    }
+  ]
+}

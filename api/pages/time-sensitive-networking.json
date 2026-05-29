@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:time-sensitive-networking",
+  "title": "Time-Sensitive Networking",
+  "slug": "time-sensitive-networking",
+  "public": true,
+  "classIri": "urn:ngm:class:time-sensitive-networking",
+  "domain": "infrastructure",
+  "definition": "Time-Sensitive Networking (TSN) is a set of IEEE 802.1 standards that add deterministic, bounded-latency delivery to standard Ethernet, enabling time-critical and best-effort traffic to share the same network. TSN provides precise time synchronisation, traffic scheduling, frame preemption, and reservation mechanisms so that control-loop and audio-video data arrive within guaranteed time windows. It is foundational to industrial automation, automotive in-vehicle networks, and professional media, replacing proprietary fieldbuses with converged standard Ethernet.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:network-protocol",
+      "label": "Network Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:clock-synchronization",
+        "label": "Clock Synchronization"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:networking-standard",
+        "label": "Networking Standard"
+      },
+      {
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    },
+    {
+      "slug": "real-time",
+      "label": "Real Time"
+    },
+    {
+      "slug": "robot-standard",
+      "label": "Robot Standard"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:carbon-accounting-software",
+  "title": "Carbon Accounting Software",
+  "slug": "carbon-accounting-software",
+  "public": true,
+  "classIri": "urn:ngm:class:carbon-accounting-software",
+  "domain": "governance",
+  "definition": "Carbon accounting software is a category of enterprise application that automates the collection, calculation, and reporting of an organisation's greenhouse gas (GHG) emissions across Scope 1 (direct), Scope 2 (purchased energy), and Scope 3 (value chain) categories in accordance with established standards such as the GHG Protocol Corporate Standard and ISO 14064. These platforms ingest activity data from financial systems, energy bills, logistics records, and supplier databases; apply emission factors; and produce auditable emissions inventories aligned with regulatory disclosure frameworks including the EU Corporate Sustainability Reporting Directive (CSRD) and the SEC Climate Disclosure Rule.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:carbon-accounting",
+      "label": "Carbon Accounting"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:sustainability-reporting",
+        "label": "SustainabilityReporting"
+      },
+      {
+        "id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      },
+      {
+        "id": "urn:ngm:class:carbon-neutrality",
+        "label": "Carbon Neutrality"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ghg-protocol",
+        "label": "GHG Protocol"
+      },
+      {
+        "id": "urn:ngm:class:emission-factors",
+        "label": "Emission Factors"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:scope-3-emissions",
+        "label": "Scope 3 Emissions"
+      },
+      {
+        "id": "urn:ngm:class:carbon-footprint-measurement",
+        "label": "Carbon Footprint Measurement"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "carbon-footprint-measurement",
+      "label": "Carbon Footprint Measurement"
+    },
+    {
+      "slug": "esg-reporting",
+      "label": "ESG Reporting"
+    }
+  ]
+}

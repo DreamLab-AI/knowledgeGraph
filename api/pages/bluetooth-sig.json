@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:bluetooth-sig",
+  "title": "Bluetooth SIG",
+  "slug": "bluetooth-sig",
+  "public": true,
+  "classIri": "urn:ngm:class:bluetooth-sig",
+  "domain": "infrastructure",
+  "definition": "The Bluetooth Special Interest Group (Bluetooth SIG) is the non-profit trade association responsible for developing, maintaining, and licensing the Bluetooth wireless communication standard. Founded in 1998 by Ericsson, IBM, Intel, Nokia, and Toshiba, it governs the Bluetooth Core Specification and the library of Bluetooth profiles, managing qualification and branding programmes that ensure interoperability among the over 50,000 member companies worldwide.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:standards-body",
+      "label": "Standards Body"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:bluetooth-low-energy",
+        "label": "Bluetooth Low Energy"
+      },
+      {
+        "id": "urn:ngm:class:bluetooth-le",
+        "label": "Bluetooth LE"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee-standards-association",
+        "label": "IEEE Standards Association"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ar-frame",
+      "label": "AR Frame"
+    },
+    {
+      "slug": "physical-layer",
+      "label": "Physical Layer"
+    }
+  ]
+}

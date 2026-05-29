@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:ai-talent",
+  "title": "AI Talent",
+  "slug": "ai-talent",
+  "public": true,
+  "classIri": "urn:ngm:class:ai-talent",
+  "domain": "ai",
+  "definition": "The human capital pool comprising individuals with specialised skills in machine learning research, AI engineering, data science, and related disciplines who design, build, evaluate, and govern artificial intelligence systems. AI talent is a scarce and strategically contested resource, with demand from frontier laboratories, technology companies, and public-sector institutions consistently outpacing the supply produced by academic programmes. The composition of the talent pool\u2014including its geographic distribution, diversity, and specialisation\u2014directly shapes the pace and direction of AI progress.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:workforce-development",
+      "label": "Workforce Development"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-model-development",
+        "label": "AI Model Development"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety-research",
+        "label": "AI Safety Research"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-talent-war",
+        "label": "AI Talent War"
+      },
+      {
+        "id": "urn:ngm:class:education-and-ai",
+        "label": "Education and AI"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-adoption",
+      "label": "AI Adoption"
+    },
+    {
+      "slug": "adoption-of-convergent-technologies",
+      "label": "Adoption of Convergent Technologies"
+    }
+  ]
+}

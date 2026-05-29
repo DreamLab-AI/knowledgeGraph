@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:audit",
+  "title": "Audit",
+  "slug": "audit",
+  "public": true,
+  "classIri": "urn:ngm:class:audit",
+  "domain": "governance",
+  "definition": "A systematic, independent examination of records, systems, or processes to assess their accuracy, completeness, and compliance with applicable standards or regulations. Audits provide structured evidence for accountability by evaluating whether controls are operating effectively and reported information is reliable.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:accountability-mechanism",
+      "label": "Accountability Mechanism"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "id": "urn:ngm:class:audit-log",
+        "label": "Audit Log"
+      },
+      {
+        "id": "urn:ngm:class:audit-mechanism",
+        "label": "Audit Mechanism"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      },
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "compliance-control",
+      "label": "Compliance Control"
+    },
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    }
+  ]
+}

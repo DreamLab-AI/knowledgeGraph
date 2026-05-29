@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:in-context-learning",
+  "title": "In-Context Learning",
+  "slug": "in-context-learning",
+  "public": true,
+  "classIri": "urn:ngm:class:in-context-learning",
+  "domain": "ai",
+  "definition": "In-Context Learning (ICL) is a capability of large language models whereby the model adapts its behaviour to a new task at inference time by conditioning on a small number of input-output demonstrations supplied within the prompt, without any gradient-based weight updates. The model implicitly extracts task structure from the provided examples and applies it to unseen queries, enabling rapid task generalisation without retraining.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:meta-learning",
+      "label": "Meta-Learning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:large-language-model-training",
+        "label": "Large Language Model Training"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:few-shot-learning",
+        "label": "Few-Shot Learning"
+      },
+      {
+        "id": "urn:ngm:class:few-shot-prompting",
+        "label": "Few-Shot Prompting"
+      },
+      {
+        "id": "urn:ngm:class:zero-shot-prompting",
+        "label": "Zero-Shot Prompting"
+      },
+      {
+        "id": "urn:ngm:class:chain-of-thought-prompting",
+        "label": "Chain-of-Thought Prompting"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "attention",
+      "label": "Attention"
+    },
+    {
+      "slug": "jailbreaking",
+      "label": "Jailbreaking"
+    },
+    {
+      "slug": "lo-ra-do-ra-etc",
+      "label": "LoRA DoRA etc"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "slug": "retrieval-augmented-generation-rag",
+      "label": "Retrieval Augmented Generation - RAG"
+    },
+    {
+      "slug": "training-and-fine-tuning",
+      "label": "Training and fine tuning"
+    }
+  ]
+}

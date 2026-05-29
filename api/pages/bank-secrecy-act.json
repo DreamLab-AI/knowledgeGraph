@@ -1,0 +1,81 @@
+{
+  "id": "urn:visionflow:page:bank-secrecy-act",
+  "title": "Bank Secrecy Act",
+  "slug": "bank-secrecy-act",
+  "public": true,
+  "classIri": "urn:ngm:class:bank-secrecy-act",
+  "domain": "governance",
+  "definition": "The Bank Secrecy Act (BSA), enacted in the United States in 1970, is the primary federal anti-money-laundering statute that requires financial institutions to assist US government agencies in detecting and preventing money laundering and financial crime. It mandates customer identification, suspicious activity reporting (SARs), currency transaction reporting (CTRs), and record-keeping \u2014 establishing the foundational framework for AML compliance in the US financial system.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:financial-regulation",
+      "label": "Financial Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "id": "urn:ngm:class:transaction-monitoring",
+        "label": "Transaction Monitoring"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:fatf",
+        "label": "FATF"
+      },
+      {
+        "id": "urn:ngm:class:travel-rule",
+        "label": "Travel Rule"
+      },
+      {
+        "id": "urn:ngm:class:financial-crime-detection",
+        "label": "Financial Crime Detection"
+      },
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    },
+    {
+      "slug": "cross-border-compliance",
+      "label": "Cross Border Compliance"
+    },
+    {
+      "slug": "securities-regulation",
+      "label": "Securities Regulation"
+    },
+    {
+      "slug": "travel-rule",
+      "label": "Travel Rule"
+    },
+    {
+      "slug": "us-regulatory-framework",
+      "label": "US Regulatory Framework"
+    }
+  ]
+}

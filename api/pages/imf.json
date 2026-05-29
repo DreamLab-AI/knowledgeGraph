@@ -1,0 +1,77 @@
+{
+  "id": "urn:visionflow:page:imf",
+  "title": "IMF",
+  "slug": "imf",
+  "public": true,
+  "classIri": "urn:ngm:class:imf",
+  "domain": "governance",
+  "definition": "The International Monetary Fund (IMF) is an intergovernmental organisation of 190 member countries established in 1944 under the Bretton Woods system to promote international monetary cooperation, exchange rate stability, and balanced trade, providing financial assistance and policy advice to members facing balance-of-payments difficulties and conducting surveillance of the global financial system.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bis",
+      "label": "BIS"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
+        "label": "Central Bank Digital Currency (CBDC)"
+      },
+      {
+        "id": "urn:ngm:class:cbdc-cross-border-settlement",
+        "label": "CBDC Cross-Border Settlement"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:imf-cbdc-framework",
+        "label": "IMF CBDC Framework"
+      },
+      {
+        "id": "urn:ngm:class:imf-crypto-asset-classification-framework",
+        "label": "IMF Crypto Asset Classification Framework"
+      },
+      {
+        "id": "urn:ngm:class:fsb",
+        "label": "FSB"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-as-money",
+      "label": "Bitcoin As Money"
+    },
+    {
+      "slug": "cbdc-frameworks",
+      "label": "CBDC Frameworks"
+    },
+    {
+      "slug": "digital-asset-risks",
+      "label": "Digital Asset Risks"
+    },
+    {
+      "slug": "economics",
+      "label": "Economics"
+    },
+    {
+      "slug": "money",
+      "label": "Money"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:embedding",
+  "title": "Embedding",
+  "slug": "embedding",
+  "public": true,
+  "classIri": "urn:ngm:class:embedding",
+  "domain": "ai",
+  "definition": "An embedding is a learned mapping from discrete or high-dimensional objects\u2014such as words, sentences, images, graphs, or code\u2014into a continuous, low-dimensional vector space, such that semantically or functionally similar inputs are mapped to geometrically proximate vectors. Embeddings are fundamental to modern machine learning, enabling downstream tasks including similarity search, classification, clustering, and retrieval through compact, transferable representations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:representation-learning",
+      "label": "Representation Learning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:dimensionality-reduction",
+        "label": "Dimensionality Reduction"
+      },
+      {
+        "id": "urn:ngm:class:encoder",
+        "label": "Encoder"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:latent-space",
+        "label": "latent space"
+      },
+      {
+        "id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "attention",
+      "label": "Attention"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

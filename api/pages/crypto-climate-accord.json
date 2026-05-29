@@ -1,0 +1,73 @@
+{
+  "id": "urn:visionflow:page:crypto-climate-accord",
+  "title": "Crypto Climate Accord",
+  "slug": "crypto-climate-accord",
+  "public": true,
+  "classIri": "urn:ngm:class:crypto-climate-accord",
+  "domain": "blockchain",
+  "definition": "The Crypto Climate Accord is a private-sector initiative launched in 2021 to decarbonise the cryptocurrency and blockchain industry, modelled on the Paris Climate Agreement. It commits signatory companies and projects to achieving net-zero greenhouse-gas emissions from electricity consumption by 2030 and to developing open-source accounting standards and tools for measuring and reporting crypto energy use.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:esg",
+      "label": "ESG"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.82,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:esg-compliant-blockchain",
+        "label": "ESG-Compliant Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:renewable-energy-tracking",
+        "label": "Renewable Energy Tracking"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockchain-energy-consumption",
+        "label": "Blockchain Energy Consumption"
+      },
+      {
+        "id": "urn:ngm:class:renewable-energy",
+        "label": "Renewable Energy"
+      },
+      {
+        "id": "urn:ngm:class:carbon-credits",
+        "label": "Carbon Credits"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "green-blockchain-initiatives",
+      "label": "Green Blockchain Initiatives"
+    },
+    {
+      "slug": "proof-of-stake-sustainability",
+      "label": "Proof Of Stake Sustainability"
+    },
+    {
+      "slug": "sustainable-consensus",
+      "label": "Sustainable Consensus"
+    }
+  ]
+}

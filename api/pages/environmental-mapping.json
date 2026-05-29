@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:environmental-mapping",
+  "title": "Environmental Mapping",
+  "slug": "environmental-mapping",
+  "public": true,
+  "classIri": "urn:ngm:class:environmental-mapping",
+  "domain": "robotics",
+  "definition": "Environmental mapping is the computational process of constructing spatial representations of a physical environment from sensor data, enabling autonomous agents or robots to understand, navigate, and interact with their surroundings. It encompasses techniques that transform raw sensory inputs\u2014such as lidar point clouds, camera imagery, and depth data\u2014into structured geometric or semantic maps used for path planning and obstacle avoidance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:mapping",
+      "label": "Mapping"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:occupancy-grid",
+        "label": "Occupancy Grid"
+      },
+      {
+        "id": "urn:ngm:class:localization",
+        "label": "Localization"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "3-d-reconstruction",
+      "label": "3D Reconstruction"
+    },
+    {
+      "slug": "perception-system",
+      "label": "Perception System"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:analytics-engine",
+  "title": "Analytics Engine",
+  "slug": "analytics-engine",
+  "public": true,
+  "classIri": "urn:ngm:class:analytics-engine",
+  "domain": "infrastructure",
+  "definition": "A software system or distributed platform that ingests, processes, and analyses large volumes of structured and unstructured data to extract insights, detect patterns, and support decision-making. Analytics engines abstract the complexity of distributed query execution, storage management, and statistical computation behind APIs and query interfaces, enabling analysts and applications to perform exploratory, diagnostic, predictive, and prescriptive analysis at scale. They serve as the computational backbone of business intelligence platforms, ML pipelines, and real-time operational monitoring systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-analytics",
+      "label": "Data Analytics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:machine-learning-pipeline",
+        "label": "Machine Learning Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:real-time-monitoring",
+        "label": "Real-Time Monitoring"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:stream-processing",
+        "label": "Stream Processing"
+      },
+      {
+        "id": "urn:ngm:class:data-lake",
+        "label": "Data Lake"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:emotional-analytics-engine",
+        "label": "Emotional Analytics Engine"
+      },
+      {
+        "id": "urn:ngm:class:telemetry-and-analytics",
+        "label": "Telemetry & Analytics"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "compliance-dashboard",
+      "label": "Compliance Dashboard"
+    },
+    {
+      "slug": "telemetry-and-analytics",
+      "label": "Telemetry & Analytics"
+    }
+  ]
+}

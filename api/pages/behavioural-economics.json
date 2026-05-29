@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:behavioural-economics",
+  "title": "Behavioural Economics",
+  "slug": "behavioural-economics",
+  "public": true,
+  "classIri": "urn:ngm:class:behavioural-economics",
+  "domain": "finance",
+  "definition": "Behavioural economics is an interdisciplinary field that integrates insights from cognitive psychology and social science into economic modelling, documenting systematic ways in which human decision-making deviates from the predictions of classical rational-choice theory. It explains phenomena such as loss aversion, anchoring, present bias, and herd behaviour that standard utility maximisation models cannot account for.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:austrian-economics",
+      "label": "Austrian Economics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "id": "urn:ngm:class:incentive-alignment",
+        "label": "Incentive Alignment"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:heuristic-methods",
+        "label": "Heuristic Methods"
+      },
+      {
+        "id": "urn:ngm:class:behavioral-modeling",
+        "label": "Behavioral Modeling"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:incentive-compatibility",
+        "label": "Incentive Compatibility"
+      },
+      {
+        "id": "urn:ngm:class:behavioral-analytics",
+        "label": "Behavioral Analytics"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "consumer-protection",
+      "label": "Consumer Protection"
+    },
+    {
+      "slug": "economics",
+      "label": "Economics"
+    },
+    {
+      "slug": "emergence",
+      "label": "Emergence"
+    }
+  ]
+}

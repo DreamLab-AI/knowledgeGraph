@@ -1,0 +1,73 @@
+{
+  "id": "urn:visionflow:page:decentralised-coordination",
+  "title": "Decentralised Coordination",
+  "slug": "decentralised-coordination",
+  "public": true,
+  "classIri": "urn:ngm:class:decentralised-coordination",
+  "domain": "blockchain",
+  "definition": "Decentralised coordination refers to mechanisms by which multiple autonomous agents\u2014human or machine\u2014achieve collective outcomes without a central authority directing behaviour, relying instead on shared protocols, incentive structures, consensus rules, or emergent social norms. In blockchain contexts it manifests as DAO governance, token-based voting, and smart-contract-enforced agreements that replace managerial hierarchy with algorithmic rule.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:autonomous-governance",
+      "label": "Autonomous Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:dao",
+        "label": "DAO"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:asynchronous-coordination",
+        "label": "Asynchronous Coordination"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-governance",
+        "label": "Algorithmic Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent-coordination",
+        "label": "AI Agent Coordination"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-entity",
+      "label": "Blockchain Entity"
+    },
+    {
+      "slug": "sovereign-mesh",
+      "label": "Sovereign Mesh"
+    },
+    {
+      "slug": "vision-claw-agentic-container",
+      "label": "VisionClaw Agentic Container"
+    }
+  ]
+}

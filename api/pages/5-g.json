@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:5-g",
+  "title": "5G",
+  "slug": "5-g",
+  "public": true,
+  "classIri": "urn:ngm:class:5-g",
+  "domain": "infrastructure",
+  "definition": "5G (Fifth Generation) is the latest generation of mobile cellular network technology, standardised by 3GPP from Release 15 onwards, characterised by peak data rates exceeding 20 Gbps, radio latencies below 1 ms, and support for up to one million connected devices per square kilometre. It introduces three primary use-case families: enhanced mobile broadband (eMBB), ultra-reliable low-latency communications (URLLC), and massive machine-type communications (mMTC). 5G underpins advances in spatial computing, autonomous vehicles, industrial automation, and IoT at scale.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:telecommunications",
+      "label": "Telecommunications"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:5-g-connectivity",
+        "label": "5G Connectivity"
+      },
+      {
+        "id": "urn:ngm:class:multi-access-edge-computing",
+        "label": "MultiAccessEdgeComputing"
+      },
+      {
+        "id": "urn:ngm:class:xr-applications",
+        "label": "XR Applications"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:3-gpp",
+        "label": "3GPP"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:5-g-network",
+        "label": "5G Network"
+      },
+      {
+        "id": "urn:ngm:class:network-function-virtualization",
+        "label": "Network Function Virtualization"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "communication-protocol",
+      "label": "Communication Protocol"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    },
+    {
+      "slug": "robotics-platform",
+      "label": "Robotics Platform"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "teleoperation",
+      "label": "Teleoperation"
+    }
+  ]
+}

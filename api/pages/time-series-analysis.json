@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:time-series-analysis",
+  "title": "Time-Series Analysis",
+  "slug": "time-series-analysis",
+  "public": true,
+  "classIri": "urn:ngm:class:time-series-analysis",
+  "domain": "ai",
+  "definition": "Time-series analysis is the statistical and computational study of data sequences indexed by time, encompassing methods for decomposition, modelling, forecasting, and anomaly detection of temporal patterns including trend, seasonality, and autocorrelation structures. Foundational techniques include ARIMA, exponential smoothing, spectral analysis, and state-space models, with deep learning approaches such as transformers and N-BEATS increasingly dominant in practice.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-analysis",
+      "label": "Data Analysis"
+    },
+    {
+      "id": "urn:ngm:class:signal-processing",
+      "label": "Signal Processing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:time-series-forecasting",
+        "label": "Time-Series Forecasting"
+      },
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:markov-chain-monte-carlo",
+        "label": "Markov Chain Monte Carlo"
+      },
+      {
+        "id": "urn:ngm:class:prediction-market",
+        "label": "Prediction Market"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "dao-analytics",
+      "label": "DAO Analytics"
+    },
+    {
+      "slug": "predictive-maintenance",
+      "label": "Predictive Maintenance"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "stochastic-process",
+      "label": "Stochastic Process"
+    }
+  ]
+}

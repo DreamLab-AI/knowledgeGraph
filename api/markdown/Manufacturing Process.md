@@ -1,0 +1,59 @@
+public:: true
+
+# Manufacturing Process
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:manufacturing-process",
+  "@type": "Page",
+  "vc:slug": "manufacturing-process",
+  "title": "Manufacturing Process",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 2
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:manufacturing-process",
+  "@type": "Class",
+  "label": "Manufacturing Process",
+  "definition": "A manufacturing process is a structured sequence of physical transformations — including machining, assembly, forming, joining, heat treatment, surface finishing, and inspection — applied to raw materials or sub-components to produce finished goods meeting specified tolerances, material properties, and functional requirements. Manufacturing processes are characterised by their tooling, cycle time, throughput, waste profile, and quality control mechanisms.",
+  "domain": "robotics",
+  "maturity": "mature",
+  "subClassOf": [{"@id": "urn:ngm:class:industrial-automation", "label": "IndustrialAutomation"}],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:industrial-robot", "label": "Industrial Robot"},
+      {"@id": "urn:ngm:class:sensor", "label": "Sensor"},
+      {"@id": "urn:ngm:class:quality-assurance", "label": "Quality Assurance"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:supply-chain", "label": "Supply Chain"},
+      {"@id": "urn:ngm:class:logistics-automation", "label": "Logistics Automation"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:industrial-inspection", "label": "Industrial Inspection"}
+    ]
+  },
+  "quality": 0.8
+}
+```
+
+- ### Definition
+  - A manufacturing process is any repeatable, controlled sequence of operations that converts inputs (raw materials, sub-assemblies, energy) into outputs (components, products) with defined geometric, material, and functional specifications. Processes are classified by the type of transformation: subtractive (machining, cutting), additive (3D printing, deposition), forming (stamping, forging, casting), joining (welding, adhesive bonding, fastening), and finishing (coating, heat treatment, surface grinding). Each process is characterised by achievable dimensional tolerances, surface roughness, material microstructure outcomes, cycle time, and applicable materials. [[Industrial Robot]] systems automate physically intensive process steps, and [[Sensor]] networks enable closed-loop process control.
+
+- ### Relationships
+  - Manufacturing processes depend on [[Industrial Robot]] platforms for welding, painting, assembly, and material handling at volume and precision beyond human capability. [[Sensor]] instrumentation provides in-process measurement for closed-loop control, and [[Quality Assurance]] systems perform sampling and inspection at defined process checkpoints. Completed components feed into [[Supply Chain]] logistics networks, and [[Logistics Automation]] systems manage the intralogistics flow between process stations. [[Industrial Inspection]] — using machine vision, coordinate measuring machines, and non-destructive testing — validates that process outputs meet specification before advancing to the next stage.
+
+- ### Content
+  - Manufacturing processes have evolved continuously since the Industrial Revolution, beginning with steam-powered mechanisation in the late 18th century. Frederick Taylor's scientific management (1911) and Henry Ford's moving assembly line (1913) introduced systematic process standardisation and flow production, reducing unit costs by orders of magnitude. The Toyota Production System (TPS), developed from the 1940s through the 1970s, added pull-based scheduling (kanban), continuous improvement (kaizen), and error-proofing (poka-yoke), establishing lean manufacturing as the dominant paradigm. Computer Numerical Control (CNC) machining centres, introduced in the 1960s, enabled programmatic precision machining of complex geometries without manual tool changes.
+
+  - Modern manufacturing processes integrate digital technology at multiple levels. Computer-Aided Manufacturing (CAM) generates CNC toolpaths directly from 3D CAD models. Supervisory Control and Data Acquisition (SCADA) and Manufacturing Execution Systems (MES) monitor and coordinate process parameters across production cells. Statistical Process Control (SPC) applies Shewhart charts and capability indices to detect process drift before defective output is produced. In automotive and aerospace manufacturing, finite element simulation predicts forming outcomes — springback in sheet metal, weld residual stress — enabling virtual process qualification that reduces physical tryout costs.
+
+  - Additive manufacturing (AM) has emerged as a complementary process for low-volume, high-complexity components. Selective Laser Sintering (SLS), Direct Metal Laser Sintering (DMLS), and Electron Beam Melting (EBM) produce near-net-shape metal parts with internal geometries impossible by subtractive means, enabling lightweighting through topology-optimised structures. Hybrid manufacturing — combining additive deposition with CNC machining in a single machine — addresses surface finish limitations of AM. Industry 4.0 frameworks integrate IoT sensor streams, [[Machine Learning]] anomaly detection, and digital twin models of individual machines into a cyber-physical production system architecture.
+
+  - As of 2024–2025, AI is transforming manufacturing process control through predictive quality systems that correlate in-process sensor signatures with final dimensional outcomes, enabling real-time process adjustment. Computer vision inspection systems — trained on synthetic defect datasets — replace or augment manual visual inspection on high-speed production lines. Collaborative robots (cobots) from Universal Robots, FANUC, and Kuka are being deployed in assembly tasks requiring dexterous force control alongside human operators. Digital thread initiatives — tracing each component from raw material through all process steps to service life — are becoming regulatory requirements in aerospace (FAA) and defence manufacturing, demanding data integration across previously siloed process records.
+

@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:climate-tech",
+  "title": "Climate Tech",
+  "slug": "climate-tech",
+  "public": true,
+  "classIri": "urn:ngm:class:climate-tech",
+  "domain": "infrastructure",
+  "definition": "Climate Tech encompasses the portfolio of technologies, platforms, and business models designed to mitigate greenhouse gas emissions, support climate adaptation, and accelerate the energy transition. It spans renewable energy generation, energy storage, carbon capture and removal, sustainable agriculture, climate risk analytics, and digital tools for emissions measurement and reporting. Climate Tech investment has grown into a distinct venture capital and corporate innovation category, underpinned by regulatory drivers, net-zero commitments, and the rapid cost-reduction curves of clean energy technologies.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sustainability",
+      "label": "Sustainability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:renewable-energy",
+        "label": "Renewable Energy"
+      },
+      {
+        "id": "urn:ngm:class:carbon-markets",
+        "label": "Carbon Markets"
+      },
+      {
+        "id": "urn:ngm:class:net-zero-targets",
+        "label": "Net Zero Targets"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:environmental-monitoring",
+        "label": "Environmental Monitoring"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      },
+      {
+        "id": "urn:ngm:class:sustainable-finance",
+        "label": "Sustainable Finance"
+      },
+      {
+        "id": "urn:ngm:class:carbon-credits",
+        "label": "Carbon Credits"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "carbon-credit-tracking",
+      "label": "Carbon Credit Tracking"
+    },
+    {
+      "slug": "carbon-footprint-measurement",
+      "label": "Carbon Footprint Measurement"
+    }
+  ]
+}

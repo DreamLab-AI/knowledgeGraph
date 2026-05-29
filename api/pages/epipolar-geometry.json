@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:epipolar-geometry",
+  "title": "Epipolar Geometry",
+  "slug": "epipolar-geometry",
+  "public": true,
+  "classIri": "urn:ngm:class:epipolar-geometry",
+  "domain": "spatial",
+  "definition": "Epipolar Geometry is the projective geometry of stereo vision, describing the geometric relationship between two camera views of the same 3D scene. It is encapsulated in the Fundamental Matrix (uncalibrated cameras) and Essential Matrix (calibrated cameras), which constrain the search for correspondences between images to one-dimensional epipolar lines rather than the full 2D image plane.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:stereo-vision",
+        "label": "Stereo Vision"
+      },
+      {
+        "id": "urn:ngm:class:structure-from-motion",
+        "label": "Structure-from-Motion"
+      },
+      {
+        "id": "urn:ngm:class:depth-estimation",
+        "label": "Depth Estimation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
+      },
+      {
+        "id": "urn:ngm:class:camera-intrinsics",
+        "label": "Camera Intrinsics"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "depth-estimation",
+      "label": "Depth Estimation"
+    },
+    {
+      "slug": "light-field",
+      "label": "Light field"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:digital-euro",
+  "title": "Digital Euro",
+  "slug": "digital-euro",
+  "public": true,
+  "classIri": "urn:ngm:class:digital-euro",
+  "domain": "blockchain",
+  "definition": "The digital euro is a prospective retail central bank digital currency (CBDC) to be issued by the European Central Bank, providing eurozone households and businesses with a risk-free digital form of public money usable for everyday payments alongside cash, without requiring a bank account at a commercial institution.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:central-bank-digital-currency",
+      "label": "Central Bank Digital Currency"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:cbdcs",
+        "label": "CBDCs"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:european-parliament",
+        "label": "European Parliament"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ecb-digital-euro-regulation",
+        "label": "ECB Digital Euro Regulation"
+      },
+      {
+        "id": "urn:ngm:class:ecb-digital-euro-regulation-proposal",
+        "label": "ECB Digital Euro Regulation Proposal"
+      },
+      {
+        "id": "urn:ngm:class:cbdc-frameworks",
+        "label": "CBDC Frameworks"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cbdc-frameworks",
+      "label": "CBDC Frameworks"
+    },
+    {
+      "slug": "cbdcs",
+      "label": "CBDCs"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

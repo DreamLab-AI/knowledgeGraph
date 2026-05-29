@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:gaussian-process",
+  "title": "Gaussian Process",
+  "slug": "gaussian-process",
+  "public": true,
+  "classIri": "urn:ngm:class:gaussian-process",
+  "domain": "ai",
+  "definition": "A Gaussian Process (GP) is a non-parametric Bayesian model that places a probability distribution over functions, fully specified by a mean function and a covariance (kernel) function, such that any finite collection of function values follows a joint Gaussian distribution. GPs provide principled uncertainty quantification alongside predictions and serve as flexible surrogate models in scientific computing and optimisation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bayesian-inference",
+      "label": "Bayesian Inference"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:bayesian-optimisation",
+        "label": "Bayesian Optimisation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gaussian-distribution",
+        "label": "Gaussian Distribution"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gaussian-process-regression",
+        "label": "Gaussian Process Regression"
+      },
+      {
+        "id": "urn:ngm:class:kernel-methods",
+        "label": "Kernel Methods"
+      },
+      {
+        "id": "urn:ngm:class:hamiltonian-monte-carlo",
+        "label": "Hamiltonian Monte Carlo"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "particle-filter",
+      "label": "Particle Filter"
+    },
+    {
+      "slug": "probabilistic-model",
+      "label": "Probabilistic Model"
+    },
+    {
+      "slug": "stochastic-process",
+      "label": "Stochastic Process"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:low-latency",
+  "title": "Low Latency",
+  "slug": "low-latency",
+  "public": true,
+  "classIri": "urn:ngm:class:low-latency",
+  "domain": "infrastructure",
+  "definition": "Low latency is an engineering design property characterising systems in which the time delay between an input event and the corresponding system response is minimised to a degree that satisfies real-time interaction requirements. Depending on context, low latency spans a range from sub-millisecond (high-frequency trading, industrial control) to tens of milliseconds (interactive video, XR presence), and is achieved through architectural choices including edge computing, hardware acceleration, optimised network protocols, and co-location.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:latency",
+      "label": "Latency"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:real-time",
+        "label": "Real Time"
+      },
+      {
+        "id": "urn:ngm:class:real-time-ai-inference",
+        "label": "Real-Time AI Inference"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality-xr",
+        "label": "Extended Reality (XR)"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:network-latency",
+        "label": "Network Latency"
+      },
+      {
+        "id": "urn:ngm:class:quality-of-service",
+        "label": "Quality Of Service"
+      },
+      {
+        "id": "urn:ngm:class:low-latency-computing",
+        "label": "Low-Latency Computing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-scalability",
+      "label": "Blockchain Scalability"
+    },
+    {
+      "slug": "infrastructure-layer",
+      "label": "Infrastructure Layer"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

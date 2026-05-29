@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:risk-management-framework",
+  "title": "Risk Management Framework",
+  "slug": "risk-management-framework",
+  "public": true,
+  "classIri": "urn:ngm:class:risk-management-framework",
+  "domain": "governance",
+  "definition": "A Risk Management Framework is a structured methodology for identifying, assessing, treating, and monitoring risks to an organisation's objectives, assets, or systems. It provides a repeatable process and governance structure that links risk appetite, control selection, and assurance activities into a coherent programme aligned with recognised standards such as ISO 31000, NIST RMF, or the NIST AI RMF.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:risk-management",
+      "label": "Risk Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:risk-mitigation",
+        "label": "Risk Mitigation"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:nist",
+        "label": "NIST"
+      },
+      {
+        "id": "urn:ngm:class:security-framework",
+        "label": "Security Framework"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      },
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      },
+      {
+        "id": "urn:ngm:class:threat-modelling",
+        "label": "Threat Modelling"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-adoption",
+      "label": "AI Adoption"
+    },
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    },
+    {
+      "slug": "threat-surface-map",
+      "label": "Threat Surface Map"
+    }
+  ]
+}

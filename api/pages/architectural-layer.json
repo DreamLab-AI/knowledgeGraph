@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:architectural-layer",
+  "title": "Architectural Layer",
+  "slug": "architectural-layer",
+  "public": true,
+  "classIri": "urn:ngm:class:architectural-layer",
+  "domain": "infrastructure",
+  "definition": "An architectural layer is a discrete horizontal stratum within a layered software or system architecture, responsible for a cohesive set of concerns and communicating only with adjacent layers through well-defined interfaces. Layered decomposition is a fundamental pattern in software architecture that promotes separation of concerns, replaceability of individual layers, and independent evolution of distinct system capabilities. Classic examples include the OSI network model's seven layers, the three-tier application architecture (presentation, logic, data), and the cloud-native separation of infrastructure, platform, and application layers.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:software-architecture",
+      "label": "Software Architecture"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:infrastructure-layer",
+        "label": "Infrastructure Layer"
+      },
+      {
+        "id": "urn:ngm:class:network-layer",
+        "label": "Network Layer"
+      },
+      {
+        "id": "urn:ngm:class:service-layer",
+        "label": "Service Layer"
+      },
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "id": "urn:ngm:class:hardware-abstraction",
+        "label": "Hardware Abstraction"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:system-architecture",
+        "label": "System Architecture"
+      },
+      {
+        "id": "urn:ngm:class:api-standard",
+        "label": "API Standard"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "data-layer",
+      "label": "Data Layer"
+    },
+    {
+      "slug": "network-layer",
+      "label": "Network Layer"
+    }
+  ]
+}

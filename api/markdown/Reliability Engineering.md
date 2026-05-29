@@ -1,0 +1,60 @@
+public:: true
+
+# Reliability Engineering
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:reliability-engineering",
+  "@type": "Page",
+  "vc:slug": "reliability-engineering",
+  "title": "Reliability Engineering",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 2
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:reliability-engineering",
+  "@type": "Class",
+  "label": "Reliability Engineering",
+  "definition": "Reliability engineering is the discipline concerned with the systematic design, analysis, and verification of systems to ensure they perform their required functions for a specified period under stated conditions without failure. It applies probabilistic and statistical methods — including failure mode analysis, fault tree analysis, and accelerated life testing — to quantify and improve the dependability of hardware, software, and socio-technical systems.",
+  "domain": "infrastructure",
+  "maturity": "mature",
+  "subClassOf": [
+    {"@id": "urn:ngm:class:safety-engineering", "label": "Safety Engineering"}
+  ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:fault-tree-analysis", "label": "Fault Tree Analysis"},
+      {"@id": "urn:ngm:class:fmea", "label": "FMEA"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"},
+      {"@id": "urn:ngm:class:redundancy", "label": "Redundancy"},
+      {"@id": "urn:ngm:class:site-reliability-engineering", "label": "Site Reliability Engineering"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"}
+    ]
+  },
+  "quality": 0.8
+}
+```
+
+- ### Definition
+  - Reliability engineering is the engineering discipline that applies probabilistic analysis, structured failure analysis methods including [[Fault Tree Analysis]] and [[FMEA]], and design principles to ensure systems meet specified dependability requirements throughout their operational life.
+
+- ### Relationships
+  - Reliability engineering uses [[Fault Tree Analysis]] and [[FMEA]] as its primary analytical tools for systematic failure identification. [[Redundancy]] is a key design strategy it specifies to achieve [[Fault Tolerance]] targets. Its methods feed directly into [[Risk Assessment]] activities. In software-intensive systems, modern practice has evolved into [[Site Reliability Engineering]], which applies reliability principles to cloud services using error budgets and SLOs.
+
+- ### Content
+  - Reliability engineering emerged as a formal discipline after World War II, driven by the US military's concern about the poor reliability of complex electronic systems. A 1950 advisory group on reliability of electronic equipment (AGREE) published a foundational report in 1957. The methodology was further developed through the US space and nuclear programmes of the 1960s, which required rigorous quantification of failure probabilities for safety-critical systems. Military standards such as MIL-HDBK-217 for electronic component reliability prediction and IEC 61508 for functional safety became the industry's technical foundations.
+
+  - Reliability engineering quantifies dependability using metrics such as Mean Time Between Failures (MTBF), Mean Time to Failure (MTTF), Mean Time to Repair (MTTR), and availability (ratio of uptime to total time). Fault Tree Analysis (FTA) constructs a deductive Boolean logic tree from a top-level failure event down to basic component faults, enabling probability calculations using component-level failure rate data. FMEA takes the complementary inductive approach, systematically tabulating every component failure mode and tracing its effect upward through the system. Accelerated Life Testing (ALT) uses elevated stress conditions (temperature, voltage, vibration) to precipitate failures in compressed time, fitting statistical life models (Weibull, lognormal) to extrapolate field lifetimes.
+
+  - Reliability engineering matters because the economic and safety consequences of system failures are enormous. In aerospace, automotive, and medical device sectors it is a regulatory requirement embedded in standards such as DO-178C (aircraft software), ISO 26262 (automotive), and IEC 62061 (machinery). For AI systems deployed in safety-critical roles, reliability analysis is increasingly required to bound failure rates of perception and decision pipelines. In cloud infrastructure, the Site Reliability Engineering (SRE) discipline pioneered by Google applies reliability engineering concepts — error budgets, SLOs, chaos engineering — to software services at internet scale.
+
+  - As of 2024-2025, reliability engineering is adapting to AI-integrated systems where traditional component-level models are insufficient because neural network behaviour is non-deterministic and data-dependent. Research groups and standards bodies including IEC TC 56 and ISO/IEC JTC 1/SC 42 are developing reliability standards specifically for AI components. Predictive maintenance using sensor data and machine learning is expanding the toolkit from post-hoc failure analysis to real-time reliability state estimation. The convergence of reliability engineering and AI safety is producing new frameworks for verifying the dependability of autonomous systems in automotive and aviation certification programmes.

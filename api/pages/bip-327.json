@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:bip-327",
+  "title": "BIP-327",
+  "slug": "bip-327",
+  "public": true,
+  "classIri": "urn:ngm:class:bip-327",
+  "domain": "blockchain",
+  "definition": "BIP-327 is a Bitcoin Improvement Proposal that specifies MuSig2, a two-round multi-party Schnorr signature protocol that enables a group of n signers to collaboratively produce a single aggregated Schnorr signature indistinguishable from a single-party signature. BIP-327 provides a cryptographically secure specification for key aggregation and signature combination compatible with BIP-340 Schnorr signatures and the Taproot upgrade, enabling private and efficient threshold custody and collaborative signing workflows on Bitcoin.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bitcoin-improvement-proposals",
+      "label": "Bitcoin Improvement Proposals"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:multisignature",
+        "label": "Multisignature"
+      },
+      {
+        "id": "urn:ngm:class:multisignature-wallets",
+        "label": "Multisignature Wallets"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:schnorr-signature",
+        "label": "Schnorr Signature"
+      },
+      {
+        "id": "urn:ngm:class:taproot",
+        "label": "Taproot"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bip-340-schnorr-keypair",
+        "label": "BIP-340 Schnorr Keypair"
+      },
+      {
+        "id": "urn:ngm:class:bip-342",
+        "label": "BIP-342"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "multi-sig-governance",
+      "label": "Multi Sig Governance"
+    },
+    {
+      "slug": "taproot-assets",
+      "label": "Taproot Assets"
+    }
+  ]
+}

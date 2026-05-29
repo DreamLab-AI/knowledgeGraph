@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:cad-software",
+  "title": "CAD Software",
+  "slug": "cad-software",
+  "public": true,
+  "classIri": "urn:ngm:class:cad-software",
+  "domain": "spatial",
+  "definition": "Computer-Aided Design (CAD) software is a category of application that enables engineers, architects, and designers to create, modify, analyse, and optimise two-dimensional drawings and three-dimensional geometric models of physical artefacts and structures. CAD tools encode geometry using boundary representation (B-rep) or constructive solid geometry (CSG) methods, support parametric constraint-based modelling, and produce outputs usable in manufacturing, simulation, and visualisation pipelines.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:design-software",
+      "label": "Design Software"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:parametric-modeling",
+        "label": "Parametric Modeling"
+      },
+      {
+        "id": "urn:ngm:class:manufacturing-process",
+        "label": "Manufacturing Process"
+      },
+      {
+        "id": "urn:ngm:class:product-design",
+        "label": "Product Design"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:mesh-data",
+        "label": "Mesh Data"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:manufacturing-automation",
+        "label": "Manufacturing Automation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "collision-detection",
+      "label": "Collision Detection"
+    },
+    {
+      "slug": "graphics-api",
+      "label": "Graphics API"
+    }
+  ]
+}

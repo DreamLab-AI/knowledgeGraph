@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:capacity-planning",
+  "title": "Capacity Planning",
+  "slug": "capacity-planning",
+  "public": true,
+  "classIri": "urn:ngm:class:capacity-planning",
+  "domain": "infrastructure",
+  "definition": "Capacity planning is the process of determining the production, infrastructure, or service capacity required by an organisation to meet changing demand over a defined time horizon, balancing the cost of over-provisioned resources against the risk of under-provisioned systems that cannot meet service-level objectives. In technology contexts, capacity planning encompasses compute, storage, network bandwidth, and human resources, employing demand forecasting models, utilisation metrics, and growth projections to derive procurement and scaling roadmaps. In manufacturing, the same principles apply to machine-hours, floor space, and workforce shifts.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cloud-infrastructure",
+      "label": "Cloud Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:demand-forecasting",
+        "label": "Demand Forecasting"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cloud-native",
+        "label": "Cloud Native"
+      },
+      {
+        "id": "urn:ngm:class:scalability-pattern",
+        "label": "Scalability Pattern"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "telemetry-and-analytics",
+      "label": "Telemetry & Analytics"
+    },
+    {
+      "slug": "time-series-forecasting",
+      "label": "Time Series Forecasting"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "id": "urn:visionflow:page:multi-step-reasoning",
+  "title": "Multi-Step Reasoning",
+  "slug": "multi-step-reasoning",
+  "public": true,
+  "classIri": "urn:ngm:class:multi-step-reasoning",
+  "domain": "ai",
+  "definition": "Multi-step reasoning is the capacity of an AI system to solve problems that require chaining several intermediate inferences, rather than mapping an input directly to an answer in a single step. It encompasses decomposing a problem into sub-problems, maintaining and updating intermediate state, and composing partial results into a final solution. In large language models it is elicited through chain-of-thought prompting, tool use, and search over reasoning paths, and it is a primary differentiator between shallow pattern completion and genuine problem-solving competence.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:reasoning",
+      "label": "Reasoning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:reasoning-engine",
+        "label": "Reasoning Engine"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:chain-of-thought",
+        "label": "Chain of Thought"
+      },
+      {
+        "id": "urn:ngm:class:chain-of-thought-prompting",
+        "label": "Chain-of-Thought Prompting"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:llm-agents",
+        "label": "LLM Agents"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "function-calling",
+      "label": "Function Calling"
+    },
+    {
+      "slug": "lang-chain",
+      "label": "LangChain"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "id": "urn:visionflow:page:forensic-investigation",
+  "title": "Forensic Investigation",
+  "slug": "forensic-investigation",
+  "public": true,
+  "classIri": "urn:ngm:class:forensic-investigation",
+  "domain": "security",
+  "definition": "Forensic investigation is the systematic collection, preservation, examination, and analysis of evidence \u2014 digital, physical, or financial \u2014 using scientifically validated methods that maintain legal admissibility and chain of custody, with the purpose of reconstructing events, attributing responsibility, and supporting judicial or regulatory proceedings. In digital contexts it encompasses disk imaging, memory acquisition, network traffic analysis, and log correlation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-forensics",
+      "label": "Digital Forensics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      },
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:chain-of-custody",
+        "label": "Chain of Custody"
+      },
+      {
+        "id": "urn:ngm:class:evidence-collection",
+        "label": "Evidence Collection"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-forensics-framework",
+        "label": "Digital Forensics Framework"
+      },
+      {
+        "id": "urn:ngm:class:digital-evidence-chain-of-custody",
+        "label": "Digital Evidence Chain of Custody"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "access-control-system",
+      "label": "Access Control System"
+    },
+    {
+      "slug": "digital-evidence-chain-of-custody",
+      "label": "Digital Evidence Chain of Custody"
+    }
+  ]
+}

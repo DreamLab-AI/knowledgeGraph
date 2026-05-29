@@ -1,0 +1,14 @@
+- ### Definition
+  - Low-latency computing is the engineering practice of minimising response delay and timing variance across the full request path, prioritising worst-case tail latency over average throughput.
+
+- ### Relationships
+  - Low-Latency Computing is a subclass of [[Distributed Computing]] and frequently uses [[Edge Computing]] to position computation physically close to data sources and consumers. It enables [[Real-Time Rendering]] for interactive media and control loops. It relates to [[Cloud Computing]] as a complementary and sometimes competing deployment model, and depends on careful tuning of the underlying [[Network Protocol]] stack.
+
+- ### Content
+  - The fundamental challenge of low-latency computing is that delay accumulates across many independent layers — network propagation, serialisation, queueing, context switches, garbage collection pauses, and cache misses — each contributing jitter that compounds in the tail of the latency distribution. Practitioners therefore measure and optimise percentiles (p99, p99.9) rather than means, because a service that is fast on average but occasionally slow can be unusable for real-time workloads.
+
+  - Networking is often the dominant cost. Techniques such as kernel-bypass (DPDK, RDMA, io_uring), busy-polling instead of interrupt-driven I/O, and colocating producers and consumers in the same rack or availability zone reduce propagation and stack-traversal overhead. For geographically distributed systems, the physical speed of light imposes a hard floor, which is why latency-sensitive deployments push computation toward the edge rather than centralising it in distant data centres.
+
+  - Within a single machine, deterministic performance requires eliminating unpredictable pauses. Lock-free and wait-free data structures avoid contention stalls; pre-allocated memory pools and arena allocators avoid garbage-collection or malloc jitter; CPU pinning, NUMA-aware placement, and isolated cores prevent the scheduler from migrating latency-critical threads. Mechanical-sympathy programming — writing code that respects cache lines, branch prediction, and memory prefetching — is a hallmark of the discipline.
+
+  - Low-latency computing underpins markets where microseconds carry economic value (algorithmic trading), human-perceptual thresholds (cloud gaming and XR streaming, where motion-to-photon latency above roughly twenty milliseconds breaks immersion), and safety-critical control (robotics and industrial automation). As AI inference moves into interactive loops, low-latency serving of model outputs has become a first-class concern, blending classical systems engineering with model-quantisation and batching strategies that trade marginal accuracy for predictable speed.

@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:multi-view-stereo",
+  "title": "Multi-View Stereo",
+  "slug": "multi-view-stereo",
+  "public": true,
+  "classIri": "urn:ngm:class:multi-view-stereo",
+  "domain": "spatial",
+  "definition": "Multi-View Stereo (MVS) is a computer vision technique that reconstructs dense 3D geometry from a set of overlapping 2D images captured from multiple camera positions. It extends traditional stereo matching by leveraging consistency across many viewpoints to estimate depth and surface detail at high resolution. MVS is a foundational component of photogrammetry pipelines, producing point clouds and textured meshes from photograph collections.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:photogrammetry",
+      "label": "Photogrammetry"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:point-cloud-generation",
+        "label": "Point Cloud Generation"
+      },
+      {
+        "id": "urn:ngm:class:3-d-scanning",
+        "label": "3D Scanning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:depth-estimation",
+        "label": "Depth Estimation"
+      },
+      {
+        "id": "urn:ngm:class:stereo-vision",
+        "label": "Stereo Vision"
+      },
+      {
+        "id": "urn:ngm:class:structure-from-motion",
+        "label": "Structure-from-Motion"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:point-cloud-processing",
+        "label": "Point Cloud Processing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "depth-estimation",
+      "label": "Depth Estimation"
+    },
+    {
+      "slug": "scene-capture-and-reconstruction",
+      "label": "Scene Capture and Reconstruction"
+    }
+  ]
+}

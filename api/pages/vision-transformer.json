@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:vision-transformer",
+  "title": "Vision Transformer",
+  "slug": "vision-transformer",
+  "public": true,
+  "classIri": "urn:ngm:class:vision-transformer",
+  "domain": "ai",
+  "definition": "The Vision Transformer (ViT) is a neural network architecture that applies the transformer self-attention mechanism directly to sequences of fixed-size image patches, treating each patch embedding as a token analogous to a word in natural-language processing. Introduced by Dosovitskiy et al. (2020), ViT demonstrated that pure attention-based models can match or exceed convolutional networks on image classification benchmarks when pre-trained on sufficiently large datasets.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.85,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:multimodal-learning",
+        "label": "Multimodal Learning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-transformer",
+        "label": "Diffusion Transformer"
+      },
+      {
+        "id": "urn:ngm:class:contrastive-learning",
+        "label": "Contrastive Learning"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "attention",
+      "label": "Attention"
+    },
+    {
+      "slug": "transformers",
+      "label": "Transformers"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    }
+  ]
+}

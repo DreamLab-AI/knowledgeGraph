@@ -1,0 +1,58 @@
+public:: true
+
+# Compliance
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:compliance",
+  "@type": "Page",
+  "vc:slug": "compliance",
+  "title": "Compliance",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 2
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:compliance",
+  "@type": "Class",
+  "label": "Compliance",
+  "definition": "Compliance is the organisational practice of adhering to laws, regulations, standards, and internal policies that govern the conduct of systems, processes, and personnel. It encompasses the identification of applicable obligations, the implementation of controls to satisfy them, and continuous monitoring to verify ongoing conformance.",
+  "domain": "governance",
+  "maturity": "mature",
+  "subClassOf": [{"@id": "urn:ngm:class:governance", "label": "Governance"}],
+  "relations": {
+    "requires": [
+      {"@id": "urn:ngm:class:audit", "label": "Audit"},
+      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"},
+      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:governance-framework", "label": "Governance Framework"},
+      {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"}
+    ]
+  },
+  "quality": 0.8
+}
+```
+
+- ### Definition
+  - [[Compliance]] is the systematic practice of ensuring that an organisation's operations, technologies, and personnel conform to applicable laws, regulations, standards, and internal policies. It spans regulatory obligations such as [[GDPR]] and [[ISO]] frameworks, industry-specific mandates, and voluntary codes of conduct. Effective compliance programmes integrate [[Risk Assessment]], [[Audit]], and continuous monitoring to maintain demonstrable conformance across the full lifecycle of a system or service.
+
+- ### Relationships
+  - Compliance depends on [[Governance Framework]] to define the authority structures and accountability mechanisms under which obligations are identified and assigned. It employs [[Compliance Framework]] to operationalise requirements into concrete controls, and relies on [[Audit Trail]] to provide the evidentiary record needed by regulators and auditors. [[Data Protection]] obligations such as [[GDPR]] form a large and growing subset of compliance requirements in digital and AI contexts.
+
+- ### Content
+  - Compliance as a discipline traces its modern form to post-war financial regulation, expanding dramatically in the 1990s and 2000s with Sarbanes-Oxley (2002), Basel II, and a wave of data-protection legislation. The term has since broadened to encompass environmental, health-and-safety, cybersecurity, and AI-specific requirements, reflecting the expanding reach of regulatory oversight into technology-intensive industries.
+
+  - At a technical level, compliance management relies on control frameworks that map regulatory articles to specific procedural or technical controls. Tools such as governance-risk-compliance (GRC) platforms automate evidence collection, track control status, and generate reports for internal and external stakeholders. Automated [[Audit]] logging and immutable [[Audit Trail]] mechanisms are foundational technical enablers of defensible compliance postures.
+
+  - In practice, compliance programmes operate across legal, operational, and technology functions. Specialised roles — compliance officers, data protection officers, and information security managers — hold accountability for particular regulatory domains. Standards bodies such as ISO and NIST publish widely adopted control catalogues, while sector regulators (FCA, FDA, SEC) issue binding rules and enforcement guidance that shape programme priorities.
+
+  - As of 2024–2025, compliance pressures have intensified around AI systems, with the EU AI Act introducing tiered obligations based on risk classification and mandating conformity assessments for high-risk applications. Supply-chain due-diligence requirements and ESG-related disclosure obligations are also expanding compliance scope significantly, driving demand for automated [[Compliance Monitoring]] tooling and cross-border regulatory harmonisation efforts.

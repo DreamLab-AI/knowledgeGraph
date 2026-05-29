@@ -1,0 +1,58 @@
+{
+  "id": "urn:visionflow:page:ghg-protocol-corporate-standard",
+  "title": "GHG Protocol Corporate Standard",
+  "slug": "ghg-protocol-corporate-standard",
+  "public": true,
+  "classIri": "urn:ngm:class:ghg-protocol-corporate-standard",
+  "domain": "sustainability",
+  "definition": "The GHG Protocol Corporate Accounting and Reporting Standard is the most widely used international framework for measuring and reporting an organisation's greenhouse-gas emissions. Developed by the World Resources Institute and the World Business Council for Sustainable Development, it organises emissions into Scope 1 (direct), Scope 2 (purchased energy), and Scope 3 (value-chain) categories, establishing consistent boundaries, accounting principles, and disclosure rules. It underpins corporate climate reporting, science-based targets, and most national and regional emissions-disclosure regulations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:carbon-accounting",
+        "label": "Carbon Accounting"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:carbon-offset",
+        "label": "Carbon Offset"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "carbon-neutral-blockchain",
+      "label": "Carbon Neutral Blockchain"
+    },
+    {
+      "slug": "esg-reporting",
+      "label": "ESG Reporting"
+    }
+  ]
+}

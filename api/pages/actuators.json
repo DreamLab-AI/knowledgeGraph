@@ -1,0 +1,91 @@
+{
+  "id": "urn:visionflow:page:actuators",
+  "title": "Actuators",
+  "slug": "actuators",
+  "public": true,
+  "classIri": "urn:ngm:class:actuators",
+  "domain": "robotics",
+  "definition": "Actuators are physical devices that convert an electrical, hydraulic, or pneumatic control signal into mechanical motion or force, enabling a control system to produce a desired physical effect in the world. They are the output components of robotic and cyber-physical systems, spanning technologies including servo motors, pneumatic cylinders, hydraulic actuators, and piezoelectric elements, each offering different trade-offs in force output, speed, precision, and energy efficiency.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robot-component",
+      "label": "Robot Component"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:robot-manipulation",
+        "label": "Robot Manipulation"
+      },
+      {
+        "id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:servo-motor",
+        "label": "Servo Motor"
+      },
+      {
+        "id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:robot",
+        "label": "Robot"
+      },
+      {
+        "id": "urn:ngm:class:cyber-physical-systems",
+        "label": "Cyber Physical Systems"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      },
+      {
+        "id": "urn:ngm:class:robot-actuator",
+        "label": "Robot Actuator"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "aerial-robot",
+      "label": "Aerial Robot"
+    },
+    {
+      "slug": "autonomous-robot",
+      "label": "Autonomous Robot"
+    },
+    {
+      "slug": "control-system",
+      "label": "Control System"
+    },
+    {
+      "slug": "embodied-minds",
+      "label": "Embodied Minds"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:bip-process",
+  "title": "BIP Process",
+  "slug": "bip-process",
+  "public": true,
+  "classIri": "urn:ngm:class:bip-process",
+  "domain": "blockchain",
+  "definition": "The Bitcoin Improvement Proposal (BIP) process is the standardised social and technical workflow by which proposed changes to the Bitcoin protocol, best practices, and informational standards are drafted, reviewed, debated, and either accepted or rejected by the Bitcoin developer community. It defines the lifecycle of a proposal from Draft through Proposed, Final, Active, Withdrawn, or Rejected, providing a structured mechanism for decentralised protocol governance without a centralised authority.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:bitcoin-improvement-proposals",
+        "label": "Bitcoin Improvement Proposals"
+      },
+      {
+        "id": "urn:ngm:class:nakamoto-consensus",
+        "label": "Nakamoto Consensus"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:bitcoin-core",
+        "label": "Bitcoin Core"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bip-327",
+        "label": "BIP-327"
+      },
+      {
+        "id": "urn:ngm:class:bip-342",
+        "label": "BIP-342"
+      },
+      {
+        "id": "urn:ngm:class:nakamoto-coefficient",
+        "label": "Nakamoto Coefficient"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-technical-overview",
+      "label": "Bitcoin Technical Overview"
+    },
+    {
+      "slug": "decentralized-governance",
+      "label": "Decentralized Governance"
+    }
+  ]
+}

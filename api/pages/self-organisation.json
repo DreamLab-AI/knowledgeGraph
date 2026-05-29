@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:self-organisation",
+  "title": "Self-Organisation",
+  "slug": "self-organisation",
+  "public": true,
+  "classIri": "urn:ngm:class:self-organisation",
+  "domain": "ai",
+  "definition": "Self-organisation is the spontaneous emergence of order, structure, or pattern in a complex system without external direction, arising purely from local interactions among components. It operates through positive and negative feedback mechanisms that amplify or dampen perturbations, leading to globally coherent behaviour from decentralised, local rules.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:complex-systems",
+      "label": "Complex Systems"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:agent-based-modelling",
+        "label": "Agent-Based Modelling"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:emergence",
+        "label": "Emergence"
+      },
+      {
+        "id": "urn:ngm:class:swarm-intelligence",
+        "label": "Swarm Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:chaos-theory",
+        "label": "Chaos Theory"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "emergence",
+      "label": "Emergence"
+    },
+    {
+      "slug": "feedback-loop",
+      "label": "Feedback Loop"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:broadcast-production",
+  "title": "Broadcast Production",
+  "slug": "broadcast-production",
+  "public": true,
+  "classIri": "urn:ngm:class:broadcast-production",
+  "domain": "media",
+  "definition": "Broadcast Production is the end-to-end process of creating, processing, and distributing audio-visual content for transmission to audiences over television, radio, or internet broadcast channels, encompassing pre-production planning, live or recorded acquisition, signal processing, editing, graphics integration, encoding, and playout to distribution networks. It operates under stringent real-time constraints and technical quality standards defined by regulatory and industry bodies.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:production-pipeline",
+      "label": "Production Pipeline"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:video-streaming",
+        "label": "Video Streaming"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:video-codec",
+        "label": "Video Codec"
+      },
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:video-encoding",
+        "label": "Video Encoding"
+      },
+      {
+        "id": "urn:ngm:class:encoder",
+        "label": "Encoder"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "id": "urn:ngm:class:asset-management",
+        "label": "Asset Management"
+      },
+      {
+        "id": "urn:ngm:class:audio-processing",
+        "label": "Audio Processing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "light-field",
+      "label": "Light field"
+    },
+    {
+      "slug": "virtual-production-vp",
+      "label": "Virtual Production (VP)"
+    }
+  ]
+}

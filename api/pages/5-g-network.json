@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:5-g-network",
+  "title": "5G Network",
+  "slug": "5-g-network",
+  "public": true,
+  "classIri": "urn:ngm:class:5-g-network",
+  "domain": "infrastructure",
+  "definition": "A 5G Network is the complete physical and logical telecommunications infrastructure that delivers 5G services, comprising gNB base stations with 5G NR radio access, a cloud-native 5G Core with service-based architecture network functions (AMF, SMF, UPF, etc.), transport networks interconnecting radio and core, and operations support systems. It supports network slicing to virtualise multiple logical networks over shared physical resources and integrates multi-access edge computing nodes for low-latency application hosting. 5G Networks form the foundational connectivity layer for advanced XR, industrial IoT, and autonomous system deployments.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:telecommunications-infrastructure",
+      "label": "Telecommunications Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:5-g-connectivity",
+        "label": "5G Connectivity"
+      },
+      {
+        "id": "urn:ngm:class:multi-access-edge-computing",
+        "label": "MultiAccessEdgeComputing"
+      },
+      {
+        "id": "urn:ngm:class:io-t-infrastructure",
+        "label": "IoT Infrastructure"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:network-function-virtualization",
+        "label": "Network Function Virtualization"
+      },
+      {
+        "id": "urn:ngm:class:network-architecture",
+        "label": "Network Architecture"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:3-gpp",
+        "label": "3GPP"
+      },
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:6-g-network-slice",
+        "label": "6G Network Slice"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    },
+    {
+      "slug": "infrastructure-layer",
+      "label": "Infrastructure Layer"
+    }
+  ]
+}

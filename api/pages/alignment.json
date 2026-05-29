@@ -1,0 +1,75 @@
+{
+  "id": "urn:visionflow:page:alignment",
+  "title": "Alignment",
+  "slug": "alignment",
+  "public": true,
+  "classIri": "urn:ngm:class:alignment",
+  "domain": "ai",
+  "definition": "The technical and philosophical research programme aimed at ensuring that AI systems reliably pursue goals, exhibit behaviours, and produce outcomes that accord with human values, intentions, and oversight requirements. Alignment addresses the fundamental challenge that learned objectives may diverge from intended objectives\u2014a problem that becomes increasingly consequential as AI systems grow more capable and autonomous. The field encompasses specification of human preferences, training methods that instil those preferences, and verification techniques that confirm alignment properties are preserved at deployment.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-alignment",
+      "label": "AI Alignment"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
+      },
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-safety-research",
+        "label": "AI Safety Research"
+      },
+      {
+        "id": "urn:ngm:class:frontier-ai",
+        "label": "Frontier AI"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "autonomy-level",
+      "label": "Autonomy Level"
+    },
+    {
+      "slug": "evaluation-benchmarks-and-leaderboards",
+      "label": "Evaluation benchmarks and leaderboards"
+    },
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    }
+  ]
+}

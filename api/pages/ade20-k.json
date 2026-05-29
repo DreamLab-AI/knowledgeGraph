@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:ade20-k",
+  "title": "ADE20K",
+  "slug": "ade20-k",
+  "public": true,
+  "classIri": "urn:ngm:class:ade20-k",
+  "domain": "ai",
+  "definition": "ADE20K is a large-scale image segmentation dataset containing over 25,000 images annotated with 150 semantic categories covering both indoor and outdoor scenes, released by MIT's Computer Science and Artificial Intelligence Laboratory (CSAIL) in 2017. It provides pixel-level semantic, instance, and part-level annotations that enable training and benchmarking of scene parsing and semantic segmentation models. ADE20K serves as the foundational benchmark for the ImageNet Scene Parsing Challenge and has driven significant advances in dense prediction architectures.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:benchmarks",
+      "label": "Benchmarks"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:semantic-segmentation",
+        "label": "Semantic Segmentation"
+      },
+      {
+        "id": "urn:ngm:class:panoptic-segmentation",
+        "label": "Panoptic Segmentation"
+      },
+      {
+        "id": "urn:ngm:class:instance-segmentation",
+        "label": "Instance Segmentation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:data-annotation",
+        "label": "Data Annotation"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:coco-dataset",
+        "label": "COCO Dataset"
+      },
+      {
+        "id": "urn:ngm:class:image-segmentation",
+        "label": "Image Segmentation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "image-segmentation",
+      "label": "Image Segmentation"
+    },
+    {
+      "slug": "segmentation-and-identification",
+      "label": "Segmentation and Identification"
+    }
+  ]
+}

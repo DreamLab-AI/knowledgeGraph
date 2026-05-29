@@ -1,0 +1,62 @@
+{
+  "id": "urn:visionflow:page:timestamp-service",
+  "title": "Timestamp Service",
+  "slug": "timestamp-service",
+  "public": true,
+  "classIri": "urn:ngm:class:timestamp-service",
+  "domain": "infrastructure",
+  "definition": "A timestamp service issues verifiable evidence that a particular piece of data existed at or before a specific point in time, without revealing the data's contents. It accepts the hash of a document, binds it to a trusted time reference, and returns a signed timestamp token that anyone can later verify. Timestamp services support non-repudiation, intellectual-property priority, regulatory record-keeping, and long-term signature validation, and may be anchored in a trusted timestamp authority or in a public blockchain for trust-minimised proof of existence.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:timestamping-service",
+      "label": "Timestamping Service"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:timestamp-authority",
+        "label": "Timestamp Authority"
+      },
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:trusted-timestamping",
+        "label": "Trusted Timestamping"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "data-provenance",
+      "label": "Data Provenance"
+    },
+    {
+      "slug": "reputation-data",
+      "label": "Reputation Data"
+    }
+  ]
+}

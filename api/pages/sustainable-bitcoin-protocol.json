@@ -1,0 +1,65 @@
+{
+  "id": "urn:visionflow:page:sustainable-bitcoin-protocol",
+  "title": "Sustainable Bitcoin Protocol",
+  "slug": "sustainable-bitcoin-protocol",
+  "public": true,
+  "classIri": "urn:ngm:class:sustainable-bitcoin-protocol",
+  "domain": "blockchain",
+  "definition": "The Sustainable Bitcoin Protocol (SBP) is a certification and tokenisation framework that attests the use of renewable or stranded energy in Bitcoin mining and issues on-chain Sustainable Bitcoin Certificates to verified miners. It enables green bitcoin premiums and provides institutional investors with auditable environmental provenance for Bitcoin holdings.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain-sustainability",
+      "label": "Blockchain Sustainability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:sustainable-bitcoin-certificates",
+        "label": "Sustainable Bitcoin Certificates"
+      },
+      {
+        "id": "urn:ngm:class:renewable-energy-certificates",
+        "label": "Renewable Energy Certificates"
+      },
+      {
+        "id": "urn:ngm:class:green-mining-pool",
+        "label": "Green Mining Pool"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:stranded-energy-monetisation",
+        "label": "Stranded Energy Monetisation"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-environmental-issues",
+        "label": "Bitcoin Environmental Issues"
+      },
+      {
+        "id": "urn:ngm:class:carbon-neutral-blockchain",
+        "label": "Carbon Neutral Blockchain"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-environmental-issues",
+      "label": "Bitcoin Environmental Issues"
+    }
+  ]
+}

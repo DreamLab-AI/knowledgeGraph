@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:ieee",
+  "title": "IEEE",
+  "slug": "ieee",
+  "public": true,
+  "classIri": "urn:ngm:class:ieee",
+  "domain": "infrastructure",
+  "definition": "The Institute of Electrical and Electronics Engineers (IEEE) is the world's largest technical professional organisation, comprising over 400,000 members across 160 countries, and the primary body responsible for developing and maintaining technical standards in electrical engineering, electronics, telecommunications, computer science, and related disciplines. IEEE standards govern wireless networking (IEEE 802.11), Ethernet (IEEE 802.3), time-sensitive networking, and hundreds of other foundational technologies.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:standards-body",
+      "label": "Standards Body"
+    },
+    {
+      "id": "urn:ngm:class:standardization-bodies",
+      "label": "Standardization Bodies"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:ieee-802-11",
+        "label": "IEEE 802.11"
+      },
+      {
+        "id": "urn:ngm:class:ieee-802-3",
+        "label": "IEEE 802.3"
+      },
+      {
+        "id": "urn:ngm:class:ieee-802-15-4",
+        "label": "IEEE 802.15.4"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:technical-standards",
+        "label": "Technical Standards"
+      },
+      {
+        "id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "camera",
+      "label": "Camera"
+    },
+    {
+      "slug": "decentralized-storage",
+      "label": "Decentralized Storage"
+    },
+    {
+      "slug": "diagrams-as-code",
+      "label": "Diagrams as Code"
+    },
+    {
+      "slug": "digital-infrastructure",
+      "label": "Digital Infrastructure"
+    },
+    {
+      "slug": "digital-twin-framework",
+      "label": "Digital Twin Framework"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "feed-forward-network",
+      "label": "Feed Forward Network"
+    }
+  ]
+}

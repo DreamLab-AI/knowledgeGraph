@@ -1,0 +1,62 @@
+{
+  "id": "urn:visionflow:page:state-observer",
+  "title": "State Observer",
+  "slug": "state-observer",
+  "public": true,
+  "classIri": "urn:ngm:class:state-observer",
+  "domain": "robotics",
+  "definition": "A state observer is a dynamical system that estimates the internal state of a controlled plant from its measured inputs and outputs when the full state cannot be directly sensed. By running a model of the plant in parallel and correcting it with the measurement error, an observer reconstructs unmeasured variables for use in feedback control. Classical examples include the Luenberger observer for deterministic systems and the Kalman filter for stochastic systems, making observers essential to state-feedback control of partially observable processes.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:state-estimation",
+      "label": "State Estimation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      },
+      {
+        "id": "urn:ngm:class:optimal-control",
+        "label": "Optimal Control"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "control-algorithm",
+      "label": "Control Algorithm"
+    },
+    {
+      "slug": "velocity-control",
+      "label": "VelocityControl"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:sanctions-compliance",
+  "title": "Sanctions Compliance",
+  "slug": "sanctions-compliance",
+  "public": true,
+  "classIri": "urn:ngm:class:sanctions-compliance",
+  "domain": "governance",
+  "definition": "Sanctions compliance is the set of controls organisations implement to avoid transacting with individuals, entities, jurisdictions, or assets prohibited by sanctions regimes such as those administered by the US OFAC, the EU, the UK OFSI, and the UN. It involves screening counterparties against sanctions lists, monitoring transactions for prohibited patterns, blocking or freezing prohibited dealings, and maintaining auditable records. In digital-asset markets it extends to wallet-address screening and analysis of fund provenance, posing distinctive challenges for permissionless and privacy-preserving systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:kyc",
+        "label": "KYC"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      },
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "fatfrecommendations",
+      "label": "FATFRecommendations"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    },
+    {
+      "slug": "travel-rule",
+      "label": "Travel Rule"
+    }
+  ]
+}

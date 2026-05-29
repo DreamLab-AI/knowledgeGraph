@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:orchestration-layer",
+  "title": "Orchestration Layer",
+  "slug": "orchestration-layer",
+  "public": true,
+  "classIri": "urn:ngm:class:orchestration-layer",
+  "domain": "infrastructure",
+  "definition": "An Orchestration Layer is a software architectural component that coordinates the execution of heterogeneous services, agents, or microservices \u2014 managing task routing, dependency resolution, resource allocation, and fault recovery \u2014 to produce coherent outputs from distributed system components. It acts as the control plane above individual execution units, abstracting their composition into unified workflows.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:orchestration",
+      "label": "Orchestration"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.85,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:multi-agent-orchestration",
+        "label": "Multi-Agent Orchestration"
+      },
+      {
+        "id": "urn:ngm:class:llm-orchestration",
+        "label": "LLM Orchestration"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "id": "urn:ngm:class:middleware-layer",
+        "label": "Middleware Layer"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:service-mesh",
+        "label": "Service Mesh"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "cli-multi-agent-systems",
+      "label": "CLI Multi-Agent Systems"
+    },
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "computer-use-and-browser-agents",
+      "label": "Computer Use and Browser Agents"
+    },
+    {
+      "slug": "context-engineering",
+      "label": "Context Engineering"
+    },
+    {
+      "slug": "cortex-agent",
+      "label": "Cortex Agent"
+    },
+    {
+      "slug": "edge-network",
+      "label": "Edge Network"
+    },
+    {
+      "slug": "function-calling",
+      "label": "Function Calling"
+    },
+    {
+      "slug": "gpts-and-custom-assistants",
+      "label": "GPTs and Custom Assistants"
+    }
+  ]
+}

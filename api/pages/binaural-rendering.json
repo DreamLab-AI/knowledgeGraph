@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:binaural-rendering",
+  "title": "Binaural Rendering",
+  "slug": "binaural-rendering",
+  "public": true,
+  "classIri": "urn:ngm:class:binaural-rendering",
+  "domain": "spatial",
+  "definition": "Binaural rendering is the audio signal processing technique that synthesises a three-dimensional sound field deliverable over standard headphones by convolving audio sources with head-related transfer functions (HRTFs) that model the acoustic filtering imposed by the human head, pinnae, and torso. The result is the perceptual illusion of sounds emanating from specific spatial locations outside the headphones, enabling immersive audio experiences in virtual and augmented reality environments.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:spatial-audio",
+      "label": "Spatial Audio"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:immersive-audio",
+        "label": "Immersive Audio"
+      },
+      {
+        "id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:convolution",
+        "label": "Convolution"
+      },
+      {
+        "id": "urn:ngm:class:audio-processing",
+        "label": "Audio Processing"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:extended-reality-xr",
+        "label": "Extended Reality (XR)"
+      },
+      {
+        "id": "urn:ngm:class:audio-spatialization",
+        "label": "Audio Spatialization"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "audio-spatialization",
+      "label": "Audio Spatialization"
+    },
+    {
+      "slug": "spatial-audio-scene-description",
+      "label": "Spatial Audio Scene Description"
+    }
+  ]
+}

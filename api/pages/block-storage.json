@@ -1,0 +1,75 @@
+{
+  "id": "urn:visionflow:page:block-storage",
+  "title": "Block Storage",
+  "slug": "block-storage",
+  "public": true,
+  "classIri": "urn:ngm:class:block-storage",
+  "domain": "infrastructure",
+  "definition": "Block Storage is an infrastructure storage paradigm that presents raw fixed-size blocks of data to a host operating system or hypervisor, which then manages formatting, file system placement, and I/O scheduling directly. Unlike object storage or file storage, block storage exposes a low-level disk abstraction enabling high-performance, low-latency random read/write operations suitable for databases, virtual machine boot disks, and transactional workloads. Cloud providers implement block storage as network-attached volumes (e.g., AWS EBS, GCP Persistent Disk) that can be dynamically provisioned and attached to compute instances.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:storage-systems",
+      "label": "Storage Systems"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:object-storage",
+        "label": "Object Storage"
+      },
+      {
+        "id": "urn:ngm:class:distributed-storage",
+        "label": "Distributed Storage"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:file-system",
+        "label": "File System"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:database-system",
+        "label": "Database System"
+      },
+      {
+        "id": "urn:ngm:class:persistent-storage",
+        "label": "Persistent Storage"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cloud-storage",
+        "label": "Cloud Storage"
+      },
+      {
+        "id": "urn:ngm:class:data-storage-layer",
+        "label": "Data Storage Layer"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "storage-infrastructure",
+      "label": "Storage Infrastructure"
+    },
+    {
+      "slug": "storage-layer",
+      "label": "Storage Layer"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:multisignature",
+  "title": "Multisignature",
+  "slug": "multisignature",
+  "public": true,
+  "classIri": "urn:ngm:class:multisignature",
+  "domain": "blockchain",
+  "definition": "Multisignature (multisig) is a cryptographic access control scheme in which a transaction or operation requires a quorum of independent signatures \u2014 expressed as an M-of-N threshold \u2014 before it can be authorised and executed. Applied to cryptocurrency wallets and smart contracts, multisignature eliminates single points of failure in key custody by distributing signing authority across multiple keyholders, devices, or organisations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptographic-signature",
+      "label": "Cryptographic Signature"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:multi-signature-wallet",
+        "label": "Multi-Signature Wallet"
+      },
+      {
+        "id": "urn:ngm:class:self-custody",
+        "label": "Self-Custody"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:digital-signatures",
+        "label": "Digital Signatures"
+      },
+      {
+        "id": "urn:ngm:class:threshold-cryptography",
+        "label": "Threshold Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:multi-sig-governance",
+        "label": "Multi Sig Governance"
+      },
+      {
+        "id": "urn:ngm:class:quorum-threshold",
+        "label": "Quorum Threshold"
+      },
+      {
+        "id": "urn:ngm:class:schnorr-signature",
+        "label": "Schnorr Signature"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-technical-overview",
+      "label": "Bitcoin Technical Overview"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:autonomous-mobile-robots",
+  "title": "Autonomous Mobile Robots",
+  "slug": "autonomous-mobile-robots",
+  "public": true,
+  "classIri": "urn:ngm:class:autonomous-mobile-robots",
+  "domain": "robotics",
+  "definition": "Robotic platforms capable of self-directed locomotion through environments, navigating without fixed infrastructure guidance by using onboard sensing, mapping, localisation, and path-planning capabilities. Autonomous mobile robots (AMRs) operate in dynamic, human-shared spaces and are distinguished from automated guided vehicles (AGVs) by their ability to adapt routes in real time rather than following pre-defined paths.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:mobile-robotics",
+      "label": "Mobile Robotics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:warehouse-automation",
+        "label": "Warehouse Automation"
+      },
+      {
+        "id": "urn:ngm:class:logistics-automation",
+        "label": "Logistics Automation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:fleet-management",
+        "label": "Fleet Management"
+      },
+      {
+        "id": "urn:ngm:class:ros-navigation-stack",
+        "label": "ROS Navigation Stack"
+      },
+      {
+        "id": "urn:ngm:class:collision-avoidance",
+        "label": "Collision Avoidance"
+      },
+      {
+        "id": "urn:ngm:class:mobile-robot-platform",
+        "label": "Mobile Robot Platform"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "kinematics-model",
+      "label": "Kinematics Model"
+    },
+    {
+      "slug": "perception-system",
+      "label": "Perception System"
+    },
+    {
+      "slug": "robot-standard",
+      "label": "Robot Standard"
+    }
+  ]
+}

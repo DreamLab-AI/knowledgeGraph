@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:custody-infrastructure",
+  "title": "Custody Infrastructure",
+  "slug": "custody-infrastructure",
+  "public": true,
+  "classIri": "urn:ngm:class:custody-infrastructure",
+  "domain": "blockchain",
+  "definition": "Custody infrastructure refers to the technological, operational, and regulatory systems that enable the secure holding, management, and transfer of digital assets on behalf of third parties, encompassing hardware security modules, multi-signature schemes, key management systems, cold storage vaults, and the compliance workflows that satisfy fiduciary and regulatory obligations. It is the institutional-grade equivalent of a traditional custodian bank for blockchain-native assets.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-asset-infrastructure",
+      "label": "Digital Asset Infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:custody",
+      "label": "Custody"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      },
+      {
+        "id": "urn:ngm:class:multi-signature",
+        "label": "Multi-Signature"
+      },
+      {
+        "id": "urn:ngm:class:key-management-system",
+        "label": "Key Management System"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:institutional-digital-asset-custody",
+        "label": "Institutional Digital Asset Custody"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cold-storage",
+        "label": "Cold Storage"
+      },
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    },
+    {
+      "slug": "treasury-management",
+      "label": "Treasury Management"
+    }
+  ]
+}

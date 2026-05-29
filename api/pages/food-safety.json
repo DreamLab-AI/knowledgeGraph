@@ -1,0 +1,61 @@
+{
+  "id": "urn:visionflow:page:food-safety",
+  "title": "Food Safety",
+  "slug": "food-safety",
+  "public": true,
+  "classIri": "urn:ngm:class:food-safety",
+  "domain": "governance",
+  "definition": "Food Safety is the discipline concerned with preventing foodborne illness and injury through systematic controls applied across the entire food production and distribution chain, from farm to consumer. It encompasses hazard analysis, regulatory compliance, traceability, temperature monitoring, and the technical and institutional practices that ensure food products are safe for consumption.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:compliance",
+      "label": "Compliance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.85,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:rfid",
+        "label": "RFID"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-provenance",
+        "label": "Blockchain Provenance"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:food-safety-blockchain",
+        "label": "Food Safety Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cold-chain-monitoring",
+      "label": "Cold Chain Monitoring"
+    },
+    {
+      "slug": "product-recall-management",
+      "label": "Product Recall Management"
+    }
+  ]
+}

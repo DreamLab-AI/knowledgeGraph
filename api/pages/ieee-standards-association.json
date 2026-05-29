@@ -1,0 +1,79 @@
+{
+  "id": "urn:visionflow:page:ieee-standards-association",
+  "title": "IEEE Standards Association",
+  "slug": "ieee-standards-association",
+  "public": true,
+  "classIri": "urn:ngm:class:ieee-standards-association",
+  "domain": "governance",
+  "definition": "The IEEE Standards Association (IEEE SA) is the standards development arm of the Institute of Electrical and Electronics Engineers, operating a consensus-based process through which industry, government, and academic stakeholders collaboratively develop and maintain technical standards covering electrical, electronic, computing, and communications technologies, with over 1,400 active standards and more than 900 standards under active development at any time.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:standards-body",
+      "label": "Standards Body"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:ieee-robotics-and-automation-society",
+        "label": "IEEE Robotics And Automation Society"
+      },
+      {
+        "id": "urn:ngm:class:ieee-control-systems-society",
+        "label": "IEEE Control Systems Society"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      },
+      {
+        "id": "urn:ngm:class:technical-standards",
+        "label": "Technical Standards"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:standards-organization",
+        "label": "Standards Organization"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      },
+      {
+        "id": "urn:ngm:class:technical-standard",
+        "label": "Technical Standard"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "competition-in-ai",
+      "label": "Competition in AI"
+    },
+    {
+      "slug": "convergence",
+      "label": "Convergence"
+    },
+    {
+      "slug": "etsi-domain-governance-ethics",
+      "label": "ETSI_Domain_Governance___Ethics"
+    }
+  ]
+}

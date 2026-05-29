@@ -1,0 +1,79 @@
+{
+  "id": "urn:visionflow:page:accountability-mechanism",
+  "title": "Accountability Mechanism",
+  "slug": "accountability-mechanism",
+  "public": true,
+  "classIri": "urn:ngm:class:accountability-mechanism",
+  "domain": "governance",
+  "definition": "An accountability mechanism is a specific procedural, technical, or institutional instrument through which an actor can be held answerable for their decisions and conduct\u2014for example, an audit trail, an ombudsman process, an algorithmic impact assessment, or a public reporting obligation. Whereas an accountability framework defines the overall structure of responsibility, an accountability mechanism is the concrete tool that makes accountability operational within or across that framework.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:accountability",
+      "label": "Accountability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      },
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "id": "urn:ngm:class:audit-log",
+        "label": "Audit Log"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:accountability-framework",
+        "label": "Accountability Framework"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "governance-model",
+      "label": "Governance Model"
+    },
+    {
+      "slug": "governance-structure",
+      "label": "Governance Structure"
+    },
+    {
+      "slug": "non-repudiation",
+      "label": "Non-Repudiation"
+    }
+  ]
+}

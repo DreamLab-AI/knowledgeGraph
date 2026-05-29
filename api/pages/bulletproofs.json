@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:bulletproofs",
+  "title": "Bulletproofs",
+  "slug": "bulletproofs",
+  "public": true,
+  "classIri": "urn:ngm:class:bulletproofs",
+  "domain": "blockchain",
+  "definition": "Bulletproofs are a class of short, non-interactive zero-knowledge proof system that enables efficient range proofs and arbitrary arithmetic circuit satisfiability without a trusted setup. Based on the discrete logarithm assumption over elliptic curves, they produce logarithmically-sized proofs that can be aggregated and batched, making them particularly well-suited to confidential transaction systems in public blockchains where proof size and verification cost are critical constraints.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:zero-knowledge-proof",
+      "label": "Zero-Knowledge Proof"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:confidential-transactions",
+        "label": "Confidential Transactions"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:commitment-scheme",
+        "label": "Commitment Scheme"
+      },
+      {
+        "id": "urn:ngm:class:schnorr-signature",
+        "label": "Schnorr Signature"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:privacy-preserving-blockchain",
+        "label": "Privacy Preserving Blockchain"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cryptographic-domain",
+      "label": "Cryptographic Domain"
+    },
+    {
+      "slug": "privacy-preserving-blockchain",
+      "label": "Privacy Preserving Blockchain"
+    },
+    {
+      "slug": "privacy-preserving-blockchain",
+      "label": "Privacy Preserving Blockchain"
+    },
+    {
+      "slug": "zero-knowledge-proof-zkp",
+      "label": "Zero-Knowledge Proof (ZKP)"
+    }
+  ]
+}

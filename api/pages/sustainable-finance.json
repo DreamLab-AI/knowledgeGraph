@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:sustainable-finance",
+  "title": "Sustainable Finance",
+  "slug": "sustainable-finance",
+  "public": true,
+  "classIri": "urn:ngm:class:sustainable-finance",
+  "domain": "governance",
+  "definition": "Sustainable finance refers to the integration of environmental, social, and governance (ESG) criteria into financial decision-making, product design, and market regulation with the goal of channelling capital flows toward activities that support a sustainable economy. It encompasses green bonds, sustainability-linked loans, ESG investing, climate risk management, and regulatory taxonomies that define what qualifies as environmentally sustainable economic activity.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:financial-regulation",
+      "label": "Financial Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:green-bond-market",
+        "label": "Green Bond Market"
+      },
+      {
+        "id": "urn:ngm:class:impact-investing",
+        "label": "Impact Investing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:esg",
+        "label": "ESG"
+      },
+      {
+        "id": "urn:ngm:class:eu-taxonomy",
+        "label": "EU Taxonomy"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:climate-finance",
+        "label": "Climate Finance"
+      },
+      {
+        "id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "environmental-asset-market",
+      "label": "Environmental Asset Market"
+    },
+    {
+      "slug": "green-blockchain-initiatives",
+      "label": "Green Blockchain Initiatives"
+    }
+  ]
+}

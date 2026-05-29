@@ -1,0 +1,79 @@
+{
+  "id": "urn:visionflow:page:game-asset-generation",
+  "title": "Game Asset Generation",
+  "slug": "game-asset-generation",
+  "public": true,
+  "classIri": "urn:ngm:class:game-asset-generation",
+  "domain": "media",
+  "definition": "Game asset generation is the automated or semi-automated production of digital resources \u2014 including 3D meshes, textures, animations, sound effects, and narrative content \u2014 used in interactive entertainment, employing procedural algorithms, machine learning models, or generative AI to reduce manual authoring costs, accelerate iteration cycles, and enable content scale impossible through purely human workflows.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:procedural-content-generation",
+      "label": "Procedural Content Generation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "id": "urn:ngm:class:asset-pipeline",
+        "label": "Asset Pipeline"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:procedural-generation",
+        "label": "Procedural Generation"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      },
+      {
+        "id": "urn:ngm:class:3-d-modeling",
+        "label": "3D Modeling"
+      },
+      {
+        "id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:3-d-asset",
+        "label": "3D Asset"
+      },
+      {
+        "id": "urn:ngm:class:text-to-image-generation",
+        "label": "Text-to-Image Generation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "diffusion-models",
+      "label": "Diffusion Models"
+    },
+    {
+      "slug": "proprietary-image-generation",
+      "label": "Proprietary Image Generation"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+public:: true
+
+# Audio Engine
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:audio-engine",
+  "@type": "Page",
+  "vc:slug": "audio-engine",
+  "title": "Audio Engine",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 2
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:audio-engine",
+  "@type": "Class",
+  "label": "Audio Engine",
+  "definition": "An Audio Engine is a software subsystem that manages the real-time synthesis, processing, mixing, and spatialisation of sound within an interactive or generative application. It abstracts hardware audio interfaces, schedules audio computation on dedicated threads or hardware DSP units, and exposes higher-level APIs for triggering, routing, and modulating sound objects in response to application events.",
+  "domain": "media",
+  "maturity": "established",
+  "subClassOf": [{"@id": "urn:ngm:class:audio-system", "label": "Audio System"}],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:audio-signal-processing", "label": "Audio Signal Processing"},
+      {"@id": "urn:ngm:class:digital-signal-processing", "label": "Digital Signal Processing"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:spatial-audio", "label": "Spatial Audio"},
+      {"@id": "urn:ngm:class:audio-spatialization", "label": "Audio Spatialization"},
+      {"@id": "urn:ngm:class:procedural-audio-generator", "label": "Procedural Audio Generator"}
+    ],
+    "relatedTo": [{"@id": "urn:ngm:class:game-engine", "label": "Game Engine"}]
+  },
+  "quality": 0.8
+}
+```
+
+- ### Definition
+  - An [[Audio Engine]] is the runtime system responsible for the complete audio lifecycle within an interactive application: asset loading and decoding, voice management and priority arbitration, [[Audio Signal Processing]] graph execution, bus mixing, effects processing, and output rendering to hardware. It integrates [[Digital Signal Processing]] algorithms for filtering, reverb, and dynamics into a low-latency processing graph that executes on a dedicated real-time audio thread, typically at buffer sizes of 128–512 samples. Modern audio engines also provide [[Spatial Audio]] and [[Audio Spatialization]] capabilities, positioning sound sources in three-dimensional space relative to the listener using HRTF convolution or ambisonics.
+
+- ### Relationships
+  - The Audio Engine subsumes [[Audio Signal Processing]] and [[Digital Signal Processing]] as its computational substrates. It delivers [[Spatial Audio]] and [[Audio Spatialization]] capabilities critical for immersive environments, and may incorporate [[Procedural Audio Generator]] modules that synthesise sounds algorithmically rather than playing back recorded samples. In game applications, the audio engine integrates tightly with the [[Game Engine]] event system, reacting to simulation state changes to trigger, modify, and stop audio events.
+
+- ### Content
+  - Early video game audio was handled by dedicated sound chips — the SID chip in the Commodore 64, the Yamaha OPL series in PC sound cards — that generated sounds through programmable oscillators and FM synthesis with minimal software overhead. As hardware became general-purpose, software audio engines emerged in the late 1990s: DirectSound (Microsoft) and OpenAL (Creative/Loki) provided cross-platform APIs for mixing and positional audio. Miles Sound System, developed by John Miles, was widely licensed and powered audio in hundreds of commercial games. The introduction of high-quality sample playback (MOD/XM trackers, then streaming PCM) shifted the paradigm from synthesis to sample-based playback.
+
+  - Modern middleware audio engines — FMOD Studio and Wwise (Audiokinetic) — have become industry standards for game and interactive audio. These systems provide a non-linear audio authoring environment where designers build event-driven sound behaviour (adaptive music, randomised one-shots, parameter-driven mixing) without code, while the runtime engine handles thread safety, voice pooling, and format decoding. Under the hood they employ lock-free ring buffers, SIMD-optimised DSP chains, and platform-native audio APIs (CoreAudio on Apple, WASAPI on Windows, ALSA/PipeWire on Linux, oboe on Android). Lower-level engines such as PortAudio and RtAudio provide cross-platform hardware access for custom implementations.
+
+  - Spatial audio capabilities have become a first-class requirement for VR and AR applications. HRTF (Head-Related Transfer Function) convolution simulates how sounds reach the ears from different directions by applying individualized or generalised impulse responses. Ambisonics provides a scene-based intermediate representation that can be decoded to any speaker arrangement or binaural mix at runtime. Resonance Audio (Google, open-sourced 2017), Steam Audio, and Oculus Audio SDK are widely used spatial audio engines. Room acoustics simulation via image-source methods and geometric acoustics engines (Embree-based ray casting) adds reverberant character that responds dynamically to virtual geometry.
+
+  - As of 2024–2025, machine-learning approaches to audio are entering engine pipelines: neural vocoders (WaveNet, HiFi-GAN) are used for high-quality text-to-speech within interactive applications; AI-driven music generation (Suno, Udio, MusicGen) enables dynamic adaptive soundtracks; neural reverb and upsampling models improve audio quality at reduced bitrates. Real-time neural audio on device remains computationally expensive, but NPU acceleration on Apple Silicon, Qualcomm Snapdragon, and dedicated audio DSP chips is steadily making on-device inference practical. Spatial audio for headset devices is increasingly personalised using ear-shape scanning or in-situ HRTF measurement.
+

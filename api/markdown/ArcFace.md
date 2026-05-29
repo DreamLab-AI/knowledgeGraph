@@ -1,0 +1,60 @@
+public:: true
+
+# ArcFace
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:arc-face",
+  "@type": "Page",
+  "vc:slug": "arc-face",
+  "title": "ArcFace",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 2
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:arc-face",
+  "@type": "Class",
+  "label": "ArcFace",
+  "definition": "ArcFace is a deep learning loss function and associated training methodology for facial recognition, introduced by Deng et al. at Imperial College London in 2019, that improves discriminative feature learning by adding an additive angular margin penalty to the softmax loss function. By penalising the angle between a sample embedding and its class centre in hyperspherical feature space, ArcFace forces the model to learn more compact intra-class and more separable inter-class feature embeddings than standard softmax or earlier margin-based losses. It has achieved state-of-the-art performance on numerous facial recognition benchmarks and is widely adopted in production identity verification systems.",
+  "domain": "ai",
+  "maturity": "established",
+  "subClassOf": [{"@id": "urn:ngm:class:facial-recognition", "label": "Facial Recognition"}],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
+      {"@id": "urn:ngm:class:loss-function", "label": "Loss Function"},
+      {"@id": "urn:ngm:class:embedding", "label": "Embedding"},
+      {"@id": "urn:ngm:class:cosine-similarity", "label": "Cosine Similarity"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:biometric-verification", "label": "Biometric Verification"},
+      {"@id": "urn:ngm:class:identity-verification", "label": "Identity Verification"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:feature-extraction", "label": "Feature Extraction"},
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+    ]
+  },
+  "quality": 0.8
+}
+```
+
+- ### Definition
+  - [[ArcFace]] is a [[Deep Learning]] training methodology for [[Facial Recognition]] that reformulates the classification objective using an additive angular margin penalty applied in the normalised hyperspherical [[Embedding]] space. The [[Loss Function]] penalises the angle between each sample's feature embedding and its target class weight vector, encouraging the network to learn discriminative facial representations with tighter intra-class clustering and wider inter-class separation than standard softmax. The resulting embeddings support [[Biometric Verification]] via [[Cosine Similarity]] comparison at inference time.
+
+- ### Relationships
+  - ArcFace uses [[Deep Learning]] for [[Feature Extraction]], a specialised [[Loss Function]] for metric learning, and produces normalised [[Embedding]] vectors compared via [[Cosine Similarity]] during verification. It enables [[Biometric Verification]] and [[Identity Verification]] applications. It is a specialisation within [[Facial Recognition]] and the wider [[Computer Vision]] discipline, and contributed significantly to advancing the state of the art in face recognition benchmarks.
+
+- ### Content
+  - Prior to ArcFace, facial recognition models were trained with centre loss, triplet loss, or SphereFace (multiplicative angular margin), each with limitations in training stability or geometric interpretation. Jiankang Deng, Jia Guo, Niannan Xue, and Stefanos Zafeiriou at Imperial College London published "ArcFace: Additive Angular Margin Loss for Deep Face Recognition" in 2019, demonstrating that their additive angular margin formulation provided a clearer geometric interpretation—every identity occupies an arc on the unit hypersphere—and superior performance on LFW, CFP-FP, and other standard benchmarks.
+
+  - Technically, ArcFace modifies the softmax denominator by first normalising both the feature embedding vector and the class weight vectors to unit length, then adding a fixed angular margin m (typically 0.5 radians) to the angle between the embedding and its target class before computing the scaled softmax. This is equivalent to strengthening the decision boundary in angular space. The training procedure uses standard cross-entropy on the modified logits, making it a drop-in replacement for the final classification layer of any convolutional or transformer backbone.
+
+  - ArcFace has been integrated into widely used open-source face recognition libraries including InsightFace, which provides pre-trained ArcFace models on backbones such as ResNet-100 and MobileNet. It is deployed in commercial face verification systems for banking, border control, and access management. The approach has been extended to other biometric modalities including iris recognition and voice verification, and has inspired related margin-based losses such as CosFace and MagFace that introduce complementary modifications to the objective.
+
+  - By 2024–2025, ArcFace-based systems routinely achieve near-perfect accuracy on legacy benchmarks like LFW, prompting the community to adopt harder evaluation sets with greater pose, age, and occlusion variation. The rise of generative adversarial networks and diffusion-based [[Face Swap]] tools has intensified research into liveness detection and presentation attack resistance, areas where high-quality ArcFace embeddings remain necessary but insufficient for security without anti-spoofing modules. ArcFace continues to be the dominant training paradigm for production [[Biometric Verification]] systems.

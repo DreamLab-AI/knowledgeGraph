@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:financial-sovereignty",
+  "title": "Financial Sovereignty",
+  "slug": "financial-sovereignty",
+  "public": true,
+  "classIri": "urn:ngm:class:financial-sovereignty",
+  "domain": "blockchain",
+  "definition": "Financial Sovereignty is the capacity of an individual, community, or nation to exercise autonomous control over their financial resources, transactions, and monetary decisions without dependence on or interference from external authorities, intermediaries, or censorship mechanisms. At the individual level it encompasses self-custody of assets, privacy in transactions, and access to financial services irrespective of geographic or political constraints; at the national level it encompasses independent monetary policy and control over reserve currencies.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:monetary-sovereignty",
+      "label": "Monetary Sovereignty"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
+        "label": "Central Bank Digital Currency (CBDC)"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:self-custody",
+        "label": "Self-Custody"
+      },
+      {
+        "id": "urn:ngm:class:censorship-resistance",
+        "label": "Censorship Resistance"
+      },
+      {
+        "id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-as-money",
+      "label": "Bitcoin As Money"
+    },
+    {
+      "slug": "bitcoin-value-proposition",
+      "label": "Bitcoin Value Proposition"
+    },
+    {
+      "slug": "wallet",
+      "label": "Wallet"
+    }
+  ]
+}

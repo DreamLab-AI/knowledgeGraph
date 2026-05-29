@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:arp4754-a",
+  "title": "ARP4754A",
+  "slug": "arp4754-a",
+  "public": true,
+  "classIri": "urn:ngm:class:arp4754-a",
+  "domain": "infrastructure",
+  "definition": "ARP4754A is an aerospace recommended practice published by SAE International in 2010, titled 'Guidelines for Development of Civil Aircraft and Systems,' which provides a structured framework for the development and safety assessment of complex aircraft systems and functions. It establishes processes for identifying and mitigating failure conditions across the full aircraft system lifecycle, defining Development Assurance Levels (DAL A through E) that calibrate the rigour of development and verification activities to the severity of the failure conditions a system can contribute to. ARP4754A works in conjunction with related standards including ARP4761 for safety assessment and DO-178C for software development.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:safety-standard",
+      "label": "Safety Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:safety-assessment",
+        "label": "Safety Assessment"
+      },
+      {
+        "id": "urn:ngm:class:hazard-analysis",
+        "label": "Hazard Analysis"
+      },
+      {
+        "id": "urn:ngm:class:verification",
+        "label": "VERIFICATION"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:systems-engineering",
+        "label": "Systems Engineering"
+      },
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:do-178-c",
+        "label": "DO-178C"
+      },
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "id": "urn:ngm:class:safety-critical-systems",
+        "label": "Safety-Critical Systems"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "slug": "fault-tolerance",
+      "label": "Fault Tolerance"
+    }
+  ]
+}

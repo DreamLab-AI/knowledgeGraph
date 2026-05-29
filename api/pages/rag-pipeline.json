@@ -1,0 +1,69 @@
+{
+  "id": "urn:visionflow:page:rag-pipeline",
+  "title": "RAG Pipeline",
+  "slug": "rag-pipeline",
+  "public": true,
+  "classIri": "urn:ngm:class:rag-pipeline",
+  "domain": "ai",
+  "definition": "A RAG pipeline is the end-to-end software architecture that implements retrieval-augmented generation, encompassing document ingestion and chunking, embedding generation, vector store indexing, query-time retrieval, context assembly, and language model generation to produce grounded, verifiable responses from external knowledge sources. It operationalises the RAG paradigm as a deployable, maintainable system with distinct stages, each subject to independent optimisation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:retrieval-augmented-generation",
+      "label": "Retrieval-Augmented Generation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:embedding-search",
+        "label": "Embedding Search"
+      },
+      {
+        "id": "urn:ngm:class:vector-store",
+        "label": "Vector Store"
+      },
+      {
+        "id": "urn:ngm:class:chunking",
+        "label": "Chunking"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rag-pipelines",
+        "label": "RAG Pipelines"
+      },
+      {
+        "id": "urn:ngm:class:agentic-rag",
+        "label": "Agentic RAG"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "lang-chain",
+      "label": "LangChain"
+    }
+  ]
+}

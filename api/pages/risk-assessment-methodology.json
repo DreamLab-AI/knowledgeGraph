@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:risk-assessment-methodology",
+  "title": "Risk Assessment Methodology",
+  "slug": "risk-assessment-methodology",
+  "public": true,
+  "classIri": "urn:ngm:class:risk-assessment-methodology",
+  "domain": "governance",
+  "definition": "A Risk Assessment Methodology is a structured, repeatable set of procedures for identifying, analysing, and evaluating potential hazards or threats to an organisation's objectives, assets, or stakeholders, producing a prioritised risk register that informs mitigation decisions. Methodologies range from qualitative (likelihood-impact matrices) to quantitative (Monte Carlo simulation, fault tree analysis) approaches, and are codified in standards such as ISO 31000, NIST SP 800-30, and FAIR for cybersecurity contexts.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:risk-assessment",
+      "label": "Risk Assessment"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:risk-assessment-engine",
+        "label": "Risk Assessment Engine"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-31000-risk-management",
+        "label": "ISO 31000 Risk Management"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:enterprise-risk-management",
+        "label": "Enterprise Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:risk-assessment-matrix",
+        "label": "Risk Assessment Matrix"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-risks",
+      "label": "AI Risks"
+    },
+    {
+      "slug": "privacy-impact-assessment-pia",
+      "label": "Privacy Impact Assessment (PIA)"
+    }
+  ]
+}

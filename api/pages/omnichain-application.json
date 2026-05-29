@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:omnichain-application",
+  "title": "Omnichain Application",
+  "slug": "omnichain-application",
+  "public": true,
+  "classIri": "urn:ngm:class:omnichain-application",
+  "domain": "blockchain",
+  "definition": "An omnichain application is a decentralised application designed to operate across multiple blockchain networks simultaneously, maintaining unified state, liquidity, and user identity without requiring users to bridge assets manually between chains. Unlike multi-chain applications that deploy isolated instances on separate chains, omnichain applications treat all supported networks as a single logical execution environment connected by cross-chain messaging protocols. LayerZero is the most widely adopted infrastructure enabling omnichain application patterns.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:decentralized-application",
+      "label": "Decentralized Application"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cross-chain-asset-transfer",
+        "label": "Cross Chain Asset Transfer"
+      },
+      {
+        "id": "urn:ngm:class:de-fi",
+        "label": "DeFi"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cross-chain-messaging",
+        "label": "Cross Chain Messaging"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-interoperability",
+        "label": "Cross-Chain Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    },
+    {
+      "slug": "cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    }
+  ]
+}

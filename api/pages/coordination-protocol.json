@@ -1,0 +1,68 @@
+{
+  "id": "urn:visionflow:page:coordination-protocol",
+  "title": "Coordination Protocol",
+  "slug": "coordination-protocol",
+  "public": true,
+  "classIri": "urn:ngm:class:coordination-protocol",
+  "domain": "infrastructure",
+  "definition": "A Coordination Protocol is a formally specified set of rules, message formats, and interaction sequences that govern how distributed agents or system components communicate and synchronise their actions to achieve a common objective. It defines the obligations, permissions, and commitments of each participant at each state of an interaction, ensuring predictable collective behaviour despite independent agent decision-making.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:communication-protocol",
+      "label": "Communication Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:coordination-mechanisms",
+        "label": "Coordination Mechanisms"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:consensus-protocol",
+        "label": "Consensus Protocol"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "edge-network",
+      "label": "Edge Network"
+    }
+  ]
+}

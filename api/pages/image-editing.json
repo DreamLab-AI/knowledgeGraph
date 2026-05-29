@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:image-editing",
+  "title": "Image Editing",
+  "slug": "image-editing",
+  "public": true,
+  "classIri": "urn:ngm:class:image-editing",
+  "domain": "media",
+  "definition": "Image editing is the process of altering or enhancing digital images using software tools, encompassing operations such as colour correction, compositing, retouching, masking, and applying filters or effects. Modern image editing spans a spectrum from manual pixel-level manipulation to AI-driven automated transformations that interpret semantic content to intelligently modify or generate imagery.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:content-creation",
+      "label": "Content Creation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-content-creation",
+        "label": "Digital Content Creation"
+      },
+      {
+        "id": "urn:ngm:class:content-creation-pipeline",
+        "label": "Content Creation Pipeline"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:creative-tools",
+        "label": "Creative Tools"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "diffusion-models",
+      "label": "Diffusion Models"
+    },
+    {
+      "slug": "inpainting",
+      "label": "Inpainting"
+    }
+  ]
+}

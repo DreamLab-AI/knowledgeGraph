@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:camera-intrinsics",
+  "title": "Camera Intrinsics",
+  "slug": "camera-intrinsics",
+  "public": true,
+  "classIri": "urn:ngm:class:camera-intrinsics",
+  "domain": "spatial",
+  "definition": "Camera Intrinsics are the internal optical and geometric parameters of a camera that define the mathematical relationship between 3D points in the camera's coordinate frame and their 2D projections onto the image sensor. The intrinsic parameter matrix encodes focal length in pixel units along each image axis, the principal point (optical axis intersection with the sensor), and skew, whilst associated distortion coefficients correct for lens aberrations that cause deviations from the ideal pinhole projection model.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      },
+      {
+        "id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      },
+      {
+        "id": "urn:ngm:class:stereo-vision",
+        "label": "Stereo Vision"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:sensor-calibration",
+        "label": "Sensor Calibration"
+      },
+      {
+        "id": "urn:ngm:class:optical-calibration-target",
+        "label": "Optical Calibration Target"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:epipolar-geometry",
+        "label": "Epipolar Geometry"
+      },
+      {
+        "id": "urn:ngm:class:structure-from-motion",
+        "label": "Structure-from-Motion"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "depth-estimation",
+      "label": "Depth Estimation"
+    },
+    {
+      "slug": "lens-and-camera-calibration",
+      "label": "Lens and Camera Calibration"
+    }
+  ]
+}

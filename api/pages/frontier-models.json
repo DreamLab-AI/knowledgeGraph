@@ -1,0 +1,75 @@
+{
+  "id": "urn:visionflow:page:frontier-models",
+  "title": "Frontier Models",
+  "slug": "frontier-models",
+  "public": true,
+  "classIri": "urn:ngm:class:frontier-models",
+  "domain": "ai",
+  "definition": "Frontier models are large-scale AI systems trained at the leading edge of compute, data, and capability, exhibiting emergent behaviours not observed in smaller models and presenting both transformative societal potential and novel safety risks. The term typically refers to the most capable foundation models available at any given time, assessed across benchmarks spanning reasoning, coding, science, and multimodal tasks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "id": "urn:ngm:class:large-language-models",
+      "label": "Large Language Models"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gpu-cluster",
+        "label": "GPU Cluster"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:reasoning-models",
+        "label": "Reasoning Models"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai",
+        "label": "Multimodal AI"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:frontier-model-evaluation",
+        "label": "Frontier Model Evaluation"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:emergent-capabilities",
+        "label": "Emergent Capabilities"
+      },
+      {
+        "id": "urn:ngm:class:scaling-laws",
+        "label": "Scaling Laws"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "california-ai-bill",
+      "label": "California AI bill"
+    },
+    {
+      "slug": "competition-in-ai",
+      "label": "Competition in AI"
+    }
+  ]
+}

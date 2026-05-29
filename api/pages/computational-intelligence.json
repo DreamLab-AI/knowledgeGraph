@@ -1,0 +1,67 @@
+{
+  "id": "urn:visionflow:page:computational-intelligence",
+  "title": "Computational Intelligence",
+  "slug": "computational-intelligence",
+  "public": true,
+  "classIri": "urn:ngm:class:computational-intelligence",
+  "domain": "ai",
+  "definition": "Computational Intelligence (CI) is an umbrella field encompassing bio-inspired and nature-analogous algorithmic paradigms\u2014principally neural networks, fuzzy logic, and evolutionary computation\u2014that equip machines with adaptive, learning, and reasoning capabilities. Unlike classical symbolic AI, CI techniques tolerate imprecision, uncertainty, and partial truth, deriving solutions through iterative adaptation rather than explicit programming.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:fuzzy-logic",
+        "label": "Fuzzy Logic"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:optimization-algorithm",
+        "label": "Optimization Algorithm"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "control-algorithm",
+      "label": "Control Algorithm"
+    },
+    {
+      "slug": "learning-algorithm",
+      "label": "Learning Algorithm"
+    }
+  ]
+}

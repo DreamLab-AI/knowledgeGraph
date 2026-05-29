@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:object-storage",
+  "title": "Object Storage",
+  "slug": "object-storage",
+  "public": true,
+  "classIri": "urn:ngm:class:object-storage",
+  "domain": "infrastructure",
+  "definition": "Object storage is a data storage architecture that manages data as discrete objects \u2014 each comprising an opaque payload, a globally unique identifier, and extensible metadata \u2014 accessed via a flat namespace through RESTful HTTP APIs rather than a file hierarchy or block device. It is designed for massive horizontal scalability, high durability, and cost-effective storage of unstructured data such as media files, backups, and machine-learning datasets. Amazon S3 established the de facto API standard, now implemented by numerous compatible services.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-storage",
+      "label": "Data Storage"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-lake",
+        "label": "Data Lake"
+      },
+      {
+        "id": "urn:ngm:class:content-addressed-storage",
+        "label": "Content-Addressed Storage"
+      },
+      {
+        "id": "urn:ngm:class:distributed-storage",
+        "label": "Distributed Storage"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "id": "urn:ngm:class:http-protocol",
+        "label": "HTTP Protocol"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:block-storage",
+        "label": "Block Storage"
+      },
+      {
+        "id": "urn:ngm:class:cloud-storage",
+        "label": "Cloud Storage"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "asynchronous-video",
+      "label": "Asynchronous Video"
+    },
+    {
+      "slug": "storage-infrastructure",
+      "label": "Storage Infrastructure"
+    },
+    {
+      "slug": "storage-layer",
+      "label": "Storage Layer"
+    }
+  ]
+}

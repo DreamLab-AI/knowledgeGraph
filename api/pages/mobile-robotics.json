@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:mobile-robotics",
+  "title": "Mobile Robotics",
+  "slug": "mobile-robotics",
+  "public": true,
+  "classIri": "urn:ngm:class:mobile-robotics",
+  "domain": "robotics",
+  "definition": "Mobile robotics is the field concerned with designing and programming robots that autonomously locomote through unstructured or semi-structured environments \u2014 using wheeled, legged, aerial, or aquatic platforms \u2014 by integrating perception, localisation, mapping, and motion planning to achieve task-oriented navigation goals without continuous human tele-operation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robot",
+      "label": "Robot"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:logistics-automation",
+        "label": "Logistics Automation"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:navigation",
+        "label": "Navigation"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning-for-robotics",
+        "label": "Reinforcement Learning for Robotics"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bayes-filter",
+      "label": "Bayes Filter"
+    },
+    {
+      "slug": "localization",
+      "label": "Localization"
+    },
+    {
+      "slug": "navigation",
+      "label": "Navigation"
+    },
+    {
+      "slug": "obstacle-avoidance",
+      "label": "Obstacle Avoidance"
+    },
+    {
+      "slug": "odometry",
+      "label": "Odometry"
+    },
+    {
+      "slug": "social-navigation",
+      "label": "Social Navigation"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:asset-liquidity",
+  "title": "Asset Liquidity",
+  "slug": "asset-liquidity",
+  "public": true,
+  "classIri": "urn:ngm:class:asset-liquidity",
+  "domain": "finance",
+  "definition": "Asset Liquidity is the degree to which a digital or tokenised asset can be converted into cash or another asset at close to its fair market value without materially moving that price or incurring prohibitive friction. In decentralised finance and tokenised asset markets, liquidity is determined by order-book depth, automated market maker reserves, and the breadth of platforms on which an asset can be traded.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:decentralised-finance",
+      "label": "Decentralised Finance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:nft-marketplace",
+        "label": "NFT Marketplace"
+      },
+      {
+        "id": "urn:ngm:class:atomic-swap",
+        "label": "Atomic Swap"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "id": "urn:ngm:class:exchange-mechanism",
+        "label": "Exchange Mechanism"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-ownership",
+        "label": "Digital Ownership"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-economics",
+        "label": "Blockchain Economics"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "nft-swapping",
+      "label": "NFT Swapping"
+    },
+    {
+      "slug": "secondary-market-integration",
+      "label": "Secondary Market Integration"
+    }
+  ]
+}

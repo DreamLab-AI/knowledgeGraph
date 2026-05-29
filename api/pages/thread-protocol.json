@@ -1,0 +1,67 @@
+{
+  "id": "urn:visionflow:page:thread-protocol",
+  "title": "Thread Protocol",
+  "slug": "thread-protocol",
+  "public": true,
+  "classIri": "urn:ngm:class:thread-protocol",
+  "domain": "infrastructure",
+  "definition": "Thread is an IPv6-based, low-power wireless mesh networking protocol designed for IoT devices in home and commercial environments, using IEEE 802.15.4 as its radio layer and providing self-healing, self-configuring mesh topology with native IP routing, secure device commissioning, and no single point of failure. Thread is managed by the Thread Group and forms the network and transport foundation for the Matter smart-home application protocol.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ieee-802-15-4",
+      "label": "IEEE 802.15.4"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:matter-protocol",
+        "label": "Matter Protocol"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:zigbee",
+        "label": "Zigbee"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:network-layer",
+        "label": "Network Layer"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:mesh-routing-software",
+        "label": "Mesh Routing Software"
+      },
+      {
+        "id": "urn:ngm:class:wireless-radio",
+        "label": "Wireless Radio"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "home-assistant",
+      "label": "Home Assistant"
+    },
+    {
+      "slug": "io-t-sensor-network",
+      "label": "IoT Sensor Network"
+    }
+  ]
+}

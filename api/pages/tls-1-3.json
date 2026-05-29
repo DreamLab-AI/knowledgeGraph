@@ -1,0 +1,75 @@
+{
+  "id": "urn:visionflow:page:tls-1-3",
+  "title": "TLS 1.3",
+  "slug": "tls-1-3",
+  "public": true,
+  "classIri": "urn:ngm:class:tls-1-3",
+  "domain": "infrastructure",
+  "definition": "TLS 1.3 (Transport Layer Security version 1.3, standardised in RFC 8446, August 2018) is the current major version of the TLS protocol, redesigned to eliminate legacy cryptographic weaknesses, reduce handshake round-trips from two to one (zero for session resumption), mandate forward secrecy on every connection, and restrict the cipher suite to a small set of authenticated encryption algorithms. It replaces TLS 1.2 as the baseline secure transport for HTTPS, QUIC, and virtually all authenticated internet communications.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:transport-layer-security",
+      "label": "Transport Layer Security"
+    },
+    {
+      "id": "urn:ngm:class:encryption-protocol",
+      "label": "Encryption Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:quic",
+        "label": "QUIC"
+      },
+      {
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:key-exchange",
+        "label": "Key Exchange"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:certificate-transparency",
+        "label": "Certificate Transparency"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "cyber-security-and-cryptography",
+      "label": "Cyber Security and Cryptography"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:evidence-collection",
+  "title": "Evidence Collection",
+  "slug": "evidence-collection",
+  "public": true,
+  "classIri": "urn:ngm:class:evidence-collection",
+  "domain": "governance",
+  "definition": "Evidence collection is the systematic process of identifying, preserving, and documenting artefacts \u2014 digital or physical \u2014 in a manner that maintains their integrity and admissibility for legal, regulatory, or investigative proceedings. In digital contexts it encompasses forensic acquisition of disk images, memory dumps, network captures, and log files while maintaining strict chain-of-custody documentation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-forensics",
+      "label": "Digital Forensics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:audit-log",
+        "label": "Audit Log"
+      },
+      {
+        "id": "urn:ngm:class:chain-of-custody",
+        "label": "Chain of Custody"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:legal-evidence",
+        "label": "Legal Evidence"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      },
+      {
+        "id": "urn:ngm:class:compliance-evidence",
+        "label": "Compliance Evidence"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "digital-forensics-framework",
+      "label": "Digital Forensics Framework"
+    },
+    {
+      "slug": "metaverse-liability-model",
+      "label": "Metaverse Liability Model"
+    }
+  ]
+}

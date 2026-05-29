@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:3-d-generation",
+  "title": "3D Generation",
+  "slug": "3-d-generation",
+  "public": true,
+  "classIri": "urn:ngm:class:3-d-generation",
+  "domain": "ai",
+  "definition": "3D Generation refers to the automated or semi-automated creation of three-dimensional geometry, appearance, and scene representations using machine learning models, procedural algorithms, or hybrid approaches. Techniques include text-to-3D, image-to-3D, and scene-level generation via neural radiance fields, Gaussian splatting, diffusion models, and large multi-modal networks. The field aims to dramatically reduce the time and skill threshold required to produce photorealistic or stylised 3D content.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:3-d-content-generation",
+      "label": "3D Content Generation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:3-d-content-creation",
+        "label": "3D Content Creation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin-generation",
+        "label": "Digital Twin Generation"
+      },
+      {
+        "id": "urn:ngm:class:game-asset-generation",
+        "label": "Game Asset Generation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:ne-rf",
+        "label": "NeRF"
+      },
+      {
+        "id": "urn:ngm:class:gaussian-splatting",
+        "label": "Gaussian Splatting"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:text-to-3-d",
+        "label": "Text-to-3D"
+      },
+      {
+        "id": "urn:ngm:class:neural-3-d-generation",
+        "label": "Neural 3D Generation"
+      },
+      {
+        "id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "comfy-ui-client",
+      "label": "ComfyUI Client"
+    },
+    {
+      "slug": "diffusion-models",
+      "label": "Diffusion Models"
+    }
+  ]
+}

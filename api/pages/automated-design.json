@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:automated-design",
+  "title": "Automated Design",
+  "slug": "automated-design",
+  "public": true,
+  "classIri": "urn:ngm:class:automated-design",
+  "domain": "ai",
+  "definition": "The application of computational algorithms, machine learning, and optimisation techniques to generate, evaluate, and refine design artefacts with minimal or no manual intervention. Automated design spans domains from electronic circuit layout and architectural floor planning to product geometry synthesis and material specification, dramatically compressing design cycles whilst exploring solution spaces too large for human enumeration.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:generative-design",
+      "label": "Generative Design"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:generative-design-tool",
+        "label": "Generative Design Tool"
+      },
+      {
+        "id": "urn:ngm:class:hyperparameter-optimisation",
+        "label": "Hyperparameter Optimisation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:algorithm",
+        "label": "Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "id": "urn:ngm:class:cad-software",
+        "label": "CAD Software"
+      },
+      {
+        "id": "urn:ngm:class:constraint-based-design",
+        "label": "Constraint Based Design"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "generative-design-tool",
+      "label": "Generative Design Tool"
+    }
+  ]
+}

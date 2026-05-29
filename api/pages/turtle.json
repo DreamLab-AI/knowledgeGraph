@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:turtle",
+  "title": "Turtle",
+  "slug": "turtle",
+  "public": true,
+  "classIri": "urn:ngm:class:turtle",
+  "domain": "ai",
+  "definition": "Turtle (Terse RDF Triple Language) is a W3C-standardised serialisation syntax for expressing RDF graphs in a compact, human-readable plain-text form. It extends Notation3 (N3) by providing a concise prefix-based shorthand for IRIs, support for blank nodes, and literal datatypes, enabling structured linked-data documents to be authored and exchanged without the verbosity of RDF/XML.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-serialization",
+      "label": "Data Serialization"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:owl",
+        "label": "OWL"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      },
+      {
+        "id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      },
+      {
+        "id": "urn:ngm:class:json-ld",
+        "label": "JSON-LD"
+      },
+      {
+        "id": "urn:ngm:class:n-triples",
+        "label": "N-Triples"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "solid",
+      "label": "Solid"
+    }
+  ]
+}

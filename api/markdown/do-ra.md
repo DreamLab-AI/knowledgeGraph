@@ -1,0 +1,14 @@
+- ### Definition
+  - DoRA is a parameter-efficient fine-tuning method that decomposes weights into magnitude and direction, applying low-rank updates to the direction while learning magnitude separately, narrowing the gap to full fine-tuning.
+
+- ### Relationships
+  - DoRA is a subclass of [[Parameter-Efficient Fine-Tuning]] and uses [[Low-Rank Adaptation]] as the mechanism for updating the directional component. It enables high-quality [[Fine-Tuning]] of large models at low cost, and relates to [[Deep Learning]] optimisation and the [[Transformer]] architectures it most commonly adapts.
+
+- ### Content
+  - DoRA refines the popular LoRA approach to fine-tuning. LoRA freezes a pretrained model and learns a small low-rank update added to selected weight matrices, slashing the number of trainable parameters and memory required. While remarkably effective, LoRA's learning behaviour diverges in subtle ways from full fine-tuning, leaving an accuracy gap on harder tasks that motivated a closer analysis of what full fine-tuning actually changes.
+
+  - The key insight is to decompose each weight matrix into two parts: a magnitude, capturing the scale of the weights, and a direction, capturing their orientation. Analysing how these components move during full fine-tuning versus LoRA revealed distinct patterns, suggesting that conflating magnitude and directional updates into a single low-rank term limited LoRA's expressiveness. DoRA separates them, learning the magnitude as an independent trainable vector and applying the low-rank update only to the directional component.
+
+  - This decomposition gives DoRA more representational flexibility for the same parameter budget, allowing it to adjust the strength and orientation of updates more independently — closer to how full fine-tuning behaves. Empirically this translates into improved accuracy across language and vision benchmarks relative to LoRA at matched cost, while preserving LoRA's practical virtues: a tiny number of trainable parameters and the ability to merge the learned update back into the base weights so that inference incurs no extra latency.
+
+  - DoRA exemplifies the broader trajectory of parameter-efficient fine-tuning, which makes adapting enormous foundation models tractable for organisations without the resources to fully retrain them. By matching more of full fine-tuning's quality at a fraction of the compute and storage, methods like DoRA support maintaining many task- or customer-specific adapters over a single shared base model, a deployment pattern central to the economics of customising large models at scale.

@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:automated-dispute-resolution",
+  "title": "Automated Dispute Resolution",
+  "slug": "automated-dispute-resolution",
+  "public": true,
+  "classIri": "urn:ngm:class:automated-dispute-resolution",
+  "domain": "blockchain",
+  "definition": "A class of system that applies algorithmic, rule-based, or machine-learning-driven processes to adjudicate disputes between parties without requiring direct human arbitrator involvement for each case. Automated dispute resolution mechanisms ingest evidence and contractual terms, apply predefined or learned decision rules, and produce binding or advisory outcomes, typically operating within a blockchain or smart-contract execution environment.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dispute-resolution",
+      "label": "Dispute Resolution"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:enforcement-mechanism",
+        "label": "Enforcement Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:conflict-resolution",
+        "label": "Conflict Resolution"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:arbitration-decision-engine",
+        "label": "Arbitration Decision Engine"
+      },
+      {
+        "id": "urn:ngm:class:oracle-network",
+        "label": "Oracle Network"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "id": "urn:ngm:class:legal-framework",
+        "label": "Legal Framework"
+      },
+      {
+        "id": "urn:ngm:class:arbitration-process",
+        "label": "Arbitration Process"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "arbitration-decision-engine",
+      "label": "Arbitration Decision Engine"
+    },
+    {
+      "slug": "e-contract-arbitration",
+      "label": "E-Contract Arbitration"
+    }
+  ]
+}

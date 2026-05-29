@@ -1,0 +1,71 @@
+{
+  "id": "urn:visionflow:page:sociotechnical-system",
+  "title": "Sociotechnical System",
+  "slug": "sociotechnical-system",
+  "public": true,
+  "classIri": "urn:ngm:class:sociotechnical-system",
+  "domain": "governance",
+  "definition": "A sociotechnical system is an analytical and design framework that treats technological artefacts and social structures as mutually constitutive elements of a unified system, recognising that technical components and human actors, organisations, and cultural practices co-evolve in ways that cannot be understood in isolation. Originating in organisational psychology and systems theory, it emphasises that optimising the technical subsystem alone is insufficient; effective system design requires joint optimisation of technical and social elements.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:complex-systems",
+      "label": "Complex Systems"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      }
+    ],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:sociotechnical-harm",
+        "label": "Sociotechnical Harm"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:organisational-theory",
+        "label": "Organisational Theory"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:sociotechnical-analysis",
+        "label": "Sociotechnical Analysis"
+      },
+      {
+        "id": "urn:ngm:class:sociotechnical-risk",
+        "label": "Sociotechnical Risk"
+      },
+      {
+        "id": "urn:ngm:class:human-factors",
+        "label": "Human Factors"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:coordinate-transformation",
+  "title": "Coordinate Transformation",
+  "slug": "coordinate-transformation",
+  "public": true,
+  "classIri": "urn:ngm:class:coordinate-transformation",
+  "domain": "robotics",
+  "definition": "A coordinate transformation is a mathematical mapping that converts the representation of a point, vector, or geometric object from one coordinate system or reference frame to another, preserving geometric relationships while expressing them in a new basis. In robotics and computer graphics, transformations are represented as homogeneous matrices, quaternions, or dual quaternions encoding rotation, translation, and scaling operations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:coordinate-system",
+      "label": "Coordinate System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:quaternion-math",
+        "label": "Quaternion Math"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:reference-frames",
+        "label": "Reference Frames"
+      },
+      {
+        "id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:rigid-body-dynamics",
+        "label": "Rigid Body Dynamics"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "force-control",
+      "label": "Force Control"
+    },
+    {
+      "slug": "spatial-anchor",
+      "label": "Spatial Anchor"
+    }
+  ]
+}

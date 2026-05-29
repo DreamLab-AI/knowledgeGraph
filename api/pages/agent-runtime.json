@@ -1,0 +1,71 @@
+{
+  "id": "urn:visionflow:page:agent-runtime",
+  "title": "Agent Runtime",
+  "slug": "agent-runtime",
+  "public": true,
+  "classIri": "urn:ngm:class:agent-runtime",
+  "domain": "ai",
+  "definition": "An Agent Runtime is the execution environment that manages the lifecycle, resource allocation, tool access, memory state, and communication channels of one or more autonomous AI agents. It provides the foundational services \u2014 process isolation, context persistence, tool-call dispatch, and inter-agent messaging \u2014 upon which agent application logic is built, analogous to how an operating system runtime supports application processes.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-agent-system",
+      "label": "AI Agent System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-task-execution",
+        "label": "Autonomous Task Execution"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      },
+      {
+        "id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:agent-orchestrator",
+        "label": "Agent Orchestrator"
+      },
+      {
+        "id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:execution-model",
+        "label": "Execution Model"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    }
+  ]
+}

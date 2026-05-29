@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:open-ai-api",
+  "title": "OpenAI API",
+  "slug": "open-ai-api",
+  "public": true,
+  "classIri": "urn:ngm:class:open-ai-api",
+  "domain": "ai",
+  "definition": "The OpenAI API is a hosted programming interface that gives developers access to OpenAI's models for text generation, reasoning, embeddings, image generation, speech, and tool use over HTTP. Exposing capabilities through endpoints such as chat completions, responses, and embeddings, it abstracts model hosting, scaling, and inference behind a usage-priced REST interface with structured outputs, function calling, and streaming. Its conventions have become a de facto standard widely emulated by other providers and compatible open-source serving stacks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:api",
+      "label": "API"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:llm-application-framework",
+        "label": "LLM Application Framework"
+      },
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gpt",
+        "label": "GPT"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "gpt-engineer",
+      "label": "GPT Engineer"
+    },
+    {
+      "slug": "home-assistant",
+      "label": "Home Assistant"
+    },
+    {
+      "slug": "lang-chain",
+      "label": "LangChain"
+    }
+  ]
+}

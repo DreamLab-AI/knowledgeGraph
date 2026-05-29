@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:personalised-learning",
+  "title": "Personalised Learning",
+  "slug": "personalised-learning",
+  "public": true,
+  "classIri": "urn:ngm:class:personalised-learning",
+  "domain": "ai",
+  "definition": "Personalised learning is an educational approach in which the pace, content, modality, and assessment of instruction are dynamically adapted to the knowledge state, learning style, goals, and preferences of the individual learner. Technology-enabled personalised learning uses data about learner interactions and performance to drive adaptive algorithms that present the most effective next learning experience for each person, contrasting with one-size-fits-all curriculum delivery.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:adaptive-learning",
+      "label": "Adaptive Learning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:education-and-ai",
+        "label": "Education and AI"
+      },
+      {
+        "id": "urn:ngm:class:immersive-learning",
+        "label": "Immersive Learning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:education-technology",
+        "label": "Education Technology"
+      },
+      {
+        "id": "urn:ngm:class:curriculum-learning",
+        "label": "Curriculum Learning"
+      },
+      {
+        "id": "urn:ngm:class:educational-methodology",
+        "label": "Educational Methodology"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "education-and-ai",
+      "label": "Education and AI"
+    },
+    {
+      "slug": "educational-narrative",
+      "label": "Educational Narrative"
+    }
+  ]
+}

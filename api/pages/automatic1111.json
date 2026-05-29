@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:automatic1111",
+  "title": "Automatic1111",
+  "slug": "automatic1111",
+  "public": true,
+  "classIri": "urn:ngm:class:automatic1111",
+  "domain": "ai",
+  "definition": "An open-source, browser-based graphical user interface for Stable Diffusion and compatible diffusion models, providing extensive control over image-generation parameters, model loading, and an extensible plugin architecture. Automatic1111 (AUTOMATIC1111/stable-diffusion-webui on GitHub) became the dominant community-facing inference frontend for locally hosted image-generation models from 2022 onwards.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:image-generation",
+      "label": "Image Generation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:inpainting",
+        "label": "Inpainting"
+      },
+      {
+        "id": "urn:ngm:class:outpainting",
+        "label": "Outpainting"
+      },
+      {
+        "id": "urn:ngm:class:image-editing",
+        "label": "Image Editing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:latent-diffusion",
+        "label": "Latent Diffusion"
+      },
+      {
+        "id": "urn:ngm:class:gpu-acceleration",
+        "label": "GPU Acceleration"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:sdxl",
+        "label": "SDXL"
+      },
+      {
+        "id": "urn:ngm:class:civitai",
+        "label": "Civitai"
+      },
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "control-net-and-similar-spatial-conditioning-systems",
+      "label": "ControlNet and Similar Spatial Conditioning Systems"
+    },
+    {
+      "slug": "kohya-dreambooth-and-similar",
+      "label": "KOHYA Dreambooth and similar"
+    }
+  ]
+}

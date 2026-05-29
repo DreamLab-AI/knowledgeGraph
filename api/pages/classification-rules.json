@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:classification-rules",
+  "title": "Classification Rules",
+  "slug": "classification-rules",
+  "public": true,
+  "classIri": "urn:ngm:class:classification-rules",
+  "domain": "ai",
+  "definition": "Classification Rules are explicit logical statements, typically in an if-then form, that assign instances or entities to predefined categories based on the values of their attributes or the satisfaction of specified conditions. Derived from rule-learning algorithms, expert elicitation, or ontology reasoning, classification rules provide interpretable, auditable decision logic for categorising data points in machine learning, knowledge engineering, and regulatory compliance contexts. They contrast with black-box classifiers by exposing their decision rationale directly as symbolic propositions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:inference-engine",
+      "label": "Inference Engine"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:expert-systems",
+        "label": "Expert Systems"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:logic-programming",
+        "label": "Logic Programming"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:owl",
+        "label": "OWL"
+      },
+      {
+        "id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-base",
+        "label": "Knowledge Base"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "category-hierarchies",
+      "label": "Category Hierarchies"
+    },
+    {
+      "slug": "privacy-filter",
+      "label": "Privacy Filter"
+    }
+  ]
+}

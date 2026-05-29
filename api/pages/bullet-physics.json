@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:bullet-physics",
+  "title": "Bullet Physics",
+  "slug": "bullet-physics",
+  "public": true,
+  "classIri": "urn:ngm:class:bullet-physics",
+  "domain": "spatial",
+  "definition": "Bullet Physics is an open-source, real-time physics simulation library that provides collision detection, rigid body dynamics, and soft body simulation for use in games, robotics, visual effects, and scientific computing. Originally developed by Erwin Coumans, it implements discrete and continuous collision detection alongside a constraint solver, enabling physically plausible interactions between complex 3D geometries at interactive frame rates.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:physics-engine",
+      "label": "Physics Engine"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:rigid-body-dynamics",
+        "label": "Rigid Body Dynamics"
+      },
+      {
+        "id": "urn:ngm:class:soft-body-dynamics",
+        "label": "Soft Body Dynamics"
+      },
+      {
+        "id": "urn:ngm:class:fluid-simulation",
+        "label": "Fluid Simulation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      },
+      {
+        "id": "urn:ngm:class:constraint-solver",
+        "label": "Constraint Solver"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "id": "urn:ngm:class:game-development",
+        "label": "Game Development"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "collision-detection",
+      "label": "Collision Detection"
+    },
+    {
+      "slug": "collision-detection",
+      "label": "Collision Detection"
+    },
+    {
+      "slug": "vircadia",
+      "label": "Vircadia"
+    }
+  ]
+}

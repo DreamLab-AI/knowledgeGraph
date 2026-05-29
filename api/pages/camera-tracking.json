@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:camera-tracking",
+  "title": "Camera Tracking",
+  "slug": "camera-tracking",
+  "public": true,
+  "classIri": "urn:ngm:class:camera-tracking",
+  "domain": "spatial",
+  "definition": "Camera Tracking is the process of continuously estimating the position and orientation (pose) of a camera in 3D space relative to a fixed reference frame or scene, typically using image feature analysis, optical flow, or fiducial marker detection. It underpins augmented reality, visual effects compositing, robotic navigation, and autonomous vehicle perception by enabling virtual or computed elements to be correctly registered to the physical world as the camera moves.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:motion-tracking",
+      "label": "Motion Tracking"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:visual-odometry",
+        "label": "Visual Odometry"
+      },
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:feature-detection",
+        "label": "Feature Detection"
+      },
+      {
+        "id": "urn:ngm:class:optical-flow",
+        "label": "Optical Flow"
+      },
+      {
+        "id": "urn:ngm:class:marker-based-tracking",
+        "label": "Marker Based Tracking"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      },
+      {
+        "id": "urn:ngm:class:epipolar-geometry",
+        "label": "Epipolar Geometry"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "virtual-production-vp",
+      "label": "Virtual Production (VP)"
+    },
+    {
+      "slug": "virtual-production-volume",
+      "label": "Virtual Production Volume"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    }
+  ]
+}

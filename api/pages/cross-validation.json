@@ -1,0 +1,62 @@
+{
+  "id": "urn:visionflow:page:cross-validation",
+  "title": "Cross-Validation",
+  "slug": "cross-validation",
+  "public": true,
+  "classIri": "urn:ngm:class:cross-validation",
+  "domain": "ai",
+  "definition": "Cross-validation is a statistical resampling technique for evaluating machine learning model performance by partitioning available data into complementary training and validation subsets, training the model on each partition in turn, and averaging the resulting error estimates. It provides a less optimistic and more generalisable estimate of out-of-sample predictive performance than a single train\u2013test split.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-machine-learning",
+      "label": "AI Machine Learning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.85,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:annotated-training-data",
+        "label": "Annotated Training Data"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:applied-machine-learning",
+        "label": "Applied Machine Learning"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:benign-overfitting",
+        "label": "Benign Overfitting"
+      },
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "algorithmic-bias-and-variance",
+      "label": "Algorithmic Bias and Variance"
+    },
+    {
+      "slug": "evaluation-benchmarks-and-leaderboards",
+      "label": "Evaluation benchmarks and leaderboards"
+    }
+  ]
+}

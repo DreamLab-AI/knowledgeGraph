@@ -1,0 +1,68 @@
+{
+  "id": "urn:visionflow:page:coordination-mechanisms",
+  "title": "Coordination Mechanisms",
+  "slug": "coordination-mechanisms",
+  "public": true,
+  "classIri": "urn:ngm:class:coordination-mechanisms",
+  "domain": "governance",
+  "definition": "Coordination Mechanisms are the structural arrangements, protocols, and incentive designs that enable multiple autonomous agents\u2014whether human organisations, software processes, or robotic systems\u2014to align their actions toward shared goals whilst managing conflicts, resource contention, and information asymmetries. They include market-based mechanisms, hierarchical authority structures, consensus protocols, and shared state systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:governance-framework",
+      "label": "Governance Framework"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:orchestration",
+        "label": "Orchestration"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:coordination-protocol",
+        "label": "Coordination Protocol"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "distributed-decision-making",
+      "label": "Distributed Decision Making"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    }
+  ]
+}

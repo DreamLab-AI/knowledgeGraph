@@ -1,0 +1,87 @@
+{
+  "id": "urn:visionflow:page:blockchain-ledger",
+  "title": "Blockchain Ledger",
+  "slug": "blockchain-ledger",
+  "public": true,
+  "classIri": "urn:ngm:class:blockchain-ledger",
+  "domain": "blockchain",
+  "definition": "A Blockchain Ledger is the authoritative, append-only register of all validated transactions and state changes maintained collectively by participants in a blockchain network, representing the shared ground truth from which account balances, ownership records, and contract states are derived. Unlike a traditional centralised ledger maintained by a single institution, a blockchain ledger is replicated across potentially thousands of nodes, with consensus rules ensuring that all honest participants converge on the same view of history. Its integrity derives from cryptographic chaining rather than institutional trust.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:distributed-ledger",
+      "label": "Distributed Ledger"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      },
+      {
+        "id": "urn:ngm:class:immutable-record",
+        "label": "Immutable Record"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:blockchain-consensus",
+        "label": "Blockchain Consensus"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:record-keeping-system",
+        "label": "Record Keeping System"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cultural-provenance-record",
+      "label": "Cultural Provenance Record"
+    },
+    {
+      "slug": "digital-evidence-chain-of-custody",
+      "label": "Digital Evidence Chain of Custody"
+    },
+    {
+      "slug": "manipulator-arm",
+      "label": "Manipulator Arm"
+    },
+    {
+      "slug": "social-vr",
+      "label": "Social VR"
+    },
+    {
+      "slug": "user-consent-token",
+      "label": "User Consent Token"
+    }
+  ]
+}

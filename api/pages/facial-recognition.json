@@ -1,0 +1,75 @@
+{
+  "id": "urn:visionflow:page:facial-recognition",
+  "title": "Facial Recognition",
+  "slug": "facial-recognition",
+  "public": true,
+  "classIri": "urn:ngm:class:facial-recognition",
+  "domain": "ai",
+  "definition": "Facial Recognition is a computer vision technology that identifies or verifies individuals by analysing facial features extracted from images or video frames, mapping them to a compact numerical embedding, and comparing that embedding against a gallery of known identities using similarity metrics. It operates across one-to-one verification and one-to-many identification modes, with applications spanning biometric access control, law enforcement, and digital identity verification.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-identity-verification",
+        "label": "Digital Identity Verification"
+      },
+      {
+        "id": "urn:ngm:class:biometric-verification",
+        "label": "Biometric Verification"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:deepfake-detection",
+        "label": "Deepfake Detection"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:biometric-authentication",
+        "label": "Biometric Authentication"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:camera",
+        "label": "Camera"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "digital-society-surveillance",
+      "label": "Digital Society Surveillance"
+    },
+    {
+      "slug": "human-capture-and-recognition",
+      "label": "Human Capture & Recognition"
+    }
+  ]
+}

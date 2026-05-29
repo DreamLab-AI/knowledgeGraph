@@ -1,0 +1,71 @@
+{
+  "id": "urn:visionflow:page:burn-and-mint-bridge",
+  "title": "Burn-and-Mint Bridge",
+  "slug": "burn-and-mint-bridge",
+  "public": true,
+  "classIri": "urn:ngm:class:burn-and-mint-bridge",
+  "domain": "blockchain",
+  "definition": "A Burn-and-Mint Bridge is a cross-chain asset transfer mechanism in which tokens are irreversibly destroyed (burned) on the source blockchain and an equivalent quantity of canonical tokens is newly created (minted) on the destination blockchain, ensuring that the total circulating supply across chains remains constant. This contrasts with lock-and-mint approaches by eliminating custodial reserves, instead relying on protocol-level guarantees and verifiable burn proofs to authorise minting on the receiving chain.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cross-chain-asset-transfer",
+        "label": "Cross Chain Asset Transfer"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:lock-and-mint-bridge",
+        "label": "Lock-and-Mint Bridge"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cross-chain-messaging",
+        "label": "Cross Chain Messaging"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    },
+    {
+      "slug": "cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "id": "urn:visionflow:page:cryptographic-infrastructure",
+  "title": "Cryptographic Infrastructure",
+  "slug": "cryptographic-infrastructure",
+  "public": true,
+  "classIri": "urn:ngm:class:cryptographic-infrastructure",
+  "domain": "infrastructure",
+  "definition": "Cryptographic infrastructure is the ensemble of hardware, software, protocols, and institutional processes that provision, manage, and operate cryptographic primitives at scale across a computing environment. It encompasses key generation and distribution, certificate authorities, hardware security modules, and the policies governing their lifecycle. As a foundational layer, it underpins secure communications, digital identity, and data integrity across both centralised and decentralised systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptographic-algorithm",
+      "label": "Cryptographic Algorithm"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      }
+    ],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-signing",
+        "label": "Cryptographic Signing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cbdc-frameworks",
+      "label": "CBDC Frameworks"
+    },
+    {
+      "slug": "cybersecurity-standard",
+      "label": "Cybersecurity Standard"
+    },
+    {
+      "slug": "post-quantum-cryptography",
+      "label": "Post-Quantum Cryptography"
+    }
+  ]
+}

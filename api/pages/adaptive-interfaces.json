@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:adaptive-interfaces",
+  "title": "Adaptive Interfaces",
+  "slug": "adaptive-interfaces",
+  "public": true,
+  "classIri": "urn:ngm:class:adaptive-interfaces",
+  "domain": "web",
+  "definition": "Adaptive interfaces are user interface systems that dynamically reconfigure their layout, content, modality, or interaction style in response to the current user's context, behaviour, preferences, or inferred cognitive state. They employ user modelling, machine learning, and context-aware computing to personalise the interaction layer without requiring manual configuration. The goal is to optimise usability, accessibility, and task performance across diverse user populations and situational conditions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:personalised-learning",
+        "label": "Personalised Learning"
+      },
+      {
+        "id": "urn:ngm:class:accessible-experience",
+        "label": "Accessible Experience"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:recommendation-system",
+        "label": "Recommendation System"
+      },
+      {
+        "id": "urn:ngm:class:context-awareness",
+        "label": "Context Awareness"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:hyper-personalisation",
+        "label": "Hyper personalisation"
+      },
+      {
+        "id": "urn:ngm:class:attention-aware-interaction",
+        "label": "Attention Aware Interaction"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "attention-aware-interaction",
+      "label": "Attention Aware Interaction"
+    },
+    {
+      "slug": "context-awareness",
+      "label": "Context Awareness"
+    },
+    {
+      "slug": "interaction-domain",
+      "label": "Interaction Domain"
+    }
+  ]
+}

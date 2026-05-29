@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:carbon-offset-programme",
+  "title": "Carbon Offset Programme",
+  "slug": "carbon-offset-programme",
+  "public": true,
+  "classIri": "urn:ngm:class:carbon-offset-programme",
+  "domain": "governance",
+  "definition": "A carbon offset programme is a structured scheme that generates, certifies, issues, and retires carbon credits representing greenhouse gas emissions reductions or removals achieved by specific projects or activities, providing a mechanism by which organisations or individuals can compensate for their own emissions by financing equivalent climate action elsewhere. Programmes operate under standards bodies \u2014 including the Verified Carbon Standard (Verra), Gold Standard, American Carbon Registry (ACR), and Climate Action Reserve \u2014 that define methodologies for quantifying emissions impacts, require independent verification, and maintain public registries to prevent double-counting of credits. Projects include avoided deforestation (REDD+), renewable energy, methane capture, reforestation, and engineered carbon removal.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:carbon-offset-trading",
+      "label": "Carbon Offset Trading"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:carbon-neutrality",
+        "label": "Carbon Neutrality"
+      },
+      {
+        "id": "urn:ngm:class:voluntary-carbon-market",
+        "label": "Voluntary Carbon Market"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:carbon-credits",
+        "label": "Carbon Credits"
+      },
+      {
+        "id": "urn:ngm:class:carbon-registry",
+        "label": "Carbon Registry"
+      },
+      {
+        "id": "urn:ngm:class:carbon-offset-certificate",
+        "label": "Carbon Offset Certificate"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:environmental-certificate",
+        "label": "Environmental Certificate"
+      },
+      {
+        "id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "carbon-neutral-blockchain",
+      "label": "Carbon Neutral Blockchain"
+    },
+    {
+      "slug": "green-blockchain-initiatives",
+      "label": "Green Blockchain Initiatives"
+    }
+  ]
+}

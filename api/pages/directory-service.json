@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:directory-service",
+  "title": "Directory Service",
+  "slug": "directory-service",
+  "public": true,
+  "classIri": "urn:ngm:class:directory-service",
+  "domain": "infrastructure",
+  "definition": "A directory service is a specialised database that stores, organises, and provides access to information about the entities of a network \u2014 users, groups, devices, and services \u2014 optimised for high-volume reads and hierarchical lookup. Accessed through protocols such as LDAP, it underpins authentication, authorisation, and resource discovery in enterprise environments, with implementations including Active Directory and OpenLDAP. Directory services centralise identity data so that credentials and access policies can be managed once and enforced consistently across many systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:identity-provider",
+      "label": "Identity Provider"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:federated-identity",
+        "label": "Federated Identity"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:decentralized-identity",
+        "label": "Decentralized Identity"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "access-control-system",
+      "label": "Access Control System"
+    },
+    {
+      "slug": "identity-management-system",
+      "label": "Identity Management System"
+    },
+    {
+      "slug": "identity-provider-id-p",
+      "label": "Identity Provider (IdP)"
+    },
+    {
+      "slug": "identity-provider",
+      "label": "Identity Provider"
+    }
+  ]
+}

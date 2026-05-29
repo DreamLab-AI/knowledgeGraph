@@ -1,0 +1,62 @@
+{
+  "id": "urn:visionflow:page:erc20-votes-standard",
+  "title": "ERC20Votes Standard",
+  "slug": "erc20-votes-standard",
+  "public": true,
+  "classIri": "urn:ngm:class:erc20-votes-standard",
+  "domain": "blockchain",
+  "definition": "ERC20Votes is an extension of the ERC-20 fungible-token standard that adds on-chain governance capabilities by tracking historical voting power through checkpointed balances and supporting delegation of votes. It records a snapshot of each account's balance at every block where it changes, so a governance contract can query voting weight at a specific past block, preventing double-voting and flash-loan manipulation. Implemented in widely audited libraries, it is the dominant pattern for token-based voting in decentralised autonomous organisations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:erc-20-standard",
+      "label": "ERC-20 Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:dao",
+        "label": "DAO"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:erc-20-votes",
+        "label": "ERC-20 Votes"
+      },
+      {
+        "id": "urn:ngm:individual:ethereum",
+        "label": "Ethereum"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "on-chain-voting",
+      "label": "On Chain Voting"
+    }
+  ]
+}

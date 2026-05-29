@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:network-communication",
+  "title": "Network Communication",
+  "slug": "network-communication",
+  "public": true,
+  "classIri": "urn:ngm:class:network-communication",
+  "domain": "infrastructure",
+  "definition": "Network Communication is the transmission of data between computing nodes via shared or dedicated media, governed by layered protocol stacks that abstract physical signal propagation into reliable, addressable data exchange. It encompasses all paradigms of machine-to-machine data transfer including wired, wireless, and optical mediums organised according to reference models such as the OSI seven-layer model and TCP/IP suite.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:communication-network",
+      "label": "Communication Network"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.85,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:protocol-stack",
+        "label": "Protocol Stack"
+      },
+      {
+        "id": "urn:ngm:class:network-layer",
+        "label": "Network Layer"
+      },
+      {
+        "id": "urn:ngm:class:transport-layer",
+        "label": "Transport Layer"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:network-architecture",
+        "label": "Network Architecture"
+      },
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "distributed-computing",
+      "label": "Distributed Computing"
+    },
+    {
+      "slug": "network-protocol",
+      "label": "Network Protocol"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:slot-filling",
+  "title": "Slot Filling",
+  "slug": "slot-filling",
+  "public": true,
+  "classIri": "urn:ngm:class:slot-filling",
+  "domain": "ai",
+  "definition": "Slot filling is a natural language processing task in which a system extracts and populates predefined semantic fields (slots) from user utterances within a task-oriented dialogue context, enabling the system to gather the structured information required to fulfil a user request. It operates alongside intent classification to transform free-form text into actionable structured representations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:information-extraction",
+      "label": "Information Extraction"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:intent-classification",
+        "label": "Intent Classification"
+      },
+      {
+        "id": "urn:ngm:class:named-entity-recognition",
+        "label": "Named Entity Recognition"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:dialogue-system",
+        "label": "Dialogue System"
+      },
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:dialogue-state-tracking",
+        "label": "Dialogue State Tracking"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-understanding",
+        "label": "Natural Language Understanding"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "chatbots",
+      "label": "Chatbots"
+    },
+    {
+      "slug": "meeting-ai-assistant",
+      "label": "Meeting AI Assistant"
+    }
+  ]
+}

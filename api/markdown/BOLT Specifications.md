@@ -1,0 +1,56 @@
+public:: true
+
+# BOLT Specifications
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:bolt-specifications",
+  "@type": "Page",
+  "vc:slug": "bolt-specifications",
+  "title": "BOLT Specifications",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 2
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:bolt-specifications",
+  "@type": "Class",
+  "label": "BOLT Specifications",
+  "definition": "The BOLT (Basis of Lightning Technology) specifications are the open, community-maintained set of documents defining the Lightning Network protocol, covering peer messaging, channel establishment and closure, commitment transactions, onion-routed payments, and invoice formats. By specifying the wire protocol and behaviour precisely, BOLTs ensure that independently developed Lightning implementations interoperate on a single payment network layered atop Bitcoin. They are the normative reference that makes the Lightning Network a multi-implementation open standard rather than a single product.",
+  "domain": "blockchain",
+  "maturity": "established",
+  "subClassOf": [{"@id": "urn:ngm:class:technical-standard", "label": "Technical Standard"}],
+  "relations": {
+    "enables": [
+      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:lightning-network", "label": "Lightning Network"},
+      {"@id": "urn:ngm:individual:bitcoin", "label": "Bitcoin"}
+    ]
+  },
+  "quality": 0.8
+}
+```
+
+- ### Definition
+  - The BOLT specifications are the open, community-maintained documents defining the Lightning Network protocol — messaging, channels, commitment transactions, onion-routed payments, and invoices — ensuring independent implementations interoperate.
+
+- ### Relationships
+  - BOLT Specifications is a subclass of [[Technical Standard]] and uses an underlying [[Network Protocol]] for peer messaging. It enables [[Interoperability]] among Lightning implementations and relates directly to the [[Lightning Network]] it defines and to [[Bitcoin]], the settlement layer Lightning is built upon.
+
+- ### Content
+  - The Lightning Network is not a single piece of software but a protocol implemented by several independent teams, and the BOLT specifications are what bind those implementations into one coherent network. Without a precise shared specification, two nodes from different software stacks could not open channels or route payments to each other, fragmenting liquidity and undermining the network's value. The BOLTs play the role for Lightning that RFCs play for the internet.
+
+  - The specifications are organised by concern across numbered documents. They define the encrypted transport and peer messaging between nodes, the multi-step protocol for opening and cooperatively or unilaterally closing payment channels, the structure of commitment transactions that encode each party's current balance, the onion-routing scheme that forwards payments across multiple hops without intermediaries learning the full path, and the invoice format that encodes payment requests.
+
+  - Onion-routed, multi-hop payments are the conceptual heart of the protocol. A sender constructs a layered encrypted packet so that each forwarding node learns only the previous and next hop, preserving privacy, while hash-time-locked contracts ensure that funds either move atomically along the entire route or are returned — no intermediary can steal an in-flight payment. Specifying this behaviour exactly is what allows arbitrary nodes to cooperate in routing without trusting one another.
+
+  - The BOLTs evolve through open community discussion, with proposals refined and ratified by the implementers themselves, and newer work extends the standard toward more flexible offers and protocol upgrades. This open, multi-implementation governance is strategically important: it keeps the Lightning Network from being captured by any single vendor, mirrors the open-standards ethos of Bitcoin itself, and ensures the payment layer remains a public good that anyone can implement and extend.

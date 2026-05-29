@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:carbon-markets",
+  "title": "Carbon Markets",
+  "slug": "carbon-markets",
+  "public": true,
+  "classIri": "urn:ngm:class:carbon-markets",
+  "domain": "finance",
+  "definition": "Carbon markets are trading systems in which carbon credits or allowances \u2014 each representing one metric tonne of CO\u2082 equivalent \u2014 are bought and sold between emitters, governments, financial intermediaries, and voluntary buyers, using price signals to incentivise least-cost emissions reductions across the economy. They encompass compliance markets (mandatory emissions trading schemes such as the EU ETS, California Cap-and-Trade, and Article 6 mechanisms under the Paris Agreement) and voluntary carbon markets (VCMs) where organisations purchase credits from independently verified projects to offset residual emissions against net-zero commitments. Market integrity depends on rigorous project standards, independent verification, and robust registry systems to prevent double counting.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:environmental-asset-market",
+      "label": "Environmental Asset Market"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:carbon-offset-trading",
+        "label": "Carbon Offset Trading"
+      },
+      {
+        "id": "urn:ngm:class:carbon-neutrality",
+        "label": "Carbon Neutrality"
+      },
+      {
+        "id": "urn:ngm:class:net-zero-targets",
+        "label": "Net Zero Targets"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:carbon-credits",
+        "label": "Carbon Credits"
+      },
+      {
+        "id": "urn:ngm:class:carbon-registry",
+        "label": "Carbon Registry"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:voluntary-carbon-market",
+        "label": "Voluntary Carbon Market"
+      },
+      {
+        "id": "urn:ngm:class:carbon-price-discovery",
+        "label": "Carbon Price Discovery"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "carbon-credit-tracking",
+      "label": "Carbon Credit Tracking"
+    },
+    {
+      "slug": "carbon-neutral-blockchain",
+      "label": "Carbon Neutral Blockchain"
+    },
+    {
+      "slug": "renewable-energy-certificates",
+      "label": "Renewable Energy Certificates"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

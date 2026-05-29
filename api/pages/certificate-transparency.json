@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:certificate-transparency",
+  "title": "Certificate Transparency",
+  "slug": "certificate-transparency",
+  "public": true,
+  "classIri": "urn:ngm:class:certificate-transparency",
+  "domain": "security",
+  "definition": "Certificate Transparency (CT) is an open framework and internet standard (RFC 6962 and RFC 9162) that creates a publicly auditable, append-only log of all TLS certificates issued by certificate authorities, enabling domain owners, browser vendors, and security researchers to detect misissued or fraudulent certificates rapidly. CT logs use Merkle hash trees to provide cryptographic proofs of inclusion and consistency, guaranteeing that any certificate added to a log cannot be subsequently removed or altered. Major browsers enforce CT by requiring certificates to carry signed certificate timestamps (SCTs) from recognised logs, making unauthorised certificate issuance immediately detectable.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:public-key-infrastructure",
+      "label": "Public Key Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      },
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:audit-log",
+        "label": "Audit Log"
+      },
+      {
+        "id": "urn:ngm:class:tls",
+        "label": "TLS"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:tls-1-3",
+        "label": "TLS 1.3"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "slug": "hash-function",
+      "label": "Hash Function"
+    }
+  ]
+}

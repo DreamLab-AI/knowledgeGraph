@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:wikidata",
+  "title": "Wikidata",
+  "slug": "wikidata",
+  "public": true,
+  "classIri": "urn:ngm:class:wikidata",
+  "domain": "knowledge",
+  "definition": "Wikidata is a free, collaboratively edited knowledge base operated by the Wikimedia Foundation that stores structured data as machine-readable items and statements, serving as a central data repository for Wikipedia and the broader web. Each item has a stable identifier and is described by property-value statements with references and qualifiers, exported as linked data and queryable via SPARQL. Multilingual by design and released under a public-domain licence, Wikidata is one of the largest open knowledge graphs and a key hub in the linked-data web.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:knowledge-graph",
+      "label": "Knowledge Graph"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      },
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "domain-ontology",
+      "label": "Domain Ontology"
+    },
+    {
+      "slug": "graph-database",
+      "label": "Graph Database"
+    },
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    }
+  ]
+}

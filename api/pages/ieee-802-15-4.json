@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:ieee-802-15-4",
+  "title": "IEEE 802.15.4",
+  "slug": "ieee-802-15-4",
+  "public": true,
+  "classIri": "urn:ngm:class:ieee-802-15-4",
+  "domain": "infrastructure",
+  "definition": "IEEE 802.15.4 is a low-rate wireless personal area network (LR-WPAN) standard that specifies the physical layer (PHY) and medium access control (MAC) sublayer for short-range, low-power, low-data-rate wireless communication, operating primarily in the 2.4 GHz ISM band at up to 250 kbps. It serves as the foundational radio layer for higher-level IoT protocols including Zigbee, Thread, WirelessHART, and 6LoWPAN, enabling battery-powered sensor and actuator networks with multi-year device lifetimes.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ieee-802-x",
+      "label": "IEEE 802.x"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ieee-802-11",
+        "label": "IEEE 802.11"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:zigbee",
+        "label": "Zigbee"
+      },
+      {
+        "id": "urn:ngm:class:thread-protocol",
+        "label": "Thread Protocol"
+      },
+      {
+        "id": "urn:ngm:class:matter-protocol",
+        "label": "Matter Protocol"
+      },
+      {
+        "id": "urn:ngm:class:wireless-hart",
+        "label": "WirelessHART"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "io-t-sensor-network",
+      "label": "IoT Sensor Network"
+    },
+    {
+      "slug": "physical-layer",
+      "label": "Physical Layer"
+    }
+  ]
+}

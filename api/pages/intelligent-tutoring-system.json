@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:intelligent-tutoring-system",
+  "title": "Intelligent Tutoring System",
+  "slug": "intelligent-tutoring-system",
+  "public": true,
+  "classIri": "urn:ngm:class:intelligent-tutoring-system",
+  "domain": "ai",
+  "definition": "An AI-powered software system that delivers personalised instruction by modelling a learner's knowledge state, selecting appropriate pedagogical strategies, and adapting content difficulty in real time without requiring a human instructor. Intelligent tutoring systems integrate domain knowledge, learner models, and tutoring strategies to provide one-on-one instructional support at scale.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:educational-technology",
+      "label": "Educational Technology"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:adaptive-learning",
+        "label": "Adaptive Learning"
+      },
+      {
+        "id": "urn:ngm:class:curriculum-learning",
+        "label": "Curriculum Learning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cognitive-ai",
+      "label": "Cognitive AI"
+    },
+    {
+      "slug": "education-and-ai",
+      "label": "Education and AI"
+    }
+  ]
+}

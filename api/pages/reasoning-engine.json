@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:reasoning-engine",
+  "title": "Reasoning Engine",
+  "slug": "reasoning-engine",
+  "public": true,
+  "classIri": "urn:ngm:class:reasoning-engine",
+  "domain": "ai",
+  "definition": "A reasoning engine is a software component that derives new conclusions from a body of knowledge by applying logical inference rules, probabilistic methods, or learned heuristics. Classical reasoning engines operate over symbolic knowledge bases using forward or backward chaining, description-logic subsumption, or constraint solving, while modern neuro-symbolic and LLM-based engines combine learned language representations with structured tool use and search. Reasoning engines power expert systems, semantic-web query answering, automated planning, and multi-step problem solving in agentic AI systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:reasoning",
+      "label": "Reasoning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:chain-of-thought",
+        "label": "Chain of Thought"
+      },
+      {
+        "id": "urn:ngm:class:multi-step-reasoning",
+        "label": "Multi-Step Reasoning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:llm-agents",
+        "label": "LLM Agents"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "intelligent-virtual-entity",
+      "label": "Intelligent Virtual Entity"
+    }
+  ]
+}

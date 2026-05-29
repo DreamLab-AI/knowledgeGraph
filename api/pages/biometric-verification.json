@@ -1,0 +1,71 @@
+{
+  "id": "urn:visionflow:page:biometric-verification",
+  "title": "Biometric Verification",
+  "slug": "biometric-verification",
+  "public": true,
+  "classIri": "urn:ngm:class:biometric-verification",
+  "domain": "security",
+  "definition": "Biometric verification is the one-to-one matching process in which a live biometric sample presented by a claimant is compared against a single pre-enrolled template associated with the claimed identity, producing an accept or reject decision based on a similarity threshold. It is distinct from biometric identification, which performs a one-to-many search across an entire database, making verification faster and more privacy-preserving for authentication use cases.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:identity-verification",
+      "label": "Identity Verification"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:biometric-authentication",
+        "label": "Biometric Authentication"
+      },
+      {
+        "id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:biometric-binding-mechanism",
+        "label": "Biometric Binding Mechanism"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-identity-verification",
+        "label": "Digital Identity Verification"
+      },
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "humanity-attestation",
+      "label": "Humanity Attestation"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    }
+  ]
+}

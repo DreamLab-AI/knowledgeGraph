@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:long-horizon-planning",
+  "title": "Long-Horizon Planning",
+  "slug": "long-horizon-planning",
+  "public": true,
+  "classIri": "urn:ngm:class:long-horizon-planning",
+  "domain": "ai",
+  "definition": "Long-horizon planning is the problem of generating and executing sequences of actions over extended time horizons \u2014 spanning hundreds to thousands of steps \u2014 to achieve high-level goals that cannot be accomplished through simple reactive policies. It requires maintaining coherent goals, managing intermediate subgoal states, and adapting plans in response to environmental changes and unexpected outcomes.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:task-planning",
+      "label": "Task Planning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:llm-agents",
+        "label": "LLM Agents"
+      },
+      {
+        "id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning-for-robotics",
+        "label": "Reinforcement Learning for Robotics"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "artificial-general-intelligence",
+      "label": "Artificial General Intelligence"
+    },
+    {
+      "slug": "context-engineering",
+      "label": "Context Engineering"
+    }
+  ]
+}

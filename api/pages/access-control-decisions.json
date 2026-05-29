@@ -1,0 +1,79 @@
+{
+  "id": "urn:visionflow:page:access-control-decisions",
+  "title": "Access Control Decisions",
+  "slug": "access-control-decisions",
+  "public": true,
+  "classIri": "urn:ngm:class:access-control-decisions",
+  "domain": "security",
+  "definition": "Access Control Decisions are the runtime determinations made by a policy engine or decision point as to whether a particular subject\u2014user, process, or device\u2014is permitted to perform a requested action on a protected resource, based on evaluated policies, attributes, and contextual signals. These decisions are the operational output of an access control architecture and are typically produced by a Policy Decision Point (PDP) and enforced by a Policy Enforcement Point (PEP).",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:access-control",
+      "label": "Access Control"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:authorisation",
+        "label": "Authorisation"
+      },
+      {
+        "id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:policy-engine",
+        "label": "Policy Engine"
+      },
+      {
+        "id": "urn:ngm:class:policy-decision-point",
+        "label": "Policy Decision Point"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:role-based-access-control",
+        "label": "Role-Based Access Control"
+      },
+      {
+        "id": "urn:ngm:class:policy-enforcement-point",
+        "label": "Policy Enforcement Point"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "reputation-scoring-model",
+      "label": "Reputation Scoring Model"
+    },
+    {
+      "slug": "trust-score-metric",
+      "label": "Trust Score Metric"
+    }
+  ]
+}

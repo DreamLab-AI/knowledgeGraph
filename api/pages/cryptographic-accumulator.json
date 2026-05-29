@@ -1,0 +1,62 @@
+{
+  "id": "urn:visionflow:page:cryptographic-accumulator",
+  "title": "Cryptographic Accumulator",
+  "slug": "cryptographic-accumulator",
+  "public": true,
+  "classIri": "urn:ngm:class:cryptographic-accumulator",
+  "domain": "security",
+  "definition": "A cryptographic accumulator is a primitive that compresses a large set of elements into a single short value while still permitting compact proofs that a given element is (or is not) a member of the set. Constructions based on RSA groups, bilinear pairings, or Merkle trees allow membership witnesses whose size is independent of the set's cardinality, and dynamic accumulators support efficient addition and removal of elements. Accumulators underpin scalable membership proofs in anonymous credentials, certificate revocation, and stateless blockchain clients.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptographic-primitive",
+      "label": "Cryptographic Primitive"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "distributed-identity",
+      "label": "Distributed Identity"
+    },
+    {
+      "slug": "hyperledger-indy",
+      "label": "Hyperledger Indy"
+    }
+  ]
+}

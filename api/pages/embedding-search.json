@@ -1,0 +1,67 @@
+{
+  "id": "urn:visionflow:page:embedding-search",
+  "title": "Embedding Search",
+  "slug": "embedding-search",
+  "public": true,
+  "classIri": "urn:ngm:class:embedding-search",
+  "domain": "ai",
+  "definition": "Embedding search is a retrieval paradigm in which queries and documents are encoded into dense vector representations in a shared semantic space, and similarity\u2014typically measured by cosine distance or dot product\u2014is used to rank and retrieve the most relevant items. Unlike keyword-based search, embedding search captures semantic relatedness, enabling matches on meaning rather than exact lexical overlap.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:semantic-search",
+      "label": "Semantic Search"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:vector-search",
+        "label": "Vector Search"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:vector-embeddings",
+        "label": "Vector Embeddings"
+      },
+      {
+        "id": "urn:ngm:class:vector-store",
+        "label": "Vector Store"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:dense-retrieval",
+        "label": "Dense Retrieval"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-companions",
+      "label": "AI companions"
+    },
+    {
+      "slug": "agents",
+      "label": "Agents"
+    }
+  ]
+}

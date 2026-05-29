@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:content-creation-pipeline",
+  "title": "Content Creation Pipeline",
+  "slug": "content-creation-pipeline",
+  "public": true,
+  "classIri": "urn:ngm:class:content-creation-pipeline",
+  "domain": "metaverse",
+  "definition": "A Content Creation Pipeline is an automated or semi-automated workflow that orchestrates the sequential and parallel stages of producing digital content\u2014including ideation, scripting, asset generation, editing, quality assurance, and distribution\u2014into a reproducible, scalable production system. In modern contexts, these pipelines integrate AI generation models, human editorial review, digital asset management, and multi-platform publishing endpoints, enabling high-throughput content production at reduced per-unit cost.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:content-creation",
+      "label": "Content Creation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:metaverse-content-creation",
+        "label": "Metaverse Content Creation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:content-creation-tool",
+        "label": "Content Creation Tool"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-content-creation",
+        "label": "Digital Content Creation"
+      },
+      {
+        "id": "urn:ngm:class:media-production",
+        "label": "Media Production"
+      },
+      {
+        "id": "urn:ngm:class:video-production-pipeline",
+        "label": "Video Production Pipeline"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "digital-asset-workflow",
+      "label": "Digital Asset Workflow"
+    },
+    {
+      "slug": "procedural-content-generation",
+      "label": "Procedural Content Generation"
+    }
+  ]
+}

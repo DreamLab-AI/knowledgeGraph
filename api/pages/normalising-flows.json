@@ -1,0 +1,62 @@
+{
+  "id": "urn:visionflow:page:normalising-flows",
+  "title": "Normalising Flows",
+  "slug": "normalising-flows",
+  "public": true,
+  "classIri": "urn:ngm:class:normalising-flows",
+  "domain": "ai",
+  "definition": "Normalising flows are a class of generative models that learn complex probability distributions by composing a series of invertible, differentiable transformations that map a simple base distribution (typically Gaussian) to the target distribution, with exact log-likelihood computation via the change-of-variables formula and the Jacobian determinant. Both sampling and density evaluation are tractable.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:generative-ai",
+      "label": "Generative AI"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gaussian-distribution",
+        "label": "Gaussian Distribution"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:gaussian-process",
+        "label": "Gaussian Process"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "probabilistic-model",
+      "label": "Probabilistic Model"
+    },
+    {
+      "slug": "time-series-forecasting",
+      "label": "Time Series Forecasting"
+    }
+  ]
+}

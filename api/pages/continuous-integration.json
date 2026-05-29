@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:continuous-integration",
+  "title": "Continuous Integration",
+  "slug": "continuous-integration",
+  "public": true,
+  "classIri": "urn:ngm:class:continuous-integration",
+  "domain": "infrastructure",
+  "definition": "Continuous Integration (CI) is a software engineering practice in which developers frequently merge code changes into a shared repository\u2014typically multiple times per day\u2014triggering automated build and test pipelines that provide rapid feedback on integration correctness. CI reduces the cost and risk of integration by detecting conflicts, regressions, and build failures early, and serves as the foundation of broader continuous delivery and DevOps workflows.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:code-review",
+        "label": "Code Review"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "id": "urn:ngm:class:git",
+        "label": "Git"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ci-cd-automation",
+        "label": "CI/CD Automation"
+      },
+      {
+        "id": "urn:ngm:class:automated-testing",
+        "label": "Automated Testing"
+      },
+      {
+        "id": "urn:ngm:class:agile-software-development",
+        "label": "Agile Software Development"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "diagrams-as-code",
+      "label": "Diagrams as Code"
+    },
+    {
+      "slug": "remote-pair-programming",
+      "label": "Remote Pair Programming"
+    },
+    {
+      "slug": "testing-process",
+      "label": "Testing Process"
+    }
+  ]
+}

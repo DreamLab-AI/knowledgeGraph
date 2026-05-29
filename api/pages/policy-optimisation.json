@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:policy-optimisation",
+  "title": "Policy Optimisation",
+  "slug": "policy-optimisation",
+  "public": true,
+  "classIri": "urn:ngm:class:policy-optimisation",
+  "domain": "ai",
+  "definition": "Policy optimisation is the process of searching over a parameterised space of decision-making policies to maximise a scalar objective, typically a cumulative reward signal in a reinforcement learning context. It encompasses both gradient-based methods such as proximal policy optimisation and gradient-free approaches such as evolutionary strategies, applied across discrete and continuous action spaces.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:optimisation",
+      "label": "Optimisation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning-for-robotics",
+        "label": "Reinforcement Learning for Robotics"
+      },
+      {
+        "id": "urn:ngm:class:deep-reinforcement-learning",
+        "label": "Deep Reinforcement Learning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning-algorithm",
+        "label": "Reinforcement Learning Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:value-function",
+        "label": "Value Function"
+      },
+      {
+        "id": "urn:ngm:class:reward-function",
+        "label": "Reward Function"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:proximal-policy-optimisation",
+        "label": "Proximal Policy Optimisation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "learning-algorithm",
+      "label": "Learning Algorithm"
+    },
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    }
+  ]
+}

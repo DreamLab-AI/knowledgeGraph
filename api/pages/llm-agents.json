@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:llm-agents",
+  "title": "LLM Agents",
+  "slug": "llm-agents",
+  "public": true,
+  "classIri": "urn:ngm:class:llm-agents",
+  "domain": "ai",
+  "definition": "LLM Agents are autonomous software systems that use large language models as their core reasoning engine to perceive inputs, plan multi-step actions, invoke external tools, and pursue goals over extended horizons with minimal per-step human oversight. They extend base language models with memory, tool use, and feedback loops to accomplish tasks that require sequential decision-making.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:agentic-ai",
+      "label": "Agentic AI"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      },
+      {
+        "id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      },
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cli-multi-agent-systems",
+      "label": "CLI Multi-Agent Systems"
+    },
+    {
+      "slug": "context-engineering",
+      "label": "Context Engineering"
+    }
+  ]
+}

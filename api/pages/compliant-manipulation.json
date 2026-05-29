@@ -1,0 +1,67 @@
+{
+  "id": "urn:visionflow:page:compliant-manipulation",
+  "title": "Compliant Manipulation",
+  "slug": "compliant-manipulation",
+  "public": true,
+  "classIri": "urn:ngm:class:compliant-manipulation",
+  "domain": "robotics",
+  "definition": "Compliant Manipulation is a branch of robotic manipulation in which the robot's end-effector or structural members intentionally yield to contact forces, using passive mechanical compliance or active force control to safely interact with uncertain, fragile, or human-occupied environments. Unlike rigid position-controlled manipulation, compliant manipulation regulates interaction forces as a first-class control objective.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robot-manipulation",
+      "label": "Robot Manipulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:robotic-grasping",
+        "label": "Robotic Grasping"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:force-control",
+        "label": "Force Control"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      },
+      {
+        "id": "urn:ngm:class:soft-robotics",
+        "label": "Soft Robotics"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "force-control",
+      "label": "Force Control"
+    },
+    {
+      "slug": "model-based-control",
+      "label": "Model Based Control"
+    }
+  ]
+}

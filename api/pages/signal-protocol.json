@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:signal-protocol",
+  "title": "Signal Protocol",
+  "slug": "signal-protocol",
+  "public": true,
+  "classIri": "urn:ngm:class:signal-protocol",
+  "domain": "ai",
+  "definition": "Signal Protocol is an open-source cryptographic messaging protocol that provides end-to-end encryption for instant messaging applications, combining the Double Ratchet Algorithm with the X3DH (Extended Triple Diffie-Hellman) key agreement protocol. It achieves forward secrecy and break-in recovery (future secrecy) by continuously rotating encryption keys after each message exchange.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:secure-messaging",
+      "label": "Secure Messaging"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:end-to-end-encryption",
+        "label": "End-to-End Encryption"
+      },
+      {
+        "id": "urn:ngm:class:key-exchange",
+        "label": "Key Exchange"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:noise-protocol",
+        "label": "Noise Protocol"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "cyber-security-and-cryptography",
+      "label": "Cyber Security and Cryptography"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:point-cloud-generation",
+  "title": "Point Cloud Generation",
+  "slug": "point-cloud-generation",
+  "public": true,
+  "classIri": "urn:ngm:class:point-cloud-generation",
+  "domain": "metaverse",
+  "definition": "Point Cloud Generation is the process of producing a set of discrete three-dimensional coordinate samples (points), each representing a position on the surface or within the volume of a physical object or environment, typically augmented with attributes such as colour (RGB), intensity, or surface normals. Generation methods include active sensing (LiDAR, structured light, time-of-flight cameras) and passive photogrammetric reconstruction from overlapping images, producing the fundamental geometric representation used in autonomous navigation, digital twins, and 3D content creation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:point-cloud",
+      "label": "Point Cloud"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:3-d-scanning",
+        "label": "3D Scanning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "LiDAR"
+      },
+      {
+        "id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      },
+      {
+        "id": "urn:ngm:class:depth-sensing",
+        "label": "Depth Sensing"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:geospatial-data",
+        "label": "Geospatial Data"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "3-d-reconstruction",
+      "label": "3D Reconstruction"
+    },
+    {
+      "slug": "photogrammetry",
+      "label": "Photogrammetry"
+    }
+  ]
+}

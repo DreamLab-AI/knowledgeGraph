@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:markov-chain-monte-carlo",
+  "title": "Markov Chain Monte Carlo",
+  "slug": "markov-chain-monte-carlo",
+  "public": true,
+  "classIri": "urn:ngm:class:markov-chain-monte-carlo",
+  "domain": "ai",
+  "definition": "Markov Chain Monte Carlo (MCMC) is a class of algorithms that generate samples from a target probability distribution by constructing a Markov chain whose stationary distribution equals the target, enabling approximate Bayesian inference and integration over high-dimensional spaces that are intractable by exact methods. Core algorithms include Metropolis-Hastings, Gibbs sampling, Hamiltonian Monte Carlo, and No-U-Turn Sampler.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:monte-carlo-methods",
+      "label": "Monte Carlo Methods"
+    },
+    {
+      "id": "urn:ngm:class:probabilistic-inference",
+      "label": "Probabilistic Inference"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:markov-chain",
+        "label": "Markov Chain"
+      },
+      {
+        "id": "urn:ngm:class:sampling",
+        "label": "Sampling"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "probabilistic-model",
+      "label": "Probabilistic Model"
+    },
+    {
+      "slug": "sampling",
+      "label": "Sampling"
+    }
+  ]
+}

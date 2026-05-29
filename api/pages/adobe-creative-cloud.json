@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:adobe-creative-cloud",
+  "title": "Adobe Creative Cloud",
+  "slug": "adobe-creative-cloud",
+  "public": true,
+  "classIri": "urn:ngm:class:adobe-creative-cloud",
+  "domain": "media",
+  "definition": "Adobe Creative Cloud is a subscription-based software platform operated by Adobe Inc. that delivers a suite of professional creative applications\u2014including Photoshop, Illustrator, Premiere Pro, After Effects, and InDesign\u2014alongside cloud storage, collaboration services, and asset management infrastructure. Launched in 2013 as the successor to Adobe Creative Suite, it transitioned the industry from perpetual licence software to a continuous-update, cloud-connected model. The platform is the dominant industry standard for graphic design, photography, video production, motion graphics, and digital publishing workflows.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:creative-tools",
+      "label": "Creative Tools"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:content-creation",
+        "label": "Content Creation"
+      },
+      {
+        "id": "urn:ngm:class:content-production-workflow",
+        "label": "Content Production Workflow"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cloud-platform",
+        "label": "Cloud Platform"
+      },
+      {
+        "id": "urn:ngm:class:adobe-firefly",
+        "label": "Adobe Firefly"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:3-d-content-creation",
+        "label": "3D Content Creation"
+      },
+      {
+        "id": "urn:ngm:class:animation-software",
+        "label": "Animation Software"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "product-design",
+      "label": "Product Design"
+    },
+    {
+      "slug": "proprietary-image-generation",
+      "label": "Proprietary Image Generation"
+    }
+  ]
+}

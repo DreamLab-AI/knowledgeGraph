@@ -1,0 +1,61 @@
+public:: true
+
+# Multisignature
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:multisignature",
+  "@type": "Page",
+  "vc:slug": "multisignature",
+  "title": "Multisignature",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 2
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:multisignature",
+  "@type": "Class",
+  "label": "Multisignature",
+  "definition": "Multisignature (multisig) is a cryptographic access control scheme in which a transaction or operation requires a quorum of independent signatures — expressed as an M-of-N threshold — before it can be authorised and executed. Applied to cryptocurrency wallets and smart contracts, multisignature eliminates single points of failure in key custody by distributing signing authority across multiple keyholders, devices, or organisations.",
+  "domain": "blockchain",
+  "maturity": "established",
+  "subClassOf": [{"@id": "urn:ngm:class:cryptographic-signature", "label": "Cryptographic Signature"}],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:digital-signatures", "label": "Digital Signatures"},
+      {"@id": "urn:ngm:class:threshold-cryptography", "label": "Threshold Cryptography"},
+      {"@id": "urn:ngm:class:key-management", "label": "Key Management"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:multi-signature-wallet", "label": "Multi-Signature Wallet"},
+      {"@id": "urn:ngm:class:self-custody", "label": "Self-Custody"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:multi-sig-governance", "label": "Multi Sig Governance"},
+      {"@id": "urn:ngm:class:quorum-threshold", "label": "Quorum Threshold"},
+      {"@id": "urn:ngm:class:schnorr-signature", "label": "Schnorr Signature"}
+    ]
+  },
+  "quality": 0.8
+}
+```
+
+- ### Definition
+  - [[Multisignature]] (multisig) is a cryptographic access control mechanism requiring a minimum quorum (M) of keyholders out of a defined set (N) to co-sign an authorisation before it is valid and can be executed. In the context of blockchain and cryptocurrency, multisig policies are enforced natively in Bitcoin's script (OP_CHECKMULTISIG) and through smart contracts on EVM-compatible chains. The scheme eliminates the single-key vulnerability — loss or compromise of one private key does not forfeit control — and enables governance structures in which funds or protocol parameters can only be changed with collective consent, as in [[Multi Sig Governance|multisig governance]].
+
+- ### Relationships
+  - Multisignature relies on [[Digital Signatures]] for each individual keyholder's contribution and on [[Threshold Cryptography]] for more advanced distributed key schemes (threshold signature schemes where the full private key is never assembled in one place). [[Key Management]] disciplines govern the generation, storage, and rotation of participating keys. It enables [[Multi-Signature Wallet|multi-signature wallets]] and [[Self-Custody]] solutions for institutional and personal crypto custody. [[Multi Sig Governance]] applies multisig to DAO and protocol governance, while [[Quorum Threshold]] formalises the M-of-N ratio, and [[Schnorr Signature|Schnorr signatures]] enable more efficient aggregated multisig on Bitcoin via Taproot.
+
+- ### Content
+  - Multisignature cryptography predates blockchain, with threshold secret-sharing schemes (Shamir's Secret Sharing, 1979) and threshold signature research extending through the 1980s and 1990s in academic cryptography. Bitcoin natively supported multisig from its early versions through the OP_CHECKMULTISIG opcode, and the P2SH (Pay-to-Script-Hash) address format (BIP 16, 2012) allowed multisig policies to be encoded in standard-looking addresses. The first widespread consumer application was Electrum's multisig wallet support, enabling 2-of-3 key configurations for personal use. Gnosis Safe (formerly Gnosis MultiSig) extended the concept to Ethereum smart contracts, becoming the dominant institutional custody tool.
+
+  - Technically, a basic M-of-N multisig in Bitcoin requires the spending transaction to include M valid signatures from M distinct public keys drawn from the N-key set declared in the locking script. This is computationally straightforward but produces larger transactions — each signature adds approximately 72 bytes — increasing fees. The Bitcoin Taproot upgrade (2021, BIP 340-342) introduced Schnorr signatures and MuSig2, an interactive aggregated signature scheme where multiple keyholders collaboratively produce a single signature indistinguishable from a single-key signature, eliminating the on-chain footprint overhead of multisig and enhancing privacy.
+
+  - In the enterprise and institutional context, multisig custody solutions are offered by Fireblocks, BitGo, and Anchorage, typically combining on-chain multisig with policy engines (spending limits, whitelisted addresses, time-locked approvals) and hardware security modules (HSMs) for key storage. For decentralised autonomous organisations (DAOs), Gnosis Safe has become the de facto standard treasury management tool, with protocols managing hundreds of millions of dollars through 3-of-5 or 4-of-7 multisig structures. The 2022 Ronin bridge hack ($625M) and other exploits have repeatedly demonstrated the risks of inadequate multisig configuration and key management practices.
+
+  - In 2024–2025 multisignature is evolving toward threshold signature schemes (TSS) and multi-party computation (MPC) approaches that offer the security properties of multisig without requiring multiple on-chain signatures, reducing costs and improving privacy. MPC-based custody solutions now compete with traditional multisig for institutional adoption. Simultaneously, the convergence of multisig with smart contract account abstraction (ERC-4337 on Ethereum) is enabling programmable security policies — session keys, social recovery, spending limits — that go beyond simple M-of-N thresholds to create flexible self-sovereign custody models accessible to mainstream users.
+

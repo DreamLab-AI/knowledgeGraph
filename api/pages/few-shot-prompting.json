@@ -1,0 +1,71 @@
+{
+  "id": "urn:visionflow:page:few-shot-prompting",
+  "title": "Few-Shot Prompting",
+  "slug": "few-shot-prompting",
+  "public": true,
+  "classIri": "urn:ngm:class:few-shot-prompting",
+  "domain": "ai",
+  "definition": "Few-shot prompting is a prompt engineering technique in which a small number of input-output demonstration examples are included directly in the context provided to a large language model, guiding the model to produce outputs conforming to the demonstrated pattern without any parameter updates. The approach exploits the in-context learning capability of transformer-based models, allowing task specification through examples rather than task-specific fine-tuning.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:prompt-engineering",
+      "label": "Prompt Engineering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:context-window",
+        "label": "Context Window"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:few-shot-learning",
+        "label": "Few-Shot Learning"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:in-context-learning",
+        "label": "In-Context Learning"
+      },
+      {
+        "id": "urn:ngm:class:few-shot-examples",
+        "label": "Few-Shot Examples"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:zero-shot-prompting",
+        "label": "Zero-Shot Prompting"
+      },
+      {
+        "id": "urn:ngm:class:chain-of-thought-prompting",
+        "label": "Chain-of-Thought Prompting"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-diagram-tools",
+      "label": "AI Diagram Tools"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    }
+  ]
+}

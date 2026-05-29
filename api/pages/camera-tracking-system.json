@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:camera-tracking-system",
+  "title": "Camera Tracking System",
+  "slug": "camera-tracking-system",
+  "public": true,
+  "classIri": "urn:ngm:class:camera-tracking-system",
+  "domain": "spatial",
+  "definition": "A camera tracking system is a hardware and software assembly that continuously records the position, orientation, and lens parameters of a physical camera in three-dimensional space, transmitting this data in real time to rendering or compositing engines so that computer-generated imagery can be seamlessly integrated with live-action footage. Such systems underpin virtual production stages, augmented reality overlays, broadcast graphics, and visual effects pipelines. Tracking technologies include optical encoder arrays, inertial measurement units, infrared LED constellations, machine vision fiducial markers, and LiDAR-based spatial mapping.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:camera-tracking",
+      "label": "Camera Tracking"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:spatial-anchoring",
+        "label": "Spatial Anchoring"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
+      },
+      {
+        "id": "urn:ngm:class:camera-intrinsics",
+        "label": "Camera Intrinsics"
+      },
+      {
+        "id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:camera-parameters",
+        "label": "Camera Parameters"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "virtual-production-vp",
+      "label": "Virtual Production (VP)"
+    },
+    {
+      "slug": "virtual-production-volume",
+      "label": "Virtual Production Volume"
+    }
+  ]
+}

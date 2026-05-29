@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:cryptographic-proof-system",
+  "title": "Cryptographic Proof System",
+  "slug": "cryptographic-proof-system",
+  "public": true,
+  "classIri": "urn:ngm:class:cryptographic-proof-system",
+  "domain": "security",
+  "definition": "A cryptographic proof system is a formal protocol allowing one party (a prover) to convince another party (a verifier) of the truth of a statement without revealing any information beyond the validity of that statement. These systems provide mathematical guarantees of soundness, completeness, and, in zero-knowledge variants, zero information leakage.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptographic-protocol",
+      "label": "Cryptographic Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:commitment-scheme",
+        "label": "Commitment Scheme"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cryptographic-proofs",
+        "label": "Cryptographic Proofs"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:zk-snarks",
+        "label": "ZK-SNARKs"
+      },
+      {
+        "id": "urn:ngm:class:zk-starks",
+        "label": "ZK-STARKs"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    },
+    {
+      "slug": "cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    }
+  ]
+}

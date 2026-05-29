@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:communication-tools",
+  "title": "Communication Tools",
+  "slug": "communication-tools",
+  "public": true,
+  "classIri": "urn:ngm:class:communication-tools",
+  "domain": "web",
+  "definition": "Software applications and platforms that enable individuals and teams to exchange information, coordinate activities, and maintain shared context across synchronous and asynchronous channels. They span messaging, video conferencing, email, collaborative documents, and emerging immersive communication modalities, forming the operational backbone of distributed work.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:collaborative-technology",
+      "label": "Collaborative Technology"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:distributed-team-collaboration",
+        "label": "Distributed Team Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:asynchronous-collaboration",
+        "label": "Asynchronous Collaboration"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:communication-infrastructure",
+        "label": "Communication Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:asynchronous-communication",
+        "label": "Asynchronous Communication"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:video-conferencing",
+        "label": "Video Conferencing"
+      },
+      {
+        "id": "urn:ngm:class:immersive-communication",
+        "label": "Immersive Communication"
+      },
+      {
+        "id": "urn:ngm:class:virtual-workspace",
+        "label": "Virtual Workspace"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "collaborative-learning",
+      "label": "Collaborative Learning"
+    },
+    {
+      "slug": "collective-learning",
+      "label": "Collective Learning"
+    }
+  ]
+}

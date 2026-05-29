@@ -1,0 +1,71 @@
+{
+  "id": "urn:visionflow:page:compiler",
+  "title": "Compiler",
+  "slug": "compiler",
+  "public": true,
+  "classIri": "urn:ngm:class:compiler",
+  "domain": "infrastructure",
+  "definition": "A software system that translates source code written in a high-level programming language into a lower-level representation \u2014 typically machine code, bytecode, or an intermediate representation \u2014 performing lexical analysis, syntactic parsing, semantic checking, optimisation, and code emission in a structured pipeline. Compilers are foundational to software development, enabling human-readable programs to run efficiently on hardware.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:software-development",
+      "label": "Software Development"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "id": "urn:ngm:class:runtime-environment",
+        "label": "Runtime Environment"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:programming-language",
+        "label": "Programming Language"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-augmented-software-engineering",
+        "label": "AI-Augmented Software Engineering"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:opcodes",
+        "label": "Opcodes"
+      },
+      {
+        "id": "urn:ngm:class:onnx-runtime",
+        "label": "ONNX Runtime"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "state-machine",
+      "label": "State Machine"
+    }
+  ]
+}

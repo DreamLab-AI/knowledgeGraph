@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:cold-storage",
+  "title": "Cold Storage",
+  "slug": "cold-storage",
+  "public": true,
+  "classIri": "urn:ngm:class:cold-storage",
+  "domain": "blockchain",
+  "definition": "Cold Storage in the context of digital assets and cryptocurrency refers to the practice of holding private keys in an offline environment \u2014 physically disconnected from any network \u2014 to eliminate the attack surface presented by internet-connected systems. Hardware wallets, air-gapped computers, and paper wallets are common cold storage implementations. By contrast with hot wallets (internet-connected), cold storage sacrifices transaction convenience for maximum security, and is the industry standard for custodying large quantities of cryptocurrency at exchanges, institutional custodians, and high-net-worth individual holders.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:custody-infrastructure",
+      "label": "Custody Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:self-custody",
+        "label": "Self-Custody"
+      },
+      {
+        "id": "urn:ngm:class:institutional-custody",
+        "label": "Institutional Custody"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      },
+      {
+        "id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      },
+      {
+        "id": "urn:ngm:class:multisignature",
+        "label": "Multisignature"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bitcoin-network",
+        "label": "Bitcoin Network"
+      },
+      {
+        "id": "urn:ngm:class:multisignature-wallets",
+        "label": "Multisignature Wallets"
+      },
+      {
+        "id": "urn:ngm:class:threshold-signature-scheme",
+        "label": "Threshold Signature Scheme"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-etf",
+      "label": "Bitcoin ETF"
+    },
+    {
+      "slug": "bitcoin-value-proposition",
+      "label": "Bitcoin Value Proposition"
+    },
+    {
+      "slug": "wallet",
+      "label": "Wallet"
+    }
+  ]
+}

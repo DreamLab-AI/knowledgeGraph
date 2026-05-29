@@ -1,0 +1,75 @@
+{
+  "id": "urn:visionflow:page:activity-data",
+  "title": "Activity Data",
+  "slug": "activity-data",
+  "public": true,
+  "classIri": "urn:ngm:class:activity-data",
+  "domain": "ai",
+  "definition": "Activity data is the structured or semi-structured record of actions, interactions, and events performed by users, devices, or systems over time, capturing what was done, when, by whom, and in what context. It encompasses clickstreams, application usage logs, sensor readings, transaction histories, and learning interaction records, and serves as the raw material for analytics, personalisation, compliance auditing, and behavioural modelling.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-collection",
+      "label": "Data Collection"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:analytics-engine",
+        "label": "Analytics Engine"
+      },
+      {
+        "id": "urn:ngm:class:audit-log",
+        "label": "Audit Log"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:tracking-system",
+        "label": "Tracking System"
+      },
+      {
+        "id": "urn:ngm:class:telemetry-and-analytics",
+        "label": "Telemetry & Analytics"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "carbon-calculator",
+      "label": "Carbon Calculator"
+    },
+    {
+      "slug": "carbon-footprint-measurement",
+      "label": "Carbon Footprint Measurement"
+    }
+  ]
+}

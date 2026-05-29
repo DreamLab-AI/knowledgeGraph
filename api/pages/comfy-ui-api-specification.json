@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:comfy-ui-api-specification",
+  "title": "ComfyUI API Specification",
+  "slug": "comfy-ui-api-specification",
+  "public": true,
+  "classIri": "urn:ngm:class:comfy-ui-api-specification",
+  "domain": "ai",
+  "definition": "The programmatic interface specification for ComfyUI, a node-based generative AI workflow engine, defining JSON-serialised graph representations (prompt API), WebSocket-based progress streaming, queue management endpoints, and model loading conventions that allow headless or remote execution of image and video generation pipelines.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:comfy-ui-workflows",
+      "label": "ComfyUI Workflows"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:content-creation-pipeline",
+        "label": "Content Creation Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:comfy-ui-for-fashion-and-brands",
+        "label": "ComfyUI for Fashion and Brands"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:comfy-ui-client",
+        "label": "ComfyUI Client"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:comfy-ui-manager",
+        "label": "ComfyUI Manager"
+      },
+      {
+        "id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "comfy-ui-client",
+      "label": "ComfyUI Client"
+    },
+    {
+      "slug": "comfy-ui-workflows",
+      "label": "ComfyUI Workflows"
+    }
+  ]
+}

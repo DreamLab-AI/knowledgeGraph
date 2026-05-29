@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:capability-elicitation",
+  "title": "Capability Elicitation",
+  "slug": "capability-elicitation",
+  "public": true,
+  "classIri": "urn:ngm:class:capability-elicitation",
+  "domain": "ai",
+  "definition": "Capability elicitation is the systematic process of designing prompts, scaffolding, and evaluation protocols to uncover the true maximum performance of an AI model on a given task or domain, distinguishing what a model is genuinely capable of from what it demonstrates under default conditions. It is a central concern in AI safety research and frontier model evaluation because models may possess latent capabilities \u2014 such as the ability to reason about dangerous knowledge, produce deceptive outputs, or autonomously pursue goals \u2014 that are not revealed by standard benchmarks but can be surfaced through carefully constructed elicitation methods including chain-of-thought prompting, multi-step scaffolding, and adversarial jailbreaking.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:model-evaluation",
+      "label": "Model Evaluation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:safety-assessment",
+        "label": "Safety Assessment"
+      },
+      {
+        "id": "urn:ngm:class:model-evaluation-results",
+        "label": "Model Evaluation Results"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:alignment",
+        "label": "Alignment"
+      },
+      {
+        "id": "urn:ngm:class:safety-evaluation",
+        "label": "Safety Evaluation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-risks",
+      "label": "AI Risks"
+    },
+    {
+      "slug": "evaluation-benchmarks-and-leaderboards",
+      "label": "Evaluation benchmarks and leaderboards"
+    }
+  ]
+}

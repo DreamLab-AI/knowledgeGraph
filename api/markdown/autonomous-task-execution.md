@@ -1,0 +1,14 @@
+- ### Definition
+  - Autonomous Task Execution is the ability of an [[Agentic AI]] system to receive a high-level objective and independently execute all sub-tasks required to fulfil it, using tools, APIs, memory, and iterative self-correction. Unlike simple automation scripts, autonomous executors maintain a dynamic task graph, adapt to unexpected outcomes, and invoke [[Automated Planning]] to recover from failures — enabling truly hands-off completion of complex, open-ended goals.
+
+- ### Relationships
+  - Autonomous Task Execution sits at the core of [[Agentic Workflow]] and is the primary mechanism through which [[LLM Agents]] act on the world. It depends on [[Large Language Models]] for reasoning and instruction-following, and on [[Automated Planning]] frameworks to sequence sub-goals. When multiple agents collaborate, [[Multi-Agent Orchestration]] coordinates autonomous executors toward shared objectives. [[Long-Horizon Planning]] extends the horizon over which tasks can be autonomously managed.
+
+- ### Content
+  - The concept emerged from classical AI planning research in the 1970s and 1980s — particularly STRIPS and HTN formalisms — but was largely confined to constrained domains. The rise of large language models after 2020 dramatically expanded the range of tasks that could be handled autonomously by combining language understanding with tool invocation, making arbitrary natural-language task specifications executable.
+
+  - Technically, an autonomous executor typically operates through a perceive-plan-act loop: it ingests context (documents, API responses, memory stores), generates a plan, selects and invokes tools (web search, code execution, database queries), observes results, and iterates. Modern frameworks such as ReAct, Plan-and-Execute, and Tree-of-Thought add structured reasoning steps and branching recovery strategies to improve reliability on multi-step tasks.
+
+  - The ecosystem includes both commercial platforms (Anthropic's Claude with tool use, OpenAI's Assistants API, Microsoft Copilot Studio) and open-source frameworks (AutoGPT, LangGraph, CrewAI). Enterprise deployments focus on constrained agentic loops with human-in-the-loop checkpoints, while research systems push toward fully autonomous operation over hundreds of sequential steps.
+
+  - As of 2024–2025, autonomous task execution is advancing rapidly with benchmarks such as SWE-bench and AgentBench driving capability improvements. Key challenges remain: reliability degradation on long horizons, safe tool access, and verifying task completion. The field is moving towards standardised agent protocols and sandboxed execution environments to make autonomous operation both more capable and more trustworthy.

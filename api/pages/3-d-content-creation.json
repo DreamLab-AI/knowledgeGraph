@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:3-d-content-creation",
+  "title": "3D Content Creation",
+  "slug": "3-d-content-creation",
+  "public": true,
+  "classIri": "urn:ngm:class:3-d-content-creation",
+  "domain": "spatial",
+  "definition": "3D Content Creation encompasses the end-to-end process of designing, modelling, texturing, rigging, and rendering three-dimensional digital assets and environments for use in games, film, XR experiences, and digital twins. It spans artistic and technical disciplines ranging from polygon modelling and UV unwrapping to physically based material authoring and real-time rendering optimisation. The discipline bridges human creative intent and the technical pipelines that deliver interactive or cinematic experiences.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:content-creation",
+      "label": "Content Creation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:3-d-content-pipeline",
+        "label": "3D Content Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin-creation",
+        "label": "Digital Twin Creation"
+      },
+      {
+        "id": "urn:ngm:class:xr-applications",
+        "label": "XR Applications"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:3-d-modeling-software",
+        "label": "3D Modeling Software"
+      },
+      {
+        "id": "urn:ngm:class:3-d-rendering-engine",
+        "label": "3D Rendering Engine"
+      },
+      {
+        "id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:3-d-asset",
+        "label": "3D Asset"
+      },
+      {
+        "id": "urn:ngm:class:3-d-generation",
+        "label": "3D Generation"
+      },
+      {
+        "id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "destination-marketing",
+      "label": "Destination Marketing"
+    },
+    {
+      "slug": "etsi-domain-creative-media",
+      "label": "ETSI Domain: Creative Media"
+    }
+  ]
+}

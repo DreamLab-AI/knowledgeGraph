@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:autonomous-driving-perception",
+  "title": "Autonomous Driving Perception",
+  "slug": "autonomous-driving-perception",
+  "public": true,
+  "classIri": "urn:ngm:class:autonomous-driving-perception",
+  "domain": "ai",
+  "definition": "The subsystem of an autonomous vehicle responsible for interpreting sensor data to construct a structured understanding of the vehicle's immediate environment, including the detection, classification, and tracking of objects, lane geometry, road surfaces, traffic signage, and dynamic actors. Autonomous driving perception fuses inputs from cameras, LiDAR, radar, and ultrasonic sensors to produce a real-time scene representation sufficient for safe navigation decisions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:perception-system",
+      "label": "Perception System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-driving",
+        "label": "Autonomous Driving"
+      },
+      {
+        "id": "urn:ngm:class:scene-understanding",
+        "label": "Scene Understanding"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      },
+      {
+        "id": "urn:ngm:class:semantic-segmentation",
+        "label": "Semantic Segmentation"
+      },
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "id": "urn:ngm:class:depth-estimation",
+        "label": "Depth Estimation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "lens-and-camera-calibration",
+      "label": "Lens and Camera Calibration"
+    },
+    {
+      "slug": "segmentation-and-identification",
+      "label": "Segmentation and Identification"
+    }
+  ]
+}

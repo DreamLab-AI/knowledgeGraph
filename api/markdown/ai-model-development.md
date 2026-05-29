@@ -1,0 +1,14 @@
+- ### Definition
+  - [[AI Model Development]] is the structured discipline of conceiving, constructing, validating, and maintaining [[AI Model]] artefacts. It encompasses problem framing, training data acquisition via a [[Data Pipeline]], architecture design, iterative training using [[Compute Resources]], [[Model Evaluation]], and deployment into an [[AI Inference]] environment. The lifecycle typically concludes with ongoing monitoring and retraining to sustain performance against distributional shift.
+
+- ### Relationships
+  - AI Model Development depends on a robust [[Data Pipeline]] and adequate [[Compute Resources]] to execute training runs. It produces deployable [[AI Model]] artefacts that feed [[AI Inference]] infrastructure. Practitioners employ [[Fine Tuning]] to adapt foundation models to narrow tasks and rely on [[Model Evaluation]] to benchmark quality. The process is increasingly subject to [[AI Risk Assessment]] to identify hazards before deployment.
+
+- ### Content
+  - The field emerged from academic machine learning research in the 1980s and 1990s, crystallising into a professional engineering discipline after the deep learning resurgence of the early 2010s. Early pipelines were bespoke and required significant manual feature engineering; the shift to representation learning radically reduced that burden.
+
+  - Technically, a development cycle proceeds from dataset curation and preprocessing, through architecture selection (convolutional, transformer, or hybrid), stochastic gradient descent–based training with regularisation, hyperparameter search, and evaluation against held-out benchmarks. Version control of both code and model weights is now standard practice, and reproducibility tooling has matured considerably since 2018.
+
+  - The ecosystem includes cloud-hosted training platforms from major providers, open-source frameworks such as PyTorch and JAX, and a growing suite of MLOps tooling for experiment tracking, artefact management, and continuous training. Specialist tooling addresses sub-disciplines such as [[Fine Tuning]], reinforcement learning from human feedback, and efficient inference quantisation.
+
+  - By 2024–2025, the discipline has bifurcated between large-scale frontier model training—dominated by a handful of well-capitalised laboratories—and applied model development, where practitioners adapt existing [[Frontier Models]] to domain-specific tasks. Regulatory pressure from the EU AI Act and sector-specific guidance is driving formalisation of documentation, testing, and [[AI Risk Assessment]] as integral phases of the development lifecycle.

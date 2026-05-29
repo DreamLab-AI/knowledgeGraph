@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:deep-reinforcement-learning",
+  "title": "Deep Reinforcement Learning",
+  "slug": "deep-reinforcement-learning",
+  "public": true,
+  "classIri": "urn:ngm:class:deep-reinforcement-learning",
+  "domain": "ai",
+  "definition": "Deep Reinforcement Learning (DRL) is a machine learning paradigm that combines deep neural networks with reinforcement learning, enabling agents to learn optimal policies for sequential decision-making tasks by interacting with an environment, receiving scalar reward signals, and updating neural network parameters through gradient-based optimisation. It has produced superhuman performance in games, robotics control, and language model alignment.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:deep-learning",
+      "label": "Deep Learning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:agent",
+        "label": "Agent"
+      },
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:action-space",
+        "label": "Action Space"
+      },
+      {
+        "id": "urn:ngm:class:environment-model",
+        "label": "Environment Model"
+      },
+      {
+        "id": "urn:ngm:class:gpu-acceleration",
+        "label": "GPU Acceleration"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "embodied-minds",
+      "label": "Embodied Minds"
+    },
+    {
+      "slug": "ground-robot",
+      "label": "Ground Robot"
+    }
+  ]
+}

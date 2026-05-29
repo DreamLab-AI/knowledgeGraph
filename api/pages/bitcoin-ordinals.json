@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:bitcoin-ordinals",
+  "title": "Bitcoin Ordinals",
+  "slug": "bitcoin-ordinals",
+  "public": true,
+  "classIri": "urn:ngm:class:bitcoin-ordinals",
+  "domain": "blockchain",
+  "definition": "Bitcoin Ordinals is a numbering scheme and inscription protocol that assigns a unique serial number to every individual satoshi on the Bitcoin network based on the order of its mining, enabling arbitrary content \u2014 text, images, code \u2014 to be embedded directly into Bitcoin transactions via the witness data introduced by SegWit and Taproot. Each inscription is permanently stored on-chain without requiring a separate token contract, making it a native non-fungible artefact within the Bitcoin base layer. The protocol was introduced by Casey Rodarmor in January 2023.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bitcoin-network",
+      "label": "Bitcoin Network"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:bitcoin-core",
+        "label": "Bitcoin Core"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:bitcoin-script",
+        "label": "Bitcoin Script"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "id": "urn:ngm:class:digital-art",
+        "label": "Digital Art"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "digital-objects",
+      "label": "Digital Objects"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "nft-minting",
+      "label": "NFT Minting"
+    }
+  ]
+}

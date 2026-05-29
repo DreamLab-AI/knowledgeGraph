@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:identity-resolution",
+  "title": "Identity Resolution",
+  "slug": "identity-resolution",
+  "public": true,
+  "classIri": "urn:ngm:class:identity-resolution",
+  "domain": "ai",
+  "definition": "Identity resolution is the process of determining that multiple data records, identifiers, or signals across different systems refer to the same real-world entity \u2014 whether a person, organisation, or device \u2014 and consolidating them into a unified, persistent representation. It combines probabilistic and deterministic matching algorithms, data enrichment, and graph-linking to resolve fragmented identities across first-party, second-party, and third-party data sources.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:entity-resolution",
+      "label": "Entity Resolution"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.85,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:data-deduplication",
+        "label": "Data Deduplication"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:decentralized-identity",
+        "label": "Decentralized Identity"
+      },
+      {
+        "id": "urn:ngm:class:privacy-preserving-analytics",
+        "label": "Privacy-Preserving Analytics"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "hyper-personalisation",
+      "label": "Hyper personalisation"
+    },
+    {
+      "slug": "identity-graph",
+      "label": "Identity Graph"
+    }
+  ]
+}

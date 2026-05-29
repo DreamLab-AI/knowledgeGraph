@@ -1,0 +1,68 @@
+{
+  "id": "urn:visionflow:page:content-pipeline",
+  "title": "Content Pipeline",
+  "slug": "content-pipeline",
+  "public": true,
+  "classIri": "urn:ngm:class:content-pipeline",
+  "domain": "media",
+  "definition": "A Content Pipeline is the end-to-end automated or semi-automated workflow that transforms raw creative assets\u2014geometry, textures, audio, video, or data\u2014from authoring tools into the optimised, platform-specific formats required by a runtime engine, distribution system, or media player. It encompasses ingestion, validation, processing, compression, and delivery stages with dependency tracking and incremental rebuild capabilities.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:production-pipeline",
+      "label": "Production Pipeline"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:asset-management",
+        "label": "Asset Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:asset-pipeline",
+        "label": "Asset Pipeline"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:content-creation",
+        "label": "Content Creation"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-creative-media",
+      "label": "ETSI Domain: Creative Media"
+    },
+    {
+      "slug": "etsi-domain-data-management-creative-media",
+      "label": "ETSI Domain: Data Management + Creative Media"
+    }
+  ]
+}

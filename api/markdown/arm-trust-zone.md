@@ -1,0 +1,14 @@
+- ### Definition
+  - ARM TrustZone is a hardware security technology that partitions an ARM system into isolated Secure and Normal Worlds at the CPU, memory, and peripheral level, providing a trusted execution environment without a separate chip.
+
+- ### Relationships
+  - ARM TrustZone is a subclass of [[Trusted Execution Environment]] technology and enables [[Secure Enclave]]-style isolation for sensitive operations. It supports broader [[Hardware Security]] goals such as secure boot and key protection, and relates to the general concept of the [[TEE]] that it implements in mainstream processors.
+
+- ### Content
+  - TrustZone's core idea is a system-wide partition into two worlds enforced by hardware rather than by the operating system. The processor carries an extra state bit — the non-secure (NS) bit — that propagates across the system bus, so that memory regions and peripherals can be designated secure or non-secure and the hardware physically prevents Normal World software, including a compromised operating system kernel, from reading Secure World memory or accessing secured devices.
+
+  - Transitions between worlds are tightly controlled through a special instruction and a secure monitor that mediates context switches, ensuring the rich OS cannot simply jump into secure code. Inside the Secure World runs a small, trusted operating system and a set of trusted applications kept deliberately minimal to reduce attack surface, exposing only a narrow, audited interface to the Normal World. This architecture realises a trusted execution environment using the main application processor itself rather than requiring a discrete security coprocessor.
+
+  - The technology underpins many features users rely on without seeing. Mobile devices use TrustZone to protect disk-encryption keys, perform biometric fingerprint and face matching in isolation, enforce digital-rights-management for protected media, anchor secure boot so only signed firmware runs, and store payment credentials. Because the secrets and the code that handles them live in the Secure World, even malware with full control of the Normal World OS cannot directly extract them.
+
+  - TrustZone is not a complete answer to hardware security. As a trusted execution environment it shares the main CPU and caches with the Normal World, exposing it to side-channel and microarchitectural attacks, and the security of any deployment depends on the correctness of its trusted OS and applications, which have historically contained exploitable bugs. It is therefore best understood as one strong, widely available layer — particularly valuable in cost-sensitive mobile and embedded devices — within a defence-in-depth approach that may combine it with dedicated secure elements for the highest-value secrets.

@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:occlusion-rendering",
+  "title": "Occlusion Rendering",
+  "slug": "occlusion-rendering",
+  "public": true,
+  "classIri": "urn:ngm:class:occlusion-rendering",
+  "domain": "spatial",
+  "definition": "Occlusion rendering is the set of techniques used in real-time and offline graphics pipelines to correctly determine and display which surfaces are hidden behind other geometry from a given camera viewpoint, as well as to compute the darkening of surfaces due to local geometric obstruction of ambient light. It encompasses hardware depth-buffer culling, ambient occlusion shading, screen-space occlusion methods, and \u2014 in augmented reality \u2014 the masking of virtual objects by real-world foreground geometry. Correct occlusion is essential for perceptual plausibility in both games and AR/VR applications.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:rendering-technique",
+      "label": "Rendering Technique"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ar-occlusion",
+        "label": "AR Occlusion"
+      },
+      {
+        "id": "urn:ngm:class:photorealistic-rendering",
+        "label": "Photorealistic Rendering"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:depth-estimation",
+        "label": "Depth Estimation"
+      },
+      {
+        "id": "urn:ngm:class:rasterization",
+        "label": "Rasterization"
+      },
+      {
+        "id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ambient-occlusion",
+        "label": "Ambient Occlusion"
+      },
+      {
+        "id": "urn:ngm:class:occlusion-culling",
+        "label": "Occlusion Culling"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "mixed-reality-mr",
+      "label": "Mixed Reality (MR)"
+    },
+    {
+      "slug": "mixed-reality",
+      "label": "Mixed Reality"
+    }
+  ]
+}

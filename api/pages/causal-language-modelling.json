@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:causal-language-modelling",
+  "title": "Causal Language Modelling",
+  "slug": "causal-language-modelling",
+  "public": true,
+  "classIri": "urn:ngm:class:causal-language-modelling",
+  "domain": "ai",
+  "definition": "Causal language modelling is a self-supervised pre-training objective in which a neural network learns to predict the next token in a sequence given all preceding tokens, modelling the joint probability of text as an autoregressive product of conditional distributions. The term 'causal' refers to the unidirectional (left-to-right) attention mask that enforces the temporal ordering of tokens, preventing the model from attending to future context. This objective is the foundation of decoder-only transformer architectures such as GPT, LLaMA, and Claude, which power the majority of state-of-the-art large language models.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:large-language-model-training",
+      "label": "Large Language Model Training"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:gpt",
+        "label": "GPT"
+      },
+      {
+        "id": "urn:ngm:class:chain-of-thought-prompting",
+        "label": "Chain-of-Thought Prompting"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:causal-attention",
+        "label": "Causal Attention"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:in-context-learning",
+        "label": "In-Context Learning"
+      },
+      {
+        "id": "urn:ngm:class:instruction-tuning",
+        "label": "Instruction Tuning"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    },
+    {
+      "slug": "training-and-fine-tuning",
+      "label": "Training and fine tuning"
+    }
+  ]
+}

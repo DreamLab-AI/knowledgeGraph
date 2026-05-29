@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:kotlin",
+  "title": "Kotlin",
+  "slug": "kotlin",
+  "public": true,
+  "classIri": "urn:ngm:class:kotlin",
+  "domain": "infrastructure",
+  "definition": "Kotlin is a statically-typed, cross-platform programming language developed by JetBrains that compiles to JVM bytecode, JavaScript, and native binaries via LLVM. It offers concise syntax, null safety enforced at the type level, first-class coroutine support, and seamless interoperability with Java, making it the preferred language for Android development and increasingly for server-side and multiplatform applications.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:programming-language",
+      "label": "Programming Language"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cross-platform-compatibility",
+        "label": "Cross-Platform Compatibility"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:compiler",
+        "label": "Compiler"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:java",
+        "label": "Java"
+      },
+      {
+        "id": "urn:ngm:class:jvm-runtime",
+        "label": "JVM Runtime"
+      },
+      {
+        "id": "urn:ngm:class:gradle",
+        "label": "Gradle"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "enterprise-smart-contracts",
+      "label": "Enterprise Smart Contracts"
+    },
+    {
+      "slug": "r3-corda",
+      "label": "R3 Corda"
+    }
+  ]
+}

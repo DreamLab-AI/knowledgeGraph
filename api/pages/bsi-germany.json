@@ -1,0 +1,71 @@
+{
+  "id": "urn:visionflow:page:bsi-germany",
+  "title": "BSI Germany",
+  "slug": "bsi-germany",
+  "public": true,
+  "classIri": "urn:ngm:class:bsi-germany",
+  "domain": "security",
+  "definition": "The Bundesamt f\u00fcr Sicherheit in der Informationstechnik (BSI), or Federal Office for Information Security, is Germany's national authority for cybersecurity, responsible for protecting digital infrastructure, certifying IT products, and developing security standards. It functions as a central advisory, regulatory, and technical body for both public administration and the private sector across Germany and the European Union.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:standards-body",
+      "label": "Standards Body"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:cybersecurity-standard",
+        "label": "Cybersecurity Standard"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:information-security",
+        "label": "Information Security"
+      },
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:iso-27001",
+        "label": "ISO 27001"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "cyber-security-and-cryptography",
+      "label": "Cyber Security and Cryptography"
+    }
+  ]
+}

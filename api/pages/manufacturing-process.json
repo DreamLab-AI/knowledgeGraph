@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:manufacturing-process",
+  "title": "Manufacturing Process",
+  "slug": "manufacturing-process",
+  "public": true,
+  "classIri": "urn:ngm:class:manufacturing-process",
+  "domain": "robotics",
+  "definition": "A manufacturing process is a structured sequence of physical transformations \u2014 including machining, assembly, forming, joining, heat treatment, surface finishing, and inspection \u2014 applied to raw materials or sub-components to produce finished goods meeting specified tolerances, material properties, and functional requirements. Manufacturing processes are characterised by their tooling, cycle time, throughput, waste profile, and quality control mechanisms.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:industrial-automation",
+      "label": "IndustrialAutomation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:logistics-automation",
+        "label": "Logistics Automation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:industrial-robot",
+        "label": "Industrial Robot"
+      },
+      {
+        "id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      },
+      {
+        "id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:industrial-inspection",
+        "label": "Industrial Inspection"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "collaborative-operation",
+      "label": "Collaborative Operation"
+    },
+    {
+      "slug": "mechanical-component",
+      "label": "Mechanical Component"
+    }
+  ]
+}

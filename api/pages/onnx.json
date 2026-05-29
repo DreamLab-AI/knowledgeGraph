@@ -1,0 +1,83 @@
+{
+  "id": "urn:visionflow:page:onnx",
+  "title": "ONNX",
+  "slug": "onnx",
+  "public": true,
+  "classIri": "urn:ngm:class:onnx",
+  "domain": "ai",
+  "definition": "ONNX (Open Neural Network Exchange) is an open, vendor-neutral file format and operator specification for representing machine learning models, enabling trained models to be exported from one deep learning framework (e.g. PyTorch, TensorFlow) and executed on any compatible runtime or hardware accelerator without retraining. The ONNX ecosystem comprises the ONNX format specification, operator set definitions, model zoo, and the ONNX Runtime inference engine.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:interoperability-standard",
+      "label": "Interoperability Standard"
+    },
+    {
+      "id": "urn:ngm:class:open-standard",
+      "label": "Open Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-deployment",
+        "label": "Model Deployment"
+      },
+      {
+        "id": "urn:ngm:class:inference-engine",
+        "label": "Inference Engine"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:onnx-runtime",
+        "label": "ONNX Runtime"
+      },
+      {
+        "id": "urn:ngm:class:onnx-operator-set",
+        "label": "ONNX Operator Set"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:model-optimization",
+        "label": "Model Optimization"
+      },
+      {
+        "id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:deep-learning-framework",
+        "label": "Deep Learning Framework"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "checkpoints",
+      "label": "Checkpoints"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "transformers",
+      "label": "Transformers"
+    }
+  ]
+}

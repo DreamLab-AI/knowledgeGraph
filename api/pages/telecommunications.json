@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:telecommunications",
+  "title": "Telecommunications",
+  "slug": "telecommunications",
+  "public": true,
+  "classIri": "urn:ngm:class:telecommunications",
+  "domain": "infrastructure",
+  "definition": "Telecommunications is the sector and technical discipline concerned with the transmission of information \u2014 voice, data, and video \u2014 across distances through electronic, optical, or electromagnetic means, encompassing the physical infrastructure, protocols, standards, and regulatory frameworks that underpin global connectivity. It includes mobile and fixed-line networks, satellite systems, fibre optic backbones, and the software-defined and virtualised network functions that increasingly replace dedicated hardware.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:network-infrastructure",
+      "label": "Network Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:5-g-network",
+        "label": "5G Network"
+      },
+      {
+        "id": "urn:ngm:class:network-slicing",
+        "label": "Network Slicing"
+      },
+      {
+        "id": "urn:ngm:class:network-function-virtualization",
+        "label": "Network Function Virtualization"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:telecommunications-infrastructure",
+        "label": "Telecommunications Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    },
+    {
+      "slug": "patent",
+      "label": "Patent"
+    },
+    {
+      "slug": "physical-layer",
+      "label": "Physical Layer"
+    },
+    {
+      "slug": "real-time",
+      "label": "Real Time"
+    }
+  ]
+}

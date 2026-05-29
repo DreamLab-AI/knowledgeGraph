@@ -1,0 +1,67 @@
+{
+  "id": "urn:visionflow:page:ai-talent-war",
+  "title": "AI Talent War",
+  "slug": "ai-talent-war",
+  "public": true,
+  "classIri": "urn:ngm:class:ai-talent-war",
+  "domain": "ai",
+  "definition": "The intensely competitive global contest among technology companies, research institutions, and nation-states to attract, retain, and concentrate the scarce pool of highly skilled AI researchers and engineers. The competition manifests through escalating compensation packages, aggressive academic recruitment, strategic immigration policy, and corporate acquisitions of talent-rich startups. Because frontier AI capability is tightly coupled to the concentration of top research talent, this competition is simultaneously an economic, geopolitical, and strategic-security phenomenon.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:competition-in-ai",
+      "label": "Competition in AI"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:frontier-model-training",
+        "label": "Frontier Model Training"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:education-and-ai",
+        "label": "Education and AI"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-talent",
+        "label": "AI Talent"
+      },
+      {
+        "id": "urn:ngm:class:frontier-ai",
+        "label": "Frontier AI"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-adoption",
+      "label": "AI Adoption"
+    },
+    {
+      "slug": "ai-companies",
+      "label": "AI Companies"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+public:: true
+
+# Policy Optimisation
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:policy-optimisation",
+  "@type": "Page",
+  "vc:slug": "policy-optimisation",
+  "title": "Policy Optimisation",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 2
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:policy-optimisation",
+  "@type": "Class",
+  "label": "Policy Optimisation",
+  "definition": "Policy optimisation is the process of searching over a parameterised space of decision-making policies to maximise a scalar objective, typically a cumulative reward signal in a reinforcement learning context. It encompasses both gradient-based methods such as proximal policy optimisation and gradient-free approaches such as evolutionary strategies, applied across discrete and continuous action spaces.",
+  "domain": "ai",
+  "maturity": "established",
+  "subClassOf": [{"@id": "urn:ngm:class:optimisation", "label": "Optimisation"}],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:reinforcement-learning-algorithm", "label": "Reinforcement Learning Algorithm"},
+      {"@id": "urn:ngm:class:value-function", "label": "Value Function"},
+      {"@id": "urn:ngm:class:reward-function", "label": "Reward Function"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:reinforcement-learning-for-robotics", "label": "Reinforcement Learning for Robotics"},
+      {"@id": "urn:ngm:class:deep-reinforcement-learning", "label": "Deep Reinforcement Learning"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:proximal-policy-optimisation", "label": "Proximal Policy Optimisation"}
+    ]
+  },
+  "quality": 0.8
+}
+```
+
+- ### Definition
+  - Policy optimisation is the core computational challenge in [[Reinforcement Learning]], concerned with finding a [[Reinforcement Learning Algorithm]] that maps observations to actions so as to maximise long-run cumulative [[Reward Function]] signals. Modern approaches combine neural network function approximation with either first-order gradient information — as in [[Proximal Policy Optimisation]] — or sample-based estimation techniques, and are constrained by stability objectives captured through [[Value Function]] baselines and trust-region bounds.
+
+- ### Relationships
+  - Policy optimisation depends on [[Reinforcement Learning Algorithm]] choices and [[Value Function]] estimation to provide low-variance gradient estimates. It directly enables [[Deep Reinforcement Learning]] systems and, when combined with physics simulation, [[Reinforcement Learning for Robotics]]. The specific family of proximal methods is represented in the graph by [[Proximal Policy Optimisation]], which enforces monotonic improvement guarantees central to safe policy updates.
+
+- ### Content
+  - Policy optimisation emerged as a formal discipline from the confluence of optimal control theory and statistical machine learning in the 1990s. Early work by Williams (1992) on REINFORCE established the policy-gradient theorem, showing that the gradient of expected return with respect to policy parameters could be estimated from sampled trajectories without knowledge of the environment model. Subsequent research by Sutton et al. (2000) generalised this to compatible function approximation, laying the groundwork for modern actor-critic architectures.
+
+  - Technically, policy optimisation methods can be categorised along two axes: on-policy versus off-policy data usage, and first-order versus zeroth-order gradient estimation. On-policy methods such as Trust Region Policy Optimisation (TRPO) and its successor PPO collect fresh trajectories at each update step, computing policy gradients constrained by KL-divergence bounds to prevent destructive parameter updates. Off-policy methods such as Soft Actor-Critic (SAC) recycle past experience from a replay buffer, improving sample efficiency at the cost of higher variance. Zeroth-order evolutionary strategies treat the policy as a black box and estimate gradients through finite differences across a population of parameter perturbations.
+
+  - The policy optimisation ecosystem spans simulation engines such as [[Gazebo Simulator]], robotics middleware, GPU-accelerated environments, and distributed training frameworks. Libraries such as Stable-Baselines3, RLlib, and CleanRL provide reference implementations of canonical algorithms, while benchmarks such as MuJoCo locomotion tasks, Atari ALE, and robotics manipulation suites serve as standardised evaluation arenas. Reward shaping, curriculum design, and hierarchical decomposition are employed to tame sparse-reward environments where naive policy gradients fail to propagate useful learning signals.
+
+  - In 2024–2025, policy optimisation has moved beyond game-playing benchmarks into industrial deployment: large language model alignment via Reinforcement Learning from Human Feedback relies on reward-model-guided policy optimisation, while robot foundation models trained with diffusion policies and flow-matching objectives challenge the dominance of classical gradient-based approaches. Multi-task and meta-learning formulations allow a single policy to generalise across families of tasks, and offline-to-online fine-tuning pipelines enable safe deployment by first imitating logged behaviour before online policy improvement.
+

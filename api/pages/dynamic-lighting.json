@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:dynamic-lighting",
+  "title": "Dynamic Lighting",
+  "slug": "dynamic-lighting",
+  "public": true,
+  "classIri": "urn:ngm:class:dynamic-lighting",
+  "domain": "spatial",
+  "definition": "Dynamic lighting is a real-time rendering technique in which light sources, shadows, and indirect illumination are computed per-frame based on the current state of a scene, allowing lights to move, change intensity or colour, and interact with animated geometry without relying on pre-baked static lighting data. It is foundational to believable 3D environments in games, virtual production, and spatial computing applications.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:rendering-technique",
+      "label": "Rendering Technique"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:global-illumination",
+        "label": "Global Illumination"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:shader",
+        "label": "Shader"
+      },
+      {
+        "id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      },
+      {
+        "id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "real-time-rendering-pipeline",
+      "label": "Real-Time Rendering Pipeline"
+    },
+    {
+      "slug": "virtual-lighting-model",
+      "label": "Virtual Lighting Model"
+    }
+  ]
+}

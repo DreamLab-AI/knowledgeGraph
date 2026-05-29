@@ -1,0 +1,63 @@
+{
+  "id": "urn:visionflow:page:convolution",
+  "title": "Convolution",
+  "slug": "convolution",
+  "public": true,
+  "classIri": "urn:ngm:class:convolution",
+  "domain": "ai",
+  "definition": "Convolution is a mathematical operation that combines two functions by sliding one (the kernel or filter) over another (the input signal or image) and computing a weighted sum of overlapping values at each position, producing a third function that expresses how the shape of one modifies the other. In deep learning and signal processing it provides a translation-equivariant mechanism for local feature extraction with shared parameter weights.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:signal-processing",
+      "label": "Signal Processing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:image-processing",
+        "label": "Image Processing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-video",
+      "label": "AI Video"
+    },
+    {
+      "slug": "generative-adversarial-networks",
+      "label": "Generative Adversarial Networks"
+    }
+  ]
+}

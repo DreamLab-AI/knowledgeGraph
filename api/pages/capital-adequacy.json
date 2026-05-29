@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:capital-adequacy",
+  "title": "Capital Adequacy",
+  "slug": "capital-adequacy",
+  "public": true,
+  "classIri": "urn:ngm:class:capital-adequacy",
+  "domain": "finance",
+  "definition": "Capital adequacy is the regulatory and risk management requirement that financial institutions maintain a minimum level of capital relative to their risk-weighted assets, ensuring they can absorb losses without becoming insolvent and thereby protecting depositors, counterparties, and the broader financial system. The Basel Committee on Banking Supervision (BCBS) has codified capital adequacy requirements through successive accords \u2014 Basel I (1988), Basel II (2004), Basel III (2010, phased through 2028) \u2014 specifying the composition of qualifying capital (Common Equity Tier 1, Additional Tier 1, Tier 2) and the risk-weighting methodologies for credit, market, and operational risk exposures.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:compliance-framework",
+      "label": "Compliance Framework"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:basel-committee-on-banking-supervision",
+        "label": "Basel Committee on Banking Supervision"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      },
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "regulatory-reporting",
+      "label": "Regulatory Reporting"
+    },
+    {
+      "slug": "stablecoin-regulation",
+      "label": "Stablecoin Regulation"
+    }
+  ]
+}

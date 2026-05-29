@@ -1,0 +1,62 @@
+{
+  "id": "urn:visionflow:page:vector-embedding",
+  "title": "Vector Embedding",
+  "slug": "vector-embedding",
+  "public": true,
+  "classIri": "urn:ngm:class:vector-embedding",
+  "domain": "ai",
+  "definition": "A vector embedding is a dense, fixed-length numerical representation of a discrete object \u2014 a word, sentence, image, or user \u2014 in a continuous high-dimensional space, learned such that semantically similar objects map to nearby points. Embeddings convert unstructured data into a form amenable to mathematical operations like distance and dot product, enabling similarity search, clustering, recommendation, and retrieval. They are produced by neural encoders and are the representational substrate beneath modern search, retrieval-augmented generation, and multimodal AI.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:embedding",
+      "label": "Embedding"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:embedding-model",
+        "label": "Embedding Model"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cognitive-ai",
+      "label": "Cognitive AI"
+    },
+    {
+      "slug": "graph-database",
+      "label": "Graph Database"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "id": "urn:visionflow:page:apple",
+  "title": "Apple",
+  "slug": "apple",
+  "public": true,
+  "classIri": "urn:ngm:individual:apple",
+  "domain": "spatial",
+  "definition": "Apple Inc. is an American multinational technology corporation headquartered in Cupertino, California, that designs, manufactures, and markets consumer electronics, computer software, and online services, with flagship product lines including the iPhone, iPad, Mac, Apple Watch, and the Apple Vision Pro spatial computing headset. Apple is distinguished by its vertically integrated hardware-software model, proprietary silicon (the Apple Silicon series based on ARM architecture), and the iOS and macOS operating system ecosystems. With a market capitalisation regularly exceeding two trillion US dollars, Apple is among the most valuable publicly traded companies in the world.",
+  "subClassOf": [],
+  "entityType": "Individual",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:apple-vision-pro",
+        "label": "Apple Vision Pro"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      },
+      {
+        "id": "urn:ngm:class:spatial-ai",
+        "label": "Spatial AI"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-user",
+      "label": "AI User"
+    },
+    {
+      "slug": "ai-user",
+      "label": "AI User"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "definitions-and-frameworks-for-metaverse",
+      "label": "Definitions and frameworks for Metaverse"
+    },
+    {
+      "slug": "gaussian-splatting",
+      "label": "Gaussian Splatting"
+    },
+    {
+      "slug": "graphics-api",
+      "label": "Graphics API"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "patent",
+      "label": "Patent"
+    },
+    {
+      "slug": "pre-training",
+      "label": "Pre Training"
+    },
+    {
+      "slug": "proprietary-video",
+      "label": "Proprietary Video"
+    },
+    {
+      "slug": "multimodal",
+      "label": "multimodal"
+    },
+    {
+      "slug": "relighting",
+      "label": "relighting"
+    }
+  ]
+}

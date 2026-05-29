@@ -1,0 +1,71 @@
+{
+  "id": "urn:visionflow:page:content-licensing",
+  "title": "Content Licensing",
+  "slug": "content-licensing",
+  "public": true,
+  "classIri": "urn:ngm:class:content-licensing",
+  "domain": "media",
+  "definition": "Content Licensing is the legal and commercial framework through which rights holders grant third parties permission to use, reproduce, distribute, or monetise creative or informational works under defined conditions, terms, and compensation structures. It governs the relationship between creators, intermediary platforms, and end consumers across media, software, data, and digital asset categories.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-rights-management",
+      "label": "Digital Rights Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:asset-management",
+        "label": "Asset Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:royalty-distribution",
+        "label": "Royalty Distribution"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:digital-rights",
+        "label": "Digital Rights"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:copyright",
+        "label": "copyright"
+      },
+      {
+        "id": "urn:ngm:class:content-creation",
+        "label": "Content Creation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-scrapers",
+      "label": "AI Scrapers"
+    },
+    {
+      "slug": "creator-economy",
+      "label": "Creator Economy"
+    },
+    {
+      "slug": "digital-rights-management-extended",
+      "label": "Digital Rights Management (Extended)"
+    }
+  ]
+}

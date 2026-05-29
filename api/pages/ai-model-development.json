@@ -1,0 +1,75 @@
+{
+  "id": "urn:visionflow:page:ai-model-development",
+  "title": "AI Model Development",
+  "slug": "ai-model-development",
+  "public": true,
+  "classIri": "urn:ngm:class:ai-model-development",
+  "domain": "ai",
+  "definition": "The end-to-end engineering discipline of designing, training, evaluating, and deploying machine learning models, encompassing dataset curation, architecture selection, optimisation, and lifecycle management. It integrates software engineering, statistical modelling, and domain expertise to produce AI systems capable of performing specified tasks at scale. The discipline spans research prototyping through production deployment and ongoing maintenance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-system",
+      "label": "AI System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:compute-resources",
+        "label": "Compute Resources"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-model",
+        "label": "AI Model"
+      },
+      {
+        "id": "urn:ngm:class:ai-inference",
+        "label": "AI Inference"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-risk-assessment",
+        "label": "AI Risk Assessment"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "machine-learning-framework",
+      "label": "Machine Learning Framework"
+    },
+    {
+      "slug": "model-architecture",
+      "label": "Model Architecture"
+    }
+  ]
+}

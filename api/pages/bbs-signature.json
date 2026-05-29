@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:bbs-signature",
+  "title": "BBS+ Signature",
+  "slug": "bbs-signature",
+  "public": true,
+  "classIri": "urn:ngm:class:bbs-signature",
+  "domain": "security",
+  "definition": "BBS+ Signature is a pairing-based digital signature scheme that signs a vector of messages simultaneously and supports the generation of zero-knowledge proofs that reveal only a chosen subset of those messages \u2014 a property known as selective disclosure \u2014 without revealing the full signed message set or enabling linkage of multiple presentations to the same credential. It is a cornerstone primitive for privacy-preserving verifiable credentials.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptographic-signature",
+      "label": "Cryptographic Signature"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:selective-disclosure",
+        "label": "Selective Disclosure"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "id": "urn:ngm:class:privacy-preserving-identity",
+        "label": "Privacy-Preserving Identity"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-primitive",
+        "label": "Cryptographic Primitive"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bls-signature",
+        "label": "BLS Signature"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-identifiers",
+        "label": "Decentralized Identifiers"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "digital-identity-wallet",
+      "label": "Digital Identity Wallet"
+    },
+    {
+      "slug": "verifiable-credentials",
+      "label": "Verifiable Credentials"
+    }
+  ]
+}

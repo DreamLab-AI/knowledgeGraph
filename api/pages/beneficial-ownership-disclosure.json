@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:beneficial-ownership-disclosure",
+  "title": "Beneficial Ownership Disclosure",
+  "slug": "beneficial-ownership-disclosure",
+  "public": true,
+  "classIri": "urn:ngm:class:beneficial-ownership-disclosure",
+  "domain": "governance",
+  "definition": "Beneficial ownership disclosure is the regulatory requirement for legal entities such as companies, trusts, and partnerships to identify and register the natural persons who ultimately own or control them above a defined threshold, typically 25% of shares or voting rights. The primary purpose is to prevent the misuse of corporate structures for money laundering, tax evasion, corruption, and sanctions circumvention by making true ownership transparent to regulators and, increasingly, the public.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:fatf",
+        "label": "FATF"
+      },
+      {
+        "id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    },
+    {
+      "slug": "dao-legal-structures",
+      "label": "DAO Legal Structures"
+    }
+  ]
+}

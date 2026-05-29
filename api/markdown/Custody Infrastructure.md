@@ -1,0 +1,59 @@
+public:: true
+
+# Custody Infrastructure
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:custody-infrastructure",
+  "@type": "Page",
+  "vc:slug": "custody-infrastructure",
+  "title": "Custody Infrastructure",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 2
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:custody-infrastructure",
+  "@type": "Class",
+  "label": "Custody Infrastructure",
+  "definition": "Custody infrastructure refers to the technological, operational, and regulatory systems that enable the secure holding, management, and transfer of digital assets on behalf of third parties, encompassing hardware security modules, multi-signature schemes, key management systems, cold storage vaults, and the compliance workflows that satisfy fiduciary and regulatory obligations. It is the institutional-grade equivalent of a traditional custodian bank for blockchain-native assets.",
+  "domain": "blockchain",
+  "maturity": "established",
+  "subClassOf": [
+    {"@id": "urn:ngm:class:digital-asset-infrastructure", "label": "Digital Asset Infrastructure"},
+    {"@id": "urn:ngm:class:custody", "label": "Custody"}
+  ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:hardware-security-module", "label": "Hardware Security Module"},
+      {"@id": "urn:ngm:class:multi-signature", "label": "Multi-Signature"},
+      {"@id": "urn:ngm:class:key-management-system", "label": "Key Management System"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:cold-storage", "label": "Cold Storage"},
+      {"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:institutional-digital-asset-custody", "label": "Institutional Digital Asset Custody"}
+    ]
+  },
+  "quality": 0.8
+}
+```
+
+- ### Definition
+  - [[Custody Infrastructure]] is the integrated set of hardware, software, and operational controls used by regulated entities to safeguard [[Digital Asset Infrastructure]] on behalf of clients, relying on [[Hardware Security Module]] enclaves, [[Multi-Signature]] authorisation, and rigorous [[Key Management System]] practices to prevent loss or theft.
+
+- ### Relationships
+  - Custody Infrastructure depends on [[Hardware Security Module]] devices for key generation and signing, [[Multi-Signature]] schemes for policy enforcement, and [[Key Management System]] for lifecycle management; it operates within [[Financial Regulation]] frameworks and supports the broader [[Institutional Digital Asset Custody]] market, with [[Cold Storage]] as its offline-security component.
+
+- ### Content
+  - Early cryptocurrency custody was informal: exchanges held user funds in hot wallets, leading to catastrophic losses (Mt. Gox 2014, Bitfinex 2016, FTX 2022). Professional custody infrastructure emerged from traditional securities custody practices combined with blockchain-specific cryptographic controls. Firms such as BitGo (founded 2013), Coinbase Custody (2018), Fidelity Digital Assets (2018), and Anchorage Digital (2017, first US federally chartered digital asset bank) pioneered institutional-grade custody. The OCC interpretive letter of 2020 clarifying that national banks may provide custody services for digital assets accelerated institutional adoption.
+  - Custody infrastructure typically combines hot, warm, and cold storage tiers. Cold storage uses air-gapped hardware security modules (HSMs) or hardware wallets in geographically distributed vaults, accessible only through offline transaction signing ceremonies with multi-party authorisation. Warm storage uses network-connected HSMs for faster settlement. Multi-signature (multisig) and multi-party computation (MPC) schemes distribute key material so no single party can sign unilaterally. Policy engines enforce withdrawal limits, counterparty whitelists, and time delays. Compliance modules integrate with blockchain analytics (Chainalysis, Elliptic) for transaction screening.
+  - Custody infrastructure is foundational to institutional participation in digital asset markets. Regulated investment vehicles (ETFs, pension funds, endowments) legally require qualified custodians. Without reliable custody, institutional capital allocation to crypto remains impractical. The launch of spot Bitcoin ETFs in the US in January 2024 created significant demand for regulated custody capacity, with Coinbase Custody serving as custodian for the majority of approved funds. Custody also enables tokenised real-world assets (RWAs) to be held alongside traditional securities in omnibus accounts.
+  - As of 2024–2025, MPC (multi-party computation) custody has largely supplanted traditional multisig for many institutional providers, offering equivalent security with fewer on-chain footprint concerns and better user experience for key recovery. Providers including Fireblocks, Copper, and Qredo use MPC-TSS (threshold signature schemes). Regulatory clarity is advancing: the EU's MiCA regulation establishes crypto-asset service provider (CASP) licensing requirements including custody rules; the SEC's SAB 121 controversy (requiring banks to hold crypto on balance sheet at fair value) was partially reversed in 2024. On-chain programmable custody—using smart contracts for policy enforcement—is maturing through projects such as Gnosis Safe and institutional DeFi custody rails.
+

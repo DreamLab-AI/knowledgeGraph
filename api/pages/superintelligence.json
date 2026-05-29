@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:superintelligence",
+  "title": "Superintelligence",
+  "slug": "superintelligence",
+  "public": true,
+  "classIri": "urn:ngm:class:superintelligence",
+  "domain": "ai",
+  "definition": "Superintelligence refers to a hypothetical form of artificial intelligence that surpasses the cognitive performance of any human across virtually all domains of interest, including scientific reasoning, social manipulation, and strategic planning. Nick Bostrom distinguishes speed superintelligence (same algorithms, faster hardware), collective superintelligence (many coordinated AI agents), and quality superintelligence (genuinely superior algorithms), each presenting distinct safety and control challenges.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:artificial-superintelligence",
+      "label": "Artificial Superintelligence"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.85,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:agi-timelines",
+        "label": "AGI Timelines"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "artificial-general-intelligence",
+      "label": "Artificial General Intelligence"
+    },
+    {
+      "slug": "singularity",
+      "label": "Singularity"
+    }
+  ]
+}

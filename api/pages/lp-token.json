@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:lp-token",
+  "title": "LP Token",
+  "slug": "lp-token",
+  "public": true,
+  "classIri": "urn:ngm:class:lp-token",
+  "domain": "finance",
+  "definition": "An LP (Liquidity Provider) token is a fungible cryptographic token minted by a decentralised exchange or liquidity pool smart contract to represent a depositor's proportional ownership stake in a pool's combined assets, accrued fees, and associated yield. LP tokens serve as receipts that can be redeemed to withdraw the underlying liquidity position at any time.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:token-standard",
+      "label": "Token Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:yield-farming",
+        "label": "Yield Farming"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-provider",
+        "label": "Liquidity Provider"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:impermanent-loss",
+        "label": "Impermanent Loss"
+      },
+      {
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "liquidity-pool",
+      "label": "Liquidity Pool"
+    },
+    {
+      "slug": "liquidity-provision",
+      "label": "Liquidity Provision"
+    }
+  ]
+}

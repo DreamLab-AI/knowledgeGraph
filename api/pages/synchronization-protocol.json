@@ -1,0 +1,62 @@
+{
+  "id": "urn:visionflow:page:synchronization-protocol",
+  "title": "Synchronization Protocol",
+  "slug": "synchronization-protocol",
+  "public": true,
+  "classIri": "urn:ngm:class:synchronization-protocol",
+  "domain": "infrastructure",
+  "definition": "A synchronization protocol is a set of rules by which distributed parties bring their state, clocks, or data into agreement despite operating independently and communicating over unreliable channels. It encompasses clock-synchronisation protocols (NTP, PTP) that align time across machines, and data-synchronisation protocols that reconcile divergent replicas using version vectors, operational transforms, or conflict-free replicated data types. Synchronization protocols are foundational to distributed databases, collaborative editing, mobile offline-first applications, and any system where multiple nodes must converge on a consistent view.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:network-protocol",
+      "label": "Network Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:replication",
+        "label": "Replication"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:clock-synchronization",
+        "label": "Clock Synchronization"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "digital-ritual",
+      "label": "Digital Ritual"
+    },
+    {
+      "slug": "state-synchronization",
+      "label": "State Synchronization"
+    }
+  ]
+}

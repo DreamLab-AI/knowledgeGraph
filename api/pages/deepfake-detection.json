@@ -1,0 +1,75 @@
+{
+  "id": "urn:visionflow:page:deepfake-detection",
+  "title": "Deepfake Detection",
+  "slug": "deepfake-detection",
+  "public": true,
+  "classIri": "urn:ngm:class:deepfake-detection",
+  "domain": "ai",
+  "definition": "Deepfake detection is the application of machine learning and signal processing techniques to identify synthetic or manipulated media\u2014including face-swapped video, voice-cloned audio, and AI-generated images\u2014by analysing artefacts, inconsistencies, and statistical signatures that distinguish fabricated from authentic content. It operates as a countermeasure to generative adversarial networks and related synthesis methods.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:content-authenticity",
+        "label": "Content Authenticity"
+      },
+      {
+        "id": "urn:ngm:class:content-authentication",
+        "label": "Content Authentication"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:deepfakes",
+        "label": "Deepfakes"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-origin-declaration",
+      "label": "Ai Origin Declaration"
+    },
+    {
+      "slug": "generative-adversarial-networks",
+      "label": "Generative Adversarial Networks"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

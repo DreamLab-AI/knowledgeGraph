@@ -1,0 +1,71 @@
+{
+  "id": "urn:visionflow:page:bitstring-status-list",
+  "title": "Bitstring Status List",
+  "slug": "bitstring-status-list",
+  "public": true,
+  "classIri": "urn:ngm:class:bitstring-status-list",
+  "domain": "governance",
+  "definition": "Bitstring Status List is a W3C specification for expressing the revocation or suspension status of Verifiable Credentials through a compressed, publicly-hosted bitstring in which each credential is assigned a position index; setting that bit to 1 indicates revocation without disclosing which specific credential holder triggered the change. The mechanism is privacy-preserving because verifiers observe only a large compressed list, not individual credential identifiers. It supersedes the earlier Credential Status List 2021 specification and is designed to be bandwidth-efficient and herd-privacy-compatible.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:revocation-mechanism",
+      "label": "Revocation Mechanism"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:credential-verification",
+        "label": "Credential Verification"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:verifiable-credential-standard",
+        "label": "Verifiable Credential Standard"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:revocation-registry",
+        "label": "Revocation Registry"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "self-sovereign-identity",
+      "label": "Self Sovereign Identity"
+    },
+    {
+      "slug": "verifiable-credentials",
+      "label": "Verifiable Credentials"
+    }
+  ]
+}

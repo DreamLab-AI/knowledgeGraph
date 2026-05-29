@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:chapman-kolmogorov-equation",
+  "title": "Chapman-Kolmogorov Equation",
+  "slug": "chapman-kolmogorov-equation",
+  "public": true,
+  "classIri": "urn:ngm:class:chapman-kolmogorov-equation",
+  "domain": "ai",
+  "definition": "The Chapman-Kolmogorov Equation is a fundamental identity in probability theory and stochastic processes that expresses the consistency condition for transition probabilities of a Markov chain or continuous stochastic process. It states that the probability of moving from state i to state j in n+m steps equals the sum over all intermediate states k of the product of the n-step and m-step transition probabilities. This equation is the cornerstone of Markov chain analysis and underlies key algorithms in machine learning, Bayesian inference, and diffusion modelling.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:stochastic-process",
+      "label": "Stochastic Process"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:markov-chain-monte-carlo",
+        "label": "Markov Chain Monte Carlo"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:stochastic-differential-equation",
+        "label": "Stochastic Differential Equation"
+      },
+      {
+        "id": "urn:ngm:class:time-series-analysis",
+        "label": "Time-Series Analysis"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bayes-filter",
+      "label": "Bayes Filter"
+    },
+    {
+      "slug": "stochastic-process",
+      "label": "Stochastic Process"
+    }
+  ]
+}

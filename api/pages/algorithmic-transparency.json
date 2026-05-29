@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:algorithmic-transparency",
+  "title": "Algorithmic Transparency",
+  "slug": "algorithmic-transparency",
+  "public": true,
+  "classIri": "urn:ngm:class:algorithmic-transparency",
+  "domain": "governance",
+  "definition": "The principle and practice of making the logic, data inputs, decision criteria, and outputs of algorithmic systems sufficiently accessible and comprehensible to affected stakeholders, oversight bodies, and the general public. It encompasses both technical disclosure\u2014publishing model architectures, training data provenance, and evaluation results\u2014and process-level disclosure of how algorithms are developed, audited, and governed. Algorithmic transparency is recognised as a foundational requirement for accountability and trust in automated decision-making systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:explainability",
+      "label": "Explainability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:algorithmic-auditing",
+        "label": "Algorithmic Auditing"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-model-card",
+        "label": "AI Model Card"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:algorithmic-transparency-index",
+        "label": "Algorithmic Transparency Index"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-transparency-reports",
+        "label": "Algorithmic Transparency Reports"
+      },
+      {
+        "id": "urn:ngm:class:decision-transparency",
+        "label": "Decision Transparency"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "asia-pacific-regulation",
+      "label": "Asia Pacific Regulation"
+    },
+    {
+      "slug": "consumer-protection",
+      "label": "Consumer Protection"
+    },
+    {
+      "slug": "explainable-ai",
+      "label": "Explainable AI"
+    }
+  ]
+}

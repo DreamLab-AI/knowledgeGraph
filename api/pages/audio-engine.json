@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:audio-engine",
+  "title": "Audio Engine",
+  "slug": "audio-engine",
+  "public": true,
+  "classIri": "urn:ngm:class:audio-engine",
+  "domain": "media",
+  "definition": "An Audio Engine is a software subsystem that manages the real-time synthesis, processing, mixing, and spatialisation of sound within an interactive or generative application. It abstracts hardware audio interfaces, schedules audio computation on dedicated threads or hardware DSP units, and exposes higher-level APIs for triggering, routing, and modulating sound objects in response to application events.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:audio-system",
+      "label": "Audio System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      },
+      {
+        "id": "urn:ngm:class:audio-spatialization",
+        "label": "Audio Spatialization"
+      },
+      {
+        "id": "urn:ngm:class:procedural-audio-generator",
+        "label": "Procedural Audio Generator"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:audio-signal-processing",
+        "label": "Audio Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:digital-signal-processing",
+        "label": "Digital Signal Processing"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "audio-parameters",
+      "label": "Audio Parameters"
+    },
+    {
+      "slug": "game-engine",
+      "label": "Game Engine"
+    }
+  ]
+}

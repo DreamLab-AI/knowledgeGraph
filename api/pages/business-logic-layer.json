@@ -1,0 +1,72 @@
+{
+  "id": "urn:visionflow:page:business-logic-layer",
+  "title": "Business Logic Layer",
+  "slug": "business-logic-layer",
+  "public": true,
+  "classIri": "urn:ngm:class:business-logic-layer",
+  "domain": "infrastructure",
+  "definition": "The Business Logic Layer (BLL) is the architectural tier in a multi-tier application that encapsulates domain rules, workflows, and computations specific to the problem domain, sitting between the presentation layer and the data access layer. It is responsible for validating inputs, enforcing business constraints, orchestrating data transformations, and coordinating service calls, ensuring that domain invariants are maintained independently of user interface or persistence concerns.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:service-layer",
+      "label": "Service Layer"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-layer",
+        "label": "Data Layer"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:middleware",
+        "label": "Middleware"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "id": "urn:ngm:class:service-oriented-architecture",
+        "label": "Service Oriented Architecture"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "application-layer",
+      "label": "Application Layer"
+    },
+    {
+      "slug": "data-layer",
+      "label": "Data Layer"
+    }
+  ]
+}

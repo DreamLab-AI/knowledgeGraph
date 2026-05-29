@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:central-bank-infrastructure",
+  "title": "Central Bank Infrastructure",
+  "slug": "central-bank-infrastructure",
+  "public": true,
+  "classIri": "urn:ngm:class:central-bank-infrastructure",
+  "domain": "finance",
+  "definition": "Central bank infrastructure encompasses the systems, networks, and institutional arrangements through which a central bank fulfils its core functions: operating real-time gross settlement (RTGS) systems for interbank payments, managing the issuance and lifecycle of physical and digital currency, implementing monetary policy, maintaining financial stability, and serving as lender of last resort. It includes SWIFT connectivity, RTGS platforms (such as CHAPS, Fedwire, TARGET2), central securities depositories, and increasingly the digital and distributed ledger systems under evaluation for CBDC issuance. This infrastructure forms the foundation upon which all commercial banking and payment activity ultimately settles.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:payment-infrastructure",
+      "label": "Payment Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:monetary-policy-implementation",
+        "label": "Monetary Policy Implementation"
+      },
+      {
+        "id": "urn:ngm:class:atomic-settlement",
+        "label": "Atomic Settlement"
+      },
+      {
+        "id": "urn:ngm:class:cbdc-infrastructure",
+        "label": "CBDC Infrastructure"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      },
+      {
+        "id": "urn:ngm:class:cross-border-settlement",
+        "label": "Cross-Border Settlement"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      },
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cbdc-frameworks",
+      "label": "CBDC Frameworks"
+    },
+    {
+      "slug": "central-bank-digital-currency",
+      "label": "Central Bank Digital Currency"
+    }
+  ]
+}

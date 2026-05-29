@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:cryptographic-proofs",
+  "title": "Cryptographic Proofs",
+  "slug": "cryptographic-proofs",
+  "public": true,
+  "classIri": "urn:ngm:class:cryptographic-proofs",
+  "domain": "security",
+  "definition": "Cryptographic proofs are mathematical constructions that allow one party to convince another of the truth of a statement with cryptographic certainty, often without revealing the underlying data. They include proofs of knowledge, membership proofs, proofs of computation, and zero-knowledge proofs, and rely on primitives such as hash functions, commitments, and elliptic-curve operations. Cryptographic proofs underpin blockchain validity, verifiable computation, privacy-preserving authentication, and data-availability guarantees, letting verifiers trust outcomes they did not themselves compute.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptographic-primitive",
+      "label": "Cryptographic Primitive"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-availability",
+        "label": "Data Availability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "credential-format-standard",
+      "label": "Credential Format Standard"
+    },
+    {
+      "slug": "decentralized-finance-de-fi",
+      "label": "Decentralized Finance (DeFi)"
+    },
+    {
+      "slug": "decentralized-governance",
+      "label": "Decentralized Governance"
+    },
+    {
+      "slug": "verification",
+      "label": "VERIFICATION"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "id": "urn:visionflow:page:federated-social-networks",
+  "title": "Federated Social Networks",
+  "slug": "federated-social-networks",
+  "public": true,
+  "classIri": "urn:ngm:class:federated-social-networks",
+  "domain": "web",
+  "definition": "Federated social networks are distributed communication platforms composed of independently operated servers that interoperate via shared open protocols, allowing users on different instances to follow, mention, and exchange content across administrative boundaries without centralised ownership. The model contrasts with siloed proprietary networks by enabling user data portability, operator sovereignty, and community-driven moderation policies.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:social-network-analysis",
+        "label": "Social Network Analysis"
+      },
+      {
+        "id": "urn:ngm:class:data-privacy",
+        "label": "Data Privacy"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:social-network-graph",
+        "label": "Social Network Graph"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:activity-pub",
+        "label": "ActivityPub"
+      },
+      {
+        "id": "urn:ngm:class:distributed-system-protocol",
+        "label": "Distributed System Protocol"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "death-of-the-internet",
+      "label": "Death of the Internet"
+    },
+    {
+      "slug": "multiverse",
+      "label": "Multiverse"
+    }
+  ]
+}

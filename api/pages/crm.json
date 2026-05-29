@@ -1,0 +1,71 @@
+{
+  "id": "urn:visionflow:page:crm",
+  "title": "CRM",
+  "slug": "crm",
+  "public": true,
+  "classIri": "urn:ngm:class:crm",
+  "domain": "ai",
+  "definition": "Customer Relationship Management (CRM) is a category of enterprise software and associated business processes that centralises the storage, tracking, and analysis of all interactions between an organisation and its customers, prospects, and partners across the full sales, marketing, and service lifecycle. A CRM system provides a shared record of each contact and account, enabling sales pipelines, service-case management, marketing campaign tracking, and analytical reporting from a single platform.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:enterprise-software-platform",
+      "label": "Enterprise Software Platform"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:crm-systems",
+        "label": "CRM Systems"
+      },
+      {
+        "id": "urn:ngm:class:crm-integration",
+        "label": "CRM Integration"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:customer-experience-management",
+        "label": "Customer Experience Management"
+      },
+      {
+        "id": "urn:ngm:class:customer-support-automation",
+        "label": "Customer Support Automation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:enterprise-workflow",
+        "label": "Enterprise Workflow"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:customer-data-platform",
+        "label": "Customer Data Platform"
+      },
+      {
+        "id": "urn:ngm:class:omnichannel",
+        "label": "Omnichannel"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "call-centres",
+      "label": "Call Centres"
+    }
+  ]
+}

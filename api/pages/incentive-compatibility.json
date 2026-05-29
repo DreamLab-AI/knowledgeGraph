@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:incentive-compatibility",
+  "title": "Incentive Compatibility",
+  "slug": "incentive-compatibility",
+  "public": true,
+  "classIri": "urn:ngm:class:incentive-compatibility",
+  "domain": "finance",
+  "definition": "A property of a mechanism or protocol in which every participant's dominant strategy is to act truthfully, such that honest reporting of private information is individually rational. Incentive compatibility ensures that the designed rules align agents' self-interest with socially desirable outcomes, eliminating the benefit of strategic misrepresentation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:mechanism-design",
+      "label": "Mechanism Design"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "distributed-decision-making",
+      "label": "Distributed Decision Making"
+    },
+    {
+      "slug": "quadratic-voting",
+      "label": "Quadratic Voting"
+    }
+  ]
+}

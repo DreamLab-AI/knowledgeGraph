@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:ambient-occlusion",
+  "title": "Ambient Occlusion",
+  "slug": "ambient-occlusion",
+  "public": true,
+  "classIri": "urn:ngm:class:ambient-occlusion",
+  "domain": "spatial",
+  "definition": "A shading and rendering technique that approximates the degree to which each point on a surface is occluded from ambient environmental light by surrounding geometry, producing soft shadows in crevices, corners, and contact areas that significantly enhance the perception of three-dimensional form and material grounding. Unlike direct illumination algorithms, ambient occlusion is view-independent and operates on the assumption that ambient light arrives uniformly from all directions, making it computationally tractable as either a pre-baked texture or a real-time screen-space approximation. It is a foundational element of physically plausible rendering pipelines.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:rendering-technique",
+      "label": "Rendering Technique"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:photorealistic-rendering",
+        "label": "Photorealistic Rendering"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      },
+      {
+        "id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:dynamic-lighting",
+        "label": "Dynamic Lighting"
+      },
+      {
+        "id": "urn:ngm:class:ar-occlusion",
+        "label": "AR Occlusion"
+      },
+      {
+        "id": "urn:ngm:class:occlusion-culling",
+        "label": "Occlusion Culling"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ray-tracing",
+      "label": "Ray Tracing"
+    },
+    {
+      "slug": "virtual-lighting-model",
+      "label": "Virtual Lighting Model"
+    }
+  ]
+}

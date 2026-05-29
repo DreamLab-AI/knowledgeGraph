@@ -1,0 +1,65 @@
+{
+  "id": "urn:visionflow:page:spot-bitcoin-etf",
+  "title": "Spot Bitcoin ETF",
+  "slug": "spot-bitcoin-etf",
+  "public": true,
+  "classIri": "urn:ngm:class:spot-bitcoin-etf",
+  "domain": "blockchain",
+  "definition": "A spot Bitcoin ETF is an exchange-traded fund that holds actual bitcoin and tracks its price directly, allowing investors to gain exposure through ordinary brokerage accounts without holding the asset or managing private keys. Approved by the US SEC in January 2024 after years of rejection, spot Bitcoin ETFs differ from earlier futures-based products by holding the underlying coin in regulated custody. They have channelled substantial institutional and retail capital into bitcoin and are widely regarded as a milestone in the asset's mainstream financial integration.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:exchange-traded-fund",
+      "label": "Exchange-Traded Fund"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:institutional-investment",
+        "label": "Institutional Investment"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:individual:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      },
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-related-links",
+      "label": "Bitcoin related links"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "securities-regulation",
+      "label": "Securities Regulation"
+    }
+  ]
+}

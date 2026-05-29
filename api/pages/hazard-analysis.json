@@ -1,0 +1,75 @@
+{
+  "id": "urn:visionflow:page:hazard-analysis",
+  "title": "Hazard Analysis",
+  "slug": "hazard-analysis",
+  "public": true,
+  "classIri": "urn:ngm:class:hazard-analysis",
+  "domain": "governance",
+  "definition": "Hazard analysis is the systematic identification, characterisation, and prioritisation of conditions or events with the potential to cause harm to people, systems, or environments, forming the foundational step in safety engineering processes that design controls to prevent or mitigate those harms. Methods range from qualitative techniques such as HAZOP and FMEA to quantitative probabilistic risk assessment, applied across aviation, automotive, nuclear, medical devices, and increasingly AI systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:risk-assessment",
+      "label": "Risk Assessment"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:fault-tree-analysis",
+        "label": "Fault Tree Analysis"
+      },
+      {
+        "id": "urn:ngm:class:risk-assessment-methodology",
+        "label": "Risk Assessment Methodology"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:fault-tolerance-system",
+        "label": "Fault Tolerance System"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "id": "urn:ngm:class:technical-standards",
+        "label": "Technical Standards"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "functional-safety",
+      "label": "Functional Safety"
+    },
+    {
+      "slug": "safety",
+      "label": "Safety"
+    }
+  ]
+}

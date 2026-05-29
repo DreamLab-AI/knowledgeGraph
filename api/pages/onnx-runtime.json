@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:onnx-runtime",
+  "title": "ONNX Runtime",
+  "slug": "onnx-runtime",
+  "public": true,
+  "classIri": "urn:ngm:class:onnx-runtime",
+  "domain": "ai",
+  "definition": "ONNX Runtime is an open-source, cross-platform inference and training acceleration engine developed by Microsoft that executes models represented in the Open Neural Network Exchange (ONNX) format. It applies a suite of graph optimisations\u2014operator fusion, constant folding, and memory planning\u2014and routes computation through hardware-specific execution providers (CUDA, TensorRT, DirectML, OpenVINO, CoreML) to maximise throughput and minimise latency across diverse deployment targets.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:inference-engine",
+      "label": "Inference Engine"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:real-time-inference-engine",
+        "label": "Real-Time Inference Engine"
+      },
+      {
+        "id": "urn:ngm:class:ai-model-inference-engine",
+        "label": "AI Model Inference Engine"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:onnx-standard",
+        "label": "ONNX Standard"
+      },
+      {
+        "id": "urn:ngm:class:onnx-operator-set",
+        "label": "ONNX Operator Set"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:onnx",
+        "label": "ONNX"
+      },
+      {
+        "id": "urn:ngm:class:model-deployment",
+        "label": "Model Deployment"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "hardware-and-edge",
+      "label": "Hardware and Edge"
+    },
+    {
+      "slug": "model-compression-for-edge",
+      "label": "Model Compression for Edge"
+    },
+    {
+      "slug": "neural-network-quantisation",
+      "label": "Neural Network Quantisation"
+    },
+    {
+      "slug": "robot-operating-system",
+      "label": "Robot Operating System"
+    },
+    {
+      "slug": "speech-and-voice",
+      "label": "Speech and Voice"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    },
+    {
+      "slug": "web-assembly",
+      "label": "WebAssembly"
+    }
+  ]
+}

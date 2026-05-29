@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:censorship-resistant-payments",
+  "title": "Censorship Resistant Payments",
+  "slug": "censorship-resistant-payments",
+  "public": true,
+  "classIri": "urn:ngm:class:censorship-resistant-payments",
+  "domain": "blockchain",
+  "definition": "Censorship resistant payments are financial transactions that cannot be selectively blocked, reversed, or denied by any single authority \u2014 including governments, financial institutions, or network intermediaries \u2014 by virtue of operating on decentralised, permissionless infrastructure. Resistance to censorship is achieved through architectural properties such as open validator sets, pseudonymous addressing, and consensus rules that treat all valid transactions equally regardless of the identities or purposes of parties. Bitcoin, Monero, and decentralised finance protocols on public blockchains are archetypal examples, contrasting with traditional payment rails where correspondent banks, card networks, and processors can refuse service.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:censorship-resistance",
+      "label": "Censorship Resistance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:financial-sovereignty",
+        "label": "Financial Sovereignty"
+      },
+      {
+        "id": "urn:ngm:class:micropayments",
+        "label": "Micropayments"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:bitcoin-network",
+        "label": "Bitcoin Network"
+      },
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "id": "urn:ngm:class:payment-channel",
+        "label": "Payment Channel"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
+      },
+      {
+        "id": "urn:ngm:class:monetary-sovereignty",
+        "label": "Monetary Sovereignty"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-as-money",
+      "label": "Bitcoin As Money"
+    },
+    {
+      "slug": "bitcoin-value-proposition",
+      "label": "Bitcoin Value Proposition"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "id": "urn:visionflow:page:bounding-volume",
+  "title": "Bounding Volume",
+  "slug": "bounding-volume",
+  "public": true,
+  "classIri": "urn:ngm:class:bounding-volume",
+  "domain": "spatial",
+  "definition": "A Bounding Volume is a simple geometric shape\u2014typically a sphere, axis-aligned bounding box (AABB), oriented bounding box (OBB), or convex hull\u2014that encloses a more complex geometric object or set of objects. By testing intersections or containment against the bounding volume rather than the full geometry, real-time rendering engines, physics simulators, and spatial query systems achieve orders-of-magnitude speedups during broad-phase culling and collision detection.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:spatial-data-structure",
+      "label": "Spatial Data Structure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:bounding-volume-hierarchy",
+        "label": "Bounding Volume Hierarchy"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      },
+      {
+        "id": "urn:ngm:class:frustum-culling",
+        "label": "Frustum Culling"
+      },
+      {
+        "id": "urn:ngm:class:occlusion-culling",
+        "label": "Occlusion Culling"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:spatial-index",
+        "label": "Spatial Index"
+      },
+      {
+        "id": "urn:ngm:class:scene-graph",
+        "label": "Scene Graph"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bounding-volume-hierarchy",
+      "label": "Bounding Volume Hierarchy"
+    },
+    {
+      "slug": "scene-graph",
+      "label": "Scene Graph"
+    }
+  ]
+}

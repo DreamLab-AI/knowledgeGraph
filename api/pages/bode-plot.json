@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:bode-plot",
+  "title": "Bode Plot",
+  "slug": "bode-plot",
+  "public": true,
+  "classIri": "urn:ngm:class:bode-plot",
+  "domain": "infrastructure",
+  "definition": "A Bode Plot is a pair of frequency-domain graphs used in control engineering and signal analysis to characterise the frequency response of a linear time-invariant system: one graph plots the magnitude of the system's transfer function in decibels against log-frequency, and the second plots the phase angle in degrees against log-frequency. Together they reveal gain margins, phase margins, bandwidth, and resonant behaviour, making Bode plots the primary graphical tool for assessing open-loop stability and designing compensators.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:control-system",
+      "label": "Control System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:stability-analysis",
+        "label": "Stability Analysis"
+      },
+      {
+        "id": "urn:ngm:class:pid-controller",
+        "label": "Pid Controller"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:transfer-function",
+        "label": "Transfer Function"
+      },
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      },
+      {
+        "id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "slug": "feedback-loop",
+      "label": "Feedback Loop"
+    }
+  ]
+}

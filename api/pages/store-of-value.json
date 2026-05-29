@@ -1,0 +1,65 @@
+{
+  "id": "urn:visionflow:page:store-of-value",
+  "title": "Store of Value",
+  "slug": "store-of-value",
+  "public": true,
+  "classIri": "urn:ngm:class:store-of-value",
+  "domain": "blockchain",
+  "definition": "A store of value is any asset that retains purchasing power over time, enabling the owner to defer consumption and retrieve real wealth in the future with minimal loss to inflation, confiscation, or degradation. Classical monetary theory identifies store-of-value function alongside medium-of-exchange and unit-of-account as the three primary functions of money, though assets can serve one function without the others.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bitcoin-as-money",
+      "label": "Bitcoin as Money"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.85,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:austrian-hard-money-theory",
+        "label": "Austrian Hard Money Theory"
+      },
+      {
+        "id": "urn:ngm:class:fixed-supply-monetary-policy",
+        "label": "Fixed Supply Monetary Policy"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:hard-money",
+        "label": "Hard Money"
+      },
+      {
+        "id": "urn:ngm:class:inflation-hedge",
+        "label": "Inflation Hedge"
+      },
+      {
+        "id": "urn:ngm:class:gold-standard",
+        "label": "Gold Standard"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-as-money",
+      "label": "Bitcoin As Money"
+    },
+    {
+      "slug": "bitcoin-value-proposition",
+      "label": "Bitcoin Value Proposition"
+    }
+  ]
+}

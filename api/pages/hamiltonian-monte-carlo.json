@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:hamiltonian-monte-carlo",
+  "title": "Hamiltonian Monte Carlo",
+  "slug": "hamiltonian-monte-carlo",
+  "public": true,
+  "classIri": "urn:ngm:class:hamiltonian-monte-carlo",
+  "domain": "ai",
+  "definition": "Hamiltonian Monte Carlo (HMC) is a Markov chain Monte Carlo sampling algorithm that uses Hamiltonian dynamics to generate distant, low-autocorrelation proposals in high-dimensional parameter spaces. By treating the negative log-posterior as a potential energy and augmenting with auxiliary momentum variables, HMC can traverse the posterior landscape far more efficiently than random-walk Metropolis methods.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bayesian-inference",
+      "label": "Bayesian Inference"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:bayesian-optimisation",
+        "label": "Bayesian Optimisation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gaussian-distribution",
+        "label": "Gaussian Distribution"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gaussian-process",
+        "label": "Gaussian Process"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-deep-learning",
+        "label": "Bayesian Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:inference-algorithm",
+        "label": "Inference Algorithm"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "probabilistic-model",
+      "label": "Probabilistic Model"
+    },
+    {
+      "slug": "sampling",
+      "label": "Sampling"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    }
+  ]
+}

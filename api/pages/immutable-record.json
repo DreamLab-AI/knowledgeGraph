@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:immutable-record",
+  "title": "Immutable Record",
+  "slug": "immutable-record",
+  "public": true,
+  "classIri": "urn:ngm:class:immutable-record",
+  "domain": "blockchain",
+  "definition": "An immutable record is a data entry that, once written, cannot be altered or deleted without cryptographic or consensus-based detection of tampering. Immutability is enforced through hash chaining, Merkle trees, distributed ledger consensus mechanisms, or append-only data structures, making immutable records foundational to audit trails, provenance tracking, and trustworthy data archiving.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:distributed-ledger",
+      "label": "Distributed Ledger"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:audit-log",
+        "label": "Audit Log"
+      },
+      {
+        "id": "urn:ngm:class:data-provenance",
+        "label": "Data Provenance"
+      },
+      {
+        "id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-ledger",
+        "label": "Blockchain Ledger"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      },
+      {
+        "id": "urn:ngm:class:trusted-timestamping",
+        "label": "Trusted Timestamping"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "distributed-ledger-technology-dlt",
+      "label": "Distributed Ledger Technology (DLT)"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    }
+  ]
+}

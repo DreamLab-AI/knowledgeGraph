@@ -1,0 +1,62 @@
+public:: true
+
+# Automatic1111
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:automatic1111",
+  "@type": "Page",
+  "vc:slug": "automatic1111",
+  "title": "Automatic1111",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 2
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:automatic1111",
+  "@type": "Class",
+  "label": "Automatic1111",
+  "definition": "An open-source, browser-based graphical user interface for Stable Diffusion and compatible diffusion models, providing extensive control over image-generation parameters, model loading, and an extensible plugin architecture. Automatic1111 (AUTOMATIC1111/stable-diffusion-webui on GitHub) became the dominant community-facing inference frontend for locally hosted image-generation models from 2022 onwards.",
+  "domain": "ai",
+  "maturity": "established",
+  "subClassOf": [{"@id": "urn:ngm:class:image-generation", "label": "Image Generation"}],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
+      {"@id": "urn:ngm:class:latent-diffusion", "label": "Latent Diffusion"},
+      {"@id": "urn:ngm:class:gpu-acceleration", "label": "GPU Acceleration"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:inpainting", "label": "Inpainting"},
+      {"@id": "urn:ngm:class:outpainting", "label": "Outpainting"},
+      {"@id": "urn:ngm:class:image-editing", "label": "Image Editing"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:sdxl", "label": "SDXL"},
+      {"@id": "urn:ngm:class:civitai", "label": "Civitai"},
+      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"},
+      {"@id": "urn:ngm:class:open-source-software", "label": "Open Source Software"}
+    ]
+  },
+  "quality": 0.8
+}
+```
+
+- ### Definition
+  - [[Automatic1111]] is the informal name for the `AUTOMATIC1111/stable-diffusion-webui` GitHub repository and the web application it defines, which wraps [[Diffusion Model]] inference — primarily Stable Diffusion and its variants — in a feature-rich browser interface accessible on consumer hardware. It supports text-to-image, image-to-image, [[Inpainting]], [[Outpainting]], and high-resolution upscaling workflows, with hundreds of community extensions providing additional capabilities such as ControlNet conditioning, LoRA fine-tune loading, and face restoration.
+
+- ### Relationships
+  - Automatic1111 operates [[Diffusion Model]]s using the [[Latent Diffusion]] architecture and leverages [[GPU Acceleration]] (via CUDA or ROCm) for acceptable inference speeds. Its plugin framework enables [[Inpainting]], [[Outpainting]], and broader [[Image Editing]] pipelines. It is a primary consumer interface for models published on [[Civitai]] and supports [[SDXL]] and successor architectures. Users interact with it extensively through [[Prompt Engineering]], crafting positive and negative text inputs to guide generation. It is emblematic of the [[Open Source Software]] culture that built the community diffusion ecosystem.
+
+- ### Content
+  - The repository was created in October 2022 by the pseudonymous developer AUTOMATIC1111 (later identified as a Russian open-source contributor) shortly after Stability AI released Stable Diffusion weights publicly. The initial release provided a Gradio-based web interface that dramatically reduced the barrier to running Stable Diffusion locally compared to command-line scripts. Within weeks it had accumulated thousands of GitHub stars and became the de facto standard local inference platform, overtaking early competitors through the breadth of its feature set and the responsiveness of its maintainer to community requests.
+
+  - Technically, Automatic1111 wraps the inference pipeline — tokenisation via CLIP, denoising via U-Net with configurable [[Sampling]] schedulers (Euler, DPM++, DDIM, and others), and decoding via [[VAE]] — in a web server (Gradio) with an HTTP API for programmatic access. Users control seed, step count, [[Classifier-Free Guidance]] scale, resolution, and model checkpoint from the UI. The extension API allows third parties to inject custom preprocessing, postprocessing, and new tab interfaces; popular extensions include ControlNet (structural conditioning), ADetailer (face/hand inpainting), and Deforum (animation). The `models/` directory accepts checkpoint files in `.ckpt` and `.safetensors` formats, enabling hot-swapping without restart.
+
+  - The community ecosystem around Automatic1111 includes [[Civitai]] as its primary model-distribution hub, where creators share base checkpoints, LoRA adapters, embeddings, and hypernetworks with accompanying sample images and parameter settings. Workflow sharing evolved into a documentation culture of "prompts and seeds" before ComfyUI's node-graph paradigm offered a more reproducible alternative. Discord servers, Reddit communities (r/StableDiffusion), and YouTube tutorials drove mass adoption. At its peak adoption in 2023 the repository had over 130,000 GitHub stars.
+
+  - By 2024–2025, Automatic1111 faces increasing competition from ComfyUI (preferred for complex node-based workflows), Forge (an optimised fork), and managed cloud platforms (Replicate, RunDiffusion). The project has adapted by supporting [[SDXL]], Stable Diffusion 3, and Flux model architectures, and by improving memory efficiency for running large models on consumer GPUs. Its legacy is the democratisation of high-quality image generation: it proved that a motivated open-source developer could build infrastructure that brought frontier generative AI capabilities to millions of ordinary users within days of model release.

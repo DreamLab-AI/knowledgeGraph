@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:animation-rig",
+  "title": "Animation Rig",
+  "slug": "animation-rig",
+  "public": true,
+  "classIri": "urn:ngm:class:animation-rig",
+  "domain": "spatial",
+  "definition": "An animation rig is a hierarchical system of bones, controls, and constraints applied to a 3D character or object to enable articulated movement for animation. It abstracts underlying mesh deformation through a control interface that animators manipulate, translating high-level poses into low-level vertex transformations. Rigs range from simple skeletal setups to complex systems incorporating inverse kinematics, blend shapes, and procedural dynamics.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:skeletal-animation",
+      "label": "Skeletal Animation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:character-animation",
+        "label": "Character Animation"
+      },
+      {
+        "id": "urn:ngm:class:procedural-animation",
+        "label": "Procedural Animation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:3-d-animation",
+        "label": "3D Animation"
+      },
+      {
+        "id": "urn:ngm:class:mesh-data",
+        "label": "Mesh Data"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "3-d-scene-exchange-protocol-sxp",
+      "label": "3D Scene Exchange Protocol (SXP)"
+    },
+    {
+      "slug": "avatar",
+      "label": "Avatar"
+    }
+  ]
+}

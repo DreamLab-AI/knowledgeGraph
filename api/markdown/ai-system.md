@@ -1,0 +1,14 @@
+- ### Definition
+  - An [[AI System]] is a sociotechnical assembly in which one or more [[AI Model]] components are embedded within data pipelines, orchestration logic, user interfaces, and supporting [[Compute Infrastructure]]. The system boundary extends beyond the model weights themselves to encompass the full lifecycle of data ingestion, inference, output delivery, and feedback loops. Regulatory instruments such as the [[AI System (EU Definition)]] codify this broad perspective to ensure accountability extends to deployers as well as developers.
+
+- ### Relationships
+  - An AI System has parts including [[AI Model]] and [[AI Inference]] components and depends on [[Compute Infrastructure]] for execution. It is subject to [[AI Risk Assessment]] to identify hazards across the full system boundary. Deployment at the network edge gives rise to the subtype [[Edge AI System]]. The [[AI System (EU Definition)]] clarifies which assemblies fall within the EU AI Act's regulatory scope.
+
+- ### Content
+  - The concept of an AI system as a distinct engineering artefact emerged from early expert systems research in the 1970s, where symbolic reasoning engines were embedded in decision-support tools. The shift to statistical and later deep learning approaches from the 1990s onwards broadened the term to encompass any computational assembly that exhibits learning-based behaviour, prompting definitional work by standards bodies including ISO/IEC SC42.
+
+  - Technically, an AI system comprises a model or ensemble of models, a data ingestion and preprocessing layer, an inference runtime, monitoring instrumentation, and integration points with upstream and downstream systems. The complexity of orchestrating these components has given rise to specialised MLOps tooling and reference architectures that separate concerns across training, serving, and observability tiers.
+
+  - The ecosystem of AI system deployment spans cloud-hosted services from hyperscalers, on-premises enterprise installations, and increasingly [[Edge AI System]] configurations that push inference closer to sensors and users. Middleware frameworks, model servers, and API gateways form a middleware layer that abstracts deployment heterogeneity from application developers.
+
+  - By 2024–2025, the system-level view of AI has become central to regulatory discourse. The EU AI Act's tiered risk classification applies to systems rather than isolated models, requiring conformity assessments, [[AI Risk Assessment]], and post-market monitoring obligations. Multi-agent systems and compound AI architectures, where multiple AI systems collaborate dynamically, have emerged as an important architectural frontier with its own governance challenges.

@@ -1,0 +1,60 @@
+public:: true
+
+# Automated Design
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:automated-design",
+  "@type": "Page",
+  "vc:slug": "automated-design",
+  "title": "Automated Design",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 2
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:automated-design",
+  "@type": "Class",
+  "label": "Automated Design",
+  "definition": "The application of computational algorithms, machine learning, and optimisation techniques to generate, evaluate, and refine design artefacts with minimal or no manual intervention. Automated design spans domains from electronic circuit layout and architectural floor planning to product geometry synthesis and material specification, dramatically compressing design cycles whilst exploring solution spaces too large for human enumeration.",
+  "domain": "ai",
+  "maturity": "emerging",
+  "subClassOf": [{"@id": "urn:ngm:class:generative-design", "label": "Generative Design"}],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:algorithm", "label": "Algorithm"},
+      {"@id": "urn:ngm:class:simulation", "label": "Simulation"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:generative-design-tool", "label": "Generative Design Tool"},
+      {"@id": "urn:ngm:class:hyperparameter-optimisation", "label": "Hyperparameter Optimisation"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:formal-verification", "label": "Formal Verification"},
+      {"@id": "urn:ngm:class:cad-software", "label": "CAD Software"},
+      {"@id": "urn:ngm:class:constraint-based-design", "label": "Constraint Based Design"}
+    ]
+  },
+  "quality": 0.8
+}
+```
+
+- ### Definition
+  - [[Automated Design]] encompasses computational approaches that take design objectives, constraints, and performance metrics as inputs and produce optimised design outputs without step-by-step human direction. It includes electronic design automation (EDA) for integrated circuits, generative architectural layout tools, topology-optimisation for structural components, and neural architecture search (NAS) for machine-learning models. The common thread is the algorithmic traversal of a design space guided by evaluation functions representing physical, functional, or aesthetic criteria.
+
+- ### Relationships
+  - Automated Design draws upon [[Machine Learning]] for learned surrogate evaluation models and generative inference, [[Algorithm]]s for search and optimisation (genetic algorithms, simulated annealing, gradient descent), and [[Simulation]] for physics-based feasibility evaluation. It enables the creation of sophisticated [[Generative Design Tool]] products and is closely related to [[Hyperparameter Optimisation]] in ML pipeline design. [[Formal Verification]] validates correctness of automatically generated designs, whilst [[CAD Software]] provides the output environment and [[Constraint Based Design]] frames the feasibility boundary.
+
+- ### Content
+  - Automated design has roots in the early days of electronic computing: in the 1960s and 1970s IBM and Bell Labs developed programs to automatically place and route transistors on integrated circuit layouts, driven by the rapidly increasing component counts that made manual placement impractical. By the 1980s, electronic design automation (EDA) vendors such as Cadence and Synopsys had built commercial tool suites covering logic synthesis, static timing analysis, and design-rule checking. These tools enabled the semiconductor industry to scale from thousands to billions of transistors per die, making modern computing infrastructure possible.
+
+  - The algorithmic core of automated design encompasses several classes of technique. Combinatorial optimisation methods (branch-and-bound, simulated annealing, genetic algorithms) search discrete or mixed-integer spaces for circuit routing and architectural floorplanning. Gradient-based topology optimisation iteratively redistributes material density in a finite-element mesh to minimise compliance or weight subject to volume constraints, generating organically shaped structural components. Neural Architecture Search (NAS) trains a controller network to propose neural network topologies, evaluating candidate architectures on proxy tasks and using reinforcement learning or evolutionary strategies to guide the search towards high-performing designs.
+
+  - Commercial and open-source automated-design platforms span multiple domains. In electronics, Synopsys Fusion Compiler and Cadence Innovus implement ML-augmented placement-and-routing. In mechanical engineering, Autodesk Generative Design and nTopology produce geometry optimised for additive manufacturing. In architecture, Spacemaker (now Autodesk) automates site-layout generation subject to planning constraints, solar access, and noise regulations. In chip design, Google's reinforcement-learning-based floorplanner (published 2021) claimed human-competitive results in a fraction of the design time, though the claim generated significant academic scrutiny.
+
+  - In 2024–2025, large language models and multimodal foundation models are being integrated into automated-design workflows as high-level design intent translators, converting natural-language specifications into parametric CAD features or HDL code stubs. Diffusion-model-based approaches are being applied to 2D and 3D geometry generation. The convergence of simulation-driven design, AI-assisted evaluation, and digital-twin infrastructure is shortening the product development cycle across aerospace, semiconductor, consumer electronics, and construction sectors, whilst raising questions about design liability and intellectual-property ownership of algorithmically generated artefacts.

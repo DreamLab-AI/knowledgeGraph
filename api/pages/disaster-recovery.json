@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:disaster-recovery",
+  "title": "Disaster Recovery",
+  "slug": "disaster-recovery",
+  "public": true,
+  "classIri": "urn:ngm:class:disaster-recovery",
+  "domain": "infrastructure",
+  "definition": "Disaster recovery (DR) is the set of policies, tools, and procedures enabling an organisation to restore its IT systems, data, and operations following a disruptive event such as hardware failure, cyberattack, natural disaster, or human error. It is quantified by Recovery Time Objective (RTO) and Recovery Point Objective (RPO), and encompasses backup strategies, replication architectures, and tested failover procedures.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:resilience",
+      "label": "Resilience"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:backup-and-recovery",
+        "label": "Backup and Recovery"
+      },
+      {
+        "id": "urn:ngm:class:replication",
+        "label": "Replication"
+      },
+      {
+        "id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:resilience-metric",
+        "label": "Resilience Metric"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "fault-tolerance",
+      "label": "Fault Tolerance"
+    },
+    {
+      "slug": "storage-infrastructure",
+      "label": "Storage Infrastructure"
+    }
+  ]
+}

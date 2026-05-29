@@ -1,0 +1,73 @@
+{
+  "id": "urn:visionflow:page:network-effects",
+  "title": "Network Effects",
+  "slug": "network-effects",
+  "public": true,
+  "classIri": "urn:ngm:class:network-effects",
+  "domain": "ai",
+  "definition": "Network effects describe the phenomenon whereby a product or service gains additional value for each existing user as the number of participants increases, creating a self-reinforcing growth dynamic. Direct network effects arise when users directly benefit from others on the same platform; indirect effects emerge when complementary products or services multiply with scale, creating cross-side externalities.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:positive-feedback",
+      "label": "Positive Feedback"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:technology-ecosystem",
+        "label": "Technology Ecosystem"
+      },
+      {
+        "id": "urn:ngm:class:startup-ecosystem",
+        "label": "Startup Ecosystem"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:technology-adoption",
+        "label": "Technology Adoption"
+      },
+      {
+        "id": "urn:ngm:class:ecosystem-connectivity",
+        "label": "Ecosystem Connectivity"
+      },
+      {
+        "id": "urn:ngm:class:mass-adoption",
+        "label": "Mass Adoption"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-value-proposition",
+      "label": "Bitcoin Value Proposition"
+    },
+    {
+      "slug": "bitcoin-value-proposition",
+      "label": "Bitcoin Value Proposition"
+    },
+    {
+      "slug": "convergence",
+      "label": "Convergence"
+    },
+    {
+      "slug": "death-of-the-internet",
+      "label": "Death of the Internet"
+    }
+  ]
+}

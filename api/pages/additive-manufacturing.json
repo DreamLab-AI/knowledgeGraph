@@ -1,0 +1,79 @@
+{
+  "id": "urn:visionflow:page:additive-manufacturing",
+  "title": "Additive Manufacturing",
+  "slug": "additive-manufacturing",
+  "public": true,
+  "classIri": "urn:ngm:class:additive-manufacturing",
+  "domain": "infrastructure",
+  "definition": "Additive manufacturing (AM) is a family of processes that construct three-dimensional objects by depositing, sintering, or photopolymerising material layer by layer from a digital design file, in contrast to subtractive methods that remove material from a solid block. Processes include fused deposition modelling, selective laser sintering, stereolithography, binder jetting, and directed energy deposition, each suited to particular materials and resolution requirements. AM enables on-demand production of complex geometries, personalised products, and distributed manufacturing without the tooling investment of conventional production.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-fabrication",
+      "label": "Digital Fabrication"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-fabrication",
+        "label": "Digital Fabrication"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:collaborative-robotics",
+        "label": "Collaborative Robotics"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cad-software",
+        "label": "CAD Software"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-twin-creation",
+        "label": "Digital Twin Creation"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision-system",
+        "label": "Computer Vision System"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "mechanical-component",
+      "label": "Mechanical Component"
+    },
+    {
+      "slug": "mechanical-component",
+      "label": "Mechanical Component"
+    },
+    {
+      "slug": "mechanical-component",
+      "label": "Mechanical Component"
+    },
+    {
+      "slug": "product-design",
+      "label": "Product Design"
+    }
+  ]
+}

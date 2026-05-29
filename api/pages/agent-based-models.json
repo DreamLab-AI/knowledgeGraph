@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:agent-based-models",
+  "title": "Agent-Based Models",
+  "slug": "agent-based-models",
+  "public": true,
+  "classIri": "urn:ngm:class:agent-based-models",
+  "domain": "ai",
+  "definition": "Agent-Based Models (ABMs) are computational simulation frameworks that represent systems as collections of autonomous, heterogeneous agents that interact with one another and their environment according to local rules, allowing complex global behaviours and emergent phenomena to arise from the bottom up without being explicitly programmed at the system level. They are a primary tool in complexity science for studying social, biological, economic, and technical systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:computational-intelligence",
+      "label": "Computational Intelligence"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:emergence",
+        "label": "Emergence"
+      },
+      {
+        "id": "urn:ngm:class:collective-intelligence",
+        "label": "Collective Intelligence"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "id": "urn:ngm:class:behavioral-modeling",
+        "label": "Behavioral Modeling"
+      },
+      {
+        "id": "urn:ngm:class:scientific-computing",
+        "label": "Scientific Computing"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "economics",
+      "label": "Economics"
+    },
+    {
+      "slug": "emergence",
+      "label": "Emergence"
+    }
+  ]
+}

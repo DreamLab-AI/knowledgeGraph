@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:message-broker",
+  "title": "Message Broker",
+  "slug": "message-broker",
+  "public": true,
+  "classIri": "urn:ngm:class:message-broker",
+  "domain": "infrastructure",
+  "definition": "A message broker is an intermediary software component that translates messages between disparate messaging protocols and routes them between producers and consumers, decoupling the two sides of a communication so that neither needs direct knowledge of the other. It typically provides guaranteed delivery, message queuing, routing rules, protocol translation, and persistence semantics.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:middleware",
+      "label": "Middleware"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:event-streaming",
+        "label": "Event Streaming"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:message-queue",
+        "label": "Message Queue"
+      },
+      {
+        "id": "urn:ngm:class:publish-subscribe-pattern",
+        "label": "Publish-Subscribe Pattern"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:apache-kafka",
+        "label": "Apache Kafka"
+      },
+      {
+        "id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event-Driven Architecture"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "data-integration-interface",
+      "label": "Data Integration Interface"
+    },
+    {
+      "slug": "digital-twin-synchronisation-bus",
+      "label": "Digital Twin Synchronisation Bus"
+    }
+  ]
+}

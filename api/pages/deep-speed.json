@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:deep-speed",
+  "title": "DeepSpeed",
+  "slug": "deep-speed",
+  "public": true,
+  "classIri": "urn:ngm:class:deep-speed",
+  "domain": "ai",
+  "definition": "DeepSpeed is an open-source deep learning optimisation library developed by Microsoft Research that enables training and inference of extremely large neural network models through ZeRO (Zero Redundancy Optimizer) memory partitioning, pipeline parallelism, and mixed-precision arithmetic. It reduces the per-device memory footprint of model states by partitioning optimiser states, gradients, and parameters across data-parallel devices.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:distributed-training",
+      "label": "Distributed Training"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:large-language-model-training",
+        "label": "Large Language Model Training"
+      },
+      {
+        "id": "urn:ngm:class:model-parallelism",
+        "label": "Model Parallelism"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:mixed-precision-training",
+        "label": "Mixed-Precision Training"
+      },
+      {
+        "id": "urn:ngm:class:gradient-checkpointing",
+        "label": "Gradient Checkpointing"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:pipeline-parallelism",
+        "label": "Pipeline Parallelism"
+      },
+      {
+        "id": "urn:ngm:class:hugging-face-accelerate",
+        "label": "Hugging Face Accelerate"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "checkpoints",
+      "label": "Checkpoints"
+    },
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    }
+  ]
+}

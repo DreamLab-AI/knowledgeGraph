@@ -1,0 +1,61 @@
+{
+  "id": "urn:visionflow:page:existential-risk",
+  "title": "Existential Risk",
+  "slug": "existential-risk",
+  "public": true,
+  "classIri": "urn:ngm:class:existential-risk",
+  "domain": "governance",
+  "definition": "An existential risk is any risk that could permanently and drastically curtail humanity's long-run potential \u2014 including human extinction, irreversible civilisational collapse, or permanent totalitarian lock-in \u2014 as distinct from severe but recoverable catastrophes. The concept grounds a research agenda that prioritises preventing outcomes from which recovery is impossible, because their badness is unbounded by the loss of all future generations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:catastrophic-risk-assessment",
+      "label": "Catastrophic Risk Assessment"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.85,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:catastrophic-risk-reduction",
+        "label": "Catastrophic Risk Reduction"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:biosecurity",
+        "label": "Biosecurity"
+      },
+      {
+        "id": "urn:ngm:class:future-of-humanity-institute",
+        "label": "Future of Humanity Institute"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-risks",
+      "label": "AI Risks"
+    },
+    {
+      "slug": "artificial-general-intelligence",
+      "label": "Artificial General Intelligence"
+    },
+    {
+      "slug": "singularity",
+      "label": "Singularity"
+    }
+  ]
+}

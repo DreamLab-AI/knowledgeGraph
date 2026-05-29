@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:reality-capture",
+  "title": "Reality Capture",
+  "slug": "reality-capture",
+  "public": true,
+  "classIri": "urn:ngm:class:reality-capture",
+  "domain": "spatial",
+  "definition": "Reality capture is the process of digitising the physical world into accurate, measurable 3D representations using sensors such as LiDAR scanners, photogrammetric camera arrays, and depth cameras, producing point clouds, textured meshes, or digital twin models. It encompasses the full workflow from on-site data acquisition to processing, georeferencing, and delivery of survey-grade or visualisation-grade 3D assets. Reality capture is foundational to construction, heritage preservation, urban digital twins, and spatial computing content pipelines.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:etsi-domain-reality-capture",
+      "label": "ETSI_Domain_Reality_Capture"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:point-cloud-processing",
+        "label": "Point Cloud Processing"
+      },
+      {
+        "id": "urn:ngm:class:environmental-mapping",
+        "label": "Environmental Mapping"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:lidar-scanning",
+        "label": "Lidar Scanning"
+      },
+      {
+        "id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      },
+      {
+        "id": "urn:ngm:class:multi-view-stereo",
+        "label": "Multi-View Stereo"
+      },
+      {
+        "id": "urn:ngm:class:laser-scanner",
+        "label": "Laser Scanner"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:geospatial-technology",
+        "label": "Geospatial Technology"
+      },
+      {
+        "id": "urn:ngm:class:3-d-scanning",
+        "label": "3D Scanning"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "human-capture-and-recognition",
+      "label": "Human Capture & Recognition"
+    },
+    {
+      "slug": "scene-capture-and-reconstruction",
+      "label": "Scene Capture and Reconstruction"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    }
+  ]
+}

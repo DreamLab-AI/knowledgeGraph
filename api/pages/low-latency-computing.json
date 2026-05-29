@@ -1,0 +1,62 @@
+{
+  "id": "urn:visionflow:page:low-latency-computing",
+  "title": "Low-Latency Computing",
+  "slug": "low-latency-computing",
+  "public": true,
+  "classIri": "urn:ngm:class:low-latency-computing",
+  "domain": "infrastructure",
+  "definition": "Low-latency computing is an architectural discipline concerned with minimising the end-to-end delay between a request and its response, typically targeting sub-millisecond to single-digit-millisecond budgets. It combines hardware proximity, kernel-bypass networking, lock-free data structures, cache-aware memory layouts, and predictable scheduling to eliminate sources of jitter. Application domains include high-frequency trading, real-time multiplayer rendering, industrial control, telecommunications signalling, and interactive AI inference, where tail latency rather than average throughput is the governing performance metric.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:distributed-computing",
+      "label": "Distributed Computing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "edge-orchestration",
+      "label": "Edge Orchestration"
+    },
+    {
+      "slug": "speech-and-voice",
+      "label": "Speech and Voice"
+    }
+  ]
+}

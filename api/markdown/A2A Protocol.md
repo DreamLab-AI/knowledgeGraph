@@ -1,0 +1,64 @@
+public:: true
+
+# A2A Protocol
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:a2-a-protocol",
+  "@type": "Page",
+  "vc:slug": "a2-a-protocol",
+  "title": "A2A Protocol",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 2
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:a2-a-protocol",
+  "@type": "Class",
+  "label": "A2A Protocol",
+  "definition": "The Agent-to-Agent (A2A) Protocol is an open communication specification, proposed by Google in 2025, that defines how autonomous AI agents discover one another, negotiate capabilities, delegate tasks, and exchange results across heterogeneous agent frameworks and cloud environments. It uses HTTP/REST transport with JSON-structured messages and an Agent Card system for capability advertisement, enabling cross-vendor agent interoperability without requiring shared infrastructure. A2A complements tool-access protocols such as the Model Context Protocol by standardising the agent-to-agent interaction layer.",
+  "domain": "ai",
+  "maturity": "emerging",
+  "subClassOf": [
+    {"@id": "urn:ngm:class:agent-communication-protocol", "label": "Agent Communication Protocol"}
+  ],
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:model-context-protocol", "label": "Model Context Protocol"},
+      {"@id": "urn:ngm:class:agent-to-agent-protocol", "label": "Agent-to-Agent Protocol"},
+      {"@id": "urn:ngm:class:multi-agent-system", "label": "Multi-Agent System"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:multi-agent-orchestration", "label": "Multi-Agent Orchestration"},
+      {"@id": "urn:ngm:class:agentic-workflow", "label": "Agentic Workflow"},
+      {"@id": "urn:ngm:class:inter-agent-communication", "label": "Inter-Agent Communication"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:agent-frameworks", "label": "Agent Frameworks"},
+      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"},
+      {"@id": "urn:ngm:class:function-calling", "label": "Function Calling"}
+    ]
+  },
+  "quality": 0.8
+}
+```
+
+- ### Definition
+  - The A2A Protocol (Agent-to-Agent Protocol) is an open interoperability standard that enables autonomous AI agents running on different frameworks, vendors, and cloud platforms to communicate directly. Proposed by Google in April 2025 and backed by over 50 technology partners at launch, A2A defines agent discovery via Agent Cards (structured JSON capability manifests), task delegation over HTTP/REST, streaming result delivery via Server-Sent Events, and authentication through industry-standard mechanisms. It operates at the agent-to-agent layer, complementing the [[Model Context Protocol]] which governs agent-to-tool interactions, and is designed to work with existing [[Agent Frameworks]] and [[Multi-Agent System]] architectures.
+
+- ### Relationships
+  - A2A Protocol is closely related to [[Model Context Protocol]] as a complementary specification in the emerging agentic standards stack, and to [[Agent-to-Agent Protocol]] as an alternative naming convention. It enables [[Multi-Agent Orchestration]] by providing the discovery and delegation layer, supports [[Agentic Workflow]] construction across heterogeneous agents, and enables [[Inter-Agent Communication]] in distributed settings. It uses existing [[Agent Frameworks]] as the execution environments for conforming agents, relies on [[Agentic AI]] as the broader paradigm, and builds on [[Function Calling]] conventions from LLM APIs.
+
+- ### Content
+  - The emergence of A2A Protocol reflects the practical challenge encountered as AI agent deployments scaled beyond single-framework implementations. Enterprise deployments increasingly combine specialised agents built on different platforms — LangChain orchestrators delegating to CrewAI workflows, or Vertex AI agents collaborating with Azure AI Studio agents — with no standard mechanism for cross-framework communication. Early solutions relied on custom API contracts or shared message queues, creating brittle integrations. Google's release of A2A at its Cloud Next 2025 conference addressed this gap by proposing an open, HTTP-native protocol.
+
+  - Technically, A2A centres on three concepts. Agent Cards are JSON-LD documents hosted at a standard well-known URL on each agent's endpoint, advertising the agent's name, capabilities, supported task types, authentication requirements, and streaming support. Tasks are the unit of delegation: an orchestrating agent sends a task request (with text or multipart payload), and the executing agent streams updates and returns a final result using a structured Task object. Authentication supports OAuth 2.0 and API key schemes, with capability negotiation allowing progressive enhancement based on what both sides support.
+
+  - The ecosystem around A2A is consolidating rapidly. Google's Agent Development Kit (ADK) provides native A2A support, and LangChain, CrewAI, and Salesforce Agentforce announced compatibility in 2025. The Agentic Alliance — a loose coalition advocating open agent standards — includes A2A alongside MCP in its recommended interoperability stack. Commercial platforms are implementing A2A endpoints on agent registries, enabling marketplace-style discovery where orchestrators query capability catalogues to find agents that can handle specific task types.
+
+  - In the current state (2025), A2A is in early adoption. Real-world deployments are testing cross-vendor orchestration in enterprise automation, research agent networks, and agentic metaverse coordination scenarios. Open questions include security models for preventing agent impersonation, semantics for partial task results and cancellation, and integration with decentralised agent identity systems. The protocol's governance model — whether it will be stewarded by a neutral standards body or remain Google-led — is being debated by the community. Its relationship with competing approaches such as Anthropic's MCP extensions for multi-agent use cases and OpenAI's swarm patterns is evolving.
+

@@ -1,0 +1,56 @@
+public:: true
+
+# State Observer
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:state-observer",
+  "@type": "Page",
+  "vc:slug": "state-observer",
+  "title": "State Observer",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 2
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:state-observer",
+  "@type": "Class",
+  "label": "State Observer",
+  "definition": "A state observer is a dynamical system that estimates the internal state of a controlled plant from its measured inputs and outputs when the full state cannot be directly sensed. By running a model of the plant in parallel and correcting it with the measurement error, an observer reconstructs unmeasured variables for use in feedback control. Classical examples include the Luenberger observer for deterministic systems and the Kalman filter for stochastic systems, making observers essential to state-feedback control of partially observable processes.",
+  "domain": "robotics",
+  "maturity": "established",
+  "subClassOf": [{"@id": "urn:ngm:class:state-estimation", "label": "State Estimation"}],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:kalman-filter", "label": "Kalman Filter"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:control-system", "label": "Control System"},
+      {"@id": "urn:ngm:class:optimal-control", "label": "Optimal Control"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:control-theory", "label": "Control Theory"}
+    ]
+  },
+  "quality": 0.8
+}
+```
+
+- ### Definition
+  - A state observer estimates a system's unmeasured internal state from its inputs and outputs by running a model in parallel and correcting it with the measurement error, enabling state feedback when full sensing is unavailable.
+
+- ### Relationships
+  - State Observer is a subclass of [[State Estimation]] and uses the [[Kalman Filter]] as its optimal stochastic instance. It supports [[Control System]] design and [[Optimal Control]] by supplying the state estimates those methods assume, and relates to the foundational discipline of [[Control Theory]].
+
+- ### Content
+  - Modern control methods assume access to the system's full state vector, yet in real systems only a subset of states is directly measurable — sensors are costly, noisy, or physically impossible to place. The state observer resolves this gap by reconstructing the hidden states from what can be measured, making the powerful machinery of state-feedback control applicable to the partially observable systems that dominate engineering practice.
+
+  - An observer works by simulating a model of the plant alongside the real system. Both receive the same control input; the observer also compares its predicted output against the plant's actual measured output and feeds the resulting error back into its own dynamics through an observer gain. If the system is observable and the gain is chosen well, this correction drives the estimation error to zero, so the observer's internal state converges to the true plant state regardless of initial uncertainty.
+
+  - The choice of observer gain mirrors the controller-design problem by duality. The deterministic Luenberger observer places the error dynamics' poles to achieve a desired convergence speed, trading faster estimation against sensitivity to noise. The Kalman filter solves the same reconstruction problem optimally under Gaussian process and measurement noise, computing a time-varying gain that minimises the expected estimation-error covariance — the appropriate choice when uncertainty is stochastic rather than merely unknown.
+
+  - Observers are ubiquitous wherever feedback control meets incomplete sensing: estimating vehicle sideslip and tyre forces that cannot be measured, reconstructing motor rotor position in sensorless drives, inferring chemical concentrations in process control, and fusing inertial and visual data for robot localisation. They also serve diagnosis — a large, persistent observer error signals a fault or model mismatch — making the state observer both a control enabler and a monitoring tool at the heart of estimation-based engineering.

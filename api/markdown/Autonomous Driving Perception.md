@@ -1,0 +1,62 @@
+public:: true
+
+# Autonomous Driving Perception
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:autonomous-driving-perception",
+  "@type": "Page",
+  "vc:slug": "autonomous-driving-perception",
+  "title": "Autonomous Driving Perception",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 2
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:autonomous-driving-perception",
+  "@type": "Class",
+  "label": "Autonomous Driving Perception",
+  "definition": "The subsystem of an autonomous vehicle responsible for interpreting sensor data to construct a structured understanding of the vehicle's immediate environment, including the detection, classification, and tracking of objects, lane geometry, road surfaces, traffic signage, and dynamic actors. Autonomous driving perception fuses inputs from cameras, LiDAR, radar, and ultrasonic sensors to produce a real-time scene representation sufficient for safe navigation decisions.",
+  "domain": "ai",
+  "maturity": "emerging",
+  "subClassOf": [{"@id": "urn:ngm:class:perception-system", "label": "Perception System"}],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
+      {"@id": "urn:ngm:class:lidar", "label": "Lidar"},
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:autonomous-driving", "label": "Autonomous Driving"},
+      {"@id": "urn:ngm:class:scene-understanding", "label": "Scene Understanding"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:object-detection", "label": "Object Detection"},
+      {"@id": "urn:ngm:class:semantic-segmentation", "label": "Semantic Segmentation"},
+      {"@id": "urn:ngm:class:point-cloud", "label": "Point Cloud"},
+      {"@id": "urn:ngm:class:depth-estimation", "label": "Depth Estimation"}
+    ]
+  },
+  "quality": 0.8
+}
+```
+
+- ### Definition
+  - [[Autonomous Driving Perception]] is the real-time sense-making subsystem of an autonomous vehicle (AV) stack that transforms raw sensor streams into structured, semantically rich environmental representations. It ingests data from heterogeneous sensors — cameras (RGB, fisheye, thermal), [[Lidar]] scanners, radar arrays, and ultrasonic transducers — and produces outputs including 3D bounding boxes around dynamic objects, lane-level road-surface maps, free-space estimates, and traffic-element states. These outputs feed directly into prediction and planning modules, making perception quality the primary safety-determinant of autonomous driving performance.
+
+- ### Relationships
+  - Autonomous Driving Perception is built upon [[Sensor Fusion]] to combine complementary modality data, [[Computer Vision]] algorithms for image-space understanding, [[Lidar]] for precise 3D geometry acquisition, and [[Deep Learning]] models as the predominant inference engine. It enables [[Autonomous Driving]] systems and produces the [[Scene Understanding]] required for safe manoeuvre planning. It encompasses specific tasks including [[Object Detection]], [[Semantic Segmentation]], [[Point Cloud]] processing, and [[Depth Estimation]].
+
+- ### Content
+  - The problem of machine perception for autonomous driving was first seriously confronted in the DARPA Autonomous Land Vehicle programme of the mid-1980s and the ALVINN neural-network steering controller (Pomerleau, Carnegie Mellon, 1989). These early systems were predominantly camera-based and performed well only in highly constrained environments. The DARPA Grand Challenge (2004–2005) and Urban Challenge (2007) catalysed a generation of academic teams combining GPS, laser range finders, and probabilistic localisation to navigate desert trails and simulated urban streets, establishing the sensor-fusion paradigm that dominates the field today.
+
+  - Modern AV perception architectures process sensor data through specialised deep neural networks. Camera-based perception uses convolutional and transformer backbones for 2D object detection (YOLO, DETR variants), monocular and stereo depth estimation, and semantic/panoptic segmentation. LiDAR-based perception processes point clouds with sparse 3D convolution networks (VoxelNet, PointPillars, CenterPoint) to produce 3D bounding-box detections. Radar complements these modalities with Doppler velocity measurement and robustness in fog and rain. Multi-modal fusion networks — operating at the feature level rather than the decision level — combine camera and LiDAR representations into a unified BEV (Bird's Eye View) grid that provides metric-scale spatial understanding regardless of viewing angle.
+
+  - The perception stack in production AV systems (Waymo, Cruise, Mobileye, Tesla) runs on specialised AI accelerator hardware — GPUs, Google TPUs, or custom ASICs — achieving real-time inference at 25–100 Hz on the full sensor suite. HD map integration supplements online perception with pre-mapped lane topology, reducing the burden on the real-time system for static scene understanding. Temporal fusion across multiple frames improves detection of occluded or low-reflectivity objects. Uncertainty quantification — conveying detection confidence as epistemic or aleatoric uncertainty — is a research priority to enable safe handling of edge cases.
+
+  - In 2024–2025, vision-language models and occupancy-prediction networks are reshaping AV perception. Occupancy networks (OccNet, OpenOccupancy) predict dense voxel-level semantic occupancy rather than sparse object detections, offering richer representations for novel obstacle types. End-to-end imitation learning approaches (Tesla FSD v12, Wayve LINGO) replace modular perception-prediction-planning stacks with unified neural networks trained directly from human driving demonstrations, raising questions about interpretability and failure-mode auditability. Regulatory bodies in the EU, US, and UK are developing type-approval frameworks that require perception systems to demonstrate performance under edge cases such as adverse weather, unusual road markings, and vulnerable road-user scenarios.

@@ -1,0 +1,75 @@
+{
+  "id": "urn:visionflow:page:bluetooth-le",
+  "title": "Bluetooth LE",
+  "slug": "bluetooth-le",
+  "public": true,
+  "classIri": "urn:ngm:class:bluetooth-le",
+  "domain": "infrastructure",
+  "definition": "Bluetooth LE (Low Energy), also known as Bluetooth Smart, is a short-range wireless communication protocol introduced in Bluetooth 4.0 (2010) and standardised by the Bluetooth SIG, designed to transmit small amounts of data at low duty cycles while consuming a fraction of the power of Classic Bluetooth. It operates in the 2.4 GHz ISM band with 40 channels, using frequency-hopping spread spectrum, and is optimised for battery-constrained devices that need to remain active for months or years on a coin cell.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bluetooth-low-energy",
+      "label": "Bluetooth Low Energy"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:proximity-detection",
+        "label": "Proximity Detection"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:low-energy-consumption",
+        "label": "Low Energy Consumption"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:bluetooth-sig",
+        "label": "Bluetooth SIG"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:near-field-communication",
+        "label": "Near Field Communication"
+      },
+      {
+        "id": "urn:ngm:class:zigbee",
+        "label": "Zigbee"
+      },
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "home-assistant",
+      "label": "Home Assistant"
+    },
+    {
+      "slug": "physical-layer",
+      "label": "Physical Layer"
+    }
+  ]
+}

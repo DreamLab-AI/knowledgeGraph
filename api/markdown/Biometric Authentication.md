@@ -1,0 +1,62 @@
+public:: true
+
+# Biometric Authentication
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:biometric-authentication",
+  "@type": "Page",
+  "vc:slug": "biometric-authentication",
+  "title": "Biometric Authentication",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 2
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:biometric-authentication",
+  "@type": "Class",
+  "label": "Biometric Authentication",
+  "definition": "Biometric authentication is an identity verification method that uses measurable, unique physiological or behavioural characteristics of an individual—such as fingerprints, facial geometry, iris patterns, or voice—to confirm their claimed identity. Unlike passwords or tokens, biometric credentials are inherent to the person and cannot be forgotten or easily transferred, though they introduce irreversibility concerns because biometric data, once compromised, cannot be reset.",
+  "domain": "security",
+  "maturity": "established",
+  "subClassOf": [{"@id": "urn:ngm:class:authentication", "label": "Authentication"}],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:biometric-verification", "label": "Biometric Verification"},
+      {"@id": "urn:ngm:class:biometric-binding-mechanism", "label": "Biometric Binding Mechanism"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:digital-identity-verification", "label": "Digital Identity Verification"},
+      {"@id": "urn:ngm:class:multi-factor-authentication", "label": "Multi-Factor Authentication"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
+      {"@id": "urn:ngm:class:identity-management", "label": "Identity Management"}
+    ]
+  },
+  "quality": 0.8
+}
+```
+
+- ### Definition
+  - Biometric authentication verifies the identity of a user by matching a live biometric sample against a stored biometric template enrolled during registration. Modalities include fingerprint recognition, facial recognition, iris and retinal scanning, voice recognition, and behavioural biometrics such as keystroke dynamics and gait analysis. Because biometric characteristics are strongly bound to individuals, the method offers high inherence-factor assurance in identity claims, underpinning [[Digital Identity Verification]] and serving as a component of [[Multi-Factor Authentication]]. It [[uses]] [[Biometric Verification]] to perform the match and [[uses]] [[Biometric Binding Mechanism]] to cryptographically link a biometric template to a credential or key.
+
+- ### Relationships
+  - Biometric authentication [[uses]] [[Biometric Verification]] for the core matching process and [[uses]] [[Biometric Binding Mechanism]] to anchor credentials to verified biometric templates in privacy-preserving ways. It [[enables]] [[Digital Identity Verification]] workflows for onboarding and continuous authentication, and [[enables]] [[Multi-Factor Authentication]] by providing an inherence factor. It [[requires]] [[Data Protection]] safeguards because biometric data is classified as sensitive personal data under GDPR and equivalent laws. It is [[relatedTo]] [[Self Sovereign Identity]] architectures that seek to return biometric template control to the user and to [[Identity Management]] systems broadly.
+
+- ### Content
+  - The scientific study of fingerprints for identification dates to the late nineteenth century (Galton, Henry), and early automated fingerprint identification systems (AFIS) were deployed in law enforcement from the 1970s. Facial recognition algorithms based on eigenfaces emerged in the early 1990s. Consumer biometric authentication entered the mainstream with Apple's Touch ID fingerprint sensor in 2013 and Face ID in 2017, triggering mass adoption across smartphone platforms. The FIDO Alliance's FIDO2 standard (2018) formalised biometric authenticators as a phishing-resistant authentication mechanism for web services.
+
+  - Technically, a biometric authentication system comprises an enrolment subsystem that captures and extracts a feature template from raw biometric data, a secure storage mechanism for the template (typically on-device secure enclave to avoid centralised biometric databases), and a matching engine that computes similarity between the live sample and the enrolled template using a configured threshold. Performance is characterised by false acceptance rate (FAR) and false rejection rate (FRR), with the equal error rate (EER) used as a single-figure benchmark. Presentation attack detection (PAD, or liveness detection) is essential to resist spoofing by photographs or silicone fingerprint replicas.
+
+  - The biometric authentication ecosystem spans device manufacturers (Apple, Qualcomm, Samsung), biometric middleware vendors (Aware, NEC, Thales), and cloud identity platforms (Microsoft Azure AD, Okta, Ping Identity) that integrate biometric signals via device attestation rather than transmitting raw biometric data. Regulatory frameworks including EU eIDAS 2.0 mandate biometric verification for high-assurance digital identity wallets. The travel industry uses automated biometric border control (eGates) at major airports worldwide.
+
+  - By 2024–2025 large-scale deployments are raising privacy and equity concerns: facial recognition false rejection rates vary significantly across demographic groups, leading to regulatory restrictions in several EU member states and US cities. The GDPR and EU AI Act classify remote biometric identification in public spaces as high-risk or prohibited. On the constructive side, on-device biometric binding via secure hardware enclaves and standards such as WebAuthn are reducing reliance on centralised biometric databases, improving both privacy and security posture.
+

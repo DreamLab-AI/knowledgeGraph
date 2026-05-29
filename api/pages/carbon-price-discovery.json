@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:carbon-price-discovery",
+  "title": "Carbon Price Discovery",
+  "slug": "carbon-price-discovery",
+  "public": true,
+  "classIri": "urn:ngm:class:carbon-price-discovery",
+  "domain": "finance",
+  "definition": "Carbon price discovery is the process by which market participants collectively determine the equilibrium price of carbon emission allowances or credits through the interaction of supply and demand in regulated compliance markets and voluntary carbon markets. It encompasses the mechanisms, venues, and information flows that translate abatement costs, regulatory constraints, and economic activity into observable carbon prices. Transparent price signals are essential for directing investment towards emissions reduction and for evaluating the economic cost of decarbonisation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:carbon-markets",
+      "label": "Carbon Markets"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:carbon-offset-trading",
+        "label": "Carbon Offset Trading"
+      },
+      {
+        "id": "urn:ngm:class:environmental-asset-market",
+        "label": "Environmental Asset Market"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-exchange",
+        "label": "Decentralized Exchange"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:carbon-credits",
+        "label": "Carbon Credits"
+      },
+      {
+        "id": "urn:ngm:class:environmental-trading",
+        "label": "Environmental Trading"
+      },
+      {
+        "id": "urn:ngm:class:asset-liquidity",
+        "label": "Asset Liquidity"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "carbon-credit-tracking",
+      "label": "Carbon Credit Tracking"
+    },
+    {
+      "slug": "carbon-offset-trading",
+      "label": "Carbon Offset Trading"
+    }
+  ]
+}

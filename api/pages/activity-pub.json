@@ -1,0 +1,79 @@
+{
+  "id": "urn:visionflow:page:activity-pub",
+  "title": "ActivityPub",
+  "slug": "activity-pub",
+  "public": true,
+  "classIri": "urn:ngm:class:activity-pub",
+  "domain": "web",
+  "definition": "ActivityPub is a W3C-standardised decentralised social networking protocol that defines two layers: a server-to-server federation protocol enabling independent server instances to share content with one another, and a client-to-server protocol allowing applications to interact with a user's social data. Based on the ActivityStreams 2.0 vocabulary and JSON-LD serialisation, it enables interoperable federated social networks where users on different server instances can follow, reply to, and interact with each other across instance boundaries.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:distributed-protocol",
+      "label": "Distributed Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:federated-social-networks",
+        "label": "Federated Social Networks"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-web",
+        "label": "Decentralised Web"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:json-ld",
+        "label": "JSON-LD"
+      },
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:web-standard",
+        "label": "Web Standard"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      },
+      {
+        "id": "urn:ngm:class:interoperability-protocol",
+        "label": "Interoperability Protocol"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "death-of-the-internet",
+      "label": "Death of the Internet"
+    },
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    },
+    {
+      "slug": "solid",
+      "label": "Solid"
+    }
+  ]
+}

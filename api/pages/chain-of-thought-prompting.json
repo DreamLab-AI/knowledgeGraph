@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:chain-of-thought-prompting",
+  "title": "Chain-of-Thought Prompting",
+  "slug": "chain-of-thought-prompting",
+  "public": true,
+  "classIri": "urn:ngm:class:chain-of-thought-prompting",
+  "domain": "ai",
+  "definition": "Chain-of-thought (CoT) prompting is a prompt engineering technique that elicits intermediate reasoning steps from a large language model before it produces a final answer, substantially improving performance on multi-step arithmetic, commonsense reasoning, and symbolic manipulation tasks. By including exemplars that demonstrate step-by-step reasoning or by appending the instruction 'Let's think step by step' (zero-shot CoT), the technique leverages the model's autoregressive generation to decompose complex problems into tractable substeps. CoT prompting was formally characterised by Wei et al. (2022) and has become a foundational capability-elicitation method for frontier language models.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:prompt-engineering",
+      "label": "Prompt Engineering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:mathematical-reasoning",
+        "label": "Mathematical Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:multi-step-reasoning",
+        "label": "Multi-Step Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:common-sense-reasoning",
+        "label": "Common Sense Reasoning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:in-context-learning",
+        "label": "In-Context Learning"
+      },
+      {
+        "id": "urn:ngm:class:few-shot-prompting",
+        "label": "Few-Shot Prompting"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:chain-of-thought-reasoning",
+        "label": "Chain-of-Thought Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:reasoning-engine",
+        "label": "Reasoning Engine"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "function-calling",
+      "label": "Function Calling"
+    },
+    {
+      "slug": "reasoning",
+      "label": "Reasoning"
+    }
+  ]
+}

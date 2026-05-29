@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:cloud-native",
+  "title": "Cloud Native",
+  "slug": "cloud-native",
+  "public": true,
+  "classIri": "urn:ngm:class:cloud-native",
+  "domain": "infrastructure",
+  "definition": "Cloud Native is an approach to building and running applications that fully exploits the advantages of cloud computing infrastructure \u2014 elastic scaling, managed services, pay-per-use economics, and high availability \u2014 by designing for containerisation, dynamic orchestration, microservices decomposition, and declarative APIs. The Cloud Native Computing Foundation (CNCF) defines it as the use of containers, service meshes, microservices, immutable infrastructure, and declarative APIs to build resilient, manageable, and observable systems. Cloud Native architectures enable rapid, reproducible delivery of software at scale across public, private, and hybrid cloud environments.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cloud-computing",
+      "label": "Cloud Computing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "id": "urn:ngm:class:service-mesh",
+        "label": "Service Mesh"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "distributed-computing",
+      "label": "Distributed Computing"
+    },
+    {
+      "slug": "storage-infrastructure",
+      "label": "Storage Infrastructure"
+    }
+  ]
+}

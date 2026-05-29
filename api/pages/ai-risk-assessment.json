@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:ai-risk-assessment",
+  "title": "AI Risk Assessment",
+  "slug": "ai-risk-assessment",
+  "public": true,
+  "classIri": "urn:ngm:class:ai-risk-assessment",
+  "domain": "governance",
+  "definition": "A structured methodology for identifying, analysing, and evaluating the potential harms, failure modes, and adverse societal impacts arising from the development and deployment of artificial intelligence systems. It applies established risk management frameworks to the distinctive properties of AI\u2014opacity, emergent behaviour, data dependency, and scalability\u2014to produce actionable risk registers and mitigation plans. The process informs governance decisions and regulatory compliance across the full AI system lifecycle.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:risk-assessment",
+      "label": "Risk Assessment"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ai-risk-register",
+        "label": "AI Risk Register"
+      },
+      {
+        "id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
+      },
+      {
+        "id": "urn:ngm:class:adversarial-testing",
+        "label": "Adversarial Testing"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-impact-assessment",
+        "label": "AI Impact Assessment"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-governance-framework",
+      "label": "AI Governance Framework"
+    },
+    {
+      "slug": "ai-risk",
+      "label": "AI Risk"
+    }
+  ]
+}

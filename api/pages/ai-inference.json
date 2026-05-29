@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:ai-inference",
+  "title": "AI Inference",
+  "slug": "ai-inference",
+  "public": true,
+  "classIri": "urn:ngm:class:ai-inference",
+  "domain": "ai",
+  "definition": "AI Inference is the operational phase of a machine learning system in which a trained model processes new input data to generate predictions, classifications, embeddings, or generative outputs \u2014 as distinct from the training phase in which model parameters are optimised. It is the production-time workload that determines the latency, throughput, cost, and scalability characteristics experienced by end users and downstream systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-machine-learning",
+      "label": "Ai Machine Learning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:real-time-ai-inference",
+        "label": "Real-Time AI Inference"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gpu-acceleration",
+        "label": "GPU Acceleration"
+      },
+      {
+        "id": "urn:ngm:class:ai-model",
+        "label": "AI Model"
+      },
+      {
+        "id": "urn:ngm:class:ai-model-architecture",
+        "label": "AI Model Architecture"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "compute-layer",
+      "label": "Compute Layer"
+    },
+    {
+      "slug": "graphics-api",
+      "label": "Graphics API"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

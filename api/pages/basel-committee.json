@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:basel-committee",
+  "title": "Basel Committee",
+  "slug": "basel-committee",
+  "public": true,
+  "classIri": "urn:ngm:class:basel-committee",
+  "domain": "governance",
+  "definition": "The Basel Committee on Banking Supervision (BCBS) is an international standard-setting body hosted by the Bank for International Settlements (BIS) in Basel, Switzerland, that develops global regulatory standards for the prudential supervision of banks. Its accords \u2014 Basel I (1988), Basel II (2004), and Basel III (2010, finalised 2017) \u2014 set internationally agreed minimum capital adequacy, liquidity, and leverage requirements for commercial banks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:financial-regulation",
+      "label": "Financial Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:bis",
+        "label": "BIS"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:financial-stability-board",
+        "label": "Financial Stability Board"
+      },
+      {
+        "id": "urn:ngm:class:systemic-risk",
+        "label": "Systemic Risk"
+      },
+      {
+        "id": "urn:ngm:class:risk-management-framework",
+        "label": "Risk Management Framework"
+      },
+      {
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cbdcs",
+      "label": "CBDCs"
+    },
+    {
+      "slug": "cross-border-compliance",
+      "label": "Cross Border Compliance"
+    },
+    {
+      "slug": "licensing-requirements",
+      "label": "Licensing Requirements"
+    },
+    {
+      "slug": "token-economics-domain",
+      "label": "Token Economics Domain"
+    }
+  ]
+}

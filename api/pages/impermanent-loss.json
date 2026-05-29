@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:impermanent-loss",
+  "title": "Impermanent Loss",
+  "slug": "impermanent-loss",
+  "public": true,
+  "classIri": "urn:ngm:class:impermanent-loss",
+  "domain": "blockchain",
+  "definition": "Impermanent loss is the opportunity cost incurred by a liquidity provider in an automated market maker (AMM) when the price ratio of deposited assets diverges from the ratio at deposit time, causing the provider's pool share to be worth less than simply holding the assets would have been. The loss is 'impermanent' because it reverses if prices return to the original ratio, but becomes realised upon withdrawal.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:decentralized-finance",
+      "label": "Decentralized Finance"
+    },
+    {
+      "id": "urn:ngm:class:liquidity-provision",
+      "label": "Liquidity Provision"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:constant-product-formula",
+        "label": "Constant Product Formula"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:liquidity-mining",
+        "label": "Liquidity Mining"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "id": "urn:ngm:class:amm-algorithm",
+        "label": "AMM Algorithm"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "decentralized-exchange",
+      "label": "Decentralized Exchange"
+    },
+    {
+      "slug": "liquidity-provision",
+      "label": "Liquidity Provision"
+    },
+    {
+      "slug": "token-economics-domain",
+      "label": "Token Economics Domain"
+    }
+  ]
+}

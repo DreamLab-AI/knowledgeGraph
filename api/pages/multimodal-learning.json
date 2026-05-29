@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:multimodal-learning",
+  "title": "Multimodal Learning",
+  "slug": "multimodal-learning",
+  "public": true,
+  "classIri": "urn:ngm:class:multimodal-learning",
+  "domain": "ai",
+  "definition": "Multimodal learning is a sub-field of machine learning concerned with building models that can process, align, and reason over data from two or more sensory modalities \u2014 such as text, images, audio, video, and structured data \u2014 within a unified representation space. Models trained multimodally acquire richer, grounded representations than unimodal counterparts by exploiting cross-modal correlations and complementarity.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-machine-learning",
+      "label": "AI Machine Learning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.85,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:vision-language-action-models",
+        "label": "Vision-Language-Action Models"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:multimodal-models",
+        "label": "Multimodal Models"
+      },
+      {
+        "id": "urn:ngm:class:cross-modal-conditioning",
+        "label": "Cross-Modal Conditioning"
+      },
+      {
+        "id": "urn:ngm:class:contrastive-learning",
+        "label": "Contrastive Learning"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "artificial-general-intelligence",
+      "label": "Artificial General Intelligence"
+    },
+    {
+      "slug": "transformers",
+      "label": "Transformers"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    }
+  ]
+}

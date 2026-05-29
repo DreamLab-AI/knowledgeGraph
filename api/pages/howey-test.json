@@ -1,0 +1,73 @@
+{
+  "id": "urn:visionflow:page:howey-test",
+  "title": "Howey Test",
+  "slug": "howey-test",
+  "public": true,
+  "classIri": "urn:ngm:class:howey-test",
+  "domain": "blockchain",
+  "definition": "The Howey Test is a four-part legal framework established by the U.S. Supreme Court in SEC v. W.J. Howey Co. (1946) to determine whether a transaction qualifies as an 'investment contract' and therefore constitutes a security subject to federal securities regulation. An instrument is a security if it involves (1) an investment of money, (2) in a common enterprise, (3) with an expectation of profits, (4) derived from the efforts of others.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:investment-contract-analysis",
+      "label": "Investment Contract Analysis"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:securities-exchange-act-1934",
+        "label": "Securities Exchange Act 1934"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      },
+      {
+        "id": "urn:ngm:class:security-token-offering",
+        "label": "Security Token Offering"
+      },
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "dao-legal-structures",
+      "label": "DAO Legal Structures"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "securities-regulation",
+      "label": "Securities Regulation"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    },
+    {
+      "slug": "us-regulatory-framework",
+      "label": "US Regulatory Framework"
+    }
+  ]
+}

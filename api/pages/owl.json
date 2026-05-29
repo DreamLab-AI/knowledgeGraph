@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:owl",
+  "title": "OWL",
+  "slug": "owl",
+  "public": true,
+  "classIri": "urn:ngm:class:owl",
+  "domain": "ai",
+  "definition": "OWL (Web Ontology Language) is a W3C-standardised semantic web language for defining and sharing ontologies on the World Wide Web, built on RDF and grounded in Description Logics to provide formal semantics with decidable reasoning. OWL enables the specification of classes, properties, individuals, and axioms that constrain their relationships, supporting automated inference and knowledge graph construction.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:semantic-web",
+      "label": "Semantic Web"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      },
+      {
+        "id": "urn:ngm:class:description-logic",
+        "label": "Description Logic"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      },
+      {
+        "id": "urn:ngm:class:owl-2-web-ontology-language",
+        "label": "OWL 2 Web Ontology Language"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "metadata-management",
+      "label": "Metadata Management"
+    },
+    {
+      "slug": "metadata-management",
+      "label": "Metadata Management"
+    },
+    {
+      "slug": "ontology-definition",
+      "label": "Ontology Definition"
+    }
+  ]
+}

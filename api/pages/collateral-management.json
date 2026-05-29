@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:collateral-management",
+  "title": "Collateral Management",
+  "slug": "collateral-management",
+  "public": true,
+  "classIri": "urn:ngm:class:collateral-management",
+  "domain": "finance",
+  "definition": "Collateral management is the operational and risk management discipline concerned with the posting, valuation, optimisation, and return of financial assets pledged as security against credit exposure in derivatives, securities lending, repo, and cleared transactions, ensuring that counterparty credit risk is adequately mitigated throughout the life of a financial contract. It encompasses collateral eligibility determination, margin call issuance and settlement, collateral transformation, and regulatory compliance with frameworks including EMIR, Dodd-Frank, and Basel III initial margin requirements.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:risk-management",
+      "label": "Risk Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:financial-instruments",
+        "label": "Financial Instruments"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-oracle",
+        "label": "Blockchain Oracle"
+      },
+      {
+        "id": "urn:ngm:class:financial-transactions",
+        "label": "Financial Transactions"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "digital-asset-lending",
+      "label": "Digital Asset Lending"
+    },
+    {
+      "slug": "nft-renting",
+      "label": "NFT Renting"
+    }
+  ]
+}

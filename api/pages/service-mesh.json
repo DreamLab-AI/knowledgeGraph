@@ -1,0 +1,71 @@
+{
+  "id": "urn:visionflow:page:service-mesh",
+  "title": "Service Mesh",
+  "slug": "service-mesh",
+  "public": true,
+  "classIri": "urn:ngm:class:service-mesh",
+  "domain": "infrastructure",
+  "definition": "A service mesh is a dedicated infrastructure layer for managing service-to-service communication within a microservices architecture, providing traffic management, mutual TLS encryption, observability, and policy enforcement transparently to application code through sidecar proxies or eBPF-based data planes. It decouples operational concerns\u2014load balancing, retries, circuit breaking, telemetry\u2014from business logic, enabling consistent reliability and security across heterogeneous services.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:microservices-architecture",
+      "label": "Microservices Architecture"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:service-discovery",
+        "label": "Service Discovery"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "id": "urn:ngm:class:load-balancing",
+        "label": "Load Balancing"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "api-gateway",
+      "label": "API Gateway"
+    },
+    {
+      "slug": "distributed-computing",
+      "label": "Distributed Computing"
+    }
+  ]
+}

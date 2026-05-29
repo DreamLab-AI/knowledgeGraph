@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:net-zero-targets",
+  "title": "Net Zero Targets",
+  "slug": "net-zero-targets",
+  "public": true,
+  "classIri": "urn:ngm:class:net-zero-targets",
+  "domain": "governance",
+  "definition": "Net Zero Targets are formal commitments made by governments, corporations, or other entities to reduce greenhouse gas emissions to the point where residual emissions are balanced by equivalent carbon removals, achieving a net-zero contribution to atmospheric greenhouse gas concentrations by a specified date. These targets typically distinguish between near-term absolute reduction milestones and longer-term residual offset strategies, and are aligned with the IPCC's pathways to limiting global warming to 1.5 \u00b0C.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:climate-commitments",
+      "label": "Climate Commitments"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:carbon-offsetting",
+        "label": "Carbon Offsetting"
+      },
+      {
+        "id": "urn:ngm:class:net-zero-target-setting",
+        "label": "Net Zero Target Setting"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:climate-change-mitigation",
+        "label": "Climate Change Mitigation"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:paris-agreement",
+        "label": "Paris Agreement"
+      },
+      {
+        "id": "urn:ngm:class:voluntary-carbon-market",
+        "label": "Voluntary Carbon Market"
+      },
+      {
+        "id": "urn:ngm:class:climate-policy",
+        "label": "Climate Policy"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "carbon-credit-tracking",
+      "label": "Carbon Credit Tracking"
+    },
+    {
+      "slug": "energy-and-power",
+      "label": "Energy and Power"
+    }
+  ]
+}

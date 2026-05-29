@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:collective-action",
+  "title": "Collective Action",
+  "slug": "collective-action",
+  "public": true,
+  "classIri": "urn:ngm:class:collective-action",
+  "domain": "governance",
+  "definition": "Coordinated behaviour by a group of individuals or organisations toward a shared goal that no single actor could achieve unilaterally. It is characterised by interdependence, the risk of free-riding, and the need for mechanisms \u2014 such as incentives, norms, or contracts \u2014 to align individual contributions with the group objective.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:coordination-mechanisms",
+      "label": "Coordination Mechanisms"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:collective-governance",
+        "label": "Collective Governance"
+      },
+      {
+        "id": "urn:ngm:class:public-goods-funding",
+        "label": "Public Goods Funding"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:coordination-protocol",
+        "label": "Coordination Protocol"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:collective-intelligence",
+        "label": "Collective Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:community-governance",
+        "label": "Community Governance"
+      },
+      {
+        "id": "urn:ngm:class:common-pool-resources",
+        "label": "Common Pool Resources"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "community-governance-model",
+      "label": "Community Governance Model"
+    },
+    {
+      "slug": "decentralized-governance",
+      "label": "Decentralized Governance"
+    }
+  ]
+}

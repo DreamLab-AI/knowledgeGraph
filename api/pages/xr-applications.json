@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:xr-applications",
+  "title": "XR Applications",
+  "slug": "xr-applications",
+  "public": true,
+  "classIri": "urn:ngm:class:xr-applications",
+  "domain": "spatial",
+  "definition": "XR Applications are software systems designed to run on extended reality platforms \u2014 encompassing augmented reality (AR), virtual reality (VR), and mixed reality (MR) \u2014 that blend real and virtual environments to deliver spatially aware, immersive user experiences. They span consumer entertainment, enterprise training, industrial maintenance, medical simulation, and remote collaboration domains.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:extended-reality",
+      "label": "Extended Reality"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:immersive-computing",
+        "label": "Immersive Computing"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality-collaboration",
+        "label": "Augmented Reality Collaboration"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:head-mounted-display",
+        "label": "Head-Mounted Display"
+      },
+      {
+        "id": "urn:ngm:class:gpu-acceleration",
+        "label": "GPU Acceleration"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:extended-reality-xr",
+        "label": "Extended Reality (XR)"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "3-d-development",
+      "label": "3D Development"
+    },
+    {
+      "slug": "3-d-rendering-engine",
+      "label": "3D Rendering Engine"
+    }
+  ]
+}

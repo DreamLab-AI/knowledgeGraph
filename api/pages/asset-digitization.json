@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:asset-digitization",
+  "title": "Asset Digitization",
+  "slug": "asset-digitization",
+  "public": true,
+  "classIri": "urn:ngm:class:asset-digitization",
+  "domain": "spatial",
+  "definition": "Asset Digitization is the process of converting physical objects, spaces, documents, or analogue media into discrete digital representations suitable for storage, transmission, and computational use. It encompasses acquisition technologies such as scanning, photogrammetry, and LiDAR, as well as the post-processing steps that clean, structure, and format the resulting data for target applications.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:reality-capture",
+      "label": "Reality Capture"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:3-d-asset",
+        "label": "3D Asset"
+      },
+      {
+        "id": "urn:ngm:class:cultural-heritage-preservation",
+        "label": "Cultural Heritage Preservation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      },
+      {
+        "id": "urn:ngm:class:lidar-scanning",
+        "label": "Lidar Scanning"
+      },
+      {
+        "id": "urn:ngm:class:point-cloud-processing",
+        "label": "Point Cloud Processing"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-asset-management",
+        "label": "Digital Asset Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "digital-twin-creation-pipeline",
+      "label": "Digital Twin Creation Pipeline"
+    },
+    {
+      "slug": "photogrammetry",
+      "label": "Photogrammetry"
+    }
+  ]
+}

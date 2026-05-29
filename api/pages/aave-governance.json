@@ -1,0 +1,79 @@
+{
+  "id": "urn:visionflow:page:aave-governance",
+  "title": "Aave Governance",
+  "slug": "aave-governance",
+  "public": true,
+  "classIri": "urn:ngm:class:aave-governance",
+  "domain": "blockchain",
+  "definition": "Aave Governance is the on-chain decision-making system for the Aave decentralised lending protocol, enabling AAVE token holders and protocol delegates to propose, debate, and vote on parameter changes, new asset listings, risk adjustments, and smart contract upgrades. It operates through a tiered proposal mechanism where quorum and voting-power thresholds determine whether a proposal proceeds to execution, with all outcomes enforced autonomously by smart contracts on Ethereum and affiliated networks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:on-chain-governance",
+      "label": "On-chain Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:collateral-management",
+        "label": "Collateral Management"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:aave",
+        "label": "Aave"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:voting-mechanism",
+        "label": "Voting Mechanism"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "dao-analytics",
+      "label": "DAO Analytics"
+    },
+    {
+      "slug": "snapshot-voting",
+      "label": "Snapshot Voting"
+    }
+  ]
+}

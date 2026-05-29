@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:dlss",
+  "title": "DLSS",
+  "slug": "dlss",
+  "public": true,
+  "classIri": "urn:ngm:class:dlss",
+  "domain": "graphics",
+  "definition": "DLSS (Deep Learning Super Sampling) is NVIDIA's family of AI-based rendering techniques that use neural networks running on dedicated tensor hardware to reconstruct high-resolution, high-frame-rate images from lower-resolution rendered inputs. By upscaling, accumulating temporal information, and generating intermediate frames, DLSS delivers image quality approaching or exceeding native rendering at a fraction of the GPU cost, enabling demanding effects such as real-time ray tracing to run smoothly. It exemplifies the integration of learned models into the real-time graphics pipeline.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:rendering-technology",
+      "label": "Rendering Technology"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:neural-rendering",
+        "label": "Neural Rendering"
+      },
+      {
+        "id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ray-tracing",
+      "label": "Ray Tracing"
+    },
+    {
+      "slug": "rendering-pipeline",
+      "label": "Rendering Pipeline"
+    }
+  ]
+}

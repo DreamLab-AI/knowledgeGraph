@@ -1,0 +1,63 @@
+public:: true
+
+# Video Encoding
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:video-encoding",
+  "@type": "Page",
+  "vc:slug": "video-encoding",
+  "title": "Video Encoding",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 2
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:video-encoding",
+  "@type": "Class",
+  "label": "Video Encoding",
+  "definition": "Video encoding is the process of compressing raw or lightly-compressed video frames into a deliverable bitstream using a video codec, encompassing decisions about encoding parameters (resolution, frame rate, bitrate mode, keyframe interval, codec profile and level), rate control algorithms, and hardware or software encoder selection to balance output quality, file size, and encoding speed for a given delivery target.",
+  "domain": "media",
+  "maturity": "mature",
+  "subClassOf": [{"@id": "urn:ngm:class:video-codec", "label": "Video Codec"}],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:encoder", "label": "Encoder"},
+      {"@id": "urn:ngm:class:video-processing", "label": "Video Processing"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:cdn", "label": "CDN"},
+      {"@id": "urn:ngm:class:bandwidth-adaptation", "label": "Bandwidth Adaptation"},
+      {"@id": "urn:ngm:class:bandwidth-optimization", "label": "Bandwidth Optimization"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:decoder", "label": "Decoder"},
+      {"@id": "urn:ngm:class:content-creation-pipeline", "label": "Content Creation Pipeline"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:compute-resources", "label": "Compute Resources"}
+    ]
+  },
+  "quality": 0.8
+}
+```
+
+- ### Definition
+  - Video encoding transforms uncompressed video (typically in YCbCr 4:2:0 colour space) into a codec-compliant bitstream through a series of analysis and quantisation stages: scene-cut detection, intra/inter mode decision, motion estimation, transform, quantisation, and entropy coding. Rate control algorithms — constant bitrate (CBR), variable bitrate (VBR), constant rate factor (CRF), or constrained variable bitrate (CVBR) — govern the trade-off between output quality and bitrate across the encoded sequence. Encoding may be performed in software (x264, x265, SVT-AV1, FFmpeg) or hardware ([[Encoder]] ASICs and GPU fixed-function blocks), with software encoders producing superior quality at the cost of much higher CPU/GPU compute, and hardware encoders prioritising throughput and low latency.
+
+- ### Relationships
+  - Video encoding consumes [[Compute Resources]] at scale, driving demand for GPU-accelerated [[Encoder]] pipelines and distributed transcoding. Output bitstreams are ingested by [[CDN]] infrastructure for adaptive streaming delivery and decoded by client [[Decoder]] implementations. [[Bandwidth Adaptation]] schemes (HLS, MPEG-DASH) require multiple renditions encoded at different bitrate-resolution combinations. [[Video Processing]] stages including colour grading, deinterlacing, and subtitling precede encoding in a [[Content Creation Pipeline]].
+
+- ### Content
+  - The industrialisation of video encoding began with DVD authoring in the late 1990s using MPEG-2 encoders, followed by web video encoding for RealMedia and Windows Media Video. The YouTube launch in 2005 and the subsequent explosion of user-generated content drove massive investment in cloud transcoding infrastructure. AWS Elastic Transcoder (2013) and later AWS MediaConvert, Google Transcoder API, and Azure Media Services commercialised on-demand cloud encoding, enabling any-scale video processing without on-premises infrastructure.
+
+  - FFmpeg, the open-source multimedia framework, underpins the vast majority of video encoding workflows globally, providing a unified command-line and library interface to dozens of codec implementations. Professional encoding tools — Adobe Media Encoder, Apple Compressor, Telestream Vantage — wrap codec libraries with workflow automation and quality presets. Per-title encoding, pioneered by Netflix in 2015, analyses each piece of content individually to derive optimal resolution-bitrate pairings, reducing bandwidth by 20% or more compared to per-resolution presets.
+
+  - Live video encoding for broadcast, streaming, and conferencing imposes strict latency constraints that preclude many quality-optimising search passes used in VOD encoding. Low-latency live encoders (x264 ultrafast preset, NVENC, Intel Quick Sync) sacrifice coding efficiency for speed, whilst hardware encoders in cameras (Sony, Blackmagic, AJA) provide broadcast-quality H.264 or HEVC at sub-frame latency. WebRTC video conferencing uses VP8 and VP9 (or AV1 in newer clients) with aggressive rate adaptation to handle network variability.
+
+  - By 2024–2025, AV1 encoding has become mainstream for VOD at major platforms. SVT-AV1 (Intel's scalable encoder) and ab-av1 tooling enable practical AV1 encoding on consumer hardware. NVIDIA's ADA Lovelace and later GPU generations include AV1 hardware encoders, dramatically reducing cost. AI-based pre-processing — super-resolution upscaling, noise reduction, content-aware scene analysis — is being integrated into encoding pipelines to improve quality at fixed bitrate, with providers offering neural enhancement as a premium encoding tier.
+

@@ -1,0 +1,60 @@
+public:: true
+
+# Affective Computing System
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:affective-computing-system",
+  "@type": "Page",
+  "vc:slug": "affective-computing-system",
+  "title": "Affective Computing System",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 2
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:affective-computing-system",
+  "@type": "Class",
+  "label": "Affective Computing System",
+  "definition": "An Affective Computing System is a computational architecture that can recognise, interpret, simulate, or respond to human emotional and affective states through the integration of multimodal physiological and behavioural signals with machine learning models. Such systems aim to make human-computer interaction more natural and context-sensitive by treating emotion as a first-class computational variable.",
+  "domain": "ai",
+  "maturity": "emerging",
+  "subClassOf": [
+    {"@id": "urn:ngm:class:affective-computing", "label": "Affective Computing"}
+  ],
+  "relations": {
+    "uses": [
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
+      {"@id": "urn:ngm:class:facial-recognition", "label": "Facial Recognition"},
+      {"@id": "urn:ngm:class:behavioral-modeling", "label": "Behavioral Modeling"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:adaptive-interfaces", "label": "Adaptive Interfaces"},
+      {"@id": "urn:ngm:class:adaptive-learning", "label": "Adaptive Learning"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:cognitive-science", "label": "Cognitive Science"}
+    ]
+  },
+  "quality": 0.8
+}
+```
+
+- ### Definition
+  - An [[Affective Computing System]] is an instantiation of [[Affective Computing]] that combines sensor fusion, signal processing, and machine learning to detect, model, and respond to human emotional states in real time. Inputs typically include facial expression data (via [[Facial Recognition]]), speech prosody analysed through [[Natural Language Processing]], physiological signals such as galvanic skin response and heart rate variability, and gestural cues. The system's response layer then adapts interaction parameters — pacing, content difficulty, tone of synthetic speech, or interface layout — through [[Behavioral Modeling]] and [[Adaptive Interfaces]].
+
+- ### Relationships
+  - [[Affective Computing System]] is a concrete realisation of [[Affective Computing]] principles. It uses [[Natural Language Processing]] for sentiment and tone analysis, [[Facial Recognition]] for valence and arousal detection, and [[Behavioral Modeling]] to build user emotional profiles over time. It enables [[Adaptive Interfaces]] that reshape themselves in response to inferred user state, and [[Adaptive Learning]] platforms that modulate instructional difficulty. Its design draws on [[Cognitive Science]] models of emotion, including circumplex and appraisal theories.
+
+- ### Content
+  - The concept of affective computing was articulated by Rosalind Picard at MIT Media Lab in her 1997 book of the same name. Early systems relied primarily on facial action unit coding and basic physiological signal thresholds. Over the following decade, machine learning classifiers — initially SVMs, later deep convolutional and recurrent networks — dramatically improved recognition accuracy, and multimodal fusion strategies emerged to combine signals across modalities for robustness.
+
+  - A contemporary Affective Computing System typically comprises a sensor acquisition layer (cameras, microphones, wristbands, EEG headsets), a feature extraction module, an emotion classification model trained on labelled affective corpora such as DEAP or RAVDESS, and an affective response module. Transformer-based multimodal architectures now achieve near-human performance on controlled benchmarks, though real-world performance remains sensitive to cultural variation, lighting conditions, and individual differences in affective expression.
+
+  - Application domains include education (intelligent tutoring systems that detect frustration and adjust scaffolding), healthcare (mental health monitoring and pain assessment), automotive safety (driver drowsiness and stress detection), entertainment and gaming (dynamic difficulty adjustment and narrative branching), and customer service (sentiment-aware virtual agents). Research deployments exist in social robotics platforms such as Pepper, and commercial products include emotion analytics APIs from vendors such as Affectiva and Microsoft Azure Cognitive Services.
+
+  - By 2024–2025, regulatory scrutiny has intensified around affective computing deployments, particularly the EU AI Act's treatment of emotion recognition in workplace and educational settings as high-risk AI. Privacy concerns around continuous physiological monitoring have driven interest in on-device inference and federated learning approaches. The field is also grappling with replication concerns regarding the universality of basic emotion categories, prompting adoption of dimensional affect models (valence-arousal-dominance space) rather than discrete categorical labels.

@@ -1,0 +1,58 @@
+public:: true
+
+# AI Talent
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:page:ai-talent",
+  "@type": "Page",
+  "vc:slug": "ai-talent",
+  "title": "AI Talent",
+  "vc:public": true,
+  "vc:outboundWikilinks": [],
+  "vc:schemaVersion": 2
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ai-talent",
+  "@type": "Class",
+  "label": "AI Talent",
+  "definition": "The human capital pool comprising individuals with specialised skills in machine learning research, AI engineering, data science, and related disciplines who design, build, evaluate, and govern artificial intelligence systems. AI talent is a scarce and strategically contested resource, with demand from frontier laboratories, technology companies, and public-sector institutions consistently outpacing the supply produced by academic programmes. The composition of the talent pool—including its geographic distribution, diversity, and specialisation—directly shapes the pace and direction of AI progress.",
+  "domain": "ai",
+  "maturity": "established",
+  "subClassOf": [{"@id": "urn:ngm:class:workforce-development", "label": "Workforce Development"}],
+  "relations": {
+    "relatedTo": [
+      {"@id": "urn:ngm:class:ai-talent-war", "label": "AI Talent War"},
+      {"@id": "urn:ngm:class:education-and-ai", "label": "Education and AI"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:ai-model-development", "label": "AI Model Development"},
+      {"@id": "urn:ngm:class:ai-safety-research", "label": "AI Safety Research"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:ai-governance-framework", "label": "AI Governance Framework"}
+    ]
+  },
+  "quality": 0.8
+}
+```
+
+- ### Definition
+  - [[AI Talent]] denotes the collective of researchers, engineers, and practitioners whose skills underpin the design and deployment of AI systems. The pool spans academic researchers pushing theoretical frontiers, applied scientists translating research into production systems, ML engineers building training and inference infrastructure, and [[AI Safety Research]] practitioners focused on alignment and robustness. The scarcity of top-tier [[AI Talent]] has made it a central variable in [[AI Talent War]] dynamics between nations and organisations.
+
+- ### Relationships
+  - AI Talent directly enables [[AI Model Development]] and [[AI Safety Research]], both of which require rare combinations of mathematical depth, engineering skill, and domain knowledge. Investment in [[Education and AI]] is the primary pipeline for expanding the talent pool over the medium term. Talent distribution also shapes the capacity of institutions to construct and operate an [[AI Governance Framework]], since effective governance requires technically literate practitioners. The competitive dynamics of talent acquisition are captured under [[AI Talent War]].
+
+- ### Content
+  - The modern AI talent market crystallised around the deep learning revolution of the early 2010s. Prior to 2012, machine learning expertise was a niche academic specialism; the ImageNet breakthrough demonstrated commercial viability and triggered sustained demand growth. Early talent was concentrated in a small number of North American and European universities, with Geoffrey Hinton's Toronto group and Stanford's AI Lab acting as primary seedbeds.
+
+  - The skill profile of AI talent spans mathematics (linear algebra, probability, optimisation), software engineering (distributed systems, GPU programming), and domain knowledge. A bifurcation has emerged between research scientists—who advance the frontier through novel methods—and ML engineers, who operationalise models in production. Newer roles such as AI safety researchers, prompt engineers, and evaluation specialists have emerged as the field matures.
+
+  - The talent ecosystem encompasses university programmes, online learning platforms, industry-sponsored research labs, and government-funded institutes. Major laboratories such as DeepMind, [[Anthropic]], and OpenAI have recruited aggressively from academic pipelines, raising compensation to levels that make it difficult for universities and non-profits to compete. This has prompted policy responses, including compute grants, fellowship programmes, and national AI institutes, intended to retain talent in the public sector.
+
+  - By 2024–2025, AI talent dynamics are characterised by intense geographic competition, with the United States, United Kingdom, Canada, France, and China as primary hubs. Visa and immigration policies have become AI policy instruments. The rise of capable open-source models and AI coding assistants has partially democratised access, enabling a broader base of practitioners to contribute, but frontier research remains concentrated in a small talent elite whose mobility has significant geopolitical consequences.
+

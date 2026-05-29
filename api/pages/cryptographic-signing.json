@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:cryptographic-signing",
+  "title": "Cryptographic Signing",
+  "slug": "cryptographic-signing",
+  "public": true,
+  "classIri": "urn:ngm:class:cryptographic-signing",
+  "domain": "security",
+  "definition": "Cryptographic signing is the process of producing a verifiable proof of authorship and integrity over a message or document using a private key, such that anyone holding the corresponding public key can confirm the signature without being able to forge it. It underpins authentication, non-repudiation, software-supply-chain integrity, and blockchain transaction authorisation. Signing schemes include RSA, ECDSA, EdDSA, and Schnorr, each defining how a hash of the message is transformed under the signer's secret key into a compact, publicly verifiable signature.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptographic-primitive",
+      "label": "Cryptographic Primitive"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-origin-declaration",
+      "label": "Ai Origin Declaration"
+    },
+    {
+      "slug": "c2-pa-standard",
+      "label": "C2PA Standard"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:multi-access-edge-computing",
+  "title": "MultiAccessEdgeComputing",
+  "slug": "multi-access-edge-computing",
+  "public": true,
+  "classIri": "urn:ngm:class:multi-access-edge-computing",
+  "domain": "infrastructure",
+  "definition": "Multi-Access Edge Computing (MEC) is an ETSI-standardised architecture that places cloud-like compute and storage resources at the radio access network edge, enabling low-latency application hosting within milliseconds of end-user devices. It decouples latency-sensitive processing from centralised cloud data centres by co-locating compute with base stations and other network nodes.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:edge-computing",
+      "label": "Edge Computing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:edge-ai",
+        "label": "Edge AI"
+      },
+      {
+        "id": "urn:ngm:class:latency-aware-edge-ai",
+        "label": "Latency-Aware Edge AI"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:edge-orchestration",
+        "label": "Edge Orchestration"
+      },
+      {
+        "id": "urn:ngm:class:compute-resources",
+        "label": "Compute Resources"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:fog-computing",
+        "label": "Fog Computing"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-infrastructure-immersive",
+      "label": "ETSI_Domain_Infrastructure___Immersive"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    }
+  ]
+}

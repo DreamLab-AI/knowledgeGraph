@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:timelock",
+  "title": "Timelock",
+  "slug": "timelock",
+  "public": true,
+  "classIri": "urn:ngm:class:timelock",
+  "domain": "blockchain",
+  "definition": "A timelock is a cryptographic or smart-contract mechanism that prevents a transaction, function call, or asset transfer from executing until a specified block height or Unix timestamp has been reached. Timelocks enforce temporal constraints on blockchain operations, separating the proposal of an action from its execution to allow inspection, challenge, or cancellation during a mandatory delay window.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:smart-contract",
+      "label": "Smart Contract"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.85,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralized-governance",
+        "label": "Decentralized Governance"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-governance",
+        "label": "On-Chain Governance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:access-control-module",
+        "label": "Access Control Module"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:htlc",
+        "label": "HTLC"
+      },
+      {
+        "id": "urn:ngm:class:vesting-schedule",
+        "label": "Vesting Schedule"
+      },
+      {
+        "id": "urn:ngm:class:escrow-system",
+        "label": "Escrow System"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    }
+  ]
+}

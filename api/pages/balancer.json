@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:balancer",
+  "title": "Balancer",
+  "slug": "balancer",
+  "public": true,
+  "classIri": "urn:ngm:class:balancer",
+  "domain": "blockchain",
+  "definition": "Balancer is a decentralised automated market maker (AMM) protocol on Ethereum and compatible EVM chains that generalises the constant-product AMM model to support weighted multi-asset pools, where pool weights can be set arbitrarily (e.g., 80/20 or 60/20/20 distributions) rather than the 50/50 split of Uniswap. It functions simultaneously as a self-rebalancing portfolio manager, a liquidity provider, and a price sensor.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:automated-market-maker",
+      "label": "Automated Market Maker"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
+      },
+      {
+        "id": "urn:ngm:class:asset-liquidity",
+        "label": "Asset Liquidity"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "id": "urn:ngm:class:evm",
+        "label": "EVM"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:lp-token",
+        "label": "LP Token"
+      },
+      {
+        "id": "urn:ngm:class:concentrated-liquidity",
+        "label": "Concentrated Liquidity"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "grant-programs",
+      "label": "Grant Programs"
+    },
+    {
+      "slug": "liquidity-provision",
+      "label": "Liquidity Provision"
+    },
+    {
+      "slug": "tokenomics-governance",
+      "label": "Tokenomics Governance"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    }
+  ]
+}

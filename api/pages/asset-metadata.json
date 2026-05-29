@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:asset-metadata",
+  "title": "Asset Metadata",
+  "slug": "asset-metadata",
+  "public": true,
+  "classIri": "urn:ngm:class:asset-metadata",
+  "domain": "infrastructure",
+  "definition": "Asset Metadata is the structured descriptive, administrative, and technical information attached to a digital asset that contextualises it within a system without being the primary content of that asset. It encompasses identifiers, provenance records, format specifications, rights information, semantic tags, and dependency relationships, enabling discovery, validation, licensing, and lifecycle management.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:metadata",
+      "label": "Metadata"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:metadata-schema",
+        "label": "Metadata Schema"
+      },
+      {
+        "id": "urn:ngm:class:metadata-standard",
+        "label": "Metadata Standard"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:digital-asset-management",
+        "label": "Digital Asset Management"
+      },
+      {
+        "id": "urn:ngm:class:asset-management-system",
+        "label": "Asset Management System"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "conversion-pipeline",
+      "label": "Conversion Pipeline"
+    },
+    {
+      "slug": "tokenization",
+      "label": "Tokenization"
+    }
+  ]
+}

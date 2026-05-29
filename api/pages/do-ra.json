@@ -1,0 +1,62 @@
+{
+  "id": "urn:visionflow:page:do-ra",
+  "title": "DoRA",
+  "slug": "do-ra",
+  "public": true,
+  "classIri": "urn:ngm:class:do-ra",
+  "domain": "ai",
+  "definition": "DoRA (Weight-Decomposed Low-Rank Adaptation) is a parameter-efficient fine-tuning method that decomposes pretrained weights into separate magnitude and direction components, applying low-rank updates only to the directional component while learning the magnitude independently. By separating these two degrees of freedom, DoRA more closely mirrors the learning dynamics of full fine-tuning than standard LoRA, improving accuracy on many tasks at comparable parameter cost and without added inference latency once merged. It is used to adapt large language and vision models efficiently.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:parameter-efficient-fine-tuning",
+      "label": "Parameter-Efficient Fine-Tuning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine-Tuning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:low-rank-adaptation",
+        "label": "Low-Rank Adaptation"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "kohya-dreambooth-and-similar",
+      "label": "KOHYA Dreambooth and similar"
+    },
+    {
+      "slug": "lo-ra-do-ra-etc",
+      "label": "LoRA DoRA etc"
+    }
+  ]
+}

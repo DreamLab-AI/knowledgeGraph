@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:reliability-engineering",
+  "title": "Reliability Engineering",
+  "slug": "reliability-engineering",
+  "public": true,
+  "classIri": "urn:ngm:class:reliability-engineering",
+  "domain": "infrastructure",
+  "definition": "Reliability engineering is the discipline concerned with the systematic design, analysis, and verification of systems to ensure they perform their required functions for a specified period under stated conditions without failure. It applies probabilistic and statistical methods \u2014 including failure mode analysis, fault tree analysis, and accelerated life testing \u2014 to quantify and improve the dependability of hardware, software, and socio-technical systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:safety-engineering",
+      "label": "Safety Engineering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:fault-tree-analysis",
+        "label": "Fault Tree Analysis"
+      },
+      {
+        "id": "urn:ngm:class:fmea",
+        "label": "FMEA"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:redundancy",
+        "label": "Redundancy"
+      },
+      {
+        "id": "urn:ngm:class:site-reliability-engineering",
+        "label": "Site Reliability Engineering"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "fault-tolerance",
+      "label": "Fault Tolerance"
+    },
+    {
+      "slug": "predictive-maintenance",
+      "label": "Predictive Maintenance"
+    }
+  ]
+}

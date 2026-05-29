@@ -1,0 +1,87 @@
+{
+  "id": "urn:visionflow:page:sdxl",
+  "title": "SDXL",
+  "slug": "sdxl",
+  "public": true,
+  "classIri": "urn:ngm:class:sdxl",
+  "domain": "ai",
+  "definition": "SDXL (Stable Diffusion XL) is a large-scale latent diffusion model released by Stability AI in 2023, comprising a 3.5-billion-parameter UNet and an ensemble of two CLIP text encoders that condition image generation at native 1024\u00d71024 resolution. It introduces a two-stage architecture \u2014 a base model followed by a refinement model \u2014 and supports advanced conditioning mechanisms including aesthetic scoring and crop coordinates.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:latent-diffusion",
+      "label": "Latent Diffusion"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "id": "urn:ngm:class:lo-ra-fine-tuning",
+        "label": "LoRA Fine-Tuning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:individual:stable-diffusion",
+        "label": "Stable Diffusion"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:vae",
+        "label": "VAE"
+      },
+      {
+        "id": "urn:ngm:class:clip-encoder",
+        "label": "CLIP Encoder"
+      },
+      {
+        "id": "urn:ngm:class:classifier-free-guidance",
+        "label": "Classifier-Free Guidance"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:hugging-face-diffusers",
+        "label": "Hugging Face Diffusers"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-upscaling-and-super-resolution",
+      "label": "AI Upscaling and Super-Resolution"
+    },
+    {
+      "slug": "comfy-ui-client",
+      "label": "ComfyUI Client"
+    },
+    {
+      "slug": "comfy-ui-workflows",
+      "label": "ComfyUI Workflows"
+    },
+    {
+      "slug": "kohya-dreambooth-and-similar",
+      "label": "KOHYA Dreambooth and similar"
+    }
+  ]
+}

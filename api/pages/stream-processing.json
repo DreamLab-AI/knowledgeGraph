@@ -1,0 +1,91 @@
+{
+  "id": "urn:visionflow:page:stream-processing",
+  "title": "Stream Processing",
+  "slug": "stream-processing",
+  "public": true,
+  "classIri": "urn:ngm:class:stream-processing",
+  "domain": "infrastructure",
+  "definition": "Stream processing is a data processing paradigm in which computations are performed continuously on unbounded sequences of records as they arrive, rather than on static stored datasets, enabling low-latency analytics, transformations, and reactions to events within milliseconds to seconds of their occurrence. It is characterised by windowing operations, stateful operators, time-based semantics (event time versus processing time), and exactly-once or at-least-once delivery guarantees.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:real-time-processing",
+      "label": "Real-time Processing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      },
+      {
+        "id": "urn:ngm:class:behavioral-analytics",
+        "label": "Behavioral Analytics"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:agent-event-stream",
+        "label": "Agent Event Stream"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:apache-kafka",
+        "label": "Apache Kafka"
+      },
+      {
+        "id": "urn:ngm:class:message-broker",
+        "label": "Message Broker"
+      },
+      {
+        "id": "urn:ngm:class:message-queue",
+        "label": "Message Queue"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:etl-pipeline",
+        "label": "ETL Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-pipeline",
+        "label": "Machine Learning Pipeline"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "binary-buffer",
+      "label": "Binary Buffer"
+    },
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "real-time-processing",
+      "label": "Real-time Processing"
+    },
+    {
+      "slug": "storage-infrastructure",
+      "label": "Storage Infrastructure"
+    }
+  ]
+}

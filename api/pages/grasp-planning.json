@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:grasp-planning",
+  "title": "Grasp Planning",
+  "slug": "grasp-planning",
+  "public": true,
+  "classIri": "urn:ngm:class:grasp-planning",
+  "domain": "robotics",
+  "definition": "Grasp planning is the computational problem of determining stable contact configurations between a robotic end-effector and an object, such that the resulting grasp resists external disturbances and enables the desired manipulation task. It combines geometric modelling of object shape, force-closure analysis, kinematics constraints, and task-level objectives to synthesise executable grasp poses.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:manipulation",
+      "label": "Manipulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:end-effector",
+        "label": "End-Effector"
+      },
+      {
+        "id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:dexterous-manipulation",
+        "label": "Dexterous Manipulation"
+      },
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "depth-estimation",
+      "label": "Depth Estimation"
+    },
+    {
+      "slug": "exteroceptive-sensor",
+      "label": "Exteroceptive Sensor"
+    },
+    {
+      "slug": "manipulator-arm",
+      "label": "Manipulator Arm"
+    }
+  ]
+}

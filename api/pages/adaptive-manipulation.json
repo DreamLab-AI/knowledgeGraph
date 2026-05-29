@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:adaptive-manipulation",
+  "title": "Adaptive Manipulation",
+  "slug": "adaptive-manipulation",
+  "public": true,
+  "classIri": "urn:ngm:class:adaptive-manipulation",
+  "domain": "robotics",
+  "definition": "Adaptive manipulation is a subfield of robotics concerned with enabling robotic systems to grasp, move, and interact with objects in unstructured environments by continuously adapting grasp strategies, force application, and motion trajectories based on sensory feedback. It combines perception, planning, and control to handle variability in object geometry, material properties, and placement that defeats fixed pre-programmed approaches. Applications span industrial automation, surgical robotics, and service robots operating in human-centred spaces.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:manipulation",
+      "label": "Manipulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:dexterous-manipulation",
+        "label": "Dexterous Manipulation"
+      },
+      {
+        "id": "urn:ngm:class:compliant-manipulation",
+        "label": "Compliant Manipulation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:force-control",
+        "label": "Force Control"
+      },
+      {
+        "id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      },
+      {
+        "id": "urn:ngm:class:deep-reinforcement-learning",
+        "label": "Deep Reinforcement Learning"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:end-effector",
+        "label": "End Effector"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "admittance-control",
+      "label": "Admittance Control"
+    },
+    {
+      "slug": "impedance-control",
+      "label": "Impedance Control"
+    }
+  ]
+}

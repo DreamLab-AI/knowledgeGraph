@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:self-sovereign-identity-ssi",
+  "title": "Self-Sovereign Identity (SSI)",
+  "slug": "self-sovereign-identity-ssi",
+  "public": true,
+  "classIri": "urn:ngm:class:self-sovereign-identity-ssi",
+  "domain": "blockchain",
+  "definition": "Self-Sovereign Identity (SSI) is an identity model in which individuals control their own digital identifiers and credentials without dependence on a centralised issuing authority, using Decentralised Identifiers (DIDs) anchored to distributed ledgers and Verifiable Credentials signed by trusted issuers to enable selective disclosure. SSI shifts identity management from siloed service-provider accounts to portable, user-held credentials that can be verified without querying the original issuer.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:decentralized-identity",
+      "label": "Decentralized Identity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:privacy-preserving-identity",
+        "label": "Privacy-Preserving Identity"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:decentralized-identifiers",
+        "label": "Decentralized Identifiers"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:hyperledger-indy",
+        "label": "Hyperledger Indy"
+      },
+      {
+        "id": "urn:ngm:class:did-method",
+        "label": "DID Method"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "decentralized-identity-did",
+      "label": "Decentralized Identity (DID)"
+    },
+    {
+      "slug": "etsi-domain-virtual-society",
+      "label": "ETSI_Domain_Virtual_Society"
+    },
+    {
+      "slug": "etsi-domain-virtual-society",
+      "label": "ETSI_Domain_Virtual_Society"
+    },
+    {
+      "slug": "verifiable-credential-vc",
+      "label": "Verifiable Credential (VC)"
+    }
+  ]
+}

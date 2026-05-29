@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:beam-search",
+  "title": "Beam Search",
+  "slug": "beam-search",
+  "public": true,
+  "classIri": "urn:ngm:class:beam-search",
+  "domain": "ai",
+  "definition": "Beam search is a heuristic search algorithm that explores a graph by expanding the most promising nodes within a fixed-width frontier, called the beam, at each step. In sequence generation tasks it retains the top-k candidate sequences at each decoding step rather than pursuing a single greedy choice, balancing exploration against computational cost.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:search-algorithm",
+      "label": "Search Algorithm"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:text-generation",
+        "label": "Text Generation"
+      },
+      {
+        "id": "urn:ngm:class:machine-translation",
+        "label": "Machine Translation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:language-model",
+        "label": "Language Model"
+      },
+      {
+        "id": "urn:ngm:class:heuristic-methods",
+        "label": "Heuristic Methods"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:beam-search-decoding",
+        "label": "Beam Search Decoding"
+      },
+      {
+        "id": "urn:ngm:class:monte-carlo-tree-search",
+        "label": "Monte Carlo Tree Search"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "reasoning",
+      "label": "Reasoning"
+    },
+    {
+      "slug": "translation",
+      "label": "Translation"
+    }
+  ]
+}

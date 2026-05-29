@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:cbdc-infrastructure",
+  "title": "CBDC Infrastructure",
+  "slug": "cbdc-infrastructure",
+  "public": true,
+  "classIri": "urn:ngm:class:cbdc-infrastructure",
+  "domain": "finance",
+  "definition": "CBDC infrastructure refers to the technical systems, protocols, and institutional arrangements that underpin the issuance, distribution, settlement, and management of central bank digital currencies. It encompasses the ledger technology (centralised, distributed, or hybrid), API layers enabling interoperability with commercial banks and payment service providers, offline payment capability, and the privacy-preserving and security mechanisms required for sovereign digital money at scale. CBDC infrastructure must satisfy central bank requirements for finality, programmability, resilience, and monetary policy control that differ fundamentally from commercial digital payment systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:payment-infrastructure",
+      "label": "Payment Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "id": "urn:ngm:class:digital-payments",
+        "label": "Digital Payments"
+      },
+      {
+        "id": "urn:ngm:class:cross-border-payments",
+        "label": "Cross-Border Payments"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:atomic-settlement",
+        "label": "Atomic Settlement"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Cryptographic Infrastructure"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cbdc-frameworks",
+        "label": "CBDC Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:monetary-policy-implementation",
+        "label": "Monetary Policy Implementation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-as-a-service",
+      "label": "Blockchain As A Service"
+    },
+    {
+      "slug": "quorum-blockchain",
+      "label": "Quorum Blockchain"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:blockchain-analysis",
+  "title": "Blockchain Analysis",
+  "slug": "blockchain-analysis",
+  "public": true,
+  "classIri": "urn:ngm:class:blockchain-analysis",
+  "domain": "blockchain",
+  "definition": "Blockchain analysis is the systematic examination of distributed ledger transaction data to identify patterns, trace fund flows, attribute addresses to entities, and detect illicit activity. It applies graph analytics, heuristic clustering, and machine-learning techniques to publicly available on-chain records to support compliance, law enforcement, and financial intelligence functions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-forensics",
+      "label": "Digital Forensics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:blockchain-analytics",
+        "label": "Blockchain Analytics"
+      },
+      {
+        "id": "urn:ngm:class:heuristic-methods",
+        "label": "Heuristic Methods"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML/KYC Compliance"
+      },
+      {
+        "id": "urn:ngm:class:kyc-aml",
+        "label": "KYC/AML"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockchain-analytics-platform",
+        "label": "Blockchain Analytics Platform"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-distribution",
+      "label": "Bitcoin Distribution"
+    },
+    {
+      "slug": "bitcoin-distribution",
+      "label": "Bitcoin Distribution"
+    },
+    {
+      "slug": "bitcoin-distribution",
+      "label": "Bitcoin Distribution"
+    },
+    {
+      "slug": "bitcoin-distribution",
+      "label": "Bitcoin Distribution"
+    },
+    {
+      "slug": "bitcoin-distribution",
+      "label": "Bitcoin Distribution"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:planning-module",
+  "title": "Planning Module",
+  "slug": "planning-module",
+  "public": true,
+  "classIri": "urn:ngm:class:planning-module",
+  "domain": "ai",
+  "definition": "A planning module is a software component within an autonomous system or AI agent responsible for generating sequences of actions to achieve specified goals, given a model of the current world state, available actions, and constraints. It translates high-level objectives into concrete executable task sequences, integrating deliberative reasoning, motion planning, and contingency handling. Planning modules appear in robotic architectures, autonomous vehicles, and large-language-model-based agent systems as a dedicated decision-making subsystem.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-system-component",
+      "label": "AI System Component"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:automated-reasoning",
+        "label": "Automated Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-behavior",
+        "label": "Autonomous Behavior"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "computer-use-and-browser-agents",
+      "label": "Computer Use and Browser Agents"
+    }
+  ]
+}

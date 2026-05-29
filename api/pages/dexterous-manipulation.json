@@ -1,0 +1,75 @@
+{
+  "id": "urn:visionflow:page:dexterous-manipulation",
+  "title": "Dexterous Manipulation",
+  "slug": "dexterous-manipulation",
+  "public": true,
+  "classIri": "urn:ngm:class:dexterous-manipulation",
+  "domain": "robotics",
+  "definition": "Dexterous manipulation is the capability of robotic systems to grasp, reorient, assemble, and interact with objects using multi-fingered hands or compliant end-effectors in ways that require fine motor control, contact-rich reasoning, and real-time adaptation to object geometry and physical properties. It encompasses grasp planning, in-hand manipulation, and tactile feedback integration to replicate or exceed human-hand dexterity in unstructured environments.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:manipulation",
+      "label": "Manipulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:end-effector",
+        "label": "End Effector"
+      },
+      {
+        "id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:robot-learning",
+        "label": "Robot Learning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:grasp-planning",
+        "label": "Grasp Planning"
+      },
+      {
+        "id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:sim-to-real-transfer",
+        "label": "Sim-to-Real Transfer"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "humanoid-robot",
+      "label": "Humanoid Robot"
+    },
+    {
+      "slug": "imitation-learning",
+      "label": "Imitation Learning"
+    }
+  ]
+}

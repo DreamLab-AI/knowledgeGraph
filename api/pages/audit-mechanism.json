@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:audit-mechanism",
+  "title": "Audit Mechanism",
+  "slug": "audit-mechanism",
+  "public": true,
+  "classIri": "urn:ngm:class:audit-mechanism",
+  "domain": "security",
+  "definition": "The specific technical or procedural instrument used to capture, preserve, and retrieve evidence of system events, user actions, or organisational activities for auditing purposes. Audit mechanisms range from low-level kernel event hooks and cryptographic tamper-evident logs to high-level workflow checkpoints and policy-enforcement records.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:audit",
+      "label": "Audit"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "id": "urn:ngm:class:audit-logging",
+        "label": "Audit Logging"
+      },
+      {
+        "id": "urn:ngm:class:compliance-audit-trail",
+        "label": "Compliance Audit Trail"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:immutability",
+        "label": "Immutability"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      },
+      {
+        "id": "urn:ngm:class:forensic-investigation",
+        "label": "Forensic Investigation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-governance-framework",
+      "label": "AI Governance Framework"
+    },
+    {
+      "slug": "algorithmic-transparency-index",
+      "label": "Algorithmic Transparency Index"
+    },
+    {
+      "slug": "trust-framework-policy",
+      "label": "Trust Framework Policy"
+    }
+  ]
+}

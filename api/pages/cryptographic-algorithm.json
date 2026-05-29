@@ -1,0 +1,71 @@
+{
+  "id": "urn:visionflow:page:cryptographic-algorithm",
+  "title": "Cryptographic Algorithm",
+  "slug": "cryptographic-algorithm",
+  "public": true,
+  "classIri": "urn:ngm:class:cryptographic-algorithm",
+  "domain": "security",
+  "definition": "A Cryptographic Algorithm is a precisely defined mathematical procedure that transforms data to achieve security properties\u2014confidentiality, integrity, authentication, or non-repudiation\u2014based on computational hardness assumptions. The class encompasses symmetric ciphers, asymmetric (public-key) schemes, hash functions, digital signature algorithms, and zero-knowledge proof systems, each providing different security guarantees and performance characteristics.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptography",
+      "label": "Cryptography"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "distributed-ledger-technology-dlt",
+      "label": "Distributed Ledger Technology (DLT)"
+    },
+    {
+      "slug": "hash-function",
+      "label": "Hash Function"
+    },
+    {
+      "slug": "virtual-notary-service",
+      "label": "Virtual Notary Service"
+    }
+  ]
+}

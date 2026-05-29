@@ -1,0 +1,14 @@
+- ### Definition
+  - Software engineering agents are LLM-based systems that autonomously perform development work — navigating code, editing files, running tests, and submitting changes — by planning and executing multi-step tool-using workflows over real repositories.
+
+- ### Relationships
+  - Software Engineering Agents are a subclass of [[LLM Agents]] specialised for code. They use [[Reasoning]] and [[Chain of Thought]] decomposition to plan edits and diagnose failures, enable practical [[Prompt Engineering]] patterns for development tasks, and relate to [[LLM Orchestration]] and [[LLM Application Framework]] tooling that coordinates their actions.
+
+- ### Content
+  - Software engineering agents close the loop between language understanding and executable action. Where an early code-completion model merely suggested the next token, an agent perceives the state of a repository, forms a hypothesis about a defect or feature, edits files, runs the test suite, reads the resulting output, and iterates until a goal is met. This perceive-plan-act-observe cycle is what distinguishes an agent from a one-shot code generator.
+
+  - Evaluation has shifted from synthetic coding puzzles to real-world resolution rates. SWE-bench and its variants present agents with actual issues from open-source projects and measure whether the agent's patch makes the failing tests pass without breaking others. Performance on these benchmarks has improved rapidly as models gained longer context windows, better tool-use training, and more reliable multi-step planning, though the hardest tasks involving large cross-cutting changes remain difficult.
+
+  - Architecturally, effective agents pair a capable reasoning model with a disciplined scaffold: a constrained set of tools (read, edit, search, execute), a memory of what has been tried, and verification gates that prevent the agent from declaring success prematurely. The scaffold matters as much as the model — the same model wrapped in a better harness with test-driven feedback and self-correction substantially outperforms naive prompting.
+
+  - The practical impact is the automation of routine engineering toil: dependency upgrades, test writing, bug triage, refactoring, and documentation. The open questions concern trust and verification — ensuring an agent's changes are correct, secure, and aligned with project conventions before they reach production. This has driven interest in human-in-the-loop review, sandboxed execution, and rich feedback signals, positioning software engineering agents as collaborators that amplify rather than replace human developers.

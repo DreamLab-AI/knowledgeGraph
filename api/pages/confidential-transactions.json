@@ -1,0 +1,87 @@
+{
+  "id": "urn:visionflow:page:confidential-transactions",
+  "title": "Confidential Transactions",
+  "slug": "confidential-transactions",
+  "public": true,
+  "classIri": "urn:ngm:class:confidential-transactions",
+  "domain": "blockchain",
+  "definition": "Confidential Transactions (CT) is a cryptographic protocol for distributed ledgers that conceals the amounts transferred in financial transactions whilst preserving the ability for validators to verify that no value is created or destroyed. It employs Pedersen commitments and range proofs\u2014typically Bulletproofs\u2014to encode transaction values in a form that is computationally hiding yet binding.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain-transaction",
+      "label": "Blockchain Transaction"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:privacy-preserving-blockchain",
+        "label": "Privacy Preserving Blockchain"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cryptographic-algorithm",
+        "label": "Cryptographic Algorithm"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:confidential-computing",
+        "label": "Confidential Computing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "lightning-and-similar-l2",
+      "label": "Lightning and Similar L2"
+    },
+    {
+      "slug": "privacy-preserving-blockchain",
+      "label": "Privacy Preserving Blockchain"
+    },
+    {
+      "slug": "symmetric-encryption",
+      "label": "Symmetric Encryption"
+    },
+    {
+      "slug": "zero-knowledge-proof-zkp",
+      "label": "Zero-Knowledge Proof (ZKP)"
+    },
+    {
+      "slug": "ecash",
+      "label": "ecash"
+    }
+  ]
+}

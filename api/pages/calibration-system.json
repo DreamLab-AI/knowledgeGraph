@@ -1,0 +1,74 @@
+{
+  "id": "urn:visionflow:page:calibration-system",
+  "title": "Calibration System",
+  "slug": "calibration-system",
+  "public": true,
+  "classIri": "urn:ngm:class:calibration-system",
+  "domain": "spatial",
+  "definition": "A Calibration System is an integrated assembly of hardware targets, measurement instruments, algorithms, and software workflows used to determine and correct systematic errors in sensors, cameras, and measurement devices, establishing a known and traceable relationship between a sensor's raw outputs and the physical quantities they represent. Calibration systems are essential preconditions for accurate spatial measurement, computer vision, robotics, and extended reality applications.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:calibration-equipment",
+      "label": "Calibration Equipment"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:sensor-calibration",
+        "label": "Sensor Calibration"
+      },
+      {
+        "id": "urn:ngm:class:optical-calibration-target",
+        "label": "Optical Calibration Target"
+      },
+      {
+        "id": "urn:ngm:class:imu",
+        "label": "IMU"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "eye-tracking",
+      "label": "Eye Tracking"
+    },
+    {
+      "slug": "industrial-robot",
+      "label": "Industrial Robot"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+- ### Definition
+  - Spherical harmonics are orthogonal basis functions on the sphere that compactly represent directional functions as weighted coefficients, acting as a Fourier-like decomposition for smooth angular data such as incoming light.
+
+- ### Relationships
+  - Spherical Harmonics is a subclass of [[Computer Graphics]] technique and supports [[Real-Time Rendering]] and [[Neural Rendering]] by encoding directional lighting and colour cheaply. It relates to [[Gaussian Splatting]], which uses low-order coefficients for view-dependent appearance, and to the [[Rendering Pipeline]] stages where lighting is evaluated.
+
+- ### Content
+  - Spherical harmonics solve a recurring problem in graphics: how to represent a function defined over all directions — the light arriving at a point, the colour seen from each viewing angle — without storing a dense table of samples. Just as a Fourier series expresses a periodic signal as a sum of sinusoids, spherical harmonics express a function on the sphere as a sum of basis functions ordered by angular frequency, so that a few low-order terms capture the smooth, dominant structure.
+
+  - The power of the representation comes from orthogonality and rotational properties. Because the basis functions are orthogonal, projecting a function onto them yields independent coefficients computed by integration, and reconstruction is a simple weighted sum. Crucially, integrals of products of functions reduce to dot products of their coefficient vectors, turning expensive directional integrals — exactly what lighting calculations require — into cheap vector operations.
+
+  - This is why spherical harmonics became central to real-time global illumination. Precomputed radiance transfer projects how a scene responds to distant lighting into spherical-harmonic coefficients offline, so that at runtime, relighting under a changing environment reduces to a dot product. Irradiance environment maps use just nine coefficients to represent diffuse lighting from an entire environment with visually negligible error, an efficiency that made soft, realistic ambient lighting feasible in interactive applications.
+
+  - The technique has found renewed prominence in modern neural and point-based rendering. In 3D Gaussian splatting, each primitive stores low-order spherical-harmonic coefficients to encode how its colour changes with viewing direction, reproducing specular highlights and view-dependent effects without per-frame shading networks. This pairing of a classical compact angular basis with learned scene representations exemplifies how spherical harmonics remain a foundational tool wherever directional functions must be represented efficiently.

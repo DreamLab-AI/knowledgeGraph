@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:3-d-scene-reconstruction",
+  "title": "3D Scene Reconstruction",
+  "slug": "3-d-scene-reconstruction",
+  "public": true,
+  "classIri": "urn:ngm:class:3-d-scene-reconstruction",
+  "domain": "spatial",
+  "definition": "3D Scene Reconstruction is the computational process of recovering a complete, coherent three-dimensional model of an environment or scene from sensor observations such as images, depth maps, or LiDAR returns, integrating multiple viewpoints and modalities into a unified representation. Methods include volumetric fusion, truncated signed distance function (TSDF) integration, neural implicit representations, and Gaussian splatting, each offering different trade-offs between completeness, accuracy, and real-time capability. The output is used in robotics, autonomous driving, spatial computing, and cultural heritage documentation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:3-d-reconstruction",
+      "label": "3D Reconstruction"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-twin-creation",
+        "label": "Digital Twin Creation"
+      },
+      {
+        "id": "urn:ngm:class:3-d-perception",
+        "label": "3D Perception"
+      },
+      {
+        "id": "urn:ngm:class:ar-registration",
+        "label": "AR Registration"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "id": "urn:ngm:class:structure-from-motion",
+        "label": "Structure-from-Motion"
+      },
+      {
+        "id": "urn:ngm:class:multi-view-stereo",
+        "label": "Multi-View Stereo"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:3-d-scanning",
+        "label": "3D Scanning"
+      },
+      {
+        "id": "urn:ngm:class:ne-rf",
+        "label": "NeRF"
+      },
+      {
+        "id": "urn:ngm:class:gaussian-splatting",
+        "label": "Gaussian Splatting"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ar-scene-graph",
+      "label": "Ar Scene Graph"
+    },
+    {
+      "slug": "gaussian-splatting",
+      "label": "Gaussian Splatting"
+    }
+  ]
+}

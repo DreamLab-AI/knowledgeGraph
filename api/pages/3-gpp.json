@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:3-gpp",
+  "title": "3GPP",
+  "slug": "3-gpp",
+  "public": true,
+  "classIri": "urn:ngm:class:3-gpp",
+  "domain": "infrastructure",
+  "definition": "The 3rd Generation Partnership Project (3GPP) is a global consortium of telecommunications standards bodies that develops and maintains the technical specifications governing mobile communication systems, from UMTS (3G) through LTE (4G) to NR (5G) and the emerging 6G framework. It operates through working groups that produce versioned Releases, each introducing new capabilities and radio access technologies. 3GPP specifications are the foundational technical substrate for the global cellular infrastructure used by billions of devices.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:standards-body",
+      "label": "Standards Body"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:network-function-virtualization",
+        "label": "Network Function Virtualization"
+      },
+      {
+        "id": "urn:ngm:class:multi-access-edge-computing",
+        "label": "MultiAccessEdgeComputing"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:5-g-network",
+        "label": "5G Network"
+      },
+      {
+        "id": "urn:ngm:class:5-g-connectivity",
+        "label": "5G Connectivity"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:etsi",
+        "label": "ETSI"
+      },
+      {
+        "id": "urn:ngm:class:telecommunications",
+        "label": "Telecommunications"
+      },
+      {
+        "id": "urn:ngm:class:network-architecture",
+        "label": "Network Architecture"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-virtual-society",
+      "label": "ETSI_Domain_Virtual_Society"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    },
+    {
+      "slug": "physical-layer",
+      "label": "Physical Layer"
+    }
+  ]
+}

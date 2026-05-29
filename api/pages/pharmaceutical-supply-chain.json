@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:pharmaceutical-supply-chain",
+  "title": "Pharmaceutical Supply Chain",
+  "slug": "pharmaceutical-supply-chain",
+  "public": true,
+  "classIri": "urn:ngm:class:pharmaceutical-supply-chain",
+  "domain": "governance",
+  "definition": "The Pharmaceutical Supply Chain encompasses all entities, processes, and systems involved in the production, storage, distribution, and dispensing of medicinal products, from active pharmaceutical ingredient (API) synthesis through to patient delivery. It is subject to stringent regulatory serialisation and traceability requirements designed to prevent counterfeit medicines from entering the legitimate supply chain.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supply-chain-management",
+      "label": "Supply Chain Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.85,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:rfid",
+        "label": "RFID"
+      },
+      {
+        "id": "urn:ngm:class:dscsa-compliance",
+        "label": "DSCSA Compliance"
+      },
+      {
+        "id": "urn:ngm:class:pharmaceutical-traceability",
+        "label": "Pharmaceutical Traceability"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:pharmaceutical-logistics",
+        "label": "Pharmaceutical Logistics"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cold-chain-monitoring",
+        "label": "Cold Chain Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-provenance",
+        "label": "Blockchain Provenance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cold-chain-monitoring",
+      "label": "Cold Chain Monitoring"
+    }
+  ]
+}

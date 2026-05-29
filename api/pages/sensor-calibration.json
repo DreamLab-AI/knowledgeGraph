@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:sensor-calibration",
+  "title": "Sensor Calibration",
+  "slug": "sensor-calibration",
+  "public": true,
+  "classIri": "urn:ngm:class:sensor-calibration",
+  "domain": "robotics",
+  "definition": "Sensor calibration is the process of determining and correcting systematic measurement errors in sensing devices by comparing their outputs against known reference values or through geometric constraint solving, yielding intrinsic parameter models and extrinsic transformation matrices that map raw sensor readings to physically meaningful quantities. It is a prerequisite for sensor fusion, perception pipelines, and any application requiring quantitatively accurate environmental measurements.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:calibration",
+      "label": "Calibration"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "id": "urn:ngm:class:localization",
+        "label": "Localization"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:calibration-target",
+        "label": "Calibration Target"
+      },
+      {
+        "id": "urn:ngm:class:coordinate-transformation",
+        "label": "Coordinate Transformation"
+      },
+      {
+        "id": "urn:ngm:class:camera-intrinsics",
+        "label": "Camera Intrinsics"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:imu",
+        "label": "IMU"
+      },
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "lens-and-camera-calibration",
+      "label": "Lens and Camera Calibration"
+    },
+    {
+      "slug": "proprioceptive-sensor",
+      "label": "Proprioceptive Sensor"
+    }
+  ]
+}

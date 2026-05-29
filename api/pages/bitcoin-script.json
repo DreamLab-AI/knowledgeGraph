@@ -1,0 +1,78 @@
+{
+  "id": "urn:visionflow:page:bitcoin-script",
+  "title": "Bitcoin Script",
+  "slug": "bitcoin-script",
+  "public": true,
+  "classIri": "urn:ngm:class:bitcoin-script",
+  "domain": "blockchain",
+  "definition": "Bitcoin Script is the non-Turing-complete, stack-based scripting language embedded in every Bitcoin transaction that defines the conditions under which output funds may be spent. It consists of a constrained set of opcodes operating on a last-in-first-out stack, deliberately designed without loops or recursion to ensure termination and predictable resource consumption. Script programs (scriptPubKey and scriptSig pairs) encode spending conditions such as digital signature verification, multisignature requirements, hash pre-image revelation, and time locks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:scripting-language",
+      "label": "Scripting Language"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:bitcoin-ordinals",
+        "label": "Bitcoin Ordinals"
+      },
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "id": "urn:ngm:class:hash-time-locked-contract",
+        "label": "Hash Time-Locked Contract"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:opcodes",
+        "label": "Opcodes"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:bitcoin-core",
+        "label": "Bitcoin Core"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    },
+    {
+      "slug": "bitcoin-technical-overview",
+      "label": "Bitcoin Technical Overview"
+    },
+    {
+      "slug": "multi-sig-governance",
+      "label": "Multi Sig Governance"
+    }
+  ]
+}

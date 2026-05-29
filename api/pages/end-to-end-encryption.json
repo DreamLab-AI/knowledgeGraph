@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:end-to-end-encryption",
+  "title": "End-to-End Encryption",
+  "slug": "end-to-end-encryption",
+  "public": true,
+  "classIri": "urn:ngm:class:end-to-end-encryption",
+  "domain": "security",
+  "definition": "End-to-end encryption (E2EE) is a communication security model in which data is encrypted on the sender's device and can only be decrypted by the intended recipient's device, ensuring that no intermediate party\u2014including service providers, network operators, or infrastructure owners\u2014can access the plaintext content. It combines asymmetric key exchange with symmetric session encryption to provide confidentiality, integrity, and authenticity without trusting intermediaries.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:encryption",
+      "label": "Encryption"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy By Design"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      },
+      {
+        "id": "urn:ngm:class:signal-protocol",
+        "label": "Signal Protocol"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "digital-society-surveillance",
+      "label": "Digital Society Surveillance"
+    },
+    {
+      "slug": "health-metaverse-application",
+      "label": "Health Metaverse Application"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

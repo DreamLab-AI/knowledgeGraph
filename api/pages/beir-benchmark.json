@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:beir-benchmark",
+  "title": "BEIR Benchmark",
+  "slug": "beir-benchmark",
+  "public": true,
+  "classIri": "urn:ngm:class:beir-benchmark",
+  "domain": "ai",
+  "definition": "BEIR (Benchmarking IR) is a heterogeneous benchmark suite for evaluating the zero-shot generalisation of information retrieval models across eighteen diverse datasets spanning domains including biomedical, legal, financial, and Wikipedia text. It measures how well retrieval systems transfer across topic domains and retrieval task types without domain-specific fine-tuning, providing a standardised framework for comparing dense, sparse, and hybrid retrieval approaches.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:information-retrieval",
+      "label": "Information Retrieval"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "id": "urn:ngm:class:dense-passage-retrieval",
+        "label": "Dense Passage Retrieval"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:embedding-model",
+        "label": "Embedding Model"
+      },
+      {
+        "id": "urn:ngm:class:bm25",
+        "label": "BM25"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:hybrid-search",
+        "label": "Hybrid Search"
+      },
+      {
+        "id": "urn:ngm:class:cross-encoder-reranking",
+        "label": "Cross-Encoder Reranking"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "retrieval-augmented-generation-rag",
+      "label": "Retrieval Augmented Generation - RAG"
+    },
+    {
+      "slug": "semantic-search",
+      "label": "Semantic Search"
+    }
+  ]
+}

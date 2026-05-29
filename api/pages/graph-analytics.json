@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:graph-analytics",
+  "title": "Graph Analytics",
+  "slug": "graph-analytics",
+  "public": true,
+  "classIri": "urn:ngm:class:graph-analytics",
+  "domain": "ai",
+  "definition": "Graph Analytics is a computational discipline that applies graph-theoretic algorithms to structured relational data in order to discover patterns, measure importance, detect communities, and predict missing links. It operates on data modelled as nodes (entities) and edges (relationships), enabling analyses that are intractable with tabular data models when relationship structure is central to insight.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:network-analysis",
+      "label": "Network Analysis"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.85,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:community-detection",
+        "label": "Community Detection"
+      },
+      {
+        "id": "urn:ngm:class:link-prediction",
+        "label": "Link Prediction"
+      }
+    ],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:social-network-analysis",
+        "label": "Social Network Analysis"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "digital-society-surveillance",
+      "label": "Digital Society Surveillance"
+    }
+  ]
+}

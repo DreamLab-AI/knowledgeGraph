@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:stratum-v2",
+  "title": "Stratum V2",
+  "slug": "stratum-v2",
+  "public": true,
+  "classIri": "urn:ngm:class:stratum-v2",
+  "domain": "blockchain",
+  "definition": "Stratum V2 is the second-generation protocol for communication between Bitcoin miners and mining pools, redesigned to improve efficiency, security, and decentralisation over the original Stratum. Its headline feature is Job Declaration, which lets individual miners construct their own block templates and choose which transactions to include rather than blindly mining the pool operator's template, redistributing transaction-selection power. It also adds end-to-end encryption, binary framing for lower bandwidth, and reduced susceptibility to man-in-the-middle hashrate hijacking.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:network-protocol",
+      "label": "Network Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:censorship-resistance",
+        "label": "Censorship Resistance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:mining-pool",
+        "label": "Mining Pool"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:individual:bitcoin",
+        "label": "Bitcoin"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-centralisation-risks",
+      "label": "Bitcoin Centralisation Risks"
+    },
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "digital-asset-risks",
+      "label": "Digital Asset Risks"
+    }
+  ]
+}

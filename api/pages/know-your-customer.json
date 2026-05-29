@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:know-your-customer",
+  "title": "Know Your Customer",
+  "slug": "know-your-customer",
+  "public": true,
+  "classIri": "urn:ngm:class:know-your-customer",
+  "domain": "finance",
+  "definition": "Know Your Customer (KYC) is a regulatory and compliance process by which financial institutions and other regulated entities verify the identity of their clients, assess their risk profiles, and understand the nature of their financial activities to prevent money laundering, terrorist financing, and other financial crimes. KYC encompasses identity document verification, biometric checks, beneficial ownership disclosure, and ongoing transaction monitoring.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:compliance",
+      "label": "Compliance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:digital-identity-verification",
+        "label": "Digital Identity Verification"
+      },
+      {
+        "id": "urn:ngm:class:biometric-verification",
+        "label": "Biometric Verification"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-compliance",
+      "label": "Blockchain Compliance"
+    },
+    {
+      "slug": "fatfrecommendations",
+      "label": "FATFRecommendations"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    },
+    {
+      "slug": "travel-rule",
+      "label": "Travel Rule"
+    }
+  ]
+}

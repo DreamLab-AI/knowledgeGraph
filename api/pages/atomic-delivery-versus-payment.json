@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:atomic-delivery-versus-payment",
+  "title": "Atomic Delivery versus Payment",
+  "slug": "atomic-delivery-versus-payment",
+  "public": true,
+  "classIri": "urn:ngm:class:atomic-delivery-versus-payment",
+  "domain": "blockchain",
+  "definition": "Atomic Delivery versus Payment (atomic DvP) is a settlement mechanism in which the transfer of an asset and the corresponding payment are executed as a single indivisible transaction: either both legs complete simultaneously or neither does, eliminating counterparty risk by making it impossible for one party to receive value without the other receiving theirs. It applies the atomicity property of database transactions to financial and digital asset exchange.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:delivery-versus-payment",
+      "label": "Delivery-Versus-Payment"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:atomic-swap",
+        "label": "Atomic Swap"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-asset-transfer",
+        "label": "Cross Chain Asset Transfer"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:hash-time-locked-contract",
+        "label": "Hash Time-Locked Contract"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract-execution",
+        "label": "Smart Contract Execution"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cbdc-frameworks",
+      "label": "CBDC Frameworks"
+    },
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    }
+  ]
+}

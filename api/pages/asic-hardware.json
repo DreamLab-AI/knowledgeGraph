@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:asic-hardware",
+  "title": "ASIC Hardware",
+  "slug": "asic-hardware",
+  "public": true,
+  "classIri": "urn:ngm:class:asic-hardware",
+  "domain": "infrastructure",
+  "definition": "Application-Specific Integrated Circuits (ASICs) are custom silicon chips designed and manufactured to perform a fixed, narrowly defined computational task with maximum efficiency. Unlike general-purpose processors, ASIC hardware sacrifices programmability for dramatically superior performance-per-watt ratios in its target workload, making it the dominant substrate for high-throughput, power-sensitive deployments.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:computer-hardware",
+      "label": "Computer Hardware"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:parallel-processing",
+        "label": "Parallel Processing"
+      },
+      {
+        "id": "urn:ngm:class:digital-signal-processing",
+        "label": "Digital Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:neural-processing-unit",
+        "label": "Neural Processing Unit"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:fpga",
+        "label": "FPGA"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-environmental-issues",
+      "label": "Bitcoin Environmental Issues"
+    },
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    }
+  ]
+}

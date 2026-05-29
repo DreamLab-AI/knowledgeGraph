@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:reverse-logistics",
+  "title": "Reverse Logistics",
+  "slug": "reverse-logistics",
+  "public": true,
+  "classIri": "urn:ngm:class:reverse-logistics",
+  "domain": "infrastructure",
+  "definition": "Reverse logistics encompasses all operations related to the reuse, processing, and management of products and materials flowing backward through the supply chain from the consumer or end-of-life point toward the manufacturer or recycler. It includes product returns, refurbishment, remanufacturing, recycling, and responsible disposal, and is a key operational component of circular economy strategies.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:logistics",
+      "label": "Logistics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:waste-management",
+        "label": "Waste Management"
+      },
+      {
+        "id": "urn:ngm:class:deposit-return-scheme",
+        "label": "Deposit Return Scheme"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:circular-economy",
+        "label": "Circular Economy"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics-management",
+        "label": "Logistics Management"
+      },
+      {
+        "id": "urn:ngm:class:e-waste",
+        "label": "E-Waste"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "circular-economy",
+      "label": "Circular Economy"
+    },
+    {
+      "slug": "logistics-optimization",
+      "label": "Logistics Optimization"
+    }
+  ]
+}

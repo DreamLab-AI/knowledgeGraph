@@ -1,0 +1,75 @@
+{
+  "id": "urn:visionflow:page:standard-contractual-clauses",
+  "title": "Standard Contractual Clauses",
+  "slug": "standard-contractual-clauses",
+  "public": true,
+  "classIri": "urn:ngm:class:standard-contractual-clauses",
+  "domain": "governance",
+  "definition": "Standard Contractual Clauses (SCCs) are pre-approved contractual templates issued by the European Commission that enable the lawful transfer of personal data from the European Economic Area to third countries lacking an adequacy decision, by binding data exporters and importers to GDPR-equivalent data protection obligations. The 2021 SCCs replaced older versions and introduced a modular structure covering controller-to-controller, controller-to-processor, processor-to-processor, and processor-to-controller transfers.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cross-border-data-transfer-rule",
+      "label": "Cross-Border Data Transfer Rule"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.8,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "id": "urn:ngm:class:privacy-impact-assessment",
+        "label": "Privacy Impact Assessment"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:data-privacy",
+        "label": "Data Privacy"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-protection-regulation",
+        "label": "Data Protection Regulation"
+      },
+      {
+        "id": "urn:ngm:class:uk-gdpr",
+        "label": "UK GDPR"
+      },
+      {
+        "id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cross-border-compliance",
+      "label": "Cross Border Compliance"
+    },
+    {
+      "slug": "cross-border-data-transfer-rule",
+      "label": "Cross-Border Data Transfer Rule"
+    }
+  ]
+}
